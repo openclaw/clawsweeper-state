@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T22:38:44.760Z",
+  "updated_at": "2026-08-14T22:42:07.284Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82572:4466829643:2026-08-14T18:47:47Z:clawsweeper_needs_human",
-      "comment_id": "4466829643",
-      "comment_version_key": "4466829643:2026-08-14T18:47:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4466829643",
-      "comment_created_at": "2026-05-16T12:19:59Z",
-      "comment_updated_at": "2026-08-14T18:47:47Z",
-      "comment_body_sha256": "5d013aecf11b7924ed9fb394cf5b4af2f3bb58109fb16595bf6e29301541dd72",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep restored overflow summaries aligned (P1)** - summarySources is filtered for role-dependent or invalid-policy entries, but summaryLines and droppedCount are restored unchanged below. If the rejected source c...; Review finding: [P1] Keep restored overflow summaries aligned — src/auto-reply/reply/queue/persist.ts:941-947 - [high] Keep restored overflow summaries aligned — src/auto-reply/re... (sha=8480fe9793568ff03885d817b4e60fea96772f6d)",
-      "expected_head_sha": "8480fe9793568ff03885d817b4e60fea96772f6d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T18:50:25.326Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/queue-followup-persistence",
-        "head_sha": "8480fe9793568ff03885d817b4e60fea96772f6d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123793:5296993103:2026-08-14T18:50:06Z:re_review",
       "comment_id": "5296993103",
@@ -32089,6 +32056,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123276:5298872591:2026-08-14T22:41:17Z:re_review",
+      "comment_id": "5298872591",
+      "comment_version_key": "5298872591:2026-08-14T22:41:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123276#issuecomment-5298872591",
+      "comment_created_at": "2026-08-14T22:41:17Z",
+      "comment_updated_at": "2026-08-14T22:41:17Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123276,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T22:42:05.340Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-folder-group-defaults",
+        "head_sha": "5abfd74cdc72b8646ae8ef1b60a24fc924f927d2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
