@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T07:35:02.012Z",
+  "updated_at": "2026-08-14T07:35:20.056Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123457:5289369670:2026-08-14T05:09:04Z:clawsweeper_needs_human",
-      "comment_id": "5289369670",
-      "comment_version_key": "5289369670:2026-08-14T05:09:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123457#issuecomment-5289369670",
-      "comment_created_at": "2026-08-14T04:12:19Z",
-      "comment_updated_at": "2026-08-14T05:09:04Z",
-      "comment_body_sha256": "0bba20035302f5cdf424054182a380a6b9bc6417b40425fb7633f05bf99f037d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123457,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the authoritative capability state** - The changed check trusts the connected client's effective capability field; the review environment could not inspect its writers or revocat...; Review finding: [medium] Verify the authoritative capability state — src/gateway/plugin-node-capability.ts:352 (sha=c678b7785f27b3e8ffca80d9dc285c0fd2c28158)",
-      "expected_head_sha": "c678b7785f27b3e8ffca80d9dc285c0fd2c28158",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T05:14:04.925Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/plugin-node-capability-approval-current",
-        "head_sha": "c678b7785f27b3e8ffca80d9dc285c0fd2c28158",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2923:5289752615:2026-08-14T05:13:35Z:clawsweeper_auto_repair",
       "comment_id": "5289752615",
@@ -29845,6 +29812,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-14T07:34:13Z:clawsweeper_needs_human",
+      "comment_id": "5194538175",
+      "comment_version_key": "5194538175:2026-08-14T07:34:13Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
+      "comment_created_at": "2026-08-05T16:34:55Z",
+      "comment_updated_at": "2026-08-14T07:34:13Z",
+      "comment_body_sha256": "c60a0e314c51028faf97994c7536cb2f9bdacb0525a0dba8834c73a899cc75b7",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes main's public package identity to an already-published version; the supplied context does not show explicit release-owner approval, which repository policy requires. (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
+      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T07:35:20.056Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+        "cluster_id": "automerge-openclaw-plugin-inspector-58",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
