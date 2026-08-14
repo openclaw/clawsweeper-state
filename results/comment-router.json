@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T16:57:00.597Z",
+  "updated_at": "2026-08-14T16:57:06.894Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/rfcs:48:5058512606:2026-07-23T12:43:15Z:re_review",
-      "comment_id": "5058512606",
-      "comment_version_key": "5058512606:2026-07-23T12:43:15Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/48#issuecomment-5058512606",
-      "comment_created_at": "2026-07-23T12:43:15Z",
-      "comment_updated_at": "2026-07-23T12:43:15Z",
-      "comment_body_sha256": "636bd2fd83d000988131a2bfb2f5b890b79633be90e6b4f3622e914c78c7c48b",
-      "repo": "openclaw/rfcs",
-      "issue_number": 48,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T13:42:41.219Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rfcs:48:5075983623:2026-08-14T13:41:31Z:clawsweeper_needs_human",
       "comment_id": "5075983623",
@@ -31331,6 +31304,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T16:57:00.597Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:134:5295956994:2026-08-14T16:56:26Z:clawsweeper_needs_human",
+      "comment_id": "5295956994",
+      "comment_version_key": "5295956994:2026-08-14T16:56:26Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/134#issuecomment-5295956994",
+      "comment_created_at": "2026-08-14T16:56:26Z",
+      "comment_updated_at": "2026-08-14T16:56:26Z",
+      "comment_body_sha256": "90629fcc7599500bf6e6a2462f513a5c5fd0fd328d698bc23847d0115b95de06",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 134,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing applications that automatically stop work in onCompromised will now receive that callback for transient verification I/O failures; this is a deliberate documented fail-closed... (sha=a62ba3a2641d48c25a91d3c73ebf84d8810318bf)",
+      "expected_head_sha": "a62ba3a2641d48c25a91d3c73ebf84d8810318bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T16:57:06.894Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sidecar-compromise-check-catch",
+        "head_sha": "a62ba3a2641d48c25a91d3c73ebf84d8810318bf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
