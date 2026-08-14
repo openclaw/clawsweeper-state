@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T22:42:54.671Z",
+  "updated_at": "2026-08-14T22:43:00.743Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113750:5296995530:2026-08-14T18:50:23Z:re_review",
-      "comment_id": "5296995530",
-      "comment_version_key": "5296995530:2026-08-14T18:50:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113750#issuecomment-5296995530",
-      "comment_created_at": "2026-08-14T18:50:23Z",
-      "comment_updated_at": "2026-08-14T18:50:23Z",
-      "comment_body_sha256": "7b3df61a9a808273912c2e0dc054d065f7a0832c118a67ae940bf6ca8e7cabe5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113750,
-      "author": "helloember99",
-      "author_id": 260029553,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T18:51:07.140Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/media-cron-detached-failure-state",
-        "head_sha": "9e8d21274ede28758074d125507dffbfc4523499",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123705:5295276424:2026-08-14T18:44:57Z:clawsweeper_auto_repair",
       "comment_id": "5295276424",
@@ -32086,6 +32039,39 @@
         "kind": "pull_request",
         "branch": "fix/media-cron-detached-failure-state",
         "head_sha": "07c9921f4f1fc14f6598a70d7a941649d1ebb4c8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123254:5285922616:2026-08-14T22:42:15Z:clawsweeper_needs_human",
+      "comment_id": "5285922616",
+      "comment_version_key": "5285922616:2026-08-14T22:42:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123254#issuecomment-5285922616",
+      "comment_created_at": "2026-08-13T20:18:59Z",
+      "comment_updated_at": "2026-08-14T22:42:15Z",
+      "comment_body_sha256": "909fa1f6c860cb20cee2c82323e74418320980c65ec6379277e991c5302108c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123254,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installs whose completed cron job was manually deleted will now return a partial result and require explicit remove/add recovery instead of silently recreating the job. (sha=ecedcaa5fef7ed976ed23feda11f0a5e1b34fc37)",
+      "expected_head_sha": "ecedcaa5fef7ed976ed23feda11f0a5e1b34fc37",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T22:43:00.743Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/claws-final-exam-runtime",
+        "head_sha": "ecedcaa5fef7ed976ed23feda11f0a5e1b34fc37",
         "cluster_id": null,
         "job_path": null
       }
