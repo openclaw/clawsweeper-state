@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T17:30:43.947Z",
+  "updated_at": "2026-08-14T17:31:09.959Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116780:5142084833:2026-08-14T15:03:50Z:clawsweeper_needs_human",
-      "comment_id": "5142084833",
-      "comment_version_key": "5142084833:2026-08-14T15:03:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116780#issuecomment-5142084833",
-      "comment_created_at": "2026-07-31T10:52:26Z",
-      "comment_updated_at": "2026-08-14T15:03:50Z",
-      "comment_body_sha256": "d891d339b3bf7632963df103ad9795cab7558b0768d6f0f354111d0ea35cea16",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116780,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recorded Windows run predates the later current-main test-path refactor; a focused Windows run against the current merge result would refresh that evidence. (sha=844181496eaa967607b570dead9a51d530cbc98c)",
-      "expected_head_sha": "844181496eaa967607b570dead9a51d530cbc98c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T15:15:20.464Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/dispatch-suite-windows-path",
-        "head_sha": "844181496eaa967607b570dead9a51d530cbc98c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116900:5150682489:2026-08-01T08:46:22Z:re_review",
       "comment_id": "5150682489",
@@ -30456,6 +30423,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T17:30:43.947Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122933:5275433184:2026-08-14T17:30:15Z:clawsweeper_auto_repair",
+      "comment_id": "5275433184",
+      "comment_version_key": "5275433184:2026-08-14T17:30:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122933#issuecomment-5275433184",
+      "comment_created_at": "2026-08-13T03:03:06Z",
+      "comment_updated_at": "2026-08-14T17:30:15Z",
+      "comment_body_sha256": "9c6746c9a5c4a993b60838708e0afff62b87f9baccb64a4686ebd98f1c09dd0b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122933,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4f7339a8dd86e0751d53dab0265dbabe88786dea)",
+      "expected_head_sha": "4f7339a8dd86e0751d53dab0265dbabe88786dea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T17:31:09.959Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/apply-patch-atomic-envelope",
+        "head_sha": "4f7339a8dd86e0751d53dab0265dbabe88786dea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
