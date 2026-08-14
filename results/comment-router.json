@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T06:40:49.991Z",
+  "updated_at": "2026-08-14T06:41:53.138Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116489:5236177919:2026-08-10T05:16:14Z:re_review",
-      "comment_id": "5236177919",
-      "comment_version_key": "5236177919:2026-08-10T05:16:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5236177919",
-      "comment_created_at": "2026-08-10T05:16:14Z",
-      "comment_updated_at": "2026-08-10T05:16:14Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116489,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T03:13:59.480Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116489:5236212124:2026-08-10T05:21:25Z:re_review",
       "comment_id": "5236212124",
@@ -30926,6 +30899,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123527:5290330733:2026-08-14T06:41:04Z:clawsweeper_needs_human",
+      "comment_id": "5290330733",
+      "comment_version_key": "5290330733:2026-08-14T06:41:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123527#issuecomment-5290330733",
+      "comment_created_at": "2026-08-14T06:41:04Z",
+      "comment_updated_at": "2026-08-14T06:41:04Z",
+      "comment_body_sha256": "d8436cd74c317fffa9158c5a112423934842e724e5baa64d8c283c7924f1473d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123527,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the environment contract for sandbox and node execution hosts; exact-head upgrade behavior and the documented assertion that their loopback proxy is unreachable need dire... (sha=83a7200e31f7cad5760ebad3bbfe3428b772a402)",
+      "expected_head_sha": "83a7200e31f7cad5760ebad3bbfe3428b772a402",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T06:41:53.138Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/egress-proxy-sandbox-scope",
+        "head_sha": "83a7200e31f7cad5760ebad3bbfe3428b772a402",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
