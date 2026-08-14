@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T03:22:36.213Z",
+  "updated_at": "2026-08-14T03:23:55.093Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122862:5275401154:2026-08-13T02:57:52Z:re_review",
-      "comment_id": "5275401154",
-      "comment_version_key": "5275401154:2026-08-13T02:57:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122862#issuecomment-5275401154",
-      "comment_created_at": "2026-08-13T02:57:52Z",
-      "comment_updated_at": "2026-08-13T02:57:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122862,
-      "author": "hydraxman",
-      "author_id": 8344245,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T23:14:43.996Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122748:5270660232:2026-08-13T23:09:11Z:clawsweeper_needs_human",
       "comment_id": "5270660232",
@@ -30608,6 +30581,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T03:22:36.213Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123447:5289028068:2026-08-14T03:23:09Z:clawsweeper_needs_human",
+      "comment_id": "5289028068",
+      "comment_version_key": "5289028068:2026-08-14T03:23:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123447#issuecomment-5289028068",
+      "comment_created_at": "2026-08-14T03:23:09Z",
+      "comment_updated_at": "2026-08-14T03:23:09Z",
+      "comment_body_sha256": "5a9373857e26c6c87a50754cb67c82ada878a4d8b431e0fe732bade0d314e800",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123447,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a persisted onboarding default; direct source review is still needed to confirm behavior for legacy-only configurations and the doctor migration path before merge. (sha=79a2628b3e7d2aad3fcb4f681e45b5a86c767395)",
+      "expected_head_sha": "79a2628b3e7d2aad3fcb4f681e45b5a86c767395",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T03:23:55.093Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fal-onboard-media-models-key",
+        "head_sha": "79a2628b3e7d2aad3fcb4f681e45b5a86c767395",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
