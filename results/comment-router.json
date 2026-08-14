@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T08:54:43.727Z",
+  "updated_at": "2026-08-14T08:56:09.929Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123477:5289721358:2026-08-14T06:28:00Z:clawsweeper_needs_human",
-      "comment_id": "5289721358",
-      "comment_version_key": "5289721358:2026-08-14T06:28:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123477#issuecomment-5289721358",
-      "comment_created_at": "2026-08-14T05:08:14Z",
-      "comment_updated_at": "2026-08-14T06:28:00Z",
-      "comment_body_sha256": "58e843153e527bf3fc01156dcfbb2cf47ab268c3d6c5d98934e4fcc47f85f270",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123477,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The runtime/docs production delta is +127/-40 versus tests +156/-82; the added readiness callback and typed offline error may be justified by the dispatch-boundary invariant, but the... (sha=79d79aa3c66a50fd177aa509b020136af9a78208)",
-      "expected_head_sha": "79d79aa3c66a50fd177aa509b020136af9a78208",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T06:34:50.357Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/runner-lifecycle",
-        "head_sha": "79d79aa3c66a50fd177aa509b020136af9a78208",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123482:5289771597:2026-08-14T06:28:26Z:clawsweeper_needs_human",
       "comment_id": "5289771597",
@@ -30294,6 +30261,53 @@
       "status": "skipped",
       "processed_at": "2026-08-14T08:54:43.727Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/Peekaboo:466:5291436291:2026-08-14T08:55:24Z:re_review",
+      "comment_id": "5291436291",
+      "comment_version_key": "5291436291:2026-08-14T08:55:24Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/466#issuecomment-5291436291",
+      "comment_created_at": "2026-08-14T08:55:24Z",
+      "comment_updated_at": "2026-08-14T08:55:24Z",
+      "comment_body_sha256": "7873e9ace96d2177342ce6cf56bcf8ad23a3f9153e37046e5c4580594e0780d4",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 466,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T08:56:07.718Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/background-web-scroll",
+        "head_sha": "9d40874c4035e826343c88dc0ad6960765c2ec52",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
