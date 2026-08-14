@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T05:38:24.435Z",
+  "updated_at": "2026-08-14T05:38:31.919Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121361:5243357590:2026-08-10T16:57:22Z:re_review",
-      "comment_id": "5243357590",
-      "comment_version_key": "5243357590:2026-08-10T16:57:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121361#issuecomment-5243357590",
-      "comment_created_at": "2026-08-10T16:57:22Z",
-      "comment_updated_at": "2026-08-10T16:57:22Z",
-      "comment_body_sha256": "68c67f6cd6a2f99acf923c16543d1857ec61d1eb973f063e42e86a03aff42947",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121361,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T02:16:44.236Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121361:5248585209:2026-08-11T03:16:47Z:re_review",
       "comment_id": "5248585209",
@@ -30390,6 +30363,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T05:38:24.435Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121945:5251015453:2026-08-14T05:37:34Z:clawsweeper_needs_human",
+      "comment_id": "5251015453",
+      "comment_version_key": "5251015453:2026-08-14T05:37:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121945#issuecomment-5251015453",
+      "comment_created_at": "2026-08-11T08:51:16Z",
+      "comment_updated_at": "2026-08-14T05:37:34Z",
+      "comment_body_sha256": "7547074199bc6d43bbafcbdcd9c08a4311185811327d4aa4ef326e6b48aa5152",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121945,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Derive worker cutover from the assigned agent (P1)** - DEFAULT_AGENT_ID makes every worker inherit main’s isolation state. A cut-over non-main assignment can therefore retain raw filesystem/process tools, while...; Review finding: [P1] Derive worker cutover from the assigned agent — src/worker/worker.runtime.ts:56 - [high] Worker isolation uses the wrong agent — src/worker/worker.runtime.ts:... (sha=1bc740cc32589c0704d53a16404be0f303517458)",
+      "expected_head_sha": "1bc740cc32589c0704d53a16404be0f303517458",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T05:38:31.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memory-permissions-p1c-v2",
+        "head_sha": "1bc740cc32589c0704d53a16404be0f303517458",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
