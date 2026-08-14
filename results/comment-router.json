@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-14T20:32:37.762Z",
+  "updated_at": "2026-08-14T20:31:25.110Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120900:5296272650:2026-08-14T17:28:55Z:re_review",
+      "comment_id": "5296272650",
+      "comment_version_key": "5296272650:2026-08-14T17:28:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120900#issuecomment-5296272650",
+      "comment_created_at": "2026-08-14T17:28:55Z",
+      "comment_updated_at": "2026-08-14T17:28:55Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120900,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T17:29:43.798Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/install-policy-warning-ui",
+        "head_sha": "00fb1d69f271cfa517d38112c3eb226e2e378473",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123482:5289771597:2026-08-14T17:29:04Z:clawsweeper_auto_repair",
       "comment_id": "5289771597",
@@ -32072,53 +32119,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119225:5297892090:2026-08-14T20:31:49Z:re_review",
-      "comment_id": "5297892090",
-      "comment_version_key": "5297892090:2026-08-14T20:31:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119225#issuecomment-5297892090",
-      "comment_created_at": "2026-08-14T20:31:49Z",
-      "comment_updated_at": "2026-08-14T20:31:49Z",
-      "comment_body_sha256": "266c7af184d0768f328a78f42cca815efc3adfd4bfd1dab443836604d0fd9613",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119225,
-      "author": "licheer-zte",
-      "author_id": 305411557,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — clawsweeper p2 fixed on head `4563a97329e`:",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T20:32:35.626Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/prune-empty-staged-media-104358",
-        "head_sha": "4563a97329e7af84a7f021066767ae298f510a72",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
