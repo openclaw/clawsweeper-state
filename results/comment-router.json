@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T06:09:06.995Z",
+  "updated_at": "2026-08-14T06:10:30.482Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112214:5256674504:2026-08-11T17:35:33Z:re_review",
-      "comment_id": "5256674504",
-      "comment_version_key": "5256674504:2026-08-11T17:35:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112214#issuecomment-5256674504",
-      "comment_created_at": "2026-08-11T17:35:33Z",
-      "comment_updated_at": "2026-08-11T17:35:33Z",
-      "comment_body_sha256": "d6c47b0f7eafed8effa22bf65e2204c256f319ee62e45f46592027bb6928385c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112214,
-      "author": "AdrianIp0204",
-      "author_id": 255652477,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T02:17:33.939Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112214:5256713893:2026-08-11T17:39:26Z:re_review",
       "comment_id": "5256713893",
@@ -30544,6 +30517,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123515:5290102348:2026-08-14T06:09:38Z:clawsweeper_needs_human",
+      "comment_id": "5290102348",
+      "comment_version_key": "5290102348:2026-08-14T06:09:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123515#issuecomment-5290102348",
+      "comment_created_at": "2026-08-14T06:09:38Z",
+      "comment_updated_at": "2026-08-14T06:09:38Z",
+      "comment_body_sha256": "51edb311be21e66862ac4025204162e7273736b9e32e7bbf552f79404205ad5f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123515,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +16 lines (+28/−12); the shared helper appears to be the right owner boundary, but its full sibling and recovery semantics could not be verified from the failed... (sha=c9b9ead907b02ec6258db1c7ccc1147b6785e0ce)",
+      "expected_head_sha": "c9b9ead907b02ec6258db1c7ccc1147b6785e0ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T06:10:30.482Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-preamble-prefix-corruption",
+        "head_sha": "c9b9ead907b02ec6258db1c7ccc1147b6785e0ce",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
