@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T06:57:27.992Z",
+  "updated_at": "2026-08-14T07:03:05.494Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123420:5289048082:2026-08-14T03:26:34Z:re_review",
-      "comment_id": "5289048082",
-      "comment_version_key": "5289048082:2026-08-14T03:26:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123420#issuecomment-5289048082",
-      "comment_created_at": "2026-08-14T03:26:34Z",
-      "comment_updated_at": "2026-08-14T03:26:34Z",
-      "comment_body_sha256": "1f585cbb09964743ff0d24fb859bb6110893ff59464d9d32cf76879f3c98c04a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123420,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T03:27:12.535Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/peekaboo-4-1-mac-integration-6ecf41",
-        "head_sha": "c2377f8a2cb47bbf843c85d7d32ca7f040ab7b3e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119342:5288899535:2026-08-14T03:00:42Z:re_review",
       "comment_id": "5288899535",
@@ -30751,6 +30704,39 @@
         "kind": "pull_request",
         "branch": "steipete/gateway-runtime-token-test-perf",
         "head_sha": "f5c58b4e3b0c76e911e393234a0cdb8210c3f835",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:17:4759967424:2026-08-14T07:02:27Z:clawsweeper_needs_human",
+      "comment_id": "4759967424",
+      "comment_version_key": "4759967424:2026-08-14T07:02:27Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/17#issuecomment-4759967424",
+      "comment_created_at": "2026-06-20T20:57:22Z",
+      "comment_updated_at": "2026-08-14T07:02:27Z",
+      "comment_body_sha256": "a6501eb4d8737ef06a9548d8ae63a153bc4069c852fdbb402b36de2f662cbfbc",
+      "repo": "openclaw/rfcs",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Accepting the RFC commits maintainers to preserve Gateway commands, configuration, protocol clients, and plugin behavior during a major lifecycle split. (sha=ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4)",
+      "expected_head_sha": "ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T07:03:05.494Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-independent-core-rfc",
+        "head_sha": "ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4",
         "cluster_id": null,
         "job_path": null
       }
