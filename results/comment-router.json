@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T17:22:30.564Z",
+  "updated_at": "2026-08-14T17:22:32.551Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99798:4880574469:2026-08-14T13:33:06Z:clawsweeper_auto_repair",
-      "comment_id": "4880574469",
-      "comment_version_key": "4880574469:2026-08-14T13:33:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99798#issuecomment-4880574469",
-      "comment_created_at": "2026-07-04T04:03:55Z",
-      "comment_updated_at": "2026-08-14T13:33:06Z",
-      "comment_body_sha256": "caf19386398dc15193bb64fcae92e0d4a1a82248b577e7438eba3eaa57878249",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99798,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e9c87e27667819a470b8fe490ca394068f09618b)",
-      "expected_head_sha": "e9c87e27667819a470b8fe490ca394068f09618b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T14:31:42.817Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/99240-copilot-thinking-levels",
-        "head_sha": "e9c87e27667819a470b8fe490ca394068f09618b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101316:4899972820:2026-08-14T13:34:22Z:clawsweeper_auto_repair",
       "comment_id": "4899972820",
@@ -31055,6 +31022,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T17:22:30.564Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122937:5275834584:2026-08-14T17:21:49Z:clawsweeper_needs_human",
+      "comment_id": "5275834584",
+      "comment_version_key": "5275834584:2026-08-14T17:21:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122937#issuecomment-5275834584",
+      "comment_created_at": "2026-08-13T04:07:48Z",
+      "comment_updated_at": "2026-08-14T17:21:49Z",
+      "comment_body_sha256": "63c21cd01b72da8c959b4721ef03fe13b8970ab3f1dc8b53aac1545e61b7a2f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122937,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied SQLite-lock transcript exercises substantial production code after the fix, but it explicitly substitutes the WhatsApp tr... (sha=d3c049857ffa9d9b2e78c037b32df57c99d62d9a)",
+      "expected_head_sha": "d3c049857ffa9d9b2e78c037b32df57c99d62d9a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T17:22:32.551Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-inbound-admission-drop",
+        "head_sha": "d3c049857ffa9d9b2e78c037b32df57c99d62d9a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
