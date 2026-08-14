@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T10:26:45.645Z",
+  "updated_at": "2026-08-14T10:26:49.969Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5290623267:2026-08-14T07:16:24Z:re_review",
-      "comment_id": "5290623267",
-      "comment_version_key": "5290623267:2026-08-14T07:16:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5290623267",
-      "comment_created_at": "2026-08-14T07:16:24Z",
-      "comment_updated_at": "2026-08-14T07:16:24Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T07:17:11.248Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/signal-qr-setup",
-        "head_sha": "2414973b112cad29e524eda923f5098b2e8fc212",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119341:5290623322:2026-08-14T07:16:24Z:re_review",
       "comment_id": "5290623322",
@@ -31259,6 +31212,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T10:26:45.645Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:22:4756680671:2026-08-14T10:13:21Z:clawsweeper_auto_repair",
+      "comment_id": "4756680671",
+      "comment_version_key": "4756680671:2026-08-14T10:13:21Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/22#issuecomment-4756680671",
+      "comment_created_at": "2026-06-20T06:08:15Z",
+      "comment_updated_at": "2026-08-14T10:13:21Z",
+      "comment_body_sha256": "096dccef0d7e1c26e5fd9345e50f7c4ca09a3715694d8be7bd91f32329803ce2",
+      "repo": "openclaw/rfcs",
+      "issue_number": 22,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=63fb092a20f8ddb426c202e4f654ba45ec28f4d2)",
+      "expected_head_sha": "63fb092a20f8ddb426c202e4f654ba45ec28f4d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T10:26:49.969Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rfc/multi-slot-memory-role-architecture",
+        "head_sha": "63fb092a20f8ddb426c202e4f654ba45ec28f4d2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
