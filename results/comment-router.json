@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T21:28:40.969Z",
+  "updated_at": "2026-08-14T21:28:50.233Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123774:5296461119:2026-08-14T17:50:03Z:clawsweeper_auto_repair",
-      "comment_id": "5296461119",
-      "comment_version_key": "5296461119:2026-08-14T17:50:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123774#issuecomment-5296461119",
-      "comment_created_at": "2026-08-14T17:50:03Z",
-      "comment_updated_at": "2026-08-14T17:50:03Z",
-      "comment_body_sha256": "adea8e5027d113b9405915efc1ee769cd27ce454fe2b9a6fd5fab09486e3e5a9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123774,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=473f4abf0abf9fc2b8b88b6c86f807492dd8874f)",
-      "expected_head_sha": "473f4abf0abf9fc2b8b88b6c86f807492dd8874f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T17:50:46.284Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/orphan-gateway-launcher",
-        "head_sha": "473f4abf0abf9fc2b8b88b6c86f807492dd8874f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123284:5296461592:2026-08-14T17:50:06Z:re_review",
       "comment_id": "5296461592",
@@ -32219,6 +32186,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123834:5298342597:2026-08-14T21:28:00Z:re_review",
+      "comment_id": "5298342597",
+      "comment_version_key": "5298342597:2026-08-14T21:28:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123834#issuecomment-5298342597",
+      "comment_created_at": "2026-08-14T21:28:00Z",
+      "comment_updated_at": "2026-08-14T21:28:00Z",
+      "comment_body_sha256": "771fa03ae3ed666fe2a79f43e80e8e51c8fa530d57208aab2e55583f9bc28541",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123834,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T21:28:48.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-yield-diagnostic-suppression",
+        "head_sha": "561e7005bf3ad69a8b5d86d0559b9e7a04f694c8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
