@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T20:47:38.421Z",
+  "updated_at": "2026-08-14T20:48:19.857Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:77891:4380588908:2026-08-14T17:27:42Z:clawsweeper_auto_repair",
-      "comment_id": "4380588908",
-      "comment_version_key": "4380588908:2026-08-14T17:27:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/77891#issuecomment-4380588908",
-      "comment_created_at": "2026-05-05T15:12:53Z",
-      "comment_updated_at": "2026-08-14T17:27:42Z",
-      "comment_body_sha256": "c4459b9db7ed5b6eb41de46a853f62c6cb3848debfcc3e98d1e3ba5295466aec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 77891,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=77fd2be812cbd999cebc730cb620d8816a2893dd)",
-      "expected_head_sha": "77fd2be812cbd999cebc730cb620d8816a2893dd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T17:43:45.662Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/77871-stale-binding-cleanup",
-        "head_sha": "77fd2be812cbd999cebc730cb620d8816a2893dd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78436:4387443771:2026-08-14T17:29:03Z:clawsweeper_auto_repair",
       "comment_id": "4387443771",
@@ -32061,6 +32028,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:93247:5298023358:2026-08-14T20:47:33Z:re_review",
+      "comment_id": "5298023358",
+      "comment_version_key": "5298023358:2026-08-14T20:47:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/93247#issuecomment-5298023358",
+      "comment_created_at": "2026-08-14T20:47:33Z",
+      "comment_updated_at": "2026-08-14T20:47:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 93247,
+      "author": "1052326311",
+      "author_id": 65798732,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T20:48:17.614Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/diagnostic-ghost-entries-pruning",
+        "head_sha": "cf44b61358d48ccec059a9458c25c02febc82061",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
