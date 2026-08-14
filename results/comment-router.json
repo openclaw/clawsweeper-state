@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T03:14:58.944Z",
+  "updated_at": "2026-08-14T03:14:59.979Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:4558734002:2026-05-27T21:15:46Z:re_review",
-      "comment_id": "4558734002",
-      "comment_version_key": "4558734002:2026-05-27T21:15:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-4558734002",
-      "comment_created_at": "2026-05-27T21:15:46Z",
-      "comment_updated_at": "2026-05-27T21:15:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T23:11:06.676Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:4558809269:2026-05-27T21:27:22Z:re_review",
       "comment_id": "4558809269",
@@ -30482,6 +30455,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T03:14:58.944Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123216:5285737510:2026-08-14T02:23:46Z:clawsweeper_needs_human",
+      "comment_id": "5285737510",
+      "comment_version_key": "5285737510:2026-08-14T02:23:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123216#issuecomment-5285737510",
+      "comment_created_at": "2026-08-13T20:00:01Z",
+      "comment_updated_at": "2026-08-14T02:23:46Z",
+      "comment_body_sha256": "27cfefc861ae558a1a2dcf61bf1c155862b194bbc48ff442be9bf464918e0409",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123216,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Resolve proxy-auth CodeQL alert** - CodeQL still flags the Basic proxy-auth digest; confirm the construction is only a comparison aid for a high-entropy, short-lived capability and that...; Review finding: [medium] Resolve proxy-auth CodeQL alert (sha=e6d47e9219909daadecd871aa14dc9722a605a53)",
+      "expected_head_sha": "e6d47e9219909daadecd871aa14dc9722a605a53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T03:14:59.979Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/secret-egress-proxy",
+        "head_sha": "e6d47e9219909daadecd871aa14dc9722a605a53",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
