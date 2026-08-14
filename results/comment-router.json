@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T07:30:59.977Z",
+  "updated_at": "2026-08-14T07:31:03.250Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123424:5288960869:2026-08-14T04:31:30Z:clawsweeper_needs_human",
-      "comment_id": "5288960869",
-      "comment_version_key": "5288960869:2026-08-14T04:31:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123424#issuecomment-5288960869",
-      "comment_created_at": "2026-08-14T03:10:58Z",
-      "comment_updated_at": "2026-08-14T04:31:30Z",
-      "comment_body_sha256": "21d3e22beb1164e8dd1cc06d2665c1875f48178ca1b031d64c733c2be78d9393",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123424,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch has a net production increase of 1,371 lines across persisted-session migration and lifecycle paths; full owner-boundary, transaction, and upgrade review remains required b... (sha=c495c34c99a26ef849f2f7f24da2dfa1054cdcd2)",
-      "expected_head_sha": "c495c34c99a26ef849f2f7f24da2dfa1054cdcd2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T05:13:58.889Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/legacy-main-session-engine",
-        "head_sha": "c495c34c99a26ef849f2f7f24da2dfa1054cdcd2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123461:5289447746:2026-08-14T04:36:49Z:clawsweeper_needs_human",
       "comment_id": "5289447746",
@@ -29836,6 +29803,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116489:5290730523:2026-08-14T07:30:12Z:re_review",
+      "comment_id": "5290730523",
+      "comment_version_key": "5290730523:2026-08-14T07:30:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5290730523",
+      "comment_created_at": "2026-08-14T07:30:12Z",
+      "comment_updated_at": "2026-08-14T07:30:12Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116489,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T07:31:00.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/before-install-coverage",
+        "head_sha": "a4822797ba744182c9cc71c56223a4f46c2b4f4d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
