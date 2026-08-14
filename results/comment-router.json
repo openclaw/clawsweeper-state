@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T18:12:23.319Z",
+  "updated_at": "2026-08-14T18:14:17.319Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90979:4639888909:2026-08-14T15:55:52Z:clawsweeper_needs_human",
-      "comment_id": "4639888909",
-      "comment_version_key": "4639888909:2026-08-14T15:55:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90979#issuecomment-4639888909",
-      "comment_created_at": "2026-06-06T17:50:11Z",
-      "comment_updated_at": "2026-08-14T15:55:52Z",
-      "comment_body_sha256": "f5ffd7dcdaa991eb894cf05f6dd08f0808f2070028a5a74568a212c9bce8c2ea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90979,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, whose CLI-session module has moved since the PR base; although GitHub reports it cleanly mergeable, rebase and rerun the focused tests on the exact... (sha=91b0c131e9d21669764c87887dd82ec08e6cfa36)",
-      "expected_head_sha": "91b0c131e9d21669764c87887dd82ec08e6cfa36",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T15:56:31.814Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-runtime-followup",
-        "head_sha": "91b0c131e9d21669764c87887dd82ec08e6cfa36",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123660:5293616905:2026-08-14T15:57:11Z:clawsweeper_auto_repair",
       "comment_id": "5293616905",
@@ -30724,6 +30691,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123573:5296671405:2026-08-14T18:13:31Z:re_review",
+      "comment_id": "5296671405",
+      "comment_version_key": "5296671405:2026-08-14T18:13:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123573#issuecomment-5296671405",
+      "comment_created_at": "2026-08-14T18:13:31Z",
+      "comment_updated_at": "2026-08-14T18:13:31Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123573,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T18:14:15.250Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/chat-incognito-composition",
+        "head_sha": "203ccea712047dcf573e444b0df2cb10ca04578c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
