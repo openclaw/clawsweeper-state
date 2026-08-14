@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T21:46:22.461Z",
+  "updated_at": "2026-08-14T21:46:29.110Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:95785:4779408634:2026-08-14T17:52:49Z:clawsweeper_auto_repair",
-      "comment_id": "4779408634",
-      "comment_version_key": "4779408634:2026-08-14T17:52:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/95785#issuecomment-4779408634",
-      "comment_created_at": "2026-06-23T12:55:24Z",
-      "comment_updated_at": "2026-08-14T17:52:49Z",
-      "comment_body_sha256": "d4084290b952bb9b51b8c6a53127c25a2241a0908b83d93f1ceb153a424aced3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 95785,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T18:09:20.505Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "shannon/issue-91734-image-generate-file",
-        "head_sha": "c08fa1920517eeb7aa42c58a202c5e8adc9308dd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114199:5086126823:2026-08-14T17:43:02Z:clawsweeper_auto_repair",
       "comment_id": "5086126823",
@@ -32386,6 +32353,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115670:5298480525:2026-08-14T21:45:47Z:re_review",
+      "comment_id": "5298480525",
+      "comment_version_key": "5298480525:2026-08-14T21:45:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115670#issuecomment-5298480525",
+      "comment_created_at": "2026-08-14T21:45:47Z",
+      "comment_updated_at": "2026-08-14T21:45:47Z",
+      "comment_body_sha256": "ae39e0f6bb4d99bed24cce440fac567c72e9457de39a64719b349356cc2a7b98",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115670,
+      "author": "sasan1200",
+      "author_id": 28139727,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T21:46:27.376Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/claws-adopt-existing-workspace",
+        "head_sha": "f41c61afb87af408a767d79ee1b29acd8d241586",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
