@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T15:23:48.663Z",
+  "updated_at": "2026-08-14T15:25:15.670Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123578:5291700182:2026-08-14T10:23:13Z:clawsweeper_auto_repair",
-      "comment_id": "5291700182",
-      "comment_version_key": "5291700182:2026-08-14T10:23:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123578#issuecomment-5291700182",
-      "comment_created_at": "2026-08-14T09:24:45Z",
-      "comment_updated_at": "2026-08-14T10:23:13Z",
-      "comment_body_sha256": "68f4daeef1a0838d4445fb7751b62f2b096290108da7a00085307ff159692ddc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123578,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7af1199a2c9d67c9fc9521211266848408f75d59)",
-      "expected_head_sha": "7af1199a2c9d67c9fc9521211266848408f75d59",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T10:24:29.617Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/terminal-fenced-action-fix",
-        "head_sha": "7af1199a2c9d67c9fc9521211266848408f75d59",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Tachikoma:66:5292236311:2026-08-14T10:23:44Z:clawsweeper_auto_repair",
       "comment_id": "5292236311",
@@ -32155,6 +32122,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123546:5295050564:2026-08-14T15:24:17Z:re_review",
+      "comment_id": "5295050564",
+      "comment_version_key": "5295050564:2026-08-14T15:24:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123546#issuecomment-5295050564",
+      "comment_created_at": "2026-08-14T15:24:17Z",
+      "comment_updated_at": "2026-08-14T15:24:17Z",
+      "comment_body_sha256": "e8df20fe3d1c473e8e98bfa7464b23d569bbd1317c2acb8bdbad29a65c29479b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123546,
+      "author": "davenicoll",
+      "author_id": 690117,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — both findings are addressed (`4a21c99f13d14a7e5058db5dd89f876816261752`, `f4fa98f170c0b6a39dc29906c9fef4029726537f`) and the branch is rebased onto current `main`. the two `merge-risk` labels should no longer apply: the truncation notice is gated on `!hasattemptterminalstate(attempt)` so it cannot follow terminal media or a committed source reply, and `resolveattempttrajectoryterminal()` now records a delivered length partial as `success` instead of `non_deliverable_terminal_turn`. both have regression coverage",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T15:25:10.888Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/length-stop-discards-visible-text",
+        "head_sha": "f4fa98f170c0b6a39dc29906c9fef4029726537f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
