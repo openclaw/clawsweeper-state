@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T20:41:29.286Z",
+  "updated_at": "2026-08-14T20:41:44.265Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1151:5262145162:2026-08-14T17:34:26Z:clawsweeper_auto_repair",
-      "comment_id": "5262145162",
-      "comment_version_key": "5262145162:2026-08-14T17:34:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1151#issuecomment-5262145162",
-      "comment_created_at": "2026-08-12T04:05:48Z",
-      "comment_updated_at": "2026-08-14T17:34:26Z",
-      "comment_body_sha256": "f69195a060ae7073ef5db2164a6e3235e8b8fb924bd4e4051ba65643514c276a",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1151,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=c31f320a8d5d3f7b79b25b3382531bf37da6e581)",
-      "expected_head_sha": "c31f320a8d5d3f7b79b25b3382531bf37da6e581",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-14T17:35:26.077Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "shanselman-fix-issue-1149",
-        "head_sha": "c31f320a8d5d3f7b79b25b3382531bf37da6e581",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123765:5296247138:2026-08-14T17:34:43Z:clawsweeper_auto_repair",
       "comment_id": "5296247138",
@@ -32121,6 +32088,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120464:5297969682:2026-08-14T20:41:03Z:re_review",
+      "comment_id": "5297969682",
+      "comment_version_key": "5297969682:2026-08-14T20:41:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120464#issuecomment-5297969682",
+      "comment_created_at": "2026-08-14T20:41:03Z",
+      "comment_updated_at": "2026-08-14T20:41:03Z",
+      "comment_body_sha256": "6528cffe713bf960ceff9c1ba70c0951fd6e42b6e13c6d3df69a216e726fd63b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120464,
+      "author": "licheer-zte",
+      "author_id": 305411557,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the p3 comment cleanup is done on head `3c8208cd00a`: inline comments at the seed site and the emit site now point at the canonical `startinputjson` field rationale instead of repeating it (5 insertions, 7 deletions, comment-only)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T20:41:42.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-progress-tool-args-120306",
+        "head_sha": "3c8208cd00ab825f0afcdcabd3bbbbd75fdd6854",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
