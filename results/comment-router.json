@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T17:40:50.929Z",
+  "updated_at": "2026-08-14T17:41:34.494Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117152:5148936030:2026-08-14T15:21:40Z:clawsweeper_needs_human",
-      "comment_id": "5148936030",
-      "comment_version_key": "5148936030:2026-08-14T15:21:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117152#issuecomment-5148936030",
-      "comment_created_at": "2026-08-01T01:50:21Z",
-      "comment_updated_at": "2026-08-14T15:21:40Z",
-      "comment_body_sha256": "1a38662010ea53c73ef45629a4823ca8e977efc899d56432a3a740f7c26996fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117152,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the draft as dirty, and current main has split the embedded ask_user lifecycle after this branch’s base; merging requires a deliberate reconciliation rather than assumi... (sha=43da850d08bc61025b2c6cad65ff6caff5b379d7)",
-      "expected_head_sha": "43da850d08bc61025b2c6cad65ff6caff5b379d7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T15:22:21.901Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/116554-claude-ask-user",
-        "head_sha": "43da850d08bc61025b2c6cad65ff6caff5b379d7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117152:5148946917:2026-08-01T01:53:22Z:re_review",
       "comment_id": "5148946917",
@@ -30485,6 +30452,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118977:5273349725:2026-08-14T17:40:40Z:re_review",
+      "comment_id": "5273349725",
+      "comment_version_key": "5273349725:2026-08-14T17:40:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118977#issuecomment-5273349725",
+      "comment_created_at": "2026-08-12T22:08:27Z",
+      "comment_updated_at": "2026-08-14T17:40:40Z",
+      "comment_body_sha256": "c3276209e85b6e4f0aa1eaf27bdb5460d0e29620bcb29f0a917e5834ce7327af",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118977,
+      "author": "LauraGPT",
+      "author_id": 18321252,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T17:41:32.328Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/funasr-websocket-subprotocol-20260804",
+        "head_sha": "dfe8c1addf5cf3073ecbbd711815b7ca0114a81a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
