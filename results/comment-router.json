@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-08-14T07:17:14.388Z",
+  "updated_at": "2026-08-14T07:17:15.652Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121907:5250032455:2026-08-14T04:31:25Z:clawsweeper_needs_human",
-      "comment_id": "5250032455",
-      "comment_version_key": "5250032455:2026-08-14T04:31:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121907#issuecomment-5250032455",
-      "comment_created_at": "2026-08-11T06:59:39Z",
-      "comment_updated_at": "2026-08-14T04:31:25Z",
-      "comment_body_sha256": "6082c565dc9dd4b280899fc1d1aefa053222f2449a6f04631d588d329062670d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121907,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR describes earlier live evidence and exact-head focused tests, but explicitly leaves the final exact-head Telegram run outstandi... (sha=2affc979f550e167104a59b4e944b6bfb874c2c7)",
-      "expected_head_sha": "2affc979f550e167104a59b4e944b6bfb874c2c7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T04:32:10.824Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-batched-reply-context",
-        "head_sha": "2affc979f550e167104a59b4e944b6bfb874c2c7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/rfcs:48:5289487827:2026-08-14T04:29:01Z:re_review",
-      "comment_id": "5289487827",
-      "comment_version_key": "5289487827:2026-08-14T04:29:01Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/48#issuecomment-5289487827",
-      "comment_created_at": "2026-08-14T04:29:01Z",
-      "comment_updated_at": "2026-08-14T04:29:01Z",
-      "comment_body_sha256": "9aa449f806637b5a1269b6a2bd13ec0762c0bc6958108984b4a25fe96fe59057",
-      "repo": "openclaw/rfcs",
-      "issue_number": 48,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T04:32:28.509Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/claws-portable-agent-settings",
-        "head_sha": "acf99d988d90b8d106a4c1d22f66b139bfb02def",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/rfcs:48:5058512606:2026-07-23T12:43:15Z:re_review",
       "comment_id": "5058512606",
@@ -30242,6 +30162,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101866:4908045740:2026-08-14T07:16:16Z:clawsweeper_needs_human",
+      "comment_id": "4908045740",
+      "comment_version_key": "4908045740:2026-08-14T07:16:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/101866#issuecomment-4908045740",
+      "comment_created_at": "2026-07-07T19:49:57Z",
+      "comment_updated_at": "2026-08-14T07:16:16Z",
+      "comment_body_sha256": "a90c42a85c1f3b826507d162cf3dcc2e0663ae19dc5c8df6b7e17a92357256fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 101866,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Filter transcript provenance through local-media trust (P1)** - readTurnGroundedMediaPaths accepts every extracted toolResult media URL. MCP results persist details.mcpServer/mcpTool, which the established filte...; Review finding: [P1] Filter transcript provenance through local-media trust — src/config/sessions/transcript.ts:274 - [high] Untrusted tool results can authorize replayed local pa... (sha=959e7479c356825ac928a231e92c154995b8493b)",
+      "expected_head_sha": "959e7479c356825ac928a231e92c154995b8493b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T07:17:15.652Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/transcript-media-grounding-upstream",
+        "head_sha": "959e7479c356825ac928a231e92c154995b8493b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:101866:5248027566:2026-08-11T01:34:21Z:re_review",
+      "comment_id": "5248027566",
+      "comment_version_key": "5248027566:2026-08-11T01:34:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/101866#issuecomment-5248027566",
+      "comment_created_at": "2026-08-11T01:34:21Z",
+      "comment_updated_at": "2026-08-11T01:34:21Z",
+      "comment_body_sha256": "bc8447ad30a244bc12ac1a01534ca0cc1e3a696291f53a7a17ba26dd4d571bd6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 101866,
+      "author": "amittell",
+      "author_id": 1388680,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T07:17:15.652Z",
+      "target": null
     }
   ]
 }
