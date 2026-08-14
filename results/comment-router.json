@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T12:03:11.545Z",
+  "updated_at": "2026-08-14T12:04:36.020Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123492:5291075417:2026-08-14T08:12:41Z:re_review",
-      "comment_id": "5291075417",
-      "comment_version_key": "5291075417:2026-08-14T08:12:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123492#issuecomment-5291075417",
-      "comment_created_at": "2026-08-14T08:12:41Z",
-      "comment_updated_at": "2026-08-14T08:12:41Z",
-      "comment_body_sha256": "c88bc3f745167bf7ea0b5e04f1c856a1fe94cebf7d00ab71ff46d20c838564b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123492,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T08:13:27.520Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reset-transcript-window-123334",
-        "head_sha": "5d8dddd4d17eea22918a77fcd628cbf65566de13",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123556:5291077099:2026-08-14T08:12:51Z:clawsweeper_auto_repair",
       "comment_id": "5291077099",
@@ -31705,6 +31658,39 @@
         "kind": "pull_request",
         "branch": "fix/google-prompt-cache-json-parse",
         "head_sha": "7db9e40202a0b271ab04c38fe44c596676aa8148",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123620:5293069817:2026-08-14T12:03:56Z:clawsweeper_needs_human",
+      "comment_id": "5293069817",
+      "comment_version_key": "5293069817:2026-08-14T12:03:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123620#issuecomment-5293069817",
+      "comment_created_at": "2026-08-14T12:03:56Z",
+      "comment_updated_at": "2026-08-14T12:03:56Z",
+      "comment_body_sha256": "efb224c12f5a5750289b3f5f43c9717c3492e6fd5283ea500991985943209c65",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123620,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the patch has no supported defect finding, while the maintainer label reserves final handling for normal owner review. (sha=0c6b852465d76893da22a71dd671b0c2c94f8c89)",
+      "expected_head_sha": "0c6b852465d76893da22a71dd671b0c2c94f8c89",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T12:04:36.020Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/optimistic-grothendieck-d6eea6",
+        "head_sha": "0c6b852465d76893da22a71dd671b0c2c94f8c89",
         "cluster_id": null,
         "job_path": null
       }
