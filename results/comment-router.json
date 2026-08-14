@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T03:33:30.777Z",
+  "updated_at": "2026-08-14T03:33:31.221Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123358:5287315477:2026-08-13T22:55:48Z:re_review",
-      "comment_id": "5287315477",
-      "comment_version_key": "5287315477:2026-08-13T22:55:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123358#issuecomment-5287315477",
-      "comment_created_at": "2026-08-13T22:55:48Z",
-      "comment_updated_at": "2026-08-13T22:55:48Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123358,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T23:22:52.785Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/log-tail-line-truncation",
-        "head_sha": "c1eabdf3c2d7b5821d133069966f4c5b71fd4d34",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123219:5287349455:2026-08-13T23:00:37Z:re_review",
       "comment_id": "5287349455",
@@ -30657,6 +30610,39 @@
         "kind": "pull_request",
         "branch": "codex/autoqa-settings-search-narrowing",
         "head_sha": "f7910927baef24228137487c081b06679870667a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:458:5289085903:2026-08-14T03:32:53Z:clawsweeper_needs_human",
+      "comment_id": "5289085903",
+      "comment_version_key": "5289085903:2026-08-14T03:32:53Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/458#issuecomment-5289085903",
+      "comment_created_at": "2026-08-14T03:32:53Z",
+      "comment_updated_at": "2026-08-14T03:32:53Z",
+      "comment_body_sha256": "7453dc937d46a13eb4313f185390d5f674f85df237c4b6e1c152b42822929abe",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 458,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Complete the private-helper integration review** - The PR states that Sparkle signing now depends on a shared private release helper, but the sandbox failure prevented inspection of the...; Review finding: [medium] Complete the private-helper integration review (sha=979dd2fd12280dd3734969d87e908f61dd24701f)",
+      "expected_head_sha": "979dd2fd12280dd3734969d87e908f61dd24701f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T03:33:31.221Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/release-resume-sparkle-cleanup",
+        "head_sha": "979dd2fd12280dd3734969d87e908f61dd24701f",
         "cluster_id": null,
         "job_path": null
       }
