@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-14T15:59:24.804Z",
+  "updated_at": "2026-08-14T16:00:49.444Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194623651:2026-08-05T16:43:22Z:maintainer_approve_automerge",
-      "comment_id": "5194623651",
-      "comment_version_key": "5194623651:2026-08-05T16:43:22Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194623651",
-      "comment_created_at": "2026-08-05T16:43:22Z",
-      "comment_updated_at": "2026-08-05T16:43:22Z",
-      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 58,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T11:23:34.344Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-        "cluster_id": "automerge-openclaw-plugin-inspector-58",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "pending",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "merge",
-          "status": "blocked",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194720912:2026-08-05T16:52:55Z:automerge",
       "comment_id": "5194720912",
@@ -31810,6 +31757,39 @@
         "kind": "pull_request",
         "branch": "fix/chat-commentary-row-overlap",
         "head_sha": "ae51810be24cfd5d34f7da36ed4e3af2262a8720",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3457:5260969102:2026-08-14T16:00:07Z:clawsweeper_needs_human",
+      "comment_id": "5260969102",
+      "comment_version_key": "5260969102:2026-08-14T16:00:07Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3457#issuecomment-5260969102",
+      "comment_created_at": "2026-08-12T01:21:46Z",
+      "comment_updated_at": "2026-08-14T16:00:07Z",
+      "comment_body_sha256": "bd78331ad019776474910ef3dcac855926783973c260c581cea7f5776dc860ec",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR head has failed required CI gates; merge only after successful reruns or a diagnosis establishes that failures are unrelated to this change. (sha=25db30d26c881fd7d9d60956ced543654d1be26b)",
+      "expected_head_sha": "25db30d26c881fd7d9d60956ced543654d1be26b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T16:00:49.444Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-first-fetch-retry",
+        "head_sha": "25db30d26c881fd7d9d60956ced543654d1be26b",
         "cluster_id": null,
         "job_path": null
       }
