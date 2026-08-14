@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T22:01:27.868Z",
+  "updated_at": "2026-08-14T22:02:14.964Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118977:5273349725:2026-08-14T18:24:23Z:re_review",
-      "comment_id": "5273349725",
-      "comment_version_key": "5273349725:2026-08-14T18:24:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118977#issuecomment-5273349725",
-      "comment_created_at": "2026-08-12T22:08:27Z",
-      "comment_updated_at": "2026-08-14T18:24:23Z",
-      "comment_body_sha256": "9cae480e29923d11dd176dd7c574c532ed0bd728c5a041dcf49cf0e4c034b948",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118977,
-      "author": "LauraGPT",
-      "author_id": 18321252,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T18:24:58.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/funasr-websocket-subprotocol-20260804",
-        "head_sha": "3303fdf8add4b45097376ed04dea4f01e5c66843",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118977:5172284329:2026-08-14T18:24:08Z:clawsweeper_needs_human",
       "comment_id": "5172284329",
@@ -32247,6 +32200,39 @@
         "kind": "pull_request",
         "branch": "fix/github-http-timeout",
         "head_sha": "3277d224b6bbe5de429e1e5ac804854b01b090b4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123859:5298599467:2026-08-14T22:01:34Z:clawsweeper_needs_human",
+      "comment_id": "5298599467",
+      "comment_version_key": "5298599467:2026-08-14T22:01:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123859#issuecomment-5298599467",
+      "comment_created_at": "2026-08-14T22:01:34Z",
+      "comment_updated_at": "2026-08-14T22:01:34Z",
+      "comment_body_sha256": "40cf6666054293382b90e159e81bce6b6010084c32bbb3d23e281f9674aa201e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123859,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 13 net lines; the added queue, lifecycle entry point, and unified upload cleanup are distinct owner responsibilities, so no coherent net-neutral absorption wa... (sha=07d0936194dcc97cedc0400e355225bc98644b88)",
+      "expected_head_sha": "07d0936194dcc97cedc0400e355225bc98644b88",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T22:02:14.964Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/node-workspace-gc",
+        "head_sha": "07d0936194dcc97cedc0400e355225bc98644b88",
         "cluster_id": null,
         "job_path": null
       }
