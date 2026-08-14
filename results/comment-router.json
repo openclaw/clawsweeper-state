@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T12:26:18.478Z",
+  "updated_at": "2026-08-14T12:26:20.432Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:463:5291153787:2026-08-14T08:22:04Z:re_review",
-      "comment_id": "5291153787",
-      "comment_version_key": "5291153787:2026-08-14T08:22:04Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/463#issuecomment-5291153787",
-      "comment_created_at": "2026-08-14T08:22:04Z",
-      "comment_updated_at": "2026-08-14T08:22:04Z",
-      "comment_body_sha256": "fa52fa9808cb1af372af42031c45d5a4f0fe0eb36cbdacfe4fed4461e94d1faa",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 463,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T08:22:46.914Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/no-elements-coordinate-receipt",
-        "head_sha": "4b25d6429384528a9cb250c2f638d670a4bf7061",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/eightctl:66:5291154098:2026-08-14T08:22:06Z:clawsweeper_needs_human",
       "comment_id": "5291154098",
@@ -31919,6 +31872,39 @@
         "kind": "pull_request",
         "branch": "codex/durable-core-pr6-operations-v2",
         "head_sha": "d42d5d856be0a9e981db3b5c62a6e1568cbe6e19",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-14T12:25:13Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-14T12:25:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-14T12:25:13Z",
+      "comment_body_sha256": "6d7f46f2ce697e4fc4ecbd958fec6964fc51d410adf57a4bcb3e685b4f4df52d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the reviewed TruffleHog tuple (P1)** - This changes the action to v3.96.0, but the workflow still explicitly supplies the 3.95.9 version/digest and ci-workflow-guards requires the prior action SHA. R...; Review finding: [P1] Synchronize the reviewed TruffleHog tuple — .github/workflows/ci.yml:1054 - [P1] Update the Android attestation contract — .github/workflows/android-release.y... (sha=615e9036993c47aaa538337a2f7f798216995ddf)",
+      "expected_head_sha": "615e9036993c47aaa538337a2f7f798216995ddf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T12:26:20.432Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "615e9036993c47aaa538337a2f7f798216995ddf",
         "cluster_id": null,
         "job_path": null
       }
