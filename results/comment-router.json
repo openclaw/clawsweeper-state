@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T19:02:20.704Z",
+  "updated_at": "2026-08-14T19:02:29.256Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123546:5295665725:2026-08-14T16:24:54Z:re_review",
-      "comment_id": "5295665725",
-      "comment_version_key": "5295665725:2026-08-14T16:24:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123546#issuecomment-5295665725",
-      "comment_created_at": "2026-08-14T16:24:54Z",
-      "comment_updated_at": "2026-08-14T16:24:54Z",
-      "comment_body_sha256": "671dcbb715827b102e5c1401fa325c247ee19d12a586ff9e4bff236fe5754c4e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123546,
-      "author": "davenicoll",
-      "author_id": 690117,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T16:25:33.749Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/length-stop-discards-visible-text",
-        "head_sha": "f7f6522e3c1c55d4adb974fcd72ffce368b862f6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123699:5294781304:2026-08-14T16:20:28Z:clawsweeper_needs_human",
       "comment_id": "5294781304",
@@ -31461,6 +31414,39 @@
         "kind": "pull_request",
         "branch": "jesse/split-gateway-maintenance-pairing-test",
         "head_sha": "bd004957e552e1c411041bc0dec476d6fff5c78c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:71:5209990860:2026-08-14T18:57:37Z:clawsweeper_needs_human",
+      "comment_id": "5209990860",
+      "comment_version_key": "5209990860:2026-08-14T18:57:37Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/71#issuecomment-5209990860",
+      "comment_created_at": "2026-08-06T23:38:53Z",
+      "comment_updated_at": "2026-08-14T18:57:37Z",
+      "comment_body_sha256": "f487a75c453c061f079bf1bb8fe167d1cee26f69a9fba3058e24d5dbb32ae790",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 71,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Hono 4.13.0 changes the direct router dependency serving both public evaluation and protected admin paths; the PR contains no API-worker integration result demonstrating those routes... (sha=b92b6f7e8dc6ecd7ef9bb2e32dc22f331df2fc33)",
+      "expected_head_sha": "b92b6f7e8dc6ecd7ef9bb2e32dc22f331df2fc33",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T19:02:29.256Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-aab3d26328",
+        "head_sha": "b92b6f7e8dc6ecd7ef9bb2e32dc22f331df2fc33",
         "cluster_id": null,
         "job_path": null
       }
