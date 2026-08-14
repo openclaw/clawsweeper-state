@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T18:30:28.405Z",
+  "updated_at": "2026-08-14T18:30:34.633Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117220:5149895861:2026-08-14T16:11:58Z:clawsweeper_auto_repair",
-      "comment_id": "5149895861",
-      "comment_version_key": "5149895861:2026-08-14T16:11:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117220#issuecomment-5149895861",
-      "comment_created_at": "2026-08-01T05:00:29Z",
-      "comment_updated_at": "2026-08-14T16:11:58Z",
-      "comment_body_sha256": "d8793f67cdf63d2c0cc31950b06d1689a5c168ce59ab0caab5e3724f239a05dd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117220,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e3f3ecf052d5374426652704826ac01b81c6beb2)",
-      "expected_head_sha": "e3f3ecf052d5374426652704826ac01b81c6beb2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T16:12:43.408Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-status-health-aux",
-        "head_sha": "e3f3ecf052d5374426652704826ac01b81c6beb2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117232:5150003405:2026-08-14T16:12:11Z:clawsweeper_auto_repair",
       "comment_id": "5150003405",
@@ -30911,6 +30878,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T18:30:28.405Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114173:5085269514:2026-08-14T18:28:48Z:clawsweeper_needs_human",
+      "comment_id": "5085269514",
+      "comment_version_key": "5085269514:2026-08-14T18:28:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5085269514",
+      "comment_created_at": "2026-07-26T20:31:11Z",
+      "comment_updated_at": "2026-08-14T18:28:48Z",
+      "comment_body_sha256": "8195f08e0e73db37fccd312b086e0077a793b7fcf3f2abb5ed04f60582fa2951",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114173,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the Gateway QR boundary before rendering QR bytes** - This line places the QR data URL in an image; the child relies on the unmerged parent to bound the value and bind recovery t...; Review finding: [medium] Verify the Gateway QR boundary before rendering QR bytes — ui/src/components/wizard-step-controls.ts:185 (sha=97e17e27815fca7ca8379fe555a190633424f6c9)",
+      "expected_head_sha": "97e17e27815fca7ca8379fe555a190633424f6c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T18:30:34.633Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/system-agent-qr-web",
+        "head_sha": "97e17e27815fca7ca8379fe555a190633424f6c9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
