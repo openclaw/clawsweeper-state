@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T01:08:35.838Z",
+  "updated_at": "2026-08-14T01:10:15.484Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122574:5266753595:2026-08-12T12:23:47Z:re_review",
-      "comment_id": "5266753595",
-      "comment_version_key": "5266753595:2026-08-12T12:23:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122574#issuecomment-5266753595",
-      "comment_created_at": "2026-08-12T12:23:47Z",
-      "comment_updated_at": "2026-08-12T12:23:47Z",
-      "comment_body_sha256": "9c1cc93d2f08559ecbda81d111230dc234a5f4875801befffef5e4607d5de59c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122574,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T19:59:59.689Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122574:5266844209:2026-08-12T12:32:06Z:re_review",
       "comment_id": "5266844209",
@@ -30876,6 +30849,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123399:5288241874:2026-08-14T01:09:30Z:clawsweeper_needs_human",
+      "comment_id": "5288241874",
+      "comment_version_key": "5288241874:2026-08-14T01:09:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123399#issuecomment-5288241874",
+      "comment_created_at": "2026-08-14T01:09:30Z",
+      "comment_updated_at": "2026-08-14T01:09:30Z",
+      "comment_body_sha256": "1df47643a0a94f4f54ac1824c72e05582ab2b8b082e0fd88d7d08cb363d7dbf1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123399,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bundled-versus-snapshot rule is upgrade-sensitive: without an exact-head review of discovery callers and non-bundled load paths, the repair could incorrectly classify an installed... (sha=440593751041d82c1c842780984a9e2d316279c7)",
+      "expected_head_sha": "440593751041d82c1c842780984a9e2d316279c7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T01:10:15.484Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-external-plugin-migration-owner",
+        "head_sha": "440593751041d82c1c842780984a9e2d316279c7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
