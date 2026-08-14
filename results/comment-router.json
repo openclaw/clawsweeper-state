@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T13:40:54.097Z",
+  "updated_at": "2026-08-14T13:41:30.606Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89526:4604300916:2026-08-14T08:20:41Z:clawsweeper_needs_human",
-      "comment_id": "4604300916",
-      "comment_version_key": "4604300916:2026-08-14T08:20:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89526#issuecomment-4604300916",
-      "comment_created_at": "2026-06-02T16:06:17Z",
-      "comment_updated_at": "2026-08-14T08:20:41Z",
-      "comment_body_sha256": "5149648fa7c537a07b2ebb71cd71dd4527577bdaac9373c8437c3db70ed1fa57",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89526,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Use the transaction-aware reader for disk config (P1)** - This was missed in the prior review: readSourceConfigSnapshot() resolves ${VAR} against the already-published process environment. Gateway reload removes...; Review finding: [P1] Use the transaction-aware reader for disk config — src/commands/health-runtime-config.ts:161-163 - [medium] Authentication drift can be reported as healthy —... (sha=719ff41b457ef644a9666b5944fd95e065f313de)",
-      "expected_head_sha": "719ff41b457ef644a9666b5944fd95e065f313de",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T08:43:14.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/restart-required-reload-diagnostics",
-        "head_sha": "719ff41b457ef644a9666b5944fd95e065f313de",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96274:4786084003:2026-08-14T08:34:28Z:clawsweeper_needs_human",
       "comment_id": "4786084003",
@@ -32468,6 +32435,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123660:5293616905:2026-08-14T13:40:16Z:clawsweeper_auto_repair",
+      "comment_id": "5293616905",
+      "comment_version_key": "5293616905:2026-08-14T13:40:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123660#issuecomment-5293616905",
+      "comment_created_at": "2026-08-14T13:05:05Z",
+      "comment_updated_at": "2026-08-14T13:40:16Z",
+      "comment_body_sha256": "9e4b1c71ece60b454050510c66a6469186c3ca1b63d3462012f9484ecb9344b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123660,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=47b7e0a4d3896738b1c4cab508efd31824ddf2f4)",
+      "expected_head_sha": "47b7e0a4d3896738b1c4cab508efd31824ddf2f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T13:41:30.606Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/swless-stale-client-fix",
+        "head_sha": "47b7e0a4d3896738b1c4cab508efd31824ddf2f4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
