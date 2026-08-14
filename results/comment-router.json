@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T21:10:49.898Z",
+  "updated_at": "2026-08-14T21:10:52.029Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123276:5285857481:2026-08-14T17:23:04Z:clawsweeper_needs_human",
-      "comment_id": "5285857481",
-      "comment_version_key": "5285857481:2026-08-14T17:23:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123276#issuecomment-5285857481",
-      "comment_created_at": "2026-08-13T20:12:22Z",
-      "comment_updated_at": "2026-08-14T17:23:04Z",
-      "comment_body_sha256": "9eaa43c727a4432f58d8e8f2f62c231462690e694d37b2ec9ed931ec99a8897e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123276,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep saved paths out of the read-only group listing (P1)** - This remains the prior P1: sessions.groups.list is operator.read, but this reader now selects and emits cwd, so ordinary read-scoped clients learn adm...; Review finding: [P1] Keep saved paths out of the read-only group listing — src/gateway/session-groups.ts:134-145 - [P1] Create defaults columns only when defaults are used — src/g... (sha=2339bce3688c6c3f3e4c66671ed021334079f372)",
-      "expected_head_sha": "2339bce3688c6c3f3e4c66671ed021334079f372",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T17:43:45.662Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/session-folder-group-defaults",
-        "head_sha": "31f2c6d5b1e217853f03d578e2edc546d4b62b10",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-14T17:26:22Z:clawsweeper_auto_repair",
       "comment_id": "5290613923",
@@ -32068,6 +32035,53 @@
       }
     },
     {
+      "idempotency_key": "comment-router:openclaw/Peekaboo:476:5298171612:2026-08-14T21:06:17Z:re_review",
+      "comment_id": "5298171612",
+      "comment_version_key": "5298171612:2026-08-14T21:06:17Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/476#issuecomment-5298171612",
+      "comment_created_at": "2026-08-14T21:06:17Z",
+      "comment_updated_at": "2026-08-14T21:06:17Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 476,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T21:10:50.243Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/dialog-outcome-attribution",
+        "head_sha": "ea32b16f8e603c5d7d6f84512861f59dad72d6f1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:476:5297975660:2026-08-14T21:10:08Z:clawsweeper_auto_repair",
       "comment_id": "5297975660",
       "comment_version_key": "5297975660:2026-08-14T21:10:08Z",
@@ -32091,7 +32105,7 @@
       "expected_head_sha": "ea32b16f8e603c5d7d6f84512861f59dad72d6f1",
       "finding_id": "review-feedback",
       "status": "skipped",
-      "processed_at": "2026-08-14T21:10:49.898Z",
+      "processed_at": "2026-08-14T21:10:52.029Z",
       "target": {
         "kind": "pull_request",
         "branch": "codex/dialog-outcome-attribution",
