@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T03:10:40.762Z",
+  "updated_at": "2026-08-14T03:10:47.571Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5263600531:2026-08-12T07:20:41Z:re_review",
-      "comment_id": "5263600531",
-      "comment_version_key": "5263600531:2026-08-12T07:20:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5263600531",
-      "comment_created_at": "2026-08-12T07:20:41Z",
-      "comment_updated_at": "2026-08-12T07:20:41Z",
-      "comment_body_sha256": "1ddd73a24e50a18cbde42299b9707ed026a8f81404d4f1687c4dffc15b62759a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T23:11:06.675Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5263638463:2026-08-12T07:24:57Z:re_review",
       "comment_id": "5263638463",
@@ -30288,6 +30261,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123442:5288955278:2026-08-14T03:10:01Z:clawsweeper_needs_human",
+      "comment_id": "5288955278",
+      "comment_version_key": "5288955278:2026-08-14T03:10:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123442#issuecomment-5288955278",
+      "comment_created_at": "2026-08-14T03:10:01Z",
+      "comment_updated_at": "2026-08-14T03:10:01Z",
+      "comment_body_sha256": "5aadf3cffaa038a9ba503e404302a375ff40625818c6136519f4b26e8b23580f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123442,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The direct production-module trace is valuable but stubs the tunnel command boundary, so provide a redacted real Gateway after-fix trace before... (sha=76fdc1ebb9ecba20bc87c1920bfc749fec5ba59c)",
+      "expected_head_sha": "76fdc1ebb9ecba20bc87c1920bfc749fec5ba59c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T03:10:47.571Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/worker-disk-space-cache",
+        "head_sha": "76fdc1ebb9ecba20bc87c1920bfc749fec5ba59c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
