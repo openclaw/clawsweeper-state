@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T16:55:45.983Z",
+  "updated_at": "2026-08-14T16:56:02.518Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123608:5293937516:2026-08-14T13:37:10Z:re_review",
-      "comment_id": "5293937516",
-      "comment_version_key": "5293937516:2026-08-14T13:37:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123608#issuecomment-5293937516",
-      "comment_created_at": "2026-08-14T13:37:10Z",
-      "comment_updated_at": "2026-08-14T13:37:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123608,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T13:37:56.939Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/gateway-control-plane-load",
-        "head_sha": "278dcd4fd4a9b31343e169da898214d2d5ffcdec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5293967341:2026-08-14T13:40:14Z:re_review",
       "comment_id": "5293967341",
@@ -31348,6 +31301,39 @@
         "kind": "pull_request",
         "branch": "test/trim-failover-corpus-duplicates",
         "head_sha": "a9e5c905be66b561641835380f2686e6d8bac06b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123732:5295664347:2026-08-14T16:55:20Z:clawsweeper_needs_human",
+      "comment_id": "5295664347",
+      "comment_version_key": "5295664347:2026-08-14T16:55:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123732#issuecomment-5295664347",
+      "comment_created_at": "2026-08-14T16:24:46Z",
+      "comment_updated_at": "2026-08-14T16:55:20Z",
+      "comment_body_sha256": "6b18f766456818904fd913a592b89d1d438b2719c17f706bf528b159bcd2d4c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123732,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required exact-head UI E2E shard failed, so merge safety remains unproven until that failure is diagnosed and rerun green. (sha=cca76e5564ee850ccc9a2bfd047859556c503272)",
+      "expected_head_sha": "cca76e5564ee850ccc9a2bfd047859556c503272",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T16:56:02.518Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreams-diary-header-stability",
+        "head_sha": "cca76e5564ee850ccc9a2bfd047859556c503272",
         "cluster_id": null,
         "job_path": null
       }
