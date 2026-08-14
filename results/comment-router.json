@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T17:12:16.488Z",
+  "updated_at": "2026-08-14T17:12:39.626Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113896:5080971631:2026-08-14T13:42:28Z:clawsweeper_auto_repair",
-      "comment_id": "5080971631",
-      "comment_version_key": "5080971631:2026-08-14T13:42:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113896#issuecomment-5080971631",
-      "comment_created_at": "2026-07-25T23:10:11Z",
-      "comment_updated_at": "2026-08-14T13:42:28Z",
-      "comment_body_sha256": "cfc769427314736920954962a660e035f060dec75533e1196604b33ca9be20ba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113896,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f9521eedf826ded4e5ee53de2a2699eb98dbbf4d)",
-      "expected_head_sha": "f9521eedf826ded4e5ee53de2a2699eb98dbbf4d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T13:43:13.219Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "nephesh_integration",
-        "head_sha": "f9521eedf826ded4e5ee53de2a2699eb98dbbf4d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123606:5292408937:2026-08-14T13:42:32Z:clawsweeper_needs_human",
       "comment_id": "5292408937",
@@ -31417,6 +31384,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123669:5293830417:2026-08-14T17:10:53Z:clawsweeper_needs_human",
+      "comment_id": "5293830417",
+      "comment_version_key": "5293830417:2026-08-14T17:10:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123669#issuecomment-5293830417",
+      "comment_created_at": "2026-08-14T13:26:54Z",
+      "comment_updated_at": "2026-08-14T17:10:53Z",
+      "comment_body_sha256": "8ffba796ee6e4adf518533e94536cbee6a22fe48cad961834991f2ad3b886d90",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123669,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head native locale and platform checks were still running; merge should wait for their completion because they validate the generated artifacts against the source inventory. (sha=a39f174f99829e164af1627f140077270eb28436)",
+      "expected_head_sha": "a39f174f99829e164af1627f140077270eb28436",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T17:12:39.626Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "a39f174f99829e164af1627f140077270eb28436",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
