@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T16:27:00.292Z",
+  "updated_at": "2026-08-14T16:27:28.611Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:96291:5293437252:2026-08-14T12:45:49Z:re_review",
-      "comment_id": "5293437252",
-      "comment_version_key": "5293437252:2026-08-14T12:45:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/96291#issuecomment-5293437252",
-      "comment_created_at": "2026-08-14T12:45:49Z",
-      "comment_updated_at": "2026-08-14T12:45:49Z",
-      "comment_body_sha256": "988489ddf2373cb9a0934cf0f9ca34a262db7256933aa7b69f01da08fb5c36c6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 96291,
-      "author": "AdrianIp0204",
-      "author_id": 255652477,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T12:46:51.984Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-90354-memory-flush-bounds",
-        "head_sha": "75ddb31934ec3e2ad85951b668d878e3d9881d02",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123608:5292448928:2026-08-14T12:46:01Z:clawsweeper_auto_repair",
       "comment_id": "5292448928",
@@ -31108,6 +31061,39 @@
         "kind": "pull_request",
         "branch": "perf/file-transfer-dir-list-count",
         "head_sha": "d6d705ed2f62cfd41ba310da188d19a3c0b5632a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2936:5295682900:2026-08-14T16:26:47Z:clawsweeper_needs_human",
+      "comment_id": "5295682900",
+      "comment_version_key": "5295682900:2026-08-14T16:26:47Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2936#issuecomment-5295682900",
+      "comment_created_at": "2026-08-14T16:26:47Z",
+      "comment_updated_at": "2026-08-14T16:26:47Z",
+      "comment_body_sha256": "fafb3f051764b2fd325ca58b4e3e2b508add3e2c8757a6d1f64d4d0e52079619",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2936,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports builds and manual architecture checks but provides no redacted after-fix request/response proof from a real Muse API or supporte...; Review finding: [P1] Render Muse balances in the menu bar — Sources/CodexBarCore/Providers/Muse/MuseUsageFetcher.swift:56-63 - [P2] Preserve models-probe authentication errors — S... (sha=bef0acf2ebae002c343cc9d232da4083b42c739e)",
+      "expected_head_sha": "bef0acf2ebae002c343cc9d232da4083b42c739e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T16:27:28.610Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/muse-provider",
+        "head_sha": "bef0acf2ebae002c343cc9d232da4083b42c739e",
         "cluster_id": null,
         "job_path": null
       }
