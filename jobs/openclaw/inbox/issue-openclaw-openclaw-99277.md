@@ -67,21 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair Mattermost automatic acknowledgement reactions as an existing shared-config bug. Keep the change plugin-local: after an inbound post passes normal access, mention, and empty-body gates and is durably recorded, resolve the existing shared acknowledgement value and scope through public Plugin SDK seams, add through the existing Mattermost transport, and remove only after a visible reply when the existing global cleanup setting requires it. Do not add Mattermost-specific config, status-reaction behavior, core internals imports, or compatibility paths. Add boundary regression coverage for accepted-post ordering, record failure, mention-drop suppression, and visible-reply-only cleanup; update the Mattermost channel documentation. Include release-note context in the PR body, not CHANGELOG.md, and obtain redacted real Mattermost or approved production-boundary proof before merge.
+Repair the existing Mattermost acknowledgement-reaction contract for https://github.com/openclaw/openclaw/issues/99277. Keep the change inside the Mattermost plugin. Resolve the existing acknowledgement value through the public SDK, apply the shared scope gate after normal acceptance, start the reaction in the inbound turn’s after-record lifecycle, and bind optional removal to confirmed visible reply delivery. Reuse the authenticated monitor transport; do not add Mattermost-specific configuration or lifecycle status reactions. Add a regression that fails before the repair for an eligible accepted post, proves suppression for rejected or ineligible posts, and proves cleanup timing. Update the Mattermost channel documentation; do not edit CHANGELOG.md.
 
 Likely files:
 
-- extensions/mattermost/src/mattermost/monitor-posts.ts
 - extensions/mattermost/src/mattermost/monitor-turn.ts
-- extensions/mattermost/src/mattermost/monitor.inbound-system-event.test.ts
-- extensions/mattermost/src/mattermost/reactions.test.ts
+- extensions/mattermost/src/mattermost/reactions.ts
+- extensions/mattermost/src/mattermost/monitor.ack-reactions.test.ts
 - docs/channels/mattermost.md
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/mattermost/src/mattermost/monitor.inbound-system-event.test.ts extensions/mattermost/src/mattermost/reactions.test.ts
-- git diff --check
-- Redacted real Mattermost workspace smoke or an approved production-boundary harness proving accepted-post acknowledgement and cleanup behavior
+- node scripts/run-vitest.mjs extensions/mattermost/src/mattermost/monitor.ack-reactions.test.ts
+- node scripts/run-vitest.mjs extensions/mattermost/src/mattermost/reactions.test.ts
+- node scripts/run-vitest.mjs src/channels/ack-reactions.test.ts
+- Run a Mattermost websocket-to-accepted-turn boundary harness or a redacted Mattermost live run showing reaction creation and optional post-reply removal.
 
 ## Operator Prompt
 
