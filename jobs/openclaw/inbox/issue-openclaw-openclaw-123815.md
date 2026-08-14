@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair outbound attachments for Signal external-native deployments where OpenClaw and signal-cli run under different UIDs. Preserve the existing bounded staging and authorization path, but make the native JSON-RPC `send` attachment value a filename-preserving RFC 2397 data URI. Reuse or extract the bounded encoder already used by `extensions/signal/src/client-container.ts`; do not duplicate policy, add `channels.signal` configuration/defaults, relax media caps, alter container protocol behavior, or change outbound-store permissions. Before editing, confirm signal-cli 0.14.7 accepts data URIs through its JSON-RPC daemon path; stop and report if that contract differs. Add a regression that checks the native request contains a bounded data URI, then prove a real nonproduction signal-cli daemon running under a separate UID delivers a small attachment. Do not edit CHANGELOG.md.
+Repair the existing Signal external-native attachment delivery bug. Keep shared media resolution and config shape unchanged. Move attachment representation conversion to the native transport boundary, preferably by extracting/reusing the bounded data-URI serialization already used by the container transport; do not pass a data URI through the container’s path-reading serializer. First prove the target native signal-cli version accepts RFC 2397 attachment data URIs over its HTTP JSON-RPC send endpoint, then add a regression test covering an external-native daemon that cannot read OpenClaw’s staged pathname. Preserve raw-byte limits, filename sanitization, and recipient/quote behavior. Do not add an attachmentTransport setting unless the verified upstream contract makes a compatibility mode necessary. Record user-visible release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
-- extensions/signal/src/send.ts
+- extensions/signal/src/client.ts
 - extensions/signal/src/client-container.ts
 - extensions/signal/src/send.test.ts
 - extensions/signal/src/media-access.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/signal/src/send.test.ts extensions/signal/src/media-access.test.ts extensions/signal/src/client-container.test.ts
-- Run signal-cli 0.14.7 as an external native daemon under a different UID and record a redacted trace showing a capped attachment arrives through the data-URI RPC path.
-- git diff --check
+- pnpm exec vitest run extensions/signal/src/send.test.ts extensions/signal/src/media-access.test.ts extensions/signal/src/client-container.test.ts
+- Run a real external-native signal-cli HTTP daemon as a different filesystem user and capture a redacted request/result showing a staged attachment succeeds after the repair.
+- Verify an oversized attachment still fails at the established mediaMaxMb raw-byte limit before the native RPC request.
 
 ## Operator Prompt
 
