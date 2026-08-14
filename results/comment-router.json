@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T22:21:09.509Z",
+  "updated_at": "2026-08-14T22:21:16.417Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5295476842:2026-08-14T16:05:07Z:re_review",
-      "comment_id": "5295476842",
-      "comment_version_key": "5295476842:2026-08-14T16:05:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5295476842",
-      "comment_created_at": "2026-08-14T16:05:07Z",
-      "comment_updated_at": "2026-08-14T16:05:07Z",
-      "comment_body_sha256": "28dc556f69a9930b8cf5da549736b8953e52564827747f2a3a1c1551ece516f2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T18:34:55.807Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119343:5184670120:2026-08-14T18:33:47Z:clawsweeper_needs_human",
       "comment_id": "5184670120",
@@ -32108,6 +32081,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T22:21:09.509Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123856:5298519156:2026-08-14T22:20:28Z:clawsweeper_needs_human",
+      "comment_id": "5298519156",
+      "comment_version_key": "5298519156:2026-08-14T22:20:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123856#issuecomment-5298519156",
+      "comment_created_at": "2026-08-14T21:50:42Z",
+      "comment_updated_at": "2026-08-14T22:20:28Z",
+      "comment_body_sha256": "910794b6f06761a37f3fb360a2b454a743daca9b941f34596a3920875e1ee4cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123856,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The workflow intentionally removes broad cache fallbacks and rotates the shared cache namespace; exact-head CI should complete the extension-boundary and lint paths before merge. (sha=bbc4fead62b529f83df046d246fd2d8274419332)",
+      "expected_head_sha": "bbc4fead62b529f83df046d246fd2d8274419332",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T22:21:16.417Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/remove-unused-pairing-device-name",
+        "head_sha": "bbc4fead62b529f83df046d246fd2d8274419332",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
