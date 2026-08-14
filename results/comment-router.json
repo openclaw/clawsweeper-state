@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T09:34:14.181Z",
+  "updated_at": "2026-08-14T09:36:41.502Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119343:5235911855:2026-08-10T04:34:49Z:re_review",
-      "comment_id": "5235911855",
-      "comment_version_key": "5235911855:2026-08-10T04:34:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119343#issuecomment-5235911855",
-      "comment_created_at": "2026-08-10T04:34:49Z",
-      "comment_updated_at": "2026-08-10T04:34:49Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119343,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T06:40:40.152Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119343:5236589456:2026-08-10T06:18:52Z:re_review",
       "comment_id": "5236589456",
@@ -30707,6 +30680,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1340:5291797929:2026-08-14T09:35:57Z:clawsweeper_needs_human",
+      "comment_id": "5291797929",
+      "comment_version_key": "5291797929:2026-08-14T09:35:57Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1340#issuecomment-5291797929",
+      "comment_created_at": "2026-08-14T09:35:57Z",
+      "comment_updated_at": "2026-08-14T09:35:57Z",
+      "comment_body_sha256": "f9efb877d40042e05d9520a6591a2cd8ea593212d56b6350e1fbe52770af70db",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1340,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body lists verification steps but provides no after-fix terminal output or linked redacted verifier transcript. After adding proof, upda...; Review finding: [medium] Confirm the pinned tag signature before authorization — release/records/v0.42.0.json:5 (sha=7adf51e31f5e066d59f11c2d04ec9af5ecd31e9d)",
+      "expected_head_sha": "7adf51e31f5e066d59f11c2d04ec9af5ecd31e9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T09:36:41.502Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/authorize-v0.42.0",
+        "head_sha": "7adf51e31f5e066d59f11c2d04ec9af5ecd31e9d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
