@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the New Session picker discrepancy in https://github.com/openclaw/openclaw/issues/124008. Preserve the intentional prepared-only chat.metadata startup path; do not make chat.metadata start provider discovery. Reuse the existing configured models.list on-demand picker-refresh pattern so opening New Session’s model picker replaces its static catalog with the selected agent’s discovered configured catalog only while that client and agent remain current. Preserve current selection, error, and cloud-runtime metadata behavior. Add a focused regression that starts with static metadata then opens the picker and verifies discovered provider rows become selectable. Do not add config or edit CHANGELOG.md; include release-note context in the PR body.
+Repair https://github.com/openclaw/openclaw/issues/124008 by making New Session refresh its model catalog through the shared `models.list` configured-catalog loader when the picker opens. Keep `chat.metadata` as the prepared startup snapshot; preserve request ownership, cancellation, and an actionable retry state when discovery fails. Add a behavior-level regression where prepared metadata has only a static provider and picker-open discovery adds usable dynamic provider rows. Do not alter Gateway startup discovery policy, provider/auth configuration, Codex runtime behavior, or CHANGELOG.md.
 
 Likely files:
 
 - ui/src/pages/new-session/model-control.ts
 - ui/src/pages/new-session/model-control.test.ts
+- ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
 - ui/src/pages/chat/models.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs ui/src/pages/new-session/model-control.test.ts
-- node scripts/run-vitest.mjs ui/src/pages/chat/models.test.ts
-- node scripts/check-changed.mjs -- ui/src/pages/new-session/model-control.ts ui/src/pages/new-session/model-control.test.ts
+- node scripts/run-vitest.mjs run --config test/vitest/vitest.ui-e2e.config.ts ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
+- Capture redacted after-fix New Session picker proof showing dynamically discovered rows are selectable.
 
 ## Operator Prompt
 
