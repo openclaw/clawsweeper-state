@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T23:17:31.880Z",
+  "updated_at": "2026-08-15T23:18:42.957Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123681:5294336655:2026-08-15T18:22:25Z:clawsweeper_auto_repair",
-      "comment_id": "5294336655",
-      "comment_version_key": "5294336655:2026-08-15T18:22:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123681#issuecomment-5294336655",
-      "comment_created_at": "2026-08-14T14:16:47Z",
-      "comment_updated_at": "2026-08-15T18:22:25Z",
-      "comment_body_sha256": "1d9466060ab3fa1fbb9a599acc1b1e557b5caf8221ee331bc304c05211cdc202",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123681,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T18:28:10.036Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fanout-stA/sidebar-chrome-grid",
-        "head_sha": "9627fff25b56a49493e95139b0e7a5e18cc2a219",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123834:5298241751:2026-08-15T18:23:14Z:clawsweeper_auto_repair",
       "comment_id": "5298241751",
@@ -31909,6 +31876,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/photoscrawl:9:5304641451:2026-08-15T23:18:04Z:clawsweeper_needs_human",
+      "comment_id": "5304641451",
+      "comment_version_key": "5304641451:2026-08-15T23:18:04Z",
+      "comment_url": "https://github.com/openclaw/photoscrawl/pull/9#issuecomment-5304641451",
+      "comment_created_at": "2026-08-15T23:01:15Z",
+      "comment_updated_at": "2026-08-15T23:18:04Z",
+      "comment_body_sha256": "9ccb533eec64c187e9a011a11ba194f9da26cf0a7cab9593d7d128656379c70b",
+      "repo": "openclaw/photoscrawl",
+      "issue_number": 9,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The queue change is concurrency-sensitive: the live proof directly covers retry-sleep cancellation, while the multi-key dispatch path is covered by synthetic regression tests. (sha=1437e26cbfb3c91f0e4a7466221234706e8d02d1)",
+      "expected_head_sha": "1437e26cbfb3c91f0e4a7466221234706e8d02d1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T23:18:42.957Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/place-backfill-sleep-context",
+        "head_sha": "1437e26cbfb3c91f0e4a7466221234706e8d02d1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
