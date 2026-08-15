@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Android post-expiry duplicate terminal-event bug in https://github.com/openclaw/openclaw/issues/122352. Keep the observation at ChatController's transient task-presentation boundary: after the first terminal observation expires, suppress a duplicate terminal event for that task ID; clear the observation on a working transition, explicit task deletion, session change, gateway-scope reset, and sequence-gap reset so a real new lifecycle may appear. Do not alter Gateway protocol, persistence, configuration, or the 60-second retention contract. Add focused behavior tests that fail before the fix for late redelivery after expiry and cover the lifecycle reset boundaries. Do not edit CHANGELOG.md; record the Android user impact in the PR body.
+Repair the Android chat-controller lifecycle so expiry removes only the visible terminal row, not the fact that this task lifecycle already reached terminal state. Preserve the current 60-second first-local-observation retention contract; suppress late duplicate terminal deliveries after expiry; clear the observation on a working transition, explicit task deletion, session switch, gateway-scope reset, and sequence-gap reset. Add regression coverage that fails before the repair for post-expiry redelivery and proves a new working lifecycle can surface. Do not add Gateway protocol, persistence, config, or CHANGELOG changes; describe the user-visible behavior in the PR body.
 
 Likely files:
 
@@ -76,7 +76,9 @@ Likely files:
 
 Validation:
 
+- Before editing, establish the failing virtual-time post-expiry redelivery regression against current main.
 - cd apps/android && ./gradlew --no-daemon :app:testPlayDebugUnitTest --tests ai.openclaw.app.chat.ChatControllerSubagentActivityTest
+- Verify existing retention, explicit deletion, session-switch, gateway-scope, and sequence-gap reset coverage remains valid.
 
 ## Operator Prompt
 
