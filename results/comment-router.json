@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T16:49:31.165Z",
+  "updated_at": "2026-08-15T16:49:34.883Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5288152159:2026-08-14T00:55:09Z:re_review",
-      "comment_id": "5288152159",
-      "comment_version_key": "5288152159:2026-08-14T00:55:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5288152159",
-      "comment_created_at": "2026-08-14T00:55:09Z",
-      "comment_updated_at": "2026-08-14T00:55:09Z",
-      "comment_body_sha256": "67110bdb4756a1338d1f81d19e452feccdd74a4cd764d95e91b3da2b3cf27c91",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T11:45:19.429Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5288296758:2026-08-14T01:18:28Z:re_review",
       "comment_id": "5288296758",
@@ -31611,6 +31584,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T16:49:31.165Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119182:5178131969:2026-08-15T16:48:57Z:clawsweeper_needs_human",
+      "comment_id": "5178131969",
+      "comment_version_key": "5178131969:2026-08-15T16:48:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119182#issuecomment-5178131969",
+      "comment_created_at": "2026-08-04T11:06:08Z",
+      "comment_updated_at": "2026-08-15T16:48:57Z",
+      "comment_body_sha256": "09e50fff954ef91f0ed786b764d00e00ee9f611d3d352b6f33ed9152be77ebf4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119182,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes any existing Buzz relay whose otherwise accepted NIP-11 object exceeds 16 MiB into a setup failure, so maintainers must explicitly accept that compatibility boundary. (sha=6d8b2319b6c82091d8d1f9492cfebe081f207378)",
+      "expected_head_sha": "6d8b2319b6c82091d8d1f9492cfebe081f207378",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T16:49:34.883Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-buzz-relay-info-bounded-json",
+        "head_sha": "6d8b2319b6c82091d8d1f9492cfebe081f207378",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
