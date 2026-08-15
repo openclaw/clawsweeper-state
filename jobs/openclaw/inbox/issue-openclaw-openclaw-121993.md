@@ -67,22 +67,24 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing ACP session identity invariant for https://github.com/openclaw/openclaw/issues/121993. In the Gateway row projection, use already-batched persisted ACP metadata plus the ACP-session-key gate to project acpx/&lt;agent>-acp and modelSelectionLocked for true ACP runtime sessions; preserve configured-model behavior for ACP-shaped bridge sessions without metadata. Enforce the same condition in sessions.patch so a direct client cannot persist an override that the UI reports as locked. Reuse the CLI’s metadata-gated distinction, do not add config or harness-specific branches, and do not implement harness-advertised selection from https://github.com/openclaw/openclaw/issues/122488. Add pre-fix-failing regressions for true ACP, bridge, and direct model-patch cases. Do not edit CHANGELOG.md; include release-note context in the PR body and capture sanitized Control UI before/after proof from an isolated dev Gateway.
+Repair the ACP model misattribution in https://github.com/openclaw/openclaw/issues/121993. Use persisted SessionAcpMeta at the Gateway session-row owner to project the CLI-consistent ACP display identity and lock model selection only for metadata-confirmed ACP sessions. Preserve configured-model behavior for ACP-shaped bridge sessions without metadata and for non-ACP rows. Reject direct model patches under the same metadata gate. Add regression coverage for all three paths and focused Control UI locked-picker behavior. Do not add harness-specific selectable-model support, configuration, protocol changes, or CHANGELOG.md edits; that follow-up remains https://github.com/openclaw/openclaw/issues/122488.
 
 Likely files:
 
 - src/gateway/session-utils-row.ts
 - src/gateway/session-utils-model.ts
-- src/gateway/session-utils.test.ts
 - src/gateway/sessions-patch.ts
+- src/gateway/session-utils.test.ts
 - src/gateway/sessions-patch.test.ts
+- ui/src/pages/chat/components/chat-model-controls.ts
+- ui/src/pages/chat/components/chat-model-picker.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/session-utils.test.ts
 - node scripts/run-vitest.mjs src/gateway/sessions-patch.test.ts
-- node scripts/run-vitest.mjs src/commands/sessions.acp-model-display.test.ts
-- Run an isolated Gateway plus Control UI and capture sanitized before/after proof that a persisted ACP session shows acpx/<agent>-acp and rejects a model change while a bridge session remains configurable.
+- focused Control UI model-control test
+- isolated Control UI before/after screenshot or short video
 
 ## Operator Prompt
 
