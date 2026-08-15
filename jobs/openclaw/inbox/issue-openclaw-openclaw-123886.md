@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the rich Telegram `/models` picker lifecycle for https://github.com/openclaw/openclaw/issues/123886. Preserve the original callback message representation at the callback action owner: rich picker messages must use the established rich raw edit path, while legacy text and HTML messages retain their current behavior. Do not add configuration or client-specific branches. Add a regression through the callback router and harness that proves rich picker send → provider/list/select callback edit, including the final confirmation and button removal; it must fail before the repair. Check sibling callback paths for representation safety. Put release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the Telegram rich-message callback lifecycle from https://github.com/openclaw/openclaw/issues/123886. A `/models` picker delivered with `channels.telegram.richMessages: true` must receive its callback confirmation through a rich-aware edit path. Keep the correction at the shared Telegram callback-message owner; preserve legacy accounts, inline keyboards, and business-message behavior; do not add a `/models`-specific workaround or config option. Add a boundary regression covering rich delivery followed by a rich callback edit and preserve legacy delivery behavior. Follow the test-audit gate, provide release-note context in the PR body, and do not edit CHANGELOG.md.
 
 Likely files:
 
 - extensions/telegram/src/bot-handlers.callback-actions.ts
 - extensions/telegram/src/bot-handlers.callback-router.ts
-- extensions/telegram/src/bot.create-telegram-bot.test.ts
-- extensions/telegram/src/bot.create-telegram-bot.test-harness.ts
+- extensions/telegram/src/bot.test.ts
+- extensions/telegram/src/transport-payload.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/telegram/src/bot.create-telegram-bot.test.ts
-- git diff --check
-- Redacted live Telegram rich `/models` callback proof
+- pnpm test extensions/telegram/src/bot.test.ts
+- pnpm test extensions/telegram/src/transport-payload.test.ts
+- Capture redacted after-fix Telegram Desktop proof or an approved mock-gateway harness verdict that exercises picker delivery and callback selection.
 
 ## Operator Prompt
 
