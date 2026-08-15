@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T05:45:58.676Z",
+  "updated_at": "2026-08-15T05:48:12.365Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123276:5285857481:2026-08-15T00:26:47Z:clawsweeper_needs_human",
-      "comment_id": "5285857481",
-      "comment_version_key": "5285857481:2026-08-15T00:26:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123276#issuecomment-5285857481",
-      "comment_created_at": "2026-08-13T20:12:22Z",
-      "comment_updated_at": "2026-08-15T00:26:47Z",
-      "comment_body_sha256": "59f4bf3cd343048d6642fa23402f5c46111e4dfa8ab5af58844fd9d77e4f40b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123276,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging creates a persisted cross-client contract: two first-use SQLite columns, two versioned Gateway methods, and a new sessions.create parameter require explicit upgrade ownership. (sha=c245c9c069f970093e5fa54f144c01329e82af75)",
-      "expected_head_sha": "c245c9c069f970093e5fa54f144c01329e82af75",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T00:27:43.312Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/session-folder-group-defaults",
-        "head_sha": "c245c9c069f970093e5fa54f144c01329e82af75",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123276:5299335153:2026-08-15T00:01:15Z:re_review",
       "comment_id": "5299335153",
@@ -33068,6 +33035,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112375:5076848606:2026-08-15T05:47:16Z:clawsweeper_needs_human",
+      "comment_id": "5076848606",
+      "comment_version_key": "5076848606:2026-08-15T05:47:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5076848606",
+      "comment_created_at": "2026-07-25T04:07:05Z",
+      "comment_updated_at": "2026-08-15T05:47:16Z",
+      "comment_body_sha256": "cfd727450b122c9d490ad5223862d71aeaf7f0446f8d57a9457e0577e43fbd5d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112375,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Posted terminal/helper evidence and focused tests do not show an exact-head persisted Gateway scheduler run with an allowed precheck,...; Review finding: [P1] Sanitize the environment before spawning the precheck shell — src/cron/job-precheck.ts:475 - [P1] Obtain owner approval for the second cron admission contract... (sha=28046fea2018006b557d78ecfc1c5db358aa548e)",
+      "expected_head_sha": "28046fea2018006b557d78ecfc1c5db358aa548e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T05:48:12.365Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bartok9/cron-precheck-gate",
+        "head_sha": "28046fea2018006b557d78ecfc1c5db358aa548e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
