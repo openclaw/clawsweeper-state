@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T00:19:32.938Z",
+  "updated_at": "2026-08-15T00:19:33.488Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5068603746:2026-07-24T10:05:57Z:re_review",
-      "comment_id": "5068603746",
-      "comment_version_key": "5068603746:2026-07-24T10:05:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5068603746",
-      "comment_created_at": "2026-07-24T10:05:57Z",
-      "comment_updated_at": "2026-07-24T10:05:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T19:21:23.198Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5070215177:2026-07-24T13:11:57Z:re_review",
       "comment_id": "5070215177",
@@ -32682,6 +32655,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123582:5291742642:2026-08-15T00:18:36Z:clawsweeper_needs_human",
+      "comment_id": "5291742642",
+      "comment_version_key": "5291742642:2026-08-15T00:18:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123582#issuecomment-5291742642",
+      "comment_created_at": "2026-08-14T09:29:34Z",
+      "comment_updated_at": "2026-08-15T00:18:36Z",
+      "comment_body_sha256": "9e2ea0d7be376e95aef676adfd299ae8f3a9ce6485e0941a0618b6aa79ee9d4f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123582,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied screenshots and headed matrix are for ebfb05f3c39, but the current head 50106e8be87a changes footer alignment; merge should wait for refreshed exact-head visual evidence... (sha=50106e8be87a4706d8940f016d891ad54912e88e)",
+      "expected_head_sha": "50106e8be87a4706d8940f016d891ad54912e88e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T00:19:33.488Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/sidebar-account-footer",
+        "head_sha": "50106e8be87a4706d8940f016d891ad54912e88e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
