@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T21:34:02.275Z",
+  "updated_at": "2026-08-15T21:35:55.320Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5138051997:2026-07-31T01:16:57Z:re_review",
-      "comment_id": "5138051997",
-      "comment_version_key": "5138051997:2026-07-31T01:16:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5138051997",
-      "comment_created_at": "2026-07-31T01:16:57Z",
-      "comment_updated_at": "2026-07-31T01:16:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T16:33:58.285Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5149881219:2026-08-01T04:55:40Z:re_review",
       "comment_id": "5149881219",
@@ -31811,6 +31784,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1174:5304318524:2026-08-15T21:35:05Z:clawsweeper_auto_repair",
+      "comment_id": "5304318524",
+      "comment_version_key": "5304318524:2026-08-15T21:35:05Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1174#issuecomment-5304318524",
+      "comment_created_at": "2026-08-15T21:29:01Z",
+      "comment_updated_at": "2026-08-15T21:35:05Z",
+      "comment_body_sha256": "f5c5b3fd006ffa07d6472e9882422ce818285ab2d0fc5e495a4874d37475133a",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1174,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b78f4d9f9cfa14e729fee7e6b052926c874040a3)",
+      "expected_head_sha": "b78f4d9f9cfa14e729fee7e6b052926c874040a3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T21:35:55.320Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-131-github-throttle-history",
+        "head_sha": "b78f4d9f9cfa14e729fee7e6b052926c874040a3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
