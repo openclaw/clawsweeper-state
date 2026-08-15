@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T00:43:22.734Z",
+  "updated_at": "2026-08-15T00:43:44.005Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5239162278:2026-08-10T10:50:46Z:re_review",
-      "comment_id": "5239162278",
-      "comment_version_key": "5239162278:2026-08-10T10:50:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5239162278",
-      "comment_created_at": "2026-08-10T10:50:46Z",
-      "comment_updated_at": "2026-08-10T10:50:46Z",
-      "comment_body_sha256": "edec1c054a10074283223e6abc15eeacfe1545f01ea8c7e43c2775766449ed03",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T19:24:53.573Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:5243025340:2026-08-10T16:27:19Z:re_review",
       "comment_id": "5243025340",
@@ -33080,6 +33053,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T00:43:22.734Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123276:5285857481:2026-08-15T00:42:52Z:clawsweeper_needs_human",
+      "comment_id": "5285857481",
+      "comment_version_key": "5285857481:2026-08-15T00:42:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123276#issuecomment-5285857481",
+      "comment_created_at": "2026-08-13T20:12:22Z",
+      "comment_updated_at": "2026-08-15T00:42:52Z",
+      "comment_body_sha256": "262906d783bd6365f7e5bc9a694c5438691e4920e642be744f2c0dd91025089c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123276,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Enforce participation for folder-group defaults (P1)** - The dispatcher can apply session participation only when the target resolver supplies group members, but it recognizes only rename/delete. These new metho...; Review finding: [P1] Enforce participation for folder-group defaults — src/gateway/server-methods/sessions-groups.ts:45-56 - [P1] Clear removed cwd from cached defaults — ui/src/l... (sha=c245c9c069f970093e5fa54f144c01329e82af75)",
+      "expected_head_sha": "c245c9c069f970093e5fa54f144c01329e82af75",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T00:43:44.005Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-folder-group-defaults",
+        "head_sha": "c245c9c069f970093e5fa54f144c01329e82af75",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
