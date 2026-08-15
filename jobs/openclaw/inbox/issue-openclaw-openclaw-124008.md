@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the New Session model picker so opening it can request `models.list` with `view: "configured"` for the active agent and replace only that control's catalog when the response is still current. Preserve snapshot-only `chat.metadata` startup behavior and its retry semantics; do not add live discovery to Gateway metadata or alter prepared-catalog lifecycle. Add a regression where metadata contains only authored rows and the picker-open catalog response adds dynamic providers; retain the prepared catalog and expose retryable state if discovery fails. Do not edit CHANGELOG.md; include user-visible release-note context in the PR body.
+Repair the New Session model picker so opening it refreshes the agent’s configured model catalog through the established on-demand models.list path, then replaces its local picker catalog only on success. Preserve the prepared chat.metadata catalog on failure, cancellation, and agent change; do not enable live provider discovery inside chat.metadata or change config/provider policy. Add a regression covering dynamic entries appearing after picker open and a failure retaining the prepared catalog. No CHANGELOG.md edit; include user-visible release-note context in the PR body.
 
 Likely files:
 
 - ui/src/pages/new-session/model-control.ts
 - ui/src/pages/new-session/model-control.test.ts
-- ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
+- ui/src/pages/chat/chat-state-refresh.ts
 - ui/src/pages/chat/models.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs ui/src/pages/new-session/model-control.test.ts
-- node scripts/check-changed.mjs -- ui/src/pages/new-session/model-control.ts ui/src/pages/new-session/model-control.test.ts
-- Run a focused Control UI mock-Gateway E2E proving picker-open discovery after the unit regression is established.
+- node scripts/run-vitest.mjs ui/src/pages/chat/chat-view.test.ts
+- git diff --check
 
 ## Operator Prompt
 
