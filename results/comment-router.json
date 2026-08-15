@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-15T16:32:02.974Z",
+  "updated_at": "2026-08-15T16:31:20.609Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124056:5300944378:2026-08-15T11:27:32Z:clawsweeper_needs_human",
+      "comment_id": "5300944378",
+      "comment_version_key": "5300944378:2026-08-15T11:27:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124056#issuecomment-5300944378",
+      "comment_created_at": "2026-08-15T06:29:36Z",
+      "comment_updated_at": "2026-08-15T11:27:32Z",
+      "comment_body_sha256": "9d4ca82b028342a927104bb38e9a40489712fa879b07ece71fb760e56292a724",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124056,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Generated Xcode output changes for seven targets, so locally retained generated projects need the documented pnpm ios:gen flow to receive the corrected destinations and product paths. (sha=f6a4150371a6ebc2565b092a3b43cb86090daa9d)",
+      "expected_head_sha": "f6a4150371a6ebc2565b092a3b43cb86090daa9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T11:31:59.742Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsean/fix-ios-xcodegen-products",
+        "head_sha": "f6a4150371a6ebc2565b092a3b43cb86090daa9d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123803:5297549940:2026-08-15T11:15:20Z:clawsweeper_needs_human",
       "comment_id": "5297549940",
@@ -31447,39 +31480,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124205:5303168375:2026-08-15T16:31:19Z:clawsweeper_needs_human",
-      "comment_id": "5303168375",
-      "comment_version_key": "5303168375:2026-08-15T16:31:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124205#issuecomment-5303168375",
-      "comment_created_at": "2026-08-15T16:31:19Z",
-      "comment_updated_at": "2026-08-15T16:31:19Z",
-      "comment_body_sha256": "16eccf4fd1315b77963ebf9845adb81d8a376fd320bf56c2640d5f936bfa6321",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124205,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head iOS build and dead-code checks were still running, so merge should wait for their completion. (sha=0ebe02ad00bf7f7e985d3b050b4992e697d8f498)",
-      "expected_head_sha": "0ebe02ad00bf7f7e985d3b050b4992e697d8f498",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T16:32:02.974Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/remove-ios-construction-probes",
-        "head_sha": "0ebe02ad00bf7f7e985d3b050b4992e697d8f498",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
