@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T22:32:47.079Z",
+  "updated_at": "2026-08-15T22:33:46.325Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102173:4914801332:2026-08-15T17:30:24Z:clawsweeper_auto_repair",
-      "comment_id": "4914801332",
-      "comment_version_key": "4914801332:2026-08-15T17:30:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/102173#issuecomment-4914801332",
-      "comment_created_at": "2026-07-08T12:32:31Z",
-      "comment_updated_at": "2026-08-15T17:30:24Z",
-      "comment_body_sha256": "75ab2ab509023c70b3292466aac47687cfca88da2159481b2ae5e9a32c2081dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 102173,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=94edd68267a8af17478d0aaef4de8f22074b339f)",
-      "expected_head_sha": "94edd68267a8af17478d0aaef4de8f22074b339f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T17:33:52.498Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/101793-tooluse-undelivered-note",
-        "head_sha": "94edd68267a8af17478d0aaef4de8f22074b339f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102182:4915056699:2026-08-15T17:31:20Z:clawsweeper_auto_repair",
       "comment_id": "4915056699",
@@ -32006,6 +31973,53 @@
       "status": "skipped",
       "processed_at": "2026-08-15T22:32:45.417Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124191:5304546262:2026-08-15T22:32:57Z:re_review",
+      "comment_id": "5304546262",
+      "comment_version_key": "5304546262:2026-08-15T22:32:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124191#issuecomment-5304546262",
+      "comment_created_at": "2026-08-15T22:32:57Z",
+      "comment_updated_at": "2026-08-15T22:32:57Z",
+      "comment_body_sha256": "9bae9ee50d82230b928dcce4857c754da5fa7aaf445b3899e2c37d847ed94b39",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124191,
+      "author": "VACInc",
+      "author_id": 3279061,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T22:33:43.985Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-prompt-cache-prefix",
+        "head_sha": "ee3a6634335b4e324b32e2445741912ea9e1dded",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
