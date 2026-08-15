@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T18:19:57.897Z",
+  "updated_at": "2026-08-15T18:20:54.696Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:175:5285828593:2026-08-15T11:59:06Z:clawsweeper_auto_repair",
-      "comment_id": "5285828593",
-      "comment_version_key": "5285828593:2026-08-15T11:59:06Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/175#issuecomment-5285828593",
-      "comment_created_at": "2026-08-13T20:09:20Z",
-      "comment_updated_at": "2026-08-15T11:59:06Z",
-      "comment_body_sha256": "a36b7358433ab0031ee131eb99b11edfb63abd4016edc548752f6512dcc6d049",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 175,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=deb049757d2e330e4510371ac41923211ffc7453)",
-      "expected_head_sha": "deb049757d2e330e4510371ac41923211ffc7453",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T11:59:50.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "repair/autoreview-sol-effort-4db7e8983a",
-        "head_sha": "deb049757d2e330e4510371ac41923211ffc7453",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123624:5292922411:2026-08-15T11:59:53Z:clawsweeper_auto_repair",
       "comment_id": "5292922411",
@@ -32361,6 +32328,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123875:5303600189:2026-08-15T18:20:06Z:re_review",
+      "comment_id": "5303600189",
+      "comment_version_key": "5303600189:2026-08-15T18:20:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123875#issuecomment-5303600189",
+      "comment_created_at": "2026-08-15T18:20:06Z",
+      "comment_updated_at": "2026-08-15T18:20:06Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123875,
+      "author": "sjf-oa",
+      "author_id": 257630655,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T18:20:52.678Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/slack-presence-guidance-config-1",
+        "head_sha": "22ac3f0de7c2d0bd9e320e604452f6e95141fdd9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
