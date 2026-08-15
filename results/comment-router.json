@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T04:02:11.785Z",
+  "updated_at": "2026-08-15T04:02:40.394Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120721:5234421598:2026-08-09T23:33:53Z:re_review",
-      "comment_id": "5234421598",
-      "comment_version_key": "5234421598:2026-08-09T23:33:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120721#issuecomment-5234421598",
-      "comment_created_at": "2026-08-09T23:33:53Z",
-      "comment_updated_at": "2026-08-09T23:33:53Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120721,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T21:58:06.372Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120721:5234618492:2026-08-10T00:19:48Z:re_review",
       "comment_id": "5234618492",
@@ -32781,6 +32754,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123737:5295711528:2026-08-15T04:01:59Z:clawsweeper_needs_human",
+      "comment_id": "5295711528",
+      "comment_version_key": "5295711528:2026-08-15T04:01:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123737#issuecomment-5295711528",
+      "comment_created_at": "2026-08-14T16:29:54Z",
+      "comment_updated_at": "2026-08-15T04:01:59Z",
+      "comment_body_sha256": "43b36b25a3b53be9127f804890d34b3acb38c4461969d5be84357b04ea200b71",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123737,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body shows focused tests, but its compaction provider, LLM summarizer, and overflow compaction are mocked; add a redacted after-fix trac... (sha=97ee087d64ce51d0b3b59a92b11a0000fa99ca60)",
+      "expected_head_sha": "97ee087d64ce51d0b3b59a92b11a0000fa99ca60",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T04:02:40.394Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-superseded-task-123668",
+        "head_sha": "97ee087d64ce51d0b3b59a92b11a0000fa99ca60",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
