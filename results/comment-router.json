@@ -2,53 +2,6 @@
   "updated_at": "2026-08-15T15:30:28.858Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:steipete/CodexBar:2647:5301797211:2026-08-15T10:22:37Z:re_review",
-      "comment_id": "5301797211",
-      "comment_version_key": "5301797211:2026-08-15T10:22:37Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2647#issuecomment-5301797211",
-      "comment_created_at": "2026-08-15T10:22:37Z",
-      "comment_updated_at": "2026-08-15T10:22:37Z",
-      "comment_body_sha256": "6095ad41ee74c45abb07d40e64b351faad334ca994a5e28e89453950809a1414",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2647,
-      "author": "KSEGIT",
-      "author_id": 9919062,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T10:27:35.573Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "copilot-ai-credits",
-        "head_sha": "2d25ce67bdd9095e5ed5c82cdf06d3dca77261df",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2647:5179154070:2026-08-15T10:26:47Z:clawsweeper_auto_repair",
       "comment_id": "5179154070",
       "comment_version_key": "5179154070:2026-08-15T10:26:47Z",
@@ -31316,6 +31269,39 @@
         "kind": "pull_request",
         "branch": "fix/sanitize-text-code-spans",
         "head_sha": "352f746ca3c2b966bd24c235ca2a4bf537671518",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80396:4416120074:2026-08-15T15:25:24Z:clawsweeper_needs_human",
+      "comment_id": "4416120074",
+      "comment_version_key": "4416120074:2026-08-15T15:25:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-4416120074",
+      "comment_created_at": "2026-05-10T19:19:16Z",
+      "comment_updated_at": "2026-08-15T15:25:24Z",
+      "comment_body_sha256": "b0fb4c7a23baabe705aafbfaff824e9bb669290ba33738106184a9fd07124203",
+      "repo": "openclaw/openclaw",
+      "issue_number": 80396,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR adds optional persisted queue facts and a private-local bundled-plugin runtime seam; maintainers should explicitly accept that compatibility-sensitive scope. (sha=4fb596e78756953aef0939f468554e1f7d4898ad)",
+      "expected_head_sha": "4fb596e78756953aef0939f468554e1f7d4898ad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T15:30:26.567Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/41966-media-token-warn-in-fence",
+        "head_sha": "4fb596e78756953aef0939f468554e1f7d4898ad",
         "cluster_id": null,
         "job_path": null
       }
