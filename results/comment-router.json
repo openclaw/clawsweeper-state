@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T20:03:28.782Z",
+  "updated_at": "2026-08-15T20:04:04.251Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78035:4382356648:2026-08-15T14:30:53Z:clawsweeper_auto_repair",
-      "comment_id": "4382356648",
-      "comment_version_key": "4382356648:2026-08-15T14:30:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/78035#issuecomment-4382356648",
-      "comment_created_at": "2026-05-05T19:30:37Z",
-      "comment_updated_at": "2026-08-15T14:30:53Z",
-      "comment_body_sha256": "326344f8041b4159657de7ff300e2acf4c1fa7256965bcdc5d76caa0a1127738",
-      "repo": "openclaw/openclaw",
-      "issue_number": 78035,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3ee044dd6f90a5f8e6d4a7a5e3790bb2e35b1651)",
-      "expected_head_sha": "3ee044dd6f90a5f8e6d4a7a5e3790bb2e35b1651",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T14:46:18.650Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/77897-corpus-supplement-allsettled",
-        "head_sha": "3ee044dd6f90a5f8e6d4a7a5e3790bb2e35b1651",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80396:4416120074:2026-08-15T14:39:04Z:clawsweeper_needs_human",
       "comment_id": "4416120074",
@@ -31561,6 +31528,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119778:5199641212:2026-08-15T20:02:58Z:clawsweeper_auto_merge",
+      "comment_id": "5199641212",
+      "comment_version_key": "5199641212:2026-08-15T20:02:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119778#issuecomment-5199641212",
+      "comment_created_at": "2026-08-06T02:18:20Z",
+      "comment_updated_at": "2026-08-15T20:02:58Z",
+      "comment_body_sha256": "3cb040f57ca4b7bd28750e9daaacc9338e5d24bcce5eb433b518aef8d32e884c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119778,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=f08a62b62ca9245bc3106a22c7bc34d9c549e27a); PR has merge conflicts and needs a cloud rebase repair before automerge",
+      "expected_head_sha": "f08a62b62ca9245bc3106a22c7bc34d9c549e27a",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T20:03:49.306Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-119754",
+        "head_sha": "f08a62b62ca9245bc3106a22c7bc34d9c549e27a",
+        "cluster_id": "automerge-openclaw-openclaw-119778",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119778.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119778.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
