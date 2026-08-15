@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T05:11:01.960Z",
+  "updated_at": "2026-08-15T05:13:11.080Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114287:5087384083:2026-08-14T23:10:04Z:clawsweeper_needs_human",
-      "comment_id": "5087384083",
-      "comment_version_key": "5087384083:2026-08-14T23:10:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114287#issuecomment-5087384083",
-      "comment_created_at": "2026-07-27T04:49:24Z",
-      "comment_updated_at": "2026-08-14T23:10:04Z",
-      "comment_body_sha256": "36d798aba83bf28657f78010a0212739e0e3cf2199bdd4df50ff6b9da4b4efef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114287,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Real bare-remote push coverage supports the opted-in hook, but the documented default authenticated complete GitHub-inventory route la... (sha=d9700ba75ebc76c0be6198b483d02f6f033d8cdb)",
-      "expected_head_sha": "d9700ba75ebc76c0be6198b483d02f6f033d8cdb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T23:25:22.973Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/publication-security-preflight",
-        "head_sha": "d9700ba75ebc76c0be6198b483d02f6f033d8cdb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120781:5229230238:2026-08-14T23:12:24Z:clawsweeper_auto_repair",
       "comment_id": "5229230238",
@@ -32975,6 +32942,53 @@
         "kind": "pull_request",
         "branch": "test/trim-cua-transport-spot-checks",
         "head_sha": "8884e4956c7e73da4a6647477b15c16194eb649c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123814:5300680806:2026-08-15T05:12:21Z:re_review",
+      "comment_id": "5300680806",
+      "comment_version_key": "5300680806:2026-08-15T05:12:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123814#issuecomment-5300680806",
+      "comment_created_at": "2026-08-15T05:12:21Z",
+      "comment_updated_at": "2026-08-15T05:12:21Z",
+      "comment_body_sha256": "678b124ccf032406813b48a7bd9dfdc243e11fa835ee2db4bada0ba89ed7cd64",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123814,
+      "author": "licheer-zte",
+      "author_id": 305411557,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — p1 provider-scoping addressed: aggregate removal now requires the aggregate provider to match the imported claude-cli source, with a mixed-provider regression test; check-test-types ts errors fixed; pr body heading updated",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T05:13:07.934Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-duplicate-turn-merge-123792",
+        "head_sha": "eac3fe7565c85246c15180f5efa88d0ac5dca9e3",
         "cluster_id": null,
         "job_path": null
       },
