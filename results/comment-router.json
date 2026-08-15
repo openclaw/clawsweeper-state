@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T01:13:13.977Z",
+  "updated_at": "2026-08-15T01:14:18.382Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120900:5290108477:2026-08-14T06:10:36Z:re_review",
-      "comment_id": "5290108477",
-      "comment_version_key": "5290108477:2026-08-14T06:10:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120900#issuecomment-5290108477",
-      "comment_created_at": "2026-08-14T06:10:36Z",
-      "comment_updated_at": "2026-08-14T06:10:36Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120900,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T19:24:58.055Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120900:5290152372:2026-08-14T06:17:22Z:re_review",
       "comment_id": "5290152372",
@@ -33248,6 +33221,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:481:5299747340:2026-08-15T01:13:32Z:clawsweeper_needs_human",
+      "comment_id": "5299747340",
+      "comment_version_key": "5299747340:2026-08-15T01:13:32Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/481#issuecomment-5299747340",
+      "comment_created_at": "2026-08-15T01:13:32Z",
+      "comment_updated_at": "2026-08-15T01:13:32Z",
+      "comment_body_sha256": "026af4f13fbb78281445e3d5c3023e0cfb8b27ccafe0b669febf1ac8b5125344",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 481,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing callers with incomplete legacy exact-window snapshot metadata will now receive a refusal and must capture fresh UI state before background delivery. (sha=8c35e9455514131e7040bc8bbfba44867a2f7b77)",
+      "expected_head_sha": "8c35e9455514131e7040bc8bbfba44867a2f7b77",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T01:14:18.382Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/target-selector-identity-adapters",
+        "head_sha": "8c35e9455514131e7040bc8bbfba44867a2f7b77",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
