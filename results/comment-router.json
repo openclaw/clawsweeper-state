@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T02:48:45.655Z",
+  "updated_at": "2026-08-15T02:49:15.307Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123817:5297966793:2026-08-14T20:40:42Z:clawsweeper_needs_human",
-      "comment_id": "5297966793",
-      "comment_version_key": "5297966793:2026-08-14T20:40:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123817#issuecomment-5297966793",
-      "comment_created_at": "2026-08-14T20:40:42Z",
-      "comment_updated_at": "2026-08-14T20:40:42Z",
-      "comment_body_sha256": "d1fed64d632dd75b683d452a4091eccf623b893f6a896aa71c66ef2d1f327e3f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123817,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress; the local autoreview helper could not rerun because this environment lacks its required TruffleHog binary. (sha=db23ae4ec4a5d5f4c09e542a996d72c68d902119)",
-      "expected_head_sha": "db23ae4ec4a5d5f4c09e542a996d72c68d902119",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T20:41:29.286Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/openclaw-installer-testing-834d9d",
-        "head_sha": "db23ae4ec4a5d5f4c09e542a996d72c68d902119",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120464:5297969682:2026-08-14T20:41:03Z:re_review",
       "comment_id": "5297969682",
@@ -32877,6 +32844,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123834:5300163558:2026-08-15T02:48:36Z:re_review",
+      "comment_id": "5300163558",
+      "comment_version_key": "5300163558:2026-08-15T02:48:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123834#issuecomment-5300163558",
+      "comment_created_at": "2026-08-15T02:48:36Z",
+      "comment_updated_at": "2026-08-15T02:48:36Z",
+      "comment_body_sha256": "7f8737ad1fb70d4c33a281938e4a8aa3e2ca91b9100971f3bd45ce9a0e3889e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123834,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T02:49:13.933Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-yield-diagnostic-suppression",
+        "head_sha": "a8912de4d02e9b72efed362c1046a126c03ea79d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
