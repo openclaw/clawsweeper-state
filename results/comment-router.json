@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T22:56:52.569Z",
+  "updated_at": "2026-08-15T22:58:23.905Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113089:5303542485:2026-08-15T18:05:34Z:re_review",
-      "comment_id": "5303542485",
-      "comment_version_key": "5303542485:2026-08-15T18:05:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113089#issuecomment-5303542485",
-      "comment_created_at": "2026-08-15T18:05:34Z",
-      "comment_updated_at": "2026-08-15T18:05:34Z",
-      "comment_body_sha256": "60d85abe74b424e66f87f3e9a1e7588d03ff44887364b4b7e464a4c49606d6d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113089,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T18:27:57.041Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/spawn-session-id",
-        "head_sha": "759bccf86cd7681feedb65d2d2b2a8971b54d12a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115447:5303542602:2026-08-15T18:05:36Z:re_review",
       "comment_id": "5303542602",
@@ -31853,6 +31806,39 @@
         "kind": "pull_request",
         "branch": "agent/gateway-core-ready-before-sidecars",
         "head_sha": "838aea4c6bd37c0f5ec4f93bcac2aca57e75414c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119295:5183496333:2026-08-15T22:57:47Z:clawsweeper_needs_human",
+      "comment_id": "5183496333",
+      "comment_version_key": "5183496333:2026-08-15T22:57:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119295#issuecomment-5183496333",
+      "comment_created_at": "2026-08-04T19:12:30Z",
+      "comment_updated_at": "2026-08-15T22:57:47Z",
+      "comment_body_sha256": "5af64006ba6986d84ce917f34168fbbd81f47de66e2cb18475dfac8d48cd7cb3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119295,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The submitted Chromium scenario runs through a mock Gateway, fake peer connection, and intercepted synthetic OpenAI response, so it is strong r... (sha=b90fa70d021122d46d40075596b07882e8b32866)",
+      "expected_head_sha": "b90fa70d021122d46d40075596b07882e8b32866",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T22:58:23.905Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-webrtc-sdp-answer-limit",
+        "head_sha": "b90fa70d021122d46d40075596b07882e8b32866",
         "cluster_id": null,
         "job_path": null
       }
