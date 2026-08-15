@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T00:28:18.718Z",
+  "updated_at": "2026-08-15T00:29:34.155Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5289332755:2026-08-14T04:07:02Z:re_review",
-      "comment_id": "5289332755",
-      "comment_version_key": "5289332755:2026-08-14T04:07:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5289332755",
-      "comment_created_at": "2026-08-14T04:07:02Z",
-      "comment_updated_at": "2026-08-14T04:07:02Z",
-      "comment_body_sha256": "45a6e8d1404b3205a98ee9b2ae5b6e487fa08a74a4290813756ebde9bc3c4218",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T19:21:23.198Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5290537316:2026-08-14T07:06:18Z:re_review",
       "comment_id": "5290537316",
@@ -32936,6 +32909,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T00:28:18.718Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123898:5299503294:2026-08-15T00:28:55Z:clawsweeper_needs_human",
+      "comment_id": "5299503294",
+      "comment_version_key": "5299503294:2026-08-15T00:28:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123898#issuecomment-5299503294",
+      "comment_created_at": "2026-08-15T00:28:55Z",
+      "comment_updated_at": "2026-08-15T00:28:55Z",
+      "comment_body_sha256": "25d0f6505704e678eaf509b54e3d5219fdea8e675c43a0e63be787f261462d9c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123898,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm the new critical-execution exception** - This entry makes one critical execution finding non-blocking during release validation; confirm the reviewed managed-asset contract befo...; Review finding: [medium] Confirm the new critical-execution exception — src/plugins/npm-install-security-scan.release.test.ts:37 (sha=62424741e8ea775ddd85a20d9a83de8142aef799)",
+      "expected_head_sha": "62424741e8ea775ddd85a20d9a83de8142aef799",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T00:29:34.155Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llama-cpp-security-baseline",
+        "head_sha": "62424741e8ea775ddd85a20d9a83de8142aef799",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
