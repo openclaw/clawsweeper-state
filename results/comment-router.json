@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T02:38:37.597Z",
+  "updated_at": "2026-08-15T02:38:41.475Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123148:5279692389:2026-08-14T20:28:01Z:clawsweeper_needs_human",
-      "comment_id": "5279692389",
-      "comment_version_key": "5279692389:2026-08-14T20:28:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123148#issuecomment-5279692389",
-      "comment_created_at": "2026-08-13T11:15:52Z",
-      "comment_updated_at": "2026-08-14T20:28:01Z",
-      "comment_body_sha256": "77956d8af8e4164ab11068f9ad718386b69f9b7fe3a8463dda1a0d7763b657a9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123148,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports mock-Gateway tests but provides no redacted after-fix packaged macOS run for this user-visible onboarding change. After add... (sha=c474eb52acbe16ad1e1ccf01350eeb6d7715225b)",
-      "expected_head_sha": "c474eb52acbe16ad1e1ccf01350eeb6d7715225b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T20:33:42.386Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/auto-queueable-20260813-3",
-        "head_sha": "c474eb52acbe16ad1e1ccf01350eeb6d7715225b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123585:5291811914:2026-08-14T20:33:40Z:clawsweeper_auto_repair",
       "comment_id": "5291811914",
@@ -32833,6 +32800,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123930:5300116818:2026-08-15T02:37:58Z:re_review",
+      "comment_id": "5300116818",
+      "comment_version_key": "5300116818:2026-08-15T02:37:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123930#issuecomment-5300116818",
+      "comment_created_at": "2026-08-15T02:37:58Z",
+      "comment_updated_at": "2026-08-15T02:37:58Z",
+      "comment_body_sha256": "04cdadb72143b837e2ee6b17d2c159349ad45baaba2da1672a4fd95199c498d9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123930,
+      "author": "itsahedge",
+      "author_id": 51177340,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review — addressed the findings: inlined the one-caller predicate at the delivery owner (no new acp-core export; +4/-1 production, no test churn), and added redacted before/after real-behavior proof to the pr body. boundary is demonstrated by the live before/after; a dispatch-harness regression is a welcome follow-up i couldn't run locally",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T02:38:39.631Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-thread-bound-child-reply-delivery",
+        "head_sha": "ab4f105db5d416bc8f313f9bc88d5d2d96bae94e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
