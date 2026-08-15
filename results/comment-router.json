@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T14:28:50.062Z",
+  "updated_at": "2026-08-15T14:29:02.823Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122694:5269293395:2026-08-15T09:38:21Z:clawsweeper_needs_human",
-      "comment_id": "5269293395",
-      "comment_version_key": "5269293395:2026-08-15T09:38:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122694#issuecomment-5269293395",
-      "comment_created_at": "2026-08-12T16:03:51Z",
-      "comment_updated_at": "2026-08-15T09:38:21Z",
-      "comment_body_sha256": "06e29632ca90e36268da8cdeca99a08f3d7274a6df054b79501385f7ff8009c9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122694,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main and its current aggregate build, lint, and CI-gate checks are failed or incomplete; rebase and validate the exact merge head before merge. (sha=a8f39a21313c413e956cd7ea867c87acaaeba5cc)",
-      "expected_head_sha": "a8f39a21313c413e956cd7ea867c87acaaeba5cc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T09:48:04.613Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/file-transfer-dir-list-count",
-        "head_sha": "a8f39a21313c413e956cd7ea867c87acaaeba5cc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122937:5275834584:2026-08-15T09:43:43Z:clawsweeper_auto_repair",
       "comment_id": "5275834584",
@@ -31040,6 +31007,53 @@
       "status": "skipped",
       "processed_at": "2026-08-15T14:28:50.062Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123245:5302670120:2026-08-15T14:28:17Z:re_review",
+      "comment_id": "5302670120",
+      "comment_version_key": "5302670120:2026-08-15T14:28:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123245#issuecomment-5302670120",
+      "comment_created_at": "2026-08-15T14:28:17Z",
+      "comment_updated_at": "2026-08-15T14:28:17Z",
+      "comment_body_sha256": "5ae9c5edffb3fb50bcfadc9b256e14369520fbae1e0073ed38a2dba16df6703f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123245,
+      "author": "coaiMax",
+      "author_id": 147324971,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review this pr has been fully updated with regression tests and complete documentation. please re-review to clear the needs proof status",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T14:29:00.922Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/minimax-tts-malformed-response",
+        "head_sha": "954b2b0cd288a6ce2647b4de7420bd4c519bbca5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
