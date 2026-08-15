@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T22:42:03.624Z",
+  "updated_at": "2026-08-15T22:42:33.141Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124049:5303457012:2026-08-15T17:43:56Z:re_review",
-      "comment_id": "5303457012",
-      "comment_version_key": "5303457012:2026-08-15T17:43:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124049#issuecomment-5303457012",
-      "comment_created_at": "2026-08-15T17:43:56Z",
-      "comment_updated_at": "2026-08-15T17:43:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124049,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T17:44:10.543Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bug-056-retain-coordinator-unbounded-loop",
-        "head_sha": "cb16b5ab49159c40b30577a680d6bb7ee79dd8aa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82950:4469526858:2026-08-15T17:42:32Z:clawsweeper_needs_human",
       "comment_id": "4469526858",
@@ -31977,6 +31930,39 @@
         "kind": "pull_request",
         "branch": "joshavant/issue-121018-20260814t154843z-94134986",
         "head_sha": "f0a63a3e8cf94ec09f8d5bf0e2ee03eaede7606b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121557:5239242955:2026-08-15T22:41:48Z:clawsweeper_auto_repair",
+      "comment_id": "5239242955",
+      "comment_version_key": "5239242955:2026-08-15T22:41:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121557#issuecomment-5239242955",
+      "comment_created_at": "2026-08-10T10:59:43Z",
+      "comment_updated_at": "2026-08-15T22:41:48Z",
+      "comment_body_sha256": "25ab02c6914f15f6da57e3a2b2c0344832fa5c8798c4038b725b348918dbc6d0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121557,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=05358ba8cd259ca08a7131535ca746e26ef39513)",
+      "expected_head_sha": "05358ba8cd259ca08a7131535ca746e26ef39513",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T22:42:33.141Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-websearch-global-kill-switch",
+        "head_sha": "05358ba8cd259ca08a7131535ca746e26ef39513",
         "cluster_id": null,
         "job_path": null
       }
