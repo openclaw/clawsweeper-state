@@ -3,8 +3,8 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Apply in progress",
-  "detail": "Starting apply/comment-sync run for up to 40 fresh all closes. Close reasons: all. Scan window: 600 records (base_window). Existing Codex automated review comments are updated in place when closing or when comment-only sync is stale by 0 day(s); checkpoints commit every 40 fresh closes; close delay is 2000ms; sync-comments-only=true; item numbers=114480,124070,123676,123346,95767,93475,123285,123417,88543,123411,123233,123535,94952,84662,86182,123270,123004,89474,123310,74252,122597,123965,124080,101750,124001,92619,124076,123209,123942,123356,124071,91572,123984,83337,93406,90082,87816,102636,101367,124078.",
+  "state": "Apply comments synced",
+  "detail": "Comment-only apply checkpoint 1 finished. Synced durable review comments: 0. Result records: 2. Item numbers: 114480,124070,123676,123346,95767,93475,123285,123417,88543,123411,123233,123535,94952,84662,86182,123270,123004,89474,123310,74252,122597,123965,124080,101750,124001,92619,124076,123209,123942,123356,124071,91572,123984,83337,93406,90082,87816,102636,101367,124078. Next cursor: none.",
   "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31871567809",
   "planned_count": null,
   "planned_capacity": null,
@@ -19,7 +19,79 @@
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": null,
+  "apply_health": {
+    "schema_version": 1,
+    "generated_at": "2026-08-15T07:55:01.462Z",
+    "target_repo": "openclaw/openclaw",
+    "mode": "comment_sync",
+    "status": "needs_attention",
+    "summary": "0 examined; 2/40 action records; 0 closed, 0 comments synced, 2 skipped; cursor at #114472. Attention: skipped_runtime_budget.",
+    "examined": 0,
+    "action_records": 2,
+    "processed": 2,
+    "processed_limit": 40,
+    "close_limit": 40,
+    "closed": 0,
+    "comment_synced": 0,
+    "skipped": 2,
+    "skip_reasons": {
+      "skipped_runtime_budget": 2
+    },
+    "lanes": {
+      "closure": {
+        "processed": 0,
+        "closed": 0,
+        "comment_synced": 0,
+        "skipped": 0,
+        "skip_reasons": {}
+      },
+      "comment_sync": {
+        "processed": 2,
+        "closed": 0,
+        "comment_synced": 0,
+        "skipped": 2,
+        "skip_reasons": {
+          "skipped_runtime_budget": 2
+        }
+      }
+    },
+    "next_actions": [
+      {
+        "reason": "skipped_runtime_budget",
+        "count": 2,
+        "bucket": "run_budget",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Runtime budget",
+        "summary": "The apply lane stopped because it reached its bounded runtime.",
+        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
+      }
+    ],
+    "next_action_buckets": {
+      "run_budget": 2
+    },
+    "cycle": {
+      "basis": "not_close_cursor",
+      "apply_ready_count": null,
+      "candidate_counts": null,
+      "window_size": null,
+      "estimated_full_cycle_windows": null,
+      "estimated_full_cycle_minutes": null,
+      "scheduled_interval_minutes": null,
+      "label": "Cycle estimate is only reported for scheduled close cursor windows."
+    },
+    "attention_reasons": [
+      "skipped_runtime_budget"
+    ],
+    "cursor_required": true,
+    "cursor": {
+      "path": "results/comment-sync-cursors/openclaw-openclaw.json",
+      "next_after_number": 114472,
+      "next_after_apply_checked_at": null,
+      "updated_at": "2026-08-15T07:19:00.559Z"
+    },
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31871567809"
+  },
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-08-15T07:46:16.150Z",
@@ -139,5 +211,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31870920523"
   },
-  "updated_at": "2026-08-15T07:54:10.795Z"
+  "updated_at": "2026-08-15T07:55:02.103Z"
 }
