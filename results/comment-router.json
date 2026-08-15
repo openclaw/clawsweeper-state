@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T04:40:58.242Z",
+  "updated_at": "2026-08-15T04:42:46.095Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:471:5298894909:2026-08-14T22:44:59Z:re_review",
-      "comment_id": "5298894909",
-      "comment_version_key": "5298894909:2026-08-14T22:44:59Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/471#issuecomment-5298894909",
-      "comment_created_at": "2026-08-14T22:44:59Z",
-      "comment_updated_at": "2026-08-14T22:44:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 471,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T22:49:25.325Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/root-early-exit-order",
-        "head_sha": "c867014a3a94a4e4df703c167694b29f8bdc3eea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:471:5292161740:2026-08-14T22:48:43Z:clawsweeper_needs_human",
       "comment_id": "5292161740",
@@ -33088,6 +33041,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-15T04:41:43Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-15T04:41:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-15T04:41:43Z",
+      "comment_body_sha256": "92f7ea1ab1176e84b7cef8cc51c94e8cc90e2a3de54df368e65c3f379cd52b12",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner tuple (P1)** - This changes the action to v3.97.0 but leaves with.version at the v3.95.9 image and digest. The scanner therefore is not upgraded as a unit, and ci-workflow-guar...; Review finding: [P1] Synchronize the TruffleHog scanner tuple — .github/workflows/ci.yml:1071-1075 - [P1] Update the Android attestation guard — .github/workflows/android-release.... (sha=648f89a5fa1cf554c696e20402bc748560498ff6)",
+      "expected_head_sha": "648f89a5fa1cf554c696e20402bc748560498ff6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T04:42:46.095Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "648f89a5fa1cf554c696e20402bc748560498ff6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
