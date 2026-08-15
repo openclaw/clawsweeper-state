@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T14:14:24.919Z",
+  "updated_at": "2026-08-15T14:17:26.515Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122444:5278476444:2026-08-13T09:24:36Z:re_review",
-      "comment_id": "5278476444",
-      "comment_version_key": "5278476444:2026-08-13T09:24:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122444#issuecomment-5278476444",
-      "comment_created_at": "2026-08-13T09:24:36Z",
-      "comment_updated_at": "2026-08-13T09:24:36Z",
-      "comment_body_sha256": "8b547cdeac546904341a87d26a873b2064eda15474c445568af9ecedded81058",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122444,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head a50476e12766745fab91a75d1658eab37075fd9e (supersedes 27a40fab)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T09:40:29.733Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122444:5278603513:2026-08-13T09:36:55Z:re_review",
       "comment_id": "5278603513",
@@ -31027,6 +31000,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/remindctl:71:5298585066:2026-08-15T13:59:16Z:clawsweeper_auto_repair",
+      "comment_id": "5298585066",
+      "comment_version_key": "5298585066:2026-08-15T13:59:16Z",
+      "comment_url": "https://github.com/openclaw/remindctl/pull/71#issuecomment-5298585066",
+      "comment_created_at": "2026-08-14T21:59:46Z",
+      "comment_updated_at": "2026-08-15T13:59:16Z",
+      "comment_body_sha256": "7dfc84999a60931372f3652e02385d9e20796bccea42b9c44198223cfa0d8ef0",
+      "repo": "openclaw/remindctl",
+      "issue_number": 71,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9e41f96f4fa4ef155ac70420e30f9eba025c510e)",
+      "expected_head_sha": "9e41f96f4fa4ef155ac70420e30f9eba025c510e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T14:17:26.515Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sqlite3-wait-timeout",
+        "head_sha": "9e41f96f4fa4ef155ac70420e30f9eba025c510e",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
