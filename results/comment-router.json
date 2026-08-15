@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T09:26:49.260Z",
+  "updated_at": "2026-08-15T09:27:31.237Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-15T04:41:43Z:clawsweeper_needs_human",
-      "comment_id": "5154193917",
-      "comment_version_key": "5154193917:2026-08-15T04:41:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
-      "comment_created_at": "2026-08-02T00:30:44Z",
-      "comment_updated_at": "2026-08-15T04:41:43Z",
-      "comment_body_sha256": "92f7ea1ab1176e84b7cef8cc51c94e8cc90e2a3de54df368e65c3f379cd52b12",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117712,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner tuple (P1)** - This changes the action to v3.97.0 but leaves with.version at the v3.95.9 image and digest. The scanner therefore is not upgraded as a unit, and ci-workflow-guar...; Review finding: [P1] Synchronize the TruffleHog scanner tuple — .github/workflows/ci.yml:1071-1075 - [P1] Update the Android attestation guard — .github/workflows/android-release.... (sha=648f89a5fa1cf554c696e20402bc748560498ff6)",
-      "expected_head_sha": "648f89a5fa1cf554c696e20402bc748560498ff6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T04:45:21.046Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-b3ce8c744c",
-        "head_sha": "648f89a5fa1cf554c696e20402bc748560498ff6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120340:5222864682:2026-08-15T04:35:50Z:clawsweeper_needs_human",
       "comment_id": "5222864682",
@@ -32255,6 +32222,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T09:26:49.260Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105393:4951376381:2026-08-15T09:26:42Z:clawsweeper_auto_repair",
+      "comment_id": "4951376381",
+      "comment_version_key": "4951376381:2026-08-15T09:26:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/105393#issuecomment-4951376381",
+      "comment_created_at": "2026-07-12T13:36:48Z",
+      "comment_updated_at": "2026-08-15T09:26:42Z",
+      "comment_body_sha256": "4e79177829b791e9087907097ea410eb8b829b27aab62312db016c4b29fdbc84",
+      "repo": "openclaw/openclaw",
+      "issue_number": 105393,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=f9661bbc6b6a3e98f1d756181098cc7c6cdedd05)",
+      "expected_head_sha": "f9661bbc6b6a3e98f1d756181098cc7c6cdedd05",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-15T09:27:31.237Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/screenshot-no-focus-steal-headed-105357",
+        "head_sha": "f9661bbc6b6a3e98f1d756181098cc7c6cdedd05",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
