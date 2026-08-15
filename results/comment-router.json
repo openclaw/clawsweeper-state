@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T20:28:24.880Z",
+  "updated_at": "2026-08-15T20:29:50.019Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121442:5302894831:2026-08-15T15:24:28Z:re_review",
-      "comment_id": "5302894831",
-      "comment_version_key": "5302894831:2026-08-15T15:24:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121442#issuecomment-5302894831",
-      "comment_created_at": "2026-08-15T15:24:28Z",
-      "comment_updated_at": "2026-08-15T15:24:28Z",
-      "comment_body_sha256": "aaf379da93ba64c32a6cd6e31a2bc2ee95f3321ae51b1bb0fa6e9f34081b6c74",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121442,
-      "author": "zyw02",
-      "author_id": 59604424,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review requested for commit 2cc146d186d7e61e421e30262ffcd7b05b356866.\\n\\naddressed the p1 native-path finding: reasoningsummary !== undefined now participates in the reasoning guard, so reasoningsummary: null without an explicit effort emits the native reasoning payload with the model default effort and summary: null. added a regression test at packages/ai/src/providers/openai-chatgpt-responses.test.ts.\\n\\nvalidation: git diff --check passed; focused vitest and repository hooks could not run in this runner because node is unavailable on path. current-head ci is in progress",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T15:25:17.129Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/responses-reasoning-summary-null",
-        "head_sha": "2cc146d186d7e61e421e30262ffcd7b05b356866",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120299:5220307173:2026-08-15T15:17:38Z:clawsweeper_auto_repair",
       "comment_id": "5220307173",
@@ -31593,6 +31546,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/hovercard-hover-intent",
         "head_sha": "a0bb729b1d369e3437f9dad41e41caff6db4f830",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124228:5303712624:2026-08-15T20:29:03Z:clawsweeper_needs_human",
+      "comment_id": "5303712624",
+      "comment_version_key": "5303712624:2026-08-15T20:29:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124228#issuecomment-5303712624",
+      "comment_created_at": "2026-08-15T18:48:49Z",
+      "comment_updated_at": "2026-08-15T20:29:03Z",
+      "comment_body_sha256": "c067dde8fcc77e2847e47467b2188804ad2e2240678585faa3f165598fcf6459",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124228,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds a net 45 production lines; the new stored-label propagation and single account-decoration point are justified by their separate ownership boundaries, but should rema... (sha=7384f4c33f3f2eab54d0563f5a8228bce546918f)",
+      "expected_head_sha": "7384f4c33f3f2eab54d0563f5a8228bce546918f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T20:29:50.019Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/123112-session-label-account",
+        "head_sha": "7384f4c33f3f2eab54d0563f5a8228bce546918f",
         "cluster_id": null,
         "job_path": null
       }
