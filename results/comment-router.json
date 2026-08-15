@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T22:43:23.895Z",
+  "updated_at": "2026-08-15T22:43:42.548Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119525:5188980437:2026-08-15T17:47:31Z:clawsweeper_needs_human",
-      "comment_id": "5188980437",
-      "comment_version_key": "5188980437:2026-08-15T17:47:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119525#issuecomment-5188980437",
-      "comment_created_at": "2026-08-05T07:38:24Z",
-      "comment_updated_at": "2026-08-15T17:47:31Z",
-      "comment_body_sha256": "8d01407389e0fd6980bd6fc9469c47a3259659a6a2f4078577cf45245aee088a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119525,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch predates a current-main change to tools.ts; GitHub reports it mergeable, but the normal exact-head merge and CI gates should validate the queued merge result. (sha=cca783dc532834f06074292703c6e971a397ecb7)",
-      "expected_head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T17:49:54.613Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/memory-search-timeout-classification",
-        "head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-        "cluster_id": "automerge-openclaw-openclaw-119525",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119525:5189131617:2026-08-05T07:55:31Z:re_review",
       "comment_id": "5189131617",
@@ -31958,6 +31911,39 @@
         "kind": "pull_request",
         "branch": "fix/upgrade-survivor-convergence-20260808-exact",
         "head_sha": "9d64b5e4b4583929c8be1d573f0e9cd2ad505246",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/hermit:27:5304581391:2026-08-15T22:43:02Z:clawsweeper_auto_repair",
+      "comment_id": "5304581391",
+      "comment_version_key": "5304581391:2026-08-15T22:43:02Z",
+      "comment_url": "https://github.com/openclaw/hermit/pull/27#issuecomment-5304581391",
+      "comment_created_at": "2026-08-15T22:43:02Z",
+      "comment_updated_at": "2026-08-15T22:43:02Z",
+      "comment_body_sha256": "28a642a87931f87243d9b3c1b97cb46ca7298fec23d489f8694cb61841b019d0",
+      "repo": "openclaw/hermit",
+      "issue_number": 27,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5eb678afe3f07dd1742ab7e5551d21ea2e1497ab)",
+      "expected_head_sha": "5eb678afe3f07dd1742ab7e5551d21ea2e1497ab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T22:43:42.548Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inactivity-warn-addmember-errors",
+        "head_sha": "5eb678afe3f07dd1742ab7e5551d21ea2e1497ab",
         "cluster_id": null,
         "job_path": null
       }
