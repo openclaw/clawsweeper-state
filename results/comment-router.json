@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T11:49:09.632Z",
+  "updated_at": "2026-08-15T11:49:21.627Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4955384032:2026-07-13T07:13:52Z:re_review",
-      "comment_id": "4955384032",
-      "comment_version_key": "4955384032:2026-07-13T07:13:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4955384032",
-      "comment_created_at": "2026-07-13T07:13:52Z",
-      "comment_updated_at": "2026-07-13T07:13:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T07:33:25.529Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4956918809:2026-07-13T10:20:14Z:re_review",
       "comment_id": "4956918809",
@@ -30610,6 +30583,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T11:49:09.632Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw-tools:17:5298592194:2026-08-15T11:39:14Z:clawsweeper_needs_human",
+      "comment_id": "5298592194",
+      "comment_version_key": "5298592194:2026-08-15T11:39:14Z",
+      "comment_url": "https://github.com/openclaw/nix-openclaw-tools/pull/17#issuecomment-5298592194",
+      "comment_created_at": "2026-08-14T22:00:35Z",
+      "comment_updated_at": "2026-08-15T11:39:14Z",
+      "comment_body_sha256": "6108bbe87797b4720ef5328502cad659fcd524d7d7abc81ba82aa3f1be920bdb",
+      "repo": "openclaw/nix-openclaw-tools",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A single 30-second total-request deadline can turn a slow but continuously progressing QMD flake download from a delayed success into an updater failure. (sha=b767776d2127c50298504eac0e15ab5a4f3f92a5)",
+      "expected_head_sha": "b767776d2127c50298504eac0e15ab5a4f3f92a5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T11:49:21.627Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-http-timeout",
+        "head_sha": "b767776d2127c50298504eac0e15ab5a4f3f92a5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
