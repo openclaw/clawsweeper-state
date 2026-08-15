@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T08:27:04.720Z",
+  "updated_at": "2026-08-15T08:27:25.924Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123963:5300218977:2026-08-15T03:46:29Z:clawsweeper_needs_human",
-      "comment_id": "5300218977",
-      "comment_version_key": "5300218977:2026-08-15T03:46:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123963#issuecomment-5300218977",
-      "comment_created_at": "2026-08-15T03:02:15Z",
-      "comment_updated_at": "2026-08-15T03:46:29Z",
-      "comment_body_sha256": "a28885f9144c4cb7d8d6bdded533bca607f2b04bd10811eb60ff7782bee14f40",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123963,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Route every configured Slack operation through the bridge (P1)** - This newly surfaced concern is on code unchanged since the prior review: a bridge-only account is reported as configured here, but detached send...; Review finding: [P1] Route every configured Slack operation through the bridge — extensions/slack/src/account-configured.ts:7-12 - [P2] Reject user-identity host bridge configurat... (sha=ad1010d5523c499124e8fff5e0d038d5f8927e01)",
-      "expected_head_sha": "ad1010d5523c499124e8fff5e0d038d5f8927e01",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T03:53:07.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/connect-slack-transport-poc",
-        "head_sha": "ad1010d5523c499124e8fff5e0d038d5f8927e01",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123971:5300278126:2026-08-15T03:39:13Z:clawsweeper_needs_human",
       "comment_id": "5300278126",
@@ -32630,6 +32597,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123239:5285856812:2026-08-15T08:26:26Z:clawsweeper_needs_human",
+      "comment_id": "5285856812",
+      "comment_version_key": "5285856812:2026-08-15T08:26:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123239#issuecomment-5285856812",
+      "comment_created_at": "2026-08-13T20:12:18Z",
+      "comment_updated_at": "2026-08-15T08:26:26Z",
+      "comment_body_sha256": "1995aae67c369d4d187b2f6a0bcde7ead24f32f29b4a49901d4f1b32e1f007e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123239,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The change alters persisted execution and attempt terminal-state semantics; exact-head protected checks should validate the current merge result before landing. (sha=d4df27f6d7ffc266d35f57887fd1825dbf479489)",
+      "expected_head_sha": "d4df27f6d7ffc266d35f57887fd1825dbf479489",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T08:27:25.924Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workboard-stale-execution-122911",
+        "head_sha": "d4df27f6d7ffc266d35f57887fd1825dbf479489",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
