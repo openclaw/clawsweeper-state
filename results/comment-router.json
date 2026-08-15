@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T19:06:50.809Z",
+  "updated_at": "2026-08-15T19:07:02.079Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5302418700:2026-08-15T13:21:16Z:re_review",
-      "comment_id": "5302418700",
-      "comment_version_key": "5302418700:2026-08-15T13:21:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5302418700",
-      "comment_created_at": "2026-08-15T13:21:16Z",
-      "comment_updated_at": "2026-08-15T13:21:16Z",
-      "comment_body_sha256": "aa9cf03148cafea0899d4aa2fb39098144f9830003a9269d64dcdca212b685d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T13:21:54.533Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "9e3ef1d6604b9c666daa3be61f095f5e85290cb7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123597:5292194418:2026-08-14T10:18:55Z:re_review",
       "comment_id": "5292194418",
@@ -32203,6 +32156,39 @@
         "kind": "pull_request",
         "branch": "test/trim-full-release-source-checks",
         "head_sha": "96b05c5d83bcd3294af4b5f37c3ca0117e54c237",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2944:5300220146:2026-08-15T19:06:02Z:clawsweeper_auto_repair",
+      "comment_id": "5300220146",
+      "comment_version_key": "5300220146:2026-08-15T19:06:02Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2944#issuecomment-5300220146",
+      "comment_created_at": "2026-08-15T03:02:33Z",
+      "comment_updated_at": "2026-08-15T19:06:02Z",
+      "comment_body_sha256": "9e2079dcac783eebea74924361ad9f66cc03d41e606bd30f15f872d4fd43878e",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2944,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b0c62e8cc745ee8a8d79d7b62fa9e58ca632e2c7)",
+      "expected_head_sha": "b0c62e8cc745ee8a8d79d7b62fa9e58ca632e2c7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T19:07:02.079Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/codex-oauth-hardening-pr",
+        "head_sha": "b0c62e8cc745ee8a8d79d7b62fa9e58ca632e2c7",
         "cluster_id": null,
         "job_path": null
       }
