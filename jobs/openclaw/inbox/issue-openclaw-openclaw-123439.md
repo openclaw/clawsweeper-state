@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Gateway cron-binding availability bug in https://github.com/openclaw/openclaw/issues/123439. First establish a focused failing regression or instrumentation path with a per-agent session-store configuration and many discovered/registered agent databases. Keep the session-store ownership, SQLite target, and symlink-validation contracts intact. Repair `broadcastCronBoundSessionChanges` so a cron binding event does not synchronously materialize a session row and trigger all-agent store discovery; its existing event contract says clients perform the canonical refresh and row fields are optional. Do not add TTL/mtime polling or weaken identity checks. Add regression coverage that cron binding broadcasts retain their session key/reason while avoiding synchronous store discovery. Do not edit CHANGELOG.md; put concise release-note context in the PR body. Stop and return to triage if preserving the event payload requires a new compatibility or product decision.
+Repair https://github.com/openclaw/openclaw/issues/123439. First establish a failing high-cardinality or spy-based regression showing that a cron binding change invokes session-store discovery. Change the cron broadcaster to emit its session key and reason without materializing a session row where the client already schedules a canonical list refresh. Preserve event delivery semantics; do not add a cache, config option, or migration. Measure restart-recovery lifecycle lookup separately and stop for follow-up if it needs a broader owner-boundary change. Add focused behavioral regression coverage and include release-note context in the PR body without editing CHANGELOG.md.
 
 Likely files:
 
 - src/gateway/server-cron.ts
 - src/gateway/server-cron.test.ts
-- src/gateway/session-utils-store.ts
+- ui/src/lib/sessions/index.ts
+- src/gateway/session-utils-store-lookup.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/server-cron.test.ts
 - node scripts/run-vitest.mjs src/gateway/session-utils.test.ts
-- git diff --check
+- Demonstrate that the new regression fails before the change because cron binding broadcasts resolve session stores, then passes after the notification-only repair.
 
 ## Operator Prompt
 
