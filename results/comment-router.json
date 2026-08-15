@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T06:15:53.990Z",
+  "updated_at": "2026-08-15T06:17:02.919Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:67946:4324220794:2026-08-15T00:37:34Z:clawsweeper_auto_repair",
-      "comment_id": "4324220794",
-      "comment_version_key": "4324220794:2026-08-15T00:37:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/67946#issuecomment-4324220794",
-      "comment_created_at": "2026-04-27T04:52:34Z",
-      "comment_updated_at": "2026-08-15T00:37:34Z",
-      "comment_body_sha256": "854ec74fd00b333dba52c84e4f52e37c11d918fe5d35700767d9f7b5ff76038b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 67946,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=99eb96710c3889c9b6d127457a7654f7f4f274a9)",
-      "expected_head_sha": "99eb96710c3889c9b6d127457a7654f7f4f274a9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T00:48:49.398Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stale-subagent-lineage-depth",
-        "head_sha": "99eb96710c3889c9b6d127457a7654f7f4f274a9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:77736:4377375656:2026-08-15T00:40:34Z:clawsweeper_needs_human",
       "comment_id": "4377375656",
@@ -33208,6 +33175,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-15T06:15:47Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-15T06:15:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-15T06:15:47Z",
+      "comment_body_sha256": "ef0ecfe845a729b9bd86a738b4d067544a6a7d67f426de0aaa581a3c1f599f20",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner tuple (P1)** - This changes the action to v3.97.0 but leaves with.version on the v3.95.9 digest. The CI guard still requires the complete v3.95.9 tuple, so the security-fast wo...; Review finding: [P1] Synchronize the TruffleHog scanner tuple — .github/workflows/ci.yml:1076 - [P1] Update the Android attestation guard — .github/workflows/android-release.yml:3... (sha=507b8820804f5d39e63de8a5bb79616121e2f296)",
+      "expected_head_sha": "507b8820804f5d39e63de8a5bb79616121e2f296",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T06:17:02.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "7294dbf17d7aca46333baea57e1ca6b91c7daf05",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
