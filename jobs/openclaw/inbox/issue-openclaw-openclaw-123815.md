@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven external-native Signal attachment failure for https://github.com/openclaw/openclaw/issues/123815. First prove with a real signal-cli 0.14.7 native HTTP JSON-RPC daemon that RFC 2397 data-URI attachments are accepted, including the bounded request-size behavior; stop without a production patch if that contract cannot be proven. If proven, keep the repair in the Signal plugin: serialize only external-native attachments after the shared resolver, preserve managed-native pathname behavior and container REST conversion, retain raw-byte limits and safe MIME/filename handling, and do not loosen media-store permissions or add a config option. Add a regression through the native HTTP boundary that checks decoded bytes and quote-fallback replay. Add release-note context to the PR body; do not edit CHANGELOG.md.
+Repair the source-proven external-native Signal attachment failure for https://github.com/openclaw/openclaw/issues/123815. First directly verify with signal-cli 0.14.7 that its native HTTP JSON-RPC send method accepts RFC 2397 data-URI attachments; stop without a production patch if that contract cannot be proven. If proven, keep the fix in the Signal plugin: serialize only external-native attachments after the shared resolver, preserve managed-native pathname behavior and container REST conversion, retain raw-byte limits and safe filename/MIME handling, and do not loosen media-store permissions or add a config option. Add a regression that fails on current main through the native HTTP boundary and validates media bytes plus quote-fallback behavior. Include release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 

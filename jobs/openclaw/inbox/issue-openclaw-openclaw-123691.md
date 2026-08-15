@@ -67,13 +67,12 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven external-ownership failure in https://github.com/openclaw/openclaw/issues/123691. Keep the state ownership gate fail-closed for unmarked writers. In the Gateway audit worker, derive database options from the inherited process environment while overriding only OPENCLAW_STATE_DIR; do not add a config option, fallback, migration, or parallel write path. Add a real worker-thread regression that claims ownership under OPENCLAW_SUPERVISOR_MODE=external, verifies an audit event persists without errors, and verifies an unmarked writer remains rejected. Check the linked closed-unmerged attempt https://github.com/openclaw/openclaw/pull/123812 only as prior context. Include release-note context in the PR body if user-visible, but do not edit CHANGELOG.md.
+Repair the current-main audit-worker external-ownership bug described by https://github.com/openclaw/openclaw/issues/123691. Keep the fix inside the audit writer owner boundary: preserve inherited worker environment values while overriding only OPENCLAW_STATE_DIR in src/audit/audit-event-writer.worker.ts. Add a real worker-thread regression in src/audit/audit-event-writer.test.ts that claims external ownership, proves a marker-bearing worker persists an audit event with no ownership error, and proves an unmarked worker remains refused without a write. Treat https://github.com/openclaw/openclaw/pull/123812 only as closed-unmerged source context; do not revive it. Do not change ownership policy, add config, alter SQLite schema, weaken unmarked-writer fencing, or edit CHANGELOG.md; put concise release-note context in the PR body.
 
 Likely files:
 
 - src/audit/audit-event-writer.worker.ts
 - src/audit/audit-event-writer.test.ts
-- src/state/openclaw-state-ownership.test.ts
 
 Validation:
 
