@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-15T22:46:20.942Z",
+  "updated_at": "2026-08-15T22:46:56.930Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119525:5237593390:2026-08-10T08:11:55Z:maintainer_approve_automerge",
-      "comment_id": "5237593390",
-      "comment_version_key": "5237593390:2026-08-10T08:11:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119525#issuecomment-5237593390",
-      "comment_created_at": "2026-08-10T08:11:55Z",
-      "comment_updated_at": "2026-08-10T08:11:55Z",
-      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119525,
-      "author": "momothemage",
-      "author_id": 35096042,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T17:49:54.613Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/memory-search-timeout-classification",
-        "head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-        "cluster_id": "automerge-openclaw-openclaw-119525",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "pending",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "remove_label",
-          "status": "pending",
-          "label": "clawsweeper:merge-ready",
-          "job_path": null
-        },
-        {
-          "action": "merge",
-          "status": "blocked",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119525:5253079575:2026-08-11T12:21:26Z:maintainer_approve_automerge",
       "comment_id": "5253079575",
@@ -31936,6 +31877,39 @@
         "kind": "pull_request",
         "branch": "agent/models-picker-prepared-browse",
         "head_sha": "2a3d60caffe5c2a47136ea83d07d838334f222a7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:46:5304592429:2026-08-15T22:46:16Z:clawsweeper_needs_human",
+      "comment_id": "5304592429",
+      "comment_version_key": "5304592429:2026-08-15T22:46:16Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/46#issuecomment-5304592429",
+      "comment_created_at": "2026-08-15T22:46:16Z",
+      "comment_updated_at": "2026-08-15T22:46:16Z",
+      "comment_body_sha256": "05d20b932ef76dd1e8592c52bf79c12a5134c8a08c2c57a39511d361d63d5c05",
+      "repo": "openclaw/clawscan",
+      "issue_number": 46,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The copied terminal output proves an httptest unit scenario, not after-fix behavior through a real production-boundary benchmark run. After add... (sha=d3fcd079791b4f69a41312462f23a9742605dbd3)",
+      "expected_head_sha": "d3fcd079791b4f69a41312462f23a9742605dbd3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T22:46:56.930Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hf-retry-context",
+        "head_sha": "d3fcd079791b4f69a41312462f23a9742605dbd3",
         "cluster_id": null,
         "job_path": null
       }
