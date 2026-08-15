@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T04:27:57.833Z",
+  "updated_at": "2026-08-15T04:28:24.952Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123855:5298833439:2026-08-14T22:35:16Z:re_review",
-      "comment_id": "5298833439",
-      "comment_version_key": "5298833439:2026-08-14T22:35:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123855#issuecomment-5298833439",
-      "comment_created_at": "2026-08-14T22:35:16Z",
-      "comment_updated_at": "2026-08-14T22:35:16Z",
-      "comment_body_sha256": "4483e4a94c904b6cc5aa777f486e2ba64c30ce6e15f91e9bf53862ed95567d40",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123855,
-      "author": "hartmark",
-      "author_id": 12826053,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T22:36:24.926Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-embeddings-billing-cooldown",
-        "head_sha": "4052a40b4b7334d37f1851498ec518f54d262858",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-14T22:35:34Z:clawsweeper_needs_human",
       "comment_id": "5154193917",
@@ -33003,6 +32956,39 @@
         "kind": "pull_request",
         "branch": "test/remove-claws-test-seams",
         "head_sha": "213669fad6911c7adc6c43b290b99b154ef44e82",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:380:5298017891:2026-08-15T04:23:12Z:clawsweeper_auto_repair",
+      "comment_id": "5298017891",
+      "comment_version_key": "5298017891:2026-08-15T04:23:12Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/380#issuecomment-5298017891",
+      "comment_created_at": "2026-08-14T20:46:52Z",
+      "comment_updated_at": "2026-08-15T04:23:12Z",
+      "comment_body_sha256": "3cfb328c907a41eec8da7c646370746ce78095b0dfdae0ff413b502317edf491",
+      "repo": "steipete/oracle",
+      "issue_number": 380,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7840c0cbe50be0dad5c73d01a5ce7603bc533763)",
+      "expected_head_sha": "7840c0cbe50be0dad5c73d01a5ce7603bc533763",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T04:28:24.952Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/restore-visible-browser-window",
+        "head_sha": "7840c0cbe50be0dad5c73d01a5ce7603bc533763",
         "cluster_id": null,
         "job_path": null
       }
