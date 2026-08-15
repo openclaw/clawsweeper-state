@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T16:29:57.505Z",
+  "updated_at": "2026-08-15T16:31:20.609Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123905:5299576295:2026-08-15T11:26:32Z:clawsweeper_auto_repair",
-      "comment_id": "5299576295",
-      "comment_version_key": "5299576295:2026-08-15T11:26:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123905#issuecomment-5299576295",
-      "comment_created_at": "2026-08-15T00:42:17Z",
-      "comment_updated_at": "2026-08-15T11:26:32Z",
-      "comment_body_sha256": "2c50a3d3cc1d5b215b54141557299e1aca3fd397a78f45bd004c8c182c1321b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123905,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7aead004d72c4a317bfe6c780152be7e1dbbb08c)",
-      "expected_head_sha": "7aead004d72c4a317bfe6c780152be7e1dbbb08c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T11:31:59.742Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/main-session-tombstone-silent-block",
-        "head_sha": "7aead004d72c4a317bfe6c780152be7e1dbbb08c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124056:5300944378:2026-08-15T11:27:32Z:clawsweeper_needs_human",
       "comment_id": "5300944378",
@@ -31466,6 +31433,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124162:5303165250:2026-08-15T16:30:34Z:re_review",
+      "comment_id": "5303165250",
+      "comment_version_key": "5303165250:2026-08-15T16:30:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5303165250",
+      "comment_created_at": "2026-08-15T16:30:34Z",
+      "comment_updated_at": "2026-08-15T16:30:34Z",
+      "comment_body_sha256": "b3efd80f7000b8e290a80ee2b2aa19fc1b8662aa5c82ab45b65abe8161ac732e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124162,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T16:31:15.828Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-aware-resume-breaker-122950",
+        "head_sha": "e3623cae545a2bed23a34bfef39c70759e6476a5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
