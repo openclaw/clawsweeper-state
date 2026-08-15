@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T04:04:47.832Z",
+  "updated_at": "2026-08-15T04:05:11.065Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123837:5298603873:2026-08-14T22:02:07Z:re_review",
-      "comment_id": "5298603873",
-      "comment_version_key": "5298603873:2026-08-14T22:02:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123837#issuecomment-5298603873",
-      "comment_created_at": "2026-08-14T22:02:07Z",
-      "comment_updated_at": "2026-08-14T22:02:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123837,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T22:02:48.411Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/telegram-copy-text-buttons",
-        "head_sha": "4b0b58a02d24f3f3bcec9649eb831e27ebc11af7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112473:5041316179:2026-07-22T02:58:35Z:re_review",
       "comment_id": "5041316179",
@@ -32794,6 +32747,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T04:04:47.832Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:44:5300441701:2026-08-15T04:04:29Z:clawsweeper_needs_human",
+      "comment_id": "5300441701",
+      "comment_version_key": "5300441701:2026-08-15T04:04:29Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/44#issuecomment-5300441701",
+      "comment_created_at": "2026-08-15T04:04:29Z",
+      "comment_updated_at": "2026-08-15T04:04:29Z",
+      "comment_body_sha256": "9efe2eef76e196efe8f09dc1c09afd536cf6e338405ff6bfabc74de6f52bd6e7",
+      "repo": "openclaw/clawscan",
+      "issue_number": 44,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The structured autoreview helper could not run because the restricted environment has no usable temporary directory; direct source review found no discrete patch defect. (sha=7d98ef604f47a6f287718fef717ff9a115b1a283)",
+      "expected_head_sha": "7d98ef604f47a6f287718fef717ff9a115b1a283",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T04:05:11.065Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/fix-clawhub-judge-auth",
+        "head_sha": "7d98ef604f47a6f287718fef717ff9a115b1a283",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
