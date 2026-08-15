@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the runtime-context carrier ordering on current main for full-replay tool loops. At the embedded LLM boundary, keep the current-turn carrier directly after the active user so consecutive requests retain P+U+X -> P+U+X+Y ordering; continue stripping historical carriers. Do not add a config option, provider-specific filtering, or a parallel fallback path. Check overflow-retry insertion in `src/agents/embedded-agent-runner/run/attempt-llm-boundary.ts` and preserve its behavior. First establish the current failing same-turn sequence, then update the helper and focused regression coverage; stop if the change requires an external provider API contract or broader policy decision. Include release-note context in the PR body, not CHANGELOG.md.
+Repair the carrier-placement bug described by https://github.com/openclaw/openclaw/issues/123652. First establish the current P+U+X → P+U+Y+X ordering on main. Replace absolute-tail relocation with one canonical wire-only placement immediately after the active user, preserving historical-carrier stripping and retry behavior; do not add a provider-specific branch, configuration option, fallback, or Responses filter. Add a regression that fails before the change and proves P+U+X → P+U+X+Y through the same-turn tool loop, preferably at the LLM/provider boundary. Use https://github.com/openclaw/openclaw/pull/124107 only as source context, not as a branch to revive. Do not edit CHANGELOG.md; put concise release-note context in the PR body. Obtain a redacted real Azure/OpenAI trace if credentials are available, otherwise explicitly record that proof gap.
 
 Likely files:
 
 - src/agents/internal-runtime-context.ts
-- src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
 - src/agents/internal-runtime-context.test.ts
 - src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/internal-runtime-context.test.ts
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt-session-boundary.test.ts
 - node scripts/run-vitest.mjs run --config test/vitest/vitest.agents-embedded-agent-run.config.ts src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- node scripts/run-vitest.mjs run --config test/vitest/vitest.unit-fast.config.ts src/agents/internal-runtime-context.test.ts
+- git diff --check
 
 ## Operator Prompt
 
