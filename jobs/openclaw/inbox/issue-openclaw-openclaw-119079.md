@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Talk transcript persistence bug in https://github.com/openclaw/openclaw/issues/119079. First capture a failing focused regression with a fractional client timestamp against a STRICT agent session store. Normalize only the derived SQLite transcript-root/session metadata clock at its shared owner boundary; preserve the original fractional timestamp in the transcript event and retain a safe server-time fallback for invalid or out-of-range values. Use https://github.com/openclaw/openclaw/pull/119119 only as closed-unmerged reference material, not as a branch to revive. Likely files: src/config/sessions/session-accessor.sqlite-transcript-state.ts, src/gateway/server-methods/talk-client.test.ts, and possibly src/talk/client-voice-session.ts. Do not change the SQLite schema version, add config, or round the user-visible transcript timestamp. Run focused tests and record user-visible release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the fractional Talk transcript timestamp bug for https://github.com/openclaw/openclaw/issues/119079. Keep the public Talk timestamp accepted and preserve it in transcript message JSON if needed, but normalize the timestamp used by session-root SQLite persistence to a finite nonnegative integer before it reaches STRICT session_nodes or session_windows columns. Add a real temporary-agent-DB regression through talk.client.transcript using a fractional timestamp; assert RPC success, persisted message behavior, and integer SQLite timestamp cells. Cover initial and existing session-root behavior as appropriate. Do not add config, schema-version changes, runtime fallbacks, or CHANGELOG.md edits. Treat https://github.com/openclaw/openclaw/issues/110237 only as an adjacent fractional-STRICT invariant, not as the same write path.
 
 Likely files:
 
@@ -77,9 +77,8 @@ Likely files:
 
 Validation:
 
-- pnpm test src/gateway/server-methods/talk-client.test.ts
-- pnpm test src/talk/client-voice-session.test.ts
-- pnpm test src/config/sessions/session-accessor.test.ts
+- node scripts/run-vitest.mjs src/gateway/server-methods/talk-client.test.ts
+- git diff --check
 
 ## Operator Prompt
 
