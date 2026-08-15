@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T20:26:52.809Z",
+  "updated_at": "2026-08-15T20:27:29.120Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123064:5277811095:2026-08-15T15:20:04Z:clawsweeper_needs_human",
-      "comment_id": "5277811095",
-      "comment_version_key": "5277811095:2026-08-15T15:20:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123064#issuecomment-5277811095",
-      "comment_created_at": "2026-08-13T08:16:27Z",
-      "comment_updated_at": "2026-08-15T15:20:04Z",
-      "comment_body_sha256": "4d73122ccf78bcddf3169538015d90433c87b8ee1bc96cbfc31db369e8fa6003",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123064,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing consumers that currently receive only a rejected connect promise will newly receive onError followed by onClose(\"error\"); this visible callback ordering needs maintainer acce... (sha=66486bacca8e8d213d8e60bf3cd430a3f5924263)",
-      "expected_head_sha": "66486bacca8e8d213d8e60bf3cd430a3f5924263",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T15:23:54.728Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/xai-voice-bridge-connect-failure",
-        "head_sha": "66486bacca8e8d213d8e60bf3cd430a3f5924263",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124192:5302891279:2026-08-15T15:23:34Z:clawsweeper_needs_human",
       "comment_id": "5302891279",
@@ -31596,6 +31563,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T20:26:52.809Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124191:5302901965:2026-08-15T20:26:41Z:clawsweeper_auto_repair",
+      "comment_id": "5302901965",
+      "comment_version_key": "5302901965:2026-08-15T20:26:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124191#issuecomment-5302901965",
+      "comment_created_at": "2026-08-15T15:26:17Z",
+      "comment_updated_at": "2026-08-15T20:26:41Z",
+      "comment_body_sha256": "4f2271cc475b7042fa5ef0e9519633c6c1464a9a9e98c8bfb1cfd6e1c5c149b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124191,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=16fd43b2ba91639b925ead27eff26e2a0a35b33e)",
+      "expected_head_sha": "16fd43b2ba91639b925ead27eff26e2a0a35b33e",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-15T20:27:29.120Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-prompt-cache-prefix",
+        "head_sha": "16fd43b2ba91639b925ead27eff26e2a0a35b33e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
