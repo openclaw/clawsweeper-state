@@ -67,21 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the shared outbound-delivery ownership invariant behind https://github.com/openclaw/openclaw/issues/124279. When a normal message-tool or synchronous caller receives a terminal error proving platform dispatch did not begin, its queue entry must not remain eligible for reconnect recovery; an independent agent retry must not create a second recipient-visible send. Preserve recovery for explicitly durable producer-owned stable intents (deliveryIntentId with completion retention or reusable intent), including existing adapter-availability and stable pre-dispatch retry contracts. Do not special-case WhatsApp or dedupe by text. Trace caller ownership through src/agents/tools/message-tool-execution.ts, src/infra/outbound/outbound-send-service.ts, and src/infra/outbound/deliver-queue*.ts; repair at the shared queue owner. First capture a failing original-order regression (failure returned, reconnect drain, independent retry) that fails before the fix, then prove at most one provider send and an accurate caller result. Run focused outbound tests; do not edit CHANGELOG.md.
+Repair the shared message-tool/outbound delivery ownership bug in #124279. When a normal message-tool send is reported as proven not sent and the agent retries the same request in the same run, both attempts must share one durable delivery owner so reconnect recovery and the retry cannot produce two provider sends. Preserve the stable-intent behavior that retries a proven pre-dispatch failure for cron and other producer-owned recovery. Do not add WhatsApp-specific text dedupe or globally suppress failDeliveryBeforePlatformSend. Trace src/agents/tools/message-tool-execution.ts, src/infra/outbound/message-action-send.ts, and src/infra/outbound/deliver-queue*.ts; add an original-order regression covering pre-dispatch failure returned to the agent, reconnect drain, identical retry, at most one transport send, and a tool outcome that accurately describes the owner. Preserve explicit caller idempotency and distinct successful identical sends.
 
 Likely files:
 
-- src/infra/outbound/deliver-queue-execute.ts
-- src/infra/outbound/delivery-queue-storage.ts
-- src/infra/outbound/deliver.queue-adapter-availability.test.ts
+- src/agents/tools/message-tool-execution.ts
+- src/infra/outbound/message-action-send.ts
+- src/infra/outbound/deliver-queue.ts
 - src/infra/outbound/deliver.queue-integration.test.ts
+- src/agents/tools/message-tool.test.ts
 
 Validation:
 
-- pnpm test src/infra/outbound/deliver.queue-adapter-availability.test.ts
-- pnpm test src/infra/outbound/deliver.queue-integration.test.ts
-- Run the focused new original-order regression test that proves at most one provider send.
-- pnpm test src/agents/tools/message-tool.test.ts if tool-level behavior changes.
+- node scripts/run-vitest.mjs src/infra/outbound/deliver.queue-integration.test.ts
+- node scripts/run-vitest.mjs src/infra/outbound/deliver.queue-adapter-availability.test.ts
+- node scripts/run-vitest.mjs src/agents/tools/message-tool.test.ts
 
 ## Operator Prompt
 
