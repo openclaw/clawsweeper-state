@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T05:22:11.880Z",
+  "updated_at": "2026-08-15T05:22:57.588Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123864:5298827849:2026-08-14T23:26:53Z:clawsweeper_auto_repair",
-      "comment_id": "5298827849",
-      "comment_version_key": "5298827849:2026-08-14T23:26:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123864#issuecomment-5298827849",
-      "comment_created_at": "2026-08-14T22:34:25Z",
-      "comment_updated_at": "2026-08-14T23:26:53Z",
-      "comment_body_sha256": "f1ad4ee5757c7f0ad550ade906d57fc6e9a2c822b5d474e740739eb22e90f990",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123864,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9f06cc0a9c9dd8b916759d03c0c3717c7cfee916)",
-      "expected_head_sha": "9f06cc0a9c9dd8b916759d03c0c3717c7cfee916",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T23:27:41.831Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-reset-lifecycle-cas",
-        "head_sha": "9f06cc0a9c9dd8b916759d03c0c3717c7cfee916",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123681:5294336655:2026-08-14T23:27:00Z:clawsweeper_auto_repair",
       "comment_id": "5294336655",
@@ -33098,6 +33065,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123991:5300443899:2026-08-15T05:22:12Z:clawsweeper_needs_human",
+      "comment_id": "5300443899",
+      "comment_version_key": "5300443899:2026-08-15T05:22:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123991#issuecomment-5300443899",
+      "comment_created_at": "2026-08-15T04:05:05Z",
+      "comment_updated_at": "2026-08-15T05:22:12Z",
+      "comment_body_sha256": "99372bcf7f2dbd10347e8645e3bd36e612eb89507a898928b935a694d1979db6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123991,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Close each started MCP session after a peer startup failure (P1)** - Promise.all rejects when either session fails to start and skips the end_session block, even if the other unrestricted CUA session started suc...; Review finding: [P1] Close each started MCP session after a peer startup failure — extensions/cua-computer/src/mcp-driver-client.ts:610-618 - [medium] Partial startup can skip tru... (sha=b9af4197832454fb8549a8b75887ad3124be755a)",
+      "expected_head_sha": "b9af4197832454fb8549a8b75887ad3124be755a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T05:22:57.588Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cu-live-gate",
+        "head_sha": "b9af4197832454fb8549a8b75887ad3124be755a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
