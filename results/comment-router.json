@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T09:20:32.709Z",
+  "updated_at": "2026-08-15T09:20:37.311Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123975:5300523805:2026-08-15T04:27:18Z:re_review",
-      "comment_id": "5300523805",
-      "comment_version_key": "5300523805:2026-08-15T04:27:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123975#issuecomment-5300523805",
-      "comment_created_at": "2026-08-15T04:27:18Z",
-      "comment_updated_at": "2026-08-15T04:27:18Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123975,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T04:27:42.113Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/tsgo-stall-timeout",
-        "head_sha": "13b127b4889124df5cb385a3d2d38c135ffffcc3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123975:5300285477:2026-08-15T04:26:53Z:clawsweeper_needs_human",
       "comment_id": "5300285477",
@@ -32424,6 +32377,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/npm-d54b153039",
         "head_sha": "fab654856a8e225005aea1d84fd5fc7ea029fe33",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118720:5168149980:2026-08-15T09:10:33Z:clawsweeper_needs_human",
+      "comment_id": "5168149980",
+      "comment_version_key": "5168149980:2026-08-15T09:10:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118720#issuecomment-5168149980",
+      "comment_created_at": "2026-08-03T15:07:52Z",
+      "comment_updated_at": "2026-08-15T09:10:33Z",
+      "comment_body_sha256": "8830b4812297d2655ec695206e48f0770eacbb6e9a47ba0212992b3bb0ee4524",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118720,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing plain node-plugin calls can wait up to 35 seconds, rather than 30, if the Gateway itself is unresponsive; that compatibility and availability tradeoff needs explicit acceptan... (sha=397f627dd78593787cfd04c0dfd11bdbac6d8b02)",
+      "expected_head_sha": "397f627dd78593787cfd04c0dfd11bdbac6d8b02",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T09:20:37.311Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/node-plugin-tool-invoke-deadline",
+        "head_sha": "397f627dd78593787cfd04c0dfd11bdbac6d8b02",
         "cluster_id": null,
         "job_path": null
       }
