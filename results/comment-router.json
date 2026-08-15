@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T01:50:08.073Z",
+  "updated_at": "2026-08-15T01:51:26.953Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123676:5297503704:2026-08-14T19:48:53Z:re_review",
-      "comment_id": "5297503704",
-      "comment_version_key": "5297503704:2026-08-14T19:48:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123676#issuecomment-5297503704",
-      "comment_created_at": "2026-08-14T19:48:53Z",
-      "comment_updated_at": "2026-08-14T19:48:53Z",
-      "comment_body_sha256": "bbef86bcc21788c1697dcc958527d15fd5bbbed052de64298078cf6c9624adf2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123676,
-      "author": "felirami",
-      "author_id": 6752178,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T19:55:28.548Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cursor/subagent-attachment-file-paths-8a8e",
-        "head_sha": "d9460ac5db9b9d4a14800c2249be7fbdd7a9c582",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123676:5294465086:2026-08-14T19:54:48Z:clawsweeper_needs_human",
       "comment_id": "5294465086",
@@ -32620,6 +32573,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-b3ce8c744c",
         "head_sha": "ea16b510c00293c0f575e78987961b7ac7ad7b8e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121081:5232626324:2026-08-15T01:50:46Z:clawsweeper_needs_human",
+      "comment_id": "5232626324",
+      "comment_version_key": "5232626324:2026-08-15T01:50:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121081#issuecomment-5232626324",
+      "comment_created_at": "2026-08-09T16:47:58Z",
+      "comment_updated_at": "2026-08-15T01:50:46Z",
+      "comment_body_sha256": "6969a8acb20175979c5f0de782cdfbc390c9509c0ce5958e6c526e8dc4b2b654",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121081,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes SSH recovery from attempting a tunnel with an old receipt to returning a typed failure when the current bundle is unavailable or mismatched; that protects o... (sha=5150bf9bbb37a7c758f190f803a45b9b12acdec7)",
+      "expected_head_sha": "5150bf9bbb37a7c758f190f803a45b9b12acdec7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T01:51:26.953Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-worker-current-bundle-tunnel-admission",
+        "head_sha": "5150bf9bbb37a7c758f190f803a45b9b12acdec7",
         "cluster_id": null,
         "job_path": null
       }
