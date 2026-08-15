@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T03:05:09.438Z",
+  "updated_at": "2026-08-15T03:05:10.251Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113750:5298216234:2026-08-14T21:11:54Z:re_review",
-      "comment_id": "5298216234",
-      "comment_version_key": "5298216234:2026-08-14T21:11:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113750#issuecomment-5298216234",
-      "comment_created_at": "2026-08-14T21:11:54Z",
-      "comment_updated_at": "2026-08-14T21:11:54Z",
-      "comment_body_sha256": "4164524df1a7a6f3dfd57f198b3e4b1ba2a679a1ee99700f0e761d22606f1a8a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113750,
-      "author": "helloember99",
-      "author_id": 260029553,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T21:17:53.675Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/media-cron-detached-failure-state",
-        "head_sha": "1a9f85a5f1a65fc0f0fd1106e83880789cd522c8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113750:5296345444:2026-08-14T17:37:06Z:re_review",
       "comment_id": "5296345444",
@@ -32755,6 +32708,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T03:05:09.438Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123946:5300136582:2026-08-15T03:04:24Z:clawsweeper_needs_human",
+      "comment_id": "5300136582",
+      "comment_version_key": "5300136582:2026-08-15T03:04:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123946#issuecomment-5300136582",
+      "comment_created_at": "2026-08-15T02:42:59Z",
+      "comment_updated_at": "2026-08-15T03:04:24Z",
+      "comment_body_sha256": "0a2820da9482b605b2039a2d73aa18cd001da656c0d6f48e34ee69c0631007c0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123946,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production grows by one equality term; it should remain inline at the coordinator because extracting a second identity representation would add policy surface rather than remove it. (sha=7372bba47bd432041bd8b288581eed387aa586a1)",
+      "expected_head_sha": "7372bba47bd432041bd8b288581eed387aa586a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T03:05:10.251Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa-refill-worker-lifecycle-v2",
+        "head_sha": "7372bba47bd432041bd8b288581eed387aa586a1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
