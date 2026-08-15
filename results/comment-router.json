@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T02:52:05.840Z",
+  "updated_at": "2026-08-15T02:52:07.939Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123814:5297871450:2026-08-14T20:43:49Z:clawsweeper_auto_repair",
-      "comment_id": "5297871450",
-      "comment_version_key": "5297871450:2026-08-14T20:43:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123814#issuecomment-5297871450",
-      "comment_created_at": "2026-08-14T20:29:41Z",
-      "comment_updated_at": "2026-08-14T20:43:49Z",
-      "comment_body_sha256": "d4585c9fdb2f3881603675d9c178bf30da74420a5977eaa889a35e4ab577198f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123814,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9cb2e14d4ef8df52fd84c1b679aae00bf4daef9b)",
-      "expected_head_sha": "9cb2e14d4ef8df52fd84c1b679aae00bf4daef9b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T20:44:38.998Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-duplicate-turn-merge-123792",
-        "head_sha": "9cb2e14d4ef8df52fd84c1b679aae00bf4daef9b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123588:5291883974:2026-08-14T09:43:41Z:re_review",
       "comment_id": "5291883974",
@@ -32903,6 +32870,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T02:52:05.840Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123956:5300177153:2026-08-15T02:51:24Z:clawsweeper_needs_human",
+      "comment_id": "5300177153",
+      "comment_version_key": "5300177153:2026-08-15T02:51:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123956#issuecomment-5300177153",
+      "comment_created_at": "2026-08-15T02:51:24Z",
+      "comment_updated_at": "2026-08-15T02:51:24Z",
+      "comment_body_sha256": "6d809a4930f31e8c398c573907b1ced19c7e218df0d88420728c0f6b548f5c17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123956,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as dirty; resolving it mechanically would reapply a change already on current main, while the protected maintainer label requires a human closure decision. (sha=e0ee57fd2de31bf74a90fcf9c5a19a0392343fa3)",
+      "expected_head_sha": "e0ee57fd2de31bf74a90fcf9c5a19a0392343fa3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T02:52:07.939Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-preflight-record-guard",
+        "head_sha": "e0ee57fd2de31bf74a90fcf9c5a19a0392343fa3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
