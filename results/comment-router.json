@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T19:45:06.746Z",
+  "updated_at": "2026-08-15T19:45:48.490Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5302637510:2026-08-15T14:19:30Z:re_review",
-      "comment_id": "5302637510",
-      "comment_version_key": "5302637510:2026-08-15T14:19:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5302637510",
-      "comment_created_at": "2026-08-15T14:19:30Z",
-      "comment_updated_at": "2026-08-15T14:19:30Z",
-      "comment_body_sha256": "492279a4da97f238edc8c101ea90f1a6df1079085b61ed74eafd2e4ba61411fa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T14:20:28.164Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "2a65ce51bf368a7f7c345c693864cfeb09f96d6e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111175:5302640170:2026-08-15T14:20:15Z:re_review",
       "comment_id": "5302640170",
@@ -31505,6 +31458,39 @@
         "kind": "pull_request",
         "branch": "feat/skill-publish-catalog-metadata",
         "head_sha": "6d3f6a2fb2dab7a62249cb87cd922d307a931ce1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120056:5211039896:2026-08-15T19:45:08Z:clawsweeper_needs_human",
+      "comment_id": "5211039896",
+      "comment_version_key": "5211039896:2026-08-15T19:45:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120056#issuecomment-5211039896",
+      "comment_created_at": "2026-08-07T01:39:34Z",
+      "comment_updated_at": "2026-08-15T19:45:08Z",
+      "comment_body_sha256": "fd2963cfff11d33bb4efedd55c88448ae5849c85dd7c09d4db8f504aab7c1c08",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120056,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The new CronService test exercises real scheduler state handling but mocks the embedded-agent result; no redacted after-fix real cron execution... (sha=95ae999fe6da970c11c6674b3ff5fa390028786a)",
+      "expected_head_sha": "95ae999fe6da970c11c6674b3ff5fa390028786a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T19:45:48.490Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-silent-reply-clears-tool-error",
+        "head_sha": "95ae999fe6da970c11c6674b3ff5fa390028786a",
         "cluster_id": null,
         "job_path": null
       }
