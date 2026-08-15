@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T03:34:43.382Z",
+  "updated_at": "2026-08-15T03:34:48.571Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:105025:5080739802:2026-07-25T21:56:59Z:re_review",
-      "comment_id": "5080739802",
-      "comment_version_key": "5080739802:2026-07-25T21:56:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105025#issuecomment-5080739802",
-      "comment_created_at": "2026-07-25T21:56:59Z",
-      "comment_updated_at": "2026-07-25T21:56:59Z",
-      "comment_body_sha256": "998a29cf2830cad3b92f1b4c41ee2ad25e441a0cbfd9daf3361890d869ea844e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105025,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T21:40:30.213Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:105025:5095514809:2026-07-27T18:57:13Z:re_review",
       "comment_id": "5095514809",
@@ -32680,6 +32653,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2944:5300220146:2026-08-15T03:33:57Z:clawsweeper_needs_human",
+      "comment_id": "5300220146",
+      "comment_version_key": "5300220146:2026-08-15T03:33:57Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2944#issuecomment-5300220146",
+      "comment_created_at": "2026-08-15T03:02:33Z",
+      "comment_updated_at": "2026-08-15T03:33:57Z",
+      "comment_body_sha256": "406a39c4fdfac765a5b95d725148a27a0333f2dfbc523eb77b07974937d8bea6",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2944,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body documents focused tests with temporary stores and stubbed transports, but no redacted after-fix run against a real credential-discover...; Review finding: [P1] Make the generation fence cover publication — Sources/CodexBarCore/Providers/Codex/CodexOAuth/CodexOAuthCredentials.swift:321 - [medium] Do not overwrite a ne... (sha=032f224509010b9dcf661fbdd57741c46fe1e47e)",
+      "expected_head_sha": "032f224509010b9dcf661fbdd57741c46fe1e47e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T03:34:48.571Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/codex-oauth-hardening-pr",
+        "head_sha": "032f224509010b9dcf661fbdd57741c46fe1e47e",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
