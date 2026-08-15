@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T13:35:14.001Z",
+  "updated_at": "2026-08-15T13:36:10.056Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124098:5301486856:2026-08-15T08:57:53Z:re_review",
-      "comment_id": "5301486856",
-      "comment_version_key": "5301486856:2026-08-15T08:57:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124098#issuecomment-5301486856",
-      "comment_created_at": "2026-08-15T08:57:53Z",
-      "comment_updated_at": "2026-08-15T08:57:53Z",
-      "comment_body_sha256": "8917b5ab2e5a6275adccd8be12c220f1fb2a30ac056de5e440c56388eb87510f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124098,
-      "author": "njuboy11",
-      "author_id": 269810813,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T09:00:34.862Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-entry-validity-trigger-lifecycle",
-        "head_sha": "0c4d1aab904eea101b22b222bc15df75ad071f1d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112375:5076848606:2026-08-15T08:57:40Z:clawsweeper_needs_human",
       "comment_id": "5076848606",
@@ -30812,6 +30765,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/session-mutation-identity-v2",
         "head_sha": "55530d788055c5684a81fb1f4aa40c18e949c446",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124178:5302401880:2026-08-15T13:35:27Z:clawsweeper_needs_human",
+      "comment_id": "5302401880",
+      "comment_version_key": "5302401880:2026-08-15T13:35:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124178#issuecomment-5302401880",
+      "comment_created_at": "2026-08-15T13:16:38Z",
+      "comment_updated_at": "2026-08-15T13:35:27Z",
+      "comment_body_sha256": "c9b93a113e9094062c26ccacaa09be9d2cd55fc2a6d5c1847e9a442efd481b08",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124178,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The refactor moves session-adoption ownership logic, so merge should wait for the in-progress exact-head checks to complete green. (sha=0b9244aad9d750814cc181e4d7aa5f59c65cc5ab)",
+      "expected_head_sha": "0b9244aad9d750814cc181e4d7aa5f59c65cc5ab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T13:36:10.056Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-catalog-cleanup",
+        "head_sha": "0b9244aad9d750814cc181e4d7aa5f59c65cc5ab",
         "cluster_id": null,
         "job_path": null
       }
