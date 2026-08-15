@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T11:24:36.862Z",
+  "updated_at": "2026-08-15T11:26:29.663Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123979:5301018086:2026-08-15T06:49:50Z:re_review",
-      "comment_id": "5301018086",
-      "comment_version_key": "5301018086:2026-08-15T06:49:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123979#issuecomment-5301018086",
-      "comment_created_at": "2026-08-15T06:49:50Z",
-      "comment_updated_at": "2026-08-15T06:49:50Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123979,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T06:50:31.310Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/tsdown-heap-host-scaled",
-        "head_sha": "57c73f0ce66aed25b157f1de782488b8f23f404e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121073:5232119345:2026-08-15T06:49:49Z:clawsweeper_needs_human",
       "comment_id": "5232119345",
@@ -31334,6 +31287,39 @@
         "kind": "pull_request",
         "branch": "urda/codex-rpc-stderr-noise",
         "head_sha": "6eefb25d3237198d204b46283e5387ed774952c7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124156:5302007677:2026-08-15T11:25:46Z:clawsweeper_needs_human",
+      "comment_id": "5302007677",
+      "comment_version_key": "5302007677:2026-08-15T11:25:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124156#issuecomment-5302007677",
+      "comment_created_at": "2026-08-15T11:25:46Z",
+      "comment_updated_at": "2026-08-15T11:25:46Z",
+      "comment_body_sha256": "8eeee865f910990b287e8a93e93cd59fc9f494177cc61a2dd435cb359ac739a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124156,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The direct @openclaw/fs-safe Root.mkdir() contract could not be independently inspected in this dependency-less checkout, so exact-head validation should remain a merge gate. (sha=6db454aa0b61526d33dbf64221bb80731781123f)",
+      "expected_head_sha": "6db454aa0b61526d33dbf64221bb80731781123f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T11:26:29.663Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/simplify-computer-use-test-seams",
+        "head_sha": "6db454aa0b61526d33dbf64221bb80731781123f",
         "cluster_id": null,
         "job_path": null
       }
