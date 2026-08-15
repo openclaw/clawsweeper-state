@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-15T03:47:37.401Z",
+  "updated_at": "2026-08-15T03:47:11.729Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123586:5291804318:2026-08-14T21:45:30Z:clawsweeper_auto_repair",
+      "comment_id": "5291804318",
+      "comment_version_key": "5291804318:2026-08-14T21:45:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123586#issuecomment-5291804318",
+      "comment_created_at": "2026-08-14T09:36:41Z",
+      "comment_updated_at": "2026-08-14T21:45:30Z",
+      "comment_body_sha256": "5b9824a83546f580561c67919584b8e7e99075c62d792e8223e7888b48499632",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123586,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=38e693ab595b56cb0a0ab5fae1e24b8e6907c83a)",
+      "expected_head_sha": "38e693ab595b56cb0a0ab5fae1e24b8e6907c83a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T21:51:11.279Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/sidebar-session-management-overflow",
+        "head_sha": "38e693ab595b56cb0a0ab5fae1e24b8e6907c83a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123645:5293301392:2026-08-14T21:48:44Z:clawsweeper_needs_human",
       "comment_id": "5293301392",
@@ -32676,39 +32709,6 @@
       "status": "skipped",
       "processed_at": "2026-08-15T03:47:11.729Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123963:5300218977:2026-08-15T03:46:29Z:clawsweeper_needs_human",
-      "comment_id": "5300218977",
-      "comment_version_key": "5300218977:2026-08-15T03:46:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123963#issuecomment-5300218977",
-      "comment_created_at": "2026-08-15T03:02:15Z",
-      "comment_updated_at": "2026-08-15T03:46:29Z",
-      "comment_body_sha256": "a28885f9144c4cb7d8d6bdded533bca607f2b04bd10811eb60ff7782bee14f40",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123963,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Route every configured Slack operation through the bridge (P1)** - This newly surfaced concern is on code unchanged since the prior review: a bridge-only account is reported as configured here, but detached send...; Review finding: [P1] Route every configured Slack operation through the bridge — extensions/slack/src/account-configured.ts:7-12 - [P2] Reject user-identity host bridge configurat... (sha=ad1010d5523c499124e8fff5e0d038d5f8927e01)",
-      "expected_head_sha": "ad1010d5523c499124e8fff5e0d038d5f8927e01",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T03:47:37.401Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/connect-slack-transport-poc",
-        "head_sha": "ad1010d5523c499124e8fff5e0d038d5f8927e01",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
