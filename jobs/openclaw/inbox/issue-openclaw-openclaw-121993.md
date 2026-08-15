@@ -67,23 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing ACP session identity mismatch for https://github.com/openclaw/openclaw/issues/121993. In the Gateway session-row owner, use persisted ACP metadata plus the existing ACP-key predicate to project the same acpx/&lt;agent>-acp identity as `openclaw sessions list` and lock model selection for true ACP runtime sessions. At the sessions.patch boundary, reject model changes using the same durable metadata gate so a direct RPC cannot persist an override that the UI reports as locked. Preserve configured models and patchability for ACP-shaped bridge sessions with no persisted metadata. Do not implement harness config-option model selection; that is tracked separately by https://github.com/openclaw/openclaw/issues/122488. Add regression coverage that fails on current main, run focused Gateway tests, and attach a sanitized before/after Control UI recording from an isolated live Gateway.
+Repair the existing ACP session identity invariant for https://github.com/openclaw/openclaw/issues/121993. In the Gateway row projection, use already-batched persisted ACP metadata plus the ACP-session-key gate to project acpx/&lt;agent>-acp and modelSelectionLocked for true ACP runtime sessions; preserve configured-model behavior for ACP-shaped bridge sessions without metadata. Enforce the same condition in sessions.patch so a direct client cannot persist an override that the UI reports as locked. Reuse the CLI’s metadata-gated distinction, do not add config or harness-specific branches, and do not implement harness-advertised selection from https://github.com/openclaw/openclaw/issues/122488. Add pre-fix-failing regressions for true ACP, bridge, and direct model-patch cases. Do not edit CHANGELOG.md; include release-note context in the PR body and capture sanitized Control UI before/after proof from an isolated dev Gateway.
 
 Likely files:
 
 - src/gateway/session-utils-row.ts
 - src/gateway/session-utils-model.ts
-- src/gateway/sessions-patch.ts
 - src/gateway/session-utils.test.ts
+- src/gateway/sessions-patch.ts
 - src/gateway/sessions-patch.test.ts
-- ui/src/pages/chat/chat-view.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/session-utils.test.ts
 - node scripts/run-vitest.mjs src/gateway/sessions-patch.test.ts
 - node scripts/run-vitest.mjs src/commands/sessions.acp-model-display.test.ts
-- Capture sanitized before/after Control UI proof from an isolated live Gateway showing an ACP session footer and locked selector.
+- Run an isolated Gateway plus Control UI and capture sanitized before/after proof that a persisted ACP session shows acpx/<agent>-acp and rejects a model change while a bridge session remains configurable.
 
 ## Operator Prompt
 
