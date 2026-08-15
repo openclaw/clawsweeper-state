@@ -67,19 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Telegram rich `/models` picker callback lifecycle. First establish a failing regression against current main with a callback message that carries rich-message representation. In `extensions/telegram/src/bot-handlers.callback-actions.ts`, preserve the actual callback-message representation: route rich-origin edits through the existing raw rich-message contract and keep legacy-origin edits on grammY’s legacy text API. Preserve business connection data, reply markup, model-session behavior, and retry semantics; do not add configuration, core policy, or fallback paths. Extend the existing Telegram callback boundary tests to prove rich provider/list/select edits use rich_message and legacy callbacks remain legacy. Include redacted real Telegram or approved production-boundary proof in the PR body; do not edit CHANGELOG.md.
+Repair the Telegram `/models` callback lifecycle so a rich picker is edited through the canonical raw rich edit path. Detect the original representation from the callback message rather than the current richMessages configuration; preserve legacy edits for legacy messages and preserve explicit HTML semantics when converting the confirmation to rich blocks. Keep model and session policy unchanged, add a boundary regression that fails before the repair for rich send → callback edit, and obtain redacted real Telegram proof. Do not add configuration or edit CHANGELOG.md; put user-visible release-note context in the PR body.
 
 Likely files:
 
 - extensions/telegram/src/bot-handlers.callback-actions.ts
-- extensions/telegram/src/bot-handlers.callback-router.ts
-- extensions/telegram/src/bot.create-telegram-bot.test.ts
 - extensions/telegram/src/rich-message.ts
+- extensions/telegram/src/rich-blocks-html.ts
+- extensions/telegram/src/transport-payload.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/telegram/src/bot.create-telegram-bot.test.ts
-- Run a redacted Telegram rich-message `/models` selection proof through the plugin’s real or approved production-boundary harness and show that the confirmation replaces the picker.
+- node scripts/run-vitest.mjs extensions/telegram/src/transport-payload.test.ts
+- node scripts/run-vitest.mjs extensions/telegram/src/bot.test.ts
 
 ## Operator Prompt
 
