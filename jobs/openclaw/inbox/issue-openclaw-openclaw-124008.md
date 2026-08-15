@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing New Session picker behavior in one focused PR. Preserve `chat.metadata` as the startup-safe prepared projection; do not add live provider discovery to that Gateway path. Reuse the existing Control UI `models.list` configured-catalog refresh when the New Session picker opens, publish results only when the active client and agent still match, and retain visible failure/retry behavior. Add a regression with a prepared authored catalog plus a fuller `models.list` result containing runtime-discovered providers; prove startup remains prepared-only and opening the picker exposes the discovered rows. Stop if the repair requires new config, protocol, provider policy, or changing the Gateway startup contract. Do not edit CHANGELOG.md.
+Repair the New Session model picker so it uses the existing explicit configured model-catalog read for selectable models while retaining `chat.metadata` for fast startup metadata. Preserve `chat.metadata`'s prepared-only/no-live-discovery contract and do not add provider-specific branches, config, or a second catalog implementation. Add a regression where metadata contains only static Z.AI rows but the explicit configured catalog contains usable Google and OpenAI rows; the picker must expose the complete explicit catalog and preserve existing failure/retry behavior. Do not edit CHANGELOG.md.
 
 Likely files:
 
 - ui/src/pages/new-session/model-control.ts
 - ui/src/pages/new-session/model-control.test.ts
 - ui/src/pages/chat/models.ts
-- ui/src/pages/chat/chat-state-refresh.ts
+- src/gateway/server-methods/chat-metadata-runtime.test.ts
 
 Validation:
 
-- pnpm test ui/src/pages/new-session/model-control.test.ts
-- pnpm test ui/src/pages/chat/models.test.ts ui/src/pages/chat/chat-view.test.ts
-- pnpm check:changed -- ui/src/pages/new-session/model-control.ts ui/src/pages/new-session/model-control.test.ts
+- node scripts/run-vitest.mjs ui/src/pages/new-session/model-control.test.ts
+- node scripts/run-vitest.mjs ui/src/pages/chat/models.test.ts
+- node scripts/run-vitest.mjs src/gateway/server-methods/chat-metadata-runtime.test.ts
 
 ## Operator Prompt
 
