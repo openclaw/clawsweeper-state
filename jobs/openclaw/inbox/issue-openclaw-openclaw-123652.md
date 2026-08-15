@@ -67,20 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the full-replay tool-loop ordering in https://github.com/openclaw/openclaw/issues/123652. First establish a failing current-main regression. In `src/agents/internal-runtime-context.ts`, stop relocating the current carrier behind tool scaffolding: move it from before the active user only to immediately after that user, while preserving historical-carrier stripping. Extend the agent-boundary tests to show P+U+X followed by P+U+X+Y across a tool loop, and add a Responses payload-order assertion if needed. Do not filter the carrier in Azure/OpenAI providers and do not add cache controls or configuration. Do not edit CHANGELOG.md; put concise release-note context in the PR body. Capture a redacted direct Azure/OpenAI full-replay multi-tool trace after the fix when credentials are available.
+Repair the Azure/OpenAI Responses full-replay cache-lineage bug from https://github.com/openclaw/openclaw/issues/123652. Preserve the runtime-context carrier for model behavior, historical stripping, and non-Responses transports; do not add config, prompt-cache controls, or a provider-specific filter. In shared Responses conversion, move the marked current-turn carrier from its global tail position to immediately after the active user item before serializing subsequent reasoning, tool-call, and tool-output items, so consecutive inputs retain `P+U+X → P+U+X+Y`. Add a boundary regression covering OpenAI and Azure shared conversion, first proving it fails on the old order, then capture a redacted approved-provider tool-loop trace after the fix. Do not edit CHANGELOG.md; record release-note context in the PR body.
 
 Likely files:
 
-- src/agents/internal-runtime-context.ts
-- src/agents/internal-runtime-context.test.ts
-- src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- packages/ai/src/transports/openai-responses-replay-messages-internal.ts
+- packages/ai/src/providers/openai-responses-shared.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/internal-runtime-context.test.ts
+- node scripts/run-vitest.mjs packages/ai/src/providers/openai-responses-shared.test.ts
 - node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
-- Run the focused Responses converter test changed by the repair.
-- Capture a redacted Azure/OpenAI full-replay multi-tool request trace showing P+U+X to P+U+X+Y and observed cache usage.
+- With approved Azure/OpenAI credentials, capture two consecutive full-replay Responses inputs and verify the second preserves the first through the carrier while retaining active runtime context.
 
 ## Operator Prompt
 
