@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Telegram rich-message model-picker lifecycle. First create a failing regression for rich send → provider/model callback → final confirmation. At the shared callback action boundary, preserve the actual callback message representation: rich messages must use the existing raw rich edit/planning path, while legacy messages retain their current HTML/legacy behavior. Do not add config, core policy, or a model-specific parallel edit path. Add rich and legacy callback coverage, verify the raw request shape and visible final confirmation, and include release-note context in the PR body without editing CHANGELOG.md.
+Fix the Telegram rich `/models` picker callback lifecycle. Preserve the original callback message representation in the shared callback edit owner: rich-origin picker updates must use the existing raw rich edit contract, while legacy-origin messages must retain grammY text edits. Keep business parameters, keyboard behavior, existing error handling, and rich-to-plain fallback intact. Make the final model-selection confirmation rich-safe instead of passing caller-authored HTML into a raw rich edit. Add regression coverage for rich provider/list/select edits and legacy callback behavior; use a raw-call-specific assertion rather than the harness’s legacy projection. Do not add config, change core behavior, or edit CHANGELOG.md; record release-note context in the PR body. Before merge, verify the current Telegram/grammY contract and attach redacted real Telegram picker-selection proof.
 
 Likely files:
 
@@ -81,7 +81,7 @@ Validation:
 
 - node scripts/run-vitest.mjs extensions/telegram/src/bot.create-telegram-bot.test.ts
 - node scripts/run-vitest.mjs extensions/telegram/src/draft-stream.test.ts
-- Run a redacted Telegram Crabbox lifecycle with richMessages=true: /models → provider → model, verifying a rich edit and a readable final confirmation.
+- Run a redacted real Telegram `/models` provider/list/select flow with rich messages enabled and confirm the final confirmation replaces the picker without stale text.
 
 ## Operator Prompt
 
