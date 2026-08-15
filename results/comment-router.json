@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T15:37:52.938Z",
+  "updated_at": "2026-08-15T15:40:11.192Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108482:4987825905:2026-08-15T10:26:19Z:clawsweeper_auto_repair",
-      "comment_id": "4987825905",
-      "comment_version_key": "4987825905:2026-08-15T10:26:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/108482#issuecomment-4987825905",
-      "comment_created_at": "2026-07-16T03:21:51Z",
-      "comment_updated_at": "2026-08-15T10:26:19Z",
-      "comment_body_sha256": "2d23adb8025f6a6c5e29a63281010653e480c636e7eb321a04557df5a20b4060",
-      "repo": "openclaw/openclaw",
-      "issue_number": 108482,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9532591d82ef52be2cc49f6b1653fd4f443b00cb)",
-      "expected_head_sha": "9532591d82ef52be2cc49f6b1653fd4f443b00cb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T10:33:57.552Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/skills-write-service-api",
-        "head_sha": "9532591d82ef52be2cc49f6b1653fd4f443b00cb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112385:5058814488:2026-07-23T13:14:36Z:re_review",
       "comment_id": "5058814488",
@@ -31404,6 +31371,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T15:37:52.938Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82950:4469526858:2026-08-15T15:38:23Z:clawsweeper_needs_human",
+      "comment_id": "4469526858",
+      "comment_version_key": "4469526858:2026-08-15T15:38:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-4469526858",
+      "comment_created_at": "2026-05-17T05:54:16Z",
+      "comment_updated_at": "2026-08-15T15:38:23Z",
+      "comment_body_sha256": "780a53e5de7f3c8cdd259732ccb71bc59b8041d568ec1116e9b777a10cc5dc47",
+      "repo": "openclaw/openclaw",
+      "issue_number": 82950,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Carry adjacent-repeat state across optional atoms (P1)** - An optional atom such as x? can match empty, so ^a*x?a*b$ leaves the two a* repeats combinatorially ambiguous on a long non-matching a…! input. The curr...; Review finding: [P1] Carry adjacent-repeat state across optional atoms — src/security/safe-regex.ts:420-432 - [high] Optional atom bypasses adjacent-repeat rejection — src/securit... (sha=3bf4b73b5172c3dd6413ab0adb65ce8abdefae34)",
+      "expected_head_sha": "3bf4b73b5172c3dd6413ab0adb65ce8abdefae34",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T15:40:11.192Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-approval-redos-guard",
+        "head_sha": "3bf4b73b5172c3dd6413ab0adb65ce8abdefae34",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
