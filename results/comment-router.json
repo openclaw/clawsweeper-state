@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T06:19:06.816Z",
+  "updated_at": "2026-08-15T06:19:29.087Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123566:5291472793:2026-08-15T00:47:17Z:clawsweeper_auto_repair",
-      "comment_id": "5291472793",
-      "comment_version_key": "5291472793:2026-08-15T00:47:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123566#issuecomment-5291472793",
-      "comment_created_at": "2026-08-14T08:59:39Z",
-      "comment_updated_at": "2026-08-15T00:47:17Z",
-      "comment_body_sha256": "61123832a8878cb3a58b79baed72254d87d100b223216d61ef401db17cb6dfa4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123566,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=410a267bc44ec156bcf112a23ed02131d5023b52)",
-      "expected_head_sha": "410a267bc44ec156bcf112a23ed02131d5023b52",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T00:48:49.398Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/sidebar-session-row-endcap",
-        "head_sha": "410a267bc44ec156bcf112a23ed02131d5023b52",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123586:5291804318:2026-08-15T00:42:57Z:clawsweeper_auto_repair",
       "comment_id": "5291804318",
@@ -33222,6 +33189,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124051:5300906916:2026-08-15T06:18:47Z:clawsweeper_needs_human",
+      "comment_id": "5300906916",
+      "comment_version_key": "5300906916:2026-08-15T06:18:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124051#issuecomment-5300906916",
+      "comment_created_at": "2026-08-15T06:18:47Z",
+      "comment_updated_at": "2026-08-15T06:18:47Z",
+      "comment_body_sha256": "2963a78709bf0a2d419ee685ed9591890e71d6cd4e8c0c12b594793cb9d8c205",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124051,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Production grows by two lines; both guards are needed because primary and fallback embedding queries are separate generations, and extracting shared policy would add more surface than... (sha=1dd46f9195aad050076a3df68407bb67eecab29c)",
+      "expected_head_sha": "1dd46f9195aad050076a3df68407bb67eecab29c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T06:19:29.087Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa-refill-memory-fallback-cache-v2",
+        "head_sha": "1dd46f9195aad050076a3df68407bb67eecab29c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
