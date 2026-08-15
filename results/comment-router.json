@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T17:36:24.963Z",
+  "updated_at": "2026-08-15T17:36:48.225Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120197:5235561068:2026-08-10T03:31:44Z:re_review",
-      "comment_id": "5235561068",
-      "comment_version_key": "5235561068:2026-08-10T03:31:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120197#issuecomment-5235561068",
-      "comment_created_at": "2026-08-10T03:31:44Z",
-      "comment_updated_at": "2026-08-10T03:31:44Z",
-      "comment_body_sha256": "cb33da66c60e531d36e02f8d391baa5f97d0794c14f0700648bc813500f4e1a5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120197,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T11:53:00.498Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120197:5279089477:2026-08-13T10:25:01Z:re_review",
       "comment_id": "5279089477",
@@ -32164,6 +32137,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124049:5301011146:2026-08-15T17:35:58Z:clawsweeper_auto_repair",
+      "comment_id": "5301011146",
+      "comment_version_key": "5301011146:2026-08-15T17:35:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124049#issuecomment-5301011146",
+      "comment_created_at": "2026-08-15T06:47:48Z",
+      "comment_updated_at": "2026-08-15T17:35:58Z",
+      "comment_body_sha256": "a548d0affd7d6797fb6fbd2f8132ddfa75cdd29c0276082758fa8679131a9241",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124049,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0056b0a7193d60e3cb18e65191d6e5341937d578)",
+      "expected_head_sha": "0056b0a7193d60e3cb18e65191d6e5341937d578",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T17:36:48.225Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bug-056-retain-coordinator-unbounded-loop",
+        "head_sha": "0056b0a7193d60e3cb18e65191d6e5341937d578",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
