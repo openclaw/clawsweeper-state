@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T14:10:40.073Z",
+  "updated_at": "2026-08-15T14:14:03.852Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122444:5264974521:2026-08-12T09:36:54Z:re_review",
-      "comment_id": "5264974521",
-      "comment_version_key": "5264974521:2026-08-12T09:36:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122444#issuecomment-5264974521",
-      "comment_created_at": "2026-08-12T09:36:54Z",
-      "comment_updated_at": "2026-08-12T09:36:54Z",
-      "comment_body_sha256": "e9f08b0a5cd7b745b425e71655124d3bcf5d3046137658068f416c4c0c76a009",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122444,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T09:40:29.733Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122444:5265010845:2026-08-12T09:40:31Z:re_review",
       "comment_id": "5265010845",
@@ -30972,6 +30945,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2936:5295682900:2026-08-15T14:13:14Z:clawsweeper_needs_human",
+      "comment_id": "5295682900",
+      "comment_version_key": "5295682900:2026-08-15T14:13:14Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2936#issuecomment-5295682900",
+      "comment_created_at": "2026-08-14T16:26:47Z",
+      "comment_updated_at": "2026-08-15T14:13:14Z",
+      "comment_body_sha256": "143dc5f965ffbd43c058379eee1bca07969cb8707907d345841bf40b11e3f6a4",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2936,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports builds and controlled tests but provides no redacted after-fix API trace, dashboard request/response evidence, or runtime r...; Review finding: [P1] Filter imported cookies before building the Muse header — Sources/CodexBarCore/Providers/Muse/MuseCookieImporter.swift:58-61 - [P2] Restrict automatic cookie... (sha=d6625faca839fc9688e7d7df2c08c98af02bd4db)",
+      "expected_head_sha": "d6625faca839fc9688e7d7df2c08c98af02bd4db",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T14:14:03.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/muse-provider",
+        "head_sha": "d6625faca839fc9688e7d7df2c08c98af02bd4db",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
