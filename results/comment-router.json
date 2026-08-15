@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T04:18:30.409Z",
+  "updated_at": "2026-08-15T04:20:20.351Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123495:5289869920:2026-08-14T22:12:55Z:clawsweeper_auto_repair",
-      "comment_id": "5289869920",
-      "comment_version_key": "5289869920:2026-08-14T22:12:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123495#issuecomment-5289869920",
-      "comment_created_at": "2026-08-14T05:33:09Z",
-      "comment_updated_at": "2026-08-14T22:12:55Z",
-      "comment_body_sha256": "708bb18ef6d367fd2e8b8facc2bd6f8c459f6709646d7ab19129df4c018b278b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123495,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d3dd152272391c5898a5817ca04050b3e2c0b03e)",
-      "expected_head_sha": "d3dd152272391c5898a5817ca04050b3e2c0b03e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T22:16:36.724Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-119085-sqlite-archive",
-        "head_sha": "d3dd152272391c5898a5817ca04050b3e2c0b03e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105025:4950152361:2026-08-14T22:13:44Z:clawsweeper_needs_human",
       "comment_id": "4950152361",
@@ -32944,6 +32911,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117128:5148652773:2026-08-15T04:14:42Z:clawsweeper_needs_human",
+      "comment_id": "5148652773",
+      "comment_version_key": "5148652773:2026-08-15T04:14:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117128#issuecomment-5148652773",
+      "comment_created_at": "2026-08-01T00:42:02Z",
+      "comment_updated_at": "2026-08-15T04:14:42Z",
+      "comment_body_sha256": "2cad11288a57f966fe62098b0de8306cc5ef716cfea66fa70b6f842c66dc9680",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117128,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally makes host-local validation and supported CLI writes reject active exec providers that previously failed only at Gateway startup; the secrets/config owner should ac... (sha=097b00a36b84860c158d799af42451ac442b5542)",
+      "expected_head_sha": "097b00a36b84860c158d799af42451ac442b5542",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T04:20:20.351Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-secretref-path-preflight-117051",
+        "head_sha": "097b00a36b84860c158d799af42451ac442b5542",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
