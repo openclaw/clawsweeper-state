@@ -67,20 +67,23 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current-turn runtime-context carrier lifecycle for OpenAI/Azure Responses full replay. Keep a volatile carrier immediately after its active user turn across same-turn tool calls, remove it when a subsequent user turn begins, and do not add an Azure-only provider filter, cache-control config, or alter ChatGPT previous-response continuation semantics. First add a regression that fails on current main by serializing consecutive Responses inputs and proving P+U+X becomes P+U+X+Y during the same tool loop, while a later user turn does not replay X. Repair the producer/lifecycle owner rather than compensating in the provider converter. Include user-visible release-note context in the PR body or commit message, not CHANGELOG.md.
+Repair the current-turn runtime-context carrier ordering for OpenAI and Azure Responses full-replay tool loops. Preserve the carrier immediately after its active user message while same-turn assistant reasoning, tool-call, and tool-result items append after it; retain historical-carrier stripping before the next user turn. Do not filter the carrier from provider input, add a cache/config option, or edit CHANGELOG.md. Extend the existing focused ordering and cache-stability tests so an adjacent Responses request changes from P+U+X to P+U+X+Y rather than P+U+Y+X; capture both shared OpenAI and Azure conversion paths. Before opening a PR, establish the failing regression on the pre-fix code and obtain a redacted real Azure or OpenAI Responses multi-tool trace if credentials are available. Put user-visible release-note context in the PR body.
 
 Likely files:
 
 - src/agents/internal-runtime-context.ts
-- src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
-- src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
 - src/agents/internal-runtime-context.test.ts
+- src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- packages/ai/src/providers/openai-responses-shared.test.ts
+- packages/ai/src/providers/azure-openai-responses.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
 - node scripts/run-vitest.mjs src/agents/internal-runtime-context.test.ts
+- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- node scripts/run-vitest.mjs packages/ai/src/providers/openai-responses-shared.test.ts
 - node scripts/run-vitest.mjs packages/ai/src/providers/azure-openai-responses.test.ts
+- Redacted Azure or OpenAI Responses multi-tool payload trace showing corrected adjacent input ordering
 
 ## Operator Prompt
 
