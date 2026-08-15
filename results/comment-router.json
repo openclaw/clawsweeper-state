@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T13:03:59.779Z",
+  "updated_at": "2026-08-15T13:11:17.969Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124107:5301413899:2026-08-15T08:38:28Z:clawsweeper_needs_human",
-      "comment_id": "5301413899",
-      "comment_version_key": "5301413899:2026-08-15T08:38:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124107#issuecomment-5301413899",
-      "comment_created_at": "2026-08-15T08:38:28Z",
-      "comment_updated_at": "2026-08-15T08:38:28Z",
-      "comment_body_sha256": "89bab34510803d942682f815f35ca4ec7b74bddb3d749676bf7100b0ca25eebe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124107,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR shows focused test output and payload-capture tests that intentionally stop before transport, but no real after-fix Azure/OpenAI Respons... (sha=120529225e589f80d21b0377f46fcd8bf3436573)",
-      "expected_head_sha": "120529225e589f80d21b0377f46fcd8bf3436573",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T08:39:04.491Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/llm-carrier-anchor-after-active-user-123652",
-        "head_sha": "120529225e589f80d21b0377f46fcd8bf3436573",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112709:5128482119:2026-08-15T08:33:39Z:clawsweeper_auto_repair",
       "comment_id": "5128482119",
@@ -30771,6 +30738,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:80396:5302379905:2026-08-15T13:10:36Z:re_review",
+      "comment_id": "5302379905",
+      "comment_version_key": "5302379905:2026-08-15T13:10:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5302379905",
+      "comment_created_at": "2026-08-15T13:10:36Z",
+      "comment_updated_at": "2026-08-15T13:10:36Z",
+      "comment_body_sha256": "6444b3ba96d0a87cc07915e8ca1d0815a6c0291e2cc407576ee043315e279f8d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 80396,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T13:11:16.223Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/41966-media-token-warn-in-fence",
+        "head_sha": "15ddcc78480819ae629be1bb8e2de0646c85872a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
