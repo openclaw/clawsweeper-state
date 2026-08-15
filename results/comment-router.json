@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T20:37:16.759Z",
+  "updated_at": "2026-08-15T20:37:22.915Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116123:5124414650:2026-08-15T15:21:48Z:clawsweeper_needs_human",
-      "comment_id": "5124414650",
-      "comment_version_key": "5124414650:2026-08-15T15:21:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116123#issuecomment-5124414650",
-      "comment_created_at": "2026-07-29T23:25:51Z",
-      "comment_updated_at": "2026-08-15T15:21:48Z",
-      "comment_body_sha256": "697b04528a56773b3f0544949b0aba1a12ac9ec90165d7381472957bdc1a6c02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116123,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied rollup still has exact-head checks in progress and the PR is behind main; if a behavior-changing rebase occurs, rerun the focused delivery proof on that new head. (sha=352f746ca3c2b966bd24c235ca2a4bf537671518)",
-      "expected_head_sha": "352f746ca3c2b966bd24c235ca2a4bf537671518",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T15:28:46.812Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sanitize-text-code-spans",
-        "head_sha": "352f746ca3c2b966bd24c235ca2a4bf537671518",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80396:4416120074:2026-08-15T15:25:24Z:clawsweeper_needs_human",
       "comment_id": "4416120074",
@@ -31644,6 +31611,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124191:5304123195:2026-08-15T20:36:39Z:re_review",
+      "comment_id": "5304123195",
+      "comment_version_key": "5304123195:2026-08-15T20:36:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124191#issuecomment-5304123195",
+      "comment_created_at": "2026-08-15T20:36:39Z",
+      "comment_updated_at": "2026-08-15T20:36:39Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124191,
+      "author": "VACInc",
+      "author_id": 3279061,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T20:37:20.827Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-prompt-cache-prefix",
+        "head_sha": "c9a524c4d216402849bcafe9b3845b0e4f960d4b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
