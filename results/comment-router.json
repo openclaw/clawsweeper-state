@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T09:00:41.364Z",
+  "updated_at": "2026-08-15T09:01:37.905Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123975:5300501241:2026-08-15T04:20:48Z:re_review",
-      "comment_id": "5300501241",
-      "comment_version_key": "5300501241:2026-08-15T04:20:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123975#issuecomment-5300501241",
-      "comment_created_at": "2026-08-15T04:20:48Z",
-      "comment_updated_at": "2026-08-15T04:20:48Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123975,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T04:21:25.218Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/tsgo-stall-timeout",
-        "head_sha": "13b127b4889124df5cb385a3d2d38c135ffffcc3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:2945:5300506744:2026-08-15T04:22:24Z:re_review",
       "comment_id": "5300506744",
@@ -32483,6 +32436,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:48:5296164372:2026-08-15T09:00:33Z:clawsweeper_needs_human",
+      "comment_id": "5296164372",
+      "comment_version_key": "5296164372:2026-08-15T09:00:33Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/48#issuecomment-5296164372",
+      "comment_created_at": "2026-08-14T17:18:01Z",
+      "comment_updated_at": "2026-08-15T09:00:33Z",
+      "comment_body_sha256": "21a2b8aac0bcd2ef54505d15055517098e14c48c35c1cec1ac1368761fad3c1d",
+      "repo": "openclaw/libterminal",
+      "issue_number": 48,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The independent structured review helper could not run in this sandbox because no temporary directory is available; rerun it in a normal review environment if that additional signal i... (sha=150667c383fb8d86ea95cf9a117d1e15637af588)",
+      "expected_head_sha": "150667c383fb8d86ea95cf9a117d1e15637af588",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T09:01:37.905Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-381bfc58ca",
+        "head_sha": "150667c383fb8d86ea95cf9a117d1e15637af588",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
