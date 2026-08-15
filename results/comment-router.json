@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T03:44:32.107Z",
+  "updated_at": "2026-08-15T03:44:37.568Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78440:4387482699:2026-08-14T21:44:44Z:clawsweeper_auto_repair",
-      "comment_id": "4387482699",
-      "comment_version_key": "4387482699:2026-08-14T21:44:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/78440#issuecomment-4387482699",
-      "comment_created_at": "2026-05-06T11:26:23Z",
-      "comment_updated_at": "2026-08-14T21:44:44Z",
-      "comment_body_sha256": "5496c814eaf35ce82ccc6bafb8dba865bf93f935c28820a7adef0233c9285186",
-      "repo": "openclaw/openclaw",
-      "issue_number": 78440,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T21:51:11.279Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-dreaming-narrative-timeout-clean",
-        "head_sha": "caeefcda925ce616408ce4d3ef7ae2889a697d40",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90033:4617178305:2026-08-14T21:45:05Z:clawsweeper_auto_repair",
       "comment_id": "4617178305",
@@ -32721,6 +32688,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123413:5288650559:2026-08-15T03:43:43Z:clawsweeper_needs_human",
+      "comment_id": "5288650559",
+      "comment_version_key": "5288650559:2026-08-15T03:43:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123413#issuecomment-5288650559",
+      "comment_created_at": "2026-08-14T02:17:02Z",
+      "comment_updated_at": "2026-08-15T03:43:43Z",
+      "comment_body_sha256": "86cae718013fc82a68e53100debb15a07e78e6a17b5c8a3df1132af26682df46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123413,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 12 lines in a media-access boundary; this is justified because the generic image hydrator has no authoritative agent identity, so moving the policy there woul... (sha=c3a58a780fcf645d6bc52842eb49cdaf5bdec1b3)",
+      "expected_head_sha": "c3a58a780fcf645d6bc52842eb49cdaf5bdec1b3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T03:44:37.568Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/123273-embedded-agent-media-roots",
+        "head_sha": "c3a58a780fcf645d6bc52842eb49cdaf5bdec1b3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
