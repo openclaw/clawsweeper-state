@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T21:02:36.246Z",
+  "updated_at": "2026-08-15T21:02:56.363Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122371:5261251431:2026-08-15T16:16:12Z:clawsweeper_needs_human",
-      "comment_id": "5261251431",
-      "comment_version_key": "5261251431:2026-08-15T16:16:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122371#issuecomment-5261251431",
-      "comment_created_at": "2026-08-12T02:07:53Z",
-      "comment_updated_at": "2026-08-15T16:16:12Z",
-      "comment_body_sha256": "c4381678a1205fcf60144fc36be6362cdbf1b0351eadb050eb396932d8cbd1b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122371,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Confirm the narrowed \\fc-\\ redaction boundary** - This changed matcher no longer masks an fc- value immediately following an identifier character; confirm that preventing sender-ID corr...; Review finding: [medium] Confirm the narrowed fc- redaction boundary — src/logging/redact-patterns.ts:187 (sha=7d8adb1ecef60849f6cf1274f03349988ec12c69)",
-      "expected_head_sha": "7d8adb1ecef60849f6cf1274f03349988ec12c69",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T16:26:51.465Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-main-ci-20260812",
-        "head_sha": "7d8adb1ecef60849f6cf1274f03349988ec12c69",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122899:5275160129:2026-08-15T16:16:01Z:clawsweeper_needs_human",
       "comment_id": "5275160129",
@@ -31296,6 +31263,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T21:02:36.246Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124280:5304218163:2026-08-15T21:02:13Z:clawsweeper_auto_repair",
+      "comment_id": "5304218163",
+      "comment_version_key": "5304218163:2026-08-15T21:02:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124280#issuecomment-5304218163",
+      "comment_created_at": "2026-08-15T21:02:13Z",
+      "comment_updated_at": "2026-08-15T21:02:13Z",
+      "comment_body_sha256": "0727f9e9ee481fff96823925348d937332ebaf212f7098fa25357ee0d9a12267",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124280,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f52ebfe8af3d76cf707b6ee5c9ed31986763c05f)",
+      "expected_head_sha": "f52ebfe8af3d76cf707b6ee5c9ed31986763c05f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T21:02:56.363Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workboard-start-current-context",
+        "head_sha": "f52ebfe8af3d76cf707b6ee5c9ed31986763c05f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
