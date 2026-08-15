@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T22:58:26.073Z",
+  "updated_at": "2026-08-15T22:58:30.485Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115447:5303542602:2026-08-15T18:05:36Z:re_review",
-      "comment_id": "5303542602",
-      "comment_version_key": "5303542602:2026-08-15T18:05:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115447#issuecomment-5303542602",
-      "comment_created_at": "2026-08-15T18:05:36Z",
-      "comment_updated_at": "2026-08-15T18:05:36Z",
-      "comment_body_sha256": "63ef175d475618b15ecfea0e105d878fe9e76b0af7143e78547ce181acb33aac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115447,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T18:27:57.041Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/schema-mismatch-no-db-quarantine-115421",
-        "head_sha": "0a872db4682615d003d8f7a613a7baff8d72d424",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121309:5303542779:2026-08-15T18:05:38Z:re_review",
       "comment_id": "5303542779",
@@ -31839,6 +31792,39 @@
         "kind": "pull_request",
         "branch": "fix/state-first-use-columns-strict-migration",
         "head_sha": "52ba68e3039553d30490dbf95b6067d10bb90f1b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:489:5304451692:2026-08-15T22:53:31Z:clawsweeper_needs_human",
+      "comment_id": "5304451692",
+      "comment_version_key": "5304451692:2026-08-15T22:53:31Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/489#issuecomment-5304451692",
+      "comment_created_at": "2026-08-15T22:06:01Z",
+      "comment_updated_at": "2026-08-15T22:53:31Z",
+      "comment_body_sha256": "9a930cc3a223cda861d4839fe3bd7a5247b26180c3df1b725e06ac96b9d6681a",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 489,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - On a helper that ignores termination, a title update can wait through the two-second deadline plus bounded cleanup grace; this is an intentional finite-delay tradeoff for avoiding an... (sha=bae0b7059eb5727e1b09b8df2f54b4d68f7ef782)",
+      "expected_head_sha": "bae0b7059eb5727e1b09b8df2f54b4d68f7ef782",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T22:58:30.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/vt-title-process-timeout",
+        "head_sha": "bae0b7059eb5727e1b09b8df2f54b4d68f7ef782",
         "cluster_id": null,
         "job_path": null
       }
