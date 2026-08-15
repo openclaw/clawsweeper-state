@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T02:22:05.390Z",
+  "updated_at": "2026-08-15T02:23:10.266Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120665:5227582278:2026-08-14T19:57:39Z:clawsweeper_auto_repair",
-      "comment_id": "5227582278",
-      "comment_version_key": "5227582278:2026-08-14T19:57:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120665#issuecomment-5227582278",
-      "comment_created_at": "2026-08-08T18:47:56Z",
-      "comment_updated_at": "2026-08-14T19:57:39Z",
-      "comment_body_sha256": "69457e7435b7a1d89a0260e2e129d968c0e77f3688b7bb5bdedd6ac3fb34efc8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120665,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=db2323ba808350057e1aadf4b40b433e69cf6e0e)",
-      "expected_head_sha": "db2323ba808350057e1aadf4b40b433e69cf6e0e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T20:24:11.490Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gemini-embedding-2-ga",
-        "head_sha": "db2323ba808350057e1aadf4b40b433e69cf6e0e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121578:5240496495:2026-08-14T19:57:45Z:clawsweeper_needs_human",
       "comment_id": "5240496495",
@@ -32647,6 +32614,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123457:5300048943:2026-08-15T02:22:18Z:re_review",
+      "comment_id": "5300048943",
+      "comment_version_key": "5300048943:2026-08-15T02:22:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123457#issuecomment-5300048943",
+      "comment_created_at": "2026-08-15T02:22:18Z",
+      "comment_updated_at": "2026-08-15T02:22:18Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123457,
+      "author": "sunlit-deng",
+      "author_id": 253064511,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T02:23:08.047Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/plugin-node-capability-approval-current",
+        "head_sha": "3f64e3ab861955f3aee458b6bb998df90123eb87",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
