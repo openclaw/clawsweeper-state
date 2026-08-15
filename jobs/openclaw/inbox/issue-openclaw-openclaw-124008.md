@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the New Session model picker for https://github.com/openclaw/openclaw/issues/124008. Keep `chat.metadata` prepared-only at startup; when the shared picker opens, perform the existing non-prepared `models.list { view: "configured", agentId }` flow and safely replace the prepared catalog only if the current client, agent, and request generation still own the result. Preserve prepared rows while discovery runs, surface failure with retry, and prevent late metadata responses from overwriting the richer result. Add a focused regression with prepared Z.AI-only metadata and richer Google/OpenAI configured results; add mocked-Gateway New Session E2E proof that no discovery occurs at startup and opening the picker shows all provider groups. Do not add configuration, change Gateway startup discovery, or edit CHANGELOG.md; record user-visible behavior in the PR body.
+Repair the New Session model picker so opening it can request `models.list` with `view: "configured"` for the active agent and replace only that control's catalog when the response is still current. Preserve snapshot-only `chat.metadata` startup behavior and its retry semantics; do not add live discovery to Gateway metadata or alter prepared-catalog lifecycle. Add a regression where metadata contains only authored rows and the picker-open catalog response adds dynamic providers; retain the prepared catalog and expose retryable state if discovery fails. Do not edit CHANGELOG.md; include user-visible release-note context in the PR body.
 
 Likely files:
 
 - ui/src/pages/new-session/model-control.ts
 - ui/src/pages/new-session/model-control.test.ts
 - ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
+- ui/src/pages/chat/models.ts
 
 Validation:
 
-- pnpm test ui/src/pages/new-session/model-control.test.ts
-- pnpm test ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
-- Capture sanitized before/after New Session picker proof from the changed UI flow.
+- node scripts/run-vitest.mjs ui/src/pages/new-session/model-control.test.ts
+- node scripts/check-changed.mjs -- ui/src/pages/new-session/model-control.ts ui/src/pages/new-session/model-control.test.ts
+- Run a focused Control UI mock-Gateway E2E proving picker-open discovery after the unit regression is established.
 
 ## Operator Prompt
 
