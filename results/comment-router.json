@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T03:05:43.027Z",
+  "updated_at": "2026-08-15T03:05:49.523Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:476:5298267672:2026-08-14T21:18:17Z:re_review",
-      "comment_id": "5298267672",
-      "comment_version_key": "5298267672:2026-08-14T21:18:17Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/476#issuecomment-5298267672",
-      "comment_created_at": "2026-08-14T21:18:17Z",
-      "comment_updated_at": "2026-08-14T21:18:17Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 476,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T21:18:52.358Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/dialog-outcome-attribution",
-        "head_sha": "0c3cca6e6a2288e6b4a0debe55f525fab1f84bbb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123838:5298269399:2026-08-14T21:18:31Z:clawsweeper_auto_repair",
       "comment_id": "5298269399",
@@ -32744,6 +32697,39 @@
         "kind": "pull_request",
         "branch": "user/giodl/clawhub-claws-final-exam",
         "head_sha": "0c0517c9c95ff00775a5aa054d5944689a556c5c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123959:5300184660:2026-08-15T03:05:05Z:clawsweeper_needs_human",
+      "comment_id": "5300184660",
+      "comment_version_key": "5300184660:2026-08-15T03:05:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123959#issuecomment-5300184660",
+      "comment_created_at": "2026-08-15T02:52:58Z",
+      "comment_updated_at": "2026-08-15T03:05:05Z",
+      "comment_body_sha256": "6bbfbbff83e4545fd5fe13c2a6dcd5d262d288bc12b8ece1528c1f0115cb8386",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123959,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing --output symlink will be replaced rather than followed; the maintainer explicitly accepted the named-path atomic-publication boundary in the PR discussion. (sha=b90f134e861b3c8d8ba79b2e1b3e443089b5d2fc)",
+      "expected_head_sha": "b90f134e861b3c8d8ba79b2e1b3e443089b5d2fc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T03:05:49.523Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa-refill-fs-process-v2",
+        "head_sha": "b90f134e861b3c8d8ba79b2e1b3e443089b5d2fc",
         "cluster_id": null,
         "job_path": null
       }
