@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T19:03:58.542Z",
+  "updated_at": "2026-08-15T19:04:21.227Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124178:5302401880:2026-08-15T13:16:38Z:clawsweeper_auto_repair",
-      "comment_id": "5302401880",
-      "comment_version_key": "5302401880:2026-08-15T13:16:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124178#issuecomment-5302401880",
-      "comment_created_at": "2026-08-15T13:16:38Z",
-      "comment_updated_at": "2026-08-15T13:16:38Z",
-      "comment_body_sha256": "05197063ae16d6c4269f475e5ac2d49b1c566f4a285c8285fcc192fc69f2e5f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124178,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1b85123c5770b7f0fe4519298aa09ea534e88e6f)",
-      "expected_head_sha": "1b85123c5770b7f0fe4519298aa09ea534e88e6f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T13:18:25.091Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/session-catalog-cleanup",
-        "head_sha": "1b85123c5770b7f0fe4519298aa09ea534e88e6f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123666:5293712954:2026-08-14T13:14:53Z:re_review",
       "comment_id": "5293712954",
@@ -32184,6 +32151,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T19:03:58.542Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2933:5294939483:2026-08-15T19:03:30Z:clawsweeper_needs_human",
+      "comment_id": "5294939483",
+      "comment_version_key": "5294939483:2026-08-15T19:03:30Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2933#issuecomment-5294939483",
+      "comment_created_at": "2026-08-14T15:13:42Z",
+      "comment_updated_at": "2026-08-15T19:03:30Z",
+      "comment_body_sha256": "e476c3065681ee2c6400cd0515a11c838238a62e0939bf37898721120ce4bbf2",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2933,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides fixture and mocked-transport checks, but no redacted after-fix run against a real consented external OAuth source. After adding...; Review finding: [P1] Treat native Codex auth as read-only — Sources/CodexBarCore/Providers/Codex/CodexOAuth/CodexOAuthCredentials.swift:15 - [high] Shared Codex auth can be overwr... (sha=21cd8ee998d97e53895e812cdf69a0202b9f3060)",
+      "expected_head_sha": "21cd8ee998d97e53895e812cdf69a0202b9f3060",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T19:04:21.227Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/codex-oauth-sources",
+        "head_sha": "21cd8ee998d97e53895e812cdf69a0202b9f3060",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
