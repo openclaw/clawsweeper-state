@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T05:33:23.996Z",
+  "updated_at": "2026-08-15T05:33:24.566Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121343:5235627695:2026-08-14T23:50:31Z:clawsweeper_auto_repair",
-      "comment_id": "5235627695",
-      "comment_version_key": "5235627695:2026-08-14T23:50:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121343#issuecomment-5235627695",
-      "comment_created_at": "2026-08-10T03:44:41Z",
-      "comment_updated_at": "2026-08-14T23:50:31Z",
-      "comment_body_sha256": "2dd3dd828955046287bcc35dea402b83fdecfb5f0bb016bf342a2451ee9dc0af",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121343,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f999d0ae4d9a83a3861c617c9a4991b00dfa8dc8)",
-      "expected_head_sha": "f999d0ae4d9a83a3861c617c9a4991b00dfa8dc8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T23:52:51.943Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-auth-error-mapping-upstream",
-        "head_sha": "f999d0ae4d9a83a3861c617c9a4991b00dfa8dc8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123626:5293270705:2026-08-14T23:42:46Z:clawsweeper_auto_repair",
       "comment_id": "5293270705",
@@ -33109,6 +33076,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123976:5300748184:2026-08-15T05:32:40Z:re_review",
+      "comment_id": "5300748184",
+      "comment_version_key": "5300748184:2026-08-15T05:32:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123976#issuecomment-5300748184",
+      "comment_created_at": "2026-08-15T05:32:40Z",
+      "comment_updated_at": "2026-08-15T05:32:40Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123976,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T05:33:21.556Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/workspace-quiescence-thaw",
+        "head_sha": "2bd05b09f2254eecc8c6caf423b10104d4b3d1f1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123860:5298586980:2026-08-15T05:32:40Z:clawsweeper_needs_human",
