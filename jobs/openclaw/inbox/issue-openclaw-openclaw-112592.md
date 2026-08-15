@@ -67,29 +67,26 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair internal completion provenance without changing routing: define one canonical internal source-provenance value and replace only the seven internal completion `sourceChannel` producers/defaults. Preserve explicit caller-supplied source channels and every `channel: INTERNAL_MESSAGE_CHANNEL` route. Add owner-boundary regression coverage for queued and direct announcement paths plus media and harness producers; tests must fail before the repair because they observe persisted provenance, not implementation shape. Do not add config, migration readers, or CHANGELOG.md edits.
+Repair the provenance ambiguity in https://github.com/openclaw/openclaw/issues/112592. Add a distinct core `internal` provenance constant beside the routing-only `INTERNAL_MESSAGE_CHANNEL`; replace only internal completion and announce `sourceChannel` producers/defaults with it. Preserve all `channel` and `route.channel` uses of `INTERNAL_MESSAGE_CHANNEL`, do not make `internal` Gateway-routable, add config, or backfill persisted transcript data. Add regression coverage for queued and direct announcement fallbacks plus a provenance-envelope assertion. Do not edit CHANGELOG.md; state user-visible release-note context in the PR body.
 
 Likely files:
 
 - src/utils/message-channel-constants.ts
-- src/agents/subagents/announce/subagent-announce-delivery.ts
-- src/agents/subagents/announce/subagent-announce-direct-delivery.ts
-- src/agents/subagents/announce/subagent-announce.ts
-- src/agents/subagents/announce/subagent-announce-descendant-wake.ts
-- src/agents/subagents/announce/subagent-announce.requester-settle-wake.ts
 - src/agents/tools/media-generate-background-shared.ts
 - src/plugin-sdk/agent-harness-task-runtime.ts
+- src/agents/subagents/announce/subagent-announce.ts
+- src/agents/subagents/announce/subagent-announce.requester-settle-wake.ts
+- src/agents/subagents/announce/subagent-announce-descendant-wake.ts
+- src/agents/subagents/announce/subagent-announce-delivery.ts
+- src/agents/subagents/announce/subagent-announce-direct-delivery.ts
 - src/agents/subagents/announce/subagent-announce-delivery.test.ts
-- src/agents/tools/media-generate-background-shared.test.ts
-- src/plugin-sdk/agent-harness-task-runtime.test.ts
-- src/agents/subagents/announce/subagent-announce.requester-settle-wake.test.ts
+- src/agents/subagents/announce/subagent-announce.format.e2e.test.ts
 
 Validation:
 
 - pnpm test src/agents/subagents/announce/subagent-announce-delivery.test.ts
-- pnpm test src/agents/tools/media-generate-background-shared.test.ts
-- pnpm test src/plugin-sdk/agent-harness-task-runtime.test.ts
-- pnpm test src/agents/subagents/announce/subagent-announce.requester-settle-wake.test.ts
+- pnpm test src/agents/subagents/announce/subagent-announce.format.e2e.test.ts
+- pnpm test src/utils/message-channel.test.ts
 - pnpm check:changed
 
 ## Operator Prompt
