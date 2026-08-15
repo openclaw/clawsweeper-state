@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T19:36:51.289Z",
+  "updated_at": "2026-08-15T19:38:26.060Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123541:5302577320:2026-08-15T14:04:03Z:re_review",
-      "comment_id": "5302577320",
-      "comment_version_key": "5302577320:2026-08-15T14:04:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123541#issuecomment-5302577320",
-      "comment_created_at": "2026-08-15T14:04:03Z",
-      "comment_updated_at": "2026-08-15T14:04:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123541,
-      "author": "njuboy11",
-      "author_id": 269810813,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T14:14:21.904Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/branches-list-quadratic-summarize",
-        "head_sha": "dabb8a16a4d14673333e86790762b705f8128050",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80396:4416120074:2026-08-15T14:03:33Z:clawsweeper_needs_human",
       "comment_id": "4416120074",
@@ -31488,6 +31441,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119001:5303900441:2026-08-15T19:37:36Z:re_review",
+      "comment_id": "5303900441",
+      "comment_version_key": "5303900441:2026-08-15T19:37:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119001#issuecomment-5303900441",
+      "comment_created_at": "2026-08-15T19:37:36Z",
+      "comment_updated_at": "2026-08-15T19:37:36Z",
+      "comment_body_sha256": "e9226cfe49055139ec110c7d18cbd893176b40cc5a498f988bd5a48b4b9d78b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119001,
+      "author": "GoatInAHat",
+      "author_id": 55002508,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review exact head 5eb46f532619443263355ec3fe4cf20c51769a93. final deletion-first refactor removed the two gpt-live compatibility wrappers and duplicate codex dependency declarations, made the shared talk runtime own lazy webrtc/opus loading, and cut 900 changed lines without changing behavior. the pr body now includes direct immutable codex 0.147.0 protocol/auth/recovery links and exact-head verification",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T19:38:23.988Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/codex-native-realtime-voice",
+        "head_sha": "5eb46f532619443263355ec3fe4cf20c51769a93",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
