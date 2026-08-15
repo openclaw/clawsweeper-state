@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T08:55:28.871Z",
+  "updated_at": "2026-08-15T08:56:15.231Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5300490204:2026-08-15T04:17:42Z:re_review",
-      "comment_id": "5300490204",
-      "comment_version_key": "5300490204:2026-08-15T04:17:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5300490204",
-      "comment_created_at": "2026-08-15T04:17:42Z",
-      "comment_updated_at": "2026-08-15T04:17:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T04:18:27.867Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/turn-maintenance-per-task-timeout",
-        "head_sha": "78f8e9f7b3af774c718e71531ca3e6f680c396e5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117128:5148652773:2026-08-15T04:14:42Z:clawsweeper_needs_human",
       "comment_id": "5148652773",
@@ -32451,6 +32404,39 @@
         "kind": "pull_request",
         "branch": "codex/autoqa-reconcile-tombstones",
         "head_sha": "1cde9598bb317a6ab15887de2cdb1d6d7262899f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124118:5301475618:2026-08-15T08:55:33Z:clawsweeper_needs_human",
+      "comment_id": "5301475618",
+      "comment_version_key": "5301475618:2026-08-15T08:55:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124118#issuecomment-5301475618",
+      "comment_created_at": "2026-08-15T08:55:33Z",
+      "comment_updated_at": "2026-08-15T08:55:33Z",
+      "comment_body_sha256": "b6f799241fc9b61c850d002f1b7d2fdfc44cb05fd089bf0c38627cf68c463ce8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124118,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, so its exact merged result and exact-head checks need refresh before landing. (sha=aef52d81302c2c34ee60581295e2289572fd9d71)",
+      "expected_head_sha": "aef52d81302c2c34ee60581295e2289572fd9d71",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T08:56:15.231Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa-refill-memory-vector-cancel-v2",
+        "head_sha": "aef52d81302c2c34ee60581295e2289572fd9d71",
         "cluster_id": null,
         "job_path": null
       }
