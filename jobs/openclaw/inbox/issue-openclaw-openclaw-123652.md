@@ -67,21 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven Responses cache-lineage bug in https://github.com/openclaw/openclaw/issues/123652. First establish a failing regression for same-turn full replay with an active user, runtime-context carrier, and appended assistant/tool-call/tool-result items: current behavior yields P+U+Y+X after P+U+X. Change the canonical runtime-context placement owner so the current carrier remains immediately after the active user during the tool loop, while preserving existing removal of historical carriers before the next user turn. Do not add a config option, disable prompt caching, or filter the carrier from Responses provider input. Update the contrary tail-placement tests and add focused Azure/OpenAI Responses payload-order coverage. Do not edit CHANGELOG.md; record user-visible cache behavior in the PR body. Stop for maintainer review if the change requires a new provider contract or policy choice.
+Repair the source-proven runtime-context carrier ordering bug from https://github.com/openclaw/openclaw/issues/123652. Keep the carrier immediately after the active user message during a tool loop so successive full-replay Responses inputs are `P+U+X` then `P+U+X+Y`; continue stripping historical carriers before the next user turn. Change the owner-boundary helper and focused tests, not provider-specific filters or new config/cache options. Verify Azure/OpenAI Responses serialization order through the shared conversion or Azure request-capture seam. Do not edit CHANGELOG.md; include release-note context in the PR body. Obtain a redacted after-fix provider trace when credentials are available.
 
 Likely files:
 
 - src/agents/internal-runtime-context.ts
 - src/agents/internal-runtime-context.test.ts
+- src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
 - src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
-- packages/ai/src/providers/openai-responses-shared.test.ts
 - packages/ai/src/providers/azure-openai-responses.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/internal-runtime-context.test.ts src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts packages/ai/src/providers/openai-responses-shared.test.ts packages/ai/src/providers/azure-openai-responses.test.ts
-- Capture consecutive redacted Azure/OpenAI Responses full-replay payloads after the fix and verify each prior tool-loop input is an exact prefix of the next before the provider appends new items.
-- Verify existing Anthropic and OpenAI-completions carrier cache-anchor coverage remains valid.
+- node scripts/run-vitest.mjs src/agents/internal-runtime-context.test.ts
+- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- node scripts/run-vitest.mjs packages/ai/src/providers/azure-openai-responses.test.ts
+- Capture redacted consecutive Azure/OpenAI Responses payloads showing `P+U+X` followed by `P+U+X+Y` and their usage fields.
 
 ## Operator Prompt
 
