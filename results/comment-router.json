@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T19:48:14.955Z",
+  "updated_at": "2026-08-15T19:48:38.958Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120190:5227446246:2026-08-08T18:12:42Z:re_review",
-      "comment_id": "5227446246",
-      "comment_version_key": "5227446246:2026-08-08T18:12:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120190#issuecomment-5227446246",
-      "comment_created_at": "2026-08-08T18:12:42Z",
-      "comment_updated_at": "2026-08-08T18:12:42Z",
-      "comment_body_sha256": "a2c2545748c02f3aaad02691a3530e16b4518b2203bfa6409537785373bedac2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120190,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T14:42:07.864Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120190:5227891876:2026-08-08T20:05:28Z:re_review",
       "comment_id": "5227891876",
@@ -31258,6 +31231,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120632:5227327885:2026-08-15T19:40:56Z:clawsweeper_needs_human",
+      "comment_id": "5227327885",
+      "comment_version_key": "5227327885:2026-08-15T19:40:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120632#issuecomment-5227327885",
+      "comment_created_at": "2026-08-08T17:42:04Z",
+      "comment_updated_at": "2026-08-15T19:40:56Z",
+      "comment_body_sha256": "8cdfd82f560d7b26d10fdb19c410be19dd7fc4d67a8280ef09b2d1284273343e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120632,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve the established atomic artifact contract (P1)** - This deletes the prior evidence before every normal suite run and replaces it with raw staged writes. Since the wrapper now covers direct flow and unifi...; Review finding: [P1] Preserve the established atomic artifact contract — extensions/qa-lab/src/suite-evidence-lifecycle.ts:42-46 - [medium] Artifact permissions regress to the pro... (sha=7b25193235756dd01b5e4e0700c2394489b99cef)",
+      "expected_head_sha": "7b25193235756dd01b5e4e0700c2394489b99cef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T19:48:38.958Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-evidence-lifecycle-rebuild-20260808",
+        "head_sha": "7b25193235756dd01b5e4e0700c2394489b99cef",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
