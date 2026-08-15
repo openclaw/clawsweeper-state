@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current Tool Search `tool_call` dispatcher for the source-proven envelope `{args:{id:&lt;catalog-id>,args:&lt;target-input>}}`. First capture a failing regression at the real control-tool boundary. In `src/agents/tool-search.ts` and `src/agents/tool-search-runtime.ts`, admit and unwrap only one shallow nested envelope when no outer `id`, `toolId`, or `name` exists and inner `args.id` is a nonblank string. Preserve canonical outer-selector precedence, dotted `args.*` behavior, ambiguity errors, catalog lookup, target hooks, and target-schema validation; do not add provider- or channel-specific workarounds. Extend the existing table-driven Tool Search runtime test to prove schema admission and actual strict target dispatch, plus a canonical-shape non-regression. Do not edit CHANGELOG.md; put any release-note context in the PR body.
+Repair the Tool Search structured `tool_call` double-wrapper bug. At the Tool Search control boundary, normalize only `{args:{id:&lt;nonempty string>,args:&lt;input>}}` when no outer `id`, `toolId`, or `name` exists, before schema validation; share that normalization with `readToolSearchCallArgs` so direct execution has identical behavior. Preserve canonical inputs, existing dotted `args.*` handling, target fields named `id`/`name`, and ambiguous-selector rejection. Extend the existing Tool Search runtime suite with a failing-before-fix real control-tool dispatch case that proves the strict target executes once with the inner arguments. Do not add config, broaden recovery to unsupported shapes, alter channel warning policy, or edit CHANGELOG.md; record user-visible release-note context in the PR body or commit message. Related context: https://github.com/openclaw/openclaw/issues/119418.
 
 Likely files:
 
@@ -77,8 +77,7 @@ Likely files:
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/tool-search-runtime.test.ts
-- node scripts/check-changed.mjs -- src/agents/tool-search.ts src/agents/tool-search-runtime.ts src/agents/tool-search-runtime.test.ts
+- pnpm test src/agents/tool-search-runtime.test.ts
 
 ## Operator Prompt
 
