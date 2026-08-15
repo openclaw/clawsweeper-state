@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T05:23:39.052Z",
+  "updated_at": "2026-08-15T05:24:03.097Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121578:5241578875:2026-08-10T14:23:27Z:re_review",
-      "comment_id": "5241578875",
-      "comment_version_key": "5241578875:2026-08-10T14:23:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121578#issuecomment-5241578875",
-      "comment_created_at": "2026-08-10T14:23:27Z",
-      "comment_updated_at": "2026-08-10T14:23:27Z",
-      "comment_body_sha256": "fee64ebcb5cc99720cc5f3a9ebc08db4e2b92b0875363cab588cd1f4bfdf9164",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121578,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T23:29:30.745Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:105025:5299164081:2026-08-14T23:29:38Z:re_review",
       "comment_id": "5299164081",
@@ -33098,6 +33071,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:486:5300322294:2026-08-15T05:23:10Z:clawsweeper_needs_human",
+      "comment_id": "5300322294",
+      "comment_version_key": "5300322294:2026-08-15T05:23:10Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/486#issuecomment-5300322294",
+      "comment_created_at": "2026-08-15T03:30:45Z",
+      "comment_updated_at": "2026-08-15T05:23:10Z",
+      "comment_body_sha256": "32a9071f4aa72b44e99d63a7824103996b88211f8bd9b26dd4061e78932dea2a",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 486,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing inactive-window typing workflows that cannot supply a fresh exact focused-element receipt will now refuse rather than use application-level focus. (sha=13d90e8e5ab9d7917d266f899291576ebedf3adc)",
+      "expected_head_sha": "13d90e8e5ab9d7917d266f899291576ebedf3adc",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T05:24:03.097Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/inactive-focus-receipts",
+        "head_sha": "13d90e8e5ab9d7917d266f899291576ebedf3adc",
+        "cluster_id": "automerge-openclaw-peekaboo-486",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-peekaboo-486.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
