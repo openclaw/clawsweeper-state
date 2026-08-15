@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Tool Search structured `tool_call` boundary for the unambiguous model payload `{args:{id:&lt;target>,args:&lt;input>}}`. Add a Tool Search-specific argument preparer that runs before agent-loop schema validation and share that normalization with direct dispatcher parsing. Only hoist when no outer selector exists and the nested selector is a nonempty string; preserve strict dispatcher schema validation, catalog ambiguity checks, policy hooks, and target input validation. Add a regression that fails on current main and exercises preparation before validation, then proves the selected target receives the inner input. Keep the change generic: no provider-specific branch, configuration option, fallback route, or CHANGELOG edit. Include user-visible release-note context in the PR body.
+Repair the current Tool Search `tool_call` dispatcher for the source-proven envelope `{args:{id:&lt;catalog-id>,args:&lt;target-input>}}`. First capture a failing regression at the real control-tool boundary. In `src/agents/tool-search.ts` and `src/agents/tool-search-runtime.ts`, admit and unwrap only one shallow nested envelope when no outer `id`, `toolId`, or `name` exists and inner `args.id` is a nonblank string. Preserve canonical outer-selector precedence, dotted `args.*` behavior, ambiguity errors, catalog lookup, target hooks, and target-schema validation; do not add provider- or channel-specific workarounds. Extend the existing table-driven Tool Search runtime test to prove schema admission and actual strict target dispatch, plus a canonical-shape non-regression. Do not edit CHANGELOG.md; put any release-note context in the PR body.
 
 Likely files:
 
@@ -78,8 +78,7 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/tool-search-runtime.test.ts
-- node scripts/run-vitest.mjs src/agents/tool-search.test.ts
-- node scripts/run-vitest.mjs src/agents/tool-search.mcp-error.test.ts
+- node scripts/check-changed.mjs -- src/agents/tool-search.ts src/agents/tool-search-runtime.ts src/agents/tool-search-runtime.test.ts
 
 ## Operator Prompt
 
