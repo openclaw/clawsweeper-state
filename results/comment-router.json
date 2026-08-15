@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T03:08:02.103Z",
+  "updated_at": "2026-08-15T03:08:03.198Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123284:5298125955:2026-08-14T21:00:32Z:re_review",
-      "comment_id": "5298125955",
-      "comment_version_key": "5298125955:2026-08-14T21:00:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123284#issuecomment-5298125955",
-      "comment_created_at": "2026-08-14T21:00:32Z",
-      "comment_updated_at": "2026-08-14T21:00:32Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123284,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T21:20:13.662Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/i-find-the-little-subtitles-underneath-the-sessions-in-the-sideb",
-        "head_sha": "482d666f78e6d2168b58cabd30d56f8b433234cb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123573:5291596461:2026-08-14T21:17:30Z:clawsweeper_auto_repair",
       "comment_id": "5291596461",
@@ -32761,6 +32714,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/discrawl:173:5297650620:2026-08-15T03:07:22Z:clawsweeper_needs_human",
+      "comment_id": "5297650620",
+      "comment_version_key": "5297650620:2026-08-15T03:07:22Z",
+      "comment_url": "https://github.com/openclaw/discrawl/pull/173#issuecomment-5297650620",
+      "comment_created_at": "2026-08-14T20:04:37Z",
+      "comment_updated_at": "2026-08-15T03:07:22Z",
+      "comment_body_sha256": "1ee291072c60b87ef614226fc43872c040fe470bfe02471f399adc514d94c0d1",
+      "repo": "openclaw/discrawl",
+      "issue_number": 173,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed; the remaining action is the normal maintainer merge check for this release-owned update. (sha=7d921a991e14f5691c54a7450fcf0f8a3e0565bc)",
+      "expected_head_sha": "7d921a991e14f5691c54a7450fcf0f8a3e0565bc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T03:08:03.198Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/next-unreleased-0.13.2-31835397821",
+        "head_sha": "7d921a991e14f5691c54a7450fcf0f8a3e0565bc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
