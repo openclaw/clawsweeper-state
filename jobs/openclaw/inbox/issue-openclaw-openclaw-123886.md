@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the rich Telegram `/models` picker lifecycle for https://github.com/openclaw/openclaw/issues/123886. Preserve the original callback message representation at the callback action owner: rich picker messages must use the established rich raw edit path, while legacy text and HTML messages retain their current behavior. Do not add configuration or client-specific branches. Add a regression through the callback router and harness that proves rich picker send → provider/list/select callback edit, including the final confirmation and button removal; it must fail before the repair. Check sibling callback paths for representation safety. Put release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the Telegram callback-message representation invariant for rich-message accounts. Route model-picker callback edits—including provider navigation, model-list navigation, back, errors, and final confirmation—through the existing rich edit contract when the picker was delivered on the rich path, while preserving legacy behavior for non-rich accounts. Keep business-connection parameters, inline-keyboard semantics, and the no-text fallback intact; do not add configuration or core/plugin-SDK surface. Render the final model confirmation through a rich-compatible representation rather than relying on its current HTML-only legacy call. Add a boundary regression that fails on current main by asserting the rich callback lifecycle uses raw editMessageText with rich_message and the normal account lifecycle remains legacy. Do not edit CHANGELOG.md; include release-note context and redacted real Telegram evidence in the PR body.
 
 Likely files:
 
 - extensions/telegram/src/bot-handlers.callback-actions.ts
 - extensions/telegram/src/bot-handlers.callback-router.ts
-- extensions/telegram/src/bot.create-telegram-bot.test.ts
-- extensions/telegram/src/bot.create-telegram-bot.test-harness.ts
+- extensions/telegram/src/bot.test.ts
+- extensions/telegram/src/transport-payload.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/telegram/src/bot.create-telegram-bot.test.ts
-- git diff --check
-- Redacted live Telegram rich `/models` callback proof
+- node scripts/run-vitest.mjs extensions/telegram/src/bot.test.ts
+- node scripts/run-vitest.mjs extensions/telegram/src/transport-payload.test.ts
+- Run a redacted real Telegram `/models` picker flow with richMessages enabled and record that provider navigation and final model confirmation replace the original message cleanly.
 
 ## Operator Prompt
 
