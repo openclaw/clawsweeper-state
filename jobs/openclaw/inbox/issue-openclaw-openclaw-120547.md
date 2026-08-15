@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Feishu plain-group bound-agent footer bug from https://github.com/openclaw/openclaw/issues/120547. First establish a focused failing regression in `extensions/feishu/src/bot.test.ts`: an ordinary `group`-scope message with a bound non-main ACP session must dispatch with the bound agent’s outbound identity/card note while retaining the original Feishu route session key. Add only the attribution lookup needed at the Feishu plugin boundary; do not open `feishuAcpConversationSupported`, change group session ownership, touch/extend runtime binding expiry for attribution, or apply ACP attribution to non-ACP targets. Reuse or narrowly extend the existing shared binding contract only if necessary, with coverage in `src/channels/plugins/binding-routing.test.ts`. Preserve the existing configured/topic behavior, do not add config, and include user-visible release-note context in the PR body rather than editing CHANGELOG.md. Credit the useful prior attempt at https://github.com/openclaw/openclaw/pull/120599 if its approach informs the repair.
+Repair https://github.com/openclaw/openclaw/issues/120547 on current main. Preserve Feishu plain-group session ownership and core dispatch behavior; only make the reply-card identity/footer reflect a matching bound ACP agent. Keep non-ACP bindings on the route agent, do not refresh binding idle expiry for attribution-only lookup, and use the public conversation-runtime SDK seam rather than a core-internal import. Add a regression at the actual plugin/dispatch boundary that fails before the repair for ACP-bound plain groups, plus non-ACP and topic/direct unaffected coverage. Do not add config or changelog changes. https://github.com/openclaw/openclaw/pull/120599 is source material only, not a branch to revive.
 
 Likely files:
 
@@ -78,7 +78,6 @@ Likely files:
 
 Validation:
 
-- Demonstrate that the new regression fails on current main before editing.
 - node scripts/run-vitest.mjs extensions/feishu/src/bot.test.ts
 - node scripts/run-vitest.mjs src/channels/plugins/binding-routing.test.ts
 
