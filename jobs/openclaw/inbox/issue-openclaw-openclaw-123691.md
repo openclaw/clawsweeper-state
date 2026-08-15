@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Gateway audit worker’s external shared-state ownership propagation. At the worker’s database-options boundary, preserve inherited process environment values while overriding only OPENCLAW_STATE_DIR. Add one real worker-thread regression: claim ownership with OPENCLAW_SUPERVISOR_MODE=external, persist an audit event through the writer with no error, and retain the existing proof that an unmarked writer is rejected. Do not add configuration, weaken ownership admission, change SQLite schema/version, or edit CHANGELOG.md; include release-note context in the PR body.
+Repair the source-proven external-ownership failure in https://github.com/openclaw/openclaw/issues/123691. Keep the state ownership gate fail-closed for unmarked writers. In the Gateway audit worker, derive database options from the inherited process environment while overriding only OPENCLAW_STATE_DIR; do not add a config option, fallback, migration, or parallel write path. Add a real worker-thread regression that claims ownership under OPENCLAW_SUPERVISOR_MODE=external, verifies an audit event persists without errors, and verifies an unmarked writer remains rejected. Check the linked closed-unmerged attempt https://github.com/openclaw/openclaw/pull/123812 only as prior context. Include release-note context in the PR body if user-visible, but do not edit CHANGELOG.md.
 
 Likely files:
 
@@ -79,6 +79,7 @@ Validation:
 
 - node scripts/run-vitest.mjs src/audit/audit-event-writer.test.ts
 - node scripts/run-vitest.mjs src/state/openclaw-state-ownership.test.ts
+- git diff --check
 
 ## Operator Prompt
 
