@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T09:01:39.482Z",
+  "updated_at": "2026-08-15T09:02:07.364Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5300510006:2026-08-15T04:23:20Z:re_review",
-      "comment_id": "5300510006",
-      "comment_version_key": "5300510006:2026-08-15T04:23:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5300510006",
-      "comment_created_at": "2026-08-15T04:23:20Z",
-      "comment_updated_at": "2026-08-15T04:23:20Z",
-      "comment_body_sha256": "01d1f9268dad2e33c661d8504454ea8ead50a201490d75243d043712fb0c54f7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T04:26:30.516Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bartok9/cron-precheck-gate",
-        "head_sha": "61da12935abb86163edbfb1f8e469fa05af73224",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2945:5300342712:2026-08-15T04:25:48Z:clawsweeper_needs_human",
       "comment_id": "5300342712",
@@ -32453,6 +32406,39 @@
         "kind": "pull_request",
         "branch": "fix/github-http-timeout",
         "head_sha": "3277d224b6bbe5de429e1e5ac804854b01b090b4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:71:5209990860:2026-08-15T09:01:09Z:clawsweeper_needs_human",
+      "comment_id": "5209990860",
+      "comment_version_key": "5209990860:2026-08-15T09:01:09Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/71#issuecomment-5209990860",
+      "comment_created_at": "2026-08-06T23:38:53Z",
+      "comment_updated_at": "2026-08-15T09:01:09Z",
+      "comment_body_sha256": "87ee0d5ec48dba508997394c104db9227905288f26239a9a14caf124be2a3350",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 71,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Hono 4.13.0 is used by the public and protected API router, so a compatibility regression could affect route dispatch. (sha=b92b6f7e8dc6ecd7ef9bb2e32dc22f331df2fc33)",
+      "expected_head_sha": "b92b6f7e8dc6ecd7ef9bb2e32dc22f331df2fc33",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T09:02:07.364Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-aab3d26328",
+        "head_sha": "b92b6f7e8dc6ecd7ef9bb2e32dc22f331df2fc33",
         "cluster_id": null,
         "job_path": null
       }
