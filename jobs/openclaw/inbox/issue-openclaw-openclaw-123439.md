@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Gateway cron-binding availability bug in https://github.com/openclaw/openclaw/issues/123439. First establish a focused failing regression or instrumentation path with a per-agent session-store configuration and many discovered/registered agent databases. Keep the session-store ownership, SQLite target, and symlink-validation contracts intact. Repair `broadcastCronBoundSessionChanges` so a cron binding event does not synchronously materialize a session row and trigger all-agent store discovery; its existing event contract says clients perform the canonical refresh and row fields are optional. Do not add TTL/mtime polling or weaken identity checks. Add regression coverage that cron binding broadcasts retain their session key/reason while avoiding synchronous store discovery. Do not edit CHANGELOG.md; put concise release-note context in the PR body. Stop and return to triage if preserving the event payload requires a new compatibility or product decision.
+Repair the cron-binding Gateway event-loop stall. In src/gateway/server-cron.ts, remove the optional loadGatewaySessionRow/buildGatewaySessionEventFields enrichment from cron-binding broadcasts while preserving sessionKey, reason: "cron-binding", timestamp, and dropIfSlow delivery. First verify plugin subscribers tolerate the already-supported no-row sessions.changed shape; do not add mtime polling, a new config option, a SQLite migration, or a fallback path. Extend src/gateway/server-cron.test.ts so a mocked row loader is never called while cron add/update still emits the expected invalidation event; the assertion must fail before the production change. Confirm the Control UI’s canonical sessions.changed refresh remains valid. Do not edit CHANGELOG.md; record user-facing impact in the PR body.
 
 Likely files:
 
 - src/gateway/server-cron.ts
 - src/gateway/server-cron.test.ts
-- src/gateway/session-utils-store.ts
+- ui/src/lib/sessions/index.event-refresh.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/server-cron.test.ts
-- node scripts/run-vitest.mjs src/gateway/session-utils.test.ts
-- git diff --check
+- node scripts/run-vitest.mjs ui/src/lib/sessions/index.event-refresh.test.ts
 
 ## Operator Prompt
 
