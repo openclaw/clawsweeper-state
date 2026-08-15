@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T09:35:31.812Z",
+  "updated_at": "2026-08-15T09:36:07.926Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124016:5300607015:2026-08-15T04:51:22Z:clawsweeper_needs_human",
-      "comment_id": "5300607015",
-      "comment_version_key": "5300607015:2026-08-15T04:51:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124016#issuecomment-5300607015",
-      "comment_created_at": "2026-08-15T04:51:22Z",
-      "comment_updated_at": "2026-08-15T04:51:22Z",
-      "comment_body_sha256": "d1c4a4a92d71aa54dfd3342135e3d2d0f146e44923963ebf2cd5887439ea9026",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124016,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - This is a Plugin SDK compatibility behavior change: legacy sources now release through onAbandoned() on an errored settlement instead of receiving no terminal callback, so exact-head... (sha=abbee1b44784ded7434a4c6cc2de5ce939e88a15)",
-      "expected_head_sha": "abbee1b44784ded7434a4c6cc2de5ce939e88a15",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T04:52:09.119Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/ingress-failure-legacy-fallback",
-        "head_sha": "abbee1b44784ded7434a4c6cc2de5ce939e88a15",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124017:5300610809:2026-08-15T04:52:29Z:clawsweeper_auto_repair",
       "comment_id": "5300610809",
@@ -32235,6 +32202,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T09:35:31.812Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124131:5301623237:2026-08-15T09:35:27Z:clawsweeper_needs_human",
+      "comment_id": "5301623237",
+      "comment_version_key": "5301623237:2026-08-15T09:35:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124131#issuecomment-5301623237",
+      "comment_created_at": "2026-08-15T09:35:27Z",
+      "comment_updated_at": "2026-08-15T09:35:27Z",
+      "comment_body_sha256": "bdd19153e7030f94eeae64bd059deffe9212e33a6c652ebb550785daa9babc22",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124131,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +1 line for the new loader argument; no net-neutral refactor is apparent because the cache-to-loader configuration handoff must be represented at that boundary. (sha=fbc479feec2303aeba3f3b3770e978969114238f)",
+      "expected_head_sha": "fbc479feec2303aeba3f3b3770e978969114238f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T09:36:07.926Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa-refill-usage-status-outcomes-v2",
+        "head_sha": "fbc479feec2303aeba3f3b3770e978969114238f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
