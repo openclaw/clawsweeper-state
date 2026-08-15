@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T23:34:09.628Z",
+  "updated_at": "2026-08-15T23:35:53.062Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123699:5294781304:2026-08-15T18:53:25Z:clawsweeper_needs_human",
-      "comment_id": "5294781304",
-      "comment_version_key": "5294781304:2026-08-15T18:53:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123699#issuecomment-5294781304",
-      "comment_created_at": "2026-08-14T14:59:10Z",
-      "comment_updated_at": "2026-08-15T18:53:25Z",
-      "comment_body_sha256": "e3f6348c36094dceb90d45c4d2a8950f6e175080fc69fbb33e4c0a3b822ab60d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123699,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main and its exact-head check-lint and openclaw/ci-gate checks are failed; merge should wait for a refreshed green head. (sha=e0797f690ef0392783644f5644acaef058470306)",
-      "expected_head_sha": "e0797f690ef0392783644f5644acaef058470306",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T18:54:31.138Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "channels-logs-truncation-notice",
-        "head_sha": "e0797f690ef0392783644f5644acaef058470306",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118683:5167159361:2026-08-15T18:54:12Z:clawsweeper_needs_human",
       "comment_id": "5167159361",
@@ -32216,6 +32183,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124222:5304754346:2026-08-15T23:35:04Z:re_review",
+      "comment_id": "5304754346",
+      "comment_version_key": "5304754346:2026-08-15T23:35:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124222#issuecomment-5304754346",
+      "comment_created_at": "2026-08-15T23:35:04Z",
+      "comment_updated_at": "2026-08-15T23:35:04Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124222,
+      "author": "a-yeyang",
+      "author_id": 88581400,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T23:35:51.047Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-rich-callback-edit",
+        "head_sha": "952e6f8823930a9d706050f5054c22dba84b4692",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
