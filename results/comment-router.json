@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T07:40:20.832Z",
+  "updated_at": "2026-08-15T07:41:37.673Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5300238428:2026-08-15T03:07:21Z:re_review",
-      "comment_id": "5300238428",
-      "comment_version_key": "5300238428:2026-08-15T03:07:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5300238428",
-      "comment_created_at": "2026-08-15T03:07:21Z",
-      "comment_updated_at": "2026-08-15T03:07:21Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T03:07:57.349Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-performance",
-        "head_sha": "8cd7e8e51e3c7ea6fe844344bae17166d4b602a2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5300238235:2026-08-15T03:07:18Z:re_review",
       "comment_id": "5300238235",
@@ -32794,6 +32747,39 @@
         "kind": "pull_request",
         "branch": "automation/native-app-locale-refresh",
         "head_sha": "66837606fb1b41bd185ad5070c1f3e72c0f7f205",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124090:5301204903:2026-08-15T07:40:59Z:clawsweeper_needs_human",
+      "comment_id": "5301204903",
+      "comment_version_key": "5301204903:2026-08-15T07:40:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124090#issuecomment-5301204903",
+      "comment_created_at": "2026-08-15T07:40:59Z",
+      "comment_updated_at": "2026-08-15T07:40:59Z",
+      "comment_body_sha256": "6cf9da3348f34f4cc5a9bd1a9235419f6aa78cf11b08c6f56bc7325be8bbeb6e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124090,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed; this maintainer-labeled cleanup only needs normal exact-head CI and maintainer review. (sha=d0d808c107bfb4195f0d493d564b4095192000ea)",
+      "expected_head_sha": "d0d808c107bfb4195f0d493d564b4095192000ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T07:41:37.673Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/trim-core-strict-subsets",
+        "head_sha": "c8b21b7dbe8ecddc11ca0985cd8ebfb3faf1cca4",
         "cluster_id": null,
         "job_path": null
       }
