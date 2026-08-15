@@ -67,20 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current plain-group Feishu footer-attribution bug from https://github.com/openclaw/openclaw/issues/120547. Preserve `groupSessionScope: "group"` session ownership and all existing execution routing; do not open `feishuAcpConversationSupported` or alter `route.sessionKey`. Extend the existing conversation-runtime resolver with a backwards-compatible read-only `touch: false` lookup if that remains the narrowest public seam, then use its result only for default-group outbound display attribution when the binding is a non-plugin-owned ACP session. Add a plugin-local display/attribution agent parameter for Feishu card identity/header/footer rather than replacing the dispatcher’s operational `agentId`. Keep non-ACP/subagent bindings on the base-route display identity. Add boundary regression coverage proving the plain-group route/session remains `main`, visual attribution follows the ACP-bound agent, non-ACP bindings retain the base identity, and attribution lookup does not touch the binding. Do not add config, alter binding ownership, or edit CHANGELOG.md; stop for maintainer review if a broader permanent plugin SDK direction becomes necessary.
+Repair the plain-Feishu-group bound-ACP footer mismatch from https://github.com/openclaw/openclaw/issues/120547. First establish a failing regression where a plain `group` conversation has a non-main ACP binding: core dispatch must retain its existing bound-session behavior, while the Feishu reply identity/footer must use the bound ACP agent. Implement the attribution lookup in the Feishu plugin through existing public Plugin SDK seams; do not alter route.sessionKey, route.agentId, last-route policy, session ownership, binding expiry/touch behavior, configured-binding behavior, or add config. Keep non-ACP bindings on the existing route identity. Extend the existing Feishu bot test rather than adding a duplicate harness, apply the test-audit gate, and include release-note context in the PR body rather than editing CHANGELOG.md. Prior unmerged source: https://github.com/openclaw/openclaw/pull/120599.
 
 Likely files:
 
 - extensions/feishu/src/bot.ts
 - extensions/feishu/src/bot.test.ts
-- extensions/feishu/src/reply-dispatcher.ts
-- extensions/feishu/src/reply-dispatcher.test.ts
-- src/channels/plugins/binding-routing.ts
-- src/channels/plugins/binding-routing.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/feishu/src/bot.test.ts src/channels/plugins/binding-routing.test.ts
+- node scripts/run-vitest.mjs extensions/feishu/src/bot.test.ts
+- pnpm test:extension feishu
 
 ## Operator Prompt
 
