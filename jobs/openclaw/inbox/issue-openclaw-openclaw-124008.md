@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/124008 by making New Session refresh its model catalog through the shared `models.list` configured-catalog loader when the picker opens. Keep `chat.metadata` as the prepared startup snapshot; preserve request ownership, cancellation, and an actionable retry state when discovery fails. Add a behavior-level regression where prepared metadata has only a static provider and picker-open discovery adds usable dynamic provider rows. Do not alter Gateway startup discovery policy, provider/auth configuration, Codex runtime behavior, or CHANGELOG.md.
+Repair the New Session model picker so opening it requests `models.list` for the selected agent with `view: "configured"` and without `preparedOnly`, mirroring the existing Chat picker’s on-demand discovery. Keep chat.metadata and its prepared-only Gateway contract unchanged. Preserve the prepared catalog during discovery failure and offer retry behavior. Add regression coverage beginning with a static model and revealing a discovered provider model only after opening the New Session picker; the new test must fail before the repair without adding test-only production seams. Capture sanitized Control UI proof if feasible. Do not edit CHANGELOG.md.
 
 Likely files:
 
 - ui/src/pages/new-session/model-control.ts
 - ui/src/pages/new-session/model-control.test.ts
 - ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
-- ui/src/pages/chat/models.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs ui/src/pages/new-session/model-control.test.ts
-- node scripts/run-vitest.mjs run --config test/vitest/vitest.ui-e2e.config.ts ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
-- Capture redacted after-fix New Session picker proof showing dynamically discovered rows are selectable.
+- pnpm test ui/src/pages/new-session/model-control.test.ts
+- pnpm test ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
+- pnpm check:changed -- ui/src/pages/new-session/model-control.ts ui/src/pages/new-session/model-control.test.ts ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
 
 ## Operator Prompt
 
