@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T16:00:24.747Z",
+  "updated_at": "2026-08-15T16:00:59.904Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:154:5297648322:2026-08-15T10:56:39Z:clawsweeper_needs_human",
-      "comment_id": "5297648322",
-      "comment_version_key": "5297648322:2026-08-15T10:56:39Z",
-      "comment_url": "https://github.com/openclaw/gitcrawl/pull/154#issuecomment-5297648322",
-      "comment_created_at": "2026-08-14T20:04:25Z",
-      "comment_updated_at": "2026-08-15T10:56:39Z",
-      "comment_body_sha256": "8fba944a7322d06c504953e8453185829bf6992908af9bc001d0bffa0ca202d9",
-      "repo": "openclaw/gitcrawl",
-      "issue_number": 154,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is appropriate because the patch has no actionable defect; it needs only ordinary release-owner review. (sha=fe353a46d17211eb0e1d5328521ed4984f17016f)",
-      "expected_head_sha": "fe353a46d17211eb0e1d5328521ed4984f17016f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T11:01:18.294Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/next-unreleased-0.9.2-31835391693",
-        "head_sha": "fe353a46d17211eb0e1d5328521ed4984f17016f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110179:5007605823:2026-08-15T11:01:56Z:clawsweeper_auto_repair",
       "comment_id": "5007605823",
@@ -31455,6 +31422,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1349:5303038289:2026-08-15T16:00:03Z:re_review",
+      "comment_id": "5303038289",
+      "comment_version_key": "5303038289:2026-08-15T16:00:03Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1349#issuecomment-5303038289",
+      "comment_created_at": "2026-08-15T16:00:03Z",
+      "comment_updated_at": "2026-08-15T16:00:03Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1349,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T16:00:57.037Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/linux-desktop-telegram",
+        "head_sha": "b579a88f8355c803d6c0828623986917aef50c8c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
