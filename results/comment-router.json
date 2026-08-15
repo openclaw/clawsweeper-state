@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T21:00:44.742Z",
+  "updated_at": "2026-08-15T21:00:49.178Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124200:5303126906:2026-08-15T16:21:29Z:re_review",
-      "comment_id": "5303126906",
-      "comment_version_key": "5303126906:2026-08-15T16:21:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124200#issuecomment-5303126906",
-      "comment_created_at": "2026-08-15T16:21:29Z",
-      "comment_updated_at": "2026-08-15T16:21:29Z",
-      "comment_body_sha256": "a7d61557b9344a52565e211efbe209648a7a383f0e84f4aa8a5ffa02dd4ad4b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124200,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T16:22:17.589Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oc-2f4/repair-buzz-qa-selection",
-        "head_sha": "8436c680b1ca8f0ebe43f89d9dea8b9371b73e29",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2376:5091028524:2026-08-15T16:21:38Z:clawsweeper_auto_repair",
       "comment_id": "5091028524",
@@ -31385,6 +31338,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117240:5150030015:2026-08-15T21:00:09Z:clawsweeper_needs_human",
+      "comment_id": "5150030015",
+      "comment_version_key": "5150030015:2026-08-15T21:00:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117240#issuecomment-5150030015",
+      "comment_created_at": "2026-08-01T05:41:03Z",
+      "comment_updated_at": "2026-08-15T21:00:09Z",
+      "comment_body_sha256": "153f5d390fe29910d281b32219c5d0c9d4a40b1ae7d9dfc668ea71b576e2a6f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117240,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; GitHub reports it cleanly mergeable, but its supplied synthetic merge was against an earlier main revision, so the focused discovery suite should be... (sha=e671b9bafc9a38adfdceb08ac103f402a0913567)",
+      "expected_head_sha": "e671b9bafc9a38adfdceb08ac103f402a0913567",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T21:00:49.178Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-plugin-casefold-dependency-ownership",
+        "head_sha": "e671b9bafc9a38adfdceb08ac103f402a0913567",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
