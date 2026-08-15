@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T06:44:19.762Z",
+  "updated_at": "2026-08-15T06:44:41.066Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4842373781:2026-06-30T10:27:22Z:re_review",
-      "comment_id": "4842373781",
-      "comment_version_key": "4842373781:2026-06-30T10:27:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4842373781",
-      "comment_created_at": "2026-06-30T10:27:22Z",
-      "comment_updated_at": "2026-06-30T10:27:22Z",
-      "comment_body_sha256": "25397138a02657960f191459ef7284c544a216dffe85e8e8ff3ae65639f88ba8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 3 commits replayed, no conflicts). new head e48583a664. this refresh resolves the check-docs gate: docs/docs_map.md is generated from doc headings, and the prior failure was relative to the older base; against current main, `pnpm docs:map:check` passes with no diff and the committed docs_map.md matches a fresh regen. no behavior change. pr-touched unit tests all green locally (command-queue 34, context-engine-maintenance 30, transcript-rewrite 7, diagnostic 73 — 181 total)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T01:28:14.786Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4867791368:2026-07-02T16:07:54Z:re_review",
       "comment_id": "4867791368",
@@ -33240,6 +33213,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121073:5300997167:2026-08-15T06:43:57Z:re_review",
+      "comment_id": "5300997167",
+      "comment_version_key": "5300997167:2026-08-15T06:43:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121073#issuecomment-5300997167",
+      "comment_created_at": "2026-08-15T06:43:57Z",
+      "comment_updated_at": "2026-08-15T06:43:57Z",
+      "comment_body_sha256": "4057dbd1bb9bcc9b0fd6b0ae9deab0d7629395bb82487a1edd7e90a97bc4485a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121073,
+      "author": "IlyaKuprov",
+      "author_id": 166841386,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T06:44:39.554Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-search-timeout-reported-as-provider-error",
+        "head_sha": "770cbbfd65c987899d313f6f1e2d73e375a82de1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
