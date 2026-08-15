@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Mattermost acknowledgement-policy defect. In the Mattermost plugin, add a static automatic acknowledgement only after the shared inbound turn has successfully recorded the accepted post; use the existing global messages.ackReaction/messages.ackReactionScope policy and the plugin’s authenticated reaction transport. Thread only the already-computed mention and chat-kind facts required by the shared gate. Do not add Mattermost-specific config, core policy, lifecycle status reactions, fallback paths, or messages.removeAckAfterReply support; that setting is retired. Prefer a monitor-safe transport helper using the existing client and known bot identity over the tool-oriented reaction action. Add regression coverage for record → ack → dispatch ordering, scope eligibility, rejected/mention-gated posts, record failure, and non-blocking reaction failure. Update Mattermost public channel docs for the existing global policy and verify actual emoji handling in a redacted live workspace run. Do not edit CHANGELOG.md; include release-note context in the PR body.
+Repair the Mattermost acknowledgement omission for accepted inbound posts. Use the generic inbound turn’s `afterRecord` hook so failed recording never reacts; reuse the public shared acknowledgement scope/handle contract and the existing Mattermost reaction transport or monitor client. Convert transport failures into failed acknowledgement sends, preserve access and mention gating, and remove an acknowledgement only after a visible reply when configured. Do not add configuration, status-reaction behavior, core-internal imports, compatibility fallbacks, or unrelated prior-PR changes. Add one owner-boundary regression that fails on current main and covers eligible accepted posts, suppression before acceptance, and visible-reply cleanup. Consult https://github.com/openclaw/openclaw/pull/80426 and https://github.com/openclaw/openclaw/pull/119124 only for historical context. Put release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
@@ -75,14 +75,15 @@ Likely files:
 - extensions/mattermost/src/mattermost/monitor-turn.ts
 - extensions/mattermost/src/mattermost/reactions.ts
 - extensions/mattermost/src/mattermost/monitor.inbound-system-event.test.ts
-- extensions/mattermost/src/mattermost/reactions.test.ts
 - docs/channels/mattermost.md
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/mattermost/src/mattermost/monitor.inbound-system-event.test.ts extensions/mattermost/src/mattermost/reactions.test.ts
-- Run a redacted Mattermost workspace scenario covering a qualifying accepted post, a suppressed post, and a reaction-API failure that still delivers the reply.
-- pnpm plugin-sdk:surface:check
+- node scripts/run-vitest.mjs extensions/mattermost/src/mattermost/monitor.inbound-system-event.test.ts
+- node scripts/run-vitest.mjs extensions/mattermost/src/mattermost/reactions.test.ts
+- node scripts/run-vitest.mjs src/channels/turn/run-channel-turn.finalize.test.ts
+- node scripts/run-oxlint.mjs extensions/mattermost/src/mattermost/monitor-posts.ts extensions/mattermost/src/mattermost/monitor-turn.ts extensions/mattermost/src/mattermost/reactions.ts
+- Redacted live Mattermost proof showing an eligible post receives the configured acknowledgement and optional cleanup follows a visible reply.
 
 ## Operator Prompt
 

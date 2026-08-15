@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the New Session model picker so opening it performs the same explicit configured-model discovery used by the regular chat picker, while preserving `chat.metadata` as a prepared-only startup path. Add a regression beginning with an incomplete prepared catalog and verify dynamically discovered usable provider rows appear after opening the New Session picker. Reuse the canonical Control UI model-loading helper where suitable. Do not add config, change provider policy, or move discovery into `chat.metadata`. Include user-visible release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the existing New Session picker behavior in one focused PR. Preserve `chat.metadata` as the startup-safe prepared projection; do not add live provider discovery to that Gateway path. Reuse the existing Control UI `models.list` configured-catalog refresh when the New Session picker opens, publish results only when the active client and agent still match, and retain visible failure/retry behavior. Add a regression with a prepared authored catalog plus a fuller `models.list` result containing runtime-discovered providers; prove startup remains prepared-only and opening the picker exposes the discovered rows. Stop if the repair requires new config, protocol, provider policy, or changing the Gateway startup contract. Do not edit CHANGELOG.md.
 
 Likely files:
 
 - ui/src/pages/new-session/model-control.ts
 - ui/src/pages/new-session/model-control.test.ts
 - ui/src/pages/chat/models.ts
+- ui/src/pages/chat/chat-state-refresh.ts
 
 Validation:
 
 - pnpm test ui/src/pages/new-session/model-control.test.ts
-- pnpm test ui/src/pages/chat/chat-view.test.ts
-- Capture sanitized Control UI before/after proof showing newly discovered provider groups in New Session.
+- pnpm test ui/src/pages/chat/models.test.ts ui/src/pages/chat/chat-view.test.ts
+- pnpm check:changed -- ui/src/pages/new-session/model-control.ts ui/src/pages/new-session/model-control.test.ts
 
 ## Operator Prompt
 
