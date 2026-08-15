@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T22:33:46.325Z",
+  "updated_at": "2026-08-15T22:34:50.337Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102182:4915056699:2026-08-15T17:31:20Z:clawsweeper_auto_repair",
-      "comment_id": "4915056699",
-      "comment_version_key": "4915056699:2026-08-15T17:31:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/102182#issuecomment-4915056699",
-      "comment_created_at": "2026-07-08T13:02:33Z",
-      "comment_updated_at": "2026-08-15T17:31:20Z",
-      "comment_body_sha256": "aa25ccad1fbda5c1ada3408cc3084ddcddb6b2a956b97b9ee4cc933239f818cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 102182,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=dfd610f596fd04e7fae69d448f701109a44baa1b)",
-      "expected_head_sha": "dfd610f596fd04e7fae69d448f701109a44baa1b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T17:33:52.498Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/control-ui-live-assistant-stream",
-        "head_sha": "dfd610f596fd04e7fae69d448f701109a44baa1b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102425:4921656333:2026-08-15T17:31:54Z:clawsweeper_auto_repair",
       "comment_id": "4921656333",
@@ -32020,6 +31987,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120554:5226354164:2026-08-15T22:33:46Z:clawsweeper_needs_human",
+      "comment_id": "5226354164",
+      "comment_version_key": "5226354164:2026-08-15T22:33:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120554#issuecomment-5226354164",
+      "comment_created_at": "2026-08-08T13:40:39Z",
+      "comment_updated_at": "2026-08-15T22:33:46Z",
+      "comment_body_sha256": "5c150a666dbbb5473d8e08c801ed7b857e71ab3e24dd5b445a2561a6d3d31d98",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120554,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as dirty, and rebasing its old helper interface could discard current main’s parameter-matched deferrals or its newer reconnect sequencing. (sha=3e30e2e54679b794e7641e9551b2ac50c4494a63)",
+      "expected_head_sha": "3e30e2e54679b794e7641e9551b2ac50c4494a63",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T22:34:50.337Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-request-scoped-deferrals-20260808",
+        "head_sha": "3e30e2e54679b794e7641e9551b2ac50c4494a63",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
