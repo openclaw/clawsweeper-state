@@ -2,53 +2,6 @@
   "updated_at": "2026-08-15T03:20:50.738Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:113750:5298366214:2026-08-14T21:31:08Z:re_review",
-      "comment_id": "5298366214",
-      "comment_version_key": "5298366214:2026-08-14T21:31:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113750#issuecomment-5298366214",
-      "comment_created_at": "2026-08-14T21:31:08Z",
-      "comment_updated_at": "2026-08-14T21:31:08Z",
-      "comment_body_sha256": "d797016fbe0a28236482a5ae24196144a788fad15b9a75d96df4602ed8e677dd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113750,
-      "author": "helloember99",
-      "author_id": 260029553,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T21:37:58.420Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/media-cron-detached-failure-state",
-        "head_sha": "2dea1b55da844f17d1f7823893fa18cb23b28ce6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113750:5079252649:2026-08-14T21:37:05Z:clawsweeper_auto_repair",
       "comment_id": "5079252649",
       "comment_version_key": "5079252649:2026-08-14T21:37:05Z",
@@ -32506,6 +32459,39 @@
         "kind": "pull_request",
         "branch": "steipete/dashboard-split-text-bug-6ba991",
         "head_sha": "fe291c967c1672d272889220d7d9f8024ff1867f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:91:5297817254:2026-08-15T03:07:01Z:clawsweeper_needs_human",
+      "comment_id": "5297817254",
+      "comment_version_key": "5297817254:2026-08-15T03:07:01Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/91#issuecomment-5297817254",
+      "comment_created_at": "2026-08-14T20:23:04Z",
+      "comment_updated_at": "2026-08-15T03:07:01Z",
+      "comment_body_sha256": "9f3c5d638120b4acd15c4df3f69ca75a5eeab1176bbbc278e8d511a4450cc96a",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 91,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The structured review helper could not run in this sandbox because no usable temporary directory is available; the manual review found no code or release-process risk. (sha=6f34f07ff3778be3ab5e66ef1f8113e71f67ea9e)",
+      "expected_head_sha": "6f34f07ff3778be3ab5e66ef1f8113e71f67ea9e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T03:20:50.699Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/next-unreleased-0.14.7-31836986812",
+        "head_sha": "6f34f07ff3778be3ab5e66ef1f8113e71f67ea9e",
         "cluster_id": null,
         "job_path": null
       }
