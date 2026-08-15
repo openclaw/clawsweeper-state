@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T05:18:24.245Z",
+  "updated_at": "2026-08-15T05:19:02.654Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113750:5079252649:2026-08-14T23:25:55Z:clawsweeper_needs_human",
-      "comment_id": "5079252649",
-      "comment_version_key": "5079252649:2026-08-14T23:25:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113750#issuecomment-5079252649",
-      "comment_created_at": "2026-07-25T16:25:43Z",
-      "comment_updated_at": "2026-08-14T23:25:55Z",
-      "comment_body_sha256": "64caeefa428a0a9d065534eeed9a52472a4394eadddc6a2ba8e21dd41cfcafb3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113750,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds 417 production lines across cron receipt ownership, Gateway lifecycle registration, and terminal-event sequencing; although the boundaries are justified, this is a me... (sha=cbd0b86015c0f8a1c4d03fcc82eebfc02f72926f)",
-      "expected_head_sha": "cbd0b86015c0f8a1c4d03fcc82eebfc02f72926f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T23:26:42.510Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/media-cron-detached-failure-state",
-        "head_sha": "cbd0b86015c0f8a1c4d03fcc82eebfc02f72926f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113750:5296995530:2026-08-14T18:50:23Z:re_review",
       "comment_id": "5296995530",
@@ -33046,6 +33013,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/Peekaboo:486:5300701341:2026-08-15T05:18:16Z:automerge",
+      "comment_id": "5300701341",
+      "comment_version_key": "5300701341:2026-08-15T05:18:16Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/486#issuecomment-5300701341",
+      "comment_created_at": "2026-08-15T05:18:16Z",
+      "comment_updated_at": "2026-08-15T05:18:16Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 486,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T05:18:55.444Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/inactive-focus-receipts",
+        "head_sha": "13d90e8e5ab9d7917d266f899291576ebedf3adc",
+        "cluster_id": "automerge-openclaw-peekaboo-486",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-peekaboo-486.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-peekaboo-486.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
