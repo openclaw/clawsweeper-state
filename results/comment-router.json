@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T22:43:22.327Z",
+  "updated_at": "2026-08-15T22:43:23.895Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124049:5301011146:2026-08-15T17:48:40Z:clawsweeper_needs_human",
-      "comment_id": "5301011146",
-      "comment_version_key": "5301011146:2026-08-15T17:48:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124049#issuecomment-5301011146",
-      "comment_created_at": "2026-08-15T06:47:48Z",
-      "comment_updated_at": "2026-08-15T17:48:40Z",
-      "comment_body_sha256": "2ecdbe9a2c104ef2769ac54a88e52f3f8f5ab8179a04a3ecde1178a16715566e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124049,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The intentional 30-minute cutoff can defer a still-progressing pathological node until the next reconciliation sweep; it preserves coordinator availability but does not complete that... (sha=cb16b5ab49159c40b30577a680d6bb7ee79dd8aa)",
-      "expected_head_sha": "cb16b5ab49159c40b30577a680d6bb7ee79dd8aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T17:49:28.725Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bug-056-retain-coordinator-unbounded-loop",
-        "head_sha": "cb16b5ab49159c40b30577a680d6bb7ee79dd8aa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119525:5188980437:2026-08-15T17:47:31Z:clawsweeper_needs_human",
       "comment_id": "5188980437",
@@ -31914,6 +31881,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/Peekaboo:489:5304579812:2026-08-15T22:42:34Z:re_review",
+      "comment_id": "5304579812",
+      "comment_version_key": "5304579812:2026-08-15T22:42:34Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/489#issuecomment-5304579812",
+      "comment_created_at": "2026-08-15T22:42:34Z",
+      "comment_updated_at": "2026-08-15T22:42:34Z",
+      "comment_body_sha256": "756cec1821cd5f8e13868420405725f036ab7c1ae12503a66f9f1748623e9c54",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 489,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T22:43:21.700Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/vt-title-process-timeout",
+        "head_sha": "bae0b7059eb5727e1b09b8df2f54b4d68f7ef782",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120703:5229244544:2026-08-15T22:42:39Z:clawsweeper_auto_repair",
