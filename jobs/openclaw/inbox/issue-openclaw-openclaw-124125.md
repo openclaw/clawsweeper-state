@@ -67,20 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Windows cron durable-fence regression at the shared file-lock process-identity boundary. Reuse or extract the existing tested Windows process-creation-time reader so there is one canonical PowerShell/WMIC implementation; do not add a second probe. Preserve null when the probe genuinely fails so PID-reuse fencing remains fail-closed. Add regression coverage that the Windows file-lock identity is available and retain coverage that cron rejects a genuinely missing identity. Inspect sibling getFileLockProcessStartTime consumers for compatible identity semantics; do not add config, fallbacks, or CHANGELOG.md edits. Include release-note context in the PR body. Related: https://github.com/openclaw/openclaw/issues/124125.
+Repair the Windows cron durable-fence regression described in https://github.com/openclaw/openclaw/issues/124125. Keep PID-reuse safety fail-closed: make the generic file-lock process-identity path obtain a stable Windows creation time by consolidating or reusing the existing PowerShell-to-WMIC reader, rather than adding a cron-only fallback. Preserve existing Linux and Darwin identity semantics and update any duplicated Windows identity reader coherently. Add a regression that fails on the current code because win32 returns null, then proves cron can prepare a durable receipt when the Windows identity probe succeeds; retain coverage for unavailable identity throwing. Run focused shared/cron/Windows tests and the changed-files check. Do not change configuration, schema versions, protocol versions, or CHANGELOG.md; include concise release-note context in the PR body or commit message.
 
 Likely files:
 
 - src/shared/pid-alive.ts
 - src/shared/pid-alive.test.ts
-- src/cron/store/run-receipt-store.null-start-time.test.ts
 - src/infra/windows-port-pids.ts
+- src/infra/windows-port-pids.test.ts
+- src/cron/store/run-receipt-store.null-start-time.test.ts
 
 Validation:
 
-- pnpm test src/shared/pid-alive.test.ts
-- pnpm test src/cron/store/run-receipt-store.null-start-time.test.ts
-- pnpm test src/infra/windows-port-pids.test.ts
+- pnpm test src/shared/pid-alive.test.ts src/infra/windows-port-pids.test.ts src/cron/store/run-receipt-store.null-start-time.test.ts
+- pnpm test src/cron/store/run-receipt-store.test.ts src/cron/service/run-admission-conflict.test.ts
+- pnpm check:changed
 
 ## Operator Prompt
 
