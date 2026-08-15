@@ -67,21 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/123886 at the Telegram callback-message owner. Trace the rich `/models` picker through provider and model selection, preserve the appropriate message representation for the final in-place confirmation, and keep legacy callback edits plus topic/business metadata intact. Add a regression that fails before the repair at the real callback boundary; do not add a test-only production seam or edit CHANGELOG.md. Re-check the current Telegram rich-edit API contract before implementation and provide redacted real Telegram proof or the approved mock-gateway harness verdict.
+Repair the Telegram rich `/models` callback lifecycle for https://github.com/openclaw/openclaw/issues/123886. First establish the failing rich-send -> legacy-edit regression on current main. In the shared callback action owner, select rich editing only from the callback message’s actual rich representation, not account configuration; preserve legacy callback edits for ordinary messages. Route rich picker/provider/model updates and the final model receipt through the raw rich API with typed safe blocks, preserving reply markup and business-connection parameters. Do not parse provider/model ids as markdown, do not add a config option, and do not change unrelated callback/approval behavior. Add focused regression coverage for rich rich-edit routing, final receipt, legacy routing, markup/business parameters, and existing no-text/not-modified behavior. Obtain sanitized after-fix Telegram proof before merge. Do not edit CHANGELOG.md; include release-note context in the PR body.
 
 Likely files:
 
 - extensions/telegram/src/bot-handlers.callback-actions.ts
 - extensions/telegram/src/bot-handlers.callback-router.ts
-- extensions/telegram/src/bot.test.ts
 - extensions/telegram/src/transport-payload.test.ts
 - extensions/telegram/src/rich-message.ts
 
 Validation:
 
-- pnpm test extensions/telegram/src/bot.test.ts
-- pnpm test extensions/telegram/src/transport-payload.test.ts
-- Redacted Telegram rich `/models` picker flow: picker → provider → model confirmation
+- node scripts/run-vitest.mjs extensions/telegram/src/transport-payload.test.ts
+- node scripts/run-vitest.mjs extensions/telegram/src/draft-stream.test.ts
+- Run a sanitized Telegram richMessages `/models` provider-and-model selection flow and record that the final confirmation fully replaces the picker.
 
 ## Operator Prompt
 
