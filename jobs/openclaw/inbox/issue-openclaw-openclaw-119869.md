@@ -67,19 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the restored requester-settle wake startup race for https://github.com/openclaw/openclaw/issues/119869. First add a regression that reproduces restoration before Gateway request/fallback context readiness and fails on current main. Keep the durable batch pending without consuming attempts when context is absent; re-admit safely once ready, avoid synchronized admission, and preserve current idempotency and visible-reply semantics. Do not add configuration, weaken in-process dispatch security, or edit CHANGELOG.md; put release-note context in the PR body.
+Repair the current-main requester-settle startup-ordering defect from https://github.com/openclaw/openclaw/issues/119869. At the durable requester-settle wake owner, prevent direct delivery until the Gateway in-process request scope or fallback context is available; preserve the same batch, idempotency key, and retry budget while deferred. Re-admit deferred wakes when fallback context becomes ready, without creating parallel delivery paths or a new config option. Add a boundary regression that restores terminal wake state before context installation, proves no announcement run is dispatched and no attempt is consumed, then proves exactly one idempotent announcement after context installation. Keep ACP and --local delivery behavior out of scope. Put release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
 - src/agents/subagents/announce/subagent-announce.requester-settle-wake.ts
 - src/agents/subagents/announce/subagent-announce.requester-settle-wake.test.ts
-- src/agents/subagents/registry/subagent-registry-lifecycle-wake.ts
 - src/gateway/server-plugin-fallback-context.ts
+- src/gateway/server-plugins.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/subagents/announce/subagent-announce.requester-settle-wake.test.ts
-- node scripts/run-vitest.mjs src/agents/subagents/registry/subagent-registry.persistence.resume.test.ts
+- node scripts/run-vitest.mjs src/agents/subagents/registry/subagent-registry-lifecycle.test.ts
 - node scripts/run-vitest.mjs src/gateway/server-plugins.test.ts
 
 ## Operator Prompt
