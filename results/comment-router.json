@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T06:09:24.453Z",
+  "updated_at": "2026-08-15T06:11:56.928Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123276:5285857481:2026-08-15T00:34:19Z:clawsweeper_needs_human",
-      "comment_id": "5285857481",
-      "comment_version_key": "5285857481:2026-08-15T00:34:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123276#issuecomment-5285857481",
-      "comment_created_at": "2026-08-13T20:12:22Z",
-      "comment_updated_at": "2026-08-15T00:34:19Z",
-      "comment_body_sha256": "ae13baca81762a1ed2acff9c6646c136574904e38840d8b670e580558bb771ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123276,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Clarify group-default access boundary** - The new update and defaults methods are write-scoped but do not use the participation resolution applied to group rename/delete, so nonparticip...; Review finding: [medium] Clarify group-default access boundary — src/gateway/server-methods/sessions-groups.ts:101 (sha=c245c9c069f970093e5fa54f144c01329e82af75)",
-      "expected_head_sha": "c245c9c069f970093e5fa54f144c01329e82af75",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T00:35:20.294Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/session-folder-group-defaults",
-        "head_sha": "c245c9c069f970093e5fa54f144c01329e82af75",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:479:5299357853:2026-08-15T00:34:50Z:clawsweeper_needs_human",
       "comment_id": "5299357853",
@@ -33208,6 +33175,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1170:5297118616:2026-08-15T06:11:10Z:clawsweeper_needs_human",
+      "comment_id": "5297118616",
+      "comment_version_key": "5297118616:2026-08-15T06:11:10Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1170#issuecomment-5297118616",
+      "comment_created_at": "2026-08-14T19:04:20Z",
+      "comment_updated_at": "2026-08-15T06:11:10Z",
+      "comment_body_sha256": "a45bf85977184e34abe732274a0636cd0c813a965fc2de997362003db655cbb2",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1170,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bind the OpenClaw receipt to the challenged path (P1)** - The prior blocker remains: after matching the model text, this accepts only aggregate toolSummary fields, which do not identify the file or result read....; Review finding: [P1] Bind the OpenClaw receipt to the challenged path — src/openclaw-process.ts:246-254 - [high] Aggregate tool evidence can certify the wrong path — src/openclaw-... (sha=31af1be75b6c1193fea4f6b8821864bfeccc1f8f)",
+      "expected_head_sha": "31af1be75b6c1193fea4f6b8821864bfeccc1f8f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T06:11:56.928Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/structured-checkout-access",
+        "head_sha": "31af1be75b6c1193fea4f6b8821864bfeccc1f8f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
