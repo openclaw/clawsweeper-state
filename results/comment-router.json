@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T03:37:13.848Z",
+  "updated_at": "2026-08-15T03:37:14.126Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123850:5298437553:2026-08-14T21:40:36Z:clawsweeper_auto_repair",
-      "comment_id": "5298437553",
-      "comment_version_key": "5298437553:2026-08-14T21:40:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123850#issuecomment-5298437553",
-      "comment_created_at": "2026-08-14T21:40:36Z",
-      "comment_updated_at": "2026-08-14T21:40:36Z",
-      "comment_body_sha256": "08187eac4a4d4c51dd6bbbd28a117ec625072960e3c7c3c12a2c1a144a3ca90a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123850,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1780a1f3c929b5cb252991d69b5faaf81137dbc6)",
-      "expected_head_sha": "1780a1f3c929b5cb252991d69b5faaf81137dbc6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T21:41:21.747Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/lobster-dismiss-menu-clamp",
-        "head_sha": "1780a1f3c929b5cb252991d69b5faaf81137dbc6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123853:5298448904:2026-08-14T21:41:56Z:re_review",
       "comment_id": "5298448904",
@@ -32739,6 +32706,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123953:5300161626:2026-08-15T03:36:10Z:clawsweeper_needs_human",
+      "comment_id": "5300161626",
+      "comment_version_key": "5300161626:2026-08-15T03:36:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123953#issuecomment-5300161626",
+      "comment_created_at": "2026-08-15T02:48:12Z",
+      "comment_updated_at": "2026-08-15T03:36:10Z",
+      "comment_body_sha256": "a41b90bb5b1f4207f19ec1a103ffd8fe4e7888257dc43475affad8e0fd8995f7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123953,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the final guard before non-idempotent, recipient-visible webhook I/O; exact-head validation must preserve zero-request rejection and staged-media cleanup behavior. (sha=4d48a1b76c9ef534748db17292dad358a9c48791)",
+      "expected_head_sha": "4d48a1b76c9ef534748db17292dad358a9c48791",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T03:37:14.126Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa-refill-channel-outcomes-v2",
+        "head_sha": "4d48a1b76c9ef534748db17292dad358a9c48791",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
