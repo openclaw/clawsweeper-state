@@ -67,22 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the documented `openclaw wiki ingest` Markdown behavior in the Memory Wiki plugin. At the ingest owner, preserve semantic Markdown and safe source frontmatter for valid `.md` input while keeping page-owned keys (`pageType`, `id`, `title`, `sourceType`, `sourcePath`, `ingestedAt`, `updatedAt`, `status`) authoritative; keep opaque fenced rendering for non-Markdown and malformed-frontmatter input. Preserve the current re-ingest human Notes contract even when source Markdown contains headings, code fences, or human-marker comments; do not change bridge or unsafe-local import behavior. Add owner-boundary regression coverage that fails before the repair, including Markdown with frontmatter and nested fences, plus the Notes-marker case. Do not edit CHANGELOG.md; put release-note context in the PR body.
+Repair the source-proven local Markdown ingest defect from https://github.com/openclaw/openclaw/issues/124154. In `extensions/memory-wiki/src/ingest.ts`, handle local `.md` input as structured Markdown: use the existing parser, retain page-owned provenance fields over conflicting input keys, inline the parsed body with headings adjusted without touching headings inside fenced code, and retain current fenced behavior for non-Markdown input and malformed frontmatter. Preserve human Notes safely even when imported Markdown contains marker-like text. Do not change bridge or unsafe-local imports, add config, or edit CHANGELOG.md; include user-visible release context in the PR body. Add owner-boundary regression coverage for frontmatter, links, nested fences, protected-key conflicts, and the existing `.txt` behavior; stop for maintainer review if the repair requires a new persistent-format or product-policy decision.
 
 Likely files:
 
 - extensions/memory-wiki/src/ingest.ts
-- extensions/memory-wiki/src/ingest.test.ts
-- extensions/memory-wiki/src/ingest-human-notes.test.ts
 - extensions/memory-wiki/src/markdown.ts
-- extensions/memory-wiki/src/markdown.test.ts
+- extensions/memory-wiki/src/ingest.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs extensions/memory-wiki/src/ingest.test.ts
-- node scripts/run-vitest.mjs extensions/memory-wiki/src/ingest-human-notes.test.ts
 - node scripts/run-vitest.mjs extensions/memory-wiki/src/markdown.test.ts
-- node scripts/check-changed.mjs -- extensions/memory-wiki/src/ingest.ts extensions/memory-wiki/src/ingest.test.ts extensions/memory-wiki/src/ingest-human-notes.test.ts extensions/memory-wiki/src/markdown.ts
+- git diff --check
 
 ## Operator Prompt
 
