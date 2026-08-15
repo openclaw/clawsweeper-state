@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T21:31:18.041Z",
+  "updated_at": "2026-08-15T21:31:40.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5111616038:2026-07-29T01:18:42Z:re_review",
-      "comment_id": "5111616038",
-      "comment_version_key": "5111616038:2026-07-29T01:18:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5111616038",
-      "comment_created_at": "2026-07-29T01:18:42Z",
-      "comment_updated_at": "2026-07-29T01:18:42Z",
-      "comment_body_sha256": "6851f5ca6df64704a193704d3bbc234e134541387b3f3b9c995bec3c393ecf71",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest main (clean, 8 commits); head is now b638f8abe0. tests green (context-engine-maintenance 26, transcript-rewrite 5, command-queue, diagnostic), tsgo clean on touched files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T16:33:58.285Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5114855235:2026-07-29T08:07:14Z:re_review",
       "comment_id": "5114855235",
@@ -31715,6 +31688,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124283:5304242743:2026-08-15T21:29:57Z:clawsweeper_needs_human",
+      "comment_id": "5304242743",
+      "comment_version_key": "5304242743:2026-08-15T21:29:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124283#issuecomment-5304242743",
+      "comment_created_at": "2026-08-15T21:08:31Z",
+      "comment_updated_at": "2026-08-15T21:29:57Z",
+      "comment_body_sha256": "55b20fcb5343c0a07a0ac6e30673cc2d9d6565e3b93c9413b67b983553e453eb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124283,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Production grows by 10 net lines to turn a scalar diagnostic into roster output; the growth is justified by the distinct CLI rendering and preserves the existing empty-roster fallback. (sha=2d66e26b2250e6565cbbe9967601e9bb31f1ef7c)",
+      "expected_head_sha": "2d66e26b2250e6565cbbe9967601e9bb31f1ef7c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T21:31:40.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugins-inspect-multi-agent-workshop",
+        "head_sha": "2d66e26b2250e6565cbbe9967601e9bb31f1ef7c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
