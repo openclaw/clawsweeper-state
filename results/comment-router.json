@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T09:26:43.002Z",
+  "updated_at": "2026-08-15T09:26:47.742Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123585:5297634478:2026-08-14T20:03:10Z:re_review",
-      "comment_id": "5297634478",
-      "comment_version_key": "5297634478:2026-08-14T20:03:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123585#issuecomment-5297634478",
-      "comment_created_at": "2026-08-14T20:03:10Z",
-      "comment_updated_at": "2026-08-14T20:03:10Z",
-      "comment_body_sha256": "35598bc8f023a8a59355b00724328aa9915d4c38c4597625993773938c0d81cb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123585,
-      "author": "Chinmayrawat15",
-      "author_id": 88652081,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T04:43:43.635Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1170:5300580928:2026-08-15T04:44:01Z:re_review",
       "comment_id": "5300580928",
@@ -32283,6 +32256,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T09:26:43.002Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119964:5207057550:2026-08-15T09:15:18Z:clawsweeper_needs_human",
+      "comment_id": "5207057550",
+      "comment_version_key": "5207057550:2026-08-15T09:15:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119964#issuecomment-5207057550",
+      "comment_created_at": "2026-08-06T15:39:40Z",
+      "comment_updated_at": "2026-08-15T09:15:18Z",
+      "comment_body_sha256": "f2e7abee6380df5bd878af77a42c4a00bc6219408e118b86b4f989a32b2da2bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119964,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied Windows proof is strong but was measured on the PR base rather than current main; the touched files are unchanged on current main, while exact-head CI is still in progres... (sha=64122809bf9bc3ad1ed9d16316d5777f723e3273)",
+      "expected_head_sha": "64122809bf9bc3ad1ed9d16316d5777f723e3273",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T09:26:47.742Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/zalouser-fixture-windows-teardown",
+        "head_sha": "64122809bf9bc3ad1ed9d16316d5777f723e3273",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
