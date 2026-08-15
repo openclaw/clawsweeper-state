@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T09:40:29.733Z",
+  "updated_at": "2026-08-15T09:40:34.036Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112375:5076848606:2026-08-15T04:49:23Z:clawsweeper_needs_human",
-      "comment_id": "5076848606",
-      "comment_version_key": "5076848606:2026-08-15T04:49:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5076848606",
-      "comment_created_at": "2026-07-25T04:07:05Z",
-      "comment_updated_at": "2026-08-15T04:49:23Z",
-      "comment_body_sha256": "b748e83e2f603634ea0270a376c08774b0f5e30072bf985faba862be6e23abbb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The available evidence is focused tests and earlier shell output, not current-head after-fix Gateway scheduler behavior. After adding proof, up...; Review finding: [P1] Preserve the allowlist default for prechecks — src/cron/job-precheck.ts:303-336 - [P1] Fence stale runs before the shell precheck — src/cron/service/timer-exe... (sha=3c641ee855f5d83b6a1f9b2729ee24f013894b5d)",
-      "expected_head_sha": "3c641ee855f5d83b6a1f9b2729ee24f013894b5d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T04:59:04.829Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bartok9/cron-precheck-gate",
-        "head_sha": "3c641ee855f5d83b6a1f9b2729ee24f013894b5d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118465:5162442482:2026-08-15T04:54:01Z:clawsweeper_auto_repair",
       "comment_id": "5162442482",
@@ -31757,6 +31724,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123575:5301637510:2026-08-15T09:39:47Z:re_review",
+      "comment_id": "5301637510",
+      "comment_version_key": "5301637510:2026-08-15T09:39:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123575#issuecomment-5301637510",
+      "comment_created_at": "2026-08-15T09:39:47Z",
+      "comment_updated_at": "2026-08-15T09:39:47Z",
+      "comment_body_sha256": "9b9a5894a740b6aac1fd32ed0c36520e2afbee3b048e42bdec0c4e8954147d1c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123575,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T09:40:29.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-startup-preflight",
+        "head_sha": "0d82411c90d71874673752542625b41f1c59783f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122444:5262583378:2026-08-15T09:39:40Z:clawsweeper_auto_repair",
