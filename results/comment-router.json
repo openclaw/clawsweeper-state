@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T01:13:13.977Z",
+  "updated_at": "2026-08-15T01:16:40.605Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120900:5290108477:2026-08-14T06:10:36Z:re_review",
-      "comment_id": "5290108477",
-      "comment_version_key": "5290108477:2026-08-14T06:10:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120900#issuecomment-5290108477",
-      "comment_created_at": "2026-08-14T06:10:36Z",
-      "comment_updated_at": "2026-08-14T06:10:36Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120900,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T19:24:58.055Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120900:5290152372:2026-08-14T06:17:22Z:re_review",
       "comment_id": "5290152372",
@@ -33248,6 +33221,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123222:5285766110:2026-08-15T01:12:41Z:clawsweeper_needs_human",
+      "comment_id": "5285766110",
+      "comment_version_key": "5285766110:2026-08-15T01:12:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123222#issuecomment-5285766110",
+      "comment_created_at": "2026-08-13T20:02:57Z",
+      "comment_updated_at": "2026-08-15T01:12:41Z",
+      "comment_body_sha256": "473fc8259bc1b14c019ddcb21330b1dd1ef1172f8b22dd48b33f41e22c3b42c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123222,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing callers that provide arbitrary bare session keys will now receive an authorization failure instead of silently inheriting the default agent; this is intentional but compatibi... (sha=8c291c58f18e2f6aec0dda5cd78341cfa9bf0703)",
+      "expected_head_sha": "8c291c58f18e2f6aec0dda5cd78341cfa9bf0703",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T01:16:40.605Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-agent-binding-strict",
+        "head_sha": "8c291c58f18e2f6aec0dda5cd78341cfa9bf0703",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
