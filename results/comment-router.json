@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T02:42:10.533Z",
+  "updated_at": "2026-08-15T02:43:01.331Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106391:4958592011:2026-08-14T20:32:13Z:clawsweeper_auto_repair",
-      "comment_id": "4958592011",
-      "comment_version_key": "4958592011:2026-08-14T20:32:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/106391#issuecomment-4958592011",
-      "comment_created_at": "2026-07-13T13:43:40Z",
-      "comment_updated_at": "2026-08-14T20:32:13Z",
-      "comment_body_sha256": "1f30102c4417548b881e733bff5b366a5f6ce90d2d1650f74f91ccbded4b8036",
-      "repo": "openclaw/openclaw",
-      "issue_number": 106391,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=07ed25f7bcca3882cf936ebe92a1bc79483fbf48)",
-      "expected_head_sha": "07ed25f7bcca3882cf936ebe92a1bc79483fbf48",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T20:37:43.007Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gpt55-picker-profileid-dedup-clean3-20260713",
-        "head_sha": "07ed25f7bcca3882cf936ebe92a1bc79483fbf48",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106414:4958941859:2026-08-14T20:32:55Z:clawsweeper_auto_repair",
       "comment_id": "4958941859",
@@ -32867,6 +32834,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/Peekaboo:481:5300133579:2026-08-15T02:42:09Z:re_review",
+      "comment_id": "5300133579",
+      "comment_version_key": "5300133579:2026-08-15T02:42:09Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/481#issuecomment-5300133579",
+      "comment_created_at": "2026-08-15T02:42:09Z",
+      "comment_updated_at": "2026-08-15T02:42:09Z",
+      "comment_body_sha256": "e8e69f70c0b411405605e3b15b99f050ef2a963b8cc4cb9e4c200ba9546de2c5",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 481,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T02:42:56.596Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/target-selector-identity-adapters",
+        "head_sha": "216364c32adb0ac1ab4ce95f38e7c4abf2f688e4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
