@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T03:08:05.910Z",
+  "updated_at": "2026-08-15T03:08:14.160Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123816:5297981851:2026-08-14T21:18:18Z:clawsweeper_needs_human",
-      "comment_id": "5297981851",
-      "comment_version_key": "5297981851:2026-08-14T21:18:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123816#issuecomment-5297981851",
-      "comment_created_at": "2026-08-14T20:42:30Z",
-      "comment_updated_at": "2026-08-14T21:18:18Z",
-      "comment_body_sha256": "709766e6ae02d186ccefde292bbeafcc4a52a6b787a1ac7371545056a04147f8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123816,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally rejects existing gateway-hosted sqlite3 access to active state paths; affected automation must use OpenClaw commands or a copied database. (sha=09db2821139b9bffde545d8973df506c847b49be)",
-      "expected_head_sha": "09db2821139b9bffde545d8973df506c847b49be",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T21:20:18.093Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/guard-live-state-sqlite-exec",
-        "head_sha": "09db2821139b9bffde545d8973df506c847b49be",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123831:5298263515:2026-08-14T21:17:45Z:clawsweeper_auto_repair",
       "comment_id": "5298263515",
@@ -32747,6 +32714,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123556:5300238572:2026-08-15T03:07:23Z:re_review",
+      "comment_id": "5300238572",
+      "comment_version_key": "5300238572:2026-08-15T03:07:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5300238572",
+      "comment_created_at": "2026-08-15T03:07:23Z",
+      "comment_updated_at": "2026-08-15T03:07:23Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123556,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T03:08:12.273Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-concurrency",
+        "head_sha": "d8dcb2caf64adc38f2769fb738362aa1ab9c8bf6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
