@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T05:32:16.285Z",
+  "updated_at": "2026-08-15T05:32:43.036Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121022:5231594288:2026-08-14T23:48:49Z:clawsweeper_needs_human",
-      "comment_id": "5231594288",
-      "comment_version_key": "5231594288:2026-08-14T23:48:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121022#issuecomment-5231594288",
-      "comment_created_at": "2026-08-09T12:46:57Z",
-      "comment_updated_at": "2026-08-14T23:48:49Z",
-      "comment_body_sha256": "2505596b7e59a2c48cec66c7e32f71174596f7116adca8d1a985524b66f4ffa1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121022,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing config.patch/config.apply callers will wait for runtime application or receive UNAVAILABLE after persistence, a deliberate but compatibility-sensitive change. (sha=7f9d20289ec19952115fc599961a89cca4810a0c)",
-      "expected_head_sha": "7f9d20289ec19952115fc599961a89cca4810a0c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T23:52:51.943Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-config-patch-apply-barrier",
-        "head_sha": "7f9d20289ec19952115fc599961a89cca4810a0c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121306:5234791268:2026-08-14T23:47:26Z:clawsweeper_auto_repair",
       "comment_id": "5234791268",
@@ -33118,6 +33085,53 @@
         {
           "action": "merge",
           "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112375:5300745759:2026-08-15T05:31:55Z:re_review",
+      "comment_id": "5300745759",
+      "comment_version_key": "5300745759:2026-08-15T05:31:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5300745759",
+      "comment_created_at": "2026-08-15T05:31:55Z",
+      "comment_updated_at": "2026-08-15T05:31:55Z",
+      "comment_body_sha256": "cc62c4f275d0825e1f0da757742978cd3b92946d12548b9ac61f90873fbfd11b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112375,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T05:32:40.906Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bartok9/cron-precheck-gate",
+        "head_sha": "9fac5391cf9559073c809f3cb7ab243e18547da1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
           "label": null,
           "job_path": null
         },
