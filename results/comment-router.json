@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T22:58:46.138Z",
+  "updated_at": "2026-08-15T22:59:24.058Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101477:4901682379:2026-08-15T18:18:20Z:clawsweeper_auto_repair",
-      "comment_id": "4901682379",
-      "comment_version_key": "4901682379:2026-08-15T18:18:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101477#issuecomment-4901682379",
-      "comment_created_at": "2026-07-07T08:24:20Z",
-      "comment_updated_at": "2026-08-15T18:18:20Z",
-      "comment_body_sha256": "5ac77a462b329e36021dd6eeb22d9fef8113ec07fab9a2d3947b15c7fc8ce2b6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101477,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0549437f7ca4d9f0eae07e6a8f36445170f295a1)",
-      "expected_head_sha": "0549437f7ca4d9f0eae07e6a8f36445170f295a1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T18:28:10.036Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bound-cron-quarantine-read",
-        "head_sha": "0549437f7ca4d9f0eae07e6a8f36445170f295a1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110434:5010083683:2026-08-11T22:03:10Z:clawsweeper_auto_merge",
       "comment_id": "5010083683",
@@ -31828,6 +31795,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124254:5303902246:2026-08-15T22:58:40Z:clawsweeper_needs_human",
+      "comment_id": "5303902246",
+      "comment_version_key": "5303902246:2026-08-15T22:58:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124254#issuecomment-5303902246",
+      "comment_created_at": "2026-08-15T19:38:05Z",
+      "comment_updated_at": "2026-08-15T22:58:40Z",
+      "comment_body_sha256": "737c234a472773e15bac2e794019eeb5a4295d4c0d56e92337d7a48ccb9784ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124254,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 71 net lines for lifecycle ownership and action-specific retry outcomes; the protected maintainer review should confirm that retaining the explicit per-action... (sha=5298bea2834ad672489fde77b5c9b67651b86558)",
+      "expected_head_sha": "5298bea2834ad672489fde77b5c9b67651b86558",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T22:59:24.058Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/stale-confirm-abort",
+        "head_sha": "5298bea2834ad672489fde77b5c9b67651b86558",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
