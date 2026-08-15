@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the runtime-context carrier ordering on current main for full-replay tool loops. At the embedded LLM boundary, keep the current-turn carrier directly after the active user so consecutive requests retain P+U+X -> P+U+X+Y ordering; continue stripping historical carriers. Do not add a config option, provider-specific filtering, or a parallel fallback path. Check overflow-retry insertion in `src/agents/embedded-agent-runner/run/attempt-llm-boundary.ts` and preserve its behavior. First establish the current failing same-turn sequence, then update the helper and focused regression coverage; stop if the change requires an external provider API contract or broader policy decision. Include release-note context in the PR body, not CHANGELOG.md.
+Repair the existing runtime-context carrier ordering defect from https://github.com/openclaw/openclaw/issues/123652. At the embedded-agent LLM boundary, retain the current-turn carrier immediately after the active user message through same-turn reasoning, tool-call, and tool-output iterations; do not move it to the absolute request tail. Preserve historical-carrier stripping and position-sensitive normalization. Update the existing cache-stability coverage or add one focused boundary case that fails on current main and proves request N is a byte-identical prefix of request N+1 through the carrier. Keep the repair generic across full-replay Responses providers; do not add provider settings, cache-control options, or policy changes. Do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/agents/internal-runtime-context.ts
-- src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
 - src/agents/internal-runtime-context.test.ts
+- src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
 - src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/internal-runtime-context.test.ts
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt-session-boundary.test.ts
+- node scripts/run-vitest.mjs run --config test/vitest/vitest.unit-fast.config.ts src/agents/internal-runtime-context.test.ts
 - node scripts/run-vitest.mjs run --config test/vitest/vitest.agents-embedded-agent-run.config.ts src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
 
 ## Operator Prompt
