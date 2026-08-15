@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T06:57:27.743Z",
+  "updated_at": "2026-08-15T06:57:32.756Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5111616038:2026-07-29T01:18:42Z:re_review",
-      "comment_id": "5111616038",
-      "comment_version_key": "5111616038:2026-07-29T01:18:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5111616038",
-      "comment_created_at": "2026-07-29T01:18:42Z",
-      "comment_updated_at": "2026-07-29T01:18:42Z",
-      "comment_body_sha256": "6851f5ca6df64704a193704d3bbc234e134541387b3f3b9c995bec3c393ecf71",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest main (clean, 8 commits); head is now b638f8abe0. tests green (context-engine-maintenance 26, transcript-rewrite 5, command-queue, diagnostic), tsgo clean on touched files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T01:28:14.786Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123914:5299816199:2026-08-15T01:28:08Z:clawsweeper_auto_repair",
       "comment_id": "5299816199",
@@ -33542,6 +33515,53 @@
       "status": "skipped",
       "processed_at": "2026-08-15T06:57:27.743Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124061:5301041666:2026-08-15T06:56:44Z:re_review",
+      "comment_id": "5301041666",
+      "comment_version_key": "5301041666:2026-08-15T06:56:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124061#issuecomment-5301041666",
+      "comment_created_at": "2026-08-15T06:56:44Z",
+      "comment_updated_at": "2026-08-15T06:56:44Z",
+      "comment_body_sha256": "00da5b2762d90b9931fa8b06dfb6f77aaf8c8c9559085d9d7a3b8c5f22403d20",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124061,
+      "author": "clawSean",
+      "author_id": 260045960,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T06:57:30.613Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/peekaboo-v4-skill",
+        "head_sha": "ffc76f26fe1e388657f624637a404a53e3f3f7d2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
