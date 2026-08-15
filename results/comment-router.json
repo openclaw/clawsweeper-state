@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T02:06:19.222Z",
+  "updated_at": "2026-08-15T02:06:25.295Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123742:5297695328:2026-08-14T20:09:16Z:re_review",
-      "comment_id": "5297695328",
-      "comment_version_key": "5297695328:2026-08-14T20:09:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123742#issuecomment-5297695328",
-      "comment_created_at": "2026-08-14T20:09:16Z",
-      "comment_updated_at": "2026-08-14T20:09:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123742,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T20:21:40.625Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-approval-sanitize",
-        "head_sha": "61b84e9d2fc5bf31f57fcd1c2b6015a0688c6a08",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123556:5291738495:2026-08-14T09:29:04Z:re_review",
       "comment_id": "5291738495",
@@ -32476,6 +32429,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-workboard-board-summaries",
         "head_sha": "ebc4fc10a2fc7ee2063db37c32782fbecea702ba",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123923:5299981984:2026-08-15T02:05:44Z:clawsweeper_needs_human",
+      "comment_id": "5299981984",
+      "comment_version_key": "5299981984:2026-08-15T02:05:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123923#issuecomment-5299981984",
+      "comment_created_at": "2026-08-15T02:05:44Z",
+      "comment_updated_at": "2026-08-15T02:05:44Z",
+      "comment_body_sha256": "83b10ad5116cb005ba9835ed9de48f935012b5426134827e761201ba379e5b6a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123923,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair is identified; let the maintainer-owned PR complete exact-head CI and routine landing review. (sha=8ad7fe295c6bf67f84e1e2d710afa63e761a06c1)",
+      "expected_head_sha": "8ad7fe295c6bf67f84e1e2d710afa63e761a06c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T02:06:25.295Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/test-suite-performance-pass-9-aug15",
+        "head_sha": "8ad7fe295c6bf67f84e1e2d710afa63e761a06c1",
         "cluster_id": null,
         "job_path": null
       }
