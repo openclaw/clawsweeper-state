@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/120547 on current main. Preserve Feishu plain-group session ownership and core dispatch behavior; only make the reply-card identity/footer reflect a matching bound ACP agent. Keep non-ACP bindings on the route agent, do not refresh binding idle expiry for attribution-only lookup, and use the public conversation-runtime SDK seam rather than a core-internal import. Add a regression at the actual plugin/dispatch boundary that fails before the repair for ACP-bound plain groups, plus non-ACP and topic/direct unaffected coverage. Do not add config or changelog changes. https://github.com/openclaw/openclaw/pull/120599 is source material only, not a branch to revive.
+Repair the current plain-group Feishu footer-attribution bug from https://github.com/openclaw/openclaw/issues/120547. Preserve `groupSessionScope: "group"` session ownership and all existing execution routing; do not open `feishuAcpConversationSupported` or alter `route.sessionKey`. Extend the existing conversation-runtime resolver with a backwards-compatible read-only `touch: false` lookup if that remains the narrowest public seam, then use its result only for default-group outbound display attribution when the binding is a non-plugin-owned ACP session. Add a plugin-local display/attribution agent parameter for Feishu card identity/header/footer rather than replacing the dispatcher’s operational `agentId`. Keep non-ACP/subagent bindings on the base-route display identity. Add boundary regression coverage proving the plain-group route/session remains `main`, visual attribution follows the ACP-bound agent, non-ACP bindings retain the base identity, and attribution lookup does not touch the binding. Do not add config, alter binding ownership, or edit CHANGELOG.md; stop for maintainer review if a broader permanent plugin SDK direction becomes necessary.
 
 Likely files:
 
 - extensions/feishu/src/bot.ts
 - extensions/feishu/src/bot.test.ts
+- extensions/feishu/src/reply-dispatcher.ts
+- extensions/feishu/src/reply-dispatcher.test.ts
 - src/channels/plugins/binding-routing.ts
 - src/channels/plugins/binding-routing.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/feishu/src/bot.test.ts
-- node scripts/run-vitest.mjs src/channels/plugins/binding-routing.test.ts
+- node scripts/run-vitest.mjs extensions/feishu/src/bot.test.ts src/channels/plugins/binding-routing.test.ts
 
 ## Operator Prompt
 
