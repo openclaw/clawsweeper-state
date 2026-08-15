@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven Signal external-native attachment delivery bug. Start by inspecting current upstream signal-cli documentation/source and running a real native JSON-RPC daemon check that proves RFC 2397 data-URI attachments, including a redacted request/result trace. If that contract is absent or size-limited incompatibly, stop and report it. Otherwise keep the change inside the Signal plugin: replace the gateway-path dependency for external-native sends with the canonical bounded filename-preserving data-URI encoding already used by container transport, preferably by extracting one local shared encoder rather than copying it. Keep managed-native path delivery and container REST translation behavior intact; do not add a config option unless direct contract proof shows an unavoidable compatibility limit. Add owner-boundary regressions that assert the actual external-native JSON-RPC payload and decode it in the real local HTTP harness, including quote-metadata fallback. Do not edit CHANGELOG.md; record user-visible release context in the PR body.
+Repair the source-proven external-native Signal attachment failure for https://github.com/openclaw/openclaw/issues/123815. First directly verify with signal-cli 0.14.7 that its native HTTP JSON-RPC send method accepts RFC 2397 data-URI attachments; stop without a production patch if that contract cannot be proven. If proven, keep the fix in the Signal plugin: serialize only external-native attachments after the shared resolver, preserve managed-native pathname behavior and container REST conversion, retain raw-byte limits and safe filename/MIME handling, and do not loosen media-store permissions or add a config option. Add a regression that fails on current main through the native HTTP boundary and validates media bytes plus quote-fallback behavior. Include release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - extensions/signal/src/send.ts
-- extensions/signal/src/client-container.ts
 - extensions/signal/src/send.test.ts
 - extensions/signal/src/media-access.test.ts
+- extensions/signal/src/client-container.ts
 
 Validation:
 
-- Run a real native signal-cli JSON-RPC daemon as a different service user or without the gateway media directory, send a small attachment through external-native, and retain a redacted request/result trace.
+- Run a real signal-cli 0.14.7 native HTTP JSON-RPC attachment send using a data URI and capture redacted request/response proof.
 - node scripts/run-vitest.mjs extensions/signal/src/send.test.ts extensions/signal/src/media-access.test.ts extensions/signal/src/client-container.test.ts
-- git diff --check
+- node scripts/check-changed.mjs --dry-run -- extensions/signal/src/send.ts extensions/signal/src/send.test.ts extensions/signal/src/media-access.test.ts extensions/signal/src/client-container.ts
 
 ## Operator Prompt
 
