@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T02:23:10.266Z",
+  "updated_at": "2026-08-15T02:24:04.752Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121578:5240496495:2026-08-14T19:57:45Z:clawsweeper_needs_human",
-      "comment_id": "5240496495",
-      "comment_version_key": "5240496495:2026-08-14T19:57:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121578#issuecomment-5240496495",
-      "comment_created_at": "2026-08-10T12:48:25Z",
-      "comment_updated_at": "2026-08-14T19:57:45Z",
-      "comment_body_sha256": "189d22c2097c832dc90097ed7b48bc27fa112baa9a26ddeacee833e413b5efa6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121578,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Apply the writer’s provider collision rule (P1)** - The loop accepts any raw assignment whose normalized provider id matches. With canonical openai plus losing OpenAI configured with LOSING_ENV, a literal models...; Review finding: [P1] Apply the writer’s provider collision rule — src/secrets/audit-models-json.ts:50-65 - [medium] Losing provider alias can suppress a plaintext finding — src/se... (sha=f9405edd5bff4a47a2c050b82f3b6d0cca8bdd42)",
-      "expected_head_sha": "f9405edd5bff4a47a2c050b82f3b6d0cca8bdd42",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T20:24:11.490Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/121543-models-json-secretref",
-        "head_sha": "b3d92b479fc65edc16488fbe78cb10066546125c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123276:5285857481:2026-08-14T19:59:04Z:clawsweeper_auto_repair",
       "comment_id": "5285857481",
@@ -32661,6 +32628,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123931:5300053442:2026-08-15T02:23:20Z:clawsweeper_auto_repair",
+      "comment_id": "5300053442",
+      "comment_version_key": "5300053442:2026-08-15T02:23:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123931#issuecomment-5300053442",
+      "comment_created_at": "2026-08-15T02:23:20Z",
+      "comment_updated_at": "2026-08-15T02:23:20Z",
+      "comment_body_sha256": "a5a3a8ac6c58cf43eb89b905922d1587d06a08d1de4b771e62eb79cdfaa97b1f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123931,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=45cd28d833414108d676375a291e22edf22ce4d7)",
+      "expected_head_sha": "45cd28d833414108d676375a291e22edf22ce4d7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T02:24:04.752Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-room-v12-id-support",
+        "head_sha": "45cd28d833414108d676375a291e22edf22ce4d7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
