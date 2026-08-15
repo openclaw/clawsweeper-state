@@ -67,21 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Telegram rich `/models` callback lifecycle. Preserve the representation of an incoming rich picker: generate a compatible rich body and raw-edit it with the existing rich transport, including updated or cleared buttons; retain the legacy callback edit path for legacy messages and do not add configuration or client-specific branches. Add a regression that fails before the repair for rich picker send followed by provider/list/final callback edit, asserting raw rich edit rather than legacy edit and preserving legacy behavior. Run focused tests and obtain real Telegram client or approved production-boundary proof before landing. Do not edit CHANGELOG.md; record user-visible release-note context in the PR body.
+Repair the Telegram rich `/models` picker lifecycle at the plugin callback boundary. Resolve the effective account configuration from the current runtime config and account id; use the existing rich planner/raw edit path for rich-enabled picker callbacks, while preserving legacy HTML edits and fallback behavior for non-rich accounts. Cover provider, model-list, selection, and terminal edits without adding core policy, public config, or a plugin API. First establish a failing regression on the current branch; do not edit CHANGELOG.md, but include user-visible release context in the PR body. Require redacted real Telegram proof or the repository-approved channel harness before merge.
 
 Likely files:
 
 - extensions/telegram/src/bot-handlers.callback-actions.ts
 - extensions/telegram/src/bot-handlers.callback-router.ts
 - extensions/telegram/src/rich-message.ts
-- extensions/telegram/src/transport-payload.test.ts
+- extensions/telegram/src/bot.test.ts
+- extensions/telegram/src/bot.create-telegram-bot.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/telegram/src/transport-payload.test.ts
-- node scripts/run-vitest.mjs extensions/telegram/src/draft-stream.test.ts
-- git diff --check
-- Real Telegram rich `/models` picker callback proof with redacted output before landing
+- node scripts/run-vitest.mjs extensions/telegram/src/bot.test.ts
+- node scripts/run-vitest.mjs extensions/telegram/src/bot.create-telegram-bot.test.ts
+- Run a redacted real Telegram rich-picker selection proof or the approved mock-gateway channel harness, showing rich send followed by rich edit and the final confirmation.
 
 ## Operator Prompt
 
