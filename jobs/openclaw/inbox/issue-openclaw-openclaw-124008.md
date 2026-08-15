@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the New Session model picker so opening it can request `models.list` with `view: "configured"` for the active agent and replace only that control's catalog when the response is still current. Preserve snapshot-only `chat.metadata` startup behavior and its retry semantics; do not add live discovery to Gateway metadata or alter prepared-catalog lifecycle. Add a regression where metadata contains only authored rows and the picker-open catalog response adds dynamic providers; retain the prepared catalog and expose retryable state if discovery fails. Do not edit CHANGELOG.md; include user-visible release-note context in the PR body.
+Repair the existing New Session picker behavior in one focused PR. Preserve `chat.metadata` as the startup-safe prepared projection; do not add live provider discovery to that Gateway path. Reuse the existing Control UI `models.list` configured-catalog refresh when the New Session picker opens, publish results only when the active client and agent still match, and retain visible failure/retry behavior. Add a regression with a prepared authored catalog plus a fuller `models.list` result containing runtime-discovered providers; prove startup remains prepared-only and opening the picker exposes the discovered rows. Stop if the repair requires new config, protocol, provider policy, or changing the Gateway startup contract. Do not edit CHANGELOG.md.
 
 Likely files:
 
 - ui/src/pages/new-session/model-control.ts
 - ui/src/pages/new-session/model-control.test.ts
-- ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
 - ui/src/pages/chat/models.ts
+- ui/src/pages/chat/chat-state-refresh.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs ui/src/pages/new-session/model-control.test.ts
-- node scripts/check-changed.mjs -- ui/src/pages/new-session/model-control.ts ui/src/pages/new-session/model-control.test.ts
-- Run a focused Control UI mock-Gateway E2E proving picker-open discovery after the unit regression is established.
+- pnpm test ui/src/pages/new-session/model-control.test.ts
+- pnpm test ui/src/pages/chat/models.test.ts ui/src/pages/chat/chat-view.test.ts
+- pnpm check:changed -- ui/src/pages/new-session/model-control.ts ui/src/pages/new-session/model-control.test.ts
 
 ## Operator Prompt
 
