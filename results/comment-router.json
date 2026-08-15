@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T14:44:28.257Z",
+  "updated_at": "2026-08-15T14:45:39.579Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5052154172:2026-07-22T22:12:23Z:re_review",
-      "comment_id": "5052154172",
-      "comment_version_key": "5052154172:2026-07-22T22:12:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5052154172",
-      "comment_created_at": "2026-07-22T22:12:23Z",
-      "comment_updated_at": "2026-07-22T22:12:23Z",
-      "comment_body_sha256": "b53987e3d6bcefaa5fc8f8b4b769d9ba446d5a709e310025fa13d9776b7586a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 8 commits replayed, no conflicts). new head bd329e3f8f. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, late-write fence, and stalled-session warn backoff are unchanged. local tsgo, oxlint/oxfmt, and the touched unit suites are green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T10:22:44.478Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5054234833:2026-07-23T04:09:41Z:re_review",
       "comment_id": "5054234833",
@@ -30916,6 +30889,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T14:44:28.257Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3457:5260969102:2026-08-15T14:36:48Z:clawsweeper_needs_human",
+      "comment_id": "5260969102",
+      "comment_version_key": "5260969102:2026-08-15T14:36:48Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3457#issuecomment-5260969102",
+      "comment_created_at": "2026-08-12T01:21:46Z",
+      "comment_updated_at": "2026-08-15T14:36:48Z",
+      "comment_body_sha256": "d349ef19dd04b6b4bca484da38cd918b4b33e1db2cad769ed32bf1a048bf6173",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR head has failed e2e-http, packages, static, types-build, and unit checks; rerun or diagnose them before merge. (sha=25db30d26c881fd7d9d60956ced543654d1be26b)",
+      "expected_head_sha": "25db30d26c881fd7d9d60956ced543654d1be26b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T14:45:39.579Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-first-fetch-retry",
+        "head_sha": "25db30d26c881fd7d9d60956ced543654d1be26b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
