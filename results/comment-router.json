@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T11:18:52.522Z",
+  "updated_at": "2026-08-15T11:19:19.089Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124061:5300979249:2026-08-15T06:48:35Z:clawsweeper_auto_repair",
-      "comment_id": "5300979249",
-      "comment_version_key": "5300979249:2026-08-15T06:48:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124061#issuecomment-5300979249",
-      "comment_created_at": "2026-08-15T06:39:06Z",
-      "comment_updated_at": "2026-08-15T06:48:35Z",
-      "comment_body_sha256": "be6db1f2ba2a6d97cba075716c5a2e763b3aadf08c4dd38d9555863bca6f4d36",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124061,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=55f40b5ec3addd3e30403e4a3c044a41b29e8997)",
-      "expected_head_sha": "55f40b5ec3addd3e30403e4a3c044a41b29e8997",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T06:49:17.231Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/peekaboo-v4-skill",
-        "head_sha": "55f40b5ec3addd3e30403e4a3c044a41b29e8997",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122386:5301016364:2026-08-15T06:49:19Z:re_review",
       "comment_id": "5301016364",
@@ -31351,6 +31318,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124138:5301695236:2026-08-15T11:18:37Z:clawsweeper_needs_human",
+      "comment_id": "5301695236",
+      "comment_version_key": "5301695236:2026-08-15T11:18:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124138#issuecomment-5301695236",
+      "comment_created_at": "2026-08-15T09:52:47Z",
+      "comment_updated_at": "2026-08-15T11:18:37Z",
+      "comment_body_sha256": "5c2111aee099ea72ccf6ecf1c2791ba4cab1e548298006b346c2673be5a88184",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124138,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The added Agent test uses an injected StreamFn, so it proves the loop regression but not after-fix behavior in a real runtime setup. After addi... (sha=ae033a44375b79b4156f80de19c83f970351b0dd)",
+      "expected_head_sha": "ae033a44375b79b4156f80de19c83f970351b0dd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T11:19:19.089Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tool-search-double-wrapped-selector",
+        "head_sha": "ae033a44375b79b4156f80de19c83f970351b0dd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
