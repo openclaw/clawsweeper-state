@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T13:38:46.021Z",
+  "updated_at": "2026-08-15T13:40:36.830Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123575:5301541549:2026-08-15T09:11:51Z:re_review",
-      "comment_id": "5301541549",
-      "comment_version_key": "5301541549:2026-08-15T09:11:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123575#issuecomment-5301541549",
-      "comment_created_at": "2026-08-15T09:11:51Z",
-      "comment_updated_at": "2026-08-15T09:11:51Z",
-      "comment_body_sha256": "e15e154d3274ca616d0f44c47d5c88c6ef533483164210d2fe3fc399e2c38746",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123575,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T09:12:40.828Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-startup-preflight",
-        "head_sha": "54ad902e197e0bdce2a92cfd1d129986164b62ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/remindctl:71:5298585066:2026-08-15T09:12:18Z:clawsweeper_auto_repair",
       "comment_id": "5298585066",
@@ -30842,6 +30795,39 @@
         "kind": "pull_request",
         "branch": "test/remove-provider-runtime-wrappers",
         "head_sha": "6cc189729666d1e2a2379857175c8ea41d7b5559",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:100790:4891582250:2026-08-15T13:39:51Z:clawsweeper_needs_human",
+      "comment_id": "4891582250",
+      "comment_version_key": "4891582250:2026-08-15T13:39:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/100790#issuecomment-4891582250",
+      "comment_created_at": "2026-07-06T10:10:34Z",
+      "comment_updated_at": "2026-08-15T13:39:51Z",
+      "comment_body_sha256": "e6216199330d24de4501e5998116cf8009b59b2ea1531b0726d997a38484ae16",
+      "repo": "openclaw/openclaw",
+      "issue_number": 100790,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied evidence is mock-Gateway component/browser testing; no inspectable after-fix real Control UI screenshot, recording, or live output... (sha=02c5b312a3c3b2686983bc374d9d055590ec64a5)",
+      "expected_head_sha": "02c5b312a3c3b2686983bc374d9d055590ec64a5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T13:40:36.830Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-recovery-commands",
+        "head_sha": "02c5b312a3c3b2686983bc374d9d055590ec64a5",
         "cluster_id": null,
         "job_path": null
       }
