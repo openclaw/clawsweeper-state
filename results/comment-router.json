@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T23:52:07.528Z",
+  "updated_at": "2026-08-15T23:52:23.713Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2934:5303752742:2026-08-15T18:59:12Z:re_review",
-      "comment_id": "5303752742",
-      "comment_version_key": "5303752742:2026-08-15T18:59:12Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2934#issuecomment-5303752742",
-      "comment_created_at": "2026-08-15T18:59:12Z",
-      "comment_updated_at": "2026-08-15T18:59:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2934,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T19:03:55.214Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/codex-jwt-org-fallback",
-        "head_sha": "1ff428b573825295bdc94eb9b4fb830ee5609903",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2934:5295134315:2026-08-15T19:03:05Z:clawsweeper_needs_human",
       "comment_id": "5295134315",
@@ -32311,6 +32264,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-persistence-receipts",
         "head_sha": "2a40bd4ca07834d3bdba34ed989672f35895c044",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124222:5303633162:2026-08-15T23:51:31Z:clawsweeper_auto_repair",
+      "comment_id": "5303633162",
+      "comment_version_key": "5303633162:2026-08-15T23:51:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124222#issuecomment-5303633162",
+      "comment_created_at": "2026-08-15T18:28:34Z",
+      "comment_updated_at": "2026-08-15T23:51:31Z",
+      "comment_body_sha256": "95955a530b7adb0edaa21741e9823bb6979663ca9a095cb2048f4735cd62390d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124222,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=952e6f8823930a9d706050f5054c22dba84b4692)",
+      "expected_head_sha": "952e6f8823930a9d706050f5054c22dba84b4692",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T23:52:23.713Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-rich-callback-edit",
+        "head_sha": "952e6f8823930a9d706050f5054c22dba84b4692",
         "cluster_id": null,
         "job_path": null
       }
