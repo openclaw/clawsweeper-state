@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T21:05:23.175Z",
+  "updated_at": "2026-08-15T21:08:39.617Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124162:5303165250:2026-08-15T16:30:34Z:re_review",
-      "comment_id": "5303165250",
-      "comment_version_key": "5303165250:2026-08-15T16:30:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5303165250",
-      "comment_created_at": "2026-08-15T16:30:34Z",
-      "comment_updated_at": "2026-08-15T16:30:34Z",
-      "comment_body_sha256": "b3efd80f7000b8e290a80ee2b2aa19fc1b8662aa5c82ab45b65abe8161ac732e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124162,
-      "author": "markr9805",
-      "author_id": 23192809,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T16:31:15.828Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stall-aware-resume-breaker-122950",
-        "head_sha": "e3623cae545a2bed23a34bfef39c70759e6476a5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:97175:4815183474:2026-08-15T16:32:24Z:clawsweeper_needs_human",
       "comment_id": "4815183474",
@@ -31251,6 +31204,39 @@
         "kind": "pull_request",
         "branch": "release/next-unreleased-0.3.8-31835363404",
         "head_sha": "6a6402e31b494929f2ab8b81cd5c60b8e52d8782",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124282:5304240714:2026-08-15T21:07:58Z:clawsweeper_needs_human",
+      "comment_id": "5304240714",
+      "comment_version_key": "5304240714:2026-08-15T21:07:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124282#issuecomment-5304240714",
+      "comment_created_at": "2026-08-15T21:07:58Z",
+      "comment_updated_at": "2026-08-15T21:07:58Z",
+      "comment_body_sha256": "7f7a21ca760afa1ba1de747fc80c1d652543e0cd8c756f4a20781700a1c9630c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124282,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch changes persisted-database upgrade behavior before gateway startup; the new fixture directly exercises Doctor repair and setup_id, while the equivalent cold-open path and th... (sha=d90ded88abd49ec7e85aa7af73bc214934b4cadd)",
+      "expected_head_sha": "d90ded88abd49ec7e85aa7af73bc214934b4cadd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T21:08:39.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/state-first-use-columns-strict-migration",
+        "head_sha": "d90ded88abd49ec7e85aa7af73bc214934b4cadd",
         "cluster_id": null,
         "job_path": null
       }
