@@ -67,19 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the New Session model picker for https://github.com/openclaw/openclaw/issues/124008. Keep `chat.metadata` prepared-only at startup; when the shared picker opens, perform the existing non-prepared `models.list { view: "configured", agentId }` flow and safely replace the prepared catalog only if the current client, agent, and request generation still own the result. Preserve prepared rows while discovery runs, surface failure with retry, and prevent late metadata responses from overwriting the richer result. Add a focused regression with prepared Z.AI-only metadata and richer Google/OpenAI configured results; add mocked-Gateway New Session E2E proof that no discovery occurs at startup and opening the picker shows all provider groups. Do not add configuration, change Gateway startup discovery, or edit CHANGELOG.md; record user-visible behavior in the PR body.
+Repair the New Session model picker so opening it performs the same configured `models.list` refresh used by the chat picker, while retaining `chat.metadata` as the prepared startup snapshot. Reuse the existing Control UI catalog loader where possible; guard against stale agent/client responses, retain the prepared catalog if discovery fails, and do not add config, alter Gateway startup discovery, or edit CHANGELOG.md. Add a UI-boundary regression that starts with a prepared static subset, opens the picker, and observes the configured discovered provider rows; include user-visible release-note context in the PR body.
 
 Likely files:
 
 - ui/src/pages/new-session/model-control.ts
 - ui/src/pages/new-session/model-control.test.ts
-- ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
+- ui/src/pages/chat/models.ts
 
 Validation:
 
-- pnpm test ui/src/pages/new-session/model-control.test.ts
-- pnpm test ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
-- Capture sanitized before/after New Session picker proof from the changed UI flow.
+- node scripts/run-vitest.mjs ui/src/pages/new-session/model-control.test.ts
+- node scripts/run-vitest.mjs ui/src/pages/chat/models.test.ts
+- node scripts/check-changed.mjs -- ui/src/pages/new-session/model-control.ts ui/src/pages/new-session/model-control.test.ts
 
 ## Operator Prompt
 
