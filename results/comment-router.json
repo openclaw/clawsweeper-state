@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T20:39:11.229Z",
+  "updated_at": "2026-08-15T20:39:11.828Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124195:5302945643:2026-08-15T15:37:03Z:re_review",
-      "comment_id": "5302945643",
-      "comment_version_key": "5302945643:2026-08-15T15:37:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124195#issuecomment-5302945643",
-      "comment_created_at": "2026-08-15T15:37:03Z",
-      "comment_updated_at": "2026-08-15T15:37:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124195,
-      "author": "TheAngryPit",
-      "author_id": 7040636,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T15:37:44.333Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ios-node-lifecycle-retry",
-        "head_sha": "4feffa1dad5959cd25850bed322c62222349e58d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121442:5236401563:2026-08-15T15:37:01Z:clawsweeper_needs_human",
       "comment_id": "5236401563",
@@ -31588,6 +31541,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T20:39:11.229Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124255:5303894903:2026-08-15T20:38:20Z:clawsweeper_needs_human",
+      "comment_id": "5303894903",
+      "comment_version_key": "5303894903:2026-08-15T20:38:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124255#issuecomment-5303894903",
+      "comment_created_at": "2026-08-15T19:36:07Z",
+      "comment_updated_at": "2026-08-15T20:38:20Z",
+      "comment_body_sha256": "9aaf6668ef5681b2bab4fce5a0569ddfd8862bfefbdb05cc06bcadaec9eed119",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124255,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR contains a strong Discord production-boundary loopback trace, but the Microsoft Teams change has only mocked handler evidence a... (sha=352a6517851bd4221d9b3e72c0e21e143ad331a9)",
+      "expected_head_sha": "352a6517851bd4221d9b3e72c0e21e143ad331a9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T20:39:11.828Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/upload-file-caption-discord-msteams",
+        "head_sha": "352a6517851bd4221d9b3e72c0e21e143ad331a9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
