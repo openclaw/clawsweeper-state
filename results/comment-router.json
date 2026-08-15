@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T21:20:38.195Z",
+  "updated_at": "2026-08-15T21:21:12.568Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5016532272:2026-07-19T16:42:38Z:re_review",
-      "comment_id": "5016532272",
-      "comment_version_key": "5016532272:2026-07-19T16:42:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5016532272",
-      "comment_created_at": "2026-07-19T16:42:38Z",
-      "comment_updated_at": "2026-07-19T16:42:38Z",
-      "comment_body_sha256": "286f47b2bc68c322ef73b6507b3d69822a513e4c7db9cbbbee5ef24cd66b8e10",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — fixed the post-rebase check-test-types / compact-small-6 failures: the stalled-warn diagnostics test was passing the warn threshold inside the diagnostics config literal, but that field belongs in the testtimings option (matching the other threshold tests). moved it to testtimings; tsgo:test and the diagnostic suite are green locally. new head 5f06ac8d65",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T16:33:58.285Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5017026097:2026-07-19T19:11:32Z:re_review",
       "comment_id": "5017026097",
@@ -31432,6 +31405,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124162:5304287593:2026-08-15T21:20:27Z:re_review",
+      "comment_id": "5304287593",
+      "comment_version_key": "5304287593:2026-08-15T21:20:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5304287593",
+      "comment_created_at": "2026-08-15T21:20:27Z",
+      "comment_updated_at": "2026-08-15T21:20:27Z",
+      "comment_body_sha256": "d1a0c92cabfff09eb103ef2821c8a0ce8eb2e49963e462c1dfefe056d376f4e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124162,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T21:21:10.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-aware-resume-breaker-122950",
+        "head_sha": "62e7a5bab8c33e28007f081f1e004652efdd0527",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
