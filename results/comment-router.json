@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-15T01:54:42.198Z",
+  "updated_at": "2026-08-15T01:56:00.751Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119735:5198106186:2026-08-14T19:56:27Z:clawsweeper_auto_repair",
-      "comment_id": "5198106186",
-      "comment_version_key": "5198106186:2026-08-14T19:56:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119735#issuecomment-5198106186",
-      "comment_created_at": "2026-08-05T22:26:45Z",
-      "comment_updated_at": "2026-08-14T19:56:27Z",
-      "comment_body_sha256": "98eadcf5b45bd20d2cf0318d275fc7ffb73c55f3c24922c4b82030543e1a23e0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119735,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=f57eb9ab76670b2a0484db32e1e63ee9026ed190)",
-      "expected_head_sha": "f57eb9ab76670b2a0484db32e1e63ee9026ed190",
-      "finding_id": "review-feedback",
-      "status": "executed",
-      "processed_at": "2026-08-14T19:57:32.678Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-114169",
-        "head_sha": "f57eb9ab76670b2a0484db32e1e63ee9026ed190",
-        "cluster_id": "automerge-openclaw-openclaw-119735",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119735.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119735.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123742:5297521061:2026-08-14T19:51:00Z:re_review",
       "comment_id": "5297521061",
@@ -32595,6 +32548,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123276:5285857481:2026-08-15T01:55:09Z:clawsweeper_needs_human",
+      "comment_id": "5285857481",
+      "comment_version_key": "5285857481:2026-08-15T01:55:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123276#issuecomment-5285857481",
+      "comment_created_at": "2026-08-13T20:12:22Z",
+      "comment_updated_at": "2026-08-15T01:55:09Z",
+      "comment_body_sha256": "2ba01a2aa5d781284e69f62945f7671c3f74f4cd66f30fd0cfdf9dcf8542720a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123276,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Canonicalize the group name before the late-member fence (P1)** - The initial authorization trims name, but this post-await lookup uses the raw value while persistence trims it again. A non-admin can start an up...; Review finding: [P1] Canonicalize the group name before the late-member fence — src/gateway/server-methods/sessions-groups.ts:155-161 - [high] Late member check uses a non-canonic... (sha=9a88f62b2485614d8ebe96957722afef7dd5f201)",
+      "expected_head_sha": "9a88f62b2485614d8ebe96957722afef7dd5f201",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T01:56:00.751Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-folder-group-defaults",
+        "head_sha": "9a88f62b2485614d8ebe96957722afef7dd5f201",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
