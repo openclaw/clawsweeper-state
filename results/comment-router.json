@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-15T05:31:25.600Z",
+  "updated_at": "2026-08-15T05:31:39.888Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123656:5293565655:2026-08-14T12:59:47Z:re_review",
-      "comment_id": "5293565655",
-      "comment_version_key": "5293565655:2026-08-14T12:59:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123656#issuecomment-5293565655",
-      "comment_created_at": "2026-08-14T12:59:47Z",
-      "comment_updated_at": "2026-08-14T12:59:47Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123656,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T23:46:31.159Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123656:5293582387:2026-08-14T23:41:19Z:clawsweeper_auto_repair",
       "comment_id": "5293582387",
@@ -33096,6 +33069,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118960:5171703660:2026-08-15T05:30:53Z:clawsweeper_needs_human",
+      "comment_id": "5171703660",
+      "comment_version_key": "5171703660:2026-08-15T05:30:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118960#issuecomment-5171703660",
+      "comment_created_at": "2026-08-03T21:05:19Z",
+      "comment_updated_at": "2026-08-15T05:30:53Z",
+      "comment_body_sha256": "d9c7d49bea3762d370c9934a679a199ac9f95f0a24d42815145309f0493f2a12",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118960,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the effective system-agent recipient contract: an operator-scoped macOS client receives the event by stable client ID although it advertises no approvals capability. (sha=8836a62f6dd38b0cbf3978c25445469a151eb6b6)",
+      "expected_head_sha": "8836a62f6dd38b0cbf3978c25445469a151eb6b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T05:31:39.888Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/system-agent-approval-kind",
+        "head_sha": "8836a62f6dd38b0cbf3978c25445469a151eb6b6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
