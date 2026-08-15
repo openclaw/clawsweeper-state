@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Reproduce this issue on a native Windows Scheduled Task Gateway using the generated hidden VBS-to-CMD launcher and an ACPX Claude session with permissionMode=approve-reads and nonInteractivePermissions=deny. Record whether the Gateway process has a TTY and whether a non-read permission request stalls. Repair the managed Windows launch boundary so its Gateway child has non-interactive stdin, preserving foreground `openclaw gateway run` interactivity. Keep ACPX generic: do not add a service-only ACPX config option or policy branch. If the generated CMD command gains redirection, ensure readScheduledTaskCommand and all restart/status callers still recover the original program arguments. Add a regression that fails before the change, run focused daemon tests and a native Windows proof, and record user-visible release context in the PR body without editing CHANGELOG.md. Stop and escalate if current acpx 0.13.0 no longer prompts under the reported scenario.
+Repair the hidden Windows Gateway service stdin boundary. First reproduce or establish a failing native Windows regression using the generated Scheduled Task VBS/CMD launcher and the pinned ACPX dependency. Update the managed Gateway CMD rendering so it redirects stdin from NUL before launching the Gateway, while leaving foreground CLI and node-task launch behavior unchanged. Add a regression that fails before the change, cover Scheduled Task upgrade/login-fallback rendering where applicable, and prove a non-read ACP permission request takes the configured non-interactive deny/fail outcome. Do not add a config option, move ACPX policy into core, or edit CHANGELOG.md; include user-visible release-note context in the PR body.
 
 Likely files:
 
 - src/daemon/schtasks-layout.ts
 - src/daemon/schtasks.install.test.ts
-- src/daemon/schtasks.test.ts
-- src/daemon/schtasks-runtime.ts
+- src/daemon/schtasks.integration.e2e.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/daemon/schtasks.install.test.ts src/daemon/schtasks.test.ts
-- Run a native Windows Scheduled Task through the generated hidden VBS launcher and verify a non-read ACPX permission request resolves by the configured deny policy rather than waiting for console input.
-- Verify `readScheduledTaskCommand` still parses the generated service script into its original Gateway program arguments.
+- node scripts/run-vitest.mjs src/daemon/schtasks.install.test.ts
+- node scripts/run-vitest.mjs src/daemon/schtasks.startup-fallback.test.ts
+- Windows Testbox: install the generated hidden Gateway task, record that its Node payload has non-TTY stdin, and verify a non-read ACP permission request reaches the configured non-interactive result.
 
 ## Operator Prompt
 
