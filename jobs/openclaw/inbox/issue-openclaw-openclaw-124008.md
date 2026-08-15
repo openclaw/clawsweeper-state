@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the New Session model picker so opening it requests `models.list` for the selected agent with `view: "configured"` and without `preparedOnly`, mirroring the existing Chat picker’s on-demand discovery. Keep chat.metadata and its prepared-only Gateway contract unchanged. Preserve the prepared catalog during discovery failure and offer retry behavior. Add regression coverage beginning with a static model and revealing a discovered provider model only after opening the New Session picker; the new test must fail before the repair without adding test-only production seams. Capture sanitized Control UI proof if feasible. Do not edit CHANGELOG.md.
+Repair the New Session model picker for https://github.com/openclaw/openclaw/issues/124008. Keep `chat.metadata` prepared-only at startup; when the shared picker opens, perform the existing non-prepared `models.list { view: "configured", agentId }` flow and safely replace the prepared catalog only if the current client, agent, and request generation still own the result. Preserve prepared rows while discovery runs, surface failure with retry, and prevent late metadata responses from overwriting the richer result. Add a focused regression with prepared Z.AI-only metadata and richer Google/OpenAI configured results; add mocked-Gateway New Session E2E proof that no discovery occurs at startup and opening the picker shows all provider groups. Do not add configuration, change Gateway startup discovery, or edit CHANGELOG.md; record user-visible behavior in the PR body.
 
 Likely files:
 
@@ -79,7 +79,7 @@ Validation:
 
 - pnpm test ui/src/pages/new-session/model-control.test.ts
 - pnpm test ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
-- pnpm check:changed -- ui/src/pages/new-session/model-control.ts ui/src/pages/new-session/model-control.test.ts ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
+- Capture sanitized before/after New Session picker proof from the changed UI flow.
 
 ## Operator Prompt
 
