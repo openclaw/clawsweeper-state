@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T04:40:37.751Z",
+  "updated_at": "2026-08-15T04:40:58.242Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123805:5297433525:2026-08-14T22:43:33Z:clawsweeper_needs_human",
-      "comment_id": "5297433525",
-      "comment_version_key": "5297433525:2026-08-14T22:43:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123805#issuecomment-5297433525",
-      "comment_created_at": "2026-08-14T19:40:36Z",
-      "comment_updated_at": "2026-08-14T22:43:33Z",
-      "comment_body_sha256": "d4d101a0a577f50bd4509892071229bed7a5c229a6e238e60f74fc95a4855843",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123805,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new fields change the model-visible contract for every opted-in Slack presence wake, so the Slack owner should explicitly accept that product behavior; the branch is also behind m... (sha=34e45100e82cc297c7a6a02e2b37c70c434eeb2d)",
-      "expected_head_sha": "34e45100e82cc297c7a6a02e2b37c70c434eeb2d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T22:44:19.104Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/slack-presence-away-duration-1",
-        "head_sha": "34e45100e82cc297c7a6a02e2b37c70c434eeb2d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/Peekaboo:471:5298894909:2026-08-14T22:44:59Z:re_review",
       "comment_id": "5298894909",
@@ -33074,6 +33041,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123976:5300567539:2026-08-15T04:40:12Z:re_review",
+      "comment_id": "5300567539",
+      "comment_version_key": "5300567539:2026-08-15T04:40:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123976#issuecomment-5300567539",
+      "comment_created_at": "2026-08-15T04:40:12Z",
+      "comment_updated_at": "2026-08-15T04:40:12Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123976,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T04:40:56.338Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/workspace-quiescence-thaw",
+        "head_sha": "0f2caa2ef4b66644813927c08e2f6c35d14e2549",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
