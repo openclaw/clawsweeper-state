@@ -67,21 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Telegram rich-message model-picker lifecycle. First create a failing regression for rich send → provider/model callback → final confirmation. At the shared callback action boundary, preserve the actual callback message representation: rich messages must use the existing raw rich edit/planning path, while legacy messages retain their current HTML/legacy behavior. Do not add config, core policy, or a model-specific parallel edit path. Add rich and legacy callback coverage, verify the raw request shape and visible final confirmation, and include release-note context in the PR body without editing CHANGELOG.md.
+Repair the Telegram rich `/models` picker callback lifecycle. First establish a failing regression against current main with a callback message that carries rich-message representation. In `extensions/telegram/src/bot-handlers.callback-actions.ts`, preserve the actual callback-message representation: route rich-origin edits through the existing raw rich-message contract and keep legacy-origin edits on grammY’s legacy text API. Preserve business connection data, reply markup, model-session behavior, and retry semantics; do not add configuration, core policy, or fallback paths. Extend the existing Telegram callback boundary tests to prove rich provider/list/select edits use rich_message and legacy callbacks remain legacy. Include redacted real Telegram or approved production-boundary proof in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - extensions/telegram/src/bot-handlers.callback-actions.ts
 - extensions/telegram/src/bot-handlers.callback-router.ts
-- extensions/telegram/src/rich-message.ts
 - extensions/telegram/src/bot.create-telegram-bot.test.ts
-- extensions/telegram/src/bot.create-telegram-bot.test-harness.ts
+- extensions/telegram/src/rich-message.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs extensions/telegram/src/bot.create-telegram-bot.test.ts
-- node scripts/run-vitest.mjs extensions/telegram/src/draft-stream.test.ts
-- Run a redacted Telegram Crabbox lifecycle with richMessages=true: /models → provider → model, verifying a rich edit and a readable final confirmation.
+- Run a redacted Telegram rich-message `/models` selection proof through the plugin’s real or approved production-boundary harness and show that the confirmation replaces the picker.
 
 ## Operator Prompt
 
