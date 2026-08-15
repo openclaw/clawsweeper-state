@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current-main headless OpenAI device-code login defect. `openclaw models auth login --provider openai --device-code` must start and complete the existing OpenAI provider device-code flow without a TTY, emitting a safe plaintext URL, short-lived code, and progress/completion transcript for browser authorization. Keep any provider/method not explicitly selected fail-closed in non-TTY environments. Do not unify, import, copy, or mutate standalone Codex CLI credential stores; preserve selected-agent OpenClaw profile ownership and add no config. Add a regression that fails at the old unconditional TTY guard and proves the explicit device-code command reaches the provider flow and exposes the authorization prompt. Align docs with behavior; put release-note context in the PR body, not CHANGELOG.md.
+Repair the documented headless OpenAI device-code login path. Keep OpenClaw’s Gateway-owned OAuth store canonical; do not add store synchronization, a new persistent option, or a runtime fallback to standalone Codex credentials. Refactor the generic Models CLI login TTY admission so an explicitly selected device-code method can display its URL/code and persist the resulting profile without stdin, while prompt-requiring methods remain rejected. Add regression coverage that fails with the current blanket guard, covers the CLI --device-code mapping and provider-flow persistence boundary, and validate a redacted real device-code transaction in isolated state before merge. Do not edit CHANGELOG.md; include user-visible release context in the PR body.
 
 Likely files:
 
 - src/commands/models/auth.ts
 - src/commands/models/auth.test.ts
-- docs/providers/openai.md
-- docs/cli/models.md
+- src/cli/models-cli.test.ts
+- extensions/openai/openai-chatgpt-provider.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/commands/models/auth.test.ts
 - node scripts/run-vitest.mjs src/cli/models-cli.test.ts
-- node scripts/run-vitest.mjs extensions/openai/openai-chatgpt-provider.test.ts
+- In an isolated non-production state directory, run `pnpm openclaw models auth login --provider openai --device-code` with non-TTY stdin, capture redacted URL/code output, complete the browser pairing, and confirm `pnpm openclaw models auth list --provider openai` shows the new OAuth profile.
 
 ## Operator Prompt
 
