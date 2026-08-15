@@ -67,21 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the selected-chat reload bug: when `chat.history` returns a terminal `sessionInfo.status` of `timeout` or `failed` with `lastRunError`, render the durable terminal outcome in the selected Control UI chat after a fresh load. Keep Gateway session lifecycle as the source of truth; do not append status text to the model transcript, add configuration, or add storage/schema. Preserve active-run identity fencing so an old terminal result cannot override a newer run. Add a regression that begins from fresh UI state, loads terminal session history, and verifies the selected chat presents the timeout/error; verify that starting or recovering a newer run clears or supersedes it. Provide focused browser/E2E proof of reload after a timed-out run and release-note context in the PR body.
+Repair the selected-session Control UI reload path for this issue. Reproduce or establish a failing regression where fresh chat state loads a durable selected-session timeout or failed record after a WebChat turn ends; make the existing session status, ended time, and bounded last-run reason produce a clear terminal outcome without adding transcript messages, new storage, config, or protocol surface. Preserve active-run and alias-session fencing, do not replay stale successful completions as failures, and retain transcript/tool-record filtering and offset paging. Add a regression that fails before the repair, run focused UI tests, and include user-visible release-note context in the PR body without editing CHANGELOG.md.
 
 Likely files:
 
-- ui/src/pages/chat/chat-state-refresh.ts
 - ui/src/pages/chat/run-lifecycle.ts
-- ui/src/pages/chat/chat-pane-render.ts
+- ui/src/pages/chat/chat-state-refresh.ts
+- ui/src/pages/chat/run-lifecycle.test.ts
 - ui/src/pages/chat/components/chat-composer-status.ts
-- ui/src/pages/chat/chat-history.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs ui/src/pages/chat/chat-history.test.ts ui/src/pages/chat/chat-gateway.test.ts ui/src/pages/chat/run-lifecycle.test.ts
-- node scripts/run-vitest.mjs src/gateway/session-lifecycle-state.test.ts
-- Run the focused Control UI reload regression against a timed-out session and capture redacted after-fix browser proof.
+- node scripts/run-vitest.mjs ui/src/pages/chat/run-lifecycle.test.ts ui/src/pages/chat/chat-gateway.test.ts ui/src/pages/chat/components/chat-composer-status.test.ts
+- Add and run a focused startup/reload regression covering a selected session with an inactive timeout or failed row.
 
 ## Operator Prompt
 
