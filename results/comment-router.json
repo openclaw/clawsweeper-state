@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T07:52:10.473Z",
+  "updated_at": "2026-08-15T07:54:15.144Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123974:5300280951:2026-08-15T03:19:20Z:clawsweeper_needs_human",
-      "comment_id": "5300280951",
-      "comment_version_key": "5300280951:2026-08-15T03:19:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123974#issuecomment-5300280951",
-      "comment_created_at": "2026-08-15T03:19:20Z",
-      "comment_updated_at": "2026-08-15T03:19:20Z",
-      "comment_body_sha256": "caf826076c642b3b06d9edaeb6b8c07c53ff147c3b6b5dc15f941e202a5caefb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123974,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +36 lines for this bug fix; the new ref-identity microtask is justified because no existing pane lifecycle hook observes sidebar-host restamps, but exact-head U... (sha=fe291c967c1672d272889220d7d9f8024ff1867f)",
-      "expected_head_sha": "fe291c967c1672d272889220d7d9f8024ff1867f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T03:20:04.848Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/dashboard-split-text-bug-6ba991",
-        "head_sha": "fe291c967c1672d272889220d7d9f8024ff1867f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:91:5297817254:2026-08-15T03:07:01Z:clawsweeper_needs_human",
       "comment_id": "5297817254",
@@ -32763,6 +32730,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112375:5301251469:2026-08-15T07:53:31Z:re_review",
+      "comment_id": "5301251469",
+      "comment_version_key": "5301251469:2026-08-15T07:53:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5301251469",
+      "comment_created_at": "2026-08-15T07:53:31Z",
+      "comment_updated_at": "2026-08-15T07:53:31Z",
+      "comment_body_sha256": "c28a7956f4e00791e6cc6e29a51e60a9cdb9a901bcdc02ba74b1e7a24f9e7ead",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112375,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T07:54:12.515Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bartok9/cron-precheck-gate",
+        "head_sha": "5cc665db7ae38ed88a68c2e68c43723760b97723",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
