@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T07:32:44.329Z",
+  "updated_at": "2026-08-15T07:32:45.893Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123777:5296495761:2026-08-15T02:11:43Z:clawsweeper_needs_human",
-      "comment_id": "5296495761",
-      "comment_version_key": "5296495761:2026-08-15T02:11:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123777#issuecomment-5296495761",
-      "comment_created_at": "2026-08-14T17:53:51Z",
-      "comment_updated_at": "2026-08-15T02:11:43Z",
-      "comment_body_sha256": "8dd7bbb21c25e99568e6580cce7b104ec2c8f64ed7afdeeb703cf28cc940d49a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123777,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The production delta is net +8 lines to carry checkpoint mode through the shared-state cache; it is justified by the auxiliary-versus-final lifecycle boundary, but no net-neutral form... (sha=c332c871d48afcdb81210e3b53a804f08eec5098)",
-      "expected_head_sha": "c332c871d48afcdb81210e3b53a804f08eec5098",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T02:32:26.697Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sqlite-wal-reset-corruption",
-        "head_sha": "c332c871d48afcdb81210e3b53a804f08eec5098",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123893:5299425202:2026-08-15T02:28:07Z:clawsweeper_auto_repair",
       "comment_id": "5299425202",
@@ -33272,6 +33239,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124068:5301167258:2026-08-15T07:32:02Z:re_review",
+      "comment_id": "5301167258",
+      "comment_version_key": "5301167258:2026-08-15T07:32:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124068#issuecomment-5301167258",
+      "comment_created_at": "2026-08-15T07:32:02Z",
+      "comment_updated_at": "2026-08-15T07:32:02Z",
+      "comment_body_sha256": "b4c01cfea6b6055eb975b321b1f9df4c71accf04e52e152eb7e36c37224c3672",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124068,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T07:32:43.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/strange-goldwasser-384b2c",
+        "head_sha": "67ad552da6f6bf793f0b652d686f22103b17bf52",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1348:5301167431:2026-08-15T07:32:04Z:clawsweeper_auto_repair",
