@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T20:49:28.305Z",
+  "updated_at": "2026-08-15T20:50:51.000Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124198:5303018416:2026-08-15T15:54:53Z:clawsweeper_needs_human",
-      "comment_id": "5303018416",
-      "comment_version_key": "5303018416:2026-08-15T15:54:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124198#issuecomment-5303018416",
-      "comment_created_at": "2026-08-15T15:54:53Z",
-      "comment_updated_at": "2026-08-15T15:54:53Z",
-      "comment_body_sha256": "8f4531df3d4656ecad3a0fe1921e469caef665b1eea7dd9bdb5f33c4ef547fe7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124198,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - One UI E2E shard was still running in the supplied check snapshot; merge should wait for required exact-head checks to finish. (sha=6ce0a282eee25178f065f4200b24807b597f3151)",
-      "expected_head_sha": "6ce0a282eee25178f065f4200b24807b597f3151",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T15:55:34.506Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/remove-strict-subset-assertions",
-        "head_sha": "6ce0a282eee25178f065f4200b24807b597f3151",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw.ai:232:5285937888:2026-08-15T15:54:50Z:clawsweeper_auto_repair",
       "comment_id": "5285937888",
@@ -31392,6 +31359,39 @@
       "status": "skipped",
       "processed_at": "2026-08-15T20:49:28.305Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/songsee:7:5304174384:2026-08-15T20:50:14Z:clawsweeper_needs_human",
+      "comment_id": "5304174384",
+      "comment_version_key": "5304174384:2026-08-15T20:50:14Z",
+      "comment_url": "https://github.com/openclaw/songsee/pull/7#issuecomment-5304174384",
+      "comment_created_at": "2026-08-15T20:50:14Z",
+      "comment_updated_at": "2026-08-15T20:50:14Z",
+      "comment_body_sha256": "6a1c22029bd4dd17f9bc2c82bd33cb038bea9a301666ada5b8711f1b85b153a7",
+      "repo": "openclaw/songsee",
+      "issue_number": 7,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports Go test results and mocked helper behavior, but no inspectable direct-runtime artifact demonstrates the after-fix decoder b...; Review finding: [P1] Cap total WAV decode memory before allocation — internal/audio/wav.go:63-68 - [P1] Preserve supported extended fmt chunks — internal/audio/wav.go:64-68 - [med... (sha=14eec226051cb702c0a8eb32dc1c5b97246b38a8)",
+      "expected_head_sha": "14eec226051cb702c0a8eb32dc1c5b97246b38a8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T20:50:51.000Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ffmpeg-timeout-wav-cap",
+        "head_sha": "14eec226051cb702c0a8eb32dc1c5b97246b38a8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
