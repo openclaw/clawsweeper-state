@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T03:43:47.924Z",
+  "updated_at": "2026-08-15T03:43:54.258Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:74735:4349141496:2026-08-14T21:41:49Z:clawsweeper_needs_human",
-      "comment_id": "4349141496",
-      "comment_version_key": "4349141496:2026-08-14T21:41:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/74735#issuecomment-4349141496",
-      "comment_created_at": "2026-04-30T01:57:38Z",
-      "comment_updated_at": "2026-08-14T21:41:49Z",
-      "comment_body_sha256": "232ee53922b098e1637c45ed782a740bfa0858246f04114159a8b30355796f18",
-      "repo": "openclaw/openclaw",
-      "issue_number": 74735,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep bootstrap filtering in the final resolver (P1)** - This filters the complete hook-adjusted file set using only sessionKey, but the hook context has no chatType. Current main intentionally filters after hook...; Review finding: [P1] Keep bootstrap filtering in the final resolver — src/hooks/bundled/bootstrap-extra-files/handler.ts:94-98 - [P2] Preserve bracketed workspace paths as literal... (sha=dc30907ac3295e30c1150f49e02341557363bcad)",
-      "expected_head_sha": "dc30907ac3295e30c1150f49e02341557363bcad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T21:51:11.279Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "presidenzo/session-bootstrap-extra-files",
-        "head_sha": "dc30907ac3295e30c1150f49e02341557363bcad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:77513:4374211775:2026-08-14T21:42:55Z:clawsweeper_needs_human",
       "comment_id": "4374211775",
@@ -32693,6 +32660,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1170:5300366181:2026-08-15T03:43:06Z:re_review",
+      "comment_id": "5300366181",
+      "comment_version_key": "5300366181:2026-08-15T03:43:06Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1170#issuecomment-5300366181",
+      "comment_created_at": "2026-08-15T03:43:06Z",
+      "comment_updated_at": "2026-08-15T03:43:06Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1170,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T03:43:52.001Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/structured-checkout-access",
+        "head_sha": "add1e6e4275039d972d3dc5cc3c897327d35b455",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
