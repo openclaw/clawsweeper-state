@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-15T19:44:44.146Z",
+  "updated_at": "2026-08-15T19:43:36.047Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124142:5302628540:2026-08-15T14:17:07Z:re_review",
+      "comment_id": "5302628540",
+      "comment_version_key": "5302628540:2026-08-15T14:17:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124142#issuecomment-5302628540",
+      "comment_created_at": "2026-08-15T14:17:07Z",
+      "comment_updated_at": "2026-08-15T14:17:07Z",
+      "comment_body_sha256": "0f1e569f1092e30dc97fd1f97f38efce6892554d05a3fbacd767731467b3464d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124142,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T14:17:56.809Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "find-the-local-openclaw-clone-update-e0d/status-read-only-state",
+        "head_sha": "7e922f267c9ee260962357f823fca046cb20ab2f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5302637510:2026-08-15T14:19:30Z:re_review",
       "comment_id": "5302637510",
@@ -31472,39 +31519,6 @@
         "kind": "pull_request",
         "branch": "pe/fix-1m-context-binding",
         "head_sha": "35779a668cc3c5165babc2fa4a12f01d7beeb20c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124214:5303390333:2026-08-15T19:44:03Z:clawsweeper_needs_human",
-      "comment_id": "5303390333",
-      "comment_version_key": "5303390333:2026-08-15T19:44:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124214#issuecomment-5303390333",
-      "comment_created_at": "2026-08-15T17:26:56Z",
-      "comment_updated_at": "2026-08-15T19:44:03Z",
-      "comment_body_sha256": "c98308681bef706fb3145d1ad7caa56fd238f2fb11ef79e1e865f6ad87300be0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124214,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally allows same-chat dispatches to overlap after adoption; rebase and exact-head checks should confirm collect and follow-up modes remain safe on the shared reply path. (sha=df0194b1e9d19c308defc1ff02b2e73b59b7598a)",
-      "expected_head_sha": "df0194b1e9d19c308defc1ff02b2e73b59b7598a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T19:44:44.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-adoption-gated-lane",
-        "head_sha": "df0194b1e9d19c308defc1ff02b2e73b59b7598a",
         "cluster_id": null,
         "job_path": null
       }
