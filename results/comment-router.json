@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T19:15:59.509Z",
+  "updated_at": "2026-08-15T19:16:53.302Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105765:4953313408:2026-08-15T13:20:34Z:clawsweeper_needs_human",
-      "comment_id": "4953313408",
-      "comment_version_key": "4953313408:2026-08-15T13:20:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105765#issuecomment-4953313408",
-      "comment_created_at": "2026-07-13T00:04:56Z",
-      "comment_updated_at": "2026-08-15T13:20:34Z",
-      "comment_body_sha256": "fb7e9a07e36720f8a4d96fb5edb049b8abceced3c27d3748aeb5e50132f16c56",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105765,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging deliberately changes a formerly silent message-tool-only terminal state into a visible error fallback; explicit silence, pending-continuation, delivery, send-policy, and room-... (sha=6ae78f9bbe9c80336ad3ab183582eee060964736)",
-      "expected_head_sha": "6ae78f9bbe9c80336ad3ab183582eee060964736",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T13:37:58.305Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/message-tool-only-empty-completion",
-        "head_sha": "6ae78f9bbe9c80336ad3ab183582eee060964736",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105822:4953646906:2026-08-15T13:28:04Z:clawsweeper_needs_human",
       "comment_id": "4953646906",
@@ -32076,6 +32043,53 @@
       "status": "skipped",
       "processed_at": "2026-08-15T19:15:59.509Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121557:5303818772:2026-08-15T19:15:59Z:re_review",
+      "comment_id": "5303818772",
+      "comment_version_key": "5303818772:2026-08-15T19:15:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121557#issuecomment-5303818772",
+      "comment_created_at": "2026-08-15T19:15:59Z",
+      "comment_updated_at": "2026-08-15T19:15:59Z",
+      "comment_body_sha256": "5d97897b9050f3b35cacf49768f47a96330236b795ddb67565d093e7797d0263",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121557,
+      "author": "zyw02",
+      "author_id": 59604424,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T19:16:51.399Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-websearch-global-kill-switch",
+        "head_sha": "e77c41861e0e297c8e4b3bc0ee407a33b941f7cc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
