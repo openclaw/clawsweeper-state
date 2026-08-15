@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-15T23:51:14.733Z",
+  "updated_at": "2026-08-15T23:51:28.072Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123624:5292922411:2026-08-15T19:01:04Z:clawsweeper_needs_human",
-      "comment_id": "5292922411",
-      "comment_version_key": "5292922411:2026-08-15T19:01:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123624#issuecomment-5292922411",
-      "comment_created_at": "2026-08-14T11:46:06Z",
-      "comment_updated_at": "2026-08-15T19:01:04Z",
-      "comment_body_sha256": "23f44f4edb347adac0d258637faf7800aa9ce60436f54d293927571d3797d52c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123624,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Codex app-server direct-catalog contract cited by this PR cannot be independently checked without the pinned sibling Codex source, so its thread-stability premise remains unverifi... (sha=123c9efa3b199d969c67c83a18f9c82ec3d07b60)",
-      "expected_head_sha": "123c9efa3b199d969c67c83a18f9c82ec3d07b60",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T19:01:54.592Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/95610-prompt-cache-stability",
-        "head_sha": "123c9efa3b199d969c67c83a18f9c82ec3d07b60",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101367:4900390156:2026-08-15T18:58:25Z:clawsweeper_auto_repair",
       "comment_id": "4900390156",
@@ -32300,6 +32267,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124303:5304803937:2026-08-15T23:50:44Z:re_review",
+      "comment_id": "5304803937",
+      "comment_version_key": "5304803937:2026-08-15T23:50:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124303#issuecomment-5304803937",
+      "comment_created_at": "2026-08-15T23:50:44Z",
+      "comment_updated_at": "2026-08-15T23:50:44Z",
+      "comment_body_sha256": "6480f61ee44b8deca422cfa882da707015da5f88e5ee6cbb4eece441ebfd9183",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124303,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-15T23:51:26.147Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-context-token-freshness",
+        "head_sha": "403633697c75771e51ba7193d09f5fc2ad0d53df",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
