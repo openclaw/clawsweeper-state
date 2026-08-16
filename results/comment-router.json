@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T01:50:15.759Z",
+  "updated_at": "2026-08-16T01:50:27.541Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124250:5303863659:2026-08-15T20:21:47Z:clawsweeper_needs_human",
-      "comment_id": "5303863659",
-      "comment_version_key": "5303863659:2026-08-15T20:21:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124250#issuecomment-5303863659",
-      "comment_created_at": "2026-08-15T19:27:57Z",
-      "comment_updated_at": "2026-08-15T20:21:47Z",
-      "comment_body_sha256": "51f1d2fe40c2b59a4f2afdf0e92df482f3b303bc937b8dbfac6a43c151f1f27e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124250,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new optional Gateway capability is compatibility-sensitive: clients must preserve review-first behavior when an older Gateway omits it. (sha=32185c2139b0300fcf31111cc7cbb5c387e1f9d7)",
-      "expected_head_sha": "32185c2139b0300fcf31111cc7cbb5c387e1f9d7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T20:22:32.636Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/skills-install-ref",
-        "head_sha": "32185c2139b0300fcf31111cc7cbb5c387e1f9d7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123931:5300053442:2026-08-15T20:22:35Z:clawsweeper_auto_repair",
       "comment_id": "5300053442",
@@ -32937,6 +32904,53 @@
         "kind": "pull_request",
         "branch": "feature/control-ui-link-browser-setting",
         "head_sha": "b8debc7752213fd71d51373b9576f38bccf0ac79",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124162:5305204891:2026-08-16T01:49:35Z:re_review",
+      "comment_id": "5305204891",
+      "comment_version_key": "5305204891:2026-08-16T01:49:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5305204891",
+      "comment_created_at": "2026-08-16T01:49:35Z",
+      "comment_updated_at": "2026-08-16T01:49:35Z",
+      "comment_body_sha256": "34e5c96ff3358ea766d695ac3f35f6696cc3adae4e4d7fcc5941aa5c0d1db27b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124162,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T01:50:25.527Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-aware-resume-breaker-122950",
+        "head_sha": "e67a1483987a580986672c14265fcf1bf509d1fb",
         "cluster_id": null,
         "job_path": null
       },
