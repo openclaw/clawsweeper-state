@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T11:01:47.320Z",
+  "updated_at": "2026-08-16T11:03:46.874Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124401:5305671554:2026-08-16T05:08:17Z:clawsweeper_needs_human",
-      "comment_id": "5305671554",
-      "comment_version_key": "5305671554:2026-08-16T05:08:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124401#issuecomment-5305671554",
-      "comment_created_at": "2026-08-16T04:13:34Z",
-      "comment_updated_at": "2026-08-16T05:08:17Z",
-      "comment_body_sha256": "e4b5cb9631741e9e035444077192eb167f379503b8b982f5a4feb5f833f77316",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124401,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - One exact-head CI check is still in progress; merge should wait for it to complete successfully. The PR is behind current main but GitHub reports it cleanly mergeable. (sha=b38a857fcaa36388840d800cb499210c610305c0)",
-      "expected_head_sha": "b38a857fcaa36388840d800cb499210c610305c0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T05:12:31.817Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/beautiful-bhaskara-0ff29f",
-        "head_sha": "b38a857fcaa36388840d800cb499210c610305c0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124414:5305752423:2026-08-16T05:07:04Z:clawsweeper_auto_repair",
       "comment_id": "5305752423",
@@ -31474,6 +31441,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120197:5305532294:2026-08-16T11:03:06Z:re_review",
+      "comment_id": "5305532294",
+      "comment_version_key": "5305532294:2026-08-16T11:03:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120197#issuecomment-5305532294",
+      "comment_created_at": "2026-08-16T03:28:34Z",
+      "comment_updated_at": "2026-08-16T11:03:06Z",
+      "comment_body_sha256": "f6334e1e9a384bbec39dc4c999900553ebc5ee774a94f8ba4d5a1920637f3271",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120197,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T11:03:45.032Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/preflight-codex-compaction-119971",
+        "head_sha": "1ab7ec12e687a16af587225b8d3a22948e67c76e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
