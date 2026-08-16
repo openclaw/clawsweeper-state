@@ -67,20 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the runtime-context carrier ordering on current main for full-replay tool loops. At the embedded LLM boundary, keep the current-turn carrier directly after the active user so consecutive requests retain P+U+X -> P+U+X+Y ordering; continue stripping historical carriers. Do not add a config option, provider-specific filtering, or a parallel fallback path. Check overflow-retry insertion in `src/agents/embedded-agent-runner/run/attempt-llm-boundary.ts` and preserve its behavior. First establish the current failing same-turn sequence, then update the helper and focused regression coverage; stop if the change requires an external provider API contract or broader policy decision. Include release-note context in the PR body, not CHANGELOG.md.
+Repair current-main runtime-context wire ordering for full-replay Responses tool loops. Replace absolute-tail carrier relocation with placement immediately after the active user message, retain historical-carrier stripping, and add a regression proving P+U+X becomes P+U+X+Y across consecutive same-turn tool-loop inputs. Do not add provider-specific configuration or filtering unless direct source analysis shows the runner change cannot uphold that invariant. Run focused owner and cache-stability tests; put release-note context in the PR body without editing CHANGELOG.md.
 
 Likely files:
 
 - src/agents/internal-runtime-context.ts
-- src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
 - src/agents/internal-runtime-context.test.ts
 - src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/internal-runtime-context.test.ts
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt-session-boundary.test.ts
-- node scripts/run-vitest.mjs run --config test/vitest/vitest.agents-embedded-agent-run.config.ts src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
 
 ## Operator Prompt
 
