@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T17:53:44.514Z",
+  "updated_at": "2026-08-16T17:54:19.391Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5297179167:2026-08-14T19:11:21Z:re_review",
-      "comment_id": "5297179167",
-      "comment_version_key": "5297179167:2026-08-14T19:11:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5297179167",
-      "comment_created_at": "2026-08-14T19:11:21Z",
-      "comment_updated_at": "2026-08-14T19:11:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T13:16:06.092Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5305493611:2026-08-16T03:19:02Z:re_review",
       "comment_id": "5305493611",
@@ -32496,6 +32469,39 @@
       "status": "skipped",
       "processed_at": "2026-08-16T17:53:44.514Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124612:5307812301:2026-08-16T17:53:01Z:clawsweeper_needs_human",
+      "comment_id": "5307812301",
+      "comment_version_key": "5307812301:2026-08-16T17:53:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124612#issuecomment-5307812301",
+      "comment_created_at": "2026-08-16T14:01:52Z",
+      "comment_updated_at": "2026-08-16T17:53:01Z",
+      "comment_body_sha256": "6b7d62f1636d7fb160fb685d7daa82fce0bcb483a558ee91ae65458a71d48408",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124612,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Direct scorecard dispatches will now publish validated incomplete evidence by default; this is documented and intentional, but changes operator expectations from a failing refresh. (sha=d613e1dd446c1fc166e7c5c67c5d161d59035ab4)",
+      "expected_head_sha": "d613e1dd446c1fc166e7c5c67c5d161d59035ab4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T17:54:19.391Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/qa-scorecard-workflow-timeout-24c600",
+        "head_sha": "81de483ff4f20eb706fbfe877aee71c5c24ba60d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
