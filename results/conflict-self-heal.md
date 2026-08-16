@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-08-16T07:42:11.470Z
+Generated: 2026-08-16T08:43:09.113Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -58,7 +58,7 @@ Repository: openclaw/openclaw
 | [#107739](https://github.com/openclaw/openclaw/pull/107739) | feat(gateway): utility-model auto-titles for sessions beyond dashboard | molty/utility-model-session-titles | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
 | [#107479](https://github.com/openclaw/openclaw/pull/107479) | docs: add ClawHub glossary labels | clawsweeper/automerge-openclaw-openclaw-103304 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#106789](https://github.com/openclaw/openclaw/pull/106789) | docs: respect configured Crabbox provider for agent tests | clawsweeper/automerge-openclaw-openclaw-104485 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#101593](https://github.com/openclaw/openclaw/pull/101593) | fix(infra): handle detached respawn child errors | clawsweeper/automerge-openclaw-openclaw-101489 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#101593](https://github.com/openclaw/openclaw/pull/101593) | fix(infra): handle detached respawn child errors | clawsweeper/automerge-openclaw-openclaw-101489 | MERGEABLE | BEHIND | skipped | head repository is unknown |
 | [#95502](https://github.com/openclaw/openclaw/pull/95502) | Forward-port Tideclaw alpha fixes | tideclaw/forward-port/alpha-2026-06-21-0212Z | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
 | [#76744](https://github.com/openclaw/openclaw/pull/76744) | docs: standardize ACP behavior spelling | clawsweeper/issue-openclaw-openclaw-76734 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#75403](https://github.com/openclaw/openclaw/pull/75403) | fix: making typing start fire-and-forget allows cleanup/idle to run before a persistent typin... | clawsweeper/clawsweeper-commit-openclaw-openclaw-45b86450795d | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
