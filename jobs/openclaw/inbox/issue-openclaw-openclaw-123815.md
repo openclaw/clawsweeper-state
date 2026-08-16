@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair this issue in the Signal plugin only. First reproduce the current pathname failure against a real external-native signal-cli daemon running under a different UID and verify, from that daemon’s current contract, whether its JSON-RPC send attachment accepts RFC 2397 data URIs. If confirmed, factor the existing bounded filename-safe data-URI serializer into one local Signal-plugin helper and use it only for external-native sends; keep managed-native and container behavior unchanged. Add a regression that proves the production JSON-RPC payload is decodable and preserves quote-fallback media behavior, plus separate-UID real-daemon proof. Do not add an attachment transport setting, relax media-store permissions, create a shared media directory, or edit CHANGELOG.md; capture release-note context in the PR body. Stop and report evidence if the native contract is unavailable or rejects the payload.
+Repair the source-proven external-native Signal attachment failure. First inspect the exact supported signal-cli native HTTP JSON-RPC source/docs and run a real isolated native-daemon check proving whether `send` accepts RFC 2397 data URIs in `attachments` at the configured media limit; stop and report if that contract does not hold. If it does, serialize only `external-native` attachments from the already authorized resolved file into a bounded MIME- and filename-preserving data URI. Keep managed-native path behavior and the container REST conversion unchanged; do not add a configuration option or weaken media-access/root checks. Extend the real loopback JSON-RPC boundary test so it decodes the data URI and proves bytes, quote fallback, and all Signal outbound adapters; establish that it fails before the repair. Run the focused Signal tests and retain a redacted real-daemon trace. Do not edit CHANGELOG.md; include release-note context in the PR body or commit message.
 
 Likely files:
 
@@ -75,13 +75,13 @@ Likely files:
 - extensions/signal/src/client-container.ts
 - extensions/signal/src/send.test.ts
 - extensions/signal/src/media-access.test.ts
-- extensions/signal/src/client-container.test.ts
+- docs/channels/signal.md
 
 Validation:
 
-- Run the focused Signal suite: node scripts/run-vitest.mjs run --config test/vitest/vitest.extension-signal.config.ts extensions/signal/src/send.test.ts extensions/signal/src/media-access.test.ts extensions/signal/src/client-container.test.ts
-- Run a real external-native signal-cli daemon under a different UID and record a redacted before/after attachment send proving the daemon receives and accepts the selected representation.
-- Verify managed-native remains path-based and container retains its existing REST data-URI conversion.
+- node scripts/run-vitest.mjs run --config test/vitest/vitest.extension-signal.config.ts extensions/signal/src/send.test.ts extensions/signal/src/media-access.test.ts
+- node scripts/run-vitest.mjs run --config test/vitest/vitest.extension-signal.config.ts extensions/signal/src/client-container.test.ts
+- Real isolated signal-cli native-daemon send using a data-URI attachment while the daemon cannot traverse the gateway media directory.
 
 ## Operator Prompt
 
