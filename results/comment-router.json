@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T10:22:12.045Z",
+  "updated_at": "2026-08-16T10:25:35.335Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5305686137:2026-08-16T04:18:02Z:re_review",
-      "comment_id": "5305686137",
-      "comment_version_key": "5305686137:2026-08-16T04:18:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5305686137",
-      "comment_created_at": "2026-08-16T04:18:02Z",
-      "comment_updated_at": "2026-08-16T04:18:02Z",
-      "comment_body_sha256": "4e65aad732913e75bb25e76c4257855154b2489b42c895c53f3d1dfdb5330706",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T04:18:48.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bartok9/cron-precheck-gate",
-        "head_sha": "4a5ff0fc969f0636b0ca930cff3e2d5b060c0d32",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124406:5305687610:2026-08-16T04:18:30Z:clawsweeper_needs_human",
       "comment_id": "5305687610",
@@ -31849,6 +31802,39 @@
         "kind": "pull_request",
         "branch": "steipete/fix-changelog-bot-credit",
         "head_sha": "efd18c92df909e4daa8bb1e2c1053fa4e3ee3f2a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124519:5306948531:2026-08-16T10:23:24Z:clawsweeper_needs_human",
+      "comment_id": "5306948531",
+      "comment_version_key": "5306948531:2026-08-16T10:23:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124519#issuecomment-5306948531",
+      "comment_created_at": "2026-08-16T10:23:24Z",
+      "comment_updated_at": "2026-08-16T10:23:24Z",
+      "comment_body_sha256": "8aa677b143119f1ae845681b1027939f329adc6e0bc532632d7c17559ad05237",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124519,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Non-default plugin configurations may now use lifecycle metadata rather than a cold manifest-discovery fallback, so compatibility needs fresh exact-head validation. (sha=172ff2427b559e0a94290fddf5c5212b4906ba70)",
+      "expected_head_sha": "172ff2427b559e0a94290fddf5c5212b4906ba70",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T10:25:35.335Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/status-static-catalog-snapshot",
+        "head_sha": "172ff2427b559e0a94290fddf5c5212b4906ba70",
         "cluster_id": null,
         "job_path": null
       }
