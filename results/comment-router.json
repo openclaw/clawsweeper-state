@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T06:24:16.656Z",
+  "updated_at": "2026-08-16T06:27:09.600Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119576:5228086877:2026-08-08T20:50:30Z:re_review",
-      "comment_id": "5228086877",
-      "comment_version_key": "5228086877:2026-08-08T20:50:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119576#issuecomment-5228086877",
-      "comment_created_at": "2026-08-08T20:50:30Z",
-      "comment_updated_at": "2026-08-08T20:50:30Z",
-      "comment_body_sha256": "a48b8a767c5f8d39fb2f64120d9ccf51c80f7d6ba0cee5509f49353553eaa9db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119576,
-      "author": "licheer-zte",
-      "author_id": 305411557,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — check-lint fixed on head `c95032fdd`: the revert-cancel regression assertion replaced `call[3]?.runtimeapplied === false` (oxlint `no-unnecessary-boolean-literal-compare`) with an explicit `call[3] !== undefined && !call[3].runtimeapplied` guard, preserving the exact semantics (missing 4th arg still does not match). focused vitest re-run passes in all 3 project variants; full ci green on the new head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T00:59:17.027Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119576:5272424256:2026-08-12T20:27:28Z:re_review",
       "comment_id": "5272424256",
@@ -32138,6 +32111,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124222:5303633162:2026-08-16T06:26:10Z:clawsweeper_needs_human",
+      "comment_id": "5303633162",
+      "comment_version_key": "5303633162:2026-08-16T06:26:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124222#issuecomment-5303633162",
+      "comment_created_at": "2026-08-15T18:28:34Z",
+      "comment_updated_at": "2026-08-16T06:26:10Z",
+      "comment_body_sha256": "e9c1d72761fddac56990248affb346b3f236cd0cd41ad56f93781d4556802517",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124222,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The branch adds a credible real-Gateway/local-transport harness, but the provided evidence contains no executed after-fix transcript or verdict... (sha=6328eb543924fbc92376a786a15da6f150baea5a)",
+      "expected_head_sha": "6328eb543924fbc92376a786a15da6f150baea5a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T06:27:09.600Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-rich-callback-edit",
+        "head_sha": "6328eb543924fbc92376a786a15da6f150baea5a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
