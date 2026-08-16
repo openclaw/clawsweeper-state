@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-16T06:01:10.633Z",
+  "updated_at": "2026-08-16T06:00:03.488Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120805:5304938344:2026-08-16T00:28:25Z:re_review",
+      "comment_id": "5304938344",
+      "comment_version_key": "5304938344:2026-08-16T00:28:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120805#issuecomment-5304938344",
+      "comment_created_at": "2026-08-16T00:28:25Z",
+      "comment_updated_at": "2026-08-16T00:28:25Z",
+      "comment_body_sha256": "ce597d338a48a3190c55c447c391cc7d6fcb0d879db60d75ad8d93fcbb205c71",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120805,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T00:29:12.113Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/model-picker-provenance",
+        "head_sha": "7c783db0da0e70e51bffd8a7122e26aad475c136",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123912:5299764532:2026-08-16T00:29:27Z:clawsweeper_needs_human",
       "comment_id": "5299764532",
@@ -32110,39 +32157,6 @@
         "kind": "pull_request",
         "branch": "fix/sanitize-angle-addr",
         "head_sha": "c5150a0f45418301a362b244a6ded4d98062591a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124444:5306021390:2026-08-16T06:00:25Z:clawsweeper_needs_human",
-      "comment_id": "5306021390",
-      "comment_version_key": "5306021390:2026-08-16T06:00:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124444#issuecomment-5306021390",
-      "comment_created_at": "2026-08-16T06:00:25Z",
-      "comment_updated_at": "2026-08-16T06:00:25Z",
-      "comment_body_sha256": "38c1c3e9663a2886e80b4ed1a5d3a2e49756821929c15abdcb9a81a8240f7269",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124444,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bind handoffs to the authenticated Gateway identity (P1)** - The new URL-only match restores raw staged attachments whenever a replacement client keeps the same URL. gateway.connect() also accepts a replacement...; Review finding: [P1] Bind handoffs to the authenticated Gateway identity — ui/src/app/chat-attachment-handoff.ts:101-106 - [high] URL-only handoff can cross credential principals... (sha=6ec83b57fcb6c3a6a143728f9f8ceaf21cd13e25)",
-      "expected_head_sha": "6ec83b57fcb6c3a6a143728f9f8ceaf21cd13e25",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T06:01:10.633Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/autoqa-attachment-handoff-v2",
-        "head_sha": "6ec83b57fcb6c3a6a143728f9f8ceaf21cd13e25",
         "cluster_id": null,
         "job_path": null
       }
