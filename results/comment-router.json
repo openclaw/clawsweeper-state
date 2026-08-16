@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T17:04:47.632Z",
+  "updated_at": "2026-08-16T17:04:56.441Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5302700477:2026-08-15T14:36:16Z:re_review",
-      "comment_id": "5302700477",
-      "comment_version_key": "5302700477:2026-08-15T14:36:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5302700477",
-      "comment_created_at": "2026-08-15T14:36:16Z",
-      "comment_updated_at": "2026-08-15T14:36:16Z",
-      "comment_body_sha256": "a2388b16eb3034dc3831207c287661afce3ac7a45872b0414359b7b2bd320e67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T12:30:23.388Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:5302758352:2026-08-15T14:50:47Z:re_review",
       "comment_id": "5302758352",
@@ -32361,6 +32334,39 @@
       "status": "skipped",
       "processed_at": "2026-08-16T17:04:47.632Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123858:5298563833:2026-08-16T17:04:09Z:clawsweeper_needs_human",
+      "comment_id": "5298563833",
+      "comment_version_key": "5298563833:2026-08-16T17:04:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123858#issuecomment-5298563833",
+      "comment_created_at": "2026-08-14T21:56:55Z",
+      "comment_updated_at": "2026-08-16T17:04:09Z",
+      "comment_body_sha256": "773daee42fc8cc4fdc26dfe255a0f86f5a12a65aed944fff6a7cfb565977c0e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123858,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Sync only a landed canonical snapshot (P1)** - The scoped guide requires the complete directory to be copied after the canonical openclaw/agent-skills source is updated from origin/main. This PR states that it s...; Review finding: [P1] Sync only a landed canonical snapshot — .agents/skills/autoreview/scripts/autoreview:1 - [medium] Verify the external engine isolation contracts — .agents/ski... (sha=3e46e3ce0f014cdb20febb3c16f402f83eab947d)",
+      "expected_head_sha": "3e46e3ce0f014cdb20febb3c16f402f83eab947d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T17:04:56.441Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bound-sleeping-reviewer",
+        "head_sha": "3e46e3ce0f014cdb20febb3c16f402f83eab947d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
