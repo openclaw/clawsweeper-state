@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-08-16T09:40:26.466Z
+Generated: 2026-08-16T10:40:04.930Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -59,7 +59,7 @@ Repository: openclaw/openclaw
 | [#107479](https://github.com/openclaw/openclaw/pull/107479) | docs: add ClawHub glossary labels | clawsweeper/automerge-openclaw-openclaw-103304 | MERGEABLE | BEHIND | skipped | head repository is unknown |
 | [#106789](https://github.com/openclaw/openclaw/pull/106789) | docs: respect configured Crabbox provider for agent tests | clawsweeper/automerge-openclaw-openclaw-104485 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#101593](https://github.com/openclaw/openclaw/pull/101593) | fix(infra): handle detached respawn child errors | clawsweeper/automerge-openclaw-openclaw-101489 | MERGEABLE | BEHIND | skipped | head repository is unknown |
-| [#95502](https://github.com/openclaw/openclaw/pull/95502) | Forward-port Tideclaw alpha fixes | tideclaw/forward-port/alpha-2026-06-21-0212Z | CONFLICTING | DIRTY | skipped | head branch does not start with clawsweeper/ |
+| [#95502](https://github.com/openclaw/openclaw/pull/95502) | Forward-port Tideclaw alpha fixes | tideclaw/forward-port/alpha-2026-06-21-0212Z | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
 | [#76744](https://github.com/openclaw/openclaw/pull/76744) | docs: standardize ACP behavior spelling | clawsweeper/issue-openclaw-openclaw-76734 | MERGEABLE | BEHIND | skipped | head repository is unknown |
 | [#75403](https://github.com/openclaw/openclaw/pull/75403) | fix: making typing start fire-and-forget allows cleanup/idle to run before a persistent typin... | clawsweeper/clawsweeper-commit-openclaw-openclaw-45b86450795d | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#75148](https://github.com/openclaw/openclaw/pull/75148) | fix: fallback path user-visible bug | clawsweeper/clawsweeper-commit-openclaw-openclaw-82ca6ecdde80 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
