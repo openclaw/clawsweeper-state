@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T19:33:58.242Z",
+  "updated_at": "2026-08-16T19:34:07.555Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1359:5308103638:2026-08-16T15:10:33Z:re_review",
-      "comment_id": "5308103638",
-      "comment_version_key": "5308103638:2026-08-16T15:10:33Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1359#issuecomment-5308103638",
-      "comment_created_at": "2026-08-16T15:10:33Z",
-      "comment_updated_at": "2026-08-16T15:10:33Z",
-      "comment_body_sha256": "0eeafd1494e23524b2c980e0a4a9a139a05425a9c0035a848d61f7cd2d875130",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1359,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T15:11:11.448Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-1353-local-owner",
-        "head_sha": "e75bf792fec7e8b82deb025a489856a4632eaee8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124656:5308106004:2026-08-16T15:11:06Z:clawsweeper_needs_human",
       "comment_id": "5308106004",
@@ -31813,6 +31766,39 @@
         "kind": "pull_request",
         "branch": "fix/123691-audit-worker-env-inheritance",
         "head_sha": "c2e32d0b2cc7876ea1cd8b0077d1f50f1b796cfb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124775:5309282134:2026-08-16T19:33:23Z:clawsweeper_needs_human",
+      "comment_id": "5309282134",
+      "comment_version_key": "5309282134:2026-08-16T19:33:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124775#issuecomment-5309282134",
+      "comment_created_at": "2026-08-16T19:33:23Z",
+      "comment_updated_at": "2026-08-16T19:33:23Z",
+      "comment_body_sha256": "e0a185ef1d3e45e81976236d11f8e9b61f89eaab8619c9077f827299f7548b00",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124775,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The native messaging allowlist and persistent registration migration need exact-head inspection before merge because the proposed commit could not be hydrated locally. (sha=1d67317c321d579bab8f18e1477d7c3baa34754e)",
+      "expected_head_sha": "1d67317c321d579bab8f18e1477d7c3baa34754e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T19:34:07.555Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/chrome-store-native-origin",
+        "head_sha": "1d67317c321d579bab8f18e1477d7c3baa34754e",
         "cluster_id": null,
         "job_path": null
       }
