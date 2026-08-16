@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T13:34:22.633Z",
+  "updated_at": "2026-08-16T13:34:53.983Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4660098613:2026-06-09T13:15:47Z:re_review",
-      "comment_id": "4660098613",
-      "comment_version_key": "4660098613:2026-06-09T13:15:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4660098613",
-      "comment_created_at": "2026-06-09T13:15:47Z",
-      "comment_updated_at": "2026-06-09T13:15:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T07:56:28.144Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4663196981:2026-06-09T19:16:41Z:re_review",
       "comment_id": "4663196981",
@@ -31482,6 +31455,39 @@
       "status": "skipped",
       "processed_at": "2026-08-16T13:34:22.633Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124597:5307693899:2026-08-16T13:34:18Z:clawsweeper_needs_human",
+      "comment_id": "5307693899",
+      "comment_version_key": "5307693899:2026-08-16T13:34:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124597#issuecomment-5307693899",
+      "comment_created_at": "2026-08-16T13:34:18Z",
+      "comment_updated_at": "2026-08-16T13:34:18Z",
+      "comment_body_sha256": "f30c631ef0913c58074efafc583dfc2080e7dd254d37d9bea439effccd23fbb1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124597,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The change relies on @openclaw/fs-safe 0.5.5 for repeated-read, EOF, and overflow semantics; its source could not be inspected in this environment because neither the local package no... (sha=6185f91b5e0006e588c8cfe1a9a3f5dd94002022)",
+      "expected_head_sha": "6185f91b5e0006e588c8cfe1a9a3f5dd94002022",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T13:34:53.983Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa-core-short-read-v3",
+        "head_sha": "6185f91b5e0006e588c8cfe1a9a3f5dd94002022",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
