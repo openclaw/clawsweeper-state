@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T15:17:18.086Z",
+  "updated_at": "2026-08-16T15:17:30.163Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124516:5306614862:2026-08-16T08:51:01Z:clawsweeper_needs_human",
-      "comment_id": "5306614862",
-      "comment_version_key": "5306614862:2026-08-16T08:51:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124516#issuecomment-5306614862",
-      "comment_created_at": "2026-08-16T08:51:01Z",
-      "comment_updated_at": "2026-08-16T08:51:01Z",
-      "comment_body_sha256": "7987ef510090e0313e46006bb694fb8ca1494d06b8ec0d2d660a57f6d9dcff2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124516,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted session-store discovery; it must be rebased onto current main and validated at the exact merged head because current main recently changed adjacent gateway targ... (sha=52d36e450147a84c47f9449522163daba47d4de6)",
-      "expected_head_sha": "52d36e450147a84c47f9449522163daba47d4de6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T08:51:44.272Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skip-full-store-discovery-123439",
-        "head_sha": "52d36e450147a84c47f9449522163daba47d4de6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124470:5306365283:2026-08-16T08:49:15Z:clawsweeper_needs_human",
       "comment_id": "5306365283",
@@ -32468,6 +32435,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124543:5308130174:2026-08-16T15:16:42Z:re_review",
+      "comment_id": "5308130174",
+      "comment_version_key": "5308130174:2026-08-16T15:16:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124543#issuecomment-5308130174",
+      "comment_created_at": "2026-08-16T15:16:42Z",
+      "comment_updated_at": "2026-08-16T15:16:42Z",
+      "comment_body_sha256": "7f56f46d700f7dc1bb5c8dfd2bba3a45e184f13f06159d97cae5d04f9ba3adb1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124543,
+      "author": "spunzon",
+      "author_id": 38790201,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T15:17:28.057Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-aggregate-turn-duplication-123792",
+        "head_sha": "91f8dcb65bd8fafa5e95c44c148fd574d4213913",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
