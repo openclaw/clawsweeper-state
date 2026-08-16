@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T09:42:36.498Z",
+  "updated_at": "2026-08-16T09:45:23.510Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5300613784:2026-08-15T04:53:22Z:re_review",
-      "comment_id": "5300613784",
-      "comment_version_key": "5300613784:2026-08-15T04:53:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5300613784",
-      "comment_created_at": "2026-08-15T04:53:22Z",
-      "comment_updated_at": "2026-08-15T04:53:22Z",
-      "comment_body_sha256": "a90da4565424cdb421e24bb9fdbe4932655547117092aa3c53805a42a73b6126",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T04:15:11.941Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5300745759:2026-08-15T05:31:55Z:re_review",
       "comment_id": "5300745759",
@@ -31700,6 +31673,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119134:5176428798:2026-08-16T09:37:19Z:clawsweeper_needs_human",
+      "comment_id": "5176428798",
+      "comment_version_key": "5176428798:2026-08-16T09:37:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119134#issuecomment-5176428798",
+      "comment_created_at": "2026-08-04T08:22:57Z",
+      "comment_updated_at": "2026-08-16T09:37:19Z",
+      "comment_body_sha256": "74ceaf6c6cfde182c8bf5f599c39514f412fc8e875cd0b0e98acde0eee506799",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119134,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Reviewer-side access to current LM Studio upstream documentation was unavailable because DNS resolution failed; the contributor’s recorded 0.4.20 live run and OpenClaw’s existing endp... (sha=190d8930e8ee2e8b0f8c1507ac61c6987b3c9357)",
+      "expected_head_sha": "190d8930e8ee2e8b0f8c1507ac61c6987b3c9357",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T09:45:23.510Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/lmstudio-detect-availability",
+        "head_sha": "190d8930e8ee2e8b0f8c1507ac61c6987b3c9357",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
