@@ -1,47 +1,6 @@
 {
-  "updated_at": "2026-08-16T06:29:09.630Z",
+  "updated_at": "2026-08-16T06:29:56.695Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119777:5199058768:2026-08-16T00:46:00Z:autoclose",
-      "comment_id": "5199058768",
-      "comment_version_key": "5199058768:2026-08-16T00:46:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119777#issuecomment-5199058768",
-      "comment_created_at": "2026-08-06T00:39:16Z",
-      "comment_updated_at": "2026-08-16T00:46:00Z",
-      "comment_body_sha256": "00c64569c5f93a7ce3fc636ff96e021d3d8798b045e6795493b5b1815da78b7c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119777,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required (sha=da2af82225ea9e1ca217f2dedabc63de88f0f3e5)",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required (sha=da2af82225ea9e1ca217f2dedabc63de88f0f3e5)",
-      "expected_head_sha": "da2af82225ea9e1ca217f2dedabc63de88f0f3e5",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T01:07:20.455Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/health-session-store-path",
-        "head_sha": "da2af82225ea9e1ca217f2dedabc63de88f0f3e5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121760:5247413579:2026-08-16T00:55:01Z:clawsweeper_auto_repair",
       "comment_id": "5247413579",
@@ -32080,6 +32039,53 @@
       "status": "skipped",
       "processed_at": "2026-08-16T06:29:09.630Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124427:5306122122:2026-08-16T06:29:09Z:re_review",
+      "comment_id": "5306122122",
+      "comment_version_key": "5306122122:2026-08-16T06:29:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124427#issuecomment-5306122122",
+      "comment_created_at": "2026-08-16T06:29:09Z",
+      "comment_updated_at": "2026-08-16T06:29:09Z",
+      "comment_body_sha256": "88dc32dabdad55465195008ac100408090c62de0ad35d3a8376efe9bf00d2b47",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124427,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T06:29:54.831Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/bundle-prewarm-negotiated",
+        "head_sha": "6e2f5988f0de094b786bddfd1380ea02e51cb5f0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
