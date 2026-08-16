@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T14:55:47.259Z",
+  "updated_at": "2026-08-16T14:56:23.671Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124443:5305997278:2026-08-16T08:35:08Z:clawsweeper_needs_human",
-      "comment_id": "5305997278",
-      "comment_version_key": "5305997278:2026-08-16T08:35:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124443#issuecomment-5305997278",
-      "comment_created_at": "2026-08-16T05:52:27Z",
-      "comment_updated_at": "2026-08-16T08:35:08Z",
-      "comment_body_sha256": "95eddfb6735ab0ad21aa2f3e1edf2084c521837746a528744a6701d815692f59",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124443,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides mocked transport coverage only; add a redacted after-fix Gateway/node-host trace before merge. After adding proof, update the P... (sha=839431d27ada59fb0a9c069d7fd3cc41e94f2f83)",
-      "expected_head_sha": "839431d27ada59fb0a9c069d7fd3cc41e94f2f83",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T08:36:16.646Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/retain-coordinator-skip-unsupported-nodes",
-        "head_sha": "839431d27ada59fb0a9c069d7fd3cc41e94f2f83",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118067:5159399788:2026-08-16T08:31:40Z:clawsweeper_needs_human",
       "comment_id": "5159399788",
@@ -32444,6 +32411,39 @@
       "status": "skipped",
       "processed_at": "2026-08-16T14:55:47.259Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122023:5253536720:2026-08-16T14:55:38Z:clawsweeper_needs_human",
+      "comment_id": "5253536720",
+      "comment_version_key": "5253536720:2026-08-16T14:55:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122023#issuecomment-5253536720",
+      "comment_created_at": "2026-08-11T13:03:33Z",
+      "comment_updated_at": "2026-08-16T14:55:38Z",
+      "comment_body_sha256": "b96a5c8abe51925aff1a4f5d15a8b6f5ccd405e798d11e40fc217f8160dbe45f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122023,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This deliberately turns one formerly benign skip into an immediate turn rejection; exact-head checks should remain green on the clean merge result with current main's newer native-pre... (sha=c8ed97efbe561e2e7868b927d291619742d4ac39)",
+      "expected_head_sha": "c8ed97efbe561e2e7868b927d291619742d4ac39",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T14:56:23.671Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-121617",
+        "head_sha": "c8ed97efbe561e2e7868b927d291619742d4ac39",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
