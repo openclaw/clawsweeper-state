@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T22:40:34.881Z",
+  "updated_at": "2026-08-16T22:41:06.148Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124659:5308122902:2026-08-16T16:59:20Z:clawsweeper_auto_repair",
-      "comment_id": "5308122902",
-      "comment_version_key": "5308122902:2026-08-16T16:59:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124659#issuecomment-5308122902",
-      "comment_created_at": "2026-08-16T15:14:58Z",
-      "comment_updated_at": "2026-08-16T16:59:20Z",
-      "comment_body_sha256": "5f644aa7ea6d28a5d4046ee40de65900c663ea2b49b69c83e1d95faf031a8c02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124659,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9defaef9789686b030a9ce2c859546eb3c4ee582)",
-      "expected_head_sha": "9defaef9789686b030a9ce2c859546eb3c4ee582",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T17:06:44.121Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-managed-handoff-successor",
-        "head_sha": "9defaef9789686b030a9ce2c859546eb3c4ee582",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123870:5308574928:2026-08-16T16:58:24Z:re_review",
       "comment_id": "5308574928",
@@ -33193,6 +33160,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124784:5310035543:2026-08-16T22:40:19Z:re_review",
+      "comment_id": "5310035543",
+      "comment_version_key": "5310035543:2026-08-16T22:40:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124784#issuecomment-5310035543",
+      "comment_created_at": "2026-08-16T22:40:19Z",
+      "comment_updated_at": "2026-08-16T22:40:19Z",
+      "comment_body_sha256": "d91e0950b777f105480aa46fba0b56b2be86dfdaa439c13f8e1e016e7db36098",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124784,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T22:41:04.201Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-skill-invocation-surface",
+        "head_sha": "518076a8b2b7fd289ef6907f6498994f01fd1494",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
