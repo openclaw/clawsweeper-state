@@ -67,18 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the browser CLI snapshot timeout path for https://github.com/openclaw/openclaw/issues/124521. Preserve the established 20-second default and the agent/browser-route behavior from https://github.com/openclaw/openclaw/pull/75702; do not raise the default or add configuration. Make an explicit `openclaw browser --timeout &lt;ms> snapshot` control both the Gateway request and browser proxy timeout instead of being replaced by the snapshot command’s fixed budget. Add a regression test at the actual CLI-to-Gateway boundary that fails before the repair, plus default coverage. Apply the test-audit gate and stop if the repair requires changing the public timeout contract beyond this override. Put release-note context in the PR body, not CHANGELOG.md.
+Repair the browser CLI inspection timeout boundary for https://github.com/openclaw/openclaw/issues/124521. In `extensions/browser/src/cli/browser-cli-inspect.ts`, make explicit parent `--timeout` control both snapshot and sibling screenshot requests while retaining their 20-second default only when no parent timeout was supplied. Preserve the existing Gateway request and browser-service timeout contract; do not add config, alter browser-engine defaults, or perform a release/version bump. First establish a failing parser/dispatch regression, then add focused coverage proving parent `--timeout 60000` reaches the Gateway request for snapshot and screenshot and that the no-override default remains 20 seconds. Include release-note context in the PR body or commit message, not CHANGELOG.md.
 
 Likely files:
 
 - extensions/browser/src/cli/browser-cli-inspect.ts
-- extensions/browser/src/cli/browser-cli-shared.ts
 - extensions/browser/src/cli/browser-cli-inspect.test.ts
+- extensions/browser/src/cli/browser-cli-shared.ts
+- extensions/browser/src/cli/browser-cli-shared.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/browser/src/cli/browser-cli-inspect.test.ts extensions/browser/src/cli/browser-cli-shared.test.ts
-- Run the focused regression before and after the repair; verify `--timeout 60000` reaches the browser request and default snapshot behavior remains covered.
+- node scripts/run-vitest.mjs extensions/browser/src/cli/browser-cli-inspect.test.ts extensions/browser/src/cli/browser-cli-shared.test.ts extensions/browser/src/gateway/browser-request.timeout.test.ts
+- git diff --check
 
 ## Operator Prompt
 
