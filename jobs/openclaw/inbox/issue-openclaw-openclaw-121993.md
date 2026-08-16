@@ -67,22 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair metadata-backed ACP session model projection in the Gateway. Use persisted SessionAcpMeta plus ACP session-key validation as the only gate: for true ACP runtime sessions expose modelProvider "acpx", model "&lt;agentId>-acp", and lock model selection; ACP-shaped bridge sessions without metadata must preserve their configured model and remain patchable. Reuse or extract the existing CLI invariant in src/commands/sessions.ts; do not infer ACP from key shape alone or hardcode Cursor or Codex. Enforce the same gate in direct sessions.patch { model } handling. Add regressions that fail pre-fix for metadata-backed ACP, ACP-shaped bridge sessions without metadata, and normal sessions. Do not implement harness configOptions selectable models; that is tracked by https://github.com/openclaw/openclaw/issues/122488. No CHANGELOG edit.
+Repair ACP session model projection in Gateway. For a session with both an ACP-shaped stored key and persisted ACP metadata, project provider `acpx`, model `&lt;agentId>-acp`, and locked model selection; apply the same durable gate before accepting a direct Gateway model patch. Keep configured model display and editability for ACP-shaped bridge sessions without metadata, and do not add harness-specific model-list UI or new configuration—https://github.com/openclaw/openclaw/issues/122488 owns that feature. Add focused regression coverage, capture user-visible release context in the PR body or commit message, and do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/gateway/session-utils-row.ts
+- src/gateway/session-utils-list.ts
 - src/gateway/session-utils-model.ts
-- src/gateway/sessions-patch.ts
 - src/gateway/session-utils.test.ts
+- src/gateway/sessions-patch.ts
 - src/gateway/sessions-patch.test.ts
-- src/commands/sessions.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/session-utils.test.ts
 - node scripts/run-vitest.mjs src/gateway/sessions-patch.test.ts
-- Capture redacted Control UI proof from a metadata-backed ACP session showing the ACP identity and locked selector.
+- node scripts/run-vitest.mjs src/commands/sessions.acp-model-display.test.ts
 
 ## Operator Prompt
 
