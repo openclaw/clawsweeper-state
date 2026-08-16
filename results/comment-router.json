@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T13:01:22.689Z",
+  "updated_at": "2026-08-16T13:03:17.586Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5236164947:2026-08-10T05:14:03Z:re_review",
-      "comment_id": "5236164947",
-      "comment_version_key": "5236164947:2026-08-10T05:14:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5236164947",
-      "comment_created_at": "2026-08-10T05:14:03Z",
-      "comment_updated_at": "2026-08-10T05:14:03Z",
-      "comment_body_sha256": "da1d5ebe78031616e024aef55bb237b1fb9517e13c6aadf378cfad5fba39658b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — pr body evidence section now includes the container-hosted real-behavior proof (`scripts/proof/issue-119977-proof.mts` + `scripts/proof/run-issue-119977-docker.sh`) driving the three fixed runtime paths against a simulated codex app-server client. proof runner exits 0 on the current head with all assertions passing",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T07:25:39.502Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5243247924:2026-08-10T16:47:16Z:re_review",
       "comment_id": "5243247924",
@@ -31476,6 +31449,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121063:5307566556:2026-08-16T13:02:34Z:re_review",
+      "comment_id": "5307566556",
+      "comment_version_key": "5307566556:2026-08-16T13:02:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121063#issuecomment-5307566556",
+      "comment_created_at": "2026-08-16T13:02:34Z",
+      "comment_updated_at": "2026-08-16T13:02:34Z",
+      "comment_body_sha256": "8e4376b76b8679fd2a7cce3bb0056eb03d7e922f497ebdb05e8d1c4aa7cec465",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121063,
+      "author": "Papilionidae",
+      "author_id": 39980552,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review (exact-head proof added for ca6ad5a13: worker rejected-launch ci trace + transport re-run + env-restore)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T13:03:15.958Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/br-120962",
+        "head_sha": "ca6ad5a130040e7ac72f72760a0b4521c18249bc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
