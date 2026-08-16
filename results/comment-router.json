@@ -1,45 +1,6 @@
 {
-  "updated_at": "2026-08-16T12:10:44.880Z",
+  "updated_at": "2026-08-16T12:10:52.614Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:50900:4341191091:2026-08-16T06:02:12Z:autoclose",
-      "comment_id": "4341191091",
-      "comment_version_key": "4341191091:2026-08-16T06:02:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/50900#issuecomment-4341191091",
-      "comment_created_at": "2026-04-29T05:46:27Z",
-      "comment_updated_at": "2026-08-16T06:02:12Z",
-      "comment_body_sha256": "2cdd9e991967b2296dfb6e6a89efe886c131abe0446500e2db870ae0e2dee83d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 50900,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T06:16:07.294Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90062:4617670440:2026-08-16T06:07:20Z:clawsweeper_auto_repair",
       "comment_id": "4617670440",
@@ -31636,6 +31597,39 @@
       "status": "skipped",
       "processed_at": "2026-08-16T12:10:44.880Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-16T12:02:38Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-16T12:02:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-16T12:02:38Z",
+      "comment_body_sha256": "b9007a3b13bc267ee29cbf3d0682387745871a363f55a30f6cd143ab81a0f15e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog workflow guard (P1)** - This changes the action SHA, but test/scripts/ci-workflow-guards.test.ts:3343 still requires the old SHA, so the focused workflow guard fails. Update the guard...; Review finding: [P1] Synchronize the TruffleHog workflow guard — .github/workflows/ci.yml:1076 - [P1] Update the Android attestation expectation — .github/workflows/android-releas... (sha=8e844df9d750b092a14face7118ea5080a61dac9)",
+      "expected_head_sha": "8e844df9d750b092a14face7118ea5080a61dac9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T12:10:52.614Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "8e844df9d750b092a14face7118ea5080a61dac9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
