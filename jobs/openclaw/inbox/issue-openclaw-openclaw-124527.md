@@ -67,22 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the current xAI retired-fast-model compatibility defect behind this issue. First obtain a redacted real xAI Responses image request that confirms the supported replacement for `grok-4-fast`; do not print credentials. Update only the xAI provider’s catalog/compatibility, Fast Mode stream behavior, and doctor migration so persisted `agents.defaults.imageModel` references and runtime Fast Mode no longer emit the invalid alias. Preserve valid current aliases and provider-owned configuration, add regression coverage that fails before the fix for agent image-model selection plus stream rewrite/doctor migration, and stop for maintainer direction if xAI offers no semantics-preserving Fast Mode replacement. Do not add Telegram-specific fallback logic, config options, runtime aliases, or CHANGELOG.md edits.
+Repair the xAI legacy-fast image-understanding path for this issue. First establish a redacted failing xAI Responses image request when credentials are available. Trace every legacy fast route, including configured `agents.defaults.imageModel` primary/fallback refs and xAI fast-mode stream rewriting; migrate retired persisted refs through the canonical doctor model-ref path and route runtime fast output only to a currently supported xAI vision model. Preserve deliberate current-model behavior, avoid Telegram-specific workarounds and new configuration, add regression coverage that fails before the fix, update affected xAI compatibility docs, and put release-note context in the PR body without editing CHANGELOG.md.
 
 Likely files:
 
 - extensions/xai/stream.ts
 - extensions/xai/stream.test.ts
-- extensions/xai/doctor-contract-api.ts
-- extensions/xai/doctor-contract-api.test.ts
 - src/commands/doctor/shared/legacy-config-migrations.runtime.models.refs.ts
 - src/commands/doctor/shared/legacy-config-migrate.test.ts
-- src/media-understanding/runner.vision-skip.test.ts
+- docs/providers/xai.md
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/xai/stream.test.ts extensions/xai/doctor-contract-api.test.ts src/commands/doctor/shared/legacy-config-migrate.test.ts src/media-understanding/runner.vision-skip.test.ts
-- Run a redacted real xAI Responses JPEG request through the production media-understanding boundary, showing the formerly failing selector is migrated or no longer emitted and the supported replacement produces a description.
+- pnpm test src/commands/doctor/shared/legacy-config-migrate.test.ts
+- pnpm test extensions/xai/stream.test.ts
+- Run a redacted live xAI Responses image request through the repaired configured-image path when an approved xAI credential is available.
 
 ## Operator Prompt
 

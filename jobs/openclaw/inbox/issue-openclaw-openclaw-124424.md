@@ -67,20 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix https://github.com/openclaw/openclaw/issues/124424 at the Control UI session-request boundary. Treat the route key as a parent only when the loaded current roster contains the same canonical/equivalent session; otherwise create an independent session. Preserve `src/gateway/session-create-service.ts` rejection of arbitrary unknown parents and its ownership, model-lock, and incognito protections. First establish a regression that fails on current main, then add boundary coverage for an empty roster and a real selected parent. Do not add config, retries, or gateway-side missing-parent acceptance. Put release-note context in the PR body, not CHANGELOG.md.
+Reproduce the clean Control UI New session failure first, or establish a failing boundary regression. In the chat-pane creation path, pass `currentSessionKey` only when `selectedChatSessionRow(state)` identifies a durable current session; do not forward a synthetic bootstrap route as an explicit parent. Preserve existing durable-parent behavior and Gateway rejection of arbitrary unknown parents; do not change the Gateway protocol, add configuration, or modify CHANGELOG.md. Add a focused regression proving a clean route creates a distinct session without `parentSessionKey`, while a persisted route retains its parent link. Include user-visible release-note context in the PR body.
 
 Likely files:
 
-- ui/src/lib/sessions/create.ts
-- ui/src/lib/sessions/session-mutations.ts
-- ui/src/lib/sessions/create.test.ts
-- ui/src/lib/sessions/index.test.ts
-- src/gateway/server.sessions.create.test.ts
+- ui/src/pages/chat/chat-pane-session-creation.ts
+- ui/src/pages/chat/chat-pane.test.ts
+- ui/src/pages/chat/chat-state-route.ts
 
 Validation:
 
+- node scripts/run-vitest.mjs ui/src/pages/chat/chat-pane.test.ts
 - node scripts/run-vitest.mjs ui/src/lib/sessions/create.test.ts
-- node scripts/run-vitest.mjs ui/src/lib/sessions/index.test.ts
 - node scripts/run-vitest.mjs src/gateway/server.sessions.create.test.ts
 
 ## Operator Prompt
