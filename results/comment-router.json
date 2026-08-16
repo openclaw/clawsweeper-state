@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T11:50:13.412Z",
+  "updated_at": "2026-08-16T11:51:03.451Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124445:5306034716:2026-08-16T06:04:26Z:clawsweeper_needs_human",
-      "comment_id": "5306034716",
-      "comment_version_key": "5306034716:2026-08-16T06:04:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124445#issuecomment-5306034716",
-      "comment_created_at": "2026-08-16T06:04:26Z",
-      "comment_updated_at": "2026-08-16T06:04:26Z",
-      "comment_body_sha256": "bbe972a36c0026eb6658f73e38d0291243efa373b5687eb15c0e8793c21992d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124445,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes an always-on CI guard; merge should wait for exact-head automation to confirm the base-only allowance does not weaken branch-local assertion detection. (sha=bf2369b37a3be38d660c91456615d3600d646b6c)",
-      "expected_head_sha": "bf2369b37a3be38d660c91456615d3600d646b6c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T06:05:15.630Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/ratchet-hotfix",
-        "head_sha": "bf2369b37a3be38d660c91456615d3600d646b6c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96123:4784563290:2026-08-16T06:04:26Z:clawsweeper_auto_repair",
       "comment_id": "4784563290",
@@ -31531,6 +31498,53 @@
         "kind": "pull_request",
         "branch": "codex/dashboard-privacy-compat-hotfix",
         "head_sha": "f581b4dd8300c901f8fbe68f3c71505df5428b66",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121063:5307286692:2026-08-16T11:50:14Z:re_review",
+      "comment_id": "5307286692",
+      "comment_version_key": "5307286692:2026-08-16T11:50:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121063#issuecomment-5307286692",
+      "comment_created_at": "2026-08-16T11:50:14Z",
+      "comment_updated_at": "2026-08-16T11:50:14Z",
+      "comment_body_sha256": "2c60cc2ead340676d375512f079b98b47d758800a28011a703458b6b1386a837",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121063,
+      "author": "Papilionidae",
+      "author_id": 39980552,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review (final head 3447965ae — 3 ci red-light fixes)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T11:51:01.220Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/br-120962",
+        "head_sha": "3447965ae324bcd1bbd440aa9dbc47492d168020",
         "cluster_id": null,
         "job_path": null
       },
