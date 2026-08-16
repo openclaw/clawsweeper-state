@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-16T14:50:46.038Z",
+  "updated_at": "2026-08-16T14:50:43.259Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123062:5277800609:2026-08-16T08:17:47Z:clawsweeper_needs_human",
+      "comment_id": "5277800609",
+      "comment_version_key": "5277800609:2026-08-16T08:17:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123062#issuecomment-5277800609",
+      "comment_created_at": "2026-08-13T08:15:16Z",
+      "comment_updated_at": "2026-08-16T08:17:47Z",
+      "comment_body_sha256": "bbaa82292215a1ea4e5598764c576cbc5f6da949b0183280efc430e400dcb766",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123062,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing clients that pipeline more than 16 frames before registration will now receive a 1008 close instead of overlapping pre-auth processing. (sha=a1608a01f54c4b9611e869d77c774a06e7cc0248)",
+      "expected_head_sha": "a1608a01f54c4b9611e869d77c774a06e7cc0248",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T08:30:22.019Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/gateway-ws-aug13",
+        "head_sha": "a1608a01f54c4b9611e869d77c774a06e7cc0248",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123053:5277804115:2026-08-16T08:27:23Z:clawsweeper_auto_repair",
       "comment_id": "5277804115",
@@ -32403,53 +32436,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122023:5308015558:2026-08-16T14:49:53Z:re_review",
-      "comment_id": "5308015558",
-      "comment_version_key": "5308015558:2026-08-16T14:49:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122023#issuecomment-5308015558",
-      "comment_created_at": "2026-08-16T14:49:53Z",
-      "comment_updated_at": "2026-08-16T14:49:53Z",
-      "comment_body_sha256": "b39bbe0df17977ff59c5ded6cf62e9d4149569407da402e13eca882f71ebc2c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122023,
-      "author": "xydigit-zt",
-      "author_id": 294751694,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T14:50:43.811Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-121617",
-        "head_sha": "c8ed97efbe561e2e7868b927d291619742d4ac39",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
