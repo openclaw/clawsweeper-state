@@ -67,18 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the first-write lost-update race in `src/agents/sessions/settings-manager.ts`. Preserve ordinary read-only loading: absent project settings must not create `.openclaw/`. Add a write-specific locked read-modify-write path that creates the parent directory, acquires the existing lock before the authoritative read, performs the current field-level merge, writes, and releases. `SettingsStorage` is re-exported through `src/agents/sessions/extension-sdk.ts`, so retain existing `withLock` implementations through an additive compatible mechanism rather than changing its required signature. Add a regression using two independent file-backed settings writers against an absent file; prove both fields survive and cover both scopes or explicitly cover the shared scope path. Keep in-memory behavior and lock retry policy unchanged; do not broaden into unrelated atomic-write work. Include release-note context in the PR body or commit message, not CHANGELOG.md.
+Repair the first-write lost-update bug in FileSettingsStorage for global and project settings. Preserve read-only settings loads without creating a project settings directory, but ensure every write-capable read-modify-write acquires the cross-process lock before reading current JSON and computing the merge. Add a regression that uses two independent real processes and a barrier against initially absent global and project settings files, asserts both distinct fields survive, and fails on the pre-fix ordering. Apply test-audit guidance; do not add config options, retries, consumer-side recovery, or a CHANGELOG edit. Put user-visible release-note context in the PR body.
 
 Likely files:
 
 - src/agents/sessions/settings-manager.ts
 - src/agents/sessions/settings-manager.test.ts
+- src/agents/agent-project-settings.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/sessions/settings-manager.test.ts
-- Run a focused two-process file-backed regression proving two first writes preserve both distinct settings.
-- node scripts/check-changed.mjs --dry-run -- src/agents/sessions/settings-manager.ts src/agents/sessions/settings-manager.test.ts
+- node scripts/run-vitest.mjs src/agents/agent-project-settings.test.ts
 
 ## Operator Prompt
 
