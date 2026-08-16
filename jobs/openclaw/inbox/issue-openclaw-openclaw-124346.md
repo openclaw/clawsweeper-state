@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current-main Gateway workspace-retention bug described by https://github.com/openclaw/openclaw/issues/124346. In `src/gateway/worker-environments/node-workspace-retain-coordinator.ts`, select retain targets only when `node.workerBuild` exists. Do not filter on `commands`, because private worker controls are not advertised, and do not use transient `workerRuns`, because a worker-capable host can temporarily withdraw launch availability. Extend the colocated coordinator test so a no-worker-build node gets no invoke or warning, while a worker-capable node still receives the snapshot; prove the new regression fails before the fix. Keep the change limited to this owner boundary, add no config or compatibility surface, and do not edit CHANGELOG.md; record concise release-note context in the PR body.
+Repair this existing Gateway bug in a focused PR. In `src/gateway/worker-environments/node-workspace-retain-coordinator.ts`, exclude selected node proofs without `workerBuild` before publishing `worker.workspace.retain.v1`; preserve publication and existing warning handling for worker-enabled nodes, including nodes whose transient `workerRuns` capacity declaration is absent. Do not filter public `commands`, add configuration, alter the node-host private-command contract, or edit CHANGELOG.md. Extend `src/gateway/worker-environments/node-workspace-retain-coordinator.test.ts` so a mixed capable/non-worker node set proves only the capable node receives retention publication; ensure the regression fails before the repair. Record concise release-note context in the PR body.
 
 Likely files:
 
@@ -77,7 +77,6 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/worker-environments/node-workspace-retain-coordinator.test.ts
-- node scripts/run-vitest.mjs src/gateway/node-registry.test.ts
 
 ## Operator Prompt
 
