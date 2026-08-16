@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T17:44:02.257Z",
+  "updated_at": "2026-08-16T17:44:29.999Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2978:5307422854:2026-08-16T13:11:45Z:clawsweeper_auto_repair",
-      "comment_id": "5307422854",
-      "comment_version_key": "5307422854:2026-08-16T13:11:45Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2978#issuecomment-5307422854",
-      "comment_created_at": "2026-08-16T12:25:48Z",
-      "comment_updated_at": "2026-08-16T13:11:45Z",
-      "comment_body_sha256": "b860a2dc1b1b7a354e0bee4c4c2ca221e3f0cdfc6edf526f38f834c48f908da1",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2978,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=d82ef1ab03332783b3bd4dd854be6d1a2194b081)",
-      "expected_head_sha": "d82ef1ab03332783b3bd4dd854be6d1a2194b081",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-16T13:14:59.675Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2932-established-empty-history",
-        "head_sha": "d82ef1ab03332783b3bd4dd854be6d1a2194b081",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-08-16T13:12:44Z:clawsweeper_auto_repair",
       "comment_id": "4591541970",
@@ -32386,6 +32353,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120679:5308785703:2026-08-16T17:43:46Z:re_review",
+      "comment_id": "5308785703",
+      "comment_version_key": "5308785703:2026-08-16T17:43:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120679#issuecomment-5308785703",
+      "comment_created_at": "2026-08-16T17:43:46Z",
+      "comment_updated_at": "2026-08-16T17:43:46Z",
+      "comment_body_sha256": "ea7d4073cc70a1e6ad1126ec62c36cdaf307d297d2f9cfc4bbaaa2e64073c316",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120679,
+      "author": "pstayets",
+      "author_id": 305099034,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T17:44:27.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/gateway-remote-connect-runbook",
+        "head_sha": "40264f1a568bf5a94ccd44c965834f209da39a9a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
