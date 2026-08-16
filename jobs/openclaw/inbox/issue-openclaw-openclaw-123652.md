@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the runtime-context carrier ordering on current main for full-replay tool loops. At the embedded LLM boundary, keep the current-turn carrier directly after the active user so consecutive requests retain P+U+X -> P+U+X+Y ordering; continue stripping historical carriers. Do not add a config option, provider-specific filtering, or a parallel fallback path. Check overflow-retry insertion in `src/agents/embedded-agent-runner/run/attempt-llm-boundary.ts` and preserve its behavior. First establish the current failing same-turn sequence, then update the helper and focused regression coverage; stop if the change requires an external provider API contract or broader policy decision. Include release-note context in the PR body, not CHANGELOG.md.
+Repair the source-proven same-turn runtime-context carrier ordering defect from https://github.com/openclaw/openclaw/issues/123652. In the embedded runner, retain the current-turn carrier immediately after the active user turn while same-turn assistant/tool-call/tool-result items append after it; preserve stripping of historical carriers on the next user turn. Replace the absolute-tail invariant rather than adding provider-specific filtering, prompt-cache controls, or new configuration. Add a regression that fails on current main for P+U+X -> P+U+Y+X and passes only for P+U+X -> P+U+X+Y, plus focused helper coverage for relocation semantics. Validate the runner boundary and explain in the PR body that Azure cached-token recovery still requires a redacted after-fix provider trace; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/agents/internal-runtime-context.ts
-- src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
 - src/agents/internal-runtime-context.test.ts
 - src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/internal-runtime-context.test.ts
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt-session-boundary.test.ts
-- node scripts/run-vitest.mjs run --config test/vitest/vitest.agents-embedded-agent-run.config.ts src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- node scripts/run-vitest.mjs --config test/vitest/vitest.agents-embedded-agent-run.config.ts src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- Capture a redacted Azure/OpenAI Responses after-fix request sequence when a safe credentialed environment is available.
 
 ## Operator Prompt
 
