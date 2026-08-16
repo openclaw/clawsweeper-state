@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T00:50:50.654Z",
+  "updated_at": "2026-08-16T00:51:47.858Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104510:4946688949:2026-08-15T19:34:01Z:clawsweeper_auto_repair",
-      "comment_id": "4946688949",
-      "comment_version_key": "4946688949:2026-08-15T19:34:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104510#issuecomment-4946688949",
-      "comment_created_at": "2026-07-11T14:20:35Z",
-      "comment_updated_at": "2026-08-15T19:34:01Z",
-      "comment_body_sha256": "c425a754ca48c328793b105d147567e8377146cafb425f19a7b1f11fefa79fd2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104510,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=175b28de43cce68410d7845d710729c3dd0ae91e)",
-      "expected_head_sha": "175b28de43cce68410d7845d710729c3dd0ae91e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T19:34:58.515Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/own-property-web-fetch",
-        "head_sha": "175b28de43cce68410d7845d710729c3dd0ae91e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124253:5303892657:2026-08-15T19:35:32Z:clawsweeper_needs_human",
       "comment_id": "5303892657",
@@ -32924,6 +32891,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119576:5305013952:2026-08-16T00:50:58Z:re_review",
+      "comment_id": "5305013952",
+      "comment_version_key": "5305013952:2026-08-16T00:50:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119576#issuecomment-5305013952",
+      "comment_created_at": "2026-08-16T00:50:58Z",
+      "comment_updated_at": "2026-08-16T00:50:58Z",
+      "comment_body_sha256": "8e15ca6ea7f745fcfeff56687e634329785d76055f2a4bbee797bc55c14d2088",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119576,
+      "author": "licheer-zte",
+      "author_id": 305411557,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — p1 finding (compare only deferred restart-owned fields) is addressed on the current head `77ac0d1597`:",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T00:51:45.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-cancel-restart-on-revert-119360",
+        "head_sha": "77ac0d1597d195f7291cf1521af202e9a990aecd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
