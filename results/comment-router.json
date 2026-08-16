@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T00:47:53.892Z",
+  "updated_at": "2026-08-16T00:48:40.383Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123546:5295665725:2026-08-14T16:24:54Z:re_review",
-      "comment_id": "5295665725",
-      "comment_version_key": "5295665725:2026-08-14T16:24:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123546#issuecomment-5295665725",
-      "comment_created_at": "2026-08-14T16:24:54Z",
-      "comment_updated_at": "2026-08-14T16:24:54Z",
-      "comment_body_sha256": "671dcbb715827b102e5c1401fa325c247ee19d12a586ff9e4bff236fe5754c4e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123546,
-      "author": "davenicoll",
-      "author_id": 690117,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T19:33:06.751Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119748:5199002047:2026-08-15T19:33:10Z:clawsweeper_auto_repair",
       "comment_id": "5199002047",
@@ -32918,6 +32891,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rastermill:3:5305004226:2026-08-16T00:47:57Z:clawsweeper_auto_repair",
+      "comment_id": "5305004226",
+      "comment_version_key": "5305004226:2026-08-16T00:47:57Z",
+      "comment_url": "https://github.com/openclaw/rastermill/pull/3#issuecomment-5305004226",
+      "comment_created_at": "2026-08-16T00:47:57Z",
+      "comment_updated_at": "2026-08-16T00:47:57Z",
+      "comment_body_sha256": "05cc6be318c50a0873a4ae92e39c47dbc3875b71391ab5a571d336b0a2003020",
+      "repo": "openclaw/rastermill",
+      "issue_number": 3,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=e9d73634e2422c2d6a06a6123330afc401f36f4e)",
+      "expected_head_sha": "e9d73634e2422c2d6a06a6123330afc401f36f4e",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-16T00:48:40.383Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ffmpeg-nostdin",
+        "head_sha": "e9d73634e2422c2d6a06a6123330afc401f36f4e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
