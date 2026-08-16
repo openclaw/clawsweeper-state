@@ -67,21 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair yielded requester completion handoff in the core subagent registry. A completion child already registered to a requester must not remain only with requester-turn yielded ownership: establish a durable requester-settle batch from the authoritative registered rows, or record a terminal failed-delivery outcome. Keep one canonical ownership path; do not add downstream Slack/channel reposting, configuration, or schema changes. Add regression coverage for spawn → sessions_yield → child completion where normal accepted-spawn settlement is absent, plus restart/idempotency coverage proving one visible synthesized reply or recorded failure. Include release-note context in the PR body, not CHANGELOG.md.
+Repair the missed requester-turn settlement path for yielded required subagent completions. At the registry lifecycle owner, promote a terminal cohort that still has requesterTurnRunId plus requesterTurnYielded into the canonical requesterYieldBatch, preserving rearm generation and existing idempotent wake delivery; do not add a direct Slack/channel workaround, a second retry system, config, or persistent schema change. Add a regression that first marks yield, lets the child complete without settleRequesterAfterSessionSpawns, and proves a requester wake is admitted and ends delivered or durably failed after bounded attempts. Also cover restart from the pre-settlement marker state. Do not edit release-owned CHANGELOG.md; include release-note context in the PR body.
 
 Likely files:
 
 - src/agents/subagents/registry/subagent-registry-requester-yield.ts
-- src/agents/subagents/registry/subagent-registry-lifecycle.ts
 - src/agents/subagents/registry/subagent-registry-lifecycle-wake.ts
-- src/agents/subagents/registry/subagent-registry-requester-yield.test.ts
 - src/agents/subagents/registry/subagent-registry-lifecycle.test.ts
+- src/agents/subagents/registry/subagent-registry-requester-yield.test.ts
+- src/agents/subagents/registry/subagent-registry.persistence.resume.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/subagents/registry/subagent-registry-requester-yield.test.ts
 - node scripts/run-vitest.mjs src/agents/subagents/registry/subagent-registry-lifecycle.test.ts
-- node scripts/run-vitest.mjs src/agents/subagents/registry/subagent-registry.lifecycle-retry-grace.e2e.test.ts
+- node scripts/run-vitest.mjs src/agents/subagents/registry/subagent-registry.persistence.resume.test.ts
+- node scripts/run-vitest.mjs src/agents/subagents/announce/subagent-announce.requester-settle-wake.test.ts
 
 ## Operator Prompt
 
