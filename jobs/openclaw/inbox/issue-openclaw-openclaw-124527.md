@@ -67,21 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current xAI image-understanding compatibility defect reported at https://github.com/openclaw/openclaw/issues/124527. First reproduce the supplied 403 with an isolated, credentialed xAI JPEG request and confirm the currently accepted replacement vision model from xAI’s contract. Trace both direct persisted refs such as `agents.defaults.imageModel: xai/grok-4-fast` and legacy `fastMode` routing that currently emits `grok-4-fast`. Make one canonical xAI/doctor migration so runtime no longer sends the retired id, preserve unrelated provider aliases and moving-alias semantics, add regression coverage that fails before the fix, and update the xAI provider guide if its compatibility table changes. Do not add a downstream retry/fallback, a new config option, or a CHANGELOG.md edit.
+Repair the source-proven xAI image-understanding compatibility gap for `xai/grok-4-fast`. Trace the shared model-reference migration and xAI legacy fast-mode routing before editing; do not add Telegram-specific guards, retries, fallbacks, config flags, or runtime compatibility readers. Preserve valid explicit current model choices. Extend the existing migration test rather than adding implementation-coupled coverage: start with `agents.defaults.imageModel` using the reported reference and prove Doctor rewrites it to the verified current xAI model, including relevant fallback/model-map coverage. First inspect the current xAI contract and run a redacted real image-description request through the production provider boundary; if the replacement or fast-mode semantics are unsupported, stop and report that contract conflict. Run focused migration and xAI stream tests, then rerun the live request after the fix. Update xAI provider docs if the Doctor repair scope or fast-mode behavior changes. Do not edit CHANGELOG.md; record release-note context in the PR body.
 
 Likely files:
 
-- extensions/xai/stream.ts
 - src/commands/doctor/shared/legacy-config-migrations.runtime.models.refs.ts
 - src/commands/doctor/shared/legacy-config-migrate.test.ts
+- extensions/xai/stream.ts
 - extensions/xai/stream.test.ts
 - docs/providers/xai.md
 
 Validation:
 
-- node scripts/run-vitest.mjs src/commands/doctor/shared/legacy-config-migrate.test.ts extensions/xai/stream.test.ts
-- Run an isolated, credentialed xAI Responses image-description probe with a redacted JPEG trace before and after the migrated route; do not expose credentials or private endpoints.
-- Verify `openclaw doctor --fix` rewrites the legacy image-model reference and that the repaired configuration selects the verified xAI vision model.
+- node scripts/run-vitest.mjs src/commands/doctor/shared/legacy-config-migrate.test.ts
+- node scripts/run-vitest.mjs extensions/xai/stream.test.ts
+- A redacted `pnpm openclaw infer image describe --file <non-sensitive JPEG> --model xai/grok-4.3 --json` run using the configured xAI route, plus the equivalent configured image-model route where feasible.
 
 ## Operator Prompt
 

@@ -67,12 +67,11 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix this existing Control UI New session bug in one focused PR. At the UI request-construction boundary, send `parentSessionKey` only when the selected key is a persisted session row; a clean/normal gateway bootstrap key with no row must create a dashboard session without an explicit parent. Preserve explicit parent linking, forks, command-hook semantics, and Gateway rejection of arbitrary unknown parents. Add a regression that fails on current main for a clean/empty session list and verifies the request omits the bootstrap parent, plus a sibling case that retains a real stored parent. Prove the New session flow against an isolated clean Control UI gateway; do not edit CHANGELOG.md or relax the Gateway parent-validation contract.
+Repair https://github.com/openclaw/openclaw/issues/124424 as a focused Control UI fix. Preserve `sessions.create` rejection of unknown parents in `src/gateway/session-create-service.ts` and its existing Gateway test. At the Control UI session-mutation owner, only pass `parentSessionKey` when the selected route resolves to an appropriate published session row; otherwise create a root dashboard session. Preserve valid-parent parallel-child behavior, agent selection, command hooks, and access checks. Add a regression test for a selected bootstrap route absent from the roster that asserts the outgoing request omits `parentSessionKey`, plus coverage that a listed parent remains linked. Confirm the focused test fails before the change, then run it after; capture isolated Control UI evidence before merge when feasible. Do not add config, protocol, or changelog changes.
 
 Likely files:
 
 - ui/src/lib/sessions/session-mutations.ts
-- ui/src/lib/sessions/create.ts
 - ui/src/lib/sessions/index.test.ts
 - ui/src/lib/sessions/create.test.ts
 
@@ -80,8 +79,6 @@ Validation:
 
 - node scripts/run-vitest.mjs ui/src/lib/sessions/index.test.ts
 - node scripts/run-vitest.mjs ui/src/lib/sessions/create.test.ts
-- node scripts/run-vitest.mjs src/gateway/server.sessions.create.test.ts
-- Run an isolated Gateway with an empty state directory and record Control UI New session creating and selecting a dashboard session.
 
 ## Operator Prompt
 
