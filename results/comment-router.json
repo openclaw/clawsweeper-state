@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T20:48:07.558Z",
+  "updated_at": "2026-08-16T20:48:15.570Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124288:5304304844:2026-08-16T15:52:34Z:clawsweeper_needs_human",
-      "comment_id": "5304304844",
-      "comment_version_key": "5304304844:2026-08-16T15:52:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124288#issuecomment-5304304844",
-      "comment_created_at": "2026-08-15T21:25:09Z",
-      "comment_updated_at": "2026-08-16T15:52:34Z",
-      "comment_body_sha256": "12a1cabcb7293c601e48d78178da6c46f305f9811cb3ee10939ab9666d0259b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124288,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body contains unit-test and static-check results but explicitly no live Gateway or Telegram result; add redacted after-fix Gateway-bound... (sha=d4d6218aac90e2873c7666983d5d4ef356d1d6d7)",
-      "expected_head_sha": "d4d6218aac90e2873c7666983d5d4ef356d1d6d7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T15:58:48.322Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/models-picker-prepared-browse",
-        "head_sha": "d4d6218aac90e2873c7666983d5d4ef356d1d6d7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124298:5304499476:2026-08-16T15:53:43Z:clawsweeper_auto_repair",
       "comment_id": "5304499476",
@@ -32322,6 +32289,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124659:5309594256:2026-08-16T20:47:34Z:re_review",
+      "comment_id": "5309594256",
+      "comment_version_key": "5309594256:2026-08-16T20:47:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124659#issuecomment-5309594256",
+      "comment_created_at": "2026-08-16T20:47:34Z",
+      "comment_updated_at": "2026-08-16T20:47:34Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124659,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T20:48:13.802Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-managed-handoff-successor",
+        "head_sha": "c10ec85c1d56bd6b23d83832657922e645dabfe2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
