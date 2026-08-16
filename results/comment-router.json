@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T04:18:50.351Z",
+  "updated_at": "2026-08-16T04:19:18.553Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:94299:4801374990:2026-06-25T15:50:28Z:re_review",
-      "comment_id": "4801374990",
-      "comment_version_key": "4801374990:2026-06-25T15:50:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/94299#issuecomment-4801374990",
-      "comment_created_at": "2026-06-25T15:50:28Z",
-      "comment_updated_at": "2026-06-25T15:50:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 94299,
-      "author": "nicknmorty",
-      "author_id": 16600979,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T22:47:22.318Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:94299:4870032465:2026-07-02T20:05:26Z:re_review",
       "comment_id": "4870032465",
@@ -32614,6 +32587,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124406:5305687610:2026-08-16T04:18:30Z:clawsweeper_needs_human",
+      "comment_id": "5305687610",
+      "comment_version_key": "5305687610:2026-08-16T04:18:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124406#issuecomment-5305687610",
+      "comment_created_at": "2026-08-16T04:18:30Z",
+      "comment_updated_at": "2026-08-16T04:18:30Z",
+      "comment_body_sha256": "95163ad04f00a1e2ab7ccd93f7b858dcfbfcd086f71056f906050f3b9658488f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124406,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 42 net lines for the readiness boundary and diagnostic; this is justified by lifecycle ownership, but exceeds the repository's default net-neutral bug-fix tar... (sha=90530f0a4fe9959ec8f75eefbbb8a002d62e360d)",
+      "expected_head_sha": "90530f0a4fe9959ec8f75eefbbb8a002d62e360d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T04:19:18.553Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reconcile-tunnel-owner",
+        "head_sha": "90530f0a4fe9959ec8f75eefbbb8a002d62e360d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
