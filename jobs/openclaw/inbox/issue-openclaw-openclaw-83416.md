@@ -67,18 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Codex dynamic image-tool timeout race for https://github.com/openclaw/openclaw/issues/83416. Keep tools.media.image.timeoutSeconds and matching media-model timeoutSeconds as the inner image request budget, but make the Codex outer image watchdog outlive that budget using the existing bounded grace convention. Add a focused fake-timer regression proving a 60-second image request yields the inner layer-specific timeout rather than the generic dynamic-tool timeout. Do not add a config option, change provider-specific behavior, broaden the image request budget, or edit CHANGELOG.md; stop if the repair requires a product-policy decision.
+Repair the Codex dynamic image-tool watchdog so it cannot preempt the image runtime’s configured/default request timeout and replace its layer-specific error with the generic dynamic-tool timeout. Keep the existing tools.media image timeout contract and do not add configuration or raise provider timeouts. Trace configured primary and fallback image paths, reuse the existing timeout-grace helper, and add regression coverage proving default and configured image requests can return the inner structured timeout. Do not edit CHANGELOG.md; put user-visible release-note context in the PR body. Related context: https://github.com/openclaw/openclaw/issues/111815.
 
 Likely files:
 
 - extensions/codex/src/app-server/dynamic-tool-execution.ts
 - extensions/codex/src/app-server/dynamic-tool-execution.test.ts
-- src/media-understanding/image.ts
+- src/agents/tools/image-tool.ts
+- src/media-understanding/image.runtime-timeout.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs extensions/codex/src/app-server/dynamic-tool-execution.test.ts
-- node scripts/run-vitest.mjs src/media-understanding/image.test.ts
+- node scripts/run-vitest.mjs src/agents/tools/image-tool.test.ts src/media-understanding/image.runtime-timeout.test.ts
 
 ## Operator Prompt
 
