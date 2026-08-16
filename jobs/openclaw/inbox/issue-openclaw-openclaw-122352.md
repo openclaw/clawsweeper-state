@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Android subagent-activity lifecycle in this issue. First establish a focused failing regression for terminal event → 60-second expiry → identical terminal redelivery. Keep a lifecycle-owned in-memory terminal-observation fact in ChatController so a terminal duplicate with no visible row stays hidden, while a fresh working transition, explicit deletion, session switch, gateway-scope reset, and sequence-gap reset clear that fact and allow a real new lifecycle. Preserve current first-local-observation timing and in-row terminal-detail updates; do not change Gateway protocol, configuration, persistence, or other clients. Add behavior-boundary coverage that fails before the fix, including the duplicate-after-expiry path and relevant reset/re-entry paths. Do not edit CHANGELOG.md; include user-visible Android release-note context in the PR body.
+Repair the Android post-expiry subagent-terminal redelivery bug described by https://github.com/openclaw/openclaw/issues/122352. In `ChatController`, retain an ephemeral terminal-observation fact after the 60-second UI row expires; suppress a later terminal event for that observed task ID only when no live row exists. Clear that fact on a new working lifecycle, explicit deletion, session changes, gateway-scope changes, and sequence-gap reset. Add owner-boundary regressions for post-expiry duplicate suppression and each reset/reuse path; first prove the new regression fails before the repair. Keep this Android-only: do not add persistence, schema, Gateway protocol, configuration, or CHANGELOG changes. Treat https://github.com/openclaw/openclaw/pull/122089 and https://github.com/openclaw/openclaw/pull/122198 as shipped adjacent behavior, and use the closed-unmerged https://github.com/openclaw/openclaw/pull/122472 only as implementation evidence.
 
 Likely files:
 
@@ -77,8 +77,7 @@ Likely files:
 Validation:
 
 - cd apps/android && ./gradlew --no-daemon :app:testPlayDebugUnitTest --tests ai.openclaw.app.chat.ChatControllerSubagentActivityTest
-- cd apps/android && ./gradlew --no-daemon :app:ktlintCheck
-- node --import tsx scripts/native-app-i18n.ts verify
+- git diff --check
 
 ## Operator Prompt
 
