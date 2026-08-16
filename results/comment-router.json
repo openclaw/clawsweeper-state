@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T04:06:00.607Z",
+  "updated_at": "2026-08-16T04:06:10.875Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115670:5287241765:2026-08-13T22:45:29Z:re_review",
-      "comment_id": "5287241765",
-      "comment_version_key": "5287241765:2026-08-13T22:45:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115670#issuecomment-5287241765",
-      "comment_created_at": "2026-08-13T22:45:29Z",
-      "comment_updated_at": "2026-08-13T22:45:29Z",
-      "comment_body_sha256": "8ce78bb4c215755ea9be290c25248cc66b72480eb408f3af01cff2854455f9cb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115670,
-      "author": "sasan1200",
-      "author_id": 28139727,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T22:35:21.095Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115670:5288062248:2026-08-14T00:45:43Z:re_review",
       "comment_id": "5288062248",
@@ -32730,6 +32703,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124379:5305646105:2026-08-16T04:05:28Z:clawsweeper_needs_human",
+      "comment_id": "5305646105",
+      "comment_version_key": "5305646105:2026-08-16T04:05:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124379#issuecomment-5305646105",
+      "comment_created_at": "2026-08-16T04:05:28Z",
+      "comment_updated_at": "2026-08-16T04:05:28Z",
+      "comment_body_sha256": "672f14fdceb538652609a386b0d7420eee885e2e77782f33de9138ee936b4a06",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124379,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current branch is behind main and its check-lint run is failing; the focused regression test has not yet passed on the exact merge head. (sha=f768fa7e047682b53831656f94eda24e17cff787)",
+      "expected_head_sha": "f768fa7e047682b53831656f94eda24e17cff787",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T04:06:10.875Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/apply-patch-eof-chunk-overlap",
+        "head_sha": "f768fa7e047682b53831656f94eda24e17cff787",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
