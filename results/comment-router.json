@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T03:22:23.514Z",
+  "updated_at": "2026-08-16T03:22:23.653Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124214:5304417417:2026-08-15T21:56:34Z:re_review",
-      "comment_id": "5304417417",
-      "comment_version_key": "5304417417:2026-08-15T21:56:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124214#issuecomment-5304417417",
-      "comment_created_at": "2026-08-15T21:56:34Z",
-      "comment_updated_at": "2026-08-15T21:56:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124214,
-      "author": "AnCoSONG",
-      "author_id": 32268203,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T22:13:51.811Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-adoption-gated-lane",
-        "head_sha": "5da06f7ce40b6ae8196be13290682f98fbe1bb22",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124264:5304431312:2026-08-15T22:00:31Z:re_review",
       "comment_id": "5304431312",
@@ -32720,6 +32673,39 @@
         "kind": "pull_request",
         "branch": "fix/workspace-memo-cap",
         "head_sha": "6edd45443365fa6f0f879cb05a86eab1cffd3236",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124374:5305505001:2026-08-16T03:21:23Z:clawsweeper_auto_repair",
+      "comment_id": "5305505001",
+      "comment_version_key": "5305505001:2026-08-16T03:21:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124374#issuecomment-5305505001",
+      "comment_created_at": "2026-08-16T03:21:23Z",
+      "comment_updated_at": "2026-08-16T03:21:23Z",
+      "comment_body_sha256": "1b118540bb76288e1f126af2766f91e836f1f9999659f4021012cad81c0240de",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124374,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4859a37cb6b10b5ded27713a1e7d7a880009838b)",
+      "expected_head_sha": "4859a37cb6b10b5ded27713a1e7d7a880009838b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T03:22:23.653Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cu-ref-convergence",
+        "head_sha": "4859a37cb6b10b5ded27713a1e7d7a880009838b",
         "cluster_id": null,
         "job_path": null
       }
