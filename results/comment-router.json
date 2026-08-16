@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T16:00:23.331Z",
+  "updated_at": "2026-08-16T16:02:10.409Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124448:5306100763:2026-08-16T09:41:33Z:clawsweeper_auto_repair",
-      "comment_id": "5306100763",
-      "comment_version_key": "5306100763:2026-08-16T09:41:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124448#issuecomment-5306100763",
-      "comment_created_at": "2026-08-16T06:22:33Z",
-      "comment_updated_at": "2026-08-16T09:41:33Z",
-      "comment_body_sha256": "ff6672079a59ed7b602079e8b3e24f1dda15a1bbe37b8682bf2df4f3a7a62afa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124448,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T10:28:59.375Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-queued-chat-outcome",
-        "head_sha": "ca61005f2bff82a647d39e75ac9b1736c53bc1d1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124458:5306214353:2026-08-16T09:44:25Z:clawsweeper_auto_repair",
       "comment_id": "5306214353",
@@ -32318,6 +32285,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111351:5015268158:2026-08-16T16:01:24Z:clawsweeper_needs_human",
+      "comment_id": "5015268158",
+      "comment_version_key": "5015268158:2026-08-16T16:01:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111351#issuecomment-5015268158",
+      "comment_created_at": "2026-07-19T09:51:30Z",
+      "comment_updated_at": "2026-08-16T16:01:24Z",
+      "comment_body_sha256": "c20df3ce93dd54e872c975ccdf1e932bf8477ce5096b95d715f29a0fcd48ff84",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111351,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes upgrade behavior for persisted updatedAt=0 entries: a mistake could either consume the one-time reset during deferral or defer it indefinitely; the supplied active, compl... (sha=39d27bf92371d0b5e986dd4b209560a90bd0adc0)",
+      "expected_head_sha": "39d27bf92371d0b5e986dd4b209560a90bd0adc0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T16:02:10.409Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-tombstone-rollover-defer",
+        "head_sha": "39d27bf92371d0b5e986dd4b209560a90bd0adc0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
