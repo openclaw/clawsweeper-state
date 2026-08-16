@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T08:39:02.919Z",
+  "updated_at": "2026-08-16T08:40:26.608Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5265106271:2026-08-12T09:50:14Z:re_review",
-      "comment_id": "5265106271",
-      "comment_version_key": "5265106271:2026-08-12T09:50:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5265106271",
-      "comment_created_at": "2026-08-12T09:50:14Z",
-      "comment_updated_at": "2026-08-12T09:50:14Z",
-      "comment_body_sha256": "67da2304273b3d3cf9fae10d37180b24b617ce385458678617fac2e70ed3ec1c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T02:56:06.149Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5275382452:2026-08-13T02:55:06Z:re_review",
       "comment_id": "5275382452",
@@ -31741,6 +31714,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124511:5306573914:2026-08-16T08:39:48Z:clawsweeper_auto_repair",
+      "comment_id": "5306573914",
+      "comment_version_key": "5306573914:2026-08-16T08:39:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124511#issuecomment-5306573914",
+      "comment_created_at": "2026-08-16T08:39:48Z",
+      "comment_updated_at": "2026-08-16T08:39:48Z",
+      "comment_body_sha256": "21e25cfdd3ed4adabc44ae7828783b6bd666f102067e0671f4b060215c02dd3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124511,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=69efa7aa2f658b383a768259ea5d67dad4e02653)",
+      "expected_head_sha": "69efa7aa2f658b383a768259ea5d67dad4e02653",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T08:40:26.608Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cron-run-error-text",
+        "head_sha": "69efa7aa2f658b383a768259ea5d67dad4e02653",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
