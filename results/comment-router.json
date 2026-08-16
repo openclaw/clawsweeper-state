@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T23:40:55.723Z",
+  "updated_at": "2026-08-16T23:41:13.053Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121063:5307227198:2026-08-16T11:34:15Z:re_review",
-      "comment_id": "5307227198",
-      "comment_version_key": "5307227198:2026-08-16T11:34:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121063#issuecomment-5307227198",
-      "comment_created_at": "2026-08-16T11:34:15Z",
-      "comment_updated_at": "2026-08-16T11:34:15Z",
-      "comment_body_sha256": "bce07f51f296005ade16f97c2d6238296606aafe204bb134a998f7422e0b613e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121063,
-      "author": "Papilionidae",
-      "author_id": 39980552,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review (final head 2c1d3aa8 — oxfmt fix pushed)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T18:06:02.867Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121063:5307286692:2026-08-16T11:50:14Z:re_review",
       "comment_id": "5307286692",
@@ -33251,6 +33224,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124298:5310269105:2026-08-16T23:40:32Z:re_review",
+      "comment_id": "5310269105",
+      "comment_version_key": "5310269105:2026-08-16T23:40:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124298#issuecomment-5310269105",
+      "comment_created_at": "2026-08-16T23:40:32Z",
+      "comment_updated_at": "2026-08-16T23:40:32Z",
+      "comment_body_sha256": "481c329b285142cc4fc842b48d0dcf9efeabe1515a5d8d128f593ed197f458c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124298,
+      "author": "jjjhenriksen",
+      "author_id": 179184921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: the rebased literal head ddba14d89fd6de50cac295b4ff9b6344df3c66b0 is conflict-free. the pr body now contains a body-only exact-head transcript of the real gateway/ui run, inline stop fence, split-pane peer conflict, build, health/ready probes, and 404-test rerun",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T23:41:11.583Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-queued-message-edit-cancel",
+        "head_sha": "ddba14d89fd6de50cac295b4ff9b6344df3c66b0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
