@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the source-proven Signal external-native attachment delivery bug. Trace the outbound resolver, Signal send path, native RPC client, container attachment serializer, and current media-access harness. Before editing, directly inspect and run against signal-cli 0.14.7 (or the supported current native daemon) over /api/v1/rpc as a distinct service UID to prove whether RFC 2397 attachment data URIs, including filename, are accepted. If the contract is not proven, stop rather than adding a config option or shared media directory. If proven, create one bounded Signal-plugin conversion path for external-native only, reuse/refactor the existing container conversion rather than duplicating it, retain managed-native and container behavior, preserve raw-byte media limits, and add regression coverage that fails before the fix. Do not edit CHANGELOG.md; record user-visible release context in the PR body.
+Repair https://github.com/openclaw/openclaw/issues/123815 as a bounded existing-behavior bug. First reproduce or directly prove the native signal-cli 0.14.7 JSON-RPC attachment contract using an external-native loopback daemon under a distinct OS user; record a pre-fix permission failure and after-fix receipt. Then make only loopback external-native sends serialize the already staged, byte-bounded attachment as a filename-preserving RFC 2397 data URI, reusing or consolidating the existing Signal-specific encoder rather than adding a parallel formatter. Preserve managed-native and container behavior, retain non-local external-native path behavior pending explicit trust-policy work, do not loosen media-store permissions, add no configuration option, and stop for maintainer review if the native daemon rejects data URIs or request sizing cannot be bounded. Add boundary regression coverage for normal and quote-fallback media sends across the host-owned media adapters. Do not edit CHANGELOG.md; include release-note context in the PR body.
 
 Likely files:
 
@@ -79,10 +79,9 @@ Likely files:
 
 Validation:
 
-- Run a real separate-UID native signal-cli HTTP-RPC send with a generated image or video, asserting successful receipt and preserved bytes/name without filesystem traversal.
-- node scripts/run-vitest.mjs run --config test/vitest/vitest.extension-signal.config.ts extensions/signal/src/send.test.ts
-- node scripts/run-vitest.mjs extensions/signal/src/media-access.test.ts
-- node scripts/run-vitest.mjs run --config test/vitest/vitest.extension-signal.config.ts extensions/signal/src/client-container.test.ts
+- Run `node scripts/run-vitest.mjs extensions/signal/src/send.test.ts extensions/signal/src/media-access.test.ts extensions/signal/src/client-container.test.ts`.
+- Run a real signal-cli 0.14.7 loopback HTTP daemon as a different OS user and capture pre-fix failure plus after-fix delivery/JSON-RPC receipt for an attachment and a quoted attachment.
+- Verify managed-native, container, and non-loopback external-native serialization remain unchanged.
 
 ## Operator Prompt
 
