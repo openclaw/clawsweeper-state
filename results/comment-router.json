@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T22:56:09.455Z",
+  "updated_at": "2026-08-16T22:56:18.574Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120919:5230414935:2026-08-16T17:18:43Z:clawsweeper_needs_human",
-      "comment_id": "5230414935",
-      "comment_version_key": "5230414935:2026-08-16T17:18:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120919#issuecomment-5230414935",
-      "comment_created_at": "2026-08-09T07:42:48Z",
-      "comment_updated_at": "2026-08-16T17:18:43Z",
-      "comment_body_sha256": "f12daa9c7927fa096faab01077a321e20458488f98cf61daa754019c87782ec5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120919,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes upgrade behavior: matching configured models with omitted input will gain the discovered capability; explicit modality lists remain the opt-out. (sha=83b68b8a93b625dd61daf441ab7648d485a044eb)",
-      "expected_head_sha": "83b68b8a93b625dd61daf441ab7648d485a044eb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T17:23:09.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-71921-bedrock-catalog",
-        "head_sha": "83b68b8a93b625dd61daf441ab7648d485a044eb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123042:5277258457:2026-08-16T17:19:50Z:clawsweeper_needs_human",
       "comment_id": "5277258457",
@@ -33295,6 +33262,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124879:5310093119:2026-08-16T22:55:34Z:re_review",
+      "comment_id": "5310093119",
+      "comment_version_key": "5310093119:2026-08-16T22:55:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124879#issuecomment-5310093119",
+      "comment_created_at": "2026-08-16T22:55:34Z",
+      "comment_updated_at": "2026-08-16T22:55:34Z",
+      "comment_body_sha256": "d2ed513b3b28b4edd8ce6e6da1bb39340cea2fc4da7c28e0ae1439f352d00e7b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124879,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T22:56:14.516Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/two-bugs-selection-is-clipped-and-also-why-did-this-simply-stop",
+        "head_sha": "a2e3c105f80995b78ae4f92a0d0b149c0bf0d7ff",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
