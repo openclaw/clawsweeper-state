@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T15:20:52.819Z",
+  "updated_at": "2026-08-16T15:21:26.856Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124517:5306618204:2026-08-16T08:51:58Z:clawsweeper_needs_human",
-      "comment_id": "5306618204",
-      "comment_version_key": "5306618204:2026-08-16T08:51:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124517#issuecomment-5306618204",
-      "comment_created_at": "2026-08-16T08:51:58Z",
-      "comment_updated_at": "2026-08-16T08:51:58Z",
-      "comment_body_sha256": "360bca7b7e57e2a79f88ecd7b5c0e2e17c35ef5e14d4424d6bf21c8faf92597a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124517,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This branch includes the open retry-key prerequisite https://github.com/openclaw/openclaw/pull/124464 and is behind main; rebase after that PR lands, then validate the resulting exact... (sha=9bfd5bb7a1016c69b0539733942e57f8586a3c07)",
-      "expected_head_sha": "9bfd5bb7a1016c69b0539733942e57f8586a3c07",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T08:52:42.840Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-durable-crash-recovery",
-        "head_sha": "9bfd5bb7a1016c69b0539733942e57f8586a3c07",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2973:5306203229:2026-08-16T08:52:46Z:clawsweeper_auto_repair",
       "comment_id": "5306203229",
@@ -32482,6 +32449,53 @@
       "status": "skipped",
       "processed_at": "2026-08-16T15:20:52.819Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122764:5308149369:2026-08-16T15:20:44Z:re_review",
+      "comment_id": "5308149369",
+      "comment_version_key": "5308149369:2026-08-16T15:20:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122764#issuecomment-5308149369",
+      "comment_created_at": "2026-08-16T15:20:44Z",
+      "comment_updated_at": "2026-08-16T15:20:44Z",
+      "comment_body_sha256": "50138098f27762c680eafc577cac3588fa1ad9f542efc342ece1f5f4368c0414",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122764,
+      "author": "HermanZeng",
+      "author_id": 25895921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T15:21:24.782Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/capacity-group-fair-arbitration",
+        "head_sha": "0e29bb8b0271a995cad7b2a04a5a31b2607e5a42",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
