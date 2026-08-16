@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T08:21:24.843Z",
+  "updated_at": "2026-08-16T08:21:26.377Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:79198:4402964925:2026-08-16T02:43:34Z:clawsweeper_auto_repair",
-      "comment_id": "4402964925",
-      "comment_version_key": "4402964925:2026-08-16T02:43:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/79198#issuecomment-4402964925",
-      "comment_created_at": "2026-05-08T03:01:39Z",
-      "comment_updated_at": "2026-08-16T02:43:34Z",
-      "comment_body_sha256": "96a83e823f61d758fd30286a6323d6fa6f01193e512cde400be49d0a75050002",
-      "repo": "openclaw/openclaw",
-      "issue_number": 79198,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c09ff42c55e92e369cdd11c71ff7661780f9c6f0)",
-      "expected_head_sha": "c09ff42c55e92e369cdd11c71ff7661780f9c6f0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T02:49:52.055Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/prepared-runtime-startup-metadata",
-        "head_sha": "c09ff42c55e92e369cdd11c71ff7661780f9c6f0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:83178:4471348773:2026-08-16T02:44:18Z:clawsweeper_auto_repair",
       "comment_id": "4471348773",
@@ -31539,6 +31506,39 @@
       "status": "skipped",
       "processed_at": "2026-08-16T08:21:24.843Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115882:5118252328:2026-08-16T08:14:39Z:clawsweeper_needs_human",
+      "comment_id": "5118252328",
+      "comment_version_key": "5118252328:2026-08-16T08:14:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115882#issuecomment-5118252328",
+      "comment_created_at": "2026-07-29T13:15:33Z",
+      "comment_updated_at": "2026-08-16T08:14:39Z",
+      "comment_body_sha256": "38bd1567b9035a205340cbca396d4735441a7d3e781e2461697d06a29ebf770f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115882,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts with action files over 1,000,000 bytes will now exit nonzero and must split plans; this is intentional alignment with the existing stdin limit, but it is still an upg... (sha=31ce954b70f35c0b2d031df2d068248b745d18c5)",
+      "expected_head_sha": "31ce954b70f35c0b2d031df2d068248b745d18c5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T08:21:26.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/browser-actions-file-limit",
+        "head_sha": "31ce954b70f35c0b2d031df2d068248b745d18c5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
