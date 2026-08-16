@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T20:03:47.629Z",
+  "updated_at": "2026-08-16T20:03:49.903Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113115:5143882966:2026-08-16T15:25:24Z:clawsweeper_auto_repair",
-      "comment_id": "5143882966",
-      "comment_version_key": "5143882966:2026-08-16T15:25:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113115#issuecomment-5143882966",
-      "comment_created_at": "2026-07-31T14:19:34Z",
-      "comment_updated_at": "2026-08-16T15:25:24Z",
-      "comment_body_sha256": "bcb50fcffe26d0632a7206c8e1627ea7c030ee5e6518e08473a093ecf87a4962",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113115,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cfc21e7782e1b6578aa26e91e62f6a9032c1b4a8)",
-      "expected_head_sha": "cfc21e7782e1b6578aa26e91e62f6a9032c1b4a8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T15:34:35.912Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/matrix-pr73455-port-20260723",
-        "head_sha": "cfc21e7782e1b6578aa26e91e62f6a9032c1b4a8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113188:5144179622:2026-08-16T15:26:13Z:clawsweeper_auto_repair",
       "comment_id": "5144179622",
@@ -31863,6 +31830,53 @@
       "status": "skipped",
       "processed_at": "2026-08-16T20:03:26.800Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124785:5309341319:2026-08-16T20:02:38Z:clawsweeper_auto_merge",
+      "comment_id": "5309341319",
+      "comment_version_key": "5309341319:2026-08-16T20:02:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124785#issuecomment-5309341319",
+      "comment_created_at": "2026-08-16T19:47:38Z",
+      "comment_updated_at": "2026-08-16T20:02:38Z",
+      "comment_body_sha256": "6df8b0c468365ed351c400ab4c72dc850f94ffef93087df2d338db5a30bf2bf8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124785,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=fdbc457570b00ece347a83f1c9a7d7169608d0ae); current checks are failing: check-additional-extension-package-boundary:FAILURE, openclaw/ci-gate:FAILURE",
+      "expected_head_sha": "fdbc457570b00ece347a83f1c9a7d7169608d0ae",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T20:03:31.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-mobile-side-chat-hitbox",
+        "head_sha": "fdbc457570b00ece347a83f1c9a7d7169608d0ae",
+        "cluster_id": "automerge-openclaw-openclaw-124785",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124785.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124785.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1365:5309155206:2026-08-16T20:03:02Z:clawsweeper_needs_human",
