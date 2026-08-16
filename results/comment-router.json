@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T14:54:01.665Z",
+  "updated_at": "2026-08-16T14:54:05.584Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123058:5277860387:2026-08-16T08:28:30Z:clawsweeper_needs_human",
-      "comment_id": "5277860387",
-      "comment_version_key": "5277860387:2026-08-16T08:28:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123058#issuecomment-5277860387",
-      "comment_created_at": "2026-08-13T08:21:54Z",
-      "comment_updated_at": "2026-08-16T08:28:30Z",
-      "comment_body_sha256": "fd92569e70e57123a6560d55b88e0295b56172375ed2697312d8ecbebbb65699",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123058,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The agent-scoped missing-Codex diagnostic changes whether operators are told to install the plugin; merge readiness requires direct review of the pinned Codex contract, which this env... (sha=574de1ad829ba8b0570e5b9bd6269a8579debf31)",
-      "expected_head_sha": "574de1ad829ba8b0570e5b9bd6269a8579debf31",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T08:30:22.019Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/doctor-diagnostics-aug13",
-        "head_sha": "574de1ad829ba8b0570e5b9bd6269a8579debf31",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123125:5279776244:2026-08-16T08:27:51Z:clawsweeper_auto_repair",
       "comment_id": "5279776244",
@@ -32436,6 +32403,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117400:5308030856:2026-08-16T14:53:26Z:re_review",
+      "comment_id": "5308030856",
+      "comment_version_key": "5308030856:2026-08-16T14:53:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117400#issuecomment-5308030856",
+      "comment_created_at": "2026-08-16T14:53:26Z",
+      "comment_updated_at": "2026-08-16T14:53:26Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117400,
+      "author": "hxy91819",
+      "author_id": 8814856,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T14:54:03.738Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stale-compaction-estimator-117358",
+        "head_sha": "eecd532be699dd49de42f0bbea5fbf00aa2d8df3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
