@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Gateway workspace-retention coordinator so it skips node proofs without `workerBuild`, the immutable handshake signal that a worker runtime exists. Do not filter on `commands` because private worker RPCs are never advertised, and do not filter on dynamic `workerRuns` because capacity-full worker hosts temporarily withdraw only launch eligibility. Update the coordinator fixture so an enabled worker node remains published while a dialect-capable node without `workerBuild` receives no retain RPC and no warning. Add regression coverage that fails before the repair, retain warnings for capability-bearing nodes whose RPC actually fails, avoid config/protocol changes, and include release-note context in the PR body or commit message without editing CHANGELOG.md.
+Repair this existing Gateway bug in a focused PR. In `src/gateway/worker-environments/node-workspace-retain-coordinator.ts`, exclude selected node proofs without `workerBuild` before publishing `worker.workspace.retain.v1`; preserve publication and existing warning handling for worker-enabled nodes, including nodes whose transient `workerRuns` capacity declaration is absent. Do not filter public `commands`, add configuration, alter the node-host private-command contract, or edit CHANGELOG.md. Extend `src/gateway/worker-environments/node-workspace-retain-coordinator.test.ts` so a mixed capable/non-worker node set proves only the capable node receives retention publication; ensure the regression fails before the repair. Record concise release-note context in the PR body.
 
 Likely files:
 
@@ -77,8 +77,6 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/worker-environments/node-workspace-retain-coordinator.test.ts
-- node scripts/run-vitest.mjs src/gateway/node-registry.test.ts
-- git diff --check
 
 ## Operator Prompt
 
