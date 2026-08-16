@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T14:47:17.619Z",
+  "updated_at": "2026-08-16T14:47:19.783Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119877:5278353252:2026-08-13T09:12:33Z:re_review",
-      "comment_id": "5278353252",
-      "comment_version_key": "5278353252:2026-08-13T09:12:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119877#issuecomment-5278353252",
-      "comment_created_at": "2026-08-13T09:12:33Z",
-      "comment_updated_at": "2026-08-13T09:12:33Z",
-      "comment_body_sha256": "173bc083b0592cb91113bee625b95e6f35eb15ad3ec57bef244cd35c634f377f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119877,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T08:30:06.799Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119877:5280115267:2026-08-13T12:01:36Z:re_review",
       "comment_id": "5280115267",
@@ -32424,6 +32397,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109493:4998377845:2026-08-16T14:40:44Z:clawsweeper_needs_human",
+      "comment_id": "4998377845",
+      "comment_version_key": "4998377845:2026-08-16T14:40:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/109493#issuecomment-4998377845",
+      "comment_created_at": "2026-07-17T02:23:56Z",
+      "comment_updated_at": "2026-08-16T14:40:44Z",
+      "comment_body_sha256": "0d7394382e5e0d0ac6c576067e98e4ac7fdbb002d2b7e6cb5e2907b3b2f5917f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 109493,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The real-process and SQLite transcript is credible but names an older head, so it does not prove the current terminal-result, forced-a... (sha=cf411b10dc2cf4e86078b36994d15f8891404ce6)",
+      "expected_head_sha": "cf411b10dc2cf4e86078b36994d15f8891404ce6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T14:47:19.783Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/worker-process-probe-timeout",
+        "head_sha": "cf411b10dc2cf4e86078b36994d15f8891404ce6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
