@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T07:27:59.726Z",
+  "updated_at": "2026-08-16T07:28:05.442Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123573:5291549558:2026-08-14T09:08:24Z:re_review",
-      "comment_id": "5291549558",
-      "comment_version_key": "5291549558:2026-08-14T09:08:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123573#issuecomment-5291549558",
-      "comment_created_at": "2026-08-14T09:08:24Z",
-      "comment_updated_at": "2026-08-14T09:08:24Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123573,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T01:46:26.262Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123573:5291596461:2026-08-16T01:45:42Z:clawsweeper_auto_repair",
       "comment_id": "5291596461",
@@ -32110,6 +32083,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124464:5306318362:2026-08-16T07:27:19Z:clawsweeper_needs_human",
+      "comment_id": "5306318362",
+      "comment_version_key": "5306318362:2026-08-16T07:27:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124464#issuecomment-5306318362",
+      "comment_created_at": "2026-08-16T07:27:19Z",
+      "comment_updated_at": "2026-08-16T07:27:19Z",
+      "comment_body_sha256": "de65b704c1fa8c8739096256567b5051b27f076626ff213d3f0bf4cc704a769e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124464,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Push retries are delivery-sensitive: merge only after the current head's channel-boundary checks complete green, because an incorrect retry classification could suppress or duplicate... (sha=b27228da5b0d161b5c335248fdc288373215f0eb)",
+      "expected_head_sha": "b27228da5b0d161b5c335248fdc288373215f0eb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T07:28:05.442Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-push-retry-key",
+        "head_sha": "b27228da5b0d161b5c335248fdc288373215f0eb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
