@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T03:58:37.335Z",
+  "updated_at": "2026-08-16T03:59:42.386Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/plugin-inspector:59:5304407815:2026-08-15T21:53:59Z:re_review",
-      "comment_id": "5304407815",
-      "comment_version_key": "5304407815:2026-08-15T21:53:59Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/59#issuecomment-5304407815",
-      "comment_created_at": "2026-08-15T21:53:59Z",
-      "comment_updated_at": "2026-08-15T21:53:59Z",
-      "comment_body_sha256": "68990e30230a3cd0c3731a8de3a56d5f2fd5bf248017b5748bd5114435d64334",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 59,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T22:32:45.417Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124191:5304546262:2026-08-15T22:32:57Z:re_review",
       "comment_id": "5304546262",
@@ -32704,6 +32677,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123153:5279839903:2026-08-16T03:58:56Z:clawsweeper_needs_human",
+      "comment_id": "5279839903",
+      "comment_version_key": "5279839903:2026-08-16T03:58:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123153#issuecomment-5279839903",
+      "comment_created_at": "2026-08-13T11:31:50Z",
+      "comment_updated_at": "2026-08-16T03:58:56Z",
+      "comment_body_sha256": "162cc7bea1ae8d262d840a9e1a219bf6d5825854f6e21c3812438e8dd436c128",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123153,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied current-head check rollup still has build-artifacts in progress, so merge should wait for that result and GitHub mergeability. (sha=72b9f71e86f8c34a582839da6013022cd8d4f275)",
+      "expected_head_sha": "72b9f71e86f8c34a582839da6013022cd8d4f275",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T03:59:42.386Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-anthropic-replay-stable-ids",
+        "head_sha": "72b9f71e86f8c34a582839da6013022cd8d4f275",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
