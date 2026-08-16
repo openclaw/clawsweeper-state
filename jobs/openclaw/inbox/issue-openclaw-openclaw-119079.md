@@ -67,20 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current Talk transcript persistence bug for https://github.com/openclaw/openclaw/issues/119079. Establish the pre-fix failure through `talk.client.transcript` with a fractional timestamp and a STRICT SQLite session store. Normalize only the shared transcript metadata clock at the transcript-root persistence boundary to a finite nonnegative integer; preserve the original client timestamp in the transcript event. Cover a first transcript append plus existing-session behavior, and inspect sibling transcript-root callers for the same invariant. Do not add configuration, a SQLite schema version change, fallback readers, Talk-only duplicate coercion, or CHANGELOG.md edits. Include user-visible release-note context in the PR body or commit message.
+Repair the fractional Talk transcript timestamp bug for https://github.com/openclaw/openclaw/issues/119079. Keep the public Talk timestamp accepted and preserve it in transcript message JSON if needed, but normalize the timestamp used by session-root SQLite persistence to a finite nonnegative integer before it reaches STRICT session_nodes or session_windows columns. Add a real temporary-agent-DB regression through talk.client.transcript using a fractional timestamp; assert RPC success, persisted message behavior, and integer SQLite timestamp cells. Cover initial and existing session-root behavior as appropriate. Do not add config, schema-version changes, runtime fallbacks, or CHANGELOG.md edits. Treat https://github.com/openclaw/openclaw/issues/110237 only as an adjacent fractional-STRICT invariant, not as the same write path.
 
 Likely files:
 
 - src/config/sessions/session-accessor.sqlite-transcript-state.ts
-- src/config/sessions/session-accessor.sqlite-transcript-store.ts
 - src/gateway/server-methods/talk-client.test.ts
 - src/talk/client-voice-session.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/server-methods/talk-client.test.ts
-- node scripts/run-vitest.mjs src/talk/client-voice-session.test.ts
-- node scripts/run-vitest.mjs src/config/sessions/session-accessor.test.ts
+- git diff --check
 
 ## Operator Prompt
 
