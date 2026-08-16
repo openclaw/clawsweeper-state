@@ -67,18 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair current-main runtime-context wire ordering for full-replay Responses tool loops. Replace absolute-tail carrier relocation with placement immediately after the active user message, retain historical-carrier stripping, and add a regression proving P+U+X becomes P+U+X+Y across consecutive same-turn tool-loop inputs. Do not add provider-specific configuration or filtering unless direct source analysis shows the runner change cannot uphold that invariant. Run focused owner and cache-stability tests; put release-note context in the PR body without editing CHANGELOG.md.
+Repair the runtime-context carrier ordering in https://github.com/openclaw/openclaw/issues/123652. Keep the current-turn carrier directly after the last active user message through same-turn tool-loop conversions rather than at the absolute tail. Preserve historical-carrier stripping and raw-model behavior; do not add Azure-specific configuration or alter provider cache defaults. Before editing, establish the failing source regression; then add boundary-level coverage proving consecutive full-replay Responses inputs change from P+U+X to P+U+X+Y, not P+U+Y+X. Run focused tests, capture a redacted after-fix provider payload/usage trace when credentials permit, and put release-note context in the PR body without editing CHANGELOG.md.
 
 Likely files:
 
 - src/agents/internal-runtime-context.ts
 - src/agents/internal-runtime-context.test.ts
+- src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
 - src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/internal-runtime-context.test.ts
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- node scripts/run-vitest.mjs run --config test/vitest/vitest.agents-embedded-agent-run.config.ts src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- node scripts/run-vitest.mjs packages/agent-core/src/harness/messages.test.ts
 
 ## Operator Prompt
 
