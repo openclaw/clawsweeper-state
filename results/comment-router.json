@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T04:11:10.689Z",
+  "updated_at": "2026-08-16T04:11:31.764Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124204:5304542416:2026-08-15T22:31:52Z:re_review",
-      "comment_id": "5304542416",
-      "comment_version_key": "5304542416:2026-08-15T22:31:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124204#issuecomment-5304542416",
-      "comment_created_at": "2026-08-15T22:31:52Z",
-      "comment_updated_at": "2026-08-15T22:31:52Z",
-      "comment_body_sha256": "86f8d153b4df9304a5109bc0fea63f5a19dcef094ae0ea38f67515d7dbc15211",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124204,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T22:37:35.894Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oc-c45/frozen-codex-release-harness",
-        "head_sha": "5b36b38b28cdb06fb415ae42e736b3b022db522e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124204:5303113261:2026-08-15T22:36:52Z:clawsweeper_needs_human",
       "comment_id": "5303113261",
@@ -32773,6 +32726,39 @@
         "kind": "pull_request",
         "branch": "fix/transcript-rewrite-replay-idempotency",
         "head_sha": "9ca4b0e31120afcb18300689e4cd463d2693a0b3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124397:5305662727:2026-08-16T04:10:47Z:clawsweeper_needs_human",
+      "comment_id": "5305662727",
+      "comment_version_key": "5305662727:2026-08-16T04:10:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124397#issuecomment-5305662727",
+      "comment_created_at": "2026-08-16T04:10:47Z",
+      "comment_updated_at": "2026-08-16T04:10:47Z",
+      "comment_body_sha256": "56ad9db84202f055f4cbf88c5bbce42a514b3e660b4bdf9e4faafdadaaf3993d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124397,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head checks are still in progress; the full split should be accepted only once the relevant Codex test lane corroborates the supplied remote A/B evidence. (sha=57fa68c895a899c88aaa6448cda2f55226c284c4)",
+      "expected_head_sha": "57fa68c895a899c88aaa6448cda2f55226c284c4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T04:11:31.764Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/nice-chaplygin-cf7c96",
+        "head_sha": "57fa68c895a899c88aaa6448cda2f55226c284c4",
         "cluster_id": null,
         "job_path": null
       }
