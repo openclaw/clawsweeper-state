@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T14:16:17.180Z",
+  "updated_at": "2026-08-16T14:16:33.303Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:75225:4355465901:2026-08-16T08:14:26Z:clawsweeper_needs_human",
-      "comment_id": "4355465901",
-      "comment_version_key": "4355465901:2026-08-16T08:14:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/75225#issuecomment-4355465901",
-      "comment_created_at": "2026-04-30T19:11:57Z",
-      "comment_updated_at": "2026-08-16T08:14:26Z",
-      "comment_body_sha256": "0bfc824a7da3d18ef95dc1cb4b91e0688888ffaf039dbfa622fef26380a11fe2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 75225,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bound descriptions by estimated tokens (P0)** - The new 4,096-code-unit aggregate is decremented with description.length, but the shared estimator treats common CJK as roughly one token per character. An allowed...; Review finding: [P0] Bound descriptions by estimated tokens — src/agents/tools/agents-list-tool.ts:168-177 - [medium] Account for CJK token cost in description bounds — src/agents... (sha=7f0c529a7a64b01235c2504e81656a1b88883d2f)",
-      "expected_head_sha": "7f0c529a7a64b01235c2504e81656a1b88883d2f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T08:16:05.371Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/agents-description-field",
-        "head_sha": "7f0c529a7a64b01235c2504e81656a1b88883d2f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:77638:4376170230:2026-08-16T07:59:45Z:clawsweeper_auto_repair",
       "comment_id": "4376170230",
@@ -32042,6 +32009,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115277:5307871875:2026-08-16T14:15:54Z:re_review",
+      "comment_id": "5307871875",
+      "comment_version_key": "5307871875:2026-08-16T14:15:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115277#issuecomment-5307871875",
+      "comment_created_at": "2026-08-16T14:15:54Z",
+      "comment_updated_at": "2026-08-16T14:15:54Z",
+      "comment_body_sha256": "08377c5fae0e61d60ee2fa6fdb24df70ce7e4c3e46ee020f7cb1f59431a2b874",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115277,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T14:16:31.866Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-server-prefix-toolsallow",
+        "head_sha": "e38e651d1c170a12fb8c03e6d5ea02c623522ba1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
