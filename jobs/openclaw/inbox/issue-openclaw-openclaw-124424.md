@@ -67,23 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair Control UI session creation so it emits `parentSessionKey`, `emitCommandHooks`, and `succeedsParent: false` only when the selected route has a published Gateway session row with a session id. Preserve persisted-parent and fork behavior, including incognito parent scope handling, and keep Gateway rejection of invalid or stale explicit parents unchanged. Do not add config, client retries, or Gateway fallback behavior. Add a regression at the session-capability/request boundary for an empty projection with an `agent:&lt;id>:main` bootstrap route and for a real persisted parent; the first must fail before the fix. Include user-visible release-note context in the PR body, not CHANGELOG.md.
+Fix the Control UI New session failure on a clean Gateway. In `ui/src/pages/chat/chat-pane-session-creation.ts`, use the existing selected persisted session-row fact when setting `currentSessionKey`, so `ui/src/lib/sessions/session-mutations.ts` sends parent linkage only for a real selected parent. Preserve current parallel-child behavior for an existing selected session and keep Gateway `sessions.create` validation strict. Add a regression at the chat-pane/session-capability boundary covering both an empty session list and a matching persisted parent; it must fail before the repair for the clean bootstrap route. Stop if the repair requires protocol, configuration, or session-lineage semantic changes. Include user-visible release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
-- ui/src/lib/sessions/create.ts
-- ui/src/lib/sessions/session-mutations.ts
-- ui/src/lib/sessions/create.test.ts
-- ui/src/lib/sessions/index.test.ts
 - ui/src/pages/chat/chat-pane-session-creation.ts
-- ui/src/pages/chat/chat-pane-session-access.test.ts
+- ui/src/pages/chat/chat-pane.test.ts
+- ui/src/lib/sessions/create.ts
+- ui/src/lib/sessions/create.test.ts
 
 Validation:
 
+- node scripts/run-vitest.mjs ui/src/pages/chat/chat-pane.test.ts
 - node scripts/run-vitest.mjs ui/src/lib/sessions/create.test.ts
-- node scripts/run-vitest.mjs ui/src/lib/sessions/index.test.ts
-- node scripts/run-vitest.mjs ui/src/pages/chat/chat-pane-session-access.test.ts
-- node scripts/check-changed.mjs --dry-run -- ui/src/lib/sessions/create.ts ui/src/lib/sessions/session-mutations.ts ui/src/pages/chat/chat-pane-session-creation.ts
+- Run a live isolated Gateway plus Control UI browser check showing New session creates and selects a dashboard session on an empty store.
 
 ## Operator Prompt
 
