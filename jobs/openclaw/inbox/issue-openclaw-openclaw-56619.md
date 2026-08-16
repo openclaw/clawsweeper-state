@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the documented `openclaw pairing approve whatsapp &lt;code> --notify` behavior. In the WhatsApp plugin, implement its existing pairing notification callback through the established account-scoped WhatsApp outbound send path; preserve the CLI and Control UI opt-in semantics. Do not add a config option, make notifications default-on, replay blocked messages, or modify pairing-store policy. Add a regression test that fails when WhatsApp exposes no notifier and proves the notifier sends the shared approval text to the approved sender with the resolved account. Include user-visible release-note context in the PR body, not CHANGELOG.md.
+Repair the documented WhatsApp pairing approval notification path for https://github.com/openclaw/openclaw/issues/56619. Preserve the existing explicit --notify and Control UI notification semantics; do not add automatic notification, configuration, replay of blocked messages, or Plugin SDK/core API surface. In the WhatsApp plugin, add a pairing notifier that uses the existing account-aware outbound delivery path and standard pairing-approved message, then add an owner-boundary regression test proving the plugin advertises notification support and delivers to the approved sender/account. Treat https://github.com/openclaw/openclaw/pull/94386 and https://github.com/openclaw/openclaw/pull/96277 only as closed-unmerged context, not code to revive. Do not edit CHANGELOG.md; include concise user-facing release-note context in the PR body.
 
 Likely files:
 
 - extensions/whatsapp/src/channel.ts
 - extensions/whatsapp/src/channel.pairing.test.ts
-- extensions/whatsapp/src/send.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs run extensions/whatsapp/src/channel.pairing.test.ts src/cli/pairing-cli.test.ts
-- node scripts/run-vitest.mjs run src/channels/plugins/pairing-adapters.test.ts
-- Exercise an approved WhatsApp pairing request with notification enabled through a gateway/transport boundary when a safe credentialed test environment is available.
+- node scripts/run-vitest.mjs extensions/whatsapp/src/channel.pairing.test.ts
+- node scripts/run-vitest.mjs src/cli/pairing-cli.test.ts src/gateway/server-methods/channel-pairing.test.ts
+- git diff --check
 
 ## Operator Prompt
 
