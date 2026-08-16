@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T12:30:23.388Z",
+  "updated_at": "2026-08-16T12:33:44.399Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123737:5299947570:2026-08-15T01:58:54Z:re_review",
-      "comment_id": "5299947570",
-      "comment_version_key": "5299947570:2026-08-15T01:58:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123737#issuecomment-5299947570",
-      "comment_created_at": "2026-08-15T01:58:54Z",
-      "comment_updated_at": "2026-08-15T01:58:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123737,
-      "author": "wangyan2026",
-      "author_id": 51532318,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T06:36:33.573Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96123:4784563290:2026-08-16T06:32:07Z:clawsweeper_needs_human",
       "comment_id": "4784563290",
@@ -31474,6 +31447,39 @@
       "status": "skipped",
       "processed_at": "2026-08-16T12:30:23.388Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124563:5307451293:2026-08-16T12:32:55Z:clawsweeper_needs_human",
+      "comment_id": "5307451293",
+      "comment_version_key": "5307451293:2026-08-16T12:32:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124563#issuecomment-5307451293",
+      "comment_created_at": "2026-08-16T12:32:55Z",
+      "comment_updated_at": "2026-08-16T12:32:55Z",
+      "comment_body_sha256": "bbe6c9a18f9fcb2eabb9f543078e8da5aa722958a9ca41ff3c77327499025c5f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124563,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 11 lines; the growth is justified by the Gateway-local bridge because the protocol package cannot depend on src/infra's redacting formatter. (sha=fe29bbcb46abde10c1bf44e93e0e49599a2e327e)",
+      "expected_head_sha": "fe29bbcb46abde10c1bf44e93e0e49599a2e327e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T12:33:44.399Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/gateway-errorshape-contract",
+        "head_sha": "fe29bbcb46abde10c1bf44e93e0e49599a2e327e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
