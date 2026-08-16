@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T13:44:33.928Z",
+  "updated_at": "2026-08-16T13:44:38.754Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4999013510:2026-07-17T04:35:39Z:re_review",
-      "comment_id": "4999013510",
-      "comment_version_key": "4999013510:2026-07-17T04:35:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4999013510",
-      "comment_created_at": "2026-07-17T04:35:39Z",
-      "comment_updated_at": "2026-07-17T04:35:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T07:56:28.144Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5001958681:2026-07-17T10:13:20Z:re_review",
       "comment_id": "5001958681",
@@ -31718,6 +31691,53 @@
       "status": "skipped",
       "processed_at": "2026-08-16T13:44:33.928Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124516:5307733015:2026-08-16T13:43:50Z:re_review",
+      "comment_id": "5307733015",
+      "comment_version_key": "5307733015:2026-08-16T13:43:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124516#issuecomment-5307733015",
+      "comment_created_at": "2026-08-16T13:43:50Z",
+      "comment_updated_at": "2026-08-16T13:43:50Z",
+      "comment_body_sha256": "6d04b88ece44b65b31620f7bcb18d0cdb8197551f7b359afb016e6a237fa5ffc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124516,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head now `b747e06`, rebased onto current main (`605dece`). the single-file conflict in `src/config/sessions/targets.ts` is resolved: kept this pr's scoped discovery and dropped main's configured-agent canonical-only early return (the compatibility decision from the prior review — option 1). local exact-head proof in the previous comment: tsgo core clean, oxlint/oxfmt clean, resolver + gateway regressions green. `mergeable: mergeable`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T13:44:36.882Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skip-full-store-discovery-123439",
+        "head_sha": "b747e069b017233e4c0feb2a90f6707c1b754557",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
