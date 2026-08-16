@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T10:55:09.545Z",
+  "updated_at": "2026-08-16T10:55:51.280Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124162:5304287593:2026-08-15T21:20:27Z:re_review",
-      "comment_id": "5304287593",
-      "comment_version_key": "5304287593:2026-08-15T21:20:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5304287593",
-      "comment_created_at": "2026-08-15T21:20:27Z",
-      "comment_updated_at": "2026-08-15T21:20:27Z",
-      "comment_body_sha256": "d1a0c92cabfff09eb103ef2821c8a0ce8eb2e49963e462c1dfefe056d376f4e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124162,
-      "author": "markr9805",
-      "author_id": 23192809,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T04:59:42.962Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120989:5230892050:2026-08-16T05:01:55Z:clawsweeper_needs_human",
       "comment_id": "5230892050",
@@ -31460,6 +31433,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124534:5307082965:2026-08-16T10:55:14Z:clawsweeper_auto_repair",
+      "comment_id": "5307082965",
+      "comment_version_key": "5307082965:2026-08-16T10:55:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124534#issuecomment-5307082965",
+      "comment_created_at": "2026-08-16T10:55:14Z",
+      "comment_updated_at": "2026-08-16T10:55:14Z",
+      "comment_body_sha256": "b8658889e7093763f07328239a64e3b02d8e53012f83faeffaf5b280a64bf759",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124534,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5d2ba1b4cb6ee8d93514485bbfbda2d57beb6b86)",
+      "expected_head_sha": "5d2ba1b4cb6ee8d93514485bbfbda2d57beb6b86",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T10:55:51.280Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-ingress-original-error",
+        "head_sha": "5d2ba1b4cb6ee8d93514485bbfbda2d57beb6b86",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
