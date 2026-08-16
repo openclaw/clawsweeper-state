@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-08-16T11:45:37.575Z",
+  "updated_at": "2026-08-16T11:45:37.697Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122386:5306014456:2026-08-16T05:58:08Z:re_review",
-      "comment_id": "5306014456",
-      "comment_version_key": "5306014456:2026-08-16T05:58:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122386#issuecomment-5306014456",
-      "comment_created_at": "2026-08-16T05:58:08Z",
-      "comment_updated_at": "2026-08-16T05:58:08Z",
-      "comment_body_sha256": "a7e0c1737951bfd6f68a3867b813676396fd5998b7dd1044456e0c73e943afab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122386,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T05:58:57.032Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-wiki-source-ownership-scope",
-        "head_sha": "bb7e4a410abcc1ce9af9288678d9845252821eaa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124249:5303843361:2026-08-16T05:59:19Z:clawsweeper_needs_human",
-      "comment_id": "5303843361",
-      "comment_version_key": "5303843361:2026-08-16T05:59:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124249#issuecomment-5303843361",
-      "comment_created_at": "2026-08-15T19:22:30Z",
-      "comment_updated_at": "2026-08-16T05:59:19Z",
-      "comment_body_sha256": "78c0493acdeeea9d18e18d158b34650b12cc96926acb52a27c79ce2711b663b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124249,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes default output from a public shared sanitizer used by multiple channel adapters; verify the exact merge head preserves ordinary markup stripping and recipie... (sha=c5150a0f45418301a362b244a6ded4d98062591a)",
-      "expected_head_sha": "c5150a0f45418301a362b244a6ded4d98062591a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T06:00:03.488Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sanitize-angle-addr",
-        "head_sha": "c5150a0f45418301a362b244a6ded4d98062591a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118041:5159286909:2026-08-16T06:02:14Z:clawsweeper_auto_repair",
       "comment_id": "5159286909",
@@ -31441,6 +31361,53 @@
       ]
     },
     {
+      "idempotency_key": "comment-router:openclaw/openclaw:124516:5307237370:2026-08-16T11:36:51Z:re_review",
+      "comment_id": "5307237370",
+      "comment_version_key": "5307237370:2026-08-16T11:36:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124516#issuecomment-5307237370",
+      "comment_created_at": "2026-08-16T11:36:51Z",
+      "comment_updated_at": "2026-08-16T11:36:51Z",
+      "comment_body_sha256": "a89696fe21caf5a5dcfd0d9ed81483a1ee65997a094a3e0c450314fe0e955347",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124516,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head now `3f6deb0a`. addressed the p2 finding: `targets-agent-discovery.ts` sorts readdir entries by directory name before filtering (matching main's `mapagentsessiondirs` `tosorted`), restoring deterministic same-agent alias discovery order. added an order-sensitive regression that fails without the sort. pr body evidence refreshed to the current head (scaling matrix + 6 regression tests, all green)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T11:45:32.538Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skip-full-store-discovery-123439",
+        "head_sha": "3f6deb0a6595b59fbd136c2578e50f99e111f1f0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
       "idempotency_key": "comment-router:openclaw/openclaw:121167:5307266572:2026-08-16T11:44:53Z:re_review",
       "comment_id": "5307266572",
       "comment_version_key": "5307266572:2026-08-16T11:44:53Z",
@@ -31486,6 +31453,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124516:5306614862:2026-08-16T11:44:42Z:clawsweeper_needs_human",
+      "comment_id": "5306614862",
+      "comment_version_key": "5306614862:2026-08-16T11:44:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124516#issuecomment-5306614862",
+      "comment_created_at": "2026-08-16T08:51:01Z",
+      "comment_updated_at": "2026-08-16T11:44:42Z",
+      "comment_body_sha256": "6045260cd9b3e36b03d71323d6aaee28597449b04b410f506c9c62bd2ed3067e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124516,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main explicitly limits configured agents to canonical direct paths; merging this PR restores alternate-root visibility and needs an explicit compatibility decision. (sha=3f6deb0a6595b59fbd136c2578e50f99e111f1f0)",
+      "expected_head_sha": "3f6deb0a6595b59fbd136c2578e50f99e111f1f0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T11:45:37.697Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skip-full-store-discovery-123439",
+        "head_sha": "3f6deb0a6595b59fbd136c2578e50f99e111f1f0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
