@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T20:45:17.557Z",
+  "updated_at": "2026-08-16T20:45:32.147Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124675:5308316099:2026-08-16T15:57:39Z:clawsweeper_needs_human",
-      "comment_id": "5308316099",
-      "comment_version_key": "5308316099:2026-08-16T15:57:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124675#issuecomment-5308316099",
-      "comment_created_at": "2026-08-16T15:57:39Z",
-      "comment_updated_at": "2026-08-16T15:57:39Z",
-      "comment_body_sha256": "abcc1df95f8d629fb8a8393e11a5f1d208877a08fedb2b086d15887a289c2bac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124675,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR-head translation-memory rows and workflow artifact could not be inspected from this partial clone; merge should remain gated on the exact-head ui:i18n:check completion. (sha=f007c4a417c2ba77b110ad1cf7d8829e28bf51a7)",
-      "expected_head_sha": "f007c4a417c2ba77b110ad1cf7d8829e28bf51a7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T15:58:26.368Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/control-ui-locale-refresh",
-        "head_sha": "f007c4a417c2ba77b110ad1cf7d8829e28bf51a7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117400:5151450914:2026-08-16T15:57:37Z:clawsweeper_needs_human",
       "comment_id": "5151450914",
@@ -32296,6 +32263,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124785:5309341319:2026-08-16T20:44:31Z:clawsweeper_needs_human",
+      "comment_id": "5309341319",
+      "comment_version_key": "5309341319:2026-08-16T20:44:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124785#issuecomment-5309341319",
+      "comment_created_at": "2026-08-16T19:47:38Z",
+      "comment_updated_at": "2026-08-16T20:44:31Z",
+      "comment_body_sha256": "3e516c5207697ba3271ca172e5bf5d18a16e3f5430ab86a3187bf689a77eecb1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124785,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The explicit maintainer and clawsweeper:human-review labels require a UI owner to review the exact head before the armed automerge path can proceed. (sha=24048b6aa3a056fc136c8ebbbef636576b93e30f)",
+      "expected_head_sha": "24048b6aa3a056fc136c8ebbbef636576b93e30f",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T20:45:32.147Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-mobile-side-chat-hitbox",
+        "head_sha": "24048b6aa3a056fc136c8ebbbef636576b93e30f",
+        "cluster_id": "automerge-openclaw-openclaw-124785",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124785.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
