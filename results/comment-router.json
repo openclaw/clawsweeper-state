@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T14:42:55.914Z",
+  "updated_at": "2026-08-16T14:44:23.389Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116511:5276477109:2026-08-13T05:48:58Z:re_review",
-      "comment_id": "5276477109",
-      "comment_version_key": "5276477109:2026-08-13T05:48:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116511#issuecomment-5276477109",
-      "comment_created_at": "2026-08-13T05:48:58Z",
-      "comment_updated_at": "2026-08-13T05:48:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116511,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T08:29:59.908Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116511:5278181510:2026-08-13T08:55:13Z:re_review",
       "comment_id": "5278181510",
@@ -32342,6 +32315,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124137:5301648843:2026-08-16T14:43:43Z:clawsweeper_needs_human",
+      "comment_id": "5301648843",
+      "comment_version_key": "5301648843:2026-08-16T14:43:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124137#issuecomment-5301648843",
+      "comment_created_at": "2026-08-15T09:43:10Z",
+      "comment_updated_at": "2026-08-16T14:43:43Z",
+      "comment_body_sha256": "d327a2e4462d6696a26401d2a611a975ed0ff0d3d859e3446f77efbb3c1c467c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124137,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The direct native --version probe depends on an upstream Codex CLI contract that this review could not inspect through the required sibling checkout; an upstream mismatch could make t... (sha=577e68f902fe2e1582fb36204675bddd74515e3d)",
+      "expected_head_sha": "577e68f902fe2e1582fb36204675bddd74515e3d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T14:44:23.389Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/openclaw-codex-managed-preflight-20260815",
+        "head_sha": "577e68f902fe2e1582fb36204675bddd74515e3d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
