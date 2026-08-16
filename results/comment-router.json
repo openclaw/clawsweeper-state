@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-16T21:58:00.065Z",
+  "updated_at": "2026-08-16T21:57:32.721Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123942:5300131176:2026-08-16T16:49:16Z:clawsweeper_needs_human",
+      "comment_id": "5300131176",
+      "comment_version_key": "5300131176:2026-08-16T16:49:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123942#issuecomment-5300131176",
+      "comment_created_at": "2026-08-15T02:41:27Z",
+      "comment_updated_at": "2026-08-16T16:49:16Z",
+      "comment_body_sha256": "37ae4dd2b0c1282f6e58292c67d282eb988c0eaa2a72e14916ce682198c39202",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123942,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The submitted terminal capture exercises production reset persistence and the injector against SQLite, but it explicitly excludes the... (sha=5cc181d445da8444a82ae3f18f49cd6aa3b3b3a2)",
+      "expected_head_sha": "5cc181d445da8444a82ae3f18f49cd6aa3b3b3a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T16:55:57.603Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "session-transcript-boundary-cutoff",
+        "head_sha": "5cc181d445da8444a82ae3f18f49cd6aa3b3b3a2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124309:5304821486:2026-08-16T16:52:57Z:clawsweeper_auto_repair",
       "comment_id": "5304821486",
@@ -32506,53 +32539,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123709:5309874238:2026-08-16T21:57:12Z:re_review",
-      "comment_id": "5309874238",
-      "comment_version_key": "5309874238:2026-08-16T21:57:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123709#issuecomment-5309874238",
-      "comment_created_at": "2026-08-16T21:57:12Z",
-      "comment_updated_at": "2026-08-16T21:57:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123709,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T21:57:57.784Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-message-delivery",
-        "head_sha": "f962ee4cf5afc61afb7cd56a4b5c74fb74e63f8b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
