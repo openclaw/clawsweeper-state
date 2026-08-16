@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T15:48:26.851Z",
+  "updated_at": "2026-08-16T15:48:58.992Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124222:5305608565:2026-08-16T03:53:21Z:re_review",
-      "comment_id": "5305608565",
-      "comment_version_key": "5305608565:2026-08-16T03:53:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124222#issuecomment-5305608565",
-      "comment_created_at": "2026-08-16T03:53:21Z",
-      "comment_updated_at": "2026-08-16T03:53:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124222,
-      "author": "a-yeyang",
-      "author_id": 88581400,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T10:28:13.486Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124372:5306895745:2026-08-16T10:08:49Z:re_review",
       "comment_id": "5306895745",
@@ -32314,6 +32287,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124670:5308276036:2026-08-16T15:48:14Z:clawsweeper_needs_human",
+      "comment_id": "5308276036",
+      "comment_version_key": "5308276036:2026-08-16T15:48:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124670#issuecomment-5308276036",
+      "comment_created_at": "2026-08-16T15:48:14Z",
+      "comment_updated_at": "2026-08-16T15:48:14Z",
+      "comment_body_sha256": "a3bd30df5229598dff5399b8ed73a5d20691ae885f0c3d8ba75716b7e980cdff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - openclaw agent --agent \"агент✨\" still normalizes the explicit selector to main, leaving one direct agent-command path with the same silent-targeting invariant. (sha=701b50ee080d571ffd0136d0f1914658ba94acb5)",
+      "expected_head_sha": "701b50ee080d571ffd0136d0f1914658ba94acb5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T15:48:58.992Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/agent-id-strict-input",
+        "head_sha": "701b50ee080d571ffd0136d0f1914658ba94acb5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
