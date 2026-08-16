@@ -67,18 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current-main audit-worker external-ownership bug described by https://github.com/openclaw/openclaw/issues/123691. Keep the fix inside the audit writer owner boundary: preserve inherited worker environment values while overriding only OPENCLAW_STATE_DIR in src/audit/audit-event-writer.worker.ts. Add a real worker-thread regression in src/audit/audit-event-writer.test.ts that claims external ownership, proves a marker-bearing worker persists an audit event with no ownership error, and proves an unmarked worker remains refused without a write. Treat https://github.com/openclaw/openclaw/pull/123812 only as closed-unmerged source context; do not revive it. Do not change ownership policy, add config, alter SQLite schema, weaken unmarked-writer fencing, or edit CHANGELOG.md; put concise release-note context in the PR body.
+Repair the audit worker's externally supervised state-ownership admission for https://github.com/openclaw/openclaw/issues/123691. Preserve the inherited environment when overriding OPENCLAW_STATE_DIR; do not weaken ownership admission, add configuration, alter the ownership-row contract, or add runtime fallbacks. Add a real audit worker-thread regression that claims ownership, proves a supervisor-marked worker persists an audit event without errors, and proves an otherwise identical unmarked worker remains rejected. Review production Gateway worker and sidecar database environment overrides for the same replacement pattern, retaining only fixes supported by the shared invariant. Include release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/audit/audit-event-writer.worker.ts
 - src/audit/audit-event-writer.test.ts
+- src/state/openclaw-state-ownership.test.ts
+- test/gateway-external-state-ownership.e2e.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/audit/audit-event-writer.test.ts
 - node scripts/run-vitest.mjs src/state/openclaw-state-ownership.test.ts
-- git diff --check
+- node scripts/run-vitest.mjs test/gateway-external-state-ownership.e2e.test.ts
 
 ## Operator Prompt
 

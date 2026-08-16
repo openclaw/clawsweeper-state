@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/121993 at the Gateway session projection owner. Use persisted ACP metadata to project external backend/canonical ACP identity, lock model selection, and enforce that same metadata-derived lock in sessions.patch. Preserve configured-model behavior and patchability for ACP-shaped bridge sessions without metadata. Do not add harness-specific branches, a new config option, or the optional model-picker capability proposed in https://github.com/openclaw/openclaw/issues/122488. Add owner-boundary regressions that fail on current main for persisted ACP metadata, ACP-shaped bridge rows, and ordinary rows; capture isolated Control UI proof if feasible. Put release-note context in the PR body, not CHANGELOG.md.
+Repair metadata-backed ACP session model projection in the Gateway. Use persisted SessionAcpMeta plus ACP session-key validation as the only gate: for true ACP runtime sessions expose modelProvider "acpx", model "&lt;agentId>-acp", and lock model selection; ACP-shaped bridge sessions without metadata must preserve their configured model and remain patchable. Reuse or extract the existing CLI invariant in src/commands/sessions.ts; do not infer ACP from key shape alone or hardcode Cursor or Codex. Enforce the same gate in direct sessions.patch { model } handling. Add regressions that fail pre-fix for metadata-backed ACP, ACP-shaped bridge sessions without metadata, and normal sessions. Do not implement harness configOptions selectable models; that is tracked by https://github.com/openclaw/openclaw/issues/122488. No CHANGELOG edit.
 
 Likely files:
 
@@ -76,12 +76,13 @@ Likely files:
 - src/gateway/sessions-patch.ts
 - src/gateway/session-utils.test.ts
 - src/gateway/sessions-patch.test.ts
+- src/commands/sessions.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/session-utils.test.ts
 - node scripts/run-vitest.mjs src/gateway/sessions-patch.test.ts
-- sanitized isolated Gateway/Control UI ACP-session proof
+- Capture redacted Control UI proof from a metadata-backed ACP session showing the ACP identity and locked selector.
 
 ## Operator Prompt
 
