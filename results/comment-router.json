@@ -1,48 +1,6 @@
 {
-  "updated_at": "2026-08-16T13:14:26.587Z",
+  "updated_at": "2026-08-16T13:14:29.333Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123988:5306365726:2026-08-16T07:41:06Z:re_review",
-      "comment_id": "5306365726",
-      "comment_version_key": "5306365726:2026-08-16T07:41:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123988#issuecomment-5306365726",
-      "comment_created_at": "2026-08-16T07:41:06Z",
-      "comment_updated_at": "2026-08-16T07:41:06Z",
-      "comment_body_sha256": "f6b88308e4d1ef6f43b831f32831c3af805b0ff6e7abc958c1cf2579a4142eea",
-      "source_delivery_id": "d7bf07d0-9945-11f1-8b08-2d1e28e2a633",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123988,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T07:41:46.161Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skip-full-store-discovery-123439",
-        "head_sha": "ccf08afe7b425e662fc99e9cfd448c1ef8491f48",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122256:5260240229:2026-08-16T07:41:21Z:clawsweeper_auto_repair",
       "comment_id": "5260240229",
@@ -31557,6 +31515,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124586:5307611076:2026-08-16T13:13:42Z:clawsweeper_needs_human",
+      "comment_id": "5307611076",
+      "comment_version_key": "5307611076:2026-08-16T13:13:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124586#issuecomment-5307611076",
+      "comment_created_at": "2026-08-16T13:13:42Z",
+      "comment_updated_at": "2026-08-16T13:13:42Z",
+      "comment_body_sha256": "ca1eb6a04257e6f6c8d0c1e4fa1731986d03cac9856a1fbf8c7a6cf600c48e3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124586,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and exact-head checks are still in progress, so merge readiness requires a current-base refresh and green exact-head CI. (sha=163fecb2a5ba6aa4aa75b76f8351a44380d90ff1)",
+      "expected_head_sha": "163fecb2a5ba6aa4aa75b76f8351a44380d90ff1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T13:14:29.333Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/computer-use-naming-cleanup",
+        "head_sha": "163fecb2a5ba6aa4aa75b76f8351a44380d90ff1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
