@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T05:20:33.463Z",
+  "updated_at": "2026-08-16T05:21:09.294Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2944:5304882860:2026-08-16T00:13:33Z:re_review",
-      "comment_id": "5304882860",
-      "comment_version_key": "5304882860:2026-08-16T00:13:33Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2944#issuecomment-5304882860",
-      "comment_created_at": "2026-08-16T00:13:33Z",
-      "comment_updated_at": "2026-08-16T00:13:33Z",
-      "comment_body_sha256": "d650c46ae6a9d86a9feea529ecf8dbc68d73b368019d98c11c297300300dab2e",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2944,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T00:17:35.938Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/codex-oauth-hardening-pr",
-        "head_sha": "87b2b36d45a1ef8290ba6291abf7201e7d4a59ef",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123912:5304896529:2026-08-16T00:17:03Z:re_review",
       "comment_id": "5304896529",
@@ -32121,6 +32074,39 @@
         "kind": "pull_request",
         "branch": "fix/2960-serve-privacy-setting",
         "head_sha": "c666b209aa92c0f453c431c0c73de3a9ec7b834e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2966:5305620529:2026-08-16T05:20:30Z:clawsweeper_needs_human",
+      "comment_id": "5305620529",
+      "comment_version_key": "5305620529:2026-08-16T05:20:30Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2966#issuecomment-5305620529",
+      "comment_created_at": "2026-08-16T03:57:18Z",
+      "comment_updated_at": "2026-08-16T05:20:30Z",
+      "comment_body_sha256": "9a66a67595de99063f53236d57c506977c056de5644cd8742727f05659386498",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2966,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing custom consumers of the dashboard payload that rely on Antigravity session and weekly row kinds will instead receive provider-specific quota-bucket identifiers after upgradin... (sha=4d49f54077ac29b90aa65fcd9f1351beaa24ff29)",
+      "expected_head_sha": "4d49f54077ac29b90aa65fcd9f1351beaa24ff29",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T05:21:09.294Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2963-antigravity-dashboard-lanes",
+        "head_sha": "4d49f54077ac29b90aa65fcd9f1351beaa24ff29",
         "cluster_id": null,
         "job_path": null
       }
