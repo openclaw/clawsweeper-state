@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T00:56:54.570Z",
+  "updated_at": "2026-08-16T00:57:14.930Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119001:5303900441:2026-08-15T19:37:36Z:re_review",
-      "comment_id": "5303900441",
-      "comment_version_key": "5303900441:2026-08-15T19:37:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119001#issuecomment-5303900441",
-      "comment_created_at": "2026-08-15T19:37:36Z",
-      "comment_updated_at": "2026-08-15T19:37:36Z",
-      "comment_body_sha256": "e9226cfe49055139ec110c7d18cbd893176b40cc5a498f988bd5a48b4b9d78b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119001,
-      "author": "GoatInAHat",
-      "author_id": 55002508,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review exact head 5eb46f532619443263355ec3fe4cf20c51769a93. final deletion-first refactor removed the two gpt-live compatibility wrappers and duplicate codex dependency declarations, made the shared talk runtime own lazy webrtc/opus loading, and cut 900 changed lines without changing behavior. the pr body now includes direct immutable codex 0.147.0 protocol/auth/recovery links and exact-head verification",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T19:38:23.988Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/codex-native-realtime-voice",
-        "head_sha": "5eb46f532619443263355ec3fe4cf20c51769a93",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124222:5303901981:2026-08-15T19:38:01Z:re_review",
       "comment_id": "5303901981",
@@ -32949,6 +32902,39 @@
         "kind": "pull_request",
         "branch": "feature/control-ui-link-browser-setting",
         "head_sha": "b8debc7752213fd71d51373b9576f38bccf0ac79",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1174:5304318524:2026-08-16T00:56:12Z:clawsweeper_needs_human",
+      "comment_id": "5304318524",
+      "comment_version_key": "5304318524:2026-08-16T00:56:12Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1174#issuecomment-5304318524",
+      "comment_created_at": "2026-08-15T21:29:01Z",
+      "comment_updated_at": "2026-08-16T00:56:12Z",
+      "comment_body_sha256": "a9e771ae47348d9dee66f3d60073804d8ad8f5562ac8d7a69fd8ff06758476df",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1174,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This expands a public observability projection, so the closed aggregate allowlist and fail-closed completeness behavior remain a security-boundary concern even though the supplied pro... (sha=c0917b361ce7c15f63914dff17dd4ba48ef41c59)",
+      "expected_head_sha": "c0917b361ce7c15f63914dff17dd4ba48ef41c59",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T00:57:14.930Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-131-github-throttle-history",
+        "head_sha": "c0917b361ce7c15f63914dff17dd4ba48ef41c59",
         "cluster_id": null,
         "job_path": null
       }
