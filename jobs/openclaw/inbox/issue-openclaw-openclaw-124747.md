@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the established failure-delivery contract for reset-bearing Claude CLI session limits. Extend the canonical generic failover classification and periodic-detail recognition so a message such as “You've hit your session limit · resets 6:10pm (UTC)” is a safe rate-limit failure and reuses the existing sanitized non-direct reply path. Add a regression that fails before the repair at the classifier boundary and through the existing non-direct agent-runner failure test. Do not add Claude- or Discord-specific reply copy, forward arbitrary raw provider detail, change fallback policy, add configuration, or edit CHANGELOG.md; record the user-visible behavior in the PR body.
+Repair the existing failover classification gap for provider messages such as “You've hit your session limit · resets 6:10pm (UTC)”. Keep the repair generic—do not special-case Claude CLI or Discord—and limit it to a credible reset/retry session-limit signal so session-expiry and local runtime errors remain distinct. Add a regression that fails on current main by proving the raw message classifies as rate_limit, then extend the existing non-direct provider-failure boundary coverage to show visible sanitized reset text rather than generic failure. Reuse the existing user-copy and delivery path; do not add config, fallback readers, or CHANGELOG.md edits. Apply the test-audit gate and report the pre-fix failure, post-fix result, and production-versus-test LOC delta.
 
 Likely files:
 
 - src/agents/failover/message-patterns.ts
-- src/agents/failover/user-copy.ts
-- src/agents/failover/classify.test.ts
+- src/agents/failover/classify.predicates.test.ts
 - src/auto-reply/reply/agent-runner-execution-provider-failures.test.ts
 
 Validation:
 
-- pnpm test src/agents/failover/classify.test.ts
-- pnpm test src/auto-reply/reply/agent-runner-execution-provider-failures.test.ts
-- pnpm check:changed -- src/agents/failover/message-patterns.ts src/agents/failover/user-copy.ts src/auto-reply/reply/agent-runner-execution-provider-failures.test.ts
+- node scripts/run-vitest.mjs src/agents/failover/classify.predicates.test.ts
+- node scripts/run-vitest.mjs src/auto-reply/reply/agent-runner-execution-provider-failures.test.ts
+- node scripts/check-changed.mjs --dry-run -- src/agents/failover/message-patterns.ts src/agents/failover/classify.predicates.test.ts src/auto-reply/reply/agent-runner-execution-provider-failures.test.ts
 
 ## Operator Prompt
 
