@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T13:47:56.609Z",
+  "updated_at": "2026-08-16T13:48:35.050Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5048531236:2026-07-22T16:08:13Z:re_review",
-      "comment_id": "5048531236",
-      "comment_version_key": "5048531236:2026-07-22T16:08:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5048531236",
-      "comment_created_at": "2026-07-22T16:08:13Z",
-      "comment_updated_at": "2026-07-22T16:08:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T07:56:28.144Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5050373477:2026-07-22T19:12:25Z:re_review",
       "comment_id": "5050373477",
@@ -31774,6 +31747,39 @@
       "status": "skipped",
       "processed_at": "2026-08-16T13:47:56.609Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124606:5307750069:2026-08-16T13:47:45Z:clawsweeper_needs_human",
+      "comment_id": "5307750069",
+      "comment_version_key": "5307750069:2026-08-16T13:47:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124606#issuecomment-5307750069",
+      "comment_created_at": "2026-08-16T13:47:45Z",
+      "comment_updated_at": "2026-08-16T13:47:45Z",
+      "comment_body_sha256": "655b18f0145dc7e487d0ef6208e82f30ea78f585097b115b9598788f86d1cb46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124606,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A valid existing LINE media transfer that needs more than 15 seconds after headers—or reaches headers late after 202 polling—will now enter durable retry instead of completing in that... (sha=e0cd3b87953c650d7de6147d8de8e4236fc8acad)",
+      "expected_head_sha": "e0cd3b87953c650d7de6147d8de8e4236fc8acad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T13:48:35.050Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa-plugin-response-deadline-v3",
+        "head_sha": "e0cd3b87953c650d7de6147d8de8e4236fc8acad",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
