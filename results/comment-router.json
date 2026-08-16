@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T06:05:48.156Z",
+  "updated_at": "2026-08-16T06:07:09.311Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123944:5300128615:2026-08-16T00:32:13Z:clawsweeper_needs_human",
-      "comment_id": "5300128615",
-      "comment_version_key": "5300128615:2026-08-16T00:32:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123944#issuecomment-5300128615",
-      "comment_created_at": "2026-08-15T02:40:45Z",
-      "comment_updated_at": "2026-08-16T00:32:13Z",
-      "comment_body_sha256": "f181b698c9bfa81750dd55e79aff84ac53d184dbba55e0b1185b5f5385686f19",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123944,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Latest exact-head Control UI checks are still running after the final force-push, so merge should wait for their terminal results. (sha=728784223336df9441158dcb57f9a64b66e715ba)",
-      "expected_head_sha": "728784223336df9441158dcb57f9a64b66e715ba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T00:37:09.356Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/control-ui-responsive-toast-position",
-        "head_sha": "728784223336df9441158dcb57f9a64b66e715ba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124303:5304709964:2026-08-16T00:32:05Z:clawsweeper_auto_repair",
       "comment_id": "5304709964",
@@ -32076,6 +32043,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124429:5306041760:2026-08-16T06:06:19Z:re_review",
+      "comment_id": "5306041760",
+      "comment_version_key": "5306041760:2026-08-16T06:06:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124429#issuecomment-5306041760",
+      "comment_created_at": "2026-08-16T06:06:19Z",
+      "comment_updated_at": "2026-08-16T06:06:19Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124429,
+      "author": "jjjhenriksen",
+      "author_id": 179184921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T06:07:07.221Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-issue-121481",
+        "head_sha": "f7f32c3b59cee7f3dbf878d74f1b9517d9ec1c8a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
