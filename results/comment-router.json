@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T05:23:56.895Z",
+  "updated_at": "2026-08-16T05:26:45.274Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1174:5304900093:2026-08-16T00:17:59Z:re_review",
-      "comment_id": "5304900093",
-      "comment_version_key": "5304900093:2026-08-16T00:17:59Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1174#issuecomment-5304900093",
-      "comment_created_at": "2026-08-16T00:17:59Z",
-      "comment_updated_at": "2026-08-16T00:17:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1174,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T00:18:42.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-131-github-throttle-history",
-        "head_sha": "c0917b361ce7c15f63914dff17dd4ba48ef41c59",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110803:5304902431:2026-08-16T00:18:37Z:re_review",
       "comment_id": "5304902431",
@@ -32105,6 +32058,39 @@
         "kind": "pull_request",
         "branch": "fix/reconcile-tunnel-owner",
         "head_sha": "5b5c102f0503e799da1a2e5425fd47d06a7cb17d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124361:5305396704:2026-08-16T05:26:01Z:clawsweeper_needs_human",
+      "comment_id": "5305396704",
+      "comment_version_key": "5305396704:2026-08-16T05:26:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124361#issuecomment-5305396704",
+      "comment_created_at": "2026-08-16T02:48:03Z",
+      "comment_updated_at": "2026-08-16T05:26:01Z",
+      "comment_body_sha256": "adb60c7539c6584dab5c752def8a61c3147c197eee9330c569e840e117c5756c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124361,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a repo-wide lint enforcement boundary; any merge refresh should preserve the exact file-level exception ledger and green enforcement checks. (sha=f72bd205236fb7b7cce66177fbf3625a8eb8b66e)",
+      "expected_head_sha": "f72bd205236fb7b7cce66177fbf3625a8eb8b66e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T05:26:45.274Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/chained-drain-g1",
+        "head_sha": "f72bd205236fb7b7cce66177fbf3625a8eb8b66e",
         "cluster_id": null,
         "job_path": null
       }
