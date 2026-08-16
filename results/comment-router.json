@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T11:33:41.762Z",
+  "updated_at": "2026-08-16T11:35:03.562Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123674:5294072637:2026-08-16T05:49:06Z:clawsweeper_needs_human",
-      "comment_id": "5294072637",
-      "comment_version_key": "5294072637:2026-08-16T05:49:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123674#issuecomment-5294072637",
-      "comment_created_at": "2026-08-14T13:50:50Z",
-      "comment_updated_at": "2026-08-16T05:49:06Z",
-      "comment_body_sha256": "0b5e63798b3eef6932fac77a1161ccbf1c10828819b80a8e077c4624598c4e66",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123674,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Read-only mode intentionally discards hello-issued token updates and stale-token clears for node/device CLI processes; a remote setup relying solely on stored device credentials must... (sha=cfbb8da24e97841220105d7bea4220c81ad99905)",
-      "expected_head_sha": "cfbb8da24e97841220105d7bea4220c81ad99905",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T05:49:50.726Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/state-db-writer-ownership",
-        "head_sha": "cfbb8da24e97841220105d7bea4220c81ad99905",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124440:5305991489:2026-08-16T05:50:31Z:clawsweeper_needs_human",
       "comment_id": "5305991489",
@@ -31466,6 +31433,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121063:5307227198:2026-08-16T11:34:15Z:re_review",
+      "comment_id": "5307227198",
+      "comment_version_key": "5307227198:2026-08-16T11:34:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121063#issuecomment-5307227198",
+      "comment_created_at": "2026-08-16T11:34:15Z",
+      "comment_updated_at": "2026-08-16T11:34:15Z",
+      "comment_body_sha256": "bce07f51f296005ade16f97c2d6238296606aafe204bb134a998f7422e0b613e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121063,
+      "author": "Papilionidae",
+      "author_id": 39980552,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review (final head 2c1d3aa8 — oxfmt fix pushed)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T11:35:00.453Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/br-120962",
+        "head_sha": "2c1d3aa80d8e089f3688448dff076023f560ebee",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
