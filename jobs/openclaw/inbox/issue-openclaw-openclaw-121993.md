@@ -67,22 +67,24 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair ACP session model projection in Gateway. For a session with both an ACP-shaped stored key and persisted ACP metadata, project provider `acpx`, model `&lt;agentId>-acp`, and locked model selection; apply the same durable gate before accepting a direct Gateway model patch. Keep configured model display and editability for ACP-shaped bridge sessions without metadata, and do not add harness-specific model-list UI or new configuration—https://github.com/openclaw/openclaw/issues/122488 owns that feature. Add focused regression coverage, capture user-visible release context in the PR body or commit message, and do not edit CHANGELOG.md.
+Repair the confirmed ACP composer attribution bug. Extend the existing metadata-and-key-gated ACP overlay so CLI and Gateway session rows share one canonical external display identity; use it only for true ACP sessions with durable metadata, never ACP-shaped bridge sessions without it. Gateway should project the identity and a model-selection lock, `sessions.patch` should reject model mutation under the same authoritative condition, and the Control UI should show the projected external identity in its locked footer while retaining generic behavior for other locked sessions. Add regression coverage for true ACP, bridge-without-metadata, direct model patch rejection, and locked-footer rendering. Run focused Gateway and Control UI tests. Do not add config, storage, protocol, or harness capability surfaces; do not edit CHANGELOG.md, but include release-note context in the PR body.
 
 Likely files:
 
+- src/agents/acp-runtime-overlay.ts
+- src/commands/sessions.ts
 - src/gateway/session-utils-row.ts
-- src/gateway/session-utils-list.ts
-- src/gateway/session-utils-model.ts
-- src/gateway/session-utils.test.ts
 - src/gateway/sessions-patch.ts
+- src/gateway/session-utils.test.ts
 - src/gateway/sessions-patch.test.ts
+- ui/src/pages/chat/components/chat-model-controls.ts
+- ui/src/pages/chat/chat-view.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/session-utils.test.ts
 - node scripts/run-vitest.mjs src/gateway/sessions-patch.test.ts
-- node scripts/run-vitest.mjs src/commands/sessions.acp-model-display.test.ts
+- node scripts/run-vitest.mjs ui/src/pages/chat/chat-view.test.ts
 
 ## Operator Prompt
 
