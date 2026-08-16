@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T14:14:52.723Z",
+  "updated_at": "2026-08-16T14:15:03.490Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:487:5301760789:2026-08-16T08:14:40Z:clawsweeper_needs_human",
-      "comment_id": "5301760789",
-      "comment_version_key": "5301760789:2026-08-16T08:14:40Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/487#issuecomment-5301760789",
-      "comment_created_at": "2026-08-15T10:11:50Z",
-      "comment_updated_at": "2026-08-16T08:14:40Z",
-      "comment_body_sha256": "1d2b81658a50291aedfa4c90ccb186ac14033981bc9cd3f4901ad8e1c792681e",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 487,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve an outcome for the menubar OCR fallback (P1)** - validated now requires an outcome whenever --menubar is used, but the existing OCR fallback returns a detection result without one. When no observation-b...; Review finding: [P1] Preserve an outcome for the menubar OCR fallback — Apps/CLI/Sources/PeekabooCLI/Commands/AI/SeeCommand+DetectionPipeline.swift:49-54 - [P2] Emit process targe... (sha=130ee67440d5815a1689db9ea92c39038607d525)",
-      "expected_head_sha": "130ee67440d5815a1689db9ea92c39038607d525",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T08:15:19.539Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/operation-receipts-129",
-        "head_sha": "130ee67440d5815a1689db9ea92c39038607d525",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119134:5176428798:2026-08-16T08:14:49Z:clawsweeper_auto_repair",
       "comment_id": "5176428798",
@@ -32042,6 +32009,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124575:5307859919:2026-08-16T14:14:14Z:re_review",
+      "comment_id": "5307859919",
+      "comment_version_key": "5307859919:2026-08-16T14:14:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124575#issuecomment-5307859919",
+      "comment_created_at": "2026-08-16T14:13:00Z",
+      "comment_updated_at": "2026-08-16T14:14:14Z",
+      "comment_body_sha256": "9f679c6488bee5fd0d993145905f06d5a7ebbb62ddef28b68d2bfbbc5c55488d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124575,
+      "author": "Leon-SK668",
+      "author_id": 17695126,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T14:15:01.149Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-cli-snapshot-timeout",
+        "head_sha": "267a52a917eaf9077061d4f04957a86a37f19456",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
