@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Mattermost acknowledgement omission for accepted inbound posts. Use the generic inbound turn’s `afterRecord` hook so failed recording never reacts; reuse the public shared acknowledgement scope/handle contract and the existing Mattermost reaction transport or monitor client. Convert transport failures into failed acknowledgement sends, preserve access and mention gating, and remove an acknowledgement only after a visible reply when configured. Do not add configuration, status-reaction behavior, core-internal imports, compatibility fallbacks, or unrelated prior-PR changes. Add one owner-boundary regression that fails on current main and covers eligible accepted posts, suppression before acceptance, and visible-reply cleanup. Consult https://github.com/openclaw/openclaw/pull/80426 and https://github.com/openclaw/openclaw/pull/119124 only for historical context. Put release-note context in the PR body, not CHANGELOG.md.
+Repair the Mattermost acknowledgement-reaction gap for accepted inbound posts. Keep policy in the shared acknowledgement resolver/gate and transport inside the Mattermost plugin; do not add Mattermost-specific configuration, core behavior, lifecycle status reactions, or the retired removeAckAfterReply behavior. Trigger only after durable record success, preserve normal access and mention suppression, and keep manual message-action reactions unchanged. Verify the Mattermost API’s required emoji encoding for the shared default/configured value with redacted live transport proof, then add a regression test that fails before the repair for post-record ordering and rejected/record-failure suppression. Do not edit CHANGELOG.md; add user-visible release context in the PR body.
 
 Likely files:
 
@@ -75,15 +75,14 @@ Likely files:
 - extensions/mattermost/src/mattermost/monitor-turn.ts
 - extensions/mattermost/src/mattermost/reactions.ts
 - extensions/mattermost/src/mattermost/monitor.inbound-system-event.test.ts
+- extensions/mattermost/src/mattermost/reactions.test.ts
 - docs/channels/mattermost.md
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/mattermost/src/mattermost/monitor.inbound-system-event.test.ts
-- node scripts/run-vitest.mjs extensions/mattermost/src/mattermost/reactions.test.ts
-- node scripts/run-vitest.mjs src/channels/turn/run-channel-turn.finalize.test.ts
-- node scripts/run-oxlint.mjs extensions/mattermost/src/mattermost/monitor-posts.ts extensions/mattermost/src/mattermost/monitor-turn.ts extensions/mattermost/src/mattermost/reactions.ts
-- Redacted live Mattermost proof showing an eligible post receives the configured acknowledgement and optional cleanup follows a visible reply.
+- node scripts/run-vitest.mjs extensions/mattermost/src/mattermost/monitor.inbound-system-event.test.ts extensions/mattermost/src/mattermost/reactions.test.ts
+- node scripts/check-changed.mjs -- extensions/mattermost/src/mattermost/monitor-posts.ts extensions/mattermost/src/mattermost/monitor-turn.ts extensions/mattermost/src/mattermost/reactions.ts
+- Redacted live Mattermost workspace trace showing configured/default acknowledgement creation after an accepted post and no reaction after record failure.
 
 ## Operator Prompt
 
