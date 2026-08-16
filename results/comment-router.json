@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T15:23:52.347Z",
+  "updated_at": "2026-08-16T15:23:55.891Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123189:5306703705:2026-08-16T09:15:42Z:re_review",
-      "comment_id": "5306703705",
-      "comment_version_key": "5306703705:2026-08-16T09:15:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123189#issuecomment-5306703705",
-      "comment_created_at": "2026-08-16T09:15:42Z",
-      "comment_updated_at": "2026-08-16T09:15:42Z",
-      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123189,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T09:16:24.293Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-run-recovery-121756",
-        "head_sha": "55957b82e52bd0ff94d1f01d764f2e610b678f73",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124214:5306685958:2026-08-16T09:10:54Z:re_review",
       "comment_id": "5306685958",
@@ -32487,6 +32440,39 @@
         "kind": "pull_request",
         "branch": "fix/cli-aggregate-turn-duplication-123792",
         "head_sha": "91f8dcb65bd8fafa5e95c44c148fd574d4213913",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124661:5308164339:2026-08-16T15:23:17Z:clawsweeper_needs_human",
+      "comment_id": "5308164339",
+      "comment_version_key": "5308164339:2026-08-16T15:23:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124661#issuecomment-5308164339",
+      "comment_created_at": "2026-08-16T15:23:17Z",
+      "comment_updated_at": "2026-08-16T15:23:17Z",
+      "comment_body_sha256": "d6f0a04e91e8fab552282abe539298d05be80d5db54ec30ba3e917aa80a49f5f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124661,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Production grows by 14 lines for a bug fix; the live-child guard is appropriately localized, but exact-head checks should validate it after any branch refresh. (sha=cc2de5eda1f2349bad09b20262eb6d05605ddab0)",
+      "expected_head_sha": "cc2de5eda1f2349bad09b20262eb6d05605ddab0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T15:23:55.891Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cli-unknown-subcommand",
+        "head_sha": "cc2de5eda1f2349bad09b20262eb6d05605ddab0",
         "cluster_id": null,
         "job_path": null
       }
