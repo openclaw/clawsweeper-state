@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-16T04:01:59.157Z",
+  "updated_at": "2026-08-16T04:01:14.379Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124228:5303712624:2026-08-15T22:34:18Z:clawsweeper_needs_human",
+      "comment_id": "5303712624",
+      "comment_version_key": "5303712624:2026-08-15T22:34:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124228#issuecomment-5303712624",
+      "comment_created_at": "2026-08-15T18:48:49Z",
+      "comment_updated_at": "2026-08-15T22:34:18Z",
+      "comment_body_sha256": "12925ed7fcc1229a82efd26b825ca72b93fc0d446c06e70b73eadd4ec76578c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124228,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing non-default-account sessions intentionally gain a visible suffix, so the exact-suffix behavior for labels persisted by earlier sidebar interactions must remain part of the co... (sha=af73ff7054846628ebad5cc16e6adffeff89adb3)",
+      "expected_head_sha": "af73ff7054846628ebad5cc16e6adffeff89adb3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-15T22:35:07.504Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/123112-session-label-account",
+        "head_sha": "af73ff7054846628ebad5cc16e6adffeff89adb3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115670:5118073904:2026-08-15T22:31:42Z:clawsweeper_needs_human",
       "comment_id": "5118073904",
@@ -32677,53 +32710,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120989:5305631702:2026-08-16T04:01:03Z:re_review",
-      "comment_id": "5305631702",
-      "comment_version_key": "5305631702:2026-08-16T04:01:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120989#issuecomment-5305631702",
-      "comment_created_at": "2026-08-16T04:01:03Z",
-      "comment_updated_at": "2026-08-16T04:01:03Z",
-      "comment_body_sha256": "3040a919c9f233757dee2b4a776b94721dbd76b18ce61bd173413415c26d73af",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120989,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T04:01:57.437Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-persistence-receipts",
-        "head_sha": "2c044763d31f89a78237e58e709d93313c08e8bf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
