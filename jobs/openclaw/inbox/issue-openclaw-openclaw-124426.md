@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the managed npm override conversion for https://github.com/openclaw/openclaw/issues/124426. First establish the existing red regression at the owner boundary. Ensure pnpm parent-child selectors are omitted or converted before the first managed npm manifest reaches npm; retain valid npm nested overrides, preserve npm alias compatibility recovery, and preserve range syntax such as `range-target@>1`. Cover both installation and uninstall cleanup through their shared managed-override input. Do not alter startup-convergence policy or add configuration. Add only non-duplicative boundary regressions, do not edit CHANGELOG.md, and put concise release-note context in the PR body.
+Repair the shared managed npm manifest producer so pnpm-only parent-child selectors are omitted before the first npm install or cleanup call. Preserve valid npm-compatible overrides and existing handling for npm aliases; cover install and uninstall cleanup through the common owner. Add a regression that fails before the repair by proving the first generated manifest and command path omit `parent>child`. Do not add config, a runtime fallback, or edit release-owned CHANGELOG.md.
 
 Likely files:
 
@@ -79,8 +79,6 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs src/infra/npm-managed-root.test.ts src/plugins/install.npm-spec.test.ts src/plugins/uninstall.test.ts
-- node scripts/check-changed.mjs --dry-run -- src/infra/npm-managed-root.ts src/infra/npm-managed-root.test.ts src/plugins/install.npm-spec.test.ts src/plugins/uninstall.test.ts
-- git diff --check
 
 ## Operator Prompt
 
