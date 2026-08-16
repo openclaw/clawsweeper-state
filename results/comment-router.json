@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T06:19:38.695Z",
+  "updated_at": "2026-08-16T06:20:16.830Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119700:5304958546:2026-08-16T00:57:28Z:re_review",
-      "comment_id": "5304958546",
-      "comment_version_key": "5304958546:2026-08-16T00:57:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119700#issuecomment-5304958546",
-      "comment_created_at": "2026-08-16T00:34:06Z",
-      "comment_updated_at": "2026-08-16T00:57:28Z",
-      "comment_body_sha256": "e7a36e40b277cb0f7be2876eb7dc96d99d214df1903115ff73477985c7a83aeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119700,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T00:58:08.215Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/crabbox-wrapper-readiness",
-        "head_sha": "88ed6a86ba154502d93528280d72c5f70c3eec65",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124302:5304624681:2026-08-16T00:57:47Z:clawsweeper_auto_repair",
       "comment_id": "5304624681",
@@ -32065,6 +32018,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-prerelease-frozen-fixtures",
         "head_sha": "8a68b48782ecce8c4ff2528b2cc1d986fe592045",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124436:5305930638:2026-08-16T06:18:52Z:clawsweeper_needs_human",
+      "comment_id": "5305930638",
+      "comment_version_key": "5305930638:2026-08-16T06:18:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124436#issuecomment-5305930638",
+      "comment_created_at": "2026-08-16T05:36:18Z",
+      "comment_updated_at": "2026-08-16T06:18:52Z",
+      "comment_body_sha256": "9994a8b9fdb2d2e3828c2232681c06c46e22ab65066b9c53541566c768ea90ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124436,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 33 net lines for timer ownership and shared classification; the added state appears necessary because current main has no owner for provisional-error cleanup. (sha=8a8baf274a8d8b014ad0d8728c3c65782fff5739)",
+      "expected_head_sha": "8a8baf274a8d8b014ad0d8728c3c65782fff5739",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T06:20:16.830Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "recovery/session-observer-candidate-20260814",
+        "head_sha": "8a8baf274a8d8b014ad0d8728c3c65782fff5739",
         "cluster_id": null,
         "job_path": null
       }
