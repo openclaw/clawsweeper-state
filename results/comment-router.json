@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T21:57:32.721Z",
+  "updated_at": "2026-08-16T21:58:35.787Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123942:5300131176:2026-08-16T16:49:16Z:clawsweeper_needs_human",
-      "comment_id": "5300131176",
-      "comment_version_key": "5300131176:2026-08-16T16:49:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123942#issuecomment-5300131176",
-      "comment_created_at": "2026-08-15T02:41:27Z",
-      "comment_updated_at": "2026-08-16T16:49:16Z",
-      "comment_body_sha256": "37ae4dd2b0c1282f6e58292c67d282eb988c0eaa2a72e14916ce682198c39202",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123942,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The submitted terminal capture exercises production reset persistence and the injector against SQLite, but it explicitly excludes the... (sha=5cc181d445da8444a82ae3f18f49cd6aa3b3b3a2)",
-      "expected_head_sha": "5cc181d445da8444a82ae3f18f49cd6aa3b3b3a2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T16:55:57.603Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "session-transcript-boundary-cutoff",
-        "head_sha": "5cc181d445da8444a82ae3f18f49cd6aa3b3b3a2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124309:5304821486:2026-08-16T16:52:57Z:clawsweeper_auto_repair",
       "comment_id": "5304821486",
@@ -32539,6 +32506,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1363:5309876800:2026-08-16T21:57:55Z:re_review",
+      "comment_id": "5309876800",
+      "comment_version_key": "5309876800:2026-08-16T21:57:55Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1363#issuecomment-5309876800",
+      "comment_created_at": "2026-08-16T21:57:55Z",
+      "comment_updated_at": "2026-08-16T21:57:55Z",
+      "comment_body_sha256": "75679738fe97477210146188a6faf2ef8145f5a0aa997802f68ae966045e14e9",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1363,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T21:58:33.644Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-1242-local-arch",
+        "head_sha": "e0f27d428a28d9ec9caceff5e1d68f9bcb3800a7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
