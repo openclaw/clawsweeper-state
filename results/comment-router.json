@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T17:03:29.122Z",
+  "updated_at": "2026-08-16T17:03:30.610Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124516:5307237370:2026-08-16T11:36:51Z:re_review",
-      "comment_id": "5307237370",
-      "comment_version_key": "5307237370:2026-08-16T11:36:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124516#issuecomment-5307237370",
-      "comment_created_at": "2026-08-16T11:36:51Z",
-      "comment_updated_at": "2026-08-16T11:36:51Z",
-      "comment_body_sha256": "a89696fe21caf5a5dcfd0d9ed81483a1ee65997a094a3e0c450314fe0e955347",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124516,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head now `3f6deb0a`. addressed the p2 finding: `targets-agent-discovery.ts` sorts readdir entries by directory name before filtering (matching main's `mapagentsessiondirs` `tosorted`), restoring deterministic same-agent alias discovery order. added an order-sensitive regression that fails without the sort. pr body evidence refreshed to the current head (scaling matrix + 6 regression tests, all green)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T11:45:32.538Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skip-full-store-discovery-123439",
-        "head_sha": "3f6deb0a6595b59fbd136c2578e50f99e111f1f0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121167:5307266572:2026-08-16T11:44:53Z:re_review",
       "comment_id": "5307266572",
@@ -32855,6 +32808,39 @@
         "kind": "pull_request",
         "branch": "codex/funasr-websocket-subprotocol-20260804",
         "head_sha": "d5197756ec6b3856eef926c101a6f71620068cbf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124697:5308593506:2026-08-16T17:02:45Z:clawsweeper_needs_human",
+      "comment_id": "5308593506",
+      "comment_version_key": "5308593506:2026-08-16T17:02:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124697#issuecomment-5308593506",
+      "comment_created_at": "2026-08-16T17:02:45Z",
+      "comment_updated_at": "2026-08-16T17:02:45Z",
+      "comment_body_sha256": "94a442d43cf2063e3a1890cfcc7fe287c1158b569de9e3b95506f6f6616088fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124697,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 13 net lines, but the added entry-point owner resolution is needed to make the existing auth, session-key, and SQLite ownership contract explicit in one place. (sha=9500f7fec698b773e39e169dd387be2fabae15f9)",
+      "expected_head_sha": "9500f7fec698b773e39e169dd387be2fabae15f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T17:03:30.610Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/agent-exec-default-agent-20260817",
+        "head_sha": "9500f7fec698b773e39e169dd387be2fabae15f9",
         "cluster_id": null,
         "job_path": null
       }
