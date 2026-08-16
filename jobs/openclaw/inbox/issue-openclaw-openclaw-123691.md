@@ -67,20 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the audit worker's externally supervised state-ownership admission for https://github.com/openclaw/openclaw/issues/123691. Preserve the inherited environment when overriding OPENCLAW_STATE_DIR; do not weaken ownership admission, add configuration, alter the ownership-row contract, or add runtime fallbacks. Add a real audit worker-thread regression that claims ownership, proves a supervisor-marked worker persists an audit event without errors, and proves an otherwise identical unmarked worker remains rejected. Review production Gateway worker and sidecar database environment overrides for the same replacement pattern, retaining only fixes supported by the shared invariant. Include release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the Gateway audit worker’s externally supervised state-database admission. Preserve the worker’s inherited ownership environment while setting the supplied state directory, and confirm no other production worker rebuilds a reduced database environment. Add one worker-boundary regression: a marked worker persists an event, while an unmarked writer remains rejected. Do not add configuration or weaken ownership checks. Put release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
 - src/audit/audit-event-writer.worker.ts
 - src/audit/audit-event-writer.test.ts
-- src/state/openclaw-state-ownership.test.ts
-- test/gateway-external-state-ownership.e2e.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/audit/audit-event-writer.test.ts
-- node scripts/run-vitest.mjs src/state/openclaw-state-ownership.test.ts
-- node scripts/run-vitest.mjs test/gateway-external-state-ownership.e2e.test.ts
+- node scripts/run-vitest.mjs src/audit/ src/state/openclaw-state-ownership.test.ts
 
 ## Operator Prompt
 

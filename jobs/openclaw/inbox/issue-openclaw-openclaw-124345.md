@@ -67,21 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the setup-inference probe so a healthy configured local reasoning model is not rejected solely because the default `Reply with the single word OK` probe has an explicit 32-token output budget. Keep the repair at `src/system-agent/setup-inference-probe.ts` / `src/system-agent/setup-inference-persist.ts`; do not add a config option, provider-specific exception, downstream retry, or fallback path. First establish the failing boundary with a real Ollama reasoning-model probe when available, then choose the smallest bounded shared budget or resolved-model-bound behavior that admits the visible reply. Update regression coverage at the setup-probe owner boundary rather than only restating the constant, retain custom-prompt behavior, and ensure the bundled Ollama `maxTokens`→`num_predict` mapping remains intact. Do not edit CHANGELOG.md; put release-note context in the PR body.
+Repair the source-proven setup-probe false failure for reasoning models. First establish the failing 32-token behavior with a focused owner-boundary regression or an isolated local reasoning-model run; then raise the bounded built-in probe allowance centrally in src/system-agent/setup-inference-probe.ts, preserving cap-free behavior for non-OpenClaw harnesses and custom completion prompts. Update focused coverage in src/system-agent/setup-inference.test.ts, keep the change provider-agnostic, do not add configuration, fallbacks, or CHANGELOG.md edits, and put user-visible release-note context in the PR body.
 
 Likely files:
 
 - src/system-agent/setup-inference-probe.ts
-- src/system-agent/setup-inference-persist.ts
 - src/system-agent/setup-inference.test.ts
-- extensions/ollama/src/stream-runtime.test.ts
 
 Validation:
 
-- Normal checkout: pnpm test src/system-agent/setup-inference.test.ts
-- Worktree: node scripts/run-vitest.mjs src/system-agent/setup-inference.test.ts
-- Normal checkout: pnpm test extensions/ollama/src/stream-runtime.test.ts
-- Run the supplied isolated Ollama probe before and after the change with a reasoning model, redacting endpoint details.
+- node scripts/run-vitest.mjs src/system-agent/setup-inference.test.ts
+- node scripts/check-changed.mjs -- src/system-agent/setup-inference-probe.ts src/system-agent/setup-inference.test.ts
 
 ## Operator Prompt
 
