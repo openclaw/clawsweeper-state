@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T18:53:27.601Z",
+  "updated_at": "2026-08-16T18:53:40.074Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121309:5307872181:2026-08-16T14:15:58Z:re_review",
-      "comment_id": "5307872181",
-      "comment_version_key": "5307872181:2026-08-16T14:15:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121309#issuecomment-5307872181",
-      "comment_created_at": "2026-08-16T14:15:58Z",
-      "comment_updated_at": "2026-08-16T14:15:58Z",
-      "comment_body_sha256": "ea8bf1902e142fb49063fee64810f914a23765f701b1f10e168ef6196f0db992",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121309,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T14:16:44.433Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "prep/delete-cleanup-completion-receipts",
-        "head_sha": "8a5500e92cfc547f950d7c0c4b19a1f4378647d1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124627:5307873006:2026-08-16T14:16:11Z:clawsweeper_needs_human",
       "comment_id": "5307873006",
@@ -32280,6 +32233,39 @@
       "status": "skipped",
       "processed_at": "2026-08-16T18:53:27.601Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:498:5309067228:2026-08-16T18:52:59Z:clawsweeper_needs_human",
+      "comment_id": "5309067228",
+      "comment_version_key": "5309067228:2026-08-16T18:52:59Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/498#issuecomment-5309067228",
+      "comment_created_at": "2026-08-16T18:43:26Z",
+      "comment_updated_at": "2026-08-16T18:52:59Z",
+      "comment_body_sha256": "65d46e44e6c04be83d1fa484c38ee0839f2a84a3faa92332a3fc0da4d4a112f2",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 498,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The gitlink updates change shared cancellation and timeout behavior, so the required exact-head build-and-test check should complete successfully before merge. (sha=183b296787fb3f23768748f4449c32477afba171)",
+      "expected_head_sha": "183b296787fb3f23768748f4449c32477afba171",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T18:53:40.074Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/dependency-race-followup",
+        "head_sha": "183b296787fb3f23768748f4449c32477afba171",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
