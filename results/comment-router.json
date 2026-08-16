@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T05:11:29.373Z",
+  "updated_at": "2026-08-16T05:11:47.389Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124308:5304837868:2026-08-16T00:01:47Z:re_review",
-      "comment_id": "5304837868",
-      "comment_version_key": "5304837868:2026-08-16T00:01:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124308#issuecomment-5304837868",
-      "comment_created_at": "2026-08-16T00:01:47Z",
-      "comment_updated_at": "2026-08-16T00:01:47Z",
-      "comment_body_sha256": "b643f8c259adf2d63253ee210df753ed2d7ea367dba9ac91af148070df8ba525",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124308,
-      "author": "aniskhan001",
-      "author_id": 2815766,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T00:07:03.806Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-124296",
-        "head_sha": "29a4369d6c90ea542c57cb15051db4ee2e0a2b21",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124308:5304795640:2026-08-16T00:06:21Z:clawsweeper_needs_human",
       "comment_id": "5304795640",
@@ -32135,6 +32088,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/composer-multiline-restyle",
         "head_sha": "820456f2cccf706f04d5f1fef423845158f93904",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124425:5305851773:2026-08-16T05:11:05Z:clawsweeper_needs_human",
+      "comment_id": "5305851773",
+      "comment_version_key": "5305851773:2026-08-16T05:11:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124425#issuecomment-5305851773",
+      "comment_created_at": "2026-08-16T05:11:05Z",
+      "comment_updated_at": "2026-08-16T05:11:05Z",
+      "comment_body_sha256": "6f02a8ddfcc96a3c122dddeccf692af0829e6eb7b23f405020f1d4757717fd70",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124425,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +10 lines; the added private request-context owner is justified by preserving the public runtime contract while sharing cancellation across all materialized MCP... (sha=122aa72681b493073002cfe030b9723f544fd23c)",
+      "expected_head_sha": "122aa72681b493073002cfe030b9723f544fd23c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T05:11:47.389Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa-refill-mcp-tool-lifecycle-v2",
+        "head_sha": "122aa72681b493073002cfe030b9723f544fd23c",
         "cluster_id": null,
         "job_path": null
       }
