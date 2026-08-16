@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T00:29:14.122Z",
+  "updated_at": "2026-08-16T00:30:12.012Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4883512442:2026-07-04T19:09:34Z:re_review",
-      "comment_id": "4883512442",
-      "comment_version_key": "4883512442:2026-07-04T19:09:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4883512442",
-      "comment_created_at": "2026-07-04T19:09:34Z",
-      "comment_updated_at": "2026-07-04T19:09:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T19:31:44.418Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4896498779:2026-07-06T18:49:15Z:re_review",
       "comment_id": "4896498779",
@@ -32688,6 +32661,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123912:5299764532:2026-08-16T00:29:27Z:clawsweeper_needs_human",
+      "comment_id": "5299764532",
+      "comment_version_key": "5299764532:2026-08-16T00:29:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123912#issuecomment-5299764532",
+      "comment_created_at": "2026-08-15T01:17:25Z",
+      "comment_updated_at": "2026-08-16T00:29:27Z",
+      "comment_body_sha256": "1b6d2116b242c418dcfcdadcdb35abece934f11dc9f27b12ce2a8afac58d8f87",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123912,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, and the supplied check rollup still lists failed check-prod-types and check-test-types; the required gates need to pass on the refreshed exact head... (sha=f8ab45890a22091f08f67e85aecb62bf30abc688)",
+      "expected_head_sha": "f8ab45890a22091f08f67e85aecb62bf30abc688",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T00:30:12.012Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/control-ui-link-browser-setting",
+        "head_sha": "f8ab45890a22091f08f67e85aecb62bf30abc688",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
