@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the xAI legacy-fast image-understanding path for this issue. First establish a redacted failing xAI Responses image request when credentials are available. Trace every legacy fast route, including configured `agents.defaults.imageModel` primary/fallback refs and xAI fast-mode stream rewriting; migrate retired persisted refs through the canonical doctor model-ref path and route runtime fast output only to a currently supported xAI vision model. Preserve deliberate current-model behavior, avoid Telegram-specific workarounds and new configuration, add regression coverage that fails before the fix, update affected xAI compatibility docs, and put release-note context in the PR body without editing CHANGELOG.md.
+Reproduce the xAI image-understanding failure before editing using the smallest configured `agents.defaults.imageModel` or legacy-fast-mode path and capture a failing regression. Inspect the current xAI Responses model contract directly with a sanctioned credentialed image request. Make the xAI plugin's legacy fast compatibility path and persisted-model Doctor migration converge on one current image-capable model; do not add a Telegram-specific guard, a new option, or a runtime fallback reader. Cover direct retired fast references, fast-mode-generated references, image-model primary and fallback surfaces, model-map collision behavior, and unaffected current models. Update the public xAI documentation for the supported path, record release-note context in the PR body, and do not edit `CHANGELOG.md`.
 
 Likely files:
 
@@ -75,13 +75,15 @@ Likely files:
 - extensions/xai/stream.test.ts
 - src/commands/doctor/shared/legacy-config-migrations.runtime.models.refs.ts
 - src/commands/doctor/shared/legacy-config-migrate.test.ts
+- extensions/xai/doctor-contract-api.ts
 - docs/providers/xai.md
 
 Validation:
 
-- pnpm test src/commands/doctor/shared/legacy-config-migrate.test.ts
-- pnpm test extensions/xai/stream.test.ts
-- Run a redacted live xAI Responses image request through the repaired configured-image path when an approved xAI credential is available.
+- Focused xAI stream regression test covering legacy fast-mode resolution.
+- Focused Doctor migration regression test for direct xAI fast image-model primary, fallback, and model-map references.
+- Mock gateway Telegram JPEG media-understanding path using the repaired configured model.
+- Redacted authenticated xAI Responses image request showing the replacement model succeeds after the fix.
 
 ## Operator Prompt
 

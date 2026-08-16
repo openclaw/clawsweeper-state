@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/124424 at the Control UI request boundary. When the selected route lacks a durable session row/sessionId, create without parent lifecycle parameters; preserve durable-parent linkage, parallel-child behavior, and alias handling. Keep `src/gateway/session-create-service.ts` rejecting arbitrary unknown parents. Review https://github.com/openclaw/openclaw/pull/124451 only as context; do not revive its broad Gateway fallback. Add a regression for an empty session list with a selected bootstrap route that omits `parentSessionKey`, plus coverage that a persisted parent is still sent. Do not edit CHANGELOG.md; include user-visible release-note context in the PR body or commit message.
+Repair https://github.com/openclaw/openclaw/issues/124424 as a focused Control UI fix. Preserve `sessions.create` rejection of unknown parents in `src/gateway/session-create-service.ts` and its existing Gateway test. At the Control UI session-mutation owner, only pass `parentSessionKey` when the selected route resolves to an appropriate published session row; otherwise create a root dashboard session. Preserve valid-parent parallel-child behavior, agent selection, command hooks, and access checks. Add a regression test for a selected bootstrap route absent from the roster that asserts the outgoing request omits `parentSessionKey`, plus coverage that a listed parent remains linked. Confirm the focused test fails before the change, then run it after; capture isolated Control UI evidence before merge when feasible. Do not add config, protocol, or changelog changes.
 
 Likely files:
 
-- ui/src/lib/sessions/create.ts
 - ui/src/lib/sessions/session-mutations.ts
-- ui/src/lib/sessions/create.test.ts
 - ui/src/lib/sessions/index.test.ts
+- ui/src/lib/sessions/create.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs ui/src/lib/sessions/create.test.ts ui/src/lib/sessions/index.test.ts
-- Run the focused Control UI mock-gateway browser scenario with an empty sessions.list response and verify `sessions.create` omits parentSessionKey and selects the new session.
+- node scripts/run-vitest.mjs ui/src/lib/sessions/index.test.ts
+- node scripts/run-vitest.mjs ui/src/lib/sessions/create.test.ts
 
 ## Operator Prompt
 
