@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T03:22:19.614Z",
+  "updated_at": "2026-08-16T03:22:23.514Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124222:5304395969:2026-08-15T21:50:34Z:re_review",
-      "comment_id": "5304395969",
-      "comment_version_key": "5304395969:2026-08-15T21:50:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124222#issuecomment-5304395969",
-      "comment_created_at": "2026-08-15T21:50:34Z",
-      "comment_updated_at": "2026-08-15T21:50:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124222,
-      "author": "a-yeyang",
-      "author_id": 88581400,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-15T22:13:51.811Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-rich-callback-edit",
-        "head_sha": "f082965e64c2fd4ec8948184080958e1fc17d747",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124214:5304417417:2026-08-15T21:56:34Z:re_review",
       "comment_id": "5304417417",
@@ -32734,6 +32687,39 @@
         "kind": "pull_request",
         "branch": "fix/ids-stream-semantic-bound",
         "head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124373:5305498498:2026-08-16T03:20:05Z:clawsweeper_needs_human",
+      "comment_id": "5305498498",
+      "comment_version_key": "5305498498:2026-08-16T03:20:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124373#issuecomment-5305498498",
+      "comment_created_at": "2026-08-16T03:20:05Z",
+      "comment_updated_at": "2026-08-16T03:20:05Z",
+      "comment_body_sha256": "8b277c88ce8f05b4907abdb709da635423f51fff9a9cb318804d3097d7e49e9a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124373,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 24 net lines; the added state is justified by retaining file size only until deterministic producer-side selection and by surfacing the owner-boundary truncat... (sha=6edd45443365fa6f0f879cb05a86eab1cffd3236)",
+      "expected_head_sha": "6edd45443365fa6f0f879cb05a86eab1cffd3236",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T03:22:23.514Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workspace-memo-cap",
+        "head_sha": "6edd45443365fa6f0f879cb05a86eab1cffd3236",
         "cluster_id": null,
         "job_path": null
       }
