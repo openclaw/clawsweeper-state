@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T19:25:20.712Z",
+  "updated_at": "2026-08-16T19:27:56.413Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124552:5307392790:2026-08-16T15:05:02Z:clawsweeper_needs_human",
-      "comment_id": "5307392790",
-      "comment_version_key": "5307392790:2026-08-16T15:05:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124552#issuecomment-5307392790",
-      "comment_created_at": "2026-08-16T12:17:50Z",
-      "comment_updated_at": "2026-08-16T15:05:02Z",
-      "comment_body_sha256": "5c54a9551bba776a4fb5f52d6c0e0022a039428ef8e50112f42a720b3cb077ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124552,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and touches a broad UI surface; verify the actual three-way merge preserves newer UI behavior before landing. (sha=a39a19ab8b2fc0f6abefab329daa9b93ab831901)",
-      "expected_head_sha": "a39a19ab8b2fc0f6abefab329daa9b93ab831901",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T15:05:47.671Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/ui-error-format-canonical",
-        "head_sha": "a39a19ab8b2fc0f6abefab329daa9b93ab831901",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124137:5301648843:2026-08-16T15:05:30Z:clawsweeper_auto_repair",
       "comment_id": "5301648843",
@@ -31824,6 +31791,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124755:5309255627:2026-08-16T19:27:13Z:clawsweeper_needs_human",
+      "comment_id": "5309255627",
+      "comment_version_key": "5309255627:2026-08-16T19:27:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124755#issuecomment-5309255627",
+      "comment_created_at": "2026-08-16T19:27:13Z",
+      "comment_updated_at": "2026-08-16T19:27:13Z",
+      "comment_body_sha256": "35d88f9a8284b3608108e4b0f6de65f229572c02fb50e3f81cf5f7076bba2571",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124755,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing prompts or automations that emit LINE’s retired [[...]] markers will send those strings as ordinary text after upgrade; the PR also narrows the previously documented raw chan... (sha=c120764e8245b4ce480259f6727485ebb19e3783)",
+      "expected_head_sha": "c120764e8245b4ce480259f6727485ebb19e3783",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T19:27:56.413Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/line-marker-dsl-removal",
+        "head_sha": "c120764e8245b4ce480259f6727485ebb19e3783",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
