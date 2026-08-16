@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T11:08:36.455Z",
+  "updated_at": "2026-08-16T11:10:32.147Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124434:5305888418:2026-08-16T05:22:40Z:clawsweeper_needs_human",
-      "comment_id": "5305888418",
-      "comment_version_key": "5305888418:2026-08-16T05:22:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124434#issuecomment-5305888418",
-      "comment_created_at": "2026-08-16T05:22:40Z",
-      "comment_updated_at": "2026-08-16T05:22:40Z",
-      "comment_body_sha256": "324996ca6fbc11b2873c9c99adb74b4b7c0808993372f4e717ff43bcdb3bac1f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124434,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed behavior is covered by a mocked provider test, but the PR contains no redacted after-fix trace from a real affected transcription p... (sha=93ae205cf17adb40d07c100d52bd2d4ff828085b)",
-      "expected_head_sha": "93ae205cf17adb40d07c100d52bd2d4ff828085b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T05:23:28.637Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/123305-audio-autodetect-prompt-leak",
-        "head_sha": "93ae205cf17adb40d07c100d52bd2d4ff828085b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2965:5305553642:2026-08-16T05:20:46Z:clawsweeper_auto_repair",
       "comment_id": "5305553642",
@@ -31488,6 +31455,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124516:5307138352:2026-08-16T11:09:45Z:re_review",
+      "comment_id": "5307138352",
+      "comment_version_key": "5307138352:2026-08-16T11:09:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124516#issuecomment-5307138352",
+      "comment_created_at": "2026-08-16T11:09:45Z",
+      "comment_updated_at": "2026-08-16T11:09:45Z",
+      "comment_body_sha256": "6967de6f6f27c0d76be7d6102b8460130e814ec4a98227354a54d60e4ef48c09",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124516,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — pr body evidence now carries current-head `2e0b96f` proof (resolver scaling matrix + 4 regression tests, all green). the earlier-force-push-commit references are kept under a 'prior evidence' header for history",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T11:10:30.102Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skip-full-store-discovery-123439",
+        "head_sha": "2e0b96f92ccd4b20eef75c4396d07412cc4ef2bb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
