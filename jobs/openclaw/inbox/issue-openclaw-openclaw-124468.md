@@ -67,18 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the duplicate-plugin config-warning defect in https://github.com/openclaw/openclaw/issues/124468. At the config-validation boundary, preserve the registry diagnostic source for the overridden candidate so a warning names both the discarded source and the active/winning source already present in the diagnostic message. Keep duplicate precedence, same-package suppression, and persisted snapshot invalidation unchanged unless a current failing reproduction proves another defect. Add a focused regression test using the existing plugin fixtures that fails before the change and asserts both paths are visible through config validation. Do not edit CHANGELOG.md; record user-visible release context in the PR body. Related refs: none.
+Repair the duplicate-plugin diagnostic at its manifest-registry owner so it names both the ignored source and the selected source. Preserve duplicate precedence, package suppression, and current persisted-registry staleness recovery; do not add config options or alter install/removal policy. Add a regression for two distinct same-ID global candidates and ensure the config-warning boundary preserves the actionable message. Validate with focused tests and record release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
-- src/config/validation.ts
-- src/config/config.plugin-validation.test.ts
+- src/plugins/manifest-registry.ts
 - src/plugins/manifest-registry.test.ts
+- src/config/config.plugin-validation.test.ts
 
 Validation:
 
-- pnpm test src/config/config.plugin-validation.test.ts
-- pnpm test src/plugins/manifest-registry.test.ts
+- node scripts/run-vitest.mjs src/plugins/manifest-registry.test.ts src/config/config.plugin-validation.test.ts
 
 ## Operator Prompt
 
