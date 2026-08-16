@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T04:08:47.922Z",
+  "updated_at": "2026-08-16T04:09:14.978Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115670:5288652562:2026-08-14T02:17:19Z:re_review",
-      "comment_id": "5288652562",
-      "comment_version_key": "5288652562:2026-08-14T02:17:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115670#issuecomment-5288652562",
-      "comment_created_at": "2026-08-14T02:17:19Z",
-      "comment_updated_at": "2026-08-14T02:17:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115670,
-      "author": "sasan1200",
-      "author_id": 28139727,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T22:35:21.095Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117220:5149895861:2026-08-15T22:33:05Z:clawsweeper_auto_repair",
       "comment_id": "5149895861",
@@ -32756,6 +32729,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1352:5305581641:2026-08-16T04:08:34Z:clawsweeper_needs_human",
+      "comment_id": "5305581641",
+      "comment_version_key": "5305581641:2026-08-16T04:08:34Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1352#issuecomment-5305581641",
+      "comment_created_at": "2026-08-16T03:44:33Z",
+      "comment_updated_at": "2026-08-16T04:08:34Z",
+      "comment_body_sha256": "346e79ae05bf03fcb398d11473e1cbff3e73c9fc9a5dd29c336b6d65c355161f",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1352,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The redacted terminal trace shows a successful AWS smoke, but it identifies predecessor commit f85159d rather than the PR head; please... (sha=680fb7903014d305a441a7ab6a9436009c5a28cf)",
+      "expected_head_sha": "680fb7903014d305a441a7ab6a9436009c5a28cf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T04:09:14.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/release-0.43.0",
+        "head_sha": "680fb7903014d305a441a7ab6a9436009c5a28cf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
