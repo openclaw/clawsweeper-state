@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T19:07:48.725Z",
+  "updated_at": "2026-08-16T19:08:09.653Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124552:5307907838:2026-08-16T14:24:36Z:re_review",
-      "comment_id": "5307907838",
-      "comment_version_key": "5307907838:2026-08-16T14:24:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124552#issuecomment-5307907838",
-      "comment_created_at": "2026-08-16T14:24:36Z",
-      "comment_updated_at": "2026-08-16T14:24:36Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124552,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T14:25:22.011Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/ui-error-format-canonical",
-        "head_sha": "2dc84a8a21c3e8a6f062550c1103445743a923bf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110561:5010557535:2026-08-16T14:17:03Z:clawsweeper_needs_human",
       "comment_id": "5010557535",
@@ -32413,6 +32366,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124762:5309171528:2026-08-16T19:07:19Z:clawsweeper_needs_human",
+      "comment_id": "5309171528",
+      "comment_version_key": "5309171528:2026-08-16T19:07:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124762#issuecomment-5309171528",
+      "comment_created_at": "2026-08-16T19:07:19Z",
+      "comment_updated_at": "2026-08-16T19:07:19Z",
+      "comment_body_sha256": "47234d5b864a0930e86b8b14231f89857b498a9f615eca773ca936edca9dbf25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124762,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing unattended QA invocations that omit --fast will intentionally begin using fast mode for OpenAI models, changing their execution profile from the prior false default. (sha=ab22ac8afeff5c9bb0002d9c28e675ac0bd418d0)",
+      "expected_head_sha": "ab22ac8afeff5c9bb0002d9c28e675ac0bd418d0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T19:08:09.653Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-qa-fast-mode",
+        "head_sha": "ab22ac8afeff5c9bb0002d9c28e675ac0bd418d0",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
