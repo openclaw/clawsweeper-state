@@ -67,20 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/124424 at the Control UI session-mutation boundary. When New session is invoked from a selected key that has no published session row, send a root `sessions.create` request without `parentSessionKey`, `emitCommandHooks`, or `succeedsParent`; retain the current linked-child request for a real published parent. Do not relax `src/gateway/session-create-service.ts` unknown-parent validation or adopt the broader closed attempt https://github.com/openclaw/openclaw/pull/124451. Add a regression that proves an empty/published-missing bootstrap selection sends only the root creation parameters and that a real parent still links. Run focused UI tests and, if feasible, record the clean isolated dev-gateway Control UI flow. Do not edit CHANGELOG.md; place concise user-visible release-note context in the PR body.
+Repair https://github.com/openclaw/openclaw/issues/124424 as a focused Control UI fix. Preserve `sessions.create` rejection of unknown parents in `src/gateway/session-create-service.ts` and its existing Gateway test. At the Control UI session-mutation owner, only pass `parentSessionKey` when the selected route resolves to an appropriate published session row; otherwise create a root dashboard session. Preserve valid-parent parallel-child behavior, agent selection, command hooks, and access checks. Add a regression test for a selected bootstrap route absent from the roster that asserts the outgoing request omits `parentSessionKey`, plus coverage that a listed parent remains linked. Confirm the focused test fails before the change, then run it after; capture isolated Control UI evidence before merge when feasible. Do not add config, protocol, or changelog changes.
 
 Likely files:
 
 - ui/src/lib/sessions/session-mutations.ts
-- ui/src/lib/sessions/create.ts
-- ui/src/lib/sessions/create.test.ts
 - ui/src/lib/sessions/index.test.ts
+- ui/src/lib/sessions/create.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs ui/src/lib/sessions/create.test.ts ui/src/lib/sessions/index.test.ts
-- node scripts/run-vitest.mjs src/gateway/server.sessions.create.test.ts
-- Sanitized Control UI proof against an isolated empty-state dev gateway: New session creates and selects a new dashboard session.
+- node scripts/run-vitest.mjs ui/src/lib/sessions/index.test.ts
+- node scripts/run-vitest.mjs ui/src/lib/sessions/create.test.ts
 
 ## Operator Prompt
 
