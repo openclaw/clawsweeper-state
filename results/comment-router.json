@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T04:35:35.170Z",
+  "updated_at": "2026-08-16T04:37:59.202Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120248:5219166338:2026-08-15T22:51:49Z:clawsweeper_auto_repair",
-      "comment_id": "5219166338",
-      "comment_version_key": "5219166338:2026-08-15T22:51:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120248#issuecomment-5219166338",
-      "comment_created_at": "2026-08-07T15:50:20Z",
-      "comment_updated_at": "2026-08-15T22:51:49Z",
-      "comment_body_sha256": "5b1b02f67be8a5168e1c6d69a57261bbdb57784e9e6a510eeea291d5aab4b7cb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120248,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=73837e104e7530efd59e0094ad5990cc5ba5bc42)",
-      "expected_head_sha": "73837e104e7530efd59e0094ad5990cc5ba5bc42",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T23:19:42.255Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bedrock-streaming-toolcall-args-perf",
-        "head_sha": "73837e104e7530efd59e0094ad5990cc5ba5bc42",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120550:5225566532:2026-08-08T10:43:58Z:clawsweeper_needs_human",
       "comment_id": "5225566532",
@@ -32485,6 +32452,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123741:5305745797:2026-08-16T04:37:11Z:re_review",
+      "comment_id": "5305745797",
+      "comment_version_key": "5305745797:2026-08-16T04:37:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123741#issuecomment-5305745797",
+      "comment_created_at": "2026-08-16T04:37:11Z",
+      "comment_updated_at": "2026-08-16T04:37:11Z",
+      "comment_body_sha256": "8e3dd619fa7160c4257d7a865bacc614ff34da109ef7ed512be9fab708bd74e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123741,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T04:37:57.241Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa25-web-fetch-http-status",
+        "head_sha": "10d6545feda09d10651759d3a136d6447a65684d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
