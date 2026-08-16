@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the source-proven observability bug in https://github.com/openclaw/openclaw/issues/62968. Preserve the current direct-first completion delivery and steering fallback behavior. When a direct-primary phase fails with an error and a later fallback succeeds, emit the existing sanitized warn-style completion-delivery log once with the child run identifier and direct error; do not log intentional non-delivery or ambiguous outcomes as recovered failures. Add a regression that fails on current main for direct failure followed by successful steering, and retain coverage for final direct failure. Keep the release-owned CHANGELOG.md untouched; capture user-visible release context in the PR body if needed.
+Repair https://github.com/openclaw/openclaw/issues/62968 in the subagent completion announce flow. Preserve direct-first then steer-fallback delivery behavior, but emit the existing direct-failure warning when the direct-primary phase failed and steering subsequently succeeds. Keep the generic dispatcher free of runtime logging, do not add configuration or retry behavior, and do not edit CHANGELOG.md. First establish a failing regression that injects a direct error plus successful steering fallback; verify exactly one warning contains the run identifier and direct error, while successful direct delivery and intentional ANNOUNCE_SKIP fallback remain quiet. Include concise release-note context in the PR body if needed.
 
 Likely files:
 
@@ -77,9 +77,8 @@ Likely files:
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/subagents/announce/subagent-announce-dispatch.test.ts src/agents/subagents/announce/subagent-announce.test.ts
-- node scripts/run-vitest.mjs src/agents/subagents/announce/subagent-announce-delivery.test.ts
-- git diff --check
+- pnpm test src/agents/subagents/announce/subagent-announce.test.ts src/agents/subagents/announce/subagent-announce-dispatch.test.ts
+- pnpm format:check src/agents/subagents/announce/subagent-announce.ts src/agents/subagents/announce/subagent-announce.test.ts
 
 ## Operator Prompt
 
