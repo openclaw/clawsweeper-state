@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T19:33:53.121Z",
+  "updated_at": "2026-08-16T19:33:58.242Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1358:5308102223:2026-08-16T15:10:14Z:re_review",
-      "comment_id": "5308102223",
-      "comment_version_key": "5308102223:2026-08-16T15:10:14Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1358#issuecomment-5308102223",
-      "comment_created_at": "2026-08-16T15:10:14Z",
-      "comment_updated_at": "2026-08-16T15:10:14Z",
-      "comment_body_sha256": "1b7594c1b6435842d89d9cf5f3ed80b1c7ed9f2a4bcc83c0219e4b7dacaf7076",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1358,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T15:10:51.907Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-homebrew-version-audit",
-        "head_sha": "1270b51aee14566b75dfc90156f18ea424f99afe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabbox:1359:5308103638:2026-08-16T15:10:33Z:re_review",
       "comment_id": "5308103638",
@@ -31827,6 +31780,39 @@
         "kind": "pull_request",
         "branch": "codex/monitor-epoch-state-machine",
         "head_sha": "698beb6ae42d523918d0113e3fef5feacf36f5ad",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124776:5309281301:2026-08-16T19:33:12Z:clawsweeper_auto_repair",
+      "comment_id": "5309281301",
+      "comment_version_key": "5309281301:2026-08-16T19:33:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124776#issuecomment-5309281301",
+      "comment_created_at": "2026-08-16T19:33:12Z",
+      "comment_updated_at": "2026-08-16T19:33:12Z",
+      "comment_body_sha256": "0e41c978fab9b1959141bad2bfe1a1337e975ac40256bc7e07b15044eaee70e0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124776,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c2e32d0b2cc7876ea1cd8b0077d1f50f1b796cfb)",
+      "expected_head_sha": "c2e32d0b2cc7876ea1cd8b0077d1f50f1b796cfb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T19:33:58.242Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/123691-audit-worker-env-inheritance",
+        "head_sha": "c2e32d0b2cc7876ea1cd8b0077d1f50f1b796cfb",
         "cluster_id": null,
         "job_path": null
       }
