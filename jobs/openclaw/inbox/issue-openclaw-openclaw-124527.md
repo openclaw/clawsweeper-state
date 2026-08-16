@@ -67,21 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the xAI legacy-fast image-understanding path for this issue. First establish a redacted failing xAI Responses image request when credentials are available. Trace every legacy fast route, including configured `agents.defaults.imageModel` primary/fallback refs and xAI fast-mode stream rewriting; migrate retired persisted refs through the canonical doctor model-ref path and route runtime fast output only to a currently supported xAI vision model. Preserve deliberate current-model behavior, avoid Telegram-specific workarounds and new configuration, add regression coverage that fails before the fix, update affected xAI compatibility docs, and put release-note context in the PR body without editing CHANGELOG.md.
+Repair the xAI retired-model compatibility bug behind https://github.com/openclaw/openclaw/issues/124527. Trace image-model selection from `agents.defaults.imageModel`, `agents.defaults.mediaModels.image`, and explicit `tools.media.models[]` entries into the xAI Responses request. At the xAI provider/doctor owner boundary, migrate supported persisted fast IDs to the current image-capable target without changing custom xAI IDs or adding Telegram-specific handling. Determine with a redacted real xAI Responses image request whether `extensions/xai/stream.ts` fast mode also needs updating or removal. Add focused regression coverage that fails before the repair for each supported configuration shape, preserve profiles and fallbacks, and add no configuration option or runtime fallback reader. Put release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
-- extensions/xai/stream.ts
-- extensions/xai/stream.test.ts
+- extensions/xai/doctor-contract-api.ts
+- extensions/xai/doctor-contract-api.test.ts
 - src/commands/doctor/shared/legacy-config-migrations.runtime.models.refs.ts
 - src/commands/doctor/shared/legacy-config-migrate.test.ts
-- docs/providers/xai.md
+- extensions/xai/stream.ts
+- extensions/xai/stream.test.ts
 
 Validation:
 
-- pnpm test src/commands/doctor/shared/legacy-config-migrate.test.ts
-- pnpm test extensions/xai/stream.test.ts
-- Run a redacted live xAI Responses image request through the repaired configured-image path when an approved xAI credential is available.
+- Focused xAI doctor-contract and legacy model-reference tests covering `xai/grok-4-fast` image-model and explicit media-entry shapes.
+- Focused media-understanding path test proving the repaired ID reaches the provider request.
+- Redacted real xAI OpenAI Responses JPEG request showing an image description after the repair.
 
 ## Operator Prompt
 
