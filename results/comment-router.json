@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T09:26:47.107Z",
+  "updated_at": "2026-08-16T09:28:03.940Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124222:5305608565:2026-08-16T03:53:21Z:re_review",
-      "comment_id": "5305608565",
-      "comment_version_key": "5305608565:2026-08-16T03:53:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124222#issuecomment-5305608565",
-      "comment_created_at": "2026-08-16T03:53:21Z",
-      "comment_updated_at": "2026-08-16T03:53:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124222,
-      "author": "a-yeyang",
-      "author_id": 88581400,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T03:59:51.566Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-rich-callback-edit",
-        "head_sha": "4ebf2f18165e7b5377e845bd8524febd5eeb2e91",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124222:5303633162:2026-08-16T03:59:02Z:clawsweeper_needs_human",
       "comment_id": "5303633162",
@@ -31661,6 +31614,39 @@
         "kind": "pull_request",
         "branch": "codex/123200-buzz-multi-account",
         "head_sha": "54e50f7959c0915bf11a147620c93bdd0cd1aa33",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123053:5277804115:2026-08-16T09:27:12Z:clawsweeper_needs_human",
+      "comment_id": "5277804115",
+      "comment_version_key": "5277804115:2026-08-16T09:27:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123053#issuecomment-5277804115",
+      "comment_created_at": "2026-08-13T08:15:39Z",
+      "comment_updated_at": "2026-08-16T09:27:12Z",
+      "comment_body_sha256": "ebc866f98c92137f0eda6c29ea50361116be64cafb150316ce65f67fb9cd9a4b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123053,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Cap cumulative replayed tool output (P0)** - The new guard limits each output, but every accepted value is then flattened into the single agent prompt. Five 16K-valid outputs exceed the canonical 64K aggregate t...; Review finding: [P0] Cap cumulative replayed tool output — src/gateway/openresponses-prompt.ts:110-121 - [P1] Redact lifecycle errors from Responses streams — src/gateway/openresp... (sha=437f1b6e7faf8ee435d9ee37c26a11bf55540e53)",
+      "expected_head_sha": "437f1b6e7faf8ee435d9ee37c26a11bf55540e53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T09:28:03.940Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/gateway-responses-aug13",
+        "head_sha": "437f1b6e7faf8ee435d9ee37c26a11bf55540e53",
         "cluster_id": null,
         "job_path": null
       }
