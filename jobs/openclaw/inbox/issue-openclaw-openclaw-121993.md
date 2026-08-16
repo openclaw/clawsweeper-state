@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair metadata-backed ACP session model projection in the Gateway. Use persisted SessionAcpMeta plus ACP session-key validation as the only gate: for true ACP runtime sessions expose modelProvider "acpx", model "&lt;agentId>-acp", and lock model selection; ACP-shaped bridge sessions without metadata must preserve their configured model and remain patchable. Reuse or extract the existing CLI invariant in src/commands/sessions.ts; do not infer ACP from key shape alone or hardcode Cursor or Codex. Enforce the same gate in direct sessions.patch { model } handling. Add regressions that fail pre-fix for metadata-backed ACP, ACP-shaped bridge sessions without metadata, and normal sessions. Do not implement harness configOptions selectable models; that is tracked by https://github.com/openclaw/openclaw/issues/122488. No CHANGELOG edit.
+Repair the ACP session model attribution bug in https://github.com/openclaw/openclaw/issues/121993. Use durable ACP metadata plus the ACP session-key gate to project a neutral external ACP identity and a locked model control in Gateway session rows; preserve configured model behavior for ACP-shaped bridge sessions without metadata. Enforce the same rule at the Gateway model-patch boundary so direct patch calls cannot mutate a session shown as externally controlled. Reuse a single canonical gate where practical; do not add config, special-case Cursor/Codex, implement harness config-option model selection, or edit CHANGELOG.md. Add owner-boundary regressions that fail before the repair for confirmed ACP metadata, ACP-shaped bridge sessions without metadata, and blocked direct model patching; preserve the existing Control UI locked-session behavior. Include user-visible release-note context in the PR body.
 
 Likely files:
 
@@ -76,13 +76,13 @@ Likely files:
 - src/gateway/sessions-patch.ts
 - src/gateway/session-utils.test.ts
 - src/gateway/sessions-patch.test.ts
-- src/commands/sessions.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/session-utils.test.ts
 - node scripts/run-vitest.mjs src/gateway/sessions-patch.test.ts
-- Capture redacted Control UI proof from a metadata-backed ACP session showing the ACP identity and locked selector.
+- node scripts/run-vitest.mjs src/commands/sessions.acp-model-display.test.ts
+- node scripts/run-vitest.mjs ui/src/pages/chat/chat-view.test.ts
 
 ## Operator Prompt
 
