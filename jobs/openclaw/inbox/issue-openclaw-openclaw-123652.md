@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the runtime-context carrier ordering in https://github.com/openclaw/openclaw/issues/123652. Keep the current-turn carrier directly after the last active user message through same-turn tool-loop conversions rather than at the absolute tail. Preserve historical-carrier stripping and raw-model behavior; do not add Azure-specific configuration or alter provider cache defaults. Before editing, establish the failing source regression; then add boundary-level coverage proving consecutive full-replay Responses inputs change from P+U+X to P+U+X+Y, not P+U+Y+X. Run focused tests, capture a redacted after-fix provider payload/usage trace when credentials permit, and put release-note context in the PR body without editing CHANGELOG.md.
+Repair the source-proven runtime-context carrier ordering bug in https://github.com/openclaw/openclaw/issues/123652. In the embedded runner, replace absolute-tail relocation with one canonical placement that keeps only the current-turn carrier immediately after the active user while preserving historical-carrier stripping and precheck normalization. Add a boundary regression for P+U+X -> P+U+X+Y across a same-turn tool loop and verify the converted Responses input preserves the prior request as its prefix. Do not add a config option, provider-specific cache filter, or runtime fallback. Use https://github.com/openclaw/openclaw/pull/124107 only as prior-art context; it is closed unmerged. Do not edit CHANGELOG.md; record the user-visible cache-efficiency repair in the PR body.
 
 Likely files:
 
 - src/agents/internal-runtime-context.ts
-- src/agents/internal-runtime-context.test.ts
 - src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
 - src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- src/agents/internal-runtime-context.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/internal-runtime-context.test.ts
 - node scripts/run-vitest.mjs run --config test/vitest/vitest.agents-embedded-agent-run.config.ts src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
-- node scripts/run-vitest.mjs packages/agent-core/src/harness/messages.test.ts
+- node scripts/run-vitest.mjs run --config test/vitest/vitest.unit-fast.config.ts src/agents/internal-runtime-context.test.ts
+- Capture a redacted after-fix Azure/OpenAI Responses tool-loop trace showing stable input ordering and observed cache usage when credentials are safely available.
 
 ## Operator Prompt
 
