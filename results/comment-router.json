@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T13:06:50.300Z",
+  "updated_at": "2026-08-16T13:06:55.072Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124049:5301011146:2026-08-16T07:22:31Z:clawsweeper_needs_human",
-      "comment_id": "5301011146",
-      "comment_version_key": "5301011146:2026-08-16T07:22:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124049#issuecomment-5301011146",
-      "comment_created_at": "2026-08-15T06:47:48Z",
-      "comment_updated_at": "2026-08-16T07:22:31Z",
-      "comment_body_sha256": "ab64c55aee2166491de0dfa40f7e6f943bef717308d05710b1f96e44321694a5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124049,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The intentional 30-minute convergence cutoff can defer an unusually slow but progressing node’s cleanup to a later reconciliation sweep; this protects coordinator availability rather... (sha=55006a179f521a2654983edd7c477eb04b841da6)",
-      "expected_head_sha": "55006a179f521a2654983edd7c477eb04b841da6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T07:27:49.197Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bug-056-retain-coordinator-unbounded-loop",
-        "head_sha": "55006a179f521a2654983edd7c477eb04b841da6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124049:5303357906:2026-08-15T17:18:35Z:re_review",
       "comment_id": "5303357906",
@@ -31508,6 +31475,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124548:5307580607:2026-08-16T13:06:04Z:re_review",
+      "comment_id": "5307580607",
+      "comment_version_key": "5307580607:2026-08-16T13:06:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124548#issuecomment-5307580607",
+      "comment_created_at": "2026-08-16T13:06:04Z",
+      "comment_updated_at": "2026-08-16T13:06:04Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124548,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T13:06:52.597Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-dm-sender-123393",
+        "head_sha": "458cdbd01c998aa604faee59324144ec51b6d234",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
