@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T20:06:57.167Z",
+  "updated_at": "2026-08-16T20:07:26.798Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124543:5308228448:2026-08-16T15:37:12Z:re_review",
-      "comment_id": "5308228448",
-      "comment_version_key": "5308228448:2026-08-16T15:37:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124543#issuecomment-5308228448",
-      "comment_created_at": "2026-08-16T15:37:12Z",
-      "comment_updated_at": "2026-08-16T15:37:12Z",
-      "comment_body_sha256": "68362a15376a5bf8627dd02eb5416312c3dcf83aa4979f642d9e3ec67a52cafa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124543,
-      "author": "spunzon",
-      "author_id": 38790201,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T15:38:02.433Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-aggregate-turn-duplication-123792",
-        "head_sha": "b1aae1f0c6fcb702d78241e44f1e64a348e2f6c4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112945:5075714857:2026-08-16T15:37:25Z:clawsweeper_auto_repair",
       "comment_id": "5075714857",
@@ -31943,6 +31896,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124795:5309393642:2026-08-16T20:06:44Z:clawsweeper_needs_human",
+      "comment_id": "5309393642",
+      "comment_version_key": "5309393642:2026-08-16T20:06:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124795#issuecomment-5309393642",
+      "comment_created_at": "2026-08-16T19:59:52Z",
+      "comment_updated_at": "2026-08-16T20:06:44Z",
+      "comment_body_sha256": "e5224c6878869352db3ed589b70c51ce9c0a720095e94cf15eafa52bf708392e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124795,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI remains red on the extension package-boundary check and aggregate CI gate; its failure must be understood and cleared before merge. (sha=d2d24686e12aff07b5a88b7f59f695e13e7a3a02)",
+      "expected_head_sha": "d2d24686e12aff07b5a88b7f59f695e13e7a3a02",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T20:07:26.798Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-browser-local-cancel",
+        "head_sha": "d2d24686e12aff07b5a88b7f59f695e13e7a3a02",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
