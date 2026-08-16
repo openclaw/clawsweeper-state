@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T15:47:56.134Z",
+  "updated_at": "2026-08-16T15:48:03.806Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124222:5304395969:2026-08-15T21:50:34Z:re_review",
-      "comment_id": "5304395969",
-      "comment_version_key": "5304395969:2026-08-15T21:50:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124222#issuecomment-5304395969",
-      "comment_created_at": "2026-08-15T21:50:34Z",
-      "comment_updated_at": "2026-08-15T21:50:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124222,
-      "author": "a-yeyang",
-      "author_id": 88581400,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T10:28:13.486Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124222:5305505099:2026-08-16T03:21:24Z:re_review",
       "comment_id": "5305505099",
@@ -32288,6 +32261,39 @@
       "status": "skipped",
       "processed_at": "2026-08-16T15:47:56.134Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111351:5015268158:2026-08-16T15:47:12Z:clawsweeper_needs_human",
+      "comment_id": "5015268158",
+      "comment_version_key": "5015268158:2026-08-16T15:47:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111351#issuecomment-5015268158",
+      "comment_created_at": "2026-07-19T09:51:30Z",
+      "comment_updated_at": "2026-08-16T15:47:12Z",
+      "comment_body_sha256": "b2c0ecb1853f1784488586c9c584a78a6127ce29d58f37270d963004fca06967",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111351,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress; merge should wait for successful checks on the submitted head. (sha=7437e78c8f8ef7a0b981d239f9b91ecb90f3b806)",
+      "expected_head_sha": "7437e78c8f8ef7a0b981d239f9b91ecb90f3b806",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T15:48:03.806Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-tombstone-rollover-defer",
+        "head_sha": "7437e78c8f8ef7a0b981d239f9b91ecb90f3b806",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
