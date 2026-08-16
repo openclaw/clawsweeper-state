@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T21:33:10.542Z",
+  "updated_at": "2026-08-16T21:33:14.896Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124658:5308137477:2026-08-16T16:25:03Z:clawsweeper_needs_human",
-      "comment_id": "5308137477",
-      "comment_version_key": "5308137477:2026-08-16T16:25:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124658#issuecomment-5308137477",
-      "comment_created_at": "2026-08-16T15:18:28Z",
-      "comment_updated_at": "2026-08-16T16:25:03Z",
-      "comment_body_sha256": "8305b830ebd40614d0d2871015009f67a5b343f752d9a935eb33904efa9689ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124658,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the precedence among existing Windows, XDG, and legacy token files; the cited upstream contract should confirm the intended locations and order before merge. (sha=85ed3ce29363149432c256410c58213566a88bca)",
-      "expected_head_sha": "85ed3ce29363149432c256410c58213566a88bca",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T16:41:06.249Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clawhub-windows-appdata-config",
-        "head_sha": "85ed3ce29363149432c256410c58213566a88bca",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124660:5308166381:2026-08-16T16:38:31Z:clawsweeper_needs_human",
       "comment_id": "5308166381",
@@ -32497,6 +32464,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124659:5309778505:2026-08-16T21:32:29Z:re_review",
+      "comment_id": "5309778505",
+      "comment_version_key": "5309778505:2026-08-16T21:32:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124659#issuecomment-5309778505",
+      "comment_created_at": "2026-08-16T21:32:29Z",
+      "comment_updated_at": "2026-08-16T21:32:29Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124659,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T21:33:12.098Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-managed-handoff-successor",
+        "head_sha": "3a10b7dd6f6a37977a6ba43266e67b8c2723a5e8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
