@@ -67,24 +67,25 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the confirmed ACP composer attribution bug. Extend the existing metadata-and-key-gated ACP overlay so CLI and Gateway session rows share one canonical external display identity; use it only for true ACP sessions with durable metadata, never ACP-shaped bridge sessions without it. Gateway should project the identity and a model-selection lock, `sessions.patch` should reject model mutation under the same authoritative condition, and the Control UI should show the projected external identity in its locked footer while retaining generic behavior for other locked sessions. Add regression coverage for true ACP, bridge-without-metadata, direct model patch rejection, and locked-footer rendering. Run focused Gateway and Control UI tests. Do not add config, storage, protocol, or harness capability surfaces; do not edit CHANGELOG.md, but include release-note context in the PR body.
+Repair https://github.com/openclaw/openclaw/issues/121993 as an existing Gateway/Control UI bug. Reuse the existing CLI rule: only sessions with durable ACP metadata and an ACP key display ACP identity and reject embedded-model mutation. Use the already batch-loaded row-context metadata for Gateway rows; enforce the same condition in sessions.patch so direct callers cannot bypass the UI. Preserve ACP-shaped bridge sessions without SessionAcpMeta and all ordinary sessions. Add failing-before/fixed-after regression coverage for true ACP, bridge-without-metadata, and normal sessions, plus a focused composer assertion. Do not implement selectable harness models from https://github.com/openclaw/openclaw/issues/122488; do not change config, schema, protocol, or CHANGELOG.md.
 
 Likely files:
 
-- src/agents/acp-runtime-overlay.ts
-- src/commands/sessions.ts
+- src/gateway/session-utils-list.ts
 - src/gateway/session-utils-row.ts
+- src/gateway/session-utils-model.ts
 - src/gateway/sessions-patch.ts
 - src/gateway/session-utils.test.ts
 - src/gateway/sessions-patch.test.ts
-- ui/src/pages/chat/components/chat-model-controls.ts
-- ui/src/pages/chat/chat-view.test.ts
+- ui/src/pages/chat/chat-pane-session-controls.ts
+- ui/src/pages/chat/chat-session.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/session-utils.test.ts
 - node scripts/run-vitest.mjs src/gateway/sessions-patch.test.ts
-- node scripts/run-vitest.mjs ui/src/pages/chat/chat-view.test.ts
+- Focused Control UI composer/session-controls Vitest test
+- Isolated Gateway/Control UI visual proof showing ACP identity and disabled embedded-model selection
 
 ## Operator Prompt
 
