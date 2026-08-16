@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T06:20:21.699Z",
+  "updated_at": "2026-08-16T06:20:36.903Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119576:5193575126:2026-08-05T15:10:57Z:re_review",
-      "comment_id": "5193575126",
-      "comment_version_key": "5193575126:2026-08-05T15:10:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119576#issuecomment-5193575126",
-      "comment_created_at": "2026-08-05T15:10:57Z",
-      "comment_updated_at": "2026-08-05T15:10:57Z",
-      "comment_body_sha256": "4df567e7c04dfb144623e386e25f9ec516aea45b866c0ed3017bb9b734872c30",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119576,
-      "author": "licheer-zte",
-      "author_id": 305411557,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the p1 finding (preserve an earlier explicit restart intent) has been addressed on this head: `pendingrestartwasexplicit` now carries the provenance of the write that armed the pending restart, so an explicit a->b restart followed by an ordinary b->a revert re-arms the restart instead of retiring the explicit debt (commit `1b10face5`). new managed-lifecycle regression test covers explicit a->b + ordinary b->a. local verification: 528/528 config-reload tests + 223/223 restart/reload lifecycle tests pass, oxlint/oxfmt clean",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T00:59:17.027Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119576:5193744094:2026-08-05T15:25:19Z:re_review",
       "comment_id": "5193744094",
@@ -32054,6 +32027,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124222:5306092230:2026-08-16T06:19:55Z:re_review",
+      "comment_id": "5306092230",
+      "comment_version_key": "5306092230:2026-08-16T06:19:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124222#issuecomment-5306092230",
+      "comment_created_at": "2026-08-16T06:19:55Z",
+      "comment_updated_at": "2026-08-16T06:19:55Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124222,
+      "author": "a-yeyang",
+      "author_id": 88581400,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T06:20:35.407Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-rich-callback-edit",
+        "head_sha": "6328eb543924fbc92376a786a15da6f150baea5a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
