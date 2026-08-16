@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T01:49:01.554Z",
+  "updated_at": "2026-08-16T01:50:15.759Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124214:5303390333:2026-08-15T20:21:01Z:clawsweeper_auto_repair",
-      "comment_id": "5303390333",
-      "comment_version_key": "5303390333:2026-08-15T20:21:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124214#issuecomment-5303390333",
-      "comment_created_at": "2026-08-15T17:26:56Z",
-      "comment_updated_at": "2026-08-15T20:21:01Z",
-      "comment_body_sha256": "7f9c2d5333461c4f11d0198852d5102e4ffd95a0d78a2fa0c88f0aed036a4bff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124214,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=31c5797193b1370dcc9dd8e86850140e72ddb522)",
-      "expected_head_sha": "31c5797193b1370dcc9dd8e86850140e72ddb522",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-15T20:21:56.223Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-adoption-gated-lane",
-        "head_sha": "31c5797193b1370dcc9dd8e86850140e72ddb522",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124250:5303863659:2026-08-15T20:21:47Z:clawsweeper_needs_human",
       "comment_id": "5303863659",
@@ -32940,6 +32907,53 @@
       "status": "skipped",
       "processed_at": "2026-08-16T01:49:01.554Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123912:5304966399:2026-08-16T01:49:36Z:re_review",
+      "comment_id": "5304966399",
+      "comment_version_key": "5304966399:2026-08-16T01:49:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123912#issuecomment-5304966399",
+      "comment_created_at": "2026-08-16T00:36:29Z",
+      "comment_updated_at": "2026-08-16T01:49:36Z",
+      "comment_body_sha256": "755d6b5a4552e493b1ea9f3c4bd81a2e64b10c145c19941a214fbe584ecc6e54",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123912,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T01:50:13.868Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/control-ui-link-browser-setting",
+        "head_sha": "b8debc7752213fd71d51373b9576f38bccf0ac79",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
