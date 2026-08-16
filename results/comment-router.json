@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T21:43:04.535Z",
+  "updated_at": "2026-08-16T21:43:46.742Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123189:5308527159:2026-08-16T16:46:49Z:re_review",
-      "comment_id": "5308527159",
-      "comment_version_key": "5308527159:2026-08-16T16:46:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123189#issuecomment-5308527159",
-      "comment_created_at": "2026-08-16T16:46:49Z",
-      "comment_updated_at": "2026-08-16T16:46:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123189,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T16:52:52.310Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-run-recovery-121756",
-        "head_sha": "98a86d37205a6ccae5b9382d602ad73fe70b4dfd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Tachikoma:68:5307294938:2026-08-16T16:53:00Z:clawsweeper_needs_human",
       "comment_id": "5307294938",
@@ -32585,6 +32538,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124803:5309462677:2026-08-16T21:43:07Z:clawsweeper_needs_human",
+      "comment_id": "5309462677",
+      "comment_version_key": "5309462677:2026-08-16T21:43:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124803#issuecomment-5309462677",
+      "comment_created_at": "2026-08-16T20:15:30Z",
+      "comment_updated_at": "2026-08-16T21:43:07Z",
+      "comment_body_sha256": "7c15a7b54e354cb53ce16e362b15af84de8c3b740b2b3ef9df68b892e0db9b24",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124803,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body and follow-up report focused tests and static checks, but no after-fix Gateway restart output, runtime trace, recording, or redacte... (sha=b39ebaed5b1750ced9e7c8df94e55812fab41eb9)",
+      "expected_head_sha": "b39ebaed5b1750ced9e7c8df94e55812fab41eb9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T21:43:46.742Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/requester-settle-gateway-ready-20260817",
+        "head_sha": "b39ebaed5b1750ced9e7c8df94e55812fab41eb9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
