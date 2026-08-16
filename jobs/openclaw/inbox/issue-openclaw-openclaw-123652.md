@@ -67,18 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair current-main runtime-context wire ordering for full-replay Responses tool loops. Replace absolute-tail carrier relocation with placement immediately after the active user message, retain historical-carrier stripping, and add a regression proving P+U+X becomes P+U+X+Y across consecutive same-turn tool-loop inputs. Do not add provider-specific configuration or filtering unless direct source analysis shows the runner change cannot uphold that invariant. Run focused owner and cache-stability tests; put release-note context in the PR body without editing CHANGELOG.md.
+Fix https://github.com/openclaw/openclaw/issues/123652 at the embedded-agent runtime-context boundary. First establish a failing same-turn regression where a current carrier is followed by tool-loop items and the provider-visible sequence changes from P+U+X to P+U+Y+X. Replace absolute-tail relocation with anchoring immediately after the active user so the next request is P+U+X+Y; preserve historical-carrier stripping and the model-visible carrier. Update direct helper and boundary tests, and do not add a config option, remove the carrier, alter Responses cache policy, or edit CHANGELOG.md. Record the user-visible performance context in the PR body and seek a redacted after-fix provider trace when available.
 
 Likely files:
 
 - src/agents/internal-runtime-context.ts
 - src/agents/internal-runtime-context.test.ts
+- src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
 - src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/internal-runtime-context.test.ts
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- node scripts/run-vitest.mjs run --config test/vitest/vitest.agents-embedded-agent-run.config.ts src/agents/embedded-agent-runner/run/attempt.llm-boundary.cache-stability.test.ts
+- node scripts/run-vitest.mjs run --config test/vitest/vitest.unit-fast.config.ts src/agents/internal-runtime-context.test.ts
+- git diff --check
 
 ## Operator Prompt
 
