@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T20:44:18.002Z",
+  "updated_at": "2026-08-16T20:44:20.869Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/AXorcist:47:5308273598:2026-08-16T15:47:40Z:re_review",
-      "comment_id": "5308273598",
-      "comment_version_key": "5308273598:2026-08-16T15:47:40Z",
-      "comment_url": "https://github.com/openclaw/AXorcist/pull/47#issuecomment-5308273598",
-      "comment_created_at": "2026-08-16T15:47:40Z",
-      "comment_updated_at": "2026-08-16T15:47:40Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/AXorcist",
-      "issue_number": 47,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T15:51:59.729Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ax-notification-timeout",
-        "head_sha": "e83c526ac2fea2cd6419174109d7208864c744c2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/AXorcist:47:5304913329:2026-08-16T15:51:14Z:clawsweeper_needs_human",
       "comment_id": "5304913329",
@@ -32321,6 +32274,39 @@
         "kind": "pull_request",
         "branch": "steipete/rtv-zod-boundaries",
         "head_sha": "19d8a55815b0c06d67f3c7762216108bab68969f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124419:5305797883:2026-08-16T20:43:24Z:clawsweeper_needs_human",
+      "comment_id": "5305797883",
+      "comment_version_key": "5305797883:2026-08-16T20:43:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124419#issuecomment-5305797883",
+      "comment_created_at": "2026-08-16T04:54:02Z",
+      "comment_updated_at": "2026-08-16T20:43:24Z",
+      "comment_body_sha256": "aaea31c4ba226e06056c652efb64782f528280da338b6421d0df632f7c68028e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124419,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR cites focused unit tests but provides no redacted after-fix gateway trace demonstrating the allowed route and preserved cross-host denia...; Review finding: [P2] Compare targets after elevated routing — src/agents/bash-tools.exec-runtime.ts:236-245 - [medium] Authorization is split from effective routing — src/agents/b... (sha=94f0777b76a2aee67824890ad7282324ad138643)",
+      "expected_head_sha": "94f0777b76a2aee67824890ad7282324ad138643",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T20:44:20.869Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-124349-exec-host-auto",
+        "head_sha": "94f0777b76a2aee67824890ad7282324ad138643",
         "cluster_id": null,
         "job_path": null
       }
