@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T12:50:18.135Z",
+  "updated_at": "2026-08-16T12:51:09.478Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:86655:4537661124:2026-08-16T07:04:27Z:clawsweeper_needs_human",
@@ -30236,39 +30236,6 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82950:4469526858:2026-08-16T12:44:36Z:clawsweeper_needs_human",
-      "comment_id": "4469526858",
-      "comment_version_key": "4469526858:2026-08-16T12:44:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-4469526858",
-      "comment_created_at": "2026-05-17T05:54:16Z",
-      "comment_updated_at": "2026-08-16T12:44:36Z",
-      "comment_body_sha256": "8365ae8e6476e98ed138ea558d783635798dfa0458bfdebda44f5e553bb859ce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Parse Unicode property escapes as one atom (P1)** - tokenizePattern consumes only \\p, leaving {L} as separate atoms; this clears the pending adjacent-repeat state, so ^\\p{L}*\\p{L}*\\p{L}*z$ passes even though a U...; Review finding: [P1] Parse Unicode property escapes as one atom — src/security/safe-regex-tokens.ts:89-93 - [P2] Expose generation and check scripts for the Swift bundle — scripts... (sha=5745fa37b54d11a134d33032b918c75993cdf0bf)",
-      "expected_head_sha": "5745fa37b54d11a134d33032b918c75993cdf0bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T12:50:18.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approval-redos-guard",
-        "head_sha": "5745fa37b54d11a134d33032b918c75993cdf0bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:87471:4559992191:2026-08-16T12:30:52Z:clawsweeper_auto_repair",
       "comment_id": "4559992191",
       "comment_version_key": "4559992191:2026-08-16T12:30:52Z",
@@ -31471,6 +31438,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82950:4469526858:2026-08-16T12:44:36Z:clawsweeper_needs_human",
+      "comment_id": "4469526858",
+      "comment_version_key": "4469526858:2026-08-16T12:44:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-4469526858",
+      "comment_created_at": "2026-05-17T05:54:16Z",
+      "comment_updated_at": "2026-08-16T12:44:36Z",
+      "comment_body_sha256": "8365ae8e6476e98ed138ea558d783635798dfa0458bfdebda44f5e553bb859ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 82950,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Parse Unicode property escapes as one atom (P1)** - tokenizePattern consumes only \\p, leaving {L} as separate atoms; this clears the pending adjacent-repeat state, so ^\\p{L}*\\p{L}*\\p{L}*z$ passes even though a U...; Review finding: [P1] Parse Unicode property escapes as one atom — src/security/safe-regex-tokens.ts:89-93 - [P2] Expose generation and check scripts for the Swift bundle — scripts... (sha=5745fa37b54d11a134d33032b918c75993cdf0bf)",
+      "expected_head_sha": "5745fa37b54d11a134d33032b918c75993cdf0bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T12:51:09.478Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-approval-redos-guard",
+        "head_sha": "5745fa37b54d11a134d33032b918c75993cdf0bf",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
