@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T22:56:31.901Z",
+  "updated_at": "2026-08-16T22:58:00.762Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124649:5308694193:2026-08-16T17:25:48Z:re_review",
-      "comment_id": "5308694193",
-      "comment_version_key": "5308694193:2026-08-16T17:25:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124649#issuecomment-5308694193",
-      "comment_created_at": "2026-08-16T17:25:48Z",
-      "comment_updated_at": "2026-08-16T17:25:48Z",
-      "comment_body_sha256": "8314740b8816968c7d285a1196673dde77a4c8e3a350de11074ec2b268d2b1b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124649,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T17:26:30.422Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-tool-schema-validation",
-        "head_sha": "2fd2b060c766a42f79904db01ab9b83064d54a84",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111351:5015268158:2026-08-16T17:25:08Z:clawsweeper_needs_human",
       "comment_id": "5015268158",
@@ -33303,6 +33256,39 @@
       "status": "skipped",
       "processed_at": "2026-08-16T22:56:31.901Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124833:5309743086:2026-08-16T22:57:11Z:clawsweeper_needs_human",
+      "comment_id": "5309743086",
+      "comment_version_key": "5309743086:2026-08-16T22:57:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124833#issuecomment-5309743086",
+      "comment_created_at": "2026-08-16T21:23:39Z",
+      "comment_updated_at": "2026-08-16T22:57:11Z",
+      "comment_body_sha256": "f0dc56213d87cd1bcca56e62822ae75c6e4d00d9503cdf0e4082688f0cb4752e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124833,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This review host could not independently fetch the PR head or workflow artifact because github.com DNS resolution failed; completed exact-head Android, iOS, and macOS checks should re... (sha=30785ecd64494363718d0588466e6211b518226e)",
+      "expected_head_sha": "30785ecd64494363718d0588466e6211b518226e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T22:58:00.762Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "30785ecd64494363718d0588466e6211b518226e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
