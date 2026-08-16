@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T08:12:26.375Z",
+  "updated_at": "2026-08-16T08:15:19.539Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123356:5305388939:2026-08-16T02:45:36Z:re_review",
-      "comment_id": "5305388939",
-      "comment_version_key": "5305388939:2026-08-16T02:45:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123356#issuecomment-5305388939",
-      "comment_created_at": "2026-08-16T02:45:36Z",
-      "comment_updated_at": "2026-08-16T02:45:36Z",
-      "comment_body_sha256": "79fb4366a90da9ae0329c628f8959ada7cc731c4ba4849709d6e874499e98ebc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123356,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T02:45:42.043Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "improve/command-arg-staged-input",
-        "head_sha": "7077daf25a25e8883335c8ea21efb2a75132fe00",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123356:5287474810:2026-08-16T02:44:56Z:clawsweeper_auto_repair",
       "comment_id": "5287474810",
@@ -31572,6 +31525,39 @@
         "kind": "pull_request",
         "branch": "steipete/fix-gateway-session-store-identity-churn",
         "head_sha": "7742842abe4ceb6e1e66ab65f0530033a7caf1fb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:487:5301760789:2026-08-16T08:14:40Z:clawsweeper_needs_human",
+      "comment_id": "5301760789",
+      "comment_version_key": "5301760789:2026-08-16T08:14:40Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/487#issuecomment-5301760789",
+      "comment_created_at": "2026-08-15T10:11:50Z",
+      "comment_updated_at": "2026-08-16T08:14:40Z",
+      "comment_body_sha256": "1d2b81658a50291aedfa4c90ccb186ac14033981bc9cd3f4901ad8e1c792681e",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 487,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve an outcome for the menubar OCR fallback (P1)** - validated now requires an outcome whenever --menubar is used, but the existing OCR fallback returns a detection result without one. When no observation-b...; Review finding: [P1] Preserve an outcome for the menubar OCR fallback — Apps/CLI/Sources/PeekabooCLI/Commands/AI/SeeCommand+DetectionPipeline.swift:49-54 - [P2] Emit process targe... (sha=130ee67440d5815a1689db9ea92c39038607d525)",
+      "expected_head_sha": "130ee67440d5815a1689db9ea92c39038607d525",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T08:15:19.539Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/operation-receipts-129",
+        "head_sha": "130ee67440d5815a1689db9ea92c39038607d525",
         "cluster_id": null,
         "job_path": null
       }
