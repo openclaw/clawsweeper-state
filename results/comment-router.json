@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T13:09:39.732Z",
+  "updated_at": "2026-08-16T13:09:42.732Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124464:5306318362:2026-08-16T07:27:19Z:clawsweeper_needs_human",
-      "comment_id": "5306318362",
-      "comment_version_key": "5306318362:2026-08-16T07:27:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124464#issuecomment-5306318362",
-      "comment_created_at": "2026-08-16T07:27:19Z",
-      "comment_updated_at": "2026-08-16T07:27:19Z",
-      "comment_body_sha256": "de65b704c1fa8c8739096256567b5051b27f076626ff213d3f0bf4cc704a769e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124464,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Push retries are delivery-sensitive: merge only after the current head's channel-boundary checks complete green, because an incorrect retry classification could suppress or duplicate... (sha=b27228da5b0d161b5c335248fdc288373215f0eb)",
-      "expected_head_sha": "b27228da5b0d161b5c335248fdc288373215f0eb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T07:28:05.442Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-push-retry-key",
-        "head_sha": "b27228da5b0d161b5c335248fdc288373215f0eb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118008:5306319296:2026-08-16T07:27:38Z:re_review",
       "comment_id": "5306319296",
@@ -31554,6 +31521,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-16T13:03:49Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-16T13:03:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-16T13:03:49Z",
+      "comment_body_sha256": "5979acfc705f6b44991fe351e52a531147c93501209bc3d0dd636a0cc6c72ff5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog workflow guard (P1)** - This changes the pull-request scanner to bcfcf73…, but test/scripts/ci-workflow-guards.test.ts:3343 still requires 27b0417…; the focused workflow-guard test fai...; Review finding: [P1] Synchronize the TruffleHog workflow guard — .github/workflows/ci.yml:1076 - [P1] Update the Android attestation expectation — .github/workflows/android-releas... (sha=93d0decc83a41c2be1b266e11162b856871c48ce)",
+      "expected_head_sha": "93d0decc83a41c2be1b266e11162b856871c48ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T13:09:42.732Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "93d0decc83a41c2be1b266e11162b856871c48ce",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
