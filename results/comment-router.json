@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T18:07:46.833Z",
+  "updated_at": "2026-08-16T18:15:46.415Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123244:5285877469:2026-08-16T13:33:41Z:clawsweeper_auto_repair",
-      "comment_id": "5285877469",
-      "comment_version_key": "5285877469:2026-08-16T13:33:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123244#issuecomment-5285877469",
-      "comment_created_at": "2026-08-13T20:14:25Z",
-      "comment_updated_at": "2026-08-16T13:33:41Z",
-      "comment_body_sha256": "f33bb6d77bf221139ee68e6f4c48f55df8508f564d83d645be3ae49489389a5b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123244,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a7549b6d4853b804ed0c0fcd583beb01d79f898c)",
-      "expected_head_sha": "a7549b6d4853b804ed0c0fcd583beb01d79f898c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T13:34:22.633Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/msteams-graph-upload-malformed-response",
-        "head_sha": "a7549b6d4853b804ed0c0fcd583beb01d79f898c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123244:5290181991:2026-08-14T06:21:53Z:re_review",
       "comment_id": "5290181991",
@@ -32517,6 +32484,53 @@
         {
           "action": "comment",
           "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111175:5308945315:2026-08-16T18:15:10Z:re_review",
+      "comment_id": "5308945315",
+      "comment_version_key": "5308945315:2026-08-16T18:15:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111175#issuecomment-5308945315",
+      "comment_created_at": "2026-08-16T18:15:10Z",
+      "comment_updated_at": "2026-08-16T18:15:10Z",
+      "comment_body_sha256": "bca9d4e80423e6edcdd4c0976b5f1c4ad8cf7ed3d7e8046407422c02361505a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111175,
+      "author": "xydigit-zt",
+      "author_id": 294751694,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T18:15:44.410Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/usage-omit-cost-when-pricing-unknown",
+        "head_sha": "4396d3a1474a7474c9dd623ea4f779bd77bad670",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
