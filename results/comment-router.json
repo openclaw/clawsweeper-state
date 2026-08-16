@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-08-16T19:59:19.527Z",
+  "updated_at": "2026-08-16T19:59:39.404Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111351:5308205270:2026-08-16T15:32:30Z:re_review",
-      "comment_id": "5308205270",
-      "comment_version_key": "5308205270:2026-08-16T15:32:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111351#issuecomment-5308205270",
-      "comment_created_at": "2026-08-16T15:32:30Z",
-      "comment_updated_at": "2026-08-16T15:32:30Z",
-      "comment_body_sha256": "0c6a643d849c91cfa614e630bf1da2da07b7256b6afbd384ac40f50b0e86be26",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111351,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T15:33:15.441Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-tombstone-rollover-defer",
-        "head_sha": "dc06b7209f99bee26ae3d2cf5cb3a6ed2522881f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:494:5308207185:2026-08-16T15:32:56Z:clawsweeper_auto_repair",
-      "comment_id": "5308207185",
-      "comment_version_key": "5308207185:2026-08-16T15:32:56Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/494#issuecomment-5308207185",
-      "comment_created_at": "2026-08-16T15:32:56Z",
-      "comment_updated_at": "2026-08-16T15:32:56Z",
-      "comment_body_sha256": "2177a7f3664b230aeecac113d91c74b1ea983fcbee9e090dbbeb3869f1e23fc3",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 494,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=1515b7404adcc29c16009f3b41eb7147e0ce0440)",
-      "expected_head_sha": "1515b7404adcc29c16009f3b41eb7147e0ce0440",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-16T15:33:42.871Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/4-2-0-highlights",
-        "head_sha": "1515b7404adcc29c16009f3b41eb7147e0ce0440",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112641:5079568147:2026-08-16T15:33:24Z:clawsweeper_auto_repair",
       "comment_id": "5079568147",
@@ -31942,6 +31862,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124298:5304499476:2026-08-16T19:58:54Z:clawsweeper_auto_repair",
+      "comment_id": "5304499476",
+      "comment_version_key": "5304499476:2026-08-16T19:58:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124298#issuecomment-5304499476",
+      "comment_created_at": "2026-08-15T22:19:30Z",
+      "comment_updated_at": "2026-08-16T19:58:54Z",
+      "comment_body_sha256": "8cd1bc00ee83ae0ab9168668374b7fbbc54081a79fa542f6b45c9c8a03653523",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124298,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1d533260e6467ee0ea7f9b56007b09f8b0e83a71)",
+      "expected_head_sha": "1d533260e6467ee0ea7f9b56007b09f8b0e83a71",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T19:59:39.404Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-queued-message-edit-cancel",
+        "head_sha": "1d533260e6467ee0ea7f9b56007b09f8b0e83a71",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124298:5309244124:2026-08-16T19:24:31Z:re_review",
+      "comment_id": "5309244124",
+      "comment_version_key": "5309244124:2026-08-16T19:24:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124298#issuecomment-5309244124",
+      "comment_created_at": "2026-08-16T19:24:31Z",
+      "comment_updated_at": "2026-08-16T19:24:31Z",
+      "comment_body_sha256": "6cb1ef01c73d5abeabcb7a5204c5cfa1c285f1da031a850e44f93b5f88d96fad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124298,
+      "author": "jjjhenriksen",
+      "author_id": 179184921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T19:59:39.404Z",
+      "target": null
     }
   ]
 }
