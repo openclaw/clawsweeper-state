@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T16:02:31.772Z",
+  "updated_at": "2026-08-16T16:06:32.019Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124509:5306540771:2026-08-16T09:38:10Z:clawsweeper_needs_human",
-      "comment_id": "5306540771",
-      "comment_version_key": "5306540771:2026-08-16T09:38:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124509#issuecomment-5306540771",
-      "comment_created_at": "2026-08-16T08:30:24Z",
-      "comment_updated_at": "2026-08-16T09:38:10Z",
-      "comment_body_sha256": "6cc760d0b7e978897e7c9c01464adc09f7a7a3d9cf0c3e5ff10f0450fe017304",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124509,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current-head CI is still incomplete, so the workflow should not merge until its required checks finish green. (sha=69364c407b5ae200b138e885889113fba142b408)",
-      "expected_head_sha": "69364c407b5ae200b138e885889113fba142b408",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T10:28:59.375Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-qa-frozen-tooling",
-        "head_sha": "69364c407b5ae200b138e885889113fba142b408",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124516:5306614862:2026-08-16T09:52:30Z:clawsweeper_needs_human",
       "comment_id": "5306614862",
@@ -32318,6 +32285,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123189:5308351250:2026-08-16T16:05:42Z:re_review",
+      "comment_id": "5308351250",
+      "comment_version_key": "5308351250:2026-08-16T16:05:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123189#issuecomment-5308351250",
+      "comment_created_at": "2026-08-16T16:05:42Z",
+      "comment_updated_at": "2026-08-16T16:05:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123189,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T16:06:27.454Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-run-recovery-121756",
+        "head_sha": "7e210dae83f773ff49dafee75418deb7885bae0b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
