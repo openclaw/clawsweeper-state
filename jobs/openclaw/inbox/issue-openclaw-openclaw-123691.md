@@ -67,17 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Gateway audit worker’s externally supervised state-database admission. Preserve the worker’s inherited ownership environment while setting the supplied state directory, and confirm no other production worker rebuilds a reduced database environment. Add one worker-boundary regression: a marked worker persists an event, while an unmarked writer remains rejected. Do not add configuration or weaken ownership checks. Put release-note context in the PR body, not CHANGELOG.md.
+Repair the Gateway audit writer’s documented external-supervisor ownership path. First establish the pre-fix failure through the real worker-thread boundary on a claimed state database. Preserve inherited ownership-relevant process environment while overriding only OPENCLAW_STATE_DIR, then prove the marked worker persists an audit event and a separate unmarked writer remains rejected. Sweep Gateway-owned production worker and sidecar construction for the same reduced-environment pattern, but do not weaken ownership admission, add configuration, alter SQLite schema versions, or change unrelated CLI writer behavior. Put user-visible release-note context in the PR body or commit message, not CHANGELOG.md.
 
 Likely files:
 
 - src/audit/audit-event-writer.worker.ts
 - src/audit/audit-event-writer.test.ts
+- src/state/openclaw-state-ownership.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/audit/audit-event-writer.test.ts
-- node scripts/run-vitest.mjs src/audit/ src/state/openclaw-state-ownership.test.ts
+- node scripts/run-vitest.mjs src/state/openclaw-state-ownership.test.ts
+- node scripts/run-vitest.mjs test/gateway-external-state-ownership.e2e.test.ts
+- git diff --check
 
 ## Operator Prompt
 
