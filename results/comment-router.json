@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T05:26:45.274Z",
+  "updated_at": "2026-08-16T05:28:18.385Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110803:5304902431:2026-08-16T00:18:37Z:re_review",
-      "comment_id": "5304902431",
-      "comment_version_key": "5304902431:2026-08-16T00:18:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110803#issuecomment-5304902431",
-      "comment_created_at": "2026-08-16T00:18:37Z",
-      "comment_updated_at": "2026-08-16T00:18:37Z",
-      "comment_body_sha256": "458173cd37fe0c83d7b350555b808d1c4dc048bf95258a3b66a11f18aed91af5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110803,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T00:19:21.385Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/zalo-polling-durability",
-        "head_sha": "f7fb4903b2640e3715e0a5e4fb2567228d38651d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123874:5304902622:2026-08-16T00:18:40Z:re_review",
       "comment_id": "5304902622",
@@ -32091,6 +32044,39 @@
         "kind": "pull_request",
         "branch": "steipete/chained-drain-g1",
         "head_sha": "f72bd205236fb7b7cce66177fbf3625a8eb8b66e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-16T05:21:17Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-16T05:21:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-16T05:21:17Z",
+      "comment_body_sha256": "59b1dd160ab5ede6b018bcfbd95b1debf59aef84cae3dbcc402fcf2d5c8400a6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog workflow guard (P1)** - This changes the TruffleHog wrapper from the SHA required by TRUFFLEHOG_V3_95_9, so the security-fast workflow guard fails before validating the updated workflo...; Review finding: [P1] Synchronize the TruffleHog workflow guard — .github/workflows/ci.yml:1076 - [P1] Update the Android attestation assertion — .github/workflows/android-release.... (sha=0cee70712a849042fc38d14b0794d195fce6245c)",
+      "expected_head_sha": "0cee70712a849042fc38d14b0794d195fce6245c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T05:28:18.385Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "0cee70712a849042fc38d14b0794d195fce6245c",
         "cluster_id": null,
         "job_path": null
       }
