@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T17:27:41.057Z",
+  "updated_at": "2026-08-16T17:28:27.476Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124548:5307543506:2026-08-16T12:56:38Z:re_review",
-      "comment_id": "5307543506",
-      "comment_version_key": "5307543506:2026-08-16T12:56:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124548#issuecomment-5307543506",
-      "comment_created_at": "2026-08-16T12:56:38Z",
-      "comment_updated_at": "2026-08-16T12:56:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124548,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T13:04:07.747Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-dm-sender-123393",
-        "head_sha": "7c5d89469d3ed4efb9a12fe008a28aa13fcf62b7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124548:5307391423:2026-08-16T13:03:24Z:clawsweeper_auto_repair",
       "comment_id": "5307391423",
@@ -32382,6 +32335,39 @@
         "kind": "pull_request",
         "branch": "codex/issue-89606-plugin-registry",
         "head_sha": "97f99c9310f3f1920f6a934fbae71b5472b404c8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124612:5307812301:2026-08-16T17:27:44Z:clawsweeper_needs_human",
+      "comment_id": "5307812301",
+      "comment_version_key": "5307812301:2026-08-16T17:27:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124612#issuecomment-5307812301",
+      "comment_created_at": "2026-08-16T14:01:52Z",
+      "comment_updated_at": "2026-08-16T17:27:44Z",
+      "comment_body_sha256": "1f6f59de0ec731cd206e8bb281486ab5f722dd2f95995fe91879101984614c7a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124612,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Resolve the dynamic checkout CodeQL result** - The trusted workflow checkout uses a job-derived repository and SHA at the changed checkout site; source-side validation and protected env...; Review finding: [medium] Resolve the dynamic checkout CodeQL result — .github/workflows/qa-profile-evidence.yml:294 (sha=2c8a4053b21b1703ebeb5a359213589c5b0576d6)",
+      "expected_head_sha": "2c8a4053b21b1703ebeb5a359213589c5b0576d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T17:28:27.476Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/qa-scorecard-workflow-timeout-24c600",
+        "head_sha": "2c8a4053b21b1703ebeb5a359213589c5b0576d6",
         "cluster_id": null,
         "job_path": null
       }
