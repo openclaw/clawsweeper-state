@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T23:42:43.378Z",
+  "updated_at": "2026-08-16T23:44:11.973Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123585:5308904803:2026-08-16T18:05:49Z:re_review",
-      "comment_id": "5308904803",
-      "comment_version_key": "5308904803:2026-08-16T18:05:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123585#issuecomment-5308904803",
-      "comment_created_at": "2026-08-16T18:05:49Z",
-      "comment_updated_at": "2026-08-16T18:05:49Z",
-      "comment_body_sha256": "43e6cd49021d4eb3094f35f5f2b4af7d8b1b48c9e8869b4bcac812c157691e08",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123585,
-      "author": "Chinmayrawat15",
-      "author_id": 88652081,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T18:06:36.686Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-new-session-cwd-gateway-persistence",
-        "head_sha": "b3dae5f82151c0f2fc5f735ad1d0b9cf5e2fe8a2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111175:5308945315:2026-08-16T18:15:10Z:re_review",
       "comment_id": "5308945315",
@@ -33286,6 +33239,39 @@
         "kind": "pull_request",
         "branch": "steipete/agent-image-display-debugging-8e17d4",
         "head_sha": "8da071d969afb727bfffa1f9320a5eac2b4ccd77",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124912:5310280713:2026-08-16T23:43:27Z:clawsweeper_needs_human",
+      "comment_id": "5310280713",
+      "comment_version_key": "5310280713:2026-08-16T23:43:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124912#issuecomment-5310280713",
+      "comment_created_at": "2026-08-16T23:43:27Z",
+      "comment_updated_at": "2026-08-16T23:43:27Z",
+      "comment_body_sha256": "79d2d813a27e3f2798832d69f95f9d39f2f337363d1ae56a38b89544885e50c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124912,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact head has a failed checks-ui-e2e (3/12) run and failed CI gate; inspect or rerun that shard successfully before merge. (sha=5c72b746ba803b5d5c3847c209612f884343635c)",
+      "expected_head_sha": "5c72b746ba803b5d5c3847c209612f884343635c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T23:44:11.973Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-control-ui-mock-create",
+        "head_sha": "5c72b746ba803b5d5c3847c209612f884343635c",
         "cluster_id": null,
         "job_path": null
       }
