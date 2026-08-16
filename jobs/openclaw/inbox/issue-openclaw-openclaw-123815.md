@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/123815 as a bounded existing-behavior bug. First reproduce or directly prove the native signal-cli 0.14.7 JSON-RPC attachment contract using an external-native loopback daemon under a distinct OS user; record a pre-fix permission failure and after-fix receipt. Then make only loopback external-native sends serialize the already staged, byte-bounded attachment as a filename-preserving RFC 2397 data URI, reusing or consolidating the existing Signal-specific encoder rather than adding a parallel formatter. Preserve managed-native and container behavior, retain non-local external-native path behavior pending explicit trust-policy work, do not loosen media-store permissions, add no configuration option, and stop for maintainer review if the native daemon rejects data URIs or request sizing cannot be bounded. Add boundary regression coverage for normal and quote-fallback media sends across the host-owned media adapters. Do not edit CHANGELOG.md; include release-note context in the PR body.
+Fix the existing Signal external-native outbound-media failure. First inspect the exact supported signal-cli native JSON-RPC send attachment contract for the target version and establish whether RFC 2397 data URIs, including filename and size behavior, are accepted; stop and report if that contract is not proven. Keep the fix in the Signal plugin: extract or reuse a plugin-local bounded attachment-data-URI serializer, apply it only to external-native sends, preserve managed-native path delivery and the container REST conversion, and retain the configured raw-byte media cap. Add a regression that proves the external-native RPC payload is self-contained and update the real RPC media-access harness so it no longer assumes daemon filesystem access. Exercise quote fallback with media as well. Use https://github.com/openclaw/openclaw/pull/124105 only as unmerged reference material. Do not add a transport config option unless direct contract proof shows a compatibility requirement. Do not edit CHANGELOG.md; put release-note context in the PR body.
 
 Likely files:
 
@@ -76,12 +76,14 @@ Likely files:
 - extensions/signal/src/send.test.ts
 - extensions/signal/src/media-access.test.ts
 - extensions/signal/src/client-container.test.ts
+- docs/channels/signal.md
 
 Validation:
 
-- Run `node scripts/run-vitest.mjs extensions/signal/src/send.test.ts extensions/signal/src/media-access.test.ts extensions/signal/src/client-container.test.ts`.
-- Run a real signal-cli 0.14.7 loopback HTTP daemon as a different OS user and capture pre-fix failure plus after-fix delivery/JSON-RPC receipt for an attachment and a quoted attachment.
-- Verify managed-native, container, and non-loopback external-native serialization remain unchanged.
+- Inspect upstream signal-cli source/docs for the native JSON-RPC attachment contract used by the target version.
+- Run the focused Signal sender, media-access, and container attachment tests.
+- Run a real native signal-cli external-native daemon under a distinct Unix user or equivalent separate-filesystem boundary and record a successful media send with redacted output.
+- Verify managed-native path sends and container base64 attachment behavior remain unchanged.
 
 ## Operator Prompt
 
