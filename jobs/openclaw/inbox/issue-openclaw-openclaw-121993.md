@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the ACP model misattribution in https://github.com/openclaw/openclaw/issues/121993. Use persisted SessionAcpMeta at the Gateway session-row owner to project the CLI-consistent ACP display identity and lock model selection only for metadata-confirmed ACP sessions. Preserve configured-model behavior for ACP-shaped bridge sessions without metadata and for non-ACP rows. Reject direct model patches under the same metadata gate. Add regression coverage for all three paths and focused Control UI locked-picker behavior. Do not add harness-specific selectable-model support, configuration, protocol changes, or CHANGELOG.md edits; that follow-up remains https://github.com/openclaw/openclaw/issues/122488.
+Repair metadata-backed ACP session model projection in the Gateway. Use persisted SessionAcpMeta plus ACP session-key validation as the only gate: for true ACP runtime sessions expose modelProvider "acpx", model "&lt;agentId>-acp", and lock model selection; ACP-shaped bridge sessions without metadata must preserve their configured model and remain patchable. Reuse or extract the existing CLI invariant in src/commands/sessions.ts; do not infer ACP from key shape alone or hardcode Cursor or Codex. Enforce the same gate in direct sessions.patch { model } handling. Add regressions that fail pre-fix for metadata-backed ACP, ACP-shaped bridge sessions without metadata, and normal sessions. Do not implement harness configOptions selectable models; that is tracked by https://github.com/openclaw/openclaw/issues/122488. No CHANGELOG edit.
 
 Likely files:
 
@@ -76,15 +76,13 @@ Likely files:
 - src/gateway/sessions-patch.ts
 - src/gateway/session-utils.test.ts
 - src/gateway/sessions-patch.test.ts
-- ui/src/pages/chat/components/chat-model-controls.ts
-- ui/src/pages/chat/components/chat-model-picker.ts
+- src/commands/sessions.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/session-utils.test.ts
 - node scripts/run-vitest.mjs src/gateway/sessions-patch.test.ts
-- focused Control UI model-control test
-- isolated Control UI before/after screenshot or short video
+- Capture redacted Control UI proof from a metadata-backed ACP session showing the ACP identity and locked selector.
 
 ## Operator Prompt
 
