@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-16T01:34:43.620Z",
+  "updated_at": "2026-08-16T01:35:27.677Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119741:5198542220:2026-08-15T20:01:16Z:clawsweeper_needs_human",
-      "comment_id": "5198542220",
-      "comment_version_key": "5198542220:2026-08-15T20:01:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119741#issuecomment-5198542220",
-      "comment_created_at": "2026-08-05T23:27:12Z",
-      "comment_updated_at": "2026-08-15T20:01:16Z",
-      "comment_body_sha256": "7a594d255a11d6dd604fa13aaeb8c6e50d4d8b699a2433a193f8b5179276f195",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119741,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The dirty branch predates the current SQLite-canonical archive row, generation/session-key fencing, and retryable file-publication flow; an uncareful rebase could weaken session-histo... (sha=b4895579527e2fd92130fd7501cfd9633c83973b)",
-      "expected_head_sha": "b4895579527e2fd92130fd7501cfd9633c83973b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-15T20:03:28.781Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-sqlite-archive-bounded-memory",
-        "head_sha": "b4895579527e2fd92130fd7501cfd9633c83973b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119778:5199641212:2026-08-08T00:42:51Z:clawsweeper_auto_merge",
       "comment_id": "5199641212",
@@ -32994,6 +32961,53 @@
       "status": "skipped",
       "processed_at": "2026-08-16T01:34:43.620Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124162:5305157764:2026-08-16T01:34:37Z:re_review",
+      "comment_id": "5305157764",
+      "comment_version_key": "5305157764:2026-08-16T01:34:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5305157764",
+      "comment_created_at": "2026-08-16T01:34:37Z",
+      "comment_updated_at": "2026-08-16T01:34:37Z",
+      "comment_body_sha256": "e87317264968f2586df7995b37541b25be15a0818e132d2949dfed0b8ff2a420",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124162,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T01:35:25.792Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-aware-resume-breaker-122950",
+        "head_sha": "d00f79b5e07b5915fa456375c7ba9b403bd74f19",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
