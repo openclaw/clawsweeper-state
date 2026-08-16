@@ -67,11 +67,12 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Codex dynamic-tool/MCP timeout mismatch without adding configuration. Trace the owning MCP server’s resolved `requestTimeoutMs` through MCP tool materialization into the Codex dynamic-tool bridge, then use it as the default watchdog bound only when no explicit per-call timeout exists. Preserve explicit `timeoutMs`/`timeoutSeconds` precedence, retain the existing 600-second watchdog cap, and add bounded headroom so the MCP transport can return its structured timeout result before the outer watchdog aborts. Cover normal app-server and side-question paths through their shared resolver; add a regression that fails before the change for a generic MCP tool with a server timeout above 90 seconds. Do not edit CHANGELOG.md; include concise release-note context in the PR body.
+Repair the current Codex dynamic-tool timeout mismatch without adding config. Carry each materialized MCP server’s resolved requestTimeoutMs through existing MCP tool metadata, expose it from the Codex dynamic-tool bridge, and use it as the default watchdog only when the call has no explicit timeout. Preserve explicit timeout precedence and the existing hard cap. Cover the main app-server and side-question resolver paths, plus a regression proving a slow MCP tool uses the server timeout while non-MCP tools retain the generic default. Do not edit CHANGELOG.md; include release-note context in the PR body.
 
 Likely files:
 
 - extensions/codex/src/app-server/dynamic-tool-execution.ts
+- extensions/codex/src/app-server/dynamic-tools.ts
 - extensions/codex/src/app-server/run-attempt-server-requests.ts
 - extensions/codex/src/app-server/side-question.ts
 - src/agents/agent-bundle-mcp-materialize.ts
@@ -80,8 +81,9 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs extensions/codex/src/app-server/dynamic-tool-execution.test.ts
-- node scripts/run-vitest.mjs src/agents/agent-bundle-mcp-tools.materialize.test.ts
-- node scripts/run-vitest.mjs src/agents/agent-bundle-mcp-runtime.test.ts
+- node scripts/run-vitest.mjs extensions/codex/src/app-server/run-attempt.dynamic-tools.test.ts
+- node scripts/run-vitest.mjs src/agents/agent-bundle-mcp-harness.test.ts
+- git diff --check
 
 ## Operator Prompt
 
