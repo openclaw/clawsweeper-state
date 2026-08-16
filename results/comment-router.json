@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-16T06:20:41.970Z",
+  "updated_at": "2026-08-16T06:22:30.706Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119576:5195140589:2026-08-05T17:33:21Z:re_review",
-      "comment_id": "5195140589",
-      "comment_version_key": "5195140589:2026-08-05T17:33:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119576#issuecomment-5195140589",
-      "comment_created_at": "2026-08-05T17:33:21Z",
-      "comment_updated_at": "2026-08-05T17:33:21Z",
-      "comment_body_sha256": "a88f9542070ebaaf4264dcc2d34a5def383b705b70c75453f872925de9d2dcc3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119576,
-      "author": "licheer-zte",
-      "author_id": 305411557,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — managed restart coordinator proof added to the evidence section: real `startgatewayconfigreloader` + real chokidar + real file, wired to the real `creategatewayrestartcoordinator` transaction (production wiring, including `settle(\"committed\")` after accepted request). scenario a (planner-derived a->b + ordinary b->a revert): coordinator retires the deferred restart debt (retirerejectedrestart=true), 0 sigusr1 signals. scenario b (explicit writer restart a->b + ordinary b->a revert): restart re-armed via onrestart #2 (port=null), debt never retired, 0 sigusr1 signals. full trace in evidence",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T00:59:17.027Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119576:5199829776:2026-08-06T02:50:39Z:re_review",
       "comment_id": "5199829776",
@@ -32080,6 +32053,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118041:5306097729:2026-08-16T06:21:37Z:re_review",
+      "comment_id": "5306097729",
+      "comment_version_key": "5306097729:2026-08-16T06:21:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118041#issuecomment-5306097729",
+      "comment_created_at": "2026-08-16T06:21:37Z",
+      "comment_updated_at": "2026-08-16T06:21:37Z",
+      "comment_body_sha256": "410a8d86646b9571e4be2a83e27225eb94ac115e34ea04ccb33a57e9b22da80f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118041,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-16T06:22:28.140Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/118018-requester-lifecycle-fence",
+        "head_sha": "3407faf05967f0e11df862bab7c3827ad942d189",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
