@@ -67,17 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Android post-expiry subagent-terminal redelivery bug described by https://github.com/openclaw/openclaw/issues/122352. In `ChatController`, retain an ephemeral terminal-observation fact after the 60-second UI row expires; suppress a later terminal event for that observed task ID only when no live row exists. Clear that fact on a new working lifecycle, explicit deletion, session changes, gateway-scope changes, and sequence-gap reset. Add owner-boundary regressions for post-expiry duplicate suppression and each reset/reuse path; first prove the new regression fails before the repair. Keep this Android-only: do not add persistence, schema, Gateway protocol, configuration, or CHANGELOG changes. Treat https://github.com/openclaw/openclaw/pull/122089 and https://github.com/openclaw/openclaw/pull/122198 as shipped adjacent behavior, and use the closed-unmerged https://github.com/openclaw/openclaw/pull/122472 only as implementation evidence.
+Repair the lifecycle invariant from https://github.com/openclaw/openclaw/issues/122352. In Android, retain an ephemeral terminal-observation fact after the display row expires; suppress duplicate terminal redelivery only while that fact remains, and clear it on a working transition, explicit task deletion, session change, gateway-scope reset, and sequence-gap reset. Add a behavioral Android regression that fails before the repair. Inspect the analogous Apple activity state: if the same expired-row/late-terminal sequence reproduces, repair it and add a sibling regression in this same focused PR; otherwise document the concrete semantic difference in the PR body. Reuse the web terminal-observation ownership pattern where appropriate. Do not add persistence, config, Gateway protocol changes, or CHANGELOG.md edits; include release-note context in the PR body. Useful closed source context: https://github.com/openclaw/openclaw/pull/122472.
 
 Likely files:
 
 - apps/android/app/src/main/java/ai/openclaw/app/chat/ChatController.kt
 - apps/android/app/src/test/java/ai/openclaw/app/chat/ChatControllerSubagentActivityTest.kt
+- apps/shared/OpenClawKit/Sources/OpenClawChatUI/ChatSubagentActivity.swift
+- apps/shared/OpenClawKit/Tests/OpenClawKitTests/ChatSubagentActivityTests.swift
 
 Validation:
 
 - cd apps/android && ./gradlew --no-daemon :app:testPlayDebugUnitTest --tests ai.openclaw.app.chat.ChatControllerSubagentActivityTest
-- git diff --check
+- swift test --package-path apps/shared/OpenClawKit --filter ChatSubagentActivityTests
 
 ## Operator Prompt
 
