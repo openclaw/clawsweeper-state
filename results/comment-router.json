@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-16T21:31:35.718Z",
+  "updated_at": "2026-08-16T21:31:37.655Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:91237:5308482128:2026-08-16T16:36:27Z:re_review",
-      "comment_id": "5308482128",
-      "comment_version_key": "5308482128:2026-08-16T16:36:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/91237#issuecomment-5308482128",
-      "comment_created_at": "2026-08-16T16:36:27Z",
-      "comment_updated_at": "2026-08-16T16:36:27Z",
-      "comment_body_sha256": "73122a552dd0ed234233f4c64e1541ea33ddf535491ebbbc6bc8055dfcc48f22",
-      "repo": "openclaw/openclaw",
-      "issue_number": 91237,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T16:40:56.712Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openrouter-1h-cache-ttl-eligibility",
-        "head_sha": "2a343571f28107ce015260a4a4033066a0221a57",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113980:5081600226:2026-08-16T16:38:11Z:clawsweeper_auto_repair",
       "comment_id": "5081600226",
@@ -32511,6 +32464,39 @@
       "status": "skipped",
       "processed_at": "2026-08-16T21:31:35.718Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/summarize:389:5308839178:2026-08-16T21:30:51Z:clawsweeper_needs_human",
+      "comment_id": "5308839178",
+      "comment_version_key": "5308839178:2026-08-16T21:30:51Z",
+      "comment_url": "https://github.com/steipete/summarize/pull/389#issuecomment-5308839178",
+      "comment_created_at": "2026-08-16T17:53:53Z",
+      "comment_updated_at": "2026-08-16T21:30:51Z",
+      "comment_body_sha256": "3f1a4f75ca2bec17e742ddabd07f645aece08a79bb8a2c439f885b7ad0ac2bd6",
+      "repo": "steipete/summarize",
+      "issue_number": 389,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This replaces a documented large-prompt rejection with behavior that depends on agy understanding a file URL; the supplied real proof covers agy 1.1.13 but does not establish a compat... (sha=7babc54478275e4fb0ff92f195d2f104eab7b1d6)",
+      "expected_head_sha": "7babc54478275e4fb0ff92f195d2f104eab7b1d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-16T21:31:37.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/agy-large-prompt-tempfile",
+        "head_sha": "7babc54478275e4fb0ff92f195d2f104eab7b1d6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
