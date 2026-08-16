@@ -67,18 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing documented WhatsApp `--notify` pairing behavior. First establish a failing regression on current main: WhatsApp declares no `notifyApproval`, so an approved sender cannot receive the shared confirmation. Add the notifier in the WhatsApp plugin using the existing active Gateway-owned send path and `PAIRING_APPROVED_MESSAGE`; preserve account scoping and explicit CLI/Control UI opt-in semantics. Do not add a default, config option, message replay, parallel transport, or CHANGELOG.md edit. Add focused regression coverage, then capture a redacted real linked-WhatsApp Gateway proof that one selected approval delivers one confirmation; record release-note context in the PR body.
+Repair the documented WhatsApp pairing approval notification path for https://github.com/openclaw/openclaw/issues/56619. Preserve the existing explicit --notify and Control UI notification semantics; do not add automatic notification, configuration, replay of blocked messages, or Plugin SDK/core API surface. In the WhatsApp plugin, add a pairing notifier that uses the existing account-aware outbound delivery path and standard pairing-approved message, then add an owner-boundary regression test proving the plugin advertises notification support and delivers to the approved sender/account. Treat https://github.com/openclaw/openclaw/pull/94386 and https://github.com/openclaw/openclaw/pull/96277 only as closed-unmerged context, not code to revive. Do not edit CHANGELOG.md; include concise user-facing release-note context in the PR body.
 
 Likely files:
 
 - extensions/whatsapp/src/channel.ts
 - extensions/whatsapp/src/channel.pairing.test.ts
-- src/channels/plugins/pairing-message.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs run extensions/whatsapp/src/channel.pairing.test.ts src/cli/pairing-cli.test.ts src/gateway/server-methods/channel-pairing.test.ts
-- With a linked redacted WhatsApp test account and running Gateway: create a pending request, approve with notification selected, and verify exactly one shared approval confirmation reaches the requester.
+- node scripts/run-vitest.mjs extensions/whatsapp/src/channel.pairing.test.ts
+- node scripts/run-vitest.mjs src/cli/pairing-cli.test.ts src/gateway/server-methods/channel-pairing.test.ts
 - git diff --check
 
 ## Operator Prompt
