@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the multi-agent plugin completion bug at the model-resolution owner. Preserve the already-authorized `agentId` when deriving a workspace in `resolveModelWorkspaceDir` and its synchronous/asynchronous resolver callers; do not add a plugin API field, config option, compatibility fallback, or downstream workaround. Add a regression that fails before the repair for a multi-agent config with distinct agent workspaces and an explicit target agent. Keep direct plugin completion and existing unscoped callers semantically unchanged. Do not edit CHANGELOG.md; place release-note context in the PR body.
+Repair the existing Plugin SDK direct-completion path for multi-agent configurations. Preserve the already-authorized agent identity when model discovery derives its workspace: extend the shared workspace resolver to accept the resolved agent id and pass options.agentId from both synchronous and asynchronous model resolver entry points. Add a regression that uses multiple configured agents without a legacy default and a selected agent, fails before the repair at default-agent resolution, and proves discovery uses that selected agent’s workspace after the repair. Keep authorization, model-selection policy, provider fallback behavior, and public configuration unchanged. Include user-visible release-note context in the PR body or commit message; do not edit CHANGELOG.md.
 
 Likely files:
 
@@ -78,6 +78,7 @@ Likely files:
 Validation:
 
 - pnpm test src/agents/embedded-agent-runner/model.test.ts
+- pnpm test src/plugins/runtime/runtime-llm.runtime.test.ts
 - pnpm test src/agents/simple-completion-runtime.test.ts
 
 ## Operator Prompt
