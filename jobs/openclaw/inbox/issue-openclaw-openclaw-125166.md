@@ -67,20 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Telegram plugin-approval routing bug: when a live Telegram turn source names the same group/account as the persisted session but omits its forum thread ID, recover that thread only from the persisted topic delivery target. Preserve fail-closed behavior for explicit mismatched chat, account, or thread metadata. Add a regression that begins with the reported incomplete live source plus a topic-scoped persisted session, proves the pre-fix null origin/DM fallback, and verifies topic delivery after the fix. Inspect the shared approval-origin resolver and its sibling channel behavior before selecting the narrowest owner-boundary change; stop if the repair requires a new public Plugin SDK contract or product-policy choice. Do not edit CHANGELOG.md.
+Repair the Telegram forum-topic plugin-approval route described by https://github.com/openclaw/openclaw/issues/125166. Preserve the shared fail-closed behavior for explicitly different live and persisted topic IDs, but treat a live Telegram group source with missing thread metadata as incomplete and route via the persisted topic target. Add a regression covering group source without turnSourceThreadId plus persisted Telegram topic delivery, and assert topic-origin planning rather than approver-DM fallback. Keep the repair within the Telegram owner boundary unless source inspection proves a reusable SDK contract is necessary. Do not edit CHANGELOG.md; include release-note context in the PR body. Obtain real Telegram topic proof where feasible, or document the concrete infeasibility.
 
 Likely files:
 
 - extensions/telegram/src/approval-native.ts
 - extensions/telegram/src/approval-native.test.ts
-- src/infra/exec-approval-session-target.ts
-- src/infra/exec-approval-session-target.test.ts
 
 Validation:
 
 - pnpm test extensions/telegram/src/approval-native.test.ts
-- pnpm test src/infra/exec-approval-session-target.test.ts
-- pnpm test src/gateway/server-methods/plugin-approval-turn-source-routing.e2e.test.ts
+- pnpm test src/infra/approval-native-delivery.test.ts
+- Run a real Telegram forum-topic approval flow and capture redacted after-fix delivery evidence, or document why that proof is infeasible.
 
 ## Operator Prompt
 
