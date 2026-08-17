@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T07:16:11.328Z",
+  "updated_at": "2026-08-17T07:17:32.703Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124302:5309340247:2026-08-16T19:47:22Z:re_review",
-      "comment_id": "5309340247",
-      "comment_version_key": "5309340247:2026-08-16T19:47:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124302#issuecomment-5309340247",
-      "comment_created_at": "2026-08-16T19:47:22Z",
-      "comment_updated_at": "2026-08-16T19:47:22Z",
-      "comment_body_sha256": "d3f60b7137768a855bbef13d917adca2b33717b47f9c9838ae9f1e64b9b77cff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124302,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:24:41.770Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124302:5309409529:2026-08-16T20:03:17Z:re_review",
       "comment_id": "5309409529",
@@ -31829,6 +31802,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T07:16:11.328Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1381:5311970119:2026-08-17T07:10:42Z:clawsweeper_needs_human",
+      "comment_id": "5311970119",
+      "comment_version_key": "5311970119:2026-08-17T07:10:42Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1381#issuecomment-5311970119",
+      "comment_created_at": "2026-08-17T04:49:22Z",
+      "comment_updated_at": "2026-08-17T07:10:42Z",
+      "comment_body_sha256": "5a0cba8562a6eef511377cc6846f318a5c079f62997482ab2b2b4bcfae371434",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes durable local lease claims and acquired-cache state; let the exact-head Go and race checks complete before landing. (sha=0607716c74eb3ec9f29c4380f9038be87bd93b83)",
+      "expected_head_sha": "0607716c74eb3ec9f29c4380f9038be87bd93b83",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T07:17:32.703Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-1369-static-heartbeat",
+        "head_sha": "0607716c74eb3ec9f29c4380f9038be87bd93b83",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
