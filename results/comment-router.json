@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T23:52:12.817Z",
+  "updated_at": "2026-08-17T23:52:41.765Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3021:5319641521:2026-08-17T21:01:23Z:clawsweeper_auto_repair",
-      "comment_id": "5319641521",
-      "comment_version_key": "5319641521:2026-08-17T21:01:23Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3021#issuecomment-5319641521",
-      "comment_created_at": "2026-08-17T20:05:01Z",
-      "comment_updated_at": "2026-08-17T21:01:23Z",
-      "comment_body_sha256": "1284cd0a72a74265abb0e9b2595f6a0a9ef62720e7b1ddc956706ffab033e8db",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3021,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1393312e7b1bf5f6b13c0a8c40a0a624735c2d20)",
-      "expected_head_sha": "1393312e7b1bf5f6b13c0a8c40a0a624735c2d20",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T21:02:29.867Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/2996-toon-format",
-        "head_sha": "1393312e7b1bf5f6b13c0a8c40a0a624735c2d20",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123556:5291077099:2026-08-17T21:00:41Z:clawsweeper_needs_human",
       "comment_id": "5291077099",
@@ -31229,6 +31196,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125426:5321623863:2026-08-17T23:52:01Z:re_review",
+      "comment_id": "5321623863",
+      "comment_version_key": "5321623863:2026-08-17T23:52:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125426#issuecomment-5321623863",
+      "comment_created_at": "2026-08-17T23:52:01Z",
+      "comment_updated_at": "2026-08-17T23:52:01Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125426,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T23:52:40.426Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/webchat-delivery-uncertainty",
+        "head_sha": "45d1541aeb0ef59cf35b9055e0d1a4819beeb646",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
