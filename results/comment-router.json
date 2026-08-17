@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T07:20:39.234Z",
+  "updated_at": "2026-08-17T07:20:47.690Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5255145837:2026-08-11T15:20:59Z:re_review",
-      "comment_id": "5255145837",
-      "comment_version_key": "5255145837:2026-08-11T15:20:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5255145837",
-      "comment_created_at": "2026-08-11T15:20:59Z",
-      "comment_updated_at": "2026-08-11T15:20:59Z",
-      "comment_body_sha256": "36596114fecc57d69f4e3bc800fe2b9f173f057eb437b6bcd78a1788ef486578",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:25:00.182Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:5256570796:2026-08-11T17:25:44Z:re_review",
       "comment_id": "5256570796",
@@ -32069,6 +32042,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124812:5309522525:2026-08-17T07:20:01Z:clawsweeper_needs_human",
+      "comment_id": "5309522525",
+      "comment_version_key": "5309522525:2026-08-17T07:20:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124812#issuecomment-5309522525",
+      "comment_created_at": "2026-08-16T20:30:21Z",
+      "comment_updated_at": "2026-08-17T07:20:01Z",
+      "comment_body_sha256": "96930c9cbd4f1fb5d6b57f2516054210d33c937c0effbe66a428a957557c34ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124812,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new root module is imported by launch, lifecycle, and worker paths; a missed package or container copy would turn a runtime check into an import failure. The supplied patch covers... (sha=94e9128720b7e51a5beb769ea8f7bbf9731d09e0)",
+      "expected_head_sha": "94e9128720b7e51a5beb769ea8f7bbf9731d09e0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T07:20:47.690Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-node-version-parity",
+        "head_sha": "94e9128720b7e51a5beb769ea8f7bbf9731d09e0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
