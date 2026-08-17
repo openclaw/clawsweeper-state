@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:45:09.524Z",
+  "updated_at": "2026-08-17T20:45:10.560Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119467:5187470155:2026-08-13T05:11:29Z:clawsweeper_needs_human",
-      "comment_id": "5187470155",
-      "comment_version_key": "5187470155:2026-08-13T05:11:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119467#issuecomment-5187470155",
-      "comment_created_at": "2026-08-05T04:16:08Z",
-      "comment_updated_at": "2026-08-13T05:11:29Z",
-      "comment_body_sha256": "e3009a5d17f49b9cb1840e694f4cc89dc049c95333ded0b320be63206d12ed68",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119467,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Authorize the direct parser dependency** - The plugin now directly imports htmlparser2 for attacker-controlled HTML; its version and integrity were already lockfile-resolved through lin...; Review finding: [medium] Authorize the direct parser dependency — extensions/web-readability/package.json:9 (sha=2cb75b6b2a82b1b6dd20616f489c4bcfe56adde6)",
-      "expected_head_sha": "2cb75b6b2a82b1b6dd20616f489c4bcfe56adde6",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T18:43:26.099Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/web-readability-depth-cap",
-        "head_sha": "2cb75b6b2a82b1b6dd20616f489c4bcfe56adde6",
-        "cluster_id": "automerge-openclaw-openclaw-119467",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119467.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119901:5202908645:2026-08-15T16:14:01Z:clawsweeper_needs_human",
       "comment_id": "5202908645",
@@ -29862,6 +29815,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125280:5320032572:2026-08-17T20:44:23Z:re_review",
+      "comment_id": "5320032572",
+      "comment_version_key": "5320032572:2026-08-17T20:44:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125280#issuecomment-5320032572",
+      "comment_created_at": "2026-08-17T20:44:23Z",
+      "comment_updated_at": "2026-08-17T20:44:23Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125280,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T20:45:08.794Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/group-defaults-git-worktree",
+        "head_sha": "80260ab658ff779c2daa195e81b4b74d41a3b065",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3021:5319641521:2026-08-17T20:44:18Z:clawsweeper_auto_repair",
