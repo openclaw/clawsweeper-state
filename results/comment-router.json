@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T09:36:09.262Z",
+  "updated_at": "2026-08-17T09:36:38.243Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124025:5300731845:2026-08-17T05:38:54Z:clawsweeper_needs_human",
-      "comment_id": "5300731845",
-      "comment_version_key": "5300731845:2026-08-17T05:38:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5300731845",
-      "comment_created_at": "2026-08-15T05:27:33Z",
-      "comment_updated_at": "2026-08-17T05:38:54Z",
-      "comment_body_sha256": "0ab495a35766c85c1fe99501e5e2fcb37596476bf3cbf57bea253fcd11c0a0fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124025,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A mismatched upstream Codex item-ID contract could make recovery select a live tool; local OpenClaw code aligns the IDs, but the required direct upstream verification remains unavaila... (sha=8faf4730e8592c9935f4661ec3fb0e4701f86948)",
-      "expected_head_sha": "8faf4730e8592c9935f4661ec3fb0e4701f86948",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T05:43:17.827Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/recovery-stale-tool-eligibility",
-        "head_sha": "8faf4730e8592c9935f4661ec3fb0e4701f86948",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124997:5311283989:2026-08-17T05:42:16Z:clawsweeper_auto_repair",
       "comment_id": "5311283989",
@@ -33180,6 +33147,53 @@
       "status": "skipped",
       "processed_at": "2026-08-17T09:36:09.262Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112375:5314334432:2026-08-17T09:35:45Z:re_review",
+      "comment_id": "5314334432",
+      "comment_version_key": "5314334432:2026-08-17T09:35:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5314334432",
+      "comment_created_at": "2026-08-17T09:35:45Z",
+      "comment_updated_at": "2026-08-17T09:35:45Z",
+      "comment_body_sha256": "2a309d5aa57fc0d744b79b4817fc79f020270f24e35bec47c5873b2eb5c57ddf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112375,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T09:36:35.992Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bartok9/cron-precheck-gate",
+        "head_sha": "bfe59a30654af4f8299d4cae52279240d7e51de2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
