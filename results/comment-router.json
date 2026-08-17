@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T04:39:25.912Z",
+  "updated_at": "2026-08-17T04:40:15.901Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5064003035:2026-07-23T22:05:59Z:re_review",
-      "comment_id": "5064003035",
-      "comment_version_key": "5064003035:2026-07-23T22:05:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5064003035",
-      "comment_created_at": "2026-07-23T22:05:59Z",
-      "comment_updated_at": "2026-07-23T22:05:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T01:28:53.392Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5066029470:2026-07-24T04:05:53Z:re_review",
       "comment_id": "5066029470",
@@ -31605,6 +31578,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124964:5310896643:2026-08-17T04:39:31Z:clawsweeper_needs_human",
+      "comment_id": "5310896643",
+      "comment_version_key": "5310896643:2026-08-17T04:39:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124964#issuecomment-5310896643",
+      "comment_created_at": "2026-08-17T01:51:50Z",
+      "comment_updated_at": "2026-08-17T04:39:31Z",
+      "comment_body_sha256": "e888619c798e6ff016802e49a429fffbfe69771855a8c42e72b9f4e6056df077",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124964,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Fence memory setup before registering the maintenance run (P1)** - runMemoryFlushIfNeeded awaits target-file setup before it registers and starts the system-owned run. A Gateway lifecycle replacement in that int...; Review finding: [P1] Fence memory setup before registering the maintenance run — src/agents/command/post-run.ts:285-300 - [high] Maintenance can start after lifecycle replacement... (sha=a6d92ffbec0fa246b948f9afdd30a8ebccd39c00)",
+      "expected_head_sha": "a6d92ffbec0fa246b948f9afdd30a8ebccd39c00",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T04:40:15.901Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-memory-flush-reachability",
+        "head_sha": "a6d92ffbec0fa246b948f9afdd30a8ebccd39c00",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
