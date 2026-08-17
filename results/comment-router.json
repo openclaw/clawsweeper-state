@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T08:49:23.975Z",
+  "updated_at": "2026-08-17T08:50:04.821Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123556:5311019869:2026-08-17T02:14:33Z:re_review",
-      "comment_id": "5311019869",
-      "comment_version_key": "5311019869:2026-08-17T02:14:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5311019869",
-      "comment_created_at": "2026-08-17T02:14:33Z",
-      "comment_updated_at": "2026-08-17T02:14:33Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123556,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T05:01:27.660Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125023:5311612458:2026-08-17T05:01:08Z:clawsweeper_needs_human",
       "comment_id": "5311612458",
@@ -33236,6 +33209,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T08:49:23.975Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125176:5313853734:2026-08-17T08:49:17Z:clawsweeper_needs_human",
+      "comment_id": "5313853734",
+      "comment_version_key": "5313853734:2026-08-17T08:49:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125176#issuecomment-5313853734",
+      "comment_created_at": "2026-08-17T08:49:17Z",
+      "comment_updated_at": "2026-08-17T08:49:17Z",
+      "comment_body_sha256": "f93f074b30415ce4c3b1d04c8c889ccffe0d490324d7b3f90789b85925f75525",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125176,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides focused mocked regression coverage, but no after-fix real Gateway/direct-relay trace showing an actual transport client is clea... (sha=3870829db9447feb84a4af34d415a29d719fdc30)",
+      "expected_head_sha": "3870829db9447feb84a4af34d415a29d719fdc30",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T08:50:04.821Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-browser-relay-shutdown",
+        "head_sha": "3870829db9447feb84a4af34d415a29d719fdc30",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
