@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T04:49:26.058Z",
+  "updated_at": "2026-08-17T04:50:04.142Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114925:5101065295:2026-07-28T07:09:32Z:re_review",
-      "comment_id": "5101065295",
-      "comment_version_key": "5101065295:2026-07-28T07:09:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114925#issuecomment-5101065295",
-      "comment_created_at": "2026-07-28T07:09:32Z",
-      "comment_updated_at": "2026-07-28T07:09:32Z",
-      "comment_body_sha256": "9771d8652749e47ff5e2ce594fecf825cac8fcf72102475b3a0e3bc05b39a647",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114925,
-      "author": "sijie-Z",
-      "author_id": 177101475,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T01:32:54.171Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114925:5101605917:2026-07-28T08:10:20Z:re_review",
       "comment_id": "5101605917",
@@ -31757,6 +31730,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1381:5311970119:2026-08-17T04:49:22Z:clawsweeper_auto_repair",
+      "comment_id": "5311970119",
+      "comment_version_key": "5311970119:2026-08-17T04:49:22Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1381#issuecomment-5311970119",
+      "comment_created_at": "2026-08-17T04:49:22Z",
+      "comment_updated_at": "2026-08-17T04:49:22Z",
+      "comment_body_sha256": "216f449c51f4be33e1c6ae552270d36f49dc4c4caffabad65b380dd4953686d5",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cbcab9a769ead485b6eb1d2114025c9633b887e0)",
+      "expected_head_sha": "cbcab9a769ead485b6eb1d2114025c9633b887e0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T04:50:04.142Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-1369-static-heartbeat",
+        "head_sha": "cbcab9a769ead485b6eb1d2114025c9633b887e0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
