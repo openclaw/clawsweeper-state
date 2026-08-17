@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:09:53.062Z",
+  "updated_at": "2026-08-17T06:10:18.937Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124025:5300731845:2026-08-17T03:45:12Z:clawsweeper_needs_human",
-      "comment_id": "5300731845",
-      "comment_version_key": "5300731845:2026-08-17T03:45:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5300731845",
-      "comment_created_at": "2026-08-15T05:27:33Z",
-      "comment_updated_at": "2026-08-17T03:45:12Z",
-      "comment_body_sha256": "1e98ad81ba6dec8bf65d0f451d64d551c0c9db710f23f67bf6c5768c99657e49",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124025,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Recovery can incorrectly treat active work as stale if Codex 0.147.0 does not preserve the same item ID between native-tool lifecycle events and later progress notifications. (sha=e20f263a9877b30bf2703f79c46975171e5b320a)",
-      "expected_head_sha": "e20f263a9877b30bf2703f79c46975171e5b320a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T03:45:54.407Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/recovery-stale-tool-eligibility",
-        "head_sha": "e20f263a9877b30bf2703f79c46975171e5b320a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125009:5311406941:2026-08-17T03:45:28Z:clawsweeper_needs_human",
       "comment_id": "5311406941",
@@ -31072,6 +31039,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1381:5311970119:2026-08-17T06:09:33Z:clawsweeper_needs_human",
+      "comment_id": "5311970119",
+      "comment_version_key": "5311970119:2026-08-17T06:09:33Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1381#issuecomment-5311970119",
+      "comment_created_at": "2026-08-17T04:49:22Z",
+      "comment_updated_at": "2026-08-17T06:09:33Z",
+      "comment_body_sha256": "12c27e1b8bcd6b5112555d4e27205a38342aca061d608dcd52e40061852c6ac3",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the durable lifecycle state used by retained static SSH leases; the claim format is unchanged, but compatibility depends on preserving exact-claim validation and cache co... (sha=40e712e17b1b06f6976ea777a5ee5d86b361b5d5)",
+      "expected_head_sha": "40e712e17b1b06f6976ea777a5ee5d86b361b5d5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T06:10:18.937Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-1369-static-heartbeat",
+        "head_sha": "40e712e17b1b06f6976ea777a5ee5d86b361b5d5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
