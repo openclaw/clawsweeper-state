@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:02:14.774Z",
+  "updated_at": "2026-08-17T03:02:50.808Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112423:5078456977:2026-07-25T12:19:04Z:re_review",
-      "comment_id": "5078456977",
-      "comment_version_key": "5078456977:2026-07-25T12:19:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/112423#issuecomment-5078456977",
-      "comment_created_at": "2026-07-25T12:19:04Z",
-      "comment_updated_at": "2026-07-25T12:19:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112423,
-      "author": "HermanZeng",
-      "author_id": 25895921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T21:55:27.992Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112423:5078670054:2026-07-25T13:31:49Z:re_review",
       "comment_id": "5078670054",
@@ -32563,6 +32536,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124997:5311283989:2026-08-17T03:01:57Z:clawsweeper_needs_human",
+      "comment_id": "5311283989",
+      "comment_version_key": "5311283989:2026-08-17T03:01:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124997#issuecomment-5311283989",
+      "comment_created_at": "2026-08-17T03:01:57Z",
+      "comment_updated_at": "2026-08-17T03:01:57Z",
+      "comment_body_sha256": "123a2158b97093a43f5fdbfdd3d1aa6211e773490df5c2a8d9e1978dabcb350e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124997,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The user-visible sidebar and quoted-marker behavior has no after-fix real run on this head; the submitted plan postpones that evidence until after merge. (sha=7ca7951b9b307b57dd004eee0cc1163ee03ae345)",
+      "expected_head_sha": "7ca7951b9b307b57dd004eee0cc1163ee03ae345",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T03:02:50.808Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/marker-display-projection",
+        "head_sha": "7ca7951b9b307b57dd004eee0cc1163ee03ae345",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
