@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T05:08:27.780Z",
+  "updated_at": "2026-08-17T05:08:32.977Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:93388:4710732152:2026-08-17T02:26:50Z:clawsweeper_auto_repair",
-      "comment_id": "4710732152",
-      "comment_version_key": "4710732152:2026-08-17T02:26:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/93388#issuecomment-4710732152",
-      "comment_created_at": "2026-06-15T17:50:21Z",
-      "comment_updated_at": "2026-08-17T02:26:50Z",
-      "comment_body_sha256": "3eae43efee80a877e99f5e85d5daf1c8c04dfadf7041f1d0c1f95b639c728fef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 93388,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bb5b7bd4a6d5bdd9d88cf431fddb5421127c03d0)",
-      "expected_head_sha": "bb5b7bd4a6d5bdd9d88cf431fddb5421127c03d0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T02:38:11.572Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/google-stable-image-model",
-        "head_sha": "bb5b7bd4a6d5bdd9d88cf431fddb5421127c03d0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96513:4791925842:2026-08-17T02:28:13Z:clawsweeper_auto_repair",
       "comment_id": "4791925842",
@@ -31135,6 +31102,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124557:5312075186:2026-08-17T05:06:22Z:re_review",
+      "comment_id": "5312075186",
+      "comment_version_key": "5312075186:2026-08-17T05:06:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124557#issuecomment-5312075186",
+      "comment_created_at": "2026-08-17T05:06:22Z",
+      "comment_updated_at": "2026-08-17T05:06:22Z",
+      "comment_body_sha256": "83a3844b977882b45803594fb3055fd0c600c82d528ee049bf32b88ec0b7e7d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124557,
+      "author": "sercada",
+      "author_id": 24389792,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T05:08:30.802Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/plugin-hook-authenticated-inbound-identity",
+        "head_sha": "53c83288940fdce7c347b8a53022bb4e771962c4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
