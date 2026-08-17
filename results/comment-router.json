@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T19:03:37.981Z",
+  "updated_at": "2026-08-17T19:03:46.677Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125299:5317235898:2026-08-17T16:09:37Z:clawsweeper_needs_human",
-      "comment_id": "5317235898",
-      "comment_version_key": "5317235898:2026-08-17T16:09:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125299#issuecomment-5317235898",
-      "comment_created_at": "2026-08-17T15:06:36Z",
-      "comment_updated_at": "2026-08-17T16:09:37Z",
-      "comment_body_sha256": "429d2b1576aded3de1900490148f54bf157e00bf377d9c111b7c2365db0b61be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125299,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes a missing required indexed manifest from a silent healthy result to an error and exit code 1, so post-upgrade automation must accept the repair-required... (sha=72db2b4bf7d0d841754892e4cd2b57fae2f6f715)",
-      "expected_head_sha": "72db2b4bf7d0d841754892e4cd2b57fae2f6f715",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T16:20:47.133Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-post-upgrade-missing-manifest",
-        "head_sha": "72db2b4bf7d0d841754892e4cd2b57fae2f6f715",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125300:5317238976:2026-08-17T16:15:07Z:clawsweeper_needs_human",
       "comment_id": "5317238976",
@@ -30693,6 +30660,53 @@
         "kind": "pull_request",
         "branch": "jesse/session-bootstrap-concurrency",
         "head_sha": "84e99fc9a2855a5dd3f23d83227b3bbaf00275c4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123535:5318975165:2026-08-17T19:02:48Z:re_review",
+      "comment_id": "5318975165",
+      "comment_version_key": "5318975165:2026-08-17T19:02:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5318975165",
+      "comment_created_at": "2026-08-17T19:02:48Z",
+      "comment_updated_at": "2026-08-17T19:02:48Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123535,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T19:03:44.208Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-performance",
+        "head_sha": "c612458a3fc2028149c9ea061d63095758d5aa74",
         "cluster_id": null,
         "job_path": null
       },
