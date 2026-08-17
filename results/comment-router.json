@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:45:24.711Z",
+  "updated_at": "2026-08-17T03:45:54.407Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124298:5310158549:2026-08-16T23:11:57Z:re_review",
-      "comment_id": "5310158549",
-      "comment_version_key": "5310158549:2026-08-16T23:11:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124298#issuecomment-5310158549",
-      "comment_created_at": "2026-08-16T23:11:57Z",
-      "comment_updated_at": "2026-08-16T23:11:57Z",
-      "comment_body_sha256": "6b86361b668a3442299dc2b262738cc81beea34c033fbc99c8cf4451d17a19a3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124298,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: literal current-head real gateway/ui proof and 411-test rerun are now in the pr body for 0e864650d862ba86fb3a10c8a677802cc6719fab",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T23:18:51.161Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-queued-message-edit-cancel",
-        "head_sha": "0e864650d862ba86fb3a10c8a677802cc6719fab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124893:5310177084:2026-08-16T23:16:40Z:re_review",
       "comment_id": "5310177084",
@@ -32361,6 +32314,39 @@
         "kind": "pull_request",
         "branch": "steipete/hetzner-snapshot-lifecycle-20c847",
         "head_sha": "2097adae657211ce966a96288dd74fa77ebe8a6e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124025:5300731845:2026-08-17T03:45:12Z:clawsweeper_needs_human",
+      "comment_id": "5300731845",
+      "comment_version_key": "5300731845:2026-08-17T03:45:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5300731845",
+      "comment_created_at": "2026-08-15T05:27:33Z",
+      "comment_updated_at": "2026-08-17T03:45:12Z",
+      "comment_body_sha256": "1e98ad81ba6dec8bf65d0f451d64d551c0c9db710f23f67bf6c5768c99657e49",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Recovery can incorrectly treat active work as stale if Codex 0.147.0 does not preserve the same item ID between native-tool lifecycle events and later progress notifications. (sha=e20f263a9877b30bf2703f79c46975171e5b320a)",
+      "expected_head_sha": "e20f263a9877b30bf2703f79c46975171e5b320a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T03:45:54.407Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-stale-tool-eligibility",
+        "head_sha": "e20f263a9877b30bf2703f79c46975171e5b320a",
         "cluster_id": null,
         "job_path": null
       }
