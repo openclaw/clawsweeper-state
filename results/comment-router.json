@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T22:52:27.594Z",
+  "updated_at": "2026-08-17T22:53:22.486Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125368:5318851168:2026-08-17T19:51:10Z:clawsweeper_needs_human",
-      "comment_id": "5318851168",
-      "comment_version_key": "5318851168:2026-08-17T19:51:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125368#issuecomment-5318851168",
-      "comment_created_at": "2026-08-17T18:51:46Z",
-      "comment_updated_at": "2026-08-17T19:51:10Z",
-      "comment_body_sha256": "ab47bddaaf32d012737e0b2d1dc944e31fe47b384cbc7f8b3f6a39e8426fcced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125368,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production CSS is net +10 lines; the shared logical-radius rule is the smallest clear replacement for duplicated physical-radius rules across both directions. (sha=8e5b4d076d768186f134c19867d8f0141f2f2cb2)",
-      "expected_head_sha": "8e5b4d076d768186f134c19867d8f0141f2f2cb2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T19:52:06.172Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/balance-pill-padding-and-open-pr",
-        "head_sha": "8e5b4d076d768186f134c19867d8f0141f2f2cb2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112945:5075714857:2026-08-17T19:51:31Z:clawsweeper_auto_repair",
       "comment_id": "5075714857",
@@ -31297,6 +31264,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124429:5321172179:2026-08-17T22:52:28Z:re_review",
+      "comment_id": "5321172179",
+      "comment_version_key": "5321172179:2026-08-17T22:52:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124429#issuecomment-5321172179",
+      "comment_created_at": "2026-08-17T22:52:28Z",
+      "comment_updated_at": "2026-08-17T22:52:28Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124429,
+      "author": "jjjhenriksen",
+      "author_id": 179184921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T22:53:19.709Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-issue-121481",
+        "head_sha": "94151cb850f3a4fbf467f92ecc51e5475220db92",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
