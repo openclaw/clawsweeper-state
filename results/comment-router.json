@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:34:57.340Z",
+  "updated_at": "2026-08-17T06:37:20.882Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124701:5308699040:2026-08-17T04:00:15Z:clawsweeper_needs_human",
-      "comment_id": "5308699040",
-      "comment_version_key": "5308699040:2026-08-17T04:00:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124701#issuecomment-5308699040",
-      "comment_created_at": "2026-08-16T17:26:57Z",
-      "comment_updated_at": "2026-08-17T04:00:15Z",
-      "comment_body_sha256": "1f367d1cd94d84cd64e959e2d078d2f976b632245c2649e9e5fc123693a5d099",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124701,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests and static checks, but no redacted after-fix CLI or runtime trace from an installed-plugin setup. After addin... (sha=76ea477d8cafb9102e1d09d512c2d5d559614e73)",
-      "expected_head_sha": "76ea477d8cafb9102e1d09d512c2d5d559614e73",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:01:01.342Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-89606-plugin-registry",
-        "head_sha": "76ea477d8cafb9102e1d09d512c2d5d559614e73",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125024:5311612226:2026-08-17T04:01:57Z:clawsweeper_needs_human",
       "comment_id": "5311612226",
@@ -31300,6 +31267,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125072:5312294467:2026-08-17T06:36:26Z:clawsweeper_needs_human",
+      "comment_id": "5312294467",
+      "comment_version_key": "5312294467:2026-08-17T06:36:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125072#issuecomment-5312294467",
+      "comment_created_at": "2026-08-17T05:41:19Z",
+      "comment_updated_at": "2026-08-17T06:36:26Z",
+      "comment_body_sha256": "a09ce5f513cb3f90a8a26ddba05588059c869171f5f2df4e81eb35f7507e28d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125072,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds production state in two intentionally parallel producer implementations (+123 net production lines); their event and buffering ownership differs, so the shared termin... (sha=dcde18c27162beb57d6e21603eb62b6a4bf2dcf7)",
+      "expected_head_sha": "dcde18c27162beb57d6e21603eb62b6a4bf2dcf7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T06:37:20.882Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/interleaved-reasoning-visible-text",
+        "head_sha": "dcde18c27162beb57d6e21603eb62b6a4bf2dcf7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
