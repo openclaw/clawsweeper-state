@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:01:49.654Z",
+  "updated_at": "2026-08-17T20:02:21.880Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119265:5180980780:2026-08-04T16:04:10Z:clawsweeper_needs_human",
-      "comment_id": "5180980780",
-      "comment_version_key": "5180980780:2026-08-04T16:04:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119265#issuecomment-5180980780",
-      "comment_created_at": "2026-08-04T15:11:55Z",
-      "comment_updated_at": "2026-08-04T16:04:10Z",
-      "comment_body_sha256": "3614692ec5e62ed9ae0f9ba177428a4757991b5d36dca1d6b0c496fe5767099a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119265,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - This PR already owns the narrow repair; the explicit human-review label calls for maintainer review of the exact head rather than another automated repair. (sha=3f728d64ab6094ee7d6dce298b40ed66bfd88a31)",
-      "expected_head_sha": "3f728d64ab6094ee7d6dce298b40ed66bfd88a31",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T17:55:43.827Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119253",
-        "head_sha": "3f728d64ab6094ee7d6dce298b40ed66bfd88a31",
-        "cluster_id": "issue-openclaw-openclaw-119253",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119253.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125351:5318180366:2026-08-17T17:27:36Z:clawsweeper_needs_human",
       "comment_id": "5318180366",
@@ -29615,6 +29568,53 @@
       "status": "skipped",
       "processed_at": "2026-08-17T20:01:49.654Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123556:5319607562:2026-08-17T20:01:37Z:re_review",
+      "comment_id": "5319607562",
+      "comment_version_key": "5319607562:2026-08-17T20:01:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5319607562",
+      "comment_created_at": "2026-08-17T20:01:37Z",
+      "comment_updated_at": "2026-08-17T20:01:37Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123556,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T20:02:19.525Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-concurrency",
+        "head_sha": "bf8c06cf50b1326184cc36c1e1b2e111314ae0b0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
