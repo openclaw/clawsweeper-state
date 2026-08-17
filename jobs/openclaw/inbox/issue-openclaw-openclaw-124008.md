@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair New Session so its model picker loads the existing configured model catalog and includes dynamically discovered provider rows. Preserve chat.metadata as a prepared-only chat-startup projection; do not change provider routing, configuration, or Gateway protocol. First establish a failing regression: a static metadata-sized catalog must not replace a dynamic model returned by models.list for the same agent. Preserve automatic retry only for canonical startup-sidecars unavailability, preferably by extracting or reusing one conceptual retry path instead of duplicating it. Keep agent scoping, stale-result ownership, preference restoration, and error behavior. Treat https://github.com/openclaw/openclaw/pull/124319 as unmerged source material only. Put release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the existing New Session configured-model catalog bug. Establish a failing regression where prepared chat metadata omits dynamically discovered provider rows but models.list with view=configured includes them. Keep src/gateway/server-methods/chat-metadata-runtime.ts prepared-only: do not add live provider discovery to chat startup. In ui/src/pages/new-session/model-control.ts, reuse the existing exact configured-catalog helper in ui/src/pages/chat/models.ts rather than creating a second cache or catalog policy. Preserve agent scoping, loading/error state, preference restoration, and stale-request ownership. Add focused coverage, validate the shared helper and New Session path, capture sanitized UI proof from an isolated Gateway or mock-Gateway surface, and stop if a config, protocol, or provider-policy decision becomes necessary. Include release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
@@ -75,16 +75,12 @@ Likely files:
 - ui/src/pages/new-session/model-control.test.ts
 - ui/src/pages/chat/models.ts
 - ui/src/pages/chat/models.test.ts
-- ui/src/lib/chat/chat-metadata-store.ts
-- ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
 
 Validation:
 
 - pnpm test ui/src/pages/new-session/model-control.test.ts
 - pnpm test ui/src/pages/chat/models.test.ts
-- pnpm test ui/src/lib/chat/chat-metadata-store.test.ts
-- pnpm test ui/src/e2e/new-session-page.catalog-reconnect.e2e.test.ts
-- pnpm check:changed -- ui/src/pages/new-session/model-control.ts ui/src/pages/new-session/model-control.test.ts ui/src/pages/chat/models.ts
+- Run the applicable New Session mock-Gateway or isolated Control UI proof with a prepared subset and configured discovered-provider catalog.
 
 ## Operator Prompt
 
