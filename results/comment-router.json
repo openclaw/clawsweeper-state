@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:05:03.974Z",
+  "updated_at": "2026-08-17T03:06:16.384Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124785:5309341319:2026-08-16T21:58:04Z:clawsweeper_needs_human",
-      "comment_id": "5309341319",
-      "comment_version_key": "5309341319:2026-08-16T21:58:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124785#issuecomment-5309341319",
-      "comment_created_at": "2026-08-16T19:47:38Z",
-      "comment_updated_at": "2026-08-16T21:58:04Z",
-      "comment_body_sha256": "0ecf97b02b772bda5c5ce2518dd6103f309c2a0b1f9e96ab18a27bbabe3f9785",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124785,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This reviewer could not materialize the exact PR tree from the partial clone, so the required Control UI owner review should confirm the supplied exact-head proof and green checks bef... (sha=24048b6aa3a056fc136c8ebbbef636576b93e30f)",
-      "expected_head_sha": "24048b6aa3a056fc136c8ebbbef636576b93e30f",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T22:01:15.004Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ui-mobile-side-chat-hitbox",
-        "head_sha": "24048b6aa3a056fc136c8ebbbef636576b93e30f",
-        "cluster_id": "automerge-openclaw-openclaw-124785",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124785.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124796:5309396378:2026-08-16T21:54:42Z:clawsweeper_auto_repair",
       "comment_id": "5309396378",
@@ -32545,6 +32498,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125002:5311300889:2026-08-17T03:05:27Z:clawsweeper_needs_human",
+      "comment_id": "5311300889",
+      "comment_version_key": "5311300889:2026-08-17T03:05:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125002#issuecomment-5311300889",
+      "comment_created_at": "2026-08-17T03:05:27Z",
+      "comment_updated_at": "2026-08-17T03:05:27Z",
+      "comment_body_sha256": "46348f50f22157909b74955935f082d03f68f61862c6aef33165e6ea918d9d69",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125002,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body describes an after-fix live observation, but needs a redacted terminal capture, log artifact, or recording that shows an abor...; Review finding: [P1] Bound the SQLite transcript read before projecting history — src/agents/cli-runner/session-history.ts:507-512 - [P1] Preserve auth invalidation when a binding... (sha=06ef40ebeeeee1a8bb4c2fbb6a6c8d5f57da6f67)",
+      "expected_head_sha": "06ef40ebeeeee1a8bb4c2fbb6a6c8d5f57da6f67",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T03:06:16.384Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-reseed-sqlite-store",
+        "head_sha": "06ef40ebeeeee1a8bb4c2fbb6a6c8d5f57da6f67",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
