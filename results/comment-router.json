@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:31:48.318Z",
+  "updated_at": "2026-08-17T03:32:05.415Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118977:5310066029:2026-08-16T22:48:19Z:re_review",
-      "comment_id": "5310066029",
-      "comment_version_key": "5310066029:2026-08-16T22:48:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118977#issuecomment-5310066029",
-      "comment_created_at": "2026-08-16T22:48:19Z",
-      "comment_updated_at": "2026-08-16T22:48:19Z",
-      "comment_body_sha256": "d2137675c3060d18dca6c23ddeecb9b9698800850a543239fb7a77043e261b20",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118977,
-      "author": "LauraGPT",
-      "author_id": 18321252,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T22:48:55.491Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/funasr-websocket-subprotocol-20260804",
-        "head_sha": "e59abea6ff31089a526f792c83d40f720440d82f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123877:5299105985:2026-08-16T22:48:12Z:clawsweeper_needs_human",
       "comment_id": "5299105985",
@@ -32460,6 +32413,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1170:5297118616:2026-08-17T03:31:09Z:clawsweeper_needs_human",
+      "comment_id": "5297118616",
+      "comment_version_key": "5297118616:2026-08-17T03:31:09Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1170#issuecomment-5297118616",
+      "comment_created_at": "2026-08-14T19:04:20Z",
+      "comment_updated_at": "2026-08-17T03:31:09Z",
+      "comment_body_sha256": "9bc86768283aefa188332e80380e231d41c72002e59a0b0128686a0195a5c6ec",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1170,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current PR body omits the Docker-backed Crabbox provider, image, lease, artifact, and limits required by repository policy for this review-publication path. (sha=80bb018b91f89d518785c7468f8deea3d2f7fa11)",
+      "expected_head_sha": "80bb018b91f89d518785c7468f8deea3d2f7fa11",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T03:32:05.415Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/structured-checkout-access",
+        "head_sha": "80bb018b91f89d518785c7468f8deea3d2f7fa11",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
