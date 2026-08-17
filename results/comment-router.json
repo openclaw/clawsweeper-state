@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T02:50:12.145Z",
+  "updated_at": "2026-08-17T02:50:52.492Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118309:5160996295:2026-08-15T17:16:57Z:clawsweeper_auto_repair",
-      "comment_id": "5160996295",
-      "comment_version_key": "5160996295:2026-08-15T17:16:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118309#issuecomment-5160996295",
-      "comment_created_at": "2026-08-03T00:05:57Z",
-      "comment_updated_at": "2026-08-15T17:16:57Z",
-      "comment_body_sha256": "faf78f1c482402ad72414250b9fd4472b1b6d9603264aabf30b34457ee9a4c0a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118309,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T21:38:58.192Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-118185",
-        "head_sha": "bb567cd88c9f8f05db950a54d6ed40dc37f68561",
-        "cluster_id": "automerge-openclaw-openclaw-118309",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118309.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123935:5300068136:2026-08-16T21:36:34Z:clawsweeper_auto_repair",
       "comment_id": "5300068136",
@@ -32511,6 +32478,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124978:5311107604:2026-08-17T02:43:17Z:clawsweeper_needs_human",
+      "comment_id": "5311107604",
+      "comment_version_key": "5311107604:2026-08-17T02:43:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124978#issuecomment-5311107604",
+      "comment_created_at": "2026-08-17T02:31:43Z",
+      "comment_updated_at": "2026-08-17T02:43:17Z",
+      "comment_body_sha256": "e2649998aac6a839e5d5e150980a2384aa27ad4db0834e4a390b206bc93217a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124978,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Use a non-throwing lookup for bare-session ownership (P1)** - For an explicit multi-agent roster, resolveDefaultAgentId intentionally throws because there is no implicit owner. This predicate only decides whethe...; Review finding: [P1] Use a non-throwing lookup for bare-session ownership — extensions/codex/src/app-server/native-execution-policy.ts:172 - [P2] Remove the unsupported per-agent... (sha=4abef700844ade3a69aa2ef3310afe5eacde8006)",
+      "expected_head_sha": "4abef700844ade3a69aa2ef3310afe5eacde8006",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T02:50:52.492Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-codex-agent-config-reader",
+        "head_sha": "4abef700844ade3a69aa2ef3310afe5eacde8006",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
