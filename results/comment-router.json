@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T19:50:01.617Z",
+  "updated_at": "2026-08-17T19:50:37.115Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118152:5160061935:2026-08-17T17:34:07Z:clawsweeper_auto_repair",
-      "comment_id": "5160061935",
-      "comment_version_key": "5160061935:2026-08-17T17:34:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118152#issuecomment-5160061935",
-      "comment_created_at": "2026-08-02T19:52:32Z",
-      "comment_updated_at": "2026-08-17T17:34:07Z",
-      "comment_body_sha256": "2bf5cc1f825c2308109085aa4ca6902346675ccba20f59c215391de1791050c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118152,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=43763b8b8e6ed84089d526ba4705839f822ffe69)",
-      "expected_head_sha": "43763b8b8e6ed84089d526ba4705839f822ffe69",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T17:55:43.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/history-limit-schema-parity",
-        "head_sha": "43763b8b8e6ed84089d526ba4705839f822ffe69",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118157:5160078936:2026-08-17T17:32:41Z:clawsweeper_needs_human",
       "comment_id": "5160078936",
@@ -29529,6 +29496,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:97175:5319489059:2026-08-17T19:49:43Z:re_review",
+      "comment_id": "5319489059",
+      "comment_version_key": "5319489059:2026-08-17T19:49:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5319489059",
+      "comment_created_at": "2026-08-17T19:49:43Z",
+      "comment_updated_at": "2026-08-17T19:49:43Z",
+      "comment_body_sha256": "808c60c70da67e2db36ec87e6907a8e243670e740820566ae1317385486bb9e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 97175,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — new head 6b30a878a2. since the 1d703b227a review: rebased onto latest upstream/main (clean) and resolved both code-class ci failures — registry.ts is back under the max-lines threshold (quarantine-state extracted to a sibling module with the public re-export preserved), and the two assertion-safety ratchet violations were replaced with type-safe constructs (in-operator narrowing and a direct process annotation). oxlint, the assertion-safety ratchet in ci mode, tsgo, and the affected suites are all green locally. the two identity-related p1 findings are under active analysis with a proposal pending review. please re-rate against the current head",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T19:50:29.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/turn-maintenance-per-task-timeout",
+        "head_sha": "6b30a878a2037f34814d963d997d0c799c1f663e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
