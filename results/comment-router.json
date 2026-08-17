@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T19:47:05.846Z",
+  "updated_at": "2026-08-17T19:47:08.114Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118696:5167474418:2026-08-08T05:49:11Z:clawsweeper_auto_merge",
-      "comment_id": "5167474418",
-      "comment_version_key": "5167474418:2026-08-08T05:49:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118696#issuecomment-5167474418",
-      "comment_created_at": "2026-08-03T14:10:30Z",
-      "comment_updated_at": "2026-08-08T05:49:11Z",
-      "comment_body_sha256": "07bd8f5599e0b542dace0401d62acdd61cfef7cbad158991732c183ff5be3b96",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118696,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=6516d910a1365e757acee46c6c5950c3368e3f0b); PR has merge conflicts and needs a cloud rebase repair before automerge",
-      "expected_head_sha": "6516d910a1365e757acee46c6c5950c3368e3f0b",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T17:53:58.223Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-118652",
-        "head_sha": "6516d910a1365e757acee46c6c5950c3368e3f0b",
-        "cluster_id": "automerge-openclaw-openclaw-118696",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118696.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118696.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119718:5196803797:2026-08-17T11:48:40Z:clawsweeper_auto_repair",
       "comment_id": "5196803797",
@@ -29684,6 +29637,39 @@
         "kind": "pull_request",
         "branch": "vyctorbrzezowski/transcript-fence-visual",
         "head_sha": "9c3ec684ecb268825ba7cbecdcaf114dc8234b08",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/uirouter:19:5196115695:2026-08-17T19:46:04Z:clawsweeper_needs_human",
+      "comment_id": "5196115695",
+      "comment_version_key": "5196115695:2026-08-17T19:46:04Z",
+      "comment_url": "https://github.com/openclaw/uirouter/pull/19#issuecomment-5196115695",
+      "comment_created_at": "2026-08-05T19:03:11Z",
+      "comment_updated_at": "2026-08-17T19:46:04Z",
+      "comment_body_sha256": "68eaf2a9bf1033ae23e47133028ae45e4b71c94ad89863a3105af891808dd697",
+      "repo": "openclaw/uirouter",
+      "issue_number": 19,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Review replacement action code before trusted publishing** - The updated pnpm setup action executes before publication in a job with id-token permission; its upstream revision needs aut...; Review finding: [medium] Review replacement action code before trusted publishing — .github/workflows/release.yml:33 (sha=e1942b55f87f605619cad577e6cb8ea6aa007e73)",
+      "expected_head_sha": "e1942b55f87f605619cad577e6cb8ea6aa007e73",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T19:47:08.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-7d7dfe0edd",
+        "head_sha": "e1942b55f87f605619cad577e6cb8ea6aa007e73",
         "cluster_id": null,
         "job_path": null
       }
