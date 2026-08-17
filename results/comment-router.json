@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T07:49:44.231Z",
+  "updated_at": "2026-08-17T07:50:22.865Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125025:5311672184:2026-08-17T04:20:51Z:clawsweeper_needs_human",
-      "comment_id": "5311672184",
-      "comment_version_key": "5311672184:2026-08-17T04:20:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125025#issuecomment-5311672184",
-      "comment_created_at": "2026-08-17T04:10:17Z",
-      "comment_updated_at": "2026-08-17T04:20:51Z",
-      "comment_body_sha256": "9e0a2c16034b6a158d43d5a9d6afca7ecfcd956e0a173b6647129b97baee47dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125025,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Do not equate concealment-scored ASR with execution safety (P1)** - This metric counts success only when harmful execution is also concealed, so harmful actions that remain visible count as failures. It cannot s...; Review finding: [P1] Do not equate concealment-scored ASR with execution safety — docs/gateway/security/index.md:231 - [P2] Cite the security benchmark — docs/gateway/security/ind... (sha=013ccbfe14db5a1f4a561cec76d5ef099768c638)",
-      "expected_head_sha": "013ccbfe14db5a1f4a561cec76d5ef099768c638",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:34:24.698Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/cron-triggers-default-on",
-        "head_sha": "013ccbfe14db5a1f4a561cec76d5ef099768c638",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125014:5311702921:2026-08-17T04:31:51Z:clawsweeper_auto_repair",
       "comment_id": "5311702921",
@@ -32280,6 +32247,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124014:5313294349:2026-08-17T07:49:37Z:re_review",
+      "comment_id": "5313294349",
+      "comment_version_key": "5313294349:2026-08-17T07:49:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5313294349",
+      "comment_created_at": "2026-08-17T07:49:37Z",
+      "comment_updated_at": "2026-08-17T07:49:37Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124014,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T07:50:21.233Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/auth-reauth-state-reset",
+        "head_sha": "ec49af3d4e2ed0dae8a8413355f83962fbc38383",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
