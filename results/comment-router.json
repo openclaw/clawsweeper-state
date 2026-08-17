@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T09:38:39.739Z",
+  "updated_at": "2026-08-17T09:39:07.018Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124025:5312315272:2026-08-17T05:44:48Z:re_review",
-      "comment_id": "5312315272",
-      "comment_version_key": "5312315272:2026-08-17T05:44:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5312315272",
-      "comment_created_at": "2026-08-17T05:44:48Z",
-      "comment_updated_at": "2026-08-17T05:44:48Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124025,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T05:45:35.957Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/recovery-stale-tool-eligibility",
-        "head_sha": "8faf4730e8592c9935f4661ec3fb0e4701f86948",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1170:5312318250:2026-08-17T05:45:17Z:re_review",
       "comment_id": "5312318250",
@@ -33176,6 +33129,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125178:5313906633:2026-08-17T09:35:01Z:clawsweeper_needs_human",
+      "comment_id": "5313906633",
+      "comment_version_key": "5313906633:2026-08-17T09:35:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125178#issuecomment-5313906633",
+      "comment_created_at": "2026-08-17T08:55:04Z",
+      "comment_updated_at": "2026-08-17T09:35:01Z",
+      "comment_body_sha256": "ee2e39467ff161cd6b5ba6c4ab3e77806e97363b3e5f223cce66c359d0149ecc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125178,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and required checks are still in progress; merge only after GitHub confirms a clean result and green checks for this head. (sha=f941c3dd49b19ae096a3616665b31fe2c60b5617)",
+      "expected_head_sha": "f941c3dd49b19ae096a3616665b31fe2c60b5617",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T09:39:07.018Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/gateway-readonly-auth-proof",
+        "head_sha": "a36a1d6c0fc8505261b2b2a59b066c477cb58f39",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
