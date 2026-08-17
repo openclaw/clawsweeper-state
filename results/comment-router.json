@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T05:31:59.472Z",
+  "updated_at": "2026-08-17T05:32:52.234Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5311276595:2026-08-17T03:00:32Z:re_review",
-      "comment_id": "5311276595",
-      "comment_version_key": "5311276595:2026-08-17T03:00:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5311276595",
-      "comment_created_at": "2026-08-17T03:00:32Z",
-      "comment_updated_at": "2026-08-17T03:00:32Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T03:01:14.021Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-performance",
-        "head_sha": "52177068d6633ed57b74d7b0b646814d395c8a9c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5311276485:2026-08-17T03:00:31Z:re_review",
       "comment_id": "5311276485",
@@ -31163,6 +31116,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1381:5311970119:2026-08-17T05:32:05Z:clawsweeper_auto_repair",
+      "comment_id": "5311970119",
+      "comment_version_key": "5311970119:2026-08-17T05:32:05Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1381#issuecomment-5311970119",
+      "comment_created_at": "2026-08-17T04:49:22Z",
+      "comment_updated_at": "2026-08-17T05:32:05Z",
+      "comment_body_sha256": "ebaa166abb00338408194ada64a9e34590e29a34c060b7b79779718fd60a5959",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=262a326cc490ad093cdc3bdd3495ae644ac131c4)",
+      "expected_head_sha": "262a326cc490ad093cdc3bdd3495ae644ac131c4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T05:32:52.234Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-1369-static-heartbeat",
+        "head_sha": "262a326cc490ad093cdc3bdd3495ae644ac131c4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
