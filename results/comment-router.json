@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T07:09:14.140Z",
+  "updated_at": "2026-08-17T07:10:22.458Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5147868280:2026-07-31T22:06:29Z:re_review",
-      "comment_id": "5147868280",
-      "comment_version_key": "5147868280:2026-07-31T22:06:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5147868280",
-      "comment_created_at": "2026-07-31T22:06:29Z",
-      "comment_updated_at": "2026-07-31T22:06:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:17:27.669Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5148797970:2026-08-01T01:14:20Z:re_review",
       "comment_id": "5148797970",
@@ -31827,6 +31800,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125135:5312944841:2026-08-17T07:09:42Z:clawsweeper_needs_human",
+      "comment_id": "5312944841",
+      "comment_version_key": "5312944841:2026-08-17T07:09:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125135#issuecomment-5312944841",
+      "comment_created_at": "2026-08-17T07:09:42Z",
+      "comment_updated_at": "2026-08-17T07:09:42Z",
+      "comment_body_sha256": "c33e2d3124d7852e1d9b377b7ba0370e02768c72c804fd5d461592419d427925",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head Android and native i18n CI is still running; merge only after it validates the generated catalogs. The local partial clone could not hydrate the PR head because github.com... (sha=9a1e1bc89f30635d8822ef8f6ef1809bdf215144)",
+      "expected_head_sha": "9a1e1bc89f30635d8822ef8f6ef1809bdf215144",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T07:10:22.458Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "9a1e1bc89f30635d8822ef8f6ef1809bdf215144",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
