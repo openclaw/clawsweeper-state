@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T10:01:04.311Z",
+  "updated_at": "2026-08-17T10:01:09.482Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124298:5310020237:2026-08-16T22:36:20Z:re_review",
-      "comment_id": "5310020237",
-      "comment_version_key": "5310020237:2026-08-16T22:36:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124298#issuecomment-5310020237",
-      "comment_created_at": "2026-08-16T22:36:20Z",
-      "comment_updated_at": "2026-08-16T22:36:20Z",
-      "comment_body_sha256": "2cb27f4b83bbd23c321105ad9fd92a3b4575a70911b69b5f3787c021898096d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124298,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: fixed the draft-change-during-history-load p1 with a revision fence at exact head `3437f2d1915dc4e5494ad4e0cf31b1205fbb415b`; 356 exact-tip tests and the regression are recorded in the pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T06:01:52.678Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124298:5310106595:2026-08-16T22:59:18Z:re_review",
       "comment_id": "5310106595",
@@ -33140,6 +33113,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T10:01:04.311Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123078:5278347082:2026-08-17T10:00:13Z:clawsweeper_needs_human",
+      "comment_id": "5278347082",
+      "comment_version_key": "5278347082:2026-08-17T10:00:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123078#issuecomment-5278347082",
+      "comment_created_at": "2026-08-13T09:11:56Z",
+      "comment_updated_at": "2026-08-17T10:00:13Z",
+      "comment_body_sha256": "4f6ce1c5ef32be694cd7d0321d8004baf9d9ce72d0787cc5026b385f83110707",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123078,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the native dependency graph used by the packaged macOS app; an incompatible resolution would surface only when SwiftPM builds or packages that app. (sha=1be43d04cc197d756b4e4a4bbccf93eca0bd992d)",
+      "expected_head_sha": "1be43d04cc197d756b4e4a4bbccf93eca0bd992d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T10:01:09.482Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/swift/apps/macos/swift-deps-6db74f7199",
+        "head_sha": "1be43d04cc197d756b4e4a4bbccf93eca0bd992d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
