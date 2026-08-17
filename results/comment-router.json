@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:00:34.225Z",
+  "updated_at": "2026-08-17T20:01:47.541Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5318295318:2026-08-17T17:43:21Z:re_review",
-      "comment_id": "5318295318",
-      "comment_version_key": "5318295318:2026-08-17T17:43:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5318295318",
-      "comment_created_at": "2026-08-17T17:43:21Z",
-      "comment_updated_at": "2026-08-17T17:43:21Z",
-      "comment_body_sha256": "d60406502bdce504a58c8e090158c547bb35ddc904eced5a8ef0bdfa9bc388c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T17:55:43.826Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125355:5318302660:2026-08-17T17:44:25Z:clawsweeper_needs_human",
       "comment_id": "5318302660",
@@ -29615,6 +29588,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117302:5150624297:2026-08-17T20:00:30Z:clawsweeper_needs_human",
+      "comment_id": "5150624297",
+      "comment_version_key": "5150624297:2026-08-17T20:00:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117302#issuecomment-5150624297",
+      "comment_created_at": "2026-08-01T08:29:36Z",
+      "comment_updated_at": "2026-08-17T20:00:30Z",
+      "comment_body_sha256": "fd2ffd42b3840bbdbf7b1001322f7d3e492a75856c4efa295745003a6597df9b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117302,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This additive configuration surface changes generated metadata and config baselines; land only after the queued exact-head checks confirm those artifacts. (sha=a42829dabbfc406fb97365992869e3d0997621c2)",
+      "expected_head_sha": "a42829dabbfc406fb97365992869e3d0997621c2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T20:01:47.541Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/irc-health-monitor-schema",
+        "head_sha": "a42829dabbfc406fb97365992869e3d0997621c2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
