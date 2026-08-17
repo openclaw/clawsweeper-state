@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:52:23.420Z",
+  "updated_at": "2026-08-17T06:52:31.798Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124988:5311206846:2026-08-17T04:00:03Z:clawsweeper_needs_human",
-      "comment_id": "5311206846",
-      "comment_version_key": "5311206846:2026-08-17T04:00:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124988#issuecomment-5311206846",
-      "comment_created_at": "2026-08-17T02:50:35Z",
-      "comment_updated_at": "2026-08-17T04:00:03Z",
-      "comment_body_sha256": "cc1e7f2f14ec13b6c2e714197f1c79eb1cc56b7afd44ec9af184dcb5a5a0da33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124988,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging adds a non-advisory API-key Docker suite with a 50-minute timeout to every stable/full validation run, so provider variance or cache-accounting drift can block CI and consume... (sha=fc8b4b0cc21c38c89c7a3dbbca5f0ef026f1ae76)",
-      "expected_head_sha": "fc8b4b0cc21c38c89c7a3dbbca5f0ef026f1ae76",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:16:42.545Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/claude-cli-cache-e2e",
-        "head_sha": "8832c12dcfe1553683aaf5defa36292bd909ea64",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:5311711057:2026-08-17T04:15:58Z:re_review",
       "comment_id": "5311711057",
@@ -31519,6 +31486,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124015:5312797840:2026-08-17T06:51:38Z:re_review",
+      "comment_id": "5312797840",
+      "comment_version_key": "5312797840:2026-08-17T06:51:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5312797840",
+      "comment_created_at": "2026-08-17T06:51:38Z",
+      "comment_updated_at": "2026-08-17T06:51:38Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124015,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T06:52:29.675Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/signal-port-collision",
+        "head_sha": "75d677dad1ac7b19090165e97df65eea6e3e75c4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
