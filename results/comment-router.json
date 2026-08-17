@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T11:51:27.376Z",
+  "updated_at": "2026-08-17T11:52:47.351Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125132:5312943698:2026-08-17T07:25:17Z:clawsweeper_auto_repair",
-      "comment_id": "5312943698",
-      "comment_version_key": "5312943698:2026-08-17T07:25:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125132#issuecomment-5312943698",
-      "comment_created_at": "2026-08-17T07:09:33Z",
-      "comment_updated_at": "2026-08-17T07:25:17Z",
-      "comment_body_sha256": "25dfd9a0fb1be770fd68a72197b96871c1c1f0cba5b77060a07833dd9947d98b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125132,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b5b6e4a8a924ae1228b0d958d5f84ee05ae3b4c3)",
-      "expected_head_sha": "b5b6e4a8a924ae1228b0d958d5f84ee05ae3b4c3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T07:42:34.457Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/doctor-node-hosting-preconditions",
-        "head_sha": "b5b6e4a8a924ae1228b0d958d5f84ee05ae3b4c3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125136:5312992051:2026-08-17T07:26:20Z:clawsweeper_needs_human",
       "comment_id": "5312992051",
@@ -32808,6 +32775,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125258:5315659179:2026-08-17T11:51:57Z:clawsweeper_needs_human",
+      "comment_id": "5315659179",
+      "comment_version_key": "5315659179:2026-08-17T11:51:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125258#issuecomment-5315659179",
+      "comment_created_at": "2026-08-17T11:51:57Z",
+      "comment_updated_at": "2026-08-17T11:51:57Z",
+      "comment_body_sha256": "09097282c11acf84e58d32cde16df8ada217eec244f3a305b1bb81e1067c12c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125258,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The cited live canary proves the underlying no-FFprobe symptom, but it does not show this PR’s new warning; add a redacted PR-head con... (sha=c40eac54a92f2034ebd7f00394cf3ff18c83d271)",
+      "expected_head_sha": "c40eac54a92f2034ebd7f00394cf3ff18c83d271",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T11:52:47.351Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ffprobe-missing-loud-warning",
+        "head_sha": "c40eac54a92f2034ebd7f00394cf3ff18c83d271",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
