@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T05:20:57.534Z",
+  "updated_at": "2026-08-17T05:22:06.042Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114637:5153643970:2026-08-01T22:01:07Z:re_review",
-      "comment_id": "5153643970",
-      "comment_version_key": "5153643970:2026-08-01T22:01:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114637#issuecomment-5153643970",
-      "comment_created_at": "2026-08-01T22:01:07Z",
-      "comment_updated_at": "2026-08-01T22:01:07Z",
-      "comment_body_sha256": "9fe55e5df7ed4b1a39be3cf7db05b26b1572e4c840c122a0fc43e145f338a030",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114637,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T02:51:31.699Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114637:5153765546:2026-08-01T22:33:44Z:re_review",
       "comment_id": "5153765546",
@@ -31185,6 +31158,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124909:5310268022:2026-08-17T05:21:28Z:clawsweeper_needs_human",
+      "comment_id": "5310268022",
+      "comment_version_key": "5310268022:2026-08-17T05:21:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124909#issuecomment-5310268022",
+      "comment_created_at": "2026-08-16T23:40:16Z",
+      "comment_updated_at": "2026-08-17T05:21:28Z",
+      "comment_body_sha256": "70013104e305b1cd03649c3d83dd74ef307134d6234b20f06bde77f738cfaee8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124909,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Propagate the mode to cloud-worker policy (P1)** - The worker assignment has no permissionMode or sessionRoot, and this changed tool construction explicitly selects unrestricted defaults. A read-only, guarded, o...; Review finding: [P1] Propagate the mode to cloud-worker policy — src/worker/embedded-agent.runtime.ts:157 - [P1] Clear worktree-derived policy when detaching — src/gateway/session... (sha=4a60b6a7537d7dfe16f966718902617b8391749b)",
+      "expected_head_sha": "4a60b6a7537d7dfe16f966718902617b8391749b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T05:22:06.042Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-permission-modes",
+        "head_sha": "4a60b6a7537d7dfe16f966718902617b8391749b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
