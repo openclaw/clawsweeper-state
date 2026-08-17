@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T19:51:06.756Z",
+  "updated_at": "2026-08-17T19:51:29.096Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119356:5185154559:2026-08-17T17:33:09Z:clawsweeper_needs_human",
-      "comment_id": "5185154559",
-      "comment_version_key": "5185154559:2026-08-17T17:33:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119356#issuecomment-5185154559",
-      "comment_created_at": "2026-08-04T22:06:16Z",
-      "comment_updated_at": "2026-08-17T17:33:09Z",
-      "comment_body_sha256": "d4209f6a537bb9c9ded1c804414db090787c412f82bd3d3515a3ef775e30da7a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119356,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing configurations carrying this key will fail ordinary strict loading until openclaw doctor --fix performs the included root-and-account migration. (sha=58ac9754a71d6dc213454b945f60aadf38feb556)",
-      "expected_head_sha": "58ac9754a71d6dc213454b945f60aadf38feb556",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T17:55:43.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/irc-drop-dead-mention-patterns",
-        "head_sha": "58ac9754a71d6dc213454b945f60aadf38feb556",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119886:5202545135:2026-08-17T17:45:39Z:clawsweeper_auto_repair",
       "comment_id": "5202545135",
@@ -29543,6 +29510,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124162:5319499733:2026-08-17T19:50:49Z:re_review",
+      "comment_id": "5319499733",
+      "comment_version_key": "5319499733:2026-08-17T19:50:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5319499733",
+      "comment_created_at": "2026-08-17T19:50:49Z",
+      "comment_updated_at": "2026-08-17T19:50:49Z",
+      "comment_body_sha256": "30deb3726776ec579c40ea139762c004033666765356e1e5a46a1bc17ef2942c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124162,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T19:51:27.571Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-aware-resume-breaker-122950",
+        "head_sha": "8640c42e76a2dc57b05ca6e104e44b2c3884a007",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
