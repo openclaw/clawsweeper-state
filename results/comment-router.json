@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T05:48:58.897Z",
+  "updated_at": "2026-08-17T05:50:02.239Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123556:5291077099:2026-08-17T03:19:09Z:clawsweeper_needs_human",
-      "comment_id": "5291077099",
-      "comment_version_key": "5291077099:2026-08-17T03:19:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5291077099",
-      "comment_created_at": "2026-08-14T08:12:51Z",
-      "comment_updated_at": "2026-08-17T03:19:09Z",
-      "comment_body_sha256": "b9649b3a925b458e26f03e479e60f1197731a18b1889657ca2e8ddee3f2945f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123556,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A cached positive result can leave the diff control visible for up to five seconds after Git metadata disappears; the eventual diff request remains authoritative, but the brief stale... (sha=f1ec213139f2a1f7b514118953c188db013c788e)",
-      "expected_head_sha": "f1ec213139f2a1f7b514118953c188db013c788e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T03:20:18.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-concurrency",
-        "head_sha": "f1ec213139f2a1f7b514118953c188db013c788e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-17T03:20:10Z:clawsweeper_needs_human",
       "comment_id": "5290613923",
@@ -31091,6 +31058,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124214:5303390333:2026-08-17T05:49:03Z:clawsweeper_needs_human",
+      "comment_id": "5303390333",
+      "comment_version_key": "5303390333:2026-08-17T05:49:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124214#issuecomment-5303390333",
+      "comment_created_at": "2026-08-15T17:26:56Z",
+      "comment_updated_at": "2026-08-17T05:49:03Z",
+      "comment_body_sha256": "868dfe50f1f9471f3c5ea65c6244990b3d32bb3007afcbf4bfa54f19ca482f85",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124214,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; although GitHub reports a clean merge, Feishu ingress and drain surfaces have moved, so the resulting merge or rebase needs inspection and renewed g... (sha=a9bd3ced34cfce4cffa88ea09bc33ceca2e7b28f)",
+      "expected_head_sha": "a9bd3ced34cfce4cffa88ea09bc33ceca2e7b28f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T05:50:02.239Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-adoption-gated-lane",
+        "head_sha": "a9bd3ced34cfce4cffa88ea09bc33ceca2e7b28f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
