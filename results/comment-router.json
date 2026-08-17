@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T09:35:05.645Z",
+  "updated_at": "2026-08-17T09:35:54.376Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5312290323:2026-08-17T05:40:37Z:re_review",
-      "comment_id": "5312290323",
-      "comment_version_key": "5312290323:2026-08-17T05:40:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5312290323",
-      "comment_created_at": "2026-08-17T05:40:37Z",
-      "comment_updated_at": "2026-08-17T05:40:37Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T05:41:22.331Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-performance",
-        "head_sha": "babee6fb87300625261ed94c5acfa3db79ddc239",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125080:5312292623:2026-08-17T05:41:01Z:clawsweeper_needs_human",
       "comment_id": "5312292623",
@@ -33197,6 +33150,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-b3ce8c744c",
         "head_sha": "dbff4cafe27822a9d45a334fed647e5ae233e91e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123078:5278347082:2026-08-17T09:34:57Z:clawsweeper_needs_human",
+      "comment_id": "5278347082",
+      "comment_version_key": "5278347082:2026-08-17T09:34:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123078#issuecomment-5278347082",
+      "comment_created_at": "2026-08-13T09:11:56Z",
+      "comment_updated_at": "2026-08-17T09:34:57Z",
+      "comment_body_sha256": "9c491adff3cdf0a894772b5c35db1f09a320b0928c1cc35a43d01f794ecd6c93",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123078,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The resolved native libraries are used by the packaged macOS app; merge only after the current head’s macOS Swift build validates the revised graph. (sha=defffc5426434a3cdb4796f65f3a6389de0a7ac2)",
+      "expected_head_sha": "defffc5426434a3cdb4796f65f3a6389de0a7ac2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T09:35:54.376Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/swift/apps/macos/swift-deps-6db74f7199",
+        "head_sha": "defffc5426434a3cdb4796f65f3a6389de0a7ac2",
         "cluster_id": null,
         "job_path": null
       }
