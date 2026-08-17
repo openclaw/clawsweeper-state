@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:44:55.986Z",
+  "updated_at": "2026-08-17T06:45:08.092Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123984:5311574668:2026-08-17T03:56:01Z:re_review",
-      "comment_id": "5311574668",
-      "comment_version_key": "5311574668:2026-08-17T03:56:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123984#issuecomment-5311574668",
-      "comment_created_at": "2026-08-17T03:56:01Z",
-      "comment_updated_at": "2026-08-17T03:56:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123984,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T04:09:38.524Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsean/telegram-ignore-slim",
-        "head_sha": "75f0c1e36dd5481fd3874de5ba01b70ed9ccab33",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123984:5300383781:2026-08-17T04:08:53Z:clawsweeper_auto_repair",
       "comment_id": "5300383781",
@@ -31569,6 +31522,39 @@
         "branch": "steipete/marker-display-projection",
         "head_sha": "e335ea367ab78016a8523a605974896d0b910d4b",
         "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125116:5312741870:2026-08-17T06:44:29Z:clawsweeper_needs_human",
+      "comment_id": "5312741870",
+      "comment_version_key": "5312741870:2026-08-17T06:44:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125116#issuecomment-5312741870",
+      "comment_created_at": "2026-08-17T06:44:29Z",
+      "comment_updated_at": "2026-08-17T06:44:29Z",
+      "comment_body_sha256": "1a57b7a3fbb204750f1f3bade5274d2de37a19db2a07b416eb13e8056239fdbc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125116,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main and required exact-head checks were still running; retain GitHub's clean merge result and wait for those checks before landing. (sha=89d7b416158bf95ac11b17bb4ed0b75059a8e678)",
+      "expected_head_sha": "89d7b416158bf95ac11b17bb4ed0b75059a8e678",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T06:45:08.092Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/widen-code-review-panel",
+        "head_sha": "89d7b416158bf95ac11b17bb4ed0b75059a8e678",
+        "cluster_id": "widen-code-review-panel",
         "job_path": null
       }
     }
