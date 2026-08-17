@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:35:38.634Z",
+  "updated_at": "2026-08-17T20:35:39.624Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118688:5167284116:2026-08-07T12:51:07Z:clawsweeper_auto_repair",
-      "comment_id": "5167284116",
-      "comment_version_key": "5167284116:2026-08-07T12:51:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118688#issuecomment-5167284116",
-      "comment_created_at": "2026-08-03T13:57:11Z",
-      "comment_updated_at": "2026-08-07T12:51:07Z",
-      "comment_body_sha256": "fd24aaee6e690341178c351d120d2e3fa8816f3ffdb063276333aaa26d30c2f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118688,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=2ce65e201139a35baf00a7fb4046d37f9dd4f0b4)",
-      "expected_head_sha": "2ce65e201139a35baf00a7fb4046d37f9dd4f0b4",
-      "finding_id": "review-feedback",
-      "status": "executed",
-      "processed_at": "2026-08-17T18:40:28.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-118625",
-        "head_sha": "2ce65e201139a35baf00a7fb4046d37f9dd4f0b4",
-        "cluster_id": "automerge-openclaw-openclaw-118688",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118688.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118688.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118751:5168928091:2026-08-11T18:09:51Z:clawsweeper_auto_repair",
       "comment_id": "5168928091",
@@ -29972,6 +29925,39 @@
         "kind": "pull_request",
         "branch": "steipete/recovery-tooling-scale-20260817",
         "head_sha": "f153ef9aa108f211fa7b3573540470e3c1256d2b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125393:5319936779:2026-08-17T20:34:47Z:clawsweeper_needs_human",
+      "comment_id": "5319936779",
+      "comment_version_key": "5319936779:2026-08-17T20:34:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125393#issuecomment-5319936779",
+      "comment_created_at": "2026-08-17T20:34:47Z",
+      "comment_updated_at": "2026-08-17T20:34:47Z",
+      "comment_body_sha256": "f973b800105d38cd880538ca2967060c64e327e896e0d1351a733b2f7c2e3afd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125393,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 25 lines; that is justified by enforcing the same live-revocation invariant at two separate plugin execution owners, without adding a cross-plugin SDK surface. (sha=04a2fdac55d4ecf3da7ed3d21d670f8852853dc2)",
+      "expected_head_sha": "04a2fdac55d4ecf3da7ed3d21d670f8852853dc2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T20:35:39.624Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/enforce-memory-revocation",
+        "head_sha": "04a2fdac55d4ecf3da7ed3d21d670f8852853dc2",
         "cluster_id": null,
         "job_path": null
       }
