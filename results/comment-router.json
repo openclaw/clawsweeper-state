@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:20:48.621Z",
+  "updated_at": "2026-08-17T06:21:09.485Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124680:5308421921:2026-08-17T03:41:43Z:clawsweeper_auto_repair",
-      "comment_id": "5308421921",
-      "comment_version_key": "5308421921:2026-08-17T03:41:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124680#issuecomment-5308421921",
-      "comment_created_at": "2026-08-16T16:22:06Z",
-      "comment_updated_at": "2026-08-17T03:41:43Z",
-      "comment_body_sha256": "55f2a98688b8eec4dfc1cb51778fd1ab2406edc141023aa868880ef694d9b7da",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124680,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=dbc1c182c5c2c67e29f0316b087aee0089449a4b)",
-      "expected_head_sha": "dbc1c182c5c2c67e29f0316b087aee0089449a4b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T03:50:04.577Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-ui-channel-retry",
-        "head_sha": "dbc1c182c5c2c67e29f0316b087aee0089449a4b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1349:5302146960:2026-08-17T03:44:28Z:clawsweeper_needs_human",
       "comment_id": "5302146960",
@@ -31140,6 +31107,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124909:5310268022:2026-08-17T06:15:04Z:clawsweeper_needs_human",
+      "comment_id": "5310268022",
+      "comment_version_key": "5310268022:2026-08-17T06:15:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124909#issuecomment-5310268022",
+      "comment_created_at": "2026-08-16T23:40:16Z",
+      "comment_updated_at": "2026-08-17T06:15:04Z",
+      "comment_body_sha256": "4363f1773e6ea261f97b311047ddf9b2a175c3cc709e28f4accf43430a1d8d9e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124909,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Exact authority propagation is unverified** - Current main’s worker path uses unrestricted tool defaults, while the final PR repair that should fence explicit modes is unavailable for s...; Review finding: [medium] Exact authority propagation is unverified — src/worker/embedded-agent.runtime.ts:151 (sha=6e68bb5216179540483ad45a368414ba76d45284)",
+      "expected_head_sha": "6e68bb5216179540483ad45a368414ba76d45284",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T06:21:09.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-permission-modes",
+        "head_sha": "6e68bb5216179540483ad45a368414ba76d45284",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
