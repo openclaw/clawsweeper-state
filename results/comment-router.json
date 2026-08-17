@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:55:37.688Z",
+  "updated_at": "2026-08-17T20:56:48.860Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119713:5196809684:2026-08-17T18:52:08Z:clawsweeper_auto_repair",
-      "comment_id": "5196809684",
-      "comment_version_key": "5196809684:2026-08-17T18:52:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119713#issuecomment-5196809684",
-      "comment_created_at": "2026-08-05T20:11:04Z",
-      "comment_updated_at": "2026-08-17T18:52:08Z",
-      "comment_body_sha256": "50ae5c3b8fb43262b6bd111a3c2874768d4e94f979bd3368c3cf53879939d7ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119713,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e93b361ff6bba9ae3b0670aec81c0a1fb5aa7cac)",
-      "expected_head_sha": "e93b361ff6bba9ae3b0670aec81c0a1fb5aa7cac",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T18:52:58.018Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-fallback-circuit-breaker",
-        "head_sha": "e93b361ff6bba9ae3b0670aec81c0a1fb5aa7cac",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125264:5316527933:2026-08-17T18:38:21Z:clawsweeper_needs_human",
       "comment_id": "5316527933",
@@ -29973,6 +29940,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124061:5320146022:2026-08-17T20:56:07Z:re_review",
+      "comment_id": "5320146022",
+      "comment_version_key": "5320146022:2026-08-17T20:56:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124061#issuecomment-5320146022",
+      "comment_created_at": "2026-08-17T20:56:07Z",
+      "comment_updated_at": "2026-08-17T20:56:07Z",
+      "comment_body_sha256": "b95e1da7cb100516784d281b28c5f6311515259dae1d26f4e39d015e924675b6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124061,
+      "author": "clawSean",
+      "author_id": 260045960,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T20:56:47.189Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/peekaboo-v4-skill",
+        "head_sha": "d1b7ae5455607793db26a7de102d752335a61e7a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
