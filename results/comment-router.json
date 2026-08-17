@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T05:31:15.245Z",
+  "updated_at": "2026-08-17T05:31:55.467Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114983:5155998262:2026-08-02T06:44:46Z:re_review",
-      "comment_id": "5155998262",
-      "comment_version_key": "5155998262:2026-08-02T06:44:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114983#issuecomment-5155998262",
-      "comment_created_at": "2026-08-02T06:44:46Z",
-      "comment_updated_at": "2026-08-02T06:44:46Z",
-      "comment_body_sha256": "055e5cd9588a602bcecf5e3dbf2b8f442fe3a457170eef6cf5e7079742c0c824",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114983,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T03:01:07.354Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114983:5156831115:2026-08-02T09:23:22Z:re_review",
       "comment_id": "5156831115",
@@ -31137,6 +31110,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T05:31:15.245Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125075:5312234701:2026-08-17T05:31:16Z:clawsweeper_needs_human",
+      "comment_id": "5312234701",
+      "comment_version_key": "5312234701:2026-08-17T05:31:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125075#issuecomment-5312234701",
+      "comment_created_at": "2026-08-17T05:31:16Z",
+      "comment_updated_at": "2026-08-17T05:31:16Z",
+      "comment_body_sha256": "0e99256f27218cf35710833a95fe0aad8823440ee49343592b47b0810c3fc006",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125075,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch adds 12 production lines to a bug fix; the added logger exposure and bounded warning are justified because the owner boundary previously had no way to record this degradatio... (sha=f5ac5e0fb3883368524abd6e6fe640d2b04437ab)",
+      "expected_head_sha": "f5ac5e0fb3883368524abd6e6fe640d2b04437ab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T05:31:55.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-postwrite-reread-silence",
+        "head_sha": "f5ac5e0fb3883368524abd6e6fe640d2b04437ab",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
