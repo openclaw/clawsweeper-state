@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T17:29:00.710Z",
+  "updated_at": "2026-08-17T17:30:13.324Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5313059260:2026-08-17T07:22:34Z:re_review",
-      "comment_id": "5313059260",
-      "comment_version_key": "5313059260:2026-08-17T07:22:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5313059260",
-      "comment_created_at": "2026-08-17T07:22:34Z",
-      "comment_updated_at": "2026-08-17T07:22:34Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T13:09:54.922Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5313199848:2026-08-17T07:38:37Z:re_review",
       "comment_id": "5313199848",
@@ -30041,6 +30014,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:509:5318193935:2026-08-17T17:29:23Z:clawsweeper_needs_human",
+      "comment_id": "5318193935",
+      "comment_version_key": "5318193935:2026-08-17T17:29:23Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/509#issuecomment-5318193935",
+      "comment_created_at": "2026-08-17T17:29:23Z",
+      "comment_updated_at": "2026-08-17T17:29:23Z",
+      "comment_body_sha256": "7b1157389e3e4a9a9490340bb01ab4203bcf1ef064903587f2651c46b74f24b3",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 509,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing background keyboard workflows using non-exact selectors can now refuse when the runtime cannot prove inventory completeness; that compatibility tightening is intentional but... (sha=e39bb33edb25f2b767b8af77cda4a66a9c4f3e84)",
+      "expected_head_sha": "e39bb33edb25f2b767b8af77cda4a66a9c4f3e84",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T17:30:13.324Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/keyboard-planner-consolidation",
+        "head_sha": "e39bb33edb25f2b767b8af77cda4a66a9c4f3e84",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
