@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T04:10:57.590Z",
+  "updated_at": "2026-08-17T04:10:58.480Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123877:5310487480:2026-08-17T00:25:43Z:re_review",
-      "comment_id": "5310487480",
-      "comment_version_key": "5310487480:2026-08-17T00:25:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123877#issuecomment-5310487480",
-      "comment_created_at": "2026-08-17T00:25:43Z",
-      "comment_updated_at": "2026-08-17T00:25:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123877,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T00:28:31.832Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "joshavant/issue-121018-20260814t154843z-94134986",
-        "head_sha": "6ec6e2ecaecb5731f921d2cd54aa5f1217dabbca",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89526:4604300916:2026-08-17T00:16:55Z:clawsweeper_auto_repair",
       "comment_id": "4604300916",
@@ -31807,6 +31760,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T04:10:57.590Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125025:5311672184:2026-08-17T04:10:17Z:clawsweeper_needs_human",
+      "comment_id": "5311672184",
+      "comment_version_key": "5311672184:2026-08-17T04:10:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125025#issuecomment-5311672184",
+      "comment_created_at": "2026-08-17T04:10:17Z",
+      "comment_updated_at": "2026-08-17T04:10:17Z",
+      "comment_body_sha256": "5290dfa52d06580afd4dd0affc63a0d8de0af5e48f47ce7d02ad52f4be828bb4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Update the MCP omitted-config expectation (P2)** - The resolver now treats { cron: {} } as trigger-enabled, but the unchanged MCP test at src/mcp/openclaw-tools-serve.test.ts:50 expects it to hide trigger. That...; Review finding: [P2] Update the MCP omitted-config expectation — src/agents/tools/cron-tool.ts:220 - [P2] Cite the security benchmark behind the threat-model change — docs/gateway... (sha=bcf67c1b5480c6224d09945ea07198fbf17a6316)",
+      "expected_head_sha": "bcf67c1b5480c6224d09945ea07198fbf17a6316",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T04:10:58.480Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/cron-triggers-default-on",
+        "head_sha": "bcf67c1b5480c6224d09945ea07198fbf17a6316",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
