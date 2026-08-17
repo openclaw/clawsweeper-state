@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T09:29:12.227Z",
+  "updated_at": "2026-08-17T09:30:06.804Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123482:5289771597:2026-08-17T05:38:25Z:clawsweeper_needs_human",
-      "comment_id": "5289771597",
-      "comment_version_key": "5289771597:2026-08-17T05:38:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5289771597",
-      "comment_created_at": "2026-08-14T05:16:37Z",
-      "comment_updated_at": "2026-08-17T05:38:25Z",
-      "comment_body_sha256": "b16431dbb18649a1b86d2adb90e3af93f041fb184cc4911ed0e0183ba67f49d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The worker adds process-wide shutdown, lease cleanup, agent-deletion fencing, and packaged-worker behavior; its production growth needs an explicit maintainer judgment that the latenc... (sha=babee6fb87300625261ed94c5acfa3db79ddc239)",
-      "expected_head_sha": "babee6fb87300625261ed94c5acfa3db79ddc239",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T05:39:47.512Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-performance",
-        "head_sha": "babee6fb87300625261ed94c5acfa3db79ddc239",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5311276485:2026-08-17T03:00:31Z:re_review",
       "comment_id": "5311276485",
@@ -33177,6 +33144,53 @@
         "kind": "pull_request",
         "branch": "steipete/env-budget-repair",
         "head_sha": "013187009f9d8c49032afce220b80e0a33dd5f05",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123482:5314265709:2026-08-17T09:29:20Z:re_review",
+      "comment_id": "5314265709",
+      "comment_version_key": "5314265709:2026-08-17T09:29:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5314265709",
+      "comment_created_at": "2026-08-17T09:29:20Z",
+      "comment_updated_at": "2026-08-17T09:29:20Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123482,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T09:30:04.547Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-performance",
+        "head_sha": "7908f96e338fc8fc0215647a4be7984478d77124",
         "cluster_id": null,
         "job_path": null
       },
