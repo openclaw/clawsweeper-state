@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:02:21.880Z",
+  "updated_at": "2026-08-17T20:02:23.876Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125351:5318180366:2026-08-17T17:27:36Z:clawsweeper_needs_human",
-      "comment_id": "5318180366",
-      "comment_version_key": "5318180366:2026-08-17T17:27:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125351#issuecomment-5318180366",
-      "comment_created_at": "2026-08-17T17:27:36Z",
-      "comment_updated_at": "2026-08-17T17:27:36Z",
-      "comment_body_sha256": "0780a02462ec62eb7373a52bded6e97b2ba0f66b3cb82fcbf7356e293a88cb26",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125351,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing callers that relied on an invalid direct agent ID silently falling back to the default agent will now receive a 400 response; this intentional compatibility change needs exac... (sha=a381dba7992b95231c2fabd24afcea9d69c6e006)",
-      "expected_head_sha": "a381dba7992b95231c2fabd24afcea9d69c6e006",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T17:55:43.827Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/hooks-ingress-validation-bugs-db13a3",
-        "head_sha": "a381dba7992b95231c2fabd24afcea9d69c6e006",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112945:5318373589:2026-08-17T17:55:14Z:re_review",
       "comment_id": "5318373589",
@@ -29598,6 +29565,53 @@
         "kind": "pull_request",
         "branch": "jesse/session-bootstrap-concurrency",
         "head_sha": "bf8c06cf50b1326184cc36c1e1b2e111314ae0b0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123535:5319607344:2026-08-17T20:01:36Z:re_review",
+      "comment_id": "5319607344",
+      "comment_version_key": "5319607344:2026-08-17T20:01:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5319607344",
+      "comment_created_at": "2026-08-17T20:01:36Z",
+      "comment_updated_at": "2026-08-17T20:01:36Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123535,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T20:02:21.375Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-performance",
+        "head_sha": "6b9efae2dc652f4162214abc6f09872811ec3de6",
         "cluster_id": null,
         "job_path": null
       },
