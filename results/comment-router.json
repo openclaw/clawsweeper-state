@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:11:31.244Z",
+  "updated_at": "2026-08-17T06:12:02.251Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124564:5307473793:2026-08-17T03:48:41Z:clawsweeper_needs_human",
-      "comment_id": "5307473793",
-      "comment_version_key": "5307473793:2026-08-17T03:48:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124564#issuecomment-5307473793",
-      "comment_created_at": "2026-08-16T12:38:34Z",
-      "comment_updated_at": "2026-08-17T03:48:41Z",
-      "comment_body_sha256": "8874c9a663cdaff4f71c604629af5db83645f32d5b7be0cde0e0458a5b049f56",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124564,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Make migration custody exclusive and identity-bound (P1)** - The flow creates a custody path, unlinks it, and then uses replacing mv; a concurrent destination can be overwritten, and a replacement after the hash...; Review finding: [P1] Make migration custody exclusive and identity-bound — scripts/mac-elevation-host.sh:597-615 - [P1] Authenticate every fallback rename helper — scripts/mac-ele... (sha=132c62c80a03d2eaf606d379d53d351df8a6ad5f)",
-      "expected_head_sha": "132c62c80a03d2eaf606d379d53d351df8a6ad5f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T03:49:20.454Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/elevation-hardening-current-main",
-        "head_sha": "132c62c80a03d2eaf606d379d53d351df8a6ad5f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124564:5307966973:2026-08-16T14:38:40Z:re_review",
       "comment_id": "5307966973",
@@ -31010,6 +30977,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125096:5312484255:2026-08-17T06:11:15Z:clawsweeper_auto_repair",
+      "comment_id": "5312484255",
+      "comment_version_key": "5312484255:2026-08-17T06:11:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125096#issuecomment-5312484255",
+      "comment_created_at": "2026-08-17T06:11:15Z",
+      "comment_updated_at": "2026-08-17T06:11:15Z",
+      "comment_body_sha256": "a35d44c51043c585f822c1ae5abe305fc770de43bf51621a492ff5ef317ccb87",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125096,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2395356eabdb11eb47fd46e5dfff9040c755382d)",
+      "expected_head_sha": "2395356eabdb11eb47fd46e5dfff9040c755382d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T06:12:02.251Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-row-state-clipping",
+        "head_sha": "2395356eabdb11eb47fd46e5dfff9040c755382d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
