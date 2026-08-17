@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T22:53:22.486Z",
+  "updated_at": "2026-08-17T22:53:54.932Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112945:5075714857:2026-08-17T19:51:31Z:clawsweeper_auto_repair",
-      "comment_id": "5075714857",
-      "comment_version_key": "5075714857:2026-08-17T19:51:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112945#issuecomment-5075714857",
-      "comment_created_at": "2026-07-25T00:04:50Z",
-      "comment_updated_at": "2026-08-17T19:51:31Z",
-      "comment_body_sha256": "be9212ac532edbbdc7a798bb83db3a9ee180e87edd0240b4e3f5d1b5b8e7842b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112945,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=80d84c8f2fd27b3cfdc9bf4549d5ac982e4fe8b9)",
-      "expected_head_sha": "80d84c8f2fd27b3cfdc9bf4549d5ac982e4fe8b9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T19:53:13.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bartok9/voice-transcript-echo-polish",
-        "head_sha": "80d84c8f2fd27b3cfdc9bf4549d5ac982e4fe8b9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112945:5318294677:2026-08-17T17:43:16Z:re_review",
       "comment_id": "5318294677",
@@ -31311,6 +31278,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125432:5321028968:2026-08-17T22:53:12Z:clawsweeper_needs_human",
+      "comment_id": "5321028968",
+      "comment_version_key": "5321028968:2026-08-17T22:53:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125432#issuecomment-5321028968",
+      "comment_created_at": "2026-08-17T22:33:05Z",
+      "comment_updated_at": "2026-08-17T22:53:12Z",
+      "comment_body_sha256": "c3c3469131a48ced19ea31bdd089a82d897b7a5c4301338141a31adca8120ba3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125432,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep case-distinct IDs in live allowlists (P1)** - The new matcher treats qualified IDs exactly, but this live configuration path still deduplicates with toLowerCase(). A list containing @K:example.org and @k:ex...; Review finding: [P1] Keep case-distinct IDs in live allowlists — extensions/matrix/src/matrix/monitor/config.ts:119 - [P1] Add an upgrade diagnostic for case-normalized allowlists... (sha=983fcaaaafb494134661b8cf8c50d06dc40b5da3)",
+      "expected_head_sha": "983fcaaaafb494134661b8cf8c50d06dc40b5da3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T22:53:54.932Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/matrix-identity-exactness",
+        "head_sha": "983fcaaaafb494134661b8cf8c50d06dc40b5da3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
