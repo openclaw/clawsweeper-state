@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T19:07:53.963Z",
+  "updated_at": "2026-08-17T19:08:00.318Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118008:5158543101:2026-08-17T15:23:29Z:clawsweeper_needs_human",
-      "comment_id": "5158543101",
-      "comment_version_key": "5158543101:2026-08-17T15:23:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118008#issuecomment-5158543101",
-      "comment_created_at": "2026-08-02T14:30:56Z",
-      "comment_updated_at": "2026-08-17T15:23:29Z",
-      "comment_body_sha256": "28252fbba4745cef88d60bd1ff081e0b0e7433edafc43dc0c3aa072ebdabb33d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118008,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Obtain exact-head dependency authorization (P1)** - This branch changes QA Lab’s direct Crabline dependency and its resolved lockfile entry. Dependency Guard remains blocked for the current head, so SecOps or an...; Review finding: [P1] Obtain exact-head dependency authorization — extensions/qa-lab/package.json:10 - [medium] Direct dependency needs privileged approval — extensions/qa-lab/pack... (sha=ba8b933b772a2c63b03d1ae624f3a2cff70f601f)",
-      "expected_head_sha": "ba8b933b772a2c63b03d1ae624f3a2cff70f601f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T16:20:47.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/crabline-server-terminology",
-        "head_sha": "ba8b933b772a2c63b03d1ae624f3a2cff70f601f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118067:5159399788:2026-08-17T15:56:44Z:clawsweeper_needs_human",
       "comment_id": "5159399788",
@@ -30696,6 +30663,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112375:5319023988:2026-08-17T19:06:56Z:re_review",
+      "comment_id": "5319023988",
+      "comment_version_key": "5319023988:2026-08-17T19:06:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5319023988",
+      "comment_created_at": "2026-08-17T19:06:56Z",
+      "comment_updated_at": "2026-08-17T19:06:56Z",
+      "comment_body_sha256": "a85198f5f308c8bb084fba6967f1d92f65cb7499dbab097c1a64a9645623b0f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112375,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T19:07:57.695Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bartok9/cron-precheck-gate",
+        "head_sha": "381e1de4783336c62ed21ad73aec03879960f2dd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
