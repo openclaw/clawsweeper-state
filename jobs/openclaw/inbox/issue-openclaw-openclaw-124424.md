@@ -67,19 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Reproduce the clean Control UI New session failure first, or establish a failing boundary regression. In the chat-pane creation path, pass `currentSessionKey` only when `selectedChatSessionRow(state)` identifies a durable current session; do not forward a synthetic bootstrap route as an explicit parent. Preserve existing durable-parent behavior and Gateway rejection of arbitrary unknown parents; do not change the Gateway protocol, add configuration, or modify CHANGELOG.md. Add a focused regression proving a clean route creates a distinct session without `parentSessionKey`, while a persisted route retains its parent link. Include user-visible release-note context in the PR body.
+Repair the Control UI New session flow for a virtual bootstrap route. At the UI session-mutation owner, derive parentSessionKey only when currentSessionKey resolves to a published durable Gateway row; otherwise send a root session creation request. Preserve the existing linked-child request for real rows and do not weaken src/gateway/session-create-service.ts unknown-parent validation. Add regression coverage for an empty roster/current agent bootstrap route and for a real selected parent. Include user-visible release-note context in the PR body, not CHANGELOG.md. Stop and escalate if the repair requires a protocol, config, or session-storage change.
 
 Likely files:
 
-- ui/src/pages/chat/chat-pane-session-creation.ts
-- ui/src/pages/chat/chat-pane.test.ts
-- ui/src/pages/chat/chat-state-route.ts
+- ui/src/lib/sessions/session-mutations.ts
+- ui/src/lib/sessions/index.test.ts
+- ui/src/lib/sessions/create.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs ui/src/pages/chat/chat-pane.test.ts
-- node scripts/run-vitest.mjs ui/src/lib/sessions/create.test.ts
-- node scripts/run-vitest.mjs src/gateway/server.sessions.create.test.ts
+- pnpm test ui/src/lib/sessions/index.test.ts
+- pnpm test ui/src/lib/sessions/create.test.ts
+- pnpm test src/gateway/server.sessions.create.test.ts
 
 ## Operator Prompt
 
