@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T16:16:25.283Z",
+  "updated_at": "2026-08-17T16:16:58.676Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125193:5314478267:2026-08-17T10:13:58Z:clawsweeper_needs_human",
-      "comment_id": "5314478267",
-      "comment_version_key": "5314478267:2026-08-17T10:13:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125193#issuecomment-5314478267",
-      "comment_created_at": "2026-08-17T09:49:13Z",
-      "comment_updated_at": "2026-08-17T10:13:58Z",
-      "comment_body_sha256": "5d2ce35e9cad0f12e7db15428df0a309bd5b5a61c5e75db4c08ff6befd0c6ab6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125193,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reject Access credentials on plaintext routes (P1)** - This is still the previous P1: the new cloudflareAccess branch adds headers after the shared transport has accepted trusted ws:// routes. The adjacent focus...; Review finding: [P1] Reject Access credentials on plaintext routes — packages/gateway-client/src/client.ts:521-526 - [high] Service tokens can cross plaintext transports — package... (sha=ffe70fa613b3f5d30e9f867ce3f882aa8bab978a)",
-      "expected_head_sha": "ffe70fa613b3f5d30e9f867ce3f882aa8bab978a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T10:24:51.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/node-access-service-token",
-        "head_sha": "ffe70fa613b3f5d30e9f867ce3f882aa8bab978a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125195:5314497993:2026-08-17T10:15:47Z:clawsweeper_auto_repair",
       "comment_id": "5314497993",
@@ -30674,6 +30641,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T16:16:25.283Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125337:5317535035:2026-08-17T16:15:16Z:clawsweeper_needs_human",
+      "comment_id": "5317535035",
+      "comment_version_key": "5317535035:2026-08-17T16:15:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125337#issuecomment-5317535035",
+      "comment_created_at": "2026-08-17T16:15:16Z",
+      "comment_updated_at": "2026-08-17T16:15:16Z",
+      "comment_body_sha256": "f2545f35a7ffaa5d5fd8fdbe557874aae7473b4e66a3bacc8decc55799167cb7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125337,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused Vitest coverage, but it has no redacted after-fix terminal or lifecycle transcript proving an isolated unmanaged Ga...; Review finding: [P1] Guard the system-scope stop before invoking systemctl — src/cli/daemon-cli/lifecycle.ts:555 - [medium] System-scope service stop bypasses identity validation... (sha=f162e2f3516085b525224c233116874aed85f5a0)",
+      "expected_head_sha": "f162e2f3516085b525224c233116874aed85f5a0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T16:16:58.676Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-isolated-gateway-stop",
+        "head_sha": "f162e2f3516085b525224c233116874aed85f5a0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
