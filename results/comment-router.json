@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T07:19:03.917Z",
+  "updated_at": "2026-08-17T07:19:54.707Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5238675962:2026-08-10T09:59:07Z:re_review",
-      "comment_id": "5238675962",
-      "comment_version_key": "5238675962:2026-08-10T09:59:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5238675962",
-      "comment_created_at": "2026-08-10T09:59:07Z",
-      "comment_updated_at": "2026-08-10T09:59:07Z",
-      "comment_body_sha256": "23383051e2f3fd89d337d0b35b4e1479793b2fd51dd691a913a6ad739977aa92",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:25:00.182Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:5239162278:2026-08-10T10:50:46Z:re_review",
       "comment_id": "5239162278",
@@ -32023,6 +31996,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125024:5311612226:2026-08-17T07:19:05Z:clawsweeper_needs_human",
+      "comment_id": "5311612226",
+      "comment_version_key": "5311612226:2026-08-17T07:19:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125024#issuecomment-5311612226",
+      "comment_created_at": "2026-08-17T04:01:57Z",
+      "comment_updated_at": "2026-08-17T07:19:05Z",
+      "comment_body_sha256": "8bb87fca685f2026b043bd8653d24ecf73ef605bc3970825205493d56981fc3a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125024,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve legacy sandbox denies until Doctor repairs them (P1)** - This path was unchanged since the prior reviewed head; late review found that normal startup does not run Doctor. A persisted deny: [\"image\"] no...; Review finding: [P1] Preserve legacy sandbox denies until Doctor repairs them — src/agents/sandbox/tool-policy.ts:180-183 - [P2] Keep display metadata for historical image tool ca... (sha=3384ae124e46847e8d517a81e9f1b0b8593255da)",
+      "expected_head_sha": "3384ae124e46847e8d517a81e9f1b0b8593255da",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T07:19:54.707Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/view-image-tool-rename",
+        "head_sha": "3384ae124e46847e8d517a81e9f1b0b8593255da",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
