@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T02:32:31.558Z",
+  "updated_at": "2026-08-17T02:33:26.246Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119950:5309746478:2026-08-16T21:24:31Z:re_review",
-      "comment_id": "5309746478",
-      "comment_version_key": "5309746478:2026-08-16T21:24:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119950#issuecomment-5309746478",
-      "comment_created_at": "2026-08-16T21:24:31Z",
-      "comment_updated_at": "2026-08-16T21:24:31Z",
-      "comment_body_sha256": "1f4afa8169e0d630c31dcf8ae75186581290c071141d80cbf3317b37a1dc0fd8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119950,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T21:25:10.573Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-898-v2",
-        "head_sha": "171816bc621d9487a1b1cb356d1f10f36a7d17b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124709:5309747196:2026-08-16T21:25:02Z:re_review",
       "comment_id": "5309747196",
@@ -32656,6 +32609,39 @@
         "kind": "pull_request",
         "branch": "steipete/fix-codex-agent-config-reader",
         "head_sha": "6e6c5c154ced311eefd603b2cf7eafb619a4f5be",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118148:5160037555:2026-08-17T02:32:32Z:clawsweeper_needs_human",
+      "comment_id": "5160037555",
+      "comment_version_key": "5160037555:2026-08-17T02:32:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118148#issuecomment-5160037555",
+      "comment_created_at": "2026-08-02T19:45:46Z",
+      "comment_updated_at": "2026-08-17T02:32:32Z",
+      "comment_body_sha256": "5d68e1ba17de28059bb332dd814377b6b2ad5d1ac23fb6cc52c7c862073fc42b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118148,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The contributor supplied a real QA transport attempt, but it delivered an unprefixed reply and omitted the effective configuration nee... (sha=11cb2b8485f4c565da7d2e9fc38b35e8874256a8)",
+      "expected_head_sha": "11cb2b8485f4c565da7d2e9fc38b35e8874256a8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T02:33:26.246Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/response-prefix-schema-parity",
+        "head_sha": "11cb2b8485f4c565da7d2e9fc38b35e8874256a8",
         "cluster_id": null,
         "job_path": null
       }
