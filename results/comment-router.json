@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:51:49.486Z",
+  "updated_at": "2026-08-17T20:52:00.036Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123147:5279645637:2026-08-17T18:41:39Z:clawsweeper_needs_human",
-      "comment_id": "5279645637",
-      "comment_version_key": "5279645637:2026-08-17T18:41:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123147#issuecomment-5279645637",
-      "comment_created_at": "2026-08-13T11:11:01Z",
-      "comment_updated_at": "2026-08-17T18:41:39Z",
-      "comment_body_sha256": "7e451b6956b844aab6945b60085e5d306eab35231711c85e1cbb4a6019369635",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123147,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - QA runtime code grows by roughly 321 net lines; it is justified by one shared collector, but merge review should keep task-lifecycle policy confined to QA evidence evaluation. (sha=db33ebdce7bc348f6b68454e5484bf8c078a4743)",
-      "expected_head_sha": "db33ebdce7bc348f6b68454e5484bf8c078a4743",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T18:48:37.471Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/qa-subagent-evidence-aug13",
-        "head_sha": "db33ebdce7bc348f6b68454e5484bf8c078a4743",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125359:5318395238:2026-08-17T18:43:43Z:clawsweeper_needs_human",
       "comment_id": "5318395238",
@@ -29919,6 +29886,53 @@
       "status": "skipped",
       "processed_at": "2026-08-17T20:51:49.486Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:80396:5320098301:2026-08-17T20:51:07Z:re_review",
+      "comment_id": "5320098301",
+      "comment_version_key": "5320098301:2026-08-17T20:51:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5320098301",
+      "comment_created_at": "2026-08-17T20:51:07Z",
+      "comment_updated_at": "2026-08-17T20:51:07Z",
+      "comment_body_sha256": "4e64a6be64b98f132003f99e28cd9a7c43dfb1339642786422934601d511a400",
+      "repo": "openclaw/openclaw",
+      "issue_number": 80396,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T20:51:57.606Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/41966-media-token-warn-in-fence",
+        "head_sha": "ac846cceca71f54bbea0199cb61dbbb93605c0bd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
