@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T13:14:24.496Z",
+  "updated_at": "2026-08-17T13:14:42.111Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5314265907:2026-08-17T09:29:21Z:re_review",
-      "comment_id": "5314265907",
-      "comment_version_key": "5314265907:2026-08-17T09:29:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5314265907",
-      "comment_created_at": "2026-08-17T09:29:21Z",
-      "comment_updated_at": "2026-08-17T09:29:21Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T09:30:09.882Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-performance",
-        "head_sha": "846bc862258dc85a8e5875e66ca0d7dd462405ec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125181:5313958150:2026-08-17T09:33:57Z:clawsweeper_needs_human",
       "comment_id": "5313958150",
@@ -31544,6 +31497,39 @@
         "kind": "pull_request",
         "branch": "codex/csw-132-bay-projection",
         "head_sha": "bea3ef7083fc79dd8cb48d81c2a1ef6e4c7e6416",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125049:5312007945:2026-08-17T13:13:43Z:clawsweeper_needs_human",
+      "comment_id": "5312007945",
+      "comment_version_key": "5312007945:2026-08-17T13:13:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125049#issuecomment-5312007945",
+      "comment_created_at": "2026-08-17T04:54:53Z",
+      "comment_updated_at": "2026-08-17T13:13:43Z",
+      "comment_body_sha256": "ac324d2d71f14dbec7dc1d6927b9264667253fea5b63c9a924374ca84208ab37",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125049,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The submitted terminal trace uses real HTTP but replaces the production paired-node client with a custom invoke shim, so it does not d... (sha=6760cafdbd1cc2ba89524b8b25884f0ed77d05ba)",
+      "expected_head_sha": "6760cafdbd1cc2ba89524b8b25884f0ed77d05ba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T13:14:42.111Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/unwrap-node-payload-bare-json-parse",
+        "head_sha": "6760cafdbd1cc2ba89524b8b25884f0ed77d05ba",
         "cluster_id": null,
         "job_path": null
       }
