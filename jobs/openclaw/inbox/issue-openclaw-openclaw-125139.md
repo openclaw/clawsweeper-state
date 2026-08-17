@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the unsafe-local Memory Wiki self-import loop for https://github.com/openclaw/openclaw/issues/125139. First reproduce a generated unsafe-local source page copied below unsafeLocal.paths being re-imported. Keep the fix at the memory-wiki unsafe-local artifact-collection boundary; reuse or narrowly expose the existing generated imported-page classifier rather than duplicate wrapper or filename checks. Do not add config, change ordinary Markdown imports, or edit CHANGELOG.md. Add a behavior-level regression that fails on current main and proves repeated imports remain stable after mirroring a generated page. Treat https://github.com/openclaw/openclaw/pull/95666 as sibling-invariant context only.
+Repair the existing unsafe-local self-import bug from https://github.com/openclaw/openclaw/issues/125139. In the owning unsafe-local scanner, reject recognized generated imported-source wrappers before they become artifacts, active keys, or persistent source-sync entries. Do not use only physical vault-root containment: the reported mirror is copied outside the vault. Reuse the existing canonical generated-wrapper recognition where practical, preserve ordinary raw Markdown, and avoid filename-prefix heuristics, new config, migrations, or a status-only workaround. Add an owner-boundary regression in the unsafe-local suite: create a legitimate local file, sync it, copy the generated source page into an unsafe-local scan root, rerun sync repeatedly, and prove no loop page is imported while stale prior loop entries prune. Apply the test-audit gate: the test must fail before the repair for this observed mirror loop and must not require a test-only production seam.
 
 Likely files:
 
 - extensions/memory-wiki/src/unsafe-local.ts
 - extensions/memory-wiki/src/unsafe-local.test.ts
 - extensions/memory-wiki/src/markdown.ts
-- extensions/memory-wiki/src/markdown.test.ts
+- extensions/memory-wiki/src/source-sync-state.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs extensions/memory-wiki/src/unsafe-local.test.ts
 - node scripts/run-vitest.mjs extensions/memory-wiki/src/bridge.test.ts
-- node scripts/run-vitest.mjs extensions/memory-wiki/src/markdown.test.ts
 
 ## Operator Prompt
 
