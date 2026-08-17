@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T23:46:00.402Z",
+  "updated_at": "2026-08-17T23:47:18.432Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125406:5320097485:2026-08-17T20:51:02Z:clawsweeper_needs_human",
-      "comment_id": "5320097485",
-      "comment_version_key": "5320097485:2026-08-17T20:51:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125406#issuecomment-5320097485",
-      "comment_created_at": "2026-08-17T20:51:02Z",
-      "comment_updated_at": "2026-08-17T20:51:02Z",
-      "comment_body_sha256": "0bc2e779f07c268dbceff9419e7ebbeddf0571c6b75feddac25f2f911b02fae2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125406,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing tar.bz2 installs with listings beyond the capture limit, or tar implementations emitting an unsupported type character, will now fail visibly instead of extracting; validate... (sha=fa5c0deb7a35dce3a7ad12738ad89fc97b19be70)",
-      "expected_head_sha": "fa5c0deb7a35dce3a7ad12738ad89fc97b19be70",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T20:51:48.881Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/reject-truncated-tar-listings",
-        "head_sha": "fa5c0deb7a35dce3a7ad12738ad89fc97b19be70",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125280:5316532635:2026-08-17T20:51:00Z:clawsweeper_needs_human",
       "comment_id": "5316532635",
@@ -31235,6 +31202,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125261:5315929799:2026-08-17T23:46:22Z:clawsweeper_auto_repair",
+      "comment_id": "5315929799",
+      "comment_version_key": "5315929799:2026-08-17T23:46:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125261#issuecomment-5315929799",
+      "comment_created_at": "2026-08-17T12:18:34Z",
+      "comment_updated_at": "2026-08-17T23:46:22Z",
+      "comment_body_sha256": "f0dc8db8f2623a3c2180cae9e6aca6f2077116732ba95046a54cb6cbafd16a1e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125261,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b9f9f784fa6331ebd286a1b772825743f1873b04)",
+      "expected_head_sha": "b9f9f784fa6331ebd286a1b772825743f1873b04",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T23:47:18.432Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-preview-bounded-tail-058",
+        "head_sha": "b9f9f784fa6331ebd286a1b772825743f1873b04",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
