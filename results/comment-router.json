@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:43:14.366Z",
+  "updated_at": "2026-08-17T03:43:32.511Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124081:5301126490:2026-08-16T22:47:20Z:clawsweeper_needs_human",
-      "comment_id": "5301126490",
-      "comment_version_key": "5301126490:2026-08-16T22:47:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124081#issuecomment-5301126490",
-      "comment_created_at": "2026-08-15T07:20:52Z",
-      "comment_updated_at": "2026-08-16T22:47:20Z",
-      "comment_body_sha256": "a470d753f5359b885c8e54c03fbf348a0c85c0e319452c315b58518032481f3f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124081,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes every service-managed POSIX child run into a relay-and-anchor lifecycle, so a rebase must be followed by exact merge-result lifecycle and installed-package proof before l... (sha=def54f63732e31ce30b15ef56d58e3948e2d97c3)",
-      "expected_head_sha": "def54f63732e31ce30b15ef56d58e3948e2d97c3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T22:55:55.224Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "joshavant/issue-120386-20260814t154759z-8d1d8f62",
-        "head_sha": "def54f63732e31ce30b15ef56d58e3948e2d97c3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124418:5305792040:2026-08-16T22:43:38Z:clawsweeper_auto_repair",
       "comment_id": "5305792040",
@@ -32434,6 +32401,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124994:5311263861:2026-08-17T03:42:35Z:clawsweeper_needs_human",
+      "comment_id": "5311263861",
+      "comment_version_key": "5311263861:2026-08-17T03:42:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124994#issuecomment-5311263861",
+      "comment_created_at": "2026-08-17T02:58:03Z",
+      "comment_updated_at": "2026-08-17T03:42:35Z",
+      "comment_body_sha256": "f665cea8f142f5ca261f0ab809018d8f84b68709444ba90d0a4eedd8a5759674",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124994,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Avoid exceeding SQLite’s bind-variable limit (P1)** - This IN clause receives every candidate position. sessions.get accepts any finite limit and expands it to limit * 20 + 20 lines, so a 32,780-message session...; Review finding: [P1] Avoid exceeding SQLite’s bind-variable limit — src/config/sessions/session-accessor.sqlite-history-events.ts:207 - [P1] Redact imported messages before cachin... (sha=3105492b1b48dba29b51780d2cce76b126d0555c)",
+      "expected_head_sha": "3105492b1b48dba29b51780d2cce76b126d0555c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T03:43:32.511Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/ecstatic-golick-aa32b7",
+        "head_sha": "3105492b1b48dba29b51780d2cce76b126d0555c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
