@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:20:12.671Z",
+  "updated_at": "2026-08-17T03:20:18.536Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123709:5295727554:2026-08-14T16:31:35Z:re_review",
-      "comment_id": "5295727554",
-      "comment_version_key": "5295727554:2026-08-14T16:31:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123709#issuecomment-5295727554",
-      "comment_created_at": "2026-08-14T16:31:35Z",
-      "comment_updated_at": "2026-08-14T16:31:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123709,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T22:24:46.188Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123709:5295861997:2026-08-14T16:46:07Z:re_review",
       "comment_id": "5295861997",
@@ -32467,6 +32440,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123556:5291077099:2026-08-17T03:19:09Z:clawsweeper_needs_human",
+      "comment_id": "5291077099",
+      "comment_version_key": "5291077099:2026-08-17T03:19:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5291077099",
+      "comment_created_at": "2026-08-14T08:12:51Z",
+      "comment_updated_at": "2026-08-17T03:19:09Z",
+      "comment_body_sha256": "b9649b3a925b458e26f03e479e60f1197731a18b1889657ca2e8ddee3f2945f0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123556,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A cached positive result can leave the diff control visible for up to five seconds after Git metadata disappears; the eventual diff request remains authoritative, but the brief stale... (sha=f1ec213139f2a1f7b514118953c188db013c788e)",
+      "expected_head_sha": "f1ec213139f2a1f7b514118953c188db013c788e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T03:20:18.536Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-concurrency",
+        "head_sha": "f1ec213139f2a1f7b514118953c188db013c788e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
