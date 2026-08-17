@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T22:43:42.371Z",
+  "updated_at": "2026-08-17T22:43:51.281Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5318011048:2026-08-17T17:03:15Z:re_review",
-      "comment_id": "5318011048",
-      "comment_version_key": "5318011048:2026-08-17T17:03:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5318011048",
-      "comment_created_at": "2026-08-17T17:03:15Z",
-      "comment_updated_at": "2026-08-17T17:03:15Z",
-      "comment_body_sha256": "381cbfdfa9b003cbbe2bdcd90bc561c9625c5ae85c83e8f9f27b9493fc967718",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T19:31:59.253Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125368:5319296561:2026-08-17T19:31:16Z:re_review",
       "comment_id": "5319296561",
@@ -31455,6 +31428,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T22:43:42.371Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125408:5320149353:2026-08-17T22:43:10Z:clawsweeper_needs_human",
+      "comment_id": "5320149353",
+      "comment_version_key": "5320149353:2026-08-17T22:43:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125408#issuecomment-5320149353",
+      "comment_created_at": "2026-08-17T20:56:28Z",
+      "comment_updated_at": "2026-08-17T22:43:10Z",
+      "comment_body_sha256": "99a8cdb6a3e6a03da00cca3f527db05dc69d2917cb09eba8ebf8986080051e5b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125408,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing elevation installation containing CUA is deliberately quarantined and its LaunchAgent disabled rather than restarted; prove that a signed upgrade leaves the operator with... (sha=0dbfd51e994ece476bf8ceb1a8c7093675f9c98d)",
+      "expected_head_sha": "0dbfd51e994ece476bf8ceb1a8c7093675f9c98d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T22:43:51.281Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/elevation-host-no-cua",
+        "head_sha": "0dbfd51e994ece476bf8ceb1a8c7093675f9c98d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
