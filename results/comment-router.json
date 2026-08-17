@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T23:45:19.085Z",
+  "updated_at": "2026-08-17T23:45:40.835Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121796:5320088421:2026-08-17T20:50:06Z:re_review",
-      "comment_id": "5320088421",
-      "comment_version_key": "5320088421:2026-08-17T20:50:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121796#issuecomment-5320088421",
-      "comment_created_at": "2026-08-17T20:50:06Z",
-      "comment_updated_at": "2026-08-17T20:50:06Z",
-      "comment_body_sha256": "7c05205ba5740a6ab7200546b23b695e5b481aa522d48ecaf8c043c95bde03e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121796,
-      "author": "Grynn",
-      "author_id": 212880,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T20:50:55.837Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-history-codemode-failures",
-        "head_sha": "e84f917eb838727938baec5354c7bad206f547fa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125332:5317473933:2026-08-17T20:49:33Z:clawsweeper_auto_repair",
       "comment_id": "5317473933",
@@ -31212,6 +31165,39 @@
         "kind": "pull_request",
         "branch": "steipete/ratchet-unification",
         "head_sha": "0a2329fcb59f0bf3c06699d0af3902ae335817c6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125452:5321570144:2026-08-17T23:45:02Z:clawsweeper_needs_human",
+      "comment_id": "5321570144",
+      "comment_version_key": "5321570144:2026-08-17T23:45:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125452#issuecomment-5321570144",
+      "comment_created_at": "2026-08-17T23:45:02Z",
+      "comment_updated_at": "2026-08-17T23:45:02Z",
+      "comment_body_sha256": "89bc9c2118461ebcdf247097f4c039e729168e4a8fca3a2647ff23912fb389e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125452,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes existing npm 11.13–11.15 upgrades from an intentional pre-mutation refusal to unflagged lifecycle execution, so the observed npm version matrix should remain the accep... (sha=3d50536608e6707a2479d8d9cc6729f6faa04c16)",
+      "expected_head_sha": "3d50536608e6707a2479d8d9cc6729f6faa04c16",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T23:45:40.835Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/npm-11-lifecycle-policy",
+        "head_sha": "3d50536608e6707a2479d8d9cc6729f6faa04c16",
         "cluster_id": null,
         "job_path": null
       }
