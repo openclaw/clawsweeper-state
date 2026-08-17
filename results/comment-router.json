@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:45:56.868Z",
+  "updated_at": "2026-08-17T20:46:08.963Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125199:5314608000:2026-08-17T18:27:53Z:clawsweeper_needs_human",
-      "comment_id": "5314608000",
-      "comment_version_key": "5314608000:2026-08-17T18:27:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125199#issuecomment-5314608000",
-      "comment_created_at": "2026-08-17T10:01:29Z",
-      "comment_updated_at": "2026-08-17T18:27:53Z",
-      "comment_body_sha256": "e99e06c0895efb4ba3fffefd98d3776bea2fcc52e76b12d09b7d515c279e7474",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125199,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Serialize identity mutations with configuration autosave (P1)** - This bypasses RuntimeConfigCapability.runExternalMutation, although tools.github.configure writes the same configuration document. A pending debo...; Review finding: [P1] Serialize identity mutations with configuration autosave — ui/src/pages/agents/github-identity-controller.ts:268-281 - [P2] Emit a usable Swift model for the... (sha=a5fed6bff0d569125abdb79262a8e092deb84488)",
-      "expected_head_sha": "a5fed6bff0d569125abdb79262a8e092deb84488",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-17T18:43:26.099Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125288:5317421665:2026-08-17T18:36:39Z:clawsweeper_needs_human",
       "comment_id": "5317421665",
@@ -29861,6 +29834,53 @@
       "status": "skipped",
       "processed_at": "2026-08-17T20:45:56.868Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123482:5320042473:2026-08-17T20:45:23Z:re_review",
+      "comment_id": "5320042473",
+      "comment_version_key": "5320042473:2026-08-17T20:45:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5320042473",
+      "comment_created_at": "2026-08-17T20:45:23Z",
+      "comment_updated_at": "2026-08-17T20:45:23Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123482,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T20:46:06.526Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-performance",
+        "head_sha": "036444ca4e016f87f26a0a5c256e21d183e3267a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
