@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T23:27:10.148Z",
+  "updated_at": "2026-08-17T23:27:13.835Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125332:5317473933:2026-08-17T20:20:49Z:clawsweeper_needs_human",
-      "comment_id": "5317473933",
-      "comment_version_key": "5317473933:2026-08-17T20:20:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125332#issuecomment-5317473933",
-      "comment_created_at": "2026-08-17T16:01:14Z",
-      "comment_updated_at": "2026-08-17T20:20:49Z",
-      "comment_body_sha256": "b29c77c36cb6894b976fdb3295b7fa821be45494e7110864310f848007a1c27d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125332,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Start New Session draft work before teardown (P1)** - enqueueWrite schedules run behind writeChain.then, so persistNow() from teardown returns before the dynamic import and IndexedDB transaction begin. A route c...; Review finding: [P1] Start New Session draft work before teardown — ui/src/pages/new-session/draft-persistence.ts:354-355 - [medium] Retire durable drafts before private-mode tear... (sha=6cfddd621a69c4db3e50ec4ef4df2f8966c6c776)",
-      "expected_head_sha": "6cfddd621a69c4db3e50ec4ef4df2f8966c6c776",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T20:22:16.130Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/persistent-drafts-and-images-65b66d",
-        "head_sha": "6cfddd621a69c4db3e50ec4ef4df2f8966c6c776",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123834:5319814689:2026-08-17T20:22:28Z:re_review",
       "comment_id": "5319814689",
@@ -31503,6 +31470,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124162:5321419521:2026-08-17T23:26:32Z:re_review",
+      "comment_id": "5321419521",
+      "comment_version_key": "5321419521:2026-08-17T23:26:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5321419521",
+      "comment_created_at": "2026-08-17T23:26:32Z",
+      "comment_updated_at": "2026-08-17T23:26:32Z",
+      "comment_body_sha256": "bbc4fcb8cd7105185c1143cab4d7e1627762996820ba8f52c9f6ca437ad0a79c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124162,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T23:27:11.812Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-aware-resume-breaker-122950",
+        "head_sha": "0aa62275e443a7b51ba300632b4b2b695ee1d2a9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
