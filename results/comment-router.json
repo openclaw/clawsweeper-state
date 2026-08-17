@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T02:17:23.209Z",
+  "updated_at": "2026-08-17T02:17:59.243Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124827:5309640992:2026-08-16T20:59:33Z:clawsweeper_auto_repair",
-      "comment_id": "5309640992",
-      "comment_version_key": "5309640992:2026-08-16T20:59:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124827#issuecomment-5309640992",
-      "comment_created_at": "2026-08-16T20:59:33Z",
-      "comment_updated_at": "2026-08-16T20:59:33Z",
-      "comment_body_sha256": "09e05faf99356d4d1670150294685f96ab514029205aa5c59d8a84d97d5be454",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124827,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=71b3fcc5804f1278c0600734f81ad9b5232a4a2a)",
-      "expected_head_sha": "71b3fcc5804f1278c0600734f81ad9b5232a4a2a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T21:02:29.259Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/ui-cron-protocol-types",
-        "head_sha": "71b3fcc5804f1278c0600734f81ad9b5232a4a2a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124795:5309393642:2026-08-16T21:01:53Z:clawsweeper_needs_human",
       "comment_id": "5309393642",
@@ -32549,6 +32516,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124902:5311034405:2026-08-17T02:17:14Z:re_review",
+      "comment_id": "5311034405",
+      "comment_version_key": "5311034405:2026-08-17T02:17:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124902#issuecomment-5311034405",
+      "comment_created_at": "2026-08-17T02:17:14Z",
+      "comment_updated_at": "2026-08-17T02:17:14Z",
+      "comment_body_sha256": "14b96301003cd4bd381c66d08f40b8132fded9add525d6917ab214f9f7d39a65",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124902,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T02:17:57.415Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/create-time-title-model-routing-7471e0",
+        "head_sha": "cd67c244f2f6993430bf48b93675e8ad4b031151",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
