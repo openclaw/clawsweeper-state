@@ -1,48 +1,6 @@
 {
-  "updated_at": "2026-08-17T00:06:02.726Z",
+  "updated_at": "2026-08-17T00:06:13.014Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:497:5309031841:2026-08-16T18:35:23Z:re_review",
-      "comment_id": "5309031841",
-      "comment_version_key": "5309031841:2026-08-16T18:35:23Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/497#issuecomment-5309031841",
-      "comment_created_at": "2026-08-16T18:35:23Z",
-      "comment_updated_at": "2026-08-16T18:35:23Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "source_delivery_id": "3e6ad850-99a1-11f1-9832-abf1c7f8bcf6",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 497,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T18:36:07.694Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/protocol-130-result-fixture-prep",
-        "head_sha": "d4b34660fc58ea04f54dbd5240941e826a8917b2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124162:5309038806:2026-08-16T18:37:00Z:re_review",
       "comment_id": "5309038806",
@@ -33361,6 +33319,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124924:5310376001:2026-08-17T00:05:34Z:clawsweeper_needs_human",
+      "comment_id": "5310376001",
+      "comment_version_key": "5310376001:2026-08-17T00:05:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124924#issuecomment-5310376001",
+      "comment_created_at": "2026-08-17T00:05:34Z",
+      "comment_updated_at": "2026-08-17T00:05:34Z",
+      "comment_body_sha256": "439f7ff4b4fe3d946df8fcc82d2ce856e49ec9a6b1559de03ce8486aad2a9897",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124924,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Gateway readiness remains availability-sensitive: the final fresh read must continue rejecting a genuine migration-inventory change, so exact-head restart validation should complete b... (sha=5d1eeabb025145bfce87b9baf549259ef0d65ef7)",
+      "expected_head_sha": "5d1eeabb025145bfce87b9baf549259ef0d65ef7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T00:06:13.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/plugin-metadata-migration-convergence-fix-20260816",
+        "head_sha": "5d1eeabb025145bfce87b9baf549259ef0d65ef7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
