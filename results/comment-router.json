@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T19:03:46.677Z",
+  "updated_at": "2026-08-17T19:03:55.804Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125300:5317238976:2026-08-17T16:15:07Z:clawsweeper_needs_human",
-      "comment_id": "5317238976",
-      "comment_version_key": "5317238976:2026-08-17T16:15:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125300#issuecomment-5317238976",
-      "comment_created_at": "2026-08-17T15:07:18Z",
-      "comment_updated_at": "2026-08-17T16:15:07Z",
-      "comment_body_sha256": "c46d6c85619088d774c699d271d67d06fe7b83e2362f8fb419e8f969c9837b1a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125300,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The durable migration path changes its write-transaction cadence; the final exact-head check run should finish before merge, particularly because the repair adds a net 37 production l... (sha=861d64ed415d584ce9fa2e3195c89daed83b83a3)",
-      "expected_head_sha": "861d64ed415d584ce9fa2e3195c89daed83b83a3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T16:20:47.133Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/batch-doctor-session-sqlite-import",
-        "head_sha": "861d64ed415d584ce9fa2e3195c89daed83b83a3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125326:5317417964:2026-08-17T16:13:30Z:clawsweeper_needs_human",
       "comment_id": "5317417964",
@@ -30707,6 +30674,53 @@
         "kind": "pull_request",
         "branch": "jesse/session-bootstrap-performance",
         "head_sha": "c612458a3fc2028149c9ea061d63095758d5aa74",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120419:5318979632:2026-08-17T19:03:10Z:re_review",
+      "comment_id": "5318979632",
+      "comment_version_key": "5318979632:2026-08-17T19:03:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120419#issuecomment-5318979632",
+      "comment_created_at": "2026-08-17T19:03:10Z",
+      "comment_updated_at": "2026-08-17T19:03:10Z",
+      "comment_body_sha256": "d61bb2e79bf6a039254cdbaac893e64f18834841f74d41ce93e8f3776c5cbc73",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120419,
+      "author": "Grynn",
+      "author_id": 212880,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T19:03:53.825Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ingress-stall-requeue",
+        "head_sha": "f9784bef67d06c3403aed28d863f48846dbc9de6",
         "cluster_id": null,
         "job_path": null
       },
