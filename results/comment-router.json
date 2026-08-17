@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T21:50:08.268Z",
+  "updated_at": "2026-08-17T21:50:44.266Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5228076652:2026-08-08T20:49:07Z:re_review",
-      "comment_id": "5228076652",
-      "comment_version_key": "5228076652:2026-08-08T20:49:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5228076652",
-      "comment_created_at": "2026-08-08T20:49:07Z",
-      "comment_updated_at": "2026-08-08T20:49:07Z",
-      "comment_body_sha256": "76996cdec336f4a229f9a070bbd1d736f9af2a5cd17bfc0516c24c87707e320e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T18:55:40.986Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5228136457:2026-08-08T20:58:31Z:re_review",
       "comment_id": "5228136457",
@@ -31081,6 +31054,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124829:5309628883:2026-08-17T21:49:46Z:clawsweeper_needs_human",
+      "comment_id": "5309628883",
+      "comment_version_key": "5309628883:2026-08-17T21:49:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124829#issuecomment-5309628883",
+      "comment_created_at": "2026-08-16T20:56:22Z",
+      "comment_updated_at": "2026-08-17T21:49:46Z",
+      "comment_body_sha256": "0414ccec0526c188c62df3ad43284d768a13819b8eef49f06a502cbf5ee917dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124829,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve an explicit Codex home scope (P1)** - This replaces any configured scope based solely on API-key presence and also rewrites transport. A rerun can move users between isolated and shared native Codex sta...; Review finding: [P1] Preserve an explicit Codex home scope — src/system-agent/setup-inference-activate.ts:259 - [P1] Keep the custodian onboarding handoff — apps/macos/Sources/Ope... (sha=16e05c8ad10fd17fcbe8143b23fc9a8eb638da07)",
+      "expected_head_sha": "16e05c8ad10fd17fcbe8143b23fc9a8eb638da07",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T21:50:44.266Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-onboarding-codex-activation",
+        "head_sha": "16e05c8ad10fd17fcbe8143b23fc9a8eb638da07",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
