@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T05:33:24.156Z",
+  "updated_at": "2026-08-17T05:34:32.584Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123984:5311206006:2026-08-17T03:01:23Z:re_review",
-      "comment_id": "5311206006",
-      "comment_version_key": "5311206006:2026-08-17T03:01:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123984#issuecomment-5311206006",
-      "comment_created_at": "2026-08-17T02:50:29Z",
-      "comment_updated_at": "2026-08-17T03:01:23Z",
-      "comment_body_sha256": "61b3c21d1ce1a18bca0126db466fd528a5025c692635e02754ee126aa3670c61",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123984,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T03:02:12.876Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsean/telegram-ignore-slim",
-        "head_sha": "b278e1dc6cb77465b9d82ead9c7d765a0da223fe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1170:5297118616:2026-08-17T03:02:11Z:clawsweeper_auto_repair",
       "comment_id": "5297118616",
@@ -31132,6 +31085,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-b3ce8c744c",
         "head_sha": "35d01670e011a7d4e43c41037f7c21827e52a497",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124745:5309094926:2026-08-17T05:32:57Z:clawsweeper_needs_human",
+      "comment_id": "5309094926",
+      "comment_version_key": "5309094926:2026-08-17T05:32:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124745#issuecomment-5309094926",
+      "comment_created_at": "2026-08-16T18:49:59Z",
+      "comment_updated_at": "2026-08-17T05:32:57Z",
+      "comment_body_sha256": "bd0ce6e1a72a85ad0ab930f9cd251b21b92c11ec2b522dcc053307ca054e420d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124745,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Reconcile unrelated dependency surface** - The dependency guard lists package manifests and pnpm-lock.yaml despite the PR body describing a three-file identity repair; confirm which cha...; Review finding: [medium] Reconcile unrelated dependency surface (sha=b5ffcc38d0588fdddc21475969b679c23819f22c)",
+      "expected_head_sha": "b5ffcc38d0588fdddc21475969b679c23819f22c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T05:34:32.584Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-readonly-device-identity",
+        "head_sha": "b5ffcc38d0588fdddc21475969b679c23819f22c",
         "cluster_id": null,
         "job_path": null
       }
