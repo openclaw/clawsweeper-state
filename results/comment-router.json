@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T21:32:33.538Z",
+  "updated_at": "2026-08-17T21:33:07.254Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5272005397:2026-08-12T19:45:08Z:re_review",
-      "comment_id": "5272005397",
-      "comment_version_key": "5272005397:2026-08-12T19:45:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5272005397",
-      "comment_created_at": "2026-08-12T19:45:08Z",
-      "comment_updated_at": "2026-08-12T19:45:08Z",
-      "comment_body_sha256": "b0283a89c570edf18717e33cec887e2c24c6b062d69945768aeff56d5ff1708b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T18:55:40.985Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5272089025:2026-08-12T19:53:39Z:re_review",
       "comment_id": "5272089025",
@@ -30635,6 +30608,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T21:32:33.538Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125392:5319925618:2026-08-17T21:32:24Z:clawsweeper_needs_human",
+      "comment_id": "5319925618",
+      "comment_version_key": "5319925618:2026-08-17T21:32:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125392#issuecomment-5319925618",
+      "comment_created_at": "2026-08-17T20:33:40Z",
+      "comment_updated_at": "2026-08-17T21:32:24Z",
+      "comment_body_sha256": "adae4d85243d846da036fdbdce8398ea70887c9f0989a34fa1b23b538e9c578f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125392,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Talk-only clients that accidentally relied on state-changing consult tools will lose that unintended capability after upgrade; documented voice-node tokens already promise no mutation... (sha=4424b9bf5d939a7f965bd639eeaacc888000cbc4)",
+      "expected_head_sha": "4424b9bf5d939a7f965bd639eeaacc888000cbc4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T21:33:07.254Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/limit-talk-consults",
+        "head_sha": "4424b9bf5d939a7f965bd639eeaacc888000cbc4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
