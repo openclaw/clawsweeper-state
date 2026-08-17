@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T05:35:36.422Z",
+  "updated_at": "2026-08-17T05:35:39.574Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124934:5311286705:2026-08-17T03:02:31Z:re_review",
-      "comment_id": "5311286705",
-      "comment_version_key": "5311286705:2026-08-17T03:02:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124934#issuecomment-5311286705",
-      "comment_created_at": "2026-08-17T03:02:31Z",
-      "comment_updated_at": "2026-08-17T03:02:31Z",
-      "comment_body_sha256": "92cd9350176e435b3ca258f0a76c64151f8950633a0bc40d7c7649f00c8d5560",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124934,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T03:04:01.622Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-code-mode-debug",
-        "head_sha": "ecae9e26a5fc7758ee3ef5ca8987024aa3275576",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103845:4938096585:2026-08-17T03:02:32Z:clawsweeper_auto_repair",
       "comment_id": "4938096585",
@@ -31135,6 +31088,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125033:5311815871:2026-08-17T05:34:55Z:clawsweeper_needs_human",
+      "comment_id": "5311815871",
+      "comment_version_key": "5311815871:2026-08-17T05:34:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125033#issuecomment-5311815871",
+      "comment_created_at": "2026-08-17T04:29:18Z",
+      "comment_updated_at": "2026-08-17T05:34:55Z",
+      "comment_body_sha256": "339b7ca29fb6b277e4487a9fab8bb181afb80c8ecbe3e85f6159c00f901ad681",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125033,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is not complete: one compact check is failing and another remains in progress, so the branch needs a current-head green gate before merge. (sha=bfdd8b7c69917be939095d25fe62c3e400a003ca)",
+      "expected_head_sha": "bfdd8b7c69917be939095d25fe62c3e400a003ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T05:35:39.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sidebar-child-session-menu",
+        "head_sha": "bfdd8b7c69917be939095d25fe62c3e400a003ca",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
