@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:51:09.138Z",
+  "updated_at": "2026-08-17T06:51:09.559Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125030:5311686120:2026-08-17T04:12:24Z:clawsweeper_needs_human",
-      "comment_id": "5311686120",
-      "comment_version_key": "5311686120:2026-08-17T04:12:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125030#issuecomment-5311686120",
-      "comment_created_at": "2026-08-17T04:12:24Z",
-      "comment_updated_at": "2026-08-17T04:12:24Z",
-      "comment_body_sha256": "be1ac1be63d245731d9b7a4e861d4b8f5cb2bf9351c7e1feb8d2db019cdbb945",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125030,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress; merge only after the required checks complete successfully. (sha=42d16abcfdafbc6c7463031ec674f38b646df3fc)",
-      "expected_head_sha": "42d16abcfdafbc6c7463031ec674f38b646df3fc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:16:42.544Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/charming-kapitsa-33b3e1",
-        "head_sha": "42d16abcfdafbc6c7463031ec674f38b646df3fc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125029:5311697634:2026-08-17T04:14:10Z:clawsweeper_needs_human",
       "comment_id": "5311697634",
@@ -31519,6 +31486,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125036:5311838446:2026-08-17T06:50:18Z:clawsweeper_needs_human",
+      "comment_id": "5311838446",
+      "comment_version_key": "5311838446:2026-08-17T06:50:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125036#issuecomment-5311838446",
+      "comment_created_at": "2026-08-17T04:32:11Z",
+      "comment_updated_at": "2026-08-17T06:50:18Z",
+      "comment_body_sha256": "6a2d76e0ccbb9ae37ebd4aad3ab5fccf722456f55e3a3ce01a2ff239b11a6d1e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125036,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch predates current main’s pending-result recovery fence, so merging without an exact-head rebase and rerun could regress shared lifecycle ordering. (sha=326b570261293ac413d44d67abcfb9083f850717)",
+      "expected_head_sha": "326b570261293ac413d44d67abcfb9083f850717",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T06:51:09.559Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-placement-moves",
+        "head_sha": "326b570261293ac413d44d67abcfb9083f850717",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
