@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T13:08:44.369Z",
+  "updated_at": "2026-08-17T13:08:57.313Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5311829849:2026-08-17T04:31:03Z:re_review",
-      "comment_id": "5311829849",
-      "comment_version_key": "5311829849:2026-08-17T04:31:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5311829849",
-      "comment_created_at": "2026-08-17T04:31:03Z",
-      "comment_updated_at": "2026-08-17T04:31:03Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T08:04:00.216Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:503:5313014195:2026-08-17T08:06:00Z:clawsweeper_auto_repair",
       "comment_id": "5313014195",
@@ -33347,6 +33320,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T13:08:44.369Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120860:5229610023:2026-08-17T13:08:07Z:clawsweeper_needs_human",
+      "comment_id": "5229610023",
+      "comment_version_key": "5229610023:2026-08-17T13:08:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120860#issuecomment-5229610023",
+      "comment_created_at": "2026-08-09T03:40:56Z",
+      "comment_updated_at": "2026-08-17T13:08:07Z",
+      "comment_body_sha256": "331f53011b8c2323872fa696caf74dfa3f7c008b0685018526911f174d6ab29b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120860,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; verify the exact merge result before landing rather than assuming the prior head’s proof still represents it. (sha=0e3ac01e63c8316e2c2e590951bb9ce8cf44e018)",
+      "expected_head_sha": "0e3ac01e63c8316e2c2e590951bb9ce8cf44e018",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T13:08:57.313Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/issue-10354",
+        "head_sha": "0e3ac01e63c8316e2c2e590951bb9ce8cf44e018",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
