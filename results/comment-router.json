@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T07:45:46.578Z",
+  "updated_at": "2026-08-17T07:46:15.238Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124434:5305888418:2026-08-17T04:22:15Z:clawsweeper_needs_human",
-      "comment_id": "5305888418",
-      "comment_version_key": "5305888418:2026-08-17T04:22:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124434#issuecomment-5305888418",
-      "comment_created_at": "2026-08-16T05:22:40Z",
-      "comment_updated_at": "2026-08-17T04:22:15Z",
-      "comment_body_sha256": "500970ccf4a2d9fc4f528452eb5e4830c1e2ad79d50c1b37aa939c9d050a4e78",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124434,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Mocked provider-request assertions cover the branch, but the PR lacks a redacted after-fix run against a real transcription provider. After add... (sha=811f81eefe8e1d98107f0979511771c84948bed7)",
-      "expected_head_sha": "811f81eefe8e1d98107f0979511771c84948bed7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:34:24.698Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/123305-audio-autodetect-prompt-leak",
-        "head_sha": "811f81eefe8e1d98107f0979511771c84948bed7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124680:5308421921:2026-08-17T04:32:11Z:clawsweeper_needs_human",
       "comment_id": "5308421921",
@@ -32278,6 +32245,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125131:5312862819:2026-08-17T07:45:21Z:clawsweeper_needs_human",
+      "comment_id": "5312862819",
+      "comment_version_key": "5312862819:2026-08-17T07:45:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125131#issuecomment-5312862819",
+      "comment_created_at": "2026-08-17T06:59:56Z",
+      "comment_updated_at": "2026-08-17T07:45:21Z",
+      "comment_body_sha256": "fc3f94a3b6313254ffd84961795fb26e5988ffaefcbddec627a035de7ecb9751",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125131,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied E2E source uses a mocked Gateway, and the provided context contains no inspectable real served-Control-UI capture; the live archive transition remains unverified. (sha=d6841d7bb0e3534bcc5bf38ba61b7be2be5a1dec)",
+      "expected_head_sha": "d6841d7bb0e3534bcc5bf38ba61b7be2be5a1dec",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T07:46:15.238Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/archive-selected-session-sidebar",
+        "head_sha": "d6841d7bb0e3534bcc5bf38ba61b7be2be5a1dec",
+        "cluster_id": "automerge-openclaw-openclaw-125131",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125131.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
