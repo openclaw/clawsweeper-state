@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:42:05.613Z",
+  "updated_at": "2026-08-17T20:43:01.367Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107479:4971448190:2026-08-16T19:02:41Z:clawsweeper_needs_human",
-      "comment_id": "4971448190",
-      "comment_version_key": "4971448190:2026-08-16T19:02:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107479#issuecomment-4971448190",
-      "comment_created_at": "2026-07-14T16:18:40Z",
-      "comment_updated_at": "2026-08-16T19:02:41Z",
-      "comment_body_sha256": "89937f75d16c09a71203393b274ee5ef7b8d830a830601d7ab171dde9c9fbc05",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107479,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch predates the current glossary rebuild, so the human reviewer should confirm the current merge result preserves the rebuilt glossary and adds only these two mappings. (sha=735b56fa7663bc095e9772c92ad1a5b8c37dfa2b)",
-      "expected_head_sha": "735b56fa7663bc095e9772c92ad1a5b8c37dfa2b",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T18:43:26.099Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-103304",
-        "head_sha": "735b56fa7663bc095e9772c92ad1a5b8c37dfa2b",
-        "cluster_id": "automerge-openclaw-openclaw-107479",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-107479.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-08-17T18:32:02Z:clawsweeper_needs_human",
       "comment_id": "5075679870",
@@ -29908,6 +29861,39 @@
         "kind": "pull_request",
         "branch": "steipete/recovery-async-tests-20260817",
         "head_sha": "92ab9665c8c530bcc8a6b8f897371618a23cb7b7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125397:5320012601:2026-08-17T20:42:20Z:clawsweeper_needs_human",
+      "comment_id": "5320012601",
+      "comment_version_key": "5320012601:2026-08-17T20:42:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125397#issuecomment-5320012601",
+      "comment_created_at": "2026-08-17T20:42:20Z",
+      "comment_updated_at": "2026-08-17T20:42:20Z",
+      "comment_body_sha256": "d6543f2496590b6ecf367bede24b6ab86ae96330c5675398d3e1f8fde900fc42",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125397,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 8 net lines to store distinct cron execution fields; that growth is justified only because generic task fields cannot represent both the accepted cancellation... (sha=8ac01c3286c9b77a744e1031e7d3c82599f11f04)",
+      "expected_head_sha": "8ac01c3286c9b77a744e1031e7d3c82599f11f04",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T20:43:01.367Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "recovery/cron-cancellation-outcome-20260817",
+        "head_sha": "8ac01c3286c9b77a744e1031e7d3c82599f11f04",
         "cluster_id": null,
         "job_path": null
       }
