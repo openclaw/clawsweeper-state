@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T13:07:18.375Z",
+  "updated_at": "2026-08-17T13:07:42.859Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5313263826:2026-08-17T07:46:08Z:re_review",
-      "comment_id": "5313263826",
-      "comment_version_key": "5313263826:2026-08-17T07:46:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5313263826",
-      "comment_created_at": "2026-08-17T07:46:08Z",
-      "comment_updated_at": "2026-08-17T07:46:08Z",
-      "comment_body_sha256": "0bb76d6704e7d1a2d941a6951802a8e226e3692e8107e10a05c16f25b6b8d9e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T08:03:52.422Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125149:5313267450:2026-08-17T07:46:34Z:clawsweeper_needs_human",
       "comment_id": "5313267450",
@@ -33335,6 +33308,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T13:07:18.375Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125281:5316456220:2026-08-17T13:06:53Z:clawsweeper_needs_human",
+      "comment_id": "5316456220",
+      "comment_version_key": "5316456220:2026-08-17T13:06:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125281#issuecomment-5316456220",
+      "comment_created_at": "2026-08-17T13:06:53Z",
+      "comment_updated_at": "2026-08-17T13:06:53Z",
+      "comment_body_sha256": "c90f74cbe9115ef3673dac94a2f0949c108700a7ec83909b37899a99567e3e0c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125281,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repair is specific to macOS codesign behavior; focused fake-command coverage is strong for pipe handling, but a signed elevation-host packaging run on macOS remains the final plat... (sha=cab46ff6e9bcb21912d213df0570e2baaa001333)",
+      "expected_head_sha": "cab46ff6e9bcb21912d213df0570e2baaa001333",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T13:07:42.859Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/codesign-pipefail",
+        "head_sha": "cab46ff6e9bcb21912d213df0570e2baaa001333",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
