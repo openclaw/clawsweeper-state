@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T02:35:17.531Z",
+  "updated_at": "2026-08-17T02:35:42.884Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124429:5309694665:2026-08-16T21:12:00Z:re_review",
-      "comment_id": "5309694665",
-      "comment_version_key": "5309694665:2026-08-16T21:12:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124429#issuecomment-5309694665",
-      "comment_created_at": "2026-08-16T21:12:00Z",
-      "comment_updated_at": "2026-08-16T21:12:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124429,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T21:27:28.742Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-issue-121481",
-        "head_sha": "09675e40d30d9301f96764723ab4e5d3959ecc92",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123877:5309697832:2026-08-16T21:12:45Z:re_review",
       "comment_id": "5309697832",
@@ -32628,6 +32581,39 @@
         "kind": "pull_request",
         "branch": "automation/native-app-locale-refresh",
         "head_sha": "2a100fcc8711ab7996c29cb834b6fecaa664e101",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-17T02:27:52Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-17T02:27:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-17T02:27:52Z",
+      "comment_body_sha256": "24f50b4d19ec11553f5a9268f66d0b8d206100d1e80604d40da8428f93339997",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner contract (P1)** - This changes the action to 3.97.0 but leaves with.version and its pinned artifact digest at 3.95.9. The workflow guard requires the action and scanner tuple t...; Review finding: [P1] Synchronize the TruffleHog scanner contract — .github/workflows/ci.yml:1066 - [P1] Update the Android attestation guard — .github/workflows/android-release.ym... (sha=53b22bb4a6f7b75ee47e96adab064ad531a04544)",
+      "expected_head_sha": "53b22bb4a6f7b75ee47e96adab064ad531a04544",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T02:35:42.884Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "53b22bb4a6f7b75ee47e96adab064ad531a04544",
         "cluster_id": null,
         "job_path": null
       }
