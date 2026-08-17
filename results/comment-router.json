@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T11:20:08.265Z",
+  "updated_at": "2026-08-17T11:20:20.845Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120491:5224970607:2026-08-17T07:15:10Z:clawsweeper_needs_human",
-      "comment_id": "5224970607",
-      "comment_version_key": "5224970607:2026-08-17T07:15:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5224970607",
-      "comment_created_at": "2026-08-08T06:42:09Z",
-      "comment_updated_at": "2026-08-17T07:15:10Z",
-      "comment_body_sha256": "1e22ea53918b06a073acf61fc0f4fcd9dafd2873a18f5542003d86e9b860e884",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with no new configuration will receive a model-visible repeat-send nudge after the second confirmed delivery. (sha=f7691c65e46e6bd860f63f15b059fd469c5c65fe)",
-      "expected_head_sha": "f7691c65e46e6bd860f63f15b059fd469c5c65fe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T07:17:45.061Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119992-per-turn-send-budget",
-        "head_sha": "f7691c65e46e6bd860f63f15b059fd469c5c65fe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120919:5230414935:2026-08-17T06:59:39Z:clawsweeper_auto_repair",
       "comment_id": "5230414935",
@@ -32813,6 +32780,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124014:5315352379:2026-08-17T11:19:41Z:re_review",
+      "comment_id": "5315352379",
+      "comment_version_key": "5315352379:2026-08-17T11:19:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5315352379",
+      "comment_created_at": "2026-08-17T11:19:41Z",
+      "comment_updated_at": "2026-08-17T11:19:41Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124014,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T11:20:19.277Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/auth-reauth-state-reset",
+        "head_sha": "ec49af3d4e2ed0dae8a8413355f83962fbc38383",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
