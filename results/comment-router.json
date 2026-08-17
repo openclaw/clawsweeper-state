@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T17:02:17.093Z",
+  "updated_at": "2026-08-17T17:04:19.551Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123008:5276269194:2026-08-17T11:39:19Z:clawsweeper_needs_human",
-      "comment_id": "5276269194",
-      "comment_version_key": "5276269194:2026-08-17T11:39:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123008#issuecomment-5276269194",
-      "comment_created_at": "2026-08-13T05:16:34Z",
-      "comment_updated_at": "2026-08-17T11:39:19Z",
-      "comment_body_sha256": "075845b9d54a26afb7ba920b283f398502b6f07a21217e35022f38d42400dd3a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123008,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The submitted media names an earlier head, while the current head subsequently changes New Session lifecycle files; exact-head CI should establish the final behavior before merge. (sha=06691d9026ecfe8f2fca74bb88c1ca323693371a)",
-      "expected_head_sha": "06691d9026ecfe8f2fca74bb88c1ca323693371a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T11:43:58.177Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/shared-new-session-composer",
-        "head_sha": "06691d9026ecfe8f2fca74bb88c1ca323693371a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124014:5300588734:2026-08-17T11:41:17Z:clawsweeper_needs_human",
       "comment_id": "5300588734",
@@ -30914,6 +30881,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:80396:5318014051:2026-08-17T17:03:35Z:re_review",
+      "comment_id": "5318014051",
+      "comment_version_key": "5318014051:2026-08-17T17:03:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5318014051",
+      "comment_created_at": "2026-08-17T17:03:35Z",
+      "comment_updated_at": "2026-08-17T17:03:35Z",
+      "comment_body_sha256": "537b6eeed2fcdac2e0df380840ceb9175df5481eaf35cd84fd2c2957f419d639",
+      "repo": "openclaw/openclaw",
+      "issue_number": 80396,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T17:04:17.516Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/41966-media-token-warn-in-fence",
+        "head_sha": "eb6f3d3da7b9a6c3484df09dbacf92b366044b36",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
