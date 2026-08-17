@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T23:51:28.180Z",
+  "updated_at": "2026-08-17T23:52:03.121Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125408:5320149353:2026-08-17T20:56:28Z:clawsweeper_needs_human",
-      "comment_id": "5320149353",
-      "comment_version_key": "5320149353:2026-08-17T20:56:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125408#issuecomment-5320149353",
-      "comment_created_at": "2026-08-17T20:56:28Z",
-      "comment_updated_at": "2026-08-17T20:56:28Z",
-      "comment_body_sha256": "6fe63e46c4e7c8288484925befe727cc39ef98f0a10342fefcb73383e20604f2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125408,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing elevation-host installs with a persisted CUA choice will use Peekaboo after upgrade; verify a signed elevation artifact can install and start with that persisted state before... (sha=1259e88362a463621c47949454317fad22f8654d)",
-      "expected_head_sha": "1259e88362a463621c47949454317fad22f8654d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T21:02:23.153Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/elevation-host-no-cua",
-        "head_sha": "1259e88362a463621c47949454317fad22f8654d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123482:5289771597:2026-08-17T21:00:11Z:clawsweeper_needs_human",
       "comment_id": "5289771597",
@@ -31229,6 +31196,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125456:5321618847:2026-08-17T23:51:21Z:clawsweeper_auto_repair",
+      "comment_id": "5321618847",
+      "comment_version_key": "5321618847:2026-08-17T23:51:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125456#issuecomment-5321618847",
+      "comment_created_at": "2026-08-17T23:51:21Z",
+      "comment_updated_at": "2026-08-17T23:51:21Z",
+      "comment_body_sha256": "fe4d308a95191bc0ab5fdf936120eabe75306653d68baae29f33c34070e33930",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125456,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=355b99158ff00a448b23fc598818e31abddca60a)",
+      "expected_head_sha": "355b99158ff00a448b23fc598818e31abddca60a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T23:52:03.121Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-cloud-workers-save-race",
+        "head_sha": "355b99158ff00a448b23fc598818e31abddca60a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
