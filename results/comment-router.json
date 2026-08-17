@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T02:35:42.884Z",
+  "updated_at": "2026-08-17T02:35:47.415Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123877:5309697832:2026-08-16T21:12:45Z:re_review",
-      "comment_id": "5309697832",
-      "comment_version_key": "5309697832:2026-08-16T21:12:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123877#issuecomment-5309697832",
-      "comment_created_at": "2026-08-16T21:12:45Z",
-      "comment_updated_at": "2026-08-16T21:12:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123877,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T21:27:28.742Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "joshavant/issue-121018-20260814t154843z-94134986",
-        "head_sha": "12a499f30158a62921fa04ab1ceb87aa7acb855c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124649:5309699768:2026-08-16T21:13:11Z:re_review",
       "comment_id": "5309699768",
@@ -32614,6 +32567,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-b3ce8c744c",
         "head_sha": "53b22bb4a6f7b75ee47e96adab064ad531a04544",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124947:5310645492:2026-08-17T02:35:03Z:clawsweeper_needs_human",
+      "comment_id": "5310645492",
+      "comment_version_key": "5310645492:2026-08-17T02:35:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124947#issuecomment-5310645492",
+      "comment_created_at": "2026-08-17T01:00:06Z",
+      "comment_updated_at": "2026-08-17T02:35:03Z",
+      "comment_body_sha256": "9c989d2e2a0b05e75029f0887505d6ada3727a6ca22d2e8ce44784569ba66327",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124947,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive plugin manifest API and the intentional refusal of senderless intent creation can change existing operator flows; this needs explicit upgrade acceptance. (sha=9ea4826b5e696735f0c72d2444944c51cae4f175)",
+      "expected_head_sha": "9ea4826b5e696735f0c72d2444944c51cae4f175",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T02:35:47.415Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-intent-unreachable",
+        "head_sha": "9ea4826b5e696735f0c72d2444944c51cae4f175",
         "cluster_id": null,
         "job_path": null
       }
