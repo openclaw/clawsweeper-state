@@ -67,22 +67,23 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the retired xAI fast-model path as one coherent change: remove or replace the producer mapping that emits `grok-4-fast`, and extend canonical doctor model-reference migration so direct stale refs, including `agents.defaults.imageModel` and model-map keys, become a verified current image-capable xAI model. Do not add Telegram-specific logic, a runtime fallback, or a new config option. Update the existing fast-mode and migration regressions so they fail before the repair, and use an authorized redacted xAI Responses image request to prove the selected replacement. Put release-note context in the PR body, not CHANGELOG.md.
+Repair the xAI retired-model invariant for this issue. First add a regression that fails on current main for direct `agents.defaults.imageModel: "xai/grok-4-fast"` and proves Doctor rewrites it to `xai/grok-4.3` across the normal model-reference shapes. Then trace the xAI `fastMode` producer and prevent Grok-4 fast mode from emitting the retired id; update the associated docs so they match the actual current route. Keep the repair at the provider/config boundary: no Telegram-specific guard, new config option, or runtime fallback reader. Add release-note context to the PR body, not CHANGELOG.md. Before claiming upstream compatibility, perform a redacted, authorized xAI Responses JPEG request using the migrated model and record the observed description/status.
 
 Likely files:
 
-- extensions/xai/stream.ts
-- extensions/xai/stream.test.ts
-- extensions/xai/model-definitions.ts
 - src/commands/doctor/shared/legacy-config-migrations.runtime.models.refs.ts
 - src/commands/doctor/shared/legacy-config-migrate.test.ts
+- extensions/xai/stream.ts
+- extensions/xai/stream.test.ts
+- docs/concepts/model-providers.md
 - docs/providers/xai.md
 
 Validation:
 
-- pnpm test extensions/xai/stream.test.ts
-- pnpm test src/commands/doctor/shared/legacy-config-migrate.test.ts
-- Authorized redacted xAI Responses image request using the migrated model.
+- Add a Doctor regression that fails before the bare `grok-4-fast` mapping exists and proves direct image-model migration to `xai/grok-4.3`.
+- pnpm test src/commands/doctor/shared/legacy-config-migrate.test.ts extensions/xai/stream.test.ts
+- pnpm docs:list --headings && pnpm docs:check-mdx
+- Run a redacted authorized xAI Responses image-understanding request for `xai/grok-4.3`; this review could not run `pnpm docs:list` because pnpm is unavailable in the read-only environment.
 
 ## Operator Prompt
 
