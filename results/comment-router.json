@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:54:40.328Z",
+  "updated_at": "2026-08-17T20:54:51.093Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117074:5148980087:2026-08-01T02:02:03Z:re_review",
-      "comment_id": "5148980087",
-      "comment_version_key": "5148980087:2026-08-01T02:02:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117074#issuecomment-5148980087",
-      "comment_created_at": "2026-08-01T02:02:03Z",
-      "comment_updated_at": "2026-08-01T02:02:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117074,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T18:52:21.685Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125362:5318849237:2026-08-17T18:51:35Z:re_review",
       "comment_id": "5318849237",
@@ -29967,6 +29940,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-17T20:52:13Z:clawsweeper_needs_human",
+      "comment_id": "5290613923",
+      "comment_version_key": "5290613923:2026-08-17T20:52:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5290613923",
+      "comment_created_at": "2026-08-14T07:15:12Z",
+      "comment_updated_at": "2026-08-17T20:52:13Z",
+      "comment_body_sha256": "183668a96172bcdb92a4f1b0b723145402e124783fe4999a248016f66ed47afe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123535,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch adds 109 net production lines to shared catalog scheduling and authenticated image lifecycles; a cancellation or expiry mistake can affect multi-tab responsiveness or works... (sha=84a754004e221174bbc0b80e819cd73c386a34a6)",
+      "expected_head_sha": "84a754004e221174bbc0b80e819cd73c386a34a6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T20:54:51.093Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-performance",
+        "head_sha": "84a754004e221174bbc0b80e819cd73c386a34a6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
