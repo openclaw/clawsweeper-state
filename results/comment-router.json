@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T01:54:02.694Z",
+  "updated_at": "2026-08-17T01:55:02.261Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124786:5309521522:2026-08-16T20:37:22Z:clawsweeper_needs_human",
-      "comment_id": "5309521522",
-      "comment_version_key": "5309521522:2026-08-16T20:37:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124786#issuecomment-5309521522",
-      "comment_created_at": "2026-08-16T20:30:07Z",
-      "comment_updated_at": "2026-08-16T20:37:22Z",
-      "comment_body_sha256": "07210de68db24c904d9e0080dca5e73fe1673ef15d28ac19bdfe66ccb757c633",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124786,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - This maintainer-labelled P1 repair has no mechanical follow-up; it needs normal owner merge review. (sha=8233d540183a37675fb60aa4ca5dbca6ef30f09a)",
-      "expected_head_sha": "8233d540183a37675fb60aa4ca5dbca6ef30f09a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T20:38:07.557Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/systemd-disabled-restart-20260816",
-        "head_sha": "8233d540183a37675fb60aa4ca5dbca6ef30f09a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120736:5229031651:2026-08-16T20:37:38Z:clawsweeper_auto_repair",
       "comment_id": "5229031651",
@@ -32818,6 +32785,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124965:5310908624:2026-08-17T01:54:14Z:clawsweeper_needs_human",
+      "comment_id": "5310908624",
+      "comment_version_key": "5310908624:2026-08-17T01:54:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124965#issuecomment-5310908624",
+      "comment_created_at": "2026-08-17T01:54:14Z",
+      "comment_updated_at": "2026-08-17T01:54:14Z",
+      "comment_body_sha256": "1cd961cf3794adffb2ae6fa1ebddf7b804e3431dd95e26405ad89db9255125dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124965,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Recognize literal global sessions as the main session (P2)** - With session.scope=\"global\", the requester key is literal global, so parsing it yields no agent id and this leaves mainSessionKey undefined. The new...; Review finding: [P2] Recognize literal global sessions as the main session — src/agents/tools/sessions-access.ts:134-142 - [P2] Preserve parent binding scope for Discord thread se... (sha=b91faa2148d78d5a52913828857899d55a84b570)",
+      "expected_head_sha": "b91faa2148d78d5a52913828857899d55a84b570",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T01:55:02.261Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/openclaw-session-tree-4ac65b",
+        "head_sha": "fe6b582bd9ca56e5d8e27f815c3984ced75855c3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
