@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T02:54:40.634Z",
+  "updated_at": "2026-08-17T02:55:50.178Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124709:5309846168:2026-08-16T21:49:37Z:re_review",
-      "comment_id": "5309846168",
-      "comment_version_key": "5309846168:2026-08-16T21:49:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124709#issuecomment-5309846168",
-      "comment_created_at": "2026-08-16T21:49:37Z",
-      "comment_updated_at": "2026-08-16T21:49:37Z",
-      "comment_body_sha256": "e90489a058e83b6640adc801223b0bf61560ba660725727137aac7527ba14068",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124709,
-      "author": "Leon-SK668",
-      "author_id": 17695126,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T21:50:12.461Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/directory-plugin-resolution-20260817",
-        "head_sha": "fe6d29ae9c0b7907f2b7fc21e88620181f3bab19",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124649:5308310402:2026-08-16T15:56:15Z:re_review",
       "comment_id": "5308310402",
@@ -32502,6 +32455,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/workspace-icon-503-retry",
         "head_sha": "292d0a0164e921458f20e155b2a8b32aca016fba",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124803:5309462677:2026-08-17T02:47:09Z:clawsweeper_needs_human",
+      "comment_id": "5309462677",
+      "comment_version_key": "5309462677:2026-08-17T02:47:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124803#issuecomment-5309462677",
+      "comment_created_at": "2026-08-16T20:15:30Z",
+      "comment_updated_at": "2026-08-17T02:47:09Z",
+      "comment_body_sha256": "ee001c1253d79e0213d77963ca36a8af261b88a65e2fe45f43cbf67b6c8e234b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124803,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused mocked regressions are useful, but the PR explicitly reports no completed after-fix Gateway restart trace. After adding proof, update t... (sha=f0a6f30b5ee54e53ef67b83dcfd2737adfff2271)",
+      "expected_head_sha": "f0a6f30b5ee54e53ef67b83dcfd2737adfff2271",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T02:55:50.178Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/requester-settle-gateway-ready-20260817",
+        "head_sha": "f0a6f30b5ee54e53ef67b83dcfd2737adfff2271",
         "cluster_id": null,
         "job_path": null
       }
