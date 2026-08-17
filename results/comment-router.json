@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T04:10:06.835Z",
+  "updated_at": "2026-08-17T04:10:22.670Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124858:5309872741:2026-08-17T00:17:21Z:clawsweeper_needs_human",
-      "comment_id": "5309872741",
-      "comment_version_key": "5309872741:2026-08-17T00:17:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124858#issuecomment-5309872741",
-      "comment_created_at": "2026-08-16T21:56:47Z",
-      "comment_updated_at": "2026-08-17T00:17:21Z",
-      "comment_body_sha256": "6d2096ccb3f9b3aa71c9061e9396d4ab9032c278e456d92bada6b5a240752782",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124858,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bind executables writable by other principals (P1)** - pathLooksMutableForShellPayloadSync only recognizes write access or ownership by the OpenClaw process, so a readable executable replaced by its different ow...; Review finding: [P1] Bind executables writable by other principals — src/infra/system-run-mutable-file-operand.ts:438-452 - [high] Foreign-writable executables evade approval bind... (sha=f062893e89bd6f0abc839aa6ee78eba6bc67fb43)",
-      "expected_head_sha": "f062893e89bd6f0abc839aa6ee78eba6bc67fb43",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T00:18:03.327Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-codex-approval-operand-binding",
-        "head_sha": "f062893e89bd6f0abc839aa6ee78eba6bc67fb43",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124934:5310453856:2026-08-17T00:18:59Z:clawsweeper_auto_repair",
       "comment_id": "5310453856",
@@ -31819,6 +31786,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112375:5311658315:2026-08-17T04:08:04Z:re_review",
+      "comment_id": "5311658315",
+      "comment_version_key": "5311658315:2026-08-17T04:08:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5311658315",
+      "comment_created_at": "2026-08-17T04:08:04Z",
+      "comment_updated_at": "2026-08-17T04:08:04Z",
+      "comment_body_sha256": "be7f607def0718abf6283e33a126f0ae432ea902b4075201aa245f815e64d67b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112375,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T04:10:20.550Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bartok9/cron-precheck-gate",
+        "head_sha": "e2a5fc965da10e67f8b5a72c19901e3e72b297ce",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
