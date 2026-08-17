@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:58:39.572Z",
+  "updated_at": "2026-08-17T03:59:03.716Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124773:5309401516:2026-08-16T23:45:39Z:clawsweeper_auto_repair",
-      "comment_id": "5309401516",
-      "comment_version_key": "5309401516:2026-08-16T23:45:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124773#issuecomment-5309401516",
-      "comment_created_at": "2026-08-16T20:01:40Z",
-      "comment_updated_at": "2026-08-16T23:45:39Z",
-      "comment_body_sha256": "0ef48ea00dd666bb064f6366cf23399af0b679fd0bab647b12f7fac95030aa26",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124773,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=336fe2f265876c90acf4a8bec27c6009ee6729dd)",
-      "expected_head_sha": "336fe2f265876c90acf4a8bec27c6009ee6729dd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T23:57:16.674Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/settled-dispatch-receipt",
-        "head_sha": "2ca01273a946fb74c6939164c9ccd95e8aedbd60",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124884:5310228925:2026-08-16T23:52:15Z:clawsweeper_needs_human",
       "comment_id": "5310228925",
@@ -32083,6 +32050,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124909:5310268022:2026-08-17T03:58:16Z:clawsweeper_needs_human",
+      "comment_id": "5310268022",
+      "comment_version_key": "5310268022:2026-08-17T03:58:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124909#issuecomment-5310268022",
+      "comment_created_at": "2026-08-16T23:40:16Z",
+      "comment_updated_at": "2026-08-17T03:58:16Z",
+      "comment_body_sha256": "5585a63a246eb762a9f4e18f666ec999c903182c5c6b38a1fdb5f5b34828e809",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124909,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Clear guardian notices with the tool stream (P1)** - The PR adds guardianNotices as global chat state, but the canonical reset leaves it intact. That reset runs before a visible send, on disconnect, and during r...; Review finding: [P1] Clear guardian notices with the tool stream — ui/src/pages/chat/tool-stream.ts:339-354 - [medium] Guardian transcript state survives session reset — ui/src/pa... (sha=39443ebfd2840369c2d0259240b7d6595f7c18e7)",
+      "expected_head_sha": "39443ebfd2840369c2d0259240b7d6595f7c18e7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T03:59:03.716Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-permission-modes",
+        "head_sha": "39443ebfd2840369c2d0259240b7d6595f7c18e7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
