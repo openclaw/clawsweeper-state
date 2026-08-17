@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T00:17:02.812Z",
+  "updated_at": "2026-08-17T00:17:05.237Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124730:5308974312:2026-08-16T18:30:25Z:clawsweeper_needs_human",
-      "comment_id": "5308974312",
-      "comment_version_key": "5308974312:2026-08-16T18:30:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124730#issuecomment-5308974312",
-      "comment_created_at": "2026-08-16T18:22:01Z",
-      "comment_updated_at": "2026-08-16T18:30:25Z",
-      "comment_body_sha256": "59ce40d79ee0ad2b778204b437d99fd2e4edee7488861a05bc25108f4f1891c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124730,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Default CI leaves root test/** outside Oxlint; that is consistent with the PR's narrowed claim, but it would not provide repository-wide duplicate-import enforcement. (sha=8634cf9d558f9f294149e624cc2aaf554a3d3834)",
-      "expected_head_sha": "8634cf9d558f9f294149e624cc2aaf554a3d3834",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T18:39:02.362Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/import-rules-campaign",
-        "head_sha": "8634cf9d558f9f294149e624cc2aaf554a3d3834",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124737:5309031038:2026-08-16T18:35:11Z:clawsweeper_needs_human",
       "comment_id": "5309031038",
@@ -33380,6 +33347,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120398:5310437867:2026-08-17T00:16:18Z:re_review",
+      "comment_id": "5310437867",
+      "comment_version_key": "5310437867:2026-08-17T00:16:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120398#issuecomment-5310437867",
+      "comment_created_at": "2026-08-17T00:16:18Z",
+      "comment_updated_at": "2026-08-17T00:16:18Z",
+      "comment_body_sha256": "eba836155f9695476544349839d969d548fb428c311cdc8753494d8444458f04",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120398,
+      "author": "chelsealong",
+      "author_id": 14966750,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T00:17:03.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-gateway-tool-child-orphan-on-abort-120386",
+        "head_sha": "7ce019a90031a44900955317d4124384c1a1c1ba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
