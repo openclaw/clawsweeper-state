@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T23:23:39.187Z",
+  "updated_at": "2026-08-17T23:24:19.803Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3016:5319248667:2026-08-17T19:26:49Z:re_review",
-      "comment_id": "5319248667",
-      "comment_version_key": "5319248667:2026-08-17T19:26:49Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3016#issuecomment-5319248667",
-      "comment_created_at": "2026-08-17T19:26:49Z",
-      "comment_updated_at": "2026-08-17T19:26:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3016,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T20:15:17.114Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/spend-c-pricing",
-        "head_sha": "725419a59765ec296cd413245b4959eef8d7450b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3016:5318614165:2026-08-17T20:13:57Z:clawsweeper_auto_repair",
       "comment_id": "5318614165",
@@ -31466,6 +31419,39 @@
         "kind": "pull_request",
         "branch": "steipete/serene-elgamal-33acd5",
         "head_sha": "14718568cd6bf45fe4dbca2e539ec6f7b6ba6e3b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125434:5321089197:2026-08-17T23:23:31Z:clawsweeper_needs_human",
+      "comment_id": "5321089197",
+      "comment_version_key": "5321089197:2026-08-17T23:23:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125434#issuecomment-5321089197",
+      "comment_created_at": "2026-08-17T22:41:27Z",
+      "comment_updated_at": "2026-08-17T23:23:31Z",
+      "comment_body_sha256": "8022eb872a5e67bc631ba9766e1caa4d762ebaa5297ec5816b4c152d327890b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125434,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes existing generic Nodes behavior: a command published as a dedicated tool on the selected node now fails through the generic surface, including when that ded... (sha=9477604cfbb43f4b2e0a5718a560d2f4eac29094)",
+      "expected_head_sha": "9477604cfbb43f4b2e0a5718a560d2f4eac29094",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T23:24:19.803Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/block-generic-node-tool-reentry",
+        "head_sha": "9477604cfbb43f4b2e0a5718a560d2f4eac29094",
         "cluster_id": null,
         "job_path": null
       }
