@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:35:44.369Z",
+  "updated_at": "2026-08-17T20:37:47.450Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118806:5170245430:2026-08-12T12:14:30Z:clawsweeper_auto_repair",
-      "comment_id": "5170245430",
-      "comment_version_key": "5170245430:2026-08-12T12:14:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118806#issuecomment-5170245430",
-      "comment_created_at": "2026-08-03T18:29:51Z",
-      "comment_updated_at": "2026-08-12T12:14:30Z",
-      "comment_body_sha256": "2cf1b8a40c3e184d656deeed65a04135af311b4544b264d09b55a0fc68c37fa8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118806,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=d20ce06d439667096a4a319750a93686904a6e2e)",
-      "expected_head_sha": "d20ce06d439667096a4a319750a93686904a6e2e",
-      "finding_id": "review-feedback",
-      "status": "executed",
-      "processed_at": "2026-08-17T18:40:28.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-118776",
-        "head_sha": "d20ce06d439667096a4a319750a93686904a6e2e",
-        "cluster_id": "automerge-openclaw-openclaw-118806",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118806.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118806.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119160:5176973305:2026-08-07T13:53:08Z:clawsweeper_auto_merge",
       "comment_id": "5176973305",
@@ -29944,6 +29897,39 @@
         "kind": "pull_request",
         "branch": "agent/llama-embedding-only",
         "head_sha": "2756c8e0c09d2a8cbd25a5339da14d53a14e55f7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:75:5310213174:2026-08-17T20:37:05Z:clawsweeper_needs_human",
+      "comment_id": "5310213174",
+      "comment_version_key": "5310213174:2026-08-17T20:37:05Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/75#issuecomment-5310213174",
+      "comment_created_at": "2026-08-16T23:26:05Z",
+      "comment_updated_at": "2026-08-17T20:37:05Z",
+      "comment_body_sha256": "a37eb1cc3eca1d233183d7f8ebf5346d079f61a37ec924da0f5cb56d6abdda28",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 75,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Prevent redirects to unvalidated webhook targets (P1)** - The new guard accepts the configured public URL, but the following fetch retains Fetch's default redirect-following behavior. A public endpoint can retur...; Review finding: [P1] Prevent redirects to unvalidated webhook targets — apps/api/src/admin/webhooks.ts:369 - [high] Redirects bypass webhook target validation — apps/api/src/admin... (sha=7bf070d3e3735c524e3f9b0a7577440636472a5a)",
+      "expected_head_sha": "7bf070d3e3735c524e3f9b0a7577440636472a5a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T20:37:47.450Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/webhook-url-guard",
+        "head_sha": "7bf070d3e3735c524e3f9b0a7577440636472a5a",
         "cluster_id": null,
         "job_path": null
       }
