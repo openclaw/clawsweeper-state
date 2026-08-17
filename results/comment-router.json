@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T12:32:51.762Z",
+  "updated_at": "2026-08-17T12:34:16.477Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5311829854:2026-08-17T04:31:04Z:re_review",
-      "comment_id": "5311829854",
-      "comment_version_key": "5311829854:2026-08-17T04:31:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5311829854",
-      "comment_created_at": "2026-08-17T04:31:04Z",
-      "comment_updated_at": "2026-08-17T04:31:04Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T08:02:15.078Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125130:5313408219:2026-08-17T08:02:41Z:re_review",
       "comment_id": "5313408219",
@@ -33088,6 +33061,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/sweet-cookie:43:5316084611:2026-08-17T12:33:23Z:clawsweeper_needs_human",
+      "comment_id": "5316084611",
+      "comment_version_key": "5316084611:2026-08-17T12:33:23Z",
+      "comment_url": "https://github.com/steipete/sweet-cookie/pull/43#issuecomment-5316084611",
+      "comment_created_at": "2026-08-17T12:33:23Z",
+      "comment_updated_at": "2026-08-17T12:33:23Z",
+      "comment_body_sha256": "8ec69ed26aeb971dc88010cbaeb5a95c093b32c155924f6c958c782b0db4b423",
+      "repo": "steipete/sweet-cookie",
+      "issue_number": 43,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports test runs, but the added provider test mocks Keychain, path discovery, crypto, and database reads; please add redacted afte... (sha=2c4f426c550140c5993706094b988e1ec586a72d)",
+      "expected_head_sha": "2c4f426c550140c5993706094b988e1ec586a72d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T12:34:16.477Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/upstream-explicit-keychain",
+        "head_sha": "2c4f426c550140c5993706094b988e1ec586a72d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
