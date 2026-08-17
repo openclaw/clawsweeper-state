@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:39:10.491Z",
+  "updated_at": "2026-08-17T03:39:11.135Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:501:5310089008:2026-08-16T22:54:27Z:re_review",
-      "comment_id": "5310089008",
-      "comment_version_key": "5310089008:2026-08-16T22:54:27Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/501#issuecomment-5310089008",
-      "comment_created_at": "2026-08-16T22:54:27Z",
-      "comment_updated_at": "2026-08-16T22:54:27Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 501,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T22:55:11.469Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/eight-app-matrix-replay",
-        "head_sha": "22ef6b907597d956e13e3d4467db2e2e1ad0ec4d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124881:5310090298:2026-08-16T22:54:48Z:clawsweeper_auto_repair",
       "comment_id": "5310090298",
@@ -32437,6 +32390,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/workspace-icon-503-retry",
         "head_sha": "b769c3e2700d82b49eaeb2fb3fb797585dade6f9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123556:5291077099:2026-08-17T03:37:53Z:clawsweeper_needs_human",
+      "comment_id": "5291077099",
+      "comment_version_key": "5291077099:2026-08-17T03:37:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5291077099",
+      "comment_created_at": "2026-08-14T08:12:51Z",
+      "comment_updated_at": "2026-08-17T03:37:53Z",
+      "comment_body_sha256": "ec0f0b3245a7d06a53f152ca60eddaee9f1479b25b04ab4a67285e853eb89176",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123556,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A successful cache entry can report gitCheckout: true for five seconds after Git metadata disappears, briefly exposing a diff action that no longer matches the workspace. (sha=f1ec213139f2a1f7b514118953c188db013c788e)",
+      "expected_head_sha": "f1ec213139f2a1f7b514118953c188db013c788e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T03:39:11.135Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-concurrency",
+        "head_sha": "f1ec213139f2a1f7b514118953c188db013c788e",
         "cluster_id": null,
         "job_path": null
       }
