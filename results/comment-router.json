@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T10:38:52.828Z",
+  "updated_at": "2026-08-17T10:38:58.162Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122284:5265676363:2026-08-12T10:46:39Z:re_review",
-      "comment_id": "5265676363",
-      "comment_version_key": "5265676363:2026-08-12T10:46:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122284#issuecomment-5265676363",
-      "comment_created_at": "2026-08-12T10:46:39Z",
-      "comment_updated_at": "2026-08-12T10:46:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122284,
-      "author": "DerrickBarra",
-      "author_id": 20777145,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T06:45:50.481Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122284:5265711891:2026-08-12T10:50:19Z:re_review",
       "comment_id": "5265711891",
@@ -32665,6 +32638,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T10:38:52.828Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125194:5314483106:2026-08-17T10:29:50Z:clawsweeper_needs_human",
+      "comment_id": "5314483106",
+      "comment_version_key": "5314483106:2026-08-17T10:29:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125194#issuecomment-5314483106",
+      "comment_created_at": "2026-08-17T09:49:40Z",
+      "comment_updated_at": "2026-08-17T10:29:50Z",
+      "comment_body_sha256": "e2c60823daf622fb720909307d8dffac4bbb73412ddce5f4287c6ecd4f412cd6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125194,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The beta branch currently has failing CI gate/check runs; the PR describes them as unrelated, but this read-only review could not inspect the job logs or establish an exact-head green... (sha=3997848d0dc907ab47a064ed77bdda7f0b3e9674)",
+      "expected_head_sha": "3997848d0dc907ab47a064ed77bdda7f0b3e9674",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T10:38:58.162Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "backport-124649-beta3",
+        "head_sha": "3997848d0dc907ab47a064ed77bdda7f0b3e9674",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
