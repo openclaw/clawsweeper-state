@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T23:28:16.512Z",
+  "updated_at": "2026-08-17T23:28:45.399Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5319849902:2026-08-17T20:26:01Z:re_review",
-      "comment_id": "5319849902",
-      "comment_version_key": "5319849902:2026-08-17T20:26:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5319849902",
-      "comment_created_at": "2026-08-17T20:26:01Z",
-      "comment_updated_at": "2026-08-17T20:26:01Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T20:26:56.292Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-performance",
-        "head_sha": "84a754004e221174bbc0b80e819cd73c386a34a6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5319849705:2026-08-17T20:25:59Z:re_review",
       "comment_id": "5319849705",
@@ -31500,6 +31453,39 @@
         "kind": "pull_request",
         "branch": "steipete/permission-chip-left",
         "head_sha": "5e26bc5a5c3ee9aa0078d33f5ee703c55423004f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122015:5252886198:2026-08-17T23:27:48Z:clawsweeper_needs_human",
+      "comment_id": "5252886198",
+      "comment_version_key": "5252886198:2026-08-17T23:27:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122015#issuecomment-5252886198",
+      "comment_created_at": "2026-08-11T12:02:56Z",
+      "comment_updated_at": "2026-08-17T23:27:48Z",
+      "comment_body_sha256": "d706052b1cd8ecae212816ee42f38e33843009da1e8df95e0eca26b0c1b4ce44",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122015,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm retained lineage scope** - The context builder persists parent-child lineage into execution-identity records, so the existing opt-in retention contract needs explicit owner conf...; Review finding: [medium] Confirm retained lineage scope — src/audit/execution-identity-context-build.ts:119 (sha=768f1eb43d8e23d81752e0a366ca2baa87b76a36)",
+      "expected_head_sha": "768f1eb43d8e23d81752e0a366ca2baa87b76a36",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T23:28:45.399Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-subagent-lineage",
+        "head_sha": "768f1eb43d8e23d81752e0a366ca2baa87b76a36",
         "cluster_id": null,
         "job_path": null
       }
