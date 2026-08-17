@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T05:42:51.296Z",
+  "updated_at": "2026-08-17T05:43:17.827Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123556:5311337532:2026-08-17T03:12:11Z:re_review",
-      "comment_id": "5311337532",
-      "comment_version_key": "5311337532:2026-08-17T03:12:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5311337532",
-      "comment_created_at": "2026-08-17T03:12:11Z",
-      "comment_updated_at": "2026-08-17T03:12:11Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123556,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T03:12:54.740Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-concurrency",
-        "head_sha": "f1ec213139f2a1f7b514118953c188db013c788e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2985:5309240140:2026-08-17T03:12:17Z:clawsweeper_auto_repair",
       "comment_id": "5309240140",
@@ -31054,6 +31007,39 @@
         "kind": "pull_request",
         "branch": "fix/onepassword-op-trust-diagnostics",
         "head_sha": "b58d12e9da5074150c9534e3ef2a01f600a3a6f6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124025:5300731845:2026-08-17T05:38:54Z:clawsweeper_needs_human",
+      "comment_id": "5300731845",
+      "comment_version_key": "5300731845:2026-08-17T05:38:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5300731845",
+      "comment_created_at": "2026-08-15T05:27:33Z",
+      "comment_updated_at": "2026-08-17T05:38:54Z",
+      "comment_body_sha256": "0ab495a35766c85c1fe99501e5e2fcb37596476bf3cbf57bea253fcd11c0a0fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A mismatched upstream Codex item-ID contract could make recovery select a live tool; local OpenClaw code aligns the IDs, but the required direct upstream verification remains unavaila... (sha=8faf4730e8592c9935f4661ec3fb0e4701f86948)",
+      "expected_head_sha": "8faf4730e8592c9935f4661ec3fb0e4701f86948",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T05:43:17.827Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-stale-tool-eligibility",
+        "head_sha": "8faf4730e8592c9935f4661ec3fb0e4701f86948",
         "cluster_id": null,
         "job_path": null
       }
