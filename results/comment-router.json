@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T08:19:38.380Z",
+  "updated_at": "2026-08-17T08:20:42.378Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5193495466:2026-08-05T15:04:08Z:re_review",
-      "comment_id": "5193495466",
-      "comment_version_key": "5193495466:2026-08-05T15:04:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5193495466",
-      "comment_created_at": "2026-08-05T15:04:08Z",
-      "comment_updated_at": "2026-08-05T15:04:08Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:51:23.148Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118169:5194007050:2026-08-05T15:47:52Z:re_review",
       "comment_id": "5194007050",
@@ -32714,6 +32687,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125140:5313116626:2026-08-17T08:19:56Z:clawsweeper_needs_human",
+      "comment_id": "5313116626",
+      "comment_version_key": "5313116626:2026-08-17T08:19:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125140#issuecomment-5313116626",
+      "comment_created_at": "2026-08-17T07:29:17Z",
+      "comment_updated_at": "2026-08-17T08:19:56Z",
+      "comment_body_sha256": "e8a62fb766f3d7be84643059923eaf6243c7562075972023a6460e9c7c7bb658",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125140,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The corrected credentialed Discord QA scenario did not complete because its build-artifacts gate also fails on current main; rerun the scenario after that base failure is repaired bef... (sha=266d9516e9c8690997ee45e7ab1c5d6763d155b2)",
+      "expected_head_sha": "266d9516e9c8690997ee45e7ab1c5d6763d155b2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T08:20:42.378Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-error-draft-retention",
+        "head_sha": "266d9516e9c8690997ee45e7ab1c5d6763d155b2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
