@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T04:36:36.670Z",
+  "updated_at": "2026-08-17T04:37:03.620Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4902943479:2026-07-07T10:47:29Z:re_review",
-      "comment_id": "4902943479",
-      "comment_version_key": "4902943479:2026-07-07T10:47:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4902943479",
-      "comment_created_at": "2026-07-07T10:47:29Z",
-      "comment_updated_at": "2026-07-07T10:47:29Z",
-      "comment_body_sha256": "e54523c3773c102fc205ba473e5506c0f4815b7e278e79e166a01adc2f8b12d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (branch was ~940 commits behind; now conflict-free and mergeable). resolved a docs conflict in `docs/reference/session-management-compaction.md` where upstream reflowed the compaction settings section into prose: kept upstream's structure and folded the `turnmaintenancetasktimeoutms` (opt-in, disabled by default) note into a single prose paragraph, dropping the now-duplicated bullet list. no source behavior change in this refresh. verified locally after rebase: tsgo typecheck clean; affected unit suites green (context-engine-maintenance, transcript-rewrite, command-queue, diagnostic — 147 tests passed). new head 0b88bd92ad",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T01:28:53.392Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4949446333:2026-07-12T01:16:32Z:re_review",
       "comment_id": "4949446333",
@@ -31543,6 +31516,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T04:36:36.670Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125039:5311870028:2026-08-17T04:36:15Z:clawsweeper_needs_human",
+      "comment_id": "5311870028",
+      "comment_version_key": "5311870028:2026-08-17T04:36:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125039#issuecomment-5311870028",
+      "comment_created_at": "2026-08-17T04:36:15Z",
+      "comment_updated_at": "2026-08-17T04:36:15Z",
+      "comment_body_sha256": "9709b817f19383d7c7e75df2bed7d8b687b0af5a1f8728953763cb08014e38d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125039,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The awaitable barrier deliberately makes Matrix shutdown wait for plugin-state persistence; a stalled store delays client release rather than dropping the accepted activity update. (sha=f1ff7891b3c0e0f85c792637109c6953477a6d0b)",
+      "expected_head_sha": "f1ff7891b3c0e0f85c792637109c6953477a6d0b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T04:37:03.620Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-matrix-shutdown-flush",
+        "head_sha": "f1ff7891b3c0e0f85c792637109c6953477a6d0b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
