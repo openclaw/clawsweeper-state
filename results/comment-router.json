@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-17T19:49:09.358Z",
+  "updated_at": "2026-08-17T19:49:13.824Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125337:5318335566:2026-08-17T17:49:16Z:re_review",
-      "comment_id": "5318335566",
-      "comment_version_key": "5318335566:2026-08-17T17:49:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125337#issuecomment-5318335566",
-      "comment_created_at": "2026-08-17T17:49:16Z",
-      "comment_updated_at": "2026-08-17T17:49:16Z",
-      "comment_body_sha256": "7e29c9bda13185de629805d028c6c830f0cdaf5eafc26de6d0af951ada737b76",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125337,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T17:53:58.223Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-isolated-gateway-stop",
-        "head_sha": "d374b57eac793d88527a6dbf10f6a0be01a31474",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5318342998:2026-08-17T17:50:28Z:re_review",
-      "comment_id": "5318342998",
-      "comment_version_key": "5318342998:2026-08-17T17:50:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5318342998",
-      "comment_created_at": "2026-08-17T17:50:28Z",
-      "comment_updated_at": "2026-08-17T17:50:28Z",
-      "comment_body_sha256": "b6b0549545e3e62f49be717cce41201bd9c5e500d404c99bca78ae1c726f8053",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T17:53:58.223Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bartok9/cron-precheck-gate",
-        "head_sha": "b5d93c5a9b67d0a8681b005fc62f90fca24f632b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5318343264:2026-08-17T17:50:31Z:re_review",
       "comment_id": "5318343264",
@@ -29590,6 +29496,66 @@
       "finding_id": null,
       "status": "skipped",
       "processed_at": "2026-08-17T19:49:09.358Z",
+      "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-17T19:46:59Z:clawsweeper_needs_human",
+      "comment_id": "5290613923",
+      "comment_version_key": "5290613923:2026-08-17T19:46:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5290613923",
+      "comment_created_at": "2026-08-14T07:15:12Z",
+      "comment_updated_at": "2026-08-17T19:46:59Z",
+      "comment_body_sha256": "e64a565f01a853eca6e3fef76b636871e157074ee6c02c55f1f60b293821e294",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123535,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The catalog and image-loader changes affect UI availability: an incorrect lifecycle transition could leave catalog data stale or keep the workspace-folder fallback after a route becom... (sha=727a35a1ced8887f7a821d9cf687a0b81871c0cb)",
+      "expected_head_sha": "727a35a1ced8887f7a821d9cf687a0b81871c0cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T19:49:13.824Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-performance",
+        "head_sha": "727a35a1ced8887f7a821d9cf687a0b81871c0cb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123535:5318196883:2026-08-17T17:29:44Z:re_review",
+      "comment_id": "5318196883",
+      "comment_version_key": "5318196883:2026-08-17T17:29:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5318196883",
+      "comment_created_at": "2026-08-17T17:29:44Z",
+      "comment_updated_at": "2026-08-17T17:29:44Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123535,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T19:49:13.824Z",
       "target": null
     }
   ]
