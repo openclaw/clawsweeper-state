@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T11:03:59.313Z",
+  "updated_at": "2026-08-17T11:04:28.235Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123482:5289771597:2026-08-17T07:01:03Z:clawsweeper_auto_repair",
-      "comment_id": "5289771597",
-      "comment_version_key": "5289771597:2026-08-17T07:01:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5289771597",
-      "comment_created_at": "2026-08-14T05:16:37Z",
-      "comment_updated_at": "2026-08-17T07:01:03Z",
-      "comment_body_sha256": "28da7d5e535c6fea39c1dfda8b75ccfc4e918ee6a04356ed5097122911d790f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=342b966a064b703720a0298ebea13a0e6ba78354)",
-      "expected_head_sha": "342b966a064b703720a0298ebea13a0e6ba78354",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T07:02:35.127Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-performance",
-        "head_sha": "342b966a064b703720a0298ebea13a0e6ba78354",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123556:5291077099:2026-08-17T07:03:18Z:clawsweeper_auto_repair",
       "comment_id": "5291077099",
@@ -32705,6 +32672,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T11:03:59.313Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120240:5217836723:2026-08-17T11:03:39Z:clawsweeper_needs_human",
+      "comment_id": "5217836723",
+      "comment_version_key": "5217836723:2026-08-17T11:03:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120240#issuecomment-5217836723",
+      "comment_created_at": "2026-08-07T13:44:35Z",
+      "comment_updated_at": "2026-08-17T11:03:39Z",
+      "comment_body_sha256": "55d7271c4968c27d89e8856ca01e8f710d06adb9ee21ff4c8a8d82e6686a771c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120240,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 256 KiB/2-second post-terminal policy changes behavior for configured self-hosted or proxied Ollama endpoints: a non-closing body can delay completion, while bytes beyond the cap... (sha=40bbc80abf62a647e49e32ed49d97e4546f61fe9)",
+      "expected_head_sha": "40bbc80abf62a647e49e32ed49d97e4546f61fe9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T11:04:28.235Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/ollama-utf8-current",
+        "head_sha": "40bbc80abf62a647e49e32ed49d97e4546f61fe9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
