@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:42:58.007Z",
+  "updated_at": "2026-08-17T06:43:04.019Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5300613784:2026-08-15T04:53:22Z:re_review",
-      "comment_id": "5300613784",
-      "comment_version_key": "5300613784:2026-08-15T04:53:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5300613784",
-      "comment_created_at": "2026-08-15T04:53:22Z",
-      "comment_updated_at": "2026-08-15T04:53:22Z",
-      "comment_body_sha256": "a90da4565424cdb421e24bb9fdbe4932655547117092aa3c53805a42a73b6126",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:05:18.635Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5300745759:2026-08-15T05:31:55Z:re_review",
       "comment_id": "5300745759",
@@ -31455,6 +31428,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124909:5310268022:2026-08-17T06:42:17Z:clawsweeper_needs_human",
+      "comment_id": "5310268022",
+      "comment_version_key": "5310268022:2026-08-17T06:42:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124909#issuecomment-5310268022",
+      "comment_created_at": "2026-08-16T23:40:16Z",
+      "comment_updated_at": "2026-08-17T06:42:17Z",
+      "comment_body_sha256": "cf6bbafb5119df420ab093ebfeb8caf1546bbfb484b880f5d3e9dd8ba9a98cc5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124909,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restore Default mode from the permission picker (P2)** - The picker exposes only four non-null values, but this PR adds permissionMode: null specifically to clear a session override. Once an operator selects a m...; Review finding: [P2] Restore Default mode from the permission picker — ui/src/pages/chat/components/chat-permission-picker.ts:6 - [medium] Verify the app-server workspace-root con... (sha=5299319060a81f4efb897bc14a3f4a233611695c)",
+      "expected_head_sha": "5299319060a81f4efb897bc14a3f4a233611695c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T06:43:04.019Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-permission-modes",
+        "head_sha": "5299319060a81f4efb897bc14a3f4a233611695c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
