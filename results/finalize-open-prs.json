@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-17T21:48:43.064Z",
-  "count": 0,
+  "generated_at": "2026-08-17T22:04:16.574Z",
+  "count": 1,
   "summary": {
-    "open_prs": 0,
+    "open_prs": 1,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
     "needs_checks": 0,
     "needs_review": 0,
-    "needs_merge_preflight": 0,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 1,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -25,5 +25,46 @@
     "max_prs": 5,
     "candidates": []
   },
-  "prs": []
+  "prs": [
+    {
+      "number": 125422,
+      "title": "fix: prevent long automations from delaying scheduled runs",
+      "url": "https://github.com/openclaw/openclaw/pull/125422",
+      "branch": "clawsweeper/fix-cron-cross-tick-admission",
+      "head_sha": "14710e9a297a05524585b268d6514587725f3dfe",
+      "cluster_id": "fix-cron-cross-tick-admission",
+      "job_path": null,
+      "updated_at": "2026-08-17T21:55:26Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 210,
+        "counts": {
+          "SKIPPED": 40,
+          "SUCCESS": 169,
+          "NEUTRAL": 1
+        },
+        "blockers": []
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+    }
+  ]
 }
