@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:47:10.489Z",
+  "updated_at": "2026-08-17T20:49:08.559Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125366:5318763883:2026-08-17T18:44:06Z:clawsweeper_auto_repair",
-      "comment_id": "5318763883",
-      "comment_version_key": "5318763883:2026-08-17T18:44:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125366#issuecomment-5318763883",
-      "comment_created_at": "2026-08-17T18:44:06Z",
-      "comment_updated_at": "2026-08-17T18:44:06Z",
-      "comment_body_sha256": "4989e12d214bf5570760dd0d8a3aba7e4840a25a199292b070f655892cea15e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125366,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=07bbe0de7381b629bf9521bfdbca7f6d1272fe92)",
-      "expected_head_sha": "07bbe0de7381b629bf9521bfdbca7f6d1272fe92",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T18:44:52.905Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-plugin-service-health-v5",
-        "head_sha": "07bbe0de7381b629bf9521bfdbca7f6d1272fe92",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119713:5263811305:2026-08-12T07:43:05Z:re_review",
       "comment_id": "5263811305",
@@ -29932,6 +29899,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125405:5320066003:2026-08-17T20:47:48Z:clawsweeper_needs_human",
+      "comment_id": "5320066003",
+      "comment_version_key": "5320066003:2026-08-17T20:47:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125405#issuecomment-5320066003",
+      "comment_created_at": "2026-08-17T20:47:48Z",
+      "comment_updated_at": "2026-08-17T20:47:48Z",
+      "comment_body_sha256": "b6dd19782e1fd04f728ecaf0c8730808a43f60d5528a92a9df0400d3f0cb4197",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125405,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep the managed listener private (P1)** - tailscaleHttpServer is always marked managed-tailscale, so resolveManagedTailscaleIngress trusts forwarded headers from its loopback peer. Binding that same server to a...; Review finding: [P1] Keep the managed listener private — src/gateway/server-runtime-state.ts:490 - [high] Fixed ingress port trusts unverified local producers — src/gateway/server... (sha=ae7462fbee1bb09db6c0a16fdf78e41fa6ab521e)",
+      "expected_head_sha": "ae7462fbee1bb09db6c0a16fdf78e41fa6ab521e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T20:49:08.559Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/external-tailscale-ingress",
+        "head_sha": "ae7462fbee1bb09db6c0a16fdf78e41fa6ab521e",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
