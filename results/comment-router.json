@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T19:06:39.851Z",
+  "updated_at": "2026-08-17T19:06:42.112Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110102:5005741905:2026-08-17T15:14:46Z:clawsweeper_needs_human",
-      "comment_id": "5005741905",
-      "comment_version_key": "5005741905:2026-08-17T15:14:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110102#issuecomment-5005741905",
-      "comment_created_at": "2026-07-17T17:22:59Z",
-      "comment_updated_at": "2026-08-17T15:14:46Z",
-      "comment_body_sha256": "ade3e1b451f79656b3f3530944ce87cdb520dc97e7e15b1a0a9c99296fe9fb62",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110102,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Fence ports when the routed plugin tab changes (P1)** - The static plugin route reuses this iframe across tabs, but this branch overwrites the existing target and retains the old frame’s port. During an A-to-B s...; Review finding: [P1] Fence ports when the routed plugin tab changes — ui/src/pages/plugin/plugin-ui-bridge.ts:62-70 - [medium] Retired frame receives the next tab's action authori... (sha=1928f925d6c1859d0fdec5c3d65e3f21c4813602)",
-      "expected_head_sha": "1928f925d6c1859d0fdec5c3d65e3f21c4813602",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T16:20:47.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "forge/plugin-ui-tab-actions",
-        "head_sha": "1928f925d6c1859d0fdec5c3d65e3f21c4813602",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110434:5010083683:2026-08-11T22:03:10Z:clawsweeper_auto_merge",
       "comment_id": "5010083683",
@@ -30740,6 +30707,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124162:5319008044:2026-08-17T19:05:31Z:re_review",
+      "comment_id": "5319008044",
+      "comment_version_key": "5319008044:2026-08-17T19:05:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5319008044",
+      "comment_created_at": "2026-08-17T19:05:31Z",
+      "comment_updated_at": "2026-08-17T19:05:31Z",
+      "comment_body_sha256": "a535837e9442d582727baaa8e72dc3770a514e7552a25d56064e960f83e534cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124162,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T19:06:39.929Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-aware-resume-breaker-122950",
+        "head_sha": "68061cc9344ab5d7daab715ea4a6a7d2ce808327",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
