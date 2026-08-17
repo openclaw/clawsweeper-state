@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T19:21:05.072Z",
+  "updated_at": "2026-08-17T19:21:08.264Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125346:5317888001:2026-08-17T16:50:31Z:clawsweeper_needs_human",
-      "comment_id": "5317888001",
-      "comment_version_key": "5317888001:2026-08-17T16:50:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125346#issuecomment-5317888001",
-      "comment_created_at": "2026-08-17T16:50:31Z",
-      "comment_updated_at": "2026-08-17T16:50:31Z",
-      "comment_body_sha256": "56016977fd67b80e709d6ce5b7d495a8cff3a3d5a707045e217c3628de15fef4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125346,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging deliberately changes the default catalog for existing sessions with more than 150 skills or 18,000 characters: omitted skills are now advertised through a truncation notice ra... (sha=c40ed408f29f34744623d14d0785ad4aba45c1af)",
-      "expected_head_sha": "c40ed408f29f34744623d14d0785ad4aba45c1af",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T16:51:23.015Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/bounded-skills-prompt-recovery-26cad7",
-        "head_sha": "c40ed408f29f34744623d14d0785ad4aba45c1af",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124162:5302206606:2026-08-17T16:51:21Z:clawsweeper_auto_repair",
       "comment_id": "5302206606",
@@ -29745,6 +29712,53 @@
         "kind": "pull_request",
         "branch": "jesse/session-bootstrap-performance",
         "head_sha": "c612458a3fc2028149c9ea061d63095758d5aa74",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123482:5319176478:2026-08-17T19:20:15Z:re_review",
+      "comment_id": "5319176478",
+      "comment_version_key": "5319176478:2026-08-17T19:20:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5319176478",
+      "comment_created_at": "2026-08-17T19:20:15Z",
+      "comment_updated_at": "2026-08-17T19:20:15Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123482,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T19:21:05.473Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-performance",
+        "head_sha": "2ec4d0965df93f2fea1a7f0c4d88e00690b847cd",
         "cluster_id": null,
         "job_path": null
       },
