@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T22:16:37.764Z",
+  "updated_at": "2026-08-17T22:20:59.224Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5312944083:2026-08-17T07:09:36Z:re_review",
-      "comment_id": "5312944083",
-      "comment_version_key": "5312944083:2026-08-17T07:09:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5312944083",
-      "comment_created_at": "2026-08-17T07:09:36Z",
-      "comment_updated_at": "2026-08-17T07:09:36Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T19:12:34.290Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5313059262:2026-08-17T07:22:34Z:re_review",
       "comment_id": "5313059262",
@@ -31097,6 +31070,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3022:5320927809:2026-08-17T22:20:03Z:clawsweeper_needs_human",
+      "comment_id": "5320927809",
+      "comment_version_key": "5320927809:2026-08-17T22:20:03Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3022#issuecomment-5320927809",
+      "comment_created_at": "2026-08-17T22:20:03Z",
+      "comment_updated_at": "2026-08-17T22:20:03Z",
+      "comment_body_sha256": "5c3d830ee03ef6716111ea81dc23d8c53734ab61fbd58b6812145fb9eefb853d",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3022,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests, but it includes no inspectable after-fix terminal output, recording, or redacted runtime log for the spawned... (sha=e855b34b8c7d967632fb964d6bdf03ea3aa3b3d8)",
+      "expected_head_sha": "e855b34b8c7d967632fb964d6bdf03ea3aa3b3d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T22:20:59.224Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/codex-rpc-timeout-classification",
+        "head_sha": "e855b34b8c7d967632fb964d6bdf03ea3aa3b3d8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
