@@ -67,22 +67,23 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/124527 as one xAI-owned model-policy fix. Fast-mode routing, retired-model recognition, and Doctor migration must not select or retain `grok-4-fast` for an xAI image route. Establish a redacted xAI Responses image request before editing and verify the supported replacement after the repair. Keep Telegram transport unchanged; add no configuration option or downstream fallback. Reuse the xAI Doctor contract for stored configuration, cover the direct image-model and fast-mode paths with behavior-focused regressions that fail before the fix, and reconcile provider docs only if verified behavior changes. Do not edit CHANGELOG.md; place release-note context in the PR body.
+Repair the current xAI fast-model route that sends retired `grok-4-fast` identifiers and the canonical Doctor migration for persisted xAI model references. Keep the fix provider-owned and generic: do not special-case Telegram, add a new setting, or retain a runtime legacy fallback. Inspect the current xAI catalog and upstream contract before choosing the canonical target; update the stream mapping and generic model-reference migration, with focused tests for fast mode and `agents.defaults.imageModel` upgrade behavior. Preserve current user-selected modern models. Record user-visible release-note context in the PR body, not CHANGELOG.md, and obtain a redacted live xAI Responses JPEG proof before landing.
 
 Likely files:
 
 - extensions/xai/stream.ts
-- extensions/xai/doctor-contract-api.ts
 - extensions/xai/stream.test.ts
-- extensions/xai/doctor-contract-api.test.ts
 - src/commands/doctor/shared/legacy-config-migrations.runtime.models.refs.ts
-- docs/concepts/model-providers.md
+- src/commands/doctor/shared/legacy-config-migrate.test.ts
+- extensions/xai/model-id.ts
+- extensions/xai/model-id.test.ts
 
 Validation:
 
-- pnpm test extensions/xai/stream.test.ts extensions/xai/doctor-contract-api.test.ts
+- pnpm test extensions/xai/stream.test.ts
 - pnpm test src/commands/doctor/shared/legacy-config-migrate.test.ts
-- Run a redacted xAI Responses image request through the production media-understanding boundary before and after the repair, or record the concrete authenticated-proof blocker.
+- pnpm test extensions/xai/model-id.test.ts
+- Run a trusted credentialed xAI Responses JPEG smoke with a redacted request/response trace.
 
 ## Operator Prompt
 
