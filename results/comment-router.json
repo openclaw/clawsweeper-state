@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-08-17T04:10:35.943Z",
+  "updated_at": "2026-08-17T04:10:45.451Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2991:5310452170:2026-08-17T00:18:41Z:re_review",
-      "comment_id": "5310452170",
-      "comment_version_key": "5310452170:2026-08-17T00:18:41Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2991#issuecomment-5310452170",
-      "comment_created_at": "2026-08-17T00:18:41Z",
-      "comment_updated_at": "2026-08-17T00:18:41Z",
-      "comment_body_sha256": "a9c7f8e46acdec7a43a320b349db01d5f3f6ef2a132fde38483510385edc7854",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2991,
-      "author": "olddonkey",
-      "author_id": 22208754,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T00:22:42.910Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/grok-supergrok-heavy-plan",
-        "head_sha": "72c4ac521b615919080923fca68ff3aeded6fbb7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2991:5310235272:2026-08-17T00:21:55Z:clawsweeper_auto_repair",
-      "comment_id": "5310235272",
-      "comment_version_key": "5310235272:2026-08-17T00:21:55Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2991#issuecomment-5310235272",
-      "comment_created_at": "2026-08-16T23:31:50Z",
-      "comment_updated_at": "2026-08-17T00:21:55Z",
-      "comment_body_sha256": "b31e55abf5b57200152d27c01c70790339810a31da6e6df430d094ca27a0582e",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2991,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=72c4ac521b615919080923fca68ff3aeded6fbb7)",
-      "expected_head_sha": "72c4ac521b615919080923fca68ff3aeded6fbb7",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-17T00:22:48.389Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/grok-supergrok-heavy-plan",
-        "head_sha": "72c4ac521b615919080923fca68ff3aeded6fbb7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117302:5150624297:2026-08-17T00:22:44Z:clawsweeper_needs_human",
       "comment_id": "5150624297",
@@ -31847,6 +31767,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124706:5308716256:2026-08-17T04:06:51Z:clawsweeper_auto_repair",
+      "comment_id": "5308716256",
+      "comment_version_key": "5308716256:2026-08-17T04:06:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124706#issuecomment-5308716256",
+      "comment_created_at": "2026-08-16T17:31:01Z",
+      "comment_updated_at": "2026-08-17T04:06:51Z",
+      "comment_body_sha256": "203a80f786b08a1483784e7b1c29a3b9d68f4178821a3b106570dd26d26de092",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124706,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d1f5ed85ec872434149c616958c6085dcf6338e2)",
+      "expected_head_sha": "d1f5ed85ec872434149c616958c6085dcf6338e2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T04:10:45.451Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-doctor-parent-scope-false-positive",
+        "head_sha": "d1f5ed85ec872434149c616958c6085dcf6338e2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124706:5309244360:2026-08-16T19:24:34Z:re_review",
+      "comment_id": "5309244360",
+      "comment_version_key": "5309244360:2026-08-16T19:24:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124706#issuecomment-5309244360",
+      "comment_created_at": "2026-08-16T19:24:34Z",
+      "comment_updated_at": "2026-08-16T19:24:34Z",
+      "comment_body_sha256": "b752c2d4c99e932f9aad41be17fb05dd9e0f8f38231fe258736f6cc3e5bbd7a6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124706,
+      "author": "ggeutzzang",
+      "author_id": 375580,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T04:10:45.451Z",
+      "target": null
     }
   ]
 }
