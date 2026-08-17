@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:15:12.864Z",
+  "updated_at": "2026-08-17T06:15:15.737Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123709:5310081415:2026-08-16T22:52:26Z:re_review",
-      "comment_id": "5310081415",
-      "comment_version_key": "5310081415:2026-08-16T22:52:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123709#issuecomment-5310081415",
-      "comment_created_at": "2026-08-16T22:52:26Z",
-      "comment_updated_at": "2026-08-16T22:52:26Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123709,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T03:49:24.199Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124964:5310896643:2026-08-17T03:48:44Z:clawsweeper_needs_human",
       "comment_id": "5310896643",
@@ -31028,6 +31001,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123975:5312510183:2026-08-17T06:14:34Z:re_review",
+      "comment_id": "5312510183",
+      "comment_version_key": "5312510183:2026-08-17T06:14:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123975#issuecomment-5312510183",
+      "comment_created_at": "2026-08-17T06:14:34Z",
+      "comment_updated_at": "2026-08-17T06:14:34Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123975,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T06:15:13.395Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/tsgo-stall-timeout",
+        "head_sha": "c7a699ee8295c106cde3d82e125a7ea6b9b1ae27",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
