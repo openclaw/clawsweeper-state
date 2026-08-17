@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T18:43:26.100Z",
+  "updated_at": "2026-08-17T18:43:45.376Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5263032108:2026-08-12T06:10:12Z:re_review",
-      "comment_id": "5263032108",
-      "comment_version_key": "5263032108:2026-08-12T06:10:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5263032108",
-      "comment_created_at": "2026-08-12T06:10:12Z",
-      "comment_updated_at": "2026-08-12T06:10:12Z",
-      "comment_body_sha256": "41c1360c3236fb249fd45c44abe9d2dc07b8b1a83e626298bb86adf864f86a42",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T13:13:14.733Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5263070034:2026-08-12T06:15:37Z:re_review",
       "comment_id": "5263070034",
@@ -31367,6 +31340,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125357:5318343183:2026-08-17T18:41:42Z:clawsweeper_needs_human",
+      "comment_id": "5318343183",
+      "comment_version_key": "5318343183:2026-08-17T18:41:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125357#issuecomment-5318343183",
+      "comment_created_at": "2026-08-17T17:50:30Z",
+      "comment_updated_at": "2026-08-17T18:41:42Z",
+      "comment_body_sha256": "0ad039268a032098997114c45084e0e2b1d04864dd9561d58acb84a0b631b860",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125357,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body provides focused test output and a pre-fix production observation, but no after-fix evidence from a real gateway/subagent run; add... (sha=433d88c5fb2701bb6451f24f69d9c0e5da9dbd0c)",
+      "expected_head_sha": "433d88c5fb2701bb6451f24f69d9c0e5da9dbd0c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T18:43:45.376Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-timeout-error-masking",
+        "head_sha": "433d88c5fb2701bb6451f24f69d9c0e5da9dbd0c",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
