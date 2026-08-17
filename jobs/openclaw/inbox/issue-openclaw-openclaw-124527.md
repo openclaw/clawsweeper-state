@@ -67,20 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven stale `xai/grok-4-fast` model reference in the canonical Doctor migration, including `agents.defaults.imageModel` and other normal model-reference locations already handled by `legacy-config-migrations.runtime.models.refs.ts`. Add a regression that fails on current main for direct `xai/grok-4-fast` image-model configuration and proves it rewrites to `xai/grok-4.3`. Keep the repair at the provider/config boundary: do not add a config option, runtime fallback, or Telegram-specific guard. Before claiming xAI contract compatibility, run a redacted live Responses image request using the migrated current model. Put release-note context in the PR body, not CHANGELOG.md.
+Repair the retired xAI fast-model path as one coherent change: remove or replace the producer mapping that emits `grok-4-fast`, and extend canonical doctor model-reference migration so direct stale refs, including `agents.defaults.imageModel` and model-map keys, become a verified current image-capable xAI model. Do not add Telegram-specific logic, a runtime fallback, or a new config option. Update the existing fast-mode and migration regressions so they fail before the repair, and use an authorized redacted xAI Responses image request to prove the selected replacement. Put release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
+- extensions/xai/stream.ts
+- extensions/xai/stream.test.ts
+- extensions/xai/model-definitions.ts
 - src/commands/doctor/shared/legacy-config-migrations.runtime.models.refs.ts
 - src/commands/doctor/shared/legacy-config-migrate.test.ts
-- extensions/xai/model-id.ts
-- extensions/xai/model-id.test.ts
+- docs/providers/xai.md
 
 Validation:
 
+- pnpm test extensions/xai/stream.test.ts
 - pnpm test src/commands/doctor/shared/legacy-config-migrate.test.ts
-- pnpm test extensions/xai/model-id.test.ts
-- OPENCLAW_LIVE_TEST=1 OPENCLAW_LIVE_TEST_QUIET=1 pnpm test:live -- extensions/xai/xai.live.test.ts
+- Authorized redacted xAI Responses image request using the migrated model.
 
 ## Operator Prompt
 
