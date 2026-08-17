@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:52:31.798Z",
+  "updated_at": "2026-08-17T06:52:50.332Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5311711057:2026-08-17T04:15:58Z:re_review",
-      "comment_id": "5311711057",
-      "comment_version_key": "5311711057:2026-08-17T04:15:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5311711057",
-      "comment_created_at": "2026-08-17T04:15:58Z",
-      "comment_updated_at": "2026-08-17T04:15:58Z",
-      "comment_body_sha256": "7207ebb29784cbd206164d6b003702f230320377f13d5139cd2940a724c2f690",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T04:16:45.914Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approval-redos-guard",
-        "head_sha": "eb316547c6ee3cb1271793fc0fccef556af1f953",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/stats-store:298:5311714680:2026-08-17T04:16:27Z:clawsweeper_auto_repair",
       "comment_id": "5311714680",
@@ -31533,6 +31486,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125125:5312800919:2026-08-17T06:52:01Z:clawsweeper_needs_human",
+      "comment_id": "5312800919",
+      "comment_version_key": "5312800919:2026-08-17T06:52:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125125#issuecomment-5312800919",
+      "comment_created_at": "2026-08-17T06:52:01Z",
+      "comment_updated_at": "2026-08-17T06:52:01Z",
+      "comment_body_sha256": "3d5cb4b87e017669ee3276b2092afe3148da72f974bc42a6f7b16305bd1a87d5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125125,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Replacing a shipped tool name and policy behavior can break existing allow/deny rules unless all runtime and plugin-policy paths preserve the documented migration. (sha=252e2224a126fe38c53c8134253400de6e35ab73)",
+      "expected_head_sha": "252e2224a126fe38c53c8134253400de6e35ab73",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T06:52:50.332Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/agent-progress-card-0f08c1",
+        "head_sha": "252e2224a126fe38c53c8134253400de6e35ab73",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
