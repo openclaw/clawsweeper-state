@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T04:34:24.698Z",
+  "updated_at": "2026-08-17T04:36:02.719Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4842373781:2026-06-30T10:27:22Z:re_review",
-      "comment_id": "4842373781",
-      "comment_version_key": "4842373781:2026-06-30T10:27:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4842373781",
-      "comment_created_at": "2026-06-30T10:27:22Z",
-      "comment_updated_at": "2026-06-30T10:27:22Z",
-      "comment_body_sha256": "25397138a02657960f191459ef7284c544a216dffe85e8e8ff3ae65639f88ba8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 3 commits replayed, no conflicts). new head e48583a664. this refresh resolves the check-docs gate: docs/docs_map.md is generated from doc headings, and the prior failure was relative to the older base; against current main, `pnpm docs:map:check` passes with no diff and the committed docs_map.md matches a fresh regen. no behavior change. pr-touched unit tests all green locally (command-queue 34, context-engine-maintenance 30, transcript-rewrite 7, diagnostic 73 — 181 total)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T01:28:53.392Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4867791368:2026-07-02T16:07:54Z:re_review",
       "comment_id": "4867791368",
@@ -31524,6 +31497,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103201:4933838406:2026-08-17T04:34:08Z:clawsweeper_auto_repair",
+      "comment_id": "4933838406",
+      "comment_version_key": "4933838406:2026-08-17T04:34:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103201#issuecomment-4933838406",
+      "comment_created_at": "2026-07-10T09:14:56Z",
+      "comment_updated_at": "2026-08-17T04:34:08Z",
+      "comment_body_sha256": "411df4b6c026b05bd020983af3f5bbba70513505c3f63ac551f459e06a93629f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103201,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2d48f2e00508ad72bb1929dab41779bfa7e38f6f)",
+      "expected_head_sha": "2d48f2e00508ad72bb1929dab41779bfa7e38f6f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T04:36:02.719Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/incremental-session-chunk-diff",
+        "head_sha": "2d48f2e00508ad72bb1929dab41779bfa7e38f6f",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
