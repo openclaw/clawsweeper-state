@@ -67,22 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the retired xAI fast-model path as one coherent change: remove or replace the producer mapping that emits `grok-4-fast`, and extend canonical doctor model-reference migration so direct stale refs, including `agents.defaults.imageModel` and model-map keys, become a verified current image-capable xAI model. Do not add Telegram-specific logic, a runtime fallback, or a new config option. Update the existing fast-mode and migration regressions so they fail before the repair, and use an authorized redacted xAI Responses image request to prove the selected replacement. Put release-note context in the PR body, not CHANGELOG.md.
+Repair https://github.com/openclaw/openclaw/issues/124527 at the xAI provider and core Doctor boundary. Trace `extensions/xai/stream.ts` fast-mode rewriting through media understanding; make the legacy route use the documented current compatibility target instead of `grok-4-fast`. Extend the canonical Doctor model-reference migration so plain retired xAI fast references in `agents.defaults.imageModel` and fallbacks are rewritten before runtime. Add focused regression coverage. Before opening a PR, run one redacted authenticated xAI Responses image request through the production media path; stop and report if the live xAI contract requires a different target. Do not add Telegram-specific fallbacks, new settings, runtime aliases, or CHANGELOG.md edits.
 
 Likely files:
 
 - extensions/xai/stream.ts
 - extensions/xai/stream.test.ts
-- extensions/xai/model-definitions.ts
 - src/commands/doctor/shared/legacy-config-migrations.runtime.models.refs.ts
 - src/commands/doctor/shared/legacy-config-migrate.test.ts
-- docs/providers/xai.md
 
 Validation:
 
-- pnpm test extensions/xai/stream.test.ts
-- pnpm test src/commands/doctor/shared/legacy-config-migrate.test.ts
-- Authorized redacted xAI Responses image request using the migrated model.
+- pnpm test -- extensions/xai/stream.test.ts
+- pnpm test -- src/commands/doctor/shared/legacy-config-migrate.test.ts
+- Run a redacted authenticated xAI OpenAI Responses image-understanding request through the media path and record the selected model plus successful description.
 
 ## Operator Prompt
 
