@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T09:45:13.364Z",
+  "updated_at": "2026-08-17T09:46:20.639Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124015:5312365208:2026-08-17T05:53:06Z:re_review",
-      "comment_id": "5312365208",
-      "comment_version_key": "5312365208:2026-08-17T05:53:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5312365208",
-      "comment_created_at": "2026-08-17T05:53:06Z",
-      "comment_updated_at": "2026-08-17T05:53:06Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124015,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T05:53:43.177Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/signal-port-collision",
-        "head_sha": "b3ada3c1ef136696d3425bc3e7bc09aea4f02784",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:502:5312313703:2026-08-17T05:52:59Z:clawsweeper_auto_repair",
       "comment_id": "5312313703",
@@ -33131,6 +33084,39 @@
         "kind": "pull_request",
         "branch": "steipete/compact-archive-bug-file-removal-78833b",
         "head_sha": "f73c54eafed79cad7794fc4194efe9b8d458549f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:508:5314328932:2026-08-17T09:43:51Z:clawsweeper_needs_human",
+      "comment_id": "5314328932",
+      "comment_version_key": "5314328932:2026-08-17T09:43:51Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/508#issuecomment-5314328932",
+      "comment_created_at": "2026-08-17T09:35:13Z",
+      "comment_updated_at": "2026-08-17T09:43:51Z",
+      "comment_body_sha256": "f9a3ecea8cb98d9561a141062afdd4ac65df5c7adb3334d4ac90702ac43189be",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 508,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The full-catalog fallback intentionally makes exact minimized and off-Space targets routable; retain the exact-ID and owner checks as the compatibility boundary when landing it. (sha=a5d032bc1f99b56db3113bfacbf00d9001378f44)",
+      "expected_head_sha": "a5d032bc1f99b56db3113bfacbf00d9001378f44",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T09:46:20.639Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/exact-window-omission-followup",
+        "head_sha": "1c1bed04d83fb59d3311b2b33e8200db06a71e0e",
         "cluster_id": null,
         "job_path": null
       }
