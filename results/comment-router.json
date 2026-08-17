@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T05:48:27.858Z",
+  "updated_at": "2026-08-17T05:48:35.672Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124222:5311380397:2026-08-17T03:19:22Z:re_review",
-      "comment_id": "5311380397",
-      "comment_version_key": "5311380397:2026-08-17T03:19:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124222#issuecomment-5311380397",
-      "comment_created_at": "2026-08-17T03:19:22Z",
-      "comment_updated_at": "2026-08-17T03:19:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124222,
-      "author": "a-yeyang",
-      "author_id": 88581400,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T03:20:10.608Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-rich-callback-edit",
-        "head_sha": "6328eb543924fbc92376a786a15da6f150baea5a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124899:5311380229:2026-08-17T03:19:20Z:re_review",
       "comment_id": "5311380229",
@@ -31105,6 +31058,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T05:48:27.858Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1371:5310172817:2026-08-17T05:47:52Z:clawsweeper_needs_human",
+      "comment_id": "5310172817",
+      "comment_version_key": "5310172817:2026-08-17T05:47:52Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1371#issuecomment-5310172817",
+      "comment_created_at": "2026-08-16T23:15:35Z",
+      "comment_updated_at": "2026-08-17T05:47:52Z",
+      "comment_body_sha256": "c1a488e4979c7a0eb1532bb58fdd019c1018eb8b48e7f88f68d52a6eff42c13f",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1371,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head conflicts with main in CHANGELOG.md and cannot merge until rebased; both Unreleased fixes should remain. (sha=8bc499265286eddca790804b437b334bd40ac397)",
+      "expected_head_sha": "8bc499265286eddca790804b437b334bd40ac397",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T05:48:35.672Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/e2b-default-http-timeout",
+        "head_sha": "8bc499265286eddca790804b437b334bd40ac397",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
