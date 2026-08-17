@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T10:22:55.318Z",
+  "updated_at": "2026-08-17T10:24:36.490Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114098:5288900433:2026-08-14T03:00:50Z:re_review",
-      "comment_id": "5288900433",
-      "comment_version_key": "5288900433:2026-08-14T03:00:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114098#issuecomment-5288900433",
-      "comment_created_at": "2026-08-14T03:00:50Z",
-      "comment_updated_at": "2026-08-14T03:00:50Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114098,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T06:11:26.957Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114098:5289419334:2026-08-14T04:18:13Z:re_review",
       "comment_id": "5289419334",
@@ -33260,6 +33233,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125207:5314828565:2026-08-17T10:23:50Z:clawsweeper_needs_human",
+      "comment_id": "5314828565",
+      "comment_version_key": "5314828565:2026-08-17T10:23:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125207#issuecomment-5314828565",
+      "comment_created_at": "2026-08-17T10:23:50Z",
+      "comment_updated_at": "2026-08-17T10:23:50Z",
+      "comment_body_sha256": "9c90e118874eb65e8de2129c5e7d4793c851aa852f3cf2c76c802d6edd9124e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125207,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The model-visible result crosses the Codex app-server bridge; direct ../codex protocol/runtime inspection is required by repository policy but could not be performed in this read-only... (sha=1a959f0d4eb9d8644a5a2aecf031c0aa6ffd00d8)",
+      "expected_head_sha": "1a959f0d4eb9d8644a5a2aecf031c0aa6ffd00d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T10:24:36.490Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-heartbeat-outcome-persistence",
+        "head_sha": "1a959f0d4eb9d8644a5a2aecf031c0aa6ffd00d8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
