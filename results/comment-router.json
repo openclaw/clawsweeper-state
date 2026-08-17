@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T08:59:49.443Z",
+  "updated_at": "2026-08-17T09:00:21.994Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1170:5297118616:2026-08-17T05:07:33Z:clawsweeper_needs_human",
-      "comment_id": "5297118616",
-      "comment_version_key": "5297118616:2026-08-17T05:07:33Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1170#issuecomment-5297118616",
-      "comment_created_at": "2026-08-14T19:04:20Z",
-      "comment_updated_at": "2026-08-17T05:07:33Z",
-      "comment_body_sha256": "21da720e7d13822da2983931ccba886282b85dd215f4856e292a483ce5bcdc62",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1170,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes review admission, cache reuse, and retry classification across 27 files; an overly strict preflight can temporarily prevent automated reviews until retry. (sha=153a52f231c9b22421336662d3e8e98244fe49f0)",
-      "expected_head_sha": "153a52f231c9b22421336662d3e8e98244fe49f0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T05:10:17.466Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/structured-checkout-access",
-        "head_sha": "153a52f231c9b22421336662d3e8e98244fe49f0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1170:5310987062:2026-08-17T02:08:44Z:re_review",
       "comment_id": "5310987062",
@@ -33332,6 +33299,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115447:5117910242:2026-08-17T08:59:29Z:clawsweeper_needs_human",
+      "comment_id": "5117910242",
+      "comment_version_key": "5117910242:2026-08-17T08:59:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115447#issuecomment-5117910242",
+      "comment_created_at": "2026-07-29T12:44:32Z",
+      "comment_updated_at": "2026-08-17T08:59:29Z",
+      "comment_body_sha256": "4c28a5795b4ce83e888257a95e3cb93dbe939d6df6cd60c4f5be8b5c31f30ccb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115447,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes older builds’ doctor --fix behavior from a warning to a terminal recovery error when pointed at newer shared state; operators must update to a schema-sup... (sha=82994631993dd906be811ef773c5bd797d2ad25f)",
+      "expected_head_sha": "82994631993dd906be811ef773c5bd797d2ad25f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T09:00:21.994Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/schema-mismatch-no-db-quarantine-115421",
+        "head_sha": "82994631993dd906be811ef773c5bd797d2ad25f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
