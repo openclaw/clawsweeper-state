@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T13:12:00.965Z",
+  "updated_at": "2026-08-17T13:12:08.623Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123288:5313497884:2026-08-17T08:12:17Z:re_review",
-      "comment_id": "5313497884",
-      "comment_version_key": "5313497884:2026-08-17T08:12:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123288#issuecomment-5313497884",
-      "comment_created_at": "2026-08-17T08:12:17Z",
-      "comment_updated_at": "2026-08-17T08:12:17Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123288,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T08:13:03.961Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/why-are-we-able-to-have-a-loading-spinner-and-an-activity-dot-at",
-        "head_sha": "67774ffc06e9998a1d5ce2b6c109ff23221da89b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5313500625:2026-08-17T08:12:33Z:re_review",
       "comment_id": "5313500625",
@@ -33320,6 +33273,39 @@
         "kind": "pull_request",
         "branch": "fix/sessions-yield-diagnostic-suppression",
         "head_sha": "c89ef9f789452c8f92512f4060ccce0c67faf435",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124025:5300731845:2026-08-17T13:11:06Z:clawsweeper_needs_human",
+      "comment_id": "5300731845",
+      "comment_version_key": "5300731845:2026-08-17T13:11:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5300731845",
+      "comment_created_at": "2026-08-15T05:27:33Z",
+      "comment_updated_at": "2026-08-17T13:11:06Z",
+      "comment_body_sha256": "faef2402b5e0666f3eba52ef276ec1731a6488fafeb97ef0c294d4463cf33571",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required exact Codex v0.147 protocol source was unavailable for direct inspection, so the equivalence of command-start and output-delta item IDs remains unverified outside the PR... (sha=b4b5f005c2a4a3235c5c81cd8d898d4aa5b788e4)",
+      "expected_head_sha": "b4b5f005c2a4a3235c5c81cd8d898d4aa5b788e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T13:12:08.623Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-stale-tool-eligibility",
+        "head_sha": "b4b5f005c2a4a3235c5c81cd8d898d4aa5b788e4",
         "cluster_id": null,
         "job_path": null
       }
