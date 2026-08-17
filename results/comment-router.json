@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:12:58.566Z",
+  "updated_at": "2026-08-17T03:14:18.849Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124298:5309957708:2026-08-16T22:19:17Z:re_review",
-      "comment_id": "5309957708",
-      "comment_version_key": "5309957708:2026-08-16T22:19:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124298#issuecomment-5309957708",
-      "comment_created_at": "2026-08-16T22:19:17Z",
-      "comment_updated_at": "2026-08-16T22:19:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124298,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T22:19:56.933Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-queued-message-edit-cancel",
-        "head_sha": "baf30a2a85c8a7cd402a0ec23992ecdaaee24aff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124429:5309957732:2026-08-16T22:19:17Z:re_review",
       "comment_id": "5309957732",
@@ -32502,6 +32455,39 @@
         "kind": "pull_request",
         "branch": "feat/spend-projects-pane",
         "head_sha": "00dcee89a075aa2702cece1a41d2390ed566ec84",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124999:5311345362:2026-08-17T03:13:32Z:clawsweeper_needs_human",
+      "comment_id": "5311345362",
+      "comment_version_key": "5311345362:2026-08-17T03:13:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124999#issuecomment-5311345362",
+      "comment_created_at": "2026-08-17T03:13:32Z",
+      "comment_updated_at": "2026-08-17T03:13:32Z",
+      "comment_body_sha256": "c8c4459779dcb4255f4640aa76b79ff1a4c7c3cb7901daa1e9cf827768506d58",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124999,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is privileged release automation; the first beta recovery run must retain the exact tag/SHA, preflight, full-validation, selector, and tarball-digest evidence in its release reco... (sha=31212c8fd96fa69682d996c2c10503b73a7f88d0)",
+      "expected_head_sha": "31212c8fd96fa69682d996c2c10503b73a7f88d0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T03:14:18.848Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/beta-docker-backfill",
+        "head_sha": "31212c8fd96fa69682d996c2c10503b73a7f88d0",
         "cluster_id": null,
         "job_path": null
       }
