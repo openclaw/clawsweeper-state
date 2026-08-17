@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T18:33:34.875Z",
+  "updated_at": "2026-08-17T18:33:35.085Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5259345446:2026-08-11T22:00:48Z:re_review",
-      "comment_id": "5259345446",
-      "comment_version_key": "5259345446:2026-08-11T22:00:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5259345446",
-      "comment_created_at": "2026-08-11T22:00:48Z",
-      "comment_updated_at": "2026-08-11T22:00:48Z",
-      "comment_body_sha256": "f42a767fb1f53c500a0e60fa7df3379e36431611aa1f0346a69cca6d2654f74d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T13:13:14.733Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5259396146:2026-08-11T22:06:54Z:re_review",
       "comment_id": "5259396146",
@@ -30924,6 +30897,39 @@
       "status": "waiting",
       "processed_at": "2026-08-17T18:33:34.875Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125351:5318180366:2026-08-17T18:32:44Z:clawsweeper_needs_human",
+      "comment_id": "5318180366",
+      "comment_version_key": "5318180366:2026-08-17T18:32:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125351#issuecomment-5318180366",
+      "comment_created_at": "2026-08-17T17:27:36Z",
+      "comment_updated_at": "2026-08-17T18:32:44Z",
+      "comment_body_sha256": "7478c5e4ecce2de313e19d072dae51dce3e3b7ad9bb3e950316022244c376b60",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125351,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Invalid direct agent IDs now return 400 instead of silently routing to the default agent; this is the intended compatibility change, while configured mappings retain their documented... (sha=4b31bc149adce1874a95dd99870f6bad9b8d2d8c)",
+      "expected_head_sha": "4b31bc149adce1874a95dd99870f6bad9b8d2d8c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T18:33:35.085Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/hooks-ingress-validation-bugs-db13a3",
+        "head_sha": "4b31bc149adce1874a95dd99870f6bad9b8d2d8c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
