@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T23:55:36.256Z",
+  "updated_at": "2026-08-17T23:57:05.581Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125384:5320225402:2026-08-17T21:04:19Z:re_review",
-      "comment_id": "5320225402",
-      "comment_version_key": "5320225402:2026-08-17T21:04:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125384#issuecomment-5320225402",
-      "comment_created_at": "2026-08-17T21:04:19Z",
-      "comment_updated_at": "2026-08-17T21:04:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125384,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T21:05:02.750Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/delete-cloud-ssh-carrier",
-        "head_sha": "b280450f793ed5fe0e84f1decabf12f572d8798d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124061:5300979249:2026-08-17T21:04:49Z:clawsweeper_needs_human",
       "comment_id": "5300979249",
@@ -31232,6 +31185,39 @@
         "kind": "pull_request",
         "branch": "steipete/unresolved-env-var-config-facts-f657a6",
         "head_sha": "bd46774538337a1c79868ab3e922cd2b01d4b0ac",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125458:5321656109:2026-08-17T23:56:14Z:clawsweeper_needs_human",
+      "comment_id": "5321656109",
+      "comment_version_key": "5321656109:2026-08-17T23:56:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125458#issuecomment-5321656109",
+      "comment_created_at": "2026-08-17T23:56:14Z",
+      "comment_updated_at": "2026-08-17T23:56:14Z",
+      "comment_body_sha256": "12c0e4cf719d57cc705138d5327f4481a5225f8fdf38e620c2ce925f3ada4b6e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125458,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Redact Gateway URLs before formatting errors (P1)** - connectionDetails.url is intentionally raw and may contain userinfo or query credentials. This new operator-visible error interpolates it directly on transpo...; Review finding: [P1] Redact Gateway URLs before formatting errors — extensions/voice-call/src/cli.ts:129-137 - [high] Raw connection URL reaches terminal diagnostics — extensions/... (sha=7c375e5456abb14885ef2ddb2d9bb661959948f8)",
+      "expected_head_sha": "7c375e5456abb14885ef2ddb2d9bb661959948f8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T23:57:05.581Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/zen-aryabhata-e5226f",
+        "head_sha": "7c375e5456abb14885ef2ddb2d9bb661959948f8",
         "cluster_id": null,
         "job_path": null
       }
