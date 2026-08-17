@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T04:22:36.004Z",
+  "updated_at": "2026-08-17T04:24:39.120Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5247961908:2026-08-11T01:22:12Z:re_review",
-      "comment_id": "5247961908",
-      "comment_version_key": "5247961908:2026-08-11T01:22:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5247961908",
-      "comment_created_at": "2026-08-11T01:22:12Z",
-      "comment_updated_at": "2026-08-11T01:22:12Z",
-      "comment_body_sha256": "e0e81fbb70c39d6a4e268b66c32e1c8b116906512f9bd05b6eab39d72c0fead7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T01:22:45.026Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5250240163:2026-08-11T07:24:39Z:re_review",
       "comment_id": "5250240163",
@@ -31345,6 +31318,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124994:5311263861:2026-08-17T04:23:54Z:clawsweeper_needs_human",
+      "comment_id": "5311263861",
+      "comment_version_key": "5311263861:2026-08-17T04:23:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124994#issuecomment-5311263861",
+      "comment_created_at": "2026-08-17T02:58:03Z",
+      "comment_updated_at": "2026-08-17T04:23:54Z",
+      "comment_body_sha256": "51ffe552436fd4edbf8027adc5d8b51010d1b3d895f7f4c0b5cac8bd3991661d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124994,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bound the metadata query’s SQLite bindings (P1)** - The tail window expands an accepted limit by 20×, but this query binds every position in one IN predicate. A limit of 1,638 reaches 32,780 positions plus the s...; Review finding: [P1] Bound the metadata query’s SQLite bindings — src/config/sessions/session-accessor.sqlite-history-events.ts:207 - [P1] Cache redacted imported messages — src/g... (sha=4ea8062a42375b335bb262e714c8cc2f4e4697fc)",
+      "expected_head_sha": "4ea8062a42375b335bb262e714c8cc2f4e4697fc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T04:24:39.120Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/ecstatic-golick-aa32b7",
+        "head_sha": "4ea8062a42375b335bb262e714c8cc2f4e4697fc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
