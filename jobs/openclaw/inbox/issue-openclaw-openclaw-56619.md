@@ -67,18 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the documented WhatsApp pairing approval notification path for https://github.com/openclaw/openclaw/issues/56619. Preserve the existing explicit --notify and Control UI notification semantics; do not add automatic notification, configuration, replay of blocked messages, or Plugin SDK/core API surface. In the WhatsApp plugin, add a pairing notifier that uses the existing account-aware outbound delivery path and standard pairing-approved message, then add an owner-boundary regression test proving the plugin advertises notification support and delivers to the approved sender/account. Treat https://github.com/openclaw/openclaw/pull/94386 and https://github.com/openclaw/openclaw/pull/96277 only as closed-unmerged context, not code to revive. Do not edit CHANGELOG.md; include concise user-facing release-note context in the PR body.
+Repair the documented WhatsApp pairing `--notify` contract for https://github.com/openclaw/openclaw/issues/56619. Trace CLI approval through `src/cli/pairing-cli.ts` and `src/channels/plugins/pairing.ts`, then make the WhatsApp plugin provide a notifier that routes through the active Gateway-owned outbound path; do not use a process-local sender from the standalone CLI. Keep the behavior opt-in: do not add a config key, change approval defaults, replay the blocked message, or revive either closed source PR verbatim. Add a regression test proving an approval notification targets the approved sender with the shared approval message and preserves account scope; add focused coverage that the Gateway route is selected. Record release-note context in the PR body or commit message, not CHANGELOG.md.
 
 Likely files:
 
 - extensions/whatsapp/src/channel.ts
 - extensions/whatsapp/src/channel.pairing.test.ts
+- src/plugin-sdk/core.ts
+- src/channels/plugins/pairing-adapters.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/whatsapp/src/channel.pairing.test.ts
-- node scripts/run-vitest.mjs src/cli/pairing-cli.test.ts src/gateway/server-methods/channel-pairing.test.ts
-- git diff --check
+- pnpm test extensions/whatsapp/src/channel.pairing.test.ts src/channels/plugins/pairing-adapters.test.ts src/cli/pairing-cli.test.ts src/gateway/server-methods/channel-pairing.test.ts
+- Run a redacted real WhatsApp pairing approval with `--notify` against a running Gateway when credentials are available; record delivery without phone numbers or tokens.
 
 ## Operator Prompt
 
