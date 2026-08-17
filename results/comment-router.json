@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T16:36:58.192Z",
+  "updated_at": "2026-08-17T16:37:10.065Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124014:5312760278:2026-08-17T06:46:47Z:re_review",
-      "comment_id": "5312760278",
-      "comment_version_key": "5312760278:2026-08-17T06:46:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5312760278",
-      "comment_created_at": "2026-08-17T06:46:47Z",
-      "comment_updated_at": "2026-08-17T06:46:47Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124014,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T11:03:59.313Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120240:5217836723:2026-08-17T11:03:39Z:clawsweeper_needs_human",
       "comment_id": "5217836723",
@@ -31357,6 +31330,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T16:36:58.192Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116522:5135116190:2026-08-17T16:34:48Z:clawsweeper_needs_human",
+      "comment_id": "5135116190",
+      "comment_version_key": "5135116190:2026-08-17T16:34:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116522#issuecomment-5135116190",
+      "comment_created_at": "2026-07-30T19:04:52Z",
+      "comment_updated_at": "2026-08-17T16:34:48Z",
+      "comment_body_sha256": "d37af22eb116f20c4e8977150dcef7dd3dc5225cd7a8203d5aed13df40a40646",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116522,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The posted real-timer trace exercises a test hook runner on an earlier head, not an installed plugin through an ephemeral Gateway on the curren...; Review finding: [P1] Settle the timeout before aborting the handler — src/plugins/hooks.ts:656-657 - [P1] Declare the deadline signal on pairing contexts — src/plugins/hooks.ts:66... (sha=39d66252492031581953883c915f694df21cd12e)",
+      "expected_head_sha": "39d66252492031581953883c915f694df21cd12e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T16:37:10.065Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hook-timeout-kill-child",
+        "head_sha": "39d66252492031581953883c915f694df21cd12e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
