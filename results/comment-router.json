@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T23:48:46.500Z",
+  "updated_at": "2026-08-17T23:48:50.690Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5320133959:2026-08-17T20:54:53Z:re_review",
-      "comment_id": "5320133959",
-      "comment_version_key": "5320133959:2026-08-17T20:54:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5320133959",
-      "comment_created_at": "2026-08-17T20:54:53Z",
-      "comment_updated_at": "2026-08-17T20:54:53Z",
-      "comment_body_sha256": "dafd9dd8a45b1dcb5d7aa27484c5d4c1310aa736ade99ec718ce800322391924",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T21:02:02.345Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "ac846cceca71f54bbea0199cb61dbbb93605c0bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125382:5320024745:2026-08-17T21:00:58Z:clawsweeper_needs_human",
       "comment_id": "5320024745",
@@ -31244,6 +31197,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125302:5317273192:2026-08-17T23:48:03Z:clawsweeper_needs_human",
+      "comment_id": "5317273192",
+      "comment_version_key": "5317273192:2026-08-17T23:48:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125302#issuecomment-5317273192",
+      "comment_created_at": "2026-08-17T15:14:45Z",
+      "comment_updated_at": "2026-08-17T23:48:03Z",
+      "comment_body_sha256": "d317b82a65c27389d90f4d883c348b1d7d89911d494ecff1fa54fcb5d33c3e3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125302,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the internal event contract consumed by session persistence and memory-flush rotation; the branch is behind current main, so the final merge result should receive the foc... (sha=883a9981d9baa611622a459163343665d2c37dc0)",
+      "expected_head_sha": "883a9981d9baa611622a459163343665d2c37dc0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T23:48:50.690Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/compaction-outcome-contract",
+        "head_sha": "883a9981d9baa611622a459163343665d2c37dc0",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
