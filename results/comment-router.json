@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T00:27:54.280Z",
+  "updated_at": "2026-08-17T00:28:17.257Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-08-16T18:49:39Z:clawsweeper_needs_human",
-      "comment_id": "5075679870",
-      "comment_version_key": "5075679870:2026-08-16T18:49:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112811#issuecomment-5075679870",
-      "comment_created_at": "2026-07-24T23:58:02Z",
-      "comment_updated_at": "2026-08-16T18:49:39Z",
-      "comment_body_sha256": "69f65f0313e9eb53ef23c32c4add593ec6c7e62dc2775bee22dd1e5aa8cdd914",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112811,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - channels.msteams.accounts and defaultAccount add an upgrade-sensitive public configuration, credential-selection, and persisted-state contract that needs explicit maintainer sponsorsh... (sha=3ecb3c24dfb035a699c1e69342e690955bfe31c8)",
-      "expected_head_sha": "3ecb3c24dfb035a699c1e69342e690955bfe31c8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T18:50:39.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/msteams-multi-account-replacement-20260722",
-        "head_sha": "3ecb3c24dfb035a699c1e69342e690955bfe31c8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124745:5309094926:2026-08-16T18:49:59Z:clawsweeper_needs_human",
       "comment_id": "5309094926",
@@ -33380,6 +33347,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124298:5310496568:2026-08-17T00:27:36Z:re_review",
+      "comment_id": "5310496568",
+      "comment_version_key": "5310496568:2026-08-17T00:27:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124298#issuecomment-5310496568",
+      "comment_created_at": "2026-08-17T00:27:36Z",
+      "comment_updated_at": "2026-08-17T00:27:36Z",
+      "comment_body_sha256": "a46fb814bb41d8dcde779696ed96b06ab3baa40ed449b1f8cc0957222aa70162",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124298,
+      "author": "jjjhenriksen",
+      "author_id": 179184921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: p1 visible-error invalidation is fixed and pushed to the pr actual head branch at exact head d67e453dc1f73f1d7929fbfce32f1ac86bcbc4f4. the pr body now contains the rebuilt exact-head live gateway/ui transcript: footer @d67e453, live queue row, inline /stop rejection alert, and 407 focused tests; no proof files were committed",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T00:28:15.364Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-queued-message-edit-cancel",
+        "head_sha": "d67e453dc1f73f1d7929fbfce32f1ac86bcbc4f4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
