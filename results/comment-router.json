@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T22:49:44.139Z",
+  "updated_at": "2026-08-17T22:50:06.538Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5319489059:2026-08-17T19:49:43Z:re_review",
-      "comment_id": "5319489059",
-      "comment_version_key": "5319489059:2026-08-17T19:49:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5319489059",
-      "comment_created_at": "2026-08-17T19:49:43Z",
-      "comment_updated_at": "2026-08-17T19:49:43Z",
-      "comment_body_sha256": "808c60c70da67e2db36ec87e6907a8e243670e740820566ae1317385486bb9e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — new head 6b30a878a2. since the 1d703b227a review: rebased onto latest upstream/main (clean) and resolved both code-class ci failures — registry.ts is back under the max-lines threshold (quarantine-state extracted to a sibling module with the public re-export preserved), and the two assertion-safety ratchet violations were replaced with type-safe constructs (in-operator narrowing and a direct process annotation). oxlint, the assertion-safety ratchet in ci mode, tsgo, and the affected suites are all green locally. the two identity-related p1 findings are under active analysis with a proposal pending review. please re-rate against the current head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T19:50:29.014Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/turn-maintenance-per-task-timeout",
-        "head_sha": "6b30a878a2037f34814d963d997d0c799c1f663e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125378:5319494897:2026-08-17T19:50:19Z:clawsweeper_auto_repair",
       "comment_id": "5319494897",
@@ -31297,6 +31250,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T22:49:44.139Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125429:5321149051:2026-08-17T22:49:26Z:clawsweeper_auto_repair",
+      "comment_id": "5321149051",
+      "comment_version_key": "5321149051:2026-08-17T22:49:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125429#issuecomment-5321149051",
+      "comment_created_at": "2026-08-17T22:49:26Z",
+      "comment_updated_at": "2026-08-17T22:49:26Z",
+      "comment_body_sha256": "438a41f338aaf3b6618d5e3013b75be3ac8b63f682a9b71c6554aee9ec950a49",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125429,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5c6ac588abe46cc9c2e9a06df7e64cd69eceacb2)",
+      "expected_head_sha": "5c6ac588abe46cc9c2e9a06df7e64cd69eceacb2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T22:50:06.538Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workboard-lifecycle-configured-agents",
+        "head_sha": "5c6ac588abe46cc9c2e9a06df7e64cd69eceacb2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
