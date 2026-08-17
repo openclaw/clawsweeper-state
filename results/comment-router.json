@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T07:40:52.222Z",
+  "updated_at": "2026-08-17T07:41:08.275Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123556:5311829864:2026-08-17T04:31:04Z:re_review",
-      "comment_id": "5311829864",
-      "comment_version_key": "5311829864:2026-08-17T04:31:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5311829864",
-      "comment_created_at": "2026-08-17T04:31:04Z",
-      "comment_updated_at": "2026-08-17T04:31:04Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123556,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T04:31:50.590Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-concurrency",
-        "head_sha": "43f2548a5959111960ff435d4e665a369da6cbb7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5311829849:2026-08-17T04:31:03Z:re_review",
       "comment_id": "5311829849",
@@ -32324,6 +32277,39 @@
         "kind": "pull_request",
         "branch": "fix/update-defer-startup-migrations",
         "head_sha": "66d17ef09c2e0689268d981cdc0db8030d07df33",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1183:5313065234:2026-08-17T07:40:19Z:clawsweeper_needs_human",
+      "comment_id": "5313065234",
+      "comment_version_key": "5313065234:2026-08-17T07:40:19Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1183#issuecomment-5313065234",
+      "comment_created_at": "2026-08-17T07:23:16Z",
+      "comment_updated_at": "2026-08-17T07:40:19Z",
+      "comment_body_sha256": "e331eaa99f941268138970545f1e2e11bd0750535c931ef159f0e80f1c6576bc",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1183,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body identifies the exact head, local-container provider, image, lease, and claimed outcomes, but no inspectable receipt, linked a... (sha=298b1da03a7bef67a1766c669b8d044430b5c5bc)",
+      "expected_head_sha": "298b1da03a7bef67a1766c669b8d044430b5c5bc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T07:41:08.275Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bay-smoke-query-strip",
+        "head_sha": "298b1da03a7bef67a1766c669b8d044430b5c5bc",
         "cluster_id": null,
         "job_path": null
       }
