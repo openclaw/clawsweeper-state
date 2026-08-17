@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:39:05.353Z",
+  "updated_at": "2026-08-17T03:39:10.491Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124784:5310086279:2026-08-16T22:53:45Z:re_review",
-      "comment_id": "5310086279",
-      "comment_version_key": "5310086279:2026-08-16T22:53:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124784#issuecomment-5310086279",
-      "comment_created_at": "2026-08-16T22:53:45Z",
-      "comment_updated_at": "2026-08-16T22:53:45Z",
-      "comment_body_sha256": "99b42212965c3f04bfd6bdda83e3e915381f25ce526c1f04cbda5cb5a7b5531e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124784,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T22:54:38.018Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-skill-invocation-surface",
-        "head_sha": "7d939c067bc27d03f10604a3c5783daf70de91c5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/Peekaboo:501:5310089008:2026-08-16T22:54:27Z:re_review",
       "comment_id": "5310089008",
@@ -32451,6 +32404,39 @@
         "kind": "pull_request",
         "branch": "jesse/structured-checkout-access",
         "head_sha": "80bb018b91f89d518785c7468f8deea3d2f7fa11",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124269:5304016736:2026-08-17T03:38:15Z:clawsweeper_needs_human",
+      "comment_id": "5304016736",
+      "comment_version_key": "5304016736:2026-08-17T03:38:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124269#issuecomment-5304016736",
+      "comment_created_at": "2026-08-15T20:08:27Z",
+      "comment_updated_at": "2026-08-17T03:38:15Z",
+      "comment_body_sha256": "63d12587ef752bd6cb75793ee5aa856c768379c2d8f9a734927f1e40aecfc1a0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124269,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds net 181 production lines across Gateway wait admission and shared UI retry ownership; exact-head checks must validate the combined lifecycle before merge. (sha=b769c3e2700d82b49eaeb2fb3fb797585dade6f9)",
+      "expected_head_sha": "b769c3e2700d82b49eaeb2fb3fb797585dade6f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T03:39:10.491Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/workspace-icon-503-retry",
+        "head_sha": "b769c3e2700d82b49eaeb2fb3fb797585dade6f9",
         "cluster_id": null,
         "job_path": null
       }
