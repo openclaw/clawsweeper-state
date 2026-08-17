@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T02:06:30.089Z",
+  "updated_at": "2026-08-17T02:06:40.818Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124659:5308122902:2026-08-16T20:54:06Z:clawsweeper_auto_repair",
-      "comment_id": "5308122902",
-      "comment_version_key": "5308122902:2026-08-16T20:54:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124659#issuecomment-5308122902",
-      "comment_created_at": "2026-08-16T15:14:58Z",
-      "comment_updated_at": "2026-08-16T20:54:06Z",
-      "comment_body_sha256": "177a551a37a6126440d99f53bab160de38f2db84e39c372dbca61a8cca347051",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124659,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c10ec85c1d56bd6b23d83832657922e645dabfe2)",
-      "expected_head_sha": "c10ec85c1d56bd6b23d83832657922e645dabfe2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T20:54:48.290Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-managed-handoff-successor",
-        "head_sha": "c10ec85c1d56bd6b23d83832657922e645dabfe2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124795:5309629936:2026-08-16T20:56:39Z:re_review",
       "comment_id": "5309629936",
@@ -32555,6 +32522,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T02:06:29.953Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124973:5310972659:2026-08-17T02:06:03Z:clawsweeper_needs_human",
+      "comment_id": "5310972659",
+      "comment_version_key": "5310972659:2026-08-17T02:06:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124973#issuecomment-5310972659",
+      "comment_created_at": "2026-08-17T02:06:03Z",
+      "comment_updated_at": "2026-08-17T02:06:03Z",
+      "comment_body_sha256": "d3f1174168740b6c9dfca9bf6620eec7d408f42fffe3cd7785c967d33553d389",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124973,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify and authorize the new package resolution** - The global js-yaml override and its lockfile integrity change are blocked until secops or an admin verifies the upstream artifact and...; Review finding: [medium] Verify and authorize the new package resolution — pnpm-workspace.yaml:163 (sha=0cad9c15724327e61e4d8f623796fe5bcadfb3fc)",
+      "expected_head_sha": "0cad9c15724327e61e4d8f623796fe5bcadfb3fc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T02:06:40.818Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/js-yaml-cve-2026-59870",
+        "head_sha": "0cad9c15724327e61e4d8f623796fe5bcadfb3fc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
