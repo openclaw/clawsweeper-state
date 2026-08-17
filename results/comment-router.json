@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:51:57.608Z",
+  "updated_at": "2026-08-17T03:52:45.247Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119236:5179736266:2026-08-16T23:29:12Z:clawsweeper_auto_repair",
-      "comment_id": "5179736266",
-      "comment_version_key": "5179736266:2026-08-16T23:29:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119236#issuecomment-5179736266",
-      "comment_created_at": "2026-08-04T13:28:43Z",
-      "comment_updated_at": "2026-08-16T23:29:12Z",
-      "comment_body_sha256": "8cb79bc4e8013a71e64a7416804234e7024ffdd0dc457b1383eed83500ebb785",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119236,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T23:33:41.506Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "gateway-rpc-local-port",
-        "head_sha": "758b47bbfc63f40f982b81e297dce19c5981ed90",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119395:5186708582:2026-08-16T23:29:34Z:clawsweeper_auto_repair",
       "comment_id": "5186708582",
@@ -32289,6 +32256,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T03:51:57.608Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124025:5300731845:2026-08-17T03:52:01Z:clawsweeper_needs_human",
+      "comment_id": "5300731845",
+      "comment_version_key": "5300731845:2026-08-17T03:52:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5300731845",
+      "comment_created_at": "2026-08-15T05:27:33Z",
+      "comment_updated_at": "2026-08-17T03:52:01Z",
+      "comment_body_sha256": "4d435a7216dfbf00735de13c3c2b59fc1619ed20825ed3aaa3f00696693fedf1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - If Codex 0.147.0 does not preserve the same ID between native tool lifecycle events and output-delta notifications, recovery could select and abort an active tool. (sha=e20f263a9877b30bf2703f79c46975171e5b320a)",
+      "expected_head_sha": "e20f263a9877b30bf2703f79c46975171e5b320a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T03:52:45.247Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-stale-tool-eligibility",
+        "head_sha": "e20f263a9877b30bf2703f79c46975171e5b320a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
