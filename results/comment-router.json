@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T19:04:55.839Z",
+  "updated_at": "2026-08-17T19:05:09.862Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-08-17T13:49:37Z:clawsweeper_auto_repair",
-      "comment_id": "4591541970",
-      "comment_version_key": "4591541970:2026-08-17T13:49:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4591541970",
-      "comment_created_at": "2026-06-01T10:02:20Z",
-      "comment_updated_at": "2026-08-17T13:49:37Z",
-      "comment_body_sha256": "287acb006bbeea244fb6f3a15fe7910dcacb8b6a8f2601f92bb2b16aba6c273d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6270003f4c4ded057fb22ced90af00b243f4cd27)",
-      "expected_head_sha": "6270003f4c4ded057fb22ced90af00b243f4cd27",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T16:20:47.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bootstrap-context-event-loop-stall",
-        "head_sha": "6270003f4c4ded057fb22ced90af00b243f4cd27",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92230:4683232032:2026-08-16T21:31:54Z:clawsweeper_auto_repair",
       "comment_id": "4683232032",
@@ -30740,6 +30707,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T19:04:55.839Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125318:5317349957:2026-08-17T19:04:16Z:clawsweeper_needs_human",
+      "comment_id": "5317349957",
+      "comment_version_key": "5317349957:2026-08-17T19:04:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125318#issuecomment-5317349957",
+      "comment_created_at": "2026-08-17T15:31:34Z",
+      "comment_updated_at": "2026-08-17T19:04:16Z",
+      "comment_body_sha256": "b3383baab973f2940d0d4104250ad60e08071225a1c7f0dd3f19e3b1d5ead97c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125318,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging deliberately changes existing explicit multi-agent setups with a configured system agent: the four unscoped reads return that owner's data instead of selection-required, so ma... (sha=0643764efa68a5b42dc6e795c2175b065b33baf9)",
+      "expected_head_sha": "0643764efa68a5b42dc6e795c2175b065b33baf9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T19:05:09.862Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/strange-rosalind-1b8759",
+        "head_sha": "0643764efa68a5b42dc6e795c2175b065b33baf9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
