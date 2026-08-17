@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T16:56:17.606Z",
+  "updated_at": "2026-08-17T16:56:33.299Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125221:5315447262:2026-08-17T11:29:45Z:re_review",
-      "comment_id": "5315447262",
-      "comment_version_key": "5315447262:2026-08-17T11:29:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125221#issuecomment-5315447262",
-      "comment_created_at": "2026-08-17T11:29:45Z",
-      "comment_updated_at": "2026-08-17T11:29:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125221,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T11:43:41.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/transcript-idempotency-key",
-        "head_sha": "8b56448d9ced885d240a300c0aff01c34c5b4263",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:75403:4357671409:2026-08-17T11:27:33Z:autoclose",
       "comment_id": "4357671409",
@@ -30904,6 +30857,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T16:56:17.606Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125348:5317937863:2026-08-17T16:55:45Z:clawsweeper_needs_human",
+      "comment_id": "5317937863",
+      "comment_version_key": "5317937863:2026-08-17T16:55:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125348#issuecomment-5317937863",
+      "comment_created_at": "2026-08-17T16:55:45Z",
+      "comment_updated_at": "2026-08-17T16:55:45Z",
+      "comment_body_sha256": "aefd9f10ea1205299e29496f7e623e2f7320ce651cbd8cbeba58e1ced59307e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125348,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports built-CLI validation but provides no inspectable transcript, logs, recording, or artifact showing the after-fix resul... (sha=5802ed8a198d6c7dfa587b4e62ee95a686abe8cc)",
+      "expected_head_sha": "5802ed8a198d6c7dfa587b4e62ee95a686abe8cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T16:56:33.299Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/skill-bootstrap-loading-hygiene-1cb3bf",
+        "head_sha": "5802ed8a198d6c7dfa587b4e62ee95a686abe8cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
