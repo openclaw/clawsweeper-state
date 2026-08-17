@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T16:24:50.453Z",
+  "updated_at": "2026-08-17T16:25:22.613Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5252750042:2026-08-11T11:48:44Z:re_review",
-      "comment_id": "5252750042",
-      "comment_version_key": "5252750042:2026-08-11T11:48:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5252750042",
-      "comment_created_at": "2026-08-11T11:48:44Z",
-      "comment_updated_at": "2026-08-11T11:48:44Z",
-      "comment_body_sha256": "9e5b040ddcf55bcf16448cefe8792a87e6c6434eb3c61f232b74a96fa142bbad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T10:51:37.223Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5278450967:2026-08-13T09:22:11Z:re_review",
       "comment_id": "5278450967",
@@ -31316,6 +31289,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T16:24:50.453Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125332:5317473933:2026-08-17T16:24:29Z:clawsweeper_needs_human",
+      "comment_id": "5317473933",
+      "comment_version_key": "5317473933:2026-08-17T16:24:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125332#issuecomment-5317473933",
+      "comment_created_at": "2026-08-17T16:01:14Z",
+      "comment_updated_at": "2026-08-17T16:24:29Z",
+      "comment_body_sha256": "8b418f34f53090b5fa66daea22b31e2ab792ae15214a5c9d9e4904769d2574ca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125332,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Exclude Incognito chat panes from durable storage (P1)** - resolveDurableScope creates a durable record for every connected existing-session composer without checking the selected session's incognito field. Stag...; Review finding: [P1] Exclude Incognito chat panes from durable storage — ui/src/pages/chat/composer-persistence.ts:987-995 - [P2] Enforce the advertised seven-day retention bound... (sha=695ab289421cd79e5fb023fe22ab5420c3ab9cbd)",
+      "expected_head_sha": "695ab289421cd79e5fb023fe22ab5420c3ab9cbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T16:25:22.613Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/persistent-drafts-and-images-65b66d",
+        "head_sha": "695ab289421cd79e5fb023fe22ab5420c3ab9cbd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
