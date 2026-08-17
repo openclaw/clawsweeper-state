@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T13:27:51.362Z",
+  "updated_at": "2026-08-17T13:28:00.361Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117721:5154331249:2026-08-09T05:38:01Z:clawsweeper_auto_repair",
-      "comment_id": "5154331249",
-      "comment_version_key": "5154331249:2026-08-09T05:38:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117721#issuecomment-5154331249",
-      "comment_created_at": "2026-08-02T01:05:01Z",
-      "comment_updated_at": "2026-08-09T05:38:01Z",
-      "comment_body_sha256": "8f0191af43ddb242219497ac9c31f363569c480c1f088fda7659d1c7c2894a72",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117721,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=e92f3b61d62e2cbd2002ed17fad903e7267511c3)",
-      "expected_head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-17T10:24:51.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-88079",
-        "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
-        "cluster_id": "automerge-openclaw-openclaw-117721",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117721.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-08-07T02:45:25Z:clawsweeper_auto_repair",
       "comment_id": "5157206715",
@@ -30712,6 +30679,53 @@
       "status": "skipped",
       "processed_at": "2026-08-17T13:27:51.362Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:97175:5316692161:2026-08-17T13:27:11Z:re_review",
+      "comment_id": "5316692161",
+      "comment_version_key": "5316692161:2026-08-17T13:27:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5316692161",
+      "comment_created_at": "2026-08-17T13:27:11Z",
+      "comment_updated_at": "2026-08-17T13:27:11Z",
+      "comment_body_sha256": "4e5f9d4f35757a4b94b5a602aa55870365e61e00bdc731e68bd994d7981ca53a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 97175,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — new head 1d703b227a. since the a1b14e2981 review: (1) rebased onto latest upstream/main (clean); (2) fixed the copy-on-write adoption finding — the regression test now uses adoptruntimecontextengineregistrations and resolves through the returned cloned registry via the runtime registry scope (tsgo -p tsconfig.core.json clean, context-engine.test.ts 66/66 green). the two remaining identity-related p1 findings (session-identity keying and task-owner identity forwarding) are under analysis and will be addressed with a follow-up proposal. please re-rate against the current head",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T13:27:58.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/turn-maintenance-per-task-timeout",
+        "head_sha": "1d703b227add82cdb749aeef78bb8b303860d4f0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
