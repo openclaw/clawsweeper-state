@@ -1,16 +1,16 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-08-17T10:44:21.500Z
+Generated: 2026-08-17T11:40:05.664Z
 Repository: openclaw/openclaw
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_clawsweeper_prs | 44 |
+| open_clawsweeper_prs | 43 |
 | candidates | 0 |
 | waiting | 0 |
-| skipped | 46 |
+| skipped | 45 |
 | conflicting_or_dirty | 0 |
 
 ## Pull Requests
@@ -61,5 +61,4 @@ Repository: openclaw/openclaw
 | [#101593](https://github.com/openclaw/openclaw/pull/101593) | fix(infra): handle detached respawn child errors | clawsweeper/automerge-openclaw-openclaw-101489 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#95502](https://github.com/openclaw/openclaw/pull/95502) | Forward-port Tideclaw alpha fixes | tideclaw/forward-port/alpha-2026-06-21-0212Z | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
 | [#76744](https://github.com/openclaw/openclaw/pull/76744) | docs: standardize ACP behavior spelling | clawsweeper/issue-openclaw-openclaw-76734 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#75403](https://github.com/openclaw/openclaw/pull/75403) | fix: making typing start fire-and-forget allows cleanup/idle to run before a persistent typin... | clawsweeper/clawsweeper-commit-openclaw-openclaw-45b86450795d | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#75148](https://github.com/openclaw/openclaw/pull/75148) | fix: fallback path user-visible bug | clawsweeper/clawsweeper-commit-openclaw-openclaw-82ca6ecdde80 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
