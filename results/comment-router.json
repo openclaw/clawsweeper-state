@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:50:18.942Z",
+  "updated_at": "2026-08-17T20:50:57.860Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3438:5219412032:2026-08-17T18:45:04Z:clawsweeper_needs_human",
-      "comment_id": "5219412032",
-      "comment_version_key": "5219412032:2026-08-17T18:45:04Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3438#issuecomment-5219412032",
-      "comment_created_at": "2026-08-07T16:13:44Z",
-      "comment_updated_at": "2026-08-17T18:45:04Z",
-      "comment_body_sha256": "6498ffef0807dd179beba787e1393b48f620b55633d8d635a591a122fa261d0f",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3438,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Review the privileged upstream action revision** - The updated init and analyze actions execute under security-events: write; confirm the immutable v4.37.7 revision is acceptable before...; Review finding: [medium] Review the privileged upstream action revision — .github/workflows/codeql-light.yml:91 (sha=495c3bc201cc4622fc9a4771e9e075c4b3a3dfee)",
-      "expected_head_sha": "495c3bc201cc4622fc9a4771e9e075c4b3a3dfee",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T18:46:00.129Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/github-actions-97c731b4de",
-        "head_sha": "495c3bc201cc4622fc9a4771e9e075c4b3a3dfee",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125288:5318578211:2026-08-17T18:22:20Z:re_review",
       "comment_id": "5318578211",
@@ -29919,6 +29886,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121796:5320088421:2026-08-17T20:50:06Z:re_review",
+      "comment_id": "5320088421",
+      "comment_version_key": "5320088421:2026-08-17T20:50:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121796#issuecomment-5320088421",
+      "comment_created_at": "2026-08-17T20:50:06Z",
+      "comment_updated_at": "2026-08-17T20:50:06Z",
+      "comment_body_sha256": "7c05205ba5740a6ab7200546b23b695e5b481aa522d48ecaf8c043c95bde03e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121796,
+      "author": "Grynn",
+      "author_id": 212880,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T20:50:55.837Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-history-codemode-failures",
+        "head_sha": "e84f917eb838727938baec5354c7bad206f547fa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
