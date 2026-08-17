@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T04:22:31.632Z",
+  "updated_at": "2026-08-17T04:22:32.207Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5233562925:2026-08-09T19:57:03Z:re_review",
-      "comment_id": "5233562925",
-      "comment_version_key": "5233562925:2026-08-09T19:57:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5233562925",
-      "comment_created_at": "2026-08-09T19:57:03Z",
-      "comment_updated_at": "2026-08-09T19:57:03Z",
-      "comment_body_sha256": "054d84e30c88aaeccb1facdfc017839d0f924a4908f9ac7801cdb9f150f9dc15",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T01:22:45.026Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5241013651:2026-08-10T13:34:32Z:re_review",
       "comment_id": "5241013651",
@@ -31319,6 +31292,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125024:5311612226:2026-08-17T04:21:39Z:clawsweeper_needs_human",
+      "comment_id": "5311612226",
+      "comment_version_key": "5311612226:2026-08-17T04:21:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125024#issuecomment-5311612226",
+      "comment_created_at": "2026-08-17T04:01:57Z",
+      "comment_updated_at": "2026-08-17T04:21:39Z",
+      "comment_body_sha256": "0168b362d7679d1fef959df7899ec865bfaa37441e97fbb48c5ea3c4db205498",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125024,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Update the core tool-display registry (P2)** - Renaming the emitted tool here without updating src/agents/tool-display-config.ts leaves TUI, ACP/streaming, and status reactions on the fallback path. Rename that...; Review finding: [P2] Update the core tool-display registry — src/agents/tools/image-tool.ts:906 - [medium] Verify the renamed sandbox policy against pinned Codex behavior — extens... (sha=160f79f1ec85630d5f16c3094de6903326cf1396)",
+      "expected_head_sha": "160f79f1ec85630d5f16c3094de6903326cf1396",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T04:22:32.207Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/view-image-tool-rename",
+        "head_sha": "160f79f1ec85630d5f16c3094de6903326cf1396",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
