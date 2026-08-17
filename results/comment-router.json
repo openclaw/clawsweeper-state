@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T11:10:13.113Z",
+  "updated_at": "2026-08-17T11:10:38.561Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125135:5312944841:2026-08-17T07:09:42Z:clawsweeper_needs_human",
-      "comment_id": "5312944841",
-      "comment_version_key": "5312944841:2026-08-17T07:09:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125135#issuecomment-5312944841",
-      "comment_created_at": "2026-08-17T07:09:42Z",
-      "comment_updated_at": "2026-08-17T07:09:42Z",
-      "comment_body_sha256": "c33e2d3124d7852e1d9b377b7ba0370e02768c72c804fd5d461592419d427925",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125135,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head Android and native i18n CI is still running; merge only after it validates the generated catalogs. The local partial clone could not hydrate the PR head because github.com... (sha=9a1e1bc89f30635d8822ef8f6ef1809bdf215144)",
-      "expected_head_sha": "9a1e1bc89f30635d8822ef8f6ef1809bdf215144",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T07:10:22.458Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/native-app-locale-refresh",
-        "head_sha": "9a1e1bc89f30635d8822ef8f6ef1809bdf215144",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5312944136:2026-08-17T07:09:37Z:re_review",
       "comment_id": "5312944136",
@@ -32699,6 +32666,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124909:5310268022:2026-08-17T11:03:23Z:clawsweeper_needs_human",
+      "comment_id": "5310268022",
+      "comment_version_key": "5310268022:2026-08-17T11:03:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124909#issuecomment-5310268022",
+      "comment_created_at": "2026-08-16T23:40:16Z",
+      "comment_updated_at": "2026-08-17T11:03:23Z",
+      "comment_body_sha256": "068212989bde27ddcf7f6fe3c3d8ca32a1216fa9400cdc0a1ea492ae2940eb76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124909,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify Codex root enforcement at the exact head** - This change sends runtime workspace roots into the Codex app-server and relies on them for a filesystem boundary; direct inspection o...; Review finding: [medium] Verify Codex root enforcement at the exact head — extensions/codex/src/app-server/thread-requests.ts:186 (sha=99dd13493ce50667187c9f8ed1b5a79187971317)",
+      "expected_head_sha": "99dd13493ce50667187c9f8ed1b5a79187971317",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T11:10:38.561Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-permission-modes",
+        "head_sha": "99dd13493ce50667187c9f8ed1b5a79187971317",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
