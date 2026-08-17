@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-17T22:25:00.592Z
+Generated: 2026-08-17T22:42:33.444Z
 
 ## Summary
 
@@ -30,4 +30,4 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#125422](https://github.com/openclaw/openclaw/pull/125422) | fix: prevent long automations from delaying scheduled runs | fix-cron-cross-tick-admission | MERGEABLE | BEHIND | SKIPPED:40 SUCCESS:169 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight, needs_result_backfill | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
+| [#125422](https://github.com/openclaw/openclaw/pull/125422) | fix: prevent long automations from delaying scheduled runs | fix-cron-cross-tick-admission | MERGEABLE | BEHIND | SKIPPED:41 SUCCESS:168 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight, needs_result_backfill | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
