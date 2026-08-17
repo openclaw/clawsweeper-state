@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:30:42.015Z",
+  "updated_at": "2026-08-17T03:31:22.248Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123935:5300068136:2026-08-16T22:43:19Z:clawsweeper_auto_repair",
-      "comment_id": "5300068136",
-      "comment_version_key": "5300068136:2026-08-16T22:43:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123935#issuecomment-5300068136",
-      "comment_created_at": "2026-08-15T02:27:02Z",
-      "comment_updated_at": "2026-08-16T22:43:19Z",
-      "comment_body_sha256": "6ade59c0f20f95468cd31f31bc00f65e065754679e2e92ee3280a1c58ae0f829",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123935,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4996d4423e7cb825f54a6b72e518c3bc0c96a52b)",
-      "expected_head_sha": "4996d4423e7cb825f54a6b72e518c3bc0c96a52b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T22:44:13.187Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/sidebar-stack-polish",
-        "head_sha": "4996d4423e7cb825f54a6b72e518c3bc0c96a52b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123709:5295331940:2026-08-16T22:43:35Z:clawsweeper_auto_repair",
       "comment_id": "5295331940",
@@ -32384,6 +32351,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:77184:5311440945:2026-08-17T03:30:35Z:re_review",
+      "comment_id": "5311440945",
+      "comment_version_key": "5311440945:2026-08-17T03:30:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/77184#issuecomment-5311440945",
+      "comment_created_at": "2026-08-17T03:30:35Z",
+      "comment_updated_at": "2026-08-17T03:30:35Z",
+      "comment_body_sha256": "8a8c083ad2032a7cbf86399deceee7d21cfcb447f1a6dbf1ec475424ff17303b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 77184,
+      "author": "lonexreb",
+      "author_id": 95570942,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — real-behavior proof (external consumer strict-mode typecheck against built dist + runtime subpath probe) has been in the pr body since 2026-08-14; the prior re-review shard expired without delivering",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T03:31:20.185Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/76759-export-status-types",
+        "head_sha": "835facd59ec8c02f3429d758731762933f405470",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
