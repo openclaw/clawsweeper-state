@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:50:27.300Z",
+  "updated_at": "2026-08-17T03:51:31.700Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115829:5118165151:2026-08-16T23:27:51Z:clawsweeper_auto_repair",
-      "comment_id": "5118165151",
-      "comment_version_key": "5118165151:2026-08-16T23:27:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115829#issuecomment-5118165151",
-      "comment_created_at": "2026-07-29T13:07:46Z",
-      "comment_updated_at": "2026-08-16T23:27:51Z",
-      "comment_body_sha256": "a753c839f7bb47dc9714ea955a62aa43749f439ae6929b935bf2ef959ac9c4b6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115829,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T23:33:41.506Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/plugin-tui-status",
-        "head_sha": "2e6875bd3522d6cfe11f2b0a1c5112e426bfcb55",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116405:5131407354:2026-08-16T23:30:49Z:clawsweeper_auto_repair",
       "comment_id": "5131407354",
@@ -32267,6 +32234,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124953:5311547815:2026-08-17T03:50:49Z:re_review",
+      "comment_id": "5311547815",
+      "comment_version_key": "5311547815:2026-08-17T03:50:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124953#issuecomment-5311547815",
+      "comment_created_at": "2026-08-17T03:50:49Z",
+      "comment_updated_at": "2026-08-17T03:50:49Z",
+      "comment_body_sha256": "ee3d6a111862b508845fb53303c960d9c6b71f42399d496855a9fa345b124dc4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124953,
+      "author": "xialonglee",
+      "author_id": 22994703,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T03:51:29.860Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-104950-recovery-trajectory-interrupted",
+        "head_sha": "2324a79349645999502a7088b185aac7fdbd00e8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
