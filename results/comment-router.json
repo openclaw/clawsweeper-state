@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T09:45:09.835Z",
+  "updated_at": "2026-08-17T09:45:13.364Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:502:5312342565:2026-08-17T05:49:16Z:re_review",
-      "comment_id": "5312342565",
-      "comment_version_key": "5312342565:2026-08-17T05:49:16Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/502#issuecomment-5312342565",
-      "comment_created_at": "2026-08-17T05:49:16Z",
-      "comment_updated_at": "2026-08-17T05:49:16Z",
-      "comment_body_sha256": "9f41358e6e4eb2b0e3138a77dbfe6ebd12f00405009f5f6c041dbdc03cabbc01",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 502,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T05:53:41.782Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/multi-target-certification",
-        "head_sha": "f74ad50bb02d97a3eec46eddd0fd786c53e578e5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124015:5312365208:2026-08-17T05:53:06Z:re_review",
       "comment_id": "5312365208",
@@ -33145,6 +33098,39 @@
         "kind": "pull_request",
         "branch": "fix/problem-g3-openai-media-abort",
         "head_sha": "59c007071242c2e562e423ac16fb83fba4bb25de",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125183:5314020400:2026-08-17T09:44:16Z:clawsweeper_needs_human",
+      "comment_id": "5314020400",
+      "comment_version_key": "5314020400:2026-08-17T09:44:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125183#issuecomment-5314020400",
+      "comment_created_at": "2026-08-17T09:06:39Z",
+      "comment_updated_at": "2026-08-17T09:44:16Z",
+      "comment_body_sha256": "1d0d8eb6a30beb5a72a2f44c8d1011ddf8f8bd7576c1238cdedc421a1204f0a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125183,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing beta users may observe that archived disappears from the RPC and CLI output and that future max-lines truncation is irreversible; exact-head CI remains in progress. (sha=f73c54eafed79cad7794fc4194efe9b8d458549f)",
+      "expected_head_sha": "f73c54eafed79cad7794fc4194efe9b8d458549f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T09:45:13.364Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/compact-archive-bug-file-removal-78833b",
+        "head_sha": "f73c54eafed79cad7794fc4194efe9b8d458549f",
         "cluster_id": null,
         "job_path": null
       }
