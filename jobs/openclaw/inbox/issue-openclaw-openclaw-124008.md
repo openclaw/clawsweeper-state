@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing New Session configured-model catalog bug. Establish a failing regression where prepared chat metadata omits dynamically discovered provider rows but models.list with view=configured includes them. Keep src/gateway/server-methods/chat-metadata-runtime.ts prepared-only: do not add live provider discovery to chat startup. In ui/src/pages/new-session/model-control.ts, reuse the existing exact configured-catalog helper in ui/src/pages/chat/models.ts rather than creating a second cache or catalog policy. Preserve agent scoping, loading/error state, preference restoration, and stale-request ownership. Add focused coverage, validate the shared helper and New Session path, capture sanitized UI proof from an isolated Gateway or mock-Gateway surface, and stop if a config, protocol, or provider-policy decision becomes necessary. Include release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the New Session configured-model catalog bug for https://github.com/openclaw/openclaw/issues/124008. Preserve `chat.metadata` as the prepared-only chat-startup path; do not enable live provider discovery there. Change the New Session picker to obtain selectable models through the existing configured `models.list` UI catalog boundary, without `preparedOnly`, and preserve the picker’s bounded startup recovery, cache ownership, and stale-result behavior. Add a regression that proves the picker requests the configured catalog and renders dynamic Google, OpenAI, and authored Z.AI rows; retain existing metadata startup recovery coverage. Treat https://github.com/openclaw/openclaw/pull/124319 as unmerged source context only, and stop if the repair would require a new Gateway protocol, config option, or product-policy decision.
 
 Likely files:
 
 - ui/src/pages/new-session/model-control.ts
 - ui/src/pages/new-session/model-control.test.ts
 - ui/src/pages/chat/models.ts
-- ui/src/pages/chat/models.test.ts
 
 Validation:
 
 - pnpm test ui/src/pages/new-session/model-control.test.ts
-- pnpm test ui/src/pages/chat/models.test.ts
-- Run the applicable New Session mock-Gateway or isolated Control UI proof with a prepared subset and configured discovered-provider catalog.
+- pnpm test ui/src/lib/chat/chat-metadata-store.test.ts
+- pnpm check:changed -- ui/src/pages/new-session/model-control.ts ui/src/pages/new-session/model-control.test.ts ui/src/pages/chat/models.ts
 
 ## Operator Prompt
 
