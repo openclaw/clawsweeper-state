@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T05:50:47.726Z",
+  "updated_at": "2026-08-17T05:51:40.976Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123556:5311392792:2026-08-17T03:21:33Z:re_review",
-      "comment_id": "5311392792",
-      "comment_version_key": "5311392792:2026-08-17T03:21:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5311392792",
-      "comment_created_at": "2026-08-17T03:21:33Z",
-      "comment_updated_at": "2026-08-17T03:21:33Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123556,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T03:22:20.676Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-concurrency",
-        "head_sha": "f1ec213139f2a1f7b514118953c188db013c788e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116253:5127327353:2026-08-17T03:21:52Z:clawsweeper_needs_human",
       "comment_id": "5127327353",
@@ -31068,6 +31021,39 @@
         "kind": "pull_request",
         "branch": "fix/cli-watchdog-promotion-unreachable-125045",
         "head_sha": "dc671375a77dafe10dd6e9a9183367143be3cc36",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125086:5312351723:2026-08-17T05:50:50Z:clawsweeper_needs_human",
+      "comment_id": "5312351723",
+      "comment_version_key": "5312351723:2026-08-17T05:50:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125086#issuecomment-5312351723",
+      "comment_created_at": "2026-08-17T05:50:50Z",
+      "comment_updated_at": "2026-08-17T05:50:50Z",
+      "comment_body_sha256": "2103174e51e97ffce19eeb9c1a2fdc5ac518a0ce8328f28c8901467ec386f9ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125086,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head checks are still in progress; landing should wait for the normal green gate, although GitHub currently reports the branch as mergeable despite base drift. (sha=446491c69e09ca9dab5b6216dac165e9315bba1d)",
+      "expected_head_sha": "446491c69e09ca9dab5b6216dac165e9315bba1d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T05:51:40.976Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/tui-session-identity-verification-510236",
+        "head_sha": "446491c69e09ca9dab5b6216dac165e9315bba1d",
         "cluster_id": null,
         "job_path": null
       }
