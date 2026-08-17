@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T05:42:00.934Z",
+  "updated_at": "2026-08-17T05:42:51.296Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5311337396:2026-08-17T03:12:10Z:re_review",
-      "comment_id": "5311337396",
-      "comment_version_key": "5311337396:2026-08-17T03:12:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5311337396",
-      "comment_created_at": "2026-08-17T03:12:10Z",
-      "comment_updated_at": "2026-08-17T03:12:10Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T03:12:52.416Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-performance",
-        "head_sha": "a6838683e932d3ffcfee71c092116fa751ddaf59",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123556:5311337532:2026-08-17T03:12:11Z:re_review",
       "comment_id": "5311337532",
@@ -31068,6 +31021,39 @@
         "kind": "pull_request",
         "branch": "fix/interleaved-reasoning-visible-text",
         "head_sha": "62dc3641b7125d70a528f4a93ea52b4c3db2e375",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125081:5312298517:2026-08-17T05:42:00Z:clawsweeper_needs_human",
+      "comment_id": "5312298517",
+      "comment_version_key": "5312298517:2026-08-17T05:42:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125081#issuecomment-5312298517",
+      "comment_created_at": "2026-08-17T05:42:00Z",
+      "comment_updated_at": "2026-08-17T05:42:00Z",
+      "comment_body_sha256": "fbb20fede9799a8eccc122588b3ba7c204a889122c513be500a6e2db9c511a04",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125081,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes focused tests and checks, but contains no redacted after-fix real CLI transcript, terminal capture, log, or artifact showing t... (sha=b58d12e9da5074150c9534e3ef2a01f600a3a6f6)",
+      "expected_head_sha": "b58d12e9da5074150c9534e3ef2a01f600a3a6f6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T05:42:51.296Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/onepassword-op-trust-diagnostics",
+        "head_sha": "b58d12e9da5074150c9534e3ef2a01f600a3a6f6",
         "cluster_id": null,
         "job_path": null
       }
