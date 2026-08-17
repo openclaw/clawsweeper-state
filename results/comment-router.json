@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:30:48.122Z",
+  "updated_at": "2026-08-17T06:30:52.231Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119341:5184658311:2026-08-17T03:51:53Z:clawsweeper_needs_human",
-      "comment_id": "5184658311",
-      "comment_version_key": "5184658311:2026-08-17T03:51:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119341#issuecomment-5184658311",
-      "comment_created_at": "2026-08-04T21:09:33Z",
-      "comment_updated_at": "2026-08-17T03:51:53Z",
-      "comment_body_sha256": "93d2946c5c39f8f81f5642bdb5ddc2d5bb338a247e3c2a53108a0fc65ed72e97",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119341,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Forbid generic fields on QR steps (P1)** - The QR branch still permits initialValue, options, deviceCode, and externalUrl; initialValue is removed only when marked sensitive, while system-agent chat projects the...; Review finding: [P1] Forbid generic fields on QR steps — packages/gateway-protocol/src/schema/wizard.ts:81-101 - [P2] Reject non-decodable IDAT streams — packages/gateway-protocol... (sha=54faf4f4c47f1d899a7ea26eae5f3580c034d32d)",
-      "expected_head_sha": "54faf4f4c47f1d899a7ea26eae5f3580c034d32d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T03:57:11.785Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-contract",
-        "head_sha": "54faf4f4c47f1d899a7ea26eae5f3580c034d32d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119342:5184665833:2026-08-17T03:44:08Z:clawsweeper_auto_repair",
       "comment_id": "5184665833",
@@ -31257,6 +31224,53 @@
         "kind": "pull_request",
         "branch": "jesse/session-performance",
         "head_sha": "342b966a064b703720a0298ebea13a0e6ba78354",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123556:5312633907:2026-08-17T06:30:08Z:re_review",
+      "comment_id": "5312633907",
+      "comment_version_key": "5312633907:2026-08-17T06:30:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5312633907",
+      "comment_created_at": "2026-08-17T06:30:08Z",
+      "comment_updated_at": "2026-08-17T06:30:08Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123556,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T06:30:50.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-concurrency",
+        "head_sha": "0c3c0f0e5e2327677d59feb5134fcc7c7a301474",
         "cluster_id": null,
         "job_path": null
       },
