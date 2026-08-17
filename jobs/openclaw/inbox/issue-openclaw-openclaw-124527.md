@@ -67,23 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the xAI image-understanding failure reported for `grok-4-fast`. First verify the current xAI Responses model contract with an authenticated real image request; stop and escalate if no compatible canonical successor can be established. In the xAI plugin, eliminate any route that still emits a provider-rejected legacy fast identifier, and update Doctor’s model-reference migration so persisted `xai/grok-4-fast`-family references reach the same canonical supported route. Keep Telegram transport code unchanged and add owner-boundary regression coverage that fails before the repair for both fast-mode routing and persisted image-model migration. Update the xAI provider documentation only if the verified compatibility semantics change; do not edit CHANGELOG.md.
+Repair https://github.com/openclaw/openclaw/issues/124527 as one xAI-owned model-policy fix. Fast-mode routing, retired-model recognition, and Doctor migration must not select or retain `grok-4-fast` for an xAI image route. Establish a redacted xAI Responses image request before editing and verify the supported replacement after the repair. Keep Telegram transport unchanged; add no configuration option or downstream fallback. Reuse the xAI Doctor contract for stored configuration, cover the direct image-model and fast-mode paths with behavior-focused regressions that fail before the fix, and reconcile provider docs only if verified behavior changes. Do not edit CHANGELOG.md; place release-note context in the PR body.
 
 Likely files:
 
 - extensions/xai/stream.ts
-- extensions/xai/model-definitions.ts
+- extensions/xai/doctor-contract-api.ts
 - extensions/xai/stream.test.ts
+- extensions/xai/doctor-contract-api.test.ts
 - src/commands/doctor/shared/legacy-config-migrations.runtime.models.refs.ts
-- src/commands/doctor/shared/legacy-config-migrate.test.ts
-- docs/providers/xai.md
+- docs/concepts/model-providers.md
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/xai/stream.test.ts
-- node scripts/run-vitest.mjs src/commands/doctor/shared/legacy-config-migrate.test.ts
-- Run a redacted authenticated xAI OpenAI Responses image request through the repaired media-understanding path and record the successful result.
-- node scripts/check-changed.mjs --dry-run -- extensions/xai/stream.ts extensions/xai/model-definitions.ts src/commands/doctor/shared/legacy-config-migrations.runtime.models.refs.ts extensions/xai/stream.test.ts src/commands/doctor/shared/legacy-config-migrate.test.ts
+- pnpm test extensions/xai/stream.test.ts extensions/xai/doctor-contract-api.test.ts
+- pnpm test src/commands/doctor/shared/legacy-config-migrate.test.ts
+- Run a redacted xAI Responses image request through the production media-understanding boundary before and after the repair, or record the concrete authenticated-proof blocker.
 
 ## Operator Prompt
 
