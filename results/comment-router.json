@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:49:08.559Z",
+  "updated_at": "2026-08-17T20:49:43.114Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119713:5263811305:2026-08-12T07:43:05Z:re_review",
-      "comment_id": "5263811305",
-      "comment_version_key": "5263811305:2026-08-12T07:43:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119713#issuecomment-5263811305",
-      "comment_created_at": "2026-08-12T07:43:05Z",
-      "comment_updated_at": "2026-08-12T07:43:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119713,
-      "author": "rishitamrakar",
-      "author_id": 49427349,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T18:45:15.598Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-fallback-circuit-breaker",
-        "head_sha": "e93b361ff6bba9ae3b0670aec81c0a1fb5aa7cac",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125199:5314608000:2026-08-17T18:42:50Z:clawsweeper_needs_human",
       "comment_id": "5314608000",
@@ -29930,6 +29883,39 @@
         "kind": "pull_request",
         "branch": "fix/external-tailscale-ingress",
         "head_sha": "ae7462fbee1bb09db6c0a16fdf78e41fa6ab521e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125402:5320075781:2026-08-17T20:48:48Z:clawsweeper_needs_human",
+      "comment_id": "5320075781",
+      "comment_version_key": "5320075781:2026-08-17T20:48:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125402#issuecomment-5320075781",
+      "comment_created_at": "2026-08-17T20:48:48Z",
+      "comment_updated_at": "2026-08-17T20:48:48Z",
+      "comment_body_sha256": "936ae4a269a7789f089889ba3368d798a59a5ad95ae404def691a31d20da02a5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125402,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head checks were still queued in the supplied PR state, so merge readiness must be rechecked after CI completes. (sha=b167ad36210082e693b6696e00cee49a530d32bf)",
+      "expected_head_sha": "b167ad36210082e693b6696e00cee49a530d32bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T20:49:43.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "recovery/zalo-caption-bounds-20260817",
+        "head_sha": "b167ad36210082e693b6696e00cee49a530d32bf",
         "cluster_id": null,
         "job_path": null
       }
