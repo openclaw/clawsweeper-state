@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T13:09:54.922Z",
+  "updated_at": "2026-08-17T13:10:00.625Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119319:5184741238:2026-08-17T08:09:05Z:clawsweeper_needs_human",
-      "comment_id": "5184741238",
-      "comment_version_key": "5184741238:2026-08-17T08:09:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119319#issuecomment-5184741238",
-      "comment_created_at": "2026-08-04T21:18:43Z",
-      "comment_updated_at": "2026-08-17T08:09:05Z",
-      "comment_body_sha256": "62e6f13571ccc8056cb3f4543c81a87f19dbc8c7ef437eed5e73a5b93c65509e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119319,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides test-oriented evidence, but its cited test transcript is for an earlier head and no exact-head real configured-runtime result i...; Review finding: [P1] Restore the timeout error-code import — src/node-host/mcp.ts:2-8 - [P1] Preserve requester OAuth scope on legacy fallback — src/agents/agent-bundle-mcp-runtim... (sha=cb4ab7d464c837bd68fc84dc402895e8cc84154d)",
-      "expected_head_sha": "cb4ab7d464c837bd68fc84dc402895e8cc84154d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T08:09:58.658Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "mcp-v2-stateless",
-        "head_sha": "cb4ab7d464c837bd68fc84dc402895e8cc84154d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119319:5187846281:2026-08-05T05:16:34Z:re_review",
       "comment_id": "5187846281",
@@ -33291,6 +33258,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T13:09:54.922Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-17T13:08:50Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-17T13:08:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-17T13:08:50Z",
+      "comment_body_sha256": "5cb41ddd98bb3f2c79b5d9d3a298ef5b44a50790c73978f202ca66538910578f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner tuple (P1)** - The wrapper moves to v3.97.0, but this step still downloads the v3.95.9 binary and digest, while test/scripts/ci-workflow-guards.test.ts:3364 requires the old wr...; Review finding: [P1] Synchronize the TruffleHog scanner tuple — .github/workflows/ci.yml:1066-1070 - [P1] Refresh the Android attestation guard — .github/workflows/android-release... (sha=526fa92418c83aded46426716c7c43364c5cdcfe)",
+      "expected_head_sha": "526fa92418c83aded46426716c7c43364c5cdcfe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T13:10:00.625Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "526fa92418c83aded46426716c7c43364c5cdcfe",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
