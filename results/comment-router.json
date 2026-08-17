@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T02:11:28.076Z",
+  "updated_at": "2026-08-17T02:12:40.661Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124302:5309627009:2026-08-16T20:55:53Z:re_review",
-      "comment_id": "5309627009",
-      "comment_version_key": "5309627009:2026-08-16T20:55:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124302#issuecomment-5309627009",
-      "comment_created_at": "2026-08-16T20:55:53Z",
-      "comment_updated_at": "2026-08-16T20:55:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124302,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-16T21:02:13.297Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/gateway-core-ready-before-sidecars",
-        "head_sha": "f557a227c1f98320df7029458eb874d4bea4c61a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124081:5301126490:2026-08-16T20:55:41Z:clawsweeper_auto_repair",
       "comment_id": "5301126490",
@@ -32524,6 +32477,39 @@
         "kind": "pull_request",
         "branch": "steipete/fix-memory-flush-reachability",
         "head_sha": "8d4ff586ed4a44471bb6cf1876207ab4b14b770e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124833:5309743086:2026-08-17T02:08:57Z:clawsweeper_needs_human",
+      "comment_id": "5309743086",
+      "comment_version_key": "5309743086:2026-08-17T02:08:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124833#issuecomment-5309743086",
+      "comment_created_at": "2026-08-16T21:23:39Z",
+      "comment_updated_at": "2026-08-17T02:08:57Z",
+      "comment_body_sha256": "a703f81a29b3bb7596734d82ac66c341d9fb319214fae3c42741f01a11e65bd7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124833,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head Android, iOS, macOS, and remaining required CI checks were still pending at review time; merge should wait for them to finish green. (sha=65cd239034ac64ba2314cd4a3c228be205121403)",
+      "expected_head_sha": "65cd239034ac64ba2314cd4a3c228be205121403",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T02:12:40.661Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "65cd239034ac64ba2314cd4a3c228be205121403",
         "cluster_id": null,
         "job_path": null
       }
