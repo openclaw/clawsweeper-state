@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T08:43:03.564Z",
+  "updated_at": "2026-08-17T08:43:08.692Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124951:5310704014:2026-08-17T04:55:26Z:clawsweeper_needs_human",
-      "comment_id": "5310704014",
-      "comment_version_key": "5310704014:2026-08-17T04:55:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124951#issuecomment-5310704014",
-      "comment_created_at": "2026-08-17T01:11:46Z",
-      "comment_updated_at": "2026-08-17T04:55:26Z",
-      "comment_body_sha256": "f6b556664ac322e04d5f21ddbe65582fad4756ab8d12d00c8f9153ced77f274d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124951,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the durable session-ID contract from ASCII to NFC Unicode; older binaries and cross-platform filesystems may not share that grammar or filename interpretation. (sha=415e84bb9c5b7c2ac4d54f20346d5c8feaa1aeaf)",
-      "expected_head_sha": "415e84bb9c5b7c2ac4d54f20346d5c8feaa1aeaf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:56:12.546Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/preserve-legacy-session-unicode",
-        "head_sha": "415e84bb9c5b7c2ac4d54f20346d5c8feaa1aeaf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114098:5083385284:2026-08-17T04:44:11Z:clawsweeper_auto_repair",
       "comment_id": "5083385284",
@@ -33245,6 +33212,53 @@
         "kind": "pull_request",
         "branch": "jesse/session-performance",
         "head_sha": "7908f96e338fc8fc0215647a4be7984478d77124",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123556:5313787967:2026-08-17T08:42:17Z:re_review",
+      "comment_id": "5313787967",
+      "comment_version_key": "5313787967:2026-08-17T08:42:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5313787967",
+      "comment_created_at": "2026-08-17T08:42:17Z",
+      "comment_updated_at": "2026-08-17T08:42:17Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123556,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T08:43:06.533Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-concurrency",
+        "head_sha": "840db8f4a46de34ccb6eec20573597c3722d0928",
         "cluster_id": null,
         "job_path": null
       },
