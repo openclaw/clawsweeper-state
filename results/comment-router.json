@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:38:10.347Z",
+  "updated_at": "2026-08-17T06:38:15.906Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124994:5311263861:2026-08-17T04:04:16Z:clawsweeper_needs_human",
-      "comment_id": "5311263861",
-      "comment_version_key": "5311263861:2026-08-17T04:04:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124994#issuecomment-5311263861",
-      "comment_created_at": "2026-08-17T02:58:03Z",
-      "comment_updated_at": "2026-08-17T04:04:16Z",
-      "comment_body_sha256": "f072bf26ac1ca4db67a27bc53831e2d605b2462d7a7547b57f873707400ea31a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124994,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Avoid SQLite bind-variable overflow in the tail metadata query (P1)** - This passes every candidate position to one IN clause. sessions.get accepts arbitrary finite limits and derives a 20× line window, so limit...; Review finding: [P1] Avoid SQLite bind-variable overflow in the tail metadata query — src/config/sessions/session-accessor.sqlite-history-events.ts:207 - [P1] Redact imported tran... (sha=3295073b765182be5a007fdee81ef2eddff2de66)",
-      "expected_head_sha": "3295073b765182be5a007fdee81ef2eddff2de66",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:05:06.827Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/ecstatic-golick-aa32b7",
-        "head_sha": "3295073b765182be5a007fdee81ef2eddff2de66",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112375:5076848606:2026-08-17T04:04:18Z:clawsweeper_needs_human",
       "comment_id": "5076848606",
@@ -31314,6 +31281,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125107:5312689713:2026-08-17T06:37:27Z:clawsweeper_auto_repair",
+      "comment_id": "5312689713",
+      "comment_version_key": "5312689713:2026-08-17T06:37:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125107#issuecomment-5312689713",
+      "comment_created_at": "2026-08-17T06:37:27Z",
+      "comment_updated_at": "2026-08-17T06:37:27Z",
+      "comment_body_sha256": "e13375859b9d8381aaa931613c258c6056ad9f963600e578bfc12531bef4173a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125107,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8eb99e5a7243da71e9e69a390afba29e2f90a3c4)",
+      "expected_head_sha": "8eb99e5a7243da71e9e69a390afba29e2f90a3c4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T06:38:15.906Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/openclaw-persistent-visibility-8edac6",
+        "head_sha": "8eb99e5a7243da71e9e69a390afba29e2f90a3c4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
