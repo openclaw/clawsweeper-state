@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T21:04:43.758Z",
+  "updated_at": "2026-08-17T21:04:48.406Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5257194714:2026-08-11T18:25:52Z:re_review",
-      "comment_id": "5257194714",
-      "comment_version_key": "5257194714:2026-08-11T18:25:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5257194714",
-      "comment_created_at": "2026-08-11T18:25:52Z",
-      "comment_updated_at": "2026-08-11T18:25:52Z",
-      "comment_body_sha256": "8875c5daa1c81193f6ddc266762561292922c0ed8b45bbbb8463a0cabebc1e58",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T18:55:40.985Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5257244850:2026-08-11T18:30:41Z:re_review",
       "comment_id": "5257244850",
@@ -30039,6 +30012,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-17T21:02:02Z:clawsweeper_needs_human",
+      "comment_id": "5290613923",
+      "comment_version_key": "5290613923:2026-08-17T21:02:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5290613923",
+      "comment_created_at": "2026-08-14T07:15:12Z",
+      "comment_updated_at": "2026-08-17T21:02:02Z",
+      "comment_body_sha256": "ec901211ef71543b19a7f802d40dd6539ed6274e9e1c078490d1df9de404ee5e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123535,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch adds 109 net production lines to shared scheduling and image-request lifecycles; exact-head CI should confirm the bounded handoff paths before merge. (sha=84a754004e221174bbc0b80e819cd73c386a34a6)",
+      "expected_head_sha": "84a754004e221174bbc0b80e819cd73c386a34a6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T21:04:48.406Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-performance",
+        "head_sha": "84a754004e221174bbc0b80e819cd73c386a34a6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
