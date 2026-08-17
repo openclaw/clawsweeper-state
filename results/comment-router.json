@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T03:57:11.786Z",
+  "updated_at": "2026-08-17T03:58:39.572Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123709:5295331940:2026-08-16T23:45:01Z:clawsweeper_needs_human",
-      "comment_id": "5295331940",
-      "comment_version_key": "5295331940:2026-08-16T23:45:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123709#issuecomment-5295331940",
-      "comment_created_at": "2026-08-14T15:50:06Z",
-      "comment_updated_at": "2026-08-16T23:45:01Z",
-      "comment_body_sha256": "ed330b8dfe663445bda19fbcddee3ad8d0946df4abc9abc43be0a00ba8b80ed2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123709,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging creates a new opt-in persisted audit companion table with a 30-day retention period and 200,000-row cap; the audit/storage owner must explicitly accept that product and retent... (sha=1f9becd03025fdd6e73efd081e6f3c40e0cf0aee)",
-      "expected_head_sha": "1f9becd03025fdd6e73efd081e6f3c40e0cf0aee",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T23:57:16.674Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-message-delivery",
-        "head_sha": "1f9becd03025fdd6e73efd081e6f3c40e0cf0aee",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124773:5309401516:2026-08-16T23:45:39Z:clawsweeper_auto_repair",
       "comment_id": "5309401516",
@@ -32069,6 +32036,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112375:5311584971:2026-08-17T03:57:57Z:re_review",
+      "comment_id": "5311584971",
+      "comment_version_key": "5311584971:2026-08-17T03:57:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5311584971",
+      "comment_created_at": "2026-08-17T03:57:57Z",
+      "comment_updated_at": "2026-08-17T03:57:57Z",
+      "comment_body_sha256": "d1b87fd8ce0151e5318d801b540f0b37e0c78cecf7dda0299b27a7997cf78a97",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112375,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T03:58:37.628Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bartok9/cron-precheck-gate",
+        "head_sha": "08182bf08262c3596bb9e59103474521b57883e6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
