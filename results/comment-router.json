@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T01:22:45.026Z",
+  "updated_at": "2026-08-17T01:23:56.321Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5237289845:2026-08-10T07:43:42Z:re_review",
-      "comment_id": "5237289845",
-      "comment_version_key": "5237289845:2026-08-10T07:43:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5237289845",
-      "comment_created_at": "2026-08-10T07:43:42Z",
-      "comment_updated_at": "2026-08-10T07:43:42Z",
-      "comment_body_sha256": "311abb7e23091460841d1b56693aac3099f63ee035920bf03962b79f4a7461a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T19:15:11.319Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5241087143:2026-08-10T13:41:12Z:re_review",
       "comment_id": "5241087143",
@@ -33806,6 +33779,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T01:22:45.026Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1170:5297118616:2026-08-17T01:23:14Z:clawsweeper_needs_human",
+      "comment_id": "5297118616",
+      "comment_version_key": "5297118616:2026-08-17T01:23:14Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1170#issuecomment-5297118616",
+      "comment_created_at": "2026-08-14T19:04:20Z",
+      "comment_updated_at": "2026-08-17T01:23:14Z",
+      "comment_body_sha256": "b58e931f8e80edc81e8a51a4618d53a73a9322d6cd867771ccb235b181a9bca6",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1170,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Materialize the verified PR head before attesting it (P1)** - ensurePullRequestReviewHead only fetches the SHA into refs/clawsweeper/review-cache; the review directory remains on the target branch cloned by the...; Review finding: [P1] Materialize the verified PR head before attesting it — src/clawsweeper-review-command-workflow.ts:793-806 - [high] PR-head attestation reads the base worktree... (sha=7ad59546de552dde9785a6cecdc5e624bd9e579e)",
+      "expected_head_sha": "7ad59546de552dde9785a6cecdc5e624bd9e579e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T01:23:56.321Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/structured-checkout-access",
+        "head_sha": "7ad59546de552dde9785a6cecdc5e624bd9e579e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
