@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T04:56:55.729Z",
+  "updated_at": "2026-08-17T04:56:56.269Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123414:5311052580:2026-08-17T02:20:56Z:re_review",
-      "comment_id": "5311052580",
-      "comment_version_key": "5311052580:2026-08-17T02:20:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123414#issuecomment-5311052580",
-      "comment_created_at": "2026-08-17T02:20:56Z",
-      "comment_updated_at": "2026-08-17T02:20:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123414,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T02:21:36.944Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/122950-discord-stall-aware-resume",
-        "head_sha": "e854857669cd06b03c0a3b19144169c09f660044",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123411:5311052477:2026-08-17T02:20:54Z:re_review",
       "comment_id": "5311052477",
@@ -31190,6 +31143,39 @@
         "kind": "pull_request",
         "branch": "automation/native-app-locale-refresh",
         "head_sha": "22963e5c1690091dfa72c1f93d8aba0e97d517d3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124704:5308898765:2026-08-17T04:56:08Z:clawsweeper_needs_human",
+      "comment_id": "5308898765",
+      "comment_version_key": "5308898765:2026-08-17T04:56:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124704#issuecomment-5308898765",
+      "comment_created_at": "2026-08-16T18:04:48Z",
+      "comment_updated_at": "2026-08-17T04:56:08Z",
+      "comment_body_sha256": "4521c48167ebde891230f67a4720b43baa00c3cbce78c3934ab6fd27de9945f7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124704,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging changes display-less WSL from a five-minute URL/tunnel fallback to a signed wslview launch with a 60-second wait; no real display-less WSL trace shows the opener and Control U... (sha=298107e66b2d79cdcdf0713e588539d8f5574788)",
+      "expected_head_sha": "298107e66b2d79cdcdf0713e588539d8f5574788",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T04:56:56.269Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-wsl-browser",
+        "head_sha": "298107e66b2d79cdcdf0713e588539d8f5574788",
         "cluster_id": null,
         "job_path": null
       }
