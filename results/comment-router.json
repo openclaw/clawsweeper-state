@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T05:25:58.510Z",
+  "updated_at": "2026-08-17T05:26:00.159Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124934:5311214078:2026-08-17T02:51:22Z:re_review",
-      "comment_id": "5311214078",
-      "comment_version_key": "5311214078:2026-08-17T02:51:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124934#issuecomment-5311214078",
-      "comment_created_at": "2026-08-17T02:51:22Z",
-      "comment_updated_at": "2026-08-17T02:51:22Z",
-      "comment_body_sha256": "83738d1152c1e8a6689f428a73401cf3eaef893f9e3200a75df1b6b6de265b59",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124934,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T02:58:22.744Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-code-mode-debug",
-        "head_sha": "5b2092c82a04aed54ff7566e31ea30b59a008896",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124934:5310453856:2026-08-17T02:57:36Z:clawsweeper_needs_human",
       "comment_id": "5310453856",
@@ -31149,6 +31102,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T05:25:58.510Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2769:5227223364:2026-08-17T05:25:17Z:clawsweeper_needs_human",
+      "comment_id": "5227223364",
+      "comment_version_key": "5227223364:2026-08-17T05:25:17Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2769#issuecomment-5227223364",
+      "comment_created_at": "2026-08-08T17:15:40Z",
+      "comment_updated_at": "2026-08-17T05:25:17Z",
+      "comment_body_sha256": "43a1fd11d8713dc4ea80c87c51d4a6dfd43840ff31d67a1b4eca9dedf113264a",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2769,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 58-file change writes, repairs, and removes a command in the user’s single Claude Code statusLine slot; this compatibility and ownership contract needs explicit maintainer accepta... (sha=4ec5b3428b655599a497a300ef64f9d2743517f2)",
+      "expected_head_sha": "4ec5b3428b655599a497a300ef64f9d2743517f2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T05:26:00.159Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/claude-statusline-optin-feed",
+        "head_sha": "4ec5b3428b655599a497a300ef64f9d2743517f2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
