@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T22:39:21.008Z",
+  "updated_at": "2026-08-17T22:39:23.105Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123556:5312633907:2026-08-17T06:30:08Z:re_review",
-      "comment_id": "5312633907",
-      "comment_version_key": "5312633907:2026-08-17T06:30:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5312633907",
-      "comment_created_at": "2026-08-17T06:30:08Z",
-      "comment_updated_at": "2026-08-17T06:30:08Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123556,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T19:29:58.605Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123556:5312735254:2026-08-17T06:43:36Z:re_review",
       "comment_id": "5312735254",
@@ -31405,6 +31378,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125199:5314608000:2026-08-17T22:35:43Z:clawsweeper_needs_human",
+      "comment_id": "5314608000",
+      "comment_version_key": "5314608000:2026-08-17T22:35:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125199#issuecomment-5314608000",
+      "comment_created_at": "2026-08-17T10:01:29Z",
+      "comment_updated_at": "2026-08-17T22:35:43Z",
+      "comment_body_sha256": "752f90ea058baa50a73bfe975857e33e73a1c931f6b7bccf64a2e8e29dee5ec4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125199,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A managed identity intentionally fails closed when its protected profile is unavailable; fresh-install and upgrade recovery must be demonstrated so existing operators are not stranded... (sha=95be5176ef8774cfebd09bfae7faa7b91ee97950)",
+      "expected_head_sha": "95be5176ef8774cfebd09bfae7faa7b91ee97950",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T22:39:23.105Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/managed-github-identities",
+        "head_sha": "95be5176ef8774cfebd09bfae7faa7b91ee97950",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
