@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T17:42:18.377Z",
+  "updated_at": "2026-08-17T17:43:57.783Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121796:5316269068:2026-08-17T12:49:25Z:re_review",
-      "comment_id": "5316269068",
-      "comment_version_key": "5316269068:2026-08-17T12:49:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121796#issuecomment-5316269068",
-      "comment_created_at": "2026-08-17T12:49:25Z",
-      "comment_updated_at": "2026-08-17T12:49:25Z",
-      "comment_body_sha256": "a39dc169425d8cfc3256e348acea72141b07ffc9d294e9fff76a628f4b33ce3d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121796,
-      "author": "Grynn",
-      "author_id": 212880,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T13:10:38.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-history-codemode-failures",
-        "head_sha": "425238f7a4762907c614574240160553f1fee154",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121796:5254523292:2026-08-11T14:29:11Z:re_review",
       "comment_id": "5254523292",
@@ -30057,6 +30010,39 @@
       "status": "waiting",
       "processed_at": "2026-08-17T17:42:18.377Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119326:5184023904:2026-08-17T17:36:56Z:clawsweeper_needs_human",
+      "comment_id": "5184023904",
+      "comment_version_key": "5184023904:2026-08-17T17:36:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119326#issuecomment-5184023904",
+      "comment_created_at": "2026-08-04T20:06:23Z",
+      "comment_updated_at": "2026-08-17T17:36:56Z",
+      "comment_body_sha256": "dc17af8e339fd6abfe794b4dda89036fcb1a92bda4c0cc11afafb815143f86da",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119326,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused unit and harness tests exist, but there is no after-fix configured Gateway or QA trace of account-scoped retention; add redacted runtim... (sha=373474f1cbbaac56bd023379de6b778330b10162)",
+      "expected_head_sha": "373474f1cbbaac56bd023379de6b778330b10162",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T17:43:57.783Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/history-limit-account-scope",
+        "head_sha": "373474f1cbbaac56bd023379de6b778330b10162",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
