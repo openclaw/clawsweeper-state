@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T21:55:07.833Z",
+  "updated_at": "2026-08-17T21:55:13.434Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124293:5304740078:2026-08-15T23:30:50Z:re_review",
-      "comment_id": "5304740078",
-      "comment_version_key": "5304740078:2026-08-15T23:30:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124293#issuecomment-5304740078",
-      "comment_created_at": "2026-08-15T23:30:50Z",
-      "comment_updated_at": "2026-08-15T23:30:50Z",
-      "comment_body_sha256": "8e85d7e59cc07b47c590d6a43784d5f08c4624e45e951f01229ab153c862c5b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124293,
-      "author": "Chinmayrawat15",
-      "author_id": 88652081,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T18:56:03.962Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111313:5015058482:2026-08-17T18:48:43Z:clawsweeper_auto_repair",
       "comment_id": "5015058482",
@@ -31337,6 +31310,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:158:5320619719:2026-08-17T21:54:12Z:clawsweeper_needs_human",
+      "comment_id": "5320619719",
+      "comment_version_key": "5320619719:2026-08-17T21:54:12Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/158#issuecomment-5320619719",
+      "comment_created_at": "2026-08-17T21:44:33Z",
+      "comment_updated_at": "2026-08-17T21:54:12Z",
+      "comment_body_sha256": "b0221c87393ad3eef953c873aed6196c2e0bca04f2722d0ced10e0ffe02f0373",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 158,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports automated tests and checks but no redacted after-fix terminal output, logs, or transport trace showing descriptor consumption an...; Review finding: [P1] Restrict descriptor credentials to trusted endpoints — internal/cli/app.go:522-524 - [high] Descriptor token can be routed to an arbitrary endpoint — internal... (sha=6a41db4c2eeb11ada219053c655895d08465a5bd)",
+      "expected_head_sha": "6a41db4c2eeb11ada219053c655895d08465a5bd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T21:55:13.434Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "lily-slack-archive-handoff",
+        "head_sha": "6a41db4c2eeb11ada219053c655895d08465a5bd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
