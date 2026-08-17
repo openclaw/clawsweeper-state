@@ -67,16 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-First capture a failing regression using agents.defaults.models with claude-cli/claude-opus-4-7 { alias: "opus-cli" } and anthropic/claude-opus-4-7 { alias: "opus-api" } without runtime policy. Prove Doctor preserves independently selectable routes: claude-cli remains CLI-backed and anthropic remains unpinned/direct or preserves its own explicit policy. Repair the collision owner in src/commands/doctor/shared/legacy-config-core-normalizers.ts and add boundary coverage in src/commands/doctor/shared/legacy-config-migrate.test.ts. Do not add nested aliases, config options, or runtime fallback paths. Do not edit CHANGELOG.md; put release-note context in the PR body.
+Repair the Anthropic CLI auth/setup migration so coexistence of `claude-cli/&lt;model>` and the same direct `anthropic/&lt;model>` does not delete the CLI alias or assign CLI runtime to the direct entry. Cover both the setup migration and provider config-defaulting path, preserving the legacy compatibility route only for this collision state. Add regression tests that fail on current main and prove each route retains its alias and intended runtime/auth behavior. Do not add a global config option or alter Doctor diagnostics. Put release-note context in the PR body or commit message; do not edit CHANGELOG.md.
 
 Likely files:
 
-- src/commands/doctor/shared/legacy-config-core-normalizers.ts
-- src/commands/doctor/shared/legacy-config-migrate.test.ts
+- extensions/anthropic/cli-migration.ts
+- extensions/anthropic/cli-migration.test.ts
+- extensions/anthropic/config-defaults.ts
+- extensions/anthropic/index.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/commands/doctor/shared/legacy-config-migrate.test.ts src/agents/model-selection.test.ts
+- node scripts/run-vitest.mjs extensions/anthropic/cli-migration.test.ts
+- node scripts/run-vitest.mjs extensions/anthropic/index.test.ts
+- Run a focused provider-auth setup regression that asserts both configured routes survive without runtime crossover.
 
 ## Operator Prompt
 
