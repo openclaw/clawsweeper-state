@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T19:40:18.468Z",
+  "updated_at": "2026-08-17T19:41:21.655Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5139364327:2026-07-31T04:46:06Z:re_review",
-      "comment_id": "5139364327",
-      "comment_version_key": "5139364327:2026-07-31T04:46:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5139364327",
-      "comment_created_at": "2026-07-31T04:46:06Z",
-      "comment_updated_at": "2026-07-31T04:46:06Z",
-      "comment_body_sha256": "da54b00b3f31677e442714b411d7352e89fd05a80dde5421bcdb74f19f0343df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T17:14:16.650Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5287613437:2026-08-13T23:37:50Z:re_review",
       "comment_id": "5287613437",
@@ -30000,6 +29973,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:72:5257587247:2026-08-17T19:35:34Z:clawsweeper_needs_human",
+      "comment_id": "5257587247",
+      "comment_version_key": "5257587247:2026-08-17T19:35:34Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/72#issuecomment-5257587247",
+      "comment_created_at": "2026-08-11T19:03:08Z",
+      "comment_updated_at": "2026-08-17T19:35:34Z",
+      "comment_body_sha256": "7992601a4138fff8755fb3096c9f3cc0d1c58f7c968f5c754f99a301662167a7",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 72,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Vite and Wrangler are development dependencies but drive real builds and Cloudflare deployment commands; CI covers builds and tests, not a live deployment. (sha=43af53cc0b2dac55c63f92edeb5f36d53e9f143b)",
+      "expected_head_sha": "43af53cc0b2dac55c63f92edeb5f36d53e9f143b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T19:41:21.654Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-c853e21f60",
+        "head_sha": "43af53cc0b2dac55c63f92edeb5f36d53e9f143b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
