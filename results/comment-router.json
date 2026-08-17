@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T12:10:47.390Z",
+  "updated_at": "2026-08-17T12:14:53.523Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1372:5310206105:2026-08-17T07:46:30Z:clawsweeper_needs_human",
-      "comment_id": "5310206105",
-      "comment_version_key": "5310206105:2026-08-17T07:46:30Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1372#issuecomment-5310206105",
-      "comment_created_at": "2026-08-16T23:24:19Z",
-      "comment_updated_at": "2026-08-17T07:46:30Z",
-      "comment_body_sha256": "7430d361ec4ed80e92043f90b95e1e50eaf69a62f7d9a6752b33e6535d79c77d",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1372,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The intentional 60-second whole-request boundary means a formerly indefinite lifecycle request can now time out after an ambiguous provider mutation; callers must continue provider-sp... (sha=414a257c6fa859db2edbac12b79cc70b90710284)",
-      "expected_head_sha": "414a257c6fa859db2edbac12b79cc70b90710284",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T07:54:27.691Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/remaining-default-http-timeout",
-        "head_sha": "414a257c6fa859db2edbac12b79cc70b90710284",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103623:4935169389:2026-08-17T07:53:22Z:clawsweeper_auto_repair",
       "comment_id": "4935169389",
@@ -32908,6 +32875,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123979:5315882885:2026-08-17T12:14:12Z:re_review",
+      "comment_id": "5315882885",
+      "comment_version_key": "5315882885:2026-08-17T12:14:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123979#issuecomment-5315882885",
+      "comment_created_at": "2026-08-17T12:14:12Z",
+      "comment_updated_at": "2026-08-17T12:14:12Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123979,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T12:14:51.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/tsdown-heap-host-scaled",
+        "head_sha": "7e64ad61f702ab2fe8bde8451a0206d4ffb4b063",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
