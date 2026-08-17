@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T02:49:43.644Z",
+  "updated_at": "2026-08-17T02:50:12.145Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114662:5094831852:2026-08-16T21:31:52Z:clawsweeper_needs_human",
-      "comment_id": "5094831852",
-      "comment_version_key": "5094831852:2026-08-16T21:31:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114662#issuecomment-5094831852",
-      "comment_created_at": "2026-07-27T17:51:01Z",
-      "comment_updated_at": "2026-08-16T21:31:52Z",
-      "comment_body_sha256": "4ae424cb04913d355c6454ae8b6145a7808aaaf3f8690412f3d3cce6610de880",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114662,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides focused mocked-handler tests, but no redacted after-fix fallback run with persisted trajectory output; add that proof and redac... (sha=19b669d690ab3a62e6f0730821f1ec3cdf69f614)",
-      "expected_head_sha": "19b669d690ab3a62e6f0730821f1ec3cdf69f614",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T21:38:58.192Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-114602",
-        "head_sha": "a8b399117d46e21a94967d5cc40255b05cfe6744",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118309:5160996295:2026-08-15T17:16:57Z:clawsweeper_auto_repair",
       "comment_id": "5160996295",
@@ -32497,6 +32464,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123709:5311198362:2026-08-17T02:49:24Z:re_review",
+      "comment_id": "5311198362",
+      "comment_version_key": "5311198362:2026-08-17T02:49:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123709#issuecomment-5311198362",
+      "comment_created_at": "2026-08-17T02:49:24Z",
+      "comment_updated_at": "2026-08-17T02:49:24Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123709,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T02:50:09.922Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-message-delivery",
+        "head_sha": "d599f8faf0c494e8f453664cc736f33af9089e54",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
