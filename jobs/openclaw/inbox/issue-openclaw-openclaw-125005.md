@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the hidden-tab Control UI repaint reported at https://github.com/openclaw/openclaw/issues/125005. Preserve Gateway event processing and canonical chat/agent state, but defer nonessential presentation invalidations while document.visibilityState is hidden and reconcile once when the document becomes visible. Start from ui/src/pages/chat/chat-state-render.ts and its callers in ui/src/pages/chat/chat-state-events.ts; use ui/src/lib/workboard/live-refresh.ts only as an invariant reference. Add a regression test that fails before the fix for hidden-to-visible state, obtain real Control UI browser profiling after the fix, do not add configuration, and put release-note context in the PR body rather than CHANGELOG.md.
+Repair the hidden-tab Control UI repaint bug from https://github.com/openclaw/openclaw/issues/125005. Keep Gateway event ingestion and canonical chat/terminal-state mutation active, but suppress chat render scheduling and related paint work while document.visibilityState is hidden; on visibility restoration, reconcile accumulated state with one render. Do not add a config option, globally throttle foreground streaming, or drop terminal events. Inspect and reuse the existing visibility-aware Control UI lifecycle patterns. Add a regression that proves hidden deltas do not queue frames/repaints and that visibility restoration renders the accumulated stream. Use the Control UI E2E workflow for browser proof where practical, then capture a sanitized Firefox before/after or equivalent diagnostics under an active Gateway event stream. Do not edit CHANGELOG.md; put user-visible performance context in the PR body.
 
 Likely files:
 
@@ -75,12 +75,13 @@ Likely files:
 - ui/src/pages/chat/chat-state-events.ts
 - ui/src/pages/chat/chat-pane-lifecycle.ts
 - ui/src/pages/chat/chat-state.test.ts
+- ui/src/pages/chat/chat-pane-lifecycle.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs ui/src/pages/chat/chat-state.test.ts
-- pnpm ui:build
-- Real Control UI browser proof that a hidden Firefox tab no longer repaints continuously while Gateway chat or agent events flow
+- node scripts/run-vitest.mjs ui/src/pages/chat/chat-pane-lifecycle.test.ts
+- Focused mocked-Control-UI E2E with Gateway chat deltas, plus sanitized after-fix Firefox hidden-tab performance evidence when available
 
 ## Operator Prompt
 
