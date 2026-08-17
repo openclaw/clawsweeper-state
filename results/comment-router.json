@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T08:30:56.771Z",
+  "updated_at": "2026-08-17T08:31:59.673Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5248162780:2026-08-11T01:59:43Z:re_review",
-      "comment_id": "5248162780",
-      "comment_version_key": "5248162780:2026-08-11T01:59:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5248162780",
-      "comment_created_at": "2026-08-11T01:59:43Z",
-      "comment_updated_at": "2026-08-11T01:59:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:51:23.148Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118169:5248217038:2026-08-11T02:09:24Z:re_review",
       "comment_id": "5248217038",
@@ -32932,6 +32905,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/carapace:73:5313686353:2026-08-17T08:31:16Z:clawsweeper_needs_human",
+      "comment_id": "5313686353",
+      "comment_version_key": "5313686353:2026-08-17T08:31:16Z",
+      "comment_url": "https://github.com/openclaw/carapace/pull/73#issuecomment-5313686353",
+      "comment_created_at": "2026-08-17T08:31:16Z",
+      "comment_updated_at": "2026-08-17T08:31:16Z",
+      "comment_body_sha256": "7fdeac055e4b81504987ba100b273039fceb59b2ca9030e8826e395db6da3442",
+      "repo": "openclaw/carapace",
+      "issue_number": 73,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The update changes the CodeQL bundle used by repository security automation; successful PR runs are positive, but maintainers should accept any resulting scan-behavior change. (sha=93c39b4aa7609b78fd79d9f6988183461d3da1d6)",
+      "expected_head_sha": "93c39b4aa7609b78fd79d9f6988183461d3da1d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T08:31:59.673Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-a10aefb1c3",
+        "head_sha": "93c39b4aa7609b78fd79d9f6988183461d3da1d6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
