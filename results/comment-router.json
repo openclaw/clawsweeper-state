@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:12:16.091Z",
+  "updated_at": "2026-08-17T20:12:52.598Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112945:5247414393:2026-08-10T23:59:39Z:re_review",
-      "comment_id": "5247414393",
-      "comment_version_key": "5247414393:2026-08-10T23:59:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112945#issuecomment-5247414393",
-      "comment_created_at": "2026-08-10T23:59:39Z",
-      "comment_updated_at": "2026-08-10T23:59:39Z",
-      "comment_body_sha256": "aebb0fecc410b1baaff01e7f519e73d770d7ffff1e56e35d2b2b9256c069d0f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112945,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T18:11:49.222Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112945:5247487786:2026-08-11T00:10:17Z:re_review",
       "comment_id": "5247487786",
@@ -29557,6 +29530,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123848:5298386221:2026-08-17T20:12:11Z:clawsweeper_needs_human",
+      "comment_id": "5298386221",
+      "comment_version_key": "5298386221:2026-08-17T20:12:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123848#issuecomment-5298386221",
+      "comment_created_at": "2026-08-14T21:33:47Z",
+      "comment_updated_at": "2026-08-17T20:12:11Z",
+      "comment_body_sha256": "2ad64e961f6d341aef778f7054594f1165d9bcc8cb5a81d1a16e4c42598d14e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123848,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Set the redirect limit to zero before accepting delivery (P1)** - The guarded call does not pass maxRedirects, so it uses the guard's default of three redirects. A receiver can redirect to a public endpoint that...; Review finding: [P1] Set the redirect limit to zero before accepting delivery — extensions/beam/src/mirror.ts:293-307 - [medium] Redirected uploads remain enabled — extensions/bea... (sha=6e2a97bfc0e685d0ff4d4816001d36ccc1846b32)",
+      "expected_head_sha": "6e2a97bfc0e685d0ff4d4816001d36ccc1846b32",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T20:12:52.598Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ptp-oc-info-3",
+        "head_sha": "6e2a97bfc0e685d0ff4d4816001d36ccc1846b32",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
