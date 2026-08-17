@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:06:39.126Z",
+  "updated_at": "2026-08-17T06:07:19.447Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119195:5311441025:2026-08-17T03:30:36Z:re_review",
-      "comment_id": "5311441025",
-      "comment_version_key": "5311441025:2026-08-17T03:30:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119195#issuecomment-5311441025",
-      "comment_created_at": "2026-08-17T03:30:36Z",
-      "comment_updated_at": "2026-08-17T03:30:36Z",
-      "comment_body_sha256": "3d3281df91faddc5e1d36423e25e9f5e2191d261638c8ea78983acd418233052",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119195,
-      "author": "mjzcng",
-      "author_id": 6001731,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T03:31:25.693Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/cron-cross-tick-bounded-dispatcher",
-        "head_sha": "5b5027b6c9b762c822c1cbe4ada7b008d892f97b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123556:5311441619:2026-08-17T03:30:42Z:re_review",
       "comment_id": "5311441619",
@@ -31105,6 +31058,39 @@
         "kind": "pull_request",
         "branch": "fix/startup-status-navigation",
         "head_sha": "4350c21b34619d511f48402d8de28428cd05261b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123482:5289771597:2026-08-17T06:06:00Z:clawsweeper_needs_human",
+      "comment_id": "5289771597",
+      "comment_version_key": "5289771597:2026-08-17T06:06:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5289771597",
+      "comment_created_at": "2026-08-14T05:16:37Z",
+      "comment_updated_at": "2026-08-17T06:06:00Z",
+      "comment_body_sha256": "154e2eb2e4e6f5bb61e7f8a8c97a81ed8f7cec0660be81ca6ee905a6124ec315",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123482,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The persistent process-wide worker participates in Gateway shutdown and agent deletion; an unobserved lifecycle race could delay those availability-critical operations. (sha=babee6fb87300625261ed94c5acfa3db79ddc239)",
+      "expected_head_sha": "babee6fb87300625261ed94c5acfa3db79ddc239",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T06:07:19.447Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-performance",
+        "head_sha": "babee6fb87300625261ed94c5acfa3db79ddc239",
         "cluster_id": null,
         "job_path": null
       }
