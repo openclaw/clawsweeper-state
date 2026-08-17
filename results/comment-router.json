@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T10:52:28.044Z",
+  "updated_at": "2026-08-17T10:52:58.206Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5312826419:2026-08-17T06:55:19Z:re_review",
-      "comment_id": "5312826419",
-      "comment_version_key": "5312826419:2026-08-17T06:55:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5312826419",
-      "comment_created_at": "2026-08-17T06:55:19Z",
-      "comment_updated_at": "2026-08-17T06:55:19Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T06:55:56.373Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-performance",
-        "head_sha": "e2ffd418492567c6031823828ae137ca8717c3d0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123556:5312826416:2026-08-17T06:55:19Z:re_review",
       "comment_id": "5312826416",
@@ -32601,6 +32554,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T10:52:28.044Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125193:5314478267:2026-08-17T10:52:14Z:clawsweeper_needs_human",
+      "comment_id": "5314478267",
+      "comment_version_key": "5314478267:2026-08-17T10:52:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125193#issuecomment-5314478267",
+      "comment_created_at": "2026-08-17T09:49:13Z",
+      "comment_updated_at": "2026-08-17T10:52:14Z",
+      "comment_body_sha256": "0143f8eeb5d01e5a5bf5645c82ee579ac95208b756fc9faf81d67524a8dfb9a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125193,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The available proof is a local Access-style WSS edge; no redacted run against an actual Cloudflare Access Service Auth policy demonstrates all join, node, and worker legs. (sha=74eec1f23f9965ffa81f4b970acb005dbf66719c)",
+      "expected_head_sha": "74eec1f23f9965ffa81f4b970acb005dbf66719c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T10:52:58.206Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/node-access-service-token",
+        "head_sha": "74eec1f23f9965ffa81f4b970acb005dbf66719c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
