@@ -67,21 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the xAI legacy-fast image-understanding path for this issue. First establish a redacted failing xAI Responses image request when credentials are available. Trace every legacy fast route, including configured `agents.defaults.imageModel` primary/fallback refs and xAI fast-mode stream rewriting; migrate retired persisted refs through the canonical doctor model-ref path and route runtime fast output only to a currently supported xAI vision model. Preserve deliberate current-model behavior, avoid Telegram-specific workarounds and new configuration, add regression coverage that fails before the fix, update affected xAI compatibility docs, and put release-note context in the PR body without editing CHANGELOG.md.
+Repair the retired xAI fast-model path as one coherent change: remove or replace the producer mapping that emits `grok-4-fast`, and extend canonical doctor model-reference migration so direct stale refs, including `agents.defaults.imageModel` and model-map keys, become a verified current image-capable xAI model. Do not add Telegram-specific logic, a runtime fallback, or a new config option. Update the existing fast-mode and migration regressions so they fail before the repair, and use an authorized redacted xAI Responses image request to prove the selected replacement. Put release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
 - extensions/xai/stream.ts
 - extensions/xai/stream.test.ts
+- extensions/xai/model-definitions.ts
 - src/commands/doctor/shared/legacy-config-migrations.runtime.models.refs.ts
 - src/commands/doctor/shared/legacy-config-migrate.test.ts
 - docs/providers/xai.md
 
 Validation:
 
-- pnpm test src/commands/doctor/shared/legacy-config-migrate.test.ts
 - pnpm test extensions/xai/stream.test.ts
-- Run a redacted live xAI Responses image request through the repaired configured-image path when an approved xAI credential is available.
+- pnpm test src/commands/doctor/shared/legacy-config-migrate.test.ts
+- Authorized redacted xAI Responses image request using the migrated model.
 
 ## Operator Prompt
 
