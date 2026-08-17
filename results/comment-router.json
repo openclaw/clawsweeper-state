@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T06:38:02.255Z",
+  "updated_at": "2026-08-17T06:38:10.347Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124997:5311283989:2026-08-17T04:03:56Z:clawsweeper_auto_repair",
-      "comment_id": "5311283989",
-      "comment_version_key": "5311283989:2026-08-17T04:03:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124997#issuecomment-5311283989",
-      "comment_created_at": "2026-08-17T03:01:57Z",
-      "comment_updated_at": "2026-08-17T04:03:56Z",
-      "comment_body_sha256": "8bd910d0cae243c2551fed97c14ae2b521ce81326ead7ed49688c8e91eebf1b5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124997,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1663ea5cf098c357743097c3638d777e7fd18e85)",
-      "expected_head_sha": "1663ea5cf098c357743097c3638d777e7fd18e85",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:04:56.894Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/marker-display-projection",
-        "head_sha": "1663ea5cf098c357743097c3638d777e7fd18e85",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124994:5311263861:2026-08-17T04:04:16Z:clawsweeper_needs_human",
       "comment_id": "5311263861",
@@ -31300,6 +31267,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124015:5312689592:2026-08-17T06:37:26Z:re_review",
+      "comment_id": "5312689592",
+      "comment_version_key": "5312689592:2026-08-17T06:37:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5312689592",
+      "comment_created_at": "2026-08-17T06:37:26Z",
+      "comment_updated_at": "2026-08-17T06:37:26Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124015,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T06:38:08.383Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/signal-port-collision",
+        "head_sha": "75d677dad1ac7b19090165e97df65eea6e3e75c4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
