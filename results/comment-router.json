@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T11:13:38.206Z",
+  "updated_at": "2026-08-17T11:13:48.885Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1372:5310206105:2026-08-17T07:09:52Z:clawsweeper_needs_human",
-      "comment_id": "5310206105",
-      "comment_version_key": "5310206105:2026-08-17T07:09:52Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1372#issuecomment-5310206105",
-      "comment_created_at": "2026-08-16T23:24:19Z",
-      "comment_updated_at": "2026-08-17T07:09:52Z",
-      "comment_body_sha256": "00e2c50c640769967ed196990ac8fdc6caba5c79458061243ddd457262718555",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1372,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The intentional 60-second whole-request bound can turn a previously indefinite lifecycle wait into a client-side timeout after an ambiguous provider mutation; existing provider reconc... (sha=6d4eb392dee539f3b806532470f7195f70d43703)",
-      "expected_head_sha": "6d4eb392dee539f3b806532470f7195f70d43703",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T07:10:49.703Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/remaining-default-http-timeout",
-        "head_sha": "6d4eb392dee539f3b806532470f7195f70d43703",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1349:5302146960:2026-08-17T07:12:30Z:clawsweeper_needs_human",
       "comment_id": "5302146960",
@@ -32671,6 +32638,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123976:5315289608:2026-08-17T11:13:03Z:re_review",
+      "comment_id": "5315289608",
+      "comment_version_key": "5315289608:2026-08-17T11:13:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123976#issuecomment-5315289608",
+      "comment_created_at": "2026-08-17T11:13:03Z",
+      "comment_updated_at": "2026-08-17T11:13:03Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123976,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T11:13:46.774Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/workspace-quiescence-thaw",
+        "head_sha": "887ae45010ff8e77de388229afb17eee67f276f9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
