@@ -3,23 +3,93 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Review publish complete",
-  "detail": "Merged 136 review artifacts for run 32026246196. Captured 47 shard metrics; 3 shards reported non-success review status. Folder reconciliation moved tracked files to match current GitHub open/closed state.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32026246196",
-  "planned_count": 141,
-  "planned_capacity": 141,
-  "planned_shards": 47,
-  "active_codex": 0,
-  "due_backlog": 3736,
-  "oldest_unreviewed_at": "2026-08-17T11:42:25Z",
-  "capacity_reason": "saturated: due backlog filled planned capacity",
+  "state": "Apply comments synced",
+  "detail": "Comment-only apply checkpoint 1 finished. Synced durable review comments: 5. Result records: 7. Item numbers: 115450,125261,124125,122805,125224,121198,125223,123071,121052,122594,122348,121764,122353,120968,120443,122404,124555,122591,122598,122460,116964,125243,120956,119707,121513,125232,125225,124559,124596,125229,101961,119825,121572,122436,125230,125222,125227,125228,121199,103794. Next cursor: 115450.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32026650598",
+  "planned_count": null,
+  "planned_capacity": null,
+  "planned_shards": null,
+  "active_codex": null,
+  "due_backlog": null,
+  "oldest_unreviewed_at": null,
+  "capacity_reason": null,
   "inherited_label_cleanups": null,
   "self_heal_conflict_repairs": null,
   "failed_review_retries": null,
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": null,
+  "apply_health": {
+    "schema_version": 1,
+    "generated_at": "2026-08-17T12:21:58.544Z",
+    "target_repo": "openclaw/openclaw",
+    "mode": "comment_sync",
+    "status": "ok",
+    "summary": "1 examined; 7/40 action records; 0 closed, 5 comments synced, 2 skipped; cursor at #115450.",
+    "examined": 1,
+    "action_records": 7,
+    "processed": 7,
+    "processed_limit": 40,
+    "close_limit": 40,
+    "closed": 0,
+    "comment_synced": 5,
+    "skipped": 2,
+    "skip_reasons": {
+      "skipped_runtime_budget": 2
+    },
+    "lanes": {
+      "closure": {
+        "processed": 0,
+        "closed": 0,
+        "comment_synced": 0,
+        "skipped": 0,
+        "skip_reasons": {}
+      },
+      "comment_sync": {
+        "processed": 7,
+        "closed": 0,
+        "comment_synced": 5,
+        "skipped": 2,
+        "skip_reasons": {
+          "skipped_runtime_budget": 2
+        }
+      }
+    },
+    "next_actions": [
+      {
+        "reason": "skipped_runtime_budget",
+        "count": 2,
+        "bucket": "run_budget",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Runtime budget",
+        "summary": "The apply lane stopped because it reached its bounded runtime.",
+        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
+      }
+    ],
+    "next_action_buckets": {
+      "run_budget": 2
+    },
+    "cycle": {
+      "basis": "not_close_cursor",
+      "apply_ready_count": null,
+      "candidate_counts": null,
+      "window_size": 1,
+      "estimated_full_cycle_windows": null,
+      "estimated_full_cycle_minutes": null,
+      "scheduled_interval_minutes": null,
+      "label": "Cycle estimate is only reported for scheduled close cursor windows."
+    },
+    "attention_reasons": [],
+    "cursor_required": true,
+    "cursor": {
+      "path": "results/comment-sync-cursors/openclaw-openclaw.json",
+      "next_after_number": 115450,
+      "next_after_apply_checked_at": null,
+      "updated_at": "2026-08-17T12:21:09.852Z"
+    },
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32026650598"
+  },
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-08-17T12:10:03.535Z",
@@ -139,5 +209,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32025091387"
   },
-  "updated_at": "2026-08-17T12:17:21.924Z"
+  "updated_at": "2026-08-17T12:21:59.211Z"
 }
