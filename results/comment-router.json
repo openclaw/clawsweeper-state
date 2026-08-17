@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:46:08.963Z",
+  "updated_at": "2026-08-17T20:46:15.878Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125288:5317421665:2026-08-17T18:36:39Z:clawsweeper_needs_human",
-      "comment_id": "5317421665",
-      "comment_version_key": "5317421665:2026-08-17T18:36:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125288#issuecomment-5317421665",
-      "comment_created_at": "2026-08-17T15:49:10Z",
-      "comment_updated_at": "2026-08-17T18:36:39Z",
-      "comment_body_sha256": "0494363e06e7463cc2fee7cecf1447614e91cb4caf3b906dd12c4fe139123fcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125288,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, which independently changed node-worker lifecycle code and tests; rebase and exact-head validation are needed before merge. (sha=581083416738bf80b55ee335ebd38a9b3c395a58)",
-      "expected_head_sha": "581083416738bf80b55ee335ebd38a9b3c395a58",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-17T18:43:26.099Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125338:5317504959:2026-08-17T18:37:17Z:clawsweeper_auto_repair",
       "comment_id": "5317504959",
@@ -29864,6 +29837,53 @@
         "kind": "pull_request",
         "branch": "jesse/session-performance",
         "head_sha": "036444ca4e016f87f26a0a5c256e21d183e3267a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123535:5320042749:2026-08-17T20:45:25Z:re_review",
+      "comment_id": "5320042749",
+      "comment_version_key": "5320042749:2026-08-17T20:45:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5320042749",
+      "comment_created_at": "2026-08-17T20:45:25Z",
+      "comment_updated_at": "2026-08-17T20:45:25Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123535,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T20:46:13.611Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-performance",
+        "head_sha": "84a754004e221174bbc0b80e819cd73c386a34a6",
         "cluster_id": null,
         "job_path": null
       },
