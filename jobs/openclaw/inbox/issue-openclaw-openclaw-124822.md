@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Plugin SDK direct-completion path for multi-agent configurations. Preserve the already-authorized agent identity when model discovery derives its workspace: extend the shared workspace resolver to accept the resolved agent id and pass options.agentId from both synchronous and asynchronous model resolver entry points. Add a regression that uses multiple configured agents without a legacy default and a selected agent, fails before the repair at default-agent resolution, and proves discovery uses that selected agent’s workspace after the repair. Keep authorization, model-selection policy, provider fallback behavior, and public configuration unchanged. Include user-visible release-note context in the PR body or commit message; do not edit CHANGELOG.md.
+Repair the existing plugin runtime.llm.complete multi-agent failure without adding configuration or changing the public completion API. Preserve the selected agent through shared model workspace resolution: update the resolver contract and both synchronous and asynchronous model-resolution call sites that already receive agentId, while retaining existing no-agent default-selection behavior. Add a regression that fails on current main with two configured agents and an explicit agentId, covering the real shared model-resolution boundary. Do not add workspaceDir to the plugin API or introduce a fallback. Include release-note context in the PR body, but do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/agents/model-discovery-context.ts
 - src/agents/embedded-agent-runner/model.ts
 - src/agents/embedded-agent-runner/model.test.ts
+- src/plugins/runtime/runtime-llm.runtime.test.ts
 
 Validation:
 
-- pnpm test src/agents/embedded-agent-runner/model.test.ts
-- pnpm test src/plugins/runtime/runtime-llm.runtime.test.ts
-- pnpm test src/agents/simple-completion-runtime.test.ts
+- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/model.test.ts
+- node scripts/run-vitest.mjs src/plugins/runtime/runtime-llm.runtime.test.ts
+- node scripts/check-changed.mjs --dry-run -- src/agents/model-discovery-context.ts src/agents/embedded-agent-runner/model.ts src/agents/embedded-agent-runner/model.test.ts
 
 ## Operator Prompt
 
