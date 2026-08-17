@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T23:33:28.962Z",
+  "updated_at": "2026-08-17T23:33:35.276Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125384:5319881717:2026-08-17T20:29:12Z:re_review",
-      "comment_id": "5319881717",
-      "comment_version_key": "5319881717:2026-08-17T20:29:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125384#issuecomment-5319881717",
-      "comment_created_at": "2026-08-17T20:29:12Z",
-      "comment_updated_at": "2026-08-17T20:29:12Z",
-      "comment_body_sha256": "22cf3a276a219de085a001e27f041373dd5889febe351def017ab370cf17118d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125384,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T20:32:01.791Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/delete-cloud-ssh-carrier",
-        "head_sha": "4ff3e9cad4a36fda512cde7ba748490308072ba6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125199:5314608000:2026-08-17T20:29:41Z:clawsweeper_auto_repair",
       "comment_id": "5314608000",
@@ -31472,6 +31425,39 @@
         "kind": "pull_request",
         "branch": "fix/macos-onboarding-codex-activation",
         "head_sha": "381ef4d01ac7e6d0e8abde955e3f493c1b2d5738",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125429:5321149051:2026-08-17T23:32:26Z:clawsweeper_needs_human",
+      "comment_id": "5321149051",
+      "comment_version_key": "5321149051:2026-08-17T23:32:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125429#issuecomment-5321149051",
+      "comment_created_at": "2026-08-17T22:49:26Z",
+      "comment_updated_at": "2026-08-17T23:32:26Z",
+      "comment_body_sha256": "30664636ea60de6628390ec37b625b69a7e5ffda45cb40e8660eaac42f850a67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125429,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 74 net lines to preserve safe legacy and agentless recovery; the added owner-boundary logic is justified, but it remains compatibility-sensitive. (sha=d6168db562d79cd6fecf703aeb9f471a0037af22)",
+      "expected_head_sha": "d6168db562d79cd6fecf703aeb9f471a0037af22",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T23:33:35.276Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workboard-lifecycle-configured-agents",
+        "head_sha": "d6168db562d79cd6fecf703aeb9f471a0037af22",
         "cluster_id": null,
         "job_path": null
       }
