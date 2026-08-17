@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:28:59.263Z",
+  "updated_at": "2026-08-17T20:29:58.961Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124548:5307610446:2026-08-16T13:13:33Z:re_review",
-      "comment_id": "5307610446",
-      "comment_version_key": "5307610446:2026-08-16T13:13:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124548#issuecomment-5307610446",
-      "comment_created_at": "2026-08-16T13:13:33Z",
-      "comment_updated_at": "2026-08-16T13:13:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124548,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T18:26:59.761Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124548:5307723308:2026-08-16T13:41:31Z:re_review",
       "comment_id": "5307723308",
@@ -29903,6 +29876,39 @@
       "status": "skipped",
       "processed_at": "2026-08-17T20:28:59.263Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125385:5319881429:2026-08-17T20:29:10Z:clawsweeper_needs_human",
+      "comment_id": "5319881429",
+      "comment_version_key": "5319881429:2026-08-17T20:29:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125385#issuecomment-5319881429",
+      "comment_created_at": "2026-08-17T20:29:10Z",
+      "comment_updated_at": "2026-08-17T20:29:10Z",
+      "comment_body_sha256": "4501bb48bc4974ed6685b8365284cfe12f1a4eff388769c1f41e08dbef66019c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125385,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Lifecycle settlement removes Slack’s five-minute fail-safe: if an unadmitted reply lifecycle never closes, its claim stays refreshed until lifecycle recovery, so exact-head validation... (sha=7297fe44f152f7d08ddc0fe3e02beb3117157eb4)",
+      "expected_head_sha": "7297fe44f152f7d08ddc0fe3e02beb3117157eb4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T20:29:58.961Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/fix-slack-deferred-ingress-2",
+        "head_sha": "7297fe44f152f7d08ddc0fe3e02beb3117157eb4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
