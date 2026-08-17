@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T11:57:05.556Z",
+  "updated_at": "2026-08-17T11:57:37.652Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125122:5312768485:2026-08-17T07:48:16Z:clawsweeper_needs_human",
-      "comment_id": "5312768485",
-      "comment_version_key": "5312768485:2026-08-17T07:48:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125122#issuecomment-5312768485",
-      "comment_created_at": "2026-08-17T06:47:50Z",
-      "comment_updated_at": "2026-08-17T07:48:16Z",
-      "comment_body_sha256": "cb5edbffc3d928df0b05235d45bf656e2e0a8d8e903ea3e01533ca4c924bfea1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125122,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +71 lines for a bug fix; the added shared validation is warranted by the three artifact representations, but exact-head QA validation should confirm generated u... (sha=1f1bd3037b5ad824b6edef6447055a5391191e81)",
-      "expected_head_sha": "1f1bd3037b5ad824b6edef6447055a5391191e81",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T07:48:59.560Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-suite-summary-accounting",
-        "head_sha": "1f1bd3037b5ad824b6edef6447055a5391191e81",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125150:5313285426:2026-08-17T07:48:39Z:clawsweeper_needs_human",
       "comment_id": "5313285426",
@@ -32866,6 +32833,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124025:5315710386:2026-08-17T11:56:59Z:re_review",
+      "comment_id": "5315710386",
+      "comment_version_key": "5315710386:2026-08-17T11:56:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5315710386",
+      "comment_created_at": "2026-08-17T11:56:59Z",
+      "comment_updated_at": "2026-08-17T11:56:59Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124025,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T11:57:35.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-stale-tool-eligibility",
+        "head_sha": "b4b5f005c2a4a3235c5c81cd8d898d4aa5b788e4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
