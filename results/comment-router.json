@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T07:37:46.366Z",
+  "updated_at": "2026-08-17T07:38:20.817Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5300410472:2026-08-15T03:55:36Z:re_review",
-      "comment_id": "5300410472",
-      "comment_version_key": "5300410472:2026-08-15T03:55:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5300410472",
-      "comment_created_at": "2026-08-15T03:55:36Z",
-      "comment_updated_at": "2026-08-15T03:55:36Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T04:30:15.196Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5300452585:2026-08-15T04:07:28Z:re_review",
       "comment_id": "5300452585",
@@ -32249,6 +32222,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125117:5312744281:2026-08-17T07:37:35Z:clawsweeper_needs_human",
+      "comment_id": "5312744281",
+      "comment_version_key": "5312744281:2026-08-17T07:37:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125117#issuecomment-5312744281",
+      "comment_created_at": "2026-08-17T06:44:48Z",
+      "comment_updated_at": "2026-08-17T07:37:35Z",
+      "comment_body_sha256": "3f799ab7ab249a9324b9f2611d72b7a74048596b5f3a700e048e7e1841a4b88c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125117,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 22 net lines for a bug fix; the explicit outcome split is justified by preserving silent absence while surfacing other unusable manifests, but it exceeds the... (sha=e9521c406ccba627ac4cdeae05e16b271d119087)",
+      "expected_head_sha": "e9521c406ccba627ac4cdeae05e16b271d119087",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T07:38:20.817Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/manifest-metadata-scan-diagnostics-7f4c2a",
+        "head_sha": "e9521c406ccba627ac4cdeae05e16b271d119087",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
