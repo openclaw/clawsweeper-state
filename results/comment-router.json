@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-17T20:45:33.320Z",
+  "updated_at": "2026-08-17T20:45:54.961Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121422:5236371280:2026-08-14T08:42:58Z:clawsweeper_needs_human",
-      "comment_id": "5236371280",
-      "comment_version_key": "5236371280:2026-08-14T08:42:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121422#issuecomment-5236371280",
-      "comment_created_at": "2026-08-10T05:46:15Z",
-      "comment_updated_at": "2026-08-14T08:42:58Z",
-      "comment_body_sha256": "8ea7da1f775f940ef57695f760a81aee054398d122ae8344fc6c765360da95fc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121422,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the public authority boundary on the exact head** - The PR introduces serializable access contexts, plans, handles, and receipts for future authorization, while exact-head confor...; Review finding: [medium] Verify the public authority boundary on the exact head (sha=972ab842c437f37c96b51b565a19a37391da52f3)",
-      "expected_head_sha": "972ab842c437f37c96b51b565a19a37391da52f3",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T18:43:26.099Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/memory-permissions-pr-open-20260809-p0a",
-        "head_sha": "972ab842c437f37c96b51b565a19a37391da52f3",
-        "cluster_id": "automerge-openclaw-openclaw-121422",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121422.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122985:5275956727:2026-08-17T18:22:07Z:clawsweeper_needs_human",
       "comment_id": "5275956727",
@@ -29881,6 +29834,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124061:5320039899:2026-08-17T20:45:08Z:re_review",
+      "comment_id": "5320039899",
+      "comment_version_key": "5320039899:2026-08-17T20:45:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124061#issuecomment-5320039899",
+      "comment_created_at": "2026-08-17T20:45:08Z",
+      "comment_updated_at": "2026-08-17T20:45:08Z",
+      "comment_body_sha256": "57194fa636a0b6120d26b015dd3305a46cdbd6ab20c069c631c65d722f03b28b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124061,
+      "author": "clawSean",
+      "author_id": 260045960,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T20:45:53.011Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/peekaboo-v4-skill",
+        "head_sha": "ff2b1e9a39dc5dad6579ffae945fd9374569310a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
