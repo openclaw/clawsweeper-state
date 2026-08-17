@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T12:52:36.601Z",
+  "updated_at": "2026-08-17T12:52:40.747Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123482:5289771597:2026-08-17T08:00:45Z:clawsweeper_needs_human",
-      "comment_id": "5289771597",
-      "comment_version_key": "5289771597:2026-08-17T08:00:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5289771597",
-      "comment_created_at": "2026-08-14T05:16:37Z",
-      "comment_updated_at": "2026-08-17T08:00:45Z",
-      "comment_body_sha256": "7b689b1d9c58d021e4a0902b7dd9c4241f27ec74cf7aa86fc26e3fb3a30ebbb3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds a persistent worker, shutdown coordination, and lease cleanup; an uncovered lifecycle race could stall Gateway shutdown or agent deletion. (sha=de65b4dd15ed630ba82da30b6e977aad3ea7c397)",
-      "expected_head_sha": "de65b4dd15ed630ba82da30b6e977aad3ea7c397",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T08:03:52.422Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-performance",
-        "head_sha": "de65b4dd15ed630ba82da30b6e977aad3ea7c397",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-17T07:45:44Z:clawsweeper_needs_human",
       "comment_id": "5290613923",
@@ -33198,6 +33165,53 @@
         "kind": "pull_request",
         "branch": "jesse/tsdown-heap-host-scaled",
         "head_sha": "7e64ad61f702ab2fe8bde8451a0206d4ffb4b063",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123556:5316295756:2026-08-17T12:52:01Z:re_review",
+      "comment_id": "5316295756",
+      "comment_version_key": "5316295756:2026-08-17T12:52:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5316295756",
+      "comment_created_at": "2026-08-17T12:52:01Z",
+      "comment_updated_at": "2026-08-17T12:52:01Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123556,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T12:52:39.168Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-concurrency",
+        "head_sha": "5316e8abc3dda32477edae15ce9e1ad6800eade5",
         "cluster_id": null,
         "job_path": null
       },
