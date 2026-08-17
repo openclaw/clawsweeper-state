@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T10:02:35.255Z",
+  "updated_at": "2026-08-17T10:03:48.448Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124298:5310317705:2026-08-16T23:52:30Z:re_review",
-      "comment_id": "5310317705",
-      "comment_version_key": "5310317705:2026-08-16T23:52:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124298#issuecomment-5310317705",
-      "comment_created_at": "2026-08-16T23:52:30Z",
-      "comment_updated_at": "2026-08-16T23:52:30Z",
-      "comment_body_sha256": "4e8855d657547c9d97cef4a00e82855b22a8d5557e11ee4530fdfa59eef61589",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124298,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: actionable p2 fixed and pushed at exact head 29cf6835ae387767d7bd773ca30a547a99655461. the pr body now has the fresh exact-head real gateway/ui transcript plus 405-test rerun and route-away/removal regression",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T06:01:52.678Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124298:5310382291:2026-08-17T00:06:52Z:re_review",
       "comment_id": "5310382291",
@@ -33206,6 +33179,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125202:5314621675:2026-08-17T10:02:54Z:clawsweeper_needs_human",
+      "comment_id": "5314621675",
+      "comment_version_key": "5314621675:2026-08-17T10:02:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125202#issuecomment-5314621675",
+      "comment_created_at": "2026-08-17T10:02:54Z",
+      "comment_updated_at": "2026-08-17T10:02:54Z",
+      "comment_body_sha256": "f077592099a53f7ead267d4baebc7026abaa5c81addbcb208f21dd2cf06d1785",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125202,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewer could not independently materialize all promisor-backed PR blobs because GitHub DNS was unavailable; wait for the canonical locale check and native-platform CI already ru... (sha=ffcd46316150bdd27e65f223a1a6048c209815cb)",
+      "expected_head_sha": "ffcd46316150bdd27e65f223a1a6048c209815cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T10:03:48.448Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "ffcd46316150bdd27e65f223a1a6048c209815cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
