@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T01:19:31.122Z",
+  "updated_at": "2026-08-17T01:19:46.880Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4947444032:2026-07-11T16:05:55Z:re_review",
-      "comment_id": "4947444032",
-      "comment_version_key": "4947444032:2026-07-11T16:05:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4947444032",
-      "comment_created_at": "2026-07-11T16:05:55Z",
-      "comment_updated_at": "2026-07-11T16:05:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T19:15:11.319Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4948430063:2026-07-11T19:15:25Z:re_review",
       "comment_id": "4948430063",
@@ -33666,6 +33639,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124945:5310740720:2026-08-17T01:19:01Z:clawsweeper_needs_human",
+      "comment_id": "5310740720",
+      "comment_version_key": "5310740720:2026-08-17T01:19:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124945#issuecomment-5310740720",
+      "comment_created_at": "2026-08-17T01:19:01Z",
+      "comment_updated_at": "2026-08-17T01:19:01Z",
+      "comment_body_sha256": "de8b851c945dfd9b114b77aa72e6fbb298aa2ccc4cadd06dd85204be71838ed0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124945,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with a scalar config root will change from silently running defaults to an INVALID_CONFIG startup failure; this intentional fail-closed change should retain the... (sha=c09296e56e755927d23a7a2ee8ef7c6433948147)",
+      "expected_head_sha": "c09296e56e755927d23a7a2ee8ef7c6433948147",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T01:19:46.880Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-null-config-root",
+        "head_sha": "c09296e56e755927d23a7a2ee8ef7c6433948147",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
