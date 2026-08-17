@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-17T00:06:34.776Z",
+  "updated_at": "2026-08-17T00:07:37.920Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124739:5309043504:2026-08-16T18:38:04Z:clawsweeper_needs_human",
-      "comment_id": "5309043504",
-      "comment_version_key": "5309043504:2026-08-16T18:38:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124739#issuecomment-5309043504",
-      "comment_created_at": "2026-08-16T18:38:04Z",
-      "comment_updated_at": "2026-08-16T18:38:04Z",
-      "comment_body_sha256": "d26c101fa04ec3cd1b9a452768f3b28e25509be7d5f9dbd5a6f1ca17c33c8f78",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124739,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Three checks were still in progress in the supplied PR state; merge only after the exact head is green. (sha=f163d126f3ab635d8019a6fe7fc9a57908cd7227)",
-      "expected_head_sha": "f163d126f3ab635d8019a6fe7fc9a57908cd7227",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-16T18:38:51.955Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/node-mcp-architecture-cleanup-20260816",
-        "head_sha": "f163d126f3ab635d8019a6fe7fc9a57908cd7227",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78035:4382356648:2026-08-16T18:31:20Z:clawsweeper_auto_repair",
       "comment_id": "4382356648",
@@ -33335,6 +33302,53 @@
         "kind": "pull_request",
         "branch": "feat/plain-language-progress",
         "head_sha": "87aaaae9b0ca79f744e224bf41bb43a45e6906d9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124298:5310382291:2026-08-17T00:06:52Z:re_review",
+      "comment_id": "5310382291",
+      "comment_version_key": "5310382291:2026-08-17T00:06:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124298#issuecomment-5310382291",
+      "comment_created_at": "2026-08-17T00:06:52Z",
+      "comment_updated_at": "2026-08-17T00:06:52Z",
+      "comment_body_sha256": "2f7e64371171651e4d707d924e700b93a6fe159e9e71d04b2a95b0324f0b4efc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124298,
+      "author": "jjjhenriksen",
+      "author_id": 179184921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: final version-aware stale-edit fix is pushed at exact head fb65100cb904e7546d4f95c0b770f10f0cfab724. the pr body now includes the final exact-head real gateway/ui transcript and 406-test validation; no proof files were committed",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-17T00:07:35.447Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-queued-message-edit-cancel",
+        "head_sha": "fb65100cb904e7546d4f95c0b770f10f0cfab724",
         "cluster_id": null,
         "job_path": null
       },
