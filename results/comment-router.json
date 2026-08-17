@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-17T21:05:04.746Z",
+  "updated_at": "2026-08-17T21:05:48.012Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5257303795:2026-08-11T18:36:03Z:re_review",
-      "comment_id": "5257303795",
-      "comment_version_key": "5257303795:2026-08-11T18:36:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5257303795",
-      "comment_created_at": "2026-08-11T18:36:03Z",
-      "comment_updated_at": "2026-08-11T18:36:03Z",
-      "comment_body_sha256": "86acf9f84597dbadc68ec1e4a60685f0b4ae0f93277e9a5ac57323c5259766d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T18:55:40.985Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5257371524:2026-08-11T18:42:30Z:re_review",
       "comment_id": "5257371524",
@@ -30065,6 +30038,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124061:5300979249:2026-08-17T21:04:49Z:clawsweeper_needs_human",
+      "comment_id": "5300979249",
+      "comment_version_key": "5300979249:2026-08-17T21:04:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124061#issuecomment-5300979249",
+      "comment_created_at": "2026-08-15T06:39:06Z",
+      "comment_updated_at": "2026-08-17T21:04:49Z",
+      "comment_body_sha256": "4816bdfe0976d1d94a41c41b99d9b9348d089eac507a13372a8e4d1907ad91ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124061,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR has strong live evidence for the preceding head, but the final discovery-based socket instruction needs a current-head redacted... (sha=d1b7ae5455607793db26a7de102d752335a61e7a)",
+      "expected_head_sha": "d1b7ae5455607793db26a7de102d752335a61e7a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-17T21:05:48.012Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/peekaboo-v4-skill",
+        "head_sha": "d1b7ae5455607793db26a7de102d752335a61e7a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
