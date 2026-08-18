@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T15:41:37.600Z",
+  "updated_at": "2026-08-18T15:41:44.957Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1139:5326260986:2026-08-18T09:27:32Z:re_review",
-      "comment_id": "5326260986",
-      "comment_version_key": "5326260986:2026-08-18T09:27:32Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1139#issuecomment-5326260986",
-      "comment_created_at": "2026-08-18T09:27:32Z",
-      "comment_updated_at": "2026-08-18T09:27:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1139,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T09:28:21.180Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/label-order-determinism",
-        "head_sha": "f6071b7141003be22eea31510daa362231a70c7b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-18T09:27:02Z:clawsweeper_needs_human",
       "comment_id": "5154193917",
@@ -32422,6 +32375,39 @@
         "kind": "pull_request",
         "branch": "gmail-base-url",
         "head_sha": "a94dd8464e8a8080962c17acb9490d0243434382",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125821:5328735549:2026-08-18T15:40:29Z:clawsweeper_needs_human",
+      "comment_id": "5328735549",
+      "comment_version_key": "5328735549:2026-08-18T15:40:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125821#issuecomment-5328735549",
+      "comment_created_at": "2026-08-18T13:18:58Z",
+      "comment_updated_at": "2026-08-18T15:40:29Z",
+      "comment_body_sha256": "b0342a06f2c6faf8722a31f9c64d05e1feb23812dea3e7faa9db26c5d3783d63",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125821,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Carry the Gateway owner into archived-channel recovery (P1)** - The new resolver uses the local placement store whenever the inbound auto-reply path has no request scope, because that path still calls it without...; Review finding: [P1] Carry the Gateway owner into archived-channel recovery — src/gateway/session-worker-placement-context.ts:21-26 - [P1] Bind subagent override policy to its Gat... (sha=74fd35c4df2efd26cb159607abc5d83577c7f373)",
+      "expected_head_sha": "74fd35c4df2efd26cb159607abc5d83577c7f373",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T15:41:44.957Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/gateway-instance-binding",
+        "head_sha": "74fd35c4df2efd26cb159607abc5d83577c7f373",
         "cluster_id": null,
         "job_path": null
       }
