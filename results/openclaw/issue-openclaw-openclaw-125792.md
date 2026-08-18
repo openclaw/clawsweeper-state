@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125792"
 mode: "autonomous"
-run_id: "32153165569"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32153165569"
+run_id: "32152291594"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32152291594"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-18T15:24:37.854Z"
+result_status: "blocked"
+published_at: "2026-08-18T15:18:10.925Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125792"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125792"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32153165569](https://github.com/openclaw/clawsweeper/actions/runs/32153165569)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32152291594](https://github.com/openclaw/clawsweeper/actions/runs/32152291594)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/125792
 
 ## Summary
 
-#125792 is a reproducible plugin-owned bug: current main emits no `ctx-size` in the embedding preset. A narrow credited fix PR is planned, but this read-only checkout cannot create the branch, add the regression test, install dependencies, or satisfy the required direct ../codex inspection gate.
+Static owner evidence identifies a narrow plugin-owner repair, but implementation is blocked: this read-only worktree lacks node_modules/tsx, upstream b10357 source cannot be resolved, and the mandatory ../codex source checkout cannot be created for direct inspection.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/125792
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125792 | fix_needed | planned | canonical | The source issue is open, current, non-security-sensitive, and is the canonical implementation target. |
-| cluster:issue-openclaw-openclaw-125792 | build_fix_artifact | planned | canonical | A narrow new fix PR is appropriate; the executor must use a writable checkout, inspect ../codex directly as required by repository policy, and run the listed proof. |
+| #125792 | fix_needed | blocked | canonical | Implementation needs a writable checkout with installed dependencies, the pinned llama.cpp b10357 contract available for direct inspection, and the mandatory sibling Codex source checkout before any repair verdict or code change. |
+| cluster:issue-openclaw-openclaw-125792 | build_fix_artifact | planned | canonical | The repair is bounded to the managed preset owner, its owner-boundary regression coverage, and two stale internal declarations. |
 
 ## Needs Human
 
