@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T22:32:29.232Z",
+  "updated_at": "2026-08-18T22:32:34.414Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3475:5318744635:2026-08-18T16:13:06Z:clawsweeper_needs_human",
-      "comment_id": "5318744635",
-      "comment_version_key": "5318744635:2026-08-18T16:13:06Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3475#issuecomment-5318744635",
-      "comment_created_at": "2026-08-17T18:42:28Z",
-      "comment_updated_at": "2026-08-18T16:13:06Z",
-      "comment_body_sha256": "75f796a5e4d3e5fec7ed29cefbba029e35e9d352c5880f5b9ae415b4446c2374",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3475,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The oxfmt, oxlint, Vite, and test-tool updates affect required automation, and six required suites are currently failing; merging before their root cause is known could leave the repo... (sha=9391a0d6d73b7deb8099a1e73b59e1142b0bb937)",
-      "expected_head_sha": "9391a0d6d73b7deb8099a1e73b59e1142b0bb937",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T16:14:39.506Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/development-minor-and-patch-8034bb723f",
-        "head_sha": "9391a0d6d73b7deb8099a1e73b59e1142b0bb937",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/Peekaboo:521:5330957186:2026-08-18T16:14:36Z:re_review",
       "comment_id": "5330957186",
@@ -32331,6 +32298,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120443:5334891375:2026-08-18T22:31:46Z:re_review",
+      "comment_id": "5334891375",
+      "comment_version_key": "5334891375:2026-08-18T22:31:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5334891375",
+      "comment_created_at": "2026-08-18T22:31:46Z",
+      "comment_updated_at": "2026-08-18T22:31:46Z",
+      "comment_body_sha256": "fb754c8cbdc0f1449aa91a03110306571f7b852bae227baf7ca94090aea88fc6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120443,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T22:32:31.985Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119977-codex-stale-binding-compaction",
+        "head_sha": "b105908bc4b17d9a6840bf96d29ea61ae2771065",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
