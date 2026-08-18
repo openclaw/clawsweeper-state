@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T03:25:21.302Z",
+  "updated_at": "2026-08-18T03:25:29.329Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125383:5321535523:2026-08-17T23:40:50Z:re_review",
-      "comment_id": "5321535523",
-      "comment_version_key": "5321535523:2026-08-17T23:40:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125383#issuecomment-5321535523",
-      "comment_created_at": "2026-08-17T23:40:50Z",
-      "comment_updated_at": "2026-08-17T23:40:50Z",
-      "comment_body_sha256": "921c8dc106dba2eddf67307e5347cc181a50eca2b3453fadd84a61e85a9fac35",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125383,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T23:48:35.059Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/llama-embedding-only",
-        "head_sha": "162e5c6fca577e2e0c7da2dce84de18f3d8c30b9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124429:5321573930:2026-08-17T23:45:32Z:re_review",
       "comment_id": "5321573930",
@@ -31210,6 +31163,39 @@
         "kind": "pull_request",
         "branch": "feat/step-audit-checkpoints",
         "head_sha": "874c8a12ad944ffbfb73905c8cca577d601380fc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125547:5323193347:2026-08-18T03:24:42Z:clawsweeper_needs_human",
+      "comment_id": "5323193347",
+      "comment_version_key": "5323193347:2026-08-18T03:24:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125547#issuecomment-5323193347",
+      "comment_created_at": "2026-08-18T03:24:42Z",
+      "comment_updated_at": "2026-08-18T03:24:42Z",
+      "comment_body_sha256": "eb2acecc51c5e24937fcd2894a028ba9fa34653d029191a00dd39d27d12bd3d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125547,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A fresh structured autoreview remains required before merge; it currently fails closed because TruffleHog is unavailable in this review environment. (sha=bdb477f8bf7c9c65458fde94acbc87638b985d2d)",
+      "expected_head_sha": "bdb477f8bf7c9c65458fde94acbc87638b985d2d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T03:25:29.329Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/pr-review-init-prefetch-metadata",
+        "head_sha": "bdb477f8bf7c9c65458fde94acbc87638b985d2d",
         "cluster_id": null,
         "job_path": null
       }
