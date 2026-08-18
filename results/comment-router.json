@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T22:20:00.915Z",
+  "updated_at": "2026-08-18T22:20:06.966Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124333:5330475297:2026-08-18T15:35:25Z:re_review",
-      "comment_id": "5330475297",
-      "comment_version_key": "5330475297:2026-08-18T15:35:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124333#issuecomment-5330475297",
-      "comment_created_at": "2026-08-18T15:35:25Z",
-      "comment_updated_at": "2026-08-18T15:35:25Z",
-      "comment_body_sha256": "06f638d06c410f0d94b5f75b287cbd649048c845b1b9dbf3834bfadda62ca084",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124333,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T15:36:12.962Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/remove-prompt-snapshot-facades",
-        "head_sha": "0c54f337a96e6ee5035d4e542b25bc7f9a10c57a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1003:5323655024:2026-08-18T15:36:55Z:clawsweeper_needs_human",
       "comment_id": "5323655024",
@@ -32527,6 +32480,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T22:20:00.915Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126034:5334525645:2026-08-18T22:18:24Z:clawsweeper_needs_human",
+      "comment_id": "5334525645",
+      "comment_version_key": "5334525645:2026-08-18T22:18:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126034#issuecomment-5334525645",
+      "comment_created_at": "2026-08-18T21:54:45Z",
+      "comment_updated_at": "2026-08-18T22:18:24Z",
+      "comment_body_sha256": "928c35f19d84635b33f1e7003f137e2d510486011e5ac116ecdd9385278b7bb6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126034,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The production +1 guard deliberately converts every strict-mode retained deep-profile failure into a CI failure; merge requires confirmation that Kova has already removed profiler-aff... (sha=7f4cc2ef2637331ee6b1e5b9b428ff8e63e82741)",
+      "expected_head_sha": "7f4cc2ef2637331ee6b1e5b9b428ff8e63e82741",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T22:20:06.966Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/kova-current-profiled-gate",
+        "head_sha": "7f4cc2ef2637331ee6b1e5b9b428ff8e63e82741",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
