@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T21:35:12.348Z",
+  "updated_at": "2026-08-18T21:36:06.358Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124015:5300602703:2026-08-18T14:38:47Z:clawsweeper_auto_merge",
-      "comment_id": "5300602703",
-      "comment_version_key": "5300602703:2026-08-18T14:38:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5300602703",
-      "comment_created_at": "2026-08-15T04:50:09Z",
-      "comment_updated_at": "2026-08-18T14:38:47Z",
-      "comment_body_sha256": "9e8af43a4aee58685ea00518389162ec6129610bc0b4514ad8ce14328b5f368b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124015,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=a421824063ccad4ba61ba33976cd39d38426862a); current checks are failing: checks-node-changed-extensions-config-10:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": "a421824063ccad4ba61ba33976cd39d38426862a",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T14:44:49.888Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/signal-port-collision",
-        "head_sha": "a421824063ccad4ba61ba33976cd39d38426862a",
-        "cluster_id": "automerge-openclaw-openclaw-124015",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124015.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124015.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125707:5329829515:2026-08-18T14:44:46Z:re_review",
       "comment_id": "5329829515",
@@ -32653,6 +32606,39 @@
         "kind": "pull_request",
         "branch": "fix/blank-settings-window",
         "head_sha": "ef57f242a9559aac8d937831f50a5eff1d3d2850",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125897:5331349126:2026-08-18T21:32:10Z:clawsweeper_auto_repair",
+      "comment_id": "5331349126",
+      "comment_version_key": "5331349126:2026-08-18T21:32:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125897#issuecomment-5331349126",
+      "comment_created_at": "2026-08-18T16:49:45Z",
+      "comment_updated_at": "2026-08-18T21:32:10Z",
+      "comment_body_sha256": "299b87a417e3b0e51a469a2ddd1d10e069b834ed57218ca2416ff33285409c16",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125897,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d266ba293122de04ccfd7da891fd968c72b0d037)",
+      "expected_head_sha": "d266ba293122de04ccfd7da891fd968c72b0d037",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T21:36:06.358Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/codex-message-tool-schema",
+        "head_sha": "d266ba293122de04ccfd7da891fd968c72b0d037",
         "cluster_id": null,
         "job_path": null
       }
