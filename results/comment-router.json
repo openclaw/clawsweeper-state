@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T05:15:42.061Z",
+  "updated_at": "2026-08-18T05:16:54.945Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5095663849:2026-07-27T19:11:59Z:re_review",
-      "comment_id": "5095663849",
-      "comment_version_key": "5095663849:2026-07-27T19:11:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5095663849",
-      "comment_created_at": "2026-07-27T19:11:59Z",
-      "comment_updated_at": "2026-07-27T19:11:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T01:22:40.798Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5097434874:2026-07-27T22:20:52Z:re_review",
       "comment_id": "5097434874",
@@ -31500,6 +31473,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:513:5323833188:2026-08-18T05:15:08Z:clawsweeper_needs_human",
+      "comment_id": "5323833188",
+      "comment_version_key": "5323833188:2026-08-18T05:15:08Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/513#issuecomment-5323833188",
+      "comment_created_at": "2026-08-18T05:02:03Z",
+      "comment_updated_at": "2026-08-18T05:15:08Z",
+      "comment_body_sha256": "3e5965b2ce7285e12086d66ccd6316f66b888863faac3bcd710b833785bb6d51",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 513,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pin changes observer startup and teardown timing; an incorrectly calibrated upstream bound could leave a notification subscription unavailable, although polling remains present an... (sha=51234c72c08723ac7a8b28a052ee3b13d27a8683)",
+      "expected_head_sha": "51234c72c08723ac7a8b28a052ee3b13d27a8683",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T05:16:54.945Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/axorcist-observer-bounds",
+        "head_sha": "51234c72c08723ac7a8b28a052ee3b13d27a8683",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
