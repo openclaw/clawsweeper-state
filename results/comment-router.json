@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T06:18:19.142Z",
+  "updated_at": "2026-08-18T06:18:24.526Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5274290247:2026-08-13T00:13:43Z:re_review",
-      "comment_id": "5274290247",
-      "comment_version_key": "5274290247:2026-08-13T00:13:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5274290247",
-      "comment_created_at": "2026-08-13T00:13:43Z",
-      "comment_updated_at": "2026-08-13T00:13:43Z",
-      "comment_body_sha256": "50c3aaf3601468d917d379b658275872d2ed1643a47b4ffd674caf35aed5dbda",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T02:42:47.744Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5274375107:2026-08-13T00:26:16Z:re_review",
       "comment_id": "5274375107",
@@ -31298,6 +31271,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:84:5324281461:2026-08-18T06:17:44Z:clawsweeper_needs_human",
+      "comment_id": "5324281461",
+      "comment_version_key": "5324281461:2026-08-18T06:17:44Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/84#issuecomment-5324281461",
+      "comment_created_at": "2026-08-18T06:05:19Z",
+      "comment_updated_at": "2026-08-18T06:17:44Z",
+      "comment_body_sha256": "ebdfbcf9c0808e4aa01597ca410dd798dcc2bad9f875a0f5ae3446c768eadddb",
+      "repo": "openclaw/ocm",
+      "issue_number": 84,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: No redacted after-fix run demonstrates the authorization and recovery behavior; add real proof, redact sensitive details, and update the PR bod...; Review finding: [P1] Require authorization before activating copied credentials — skills/openclaw-release-validation/SKILL.md:130-131 - [P1] Restore the source gateway after faile... (sha=82f785667eb932450b934d134a3515d5e055671f)",
+      "expected_head_sha": "82f785667eb932450b934d134a3515d5e055671f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T06:18:24.526Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/openclaw-release-validation",
+        "head_sha": "82f785667eb932450b934d134a3515d5e055671f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
