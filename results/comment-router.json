@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T04:41:46.402Z",
+  "updated_at": "2026-08-18T04:41:47.506Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124303:5304803937:2026-08-15T23:50:44Z:re_review",
-      "comment_id": "5304803937",
-      "comment_version_key": "5304803937:2026-08-15T23:50:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124303#issuecomment-5304803937",
-      "comment_created_at": "2026-08-15T23:50:44Z",
-      "comment_updated_at": "2026-08-15T23:50:44Z",
-      "comment_body_sha256": "6480f61ee44b8deca422cfa882da707015da5f88e5ee6cbb4eece441ebfd9183",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124303,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T00:49:56.314Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124303:5305131989:2026-08-16T01:26:39Z:re_review",
       "comment_id": "5305131989",
@@ -31639,6 +31612,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-18T04:40:48Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-18T04:40:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-18T04:40:48Z",
+      "comment_body_sha256": "efb44365fb7f4b7bd151053cbf194592688f5b7aa6fd0068917cf9d1e33bc943",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner tuple (P1)** - The action ref now targets v3.97.0, but with.version still downloads v3.95.9; Testbox provisioning and the parsed-workflow guard also remain on v3.95.9. Refresh...; Review finding: [P1] Synchronize the TruffleHog scanner tuple — .github/workflows/ci.yml:1066-1070 - [P1] Update the Android attestation contract assertion — .github/workflows/and... (sha=046b3bac1ca797c1a0e31ceae9318b5b8fd29fa3)",
+      "expected_head_sha": "046b3bac1ca797c1a0e31ceae9318b5b8fd29fa3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T04:41:47.506Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "046b3bac1ca797c1a0e31ceae9318b5b8fd29fa3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
