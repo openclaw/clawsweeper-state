@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T19:16:12.620Z",
+  "updated_at": "2026-08-18T19:18:38.391Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125740:5326038028:2026-08-18T12:53:48Z:clawsweeper_needs_human",
-      "comment_id": "5326038028",
-      "comment_version_key": "5326038028:2026-08-18T12:53:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125740#issuecomment-5326038028",
-      "comment_created_at": "2026-08-18T09:07:16Z",
-      "comment_updated_at": "2026-08-18T12:53:48Z",
-      "comment_body_sha256": "18cddeee51c7dc72bb4147fdcb9c9bd93145c1e939c275bb8d53cd8ea2bdd7b6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125740,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The checkout cannot prove the current-main merge result or whether base changes affect this persisted-state migration; rebase and exact-head validation remain necessary. (sha=462b05e056a71ba9fdc166c06fae2a17be75dadf)",
-      "expected_head_sha": "462b05e056a71ba9fdc166c06fae2a17be75dadf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T12:54:45.371Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/125570-preserve-skill-description",
-        "head_sha": "462b05e056a71ba9fdc166c06fae2a17be75dadf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121100:5232396583:2026-08-18T12:52:25Z:clawsweeper_auto_repair",
       "comment_id": "5232396583",
@@ -32200,6 +32167,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125707:5332905311:2026-08-18T19:17:50Z:re_review",
+      "comment_id": "5332905311",
+      "comment_version_key": "5332905311:2026-08-18T19:17:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125707#issuecomment-5332905311",
+      "comment_created_at": "2026-08-18T19:17:50Z",
+      "comment_updated_at": "2026-08-18T19:17:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125707,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T19:18:36.690Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cached-codex-effort-route",
+        "head_sha": "f8ab728348d4929d82dca7e563f486817c885711",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
