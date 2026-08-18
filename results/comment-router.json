@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T12:32:23.408Z",
+  "updated_at": "2026-08-18T12:34:53.379Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112473:5132088390:2026-08-18T06:30:26Z:clawsweeper_auto_repair",
-      "comment_id": "5132088390",
-      "comment_version_key": "5132088390:2026-08-18T06:30:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112473#issuecomment-5132088390",
-      "comment_created_at": "2026-07-30T14:26:16Z",
-      "comment_updated_at": "2026-08-18T06:30:26Z",
-      "comment_body_sha256": "898d003f33934fc26baddbecd84b2d6afff0cf3954a42085c46720aeea3d7588",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112473,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3858833c38fded70713e18de4703c382cbbc3bbb)",
-      "expected_head_sha": "3858833c38fded70713e18de4703c382cbbc3bbb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T06:38:20.576Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/productivity-tool-profile",
-        "head_sha": "3858833c38fded70713e18de4703c382cbbc3bbb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-18T06:20:33Z:clawsweeper_needs_human",
       "comment_id": "5154193917",
@@ -32585,6 +32552,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125782:5328222215:2026-08-18T12:34:11Z:re_review",
+      "comment_id": "5328222215",
+      "comment_version_key": "5328222215:2026-08-18T12:34:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125782#issuecomment-5328222215",
+      "comment_created_at": "2026-08-18T12:34:11Z",
+      "comment_updated_at": "2026-08-18T12:34:11Z",
+      "comment_body_sha256": "1cd72ed3686028d663127de3e3efef1d5e71d009b1bd9158e2a203f8a24ce97e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125782,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T12:34:51.280Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cron-filtered-conflict-fix",
+        "head_sha": "af95d9635d4b816e27b0d34e29643a69ab10cd6e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
