@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T23:35:48.738Z",
+  "updated_at": "2026-08-18T23:35:57.949Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5294213718:2026-08-14T14:04:56Z:re_review",
-      "comment_id": "5294213718",
-      "comment_version_key": "5294213718:2026-08-14T14:04:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5294213718",
-      "comment_created_at": "2026-08-14T14:04:56Z",
-      "comment_updated_at": "2026-08-14T14:04:56Z",
-      "comment_body_sha256": "80be045440fecd59de3d67eee318a5dd12f97fbe68ccba27f328be62f4e1360f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T18:19:50.088Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5294431372:2026-08-14T14:25:39Z:re_review",
       "comment_id": "5294431372",
@@ -32212,6 +32185,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123848:5298386221:2026-08-18T23:32:57Z:clawsweeper_needs_human",
+      "comment_id": "5298386221",
+      "comment_version_key": "5298386221:2026-08-18T23:32:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123848#issuecomment-5298386221",
+      "comment_created_at": "2026-08-14T21:33:47Z",
+      "comment_updated_at": "2026-08-18T23:32:57Z",
+      "comment_body_sha256": "65bfea6a3418708a03d22343c05afd532c3fc50bfc06a1557ad37920b43cbff7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123848,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body contains a real loopback-server run for earlier head 7a9ba124da4, but latest head 5d7bb3e changes the terminal-warning behavi... (sha=5d7bb3e86dd1759ed2e60f7c08d4b921419d4045)",
+      "expected_head_sha": "5d7bb3e86dd1759ed2e60f7c08d4b921419d4045",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T23:35:57.949Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ptp-oc-info-3",
+        "head_sha": "5d7bb3e86dd1759ed2e60f7c08d4b921419d4045",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
