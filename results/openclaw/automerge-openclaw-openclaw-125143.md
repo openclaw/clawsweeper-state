@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-125143"
 mode: "autonomous"
-run_id: "32185427167"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32185427167"
+run_id: "32189428626"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32189428626"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-18T21:15:59.075Z"
+published_at: "2026-08-18T21:54:49.192Z"
 canonical: "#125143"
-canonical_issue: "#124926"
+canonical_issue: null
 canonical_pr: "#125143"
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32185427167](https://github.com/openclaw/clawsweeper/actions/runs/32185427167)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32189428626](https://github.com/openclaw/clawsweeper/actions/runs/32189428626)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #125143
 
 ## Summary
 
-#125143 remains the canonical adopted repair PR, but its exact reviewed head has an unresolved video-description agent-routing finding. Repair the contributor branch, rebase it onto current main, then re-review the repaired exact head; do not merge or close from this worker.
+Make PR #125143 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Canonical: #125143
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125143 | fix_needed | planned | canonical | Repair, rather than replace, the opted-in contributor PR: the branch is writable, the root cause has a narrow owner-boundary fix, and contributor credit remains intact. |
-| #125143 | build_fix_artifact | planned | canonical | The job explicitly requires a repair_contributor_branch artifact for the adopted PR. |
+| #125143 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
