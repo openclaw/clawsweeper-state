@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119041"
 mode: "autonomous"
-run_id: "32113057261"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32113057261"
+run_id: "32114480332"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32114480332"
 head_sha: "055ffba223f033a8cac3dc4287e207f6ab509369"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T07:55:54.621Z"
+published_at: "2026-08-18T08:15:25.391Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119041"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119041"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32113057261](https://github.com/openclaw/clawsweeper/actions/runs/32113057261)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32114480332](https://github.com/openclaw/clawsweeper/actions/runs/32114480332)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/119041
 
 ## Summary
 
-Current main has a narrow Slack partial-preview lifecycle defect. The required branch/test work is blocked in this read-only checkout; the required sibling ../codex source checkout is also absent, so no validation certification is made.
+#119041 remains a real, narrow Slack partial-preview defect on main d9dfc5b3. The repair plan is ready, but this worker has a read-only checkout, no node_modules, and no sibling ../codex source required by repository policy; it cannot create, validate, or review the PR branch here.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Current main has a narrow Slack partial-preview lifecycle defect. The required b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119041 | fix_needed | planned | canonical | Fix the Slack preview owner; no configuration or provider behavior changes are needed. |
-| cluster:issue-openclaw-openclaw-119041 | build_fix_artifact | planned | canonical | Executor should implement and validate one new fix PR on the designated ClawSweeper branch. |
-| #119067 | keep_closed | skipped | superseded | Historical evidence only. |
-| #85612 | keep_closed | skipped | related | Adjacent, distinct mode. |
-| #80862 | keep_closed | skipped | related | Adjacent channel issue. |
+| #119041 | fix_needed | blocked | canonical | Create the narrow credited fix from the cluster artifact in a writable checkout, then run the required regression and review gates. |
+| #80862 | keep_closed | skipped | related | Historical adjacent context only; no action is valid on an already closed issue. |
+| #85612 | keep_closed | skipped | related | Historical related work only; it does not cover the partial-mode defect. |
+| #119067 | keep_closed | skipped | superseded | The new ClawSweeper branch should carry the narrow idea forward while crediting @RerankerGuo and #119067 in the PR body. |
+| cluster:issue-openclaw-openclaw-119041 | build_fix_artifact | planned | canonical | A viable canonical PR does not exist; produce one narrow new fix PR from clawsweeper/issue-openclaw-openclaw-119041. |
 
 ## Needs Human
 
