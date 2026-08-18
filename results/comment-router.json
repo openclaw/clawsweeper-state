@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T22:03:48.216Z",
+  "updated_at": "2026-08-18T22:03:50.737Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125637:5330164450:2026-08-18T15:11:24Z:re_review",
-      "comment_id": "5330164450",
-      "comment_version_key": "5330164450:2026-08-18T15:11:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125637#issuecomment-5330164450",
-      "comment_created_at": "2026-08-18T15:11:24Z",
-      "comment_updated_at": "2026-08-18T15:11:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125637,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T15:12:22.665Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/new-session-draft-reload-race",
-        "head_sha": "63b1209a419804799910f32bf19d0272ad470930",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125834:5330175225:2026-08-18T15:12:14Z:re_review",
       "comment_id": "5330175225",
@@ -32688,6 +32641,39 @@
         "kind": "pull_request",
         "branch": "koc/discord-queued-message-batching",
         "head_sha": "6df1189d660a9320a83f04408154e1a502581ff6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126013:5334588664:2026-08-18T22:01:26Z:clawsweeper_needs_human",
+      "comment_id": "5334588664",
+      "comment_version_key": "5334588664:2026-08-18T22:01:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126013#issuecomment-5334588664",
+      "comment_created_at": "2026-08-18T22:01:26Z",
+      "comment_updated_at": "2026-08-18T22:01:26Z",
+      "comment_body_sha256": "d062e76b3190a8dd690dd71d1ad4df5138bb0a7b718e3a3eede3a14fd7fa2d9d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126013,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports mocked Chromium and unit coverage, but no after-fix real Control UI run, recording, screenshot, or redacted runtime trace.... (sha=3f752bf4b2714699980fabc755011b12368b482d)",
+      "expected_head_sha": "3f752bf4b2714699980fabc755011b12368b482d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T22:03:50.737Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/new-session-configured-model-catalog",
+        "head_sha": "3f752bf4b2714699980fabc755011b12368b482d",
         "cluster_id": null,
         "job_path": null
       }
