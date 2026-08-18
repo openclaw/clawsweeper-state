@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-56619",
+  "mode": "autonomous",
+  "run_id": "32139059104",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32139059104",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-56619.md",
+  "published_at": "2026-08-18T13:08:21.638Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/56619",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/56619",
+  "canonical_pr": null,
+  "summary": "#56619 reproduces on current main: the documented opt-in `--notify` path reaches a WhatsApp pairing adapter with no notifier and returns silently. A safe fix requires a Gateway-owned, account-scoped delivery authorization; this read-only checkout lacks dependencies and the mandatory sibling ../codex source checkout, so no code or validated PR can be produced.",
+  "actions": [
+    {
+      "target": "#56619",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the read-only checkout, missing dependencies, and missing mandatory ../codex checkout. The issue remains a source-reproduced canonical bug."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-56619",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "A narrow repair plan exists, but implementation and proof require a writable, dependency-complete checkout with the mandatory Codex source available."
+    },
+    {
+      "target": "#94386",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Already closed context ref."
+    },
+    {
+      "target": "#96277",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Already closed context ref."
+    },
+    {
+      "target": "#97733",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Security-sensitive linked ref; no repair action is proposed for it."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#56619",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

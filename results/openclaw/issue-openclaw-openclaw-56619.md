@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-56619"
 mode: "autonomous"
-run_id: "32136947004"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32136947004"
+run_id: "32139059104"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32139059104"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T12:38:51.590Z"
+published_at: "2026-08-18T13:08:21.638Z"
 canonical: "https://github.com/openclaw/openclaw/issues/56619"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/56619"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 2
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-56619
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32136947004](https://github.com/openclaw/clawsweeper/actions/runs/32136947004)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32139059104](https://github.com/openclaw/clawsweeper/actions/runs/32139059104)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/56619
 
 ## Summary
 
-Confirmed #56619 on main 029f6c14: the CLI forwards --notify to notifyPairingApproved, but WhatsApp has no notifyApproval adapter, so the notifier returns without delivery. No code was changed: direct ../codex inspection is mandatory by repository policy but that checkout is absent, and the read-only worker cannot create it; pnpm validation also cannot initialize Corepack's cache.
+#56619 reproduces on current main: the documented opt-in `--notify` path reaches a WhatsApp pairing adapter with no notifier and returns silently. A safe fix requires a Gateway-owned, account-scoped delivery authorization; this read-only checkout lacks dependencies and the mandatory sibling ../codex source checkout, so no code or validated PR can be produced.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Confirmed #56619 on main 029f6c14: the CLI forwards --notify to notifyPairingApp
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 2 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #56619 |  |  |
 
 ## Apply Actions
 
@@ -66,13 +66,12 @@ Confirmed #56619 on main 029f6c14: the CLI forwards --notify to notifyPairingApp
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #56619 | fix_needed | blocked | canonical | Implementation is blocked before edits by the mandatory missing ../codex source gate and read-only validation environment; the bug remains reproducible at source level. |
-| #94386 | keep_closed | skipped | superseded | Closed context evidence only. |
-| #96277 | keep_closed | skipped | superseded | Closed context evidence only. |
-| #97733 | route_security | planned | security_sensitive | Security-sensitive linked ref; no repair, closure, or merge action. |
-| cluster:issue-openclaw-openclaw-56619 | build_fix_artifact | planned | canonical | Prepared for a new credited fix PR; implementation must not proceed in this checkout. |
+| #56619 | fix_needed | blocked | canonical | Implementation is blocked by the read-only checkout, missing dependencies, and missing mandatory ../codex checkout. The issue remains a source-reproduced canonical bug. |
+| cluster:issue-openclaw-openclaw-56619 | build_fix_artifact | blocked | canonical | A narrow repair plan exists, but implementation and proof require a writable, dependency-complete checkout with the mandatory Codex source available. |
+| #94386 | keep_closed | skipped | superseded | Already closed context ref. |
+| #96277 | keep_closed | skipped | superseded | Already closed context ref. |
+| #97733 | route_security | planned | security_sensitive | Security-sensitive linked ref; no repair action is proposed for it. |
 
 ## Needs Human
 
-- Provide or mount the required sibling ../codex checkout so the acting worker can perform the repository-mandated direct source inspection before changing code.
-- Run the artifact in a writable checkout/cache: Corepack currently fails before pnpm can start tests.
+- none
