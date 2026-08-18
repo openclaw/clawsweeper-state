@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-99277"
-mode: "autonomous"
-run_id: "32115542454"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32115542454"
-head_sha: "03c1f452ec49479c8df06aab6d2204187ed47018"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-18T08:27:00.283Z"
+mode: "plan"
+run_id: "31284188781"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31284188781"
+head_sha: "36179dceb26fbeca33d8a863746b4cf83e325e09"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-08T23:38:11.050Z"
 canonical: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_pr: null
-actions_total: 4
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32115542454](https://github.com/openclaw/clawsweeper/actions/runs/32115542454)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31284188781](https://github.com/openclaw/clawsweeper/actions/runs/31284188781)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 ## Summary
 
-Implementation is blocked before a safe PR can be produced. Current main contains the shared post-record hook, while Mattermost does not supply an acknowledgement callback; however the required ../codex source checkout is absent, this checkout is read-only and missing test dependencies, and no Mattermost credentials are available for the mandatory redacted live API encoding proof.
+#99277 is a current-main, non-security bug: Mattermost accepts and dispatches posts without wiring the existing shared acknowledgement policy. Plan a narrow, credited replacement fix PR; do not close or merge any item.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,11 @@ Implementation is blocked before a safe PR can be produced. Current main contain
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #99277 | fix_needed | blocked | canonical | A writable, dependency-complete worker with the required sibling Codex checkout and an authorized redacted Mattermost workspace is required before an implementation or Codex-bearing repair verdict. |
-| #80426 | keep_closed | skipped | superseded | Already closed; no mutation is permitted or needed. |
-| #119124 | keep_closed | skipped | superseded | Already closed; no mutation is permitted or needed. |
-| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | planned |  | Produce the fix only after the listed external gates are available. |
+| #99277 | fix_needed | planned | canonical | The hydrated open canonical issue and current-main source prove a missing bridge to an existing shared acknowledgement contract. |
+| #15634 | keep_related | planned | related | Leave the open umbrella issue for its distinct feature/product decision. |
+| #80426 | keep_closed | skipped | superseded | Historical evidence only; no closure action is valid for an already-closed pull request. |
+| #119124 | keep_closed | skipped | superseded | Use the valid plugin-local approach while preserving SemonCat's attribution; no closure action is valid for this closed pull request. |
+| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | planned |  | A narrow new fix PR is permitted and the historical contributor branches are closed/unwritable. |
 
 ## Needs Human
 
