@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T04:19:10.202Z",
+  "updated_at": "2026-08-18T04:19:10.798Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124829:5309628883:2026-08-18T00:34:03Z:clawsweeper_needs_human",
-      "comment_id": "5309628883",
-      "comment_version_key": "5309628883:2026-08-18T00:34:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124829#issuecomment-5309628883",
-      "comment_created_at": "2026-08-16T20:56:22Z",
-      "comment_updated_at": "2026-08-18T00:34:03Z",
-      "comment_body_sha256": "d5cec48c41c115ae0533d9264eb5105d365654d91f319128af6be08b9f854ec7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124829,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve explicit Codex app-server settings (P1)** - Do not unconditionally replace an operator's transport with stdio. An explicit WebSocket route retains its URL but becomes the invalid stdio/WebSocket hybrid...; Review finding: [P1] Preserve explicit Codex app-server settings — src/system-agent/setup-inference-plan-helpers.ts:76 - [P1] Restore the custodian first-run handoff — apps/macos/... (sha=a24dbeb7382b12f23e9ec98f72c119ea1d6e569f)",
-      "expected_head_sha": "a24dbeb7382b12f23e9ec98f72c119ea1d6e569f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T00:34:48.427Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-onboarding-codex-activation",
-        "head_sha": "a24dbeb7382b12f23e9ec98f72c119ea1d6e569f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125473:5321943911:2026-08-18T00:34:24Z:clawsweeper_auto_repair",
       "comment_id": "5321943911",
@@ -31293,6 +31260,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125564:5323399279:2026-08-18T04:18:25Z:clawsweeper_needs_human",
+      "comment_id": "5323399279",
+      "comment_version_key": "5323399279:2026-08-18T04:18:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125564#issuecomment-5323399279",
+      "comment_created_at": "2026-08-18T03:56:05Z",
+      "comment_updated_at": "2026-08-18T04:18:25Z",
+      "comment_body_sha256": "3e538845702ea5383af7d417f729210b6444b20b9bc0ace88d587e4b31b5bad1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125564,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 318 net lines in catalog, transport, and process-lifecycle ownership; the shared adapters are justified only if exact-head validation against the installed SD... (sha=25b31c78201363cc83ad92346662edc2ec59dacb)",
+      "expected_head_sha": "25b31c78201363cc83ad92346662edc2ec59dacb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T04:19:10.798Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/mcp-stress-hardening-20260817",
+        "head_sha": "25b31c78201363cc83ad92346662edc2ec59dacb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
