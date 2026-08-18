@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/125540 at the canonical reset-authorization boundary. Preserve `/new` and `/reset` for channel-authorized senders on plugins that do not enable owner enforcement, while retaining the WhatsApp owner-only reset invariant from https://github.com/openclaw/openclaw/pull/118580. Trace both `src/auto-reply/reply/session.ts` and `src/auto-reply/reply/commands-reset.ts` through `src/auto-reply/reply/reset-authorization.ts`; expose or consume one canonical policy fact rather than duplicating plugin resolution. Add a regression case for a non-enforcing channel with `allowFrom: ["*"]`, `ownerAllowFrom`, an ingress-authorized non-owner, and a successful reset; retain the existing WhatsApp enforcement test. Do not add config or weaken authorization for other slash commands. Put user-visible release-note context in the PR body, not CHANGELOG.md.
+Repair the current-main reset authorization regression reported at https://github.com/openclaw/openclaw/issues/125540. Keep WhatsApp and any plugin explicitly opting into owner-enforced commands protected, but restore `/new` and `/reset` for channel-authorized users on non-enforcing channels even when `commands.ownerAllowFrom` is configured. Preserve one generic authorization flow; do not special-case Feishu or WhatsApp, change global `isAuthorizedSender` semantics, add configuration, or weaken non-reset command authorization. Add paired regression coverage for non-enforcing and owner-enforcing plugins, covering both shared reset entry points when feasible; the new regression must fail before the repair. Do not edit CHANGELOG.md; record user-visible release context in the PR body.
 
 Likely files:
 
 - src/auto-reply/reply/reset-authorization.ts
-- src/auto-reply/reply/session.test.ts
 - src/auto-reply/command-auth.ts
-- src/auto-reply/command-auth.owner-default.test.ts
+- src/auto-reply/reply/session.test.ts
+- src/auto-reply/reply/commands-reset.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/auto-reply/reply/session.test.ts -t "reset"
+- node scripts/run-vitest.mjs src/auto-reply/reply/session.test.ts
 - node scripts/run-vitest.mjs src/auto-reply/command-auth.owner-default.test.ts
-- pnpm check:changed -- src/auto-reply/reply/reset-authorization.ts src/auto-reply/reply/session.ts src/auto-reply/reply/commands-reset.ts
+- node scripts/check-changed.mjs -- src/auto-reply/reply/reset-authorization.ts src/auto-reply/command-auth.ts src/auto-reply/reply/session.test.ts
 
 ## Operator Prompt
 
