@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T07:12:23.805Z",
+  "updated_at": "2026-08-18T07:17:15.482Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:84758:4504025650:2026-08-18T02:45:13Z:clawsweeper_needs_human",
-      "comment_id": "4504025650",
-      "comment_version_key": "4504025650:2026-08-18T02:45:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/84758#issuecomment-4504025650",
-      "comment_created_at": "2026-05-21T01:40:03Z",
-      "comment_updated_at": "2026-08-18T02:45:13Z",
-      "comment_body_sha256": "90a22a48a415b65337cb5913de03df5cfb9e9b7bd13794319a466ce496598321",
-      "repo": "openclaw/openclaw",
-      "issue_number": 84758,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal output is for an older revision and tests only the resolver, not current-head native/ACP/visible spawn behavior,...; Review finding: [P0] Bound placement identifiers at the tool boundary — src/agents/tools/sessions-spawn-tool.ts:168-169 - [P1] Use the Cloud Workers placement owner — src/config/z... (sha=ccf789260f38f3c2c151909515c76847eebd3f44)",
-      "expected_head_sha": "ccf789260f38f3c2c151909515c76847eebd3f44",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T02:57:58.970Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/execution-backends-local",
-        "head_sha": "ccf789260f38f3c2c151909515c76847eebd3f44",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:84848:4505342358:2026-08-18T02:46:32Z:clawsweeper_auto_repair",
       "comment_id": "4505342358",
@@ -32013,6 +31980,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125553:5324887763:2026-08-18T07:16:28Z:re_review",
+      "comment_id": "5324887763",
+      "comment_version_key": "5324887763:2026-08-18T07:16:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125553#issuecomment-5324887763",
+      "comment_created_at": "2026-08-18T07:16:28Z",
+      "comment_updated_at": "2026-08-18T07:16:28Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125553,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T07:17:13.341Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/user-bubble-clamp",
+        "head_sha": "055d2c2484871831f73ce595860c2bf7aa434f18",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
