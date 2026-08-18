@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122352"
 mode: "autonomous"
-run_id: "32147297380"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32147297380"
+run_id: "32145829745"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32145829745"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T14:29:06.217Z"
+published_at: "2026-08-18T14:11:53.536Z"
 canonical: "https://github.com/openclaw/openclaw/issues/122352"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/122352"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32147297380](https://github.com/openclaw/clawsweeper/actions/runs/32147297380)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32145829745](https://github.com/openclaw/clawsweeper/actions/runs/32145829745)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/122352
 
 ## Summary
 
-Current main still has the reported lifecycle gap: expiry removes the visible row and its only expiry record, so a later terminal event is admitted as new activity. Implementation is blocked in this read-only checkout: the required failing regression cannot be added or run, no branch/PR can be created, and the mandatory sibling ../codex source checkout is absent for the Codex hard gate.
+#122352 is a confirmed, narrow Android ChatController lifecycle defect on main: expiry removes the visible row and its only terminal-observation state, so a late terminal redelivery is upserted again. Implementation is blocked before edits because the required sibling ../codex source checkout is absent and this read-only worker cannot clone it or write the repair branch.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Current main still has the reported lifecycle gap: expiry removes the visible ro
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122352 | fix_needed | blocked | canonical | A narrow owner-boundary fix is indicated, but this worker cannot modify or validate the target checkout and cannot satisfy the mandatory direct Codex-source gate. |
-| cluster:issue-openclaw-openclaw-122352 | build_fix_artifact | blocked | canonical | Artifact is ready for an executor with a writable checkout and the required ../codex source checkout. |
-| #122089 | keep_closed | skipped | related | Closed historical context; no mutation. |
-| #122198 | keep_closed | skipped | related | Closed historical context; no mutation. |
-| #122472 | keep_closed | skipped | superseded | Closed historical candidate; no mutation. |
+| #122089 | keep_closed | skipped | related | Historical adjacent context only. |
+| #122198 | keep_closed | skipped | related | Historical adjacent context only. |
+| #122352 | fix_needed | blocked | canonical | The owner-boundary fix remains valid, but local implementation cannot begin until the required Codex source prerequisite and a writable repair environment are available. |
+| #122472 | keep_closed | skipped | related | Historical scenario reference only. |
+| cluster:issue-openclaw-openclaw-122352 | build_fix_artifact | blocked | canonical | Await a writable execution environment with the mandatory sibling Codex source available. |
 
 ## Needs Human
 
