@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T02:58:03.927Z",
+  "updated_at": "2026-08-18T02:58:08.337Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124551:5307366079:2026-08-17T23:06:04Z:clawsweeper_needs_human",
-      "comment_id": "5307366079",
-      "comment_version_key": "5307366079:2026-08-17T23:06:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124551#issuecomment-5307366079",
-      "comment_created_at": "2026-08-16T12:10:47Z",
-      "comment_updated_at": "2026-08-17T23:06:04Z",
-      "comment_body_sha256": "6835b82b6f5b41d56ecfc8d858ec7ce08d7f51d12e74702fdc13dcd04d51b20e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124551,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - One-sided include/exclude updates will no longer clear the sibling list; existing automation that intentionally relied on destructive replacement must use the explicit clear command b... (sha=1c32d3f9dcb2d7fe5a13b1430e668d580fcb2a08)",
-      "expected_head_sha": "1c32d3f9dcb2d7fe5a13b1430e668d580fcb2a08",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T23:19:56.761Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "auto/prospect-mcp-configure-nested-merge",
-        "head_sha": "1c32d3f9dcb2d7fe5a13b1430e668d580fcb2a08",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124655:5308094205:2026-08-17T23:10:22Z:clawsweeper_needs_human",
       "comment_id": "5308094205",
@@ -31491,6 +31458,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:166:5297600190:2026-08-18T02:57:30Z:clawsweeper_needs_human",
+      "comment_id": "5297600190",
+      "comment_version_key": "5297600190:2026-08-18T02:57:30Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/166#issuecomment-5297600190",
+      "comment_created_at": "2026-08-14T20:00:04Z",
+      "comment_updated_at": "2026-08-18T02:57:30Z",
+      "comment_body_sha256": "c3ccdf2ed8a56fb31a497577f02a7a830ba55cfd10874d106c413c393f15865d",
+      "repo": "openclaw/clickclack",
+      "issue_number": 166,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR has in-process tests but no redacted after-fix browser login-and-return trace against the registered provider; add real proof without ex...; Review finding: [P1] Verify the ID-token signature before using claims — apps/api/internal/httpapi/openclawid.go:234-235 - [P1] Preserve restricted-deployment admission controls —... (sha=d9f01fac01ef505d59d15c7081e7a7d7ce839623)",
+      "expected_head_sha": "d9f01fac01ef505d59d15c7081e7a7d7ce839623",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T02:58:08.337Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/openclaw-id-login",
+        "head_sha": "d9f01fac01ef505d59d15c7081e7a7d7ce839623",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
