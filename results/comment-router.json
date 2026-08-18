@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T08:03:01.896Z",
+  "updated_at": "2026-08-18T08:03:32.581Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124516:5323214675:2026-08-18T03:27:13Z:re_review",
-      "comment_id": "5323214675",
-      "comment_version_key": "5323214675:2026-08-18T03:27:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124516#issuecomment-5323214675",
-      "comment_created_at": "2026-08-18T03:27:13Z",
-      "comment_updated_at": "2026-08-18T03:27:13Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124516,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T03:37:44.105Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skip-full-store-discovery-123439",
-        "head_sha": "f2bed042d66d6ec20b77a36775c8c05addff2ec3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3034:5323221261:2026-08-18T03:36:52Z:clawsweeper_needs_human",
       "comment_id": "5323221261",
@@ -31764,6 +31717,39 @@
         "kind": "pull_request",
         "branch": "steipete/persistent-drafts-cleanup",
         "head_sha": "d916e11c9ac2475930a50d68081d129e8e9234f5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-18T07:50:33Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-18T07:50:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-18T07:50:33Z",
+      "comment_body_sha256": "67b533eaed41418d87705bd2a2e4a60a51303674ca4c56a56bc0b6266a9c14c3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner tuple (P1)** - The action pin now names v3.97.0, but version still names the v3.95.9 artifact digest. The CI guard at test/scripts/ci-workflow-guards.test.ts:3364 requires the...; Review finding: [P1] Synchronize the TruffleHog scanner tuple — .github/workflows/ci.yml:1066-1070 - [P1] Refresh the Android attestation contract assertion — .github/workflows/an... (sha=6d18cad71a732a184b887e1edf9326cda32ebfdf)",
+      "expected_head_sha": "6d18cad71a732a184b887e1edf9326cda32ebfdf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T08:03:32.581Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "97a320f2a3da6f0ca4f9e8c26835f157f26564a6",
         "cluster_id": null,
         "job_path": null
       }
