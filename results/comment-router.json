@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T13:32:16.968Z",
+  "updated_at": "2026-08-18T13:34:54.486Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94594:4742630370:2026-08-18T08:09:32Z:clawsweeper_needs_human",
-      "comment_id": "4742630370",
-      "comment_version_key": "4742630370:2026-08-18T08:09:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/94594#issuecomment-4742630370",
-      "comment_created_at": "2026-06-18T13:51:57Z",
-      "comment_updated_at": "2026-08-18T08:09:32Z",
-      "comment_body_sha256": "97b3228b0486e905a6d371ea8142cfebbae758dbc631dec5179682eccc5e7e76",
-      "repo": "openclaw/openclaw",
-      "issue_number": 94594,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests, but the supplied evidence contains no inspectable after-fix gateway or active-run trace showing a real cycle...; Review finding: [P0] Bound visited-agent routes at the protocol boundary — packages/gateway-protocol/src/schema/primitives.ts:44 - [P1] Carry structured provenance through active-... (sha=f05213f2eb813f80c45b1f092c40add86dc90f97)",
-      "expected_head_sha": "f05213f2eb813f80c45b1f092c40add86dc90f97",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T08:24:36.319Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openmeta/37842-sessions-send-cycle-guard",
-        "head_sha": "f05213f2eb813f80c45b1f092c40add86dc90f97",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94806:4748697005:2026-08-18T08:09:21Z:clawsweeper_auto_repair",
       "comment_id": "4748697005",
@@ -31939,6 +31906,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T13:32:16.968Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125758:5326757468:2026-08-18T13:32:18Z:clawsweeper_needs_human",
+      "comment_id": "5326757468",
+      "comment_version_key": "5326757468:2026-08-18T13:32:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125758#issuecomment-5326757468",
+      "comment_created_at": "2026-08-18T10:14:01Z",
+      "comment_updated_at": "2026-08-18T13:32:18Z",
+      "comment_body_sha256": "1eb631e586d2c0280e2cc15dbd33e747e8e6249e4b238ae6a118cf7bbf05590b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125758,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by net 79 lines for cross-boundary session projection and one-shot PTY cleanup; retain the server-owned lifecycle as the sole policy and re-run fresh review befo... (sha=41c6b6916646a03e115bc886afa3e014ec2d3798)",
+      "expected_head_sha": "41c6b6916646a03e115bc886afa3e014ec2d3798",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T13:34:54.486Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/nervous-agnesi-f2b24c",
+        "head_sha": "38e29ffb2cef091c497a8e9968da3247d1b8f2cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
