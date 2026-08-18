@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125942",
+  "mode": "autonomous",
+  "run_id": "32182945350",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32182945350",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125942.md",
+  "published_at": "2026-08-18T20:42:29.554Z",
+  "canonical": "#125942",
+  "canonical_issue": "#125942",
+  "canonical_pr": null,
+  "summary": "#125942 is a confirmed canonical bug: the shared transport projection drops the canonical non-trailing failed-turn marker before replay, leaving adjacent user turns. A narrow two-file fix PR is planned; this read-only checkout cannot apply or validate it.",
+  "actions": [
+    {
+      "target": "#125942",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": null,
+      "reason": "The issue remains the single canonical implementation target; no duplicate or contributor PR was hydrated."
+    },
+    {
+      "target": "#125942",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": "#125942",
+      "reason": "Retain only the exact stopReason:error single-text sentinel when a later user turn exists; preserve the existing raw failed tool-call/result removal path."
+    },
+    {
+      "target": "#125942",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": "#125942",
+      "reason": "The repair is bounded to the shared projection and a behavior-level transport regression; replay-history production code already owns marker generation."
+    },
+    {
+      "target": "#125942",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": "#125942",
+      "reason": "Create or update the one authorized fix PR only after applying the artifact and completing its required validation."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
