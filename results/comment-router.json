@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T08:32:22.252Z",
+  "updated_at": "2026-08-18T08:32:22.435Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:86793:4541639151:2026-08-18T04:11:00Z:clawsweeper_auto_repair",
-      "comment_id": "4541639151",
-      "comment_version_key": "4541639151:2026-08-18T04:11:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/86793#issuecomment-4541639151",
-      "comment_created_at": "2026-05-26T07:31:37Z",
-      "comment_updated_at": "2026-08-18T04:11:00Z",
-      "comment_body_sha256": "1778beaf4e0664217ec337d407fb1ac9eb589e8b92cf0140ebcf3571c56b20a5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 86793,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=723a1d71cc1d9c58b1dbc53a3f717063faadcf30)",
-      "expected_head_sha": "723a1d71cc1d9c58b1dbc53a3f717063faadcf30",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T04:21:48.613Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bug-040-lightweight-session-events",
-        "head_sha": "723a1d71cc1d9c58b1dbc53a3f717063faadcf30",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:87434:4559110888:2026-08-18T04:11:42Z:clawsweeper_auto_repair",
       "comment_id": "4559110888",
@@ -31908,6 +31875,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/discrawl:180:5325656051:2026-08-18T08:31:41Z:clawsweeper_needs_human",
+      "comment_id": "5325656051",
+      "comment_version_key": "5325656051:2026-08-18T08:31:41Z",
+      "comment_url": "https://github.com/openclaw/discrawl/pull/180#issuecomment-5325656051",
+      "comment_created_at": "2026-08-18T08:31:41Z",
+      "comment_updated_at": "2026-08-18T08:31:41Z",
+      "comment_body_sha256": "5af16b62bb9c06d13381d5dbd2085ccb90c3d35f4beb5775aea6ce16c3e826a3",
+      "repo": "openclaw/discrawl",
+      "issue_number": 180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports live E2E results but supplies no inspectable terminal output, recording, log, or linked artifact; add redacted after-...; Review finding: [P1] Invalidate indexes after a language is disabled — internal/store/lexical.go:77-78 - [P2] Allow configured Python paths on Windows — internal/store/lexical_pyt... (sha=4b41ae9ea73efb96ba6c66724ad97c7f52aab85d)",
+      "expected_head_sha": "4b41ae9ea73efb96ba6c66724ad97c7f52aab85d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T08:32:22.435Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/multilingual-lexical-search",
+        "head_sha": "4b41ae9ea73efb96ba6c66724ad97c7f52aab85d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
