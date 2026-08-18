@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T08:03:42.364Z",
+  "updated_at": "2026-08-18T08:03:46.390Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125526:5323255008:2026-08-18T03:33:22Z:re_review",
-      "comment_id": "5323255008",
-      "comment_version_key": "5323255008:2026-08-18T03:33:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125526#issuecomment-5323255008",
-      "comment_created_at": "2026-08-18T03:33:22Z",
-      "comment_updated_at": "2026-08-18T03:33:22Z",
-      "comment_body_sha256": "5111ff1c85b826a62f8ca3056796486b2983d3b7d9054c1b6cf5aa98d0c04631",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125526,
-      "author": "TreyLawrence",
-      "author_id": 665297,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T03:39:25.863Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "mcp-volatile-request-headers",
-        "head_sha": "5813a8164e04b072c3289c1b5e450ccdc07fdfa0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80392:4416083466:2026-08-18T03:35:54Z:autoclose",
       "comment_id": "4416083466",
@@ -31736,6 +31689,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/table-dialog-restyle",
         "head_sha": "fb38c440149acfc13f1763894d37d8c3abdc460c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125681:5324961723:2026-08-18T07:54:50Z:clawsweeper_needs_human",
+      "comment_id": "5324961723",
+      "comment_version_key": "5324961723:2026-08-18T07:54:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125681#issuecomment-5324961723",
+      "comment_created_at": "2026-08-18T07:24:15Z",
+      "comment_updated_at": "2026-08-18T07:54:50Z",
+      "comment_body_sha256": "026222fdad3f1e2618ec5c6b1139b3ecc19dd28329d9892c7449393d363d0a15",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125681,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The cited exact-head release E2E run was still in progress, and GitHub reports the branch behind main; validate the eventual merge head before landing. (sha=577616ea1930986bc7074960e093e3231e7f0a0d)",
+      "expected_head_sha": "577616ea1930986bc7074960e093e3231e7f0a0d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T08:03:46.390Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/repo-e2e-contract-drift",
+        "head_sha": "577616ea1930986bc7074960e093e3231e7f0a0d",
         "cluster_id": null,
         "job_path": null
       }
