@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125745",
+  "mode": "autonomous",
+  "run_id": "32127534097",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32127534097",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125745.md",
+  "published_at": "2026-08-18T10:44:27.043Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125745",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125745",
+  "canonical_pr": null,
+  "summary": "Confirmed a narrow source-level regression on main: models.probe creates isolated auth state, but the ordinary prepared-runtime path rebinds it to the active Gateway owner before auth selection. The existing isolated read-only mode is the canonical repair. Implementation is blocked because this checkout is read-only, dependencies are absent, and ../codex is unavailable for the repository-required direct inspection.",
+  "actions": [
+    {
+      "target": "#125745",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125745",
+      "candidate_fix": null,
+      "reason": "The issue remains an open canonical bug with a narrow, existing-mechanism repair path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125745",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125745",
+      "candidate_fix": null,
+      "reason": "A writable executor with dependencies and the required Codex source checkout can implement this artifact directly."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
