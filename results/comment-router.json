@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T10:15:27.292Z",
+  "updated_at": "2026-08-18T10:15:29.577Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125567:5324028029:2026-08-18T05:29:48Z:re_review",
-      "comment_id": "5324028029",
-      "comment_version_key": "5324028029:2026-08-18T05:29:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125567#issuecomment-5324028029",
-      "comment_created_at": "2026-08-18T05:29:48Z",
-      "comment_updated_at": "2026-08-18T05:29:48Z",
-      "comment_body_sha256": "387683cd65d3645ee6fe169858179a240ebf2e7375aea5dc9819f74be80aac3d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125567,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T05:30:31.672Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/bounded-memory-and-hot-reload-9aab48",
-        "head_sha": "2eb424253ea508ad462d263bf3d6cc63e3606692",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125579:5324008684:2026-08-18T05:27:02Z:re_review",
       "comment_id": "5324008684",
@@ -32417,6 +32370,39 @@
         "kind": "pull_request",
         "branch": "fix/skill-workshop-canonical-proposal-targets",
         "head_sha": "033962fb8c69a62e3deeb1b10cf3c2e5af61abb3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125645:5324337931:2026-08-18T10:07:40Z:clawsweeper_auto_repair",
+      "comment_id": "5324337931",
+      "comment_version_key": "5324337931:2026-08-18T10:07:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125645#issuecomment-5324337931",
+      "comment_created_at": "2026-08-18T06:12:33Z",
+      "comment_updated_at": "2026-08-18T10:07:40Z",
+      "comment_body_sha256": "722ecf57a0080abfac16fb1ea9d61f8ea1fe6ff105c9e296d56a98888861db91",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125645,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=70b152abaf4cf17ed580df06c807999ce6d3139b)",
+      "expected_head_sha": "70b152abaf4cf17ed580df06c807999ce6d3139b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T10:15:29.577Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cool-tharp-824ba1",
+        "head_sha": "70b152abaf4cf17ed580df06c807999ce6d3139b",
         "cluster_id": null,
         "job_path": null
       }
