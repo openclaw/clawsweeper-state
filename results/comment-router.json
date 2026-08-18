@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T02:54:27.738Z",
+  "updated_at": "2026-08-18T02:54:34.554Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124429:5321254983:2026-08-17T23:03:04Z:re_review",
-      "comment_id": "5321254983",
-      "comment_version_key": "5321254983:2026-08-17T23:03:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124429#issuecomment-5321254983",
-      "comment_created_at": "2026-08-17T23:03:04Z",
-      "comment_updated_at": "2026-08-17T23:03:04Z",
-      "comment_body_sha256": "722f0186bfb2e21ac6f0b6a201dc61fa180d7658517f0e6dac95078c602a6846",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124429,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T23:03:47.496Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-issue-121481",
-        "head_sha": "94151cb850f3a4fbf467f92ecc51e5475220db92",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5321247252:2026-08-17T23:02:00Z:re_review",
       "comment_id": "5321247252",
@@ -31342,6 +31295,39 @@
         "kind": "pull_request",
         "branch": "fix/history-limit-schema-parity",
         "head_sha": "dd955861e81a84efb1b2e3198333f6f49fb01784",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117302:5150624297:2026-08-18T02:41:59Z:clawsweeper_needs_human",
+      "comment_id": "5150624297",
+      "comment_version_key": "5150624297:2026-08-18T02:41:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117302#issuecomment-5150624297",
+      "comment_created_at": "2026-08-01T08:29:36Z",
+      "comment_updated_at": "2026-08-18T02:41:59Z",
+      "comment_body_sha256": "60ab41222c35965df57db039f3a176606ed0fc14fdde62ee3ae771283d421457",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117302,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds 12 production lines; that local schema/type duplication is justified because no matching health-monitor schema is exported through the Plugin SDK, but it should remai... (sha=e3233aa856a3670ad491cca5c269e3dc32f24fe7)",
+      "expected_head_sha": "e3233aa856a3670ad491cca5c269e3dc32f24fe7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T02:54:34.554Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/irc-health-monitor-schema",
+        "head_sha": "e3233aa856a3670ad491cca5c269e3dc32f24fe7",
         "cluster_id": null,
         "job_path": null
       }
