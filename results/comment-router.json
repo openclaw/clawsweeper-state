@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T06:00:21.638Z",
+  "updated_at": "2026-08-18T06:00:23.636Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124303:5322574825:2026-08-18T02:11:04Z:re_review",
-      "comment_id": "5322574825",
-      "comment_version_key": "5322574825:2026-08-18T02:11:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124303#issuecomment-5322574825",
-      "comment_created_at": "2026-08-18T02:11:04Z",
-      "comment_updated_at": "2026-08-18T02:11:04Z",
-      "comment_body_sha256": "6f61161de037af384e3c0b0d40710e47dd3c3d6730f2f80271d9cb464b60633d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124303,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T02:11:49.055Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-context-token-freshness",
-        "head_sha": "231f4718d61a32ad1be4bcf5c052a37738fe2a6a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5322581975:2026-08-18T02:12:11Z:re_review",
       "comment_id": "5322581975",
@@ -31685,6 +31638,39 @@
         "kind": "pull_request",
         "branch": "fix/settings-first-write-lock",
         "head_sha": "ec3d2dd77acfa7f7feed1af927655c2686c6fccf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125296:5317087445:2026-08-18T05:58:26Z:clawsweeper_needs_human",
+      "comment_id": "5317087445",
+      "comment_version_key": "5317087445:2026-08-18T05:58:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125296#issuecomment-5317087445",
+      "comment_created_at": "2026-08-17T14:34:17Z",
+      "comment_updated_at": "2026-08-18T05:58:26Z",
+      "comment_body_sha256": "4dbd4b957617023cf4e1242f6f5bb2b4fad9398c33d72df4a8c86ee7d144115b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125296,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The portable process-management path becomes release-time availability-critical; merge only after exact-head CI completes green because a lifecycle mismatch could stall a publish job. (sha=591f33020341bd2ce4b246ec989bb475f57d0d6c)",
+      "expected_head_sha": "591f33020341bd2ce4b246ec989bb475f57d0d6c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T06:00:23.636Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawhub-publish-portable-timeout",
+        "head_sha": "591f33020341bd2ce4b246ec989bb475f57d0d6c",
         "cluster_id": null,
         "job_path": null
       }
