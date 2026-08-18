@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T13:01:03.283Z",
+  "updated_at": "2026-08-18T13:01:57.103Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119356:5185154559:2026-08-18T06:41:17Z:clawsweeper_needs_human",
-      "comment_id": "5185154559",
-      "comment_version_key": "5185154559:2026-08-18T06:41:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119356#issuecomment-5185154559",
-      "comment_created_at": "2026-08-04T22:06:16Z",
-      "comment_updated_at": "2026-08-18T06:41:17Z",
-      "comment_body_sha256": "9146be5d253d760eb5e90e3b63ee43233895c699afb8fc37b701c960e9b3642b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119356,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing configurations carrying this formerly accepted key will refuse normal strict loading until the operator runs openclaw doctor --fix; the included migration is the intended rec... (sha=dc4ad4f5e997aabfb07a1f0bc82776635995eb8b)",
-      "expected_head_sha": "dc4ad4f5e997aabfb07a1f0bc82776635995eb8b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T07:04:14.708Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/irc-drop-dead-mention-patterns",
-        "head_sha": "dc4ad4f5e997aabfb07a1f0bc82776635995eb8b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123189:5281706896:2026-08-18T06:55:37Z:clawsweeper_needs_human",
       "comment_id": "5281706896",
@@ -32439,6 +32406,53 @@
       "status": "skipped",
       "processed_at": "2026-08-18T13:01:03.283Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123975:5328522512:2026-08-18T13:01:09Z:re_review",
+      "comment_id": "5328522512",
+      "comment_version_key": "5328522512:2026-08-18T13:01:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123975#issuecomment-5328522512",
+      "comment_created_at": "2026-08-18T13:01:09Z",
+      "comment_updated_at": "2026-08-18T13:01:09Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123975,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T13:01:54.198Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/tsgo-stall-timeout",
+        "head_sha": "ddb57dff9b49c6fbe8e32c030ca7ba168cae8875",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
