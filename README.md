@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 18, 2026, 08:13 UTC
+Last source update: Aug 18, 2026, 08:30 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Aug 18, 2026, 08:13 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Review in progress | Aug 18, 2026, 08:13 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32114939736) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Hot intake publish complete | Aug 18, 2026, 08:30 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32115166813) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 18, 2026, 07:43 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32112684270) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 18, 2026, 04:09 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32098049760) |
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 18, 2026, 08:10 UTC
+Last source update: Aug 18, 2026, 08:15 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 509 | 100% |
-| Run attempts archived | 1418 | audit |
+| Run attempts archived | 1419 | audit |
 | Latest successful clusters | 437 | 85.9% |
 | Latest failed clusters | 70 | 13.8% |
 | Latest cancelled clusters | 2 | 0.4% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 509 clusters: 199 maintainer action, 115 automation snapshot, 168 intervention needed, 27 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [automerge-openclaw-openclaw-119467](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119467.md) is maintainer_input: Before any merge-ready verdict, a maintainer must explicitly accept the intentional compatibility trade-off that pages reaching the 800-d....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#125570](https://github.com/openclaw/openclaw/pull/125570) is automation_failed: Implementation and local validation require a writable checkout with dependencies and the mandated ../codex source available..
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#119041](https://github.com/openclaw/openclaw/pull/119041) is automation_failed: Create the narrow credited fix from the cluster artifact in a writable checkout, then run the required regression and review gates..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#122865](https://github.com/openclaw/openclaw/pull/122865) is action_planned: The issue is an ordinary Control UI bug with a clear shared-owner boundary and no security or product-policy change..
 - Completed latest: no completed action in the latest records.
 
@@ -187,8 +187,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119041](https://github.com/openclaw/openclaw/pull/119041) | automation_failed | Create the narrow credited fix from the cluster artifact in a writable checkout, then run the required regression and review gates. | Aug 18, 2026, 08:15 UTC | [issue-openclaw-openclaw-119041](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-119041.md) | [32114480332](https://github.com/openclaw/clawsweeper/actions/runs/32114480332) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#125570](https://github.com/openclaw/openclaw/pull/125570) | automation_failed | Implementation and local validation require a writable checkout with dependencies and the mandated ../codex source available. | Aug 18, 2026, 08:10 UTC | [issue-openclaw-openclaw-125570](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-125570.md) | [32112495605](https://github.com/openclaw/clawsweeper/actions/runs/32112495605) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119041](https://github.com/openclaw/openclaw/pull/119041) | automation_failed | Fix the Slack preview owner; no configuration or provider behavior changes are needed. | Aug 18, 2026, 07:55 UTC | [issue-openclaw-openclaw-119041](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-119041.md) | [32113057261](https://github.com/openclaw/clawsweeper/actions/runs/32113057261) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#123112](https://github.com/openclaw/openclaw/pull/123112) | automation_blocked | Repair the Telegram-owned label producer only; do not change routing, session keys, outbound transcript ownership, or configuration. | Aug 13, 2026, 10:50 UTC | [issue-openclaw-openclaw-123112](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-123112.md) | [31692425362](https://github.com/openclaw/clawsweeper/actions/runs/31692425362) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#84486](https://github.com/openclaw/openclaw/pull/84486) | automation_blocked | The canonical issue remains a narrow reproducible bug. Implementation and regression validation require a writable checkout with dependencies avail... | Aug 13, 2026, 10:23 UTC | [issue-openclaw-openclaw-84486](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-84486.md) | [31690409936](https://github.com/openclaw/clawsweeper/actions/runs/31690409936) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#107814](https://github.com/openclaw/openclaw/pull/107814) | automation_blocked | The shared Responses stream owner should preserve valid streamed JSON when terminal data is an empty object, without a Spark-specific branch. | Aug 13, 2026, 03:19 UTC | [issue-openclaw-openclaw-107814](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-107814.md) | [31663313156](https://github.com/openclaw/clawsweeper/actions/runs/31663313156) |
