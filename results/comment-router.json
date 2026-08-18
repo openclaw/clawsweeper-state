@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T03:50:41.674Z",
+  "updated_at": "2026-08-18T03:52:21.956Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120805:5229242424:2026-08-18T00:06:25Z:clawsweeper_needs_human",
-      "comment_id": "5229242424",
-      "comment_version_key": "5229242424:2026-08-18T00:06:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120805#issuecomment-5229242424",
-      "comment_created_at": "2026-08-09T01:48:51Z",
-      "comment_updated_at": "2026-08-18T00:06:25Z",
-      "comment_body_sha256": "56195d6ce708d3615941f9e5c0a26c7b36d8565ba57779431cc1d9ff9b533af3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120805,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this head as conflicting with current main, so its old-base CI cannot prove the eventual merge result. (sha=7c783db0da0e70e51bffd8a7122e26aad475c136)",
-      "expected_head_sha": "7c783db0da0e70e51bffd8a7122e26aad475c136",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T00:10:17.053Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/model-picker-provenance",
-        "head_sha": "7c783db0da0e70e51bffd8a7122e26aad475c136",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120805:5229998567:2026-08-09T05:42:12Z:re_review",
       "comment_id": "5229998567",
@@ -31132,6 +31099,53 @@
         "kind": "pull_request",
         "branch": "fix/session-context-token-freshness",
         "head_sha": "6a3a52fa78ee126d1fc9dc01a420c0739dd47987",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:80396:5323371360:2026-08-18T03:51:32Z:re_review",
+      "comment_id": "5323371360",
+      "comment_version_key": "5323371360:2026-08-18T03:51:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5323371360",
+      "comment_created_at": "2026-08-18T03:51:32Z",
+      "comment_updated_at": "2026-08-18T03:51:32Z",
+      "comment_body_sha256": "0755aa3495624cbc7a3ac28b62035488b976c44e7c5d11a936a014b48a937ee0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 80396,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T03:52:18.551Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/41966-media-token-warn-in-fence",
+        "head_sha": "e7b1cfa51332e40309ab06ea164a1785ffc1374e",
         "cluster_id": null,
         "job_path": null
       },
