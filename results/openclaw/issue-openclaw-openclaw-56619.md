@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-56619"
 mode: "autonomous"
-run_id: "32140342058"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32140342058"
+run_id: "32139059104"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32139059104"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T13:15:04.281Z"
+published_at: "2026-08-18T13:08:21.638Z"
 canonical: "https://github.com/openclaw/openclaw/issues/56619"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/56619"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32140342058](https://github.com/openclaw/clawsweeper/actions/runs/32140342058)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32139059104](https://github.com/openclaw/clawsweeper/actions/runs/32139059104)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/56619
 
 ## Summary
 
-#56619 remains a source-reproducible documented-contract bug: `--notify` is documented, but WhatsApp provides no pairing notifier. Implementation is blocked because this checkout is read-only (including its parent, so required `../codex` source could not be cloned/inspected) and has no installed dependencies for test execution.
+#56619 reproduces on current main: the documented opt-in `--notify` path reaches a WhatsApp pairing adapter with no notifier and returns silently. A safe fix requires a Gateway-owned, account-scoped delivery authorization; this read-only checkout lacks dependencies and the mandatory sibling ../codex source checkout, so no code or validated PR can be produced.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/56619
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #56619 | fix_needed | blocked | canonical | Current-main source reproduction is clear, but the read-only environment blocks the mandatory Codex-source gate and all implementation/validation writes. |
-| cluster:issue-openclaw-openclaw-56619 | build_fix_artifact | blocked | canonical | A narrow new-fix-PR plan is available, but cannot be implemented in this read-only checkout. |
-| #94386 | keep_closed | skipped | superseded | Closed context only; no closure or mutation is valid. |
-| #96277 | keep_closed | skipped | superseded | Closed context only; no closure or mutation is valid. |
-| #97733 | route_security | planned | security_sensitive | Security-sensitive linked reference; no repair, comment, close, or merge action is proposed. |
+| #56619 | fix_needed | blocked | canonical | Implementation is blocked by the read-only checkout, missing dependencies, and missing mandatory ../codex checkout. The issue remains a source-reproduced canonical bug. |
+| cluster:issue-openclaw-openclaw-56619 | build_fix_artifact | blocked | canonical | A narrow repair plan exists, but implementation and proof require a writable, dependency-complete checkout with the mandatory Codex source available. |
+| #94386 | keep_closed | skipped | superseded | Already closed context ref. |
+| #96277 | keep_closed | skipped | superseded | Already closed context ref. |
+| #97733 | route_security | planned | security_sensitive | Security-sensitive linked ref; no repair action is proposed for it. |
 
 ## Needs Human
 
