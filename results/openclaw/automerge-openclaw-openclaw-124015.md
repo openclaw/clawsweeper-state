@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-124015"
 mode: "autonomous"
-run_id: "32146732776"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32146732776"
+run_id: "32149241980"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32149241980"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-18T14:23:33.910Z"
+published_at: "2026-08-18T14:45:57.920Z"
 canonical: "#124015"
 canonical_issue: null
-canonical_pr: "#124015"
-actions_total: 1
+canonical_pr: "https://github.com/openclaw/openclaw/pull/124015"
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32146732776](https://github.com/openclaw/clawsweeper/actions/runs/32146732776)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32149241980](https://github.com/openclaw/clawsweeper/actions/runs/32149241980)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #124015
 
 ## Summary
 
-Make PR #124015 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+#124015 remains the canonical PR. Its exact hydrated head has failing required CI, so it needs a contributor-branch repair and exact-head re-review; this job forbids merge and close actions.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Make PR #124015 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124015 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| https://github.com/openclaw/openclaw/pull/124015 | fix_needed | planned | canonical | Repair the adopted canonical branch, first obtaining the failed lane's exact logs and addressing only actionable CI or review findings. |
+| https://github.com/openclaw/openclaw/pull/124015 | build_fix_artifact | planned | canonical | Emit the prescribed bounded repair artifact; do not merge or close. |
 
 ## Needs Human
 
