@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T02:33:12.603Z",
+  "updated_at": "2026-08-18T02:35:14.863Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5311829854:2026-08-17T04:31:04Z:re_review",
-      "comment_id": "5311829854",
-      "comment_version_key": "5311829854:2026-08-17T04:31:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5311829854",
-      "comment_created_at": "2026-08-17T04:31:04Z",
-      "comment_updated_at": "2026-08-17T04:31:04Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T22:36:24.455Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5312025375:2026-08-17T04:57:52Z:re_review",
       "comment_id": "5312025375",
@@ -31795,6 +31768,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T02:33:12.603Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124821:5309595223:2026-08-18T02:33:28Z:clawsweeper_needs_human",
+      "comment_id": "5309595223",
+      "comment_version_key": "5309595223:2026-08-18T02:33:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124821#issuecomment-5309595223",
+      "comment_created_at": "2026-08-16T20:47:49Z",
+      "comment_updated_at": "2026-08-18T02:33:28Z",
+      "comment_body_sha256": "5e4cbe94c5d9cef87c6326b7d00ca91a771fc54566d9f97d3dd15fb725011d22",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124821,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally omits sandbox/skills-workspaces/** from future archives; current source and docs identify it as generated runtime state, so that reserved-path contract should re... (sha=fdfcd3f6b39cf60169b81e7cb7065fc03fa17790)",
+      "expected_head_sha": "fdfcd3f6b39cf60169b81e7cb7065fc03fa17790",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T02:35:14.863Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/backup-filter-managed-runtime-symlinks-20260817",
+        "head_sha": "fdfcd3f6b39cf60169b81e7cb7065fc03fa17790",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
