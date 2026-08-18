@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-124015"
 mode: "autonomous"
-run_id: "32155447119"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32155447119"
-head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
-workflow_conclusion: "success"
+run_id: "32190222062"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32190222062"
+head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-18T16:07:58.532Z"
+published_at: "2026-08-18T22:13:02.449Z"
 canonical: "#124015"
 canonical_issue: null
 canonical_pr: "#124015"
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32155447119](https://github.com/openclaw/clawsweeper/actions/runs/32155447119)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32190222062](https://github.com/openclaw/clawsweeper/actions/runs/32190222062)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: #124015
 
 ## Summary
 
-#124015 remains the canonical adopted PR. It has a clean ClawSweeper code-review result but failing exact-head CI, so it requires contributor-branch repair and revalidation; merge is not authorized.
+Make PR #124015 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Canonical: #124015
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124015 | fix_needed | planned | canonical | Rebase onto current main, retrieve the two failed-job logs for the exact refreshed head, make only the necessary owner-boundary repair, then rerun exact-head validation and Codex /review. |
+| #124015 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
