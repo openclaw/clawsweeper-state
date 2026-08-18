@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119041"
 mode: "autonomous"
-run_id: "32112507139"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32112507139"
+run_id: "32113057261"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32113057261"
 head_sha: "055ffba223f033a8cac3dc4287e207f6ab509369"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T07:51:05.900Z"
+published_at: "2026-08-18T07:55:54.621Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119041"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119041"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32112507139](https://github.com/openclaw/clawsweeper/actions/runs/32112507139)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32113057261](https://github.com/openclaw/clawsweeper/actions/runs/32113057261)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/119041
 
 ## Summary
 
-Implementation is blocked by the read-only runner: no branch or files can be created, Corepack cannot create its cache, and the required sibling ../codex source is absent. Source inspection identifies the narrow Slack draft-owner repair and regression shape for a writable executor.
+Current main has a narrow Slack partial-preview lifecycle defect. The required branch/test work is blocked in this read-only checkout; the required sibling ../codex source checkout is also absent, so no validation certification is made.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Implementation is blocked by the read-only runner: no branch or files can be cre
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #80862 | keep_closed | skipped | related | Historical context only. |
-| #85612 | keep_closed | skipped | related | Historical context only. |
-| #119041 | fix_needed | blocked | canonical | A writable checkout with dependencies and the required sibling Codex source is needed before implementation or proof can be completed. |
-| #119067 | keep_closed | skipped | superseded | Historical source only. |
-| cluster:issue-openclaw-openclaw-119041 | build_fix_artifact | planned | canonical |  |
+| #119041 | fix_needed | planned | canonical | Fix the Slack preview owner; no configuration or provider behavior changes are needed. |
+| cluster:issue-openclaw-openclaw-119041 | build_fix_artifact | planned | canonical | Executor should implement and validate one new fix PR on the designated ClawSweeper branch. |
+| #119067 | keep_closed | skipped | superseded | Historical evidence only. |
+| #85612 | keep_closed | skipped | related | Adjacent, distinct mode. |
+| #80862 | keep_closed | skipped | related | Adjacent channel issue. |
 
 ## Needs Human
 
