@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T02:32:18.002Z",
+  "updated_at": "2026-08-18T02:32:33.616Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5311145496:2026-08-17T02:39:06Z:re_review",
-      "comment_id": "5311145496",
-      "comment_version_key": "5311145496:2026-08-17T02:39:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5311145496",
-      "comment_created_at": "2026-08-17T02:39:06Z",
-      "comment_updated_at": "2026-08-17T02:39:06Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T22:36:24.455Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5311276485:2026-08-17T03:00:31Z:re_review",
       "comment_id": "5311276485",
@@ -31782,6 +31755,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125523:5322755113:2026-08-18T02:31:47Z:clawsweeper_auto_repair",
+      "comment_id": "5322755113",
+      "comment_version_key": "5322755113:2026-08-18T02:31:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125523#issuecomment-5322755113",
+      "comment_created_at": "2026-08-18T02:31:47Z",
+      "comment_updated_at": "2026-08-18T02:31:47Z",
+      "comment_body_sha256": "ebc24867d967ff7a20d10cca34b28d78668e32b3ddc823c9cee4903865e49b96",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125523,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=76cae951523e9cb980b21ff07a62d0fa0490030b)",
+      "expected_head_sha": "76cae951523e9cb980b21ff07a62d0fa0490030b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T02:32:33.616Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/setup-provider-drift-diagnostics",
+        "head_sha": "76cae951523e9cb980b21ff07a62d0fa0490030b",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
