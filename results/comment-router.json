@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T00:54:21.313Z",
+  "updated_at": "2026-08-18T00:55:15.118Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5225568107:2026-08-08T09:44:51Z:re_review",
-      "comment_id": "5225568107",
-      "comment_version_key": "5225568107:2026-08-08T09:44:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5225568107",
-      "comment_created_at": "2026-08-08T09:44:51Z",
-      "comment_updated_at": "2026-08-08T09:44:51Z",
-      "comment_body_sha256": "47f97508a6846c39f6d465473d375f6abf789029c1c98c61527ee4956d7e6eef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review against current tip",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T21:56:32.823Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5225765117:2026-08-08T10:47:18Z:re_review",
       "comment_id": "5225765117",
@@ -30935,6 +30908,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125432:5321028968:2026-08-18T00:54:24Z:clawsweeper_needs_human",
+      "comment_id": "5321028968",
+      "comment_version_key": "5321028968:2026-08-18T00:54:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125432#issuecomment-5321028968",
+      "comment_created_at": "2026-08-17T22:33:05Z",
+      "comment_updated_at": "2026-08-18T00:54:24Z",
+      "comment_body_sha256": "f799380e89c22d235e5d3735be7ecd6ab85dae9b8be77775fa39898728b2a41e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125432,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing qualified Matrix IDs whose configured casing differs from the actual account will stop authorizing after upgrade; the PR intentionally offers documentation rather than a safe... (sha=3632441902f6a8311f8eac7dbe9f0959c555c531)",
+      "expected_head_sha": "3632441902f6a8311f8eac7dbe9f0959c555c531",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T00:55:15.118Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/matrix-identity-exactness",
+        "head_sha": "3632441902f6a8311f8eac7dbe9f0959c555c531",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
