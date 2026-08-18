@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T20:56:43.485Z",
+  "updated_at": "2026-08-18T20:57:37.933Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122694:5269293395:2026-08-18T13:30:44Z:clawsweeper_needs_human",
-      "comment_id": "5269293395",
-      "comment_version_key": "5269293395:2026-08-18T13:30:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122694#issuecomment-5269293395",
-      "comment_created_at": "2026-08-12T16:03:51Z",
-      "comment_updated_at": "2026-08-18T13:30:44Z",
-      "comment_body_sha256": "29825435b58d7eb25cfbe55758c056e237c3f07fd5754ff73864170cecbf60ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122694,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep node-host registration behind the loader validity gate (P1)** - The added block runs before the existing validateOnly and missing-register exits, then the old full-activation block runs again. Active regist...; Review finding: [P1] Keep node-host registration behind the loader validity gate — src/plugins/loader-runtime-candidate.ts:493-505 - [medium] Invalid plugin definitions can regist... (sha=c4b7deb107ebddaf286a4949cf6b850f0bde4524)",
-      "expected_head_sha": "c4b7deb107ebddaf286a4949cf6b850f0bde4524",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T13:52:55.381Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/file-transfer-dir-list-count",
-        "head_sha": "c4b7deb107ebddaf286a4949cf6b850f0bde4524",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124025:5300731845:2026-08-18T13:32:24Z:clawsweeper_needs_human",
       "comment_id": "5300731845",
@@ -32959,6 +32926,53 @@
       "status": "skipped",
       "processed_at": "2026-08-18T20:56:43.485Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123871:5333965207:2026-08-18T20:56:53Z:re_review",
+      "comment_id": "5333965207",
+      "comment_version_key": "5333965207:2026-08-18T20:56:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123871#issuecomment-5333965207",
+      "comment_created_at": "2026-08-18T20:56:53Z",
+      "comment_updated_at": "2026-08-18T20:56:53Z",
+      "comment_body_sha256": "5549867bbd71b0801888c41d785e17fd5334105ee4e46976109fc9b6ef104ef2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123871,
+      "author": "jjjhenriksen",
+      "author_id": 179184921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T20:57:36.406Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/status-ownerless",
+        "head_sha": "0369ded2dfa3f16b89baa65a68f94a3f5532449d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
