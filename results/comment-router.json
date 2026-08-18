@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T16:26:30.272Z",
+  "updated_at": "2026-08-18T16:28:50.379Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125740:5326038028:2026-08-18T09:34:11Z:clawsweeper_auto_repair",
-      "comment_id": "5326038028",
-      "comment_version_key": "5326038028:2026-08-18T09:34:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125740#issuecomment-5326038028",
-      "comment_created_at": "2026-08-18T09:07:16Z",
-      "comment_updated_at": "2026-08-18T09:34:11Z",
-      "comment_body_sha256": "6d66a63c5835e4eecd74c4fc497941087029e111922e471f18daecd3d9faaed9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125740,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=93be51a4e54c1c814187aaa73f942164e7ef1ea6)",
-      "expected_head_sha": "93be51a4e54c1c814187aaa73f942164e7ef1ea6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T09:51:26.046Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/125570-preserve-skill-description",
-        "head_sha": "0d704cd6f82617466c773419490e45326ec725df",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125665:5326519402:2026-08-18T09:51:23Z:re_review",
       "comment_id": "5326519402",
@@ -32467,6 +32434,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T16:26:30.272Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:521:5329540310:2026-08-18T16:28:13Z:clawsweeper_needs_human",
+      "comment_id": "5329540310",
+      "comment_version_key": "5329540310:2026-08-18T16:28:13Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/521#issuecomment-5329540310",
+      "comment_created_at": "2026-08-18T14:22:52Z",
+      "comment_updated_at": "2026-08-18T16:28:13Z",
+      "comment_body_sha256": "d8b8a9a1e2045d02d42daa4f980741e9f9c44b45dd66aa2f989a10c643f57eee",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 521,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep foreground menu actions generation-pinned (P1)** - appInfo is authorized at lines 40–44, but foreground path inspection and both foreground click overloads receive the original appIdentifier. Those services...; Review finding: [P1] Keep foreground menu actions generation-pinned — Apps/CLI/Sources/PeekabooCLI/Commands/System/MenuCommand+Click.swift:78-85 - [high] Foreground menu dispatch... (sha=4780ba819c365ecf956252f7efed429d1d4b05cb)",
+      "expected_head_sha": "4780ba819c365ecf956252f7efed429d1d4b05cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T16:28:50.379Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/background-exact-process-selectors",
+        "head_sha": "4780ba819c365ecf956252f7efed429d1d4b05cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
