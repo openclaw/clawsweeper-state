@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-18T22:14:03.473Z",
+  "updated_at": "2026-08-18T22:14:04.687Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125834:5330425595:2026-08-18T15:31:57Z:re_review",
-      "comment_id": "5330425595",
-      "comment_version_key": "5330425595:2026-08-18T15:31:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125834#issuecomment-5330425595",
-      "comment_created_at": "2026-08-18T15:31:57Z",
-      "comment_updated_at": "2026-08-18T15:31:57Z",
-      "comment_body_sha256": "79c2e74a7cfcd0099c1c77bf63f47e0206f6a0da770a11d5159561bd3cb55556",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125834,
-      "author": "osolmaz",
-      "author_id": 2453968,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T15:32:36.622Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "osolmaz/fix-ollama-response-hook",
-        "head_sha": "d5f7887e75b9932a235d5dd050036c23ebc548d8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124749:5330436653:2026-08-18T15:32:46Z:re_review",
-      "comment_id": "5330436653",
-      "comment_version_key": "5330436653:2026-08-18T15:32:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124749#issuecomment-5330436653",
-      "comment_created_at": "2026-08-18T15:32:46Z",
-      "comment_updated_at": "2026-08-18T15:32:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124749,
-      "author": "wakqasahmed",
-      "author_id": 4486133,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T15:34:20.852Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sync-transcript-rewrite-conflict-124393",
-        "head_sha": "6fa1d7f060fb84590af9ea3ef8ad8881c789ed00",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3049:5330329032:2026-08-18T15:33:36Z:clawsweeper_auto_repair",
       "comment_id": "5330329032",
@@ -32567,6 +32473,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125812:5328359554:2026-08-18T22:08:25Z:clawsweeper_needs_human",
+      "comment_id": "5328359554",
+      "comment_version_key": "5328359554:2026-08-18T22:08:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125812#issuecomment-5328359554",
+      "comment_created_at": "2026-08-18T12:46:43Z",
+      "comment_updated_at": "2026-08-18T22:08:25Z",
+      "comment_body_sha256": "890bb23c900c72a5795ab4b95d6d1bae5be3ed0a727d760f75f0f5965cfe77d0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125812,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body and follow-up comment describe results but provide no redacted terminal, runtime output, recording, or log artifact tied to the lat...; Review finding: [P1] Preserve Firecrawl masking after a hex prefix — src/logging/redact-patterns.ts:187 - [high] Shared Firecrawl detector can miss adjacent tokens — src/logging/r... (sha=b96f66c0bc34780c4363a762269829d9f127b991)",
+      "expected_head_sha": "b96f66c0bc34780c4363a762269829d9f127b991",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T22:14:04.687Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/transcript-redact-idempotency-key-125214",
+        "head_sha": "b96f66c0bc34780c4363a762269829d9f127b991",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125812:5329551716:2026-08-18T14:23:45Z:re_review",
+      "comment_id": "5329551716",
+      "comment_version_key": "5329551716:2026-08-18T14:23:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125812#issuecomment-5329551716",
+      "comment_created_at": "2026-08-18T14:23:45Z",
+      "comment_updated_at": "2026-08-18T14:23:45Z",
+      "comment_body_sha256": "dc86ae09ce45f7571152e398981a45e5c7b917e92ba692a6bc564a0e93ca57e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125812,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T22:14:04.687Z",
+      "target": null
     }
   ]
 }
