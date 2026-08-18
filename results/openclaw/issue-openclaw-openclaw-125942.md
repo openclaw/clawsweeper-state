@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125942"
 mode: "autonomous"
-run_id: "32173707100"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32173707100"
+run_id: "32175158788"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32175158788"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T19:08:51.158Z"
-canonical: "https://github.com/openclaw/openclaw/issues/125942"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/125942"
+published_at: "2026-08-18T19:22:10.707Z"
+canonical: "#125942"
+canonical_issue: "#125942"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32173707100](https://github.com/openclaw/clawsweeper/actions/runs/32173707100)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32175158788](https://github.com/openclaw/clawsweeper/actions/runs/32175158788)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/125942
+Canonical: #125942
 
 ## Summary
 
-Implementation is blocked in this worker: the required sibling Codex source is unavailable for the mandatory direct runtime inspection, and focused tests cannot start because the checkout lacks tsx. Source inspection matches the reported transport-filter ordering path, so a narrow two-file fix artifact is prepared for an equipped executor.
+#125942 is a narrow shared-transport bug: replay normalization preserves the canonical failure marker before a later user turn, but transport projection drops it. No files changed because the required ../codex inspection is unavailable and the read-only checkout lacks tsx for focused validation.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Implementation is blocked in this worker: the required sibling Codex source is u
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #125942 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,7 @@ Implementation is blocked in this worker: the required sibling Codex source is u
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125942 | fix_needed | blocked | canonical | A narrow repair is identified, but this read-only worker cannot satisfy the mandatory Codex-source gate or install the missing test dependency. |
-| cluster:issue-openclaw-openclaw-125942 | build_fix_artifact | blocked | canonical | Executor needs a writable checkout with sibling Codex source and installed dependencies before applying and validating the narrow fix. |
+| #125942 | fix_needed | blocked | canonical | Create the narrow fix once a writable, dependency-ready environment with ../codex is available. |
 
 ## Needs Human
 
