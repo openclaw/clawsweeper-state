@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T00:42:32.198Z",
+  "updated_at": "2026-08-18T00:42:40.713Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125384:5320530015:2026-08-17T21:34:51Z:re_review",
-      "comment_id": "5320530015",
-      "comment_version_key": "5320530015:2026-08-17T21:34:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125384#issuecomment-5320530015",
-      "comment_created_at": "2026-08-17T21:34:51Z",
-      "comment_updated_at": "2026-08-17T21:34:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125384,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T21:35:33.163Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/delete-cloud-ssh-carrier",
-        "head_sha": "5b012839b9441dafe23e8235474d82d170c6c5bf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125384:5319881717:2026-08-17T21:34:39Z:re_review",
       "comment_id": "5319881717",
@@ -31229,6 +31182,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118591:5164181847:2026-08-18T00:41:38Z:clawsweeper_needs_human",
+      "comment_id": "5164181847",
+      "comment_version_key": "5164181847:2026-08-18T00:41:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118591#issuecomment-5164181847",
+      "comment_created_at": "2026-08-03T08:43:44Z",
+      "comment_updated_at": "2026-08-18T00:41:38Z",
+      "comment_body_sha256": "2d52545e4e934538e37329dbf9c0c14eacf3c961970125d6fc84d45312fe57b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118591,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body expressly treats earlier Chromium and CI results as historical and does not supply after-fix real behavior proof for this exact hea... (sha=ed5e7a9499b3629c4de3b9384453e62b2abe162b)",
+      "expected_head_sha": "ed5e7a9499b3629c4de3b9384453e62b2abe162b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T00:42:40.713Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-pointer-drag-active-pointer-id",
+        "head_sha": "ed5e7a9499b3629c4de3b9384453e62b2abe162b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
