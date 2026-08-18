@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T06:30:58.490Z",
+  "updated_at": "2026-08-18T06:33:04.395Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5315746394:2026-08-17T12:00:51Z:re_review",
-      "comment_id": "5315746394",
-      "comment_version_key": "5315746394:2026-08-17T12:00:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5315746394",
-      "comment_created_at": "2026-08-17T12:00:51Z",
-      "comment_updated_at": "2026-08-17T12:00:51Z",
-      "comment_body_sha256": "39fe4d901ecdb6c24882768eb952e76e5c0d3fc144c225bbc3c53785d324f5a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T02:42:47.744Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5315784919:2026-08-17T12:04:59Z:re_review",
       "comment_id": "5315784919",
@@ -31574,6 +31547,39 @@
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125294.md"
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116253:5127327353:2026-08-18T06:32:11Z:clawsweeper_needs_human",
+      "comment_id": "5127327353",
+      "comment_version_key": "5127327353:2026-08-18T06:32:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116253#issuecomment-5127327353",
+      "comment_created_at": "2026-07-30T06:19:39Z",
+      "comment_updated_at": "2026-08-18T06:32:11Z",
+      "comment_body_sha256": "670aa7ab104091e5262971437bcdcdfee42084e2fe3de820c121cc37b09c3096",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116253,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - This bug fix adds net 299 production lines to transcript reconciliation and timeout settlement; merging should rely on the supplied exact-head runtime evidence and the normal merge-ti... (sha=01c7210c10c7a8d544eae199ad9f20af812e3c8e)",
+      "expected_head_sha": "01c7210c10c7a8d544eae199ad9f20af812e3c8e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T06:33:04.395Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/run-timeout-progress-grace-113182",
+        "head_sha": "01c7210c10c7a8d544eae199ad9f20af812e3c8e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
