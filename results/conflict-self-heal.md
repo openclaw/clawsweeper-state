@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-08-18T20:40:42.726Z
+Generated: 2026-08-18T21:39:39.755Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -60,4 +60,4 @@ Repository: openclaw/openclaw
 | [#106789](https://github.com/openclaw/openclaw/pull/106789) | docs: respect configured Crabbox provider for agent tests | clawsweeper/automerge-openclaw-openclaw-104485 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#101593](https://github.com/openclaw/openclaw/pull/101593) | fix(infra): handle detached respawn child errors | clawsweeper/automerge-openclaw-openclaw-101489 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#76744](https://github.com/openclaw/openclaw/pull/76744) | docs: standardize ACP behavior spelling | clawsweeper/issue-openclaw-openclaw-76734 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#75148](https://github.com/openclaw/openclaw/pull/75148) | fix: fallback path user-visible bug | clawsweeper/clawsweeper-commit-openclaw-openclaw-82ca6ecdde80 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#75148](https://github.com/openclaw/openclaw/pull/75148) | fix: fallback path user-visible bug | clawsweeper/clawsweeper-commit-openclaw-openclaw-82ca6ecdde80 | CONFLICTING | DIRTY | skipped | head repository is unknown |
