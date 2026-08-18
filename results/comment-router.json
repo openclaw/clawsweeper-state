@@ -1,6 +1,51 @@
 {
-  "updated_at": "2026-08-18T12:27:14.163Z",
+  "updated_at": "2026-08-18T12:26:59.845Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123073:5324504684:2026-08-18T06:33:19Z:re_review",
+      "comment_id": "5324504684",
+      "comment_version_key": "5324504684:2026-08-18T06:33:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/123073#issuecomment-5324504684",
+      "comment_created_at": "2026-08-18T06:33:19Z",
+      "comment_updated_at": "2026-08-18T06:33:19Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123073,
+      "author": "galli-personal",
+      "author_id": 80139324,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T06:34:01.925Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": "issue-openclaw-openclaw-123073",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-123073.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/ocm:83:5324444283:2026-08-18T06:25:51Z:re_review",
       "comment_id": "5324444283",
@@ -32555,39 +32600,6 @@
         "kind": "pull_request",
         "branch": "steipete/discord-thumbnails-c46f46",
         "head_sha": "850d76aeca230b1f0233e57a17697af2b185362a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125784:5327092284:2026-08-18T12:25:54Z:clawsweeper_needs_human",
-      "comment_id": "5327092284",
-      "comment_version_key": "5327092284:2026-08-18T12:25:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125784#issuecomment-5327092284",
-      "comment_created_at": "2026-08-18T10:46:52Z",
-      "comment_updated_at": "2026-08-18T12:25:54Z",
-      "comment_body_sha256": "a9577e77d7fe2a4b326d581ea70956cdd3d717267807109369d1ea155b009f1e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125784,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds net +241 production lines; the dedicated terminal lifecycle tracker and PTY-session primitive are justified by owner-specific exit observation, but they expand archiv... (sha=15440973dedc47a25b4221f1459939245819d894)",
-      "expected_head_sha": "15440973dedc47a25b4221f1459939245819d894",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T12:27:14.163Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/kind-leavitt-a5cd1c",
-        "head_sha": "15440973dedc47a25b4221f1459939245819d894",
         "cluster_id": null,
         "job_path": null
       }
