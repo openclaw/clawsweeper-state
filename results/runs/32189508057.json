@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-90587",
+  "mode": "autonomous",
+  "run_id": "32189508057",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32189508057",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-90587.md",
+  "published_at": "2026-08-18T22:01:55.005Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/90587",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/90587",
+  "canonical_pr": null,
+  "summary": "#90587 remains a narrow canonical bug, but this worker cannot implement it: the checkout is read-only, pnpm cannot initialize its cache, and the required sibling ../codex source is absent. No repository or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#90587",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#90587",
+      "candidate_fix": null,
+      "reason": "The repair needs a writable checkout and the mandatory direct ../codex source inspection before code can be changed or proof claimed."
+    },
+    {
+      "target": "#11977",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#90587",
+      "candidate_fix": null,
+      "reason": "Keep open as a separate distribution and product-decision item."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-90587",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#90587",
+      "candidate_fix": null,
+      "reason": "Ready for deterministic execution in a writable environment after the Codex source prerequisite is satisfied."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
