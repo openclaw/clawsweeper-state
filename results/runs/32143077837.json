@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125792",
+  "mode": "autonomous",
+  "run_id": "32143077837",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32143077837",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125792.md",
+  "published_at": "2026-08-18T13:44:15.872Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125792",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125792",
+  "canonical_pr": null,
+  "summary": "#125792 remains a valid canonical bug on main 4589d851. The plugin emits no embedding `ctx-size`, while local embedding inputs are bounded to 2048. A narrow owner-plugin fix is specified, but this read-only checkout cannot install missing dependencies, edit the branch, or run the required before/after proof.",
+  "actions": [
+    {
+      "target": "#125792",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "Repair the plugin-owned generated preset without changing chat context behavior or reintroducing retired memory-search configuration."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125792",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "The repair plan is narrow and ready for an editable checkout; implementation and validation are blocked only by the workspace."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125792"
 mode: "autonomous"
-run_id: "32142439620"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32142439620"
+run_id: "32143077837"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32143077837"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T13:38:11.599Z"
+published_at: "2026-08-18T13:44:15.872Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125792"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125792"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32142439620](https://github.com/openclaw/clawsweeper/actions/runs/32142439620)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32143077837](https://github.com/openclaw/clawsweeper/actions/runs/32143077837)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/125792
 
 ## Summary
 
-Confirmed on current main: the managed preset renders chat ctx-size but omits it for the embedding model. A narrow credited fix PR is planned, but this read-only checkout cannot install dependencies, edit, or validate a branch.
+#125792 remains a valid canonical bug on main 4589d851. The plugin emits no embedding `ctx-size`, while local embedding inputs are bounded to 2048. A narrow owner-plugin fix is specified, but this read-only checkout cannot install missing dependencies, edit the branch, or run the required before/after proof.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Confirmed on current main: the managed preset renders chat ctx-size but omits it
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125792 | fix_needed | planned | canonical | The plugin-owned renderer should set an embedding-only 2048 context cap while retaining the independent configured chat context. |
-| cluster:issue-openclaw-openclaw-125792 | build_fix_artifact | planned |  | Artifact is narrow and preserves chat behavior; the executor must inspect the pinned server contract before editing. |
-| cluster:issue-openclaw-openclaw-125792 | open_fix_pr | blocked | canonical | Provision a writable checkout with dependencies and the required Codex sibling, then apply and validate the artifact before opening the PR. |
+| #125792 | fix_needed | planned | canonical | Repair the plugin-owned generated preset without changing chat context behavior or reintroducing retired memory-search configuration. |
+| cluster:issue-openclaw-openclaw-125792 | build_fix_artifact | planned |  | The repair plan is narrow and ready for an editable checkout; implementation and validation are blocked only by the workspace. |
 
 ## Needs Human
 
