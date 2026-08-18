@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T22:05:18.966Z",
+  "updated_at": "2026-08-18T22:05:24.433Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1400:5330232562:2026-08-18T15:16:41Z:re_review",
-      "comment_id": "5330232562",
-      "comment_version_key": "5330232562:2026-08-18T15:16:41Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1400#issuecomment-5330232562",
-      "comment_created_at": "2026-08-18T15:16:41Z",
-      "comment_updated_at": "2026-08-18T15:16:41Z",
-      "comment_body_sha256": "301f988d4d4dc2cee92cceb7a1b4c7b6d1dea5ff54d6375dfc0a2daade225194",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1400,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T15:17:29.812Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-draft-release-lookup",
-        "head_sha": "958d08a001d07a371d49975cc3df9aa8f32e7d3f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125624:5330257768:2026-08-18T15:18:45Z:re_review",
       "comment_id": "5330257768",
@@ -32660,6 +32613,39 @@
         "kind": "pull_request",
         "branch": "fix/confirmation-poll-cancel",
         "head_sha": "a4cc9ce5712112c022aa37ba89c2cce222801152",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:92:5334608759:2026-08-18T22:03:33Z:clawsweeper_needs_human",
+      "comment_id": "5334608759",
+      "comment_version_key": "5334608759:2026-08-18T22:03:33Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/92#issuecomment-5334608759",
+      "comment_created_at": "2026-08-18T22:03:33Z",
+      "comment_updated_at": "2026-08-18T22:03:33Z",
+      "comment_body_sha256": "bd4febade91fa9c542e1c34772b86f6366fdd743106feafa31628c67c4d3707d",
+      "repo": "openclaw/ocm",
+      "issue_number": 92,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied terminal output is limited to unit tests; add redacted after-fix runtime-install or self-update evidence, without private endpoint... (sha=8d255ab92fb9a52f1f317fb811da799e67c32129)",
+      "expected_head_sha": "8d255ab92fb9a52f1f317fb811da799e67c32129",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T22:05:24.433Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/download-timeout-and-cap",
+        "head_sha": "8d255ab92fb9a52f1f317fb811da799e67c32129",
         "cluster_id": null,
         "job_path": null
       }
