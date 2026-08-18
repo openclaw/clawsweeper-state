@@ -67,21 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the delegated system-agent single-proposal invariant for https://github.com/openclaw/openclaw/issues/125609. Reproduce two distinct unarmed config_set calls in one delegated turn and confirm the first proposal is overwritten on current main. Keep the existing one-exact-operation approval contract; do not introduce proposal groups, atomic batches, configuration schema changes, or new settings. At the proposal producer, prevent a second pending persistent operation from replacing the first and return explicit model-visible text that the later operation was not staged. Preserve the first proposal through both embedded and CLI event-mirroring paths. Add owner-boundary regression coverage proving only the first operation is shown and applied, and update prompt guidance only if needed to prevent cumulative staging claims. Stop and escalate if a correct repair requires changing the approval protocol or product policy.
+Repair https://github.com/openclaw/openclaw/issues/125609 while preserving the one-exact-operation-per-approval contract introduced by https://github.com/openclaw/openclaw/pull/125503. After an unarmed persistent openclaw tool call registers a proposal, a later different persistent call in that turn must return a clear pending-proposal rejection and leave the original hash and operation intact; do not claim the later operation was staged. Make the CLI MCP transition parser preserve the existing proposal for that result. Add one owner-boundary regression that issues two config_set calls in order and proves only the first remains approvable, plus CLI transition coverage for the rejection marker. Do not introduce grouped approval, atomic multi-operation configuration transactions, new configuration, or broader approval semantics. Put release-note context in the PR body or commit message, not CHANGELOG.md.
 
 Likely files:
 
 - src/agents/tools/system-agent-tool.ts
 - src/agents/tools/system-agent-tool.test.ts
-- src/system-agent/agent-turn.ts
-- src/system-agent/chat-turn-router.approval.test.ts
-- src/system-agent/assistant-prompts.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/tools/system-agent-tool.test.ts
-- node scripts/run-vitest.mjs src/system-agent/chat-turn-router.approval.test.ts src/system-agent/agent-turn.test.ts src/gateway/server-methods/system-agent.test.ts
-- node scripts/check-changed.mjs -- src/agents/tools/system-agent-tool.ts src/agents/tools/system-agent-tool.test.ts src/system-agent/agent-turn.ts src/system-agent/assistant-prompts.ts
+- node scripts/run-vitest.mjs src/system-agent/chat-turn-router.approval.test.ts
 
 ## Operator Prompt
 
