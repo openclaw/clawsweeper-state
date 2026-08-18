@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125792",
+  "mode": "autonomous",
+  "run_id": "32142439620",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32142439620",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125792.md",
+  "published_at": "2026-08-18T13:38:11.599Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125792",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125792",
+  "canonical_pr": null,
+  "summary": "Confirmed on current main: the managed preset renders chat ctx-size but omits it for the embedding model. A narrow credited fix PR is planned, but this read-only checkout cannot install dependencies, edit, or validate a branch.",
+  "actions": [
+    {
+      "target": "#125792",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "The plugin-owned renderer should set an embedding-only 2048 context cap while retaining the independent configured chat context."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125792",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "Artifact is narrow and preserves chat behavior; the executor must inspect the pinned server contract before editing."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125792",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "Provision a writable checkout with dependencies and the required Codex sibling, then apply and validate the artifact before opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
