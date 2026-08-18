@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-124014",
+  "mode": "autonomous",
+  "run_id": "32193380417",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32193380417",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md",
+  "published_at": "2026-08-18T23:10:26.325Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/124014",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/70903",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/124014",
+  "summary": "Keep #124014 as the canonical repair path. It is open, behind main, has unresolved ClawSweeper review feedback, and failing relevant CI; emit a contributor-branch repair artifact, with no merge or close action.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/70903",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#124014",
+      "candidate_fix": "#124014",
+      "reason": "Related auth-state recovery work, but it has distinct reproduction and remains independently actionable."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/124014",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124014",
+      "candidate_fix": "#124014",
+      "reason": "Repair the opted-in same-repository branch, then re-review the exact repaired head; merge and closure are forbidden for this worker."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/124014",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124014",
+      "candidate_fix": "#124014",
+      "reason": "A narrow, credited repair of the existing branch is available and required before any later merge gate."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
