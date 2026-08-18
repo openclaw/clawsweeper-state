@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125942"
 mode: "autonomous"
-run_id: "32175158788"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32175158788"
+run_id: "32175502009"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32175502009"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T19:22:10.707Z"
-canonical: "#125942"
-canonical_issue: "#125942"
+published_at: "2026-08-18T19:27:55.612Z"
+canonical: "https://github.com/openclaw/openclaw/issues/125942"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/125942"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32175158788](https://github.com/openclaw/clawsweeper/actions/runs/32175158788)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32175502009](https://github.com/openclaw/clawsweeper/actions/runs/32175502009)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #125942
+Canonical: https://github.com/openclaw/openclaw/issues/125942
 
 ## Summary
 
-#125942 is a narrow shared-transport bug: replay normalization preserves the canonical failure marker before a later user turn, but transport projection drops it. No files changed because the required ../codex inspection is unavailable and the read-only checkout lacks tsx for focused validation.
+Static inspection identifies a narrow repair, but this read-only checkout cannot create the branch or validate it: the focused Vitest command fails because `tsx` is absent, and the mandatory sibling `../codex` source is unavailable for direct inspection. A scoped fix artifact is ready for the executor.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Canonical: #125942
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125942 | fix_needed | blocked | canonical | Create the narrow fix once a writable, dependency-ready environment with ../codex is available. |
+| #125942 | fix_needed | planned | canonical | The open canonical issue is a narrow transport-projection repair. No GitHub mutation was performed. |
+| cluster:issue-openclaw-openclaw-125942 | build_fix_artifact | planned |  | Executor should implement and validate the narrow artifact on `clawsweeper/issue-openclaw-openclaw-125942`. |
 
 ## Needs Human
 
