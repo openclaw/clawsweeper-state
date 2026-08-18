@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T02:02:17.620Z",
+  "updated_at": "2026-08-18T02:02:42.343Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5313787777:2026-08-17T08:42:16Z:re_review",
-      "comment_id": "5313787777",
-      "comment_version_key": "5313787777:2026-08-17T08:42:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5313787777",
-      "comment_created_at": "2026-08-17T08:42:16Z",
-      "comment_updated_at": "2026-08-17T08:42:16Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T22:33:12.736Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5313906297:2026-08-17T08:55:02Z:re_review",
       "comment_id": "5313906297",
@@ -31307,6 +31280,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T02:02:17.620Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125478:5322017321:2026-08-18T02:02:00Z:clawsweeper_needs_human",
+      "comment_id": "5322017321",
+      "comment_version_key": "5322017321:2026-08-18T02:02:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125478#issuecomment-5322017321",
+      "comment_created_at": "2026-08-18T00:45:00Z",
+      "comment_updated_at": "2026-08-18T02:02:00Z",
+      "comment_body_sha256": "30956e7d9e92129fbb556e20757300ec3c16c54415c4f407aec4507656e6e112",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125478,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally removes the old metadata-tolerance path: a custom or explicitly connected Control UI paired with an older Gateway can have privileged actions disabled. The bundl... (sha=4836ce1cb3cd532f4922783464bfb159d8f6405d)",
+      "expected_head_sha": "4836ce1cb3cd532f4922783464bfb159d8f6405d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T02:02:42.343Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/w4-ui-dedup",
+        "head_sha": "4836ce1cb3cd532f4922783464bfb159d8f6405d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
