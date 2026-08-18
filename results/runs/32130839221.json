@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-56619",
+  "mode": "autonomous",
+  "run_id": "32130839221",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32130839221",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-56619.md",
+  "published_at": "2026-08-18T11:29:35.575Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/56619",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/56619",
+  "canonical_pr": null,
+  "summary": "#56619 remains a reproducible canonical bug. Current main invokes --notify from the standalone CLI, while WhatsApp outbound is Gateway-delivered; WhatsApp supplies no pairing notifier. A narrow credited fix artifact is ready, but this read-only checkout cannot add the failing regression, install dependencies, validate, or create the PR branch.",
+  "actions": [
+    {
+      "target": "#56619",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "The behavior is source-reproducible on main and no viable open implementation PR exists."
+    },
+    {
+      "target": "#94386",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Already closed; do not mutate or revive verbatim."
+    },
+    {
+      "target": "#96277",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Already closed; preserve @wyf027 credit in the new PR without reopening the old branch."
+    },
+    {
+      "target": "#97733",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this linked ref for central OpenClaw security handling; it does not block #56619."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-56619",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Executor should implement and validate this artifact on clawsweeper/issue-openclaw-openclaw-56619."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
