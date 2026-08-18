@@ -67,19 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair this issue as a focused Codex-plugin host-capability fix. Make `extensions/codex/harness.ts` reject Linux RISC-V64 (and any unsupported managed Codex host target) during automatic harness selection before app-server startup. Reuse the existing selection contract so `auto` chooses the OpenClaw runtime, while an explicit `agentRuntime.id: "codex"` remains fail-closed with a clear reason. Do not add a config option, alter credential or billing semantics, add a runtime fallback stack, or modify CHANGELOG.md; include release-note context in the PR body. Add regression coverage proving unsupported-host auto selection and explicit-Codex behavior, and stop for maintainer review if a change would require upstream binary support or a new public policy.
+Repair https://github.com/openclaw/openclaw/issues/90587 in the Codex plugin. For default managed local stdio Codex, expose host support to harness selection so Linux RISC-V64 is unsupported before launch; implicit or auto OpenAI routing must then use the existing OpenClaw runtime. Preserve explicit `agentRuntime.id: "codex"` fail-closed behavior, and do not add a RISC-V Codex package, new config, post-launch fallback, or a CHANGELOG edit. Cover the managed default, explicit custom/remote app-server paths, and explicit versus implicit runtime selection. Put concise user-visible release-note context in the PR body.
 
 Likely files:
 
 - extensions/codex/harness.ts
+- extensions/codex/src/app-server/managed-binary.ts
 - extensions/codex/harness.test.ts
 - src/agents/harness/selection.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/codex/harness.test.ts
-- node scripts/run-vitest.mjs src/agents/harness/selection.test.ts
-- Run the focused regression on a Linux RISC-V64 host or equivalent production-boundary harness before merge.
+- pnpm test extensions/codex/harness.test.ts
+- pnpm test src/agents/harness/selection.test.ts
+- Run the focused managed-binary test coverage added for Linux RISC-V64 selection.
+- On a Linux RISC-V64 host or equivalent controlled platform harness, verify an implicit eligible OpenAI route reaches the OpenClaw runtime while an explicit Codex route reports the intended unavailable-runtime error.
 
 ## Operator Prompt
 
