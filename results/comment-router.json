@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T20:29:55.460Z",
+  "updated_at": "2026-08-18T20:30:07.487Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5249020988:2026-08-11T04:34:27Z:re_review",
-      "comment_id": "5249020988",
-      "comment_version_key": "5249020988:2026-08-11T04:34:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5249020988",
-      "comment_created_at": "2026-08-11T04:34:27Z",
-      "comment_updated_at": "2026-08-11T04:34:27Z",
-      "comment_body_sha256": "b6094e46f303c0fc2b10484fae60c391fef655c522fdfccbede9e69192c05b54",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T13:32:16.968Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5265106271:2026-08-12T09:50:14Z:re_review",
       "comment_id": "5265106271",
@@ -32897,6 +32870,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T20:29:55.460Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125958:5333142097:2026-08-18T20:27:36Z:clawsweeper_needs_human",
+      "comment_id": "5333142097",
+      "comment_version_key": "5333142097:2026-08-18T20:27:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125958#issuecomment-5333142097",
+      "comment_created_at": "2026-08-18T19:39:25Z",
+      "comment_updated_at": "2026-08-18T20:27:36Z",
+      "comment_body_sha256": "0769fb768aad7f90abd51232880b6472377a3bbc8c6eda8dc0fc4cfc4085f69e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125958,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes the normal-command exit status for scripts that adopted the brief, unreleased successful no-op behavior. (sha=250d0a45adb8890b0656d6f6afff69c04b2cc70b)",
+      "expected_head_sha": "250d0a45adb8890b0656d6f6afff69c04b2cc70b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T20:30:07.487Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/config-unset-missing-path",
+        "head_sha": "250d0a45adb8890b0656d6f6afff69c04b2cc70b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
