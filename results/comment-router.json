@@ -1,37 +1,6 @@
 {
-  "updated_at": "2026-08-18T22:41:28.301Z",
+  "updated_at": "2026-08-18T22:41:30.360Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:73051:4353190829:2026-08-18T16:10:15Z:autoclose",
-      "comment_id": "4353190829",
-      "comment_version_key": "4353190829:2026-08-18T16:10:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/73051#issuecomment-4353190829",
-      "comment_created_at": "2026-04-30T14:14:21Z",
-      "comment_updated_at": "2026-08-18T16:10:15Z",
-      "comment_body_sha256": "d568d6595d4bfadd3cdeaaa7a15ec242b7cc6e8033591c6fa7ec6da8fb6d98ae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 73051,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T16:38:14.614Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103723:4936483961:2026-08-18T16:27:46Z:clawsweeper_auto_repair",
       "comment_id": "4936483961",
@@ -32337,6 +32306,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T22:41:28.301Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126020:5334973417:2026-08-18T22:39:11Z:clawsweeper_needs_human",
+      "comment_id": "5334973417",
+      "comment_version_key": "5334973417:2026-08-18T22:39:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126020#issuecomment-5334973417",
+      "comment_created_at": "2026-08-18T22:39:11Z",
+      "comment_updated_at": "2026-08-18T22:39:11Z",
+      "comment_body_sha256": "30d3c2589bd8514bbcd614ea5d5bd403bffc940b9cd4f9ad0a703f65bf36756f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126020,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This deliberately stops older prerelease hosts from installing plugins that require a newer prerelease or same-base stable release; confirm the final-head operator trace before mergin... (sha=c5c3f51f10d17706ed92a7d56364440541b6c851)",
+      "expected_head_sha": "c5c3f51f10d17706ed92a7d56364440541b6c851",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T22:41:30.360Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-min-host-prerelease",
+        "head_sha": "c5c3f51f10d17706ed92a7d56364440541b6c851",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
