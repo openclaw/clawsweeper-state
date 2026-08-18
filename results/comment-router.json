@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T16:55:34.464Z",
+  "updated_at": "2026-08-18T16:55:39.574Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121044:5237935182:2026-08-10T08:47:23Z:re_review",
-      "comment_id": "5237935182",
-      "comment_version_key": "5237935182:2026-08-10T08:47:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121044#issuecomment-5237935182",
-      "comment_created_at": "2026-08-10T08:47:23Z",
-      "comment_updated_at": "2026-08-10T08:47:23Z",
-      "comment_body_sha256": "3555ba8719e66da0767a73eaa08c4b6baf49b9de1411c5b272d16cda619406ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121044,
-      "author": "IlyaKuprov",
-      "author_id": 166841386,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T10:18:17.503Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121044:5301037511:2026-08-15T06:55:28Z:re_review",
       "comment_id": "5301037511",
@@ -32449,6 +32422,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125596:5323743833:2026-08-18T16:53:04Z:clawsweeper_needs_human",
+      "comment_id": "5323743833",
+      "comment_version_key": "5323743833:2026-08-18T16:53:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125596#issuecomment-5323743833",
+      "comment_created_at": "2026-08-18T04:48:17Z",
+      "comment_updated_at": "2026-08-18T16:53:04Z",
+      "comment_body_sha256": "1d5281698e21bf9e7d72024406aa6993529fa2ee65fc0ffcb8a25b1b0c4ee5b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125596,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repair changes a possible long synchronous stall into a visible unavailable error when the configured runtime has not been published; exact-head startup, reload, and agent-dispatc... (sha=47449a7be16e08114b46b967776f8b73f2965b68)",
+      "expected_head_sha": "47449a7be16e08114b46b967776f8b73f2965b68",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T16:55:39.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/team-gateway-event-loop-stalls-f9eae0",
+        "head_sha": "47449a7be16e08114b46b967776f8b73f2965b68",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
