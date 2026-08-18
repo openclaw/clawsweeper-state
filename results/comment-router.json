@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T13:43:14.488Z",
+  "updated_at": "2026-08-18T13:43:48.459Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96843:4802921698:2026-08-18T08:08:51Z:clawsweeper_needs_human",
-      "comment_id": "4802921698",
-      "comment_version_key": "4802921698:2026-08-18T08:08:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/96843#issuecomment-4802921698",
-      "comment_created_at": "2026-06-25T18:28:08Z",
-      "comment_updated_at": "2026-08-18T08:08:51Z",
-      "comment_body_sha256": "c001f2ea51589616af3b6a303be2cf5b2dbd4bde02e968b989f1888a32f95e50",
-      "repo": "openclaw/openclaw",
-      "issue_number": 96843,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=60bd583d64e2f6ff4595a1095a6ff0deb9a2af92)",
-      "expected_head_sha": "60bd583d64e2f6ff4595a1095a6ff0deb9a2af92",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T08:24:36.319Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/googlechat-dm-thread-replies",
-        "head_sha": "60bd583d64e2f6ff4595a1095a6ff0deb9a2af92",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96937:4806445482:2026-08-18T08:09:20Z:clawsweeper_needs_human",
       "comment_id": "4806445482",
@@ -31925,6 +31892,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125823:5329042737:2026-08-18T13:43:01Z:re_review",
+      "comment_id": "5329042737",
+      "comment_version_key": "5329042737:2026-08-18T13:43:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125823#issuecomment-5329042737",
+      "comment_created_at": "2026-08-18T13:43:01Z",
+      "comment_updated_at": "2026-08-18T13:43:01Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125823,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T13:43:46.298Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/webchat-terminal-dedupe-recovery",
+        "head_sha": "6e90e659ffe2e2141cc5b5bf3591c27503c2da78",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
