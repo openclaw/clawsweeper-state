@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T03:25:29.329Z",
+  "updated_at": "2026-08-18T03:26:29.858Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124429:5321573930:2026-08-17T23:45:32Z:re_review",
-      "comment_id": "5321573930",
-      "comment_version_key": "5321573930:2026-08-17T23:45:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124429#issuecomment-5321573930",
-      "comment_created_at": "2026-08-17T23:45:32Z",
-      "comment_updated_at": "2026-08-17T23:45:32Z",
-      "comment_body_sha256": "3a9733be55849fd8ec47a7a568d48f1e78ebf1fdc1e68d18576205df196ddd2e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124429,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T23:48:35.059Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-issue-121481",
-        "head_sha": "c666f1d479b24ff5daabe7f5aaa4803eaf7cdbd3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5321577576:2026-08-17T23:45:57Z:re_review",
       "comment_id": "5321577576",
@@ -31196,6 +31149,39 @@
         "kind": "pull_request",
         "branch": "steipete/pr-review-init-prefetch-metadata",
         "head_sha": "bdb477f8bf7c9c65458fde94acbc87638b985d2d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125537:5323178208:2026-08-18T03:22:46Z:clawsweeper_needs_human",
+      "comment_id": "5323178208",
+      "comment_version_key": "5323178208:2026-08-18T03:22:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125537#issuecomment-5323178208",
+      "comment_created_at": "2026-08-18T03:22:46Z",
+      "comment_updated_at": "2026-08-18T03:22:46Z",
+      "comment_body_sha256": "fe12148900c8601d00edfc3a4233d556203973a0af8eac0a88bd06f72b95bd6c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125537,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local partial clone could not compare the PR against the supplied latest main SHA because its promisor remote was unreachable; re-evaluate after exact-head CI and a normal current... (sha=9dbcc7e3778c898db0d3f4c2d34cf8e291a4ebed)",
+      "expected_head_sha": "9dbcc7e3778c898db0d3f4c2d34cf8e291a4ebed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T03:26:29.858Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-chat-pane-split",
+        "head_sha": "9dbcc7e3778c898db0d3f4c2d34cf8e291a4ebed",
         "cluster_id": null,
         "job_path": null
       }
