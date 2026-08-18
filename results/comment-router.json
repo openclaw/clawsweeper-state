@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T02:42:38.348Z",
+  "updated_at": "2026-08-18T02:42:48.027Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5255100956:2026-08-11T15:17:13Z:re_review",
-      "comment_id": "5255100956",
-      "comment_version_key": "5255100956:2026-08-11T15:17:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5255100956",
-      "comment_created_at": "2026-08-11T15:17:13Z",
-      "comment_updated_at": "2026-08-11T15:17:13Z",
-      "comment_body_sha256": "ffd205f6f5479e95d0d74e295e3e28d77e31ebd6402aa5819db6cf2f476d40b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T22:44:18.629Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5255171616:2026-08-11T15:23:08Z:re_review",
       "comment_id": "5255171616",
@@ -31839,6 +31812,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T02:42:38.348Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119356:5185154559:2026-08-18T02:41:53Z:clawsweeper_needs_human",
+      "comment_id": "5185154559",
+      "comment_version_key": "5185154559:2026-08-18T02:41:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119356#issuecomment-5185154559",
+      "comment_created_at": "2026-08-04T22:06:16Z",
+      "comment_updated_at": "2026-08-18T02:41:53Z",
+      "comment_body_sha256": "fc8a8de4863329ded2bd34494e487974a4dc209cc3b510c6befaf5d523b2b068",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119356,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing IRC configurations with this accepted key will fail normal strict loading until the included openclaw doctor --fix migration is run. (sha=3258367188e2f12160e4b56b05ac4f40b89c1a1c)",
+      "expected_head_sha": "3258367188e2f12160e4b56b05ac4f40b89c1a1c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T02:42:48.027Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/irc-drop-dead-mention-patterns",
+        "head_sha": "3258367188e2f12160e4b56b05ac4f40b89c1a1c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
