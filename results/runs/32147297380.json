@@ -1,0 +1,99 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122352",
+  "mode": "autonomous",
+  "run_id": "32147297380",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32147297380",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122352.md",
+  "published_at": "2026-08-18T14:29:06.217Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/122352",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/122352",
+  "canonical_pr": null,
+  "summary": "Current main still has the reported lifecycle gap: expiry removes the visible row and its only expiry record, so a later terminal event is admitted as new activity. Implementation is blocked in this read-only checkout: the required failing regression cannot be added or run, no branch/PR can be created, and the mandatory sibling ../codex source checkout is absent for the Codex hard gate.",
+  "actions": [
+    {
+      "target": "#122352",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122352",
+      "candidate_fix": null,
+      "reason": "A narrow owner-boundary fix is indicated, but this worker cannot modify or validate the target checkout and cannot satisfy the mandatory direct Codex-source gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122352",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122352",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for an executor with a writable checkout and the required ../codex source checkout."
+    },
+    {
+      "target": "#122089",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#122352",
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation."
+    },
+    {
+      "target": "#122198",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#122352",
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation."
+    },
+    {
+      "target": "#122472",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#122352",
+      "candidate_fix": null,
+      "reason": "Closed historical candidate; no mutation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 3
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#122352",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
