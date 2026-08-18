@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T21:31:42.480Z",
+  "updated_at": "2026-08-18T21:31:50.147Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125803:5328005763:2026-08-18T14:32:32Z:clawsweeper_auto_repair",
-      "comment_id": "5328005763",
-      "comment_version_key": "5328005763:2026-08-18T14:32:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125803#issuecomment-5328005763",
-      "comment_created_at": "2026-08-18T12:13:43Z",
-      "comment_updated_at": "2026-08-18T14:32:32Z",
-      "comment_body_sha256": "f0cb8da60044ab3e3bd2944a9b46548e7bd8a45c465814bafaad711943da145a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125803,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1169871e7558e121edf0b24ee63e2db297ff9f1f)",
-      "expected_head_sha": "1169871e7558e121edf0b24ee63e2db297ff9f1f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T14:33:33.892Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/a2ui-widget-kind",
-        "head_sha": "1169871e7558e121edf0b24ee63e2db297ff9f1f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-18T14:33:55Z:clawsweeper_needs_human",
       "comment_id": "5154193917",
@@ -32736,6 +32703,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T21:31:42.480Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125950:5332866325:2026-08-18T21:27:49Z:clawsweeper_needs_human",
+      "comment_id": "5332866325",
+      "comment_version_key": "5332866325:2026-08-18T21:27:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125950#issuecomment-5332866325",
+      "comment_created_at": "2026-08-18T19:14:23Z",
+      "comment_updated_at": "2026-08-18T21:27:49Z",
+      "comment_body_sha256": "5565a1832b95f8dc3d4369680b206a02176c000da9bab0e7329591f1dd84581b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125950,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Scope Gateway attachment hydration to sender policy (P1)** - The new mediaAccess is sent to dispatch, but send hydration still uses broad agent roots. A denied workspace file is therefore read and buffered befor...; Review finding: [P1] Scope Gateway attachment hydration to sender policy — src/gateway/server-methods/send.ts:1015-1020 - [high] Gateway hydration precedes sender-scoped access —... (sha=f8450db54b7ca50b862609a34dceeaea35611338)",
+      "expected_head_sha": "f8450db54b7ca50b862609a34dceeaea35611338",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T21:31:50.147Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/enforce-sender-media-policy",
+        "head_sha": "ae7cc42df6faea6664b9e2c9b44e5be8c1752808",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
