@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T01:36:06.565Z",
+  "updated_at": "2026-08-18T01:38:51.044Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123236:5317240028:2026-08-17T15:07:31Z:re_review",
-      "comment_id": "5317240028",
-      "comment_version_key": "5317240028:2026-08-17T15:07:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123236#issuecomment-5317240028",
-      "comment_created_at": "2026-08-17T15:07:31Z",
-      "comment_updated_at": "2026-08-17T15:07:31Z",
-      "comment_body_sha256": "035bf5e2f0fcac9b0427c3d093088e1755a4bfe8fca11042dffca4c81f179029",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123236,
-      "author": "drobison00",
-      "author_id": 5256797,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T22:31:20.437Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125271:5315996031:2026-08-17T12:24:42Z:re_review",
       "comment_id": "5315996031",
@@ -30889,6 +30862,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125493:5322358263:2026-08-18T01:38:00Z:clawsweeper_needs_human",
+      "comment_id": "5322358263",
+      "comment_version_key": "5322358263:2026-08-18T01:38:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125493#issuecomment-5322358263",
+      "comment_created_at": "2026-08-18T01:38:00Z",
+      "comment_updated_at": "2026-08-18T01:38:00Z",
+      "comment_body_sha256": "8a09f9d308930a83a5562c70d6cc2655e2db1f46ad4477b99db9d9ea4aed841e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125493,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; rebase and repeat the exact-head focused and CLI behavior checks before landing. (sha=ffa6820e6fe534ac3fe245a1c6d865ea949d5c20)",
+      "expected_head_sha": "ffa6820e6fe534ac3fe245a1c6d865ea949d5c20",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T01:38:51.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/preserve-plugin-schema-error",
+        "head_sha": "ffa6820e6fe534ac3fe245a1c6d865ea949d5c20",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
