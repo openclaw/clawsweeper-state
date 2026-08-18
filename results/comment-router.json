@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T13:17:18.533Z",
+  "updated_at": "2026-08-18T13:19:51.066Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4884387925:2026-07-05T01:20:23Z:re_review",
-      "comment_id": "4884387925",
-      "comment_version_key": "4884387925:2026-07-05T01:20:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4884387925",
-      "comment_created_at": "2026-07-05T01:20:23Z",
-      "comment_updated_at": "2026-07-05T01:20:23Z",
-      "comment_body_sha256": "5301fe69e19cfd0180aeab5f642ef37dd7c34497f27b614a5e9a910644e90238",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 3 commits replayed, no conflicts). new head 523de2904f. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, command-queue ontasktimeout fence hook, late-persist shouldabort fence, and stalled-session warning backoff are unchanged. all pr-touched unit tests green locally",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T07:37:43.451Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4902943479:2026-07-07T10:47:29Z:re_review",
       "comment_id": "4902943479",
@@ -32107,6 +32080,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124015:5300602703:2026-08-18T13:16:19Z:clawsweeper_needs_human",
+      "comment_id": "5300602703",
+      "comment_version_key": "5300602703:2026-08-18T13:16:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5300602703",
+      "comment_created_at": "2026-08-15T04:50:09Z",
+      "comment_updated_at": "2026-08-18T13:16:19Z",
+      "comment_body_sha256": "27cc1a8ba53b06b97061ea17dc10b36d922022cc8a4437073d1f2dfa37d4e74b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124015,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing managed-native accounts whose configured endpoint is occupied will now fail before signal-cli is spawned rather than later through daemon exit; that intentional compatibility... (sha=a421824063ccad4ba61ba33976cd39d38426862a)",
+      "expected_head_sha": "a421824063ccad4ba61ba33976cd39d38426862a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T13:19:51.066Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/signal-port-collision",
+        "head_sha": "a421824063ccad4ba61ba33976cd39d38426862a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
