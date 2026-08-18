@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T19:09:45.290Z",
+  "updated_at": "2026-08-18T19:09:46.929Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125740:5328374383:2026-08-18T12:48:03Z:re_review",
-      "comment_id": "5328374383",
-      "comment_version_key": "5328374383:2026-08-18T12:48:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125740#issuecomment-5328374383",
-      "comment_created_at": "2026-08-18T12:48:03Z",
-      "comment_updated_at": "2026-08-18T12:48:03Z",
-      "comment_body_sha256": "e0fbda35ffca77476457bdce863e55e48de30279ce5de7ba7da786d39190e91c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125740,
-      "author": "atomicdjt",
-      "author_id": 254662250,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T12:48:40.485Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/125570-preserve-skill-description",
-        "head_sha": "462b05e056a71ba9fdc166c06fae2a17be75dadf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124848:5328376130:2026-08-18T12:48:12Z:re_review",
       "comment_id": "5328376130",
@@ -32144,6 +32097,39 @@
         "kind": "pull_request",
         "branch": "remote-transport-errors",
         "head_sha": "8a671c5abfc759c1111f592e18905b5172d4f2a7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:394:5332796410:2026-08-18T19:07:34Z:clawsweeper_auto_repair",
+      "comment_id": "5332796410",
+      "comment_version_key": "5332796410:2026-08-18T19:07:34Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/394#issuecomment-5332796410",
+      "comment_created_at": "2026-08-18T19:07:34Z",
+      "comment_updated_at": "2026-08-18T19:07:34Z",
+      "comment_body_sha256": "e531d1fdf6b0ee201b0b8d7d8cbe6a265f2aa01f2ca1d0cb6cf198be23fc3964",
+      "repo": "steipete/oracle",
+      "issue_number": 394,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6d9c1bc934261d607c12aba19c341c014cddc582)",
+      "expected_head_sha": "6d9c1bc934261d607c12aba19c341c014cddc582",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T19:09:46.929Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tab-lease-registry-integrity",
+        "head_sha": "6d9c1bc934261d607c12aba19c341c014cddc582",
         "cluster_id": null,
         "job_path": null
       }
