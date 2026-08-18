@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126018"
 mode: "autonomous"
-run_id: "32191487302"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32191487302"
+run_id: "32195564943"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32195564943"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T22:44:40.162Z"
-canonical: "https://github.com/openclaw/openclaw/issues/126018"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/126018"
+published_at: "2026-08-18T23:16:47.853Z"
+canonical: "#126018"
+canonical_issue: "#126018"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32191487302](https://github.com/openclaw/clawsweeper/actions/runs/32191487302)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32195564943](https://github.com/openclaw/clawsweeper/actions/runs/32195564943)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/126018
+Canonical: #126018
 
 ## Summary
 
-Current main efff6964e057cb5e165c1ec4d7674a8c9db7c64f still truncates a nonempty legacy Slack text block at blocks-render.ts:266. The canonical mrkdwn-aware chunker and 50-block segment owner already exist. Implementation is blocked only because this worker checkout is read-only, has no installed dependencies, and the required sibling ../codex source is absent; no GitHub mutation was attempted.
+#126018 remains canonical. Current main silently truncates legacy Slack interactive text at the 3,000-character section limit; a narrow repair is identified, but this read-only checkout lacks both node_modules and the mandatory sibling ../codex checkout, so no branch, regression, or PR could be created or validated.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Current main efff6964e057cb5e165c1ec4d7674a8c9db7c64f still truncates a nonempty
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126018 | fix_needed | planned | canonical | Narrow existing-behavior repair; no viable candidate PR is hydrated. |
-| cluster:issue-openclaw-openclaw-126018 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor; local implementation and validation are blocked by the supplied environment. |
+| #126018 | fix_needed | blocked | canonical | A writable executor with dependencies and ../codex is required to implement and validate the allowed new fix PR. |
 
 ## Needs Human
 
