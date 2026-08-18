@@ -67,21 +67,24 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the documented package/local-prefix to dev Git transition so the installer-owned PATH-visible launcher resolves to the built checkout after native update.run. Preserve a single canonical launcher only after verifying its ownership; do not alter arbitrary operator-managed wrappers or add a config option. Add a regression that begins with the local-prefix package layout, switches to dev, and proves resolved launcher, CLI version, and managed service command all agree with the checkout. Inspect the external Windows Companion PATH contract if available, but keep the repair in the Core updater/installer owner unless a missing API is proven. Include release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the supported local-prefix to dev-channel transition so a managed `update.run` leaves the PATH-first local-prefix launcher, Git checkout, and managed Gateway on one install identity. Reproduce first with a controlled default-prefix fixture and a package-entrypoint managed handoff. Update only the recognized supported launcher contract; do not rewrite arbitrary PATH shims or add a configuration option. Add a regression that fails before the repair, verifies wrapper target, CLI version, and service entrypoint after restart, and stop for maintainer review if Companion-specific state cannot be identified through the documented local-prefix contract. Do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/cli/update-cli/update-command-git.ts
-- src/infra/update-global.ts
-- src/cli/update-cli/update-command-git.test.ts
+- src/infra/update-managed-service-handoff.ts
+- src/cli/update-cli.test.ts
 - test/scripts/install-cli.test.ts
-- docs/install/updating.md
+- scripts/e2e/update-channel-switch-docker.sh
+- scripts/e2e/lib/update-channel-switch/assertions.mjs
 
 Validation:
 
-- pnpm test src/cli/update-cli/update-command-git.test.ts
+- pnpm test src/cli/update-cli.test.ts
 - pnpm test test/scripts/install-cli.test.ts
-- Run a WSL/local-prefix transition harness comparing launcher target, CLI --version, and managed service command after the dev update.
+- pnpm test src/gateway/server-methods/update.test.ts
+- scripts/e2e/update-channel-switch-docker.sh with a local-prefix launcher identity assertion
+- A real or controlled WSL managed-handoff proof showing the resolved CLI and Gateway service both use the Git checkout
 
 ## Operator Prompt
 
