@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 18, 2026, 23:39 UTC
+Last source update: Aug 18, 2026, 23:51 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Aug 18, 2026, 23:39 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Review publish complete | Aug 18, 2026, 23:39 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32197426485) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 18, 2026, 23:33 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32197557865) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Review in progress | Aug 18, 2026, 23:51 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32198198160) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 18, 2026, 23:45 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32198429630) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 18, 2026, 23:04 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32195577418) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 18, 2026, 23:34 UTC
+Last source update: Aug 18, 2026, 23:50 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 523 | 100% |
-| Run attempts archived | 1508 | audit |
+| Run attempts archived | 1509 | audit |
 | Latest successful clusters | 444 | 84.9% |
 | Latest failed clusters | 77 | 14.7% |
 | Latest cancelled clusters | 2 | 0.4% |
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#126056](https://github.com/openclaw/openclaw/pull/126056) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 18, 2026, 23:34 UTC | [automerge-openclaw-openclaw-126056](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-126056.md) | [32196476349](https://github.com/openclaw/clawsweeper/actions/runs/32196476349) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#126056](https://github.com/openclaw/openclaw/pull/126056) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 18, 2026, 23:50 UTC | [automerge-openclaw-openclaw-126056](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-126056.md) | [32198027776](https://github.com/openclaw/clawsweeper/actions/runs/32198027776) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#125143](https://github.com/openclaw/openclaw/pull/125143) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 18, 2026, 23:27 UTC | [automerge-openclaw-openclaw-125143](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-125143.md) | [32196173172](https://github.com/openclaw/clawsweeper/actions/runs/32196173172) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#126018](https://github.com/openclaw/openclaw/pull/126018) | automation_blocked | A writable executor with dependencies and ../codex is required to implement and validate the allowed new fix PR. | Aug 18, 2026, 23:16 UTC | [issue-openclaw-openclaw-126018](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126018.md) | [32195564943](https://github.com/openclaw/clawsweeper/actions/runs/32195564943) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#124015](https://github.com/openclaw/openclaw/pull/124015) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 18, 2026, 22:13 UTC | [automerge-openclaw-openclaw-124015](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-124015.md) | [32190222062](https://github.com/openclaw/clawsweeper/actions/runs/32190222062) |
