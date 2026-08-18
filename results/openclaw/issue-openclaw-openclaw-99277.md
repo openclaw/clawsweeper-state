@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-99277"
 mode: "autonomous"
-run_id: "32129462320"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32129462320"
+run_id: "32130222990"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32130222990"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T11:08:38.534Z"
+published_at: "2026-08-18T11:19:08.919Z"
 canonical: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32129462320](https://github.com/openclaw/clawsweeper/actions/runs/32129462320)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32130222990](https://github.com/openclaw/clawsweeper/actions/runs/32130222990)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 ## Summary
 
-#99277 remains a confirmed canonical Mattermost bug: accepted posts reach the inbound turn without an acknowledgement callback. A narrow credited fix plan is ready, but implementation is blocked by the read-only checkout, unavailable sibling ../codex required by repository policy, and unavailable redacted live Mattermost transport proof.
+#99277 remains the canonical open bug. Current main lacks the Mattermost acknowledgement handoff, but this read-only worker cannot meet the mandatory Codex-source and authenticated Mattermost API proof gates or create the requested branch/PR.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #99277 | fix_needed | planned | canonical | Implement a plugin-local afterRecord acknowledgement callback using the shared resolver/gate and existing Mattermost reaction transport. |
-| #80426 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
-| #119124 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
-| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | blocked |  | Implementation must run in a writable executor with the required Codex checkout and redacted live Mattermost transport environment. |
+| #99277 | fix_needed | planned | canonical | Implementation is required, but this worker cannot safely author it until the required Mattermost emoji encoding is proven against a live authenticated transport and the mandatory sibling Codex source is available for direct inspection. |
+| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | planned | canonical | Prepared a narrow replacement-PR plan; executor must run it in a writable checkout with sibling Codex source and an authenticated Mattermost workspace. |
+| #80426 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
+| #119124 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
 
 ## Needs Human
 
