@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T02:48:58.526Z",
+  "updated_at": "2026-08-18T02:49:05.842Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123871:5321215755:2026-08-17T22:58:06Z:re_review",
-      "comment_id": "5321215755",
-      "comment_version_key": "5321215755:2026-08-17T22:58:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123871#issuecomment-5321215755",
-      "comment_created_at": "2026-08-17T22:58:06Z",
-      "comment_updated_at": "2026-08-17T22:58:06Z",
-      "comment_body_sha256": "54e6696910033cdcbab07d4aa912363f40c8496da36a0ed4d3213788d937b627",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123871,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T22:58:54.973Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/status-ownerless",
-        "head_sha": "6b540eb22558016690d81e28bf20f96c83c084f0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121557:5239242955:2026-08-17T22:54:17Z:clawsweeper_needs_human",
       "comment_id": "5239242955",
@@ -31316,6 +31269,39 @@
         "kind": "pull_request",
         "branch": "fix/response-prefix-schema-parity",
         "head_sha": "16fc2edf5577296c273329e74b5cb3c6fea4e073",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119326:5184023904:2026-08-18T02:40:51Z:clawsweeper_needs_human",
+      "comment_id": "5184023904",
+      "comment_version_key": "5184023904:2026-08-18T02:40:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119326#issuecomment-5184023904",
+      "comment_created_at": "2026-08-04T20:06:23Z",
+      "comment_updated_at": "2026-08-18T02:40:51Z",
+      "comment_body_sha256": "4679be5dd6e10aaae45e38d8692fdb0f8fa6cf02c0d030642a36a3f581b67bd3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119326,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused resolver and mocked compaction tests exist, but no configured Gateway or QA after-fix trace demonstrates the changed transcript behavio... (sha=2089d580b85adb4d8e9a352e8d8cac0786040c65)",
+      "expected_head_sha": "2089d580b85adb4d8e9a352e8d8cac0786040c65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T02:49:05.842Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/history-limit-account-scope",
+        "head_sha": "2089d580b85adb4d8e9a352e8d8cac0786040c65",
         "cluster_id": null,
         "job_path": null
       }
