@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T22:48:03.706Z",
+  "updated_at": "2026-08-18T22:48:12.141Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108461:4989825986:2026-08-18T18:09:18Z:clawsweeper_needs_human",
-      "comment_id": "4989825986",
-      "comment_version_key": "4989825986:2026-08-18T18:09:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/108461#issuecomment-4989825986",
-      "comment_created_at": "2026-07-16T08:36:04Z",
-      "comment_updated_at": "2026-08-18T18:09:18Z",
-      "comment_body_sha256": "aacdcfd090ccb3d9dd68748811439e28d97bdf10d091b4f7b71f6a3e98c53a66",
-      "repo": "openclaw/openclaw",
-      "issue_number": 108461,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The current head documents fixtures and checks, but the available live provider comment predates the f881bd rebuild; add a redacted exact-head... (sha=f881bd450d03028cbf4a65bc00d27393d936a05b)",
-      "expected_head_sha": "f881bd450d03028cbf4a65bc00d27393d936a05b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T18:12:18.902Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/responses-completed-flush-tool-calls",
-        "head_sha": "f881bd450d03028cbf4a65bc00d27393d936a05b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-18T18:09:18Z:clawsweeper_auto_repair",
       "comment_id": "5154193917",
@@ -31613,6 +31580,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123848:5335064579:2026-08-18T22:47:25Z:re_review",
+      "comment_id": "5335064579",
+      "comment_version_key": "5335064579:2026-08-18T22:47:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123848#issuecomment-5335064579",
+      "comment_created_at": "2026-08-18T22:47:25Z",
+      "comment_updated_at": "2026-08-18T22:47:25Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123848,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T22:48:05.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ptp-oc-info-3",
+        "head_sha": "7a9ba124da409ac13f1d001475ebdf8143e1b2ac",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
