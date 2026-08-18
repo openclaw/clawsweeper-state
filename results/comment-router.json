@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T19:26:12.443Z",
+  "updated_at": "2026-08-18T19:29:03.097Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5229894779:2026-08-09T05:12:06Z:re_review",
-      "comment_id": "5229894779",
-      "comment_version_key": "5229894779:2026-08-09T05:12:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5229894779",
-      "comment_created_at": "2026-08-09T05:12:06Z",
-      "comment_updated_at": "2026-08-09T05:12:06Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T13:07:25.625Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118169:5229921929:2026-08-09T05:20:34Z:re_review",
       "comment_id": "5229921929",
@@ -32255,6 +32228,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125899:5333002544:2026-08-18T19:26:28Z:clawsweeper_needs_human",
+      "comment_id": "5333002544",
+      "comment_version_key": "5333002544:2026-08-18T19:26:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125899#issuecomment-5333002544",
+      "comment_created_at": "2026-08-18T19:26:28Z",
+      "comment_updated_at": "2026-08-18T19:26:28Z",
+      "comment_body_sha256": "5236198fdec5b85d694b1a9646c7abc94c2719f57582f9c8e676263a30d6f077",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125899,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests, but it has no redacted after-fix runtime trace showing a failed workspace is held back and later becomes eli... (sha=b12301d47c779f6d02747d875267b2e71edfdcad)",
+      "expected_head_sha": "b12301d47c779f6d02747d875267b2e71edfdcad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T19:29:03.097Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skills-review-failure-backoff",
+        "head_sha": "b12301d47c779f6d02747d875267b2e71edfdcad",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
