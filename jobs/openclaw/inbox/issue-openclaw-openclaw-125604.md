@@ -67,22 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing GA ChatGPT OAuth browser WebRTC consultation contract in https://github.com/openclaw/openclaw/issues/125604. Reproduce the payload loss with a regression that fails before the change: `talk.client.create` supplies `openclaw_agent_consult`, but the OAuth GA broker session omits it. Inspect the current OpenAI GA browser-session contract before changing serialization; if supported, preserve tools through the broker and prove a browser tool call reaches `talk.client.toolCall` and the Gateway consult runner. Add focused unit coverage and extend the authenticated OAuth WebRTC live proof. If that upstream route does not support function tools, fail session creation with an explicit `agent-consult` capability error rather than silently provider-direct. Do not alter GPT-Live sideband delegation, add configuration, or bundle the distinct transcript repair from https://github.com/openclaw/openclaw/issues/125601.
+Repair the Browser Talk OAuth GA delegation defect described in https://github.com/openclaw/openclaw/issues/125604. First add a regression that proves the browser request’s normalized `openclaw_agent_consult` tool survives the OpenAI OAuth GA broker session payload; it must fail before the fix. Keep the fix in the OpenAI plugin’s broker/session shaping, reuse the existing normalized realtime tool contract, and do not add configuration or alter unrelated transcript behavior in https://github.com/openclaw/openclaw/issues/125601. Before landing, validate the actual GA OAuth tool contract through an authorized live browser/WebRTC trace without exposing credentials; if upstream rejects tools, fail agent-consult session creation visibly and explain the unsupported route rather than silently returning a direct model. Do not edit CHANGELOG.md; put concise release-note context in the PR body.
 
 Likely files:
 
 - extensions/openai/realtime-quicksilver-session.ts
 - extensions/openai/realtime-quicksilver-wire.ts
 - extensions/openai/realtime-quicksilver-session.test.ts
-- extensions/openai/realtime-quicksilver.live.test.ts
-- src/gateway/server-methods/talk-client.ts
+- extensions/openai/realtime-voice-provider-routing.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/openai/realtime-quicksilver-session.test.ts
-- node scripts/run-vitest.mjs extensions/openai/realtime-voice-browser-auth.test.ts
-- node scripts/run-vitest.mjs src/gateway/server-methods/talk.test.ts
-- OPENCLAW_LIVE_TEST=1 OPENCLAW_LIVE_GPT_LIVE=1 node --import tsx scripts/test-live.mts -- extensions/openai/realtime-quicksilver.live.test.ts
+- pnpm test extensions/openai/realtime-quicksilver-session.test.ts extensions/openai/realtime-voice-provider-routing.test.ts src/gateway/server-methods/talk.test.ts
+- Run an authorized gpt-realtime-2.1 ChatGPT OAuth browser WebRTC session and capture a redacted tool-call-to-Gateway-consult trace after the fix.
 
 ## Operator Prompt
 
