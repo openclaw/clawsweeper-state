@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-56619"
 mode: "autonomous"
-run_id: "32136144820"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32136144820"
+run_id: "32136947004"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32136947004"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T12:33:10.246Z"
+published_at: "2026-08-18T12:38:51.590Z"
 canonical: "https://github.com/openclaw/openclaw/issues/56619"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/56619"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 2
 ---
 
 # issue-openclaw-openclaw-56619
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32136144820](https://github.com/openclaw/clawsweeper/actions/runs/32136144820)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32136947004](https://github.com/openclaw/clawsweeper/actions/runs/32136947004)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/56619
 
 ## Summary
 
-#56619 is a current-main, source-reproducible bug: documented `pairing approve --notify` reaches the generic notifier, while WhatsApp provides no notifier and the request silently ends. A safe repair needs a Gateway-owned, account-scoped pairing-notification path that revalidates the authoritative pairing-store approval; a generic outbound send alone can reject an approved sender under restrictive `allowFrom`. No implementation was possible in this read-only checkout, and the required sibling Codex source is unavailable for the mandatory direct protocol/runtime inspection.
+Confirmed #56619 on main 029f6c14: the CLI forwards --notify to notifyPairingApproved, but WhatsApp has no notifyApproval adapter, so the notifier returns without delivery. No code was changed: direct ../codex inspection is mandatory by repository policy but that checkout is absent, and the read-only worker cannot create it; pnpm validation also cannot initialize Corepack's cache.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/56619
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 2 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #56619 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/56619
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #56619 | fix_needed | blocked | canonical | Implement only after direct Codex-source inspection in a writable checkout; retain pairing-store authorization rather than accepting a CLI-supplied allowlist bypass. |
-| #94386 | keep_closed | skipped | superseded | Historical context only. |
-| #96277 | keep_closed | skipped | superseded | Historical context only. |
-| #97733 | route_security | planned | security_sensitive | Route only this ref to central OpenClaw security handling. |
-| cluster:issue-openclaw-openclaw-56619 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable, Codex-gated executor; implementation remains blocked in this sandbox. |
+| #56619 | fix_needed | blocked | canonical | Implementation is blocked before edits by the mandatory missing ../codex source gate and read-only validation environment; the bug remains reproducible at source level. |
+| #94386 | keep_closed | skipped | superseded | Closed context evidence only. |
+| #96277 | keep_closed | skipped | superseded | Closed context evidence only. |
+| #97733 | route_security | planned | security_sensitive | Security-sensitive linked ref; no repair, closure, or merge action. |
+| cluster:issue-openclaw-openclaw-56619 | build_fix_artifact | planned | canonical | Prepared for a new credited fix PR; implementation must not proceed in this checkout. |
 
 ## Needs Human
 
-- none
+- Provide or mount the required sibling ../codex checkout so the acting worker can perform the repository-mandated direct source inspection before changing code.
+- Run the artifact in a writable checkout/cache: Corepack currently fails before pnpm can start tests.

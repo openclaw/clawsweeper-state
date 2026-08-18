@@ -1,0 +1,86 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-56619",
+  "mode": "autonomous",
+  "run_id": "32136947004",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32136947004",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-56619.md",
+  "published_at": "2026-08-18T12:38:51.590Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/56619",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/56619",
+  "canonical_pr": null,
+  "summary": "Confirmed #56619 on main 029f6c14: the CLI forwards --notify to notifyPairingApproved, but WhatsApp has no notifyApproval adapter, so the notifier returns without delivery. No code was changed: direct ../codex inspection is mandatory by repository policy but that checkout is absent, and the read-only worker cannot create it; pnpm validation also cannot initialize Corepack's cache.",
+  "actions": [
+    {
+      "target": "#56619",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked before edits by the mandatory missing ../codex source gate and read-only validation environment; the bug remains reproducible at source level."
+    },
+    {
+      "target": "#94386",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Closed context evidence only."
+    },
+    {
+      "target": "#96277",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Closed context evidence only."
+    },
+    {
+      "target": "#97733",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Security-sensitive linked ref; no repair, closure, or merge action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-56619",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Prepared for a new credited fix PR; implementation must not proceed in this checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide or mount the required sibling ../codex checkout so the acting worker can perform the repository-mandated direct source inspection before changing code.",
+    "Run the artifact in a writable checkout/cache: Corepack currently fails before pnpm can start tests."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
