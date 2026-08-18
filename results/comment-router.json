@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T21:38:29.423Z",
+  "updated_at": "2026-08-18T21:43:17.126Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122341:5260337821:2026-08-18T14:40:10Z:clawsweeper_needs_human",
-      "comment_id": "5260337821",
-      "comment_version_key": "5260337821:2026-08-18T14:40:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122341#issuecomment-5260337821",
-      "comment_created_at": "2026-08-12T00:08:41Z",
-      "comment_updated_at": "2026-08-18T14:40:10Z",
-      "comment_body_sha256": "0f489ad2d786c0ffafbd8a0daba6fe5b89a1f3f9c2d561c4c24d7e403847cf6e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122341,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main carries source-install warning acknowledgement for security.installPolicy: warn; because the branch is dirty and predates that path, a careless rebase could make warned i... (sha=93d95c1099e2875459b9bfb5721e0c1a6cd3d6d1)",
-      "expected_head_sha": "93d95c1099e2875459b9bfb5721e0c1a6cd3d6d1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T14:47:35.927Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/source-skill-metadata-validation-122298",
-        "head_sha": "93d95c1099e2875459b9bfb5721e0c1a6cd3d6d1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122431:5262459758:2026-08-18T14:38:59Z:clawsweeper_auto_repair",
       "comment_id": "5262459758",
@@ -32636,6 +32603,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126029:5334417633:2026-08-18T21:42:30Z:clawsweeper_needs_human",
+      "comment_id": "5334417633",
+      "comment_version_key": "5334417633:2026-08-18T21:42:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126029#issuecomment-5334417633",
+      "comment_created_at": "2026-08-18T21:42:30Z",
+      "comment_updated_at": "2026-08-18T21:42:30Z",
+      "comment_body_sha256": "a590c63a22dc6d134202e1eb216e78ad02ccedd4695779d563ba21cda5aaf1e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126029,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Do not present the JWT header as a spoofing defense (P1)** - requiredHeaders only requires a nonblank value; the Gateway never verifies the Access JWT. With allowLoopback: true, a local process can send both hea...; Review finding: [P1] Do not present the JWT header as a spoofing defense — docs/gateway/cloudflare-access.md:85-87 - [high] JWT assertion is not verified by the Gateway — docs/gat... (sha=1e0b5d85e52b5e397576cbb1fb3a93e8f45bb403)",
+      "expected_head_sha": "1e0b5d85e52b5e397576cbb1fb3a93e8f45bb403",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T21:43:17.126Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/docs-cloudflare-access-deploy",
+        "head_sha": "1e0b5d85e52b5e397576cbb1fb3a93e8f45bb403",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
