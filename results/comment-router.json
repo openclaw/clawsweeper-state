@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T19:03:01.011Z",
+  "updated_at": "2026-08-18T19:03:12.650Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125787:5327242833:2026-08-18T12:14:56Z:clawsweeper_needs_human",
-      "comment_id": "5327242833",
-      "comment_version_key": "5327242833:2026-08-18T12:14:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125787#issuecomment-5327242833",
-      "comment_created_at": "2026-08-18T11:01:43Z",
-      "comment_updated_at": "2026-08-18T12:14:56Z",
-      "comment_body_sha256": "10315bc860ae11d4034cef59936f0d28531860ebb7284caea5d0ec6aeafe6359",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125787,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Fence activation and the worker move destination (P1)** - authorize is checked before dispatch, but it is not passed to runActivationBarrier after provisioning and synchronization; the move service also drops it...; Review finding: [P1] Fence activation and the worker move destination — src/gateway/worker-environments/placement-dispatch.ts:284-289 - [P1] Keep pending-worker reclaim available... (sha=775f7d22bc343f5e7451fd8d27e9cf2a4a0e06f8)",
-      "expected_head_sha": "775f7d22bc343f5e7451fd8d27e9cf2a4a0e06f8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T12:19:31.765Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/non-admin-cloud-session-access-00232f",
-        "head_sha": "775f7d22bc343f5e7451fd8d27e9cf2a4a0e06f8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125799:5327916091:2026-08-18T12:05:39Z:clawsweeper_needs_human",
       "comment_id": "5327916091",
@@ -32330,6 +32297,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125778:5332743000:2026-08-18T19:02:29Z:re_review",
+      "comment_id": "5332743000",
+      "comment_version_key": "5332743000:2026-08-18T19:02:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125778#issuecomment-5332743000",
+      "comment_created_at": "2026-08-18T19:02:29Z",
+      "comment_updated_at": "2026-08-18T19:02:29Z",
+      "comment_body_sha256": "3364c74a4e08758eb3c3638a10679d74755b5d9f34b57a85dde126e45f08bae4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125778,
+      "author": "sunnydongbo",
+      "author_id": 249433142,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T19:03:10.641Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "contrib/telegram-plan-progress-20260818",
+        "head_sha": "667764d9e318b4f9d7fc4a7b1e6bbcb6c5e24321",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
