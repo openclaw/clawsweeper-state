@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119041",
+  "mode": "autonomous",
+  "run_id": "32116984476",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32116984476",
+  "head_sha": "03c1f452ec49479c8df06aab6d2204187ed47018",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119041.md",
+  "published_at": "2026-08-18T08:48:05.421Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119041",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119041",
+  "canonical_pr": null,
+  "summary": "Current main still has the Slack preview-rotation path, but this worker cannot implement or validate it: the sandbox is read-only and required sibling ../codex source is absent, so the repository’s Codex hard gate cannot be met.",
+  "actions": [
+    {
+      "target": "#119041",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only checkout and unmet required direct ../codex inspection gate; no maintainer product decision is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119041",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "Prepared for a writable executor; current worker cannot create or validate the branch."
+    },
+    {
+      "target": "#80862",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed and not part of the Slack repair."
+    },
+    {
+      "target": "#85612",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already merged and does not cover this partial-mode defect."
+    },
+    {
+      "target": "#119067",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "Historical source only; a new ClawSweeper branch is the required path."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
