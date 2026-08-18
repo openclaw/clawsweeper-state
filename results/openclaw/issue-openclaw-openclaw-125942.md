@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125942"
 mode: "autonomous"
-run_id: "32171929116"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32171929116"
+run_id: "32172573121"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32172573121"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T18:53:00.608Z"
+published_at: "2026-08-18T18:58:43.865Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125942"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125942"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32171929116](https://github.com/openclaw/clawsweeper/actions/runs/32171929116)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32172573121](https://github.com/openclaw/clawsweeper/actions/runs/32172573121)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/125942
 
 ## Summary
 
-Implementation is blocked in this read-only worker: ../codex is absent (required direct-contract gate) and the focused Vitest harness cannot load tsx because dependencies are unavailable. Current main 97a4d324 still contains the transport filter that drops the canonical failed-turn sentinel before shared pairing.
+Current main contains the reported transport-filter defect, and a narrow two-file repair is planned. Implementation and validation are blocked because this read-only checkout lacks dependencies and the mandatory sibling ../codex source checkout.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Implementation is blocked in this read-only worker: ../codex is absent (required
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #125942 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,8 @@ Implementation is blocked in this read-only worker: ../codex is absent (required
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125942 | keep_canonical | planned | canonical | Keep the issue open while a writable worker completes the narrowly scoped repair and validation. |
-| cluster:issue-openclaw-openclaw-125942 | fix_needed | blocked | canonical | A writable, dependency-ready worker with ../codex provisioned must implement and validate the artifact. |
-| cluster:issue-openclaw-openclaw-125942 | build_fix_artifact | blocked | canonical | Artifact is ready for a provisioned executor; this worker cannot edit, install dependencies, or satisfy the required Codex-source gate. |
+| #125942 | fix_needed | blocked | canonical | The root cause and narrow owner-boundary repair are clear, but no code may be written or validated until a writable checkout with dependencies and ../codex is supplied. |
+| cluster:issue-openclaw-openclaw-125942 | build_fix_artifact | planned | canonical | A new focused PR is appropriate once the environment blockers are cleared. |
 
 ## Needs Human
 
