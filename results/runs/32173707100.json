@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125942",
+  "mode": "autonomous",
+  "run_id": "32173707100",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32173707100",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125942.md",
+  "published_at": "2026-08-18T19:08:51.158Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125942",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125942",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked in this worker: the required sibling Codex source is unavailable for the mandatory direct runtime inspection, and focused tests cannot start because the checkout lacks tsx. Source inspection matches the reported transport-filter ordering path, so a narrow two-file fix artifact is prepared for an equipped executor.",
+  "actions": [
+    {
+      "target": "#125942",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": null,
+      "reason": "A narrow repair is identified, but this read-only worker cannot satisfy the mandatory Codex-source gate or install the missing test dependency."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125942",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": null,
+      "reason": "Executor needs a writable checkout with sibling Codex source and installed dependencies before applying and validating the narrow fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#125942",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
