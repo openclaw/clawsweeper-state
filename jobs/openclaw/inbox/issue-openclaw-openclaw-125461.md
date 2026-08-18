@@ -67,26 +67,26 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the iMessage target ambiguity reported at https://github.com/openclaw/openclaw/issues/125461. Keep ownership in the iMessage plugin: reject implausibly short unprefixed or `+`-prefixed numeric handles before generic outbound resolution and before direct send reaches the transport; preserve `chat_id:&lt;rowid>`, valid E.164/email handles, explicit `sms:&lt;short-code>`, bare 32-character chat identifiers, and the region-aware national-format phone path. Do not change global `normalizeE164` or add configuration. Update shared target help and public message docs. Add regressions proving rejected targets do not invoke the injected iMessage client. Include release-note context in the PR body; do not edit CHANGELOG.md.
+Fix the iMessage target-validation bug: reject ambiguous bare short numeric values before they normalize into phone handles, while retaining explicit `chat_id:&lt;rowid>`, `sms:&lt;short-code>`, valid full handles, existing national-format phone sends, and bare 32-character hexadecimal chat identifiers. Share the validation rule between the plugin normalizer and parser; update shared CLI/agent target wording and focused docs; add regression coverage proving a rejected target never invokes the send client. The regression must fail on current main for this reason. Do not add configuration or change non-iMessage target semantics; stop for maintainer input if the short-number boundary cannot be established from the existing contract. Do not edit CHANGELOG.md.
 
 Likely files:
 
-- extensions/imessage/src/normalize.ts
 - extensions/imessage/src/targets.ts
-- extensions/imessage/src/send.ts
-- extensions/imessage/src/normalize.test.ts
+- extensions/imessage/src/normalize.ts
 - extensions/imessage/src/targets.test.ts
+- extensions/imessage/src/normalize.test.ts
 - extensions/imessage/src/send.test.ts
 - src/infra/outbound/channel-target.ts
 - docs/cli/message.md
+- docs/channels/imessage.md
 
 Validation:
 
-- pnpm test extensions/imessage/src/normalize.test.ts
-- pnpm test extensions/imessage/src/targets.test.ts
-- pnpm test extensions/imessage/src/send.test.ts
-- pnpm test src/infra/outbound/message-action-routing.send-policy.test.ts
-- pnpm docs:list
+- node scripts/run-vitest.mjs extensions/imessage/src/targets.test.ts
+- node scripts/run-vitest.mjs extensions/imessage/src/normalize.test.ts
+- node scripts/run-vitest.mjs extensions/imessage/src/send.test.ts
+- node scripts/run-vitest.mjs src/infra/outbound/channel-target.test.ts
+- node scripts/check-changed.mjs --dry-run -- extensions/imessage/src/targets.ts extensions/imessage/src/normalize.ts extensions/imessage/src/targets.test.ts extensions/imessage/src/normalize.test.ts extensions/imessage/src/send.test.ts src/infra/outbound/channel-target.ts docs/cli/message.md docs/channels/imessage.md
 
 ## Operator Prompt
 
