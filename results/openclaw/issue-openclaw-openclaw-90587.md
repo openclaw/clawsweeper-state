@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-90587"
 mode: "autonomous"
-run_id: "32189508057"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32189508057"
+run_id: "32193385239"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32193385239"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T22:01:55.005Z"
-canonical: "https://github.com/openclaw/openclaw/issues/90587"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/90587"
+published_at: "2026-08-18T23:41:27.854Z"
+canonical: "#90587"
+canonical_issue: "#90587"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-90587
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32189508057](https://github.com/openclaw/clawsweeper/actions/runs/32189508057)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32193385239](https://github.com/openclaw/clawsweeper/actions/runs/32193385239)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/90587
+Canonical: #90587
 
 ## Summary
 
-#90587 remains a narrow canonical bug, but this worker cannot implement it: the checkout is read-only, pnpm cannot initialize its cache, and the required sibling ../codex source is absent. No repository or GitHub state was changed.
+#90587 remains a narrow, reproducible managed-Codex selection defect; #11977 is a distinct Docker-distribution request. No code or GitHub mutation was made because the required direct ../codex source inspection is impossible in this read-only, network-restricted worker: that sibling checkout is absent.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,10 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/90587
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #90587 | fix_needed | blocked | canonical | The repair needs a writable checkout and the mandatory direct ../codex source inspection before code can be changed or proof claimed. |
-| #11977 | keep_related | planned | related | Keep open as a separate distribution and product-decision item. |
-| cluster:issue-openclaw-openclaw-90587 | build_fix_artifact | planned | canonical | Ready for deterministic execution in a writable environment after the Codex source prerequisite is satisfied. |
+| #90587 | fix_needed | blocked | canonical | A worker with a readable sibling ../codex checkout must verify the upstream launcher platform mapping before implementing the narrow owner-boundary capability check. |
+| #11977 | keep_related | planned | related | Keep the Docker-image product decision independent from the managed local Codex runtime bug. |
 
 ## Needs Human
 
-- none
+- Provide the required sibling ../codex checkout, or rerun this job in an environment permitted to clone https://github.com/openai/codex.git into ../codex. Then verify the exact launcher mapping and implement the prepared narrow fix artifact.
