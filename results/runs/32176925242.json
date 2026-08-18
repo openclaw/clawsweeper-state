@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125942",
+  "mode": "autonomous",
+  "run_id": "32176925242",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32176925242",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125942.md",
+  "published_at": "2026-08-18T19:40:16.371Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125942",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125942",
+  "canonical_pr": null,
+  "summary": "#125942 remains the open canonical bug. Current main drops a failed assistant sentinel in the shared transport projection before a later user turn, while tool-call/result removal remains correctly owned by shared pairing repair. Implementation is blocked: the required sibling ../codex checkout is absent and this read-only worker cannot clone it or install the missing tsx dependency needed to run the reproduction.",
+  "actions": [
+    {
+      "target": "#125942",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": null,
+      "reason": "A narrow fix is indicated, but the mandatory Codex source gate and runnable dependency gate cannot be completed in this environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125942",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": null,
+      "reason": "Artifact is ready, but executable repair awaits the mandatory Codex checkout and dependency installation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a readable sibling ../codex checkout (or a writable environment to clone it) and dependencies so the required Codex contract check and focused Vitest reproduction can run."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#125942",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
