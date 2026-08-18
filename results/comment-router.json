@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-18T13:33:43.714Z",
+  "updated_at": "2026-08-18T13:32:16.968Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94594:4742630370:2026-08-18T08:09:32Z:clawsweeper_needs_human",
+      "comment_id": "4742630370",
+      "comment_version_key": "4742630370:2026-08-18T08:09:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/94594#issuecomment-4742630370",
+      "comment_created_at": "2026-06-18T13:51:57Z",
+      "comment_updated_at": "2026-08-18T08:09:32Z",
+      "comment_body_sha256": "97b3228b0486e905a6d371ea8142cfebbae758dbc631dec5179682eccc5e7e76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 94594,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests, but the supplied evidence contains no inspectable after-fix gateway or active-run trace showing a real cycle...; Review finding: [P0] Bound visited-agent routes at the protocol boundary — packages/gateway-protocol/src/schema/primitives.ts:44 - [P1] Carry structured provenance through active-... (sha=f05213f2eb813f80c45b1f092c40add86dc90f97)",
+      "expected_head_sha": "f05213f2eb813f80c45b1f092c40add86dc90f97",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T08:24:36.319Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openmeta/37842-sessions-send-cycle-guard",
+        "head_sha": "f05213f2eb813f80c45b1f092c40add86dc90f97",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94806:4748697005:2026-08-18T08:09:21Z:clawsweeper_auto_repair",
       "comment_id": "4748697005",
@@ -31906,39 +31939,6 @@
       "status": "skipped",
       "processed_at": "2026-08-18T13:32:16.968Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122694:5269293395:2026-08-18T13:30:44Z:clawsweeper_needs_human",
-      "comment_id": "5269293395",
-      "comment_version_key": "5269293395:2026-08-18T13:30:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122694#issuecomment-5269293395",
-      "comment_created_at": "2026-08-12T16:03:51Z",
-      "comment_updated_at": "2026-08-18T13:30:44Z",
-      "comment_body_sha256": "29825435b58d7eb25cfbe55758c056e237c3f07fd5754ff73864170cecbf60ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122694,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep node-host registration behind the loader validity gate (P1)** - The added block runs before the existing validateOnly and missing-register exits, then the old full-activation block runs again. Active regist...; Review finding: [P1] Keep node-host registration behind the loader validity gate — src/plugins/loader-runtime-candidate.ts:493-505 - [medium] Invalid plugin definitions can regist... (sha=c4b7deb107ebddaf286a4949cf6b850f0bde4524)",
-      "expected_head_sha": "c4b7deb107ebddaf286a4949cf6b850f0bde4524",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T13:33:43.714Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/file-transfer-dir-list-count",
-        "head_sha": "c4b7deb107ebddaf286a4949cf6b850f0bde4524",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
