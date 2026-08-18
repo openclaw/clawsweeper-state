@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-56619"
 mode: "autonomous"
-run_id: "32130839221"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32130839221"
+run_id: "32135451446"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32135451446"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T11:29:35.575Z"
+published_at: "2026-08-18T12:21:38.593Z"
 canonical: "https://github.com/openclaw/openclaw/issues/56619"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/56619"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32130839221](https://github.com/openclaw/clawsweeper/actions/runs/32130839221)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32135451446](https://github.com/openclaw/clawsweeper/actions/runs/32135451446)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/56619
 
 ## Summary
 
-#56619 remains a reproducible canonical bug. Current main invokes --notify from the standalone CLI, while WhatsApp outbound is Gateway-delivered; WhatsApp supplies no pairing notifier. A narrow credited fix artifact is ready, but this read-only checkout cannot add the failing regression, install dependencies, validate, or create the PR branch.
+#56619 is a source-proven regression: the documented opt-in pairing --notify contract silently does nothing for WhatsApp because its pairing adapter supplies no notifier. A narrow Gateway-owned outbound repair is appropriate, but this checkout is read-only, has no dependencies, and cannot satisfy the required direct ../codex source inspection; implementation and validation are blocked in this worker environment.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/56619
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #56619 | fix_needed | planned | canonical | The behavior is source-reproducible on main and no viable open implementation PR exists. |
-| #94386 | keep_closed | skipped | superseded | Already closed; do not mutate or revive verbatim. |
-| #96277 | keep_closed | skipped | superseded | Already closed; preserve @wyf027 credit in the new PR without reopening the old branch. |
-| #97733 | route_security | planned | security_sensitive | Quarantine this linked ref for central OpenClaw security handling; it does not block #56619. |
-| cluster:issue-openclaw-openclaw-56619 | build_fix_artifact | planned |  | Executor should implement and validate this artifact on clawsweeper/issue-openclaw-openclaw-56619. |
+| #56619 | fix_needed | blocked | canonical | Repair is appropriate but cannot be safely implemented, tested, or reviewed in this read-only worker environment. |
+| cluster:issue-openclaw-openclaw-56619 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-56619 when a writable checkout with dependencies and direct Codex-source access is available. |
+| #94386 | keep_closed | skipped | superseded | Already closed historical attempt. |
+| #96277 | keep_closed | skipped | superseded | Already closed historical attempt. |
+| #97733 | route_security | planned | security_sensitive | Quarantined to central OpenClaw security triage; no mutation or technical security analysis is proposed. |
 
 ## Needs Human
 

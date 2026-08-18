@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-56619",
+  "mode": "autonomous",
+  "run_id": "32135451446",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32135451446",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-56619.md",
+  "published_at": "2026-08-18T12:21:38.593Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/56619",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/56619",
+  "canonical_pr": null,
+  "summary": "#56619 is a source-proven regression: the documented opt-in pairing --notify contract silently does nothing for WhatsApp because its pairing adapter supplies no notifier. A narrow Gateway-owned outbound repair is appropriate, but this checkout is read-only, has no dependencies, and cannot satisfy the required direct ../codex source inspection; implementation and validation are blocked in this worker environment.",
+  "actions": [
+    {
+      "target": "#56619",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Repair is appropriate but cannot be safely implemented, tested, or reviewed in this read-only worker environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-56619",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-56619 when a writable checkout with dependencies and direct Codex-source access is available."
+    },
+    {
+      "target": "#94386",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Already closed historical attempt."
+    },
+    {
+      "target": "#96277",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#56619",
+      "candidate_fix": null,
+      "reason": "Already closed historical attempt."
+    },
+    {
+      "target": "#97733",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantined to central OpenClaw security triage; no mutation or technical security analysis is proposed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
