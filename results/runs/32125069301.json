@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-99277",
+  "mode": "autonomous",
+  "run_id": "32125069301",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32125069301",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-99277.md",
+  "published_at": "2026-08-18T10:16:29.346Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/99277",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/99277",
+  "canonical_pr": null,
+  "summary": "Current main f72782d8 still lacks Mattermost automatic acknowledgements: accepted posts reach the shared inbound runner without an afterRecord callback. A narrow plugin-local repair is identifiable, but implementation is blocked by the mandatory missing ../codex checkout, absent dependencies in this read-only workspace, and unavailable Mattermost live emoji-encoding proof.",
+  "actions": [
+    {
+      "target": "#99277",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Do not create a PR until the required direct Codex-source inspection, dependency installation, and redacted live Mattermost emoji-encoding proof are available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-99277",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a new fix PR once the three concrete environmental proof blockers are resolved."
+    },
+    {
+      "target": "#80426",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is permitted or needed."
+    },
+    {
+      "target": "#119124",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is permitted or needed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide or mount ../codex and rerun the direct Codex-source inspection required by repository policy.",
+    "Provide an authorized Mattermost workspace/token for a redacted POST /reactions proof that establishes the canonical encoding for the shared default/configured acknowledgement emoji.",
+    "Run in a writable checkout with dependencies installed so the regression can fail before the repair and the required changed gate can run."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#99277",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
