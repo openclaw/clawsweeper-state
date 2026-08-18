@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126018",
+  "mode": "autonomous",
+  "run_id": "32191487302",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32191487302",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126018.md",
+  "published_at": "2026-08-18T22:44:40.162Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126018",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126018",
+  "canonical_pr": null,
+  "summary": "Current main efff6964e057cb5e165c1ec4d7674a8c9db7c64f still truncates a nonempty legacy Slack text block at blocks-render.ts:266. The canonical mrkdwn-aware chunker and 50-block segment owner already exist. Implementation is blocked only because this worker checkout is read-only, has no installed dependencies, and the required sibling ../codex source is absent; no GitHub mutation was attempted.",
+  "actions": [
+    {
+      "target": "#126018",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126018",
+      "candidate_fix": null,
+      "reason": "Narrow existing-behavior repair; no viable candidate PR is hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126018",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126018",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor; local implementation and validation are blocked by the supplied environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
