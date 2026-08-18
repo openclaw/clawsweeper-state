@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T21:36:48.662Z",
+  "updated_at": "2026-08-18T21:38:28.148Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122288:5259820594:2026-08-18T14:42:47Z:clawsweeper_auto_repair",
-      "comment_id": "5259820594",
-      "comment_version_key": "5259820594:2026-08-18T14:42:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122288#issuecomment-5259820594",
-      "comment_created_at": "2026-08-11T22:57:56Z",
-      "comment_updated_at": "2026-08-18T14:42:47Z",
-      "comment_body_sha256": "b690e570a926317085c07cea0b0f9ce35f7e67b401ebafef858a50f9387c72b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122288,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d7ef49376d12c7c5199899b7aa91953e42caf08a)",
-      "expected_head_sha": "d7ef49376d12c7c5199899b7aa91953e42caf08a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T14:47:35.927Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/chat-document-flow-identity",
-        "head_sha": "d7ef49376d12c7c5199899b7aa91953e42caf08a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122345:5260249243:2026-08-18T14:41:50Z:clawsweeper_needs_human",
       "comment_id": "5260249243",
@@ -32608,6 +32575,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126025:5334370691:2026-08-18T21:37:39Z:re_review",
+      "comment_id": "5334370691",
+      "comment_version_key": "5334370691:2026-08-18T21:37:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126025#issuecomment-5334370691",
+      "comment_created_at": "2026-08-18T21:37:39Z",
+      "comment_updated_at": "2026-08-18T21:37:39Z",
+      "comment_body_sha256": "7f448336378fd032f6d130b2f10c672cce9a142ce06d0a4644f6f70e95e08bc8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126025,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T21:38:26.361Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/drop-realtime-upstream-live",
+        "head_sha": "0f753c2a355c9a0a6de92a4c9ed17e87a4f703dc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
