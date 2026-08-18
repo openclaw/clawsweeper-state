@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125942",
+  "mode": "autonomous",
+  "run_id": "32177383043",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32177383043",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125942.md",
+  "published_at": "2026-08-18T19:47:46.884Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125942",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125942",
+  "canonical_pr": null,
+  "summary": "A narrow fix path is ready: retain only the canonical non-trailing failed-turn sentinel in transport replay while leaving failed tool-call/result removal intact. This worker cannot implement or validate it because the checkout is read-only with no dependencies, and the mandatory sibling ../codex source is absent and cannot be cloned in the restricted network.",
+  "actions": [
+    {
+      "target": "#125942",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": null,
+      "reason": "The issue remains the canonical implementation target; closure and merge are disallowed."
+    },
+    {
+      "target": "#125942",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": null,
+      "reason": "Repair the transport prefilter rather than changing the shared tool-pairing policy."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125942",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": null,
+      "reason": "The deterministic executor should implement this two-file repair in a writable checkout with dependencies and direct ../codex inspection."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
