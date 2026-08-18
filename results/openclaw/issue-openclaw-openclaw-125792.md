@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125792"
 mode: "autonomous"
-run_id: "32134658872"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32134658872"
+run_id: "32138418730"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32138418730"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T12:15:32.223Z"
+published_at: "2026-08-18T12:55:11.891Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125792"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125792"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32134658872](https://github.com/openclaw/clawsweeper/actions/runs/32134658872)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32138418730](https://github.com/openclaw/clawsweeper/actions/runs/32138418730)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125792
 
 ## Summary
 
-#125792 is a reproducible canonical bug on main d412c6b284e4e000d27b9d4a849fc46b05f54546. A narrow credited fix PR is specified, but implementation is blocked here: dependencies lack tsx, the pinned b10357 llama-server source/binary is unavailable, GitHub DNS is unavailable, and the required sibling Codex source checkout cannot be inspected or cloned in this read-only environment.
+#125792 is a reproducible canonical bug: managed embedding presets omit ctx-size while local embedding inputs are bounded at 2048. A narrow fix plan is ready, but this checkout is read-only, lacks dependencies (tsx), and lacks the mandatory sibling Codex source checkout; no implementation or PR can be safely completed here.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/125792
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125792 | fix_needed | planned | canonical | A plugin-owner preset repair can cap embeddings without adding a config surface or changing chat context behavior. |
-| cluster:issue-openclaw-openclaw-125792 | build_fix_artifact | planned | canonical | Narrow new-fix-PR plan prepared for the deterministic executor. |
-| cluster:issue-openclaw-openclaw-125792 | open_fix_pr | blocked | canonical | Do not open the PR until the executor installs dependencies, proves the b10357 preset contract directly, runs the regression tests, and satisfies the required Codex-source inspection gate. |
+| #125792 | fix_needed | planned | canonical | The issue remains open and current in the hydrated preflight artifact; no viable candidate PR exists. |
+| cluster:issue-openclaw-openclaw-125792 | build_fix_artifact | planned | canonical | Artifact is narrow and ready for an executor with a writable checkout and dependencies. |
+| cluster:issue-openclaw-openclaw-125792 | open_fix_pr | blocked | canonical | Implementation must be performed and validated by the deterministic executor in a writable, dependency-ready checkout before opening clawsweeper/issue-openclaw-openclaw-125792. |
 
 ## Needs Human
 
