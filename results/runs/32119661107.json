@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119041",
+  "mode": "autonomous",
+  "run_id": "32119661107",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32119661107",
+  "head_sha": "33ef2427487010da6078c48ec923073fe5d033c6",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119041.md",
+  "published_at": "2026-08-18T09:15:45.299Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119041",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119041",
+  "canonical_pr": null,
+  "summary": "Source inspection on main 8a0d28d6 identifies a narrow Slack partial-preview lifecycle repair. Implementation is blocked because this checkout is read-only and has no node_modules (`tsx` missing), so the supplied focused test command cannot run and no branch/PR can be prepared here.",
+  "actions": [
+    {
+      "target": "#80862",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no mutation is valid."
+    },
+    {
+      "target": "#85612",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already merged and distinct mode."
+    },
+    {
+      "target": "#119041",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "The repair is narrow, but this worker cannot install dependencies, edit, validate, push, or open the required PR in the read-only checkout."
+    },
+    {
+      "target": "#119067",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "Already closed; retain attribution in the replacement PR body only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119041",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement this as one narrow new PR."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

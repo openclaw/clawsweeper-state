@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119041"
 mode: "autonomous"
-run_id: "32118089517"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32118089517"
+run_id: "32119661107"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32119661107"
 head_sha: "33ef2427487010da6078c48ec923073fe5d033c6"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T08:58:57.989Z"
+published_at: "2026-08-18T09:15:45.299Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119041"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119041"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32118089517](https://github.com/openclaw/clawsweeper/actions/runs/32118089517)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32119661107](https://github.com/openclaw/clawsweeper/actions/runs/32119661107)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/119041
 
 ## Summary
 
-Confirmed a narrow Slack partial-preview lifecycle defect. Implementation could not start: this checkout is read-only, has no node_modules, and the mandatory sibling ../codex checkout is absent. A new-fix-PR artifact is ready for a writable executor.
+Source inspection on main 8a0d28d6 identifies a narrow Slack partial-preview lifecycle repair. Implementation is blocked because this checkout is read-only and has no node_modules (`tsx` missing), so the supplied focused test command cannot run and no branch/PR can be prepared here.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Confirmed a narrow Slack partial-preview lifecycle defect. Implementation could 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119041 | fix_needed | blocked | canonical | A writable, dependency-installed checkout plus the required sibling Codex source are needed before adding the failing regression, applying the repair, and validating it. |
-| cluster:issue-openclaw-openclaw-119041 | build_fix_artifact | planned | canonical | Narrow non-security repair suitable for a new ClawSweeper PR once executable gates are available. |
-| #80862 | keep_closed | skipped | related | Already closed; no mutation. |
-| #85612 | keep_closed | skipped | related | Already closed; no mutation. |
-| #119067 | keep_closed | skipped | superseded | Already closed; the new artifact owns the repair path. |
+| #80862 | keep_closed | skipped | related | Already closed historical context; no mutation is valid. |
+| #85612 | keep_closed | skipped | related | Already merged and distinct mode. |
+| #119041 | fix_needed | blocked | canonical | The repair is narrow, but this worker cannot install dependencies, edit, validate, push, or open the required PR in the read-only checkout. |
+| #119067 | keep_closed | skipped | superseded | Already closed; retain attribution in the replacement PR body only. |
+| cluster:issue-openclaw-openclaw-119041 | build_fix_artifact | planned | canonical | A writable executor can implement this as one narrow new PR. |
 
 ## Needs Human
 
