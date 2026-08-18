@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T08:24:48.415Z",
+  "updated_at": "2026-08-18T08:25:40.682Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125186:5323527480:2026-08-18T04:16:02Z:re_review",
-      "comment_id": "5323527480",
-      "comment_version_key": "5323527480:2026-08-18T04:16:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125186#issuecomment-5323527480",
-      "comment_created_at": "2026-08-18T04:16:02Z",
-      "comment_updated_at": "2026-08-18T04:16:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125186,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T04:16:47.425Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/mantis-telegram-desktop-recorder",
-        "head_sha": "33c328e4442118c20a76d71cf624f4467499895a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125577:5323527318:2026-08-18T04:16:01Z:clawsweeper_auto_repair",
       "comment_id": "5323527318",
@@ -31908,6 +31861,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125701:5325258863:2026-08-18T08:22:39Z:clawsweeper_auto_repair",
+      "comment_id": "5325258863",
+      "comment_version_key": "5325258863:2026-08-18T08:22:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125701#issuecomment-5325258863",
+      "comment_created_at": "2026-08-18T07:54:24Z",
+      "comment_updated_at": "2026-08-18T08:22:39Z",
+      "comment_body_sha256": "54a99572299b7f5482b93948807e950beb596a5a040a934bfc3cd21969d3d1ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125701,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=537627832ac172a2d0c415e4294c95acdd44cecc)",
+      "expected_head_sha": "537627832ac172a2d0c415e4294c95acdd44cecc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T08:25:40.682Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/progress-card-nudge-gating",
+        "head_sha": "537627832ac172a2d0c415e4294c95acdd44cecc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
