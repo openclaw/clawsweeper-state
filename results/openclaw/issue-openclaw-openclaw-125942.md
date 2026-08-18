@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125942"
 mode: "autonomous"
-run_id: "32171013880"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32171013880"
+run_id: "32171929116"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32171929116"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T18:46:54.178Z"
+published_at: "2026-08-18T18:53:00.608Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125942"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125942"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32171013880](https://github.com/openclaw/clawsweeper/actions/runs/32171013880)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32171929116](https://github.com/openclaw/clawsweeper/actions/runs/32171929116)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125942
 
 ## Summary
 
-Current main retains the failed-turn sentinel in replay normalization but drops it in the shared transport projection before a following user turn. A narrow two-file fix is ready to plan, but this read-only checkout cannot install missing dependencies or create the required branch/PR; the mandatory direct ../codex source check is also unavailable because that sibling checkout is absent.
+Implementation is blocked in this read-only worker: ../codex is absent (required direct-contract gate) and the focused Vitest harness cannot load tsx because dependencies are unavailable. Current main 97a4d324 still contains the transport filter that drops the canonical failed-turn sentinel before shared pairing.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main retains the failed-turn sentinel in replay normalization but drops 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #125942 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ Current main retains the failed-turn sentinel in replay normalization but drops 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125942 | fix_needed | blocked | canonical | Implementation is blocked only by the unavailable writable/dependency/Codex-contract environment; the canonical issue remains open and current. |
-| cluster:issue-openclaw-openclaw-125942 | build_fix_artifact | planned | canonical | One narrow implementation PR is appropriate once a writable checkout with dependencies and the required Codex sibling source is available. |
-| cluster:issue-openclaw-openclaw-125942 | open_fix_pr | blocked | canonical | The worker cannot create or update a branch or PR from this read-only environment. |
+| #125942 | keep_canonical | planned | canonical | Keep the issue open while a writable worker completes the narrowly scoped repair and validation. |
+| cluster:issue-openclaw-openclaw-125942 | fix_needed | blocked | canonical | A writable, dependency-ready worker with ../codex provisioned must implement and validate the artifact. |
+| cluster:issue-openclaw-openclaw-125942 | build_fix_artifact | blocked | canonical | Artifact is ready for a provisioned executor; this worker cannot edit, install dependencies, or satisfy the required Codex-source gate. |
 
 ## Needs Human
 
