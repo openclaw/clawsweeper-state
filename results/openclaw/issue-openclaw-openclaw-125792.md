@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125792"
 mode: "autonomous"
-run_id: "32151163969"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32151163969"
+run_id: "32143077837"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32143077837"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T15:06:35.548Z"
+published_at: "2026-08-18T13:44:15.872Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125792"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125792"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32151163969](https://github.com/openclaw/clawsweeper/actions/runs/32151163969)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32143077837](https://github.com/openclaw/clawsweeper/actions/runs/32143077837)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125792
 
 ## Summary
 
-#125792 is a reproducible canonical bug on main bdbb0444: the managed preset omits ctx-size for embeddings. A narrow credited fix plan is ready, but this read-only checkout has no tsx/node_modules, so no branch, failing-test edit, or local validation can be completed here.
+#125792 remains a valid canonical bug on main 4589d851. The plugin emits no embedding `ctx-size`, while local embedding inputs are bounded to 2048. A narrow owner-plugin fix is specified, but this read-only checkout cannot install missing dependencies, edit the branch, or run the required before/after proof.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/125792
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125792 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only, dependency-incomplete checkout. The executor should install dependencies, prove the new assertions fail on base, apply the artifact, and run the specified gates. |
-| cluster:issue-openclaw-openclaw-125792 | build_fix_artifact | planned | canonical | Narrow new-fix-PR artifact for the canonical issue; no GitHub mutation was performed. |
+| #125792 | fix_needed | planned | canonical | Repair the plugin-owned generated preset without changing chat context behavior or reintroducing retired memory-search configuration. |
+| cluster:issue-openclaw-openclaw-125792 | build_fix_artifact | planned |  | The repair plan is narrow and ready for an editable checkout; implementation and validation are blocked only by the workspace. |
 
 ## Needs Human
 
