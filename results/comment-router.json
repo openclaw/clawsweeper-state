@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T02:57:40.956Z",
+  "updated_at": "2026-08-18T02:57:56.536Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125377:5319457926:2026-08-17T22:59:09Z:clawsweeper_needs_human",
-      "comment_id": "5319457926",
-      "comment_version_key": "5319457926:2026-08-17T22:59:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125377#issuecomment-5319457926",
-      "comment_created_at": "2026-08-17T19:46:37Z",
-      "comment_updated_at": "2026-08-17T22:59:09Z",
-      "comment_body_sha256": "c46fa2a2e125cf614b1ccc9d2617998b85c291d8ca7783ef7c8b526beed57175",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125377,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes which existing multi-agent configurations receive workspace, plugin, and skill setup; it needs exact-head upgrade validation after rebasing, even though the added legacy... (sha=d29f9c479d128621199687e1a39964c9a2a693f1)",
-      "expected_head_sha": "d29f9c479d128621199687e1a39964c9a2a693f1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T23:07:02.378Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/configure-system-agent-target",
-        "head_sha": "c7183f4e583dfcd40c0981506c00e67019a58ff1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125434:5321089197:2026-08-17T23:02:49Z:clawsweeper_auto_repair",
       "comment_id": "5321089197",
@@ -31356,6 +31323,53 @@
         "kind": "pull_request",
         "branch": "fix/catalog-first-fetch-retry",
         "head_sha": "b23a83ca902877cdb3f0c5ada437cfb347e64af6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1182:5322944053:2026-08-18T02:57:11Z:re_review",
+      "comment_id": "5322944053",
+      "comment_version_key": "5322944053:2026-08-18T02:57:11Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1182#issuecomment-5322944053",
+      "comment_created_at": "2026-08-18T02:57:11Z",
+      "comment_updated_at": "2026-08-18T02:57:11Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1182,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T02:57:53.081Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/bay-finder-slash-shortcut",
+        "head_sha": "a34b5e1c78de3986e37bd0e95598f295ef4d335b",
         "cluster_id": null,
         "job_path": null
       },
