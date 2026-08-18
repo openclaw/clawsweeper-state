@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T10:16:02.236Z",
+  "updated_at": "2026-08-18T10:18:13.176Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112375:5076848606:2026-08-18T05:16:56Z:clawsweeper_needs_human",
-      "comment_id": "5076848606",
-      "comment_version_key": "5076848606:2026-08-18T05:16:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5076848606",
-      "comment_created_at": "2026-07-25T04:07:05Z",
-      "comment_updated_at": "2026-08-18T05:16:56Z",
-      "comment_body_sha256": "ab83c98c466ccb72c472dde71eb1143d773f81fe2b0cc076932d348f9450833d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The redacted real-shell harness is useful, but current-head evidence lacks a Gateway scheduler-to-run-history trace for both no-work s...; Review finding: [P1] Preserve the configured ask ceiling — src/cron/job-precheck.ts:358-363 - [P1] Revalidate the receipt after authorization — src/cron/job-precheck.ts:456-460 -... (sha=3821880f96e0c086baea0d1afdc1a4a36223b01a)",
-      "expected_head_sha": "3821880f96e0c086baea0d1afdc1a4a36223b01a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T05:31:56.974Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bartok9/cron-precheck-gate",
-        "head_sha": "a861ef86c7a186c03c0dde4d28d8f4ca5e512dfd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-18T05:21:32Z:clawsweeper_needs_human",
       "comment_id": "5154193917",
@@ -32392,6 +32359,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:97339:4823692905:2026-08-18T10:17:06Z:clawsweeper_auto_repair",
+      "comment_id": "4823692905",
+      "comment_version_key": "4823692905:2026-08-18T10:17:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/97339#issuecomment-4823692905",
+      "comment_created_at": "2026-06-28T01:06:14Z",
+      "comment_updated_at": "2026-08-18T10:17:06Z",
+      "comment_body_sha256": "207fc8cff032598f53cd5424f89606b620a673c6bec905f951397d15cc8445cb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 97339,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=18cdfb2aedce75d44e38765df45cabcf24431855)",
+      "expected_head_sha": "18cdfb2aedce75d44e38765df45cabcf24431855",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T10:18:13.176Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-tool-schema-fix",
+        "head_sha": "18cdfb2aedce75d44e38765df45cabcf24431855",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
