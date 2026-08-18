@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T22:32:59.048Z",
+  "updated_at": "2026-08-18T22:33:02.406Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:521:5330960681:2026-08-18T16:14:56Z:re_review",
-      "comment_id": "5330960681",
-      "comment_version_key": "5330960681:2026-08-18T16:14:56Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/521#issuecomment-5330960681",
-      "comment_created_at": "2026-08-18T16:14:56Z",
-      "comment_updated_at": "2026-08-18T16:14:56Z",
-      "comment_body_sha256": "48591dcd887e6bb8f912f7ba104a7f4847bbbd147e730722654db78f136aa7ff",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 521,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T16:15:45.693Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/background-exact-process-selectors",
-        "head_sha": "4780ba819c365ecf956252f7efed429d1d4b05cb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125526:5322896422:2026-08-18T16:17:05Z:clawsweeper_needs_human",
       "comment_id": "5322896422",
@@ -32328,6 +32281,39 @@
         "kind": "pull_request",
         "branch": "feat/session-tail-metrics",
         "head_sha": "a94e8cc17988a4d22d9e867a58eaf922f7ee3776",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125812:5328359554:2026-08-18T22:27:11Z:clawsweeper_needs_human",
+      "comment_id": "5328359554",
+      "comment_version_key": "5328359554:2026-08-18T22:27:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125812#issuecomment-5328359554",
+      "comment_created_at": "2026-08-18T12:46:43Z",
+      "comment_updated_at": "2026-08-18T22:27:11Z",
+      "comment_body_sha256": "abf860158a7785c01e3e611d3a8f643dfc59a624772d9acdb92f415527aee8dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125812,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports test output but has no inspectable after-fix terminal, runtime, or log artifact; add redacted evidence to the PR body for automa...; Review finding: [P1] Keep UUID-prefixed secret suffixes redacted — src/agents/transcript-redact.ts:71-72 - [medium] UUID prefix permits arbitrary unredacted suffixes — src/agents/... (sha=c8f1750265c027d3840dff2f03dd96d5f15e6c96)",
+      "expected_head_sha": "c8f1750265c027d3840dff2f03dd96d5f15e6c96",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T22:33:02.406Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/transcript-redact-idempotency-key-125214",
+        "head_sha": "c8f1750265c027d3840dff2f03dd96d5f15e6c96",
         "cluster_id": null,
         "job_path": null
       }
