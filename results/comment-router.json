@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T05:51:54.597Z",
+  "updated_at": "2026-08-18T05:54:52.183Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123871:5320584454:2026-08-17T21:41:00Z:re_review",
-      "comment_id": "5320584454",
-      "comment_version_key": "5320584454:2026-08-17T21:41:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123871#issuecomment-5320584454",
-      "comment_created_at": "2026-08-17T21:41:00Z",
-      "comment_updated_at": "2026-08-17T21:41:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123871,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T02:02:17.620Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123871:5320746231:2026-08-17T21:58:40Z:re_review",
       "comment_id": "5320746231",
@@ -31742,6 +31715,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125630:5324198741:2026-08-18T05:54:05Z:clawsweeper_needs_human",
+      "comment_id": "5324198741",
+      "comment_version_key": "5324198741:2026-08-18T05:54:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125630#issuecomment-5324198741",
+      "comment_created_at": "2026-08-18T05:54:05Z",
+      "comment_updated_at": "2026-08-18T05:54:05Z",
+      "comment_body_sha256": "ca4c12c9e3d9d7814dfefe325dc628b42306577dff08290f859fc7c6ab0934c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125630,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes release-proof routing; merge only after the focused exact-head live workflow confirms that the selected endpoints and per-model wire assertions complete successfully. (sha=661642988d44b0b48fbf623db5f224ee51a43d12)",
+      "expected_head_sha": "661642988d44b0b48fbf623db5f224ee51a43d12",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T05:54:52.183Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-ultra-multi-endpoint",
+        "head_sha": "661642988d44b0b48fbf623db5f224ee51a43d12",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
