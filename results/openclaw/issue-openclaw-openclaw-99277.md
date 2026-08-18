@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-99277"
 mode: "autonomous"
-run_id: "32136150461"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32136150461"
+run_id: "32137777641"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32137777641"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T12:28:01.063Z"
+published_at: "2026-08-18T12:50:09.394Z"
 canonical: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32136150461](https://github.com/openclaw/clawsweeper/actions/runs/32136150461)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32137777641](https://github.com/openclaw/clawsweeper/actions/runs/32137777641)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 ## Summary
 
-#99277 remains a reproducible canonical bug: accepted Mattermost posts reach the shared inbound runner without an acknowledgement callback. Implementation is blocked in this worker because the checkout is read-only and dependency-free, no Mattermost credentials/workspace are available for the required redacted live emoji-encoding proof, and ../codex is absent for the repository’s mandatory Codex source gate.
+Implementation is blocked before a safe PR artifact can be made executable: the required live Mattermost emoji-encoding proof has no configured workspace credentials, and the mandatory sibling ../codex source is absent while this read-only environment cannot clone it. Current main still has no Mattermost afterRecord acknowledgement handoff.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #99277 | fix_needed | blocked | canonical | The repair shape is narrow and valid, but implementation and proof cannot proceed in the read-only, dependency-free checkout without a live Mattermost workspace. |
-| #80426 | keep_closed | skipped | superseded | Already closed; not a mutation target. |
-| #119124 | keep_closed | skipped | superseded | Already closed; not a mutation target. |
-| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | blocked | canonical | Executable fix plan prepared; implementation prerequisites are unavailable in this worker. |
+| #99277 | fix_needed | blocked | canonical | The issue’s required transport proof and the repository Codex-source gate cannot be satisfied in this checkout. Do not open a PR until both are available. |
+| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | blocked | canonical | Blocked prerequisites are recorded in fix_artifact.branch_update_blockers. |
+| #80426 | keep_closed | skipped | superseded | Closed context ref; no GitHub mutation is valid. |
+| #119124 | keep_closed | skipped | superseded | Closed context ref; no GitHub mutation is valid. |
 
 ## Needs Human
 
