@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-125143",
+  "mode": "autonomous",
+  "run_id": "32193388416",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32193388416",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125143.md",
+  "published_at": "2026-08-18T22:50:40.750Z",
+  "canonical": "#125143",
+  "canonical_issue": "#124926",
+  "canonical_pr": "#125143",
+  "summary": "#125143 remains the adopted repair path for #124926. Its exact hydrated head has pending CI and an in-progress re-review; the local checkout lacks both that head and the mandatory sibling ../codex source, so no merge-ready or proof-sufficient verdict is made. A contributor-branch repair artifact is planned.",
+  "actions": [
+    {
+      "target": "#123322",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#125143",
+      "candidate_fix": null,
+      "reason": "Historical context only; closure actions are forbidden for already-closed items."
+    },
+    {
+      "target": "#123450",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#125143",
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation is valid on a closed PR."
+    },
+    {
+      "target": "#124679",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": "#124709",
+      "reason": "Distinct root cause and candidate PR."
+    },
+    {
+      "target": "#124709",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate repair lane; not merged or closed by this job."
+    },
+    {
+      "target": "#124926",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#125143",
+      "candidate_fix": "#125143",
+      "reason": "The issue is the source report for the adopted PR, but candidate validation is incomplete; no fixed-by-candidate closeout is proposed."
+    },
+    {
+      "target": "#125143",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125143",
+      "candidate_fix": "#125143",
+      "reason": "Repair the editable contributor branch, rebase it, then perform exact-head validation and review before any merge recommendation."
+    },
+    {
+      "target": "#125143",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125143",
+      "candidate_fix": "#125143",
+      "reason": "The adopted job explicitly requires a repair_contributor_branch artifact."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "keep_independent": 2,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
