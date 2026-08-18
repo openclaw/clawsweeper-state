@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T06:38:43.703Z",
+  "updated_at": "2026-08-18T06:38:52.375Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5225010669:2026-08-08T06:54:17Z:re_review",
-      "comment_id": "5225010669",
-      "comment_version_key": "5225010669:2026-08-08T06:54:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5225010669",
-      "comment_created_at": "2026-08-08T06:54:17Z",
-      "comment_updated_at": "2026-08-08T06:54:17Z",
-      "comment_body_sha256": "34f3f3f477163934a904163cd61704b6fc9358eeab5ec82d8ebf70433930f6be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T02:42:47.745Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5225568107:2026-08-08T09:44:51Z:re_review",
       "comment_id": "5225568107",
@@ -31851,6 +31824,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125659:5324545837:2026-08-18T06:38:10Z:clawsweeper_needs_human",
+      "comment_id": "5324545837",
+      "comment_version_key": "5324545837:2026-08-18T06:38:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125659#issuecomment-5324545837",
+      "comment_created_at": "2026-08-18T06:38:10Z",
+      "comment_updated_at": "2026-08-18T06:38:10Z",
+      "comment_body_sha256": "531d75fb5df599d49f9375ff45b4197fcc2ab8c98d0f8c74838fa8ac9ff76181",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125659,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The direct fixture changes live-test automation and still needs an exact-head Anthropic run to prove all three session cases pass after catalog discovery is removed. (sha=0c4a5ce92fc6de62f1587fe1ef208e428c2175ec)",
+      "expected_head_sha": "0c4a5ce92fc6de62f1587fe1ef208e428c2175ec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T06:38:52.374Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-session-live-catalog",
+        "head_sha": "0c4a5ce92fc6de62f1587fe1ef208e428c2175ec",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
