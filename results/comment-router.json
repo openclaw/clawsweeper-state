@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T09:11:26.748Z",
+  "updated_at": "2026-08-18T09:13:51.272Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125585:5323725201:2026-08-18T04:45:33Z:re_review",
-      "comment_id": "5323725201",
-      "comment_version_key": "5323725201:2026-08-18T04:45:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125585#issuecomment-5323725201",
-      "comment_created_at": "2026-08-18T04:45:33Z",
-      "comment_updated_at": "2026-08-18T04:45:33Z",
-      "comment_body_sha256": "c527c3a9162a5fd84721ef6c85d154263d0642831ea19a2bc66c5e496744ace8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125585,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T04:46:15.489Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/control-ui-plugin-row-containment",
-        "head_sha": "6145b252efe64d16b34a17d62a4ba8c507c47186",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125143:5323725640:2026-08-18T04:45:37Z:re_review",
       "comment_id": "5323725640",
@@ -32126,6 +32079,39 @@
         "kind": "pull_request",
         "branch": "feat/spend-f-hourly",
         "head_sha": "ac2c23f6c1a0b8c5321af4f67f05f98eab681b92",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125665:5324644236:2026-08-18T09:11:34Z:clawsweeper_needs_human",
+      "comment_id": "5324644236",
+      "comment_version_key": "5324644236:2026-08-18T09:11:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125665#issuecomment-5324644236",
+      "comment_created_at": "2026-08-18T06:49:45Z",
+      "comment_updated_at": "2026-08-18T09:11:34Z",
+      "comment_body_sha256": "a308271d44a00af9d9a31f72e09dcfddd4728a72831a45cd95e8ec7fbd877912",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125665,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug repair is net +319 production lines and changes two persistent browser stores; merge should retain the centralized confirmed-deletion boundary and complete exact-head CI. (sha=a2e6cfad417df15861053c1ebd7edb662a141d7a)",
+      "expected_head_sha": "a2e6cfad417df15861053c1ebd7edb662a141d7a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T09:13:51.272Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/persistent-drafts-cleanup",
+        "head_sha": "a2e6cfad417df15861053c1ebd7edb662a141d7a",
         "cluster_id": null,
         "job_path": null
       }
