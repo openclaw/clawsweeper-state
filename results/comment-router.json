@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T14:27:26.355Z",
+  "updated_at": "2026-08-18T14:27:27.134Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120603:5325655954:2026-08-18T08:31:41Z:re_review",
-      "comment_id": "5325655954",
-      "comment_version_key": "5325655954:2026-08-18T08:31:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120603#issuecomment-5325655954",
-      "comment_created_at": "2026-08-18T08:31:41Z",
-      "comment_updated_at": "2026-08-18T08:31:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120603,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T08:32:20.396Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-like-fallback-textscore-115001",
-        "head_sha": "362279be3c9ff967510bec9566c770b3fd290f93",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/discrawl:180:5325656051:2026-08-18T08:31:41Z:clawsweeper_needs_human",
       "comment_id": "5325656051",
@@ -32140,6 +32093,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-host-trajectory-recorder",
         "head_sha": "dfb781a79942da5ae4d36ada11d4188f9c641c37",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125787:5327242833:2026-08-18T14:24:23Z:clawsweeper_needs_human",
+      "comment_id": "5327242833",
+      "comment_version_key": "5327242833:2026-08-18T14:24:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125787#issuecomment-5327242833",
+      "comment_created_at": "2026-08-18T11:01:43Z",
+      "comment_updated_at": "2026-08-18T14:24:23Z",
+      "comment_body_sha256": "ff79d4bf090ddb27b1ca1c4804dd42b11559efce4c310cd4e526fd18c299985b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125787,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reauthorize before activating a provisioned worker (P1)** - The callback is checked before dispatch begins, but activation happens after provisioning and workspace sync without receiving it. A participant remove...; Review finding: [P1] Reauthorize before activating a provisioned worker — src/gateway/worker-environments/placement-dispatch.ts:284-289 - [P1] Carry authorization into move destin... (sha=77e8b9f2ff7cca161fd27232b224559ebddd9c27)",
+      "expected_head_sha": "77e8b9f2ff7cca161fd27232b224559ebddd9c27",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T14:27:27.134Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/non-admin-cloud-session-access-00232f",
+        "head_sha": "77e8b9f2ff7cca161fd27232b224559ebddd9c27",
         "cluster_id": null,
         "job_path": null
       }
