@@ -2,33 +2,6 @@
   "updated_at": "2026-08-18T23:18:29.154Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5134636041:2026-07-30T18:17:17Z:re_review",
-      "comment_id": "5134636041",
-      "comment_version_key": "5134636041:2026-07-30T18:17:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5134636041",
-      "comment_created_at": "2026-07-30T18:17:17Z",
-      "comment_updated_at": "2026-07-30T18:17:17Z",
-      "comment_body_sha256": "841ce8c1d697c813b52271df5369179aa1fabe9f75b55b8a2b78ab2042941062",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T18:19:50.088Z",
-      "target": null
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5134748741:2026-07-30T18:28:08Z:re_review",
       "comment_id": "5134748741",
       "comment_version_key": "5134748741:2026-07-30T18:28:08Z",
@@ -31996,6 +31969,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123931:5300053442:2026-08-18T23:17:00Z:clawsweeper_needs_human",
+      "comment_id": "5300053442",
+      "comment_version_key": "5300053442:2026-08-18T23:17:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123931#issuecomment-5300053442",
+      "comment_created_at": "2026-08-15T02:23:20Z",
+      "comment_updated_at": "2026-08-18T23:17:00Z",
+      "comment_body_sha256": "1478718ffac670715b5fcb48d1b091bbdfc0ed96a59fe84dc077a7ccaa491b61",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123931,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Error-state fast path depends on matrix-js-sdk 41.9.0 behavior that could not be directly inspected here; in particular, the branch calls stop() outside the generic catch-and-disc... (sha=7fff7a5b586ff263c5508600dfd6e9d58ce07624)",
+      "expected_head_sha": "7fff7a5b586ff263c5508600dfd6e9d58ce07624",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T23:18:29.092Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-room-v12-id-support",
+        "head_sha": "7fff7a5b586ff263c5508600dfd6e9d58ce07624",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
