@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T18:50:46.961Z",
+  "updated_at": "2026-08-18T18:51:59.044Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:97485:4826063034:2026-08-18T12:05:33Z:clawsweeper_auto_repair",
-      "comment_id": "4826063034",
-      "comment_version_key": "4826063034:2026-08-18T12:05:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97485#issuecomment-4826063034",
-      "comment_created_at": "2026-06-28T12:16:36Z",
-      "comment_updated_at": "2026-08-18T12:05:33Z",
-      "comment_body_sha256": "fcf7bc73b9054ed78807a7da3a840ba2050e9277da775ff9f32edbf0578f6726",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97485,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=83cd9e7c43b2fcd9dc425080e88c2b4fde9c8973)",
-      "expected_head_sha": "83cd9e7c43b2fcd9dc425080e88c2b4fde9c8973",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T12:19:31.765Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/iteration-budget-agent-loop-safety",
-        "head_sha": "83cd9e7c43b2fcd9dc425080e88c2b4fde9c8973",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:97580:4827637935:2026-08-18T12:06:18Z:clawsweeper_auto_repair",
       "comment_id": "4827637935",
@@ -32315,6 +32282,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1003:5323655024:2026-08-18T18:51:18Z:clawsweeper_needs_human",
+      "comment_id": "5323655024",
+      "comment_version_key": "5323655024:2026-08-18T18:51:18Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/1003#issuecomment-5323655024",
+      "comment_created_at": "2026-08-18T04:34:27Z",
+      "comment_updated_at": "2026-08-18T18:51:18Z",
+      "comment_body_sha256": "b35d3e6036f7518382b2366447db088c3ae55341181c02335c4384ac72fd6339",
+      "repo": "openclaw/gogcli",
+      "issue_number": 1003,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging creates an intentional trust boundary: anyone setting this environment variable sends OAuth bearer credentials and Gmail data to the configured HTTPS endpoint. (sha=5699ae24b86de70a180a133e1b79c79acb1c74f4)",
+      "expected_head_sha": "5699ae24b86de70a180a133e1b79c79acb1c74f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T18:51:59.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "gmail-base-url",
+        "head_sha": "5699ae24b86de70a180a133e1b79c79acb1c74f4",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
