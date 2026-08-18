@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T03:03:00.145Z",
+  "updated_at": "2026-08-18T03:03:04.121Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125377:5321386092:2026-08-17T23:21:31Z:re_review",
-      "comment_id": "5321386092",
-      "comment_version_key": "5321386092:2026-08-17T23:21:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125377#issuecomment-5321386092",
-      "comment_created_at": "2026-08-17T23:21:31Z",
-      "comment_updated_at": "2026-08-17T23:21:31Z",
-      "comment_body_sha256": "a671d2cfce18f5d350dec79d9173a1b8fbb9a429ff0bfee90d2df3e1e4f12c7c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125377,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T23:24:31.361Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/configure-system-agent-target",
-        "head_sha": "c7183f4e583dfcd40c0981506c00e67019a58ff1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125377:5319457926:2026-08-17T23:19:39Z:clawsweeper_needs_human",
       "comment_id": "5319457926",
@@ -31474,6 +31427,39 @@
         "kind": "pull_request",
         "branch": "fix/catalog-first-fetch-retry",
         "head_sha": "b23a83ca902877cdb3f0c5ada437cfb347e64af6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1395:5322791835:2026-08-18T03:02:15Z:clawsweeper_needs_human",
+      "comment_id": "5322791835",
+      "comment_version_key": "5322791835:2026-08-18T03:02:15Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1395#issuecomment-5322791835",
+      "comment_created_at": "2026-08-18T02:36:42Z",
+      "comment_updated_at": "2026-08-18T03:02:15Z",
+      "comment_body_sha256": "661b5d9f898facaf06344e157454203920d0548023f74fc6c369b1410178fdab",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1395,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P0)** - Merging adds a new CI job and a mandatory release-candidate gate; an upstream module-proxy outage or packaging incompatibility can now stop that automation path by design. (sha=aa1333deab05e987903d84b3712aa2f9118c3b5e)",
+      "expected_head_sha": "aa1333deab05e987903d84b3712aa2f9118c3b5e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T03:03:04.121Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/go-install-1374",
+        "head_sha": "aa1333deab05e987903d84b3712aa2f9118c3b5e",
         "cluster_id": null,
         "job_path": null
       }
