@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T19:59:21.523Z",
+  "updated_at": "2026-08-18T20:00:43.384Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5054234833:2026-07-23T04:09:41Z:re_review",
-      "comment_id": "5054234833",
-      "comment_version_key": "5054234833:2026-07-23T04:09:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5054234833",
-      "comment_created_at": "2026-07-23T04:09:41Z",
-      "comment_updated_at": "2026-07-23T04:09:41Z",
-      "comment_body_sha256": "822975567578b4377ba8003fe676ca7eb1e63dfc360309afbb035174ae500929",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 8 commits replayed, no conflicts). new head 02eb82dd4e. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, late-write fence, and stalled-session warn backoff are unchanged. local tsgo, oxlint/oxfmt, and the touched unit suites are green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T13:32:16.968Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5057166130:2026-07-23T10:08:25Z:re_review",
       "comment_id": "5057166130",
@@ -32569,6 +32542,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125900:5331797170:2026-08-18T19:58:50Z:clawsweeper_auto_repair",
+      "comment_id": "5331797170",
+      "comment_version_key": "5331797170:2026-08-18T19:58:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125900#issuecomment-5331797170",
+      "comment_created_at": "2026-08-18T17:32:35Z",
+      "comment_updated_at": "2026-08-18T19:58:50Z",
+      "comment_body_sha256": "047215b15720137b8062bafbbe3057edb92d2b522205412f79fed11fb4f074e7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125900,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c259cae8215d35dc3a3301818494354dfaa86f3d)",
+      "expected_head_sha": "c259cae8215d35dc3a3301818494354dfaa86f3d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T20:00:43.384Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/ui-batched-board-metadata",
+        "head_sha": "c259cae8215d35dc3a3301818494354dfaa86f3d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
