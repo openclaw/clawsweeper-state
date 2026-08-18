@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the failed-assistant replay ordering bug from https://github.com/openclaw/openclaw/issues/125942. Preserve the existing canonical failure sentinel through the shared transport projection when it is followed by a later user turn, while continuing to remove raw failed tool calls and their owned results so provider tool-pairing rules remain safe. Add a behavior-level regression proving that a failed turn is represented by the marker between the original and later user messages for the common transport path, and retain coverage for failed tool-call/result removal. Do not add an openclaw.json setting or edit CHANGELOG.md; describe the user-visible replay behavior in the PR body.
+Repair the nontrailing errored-assistant replay path in the agent transport layer. Preserve an explicit canonical failure marker between the old and next user turn after unsafe partial output and incomplete tool-call/result state are discarded; do not add openclaw.json configuration, replay raw provider errors, or preserve failed tool calls/results. Keep aborted-turn semantics unchanged unless the same invariant is directly proven. Before changing any OpenAI Responses/Codex behavior, inspect the direct Codex runtime contract and preserve its call/output ordering. Replace the current drop-only regression expectation with behavior-level coverage that fails on current main, proves the safe marker reaches the outbound context, and proves raw partial output and tool-call IDs remain absent. Update docs/reference/transcript-hygiene.md for the corrected replay rule; do not edit CHANGELOG.md, and put release-note context in the PR body.
 
 Likely files:
 
@@ -75,12 +75,15 @@ Likely files:
 - src/agents/transport-message-transform.test.ts
 - src/agents/embedded-agent-runner/replay-history.ts
 - src/agents/embedded-agent-runner/replay-history.test.ts
+- docs/reference/transcript-hygiene.md
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/transport-message-transform.test.ts
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/replay-history.test.ts
-- pnpm check:changed -- src/agents/transport-message-transform.ts src/agents/transport-message-transform.test.ts
+- pnpm test src/agents/transport-message-transform.test.ts
+- pnpm test src/agents/embedded-agent-runner/replay-history.test.ts
+- pnpm docs:list
+- pnpm docs:check-mdx
+- pnpm check:changed -- src/agents/transport-message-transform.ts src/agents/transport-message-transform.test.ts src/agents/embedded-agent-runner/replay-history.ts src/agents/embedded-agent-runner/replay-history.test.ts docs/reference/transcript-hygiene.md
 
 ## Operator Prompt
 
