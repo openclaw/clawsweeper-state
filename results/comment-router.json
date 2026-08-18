@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T22:05:24.433Z",
+  "updated_at": "2026-08-18T22:05:58.392Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125624:5330257768:2026-08-18T15:18:45Z:re_review",
-      "comment_id": "5330257768",
-      "comment_version_key": "5330257768:2026-08-18T15:18:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125624#issuecomment-5330257768",
-      "comment_created_at": "2026-08-18T15:18:45Z",
-      "comment_updated_at": "2026-08-18T15:18:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125624,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T15:19:29.859Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/shell-snapshot-ps1",
-        "head_sha": "9bffa98eae55b0bbf928da687764483c9ff3eb57",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78031:4382313550:2026-08-18T15:15:28Z:clawsweeper_auto_repair",
       "comment_id": "4382313550",
@@ -32646,6 +32599,39 @@
         "kind": "pull_request",
         "branch": "fix/download-timeout-and-cap",
         "head_sha": "8d255ab92fb9a52f1f317fb811da799e67c32129",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126025:5334420124:2026-08-18T22:03:51Z:clawsweeper_needs_human",
+      "comment_id": "5334420124",
+      "comment_version_key": "5334420124:2026-08-18T22:03:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126025#issuecomment-5334420124",
+      "comment_created_at": "2026-08-18T21:42:47Z",
+      "comment_updated_at": "2026-08-18T22:03:51Z",
+      "comment_body_sha256": "50e2a388e7ab12d55793e2c740064498cd69da0714a9728bec270a10409e69ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The linked upstream documentation and workflow pages could not be independently fetched from this review environment because DNS resolution failed; the supplied exact-head provider pr... (sha=0f753c2a355c9a0a6de92a4c9ed17e87a4f703dc)",
+      "expected_head_sha": "0f753c2a355c9a0a6de92a4c9ed17e87a4f703dc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T22:05:58.392Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/drop-realtime-upstream-live",
+        "head_sha": "0f753c2a355c9a0a6de92a4c9ed17e87a4f703dc",
         "cluster_id": null,
         "job_path": null
       }
