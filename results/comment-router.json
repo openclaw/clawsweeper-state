@@ -2,33 +2,6 @@
   "updated_at": "2026-08-18T00:01:40.776Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5257244850:2026-08-11T18:30:41Z:re_review",
-      "comment_id": "5257244850",
-      "comment_version_key": "5257244850:2026-08-11T18:30:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5257244850",
-      "comment_created_at": "2026-08-11T18:30:41Z",
-      "comment_updated_at": "2026-08-11T18:30:41Z",
-      "comment_body_sha256": "45fe6cae300125e4634b4e6122b000127a7d7b6fb0f06993e50b926fc65985b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T21:16:06.355Z",
-      "target": null
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5257303795:2026-08-11T18:36:03Z:re_review",
       "comment_id": "5257303795",
       "comment_version_key": "5257303795:2026-08-11T18:36:03Z",
@@ -31135,6 +31108,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1098:5194221127:2026-08-18T00:00:44Z:clawsweeper_needs_human",
+      "comment_id": "5194221127",
+      "comment_version_key": "5194221127:2026-08-18T00:00:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1098#issuecomment-5194221127",
+      "comment_created_at": "2026-08-05T16:05:58Z",
+      "comment_updated_at": "2026-08-18T00:00:44Z",
+      "comment_body_sha256": "42f20201fe07b0e69c9f3097f6a5b824a1b578718b73a473eaa496ae3623111a",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1098,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This large refactor replaces the native composer path, so pending CI should still gate landing despite the restored input lifecycle and current-head UI proof. (sha=edf0c9e7438de00ca1d7a0ef0801906f180eb28e)",
+      "expected_head_sha": "edf0c9e7438de00ca1d7a0ef0801906f180eb28e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T00:01:40.610Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-chat-composer-layer",
+        "head_sha": "edf0c9e7438de00ca1d7a0ef0801906f180eb28e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
