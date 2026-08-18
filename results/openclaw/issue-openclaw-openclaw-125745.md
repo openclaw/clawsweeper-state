@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125745"
 mode: "autonomous"
-run_id: "32120878819"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32120878819"
-head_sha: "33ef2427487010da6078c48ec923073fe5d033c6"
-workflow_conclusion: "success"
+run_id: "32123372146"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32123372146"
+head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T09:27:51.437Z"
+published_at: "2026-08-18T09:55:12.611Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125745"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125745"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32120878819](https://github.com/openclaw/clawsweeper/actions/runs/32120878819)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32123372146](https://github.com/openclaw/clawsweeper/actions/runs/32123372146)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/125745
 
 ## Summary
 
-#125745 remains the open canonical issue. Current-main source tracing identifies a narrow isolated-runtime path, but the mandatory sibling ../codex inspection is unavailable in this read-only worker, so no fix artifact or PR plan is issued.
+Current main has the reported ownership mismatch: the probe creates an isolated auth profile, then ordinary prepared-runtime binding replaces its agent directory with the configured Gateway owner. A narrow isolated-read-only repair is ready, but this environment is read-only, ../codex is unavailable for the mandatory direct inspection, and pnpm cannot create its Corepack cache.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125745
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #125745 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/125745
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125745 | keep_canonical | blocked | canonical | Do not create a fix artifact until a writable/networked rerun can inspect ../codex as required and run the focused regression proof. |
+| #125745 | fix_needed | blocked | canonical | Implementation and regression validation require a writable checkout and mandatory Codex-source inspection. |
+| cluster:issue-openclaw-openclaw-125745 | build_fix_artifact | planned | canonical | Narrow new-fix-PR path. |
 
 ## Needs Human
 
-- Provide the required sibling ../codex checkout (or a writable/networked rerun) so the direct Codex runtime inspection and focused validation can complete before a fix PR is planned.
+- Provide a writable checkout with ../codex available so the executor can create the failing configured-owner regression, implement the isolated-read-only invocation, and validate it.

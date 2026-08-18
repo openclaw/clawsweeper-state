@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125745",
+  "mode": "autonomous",
+  "run_id": "32123372146",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32123372146",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125745.md",
+  "published_at": "2026-08-18T09:55:12.611Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125745",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125745",
+  "canonical_pr": null,
+  "summary": "Current main has the reported ownership mismatch: the probe creates an isolated auth profile, then ordinary prepared-runtime binding replaces its agent directory with the configured Gateway owner. A narrow isolated-read-only repair is ready, but this environment is read-only, ../codex is unavailable for the mandatory direct inspection, and pnpm cannot create its Corepack cache.",
+  "actions": [
+    {
+      "target": "#125745",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125745",
+      "candidate_fix": null,
+      "reason": "Implementation and regression validation require a writable checkout and mandatory Codex-source inspection."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125745",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125745",
+      "candidate_fix": null,
+      "reason": "Narrow new-fix-PR path."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with ../codex available so the executor can create the failing configured-owner regression, implement the isolated-read-only invocation, and validate it."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
