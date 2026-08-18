@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T16:25:34.769Z",
+  "updated_at": "2026-08-18T16:26:25.870Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125645:5324337931:2026-08-18T09:47:50Z:clawsweeper_auto_repair",
-      "comment_id": "5324337931",
-      "comment_version_key": "5324337931:2026-08-18T09:47:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125645#issuecomment-5324337931",
-      "comment_created_at": "2026-08-18T06:12:33Z",
-      "comment_updated_at": "2026-08-18T09:47:50Z",
-      "comment_body_sha256": "d7746d95483e7a271154df55d97364be0c8275336110e0cf038f2a4fa8397479",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125645,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d833e6eed3a5567a9a1bc0e29acf4b6fcde3529f)",
-      "expected_head_sha": "d833e6eed3a5567a9a1bc0e29acf4b6fcde3529f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T09:51:26.046Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cool-tharp-824ba1",
-        "head_sha": "70b152abaf4cf17ed580df06c807999ce6d3139b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125664:5324603599:2026-08-18T09:48:48Z:clawsweeper_auto_repair",
       "comment_id": "5324603599",
@@ -32473,6 +32440,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125834:5329119367:2026-08-18T16:24:34Z:clawsweeper_needs_human",
+      "comment_id": "5329119367",
+      "comment_version_key": "5329119367:2026-08-18T16:24:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125834#issuecomment-5329119367",
+      "comment_created_at": "2026-08-18T13:49:19Z",
+      "comment_updated_at": "2026-08-18T16:24:34Z",
+      "comment_body_sha256": "5b737bc7ab2f764119310e7dbd87da3e2fb541cc3ac6380c2c51f96623cebe69",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125834,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds 49 production lines because the core response-hook helper is unavailable across the plugin boundary; keep it focused unless #125802 establishes a reusable SDK seam. (sha=d5f7887e75b9932a235d5dd050036c23ebc548d8)",
+      "expected_head_sha": "d5f7887e75b9932a235d5dd050036c23ebc548d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T16:26:25.870Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "osolmaz/fix-ollama-response-hook",
+        "head_sha": "d5f7887e75b9932a235d5dd050036c23ebc548d8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
