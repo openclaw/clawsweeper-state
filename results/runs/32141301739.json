@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-99277",
+  "mode": "autonomous",
+  "run_id": "32141301739",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32141301739",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-99277.md",
+  "published_at": "2026-08-18T13:25:38.672Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/99277",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/99277",
+  "canonical_pr": null,
+  "summary": "#99277 remains a reproducible current-main bug, but this worker cannot safely implement it: the required sibling ../codex source is absent and the read-only sandbox prevents cloning it or editing the branch; Mattermost’s required Unicode emoji transport contract also lacks direct/local proof.",
+  "actions": [
+    {
+      "target": "#99277",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "The issue is real, but implementation is blocked only by the mandatory Codex-source inspection, read-only checkout, and unverified Mattermost Unicode emoji contract."
+    },
+    {
+      "target": "#80426",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation is permitted."
+    },
+    {
+      "target": "#119124",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Already closed; its useful design evidence is carried into the replacement plan."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-99277",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Ready for a writable executor after it directly inspects ../codex and obtains redacted live Mattermost proof for shared/default Unicode emoji encoding."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#99277",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

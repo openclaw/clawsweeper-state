@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-99277"
 mode: "autonomous"
-run_id: "32132065097"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32132065097"
+run_id: "32141301739"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32141301739"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T13:20:30.905Z"
+published_at: "2026-08-18T13:25:38.672Z"
 canonical: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32132065097](https://github.com/openclaw/clawsweeper/actions/runs/32132065097)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32141301739](https://github.com/openclaw/clawsweeper/actions/runs/32141301739)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 ## Summary
 
-Implementation is blocked before a safe repair verdict or branch update: this read-only runner cannot create the mandatory sibling ../codex checkout, install dependencies, modify the target branch, run tests, or obtain the required redacted live Mattermost emoji-encoding proof. Current-main inspection found the relevant plugin and shared after-record seam, but no repair has been claimed or produced.
+#99277 remains a reproducible current-main bug, but this worker cannot safely implement it: the required sibling ../codex source is absent and the read-only sandbox prevents cloning it or editing the branch; Mattermost’s required Unicode emoji transport contract also lacks direct/local proof.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Implementation is blocked before a safe repair verdict or branch update: this re
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #99277 | fix_needed | blocked | canonical | A writable execution environment with the required Codex sibling source, dependencies, and Mattermost live-test credentials is required before an implementation or proof-sufficient claim. |
-| #80426 | keep_closed | skipped | superseded | Closed context reference; no closure or mutation action is valid. |
-| #119124 | keep_closed | skipped | superseded | Closed context reference; no closure or mutation action is valid. |
-| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | blocked | canonical | A narrow repair shape is known, but this worker cannot implement or validate it safely in the supplied read-only environment. |
+| #99277 | fix_needed | blocked | canonical | The issue is real, but implementation is blocked only by the mandatory Codex-source inspection, read-only checkout, and unverified Mattermost Unicode emoji contract. |
+| #80426 | keep_closed | skipped | superseded | Already closed; no closure or mutation is permitted. |
+| #119124 | keep_closed | skipped | superseded | Already closed; its useful design evidence is carried into the replacement plan. |
+| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | blocked | canonical | Ready for a writable executor after it directly inspects ../codex and obtains redacted live Mattermost proof for shared/default Unicode emoji encoding. |
 
 ## Needs Human
 
