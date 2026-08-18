@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125792",
+  "mode": "autonomous",
+  "run_id": "32134658872",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32134658872",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125792.md",
+  "published_at": "2026-08-18T12:15:32.223Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125792",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125792",
+  "canonical_pr": null,
+  "summary": "#125792 is a reproducible canonical bug on main d412c6b284e4e000d27b9d4a849fc46b05f54546. A narrow credited fix PR is specified, but implementation is blocked here: dependencies lack tsx, the pinned b10357 llama-server source/binary is unavailable, GitHub DNS is unavailable, and the required sibling Codex source checkout cannot be inspected or cloned in this read-only environment.",
+  "actions": [
+    {
+      "target": "#125792",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "A plugin-owner preset repair can cap embeddings without adding a config surface or changing chat context behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125792",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "Narrow new-fix-PR plan prepared for the deterministic executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125792",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "Do not open the PR until the executor installs dependencies, proves the b10357 preset contract directly, runs the regression tests, and satisfies the required Codex-source inspection gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
