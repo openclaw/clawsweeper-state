@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T20:24:51.131Z",
+  "updated_at": "2026-08-18T20:25:51.773Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5229232867:2026-08-09T01:45:38Z:re_review",
-      "comment_id": "5229232867",
-      "comment_version_key": "5229232867:2026-08-09T01:45:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5229232867",
-      "comment_created_at": "2026-08-09T01:45:38Z",
-      "comment_updated_at": "2026-08-09T01:45:38Z",
-      "comment_body_sha256": "80bb5a7838ea8353e381133eb9e3a6b97dd3a65485e3ac27769ccb6bea444ed3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — new head db25ecb23c. addressed both open findings: [p2] the write fence now closes before the scheduler abort (fixed earlier on 093fa8f153, present here), and [p1] quarantine is now honored on the logical-turn resolver used by production embedded runs. the configured logical-turn wrapper carries the default engine id so a wedged/timed-out deferred-maintenance run quarantines that slot (the default engine never self-quarantines), and a quarantined configured engine is skipped for the fallback until restart/re-registration; the skip is a typed resolution field driving the operator warning. added successor-turn regressions proving the quarantined turn is served by the fallback (legacy) without re-running the wedged factory, and that the default engine is never quarantined. rebased onto current main. 111 focused tests green (context-engine, host-param-projection, context-engine-maintenance); oxlint/oxfmt clean. pr body evidence updated",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T13:32:16.968Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5232517200:2026-08-09T16:21:53Z:re_review",
       "comment_id": "5232517200",
@@ -32865,6 +32838,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125963:5333639427:2026-08-18T20:25:14Z:re_review",
+      "comment_id": "5333639427",
+      "comment_version_key": "5333639427:2026-08-18T20:25:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125963#issuecomment-5333639427",
+      "comment_created_at": "2026-08-18T20:24:47Z",
+      "comment_updated_at": "2026-08-18T20:25:14Z",
+      "comment_body_sha256": "4bd96af01df86527f7ae44b25c3541e5ccd3d298ddfeeb8d39a9893e6d7420e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125963,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T20:25:50.027Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/online-section-collapse",
+        "head_sha": "5b7fd79e6252fd6e269a25eaccf2488fb771429b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
