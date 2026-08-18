@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T22:14:06.188Z",
+  "updated_at": "2026-08-18T22:14:06.569Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125807:5330430474:2026-08-18T15:32:19Z:re_review",
-      "comment_id": "5330430474",
-      "comment_version_key": "5330430474:2026-08-18T15:32:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125807#issuecomment-5330430474",
-      "comment_created_at": "2026-08-18T15:32:19Z",
-      "comment_updated_at": "2026-08-18T15:32:19Z",
-      "comment_body_sha256": "a80bb95faef4bc5d913a7692e1e3d145fe62754ca7e361806a73200f0cf3937f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125807,
-      "author": "osolmaz",
-      "author_id": 2453968,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T15:35:54.101Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/provider-acceptance-hooks",
-        "head_sha": "0a5b31dbd165a0deb733059b207aedbea43b6c61",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-18T15:21:51Z:clawsweeper_needs_human",
       "comment_id": "5154193917",
@@ -32530,6 +32483,39 @@
         "kind": "pull_request",
         "branch": "fix/topic-edit-threadname-alias",
         "head_sha": "48b60a9fa4b477c0804a281c26b2372165b1da58",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125999:5334059752:2026-08-18T22:09:36Z:clawsweeper_needs_human",
+      "comment_id": "5334059752",
+      "comment_version_key": "5334059752:2026-08-18T22:09:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125999#issuecomment-5334059752",
+      "comment_created_at": "2026-08-18T21:06:23Z",
+      "comment_updated_at": "2026-08-18T22:09:36Z",
+      "comment_body_sha256": "bc43a328daba9a334dcf005033aa60503dd74840ee8c8822e56960e7f1054c8f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125999,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as behind current main; confirm the clean merge result and rerun the focused Android test on the resulting head before landing. (sha=a25961f6f76ce48d2c459ad6361b5587881dca18)",
+      "expected_head_sha": "a25961f6f76ce48d2c459ad6361b5587881dca18",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T22:14:06.569Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-stale-tls-probe-job",
+        "head_sha": "a25961f6f76ce48d2c459ad6361b5587881dca18",
         "cluster_id": null,
         "job_path": null
       }
