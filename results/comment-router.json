@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T16:55:45.489Z",
+  "updated_at": "2026-08-18T16:56:23.766Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121073:5252436645:2026-08-11T11:18:01Z:re_review",
-      "comment_id": "5252436645",
-      "comment_version_key": "5252436645:2026-08-11T11:18:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121073#issuecomment-5252436645",
-      "comment_created_at": "2026-08-11T11:18:01Z",
-      "comment_updated_at": "2026-08-11T11:18:01Z",
-      "comment_body_sha256": "7120dac0cd25041daa792bd34e8ddeef5e8e044e0503d40947d08dbc8d53759f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121073,
-      "author": "IlyaKuprov",
-      "author_id": 166841386,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T10:20:08.123Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121073:5253402040:2026-08-11T12:50:37Z:re_review",
       "comment_id": "5253402040",
@@ -32446,6 +32419,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125902:5331396824:2026-08-18T16:54:40Z:clawsweeper_needs_human",
+      "comment_id": "5331396824",
+      "comment_version_key": "5331396824:2026-08-18T16:54:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125902#issuecomment-5331396824",
+      "comment_created_at": "2026-08-18T16:54:40Z",
+      "comment_updated_at": "2026-08-18T16:54:40Z",
+      "comment_body_sha256": "e1c1a5b4834ae5dca461d94efce3c8b0f4ec29d95651b57c4b862ae1c636e75e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125902,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds 45 production lines; the distinct build and runtime ownership gates justify the growth, but it should remain limited to this deployment boundary. (sha=8a0cbf9f505079cc952d9f29f9dd80ad4cb69bf3)",
+      "expected_head_sha": "8a0cbf9f505079cc952d9f29f9dd80ad4cb69bf3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T16:56:23.766Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/immutable-deployment-runner",
+        "head_sha": "8a0cbf9f505079cc952d9f29f9dd80ad4cb69bf3",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
