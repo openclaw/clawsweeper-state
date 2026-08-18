@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T15:19:56.711Z",
+  "updated_at": "2026-08-18T15:23:21.084Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125677:5324782668:2026-08-18T09:05:07Z:clawsweeper_auto_repair",
-      "comment_id": "5324782668",
-      "comment_version_key": "5324782668:2026-08-18T09:05:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125677#issuecomment-5324782668",
-      "comment_created_at": "2026-08-18T07:05:30Z",
-      "comment_updated_at": "2026-08-18T09:05:07Z",
-      "comment_body_sha256": "3d99d5d4ae3f17ae2392ae92c2f4b51f3ebd18971b846290d20bb3c7612fe176",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125677,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=00a4a43a95784377eed2cfa68f2d5484e0b3d7cb)",
-      "expected_head_sha": "00a4a43a95784377eed2cfa68f2d5484e0b3d7cb",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-18T09:09:18.033Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tui-local-auth-diagnostics",
-        "head_sha": "00a4a43a95784377eed2cfa68f2d5484e0b3d7cb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125739:5326028923:2026-08-18T09:06:24Z:clawsweeper_needs_human",
       "comment_id": "5326028923",
@@ -32449,6 +32416,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-18T15:21:51Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-18T15:21:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-18T15:21:51Z",
+      "comment_body_sha256": "06e94f22f5e398032c63503df948968b3a875b2cc55b5646a7e68980d137040b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Align the TruffleHog action and scanner tuple (P1)** - The action now uses v3.97.0, but its version input still downloads and verifies v3.95.9, while the workflow guard requires the old action ref. Update the ac...; Review finding: [P1] Align the TruffleHog action and scanner tuple — .github/workflows/ci.yml:1066 - [P1] Refresh the Android attestation guard — .github/workflows/android-release... (sha=bdc7859d39e2f2ced09ca8cb8105b37f9bd41fdc)",
+      "expected_head_sha": "bdc7859d39e2f2ced09ca8cb8105b37f9bd41fdc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T15:23:21.084Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "bdc7859d39e2f2ced09ca8cb8105b37f9bd41fdc",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
