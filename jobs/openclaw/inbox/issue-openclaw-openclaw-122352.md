@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair Android chat activity so a terminal subagent task event redelivered after its 60-second row expiry does not recreate visible activity. Keep the terminal-observation fact in ChatController beside the activity map and expiry jobs; clear it on a new working lifecycle, explicit task deletion, session change, gateway-scope reset, and sequence-gap reset. Add owner-boundary regressions for expiry then duplicate terminal delivery and for each reset path that permits a new lifecycle. Prove the regression fails before the fix, run the focused Android test class after the fix, and capture native-app behavior evidence if feasible. Do not alter Gateway protocol, persistence, configuration, or CHANGELOG.md; put release-note context in the PR body.
+Repair the existing Android ChatController terminal-retention behavior for https://github.com/openclaw/openclaw/issues/122352. After a terminal subagent row expires, suppress a delayed duplicate terminal event for that task ID, while admitting a genuine new working lifecycle. Keep the state ephemeral and owned by `ChatController` under its existing activity lock; clear it on a working transition, explicit task deletion, and the existing session/gateway/sequence-gap activity-clear paths. Add behavior-level controller regressions that fail before the repair: terminal event -> 60-second expiry -> same terminal event remains hidden, and terminal expiry -> working event -> new terminal lifecycle is visible. Review https://github.com/openclaw/openclaw/pull/122472 for scenarios only; do not copy its branch blindly. Do not change Gateway protocol, persistence, configuration, or CHANGELOG.md. Keep production growth minimal and explain any unavoidable lifecycle-state addition in the PR body.
 
 Likely files:
 
@@ -77,7 +77,7 @@ Likely files:
 Validation:
 
 - cd apps/android && ./gradlew --no-daemon :app:testPlayDebugUnitTest --tests ai.openclaw.app.chat.ChatControllerSubagentActivityTest
-- git diff --check
+- Capture sanitized Android UI or terminal evidence that the expired duplicate remains hidden and a new working lifecycle still appears.
 
 ## Operator Prompt
 
