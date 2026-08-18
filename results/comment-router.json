@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T00:45:54.101Z",
+  "updated_at": "2026-08-18T00:46:24.912Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124025:5315323043:2026-08-17T11:16:31Z:re_review",
-      "comment_id": "5315323043",
-      "comment_version_key": "5315323043:2026-08-17T11:16:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5315323043",
-      "comment_created_at": "2026-08-17T11:16:31Z",
-      "comment_updated_at": "2026-08-17T11:16:31Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124025,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T21:55:54.856Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124025:5315402534:2026-08-17T11:25:00Z:re_review",
       "comment_id": "5315402534",
@@ -30729,6 +30702,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125467:5321849314:2026-08-18T00:45:27Z:clawsweeper_needs_human",
+      "comment_id": "5321849314",
+      "comment_version_key": "5321849314:2026-08-18T00:45:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125467#issuecomment-5321849314",
+      "comment_created_at": "2026-08-18T00:20:52Z",
+      "comment_updated_at": "2026-08-18T00:45:27Z",
+      "comment_body_sha256": "645e1baeda27d7a8c2b3a688eae15c98c61d09bcbe0d1aaab407f8545c7ba804",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125467,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and required checks are still in progress, so the journaled recovery path lacks exact-current-main merge proof. (sha=6c6f83b57145e47cfb028a152f7c2cda616a7e58)",
+      "expected_head_sha": "6c6f83b57145e47cfb028a152f7c2cda616a7e58",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T00:46:24.912Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/infallible-proskuriakova-9086de",
+        "head_sha": "6c6f83b57145e47cfb028a152f7c2cda616a7e58",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
