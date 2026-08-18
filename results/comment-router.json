@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T21:36:10.781Z",
+  "updated_at": "2026-08-18T21:36:13.160Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125663:5329846890:2026-08-18T14:46:11Z:re_review",
-      "comment_id": "5329846890",
-      "comment_version_key": "5329846890:2026-08-18T14:46:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125663#issuecomment-5329846890",
-      "comment_created_at": "2026-08-18T14:46:11Z",
-      "comment_updated_at": "2026-08-18T14:46:11Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125663,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T14:46:54.662Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-host-trajectory-recorder",
-        "head_sha": "b5bcec1a0510ff6f5f87d35ef7bd1a9e9ab5f84c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101316:4899972820:2026-08-18T14:24:47Z:clawsweeper_auto_repair",
       "comment_id": "4899972820",
@@ -32625,6 +32578,39 @@
         "kind": "pull_request",
         "branch": "feat/session-tail-metrics",
         "head_sha": "a94e8cc17988a4d22d9e867a58eaf922f7ee3776",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:87:5332650207:2026-08-18T21:30:32Z:clawsweeper_needs_human",
+      "comment_id": "5332650207",
+      "comment_version_key": "5332650207:2026-08-18T21:30:32Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/87#issuecomment-5332650207",
+      "comment_created_at": "2026-08-18T18:53:45Z",
+      "comment_updated_at": "2026-08-18T21:30:32Z",
+      "comment_body_sha256": "44d690616896343425f40ab500807c8d1e4fe9ea3e098bb5d80706fecfdd424f",
+      "repo": "openclaw/ocm",
+      "issue_number": 87,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing linked worktrees whose top-level dependencies point to another checkout will now fail local builds and source watch until dependencies are installed within the selected check... (sha=6b79f348e837538171ae0879e30229ea41427c7b)",
+      "expected_head_sha": "6b79f348e837538171ae0879e30229ea41427c7b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T21:36:13.160Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "oc-70a.1/isolate-linked-worktree-dependencies",
+        "head_sha": "6b79f348e837538171ae0879e30229ea41427c7b",
         "cluster_id": null,
         "job_path": null
       }
