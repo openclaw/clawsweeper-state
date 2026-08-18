@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T03:43:40.621Z",
+  "updated_at": "2026-08-18T03:44:30.861Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124429:5321689334:2026-08-18T00:00:51Z:re_review",
-      "comment_id": "5321689334",
-      "comment_version_key": "5321689334:2026-08-18T00:00:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124429#issuecomment-5321689334",
-      "comment_created_at": "2026-08-18T00:00:51Z",
-      "comment_updated_at": "2026-08-18T00:00:51Z",
-      "comment_body_sha256": "5b95efc6726efc6dca5ce6ec1a421f4bb65079cd41483e05aebcd093fecff714",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124429,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T00:07:59.307Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-issue-121481",
-        "head_sha": "125e27d2455c168da65eaa2d309afa41e913391f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124429:5305876654:2026-08-18T00:07:05Z:clawsweeper_needs_human",
       "comment_id": "5305876654",
@@ -31140,6 +31093,39 @@
         "kind": "pull_request",
         "branch": "steipete/sidebar-placement-visibility-47d2bd",
         "head_sha": "9a0c09e96544687a36f53719fdd343a707e38328",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125548:5323218871:2026-08-18T03:43:36Z:clawsweeper_needs_human",
+      "comment_id": "5323218871",
+      "comment_version_key": "5323218871:2026-08-18T03:43:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125548#issuecomment-5323218871",
+      "comment_created_at": "2026-08-18T03:27:53Z",
+      "comment_updated_at": "2026-08-18T03:43:36Z",
+      "comment_body_sha256": "6ce0919b7611915f4beed95d29c1aba5c9d7a99916fc2c4ce3f166045ef5da85",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125548,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and the aggregate CI gate is still queued; landing should use a refreshed merge result with exact-head checks green. (sha=9ffe05a52320dbfc4766a4ad03dcfaa9db2cc241)",
+      "expected_head_sha": "9ffe05a52320dbfc4766a4ad03dcfaa9db2cc241",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T03:44:30.861Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-new-session-draft-restore-race",
+        "head_sha": "9ffe05a52320dbfc4766a4ad03dcfaa9db2cc241",
         "cluster_id": null,
         "job_path": null
       }
