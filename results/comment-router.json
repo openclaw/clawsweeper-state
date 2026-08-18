@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T16:06:58.428Z",
+  "updated_at": "2026-08-18T16:07:39.591Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117432:5254223873:2026-08-11T14:03:46Z:re_review",
-      "comment_id": "5254223873",
-      "comment_version_key": "5254223873:2026-08-11T14:03:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117432#issuecomment-5254223873",
-      "comment_created_at": "2026-08-11T14:03:46Z",
-      "comment_updated_at": "2026-08-11T14:03:46Z",
-      "comment_body_sha256": "e37c9264a2873a2cd5d5212f29d623c7ce7f2428211fe130916b83a9cf1e9c87",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117432,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — refreshed the real-behavior evidence for the rebased head 03fa68bd307 (engine loop + planner fallback + native cli mcp transport) and updated the pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T09:46:02.524Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117432:5254474331:2026-08-11T14:25:06Z:re_review",
       "comment_id": "5254474331",
@@ -32423,6 +32396,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3471:5304213104:2026-08-18T16:03:21Z:clawsweeper_needs_human",
+      "comment_id": "5304213104",
+      "comment_version_key": "5304213104:2026-08-18T16:03:21Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3471#issuecomment-5304213104",
+      "comment_created_at": "2026-08-15T21:00:54Z",
+      "comment_updated_at": "2026-08-18T16:03:21Z",
+      "comment_body_sha256": "94d6af35f9e7aec107a19951abdef4ce492c6ce8fe8d9e99f1ea0f6cd7d63fd3",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3471,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P0)** - The intentional 1.5-second cutoff can render a fallback card for a slow-but-eventually-successful metadata origin, and aborted best-effort metric requests can undercount downloads dur... (sha=d20f8feaeb41480ff7953e49abf3843fd730ffba)",
+      "expected_head_sha": "d20f8feaeb41480ff7953e49abf3843fd730ffba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T16:07:39.591Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/og-fetch-timeout",
+        "head_sha": "d20f8feaeb41480ff7953e49abf3843fd730ffba",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
