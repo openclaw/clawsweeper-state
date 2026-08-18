@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119041"
 mode: "autonomous"
-run_id: "32116984476"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32116984476"
-head_sha: "03c1f452ec49479c8df06aab6d2204187ed47018"
+run_id: "32118089517"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32118089517"
+head_sha: "33ef2427487010da6078c48ec923073fe5d033c6"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T08:48:05.421Z"
+published_at: "2026-08-18T08:58:57.989Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119041"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119041"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32116984476](https://github.com/openclaw/clawsweeper/actions/runs/32116984476)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32118089517](https://github.com/openclaw/clawsweeper/actions/runs/32118089517)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/119041
 
 ## Summary
 
-Current main still has the Slack preview-rotation path, but this worker cannot implement or validate it: the sandbox is read-only and required sibling ../codex source is absent, so the repository’s Codex hard gate cannot be met.
+Confirmed a narrow Slack partial-preview lifecycle defect. Implementation could not start: this checkout is read-only, has no node_modules, and the mandatory sibling ../codex checkout is absent. A new-fix-PR artifact is ready for a writable executor.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Current main still has the Slack preview-rotation path, but this worker cannot i
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119041 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout and unmet required direct ../codex inspection gate; no maintainer product decision is needed. |
-| cluster:issue-openclaw-openclaw-119041 | build_fix_artifact | planned | canonical | Prepared for a writable executor; current worker cannot create or validate the branch. |
-| #80862 | keep_closed | skipped | related | Already closed and not part of the Slack repair. |
-| #85612 | keep_closed | skipped | related | Already merged and does not cover this partial-mode defect. |
-| #119067 | keep_closed | skipped | superseded | Historical source only; a new ClawSweeper branch is the required path. |
+| #119041 | fix_needed | blocked | canonical | A writable, dependency-installed checkout plus the required sibling Codex source are needed before adding the failing regression, applying the repair, and validating it. |
+| cluster:issue-openclaw-openclaw-119041 | build_fix_artifact | planned | canonical | Narrow non-security repair suitable for a new ClawSweeper PR once executable gates are available. |
+| #80862 | keep_closed | skipped | related | Already closed; no mutation. |
+| #85612 | keep_closed | skipped | related | Already closed; no mutation. |
+| #119067 | keep_closed | skipped | superseded | Already closed; the new artifact owns the repair path. |
 
 ## Needs Human
 
