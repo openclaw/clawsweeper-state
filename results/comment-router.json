@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T14:37:32.648Z",
+  "updated_at": "2026-08-18T14:37:52.763Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124049:5325698922:2026-08-18T08:35:37Z:re_review",
-      "comment_id": "5325698922",
-      "comment_version_key": "5325698922:2026-08-18T08:35:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124049#issuecomment-5325698922",
-      "comment_created_at": "2026-08-18T08:35:37Z",
-      "comment_updated_at": "2026-08-18T08:35:37Z",
-      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124049,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T08:36:24.236Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bug-056-retain-coordinator-unbounded-loop",
-        "head_sha": "e72353ec86a5783f1849c9a6b9cedaaea8944353",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124303:5304803937:2026-08-15T23:50:44Z:re_review",
       "comment_id": "5304803937",
@@ -32160,6 +32113,39 @@
         "kind": "pull_request",
         "branch": "steipete/gateway-start-or-steer",
         "head_sha": "f9a2b20d79955187e91aed2cb810272d9e1add2a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125846:5329711496:2026-08-18T14:36:26Z:clawsweeper_needs_human",
+      "comment_id": "5329711496",
+      "comment_version_key": "5329711496:2026-08-18T14:36:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125846#issuecomment-5329711496",
+      "comment_created_at": "2026-08-18T14:36:26Z",
+      "comment_updated_at": "2026-08-18T14:36:26Z",
+      "comment_body_sha256": "7ee63428deae1824b6bb737732ebf32fd5fd25d69f5c5cabff4627e8b1be8b90",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125846,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress, so this review is not a merge-readiness confirmation. (sha=bfdf0a47485e3a183eaa19958754a834ff49be76)",
+      "expected_head_sha": "bfdf0a47485e3a183eaa19958754a834ff49be76",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T14:37:52.763Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/nervous-wozniak-1ef070",
+        "head_sha": "bfdf0a47485e3a183eaa19958754a834ff49be76",
         "cluster_id": null,
         "job_path": null
       }
