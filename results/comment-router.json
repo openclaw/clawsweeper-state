@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T16:08:19.453Z",
+  "updated_at": "2026-08-18T16:08:50.916Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117432:5254738110:2026-08-11T14:46:51Z:re_review",
-      "comment_id": "5254738110",
-      "comment_version_key": "5254738110:2026-08-11T14:46:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117432#issuecomment-5254738110",
-      "comment_created_at": "2026-08-11T14:46:51Z",
-      "comment_updated_at": "2026-08-11T14:46:51Z",
-      "comment_body_sha256": "42cfa0fec4781ad21ffd9e82cf014d1f2640dcc8e901e43ebb0f9c2e854a0162",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117432,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — resolved the merge conflict by rebasing onto current main (`8d1fa472d9b`) and refreshed the exact-head evidence on `904a112d4e0`: real engine-loop turn, planner-fallback refusal, and the real mcp stdio boundary (all three repro scripts + 103 unit tests pass on the exact head)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T09:46:02.524Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125665:5324644236:2026-08-18T09:45:04Z:clawsweeper_needs_human",
       "comment_id": "5324644236",
@@ -32449,6 +32422,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125880:5330848128:2026-08-18T16:05:49Z:clawsweeper_needs_human",
+      "comment_id": "5330848128",
+      "comment_version_key": "5330848128:2026-08-18T16:05:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125880#issuecomment-5330848128",
+      "comment_created_at": "2026-08-18T16:05:49Z",
+      "comment_updated_at": "2026-08-18T16:05:49Z",
+      "comment_body_sha256": "34b878e2a499b2527d894e0d0749b175cc322e070e60f4b354f25383603c3999",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125880,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The correction intentionally changes provider/model routing for existing child sessions that have both a parent pin and a channel default; exact-head focused validation should confirm... (sha=b2cc472c0d2f59172c25cbd6a7377717b4f60a42)",
+      "expected_head_sha": "b2cc472c0d2f59172c25cbd6a7377717b4f60a42",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T16:08:50.916Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/parent-override-precedence-bc0990",
+        "head_sha": "b2cc472c0d2f59172c25cbd6a7377717b4f60a42",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
