@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T19:19:58.304Z",
+  "updated_at": "2026-08-18T19:21:14.956Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124015:5312747517:2026-08-17T06:45:12Z:re_review",
-      "comment_id": "5312747517",
-      "comment_version_key": "5312747517:2026-08-17T06:45:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5312747517",
-      "comment_created_at": "2026-08-17T06:45:12Z",
-      "comment_updated_at": "2026-08-17T06:45:12Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124015,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T13:04:16.284Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125805:5328545865:2026-08-18T13:03:15Z:clawsweeper_auto_repair",
       "comment_id": "5328545865",
@@ -32152,6 +32125,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T19:19:58.304Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125946:5332622837:2026-08-18T19:20:22Z:clawsweeper_needs_human",
+      "comment_id": "5332622837",
+      "comment_version_key": "5332622837:2026-08-18T19:20:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125946#issuecomment-5332622837",
+      "comment_created_at": "2026-08-18T18:51:09Z",
+      "comment_updated_at": "2026-08-18T19:20:22Z",
+      "comment_body_sha256": "cbb7693f0bae62695b1b71005b7ec2fba5593a6cf8f16dac411d4b87134ca672",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125946,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check rollup includes failed and still-running shards; their cause is not established by this read-only review, but required CI must be green before merge. (sha=2a72899def764c5b0895ca9dd07db2ef72fd2e67)",
+      "expected_head_sha": "2a72899def764c5b0895ca9dd07db2ef72fd2e67",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T19:21:14.956Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/bold-allen-8fed3f",
+        "head_sha": "2a72899def764c5b0895ca9dd07db2ef72fd2e67",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
