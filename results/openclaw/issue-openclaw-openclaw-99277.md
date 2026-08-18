@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-99277"
 mode: "autonomous"
-run_id: "32133592561"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32133592561"
+run_id: "32133975261"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32133975261"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T11:58:34.916Z"
+published_at: "2026-08-18T12:04:11.615Z"
 canonical: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32133592561](https://github.com/openclaw/clawsweeper/actions/runs/32133592561)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32133975261](https://github.com/openclaw/clawsweeper/actions/runs/32133975261)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 ## Summary
 
-Current main reproduces the Mattermost acknowledgement gap, with a narrow plugin-local repair path. Implementation is blocked before a safe PR can be produced: this checkout is read-only, the mandatory sibling ../codex source is absent and cannot be cloned, and no redacted Mattermost workspace proof exists for the shared Unicode/default acknowledgement emoji encoding.
+#99277 remains a real current-main bug: accepted Mattermost posts are recorded and dispatched without an acknowledgement bridge. A narrow plugin-local repair is identified, but this read-only worker cannot create or validate it: ../codex is absent (mandatory direct Codex gate), dependencies are missing, and the required redacted live Mattermost emoji-encoding proof cannot run here.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Current main reproduces the Mattermost acknowledgement gap, with a narrow plugin
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #99277 | fix_needed | blocked | canonical | The bug is real, but code changes and PR creation require a writable checkout, the mandatory ../codex direct inspection, and the job-required live Mattermost emoji-encoding proof. |
-| #80426 | keep_closed | skipped | superseded | Already closed historical context. |
-| #119124 | keep_closed | skipped | superseded | Already closed historical context. |
-| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | blocked | canonical | Await a writable checkout with ../codex available and a redacted Mattermost API proof for default/configured emoji encoding. |
+| #80426 | keep_closed | skipped | superseded | Historical source only; it must not receive a closure action. |
+| #119124 | keep_closed | skipped | superseded | Historical source only; it must not receive a closure action. |
+| #99277 | fix_needed | blocked | canonical | Implementation is blocked on a writable checkout with dependencies, the mandatory direct ../codex inspection, and required redacted live Mattermost transport proof. |
+| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | blocked | canonical | A narrow replacement PR is appropriate once executable validation and live transport proof are available. |
 
 ## Needs Human
 
