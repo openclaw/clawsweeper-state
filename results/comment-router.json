@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T02:16:45.415Z",
+  "updated_at": "2026-08-18T02:18:23.918Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5306286478:2026-08-16T07:17:42Z:re_review",
-      "comment_id": "5306286478",
-      "comment_version_key": "5306286478:2026-08-16T07:17:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5306286478",
-      "comment_created_at": "2026-08-16T07:17:42Z",
-      "comment_updated_at": "2026-08-16T07:17:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T22:34:34.973Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5307592000:2026-08-16T13:08:54Z:re_review",
       "comment_id": "5307592000",
@@ -31499,6 +31472,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125508:5322622041:2026-08-18T02:17:34Z:clawsweeper_needs_human",
+      "comment_id": "5322622041",
+      "comment_version_key": "5322622041:2026-08-18T02:17:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125508#issuecomment-5322622041",
+      "comment_created_at": "2026-08-18T02:17:34Z",
+      "comment_updated_at": "2026-08-18T02:17:34Z",
+      "comment_body_sha256": "8a8943cf9f04982435ba778c3c0a8f9e8bd36e54084af894dca849f5d4068ed1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125508,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - One compact Node check is failing and Android validation is still pending, so the exact head should not merge until the failure is identified or cleared. (sha=aba1320fbff51808676a4324d652f2f5cf3bf31a)",
+      "expected_head_sha": "aba1320fbff51808676a4324d652f2f5cf3bf31a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T02:18:23.918Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "aba1320fbff51808676a4324d652f2f5cf3bf31a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
