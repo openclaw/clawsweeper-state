@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T23:38:39.561Z",
+  "updated_at": "2026-08-18T23:43:33.736Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5296184089:2026-08-14T17:20:13Z:re_review",
-      "comment_id": "5296184089",
-      "comment_version_key": "5296184089:2026-08-14T17:20:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5296184089",
-      "comment_created_at": "2026-08-14T17:20:13Z",
-      "comment_updated_at": "2026-08-14T17:20:13Z",
-      "comment_body_sha256": "d9b02e490031b191bb2e5c32c5b242cd4146c0bb5de26337b8b08b084acc5827",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T18:19:50.088Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5296316631:2026-08-14T17:33:59Z:re_review",
       "comment_id": "5296316631",
@@ -32322,6 +32295,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/birdclaw:127:5333718950:2026-08-18T23:42:46Z:clawsweeper_needs_human",
+      "comment_id": "5333718950",
+      "comment_version_key": "5333718950:2026-08-18T23:42:46Z",
+      "comment_url": "https://github.com/steipete/birdclaw/pull/127#issuecomment-5333718950",
+      "comment_created_at": "2026-08-18T20:32:46Z",
+      "comment_updated_at": "2026-08-18T23:42:46Z",
+      "comment_body_sha256": "27e8c5458cc409ee72a8579a16a745617a846edab53f6682547a13f49e63630d",
+      "repo": "steipete/birdclaw",
+      "issue_number": 127,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scheduled account jobs with backup auto-sync will now exit nonzero on backup failure, intentionally changing launchd alert and retry behavior. (sha=1353329ec9c2e472e2869767051b960d699453e6)",
+      "expected_head_sha": "1353329ec9c2e472e2869767051b960d699453e6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T23:43:33.736Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/account-sync-backup-status",
+        "head_sha": "1353329ec9c2e472e2869767051b960d699453e6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
