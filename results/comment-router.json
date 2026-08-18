@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T18:47:07.910Z",
+  "updated_at": "2026-08-18T18:47:12.845Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:90703:4765975177:2026-06-22T07:37:57Z:re_review",
-      "comment_id": "4765975177",
-      "comment_version_key": "4765975177:2026-06-22T07:37:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90703#issuecomment-4765975177",
-      "comment_created_at": "2026-06-22T07:37:57Z",
-      "comment_updated_at": "2026-06-22T07:37:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90703,
-      "author": "Alex-Govorov",
-      "author_id": 17878677,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T12:07:17.723Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1128:5225378319:2026-08-18T11:58:19Z:clawsweeper_needs_human",
       "comment_id": "5225378319",
@@ -32306,6 +32279,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T18:47:07.910Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125707:5325833647:2026-08-18T18:46:20Z:clawsweeper_needs_human",
+      "comment_id": "5325833647",
+      "comment_version_key": "5325833647:2026-08-18T18:46:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125707#issuecomment-5325833647",
+      "comment_created_at": "2026-08-18T08:48:15Z",
+      "comment_updated_at": "2026-08-18T18:46:20Z",
+      "comment_body_sha256": "c88e986b06d8e8c4fada74a1876ae5b579f066affa7a5634259129b758abceb7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125707,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch changes durable session state and the configuration replay sent to Codex; its correctness depends on the unavailable pinned 0.147.0 app-server contract. (sha=22eac22dd3c1b1dcd2e3e335e720bb8aaa1c6b01)",
+      "expected_head_sha": "22eac22dd3c1b1dcd2e3e335e720bb8aaa1c6b01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T18:47:12.845Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cached-codex-effort-route",
+        "head_sha": "22eac22dd3c1b1dcd2e3e335e720bb8aaa1c6b01",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
