@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-124025"
 mode: "autonomous"
-run_id: "32152394303"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32152394303"
+run_id: "32155450150"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32155450150"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-18T15:41:28.775Z"
+published_at: "2026-08-18T15:47:32.573Z"
 canonical: "#124025"
 canonical_issue: null
 canonical_pr: "#124025"
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32152394303](https://github.com/openclaw/clawsweeper/actions/runs/32152394303)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32155450150](https://github.com/openclaw/clawsweeper/actions/runs/32155450150)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: #124025
 
 ## Summary
 
-#124025 remains the open canonical PR. It is behind main and its required changed-extension CI shard failed, so it needs contributor-branch repair and exact-head re-review before any merge consideration.
+#124025 is the maintained canonical repair path. It needs a contributor-branch repair pass: the hydrated head has two failing CI checks, and the required direct Codex protocol inspection is unavailable because ../codex is absent. No merge or GitHub mutation is proposed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Canonical: #124025
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124025 | fix_needed | planned | canonical | Repair the adopted contributor branch; merge and close are prohibited by this job. |
-| #124025 | build_fix_artifact | planned | canonical | Create an executable, credited contributor-branch repair plan rather than replacing the writable same-repository PR. |
+| #124025 | keep_canonical | planned | canonical | Keep the contributor PR as the canonical path and preserve its history and attribution. |
+| #124025 | fix_needed | planned | canonical | Repair the existing writable contributor branch after inspecting the exact failing CI log and direct Codex app-server contract. |
+| #124025 | build_fix_artifact | planned | canonical | A narrow repair artifact is required by the adopted-PR job and is safer than a replacement PR. |
 
 ## Needs Human
 
