@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125745",
+  "mode": "autonomous",
+  "run_id": "32128208370",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32128208370",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125745.md",
+  "published_at": "2026-08-18T10:59:14.830Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125745",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125745",
+  "canonical_pr": null,
+  "summary": "Confirmed current-main bug: direct-credential probes create an isolated auth profile, but invoke the embedded runner in normal prepared-runtime mode; an active Gateway then rebinds the run to its canonical agent directory before auth selection. A narrow repair plan is ready, but this read-only checkout cannot create the required branch or install missing test dependencies, and the mandatory sibling ../codex source checkout is absent.",
+  "actions": [
+    {
+      "target": "#125745",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125745",
+      "candidate_fix": null,
+      "reason": "The issue remains the canonical open bug. The repair is narrow and requires a new credited fix PR, but this worker cannot modify the read-only checkout or validate until dependencies and the mandatory Codex source inspection are available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125745",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125745",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor; implementation and validation are blocked only by the current environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
