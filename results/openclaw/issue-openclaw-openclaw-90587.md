@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-90587"
 mode: "autonomous"
-run_id: "32186005852"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32186005852"
+run_id: "32186594921"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32186594921"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T21:21:37.580Z"
+published_at: "2026-08-18T21:27:16.882Z"
 canonical: "https://github.com/openclaw/openclaw/issues/90587"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/90587"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32186005852](https://github.com/openclaw/clawsweeper/actions/runs/32186005852)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32186594921](https://github.com/openclaw/clawsweeper/actions/runs/32186594921)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/90587
 
 ## Summary
 
-#90587 remains the canonical managed-Codex RISC-V64 bug. Current main lacks the managed-host support check; selection already has the required implicit OpenClaw fallback and explicit-Codex fail-closed behavior. Implementation is blocked in this worker because the checkout is read-only, dependencies cannot be installed, and the mandatory sibling ../codex source checkout is absent and cannot be cloned.
+#90587 remains the canonical managed-Codex host-capability bug; #11977 is a distinct Docker-distribution request. A narrow fix plan is ready, but this read-only runner cannot satisfy the required direct ../codex contract inspection, install dependencies, modify the branch, or run validation.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/90587
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #11977 | keep_related | planned | related | Leave open independently; it has a different distribution and product-support decision. |
-| #90587 | fix_needed | blocked | canonical | A narrow fix is defined, but this worker cannot make or validate code changes in the read-only checkout and cannot satisfy the repository's mandatory direct ../codex inspection gate. |
-| cluster:issue-openclaw-openclaw-90587 | build_fix_artifact | blocked | canonical | Executor needs a writable checkout with dependencies and a sibling ../codex checkout before implementation and validation. |
+| #90587 | fix_needed | blocked | canonical | Implementation is blocked only by runner capabilities: missing required ../codex source, read-only checkout, and unavailable dependencies. |
+| #11977 | keep_related | planned | related | Related architecture/platform context, but a separate distribution and product-contract decision. |
+| cluster:issue-openclaw-openclaw-90587 | build_fix_artifact | blocked | canonical | The executor must first inspect the exact upstream Codex launcher in ../codex, then implement and validate the artifact below in a writable checkout. |
 
 ## Needs Human
 

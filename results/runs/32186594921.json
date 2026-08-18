@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-90587",
+  "mode": "autonomous",
+  "run_id": "32186594921",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32186594921",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-90587.md",
+  "published_at": "2026-08-18T21:27:16.882Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/90587",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/90587",
+  "canonical_pr": null,
+  "summary": "#90587 remains the canonical managed-Codex host-capability bug; #11977 is a distinct Docker-distribution request. A narrow fix plan is ready, but this read-only runner cannot satisfy the required direct ../codex contract inspection, install dependencies, modify the branch, or run validation.",
+  "actions": [
+    {
+      "target": "#90587",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#90587",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by runner capabilities: missing required ../codex source, read-only checkout, and unavailable dependencies."
+    },
+    {
+      "target": "#11977",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#90587",
+      "candidate_fix": null,
+      "reason": "Related architecture/platform context, but a separate distribution and product-contract decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-90587",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#90587",
+      "candidate_fix": null,
+      "reason": "The executor must first inspect the exact upstream Codex launcher in ../codex, then implement and validate the artifact below in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#90587",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
