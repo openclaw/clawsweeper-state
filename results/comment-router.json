@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T07:22:15.101Z",
+  "updated_at": "2026-08-18T07:22:56.077Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110434:5010083683:2026-08-11T22:03:10Z:clawsweeper_auto_merge",
-      "comment_id": "5010083683",
-      "comment_version_key": "5010083683:2026-08-11T22:03:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110434#issuecomment-5010083683",
-      "comment_created_at": "2026-07-18T05:33:37Z",
-      "comment_updated_at": "2026-08-11T22:03:10Z",
-      "comment_body_sha256": "24b40493af90ce59fe5c65233358a03b478fb46166d823f8d3de4d4218ce2967",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110434,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=ee3144c20152251040a542abe66618d524ae6d89)",
-      "expected_head_sha": "ee3144c20152251040a542abe66618d524ae6d89",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T02:57:58.970Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/microsoft-foundry-execaz-sigkill",
-        "head_sha": "ee3144c20152251040a542abe66618d524ae6d89",
-        "cluster_id": "automerge-openclaw-openclaw-110434",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-110434.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116253:5127327353:2026-08-18T02:46:08Z:clawsweeper_needs_human",
       "comment_id": "5127327353",
@@ -32042,6 +32009,65 @@
         "job_path": null
       },
       "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125143:5324939721:2026-08-18T07:21:56Z:automerge",
+      "comment_id": "5324939721",
+      "comment_version_key": "5324939721:2026-08-18T07:21:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125143#issuecomment-5324939721",
+      "comment_created_at": "2026-08-18T07:21:56Z",
+      "comment_updated_at": "2026-08-18T07:21:56Z",
+      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125143,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T07:22:44.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/infer-image-generate-is-unusable-in-a-multi-agen",
+        "head_sha": "378e9001352e5b16fa21bc4fe38fe75de5a5ee7b",
+        "cluster_id": "automerge-openclaw-openclaw-125143",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125143.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125143.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
         {
           "action": "dispatch_clawsweeper",
           "status": "executed",
