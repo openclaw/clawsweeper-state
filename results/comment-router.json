@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T06:14:14.853Z",
+  "updated_at": "2026-08-18T06:14:20.074Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5272940107:2026-08-12T21:21:55Z:re_review",
-      "comment_id": "5272940107",
-      "comment_version_key": "5272940107:2026-08-12T21:21:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5272940107",
-      "comment_created_at": "2026-08-12T21:21:55Z",
-      "comment_updated_at": "2026-08-12T21:21:55Z",
-      "comment_body_sha256": "6e62291cb32affa39f44081ab2c0e3161826bc5e9e559e2d1dcaa961f85e47de",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T02:42:47.744Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5272969484:2026-08-12T21:25:16Z:re_review",
       "comment_id": "5272969484",
@@ -31122,6 +31095,65 @@
         "job_path": null
       },
       "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125294:5324347132:2026-08-18T06:13:39Z:automerge",
+      "comment_id": "5324347132",
+      "comment_version_key": "5324347132:2026-08-18T06:13:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125294#issuecomment-5324347132",
+      "comment_created_at": "2026-08-18T06:13:39Z",
+      "comment_updated_at": "2026-08-18T06:13:39Z",
+      "comment_body_sha256": "463c0d47229501d23cadbd35f5fc1a7fc7164d14f8f726dc3c1055cbee35b844",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125294,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T06:14:12.060Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-qa-bash3",
+        "head_sha": "8fde5cb9d240f6a0526206a7df8eec1794d75021",
+        "cluster_id": "automerge-openclaw-openclaw-125294",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125294.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125294.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
         {
           "action": "dispatch_clawsweeper",
           "status": "executed",
