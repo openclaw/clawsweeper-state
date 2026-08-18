@@ -1,0 +1,65 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125792",
+  "mode": "autonomous",
+  "run_id": "32129705353",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32129705353",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125792.md",
+  "published_at": "2026-08-18T11:14:00.477Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125792",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125792",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the missing embedding ctx-size. A narrow llama.cpp fix is appropriate, but implementation is blocked: the required sibling ../codex source checkout is absent, the pinned b10357 models-preset contract and runnable binary/model are unavailable, and preserving arbitrary manual models.ini edits needs an owner decision.",
+  "actions": [
+    {
+      "target": "#125792",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "Canonical reproducible bug; no implementation PR exists."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125792",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "Do not encode an unverified llama.cpp preset setting or change preset-ownership semantics without the dependency contract and a writable validation environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125792",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "Prepared narrow artifact for an executor that can inspect the dependency, edit, and run the required live proof."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Define the required preservation semantics for manual models.ini edits. Current prepareManagedLlamaServer atomically overwrites the file on every preparation (extensions/llama-cpp/src/managed-server.ts:347); preserving arbitrary edits while updating generated entries needs an explicit ownership/merge rule."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
