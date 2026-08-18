@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T05:44:50.292Z",
+  "updated_at": "2026-08-18T05:47:42.617Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121186:5233275219:2026-08-18T01:46:37Z:clawsweeper_needs_human",
-      "comment_id": "5233275219",
-      "comment_version_key": "5233275219:2026-08-18T01:46:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121186#issuecomment-5233275219",
-      "comment_created_at": "2026-08-09T18:45:38Z",
-      "comment_updated_at": "2026-08-18T01:46:37Z",
-      "comment_body_sha256": "d0a3100a72df8593406ec07c64878b59b8a83cf6756443777cca78fcd5433361",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121186,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 52 net lines to retain cap-, expiry-, and fairness-bounded retry state; that contract is source-backed, but it needs an exact latest-main refresh because curr... (sha=0f546fa65205f3aacd8e37227bd03f7acb2389fb)",
-      "expected_head_sha": "0f546fa65205f3aacd8e37227bd03f7acb2389fb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T01:51:28.988Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/beam-terminal-retry-20260810",
-        "head_sha": "0f546fa65205f3aacd8e37227bd03f7acb2389fb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121186:5235352493:2026-08-10T02:51:53Z:re_review",
       "comment_id": "5235352493",
@@ -31634,6 +31601,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112375:5324147934:2026-08-18T05:46:52Z:re_review",
+      "comment_id": "5324147934",
+      "comment_version_key": "5324147934:2026-08-18T05:46:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5324147934",
+      "comment_created_at": "2026-08-18T05:46:52Z",
+      "comment_updated_at": "2026-08-18T05:46:52Z",
+      "comment_body_sha256": "ec70b7a2b543a2168e70ce8933fdee054a1a994a309cca6a27be7a1529545254",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112375,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T05:47:40.255Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bartok9/cron-precheck-gate",
+        "head_sha": "2902267c61e85508bffba4a3fbc732a3f6ce2eac",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
