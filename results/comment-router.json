@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T07:05:19.107Z",
+  "updated_at": "2026-08-18T07:06:36.070Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:83254:4472384133:2026-08-18T02:42:57Z:clawsweeper_needs_human",
-      "comment_id": "4472384133",
-      "comment_version_key": "4472384133:2026-08-18T02:42:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83254#issuecomment-4472384133",
-      "comment_created_at": "2026-05-17T20:20:03Z",
-      "comment_updated_at": "2026-08-18T02:42:57Z",
-      "comment_body_sha256": "0526c8c47bb79c8cf8141aaf8db04a628b7df6ddacafc76e01c801fd03ce7a37",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83254,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The local production-transport HTTP capture is useful after-fix evidence, but the applicable Telegram transport policy requires a reda... (sha=5aed0e8180aee13f7d71ef6ede5ea0a38c686691)",
-      "expected_head_sha": "5aed0e8180aee13f7d71ef6ede5ea0a38c686691",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T02:57:58.970Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "Hemant/telegram-user-agent",
-        "head_sha": "5aed0e8180aee13f7d71ef6ede5ea0a38c686691",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:83760:4482274638:2026-08-18T02:44:15Z:clawsweeper_auto_repair",
       "comment_id": "4482274638",
@@ -31999,6 +31966,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125229:5324784994:2026-08-18T07:05:46Z:re_review",
+      "comment_id": "5324784994",
+      "comment_version_key": "5324784994:2026-08-18T07:05:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125229#issuecomment-5324784994",
+      "comment_created_at": "2026-08-18T07:05:46Z",
+      "comment_updated_at": "2026-08-18T07:05:46Z",
+      "comment_body_sha256": "56e90b0e866ffbd18ca24337d3f777fc3f2613431ddc6cebc5b1b2ebe3589e76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125229,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T07:06:33.943Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tmp/transcript-fence-behavior",
+        "head_sha": "9089c2d511836e548f5a784061b17db66a8996c2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
