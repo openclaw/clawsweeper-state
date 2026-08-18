@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T16:28:50.379Z",
+  "updated_at": "2026-08-18T16:31:35.522Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125665:5326519402:2026-08-18T09:51:23Z:re_review",
-      "comment_id": "5326519402",
-      "comment_version_key": "5326519402:2026-08-18T09:51:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125665#issuecomment-5326519402",
-      "comment_created_at": "2026-08-18T09:51:23Z",
-      "comment_updated_at": "2026-08-18T09:51:23Z",
-      "comment_body_sha256": "a1f00848dd493b75f20c2a008de3f2744b9337d3510c45e1d56d8c11bfc98c77",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125665,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T09:52:10.086Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/persistent-drafts-cleanup",
-        "head_sha": "2347e177044478d132ff475a968978876cbdc697",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125645:5326524038:2026-08-18T09:51:50Z:re_review",
       "comment_id": "5326524038",
@@ -32464,6 +32417,39 @@
         "kind": "pull_request",
         "branch": "codex/background-exact-process-selectors",
         "head_sha": "4780ba819c365ecf956252f7efed429d1d4b05cb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125881:5330719334:2026-08-18T16:29:46Z:clawsweeper_auto_repair",
+      "comment_id": "5330719334",
+      "comment_version_key": "5330719334:2026-08-18T16:29:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125881#issuecomment-5330719334",
+      "comment_created_at": "2026-08-18T15:55:07Z",
+      "comment_updated_at": "2026-08-18T16:29:46Z",
+      "comment_body_sha256": "ee8cc4f5b867f318d8e4c8084e895e36c5a179f4fc4c57725ba5fe6d7dfb0e5c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125881,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=df1ccfc189c131c91be92148b1a6b40476839c06)",
+      "expected_head_sha": "df1ccfc189c131c91be92148b1a6b40476839c06",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T16:31:35.522Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llama-cpp-embedding-ctx-size",
+        "head_sha": "df1ccfc189c131c91be92148b1a6b40476839c06",
         "cluster_id": null,
         "job_path": null
       }
