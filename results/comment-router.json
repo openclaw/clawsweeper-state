@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T02:05:09.046Z",
+  "updated_at": "2026-08-18T02:06:51.833Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125432:5321028968:2026-08-17T22:33:05Z:clawsweeper_auto_repair",
-      "comment_id": "5321028968",
-      "comment_version_key": "5321028968:2026-08-17T22:33:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125432#issuecomment-5321028968",
-      "comment_created_at": "2026-08-17T22:33:05Z",
-      "comment_updated_at": "2026-08-17T22:33:05Z",
-      "comment_body_sha256": "699442c0d827260494a35fe06fc5c5724b8d2a9a26f52c2719de16199ba8ccd5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125432,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d6e8bc562b63a410e5b1f7ee09e3fc91023f3955)",
-      "expected_head_sha": "d6e8bc562b63a410e5b1f7ee09e3fc91023f3955",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T22:33:55.087Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/matrix-identity-exactness",
-        "head_sha": "d6e8bc562b63a410e5b1f7ee09e3fc91023f3955",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120443:5224337448:2026-08-17T22:33:37Z:clawsweeper_needs_human",
       "comment_id": "5224337448",
@@ -31339,6 +31306,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125483:5322035224:2026-08-18T02:06:11Z:clawsweeper_needs_human",
+      "comment_id": "5322035224",
+      "comment_version_key": "5322035224:2026-08-18T02:06:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125483#issuecomment-5322035224",
+      "comment_created_at": "2026-08-18T00:47:44Z",
+      "comment_updated_at": "2026-08-18T02:06:11Z",
+      "comment_body_sha256": "d398746d478bff646249f26d430bc5bb2f233b94ffde3e6ce0ed1ab349a030b6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125483,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The automatic startup write is compatibility-sensitive: retain the exact two-key predicate and the lease-plus-drift guard rather than widening it into general invalid-config repair. (sha=23b73e3d3040b1cffebd3a1adec918b9ecfcd9d8)",
+      "expected_head_sha": "23b73e3d3040b1cffebd3a1adec918b9ecfcd9d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T02:06:51.833Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/125436-upgrade-survivor",
+        "head_sha": "23b73e3d3040b1cffebd3a1adec918b9ecfcd9d8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
