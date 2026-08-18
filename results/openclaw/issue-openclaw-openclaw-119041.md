@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119041"
 mode: "autonomous"
-run_id: "32114480332"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32114480332"
+run_id: "32115003669"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32115003669"
 head_sha: "055ffba223f033a8cac3dc4287e207f6ab509369"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T08:15:25.391Z"
+published_at: "2026-08-18T08:21:32.829Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119041"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119041"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-119041
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32114480332](https://github.com/openclaw/clawsweeper/actions/runs/32114480332)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32115003669](https://github.com/openclaw/clawsweeper/actions/runs/32115003669)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/119041
 
 ## Summary
 
-#119041 remains a real, narrow Slack partial-preview defect on main d9dfc5b3. The repair plan is ready, but this worker has a read-only checkout, no node_modules, and no sibling ../codex source required by repository policy; it cannot create, validate, or review the PR branch here.
+Confirmed #119041 on main ad475ce: Slack’s partial-preview owner treats reasoning/progress updates as streamed answer content, so reasoning and assistant boundaries clear the draft identity and cause subsequent Slack posts. A narrow fix path is defined, but this read-only checkout lacks both the required sibling ../codex source and tsx dependencies; no code, branch, PR, or GitHub mutation was made.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/119041
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #119041 |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/119041
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119041 | fix_needed | blocked | canonical | Create the narrow credited fix from the cluster artifact in a writable checkout, then run the required regression and review gates. |
-| #80862 | keep_closed | skipped | related | Historical adjacent context only; no action is valid on an already closed issue. |
-| #85612 | keep_closed | skipped | related | Historical related work only; it does not cover the partial-mode defect. |
-| #119067 | keep_closed | skipped | superseded | The new ClawSweeper branch should carry the narrow idea forward while crediting @RerankerGuo and #119067 in the PR body. |
-| cluster:issue-openclaw-openclaw-119041 | build_fix_artifact | planned | canonical | A viable canonical PR does not exist; produce one narrow new fix PR from clawsweeper/issue-openclaw-openclaw-119041. |
+| #119041 | fix_needed | blocked | canonical | Implementation requires a writable dependency-complete checkout and the mandated direct ../codex inspection. |
+| cluster:issue-openclaw-openclaw-119041 | build_fix_artifact | blocked | canonical | A new PR is appropriate once the execution environment supplies the required source and dependencies. |
+| #119067 | keep_closed | skipped | superseded | Historical evidence only; no closure action is valid. |
+| #85612 | keep_closed | skipped | related | Closed adjacent context; no action. |
+| #80862 | keep_closed | skipped | related | Closed adjacent context; no action. |
 
 ## Needs Human
 
-- none
+- Provide a writable OpenClaw checkout with installed dependencies and the required sibling ../codex source so the fix can be implemented and validated.
