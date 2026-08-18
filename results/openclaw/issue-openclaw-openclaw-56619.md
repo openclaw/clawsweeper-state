@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-56619"
 mode: "autonomous"
-run_id: "32135451446"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32135451446"
+run_id: "32136144820"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32136144820"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T12:21:38.593Z"
+published_at: "2026-08-18T12:33:10.246Z"
 canonical: "https://github.com/openclaw/openclaw/issues/56619"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/56619"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32135451446](https://github.com/openclaw/clawsweeper/actions/runs/32135451446)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32136144820](https://github.com/openclaw/clawsweeper/actions/runs/32136144820)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/56619
 
 ## Summary
 
-#56619 is a source-proven regression: the documented opt-in pairing --notify contract silently does nothing for WhatsApp because its pairing adapter supplies no notifier. A narrow Gateway-owned outbound repair is appropriate, but this checkout is read-only, has no dependencies, and cannot satisfy the required direct ../codex source inspection; implementation and validation are blocked in this worker environment.
+#56619 is a current-main, source-reproducible bug: documented `pairing approve --notify` reaches the generic notifier, while WhatsApp provides no notifier and the request silently ends. A safe repair needs a Gateway-owned, account-scoped pairing-notification path that revalidates the authoritative pairing-store approval; a generic outbound send alone can reject an approved sender under restrictive `allowFrom`. No implementation was possible in this read-only checkout, and the required sibling Codex source is unavailable for the mandatory direct protocol/runtime inspection.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/56619
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #56619 |  |  |
 
 ## Apply Actions
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/56619
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #56619 | fix_needed | blocked | canonical | Repair is appropriate but cannot be safely implemented, tested, or reviewed in this read-only worker environment. |
-| cluster:issue-openclaw-openclaw-56619 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-56619 when a writable checkout with dependencies and direct Codex-source access is available. |
-| #94386 | keep_closed | skipped | superseded | Already closed historical attempt. |
-| #96277 | keep_closed | skipped | superseded | Already closed historical attempt. |
-| #97733 | route_security | planned | security_sensitive | Quarantined to central OpenClaw security triage; no mutation or technical security analysis is proposed. |
+| #56619 | fix_needed | blocked | canonical | Implement only after direct Codex-source inspection in a writable checkout; retain pairing-store authorization rather than accepting a CLI-supplied allowlist bypass. |
+| #94386 | keep_closed | skipped | superseded | Historical context only. |
+| #96277 | keep_closed | skipped | superseded | Historical context only. |
+| #97733 | route_security | planned | security_sensitive | Route only this ref to central OpenClaw security handling. |
+| cluster:issue-openclaw-openclaw-56619 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable, Codex-gated executor; implementation remains blocked in this sandbox. |
 
 ## Needs Human
 
