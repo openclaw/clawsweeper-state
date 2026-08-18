@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T19:08:57.272Z",
+  "updated_at": "2026-08-18T19:09:45.290Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125796:5328372863:2026-08-18T12:47:54Z:re_review",
-      "comment_id": "5328372863",
-      "comment_version_key": "5328372863:2026-08-18T12:47:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125796#issuecomment-5328372863",
-      "comment_created_at": "2026-08-18T12:47:54Z",
-      "comment_updated_at": "2026-08-18T12:47:54Z",
-      "comment_body_sha256": "ed23b32a939bb27650b7700d8294f0a8b08dcdf9b15fb2a2385efc5eaf775249",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125796,
-      "author": "hongran997",
-      "author_id": 144437360,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T12:48:36.073Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-container-lifecycle-detection-125589",
-        "head_sha": "edae2e47b366e6312bc5105f3404d3d831ee69cf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125740:5328374383:2026-08-18T12:48:03Z:re_review",
       "comment_id": "5328374383",
@@ -32161,6 +32114,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T19:08:57.272Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:396:5332808924:2026-08-18T19:08:46Z:clawsweeper_needs_human",
+      "comment_id": "5332808924",
+      "comment_version_key": "5332808924:2026-08-18T19:08:46Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/396#issuecomment-5332808924",
+      "comment_created_at": "2026-08-18T19:08:46Z",
+      "comment_updated_at": "2026-08-18T19:08:46Z",
+      "comment_body_sha256": "ef2913b1793341169b06b628ae6f047365b4d33a2613579841579ea66d0ad3e8",
+      "repo": "steipete/oracle",
+      "issue_number": 396,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No discrete repair is needed; the remaining action is normal maintainer approval and required-check gating. (sha=8a671c5abfc759c1111f592e18905b5172d4f2a7)",
+      "expected_head_sha": "8a671c5abfc759c1111f592e18905b5172d4f2a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T19:09:45.290Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "remote-transport-errors",
+        "head_sha": "8a671c5abfc759c1111f592e18905b5172d4f2a7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
