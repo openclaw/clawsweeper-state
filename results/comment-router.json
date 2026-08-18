@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T04:08:37.817Z",
+  "updated_at": "2026-08-18T04:09:03.960Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123871:5320410290:2026-08-17T21:23:35Z:re_review",
-      "comment_id": "5320410290",
-      "comment_version_key": "5320410290:2026-08-17T21:23:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123871#issuecomment-5320410290",
-      "comment_created_at": "2026-08-17T21:23:35Z",
-      "comment_updated_at": "2026-08-17T21:23:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123871,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T00:30:10.336Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123975:5300285477:2026-08-18T00:31:15Z:clawsweeper_needs_human",
       "comment_id": "5300285477",
@@ -31133,6 +31106,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T04:08:37.817Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125556:5323260192:2026-08-18T04:08:18Z:clawsweeper_needs_human",
+      "comment_id": "5323260192",
+      "comment_version_key": "5323260192:2026-08-18T04:08:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125556#issuecomment-5323260192",
+      "comment_created_at": "2026-08-18T03:34:09Z",
+      "comment_updated_at": "2026-08-18T04:08:18Z",
+      "comment_body_sha256": "a24053cd0dc9dd43b4503653ffb28fe2baec960f3bd15afa8bf29b073a19a8cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125556,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The shared classifier changes human error framing for every root-bound GatewayTransportError (closed and timeout), not only unreachable device commands; maintainers should confirm tha... (sha=67096c33393b740b0b1796157247244599e09a37)",
+      "expected_head_sha": "67096c33393b740b0b1796157247244599e09a37",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T04:09:03.960Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/devices-transport-rendering",
+        "head_sha": "67096c33393b740b0b1796157247244599e09a37",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
