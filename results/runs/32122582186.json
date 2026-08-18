@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119041",
+  "mode": "autonomous",
+  "run_id": "32122582186",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32122582186",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119041.md",
+  "published_at": "2026-08-18T11:40:20.026Z",
+  "canonical": "#119041",
+  "canonical_issue": "#119041",
+  "canonical_pr": null,
+  "summary": "Current main retains the Slack partial-preview defect: reasoning/progress updates set the same rotation flag as answer text, then both reasoning-end and next assistant-start invoke the boundary that forces a new draft. No code was changed: the required sibling ../codex source is absent and the read-only workspace prevents cloning it or creating the mandated repair branch.",
+  "actions": [
+    {
+      "target": "#119041",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "The repair is narrow and source-reproducible, but implementation is blocked by the repository's mandatory direct ../codex inspection gate and a read-only checkout."
+    },
+    {
+      "target": "#119041",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor after the Codex-source prerequisite is satisfied."
+    },
+    {
+      "target": "#119067",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation action is valid."
+    },
+    {
+      "target": "#85612",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "Already closed and only adjacent historical evidence."
+    },
+    {
+      "target": "#80862",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "Already closed and outside the Slack owner boundary."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
