@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125570",
+  "mode": "autonomous",
+  "run_id": "32110401496",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32110401496",
+  "head_sha": "055ffba223f033a8cac3dc4287e207f6ab509369",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125570.md",
+  "published_at": "2026-08-18T07:23:29.754Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125570",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125570",
+  "canonical_pr": null,
+  "summary": "#125570 is a real, narrow shared-rendering bug on main abd4f671: update summaries become proposal frontmatter descriptions, and apply preserves that description into SKILL.md. A new fix PR is warranted. This runner cannot create or validate it because the checkout is read-only, node_modules is absent (focused Vitest fails because tsx is missing), and the required sibling ../codex checkout is absent.",
+  "actions": [
+    {
+      "target": "#107707",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#125570",
+      "candidate_fix": null,
+      "reason": "Keep open as related work; this fix must not decide proposal-content validation or approval policy."
+    },
+    {
+      "target": "#109650",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#125570",
+      "candidate_fix": null,
+      "reason": "Keep open as a separate product decision."
+    },
+    {
+      "target": "#124486",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "No shared repair path beyond the broader Workshop area."
+    },
+    {
+      "target": "#125570",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125570",
+      "candidate_fix": null,
+      "reason": "The repair is clear, but implementation and validation are blocked in this runner."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125570",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125570",
+      "candidate_fix": null,
+      "reason": "A narrow credited PR can repair the canonical owner boundary."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 2,
+    "keep_independent": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
