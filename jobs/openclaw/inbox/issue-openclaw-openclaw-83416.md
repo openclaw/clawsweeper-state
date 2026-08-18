@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Codex dynamic image-tool watchdog so it cannot preempt the image runtime’s configured/default request timeout and replace its layer-specific error with the generic dynamic-tool timeout. Keep the existing tools.media image timeout contract and do not add configuration or raise provider timeouts. Trace configured primary and fallback image paths, reuse the existing timeout-grace helper, and add regression coverage proving default and configured image requests can return the inner structured timeout. Do not edit CHANGELOG.md; put user-visible release-note context in the PR body. Related context: https://github.com/openclaw/openclaw/issues/111815.
+Fix the current-main dynamic image fallback timeout ordering for https://github.com/openclaw/openclaw/issues/83416. Preserve `tools.media.image` and `tools.media.models` timeout semantics; make the outer Codex `view_image` watchdog outlive the selected media timeout by bounded setup/result grace so the structured media timeout/error reaches the tool result. Add focused regression coverage for default and configured 60-second image timeouts; establish the failing pre-fix case, inspect the `@openai/codex` app-server contract directly, and stop if that contract requires a different response deadline. Do not raise the provider timeout, add a user configuration key, or hardcode OpenRouter or Nextcloud Talk.
 
 Likely files:
 
 - extensions/codex/src/app-server/dynamic-tool-execution.ts
 - extensions/codex/src/app-server/dynamic-tool-execution.test.ts
-- src/agents/tools/image-tool.ts
-- src/media-understanding/image.runtime-timeout.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/codex/src/app-server/dynamic-tool-execution.test.ts
-- node scripts/run-vitest.mjs src/agents/tools/image-tool.test.ts src/media-understanding/image.runtime-timeout.test.ts
+- pnpm test extensions/codex/src/app-server/dynamic-tool-execution.test.ts
+- pnpm test extensions/codex/src/app-server/run-attempt.dynamic-tools.test.ts
+- pnpm check:changed
 
 ## Operator Prompt
 
