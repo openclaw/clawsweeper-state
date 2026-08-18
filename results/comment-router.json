@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T19:59:16.614Z",
+  "updated_at": "2026-08-18T19:59:21.523Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5052154172:2026-07-22T22:12:23Z:re_review",
-      "comment_id": "5052154172",
-      "comment_version_key": "5052154172:2026-07-22T22:12:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5052154172",
-      "comment_created_at": "2026-07-22T22:12:23Z",
-      "comment_updated_at": "2026-07-22T22:12:23Z",
-      "comment_body_sha256": "b53987e3d6bcefaa5fc8f8b4b769d9ba446d5a709e310025fa13d9776b7586a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 8 commits replayed, no conflicts). new head bd329e3f8f. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, late-write fence, and stalled-session warn backoff are unchanged. local tsgo, oxlint/oxfmt, and the touched unit suites are green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T13:32:16.968Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5054234833:2026-07-23T04:09:41Z:re_review",
       "comment_id": "5054234833",
@@ -31514,39 +31487,6 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125290:5317004444:2026-08-18T19:53:54Z:clawsweeper_needs_human",
-      "comment_id": "5317004444",
-      "comment_version_key": "5317004444:2026-08-18T19:53:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125290#issuecomment-5317004444",
-      "comment_created_at": "2026-08-17T14:17:42Z",
-      "comment_updated_at": "2026-08-18T19:53:54Z",
-      "comment_body_sha256": "3901dcaee7225004168a1403d2d24d5886bfde079cb63bc12eacce56a8b4237a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125290,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This CI-critical helper now uses delimiter-based scalar membership; its safety depends on retaining the adjacent image-reference grammar that excludes spaces and glob metacharacters. (sha=345bf8848feb437f1b3e7868c2f6552760f09fb4)",
-      "expected_head_sha": "345bf8848feb437f1b3e7868c2f6552760f09fb4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T19:58:22.186Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/shared-image-artifact-bash3",
-        "head_sha": "345bf8848feb437f1b3e7868c2f6552760f09fb4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125424:5321186203:2026-08-18T19:49:46Z:clawsweeper_auto_repair",
       "comment_id": "5321186203",
       "comment_version_key": "5321186203:2026-08-18T19:49:46Z",
@@ -32518,6 +32458,39 @@
       }
     },
     {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125290:5317004444:2026-08-18T19:53:54Z:clawsweeper_needs_human",
+      "comment_id": "5317004444",
+      "comment_version_key": "5317004444:2026-08-18T19:53:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125290#issuecomment-5317004444",
+      "comment_created_at": "2026-08-17T14:17:42Z",
+      "comment_updated_at": "2026-08-18T19:53:54Z",
+      "comment_body_sha256": "3901dcaee7225004168a1403d2d24d5886bfde079cb63bc12eacce56a8b4237a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125290,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This CI-critical helper now uses delimiter-based scalar membership; its safety depends on retaining the adjacent image-reference grammar that excludes spaces and glob metacharacters. (sha=345bf8848feb437f1b3e7868c2f6552760f09fb4)",
+      "expected_head_sha": "345bf8848feb437f1b3e7868c2f6552760f09fb4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T19:58:40.408Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/shared-image-artifact-bash3",
+        "head_sha": "345bf8848feb437f1b3e7868c2f6552760f09fb4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125896:5331429410:2026-08-18T19:58:25Z:clawsweeper_auto_repair",
       "comment_id": "5331429410",
       "comment_version_key": "5331429410:2026-08-18T19:58:25Z",
@@ -32549,6 +32522,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123931:5333348733:2026-08-18T19:58:28Z:re_review",
+      "comment_id": "5333348733",
+      "comment_version_key": "5333348733:2026-08-18T19:58:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123931#issuecomment-5333348733",
+      "comment_created_at": "2026-08-18T19:58:28Z",
+      "comment_updated_at": "2026-08-18T19:58:28Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123931,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T19:59:19.305Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-room-v12-id-support",
+        "head_sha": "578344ed61d38fe7a125690bb2b58a9b971a5225",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
