@@ -67,20 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the generated llama.cpp embedding preset so it supplies a bounded context instead of relying on the model default. First reproduce the absent `ctx-size` and inspect the pinned llama-server b10357 models-preset contract. Keep the change in the llama.cpp plugin; do not restore `memory.search.local.contextSize`, preserve manual models.ini edits, add a general config option, alter chat context behavior, or change index identity. Add regression coverage for embedding-only and shared presets, then prove a managed local embedding request succeeds.
+Fix the managed llama.cpp embedding preset so it emits ctx-size 2048, matching the existing local embedding input bound. Keep chat-model context behavior unchanged; do not revive memory.search.local.contextSize. Remove stale internal type declarations for the retired setting if no caller needs them. Add a regression test covering embedding-only and combined presets, first proving it fails before the fix. Inspect the pinned llama-server b10357 preset contract, then run focused tests and an after-fix managed-server proof. Do not edit CHANGELOG.md; record release-note context in the PR body.
 
 Likely files:
 
 - extensions/llama-cpp/src/managed-server.ts
 - extensions/llama-cpp/src/managed-server.test.ts
-- extensions/llama-cpp/src/embedding-provider.ts
-- extensions/llama-cpp/index.test.ts
+- extensions/llama-cpp/src/defaults.ts
+- src/agents/memory-search.ts
+- src/plugins/registry-contribution-types.ts
 
 Validation:
 
-- pnpm vitest extensions/llama-cpp/src/managed-server.test.ts extensions/llama-cpp/index.test.ts
-- pnpm vitest src/config/dead-config-keys.test.ts
-- Run an isolated managed llama-server embedding request with the pinned server/model, or report the concrete feasibility blocker.
+- node scripts/run-vitest.mjs extensions/llama-cpp/src/managed-server.test.ts
+- node scripts/run-vitest.mjs src/config/dead-config-keys.test.ts
+- node scripts/check-changed.mjs -- extensions/llama-cpp/src/managed-server.ts extensions/llama-cpp/src/managed-server.test.ts
 
 ## Operator Prompt
 
