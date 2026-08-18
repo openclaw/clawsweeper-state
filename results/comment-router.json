@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T03:07:03.188Z",
+  "updated_at": "2026-08-18T03:07:17.505Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125377:5319457926:2026-08-17T23:34:20Z:clawsweeper_needs_human",
-      "comment_id": "5319457926",
-      "comment_version_key": "5319457926:2026-08-17T23:34:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125377#issuecomment-5319457926",
-      "comment_created_at": "2026-08-17T19:46:37Z",
-      "comment_updated_at": "2026-08-17T23:34:20Z",
-      "comment_body_sha256": "c361210e5430c7c89feefdb3bc6b51be7ba49825c438008d24d662107674124c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125377,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes which persisted workspace an existing explicit multi-agent roster receives; exact-head checks should confirm both explicit-system-agent and legacy-owner cas... (sha=c7183f4e583dfcd40c0981506c00e67019a58ff1)",
-      "expected_head_sha": "c7183f4e583dfcd40c0981506c00e67019a58ff1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T23:36:52.971Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/configure-system-agent-target",
-        "head_sha": "c7183f4e583dfcd40c0981506c00e67019a58ff1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125429:5321149051:2026-08-17T23:32:26Z:clawsweeper_needs_human",
       "comment_id": "5321149051",
@@ -31189,6 +31156,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125524:5322862128:2026-08-18T03:06:28Z:clawsweeper_needs_human",
+      "comment_id": "5322862128",
+      "comment_version_key": "5322862128:2026-08-18T03:06:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125524#issuecomment-5322862128",
+      "comment_created_at": "2026-08-18T02:46:31Z",
+      "comment_updated_at": "2026-08-18T03:06:28Z",
+      "comment_body_sha256": "04a4b0bc408a467e541cc9b1f1fc54271d636d791789b8c66a3a0771de791386",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125524,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The refactor changes the boundary that decides whether a delayed approval may reach authorization and dispatch; exact-head CI is currently not green, and the PR is behind current main. (sha=ac7d68300659bca00b4a953d464d6ec90dd9de16)",
+      "expected_head_sha": "ac7d68300659bca00b4a953d464d6ec90dd9de16",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T03:07:17.505Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/exec-host-approval-wait",
+        "head_sha": "ac7d68300659bca00b4a953d464d6ec90dd9de16",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
