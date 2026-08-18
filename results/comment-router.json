@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T08:01:21.825Z",
+  "updated_at": "2026-08-18T08:02:09.282Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124516:5323214675:2026-08-18T03:27:13Z:re_review",
-      "comment_id": "5323214675",
-      "comment_version_key": "5323214675:2026-08-18T03:27:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124516#issuecomment-5323214675",
-      "comment_created_at": "2026-08-18T03:27:13Z",
-      "comment_updated_at": "2026-08-18T03:27:13Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124516,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T03:37:44.105Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skip-full-store-discovery-123439",
-        "head_sha": "f2bed042d66d6ec20b77a36775c8c05addff2ec3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3034:5323221261:2026-08-18T03:36:52Z:clawsweeper_needs_human",
       "comment_id": "5323221261",
@@ -31764,6 +31717,39 @@
         "kind": "pull_request",
         "branch": "steipete/w4-test-integrity",
         "head_sha": "9441e886a1b3cc5bd1ed2335a3d287fb0fb6a70b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125633:5324119420:2026-08-18T08:01:26Z:clawsweeper_needs_human",
+      "comment_id": "5324119420",
+      "comment_version_key": "5324119420:2026-08-18T08:01:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125633#issuecomment-5324119420",
+      "comment_created_at": "2026-08-18T05:42:50Z",
+      "comment_updated_at": "2026-08-18T08:01:26Z",
+      "comment_body_sha256": "8e7f678186f892d8e9151813ccc632976da29bc382e852503fdce68c6053f5ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125633,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Automatic-mode routing changes delivery behavior for existing iMessage users; it is intended for observed SMS chats, but should be rechecked against the current base before merge. (sha=d40f253b1e79bbc7b211df6fbf0f00e1611ff281)",
+      "expected_head_sha": "d40f253b1e79bbc7b211df6fbf0f00e1611ff281",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T08:02:09.282Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/imessage-auto-sms-origin-service-20260817",
+        "head_sha": "d40f253b1e79bbc7b211df6fbf0f00e1611ff281",
         "cluster_id": null,
         "job_path": null
       }
