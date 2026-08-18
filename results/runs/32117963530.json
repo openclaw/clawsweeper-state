@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-99277",
+  "mode": "autonomous",
+  "run_id": "32117963530",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32117963530",
+  "head_sha": "03c1f452ec49479c8df06aab6d2204187ed47018",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-99277.md",
+  "published_at": "2026-08-18T08:53:55.660Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/99277",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/99277",
+  "canonical_pr": null,
+  "summary": "#99277 remains a source-reproducible Mattermost acknowledgement gap. Current main accepts and records inbound posts, but its Mattermost turn plan has no acknowledgement callback; the shared turn runner provides `afterRecord` for the required ordering. Implementation is blocked here because the checkout is read-only/missing dependencies and the required redacted live Mattermost emoji-encoding proof is unavailable.",
+  "actions": [
+    {
+      "target": "#99277",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Current main has the missing bridge, but the required provider-contract proof and local validation environment are unavailable; do not create an unverified automatic-reaction PR."
+    },
+    {
+      "target": "#80426",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Already closed."
+    },
+    {
+      "target": "#119124",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Already closed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-99277",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Artifact is intentionally non-executable until the external API contract is proven."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#99277",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
