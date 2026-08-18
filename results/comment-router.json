@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T12:07:28.717Z",
+  "updated_at": "2026-08-18T12:08:10.747Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125630:5324198741:2026-08-18T06:09:50Z:clawsweeper_needs_human",
-      "comment_id": "5324198741",
-      "comment_version_key": "5324198741:2026-08-18T06:09:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125630#issuecomment-5324198741",
-      "comment_created_at": "2026-08-18T05:54:05Z",
-      "comment_updated_at": "2026-08-18T06:09:50Z",
-      "comment_body_sha256": "e7242b64d46838f0989591695e752bff50b052568199fc9d74dabed38526692a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125630,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes release-test routing to live configured endpoints; verify the PR-body focused run 32101914483 and the required checks against the current head before merge. (sha=31ee8364aa6fce182aa8afc8a4efb42f7e3bc90f)",
-      "expected_head_sha": "31ee8364aa6fce182aa8afc8a4efb42f7e3bc90f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T06:18:20.540Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-ultra-multi-endpoint",
-        "head_sha": "bbb83789f8d8b1a74e8943172c5e35151252e477",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125642:5324301631:2026-08-18T06:07:59Z:clawsweeper_needs_human",
       "comment_id": "5324301631",
@@ -32539,6 +32506,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125596:5327934779:2026-08-18T12:07:27Z:re_review",
+      "comment_id": "5327934779",
+      "comment_version_key": "5327934779:2026-08-18T12:07:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125596#issuecomment-5327934779",
+      "comment_created_at": "2026-08-18T12:07:27Z",
+      "comment_updated_at": "2026-08-18T12:07:27Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125596,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T12:08:08.788Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/team-gateway-event-loop-stalls-f9eae0",
+        "head_sha": "756c15ffd730e40ca04727f74742709e04ad1a81",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
