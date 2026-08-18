@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T07:42:31.887Z",
+  "updated_at": "2026-08-18T07:42:32.811Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125528:5322839474:2026-08-18T03:00:54Z:clawsweeper_auto_repair",
-      "comment_id": "5322839474",
-      "comment_version_key": "5322839474:2026-08-18T03:00:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125528#issuecomment-5322839474",
-      "comment_created_at": "2026-08-18T02:43:20Z",
-      "comment_updated_at": "2026-08-18T03:00:54Z",
-      "comment_body_sha256": "d664aec3ba69ae7d4779e99bf110342d5f3349730977e5ee882e2675477d68ac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125528,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9be80390f0c412a3d1ff781f815d96239765398b)",
-      "expected_head_sha": "9be80390f0c412a3d1ff781f815d96239765398b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T03:20:13.721Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-thinking-catalog",
-        "head_sha": "9be80390f0c412a3d1ff781f815d96239765398b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119023:5323165566:2026-08-18T03:21:27Z:re_review",
       "comment_id": "5323165566",
@@ -31749,6 +31716,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T07:42:31.887Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:48:5324734220:2026-08-18T07:37:43Z:clawsweeper_needs_human",
+      "comment_id": "5324734220",
+      "comment_version_key": "5324734220:2026-08-18T07:37:43Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/48#issuecomment-5324734220",
+      "comment_created_at": "2026-08-18T07:00:13Z",
+      "comment_updated_at": "2026-08-18T07:37:43Z",
+      "comment_body_sha256": "4430a605d51fd5bb28d1efd9ed0350ef1027e60836acfe1349041ecb0216d03f",
+      "repo": "openclaw/clawscan",
+      "issue_number": 48,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports checks but provides no captured redacted after-fix terminal output, artifact, log, screenshot, or recording. After adding proof,...; Review finding: [P1] Keep the derived AIG key out of SkillSpector — internal/runner/runner.go:2215-2216 - [medium] Derived key activates a second scanner — internal/runner/runner.... (sha=1a0e00b5e985eae56a7bff1e476d30f70c4e2e5f)",
+      "expected_head_sha": "1a0e00b5e985eae56a7bff1e476d30f70c4e2e5f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T07:42:32.811Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/clawhub-profile-add-aig",
+        "head_sha": "1a0e00b5e985eae56a7bff1e476d30f70c4e2e5f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
