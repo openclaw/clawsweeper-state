@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125745",
+  "mode": "autonomous",
+  "run_id": "32132420012",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32132420012",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125745.md",
+  "published_at": "2026-08-18T11:45:32.917Z",
+  "canonical": "#125745",
+  "canonical_issue": "#125745",
+  "canonical_pr": null,
+  "summary": "#125745 remains the canonical open bug. Current source supports a narrow repair, but this read-only checkout cannot create the required regression/fix and the mandatory sibling ../codex source is absent, so no Codex verdict or PR-ready validation is possible.",
+  "actions": [
+    {
+      "target": "#125745",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125745",
+      "candidate_fix": null,
+      "reason": "A writable checkout containing sibling ../codex is required to add a boundary regression, make the narrow repair, and run validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable repair environment with the required sibling ../codex checkout, then rerun this job."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
