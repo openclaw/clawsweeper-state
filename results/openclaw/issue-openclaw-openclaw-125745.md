@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125745"
 mode: "autonomous"
-run_id: "32123372146"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32123372146"
+run_id: "32126281185"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32126281185"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T09:55:12.611Z"
+published_at: "2026-08-18T10:29:35.452Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125745"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125745"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-125745
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32123372146](https://github.com/openclaw/clawsweeper/actions/runs/32123372146)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32126281185](https://github.com/openclaw/clawsweeper/actions/runs/32126281185)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125745
 
 ## Summary
 
-Current main has the reported ownership mismatch: the probe creates an isolated auth profile, then ordinary prepared-runtime binding replaces its agent directory with the configured Gateway owner. A narrow isolated-read-only repair is ready, but this environment is read-only, ../codex is unavailable for the mandatory direct inspection, and pnpm cannot create its Corepack cache.
+#125745 remains the open canonical bug. Current main source shows the isolated probe profile is created in a temporary agent directory, then ordinary prepared-runtime acquisition can rebind the run to the Gateway owner directory. A narrow repair artifact is ready, but this worker cannot implement or validate it: the checkout is read-only and the mandatory sibling ../codex source is absent and cannot be cloned under the sandbox restrictions.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Current main has the reported ownership mismatch: the probe creates an isolated 
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ Current main has the reported ownership mismatch: the probe creates an isolated 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125745 | fix_needed | blocked | canonical | Implementation and regression validation require a writable checkout and mandatory Codex-source inspection. |
-| cluster:issue-openclaw-openclaw-125745 | build_fix_artifact | planned | canonical | Narrow new-fix-PR path. |
+| #125745 | fix_needed | blocked | canonical | Implementation is blocked only by the worker environment. The executor must first provide the required ../codex checkout, add the regression before editing, then run the listed focused checks. |
+| cluster:issue-openclaw-openclaw-125745 | build_fix_artifact | planned | canonical | A narrow, provider-agnostic repair path is available once the executor has a writable checkout and clears the required Codex-source inspection gate. |
 
 ## Needs Human
 
-- Provide a writable checkout with ../codex available so the executor can create the failing configured-owner regression, implement the isolated-read-only invocation, and validate it.
+- none

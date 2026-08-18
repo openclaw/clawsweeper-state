@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125745",
+  "mode": "autonomous",
+  "run_id": "32126281185",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32126281185",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125745.md",
+  "published_at": "2026-08-18T10:29:35.452Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125745",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125745",
+  "canonical_pr": null,
+  "summary": "#125745 remains the open canonical bug. Current main source shows the isolated probe profile is created in a temporary agent directory, then ordinary prepared-runtime acquisition can rebind the run to the Gateway owner directory. A narrow repair artifact is ready, but this worker cannot implement or validate it: the checkout is read-only and the mandatory sibling ../codex source is absent and cannot be cloned under the sandbox restrictions.",
+  "actions": [
+    {
+      "target": "#125745",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125745",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the worker environment. The executor must first provide the required ../codex checkout, add the regression before editing, then run the listed focused checks."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125745",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125745",
+      "candidate_fix": null,
+      "reason": "A narrow, provider-agnostic repair path is available once the executor has a writable checkout and clears the required Codex-source inspection gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
