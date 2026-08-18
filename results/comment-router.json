@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T02:41:19.572Z",
+  "updated_at": "2026-08-18T02:41:51.325Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5228582288:2026-08-08T22:52:43Z:re_review",
-      "comment_id": "5228582288",
-      "comment_version_key": "5228582288:2026-08-08T22:52:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5228582288",
-      "comment_created_at": "2026-08-08T22:52:43Z",
-      "comment_updated_at": "2026-08-08T22:52:43Z",
-      "comment_body_sha256": "a16ccdc6d13749eecee35de492ff4763ee187b0faca5402af44d63cd581b64f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T22:44:18.629Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5228821437:2026-08-08T23:43:47Z:re_review",
       "comment_id": "5228821437",
@@ -31755,6 +31728,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125499:5322382367:2026-08-18T02:40:56Z:clawsweeper_needs_human",
+      "comment_id": "5322382367",
+      "comment_version_key": "5322382367:2026-08-18T02:40:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125499#issuecomment-5322382367",
+      "comment_created_at": "2026-08-18T01:42:01Z",
+      "comment_updated_at": "2026-08-18T02:40:56Z",
+      "comment_body_sha256": "06e2bb022e608bd220b84776fac98545ecace67c51289c5db813797075a02966",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125499,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds 15 production lines; that is warranted for a provider-only second pass after the standard redactor, since moving it into global redaction would broaden policy. Refres... (sha=d702e6e60ffa3e9ef9c73e63db345241291eb769)",
+      "expected_head_sha": "d702e6e60ffa3e9ef9c73e63db345241291eb769",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T02:41:51.325Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pdf-native-redact-error-body",
+        "head_sha": "d702e6e60ffa3e9ef9c73e63db345241291eb769",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
