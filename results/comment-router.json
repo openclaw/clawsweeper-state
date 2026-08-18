@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T18:12:58.096Z",
+  "updated_at": "2026-08-18T18:13:05.769Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4942215042:2026-07-11T03:59:48Z:re_review",
-      "comment_id": "4942215042",
-      "comment_version_key": "4942215042:2026-07-11T03:59:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4942215042",
-      "comment_created_at": "2026-07-11T03:59:48Z",
-      "comment_updated_at": "2026-07-11T03:59:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T10:31:05.168Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4943373258:2026-07-11T07:06:40Z:re_review",
       "comment_id": "4943373258",
@@ -33025,6 +32998,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T18:12:58.096Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125926:5332210217:2026-08-18T18:12:08Z:clawsweeper_needs_human",
+      "comment_id": "5332210217",
+      "comment_version_key": "5332210217:2026-08-18T18:12:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125926#issuecomment-5332210217",
+      "comment_created_at": "2026-08-18T18:12:08Z",
+      "comment_updated_at": "2026-08-18T18:12:08Z",
+      "comment_body_sha256": "23617218ad85fbdc7c8d12065b3f8438da9bc5dd45b4ff798dbc660b334337d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125926,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The relevant hosted macOS checks are still queued, so exact-head CI compilation has not yet independently completed. (sha=25a63b10ae74e74de020e355ba814d46b33ec05c)",
+      "expected_head_sha": "25a63b10ae74e74de020e355ba814d46b33ec05c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T18:13:05.769Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/remove-macos-nodeinfo-encoding",
+        "head_sha": "25a63b10ae74e74de020e355ba814d46b33ec05c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
