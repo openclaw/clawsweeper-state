@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the container lifecycle ownership bug in https://github.com/openclaw/openclaw/issues/125589. Before editing, establish the failing owner-boundary regression: a Kubernetes-style detected container with an unreachable local Gateway must not invoke Gateway service config auditing, extra-service/systemd cleanup, daemon systemd probing, install prompts, or service restart/install; unrelated Doctor config, plugin, and state checks must still run. Reuse `isContainerEnvironment` and put the decision at the shared service-only contribution boundary in `src/flows/doctor-health-contribution-runners.gateway.ts` (or an existing lifecycle owner if that yields one canonical gate). Preserve native host behavior and the explicit external-service policy. Do not add a config option, environment variable, fallback path, or CHANGELOG.md edit. Add focused behavior-level regression coverage that fails before the repair, including the two service contributions, then include concise release-note context in the PR body.
+Repair Doctor's Gateway recovery path for recognized containers. Reuse the existing container-environment detector at the Doctor lifecycle boundary so an unavailable Gateway in Docker, Podman, or Kubernetes skips systemd availability checks, system-level ownership scans, and install/start/restart prompts, emits the external-supervisor result, and leaves non-service Doctor checks intact. Preserve host Linux behavior and explicit service-repair-policy semantics; do not add a setting or hardcode Kubernetes variables. Add an owner-boundary regression test that fails on current main for a detected container with an unloaded Gateway and proves no service-manager seam or prompt runs. Do not edit CHANGELOG; record user-visible release-note context in the PR body.
 
 Likely files:
 
-- src/flows/doctor-health-contribution-runners.gateway.ts
-- src/flows/doctor-health-contribution-runners.gateway.test.ts
+- src/commands/doctor-gateway-daemon-flow.ts
 - src/commands/doctor-gateway-daemon-flow.test.ts
-- src/commands/doctor-gateway-services.test.ts
+- src/infra/container-environment.ts
 
 Validation:
 
-- pnpm test src/flows/doctor-health-contribution-runners.gateway.test.ts src/commands/doctor-gateway-daemon-flow.test.ts src/commands/doctor-gateway-services.test.ts
-- pnpm check:changed -- src/flows/doctor-health-contribution-runners.gateway.ts src/flows/doctor-health-contribution-runners.gateway.test.ts
+- pnpm test src/commands/doctor-gateway-daemon-flow.test.ts
+- pnpm check:changed -- src/commands/doctor-gateway-daemon-flow.ts src/commands/doctor-gateway-daemon-flow.test.ts
 
 ## Operator Prompt
 
