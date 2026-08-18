@@ -1,0 +1,100 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125570",
+  "mode": "autonomous",
+  "run_id": "32113273705",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32113273705",
+  "head_sha": "055ffba223f033a8cac3dc4287e207f6ab509369",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125570.md",
+  "published_at": "2026-08-18T08:01:04.353Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125570",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125570",
+  "canonical_pr": null,
+  "summary": "#125570 is a narrow, source-confirmed owner-boundary bug on main 0f18bd7fa241e4599005972c7aa0959e59a0e306. A repair artifact is ready, but this read-only checkout cannot create the failing regression or validate a branch: ../codex is absent (a mandatory direct-source gate), and node_modules/.bin/vitest is absent.",
+  "actions": [
+    {
+      "target": "#107707",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#125570",
+      "candidate_fix": null,
+      "reason": "Keep open as the related proposal-content validation/replacement-safety report."
+    },
+    {
+      "target": "#109650",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#125570",
+      "candidate_fix": null,
+      "reason": "Keep open as a related product/API feedback request."
+    },
+    {
+      "target": "#124486",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open; it has a different lifecycle invariant and repair path."
+    },
+    {
+      "target": "#125570",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125570",
+      "candidate_fix": null,
+      "reason": "The canonical issue remains reproducible from current source, but implementation is blocked only by the unavailable required validation/Codex contract environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125570",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125570",
+      "candidate_fix": null,
+      "reason": "A narrow new-fix-PR plan is ready; its executor must first provision the required dependencies and sibling Codex checkout."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 2,
+    "keep_independent": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#125570",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

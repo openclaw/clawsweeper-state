@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125570"
 mode: "autonomous"
-run_id: "32112147263"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32112147263"
+run_id: "32113273705"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32113273705"
 head_sha: "055ffba223f033a8cac3dc4287e207f6ab509369"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T07:45:56.962Z"
-canonical: "#125570"
-canonical_issue: "#125570"
+published_at: "2026-08-18T08:01:04.353Z"
+canonical: "https://github.com/openclaw/openclaw/issues/125570"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/125570"
 canonical_pr: null
-actions_total: 4
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32112147263](https://github.com/openclaw/clawsweeper/actions/runs/32112147263)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32113273705](https://github.com/openclaw/clawsweeper/actions/runs/32113273705)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: #125570
+Canonical: https://github.com/openclaw/openclaw/issues/125570
 
 ## Summary
 
-Current main still has the reported update-description coupling. A narrow fix plan is ready, but this worker cannot edit or validate it: the checkout is read-only, pnpm cannot create its Corepack cache (EROFS), and required sibling ../codex source is absent and cannot be cloned under the sandbox.
+#125570 is a narrow, source-confirmed owner-boundary bug on main 0f18bd7fa241e4599005972c7aa0959e59a0e306. A repair artifact is ready, but this read-only checkout cannot create the failing regression or validate a branch: ../codex is absent (a mandatory direct-source gate), and node_modules/.bin/vitest is absent.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Current main still has the reported update-description coupling. A narrow fix pl
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #125570 |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,11 @@ Current main still has the reported update-description coupling. A narrow fix pl
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125570 | fix_needed | planned | canonical | Narrow owner-boundary repair required; no product decision or security boundary change. |
-| #107707 | keep_related | planned | related | Related unsafe-apply family, but unique root cause and remediation scope. |
-| #109650 | keep_related | planned | related | Adjacent frontmatter UX request; this bug fix adds no warning contract. |
-| #124486 | keep_independent | planned | independent | Separate terminal-transition integrity defect. |
+| #107707 | keep_related | planned | related | Keep open as the related proposal-content validation/replacement-safety report. |
+| #109650 | keep_related | planned | related | Keep open as a related product/API feedback request. |
+| #124486 | keep_independent | planned | independent | Keep open; it has a different lifecycle invariant and repair path. |
+| #125570 | fix_needed | blocked | canonical | The canonical issue remains reproducible from current source, but implementation is blocked only by the unavailable required validation/Codex contract environment. |
+| cluster:issue-openclaw-openclaw-125570 | build_fix_artifact | blocked | canonical | A narrow new-fix-PR plan is ready; its executor must first provision the required dependencies and sibling Codex checkout. |
 
 ## Needs Human
 
