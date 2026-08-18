@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T09:30:24.767Z",
+  "updated_at": "2026-08-18T09:30:56.476Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123975:5312788134:2026-08-17T06:50:24Z:re_review",
-      "comment_id": "5312788134",
-      "comment_version_key": "5312788134:2026-08-17T06:50:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123975#issuecomment-5312788134",
-      "comment_created_at": "2026-08-17T06:50:24Z",
-      "comment_updated_at": "2026-08-17T06:50:24Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123975,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T04:57:13.180Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123975:5321872544:2026-08-18T00:24:09Z:re_review",
       "comment_id": "5321872544",
@@ -32244,6 +32217,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125686:5325101270:2026-08-18T09:30:01Z:clawsweeper_needs_human",
+      "comment_id": "5325101270",
+      "comment_version_key": "5325101270:2026-08-18T09:30:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125686#issuecomment-5325101270",
+      "comment_created_at": "2026-08-18T07:38:40Z",
+      "comment_updated_at": "2026-08-18T09:30:01Z",
+      "comment_body_sha256": "4130c9201719f629d4a5e85f7fd8e9eff2845939286f5035dcf1b2aa4ea631bb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125686,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The PR adds a new operator warning after a successful file fallback; confirm that once-per-session visibility is the intended operational policy. (sha=9176b8f566f335c2d68925aa9c0817ab5f0aa71e)",
+      "expected_head_sha": "9176b8f566f335c2d68925aa9c0817ab5f0aa71e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T09:30:56.476Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/eager-hertz-a43bdf",
+        "head_sha": "9176b8f566f335c2d68925aa9c0817ab5f0aa71e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
