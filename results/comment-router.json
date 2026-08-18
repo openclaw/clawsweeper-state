@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T00:10:48.326Z",
+  "updated_at": "2026-08-18T00:11:41.740Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125280:5320467846:2026-08-17T21:28:05Z:re_review",
-      "comment_id": "5320467846",
-      "comment_version_key": "5320467846:2026-08-17T21:28:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125280#issuecomment-5320467846",
-      "comment_created_at": "2026-08-17T21:28:05Z",
-      "comment_updated_at": "2026-08-17T21:28:05Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125280,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T21:28:52.887Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/group-defaults-git-worktree",
-        "head_sha": "c2fc5aaa6f52be68a93083598e2709fd409e7f80",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124162:5318432904:2026-08-17T18:03:15Z:re_review",
       "comment_id": "5318432904",
@@ -31001,6 +30954,39 @@
       "status": "skipped",
       "processed_at": "2026-08-18T00:10:48.326Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125459:5321692639:2026-08-18T00:10:55Z:clawsweeper_needs_human",
+      "comment_id": "5321692639",
+      "comment_version_key": "5321692639:2026-08-18T00:10:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125459#issuecomment-5321692639",
+      "comment_created_at": "2026-08-18T00:01:15Z",
+      "comment_updated_at": "2026-08-18T00:10:55Z",
+      "comment_body_sha256": "4dd6cee8e7a7424085454fdfd5ed1d81d8d38c1b89fb483c49615ff718de75a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125459,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes aggregate and changed-file CI scheduling; exact-head automation is still in progress, so merging should wait for it to confirm the single invocation path. (sha=97c8736194a6b70fb494aae5ee6da041db9216f5)",
+      "expected_head_sha": "97c8736194a6b70fb494aae5ee6da041db9216f5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T00:11:41.740Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/w4-ratchet-debris",
+        "head_sha": "97c8736194a6b70fb494aae5ee6da041db9216f5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
