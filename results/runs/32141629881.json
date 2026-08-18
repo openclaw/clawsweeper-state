@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125792",
+  "mode": "autonomous",
+  "run_id": "32141629881",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32141629881",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125792.md",
+  "published_at": "2026-08-18T13:32:36.257Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125792",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125792",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before any code verdict or branch change: this read-only checkout has no dependencies, and mandatory sibling ../codex source is absent. Source inspection nevertheless identifies the narrow owner-boundary repair and regression coverage for #125792.",
+  "actions": [
+    {
+      "target": "#125792",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "The issue remains the canonical open bug, but execution cannot safely proceed until a writable checkout with dependencies, the sibling Codex source, and direct b10357 contract evidence is available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125792",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125792",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor, but this worker cannot make or validate the required branch delta."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable OpenClaw checkout with dependencies and sibling ../codex source, then verify llama.cpp b10357 models-preset ctx-size support directly before applying the artifact."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#125792",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
