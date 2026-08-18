@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125792"
 mode: "autonomous"
-run_id: "32143077837"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32143077837"
+run_id: "32146411064"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32146411064"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-18T13:44:15.872Z"
-canonical: "https://github.com/openclaw/openclaw/issues/125792"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/125792"
+published_at: "2026-08-18T15:12:02.682Z"
+canonical: "#125792"
+canonical_issue: "#125792"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32143077837](https://github.com/openclaw/clawsweeper/actions/runs/32143077837)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32146411064](https://github.com/openclaw/clawsweeper/actions/runs/32146411064)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/125792
+Canonical: #125792
 
 ## Summary
 
-#125792 remains a valid canonical bug on main 4589d851. The plugin emits no embedding `ctx-size`, while local embedding inputs are bounded to 2048. A narrow owner-plugin fix is specified, but this read-only checkout cannot install missing dependencies, edit the branch, or run the required before/after proof.
+#125792 remains a narrow canonical bug, but this worker has a read-only checkout and cannot create the required branch, regression test, or validation evidence. Current main renders the embedding preset without ctx-size while retaining chat context handling separately.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125792
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125792 | fix_needed | planned | canonical | Repair the plugin-owned generated preset without changing chat context behavior or reintroducing retired memory-search configuration. |
-| cluster:issue-openclaw-openclaw-125792 | build_fix_artifact | planned |  | The repair plan is narrow and ready for an editable checkout; implementation and validation are blocked only by the workspace. |
+| #125792 | fix_needed | blocked | canonical | Filesystem policy permits reading only; no branch, test edit, test run, PR, label, or managed-server proof can be produced. |
 
 ## Needs Human
 
