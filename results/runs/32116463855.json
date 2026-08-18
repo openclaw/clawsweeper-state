@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119041",
+  "mode": "autonomous",
+  "run_id": "32116463855",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32116463855",
+  "head_sha": "03c1f452ec49479c8df06aab6d2204187ed47018",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119041.md",
+  "published_at": "2026-08-18T09:42:44.443Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119041",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119041",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked in this read-only checkout: dependencies cannot install, tests cannot run, no branch/PR can be created, and the required ../codex source checkout is absent. Source inspection identifies the proposed narrow owner-boundary repair for executor re-verification.",
+  "actions": [
+    {
+      "target": "#119041",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "A writable executor checkout with dependencies and the required sibling Codex source is needed before changing code or claiming proof."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119041",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for replay in a writable checkout; no GitHub or filesystem mutation was performed."
+    },
+    {
+      "target": "#119067",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "Historical evidence only; no closure or replacement action is permitted for this already-closed PR."
+    },
+    {
+      "target": "#85612",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed adjacent context only."
+    },
+    {
+      "target": "#80862",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context only."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
