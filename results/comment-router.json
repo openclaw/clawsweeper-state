@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T00:42:40.713Z",
+  "updated_at": "2026-08-18T00:44:14.856Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125384:5319881717:2026-08-17T21:34:39Z:re_review",
-      "comment_id": "5319881717",
-      "comment_version_key": "5319881717:2026-08-17T21:34:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125384#issuecomment-5319881717",
-      "comment_created_at": "2026-08-17T20:29:12Z",
-      "comment_updated_at": "2026-08-17T21:34:39Z",
-      "comment_body_sha256": "763f0365f4e03589aaa22c001a534fe38eac744b1db500af680146e6d8338ab0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125384,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-17T21:35:48.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/delete-cloud-ssh-carrier",
-        "head_sha": "5b012839b9441dafe23e8235474d82d170c6c5bf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5320536021:2026-08-17T21:35:32Z:re_review",
       "comment_id": "5320536021",
@@ -31212,6 +31165,39 @@
         "kind": "pull_request",
         "branch": "fix/problem-pointer-drag-active-pointer-id",
         "head_sha": "ed5e7a9499b3629c4de3b9384453e62b2abe162b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125480:5322008409:2026-08-18T00:43:36Z:clawsweeper_needs_human",
+      "comment_id": "5322008409",
+      "comment_version_key": "5322008409:2026-08-18T00:43:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125480#issuecomment-5322008409",
+      "comment_created_at": "2026-08-18T00:43:36Z",
+      "comment_updated_at": "2026-08-18T00:43:36Z",
+      "comment_body_sha256": "94d34e0609eeef9e2c4c9679db9641591ce7924455b839c8442737d871748830",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125480,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by two net lines; the nullable component-owned reference and disconnect reset are necessary to defer unsupported construction without duplicating the resize call... (sha=a7aece83999958c94cb3fcee9100dd928fd2b45c)",
+      "expected_head_sha": "a7aece83999958c94cb3fcee9100dd928fd2b45c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T00:44:14.856Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/guard-resize-observer-construction",
+        "head_sha": "a7aece83999958c94cb3fcee9100dd928fd2b45c",
         "cluster_id": null,
         "job_path": null
       }
