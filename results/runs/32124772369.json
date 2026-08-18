@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119041",
+  "mode": "autonomous",
+  "run_id": "32124772369",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32124772369",
+  "head_sha": "647503ec44b8e777dd172adf974a945367da0d19",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119041.md",
+  "published_at": "2026-08-18T10:11:06.006Z",
+  "canonical": "#119041",
+  "canonical_issue": "#119041",
+  "canonical_pr": null,
+  "summary": "Current main has the reported Slack draft-identity defect, but this read-only checkout cannot install the missing test dependencies or inspect required sibling Codex source. A narrow, source-proven replacement fix is ready for a writable repair runner.",
+  "actions": [
+    {
+      "target": "#119041",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119041",
+      "candidate_fix": null,
+      "reason": "Build the narrow repair on a writable runner; do not reuse closed, uneditable #119067."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair runner with dependencies installed and sibling ../codex source available; the root policy requires direct Codex inspection before code changes or a final proof claim."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
