@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125942",
+  "mode": "autonomous",
+  "run_id": "32171013880",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32171013880",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125942.md",
+  "published_at": "2026-08-18T18:46:54.178Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125942",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125942",
+  "canonical_pr": null,
+  "summary": "Current main retains the failed-turn sentinel in replay normalization but drops it in the shared transport projection before a following user turn. A narrow two-file fix is ready to plan, but this read-only checkout cannot install missing dependencies or create the required branch/PR; the mandatory direct ../codex source check is also unavailable because that sibling checkout is absent.",
+  "actions": [
+    {
+      "target": "#125942",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the unavailable writable/dependency/Codex-contract environment; the canonical issue remains open and current."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125942",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": null,
+      "reason": "One narrow implementation PR is appropriate once a writable checkout with dependencies and the required Codex sibling source is available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125942",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125942",
+      "candidate_fix": null,
+      "reason": "The worker cannot create or update a branch or PR from this read-only environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
