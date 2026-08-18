@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T02:57:56.536Z",
+  "updated_at": "2026-08-18T02:58:03.927Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125434:5321089197:2026-08-17T23:02:49Z:clawsweeper_auto_repair",
-      "comment_id": "5321089197",
-      "comment_version_key": "5321089197:2026-08-17T23:02:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125434#issuecomment-5321089197",
-      "comment_created_at": "2026-08-17T22:41:27Z",
-      "comment_updated_at": "2026-08-17T23:02:49Z",
-      "comment_body_sha256": "3d9ea0209d4287cbcb2df43240d04b07a59867bcdf4f5e7fd1d77c81c1987c8b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125434,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9ad8f66d6418abc3e8b7a1af30a463b6015edd11)",
-      "expected_head_sha": "9ad8f66d6418abc3e8b7a1af30a463b6015edd11",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T23:07:02.378Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/block-generic-node-tool-reentry",
-        "head_sha": "9ad8f66d6418abc3e8b7a1af30a463b6015edd11",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125429:5321149051:2026-08-17T23:01:47Z:clawsweeper_auto_repair",
       "comment_id": "5321149051",
@@ -31376,6 +31343,53 @@
       "actions": [
         {
           "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119023:5322945273:2026-08-18T02:57:21Z:freeform_assist",
+      "comment_id": "5322945273",
+      "comment_version_key": "5322945273:2026-08-18T02:57:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119023#issuecomment-5322945273",
+      "comment_created_at": "2026-08-18T02:57:21Z",
+      "comment_updated_at": "2026-08-18T02:57:21Z",
+      "comment_body_sha256": "9986169a0ce3edbf0be34440e26dcd66f685e44a8efa071ad0d0a8d3b4356a4f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119023,
+      "author": "scoootscooob",
+      "author_id": 167050519,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review\\n\\nplease run the full correctness review on exact head `bf50e729d3520fdbec1e042185bb6857a4774862`. the prior p1 race is addressed, the branch is rebased on current main, and exact-head local validation is recorded in the pr body.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T02:58:00.830Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/slack-inherit-channel-context",
+        "head_sha": "bf50e729d3520fdbec1e042185bb6857a4774862",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
           "status": "executed",
           "label": null,
           "job_path": null
