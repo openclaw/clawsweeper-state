@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T15:01:58.604Z",
+  "updated_at": "2026-08-18T15:05:11.908Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125732:5325868946:2026-08-18T08:51:30Z:clawsweeper_needs_human",
-      "comment_id": "5325868946",
-      "comment_version_key": "5325868946:2026-08-18T08:51:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125732#issuecomment-5325868946",
-      "comment_created_at": "2026-08-18T08:51:30Z",
-      "comment_updated_at": "2026-08-18T08:51:30Z",
-      "comment_body_sha256": "9a8a106c69b24c3432e4a3a39de3d9ca255ac60f829da9d50849529b7b49dc30",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125732,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 35 lines for authorization projection and revocation feedback; the explicit state propagation is warranted because neither existing component can safely infer... (sha=f3cb7f413df1986e63d3c7d79f9462fef1e95fc6)",
-      "expected_head_sha": "f3cb7f413df1986e63d3c7d79f9462fef1e95fc6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T08:53:40.417Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/amazing-raman-3d8063",
-        "head_sha": "a08dfd40c33843f41334738f29c6ef270f1130c0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125733:5325882237:2026-08-18T08:52:44Z:clawsweeper_needs_human",
       "comment_id": "5325882237",
@@ -32377,6 +32344,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3471:5330076718:2026-08-18T15:04:21Z:re_review",
+      "comment_id": "5330076718",
+      "comment_version_key": "5330076718:2026-08-18T15:04:21Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3471#issuecomment-5330076718",
+      "comment_created_at": "2026-08-18T15:04:21Z",
+      "comment_updated_at": "2026-08-18T15:04:21Z",
+      "comment_body_sha256": "78cd56d83e97a62e759d930d5f926792405912c0d56cfac1e39defb6c3fa8516",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3471,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T15:05:09.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/og-fetch-timeout",
+        "head_sha": "d20f8feaeb41480ff7953e49abf3843fd730ffba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
