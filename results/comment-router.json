@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T03:06:46.571Z",
+  "updated_at": "2026-08-18T03:07:03.188Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125260:5315686206:2026-08-17T23:25:42Z:clawsweeper_needs_human",
-      "comment_id": "5315686206",
-      "comment_version_key": "5315686206:2026-08-17T23:25:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125260#issuecomment-5315686206",
-      "comment_created_at": "2026-08-17T11:54:30Z",
-      "comment_updated_at": "2026-08-17T23:25:42Z",
-      "comment_body_sha256": "03e379c86f36dce703fc10685f6af2c8eda6769f856f7fd6aa5d63d1586fb21a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125260,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head validation set was incomplete at review time, so this is not yet a merge-ready verdict. (sha=dcdd5e264377654f4948098085b2e0d4b2b0da8c)",
-      "expected_head_sha": "dcdd5e264377654f4948098085b2e0d4b2b0da8c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-17T23:36:52.971Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/control-ui-locale-refresh",
-        "head_sha": "dcdd5e264377654f4948098085b2e0d4b2b0da8c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125377:5319457926:2026-08-17T23:34:20Z:clawsweeper_needs_human",
       "comment_id": "5319457926",
@@ -31175,6 +31142,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:80396:5323018689:2026-08-18T03:06:14Z:re_review",
+      "comment_id": "5323018689",
+      "comment_version_key": "5323018689:2026-08-18T03:06:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5323018689",
+      "comment_created_at": "2026-08-18T03:06:14Z",
+      "comment_updated_at": "2026-08-18T03:06:14Z",
+      "comment_body_sha256": "fa5168458100286c9657cbe7600082b4261950c173e36659d259dfe710111dc2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 80396,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head `fa10e26c6cb`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T03:07:01.318Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/41966-media-token-warn-in-fence",
+        "head_sha": "fa10e26c6cb4516bcf13be327b10155f29fe10ed",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
