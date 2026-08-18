@@ -1,124 +1,6 @@
 {
-  "updated_at": "2026-08-18T21:23:59.594Z",
+  "updated_at": "2026-08-18T21:24:00.206Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125844:5329552590:2026-08-18T14:23:50Z:clawsweeper_needs_human",
-      "comment_id": "5329552590",
-      "comment_version_key": "5329552590:2026-08-18T14:23:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125844#issuecomment-5329552590",
-      "comment_created_at": "2026-08-18T14:23:50Z",
-      "comment_updated_at": "2026-08-18T14:23:50Z",
-      "comment_body_sha256": "26cbf210bf6895bc6018ec3916261f09bbdee98418f8cd94bb0d058a6f76970f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125844,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Propagate worker authority through session sends (P1)** - The new handoff is used only when this tool receives handoffContext. Worker sessions_send instead enters through its RPC executor, which constructs this...; Review finding: [P1] Propagate worker authority through session sends — src/agents/tools/sessions-send-tool.ts:528-542 - [high] Worker sends bypass source tool restrictions — src/... (sha=100d2eef5be8dc3c47b67cdca8f1ceb4482ae78c)",
-      "expected_head_sha": "100d2eef5be8dc3c47b67cdca8f1ceb4482ae78c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T14:24:53.543Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-910-v2",
-        "head_sha": "100d2eef5be8dc3c47b67cdca8f1ceb4482ae78c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:124015",
-      "comment_id": "repair-loop-label-sweep:automerge:124015",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124015",
-      "comment_created_at": "2026-08-18T14:23:19.781Z",
-      "comment_updated_at": "2026-08-18T14:23:19.781Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124015,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T14:24:57.201Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/signal-port-collision",
-        "head_sha": "a421824063ccad4ba61ba33976cd39d38426862a",
-        "cluster_id": "automerge-openclaw-openclaw-124015",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124015.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124015.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125740:5328675006:2026-08-18T13:13:47Z:re_review",
-      "comment_id": "5328675006",
-      "comment_version_key": "5328675006:2026-08-18T13:13:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125740#issuecomment-5328675006",
-      "comment_created_at": "2026-08-18T13:13:47Z",
-      "comment_updated_at": "2026-08-18T13:13:47Z",
-      "comment_body_sha256": "d5dce42eb82950d6cd02d6afa6e4b81fb0604b0a5f30bd9c8a4ac40fccfebf2a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125740,
-      "author": "atomicdjt",
-      "author_id": 254662250,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T14:24:57.344Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124014:5300588734:2026-08-18T14:11:51Z:clawsweeper_auto_repair",
       "comment_id": "5300588734",
@@ -32828,6 +32710,53 @@
       }
     },
     {
+      "idempotency_key": "comment-router:openclaw/ocm:87:5334238726:2026-08-18T21:23:34Z:re_review",
+      "comment_id": "5334238726",
+      "comment_version_key": "5334238726:2026-08-18T21:23:34Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/87#issuecomment-5334238726",
+      "comment_created_at": "2026-08-18T21:23:34Z",
+      "comment_updated_at": "2026-08-18T21:23:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/ocm",
+      "issue_number": 87,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T21:23:57.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "oc-70a.1/isolate-linked-worktree-dependencies",
+        "head_sha": "6b79f348e837538171ae0879e30229ea41427c7b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:89:5332892329:2026-08-18T21:18:57Z:clawsweeper_needs_human",
       "comment_id": "5332892329",
       "comment_version_key": "5332892329:2026-08-18T21:18:57Z",
@@ -32859,6 +32788,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:87:5332650207:2026-08-18T21:18:09Z:clawsweeper_auto_repair",
+      "comment_id": "5332650207",
+      "comment_version_key": "5332650207:2026-08-18T21:18:09Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/87#issuecomment-5332650207",
+      "comment_created_at": "2026-08-18T18:53:45Z",
+      "comment_updated_at": "2026-08-18T21:18:09Z",
+      "comment_body_sha256": "7a755c1c13e29df65cf0c8f47e1572b97e9c41de37880475fc1035f786f2f8ef",
+      "repo": "openclaw/ocm",
+      "issue_number": 87,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=18cfd37eed620cefaffd284366a7e5b6b74d3b52)",
+      "expected_head_sha": "18cfd37eed620cefaffd284366a7e5b6b74d3b52",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T21:24:00.205Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "oc-70a.1/isolate-linked-worktree-dependencies",
+        "head_sha": "6b79f348e837538171ae0879e30229ea41427c7b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/ocm:87:5334074982:2026-08-18T21:07:50Z:re_review",
+      "comment_id": "5334074982",
+      "comment_version_key": "5334074982:2026-08-18T21:07:50Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/87#issuecomment-5334074982",
+      "comment_created_at": "2026-08-18T21:07:50Z",
+      "comment_updated_at": "2026-08-18T21:07:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/ocm",
+      "issue_number": 87,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T21:24:00.206Z",
+      "target": null
     }
   ]
 }
