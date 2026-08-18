@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T04:59:42.363Z",
+  "updated_at": "2026-08-18T05:00:57.957Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5015923415:2026-07-19T13:36:40Z:re_review",
-      "comment_id": "5015923415",
-      "comment_version_key": "5015923415:2026-07-19T13:36:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5015923415",
-      "comment_created_at": "2026-07-19T13:36:40Z",
-      "comment_updated_at": "2026-07-19T13:36:40Z",
-      "comment_body_sha256": "92d7d9329130c1ad624ee77a43c513450706c6315e091c1d6b44a93a9c76c3d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — refreshed the generated plugin-sdk api baseline manifest (docs/.generated/plugin-sdk-api-baseline.sha256) after the rebase, which resolves the check-plugin-sdk-api-baseline / ci-gate failures (the pr touches no plugin-sdk exports; the committed manifest snapshot was stale relative to current upstream). new head c250330d16. no source behavior change",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T01:22:40.798Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5016471745:2026-07-19T16:24:26Z:re_review",
       "comment_id": "5016471745",
@@ -31400,6 +31373,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125606:5323819925:2026-08-18T05:00:04Z:clawsweeper_needs_human",
+      "comment_id": "5323819925",
+      "comment_version_key": "5323819925:2026-08-18T05:00:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125606#issuecomment-5323819925",
+      "comment_created_at": "2026-08-18T05:00:04Z",
+      "comment_updated_at": "2026-08-18T05:00:04Z",
+      "comment_body_sha256": "19ca4febb1eaaabf540bb134a9bb25700b5e3644797004d4f8e23715bc7ada8d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125606,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted transcript-snapshot replay and active-leaf state; landing should wait for exact-head CI and preserve the bounded delta/reset behavior so a stale cursor cannot m... (sha=75032603191ee929fde2be12df65eb605be18d12)",
+      "expected_head_sha": "75032603191ee929fde2be12df65eb605be18d12",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T05:00:57.957Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/chat-history-cursor-delta",
+        "head_sha": "75032603191ee929fde2be12df65eb605be18d12",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
