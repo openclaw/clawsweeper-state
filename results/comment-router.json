@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-18T14:42:01.869Z",
+  "updated_at": "2026-08-18T14:42:06.342Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124303:5322894794:2026-08-18T02:51:03Z:re_review",
-      "comment_id": "5322894794",
-      "comment_version_key": "5322894794:2026-08-18T02:51:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124303#issuecomment-5322894794",
-      "comment_created_at": "2026-08-18T02:51:03Z",
-      "comment_updated_at": "2026-08-18T02:51:03Z",
-      "comment_body_sha256": "c63062891f7a6201004b7b5924c1a4e07f0b18c1b44433089df1412e040d70e0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124303,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T08:37:03.121Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124303:5323139799:2026-08-18T03:18:54Z:re_review",
       "comment_id": "5323139799",
@@ -32247,6 +32220,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125812:5328359554:2026-08-18T14:37:31Z:clawsweeper_needs_human",
+      "comment_id": "5328359554",
+      "comment_version_key": "5328359554:2026-08-18T14:37:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125812#issuecomment-5328359554",
+      "comment_created_at": "2026-08-18T12:46:43Z",
+      "comment_updated_at": "2026-08-18T14:37:31Z",
+      "comment_body_sha256": "c0769d7b0c3ca30464f5fb8cea5ad9949c833336c5cd41430a2f12d850b7eb28",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125812,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The claimed JSON results are not tied to this head; add redacted terminal or runtime output after the repair, then update the PR body for autom...; Review finding: [P1] Keep caller-provided idempotency keys redacted — src/agents/transcript-redact.ts:548-549 - [high] Root idempotency-key bypass can disclose secrets — src/agent... (sha=464ed9f1e3b0042ab85f31e548435b44746e6ffc)",
+      "expected_head_sha": "464ed9f1e3b0042ab85f31e548435b44746e6ffc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T14:42:06.342Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/transcript-redact-idempotency-key-125214",
+        "head_sha": "464ed9f1e3b0042ab85f31e548435b44746e6ffc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
