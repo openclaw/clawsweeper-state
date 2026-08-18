@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125792"
 mode: "autonomous"
-run_id: "32146411064"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32146411064"
+run_id: "32152291594"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32152291594"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T15:12:02.682Z"
-canonical: "#125792"
-canonical_issue: "#125792"
+published_at: "2026-08-18T15:18:10.925Z"
+canonical: "https://github.com/openclaw/openclaw/issues/125792"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/125792"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32146411064](https://github.com/openclaw/clawsweeper/actions/runs/32146411064)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32152291594](https://github.com/openclaw/clawsweeper/actions/runs/32152291594)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #125792
+Canonical: https://github.com/openclaw/openclaw/issues/125792
 
 ## Summary
 
-#125792 remains a narrow canonical bug, but this worker has a read-only checkout and cannot create the required branch, regression test, or validation evidence. Current main renders the embedding preset without ctx-size while retaining chat context handling separately.
+Static owner evidence identifies a narrow plugin-owner repair, but implementation is blocked: this read-only worktree lacks node_modules/tsx, upstream b10357 source cannot be resolved, and the mandatory ../codex source checkout cannot be created for direct inspection.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Canonical: #125792
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125792 | fix_needed | blocked | canonical | Filesystem policy permits reading only; no branch, test edit, test run, PR, label, or managed-server proof can be produced. |
+| #125792 | fix_needed | blocked | canonical | Implementation needs a writable checkout with installed dependencies, the pinned llama.cpp b10357 contract available for direct inspection, and the mandatory sibling Codex source checkout before any repair verdict or code change. |
+| cluster:issue-openclaw-openclaw-125792 | build_fix_artifact | planned | canonical | The repair is bounded to the managed preset owner, its owner-boundary regression coverage, and two stale internal declarations. |
 
 ## Needs Human
 
