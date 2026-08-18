@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T14:59:53.386Z",
+  "updated_at": "2026-08-18T15:01:24.775Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125645:5325875277:2026-08-18T08:52:05Z:re_review",
-      "comment_id": "5325875277",
-      "comment_version_key": "5325875277:2026-08-18T08:52:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125645#issuecomment-5325875277",
-      "comment_created_at": "2026-08-18T08:52:05Z",
-      "comment_updated_at": "2026-08-18T08:52:05Z",
-      "comment_body_sha256": "2bfa2a4aa33a459210e56d2a9a40e3a628a8f2e497a6267d0a5a31e66081d734",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125645,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T08:52:49.779Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cool-tharp-824ba1",
-        "head_sha": "8664b35e2cf8b9db7ea2569ac0cf11354bf78657",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119195:5178448730:2026-08-18T08:49:44Z:clawsweeper_needs_human",
       "comment_id": "5178448730",
@@ -32332,6 +32285,39 @@
         "kind": "pull_request",
         "branch": "steipete/chat-run-lifecycle-transition-tests-539dd2",
         "head_sha": "b35f8b7d64e6f1c8b564a2288972cd6939c31a92",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125637:5324166826:2026-08-18T14:56:17Z:clawsweeper_needs_human",
+      "comment_id": "5324166826",
+      "comment_version_key": "5324166826:2026-08-18T14:56:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125637#issuecomment-5324166826",
+      "comment_created_at": "2026-08-18T05:49:30Z",
+      "comment_updated_at": "2026-08-18T14:56:17Z",
+      "comment_body_sha256": "a7748f9de6a7ea4929c0c88a183a19491ded1ac229b0bd1df54c5afba941a8f4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125637,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repair is net +5 production lines with no direct test delta; its safety relies on the existing reload E2E and a clean exact-merge-result refresh because the branch is behind main. (sha=63b1209a419804799910f32bf19d0272ad470930)",
+      "expected_head_sha": "63b1209a419804799910f32bf19d0272ad470930",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T15:01:24.775Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/new-session-draft-reload-race",
+        "head_sha": "63b1209a419804799910f32bf19d0272ad470930",
         "cluster_id": null,
         "job_path": null
       }
