@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T18:38:24.565Z",
+  "updated_at": "2026-08-18T18:38:41.035Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/TauTUI:17:5327655980:2026-08-18T11:41:52Z:re_review",
-      "comment_id": "5327655980",
-      "comment_version_key": "5327655980:2026-08-18T11:41:52Z",
-      "comment_url": "https://github.com/steipete/TauTUI/pull/17#issuecomment-5327655980",
-      "comment_created_at": "2026-08-18T11:41:52Z",
-      "comment_updated_at": "2026-08-18T11:41:52Z",
-      "comment_body_sha256": "dab10a9dcba401e813bac62f8db9ae58cfe6b5f864e5bec06b3fd1cbcf320e69",
-      "repo": "steipete/TauTUI",
-      "issue_number": 17,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "OWNER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T11:47:54.503Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ssh-escape-buffering",
-        "head_sha": "54f22d18936784361ff89624f2fb9b84000f7b88",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/TauTUI:17:5287134164:2026-08-18T11:47:09Z:clawsweeper_needs_human",
       "comment_id": "5287134164",
@@ -32476,6 +32429,39 @@
         "kind": "pull_request",
         "branch": "fix-thinking-xhigh-compat",
         "head_sha": "030cab4c02f5088a540cd27e0c38402f97f002ac",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125938:5332440667:2026-08-18T18:34:20Z:clawsweeper_needs_human",
+      "comment_id": "5332440667",
+      "comment_version_key": "5332440667:2026-08-18T18:34:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125938#issuecomment-5332440667",
+      "comment_created_at": "2026-08-18T18:34:20Z",
+      "comment_updated_at": "2026-08-18T18:34:20Z",
+      "comment_body_sha256": "833f51854e9e664a458d2c4afa5a2dbaed1cdfbbffb8b04dcebbc2f4aa56579f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125938,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix has a net +17 production-line delta in terminal lifecycle code; the owner-boundary state is justified, but exact-head CI should finish before merge. (sha=a561ca1ea2b98c8199235dda0aeb0e78572c1f7a)",
+      "expected_head_sha": "a561ca1ea2b98c8199235dda0aeb0e78572c1f7a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T18:38:41.035Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-sessionless-agent-media-cleanup",
+        "head_sha": "a561ca1ea2b98c8199235dda0aeb0e78572c1f7a",
         "cluster_id": null,
         "job_path": null
       }
