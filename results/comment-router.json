@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T04:03:58.635Z",
+  "updated_at": "2026-08-18T04:04:17.441Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124714:5308768198:2026-08-18T00:23:41Z:clawsweeper_needs_human",
-      "comment_id": "5308768198",
-      "comment_version_key": "5308768198:2026-08-18T00:23:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124714#issuecomment-5308768198",
-      "comment_created_at": "2026-08-16T17:40:35Z",
-      "comment_updated_at": "2026-08-18T00:23:41Z",
-      "comment_body_sha256": "c4e3eda0006164604a18c88754d3ae357a236e75d65d153a3db7b2935671cc78",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124714,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The checkout cannot source-compare the current main revision because its required partial-clone objects were unavailable offline; a maintainer should review the actual merge result fo... (sha=55f624d8ecf60355cb849d93e3308fa09d40ec69)",
-      "expected_head_sha": "55f624d8ecf60355cb849d93e3308fa09d40ec69",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T00:24:27.477Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-provider-env-redaction",
-        "head_sha": "55f624d8ecf60355cb849d93e3308fa09d40ec69",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123975:5321872544:2026-08-18T00:24:09Z:re_review",
       "comment_id": "5321872544",
@@ -31182,6 +31149,53 @@
         "kind": "pull_request",
         "branch": "steipete/mcp-stress-hardening-20260817",
         "head_sha": "25b31c78201363cc83ad92346662edc2ec59dacb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125492:5323445430:2026-08-18T04:03:33Z:re_review",
+      "comment_id": "5323445430",
+      "comment_version_key": "5323445430:2026-08-18T04:03:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125492#issuecomment-5323445430",
+      "comment_created_at": "2026-08-18T04:03:33Z",
+      "comment_updated_at": "2026-08-18T04:03:33Z",
+      "comment_body_sha256": "5b18175764d5aa8c815efb8138be4ba708ab8004cf25ef52c0faca53f5c36a8d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125492,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T04:04:15.719Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/non-admin-experience-review-5b53c7",
+        "head_sha": "1a28119ce524f00da138a53975f326846193a584",
         "cluster_id": null,
         "job_path": null
       },
