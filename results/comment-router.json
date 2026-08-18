@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-18T14:35:27.773Z",
+  "updated_at": "2026-08-18T14:37:32.648Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125645:5325694635:2026-08-18T08:35:13Z:re_review",
-      "comment_id": "5325694635",
-      "comment_version_key": "5325694635:2026-08-18T08:35:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125645#issuecomment-5325694635",
-      "comment_created_at": "2026-08-18T08:35:13Z",
-      "comment_updated_at": "2026-08-18T08:35:13Z",
-      "comment_body_sha256": "89e7ca476ef0ac13f1b62a6054f24f35a54c14710301d38be2cc9e2d32b63f7d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125645,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T08:35:59.919Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cool-tharp-824ba1",
-        "head_sha": "76c2e10463db10e01f47798bad502b88cf56d56c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124049:5325698922:2026-08-18T08:35:37Z:re_review",
       "comment_id": "5325698922",
@@ -32174,6 +32127,39 @@
         "kind": "pull_request",
         "branch": "fix/setup-wsl-retry",
         "head_sha": "5b9274f30a0def6a83840b103a5be5dc23e71c6e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125808:5328345417:2026-08-18T14:34:24Z:clawsweeper_needs_human",
+      "comment_id": "5328345417",
+      "comment_version_key": "5328345417:2026-08-18T14:34:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125808#issuecomment-5328345417",
+      "comment_created_at": "2026-08-18T12:45:28Z",
+      "comment_updated_at": "2026-08-18T14:34:24Z",
+      "comment_body_sha256": "c0980e8f791e1a393549c49edf2eca16f5fe885b29616bdbb4e13e7d7c8ca80d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125808,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR explicitly relies on upstream Codex start-or-steer semantics, but direct sibling-source inspection is unavailable. (sha=f9a2b20d79955187e91aed2cb810272d9e1add2a)",
+      "expected_head_sha": "f9a2b20d79955187e91aed2cb810272d9e1add2a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-18T14:37:32.648Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/gateway-start-or-steer",
+        "head_sha": "f9a2b20d79955187e91aed2cb810272d9e1add2a",
         "cluster_id": null,
         "job_path": null
       }
