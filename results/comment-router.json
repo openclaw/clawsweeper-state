@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-18T09:34:02.389Z",
+  "updated_at": "2026-08-18T09:34:06.896Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123979:5300325159:2026-08-18T04:55:49Z:clawsweeper_needs_human",
-      "comment_id": "5300325159",
-      "comment_version_key": "5300325159:2026-08-18T04:55:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123979#issuecomment-5300325159",
-      "comment_created_at": "2026-08-15T03:31:32Z",
-      "comment_updated_at": "2026-08-18T04:55:49Z",
-      "comment_body_sha256": "2aaada599903682c7d3bfed7ed04f605b0ae71ff9992bf9e3c21d05e63d10d26",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123979,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing systemd builds with a numeric memory.high below host RAM will receive a smaller automatic heap cap; builds that relied on the host-sized value may need the retained OPENCLAW_... (sha=61bb2a41581e6322fd6f9ae5924085fdd7d6c1af)",
-      "expected_head_sha": "61bb2a41581e6322fd6f9ae5924085fdd7d6c1af",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T04:59:21.281Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/tsdown-heap-host-scaled",
-        "head_sha": "61bb2a41581e6322fd6f9ae5924085fdd7d6c1af",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124303:5304709964:2026-08-18T04:38:48Z:clawsweeper_auto_repair",
       "comment_id": "5304709964",
@@ -32248,6 +32215,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125664:5326327643:2026-08-18T09:33:28Z:re_review",
+      "comment_id": "5326327643",
+      "comment_version_key": "5326327643:2026-08-18T09:33:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125664#issuecomment-5326327643",
+      "comment_created_at": "2026-08-18T09:33:28Z",
+      "comment_updated_at": "2026-08-18T09:33:28Z",
+      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125664,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-18T09:34:04.870Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-send-attachment-drop-112244",
+        "head_sha": "30bfd86bf8903fc4eab5e33a35c093a6bee72180",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
