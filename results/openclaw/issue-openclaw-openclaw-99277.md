@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-99277"
 mode: "autonomous"
-run_id: "32128072513"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32128072513"
+run_id: "32129462320"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32129462320"
 head_sha: "647503ec44b8e777dd172adf974a945367da0d19"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-18T10:53:53.523Z"
+published_at: "2026-08-18T11:08:38.534Z"
 canonical: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32128072513](https://github.com/openclaw/clawsweeper/actions/runs/32128072513)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32129462320](https://github.com/openclaw/clawsweeper/actions/runs/32129462320)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 ## Summary
 
-#99277 remains the canonical open report. Current main has the missing Mattermost ack handoff, but this worker cannot safely produce a PR: the required live Mattermost emoji-encoding proof is unavailable, ../codex is absent under the mandatory direct-inspection gate, and the checkout is read-only.
+#99277 remains a confirmed canonical Mattermost bug: accepted posts reach the inbound turn without an acknowledgement callback. A narrow credited fix plan is ready, but implementation is blocked by the read-only checkout, unavailable sibling ../codex required by repository policy, and unavailable redacted live Mattermost transport proof.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #99277 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #99277 | fix_needed | blocked | canonical | Implementation is blocked only on mandatory proof and execution prerequisites, not on issue classification. |
-| #80426 | keep_closed | skipped | superseded | Already closed context evidence; no closure or mutation is valid. |
-| #119124 | keep_closed | skipped | superseded | Already closed context evidence; no closure or mutation is valid. |
-| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | blocked |  | Do not open or update a branch until the listed proof blockers are resolved. |
+| #99277 | fix_needed | planned | canonical | Implement a plugin-local afterRecord acknowledgement callback using the shared resolver/gate and existing Mattermost reaction transport. |
+| #80426 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
+| #119124 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
+| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | blocked |  | Implementation must run in a writable executor with the required Codex checkout and redacted live Mattermost transport environment. |
 
 ## Needs Human
 
