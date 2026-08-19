@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T02:41:10.345Z",
+  "updated_at": "2026-08-19T02:41:19.419Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126027:5335097585:2026-08-18T22:50:15Z:re_review",
-      "comment_id": "5335097585",
-      "comment_version_key": "5335097585:2026-08-18T22:50:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126027#issuecomment-5335097585",
-      "comment_created_at": "2026-08-18T22:50:15Z",
-      "comment_updated_at": "2026-08-18T22:50:15Z",
-      "comment_body_sha256": "ec99d1bea50ae75b866ba4634c62e587b6341e98f7d2937764f1a9d8ac3296d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126027,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T23:03:30.338Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-plugin-worker-native-actions",
-        "head_sha": "9677035ae9971ed7438db2b13c38bc44aa3a9f11",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110138:5006631626:2026-08-18T22:49:01Z:clawsweeper_auto_repair",
       "comment_id": "5006631626",
@@ -31391,6 +31344,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T02:41:10.345Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126082:5335760239:2026-08-19T02:40:19Z:clawsweeper_needs_human",
+      "comment_id": "5335760239",
+      "comment_version_key": "5335760239:2026-08-19T02:40:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126082#issuecomment-5335760239",
+      "comment_created_at": "2026-08-19T00:00:13Z",
+      "comment_updated_at": "2026-08-19T02:40:19Z",
+      "comment_body_sha256": "271941f637fdead67b323c01c87a833af224aecefa681962727cc366cf448fb6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126082,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Six additive SQLite columns and first-use writes affect existing state databases; maintainers should retain explicit old-reader and candidate-reopen proof after the branch is refreshe... (sha=b137d91044553fb65d544f58caf1c52a52d0f2fd)",
+      "expected_head_sha": "b137d91044553fb65d544f58caf1c52a52d0f2fd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T02:41:19.419Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-autonomous-task-lifecycle",
+        "head_sha": "b137d91044553fb65d544f58caf1c52a52d0f2fd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
