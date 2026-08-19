@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T20:13:42.551Z",
+  "updated_at": "2026-08-19T20:15:40.697Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126234:5339056607:2026-08-19T10:32:32Z:clawsweeper_auto_repair",
-      "comment_id": "5339056607",
-      "comment_version_key": "5339056607:2026-08-19T10:32:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126234#issuecomment-5339056607",
-      "comment_created_at": "2026-08-19T07:44:06Z",
-      "comment_updated_at": "2026-08-19T10:32:32Z",
-      "comment_body_sha256": "1b702cadd0f77e65d3d57662052464fdb15389bb3b568de738df0d57b7ed603a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126234,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ae0c3076c7dcb18f7de1a0555ebfbfcd2364d949)",
-      "expected_head_sha": "ae0c3076c7dcb18f7de1a0555ebfbfcd2364d949",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T10:37:37.199Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/nostalgic-sutherland-3e9587",
-        "head_sha": "ae0c3076c7dcb18f7de1a0555ebfbfcd2364d949",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126266:5340887983:2026-08-19T10:31:28Z:re_review",
       "comment_id": "5340887983",
@@ -32063,6 +32030,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1407:5343239606:2026-08-19T20:14:47Z:clawsweeper_needs_human",
+      "comment_id": "5343239606",
+      "comment_version_key": "5343239606:2026-08-19T20:14:47Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1407#issuecomment-5343239606",
+      "comment_created_at": "2026-08-19T14:03:11Z",
+      "comment_updated_at": "2026-08-19T20:14:47Z",
+      "comment_body_sha256": "371266e20d09e63612331c6efcb2de4df9b95b228719cd75d26fcc2a7b20cfa1",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1407,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve claims across transient cleanup misses (P1)** - Cleanup only adds a lease to live after list/get visibility, then immediately deletes every other claim. A temporary omission therefore drops the sole own...; Review finding: [P1] Preserve claims across transient cleanup misses — internal/providers/boxd/backend.go:631 - [medium] Cleanup trusts one missing inventory observation — interna... (sha=7fc422ede8cb95a9728707c828c21e0bdb2c0f7a)",
+      "expected_head_sha": "7fc422ede8cb95a9728707c828c21e0bdb2c0f7a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T20:15:40.697Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "add-boxd-provider",
+        "head_sha": "7fc422ede8cb95a9728707c828c21e0bdb2c0f7a",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
