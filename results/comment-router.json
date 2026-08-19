@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T02:34:54.042Z",
+  "updated_at": "2026-08-19T02:36:13.284Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125143:5331685900:2026-08-18T17:21:46Z:maintainer_approve_automerge",
-      "comment_id": "5331685900",
-      "comment_version_key": "5331685900:2026-08-18T17:21:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125143#issuecomment-5331685900",
-      "comment_created_at": "2026-08-18T17:21:46Z",
-      "comment_updated_at": "2026-08-18T17:21:46Z",
-      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125143,
-      "author": "omarshahine",
-      "author_id": 10343873,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T22:47:27.981Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "omarshahine/infer-image-generate-is-unusable-in-a-multi-agen",
-        "head_sha": "80169ab4b83ebe340d033f7adc6b79004ed61d45",
-        "cluster_id": "automerge-openclaw-openclaw-125143",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125143.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/birdclaw:127:5333718950:2026-08-18T22:47:18Z:clawsweeper_needs_human",
       "comment_id": "5333718950",
@@ -31385,6 +31352,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-19T02:35:01Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-19T02:35:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-19T02:35:01Z",
+      "comment_body_sha256": "fda37950b942ac79b8445cb1dbe0435e90f2f100c52c107c96197b062c4b1bcb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner tuple (P1)** - The wrapper moves to v3.97.0, but with.version still locks the v3.95.9 image digest and the guard still asserts the old wrapper. This fails the workflow guard an...; Review finding: [P1] Synchronize the TruffleHog scanner tuple — .github/workflows/ci.yml:1066-1070 - [P1] Refresh the Android attestation guard — .github/workflows/android-release... (sha=df3e5a642fd0862e204de94041c603d698432fba)",
+      "expected_head_sha": "df3e5a642fd0862e204de94041c603d698432fba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T02:36:13.284Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "df3e5a642fd0862e204de94041c603d698432fba",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
