@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126137",
+  "mode": "autonomous",
+  "run_id": "32212787200",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32212787200",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126137.md",
+  "published_at": "2026-08-19T03:45:59.499Z",
+  "canonical": "#126137",
+  "canonical_issue": "#126137",
+  "canonical_pr": null,
+  "summary": "#126137 remains the canonical reproducible performance bug. Current main has the reported growing merge scan, but this read-only worker cannot create the required branch/test regression: dependencies are absent and pnpm cannot create Corepack’s cache. The mandatory sibling ../codex source is also absent and cannot be cloned in this sandbox, so no Codex verdict or proof-sufficient claim is made.",
+  "actions": [
+    {
+      "target": "#126137",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126137",
+      "candidate_fix": null,
+      "reason": "A narrow root-owner repair is appropriate, but branch creation, the required pre-fix regression run, post-fix validation, and mandatory direct Codex-source inspection are blocked by the read-only environment."
+    },
+    {
+      "target": "#126137",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126137",
+      "candidate_fix": null,
+      "reason": "A write-capable executor can implement and validate the narrowly scoped repair on clawsweeper/issue-openclaw-openclaw-126137."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
