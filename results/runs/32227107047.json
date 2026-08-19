@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126231",
+  "mode": "autonomous",
+  "run_id": "32227107047",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32227107047",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126231.md",
+  "published_at": "2026-08-19T07:39:58.763Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126231",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126231",
+  "canonical_pr": null,
+  "summary": "#126231 is a confirmed shared-ingress retry-policy bypass. No branch or PR was produced because this worker checkout is read-only, dependencies are incomplete, and the required sibling ../codex source is absent.",
+  "actions": [
+    {
+      "target": "#126231",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126231",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked: the required ../codex source checkout is absent in this read-only environment, and the baseline test cannot start because tsx is missing."
+    },
+    {
+      "target": "#126172",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different owner boundary and reproduction; leave open independently."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126231",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126231",
+      "candidate_fix": null,
+      "reason": "A narrow, credited new PR remains appropriate once an executable checkout satisfies the mandatory source and dependency gates."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
