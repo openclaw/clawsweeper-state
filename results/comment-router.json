@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T01:42:37.285Z",
+  "updated_at": "2026-08-19T01:45:49.648Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123848:5298386221:2026-08-18T21:15:26Z:clawsweeper_needs_human",
-      "comment_id": "5298386221",
-      "comment_version_key": "5298386221:2026-08-18T21:15:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123848#issuecomment-5298386221",
-      "comment_created_at": "2026-08-14T21:33:47Z",
-      "comment_updated_at": "2026-08-18T21:15:26Z",
-      "comment_body_sha256": "0ad84cdee3628ad60c6f0ccc34222239713bda322c6284e9e4ab6bf9f91ad0e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123848,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Persist redirect blocks across service restarts (P1)** - redirectBlockedEndpoint exists only in this runner. createBeamMirrorService.start creates a fresh runner, so restarting the service clears the block and l...; Review finding: [P1] Persist redirect blocks across service restarts — extensions/beam/src/mirror.ts:281 - [high] Redirect block resets on restart — extensions/beam/src/mirror.ts:... (sha=74b2416f0289c71c7bfaf619e599826f05d9aab3)",
-      "expected_head_sha": "74b2416f0289c71c7bfaf619e599826f05d9aab3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T21:20:01.848Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ptp-oc-info-3",
-        "head_sha": "74b2416f0289c71c7bfaf619e599826f05d9aab3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125755:5326741963:2026-08-18T21:17:09Z:clawsweeper_needs_human",
       "comment_id": "5326741963",
@@ -32108,6 +32075,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T01:42:37.285Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124014:5300588734:2026-08-19T01:39:17Z:clawsweeper_auto_repair",
+      "comment_id": "5300588734",
+      "comment_version_key": "5300588734:2026-08-19T01:39:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5300588734",
+      "comment_created_at": "2026-08-15T04:46:08Z",
+      "comment_updated_at": "2026-08-19T01:39:17Z",
+      "comment_body_sha256": "b9b60064b96a3c1c22b153e8ca1bf3a1556ccec4e76ebf4fa080fe4bd1348d89",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124014,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8d4f534abfb446f16e611d24eb0517243612b3aa)",
+      "expected_head_sha": "8d4f534abfb446f16e611d24eb0517243612b3aa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T01:45:49.648Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/auth-reauth-state-reset",
+        "head_sha": "8d4f534abfb446f16e611d24eb0517243612b3aa",
+        "cluster_id": "automerge-openclaw-openclaw-124014",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
+      }
     }
   ]
 }
