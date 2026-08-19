@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T20:25:21.779Z",
+  "updated_at": "2026-08-19T20:26:06.507Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123120:5279015849:2026-08-19T10:13:16Z:clawsweeper_auto_repair",
-      "comment_id": "5279015849",
-      "comment_version_key": "5279015849:2026-08-19T10:13:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123120#issuecomment-5279015849",
-      "comment_created_at": "2026-08-13T10:17:21Z",
-      "comment_updated_at": "2026-08-19T10:13:16Z",
-      "comment_body_sha256": "5c25e9abb2d87d492abde256d4ccd8841a2e91fc7287ef324be1a9656c079aa6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123120,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fe580e447b030da904893fdb4d516d6b5b4356fa)",
-      "expected_head_sha": "fe580e447b030da904893fdb4d516d6b5b4356fa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T10:43:11.851Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/native-reasoning-delta-fastpath-v2",
-        "head_sha": "fe580e447b030da904893fdb4d516d6b5b4356fa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125081:5312298517:2026-08-19T09:58:39Z:clawsweeper_needs_human",
       "comment_id": "5312298517",
@@ -32008,6 +31975,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T20:25:21.779Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:86655:4537661124:2026-08-19T20:24:44Z:clawsweeper_needs_human",
+      "comment_id": "4537661124",
+      "comment_version_key": "4537661124:2026-08-19T20:24:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/86655#issuecomment-4537661124",
+      "comment_created_at": "2026-05-25T22:27:27Z",
+      "comment_updated_at": "2026-08-19T20:24:44Z",
+      "comment_body_sha256": "102e09debd2a83abff12d870519439b1dc2c31fa2c8a414fc343c1b02e5586d0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 86655,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: No inspectable redacted artifact demonstrates the exact-head bridge running successfully after this change. After adding proof, update the PR b...; Review finding: [P1] Remove the private Claude-extension import — extensions/glm-bridge/index.ts:27 - [P1] Do not exempt the executable bridge from release-age checks — pnpm-works... (sha=3d54e1055cb738269ec09b23ef59bb26c9a1090a)",
+      "expected_head_sha": "3d54e1055cb738269ec09b23ef59bb26c9a1090a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T20:26:06.507Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/claude-app-server-extension",
+        "head_sha": "3d54e1055cb738269ec09b23ef59bb26c9a1090a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
