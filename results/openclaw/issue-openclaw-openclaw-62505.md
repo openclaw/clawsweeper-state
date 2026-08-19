@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-62505"
 mode: "autonomous"
-run_id: "32262576395"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32262576395"
+run_id: "32265255019"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32265255019"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T14:34:33.873Z"
+published_at: "2026-08-19T15:06:01.490Z"
 canonical: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32262576395](https://github.com/openclaw/clawsweeper/actions/runs/32262576395)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32265255019](https://github.com/openclaw/clawsweeper/actions/runs/32265255019)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 ## Summary
 
-#62505 remains a real, narrow bug on main 627084304a9167544badaf6902db2720fd9f7859: notify-on-exit enqueues a scoped exec-event, but the shared unscheduled-wake policy excludes it, causing disabled cadence to reject the completion before a turn runs. Implementation and validation are blocked in this read-only checkout: ../codex is absent (a repository hard gate for code changes) and node_modules/tsx is absent, so focused Vitest cannot start.
+Confirmed current main drops scoped background-exec completion wakes when heartbeat cadence is 0m. A narrow shared-policy repair is ready as an artifact, but this read-only checkout cannot edit or install missing test dependencies.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #62505 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #62505 | fix_needed | blocked | canonical | A narrow repair is defined, but this worker cannot legally patch or validate it until the Codex sibling and dependencies are available in a writable checkout. |
-| #67913 | keep_closed | skipped | superseded | Already closed. |
+| #62505 | fix_needed | blocked | canonical | Implementation requires a writable checkout and dependencies; no maintainer product decision is unresolved. |
+| #67913 | keep_closed | skipped | superseded | Already closed; do not mutate. |
 | #76877 | keep_closed | skipped | independent | Already closed and outside this repair invariant. |
-| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | blocked | canonical | Apply in a writable checkout after satisfying the repository Codex-source gate and installing dependencies. |
+| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | planned |  | A normal writable executor can implement and validate this narrow artifact. |
 
 ## Needs Human
 
