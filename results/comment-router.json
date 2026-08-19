@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T19:12:43.054Z",
+  "updated_at": "2026-08-19T19:13:04.653Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125067:5340222856:2026-08-19T09:31:35Z:re_review",
-      "comment_id": "5340222856",
-      "comment_version_key": "5340222856:2026-08-19T09:31:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125067#issuecomment-5340222856",
-      "comment_created_at": "2026-08-19T09:31:35Z",
-      "comment_updated_at": "2026-08-19T09:31:35Z",
-      "comment_body_sha256": "b3d3c2b37e35b1a4c8342b29e70fd89863f057e20f13db596e5ffc23517bb9ac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125067,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T09:32:22.805Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sidebar/session-title-reveal",
-        "head_sha": "ca7af2e94aac33b224ae76c7c5f711db239aa60d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:45758:4339452236:2026-08-19T09:25:36Z:autoclose",
       "comment_id": "4339452236",
@@ -31976,6 +31929,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T19:12:43.054Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:86655:4537661124:2026-08-19T19:02:41Z:clawsweeper_needs_human",
+      "comment_id": "4537661124",
+      "comment_version_key": "4537661124:2026-08-19T19:02:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/86655#issuecomment-4537661124",
+      "comment_created_at": "2026-05-25T22:27:27Z",
+      "comment_updated_at": "2026-08-19T19:02:41Z",
+      "comment_body_sha256": "d3b7b6056eb778905010e6453d138499bfb8b19b2080209b0ee06a2438471eea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 86655,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied context contains prose claims and test summaries but no inspectable exact-head runtime artifact demonstrating the bundled...; Review finding: [P1] Remove the cross-extension private harness import — extensions/glm-bridge/index.ts:27 - [P1] Restore release-age protection for the bridge binary — pnpm-works... (sha=2ae6d9e1c5bf195d4b5a91a8780996e526b7cabc)",
+      "expected_head_sha": "2ae6d9e1c5bf195d4b5a91a8780996e526b7cabc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T19:13:04.653Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/claude-app-server-extension",
+        "head_sha": "2ae6d9e1c5bf195d4b5a91a8780996e526b7cabc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
