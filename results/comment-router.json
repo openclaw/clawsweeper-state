@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T08:17:28.216Z",
+  "updated_at": "2026-08-19T08:23:09.636Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111277:5337116721:2026-08-19T03:23:37Z:re_review",
-      "comment_id": "5337116721",
-      "comment_version_key": "5337116721:2026-08-19T03:23:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111277#issuecomment-5337116721",
-      "comment_created_at": "2026-08-19T03:23:37Z",
-      "comment_updated_at": "2026-08-19T03:23:37Z",
-      "comment_body_sha256": "88253480f29e89d5eae7d849d3673ec5d3ad375ad609045558a566fb0761531b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111277,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T03:30:08.953Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/problem-github-copilot-login-leaves-failed-response-streams-open",
-        "head_sha": "2881b1caf79edd69b50a030ab2a6a37d5ea6248d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126139:5337157767:2026-08-19T03:29:45Z:re_review",
       "comment_id": "5337157767",
@@ -31463,6 +31416,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126260:5339474147:2026-08-19T08:22:24Z:clawsweeper_auto_repair",
+      "comment_id": "5339474147",
+      "comment_version_key": "5339474147:2026-08-19T08:22:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126260#issuecomment-5339474147",
+      "comment_created_at": "2026-08-19T08:22:24Z",
+      "comment_updated_at": "2026-08-19T08:22:24Z",
+      "comment_body_sha256": "9ba61a0771e55e295a7673085c543affa07dc4471f4fbe1aaec7b04782c45c69",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126260,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=286f15834908df36edd0adc5da9331adf12e7031)",
+      "expected_head_sha": "286f15834908df36edd0adc5da9331adf12e7031",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T08:23:09.636Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/telegram-desktop-ami",
+        "head_sha": "286f15834908df36edd0adc5da9331adf12e7031",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
