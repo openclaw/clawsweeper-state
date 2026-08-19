@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T04:36:58.731Z",
+  "updated_at": "2026-08-19T04:37:22.846Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5297174223:2026-08-14T19:10:47Z:re_review",
-      "comment_id": "5297174223",
-      "comment_version_key": "5297174223:2026-08-14T19:10:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5297174223",
-      "comment_created_at": "2026-08-14T19:10:47Z",
-      "comment_updated_at": "2026-08-14T19:10:47Z",
-      "comment_body_sha256": "999ca1284af5f0870e972cd499f455cbdddef670d838e11bfe319ae6fa1ee578",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T01:27:05.918Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5299728750:2026-08-15T01:09:31Z:re_review",
       "comment_id": "5299728750",
@@ -30525,6 +30498,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-19T04:36:28Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-19T04:36:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-19T04:36:28Z",
+      "comment_body_sha256": "0eff0bbe532e1c12d1ca359f885191730fcf2118751a791d8b4e3b0eaa376e25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner tuple (P1)** - The wrapper changes to v3.97.0, but with.version remains the v3.95.9 binary digest and the CI guard still requires that old wrapper and tuple. This both fails th...; Review finding: [P1] Synchronize the TruffleHog scanner tuple — .github/workflows/ci.yml:1066-1070 - [P1] Refresh the Android attestation guard — .github/workflows/android-release... (sha=ef01a42821ec43829e7819494303a09f47495cf3)",
+      "expected_head_sha": "ef01a42821ec43829e7819494303a09f47495cf3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T04:37:22.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "ef01a42821ec43829e7819494303a09f47495cf3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
