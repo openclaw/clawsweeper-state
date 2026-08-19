@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126396"
 mode: "autonomous"
-run_id: "32287862692"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32287862692"
+run_id: "32288461387"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32288461387"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-19T18:41:47.422Z"
+result_status: "blocked"
+published_at: "2026-08-19T19:13:18.406Z"
 canonical: "https://github.com/openclaw/openclaw/issues/126396"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/126396"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32287862692](https://github.com/openclaw/clawsweeper/actions/runs/32287862692)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32288461387](https://github.com/openclaw/clawsweeper/actions/runs/32288461387)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/126396
 
 ## Summary
 
-Current main reproduces the TaskFlow guidance mismatch: both bundled skills invoke the removed `api.runtime.tasks.flow` member, while the runtime exposes only `tasks.flows` (read-only DTOs) and `tasks.managedFlows` (managed-flow mutations). A narrow two-skill documentation fix is ready for an executor PR.
+Confirmed documentation-only TaskFlow regression on main 5976e74d: both bundled skills use removed runtime.tasks.flow mutations. A narrow two-skill repair is specified, but this worker cannot edit, validate, or create its branch because the filesystem is read-only; the mandatory sibling ../codex checkout is also absent and cannot be cloned here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Current main reproduces the TaskFlow guidance mismatch: both bundled skills invo
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126396 | fix_needed | planned | canonical | This is an existing bundled-guidance regression with a documented current replacement; it needs no Plugin SDK contract change. |
-| cluster:issue-openclaw-openclaw-126396 | build_fix_artifact | planned | canonical | Executor should apply the two-file documentation alignment, validate it, then open one labeled ClawSweeper PR. |
-| cluster:issue-openclaw-openclaw-126396 | open_fix_pr | planned | canonical | The job authorizes one narrow fix PR and prohibits merge or issue closure. |
+| #126396 | fix_needed | planned | canonical | A narrow documentation repair is warranted; no SDK contract change or compatibility alias is needed. |
+| cluster:issue-openclaw-openclaw-126396 | build_fix_artifact | blocked |  | Implementation is blocked only by the read-only worker environment and unavailable mandatory Codex sibling checkout. |
 
 ## Needs Human
 
