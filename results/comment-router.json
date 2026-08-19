@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T13:09:22.525Z",
+  "updated_at": "2026-08-19T13:14:50.239Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112705:5085313346:2026-08-19T04:54:08Z:clawsweeper_auto_repair",
-      "comment_id": "5085313346",
-      "comment_version_key": "5085313346:2026-08-19T04:54:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112705#issuecomment-5085313346",
-      "comment_created_at": "2026-07-26T20:43:14Z",
-      "comment_updated_at": "2026-08-19T04:54:08Z",
-      "comment_body_sha256": "eaa979d0233625d0a5836c13bcab36ce0d6958387be37baaf2ba34ffff0742ba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112705,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a10a2abd2967e302bd93c28b5315e92d84c17632)",
-      "expected_head_sha": "a10a2abd2967e302bd93c28b5315e92d84c17632",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T05:05:04.302Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "floke/1337-persistent-codex-worker",
-        "head_sha": "a10a2abd2967e302bd93c28b5315e92d84c17632",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113183:5089922152:2026-08-19T05:00:02Z:clawsweeper_auto_repair",
       "comment_id": "5089922152",
@@ -32425,6 +32392,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120491:5342638349:2026-08-19T13:13:57Z:re_review",
+      "comment_id": "5342638349",
+      "comment_version_key": "5342638349:2026-08-19T13:13:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5342638349",
+      "comment_created_at": "2026-08-19T13:13:57Z",
+      "comment_updated_at": "2026-08-19T13:13:57Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120491,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T13:14:47.812Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119992-per-turn-send-budget",
+        "head_sha": "75a6be2b7fc575b1f02953bc08280931ab3a1487",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
