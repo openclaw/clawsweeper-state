@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T08:39:13.617Z",
+  "updated_at": "2026-08-19T08:42:32.189Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113394:5073976884:2026-08-19T03:17:40Z:clawsweeper_needs_human",
-      "comment_id": "5073976884",
-      "comment_version_key": "5073976884:2026-08-19T03:17:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113394#issuecomment-5073976884",
-      "comment_created_at": "2026-07-24T20:16:14Z",
-      "comment_updated_at": "2026-08-19T03:17:40Z",
-      "comment_body_sha256": "294315d2eddfc8a8214ef1df18f7fe8c99f2eb3aaa611247fcbd4d6376bd4642",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113394,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=6b527029a62be66665dc39f2a13eba3f566ef56e)",
-      "expected_head_sha": "6b527029a62be66665dc39f2a13eba3f566ef56e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T03:30:49.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/diagnostic-memory-env-thresholds-20260724",
-        "head_sha": "6b527029a62be66665dc39f2a13eba3f566ef56e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115993:5120671292:2026-08-19T03:09:55Z:clawsweeper_auto_repair",
       "comment_id": "5120671292",
@@ -31477,6 +31444,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126243:5339665663:2026-08-19T08:41:42Z:re_review",
+      "comment_id": "5339665663",
+      "comment_version_key": "5339665663:2026-08-19T08:41:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126243#issuecomment-5339665663",
+      "comment_created_at": "2026-08-19T08:41:42Z",
+      "comment_updated_at": "2026-08-19T08:41:42Z",
+      "comment_body_sha256": "1a1f0caa80ebc4b723d13d9dc0e150a8c0f4faed69680c98b9eed9d6a44a2c48",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126243,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T08:42:30.019Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/peekaboo-f221-final-pin",
+        "head_sha": "4a8030397594bf8d3fe47054b988959d0db131d4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
