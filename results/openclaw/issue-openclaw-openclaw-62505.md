@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-62505"
 mode: "autonomous"
-run_id: "32250707266"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32250707266"
+run_id: "32252089512"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32252089512"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-19T12:17:13.254Z"
+published_at: "2026-08-19T12:39:27.975Z"
 canonical: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_pr: null
-actions_total: 7
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32250707266](https://github.com/openclaw/clawsweeper/actions/runs/32250707266)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32252089512](https://github.com/openclaw/clawsweeper/actions/runs/32252089512)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 ## Summary
 
-#62505 remains the canonical issue. Current main's generic policy accepts only targeted `intent: "immediate"` wakes, while exec completion emits targeted `intent: "event"`; the scheduler and execution gates therefore reject it when `heartbeat.every` is `0m`. Implementation is blocked in this read-only checkout: the focused test harness cannot load `tsx`, and required sibling `../codex` source is absent for the Codex hard gate.
+#62505 remains the canonical bug: scoped background exec completions use an exec-event wake that both disabled-cadence gates reject. A narrow provider-neutral repair is defined, but this read-only checkout lacks dependencies and the mandatory sibling ../codex source checkout, so no branch, regression edit, or validation could be completed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #62505 |  |  |
 
 ## Apply Actions
 
@@ -66,13 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #62505 | fix_needed | blocked | canonical | A narrow repair is identified, but branch implementation and proof require a writable dependency-ready checkout plus the required sibling Codex source inspection. |
-| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | planned | canonical | Prepared for a writable executor after it satisfies the local dependency and Codex-source gates. |
-| cluster:issue-openclaw-openclaw-62505 | open_fix_pr | blocked | canonical | Open only after the repair contract is implemented, focused tests pass, `pnpm check:changed` passes, and the Codex hard gate is met. |
-| #67913 | keep_closed | skipped | superseded | Already closed; retain only as historical design evidence. |
-| #76877 | keep_closed | skipped | independent | Already closed and independent. |
-| #79869 | route_security | planned | security_sensitive | Security-sensitive linked item is out of scope for this repair lane. |
-| #109738 | keep_independent | planned | independent | Separate auth/worker-boundary issue; leave open independently. |
+| #62505 | fix_needed | blocked | canonical | Implementation is blocked by the read-only sandbox, missing dependencies, and the repository-required direct ../codex checkout, which is absent and cannot be cloned here. |
+| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | blocked | canonical | Executor should implement and validate the narrow artifact after provisioning dependencies and the required sibling Codex checkout. |
+| #67913 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
+| #76877 | keep_closed | skipped | independent | Already closed and independent of this repair. |
+| #79869 | route_security | planned | security_sensitive | Quarantined per cluster security policy; it does not block the independent #62505 repair. |
+| #109738 | keep_independent | planned | independent | Keep open under its own canonical security/product-boundary review. |
 
 ## Needs Human
 
