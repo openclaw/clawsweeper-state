@@ -1,0 +1,103 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-62505",
+  "mode": "autonomous",
+  "run_id": "32250707266",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32250707266",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-62505.md",
+  "published_at": "2026-08-19T12:17:13.254Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/62505",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/62505",
+  "canonical_pr": null,
+  "summary": "#62505 remains the canonical issue. Current main's generic policy accepts only targeted `intent: \"immediate\"` wakes, while exec completion emits targeted `intent: \"event\"`; the scheduler and execution gates therefore reject it when `heartbeat.every` is `0m`. Implementation is blocked in this read-only checkout: the focused test harness cannot load `tsx`, and required sibling `../codex` source is absent for the Codex hard gate.",
+  "actions": [
+    {
+      "target": "#62505",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "A narrow repair is identified, but branch implementation and proof require a writable dependency-ready checkout plus the required sibling Codex source inspection."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-62505",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Prepared for a writable executor after it satisfies the local dependency and Codex-source gates."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-62505",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Open only after the repair contract is implemented, focused tests pass, `pnpm check:changed` passes, and the Codex hard gate is met."
+    },
+    {
+      "target": "#67913",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Already closed; retain only as historical design evidence."
+    },
+    {
+      "target": "#76877",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed and independent."
+    },
+    {
+      "target": "#79869",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Security-sensitive linked item is out of scope for this repair lane."
+    },
+    {
+      "target": "#109738",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate auth/worker-boundary issue; leave open independently."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "keep_independent": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
