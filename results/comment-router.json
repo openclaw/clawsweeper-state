@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T23:13:53.336Z",
+  "updated_at": "2026-08-19T23:20:40.764Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92223:4683056941:2026-08-19T13:36:33Z:clawsweeper_auto_repair",
-      "comment_id": "4683056941",
-      "comment_version_key": "4683056941:2026-08-19T13:36:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/92223#issuecomment-4683056941",
-      "comment_created_at": "2026-06-11T17:09:22Z",
-      "comment_updated_at": "2026-08-19T13:36:33Z",
-      "comment_body_sha256": "c845d64aea92b206ec46e5619d27f6c8467ca221e2e42df53cd56240e7c15763",
-      "repo": "openclaw/openclaw",
-      "issue_number": 92223,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3affedbd0c5ed8a7f472de53231e888618647cf5)",
-      "expected_head_sha": "3affedbd0c5ed8a7f472de53231e888618647cf5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T13:55:31.324Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/90098-canonical-media-limits",
-        "head_sha": "3affedbd0c5ed8a7f472de53231e888618647cf5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96819:4801043172:2026-08-19T13:38:37Z:clawsweeper_auto_repair",
       "comment_id": "4801043172",
@@ -31777,6 +31744,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T23:13:53.336Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1119:5220439472:2026-08-19T23:20:05Z:clawsweeper_needs_human",
+      "comment_id": "5220439472",
+      "comment_version_key": "5220439472:2026-08-19T23:20:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1119#issuecomment-5220439472",
+      "comment_created_at": "2026-08-07T18:02:47Z",
+      "comment_updated_at": "2026-08-19T23:20:05Z",
+      "comment_body_sha256": "aca3f80d8371d536693c6ee864acdebd28a4c1783dba1d5122d725ec5ea9e611",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1119,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Block media resolution without an authorized HTTP credential (P1)** - ResolveAssistantMediaAsync starts resolution even when the manager intentionally withheld the interactive media credential. The new no-creden...; Review finding: [P1] Block media resolution without an authorized HTTP credential — src/OpenClaw.Shared/OpenClawGatewayClient.AssistantMedia.cs:22-25 - [high] Assistant media can... (sha=bf763987a45c0b5859226537c7524c72b650d77c)",
+      "expected_head_sha": "bf763987a45c0b5859226537c7524c72b650d77c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T23:20:40.764Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "calebeden-investigate-media-rendering",
+        "head_sha": "bf763987a45c0b5859226537c7524c72b650d77c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
