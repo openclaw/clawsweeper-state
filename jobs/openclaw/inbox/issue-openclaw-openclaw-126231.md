@@ -67,24 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the pre-adoption handler-timeout path in the shared channel ingress drain. Keep the existing guillotine and abort fence, but route a timeout through the canonical bounded retry disposition so the first timeout leaves a pending row with an incremented attempt and recorded error; retain terminal dead-letter behavior only when the existing retry policy is exhausted. Update the owner-boundary watchdog test to fail on current main, prove backoff and retry behavior, and preserve the late-adoption fence. Update the existing Telegram transport/restart-replay coverage only where it asserts immediate timeout failure. Do not add a retry setting, change SQLite schema, alter post-adoption semantics, or edit CHANGELOG.md; include user-impact/release-note context in the PR body.
+Repair the current-main ingress watchdog so a pre-adoption handler timeout aborts and then follows the canonical retry disposition rather than directly terminally failing the durable row. Preserve claim-token fencing, late-adoption rejection, per-lane behavior, and the existing non-retryable classifier; do not add a Telegram-only branch or new configuration. Add a regression that fails before the change: a timeout records attempts=1 and retry metadata, honors retry delay, then can be reprocessed; also cover a late adoption after timeout remaining rejected. Update the Telegram timeout fixture to prove its stalled update is retried or reaches the existing bounded dead-letter policy without blocking later lane work. Do not edit CHANGELOG.md; capture user impact in the PR body.
 
 Likely files:
 
 - src/channels/message/ingress-drain.ts
 - src/channels/message/ingress-drain.watchdog.test.ts
 - src/channels/message/ingress-drain.test.ts
-- src/channels/message/ingress-drain.debounce-failure.test.ts
 - extensions/telegram/src/telegram-ingress-coalescing.e2e.test.ts
-- extensions/telegram/src/polling-session.test.ts
 
 Validation:
 
 - pnpm test src/channels/message/ingress-drain.watchdog.test.ts
 - pnpm test src/channels/message/ingress-drain.test.ts
-- pnpm test src/channels/message/ingress-drain.debounce-failure.test.ts
 - pnpm test extensions/telegram/src/telegram-ingress-coalescing.e2e.test.ts
-- pnpm test extensions/telegram/src/polling-session.test.ts
+- pnpm check:changed -- src/channels/message/ingress-drain.ts src/channels/message/ingress-drain.watchdog.test.ts extensions/telegram/src/telegram-ingress-coalescing.e2e.test.ts
 
 ## Operator Prompt
 
