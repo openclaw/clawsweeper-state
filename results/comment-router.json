@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T03:44:47.536Z",
+  "updated_at": "2026-08-19T03:45:16.233Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125143:5313145398:2026-08-18T23:57:08Z:clawsweeper_auto_repair",
-      "comment_id": "5313145398",
-      "comment_version_key": "5313145398:2026-08-18T23:57:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125143#issuecomment-5313145398",
-      "comment_created_at": "2026-08-17T07:32:39Z",
-      "comment_updated_at": "2026-08-18T23:57:08Z",
-      "comment_body_sha256": "c6c6dc252ad76880e3509dc694205977b86081878f2bdbee6bb2540092729e60",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125143,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=80169ab4b83ebe340d033f7adc6b79004ed61d45)",
-      "expected_head_sha": "80169ab4b83ebe340d033f7adc6b79004ed61d45",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T00:04:51.681Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "omarshahine/infer-image-generate-is-unusable-in-a-multi-agen",
-        "head_sha": "80169ab4b83ebe340d033f7adc6b79004ed61d45",
-        "cluster_id": "automerge-openclaw-openclaw-125143",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125143.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125143.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125143:5324939721:2026-08-18T07:21:56Z:automerge",
       "comment_id": "5324939721",
@@ -31177,6 +31130,39 @@
         "kind": "pull_request",
         "branch": "pe/nvidia-tier3-clawhub-prototype",
         "head_sha": "0dc5e1c75481f0dc2a0233d8667a7227895bfb2f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126155:5337255148:2026-08-19T03:44:34Z:clawsweeper_needs_human",
+      "comment_id": "5337255148",
+      "comment_version_key": "5337255148:2026-08-19T03:44:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126155#issuecomment-5337255148",
+      "comment_created_at": "2026-08-19T03:44:34Z",
+      "comment_updated_at": "2026-08-19T03:44:34Z",
+      "comment_body_sha256": "3d3589556bc80bc5098cd82680e85de64f196cbb4f89a7ba7a1f87ecd135d872",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126155,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Fence automated alert text from pending approvals (P1)** - This automatically sends alert text as an ordinary chat message. When the session has a pending proposal, the gateway classifies that message for approv...; Review finding: [P1] Fence automated alert text from pending approvals — ui/src/pages/custodian/custodian-surface.ts:96 - [P2] Re-arm explanations after an incident recurs — ui/sr... (sha=e85dc5e17030a1627591abe52baf28f5fd3fa2d7)",
+      "expected_head_sha": "e85dc5e17030a1627591abe52baf28f5fd3fa2d7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T03:45:16.233Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/update-symbol-automation-alerts-70e8af",
+        "head_sha": "e85dc5e17030a1627591abe52baf28f5fd3fa2d7",
         "cluster_id": null,
         "job_path": null
       }
