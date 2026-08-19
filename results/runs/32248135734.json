@@ -1,0 +1,85 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-62505",
+  "mode": "autonomous",
+  "run_id": "32248135734",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32248135734",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-62505.md",
+  "published_at": "2026-08-19T11:42:35.505Z",
+  "canonical": "#62505",
+  "canonical_issue": "#62505",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a safe verdict or branch change: mandatory direct inspection of sibling ../codex is impossible because it is absent and this environment is read-only; focused validation also cannot start because tsx is not installed and pnpm install cannot write here. Current main contains the reported disabled-cadence gate, but no fix artifact is emitted without the mandatory gate and a reproducible regression.",
+  "actions": [
+    {
+      "target": "#62505",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Provide a writable target checkout with dependencies and the mandatory sibling ../codex checkout, then rerun the focused regression-first repair."
+    },
+    {
+      "target": "#67913",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Already closed; no close or merge action is permitted."
+    },
+    {
+      "target": "#76877",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical, closed, and independent from the disabled-cadence exec-event path."
+    },
+    {
+      "target": "#79869",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantined individually under the job security boundary; no mutation or merge recommendation."
+    },
+    {
+      "target": "#109738",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct auth/worker-sandbox root cause; outside this heartbeat wake cluster."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "keep_independent": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable target checkout with dependencies and the mandatory sibling ../codex checkout (or permission to create it), then rerun the focused regression-first repair."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
