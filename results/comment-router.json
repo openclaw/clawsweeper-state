@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T00:04:14.308Z",
+  "updated_at": "2026-08-19T00:05:01.477Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:69417:4340779491:2026-08-18T18:38:08Z:clawsweeper_needs_human",
-      "comment_id": "4340779491",
-      "comment_version_key": "4340779491:2026-08-18T18:38:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/69417#issuecomment-4340779491",
-      "comment_created_at": "2026-04-29T04:24:13Z",
-      "comment_updated_at": "2026-08-18T18:38:08Z",
-      "comment_body_sha256": "6910fd75154df6c65b91439f487579290516987d4e778cd4b27c07337bbc5e9c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 69417,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal transcript covers schema and audit behavior on an older runtime, not current-head credential delivery to a stdio...; Review finding: [P1] Fence unavailable MCP SecretRef owners — src/secrets/runtime-config-collectors-core.ts:157-162 - [P1] Skip Authorization refs superseded by OAuth — src/secret... (sha=bf37a7f0f1bca93978289790cbf374bb18298510)",
-      "expected_head_sha": "bf37a7f0f1bca93978289790cbf374bb18298510",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T18:39:49.508Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/mcp-secretref-core-mcp-upstream-clean",
-        "head_sha": "bf37a7f0f1bca93978289790cbf374bb18298510",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/gogcli:1003:5332503073:2026-08-18T18:40:15Z:re_review",
       "comment_id": "5332503073",
@@ -32541,6 +32508,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126083:5335773786:2026-08-19T00:02:15Z:clawsweeper_needs_human",
+      "comment_id": "5335773786",
+      "comment_version_key": "5335773786:2026-08-19T00:02:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126083#issuecomment-5335773786",
+      "comment_created_at": "2026-08-19T00:02:15Z",
+      "comment_updated_at": "2026-08-19T00:02:15Z",
+      "comment_body_sha256": "535a1f49f40a9f8e2c800dced036c3ec9d49e5f466e6839f716b99db154970f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126083,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Sanitize fallback-rendered text before copying it into details (P1)** - When structuredContent is absent, this copies every projected text block into details. Unsupported or malformed MCP blocks are projected by...; Review finding: [P1] Sanitize fallback-rendered text before copying it into details — src/agents/node-plugin-tools.ts:50-55 - [medium] Fallback text can leak raw MCP metadata — sr... (sha=63fd9af3e1c8ff1437b2d9b6c90030a8a18f6228)",
+      "expected_head_sha": "63fd9af3e1c8ff1437b2d9b6c90030a8a18f6228",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T00:05:01.477Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/mcp-catalog-result-integrity-20260818",
+        "head_sha": "63fd9af3e1c8ff1437b2d9b6c90030a8a18f6228",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
