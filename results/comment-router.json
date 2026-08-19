@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T02:38:17.697Z",
+  "updated_at": "2026-08-19T02:38:25.905Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121167:5233270982:2026-08-18T22:40:26Z:clawsweeper_needs_human",
-      "comment_id": "5233270982",
-      "comment_version_key": "5233270982:2026-08-18T22:40:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121167#issuecomment-5233270982",
-      "comment_created_at": "2026-08-09T18:44:52Z",
-      "comment_updated_at": "2026-08-18T22:40:26Z",
-      "comment_body_sha256": "6f5e74c459cfa6de157811058cd0989b74b66851bc4800030cd7e7917bfddb60",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121167,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A host that remains errored or paginated intentionally leaves its remote row live until a later complete observation; the existing receiver TTL bounds that delayed cleanup. (sha=ffd08c224fc1266119dca35558234523cca61b75)",
-      "expected_head_sha": "ffd08c224fc1266119dca35558234523cca61b75",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T22:50:42.032Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/beam-confirmed-inactive-20260810",
-        "head_sha": "ffd08c224fc1266119dca35558234523cca61b75",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123052:5277867012:2026-08-18T22:41:42Z:clawsweeper_auto_repair",
       "comment_id": "5277867012",
@@ -31347,6 +31314,53 @@
       "status": "skipped",
       "processed_at": "2026-08-19T02:38:17.697Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125815:5336829476:2026-08-19T02:37:45Z:re_review",
+      "comment_id": "5336829476",
+      "comment_version_key": "5336829476:2026-08-19T02:37:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125815#issuecomment-5336829476",
+      "comment_created_at": "2026-08-19T02:37:45Z",
+      "comment_updated_at": "2026-08-19T02:37:45Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125815,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T02:38:24.349Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-owner-lifecycle-cas",
+        "head_sha": "8b027b355efa89c44859ac580e03b4b86b530f73",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
