@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T00:43:47.561Z",
+  "updated_at": "2026-08-19T00:45:02.509Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111277:5070410203:2026-07-24T13:31:30Z:re_review",
-      "comment_id": "5070410203",
-      "comment_version_key": "5070410203:2026-07-24T13:31:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111277#issuecomment-5070410203",
-      "comment_created_at": "2026-07-24T13:31:30Z",
-      "comment_updated_at": "2026-07-24T13:31:30Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111277,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T19:08:35.106Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123871:5321960727:2026-08-18T00:36:44Z:re_review",
       "comment_id": "5321960727",
@@ -32935,6 +32908,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-19T00:30:32Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-19T00:30:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-19T00:30:32Z",
+      "comment_body_sha256": "5dfaa9e613b5edb8da5e70e81480e2ce33efa63e8cfe712c1f776e0969471430",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner tuple (P1)** - The wrapper now selects v3.97.0, but with.version still locks v3.95.9 and its old digest. The existing CI guard requires the old wrapper and image as one exact t...; Review finding: [P1] Synchronize the TruffleHog scanner tuple — .github/workflows/ci.yml:1066 - [P1] Refresh the Android attestation contract — .github/workflows/android-release.y... (sha=df813799d068ffc97a3666406de30d8adf01bea9)",
+      "expected_head_sha": "df813799d068ffc97a3666406de30d8adf01bea9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T00:45:02.509Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "e69aa8c8560ebcadac8671b356711c5326db174e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
