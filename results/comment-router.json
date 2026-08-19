@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T04:50:42.001Z",
+  "updated_at": "2026-08-19T04:56:45.478Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111392:5016231987:2026-08-19T01:23:10Z:clawsweeper_auto_repair",
-      "comment_id": "5016231987",
-      "comment_version_key": "5016231987:2026-08-19T01:23:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111392#issuecomment-5016231987",
-      "comment_created_at": "2026-07-19T15:12:26Z",
-      "comment_updated_at": "2026-08-19T01:23:10Z",
-      "comment_body_sha256": "a50e1830ed0555ae5cc8b8eb2ecc24be6803d9dbade0ca5f56786f5c77dfadb7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111392,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5ad513c00bd762c37d6e8a44dadf0d50c2ae4968)",
-      "expected_head_sha": "5ad513c00bd762c37d6e8a44dadf0d50c2ae4968",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T01:28:30.296Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/111376-skip-unchanged-workspace-entries",
-        "head_sha": "5ad513c00bd762c37d6e8a44dadf0d50c2ae4968",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111434:5016277753:2026-08-19T01:24:11Z:clawsweeper_auto_repair",
       "comment_id": "5016277753",
@@ -30613,6 +30580,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2879:5263901531:2026-08-19T04:56:03Z:clawsweeper_needs_human",
+      "comment_id": "5263901531",
+      "comment_version_key": "5263901531:2026-08-19T04:56:03Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2879#issuecomment-5263901531",
+      "comment_created_at": "2026-08-12T07:52:37Z",
+      "comment_updated_at": "2026-08-19T04:56:03Z",
+      "comment_body_sha256": "2eeef765ccf6a3b24aeaec9db577155ece0ba0ecf72b87a03801768fce2786f0",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2879,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Deterministic tests cover the request contract, but the PR has no redacted authenticated after-fix run against the real OpenCode Go API; add te... (sha=d467b54df38127f6154b865e6579c35e0976eb25)",
+      "expected_head_sha": "d467b54df38127f6154b865e6579c35e0976eb25",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T04:56:45.478Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/opencode-go-usage-api",
+        "head_sha": "d467b54df38127f6154b865e6579c35e0976eb25",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
