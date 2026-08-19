@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-62505"
 mode: "autonomous"
-run_id: "32252089512"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32252089512"
+run_id: "32253249987"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32253249987"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T12:39:27.975Z"
+published_at: "2026-08-19T12:54:41.914Z"
 canonical: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32252089512](https://github.com/openclaw/clawsweeper/actions/runs/32252089512)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32253249987](https://github.com/openclaw/clawsweeper/actions/runs/32253249987)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 ## Summary
 
-#62505 remains the canonical bug: scoped background exec completions use an exec-event wake that both disabled-cadence gates reject. A narrow provider-neutral repair is defined, but this read-only checkout lacks dependencies and the mandatory sibling ../codex source checkout, so no branch, regression edit, or validation could be completed.
+Current main still drops a scoped background-exec completion when `heartbeat.every` is `0m`: the producer emits an `exec-event` with `intent: "event"`, but the shared unscheduled-wake policy admits only `immediate` intents. A narrow, generic repair is planned; this worker could not edit or validate because the checkout is read-only, `tsx` is absent, and the mandatory sibling `../codex` inspection cannot be cloned into the read-only parent directory.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #62505 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #62505 | fix_needed | blocked | canonical | Implementation is blocked by the read-only sandbox, missing dependencies, and the repository-required direct ../codex checkout, which is absent and cannot be cloned here. |
-| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | blocked | canonical | Executor should implement and validate the narrow artifact after provisioning dependencies and the required sibling Codex checkout. |
-| #67913 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
-| #76877 | keep_closed | skipped | independent | Already closed and independent of this repair. |
-| #79869 | route_security | planned | security_sensitive | Quarantined per cluster security policy; it does not block the independent #62505 repair. |
-| #109738 | keep_independent | planned | independent | Keep open under its own canonical security/product-boundary review. |
+| #62505 | fix_needed | planned | canonical | The canonical report is reproducible from current source. The repair must preserve exact-session targeting and never broaden disabled-cadence admission to global or agent-only exec wakes. |
+| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | planned | canonical | Build the narrow repair on the configured ClawSweeper branch after provisioning a writable checkout, dependencies, and the required sibling Codex source. |
+| #67913 | keep_closed | skipped | superseded | Closed context only; no closure or mutation is valid. |
+| #76877 | keep_closed | skipped | independent | Closed, independent context only. |
+| #79869 | route_security | planned | security_sensitive | Security-sensitive preflight marker requires central routing; no mutation or technical security assessment is made here. |
+| #109738 | keep_independent | planned | independent | Keep open for its separate auth/worker delivery decision. |
 
 ## Needs Human
 
