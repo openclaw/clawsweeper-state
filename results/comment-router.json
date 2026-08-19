@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T04:59:00.948Z",
+  "updated_at": "2026-08-19T05:03:33.701Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-19T01:12:43Z:clawsweeper_needs_human",
-      "comment_id": "5154193917",
-      "comment_version_key": "5154193917:2026-08-19T01:12:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
-      "comment_created_at": "2026-08-02T00:30:44Z",
-      "comment_updated_at": "2026-08-19T01:12:43Z",
-      "comment_body_sha256": "f6b99716924cd57183ff7bf50d8f72037c31e81c66e8a17448e8feddff18b7e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117712,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner tuple (P1)** - The wrapper changes to v3.97.0 here, but with.version still selects the v3.95.9 image and digest. The focused guard still requires the old complete tuple, so thi...; Review finding: [P1] Synchronize the TruffleHog scanner tuple — .github/workflows/ci.yml:1066-1070 - [P1] Refresh the Android attestation contract — .github/workflows/android-rele... (sha=15d600cd77b934f5295451d4dde959712150710e)",
-      "expected_head_sha": "15d600cd77b934f5295451d4dde959712150710e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T01:28:30.297Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-b3ce8c744c",
-        "head_sha": "468cb9131aadfa41f6be4161d64a130afc51ae46",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119500:5188244849:2026-08-18T06:10:25Z:clawsweeper_auto_repair",
       "comment_id": "5188244849",
@@ -30602,6 +30569,53 @@
         "kind": "pull_request",
         "branch": "steipete/w6-dependency-consolidation",
         "head_sha": "5d5bd2ef5f034a9973940b582ce73addc796a181",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112375:5337737965:2026-08-19T05:00:46Z:re_review",
+      "comment_id": "5337737965",
+      "comment_version_key": "5337737965:2026-08-19T05:00:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5337737965",
+      "comment_created_at": "2026-08-19T05:00:46Z",
+      "comment_updated_at": "2026-08-19T05:00:46Z",
+      "comment_body_sha256": "58082cb367d2b308378543f665d48aa3ff9acf0b3100fbcba1b49ef38d1a9ea6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112375,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T05:03:30.637Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bartok9/cron-precheck-gate",
+        "head_sha": "53572a205ee38b75608f50bd7f472740349e591b",
         "cluster_id": null,
         "job_path": null
       },
