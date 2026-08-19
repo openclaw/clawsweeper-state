@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T04:21:37.389Z",
+  "updated_at": "2026-08-19T04:24:07.432Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125822:5335951635:2026-08-19T00:25:19Z:re_review",
-      "comment_id": "5335951635",
-      "comment_version_key": "5335951635:2026-08-19T00:25:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125822#issuecomment-5335951635",
-      "comment_created_at": "2026-08-19T00:25:19Z",
-      "comment_updated_at": "2026-08-19T00:25:19Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125822,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T01:07:31.408Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126027:5334483725:2026-08-19T01:04:59Z:clawsweeper_needs_human",
       "comment_id": "5334483725",
@@ -30561,6 +30534,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126140:5337291360:2026-08-19T04:23:24Z:clawsweeper_needs_human",
+      "comment_id": "5337291360",
+      "comment_version_key": "5337291360:2026-08-19T04:23:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126140#issuecomment-5337291360",
+      "comment_created_at": "2026-08-19T03:49:46Z",
+      "comment_updated_at": "2026-08-19T04:23:24Z",
+      "comment_body_sha256": "39bf230dce3c94b9989450a9583ad2d7016847ce282b4a275c24de665fc36ccb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126140,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve canonical secret redaction in browser errors (P1)** - The browser shim passes an identity redactor, while redactSensitiveText only handles JSON-like secret fields and key=value pairs. An error such as A...; Review finding: [P1] Preserve canonical secret redaction in browser errors — extensions/qa-lab/web/src/app.ts:28 - [high] Bearer credentials bypass browser error redaction — exten... (sha=60d4ee429c462f168e4a29e9872cec2ee57db95b)",
+      "expected_head_sha": "60d4ee429c462f168e4a29e9872cec2ee57db95b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T04:24:07.432Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-lab-channel-catalog",
+        "head_sha": "60d4ee429c462f168e4a29e9872cec2ee57db95b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
