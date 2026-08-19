@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T08:12:32.036Z",
+  "updated_at": "2026-08-19T08:16:44.363Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124899:5310194513:2026-08-19T03:19:46Z:clawsweeper_auto_repair",
-      "comment_id": "5310194513",
-      "comment_version_key": "5310194513:2026-08-19T03:19:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124899#issuecomment-5310194513",
-      "comment_created_at": "2026-08-16T23:21:21Z",
-      "comment_updated_at": "2026-08-19T03:19:46Z",
-      "comment_body_sha256": "a13405e4c69b5bf3fb00177a2f17fbb4427d4c735e0c82f01ef9d15b2bc6cf64",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124899,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=945791531b7188f43d80a368de03844b058adb1f)",
-      "expected_head_sha": "945791531b7188f43d80a368de03844b058adb1f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T03:20:29.460Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sync-transcript-rewrite-snapshot-guard",
-        "head_sha": "945791531b7188f43d80a368de03844b058adb1f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:3063:5337074828:2026-08-19T03:17:49Z:re_review",
       "comment_id": "5337074828",
@@ -31449,6 +31416,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126255:5339397512:2026-08-19T08:16:00Z:clawsweeper_needs_human",
+      "comment_id": "5339397512",
+      "comment_version_key": "5339397512:2026-08-19T08:16:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126255#issuecomment-5339397512",
+      "comment_created_at": "2026-08-19T08:16:00Z",
+      "comment_updated_at": "2026-08-19T08:16:00Z",
+      "comment_body_sha256": "76ed49894f5960edce9f8adec47c042dc3a443623dae09740abfdcc8f4a40b6a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126255,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body describes a local E2E run but provides no inspectable redacted terminal transcript, log, or recording showing the after-fix b...; Review finding: [P2] Use the provider-safe flat enum for target — extensions/browser/src/browser-harness-tool.schema.ts:10-13 - [medium] Verify the external Harness bootstrap cont... (sha=7a438e0353ecef2be26838702c924bfde3af8355)",
+      "expected_head_sha": "7a438e0353ecef2be26838702c924bfde3af8355",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T08:16:44.363Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/browser-harness-default",
+        "head_sha": "7a438e0353ecef2be26838702c924bfde3af8355",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
