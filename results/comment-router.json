@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T09:14:06.640Z",
+  "updated_at": "2026-08-19T09:14:26.600Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126145:5337218881:2026-08-19T03:38:29Z:clawsweeper_auto_repair",
-      "comment_id": "5337218881",
-      "comment_version_key": "5337218881:2026-08-19T03:38:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126145#issuecomment-5337218881",
-      "comment_created_at": "2026-08-19T03:38:29Z",
-      "comment_updated_at": "2026-08-19T03:38:29Z",
-      "comment_body_sha256": "a2f0ad59a2c79d6f418221a56a670514907c0f2b5c7bf0b3376ba46977d7c57c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126145,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=92a44c4c690a43ed4c72c4581efc0f1749989f19)",
-      "expected_head_sha": "92a44c4c690a43ed4c72c4581efc0f1749989f19",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T03:39:30.323Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-outbound-route-persist-after-send-112710",
-        "head_sha": "92a44c4c690a43ed4c72c4581efc0f1749989f19",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125815:5328823403:2026-08-19T03:35:36Z:clawsweeper_auto_repair",
       "comment_id": "5328823403",
@@ -31591,6 +31558,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126220:5338423851:2026-08-19T09:07:59Z:clawsweeper_needs_human",
+      "comment_id": "5338423851",
+      "comment_version_key": "5338423851:2026-08-19T09:07:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126220#issuecomment-5338423851",
+      "comment_created_at": "2026-08-19T06:32:33Z",
+      "comment_updated_at": "2026-08-19T09:07:59Z",
+      "comment_body_sha256": "6eca8bacb7b5fc583a5e846b67f4888ec381814b87943c51b2808c3c7c3d18c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Pin the Crabbox source to a reviewed immutable revision (P1)** - CRABBOX_REF remains main, so this step fetches and Go-builds whatever Crabbox contains at run time. The recorder later executes that binary in the...; Review finding: [P1] Pin the Crabbox source to a reviewed immutable revision — .github/workflows/mantis-telegram-desktop-proof.yml:32 - [P1] Restore host-owned cleanup before rele... (sha=b935b9e1ad14b82c137235af8e8d9178cc5ec175)",
+      "expected_head_sha": "b935b9e1ad14b82c137235af8e8d9178cc5ec175",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T09:14:26.600Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mantis-recorder-lane",
+        "head_sha": "b935b9e1ad14b82c137235af8e8d9178cc5ec175",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
