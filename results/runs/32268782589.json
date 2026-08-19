@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126229",
+  "mode": "autonomous",
+  "run_id": "32268782589",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32268782589",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126229.md",
+  "published_at": "2026-08-19T15:36:43.008Z",
+  "canonical": "#126229",
+  "canonical_issue": "#126229",
+  "canonical_pr": null,
+  "summary": "#126229 is a reproducible, narrow shared-projection bug: actual text-cap truncation is reduced to a generic sanitization change, so no structured metadata reaches session.message or history consumers. No code was changed because the required sibling ../codex source is absent and this read-only worker cannot clone it or create the mandated repair branch.",
+  "actions": [
+    {
+      "target": "#95318",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Historical partial-overlap context; no closure action is valid."
+    },
+    {
+      "target": "#122043",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Different client owner and repair scope; keep its linked repair path independent."
+    },
+    {
+      "target": "#122207",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Historical UI repair only."
+    },
+    {
+      "target": "#123324",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Historical UI retry repair only."
+    },
+    {
+      "target": "#126229",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Current-main source proves the issue; implementation is blocked only by the mandatory unavailable Codex-source gate and read-only filesystem."
+    },
+    {
+      "target": "#126229",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "A narrow replacement PR is appropriate once the required source gate and writable branch environment are available."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide an accessible sibling ../codex checkout (or rerun in a writable environment that can clone it). Root AGENTS.md requires the acting agent to inspect that source before any code change; this worker cannot satisfy the gate because ../codex is missing and the filesystem is read-only."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
