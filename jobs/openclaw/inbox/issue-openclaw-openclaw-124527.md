@@ -67,23 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current xAI fast-model route that sends retired `grok-4-fast` identifiers and the canonical Doctor migration for persisted xAI model references. Keep the fix provider-owned and generic: do not special-case Telegram, add a new setting, or retain a runtime legacy fallback. Inspect the current xAI catalog and upstream contract before choosing the canonical target; update the stream mapping and generic model-reference migration, with focused tests for fast mode and `agents.defaults.imageModel` upgrade behavior. Preserve current user-selected modern models. Record user-visible release-note context in the PR body, not CHANGELOG.md, and obtain a redacted live xAI Responses JPEG proof before landing.
+Repair the source-proven stale xAI media-model route for this issue. In the xAI plugin Doctor contract, detect explicit image-capable `tools.media.models[]` provider entries using retired xAI `grok-4-fast`-family IDs and migrate them to `grok-4.3`, preserving entry ordering and all non-model fields. Do not alter CLI, non-xAI, non-image, or arbitrary custom entries; do not add a runtime fallback or Telegram-specific branch. Add a regression test that fails before the migration and proves idempotency, retain the existing STT migration coverage, and update the xAI provider documentation if its Doctor-migration statement changes. Run a redacted real xAI image request through the affected inbound path before landing. Do not edit CHANGELOG.md; record release-note context in the PR body.
 
 Likely files:
 
-- extensions/xai/stream.ts
-- extensions/xai/stream.test.ts
-- src/commands/doctor/shared/legacy-config-migrations.runtime.models.refs.ts
-- src/commands/doctor/shared/legacy-config-migrate.test.ts
-- extensions/xai/model-id.ts
-- extensions/xai/model-id.test.ts
+- extensions/xai/doctor-contract-api.ts
+- extensions/xai/doctor-contract-api.test.ts
+- docs/providers/xai.md
 
 Validation:
 
-- pnpm test extensions/xai/stream.test.ts
-- pnpm test src/commands/doctor/shared/legacy-config-migrate.test.ts
-- pnpm test extensions/xai/model-id.test.ts
-- Run a trusted credentialed xAI Responses JPEG smoke with a redacted request/response trace.
+- pnpm test extensions/xai/doctor-contract-api.test.ts
+- pnpm check:changed -- extensions/xai/doctor-contract-api.ts extensions/xai/doctor-contract-api.test.ts docs/providers/xai.md
+- Redacted real xAI image-understanding run showing the migrated model returns a description for an inbound JPEG
 
 ## Operator Prompt
 
