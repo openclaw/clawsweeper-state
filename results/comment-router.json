@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T23:48:22.799Z",
+  "updated_at": "2026-08-19T23:50:19.340Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:531:5343609030:2026-08-19T14:32:29Z:clawsweeper_needs_human",
-      "comment_id": "5343609030",
-      "comment_version_key": "5343609030:2026-08-19T14:32:29Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/531#issuecomment-5343609030",
-      "comment_created_at": "2026-08-19T14:32:29Z",
-      "comment_updated_at": "2026-08-19T14:32:29Z",
-      "comment_body_sha256": "85041904eac7cf2bacd5ba8635dc40c02556bbeec1bfeca965469c70cf681b14",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 531,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No separate repair lane is needed; complete ordinary maintainer review once the active checks settle. (sha=6118f4128681b095187374294e886eb35011d82e)",
-      "expected_head_sha": "6118f4128681b095187374294e886eb35011d82e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T14:33:57.204Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-agent-runtime-response-order",
-        "head_sha": "6118f4128681b095187374294e886eb35011d82e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125844:5329552590:2026-08-19T14:33:16Z:clawsweeper_auto_repair",
       "comment_id": "5329552590",
@@ -31844,6 +31811,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:60:5348727238:2026-08-19T23:49:28Z:clawsweeper_needs_human",
+      "comment_id": "5348727238",
+      "comment_version_key": "5348727238:2026-08-19T23:49:28Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/60#issuecomment-5348727238",
+      "comment_created_at": "2026-08-19T22:24:15Z",
+      "comment_updated_at": "2026-08-19T23:49:28Z",
+      "comment_body_sha256": "a37732451b50089160ebd74414220dd25ee11c486f542e750401dede417257f1",
+      "repo": "openclaw/ocm",
+      "issue_number": 60,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve every named-Service handler during migration (P1)** - This remains the prior blocker: discovery records matching handlers individually, but the rewrite key drops public_host and handler identity and the...; Review finding: [P1] Preserve every named-Service handler during migration — src/tailscale.rs:355-372 - [medium] Service-wide rewrite loses handler scope — src/tailscale.rs:355 (sha=558d6aaa342630c9ba6a2cb67d9ff27770e29b99)",
+      "expected_head_sha": "558d6aaa342630c9ba6a2cb67d9ff27770e29b99",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T23:50:19.340Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-aware-restarts",
+        "head_sha": "558d6aaa342630c9ba6a2cb67d9ff27770e29b99",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
