@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T11:20:34.481Z",
+  "updated_at": "2026-08-19T11:21:15.846Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5312549168:2026-08-17T06:19:24Z:re_review",
-      "comment_id": "5312549168",
-      "comment_version_key": "5312549168:2026-08-17T06:19:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5312549168",
-      "comment_created_at": "2026-08-17T06:19:24Z",
-      "comment_updated_at": "2026-08-17T06:19:24Z",
-      "comment_body_sha256": "95f92d408dcdcb4075208a625f7960ec03aac66a6d67515e427c7768ffc3c623",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T04:32:27.731Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5312911946:2026-08-17T07:05:49Z:re_review",
       "comment_id": "5312911946",
@@ -31833,6 +31806,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126284:5340486241:2026-08-19T11:19:42Z:clawsweeper_needs_human",
+      "comment_id": "5340486241",
+      "comment_version_key": "5340486241:2026-08-19T11:19:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126284#issuecomment-5340486241",
+      "comment_created_at": "2026-08-19T09:55:56Z",
+      "comment_updated_at": "2026-08-19T11:19:42Z",
+      "comment_body_sha256": "0fe01915bc0b144e7179426fba1441b8c924a51f9b7a1861a5a9a92406dbccb9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126284,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The nullable persistent move column and restart recovery alter upgrade behavior; exact-head older-reader, candidate-reopen, and destructive-recovery validation should be available bef... (sha=a75c4253007dacdb2be7251f2b157e30b662c688)",
+      "expected_head_sha": "a75c4253007dacdb2be7251f2b157e30b662c688",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T11:21:15.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/runner-offline-recovery",
+        "head_sha": "a75c4253007dacdb2be7251f2b157e30b662c688",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
