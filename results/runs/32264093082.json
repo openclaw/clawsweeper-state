@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126229",
+  "mode": "autonomous",
+  "run_id": "32264093082",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32264093082",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126229.md",
+  "published_at": "2026-08-19T14:52:05.873Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126229",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126229",
+  "canonical_pr": null,
+  "summary": "#126229 remains a reproducible canonical bug: the shared sanitizer appends the bounded-preview sentinel but drops the boolean returned by truncateChatHistoryText, so session.message and history/SSE payloads lack __openclaw.truncated. No patch was made because this checkout is read-only, has no dependencies, and the mandatory sibling ../codex source is unavailable for direct inspection.",
+  "actions": [
+    {
+      "target": "#126229",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Current main is affected; no viable PR is hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126229",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "The repair is narrow and ready for a writable executor, but this worker cannot safely implement or validate it."
+    },
+    {
+      "target": "#122043",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Related cap behavior, distinct client-owner repair."
+    },
+    {
+      "target": "#95318",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Already closed; historical context only."
+    },
+    {
+      "target": "#122207",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Already merged and not a candidate for this API-contract repair."
+    },
+    {
+      "target": "#123324",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Already merged and not a candidate for this API-contract repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
