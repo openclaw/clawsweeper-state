@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T06:49:53.768Z",
+  "updated_at": "2026-08-19T06:50:46.465Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5318975165:2026-08-17T19:02:48Z:re_review",
-      "comment_id": "5318975165",
-      "comment_version_key": "5318975165:2026-08-17T19:02:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5318975165",
-      "comment_created_at": "2026-08-17T19:02:48Z",
-      "comment_updated_at": "2026-08-17T19:02:48Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T01:52:49.876Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5319081835:2026-08-17T19:11:34Z:re_review",
       "comment_id": "5319081835",
@@ -31995,6 +31968,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126214:5338244591:2026-08-19T06:49:58Z:clawsweeper_needs_human",
+      "comment_id": "5338244591",
+      "comment_version_key": "5338244591:2026-08-19T06:49:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126214#issuecomment-5338244591",
+      "comment_created_at": "2026-08-19T06:10:45Z",
+      "comment_updated_at": "2026-08-19T06:49:58Z",
+      "comment_body_sha256": "a99fc03d0d27827cc3739bb4c66be979379a498e3c7b449867f6392f29854b47",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126214,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with a blocked explicit SearXNG SecretRef will now stop using the ambient URL and must correct the SecretRef policy, as documented. (sha=90032e897d0fd386ea21bf245d140d2a8cda56cf)",
+      "expected_head_sha": "90032e897d0fd386ea21bf245d140d2a8cda56cf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T06:50:46.465Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/w7-correctness-exacts",
+        "head_sha": "90032e897d0fd386ea21bf245d140d2a8cda56cf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
