@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-62505",
+  "mode": "autonomous",
+  "run_id": "32241471395",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32241471395",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-62505.md",
+  "published_at": "2026-08-19T10:23:06.659Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/62505",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/62505",
+  "canonical_pr": null,
+  "summary": "#62505 remains the canonical report. Current main’s exec completion producer emits a targeted `exec-event` with `intent: \"event\"`, but the shared unscheduled-wake policy accepts only `intent: \"immediate\"` and has no exec-event case; both the scheduler and execution-stage cadence gates therefore reject it when `heartbeat.every` is `0m`. No implementation branch was created: this worker is read-only, dependencies cannot be installed, and the mandatory sibling ../codex source is absent and cannot be cloned on the read-only filesystem.",
+  "actions": [
+    {
+      "target": "#62505",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "The narrow repair is source-supported, but this worker cannot write the branch, install its test dependencies, or satisfy the required direct Codex-source gate."
+    },
+    {
+      "target": "#67913",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Already closed; do not mutate."
+    },
+    {
+      "target": "#76877",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed and outside this root cause."
+    },
+    {
+      "target": "#79869",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact ref for central OpenClaw security handling; no GitHub mutation is planned."
+    },
+    {
+      "target": "#109738",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Open but not part of the disabled-heartbeat completion-dispatch defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-62505",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "A writable executor with ../codex available can apply this narrow repair and run the required regression proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
