@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T03:09:54.537Z",
+  "updated_at": "2026-08-19T03:10:30.433Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125362:5318600898:2026-08-18T23:23:40Z:clawsweeper_needs_human",
-      "comment_id": "5318600898",
-      "comment_version_key": "5318600898:2026-08-18T23:23:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125362#issuecomment-5318600898",
-      "comment_created_at": "2026-08-17T18:25:03Z",
-      "comment_updated_at": "2026-08-18T23:23:40Z",
-      "comment_body_sha256": "5730c3277d3e81823d089286d7c102ae9b7654311b916bb1a0e4e20b2b2ff05d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125362,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recovery path relies on the private matrix-js-sdk connectionReturnedResolvers field. The exact-version and identity guards constrain the risk, but a Matrix owner should explicitly... (sha=77f4df4e36dc5aa8d50d9c26c94aa1e2e7b3c3bc)",
-      "expected_head_sha": "77f4df4e36dc5aa8d50d9c26c94aa1e2e7b3c3bc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T23:26:51.814Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-matrix-sync-poison-recovery",
-        "head_sha": "77f4df4e36dc5aa8d50d9c26c94aa1e2e7b3c3bc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125362:5318849237:2026-08-17T18:51:35Z:re_review",
       "comment_id": "5318849237",
@@ -31362,6 +31329,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124953:5337025943:2026-08-19T03:09:39Z:re_review",
+      "comment_id": "5337025943",
+      "comment_version_key": "5337025943:2026-08-19T03:09:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124953#issuecomment-5337025943",
+      "comment_created_at": "2026-08-19T03:09:39Z",
+      "comment_updated_at": "2026-08-19T03:09:39Z",
+      "comment_body_sha256": "9fd98e0314f9f6a495e5d682d672771cbdbc64c60e8a03f5fb1115b98f026f6d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124953,
+      "author": "xialonglee",
+      "author_id": 22994703,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T03:10:27.677Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-104950-recovery-trajectory-interrupted",
+        "head_sha": "d1b6f122c0e76bfca725fb1cce1b8f2d0bf33152",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
