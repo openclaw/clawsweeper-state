@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-19T08:17:28.216Z",
+  "updated_at": "2026-08-19T08:21:36.230Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111277:5337116721:2026-08-19T03:23:37Z:re_review",
-      "comment_id": "5337116721",
-      "comment_version_key": "5337116721:2026-08-19T03:23:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111277#issuecomment-5337116721",
-      "comment_created_at": "2026-08-19T03:23:37Z",
-      "comment_updated_at": "2026-08-19T03:23:37Z",
-      "comment_body_sha256": "88253480f29e89d5eae7d849d3673ec5d3ad375ad609045558a566fb0761531b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111277,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T03:30:08.953Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/problem-github-copilot-login-leaves-failed-response-streams-open",
-        "head_sha": "2881b1caf79edd69b50a030ab2a6a37d5ea6248d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126139:5337157767:2026-08-19T03:29:45Z:re_review",
-      "comment_id": "5337157767",
-      "comment_version_key": "5337157767:2026-08-19T03:29:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126139#issuecomment-5337157767",
-      "comment_created_at": "2026-08-19T03:29:45Z",
-      "comment_updated_at": "2026-08-19T03:29:45Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126139,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T03:30:28.088Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/w6-content-cleanup",
-        "head_sha": "990d2bbc7b4b4bda11e847e5b546325a1127b2c1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111826:5023721247:2026-08-19T03:26:31Z:clawsweeper_auto_repair",
       "comment_id": "5023721247",
@@ -31463,6 +31369,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126216:5338368654:2026-08-19T08:20:54Z:clawsweeper_needs_human",
+      "comment_id": "5338368654",
+      "comment_version_key": "5338368654:2026-08-19T08:20:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126216#issuecomment-5338368654",
+      "comment_created_at": "2026-08-19T06:25:38Z",
+      "comment_updated_at": "2026-08-19T08:20:54Z",
+      "comment_body_sha256": "1aa60caf044436515b213f7f24fa9bd23103908510f8c05cb64c6962c0d83b43",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126216,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify owner status before using the alternative route (P1)** - The preceding rule says ordinary repository admin is insufficient, but this instruction only checks repository permission and bypass state. The PR...; Review finding: [P1] Verify owner status before using the alternative route — .agents/skills/openclaw-pr-maintainer/SKILL.md:331 - [high] Owner identity is not verified by the pre... (sha=a26a6ffee0113fe18e09c08a3752480b11be9af1)",
+      "expected_head_sha": "a26a6ffee0113fe18e09c08a3752480b11be9af1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T08:21:36.230Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/approval-gate-semantics",
+        "head_sha": "a26a6ffee0113fe18e09c08a3752480b11be9af1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126216:5338771248:2026-08-19T07:13:41Z:re_review",
+      "comment_id": "5338771248",
+      "comment_version_key": "5338771248:2026-08-19T07:13:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126216#issuecomment-5338771248",
+      "comment_created_at": "2026-08-19T07:13:41Z",
+      "comment_updated_at": "2026-08-19T07:13:41Z",
+      "comment_body_sha256": "4501266b6204edad4079c752c2e65c8d183ea4882106fc5541ff5cdc16fff35c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126216,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T08:21:36.230Z",
+      "target": null
     }
   ]
 }
