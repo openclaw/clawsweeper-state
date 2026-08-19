@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-19T04:54:17.702Z",
+  "updated_at": "2026-08-19T04:50:42.001Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111392:5016231987:2026-08-19T01:23:10Z:clawsweeper_auto_repair",
+      "comment_id": "5016231987",
+      "comment_version_key": "5016231987:2026-08-19T01:23:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111392#issuecomment-5016231987",
+      "comment_created_at": "2026-07-19T15:12:26Z",
+      "comment_updated_at": "2026-08-19T01:23:10Z",
+      "comment_body_sha256": "a50e1830ed0555ae5cc8b8eb2ecc24be6803d9dbade0ca5f56786f5c77dfadb7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111392,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5ad513c00bd762c37d6e8a44dadf0d50c2ae4968)",
+      "expected_head_sha": "5ad513c00bd762c37d6e8a44dadf0d50c2ae4968",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T01:28:30.296Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/111376-skip-unchanged-workspace-entries",
+        "head_sha": "5ad513c00bd762c37d6e8a44dadf0d50c2ae4968",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111434:5016277753:2026-08-19T01:24:11Z:clawsweeper_auto_repair",
       "comment_id": "5016277753",
@@ -30580,39 +30613,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3061:5336528191:2026-08-19T04:53:32Z:clawsweeper_needs_human",
-      "comment_id": "5336528191",
-      "comment_version_key": "5336528191:2026-08-19T04:53:32Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3061#issuecomment-5336528191",
-      "comment_created_at": "2026-08-19T01:50:28Z",
-      "comment_updated_at": "2026-08-19T04:53:32Z",
-      "comment_body_sha256": "314725640d5364f299eaea2059862e1abcacf2a7dd6a36e13d26344914cf6126",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3061,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports focused tests, the full suite, and checks, but lacks a redacted after-fix dashboard or CLI/HTTP capture from a real setup; add t... (sha=01748afa0c3841b9b968906ed6df6f407e719fea)",
-      "expected_head_sha": "01748afa0c3841b9b968906ed6df6f407e719fea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T04:54:17.702Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "urda/webui-2875",
-        "head_sha": "01748afa0c3841b9b968906ed6df6f407e719fea",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
