@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T01:39:23.885Z",
+  "updated_at": "2026-08-19T01:39:44.961Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122574:5320700162:2026-08-17T21:54:15Z:re_review",
-      "comment_id": "5320700162",
-      "comment_version_key": "5320700162:2026-08-17T21:54:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122574#issuecomment-5320700162",
-      "comment_created_at": "2026-08-17T21:53:25Z",
-      "comment_updated_at": "2026-08-17T21:54:15Z",
-      "comment_body_sha256": "48b52d9b4fcd8be923cf0e8b57c63378a60a8e1a6c61815bfaefaac6227a6158",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122574,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T20:56:43.485Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123871:5333965207:2026-08-18T20:56:53Z:re_review",
       "comment_id": "5333965207",
@@ -32437,6 +32410,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126109:5336374029:2026-08-19T01:38:59Z:clawsweeper_needs_human",
+      "comment_id": "5336374029",
+      "comment_version_key": "5336374029:2026-08-19T01:38:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126109#issuecomment-5336374029",
+      "comment_created_at": "2026-08-19T01:28:49Z",
+      "comment_updated_at": "2026-08-19T01:38:59Z",
+      "comment_body_sha256": "307cf6889f38114f6495444c34b25792d79227f4941669152bb50ad05a7f83f4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126109,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm default external disclosure** - Changing omitted configuration to enabled causes ordinary linked public hosts to receive Gateway favicon requests; SSRF validation does not deter...; Review finding: [medium] Confirm default external disclosure — src/gateway/control-ui.ts:1149 (sha=baffb9f3914f96469626b6301953e09216ed0659)",
+      "expected_head_sha": "baffb9f3914f96469626b6301953e09216ed0659",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T01:39:44.961Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/control-ui-favicons-default-on",
+        "head_sha": "baffb9f3914f96469626b6301953e09216ed0659",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
