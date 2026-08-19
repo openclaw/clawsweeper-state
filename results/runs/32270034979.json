@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126231",
+  "mode": "autonomous",
+  "run_id": "32270034979",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32270034979",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126231.md",
+  "published_at": "2026-08-19T15:51:52.898Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126231",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126231",
+  "canonical_pr": null,
+  "summary": "#126231 remains a focused ingress-retry repair. Current source sends a pre-adoption watchdog timeout directly to dead-lettering instead of the shared retry disposition. No branch was changed: this read-only worker lacks the required ../codex checkout and cannot install/run pnpm dependencies.",
+  "actions": [
+    {
+      "target": "#126231",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126231",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the mandatory direct Codex-source gate and immutable dependency/cache filesystem; the issue remains the canonical repair target."
+    },
+    {
+      "target": "#126172",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Linked context only; it has independent session-transcript scope."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126231",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126231",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is appropriate once a writable checkout, dependencies, and the mandatory sibling Codex source are available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with pnpm dependencies and the required direct ../codex source checkout (or explicitly waive that repository-local Codex gate); then execute the prepared narrow repair artifact."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#126231",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

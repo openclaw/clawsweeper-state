@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126231"
 mode: "autonomous"
-run_id: "32231046503"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32231046503"
+run_id: "32270034979"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32270034979"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-19T08:19:26.561Z"
-canonical: "#126231"
-canonical_issue: "#126231"
+published_at: "2026-08-19T15:51:52.898Z"
+canonical: "https://github.com/openclaw/openclaw/issues/126231"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/126231"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-126231
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32231046503](https://github.com/openclaw/clawsweeper/actions/runs/32231046503)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32270034979](https://github.com/openclaw/clawsweeper/actions/runs/32270034979)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: #126231
+Canonical: https://github.com/openclaw/openclaw/issues/126231
 
 ## Summary
 
-Confirmed #126231 on main: the pre-adoption watchdog bypasses the canonical retry disposition and directly dead-letters the claim. No branch, edit, test run, or PR was possible because this worker environment is read-only; the root-required sibling ../codex checkout is also unavailable.
+#126231 remains a focused ingress-retry repair. Current source sends a pre-adoption watchdog timeout directly to dead-lettering instead of the shared retry disposition. No branch was changed: this read-only worker lacks the required ../codex checkout and cannot install/run pnpm dependencies.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Confirmed #126231 on main: the pre-adoption watchdog bypasses the canonical retr
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #126231 |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Confirmed #126231 on main: the pre-adoption watchdog bypasses the canonical retr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126172 | keep_independent | planned | independent | Unrelated root cause; retain separately. |
-| #126231 | fix_needed | blocked | canonical | Repair is well scoped but cannot be applied or validated in this read-only checkout. |
-| #126231 | build_fix_artifact | blocked | canonical | A narrow replacement path is specified below; no writable execution path exists. |
+| #126231 | fix_needed | blocked | canonical | Implementation is blocked only by the mandatory direct Codex-source gate and immutable dependency/cache filesystem; the issue remains the canonical repair target. |
+| #126172 | keep_independent | planned | independent | Linked context only; it has independent session-transcript scope. |
+| cluster:issue-openclaw-openclaw-126231 | build_fix_artifact | blocked | canonical | A narrow new fix PR is appropriate once a writable checkout, dependencies, and the mandatory sibling Codex source are available. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout with pnpm dependencies and the required direct ../codex source checkout (or explicitly waive that repository-local Codex gate); then execute the prepared narrow repair artifact.
