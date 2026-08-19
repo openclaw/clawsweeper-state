@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126468",
+  "mode": "autonomous",
+  "run_id": "32313107258",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32313107258",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126468.md",
+  "published_at": "2026-08-19T23:34:03.170Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126468",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126468",
+  "canonical_pr": null,
+  "summary": "Current main 16b09ad307d66b4767f83fd1ae0bb6d234804f69 still records a benign `self-chat echo` as an echo-loop hit, so five reflected rows suppress the next dispatch. A narrow two-file credited repair is ready; implementation is blocked only because this read-only checkout lacks `tsx`, so its required focused validation cannot run here.",
+  "actions": [
+    {
+      "target": "#124386",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "Closed context only; no close, comment, merge, or branch mutation is appropriate."
+    },
+    {
+      "target": "#126468",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "This is a source-proven default-path message-loss bug with a narrow plugin-owned repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126468",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "A new same-repo repair PR is the viable canonical path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126468",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "Executor must install dependencies, capture the pre-fix failing regression, apply the artifact, rerun validation, then open or update clawsweeper/issue-openclaw-openclaw-126468."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
