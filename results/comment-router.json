@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T00:46:02.414Z",
+  "updated_at": "2026-08-19T00:46:04.801Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123871:5304562540:2026-08-15T22:37:33Z:re_review",
-      "comment_id": "5304562540",
-      "comment_version_key": "5304562540:2026-08-15T22:37:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123871#issuecomment-5304562540",
-      "comment_created_at": "2026-08-15T22:37:33Z",
-      "comment_updated_at": "2026-08-15T22:37:33Z",
-      "comment_body_sha256": "64609d8a0e401cba968f6cf94c02cc39c029b2c4103fcc2b5a611594aa81e469",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123871,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T19:08:57.272Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123871:5304937323:2026-08-16T00:28:08Z:re_review",
       "comment_id": "5304937323",
@@ -32979,6 +32952,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126065:5335361716:2026-08-19T00:45:03Z:clawsweeper_needs_human",
+      "comment_id": "5335361716",
+      "comment_version_key": "5335361716:2026-08-19T00:45:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126065#issuecomment-5335361716",
+      "comment_created_at": "2026-08-18T23:13:56Z",
+      "comment_updated_at": "2026-08-19T00:45:03Z",
+      "comment_body_sha256": "baf86c2a5c9b6412f1bb098f622d417feb9d08ebc905928de39eaf08d0b9589a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126065,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Retry behavior sits on message-delivery and durable-ingress paths, so merging should wait for the still-running exact-head checks and maintainer confirmation that the preserved retry... (sha=bce3a66dd7a60ab5372fff17ff0e5bf3f97079b4)",
+      "expected_head_sha": "bce3a66dd7a60ab5372fff17ff0e5bf3f97079b4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T00:46:04.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/w7-retry-adoption",
+        "head_sha": "bce3a66dd7a60ab5372fff17ff0e5bf3f97079b4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
