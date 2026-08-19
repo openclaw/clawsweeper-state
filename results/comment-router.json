@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T23:28:01.874Z",
+  "updated_at": "2026-08-19T23:30:36.001Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126306:5341487343:2026-08-19T13:49:26Z:clawsweeper_auto_repair",
-      "comment_id": "5341487343",
-      "comment_version_key": "5341487343:2026-08-19T13:49:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126306#issuecomment-5341487343",
-      "comment_created_at": "2026-08-19T11:27:47Z",
-      "comment_updated_at": "2026-08-19T13:49:26Z",
-      "comment_body_sha256": "7bea535adb9edce858e4288fd82c3488e397aaab55d896fa34e190b25d4c7cca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126306,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3d18d3bb45c4565479cc845468cf346263b2999d)",
-      "expected_head_sha": "3d18d3bb45c4565479cc845468cf346263b2999d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T13:55:31.324Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/github-user-publication",
-        "head_sha": "3d18d3bb45c4565479cc845468cf346263b2999d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:117721",
       "comment_id": "repair-loop-label-sweep:autofix:117721",
@@ -31777,6 +31744,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126250:5349241525:2026-08-19T23:29:23Z:re_review",
+      "comment_id": "5349241525",
+      "comment_version_key": "5349241525:2026-08-19T23:29:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126250#issuecomment-5349241525",
+      "comment_created_at": "2026-08-19T23:29:23Z",
+      "comment_updated_at": "2026-08-19T23:29:23Z",
+      "comment_body_sha256": "5413eed7121ba875df5fe814c23fa55b89e0f1bb25687524c241e1a37b8c2857",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126250,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T23:30:33.739Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-discord-canonical-polls",
+        "head_sha": "dbbf8a19a0b4bcf65a91b5e4ed59c8e53d99b3a6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
