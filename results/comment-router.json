@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T09:53:17.190Z",
+  "updated_at": "2026-08-19T09:53:39.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126080:5337308833:2026-08-19T03:52:49Z:re_review",
-      "comment_id": "5337308833",
-      "comment_version_key": "5337308833:2026-08-19T03:52:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126080#issuecomment-5337308833",
-      "comment_created_at": "2026-08-19T03:52:49Z",
-      "comment_updated_at": "2026-08-19T03:52:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126080,
-      "author": "bdjben",
-      "author_id": 188106718,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T03:53:35.059Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-isolated-computer-use-bundle-refresh",
-        "head_sha": "fb0bf42c94e66fab35e71fa2357ca4694a872bb2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/Peekaboo:527:5337312818:2026-08-19T03:53:31Z:re_review",
       "comment_id": "5337312818",
@@ -31637,6 +31590,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126194:5338120960:2026-08-19T09:52:49Z:clawsweeper_auto_repair",
+      "comment_id": "5338120960",
+      "comment_version_key": "5338120960:2026-08-19T09:52:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126194#issuecomment-5338120960",
+      "comment_created_at": "2026-08-19T05:56:47Z",
+      "comment_updated_at": "2026-08-19T09:52:49Z",
+      "comment_body_sha256": "7057b3bcad5701725ca33c1d0eaa75103e40d74cd6746875ff1a5ea896451b3c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126194,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a7fcb8107d4b57a664bf4c139cd3e6dead2cb2b6)",
+      "expected_head_sha": "a7fcb8107d4b57a664bf4c139cd3e6dead2cb2b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T09:53:39.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/vigorous-ardinghelli-394274",
+        "head_sha": "a7fcb8107d4b57a664bf4c139cd3e6dead2cb2b6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
