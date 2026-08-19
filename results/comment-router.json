@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T00:04:14.308Z",
+  "updated_at": "2026-08-19T00:04:41.485Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:69417:4340779491:2026-08-18T18:38:08Z:clawsweeper_needs_human",
-      "comment_id": "4340779491",
-      "comment_version_key": "4340779491:2026-08-18T18:38:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/69417#issuecomment-4340779491",
-      "comment_created_at": "2026-04-29T04:24:13Z",
-      "comment_updated_at": "2026-08-18T18:38:08Z",
-      "comment_body_sha256": "6910fd75154df6c65b91439f487579290516987d4e778cd4b27c07337bbc5e9c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 69417,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal transcript covers schema and audit behavior on an older runtime, not current-head credential delivery to a stdio...; Review finding: [P1] Fence unavailable MCP SecretRef owners — src/secrets/runtime-config-collectors-core.ts:157-162 - [P1] Skip Authorization refs superseded by OAuth — src/secret... (sha=bf37a7f0f1bca93978289790cbf374bb18298510)",
-      "expected_head_sha": "bf37a7f0f1bca93978289790cbf374bb18298510",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T18:39:49.508Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/mcp-secretref-core-mcp-upstream-clean",
-        "head_sha": "bf37a7f0f1bca93978289790cbf374bb18298510",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/gogcli:1003:5332503073:2026-08-18T18:40:15Z:re_review",
       "comment_id": "5332503073",
@@ -32541,6 +32508,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125568:5323402024:2026-08-18T23:58:13Z:clawsweeper_needs_human",
+      "comment_id": "5323402024",
+      "comment_version_key": "5323402024:2026-08-18T23:58:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125568#issuecomment-5323402024",
+      "comment_created_at": "2026-08-18T03:56:31Z",
+      "comment_updated_at": "2026-08-18T23:58:13Z",
+      "comment_body_sha256": "74ba3bab4daf1309f62fd202d3412d951fccefadaff93abab9a7b90903195828",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125568,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head required checks are still in progress and the supplied rollup includes failed aggregate lanes, so merge should wait for a current-head green result. (sha=6168d21f8e3fdb2c72fcd31f4ccd388a0cc46fd2)",
+      "expected_head_sha": "6168d21f8e3fdb2c72fcd31f4ccd388a0cc46fd2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T00:04:41.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-header-tab-shift",
+        "head_sha": "6168d21f8e3fdb2c72fcd31f4ccd388a0cc46fd2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
