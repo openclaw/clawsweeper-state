@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126400"
 mode: "autonomous"
-run_id: "32288772316"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32288772316"
+run_id: "32293687367"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32293687367"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-19T18:53:08.809Z"
-canonical: "https://github.com/openclaw/openclaw/issues/126400"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/126400"
+published_at: "2026-08-19T20:05:17.635Z"
+canonical: "#126400"
+canonical_issue: "#126400"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32288772316](https://github.com/openclaw/clawsweeper/actions/runs/32288772316)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32293687367](https://github.com/openclaw/clawsweeper/actions/runs/32293687367)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/126400
+Canonical: #126400
 
 ## Summary
 
-Current main source confirms the Claude live-turn warning omits run correlation and reduces meaningful errors to their class. A narrow two-file fix is ready as an artifact, but this worker cannot modify the read-only checkout, install dependencies, or satisfy the required sibling ../codex source gate because that checkout is absent.
+#126400 remains the canonical open issue. Current main deterministically logs only an error class/type at src/agents/cli-runner/claude-live-turn.ts:138, despite the current turn owning diagnosticRefs.runId. A narrow two-file repair is appropriate, but this read-only checkout cannot create the branch or regression edit; dependencies are absent and pnpm cannot create its Corepack cache. The required sibling ../codex source is also unavailable, so the repository Codex hard gate cannot be completed here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Current main source confirms the Claude live-turn warning omits run correlation 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126400 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only worker environment and absent required sibling Codex source checkout; no maintainer product decision is needed. |
-| cluster:issue-openclaw-openclaw-126400 | build_fix_artifact | planned | canonical | Create the requested narrow ClawSweeper fix PR once a writable checkout with dependencies and ../codex is available. |
+| #126400 | build_fix_artifact | planned | canonical | Produce the narrow fix on the designated branch after restoring a writable checkout, dependencies, and the required Codex source gate. |
 
 ## Needs Human
 

@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126400",
+  "mode": "autonomous",
+  "run_id": "32293687367",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32293687367",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126400.md",
+  "published_at": "2026-08-19T20:05:17.635Z",
+  "canonical": "#126400",
+  "canonical_issue": "#126400",
+  "canonical_pr": null,
+  "summary": "#126400 remains the canonical open issue. Current main deterministically logs only an error class/type at src/agents/cli-runner/claude-live-turn.ts:138, despite the current turn owning diagnosticRefs.runId. A narrow two-file repair is appropriate, but this read-only checkout cannot create the branch or regression edit; dependencies are absent and pnpm cannot create its Corepack cache. The required sibling ../codex source is also unavailable, so the repository Codex hard gate cannot be completed here.",
+  "actions": [
+    {
+      "target": "#126400",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126400",
+      "candidate_fix": null,
+      "reason": "Produce the narrow fix on the designated branch after restoring a writable checkout, dependencies, and the required Codex source gate."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
