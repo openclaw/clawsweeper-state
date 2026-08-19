@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T01:48:45.548Z",
+  "updated_at": "2026-08-19T01:51:01.449Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:98458:5071538939:2026-07-24T15:28:54Z:re_review",
-      "comment_id": "5071538939",
-      "comment_version_key": "5071538939:2026-07-24T15:28:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/98458#issuecomment-5071538939",
-      "comment_created_at": "2026-07-24T15:28:54Z",
-      "comment_updated_at": "2026-07-24T15:28:54Z",
-      "comment_body_sha256": "5f6c60d42addc3cb850e332297e2c25ea757a375e281d313a3ea12309b0ed074",
-      "repo": "openclaw/openclaw",
-      "issue_number": 98458,
-      "author": "areslp",
-      "author_id": 100579,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T21:29:27.792Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:98458:5071593700:2026-07-24T15:35:01Z:re_review",
       "comment_id": "5071593700",
@@ -32004,6 +31977,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1401:5335514096:2026-08-19T01:46:12Z:clawsweeper_needs_human",
+      "comment_id": "5335514096",
+      "comment_version_key": "5335514096:2026-08-19T01:46:12Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1401#issuecomment-5335514096",
+      "comment_created_at": "2026-08-18T23:31:08Z",
+      "comment_updated_at": "2026-08-19T01:46:12Z",
+      "comment_body_sha256": "e836c88e5b983c45f94f33efeb0e9a821c4d2304e32ce7a9475559727c8a6d5a",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1401,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve or reject custom host transports (P1)** - The fallback at this line creates an unrelated standard transport whenever the host installs a wrapper. That lets provider requests bypass host egress, TLS, aut...; Review finding: [P1] Preserve or reject custom host transports — internal/cli/http_redirect.go:19 - [medium] Custom host transport policy is discarded — internal/cli/http_redirect... (sha=ebcbba91965bbc7fa320a2a376a055859a56f28f)",
+      "expected_head_sha": "ebcbba91965bbc7fa320a2a376a055859a56f28f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T01:51:01.449Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clone-default-transport",
+        "head_sha": "ebcbba91965bbc7fa320a2a376a055859a56f28f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
