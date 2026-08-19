@@ -2,32 +2,32 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92425"
 mode: "autonomous"
-run_id: "32284138670"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32284138670"
+run_id: "32284999115"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32284999115"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T18:08:21.857Z"
+published_at: "2026-08-19T18:17:42.768Z"
 canonical: "https://github.com/openclaw/openclaw/issues/92425"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/92425"
 canonical_pr: null
-actions_total: 3
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-92425
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32284138670](https://github.com/openclaw/clawsweeper/actions/runs/32284138670)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32284999115](https://github.com/openclaw/clawsweeper/actions/runs/32284999115)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,26 +35,26 @@ Canonical: https://github.com/openclaw/openclaw/issues/92425
 
 ## Summary
 
-Implementation is blocked before a code-change verdict: AGENTS.md requires direct inspection of sibling Codex source, but ../codex is absent and cannot be cloned in this read-only, network-restricted worker. The checkout also lacks node_modules, so the requested executable 161-character schema reproduction cannot run.
+Main still has the schema-versus-service diagnostic bug, but this read-only checkout has no dependencies and cannot create or validate the required PR branch. A narrow fix artifact is ready for a writable executor.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #92425 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,11 @@ Implementation is blocked before a code-change verdict: AGENTS.md requires direc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #92425 | needs_human | blocked | needs_human | Provide the required sibling Codex checkout and a writable dependency-installed checkout, then rerun the real schema/tool-path reproduction and focused tests before producing an implementation artifact. |
-| #92427 | keep_closed | skipped | related | Historical context only; no mutation is valid for a closed PR. |
-| #92898 | keep_closed | skipped | related | Historical context only; no mutation is valid for a closed PR. |
+| #92425 | fix_needed | planned | canonical | #92425 is the live canonical bug report; no viable open PR exists. |
+| #92427 | keep_closed | skipped | superseded | Already closed; no mutation permitted or needed. |
+| #92898 | keep_closed | skipped | superseded | Already closed; no mutation permitted or needed. |
+| cluster:issue-openclaw-openclaw-92425 | build_fix_artifact | blocked | canonical | Implementation requires a writable checkout with dependencies and direct Codex-source inspection. |
 
 ## Needs Human
 
-- Provision ../codex for the mandated direct source inspection and restore dependencies in a writable normal checkout so the real 161-character schema/tool-path reproduction and focused tests can run.
+- none
