@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-62505",
+  "mode": "autonomous",
+  "run_id": "32271671500",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32271671500",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-62505.md",
+  "published_at": "2026-08-19T16:10:50.357Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/62505",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/62505",
+  "canonical_pr": null,
+  "summary": "Confirmed on main ae55a409: scoped background-exec completion wakes use intent:event, while the shared unscheduled policy admits only intent:immediate; with heartbeat.every=0m both scheduler and execution gates return disabled before a completion turn. A narrow fix artifact is ready, but this read-only checkout cannot create the branch, install dependencies, run tests, or inspect required sibling ../codex source.",
+  "actions": [
+    {
+      "target": "#62505",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Real provider-independent regression; no open viable PR exists."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-62505",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Narrow replacement plan preserves configured-agent, exact-session, global-enable, busy, and completion-preflight guards."
+    },
+    {
+      "target": "#67913",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Already closed; do not mutate."
+    },
+    {
+      "target": "#76877",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed and independent."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
