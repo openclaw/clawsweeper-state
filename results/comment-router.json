@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T06:37:15.532Z",
+  "updated_at": "2026-08-19T06:38:38.308Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5312168248:2026-08-17T05:20:07Z:re_review",
-      "comment_id": "5312168248",
-      "comment_version_key": "5312168248:2026-08-17T05:20:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5312168248",
-      "comment_created_at": "2026-08-17T05:20:07Z",
-      "comment_updated_at": "2026-08-17T05:20:07Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T01:52:49.876Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5312234298:2026-08-17T05:31:12Z:re_review",
       "comment_id": "5312234298",
@@ -31665,6 +31638,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125967:5333111794:2026-08-19T06:37:44Z:clawsweeper_needs_human",
+      "comment_id": "5333111794",
+      "comment_version_key": "5333111794:2026-08-19T06:37:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125967#issuecomment-5333111794",
+      "comment_created_at": "2026-08-18T19:36:58Z",
+      "comment_updated_at": "2026-08-19T06:37:44Z",
+      "comment_body_sha256": "f463ff22debde9a1cc8e991f508a679201a13c7510b22ed252d39984748721fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125967,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head Android and iOS build/test jobs are still queued or running, so platform compilation has not yet completed for this generated head. (sha=82891221abda50b31d6896ea5ba48af5d0f2cacf)",
+      "expected_head_sha": "82891221abda50b31d6896ea5ba48af5d0f2cacf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T06:38:38.308Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "82891221abda50b31d6896ea5ba48af5d0f2cacf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
