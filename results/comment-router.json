@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T03:56:49.629Z",
+  "updated_at": "2026-08-19T03:56:54.339Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:185:5335667080:2026-08-19T00:27:39Z:clawsweeper_auto_repair",
-      "comment_id": "5335667080",
-      "comment_version_key": "5335667080:2026-08-19T00:27:39Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/185#issuecomment-5335667080",
-      "comment_created_at": "2026-08-18T23:46:05Z",
-      "comment_updated_at": "2026-08-19T00:27:39Z",
-      "comment_body_sha256": "6cc457313d7a20804f4173e53723ab2469bf8273e6e7fc1492814555135624b4",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 185,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e648d08f040e0f3253d31605f7caca9f85616394)",
-      "expected_head_sha": "e648d08f040e0f3253d31605f7caca9f85616394",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T00:31:29.491Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoreview-review-findings",
-        "head_sha": "e648d08f040e0f3253d31605f7caca9f85616394",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126071:5335505469:2026-08-19T00:29:23Z:clawsweeper_needs_human",
       "comment_id": "5335505469",
@@ -30939,6 +30906,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T03:56:49.629Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126114:5336533540:2026-08-19T03:53:35Z:clawsweeper_needs_human",
+      "comment_id": "5336533540",
+      "comment_version_key": "5336533540:2026-08-19T03:53:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126114#issuecomment-5336533540",
+      "comment_created_at": "2026-08-19T01:51:19Z",
+      "comment_updated_at": "2026-08-19T03:53:35Z",
+      "comment_body_sha256": "1cf1b40edb84ada97480a1787640b39d1db673aed7e8b7c3c913021667d77238",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126114,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize GitHub identity before binding system-agent sessions (P1)** - connect-session starts profile sync only after hello in detached work. During that window this fallback stores a device or connection own...; Review finding: [P1] Synchronize GitHub identity before binding system-agent sessions — src/gateway/server-methods/system-agent-session-owner.ts:17-27 - [high] Temporary device ow... (sha=c0740e67e2a9aefee575ce793bbddaa71282fda5)",
+      "expected_head_sha": "c0740e67e2a9aefee575ce793bbddaa71282fda5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T03:56:54.339Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/automatic-github-identity-d9190e",
+        "head_sha": "c0740e67e2a9aefee575ce793bbddaa71282fda5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
