@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126469",
+  "mode": "autonomous",
+  "run_id": "32313709250",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32313709250",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126469.md",
+  "published_at": "2026-08-19T23:45:30.151Z",
+  "canonical": "#126469",
+  "canonical_issue": "#126469",
+  "canonical_pr": null,
+  "summary": "Narrow repair identified but not applied: this read-only checkout lacks dependencies and the required sibling ../codex source, so the mandated direct Codex inspection, edit, reproduction, and validation gates cannot complete.",
+  "actions": [
+    {
+      "target": "#126469",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126469",
+      "candidate_fix": null,
+      "reason": "The repair requires a writable, dependency-complete checkout and the repository-mandated direct ../codex inspection before code change or validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies and sibling ../codex so ClawSweeper can apply and validate the prepared narrow fix."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

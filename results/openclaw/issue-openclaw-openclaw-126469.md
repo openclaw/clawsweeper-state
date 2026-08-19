@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126469"
 mode: "autonomous"
-run_id: "32313049000"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32313049000"
+run_id: "32313709250"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32313709250"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-19T23:40:10.110Z"
-canonical: "https://github.com/openclaw/openclaw/issues/126469"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/126469"
+published_at: "2026-08-19T23:45:30.151Z"
+canonical: "#126469"
+canonical_issue: "#126469"
 canonical_pr: null
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-126469
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32313049000](https://github.com/openclaw/clawsweeper/actions/runs/32313049000)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32313709250](https://github.com/openclaw/clawsweeper/actions/runs/32313709250)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/126469
+Canonical: #126469
 
 ## Summary
 
-Current main still has the keyed-suffix replay defect. A narrow two-file fix is specified, but this checkout is read-only and lacks dependencies, so no branch, regression test, validation, or PR could be produced locally.
+Narrow repair identified but not applied: this read-only checkout lacks dependencies and the required sibling ../codex source, so the mandated direct Codex inspection, edit, reproduction, and validation gates cannot complete.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,8 @@ Current main still has the keyed-suffix replay defect. A narrow two-file fix is 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126469 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only, dependency-less checkout; no maintainer product decision is needed. |
-| #124377 | keep_closed | skipped | superseded | Already closed; no closeout action is valid. |
-| cluster:issue-openclaw-openclaw-126469 | build_fix_artifact | planned |  | Artifact is ready for a write-enabled executor. |
-| cluster:issue-openclaw-openclaw-126469 | open_fix_pr | blocked |  | Requires a write-enabled checkout with dependencies installed, followed by the artifact validation plan. |
+| #126469 | fix_needed | blocked | canonical | The repair requires a writable, dependency-complete checkout and the repository-mandated direct ../codex inspection before code change or validation. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout with dependencies and sibling ../codex so ClawSweeper can apply and validate the prepared narrow fix.
