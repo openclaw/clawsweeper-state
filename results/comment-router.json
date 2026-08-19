@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T10:26:43.748Z",
+  "updated_at": "2026-08-19T10:27:22.451Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126007:5334228193:2026-08-19T04:07:05Z:clawsweeper_needs_human",
-      "comment_id": "5334228193",
-      "comment_version_key": "5334228193:2026-08-19T04:07:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126007#issuecomment-5334228193",
-      "comment_created_at": "2026-08-18T21:22:28Z",
-      "comment_updated_at": "2026-08-19T04:07:05Z",
-      "comment_body_sha256": "83995cea88661e6d54faaedeb2abcd64ce08d6c0ac833c33c85ab8bdf9e023a9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126007,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging exposes more fields from an operator-read audit projection in the Control UI; the audit/UI owner should explicitly confirm that the selected allowlist remains the intended ope... (sha=1169c386489444d6a83670d70fdb7a332b581fe3)",
-      "expected_head_sha": "1169c386489444d6a83670d70fdb7a332b581fe3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T04:09:39.860Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-control-ui-decision-receipts",
-        "head_sha": "1169c386489444d6a83670d70fdb7a332b581fe3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126027:5334483725:2026-08-19T04:05:25Z:clawsweeper_needs_human",
       "comment_id": "5334483725",
@@ -31589,6 +31556,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125755:5340816814:2026-08-19T10:26:38Z:re_review",
+      "comment_id": "5340816814",
+      "comment_version_key": "5340816814:2026-08-19T10:26:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125755#issuecomment-5340816814",
+      "comment_created_at": "2026-08-19T10:26:38Z",
+      "comment_updated_at": "2026-08-19T10:26:38Z",
+      "comment_body_sha256": "ca1b06aa289675ec377c4dd587945fe0700a0fe681be97db31af0cdc47642dad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125755,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T10:27:20.926Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/beam-session-state-8fce32",
+        "head_sha": "49434b0a22ad5ad6d5a84968fa241e8fe589341f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
