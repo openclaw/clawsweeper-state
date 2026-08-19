@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124527"
 mode: "autonomous"
-run_id: "32217901071"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32217901071"
+run_id: "32218386143"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32218386143"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T05:12:25.171Z"
+published_at: "2026-08-19T05:19:54.266Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124527"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124527"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32217901071](https://github.com/openclaw/clawsweeper/actions/runs/32217901071)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32218386143](https://github.com/openclaw/clawsweeper/actions/runs/32218386143)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/124527
 
 ## Summary
 
-Confirmed on current main dcdfd737: explicit xAI image media entries forward their configured retired model unchanged, while the xAI Doctor contract repairs server-tool/STT/catalog state but not this route. The narrow plugin-local Doctor migration is warranted. This read-only checkout cannot create the required branch, patch, or install dependencies; no redacted credentialed xAI inbound-JPEG proof could run because XAI_API_KEY is absent.
+#124527 remains the canonical open bug. Current main lacks the requested xAI image-media Doctor migration, but this worker cannot implement or validate it in the read-only checkout: the mandatory ../codex source is absent, dependencies are unavailable, and no live xAI credential is present. A narrow executable fix artifact is ready for a writable executor.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Confirmed on current main dcdfd737: explicit xAI image media entries forward the
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124527 | fix_needed | planned | canonical | The issue is a reproducible, bounded plugin-owned compatibility migration gap; no runtime or Telegram-specific fallback is appropriate. |
-| cluster:issue-openclaw-openclaw-124527 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from the requested ClawSweeper branch once a writable checkout with dependencies is available. |
-| cluster:issue-openclaw-openclaw-124527 | open_fix_pr | blocked | canonical | Implementation is blocked only by the execution environment, not by an unresolved product or maintainer decision. |
+| #124527 | fix_needed | blocked | canonical | Implementation and validation are blocked by the mandatory Codex-source gate and read-only environment, not by product ambiguity. |
+| cluster:issue-openclaw-openclaw-124527 | build_fix_artifact | planned | canonical | A writable executor can apply this bounded plugin-owned migration after completing the Codex-source and live-provider gates. |
 
 ## Needs Human
 
