@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T08:33:50.504Z",
+  "updated_at": "2026-08-19T08:35:30.299Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111899:5028150302:2026-08-19T03:27:08Z:clawsweeper_needs_human",
-      "comment_id": "5028150302",
-      "comment_version_key": "5028150302:2026-08-19T03:27:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111899#issuecomment-5028150302",
-      "comment_created_at": "2026-07-20T23:12:34Z",
-      "comment_updated_at": "2026-08-19T03:27:08Z",
-      "comment_body_sha256": "08c15d8bd7f996f909902331827f9dd884d1b657a8d131bf42cb0778397c633d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111899,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The posted terminal proof shows exit code 0 and predates the current claimed nonzero-exit behavior, so it cannot prove the rebased bra... (sha=b1f16dd3f7fe4fc84fe310826b8208b97e60d090)",
-      "expected_head_sha": "b1f16dd3f7fe4fc84fe310826b8208b97e60d090",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T03:30:49.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-111407-accepted-run-no-fallback",
-        "head_sha": "b1f16dd3f7fe4fc84fe310826b8208b97e60d090",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111901:5029633983:2026-08-19T03:27:41Z:clawsweeper_auto_repair",
       "comment_id": "5029633983",
@@ -31446,6 +31413,53 @@
         "kind": "pull_request",
         "branch": "fix/subagent-terminal-reply-fixture",
         "head_sha": "98a1bc1d3b7f36c4c410b18fb15b28777e85c597",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126017:5339594755:2026-08-19T08:34:35Z:re_review",
+      "comment_id": "5339594755",
+      "comment_version_key": "5339594755:2026-08-19T08:34:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126017#issuecomment-5339594755",
+      "comment_created_at": "2026-08-19T08:34:35Z",
+      "comment_updated_at": "2026-08-19T08:34:35Z",
+      "comment_body_sha256": "3d63950d7828765c894c9b0bfd24b6f9a93b53b3486a5c3a1cbbf78af259cfdd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126017,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T08:35:25.767Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/canonicalize-base64-memory",
+        "head_sha": "def20b1943ab7ba1c0d2c7db7963b9a1c01e7521",
         "cluster_id": null,
         "job_path": null
       },
