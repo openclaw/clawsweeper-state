@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the documented headless OpenAI device-code CLI path. In the models-auth command owner, permit only an explicit canonical OpenAI device-code selection to invoke the existing core login flow without a TTY, using a noninteractive logging prompter and no local-browser launch. Keep the generic TTY guard for provider selection, browser OAuth, and methods that need input. Do not unify credential stores, import standalone Codex credentials, add configuration, or weaken agent-scoped auth ownership. Add a regression that fails before the fix: non-TTY OpenAI device-code login reaches the provider flow and emits verification guidance, while non-device-code login still refuses. Update provider/CLI documentation only as needed to state the exact supported headless behavior; do not edit CHANGELOG.md.
+Repair the existing headless OpenAI device-code login contract for https://github.com/openclaw/openclaw/issues/113326. In `src/commands/models/auth.ts`, allow only explicit `method: "device-code"` login to reach `runModelsAuthLoginFlowCore` without a TTY; preserve rejection for prompt-driven methods. Add a boundary regression in `src/commands/models/auth.test.ts` that makes stdin non-TTY, requests OpenAI device-code login, and proves the provider flow executes; retain rejection coverage for non-device methods. The test protects the documented CLI contract, fails on the current guard, and needs no production-only seam. Do not import or sync `~/.codex`, add config, change profile storage, or edit CHANGELOG.md; place release-note context in the PR body.
 
 Likely files:
 
 - src/commands/models/auth.ts
 - src/commands/models/auth.test.ts
-- src/commands/non-interactive-prompter.ts
-- docs/providers/openai.md
+- src/cli/models-cli.test.ts
 
 Validation:
 
-- pnpm test src/commands/models/auth.test.ts
-- pnpm test src/cli/models-cli.test.ts
-- pnpm test extensions/openai/openai-chatgpt-provider.test.ts
+- node scripts/run-vitest.mjs src/commands/models/auth.test.ts
+- node scripts/run-vitest.mjs src/cli/models-cli.test.ts
+- pnpm lint
 
 ## Operator Prompt
 
