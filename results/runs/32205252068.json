@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-115354",
+  "mode": "autonomous",
+  "run_id": "32205252068",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32205252068",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-115354.md",
+  "published_at": "2026-08-19T01:49:28.495Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/115354",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/115354",
+  "canonical_pr": null,
+  "summary": "No automation-safe implementation path: the reported catch-all producer is absent on current main, while changing live runtime-binding precedence would be a cross-channel product decision. Required direct ../codex inspection is also unavailable in this read-only worker.",
+  "actions": [
+    {
+      "target": "#115354",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#115354",
+      "candidate_fix": null,
+      "reason": "A narrow stale-state repair is not supported by the current producer and lifecycle evidence. Deciding whether configured ACP bindings should supersede valid live runtime bindings requires maintainer product direction and a worker with the mandated sibling Codex source."
+    },
+    {
+      "target": "#115391",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#115354",
+      "candidate_fix": null,
+      "reason": "Historical partial proposal only; no mutation is appropriate."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a worker environment containing the required sibling ../codex source so the mandatory direct inspection can occur.",
+    "Decide the intended cross-channel precedence between a valid live runtime conversation binding and a configured ACP binding before any behavior change is planned."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#115354",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
