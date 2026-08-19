@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126137",
+  "mode": "autonomous",
+  "run_id": "32210221563",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32210221563",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126137.md",
+  "published_at": "2026-08-19T03:12:36.196Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126137",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126137",
+  "canonical_pr": null,
+  "summary": "The canonical issue is reproducible by source inspection on current main: the merge scans the growing result for every import and repeatedly normalizes identity-less text. A narrow two-file repair is planned, but this read-only worker cannot create the branch or install missing dependencies; required direct Codex-source inspection is also unavailable because the sibling checkout is absent.",
+  "actions": [
+    {
+      "target": "#126137",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126137",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the worker environment. A write-capable executor should apply the attached narrow fix artifact on clawsweeper/issue-openclaw-openclaw-126137."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126137",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126137",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is appropriate once a write-capable executor can reproduce the regression and validate it."
+    },
+    {
+      "target": "#18481",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context only; no mutation."
+    },
+    {
+      "target": "#44107",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context only; no mutation."
+    },
+    {
+      "target": "#75707",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context only; no mutation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
