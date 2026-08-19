@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T12:48:49.465Z",
+  "updated_at": "2026-08-19T12:55:25.627Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5337631893:2026-08-19T04:43:30Z:re_review",
-      "comment_id": "5337631893",
-      "comment_version_key": "5337631893:2026-08-19T04:43:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5337631893",
-      "comment_created_at": "2026-08-19T04:43:30Z",
-      "comment_updated_at": "2026-08-19T04:43:30Z",
-      "comment_body_sha256": "4b93bb0e19876fc83615ca79d864e8cc73283f3ae69539e32918aeed7e3aca16",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T04:44:16.005Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bartok9/cron-precheck-gate",
-        "head_sha": "6ec12326c1e12d810f03aa427527e898d4d47e0b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1175:5329689136:2026-08-19T04:43:22Z:clawsweeper_auto_repair",
       "comment_id": "5329689136",
@@ -32531,6 +32484,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126255:5339397512:2026-08-19T12:54:45Z:clawsweeper_needs_human",
+      "comment_id": "5339397512",
+      "comment_version_key": "5339397512:2026-08-19T12:54:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126255#issuecomment-5339397512",
+      "comment_created_at": "2026-08-19T08:16:00Z",
+      "comment_updated_at": "2026-08-19T12:54:45Z",
+      "comment_body_sha256": "dda9ea5c5e2477bc49d45ca37a2e8e685e0f0d7ea75f79c7dd204ec066036327",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126255,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: No inspectable redacted after-fix artifact or terminal output demonstrates Harness selection and fallback on exact head fe4864342. After adding...; Review finding: [P2] Document the Windows native fallback — docs/tools/browser.md:60 - [medium] Verify the external Harness release contract — extensions/browser/plugin-registrati... (sha=fe4864342b4508ab3ddf7062e57b3da4c18c1461)",
+      "expected_head_sha": "fe4864342b4508ab3ddf7062e57b3da4c18c1461",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T12:55:25.627Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/browser-harness-default",
+        "head_sha": "fe4864342b4508ab3ddf7062e57b3da4c18c1461",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
