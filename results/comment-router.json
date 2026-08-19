@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T03:52:57.606Z",
+  "updated_at": "2026-08-19T03:53:37.193Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125946:5332622837:2026-08-19T00:10:25Z:clawsweeper_needs_human",
-      "comment_id": "5332622837",
-      "comment_version_key": "5332622837:2026-08-19T00:10:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125946#issuecomment-5332622837",
-      "comment_created_at": "2026-08-18T18:51:09Z",
-      "comment_updated_at": "2026-08-19T00:10:25Z",
-      "comment_body_sha256": "43d5c4af438109ee112303d0f0fe8b53a7c590bd78f5ca838aace51dbf635242",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125946,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the owner used for background reply dispatch, so exact-head checks should confirm a detached completion cannot be dropped or routed through another Gateway instance. (sha=7beedfebb18db76b0f36164dea64b366c8203047)",
-      "expected_head_sha": "7beedfebb18db76b0f36164dea64b366c8203047",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T00:15:52.769Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/bold-allen-8fed3f",
-        "head_sha": "7beedfebb18db76b0f36164dea64b366c8203047",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126027:5334483725:2026-08-19T00:12:09Z:clawsweeper_auto_repair",
       "comment_id": "5334483725",
@@ -31109,6 +31076,53 @@
       "status": "skipped",
       "processed_at": "2026-08-19T03:52:57.606Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126080:5337308833:2026-08-19T03:52:49Z:re_review",
+      "comment_id": "5337308833",
+      "comment_version_key": "5337308833:2026-08-19T03:52:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126080#issuecomment-5337308833",
+      "comment_created_at": "2026-08-19T03:52:49Z",
+      "comment_updated_at": "2026-08-19T03:52:49Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126080,
+      "author": "bdjben",
+      "author_id": 188106718,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T03:53:35.059Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-isolated-computer-use-bundle-refresh",
+        "head_sha": "fb0bf42c94e66fab35e71fa2357ca4694a872bb2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
