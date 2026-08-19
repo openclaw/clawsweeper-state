@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-62505",
+  "mode": "autonomous",
+  "run_id": "32242591030",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32242591030",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-62505.md",
+  "published_at": "2026-08-19T10:35:47.343Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/62505",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/62505",
+  "canonical_pr": null,
+  "summary": "Latest main source still routes completed node execs as targeted `exec-event` wakes, but the shared unscheduled-wake policy accepts only immediate sources and excludes `exec-event`; with `heartbeat.every: \"0m\"`, scheduler and execution gates return `disabled`. No edits or tests ran: this worker has a read-only checkout and the mandatory sibling `../codex` source checkout is unavailable.",
+  "actions": [
+    {
+      "target": "#62505",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Narrow bug-only repair is indicated, but local implementation and validation are blocked by the read-only sandbox and missing required ../codex checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-62505",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Create one narrow branch from current main once a writable checkout and the required sibling Codex source are available."
+    },
+    {
+      "target": "#67913",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#76877",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed and outside this repair invariant."
+    },
+    {
+      "target": "#79869",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantined independently; it does not block the ordinary #62505 repair."
+    },
+    {
+      "target": "#109738",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Open but independent from the heartbeat-cadence dispatch defect."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "keep_independent": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
