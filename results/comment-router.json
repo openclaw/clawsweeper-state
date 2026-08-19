@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T01:07:43.614Z",
+  "updated_at": "2026-08-19T01:07:44.334Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112423:5078670054:2026-07-25T13:31:49Z:re_review",
-      "comment_id": "5078670054",
-      "comment_version_key": "5078670054:2026-07-25T13:31:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/112423#issuecomment-5078670054",
-      "comment_created_at": "2026-07-25T13:31:49Z",
-      "comment_updated_at": "2026-07-25T13:31:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112423,
-      "author": "HermanZeng",
-      "author_id": 25895921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T19:19:58.304Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112423:5078795728:2026-07-25T14:11:28Z:re_review",
       "comment_id": "5078795728",
@@ -33181,6 +33154,39 @@
         "head_sha": "8d4f534abfb446f16e611d24eb0517243612b3aa",
         "cluster_id": "automerge-openclaw-openclaw-124014",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126072:5335644434:2026-08-19T01:06:22Z:clawsweeper_needs_human",
+      "comment_id": "5335644434",
+      "comment_version_key": "5335644434:2026-08-19T01:06:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126072#issuecomment-5335644434",
+      "comment_created_at": "2026-08-18T23:43:45Z",
+      "comment_updated_at": "2026-08-19T01:06:22Z",
+      "comment_body_sha256": "8f5f5297019158343e0e19b7c839712d9ad062ba674ed5c3e2403e9812689d76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126072,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head required CI gate is currently failing; do not merge until the failure is resolved or independently shown unrelated and the required checks are green. (sha=c63594dde2ff2d60ef43d69c7f3d3f953722b18c)",
+      "expected_head_sha": "c63594dde2ff2d60ef43d69c7f3d3f953722b18c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T01:07:44.334Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa22-status-degradation",
+        "head_sha": "c63594dde2ff2d60ef43d69c7f3d3f953722b18c",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
