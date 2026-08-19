@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T10:39:59.152Z",
+  "updated_at": "2026-08-19T10:40:02.678Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5337416453:2026-08-19T04:10:11Z:re_review",
-      "comment_id": "5337416453",
-      "comment_version_key": "5337416453:2026-08-19T04:10:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5337416453",
-      "comment_created_at": "2026-08-19T04:10:11Z",
-      "comment_updated_at": "2026-08-19T04:10:11Z",
-      "comment_body_sha256": "ee4b3c202364aa55b463e7655820c342f754f325681e468d7ab82cc24b5fa37d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T04:11:05.446Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119977-codex-stale-binding-compaction",
-        "head_sha": "a45f9e7109cd37e957ecec2dec81662d1b237c08",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126168:5337421018:2026-08-19T04:10:53Z:clawsweeper_needs_human",
       "comment_id": "5337421018",
@@ -31612,6 +31565,39 @@
         "kind": "pull_request",
         "branch": "steipete/runner-offline-recovery",
         "head_sha": "05851feaca2b5006112ba278d4937b5e8ac689da",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126274:5340319595:2026-08-19T10:38:05Z:clawsweeper_needs_human",
+      "comment_id": "5340319595",
+      "comment_version_key": "5340319595:2026-08-19T10:38:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126274#issuecomment-5340319595",
+      "comment_created_at": "2026-08-19T09:40:33Z",
+      "comment_updated_at": "2026-08-19T10:38:05Z",
+      "comment_body_sha256": "de9a494664262bea55c14b99bd2a5b152f779371baf3190e71ad61cd56afe5c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126274,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production script code is net +19 lines; the increase is limited to consuming the existing launcher at two raw spawn sites and delegating the pipeline, but exact-head CI has not finis... (sha=3b7b9befd3bbbccb442b43acbe0085ce72ed69f7)",
+      "expected_head_sha": "3b7b9befd3bbbccb442b43acbe0085ce72ed69f7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T10:40:02.678Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-repo-tool-spawn",
+        "head_sha": "3b7b9befd3bbbccb442b43acbe0085ce72ed69f7",
         "cluster_id": null,
         "job_path": null
       }
