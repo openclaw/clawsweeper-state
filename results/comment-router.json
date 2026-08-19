@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T23:03:42.640Z",
+  "updated_at": "2026-08-19T23:04:23.351Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5273332453:2026-08-12T22:06:22Z:re_review",
-      "comment_id": "5273332453",
-      "comment_version_key": "5273332453:2026-08-12T22:06:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5273332453",
-      "comment_created_at": "2026-08-12T22:06:22Z",
-      "comment_updated_at": "2026-08-12T22:06:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T13:47:31.385Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5275498440:2026-08-13T03:13:19Z:re_review",
       "comment_id": "5275498440",
@@ -31685,6 +31658,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126345:5345813236:2026-08-19T23:01:46Z:clawsweeper_needs_human",
+      "comment_id": "5345813236",
+      "comment_version_key": "5345813236:2026-08-19T23:01:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126345#issuecomment-5345813236",
+      "comment_created_at": "2026-08-19T17:39:04Z",
+      "comment_updated_at": "2026-08-19T23:01:46Z",
+      "comment_body_sha256": "b8915ab58478bef4bd67d83df5105c062a1fcf79b514807df71a2998a5a933ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126345,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, whose later hovercard update also touches the runtime; GitHub reports a clean merge, but the rebased head needs exact-head CI. (sha=833460b46ef7350c1489f81ef2fde9fe7bdd067f)",
+      "expected_head_sha": "833460b46ef7350c1489f81ef2fde9fe7bdd067f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T23:04:23.351Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/session-menu-dismiss-hovercard",
+        "head_sha": "833460b46ef7350c1489f81ef2fde9fe7bdd067f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
