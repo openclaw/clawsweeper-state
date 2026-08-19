@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T15:38:57.292Z",
+  "updated_at": "2026-08-19T15:39:09.077Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126202:5338093027:2026-08-19T06:33:33Z:clawsweeper_needs_human",
-      "comment_id": "5338093027",
-      "comment_version_key": "5338093027:2026-08-19T06:33:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126202#issuecomment-5338093027",
-      "comment_created_at": "2026-08-19T05:52:49Z",
-      "comment_updated_at": "2026-08-19T06:33:33Z",
-      "comment_body_sha256": "24111cec703e11716776d79aaee217827462de868eab7712f23731c0f0e8a15d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126202,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head hosted Z.ai Coding Plan live-e2e result is still pending, so the external endpoint’s after-fix acceptance has not yet been observed. (sha=fcd8ec88d0ab370cec5d3dc404918144a05e740a)",
-      "expected_head_sha": "fcd8ec88d0ab370cec5d3dc404918144a05e740a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T06:35:23.895Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/zai-glm53-live-reasoning",
-        "head_sha": "fcd8ec88d0ab370cec5d3dc404918144a05e740a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126207:5338177535:2026-08-19T06:32:24Z:clawsweeper_auto_repair",
       "comment_id": "5338177535",
@@ -32313,6 +32280,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125823:5344423008:2026-08-19T15:38:13Z:re_review",
+      "comment_id": "5344423008",
+      "comment_version_key": "5344423008:2026-08-19T15:38:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125823#issuecomment-5344423008",
+      "comment_created_at": "2026-08-19T15:38:13Z",
+      "comment_updated_at": "2026-08-19T15:38:13Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125823,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T15:39:06.811Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/webchat-terminal-dedupe-recovery",
+        "head_sha": "30f0c10e88b6f6f81a5903a6d7082cb9b78c2750",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
