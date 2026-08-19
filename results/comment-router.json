@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T03:44:12.802Z",
+  "updated_at": "2026-08-19T03:44:16.134Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125617:5335776032:2026-08-19T00:02:33Z:re_review",
-      "comment_id": "5335776032",
-      "comment_version_key": "5335776032:2026-08-19T00:02:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125617#issuecomment-5335776032",
-      "comment_created_at": "2026-08-19T00:02:33Z",
-      "comment_updated_at": "2026-08-19T00:02:33Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125617,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T00:03:19.190Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/current-chat-media-guidance",
-        "head_sha": "6d164241860c9a1d2f54550b16acc381cc702e9f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125528:5335781737:2026-08-19T00:03:25Z:re_review",
       "comment_id": "5335781737",
@@ -31191,6 +31144,39 @@
         "kind": "pull_request",
         "branch": "steipete/fullscreen-dashboard-url-412302",
         "head_sha": "a4b4801bd773511fc1b05650fcf37b2a97f8588f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126151:5337248349:2026-08-19T03:43:26Z:clawsweeper_needs_human",
+      "comment_id": "5337248349",
+      "comment_version_key": "5337248349:2026-08-19T03:43:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126151#issuecomment-5337248349",
+      "comment_created_at": "2026-08-19T03:43:26Z",
+      "comment_updated_at": "2026-08-19T03:43:26Z",
+      "comment_body_sha256": "f3d89bfe795342418482f1afff795691a104df81ded5f11e68c6df4ac02f7757",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126151,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The generic 120-second grace applies to existing typed disconnect producers such as Slack, delaying /readyz failure and monitor-driven restart for that bounded period; this operator-v... (sha=307b745dd0e0a273d8538e6baca86e94c49f211e)",
+      "expected_head_sha": "307b745dd0e0a273d8538e6baca86e94c49f211e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T03:44:16.134Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/sad-banach-9c9ad5",
+        "head_sha": "307b745dd0e0a273d8538e6baca86e94c49f211e",
         "cluster_id": null,
         "job_path": null
       }
