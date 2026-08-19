@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T05:50:23.940Z",
+  "updated_at": "2026-08-19T05:50:33.545Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5241013651:2026-08-10T13:34:32Z:re_review",
-      "comment_id": "5241013651",
-      "comment_version_key": "5241013651:2026-08-10T13:34:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5241013651",
-      "comment_created_at": "2026-08-10T13:34:32Z",
-      "comment_updated_at": "2026-08-10T13:34:32Z",
-      "comment_body_sha256": "7dbc148ba50ace8b458054420fb28256306ef1ad078064490a4b9efaddc14463",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T01:46:51.220Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5247961908:2026-08-11T01:22:12Z:re_review",
       "comment_id": "5247961908",
@@ -31011,6 +30984,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/discrawl:180:5325656051:2026-08-19T05:41:59Z:clawsweeper_needs_human",
+      "comment_id": "5325656051",
+      "comment_version_key": "5325656051:2026-08-19T05:41:59Z",
+      "comment_url": "https://github.com/openclaw/discrawl/pull/180#issuecomment-5325656051",
+      "comment_created_at": "2026-08-18T08:31:41Z",
+      "comment_updated_at": "2026-08-19T05:41:59Z",
+      "comment_body_sha256": "169f3abefc2fd16988688ca86bc556c9cf42abeec55993f9413a2f09e751e1dd",
+      "repo": "openclaw/discrawl",
+      "issue_number": 180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify the Kiwi archive before privileged installation (P2)** - This script extracts a network-downloaded archive and copies its native libraries into system paths with sudo, but it never verifies a checksum or...; Review finding: [P2] Verify the Kiwi archive before privileged installation — tools/discrawl-kiwi/install-kiwi.sh:27-30 - [medium] Native archive lacks integrity verification — to... (sha=89ea8a19d6b12be69491c9fe15da6122ff63922c)",
+      "expected_head_sha": "89ea8a19d6b12be69491c9fe15da6122ff63922c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T05:50:33.545Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/multilingual-lexical-search",
+        "head_sha": "89ea8a19d6b12be69491c9fe15da6122ff63922c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
