@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T00:31:34.124Z",
+  "updated_at": "2026-08-19T00:35:09.350Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125778:5332743000:2026-08-18T19:02:29Z:re_review",
-      "comment_id": "5332743000",
-      "comment_version_key": "5332743000:2026-08-18T19:02:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125778#issuecomment-5332743000",
-      "comment_created_at": "2026-08-18T19:02:29Z",
-      "comment_updated_at": "2026-08-18T19:02:29Z",
-      "comment_body_sha256": "3364c74a4e08758eb3c3638a10679d74755b5d9f34b57a85dde126e45f08bae4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125778,
-      "author": "sunnydongbo",
-      "author_id": 249433142,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T19:03:10.641Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "contrib/telegram-plan-progress-20260818",
-        "head_sha": "667764d9e318b4f9d7fc4a7b1e6bbcb6c5e24321",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:69417:4340779491:2026-08-18T19:01:23Z:clawsweeper_needs_human",
       "comment_id": "4340779491",
@@ -32798,6 +32751,39 @@
         "kind": "pull_request",
         "branch": "steipete/ui-lane-leak-sweep",
         "head_sha": "5f9ec347583539b75d10394e90e2baa933da513e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118152:5160061935:2026-08-19T00:28:42Z:clawsweeper_needs_human",
+      "comment_id": "5160061935",
+      "comment_version_key": "5160061935:2026-08-19T00:28:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118152#issuecomment-5160061935",
+      "comment_created_at": "2026-08-02T19:52:32Z",
+      "comment_updated_at": "2026-08-19T00:28:42Z",
+      "comment_body_sha256": "266b7d4ddbbd281c052e16606c8a779b3f8780c8bf20d47a0498526ffeb9fb7a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118152,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve canonical Gateway deny matching (P1)** - This replaces normalized policy matching with raw strings and deletes the regression that covers cron, CRON , and CrOn. With allow: [\"automations\"] and deny: [\"...; Review finding: [P1] Preserve canonical Gateway deny matching — src/gateway/tool-resolution.ts:526-534 - [P1] Honor the account scope this schema enables — extensions/line/src/con... (sha=e9716d32deb9a4cfff456c1bd5bc54a8a3fe6a88)",
+      "expected_head_sha": "e9716d32deb9a4cfff456c1bd5bc54a8a3fe6a88",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T00:35:09.350Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/history-limit-schema-parity",
+        "head_sha": "e9716d32deb9a4cfff456c1bd5bc54a8a3fe6a88",
         "cluster_id": null,
         "job_path": null
       }
