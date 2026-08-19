@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T03:42:55.033Z",
+  "updated_at": "2026-08-19T03:43:05.981Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126056:5335751041:2026-08-18T23:58:45Z:re_review",
-      "comment_id": "5335751041",
-      "comment_version_key": "5335751041:2026-08-18T23:58:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126056#issuecomment-5335751041",
-      "comment_created_at": "2026-08-18T23:58:45Z",
-      "comment_updated_at": "2026-08-18T23:58:45Z",
-      "comment_body_sha256": "6a19cb5c97b5232f29e2f0b9e99a68dff5cb60c8953b95fc6c464d420fc5961c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126056,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T23:59:24.533Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/test-2",
-        "head_sha": "98a88292842e3f246d4368851b8aa6e596eb8142",
-        "cluster_id": "automerge-openclaw-openclaw-126056",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-126056.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126073:5335759666:2026-08-19T00:00:07Z:clawsweeper_auto_repair",
       "comment_id": "5335759666",
@@ -31208,6 +31161,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T03:42:55.033Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126147:5337240704:2026-08-19T03:42:10Z:clawsweeper_needs_human",
+      "comment_id": "5337240704",
+      "comment_version_key": "5337240704:2026-08-19T03:42:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126147#issuecomment-5337240704",
+      "comment_created_at": "2026-08-19T03:42:10Z",
+      "comment_updated_at": "2026-08-19T03:42:10Z",
+      "comment_body_sha256": "f2c1b63e7ec2f169ef90ef53a7834dce4ceb2bd4a1569906934d6ed8840e60c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126147,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The narrowed Codex diagnostic subscription cannot be verified against the upstream app-server lifecycle until the required sibling Codex source is available; an omitted terminal signa... (sha=b257bf3be821d57a4e58822d36d352ba1f5d38aa)",
+      "expected_head_sha": "b257bf3be821d57a4e58822d36d352ba1f5d38aa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T03:43:05.981Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/team-server-performance-hotspots-463c8c",
+        "head_sha": "b257bf3be821d57a4e58822d36d352ba1f5d38aa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
