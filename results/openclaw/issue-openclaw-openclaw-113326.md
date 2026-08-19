@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "32200696803"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32200696803"
+run_id: "32201240649"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32201240649"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T00:31:37.225Z"
+published_at: "2026-08-19T00:38:15.892Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
-actions_total: 7
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32200696803](https://github.com/openclaw/clawsweeper/actions/runs/32200696803)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32201240649](https://github.com/openclaw/clawsweeper/actions/runs/32201240649)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-#113326 remains a narrow, reproducible current-main bug: the unconditional non-TTY guard in src/commands/models/auth.ts:1097 rejects the documented explicit OpenAI device-code path before the existing provider flow runs. A new-fix-PR artifact is ready, but this worker cannot implement or validate it because the checkout is read-only, node_modules is absent, and the mandatory sibling ../codex source is unavailable for the required direct contract inspection.
+A narrow repair artifact is ready, but this worker cannot implement or validate it: the checkout is read-only, dependencies are absent, and the mandatory sibling ../codex source cannot be cloned for direct protocol inspection.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113326 | fix_needed | planned | canonical | Repair the owner-boundary guard so only an explicit OpenAI device-code request bypasses the TTY refusal; prompt-driven and other auth methods remain rejected. |
-| #100067 | keep_independent | planned | independent | Different root cause and repair owner; leave open independently. |
-| #50452 | keep_closed | skipped | related | Already closed; no mutation. |
-| #71864 | keep_closed | skipped | related | Already closed; no mutation. |
-| #79021 | keep_closed | skipped | related | Already closed; no mutation. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | Narrow implementation and regression plan prepared for the deterministic executor. |
-| cluster:issue-openclaw-openclaw-113326 | open_fix_pr | blocked | canonical | Open the PR only after a writable executor provides dependencies and the required sibling Codex checkout. |
+| #113326 | fix_needed | planned | canonical | The source and documentation identify a focused CLI-boundary repair; no candidate PR is hydrated. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | blocked | canonical | A writable executor must complete direct Codex source inspection, patch the branch, and run the declared validations. |
 
 ## Needs Human
 
