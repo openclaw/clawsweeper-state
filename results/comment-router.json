@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T20:33:48.733Z",
+  "updated_at": "2026-08-19T20:33:53.885Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111581:5018228904:2026-08-19T11:29:44Z:clawsweeper_auto_repair",
-      "comment_id": "5018228904",
-      "comment_version_key": "5018228904:2026-08-19T11:29:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111581#issuecomment-5018228904",
-      "comment_created_at": "2026-07-20T02:27:28Z",
-      "comment_updated_at": "2026-08-19T11:29:44Z",
-      "comment_body_sha256": "a9dbd9059d2f7f8cf13aef0151b26077eb3df4d81dda55a1c580d848fa0b3eef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111581,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6c29691648a3520f08a7df083e5eb426591cd03e)",
-      "expected_head_sha": "6c29691648a3520f08a7df083e5eb426591cd03e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T11:42:16.287Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bound-release-beta-verifier-commands",
-        "head_sha": "6c29691648a3520f08a7df083e5eb426591cd03e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122118:5255582137:2026-08-19T11:24:38Z:clawsweeper_auto_repair",
       "comment_id": "5255582137",
@@ -31426,6 +31393,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T20:33:48.733Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126415:5347236929:2026-08-19T20:30:18Z:clawsweeper_needs_human",
+      "comment_id": "5347236929",
+      "comment_version_key": "5347236929:2026-08-19T20:30:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126415#issuecomment-5347236929",
+      "comment_created_at": "2026-08-19T19:52:28Z",
+      "comment_updated_at": "2026-08-19T20:30:18Z",
+      "comment_body_sha256": "2eab2619fc54dbdb395a4c1c8bfb6e01451ed7c78a35f445c566c0fe461c57f5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126415,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The E2E fixture calls the pinned MCP SDK notification helper, but direct SDK-source inspection was unavailable in this node_modules-less, network-restricted review checkout; exact-hea... (sha=b2a3a399a925e47e5e943330a327e698deb08f82)",
+      "expected_head_sha": "b2a3a399a925e47e5e943330a327e698deb08f82",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T20:33:53.885Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/mcp-app-grant-revalidation-20260819",
+        "head_sha": "b2a3a399a925e47e5e943330a327e698deb08f82",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
