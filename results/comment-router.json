@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T04:03:27.656Z",
+  "updated_at": "2026-08-19T04:03:32.295Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124015:5336068164:2026-08-19T00:42:25Z:re_review",
-      "comment_id": "5336068164",
-      "comment_version_key": "5336068164:2026-08-19T00:42:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5336068164",
-      "comment_created_at": "2026-08-19T00:42:25Z",
-      "comment_updated_at": "2026-08-19T00:42:25Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124015,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T00:43:05.112Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/signal-port-collision",
-        "head_sha": "a421824063ccad4ba61ba33976cd39d38426862a",
-        "cluster_id": "automerge-openclaw-openclaw-124015",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124015.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124014:5336068096:2026-08-19T00:42:24Z:re_review",
       "comment_id": "5336068096",
@@ -30908,6 +30861,39 @@
         "kind": "pull_request",
         "branch": "steipete/heuristic-bun-19498d",
         "head_sha": "7246f4d7d50b0cec08de133baf8378765482d2cf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126169:5337368608:2026-08-19T04:02:38Z:clawsweeper_needs_human",
+      "comment_id": "5337368608",
+      "comment_version_key": "5337368608:2026-08-19T04:02:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126169#issuecomment-5337368608",
+      "comment_created_at": "2026-08-19T04:02:38Z",
+      "comment_updated_at": "2026-08-19T04:02:38Z",
+      "comment_body_sha256": "ef9da7eb0fd2f82d482e2c3f529a6d698b89ad73a8e8f40be8d84a1ac84d613b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126169,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Recovered replies use a direct Teams SDK internal message-helper path; the checkout had no installed dependency copy and DNS was unavailable, so direct upstream contract inspection an... (sha=8252957c0777c4c2d5d8bd12f6b7dc320e3d647f)",
+      "expected_head_sha": "8252957c0777c4c2d5d8bd12f6b7dc320e3d647f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T04:03:32.295Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/zealous-nobel-06d008",
+        "head_sha": "8252957c0777c4c2d5d8bd12f6b7dc320e3d647f",
         "cluster_id": null,
         "job_path": null
       }
