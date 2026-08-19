@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T20:32:04.375Z",
+  "updated_at": "2026-08-19T20:32:12.268Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122560:5341027387:2026-08-19T10:46:00Z:re_review",
-      "comment_id": "5341027387",
-      "comment_version_key": "5341027387:2026-08-19T10:46:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122560#issuecomment-5341027387",
-      "comment_created_at": "2026-08-19T10:46:00Z",
-      "comment_updated_at": "2026-08-19T10:46:00Z",
-      "comment_body_sha256": "035d090e6d25d4ee66297a5709e69bc5e353c9a799a1395e579dcf128d0451c4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122560,
-      "author": "snotty",
-      "author_id": 5853861,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T10:46:44.095Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/responses-rotated-terminal-message-id",
-        "head_sha": "7df835966fcaa5b9d0f1c441e007d489f178dd69",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3051:5331469501:2026-08-19T10:46:27Z:clawsweeper_auto_repair",
       "comment_id": "5331469501",
@@ -32025,6 +31978,39 @@
         "kind": "pull_request",
         "branch": "codex/dynamic-model-catalog-metadata",
         "head_sha": "be8bdecf145188f3770e25482adc5544182c6b54",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:170:5344472473:2026-08-19T20:31:17Z:clawsweeper_needs_human",
+      "comment_id": "5344472473",
+      "comment_version_key": "5344472473:2026-08-19T20:31:17Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/170#issuecomment-5344472473",
+      "comment_created_at": "2026-08-19T15:42:17Z",
+      "comment_updated_at": "2026-08-19T20:31:17Z",
+      "comment_body_sha256": "1ed1ccbcea68ba45bd52f4f649a3e480cc3a58256753cdae64b885dc6712ee5f",
+      "repo": "openclaw/clickclack",
+      "issue_number": 170,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: No after-fix browser proof or redacted deployment transcript is supplied; add it to the PR body and request re-review if one does not trigger a...; Review finding: [P1] Enforce the configured VPS host key — .github/workflows/deploy-vps.yml:28 - [P1] Pin the SSH credential action to an immutable revision — .github/workflows/de... (sha=c1f5634cc25a3e11e73586a72d82e8d027f51014)",
+      "expected_head_sha": "c1f5634cc25a3e11e73586a72d82e8d027f51014",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T20:32:12.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "main",
+        "head_sha": "c1f5634cc25a3e11e73586a72d82e8d027f51014",
         "cluster_id": null,
         "job_path": null
       }
