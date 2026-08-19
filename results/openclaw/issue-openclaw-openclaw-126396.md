@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126396"
 mode: "autonomous"
-run_id: "32291310224"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32291310224"
+run_id: "32293690514"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32293690514"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-19T19:43:46.505Z"
-canonical: "https://github.com/openclaw/openclaw/issues/126396"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/126396"
+published_at: "2026-08-19T19:49:14.223Z"
+canonical: "#126396"
+canonical_issue: "#126396"
 canonical_pr: null
 actions_total: 1
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32291310224](https://github.com/openclaw/clawsweeper/actions/runs/32291310224)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32293690514](https://github.com/openclaw/clawsweeper/actions/runs/32293690514)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/126396
+Canonical: #126396
 
 ## Summary
 
-#126396 is a current, source-reproducible documentation regression on main. Runtime types and construction expose only `tasks.runs`, read-only `tasks.flows`, and mutation-capable `tasks.managedFlows`; the two bundled TaskFlow skills still teach the removed singular API. A narrow two-file fix PR is appropriate, but this read-only worker cannot create its branch or complete the required docs checks: `pnpm docs:list` fails before execution because Corepack cannot create its cache, `node_modules` is absent, and the mandatory sibling `../codex` source is unavailable for the repository hard gate.
+#126396 remains an open canonical documentation bug on main, but no branch or PR was created: the filesystem is read-only, the mandatory sibling ../codex checkout is absent, and pnpm validation cannot initialize Corepack's cache in this sandbox.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/126396
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126396 | build_fix_artifact | planned | canonical | Prepare one narrow replacement PR; do not close or merge the canonical issue. |
+| #126396 | fix_needed | blocked | canonical | A narrow documentation-only repair is identified, but the required direct-Codex gate and writable validation environment are unavailable. |
 
 ## Needs Human
 
