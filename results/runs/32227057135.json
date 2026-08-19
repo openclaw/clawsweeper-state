@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126227",
+  "mode": "autonomous",
+  "run_id": "32227057135",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32227057135",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126227.md",
+  "published_at": "2026-08-19T07:34:38.358Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126227",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126227",
+  "canonical_pr": null,
+  "summary": "Confirmed on current main 554dfbe0: both toRetryError and normalization-core toErrorObject use Object.assign onto a fresh Error. A JSON-parsed own enumerable __proto__ makes the result fail instanceof Error while retaining ordinary fields. Repair planning is complete, but implementation/validation is blocked in this read-only checkout: node_modules is absent, and ../codex is absent for the repository-required direct Codex-source audit.",
+  "actions": [
+    {
+      "target": "#126227",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126227",
+      "candidate_fix": null,
+      "reason": "A narrow producer-boundary repair is warranted; no viable PR is hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126227",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126227",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited PR from clawsweeper/issue-openclaw-openclaw-126227 after dependencies and required source-audit prerequisites are available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126227",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126227",
+      "candidate_fix": null,
+      "reason": "Open only after the executor installs dependencies, performs the required direct Codex-source audit, applies the artifact, and passes the listed validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
