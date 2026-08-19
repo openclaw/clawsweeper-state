@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T22:45:21.937Z",
+  "updated_at": "2026-08-19T22:47:50.592Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125894:5342807248:2026-08-19T13:27:42Z:re_review",
-      "comment_id": "5342807248",
-      "comment_version_key": "5342807248:2026-08-19T13:27:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125894#issuecomment-5342807248",
-      "comment_created_at": "2026-08-19T13:27:42Z",
-      "comment_updated_at": "2026-08-19T13:27:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125894,
-      "author": "nikai",
-      "author_id": 160486,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T13:28:25.337Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/durable-channel-history",
-        "head_sha": "8bb2be0ba9fbb16312713ead8cbe56e03acb4d8e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:530:5342640089:2026-08-19T13:29:23Z:clawsweeper_needs_human",
       "comment_id": "5342640089",
@@ -31712,6 +31665,39 @@
         "kind": "pull_request",
         "branch": "codex/autoqa-153-named-agent-onboarding",
         "head_sha": "39d7f6d9e568761591a2ed17ebd59483f13a0c74",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1407:5343239606:2026-08-19T22:47:04Z:clawsweeper_needs_human",
+      "comment_id": "5343239606",
+      "comment_version_key": "5343239606:2026-08-19T22:47:04Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1407#issuecomment-5343239606",
+      "comment_created_at": "2026-08-19T14:03:11Z",
+      "comment_updated_at": "2026-08-19T22:47:04Z",
+      "comment_body_sha256": "5e525cd16d5cb09bbe83729c37f71125ded44693590218ae7a4514de1911d69b",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1407,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Do not trust CRABBOX\\_CONFIG to choose the smoke executable (P1)** - trusted_config_value uses trusted_config_path, but lines 31-37 mark every explicit CRABBOX_CONFIG path trusted, including a path in the checko...; Review finding: [P1] Do not trust CRABBOX_CONFIG to choose the smoke executable — scripts/live-smoke.sh:1426 - [P2] Expose Boxd lifecycle tests to the lifecycle gate — internal/pr... (sha=bcc67f8ae89925c2bf2f498454c01d5e538f5fd3)",
+      "expected_head_sha": "bcc67f8ae89925c2bf2f498454c01d5e538f5fd3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T22:47:50.592Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "add-boxd-provider",
+        "head_sha": "bcc67f8ae89925c2bf2f498454c01d5e538f5fd3",
         "cluster_id": null,
         "job_path": null
       }
