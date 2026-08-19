@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "32201240649"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32201240649"
+run_id: "32201786890"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32201786890"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T00:38:15.892Z"
+published_at: "2026-08-19T00:51:13.063Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
-actions_total: 2
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32201240649](https://github.com/openclaw/clawsweeper/actions/runs/32201240649)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32201786890](https://github.com/openclaw/clawsweeper/actions/runs/32201786890)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-A narrow repair artifact is ready, but this worker cannot implement or validate it: the checkout is read-only, dependencies are absent, and the mandatory sibling ../codex source cannot be cloned for direct protocol inspection.
+Current main contains the documented OpenAI device-code command, maps --device-code to method=device-code, and then rejects all non-TTY login calls before the provider flow. The narrow fix is blocked here because ../codex is absent and this read-only sandbox cannot clone it or edit/test a branch; the executor must complete the required direct Codex-source inspection before applying the supplied repair artifact.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,12 @@ A narrow repair artifact is ready, but this worker cannot implement or validate 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113326 | fix_needed | planned | canonical | The source and documentation identify a focused CLI-boundary repair; no candidate PR is hydrated. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | blocked | canonical | A writable executor must complete direct Codex source inspection, patch the branch, and run the declared validations. |
+| #113326 | fix_needed | blocked | canonical | Implementation requires a writable checkout and direct inspection of the Codex device-code protocol/runtime source before any code change or proof-sufficiency claim. |
+| #100067 | keep_related | planned | related | Keep open independently; it is not covered by this narrow CLI repair. |
+| #50452 | keep_closed | skipped |  | Already closed; no mutation. |
+| #71864 | keep_closed | skipped |  | Already closed; no mutation. |
+| #79021 | keep_closed | skipped |  | Already closed; no mutation. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | Narrow fix path is defined, but this worker cannot create or validate its branch. |
 
 ## Needs Human
 
