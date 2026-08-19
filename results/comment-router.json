@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T13:25:41.180Z",
+  "updated_at": "2026-08-19T13:27:27.169Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117258:5150173511:2026-08-19T04:34:06Z:clawsweeper_needs_human",
-      "comment_id": "5150173511",
-      "comment_version_key": "5150173511:2026-08-19T04:34:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117258#issuecomment-5150173511",
-      "comment_created_at": "2026-08-01T06:23:40Z",
-      "comment_updated_at": "2026-08-19T04:34:06Z",
-      "comment_body_sha256": "f8fa6f75d5b20b974a803c6648615965386ec0204581aa0b4c97e48136c6a94e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117258,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this draft branch as conflicted; resolving it mechanically could restore agent-only assumptions and regress current shared-state auth ownership. (sha=1fbe07b963692e0b0d7cb724787b72c7922ba999)",
-      "expected_head_sha": "1fbe07b963692e0b0d7cb724787b72c7922ba999",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T05:05:04.302Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-117209-auth-snapshot",
-        "head_sha": "1fbe07b963692e0b0d7cb724787b72c7922ba999",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117266:5150387940:2026-08-19T04:54:48Z:clawsweeper_auto_repair",
       "comment_id": "5150387940",
@@ -32455,6 +32422,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125844:5329552590:2026-08-19T13:26:38Z:clawsweeper_needs_human",
+      "comment_id": "5329552590",
+      "comment_version_key": "5329552590:2026-08-19T13:26:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125844#issuecomment-5329552590",
+      "comment_created_at": "2026-08-18T14:23:50Z",
+      "comment_updated_at": "2026-08-19T13:26:38Z",
+      "comment_body_sha256": "08f5f9e44a4e14e0b3e4a9285f9a92d7bf242fe2d52faaa549a8020a3988d276",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125844,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A newer local backend client can make session sends fail against a pre-change Gateway because the new token kind is rejected; whether that fail-closed upgrade behavior is acceptable r... (sha=ce40a22d2472ff8ed3635cee5dfe5a51711933cd)",
+      "expected_head_sha": "ce40a22d2472ff8ed3635cee5dfe5a51711933cd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T13:27:27.169Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-910-v2",
+        "head_sha": "ce40a22d2472ff8ed3635cee5dfe5a51711933cd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
