@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126227"
 mode: "autonomous"
-run_id: "32227057135"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32227057135"
+run_id: "32228553447"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32228553447"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-19T07:34:38.358Z"
-canonical: "https://github.com/openclaw/openclaw/issues/126227"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/126227"
+published_at: "2026-08-19T07:49:44.571Z"
+canonical: "#126227"
+canonical_issue: "#126227"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32227057135](https://github.com/openclaw/clawsweeper/actions/runs/32227057135)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32228553447](https://github.com/openclaw/clawsweeper/actions/runs/32228553447)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/126227
+Canonical: #126227
 
 ## Summary
 
-Confirmed on current main 554dfbe0: both toRetryError and normalization-core toErrorObject use Object.assign onto a fresh Error. A JSON-parsed own enumerable __proto__ makes the result fail instanceof Error while retaining ordinary fields. Repair planning is complete, but implementation/validation is blocked in this read-only checkout: node_modules is absent, and ../codex is absent for the repository-required direct Codex-source audit.
+#126227 is a reproducible current-main bug: both conversions use Object.assign onto Error, and a JSON-parsed own __proto__ changes the returned Error prototype. A narrow two-owner fix artifact is ready, but this worker cannot edit or validate it: ../codex is absent (mandatory direct-source gate), node_modules lacks tsx, and the filesystem is read-only.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Confirmed on current main 554dfbe0: both toRetryError and normalization-core toE
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126227 | fix_needed | planned | canonical | A narrow producer-boundary repair is warranted; no viable PR is hydrated. |
-| cluster:issue-openclaw-openclaw-126227 | build_fix_artifact | planned | canonical | Create one narrow credited PR from clawsweeper/issue-openclaw-openclaw-126227 after dependencies and required source-audit prerequisites are available. |
-| cluster:issue-openclaw-openclaw-126227 | open_fix_pr | blocked | canonical | Open only after the executor installs dependencies, performs the required direct Codex-source audit, applies the artifact, and passes the listed validation. |
+| #126227 | build_fix_artifact | planned | canonical | Implement on the designated branch in a writable checkout after providing ../codex and installing dependencies. |
 
 ## Needs Human
 

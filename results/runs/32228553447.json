@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126227",
+  "mode": "autonomous",
+  "run_id": "32228553447",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32228553447",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126227.md",
+  "published_at": "2026-08-19T07:49:44.571Z",
+  "canonical": "#126227",
+  "canonical_issue": "#126227",
+  "canonical_pr": null,
+  "summary": "#126227 is a reproducible current-main bug: both conversions use Object.assign onto Error, and a JSON-parsed own __proto__ changes the returned Error prototype. A narrow two-owner fix artifact is ready, but this worker cannot edit or validate it: ../codex is absent (mandatory direct-source gate), node_modules lacks tsx, and the filesystem is read-only.",
+  "actions": [
+    {
+      "target": "#126227",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126227",
+      "candidate_fix": null,
+      "reason": "Implement on the designated branch in a writable checkout after providing ../codex and installing dependencies."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
