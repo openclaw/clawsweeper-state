@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92425"
 mode: "autonomous"
-run_id: "32284999115"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32284999115"
+run_id: "32285980509"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32285980509"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T18:17:42.768Z"
+published_at: "2026-08-19T18:25:55.660Z"
 canonical: "https://github.com/openclaw/openclaw/issues/92425"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/92425"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32284999115](https://github.com/openclaw/clawsweeper/actions/runs/32284999115)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32285980509](https://github.com/openclaw/clawsweeper/actions/runs/32285980509)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/92425
 
 ## Summary
 
-Main still has the schema-versus-service diagnostic bug, but this read-only checkout has no dependencies and cannot create or validate the required PR branch. A narrow fix artifact is ready for a writable executor.
+Implementation is blocked before code changes: required sibling ../codex source is absent and cannot be cloned in this read-only sandbox; focused reproduction also cannot run because tsx is unavailable and pnpm/Corepack cannot create its cache. Current main source still shows the schema/service ownership split described by the issue.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Main still has the schema-versus-service diagnostic bug, but this read-only chec
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #92425 | fix_needed | planned | canonical | #92425 is the live canonical bug report; no viable open PR exists. |
-| #92427 | keep_closed | skipped | superseded | Already closed; no mutation permitted or needed. |
-| #92898 | keep_closed | skipped | superseded | Already closed; no mutation permitted or needed. |
-| cluster:issue-openclaw-openclaw-92425 | build_fix_artifact | blocked | canonical | Implementation requires a writable checkout with dependencies and direct Codex-source inspection. |
+| #92425 | fix_needed | blocked | canonical | Do not edit or open a PR until the executor has the required ../codex source checkout and a writable dependency/test environment. |
+| #92427 | keep_closed | skipped | superseded | Closed context ref; no mutation. |
+| #92898 | keep_closed | skipped | superseded | Closed context ref; no mutation. |
+| cluster:issue-openclaw-openclaw-92425 | build_fix_artifact | planned | canonical | Keep the 160-byte product contract; remove duplicate runtime character gates so the proposal service can return one actionable byte-aware retry message. |
 
 ## Needs Human
 
