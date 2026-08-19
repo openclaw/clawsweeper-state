@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T17:48:13.262Z",
+  "updated_at": "2026-08-19T17:49:44.792Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5152975611:2026-08-01T19:10:51Z:re_review",
-      "comment_id": "5152975611",
-      "comment_version_key": "5152975611:2026-08-01T19:10:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5152975611",
-      "comment_created_at": "2026-08-01T19:10:51Z",
-      "comment_updated_at": "2026-08-01T19:10:51Z",
-      "comment_body_sha256": "57072c310882878838c028afc808fe4e3aefa1945c458a9cf5b2c3d91335005a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T07:52:25.228Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5198035046:2026-08-05T22:17:50Z:re_review",
       "comment_id": "5198035046",
@@ -32266,6 +32239,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:95:5345916681:2026-08-19T17:48:58Z:clawsweeper_needs_human",
+      "comment_id": "5345916681",
+      "comment_version_key": "5345916681:2026-08-19T17:48:58Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/95#issuecomment-5345916681",
+      "comment_created_at": "2026-08-19T17:48:58Z",
+      "comment_updated_at": "2026-08-19T17:48:58Z",
+      "comment_body_sha256": "aba5f1ac07d15323b92f8fc3552e0bc83715da1c8004d4ebfc2146c532c52654",
+      "repo": "openclaw/ocm",
+      "issue_number": 95,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed because source review found no discrete patch defect; the remaining action is normal platform-check completion and maintainer review. (sha=d590c61d0382109efe332400d58fadbe55f449ce)",
+      "expected_head_sha": "d590c61d0382109efe332400d58fadbe55f449ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T17:49:44.792Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/upgrade-health-probe-flake",
+        "head_sha": "d590c61d0382109efe332400d58fadbe55f449ce",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
