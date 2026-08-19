@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T06:57:10.947Z",
+  "updated_at": "2026-08-19T06:58:28.604Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5319960074:2026-08-17T20:37:05Z:re_review",
-      "comment_id": "5319960074",
-      "comment_version_key": "5319960074:2026-08-17T20:37:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5319960074",
-      "comment_created_at": "2026-08-17T20:37:05Z",
-      "comment_updated_at": "2026-08-17T20:37:05Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T01:52:49.876Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5320042749:2026-08-17T20:45:25Z:re_review",
       "comment_id": "5320042749",
@@ -32039,6 +32012,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T06:57:10.947Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:82:5338591070:2026-08-19T06:52:42Z:clawsweeper_needs_human",
+      "comment_id": "5338591070",
+      "comment_version_key": "5338591070:2026-08-19T06:52:42Z",
+      "comment_url": "https://github.com/openclaw/graincrawl/pull/82#issuecomment-5338591070",
+      "comment_created_at": "2026-08-19T06:52:42Z",
+      "comment_updated_at": "2026-08-19T06:52:42Z",
+      "comment_body_sha256": "3ea643714eba5e6a9c8dd6dede2550e299cf845f60482a4d3aa548fb10b90b69",
+      "repo": "openclaw/graincrawl",
+      "issue_number": 82,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This updates executable third-party CI action behavior, so the remaining required GitHub checks should complete before merge to confirm the scanner remains usable in this workflow. (sha=af813aee0211bc58719ccfdf5a12d8cf56ca0b09)",
+      "expected_head_sha": "af813aee0211bc58719ccfdf5a12d8cf56ca0b09",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T06:58:28.604Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.97.0",
+        "head_sha": "af813aee0211bc58719ccfdf5a12d8cf56ca0b09",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
