@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-62505"
 mode: "autonomous"
-run_id: "32243502113"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32243502113"
+run_id: "32244705693"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32244705693"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T10:47:14.353Z"
+published_at: "2026-08-19T11:03:37.936Z"
 canonical: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32243502113](https://github.com/openclaw/clawsweeper/actions/runs/32243502113)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32244705693](https://github.com/openclaw/clawsweeper/actions/runs/32244705693)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 ## Summary
 
-Current main still rejects a scoped background exec completion when heartbeat cadence is 0m: the producer sends exec-event with intent:event, while unscheduled admission accepts only intent:immediate. A narrow generic fix is mapped, but this checkout is read-only, lacks node_modules, and lacks the mandatory sibling ../codex source; no patch or validated PR can be produced here.
+#62505 remains a confirmed canonical bug: current main rejects targeted `exec-event` wakes with `intent: "immediate"` when `heartbeat.every` is `0m`, both in scheduler dispatch and execution-stage gating. A narrow shared-policy repair is ready, but this worker cannot implement or validate it: the checkout is read-only with no node_modules, Corepack cannot create its cache, and required sibling ../codex source is unavailable for the repository’s Codex hard gate.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Current main still rejects a scoped background exec completion when heartbeat ca
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #62505 | fix_needed | blocked | canonical | Implementation is blocked only by the execution environment. The mapped fix remains a narrow, non-security repair for the canonical issue. |
-| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | planned | canonical | Prepared for an executor with a writable checkout, dependencies, and the required sibling Codex source. |
-| #67913 | keep_closed | skipped | superseded | Already closed in hydrated state. |
-| #76877 | keep_closed | skipped | independent | Already closed and not part of this repair surface. |
-| #79869 | route_security | planned | security_sensitive | Route only this ref to central OpenClaw security handling; do not mutate it. |
-| #109738 | keep_independent | planned | independent | Open but independently owned; leave it untouched. |
+| #62505 | fix_needed | blocked | canonical | Implementation and pre-fix/fixed regression validation require a writable checkout with dependencies and the required direct ../codex inspection. |
+| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | planned | canonical | Narrow fix path prepared for a writable executor. |
+| #67913 | keep_closed | skipped | superseded | Already closed historical evidence; no closure action is valid. |
+| #76877 | keep_closed | skipped | independent | Closed adjacent report, not part of the disabled-cadence exec-completion repair. |
+| #79869 | route_security | planned | security_sensitive | Quarantine this exact item for central OpenClaw security triage; it does not block #62505's non-security fix artifact. |
+| #109738 | keep_independent | planned | independent | Keep open under its own maintainer/security review path. |
 
 ## Needs Human
 
