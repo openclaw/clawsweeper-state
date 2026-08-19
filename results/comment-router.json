@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T18:57:38.332Z",
+  "updated_at": "2026-08-19T18:57:45.627Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125067:5340021820:2026-08-19T09:12:24Z:re_review",
-      "comment_id": "5340021820",
-      "comment_version_key": "5340021820:2026-08-19T09:12:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125067#issuecomment-5340021820",
-      "comment_created_at": "2026-08-19T09:12:24Z",
-      "comment_updated_at": "2026-08-19T09:12:24Z",
-      "comment_body_sha256": "a8060db5a0001f3e41a5dd3dcdeb93a87a04dc5bfba4381ccc223cd62943738a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125067,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T09:13:11.114Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sidebar/session-title-reveal",
-        "head_sha": "a2a8e4433a6f1aadd155aab7f01cd85a5a7623b2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118499:5340032586:2026-08-19T09:13:22Z:re_review",
       "comment_id": "5340032586",
@@ -32053,6 +32006,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/tool-narration-block-layout",
         "head_sha": "5cc5fb91dbdb06b874dbbb056a6d763973d7b0be",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126345:5345813236:2026-08-19T18:52:45Z:clawsweeper_needs_human",
+      "comment_id": "5345813236",
+      "comment_version_key": "5345813236:2026-08-19T18:52:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126345#issuecomment-5345813236",
+      "comment_created_at": "2026-08-19T17:39:04Z",
+      "comment_updated_at": "2026-08-19T18:52:45Z",
+      "comment_body_sha256": "67a63e81238958cbcb6106a2edca06f2e30bab26a69178d8626f903db9106e69",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126345,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - No inspectable after-fix screenshot or recording is attached; the PR body says visual review is still pending, leaving real hover and focus behavior unconfirmed. (sha=833460b46ef7350c1489f81ef2fde9fe7bdd067f)",
+      "expected_head_sha": "833460b46ef7350c1489f81ef2fde9fe7bdd067f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T18:57:45.627Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/session-menu-dismiss-hovercard",
+        "head_sha": "833460b46ef7350c1489f81ef2fde9fe7bdd067f",
         "cluster_id": null,
         "job_path": null
       }
