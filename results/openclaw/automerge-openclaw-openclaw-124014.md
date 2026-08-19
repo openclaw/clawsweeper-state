@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-124014"
 mode: "autonomous"
-run_id: "32209879397"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32209879397"
+run_id: "32207300185"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32207300185"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-19T03:02:39.404Z"
+published_at: "2026-08-19T02:16:07.430Z"
 canonical: "#124014"
-canonical_issue: "#70903"
+canonical_issue: null
 canonical_pr: "#124014"
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32209879397](https://github.com/openclaw/clawsweeper/actions/runs/32209879397)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32207300185](https://github.com/openclaw/clawsweeper/actions/runs/32207300185)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #124014
 
 ## Summary
 
-#124014 remains the adopted canonical repair path. Its latest hydrated review identifies an unresolved state-root regression and its exact-head CI has failures, so it requires a contributor-branch repair and fresh validation; no merge or close is proposed.
+Make PR #124014 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Canonical: #124014
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #70903 | keep_related | planned | related | Keep the issue open as related context while #124014 is repaired and validated. |
-| #124014 | fix_needed | planned | canonical | Repair the same-repository contributor branch; do not replace it solely because maintainer_can_modify is false. |
-| #124014 | build_fix_artifact | planned | canonical | Provide the deterministic executor a narrow credited repair contract. |
+| #124014 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
