@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T02:30:07.158Z",
+  "updated_at": "2026-08-19T02:31:45.384Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4714209378:2026-06-16T02:12:53Z:re_review",
-      "comment_id": "4714209378",
-      "comment_version_key": "4714209378:2026-06-16T02:12:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4714209378",
-      "comment_created_at": "2026-06-16T02:12:53Z",
-      "comment_updated_at": "2026-06-16T02:12:53Z",
-      "comment_body_sha256": "9ba815b1b6646c64399b109730c988935d78085925fd05680f7c1d242f7e2e5f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T22:42:46.437Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4717352774:2026-06-16T10:06:15Z:re_review",
       "comment_id": "4717352774",
@@ -31297,6 +31270,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126124:5336777020:2026-08-19T02:29:30Z:clawsweeper_needs_human",
+      "comment_id": "5336777020",
+      "comment_version_key": "5336777020:2026-08-19T02:29:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126124#issuecomment-5336777020",
+      "comment_created_at": "2026-08-19T02:29:30Z",
+      "comment_updated_at": "2026-08-19T02:29:30Z",
+      "comment_body_sha256": "1717b46907f19a1cfc6cb4b64d1d77bc647d4f6cca3f4bd9b908434587c9dc3b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126124,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds 133 net production lines; the stateful compact view is justified by keeping one action renderer, but it should not gain a parallel mobile action path. (sha=6326290c6fa86454d521d4603dd3e542c00ed096)",
+      "expected_head_sha": "6326290c6fa86454d521d4603dd3e542c00ed096",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T02:31:45.384Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/mobile-menu-issue-approaches",
+        "head_sha": "6326290c6fa86454d521d4603dd3e542c00ed096",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
