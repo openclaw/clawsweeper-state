@@ -67,20 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the shared gateway chat display projection so an actual text-cap truncation produces preserved structured __openclaw truncation metadata for session.message, chat history/SSE, and embedded sessions_history consumers. Capture a failing regression first; propagate the truncation fact through text, content-block, and mixed-tool projection paths without treating the sentinel string as the source of truth. Preserve existing metadata and oversized-transcript semantics, do not alter the cap or add configuration, and retain the Control UI sentinel fallback for older gateways. Do not edit CHANGELOG.md; record user-visible release context in the PR body or commit message.
+Repair the shared Gateway display projection so display-cap truncation records `__openclaw.truncated: true` with `reason: "display-cap"` on the projected message. Preserve existing metadata such as id and seq and the distinct oversized-transcript reason; cover string content and assistant text blocks, then prove the flag reaches session.message and shared history/lookup projections. Add a regression that fails before the fix, do not change the 8,000-character default or durable transcript, do not add config or a protocol version, and do not edit CHANGELOG.md; include release-note context in the PR body.
 
 Likely files:
 
 - src/gateway/chat-display-projection.sanitize.ts
 - src/gateway/chat-display-projection.test.ts
-- src/gateway/session-history-state.test.ts
-- ui/src/pages/chat/components/chat-message.test.ts
+- src/gateway/session-message-events.test.ts
 
 Validation:
 
-- pnpm test src/gateway/chat-display-projection.test.ts
-- pnpm test src/gateway/session-history-state.test.ts
-- pnpm test ui/src/pages/chat/components/chat-message.test.ts
+- node scripts/run-vitest.mjs src/gateway/chat-display-projection.test.ts src/gateway/session-message-events.test.ts
+- node scripts/check-changed.mjs -- src/gateway/chat-display-projection.sanitize.ts src/gateway/chat-display-projection.test.ts src/gateway/session-message-events.test.ts
 
 ## Operator Prompt
 
