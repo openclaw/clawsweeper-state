@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T10:49:00.204Z",
+  "updated_at": "2026-08-19T10:55:32.799Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123416:5337423647:2026-08-19T04:11:17Z:re_review",
-      "comment_id": "5337423647",
-      "comment_version_key": "5337423647:2026-08-19T04:11:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123416#issuecomment-5337423647",
-      "comment_created_at": "2026-08-19T04:11:17Z",
-      "comment_updated_at": "2026-08-19T04:11:17Z",
-      "comment_body_sha256": "d385397b8dbd9829a9c3839645d4c1d07ffbeffd8c1e4472fe8e0026cda78d18",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123416,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head 4d751eb1781: the update-channel path now registers the seam reader and threads the run's scoped env into isexternalizedbundledpluginenabled (both call sites); real-state two-root regression fails without the fix. 246/246 plugins test files green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T04:27:31.890Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/123297-compat-activation-gate",
-        "head_sha": "4d751eb1781b3cdb7efff1149c5f6739bc6911e2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123976:5337470660:2026-08-19T04:17:58Z:re_review",
       "comment_id": "5337470660",
@@ -31718,6 +31671,39 @@
         "kind": "pull_request",
         "branch": "fix/zh-hans-five-hour-quota-label",
         "head_sha": "655bd35691ee30705f1ca3ae5e7940e88c5ddbe1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1405:5340875352:2026-08-19T10:54:44Z:clawsweeper_needs_human",
+      "comment_id": "5340875352",
+      "comment_version_key": "5340875352:2026-08-19T10:54:44Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1405#issuecomment-5340875352",
+      "comment_created_at": "2026-08-19T10:30:17Z",
+      "comment_updated_at": "2026-08-19T10:54:44Z",
+      "comment_body_sha256": "e14af8caf413ed458bc7e2f7792f8476db8c5c39d55c1619b22c35c000b9da2c",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1405,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body claims a successful authorized live smoke, but no inspectable redacted transcript, terminal capture, log, recording, or artifact shows...; Review finding: [P1] Reject path-traversal key filenames — internal/providers/machine0/backend.go:667-676 - [high] Provider filename can escape the SSH key directory — internal/pr... (sha=ce4735b86a35267ef37c3b7e36781509e8ec845d)",
+      "expected_head_sha": "ce4735b86a35267ef37c3b7e36781509e8ec845d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T10:55:32.799Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/peaceful-shaw-c754e3",
+        "head_sha": "ce4735b86a35267ef37c3b7e36781509e8ec845d",
         "cluster_id": null,
         "job_path": null
       }
