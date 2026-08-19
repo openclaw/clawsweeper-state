@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing completion invariant for https://github.com/openclaw/openclaw/issues/62505: an output-bearing background `tools.exec.notifyOnExit` completion must obtain one scoped agent turn when `agents.defaults.heartbeat.every: "0m"` disables only periodic monitoring. Keep the producer’s `source: "exec-event"` and `intent: "event"`; repair the shared unscheduled-target policy used by both scheduler and runner rather than special-casing a provider/model or converting it into a generic notification. Preserve configured-agent targeting, canonical session routing, completion preflight, busy guards, and non-targeted rejection. First establish the failing regression on current main, then add focused passing coverage. Do not edit CHANGELOG.md; include release-note context in the PR body. Related closed attempts for context only: https://github.com/openclaw/openclaw/pull/67913 and https://github.com/openclaw/openclaw/pull/79869.
+Repair the generic background-exec completion path for configured agents with `agents.defaults.heartbeat.every: "0m"`. Reproduce with a focused regression first: a completed background exec must enqueue an `exec-event` and obtain one scoped completion turn even though periodic heartbeats remain disabled. Extend the shared unscheduled-wake policy and its execution-stage gate; do not add a Codex/OpenAI-specific branch, new config, fallback scheduler, or periodic heartbeat enrollment. Preserve the configured-agent and exact-session targeting checks. Add owner-boundary regression coverage that fails on current main, including disabled-cadence dispatch and consumption of an exec completion. Do not edit CHANGELOG.md; record user-visible release context in the PR body.
 
 Likely files:
 
 - src/infra/heartbeat-wake-policy.ts
-- src/infra/heartbeat-runner-scheduler.test.ts
+- src/infra/heartbeat-runner.targeted-unscheduled-wake.test.ts
+- src/infra/heartbeat-runner.returns-default-unset.test.ts
 - src/infra/heartbeat-runner-execution.ts
-- src/agents/bash-tools.exec-runtime.ts
 
 Validation:
 
-- pnpm test src/infra/heartbeat-runner.scheduler.test.ts
-- pnpm test src/infra/heartbeat-runner.returns-default-unset.test.ts src/agents/bash-tools.test.ts
-- pnpm check:changed -- src/infra/heartbeat-wake-policy.ts src/infra/heartbeat-runner.scheduler.test.ts
+- node scripts/run-vitest.mjs src/infra/heartbeat-runner.targeted-unscheduled-wake.test.ts
+- node scripts/run-vitest.mjs src/infra/heartbeat-runner.returns-default-unset.test.ts
+- node scripts/run-vitest.mjs src/agents/bash-tools.notify-on-exit-ack.test.ts
 
 ## Operator Prompt
 
