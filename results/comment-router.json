@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T18:45:08.017Z",
+  "updated_at": "2026-08-19T18:45:15.069Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118679:5167057200:2026-08-15T19:48:09Z:clawsweeper_auto_repair",
-      "comment_id": "5167057200",
-      "comment_version_key": "5167057200:2026-08-15T19:48:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118679#issuecomment-5167057200",
-      "comment_created_at": "2026-08-03T13:38:37Z",
-      "comment_updated_at": "2026-08-15T19:48:09Z",
-      "comment_body_sha256": "a54ec59c37848dfc4acebf4c8cc4576d881214d20046f9f11d13a9c4bcddd045",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118679,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c3287e48919c9813f74b04c575f435b58f5bd546)",
-      "expected_head_sha": "c3287e48919c9813f74b04c575f435b58f5bd546",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T08:08:45.246Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-118669",
-        "head_sha": "c3287e48919c9813f74b04c575f435b58f5bd546",
-        "cluster_id": "automerge-openclaw-openclaw-118679",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118679.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119367:5185607290:2026-08-15T23:30:21Z:clawsweeper_auto_repair",
       "comment_id": "5185607290",
@@ -32404,6 +32371,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124831:5309655305:2026-08-19T18:29:52Z:clawsweeper_needs_human",
+      "comment_id": "5309655305",
+      "comment_version_key": "5309655305:2026-08-19T18:29:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124831#issuecomment-5309655305",
+      "comment_created_at": "2026-08-16T21:02:57Z",
+      "comment_updated_at": "2026-08-19T18:29:52Z",
+      "comment_body_sha256": "f713b34ac1632c8682d744e9e87b3c6e336145ae8db8a326a76592850303a4b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124831,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Repair commit-mismatched bundled runtimes (P2)** - A same-version runtime with a different bundled commit reaches this branch and returns decorated found/required strings. The automatic repair gate then parses t...; Review finding: [P2] Repair commit-mismatched bundled runtimes — apps/macos/Sources/OpenClaw/CLIInstaller.swift:384-390 - [low] Verify the managed Codex launcher contract — script... (sha=d45c5c217297072e8c1945c898aee55e42e02e3e)",
+      "expected_head_sha": "d45c5c217297072e8c1945c898aee55e42e02e3e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T18:45:15.069Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/macos-prewarmed-runtime-pr",
+        "head_sha": "956b8357abbc6d90de5e0593386b06a0342f6156",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
