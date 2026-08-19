@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T04:12:28.941Z",
+  "updated_at": "2026-08-19T04:14:19.876Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124015:5300602703:2026-08-19T00:56:12Z:clawsweeper_auto_merge",
-      "comment_id": "5300602703",
-      "comment_version_key": "5300602703:2026-08-19T00:56:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5300602703",
-      "comment_created_at": "2026-08-15T04:50:09Z",
-      "comment_updated_at": "2026-08-19T00:56:12Z",
-      "comment_body_sha256": "77636fcd989a10b2696b16ed2aa74bf8ac83a4d6d999f8333ccd9eb5f44c2c1e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124015,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=a421824063ccad4ba61ba33976cd39d38426862a); current checks are failing: checks-node-changed-extensions-config-10:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": "a421824063ccad4ba61ba33976cd39d38426862a",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T00:57:45.324Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/signal-port-collision",
-        "head_sha": "a421824063ccad4ba61ba33976cd39d38426862a",
-        "cluster_id": "automerge-openclaw-openclaw-124015",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124015.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124015.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124015:5312365208:2026-08-17T05:53:06Z:re_review",
       "comment_id": "5312365208",
@@ -30744,6 +30697,39 @@
         "kind": "pull_request",
         "branch": "codex/bridge-agent-execution-trace",
         "head_sha": "7745128873e211a756d81c76fa45660ce5f44f39",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126107:5336319233:2026-08-19T04:13:28Z:clawsweeper_needs_human",
+      "comment_id": "5336319233",
+      "comment_version_key": "5336319233:2026-08-19T04:13:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126107#issuecomment-5336319233",
+      "comment_created_at": "2026-08-19T01:19:49Z",
+      "comment_updated_at": "2026-08-19T04:13:28Z",
+      "comment_body_sha256": "1e95ebbf88c1a9d264c23f953bd9d07ed87ac26d2e93a1d7a8c798f219cac9c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126107,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new receipt and deferred outcome are consumed outside this repository; until the OCM consumer is checked, a field or ordering mismatch could skip the intended post-ready completio... (sha=b0b3fd1684a4f7a3373ac9f529ef4c0d3969a06a)",
+      "expected_head_sha": "b0b3fd1684a4f7a3373ac9f529ef4c0d3969a06a",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-19T04:14:19.876Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-finalize-phase-timings",
+        "head_sha": "b0b3fd1684a4f7a3373ac9f529ef4c0d3969a06a",
         "cluster_id": null,
         "job_path": null
       }
