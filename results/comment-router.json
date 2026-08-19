@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T01:30:34.152Z",
+  "updated_at": "2026-08-19T01:31:36.862Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122574:5266753595:2026-08-12T12:23:47Z:re_review",
-      "comment_id": "5266753595",
-      "comment_version_key": "5266753595:2026-08-12T12:23:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122574#issuecomment-5266753595",
-      "comment_created_at": "2026-08-12T12:23:47Z",
-      "comment_updated_at": "2026-08-12T12:23:47Z",
-      "comment_body_sha256": "9c1cc93d2f08559ecbda81d111230dc234a5f4875801befffef5e4607d5de59c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122574,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T20:56:43.485Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122574:5266844209:2026-08-12T12:32:06Z:re_review",
       "comment_id": "5266844209",
@@ -32378,6 +32351,53 @@
           "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124025:5300731845:2026-08-19T01:30:33Z:clawsweeper_needs_human",
+      "comment_id": "5300731845",
+      "comment_version_key": "5300731845:2026-08-19T01:30:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5300731845",
+      "comment_created_at": "2026-08-15T05:27:33Z",
+      "comment_updated_at": "2026-08-19T01:30:33Z",
+      "comment_body_sha256": "0754f9b04b6a734635f14ed1b0a947014eef848caeba7a055f57252bffd1d660",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recovery path can abort active work; direct inspection of the Codex item-ID contract is still required by repository policy and the sibling source checkout is unavailable. (sha=cfb43b9094b5f142ec5e35daecfdefdaa2459669)",
+      "expected_head_sha": "cfb43b9094b5f142ec5e35daecfdefdaa2459669",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T01:31:36.862Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-stale-tool-eligibility",
+        "head_sha": "cfb43b9094b5f142ec5e35daecfdefdaa2459669",
+        "cluster_id": "automerge-openclaw-openclaw-124025",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124025.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
           "job_path": null
         },
         {
