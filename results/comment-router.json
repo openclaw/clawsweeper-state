@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T05:50:34.501Z",
+  "updated_at": "2026-08-19T05:50:36.973Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5259559764:2026-08-11T22:25:32Z:re_review",
-      "comment_id": "5259559764",
-      "comment_version_key": "5259559764:2026-08-11T22:25:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5259559764",
-      "comment_created_at": "2026-08-11T22:25:32Z",
-      "comment_updated_at": "2026-08-11T22:25:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T01:46:51.220Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5273332453:2026-08-12T22:06:22Z:re_review",
       "comment_id": "5273332453",
@@ -31023,6 +30996,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T05:50:34.501Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120606:5227052448:2026-08-19T05:42:55Z:clawsweeper_needs_human",
+      "comment_id": "5227052448",
+      "comment_version_key": "5227052448:2026-08-19T05:42:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120606#issuecomment-5227052448",
+      "comment_created_at": "2026-08-08T16:41:39Z",
+      "comment_updated_at": "2026-08-19T05:42:55Z",
+      "comment_body_sha256": "31b926ed9336440e7176d07cd426946b819b71e109504027546144bf7be0f38f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120606,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The retry-retention predicate is an exclusion list: a future terminal reason not named there would be retained like a retryable error rather than failing closed at grace expiry. (sha=36d93ac763a16165435a65199de64c0a9fc874ed)",
+      "expected_head_sha": "36d93ac763a16165435a65199de64c0a9fc874ed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T05:50:36.973Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/issue-120561",
+        "head_sha": "36d93ac763a16165435a65199de64c0a9fc874ed",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
