@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T04:06:34.291Z",
+  "updated_at": "2026-08-19T04:06:37.259Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126096:5336090940:2026-08-19T00:46:03Z:re_review",
-      "comment_id": "5336090940",
-      "comment_version_key": "5336090940:2026-08-19T00:46:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126096#issuecomment-5336090940",
-      "comment_created_at": "2026-08-19T00:46:03Z",
-      "comment_updated_at": "2026-08-19T00:46:03Z",
-      "comment_body_sha256": "eb6713f20366dbae2a996d381a236409d53bb3797c8903fe8eb2e9cfb7209f27",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126096,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T00:51:55.351Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/quirky-edison-21a2fa",
-        "head_sha": "9324c376a794df4c2a3ca404ddf0de1d28342532",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110917:5012628251:2026-08-19T00:32:15Z:clawsweeper_needs_human",
       "comment_id": "5012628251",
@@ -30777,6 +30730,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126170:5337386575:2026-08-19T04:05:28Z:clawsweeper_auto_repair",
+      "comment_id": "5337386575",
+      "comment_version_key": "5337386575:2026-08-19T04:05:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126170#issuecomment-5337386575",
+      "comment_created_at": "2026-08-19T04:05:28Z",
+      "comment_updated_at": "2026-08-19T04:05:28Z",
+      "comment_body_sha256": "c3652bdf7062d15c2de021b83f930f8e3052a2b3a58b15c286544c0c547e34ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126170,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d4227ae4414354624dead2569c585330db2cf308)",
+      "expected_head_sha": "d4227ae4414354624dead2569c585330db2cf308",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T04:06:37.259Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/elegant-ptolemy-6a97ea",
+        "head_sha": "d4227ae4414354624dead2569c585330db2cf308",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
