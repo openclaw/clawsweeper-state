@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126090"
 mode: "autonomous"
-run_id: "32208671835"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32208671835"
+run_id: "32204192503"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32204192503"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T02:41:17.032Z"
+published_at: "2026-08-19T03:21:51.483Z"
 canonical: "https://github.com/openclaw/openclaw/issues/126090"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/126090"
 canonical_pr: null
-actions_total: 8
+actions_total: 9
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32208671835](https://github.com/openclaw/clawsweeper/actions/runs/32208671835)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32204192503](https://github.com/openclaw/clawsweeper/actions/runs/32204192503)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/126090
 
 ## Summary
 
-Implementation is blocked before a Codex verdict or source edit: the required sibling ../codex checkout is absent, and this read-only worker cannot clone it or create/update the required repair branch. The hydrated issue remains the open canonical report; its narrow owner-boundary repair plan is preserved below for a writable executor after the mandatory Codex-source check.
+The planned repair is narrow and owner-boundary scoped, but this read-only checkout cannot be changed or tested and the required sibling ../codex source is unavailable for the mandatory Codex gate. No GitHub mutation was made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 8 |
+| Worker actions | 9 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Implementation is blocked before a Codex verdict or source edit: the required si
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #126090 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,14 +66,15 @@ Implementation is blocked before a Codex verdict or source edit: the required si
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #8221 | keep_closed | skipped | related | Already closed; not a mutation target. |
-| #44467 | keep_closed | skipped | related | Already closed historical context. |
-| #65493 | keep_closed | skipped | related | Already closed historical context. |
-| #66953 | keep_closed | skipped | related | Already closed historical context. |
-| #94930 | keep_closed | skipped | related | Already closed historical context. |
-| #95069 | route_security | planned | security_sensitive | Central OpenClaw security handling owns this marked item. |
-| #126090 | fix_needed | blocked | canonical | A writable executor must first provide ../codex and personally inspect the applicable Codex runtime/protocol source, then reproduce and repair on the prescribed branch. |
-| cluster:issue-openclaw-openclaw-126090 | build_fix_artifact | blocked | canonical | Branch creation and edits are unavailable in this read-only worker. |
+| #126090 | fix_needed | blocked | canonical | Implementation is blocked locally: filesystem access is read-only and ../codex is absent, so the required direct Codex-source gate and failing/passing regression validation cannot be completed. |
+| #8221 | keep_closed | skipped | related | Already closed; historical evidence only. |
+| #44467 | keep_closed | skipped | related | Already closed; historical evidence only. |
+| #65493 | keep_closed | skipped | related | Already closed; historical evidence only. |
+| #66953 | keep_closed | skipped | related | Already closed; historical evidence only. |
+| #94930 | keep_closed | skipped | related | Already closed; historical evidence only. |
+| #95069 | route_security | planned | security_sensitive | Route this exact item to central OpenClaw security handling; it does not block the independent #126090 repair. |
+| cluster:issue-openclaw-openclaw-126090 | build_fix_artifact | planned |  | A narrow fix PR remains appropriate once an executor with a writable checkout and the required Codex sibling source completes the repair. |
+| cluster:issue-openclaw-openclaw-126090 | open_fix_pr | blocked |  | No branch delta can be produced in this read-only environment. |
 
 ## Needs Human
 

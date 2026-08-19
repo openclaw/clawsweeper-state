@@ -1,0 +1,120 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126090",
+  "mode": "autonomous",
+  "run_id": "32204192503",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32204192503",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126090.md",
+  "published_at": "2026-08-19T03:21:51.483Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126090",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126090",
+  "canonical_pr": null,
+  "summary": "The planned repair is narrow and owner-boundary scoped, but this read-only checkout cannot be changed or tested and the required sibling ../codex source is unavailable for the mandatory Codex gate. No GitHub mutation was made.",
+  "actions": [
+    {
+      "target": "#126090",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126090",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked locally: filesystem access is read-only and ../codex is absent, so the required direct Codex-source gate and failing/passing regression validation cannot be completed."
+    },
+    {
+      "target": "#8221",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126090",
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#44467",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126090",
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#65493",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126090",
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#66953",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126090",
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#94930",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126090",
+      "candidate_fix": "#95069",
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#95069",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this exact item to central OpenClaw security handling; it does not block the independent #126090 repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126090",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#126090",
+      "candidate_fix": null,
+      "reason": "A narrow fix PR remains appropriate once an executor with a writable checkout and the required Codex sibling source completes the repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126090",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#126090",
+      "candidate_fix": null,
+      "reason": "No branch delta can be produced in this read-only environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 5,
+    "route_security": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 5,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
