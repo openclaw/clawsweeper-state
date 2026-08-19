@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T17:02:15.923Z",
+  "updated_at": "2026-08-19T17:02:24.271Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118505:5185170653:2026-08-04T22:08:19Z:re_review",
-      "comment_id": "5185170653",
-      "comment_version_key": "5185170653:2026-08-04T22:08:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118505#issuecomment-5185170653",
-      "comment_created_at": "2026-08-04T22:08:19Z",
-      "comment_updated_at": "2026-08-04T22:08:19Z",
-      "comment_body_sha256": "4929f5a2967e50b0ef40b24c1e6e24174b7ead5bb7140022ef0751086619d5fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118505,
-      "author": "zhilong1115",
-      "author_id": 123119628,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T07:10:57.170Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118505:5186506567:2026-08-05T01:33:36Z:re_review",
       "comment_id": "5186506567",
@@ -32152,6 +32125,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126352:5345367723:2026-08-19T16:58:25Z:clawsweeper_needs_human",
+      "comment_id": "5345367723",
+      "comment_version_key": "5345367723:2026-08-19T16:58:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126352#issuecomment-5345367723",
+      "comment_created_at": "2026-08-19T16:58:25Z",
+      "comment_updated_at": "2026-08-19T16:58:25Z",
+      "comment_body_sha256": "09ab34b5e2e2bf1cc47c8bd5bcfac73337944a2e05402bac82f68bedb1795846",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126352,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main and required checks are still running, so landing should use a green current merge result. (sha=464b0d10d97052ff86955d7eef557979ac41eb89)",
+      "expected_head_sha": "464b0d10d97052ff86955d7eef557979ac41eb89",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T17:02:24.271Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-teardown-remaining-fixtures",
+        "head_sha": "464b0d10d97052ff86955d7eef557979ac41eb89",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
