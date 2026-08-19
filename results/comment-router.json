@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T09:57:15.481Z",
+  "updated_at": "2026-08-19T10:01:41.233Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3063:5337291160:2026-08-19T03:49:44Z:re_review",
-      "comment_id": "5337291160",
-      "comment_version_key": "5337291160:2026-08-19T03:49:44Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3063#issuecomment-5337291160",
-      "comment_created_at": "2026-08-19T03:49:44Z",
-      "comment_updated_at": "2026-08-19T03:49:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3063,
-      "author": "Chipagosfinest",
-      "author_id": 44984861,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T03:57:07.010Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/overview-full-accounting-scope",
-        "head_sha": "0d75f17d0e769dc274541d373e7cc93afd30974d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3063:5336737437:2026-08-19T03:56:22Z:clawsweeper_needs_human",
       "comment_id": "5336737437",
@@ -31631,6 +31584,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T09:57:15.481Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126285:5340533119:2026-08-19T10:00:39Z:clawsweeper_needs_human",
+      "comment_id": "5340533119",
+      "comment_version_key": "5340533119:2026-08-19T10:00:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126285#issuecomment-5340533119",
+      "comment_created_at": "2026-08-19T10:00:39Z",
+      "comment_updated_at": "2026-08-19T10:00:39Z",
+      "comment_body_sha256": "6d64bbbce9ddd2f2352cac00674e3ae54cb2052bd4ee957ca9cabd21225fb41f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126285,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - This adds a bounded but substantial POSIX shutdown path (+436 net production lines); an error in process identity, signal ordering, or timeout unwind could delay or disrupt app-server... (sha=90e81b80d1f819c4700e7dc18cb440f1a398a1d7)",
+      "expected_head_sha": "90e81b80d1f819c4700e7dc18cb440f1a398a1d7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T10:01:41.233Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-app-server-descendant-reaping-20260819",
+        "head_sha": "90e81b80d1f819c4700e7dc18cb440f1a398a1d7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
