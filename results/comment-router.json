@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T23:34:58.488Z",
+  "updated_at": "2026-08-19T23:35:36.573Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126322:5343137264:2026-08-19T14:11:26Z:clawsweeper_needs_human",
-      "comment_id": "5343137264",
-      "comment_version_key": "5343137264:2026-08-19T14:11:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126322#issuecomment-5343137264",
-      "comment_created_at": "2026-08-19T13:54:52Z",
-      "comment_updated_at": "2026-08-19T14:11:26Z",
-      "comment_body_sha256": "1492f62eff00a2f3bb6cd8a6b689de286f864ad5b2ce156aabea25cc201ab9dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126322,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports tests and checks but supplies no redacted after-fix gateway startup trace or other real behavior artifact. After adding proof, u... (sha=2141c2519b08bc7779fc4d6e1fbd8575d56e94d7)",
-      "expected_head_sha": "2141c2519b08bc7779fc4d6e1fbd8575d56e94d7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T14:12:27.631Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/i011-interrupted-subagent-recovery",
-        "head_sha": "2141c2519b08bc7779fc4d6e1fbd8575d56e94d7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117650:5153598048:2026-08-19T14:04:39Z:clawsweeper_auto_repair",
       "comment_id": "5153598048",
@@ -31792,6 +31759,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126085:5349280959:2026-08-19T23:34:55Z:re_review",
+      "comment_id": "5349280959",
+      "comment_version_key": "5349280959:2026-08-19T23:34:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126085#issuecomment-5349280959",
+      "comment_created_at": "2026-08-19T23:34:55Z",
+      "comment_updated_at": "2026-08-19T23:34:55Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126085,
+      "author": "Schimuneck",
+      "author_id": 715074,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T23:35:34.813Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-stop-scoped-probe-v2",
+        "head_sha": "782ec44e5ad771caedc5e4975a20995e7915b8ce",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
