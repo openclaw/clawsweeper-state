@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T09:21:47.555Z",
+  "updated_at": "2026-08-19T09:25:27.344Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123976:5300309045:2026-08-19T03:38:43Z:clawsweeper_needs_human",
-      "comment_id": "5300309045",
-      "comment_version_key": "5300309045:2026-08-19T03:38:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123976#issuecomment-5300309045",
-      "comment_created_at": "2026-08-15T03:27:04Z",
-      "comment_updated_at": "2026-08-19T03:38:43Z",
-      "comment_body_sha256": "6a44012d055e0407fd67ed4a6d33cdc2ebadc2c77465a4529556e5423da5bf2c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123976,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The watchdog deliberately retries until the lease is removed or the host recovers; maintainers must accept that a permanently unhealthy host retains a detached recovery process. (sha=06cf1234d28db52a3b3ae8cd471dcf58418ddc75)",
-      "expected_head_sha": "06cf1234d28db52a3b3ae8cd471dcf58418ddc75",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T03:43:22.141Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/workspace-quiescence-thaw",
-        "head_sha": "06cf1234d28db52a3b3ae8cd471dcf58418ddc75",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126143:5337241545:2026-08-19T03:42:19Z:clawsweeper_needs_human",
       "comment_id": "5337241545",
@@ -31661,6 +31628,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125067:5340153642:2026-08-19T09:24:42Z:re_review",
+      "comment_id": "5340153642",
+      "comment_version_key": "5340153642:2026-08-19T09:24:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125067#issuecomment-5340153642",
+      "comment_created_at": "2026-08-19T09:24:42Z",
+      "comment_updated_at": "2026-08-19T09:24:42Z",
+      "comment_body_sha256": "2d171a019e94f1d9b3c52d428bfc4f5f52178a8a5a9636872da25b754de70bfa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125067,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T09:25:24.680Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sidebar/session-title-reveal",
+        "head_sha": "582a85a74d896381d81364109d88c201a569285f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
