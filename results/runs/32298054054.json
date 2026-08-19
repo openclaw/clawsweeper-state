@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126436",
+  "mode": "autonomous",
+  "run_id": "32298054054",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32298054054",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126436.md",
+  "published_at": "2026-08-19T20:30:19.095Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126436",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126436",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before edits: the required sibling ../codex source is absent and cannot be cloned in this read-only, network-restricted checkout; node_modules is also absent, so the focused Vitest command fails resolving tsx. The hydrated issue remains the canonical open item; a narrow fix plan is prepared for a writable executor.",
+  "actions": [
+    {
+      "target": "#126436",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126436",
+      "candidate_fix": null,
+      "reason": "A writable checkout with dependencies and the required sibling Codex source is needed before reproducing with a failing regression test or changing code."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126436",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126436",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor, but the current environment cannot satisfy the mandatory Codex-source and dependency prerequisites."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable OpenClaw checkout with dependencies and the required sibling ../codex source (or an environment where it can be cloned), then run the prepared narrow repair."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#126436",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
