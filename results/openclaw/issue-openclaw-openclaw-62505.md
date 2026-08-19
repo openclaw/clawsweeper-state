@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-62505"
 mode: "autonomous"
-run_id: "32260723049"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32260723049"
+run_id: "32262576395"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32262576395"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-19T14:20:13.452Z"
+published_at: "2026-08-19T14:34:33.873Z"
 canonical: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_pr: null
-actions_total: 2
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32260723049](https://github.com/openclaw/clawsweeper/actions/runs/32260723049)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32262576395](https://github.com/openclaw/clawsweeper/actions/runs/32262576395)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 ## Summary
 
-A narrow generic repair is identified, but this read-only checkout lacks the required test dependency and sibling Codex checkout, so implementation and validation cannot safely proceed here.
+#62505 remains a real, narrow bug on main 627084304a9167544badaf6902db2720fd9f7859: notify-on-exit enqueues a scoped exec-event, but the shared unscheduled-wake policy excludes it, causing disabled cadence to reject the completion before a turn runs. Implementation and validation are blocked in this read-only checkout: ../codex is absent (a repository hard gate for code changes) and node_modules/tsx is absent, so focused Vitest cannot start.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ A narrow generic repair is identified, but this read-only checkout lacks the req
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #62505 |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,10 @@ A narrow generic repair is identified, but this read-only checkout lacks the req
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #62505 | fix_needed | planned | canonical | Create one narrow fix PR from the configured ClawSweeper branch after preparing a writable dependency-ready checkout. |
-| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | planned |  | The executable repair plan is ready; local implementation is blocked only by the sandbox. |
+| #62505 | fix_needed | blocked | canonical | A narrow repair is defined, but this worker cannot legally patch or validate it until the Codex sibling and dependencies are available in a writable checkout. |
+| #67913 | keep_closed | skipped | superseded | Already closed. |
+| #76877 | keep_closed | skipped | independent | Already closed and outside this repair invariant. |
+| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | blocked | canonical | Apply in a writable checkout after satisfying the repository Codex-source gate and installing dependencies. |
 
 ## Needs Human
 
