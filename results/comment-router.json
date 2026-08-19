@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T10:43:11.851Z",
+  "updated_at": "2026-08-19T10:44:00.557Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5306286478:2026-08-16T07:17:42Z:re_review",
-      "comment_id": "5306286478",
-      "comment_version_key": "5306286478:2026-08-16T07:17:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5306286478",
-      "comment_created_at": "2026-08-16T07:17:42Z",
-      "comment_updated_at": "2026-08-16T07:17:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T04:18:52.166Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5307592000:2026-08-16T13:08:54Z:re_review",
       "comment_id": "5307592000",
@@ -31710,6 +31683,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126294:5340998842:2026-08-19T10:43:06Z:clawsweeper_needs_human",
+      "comment_id": "5340998842",
+      "comment_version_key": "5340998842:2026-08-19T10:43:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126294#issuecomment-5340998842",
+      "comment_created_at": "2026-08-19T10:43:06Z",
+      "comment_updated_at": "2026-08-19T10:43:06Z",
+      "comment_body_sha256": "ee67bb41b1fe1b031980aee9fe95672fd74c6347fdc6b2035ab64c83c9fa63c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126294,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep the Activity prefix absent without a resolved secret (P2)** - hasConfiguredAccounts accepts any enabled account with an activities object, but resolveDiscordActivitiesConfig treats a missing client secret a...; Review finding: [P2] Keep the Activity prefix absent without a resolved secret — extensions/discord/src/activities/runtime.ts:89 - [low] Incomplete Activity config exposes public... (sha=620ac71aa19f6fa6d94de2bc152569838c31bdaf)",
+      "expected_head_sha": "620ac71aa19f6fa6d94de2bc152569838c31bdaf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T10:44:00.557Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/xenodochial-robinson-5999dc",
+        "head_sha": "620ac71aa19f6fa6d94de2bc152569838c31bdaf",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
