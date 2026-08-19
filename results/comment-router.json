@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T18:57:55.758Z",
+  "updated_at": "2026-08-19T19:02:17.083Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126263:5340077990:2026-08-19T09:17:28Z:re_review",
-      "comment_id": "5340077990",
-      "comment_version_key": "5340077990:2026-08-19T09:17:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126263#issuecomment-5340077990",
-      "comment_created_at": "2026-08-19T09:17:28Z",
-      "comment_updated_at": "2026-08-19T09:17:28Z",
-      "comment_body_sha256": "cf4d41b60c477538ad24bd4d74f0a2c178b515a1d09c61e8ba7c64acb617e994",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126263,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T09:18:11.769Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-terminal-reply-fixture",
-        "head_sha": "7aaa291b55b9c98057cb9a9f4d4bd64682b595fa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123159:5339973528:2026-08-19T09:08:00Z:re_review",
       "comment_id": "5339973528",
@@ -32025,6 +31978,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-computer-run-cleanup-126373",
         "head_sha": "c981242c6b9a6eaddd74d7c88e5e3f314178211c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124831:5309655305:2026-08-19T19:01:21Z:clawsweeper_needs_human",
+      "comment_id": "5309655305",
+      "comment_version_key": "5309655305:2026-08-19T19:01:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124831#issuecomment-5309655305",
+      "comment_created_at": "2026-08-16T21:02:57Z",
+      "comment_updated_at": "2026-08-19T19:01:21Z",
+      "comment_body_sha256": "71466b992bca60c1abba6c445690915d6344ad250bb8a1d5dfb007ded55474b5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124831,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep external plugins out of core dist (P1)** - This selects plugins explicitly excluded from the root package and copies them into dist/extensions, turning separately distributed packages into bundled core runt...; Review finding: [P1] Keep external plugins out of core dist — scripts/stage-macos-prewarmed-plugins.mts:231-245 - [P2] Exercise the prewarmed path in macOS CI — scripts/stage-maco... (sha=e34dca1cd2a7ce6b407c03ef34716f08f06c7a09)",
+      "expected_head_sha": "e34dca1cd2a7ce6b407c03ef34716f08f06c7a09",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T19:02:17.083Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/macos-prewarmed-runtime-pr",
+        "head_sha": "e34dca1cd2a7ce6b407c03ef34716f08f06c7a09",
         "cluster_id": null,
         "job_path": null
       }
