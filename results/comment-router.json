@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T23:13:53.336Z",
+  "updated_at": "2026-08-19T23:15:54.773Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92223:4683056941:2026-08-19T13:36:33Z:clawsweeper_auto_repair",
-      "comment_id": "4683056941",
-      "comment_version_key": "4683056941:2026-08-19T13:36:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/92223#issuecomment-4683056941",
-      "comment_created_at": "2026-06-11T17:09:22Z",
-      "comment_updated_at": "2026-08-19T13:36:33Z",
-      "comment_body_sha256": "c845d64aea92b206ec46e5619d27f6c8467ca221e2e42df53cd56240e7c15763",
-      "repo": "openclaw/openclaw",
-      "issue_number": 92223,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3affedbd0c5ed8a7f472de53231e888618647cf5)",
-      "expected_head_sha": "3affedbd0c5ed8a7f472de53231e888618647cf5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T13:55:31.324Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/90098-canonical-media-limits",
-        "head_sha": "3affedbd0c5ed8a7f472de53231e888618647cf5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96819:4801043172:2026-08-19T13:38:37Z:clawsweeper_auto_repair",
       "comment_id": "4801043172",
@@ -31777,6 +31744,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T23:13:53.336Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1182:5349138552:2026-08-19T23:15:06Z:clawsweeper_needs_human",
+      "comment_id": "5349138552",
+      "comment_version_key": "5349138552:2026-08-19T23:15:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1182#issuecomment-5349138552",
+      "comment_created_at": "2026-08-19T23:15:06Z",
+      "comment_updated_at": "2026-08-19T23:15:06Z",
+      "comment_body_sha256": "200f846e38ad9eb5f9da19b7ef57bc4d7353f89099e76c2b9c0aaa7a78d6d7c3",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1182,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Update the release workflow with the eight-binary staging list (P1)** - This new assertion cannot pass on the submitted head: .github/workflows/ci.yml still has the executable-only staging steps, one tray-EXE ha...; Review finding: [P1] Update the release workflow with the eight-binary staging list — tests/OpenClaw.Tray.Tests/ReleaseSigningWorkflowTests.cs:18 - [high] Unsigned DLLs remain out... (sha=249656bff309d93e5f96a109afa4ee32c34c05af)",
+      "expected_head_sha": "249656bff309d93e5f96a109afa4ee32c34c05af",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T23:15:54.773Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sign-first-party-binaries-web",
+        "head_sha": "249656bff309d93e5f96a109afa4ee32c34c05af",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
