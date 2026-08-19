@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T19:45:49.433Z",
+  "updated_at": "2026-08-19T19:47:19.693Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5340639896:2026-08-19T10:10:59Z:re_review",
-      "comment_id": "5340639896",
-      "comment_version_key": "5340639896:2026-08-19T10:10:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5340639896",
-      "comment_created_at": "2026-08-19T10:10:59Z",
-      "comment_updated_at": "2026-08-19T10:10:59Z",
-      "comment_body_sha256": "cede761f785a3a0fde4b6bb9c14f0572192579d7ce793c7b58249b4af45df042",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T10:11:51.169Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119977-codex-stale-binding-compaction",
-        "head_sha": "f8559ea2bbbc1ec6923219516f6bd8e90edd82fd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126288:5340642025:2026-08-19T10:11:12Z:clawsweeper_needs_human",
       "comment_id": "5340642025",
@@ -32031,6 +31984,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-computer-run-cleanup-126373",
         "head_sha": "be8cae823417e299420897e98ae43c99413f7434",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118467:5162443700:2026-08-19T19:39:57Z:clawsweeper_auto_repair",
+      "comment_id": "5162443700",
+      "comment_version_key": "5162443700:2026-08-19T19:39:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118467#issuecomment-5162443700",
+      "comment_created_at": "2026-08-03T04:54:33Z",
+      "comment_updated_at": "2026-08-19T19:39:57Z",
+      "comment_body_sha256": "28d1c94c2a6fa25ebe0bf33f59dc47d98821ceab1f2b1df3bff6e923ff9272a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118467,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4f15b989f6550a250c842826e17fdf4efe92be21)",
+      "expected_head_sha": "4f15b989f6550a250c842826e17fdf4efe92be21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T19:47:19.693Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hook-message-clone-cache",
+        "head_sha": "4f15b989f6550a250c842826e17fdf4efe92be21",
         "cluster_id": null,
         "job_path": null
       }
