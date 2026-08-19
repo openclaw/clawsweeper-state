@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-115354"
 mode: "autonomous"
-run_id: "32206095018"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32206095018"
+run_id: "32205252068"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32205252068"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-19T01:56:49.093Z"
+published_at: "2026-08-19T01:49:28.495Z"
 canonical: "https://github.com/openclaw/openclaw/issues/115354"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/115354"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 2
 ---
 
 # issue-openclaw-openclaw-115354
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32206095018](https://github.com/openclaw/clawsweeper/actions/runs/32206095018)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32205252068](https://github.com/openclaw/clawsweeper/actions/runs/32205252068)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/115354
 
 ## Summary
 
-No safe implementation PR is planned. Current main unbinds runtime conversation bindings during session reset/delete, and the current Feishu producer only creates explicit lifecycle-owned bindings; the reported catch-all writer is absent. A required direct Codex-source inspection is unavailable in this read-only worker environment, so this cannot be finalized as fixed without a current reproduction or that inspection.
+No automation-safe implementation path: the reported catch-all producer is absent on current main, while changing live runtime-binding precedence would be a cross-channel product decision. Required direct ../codex inspection is also unavailable in this read-only worker.
 
 ## Impact
 
@@ -48,7 +48,7 @@ No safe implementation PR is planned. Current main unbinds runtime conversation 
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 2 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,10 @@ No safe implementation PR is planned. Current main unbinds runtime conversation 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #115354 | keep_canonical | blocked | canonical | The supplied report does not establish a current producer or a reproduction that survives the normal deletion/reset owner boundary; required direct Codex-source inspection is unavailable. |
-| #115391 | keep_closed | skipped | related | Already closed; retained only as related historical evidence. |
+| #115354 | needs_human | blocked | needs_human | A narrow stale-state repair is not supported by the current producer and lifecycle evidence. Deciding whether configured ACP bindings should supersede valid live runtime bindings requires maintainer product direction and a worker with the mandated sibling Codex source. |
+| #115391 | keep_closed | skipped | superseded | Historical partial proposal only; no mutation is appropriate. |
 
 ## Needs Human
 
-- Provide a current reproduction in which a runtime conversation binding survives the normal session reset/delete lifecycle, or confirm that #115354 can be resolved as outdated. The required direct Codex-source inspection is unavailable in this read-only worker environment.
+- Provide a worker environment containing the required sibling ../codex source so the mandatory direct inspection can occur.
+- Decide the intended cross-channel precedence between a valid live runtime conversation binding and a configured ACP binding before any behavior change is planned.
