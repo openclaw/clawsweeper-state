@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T05:50:48.633Z",
+  "updated_at": "2026-08-19T05:50:50.411Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125822:5336493491:2026-08-19T01:46:24Z:re_review",
-      "comment_id": "5336493491",
-      "comment_version_key": "5336493491:2026-08-19T01:46:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125822#issuecomment-5336493491",
-      "comment_created_at": "2026-08-19T01:46:24Z",
-      "comment_updated_at": "2026-08-19T01:46:24Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125822,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T01:47:10.118Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-ui-state",
-        "head_sha": "9cad8bf779b400a5a2fd2a5852964409fa7cbfbf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125815:5328823403:2026-08-19T01:43:02Z:clawsweeper_needs_human",
       "comment_id": "5328823403",
@@ -31012,6 +30965,39 @@
         "kind": "pull_request",
         "branch": "fix/126137-cli-history-merge",
         "head_sha": "1f3932d5e0ed81d95e39ac0314dce80daeab12d3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126138:5337256959:2026-08-19T05:47:45Z:clawsweeper_needs_human",
+      "comment_id": "5337256959",
+      "comment_version_key": "5337256959:2026-08-19T05:47:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126138#issuecomment-5337256959",
+      "comment_created_at": "2026-08-19T03:44:52Z",
+      "comment_updated_at": "2026-08-19T05:47:45Z",
+      "comment_body_sha256": "219a8c1dca0aac0df0ac041dbc8327872609ab56a3b500b039938041b6e6c832",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126138,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, and current-main source could not be materialized locally because the promisor remote DNS lookup failed; refresh exact-head compatibility after reba... (sha=088ada4ae5173c54d4fcf8a35bc106d7a93968cf)",
+      "expected_head_sha": "088ada4ae5173c54d4fcf8a35bc106d7a93968cf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T05:50:50.411Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-telegram-channel-final-mirror-dedup-126090",
+        "head_sha": "088ada4ae5173c54d4fcf8a35bc106d7a93968cf",
         "cluster_id": null,
         "job_path": null
       }
