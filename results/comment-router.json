@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T02:42:42.672Z",
+  "updated_at": "2026-08-19T02:42:56.647Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110652:5011081508:2026-08-18T22:55:29Z:clawsweeper_auto_repair",
-      "comment_id": "5011081508",
-      "comment_version_key": "5011081508:2026-08-18T22:55:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110652#issuecomment-5011081508",
-      "comment_created_at": "2026-07-18T11:28:34Z",
-      "comment_updated_at": "2026-08-18T22:55:29Z",
-      "comment_body_sha256": "19701334f238ff1f4c1ba3046498ff943c9cb4a0e1ed4325e7574a3d40fd5043",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110652,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9c322bee9ea050b23726c13694ae167cab5905e7)",
-      "expected_head_sha": "9c322bee9ea050b23726c13694ae167cab5905e7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T23:03:34.268Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/problem-mcp-stderr-stream-decoding",
-        "head_sha": "9c322bee9ea050b23726c13694ae167cab5905e7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117302:5150624297:2026-08-18T22:55:55Z:clawsweeper_auto_repair",
       "comment_id": "5150624297",
@@ -31373,6 +31340,39 @@
       "status": "skipped",
       "processed_at": "2026-08-19T02:42:42.672Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126088:5335797403:2026-08-19T02:41:53Z:clawsweeper_needs_human",
+      "comment_id": "5335797403",
+      "comment_version_key": "5335797403:2026-08-19T02:41:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126088#issuecomment-5335797403",
+      "comment_created_at": "2026-08-19T00:05:31Z",
+      "comment_updated_at": "2026-08-19T02:41:53Z",
+      "comment_body_sha256": "5d646dc709306ebb33fae2ce5ad8f03c0d81d0ae77fd90f120b6dded5a3d1149",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126088,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep operational run identity out of plugin handoffs (P1)** - The new public operationalRunInstance reaches every plugin harness, but registerSecretEgressProxyRun accepts that pair without revalidating the closu...; Review finding: [P1] Keep operational run identity out of plugin handoffs — src/agents/harness/selection.ts:793-796 - [high] Public SDK leaks operational run identity — src/agents... (sha=f318f89ce663ba033939047c0af31a3ffba704af)",
+      "expected_head_sha": "f318f89ce663ba033939047c0af31a3ffba704af",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T02:42:56.647Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/unknown-breakage-diagnosis-6beb4e",
+        "head_sha": "f318f89ce663ba033939047c0af31a3ffba704af",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
