@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-62505"
 mode: "autonomous"
-run_id: "32256702689"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32256702689"
+run_id: "32258801941"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32258801941"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T13:29:36.689Z"
+published_at: "2026-08-19T13:55:43.972Z"
 canonical: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32256702689](https://github.com/openclaw/clawsweeper/actions/runs/32256702689)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32258801941](https://github.com/openclaw/clawsweeper/actions/runs/32258801941)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 ## Summary
 
-#62505 remains a reproducible canonical bug on main 3e0c980: scoped exec-completion wakes are rejected when heartbeat.every is 0m. A narrow fix artifact is ready, but this worker cannot edit: the checkout is read-only, required tsx is absent, and ../codex is unavailable for the mandatory direct Codex-source inspection.
+#62505 remains a reproducible generic exec-completion bug on main 627084304a9167544badaf6902db2720fd9f7859. Scoped `exec-event` wakes use intent `event`, but the shared unscheduled-wake policy admits only immediate wakes; both scheduler and execution gates therefore reject a configured agent when heartbeat cadence is `0m`. No code was changed: this checkout is read-only, dependencies are absent, and the mandatory sibling ../codex source checkout is unavailable for the repository’s Codex gate.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #62505 | fix_needed | blocked | canonical | Implementation is blocked only by this worker environment; the fix path is narrow and ready for a writable executor. |
-| #67913 | keep_closed | skipped | superseded | Historical evidence only; closed refs receive no mutation. |
-| #76877 | keep_closed | skipped | independent | Historical linked context only; no closeout action is appropriate. |
-| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | planned | canonical | Artifact is ready; branch implementation is blocked in this read-only worker. |
+| #62505 | fix_needed | planned | canonical | A narrow root-cause repair is ready for executor application, but local implementation and validation are blocked by the read-only checkout, missing dependencies, and absent required ../codex source. |
+| #67913 | keep_closed | skipped | superseded | Closed context only; no mutation is permitted or needed. |
+| #76877 | keep_closed | skipped | related | Historical related context only; it is not part of this repair. |
+| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | planned | canonical | Executor should apply the narrow policy and regression tests on clawsweeper/issue-openclaw-openclaw-62505 after satisfying local dependency and Codex-source gates. |
 
 ## Needs Human
 
