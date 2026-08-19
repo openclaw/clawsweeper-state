@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126396",
+  "mode": "autonomous",
+  "run_id": "32287862692",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32287862692",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126396.md",
+  "published_at": "2026-08-19T18:41:47.422Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126396",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126396",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the TaskFlow guidance mismatch: both bundled skills invoke the removed `api.runtime.tasks.flow` member, while the runtime exposes only `tasks.flows` (read-only DTOs) and `tasks.managedFlows` (managed-flow mutations). A narrow two-skill documentation fix is ready for an executor PR.",
+  "actions": [
+    {
+      "target": "#126396",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126396",
+      "candidate_fix": null,
+      "reason": "This is an existing bundled-guidance regression with a documented current replacement; it needs no Plugin SDK contract change."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126396",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126396",
+      "candidate_fix": null,
+      "reason": "Executor should apply the two-file documentation alignment, validate it, then open one labeled ClawSweeper PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126396",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126396",
+      "candidate_fix": null,
+      "reason": "The job authorizes one narrow fix PR and prohibits merge or issue closure."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
