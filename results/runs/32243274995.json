@@ -1,0 +1,85 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-62505",
+  "mode": "autonomous",
+  "run_id": "32243274995",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32243274995",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-62505.md",
+  "published_at": "2026-08-19T10:42:01.204Z",
+  "canonical": "#62505",
+  "canonical_issue": "#62505",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before edits: this checkout is read-only, and the required sibling ../codex source checkout is absent and cannot be cloned. Current source nevertheless confirms the narrow missing policy case: exec-event wakes use intent \"event\", while the disabled-cadence bypass admits only targeted immediate wakes.",
+  "actions": [
+    {
+      "target": "#62505",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Cannot safely produce the required new fix PR until a writable checkout and the required sibling Codex source are available."
+    },
+    {
+      "target": "#67913",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure action is valid."
+    },
+    {
+      "target": "#76877",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Historical related context only; no closure action is valid."
+    },
+    {
+      "target": "#79869",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Quarantined from this repair lane; it does not block the ordinary #62505 fix."
+    },
+    {
+      "target": "#109738",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Different owner boundary and product/security decision; exclude from this narrow heartbeat wake repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "keep_independent": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair checkout/branch and a readable sibling ../codex source checkout (or permit cloning it there) so the required direct Codex inspection, failing regression, implementation, validation, and PR artifact can be completed."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

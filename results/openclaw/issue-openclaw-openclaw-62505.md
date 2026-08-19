@@ -2,59 +2,59 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-62505"
 mode: "autonomous"
-run_id: "32242012877"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32242012877"
+run_id: "32243274995"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32243274995"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-19T10:29:06.647Z"
-canonical: "https://github.com/openclaw/openclaw/issues/62505"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/62505"
+published_at: "2026-08-19T10:42:01.204Z"
+canonical: "#62505"
+canonical_issue: "#62505"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 2
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-62505
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32242012877](https://github.com/openclaw/clawsweeper/actions/runs/32242012877)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32243274995](https://github.com/openclaw/clawsweeper/actions/runs/32243274995)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/62505
+Canonical: #62505
 
 ## Summary
 
-#62505 remains the canonical reproducible bug. Current main enqueues a session-scoped exec completion with intent "event", but the shared unscheduled-wake predicate accepts only "immediate" intents; scheduler and execution gates therefore reject it when heartbeat.every is "0m". Implementation is blocked in this read-only worker: ../codex is absent (a mandatory direct-inspection gate) and validation cannot start because local tsx is missing.
+Implementation is blocked before edits: this checkout is read-only, and the required sibling ../codex source checkout is absent and cannot be cloned. Current source nevertheless confirms the narrow missing policy case: exec-event wakes use intent "event", while the disabled-cadence bypass admits only targeted immediate wakes.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 2 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #62505 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,14 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #62505 | fix_needed | blocked | canonical | A narrow generic repair is ready to plan, but this read-only checkout cannot install dependencies and mandatory sibling ../codex source is absent. |
-| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | blocked | canonical | Executor must provision dependencies and the required ../codex checkout before applying this narrow new-PR artifact. |
-| #67913 | keep_closed | skipped | superseded | Closed context only; no closure or mutation action is valid. |
-| #76877 | keep_closed | skipped | related | Closed adjacent report; no action in this cluster. |
-| #79869 | route_security | planned | security_sensitive | Quarantined independently; it does not block the ordinary #62505 repair path. |
-| #109738 | keep_independent | planned | independent | Separate auth/worker-boundary cluster; leave open without mutation. |
+| #62505 | fix_needed | blocked | canonical | Cannot safely produce the required new fix PR until a writable checkout and the required sibling Codex source are available. |
+| #67913 | keep_closed | skipped | superseded | Historical context only; no closure action is valid. |
+| #76877 | keep_closed | skipped | related | Historical related context only; no closure action is valid. |
+| #79869 | route_security | planned | security_sensitive | Quarantined from this repair lane; it does not block the ordinary #62505 fix. |
+| #109738 | keep_independent | planned | independent | Different owner boundary and product/security decision; exclude from this narrow heartbeat wake repair. |
 
 ## Needs Human
 
-- Provide or permit a read-only sibling ../codex checkout so the mandatory Codex source inspection can be completed before implementation.
-- Provide dependencies (tsx is absent) or a writable validated checkout; the focused Vitest reproduction and pnpm check:changed could not run.
+- Provide a writable repair checkout/branch and a readable sibling ../codex source checkout (or permit cloning it there) so the required direct Codex inspection, failing regression, implementation, validation, and PR artifact can be completed.
