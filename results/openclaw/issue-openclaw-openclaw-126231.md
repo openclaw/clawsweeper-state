@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126231"
 mode: "autonomous"
-run_id: "32227107047"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32227107047"
+run_id: "32231046503"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32231046503"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-19T07:39:58.763Z"
-canonical: "https://github.com/openclaw/openclaw/issues/126231"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/126231"
+published_at: "2026-08-19T08:19:26.561Z"
+canonical: "#126231"
+canonical_issue: "#126231"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32227107047](https://github.com/openclaw/clawsweeper/actions/runs/32227107047)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32231046503](https://github.com/openclaw/clawsweeper/actions/runs/32231046503)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/126231
+Canonical: #126231
 
 ## Summary
 
-#126231 is a confirmed shared-ingress retry-policy bypass. No branch or PR was produced because this worker checkout is read-only, dependencies are incomplete, and the required sibling ../codex source is absent.
+Confirmed #126231 on main: the pre-adoption watchdog bypasses the canonical retry disposition and directly dead-letters the claim. No branch, edit, test run, or PR was possible because this worker environment is read-only; the root-required sibling ../codex checkout is also unavailable.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/126231
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126231 | fix_needed | blocked | canonical | Implementation is blocked: the required ../codex source checkout is absent in this read-only environment, and the baseline test cannot start because tsx is missing. |
-| #126172 | keep_independent | planned | independent | Different owner boundary and reproduction; leave open independently. |
-| cluster:issue-openclaw-openclaw-126231 | build_fix_artifact | planned | canonical | A narrow, credited new PR remains appropriate once an executable checkout satisfies the mandatory source and dependency gates. |
+| #126172 | keep_independent | planned | independent | Unrelated root cause; retain separately. |
+| #126231 | fix_needed | blocked | canonical | Repair is well scoped but cannot be applied or validated in this read-only checkout. |
+| #126231 | build_fix_artifact | blocked | canonical | A narrow replacement path is specified below; no writable execution path exists. |
 
 ## Needs Human
 
