@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-62505",
+  "mode": "autonomous",
+  "run_id": "32247196308",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32247196308",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-62505.md",
+  "published_at": "2026-08-19T11:31:07.004Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/62505",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/62505",
+  "canonical_pr": null,
+  "summary": "Current main (4af09d4961c9a2db802ac78209da77cdc022e445) still drops targeted exec-completion wakes when heartbeat cadence is 0m: the shared unscheduled-wake policy only admits intent=immediate and excludes source=exec-event, so both scheduler dispatch and execution-stage admission return disabled before the queued completion is consumed. A narrow new PR is appropriate, but this worker cannot create or validate it because the checkout is read-only, node_modules is absent, pnpm cannot create its Corepack cache (EROFS), and ../codex is unavailable for the required direct Codex-source gate.",
+  "actions": [
+    {
+      "target": "#62505",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Canonical reproducible regression; no viable open PR exists."
+    },
+    {
+      "target": "#67913",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure action is permitted."
+    },
+    {
+      "target": "#76877",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Already closed and independent of this repair."
+    },
+    {
+      "target": "#79869",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantined per cluster security policy; no mutation or repair planning for this item."
+    },
+    {
+      "target": "#109738",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct auth/worker-boundary issue; keep open separately."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-62505",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#62505",
+      "candidate_fix": null,
+      "reason": "Narrow new-fix PR plan prepared; this worker cannot apply or validate it in the read-only checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

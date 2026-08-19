@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-62505"
 mode: "autonomous"
-run_id: "32245588917"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32245588917"
+run_id: "32247196308"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32247196308"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T11:14:30.833Z"
+published_at: "2026-08-19T11:31:07.004Z"
 canonical: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/62505"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32245588917](https://github.com/openclaw/clawsweeper/actions/runs/32245588917)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32247196308](https://github.com/openclaw/clawsweeper/actions/runs/32247196308)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 ## Summary
 
-#62505 has a narrow generic scheduler/execution repair path, but this read-only checkout lacks both `tsx` for regression validation and the required sibling `../codex` source. No code or GitHub mutation was attempted.
+Current main (4af09d4961c9a2db802ac78209da77cdc022e445) still drops targeted exec-completion wakes when heartbeat cadence is 0m: the shared unscheduled-wake policy only admits intent=immediate and excludes source=exec-event, so both scheduler dispatch and execution-stage admission return disabled before the queued completion is consumed. A narrow new PR is appropriate, but this worker cannot create or validate it because the checkout is read-only, node_modules is absent, pnpm cannot create its Corepack cache (EROFS), and ../codex is unavailable for the required direct Codex-source gate.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/62505
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #62505 | fix_needed | blocked | canonical | Implementation and validation are blocked by the read-only dependency-incomplete checkout and missing required sibling Codex source; the executor should perform the artifact on the designated branch in a writable prepared checkout. |
-| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | planned | canonical | A narrow new PR is appropriate once the executor can reproduce and validate in a writable checkout. |
-| #67913 | keep_closed | skipped | superseded | Already closed; no closure or mutation is permitted. |
-| #76877 | keep_closed | skipped | independent | Already closed and outside this cluster's root cause. |
-| #79869 | route_security | planned | security_sensitive | Security-sensitive item is quarantined from this ordinary bug-fix lane. |
-| #109738 | keep_independent | planned | independent | Different architectural boundary; retain its separate follow-up. |
+| #62505 | fix_needed | planned | canonical | Canonical reproducible regression; no viable open PR exists. |
+| #67913 | keep_closed | skipped | superseded | Already closed; no closure action is permitted. |
+| #76877 | keep_closed | skipped | related | Already closed and independent of this repair. |
+| #79869 | route_security | planned | security_sensitive | Quarantined per cluster security policy; no mutation or repair planning for this item. |
+| #109738 | keep_independent | planned | independent | Distinct auth/worker-boundary issue; keep open separately. |
+| cluster:issue-openclaw-openclaw-62505 | build_fix_artifact | planned | canonical | Narrow new-fix PR plan prepared; this worker cannot apply or validate it in the read-only checkout. |
 
 ## Needs Human
 
