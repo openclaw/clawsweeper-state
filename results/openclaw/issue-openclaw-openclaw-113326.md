@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "32201786890"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32201786890"
+run_id: "32202758100"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32202758100"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T00:51:13.063Z"
+published_at: "2026-08-19T01:04:27.797Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
-actions_total: 6
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32201786890](https://github.com/openclaw/clawsweeper/actions/runs/32201786890)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32202758100](https://github.com/openclaw/clawsweeper/actions/runs/32202758100)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-Current main contains the documented OpenAI device-code command, maps --device-code to method=device-code, and then rejects all non-TTY login calls before the provider flow. The narrow fix is blocked here because ../codex is absent and this read-only sandbox cannot clone it or edit/test a branch; the executor must complete the required direct Codex-source inspection before applying the supplied repair artifact.
+Confirmed narrow current-main defect, but no code was changed: the checkout is read-only with no dependencies, and required sibling ../codex source is absent and cannot be cloned because DNS/network access is unavailable. A narrow credited fix artifact is ready for an executor with a writable checkout and the mandatory Codex-source gate satisfied.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,9 @@ Current main contains the documented OpenAI device-code command, maps --device-c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113326 | fix_needed | blocked | canonical | Implementation requires a writable checkout and direct inspection of the Codex device-code protocol/runtime source before any code change or proof-sufficiency claim. |
-| #100067 | keep_related | planned | related | Keep open independently; it is not covered by this narrow CLI repair. |
-| #50452 | keep_closed | skipped |  | Already closed; no mutation. |
-| #71864 | keep_closed | skipped |  | Already closed; no mutation. |
-| #79021 | keep_closed | skipped |  | Already closed; no mutation. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | Narrow fix path is defined, but this worker cannot create or validate its branch. |
+| #113326 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only dependency-free checkout and unavailable mandatory Codex source inspection; the source-level defect and narrow repair boundary are otherwise clear. |
+| #100067 | keep_independent | planned | independent | Related auth area but a distinct migration/product-policy issue; keep open independently. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | Prepared artifact for a writable executor; no GitHub mutation is performed by this worker. |
 
 ## Needs Human
 

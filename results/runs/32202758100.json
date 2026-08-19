@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-113326",
+  "mode": "autonomous",
+  "run_id": "32202758100",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32202758100",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-113326.md",
+  "published_at": "2026-08-19T01:04:27.797Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_pr": null,
+  "summary": "Confirmed narrow current-main defect, but no code was changed: the checkout is read-only with no dependencies, and required sibling ../codex source is absent and cannot be cloned because DNS/network access is unavailable. A narrow credited fix artifact is ready for an executor with a writable checkout and the mandatory Codex-source gate satisfied.",
+  "actions": [
+    {
+      "target": "#113326",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only dependency-free checkout and unavailable mandatory Codex source inspection; the source-level defect and narrow repair boundary are otherwise clear."
+    },
+    {
+      "target": "#100067",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related auth area but a distinct migration/product-policy issue; keep open independently."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-113326",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Prepared artifact for a writable executor; no GitHub mutation is performed by this worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
