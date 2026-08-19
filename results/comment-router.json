@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T01:57:58.602Z",
+  "updated_at": "2026-08-19T01:59:12.598Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4947444032:2026-07-11T16:05:55Z:re_review",
-      "comment_id": "4947444032",
-      "comment_version_key": "4947444032:2026-07-11T16:05:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4947444032",
-      "comment_created_at": "2026-07-11T16:05:55Z",
-      "comment_updated_at": "2026-07-11T16:05:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-18T22:42:46.436Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4948430063:2026-07-11T19:15:25Z:re_review",
       "comment_id": "4948430063",
@@ -30833,6 +30806,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126120:5336577483:2026-08-19T01:58:22Z:clawsweeper_needs_human",
+      "comment_id": "5336577483",
+      "comment_version_key": "5336577483:2026-08-19T01:58:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126120#issuecomment-5336577483",
+      "comment_created_at": "2026-08-19T01:58:22Z",
+      "comment_updated_at": "2026-08-19T01:58:22Z",
+      "comment_body_sha256": "3210063866611046f219d14feb2b1447fdba3b403d2af1afc470005d155bba3f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126120,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The dependency contract central to this fix was not independently inspectable: the checkout has no installed CUA SDK and upstream package access failed. Verify the 0.19.3 exports map... (sha=0f9b3f03815f5a8ee18cda1374d2ad7e605a906a)",
+      "expected_head_sha": "0f9b3f03815f5a8ee18cda1374d2ad7e605a906a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T01:59:12.598Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cua-driver-esm-resolution",
+        "head_sha": "0f9b3f03815f5a8ee18cda1374d2ad7e605a906a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
