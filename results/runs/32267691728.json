@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126229",
+  "mode": "autonomous",
+  "run_id": "32267691728",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32267691728",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126229.md",
+  "published_at": "2026-08-19T16:32:56.210Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126229",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126229",
+  "canonical_pr": null,
+  "summary": "#126229 is a reproducible canonical gateway projection bug: cap truncation discards the fact needed by session.message, history/SSE, and sessions_history consumers. A narrow fix plan is ready, but this read-only checkout has no node_modules and cannot create the required regression or branch; the mandated sibling ../codex source checkout is also absent and cannot be cloned here.",
+  "actions": [
+    {
+      "target": "#126229",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only execution environment and missing required local dependencies/source checkout; the canonical issue and narrow repair scope remain clear."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126229",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Executor should create the credited ClawSweeper PR once it has a writable checkout with dependencies and the required Codex source inspection."
+    },
+    {
+      "target": "#122043",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#126229",
+      "candidate_fix": null,
+      "reason": "Keep open as a distinct client recovery-path issue; this metadata repair is related but does not replace it."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
