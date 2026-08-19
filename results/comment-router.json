@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-19T04:09:45.671Z",
+  "updated_at": "2026-08-19T04:11:07.729Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122628:5267914834:2026-08-19T00:51:26Z:clawsweeper_needs_human",
-      "comment_id": "5267914834",
-      "comment_version_key": "5267914834:2026-08-19T00:51:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122628#issuecomment-5267914834",
-      "comment_created_at": "2026-08-12T14:07:02Z",
-      "comment_updated_at": "2026-08-19T00:51:26Z",
-      "comment_body_sha256": "ed8e52e46e2167e22edc29d879ce7033adefbdcfd1fee119fbb6fb8c1ef3d8cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122628,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes publication of persistent session transcripts; the supplied tests cover staged-write failure, but exact-head CI should finish before merge. (sha=9d5df5dfe68413ab74dbf184153b8c57e02c676e)",
-      "expected_head_sha": "9d5df5dfe68413ab74dbf184153b8c57e02c676e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T00:57:13.458Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/doctor-transcript-atomic",
-        "head_sha": "9d5df5dfe68413ab74dbf184153b8c57e02c676e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126032:5334588572:2026-08-19T00:56:17Z:clawsweeper_needs_human",
       "comment_id": "5334588572",
@@ -30733,6 +30700,53 @@
       "status": "skipped",
       "processed_at": "2026-08-19T04:09:45.671Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120443:5337416453:2026-08-19T04:10:11Z:re_review",
+      "comment_id": "5337416453",
+      "comment_version_key": "5337416453:2026-08-19T04:10:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5337416453",
+      "comment_created_at": "2026-08-19T04:10:11Z",
+      "comment_updated_at": "2026-08-19T04:10:11Z",
+      "comment_body_sha256": "ee4b3c202364aa55b463e7655820c342f754f325681e468d7ab82cc24b5fa37d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120443,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-19T04:11:05.446Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119977-codex-stale-binding-compaction",
+        "head_sha": "a45f9e7109cd37e957ecec2dec81662d1b237c08",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
