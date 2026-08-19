@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-19T07:07:05.274Z",
+  "updated_at": "2026-08-19T07:09:06.104Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5316295304:2026-08-17T12:51:58Z:re_review",
-      "comment_id": "5316295304",
-      "comment_version_key": "5316295304:2026-08-17T12:51:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5316295304",
-      "comment_created_at": "2026-08-17T12:51:58Z",
-      "comment_updated_at": "2026-08-17T12:51:58Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T01:53:01.815Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5316360642:2026-08-17T12:58:04Z:re_review",
       "comment_id": "5316360642",
@@ -32172,6 +32145,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124899:5310194513:2026-08-19T07:07:33Z:clawsweeper_needs_human",
+      "comment_id": "5310194513",
+      "comment_version_key": "5310194513:2026-08-19T07:07:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124899#issuecomment-5310194513",
+      "comment_created_at": "2026-08-16T23:21:21Z",
+      "comment_updated_at": "2026-08-19T07:07:33Z",
+      "comment_body_sha256": "e1ec4e5a5a8aa8d0762dfe1f2fdb050436244f2a65998f7ca3780491ec74083d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124899,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes reconciliation of persisted session state; an unexercised conflict path could still lose or mis-associate transcript rows. (sha=8d917c1244cf13f2bc0a7ad7fd08f40026e69e91)",
+      "expected_head_sha": "8d917c1244cf13f2bc0a7ad7fd08f40026e69e91",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T07:09:06.104Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sync-transcript-rewrite-snapshot-guard",
+        "head_sha": "8d917c1244cf13f2bc0a7ad7fd08f40026e69e91",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
