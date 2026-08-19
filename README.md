@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 19, 2026, 12:01 UTC
+Last source update: Aug 19, 2026, 12:21 UTC
 
 ### Fleet
 
@@ -22,9 +22,9 @@ Last source update: Aug 19, 2026, 12:01 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Hot intake publish complete | Aug 19, 2026, 12:01 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32248902616) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 19, 2026, 12:00 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32250314263) |
-| [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 19, 2026, 04:02 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32214254110) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Aug 19, 2026, 12:16 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32251706956) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 19, 2026, 12:17 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32251772317) |
+| [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 19, 2026, 12:21 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32252198988) |
 
 ### Repositories
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 19, 2026, 12:01 UTC
+Last source update: Aug 19, 2026, 12:17 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 532 | 100% |
-| Run attempts archived | 1558 | audit |
+| Run attempts archived | 1559 | audit |
 | Latest successful clusters | 447 | 84.0% |
 | Latest failed clusters | 83 | 15.6% |
 | Latest cancelled clusters | 2 | 0.4% |
@@ -116,7 +116,7 @@ State: Failed clusters need inspection
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 532 clusters: 205 maintainer action, 116 automation snapshot, 184 intervention needed, 27 no pending action, 0 completed.
-- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#79869](https://github.com/openclaw/openclaw/issues/79869) is maintainer_input: Route only this item to central OpenClaw security triage; do not comment, merge, close, or reuse its patch..
+- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#79869](https://github.com/openclaw/openclaw/issues/79869) is maintainer_input: Security-sensitive linked item is out of scope for this repair lane..
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#126308](https://github.com/openclaw/openclaw/pull/126308) is automation_failed: The root-cause repair is clear, but this worker cannot edit, initialize dependencies, or complete the repository-required Codex source in....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#126056](https://github.com/openclaw/openclaw/pull/126056) is action_planned: Repair is authorized and branch-writable, but exact-head review and CI gates are incomplete..
 - Completed latest: no completed action in the latest records.
@@ -147,7 +147,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#79869](https://github.com/openclaw/openclaw/issues/79869) | maintainer_input | Route only this item to central OpenClaw security triage; do not comment, merge, close, or reuse its patch. | Aug 19, 2026, 11:53 UTC | [issue-openclaw-openclaw-62505](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-62505.md) | [32248979812](https://github.com/openclaw/clawsweeper/actions/runs/32248979812) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#79869](https://github.com/openclaw/openclaw/issues/79869) | maintainer_input | Security-sensitive linked item is out of scope for this repair lane. | Aug 19, 2026, 12:17 UTC | [issue-openclaw-openclaw-62505](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-62505.md) | [32250707266](https://github.com/openclaw/clawsweeper/actions/runs/32250707266) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#95069](https://github.com/openclaw/openclaw/issues/95069) | maintainer_input | Route this exact item to central OpenClaw security handling; it does not block the independent #126090 repair. | Aug 19, 2026, 03:21 UTC | [issue-openclaw-openclaw-126090](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126090.md) | [32204192503](https://github.com/openclaw/clawsweeper/actions/runs/32204192503) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#115354](https://github.com/openclaw/openclaw/issues/115354) | maintainer_input | Provide a worker environment containing the required sibling ../codex source so the mandatory direct inspection can occur.; Decide the intended cro... | Aug 19, 2026, 01:49 UTC | [issue-openclaw-openclaw-115354](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-115354.md) | [32205252068](https://github.com/openclaw/clawsweeper/actions/runs/32205252068) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#90010](https://github.com/openclaw/openclaw/issues/90010) | maintainer_input | Central security handling is required for this linked security-sensitive report. | Aug 18, 2026, 21:33 UTC | [issue-openclaw-openclaw-126016](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126016.md) | [32187322561](https://github.com/openclaw/clawsweeper/actions/runs/32187322561) |
