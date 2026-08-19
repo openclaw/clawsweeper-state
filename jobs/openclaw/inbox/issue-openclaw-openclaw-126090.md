@@ -67,21 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Telegram final-delivery transcript duplication reported in https://github.com/openclaw/openclaw/issues/126090. Preserve idempotency replay handling and the intentional retention of same-text keyed channel-final records from distinct source deliveries. At the shared transcript owner boundary, suppress only a keyed final mirror whose active current-turn tail is the matching non-mirror primary assistant message; do not add configuration or alter unrelated channel delivery behavior. Add regression coverage that fails before the fix for a primary-plus-keyed-mirror duplicate, while retaining replay and distinct-source coverage. Include Telegram-visible or mock-gateway boundary proof in the PR body; do not edit CHANGELOG.md.
+Repair the keyed `channel-final` mirror duplicate in the transcript owner. Preserve idempotency-key replay behavior and the existing rule that same-text mirrors from different source IDs remain separate; suppress only a mirror that matches the latest primary, non-delivery-mirror assistant row. Add an owner-boundary regression that writes a primary assistant reply then appends the keyed channel-final mirror and proves one row, while retaining the distinct-source-ID coverage. Inspect the generic outbound route and Telegram caller, do not add configuration, migrations, or channel-specific policy. Include user-visible release-note context in the PR body or commit message. Related context: https://github.com/openclaw/openclaw/issues/94930 and https://github.com/openclaw/openclaw/pull/95069.
 
 Likely files:
 
 - src/config/sessions/transcript.ts
 - src/config/sessions/transcript.test.ts
-- src/plugin-sdk/session-transcript-runtime.ts
-- src/plugin-sdk/session-transcript-runtime.test.ts
-- extensions/telegram/src/bot-message-dispatch.delivery-transcript.test.ts
 
 Validation:
 
-- pnpm test src/config/sessions/transcript.test.ts
-- pnpm test src/plugin-sdk/session-transcript-runtime.test.ts
-- pnpm test extensions/telegram/src/bot-message-dispatch.delivery-transcript.test.ts
+- node scripts/run-vitest.mjs src/config/sessions/transcript.test.ts
+- node scripts/run-vitest.mjs extensions/telegram/src/bot-message-dispatch.delivery-transcript.test.ts
 
 ## Operator Prompt
 
