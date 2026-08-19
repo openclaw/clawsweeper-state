@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-19T01:46:40.205Z",
+  "updated_at": "2026-08-19T01:46:47.247Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/ocm:89:5334075412:2026-08-18T21:07:53Z:re_review",
-      "comment_id": "5334075412",
-      "comment_version_key": "5334075412:2026-08-18T21:07:53Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/89#issuecomment-5334075412",
-      "comment_created_at": "2026-08-18T21:07:53Z",
-      "comment_updated_at": "2026-08-18T21:07:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/ocm",
-      "issue_number": 89,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-18T21:23:56.421Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oc-70a.2/target-aware-plugin-closure",
-        "head_sha": "8a1fdd90dbb8748b9ce82b335651ecd8c588d08e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126014:5334232018:2026-08-18T21:22:52Z:clawsweeper_needs_human",
       "comment_id": "5334232018",
@@ -32119,6 +32072,39 @@
         "kind": "pull_request",
         "branch": "fix/cli-reseed-sqlite-store",
         "head_sha": "e48e24c2618157ce8d5b45bbd5640104b9575241",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125450:5321504360:2026-08-19T01:40:34Z:clawsweeper_needs_human",
+      "comment_id": "5321504360",
+      "comment_version_key": "5321504360:2026-08-19T01:40:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125450#issuecomment-5321504360",
+      "comment_created_at": "2026-08-17T23:37:12Z",
+      "comment_updated_at": "2026-08-19T01:40:34Z",
+      "comment_body_sha256": "b26751baa1a00b2d1f00e51b89d1c2441d1c3e1da638673783239158d2429f67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125450,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production is +23 net lines for two owner-boundary guards; retain this scope only because the cross-owner readiness predicate cannot be folded into the affected-owner update without c... (sha=e09bda2ee9c791536a463c1a770320722192f30a)",
+      "expected_head_sha": "e09bda2ee9c791536a463c1a770320722192f30a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T01:46:47.247Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-metadata-sticky-unavailable",
+        "head_sha": "e09bda2ee9c791536a463c1a770320722192f30a",
         "cluster_id": null,
         "job_path": null
       }
