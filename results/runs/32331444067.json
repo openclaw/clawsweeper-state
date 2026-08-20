@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-95840",
+  "mode": "autonomous",
+  "run_id": "32331444067",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32331444067",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-95840.md",
+  "published_at": "2026-08-20T04:30:39.475Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_pr": null,
+  "summary": "Current main still excludes direct OpenAI from cache-TTL eligibility, so both pruning setup and post-attempt markers are skipped. A narrow provider-owned fix is ready, but this read-only checkout lacks test dependencies and the mandatory sibling Codex source checkout.",
+  "actions": [
+    {
+      "target": "#95840",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "A direct-OpenAI provider hook is the narrow canonical repair; implementation is blocked only by this worker environment."
+    },
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Keep #95610 open independently."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-95840",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "A writable executor with dependencies and the required Codex checkout can apply this narrow artifact."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
