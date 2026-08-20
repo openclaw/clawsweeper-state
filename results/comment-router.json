@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T18:01:59.936Z",
+  "updated_at": "2026-08-20T18:02:51.897Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126424:5348833872:2026-08-20T12:04:35Z:clawsweeper_needs_human",
-      "comment_id": "5348833872",
-      "comment_version_key": "5348833872:2026-08-20T12:04:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126424#issuecomment-5348833872",
-      "comment_created_at": "2026-08-19T22:37:49Z",
-      "comment_updated_at": "2026-08-20T12:04:35Z",
-      "comment_body_sha256": "9bc2f967cf01106100c424b6757878b49b732bfd7800af0d5a229acddfc06b4d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126424,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Refresh configuration at final send admission (P1)** - The callback closes over params.config, which the Gateway handler captured before queue preparation. If a route is revoked or reassigned during that async i...; Review finding: [P1] Refresh configuration at final send admission — src/gateway/conversation-send.ts:135-142 - [high] Final authorization uses stale binding configuration — src/g... (sha=adb0392f91e0d827eda9dfca07df84701e8d37f1)",
-      "expected_head_sha": "adb0392f91e0d827eda9dfca07df84701e8d37f1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T12:05:45.218Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/conversation-route-ownership",
-        "head_sha": "adb0392f91e0d827eda9dfca07df84701e8d37f1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126566:5352673093:2026-08-20T12:05:20Z:clawsweeper_needs_human",
       "comment_id": "5352673093",
@@ -32009,6 +31976,53 @@
         "kind": "pull_request",
         "branch": "fix/release-plugin-scan-layouts-c28",
         "head_sha": "c27c1b60879cd6102a35bbe56cca932dc429c806",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:82572:5359773183:2026-08-20T18:02:06Z:re_review",
+      "comment_id": "5359773183",
+      "comment_version_key": "5359773183:2026-08-20T18:02:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5359773183",
+      "comment_created_at": "2026-08-20T18:02:06Z",
+      "comment_updated_at": "2026-08-20T18:02:06Z",
+      "comment_body_sha256": "de6831e07a87a53f3dccd48dae1d3db25b02317078978f3db4c994dbf10c9ae7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 82572,
+      "author": "jewseppi",
+      "author_id": 6901751,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T18:02:49.723Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/queue-followup-persistence",
+        "head_sha": "9dd510af79427e369bff136c8cee50ffa6901151",
         "cluster_id": null,
         "job_path": null
       },
