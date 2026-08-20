@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T18:29:32.488Z",
+  "updated_at": "2026-08-20T18:33:49.359Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5099000197:2026-07-28T01:51:59Z:re_review",
-      "comment_id": "5099000197",
-      "comment_version_key": "5099000197:2026-07-28T01:51:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5099000197",
-      "comment_created_at": "2026-07-28T01:51:59Z",
-      "comment_updated_at": "2026-07-28T01:51:59Z",
-      "comment_body_sha256": "25f579af5f072fd3814558f1577bee830118f9c1b0ae774331e8b550ad543a87",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T12:13:43.750Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5099064527:2026-07-28T02:02:26Z:re_review",
       "comment_id": "5099064527",
@@ -32254,6 +32227,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126605:5353845823:2026-08-20T18:31:51Z:clawsweeper_needs_human",
+      "comment_id": "5353845823",
+      "comment_version_key": "5353845823:2026-08-20T18:31:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126605#issuecomment-5353845823",
+      "comment_created_at": "2026-08-20T09:11:57Z",
+      "comment_updated_at": "2026-08-20T18:31:51Z",
+      "comment_body_sha256": "7f5703916f3f2edb1a6fa6d63bb957ee845f40799e2b5bd9e058ba74cc74f205",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126605,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve raw-marker semantics in deprecated SDK aliases (P1)** - The schema still accepts a single legacy default: true marker, and current main’s deprecated resolver selects that marked entry before falling bac...; Review finding: [P1] Preserve raw-marker semantics in deprecated SDK aliases — src/plugin-sdk/agent-scope-runtime.ts:27 - [P1] Do not downgrade the managed Codex runtime in this r... (sha=897352dcac639b059493c38dffd3a675d28925e6)",
+      "expected_head_sha": "897352dcac639b059493c38dffd3a675d28925e6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T18:33:49.359Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/purge-legacy-default-agent",
+        "head_sha": "897352dcac639b059493c38dffd3a675d28925e6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
