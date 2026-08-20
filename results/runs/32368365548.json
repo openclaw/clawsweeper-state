@@ -1,0 +1,103 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-113326",
+  "mode": "autonomous",
+  "run_id": "32368365548",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32368365548",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-113326.md",
+  "published_at": "2026-08-20T12:42:39.185Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_pr": null,
+  "summary": "#113326 remains the canonical reproducible bug: the non-TTY guard rejects an explicit device-code login before provider-method resolution. A narrow fix artifact is ready, but this worker cannot patch or validate because the required Codex sibling source checkout is absent and the read-only environment prevents both cloning and Corepack dependency setup.",
+  "actions": [
+    {
+      "target": "#50452",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Already closed; historical related context only."
+    },
+    {
+      "target": "#71864",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Already closed; not a duplicate of the non-TTY device-code failure."
+    },
+    {
+      "target": "#79021",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Already closed; distinct auth-recovery path."
+    },
+    {
+      "target": "#100067",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent migration/product-decision issue; leave open."
+    },
+    {
+      "target": "#113326",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "The repair is narrow and source-reproducible, but implementation and validation require a writable checkout and the mandatory direct Codex-source inspection."
+    },
+    {
+      "target": "#113505",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Already closed; separate TTY-present behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-113326",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Ready for a writable executor after the Codex-source and dependency blockers are resolved."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 4,
+    "keep_independent": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 4,
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair executor with the required sibling OpenAI Codex source checkout available for direct inspection. The current environment cannot clone it or initialize Corepack because its filesystem is read-only."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
