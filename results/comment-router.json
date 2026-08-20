@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T18:53:04.229Z",
+  "updated_at": "2026-08-20T18:53:06.270Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126619:5355783870:2026-08-20T12:19:02Z:re_review",
-      "comment_id": "5355783870",
-      "comment_version_key": "5355783870:2026-08-20T12:19:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126619#issuecomment-5355783870",
-      "comment_created_at": "2026-08-20T12:19:02Z",
-      "comment_updated_at": "2026-08-20T12:19:02Z",
-      "comment_body_sha256": "3bcaf3e2bbfd953131b1ea5502ea6d1bfb04540c251b433fef6573bbed6a710e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126619,
-      "author": "RaviTharuma",
-      "author_id": 25951435,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T12:19:51.509Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/http-chat-minimal-prompt",
-        "head_sha": "40cfaaefae07b533ba60dddb721e40e673fe616b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126656:5355795897:2026-08-20T12:20:13Z:clawsweeper_auto_repair",
       "comment_id": "5355795897",
@@ -32390,6 +32343,39 @@
         "kind": "pull_request",
         "branch": "openclaw/the-misaligned-trigger-configured-and-advanced-absolutely-kills",
         "head_sha": "d0ff7b311a8f8a1ab46f09720c8483e382d3f08b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126761:5359766972:2026-08-20T18:46:28Z:clawsweeper_needs_human",
+      "comment_id": "5359766972",
+      "comment_version_key": "5359766972:2026-08-20T18:46:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126761#issuecomment-5359766972",
+      "comment_created_at": "2026-08-20T18:01:31Z",
+      "comment_updated_at": "2026-08-20T18:46:28Z",
+      "comment_body_sha256": "0dfb6e83df622d47f0851265435719ad0818ec6ccb5b89725b4c394a01297a14",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126761,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that passed parent --agent to aliases or scan will now exit 1; the upgrade note explains that removing it preserves the prior global-default operation. (sha=779cfe0e4caf825aee02b58b4d726a219f25d18b)",
+      "expected_head_sha": "779cfe0e4caf825aee02b58b4d726a219f25d18b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T18:53:06.270Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/models-agent-scope-guard",
+        "head_sha": "c97c6f6b89cc0d645af90e66c52c3cb0ebeb2358",
         "cluster_id": null,
         "job_path": null
       }
