@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T09:53:25.051Z",
+  "updated_at": "2026-08-20T09:54:40.689Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5074947358:2026-07-24T22:12:25Z:re_review",
-      "comment_id": "5074947358",
-      "comment_version_key": "5074947358:2026-07-24T22:12:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5074947358",
-      "comment_created_at": "2026-07-24T22:12:25Z",
-      "comment_updated_at": "2026-07-24T22:12:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T04:32:32.018Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5077457943:2026-07-25T07:14:15Z:re_review",
       "comment_id": "5077457943",
@@ -31344,6 +31317,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-20T09:45:23Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-20T09:45:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-20T09:45:23Z",
+      "comment_body_sha256": "493729c3ce42ab7282af08d0b3671b446623e32a5c505461da7cc79877ce982f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Update the TruffleHog workflow guard (P1)** - The new v3.97.0 action SHA at this line conflicts with the exact v3.95.9 SHA required by ci-workflow-guards.test.ts, so the workflow-contract check will fail. Update...; Review finding: [P1] Update the TruffleHog workflow guard — .github/workflows/ci.yml:1066 - [P1] Update the Android attestation assertion — .github/workflows/android-release.yml:3... (sha=c47a434fcb659cd608d7c78426e0c3eb1e91dd72)",
+      "expected_head_sha": "c47a434fcb659cd608d7c78426e0c3eb1e91dd72",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T09:54:40.689Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "c47a434fcb659cd608d7c78426e0c3eb1e91dd72",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
