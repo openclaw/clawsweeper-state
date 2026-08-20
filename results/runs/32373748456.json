@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-113326",
+  "mode": "autonomous",
+  "run_id": "32373748456",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32373748456",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-113326.md",
+  "published_at": "2026-08-20T13:49:22.031Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_pr": null,
+  "summary": "Current main has the documented headless device-code path, but an unconditional non-TTY guard rejects it before method resolution. A narrow repair plan is ready; implementation is blocked because this checkout is read-only, dependencies cannot install, and the required sibling Codex source is unavailable for the repository’s mandatory direct contract check.",
+  "actions": [
+    {
+      "target": "#113326",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Open canonical bug with a source-proven, narrow repair path; no viable implementation PR is hydrated."
+    },
+    {
+      "target": "#100067",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different owner-boundary failure; leave its existing maintainer product-decision thread open."
+    },
+    {
+      "target": "#50452",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#71864",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#79021",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-113326",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Repair is narrow and appropriate, but editing, dependency installation, local validation, and the direct Codex-source inspection are blocked."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-113326",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement this focused repair on the designated branch."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_independent": 1,
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
