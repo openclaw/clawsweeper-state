@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124751"
 mode: "autonomous"
-run_id: "32394284326"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32394284326"
+run_id: "32393485556"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32393485556"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T17:02:41.750Z"
+published_at: "2026-08-20T16:55:06.440Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32394284326](https://github.com/openclaw/clawsweeper/actions/runs/32394284326)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32393485556](https://github.com/openclaw/clawsweeper/actions/runs/32393485556)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124751
 
 ## Summary
 
-Current main has a real shared-Apple reconciliation gap: a partial chat.final is retained under its run scope, but a fuller session.message with a different durable idempotency identity is appended instead of adopted. A narrow Swift repair artifact is ready; this worker could not write the regression or run Swift tests because the checkout is read-only, and the required sibling ../codex source checkout is unavailable.
+The iOS reconciliation path remains the focused canonical repair, but this worker cannot safely produce a validated PR: the read-only checkout cannot run Swift tests or create the required branch, the preflight main SHA 927755e6afc0d7473ec1803a3a4d642237cfe752 is unavailable locally, and the required sibling ../codex source checkout is absent.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main has a real shared-Apple reconciliation gap: a partial chat.final is
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #124751 |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Current main has a real shared-Apple reconciliation gap: a partial chat.final is
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #108692 | keep_closed | skipped | related | Historical related context only; no closure action is permitted or needed. |
-| #123792 | keep_independent | planned | independent | Related duplicate symptom family, but independent root cause and repair path. |
-| #124751 | fix_needed | planned | canonical | Implement the narrow per-run fallback because the current protocol does not carry the terminal run identity into a differently keyed durable row. |
-| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | planned | canonical | A writable executor can make the bounded repair on clawsweeper/issue-openclaw-openclaw-124751 and open the one credited fix PR. |
+| #124751 | fix_needed | blocked | canonical | A narrow fix path is identified, but implementation and validation must be rerun from a write-enabled checkout at a refreshed, resolvable main SHA with ../codex available. |
+| #123792 | keep_related | planned | related | Leave open under its existing canonical path. |
+| #108692 | keep_closed | skipped | related | Closed context refs must not receive close actions. |
+| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | blocked | canonical | The implementation plan is narrow, but this read-only environment cannot create the required regression, branch, or validation evidence. |
 
 ## Needs Human
 

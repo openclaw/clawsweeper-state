@@ -67,19 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/123318 at the release-channel fetch owner. First reproduce in a disposable Git fixture: a clone has a local release tag, its remote force-moves that tag and advances, and a stable or beta update must not stop at `fetch-failed`. In `src/infra/update-runner-git.ts`, force-refresh the existing release-tag fetch without adding pruning semantics or configuration. Add focused behavioral regression coverage in `src/infra/update-runner.test.ts` showing the pre-fix tag-clobber command fails while the repaired fetch proceeds through channel-tag checkout. Do not alter the dev `--no-tags` flow, add a status persistence store, or change default fast-status policy. Put release-note context in the PR body or commit message, not CHANGELOG.md.
+Repair the git release-channel updater so a recreated upstream tag cannot make stable or beta updates fail permanently. Keep the repair at the updater-owned tag fetch in `src/infra/update-runner-git.ts`; preserve the existing dev branch fetch and status behavior. Add a real Git regression fixture that clones a remote, force-moves an existing tag, and proves stable/beta update fetch proceeds to resolve the updated release tag. Audit the existing explicit dev-tag refspec only for the same invariant, and update `docs/install/updating.md` if its manual tag-fetch command shares the unsafe behavior. Do not add config, fallback status state, or edit CHANGELOG.md; record user-visible release context in the PR body.
 
 Likely files:
 
 - src/infra/update-runner-git.ts
 - src/infra/update-runner.test.ts
-- src/infra/update-check-status.test.ts
+- docs/install/updating.md
 
 Validation:
 
-- Run the focused updater regression in src/infra/update-runner.test.ts.
-- Run src/infra/update-check-status.test.ts to retain fresh-fetch stale-ref protection.
-- Use a disposable bare-remote fixture with a force-moved tag to show stable/beta update reaches the refreshed release tag.
+- pnpm vitest run src/infra/update-runner.test.ts src/infra/update-check-status.test.ts
+- Run the added real-Git recreated-tag fixture against pre-fix and repaired commands.
+- Verify `openclaw status` still reports `fetch failed` and no divergence when its branch refresh itself fails.
 
 ## Operator Prompt
 
