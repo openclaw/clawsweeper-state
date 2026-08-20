@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32340963296"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32340963296"
+run_id: "32342363081"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32342363081"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T06:54:25.766Z"
+published_at: "2026-08-20T07:14:20.311Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32340963296](https://github.com/openclaw/clawsweeper/actions/runs/32340963296)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32342363081](https://github.com/openclaw/clawsweeper/actions/runs/32342363081)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-#95840 remains the canonical bug. Current main calls the provider-owned cache-TTL hook first, but extensions/openai does not implement it, leaving direct OpenAI on the false generic fallback. Implementation and validation are blocked only by this read-only sandbox: it cannot create the mandatory ../codex checkout, edit the branch, or let Corepack create its cache.
+Confirmed on main 689ab6ec: direct OpenAI has no provider cache-TTL hook, so core falls through to false and skips both pruning setup and the post-attempt marker. The narrow provider-owned repair is planned, but this workspace is read-only and lacks the mandatory sibling ../codex source checkout; focused tests also cannot initialize Corepack on the read-only filesystem.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95840 | fix_needed | blocked | canonical | The deterministic executor must use a writable checkout, inspect ../codex as required by AGENTS.md, implement the provider-owned hook, and run the focused regressions before opening the configured fix PR. |
-| #95610 | keep_related | planned | related | Keep #95610 open independently; this repair must not alter prompt assembly or OpenRouter policy. |
-| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | Narrow fix artifact for the writable executor. |
+| #95840 | fix_needed | planned | canonical | A small provider-owned hook fixes the established cache-TTL behavior without changing OpenRouter or core fallback policy. |
+| #95610 | keep_related | planned | related | Related OpenAI cache-efficiency report with a different root cause and fix surface. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked |  | Artifact is ready for a writable executor with the required Codex checkout; no code or GitHub mutations were made. |
 
 ## Needs Human
 
