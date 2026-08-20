@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T04:49:05.803Z",
+  "updated_at": "2026-08-20T04:51:07.626Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125847:5349041625:2026-08-19T23:02:47Z:re_review",
-      "comment_id": "5349041625",
-      "comment_version_key": "5349041625:2026-08-19T23:02:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125847#issuecomment-5349041625",
-      "comment_created_at": "2026-08-19T23:02:47Z",
-      "comment_updated_at": "2026-08-19T23:02:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125847,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T23:03:40.191Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/dynamic-model-catalog-metadata",
-        "head_sha": "6702178e8ac9647736f556371bc74e8e5b7a967b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126345:5345813236:2026-08-19T23:01:46Z:clawsweeper_needs_human",
       "comment_id": "5345813236",
@@ -31688,6 +31641,39 @@
         "kind": "pull_request",
         "branch": "steipete/codex-runtime-thinking-compat",
         "head_sha": "cbdd781c1e82611596b037003274d7c99054e55c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126220:5338423851:2026-08-20T04:50:20Z:clawsweeper_needs_human",
+      "comment_id": "5338423851",
+      "comment_version_key": "5338423851:2026-08-20T04:50:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126220#issuecomment-5338423851",
+      "comment_created_at": "2026-08-19T06:32:33Z",
+      "comment_updated_at": "2026-08-20T04:50:20Z",
+      "comment_body_sha256": "c81b21b8445e49d377d53c0ea938768873792bcfb31e1a2ee5b160ab1d30a772",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the Codex Action privilege semantics** - The changed workflow invokes the pinned action with danger-full-access while relying on its unprivileged-user behavior; the required sibl...; Review finding: [medium] Verify the Codex Action privilege semantics — .github/workflows/mantis-telegram-desktop-proof.yml:629 (sha=742076f8020960edbfeb14a2d30b2eca3ea93abd)",
+      "expected_head_sha": "742076f8020960edbfeb14a2d30b2eca3ea93abd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T04:51:07.626Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mantis-recorder-lane",
+        "head_sha": "742076f8020960edbfeb14a2d30b2eca3ea93abd",
         "cluster_id": null,
         "job_path": null
       }
