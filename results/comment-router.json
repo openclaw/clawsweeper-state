@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T04:00:49.416Z",
+  "updated_at": "2026-08-20T04:01:05.926Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80921:4427897293:2026-08-19T19:45:15Z:clawsweeper_needs_human",
-      "comment_id": "4427897293",
-      "comment_version_key": "4427897293:2026-08-19T19:45:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80921#issuecomment-4427897293",
-      "comment_created_at": "2026-05-12T06:28:57Z",
-      "comment_updated_at": "2026-08-19T19:45:15Z",
-      "comment_body_sha256": "0c62e7329bb4af0a375185cdba5a62b8885ac8685ad197fb645213841eb71120",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80921,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body expressly says no macOS 11 after-fix run is available; source reasoning and workflow results do not demonstrate observed recovery....; Review finding: [P1] Rebase the timeout onto current main — src/gateway/net.ts:311-333 - [high] Preserve current Gateway authorization helpers — src/gateway/net.ts:311 (sha=689cbb3125ed7dec0843c0e2817e6ef8b64f9b40)",
-      "expected_head_sha": "689cbb3125ed7dec0843c0e2817e6ef8b64f9b40",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T19:49:35.403Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/can-bind-to-host-timeout",
-        "head_sha": "689cbb3125ed7dec0843c0e2817e6ef8b64f9b40",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:81190:4435224992:2026-08-19T19:43:10Z:clawsweeper_auto_repair",
       "comment_id": "4435224992",
@@ -32757,6 +32724,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T04:00:49.416Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122918:5275132077:2026-08-20T03:59:47Z:clawsweeper_needs_human",
+      "comment_id": "5275132077",
+      "comment_version_key": "5275132077:2026-08-20T03:59:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122918#issuecomment-5275132077",
+      "comment_created_at": "2026-08-13T02:14:09Z",
+      "comment_updated_at": "2026-08-20T03:59:47Z",
+      "comment_body_sha256": "8b700af471bc977a091f3d186b406a51680b975ded94de354ca6979b9feadc2b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122918,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied live output predates the current credential-based head and does not demonstrate its bootstrap-to-WebSocket-to-HTTP-creden...; Review finding: [P1] Revalidate the Tailscale principal before accepting the credential — src/gateway/http-auth-utils.ts:290-293 - [high] Credential can be replayed across Serve c... (sha=4c8373bcfb0a2fdb700e54d8e65fada854452a01)",
+      "expected_head_sha": "4c8373bcfb0a2fdb700e54d8e65fada854452a01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T04:01:05.926Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-tailscale-http-auth",
+        "head_sha": "4c8373bcfb0a2fdb700e54d8e65fada854452a01",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
