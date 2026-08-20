@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123318",
+  "mode": "autonomous",
+  "run_id": "32343564025",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32343564025",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123318.md",
+  "published_at": "2026-08-20T08:11:49.639Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/123318",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123318",
+  "canonical_pr": null,
+  "summary": "#123318 remains a reproducible stable/beta git-updater bug on main 2a79f747019c2b64888e4cfce477ff5790fc5b41. A narrow credited fix PR is planned, but this checkout is read-only: fixture creation, edits, pnpm/Corepack, and the required Codex sibling inspection are unavailable.",
+  "actions": [
+    {
+      "target": "#86218",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation is valid."
+    },
+    {
+      "target": "#119098",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed and outside this tag-refresh repair."
+    },
+    {
+      "target": "#123318",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123318",
+      "candidate_fix": null,
+      "reason": "The source fix is narrow and bug-only; implementation and validation require a writable executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-123318",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123318",
+      "candidate_fix": null,
+      "reason": "Create the narrow branch and run the fixture plus required changed gate in a writable executor."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
