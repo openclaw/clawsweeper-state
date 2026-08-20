@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-08-20T15:51:27.172Z
+Generated: 2026-08-20T16:46:44.464Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -10,13 +10,14 @@ Repository: openclaw/openclaw
 | open_clawsweeper_prs | 41 |
 | candidates | 0 |
 | waiting | 0 |
-| skipped | 42 |
+| skipped | 43 |
 | conflicting_or_dirty | 0 |
 
 ## Pull Requests
 
 | PR | Title | Branch | Mergeable | Merge State | Status | Reason |
 | --- | --- | --- | --- | --- | --- | --- |
+| [#126728](https://github.com/openclaw/openclaw/pull/126728) | fix(ci): activate dependency approval commands | fix/dependency-guard-comment-trigger | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
 | [#121050](https://github.com/openclaw/openclaw/pull/121050) | fix(control-ui): retain webchat context for config restarts | clawsweeper/issue-openclaw-openclaw-55372 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#120569](https://github.com/openclaw/openclaw/pull/120569) | fix(ai): mark missing OpenAI Completions usage unavailable | clawsweeper/issue-openclaw-openclaw-120356 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#120550](https://github.com/openclaw/openclaw/pull/120550) | fix(agents): preserve latest context-usage provenance | clawsweeper/issue-openclaw-openclaw-120536 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
