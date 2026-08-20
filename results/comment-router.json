@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T17:50:45.917Z",
+  "updated_at": "2026-08-20T17:52:12.801Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-20T11:43:59Z:clawsweeper_needs_human",
-      "comment_id": "5154193917",
-      "comment_version_key": "5154193917:2026-08-20T11:43:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
-      "comment_created_at": "2026-08-02T00:30:44Z",
-      "comment_updated_at": "2026-08-20T11:43:59Z",
-      "comment_body_sha256": "36cf965a079667622bc09d50a248ebbfacca2e4bf6b602f6a017fb5dc0a12fd6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117712,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Align the TruffleHog executable tuple (P1)** - The action pin now names v3.97.0, but version still pins the v3.95.9 executable and digest; the current guard also asserts the old action SHA. This both leaves the...; Review finding: [P1] Align the TruffleHog executable tuple — .github/workflows/ci.yml:1066-1070 - [P1] Refresh the Android attestation contract guard — .github/workflows/android-r... (sha=62334efaac6b3a5e2132c80e7e95bf32b9af0db8)",
-      "expected_head_sha": "62334efaac6b3a5e2132c80e7e95bf32b9af0db8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T11:49:48.758Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-b3ce8c744c",
-        "head_sha": "62334efaac6b3a5e2132c80e7e95bf32b9af0db8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117721:5154331249:2026-08-19T14:21:25Z:clawsweeper_auto_repair",
       "comment_id": "5154331249",
@@ -31970,6 +31937,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1442:5359659028:2026-08-20T17:51:28Z:re_review",
+      "comment_id": "5359659028",
+      "comment_version_key": "5359659028:2026-08-20T17:51:28Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1442#issuecomment-5359659028",
+      "comment_created_at": "2026-08-20T17:51:28Z",
+      "comment_updated_at": "2026-08-20T17:51:28Z",
+      "comment_body_sha256": "4099812e3b3fa54194073d607468e653a80265d0dde53e0a062afe8d37c814cf",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1442,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T17:52:10.469Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workspace-supervise-remote-children",
+        "head_sha": "eda596dc3c1a8347b9c08bed7da00d7b5fb316c2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
