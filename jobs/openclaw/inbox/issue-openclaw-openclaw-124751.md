@@ -67,21 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the shared Apple chat final-to-transcript reconciliation so a partial `chat.final` and its complete durable `session.message` row cannot remain as two assistant bubbles when the durable row lacks the run id. Trace and preserve authoritative producer-side run correlation where feasible; do not add a content-only UI duplicate collapse or provider-specific branch. Add a failing-before/fixed-after replay regression for this ordering, retain proof that distinct assistant messages remain distinct, and capture a redacted iOS long-reply run showing one final bubble and live-edge behavior. Do not edit CHANGELOG.md.
+Repair the shared Apple chat reconciliation for the reported iOS duplicate. First add a failing regression where a partial terminal `chat.final` and a fuller canonical `session.message` for the same user turn carry different transcript/idempotency identities, then prove it passes after the repair. Trace `src/gateway/session-transcript-message.ts` and the shared Swift event codec before choosing the owner: prefer retaining/propagating an authoritative run identity from the producer to the durable row; use a narrowly scoped per-run fallback only if the protocol cannot carry it. Do not add global text deduplication, merge repeated same-text turns, alter provider behavior, or reopen the already-fixed keyboard-follow path. Include real iOS device or simulator proof showing one final bubble after a long reply.
 
 Likely files:
 
 - apps/shared/OpenClawKit/Sources/OpenClawChatUI/ChatViewModel+HistoryReconciliation.swift
 - apps/shared/OpenClawKit/Sources/OpenClawChatUI/ChatViewModel+TransportEvents.swift
-- apps/shared/OpenClawKit/Tests/OpenClawKitTests/ChatStreamReplayTests.swift
-- apps/ios/UITests/OpenClawSnapshotUITests.swift
+- apps/shared/OpenClawKit/Tests/OpenClawKitTests/ChatViewModelTests.swift
 - src/gateway/session-transcript-message.ts
 
 Validation:
 
+- swift test --package-path apps/shared/OpenClawKit --filter ChatViewModelTests
 - swift test --package-path apps/shared/OpenClawKit --filter ChatStreamReplayTests
-- pnpm ios:build
-- Redacted iPhone or iOS Simulator recording of a long remote-Gateway reply showing one final bubble and no unwanted Jump to latest control
 
 ## Operator Prompt
 
