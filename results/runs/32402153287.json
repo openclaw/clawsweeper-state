@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123318",
+  "mode": "autonomous",
+  "run_id": "32402153287",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32402153287",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123318.md",
+  "published_at": "2026-08-20T18:39:07.913Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/123318",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123318",
+  "canonical_pr": null,
+  "summary": "#123318 remains a real, narrow release-channel updater defect on main 2006049629fb042d708b3af36ed28134e4fb03e6: stable/beta updates run `git fetch --all --prune --tags` without `--force`, so a recreated local tag aborts before channel-tag resolution. A writable checkout is required to reproduce, patch, and validate; this worker's filesystem is read-only, dependencies are absent, and the required sibling ../codex checkout is unavailable for the mandatory direct Codex inspection.",
+  "actions": [
+    {
+      "target": "#123318",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123318",
+      "candidate_fix": null,
+      "reason": "Implement a force-refresh for changed release tags, without changing the dev `--no-tags` path, status persistence, or fast-status policy."
+    },
+    {
+      "target": "#86218",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical adjacent updater evidence only; already closed and not a closure target."
+    },
+    {
+      "target": "#119098",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent historical issue; already closed and outside this repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-123318",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#123318",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the execution environment; the narrow repair plan is ready for a writable executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
