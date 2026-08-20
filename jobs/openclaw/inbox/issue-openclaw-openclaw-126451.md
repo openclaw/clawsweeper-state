@@ -67,22 +67,23 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Codex npm plugin's host-package declaration so its runtime imports from openclaw/plugin-sdk resolve through the established managed-plugin host-link flow. Preserve the fail-closed startup policy; do not add a warning suppression or new configuration. Add a regression that exercises a packaged/managed Codex install with a legacy .jsonl.codex-app-server.json sidecar and verifies the migration can load, complete or intentionally retain only nonfatal residue, and allow the startup checkpoint to proceed. Include release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the current Codex plugin package-resolution defect reported at https://github.com/openclaw/openclaw/issues/126451. Keep the fail-closed Gateway policy for genuine migration errors; make the owning Codex package artifact resolve the OpenClaw Plugin SDK imports used by `doctor-contract-api` and the legacy sidecar migration in an isolated managed npm project. First establish a failing packaged-project regression with a stale `.jsonl.codex-app-server.json` sidecar and startup migration; then prove the fixed package migrates or safely completes startup without `ERR_MODULE_NOT_FOUND`. Update focused package-manifest and packaged-runtime coverage, do not add config flags or broaden startup-warning suppression, and record user-visible release context in the PR body rather than editing CHANGELOG.md.
 
 Likely files:
 
 - extensions/codex/package.json
-- src/plugins/plugin-peer-link.ts
-- src/plugins/plugin-peer-link.test.ts
-- test/scripts/codex-install-assertions.test.ts
+- extensions/codex/src/manifest.test.ts
 - extensions/codex/doctor-contract-api.test.ts
+- scripts/e2e/codex-npm-plugin-live-docker.sh
+- scripts/e2e/lib/codex-npm-plugin-live/assertions.mjs
 
 Validation:
 
+- Add a regression that installs the packaged Codex plugin in an isolated npm project and exercises the stale-sidecar Doctor startup path.
 - pnpm test extensions/codex/doctor-contract-api.test.ts
-- pnpm test src/plugins/plugin-peer-link.test.ts
-- pnpm test test/scripts/codex-install-assertions.test.ts
-- Run a packaged Docker or managed-npm upgrade fixture with a legacy Codex sidecar and verify the Gateway reaches healthz.
+- pnpm test extensions/codex/src/manifest.test.ts
+- pnpm test src/commands/doctor-config-preflight.state-migration.test.ts
+- pnpm test:docker:live-codex-npm-plugin
 
 ## Operator Prompt
 
