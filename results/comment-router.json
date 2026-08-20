@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T22:52:28.671Z",
+  "updated_at": "2026-08-20T22:52:30.604Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123219:5358031207:2026-08-20T15:26:07Z:re_review",
-      "comment_id": "5358031207",
-      "comment_version_key": "5358031207:2026-08-20T15:26:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123219#issuecomment-5358031207",
-      "comment_created_at": "2026-08-20T15:26:07Z",
-      "comment_updated_at": "2026-08-20T15:26:07Z",
-      "comment_body_sha256": "5219f030eed39af83a7764253b60fb575b2bb4c2c1c9beec5bfe7cf7d84d1b46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123219,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T15:26:49.939Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tasks-terminal-recent-100911",
-        "head_sha": "bf777816d71308110fec0b001276240a131ee3bb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96291:4786257932:2026-08-20T15:16:00Z:clawsweeper_auto_repair",
       "comment_id": "4786257932",
@@ -31927,6 +31880,39 @@
         "kind": "pull_request",
         "branch": "steipete/codex-exec-server-transport-neutral",
         "head_sha": "0268d7915be6bdfb563d6c68a6a6458d64f4a64c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1442:5359487414:2026-08-20T22:48:15Z:clawsweeper_auto_repair",
+      "comment_id": "5359487414",
+      "comment_version_key": "5359487414:2026-08-20T22:48:15Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1442#issuecomment-5359487414",
+      "comment_created_at": "2026-08-20T17:35:22Z",
+      "comment_updated_at": "2026-08-20T22:48:15Z",
+      "comment_body_sha256": "e00b2afb0936f41aef6bc5241975577bbb32526fdfbe69a9c2dfa3bcaf7375a5",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1442,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c475ad061e0ada0554245a8cdff164847f3185c5)",
+      "expected_head_sha": "c475ad061e0ada0554245a8cdff164847f3185c5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T22:52:30.604Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workspace-supervise-remote-children",
+        "head_sha": "c475ad061e0ada0554245a8cdff164847f3185c5",
         "cluster_id": null,
         "job_path": null
       }
