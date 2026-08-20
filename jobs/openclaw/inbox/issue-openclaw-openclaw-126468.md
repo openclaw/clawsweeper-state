@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the iMessage self-chat limiter bug reported in https://github.com/openclaw/openclaw/issues/126468. First reproduce the six-message failure through the real monitor/RPC notification path. At the loop-evidence owner in `extensions/imessage/src/monitor/monitor-provider.ts`, stop counting the benign `self-chat echo` dedupe reason while retaining genuine `echo` and `reflected assistant content` loop signals. Add a monitor-level regression that sends paired from-me/reflected self-chat rows and proves eight user messages dispatch; preserve or extend genuine-echo limiter coverage. Treat https://github.com/openclaw/openclaw/pull/124386 as prior art, do not revive its branch, and credit its useful source work where appropriate. Do not add config, fallback paths, or CHANGELOG.md edits; include user-visible release-note context in the PR body.
+Repair the current-main iMessage self-chat limiter bug described in https://github.com/openclaw/openclaw/issues/126468. In the iMessage monitor, keep companion-row dedupe returning `self-chat echo` but stop treating that reason as evidence for the echo-loop rate limiter; continue counting genuine `echo` and `reflected assistant content` drops. Add a focused monitor-boundary regression that feeds six rapid paired self-chat rows and proves all six valid source rows start an inbound agent turn, while preserving the existing genuine-echo limiter behavior. Treat https://github.com/openclaw/openclaw/pull/124386 as source context only; do not revive its branch. Do not change pending-marker/GUID behavior covered by https://github.com/openclaw/openclaw/issues/122794, limiter thresholds, configuration, or persistent state. Do not edit CHANGELOG.md; include concise release-note context in the PR body.
 
 Likely files:
 
@@ -77,9 +77,9 @@ Likely files:
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/imessage/src/monitor.watch-subscribe-retry.test.ts extensions/imessage/src/monitor/self-chat-dedupe.test.ts extensions/imessage/src/monitor/inbound-processing.test.ts
+- node scripts/run-vitest.mjs extensions/imessage/src/monitor.watch-subscribe-retry.test.ts
+- node scripts/run-vitest.mjs extensions/imessage/src/monitor/self-chat-dedupe.test.ts
 - pnpm check:changed -- extensions/imessage/src/monitor/monitor-provider.ts extensions/imessage/src/monitor.watch-subscribe-retry.test.ts
-- Run the failing paired-row monitor scenario before the fix and verify all eight user messages reach agent dispatch after it.
 
 ## Operator Prompt
 
