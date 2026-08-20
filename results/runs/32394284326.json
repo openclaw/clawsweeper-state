@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124751",
+  "mode": "autonomous",
+  "run_id": "32394284326",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32394284326",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124751.md",
+  "published_at": "2026-08-20T17:02:41.750Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124751",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124751",
+  "canonical_pr": null,
+  "summary": "Current main has a real shared-Apple reconciliation gap: a partial chat.final is retained under its run scope, but a fuller session.message with a different durable idempotency identity is appended instead of adopted. A narrow Swift repair artifact is ready; this worker could not write the regression or run Swift tests because the checkout is read-only, and the required sibling ../codex source checkout is unavailable.",
+  "actions": [
+    {
+      "target": "#108692",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical related context only; no closure action is permitted or needed."
+    },
+    {
+      "target": "#123792",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related duplicate symptom family, but independent root cause and repair path."
+    },
+    {
+      "target": "#124751",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Implement the narrow per-run fallback because the current protocol does not carry the terminal run identity into a differently keyed durable row."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124751",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "A writable executor can make the bounded repair on clawsweeper/issue-openclaw-openclaw-124751 and open the one credited fix PR."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_independent": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
