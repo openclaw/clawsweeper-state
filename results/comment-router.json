@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T23:36:28.713Z",
+  "updated_at": "2026-08-20T23:36:49.679Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126671:5356347879:2026-08-20T16:01:47Z:clawsweeper_needs_human",
-      "comment_id": "5356347879",
-      "comment_version_key": "5356347879:2026-08-20T16:01:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126671#issuecomment-5356347879",
-      "comment_created_at": "2026-08-20T13:11:14Z",
-      "comment_updated_at": "2026-08-20T16:01:47Z",
-      "comment_body_sha256": "4dec50cd0ff6a59b8098fc59aad51a6ddb1a1ad570794be9bc71a27e75b7dd12",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126671,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch changes persisted session-recovery ownership, so exact-head CI should finish before merge. (sha=03ff4a82d5448ca84ca4be6305cdcd78ca20130e)",
-      "expected_head_sha": "03ff4a82d5448ca84ca4be6305cdcd78ca20130e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T16:05:52.617Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/terminal-only-recovery-residue",
-        "head_sha": "03ff4a82d5448ca84ca4be6305cdcd78ca20130e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126695:5357794906:2026-08-20T16:00:19Z:clawsweeper_needs_human",
       "comment_id": "5357794906",
@@ -31693,6 +31660,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T23:36:28.713Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126489:5349693533:2026-08-20T23:35:40Z:clawsweeper_needs_human",
+      "comment_id": "5349693533",
+      "comment_version_key": "5349693533:2026-08-20T23:35:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126489#issuecomment-5349693533",
+      "comment_created_at": "2026-08-20T00:31:32Z",
+      "comment_updated_at": "2026-08-20T23:35:40Z",
+      "comment_body_sha256": "43aefcf12142a52ad65829e2c7e068c38b33984a29203528fa68cc58de7d82d4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126489,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The forward-only ledger intentionally leaves pre-existing untracked artifacts and shell-created workspace changes outside recorded provenance; maintainers must affirm that upgrade and... (sha=bb8094e20d32ffa50519297b388328f2d7d8a236)",
+      "expected_head_sha": "bb8094e20d32ffa50519297b388328f2d7d8a236",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T23:36:49.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/memory-provenance-cutover",
+        "head_sha": "bb8094e20d32ffa50519297b388328f2d7d8a236",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
