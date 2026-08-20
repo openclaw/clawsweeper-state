@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T22:57:15.242Z",
+  "updated_at": "2026-08-20T22:57:18.473Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125822:5351530563:2026-08-20T04:54:01Z:re_review",
-      "comment_id": "5351530563",
-      "comment_version_key": "5351530563:2026-08-20T04:54:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125822#issuecomment-5351530563",
-      "comment_created_at": "2026-08-20T04:54:01Z",
-      "comment_updated_at": "2026-08-20T04:54:01Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125822,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T15:31:27.553Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126703:5358080412:2026-08-20T15:29:44Z:clawsweeper_needs_human",
       "comment_id": "5358080412",
@@ -31862,6 +31835,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T22:57:15.242Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126721:5358518977:2026-08-20T22:55:15Z:clawsweeper_needs_human",
+      "comment_id": "5358518977",
+      "comment_version_key": "5358518977:2026-08-20T22:55:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126721#issuecomment-5358518977",
+      "comment_created_at": "2026-08-20T16:05:31Z",
+      "comment_updated_at": "2026-08-20T22:55:15Z",
+      "comment_body_sha256": "006b9a290548883c27174033d577a4c13ffb956f613cf7b687e2777fa5bddc02",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126721,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-current-head runtime-pair execution is absent, so this change to daily-main qualification has not yet demonstrated that restart wake, correlated run completion, and follow-u... (sha=fc70d6950bd1f32386b56ea0ff1efc3c9c8fed00)",
+      "expected_head_sha": "fc70d6950bd1f32386b56ea0ff1efc3c9c8fed00",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T22:57:18.473Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-wake-lifecycle-20260820",
+        "head_sha": "fc70d6950bd1f32386b56ea0ff1efc3c9c8fed00",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
