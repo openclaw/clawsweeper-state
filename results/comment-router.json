@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T04:38:32.705Z",
+  "updated_at": "2026-08-20T04:38:50.546Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126255:5348717637:2026-08-19T22:23:10Z:re_review",
-      "comment_id": "5348717637",
-      "comment_version_key": "5348717637:2026-08-19T22:23:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126255#issuecomment-5348717637",
-      "comment_created_at": "2026-08-19T22:23:10Z",
-      "comment_updated_at": "2026-08-19T22:23:10Z",
-      "comment_body_sha256": "e213299247d8090267a7481d604d6b6792b9e6f4dd126d0f631dcfc7f4410658",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126255,
-      "author": "MagMueller",
-      "author_id": 67061560,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T22:23:53.628Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/browser-harness-default",
-        "head_sha": "8931c078247c6369a67fb765f5e2b555bed670ad",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/summarize:392:5348725479:2026-08-19T22:24:02Z:clawsweeper_needs_human",
       "comment_id": "5348725479",
@@ -32137,6 +32090,39 @@
         "kind": "pull_request",
         "branch": "feat/claude-swap-account-alias",
         "head_sha": "5e87522985cfa50210aeff77858eaf9be9d7eed6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3081:5348540186:2026-08-20T04:38:08Z:clawsweeper_needs_human",
+      "comment_id": "5348540186",
+      "comment_version_key": "5348540186:2026-08-20T04:38:08Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3081#issuecomment-5348540186",
+      "comment_created_at": "2026-08-19T22:02:22Z",
+      "comment_updated_at": "2026-08-20T04:38:08Z",
+      "comment_body_sha256": "c9061ce2da8842a2f7d829bbb419c75cbde9aa21f27102b2e56ee0d5c88d613d",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3081,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The redacted live terminal output shows normal successful rows, not the unavailable/null-usage path repaired here; add a redacted afte...; Review finding: [P2] Avoid persisting a deterministic email fingerprint — Sources/CodexBarCore/Providers/Claude/ClaudeSwap/ClaudeSwapRetainedUsageStore.swift:105-111 - [medium] Pe... (sha=b249e8755cc91d0bf0d801e6ece146b5b9c34918)",
+      "expected_head_sha": "b249e8755cc91d0bf0d801e6ece146b5b9c34918",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T04:38:50.546Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/claude-swap-at-limit-card",
+        "head_sha": "b249e8755cc91d0bf0d801e6ece146b5b9c34918",
         "cluster_id": null,
         "job_path": null
       }
