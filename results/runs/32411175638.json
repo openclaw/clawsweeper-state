@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124952",
+  "mode": "autonomous",
+  "run_id": "32411175638",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32411175638",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124952.md",
+  "published_at": "2026-08-20T20:12:54.046Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124952",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124952",
+  "canonical_pr": null,
+  "summary": "Issue #124952 remains the canonical fix path. Source inspection found the Doctor owner normalizes legacy runtime model-map keys but not explicit modelPolicy.allow entries; this worker cannot patch or validate because the filesystem is read-only and the mandatory sibling ../codex checkout is absent.",
+  "actions": [
+    {
+      "target": "#80408",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; closed items are not mutation targets."
+    },
+    {
+      "target": "#80413",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; closed items are not mutation targets."
+    },
+    {
+      "target": "#124952",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "A writable executor must inspect the required Codex checkout, implement the Doctor-owned projection, and run the regression and changed-file gates."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124952",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor; implementation is blocked in this read-only worker."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#124952",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
