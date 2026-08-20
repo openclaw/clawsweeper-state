@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T02:20:09.022Z",
+  "updated_at": "2026-08-20T02:23:14.452Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125844:5329552590:2026-08-19T18:17:59Z:clawsweeper_needs_human",
-      "comment_id": "5329552590",
-      "comment_version_key": "5329552590:2026-08-19T18:17:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125844#issuecomment-5329552590",
-      "comment_created_at": "2026-08-18T14:23:50Z",
-      "comment_updated_at": "2026-08-19T18:17:59Z",
-      "comment_body_sha256": "e08a035805a0b8a43292e1fd8cb12c3364dc8250c4b82fd1386a0be067a2491b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125844,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve worker claim validation in detached handoffs (P1)** - When the source is a worker, this continuation deliberately creates a new local operational run but drops workerTurnClaim and workerTurnExecutionIde...; Review finding: [P1] Preserve worker claim validation in detached handoffs — src/agents/tools/gateway-caller-context.ts:141-152 - [high] Worker continuation loses placement bindin... (sha=c7fbd0d77f278fabf4108e36688d0a2885f039b0)",
-      "expected_head_sha": "c7fbd0d77f278fabf4108e36688d0a2885f039b0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T18:18:38.842Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-910-v2",
-        "head_sha": "c7fbd0d77f278fabf4108e36688d0a2885f039b0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126336:5345828005:2026-08-19T18:17:15Z:clawsweeper_needs_human",
       "comment_id": "5345828005",
@@ -32528,6 +32495,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123871:5350418409:2026-08-20T02:22:25Z:re_review",
+      "comment_id": "5350418409",
+      "comment_version_key": "5350418409:2026-08-20T02:22:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123871#issuecomment-5350418409",
+      "comment_created_at": "2026-08-20T02:22:25Z",
+      "comment_updated_at": "2026-08-20T02:22:25Z",
+      "comment_body_sha256": "ff81cb841e0525c789785c42b8f419615bf09692d13554e6bbf613942a48affa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123871,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T02:23:12.677Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/status-ownerless",
+        "head_sha": "81557e239dab8d1774c9892339c4bbde72897988",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
