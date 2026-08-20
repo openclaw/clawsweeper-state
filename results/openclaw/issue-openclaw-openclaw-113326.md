@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "32366325882"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32366325882"
+run_id: "32364477609"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32364477609"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T12:15:26.648Z"
+published_at: "2026-08-20T12:53:30.971Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32366325882](https://github.com/openclaw/clawsweeper/actions/runs/32366325882)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32364477609](https://github.com/openclaw/clawsweeper/actions/runs/32364477609)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-Current main contains the reported unconditional non-TTY guard before method resolution, while CLI/docs expose explicit OpenAI device-code login. A narrow repair is identified, but implementation is blocked: required sibling ../codex source is absent and this checkout is read-only with no node_modules for validation.
+#113326 is a current, narrow bug: the non-TTY guard rejects explicit OpenAI device-code login before provider-method selection. A new fix PR is appropriate, but this worker cannot implement or validate it because the checkout is read-only, dependencies cannot install, and required direct ../codex source inspection is unavailable.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main contains the reported unconditional non-TTY guard before method res
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #113326 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,13 +66,13 @@ Current main contains the reported unconditional non-TTY guard before method res
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113326 | fix_needed | blocked | canonical | The source-level defect is clear, but the mandatory Codex dependency inspection and local validation prerequisites are unavailable. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | blocked | canonical | Executable artifact awaits the required Codex-source inspection and a writable dependency-ready checkout. |
-| #100067 | keep_independent | planned | independent | Distinct root cause and owner path. |
-| #50452 | keep_closed | skipped | related | Already closed; no action. |
-| #71864 | keep_closed | skipped | related | Already closed; no action. |
-| #79021 | keep_closed | skipped | related | Already closed; no action. |
-| #113505 | keep_closed | skipped | related | Already closed; no action. |
+| #113326 | fix_needed | blocked | canonical | Implement the narrow command-owner repair after provision of a writable checkout with the required sibling Codex source and dependencies. |
+| #100067 | keep_independent | planned | independent | Different owner boundary and reproduction; leave open independently. |
+| #50452 | keep_closed | skipped | related | Already closed; no mutation. |
+| #71864 | keep_closed | skipped | related | Already closed; no mutation. |
+| #79021 | keep_closed | skipped | related | Already closed; no mutation. |
+| #113505 | keep_closed | skipped | related | Already closed; no mutation. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | Artifact is ready for a writable executor; current worker cannot create the branch or run validation. |
 
 ## Needs Human
 
