@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T06:54:14.788Z",
+  "updated_at": "2026-08-20T06:55:49.692Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126207:5349759150:2026-08-20T00:41:57Z:re_review",
-      "comment_id": "5349759150",
-      "comment_version_key": "5349759150:2026-08-20T00:41:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126207#issuecomment-5349759150",
-      "comment_created_at": "2026-08-20T00:41:57Z",
-      "comment_updated_at": "2026-08-20T00:41:57Z",
-      "comment_body_sha256": "0e193990115d8112d23054fb8c67d07e08ad49933d17bd0d404d3829a175f82b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126207,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T00:42:45.328Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-telegram-direct-topic",
-        "head_sha": "737834d9b1b5145a0b9099b08800e2e812716b21",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1419:5349764061:2026-08-20T00:42:48Z:clawsweeper_needs_human",
       "comment_id": "5349764061",
@@ -31736,6 +31689,39 @@
         "kind": "pull_request",
         "branch": "codex/csw-134-closeout-provenance-r2",
         "head_sha": "4313bf38456bf2c42f281cba1e9cff60ba718357",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1431:5352227335:2026-08-20T06:54:27Z:clawsweeper_needs_human",
+      "comment_id": "5352227335",
+      "comment_version_key": "5352227335:2026-08-20T06:54:27Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1431#issuecomment-5352227335",
+      "comment_created_at": "2026-08-20T06:24:44Z",
+      "comment_updated_at": "2026-08-20T06:54:27Z",
+      "comment_body_sha256": "0401684655cadc813a930f5ecf68b8298824c827e97494ffcd036e5ad3521620",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1431,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides focused in-process HTTP-server tests but no redacted after-fix run against a real configured loader endpoint; add such proof an...; Review finding: [P1] Hold the claim lock through the loader DELETE — internal/providers/cloudflaredynamicworkers/backend.go:392-395 - [P1] Preserve or explicitly migrate raw lifec... (sha=49c06fe73dff1fa5be0f45951c15674f0a31d47c)",
+      "expected_head_sha": "49c06fe73dff1fa5be0f45951c15674f0a31d47c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T06:55:49.692Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cfdw-ownership-gate",
+        "head_sha": "49c06fe73dff1fa5be0f45951c15674f0a31d47c",
         "cluster_id": null,
         "job_path": null
       }
