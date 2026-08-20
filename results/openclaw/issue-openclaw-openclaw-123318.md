@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-123318"
 mode: "autonomous"
-run_id: "32352756689"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32352756689"
+run_id: "32355932515"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32355932515"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T09:25:42.296Z"
+published_at: "2026-08-20T10:02:14.389Z"
 canonical: "https://github.com/openclaw/openclaw/issues/123318"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/123318"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32352756689](https://github.com/openclaw/clawsweeper/actions/runs/32352756689)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32355932515](https://github.com/openclaw/clawsweeper/actions/runs/32355932515)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/123318
 
 ## Summary
 
-#123318 remains the canonical bug. Current main uses an unsafe stable/beta tag fetch; a narrow updater, real-Git regression, and documentation repair is planned. This worker could not create or validate the branch because the checkout is read-only, pnpm cannot initialize its Corepack cache, and the mandatory sibling ../codex checkout is absent.
+#123318 remains a real, narrow stable/beta git-updater bug on main 6d70d051: its tag fetch can reject a recreated upstream tag before tag resolution. A credited new-fix PR is planned, but this read-only checkout could not write the branch or run the required fixture/validation.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/123318
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #123318 | fix_needed | blocked | canonical | A source-confirmed narrow repair is needed, but this environment cannot produce the required writable, locally validated PR branch. |
-| #86218 | keep_closed | skipped | related | Already closed; no action. |
-| #119098 | keep_closed | skipped | independent | Already closed; no action. |
-| cluster:issue-openclaw-openclaw-123318 | build_fix_artifact | planned |  | Prepared for a writable executor; implementation and validation were blocked locally. |
+| #86218 | keep_closed | skipped | related | Historical related context only. |
+| #119098 | keep_closed | skipped | independent | Independent closed context. |
+| #123318 | fix_needed | blocked | canonical | Implementation is blocked only by this worker's read-only sandbox. The fix path is otherwise narrow and does not change configuration, policy, or the dev updater path. |
+| cluster:issue-openclaw-openclaw-123318 | build_fix_artifact | planned |  | Prepare a single new fix PR for the canonical issue. |
 
 ## Needs Human
 
