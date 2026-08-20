@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/126594. First capture a focused failing regression against current main. In `src/plugins/gateway-startup-plugin-providers.ts`, add only the effective `talk.realtime` provider to `realtimeVoiceProviders`: use the explicit selector, otherwise one configured provider-map key; normalize it; do not activate every alternate provider config or add a new option. Preserve `agents.defaults.voiceModel` behavior, plugin disablement, and restrictive allowlists. Add startup-plan coverage in `src/plugins/channel-plugin-ids.test.ts` for Talk-only OpenAI realtime config plus disabled/allowlist behavior. Do not change plugin-specific runtime code or CHANGELOG.md; include user-visible release context in the PR body. Stop if this requires a product or API decision.
+Repair the current Gateway startup-planning bug reported at https://github.com/openclaw/openclaw/issues/126594. In the generic configured-voice collector, include normalized `talk.realtime` provider intent in `realtimeVoiceProviders` without making speech or realtime-transcription startup follow Talk configuration. Keep activation manifest-driven and lazy; do not import Talk runtime resolution into the plugin control plane or add configuration. Add boundary regression coverage beside the existing voice-model startup cases for Talk-only activation and explicit plugin disablement; include a singleton provider-map case if it is supported by the schema. First establish the failing regression on current main, then run the focused test and build. Do not edit CHANGELOG.md; describe the user-visible Talk startup repair in the PR body.
 
 Likely files:
 
