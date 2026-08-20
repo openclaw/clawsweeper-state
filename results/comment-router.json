@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T23:30:18.845Z",
+  "updated_at": "2026-08-20T23:31:23.223Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126413:5347641358:2026-08-20T15:29:07Z:clawsweeper_needs_human",
-      "comment_id": "5347641358",
-      "comment_version_key": "5347641358:2026-08-20T15:29:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126413#issuecomment-5347641358",
-      "comment_created_at": "2026-08-19T20:30:32Z",
-      "comment_updated_at": "2026-08-20T15:29:07Z",
-      "comment_body_sha256": "476e5cf0e9fa123553635c79f95bdaf9d206209bdbb17cbfa4984e92bdd84fea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126413,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current-main comparison, latest remote review notes, and exact-head CI could not be refreshed because required promisor objects and GitHub network access are unavailable. (sha=a64976114acad865f913a73c10beff789be6d72c)",
-      "expected_head_sha": "a64976114acad865f913a73c10beff789be6d72c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T15:46:41.576Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-admission-release",
-        "head_sha": "a64976114acad865f913a73c10beff789be6d72c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126566:5352673093:2026-08-20T15:30:34Z:clawsweeper_needs_human",
       "comment_id": "5352673093",
@@ -31766,6 +31733,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126007:5363314959:2026-08-20T23:30:36Z:re_review",
+      "comment_id": "5363314959",
+      "comment_version_key": "5363314959:2026-08-20T23:30:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126007#issuecomment-5363314959",
+      "comment_created_at": "2026-08-20T23:30:36Z",
+      "comment_updated_at": "2026-08-20T23:30:36Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126007,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T23:31:21.480Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-control-ui-decision-receipts",
+        "head_sha": "120eeee08f4d47f1bf542ebab2da1d32d17a86b4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
