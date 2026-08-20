@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T04:26:30.055Z",
+  "updated_at": "2026-08-20T04:26:43.241Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5319489059:2026-08-17T19:49:43Z:re_review",
-      "comment_id": "5319489059",
-      "comment_version_key": "5319489059:2026-08-17T19:49:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5319489059",
-      "comment_created_at": "2026-08-17T19:49:43Z",
-      "comment_updated_at": "2026-08-17T19:49:43Z",
-      "comment_body_sha256": "808c60c70da67e2db36ec87e6907a8e243670e740820566ae1317385486bb9e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — new head 6b30a878a2. since the 1d703b227a review: rebased onto latest upstream/main (clean) and resolved both code-class ci failures — registry.ts is back under the max-lines threshold (quarantine-state extracted to a sibling module with the public re-export preserved), and the two assertion-safety ratchet violations were replaced with type-safe constructs (in-operator narrowing and a direct process annotation). oxlint, the assertion-safety ratchet in ci mode, tsgo, and the affected suites are all green locally. the two identity-related p1 findings are under active analysis with a proposal pending review. please re-rate against the current head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T20:32:24.266Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5322206910:2026-08-18T01:14:20Z:re_review",
       "comment_id": "5322206910",
@@ -32733,6 +32706,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126497:5351347777:2026-08-20T04:25:54Z:re_review",
+      "comment_id": "5351347777",
+      "comment_version_key": "5351347777:2026-08-20T04:25:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126497#issuecomment-5351347777",
+      "comment_created_at": "2026-08-20T04:25:54Z",
+      "comment_updated_at": "2026-08-20T04:25:54Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126497,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T04:26:41.048Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tui-reconcile-empty-active-runs",
+        "head_sha": "64310c72009e41c84820e2c49ea28b6598429e4e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
