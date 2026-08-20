@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the direct-OpenAI cache-TTL pruning defect from https://github.com/openclaw/openclaw/issues/95840. Keep the existing provider-policy architecture: make the OpenAI provider explicitly eligible through the existing hook only for the supported direct OpenAI behavior. Do not add configuration, do not inject cache-control markers, and preserve exclusions for OpenRouter and unrelated OpenAI-compatible routes. Add a regression that fails on current main and proves configured cache-ttl mode installs the idle-gap projection and records or uses the matching provider/model marker. Include the issue and prior closed PRs in the PR body, put release-note context there rather than editing CHANGELOG.md, and stop for maintainer review if correct endpoint or transport scope cannot be established from the provider contract.
+Repair the direct-OpenAI cache-TTL pruning defect in one focused PR. Before editing, establish a failing owner-boundary regression showing that configured `agents.defaults.contextPruning.mode: "cache-ttl"` does not become eligible for direct `openai` today. Implement the decision through the existing OpenAI provider plugin hook, restricted to direct provider `openai`; do not add a generic core allowlist, a new config option, or enable Azure aliases, OpenRouter routes, or unrelated proxies. Add focused tests for direct OpenAI eligibility and the negative alias/routed cases, plus the existing embedded-runner configured-path behavior. Preserve current Anthropic, Google, Kilocode, and OpenRouter rules. Do not edit CHANGELOG.md; put concise release-note context in the PR body.
 
 Likely files:
 
 - extensions/openai/openai-provider.ts
-- extensions/openai/index.test.ts
+- extensions/openai/openai-provider.test.ts
 - src/agents/embedded-agent-runner/cache-ttl.test.ts
 - src/agents/embedded-agent-runner/run/attempt-context-guards.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/cache-ttl.test.ts src/agents/embedded-agent-runner/run/attempt-context-guards.test.ts src/agents/embedded-agent-runner/tool-result-truncation.cache-ttl.test.ts
-- node scripts/run-vitest.mjs extensions/openai/index.test.ts
-- pnpm check:changed
+- node scripts/run-vitest.mjs extensions/openai/openai-provider.test.ts src/agents/embedded-agent-runner/cache-ttl.test.ts src/agents/embedded-agent-runner/run/attempt-context-guards.test.ts
+- pnpm check:changed -- extensions/openai/openai-provider.ts extensions/openai/openai-provider.test.ts src/agents/embedded-agent-runner/cache-ttl.test.ts
 
 ## Operator Prompt
 
