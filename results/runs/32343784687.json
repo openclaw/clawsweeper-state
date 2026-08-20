@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126571",
+  "mode": "autonomous",
+  "run_id": "32343784687",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32343784687",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126571.md",
+  "published_at": "2026-08-20T07:39:16.558Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126571",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126571",
+  "canonical_pr": null,
+  "summary": "The narrow repair is identified, but this read-only checkout cannot verify or create it: preflight main 16bec3c7272887531b27137435738a3de4f8de90 is absent locally, ../codex is absent (a repository hard gate), node_modules is absent, and pnpm cannot initialize its cache on the read-only filesystem. The executor should refresh main, satisfy the Codex-source gate, apply the artifact, and run the listed tests before opening the one credited PR.",
+  "actions": [
+    {
+      "target": "#114964",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#114964",
+      "candidate_fix": null,
+      "reason": "Independent Doctor migration defect."
+    },
+    {
+      "target": "#125578",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#125578",
+      "candidate_fix": null,
+      "reason": "Independent Gateway-startup policy report."
+    },
+    {
+      "target": "#126571",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126571",
+      "candidate_fix": null,
+      "reason": "Canonical bug; a new narrow fix PR is appropriate."
+    },
+    {
+      "target": "#126572",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126572",
+      "candidate_fix": null,
+      "reason": "Closed historical context; never mutate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126571",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126571",
+      "candidate_fix": null,
+      "reason": "Narrow implementation plan ready for an executor with a writable, current checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126571",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126571",
+      "candidate_fix": null,
+      "reason": "Executor must refresh main, obtain dependencies, satisfy the direct Codex-source gate, and validate before opening the PR."
+    }
+  ],
+  "action_counts": {
+    "keep_independent": 2,
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
