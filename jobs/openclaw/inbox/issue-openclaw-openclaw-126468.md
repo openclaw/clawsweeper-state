@@ -67,19 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current-main iMessage self-chat limiter bug described in https://github.com/openclaw/openclaw/issues/126468. In the iMessage monitor, keep companion-row dedupe returning `self-chat echo` but stop treating that reason as evidence for the echo-loop rate limiter; continue counting genuine `echo` and `reflected assistant content` drops. Add a focused monitor-boundary regression that feeds six rapid paired self-chat rows and proves all six valid source rows start an inbound agent turn, while preserving the existing genuine-echo limiter behavior. Treat https://github.com/openclaw/openclaw/pull/124386 as source context only; do not revive its branch. Do not change pending-marker/GUID behavior covered by https://github.com/openclaw/openclaw/issues/122794, limiter thresholds, configuration, or persistent state. Do not edit CHANGELOG.md; include concise release-note context in the PR body.
+Repair the iMessage self-chat loop-evidence classification for https://github.com/openclaw/openclaw/issues/126468. In extensions/imessage/src/monitor/monitor-provider.ts, stop counting the intentional "self-chat echo" dedupe reason as a loop-limiter hit, while retaining genuine "echo" and "reflected assistant content" protection. Add a monitor-boundary regression that sends six self-chat from-me/reflected row pairs and proves all six user turns dispatch; it must fail before the classifier repair. Preserve the distinct pending-echo identity work in https://github.com/openclaw/openclaw/issues/122794 and do not change config, schema, or generic ingress semantics. Do not edit CHANGELOG.md; include concise release-note context in the PR body.
 
 Likely files:
 
 - extensions/imessage/src/monitor/monitor-provider.ts
-- extensions/imessage/src/monitor.watch-subscribe-retry.test.ts
-- extensions/imessage/src/monitor/self-chat-dedupe.test.ts
+- extensions/imessage/src/monitor.self-chat-loop-limiter.test.ts
+- extensions/imessage/src/monitor/inbound-processing.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/imessage/src/monitor.watch-subscribe-retry.test.ts
-- node scripts/run-vitest.mjs extensions/imessage/src/monitor/self-chat-dedupe.test.ts
-- pnpm check:changed -- extensions/imessage/src/monitor/monitor-provider.ts extensions/imessage/src/monitor.watch-subscribe-retry.test.ts
+- pnpm test extensions/imessage/src/monitor.self-chat-loop-limiter.test.ts
+- pnpm test extensions/imessage/src/monitor/watch-subscribe-retry.test.ts
+- pnpm check:changed
 
 ## Operator Prompt
 
