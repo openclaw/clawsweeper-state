@@ -67,22 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the startup ordering behind this report. First reproduce the installed Codex-plugin missing-OpenClaw-host-link scenario with a stale *.jsonl.codex-app-server.json sidecar. Reuse the generic registered-plugin OpenClaw host-link repair before plugin Doctor state migrations so the Codex migration loads; preserve the fail-closed startup gate for genuine unsafe migration failures. Add a regression proving startup reaches readiness after the host link is repaired, plus coverage that an unresolved repair still produces an actionable failure. Do not add config options, weaken migration warning handling globally, or edit CHANGELOG.md; include release-note context in the PR body.
+Repair the Codex npm plugin's host-package declaration so its runtime imports from openclaw/plugin-sdk resolve through the established managed-plugin host-link flow. Preserve the fail-closed startup policy; do not add a warning suppression or new configuration. Add a regression that exercises a packaged/managed Codex install with a legacy .jsonl.codex-app-server.json sidecar and verifies the migration can load, complete or intentionally retain only nonfatal residue, and allow the startup checkpoint to proceed. Include release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
-- src/commands/doctor-config-preflight.ts
-- src/commands/doctor-plugin-host-links.ts
-- src/commands/doctor-config-preflight.state-migration.test.ts
-- src/commands/doctor-plugin-host-links.test.ts
+- extensions/codex/package.json
+- src/plugins/plugin-peer-link.ts
+- src/plugins/plugin-peer-link.test.ts
+- test/scripts/codex-install-assertions.test.ts
 - extensions/codex/doctor-contract-api.test.ts
 
 Validation:
 
 - pnpm test extensions/codex/doctor-contract-api.test.ts
-- pnpm test src/commands/doctor-plugin-host-links.test.ts
-- pnpm test src/commands/doctor-config-preflight.state-migration.test.ts
-- Run an installed-plugin or Docker-style fixture with a stale Codex sidecar and verify the Gateway reaches readiness after repair.
+- pnpm test src/plugins/plugin-peer-link.test.ts
+- pnpm test test/scripts/codex-install-assertions.test.ts
+- Run a packaged Docker or managed-npm upgrade fixture with a legacy Codex sidecar and verify the Gateway reaches healthz.
 
 ## Operator Prompt
 
