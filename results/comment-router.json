@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T21:23:25.809Z",
+  "updated_at": "2026-08-20T21:23:26.839Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5231929530:2026-08-09T14:06:58Z:re_review",
-      "comment_id": "5231929530",
-      "comment_version_key": "5231929530:2026-08-09T14:06:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5231929530",
-      "comment_created_at": "2026-08-09T14:06:58Z",
-      "comment_updated_at": "2026-08-09T14:06:58Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T15:05:48.081Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118169:5235889962:2026-08-10T04:31:27Z:re_review",
       "comment_id": "5235889962",
@@ -31872,6 +31845,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T21:23:25.809Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126619:5354020910:2026-08-20T21:22:02Z:clawsweeper_needs_human",
+      "comment_id": "5354020910",
+      "comment_version_key": "5354020910:2026-08-20T21:22:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126619#issuecomment-5354020910",
+      "comment_created_at": "2026-08-20T09:28:00Z",
+      "comment_updated_at": "2026-08-20T21:22:02Z",
+      "comment_body_sha256": "3b25ff177885ffe0a2d270c20dfc71116a68de2c07b631b40a19cc27ae70810f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126619,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies mocked gateway and unit coverage but no redacted after-fix real HTTP/provider request trace. After adding proof, update the PR... (sha=fa3a5b9f96222e3d15d134c64ecbef6da5c5aef6)",
+      "expected_head_sha": "fa3a5b9f96222e3d15d134c64ecbef6da5c5aef6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T21:23:26.839Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/http-chat-minimal-prompt",
+        "head_sha": "fa3a5b9f96222e3d15d134c64ecbef6da5c5aef6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
