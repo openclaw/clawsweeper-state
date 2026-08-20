@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126468"
 mode: "autonomous"
-run_id: "32315500800"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32315500800"
+run_id: "32315870883"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32315870883"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-20T00:08:28.805Z"
+result_status: "planned"
+published_at: "2026-08-20T00:13:46.909Z"
 canonical: "https://github.com/openclaw/openclaw/issues/126468"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/126468"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32315500800](https://github.com/openclaw/clawsweeper/actions/runs/32315500800)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32315870883](https://github.com/openclaw/clawsweeper/actions/runs/32315870883)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/126468
 
 ## Summary
 
-Implementation is blocked before reproduction: the required sibling ../codex source is absent, the checkout is read-only, and node_modules/Vitest are unavailable. Current main still contains the reported self-chat loop-accounting condition, so a narrow credited fix artifact is ready for a writable executor.
+Latest main c4c9f6d4644e4432e4f0ae201e0d90555feb95eb still charges self-chat reflection dedupe drops to the five-hit limiter, so #126468 needs a narrow new fix PR.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Implementation is blocked before reproduction: the required sibling ../codex sou
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122794 | keep_related | planned | related | Keep open; it has unique pending-marker compatibility work. |
-| #124386 | keep_closed | skipped | superseded | Closed historical source work only; retain attribution in the replacement PR. |
-| #126468 | fix_needed | blocked | canonical | A writable executor must complete the required Codex-source inspection, create the failing monitor regression, patch, and validate. |
-| cluster:issue-openclaw-openclaw-126468 | build_fix_artifact | planned | canonical | The defect remains in current main, but this worker cannot create or validate the branch. |
+| #126468 | fix_needed | planned | canonical | The limiter should count recursive agent echoes/reflected assistant content, not the expected paired native rows of a self-chat. |
+| cluster:issue-openclaw-openclaw-126468 | build_fix_artifact | planned | canonical | Create the issue branch PR from the supplied main SHA; do not merge or close any item in this lane. |
+| #122794 | keep_related | planned | related | Keep its separate canonical investigation open. |
+| #124386 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
 
 ## Needs Human
 

@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126468",
+  "mode": "autonomous",
+  "run_id": "32315870883",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32315870883",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126468.md",
+  "published_at": "2026-08-20T00:13:46.909Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126468",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126468",
+  "canonical_pr": null,
+  "summary": "Latest main c4c9f6d4644e4432e4f0ae201e0d90555feb95eb still charges self-chat reflection dedupe drops to the five-hit limiter, so #126468 needs a narrow new fix PR.",
+  "actions": [
+    {
+      "target": "#126468",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "The limiter should count recursive agent echoes/reflected assistant content, not the expected paired native rows of a self-chat."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126468",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "Create the issue branch PR from the supplied main SHA; do not merge or close any item in this lane."
+    },
+    {
+      "target": "#122794",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep its separate canonical investigation open."
+    },
+    {
+      "target": "#124386",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
