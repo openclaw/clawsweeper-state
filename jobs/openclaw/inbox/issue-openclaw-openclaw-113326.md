@@ -67,19 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing headless OpenAI device-code login contract for https://github.com/openclaw/openclaw/issues/113326. In `src/commands/models/auth.ts`, allow only explicit `method: "device-code"` login to reach `runModelsAuthLoginFlowCore` without a TTY; preserve rejection for prompt-driven methods. Add a boundary regression in `src/commands/models/auth.test.ts` that makes stdin non-TTY, requests OpenAI device-code login, and proves the provider flow executes; retain rejection coverage for non-device methods. The test protects the documented CLI contract, fails on the current guard, and needs no production-only seam. Do not import or sync `~/.codex`, add config, change profile storage, or edit CHANGELOG.md; place release-note context in the PR body.
+Repair the documented non-TTY device-code login path for OpenAI OAuth. Keep ordinary models auth login methods TTY-gated; allow only an explicitly selected device-code method, with an explicit provider, to use the existing non-interactive logging prompter so it emits verification instructions and waits for authorization. Do not unify standalone Codex CLI and OpenClaw-managed credential stores, add configuration, alter token storage, or change default-model behavior. Add a regression test that fails on current main with non-TTY stdin and verifies explicit OpenAI device-code login reaches the provider without select/text prompts; retain coverage that non-device methods still reject. Include user-visible release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
 - src/commands/models/auth.ts
 - src/commands/models/auth.test.ts
-- src/cli/models-cli.test.ts
+- src/commands/non-interactive-prompter.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/commands/models/auth.test.ts
-- node scripts/run-vitest.mjs src/cli/models-cli.test.ts
-- pnpm lint
+- pnpm test src/commands/models/auth.test.ts
+- pnpm test src/cli/models-cli.test.ts
+- pnpm test extensions/openai/openai-chatgpt-provider.test.ts
 
 ## Operator Prompt
 
