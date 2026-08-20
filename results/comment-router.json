@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-08-20T14:12:07.378Z",
+  "updated_at": "2026-08-20T14:13:53.913Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126574:5352891065:2026-08-20T07:39:15Z:clawsweeper_needs_human",
-      "comment_id": "5352891065",
-      "comment_version_key": "5352891065:2026-08-20T07:39:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126574#issuecomment-5352891065",
-      "comment_created_at": "2026-08-20T07:39:15Z",
-      "comment_updated_at": "2026-08-20T07:39:15Z",
-      "comment_body_sha256": "c264f4df508b8d8007c41cceb2682073f7401154de2ac1f1218862bdbb8a4e09",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126574,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The public Provider SDK hook now has an additive return contract; existing third-party plugins must continue to work when they return void, which the fallback is designed to preserve. (sha=0a5e9e16f56a407351405a6561482f7ab7814bbb)",
-      "expected_head_sha": "0a5e9e16f56a407351405a6561482f7ab7814bbb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T07:51:34.714Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/dynamic-model-return",
-        "head_sha": "0a5e9e16f56a407351405a6561482f7ab7814bbb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126259:5353009223:2026-08-20T07:51:43Z:re_review",
-      "comment_id": "5353009223",
-      "comment_version_key": "5353009223:2026-08-20T07:51:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126259#issuecomment-5353009223",
-      "comment_created_at": "2026-08-20T07:51:43Z",
-      "comment_updated_at": "2026-08-20T07:51:43Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126259,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T07:52:17.756Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-codex-runtime-override",
-        "head_sha": "e331c80209c8bbcd6e25b35a91633652443e9a5b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125646:5353016817:2026-08-20T07:52:31Z:re_review",
       "comment_id": "5353016817",
@@ -31796,6 +31716,86 @@
         "kind": "pull_request",
         "branch": "feature/local-ai-llama-server-code-only",
         "head_sha": "411493c79848e6ff9db25f00ddd42a79ba6a6e1d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:91237:5356935876:2026-08-20T14:01:05Z:re_review",
+      "comment_id": "5356935876",
+      "comment_version_key": "5356935876:2026-08-20T14:01:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/91237#issuecomment-5356935876",
+      "comment_created_at": "2026-08-20T14:01:05Z",
+      "comment_updated_at": "2026-08-20T14:01:05Z",
+      "comment_body_sha256": "c6fb7c1acdb4a7e71a2b9944aa1b07baf3fcdf30d244b1009172d6da530ba0c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 91237,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T14:13:18.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openrouter-1h-cache-ttl-eligibility",
+        "head_sha": "a9de374148d572edf177c43fb71df51bfb71b479",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:91237:4643932703:2026-08-20T14:12:12Z:clawsweeper_needs_human",
+      "comment_id": "4643932703",
+      "comment_version_key": "4643932703:2026-08-20T14:12:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/91237#issuecomment-4643932703",
+      "comment_created_at": "2026-06-07T20:02:24Z",
+      "comment_updated_at": "2026-08-20T14:12:12Z",
+      "comment_body_sha256": "ce6969bb776a7c1a991e27b4fee7fbf0ac46160a2b26dbd739bf1134ae551bae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 91237,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes existing verified OpenRouter Anthropic deployments that already set OPENCLAW_CACHE_RETENTION=long from the short marker to OpenRouter’s more expensive one-hour cache-w... (sha=a9de374148d572edf177c43fb71df51bfb71b479)",
+      "expected_head_sha": "a9de374148d572edf177c43fb71df51bfb71b479",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T14:13:53.913Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openrouter-1h-cache-ttl-eligibility",
+        "head_sha": "a9de374148d572edf177c43fb71df51bfb71b479",
         "cluster_id": null,
         "job_path": null
       }
