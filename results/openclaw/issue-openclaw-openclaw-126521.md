@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126521"
 mode: "autonomous"
-run_id: "32329620848"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32329620848"
-head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-20T04:03:03.424Z"
+run_id: "32328585540"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32328585540"
+head_sha: "e869bde55a75e87d8158e8cb59c0f2de2d59f37b"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-20T04:15:24.278Z"
 canonical: "https://github.com/openclaw/openclaw/issues/126521"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/126521"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32329620848](https://github.com/openclaw/clawsweeper/actions/runs/32329620848)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32328585540](https://github.com/openclaw/clawsweeper/actions/runs/32328585540)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/126521
 
 ## Summary
 
-#126521 is a valid canonical host-exec bug on main: zsh receives only `-f -c`, leaving its `EQUALS` and `NOMATCH` behaviors active for model-generated POSIX-style commands. Plan a narrow new fix PR.
+Implementation is blocked: current main selects zsh with only `-f -c`, but this worker cannot satisfy the repository’s mandatory direct Codex-source gate because `../codex` is absent and the read-only/network-restricted environment cannot clone it. The local environment also has no zsh binary for the required reproduction.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/126521
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #126521 |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/126521
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126521 | fix_needed | planned | canonical | Repair the shell-selection owner rather than compensating in command consumers. |
-| cluster:issue-openclaw-openclaw-126521 | build_fix_artifact | planned | canonical | Open a single narrow credited PR from the prescribed ClawSweeper branch. |
+| #126521 | fix_needed | blocked | canonical | Need a writable/network-enabled worker with sibling Codex source and zsh installed to inspect the required Codex contract, reproduce `zsh -f -c`, then validate the narrow resolver/test change. |
+| cluster:issue-openclaw-openclaw-126521 | build_fix_artifact | blocked | canonical | Fix artifact is intentionally non-executable until the mandatory Codex-source inspection and zsh reproduction are available. |
 
 ## Needs Human
 

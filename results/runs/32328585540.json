@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126521",
+  "mode": "autonomous",
+  "run_id": "32328585540",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32328585540",
+  "head_sha": "e869bde55a75e87d8158e8cb59c0f2de2d59f37b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126521.md",
+  "published_at": "2026-08-20T04:15:24.278Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126521",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126521",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked: current main selects zsh with only `-f -c`, but this worker cannot satisfy the repository’s mandatory direct Codex-source gate because `../codex` is absent and the read-only/network-restricted environment cannot clone it. The local environment also has no zsh binary for the required reproduction.",
+  "actions": [
+    {
+      "target": "#126521",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126521",
+      "candidate_fix": null,
+      "reason": "Need a writable/network-enabled worker with sibling Codex source and zsh installed to inspect the required Codex contract, reproduce `zsh -f -c`, then validate the narrow resolver/test change."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126521",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126521",
+      "candidate_fix": null,
+      "reason": "Fix artifact is intentionally non-executable until the mandatory Codex-source inspection and zsh reproduction are available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#126521",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
