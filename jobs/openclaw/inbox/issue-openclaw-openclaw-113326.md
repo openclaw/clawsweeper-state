@@ -67,22 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the documented headless OpenAI device-code login path. Preserve TTY rejection for flows that require terminal input, but allow an explicitly selected provider-declared device-code method to reach plain URL/code output and persist the OpenAI profile. Reuse the existing non-interactive logging prompter where suitable. Do not merge OpenClaw and standalone Codex credential stores, add config, weaken other interactive auth flows, or edit release-owned CHANGELOG.md; put release-note context in the PR body. Add a regression that fails with piped stdin before the fix, proves explicit OpenAI device-code dispatch proceeds, and keeps unspecified or interactive-only login rejected. Stop for maintainer input if the repair requires a new public auth policy.
+Repair the existing documented headless OpenAI device-code login path. Trace `models auth login` through provider method selection; allow an explicitly selected device-code method to run without a TTY, while preserving rejection for methods that require interactive prompts. Keep OAuth credentials exclusively in the OpenClaw agent auth store; do not import or synchronize standalone Codex CLI credentials. Add a regression that fails before the repair by proving a non-TTY `openai` device-code login reaches the provider auth method. Stop if the implementation requires a new auth/config policy. Include user-visible recovery context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
 - src/commands/models/auth.ts
 - src/commands/models/auth.test.ts
-- src/commands/non-interactive-prompter.ts
-- src/cli/models-cli.test.ts
-- docs/cli/models.md
+- extensions/openai/openai-chatgpt-provider.ts
+- extensions/openai/openai-chatgpt-provider.test.ts
 
 Validation:
 
-- pnpm test src/commands/models/auth.test.ts
-- pnpm test src/cli/models-cli.test.ts
-- pnpm test extensions/openai/openai-chatgpt-provider.test.ts extensions/openai/openai-chatgpt-device-code.test.ts
-- Run a redacted non-TTY OpenAI device-code login against an isolated state directory and verify the resulting profile with `openclaw models auth list --provider openai`.
+- node scripts/run-vitest.mjs src/commands/models/auth.test.ts
+- node scripts/run-vitest.mjs extensions/openai/openai-chatgpt-provider.test.ts
+- pnpm openclaw models auth login --help
 
 ## Operator Prompt
 
