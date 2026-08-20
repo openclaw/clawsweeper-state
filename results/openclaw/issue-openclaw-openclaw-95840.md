@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32332361322"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32332361322"
+run_id: "32336519158"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32336519158"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T05:38:11.252Z"
-canonical: "#95840"
-canonical_issue: "#95840"
+published_at: "2026-08-20T05:54:45.403Z"
+canonical: "https://github.com/openclaw/openclaw/issues/95840"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32332361322](https://github.com/openclaw/clawsweeper/actions/runs/32332361322)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32336519158](https://github.com/openclaw/clawsweeper/actions/runs/32336519158)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #95840
+Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-No repair was authorized or written. Source inspection shows the OpenAI plugin lacks the existing cache-TTL eligibility hook while core delegates to that hook; direct OpenAI therefore falls through to the non-OpenAI defaults. The required sibling ../codex source is absent, and this read-only checkout has neither dependencies nor a writable Corepack cache, so the mandatory Codex gate and focused validation cannot run.
+Current main deterministically excludes direct OpenAI from cache-TTL eligibility, suppressing both pruning setup and the successful-attempt marker. A narrow provider-owned repair is ready, but this worker could not edit or run Vitest: the checkout is read-only, dependencies are absent, and Corepack cannot create its cache. The mandatory sibling Codex-source inspection is also unavailable because ../codex is absent and cannot be cloned in this environment.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ No repair was authorized or written. Source inspection shows the OpenAI plugin l
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95840 | fix_needed | blocked | canonical | The narrow provider-owned repair remains appropriate, but repository policy forbids a repair verdict or code change before direct ../codex inspection, and this environment cannot provision that source or run dependencies. |
-| #95610 | keep_related | planned | related | Keep open independently; it is adjacent cache work, not a duplicate or prerequisite for this narrowly scoped provider-hook repair. |
+| #95840 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only worker environment and unavailable mandatory ../codex source; the narrow fix artifact is ready for an executor with a writable checkout. |
+| #95610 | keep_related | planned | related | Both concern OpenAI cache efficiency, but they retain separate fixes and validation paths. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-95840 after reproducing and validating in a writable checkout. |
 
 ## Needs Human
 

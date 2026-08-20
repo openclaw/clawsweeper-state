@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-95840",
+  "mode": "autonomous",
+  "run_id": "32336519158",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32336519158",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-95840.md",
+  "published_at": "2026-08-20T05:54:45.403Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_pr": null,
+  "summary": "Current main deterministically excludes direct OpenAI from cache-TTL eligibility, suppressing both pruning setup and the successful-attempt marker. A narrow provider-owned repair is ready, but this worker could not edit or run Vitest: the checkout is read-only, dependencies are absent, and Corepack cannot create its cache. The mandatory sibling Codex-source inspection is also unavailable because ../codex is absent and cannot be cloned in this environment.",
+  "actions": [
+    {
+      "target": "#95840",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only worker environment and unavailable mandatory ../codex source; the narrow fix artifact is ready for an executor with a writable checkout."
+    },
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Both concern OpenAI cache efficiency, but they retain separate fixes and validation paths."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-95840",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-95840 after reproducing and validating in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
