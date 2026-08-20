@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T18:28:12.463Z",
+  "updated_at": "2026-08-20T18:28:40.754Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5041714021:2026-07-22T04:01:24Z:re_review",
-      "comment_id": "5041714021",
-      "comment_version_key": "5041714021:2026-07-22T04:01:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5041714021",
-      "comment_created_at": "2026-07-22T04:01:24Z",
-      "comment_updated_at": "2026-07-22T04:01:24Z",
-      "comment_body_sha256": "4e9dc321b04059973065a54e52d6fad735b3716704c60cbdd8f9996bbb7da8c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T12:13:43.750Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5052907037:2026-07-23T00:10:37Z:re_review",
       "comment_id": "5052907037",
@@ -32216,6 +32189,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T18:28:12.463Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123507:5311786463:2026-08-20T18:23:32Z:clawsweeper_needs_human",
+      "comment_id": "5311786463",
+      "comment_version_key": "5311786463:2026-08-20T18:23:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123507#issuecomment-5311786463",
+      "comment_created_at": "2026-08-17T04:25:27Z",
+      "comment_updated_at": "2026-08-20T18:23:32Z",
+      "comment_body_sha256": "0b835712274ac316f633a265b7f63c979dc7f83a6c7b26e30f0bea1106c4e032",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123507,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix has a production delta of +65 lines; its justification is the single shared resolver and switch-state wiring, which should not be split into separate picker and executor p... (sha=621efc0cffb732a143119747de4b6fcd044d3d1a)",
+      "expected_head_sha": "621efc0cffb732a143119747de4b6fcd044d3d1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T18:28:40.754Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/think-model-effort-autocomplete",
+        "head_sha": "621efc0cffb732a143119747de4b6fcd044d3d1a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
