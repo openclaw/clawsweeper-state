@@ -67,15 +67,13 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the documented headless OpenAI device-code login path. Preserve interactive behavior for methods that require input, but let `openclaw models auth login --provider openai --device-code` use the existing non-interactive logging prompter and persist its provider result through the existing auth-store owner. Add a regression test that fails before the repair and prove the normal TTY OAuth and API-key paths are unchanged. Do not introduce another credential store, new configuration, legacy `openai-codex` routing, or a CHANGELOG edit.
+Repair the documented non-TTY device-code login path for OpenAI OAuth. Keep ordinary models auth login methods TTY-gated; allow only an explicitly selected device-code method, with an explicit provider, to use the existing non-interactive logging prompter so it emits verification instructions and waits for authorization. Do not unify standalone Codex CLI and OpenClaw-managed credential stores, add configuration, alter token storage, or change default-model behavior. Add a regression test that fails on current main with non-TTY stdin and verifies explicit OpenAI device-code login reaches the provider without select/text prompts; retain coverage that non-device methods still reject. Include user-visible release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
 - src/commands/models/auth.ts
 - src/commands/models/auth.test.ts
 - src/commands/non-interactive-prompter.ts
-- extensions/openai/openai-chatgpt-provider.ts
-- extensions/openai/openai-chatgpt-provider.test.ts
 
 Validation:
 
