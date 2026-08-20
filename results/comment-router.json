@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T23:31:23.223Z",
+  "updated_at": "2026-08-20T23:31:48.779Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126566:5352673093:2026-08-20T15:30:34Z:clawsweeper_needs_human",
-      "comment_id": "5352673093",
-      "comment_version_key": "5352673093:2026-08-20T15:30:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126566#issuecomment-5352673093",
-      "comment_created_at": "2026-08-20T07:16:33Z",
-      "comment_updated_at": "2026-08-20T15:30:34Z",
-      "comment_body_sha256": "d084be2a1ac2ae87ff67f095cc90e4e2eca6e26d4e63043c689e421058412060",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126566,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact current head has queued checks, so the host-only callback hardening and merged-base integration have not yet received exact-head CI confirmation. (sha=b2235a570f4d5e251d041cb193669b48d8eaace8)",
-      "expected_head_sha": "b2235a570f4d5e251d041cb193669b48d8eaace8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T15:46:41.576Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-126311-fallback-lifecycle",
-        "head_sha": "3e52427ebfd8c44c40fa6e9a78ba7b3e2161382a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126662:5355890321:2026-08-20T15:26:03Z:clawsweeper_auto_repair",
       "comment_id": "5355890321",
@@ -31780,6 +31747,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1442:5359487414:2026-08-20T23:30:42Z:clawsweeper_needs_human",
+      "comment_id": "5359487414",
+      "comment_version_key": "5359487414:2026-08-20T23:30:42Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1442#issuecomment-5359487414",
+      "comment_created_at": "2026-08-20T17:35:22Z",
+      "comment_updated_at": "2026-08-20T23:30:42Z",
+      "comment_body_sha256": "ca22c1275f57894e0c1f9a0fc73d13df7ca3ec9a9b188fde95382cf98f27d192",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1442,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Upgrading a reused POSIX host with a valid 0.45.0 two-line child record will block workspace reuse until an operator quiesces the host and removes the exact record. (sha=8e5c5f30f54c2f0155e1d765f8e2580dde571ad3)",
+      "expected_head_sha": "8e5c5f30f54c2f0155e1d765f8e2580dde571ad3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T23:31:48.779Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workspace-supervise-remote-children",
+        "head_sha": "8e5c5f30f54c2f0155e1d765f8e2580dde571ad3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
