@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T08:19:49.714Z",
+  "updated_at": "2026-08-20T08:22:19.979Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97135:5149610714:2026-08-01T03:36:02Z:re_review",
-      "comment_id": "5149610714",
-      "comment_version_key": "5149610714:2026-08-01T03:36:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97135#issuecomment-5149610714",
-      "comment_created_at": "2026-08-01T03:35:37Z",
-      "comment_updated_at": "2026-08-01T03:36:02Z",
-      "comment_body_sha256": "3be0f40bf658d41b6443fe1844f7ae66a3ac0e381fdccb10c4ee0f406a2920cc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97135,
-      "author": "litang9",
-      "author_id": 141409885,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T04:00:49.416Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97135:5224170147:2026-08-08T02:54:37Z:re_review",
       "comment_id": "5224170147",
@@ -30674,6 +30647,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126220:5338423851:2026-08-20T08:21:26Z:clawsweeper_needs_human",
+      "comment_id": "5338423851",
+      "comment_version_key": "5338423851:2026-08-20T08:21:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126220#issuecomment-5338423851",
+      "comment_created_at": "2026-08-19T06:32:33Z",
+      "comment_updated_at": "2026-08-20T08:21:26Z",
+      "comment_body_sha256": "ad88cd52552168fdcccd065c3fcbef06aa79052f924464d8e8d7a0a2cc1a2b18",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify the Codex Action’s OS-user drop before enabling this lane (P1)** - The full sandbox at this line is safe only if the pinned Action always honors codex-user: codex; that external contract is the sole separ...; Review finding: [P1] Verify the Codex Action’s OS-user drop before enabling this lane — .github/workflows/mantis-telegram-desktop-proof.yml:665-669 - [high] Pinned Action user-dro... (sha=58139160e70c636d9323534941d973d144ea1466)",
+      "expected_head_sha": "58139160e70c636d9323534941d973d144ea1466",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T08:22:19.979Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mantis-recorder-lane",
+        "head_sha": "58139160e70c636d9323534941d973d144ea1466",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
