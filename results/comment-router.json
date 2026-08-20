@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T06:49:07.007Z",
+  "updated_at": "2026-08-20T06:49:32.002Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126490:5349738464:2026-08-20T00:38:40Z:clawsweeper_needs_human",
-      "comment_id": "5349738464",
-      "comment_version_key": "5349738464:2026-08-20T00:38:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126490#issuecomment-5349738464",
-      "comment_created_at": "2026-08-20T00:38:40Z",
-      "comment_updated_at": "2026-08-20T00:38:40Z",
-      "comment_body_sha256": "51e84bcb9aa5d01c062e489ad32935e7027da8b2961ee78627981a91f2b12972",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126490,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed Codex CLI resume path depends on @openai/codex 0.147.0 command semantics, but the required direct sibling-source inspection could not be completed because ../codex is abse... (sha=3784d6b25b65250c0958440111120b8fa96ed830)",
-      "expected_head_sha": "3784d6b25b65250c0958440111120b8fa96ed830",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T00:39:35.801Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/s2-media-process",
-        "head_sha": "3784d6b25b65250c0958440111120b8fa96ed830",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126485:5349579189:2026-08-20T00:38:50Z:clawsweeper_auto_repair",
       "comment_id": "5349579189",
@@ -31739,6 +31706,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T06:49:07.007Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126220:5338423851:2026-08-20T06:44:18Z:clawsweeper_needs_human",
+      "comment_id": "5338423851",
+      "comment_version_key": "5338423851:2026-08-20T06:44:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126220#issuecomment-5338423851",
+      "comment_created_at": "2026-08-19T06:32:33Z",
+      "comment_updated_at": "2026-08-20T06:44:18Z",
+      "comment_body_sha256": "69bff76c64f051a277f4d744045669db36a7b19507bb08df218f3e4df87eb79f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify the Codex Action user-drop contract (P1)** - This credential-bearing job relies on unprivileged-user to keep the agent confined to the codex account while granting it a lane sudo route. The previous P1 bl...; Review finding: [P1] Verify the Codex Action user-drop contract — .github/workflows/mantis-telegram-desktop-proof.yml:637-660 - [high] External action controls the credential boun... (sha=55ad83c7f7d5a97b1998f0802eebd0f0e42857d8)",
+      "expected_head_sha": "55ad83c7f7d5a97b1998f0802eebd0f0e42857d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T06:49:32.002Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mantis-recorder-lane",
+        "head_sha": "55ad83c7f7d5a97b1998f0802eebd0f0e42857d8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
