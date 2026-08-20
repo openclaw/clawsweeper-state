@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-121050"
 mode: "autonomous"
-run_id: "31523949498"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31523949498"
-head_sha: "5439582beebe57b7e79dc4e3d7bb44acd9f7d65c"
-workflow_conclusion: "success"
+run_id: "32326650147"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32326650147"
+head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-11T18:47:15.570Z"
+published_at: "2026-08-20T03:15:30.974Z"
 canonical: "#121050"
-canonical_issue: "#55372"
+canonical_issue: null
 canonical_pr: "#121050"
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31523949498](https://github.com/openclaw/clawsweeper/actions/runs/31523949498)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32326650147](https://github.com/openclaw/clawsweeper/actions/runs/32326650147)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #121050
 
 ## Summary
 
-Keep PR #121050 as the canonical repair path. Rebase its writable same-repo branch onto current main, port the Control UI producer change through the runtime-config module split, retain the existing stale-route regressions, then rerun exact-head review and validation. #55372 remains open until the repaired PR is validated and landed.
+Make PR #121050 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Keep PR #121050 as the canonical repair path. Rebase its writable same-repo bran
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #55372 | keep_related | planned | related | The issue remains the user-report context while PR #121050 owns the concrete repair and validation. |
-| #121050 | fix_needed | planned | canonical | The PR is the correct owner-boundary fix but needs a current-main rebase and post-rebase validation before it can be reconsidered for merge. |
+| #121050 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
