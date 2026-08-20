@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "32370258771"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32370258771"
+run_id: "32373041963"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32373041963"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T13:02:07.708Z"
+published_at: "2026-08-20T13:33:52.397Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32370258771](https://github.com/openclaw/clawsweeper/actions/runs/32370258771)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32373041963](https://github.com/openclaw/clawsweeper/actions/runs/32373041963)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-Current main cbe070071 source-proves the reported defect: the non-TTY guard rejects login before resolving the explicitly selected device-code method. A narrow fix plan is ready, but implementation and validation are blocked because ../codex is absent (required direct Codex-source gate), the workspace is read-only, and pnpm/Corepack cannot create its cache (EROFS).
+No repair conclusion or branch change was issued. Mandatory direct Codex-source inspection is blocked because ../codex is absent and this read-only, network-restricted worker cannot clone it. The narrow, issue-scoped implementation plan is preserved below for an executor with that prerequisite.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main cbe070071 source-proves the reported defect: the non-TTY guard reje
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #113326 |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,12 @@ Current main cbe070071 source-proves the reported defect: the non-TTY guard reje
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113326 | fix_needed | blocked | canonical | Implementation requires a writable checkout, direct ../codex protocol inspection, and a runnable pnpm environment. |
-| #100067 | keep_independent | planned | independent | Separate root cause and product scope. |
-| #50452 | keep_closed | skipped | related | Closed items receive no closeout action. |
-| #71864 | keep_closed | skipped | independent | Closed items receive no closeout action. |
-| #79021 | keep_closed | skipped | related | Closed items receive no closeout action. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | Artifact is ready for a write-enabled executor after the required Codex-source gate. |
+| #50452 | keep_closed | skipped |  | Closed historical context only; no action permitted or needed. |
+| #71864 | keep_closed | skipped |  | Closed historical context only; no action permitted or needed. |
+| #79021 | keep_closed | skipped |  | Closed historical context only; no action permitted or needed. |
+| #100067 | keep_related | planned | related | Same broad auth area but a distinct migration/policy root cause; leave open independently. |
+| #113326 | fix_needed | blocked | canonical | Implementation is blocked pending direct inspection of the sibling Codex source and a writable executor with dependencies. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | blocked | canonical | Executor must complete the Codex source gate, implement, test, and obtain isolated redacted device-code proof before opening the PR. |
 
 ## Needs Human
 
