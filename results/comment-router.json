@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T17:50:44.252Z",
+  "updated_at": "2026-08-20T17:50:45.917Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125528:5355389320:2026-08-20T11:43:24Z:re_review",
-      "comment_id": "5355389320",
-      "comment_version_key": "5355389320:2026-08-20T11:43:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125528#issuecomment-5355389320",
-      "comment_created_at": "2026-08-20T11:43:24Z",
-      "comment_updated_at": "2026-08-20T11:43:24Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125528,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T11:49:30.316Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-thinking-catalog",
-        "head_sha": "18f3373b0816df8d9d27af303c25c0c81897419a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-20T11:43:59Z:clawsweeper_needs_human",
       "comment_id": "5154193917",
@@ -31981,6 +31934,39 @@
         "kind": "pull_request",
         "branch": "pe/batch-pr-transition-ignored-check",
         "head_sha": "810a869a395ff27037a96f38f832489b262cc3f6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90703:4633109334:2026-08-20T17:49:12Z:clawsweeper_needs_human",
+      "comment_id": "4633109334",
+      "comment_version_key": "4633109334:2026-08-20T17:49:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/90703#issuecomment-4633109334",
+      "comment_created_at": "2026-06-05T15:31:58Z",
+      "comment_updated_at": "2026-08-20T17:49:12Z",
+      "comment_body_sha256": "87273a76c7852007e6f2f1068d8dad20ec46987ae2dd0acdb7de6edd462f32b5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 90703,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied capture reaches the production payload builder but intercepts before a compatible provider accepts the request, so it is supplemen... (sha=2977d8895d065a2838f97f91c899516a34780d02)",
+      "expected_head_sha": "2977d8895d065a2838f97f91c899516a34780d02",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T17:50:45.917Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-thinking-xhigh-compat",
+        "head_sha": "2977d8895d065a2838f97f91c899516a34780d02",
         "cluster_id": null,
         "job_path": null
       }
