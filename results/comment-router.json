@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T20:49:02.524Z",
+  "updated_at": "2026-08-20T20:50:28.642Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122036:5259187633:2026-08-11T21:42:19Z:re_review",
-      "comment_id": "5259187633",
-      "comment_version_key": "5259187633:2026-08-11T21:42:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122036#issuecomment-5259187633",
-      "comment_created_at": "2026-08-11T21:42:19Z",
-      "comment_updated_at": "2026-08-11T21:42:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122036,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T14:55:22.599Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126671:5356347879:2026-08-20T14:54:14Z:clawsweeper_needs_human",
       "comment_id": "5356347879",
@@ -31742,6 +31715,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T20:49:02.524Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126825:5361245353:2026-08-20T20:47:41Z:clawsweeper_needs_human",
+      "comment_id": "5361245353",
+      "comment_version_key": "5361245353:2026-08-20T20:47:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126825#issuecomment-5361245353",
+      "comment_created_at": "2026-08-20T20:23:35Z",
+      "comment_updated_at": "2026-08-20T20:47:41Z",
+      "comment_body_sha256": "3e2f1b33b0d98eaf8d7197f501daf3b73fc32967ba290606be162b264f055458",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126825,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports a focused Vitest check but contains no after-fix terminal output, logs, recording, or artifact from a real SQLite open path...; Review finding: [P1] Preserve the external-owner fence before returning — src/state/openclaw-state-db.ts:387 - [high] External ownership can race the writable fast path — src/stat... (sha=5e00bb7694ac130a331c484e28453261f3a3dbe4)",
+      "expected_head_sha": "5e00bb7694ac130a331c484e28453261f3a3dbe4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T20:50:28.642Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/sqlite-schema-fast-path",
+        "head_sha": "5e00bb7694ac130a331c484e28453261f3a3dbe4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
