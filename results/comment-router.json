@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T07:19:04.798Z",
+  "updated_at": "2026-08-20T07:19:48.883Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119814:5200121582:2026-08-20T00:59:31Z:clawsweeper_needs_human",
-      "comment_id": "5200121582",
-      "comment_version_key": "5200121582:2026-08-20T00:59:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119814#issuecomment-5200121582",
-      "comment_created_at": "2026-08-06T03:41:48Z",
-      "comment_updated_at": "2026-08-20T00:59:31Z",
-      "comment_body_sha256": "5125f672e3b6146819e61786bb7cf116981c7ed8ef4922d457000fb80099ebbf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119814,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies tests and CI claims but explicitly no after-fix ClickClack or Gateway boundary run; add a redacted trace after rebase, without...; Review finding: [P1] Forward the Gateway-resolved agent to ClickClack — extensions/clickclack/src/discussions/service.ts:64-65 - [P1] Reject malformed agent keys in shared ownersh... (sha=073b19839b046b163a767ff7e12bf9d7f8770f8d)",
-      "expected_head_sha": "073b19839b046b163a767ff7e12bf9d7f8770f8d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T01:25:22.719Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clickclack-managed-account-selection",
-        "head_sha": "073b19839b046b163a767ff7e12bf9d7f8770f8d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119833:5200440258:2026-08-20T01:01:06Z:clawsweeper_auto_repair",
       "comment_id": "5200440258",
@@ -31575,6 +31542,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120491:5352695771:2026-08-20T07:19:01Z:re_review",
+      "comment_id": "5352695771",
+      "comment_version_key": "5352695771:2026-08-20T07:19:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5352695771",
+      "comment_created_at": "2026-08-20T07:19:01Z",
+      "comment_updated_at": "2026-08-20T07:19:01Z",
+      "comment_body_sha256": "48c1c93a9e9eefc0d53dae4b39a0c49f4a1aa9303a473643ef6ffa763987649f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120491,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T07:19:43.620Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119992-per-turn-send-budget",
+        "head_sha": "24eb408696b8fea4ca6c93f68d018bc452085616",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
