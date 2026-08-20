@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126571"
 mode: "autonomous"
-run_id: "32343784687"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32343784687"
+run_id: "32347227761"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32347227761"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T07:39:16.558Z"
-canonical: "https://github.com/openclaw/openclaw/issues/126571"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/126571"
+published_at: "2026-08-20T08:16:38.107Z"
+canonical: "#126571"
+canonical_issue: "#126571"
 canonical_pr: null
 actions_total: 6
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-126571
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32343784687](https://github.com/openclaw/clawsweeper/actions/runs/32343784687)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32347227761](https://github.com/openclaw/clawsweeper/actions/runs/32347227761)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/126571
+Canonical: #126571
 
 ## Summary
 
-The narrow repair is identified, but this read-only checkout cannot verify or create it: preflight main 16bec3c7272887531b27137435738a3de4f8de90 is absent locally, ../codex is absent (a repository hard gate), node_modules is absent, and pnpm cannot initialize its cache on the read-only filesystem. The executor should refresh main, satisfy the Codex-source gate, apply the artifact, and run the listed tests before opening the one credited PR.
+#126571 is a confirmed, narrow Doctor persistence defect. Current main gates explicit ownership on a retained legacy default owner, although markerless multi-agent rosters intentionally have none and schema validation requires explicit ownership. No code or GitHub mutation was possible: this checkout is read-only, pnpm could not create its Corepack cache, and sibling ../codex source is absent under the read-only sandbox.
 
 ## Impact
 
@@ -48,7 +48,7 @@ The narrow repair is identified, but this read-only checkout cannot verify or cr
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,13 +66,13 @@ The narrow repair is identified, but this read-only checkout cannot verify or cr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #114964 | keep_independent | planned | independent | Independent Doctor migration defect. |
-| #125578 | keep_independent | planned | independent | Independent Gateway-startup policy report. |
-| #126571 | fix_needed | planned | canonical | Canonical bug; a new narrow fix PR is appropriate. |
-| #126572 | keep_closed | skipped | related | Closed historical context; never mutate. |
-| cluster:issue-openclaw-openclaw-126571 | build_fix_artifact | planned | canonical | Narrow implementation plan ready for an executor with a writable, current checkout. |
-| cluster:issue-openclaw-openclaw-126571 | open_fix_pr | blocked | canonical | Executor must refresh main, obtain dependencies, satisfy the direct Codex-source gate, and validate before opening the PR. |
+| #114964 | keep_independent | planned | independent | Same Doctor area, but independent configuration migration defect. |
+| #125578 | keep_related | planned | related | Related Doctor migration context, not the same failure or fix scope. |
+| #126571 | fix_needed | blocked | canonical | A writable checkout with dependencies is required to implement and prove the repair. |
+| #126571 | build_fix_artifact | planned | canonical | Narrow replacement-ready artifact prepared; no contributor PR exists. |
+| #126571 | open_fix_pr | blocked | canonical | Blocked until the artifact is applied and validation can run in a writable checkout. |
+| #126572 | keep_closed | skipped | related | Closed context only; no closure action is valid. |
 
 ## Needs Human
 
-- none
+- Provide a writable OpenClaw checkout with pnpm dependencies (and the required sibling ../codex source) so the bounded patch and regression suite can be completed.

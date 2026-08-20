@@ -1,0 +1,96 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126571",
+  "mode": "autonomous",
+  "run_id": "32347227761",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32347227761",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126571.md",
+  "published_at": "2026-08-20T08:16:38.107Z",
+  "canonical": "#126571",
+  "canonical_issue": "#126571",
+  "canonical_pr": null,
+  "summary": "#126571 is a confirmed, narrow Doctor persistence defect. Current main gates explicit ownership on a retained legacy default owner, although markerless multi-agent rosters intentionally have none and schema validation requires explicit ownership. No code or GitHub mutation was possible: this checkout is read-only, pnpm could not create its Corepack cache, and sibling ../codex source is absent under the read-only sandbox.",
+  "actions": [
+    {
+      "target": "#114964",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#126571",
+      "candidate_fix": null,
+      "reason": "Same Doctor area, but independent configuration migration defect."
+    },
+    {
+      "target": "#125578",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#126571",
+      "candidate_fix": null,
+      "reason": "Related Doctor migration context, not the same failure or fix scope."
+    },
+    {
+      "target": "#126571",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126571",
+      "candidate_fix": null,
+      "reason": "A writable checkout with dependencies is required to implement and prove the repair."
+    },
+    {
+      "target": "#126571",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126571",
+      "candidate_fix": null,
+      "reason": "Narrow replacement-ready artifact prepared; no contributor PR exists."
+    },
+    {
+      "target": "#126571",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126571",
+      "candidate_fix": null,
+      "reason": "Blocked until the artifact is applied and validation can run in a writable checkout."
+    },
+    {
+      "target": "#126572",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126571",
+      "candidate_fix": null,
+      "reason": "Closed context only; no closure action is valid."
+    }
+  ],
+  "action_counts": {
+    "keep_independent": 1,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable OpenClaw checkout with pnpm dependencies (and the required sibling ../codex source) so the bounded patch and regression suite can be completed."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
