@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-112592"
 mode: "autonomous"
-run_id: "32326399677"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32326399677"
+run_id: "32326667964"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32326667964"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T03:04:50.797Z"
+published_at: "2026-08-20T03:10:28.285Z"
 canonical: "https://github.com/openclaw/openclaw/issues/112592"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/112592"
 canonical_pr: null
-actions_total: 4
+actions_total: 9
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32326399677](https://github.com/openclaw/clawsweeper/actions/runs/32326399677)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32326667964](https://github.com/openclaw/clawsweeper/actions/runs/32326667964)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/112592
 
 ## Summary
 
-#112592 remains a narrow, source-reproducible provenance defect on main eed64163b629600d7de248dc2589380e3ab0b4ee. A focused fix artifact is prepared, but this read-only checkout cannot install the missing tsx dependency or clone the mandatory sibling ../codex checkout, so no validated branch/PR path can be emitted yet.
+The narrow provenance repair remains planned, but this worker cannot implement or validate it: the checkout is read-only, sibling ../codex is absent (the repository’s required Codex-source gate), and pnpm cannot create its Corepack cache (EROFS). No GitHub mutation or code change was made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 9 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,15 @@ Canonical: https://github.com/openclaw/openclaw/issues/112592
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #112592 | fix_needed | planned | canonical | Repair the producer-owned provenance fact only; retain the webchat sentinel in route, channel, delivery, and validation decisions. |
-| #64917 | keep_related | planned | related | Distinct delivery-contract work remains open. |
-| #111358 | keep_related | planned | related | Distinct delivery-contract work remains open. |
-| cluster:issue-openclaw-openclaw-112592 | build_fix_artifact | blocked | canonical | Implementation is blocked only by unavailable local dependencies and the required Codex source checkout; the repair scope itself is concrete. |
+| #112592 | fix_needed | blocked | canonical | Implementation and local validation are blocked by the read-only worker environment; dispatch the supplied new-fix-PR artifact in a writable checkout with ../codex available. |
+| cluster:issue-openclaw-openclaw-112592 | build_fix_artifact | planned | canonical | Executable repair plan prepared; this worker could not apply it in the read-only checkout. |
+| #64917 | keep_related | planned | related | Distinct open delivery-contract report. |
+| #111358 | keep_related | planned | related | Distinct open delivery-contract report. |
+| #47745 | keep_closed | skipped | related | Closed context only. |
+| #54441 | keep_closed | skipped | related | Closed context only. |
+| #55931 | keep_closed | skipped | related | Closed context only. |
+| #93255 | keep_closed | skipped | independent | Closed context only. |
+| #107546 | keep_closed | skipped | related | Closed context only. |
 
 ## Needs Human
 
