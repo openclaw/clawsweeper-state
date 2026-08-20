@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T21:50:57.351Z",
+  "updated_at": "2026-08-20T21:51:10.671Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-20T15:00:20Z:clawsweeper_auto_repair",
-      "comment_id": "5357688049",
-      "comment_version_key": "5357688049:2026-08-20T15:00:20Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5357688049",
-      "comment_created_at": "2026-08-20T15:00:20Z",
-      "comment_updated_at": "2026-08-20T15:00:20Z",
-      "comment_body_sha256": "d123829def3318e162b1cfccc0f42324983f09f42ee0a5cfff3523b185944ec2",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e27748605707996220e761071b25a31b15e43024)",
-      "expected_head_sha": "e27748605707996220e761071b25a31b15e43024",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T15:07:34.837Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/meaningful-traffic-signals",
-        "head_sha": "e27748605707996220e761071b25a31b15e43024",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126566:5357771219:2026-08-20T15:06:35Z:re_review",
       "comment_id": "5357771219",
@@ -32026,6 +31993,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126855:5362284697:2026-08-20T21:49:59Z:clawsweeper_needs_human",
+      "comment_id": "5362284697",
+      "comment_version_key": "5362284697:2026-08-20T21:49:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126855#issuecomment-5362284697",
+      "comment_created_at": "2026-08-20T21:49:59Z",
+      "comment_updated_at": "2026-08-20T21:49:59Z",
+      "comment_body_sha256": "e614e523f9279454d98b1da493fe8183c365055264a4abed5a67b87e06ff477f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126855,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is +17 net lines for a bug fix; the shared stateful predicate is justified by two distinct rejection owners, but exact-head CI should still complete before landing. (sha=e7d445fda1d9a770865338afb5dbe5f35d0c15fd)",
+      "expected_head_sha": "e7d445fda1d9a770865338afb5dbe5f35d0c15fd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T21:51:10.671Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-post-ready-drain-ownership",
+        "head_sha": "e7d445fda1d9a770865338afb5dbe5f35d0c15fd",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
