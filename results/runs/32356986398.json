@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-95840",
+  "mode": "autonomous",
+  "run_id": "32356986398",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32356986398",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-95840.md",
+  "published_at": "2026-08-20T10:12:52.894Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_pr": null,
+  "summary": "#95840 remains a configured-path defect on main, but direct-OpenAI-only eligibility cannot be safely specified from the current provider hook because it lacks the resolved endpoint. The required direct ../codex source inspection is also unavailable in this read-only worker.",
+  "actions": [
+    {
+      "target": "#95840",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Blocked pending maintainer direction on whether transport-only eligibility (provider=openai and api=openai-responses) is acceptable for custom endpoints, or whether the provider hook must gain resolved-endpoint context. Direct Codex-source inspection is additionally unavailable in this worker."
+    },
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Related OpenAI cache-efficiency work with a distinct root cause; it remains independently open."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-95840",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Do not create an executable PR artifact until endpoint scope is chosen and the mandatory Codex-source inspection is possible."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Decide whether cache-TTL eligibility may safely use provider=openai plus modelApi=openai-responses despite custom Responses-compatible endpoints sharing that shape, or authorize a separate endpoint-context contract change.",
+    "Provide or permit creation of ../codex so the mandatory direct Codex-source inspection can be completed before an implementation verdict."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#95840",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

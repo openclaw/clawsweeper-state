@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32354395750"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32354395750"
+run_id: "32356986398"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32356986398"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-20T09:42:52.379Z"
+result_status: "needs_human"
+published_at: "2026-08-20T10:12:52.894Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 2
 ---
 
 # issue-openclaw-openclaw-95840
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32354395750](https://github.com/openclaw/clawsweeper/actions/runs/32354395750)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32356986398](https://github.com/openclaw/clawsweeper/actions/runs/32356986398)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: needs_human
 
 Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-#95840 is a source-reproducible configured-path defect, but implementation is blocked pending an endpoint-scope decision: the existing provider eligibility hook receives provider/model/API but not base URL, so it cannot distinguish official api.openai.com Responses from a custom OpenAI-compatible Responses endpoint. The checkout is also read-only, lacks dependencies, and cannot satisfy the mandatory sibling Codex-source gate.
+#95840 remains a configured-path defect on main, but direct-OpenAI-only eligibility cannot be safely specified from the current provider hook because it lacks the resolved endpoint. The required direct ../codex source inspection is also unavailable in this read-only worker.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 2 |
 
 ## Fix Execution Actions
 
@@ -66,10 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95840 | fix_needed | blocked | needs_human | A provider-only true predicate would include custom OpenAI-compatible Responses routes, contrary to the requested direct-OpenAI-only scope. Maintainer direction is required before widening the hook context or defining modelApi as sufficient provenance. |
-| #95610 | keep_related | planned | related | Related cache-efficiency report; it has unique remaining work and must remain open. |
-| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked | needs_human | Do not open a PR until a maintainer selects the supported direct-OpenAI provenance rule and an executor can perform the mandatory Codex inspection and writable validation. |
+| #95840 | fix_needed | blocked | canonical | Blocked pending maintainer direction on whether transport-only eligibility (provider=openai and api=openai-responses) is acceptable for custom endpoints, or whether the provider hook must gain resolved-endpoint context. Direct Codex-source inspection is additionally unavailable in this worker. |
+| #95610 | keep_related | planned | related | Related OpenAI cache-efficiency work with a distinct root cause; it remains independently open. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked | needs_human | Do not create an executable PR artifact until endpoint scope is chosen and the mandatory Codex-source inspection is possible. |
 
 ## Needs Human
 
-- Decide whether #95840 should cover only the official <external link> Responses endpoint. If yes, approve a narrow extension of ProviderCacheTtlEligibilityContext to carry prepared baseUrl provenance; the current hook cannot enforce that boundary. If modelApi === "openai-responses" is accepted as the contract instead, explicitly accept that custom OpenAI-compatible Responses endpoints may also become eligible.
+- Decide whether cache-TTL eligibility may safely use provider=openai plus modelApi=openai-responses despite custom Responses-compatible endpoints sharing that shape, or authorize a separate endpoint-context contract change.
+- Provide or permit creation of ../codex so the mandatory direct Codex-source inspection can be completed before an implementation verdict.
