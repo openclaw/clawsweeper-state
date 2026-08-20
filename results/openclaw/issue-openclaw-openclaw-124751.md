@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124751"
 mode: "autonomous"
-run_id: "32392556354"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32392556354"
+run_id: "32393485556"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32393485556"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T16:48:37.619Z"
+published_at: "2026-08-20T16:55:06.440Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32392556354](https://github.com/openclaw/clawsweeper/actions/runs/32392556354)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32393485556](https://github.com/openclaw/clawsweeper/actions/runs/32393485556)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124751
 
 ## Summary
 
-#124751 remains the canonical iOS reconciliation report. Current main still has a concrete unmatched path: a partial `chat.final` and a fuller `session.message` with differing run/idempotency and content identities cannot be adopted by the existing exact-run or exact-content fallback. No branch was changed: this read-only worker cannot create the required failing regression or repair, `swift test` cannot initialize under the sandbox, and the required sibling `../codex` source checkout is absent and cannot be cloned here.
+The iOS reconciliation path remains the focused canonical repair, but this worker cannot safely produce a validated PR: the read-only checkout cannot run Swift tests or create the required branch, the preflight main SHA 927755e6afc0d7473ec1803a3a4d642237cfe752 is unavailable locally, and the required sibling ../codex source checkout is absent.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/124751
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #108692 | keep_closed | skipped | related | Already closed; no closure action is valid. |
-| #123792 | keep_independent | planned | independent | Related display symptom but distinct root cause and scope. |
-| #124751 | fix_needed | blocked | canonical | A narrow repair remains indicated, but implementation and regression proof require a writable checkout, a runnable Swift package environment, and the mandatory direct Codex source inspection. |
-| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | blocked | canonical | Artifact is ready for a fresh writable executor, but this worker could not complete the mandatory baseline/failing-regression and Codex-source gates. |
+| #124751 | fix_needed | blocked | canonical | A narrow fix path is identified, but implementation and validation must be rerun from a write-enabled checkout at a refreshed, resolvable main SHA with ../codex available. |
+| #123792 | keep_related | planned | related | Leave open under its existing canonical path. |
+| #108692 | keep_closed | skipped | related | Closed context refs must not receive close actions. |
+| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | blocked | canonical | The implementation plan is narrow, but this read-only environment cannot create the required regression, branch, or validation evidence. |
 
 ## Needs Human
 
