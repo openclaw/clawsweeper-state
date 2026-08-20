@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T09:52:13.046Z",
+  "updated_at": "2026-08-20T09:52:42.021Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5055554259:2026-07-23T07:16:43Z:re_review",
-      "comment_id": "5055554259",
-      "comment_version_key": "5055554259:2026-07-23T07:16:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5055554259",
-      "comment_created_at": "2026-07-23T07:16:43Z",
-      "comment_updated_at": "2026-07-23T07:16:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T04:32:32.018Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5058756273:2026-07-23T13:08:44Z:re_review",
       "comment_id": "5058756273",
@@ -31318,6 +31291,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125725:5325660518:2026-08-20T09:51:52Z:clawsweeper_needs_human",
+      "comment_id": "5325660518",
+      "comment_version_key": "5325660518:2026-08-20T09:51:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125725#issuecomment-5325660518",
+      "comment_created_at": "2026-08-18T08:32:07Z",
+      "comment_updated_at": "2026-08-20T09:51:52Z",
+      "comment_body_sha256": "a53f235678e991c1afea6c786742340b990b45e85e70f9e8ae4727fea374053f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125725,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only mocked tests are described; add a redacted after-fix Codex app-server trace showing the matched hook payload and approval result. After ad...; Review finding: [P1] Prove the event contract before denying file approvals — extensions/codex/src/app-server/approval-bridge.ts:481-487 - [medium] Unverified approval-event order... (sha=0e93ad38f2632c70cca435d848c9f0b369125ddc)",
+      "expected_head_sha": "0e93ad38f2632c70cca435d848c9f0b369125ddc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T09:52:42.021Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-file-change-hook-params-current",
+        "head_sha": "0e93ad38f2632c70cca435d848c9f0b369125ddc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
