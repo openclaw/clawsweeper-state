@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T10:44:56.906Z",
+  "updated_at": "2026-08-20T10:47:18.488Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118169:5160156082:2026-08-20T05:23:28Z:clawsweeper_needs_human",
-      "comment_id": "5160156082",
-      "comment_version_key": "5160156082:2026-08-20T05:23:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5160156082",
-      "comment_created_at": "2026-08-02T20:17:20Z",
-      "comment_updated_at": "2026-08-20T05:23:28Z",
-      "comment_body_sha256": "855dcb808282506253bff508ae44f8b427c379023cfc1fb669c68c546b01de01",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch depends on the still-open, dirty generic QR setup PR, so merging before that contract lands and this consumer is rebased would target an unresolved credential-bearing host... (sha=508116bcae9b2d30d3b025ff4fd1679a42f57de4)",
-      "expected_head_sha": "508116bcae9b2d30d3b025ff4fd1679a42f57de4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T05:32:29.634Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/signal-qr-setup",
-        "head_sha": "508116bcae9b2d30d3b025ff4fd1679a42f57de4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126442:5348497661:2026-08-20T05:31:06Z:clawsweeper_needs_human",
       "comment_id": "5348497661",
@@ -31251,6 +31218,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126145:5354837983:2026-08-20T10:46:38Z:re_review",
+      "comment_id": "5354837983",
+      "comment_version_key": "5354837983:2026-08-20T10:46:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126145#issuecomment-5354837983",
+      "comment_created_at": "2026-08-20T10:46:38Z",
+      "comment_updated_at": "2026-08-20T10:46:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126145,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T10:47:16.817Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-outbound-route-persist-after-send-112710",
+        "head_sha": "2efc22fd6f5da3c962a34eed6334747cc20bf490",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
