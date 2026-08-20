@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32339287170"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32339287170"
+run_id: "32340099163"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32340099163"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T06:31:54.021Z"
+published_at: "2026-08-20T06:41:24.254Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32339287170](https://github.com/openclaw/clawsweeper/actions/runs/32339287170)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32340099163](https://github.com/openclaw/clawsweeper/actions/runs/32340099163)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-Current main exposes the provider-owned cache-TTL hook but the OpenAI plugin does not implement it; direct OpenAI therefore falls through to ineligible core defaults and skips both pruning projection and the post-attempt marker. A narrow new-PR artifact is ready, but this read-only worker cannot install dependencies or edit the branch, and the mandatory sibling ../codex source checkout is absent.
+#95840 is a reproducible provider-owned cache-TTL eligibility gap: current main delegates eligibility to provider plugins but the OpenAI plugin supplies no hook, leaving direct OpenAI ineligible. Implementation is blocked because this checkout is read-only, dependencies are absent, and the mandated ../codex source checkout is unavailable.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main exposes the provider-owned cache-TTL hook but the OpenAI plugin doe
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #95840 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ Current main exposes the provider-owned cache-TTL hook but the OpenAI plugin doe
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95840 | fix_needed | blocked | canonical | Implementation is blocked only by the immutable worker environment. The executor should use the supplied narrow artifact after provisioning dependencies and the required sibling Codex checkout. |
-| #95610 | keep_related | planned | related | Both concern OpenAI cache efficiency but retain separate reproduction paths and fixes. |
-| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | The provider-owned hook is the established solution and supports a narrow credited fix PR. |
+| #95840 | fix_needed | blocked | canonical | A narrow plugin-owned repair is appropriate, but this worker cannot modify or validate the branch under the active read-only and mandatory-source-inspection constraints. |
+| #95610 | keep_related | planned | related | Keep open independently; it is adjacent but not a duplicate of the cache-TTL eligibility defect. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked |  | Executor must use a writable checkout with dependencies and the required sibling Codex source available. |
 
 ## Needs Human
 
