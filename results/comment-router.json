@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T08:43:10.892Z",
+  "updated_at": "2026-08-20T08:43:26.376Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126497:5351168809:2026-08-20T03:57:37Z:re_review",
-      "comment_id": "5351168809",
-      "comment_version_key": "5351168809:2026-08-20T03:57:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126497#issuecomment-5351168809",
-      "comment_created_at": "2026-08-20T03:57:37Z",
-      "comment_updated_at": "2026-08-20T03:57:37Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126497,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T04:09:31.583Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tui-reconcile-empty-active-runs",
-        "head_sha": "b13e69159c01de6c0bb63e8eac50a68263539ff4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94299:4744041311:2026-08-20T03:59:44Z:clawsweeper_needs_human",
       "comment_id": "4744041311",
@@ -31088,6 +31041,39 @@
         "kind": "pull_request",
         "branch": "fix/apply-patch-eof-chunk-overlap",
         "head_sha": "1c899f949eac67fd9d276a62e656d97be132201a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116253:5127327353:2026-08-20T08:41:08Z:clawsweeper_auto_repair",
+      "comment_id": "5127327353",
+      "comment_version_key": "5127327353:2026-08-20T08:41:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116253#issuecomment-5127327353",
+      "comment_created_at": "2026-07-30T06:19:39Z",
+      "comment_updated_at": "2026-08-20T08:41:08Z",
+      "comment_body_sha256": "610648e03585b44584d048a33d3e8779f491ec0fe8a6a00938b09504b829227a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116253,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=5582959bf73f82021804c20d7ca5ff9922e10427)",
+      "expected_head_sha": "5582959bf73f82021804c20d7ca5ff9922e10427",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-20T08:43:26.376Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/run-timeout-progress-grace-113182",
+        "head_sha": "5582959bf73f82021804c20d7ca5ff9922e10427",
         "cluster_id": null,
         "job_path": null
       }
