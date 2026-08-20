@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T14:11:06.228Z",
+  "updated_at": "2026-08-20T14:11:10.650Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126567:5352718467:2026-08-20T07:21:17Z:clawsweeper_needs_human",
-      "comment_id": "5352718467",
-      "comment_version_key": "5352718467:2026-08-20T07:21:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126567#issuecomment-5352718467",
-      "comment_created_at": "2026-08-20T07:21:17Z",
-      "comment_updated_at": "2026-08-20T07:21:17Z",
-      "comment_body_sha256": "b701e2a546298da81c205e8da837b07547a332272c73b8de9b7e60bd597a82b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126567,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The read-only worktree has no installed Vitest source and GitHub DNS was unavailable, so the mock fallback-versus-once contract and latest ClawSweeper rank-up comment could not be ind... (sha=b87979fca6c85ca6d83fc74f38ce8340a73fe625)",
-      "expected_head_sha": "b87979fca6c85ca6d83fc74f38ce8340a73fe625",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T07:51:34.714Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/message-preview-icon-audit-530e26",
-        "head_sha": "b87979fca6c85ca6d83fc74f38ce8340a73fe625",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126573:5352794195:2026-08-20T07:29:09Z:clawsweeper_auto_repair",
       "comment_id": "5352794195",
@@ -31771,6 +31738,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126566:5357050051:2026-08-20T14:10:21Z:re_review",
+      "comment_id": "5357050051",
+      "comment_version_key": "5357050051:2026-08-20T14:10:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126566#issuecomment-5357050051",
+      "comment_created_at": "2026-08-20T14:10:21Z",
+      "comment_updated_at": "2026-08-20T14:10:21Z",
+      "comment_body_sha256": "c27d6367c379f5b89f6e4b1abeee0742a3323adac9d4e26985db6d09cc9d389b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126566,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T14:11:08.078Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-126311-fallback-lifecycle",
+        "head_sha": "120c81a2368f07c6cdbbf818f5e44c281c95237e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
