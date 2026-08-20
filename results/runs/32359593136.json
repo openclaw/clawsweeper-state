@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126631",
+  "mode": "autonomous",
+  "run_id": "32359593136",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32359593136",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126631.md",
+  "published_at": "2026-08-20T10:45:18.845Z",
+  "canonical": "#126631",
+  "canonical_issue": "#126631",
+  "canonical_pr": null,
+  "summary": "#126631 remains the canonical, narrow rw sandbox mount-target provisioning bug. A bounded new-fix-PR artifact is ready, but this read-only worker cannot create the required branch or edits; validation is additionally blocked by absent dependencies, unavailable Docker access, and the required sibling ../codex source checkout being absent.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/126631",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126631",
+      "candidate_fix": null,
+      "reason": "Create the Docker bind destination at the pre-container workspace-layout owner, without changing the separately materialized read-only skill source or mount flags."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/126631",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126631",
+      "candidate_fix": null,
+      "reason": "A new implementation branch is required, but this worker cannot write the checkout or open the PR."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/113166",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#126631",
+      "candidate_fix": null,
+      "reason": "Related sandbox workspace area, but not a duplicate and unaffected by the mount-target provisioning repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair checkout with the required sibling ../codex source available, then let the deterministic executor create/update clawsweeper/issue-openclaw-openclaw-126631 and run the artifact validation. Docker access is required for the specified E2E proof; node_modules are absent in this checkout, and the worker cannot run pnpm install under the read-only filesystem policy."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
