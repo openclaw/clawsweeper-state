@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32331444067"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32331444067"
+run_id: "32333067933"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32333067933"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T04:30:39.475Z"
+published_at: "2026-08-20T04:54:02.842Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32331444067](https://github.com/openclaw/clawsweeper/actions/runs/32331444067)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32333067933](https://github.com/openclaw/clawsweeper/actions/runs/32333067933)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-Current main still excludes direct OpenAI from cache-TTL eligibility, so both pruning setup and post-attempt markers are skipped. A narrow provider-owned fix is ready, but this read-only checkout lacks test dependencies and the mandatory sibling Codex source checkout.
+Current main 29f86119 reproduces the source-level defect: direct OpenAI has no provider-owned cache-TTL eligibility hook, so both pruning setup and the post-attempt marker remain gated off. A narrow plugin-owned repair is identified, but this read-only environment lacks ../codex (mandatory direct-inspection gate), node_modules, and writable Corepack cache, so no branch or validated PR can be produced here.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main still excludes direct OpenAI from cache-TTL eligibility, so both pr
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #95840 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ Current main still excludes direct OpenAI from cache-TTL eligibility, so both pr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95840 | fix_needed | planned | canonical | A direct-OpenAI provider hook is the narrow canonical repair; implementation is blocked only by this worker environment. |
-| #95610 | keep_related | planned | related | Keep #95610 open independently. |
-| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked | canonical | A writable executor with dependencies and the required Codex checkout can apply this narrow artifact. |
+| #95610 | keep_related | planned | related | Keep open as a related but independent OpenAI cache-efficiency report. |
+| #95840 | fix_needed | blocked | canonical | Implementation is blocked only by the mandatory Codex-source gate and read-only dependency/test environment; the repair itself remains a narrow provider-owned bug fix. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked | canonical | Executor should implement after restoring the required Codex checkout and a writable dependency environment. |
 
 ## Needs Human
 
