@@ -67,22 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the documented headless OpenAI device-code login path. Preserve TTY rejection for flows that require terminal input, but allow an explicitly selected provider-declared device-code method to reach plain URL/code output and persist the OpenAI profile. Reuse the existing non-interactive logging prompter where suitable. Do not merge OpenClaw and standalone Codex credential stores, add config, weaken other interactive auth flows, or edit release-owned CHANGELOG.md; put release-note context in the PR body. Add a regression that fails with piped stdin before the fix, proves explicit OpenAI device-code dispatch proceeds, and keeps unspecified or interactive-only login rejected. Stop for maintainer input if the repair requires a new public auth policy.
+Repair the documented headless OpenAI device-code login path for https://github.com/openclaw/openclaw/issues/113326. In `src/commands/models/auth.ts`, preserve the interactive guard for methods that need terminal input but allow an explicitly requested `device-code` method to run through the existing non-interactive logging prompter; do not add a config option, merge standalone Codex credential stores, or weaken other auth methods. Reuse the provider’s existing plain URL/code presentation, ensure no access or refresh token reaches logs/stdout, and add a regression that fails on the current pre-method guard. Cover both `--device-code` and `--method device-code`, plus continued non-TTY rejection for ordinary OAuth. Do not edit CHANGELOG.md; put user-visible release context in the PR body.
 
 Likely files:
 
 - src/commands/models/auth.ts
 - src/commands/models/auth.test.ts
 - src/commands/non-interactive-prompter.ts
-- src/cli/models-cli.test.ts
-- docs/cli/models.md
+- extensions/openai/openai-chatgpt-provider.test.ts
 
 Validation:
 
-- pnpm test src/commands/models/auth.test.ts
-- pnpm test src/cli/models-cli.test.ts
-- pnpm test extensions/openai/openai-chatgpt-provider.test.ts extensions/openai/openai-chatgpt-device-code.test.ts
-- Run a redacted non-TTY OpenAI device-code login against an isolated state directory and verify the resulting profile with `openclaw models auth list --provider openai`.
+- pnpm vitest run src/commands/models/auth.test.ts
+- pnpm vitest run extensions/openai/openai-chatgpt-provider.test.ts extensions/openai/openai-chatgpt-device-code.test.ts
+- Run the dist-backed CLI in a non-TTY harness with mocked provider transport and verify it prints the device pairing URL/code without credential material.
 
 ## Operator Prompt
 
