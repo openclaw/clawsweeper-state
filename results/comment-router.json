@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T13:01:23.836Z",
+  "updated_at": "2026-08-20T13:05:44.637Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5123874426:2026-07-29T22:09:43Z:re_review",
-      "comment_id": "5123874426",
-      "comment_version_key": "5123874426:2026-07-29T22:09:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5123874426",
-      "comment_created_at": "2026-07-29T22:09:43Z",
-      "comment_updated_at": "2026-07-29T22:09:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T07:33:36.519Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5125146819:2026-07-30T01:09:06Z:re_review",
       "comment_id": "5125146819",
@@ -31349,6 +31322,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126566:5352673093:2026-08-20T13:04:43Z:clawsweeper_needs_human",
+      "comment_id": "5352673093",
+      "comment_version_key": "5352673093:2026-08-20T13:04:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126566#issuecomment-5352673093",
+      "comment_created_at": "2026-08-20T07:16:33Z",
+      "comment_updated_at": "2026-08-20T13:04:43Z",
+      "comment_body_sha256": "2bef5c76b52315136eacb6bf99d3e64888db6ad88f83291a427ff50a1b2bdd4c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126566,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body describes an after-fix loopback/CLI run but includes no inspectable output or artifact; add a redacted terminal transcript showing the...; Review finding: [P1] Keep deferred lifecycle ownership out of plugin runtime — src/agents/embedded-agent-runner/run/params.ts:384-385 - [medium] Plugin callers can retain lifecycl... (sha=9fa7094948d2df5c15ac3db9f2323e81b2582aae)",
+      "expected_head_sha": "9fa7094948d2df5c15ac3db9f2323e81b2582aae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T13:05:44.637Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-126311-fallback-lifecycle",
+        "head_sha": "9fa7094948d2df5c15ac3db9f2323e81b2582aae",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
