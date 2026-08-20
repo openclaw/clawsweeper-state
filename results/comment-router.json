@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T19:06:20.940Z",
+  "updated_at": "2026-08-20T19:06:26.331Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126618:5356586628:2026-08-20T13:31:46Z:re_review",
-      "comment_id": "5356586628",
-      "comment_version_key": "5356586628:2026-08-20T13:31:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126618#issuecomment-5356586628",
-      "comment_created_at": "2026-08-20T13:31:46Z",
-      "comment_updated_at": "2026-08-20T13:31:46Z",
-      "comment_body_sha256": "0cddfb6ca48c64dccfffd913a35484ffe6fa7f199a3349983c5c50d576cac3dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126618,
-      "author": "RaviTharuma",
-      "author_id": 25951435,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T13:32:32.422Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-search-native-core-tools",
-        "head_sha": "333c37a823dd48bd10fe902a0e5ae2cd3c8e1258",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126554:5352454273:2026-08-20T13:32:07Z:clawsweeper_needs_human",
       "comment_id": "5352454273",
@@ -31850,6 +31803,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T19:06:20.940Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125323:5317316795:2026-08-20T19:05:41Z:clawsweeper_needs_human",
+      "comment_id": "5317316795",
+      "comment_version_key": "5317316795:2026-08-20T19:05:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125323#issuecomment-5317316795",
+      "comment_created_at": "2026-08-17T15:24:02Z",
+      "comment_updated_at": "2026-08-20T19:05:41Z",
+      "comment_body_sha256": "4d41e5749115aa1d88b0ceb93dd3861fa29b49358c4103d384b91edc96e46036",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125323,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides predicate-level unit-test claims only; add redacted after-fix Android device video or runtime evidence showing unavailable dict... (sha=2bbdf63e9e522b00983188116996226f607d7b37)",
+      "expected_head_sha": "2bbdf63e9e522b00983188116996226f607d7b37",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T19:06:26.331Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-chat-mic-voice-note-fallback",
+        "head_sha": "2bbdf63e9e522b00983188116996226f607d7b37",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
