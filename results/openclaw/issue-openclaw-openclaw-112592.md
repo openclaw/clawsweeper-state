@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-112592"
 mode: "autonomous"
-run_id: "32326399677"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32326399677"
-head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "failure"
+run_id: "32327307253"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32327307253"
+head_sha: "e869bde55a75e87d8158e8cb59c0f2de2d59f37b"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T03:04:50.797Z"
+published_at: "2026-08-20T03:20:40.801Z"
 canonical: "https://github.com/openclaw/openclaw/issues/112592"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/112592"
 canonical_pr: null
-actions_total: 4
+actions_total: 9
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32326399677](https://github.com/openclaw/clawsweeper/actions/runs/32326399677)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32327307253](https://github.com/openclaw/clawsweeper/actions/runs/32327307253)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/112592
 
 ## Summary
 
-#112592 remains a narrow, source-reproducible provenance defect on main eed64163b629600d7de248dc2589380e3ab0b4ee. A focused fix artifact is prepared, but this read-only checkout cannot install the missing tsx dependency or clone the mandatory sibling ../codex checkout, so no validated branch/PR path can be emitted yet.
+Current main reproduces the narrow provenance defect: internal completion paths store `webchat` as `sourceChannel` because they reuse the routing sentinel. Implementation is blocked because the checkout is read-only and the required sibling `../codex` source checkout is absent.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 9 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/112592
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #112592 |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,15 @@ Canonical: https://github.com/openclaw/openclaw/issues/112592
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #112592 | fix_needed | planned | canonical | Repair the producer-owned provenance fact only; retain the webchat sentinel in route, channel, delivery, and validation decisions. |
-| #64917 | keep_related | planned | related | Distinct delivery-contract work remains open. |
-| #111358 | keep_related | planned | related | Distinct delivery-contract work remains open. |
-| cluster:issue-openclaw-openclaw-112592 | build_fix_artifact | blocked | canonical | Implementation is blocked only by unavailable local dependencies and the required Codex source checkout; the repair scope itself is concrete. |
+| #47745 | keep_closed | skipped | related | Already closed; retained as related historical evidence only. |
+| #54441 | keep_closed | skipped | related | Already closed; outside this repair boundary. |
+| #55931 | keep_closed | skipped | related | Already closed; not reopened or mutated by this lane. |
+| #64917 | keep_related | planned | related | Distinct routing and delivery-contract work; this repair must not broaden into it. |
+| #93255 | keep_closed | skipped | independent | Already closed and independent from provenance labeling. |
+| #107546 | keep_closed | skipped | related | Already closed historical provenance context. |
+| #111358 | keep_related | planned | related | Distinct from replacing internal completion provenance only. |
+| #112592 | fix_needed | blocked | canonical | The fix shape is narrow and source-reproducible, but this worker cannot edit or validate in the read-only checkout and cannot satisfy the mandatory Codex inspection gate. |
+| cluster:issue-openclaw-openclaw-112592 | build_fix_artifact | blocked |  | Implementation prerequisites are unavailable in this worker environment. |
 
 ## Needs Human
 
