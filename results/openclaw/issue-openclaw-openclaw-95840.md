@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32361975962"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32361975962"
+run_id: "32361201102"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32361201102"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T11:18:36.539Z"
+published_at: "2026-08-20T11:06:09.577Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 2
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-95840
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32361975962](https://github.com/openclaw/clawsweeper/actions/runs/32361975962)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32361201102](https://github.com/openclaw/clawsweeper/actions/runs/32361201102)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-Current main has the reported source-level gap, but a safe direct-OpenAI-only repair is blocked: the cache-TTL hook context lacks resolved base URL, while custom OpenAI-compatible endpoints use the same provider and `openai-responses` API. This read-only checkout also lacks `../codex` and test dependencies, so no code or PR branch was created.
+No code or GitHub mutations made. The source defect is present locally, but the existing eligibility-hook context cannot safely distinguish direct OpenAI from custom OpenAI-compatible endpoints; implementation is blocked pending that owner-boundary decision.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Current main has the reported source-level gap, but a safe direct-OpenAI-only re
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 2 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,10 @@ Current main has the reported source-level gap, but a safe direct-OpenAI-only re
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95610 | keep_related | planned | related | Keep open independently; it has distinct reproduction and implementation scope. |
-| #95840 | fix_needed | blocked | canonical | Do not enable cache-TTL using only provider/model/API facts: that would extend the behavior to custom OpenAI-compatible routes contrary to the job boundary. |
-| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked | canonical | Awaiting an explicit endpoint/transport contract decision before creating an executable PR. |
+| #95840 | fix_needed | blocked | canonical | A direct-OpenAI-only predicate cannot be proven with the existing hook because endpoint identity is unavailable. An API-only predicate risks enabling the explicitly excluded custom OpenAI-compatible routes. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked | needs_human | No executable fix PR is safe until maintainers choose whether eligibility applies to all openai-responses routes or authorize endpoint identity in the hook contract. |
+| #95610 | keep_related | planned | related | Keep open as a related OpenAI caching issue; it is not a duplicate of this provider-eligibility defect. |
 
 ## Needs Human
 
-- Confirm the supported direct-OpenAI cache-TTL scope: whether both official Platform API and ChatGPT/Codex OAuth routes are eligible, and whether Azure aliases must remain excluded.
-- Provide the mandatory sibling ../codex checkout (or a writable environment to obtain it) and dependencies so the required direct Codex inspection and regression validation can run.
+- Decide whether cache-TTL eligibility may cover every `openai` provider route using `openai-responses`, or authorize a hook-context expansion that supplies the resolved endpoint so the OpenAI plugin can safely limit eligibility to the official platform endpoint.
