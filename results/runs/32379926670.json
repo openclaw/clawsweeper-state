@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-95840",
+  "mode": "autonomous",
+  "run_id": "32379926670",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32379926670",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-95840.md",
+  "published_at": "2026-08-20T14:47:50.033Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_pr": null,
+  "summary": "A narrow provider-owner repair is planned for #95840, but this read-only checkout cannot create the branch or install missing dependencies. Required direct ../codex inspection is also blocked because that sibling checkout is absent and cannot be cloned in this environment.",
+  "actions": [
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Keep both reports open: fixing idle-gap pruning does not stabilize per-turn OpenAI prompt prefixes."
+    },
+    {
+      "target": "#95840",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the execution environment. The planned repair is a new, narrow PR after dependency installation and required Codex-source inspection."
+    },
+    {
+      "target": "#95859",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Closed historical implementation evidence only; no mutation is allowed or needed."
+    },
+    {
+      "target": "#96383",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Closed historical implementation evidence only; no mutation is allowed or needed."
+    },
+    {
+      "target": "#102440",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Closed historical implementation evidence only; no mutation is allowed or needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-95840",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Executor can materialize one new narrow PR once it has a writable checkout, dependencies, and the required Codex-source check."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
