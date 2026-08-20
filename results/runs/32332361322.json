@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-95840",
+  "mode": "autonomous",
+  "run_id": "32332361322",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32332361322",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-95840.md",
+  "published_at": "2026-08-20T05:38:11.252Z",
+  "canonical": "#95840",
+  "canonical_issue": "#95840",
+  "canonical_pr": null,
+  "summary": "No repair was authorized or written. Source inspection shows the OpenAI plugin lacks the existing cache-TTL eligibility hook while core delegates to that hook; direct OpenAI therefore falls through to the non-OpenAI defaults. The required sibling ../codex source is absent, and this read-only checkout has neither dependencies nor a writable Corepack cache, so the mandatory Codex gate and focused validation cannot run.",
+  "actions": [
+    {
+      "target": "#95840",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "The narrow provider-owned repair remains appropriate, but repository policy forbids a repair verdict or code change before direct ../codex inspection, and this environment cannot provision that source or run dependencies."
+    },
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Keep open independently; it is adjacent cache work, not a duplicate or prerequisite for this narrowly scoped provider-hook repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
