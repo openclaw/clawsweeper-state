@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T07:13:18.532Z",
+  "updated_at": "2026-08-20T07:15:14.820Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126482:5350014698:2026-08-20T01:21:59Z:re_review",
-      "comment_id": "5350014698",
-      "comment_version_key": "5350014698:2026-08-20T01:21:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126482#issuecomment-5350014698",
-      "comment_created_at": "2026-08-20T01:21:59Z",
-      "comment_updated_at": "2026-08-20T01:21:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126482,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T01:22:42.399Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/memory-recall-authority",
-        "head_sha": "b468d49f53f0a8dbc47e598109225f4b2305177e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119975:5207031002:2026-08-20T01:04:21Z:clawsweeper_auto_repair",
       "comment_id": "5207031002",
@@ -31600,6 +31553,39 @@
         "kind": "pull_request",
         "branch": "steipete/leak-cancel-fixes",
         "head_sha": "c2f982c4e55a0545bfba8a76fad7a7af19e87c0e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126220:5338423851:2026-08-20T07:14:27Z:clawsweeper_needs_human",
+      "comment_id": "5338423851",
+      "comment_version_key": "5338423851:2026-08-20T07:14:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126220#issuecomment-5338423851",
+      "comment_created_at": "2026-08-19T06:32:33Z",
+      "comment_updated_at": "2026-08-20T07:14:27Z",
+      "comment_body_sha256": "881edb1ec9199abdae6d871ba4b639af37fbe313a8e0f6f6e8eb4b8389bccfdd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify the Codex Action user-drop contract (P1)** - This secret-bearing job relies on unprivileged-user to confine Codex before granting the codex to mantis-sut sudo bridge. The workflow test only checks configu...; Review finding: [P1] Verify the Codex Action user-drop contract — .github/workflows/mantis-telegram-desktop-proof.yml:637-660 - [high] Unverified Codex OS-user isolation — .github... (sha=90addb6661d09e6608a4f7c130caa270a1f16dfc)",
+      "expected_head_sha": "90addb6661d09e6608a4f7c130caa270a1f16dfc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T07:15:14.820Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mantis-recorder-lane",
+        "head_sha": "90addb6661d09e6608a4f7c130caa270a1f16dfc",
         "cluster_id": null,
         "job_path": null
       }
