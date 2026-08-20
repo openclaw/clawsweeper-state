@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32353076005"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32353076005"
+run_id: "32353960122"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32353960122"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "success"
 result_status: "needs_human"
-published_at: "2026-08-20T09:31:33.349Z"
+published_at: "2026-08-20T09:37:10.083Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32353076005](https://github.com/openclaw/clawsweeper/actions/runs/32353076005)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32353960122](https://github.com/openclaw/clawsweeper/actions/runs/32353960122)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-Current main reproduces the exclusion, but the requested direct-only scope is not representable by the existing provider eligibility hook. Maintainer confirmation is needed before changing its public context boundary.
+The defect is source-reproducible, but the existing eligibility hook receives only provider/model/API—not the resolved endpoint—so a `true` OpenAI hook would also cover configured OpenAI-compatible custom endpoints that the issue explicitly excludes. I am stopping without code rather than broaden the provider contract or silently change proxy behavior.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main reproduces the exclusion, but the requested direct-only scope is no
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95840 | needs_human | blocked | needs_human | Confirm whether official API Platform only, or Platform plus ChatGPT/Codex OAuth, is the supported cache-TTL boundary. The existing hook cannot distinguish either from all custom OpenAI-compatible routes; the mandatory ../codex checkout is also unavailable for the required direct Codex transport inspection. |
-| #95610 | keep_related | planned | related | Both concern OpenAI cache efficiency, but they require separate owner-boundary repairs. |
+| #95610 | keep_related | planned | related | Related but independently actionable OpenAI cache behavior; retain its existing canonical path. |
+| #95840 | needs_human | blocked | canonical | Maintainer decision required: either authorize a narrow provider-context expansion that carries resolved endpoint/transport provenance and its compatibility tests, or define that `provider: openai` is sufficient despite custom OpenAI-compatible endpoints. The requested direct-only repair cannot be safely expressed through the current hook. |
 
 ## Needs Human
 
-- Confirm the supported endpoint boundary for cache-TTL eligibility: official api.openai.com only, or that plus chatgpt.com/Codex OAuth. If direct-only means official endpoints, authorize extending the existing eligibility context with resolved model baseUrl so custom OpenAI-compatible routes remain excluded.
+- Decide the supported cache-TTL eligibility boundary for `provider: openai` when it uses a custom OpenAI-compatible base URL; the current hook contract cannot distinguish that route from direct api.openai.com.
