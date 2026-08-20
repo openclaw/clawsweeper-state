@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T10:30:41.541Z",
+  "updated_at": "2026-08-20T10:30:41.817Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3081:5351588340:2026-08-20T05:02:45Z:re_review",
-      "comment_id": "5351588340",
-      "comment_version_key": "5351588340:2026-08-20T05:02:45Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3081#issuecomment-5351588340",
-      "comment_created_at": "2026-08-20T05:02:45Z",
-      "comment_updated_at": "2026-08-20T05:02:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3081,
-      "author": "sf-jin-ku",
-      "author_id": 16588145,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T05:11:18.022Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/claude-swap-at-limit-card",
-        "head_sha": "b249e8755cc91d0bf0d801e6ece146b5b9c34918",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3081:5348540186:2026-08-20T05:06:27Z:clawsweeper_needs_human",
       "comment_id": "5348540186",
@@ -31364,6 +31317,39 @@
         "kind": "pull_request",
         "branch": "fix/tool-search-native-core-tools",
         "head_sha": "a6364fc59e7cd58904ba45b4427fc9941fc08a6f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126566:5352673093:2026-08-20T10:27:10Z:clawsweeper_needs_human",
+      "comment_id": "5352673093",
+      "comment_version_key": "5352673093:2026-08-20T10:27:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126566#issuecomment-5352673093",
+      "comment_created_at": "2026-08-20T07:16:33Z",
+      "comment_updated_at": "2026-08-20T10:27:10Z",
+      "comment_body_sha256": "575dca0a92998b639e8bbf3fc9f73ea3a42b6f80d007add22229afd13d10ca3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126566,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR describes a successful loopback transport and real CLI-child recovery, but no inspectable redacted terminal output or linked ar... (sha=c5c3b92c7924b0866c4cf5f56a7735989a6dc30e)",
+      "expected_head_sha": "c5c3b92c7924b0866c4cf5f56a7735989a6dc30e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T10:30:41.817Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-126311-fallback-lifecycle",
+        "head_sha": "c5c3b92c7924b0866c4cf5f56a7735989a6dc30e",
         "cluster_id": null,
         "job_path": null
       }
