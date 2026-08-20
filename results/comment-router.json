@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-20T15:51:52.895Z",
+  "updated_at": "2026-08-20T15:50:21.644Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126424:5348833872:2026-08-20T10:15:52Z:clawsweeper_needs_human",
+      "comment_id": "5348833872",
+      "comment_version_key": "5348833872:2026-08-20T10:15:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126424#issuecomment-5348833872",
+      "comment_created_at": "2026-08-19T22:37:49Z",
+      "comment_updated_at": "2026-08-20T10:15:52Z",
+      "comment_body_sha256": "713c991da9a57841e3ed2da26ccb22c465e4a41f554f7087fe5505dccbf3e5c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126424,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject legacy parent-bound Discord threads (P1)** - This call omits parentConversationRef; legacy rows can therefore reach Discord with only the child/thread ID and no context.parentPeerId. Discord resolves the...; Review finding: [P1] Reject legacy parent-bound Discord threads — src/gateway/conversation-route-ownership.ts:58 - [medium] Fail closed for legacy parent-bound Discord threads — s... (sha=199fffea8729052a12992c751828c963cfe9940d)",
+      "expected_head_sha": "199fffea8729052a12992c751828c963cfe9940d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T10:19:31.334Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/conversation-route-ownership",
+        "head_sha": "199fffea8729052a12992c751828c963cfe9940d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118523:5354572856:2026-08-20T10:19:49Z:re_review",
       "comment_id": "5354572856",
@@ -31413,65 +31446,6 @@
       ]
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:119525:5213849492:2026-08-07T07:23:20Z:automerge",
-      "comment_id": "5213849492",
-      "comment_version_key": "5213849492:2026-08-07T07:23:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119525#issuecomment-5213849492",
-      "comment_created_at": "2026-08-07T07:23:20Z",
-      "comment_updated_at": "2026-08-07T07:23:20Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119525,
-      "author": "momothemage",
-      "author_id": 35096042,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "automerge enabled; PR has merge conflicts and needs a cloud rebase repair before automerge",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-20T15:51:34.195Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/memory-search-timeout-classification",
-        "head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-        "cluster_id": "automerge-openclaw-openclaw-119525",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "waiting",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-        },
-        {
-          "action": "comment",
-          "status": "pending",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:119525:5261479216:2026-08-12T02:36:42Z:maintainer_approve_automerge",
       "comment_id": "5261479216",
       "comment_version_key": "5261479216:2026-08-12T02:36:42Z",
@@ -31491,11 +31465,11 @@
       "trusted_bot": false,
       "trusted_bot_author": null,
       "automation_source": null,
-      "repair_reason": null,
+      "repair_reason": "structured ClawSweeper verdict: pass; PR has merge conflicts and needs a cloud rebase repair before automerge",
       "expected_head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
       "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T15:51:52.895Z",
+      "status": "waiting",
+      "processed_at": "2026-08-20T15:50:21.644Z",
       "target": {
         "kind": "pull_request",
         "branch": "feature/memory-search-timeout-classification",
@@ -31512,15 +31486,21 @@
         },
         {
           "action": "merge",
-          "status": "blocked",
+          "status": "repair_needed",
           "label": null,
           "job_path": null
         },
         {
           "action": "comment",
-          "status": "executed",
+          "status": "pending",
           "label": null,
           "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
         }
       ]
     }
