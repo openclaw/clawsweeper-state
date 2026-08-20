@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-95840",
+  "mode": "autonomous",
+  "run_id": "32353076005",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32353076005",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-95840.md",
+  "published_at": "2026-08-20T09:31:33.349Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the exclusion, but the requested direct-only scope is not representable by the existing provider eligibility hook. Maintainer confirmation is needed before changing its public context boundary.",
+  "actions": [
+    {
+      "target": "#95840",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Confirm whether official API Platform only, or Platform plus ChatGPT/Codex OAuth, is the supported cache-TTL boundary. The existing hook cannot distinguish either from all custom OpenAI-compatible routes; the mandatory ../codex checkout is also unavailable for the required direct Codex transport inspection."
+    },
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Both concern OpenAI cache efficiency, but they require separate owner-boundary repairs."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Confirm the supported endpoint boundary for cache-TTL eligibility: official api.openai.com only, or that plus chatgpt.com/Codex OAuth. If direct-only means official endpoints, authorize extending the existing eligibility context with resolved model baseUrl so custom OpenAI-compatible routes remain excluded."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#95840",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
