@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-123318"
 mode: "autonomous"
-run_id: "32388694739"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32388694739"
+run_id: "32395262716"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32395262716"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T16:09:51.589Z"
+published_at: "2026-08-20T17:22:37.596Z"
 canonical: "https://github.com/openclaw/openclaw/issues/123318"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/123318"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32388694739](https://github.com/openclaw/clawsweeper/actions/runs/32388694739)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32395262716](https://github.com/openclaw/clawsweeper/actions/runs/32395262716)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/123318
 
 ## Summary
 
-#123318 remains the canonical, narrow git-updater bug. Implementation is blocked because this checkout is read-only (including Corepack cache creation), and the required sibling ../codex source is unavailable for the repository’s Codex gate. No files, branch, PR, labels, or GitHub state were changed.
+#123318 remains the canonical, source-proven stable/beta updater bug on main bbbd70542b4436c7cca1c3b51ea9e06410b5f4dc. The release-channel owner calls `git fetch --all --prune --tags` before resolving and checking out a release tag; Git 2.52 documents `--force` as forcing local-reference overwrite. A narrow `--force` addition, restricted to this existing stable/beta fetch, is the repair path. No code, fixture, branch, PR, label, or GitHub mutation was made: this worker's filesystem is read-only, so it could not create the required disposable Git fixture or edit/validate a branch; the mandatory sibling ../codex checkout is also absent and cannot be cloned under this policy.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/123318
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #123318 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/123318
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #123318 | fix_needed | blocked | canonical | The repair is source-proven and bounded, but this worker cannot create the required regression fixture, modify the branch, or validate it in the read-only checkout. |
-| #86218 | keep_closed | skipped | related | Already closed historical context; not a closure target. |
-| #119098 | keep_closed | skipped | related | Already closed historical context; not a closure target. |
-| cluster:issue-openclaw-openclaw-123318 | build_fix_artifact | blocked | canonical | Artifact is ready for an executor with a writable checkout and the required Codex-source sibling. |
+| #123318 | fix_needed | blocked | canonical | Implementation is blocked only by this read-only worker environment. A writable executor should apply the attached narrow artifact, reproduce before editing, and complete the required validation. |
+| cluster:issue-openclaw-openclaw-123318 | build_fix_artifact | planned | canonical | A new narrow fix PR is appropriate; no contributor PR exists to repair or credit. |
 
 ## Needs Human
 
