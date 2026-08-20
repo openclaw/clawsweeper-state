@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T18:01:32.675Z",
+  "updated_at": "2026-08-20T18:01:59.936Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:553:5355604550:2026-08-20T12:03:12Z:clawsweeper_needs_human",
-      "comment_id": "5355604550",
-      "comment_version_key": "5355604550:2026-08-20T12:03:12Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/553#issuecomment-5355604550",
-      "comment_created_at": "2026-08-20T12:03:12Z",
-      "comment_updated_at": "2026-08-20T12:03:12Z",
-      "comment_body_sha256": "e1f463934072ef2b6c14c768a2d8d6dcef2317c59cec866316c984ad3133b376",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 553,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The strict allowlist intentionally stops certification when a future Xcode build adds another nested Mach-O payload; that topology will need explicit review and support. (sha=26500e2f2983618eb5f55348d32f0c6692f001a5)",
-      "expected_head_sha": "26500e2f2983618eb5f55348d32f0c6692f001a5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T12:05:41.893Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/harness-pipefail",
-        "head_sha": "26500e2f2983618eb5f55348d32f0c6692f001a5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126424:5348833872:2026-08-20T12:04:35Z:clawsweeper_needs_human",
       "comment_id": "5348833872",
@@ -32012,6 +31979,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126774:5359760936:2026-08-20T18:00:58Z:re_review",
+      "comment_id": "5359760936",
+      "comment_version_key": "5359760936:2026-08-20T18:00:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126774#issuecomment-5359760936",
+      "comment_created_at": "2026-08-20T18:00:58Z",
+      "comment_updated_at": "2026-08-20T18:00:58Z",
+      "comment_body_sha256": "c997f5163cabff59f61a5221347c2f9d4933816921fa9c3f0aafb139b1cc1276",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126774,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T18:01:58.218Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-plugin-scan-layouts-c28",
+        "head_sha": "c27c1b60879cd6102a35bbe56cca932dc429c806",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
