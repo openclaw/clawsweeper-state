@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-95840",
+  "mode": "autonomous",
+  "run_id": "32361975962",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32361975962",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-95840.md",
+  "published_at": "2026-08-20T11:18:36.539Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_pr": null,
+  "summary": "Current main has the reported source-level gap, but a safe direct-OpenAI-only repair is blocked: the cache-TTL hook context lacks resolved base URL, while custom OpenAI-compatible endpoints use the same provider and `openai-responses` API. This read-only checkout also lacks `../codex` and test dependencies, so no code or PR branch was created.",
+  "actions": [
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open independently; it has distinct reproduction and implementation scope."
+    },
+    {
+      "target": "#95840",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Do not enable cache-TTL using only provider/model/API facts: that would extend the behavior to custom OpenAI-compatible routes contrary to the job boundary."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-95840",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Awaiting an explicit endpoint/transport contract decision before creating an executable PR."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Confirm the supported direct-OpenAI cache-TTL scope: whether both official Platform API and ChatGPT/Codex OAuth routes are eligible, and whether Azure aliases must remain excluded.",
+    "Provide the mandatory sibling ../codex checkout (or a writable environment to obtain it) and dependencies so the required direct Codex inspection and regression validation can run."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#95840",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
