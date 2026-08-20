@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T03:15:30.567Z",
+  "updated_at": "2026-08-20T03:15:53.470Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:66:5170678735:2026-08-19T18:49:03Z:clawsweeper_needs_human",
-      "comment_id": "5170678735",
-      "comment_version_key": "5170678735:2026-08-19T18:49:03Z",
-      "comment_url": "https://github.com/openclaw/krillswitch/pull/66#issuecomment-5170678735",
-      "comment_created_at": "2026-08-03T19:14:36Z",
-      "comment_updated_at": "2026-08-19T18:49:03Z",
-      "comment_body_sha256": "361054295a3e1b24c5fb423a3c0f19c0b4bf6c1ad6b0e36982bd9dd2c6a8329d",
-      "repo": "openclaw/krillswitch",
-      "issue_number": 66,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Confirm the upstream action release pin** - Both changed lines execute a new external action revision in a workflow with security-events: write; verify the full SHA against upstream v4....; Review finding: [medium] Confirm the upstream action release pin — .github/workflows/codeql.yml:41 (sha=191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba)",
-      "expected_head_sha": "191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T18:54:04.153Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-ce612e0709",
-        "head_sha": "191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:72:5257587247:2026-08-19T18:49:58Z:clawsweeper_needs_human",
       "comment_id": "5257587247",
@@ -32684,6 +32651,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118402:5162116385:2026-08-20T03:14:23Z:clawsweeper_auto_repair",
+      "comment_id": "5162116385",
+      "comment_version_key": "5162116385:2026-08-20T03:14:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118402#issuecomment-5162116385",
+      "comment_created_at": "2026-08-03T03:55:14Z",
+      "comment_updated_at": "2026-08-20T03:14:23Z",
+      "comment_body_sha256": "8ab2ffc8efcdac6db899d77d9d42f2571cfcb83d3c8de61ed41c157b39b787df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118402,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fad885ea5975e116699b06b73fc1305db392f7b9)",
+      "expected_head_sha": "fad885ea5975e116699b06b73fc1305db392f7b9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T03:15:53.470Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-failure-loop-streak",
+        "head_sha": "fad885ea5975e116699b06b73fc1305db392f7b9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
