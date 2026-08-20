@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T01:15:58.724Z",
+  "updated_at": "2026-08-20T01:18:31.600Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4663196981:2026-06-09T19:16:41Z:re_review",
-      "comment_id": "4663196981",
-      "comment_version_key": "4663196981:2026-06-09T19:16:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4663196981",
-      "comment_created_at": "2026-06-09T19:16:41Z",
-      "comment_updated_at": "2026-06-09T19:16:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T17:02:49.438Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4714209378:2026-06-16T02:12:53Z:re_review",
       "comment_id": "4714209378",
@@ -32052,6 +32025,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126424:5348833872:2026-08-20T01:16:13Z:clawsweeper_needs_human",
+      "comment_id": "5348833872",
+      "comment_version_key": "5348833872:2026-08-20T01:16:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126424#issuecomment-5348833872",
+      "comment_created_at": "2026-08-19T22:37:49Z",
+      "comment_updated_at": "2026-08-20T01:16:13Z",
+      "comment_body_sha256": "c863b95336c454705776498a1e9c2a27ee6519163ce3416362b8b5f4a0894574",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126424,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Fail closed for context-free directory conversations (P1)** - Directory discovery constructs a conversation with only channel, account, kind, and peer, then this helper resolves it without contextual facts. With...; Review finding: [P1] Fail closed for context-free directory conversations — src/gateway/conversation-route-ownership.ts:90-92 - [P1] Keep route provenance on each conversation ass... (sha=900d38a16b70c50b63c302ddcb401f2f58000fe8)",
+      "expected_head_sha": "900d38a16b70c50b63c302ddcb401f2f58000fe8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T01:18:31.600Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/conversation-route-ownership",
+        "head_sha": "900d38a16b70c50b63c302ddcb401f2f58000fe8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
