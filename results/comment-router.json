@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T20:51:05.343Z",
+  "updated_at": "2026-08-20T20:54:54.020Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125823:5357745246:2026-08-20T15:04:37Z:re_review",
-      "comment_id": "5357745246",
-      "comment_version_key": "5357745246:2026-08-20T15:04:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125823#issuecomment-5357745246",
-      "comment_created_at": "2026-08-20T15:04:37Z",
-      "comment_updated_at": "2026-08-20T15:04:37Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125823,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T15:05:35.336Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/webchat-terminal-dedupe-recovery",
-        "head_sha": "30f0c10e88b6f6f81a5903a6d7082cb9b78c2750",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121156:5233284947:2026-08-20T14:57:17Z:clawsweeper_needs_human",
       "comment_id": "5233284947",
@@ -31705,6 +31658,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126816:5360792472:2026-08-20T20:53:17Z:clawsweeper_needs_human",
+      "comment_id": "5360792472",
+      "comment_version_key": "5360792472:2026-08-20T20:53:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126816#issuecomment-5360792472",
+      "comment_created_at": "2026-08-20T19:38:36Z",
+      "comment_updated_at": "2026-08-20T20:53:17Z",
+      "comment_body_sha256": "f3985d0a8c27904af6e0088a7cac01afbb41a9a7e18026db0cc2248303424c49",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126816,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes Git-install behavior: a local tag sharing a remote release-tag name is now overwritten instead of causing the update to fail; this is required for recrea... (sha=34ed08f4609349e5db7763d4f766030d63a84e3e)",
+      "expected_head_sha": "34ed08f4609349e5db7763d4f766030d63a84e3e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T20:54:54.020Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/updater-recreated-tags-123318",
+        "head_sha": "34ed08f4609349e5db7763d4f766030d63a84e3e",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
