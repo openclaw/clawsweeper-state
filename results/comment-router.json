@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T17:39:53.623Z",
+  "updated_at": "2026-08-20T17:41:15.662Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120138:5212438693:2026-08-20T11:31:14Z:clawsweeper_needs_human",
-      "comment_id": "5212438693",
-      "comment_version_key": "5212438693:2026-08-20T11:31:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120138#issuecomment-5212438693",
-      "comment_created_at": "2026-08-07T04:36:34Z",
-      "comment_updated_at": "2026-08-20T11:31:14Z",
-      "comment_body_sha256": "30254d9bb08d224fd1c77dd7202c358d7acd9e6c0f9b561de3dda59783a185d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120138,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The terminal transcript covers an earlier head; after the isolation repair, add a redacted current-head generation/check transcript. A...; Review finding: [P1] Restrict generated docs to bundled source plugins — src/secrets/target-registry-data.ts:528-536 - [medium] Docs check loads globally discovered plugin contrac... (sha=c6d6bbafe85c54f9581ae740df763b8e2987f6c1)",
-      "expected_head_sha": "c6d6bbafe85c54f9581ae740df763b8e2987f6c1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T11:34:09.821Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/secretref-docs-generator",
-        "head_sha": "c6d6bbafe85c54f9581ae740df763b8e2987f6c1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121932:5250541738:2026-08-20T11:23:47Z:clawsweeper_needs_human",
       "comment_id": "5250541738",
@@ -31974,6 +31941,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126738:5359541417:2026-08-20T17:40:21Z:re_review",
+      "comment_id": "5359541417",
+      "comment_version_key": "5359541417:2026-08-20T17:40:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126738#issuecomment-5359541417",
+      "comment_created_at": "2026-08-20T17:40:21Z",
+      "comment_updated_at": "2026-08-20T17:40:21Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126738,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T17:41:13.102Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-trigger-budget",
+        "head_sha": "46af1c9afd340b2e9749bb96b0fc752d982322f3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
