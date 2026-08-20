@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T07:15:36.123Z",
+  "updated_at": "2026-08-20T07:17:43.998Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120143:5213518203:2026-08-20T01:08:51Z:clawsweeper_auto_repair",
-      "comment_id": "5213518203",
-      "comment_version_key": "5213518203:2026-08-20T01:08:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120143#issuecomment-5213518203",
-      "comment_created_at": "2026-08-07T06:45:35Z",
-      "comment_updated_at": "2026-08-20T01:08:51Z",
-      "comment_body_sha256": "0dd23ee25733aa44438837a2608febc57775a69c920569d67af93c1a1ffc0b79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120143,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bc3012edd4df6fb5d53e313c412aa42701639816)",
-      "expected_head_sha": "bc3012edd4df6fb5d53e313c412aa42701639816",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T01:24:33.351Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-89254",
-        "head_sha": "bc3012edd4df6fb5d53e313c412aa42701639816",
-        "cluster_id": "automerge-openclaw-openclaw-120143",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120143.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120143.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126366:5345587421:2026-08-20T01:23:30Z:clawsweeper_auto_repair",
       "comment_id": "5345587421",
@@ -31572,6 +31525,39 @@
         "kind": "pull_request",
         "branch": "fix/onboard-daemon-install-fail-122797",
         "head_sha": "80561f446ee2ab0106469cbad156d258756829b4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126542:5352367539:2026-08-20T07:15:19Z:clawsweeper_needs_human",
+      "comment_id": "5352367539",
+      "comment_version_key": "5352367539:2026-08-20T07:15:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126542#issuecomment-5352367539",
+      "comment_created_at": "2026-08-20T06:42:05Z",
+      "comment_updated_at": "2026-08-20T07:15:19Z",
+      "comment_body_sha256": "cad56a8d6d3b0bbfbb179f74ca39969a9eb597a13f1bf12511f4e50a430c89d7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126542,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the default for all channel runs: a failed write, send, or persistence operation can now be followed by an assistant reply without a corrective terminal warning. (sha=bd65c30e202206144bf598a402a51fa65c82d3a8)",
+      "expected_head_sha": "bd65c30e202206144bf598a402a51fa65c82d3a8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T07:17:43.998Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/nostalgic-lamport-f0c84a",
+        "head_sha": "bd65c30e202206144bf598a402a51fa65c82d3a8",
         "cluster_id": null,
         "job_path": null
       }
