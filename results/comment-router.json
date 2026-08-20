@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T03:16:54.869Z",
+  "updated_at": "2026-08-20T03:18:49.353Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126402:5346626985:2026-08-19T18:52:52Z:clawsweeper_needs_human",
-      "comment_id": "5346626985",
-      "comment_version_key": "5346626985:2026-08-19T18:52:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126402#issuecomment-5346626985",
-      "comment_created_at": "2026-08-19T18:52:52Z",
-      "comment_updated_at": "2026-08-19T18:52:52Z",
-      "comment_body_sha256": "03f1db0fd9723afb400f5b27e1e2f4adc7f928b5a0cd62269a05ef73200dc499",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126402,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR includes mock-gateway regression tests and reported command results, but no inspectable after-fix run from a real Control UI or Gateway;... (sha=05c076a347cf065f3b1e34cabf6d33b2a9fb4781)",
-      "expected_head_sha": "05c076a347cf065f3b1e34cabf6d33b2a9fb4781",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T18:54:32.265Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-string-number-coercion",
-        "head_sha": "05c076a347cf065f3b1e34cabf6d33b2a9fb4781",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126262:5340686462:2026-08-19T18:51:43Z:clawsweeper_auto_repair",
       "comment_id": "5340686462",
@@ -32698,6 +32665,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126507:5350231652:2026-08-20T03:17:51Z:clawsweeper_needs_human",
+      "comment_id": "5350231652",
+      "comment_version_key": "5350231652:2026-08-20T03:17:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126507#issuecomment-5350231652",
+      "comment_created_at": "2026-08-20T01:53:45Z",
+      "comment_updated_at": "2026-08-20T03:17:51Z",
+      "comment_body_sha256": "ee6f473dc674755e40834fd61eeff9010c775017c05a669b3cfb5a2e05b5e93e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126507,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: A redacted live Gateway trace proves the earlier raw-CAS repair, but the current head has no after-fix runtime evidence for foreground... (sha=657498a5bc746a5efb3ee817ce05aca31af12260)",
+      "expected_head_sha": "657498a5bc746a5efb3ee817ce05aca31af12260",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T03:18:49.353Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "repair/session-state-recovery",
+        "head_sha": "657498a5bc746a5efb3ee817ce05aca31af12260",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
