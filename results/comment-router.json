@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T09:38:09.930Z",
+  "updated_at": "2026-08-20T09:38:25.127Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4943373258:2026-07-11T07:06:40Z:re_review",
-      "comment_id": "4943373258",
-      "comment_version_key": "4943373258:2026-07-11T07:06:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4943373258",
-      "comment_created_at": "2026-07-11T07:06:40Z",
-      "comment_updated_at": "2026-07-11T07:06:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T04:32:32.018Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4944776263:2026-07-11T10:12:46Z:re_review",
       "comment_id": "4944776263",
@@ -31092,6 +31065,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T09:38:09.930Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123078:5278347082:2026-08-20T09:37:32Z:clawsweeper_needs_human",
+      "comment_id": "5278347082",
+      "comment_version_key": "5278347082:2026-08-20T09:37:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123078#issuecomment-5278347082",
+      "comment_created_at": "2026-08-13T09:11:56Z",
+      "comment_updated_at": "2026-08-20T09:37:32Z",
+      "comment_body_sha256": "8f9da3f5c203e20cd585d4956bc885d85e62d9cd12de42ebe980ab7e23eb6c6c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123078,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify changed Sparkle updater helpers before merging** - Sparkle is linked into the app and its updater, downloader, and installer binaries are recursively signed for release; inspect...; Review finding: [medium] Verify changed Sparkle updater helpers before merging — apps/macos/Package.resolved:71 (sha=e7d8ae3e572786c4f9adba5ca8b8969b6a28268a)",
+      "expected_head_sha": "e7d8ae3e572786c4f9adba5ca8b8969b6a28268a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T09:38:25.127Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/swift/apps/macos/swift-deps-6db74f7199",
+        "head_sha": "e7d8ae3e572786c4f9adba5ca8b8969b6a28268a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
