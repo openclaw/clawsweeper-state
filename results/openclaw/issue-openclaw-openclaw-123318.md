@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-123318"
 mode: "autonomous"
-run_id: "32343564025"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32343564025"
+run_id: "32347769267"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32347769267"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T08:11:49.639Z"
+published_at: "2026-08-20T08:28:03.074Z"
 canonical: "https://github.com/openclaw/openclaw/issues/123318"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/123318"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32343564025](https://github.com/openclaw/clawsweeper/actions/runs/32343564025)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32347769267](https://github.com/openclaw/clawsweeper/actions/runs/32347769267)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/123318
 
 ## Summary
 
-#123318 remains a reproducible stable/beta git-updater bug on main 2a79f747019c2b64888e4cfce477ff5790fc5b41. A narrow credited fix PR is planned, but this checkout is read-only: fixture creation, edits, pnpm/Corepack, and the required Codex sibling inspection are unavailable.
+#123318 remains a narrow stable/beta git-updater defect on current main. The required implementation and real-Git proof are blocked by this read-only checkout and absent sibling Codex checkout; a ready-to-execute narrow fix artifact is provided.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/123318
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #86218 | keep_closed | skipped | related | Already closed; no closure or mutation is valid. |
-| #119098 | keep_closed | skipped | independent | Already closed and outside this tag-refresh repair. |
-| #123318 | fix_needed | planned | canonical | The source fix is narrow and bug-only; implementation and validation require a writable executor. |
-| cluster:issue-openclaw-openclaw-123318 | build_fix_artifact | planned | canonical | Create the narrow branch and run the fixture plus required changed gate in a writable executor. |
+| #123318 | keep_canonical | planned | canonical | Open canonical issue with no hydrated candidate PR. |
+| cluster:issue-openclaw-openclaw-123318 | fix_needed | blocked | canonical | Implementation and validation require a writable checkout with the mandated sibling Codex source available. |
+| cluster:issue-openclaw-openclaw-123318 | build_fix_artifact | planned | canonical | Narrow, writable-executor implementation plan prepared. |
 
 ## Needs Human
 
