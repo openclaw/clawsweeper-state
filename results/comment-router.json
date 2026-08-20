@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T06:09:57.263Z",
+  "updated_at": "2026-08-20T06:23:06.599Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119804:5199744802:2026-08-20T00:25:19Z:clawsweeper_needs_human",
-      "comment_id": "5199744802",
-      "comment_version_key": "5199744802:2026-08-20T00:25:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119804#issuecomment-5199744802",
-      "comment_created_at": "2026-08-06T02:35:59Z",
-      "comment_updated_at": "2026-08-20T00:25:19Z",
-      "comment_body_sha256": "e0b3570ebee5a80f459bc08a07573e601787887d6b2da837d33f1a60266d8972",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119804,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve provider-error secret redaction (P1)** - This rewrite omits current main’s configureProviderErrorRedactor(redactSecrets) wiring. Since provider errors flow into terminal diagnostics, resolving the curre...; Review finding: [P1] Preserve provider-error secret redaction — src/llm/ai-transport-host.ts:4-11 - [high] Provider errors can bypass secret redaction — src/llm/ai-transport-host.... (sha=c86e6495f7200ab073af6f8cf66ff525aced8355)",
-      "expected_head_sha": "c86e6495f7200ab073af6f8cf66ff525aced8355",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T00:27:43.940Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/code-mode-transport-accounting-contract-restack-20260805",
-        "head_sha": "c86e6495f7200ab073af6f8cf66ff525aced8355",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120009:5209969078:2026-08-20T00:08:22Z:clawsweeper_needs_human",
       "comment_id": "5209969078",
@@ -31825,6 +31792,53 @@
       "status": "skipped",
       "processed_at": "2026-08-20T06:09:57.263Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123864:5352205677:2026-08-20T06:22:43Z:re_review",
+      "comment_id": "5352205677",
+      "comment_version_key": "5352205677:2026-08-20T06:22:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123864#issuecomment-5352205677",
+      "comment_created_at": "2026-08-20T06:22:06Z",
+      "comment_updated_at": "2026-08-20T06:22:43Z",
+      "comment_body_sha256": "eea82a8de9f917e85f45fb13eebddfb6ceaa33bb47337743d80fc115e2d7ab75",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123864,
+      "author": "PollyBot13",
+      "author_id": 261872620,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T06:23:04.427Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-reset-lifecycle-cas",
+        "head_sha": "610e6f4af85c82f3a8231a4f4db8e9c61ce5b964",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
