@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T05:25:22.912Z",
+  "updated_at": "2026-08-20T05:25:37.020Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119763:5198173453:2026-08-19T23:35:28Z:clawsweeper_auto_repair",
-      "comment_id": "5198173453",
-      "comment_version_key": "5198173453:2026-08-19T23:35:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119763#issuecomment-5198173453",
-      "comment_created_at": "2026-08-05T22:35:46Z",
-      "comment_updated_at": "2026-08-19T23:35:28Z",
-      "comment_body_sha256": "a09615d6cca6eb078ade248ee4d9dc11c7444ce46d6131b69dd1b94658883f06",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119763,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=57d210832e67bcc049e3dc0417ef951c3834e8fe)",
-      "expected_head_sha": "57d210832e67bcc049e3dc0417ef951c3834e8fe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T23:37:54.329Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/slack-queued-explicit-mention-thinking",
-        "head_sha": "57d210832e67bcc049e3dc0417ef951c3834e8fe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119739:5198199853:2026-08-19T23:33:07Z:clawsweeper_auto_repair",
       "comment_id": "5198199853",
@@ -31733,6 +31700,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113802:5351740593:2026-08-20T05:24:57Z:re_review",
+      "comment_id": "5351740593",
+      "comment_version_key": "5351740593:2026-08-20T05:24:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113802#issuecomment-5351740593",
+      "comment_created_at": "2026-08-20T05:24:57Z",
+      "comment_updated_at": "2026-08-20T05:24:57Z",
+      "comment_body_sha256": "f1193ff8b1af4de898302fa908c35f3b4aed5207e235e2e7e7e7e96d2ba53198",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113802,
+      "author": "ArthurNie",
+      "author_id": 264332276,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head `99ef1078b7463a7ec0c5bd91f22f85493a4e6364` after hosted ci completes, with particular attention to the out-of-order finalizer regression",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T05:25:35.418Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/goal-token-budget-accounting-20260725",
+        "head_sha": "99ef1078b7463a7ec0c5bd91f22f85493a4e6364",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
