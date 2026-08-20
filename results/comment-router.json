@@ -1,37 +1,6 @@
 {
-  "updated_at": "2026-08-20T03:27:07.510Z",
+  "updated_at": "2026-08-20T03:28:46.308Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:60034:4337702678:2026-08-19T19:14:03Z:autoclose",
-      "comment_id": "4337702678",
-      "comment_version_key": "4337702678:2026-08-19T19:14:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/60034#issuecomment-4337702678",
-      "comment_created_at": "2026-04-28T17:33:00Z",
-      "comment_updated_at": "2026-08-19T19:14:03Z",
-      "comment_body_sha256": "b959089ae4e3a4a280a2199affe144d1d2e5ab97d787a68e9c61e8126f75775d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 60034,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T19:21:34.129Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:55836:4349598327:2026-08-19T19:15:03Z:autoclose",
       "comment_id": "4349598327",
@@ -32736,6 +32705,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126523:5350990590:2026-08-20T03:27:50Z:clawsweeper_needs_human",
+      "comment_id": "5350990590",
+      "comment_version_key": "5350990590:2026-08-20T03:27:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126523#issuecomment-5350990590",
+      "comment_created_at": "2026-08-20T03:27:50Z",
+      "comment_updated_at": "2026-08-20T03:27:50Z",
+      "comment_body_sha256": "e85c29c5a5d62bab2653068a8ef6e07b338cc7b14d8d267dc86875dac46afa3e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126523,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the timing and lifecycle authority of persisted recovery work; focused SQLite and mocked-runtime coverage does not by itself demonstrate an actual Gateway cold restart re... (sha=8787b7078b1277b8258f379064fdf232e0701d22)",
+      "expected_head_sha": "8787b7078b1277b8258f379064fdf232e0701d22",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T03:28:46.308Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "worktree-fix-gateway-startup-readiness",
+        "head_sha": "8787b7078b1277b8258f379064fdf232e0701d22",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
