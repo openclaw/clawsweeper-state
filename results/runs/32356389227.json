@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-95840",
+  "mode": "autonomous",
+  "run_id": "32356389227",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32356389227",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-95840.md",
+  "published_at": "2026-08-20T10:07:35.510Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_pr": null,
+  "summary": "Current main still excludes direct OpenAI: the core eligibility path passes only provider, model ID, and API to the plugin hook, while the OpenAI plugin supports custom OpenAI-compatible base URLs under the same provider ID. The requested direct-endpoint-only fix cannot be implemented safely until maintainers define whether eligibility includes Platform only, Platform plus ChatGPT/Codex, or all `openai` routes. No files changed.",
+  "actions": [
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Same OpenAI cache-efficiency area, but a distinct root cause and fix surface."
+    },
+    {
+      "target": "#95840",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Maintainer endpoint-scope decision and the required direct Codex-source inspection are unavailable; the read-only checkout also cannot install dependencies or create the requested branch changes."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-95840",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "The implementation contract must define the supported direct endpoint set before a narrow PR can be safely authored."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Define cache-TTL eligibility for OpenAI routes: official Platform only, official Platform plus ChatGPT/Codex, or every route using provider id `openai`.",
+    "Provide the mandatory sibling `../codex` source checkout (or a writable environment that can clone it) before implementation proceeds."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#95840",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
