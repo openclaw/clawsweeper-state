@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T15:05:52.353Z",
+  "updated_at": "2026-08-20T15:06:02.795Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118505:5185170653:2026-08-04T22:08:19Z:re_review",
-      "comment_id": "5185170653",
-      "comment_version_key": "5185170653:2026-08-04T22:08:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118505#issuecomment-5185170653",
-      "comment_created_at": "2026-08-04T22:08:19Z",
-      "comment_updated_at": "2026-08-04T22:08:19Z",
-      "comment_body_sha256": "4929f5a2967e50b0ef40b24c1e6e24174b7ead5bb7140022ef0751086619d5fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118505,
-      "author": "zhilong1115",
-      "author_id": 123119628,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T08:30:14.446Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118505:5186506567:2026-08-05T01:33:36Z:re_review",
       "comment_id": "5186506567",
@@ -31504,6 +31477,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T15:05:52.353Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124683:5308422768:2026-08-20T14:59:43Z:clawsweeper_needs_human",
+      "comment_id": "5308422768",
+      "comment_version_key": "5308422768:2026-08-20T14:59:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124683#issuecomment-5308422768",
+      "comment_created_at": "2026-08-16T16:22:18Z",
+      "comment_updated_at": "2026-08-20T14:59:43Z",
+      "comment_body_sha256": "60685209f60f510180dbc92130e01f298e7efb6cb4f14f2c36167fec2dbc4cce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124683,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body shows unit and mocked-browser checks, while its real Gateway attempt stopped before reload assertions; attach redacted after-fix real... (sha=7acfb6415a4e82aa34999522057d1da02bda3285)",
+      "expected_head_sha": "7acfb6415a4e82aa34999522057d1da02bda3285",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T15:06:02.795Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/webchat-timeout-reload-20260816",
+        "head_sha": "7acfb6415a4e82aa34999522057d1da02bda3285",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
