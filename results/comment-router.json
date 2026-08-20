@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T19:16:12.439Z",
+  "updated_at": "2026-08-20T19:16:16.295Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126566:5356621930:2026-08-20T13:34:47Z:re_review",
-      "comment_id": "5356621930",
-      "comment_version_key": "5356621930:2026-08-20T13:34:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126566#issuecomment-5356621930",
-      "comment_created_at": "2026-08-20T13:34:47Z",
-      "comment_updated_at": "2026-08-20T13:34:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126566,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T13:35:39.649Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-126311-fallback-lifecycle",
-        "head_sha": "120c81a2368f07c6cdbbf818f5e44c281c95237e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126237:5339116534:2026-08-20T13:34:19Z:clawsweeper_auto_repair",
       "comment_id": "5339116534",
@@ -31847,6 +31800,39 @@
         "kind": "pull_request",
         "branch": "fix/imessage-echo-media-id",
         "head_sha": "ba96ef50548cbd417c75cbf42877228b378d60ad",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126800:5360534202:2026-08-20T19:13:31Z:clawsweeper_needs_human",
+      "comment_id": "5360534202",
+      "comment_version_key": "5360534202:2026-08-20T19:13:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126800#issuecomment-5360534202",
+      "comment_created_at": "2026-08-20T19:13:31Z",
+      "comment_updated_at": "2026-08-20T19:13:31Z",
+      "comment_body_sha256": "059a6632585c567418a8237a82c8e909808fc85e28660c6ddff4614f5a4f3445",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126800,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A permanently unavailable or misconfigured adapter now retains its queued message and media through the configured retry budget before terminal cleanup, rather than failing immediatel... (sha=dc7fd7590d7c4cac69d687b29a5091f74ba17bbe)",
+      "expected_head_sha": "dc7fd7590d7c4cac69d687b29a5091f74ba17bbe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T19:16:16.295Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/delivery-queue-adapter-unavailable-retry",
+        "head_sha": "dc7fd7590d7c4cac69d687b29a5091f74ba17bbe",
         "cluster_id": null,
         "job_path": null
       }
