@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126468"
 mode: "autonomous"
-run_id: "32313107258"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32313107258"
+run_id: "32315500800"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32315500800"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-19T23:34:03.170Z"
+published_at: "2026-08-20T00:08:28.805Z"
 canonical: "https://github.com/openclaw/openclaw/issues/126468"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/126468"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32313107258](https://github.com/openclaw/clawsweeper/actions/runs/32313107258)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32315500800](https://github.com/openclaw/clawsweeper/actions/runs/32315500800)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/126468
 
 ## Summary
 
-Current main 16b09ad307d66b4767f83fd1ae0bb6d234804f69 still records a benign `self-chat echo` as an echo-loop hit, so five reflected rows suppress the next dispatch. A narrow two-file credited repair is ready; implementation is blocked only because this read-only checkout lacks `tsx`, so its required focused validation cannot run here.
+Implementation is blocked before reproduction: the required sibling ../codex source is absent, the checkout is read-only, and node_modules/Vitest are unavailable. Current main still contains the reported self-chat loop-accounting condition, so a narrow credited fix artifact is ready for a writable executor.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Current main 16b09ad307d66b4767f83fd1ae0bb6d234804f69 still records a benign `se
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124386 | keep_closed | skipped | superseded | Closed context only; no close, comment, merge, or branch mutation is appropriate. |
-| #126468 | fix_needed | planned | canonical | This is a source-proven default-path message-loss bug with a narrow plugin-owned repair. |
-| cluster:issue-openclaw-openclaw-126468 | build_fix_artifact | planned | canonical | A new same-repo repair PR is the viable canonical path. |
-| cluster:issue-openclaw-openclaw-126468 | open_fix_pr | blocked | canonical | Executor must install dependencies, capture the pre-fix failing regression, apply the artifact, rerun validation, then open or update clawsweeper/issue-openclaw-openclaw-126468. |
+| #122794 | keep_related | planned | related | Keep open; it has unique pending-marker compatibility work. |
+| #124386 | keep_closed | skipped | superseded | Closed historical source work only; retain attribution in the replacement PR. |
+| #126468 | fix_needed | blocked | canonical | A writable executor must complete the required Codex-source inspection, create the failing monitor regression, patch, and validate. |
+| cluster:issue-openclaw-openclaw-126468 | build_fix_artifact | planned | canonical | The defect remains in current main, but this worker cannot create or validate the branch. |
 
 ## Needs Human
 

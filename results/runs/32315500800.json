@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126468",
+  "mode": "autonomous",
+  "run_id": "32315500800",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32315500800",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126468.md",
+  "published_at": "2026-08-20T00:08:28.805Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126468",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126468",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before reproduction: the required sibling ../codex source is absent, the checkout is read-only, and node_modules/Vitest are unavailable. Current main still contains the reported self-chat loop-accounting condition, so a narrow credited fix artifact is ready for a writable executor.",
+  "actions": [
+    {
+      "target": "#122794",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open; it has unique pending-marker compatibility work."
+    },
+    {
+      "target": "#124386",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "Closed historical source work only; retain attribution in the replacement PR."
+    },
+    {
+      "target": "#126468",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "A writable executor must complete the required Codex-source inspection, create the failing monitor regression, patch, and validate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126468",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "The defect remains in current main, but this worker cannot create or validate the branch."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
