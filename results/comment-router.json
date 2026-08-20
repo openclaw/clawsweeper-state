@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T03:16:54.869Z",
+  "updated_at": "2026-08-20T03:18:45.588Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126402:5346626985:2026-08-19T18:52:52Z:clawsweeper_needs_human",
-      "comment_id": "5346626985",
-      "comment_version_key": "5346626985:2026-08-19T18:52:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126402#issuecomment-5346626985",
-      "comment_created_at": "2026-08-19T18:52:52Z",
-      "comment_updated_at": "2026-08-19T18:52:52Z",
-      "comment_body_sha256": "03f1db0fd9723afb400f5b27e1e2f4adc7f928b5a0cd62269a05ef73200dc499",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126402,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR includes mock-gateway regression tests and reported command results, but no inspectable after-fix run from a real Control UI or Gateway;... (sha=05c076a347cf065f3b1e34cabf6d33b2a9fb4781)",
-      "expected_head_sha": "05c076a347cf065f3b1e34cabf6d33b2a9fb4781",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T18:54:32.265Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-string-number-coercion",
-        "head_sha": "05c076a347cf065f3b1e34cabf6d33b2a9fb4781",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126262:5340686462:2026-08-19T18:51:43Z:clawsweeper_auto_repair",
       "comment_id": "5340686462",
@@ -32698,6 +32665,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125664:5324603599:2026-08-20T03:15:00Z:clawsweeper_needs_human",
+      "comment_id": "5324603599",
+      "comment_version_key": "5324603599:2026-08-20T03:15:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125664#issuecomment-5324603599",
+      "comment_created_at": "2026-08-18T06:45:06Z",
+      "comment_updated_at": "2026-08-20T03:15:00Z",
+      "comment_body_sha256": "856e2d98287d7c20ba0e67cb4a3cfccde5b1fba9ac2deccb0ad984ac7947318c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125664,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing direct sends that supplied nonblank unsupported file or malformed attachment values will now receive an error instead of a successful text-only delivery. (sha=cc6acc02bc8e6fb5712ae6ddd01151b9c6997a45)",
+      "expected_head_sha": "cc6acc02bc8e6fb5712ae6ddd01151b9c6997a45",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T03:18:45.588Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-send-attachment-drop-112244",
+        "head_sha": "cc6acc02bc8e6fb5712ae6ddd01151b9c6997a45",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
