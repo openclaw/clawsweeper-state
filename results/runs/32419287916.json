@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121252",
+  "mode": "autonomous",
+  "run_id": "32419287916",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32419287916",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121252.md",
+  "published_at": "2026-08-20T21:34:06.439Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/121252",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/121252",
+  "canonical_pr": null,
+  "summary": "No PR artifact: current main contains the reported Buzz thread-key normalization and its focused regression test, but the required direct ../codex inspection and test execution are blocked in this read-only checkout.",
+  "actions": [
+    {
+      "target": "#121252",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#121252",
+      "candidate_fix": null,
+      "reason": "A direct Codex-source inspection and executable focused regression proof are mandatory before certifying current-main behavior as already fixed or producing a no-op implementation result."
+    },
+    {
+      "target": "#121143",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed in hydrated live state."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide an environment with the required sibling ../codex source and installable dependencies, then rerun `node scripts/run-vitest.mjs extensions/buzz/src/channel.test.ts` before deciding that #121252 needs no implementation PR."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#121252",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
