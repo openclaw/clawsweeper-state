@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124952"
 mode: "autonomous"
-run_id: "32411773029"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32411773029"
+run_id: "32408463286"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32408463286"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T21:11:01.400Z"
+published_at: "2026-08-20T20:27:56.794Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124952"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124952"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32411773029](https://github.com/openclaw/clawsweeper/actions/runs/32411773029)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32408463286](https://github.com/openclaw/clawsweeper/actions/runs/32408463286)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/124952
 
 ## Summary
 
-Latest main has the Doctor migration gap by source inspection, but this read-only environment cannot create the required branch or run pnpm validation. The mandatory sibling Codex checkout is also absent.
+#124952 is a current, reproducible Doctor migration gap. A narrow new fix PR is warranted, but this read-only worker cannot patch or validate it locally.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Latest main has the Doctor migration gap by source inspection, but this read-onl
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124952 | fix_needed | planned | canonical | A narrow Doctor-owned repair is required. |
-| cluster:issue-openclaw-openclaw-124952 | build_fix_artifact | planned | canonical | Create a new narrow fix PR from a writable checkout after the Codex gate is satisfied. |
-| #80408 | keep_closed | skipped | related | Already closed; historical context only. |
-| #80413 | keep_closed | skipped | related | Already closed; historical context only. |
+| #124952 | fix_needed | blocked | canonical | The deterministic executor should implement this artifact on clawsweeper/issue-openclaw-openclaw-124952, prove the new regression fails on current main, then validate and open the allowed fix PR. |
+| cluster:issue-openclaw-openclaw-124952 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR; do not revive either closed contributor branch. |
 
 ## Needs Human
 
