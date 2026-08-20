@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T04:35:46.498Z",
+  "updated_at": "2026-08-20T04:37:51.051Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126422:5348700936:2026-08-19T22:21:04Z:re_review",
-      "comment_id": "5348700936",
-      "comment_version_key": "5348700936:2026-08-19T22:21:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126422#issuecomment-5348700936",
-      "comment_created_at": "2026-08-19T22:21:04Z",
-      "comment_updated_at": "2026-08-19T22:21:04Z",
-      "comment_body_sha256": "d4687aa892a2951bbb3f3dce50dafb157723157fc0d088094ab27ed3cd89755a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126422,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T22:21:50.290Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-resolved-context-projection",
-        "head_sha": "6b42f5236fa1bae3d664cfeff9aed1325b80ba38",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126354:5348716221:2026-08-19T22:23:00Z:re_review",
       "comment_id": "5348716221",
@@ -32168,6 +32121,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T04:35:46.498Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125528:5322839474:2026-08-20T04:36:42Z:clawsweeper_needs_human",
+      "comment_id": "5322839474",
+      "comment_version_key": "5322839474:2026-08-20T04:36:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125528#issuecomment-5322839474",
+      "comment_created_at": "2026-08-18T02:43:20Z",
+      "comment_updated_at": "2026-08-20T04:36:42Z",
+      "comment_body_sha256": "9de00282ff9e20f9b6ce0fb97ad0baae6c5622bd9fdca218c57535cd3e6e225e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125528,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR moves fresh turn authority onto a token held by a warm child; a regression could block MCP tool delivery or associate a call with the wrong admitted run. (sha=207868095e386892acbd1456c1600089ebb40eff)",
+      "expected_head_sha": "207868095e386892acbd1456c1600089ebb40eff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T04:37:51.051Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-thinking-catalog",
+        "head_sha": "207868095e386892acbd1456c1600089ebb40eff",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
