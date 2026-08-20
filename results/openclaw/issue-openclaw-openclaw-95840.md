@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32354395750"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32354395750"
+run_id: "32360001959"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32360001959"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T09:42:52.379Z"
+published_at: "2026-08-20T10:51:14.664Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-95840
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32354395750](https://github.com/openclaw/clawsweeper/actions/runs/32354395750)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32360001959](https://github.com/openclaw/clawsweeper/actions/runs/32360001959)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-#95840 is a source-reproducible configured-path defect, but implementation is blocked pending an endpoint-scope decision: the existing provider eligibility hook receives provider/model/API but not base URL, so it cannot distinguish official api.openai.com Responses from a custom OpenAI-compatible Responses endpoint. The checkout is also read-only, lacks dependencies, and cannot satisfy the mandatory sibling Codex-source gate.
+#95840 is source-reproducible on current main. A narrow provider-owned repair is defined, but this checkout is read-only with no dependencies and lacks required sibling ../codex source, so no branch or validated PR can be produced here.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #95840 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95840 | fix_needed | blocked | needs_human | A provider-only true predicate would include custom OpenAI-compatible Responses routes, contrary to the requested direct-OpenAI-only scope. Maintainer direction is required before widening the hook context or defining modelApi as sufficient provenance. |
-| #95610 | keep_related | planned | related | Related cache-efficiency report; it has unique remaining work and must remain open. |
-| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked | needs_human | Do not open a PR until a maintainer selects the supported direct-OpenAI provenance rule and an executor can perform the mandatory Codex inspection and writable validation. |
+| #95610 | keep_related | planned | related | Adjacent OpenAI cache behavior, not a duplicate or replacement. |
+| #95840 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only/dependency-less checkout and missing mandatory sibling Codex source; the executable repair plan is attached. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | A narrow new fix PR is appropriate once executed in a writable, dependency-ready checkout with ../codex available. |
 
 ## Needs Human
 
-- Decide whether #95840 should cover only the official <external link> Responses endpoint. If yes, approve a narrow extension of ProviderCacheTtlEligibilityContext to carry prepared baseUrl provenance; the current hook cannot enforce that boundary. If modelApi === "openai-responses" is accepted as the contract instead, explicitly accept that custom OpenAI-compatible Responses endpoints may also become eligible.
+- none
