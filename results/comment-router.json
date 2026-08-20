@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T12:34:18.715Z",
+  "updated_at": "2026-08-20T12:34:50.218Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5021224721:2026-07-20T10:26:06Z:re_review",
-      "comment_id": "5021224721",
-      "comment_version_key": "5021224721:2026-07-20T10:26:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5021224721",
-      "comment_created_at": "2026-07-20T10:26:06Z",
-      "comment_updated_at": "2026-07-20T10:26:06Z",
-      "comment_body_sha256": "4c2233d838e1ee38fe5399259a7f052205ccb870b1cccb00a5ba3f704e5df6f3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T07:33:36.519Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5039532635:2026-07-21T22:09:29Z:re_review",
       "comment_id": "5039532635",
@@ -31081,6 +31054,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T12:34:18.715Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115960:5119766013:2026-08-20T12:33:59Z:clawsweeper_needs_human",
+      "comment_id": "5119766013",
+      "comment_version_key": "5119766013:2026-08-20T12:33:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115960#issuecomment-5119766013",
+      "comment_created_at": "2026-07-29T15:12:45Z",
+      "comment_updated_at": "2026-08-20T12:33:59Z",
+      "comment_body_sha256": "32d3dae80f2ec440b67b269dd2ef20984fd866df4523dbe0c88a75566cdad0f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115960,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a workspace-containment boundary; exact-head validation must retain rejection of genuine ../ escapes and same-prefix siblings. (sha=8a5919d9e3e835f6445c4bb9b69c9f8ea0abeaec)",
+      "expected_head_sha": "8a5919d9e3e835f6445c4bb9b69c9f8ea0abeaec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T12:34:50.218Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/two-dot-child-paths",
+        "head_sha": "8a5919d9e3e835f6445c4bb9b69c9f8ea0abeaec",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
