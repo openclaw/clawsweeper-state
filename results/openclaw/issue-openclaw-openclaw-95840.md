@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32360805447"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32360805447"
+run_id: "32361201102"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32361201102"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "success"
-result_status: "needs_human"
-published_at: "2026-08-20T10:59:08.915Z"
+result_status: "blocked"
+published_at: "2026-08-20T11:06:09.577Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32360805447](https://github.com/openclaw/clawsweeper/actions/runs/32360805447)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32361201102](https://github.com/openclaw/clawsweeper/actions/runs/32361201102)
 
 Workflow conclusion: success
 
-Worker result: needs_human
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-#95840 is a real configured cache-TTL eligibility defect on main, but the requested direct-OpenAI-only boundary cannot be represented by the existing hook: it has no base-URL/auth context. Maintainer direction is required before widening eligibility to every `openai` Responses route.
+No code or GitHub mutations made. The source defect is present locally, but the existing eligibility-hook context cannot safely distinguish direct OpenAI from custom OpenAI-compatible endpoints; implementation is blocked pending that owner-boundary decision.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95610 | keep_related | planned | related | Keep open as a related OpenAI cache-efficiency report. |
-| #95840 | needs_human | blocked | needs_human | Confirm whether “direct OpenAI” means every owner-scoped `openai` + `openai-responses` route, or only the official Platform endpoint. The latter requires a broader provider-hook context and is outside this narrow repair. |
+| #95840 | fix_needed | blocked | canonical | A direct-OpenAI-only predicate cannot be proven with the existing hook because endpoint identity is unavailable. An API-only predicate risks enabling the explicitly excluded custom OpenAI-compatible routes. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked | needs_human | No executable fix PR is safe until maintainers choose whether eligibility applies to all openai-responses routes or authorize endpoint identity in the hook contract. |
+| #95610 | keep_related | planned | related | Keep open as a related OpenAI caching issue; it is not a duplicate of this provider-eligibility defect. |
 
 ## Needs Human
 
-- Decide whether cache-TTL eligibility may cover all `provider: openai` / `modelApi: openai-responses` routes, including configured custom base URLs. If official Platform-only behavior is required, approve a separate provider-hook context expansion that carries authoritative endpoint information.
+- Decide whether cache-TTL eligibility may cover every `openai` provider route using `openai-responses`, or authorize a hook-context expansion that supplies the resolved endpoint so the OpenAI plugin can safely limit eligibility to the official platform endpoint.
