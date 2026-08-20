@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T14:01:03.512Z",
+  "updated_at": "2026-08-20T14:03:01.844Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119291:5182357915:2026-08-20T07:22:47Z:clawsweeper_needs_human",
-      "comment_id": "5182357915",
-      "comment_version_key": "5182357915:2026-08-20T07:22:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119291#issuecomment-5182357915",
-      "comment_created_at": "2026-08-04T17:18:47Z",
-      "comment_updated_at": "2026-08-20T07:22:47Z",
-      "comment_body_sha256": "10687137e8c421206c1a884c75e127e487d53b3f497b1152ca71836523a4823b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119291,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bind native helper validation to the expected signer (P1)** - The staging check accepts a helper after basic codesign verification and a build ID supplied beside it, then the helper is injected into FaceTime or...; Review finding: [P1] Bind native helper validation to the expected signer — extensions/facetime/scripts/stage-helper.sh:36-40 - [high] Helper signer is not pinned — extensions/fac... (sha=33ec407a67551a2ad757bf85f69dac74a85915ab)",
-      "expected_head_sha": "33ec407a67551a2ad757bf85f69dac74a85915ab",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T07:51:34.714Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "omarshahine/facetime-experimental",
-        "head_sha": "33ec407a67551a2ad757bf85f69dac74a85915ab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119295:5183496333:2026-08-20T07:46:22Z:clawsweeper_needs_human",
       "comment_id": "5183496333",
@@ -31721,6 +31688,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125141:5356942243:2026-08-20T14:01:36Z:re_review",
+      "comment_id": "5356942243",
+      "comment_version_key": "5356942243:2026-08-20T14:01:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125141#issuecomment-5356942243",
+      "comment_created_at": "2026-08-20T14:01:36Z",
+      "comment_updated_at": "2026-08-20T14:01:36Z",
+      "comment_body_sha256": "813d8017a39e3eb2f7f7e838310d9defc64e20dec3afdc48c24c3ca68d91c256",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125141,
+      "author": "yu-xin-c",
+      "author_id": 175149126,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T14:02:58.709Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/124768-agent-exec-agent",
+        "head_sha": "c89d77683fe2846cdd315b76162ff8a36bd0d75d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
