@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32345873781"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32345873781"
+run_id: "32349986427"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32349986427"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T08:06:29.138Z"
+published_at: "2026-08-20T08:50:51.605Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32345873781](https://github.com/openclaw/clawsweeper/actions/runs/32345873781)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32349986427](https://github.com/openclaw/clawsweeper/actions/runs/32349986427)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-Source inspection on main is consistent with #95840: direct OpenAI receives no provider eligibility decision, so cache-TTL projection and marker paths do not activate. No code was changed: this checkout is read-only, pnpm cannot initialize Corepack, and mandatory ../codex source is absent for the required direct check.
+#95840 remains a narrow, source-reproducible bug on main 45ed68e6ea62abd115d91481d31803e11269bd88. Direct OpenAI has no provider-owned cache-TTL eligibility hook, so configured pruning neither installs its idle-gap projection nor records cache-TTL markers. A new credited fix PR is appropriate, but this read-only checkout cannot edit or validate it: the focused Vitest runner fails because tsx is absent, and ../codex source is unavailable for the required direct inspection gate.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Source inspection on main is consistent with #95840: direct OpenAI receives no p
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95610 | keep_related | planned | related | Keep open independently; it is adjacent OpenAI cache work, not a duplicate of #95840. |
-| #95840 | fix_needed | blocked | canonical | A writable executor with the required ../codex source must perform the direct contract check, implement, and validate the repair. |
-| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | Prepared for a writable ClawSweeper executor; no GitHub mutation was performed. |
+| #95840 | fix_needed | blocked | canonical | Implementation is blocked only by this worker environment; the canonical issue and narrow new-PR path remain clear. |
+| #95610 | keep_related | planned | related | Keep open independently; this repair neither replaces nor fixes its prompt-stability work. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | Executor should create the single task branch PR after restoring a writable checkout, dependencies, and the required Codex source inspection. |
 
 ## Needs Human
 
