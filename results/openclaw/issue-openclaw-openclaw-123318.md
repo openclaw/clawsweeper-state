@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-123318"
 mode: "autonomous"
-run_id: "32352217889"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32352217889"
+run_id: "32352756689"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32352756689"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T09:19:24.909Z"
+published_at: "2026-08-20T09:25:42.296Z"
 canonical: "https://github.com/openclaw/openclaw/issues/123318"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/123318"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32352217889](https://github.com/openclaw/clawsweeper/actions/runs/32352217889)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32352756689](https://github.com/openclaw/clawsweeper/actions/runs/32352756689)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/123318
 
 ## Summary
 
-#123318 remains the canonical open bug. The release-tag fetch owner has a narrow repair path, but this worker cannot reproduce, edit, validate, or open its fix branch: the filesystem is read-only and the required sibling ../codex source checkout is absent. No GitHub or repository mutation was performed.
+#123318 remains the canonical bug. Current main uses an unsafe stable/beta tag fetch; a narrow updater, real-Git regression, and documentation repair is planned. This worker could not create or validate the branch because the checkout is read-only, pnpm cannot initialize its Corepack cache, and the mandatory sibling ../codex checkout is absent.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/123318
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #123318 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/123318
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #123318 | fix_needed | blocked | canonical | Implementation is blocked on the required Codex source checkout and a writable execution environment for the pre-fix/post-fix real-Git regression. |
-| #86218 | keep_closed | skipped | related | Already closed historical context; no closeout action is valid. |
-| #119098 | keep_closed | skipped | independent | Already closed and independent; no closeout action is valid. |
-| cluster:issue-openclaw-openclaw-123318 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor, but this worker cannot perform the required direct Codex inspection, fixture creation, or validation. |
+| #123318 | fix_needed | blocked | canonical | A source-confirmed narrow repair is needed, but this environment cannot produce the required writable, locally validated PR branch. |
+| #86218 | keep_closed | skipped | related | Already closed; no action. |
+| #119098 | keep_closed | skipped | independent | Already closed; no action. |
+| cluster:issue-openclaw-openclaw-123318 | build_fix_artifact | planned |  | Prepared for a writable executor; implementation and validation were blocked locally. |
 
 ## Needs Human
 

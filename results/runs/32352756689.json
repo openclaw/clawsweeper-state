@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123318",
+  "mode": "autonomous",
+  "run_id": "32352756689",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32352756689",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123318.md",
+  "published_at": "2026-08-20T09:25:42.296Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/123318",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123318",
+  "canonical_pr": null,
+  "summary": "#123318 remains the canonical bug. Current main uses an unsafe stable/beta tag fetch; a narrow updater, real-Git regression, and documentation repair is planned. This worker could not create or validate the branch because the checkout is read-only, pnpm cannot initialize its Corepack cache, and the mandatory sibling ../codex checkout is absent.",
+  "actions": [
+    {
+      "target": "#123318",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#123318",
+      "candidate_fix": null,
+      "reason": "A source-confirmed narrow repair is needed, but this environment cannot produce the required writable, locally validated PR branch."
+    },
+    {
+      "target": "#86218",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#123318",
+      "candidate_fix": null,
+      "reason": "Already closed; no action."
+    },
+    {
+      "target": "#119098",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-123318",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#123318",
+      "candidate_fix": null,
+      "reason": "Prepared for a writable executor; implementation and validation were blocked locally."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
