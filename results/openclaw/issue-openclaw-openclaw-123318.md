@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-123318"
 mode: "autonomous"
-run_id: "32329613261"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32329613261"
+run_id: "32337834076"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32337834076"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-20T03:58:11.985Z"
+workflow_conclusion: "failure"
+result_status: "planned"
+published_at: "2026-08-20T06:13:06.501Z"
 canonical: "https://github.com/openclaw/openclaw/issues/123318"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/123318"
 canonical_pr: null
-actions_total: 1
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32329613261](https://github.com/openclaw/clawsweeper/actions/runs/32329613261)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32337834076](https://github.com/openclaw/clawsweeper/actions/runs/32337834076)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/123318
 
 ## Summary
 
-No implementation PR is planned. Main at 916eef4e appears to contain the requested repair, but the repository-required direct ../codex source inspection cannot be completed because that sibling checkout is absent and this worker is read-only; therefore no final implementation verdict is issued.
+#123318 is a current, narrow stable/beta git-updater bug on main 1bf3e4e9b87de2c035ab7c91a9b655cdf87fecb1. Plan a new credited fix PR with a real-Git regression; this read-only worker could not run the fixture or modify the branch.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ No implementation PR is planned. Main at 916eef4e appears to contain the request
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #123318 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,7 +66,11 @@ No implementation PR is planned. Main at 916eef4e appears to contain the request
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #123318 | keep_canonical | blocked | canonical | Blocked solely by the repository Codex-source hard gate. The current-source evidence indicates the reported update and stale-status paths are already addressed, so a speculative fix PR would be inappropriate. |
+| #123318 | fix_needed | planned | canonical | A release-tag refresh must converge local tags to upstream before resolution; current code can return fetch-failed permanently after an upstream tag is recreated. |
+| cluster:issue-openclaw-openclaw-123318 | build_fix_artifact | planned | canonical | Build the narrow fix and regression on clawsweeper/issue-openclaw-openclaw-123318. |
+| cluster:issue-openclaw-openclaw-123318 | open_fix_pr | planned | canonical | No viable candidate PR is hydrated; the job authorizes one narrow new fix PR. |
+| #86218 | keep_closed | skipped | related | Already closed; no mutation. |
+| #119098 | keep_closed | skipped | independent | Already closed; no mutation. |
 
 ## Needs Human
 

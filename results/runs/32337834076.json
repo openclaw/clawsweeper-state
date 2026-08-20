@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123318",
+  "mode": "autonomous",
+  "run_id": "32337834076",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32337834076",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123318.md",
+  "published_at": "2026-08-20T06:13:06.501Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/123318",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123318",
+  "canonical_pr": null,
+  "summary": "#123318 is a current, narrow stable/beta git-updater bug on main 1bf3e4e9b87de2c035ab7c91a9b655cdf87fecb1. Plan a new credited fix PR with a real-Git regression; this read-only worker could not run the fixture or modify the branch.",
+  "actions": [
+    {
+      "target": "#123318",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123318",
+      "candidate_fix": null,
+      "reason": "A release-tag refresh must converge local tags to upstream before resolution; current code can return fetch-failed permanently after an upstream tag is recreated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-123318",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123318",
+      "candidate_fix": null,
+      "reason": "Build the narrow fix and regression on clawsweeper/issue-openclaw-openclaw-123318."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-123318",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123318",
+      "candidate_fix": null,
+      "reason": "No viable candidate PR is hydrated; the job authorizes one narrow new fix PR."
+    },
+    {
+      "target": "#86218",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation."
+    },
+    {
+      "target": "#119098",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
