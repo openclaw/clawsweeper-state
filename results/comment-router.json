@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T02:20:01.892Z",
+  "updated_at": "2026-08-20T02:20:09.022Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125847:5329771899:2026-08-19T18:15:08Z:clawsweeper_needs_human",
-      "comment_id": "5329771899",
-      "comment_version_key": "5329771899:2026-08-19T18:15:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125847#issuecomment-5329771899",
-      "comment_created_at": "2026-08-18T14:40:21Z",
-      "comment_updated_at": "2026-08-19T18:15:08Z",
-      "comment_body_sha256": "d6e7e580fd0b921bee45e62741cf52800c9529de1996ae70bc5ccea4c4c53444",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125847,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head openclaw/ci-gate is failing and GitHub reports the branch behind main; resolve the gate and refresh validation on the resulting merge base before merge. (sha=ca982dd73de19c1c04c14266cce7ebfe96af2600)",
-      "expected_head_sha": "ca982dd73de19c1c04c14266cce7ebfe96af2600",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T18:16:27.037Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/dynamic-model-catalog-metadata",
-        "head_sha": "ca982dd73de19c1c04c14266cce7ebfe96af2600",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125844:5329552590:2026-08-19T18:17:59Z:clawsweeper_needs_human",
       "comment_id": "5329552590",
@@ -32528,6 +32495,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T02:20:01.892Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126509:5350239963:2026-08-20T02:19:19Z:clawsweeper_needs_human",
+      "comment_id": "5350239963",
+      "comment_version_key": "5350239963:2026-08-20T02:19:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126509#issuecomment-5350239963",
+      "comment_created_at": "2026-08-20T01:55:04Z",
+      "comment_updated_at": "2026-08-20T02:19:19Z",
+      "comment_body_sha256": "bd4dc6634fc414574efb7249504d6d31f3a8b10ee83d972c2f840b050e984ec9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126509,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix is production net +1; that extra model-facing wording is needed to distinguish exact empty input from still-invalid whitespace-only input, with no clearer net-neutral dele... (sha=ad8d9f86a80e810f3e961d15f96c2dba0526ef47)",
+      "expected_head_sha": "ad8d9f86a80e810f3e961d15f96c2dba0526ef47",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T02:20:09.022Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-treat-empty-workdir-as-omitted",
+        "head_sha": "ad8d9f86a80e810f3e961d15f96c2dba0526ef47",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
