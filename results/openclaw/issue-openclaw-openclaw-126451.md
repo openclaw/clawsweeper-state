@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126451"
 mode: "autonomous"
-run_id: "32317477507"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32317477507"
+run_id: "32318720851"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32318720851"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T00:37:28.426Z"
+published_at: "2026-08-20T00:57:52.073Z"
 canonical: "https://github.com/openclaw/openclaw/issues/126451"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/126451"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32317477507](https://github.com/openclaw/clawsweeper/actions/runs/32317477507)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32318720851](https://github.com/openclaw/clawsweeper/actions/runs/32318720851)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/126451
 
 ## Summary
 
-No fix was planned. Current main packages the Codex plugin with generated optional OpenClaw peer metadata, so the reported missing-declaration premise is not yet reproduced. Required direct ../codex runtime inspection and writable test execution are unavailable.
+Current main exposes a narrow Codex plugin host-peer contract candidate, but the mandatory direct ../codex source inspection cannot be completed: the sibling checkout is absent and this read-only worker cannot clone it. No code or GitHub mutation was performed.
 
 ## Impact
 
@@ -66,12 +66,12 @@ No fix was planned. Current main packages the Codex plugin with generated option
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
+| #126451 | needs_human | blocked | needs_human | Implementation is blocked pending the mandatory direct Codex-source inspection; provide a readable matching openai/codex checkout before planning a fix artifact or PR. |
+| #110490 | keep_related | planned | related | Same fail-closed recovery family, but not the missing Codex package host-peer contract. |
+| #124396 | keep_independent | planned | independent | Independent product-design proposal. |
 | #83964 | keep_closed | skipped | related | Already closed. |
 | #101881 | keep_closed | skipped | related | Already merged and closed. |
-| #110490 | keep_related | planned | related | Same fail-closed migration family, different owner and remaining work. |
-| #124396 | keep_independent | planned | independent | Maintainer product-design work is independent of this bug-only repair. |
-| #126451 | needs_human | blocked | needs_human | Cannot make a Codex-dependent verdict or code change without the required direct ../codex inspection. The available current-main source also does not reproduce the proposed missing-package-declaration premise; a writable fixture is required to establish the actual installed layout and failure path. |
 
 ## Needs Human
 
-- Provide a writable checkout with sibling ../codex available, then reproduce the packaged managed-install sidecar migration against current main before choosing a fix surface.
+- Provide a readable openai/codex checkout at ../codex (matching @openai/codex 0.147.0) or an approved OPENCLAW_CODEX_REPO path so the required direct Codex runtime inspection can be completed.
