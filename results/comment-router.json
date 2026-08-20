@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T00:57:43.727Z",
+  "updated_at": "2026-08-20T00:58:26.172Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126255:5345233792:2026-08-19T16:47:35Z:re_review",
-      "comment_id": "5345233792",
-      "comment_version_key": "5345233792:2026-08-19T16:47:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126255#issuecomment-5345233792",
-      "comment_created_at": "2026-08-19T16:47:35Z",
-      "comment_updated_at": "2026-08-19T16:47:35Z",
-      "comment_body_sha256": "7b88360f42c01d3a9c3a097f14890e13c98cb4b843698be5983a1958650a69a5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126255,
-      "author": "MagMueller",
-      "author_id": 67061560,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T16:58:22.047Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/browser-harness-default",
-        "head_sha": "c32fc26f1ede8878cfdd9fdad0e455b1076c77b5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118896:5170791529:2026-08-19T16:53:26Z:clawsweeper_auto_repair",
       "comment_id": "5170791529",
@@ -31939,6 +31892,39 @@
         "kind": "pull_request",
         "branch": "fix/stdout-broken-pipe",
         "head_sha": "ed36dfe40147525b53083065ae75cce8bf610ea7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1213:5349854796:2026-08-20T00:57:15Z:clawsweeper_needs_human",
+      "comment_id": "5349854796",
+      "comment_version_key": "5349854796:2026-08-20T00:57:15Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1213#issuecomment-5349854796",
+      "comment_created_at": "2026-08-20T00:57:15Z",
+      "comment_updated_at": "2026-08-20T00:57:15Z",
+      "comment_body_sha256": "5fcf502287a836bb021026ff42724f3aed8bee2aa1755fa2346a3c896b7692b1",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1213,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body provides deterministic tests and build validation, but not an after-fix runtime trace through the signed acknowledgement and Bay st... (sha=f26bcf4511b72aea75ca377c48f0a36e90a769e3)",
+      "expected_head_sha": "f26bcf4511b72aea75ca377c48f0a36e90a769e3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T00:58:26.172Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-133-bay-metrics",
+        "head_sha": "f26bcf4511b72aea75ca377c48f0a36e90a769e3",
         "cluster_id": null,
         "job_path": null
       }
