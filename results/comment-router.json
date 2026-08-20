@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T12:35:33.034Z",
+  "updated_at": "2026-08-20T12:36:49.044Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5044582136:2026-07-22T10:12:22Z:re_review",
-      "comment_id": "5044582136",
-      "comment_version_key": "5044582136:2026-07-22T10:12:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5044582136",
-      "comment_created_at": "2026-07-22T10:12:22Z",
-      "comment_updated_at": "2026-07-22T10:12:22Z",
-      "comment_body_sha256": "3b706266455ea1787bbec8fa27d3deb9c7fa6d67e07921393aa5b5ae1e606643",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 8 commits replayed, no conflicts). new head 42903a5217. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, late-write fence, and stalled-warn throttle are unchanged. local touched unit suites and tsgo/oxlint green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T07:33:36.519Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5052154172:2026-07-22T22:12:23Z:re_review",
       "comment_id": "5052154172",
@@ -31093,6 +31066,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120240:5355963250:2026-08-20T12:35:52Z:re_review",
+      "comment_id": "5355963250",
+      "comment_version_key": "5355963250:2026-08-20T12:35:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120240#issuecomment-5355963250",
+      "comment_created_at": "2026-08-20T12:35:52Z",
+      "comment_updated_at": "2026-08-20T12:35:52Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120240,
+      "author": "sunlit-deng",
+      "author_id": 253064511,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T12:36:45.869Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/ollama-utf8-current",
+        "head_sha": "1a04eda9177c58c39b6c15d43bc373177e45319b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
