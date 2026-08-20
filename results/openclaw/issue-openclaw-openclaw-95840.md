@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32356389227"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32356389227"
+run_id: "32354395750"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32354395750"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T10:07:35.510Z"
+published_at: "2026-08-20T09:42:52.379Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 2
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-95840
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32356389227](https://github.com/openclaw/clawsweeper/actions/runs/32356389227)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32354395750](https://github.com/openclaw/clawsweeper/actions/runs/32354395750)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-Current main still excludes direct OpenAI: the core eligibility path passes only provider, model ID, and API to the plugin hook, while the OpenAI plugin supports custom OpenAI-compatible base URLs under the same provider ID. The requested direct-endpoint-only fix cannot be implemented safely until maintainers define whether eligibility includes Platform only, Platform plus ChatGPT/Codex, or all `openai` routes. No files changed.
+#95840 is a source-reproducible configured-path defect, but implementation is blocked pending an endpoint-scope decision: the existing provider eligibility hook receives provider/model/API but not base URL, so it cannot distinguish official api.openai.com Responses from a custom OpenAI-compatible Responses endpoint. The checkout is also read-only, lacks dependencies, and cannot satisfy the mandatory sibling Codex-source gate.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Current main still excludes direct OpenAI: the core eligibility path passes only
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 2 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,10 @@ Current main still excludes direct OpenAI: the core eligibility path passes only
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95610 | keep_related | planned | related | Same OpenAI cache-efficiency area, but a distinct root cause and fix surface. |
-| #95840 | fix_needed | blocked | canonical | Maintainer endpoint-scope decision and the required direct Codex-source inspection are unavailable; the read-only checkout also cannot install dependencies or create the requested branch changes. |
-| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked | needs_human | The implementation contract must define the supported direct endpoint set before a narrow PR can be safely authored. |
+| #95840 | fix_needed | blocked | needs_human | A provider-only true predicate would include custom OpenAI-compatible Responses routes, contrary to the requested direct-OpenAI-only scope. Maintainer direction is required before widening the hook context or defining modelApi as sufficient provenance. |
+| #95610 | keep_related | planned | related | Related cache-efficiency report; it has unique remaining work and must remain open. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked | needs_human | Do not open a PR until a maintainer selects the supported direct-OpenAI provenance rule and an executor can perform the mandatory Codex inspection and writable validation. |
 
 ## Needs Human
 
-- Define cache-TTL eligibility for OpenAI routes: official Platform only, official Platform plus ChatGPT/Codex, or every route using provider id `openai`.
-- Provide the mandatory sibling `../codex` source checkout (or a writable environment that can clone it) before implementation proceeds.
+- Decide whether #95840 should cover only the official <external link> Responses endpoint. If yes, approve a narrow extension of ProviderCacheTtlEligibilityContext to carry prepared baseUrl provenance; the current hook cannot enforce that boundary. If modelApi === "openai-responses" is accepted as the contract instead, explicitly accept that custom OpenAI-compatible Responses endpoints may also become eligible.
