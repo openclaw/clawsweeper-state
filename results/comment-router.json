@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T04:11:35.021Z",
+  "updated_at": "2026-08-20T04:12:13.911Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5122347661:2026-07-29T19:07:36Z:re_review",
-      "comment_id": "5122347661",
-      "comment_version_key": "5122347661:2026-07-29T19:07:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5122347661",
-      "comment_created_at": "2026-07-29T19:07:36Z",
-      "comment_updated_at": "2026-07-29T19:07:36Z",
-      "comment_body_sha256": "ad0c52d6f78c0daa2725b3675a166f53944a44a98c1b441dd005349d23490039",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest main (clean, 8 commits); head is now f011010935. tests green (context-engine-maintenance 26, transcript-rewrite 5, command-queue, diagnostic), tsgo clean on touched files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T20:32:24.266Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5123874426:2026-07-29T22:09:43Z:re_review",
       "comment_id": "5123874426",
@@ -32594,6 +32567,65 @@
           "status": "executed",
           "label": null,
           "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125143:5351253923:2026-08-20T04:11:27Z:maintainer_approve_automerge",
+      "comment_id": "5351253923",
+      "comment_version_key": "5351253923:2026-08-20T04:11:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125143#issuecomment-5351253923",
+      "comment_created_at": "2026-08-20T04:11:27Z",
+      "comment_updated_at": "2026-08-20T04:11:27Z",
+      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125143,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "structured ClawSweeper verdict: pass; PR has merge conflicts and needs a cloud rebase repair before automerge",
+      "expected_head_sha": "aa3d0bc1ffae0c4a0e9f9c9304226f02b224ff4a",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-20T04:12:13.911Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/infer-image-generate-is-unusable-in-a-multi-agen",
+        "head_sha": "aa3d0bc1ffae0c4a0e9f9c9304226f02b224ff4a",
+        "cluster_id": "automerge-openclaw-openclaw-125143",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125143.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "pending",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "repair_needed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125143.md"
         }
       ]
     }
