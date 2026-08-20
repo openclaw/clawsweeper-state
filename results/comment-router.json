@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T00:03:34.044Z",
+  "updated_at": "2026-08-20T00:05:07.974Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78436:4387443771:2026-08-19T15:05:14Z:clawsweeper_auto_repair",
-      "comment_id": "4387443771",
-      "comment_version_key": "4387443771:2026-08-19T15:05:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/78436#issuecomment-4387443771",
-      "comment_created_at": "2026-05-06T11:19:56Z",
-      "comment_updated_at": "2026-08-19T15:05:14Z",
-      "comment_body_sha256": "64b8402f5a74219cbf135fabead91befa0c6edfb4496493558da64038ab29edf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 78436,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ab6383974f962ca53482936e1552b3d89c2834c8)",
-      "expected_head_sha": "ab6383974f962ca53482936e1552b3d89c2834c8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T15:07:40.953Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/attempt-execution-session-guard-69086",
-        "head_sha": "ab6383974f962ca53482936e1552b3d89c2834c8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126027:5334483725:2026-08-19T15:02:50Z:clawsweeper_needs_human",
       "comment_id": "5334483725",
@@ -31816,6 +31783,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123209:5285601775:2026-08-20T00:04:10Z:clawsweeper_needs_human",
+      "comment_id": "5285601775",
+      "comment_version_key": "5285601775:2026-08-20T00:04:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123209#issuecomment-5285601775",
+      "comment_created_at": "2026-08-13T19:46:05Z",
+      "comment_updated_at": "2026-08-20T00:04:10Z",
+      "comment_body_sha256": "e8ab5540d73c4d43440798d6b2c505c63d542582f5c2a39249597c00a5125be2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123209,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Use the canonical startup activation decision (P1)** - This approximation says a material entry is active and excludes non-candidate claimants, but startup disables a workspace plugin unless it is allowlisted or...; Review finding: [P1] Use the canonical startup activation decision — src/config/channel-ownership-policy.ts:118-127 - [P1] Merge alias-colliding entries with startup semantics — s... (sha=54aad20b92ff5260ae1a3ca1e7e37b51615c090a)",
+      "expected_head_sha": "54aad20b92ff5260ae1a3ca1e7e37b51615c090a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T00:05:07.974Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/92884-narrow-schema-ownership",
+        "head_sha": "54aad20b92ff5260ae1a3ca1e7e37b51615c090a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
