@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T02:23:46.504Z",
+  "updated_at": "2026-08-20T02:26:02.488Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125362:5318600898:2026-08-19T18:30:20Z:clawsweeper_needs_human",
-      "comment_id": "5318600898",
-      "comment_version_key": "5318600898:2026-08-19T18:30:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125362#issuecomment-5318600898",
-      "comment_created_at": "2026-08-17T18:25:03Z",
-      "comment_updated_at": "2026-08-19T18:30:20Z",
-      "comment_body_sha256": "81962fc553620933e3aa650d5a5334d44be0a6e46f08256dbdde42b4d3405222",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125362,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The fix relies on matrix-js-sdk’s private connectionReturnedResolvers field; a future SDK upgrade will fail closed rather than silently adapt, but can still leave affected Matrix shut... (sha=8bf8f5d3e7294261fc962997df87b1c6efe58ba5)",
-      "expected_head_sha": "8bf8f5d3e7294261fc962997df87b1c6efe58ba5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T18:31:29.691Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-matrix-sync-poison-recovery",
-        "head_sha": "8bf8f5d3e7294261fc962997df87b1c6efe58ba5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125362:5318849237:2026-08-17T18:51:35Z:re_review",
       "comment_id": "5318849237",
@@ -32498,6 +32465,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T02:23:46.504Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126424:5348833872:2026-08-20T02:24:43Z:clawsweeper_auto_repair",
+      "comment_id": "5348833872",
+      "comment_version_key": "5348833872:2026-08-20T02:24:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126424#issuecomment-5348833872",
+      "comment_created_at": "2026-08-19T22:37:49Z",
+      "comment_updated_at": "2026-08-20T02:24:43Z",
+      "comment_body_sha256": "e63ebfc37d08599020e011a3137c35467f033fc8be5e711684d729cabe038e90",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126424,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6ed00008d69afd623f72f50e2fa6af6944a004dd)",
+      "expected_head_sha": "6ed00008d69afd623f72f50e2fa6af6944a004dd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T02:26:02.488Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/conversation-route-ownership",
+        "head_sha": "6ed00008d69afd623f72f50e2fa6af6944a004dd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
