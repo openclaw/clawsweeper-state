@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T01:31:56.364Z",
+  "updated_at": "2026-08-20T01:32:13.522Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5172283501:2026-08-03T22:09:48Z:re_review",
-      "comment_id": "5172283501",
-      "comment_version_key": "5172283501:2026-08-03T22:09:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5172283501",
-      "comment_created_at": "2026-08-03T22:09:48Z",
-      "comment_updated_at": "2026-08-03T22:09:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T17:02:49.438Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5174427026:2026-08-04T03:56:58Z:re_review",
       "comment_id": "5174427026",
@@ -32512,6 +32485,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126482:5349430741:2026-08-20T01:31:18Z:clawsweeper_needs_human",
+      "comment_id": "5349430741",
+      "comment_version_key": "5349430741:2026-08-20T01:31:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126482#issuecomment-5349430741",
+      "comment_created_at": "2026-08-19T23:54:50Z",
+      "comment_updated_at": "2026-08-20T01:31:18Z",
+      "comment_body_sha256": "3d26d7bc2005ba25638e0cd925f68f05726e73c1816dad9740f9fb5f59ab26cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126482,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Revalidate authority between authorized handlers (P1)** - runModifyingHook awaits every selected handler before control returns to the two surrounding assertions. If the first handler closes or outlives the turn...; Review finding: [P1] Revalidate authority between authorized handlers — src/plugins/hooks.ts:993-1005 - [high] Shared authority survives between sequential handlers — src/plugins/... (sha=b468d49f53f0a8dbc47e598109225f4b2305177e)",
+      "expected_head_sha": "b468d49f53f0a8dbc47e598109225f4b2305177e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T01:32:13.522Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/memory-recall-authority",
+        "head_sha": "b468d49f53f0a8dbc47e598109225f4b2305177e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
