@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T04:40:49.278Z",
+  "updated_at": "2026-08-20T04:40:54.170Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126329:5348714958:2026-08-19T22:22:51Z:re_review",
-      "comment_id": "5348714958",
-      "comment_version_key": "5348714958:2026-08-19T22:22:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126329#issuecomment-5348714958",
-      "comment_created_at": "2026-08-19T22:22:51Z",
-      "comment_updated_at": "2026-08-19T22:22:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126329,
-      "author": "mmaps",
-      "author_id": 3399869,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T22:26:27.120Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-961",
-        "head_sha": "8aca0ea9a377107b1ceb520c9aedcbbd1daae5fd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:49804:4339105220:2026-08-19T22:23:18Z:autoclose",
       "comment_id": "4339105220",
@@ -32123,6 +32076,39 @@
         "kind": "pull_request",
         "branch": "fix/3349-publish-version-projection",
         "head_sha": "8c312d8b5df88a60e384368656c0276da93269de",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125450:5321504360:2026-08-20T04:39:26Z:clawsweeper_needs_human",
+      "comment_id": "5321504360",
+      "comment_version_key": "5321504360:2026-08-20T04:39:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125450#issuecomment-5321504360",
+      "comment_created_at": "2026-08-17T23:37:12Z",
+      "comment_updated_at": "2026-08-20T04:39:26Z",
+      "comment_body_sha256": "d95aea316909eed15995cfe296a16cbb4931efdc16ba026ccf6548a2d8ef3113",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125450,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair is identified; the branch is behind main and requires rebase plus exact-head validation before merge. (sha=0aafe5a755f4a2a7e8889b94a14384e27b3849b1)",
+      "expected_head_sha": "0aafe5a755f4a2a7e8889b94a14384e27b3849b1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T04:40:54.170Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-metadata-sticky-unavailable",
+        "head_sha": "0aafe5a755f4a2a7e8889b94a14384e27b3849b1",
         "cluster_id": null,
         "job_path": null
       }
