@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32371033941"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32371033941"
+run_id: "32375206609"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32375206609"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T13:17:35.328Z"
+published_at: "2026-08-20T14:05:21.978Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32371033941](https://github.com/openclaw/clawsweeper/actions/runs/32371033941)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32375206609](https://github.com/openclaw/clawsweeper/actions/runs/32375206609)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-Current main f887844e reproduces the direct-OpenAI eligibility omission: the core predicate queries provider hooks, then falls back to non-OpenAI families. The OpenAI provider has no cache-TTL hook. Implementation is blocked because this read-only checkout cannot create required ../codex for the mandatory direct-source audit or install missing dependencies/run validation.
+#95840 remains the canonical open bug. Current main has the plugin eligibility seam, but direct OpenAI remains false in the current test and therefore cannot install pruning or write its marker. A narrow owner-plugin fix plan is prepared; implementation is blocked because the required sibling ../codex source is unavailable and this read-only checkout lacks tsx for validation.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Current main f887844e reproduces the direct-OpenAI eligibility omission: the cor
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95840 | fix_needed | blocked | canonical | Needs an editable executor checkout with dependencies and sibling ../codex source before the required direct-Codex audit, regression run, implementation, and review can occur. |
-| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | The artifact supplies the exact owner-boundary change and focused regression coverage. |
-| #95610 | keep_related | planned | related | Related OpenAI cache efficiency work with a distinct root cause; leave open independently. |
-| #95859 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
-| #96383 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
-| #102440 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
+| #95840 | fix_needed | blocked | canonical | Implementation must wait for an executor with the required ../codex checkout and install-capable validation environment. |
+| #95610 | keep_related | planned | related | Related OpenAI cache-efficiency work has a distinct root cause and remains open. |
+| #95859 | keep_closed | skipped | superseded | Already closed; no mutation is permitted or needed. |
+| #96383 | keep_closed | skipped | superseded | Already closed; no mutation is permitted or needed. |
+| #102440 | keep_closed | skipped | superseded | Already closed; no mutation is permitted or needed. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | Prepare a new narrow PR; do not reuse closed contributor branches. |
 
 ## Needs Human
 
