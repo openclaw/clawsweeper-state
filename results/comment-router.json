@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T15:38:58.951Z",
+  "updated_at": "2026-08-20T15:39:45.089Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126424:5348833872:2026-08-20T09:38:03Z:clawsweeper_needs_human",
-      "comment_id": "5348833872",
-      "comment_version_key": "5348833872:2026-08-20T09:38:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126424#issuecomment-5348833872",
-      "comment_created_at": "2026-08-19T22:37:49Z",
-      "comment_updated_at": "2026-08-20T09:38:03Z",
-      "comment_body_sha256": "bab3d6172b525686c9957582989bbfd8a83d15d1b620210d1eeac10baf9e960f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126424,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Fail closed for legacy parent-bound Discord threads (P1)** - Legacy thread rows supply parentConversationRef and threadId but no routeContext.parentPeerId; this call passes only routeContext, so Discord resolves...; Review finding: [P1] Fail closed for legacy parent-bound Discord threads — src/gateway/conversation-route-ownership.ts:58 - [medium] Legacy thread can cross the agent binding boun... (sha=5d18f1680ae2db50d970fb7445c9b4572456e467)",
-      "expected_head_sha": "5d18f1680ae2db50d970fb7445c9b4572456e467",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T09:42:16.252Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/conversation-route-ownership",
-        "head_sha": "5d18f1680ae2db50d970fb7445c9b4572456e467",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126564:5352543114:2026-08-20T09:39:35Z:clawsweeper_auto_repair",
       "comment_id": "5352543114",
@@ -31641,6 +31608,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:564:5358097831:2026-08-20T15:38:57Z:clawsweeper_needs_human",
+      "comment_id": "5358097831",
+      "comment_version_key": "5358097831:2026-08-20T15:38:57Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/564#issuecomment-5358097831",
+      "comment_created_at": "2026-08-20T15:31:09Z",
+      "comment_updated_at": "2026-08-20T15:38:57Z",
+      "comment_body_sha256": "17fc068a10fba767baa62785ab4467abe7cf49352503926d4b7b17b9c7d8992e",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 564,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bind restoration digest to the foreground plan (P1)** - This prior P1 remains unresolved: foregroundPostconditionSHA256 is only checked as hex, while the plan derives expectedValueSHA256 from the run nonce. Comp...; Review finding: [P1] Bind restoration digest to the foreground plan — Core/PeekabooCore/Sources/PeekabooBridge/PeekabooBridgeCertificationMonitorSealPayload.swift:1488-1493 - [P2]... (sha=b4f22ecf4e788134678a3ce48cffb49c70a053ad)",
+      "expected_head_sha": "b4f22ecf4e788134678a3ce48cffb49c70a053ad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T15:39:45.089Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/certification-producer-attestation",
+        "head_sha": "b4f22ecf4e788134678a3ce48cffb49c70a053ad",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
