@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T18:52:18.847Z",
+  "updated_at": "2026-08-20T18:52:22.170Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124015:5300602703:2026-08-19T01:40:55Z:clawsweeper_needs_human",
-      "comment_id": "5300602703",
-      "comment_version_key": "5300602703:2026-08-19T01:40:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5300602703",
-      "comment_created_at": "2026-08-15T04:50:09Z",
-      "comment_updated_at": "2026-08-19T01:40:55Z",
-      "comment_body_sha256": "d27aff9efa195e9ff264efaa383560af801bc01acc41121e9f9e35ae69a12283",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124015,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes the public plugin-SDK behavior of ensurePortAvailable while the separately installed Signal plugin retains its existing API floor; maintainers need to decide the suppor... (sha=a421824063ccad4ba61ba33976cd39d38426862a)",
-      "expected_head_sha": "a421824063ccad4ba61ba33976cd39d38426862a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T12:17:59.434Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/signal-port-collision",
-        "head_sha": "a421824063ccad4ba61ba33976cd39d38426862a",
-        "cluster_id": "automerge-openclaw-openclaw-124015",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124015.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124308:5304795640:2026-08-20T12:15:48Z:clawsweeper_needs_human",
       "comment_id": "5304795640",
@@ -32392,6 +32359,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T18:52:18.847Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126786:5360282821:2026-08-20T18:49:36Z:clawsweeper_needs_human",
+      "comment_id": "5360282821",
+      "comment_version_key": "5360282821:2026-08-20T18:49:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126786#issuecomment-5360282821",
+      "comment_created_at": "2026-08-20T18:49:36Z",
+      "comment_updated_at": "2026-08-20T18:49:36Z",
+      "comment_body_sha256": "b4bbc669689256012eff1044475a8be14c028d2f9337ea20721e52e6dd88f73f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126786,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Redact unassigned Bearer credentials (P1)** - A line such as Authorization: Bearer ~abc+secret/== bypasses the new keyed-assignment matcher, and the remaining Bearer matcher rejects the leading ~; status --all s...; Review finding: [P1] Redact unassigned Bearer credentials — src/commands/status-all/format.ts:529-532 - [high] Direct Bearer payload remains visible — src/commands/status-all/form... (sha=f89a3b52779367183b428e6442118853b14d5827)",
+      "expected_head_sha": "f89a3b52779367183b428e6442118853b14d5827",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T18:52:22.170Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa25-degraded-status",
+        "head_sha": "f89a3b52779367183b428e6442118853b14d5827",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
