@@ -1,0 +1,107 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124952",
+  "mode": "autonomous",
+  "run_id": "32341160056",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32341160056",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124952.md",
+  "published_at": "2026-08-20T06:59:09.001Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124952",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124952",
+  "canonical_pr": null,
+  "summary": "#124952 is the open canonical bug. Current main’s Doctor runtime-ref normalizer migrates `model` and `models`, but not `modelPolicy.allow`; the allowlist therefore retains legacy runtime-qualified refs while model selection enforces canonical keys. A narrow repair plan is prepared, but implementation is blocked in this read-only worker because the mandatory sibling `../codex` source checkout is absent and cannot be cloned/inspected here.",
+  "actions": [
+    {
+      "target": "#124952",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "The repair is narrowly defined but cannot be implemented by this worker until the repository-required direct Codex source gate is satisfied."
+    },
+    {
+      "target": "#80408",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no mutation is permitted or needed."
+    },
+    {
+      "target": "#80413",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no mutation is permitted or needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124952",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "Prepared a narrow new-PR plan; executor must first satisfy the direct Codex source gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#124952",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
