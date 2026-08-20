@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T14:51:46.591Z",
+  "updated_at": "2026-08-20T14:52:35.344Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126585:5353162053:2026-08-20T08:06:44Z:clawsweeper_needs_human",
-      "comment_id": "5353162053",
-      "comment_version_key": "5353162053:2026-08-20T08:06:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126585#issuecomment-5353162053",
-      "comment_created_at": "2026-08-20T08:06:44Z",
-      "comment_updated_at": "2026-08-20T08:06:44Z",
-      "comment_body_sha256": "7564c7fee123eba1e9e286fecaa41181644371122347a0704c9a4dbc31c41ff4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126585,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch adds a shared Gateway/UI protocol fact; an incorrect Codex execution-mode assertion could hide a valid cloud destination even though dispatch remains fail-closed. (sha=d87255abe6e2804ee8c1a1167e87536af50f62f1)",
-      "expected_head_sha": "d87255abe6e2804ee8c1a1167e87536af50f62f1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T08:12:16.799Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cloud-placement-mode-gate",
-        "head_sha": "d87255abe6e2804ee8c1a1167e87536af50f62f1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125164:5353218103:2026-08-20T08:12:24Z:re_review",
       "comment_id": "5353218103",
@@ -31751,6 +31718,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126614:5353888522:2026-08-20T14:51:38Z:clawsweeper_needs_human",
+      "comment_id": "5353888522",
+      "comment_version_key": "5353888522:2026-08-20T14:51:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126614#issuecomment-5353888522",
+      "comment_created_at": "2026-08-20T09:15:42Z",
+      "comment_updated_at": "2026-08-20T14:51:38Z",
+      "comment_body_sha256": "eb03f4b3f4c53308204833823997199bade14d1dba12644f271c8cddf4aa9507",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126614,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The remaining exact-head checks were still running in the supplied context, so this should not merge until they finish green. (sha=56f3f346870c61457d109c6ff9828e2439b3dd75)",
+      "expected_head_sha": "56f3f346870c61457d109c6ff9828e2439b3dd75",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T14:52:35.344Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/control-ui-locale-refresh",
+        "head_sha": "56f3f346870c61457d109c6ff9828e2439b3dd75",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
