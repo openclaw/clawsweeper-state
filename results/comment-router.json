@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T07:33:36.519Z",
+  "updated_at": "2026-08-20T07:33:52.529Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113548:5143544571:2026-07-31T13:44:33Z:re_review",
-      "comment_id": "5143544571",
-      "comment_version_key": "5143544571:2026-07-31T13:44:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113548#issuecomment-5143544571",
-      "comment_created_at": "2026-07-31T13:44:33Z",
-      "comment_updated_at": "2026-07-31T13:44:33Z",
-      "comment_body_sha256": "3d49756fc6bf3a1d80faec3894995c033befef6c57ae9af47dfe075d9d745f6e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113548,
-      "author": "litang9",
-      "author_id": 141409885,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T02:12:31.473Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125979:5333539664:2026-08-20T02:14:00Z:clawsweeper_needs_human",
       "comment_id": "5333539664",
@@ -30895,6 +30868,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T07:33:36.519Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126125:5336755786:2026-08-20T07:32:18Z:clawsweeper_needs_human",
+      "comment_id": "5336755786",
+      "comment_version_key": "5336755786:2026-08-20T07:32:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126125#issuecomment-5336755786",
+      "comment_created_at": "2026-08-19T02:26:04Z",
+      "comment_updated_at": "2026-08-20T07:32:18Z",
+      "comment_body_sha256": "bc9e307042f0ef26248b481d4e6f650d045edbd6563385db71deff7919d267ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126125,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body provides focused tests, including a mocked chat.postMessage assertion, but no real Slack run or mock-gateway harness verdict showin... (sha=eef4112b3581d334c578c55d782d84250e610305)",
+      "expected_head_sha": "eef4112b3581d334c578c55d782d84250e610305",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T07:33:52.529Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-legacy-interactive-text-truncation-126018",
+        "head_sha": "eef4112b3581d334c578c55d782d84250e610305",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
