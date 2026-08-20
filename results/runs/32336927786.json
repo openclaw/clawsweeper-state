@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-95840",
+  "mode": "autonomous",
+  "run_id": "32336927786",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32336927786",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-95840.md",
+  "published_at": "2026-08-20T06:07:29.781Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_pr": null,
+  "summary": "#95840 remains a narrow provider-owned defect on main. The OpenAI plugin lacks the existing cache-TTL eligibility hook, so core skips both pruning projection and marker append. No branch or tests could run: the required sibling ../codex checkout is absent, and the read-only environment prevents both cloning it and Corepack's cache creation.",
+  "actions": [
+    {
+      "target": "#95840",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker's read-only environment and missing mandatory Codex sibling source; a narrow fix artifact is ready for a writable executor."
+    },
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Both concern OpenAI cache efficiency but retain independent fixes and validation paths."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-95840",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "A writable executor can create the requested narrow PR from clawsweeper/issue-openclaw-openclaw-95840."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

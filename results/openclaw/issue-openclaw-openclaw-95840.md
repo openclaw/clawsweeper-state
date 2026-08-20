@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32336519158"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32336519158"
+run_id: "32336927786"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32336927786"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T05:54:45.403Z"
+published_at: "2026-08-20T06:07:29.781Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32336519158](https://github.com/openclaw/clawsweeper/actions/runs/32336519158)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32336927786](https://github.com/openclaw/clawsweeper/actions/runs/32336927786)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-Current main deterministically excludes direct OpenAI from cache-TTL eligibility, suppressing both pruning setup and the successful-attempt marker. A narrow provider-owned repair is ready, but this worker could not edit or run Vitest: the checkout is read-only, dependencies are absent, and Corepack cannot create its cache. The mandatory sibling Codex-source inspection is also unavailable because ../codex is absent and cannot be cloned in this environment.
+#95840 remains a narrow provider-owned defect on main. The OpenAI plugin lacks the existing cache-TTL eligibility hook, so core skips both pruning projection and marker append. No branch or tests could run: the required sibling ../codex checkout is absent, and the read-only environment prevents both cloning it and Corepack's cache creation.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main deterministically excludes direct OpenAI from cache-TTL eligibility
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95840 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only worker environment and unavailable mandatory ../codex source; the narrow fix artifact is ready for an executor with a writable checkout. |
-| #95610 | keep_related | planned | related | Both concern OpenAI cache efficiency, but they retain separate fixes and validation paths. |
-| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-95840 after reproducing and validating in a writable checkout. |
+| #95840 | fix_needed | blocked | canonical | Implementation is blocked only by this worker's read-only environment and missing mandatory Codex sibling source; a narrow fix artifact is ready for a writable executor. |
+| #95610 | keep_related | planned | related | Both concern OpenAI cache efficiency but retain independent fixes and validation paths. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | A writable executor can create the requested narrow PR from clawsweeper/issue-openclaw-openclaw-95840. |
 
 ## Needs Human
 
