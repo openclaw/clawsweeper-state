@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 20, 2026, 00:42 UTC
+Last source update: Aug 20, 2026, 01:10 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Aug 20, 2026, 00:42 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Aug 20, 2026, 00:42 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32315465006) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Aug 20, 2026, 00:36 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32317920235) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Aug 20, 2026, 01:10 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32317605899) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 20, 2026, 01:00 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32319352232) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 19, 2026, 22:54 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/32310915295) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 20, 2026, 00:43 UTC
+Last source update: Aug 20, 2026, 00:57 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 542 | 100% |
-| Run attempts archived | 1602 | audit |
+| Run attempts archived | 1603 | audit |
 | Latest successful clusters | 457 | 84.3% |
 | Latest failed clusters | 83 | 15.3% |
 | Latest cancelled clusters | 2 | 0.4% |
@@ -116,7 +116,7 @@ State: Failed clusters need inspection
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 542 clusters: 208 maintainer action, 116 automation snapshot, 191 intervention needed, 27 no pending action, 0 completed.
-- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#126451](https://github.com/openclaw/openclaw/issues/126451) is maintainer_input: Provide a writable checkout with sibling ../codex available, then reproduce the packaged managed-install sidecar migration against curren....
+- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#126451](https://github.com/openclaw/openclaw/issues/126451) is maintainer_input: Provide a readable openai/codex checkout at ../codex (matching @openai/codex 0.147.0) or an approved OPENCLAW_CODEX_REPO path so the requ....
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#119718](https://github.com/openclaw/openclaw/pull/119718) is automation_blocked: Repair the same-repo canonical branch; do not merge or close it in this autofix job..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#119367](https://github.com/openclaw/openclaw/pull/119367) is action_planned: Rebase and repair the adopted branch before any merge evaluation..
 - Completed latest: no completed action in the latest records.
@@ -147,7 +147,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#126451](https://github.com/openclaw/openclaw/issues/126451) | maintainer_input | Provide a writable checkout with sibling ../codex available, then reproduce the packaged managed-install sidecar migration against current main bef... | Aug 20, 2026, 00:37 UTC | [issue-openclaw-openclaw-126451](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126451.md) | [32317477507](https://github.com/openclaw/clawsweeper/actions/runs/32317477507) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#126451](https://github.com/openclaw/openclaw/issues/126451) | maintainer_input | Provide a readable openai/codex checkout at ../codex (matching @openai/codex 0.147.0) or an approved OPENCLAW_CODEX_REPO path so the required direc... | Aug 20, 2026, 00:57 UTC | [issue-openclaw-openclaw-126451](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126451.md) | [32318720851](https://github.com/openclaw/clawsweeper/actions/runs/32318720851) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | maintainer_input | Provide a writable checkout with dependencies and sibling ../codex so ClawSweeper can apply and validate the prepared narrow fix. | Aug 19, 2026, 23:45 UTC | [issue-openclaw-openclaw-126469](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126469.md) | [32313709250](https://github.com/openclaw/clawsweeper/actions/runs/32313709250) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#126436](https://github.com/openclaw/openclaw/issues/126436) | maintainer_input | Provision a writable OpenClaw checkout with dependencies and the required sibling ../codex source (or an environment where it can be cloned), then... | Aug 19, 2026, 20:30 UTC | [issue-openclaw-openclaw-126436](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126436.md) | [32298054054](https://github.com/openclaw/clawsweeper/actions/runs/32298054054) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#126231](https://github.com/openclaw/openclaw/issues/126231) | maintainer_input | Provide a writable checkout with pnpm dependencies and the required direct ../codex source checkout (or explicitly waive that repository-local Code... | Aug 19, 2026, 15:51 UTC | [issue-openclaw-openclaw-126231](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126231.md) | [32270034979](https://github.com/openclaw/clawsweeper/actions/runs/32270034979) |
@@ -233,7 +233,7 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
-| issue-openclaw-openclaw-126451 | needs human | Provide a writable checkout with sibling ../codex available, then reproduce the packaged managed-install sidecar migration against current main bef... | [issue-openclaw-openclaw-126451](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126451.md) | [32317477507](https://github.com/openclaw/clawsweeper/actions/runs/32317477507) |
+| issue-openclaw-openclaw-126451 | needs human | Provide a readable openai/codex checkout at ../codex (matching @openai/codex 0.147.0) or an approved OPENCLAW_CODEX_REPO path so the required direc... | [issue-openclaw-openclaw-126451](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126451.md) | [32318720851](https://github.com/openclaw/clawsweeper/actions/runs/32318720851) |
 | issue-openclaw-openclaw-126469 | needs human | Provide a writable checkout with dependencies and sibling ../codex so ClawSweeper can apply and validate the prepared narrow fix. | [issue-openclaw-openclaw-126469](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126469.md) | [32313709250](https://github.com/openclaw/clawsweeper/actions/runs/32313709250) |
 | issue-openclaw-openclaw-126436 | needs human | Provision a writable OpenClaw checkout with dependencies and the required sibling ../codex source (or an environment where it can be cloned), then... | [issue-openclaw-openclaw-126436](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126436.md) | [32298054054](https://github.com/openclaw/clawsweeper/actions/runs/32298054054) |
 | issue-openclaw-openclaw-126231 | needs human | Provide a writable checkout with pnpm dependencies and the required direct ../codex source checkout (or explicitly waive that repository-local Code... | [issue-openclaw-openclaw-126231](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-126231.md) | [32270034979](https://github.com/openclaw/clawsweeper/actions/runs/32270034979) |
