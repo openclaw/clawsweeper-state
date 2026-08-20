@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126879",
+  "mode": "autonomous",
+  "run_id": "32429114227",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32429114227",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126879.md",
+  "published_at": "2026-08-20T23:44:03.908Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126879",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126879",
+  "canonical_pr": null,
+  "summary": "#126879 is a current-main classifier defect: archived trajectory/checkpoint stems pass the reset/deleted archive branch and parse as transcript session IDs. A narrow new fix PR is appropriate, but this worker has a read-only checkout and pnpm cannot initialize Corepack (EROFS), so no branch or validation could be completed here.",
+  "actions": [
+    {
+      "target": "#126879",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126879",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only execution environment and unavailable pnpm/Corepack cache. The next writable executor should implement the attached narrow PR artifact."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126879",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#126879",
+      "candidate_fix": null,
+      "reason": "Create one credited, narrow fix PR from clawsweeper/issue-openclaw-openclaw-126879 after a writable executor completes the required local proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
