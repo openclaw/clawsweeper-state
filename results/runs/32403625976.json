@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126451",
+  "mode": "autonomous",
+  "run_id": "32403625976",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32403625976",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126451.md",
+  "published_at": "2026-08-20T18:55:36.556Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126451",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126451",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a code verdict: the mandated sibling Codex checkout is absent, and this worker has a read-only checkout with no dependencies; Corepack cannot create its cache for pnpm validation. A narrow owner-boundary repair artifact is ready for a writable runner.",
+  "actions": [
+    {
+      "target": "#126451",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126451",
+      "candidate_fix": null,
+      "reason": "Requires a writable runner with ../codex available for reproduction, implementation, package proof, and validation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126451",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126451",
+      "candidate_fix": null,
+      "reason": "Artifact is ready; implementation is blocked only in this read-only worker."
+    },
+    {
+      "target": "#110490",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#126451",
+      "candidate_fix": null,
+      "reason": "Keep open as related follow-up."
+    },
+    {
+      "target": "#124396",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Outside this narrow bug-fix scope."
+    },
+    {
+      "target": "#83964",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context only."
+    },
+    {
+      "target": "#101881",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context only."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_independent": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
