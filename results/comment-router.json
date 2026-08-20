@@ -1,6 +1,72 @@
 {
-  "updated_at": "2026-08-20T16:58:52.102Z",
+  "updated_at": "2026-08-20T16:58:31.175Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112329:5127941553:2026-08-20T10:24:24Z:clawsweeper_auto_repair",
+      "comment_id": "5127941553",
+      "comment_version_key": "5127941553:2026-08-20T10:24:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112329#issuecomment-5127941553",
+      "comment_created_at": "2026-07-30T07:30:06Z",
+      "comment_updated_at": "2026-08-20T10:24:24Z",
+      "comment_body_sha256": "b78918c6532978cf4cbd6767dc9ff2ba32f16c285c4c067e13ca086074a3c4e8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112329,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8eae32bc62c3308b497824a2c2b36993cbb386b1)",
+      "expected_head_sha": "8eae32bc62c3308b497824a2c2b36993cbb386b1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T10:31:41.026Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "kit/fix-matrix-doctor-archive-scan",
+        "head_sha": "8eae32bc62c3308b497824a2c2b36993cbb386b1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-20T10:24:32Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-20T10:24:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-20T10:24:32Z",
+      "comment_body_sha256": "67af7caadab9243c120041055a33115beefde1935baf16497971ca41467b0c68",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner tuple (P1)** - The action ref moves to v3.97.0, but the version input still locks v3.95.9 and its digest. Verify the v3.97 release digest and update the full tuple.; Review finding: [P1] Synchronize the TruffleHog scanner tuple — .github/workflows/ci.yml:1066-1070 - [P1] Refresh the Android attestation assertion — .github/workflows/android-rel... (sha=dbe44ec394ac2f3b23884c05e62562dc1dfe855e)",
+      "expected_head_sha": "dbe44ec394ac2f3b23884c05e62562dc1dfe855e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T10:31:41.026Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "dbe44ec394ac2f3b23884c05e62562dc1dfe855e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126220:5338423851:2026-08-20T10:21:41Z:clawsweeper_needs_human",
       "comment_id": "5338423851",
@@ -32065,86 +32131,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126737:5358882451:2026-08-20T16:56:09Z:clawsweeper_needs_human",
-      "comment_id": "5358882451",
-      "comment_version_key": "5358882451:2026-08-20T16:56:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126737#issuecomment-5358882451",
-      "comment_created_at": "2026-08-20T16:38:50Z",
-      "comment_updated_at": "2026-08-20T16:56:09Z",
-      "comment_body_sha256": "0216e54045e7289fcf2f05a201c4739f7824a6bde337a95399030600ce9c1fed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126737,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Strict callers that previously received an error-bearing cached registry will now receive the intended load error; required exact-head CI should complete before merge. (sha=79a8a40b49a556d0ddade11cd5d21bfc06ebfe34)",
-      "expected_head_sha": "79a8a40b49a556d0ddade11cd5d21bfc06ebfe34",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T16:58:34.572Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-plugin-strict-cache-20260820",
-        "head_sha": "79a8a40b49a556d0ddade11cd5d21bfc06ebfe34",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123288:5359080604:2026-08-20T16:57:49Z:re_review",
-      "comment_id": "5359080604",
-      "comment_version_key": "5359080604:2026-08-20T16:57:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123288#issuecomment-5359080604",
-      "comment_created_at": "2026-08-20T16:57:49Z",
-      "comment_updated_at": "2026-08-20T16:57:49Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123288,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T16:58:49.502Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/why-are-we-able-to-have-a-loading-spinner-and-an-activity-dot-at",
-        "head_sha": "4fdda52c0d68ec7d09ca8dfa2e9d1d3e549149b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
