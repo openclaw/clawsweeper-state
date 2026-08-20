@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32342363081"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32342363081"
+run_id: "32342713073"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32342713073"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T07:14:20.311Z"
+published_at: "2026-08-20T07:19:08.243Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32342363081](https://github.com/openclaw/clawsweeper/actions/runs/32342363081)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32342713073](https://github.com/openclaw/clawsweeper/actions/runs/32342713073)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-Confirmed on main 689ab6ec: direct OpenAI has no provider cache-TTL hook, so core falls through to false and skips both pruning setup and the post-attempt marker. The narrow provider-owned repair is planned, but this workspace is read-only and lacks the mandatory sibling ../codex source checkout; focused tests also cannot initialize Corepack on the read-only filesystem.
+Confirmed a narrow provider-owned bug on current main, but this worker cannot write the repair or run pnpm: the checkout is read-only, Corepack cannot create its cache, and the mandatory sibling ../codex source is absent. A complete new-PR repair artifact is ready.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed on main 689ab6ec: direct OpenAI has no provider cache-TTL hook, so cor
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95840 | fix_needed | planned | canonical | A small provider-owned hook fixes the established cache-TTL behavior without changing OpenRouter or core fallback policy. |
-| #95610 | keep_related | planned | related | Related OpenAI cache-efficiency report with a different root cause and fix surface. |
-| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | blocked |  | Artifact is ready for a writable executor with the required Codex checkout; no code or GitHub mutations were made. |
+| #95610 | keep_related | planned | related | Keep open independently; no closure or fix routing is appropriate for this cluster. |
+| #95840 | fix_needed | blocked | canonical | Implementation is blocked only by the immutable execution environment and missing mandatory Codex sibling source; the hydrated issue remains a confirmed canonical bug. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | Prepared for a writable executor to implement and validate as one narrow PR. |
 
 ## Needs Human
 
