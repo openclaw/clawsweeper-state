@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-119718",
+  "mode": "autonomous",
+  "run_id": "32317928278",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32317928278",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119718.md",
+  "published_at": "2026-08-20T00:43:27.464Z",
+  "canonical": "#119718",
+  "canonical_issue": "#89430",
+  "canonical_pr": "#119718",
+  "summary": "#119718 remains the canonical repair path for #89430. A narrow owner-boundary repair artifact is ready, but this worker cannot make a Codex verdict: the required sibling ../codex checkout is absent and the read-only sandbox prevents cloning it. No GitHub mutation occurred.",
+  "actions": [
+    {
+      "target": "#119718",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119718",
+      "candidate_fix": null,
+      "reason": "Repair the same-repo canonical branch; do not merge or close it in this autofix job."
+    },
+    {
+      "target": "#119718",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119718",
+      "candidate_fix": null,
+      "reason": "Artifact below directs the deterministic repair executor to update the existing writable same-repo branch."
+    },
+    {
+      "target": "#89430",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119718",
+      "candidate_fix": "#119718",
+      "reason": "Keep the source issue open until the repaired PR is validated and landed."
+    },
+    {
+      "target": "#92518",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#119718",
+      "candidate_fix": null,
+      "reason": "Historical source PR only; preserve its contributor credit."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
