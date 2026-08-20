@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-95840",
+  "mode": "autonomous",
+  "run_id": "32335173588",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32335173588",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-95840.md",
+  "published_at": "2026-08-20T05:33:34.666Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_pr": null,
+  "summary": "Current main 6a637469 confirms the direct-OpenAI cache-TTL omission: the generic resolver falls back when the OpenAI plugin supplies no eligibility hook, so pruning setup and successful-attempt markers are skipped. A narrow provider-owned fix PR is appropriate, but this read-only checkout cannot install dependencies, run tests, create the branch, or inspect required sibling ../codex source (absent).",
+  "actions": [
+    {
+      "target": "#95840",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Source-level reproduction is clear and the repair remains provider-owned, but implementation and validation are blocked in this read-only, dependency-less checkout."
+    },
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related OpenAI cache-efficiency work with a distinct mechanism; leave it open independently."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-95840",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Executor should create the one narrow credited implementation PR after restoring a writable checkout with dependencies and completing the Codex-source preflight."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
