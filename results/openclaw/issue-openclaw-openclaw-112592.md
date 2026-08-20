@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-112592"
 mode: "autonomous"
-run_id: "32328955807"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32328955807"
+run_id: "32328962727"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32328962727"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T03:48:43.098Z"
-canonical: "https://github.com/openclaw/openclaw/issues/112592"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/112592"
+published_at: "2026-08-20T03:53:26.187Z"
+canonical: "#112592"
+canonical_issue: "#112592"
 canonical_pr: null
-actions_total: 9
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-112592
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32328955807](https://github.com/openclaw/clawsweeper/actions/runs/32328955807)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32328962727](https://github.com/openclaw/clawsweeper/actions/runs/32328962727)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/112592
+Canonical: #112592
 
 ## Summary
 
-The narrow provenance repair is planned, but implementation is blocked in this worker: the filesystem is read-only, dependencies are absent, and the required sibling ../codex source is unavailable for the repository’s mandatory Codex gate. No GitHub or repository mutations were made.
+Repair is blocked before code changes: the mandatory sibling Codex source checkout is absent, and this read-only worker cannot clone it or update the repair branch.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 9 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,16 +66,8 @@ The narrow provenance repair is planned, but implementation is blocked in this w
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #47745 | keep_closed | skipped | related | Already closed; retained only as related historical context. |
-| #54441 | keep_closed | skipped | related | Already closed; related but not a target. |
-| #55931 | keep_closed | skipped | related | Already closed; historical provenance context only. |
-| #64917 | keep_independent | planned | independent | Open, separate internal-versus-visible delivery-contract work. |
-| #93255 | keep_closed | skipped | related | Already closed; no action in this cluster. |
-| #107546 | keep_closed | skipped | related | Already closed; related historical context. |
-| #111358 | keep_independent | planned | independent | Open, separate delivery-contract issue requiring its own maintainer path. |
-| #112592 | fix_needed | blocked | canonical | A writable normal checkout with dependencies and the required ../codex sibling source is required before editing, running the pre-fix regression, or opening the repair PR. |
-| cluster:issue-openclaw-openclaw-112592 | build_fix_artifact | planned | canonical | Prepared a bounded new-fix-PR plan; no executable branch update is possible in this read-only worker. |
+| #112592 | needs_human | blocked | needs_human | Provision a readable sibling ../codex checkout and a writable repair worker, then resume the focused provenance-only patch. |
 
 ## Needs Human
 
-- none
+- Provide a readable sibling ../codex checkout (or rerun in a writable worker that has it) so the required direct Codex protocol/runtime inspection can be completed before implementing #112592.

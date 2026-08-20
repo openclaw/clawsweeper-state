@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112592",
+  "mode": "autonomous",
+  "run_id": "32328962727",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32328962727",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112592.md",
+  "published_at": "2026-08-20T03:53:26.187Z",
+  "canonical": "#112592",
+  "canonical_issue": "#112592",
+  "canonical_pr": null,
+  "summary": "Repair is blocked before code changes: the mandatory sibling Codex source checkout is absent, and this read-only worker cannot clone it or update the repair branch.",
+  "actions": [
+    {
+      "target": "#112592",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#112592",
+      "candidate_fix": null,
+      "reason": "Provision a readable sibling ../codex checkout and a writable repair worker, then resume the focused provenance-only patch."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a readable sibling ../codex checkout (or rerun in a writable worker that has it) so the required direct Codex protocol/runtime inspection can be completed before implementing #112592."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
