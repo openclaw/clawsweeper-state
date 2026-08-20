@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124952",
+  "mode": "autonomous",
+  "run_id": "32406042926",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32406042926",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124952.md",
+  "published_at": "2026-08-20T19:26:53.866Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124952",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124952",
+  "canonical_pr": null,
+  "summary": "Current main reproduces #124952: Doctor leaves legacy claude-cli model-map and explicit allowlist refs when the primary is already canonical, so canonical Claude overrides are rejected. A narrow fix path is defined, but this read-only worker cannot edit, install dependencies, create the required ../codex checkout, validate, or open the PR.",
+  "actions": [
+    {
+      "target": "#124952",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "Real Doctor-owned migration defect on current main; no viable open PR exists."
+    },
+    {
+      "target": "#80408",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no closeout action is valid."
+    },
+    {
+      "target": "#80413",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no closeout action is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124952",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-124952."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124952",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "The deterministic executor needs a writable checkout with dependencies and the mandated ../codex source checkout before it can create or update the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
