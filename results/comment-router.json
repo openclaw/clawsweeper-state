@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T23:47:37.021Z",
+  "updated_at": "2026-08-20T23:48:28.378Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126731:5358685441:2026-08-20T16:20:21Z:clawsweeper_needs_human",
-      "comment_id": "5358685441",
-      "comment_version_key": "5358685441:2026-08-20T16:20:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126731#issuecomment-5358685441",
-      "comment_created_at": "2026-08-20T16:20:21Z",
-      "comment_updated_at": "2026-08-20T16:20:21Z",
-      "comment_body_sha256": "78a54ec832b35fb53de279956457bd8f5cf5062708585aa654668c6e1396dcec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126731,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Scope the legacy allowlist to frozen candidates (P1)** - This membership check marks these paths reviewed for every candidate. Since the full-release workflow injects this trusted test into the target checkout w...; Review finding: [P1] Scope the legacy allowlist to frozen candidates — src/plugins/npm-install-security-scan.release.test.ts:196-197 - [high] Global allowlist can hide future exec... (sha=526030af1401153d58e596266b9b5ebe52d5bf85)",
-      "expected_head_sha": "526030af1401153d58e596266b9b5ebe52d5bf85",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T16:39:05.292Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-prerelease-security-scan",
-        "head_sha": "526030af1401153d58e596266b9b5ebe52d5bf85",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126725:5358701517:2026-08-20T16:33:48Z:clawsweeper_auto_repair",
       "comment_id": "5358701517",
@@ -31406,6 +31373,53 @@
       "status": "skipped",
       "processed_at": "2026-08-20T23:47:37.021Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125424:5363428683:2026-08-20T23:47:47Z:re_review",
+      "comment_id": "5363428683",
+      "comment_version_key": "5363428683:2026-08-20T23:47:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125424#issuecomment-5363428683",
+      "comment_created_at": "2026-08-20T23:47:47Z",
+      "comment_updated_at": "2026-08-20T23:47:47Z",
+      "comment_body_sha256": "b6c8c9485fbe54ab065f4ad08338253c8c46a8302eb5289cac6adfa3dc28f46c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125424,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T23:48:26.795Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-125409",
+        "head_sha": "092fc9617599a2365798ee661ace78e872b947a0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
