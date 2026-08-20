@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T20:43:01.983Z",
+  "updated_at": "2026-08-20T20:45:33.412Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123447:5289028068:2026-08-20T14:47:48Z:clawsweeper_needs_human",
-      "comment_id": "5289028068",
-      "comment_version_key": "5289028068:2026-08-20T14:47:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123447#issuecomment-5289028068",
-      "comment_created_at": "2026-08-14T03:23:09Z",
-      "comment_updated_at": "2026-08-20T14:47:48Z",
-      "comment_body_sha256": "4fda38cd934c1755258ebb2882d5b629c85f6208bb5dce19752964db4c52b26d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123447,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This forward-only writer repair does not rewrite existing configurations that already contain the retired key; those configurations remain a separate doctor/repair concern. (sha=79a2628b3e7d2aad3fcb4f681e45b5a86c767395)",
-      "expected_head_sha": "79a2628b3e7d2aad3fcb4f681e45b5a86c767395",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T14:50:38.842Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fal-onboard-media-models-key",
-        "head_sha": "79a2628b3e7d2aad3fcb4f681e45b5a86c767395",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121186:5233275219:2026-08-20T14:49:49Z:clawsweeper_needs_human",
       "comment_id": "5233275219",
@@ -31758,6 +31725,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T20:43:01.983Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120327:5221623822:2026-08-20T20:41:05Z:clawsweeper_auto_repair",
+      "comment_id": "5221623822",
+      "comment_version_key": "5221623822:2026-08-20T20:41:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120327#issuecomment-5221623822",
+      "comment_created_at": "2026-08-07T20:18:53Z",
+      "comment_updated_at": "2026-08-20T20:41:05Z",
+      "comment_body_sha256": "db03ff834755f418446f6cd994085c05b4d18250bfa5082c63805b1f766d4129",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120327,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=dc833e72f5cfd9353cd3f5ce6584de96a0852a09)",
+      "expected_head_sha": "dc833e72f5cfd9353cd3f5ce6584de96a0852a09",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T20:45:33.412Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-run-terminal-untracked-runid",
+        "head_sha": "dc833e72f5cfd9353cd3f5ce6584de96a0852a09",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
