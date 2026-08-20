@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Doctor migration for legacy runtime-encoded model references. Starting from a canonical `anthropic/*` primary with legacy `claude-cli/*` entries in `agents.defaults.models` and `agents.defaults.modelPolicy.allow`, migrate both map keys and allowlist entries to canonical Anthropic refs, retain `agentRuntime.id: "claude-cli"` on the canonical map entry, remove obsolete legacy keys, and preserve deterministic canonical collision precedence. Cover the equivalent per-agent path and idempotence. Do not add a runtime alias/fallback for retired config, add config options, or alter unrelated provider routing. Update the agent-runtime documentation only if its legacy-support wording would otherwise contradict the repaired Doctor boundary. Before opening a PR, establish the failing regression on pre-fix source; include user-visible release-note context in the PR body rather than editing CHANGELOG.md.
+Repair the legacy runtime-reference migration for the canonical config contract described in https://github.com/openclaw/openclaw/issues/124952. In Doctor-owned normalization, migrate legacy CLI-provider model-map keys and explicit `agents.defaults.modelPolicy.allow` entries together to canonical provider refs, preserving the CLI backend through `agentRuntime.id` on the canonical model entry and merging collisions without retaining duplicate legacy runtime keys. Add a regression that begins with canonical primary plus legacy-only model map/allowlist and proves Doctor produces a selectable canonical Claude model. Update the agent-runtimes guide to describe legacy refs as Doctor migration input rather than steady-state runtime configuration. Do not add runtime aliases, config flags, fallback readers, or CHANGELOG edits; stop for maintainer review if the repair requires a new compatibility policy.
 
 Likely files:
 
 - src/commands/doctor/shared/legacy-config-core-normalizers.ts
-- src/commands/doctor-legacy-config.migrations.test.ts
+- src/commands/doctor/shared/legacy-config-migrate.test.ts
+- src/agents/model-selection.test.ts
 - docs/concepts/agent-runtimes.md
 
 Validation:
 
-- pnpm test src/commands/doctor-legacy-config.migrations.test.ts
-- pnpm test src/agents/model-visibility-policy.test.ts
-- pnpm check:changed -- src/commands/doctor/shared/legacy-config-core-normalizers.ts src/commands/doctor-legacy-config.migrations.test.ts docs/concepts/agent-runtimes.md
+- pnpm vitest run src/commands/doctor/shared/legacy-config-migrate.test.ts
+- pnpm vitest run src/agents/model-selection.test.ts src/agents/model-selection-resolve.test.ts src/agents/model-runtime-aliases.test.ts
+- pnpm docs:check
 
 ## Operator Prompt
 
