@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T02:01:09.123Z",
+  "updated_at": "2026-08-20T02:05:21.926Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120736:5229031651:2026-08-19T17:31:43Z:clawsweeper_needs_human",
-      "comment_id": "5229031651",
-      "comment_version_key": "5229031651:2026-08-19T17:31:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120736#issuecomment-5229031651",
-      "comment_created_at": "2026-08-09T00:42:16Z",
-      "comment_updated_at": "2026-08-19T17:31:43Z",
-      "comment_body_sha256": "544f9b1b0b34bd1515880d0feb5feaf09d824776c074fe9640e5588baac7f081",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120736,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main and exact-head checks are queued; rebase and rerun the schema, CLI, and generated-artifact gates before merge. (sha=a943f229f5ca71137a284381bbe137ae25479d25)",
-      "expected_head_sha": "a943f229f5ca71137a284381bbe137ae25479d25",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T17:32:58.077Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/config-schema-channel-core-keys",
-        "head_sha": "a943f229f5ca71137a284381bbe137ae25479d25",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/discrawl:183:5345624950:2026-08-19T17:43:53Z:clawsweeper_auto_repair",
       "comment_id": "5345624950",
@@ -32640,6 +32607,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125143:5350305639:2026-08-20T02:04:36Z:re_review",
+      "comment_id": "5350305639",
+      "comment_version_key": "5350305639:2026-08-20T02:04:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125143#issuecomment-5350305639",
+      "comment_created_at": "2026-08-20T02:04:36Z",
+      "comment_updated_at": "2026-08-20T02:04:36Z",
+      "comment_body_sha256": "a1f4c0758ec1c028a4b4691f54ad0dec07dce239a9dfccc658ccdd3fc70bd9cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125143,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T02:05:19.817Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/infer-image-generate-is-unusable-in-a-multi-agen",
+        "head_sha": "aa3d0bc1ffae0c4a0e9f9c9304226f02b224ff4a",
+        "cluster_id": "automerge-openclaw-openclaw-125143",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125143.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
