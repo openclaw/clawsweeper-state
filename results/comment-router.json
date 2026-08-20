@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-20T08:57:53.227Z",
+  "updated_at": "2026-08-20T08:57:53.311Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125143:5351253923:2026-08-20T04:11:27Z:maintainer_approve_automerge",
-      "comment_id": "5351253923",
-      "comment_version_key": "5351253923:2026-08-20T04:11:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125143#issuecomment-5351253923",
-      "comment_created_at": "2026-08-20T04:11:27Z",
-      "comment_updated_at": "2026-08-20T04:11:27Z",
-      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125143,
-      "author": "omarshahine",
-      "author_id": 10343873,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "structured ClawSweeper verdict: pass; PR has merge conflicts and needs a cloud rebase repair before automerge",
-      "expected_head_sha": "aa3d0bc1ffae0c4a0e9f9c9304226f02b224ff4a",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T04:13:59.648Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "omarshahine/infer-image-generate-is-unusable-in-a-multi-agen",
-        "head_sha": "aa3d0bc1ffae0c4a0e9f9c9304226f02b224ff4a",
-        "cluster_id": "automerge-openclaw-openclaw-125143",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125143.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "merge",
-          "status": "repair_needed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125143.md"
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:3083:5349507852:2026-08-20T00:05:59Z:re_review",
       "comment_id": "5349507852",
@@ -31029,6 +30970,39 @@
         "kind": "pull_request",
         "branch": "fix/context-engine-terminal-outbox",
         "head_sha": "483e5566d814d094906432ab1360536b4dff944d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126604:5353679197:2026-08-20T08:57:06Z:clawsweeper_auto_repair",
+      "comment_id": "5353679197",
+      "comment_version_key": "5353679197:2026-08-20T08:57:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126604#issuecomment-5353679197",
+      "comment_created_at": "2026-08-20T08:57:06Z",
+      "comment_updated_at": "2026-08-20T08:57:06Z",
+      "comment_body_sha256": "e9d7dd2f36879a47810dd2282583752d3c2443b7df0177888b3f8c145a5f6187",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126604,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f7cc46dd0f62bcbd98475f16d7881f41200ec0bc)",
+      "expected_head_sha": "f7cc46dd0f62bcbd98475f16d7881f41200ec0bc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T08:57:53.311Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/anthropic-session-catalog-json-cap",
+        "head_sha": "f7cc46dd0f62bcbd98475f16d7881f41200ec0bc",
         "cluster_id": null,
         "job_path": null
       }
