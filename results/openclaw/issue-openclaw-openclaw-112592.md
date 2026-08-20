@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-112592"
 mode: "autonomous"
-run_id: "32327307253"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32327307253"
+run_id: "32327646754"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32327646754"
 head_sha: "e869bde55a75e87d8158e8cb59c0f2de2d59f37b"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T03:20:40.801Z"
+published_at: "2026-08-20T03:26:14.219Z"
 canonical: "https://github.com/openclaw/openclaw/issues/112592"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/112592"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32327307253](https://github.com/openclaw/clawsweeper/actions/runs/32327307253)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32327646754](https://github.com/openclaw/clawsweeper/actions/runs/32327646754)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/112592
 
 ## Summary
 
-Current main reproduces the narrow provenance defect: internal completion paths store `webchat` as `sourceChannel` because they reuse the routing sentinel. Implementation is blocked because the checkout is read-only and the required sibling `../codex` source checkout is absent.
+Current local main (441f0a33) still conflates the webchat routing sentinel with internal completion provenance. A narrow fix plan is prepared, but this read-only checkout cannot create/validate the branch; the required sibling ../codex source is also absent, so the repository Codex hard gate cannot be completed. The preflight main SHA is unavailable in this shallow checkout and must be rehydrated before applying the plan.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main reproduces the narrow provenance defect: internal completion paths 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #112592 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,15 +66,15 @@ Current main reproduces the narrow provenance defect: internal completion paths 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #47745 | keep_closed | skipped | related | Already closed; retained as related historical evidence only. |
-| #54441 | keep_closed | skipped | related | Already closed; outside this repair boundary. |
-| #55931 | keep_closed | skipped | related | Already closed; not reopened or mutated by this lane. |
-| #64917 | keep_related | planned | related | Distinct routing and delivery-contract work; this repair must not broaden into it. |
-| #93255 | keep_closed | skipped | independent | Already closed and independent from provenance labeling. |
-| #107546 | keep_closed | skipped | related | Already closed historical provenance context. |
-| #111358 | keep_related | planned | related | Distinct from replacing internal completion provenance only. |
-| #112592 | fix_needed | blocked | canonical | The fix shape is narrow and source-reproducible, but this worker cannot edit or validate in the read-only checkout and cannot satisfy the mandatory Codex inspection gate. |
-| cluster:issue-openclaw-openclaw-112592 | build_fix_artifact | blocked |  | Implementation prerequisites are unavailable in this worker environment. |
+| #47745 | keep_closed | skipped | related | Already closed context reference; no close action is valid. |
+| #54441 | keep_closed | skipped | related | Already closed context reference; no close action is valid. |
+| #55931 | keep_closed | skipped | related | Already closed context reference; no close action is valid. |
+| #64917 | keep_related | planned | related | Different root cause and product scope; retain independently. |
+| #93255 | keep_closed | skipped | independent | Already closed independent context reference. |
+| #107546 | keep_closed | skipped | related | Already closed context reference; no close action is valid. |
+| #111358 | keep_related | planned | related | Different delivery-contract question; retain independently. |
+| #112592 | fix_needed | planned | canonical | Reproducible source-level bug with a narrow producer-boundary repair. |
+| cluster:issue-openclaw-openclaw-112592 | build_fix_artifact | blocked | canonical | Implementation is blocked only by checkout capability and the mandatory Codex-source gate; the repair design is ready for a writable executor. |
 
 ## Needs Human
 
