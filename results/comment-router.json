@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T11:07:53.759Z",
+  "updated_at": "2026-08-20T11:09:06.639Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126548:5351880712:2026-08-20T05:45:44Z:clawsweeper_needs_human",
-      "comment_id": "5351880712",
-      "comment_version_key": "5351880712:2026-08-20T05:45:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126548#issuecomment-5351880712",
-      "comment_created_at": "2026-08-20T05:45:44Z",
-      "comment_updated_at": "2026-08-20T05:45:44Z",
-      "comment_body_sha256": "ccfb5c0ab1c0c64f30208eb72f8371b8857af49f18f82eb340423725cb818d91",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126548,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports mocked-Gateway tests, but no sanitized live Control UI capture, recording, or runtime transcript demonstrates the after-fix reco...; Review finding: [P1] Keep the original client bound to offline Stop — ui/src/pages/chat/chat-pane-session-controls.ts:183-187 - [medium] Replacement client can inherit a stale abo... (sha=feb3b56a16413ccf3d8032c534baa9fb04ab3bf4)",
-      "expected_head_sha": "feb3b56a16413ccf3d8032c534baa9fb04ab3bf4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T05:53:52.766Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-ui-offline-stop",
-        "head_sha": "feb3b56a16413ccf3d8032c534baa9fb04ab3bf4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:87247:4553279352:2026-08-20T05:54:18Z:clawsweeper_auto_repair",
       "comment_id": "4553279352",
@@ -31334,6 +31301,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126402:5355046739:2026-08-20T11:08:15Z:re_review",
+      "comment_id": "5355046739",
+      "comment_version_key": "5355046739:2026-08-20T11:08:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126402#issuecomment-5355046739",
+      "comment_created_at": "2026-08-20T11:08:15Z",
+      "comment_updated_at": "2026-08-20T11:08:15Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126402,
+      "author": "solavrc",
+      "author_id": 145330217,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T11:09:04.660Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-string-number-coercion",
+        "head_sha": "71099a7e1b6d066d97b1bd266da8047b94e0c163",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
