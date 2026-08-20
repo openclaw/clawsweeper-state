@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126451"
 mode: "autonomous"
-run_id: "32308425640"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32308425640"
+run_id: "32317477507"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32317477507"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-19T22:29:33.750Z"
+published_at: "2026-08-20T00:37:28.426Z"
 canonical: "https://github.com/openclaw/openclaw/issues/126451"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/126451"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-126451
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32308425640](https://github.com/openclaw/clawsweeper/actions/runs/32308425640)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32317477507](https://github.com/openclaw/clawsweeper/actions/runs/32317477507)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/126451
 
 ## Summary
 
-Blocked before implementation: current main’s npm packaging path generates the Codex plugin’s optional openclaw peer and the managed-NPM linker repairs declared host peers, so the reported missing-declaration premise is not source-reproducible. Required packaged-install/Docker validation cannot run because node_modules (including tsx) is absent in this read-only checkout; the mandatory sibling ../codex source is also unavailable for the Codex hard gate. No code or PR is planned.
+No fix was planned. Current main packages the Codex plugin with generated optional OpenClaw peer metadata, so the reported missing-declaration premise is not yet reproduced. Required direct ../codex runtime inspection and writable test execution are unavailable.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Blocked before implementation: current main’s npm packaging path generates the
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,12 +66,12 @@ Blocked before implementation: current main’s npm packaging path generates the
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #83964 | keep_closed | skipped | related | Closed historical report; no closure action is valid. |
-| #101881 | keep_closed | skipped | related | Closed merged context PR; no mutation is valid. |
-| #110490 | keep_related | planned | related | Same fail-closed startup symptom family, but materially different remediation surface. |
-| #124396 | keep_independent | planned | independent | Broad product-design work is independent of this narrow bug-only lane. |
-| #126451 | keep_canonical | blocked | canonical | A source-level reproduction does not support adding the proposed peer declaration: the publish path already supplies it. A writable, dependency-complete checkout with ../codex is required to determine whether a released package or installer path bypasses that contract. |
+| #83964 | keep_closed | skipped | related | Already closed. |
+| #101881 | keep_closed | skipped | related | Already merged and closed. |
+| #110490 | keep_related | planned | related | Same fail-closed migration family, different owner and remaining work. |
+| #124396 | keep_independent | planned | independent | Maintainer product-design work is independent of this bug-only repair. |
+| #126451 | needs_human | blocked | needs_human | Cannot make a Codex-dependent verdict or code change without the required direct ../codex inspection. The available current-main source also does not reproduce the proposed missing-package-declaration premise; a writable fixture is required to establish the actual installed layout and failure path. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout with sibling ../codex available, then reproduce the packaged managed-install sidecar migration against current main before choosing a fix surface.

@@ -1,0 +1,103 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126451",
+  "mode": "autonomous",
+  "run_id": "32317477507",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32317477507",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126451.md",
+  "published_at": "2026-08-20T00:37:28.426Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126451",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126451",
+  "canonical_pr": null,
+  "summary": "No fix was planned. Current main packages the Codex plugin with generated optional OpenClaw peer metadata, so the reported missing-declaration premise is not yet reproduced. Required direct ../codex runtime inspection and writable test execution are unavailable.",
+  "actions": [
+    {
+      "target": "#83964",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126451",
+      "candidate_fix": null,
+      "reason": "Already closed."
+    },
+    {
+      "target": "#101881",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#126451",
+      "candidate_fix": null,
+      "reason": "Already merged and closed."
+    },
+    {
+      "target": "#110490",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#126451",
+      "candidate_fix": null,
+      "reason": "Same fail-closed migration family, different owner and remaining work."
+    },
+    {
+      "target": "#124396",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Maintainer product-design work is independent of this bug-only repair."
+    },
+    {
+      "target": "#126451",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#126451",
+      "candidate_fix": null,
+      "reason": "Cannot make a Codex-dependent verdict or code change without the required direct ../codex inspection. The available current-main source also does not reproduce the proposed missing-package-declaration premise; a writable fixture is required to establish the actual installed layout and failure path."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "keep_related": 1,
+    "keep_independent": 1,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with sibling ../codex available, then reproduce the packaged managed-install sidecar migration against current main before choosing a fix surface."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#126451",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
