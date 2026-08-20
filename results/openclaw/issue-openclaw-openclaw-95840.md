@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-95840"
 mode: "autonomous"
-run_id: "32379926670"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32379926670"
+run_id: "32382869621"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32382869621"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T14:47:50.033Z"
+published_at: "2026-08-20T15:18:24.929Z"
 canonical: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/95840"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-95840
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32379926670](https://github.com/openclaw/clawsweeper/actions/runs/32379926670)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32382869621](https://github.com/openclaw/clawsweeper/actions/runs/32382869621)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/95840
 
 ## Summary
 
-A narrow provider-owner repair is planned for #95840, but this read-only checkout cannot create the branch or install missing dependencies. Required direct ../codex inspection is also blocked because that sibling checkout is absent and cannot be cloned in this environment.
+Current main has the direct-OpenAI cache-TTL eligibility gap, but this read-only checkout lacks both required dependencies and the mandatory sibling ../codex source checkout. A narrow, provider-owned fix artifact is ready for a writable executor.
 
 ## Impact
 
@@ -48,7 +48,7 @@ A narrow provider-owner repair is planned for #95840, but this read-only checkou
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,13 +66,13 @@ A narrow provider-owner repair is planned for #95840, but this read-only checkou
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95610 | keep_related | planned | related | Keep both reports open: fixing idle-gap pruning does not stabilize per-turn OpenAI prompt prefixes. |
-| #95840 | fix_needed | blocked | canonical | Implementation is blocked only by the execution environment. The planned repair is a new, narrow PR after dependency installation and required Codex-source inspection. |
-| #95859 | keep_closed | skipped | superseded | Closed historical implementation evidence only; no mutation is allowed or needed. |
-| #96383 | keep_closed | skipped | superseded | Closed historical implementation evidence only; no mutation is allowed or needed. |
-| #102440 | keep_closed | skipped | superseded | Closed historical implementation evidence only; no mutation is allowed or needed. |
-| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | Executor can materialize one new narrow PR once it has a writable checkout, dependencies, and the required Codex-source check. |
+| #95840 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only/missing-dependency environment and the repository-required direct ../codex source inspection; the repair itself is narrow and specified below. |
+| cluster:issue-openclaw-openclaw-95840 | build_fix_artifact | planned | canonical | Create one narrow PR from clawsweeper/issue-openclaw-openclaw-95840 after provisioning dependencies and ../codex. |
+| #95610 | keep_related | planned | related | Related OpenAI cache-efficiency work has a separate root cause and remains open. |
+| #95859 | keep_closed | skipped | superseded | Historical context only. |
+| #96383 | keep_closed | skipped | superseded | Historical context only. |
+| #102440 | keep_closed | skipped | superseded | Historical context only. |
 
 ## Needs Human
 
-- none
+- Provision a writable checkout with dependencies and the mandatory sibling ../codex source checkout before implementation or a Codex verdict.

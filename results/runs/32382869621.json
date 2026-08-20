@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-95840",
+  "mode": "autonomous",
+  "run_id": "32382869621",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32382869621",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-95840.md",
+  "published_at": "2026-08-20T15:18:24.929Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_pr": null,
+  "summary": "Current main has the direct-OpenAI cache-TTL eligibility gap, but this read-only checkout lacks both required dependencies and the mandatory sibling ../codex source checkout. A narrow, provider-owned fix artifact is ready for a writable executor.",
+  "actions": [
+    {
+      "target": "#95840",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only/missing-dependency environment and the repository-required direct ../codex source inspection; the repair itself is narrow and specified below."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-95840",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Create one narrow PR from clawsweeper/issue-openclaw-openclaw-95840 after provisioning dependencies and ../codex."
+    },
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Related OpenAI cache-efficiency work has a separate root cause and remains open."
+    },
+    {
+      "target": "#95859",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#96383",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#102440",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable checkout with dependencies and the mandatory sibling ../codex source checkout before implementation or a Codex verdict."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
