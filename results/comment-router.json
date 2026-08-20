@@ -2,53 +2,6 @@
   "updated_at": "2026-08-20T14:23:43.468Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:124848:5353043566:2026-08-20T07:55:03Z:re_review",
-      "comment_id": "5353043566",
-      "comment_version_key": "5353043566:2026-08-20T07:55:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124848#issuecomment-5353043566",
-      "comment_created_at": "2026-08-20T07:55:03Z",
-      "comment_updated_at": "2026-08-20T07:55:03Z",
-      "comment_body_sha256": "0504da8f26ee12083b3bda382834fab57525620eb7b02400c080fceed26bea76",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124848,
-      "author": "leviathanresearchllc-jpg",
-      "author_id": 298796505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T07:55:43.800Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/plain-language-progress",
-        "head_sha": "80109e3a30d1e1f70a240b034b91ea564c81887a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125167:5313652924:2026-08-20T07:55:44Z:clawsweeper_needs_human",
       "comment_id": "5313652924",
       "comment_version_key": "5313652924:2026-08-20T07:55:44Z",
@@ -31844,6 +31797,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126007:5334228193:2026-08-20T14:22:51Z:clawsweeper_needs_human",
+      "comment_id": "5334228193",
+      "comment_version_key": "5334228193:2026-08-20T14:22:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126007#issuecomment-5334228193",
+      "comment_created_at": "2026-08-18T21:22:28Z",
+      "comment_updated_at": "2026-08-20T14:22:51Z",
+      "comment_body_sha256": "b05fa92e8183404085f1eae5cb91c7d6cf261584359a881f4c05135c1ecc7043",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126007,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Zero unverified policy and grant counts (P1)** - Generic decision facts are accepted from a schema-valid receipt and the new projection copies its policyRefs.length and grantRefs.length into fields Activity labe...; Review finding: [P1] Zero unverified policy and grant counts — src/audit/execution-decision-receipts.ts:147-160 - [high] Unverified receipts control visible evidence counts — src/... (sha=805de246cd813dc87ba11c2812231b08152e5d3c)",
+      "expected_head_sha": "805de246cd813dc87ba11c2812231b08152e5d3c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T14:23:43.243Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-control-ui-decision-receipts",
+        "head_sha": "805de246cd813dc87ba11c2812231b08152e5d3c",
+        "cluster_id": null,
+        "job_path": null
+      }
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126424:5348833872:2026-08-20T14:21:15Z:clawsweeper_auto_repair",
