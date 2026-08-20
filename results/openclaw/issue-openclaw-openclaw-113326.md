@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "32386628828"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32386628828"
+run_id: "32383518241"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32383518241"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T15:49:05.197Z"
+published_at: "2026-08-20T16:15:53.890Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32386628828](https://github.com/openclaw/clawsweeper/actions/runs/32386628828)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32383518241](https://github.com/openclaw/clawsweeper/actions/runs/32383518241)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-Implementation is blocked before mutation: the mandated sibling ../codex source checkout is absent, and this read-only environment cannot clone it or run pnpm (Corepack cannot create its cache). Preliminary current-main evidence identifies the unconditional non-TTY rejection before provider method dispatch, but the required upstream Codex protocol check remains unavailable.
+Current main at 855599d7e940595afd0baad6508f8130d35c1170 unconditionally rejects non-TTY `models auth login` before explicit provider/device-code resolution. A narrow fix path is identified, but this read-only worker cannot edit or validate, and the mandatory sibling `../codex` source checkout is absent so its required contract inspection cannot be completed.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Implementation is blocked before mutation: the mandated sibling ../codex source 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #113326 |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,12 @@ Implementation is blocked before mutation: the mandated sibling ../codex source 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #50452 | keep_closed | skipped | related | Historical context only; no close action is valid for an already-closed issue. |
-| #71864 | keep_closed | skipped | related | Historical context only; no close action is valid for an already-closed issue. |
-| #79021 | keep_closed | skipped | related | Historical context only; no close action is valid for an already-closed issue. |
-| #100067 | keep_related | planned | related | Related auth area, but a distinct migration and startup-policy scope. |
-| #113326 | fix_needed | blocked | canonical | A narrow repair is indicated, but upstream Codex protocol inspection and local validation are blocked by the required missing checkout and read-only environment. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | Prepared narrow implementation plan; execution remains gated. |
+| #113326 | fix_needed | blocked | canonical | Implementation is appropriate but blocked pending a writable checkout with the required sibling Codex source and runnable dependencies. |
+| #100067 | keep_related | planned | related | Related auth area, but not the same root cause or repair scope. |
+| #50452 | keep_closed | skipped | related | Already closed; no mutation. |
+| #71864 | keep_closed | skipped | related | Already closed; no mutation. |
+| #79021 | keep_closed | skipped | related | Already closed; no mutation. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | blocked | canonical | Ready for a writable executor after the Codex-source gate is satisfied. |
 
 ## Needs Human
 
