@@ -1,0 +1,66 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126468",
+  "mode": "autonomous",
+  "run_id": "32317926512",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32317926512",
+  "head_sha": "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126468.md",
+  "published_at": "2026-08-20T00:49:50.810Z",
+  "canonical": "#126468",
+  "canonical_issue": "#126468",
+  "canonical_pr": null,
+  "summary": "Confirmed narrow limiter-accounting defect, but no patch/PR could be created: filesystem is read-only, dependencies are absent, and the required ../codex source is unavailable for the repository Codex gate.",
+  "actions": [
+    {
+      "target": "#126468",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "Writable dependency-ready checkout and mandated sibling Codex source are required before implementation and verification."
+    },
+    {
+      "target": "#122794",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "Related self-chat behavior, different root cause."
+    },
+    {
+      "target": "#124386",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#126468",
+      "candidate_fix": null,
+      "reason": "Historical source work; preserve @yetval attribution in the replacement PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies and sibling ../codex source, or let the deterministic repair applicator materialize this artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
