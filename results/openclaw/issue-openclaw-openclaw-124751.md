@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124751"
 mode: "autonomous"
-run_id: "32336526753"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32336526753"
+run_id: "32390926581"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32390926581"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-20T05:49:18.299Z"
+workflow_conclusion: "failure"
+result_status: "planned"
+published_at: "2026-08-20T16:29:16.699Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_pr: null
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-124751
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32336526753](https://github.com/openclaw/clawsweeper/actions/runs/32336526753)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32390926581](https://github.com/openclaw/clawsweeper/actions/runs/32390926581)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/124751
 
 ## Summary
 
-#124751 remains the canonical iOS live-to-durable assistant-message reconciliation report. Current main retains a partial live final when the durable assistant row has a different provider-owned identity; the required direct ../codex source inspection cannot be completed because that sibling checkout is absent and this worker is read-only, so no executable fix PR path is safe to emit.
+Current main still duplicates a partial chat.final and a fuller durable session.message when their identities differ. The narrow repair is a unique, same-user-turn provisional-final fallback in shared Apple reconciliation; producer-side propagation is wider than this bug lane. No files were changed because the checkout is read-only.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/124751
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #124751 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/124751
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #108692 | keep_closed | skipped | related | Already closed; no closure or mutation is permitted. |
-| #123792 | keep_related | planned | related | Keep open independently; neither report is a duplicate of the other. |
-| #124751 | fix_needed | blocked | canonical | Implementation is blocked on the mandatory direct Codex-source gate and on tracing the authoritative agent-backed transcript-update producer that must record clientRunId. |
-| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | blocked | canonical | Artifact is intentionally non-executable until the missing direct Codex inspection and producer-bound run-correlation trace are available. |
+| #108692 | keep_closed | skipped | superseded | Already closed; current report’s duplicate-reply root cause remains open as #124751. |
+| #123792 | keep_independent | planned | independent | Related session-display symptoms, but a different runtime, data shape, and canonical work item. |
+| #124751 | fix_needed | planned | canonical | A narrow shared-Apple repair can preserve the terminal bubble UUID while replacing it with the durable canonical row, without global text deduplication or provider changes. |
+| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-124751 after adding the regression and proving the shared fallback. |
 
 ## Needs Human
 
-- Provide the required sibling ../codex checkout (or a read-only equivalent) so the mandatory direct Codex protocol/runtime inspection can be completed before an implementation PR is planned.
+- none
