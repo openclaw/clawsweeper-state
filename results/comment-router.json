@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T03:08:11.240Z",
+  "updated_at": "2026-08-20T03:09:22.522Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124831:5309655305:2026-08-19T18:29:52Z:clawsweeper_needs_human",
-      "comment_id": "5309655305",
-      "comment_version_key": "5309655305:2026-08-19T18:29:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124831#issuecomment-5309655305",
-      "comment_created_at": "2026-08-16T21:02:57Z",
-      "comment_updated_at": "2026-08-19T18:29:52Z",
-      "comment_body_sha256": "f713b34ac1632c8682d744e9e87b3c6e336145ae8db8a326a76592850303a4b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124831,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Repair commit-mismatched bundled runtimes (P2)** - A same-version runtime with a different bundled commit reaches this branch and returns decorated found/required strings. The automatic repair gate then parses t...; Review finding: [P2] Repair commit-mismatched bundled runtimes — apps/macos/Sources/OpenClaw/CLIInstaller.swift:384-390 - [low] Verify the managed Codex launcher contract — script... (sha=d45c5c217297072e8c1945c898aee55e42e02e3e)",
-      "expected_head_sha": "d45c5c217297072e8c1945c898aee55e42e02e3e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T18:48:57.892Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/macos-prewarmed-runtime-pr",
-        "head_sha": "956b8357abbc6d90de5e0593386b06a0342f6156",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126384:5345993003:2026-08-19T18:42:26Z:clawsweeper_needs_human",
       "comment_id": "5345993003",
@@ -32682,6 +32649,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126220:5338423851:2026-08-20T03:08:35Z:clawsweeper_needs_human",
+      "comment_id": "5338423851",
+      "comment_version_key": "5338423851:2026-08-20T03:08:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126220#issuecomment-5338423851",
+      "comment_created_at": "2026-08-19T06:32:33Z",
+      "comment_updated_at": "2026-08-20T03:08:35Z",
+      "comment_body_sha256": "fb8ab4beec4a07a796630ee94c77862de16ac4ff0111cd13e57dcd56ec17233a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the pinned action before clearing privileged execution** - The action receives a write-capable GitHub token while using a danger-full-access sandbox; the review environment lacks...; Review finding: [medium] Verify the pinned action before clearing privileged execution — .github/workflows/mantis-telegram-desktop-proof.yml:665 (sha=3ff955855e0cb17efd7cf5ac2c4b93718ec86c11)",
+      "expected_head_sha": "3ff955855e0cb17efd7cf5ac2c4b93718ec86c11",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T03:09:22.522Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mantis-recorder-lane",
+        "head_sha": "3ff955855e0cb17efd7cf5ac2c4b93718ec86c11",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
