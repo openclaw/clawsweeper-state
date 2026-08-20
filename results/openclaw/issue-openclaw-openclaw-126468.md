@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126468"
 mode: "autonomous"
-run_id: "32314875461"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32314875461"
+run_id: "32313107258"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32313107258"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-20T00:02:09.829Z"
+result_status: "blocked"
+published_at: "2026-08-19T23:34:03.170Z"
 canonical: "https://github.com/openclaw/openclaw/issues/126468"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/126468"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32314875461](https://github.com/openclaw/clawsweeper/actions/runs/32314875461)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32313107258](https://github.com/openclaw/clawsweeper/actions/runs/32313107258)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/126468
 
 ## Summary
 
-#126468 remains a real P1 iMessage message-loss bug on main c5fd6252. Plan a narrow new PR: stop counting benign self-chat dedupe reflections as echo-loop hits and add a monitor-boundary regression.
+Current main 16b09ad307d66b4767f83fd1ae0bb6d234804f69 still records a benign `self-chat echo` as an echo-loop hit, so five reflected rows suppress the next dispatch. A narrow two-file credited repair is ready; implementation is blocked only because this read-only checkout lacks `tsx`, so its required focused validation cannot run here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/126468
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122794 | keep_related | planned | related | Keep this independent canonical issue open. |
-| #124386 | keep_closed | skipped | superseded | The open canonical issue #126468 owns the replacement implementation. |
-| #126468 | fix_needed | planned | canonical | No viable open PR exists; #124386 is closed unmerged. |
-| cluster:issue-openclaw-openclaw-126468 | build_fix_artifact | planned | canonical | Create the narrow credited replacement on clawsweeper/issue-openclaw-openclaw-126468. |
-| cluster:issue-openclaw-openclaw-126468 | open_fix_pr | planned | canonical | The job permits one new implementation PR but does not permit merge or issue closure. |
+| #124386 | keep_closed | skipped | superseded | Closed context only; no close, comment, merge, or branch mutation is appropriate. |
+| #126468 | fix_needed | planned | canonical | This is a source-proven default-path message-loss bug with a narrow plugin-owned repair. |
+| cluster:issue-openclaw-openclaw-126468 | build_fix_artifact | planned | canonical | A new same-repo repair PR is the viable canonical path. |
+| cluster:issue-openclaw-openclaw-126468 | open_fix_pr | blocked | canonical | Executor must install dependencies, capture the pre-fix failing regression, apply the artifact, rerun validation, then open or update clawsweeper/issue-openclaw-openclaw-126468. |
 
 ## Needs Human
 
