@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "32364477609"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32364477609"
+run_id: "32370258771"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32370258771"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T12:53:30.971Z"
+published_at: "2026-08-20T13:02:07.708Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
-actions_total: 7
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32364477609](https://github.com/openclaw/clawsweeper/actions/runs/32364477609)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32370258771](https://github.com/openclaw/clawsweeper/actions/runs/32370258771)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-#113326 is a current, narrow bug: the non-TTY guard rejects explicit OpenAI device-code login before provider-method selection. A new fix PR is appropriate, but this worker cannot implement or validate it because the checkout is read-only, dependencies cannot install, and required direct ../codex source inspection is unavailable.
+Current main cbe070071 source-proves the reported defect: the non-TTY guard rejects login before resolving the explicitly selected device-code method. A narrow fix plan is ready, but implementation and validation are blocked because ../codex is absent (required direct Codex-source gate), the workspace is read-only, and pnpm/Corepack cannot create its cache (EROFS).
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113326 | fix_needed | blocked | canonical | Implement the narrow command-owner repair after provision of a writable checkout with the required sibling Codex source and dependencies. |
-| #100067 | keep_independent | planned | independent | Different owner boundary and reproduction; leave open independently. |
-| #50452 | keep_closed | skipped | related | Already closed; no mutation. |
-| #71864 | keep_closed | skipped | related | Already closed; no mutation. |
-| #79021 | keep_closed | skipped | related | Already closed; no mutation. |
-| #113505 | keep_closed | skipped | related | Already closed; no mutation. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | Artifact is ready for a writable executor; current worker cannot create the branch or run validation. |
+| #113326 | fix_needed | blocked | canonical | Implementation requires a writable checkout, direct ../codex protocol inspection, and a runnable pnpm environment. |
+| #100067 | keep_independent | planned | independent | Separate root cause and product scope. |
+| #50452 | keep_closed | skipped | related | Closed items receive no closeout action. |
+| #71864 | keep_closed | skipped | independent | Closed items receive no closeout action. |
+| #79021 | keep_closed | skipped | related | Closed items receive no closeout action. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | Artifact is ready for a write-enabled executor after the required Codex-source gate. |
 
 ## Needs Human
 

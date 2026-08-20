@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-113326",
+  "mode": "autonomous",
+  "run_id": "32370258771",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32370258771",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-113326.md",
+  "published_at": "2026-08-20T13:02:07.708Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_pr": null,
+  "summary": "Current main cbe070071 source-proves the reported defect: the non-TTY guard rejects login before resolving the explicitly selected device-code method. A narrow fix plan is ready, but implementation and validation are blocked because ../codex is absent (required direct Codex-source gate), the workspace is read-only, and pnpm/Corepack cannot create its cache (EROFS).",
+  "actions": [
+    {
+      "target": "#113326",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout, direct ../codex protocol inspection, and a runnable pnpm environment."
+    },
+    {
+      "target": "#100067",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate root cause and product scope."
+    },
+    {
+      "target": "#50452",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Closed items receive no closeout action."
+    },
+    {
+      "target": "#71864",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed items receive no closeout action."
+    },
+    {
+      "target": "#79021",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Closed items receive no closeout action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-113326",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a write-enabled executor after the required Codex-source gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
