@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-123318"
 mode: "autonomous"
-run_id: "32396960316"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32396960316"
+run_id: "32397743619"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32397743619"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T17:30:41.333Z"
+published_at: "2026-08-20T17:41:34.046Z"
 canonical: "https://github.com/openclaw/openclaw/issues/123318"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/123318"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32396960316](https://github.com/openclaw/clawsweeper/actions/runs/32396960316)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32397743619](https://github.com/openclaw/clawsweeper/actions/runs/32397743619)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/123318
 
 ## Summary
 
-Implementation is blocked before mutation: the required disposable Git fixture cannot be created on this read-only filesystem, and the repository-required ../codex source is absent and cannot be cloned here. Source inspection identified the release-channel fetch owner and a narrow candidate repair plan, but no code or PR was created.
+Current main aafa61be still aborts stable/beta Git updates on a recreated tag: the release fetch lacks force-refresh before channel-tag resolution. The narrow repair is to add `--force` only to that release fetch and add a regression fixture. Implementation is blocked in this worker because the checkout is read-only and required sibling `../codex` source is absent, so it cannot create or validate the branch locally.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Implementation is blocked before mutation: the required disposable Git fixture c
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #123318 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Implementation is blocked before mutation: the required disposable Git fixture c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #123318 | fix_needed | blocked | canonical | Do not implement until an execution environment can create the required Git fixture and provide the required ../codex checkout for direct inspection. |
-| #86218 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| #119098 | keep_closed | skipped | independent | Already closed; no mutation is valid. |
-| cluster:issue-openclaw-openclaw-123318 | build_fix_artifact | blocked | canonical | A narrow PR is appropriate only after the executor reproduces the failure in a writable disposable fixture and satisfies the repository Codex-source gate. |
+| #86218 | keep_closed | skipped | related | Already closed; no mutation is allowed or needed. |
+| #119098 | keep_closed | skipped | independent | Already closed and independent from this tag-fetch repair. |
+| #123318 | fix_needed | blocked | canonical | The source evidence supports a narrow bug fix, but this worker cannot edit or validate the required branch in the read-only checkout. |
+| cluster:issue-openclaw-openclaw-123318 | build_fix_artifact | planned | canonical | A narrow replacement PR can be built by the executor after restoring a writable checkout and completing the mandatory direct Codex inspection. |
 
 ## Needs Human
 
