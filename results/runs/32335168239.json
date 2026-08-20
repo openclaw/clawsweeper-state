@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123815",
+  "mode": "autonomous",
+  "run_id": "32335168239",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32335168239",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123815.md",
+  "published_at": "2026-08-20T05:28:21.386Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/123815",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123815",
+  "canonical_pr": null,
+  "summary": "Current main still passes a gateway-local staged pathname to native signal-cli, so the reported separate-UID failure remains. Implementation is blocked: the required direct upstream signal-cli attachment contract and isolated two-user native-daemon proof are unavailable in this environment.",
+  "actions": [
+    {
+      "target": "#123815",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#123815",
+      "candidate_fix": null,
+      "reason": "A maintainer or environment with direct supported signal-cli contract evidence and an isolated external-native daemon is required before selecting a non-speculative fix path."
+    },
+    {
+      "target": "#124105",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#123815",
+      "candidate_fix": null,
+      "reason": "Already closed; its proposed data-URI path cannot be adopted until the same upstream contract and live-proof gates are met."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Obtain direct supported signal-cli JSON-RPC attachment-contract proof (data-URI syntax, filename semantics, and request-size behavior) and an isolated two-user native-daemon delivery result before authorizing an implementation artifact."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#123815",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
