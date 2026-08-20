@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-119975"
 mode: "autonomous"
-run_id: "32320940157"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32320940157"
+run_id: "32322911674"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32322911674"
 head_sha: "02c930c53d1c7e22ce89d23ba76e6b547a4e2a7f"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-20T01:42:02.495Z"
-canonical: "#119975"
-canonical_issue: null
-canonical_pr: "#119975"
-actions_total: 1
+published_at: "2026-08-20T02:10:28.737Z"
+canonical: "https://github.com/openclaw/openclaw/pull/119975"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/119958"
+canonical_pr: "https://github.com/openclaw/openclaw/pull/119975"
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32320940157](https://github.com/openclaw/clawsweeper/actions/runs/32320940157)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32322911674](https://github.com/openclaw/clawsweeper/actions/runs/32322911674)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #119975
+Canonical: https://github.com/openclaw/openclaw/pull/119975
 
 ## Summary
 
-Make PR #119975 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+#119975 remains the adopted repair path. Current main still turns the unmanaged listener-only 60-second wait into terminal failure; the recorded review blockers require a request-correlated, owner-produced startup state before this PR can be re-reviewed. No merge or close is authorized.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Make PR #119975 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119975 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| https://github.com/openclaw/openclaw/issues/119958 | keep_canonical | planned | canonical | Keep the source report open while its adopted PR is repaired and revalidated. |
+| https://github.com/openclaw/openclaw/pull/119975 | fix_needed | planned | canonical | Rebase and repair the contributor branch; do not merge or close it. |
+| https://github.com/openclaw/openclaw/pull/119975 | build_fix_artifact | planned | canonical | Provide the deterministic edit pass with a bounded, credited repair contract. |
 
 ## Needs Human
 
