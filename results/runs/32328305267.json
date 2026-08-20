@@ -1,0 +1,129 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112592",
+  "mode": "autonomous",
+  "run_id": "32328305267",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32328305267",
+  "head_sha": "e869bde55a75e87d8158e8cb59c0f2de2d59f37b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112592.md",
+  "published_at": "2026-08-20T03:38:25.274Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/112592",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/112592",
+  "canonical_pr": null,
+  "summary": "Current main 916eef4e reproduces the source-level provenance defect: internal completion producers assign the routing sentinel `webchat` to `inputProvenance.sourceChannel`. A narrow fix artifact is ready, but this read-only worker cannot create the branch or run tests: the required sibling Codex checkout is unavailable and local package execution cannot initialize its cache/dependencies.",
+  "actions": [
+    {
+      "target": "#112592",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112592",
+      "candidate_fix": null,
+      "reason": "Canonical observability bug with a narrow producer-boundary repair; routing semantics remain unchanged."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-112592",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112592",
+      "candidate_fix": null,
+      "reason": "Artifact preserves the existing routing sentinel while introducing one provenance-only label."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-112592",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#112592",
+      "candidate_fix": null,
+      "reason": "The deterministic executor needs a writable checkout with the required Codex sibling source and installed workspace dependencies before it can create or update clawsweeper/issue-openclaw-openclaw-112592."
+    },
+    {
+      "target": "#47745",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; historical context only."
+    },
+    {
+      "target": "#54441",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; outside this provenance-only repair."
+    },
+    {
+      "target": "#55931",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; related historical provenance evidence only."
+    },
+    {
+      "target": "#64917",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct open delivery-contract cluster; do not broaden this provenance repair."
+    },
+    {
+      "target": "#93255",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed and independent."
+    },
+    {
+      "target": "#107546",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#111358",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct open route-resolution cluster; no change in this repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1,
+    "keep_closed": 5,
+    "keep_related": 2
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "blocked": 1,
+    "skipped": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
