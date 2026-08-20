@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123318",
+  "mode": "autonomous",
+  "run_id": "32385002739",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32385002739",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123318.md",
+  "published_at": "2026-08-20T15:35:37.395Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/123318",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123318",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before code changes: the required sibling Codex checkout (`../codex`) is absent, and this read-only sandbox cannot clone it or create/update the required repair branch. The hydrated preflight identifies #123318 as the open canonical bug and a narrow updater-owned fix path.",
+  "actions": [
+    {
+      "target": "#123318",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#123318",
+      "candidate_fix": null,
+      "reason": "Cannot satisfy the mandatory Codex-source inspection and local implementation requirements in this read-only environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-123318",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#123318",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for an executor with a writable checkout and the required sibling Codex source."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#123318",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
