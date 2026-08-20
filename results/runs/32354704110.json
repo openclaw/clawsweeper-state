@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-113326",
+  "mode": "autonomous",
+  "run_id": "32354704110",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32354704110",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-113326.md",
+  "published_at": "2026-08-20T09:50:40.145Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_pr": null,
+  "summary": "Confirmed a narrow current-main bug: `--device-code` resolves to the OpenAI device-code method, but the command rejects non-TTY stdin before the provider can run. A fix artifact is ready; this read-only worker cannot edit, validate with pnpm, or satisfy the required direct sibling Codex-source inspection because `../codex` is absent.",
+  "actions": [
+    {
+      "target": "#113326",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Canonical, reproducible report for the non-TTY OpenAI device-code gate."
+    },
+    {
+      "target": "#100067",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Related authentication area, distinct root cause and maintainer decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-113326",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "The repair is narrow and non-security, but implementation and validation are blocked by the worker environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-113326",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Open one narrow fix PR once the executor has a writable checkout, sibling Codex source, and package-manager cache."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
