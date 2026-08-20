@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T00:42:47.235Z",
+  "updated_at": "2026-08-20T00:44:27.018Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126255:5345032835:2026-08-19T16:28:42Z:re_review",
-      "comment_id": "5345032835",
-      "comment_version_key": "5345032835:2026-08-19T16:28:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126255#issuecomment-5345032835",
-      "comment_created_at": "2026-08-19T16:28:42Z",
-      "comment_updated_at": "2026-08-19T16:28:42Z",
-      "comment_body_sha256": "2d2689d60faabf07cd5be7d376b92b8c077f4b3c4379a6997881af4d86a8e385",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126255,
-      "author": "MagMueller",
-      "author_id": 67061560,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T16:36:53.420Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/browser-harness-default",
-        "head_sha": "c0774755ea1592f00d0b7e81ae1fb41039055e33",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126255:5339397512:2026-08-19T16:36:03Z:clawsweeper_needs_human",
       "comment_id": "5339397512",
@@ -31946,6 +31899,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1419:5349764061:2026-08-20T00:42:48Z:clawsweeper_needs_human",
+      "comment_id": "5349764061",
+      "comment_version_key": "5349764061:2026-08-20T00:42:48Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1419#issuecomment-5349764061",
+      "comment_created_at": "2026-08-20T00:42:48Z",
+      "comment_updated_at": "2026-08-20T00:42:48Z",
+      "comment_body_sha256": "fe353492c421382f47c4792e6e58ea8f5eae921b9f2a4a9a4e47f9b946c8d32b",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1419,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes a real Machine0 re-proof but provides no attached transcript, logs, screenshot, recording, or linked artifact showing the afte... (sha=6787787d7f95f77d35fe78f581c72297f176d053)",
+      "expected_head_sha": "6787787d7f95f77d35fe78f581c72297f176d053",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T00:44:27.018Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fixed-lease-shared-mechanism",
+        "head_sha": "6787787d7f95f77d35fe78f581c72297f176d053",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
