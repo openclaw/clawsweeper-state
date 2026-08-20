@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-95840",
+  "mode": "autonomous",
+  "run_id": "32360805447",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32360805447",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-95840.md",
+  "published_at": "2026-08-20T10:59:08.915Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/95840",
+  "canonical_pr": null,
+  "summary": "#95840 is a real configured cache-TTL eligibility defect on main, but the requested direct-OpenAI-only boundary cannot be represented by the existing hook: it has no base-URL/auth context. Maintainer direction is required before widening eligibility to every `openai` Responses route.",
+  "actions": [
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Keep open as a related OpenAI cache-efficiency report."
+    },
+    {
+      "target": "#95840",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#95840",
+      "candidate_fix": null,
+      "reason": "Confirm whether “direct OpenAI” means every owner-scoped `openai` + `openai-responses` route, or only the official Platform endpoint. The latter requires a broader provider-hook context and is outside this narrow repair."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Decide whether cache-TTL eligibility may cover all `provider: openai` / `modelApi: openai-responses` routes, including configured custom base URLs. If official Platform-only behavior is required, approve a separate provider-hook context expansion that carries authoritative endpoint information."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#95840",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
