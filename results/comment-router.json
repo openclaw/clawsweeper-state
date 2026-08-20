@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-20T05:11:21.268Z",
+  "updated_at": "2026-08-20T05:11:31.829Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126250:5349241525:2026-08-19T23:29:23Z:re_review",
-      "comment_id": "5349241525",
-      "comment_version_key": "5349241525:2026-08-19T23:29:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126250#issuecomment-5349241525",
-      "comment_created_at": "2026-08-19T23:29:23Z",
-      "comment_updated_at": "2026-08-19T23:29:23Z",
-      "comment_body_sha256": "5413eed7121ba875df5fe814c23fa55b89e0f1bb25687524c241e1a37b8c2857",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126250,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T23:30:33.739Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-discord-canonical-polls",
-        "head_sha": "dbbf8a19a0b4bcf65a91b5e4ed59c8e53d99b3a6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125002:5311300889:2026-08-19T23:31:44Z:clawsweeper_auto_repair",
       "comment_id": "5311300889",
@@ -31758,6 +31711,39 @@
         "kind": "pull_request",
         "branch": "feat/claude-swap-at-limit-card",
         "head_sha": "b249e8755cc91d0bf0d801e6ece146b5b9c34918",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118169:5160156082:2026-08-20T05:01:54Z:clawsweeper_needs_human",
+      "comment_id": "5160156082",
+      "comment_version_key": "5160156082:2026-08-20T05:01:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5160156082",
+      "comment_created_at": "2026-08-02T20:17:20Z",
+      "comment_updated_at": "2026-08-20T05:01:54Z",
+      "comment_body_sha256": "611ebb55384a06ea03141273f4fc4464f7d7feb03c94c708871601b739e9cee9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118169,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The generic QR prerequisite remains open and non-mergeable against main, so this consumer has no finalized public contract to target. (sha=940497e1e5043276f44c6c68e97cdc9a691459a7)",
+      "expected_head_sha": "940497e1e5043276f44c6c68e97cdc9a691459a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T05:11:31.829Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-qr-setup",
+        "head_sha": "508116bcae9b2d30d3b025ff4fd1679a42f57de4",
         "cluster_id": null,
         "job_path": null
       }
