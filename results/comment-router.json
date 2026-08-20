@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-20T15:00:35.471Z",
+  "updated_at": "2026-08-20T14:59:51.011Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126262:5353222321:2026-08-20T08:19:06Z:re_review",
+      "comment_id": "5353222321",
+      "comment_version_key": "5353222321:2026-08-20T08:19:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126262#issuecomment-5353222321",
+      "comment_created_at": "2026-08-20T08:12:50Z",
+      "comment_updated_at": "2026-08-20T08:19:06Z",
+      "comment_body_sha256": "e6f11386b43c9b721c597b5e622dbf2a2b3dcb86379dc4b00b2bccc98691ee17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126262,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T08:19:47.623Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/compassionate-allen-19bb4e",
+        "head_sha": "10eb39224e2a3fdf7f495e4c340c84f598353d81",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126220:5338423851:2026-08-20T08:21:26Z:clawsweeper_needs_human",
       "comment_id": "5338423851",
@@ -31686,39 +31733,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3494:5357432561:2026-08-20T14:59:53Z:clawsweeper_needs_human",
-      "comment_id": "5357432561",
-      "comment_version_key": "5357432561:2026-08-20T14:59:53Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3494#issuecomment-5357432561",
-      "comment_created_at": "2026-08-20T14:40:18Z",
-      "comment_updated_at": "2026-08-20T14:59:53Z",
-      "comment_body_sha256": "5d632311a5ba45faba1b2c38fcc6d5fc6a32516ceac6961986c5048ded59c1d8",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3494,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Dispatch owner outreach from completed scheduled scans (P1)** - The normal scheduled classifier reaches this direct archive call without requestOwnerExplanation: true, unlike the wrapper that schedules sendPubli...; Review finding: [P1] Dispatch owner outreach from completed scheduled scans — convex/publisherAbuseTemporalScan.ts:582-587 - [P2] Revalidate ownership before committing delivery —... (sha=ee8c725ee9b9631989563da584a038d262a36d18)",
-      "expected_head_sha": "ee8c725ee9b9631989563da584a038d262a36d18",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T15:00:35.471Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/signal-owner-explanations",
-        "head_sha": "ee8c725ee9b9631989563da584a038d262a36d18",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
