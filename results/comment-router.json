@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T03:55:22.897Z",
+  "updated_at": "2026-08-20T03:55:53.274Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126387:5346020631:2026-08-19T19:32:51Z:clawsweeper_needs_human",
-      "comment_id": "5346020631",
-      "comment_version_key": "5346020631:2026-08-19T19:32:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126387#issuecomment-5346020631",
-      "comment_created_at": "2026-08-19T17:58:35Z",
-      "comment_updated_at": "2026-08-19T19:32:51Z",
-      "comment_body_sha256": "5dd252698d478948fe00b3fb462465e8373089d8d5c89b7c38c3d6b0b16cbf9c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126387,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify elicitation handling against upstream contracts** - The ACPX dependency bump and Codex input bridge carry secret and cancellation-sensitive values, but the authoritative upstream...; Review finding: [medium] Verify elicitation handling against upstream contracts — extensions/acpx/package.json:13 (sha=50d9ab15bc8015df580d68c3c1c23b84113af26c)",
-      "expected_head_sha": "50d9ab15bc8015df580d68c3c1c23b84113af26c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T19:37:13.907Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/kind-gates-3a9113",
-        "head_sha": "50d9ab15bc8015df580d68c3c1c23b84113af26c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126407:5347019692:2026-08-19T19:30:50Z:clawsweeper_auto_repair",
       "comment_id": "5347019692",
@@ -32732,6 +32699,53 @@
         "kind": "pull_request",
         "branch": "fix/model-call-background-liveness",
         "head_sha": "281ded47dba18961baba6d814ae36d30a66c657d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1424:5351155257:2026-08-20T03:55:20Z:re_review",
+      "comment_id": "5351155257",
+      "comment_version_key": "5351155257:2026-08-20T03:55:20Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1424#issuecomment-5351155257",
+      "comment_created_at": "2026-08-20T03:55:20Z",
+      "comment_updated_at": "2026-08-20T03:55:20Z",
+      "comment_body_sha256": "d59aa8d3772d5da55561d649c8422c95384b4f204cf7e5aeb9edc30c6abd5e45",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1424,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T03:55:51.504Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/vultr-claim-locked-cleanup",
+        "head_sha": "619f25d09ac3c1a5da3be7f9f1204e9a8d569458",
         "cluster_id": null,
         "job_path": null
       },
