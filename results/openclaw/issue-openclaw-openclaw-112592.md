@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-112592"
 mode: "autonomous"
-run_id: "32330936031"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32330936031"
+run_id: "32334336457"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32334336457"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T04:38:06.885Z"
-canonical: "https://github.com/openclaw/openclaw/issues/112592"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/112592"
+published_at: "2026-08-20T05:20:14.684Z"
+canonical: "#112592"
+canonical_issue: "#112592"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32330936031](https://github.com/openclaw/clawsweeper/actions/runs/32330936031)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32334336457](https://github.com/openclaw/clawsweeper/actions/runs/32334336457)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/112592
+Canonical: #112592
 
 ## Summary
 
-Current main reproduces the source-level provenance defect. A narrow fix PR is appropriate, but this sandbox is read-only: it cannot create the branch or test edits, and `pnpm` cannot create its Corepack cache. The mandatory sibling `../codex` source checkout is also absent, blocking the required direct Codex inspection.
+Current main still defaults internal completion provenance to the routing sentinel "webchat". The narrow provenance-only repair is specified, but this worker cannot edit or validate it: the filesystem is read-only, ../codex is absent (its required clone failed), and focused tests cannot start because tsx is not installed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Current main reproduces the source-level provenance defect. A narrow fix PR is a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #112592 | fix_needed | planned | canonical | Use a dedicated internal provenance label only at internal completion provenance producers/defaults; retain INTERNAL_MESSAGE_CHANNEL in routing, delivery, and validation paths. |
-| #64917 | keep_related | planned | related | Distinct routing/delivery behavior; do not broaden this provenance-only repair. |
-| #111358 | keep_related | planned | related | Distinct product/delivery-contract issue; leave open independently. |
-| cluster:issue-openclaw-openclaw-112592 | build_fix_artifact | blocked | canonical | Run the artifact in a writable repair checkout with the required sibling Codex source checkout. |
+| #112592 | fix_needed | blocked | canonical | A writable executor with the required sibling Codex checkout and dependencies is needed to apply and validate the prepared narrow repair. |
+| #112592 | build_fix_artifact | planned | canonical | The source-level repair scope and owner-boundary regression anchors are deterministic. |
 
 ## Needs Human
 

@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112592",
+  "mode": "autonomous",
+  "run_id": "32334336457",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32334336457",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112592.md",
+  "published_at": "2026-08-20T05:20:14.684Z",
+  "canonical": "#112592",
+  "canonical_issue": "#112592",
+  "canonical_pr": null,
+  "summary": "Current main still defaults internal completion provenance to the routing sentinel \"webchat\". The narrow provenance-only repair is specified, but this worker cannot edit or validate it: the filesystem is read-only, ../codex is absent (its required clone failed), and focused tests cannot start because tsx is not installed.",
+  "actions": [
+    {
+      "target": "#112592",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#112592",
+      "candidate_fix": null,
+      "reason": "A writable executor with the required sibling Codex checkout and dependencies is needed to apply and validate the prepared narrow repair."
+    },
+    {
+      "target": "#112592",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112592",
+      "candidate_fix": null,
+      "reason": "The source-level repair scope and owner-boundary regression anchors are deterministic."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
