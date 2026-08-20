@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T23:43:13.621Z",
+  "updated_at": "2026-08-20T23:45:07.283Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123189:5281706896:2026-08-20T16:09:58Z:clawsweeper_auto_repair",
-      "comment_id": "5281706896",
-      "comment_version_key": "5281706896:2026-08-20T16:09:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123189#issuecomment-5281706896",
-      "comment_created_at": "2026-08-13T14:23:44Z",
-      "comment_updated_at": "2026-08-20T16:09:58Z",
-      "comment_body_sha256": "c0c06c18b87caf50b809dd72cf92e890e56c84d0caa80677c8ce075c6ed2e88a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123189,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d4304e8c1bedaf645efd972335d3352a3446b84b)",
-      "expected_head_sha": "d4304e8c1bedaf645efd972335d3352a3446b84b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T16:18:36.997Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-run-recovery-121756",
-        "head_sha": "d4304e8c1bedaf645efd972335d3352a3446b84b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123288:5285890676:2026-08-20T16:06:42Z:clawsweeper_needs_human",
       "comment_id": "5285890676",
@@ -31559,6 +31526,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1442:5359487414:2026-08-20T23:43:03Z:clawsweeper_needs_human",
+      "comment_id": "5359487414",
+      "comment_version_key": "5359487414:2026-08-20T23:43:03Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1442#issuecomment-5359487414",
+      "comment_created_at": "2026-08-20T17:35:22Z",
+      "comment_updated_at": "2026-08-20T23:43:03Z",
+      "comment_body_sha256": "ed6cc5c48a30092b94b57bd18e648b9ef2088381ce3795124f5f0d43f862944f",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1442,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Upgrading a reused POSIX host from 0.45.0 can block workspace reuse at LEGACY until an operator quiesces the host and removes the exact child record. (sha=94d445dd5b21a83243916e5f59e1a344c8999f0a)",
+      "expected_head_sha": "94d445dd5b21a83243916e5f59e1a344c8999f0a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T23:45:07.283Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workspace-supervise-remote-children",
+        "head_sha": "94d445dd5b21a83243916e5f59e1a344c8999f0a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
