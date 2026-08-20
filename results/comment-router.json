@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T13:19:38.575Z",
+  "updated_at": "2026-08-20T13:22:12.872Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5324832507:2026-08-18T07:10:53Z:re_review",
-      "comment_id": "5324832507",
-      "comment_version_key": "5324832507:2026-08-18T07:10:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5324832507",
-      "comment_created_at": "2026-08-18T07:10:53Z",
-      "comment_updated_at": "2026-08-18T07:10:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T07:33:36.519Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5328650053:2026-08-18T13:11:50Z:re_review",
       "comment_id": "5328650053",
@@ -31515,6 +31488,39 @@
       "status": "skipped",
       "processed_at": "2026-08-20T13:19:38.575Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126499:5350177194:2026-08-20T13:19:55Z:clawsweeper_needs_human",
+      "comment_id": "5350177194",
+      "comment_version_key": "5350177194:2026-08-20T13:19:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126499#issuecomment-5350177194",
+      "comment_created_at": "2026-08-20T01:45:38Z",
+      "comment_updated_at": "2026-08-20T13:19:55Z",
+      "comment_body_sha256": "3428e8337b562b4c3ac878d68d33ed36fd04669d47e9bf4c31881da07fd61f5a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126499,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head Android and native validation jobs were still queued or running in the supplied check state; merge should wait for completion. (sha=c78c64cabaa04ac3d863cc2051b871111212cd6d)",
+      "expected_head_sha": "c78c64cabaa04ac3d863cc2051b871111212cd6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T13:22:12.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "c78c64cabaa04ac3d863cc2051b871111212cd6d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
