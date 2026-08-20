@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the git release-channel updater so a recreated upstream tag cannot make stable or beta updates fail permanently. Keep the repair at the updater-owned tag fetch in `src/infra/update-runner-git.ts`; preserve the existing dev branch fetch and status behavior. Add a real Git regression fixture that clones a remote, force-moves an existing tag, and proves stable/beta update fetch proceeds to resolve the updated release tag. Audit the existing explicit dev-tag refspec only for the same invariant, and update `docs/install/updating.md` if its manual tag-fetch command shares the unsafe behavior. Do not add config, fallback status state, or edit CHANGELOG.md; record user-visible release context in the PR body.
+Repair the remaining recreated-tag update failure in https://github.com/openclaw/openclaw/issues/123318. First reproduce it with a real local Git remote whose existing tag is force-moved, then update only the stable/beta tag-fetch owner in src/infra/update-runner-git.ts so remote recreated tags no longer abort the update. Preserve dev's --no-tags branch refresh and the existing status behavior that suppresses stale ahead/behind counts after a failed fetch. Add a focused owner-boundary regression test that fails before the repair, covers stable and beta release-channel selection as applicable, and proves the changed tag can be refreshed. Do not add config, persistence, migrations, or a second status-state mechanism.
 
 Likely files:
 
 - src/infra/update-runner-git.ts
 - src/infra/update-runner.test.ts
-- docs/install/updating.md
+- src/infra/update-check-status.test.ts
 
 Validation:
 
-- pnpm vitest run src/infra/update-runner.test.ts src/infra/update-check-status.test.ts
-- Run the added real-Git recreated-tag fixture against pre-fix and repaired commands.
-- Verify `openclaw status` still reports `fetch failed` and no divergence when its branch refresh itself fails.
+- pnpm test src/infra/update-runner.test.ts
+- pnpm test src/infra/update-check-status.test.ts
 
 ## Operator Prompt
 
