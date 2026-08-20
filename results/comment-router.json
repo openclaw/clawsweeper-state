@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-20T15:50:21.644Z",
+  "updated_at": "2026-08-20T15:55:37.275Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126424:5348833872:2026-08-20T10:15:52Z:clawsweeper_needs_human",
-      "comment_id": "5348833872",
-      "comment_version_key": "5348833872:2026-08-20T10:15:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126424#issuecomment-5348833872",
-      "comment_created_at": "2026-08-19T22:37:49Z",
-      "comment_updated_at": "2026-08-20T10:15:52Z",
-      "comment_body_sha256": "713c991da9a57841e3ed2da26ccb22c465e4a41f554f7087fe5505dccbf3e5c8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126424,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reject legacy parent-bound Discord threads (P1)** - This call omits parentConversationRef; legacy rows can therefore reach Discord with only the child/thread ID and no context.parentPeerId. Discord resolves the...; Review finding: [P1] Reject legacy parent-bound Discord threads — src/gateway/conversation-route-ownership.ts:58 - [medium] Fail closed for legacy parent-bound Discord threads — s... (sha=199fffea8729052a12992c751828c963cfe9940d)",
-      "expected_head_sha": "199fffea8729052a12992c751828c963cfe9940d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T10:19:31.334Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/conversation-route-ownership",
-        "head_sha": "199fffea8729052a12992c751828c963cfe9940d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118523:5354572856:2026-08-20T10:19:49Z:re_review",
       "comment_id": "5354572856",
@@ -31501,6 +31468,53 @@
           "status": "waiting",
           "label": null,
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126662:5358387454:2026-08-20T15:54:45Z:re_review",
+      "comment_id": "5358387454",
+      "comment_version_key": "5358387454:2026-08-20T15:54:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126662#issuecomment-5358387454",
+      "comment_created_at": "2026-08-20T15:54:45Z",
+      "comment_updated_at": "2026-08-20T15:54:45Z",
+      "comment_body_sha256": "983ebfcbb4522534c57188579d96a99e5fac3bb6b82ecce6994e13d76f05833a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126662,
+      "author": "itkdm",
+      "author_id": 152999386,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-20T15:55:35.077Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-realtime-provider-activation",
+        "head_sha": "81e14738bcddce66e75753a6ce5c5b83ca0ed923",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
         }
       ]
     }
