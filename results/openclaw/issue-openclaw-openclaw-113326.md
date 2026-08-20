@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "32373748456"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32373748456"
+run_id: "32377454401"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32377454401"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T13:49:22.031Z"
+published_at: "2026-08-20T14:17:49.066Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
-actions_total: 7
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32373748456](https://github.com/openclaw/clawsweeper/actions/runs/32373748456)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32377454401](https://github.com/openclaw/clawsweeper/actions/runs/32377454401)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-Current main has the documented headless device-code path, but an unconditional non-TTY guard rejects it before method resolution. A narrow repair plan is ready; implementation is blocked because this checkout is read-only, dependencies cannot install, and the required sibling Codex source is unavailable for the repository’s mandatory direct contract check.
+#113326 remains a reproducible narrow bug: current main unconditionally rejects non-TTY login at src/commands/models/auth.ts:1097 before explicit device-code selection can run, despite documented headless device pairing. No branch was changed because this worker has a read-only filesystem and could not create the mandatory sibling ../codex checkout for the Codex contract gate.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,12 @@ Current main has the documented headless device-code path, but an unconditional 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113326 | keep_canonical | planned | canonical | Open canonical bug with a source-proven, narrow repair path; no viable implementation PR is hydrated. |
-| #100067 | keep_independent | planned | independent | Different owner-boundary failure; leave its existing maintainer product-decision thread open. |
-| #50452 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| #71864 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| #79021 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| cluster:issue-openclaw-openclaw-113326 | fix_needed | blocked | canonical | Repair is narrow and appropriate, but editing, dependency installation, local validation, and the direct Codex-source inspection are blocked. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | A writable executor can implement this focused repair on the designated branch. |
+| #113326 | fix_needed | planned | canonical | A narrow repair should allow only an explicitly selected device-code method to use createNonInteractiveLoggingPrompter; ordinary OAuth and every unspecified login remain TTY-only. |
+| #100067 | keep_independent | planned | independent | Leave open independently. |
+| #50452 | keep_closed | skipped | related | Already closed; not a mutation target. |
+| #71864 | keep_closed | skipped | related | Already closed; not a mutation target. |
+| #79021 | keep_closed | skipped | related | Already closed; not a mutation target. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-113326. |
 
 ## Needs Human
 
