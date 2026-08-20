@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124751"
 mode: "autonomous"
-run_id: "32334211260"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32334211260"
+run_id: "32336526753"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32336526753"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-20T05:14:40.055Z"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-20T05:49:18.299Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_pr: null
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-124751
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32334211260](https://github.com/openclaw/clawsweeper/actions/runs/32334211260)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32336526753](https://github.com/openclaw/clawsweeper/actions/runs/32336526753)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/124751
 
 ## Summary
 
-Current main still leaves a truncated provisional final beside an unkeyed, fuller durable assistant row: reconciliation falls back to full-content equality. Plan a narrow shared iOS/macOS chat fix and regression replay test; no GitHub mutation was made.
+#124751 remains the canonical iOS live-to-durable assistant-message reconciliation report. Current main retains a partial live final when the durable assistant row has a different provider-owned identity; the required direct ../codex source inspection cannot be completed because that sibling checkout is absent and this worker is read-only, so no executable fix PR path is safe to emit.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Current main still leaves a truncated provisional final beside an unkeyed, fulle
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #124751 |  |  |
 
 ## Apply Actions
 
@@ -66,11 +66,11 @@ Current main still leaves a truncated provisional final beside an unkeyed, fulle
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #108692 | keep_closed | skipped | related | Already closed; no closure or comment action is valid. |
-| #123792 | keep_independent | planned | independent | Adjacent transcript-display family, but a distinct persistence cause and fix path. |
-| #124751 | fix_needed | planned | canonical | A narrowly bounded client reconciliation repair is warranted. |
-| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | planned | canonical | Create one narrow implementation PR from clawsweeper/issue-openclaw-openclaw-124751. |
+| #108692 | keep_closed | skipped | related | Already closed; no closure or mutation is permitted. |
+| #123792 | keep_related | planned | related | Keep open independently; neither report is a duplicate of the other. |
+| #124751 | fix_needed | blocked | canonical | Implementation is blocked on the mandatory direct Codex-source gate and on tracing the authoritative agent-backed transcript-update producer that must record clientRunId. |
+| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | blocked | canonical | Artifact is intentionally non-executable until the missing direct Codex inspection and producer-bound run-correlation trace are available. |
 
 ## Needs Human
 
-- none
+- Provide the required sibling ../codex checkout (or a read-only equivalent) so the mandatory direct Codex protocol/runtime inspection can be completed before an implementation PR is planned.
