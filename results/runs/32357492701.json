@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126631",
+  "mode": "autonomous",
+  "run_id": "32357492701",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32357492701",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126631.md",
+  "published_at": "2026-08-20T10:18:25.173Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126631",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126631",
+  "canonical_pr": null,
+  "summary": "Current main mounts materialized skills at `/workspace/.openclaw/sandbox-skills/skills` but rw provisioning creates only the workspace root. Plan one narrow PR that creates the complete mount destination as the Gateway user before Docker/Podman creates the container.",
+  "actions": [
+    {
+      "target": "#126631",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126631",
+      "candidate_fix": null,
+      "reason": "The issue is a bounded sandbox provisioning defect on current main; no viable implementation PR is hydrated."
+    },
+    {
+      "target": "#113166",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route only this separate trust-boundary report to central OpenClaw security triage; it does not block the non-security fix for #126631."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126631",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126631",
+      "candidate_fix": null,
+      "reason": "Create one credited ClawSweeper implementation PR from clawsweeper/issue-openclaw-openclaw-126631."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
