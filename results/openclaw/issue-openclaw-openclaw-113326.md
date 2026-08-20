@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "32389999334"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32389999334"
+run_id: "32386628828"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32386628828"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T16:22:11.962Z"
+published_at: "2026-08-20T15:49:05.197Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32389999334](https://github.com/openclaw/clawsweeper/actions/runs/32389999334)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32386628828](https://github.com/openclaw/clawsweeper/actions/runs/32386628828)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-#113326 is a real, narrow CLI-boundary bug on main. A repair plan is ready, but this worker cannot modify or validate it: the filesystem is read-only, pnpm/Corepack cannot create its cache, and the required sibling Codex checkout is absent for the mandatory direct runtime-contract check.
+Implementation is blocked before mutation: the mandated sibling ../codex source checkout is absent, and this read-only environment cannot clone it or run pnpm (Corepack cannot create its cache). Preliminary current-main evidence identifies the unconditional non-TTY rejection before provider method dispatch, but the required upstream Codex protocol check remains unavailable.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113326 | fix_needed | blocked | canonical | Implementation is blocked only by this worker environment. The executor must inspect the matching Codex protocol/runtime source before editing, then apply and validate the narrow repair. |
-| #100067 | keep_independent | planned | independent | Same broad auth area, but no shared repair path with #113326. |
-| #50452 | keep_closed | skipped | related | Already closed historical context; no mutation. |
-| #71864 | keep_closed | skipped | related | Already closed historical context; no mutation. |
-| #79021 | keep_closed | skipped | related | Already closed historical context; no mutation. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | A new narrow fix PR remains appropriate once the executor has a writable checkout, dependencies, and the required direct Codex inspection. |
+| #50452 | keep_closed | skipped | related | Historical context only; no close action is valid for an already-closed issue. |
+| #71864 | keep_closed | skipped | related | Historical context only; no close action is valid for an already-closed issue. |
+| #79021 | keep_closed | skipped | related | Historical context only; no close action is valid for an already-closed issue. |
+| #100067 | keep_related | planned | related | Related auth area, but a distinct migration and startup-policy scope. |
+| #113326 | fix_needed | blocked | canonical | A narrow repair is indicated, but upstream Codex protocol inspection and local validation are blocked by the required missing checkout and read-only environment. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | Prepared narrow implementation plan; execution remains gated. |
 
 ## Needs Human
 
