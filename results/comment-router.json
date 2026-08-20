@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-20T01:07:09.293Z",
+  "updated_at": "2026-08-20T01:07:20.557Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4609780678:2026-06-03T06:44:35Z:re_review",
-      "comment_id": "4609780678",
-      "comment_version_key": "4609780678:2026-06-03T06:44:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4609780678",
-      "comment_created_at": "2026-06-03T06:44:35Z",
-      "comment_updated_at": "2026-06-03T06:44:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-19T17:02:49.438Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4613872043:2026-06-03T15:12:30Z:re_review",
       "comment_id": "4613872043",
@@ -31982,6 +31955,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126493:5349913022:2026-08-20T01:06:25Z:clawsweeper_needs_human",
+      "comment_id": "5349913022",
+      "comment_version_key": "5349913022:2026-08-20T01:06:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126493#issuecomment-5349913022",
+      "comment_created_at": "2026-08-20T01:06:25Z",
+      "comment_updated_at": "2026-08-20T01:06:25Z",
+      "comment_body_sha256": "d620dc364b4c6533f44e65c6f9749e0af0e3755c394631a870accd3d5f2d2d28",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126493,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A PID-classification mistake would alter shutdown behavior across CLI respawn, TUI, and Fleet follow processes; required exact-head CI is still in progress. (sha=3495ce55d8054fb29c39e23c326226590d372f73)",
+      "expected_head_sha": "3495ce55d8054fb29c39e23c326226590d372f73",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T01:07:20.557Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-155-process-signal-bridge",
+        "head_sha": "3495ce55d8054fb29c39e23c326226590d372f73",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
