@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-19T23:59:05.491Z",
+  "updated_at": "2026-08-19T23:58:04.325Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:77891:4380588908:2026-08-19T15:04:37Z:clawsweeper_auto_repair",
+      "comment_id": "4380588908",
+      "comment_version_key": "4380588908:2026-08-19T15:04:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/77891#issuecomment-4380588908",
+      "comment_created_at": "2026-05-05T15:12:53Z",
+      "comment_updated_at": "2026-08-19T15:04:37Z",
+      "comment_body_sha256": "b7cbd55a6a462d9ad8b825fb12460236fb96bc3aa61e5bbedc831651febcda54",
+      "repo": "openclaw/openclaw",
+      "issue_number": 77891,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=77fd2be812cbd999cebc730cb620d8816a2893dd)",
+      "expected_head_sha": "77fd2be812cbd999cebc730cb620d8816a2893dd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-19T15:07:40.953Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/77871-stale-binding-cleanup",
+        "head_sha": "77fd2be812cbd999cebc730cb620d8816a2893dd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78436:4387443771:2026-08-19T15:05:14Z:clawsweeper_auto_repair",
       "comment_id": "4387443771",
@@ -31769,53 +31802,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1211:5349454008:2026-08-19T23:58:15Z:re_review",
-      "comment_id": "5349454008",
-      "comment_version_key": "5349454008:2026-08-19T23:58:15Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1211#issuecomment-5349454008",
-      "comment_created_at": "2026-08-19T23:58:15Z",
-      "comment_updated_at": "2026-08-19T23:58:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1211,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-19T23:59:03.151Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-136-review-live-proof-timeout",
-        "head_sha": "bf9e34ba632eded73e248f507f74448205ba04ad",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
