@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124952",
+  "mode": "autonomous",
+  "run_id": "32407950333",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32407950333",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124952.md",
+  "published_at": "2026-08-20T19:42:18.253Z",
+  "canonical": "#124952",
+  "canonical_issue": "#124952",
+  "canonical_pr": null,
+  "summary": "#124952 remains the canonical open bug. Current main leaves legacy claude-cli model-map keys and modelPolicy.allow entries outside the same Doctor migration; canonical Anthropic overrides are therefore rejected. A narrow repair is identified, but this worker cannot modify, test, or open its branch: the sandbox is read-only, pnpm cannot create its Corepack cache, local Vitest is absent, and mandatory ../codex source is unavailable for direct inspection.",
+  "actions": [
+    {
+      "target": "#124952",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "A writable repair environment with the required sibling Codex source is needed before implementation and validation."
+    },
+    {
+      "target": "#124952",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124952",
+      "candidate_fix": null,
+      "reason": "Narrow replacement repair is ready for a writable worker; no GitHub mutation was performed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies and the mandatory sibling ../codex source available, then run the fix artifact’s regression and documentation validation before opening the permitted PR."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

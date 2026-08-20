@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124952"
 mode: "autonomous"
-run_id: "32406042926"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32406042926"
+run_id: "32407950333"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32407950333"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-20T19:26:53.866Z"
-canonical: "https://github.com/openclaw/openclaw/issues/124952"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/124952"
+published_at: "2026-08-20T19:42:18.253Z"
+canonical: "#124952"
+canonical_issue: "#124952"
 canonical_pr: null
-actions_total: 5
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-124952
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32406042926](https://github.com/openclaw/clawsweeper/actions/runs/32406042926)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32407950333](https://github.com/openclaw/clawsweeper/actions/runs/32407950333)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/124952
+Canonical: #124952
 
 ## Summary
 
-Current main reproduces #124952: Doctor leaves legacy claude-cli model-map and explicit allowlist refs when the primary is already canonical, so canonical Claude overrides are rejected. A narrow fix path is defined, but this read-only worker cannot edit, install dependencies, create the required ../codex checkout, validate, or open the PR.
+#124952 remains the canonical open bug. Current main leaves legacy claude-cli model-map keys and modelPolicy.allow entries outside the same Doctor migration; canonical Anthropic overrides are therefore rejected. A narrow repair is identified, but this worker cannot modify, test, or open its branch: the sandbox is read-only, pnpm cannot create its Corepack cache, local Vitest is absent, and mandatory ../codex source is unavailable for direct inspection.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,12 +66,9 @@ Current main reproduces #124952: Doctor leaves legacy claude-cli model-map and e
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124952 | fix_needed | planned | canonical | Real Doctor-owned migration defect on current main; no viable open PR exists. |
-| #80408 | keep_closed | skipped | related | Already closed historical context; no closeout action is valid. |
-| #80413 | keep_closed | skipped | related | Already closed historical context; no closeout action is valid. |
-| cluster:issue-openclaw-openclaw-124952 | build_fix_artifact | planned | canonical | Prepare one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-124952. |
-| cluster:issue-openclaw-openclaw-124952 | open_fix_pr | blocked | canonical | The deterministic executor needs a writable checkout with dependencies and the mandated ../codex source checkout before it can create or update the PR. |
+| #124952 | fix_needed | blocked | canonical | A writable repair environment with the required sibling Codex source is needed before implementation and validation. |
+| #124952 | build_fix_artifact | planned | canonical | Narrow replacement repair is ready for a writable worker; no GitHub mutation was performed. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout with dependencies and the mandatory sibling ../codex source available, then run the fix artifact’s regression and documentation validation before opening the permitted PR.
