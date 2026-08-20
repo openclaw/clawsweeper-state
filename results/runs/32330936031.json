@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112592",
+  "mode": "autonomous",
+  "run_id": "32330936031",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32330936031",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112592.md",
+  "published_at": "2026-08-20T04:38:06.885Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/112592",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/112592",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the source-level provenance defect. A narrow fix PR is appropriate, but this sandbox is read-only: it cannot create the branch or test edits, and `pnpm` cannot create its Corepack cache. The mandatory sibling `../codex` source checkout is also absent, blocking the required direct Codex inspection.",
+  "actions": [
+    {
+      "target": "#112592",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112592",
+      "candidate_fix": null,
+      "reason": "Use a dedicated internal provenance label only at internal completion provenance producers/defaults; retain INTERNAL_MESSAGE_CHANNEL in routing, delivery, and validation paths."
+    },
+    {
+      "target": "#64917",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#112592",
+      "candidate_fix": null,
+      "reason": "Distinct routing/delivery behavior; do not broaden this provenance-only repair."
+    },
+    {
+      "target": "#111358",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#112592",
+      "candidate_fix": null,
+      "reason": "Distinct product/delivery-contract issue; leave open independently."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-112592",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#112592",
+      "candidate_fix": null,
+      "reason": "Run the artifact in a writable repair checkout with the required sibling Codex source checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

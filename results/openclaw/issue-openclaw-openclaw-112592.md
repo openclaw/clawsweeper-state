@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-112592"
 mode: "autonomous"
-run_id: "32328962727"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32328962727"
+run_id: "32330936031"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32330936031"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-20T03:53:26.187Z"
-canonical: "#112592"
-canonical_issue: "#112592"
+published_at: "2026-08-20T04:38:06.885Z"
+canonical: "https://github.com/openclaw/openclaw/issues/112592"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/112592"
 canonical_pr: null
-actions_total: 1
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-112592
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32328962727](https://github.com/openclaw/clawsweeper/actions/runs/32328962727)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32330936031](https://github.com/openclaw/clawsweeper/actions/runs/32330936031)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #112592
+Canonical: https://github.com/openclaw/openclaw/issues/112592
 
 ## Summary
 
-Repair is blocked before code changes: the mandatory sibling Codex source checkout is absent, and this read-only worker cannot clone it or update the repair branch.
+Current main reproduces the source-level provenance defect. A narrow fix PR is appropriate, but this sandbox is read-only: it cannot create the branch or test edits, and `pnpm` cannot create its Corepack cache. The mandatory sibling `../codex` source checkout is also absent, blocking the required direct Codex inspection.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,11 @@ Repair is blocked before code changes: the mandatory sibling Codex source checko
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #112592 | needs_human | blocked | needs_human | Provision a readable sibling ../codex checkout and a writable repair worker, then resume the focused provenance-only patch. |
+| #112592 | fix_needed | planned | canonical | Use a dedicated internal provenance label only at internal completion provenance producers/defaults; retain INTERNAL_MESSAGE_CHANNEL in routing, delivery, and validation paths. |
+| #64917 | keep_related | planned | related | Distinct routing/delivery behavior; do not broaden this provenance-only repair. |
+| #111358 | keep_related | planned | related | Distinct product/delivery-contract issue; leave open independently. |
+| cluster:issue-openclaw-openclaw-112592 | build_fix_artifact | blocked | canonical | Run the artifact in a writable repair checkout with the required sibling Codex source checkout. |
 
 ## Needs Human
 
-- Provide a readable sibling ../codex checkout (or rerun in a writable worker that has it) so the required direct Codex protocol/runtime inspection can be completed before implementing #112592.
+- none
