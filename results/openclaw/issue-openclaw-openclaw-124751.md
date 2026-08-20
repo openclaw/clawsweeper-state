@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124751"
 mode: "autonomous"
-run_id: "32390926581"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32390926581"
+run_id: "32391697538"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32391697538"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-20T16:29:16.699Z"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-20T16:36:15.312Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32390926581](https://github.com/openclaw/clawsweeper/actions/runs/32390926581)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32391697538](https://github.com/openclaw/clawsweeper/actions/runs/32391697538)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/124751
 
 ## Summary
 
-Current main still duplicates a partial chat.final and a fuller durable session.message when their identities differ. The narrow repair is a unique, same-user-turn provisional-final fallback in shared Apple reconciliation; producer-side propagation is wider than this bug lane. No files were changed because the checkout is read-only.
+#124751 remains a narrow, reproducible shared-Apple-chat reconciliation defect. Current main records a provisional chat.final with its run ID, but session.message adoption accepts only the same idempotency key or identical final-content fingerprint; a partial final plus fuller canonical row with different durable identity therefore remains duplicated. No implementation branch was created: the checkout is read-only, SwiftPM cannot run in the sandbox, and the mandated sibling ../codex source is absent and cannot be cloned here.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main still duplicates a partial chat.final and a fuller durable session.
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #124751 |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Current main still duplicates a partial chat.final and a fuller durable session.
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #108692 | keep_closed | skipped | superseded | Already closed; current report’s duplicate-reply root cause remains open as #124751. |
-| #123792 | keep_independent | planned | independent | Related session-display symptoms, but a different runtime, data shape, and canonical work item. |
-| #124751 | fix_needed | planned | canonical | A narrow shared-Apple repair can preserve the terminal bubble UUID while replacing it with the durable canonical row, without global text deduplication or provider changes. |
-| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-124751 after adding the regression and proving the shared fallback. |
+| #124751 | fix_needed | blocked | canonical | Implementation is blocked only by the immutable sandbox and missing required Codex sibling source, not by product ambiguity. |
+| #123792 | keep_related | planned | related | Related duplicate-display family, independent root cause and active canonical work. |
+| #108692 | keep_closed | skipped | related | Already closed context reference. |
+| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | blocked |  | Executor needs a writable checkout, direct ../codex inspection, and a Swift-capable environment to establish the failing pre-fix regression and validate the repair. |
 
 ## Needs Human
 
