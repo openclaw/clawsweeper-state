@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T17:10:50.893Z",
+  "updated_at": "2026-08-21T17:11:00.042Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3105:5355157253:2026-08-21T13:55:48Z:clawsweeper_auto_repair",
-      "comment_id": "5355157253",
-      "comment_version_key": "5355157253:2026-08-21T13:55:48Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3105#issuecomment-5355157253",
-      "comment_created_at": "2026-08-20T11:19:36Z",
-      "comment_updated_at": "2026-08-21T13:55:48Z",
-      "comment_body_sha256": "503a6a9fa1b886fd83c50a8f681a4d4d7a3eb7372baa11f91ab70bffc2e4924e",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3105,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=70a875bdf335563c7bf3f095c58d1b5fc801e512)",
-      "expected_head_sha": "70a875bdf335563c7bf3f095c58d1b5fc801e512",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T13:56:39.024Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/spend-perf-parallel-memoize",
-        "head_sha": "70a875bdf335563c7bf3f095c58d1b5fc801e512",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1456:5370230387:2026-08-21T13:23:43Z:clawsweeper_auto_repair",
       "comment_id": "5370230387",
@@ -32006,6 +31973,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T17:10:50.893Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127240:5372008838:2026-08-21T17:06:43Z:clawsweeper_needs_human",
+      "comment_id": "5372008838",
+      "comment_version_key": "5372008838:2026-08-21T17:06:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127240#issuecomment-5372008838",
+      "comment_created_at": "2026-08-21T15:38:42Z",
+      "comment_updated_at": "2026-08-21T17:06:43Z",
+      "comment_body_sha256": "52c87c6bdd2f741f75b0c8c7fa9bff2dc5f76c943c36fbbec7dbb134071ff9f0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127240,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Attest the AWS lease before executing candidates (P1)** - This call only requests public/no-Tailscale flags and unsets overrides before immediately passing the candidate command to Crabbox. The existing AWS cont...; Review finding: [P1] Attest the AWS lease before executing candidates — .github/workflows/openclaw-performance.yml:1080-1110 - [high] Candidate execution precedes lease attestatio... (sha=656db1d1179c7ac36748ba8a983dc2954f0d7a48)",
+      "expected_head_sha": "656db1d1179c7ac36748ba8a983dc2954f0d7a48",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T17:11:00.042Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/actions-performance-sut-isolation",
+        "head_sha": "656db1d1179c7ac36748ba8a983dc2954f0d7a48",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
