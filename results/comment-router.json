@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T01:37:13.802Z",
+  "updated_at": "2026-08-21T01:38:43.246Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123507:5359908309:2026-08-20T18:14:51Z:re_review",
-      "comment_id": "5359908309",
-      "comment_version_key": "5359908309:2026-08-20T18:14:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123507#issuecomment-5359908309",
-      "comment_created_at": "2026-08-20T18:14:51Z",
-      "comment_updated_at": "2026-08-20T18:14:51Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123507,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T18:15:43.159Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/think-model-effort-autocomplete",
-        "head_sha": "621efc0cffb732a143119747de4b6fcd044d3d1a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1442:5359487414:2026-08-20T18:14:59Z:clawsweeper_auto_repair",
       "comment_id": "5359487414",
@@ -31636,6 +31589,39 @@
         "kind": "pull_request",
         "branch": "fix/agents-find-grep-exec-timeout",
         "head_sha": "3fc8b8cb23876ca8adc05b463417da011a351882",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126891:5363672419:2026-08-21T01:34:42Z:clawsweeper_needs_human",
+      "comment_id": "5363672419",
+      "comment_version_key": "5363672419:2026-08-21T01:34:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126891#issuecomment-5363672419",
+      "comment_created_at": "2026-08-21T00:23:31Z",
+      "comment_updated_at": "2026-08-21T01:34:42Z",
+      "comment_body_sha256": "73169c5683182264a8794ced3162de7f87a8f6eac2360e7a364acd80021c55a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126891,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact Codex 0.148 source contract could not be independently inspected because the required sibling checkout is unavailable in this review environment; confirm the developer-instr... (sha=22c04b58ff89cf08ed1910a7277b7c5c1e37f8ce)",
+      "expected_head_sha": "22c04b58ff89cf08ed1910a7277b7c5c1e37f8ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T01:38:43.246Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/125431-preserve-project-docs",
+        "head_sha": "22c04b58ff89cf08ed1910a7277b7c5c1e37f8ce",
         "cluster_id": null,
         "job_path": null
       }
