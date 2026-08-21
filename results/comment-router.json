@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T22:58:42.984Z",
+  "updated_at": "2026-08-21T23:00:18.618Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125407:5373781967:2026-08-21T18:33:43Z:re_review",
-      "comment_id": "5373781967",
-      "comment_version_key": "5373781967:2026-08-21T18:33:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125407#issuecomment-5373781967",
-      "comment_created_at": "2026-08-21T18:33:43Z",
-      "comment_updated_at": "2026-08-21T18:33:43Z",
-      "comment_body_sha256": "63aa1d3f6e60910c7624370c99dd766bb1ce8c080e8b74b5662efc9c1c5d1a70",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125407,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T18:34:28.967Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "recovery/subagent-timeout-20260817",
-        "head_sha": "85a623fe6a27ceff3562abc2fe6bd67094c9ed99",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116416:5133168342:2026-07-30T15:53:12Z:re_review",
       "comment_id": "5133168342",
@@ -31815,6 +31768,39 @@
         "kind": "pull_request",
         "branch": "steipete/laughing-spence-a1f1de",
         "head_sha": "5c66c55a5752bd1a1cfd16e62b00e2afb9a277e1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125370:5318988289:2026-08-21T22:58:37Z:clawsweeper_auto_repair",
+      "comment_id": "5318988289",
+      "comment_version_key": "5318988289:2026-08-21T22:58:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125370#issuecomment-5318988289",
+      "comment_created_at": "2026-08-17T19:03:51Z",
+      "comment_updated_at": "2026-08-21T22:58:37Z",
+      "comment_body_sha256": "6f481180f08aba173731be89c2e8b6c627fecce000e4c389b5324e998d586c5b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125370,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=6d3c162a1eb58426d17693e9206a0b766e649c01)",
+      "expected_head_sha": "6d3c162a1eb58426d17693e9206a0b766e649c01",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-21T23:00:18.618Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mattermost-react-emoji-glyph",
+        "head_sha": "6d3c162a1eb58426d17693e9206a0b766e649c01",
         "cluster_id": null,
         "job_path": null
       }
