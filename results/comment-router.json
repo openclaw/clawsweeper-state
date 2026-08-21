@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T04:41:16.316Z",
+  "updated_at": "2026-08-21T04:41:58.101Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126537:5351389413:2026-08-21T00:53:17Z:clawsweeper_auto_repair",
-      "comment_id": "5351389413",
-      "comment_version_key": "5351389413:2026-08-21T00:53:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126537#issuecomment-5351389413",
-      "comment_created_at": "2026-08-20T04:32:23Z",
-      "comment_updated_at": "2026-08-21T00:53:17Z",
-      "comment_body_sha256": "39d84370f4c5a16049e7b6932e9719c94b5b9a4d0144c6f7f6bb4fa25887d8ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126537,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e7afbfbba2361b65db563e90ddac0460e25d926e)",
-      "expected_head_sha": "e7afbfbba2361b65db563e90ddac0460e25d926e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T00:54:07.963Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-yield-handoff-abort-126446",
-        "head_sha": "e7afbfbba2361b65db563e90ddac0460e25d926e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3111:5359950240:2026-08-21T00:53:48Z:clawsweeper_auto_repair",
       "comment_id": "5359950240",
@@ -31375,6 +31342,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118008:5158543101:2026-08-21T04:40:58Z:clawsweeper_needs_human",
+      "comment_id": "5158543101",
+      "comment_version_key": "5158543101:2026-08-21T04:40:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118008#issuecomment-5158543101",
+      "comment_created_at": "2026-08-02T14:30:56Z",
+      "comment_updated_at": "2026-08-21T04:40:58Z",
+      "comment_body_sha256": "07a85102d0072baf2479b15a9077bf02312a36e857b9b6ed48e16c0fd672f891",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118008,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Remove the expired Crabline release-age exemption (P2)** - The workspace minimum-release-age policy is 2,880 minutes, while the PR context dates Crabline 0.1.17's release to August 16. Keeping this exact-version...; Review finding: [P2] Remove the expired Crabline release-age exemption — pnpm-workspace.yaml:11 - [low] Release-age protection remains bypassed — pnpm-workspace.yaml:11 (sha=7049186efc29083d2c53177809f28ecf22d38be1)",
+      "expected_head_sha": "7049186efc29083d2c53177809f28ecf22d38be1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T04:41:58.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/crabline-server-terminology",
+        "head_sha": "7049186efc29083d2c53177809f28ecf22d38be1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
