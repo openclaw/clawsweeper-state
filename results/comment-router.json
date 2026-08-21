@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T07:33:29.163Z",
+  "updated_at": "2026-08-21T07:33:38.238Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119367:5185607290:2026-08-20T01:03:43Z:clawsweeper_needs_human",
-      "comment_id": "5185607290",
-      "comment_version_key": "5185607290:2026-08-20T01:03:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119367#issuecomment-5185607290",
-      "comment_created_at": "2026-08-04T23:09:27Z",
-      "comment_updated_at": "2026-08-20T01:03:43Z",
-      "comment_body_sha256": "da59371d867220729eba508c1efb4e43bb2e56114a325c6927d1dd16b6aa7343",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119367,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Persisted ingestion checkpoints and reset-generation metadata are upgrade-sensitive; merge only after exact-head CI confirms the new prefix validator preserves legacy normal checkpoin... (sha=43caf95c02a834b696d244d69c06ff5e0f85341c)",
-      "expected_head_sha": "43caf95c02a834b696d244d69c06ff5e0f85341c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T03:07:15.129Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119350",
-        "head_sha": "43caf95c02a834b696d244d69c06ff5e0f85341c",
-        "cluster_id": "automerge-openclaw-openclaw-119367",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119367.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119983:5209715304:2026-08-20T01:05:30Z:clawsweeper_auto_repair",
       "comment_id": "5209715304",
@@ -33134,6 +33101,53 @@
         "kind": "pull_request",
         "branch": "fix-workboard-complete-proofid-alone-127034",
         "head_sha": "5585848a9d5ac84f3fcaf0575cde3adc3e0e9e4e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127002:5366659552:2026-08-21T07:30:56Z:re_review",
+      "comment_id": "5366659552",
+      "comment_version_key": "5366659552:2026-08-21T07:30:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127002#issuecomment-5366659552",
+      "comment_created_at": "2026-08-21T07:30:56Z",
+      "comment_updated_at": "2026-08-21T07:30:56Z",
+      "comment_body_sha256": "aa10c4f3e0896270579c2546d9a21906d66c491fedc8fff9eba00a491dca4782",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127002,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T07:33:35.770Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-frozen-target-ci-compat",
+        "head_sha": "f0426f0590c0aff29520f8bfaec19c63c9715782",
         "cluster_id": null,
         "job_path": null
       },
