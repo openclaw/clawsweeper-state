@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T20:42:48.238Z",
+  "updated_at": "2026-08-21T20:42:52.200Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111347:5372747883:2026-08-21T16:50:32Z:re_review",
-      "comment_id": "5372747883",
-      "comment_version_key": "5372747883:2026-08-21T16:50:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111347#issuecomment-5372747883",
-      "comment_created_at": "2026-08-21T16:50:32Z",
-      "comment_updated_at": "2026-08-21T16:50:32Z",
-      "comment_body_sha256": "ea04f794be0a56b7498b0223118a4804336d440adbf8893d5b6426cedcdbb1c8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111347,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T16:51:19.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ingress-monitor-abort-outcome",
-        "head_sha": "7daf6fbc2a13e15cb6c4699f3f28282d9603c44e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127008:5372697246:2026-08-21T16:45:17Z:re_review",
       "comment_id": "5372697246",
@@ -32286,6 +32239,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127510:5375186915:2026-08-21T20:42:01Z:clawsweeper_needs_human",
+      "comment_id": "5375186915",
+      "comment_version_key": "5375186915:2026-08-21T20:42:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127510#issuecomment-5375186915",
+      "comment_created_at": "2026-08-21T20:42:01Z",
+      "comment_updated_at": "2026-08-21T20:42:01Z",
+      "comment_body_sha256": "149a1fbbeced9c80d1250a0d2714418762c29ba6f6665c629e67f7fec47bc148",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127510,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The checkout has no current-main or parent history, and GitHub reads were unavailable; review the exact merged result and exact-head CI before landing. (sha=6c11b92748581bbfa2289345c1daf51b0eeb4cb7)",
+      "expected_head_sha": "6c11b92748581bbfa2289345c1daf51b0eeb4cb7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T20:42:52.200Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/watchdog-recovery-queue-qa",
+        "head_sha": "6c11b92748581bbfa2289345c1daf51b0eeb4cb7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
