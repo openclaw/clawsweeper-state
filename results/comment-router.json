@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T08:55:03.801Z",
+  "updated_at": "2026-08-21T08:57:27.759Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121533:5238617179:2026-08-21T04:13:33Z:clawsweeper_needs_human",
-      "comment_id": "5238617179",
-      "comment_version_key": "5238617179:2026-08-21T04:13:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121533#issuecomment-5238617179",
-      "comment_created_at": "2026-08-10T09:52:56Z",
-      "comment_updated_at": "2026-08-21T04:13:33Z",
-      "comment_body_sha256": "34b55f629339d10284bfcdcfcecb906249bdcb28bb462212931dd2f6ed42ff6f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121533,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that pass blank or malformed webhook values will now receive an immediate local URL error rather than a later Gateway validation error; production code grows by 13 ne... (sha=0b42070bd8303331e9c6948feb11196e3c8ae709)",
-      "expected_head_sha": "0b42070bd8303331e9c6948feb11196e3c8ae709",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T04:15:35.630Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-edit-reject-blank-webhook",
-        "head_sha": "0b42070bd8303331e9c6948feb11196e3c8ae709",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126982:5365040603:2026-08-21T04:14:42Z:clawsweeper_auto_repair",
       "comment_id": "5365040603",
@@ -33539,6 +33506,53 @@
       "status": "skipped",
       "processed_at": "2026-08-21T08:55:03.801Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116373:5367767569:2026-08-21T08:56:38Z:re_review",
+      "comment_id": "5367767569",
+      "comment_version_key": "5367767569:2026-08-21T08:56:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116373#issuecomment-5367767569",
+      "comment_created_at": "2026-08-21T08:56:38Z",
+      "comment_updated_at": "2026-08-21T08:56:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116373,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T08:57:25.602Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-session-forced-key",
+        "head_sha": "07dec8f1f70109ae1a6b2a67cd2042660dd5e5ae",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
