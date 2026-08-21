@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124751"
 mode: "autonomous"
-run_id: "32514744369"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32514744369"
-head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-21T18:55:45.208Z"
-canonical: "https://github.com/openclaw/openclaw/issues/124751"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/124751"
+run_id: "32449314760"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32449314760"
+head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-21T05:14:09.516Z"
+canonical: "#124751"
+canonical_issue: "#124751"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32514744369](https://github.com/openclaw/clawsweeper/actions/runs/32514744369)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32449314760](https://github.com/openclaw/clawsweeper/actions/runs/32449314760)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/124751
+Canonical: #124751
 
 ## Summary
 
-No code or PR was created. Source tracing identifies a narrow Apple transport/reconciliation repair, but implementation is blocked because this worker is read-only and the mandatory sibling Codex checkout (`../codex`) is absent, so its required direct-source gate cannot be completed.
+Prepared a narrow new-PR repair plan for #124751. Current main’s Gateway already emits the terminal assistant run ID on the live session.message envelope; the shared Apple codec drops it before reconciliation. Workspace is read-only, and Swift tooling returns permissionDenied, so no branch or validation was executed here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ No code or PR was created. Source tracing identifies a narrow Apple transport/re
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #98116 | keep_closed | skipped | related | Historical partial overlap only. |
-| #98117 | keep_closed | skipped | related | Merged historical fix, not the canonical repair for this cluster. |
-| #108692 | keep_closed | skipped | related | Closed, independently fixed auto-scroll report. |
-| #123792 | keep_independent | planned | independent | Different producer, client surfaces, and root cause. |
-| #124751 | fix_needed | blocked | canonical | A writable executor with the required sibling Codex checkout must add the regression, implement the bounded per-run Apple correlation, and run validation. |
-| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | planned | canonical | Prepared for a writable executor after the Codex-source gate is satisfied. |
+| #98117 | keep_closed | skipped | related | Already closed; do not mutate. |
+| #108692 | keep_closed | skipped | related | Already closed; no close action is valid. |
+| #123792 | keep_independent | planned | independent | Related symptom family only; retain its own canonical fix path. |
+| #124751 | fix_needed | planned | canonical | A partial chat.final and fuller session.message with distinct durable identities cannot reconcile by the authoritative live run identity. |
+| #124751 | build_fix_artifact | planned | canonical | Open one narrow ClawSweeper PR from clawsweeper/issue-openclaw-openclaw-124751. |
 
 ## Needs Human
 
