@@ -1,0 +1,65 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127131",
+  "mode": "autonomous",
+  "run_id": "32498397105",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32498397105",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127131.md",
+  "published_at": "2026-08-21T16:41:41.819Z",
+  "canonical": "#127131",
+  "canonical_issue": "#127131",
+  "canonical_pr": null,
+  "summary": "#127131 remains the canonical open bug. Source inspection identifies the cached descriptor wrapper as the owner, but implementation and validation are blocked: the checkout is read-only, mandatory sibling ../codex is absent and cannot be cloned, and pnpm cannot create its Corepack cache.",
+  "actions": [
+    {
+      "target": "#127131",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127131",
+      "candidate_fix": null,
+      "reason": "No closure or merge is authorized; this is the sole canonical repair target."
+    },
+    {
+      "target": "#127131",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127131",
+      "candidate_fix": null,
+      "reason": "Repair should lazily resolve one runtime tool on the first lifecycle use, forward both callbacks, and reuse that same object for execute without changing registry retirement or first-turn selection."
+    },
+    {
+      "target": "#127131",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127131",
+      "candidate_fix": null,
+      "reason": "No branch, patch, regression run, or required direct Codex-runtime inspection can be completed in this worker environment."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with sibling ../codex available. Then run the described regression against pre-fix main, implement the artifact, and run the two required test commands."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
