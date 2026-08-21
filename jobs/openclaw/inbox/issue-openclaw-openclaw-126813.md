@@ -67,22 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the queued multi-agent duplicate-answer bug in https://github.com/openclaw/openclaw/issues/126813. First establish a failing regression where a `message_tool_only` source turn sends a confirmed visible reply, a peer `user_request` is queued while it is active, and the queued successor starts after completion. Carry the exact completed source-reply delivery fact through the active reply-operation/queue handoff into the successor prompt context, then tell the model that an earlier reply was already sent and another visible reply is warranted only for genuinely new content. Preserve `user_request` classification and normal message-tool delivery; do not use a global database lookup, copy the prior reply into transcript history, or treat all peer messages as room events. Add focused boundary regression coverage plus prompt construction coverage, and describe the user-visible fix in the PR body without editing CHANGELOG.md. Related context: https://github.com/openclaw/openclaw/issues/69208.
+Repair the queued duplicate-answer path from https://github.com/openclaw/openclaw/issues/126813. Keep peer messages classified as user_request when configured; do not convert them wholesale to room_event and do not add a config option. At queued-turn admission, use the canonical message-tool outcome record to determine whether the same session’s preceding message-tool-only turn completed a visible delivery after this queue item was enqueued. If so, add calibrated current-turn guidance that a reply was already sent and another visible answer is warranted only for genuinely new content. Preserve the existing unconditional delivery hint for ordinary and no-delivery user requests, transcript persistence, and queue ordering. Add an owner-boundary regression covering active turn -> peer user_request queued -> message-tool delivery -> queue drain, plus no-delivery and fresh-request controls. Related context only: https://github.com/openclaw/openclaw/issues/69208. Do not edit CHANGELOG.md.
 
 Likely files:
 
-- src/auto-reply/reply/prompt-prelude.ts
+- src/auto-reply/reply/followup-turn-admission.ts
+- src/infra/message-tool-run-outcome-store.ts
+- src/auto-reply/reply/followup-turn-admission.test.ts
+- src/infra/message-tool-run-outcome-store.test.ts
 - src/auto-reply/reply/prompt-prelude.test.ts
-- src/auto-reply/reply/agent-runner-execution.ts
-- src/auto-reply/reply/agent-runner-core.ts
-- src/auto-reply/reply/reply-run-registry.contracts.ts
-- src/auto-reply/reply/agent-runner-run.ts
 
 Validation:
 
-- pnpm test src/auto-reply/reply/prompt-prelude.test.ts
-- pnpm test src/auto-reply/reply/queue.collect.test.ts
-- pnpm test src/auto-reply/reply/agent-runner.runreplyagent.e2e.test.ts
+- node scripts/run-vitest.mjs src/auto-reply/reply/followup-turn-admission.test.ts
+- node scripts/run-vitest.mjs src/auto-reply/reply/prompt-prelude.test.ts
+- node scripts/run-vitest.mjs src/infra/message-tool-run-outcome-store.test.ts
+- node scripts/check-changed.mjs -- src/auto-reply/reply/followup-turn-admission.ts src/infra/message-tool-run-outcome-store.ts
 
 ## Operator Prompt
 
