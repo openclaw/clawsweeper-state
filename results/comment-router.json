@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T23:30:43.597Z",
+  "updated_at": "2026-08-21T23:30:52.883Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5317155883:2026-08-17T14:48:18Z:re_review",
-      "comment_id": "5317155883",
-      "comment_version_key": "5317155883:2026-08-17T14:48:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5317155883",
-      "comment_created_at": "2026-08-17T14:48:18Z",
-      "comment_updated_at": "2026-08-17T14:48:18Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T18:45:10.452Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5317236300:2026-08-17T15:06:42Z:re_review",
       "comment_id": "5317236300",
@@ -31988,6 +31961,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127652:5375868507:2026-08-21T23:30:05Z:clawsweeper_needs_human",
+      "comment_id": "5375868507",
+      "comment_version_key": "5375868507:2026-08-21T23:30:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127652#issuecomment-5375868507",
+      "comment_created_at": "2026-08-21T22:02:25Z",
+      "comment_updated_at": "2026-08-21T23:30:05Z",
+      "comment_body_sha256": "e765fb83f552b3d4040d4a52e27dcd41429b1e9d92699a84ae9d7ffb15ff883d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127652,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Settle the root result before descendant-held output reaches EOF (P2)** - wait() cannot resolve after the root exits while a background descendant retains inherited stdout or stderr: settleWait requires both out...; Review finding: [P2] Settle the root result before descendant-held output reaches EOF — src/process/supervisor/service-child-relay-host.ts:210-212 - [medium] Verify the Koffi nati... (sha=b34b7eb18cfe421c061989f3a165dcfce35b812d)",
+      "expected_head_sha": "b34b7eb18cfe421c061989f3a165dcfce35b812d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T23:30:52.883Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/bold-blackburn-f5807a",
+        "head_sha": "b34b7eb18cfe421c061989f3a165dcfce35b812d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
