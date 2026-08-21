@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T14:49:59.552Z",
+  "updated_at": "2026-08-21T14:50:00.105Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127114:5368354869:2026-08-21T09:55:40Z:re_review",
-      "comment_id": "5368354869",
-      "comment_version_key": "5368354869:2026-08-21T09:55:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127114#issuecomment-5368354869",
-      "comment_created_at": "2026-08-21T09:55:40Z",
-      "comment_updated_at": "2026-08-21T09:55:40Z",
-      "comment_body_sha256": "6fe9dfc53a84344649a1674e6a7a54a315d1dba2152b732dd456d6db66e602bd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127114,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T09:56:24.787Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-worktrees-alert",
-        "head_sha": "6b11bcda7350e3df618ae30d19f6bf57e8f43ca0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119195:5368358801:2026-08-21T09:56:05Z:re_review",
       "comment_id": "5368358801",
@@ -31775,6 +31728,39 @@
         "kind": "pull_request",
         "branch": "fix/anthropic-usage-reset-cooldown",
         "head_sha": "3d99396073b3ae078f81938e069573fb23a91f16",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127226:5371461805:2026-08-21T14:49:15Z:clawsweeper_needs_human",
+      "comment_id": "5371461805",
+      "comment_version_key": "5371461805:2026-08-21T14:49:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127226#issuecomment-5371461805",
+      "comment_created_at": "2026-08-21T14:49:15Z",
+      "comment_updated_at": "2026-08-21T14:49:15Z",
+      "comment_body_sha256": "66a662959eb4bf409288425dcd3404d6f7dc409645d05928158064e05ad53626",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127226,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bound unterminated JSON-RPC output (P1)** - readline buffers chunks without a newline internally, so the byte limit in handleLine is never reached for newline-free child output. A malformed or compromised signal...; Review finding: [P1] Bound unterminated JSON-RPC output — extensions/signal/src/link-rpc.ts:41-42 - [medium] Unbounded child stdout before line framing — extensions/signal/src/lin... (sha=7865ab3117babc84b76c7747678b543f192b55ea)",
+      "expected_head_sha": "7865ab3117babc84b76c7747678b543f192b55ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T14:50:00.105Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-qr-setup-current-main",
+        "head_sha": "7865ab3117babc84b76c7747678b543f192b55ea",
         "cluster_id": null,
         "job_path": null
       }
