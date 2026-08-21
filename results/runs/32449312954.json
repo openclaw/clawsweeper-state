@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127009",
+  "mode": "autonomous",
+  "run_id": "32449312954",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32449312954",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127009.md",
+  "published_at": "2026-08-21T05:18:58.057Z",
+  "canonical": "#127009",
+  "canonical_issue": "#127009",
+  "canonical_pr": null,
+  "summary": "#127009 remains a valid narrow producer-boundary bug. The checkout is read-only, dependencies are absent, and required sibling Codex source is unavailable, so no validated branch or PR can be produced in this run.",
+  "actions": [
+    {
+      "target": "#127009",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127009",
+      "candidate_fix": null,
+      "reason": "A writable, dependency-ready checkout plus direct ../codex inspection are required before editing, validation, and PR creation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable checkout with dependencies and the required sibling ../codex source (or allow its clone), then rerun this repair artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
