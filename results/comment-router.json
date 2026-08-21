@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T05:53:59.972Z",
+  "updated_at": "2026-08-21T05:54:37.630Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119574:5190959581:2026-08-21T01:48:53Z:clawsweeper_needs_human",
-      "comment_id": "5190959581",
-      "comment_version_key": "5190959581:2026-08-21T01:48:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119574#issuecomment-5190959581",
-      "comment_created_at": "2026-08-05T11:07:12Z",
-      "comment_updated_at": "2026-08-21T01:48:53Z",
-      "comment_body_sha256": "481eb069f588c2041f8e1409a1a662f46b50de06fb795c089152d0e9a5f0aaca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119574,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7e13c7c9603f6f7548c5b5ff9d5136ba63b074ea)",
-      "expected_head_sha": "7e13c7c9603f6f7548c5b5ff9d5136ba63b074ea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T02:06:28.940Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/assistant-bubble-style",
-        "head_sha": "7e13c7c9603f6f7548c5b5ff9d5136ba63b074ea",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119712:5196827378:2026-08-19T23:31:26Z:clawsweeper_auto_repair",
       "comment_id": "5196827378",
@@ -32294,6 +32261,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121797:5365764949:2026-08-21T05:54:01Z:re_review",
+      "comment_id": "5365764949",
+      "comment_version_key": "5365764949:2026-08-21T05:54:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121797#issuecomment-5365764949",
+      "comment_created_at": "2026-08-21T05:54:01Z",
+      "comment_updated_at": "2026-08-21T05:54:01Z",
+      "comment_body_sha256": "b240b10c14acb3bf7a6fb9f2f0808bda30a09740d95451b2b896a573b55bfe8a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121797,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T05:54:35.847Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-allowlist-suppression-warning",
+        "head_sha": "9d602fd27f557b3af26445f1a870bc963652a25a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
