@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127034",
+  "mode": "autonomous",
+  "run_id": "32455009581",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32455009581",
+  "head_sha": "edfc57b12bfe507d5c7c974986efd02857f53305",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127034.md",
+  "published_at": "2026-08-21T06:42:44.801Z",
+  "canonical": "#127034",
+  "canonical_issue": "#127034",
+  "canonical_pr": null,
+  "summary": "#127034 remains the canonical open bug. Current main still throws when proofId is supplied without proof at extensions/workboard/src/store-workflow.ts:271. A narrow owner-plugin fix is specified, but this read-only worker cannot create the branch or install dependencies: ../codex is absent (required direct-inspection gate), node_modules is absent, and pnpm cannot create its Corepack cache.",
+  "actions": [
+    {
+      "target": "#127034",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127034",
+      "candidate_fix": null,
+      "reason": "Implement the documented proofId lifecycle at the Workboard owner boundary."
+    },
+    {
+      "target": "#127034",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127034",
+      "candidate_fix": null,
+      "reason": "A narrow replacement PR is appropriate once run in a writable, dependency-ready checkout."
+    },
+    {
+      "target": "#127034",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127034",
+      "candidate_fix": null,
+      "reason": "Provision a writable worker with the sibling Codex checkout and installed dependencies, then apply the attached artifact."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

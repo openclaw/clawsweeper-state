@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127034"
 mode: "autonomous"
-run_id: "32452762917"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32452762917"
-head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+run_id: "32455009581"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32455009581"
+head_sha: "edfc57b12bfe507d5c7c974986efd02857f53305"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-21T06:18:11.329Z"
-canonical: "https://github.com/openclaw/openclaw/issues/127034"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/127034"
+published_at: "2026-08-21T06:42:44.801Z"
+canonical: "#127034"
+canonical_issue: "#127034"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32452762917](https://github.com/openclaw/clawsweeper/actions/runs/32452762917)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32455009581](https://github.com/openclaw/clawsweeper/actions/runs/32455009581)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/127034
+Canonical: #127034
 
 ## Summary
 
-Narrow fix artifact prepared for #127034. The source defect is at the Workboard completion owner, but this read-only checkout cannot create or validate the branch: dependencies are absent, Corepack cannot create its cache, the preflight main SHA is unavailable locally, and mandatory sibling ../codex source is absent.
+#127034 remains the canonical open bug. Current main still throws when proofId is supplied without proof at extensions/workboard/src/store-workflow.ts:271. A narrow owner-plugin fix is specified, but this read-only worker cannot create the branch or install dependencies: ../codex is absent (required direct-inspection gate), node_modules is absent, and pnpm cannot create its Corepack cache.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Narrow fix artifact prepared for #127034. The source defect is at the Workboard 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127034 | fix_needed | planned | canonical | The issue is open and canonical. Existing status-only completion already avoids metadata duplication; the required repair is terminal proofId-only completion plus aligned prompts, docs, and boundary regressions. |
-| cluster:issue-openclaw-openclaw-127034 | build_fix_artifact | planned | canonical | Executor should refresh main, install dependencies, apply the owner-boundary fix, and run the listed regressions before opening the single credited fix PR. |
+| #127034 | fix_needed | planned | canonical | Implement the documented proofId lifecycle at the Workboard owner boundary. |
+| #127034 | build_fix_artifact | planned | canonical | A narrow replacement PR is appropriate once run in a writable, dependency-ready checkout. |
+| #127034 | open_fix_pr | blocked | canonical | Provision a writable worker with the sibling Codex checkout and installed dependencies, then apply the attached artifact. |
 
 ## Needs Human
 
