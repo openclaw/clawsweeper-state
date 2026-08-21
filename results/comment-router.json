@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T05:00:07.623Z",
+  "updated_at": "2026-08-21T05:00:53.792Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3499:5364144431:2026-08-21T01:38:55Z:clawsweeper_needs_human",
-      "comment_id": "5364144431",
-      "comment_version_key": "5364144431:2026-08-21T01:38:55Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3499#issuecomment-5364144431",
-      "comment_created_at": "2026-08-21T01:38:55Z",
-      "comment_updated_at": "2026-08-21T01:38:55Z",
-      "comment_body_sha256": "56e3bc3ee13fa96e8f9c0acd6e81f872c07b9e589020ca729863d4bf934301c5",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3499,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bind the identity to the invoking run (P1)** - This only checks the repository and event, so a later workflow-dispatch invocation can replay a valid historical run tuple. Pass the current run ID and attempt from...; Review finding: [P1] Bind the identity to the invoking run — .github/scripts/verify-trusted-tooling-identity.cjs:92-96 - [high] Trusted tuple is not tied to the current invocation... (sha=41299a40a684bbbebc7d35f5eb66cd5526717235)",
-      "expected_head_sha": "41299a40a684bbbebc7d35f5eb66cd5526717235",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T01:39:54.823Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/package-publish-tooling-identity",
-        "head_sha": "41299a40a684bbbebc7d35f5eb66cd5526717235",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-08-21T01:38:17Z:clawsweeper_needs_human",
       "comment_id": "4591541970",
@@ -31455,6 +31422,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123084:5278513657:2026-08-21T05:00:03Z:clawsweeper_needs_human",
+      "comment_id": "5278513657",
+      "comment_version_key": "5278513657:2026-08-21T05:00:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123084#issuecomment-5278513657",
+      "comment_created_at": "2026-08-13T09:28:23Z",
+      "comment_updated_at": "2026-08-21T05:00:03Z",
+      "comment_body_sha256": "b2a74d503029027d38c174662b6f0cf953c270815fa19b622780ba77025dfacd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123084,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - CJK delimiter semantics intentionally change existing Control UI rendering; exact-head checks should complete before merge. (sha=118bb3a69ed1fdbc213e818a0d474407a7cf448a)",
+      "expected_head_sha": "118bb3a69ed1fdbc213e818a0d474407a7cf448a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T05:00:53.792Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/markdown-chat-aug13",
+        "head_sha": "118bb3a69ed1fdbc213e818a0d474407a7cf448a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
