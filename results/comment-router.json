@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T15:56:41.244Z",
+  "updated_at": "2026-08-21T15:57:20.004Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127160:5369276979:2026-08-21T11:49:59Z:clawsweeper_needs_human",
-      "comment_id": "5369276979",
-      "comment_version_key": "5369276979:2026-08-21T11:49:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127160#issuecomment-5369276979",
-      "comment_created_at": "2026-08-21T11:30:33Z",
-      "comment_updated_at": "2026-08-21T11:49:59Z",
-      "comment_body_sha256": "d165f9621be2fd40a18917696572e62ac0627310e4865d376323fe2122ca0346",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127160,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally makes noncanonical manual benchmark targets cache-off, mock-only, and non-publishing; maintainers need to accept that operational restriction. (sha=d0bbce33797676bf9fe264c2eb0e6fc081ed09df)",
-      "expected_head_sha": "d0bbce33797676bf9fe264c2eb0e6fc081ed09df",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T11:54:25.807Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/performance-candidate-trust",
-        "head_sha": "d0bbce33797676bf9fe264c2eb0e6fc081ed09df",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:120150",
       "comment_id": "repair-loop-label-sweep:autofix:120150",
@@ -31533,6 +31500,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127138:5372200820:2026-08-21T15:56:30Z:re_review",
+      "comment_id": "5372200820",
+      "comment_version_key": "5372200820:2026-08-21T15:56:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127138#issuecomment-5372200820",
+      "comment_created_at": "2026-08-21T15:56:30Z",
+      "comment_updated_at": "2026-08-21T15:56:30Z",
+      "comment_body_sha256": "88dfd129ec80161dd3f6ead338c17c91fc5cceeeb0c98fac65fcc737f6ba3475",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127138,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T15:57:17.786Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/frv-install-images",
+        "head_sha": "a416905f82e392deaba8e01686b4763552f3aa98",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
