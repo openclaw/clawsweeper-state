@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T11:13:42.676Z",
+  "updated_at": "2026-08-21T11:13:59.387Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabpot:290:5365843065:2026-08-21T06:04:18Z:re_review",
-      "comment_id": "5365843065",
-      "comment_version_key": "5365843065:2026-08-21T06:04:18Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/290#issuecomment-5365843065",
-      "comment_created_at": "2026-08-21T06:04:18Z",
-      "comment_updated_at": "2026-08-21T06:04:18Z",
-      "comment_body_sha256": "1f1e5ee58aa1cdf2539fdc923ca046f1bc4185d30d27ee849cdfc9b9993817b6",
-      "repo": "openclaw/crabpot",
-      "issue_number": 290,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T06:04:57.206Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codeql-cache-poisoning",
-        "head_sha": "8319d3d1b7e175ee3185a8771ee9b017eb85da39",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127012:5365843008:2026-08-21T06:04:18Z:re_review",
       "comment_id": "5365843008",
@@ -33276,6 +33229,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/octopool:62:5369103793:2026-08-21T11:13:12Z:clawsweeper_needs_human",
+      "comment_id": "5369103793",
+      "comment_version_key": "5369103793:2026-08-21T11:13:12Z",
+      "comment_url": "https://github.com/openclaw/octopool/pull/62#issuecomment-5369103793",
+      "comment_created_at": "2026-08-21T11:13:12Z",
+      "comment_updated_at": "2026-08-21T11:13:12Z",
+      "comment_body_sha256": "87b386920dc5671e164d149cca0ad06551bb578e193a1a44456b90b5412cdb49",
+      "repo": "openclaw/octopool",
+      "issue_number": 62,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=65ec530841b64be7789e0fc2defd1709dcfe4aa3)",
+      "expected_head_sha": "65ec530841b64be7789e0fc2defd1709dcfe4aa3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T11:13:59.387Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codeql-html-sanitization",
+        "head_sha": "65ec530841b64be7789e0fc2defd1709dcfe4aa3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
