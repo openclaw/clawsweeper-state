@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T23:21:23.458Z",
+  "updated_at": "2026-08-21T23:21:27.493Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124014:5300588734:2026-08-21T18:37:43Z:clawsweeper_needs_human",
-      "comment_id": "5300588734",
-      "comment_version_key": "5300588734:2026-08-21T18:37:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5300588734",
-      "comment_created_at": "2026-08-15T04:46:08Z",
-      "comment_updated_at": "2026-08-21T18:37:43Z",
-      "comment_body_sha256": "0c840d3dd74b77e66930f90c5ab2500414bb96b56197e1659821062d8d55bf81",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124014,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head required checks currently report failures, so the armed automerge gate is not satisfied. (sha=a89cef51d317d721e682c6fd6ad78bec30f32468)",
-      "expected_head_sha": "a89cef51d317d721e682c6fd6ad78bec30f32468",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T18:44:52.210Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auth-reauth-state-reset",
-        "head_sha": "a89cef51d317d721e682c6fd6ad78bec30f32468",
-        "cluster_id": "automerge-openclaw-openclaw-124014",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124014:5371332260:2026-08-21T14:37:29Z:re_review",
       "comment_id": "5371332260",
@@ -31700,6 +31653,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122425:5376393300:2026-08-21T23:20:42Z:re_review",
+      "comment_id": "5376393300",
+      "comment_version_key": "5376393300:2026-08-21T23:20:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5376393300",
+      "comment_created_at": "2026-08-21T23:20:42Z",
+      "comment_updated_at": "2026-08-21T23:20:42Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122425,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T23:21:23.067Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inline-slash-skills",
+        "head_sha": "c9fd859527fb096b213f1ba79bc153d3ce689ea4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1212:5349335705:2026-08-21T23:17:10Z:clawsweeper_auto_repair",
