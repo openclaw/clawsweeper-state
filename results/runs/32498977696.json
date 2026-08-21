@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127238",
+  "mode": "autonomous",
+  "run_id": "32498977696",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32498977696",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127238.md",
+  "published_at": "2026-08-21T15:57:15.874Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127238",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127238",
+  "canonical_pr": null,
+  "summary": "#127238 remains the canonical non-security TUI lifecycle bug. Current main’s shared terminal path drops a mismatched run but does not apply the existing no-tracked-run stale-stream guard. A narrow two-file repair is planned; this worker could not edit or validate because the checkout is read-only, dependencies are absent, and the required sibling ../codex checkout is unavailable.",
+  "actions": [
+    {
+      "target": "#127238",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127238",
+      "candidate_fix": null,
+      "reason": "Implementation and proof are blocked only by this worker environment. The executor needs a writable checkout, dependencies, and the required ../codex source inspection before editing and validating."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127238",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127238",
+      "candidate_fix": null,
+      "reason": "A deterministic executor can apply this narrow new-fix-PR plan after restoring the required local validation environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
