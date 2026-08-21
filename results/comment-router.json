@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-21T16:45:02.334Z",
+  "updated_at": "2026-08-21T16:44:07.098Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125820:5328722257:2026-08-21T13:16:12Z:clawsweeper_auto_repair",
+      "comment_id": "5328722257",
+      "comment_version_key": "5328722257:2026-08-21T13:16:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125820#issuecomment-5328722257",
+      "comment_created_at": "2026-08-18T13:17:49Z",
+      "comment_updated_at": "2026-08-21T13:16:12Z",
+      "comment_body_sha256": "a00e5731c95edff35be3d1de6b6596ef49544778117246c689c1caff73778275",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125820,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=aa1dc8de686c933d2915cd56d767b3bf22bf514a)",
+      "expected_head_sha": "aa1dc8de686c933d2915cd56d767b3bf22bf514a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T13:17:47.264Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-row-inline-actions",
+        "head_sha": "aa1dc8de686c933d2915cd56d767b3bf22bf514a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127008:5370301727:2026-08-21T13:20:12Z:re_review",
       "comment_id": "5370301727",
@@ -31903,39 +31936,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127253:5372376143:2026-08-21T16:43:57Z:clawsweeper_needs_human",
-      "comment_id": "5372376143",
-      "comment_version_key": "5372376143:2026-08-21T16:43:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127253#issuecomment-5372376143",
-      "comment_created_at": "2026-08-21T16:13:37Z",
-      "comment_updated_at": "2026-08-21T16:43:57Z",
-      "comment_body_sha256": "e7509be429c25be09f3d2f971796c46a11cac96ded53606de4b1c2bbc0d29173",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127253,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 12 net lines for a capped tail append; the redundant index, undefined, and zero-suffix branches should be collapsed before landing or explicitly accepted. (sha=5da5fc346c62f16dc0952ca9ac68094bf133b2ef)",
-      "expected_head_sha": "5da5fc346c62f16dc0952ca9ac68094bf133b2ef",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T16:45:02.334Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/find-bugs",
-        "head_sha": "5da5fc346c62f16dc0952ca9ac68094bf133b2ef",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
