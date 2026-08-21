@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T08:05:17.908Z",
+  "updated_at": "2026-08-21T08:05:18.160Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110455:5288707867:2026-08-14T02:26:49Z:re_review",
-      "comment_id": "5288707867",
-      "comment_version_key": "5288707867:2026-08-14T02:26:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110455#issuecomment-5288707867",
-      "comment_created_at": "2026-08-14T02:26:49Z",
-      "comment_updated_at": "2026-08-14T02:26:49Z",
-      "comment_body_sha256": "f13a63bc3f3e47dfc85eafec9c6d47ab57b70780b266c0f28eec2e20186c48f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110455,
-      "author": "superdiaodiao",
-      "author_id": 42577861,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T03:57:11.305Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110455:5308324669:2026-08-16T15:59:44Z:re_review",
       "comment_id": "5308324669",
@@ -32919,6 +32892,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127093:5367077960:2026-08-21T08:02:54Z:clawsweeper_needs_human",
+      "comment_id": "5367077960",
+      "comment_version_key": "5367077960:2026-08-21T08:02:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127093#issuecomment-5367077960",
+      "comment_created_at": "2026-08-21T08:02:54Z",
+      "comment_updated_at": "2026-08-21T08:02:54Z",
+      "comment_body_sha256": "65bdc93c520403a072e0c44485ac462ec25f7bced373df339dc0915cfb652480",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127093,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - No post-fix real Chrome extension trace is included; before merge, exercise an actual debugger detach event and confirm the child fails while the root remains routable. (sha=b5e813231b4e288ff1424bd39fc3b46428786886)",
+      "expected_head_sha": "b5e813231b4e288ff1424bd39fc3b46428786886",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T08:05:18.160Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-extension-relay-child-detach",
+        "head_sha": "b5e813231b4e288ff1424bd39fc3b46428786886",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
