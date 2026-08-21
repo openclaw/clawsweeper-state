@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T14:11:31.248Z",
+  "updated_at": "2026-08-21T14:13:13.828Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125725:5325660518:2026-08-21T07:43:33Z:clawsweeper_needs_human",
-      "comment_id": "5325660518",
-      "comment_version_key": "5325660518:2026-08-21T07:43:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125725#issuecomment-5325660518",
-      "comment_created_at": "2026-08-18T08:32:07Z",
-      "comment_updated_at": "2026-08-21T07:43:33Z",
-      "comment_body_sha256": "4a05c1bcb00e2fba6977dc5720135c0c6a054f68e4d4772fc550ff875001cac5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125725,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes focused mocked tests but contains no redacted after-fix Codex app-server trace showing the event, hook payload, and approval r...; Review finding: [P1] Prove the event contract before denying file approvals — extensions/codex/src/app-server/approval-bridge.ts:481-487 - [medium] Validate the fail-closed approv... (sha=8648045eb5516c1eb781c933500af6f457d0eb6d)",
-      "expected_head_sha": "8648045eb5516c1eb781c933500af6f457d0eb6d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T07:48:05.962Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-file-change-hook-params-current",
-        "head_sha": "8648045eb5516c1eb781c933500af6f457d0eb6d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109707:4999628458:2026-08-21T07:42:23Z:clawsweeper_auto_repair",
       "comment_id": "4999628458",
@@ -33073,6 +33040,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T14:11:31.248Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127098:5367237082:2026-08-21T14:08:55Z:clawsweeper_needs_human",
+      "comment_id": "5367237082",
+      "comment_version_key": "5367237082:2026-08-21T14:08:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127098#issuecomment-5367237082",
+      "comment_created_at": "2026-08-21T08:15:01Z",
+      "comment_updated_at": "2026-08-21T14:08:55Z",
+      "comment_body_sha256": "f168a8dd52de2d97ac2a05dc3f063b073b8436ed4cbf8a67a1f464e73b5eb8b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127098,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Revalidate turn capability at Gateway dispatch (P1)** - The changed path validates the process-local turn capability before minting a signed identity, but the identity only carries a copied message-action contex...; Review finding: [P1] Revalidate turn capability at Gateway dispatch — src/infra/outbound/message.ts:313-321 - [P1] Key descriptors by delivery availability — src/plugins/tool-type... (sha=b0e37674f7899bdb9e8b47074d6e386578197087)",
+      "expected_head_sha": "b0e37674f7899bdb9e8b47074d6e386578197087",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T14:13:13.828Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "t3code/review-xxg0dlessxx-fixes",
+        "head_sha": "b0e37674f7899bdb9e8b47074d6e386578197087",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
