@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T20:05:03.669Z",
+  "updated_at": "2026-08-21T20:05:19.589Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125617:5372482355:2026-08-21T16:24:22Z:re_review",
-      "comment_id": "5372482355",
-      "comment_version_key": "5372482355:2026-08-21T16:24:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125617#issuecomment-5372482355",
-      "comment_created_at": "2026-08-21T16:24:22Z",
-      "comment_updated_at": "2026-08-21T16:24:22Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125617,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T16:25:04.555Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/current-chat-media-guidance",
-        "head_sha": "8d476a79716c26e7de087ee67f209c4aa57bf80e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3123:5372482626:2026-08-21T16:24:24Z:clawsweeper_auto_repair",
       "comment_id": "5372482626",
@@ -32159,6 +32112,39 @@
         "kind": "pull_request",
         "branch": "fix/outbound-permanent-rejection-126844",
         "head_sha": "011ee52fb797955b4a60832ff5f1c61f1a0ea167",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125146:5313239694:2026-08-21T19:57:29Z:clawsweeper_needs_human",
+      "comment_id": "5313239694",
+      "comment_version_key": "5313239694:2026-08-21T19:57:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125146#issuecomment-5313239694",
+      "comment_created_at": "2026-08-17T07:43:17Z",
+      "comment_updated_at": "2026-08-21T19:57:29Z",
+      "comment_body_sha256": "7ea1034e1ed17c8dbe714b432f82ecdff3a2b41fc341f7343ecd2593668b80bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125146,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies deterministic regression tests but explicitly reports no after-fix live ACP/provider or real-session run; add redacted transcri... (sha=02bf7f50a8e418a66e73d250f1635a827127282c)",
+      "expected_head_sha": "02bf7f50a8e418a66e73d250f1635a827127282c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T20:05:19.589Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-86592-user-turn-admission",
+        "head_sha": "02bf7f50a8e418a66e73d250f1635a827127282c",
         "cluster_id": null,
         "job_path": null
       }
