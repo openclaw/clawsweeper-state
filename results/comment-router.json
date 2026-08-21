@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T16:43:10.603Z",
+  "updated_at": "2026-08-21T16:44:07.098Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127008:5365337494:2026-08-21T13:14:42Z:clawsweeper_needs_human",
-      "comment_id": "5365337494",
-      "comment_version_key": "5365337494:2026-08-21T13:14:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127008#issuecomment-5365337494",
-      "comment_created_at": "2026-08-21T04:50:28Z",
-      "comment_updated_at": "2026-08-21T13:14:42Z",
-      "comment_body_sha256": "054c354f20580a3d0c44da4df918dd91715dc0e243010be0e7acc493da15d57c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127008,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Attest the YAML executable, not only its manifest (P1)** - The loader verifies the lockfile and yaml/package.json, but then executes the resolved parser entry without checking its bytes. A same-manifest yaml@2.9...; Review finding: [P1] Attest the YAML executable, not only its manifest — scripts/release-plan-producer.mts:361 - [high] Pinned YAML code is not attested — scripts/release-plan-pro... (sha=b3cfa785b1e61bbc0240c99543c907a98b48c452)",
-      "expected_head_sha": "b3cfa785b1e61bbc0240c99543c907a98b48c452",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T13:15:47.241Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-plan-contract3",
-        "head_sha": "b3cfa785b1e61bbc0240c99543c907a98b48c452",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125820:5328722257:2026-08-21T13:16:12Z:clawsweeper_auto_repair",
       "comment_id": "5328722257",
@@ -31905,6 +31872,53 @@
         "kind": "pull_request",
         "branch": "fix/webhook-body-limit-response-delivery",
         "head_sha": "eb07bc5dfdc871f8e04908896db227fd2d93b6df",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125815:5372678753:2026-08-21T16:43:27Z:re_review",
+      "comment_id": "5372678753",
+      "comment_version_key": "5372678753:2026-08-21T16:43:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125815#issuecomment-5372678753",
+      "comment_created_at": "2026-08-21T16:43:27Z",
+      "comment_updated_at": "2026-08-21T16:43:27Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125815,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T16:44:05.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-owner-lifecycle-cas",
+        "head_sha": "092caff2b848bff48393e208857668c46c9d1ed7",
         "cluster_id": null,
         "job_path": null
       },
