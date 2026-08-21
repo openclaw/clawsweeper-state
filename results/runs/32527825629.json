@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126813",
+  "mode": "autonomous",
+  "run_id": "32527825629",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32527825629",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126813.md",
+  "published_at": "2026-08-21T21:32:15.895Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126813",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126813",
+  "canonical_pr": null,
+  "summary": "#126813 remains a focused, reproducible queue-admission bug on main 69d30923bfd9c3027c6dac5ca2291242549dd19b. Current code records a completed message-tool delivery but queued-turn admission never reads that record, so the required acknowledgement cannot be added. Implementation is blocked: this checkout is read-only and the mandatory sibling ../codex source checkout is absent, so the Codex hard gate cannot be completed or a branch/test patch created.",
+  "actions": [
+    {
+      "target": "#126813",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126813",
+      "candidate_fix": null,
+      "reason": "A narrow repair is identified, but the environment cannot satisfy the mandatory Codex-source gate or create and validate the requested branch."
+    },
+    {
+      "target": "#69208",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#126813",
+      "candidate_fix": null,
+      "reason": "Keep the umbrella open; it is context, not the canonical repair target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126813",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126813",
+      "candidate_fix": null,
+      "reason": "Executor should complete the required Codex-source inspection, apply the narrow repair on clawsweeper/issue-openclaw-openclaw-126813, and run the listed regression proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
