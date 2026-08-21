@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T20:05:35.122Z",
+  "updated_at": "2026-08-21T20:07:25.097Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126028:5334535366:2026-08-21T16:26:22Z:clawsweeper_needs_human",
-      "comment_id": "5334535366",
-      "comment_version_key": "5334535366:2026-08-21T16:26:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126028#issuecomment-5334535366",
-      "comment_created_at": "2026-08-18T21:55:45Z",
-      "comment_updated_at": "2026-08-21T16:26:22Z",
-      "comment_body_sha256": "1ef492895c6357467957d695883f796b3b3f51af9c7b074212bb8c31c02c608c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126028,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Provider callbacks now participate in response timing and cancellation across multiple transports; approval should be based on direct confirmation of the cited Mistral, Google, and Co... (sha=e791dd1827efd76c28932acf3320d45c7000a0ed)",
-      "expected_head_sha": "e791dd1827efd76c28932acf3320d45c7000a0ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T16:28:05.549Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/provider-acceptance-hooks-review",
-        "head_sha": "e791dd1827efd76c28932acf3320d45c7000a0ed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126007:5372516999:2026-08-21T16:27:34Z:re_review",
       "comment_id": "5372516999",
@@ -32160,6 +32127,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/ocm:105:5374769817:2026-08-21T20:06:37Z:freeform_assist",
+      "comment_id": "5374769817",
+      "comment_version_key": "5374769817:2026-08-21T20:06:37Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/105#issuecomment-5374769817",
+      "comment_created_at": "2026-08-21T20:06:37Z",
+      "comment_updated_at": "2026-08-21T20:06:37Z",
+      "comment_body_sha256": "1f62843b718181a7fe411b3e62bd3538bda03d8f644a75ebd774a0af577ed450",
+      "repo": "openclaw/ocm",
+      "issue_number": 105,
+      "author": "hannesrudolph",
+      "author_id": 49103247,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "the platform checks requested by the latest review are now complete: - macos: passed - ubuntu: passed - windows compile: passed - rust 1.88 minimum: passed - format: passed i made no additional code change because the review identified no actionable correctness finding. the remaining merge-risk note is already covered by the checked-in wrapper regression: it proves the invocation tree is excluded while an independent sibling process remains detectable and survives destroy. the review's live-verification command did not reach the rust test because its setup attempted a corepack download. that setup failure does not contradict the focused local before/after reproduction or the now-green hosted platform runs. the pr body has been updated with the completed ci evidence.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T20:07:22.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/env-destroy-invocation-tree",
+        "head_sha": "ad9e1d3c9bdf6a611a493eb981a0bc6751dae340",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
