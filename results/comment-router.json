@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-21T08:12:52.199Z",
+  "updated_at": "2026-08-21T08:11:51.574Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116505:5134542153:2026-08-21T03:46:47Z:clawsweeper_auto_repair",
+      "comment_id": "5134542153",
+      "comment_version_key": "5134542153:2026-08-21T03:46:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116505#issuecomment-5134542153",
+      "comment_created_at": "2026-07-30T18:08:16Z",
+      "comment_updated_at": "2026-08-21T03:46:47Z",
+      "comment_body_sha256": "e1f7ef4d6052298cf29951330d13f51632ecd523e7e946c4c1f541d83aee15f4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116505,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9ac042f700e380500572a5bbd1e193f36a99b476)",
+      "expected_head_sha": "9ac042f700e380500572a5bbd1e193f36a99b476",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T03:58:59.577Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-copilot-raptor-catalog",
+        "head_sha": "9ac042f700e380500572a5bbd1e193f36a99b476",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113241:5144956837:2026-08-21T03:42:17Z:clawsweeper_auto_repair",
       "comment_id": "5144956837",
@@ -32888,53 +32921,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119195:5367191309:2026-08-21T08:11:37Z:re_review",
-      "comment_id": "5367191309",
-      "comment_version_key": "5367191309:2026-08-21T08:11:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119195#issuecomment-5367191309",
-      "comment_created_at": "2026-08-21T08:11:37Z",
-      "comment_updated_at": "2026-08-21T08:11:37Z",
-      "comment_body_sha256": "00bce2e7291ab81b31cb048b02ca9e6927fd0a83ba34906594eb8cf4a1249081",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119195,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T08:12:50.669Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/cron-cross-tick-bounded-dispatcher",
-        "head_sha": "43f99b9ccde1c4318459d647f8a38d36cd5a8d61",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
