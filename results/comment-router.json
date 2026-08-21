@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T17:06:32.973Z",
+  "updated_at": "2026-08-21T17:07:15.327Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5231959330:2026-08-09T14:14:00Z:re_review",
-      "comment_id": "5231959330",
-      "comment_version_key": "5231959330:2026-08-09T14:14:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5231959330",
-      "comment_created_at": "2026-08-09T14:14:00Z",
-      "comment_updated_at": "2026-08-09T14:14:00Z",
-      "comment_body_sha256": "921d981a32a961447e180cc4ca2467164914bc9a6e917069180d002ce87aeb83",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T13:35:37.902Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127187:5370483093:2026-08-21T13:37:46Z:re_review",
       "comment_id": "5370483093",
@@ -32016,6 +31989,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127226:5371461805:2026-08-21T17:04:59Z:clawsweeper_needs_human",
+      "comment_id": "5371461805",
+      "comment_version_key": "5371461805:2026-08-21T17:04:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127226#issuecomment-5371461805",
+      "comment_created_at": "2026-08-21T14:49:15Z",
+      "comment_updated_at": "2026-08-21T17:04:59Z",
+      "comment_body_sha256": "7b0b5194cb801eae54fc5b79e32d20539eafff00bf13231c1455c2ee68895e51",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127226,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new QR path authorizes an external Signal device association; its live behavior and exact upstream contract remain unproven on this head, and the generic QR parent PR is still ope... (sha=772f993d57186edb45693bc2195d8995f18d9db1)",
+      "expected_head_sha": "772f993d57186edb45693bc2195d8995f18d9db1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T17:07:15.327Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-qr-setup-current-main",
+        "head_sha": "772f993d57186edb45693bc2195d8995f18d9db1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
