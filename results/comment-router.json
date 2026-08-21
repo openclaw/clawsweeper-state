@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T06:32:45.153Z",
+  "updated_at": "2026-08-21T06:32:46.727Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:4483604105:2026-05-19T01:15:29Z:re_review",
-      "comment_id": "4483604105",
-      "comment_version_key": "4483604105:2026-05-19T01:15:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4483604105",
-      "comment_created_at": "2026-05-19T01:15:29Z",
-      "comment_updated_at": "2026-05-19T01:15:29Z",
-      "comment_body_sha256": "18794db610e534bf9d9ea586ff9725e64ff1b684ee6688b96ca2dc937659e31a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T02:40:39.767Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:4483989864:2026-05-19T02:50:11Z:re_review",
       "comment_id": "4483989864",
@@ -32370,6 +32343,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T06:32:45.153Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127032:5365674858:2026-08-21T06:29:08Z:clawsweeper_needs_human",
+      "comment_id": "5365674858",
+      "comment_version_key": "5365674858:2026-08-21T06:29:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127032#issuecomment-5365674858",
+      "comment_created_at": "2026-08-21T05:42:19Z",
+      "comment_updated_at": "2026-08-21T06:29:08Z",
+      "comment_body_sha256": "4e9b8c7d857a5bca321b7bfd7cd182d83dd278d2d23b0b5e026b54a8021ad3f9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127032,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep proof transport credentials outside configPatch (P1)** - This post-default unrestricted merge lets a scenario replace channels.telegram.apiRoot; the Gateway still resolves the leased bot token from its trus...; Review finding: [P1] Keep proof transport credentials outside configPatch — scripts/e2e/telegram-mantis-sut.ts:283 - [P2] Align the mock-delay cap with the lane budget — scripts/e... (sha=41f96410542d8c86631227c2c833fe258d79f472)",
+      "expected_head_sha": "41f96410542d8c86631227c2c833fe258d79f472",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T06:32:46.727Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mantis-full-proof-agent",
+        "head_sha": "0f9e11d4e70de1acc2a96c471ff75629d4f3a3db",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
