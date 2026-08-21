@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T04:57:37.738Z",
+  "updated_at": "2026-08-21T04:57:55.244Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126926:5364113993:2026-08-21T01:34:06Z:clawsweeper_needs_human",
-      "comment_id": "5364113993",
-      "comment_version_key": "5364113993:2026-08-21T01:34:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126926#issuecomment-5364113993",
-      "comment_created_at": "2026-08-21T01:34:06Z",
-      "comment_updated_at": "2026-08-21T01:34:06Z",
-      "comment_body_sha256": "41042640cbde0ded44eeef6c11229f7d320d6a3d8483a5c7b16c6adfa8b79608",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126926,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The removed worker-build re-entry branch would now fail closed if the installed Rolldown pipeline invoked this plugin again on its own transformed output; the checkout could not direc... (sha=c4614d2b40e7055a01ddd75bf296a338f901cef3)",
-      "expected_head_sha": "c4614d2b40e7055a01ddd75bf296a338f901cef3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T01:35:18.736Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/remove-core-test-scaffolding",
-        "head_sha": "c4614d2b40e7055a01ddd75bf296a338f901cef3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117128:5148652773:2026-08-21T01:33:35Z:clawsweeper_auto_repair",
       "comment_id": "5148652773",
@@ -31339,6 +31306,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127005:5365380712:2026-08-21T04:57:08Z:re_review",
+      "comment_id": "5365380712",
+      "comment_version_key": "5365380712:2026-08-21T04:57:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127005#issuecomment-5365380712",
+      "comment_created_at": "2026-08-21T04:57:08Z",
+      "comment_updated_at": "2026-08-21T04:57:08Z",
+      "comment_body_sha256": "8075b2803839dcd3618645bdfdb09651f6ae5df9f6932787c252e9939e45ce74",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127005,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T04:57:52.654Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-frozen-evidence-compat",
+        "head_sha": "700bcafa07eef7f6f4e121d9507f273f3758bc85",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
