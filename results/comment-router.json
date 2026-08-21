@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T06:18:19.427Z",
+  "updated_at": "2026-08-21T06:18:31.791Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123084:5364362350:2026-08-21T02:13:38Z:re_review",
-      "comment_id": "5364362350",
-      "comment_version_key": "5364362350:2026-08-21T02:13:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123084#issuecomment-5364362350",
-      "comment_created_at": "2026-08-21T02:13:38Z",
-      "comment_updated_at": "2026-08-21T02:13:38Z",
-      "comment_body_sha256": "acf1f962baef0e37d1b1272e08a906ce73d6dbe240495a5027ec408a5f976adc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123084,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T02:19:53.872Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/markdown-chat-aug13",
-        "head_sha": "07332973bf62b78061b66edc74d038f600215d82",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123084:5278513657:2026-08-21T02:19:12Z:clawsweeper_auto_repair",
       "comment_id": "5278513657",
@@ -32495,6 +32448,39 @@
         "kind": "pull_request",
         "branch": "codex/test-perf-30pct-integration",
         "head_sha": "ab21bbccec2c32b8cec85831660d8c5d3970de23",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:63:5365946857:2026-08-21T06:17:23Z:clawsweeper_needs_human",
+      "comment_id": "5365946857",
+      "comment_version_key": "5365946857:2026-08-21T06:17:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/63#issuecomment-5365946857",
+      "comment_created_at": "2026-08-21T06:17:23Z",
+      "comment_updated_at": "2026-08-21T06:17:23Z",
+      "comment_body_sha256": "6bb7b381fa1f07fc9b656c53a04e1ed872de11cc66a15a2f3bef5b1135cb9b43",
+      "repo": "openclaw/openclaw-ansible",
+      "issue_number": 63,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The provided context still shows the Ansible Lint job in progress, so final workflow confirmation should wait for that result. (sha=ecd91943cf94172223f5f475dac760763d988143)",
+      "expected_head_sha": "ecd91943cf94172223f5f475dac760763d988143",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T06:18:31.791Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codeql-workflow-permissions",
+        "head_sha": "ecd91943cf94172223f5f475dac760763d988143",
         "cluster_id": null,
         "job_path": null
       }
