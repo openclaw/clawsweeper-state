@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T23:21:52.842Z",
+  "updated_at": "2026-08-21T23:21:52.933Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126013:5373886157:2026-08-21T18:44:34Z:re_review",
-      "comment_id": "5373886157",
-      "comment_version_key": "5373886157:2026-08-21T18:44:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126013#issuecomment-5373886157",
-      "comment_created_at": "2026-08-21T18:44:16Z",
-      "comment_updated_at": "2026-08-21T18:44:34Z",
-      "comment_body_sha256": "1851c16c6cb33265471f9d7e647e7a28b5366f4b96d412b7175b36ce9b2ca14d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126013,
-      "author": "ekinnee",
-      "author_id": 1707617,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T18:45:03.452Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/new-session-configured-model-catalog",
-        "head_sha": "3b31368cdc7c3903cb3acb6a814e7b93e9b02dbd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5300120787:2026-08-15T02:39:00Z:re_review",
       "comment_id": "5300120787",
@@ -31817,6 +31770,39 @@
         "kind": "pull_request",
         "branch": "scout-t-2026-08-20",
         "head_sha": "cf1730443ea4636c101bf22b168cefc79bc6a279",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:50:5335183047:2026-08-21T23:16:16Z:clawsweeper_needs_human",
+      "comment_id": "5335183047",
+      "comment_version_key": "5335183047:2026-08-21T23:16:16Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/50#issuecomment-5335183047",
+      "comment_created_at": "2026-08-18T22:57:57Z",
+      "comment_updated_at": "2026-08-21T23:16:16Z",
+      "comment_body_sha256": "0edfad1577eca05c14fc6040c7168331ff00f623c1ee035b474c9b21ed4e67ee",
+      "repo": "openclaw/libterminal",
+      "issue_number": 50,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repository autoreview helper could not run against this supplied checkout because its main and PR references have no merge base; this is a review-environment limitation, not a con... (sha=fe65af2e4e4a30122a5ec32df8c2769fe8122f56)",
+      "expected_head_sha": "fe65af2e4e4a30122a5ec32df8c2769fe8122f56",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T23:21:52.933Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/attach-stdio-stdin-error",
+        "head_sha": "fe65af2e4e4a30122a5ec32df8c2769fe8122f56",
         "cluster_id": null,
         "job_path": null
       }
