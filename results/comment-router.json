@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T22:10:29.777Z",
+  "updated_at": "2026-08-21T22:10:57.959Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119834:5200787636:2026-08-21T17:33:20Z:clawsweeper_auto_repair",
-      "comment_id": "5200787636",
-      "comment_version_key": "5200787636:2026-08-21T17:33:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119834#issuecomment-5200787636",
-      "comment_created_at": "2026-08-06T05:34:50Z",
-      "comment_updated_at": "2026-08-21T17:33:20Z",
-      "comment_body_sha256": "07db6e068f6b5989141072c05c21d6b5742d21ee40f11a268fb0540727401d02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119834,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=39545d5df86294137d20db277703d041200ab50a)",
-      "expected_head_sha": "39545d5df86294137d20db277703d041200ab50a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T17:43:39.493Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/59528-sandbox-plugin-load",
-        "head_sha": "ce0e334fff0f8717ef81d03b3c91692975772093",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122067:5255584844:2026-08-21T17:38:16Z:clawsweeper_needs_human",
       "comment_id": "5255584844",
@@ -31988,6 +31955,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127658:5375926956:2026-08-21T22:10:13Z:re_review",
+      "comment_id": "5375926956",
+      "comment_version_key": "5375926956:2026-08-21T22:10:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127658#issuecomment-5375926956",
+      "comment_created_at": "2026-08-21T22:10:13Z",
+      "comment_updated_at": "2026-08-21T22:10:13Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127658,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T22:10:55.391Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-identity-durable-fallback",
+        "head_sha": "684dbd6d9d255dd3de2412d954fcba2fcf68342c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
