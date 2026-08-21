@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T17:09:26.591Z",
+  "updated_at": "2026-08-21T17:10:40.361Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127187:5370665037:2026-08-21T13:51:27Z:re_review",
-      "comment_id": "5370665037",
-      "comment_version_key": "5370665037:2026-08-21T13:51:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127187#issuecomment-5370665037",
-      "comment_created_at": "2026-08-21T13:51:27Z",
-      "comment_updated_at": "2026-08-21T13:51:27Z",
-      "comment_body_sha256": "223fb1679a250951afe39f9f96363d1e8a84c1da7ffad5d7ae110b5b8eaf6413",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127187,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T13:52:11.206Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-mobile-profileless-session-roster",
-        "head_sha": "80d6179b85a5bbd603c92b2a2312356e332bffea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5370666225:2026-08-21T13:51:32Z:re_review",
       "comment_id": "5370666225",
@@ -32028,6 +31981,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/repobar:105:5329034866:2026-08-21T17:07:56Z:clawsweeper_needs_human",
+      "comment_id": "5329034866",
+      "comment_version_key": "5329034866:2026-08-21T17:07:56Z",
+      "comment_url": "https://github.com/steipete/RepoBar/pull/105#issuecomment-5329034866",
+      "comment_created_at": "2026-08-18T13:42:22Z",
+      "comment_updated_at": "2026-08-21T17:07:56Z",
+      "comment_body_sha256": "8abb6d201fc56bc98ec32c48b4d4f5c26d57a1b1e0fa09a6240d3dc4c8a2a3c3",
+      "repo": "steipete/repobar",
+      "issue_number": 105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR lists focused tests and a full check, but supplies no after-fix built-package run or redacted runtime artifact; tests alone are suppleme... (sha=7c6cb44ebe89edeae5f9c4e0b36cb88026455a7c)",
+      "expected_head_sha": "7c6cb44ebe89edeae5f9c4e0b36cb88026455a7c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T17:10:40.361Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "lmoloney-multi-account-contracts",
+        "head_sha": "7c6cb44ebe89edeae5f9c4e0b36cb88026455a7c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
