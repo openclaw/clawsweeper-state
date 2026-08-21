@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T22:06:10.130Z",
+  "updated_at": "2026-08-21T22:07:01.625Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3504:5372359255:2026-08-21T17:37:56Z:clawsweeper_needs_human",
-      "comment_id": "5372359255",
-      "comment_version_key": "5372359255:2026-08-21T17:37:56Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3504#issuecomment-5372359255",
-      "comment_created_at": "2026-08-21T16:11:54Z",
-      "comment_updated_at": "2026-08-21T17:37:56Z",
-      "comment_body_sha256": "45fc45a1165c551b17e527fae4af35619ed16f08c7b4ffdab503e349ac7a6d21",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3504,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging without classifying the two failed local-auth runs could conceal a browser/runtime regression in the malicious-publication safeguard, or normalize an unresolved flaky gate for... (sha=c8ea5c6541e2ea09cc09110c85db983c1f06dcc4)",
-      "expected_head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T17:38:41.154Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/production-minor-and-patch-a1a6a844ee",
-        "head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/libterminal:49:5296191122:2026-08-21T17:21:42Z:clawsweeper_needs_human",
       "comment_id": "5296191122",
@@ -32024,6 +31991,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120491:5375896090:2026-08-21T22:06:08Z:re_review",
+      "comment_id": "5375896090",
+      "comment_version_key": "5375896090:2026-08-21T22:06:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5375896090",
+      "comment_created_at": "2026-08-21T22:06:08Z",
+      "comment_updated_at": "2026-08-21T22:06:08Z",
+      "comment_body_sha256": "db15e3024343ef96a94320a3bc34ff7ba9817529640b66832f32e2e436d0965c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120491,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — rebased onto latest main (new head 50ed96eccdfc5d64a8bfc4149f0eca1dbb660948)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T22:06:59.281Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119992-per-turn-send-budget",
+        "head_sha": "50ed96eccdfc5d64a8bfc4149f0eca1dbb660948",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
