@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T03:18:02.901Z",
+  "updated_at": "2026-08-21T03:18:10.924Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122200:5306511963:2026-08-16T08:22:13Z:re_review",
-      "comment_id": "5306511963",
-      "comment_version_key": "5306511963:2026-08-16T08:22:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122200#issuecomment-5306511963",
-      "comment_created_at": "2026-08-16T08:22:13Z",
-      "comment_updated_at": "2026-08-16T08:22:13Z",
-      "comment_body_sha256": "48d3c0368eb2f55ae53b9d0692dc9882d43089e633b9756971cfac5d69dd6432",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122200,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T22:23:13.848Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125323:5317316795:2026-08-20T22:21:24Z:clawsweeper_auto_repair",
       "comment_id": "5317316795",
@@ -31807,6 +31780,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126865:5362935164:2026-08-21T03:15:32Z:clawsweeper_needs_human",
+      "comment_id": "5362935164",
+      "comment_version_key": "5362935164:2026-08-21T03:15:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126865#issuecomment-5362935164",
+      "comment_created_at": "2026-08-20T22:40:48Z",
+      "comment_updated_at": "2026-08-21T03:15:32Z",
+      "comment_body_sha256": "99158766cb1eb883d724a3b728f7acc3e8bc8a483e38d6479c12baffe25a811d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126865,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Persistent transcript identity is session-state-sensitive; exact-head required checks should confirm the Gateway finalizer rejects only its duplicate write and retains the ACP assista... (sha=0ffa269716c2efffeed247b35659b2d2d7c345cd)",
+      "expected_head_sha": "0ffa269716c2efffeed247b35659b2d2d7c345cd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T03:18:10.924Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-chat-history-replay-dedupe",
+        "head_sha": "0ffa269716c2efffeed247b35659b2d2d7c345cd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
