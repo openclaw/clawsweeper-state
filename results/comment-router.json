@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T07:39:07.963Z",
+  "updated_at": "2026-08-21T07:40:00.932Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123053:5277804115:2026-08-21T03:02:38Z:clawsweeper_needs_human",
-      "comment_id": "5277804115",
-      "comment_version_key": "5277804115:2026-08-21T03:02:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123053#issuecomment-5277804115",
-      "comment_created_at": "2026-08-13T08:15:39Z",
-      "comment_updated_at": "2026-08-21T03:02:38Z",
-      "comment_body_sha256": "895f5a7e9cf205784c9c0244ad7963973fc9ca200c0b9ce6d685377d8d65dabf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123053,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The claimed Codex 0.147.0 compatibility proof does not match the pinned 0.148.0 runtime, so the expanded HTTP contract lacks current direct contract evidence. (sha=7ae9ec8a5fa9eb0b79576ea0bf884599779e3a44)",
-      "expected_head_sha": "7ae9ec8a5fa9eb0b79576ea0bf884599779e3a44",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T03:07:15.129Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/gateway-responses-aug13",
-        "head_sha": "7ae9ec8a5fa9eb0b79576ea0bf884599779e3a44",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-21T03:02:46Z:clawsweeper_needs_human",
       "comment_id": "5290613923",
@@ -33193,6 +33160,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1218:5366035098:2026-08-21T07:39:11Z:clawsweeper_needs_human",
+      "comment_id": "5366035098",
+      "comment_version_key": "5366035098:2026-08-21T07:39:11Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1218#issuecomment-5366035098",
+      "comment_created_at": "2026-08-21T06:28:21Z",
+      "comment_updated_at": "2026-08-21T07:39:11Z",
+      "comment_body_sha256": "2ab89c8329b175f93ba2ad861747a8284663ac9833a8f3e3e7bc0bd49ce47e99",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1218,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Recognize only real shell continuations (P1)** - An even trailing backslash run does not escape the newline in POSIX shell, but endsWith(\"\\\\\") treats it as a continuation. A publisher can therefore end before --...; Review finding: [P1] Recognize only real shell continuations — test/sweep-workflow.test.ts:6554 - [medium] Even trailing backslashes bypass command-boundary detection — test/sweep... (sha=e78fada6edd8fc47b4a79c52b119b90085b25b43)",
+      "expected_head_sha": "e78fada6edd8fc47b4a79c52b119b90085b25b43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T07:40:00.932Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/codeql-linear-workflow-scan",
+        "head_sha": "e78fada6edd8fc47b4a79c52b119b90085b25b43",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
