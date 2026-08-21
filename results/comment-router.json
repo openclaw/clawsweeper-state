@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T14:37:45.461Z",
+  "updated_at": "2026-08-21T14:38:06.114Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Tachikoma:73:5367719940:2026-08-21T09:01:35Z:clawsweeper_needs_human",
-      "comment_id": "5367719940",
-      "comment_version_key": "5367719940:2026-08-21T09:01:35Z",
-      "comment_url": "https://github.com/openclaw/Tachikoma/pull/73#issuecomment-5367719940",
-      "comment_created_at": "2026-08-21T08:51:23Z",
-      "comment_updated_at": "2026-08-21T09:01:35Z",
-      "comment_body_sha256": "c7d86b1fd4af901ceb6e1a88259295f4b9c57b978cc226a37d09a72554a30074",
-      "repo": "openclaw/Tachikoma",
-      "issue_number": 73,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The deliberate HTTPS-only token boundary will fail closed if a supported provider’s token endpoint is ever changed to cleartext; supported current provider endpoints are HTTPS and sho... (sha=4243960443fdaac1c7d84950e9d5f0ce354e5f24)",
-      "expected_head_sha": "4243960443fdaac1c7d84950e9d5f0ce354e5f24",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T09:08:14.540Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codeql-auth-transport",
-        "head_sha": "4243960443fdaac1c7d84950e9d5f0ce354e5f24",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Tachikoma:72:5367710809:2026-08-21T09:00:53Z:clawsweeper_needs_human",
       "comment_id": "5367710809",
@@ -32307,6 +32274,65 @@
           "status": "executed",
           "label": null,
           "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124015:5371331799:2026-08-21T14:37:26Z:maintainer_approve_automerge",
+      "comment_id": "5371331799",
+      "comment_version_key": "5371331799:2026-08-21T14:37:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5371331799",
+      "comment_created_at": "2026-08-21T14:37:26Z",
+      "comment_updated_at": "2026-08-21T14:37:26Z",
+      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124015,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "structured ClawSweeper verdict: pass; PR head is behind base and needs a cloud rebase repair before automerge",
+      "expected_head_sha": "0bd85613ebdc01d7c3a725afe6c736505e37d3a7",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-21T14:38:06.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/signal-port-collision",
+        "head_sha": "0bd85613ebdc01d7c3a725afe6c736505e37d3a7",
+        "cluster_id": "automerge-openclaw-openclaw-124015",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124015.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "pending",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "repair_needed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124015.md"
         }
       ]
     }
