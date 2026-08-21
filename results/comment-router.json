@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T18:07:30.442Z",
+  "updated_at": "2026-08-21T18:07:34.120Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/goplaces:29:5371041182:2026-08-21T14:15:30Z:re_review",
-      "comment_id": "5371041182",
-      "comment_version_key": "5371041182:2026-08-21T14:15:30Z",
-      "comment_url": "https://github.com/openclaw/goplaces/pull/29#issuecomment-5371041182",
-      "comment_created_at": "2026-08-21T14:15:30Z",
-      "comment_updated_at": "2026-08-21T14:15:30Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/goplaces",
-      "issue_number": 29,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T14:16:21.689Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codeql-llms-sanitization",
-        "head_sha": "3a39e5d139d5cc2e659966c448fa64075f8c2686",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127181:5371044951:2026-08-21T14:15:43Z:re_review",
       "comment_id": "5371044951",
@@ -32813,6 +32766,39 @@
         "kind": "pull_request",
         "branch": "fix/ingress-deferred-stall",
         "head_sha": "7a1a56c760c17d0922a2c80e9825a26827652303",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127266:5372509298:2026-08-21T18:03:20Z:clawsweeper_needs_human",
+      "comment_id": "5372509298",
+      "comment_version_key": "5372509298:2026-08-21T18:03:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127266#issuecomment-5372509298",
+      "comment_created_at": "2026-08-21T16:26:49Z",
+      "comment_updated_at": "2026-08-21T18:03:20Z",
+      "comment_body_sha256": "5848e9eeb9a11052d66c7bee8587e5777216fea271bdf329ff1d06962223d1d7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127266,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the shared Gateway failure path for all macOS requests; focused tests cover cancellation, transport retry, response errors, and TLS repair, but required exact-head macOS... (sha=942c90a2eb939c1448f176ab3c7b0898421985fe)",
+      "expected_head_sha": "942c90a2eb939c1448f176ab3c7b0898421985fe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T18:07:34.120Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-185-macos-cron",
+        "head_sha": "942c90a2eb939c1448f176ab3c7b0898421985fe",
         "cluster_id": null,
         "job_path": null
       }
