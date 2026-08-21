@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T17:25:32.575Z",
+  "updated_at": "2026-08-21T17:25:36.685Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123975:5370882887:2026-08-21T14:06:15Z:re_review",
-      "comment_id": "5370882887",
-      "comment_version_key": "5370882887:2026-08-21T14:06:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123975#issuecomment-5370882887",
-      "comment_created_at": "2026-08-21T14:06:15Z",
-      "comment_updated_at": "2026-08-21T14:06:15Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123975,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T14:06:55.718Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/tsgo-stall-timeout",
-        "head_sha": "7d648a2a44eca17164354b738503fa1733d762e5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123979:5370883580:2026-08-21T14:06:18Z:re_review",
       "comment_id": "5370883580",
@@ -32043,6 +31996,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-b3ce8c744c",
         "head_sha": "3f5032481211ae1c55506249636a415f79f62db9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127299:5373065715:2026-08-21T17:21:57Z:clawsweeper_needs_human",
+      "comment_id": "5373065715",
+      "comment_version_key": "5373065715:2026-08-21T17:21:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127299#issuecomment-5373065715",
+      "comment_created_at": "2026-08-21T17:21:57Z",
+      "comment_updated_at": "2026-08-21T17:21:57Z",
+      "comment_body_sha256": "735110cc09d12f72380c347f73135879e72e96e22beb2b6cc5808ca1fd5faa8c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127299,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI was still in progress in the supplied PR state; merge should wait for its completion. (sha=831ac3880ec9327232903e74180d6320e97344c1)",
+      "expected_head_sha": "831ac3880ec9327232903e74180d6320e97344c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T17:25:36.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-qalab-select-labels",
+        "head_sha": "831ac3880ec9327232903e74180d6320e97344c1",
         "cluster_id": null,
         "job_path": null
       }
