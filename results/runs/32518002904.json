@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127297",
+  "mode": "autonomous",
+  "run_id": "32518002904",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32518002904",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127297.md",
+  "published_at": "2026-08-21T19:35:40.991Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127297",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127297",
+  "canonical_pr": null,
+  "summary": "Current main (0b8596607208b1be7c963c701cbce8d45d565bf2) still builds an exact npm remediation target from the raw gateway version, so `2026.7.1-2` becomes the invalid target `@openclaw/brave-plugin@2026.7.1-2`. A narrow two-file repair is ready to plan, but this read-only checkout has no dependencies and the mandatory sibling `../codex` source checkout is absent, so no locally validated branch or PR can be produced here.",
+  "actions": [
+    {
+      "target": "#127297",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127297",
+      "candidate_fix": null,
+      "reason": "The defect is source-proven and narrowly repairable, but this worker cannot modify or validate the branch in the read-only environment."
+    },
+    {
+      "target": "#123136",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#127297",
+      "candidate_fix": null,
+      "reason": "Same plugin-drift area, but it has broader release/publication and recovery scope than the exact normalization defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127297",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127297",
+      "candidate_fix": null,
+      "reason": "One narrow new fix PR is appropriate once a writable checkout with dependencies and the required sibling Codex source is available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
