@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T03:04:39.106Z",
+  "updated_at": "2026-08-21T03:05:03.274Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122747:5270913137:2026-08-20T21:53:34Z:clawsweeper_needs_human",
-      "comment_id": "5270913137",
-      "comment_version_key": "5270913137:2026-08-20T21:53:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122747#issuecomment-5270913137",
-      "comment_created_at": "2026-08-12T18:17:28Z",
-      "comment_updated_at": "2026-08-20T21:53:34Z",
-      "comment_body_sha256": "4e5e189e61b14a6c20249857e17deec34114f4b69c2769457b20096e5ef3f9c8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122747,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused mocked regressions, but no after-fix ACP client run through a real Gateway restart is attached. After adding proof,... (sha=7ef831c6e1437ded2a91d840ea1d94b62357cbc2)",
-      "expected_head_sha": "7ef831c6e1437ded2a91d840ea1d94b62357cbc2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T22:04:13.830Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-gateway-recovery",
-        "head_sha": "7ef831c6e1437ded2a91d840ea1d94b62357cbc2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123321:5286613089:2026-08-20T21:50:29Z:clawsweeper_auto_repair",
       "comment_id": "5286613089",
@@ -31528,6 +31495,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126775:5364690437:2026-08-21T03:04:11Z:re_review",
+      "comment_id": "5364690437",
+      "comment_version_key": "5364690437:2026-08-21T03:04:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126775#issuecomment-5364690437",
+      "comment_created_at": "2026-08-21T03:04:11Z",
+      "comment_updated_at": "2026-08-21T03:04:11Z",
+      "comment_body_sha256": "ffeec5ea5e38a6e02de759ee7bd76a881fac3278f13981151890ce52d010a6b5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126775,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T03:05:00.764Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-126631-sandbox-skills-bind-mount-root-owned",
+        "head_sha": "aa3a00a11c012c5f7b4e8f75898b591d9ac7b2a8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
