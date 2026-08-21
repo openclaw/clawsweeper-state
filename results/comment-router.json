@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T10:42:14.787Z",
+  "updated_at": "2026-08-21T10:44:14.179Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119762:5198139710:2026-08-21T05:37:22Z:clawsweeper_needs_human",
-      "comment_id": "5198139710",
-      "comment_version_key": "5198139710:2026-08-21T05:37:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119762#issuecomment-5198139710",
-      "comment_created_at": "2026-08-05T22:31:15Z",
-      "comment_updated_at": "2026-08-21T05:37:22Z",
-      "comment_body_sha256": "da2f2250ffe80be5a644a1e3553d230cd5b084fd3fea846c4ae0ada8adc9e51c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119762,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Bind the external OIDC callee to its intended caller** - These jobs grant OIDC permission to an external reusable workflow; supplied discussion says the pinned callee verifies its own r...; Review finding: [medium] Bind the external OIDC callee to its intended caller — .github/workflows/openclaw-release-checks.yml:1265 (sha=2d2c7c3e08b3add55252ec3cc1faa7bda2301f6b)",
-      "expected_head_sha": "2d2c7c3e08b3add55252ec3cc1faa7bda2301f6b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T05:38:24.480Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/windows-node-full-release-validation",
-        "head_sha": "2d2c7c3e08b3add55252ec3cc1faa7bda2301f6b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127002:5365651317:2026-08-21T05:38:55Z:re_review",
       "comment_id": "5365651317",
@@ -33284,6 +33251,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127151:5368824269:2026-08-21T10:43:30Z:re_review",
+      "comment_id": "5368824269",
+      "comment_version_key": "5368824269:2026-08-21T10:43:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127151#issuecomment-5368824269",
+      "comment_created_at": "2026-08-21T10:43:30Z",
+      "comment_updated_at": "2026-08-21T10:43:30Z",
+      "comment_body_sha256": "898378a123a9a76a34418590d321dc4ea7f65165cd700fe0e5218ea660fdcbea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127151,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T10:44:11.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-session-routing-replacement",
+        "head_sha": "112c263675abbe8c34fdfe52cdceec40e2417cc5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
