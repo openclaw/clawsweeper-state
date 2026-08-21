@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-119525",
+  "mode": "autonomous",
+  "run_id": "32533440826",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32533440826",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md",
+  "published_at": "2026-08-21T23:07:34.720Z",
+  "canonical": "#119525",
+  "canonical_issue": null,
+  "canonical_pr": "#119525",
+  "summary": "#119525 remains the adopted repair path, but it is not merge-ready: current main moved the deadline owner into corpus orchestration, so the existing five-file PR surface cannot prevent timeout cooldowns. A contributor-branch repair artifact is ready; execution is blocked here because ../codex is unavailable for the required direct Codex check and test dependencies are absent.",
+  "actions": [
+    {
+      "target": "#93199",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119525",
+      "candidate_fix": "#119525",
+      "reason": "Keep the issue open as related context; it has separate scope and must not be closed before the repair lands."
+    },
+    {
+      "target": "#119525",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119525",
+      "candidate_fix": "#119525",
+      "reason": "Repair the writable contributor branch at the current producer boundary; do not merge or close in this worker."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
