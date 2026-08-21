@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T10:14:48.624Z",
+  "updated_at": "2026-08-21T10:14:48.865Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127019:5365433455:2026-08-21T05:05:04Z:clawsweeper_needs_human",
-      "comment_id": "5365433455",
-      "comment_version_key": "5365433455:2026-08-21T05:05:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127019#issuecomment-5365433455",
-      "comment_created_at": "2026-08-21T05:05:04Z",
-      "comment_updated_at": "2026-08-21T05:05:04Z",
-      "comment_body_sha256": "3eb1f53c4772c47fe2935dedbaa31da36e28810f369c193e215a0fc34d393487",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127019,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes release automation: exact-head evidence should show a full-SHA preflight packages Unreleased main while a tagged release still requires its versioned change... (sha=43b275c53e506b7e01fe68acf70f3d5e4cfc73aa)",
-      "expected_head_sha": "43b275c53e506b7e01fe68acf70f3d5e4cfc73aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T05:06:05.558Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/npm-preflight-sha-changelog",
-        "head_sha": "43b275c53e506b7e01fe68acf70f3d5e4cfc73aa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113816:5080318011:2026-08-21T05:03:02Z:clawsweeper_needs_human",
       "comment_id": "5080318011",
@@ -33588,6 +33555,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126775:5359960804:2026-08-21T10:13:54Z:clawsweeper_needs_human",
+      "comment_id": "5359960804",
+      "comment_version_key": "5359960804:2026-08-21T10:13:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126775#issuecomment-5359960804",
+      "comment_created_at": "2026-08-20T18:19:44Z",
+      "comment_updated_at": "2026-08-21T10:13:54Z",
+      "comment_body_sha256": "1a8166460f65f32bb60e23de42a9c622bc1330964d8fc140f0e38b5301f33618",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126775,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body shows Docker behavior after manual provisioning, but the supplied final-head evidence does not show the SHA 5b02f54 resolver...; Review finding: [P1] Anchor directory creation against ancestor replacement — src/agents/sandbox/context.ts:172-173 - [high] Ancestor replacement escapes the ownership walk — src/... (sha=5b02f54e87528516a11fc9bc2ccd3bdd238ad932)",
+      "expected_head_sha": "5b02f54e87528516a11fc9bc2ccd3bdd238ad932",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T10:14:48.865Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-126631-sandbox-skills-bind-mount-root-owned",
+        "head_sha": "5b02f54e87528516a11fc9bc2ccd3bdd238ad932",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
