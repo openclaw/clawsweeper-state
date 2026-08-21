@@ -2,53 +2,6 @@
   "updated_at": "2026-08-21T19:21:10.078Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:123979:5372154677:2026-08-21T15:52:10Z:re_review",
-      "comment_id": "5372154677",
-      "comment_version_key": "5372154677:2026-08-21T15:52:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123979#issuecomment-5372154677",
-      "comment_created_at": "2026-08-21T15:52:10Z",
-      "comment_updated_at": "2026-08-21T15:52:10Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123979,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T15:52:52.427Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/tsdown-heap-host-scaled",
-        "head_sha": "da063a3ab9bbb360db536d691879ea650fb9f424",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:123975:5372154463:2026-08-21T15:52:09Z:re_review",
       "comment_id": "5372154463",
       "comment_version_key": "5372154463:2026-08-21T15:52:09Z",
@@ -32321,6 +32274,39 @@
         "kind": "pull_request",
         "branch": "fix-repo-ffmpeg-wasm-pnpm-minimum-release-age",
         "head_sha": "ed9f500e0613f3f3e10a3b3b61d7efc0c05c32f3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127353:5374085129:2026-08-21T19:20:13Z:clawsweeper_needs_human",
+      "comment_id": "5374085129",
+      "comment_version_key": "5374085129:2026-08-21T19:20:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127353#issuecomment-5374085129",
+      "comment_created_at": "2026-08-21T19:03:40Z",
+      "comment_updated_at": "2026-08-21T19:20:13Z",
+      "comment_body_sha256": "b380c295e980943272ae3b512af5bfffd62b29015dd0f1119fa6687df2946245",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127353,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body describes focused mocks and restart tests, but no after-fix real Slack or Telegram provider result; redact private details in any adde... (sha=eac0cfc13d40bbe86444936e771787b7b393df33)",
+      "expected_head_sha": "eac0cfc13d40bbe86444936e771787b7b393df33",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T19:21:10.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/outbound-permanent-rejection-126844",
+        "head_sha": "eac0cfc13d40bbe86444936e771787b7b393df33",
         "cluster_id": null,
         "job_path": null
       }
