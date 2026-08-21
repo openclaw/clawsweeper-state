@@ -2,53 +2,6 @@
   "updated_at": "2026-08-21T09:38:30.194Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:125707:5365187236:2026-08-21T04:26:07Z:re_review",
-      "comment_id": "5365187236",
-      "comment_version_key": "5365187236:2026-08-21T04:26:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125707#issuecomment-5365187236",
-      "comment_created_at": "2026-08-21T04:26:07Z",
-      "comment_updated_at": "2026-08-21T04:26:07Z",
-      "comment_body_sha256": "2df88ea556ae1bcf22614af48f0ef44bc72fbc85b516046e635f19c1cf8d5af3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125707,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T04:26:46.832Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cached-codex-effort-route",
-        "head_sha": "14ec44aba65a4a23c707d1a74914c84306a9186d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126998:5365190090:2026-08-21T04:26:35Z:clawsweeper_needs_human",
       "comment_id": "5365190090",
       "comment_version_key": "5365190090:2026-08-21T04:26:35Z",
@@ -33720,6 +33673,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124467:5306326967:2026-08-21T09:37:20Z:clawsweeper_needs_human",
+      "comment_id": "5306326967",
+      "comment_version_key": "5306326967:2026-08-21T09:37:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5306326967",
+      "comment_created_at": "2026-08-16T07:29:59Z",
+      "comment_updated_at": "2026-08-21T09:37:20Z",
+      "comment_body_sha256": "b36c0b94805cc12b23adc2f4991ca0b8485ecb111f8e453da3a0522c15c6c61b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124467,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This child depends on the correlated Crabline API from open parent https://github.com/openclaw/openclaw/pull/118008, whose dependency authorization remains owner-gated. The review env... (sha=0d7d0aec5a5ead66d96e82eea342ce97bf84768a)",
+      "expected_head_sha": "0d7d0aec5a5ead66d96e82eea342ce97bf84768a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T09:38:30.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/crabline-structured-identity",
+        "head_sha": "0d7d0aec5a5ead66d96e82eea342ce97bf84768a",
+        "cluster_id": null,
+        "job_path": null
+      }
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1178:5345316217:2026-08-21T09:37:30Z:clawsweeper_needs_human",
