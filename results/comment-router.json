@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T07:42:51.750Z",
+  "updated_at": "2026-08-21T07:43:15.997Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125707:5325833647:2026-08-21T03:03:33Z:clawsweeper_auto_repair",
-      "comment_id": "5325833647",
-      "comment_version_key": "5325833647:2026-08-21T03:03:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125707#issuecomment-5325833647",
-      "comment_created_at": "2026-08-18T08:48:15Z",
-      "comment_updated_at": "2026-08-21T03:03:33Z",
-      "comment_body_sha256": "614989f4970fe52253186dd902c70338a2d00355b5ce1eda11cd6ab56a0a4ddd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125707,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2c759f29297353cf072e7e7cb5c3c60ed542f884)",
-      "expected_head_sha": "2c759f29297353cf072e7e7cb5c3c60ed542f884",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T03:07:15.129Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cached-codex-effort-route",
-        "head_sha": "2c759f29297353cf072e7e7cb5c3c60ed542f884",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125957:5333288529:2026-08-21T03:05:31Z:clawsweeper_auto_repair",
       "comment_id": "5333288529",
@@ -33221,6 +33188,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127003:5365342650:2026-08-21T07:42:28Z:clawsweeper_needs_human",
+      "comment_id": "5365342650",
+      "comment_version_key": "5365342650:2026-08-21T07:42:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127003#issuecomment-5365342650",
+      "comment_created_at": "2026-08-21T04:51:16Z",
+      "comment_updated_at": "2026-08-21T07:42:28Z",
+      "comment_body_sha256": "7eeb2aebe5b126ec2d15dd46c077edb7d70e8bfcabcda5ae25c872532b53e13c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127003,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A manual cron task already in flight during the stated one-release mixed-version window can be reported as interrupted when its old task row lacks an exact receipt mapping. (sha=06f1322f8af9b8dd953013579882c268019a939f)",
+      "expected_head_sha": "06f1322f8af9b8dd953013579882c268019a939f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T07:43:15.997Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-recovery-exact-receipt",
+        "head_sha": "06f1322f8af9b8dd953013579882c268019a939f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
