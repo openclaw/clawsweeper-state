@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T01:42:37.147Z",
+  "updated_at": "2026-08-21T01:45:15.454Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:4607379832:2026-06-02T22:06:00Z:re_review",
-      "comment_id": "4607379832",
-      "comment_version_key": "4607379832:2026-06-02T22:06:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4607379832",
-      "comment_created_at": "2026-06-02T22:06:00Z",
-      "comment_updated_at": "2026-06-02T22:06:00Z",
-      "comment_body_sha256": "006950a83030b81c65aacb1fc682173ac5b2689988d12fd340c231a6e6cfd30b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T18:53:53.119Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:4607629901:2026-06-02T22:53:18Z:re_review",
       "comment_id": "4607629901",
@@ -31437,6 +31410,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T01:42:37.147Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126933:5364177739:2026-08-21T01:44:28Z:clawsweeper_needs_human",
+      "comment_id": "5364177739",
+      "comment_version_key": "5364177739:2026-08-21T01:44:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126933#issuecomment-5364177739",
+      "comment_created_at": "2026-08-21T01:44:28Z",
+      "comment_updated_at": "2026-08-21T01:44:28Z",
+      "comment_body_sha256": "085be6c522d5228152bfe05bdc7a50b5253fdca2ca6bdfa1d0f699cfd0071e8d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126933,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Pin the Corepack bootstrap (P1)** - When the selected Node toolchain lacks Corepack, this downloads and executes npm’s moving corepack@latest release. The pnpm packageManager pin does not constrain that bootstra...; Review finding: [P1] Pin the Corepack bootstrap — .agents/setup:63 - [P2] Reuse the persisted Node toolchain before resolving Node — .agents/setup:45-49 - [high] Moving Corepack b... (sha=be2668a73a952584c8f50d063482e816b3baa9ef)",
+      "expected_head_sha": "be2668a73a952584c8f50d063482e816b3baa9ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T01:45:15.454Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/amp-orb-lifecycle",
+        "head_sha": "be2668a73a952584c8f50d063482e816b3baa9ef",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
