@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T16:23:03.464Z",
+  "updated_at": "2026-08-21T16:23:48.236Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122425:5275474883:2026-08-13T03:09:47Z:re_review",
-      "comment_id": "5275474883",
-      "comment_version_key": "5275474883:2026-08-13T03:09:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5275474883",
-      "comment_created_at": "2026-08-13T03:09:47Z",
-      "comment_updated_at": "2026-08-13T03:09:47Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122425,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T12:45:08.189Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122425:5275623403:2026-08-13T03:33:17Z:re_review",
       "comment_id": "5275623403",
@@ -31866,6 +31839,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:18:4749527613:2026-08-21T16:22:54Z:clawsweeper_auto_repair",
+      "comment_id": "4749527613",
+      "comment_version_key": "4749527613:2026-08-21T16:22:54Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/18#issuecomment-4749527613",
+      "comment_created_at": "2026-06-19T07:43:51Z",
+      "comment_updated_at": "2026-08-21T16:22:54Z",
+      "comment_body_sha256": "25ebaf5371a13aea6ac63936f3a596f1d31e4980c514e0f516eedc004bcfec5c",
+      "repo": "openclaw/rfcs",
+      "issue_number": 18,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=02df4b53ab1402f97d7072420aae986262ea1b1a)",
+      "expected_head_sha": "02df4b53ab1402f97d7072420aae986262ea1b1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T16:23:48.236Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rfc/model-harness-profiles",
+        "head_sha": "02df4b53ab1402f97d7072420aae986262ea1b1a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
