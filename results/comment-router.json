@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T18:37:43.300Z",
+  "updated_at": "2026-08-21T18:37:51.459Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127160:5371260681:2026-08-21T14:31:19Z:re_review",
-      "comment_id": "5371260681",
-      "comment_version_key": "5371260681:2026-08-21T14:31:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127160#issuecomment-5371260681",
-      "comment_created_at": "2026-08-21T14:31:19Z",
-      "comment_updated_at": "2026-08-21T14:31:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127160,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T14:31:59.229Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/performance-candidate-trust",
-        "head_sha": "100d9974cd49fb96d7b6f93fdb991cedbbb212f6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120843:5229602867:2026-08-21T14:24:24Z:clawsweeper_needs_human",
       "comment_id": "5229602867",
@@ -32879,6 +32832,39 @@
         "kind": "pull_request",
         "branch": "bryan/fix-tui-stale-abort-status",
         "head_sha": "f79656361d710888598beb072bdc74306882b136",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:95887:4781537394:2026-08-21T18:36:33Z:clawsweeper_needs_human",
+      "comment_id": "4781537394",
+      "comment_version_key": "4781537394:2026-08-21T18:36:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/95887#issuecomment-4781537394",
+      "comment_created_at": "2026-06-23T16:57:06Z",
+      "comment_updated_at": "2026-08-21T18:36:33Z",
+      "comment_body_sha256": "0d07e9113d7a5ae718b9e43b40e8f7d05c88982aea7d193c234dd0169803b4a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 95887,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A positive shared container heuristic replaces existing host recovery instructions, while direct CLI updates still attempt package mutation before this failure text; the broader foreg... (sha=4f0a476565110f6d0e37a5c44de95004c2512d9b)",
+      "expected_head_sha": "4f0a476565110f6d0e37a5c44de95004c2512d9b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T18:37:51.459Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/container-update-guidance",
+        "head_sha": "4f0a476565110f6d0e37a5c44de95004c2512d9b",
         "cluster_id": null,
         "job_path": null
       }
