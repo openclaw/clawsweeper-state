@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T15:24:53.226Z",
+  "updated_at": "2026-08-21T15:25:04.506Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118890:5170754180:2026-08-21T10:27:45Z:clawsweeper_needs_human",
-      "comment_id": "5170754180",
-      "comment_version_key": "5170754180:2026-08-21T10:27:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118890#issuecomment-5170754180",
-      "comment_created_at": "2026-08-03T19:22:21Z",
-      "comment_updated_at": "2026-08-21T10:27:45Z",
-      "comment_body_sha256": "c6623744d309dc9e2feb313bd7a8b7f8878b22ccf4e61277362a29b0c16a3cc4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118890,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The contributor explicitly provides no executed after-fix native macOS run, recording, terminal output, or redacted runtime log; source tests d...; Review finding: [P1] Keep modal abort terminal and fail closed — apps/macos/Sources/OpenClaw/ExecApprovalsSocket.swift:725 - [high] Modal abort can reach allow fallback — apps/mac... (sha=c7ddd6ac67172d98bc1e2fd179cb4ab6b4734955)",
-      "expected_head_sha": "c7ddd6ac67172d98bc1e2fd179cb4ab6b4734955",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T10:38:20.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-macos-approval-modal-dismissal",
-        "head_sha": "c7ddd6ac67172d98bc1e2fd179cb4ab6b4734955",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118989:5172283604:2026-08-21T10:29:45Z:clawsweeper_needs_human",
       "comment_id": "5172283604",
@@ -31856,6 +31823,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127226:5371851773:2026-08-21T15:24:21Z:re_review",
+      "comment_id": "5371851773",
+      "comment_version_key": "5371851773:2026-08-21T15:24:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127226#issuecomment-5371851773",
+      "comment_created_at": "2026-08-21T15:24:21Z",
+      "comment_updated_at": "2026-08-21T15:24:21Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127226,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T15:25:02.254Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-qr-setup-current-main",
+        "head_sha": "7d7d001ab5901c004554948e72f34f55fa844b92",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
