@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-08-21T12:49:33.164Z
+Generated: 2026-08-21T13:47:09.578Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -50,12 +50,12 @@ Repository: openclaw/openclaw
 | [#118045](https://github.com/openclaw/openclaw/pull/118045) | docs: remove retired openai-codex from /login valid args | clawsweeper/automerge-openclaw-openclaw-114609 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#117976](https://github.com/openclaw/openclaw/pull/117976) | fix(memory): resolve Google embedding provider alias | clawsweeper/issue-openclaw-openclaw-90786 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#117951](https://github.com/openclaw/openclaw/pull/117951) | fix(gateway): preserve assistant media in live chat events | clawsweeper/issue-openclaw-openclaw-73478 | CONFLICTING | DIRTY | skipped | head repository is unknown |
-| [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | clawsweeper/issue-openclaw-openclaw-72504 | MERGEABLE | BEHIND | skipped | head repository is unknown |
+| [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | clawsweeper/issue-openclaw-openclaw-72504 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#117721](https://github.com/openclaw/openclaw/pull/117721) | fix(control-ui): render live thinking agent events in WebChat | clawsweeper/issue-openclaw-openclaw-88079 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | clawsweeper/issue-openclaw-openclaw-98276 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#107739](https://github.com/openclaw/openclaw/pull/107739) | feat(gateway): utility-model auto-titles for sessions beyond dashboard | molty/utility-model-session-titles | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
 | [#107479](https://github.com/openclaw/openclaw/pull/107479) | docs: add ClawHub glossary labels | clawsweeper/automerge-openclaw-openclaw-103304 | MERGEABLE | BEHIND | skipped | head repository is unknown |
 | [#106789](https://github.com/openclaw/openclaw/pull/106789) | docs: respect configured Crabbox provider for agent tests | clawsweeper/automerge-openclaw-openclaw-104485 | CONFLICTING | DIRTY | skipped | head repository is unknown |
-| [#101593](https://github.com/openclaw/openclaw/pull/101593) | fix(infra): handle detached respawn child errors | clawsweeper/automerge-openclaw-openclaw-101489 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#76744](https://github.com/openclaw/openclaw/pull/76744) | docs: standardize ACP behavior spelling | clawsweeper/issue-openclaw-openclaw-76734 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#101593](https://github.com/openclaw/openclaw/pull/101593) | fix(infra): handle detached respawn child errors | clawsweeper/automerge-openclaw-openclaw-101489 | MERGEABLE | BEHIND | skipped | head repository is unknown |
+| [#76744](https://github.com/openclaw/openclaw/pull/76744) | docs: standardize ACP behavior spelling | clawsweeper/issue-openclaw-openclaw-76734 | MERGEABLE | BEHIND | skipped | head repository is unknown |
 | [#75148](https://github.com/openclaw/openclaw/pull/75148) | fix: fallback path user-visible bug | clawsweeper/clawsweeper-commit-openclaw-openclaw-82ca6ecdde80 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
