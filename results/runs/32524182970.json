@@ -1,0 +1,65 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127297",
+  "mode": "autonomous",
+  "run_id": "32524182970",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32524182970",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127297.md",
+  "published_at": "2026-08-21T20:45:41.126Z",
+  "canonical": "#127297",
+  "canonical_issue": "#127297",
+  "canonical_pr": null,
+  "summary": "#127297 remains a narrow, source-proven bug: the exact npm update builder uses raw gatewayVersion while the same owner normalizes numeric packaging suffixes for drift comparison. A PR-ready repair artifact is provided, but this read-only checkout cannot install dependencies, create the required ../codex checkout, modify the branch, or validate tests.",
+  "actions": [
+    {
+      "target": "#123136",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep the broader publication/release follow-up independent."
+    },
+    {
+      "target": "#127297",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127297",
+      "candidate_fix": null,
+      "reason": "The repair is clear, but branch creation and required validation are blocked by the read-only, dependency-free checkout and missing required Codex source checkout."
+    },
+    {
+      "target": "#127297",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127297",
+      "candidate_fix": null,
+      "reason": "A writable executor can make this two-file, net-small repair after satisfying the listed validation blockers."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies installed and the required sibling ../codex checkout so the deterministic executor can apply and validate the repair artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
