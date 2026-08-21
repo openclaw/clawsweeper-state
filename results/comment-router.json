@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T17:00:20.998Z",
+  "updated_at": "2026-08-21T17:00:26.068Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5342638349:2026-08-19T13:13:57Z:re_review",
-      "comment_id": "5342638349",
-      "comment_version_key": "5342638349:2026-08-19T13:13:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5342638349",
-      "comment_created_at": "2026-08-19T13:13:57Z",
-      "comment_updated_at": "2026-08-19T13:13:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T13:35:37.901Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5346878920:2026-08-19T19:16:58Z:re_review",
       "comment_id": "5346878920",
@@ -31938,6 +31911,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:593:5372840332:2026-08-21T16:59:41Z:clawsweeper_needs_human",
+      "comment_id": "5372840332",
+      "comment_version_key": "5372840332:2026-08-21T16:59:41Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/593#issuecomment-5372840332",
+      "comment_created_at": "2026-08-21T16:59:41Z",
+      "comment_updated_at": "2026-08-21T16:59:41Z",
+      "comment_body_sha256": "ca71da7456ab7b10e8ebe947f64aef79aac61e6f70f67c06e098930c314b1ad9",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 593,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Do not cache application-partial results (P1)** - This write stores the fallback under the exact-window cache key. A later lookup rebuilds it as a normal cached result (isApplicationScopedFallback becomes false)...; Review finding: [P1] Do not cache application-partial results — Core/PeekabooAutomationKit/Sources/PeekabooAutomationKit/Services/UI/ElementDetectionService.swift:302-307 - [mediu... (sha=ceb06479739ce1c44c77f0a89bee7534e058c284)",
+      "expected_head_sha": "ceb06479739ce1c44c77f0a89bee7534e058c284",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T17:00:26.068Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/safari-partial-ax-semantics",
+        "head_sha": "ceb06479739ce1c44c77f0a89bee7534e058c284",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
