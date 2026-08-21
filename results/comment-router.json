@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T05:26:45.848Z",
+  "updated_at": "2026-08-21T05:27:18.646Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5039512545:2026-07-21T22:06:37Z:re_review",
-      "comment_id": "5039512545",
-      "comment_version_key": "5039512545:2026-07-21T22:06:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5039512545",
-      "comment_created_at": "2026-07-21T22:06:37Z",
-      "comment_updated_at": "2026-07-21T22:06:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T01:40:28.169Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5044552162:2026-07-22T10:08:59Z:re_review",
       "comment_id": "5044552162",
@@ -31934,6 +31907,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127010:5365365584:2026-08-21T05:23:28Z:clawsweeper_needs_human",
+      "comment_id": "5365365584",
+      "comment_version_key": "5365365584:2026-08-21T05:23:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127010#issuecomment-5365365584",
+      "comment_created_at": "2026-08-21T04:54:47Z",
+      "comment_updated_at": "2026-08-21T05:23:28Z",
+      "comment_body_sha256": "9a9746d86bd220ad3d8dae466aca359f1daec5a1dcbf1abdc00c82c16ef327e0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127010,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This writeback changes persisted delivery destinations; mocked coverage cannot prove that a resolved Direct Messages topic reaches the same topic through the live Telegram flow. (sha=2bd366a6d32146ba0a8ed37edc959d75d45345cc)",
+      "expected_head_sha": "2bd366a6d32146ba0a8ed37edc959d75d45345cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T05:27:18.646Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-telegram-direct-topic-writeback",
+        "head_sha": "2bd366a6d32146ba0a8ed37edc959d75d45345cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
