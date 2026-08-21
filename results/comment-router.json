@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T06:37:08.557Z",
+  "updated_at": "2026-08-21T06:37:35.781Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:4643778344:2026-06-07T19:33:38Z:re_review",
-      "comment_id": "4643778344",
-      "comment_version_key": "4643778344:2026-06-07T19:33:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4643778344",
-      "comment_created_at": "2026-06-07T19:33:38Z",
-      "comment_updated_at": "2026-06-07T19:33:38Z",
-      "comment_body_sha256": "e321baf0c5850ab19ebd438e3cc754ff28595eff3925e9ba354180230d5c0560",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T02:40:39.767Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:4643903707:2026-06-07T19:59:27Z:re_review",
       "comment_id": "4643903707",
@@ -32482,6 +32455,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126761:5359766972:2026-08-21T06:36:38Z:clawsweeper_needs_human",
+      "comment_id": "5359766972",
+      "comment_version_key": "5359766972:2026-08-21T06:36:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126761#issuecomment-5359766972",
+      "comment_created_at": "2026-08-20T18:01:31Z",
+      "comment_updated_at": "2026-08-21T06:36:38Z",
+      "comment_body_sha256": "4024ab52ec60f6cb25da074fa327b78cfeccae1f59fbd8bdacb656896f008fea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126761,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that pass the formerly ignored parent --agent option will begin exiting 1 after merge; whether to require an immediate migration is a maintainer compatibility choice. (sha=5904b8467c4a2756c308c0607f98515407d85616)",
+      "expected_head_sha": "5904b8467c4a2756c308c0607f98515407d85616",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T06:37:35.781Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/models-agent-scope-guard",
+        "head_sha": "5904b8467c4a2756c308c0607f98515407d85616",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
