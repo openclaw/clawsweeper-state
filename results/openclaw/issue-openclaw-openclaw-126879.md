@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126879"
 mode: "autonomous"
-run_id: "32430916177"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32430916177"
+run_id: "32429114227"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32429114227"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-21T00:07:33.571Z"
-canonical: "#126879"
-canonical_issue: "#126879"
+published_at: "2026-08-20T23:44:03.908Z"
+canonical: "https://github.com/openclaw/openclaw/issues/126879"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/126879"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-126879
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32430916177](https://github.com/openclaw/clawsweeper/actions/runs/32430916177)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32429114227](https://github.com/openclaw/clawsweeper/actions/runs/32429114227)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #126879
+Canonical: https://github.com/openclaw/openclaw/issues/126879
 
 ## Summary
 
-#126879 remains the canonical open bug. Current main admits archived trajectory and checkpoint stems through the shared usage predicate; a narrow owner-boundary repair is defined, but this read-only checkout lacks dependencies and the required sibling Codex source, so no branch, tests, or PR could be produced.
+#126879 is a current-main classifier defect: archived trajectory/checkpoint stems pass the reset/deleted archive branch and parse as transcript session IDs. A narrow new fix PR is appropriate, but this worker has a read-only checkout and pnpm cannot initialize Corepack (EROFS), so no branch or validation could be completed here.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: #126879
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ Canonical: #126879
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126879 | fix_needed | blocked | canonical | A writable checkout with dependencies and ../codex is required before editing, running the mandated regression tests, autoreview, and opening the permitted fix PR. |
-| #126879 | build_fix_artifact | planned | canonical | A narrow replacement PR is appropriate once the execution blockers are removed. |
+| #126879 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only execution environment and unavailable pnpm/Corepack cache. The next writable executor should implement the attached narrow PR artifact. |
+| cluster:issue-openclaw-openclaw-126879 | build_fix_artifact | planned |  | Create one credited, narrow fix PR from clawsweeper/issue-openclaw-openclaw-126879 after a writable executor completes the required local proof. |
 
 ## Needs Human
 
-- Provide a writable repair environment with dependencies installed and the required sibling ../codex checkout so the implementation and validation gates can run.
+- none
