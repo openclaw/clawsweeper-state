@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T03:35:38.752Z",
+  "updated_at": "2026-08-21T03:36:05.989Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126875:5363219942:2026-08-20T23:16:24Z:clawsweeper_auto_repair",
-      "comment_id": "5363219942",
-      "comment_version_key": "5363219942:2026-08-20T23:16:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126875#issuecomment-5363219942",
-      "comment_created_at": "2026-08-20T23:16:24Z",
-      "comment_updated_at": "2026-08-20T23:16:24Z",
-      "comment_body_sha256": "0b5826a1f8caa18d82817a96e3dc38d249c94ae73d0bed49373089671b34e5f2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126875,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=650caf6bf77388f959c07d0cac8b69fda2204137)",
-      "expected_head_sha": "650caf6bf77388f959c07d0cac8b69fda2204137",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T23:17:21.918Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-talk-strict-updated-at-119079",
-        "head_sha": "650caf6bf77388f959c07d0cac8b69fda2204137",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111277:5014843128:2026-08-20T23:12:35Z:clawsweeper_auto_repair",
       "comment_id": "5014843128",
@@ -31741,6 +31708,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T03:35:38.752Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116446:5133286180:2026-08-21T03:35:14Z:clawsweeper_needs_human",
+      "comment_id": "5133286180",
+      "comment_version_key": "5133286180:2026-08-21T03:35:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5133286180",
+      "comment_created_at": "2026-07-30T16:03:22Z",
+      "comment_updated_at": "2026-08-21T03:35:14Z",
+      "comment_body_sha256": "a51fa453d172e5319ab101d9e086a23f5a878eb0c8ba51558437d30d8cccc090",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Audit the newly exempt Crabline release** - The QA plugin upgrades a runtime dependency and exempts that release from the age delay, but package source was unavailable for independent i...; Review finding: [medium] Audit the newly exempt Crabline release — pnpm-workspace.yaml:11 - [medium] Approve the endpoint trust boundary — extensions/qa-lab/src/crabline-transport... (sha=cf7bd084eac9a64c469a7be754666f413cbff03a)",
+      "expected_head_sha": "cf7bd084eac9a64c469a7be754666f413cbff03a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T03:36:05.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/qa-crabline-discord-0.1.13",
+        "head_sha": "cf7bd084eac9a64c469a7be754666f413cbff03a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
