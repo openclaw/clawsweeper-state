@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T21:16:51.707Z",
+  "updated_at": "2026-08-21T21:16:55.829Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119525:5188980437:2026-08-21T17:07:16Z:clawsweeper_auto_repair",
-      "comment_id": "5188980437",
-      "comment_version_key": "5188980437:2026-08-21T17:07:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119525#issuecomment-5188980437",
-      "comment_created_at": "2026-08-05T07:38:24Z",
-      "comment_updated_at": "2026-08-21T17:07:16Z",
-      "comment_body_sha256": "487949220ebd656137132a82c2e5c3dce66e2cdcacc0ba38584ba29db9aaae3e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119525,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cca783dc532834f06074292703c6e971a397ecb7)",
-      "expected_head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T17:11:30.086Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/memory-search-timeout-classification",
-        "head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-        "cluster_id": "automerge-openclaw-openclaw-119525",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124014:5300588734:2026-08-21T17:09:26Z:clawsweeper_auto_repair",
       "comment_id": "5300588734",
@@ -32287,6 +32240,39 @@
         "kind": "pull_request",
         "branch": "security/memory-provenance-auto-injection",
         "head_sha": "71c694527e4f329d9147ed05ecf948abca50a063",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120414:5223878450:2026-08-21T21:13:29Z:clawsweeper_needs_human",
+      "comment_id": "5223878450",
+      "comment_version_key": "5223878450:2026-08-21T21:13:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120414#issuecomment-5223878450",
+      "comment_created_at": "2026-08-08T01:38:32Z",
+      "comment_updated_at": "2026-08-21T21:13:29Z",
+      "comment_body_sha256": "2fc7c80c32f0d07ab56e0ad2d55ba0fb23f013b6d6b5e6705c32a5df73cffa45",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120414,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Codex app-server transport contract at the declared @openai/codex 0.148.0 could not be independently verified in the required sibling source checkout; merging without that check l... (sha=be4f9de93e8d40dac76b44380c7567aa5d99140e)",
+      "expected_head_sha": "be4f9de93e8d40dac76b44380c7567aa5d99140e",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-21T21:16:55.829Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-running-state-wording",
+        "head_sha": "be4f9de93e8d40dac76b44380c7567aa5d99140e",
         "cluster_id": null,
         "job_path": null
       }
