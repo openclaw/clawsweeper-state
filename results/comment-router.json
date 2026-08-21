@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T00:14:36.513Z",
+  "updated_at": "2026-08-21T00:15:44.327Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102212:4916091285:2026-08-20T17:04:20Z:clawsweeper_needs_human",
-      "comment_id": "4916091285",
-      "comment_version_key": "4916091285:2026-08-20T17:04:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/102212#issuecomment-4916091285",
-      "comment_created_at": "2026-07-08T14:53:12Z",
-      "comment_updated_at": "2026-08-20T17:04:20Z",
-      "comment_body_sha256": "60e269b661ac14fc6ac83fa4740e020b4a871bdde69d0de091867e9c0fb35992",
-      "repo": "openclaw/openclaw",
-      "issue_number": 102212,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body includes earlier gateway logs, but they do not identify a current rebased head or demonstrate the current plugin-activatio... (sha=04ed2f5267206ab7a63b98fcf2d2ae7d0c22a14b)",
-      "expected_head_sha": "04ed2f5267206ab7a63b98fcf2d2ae7d0c22a14b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T17:12:03.610Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/102205-acp-hot-reload",
-        "head_sha": "04ed2f5267206ab7a63b98fcf2d2ae7d0c22a14b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103530:4934774153:2026-08-20T17:06:20Z:clawsweeper_auto_repair",
       "comment_id": "4934774153",
@@ -31416,6 +31383,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126887:5363613915:2026-08-21T00:14:59Z:re_review",
+      "comment_id": "5363613915",
+      "comment_version_key": "5363613915:2026-08-21T00:14:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126887#issuecomment-5363613915",
+      "comment_created_at": "2026-08-21T00:14:59Z",
+      "comment_updated_at": "2026-08-21T00:14:59Z",
+      "comment_body_sha256": "f2fa94f4274dba0e10a5b27add7193abcf9376bff5868432b0f1aa82fb4054ae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126887,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T00:15:38.754Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-plugin-security-scanner",
+        "head_sha": "944be7ef77022a6c30d674cfd6d82f8d9b97132e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
