@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T06:02:11.780Z",
+  "updated_at": "2026-08-21T06:02:42.711Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111609:5018275224:2026-08-21T02:04:08Z:clawsweeper_needs_human",
-      "comment_id": "5018275224",
-      "comment_version_key": "5018275224:2026-08-21T02:04:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111609#issuecomment-5018275224",
-      "comment_created_at": "2026-07-20T02:39:30Z",
-      "comment_updated_at": "2026-08-21T02:04:08Z",
-      "comment_body_sha256": "a78666d40a4391de5bea7cb03bd0551ec90c75a03c3eba0c8964dcffc031539c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111609,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes an existing upgrade outcome: a complete, JSON-valid but semantically invalid final replay record that current main silently drops will instead retain the legacy source... (sha=5ef93a661db0a872345dc0e96281687f7a47de61)",
-      "expected_head_sha": "5ef93a661db0a872345dc0e96281687f7a47de61",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T02:06:36.001Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/local/reef-readjsonl-bound",
-        "head_sha": "5ef93a661db0a872345dc0e96281687f7a47de61",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111609:5019144935:2026-07-20T05:43:50Z:re_review",
       "comment_id": "5019144935",
@@ -32316,6 +32283,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127040:5365824655:2026-08-21T06:01:54Z:re_review",
+      "comment_id": "5365824655",
+      "comment_version_key": "5365824655:2026-08-21T06:01:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127040#issuecomment-5365824655",
+      "comment_created_at": "2026-08-21T06:01:54Z",
+      "comment_updated_at": "2026-08-21T06:01:54Z",
+      "comment_body_sha256": "5cdae0bc358a3a51bd0fc9306e01110d1ce5be694117c92e45e0bb8bf9b7454f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127040,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T06:02:40.925Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/diffs-lazy-playwright",
+        "head_sha": "ed9651ae34c2720041dce4d1e197ae4a88caf49c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
