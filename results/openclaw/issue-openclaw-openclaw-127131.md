@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127131"
 mode: "autonomous"
-run_id: "32498397105"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32498397105"
+run_id: "32522328837"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32522328837"
 head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-21T16:41:41.819Z"
-canonical: "#127131"
-canonical_issue: "#127131"
+published_at: "2026-08-21T20:22:05.290Z"
+canonical: "https://github.com/openclaw/openclaw/issues/127131"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/127131"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-127131
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32498397105](https://github.com/openclaw/clawsweeper/actions/runs/32498397105)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32522328837](https://github.com/openclaw/clawsweeper/actions/runs/32522328837)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #127131
+Canonical: https://github.com/openclaw/openclaw/issues/127131
 
 ## Summary
 
-#127131 remains the canonical open bug. Source inspection identifies the cached descriptor wrapper as the owner, but implementation and validation are blocked: the checkout is read-only, mandatory sibling ../codex is absent and cannot be cloned, and pnpm cannot create its Corepack cache.
+Current main still has the cached-plugin lifecycle defect, but this worker cannot modify or validate a branch: the filesystem is read-only, pnpm cannot create Corepack’s cache, and the required sibling ../codex source is unavailable. A narrow, credited fix artifact is ready for the executor.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,10 +66,9 @@ Canonical: #127131
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127131 | keep_canonical | planned | canonical | No closure or merge is authorized; this is the sole canonical repair target. |
-| #127131 | fix_needed | planned | canonical | Repair should lazily resolve one runtime tool on the first lifecycle use, forward both callbacks, and reuse that same object for execute without changing registry retirement or first-turn selection. |
-| #127131 | build_fix_artifact | blocked | canonical | No branch, patch, regression run, or required direct Codex-runtime inspection can be completed in this worker environment. |
+| #127131 | fix_needed | blocked | canonical | The source-proven bug is narrow and suitable for a new fix PR, but branch editing and validation are blocked by the read-only worker environment and unavailable required Codex source. |
+| cluster:issue-openclaw-openclaw-127131 | build_fix_artifact | planned | canonical | Executable narrow repair plan for the deterministic executor. |
 
 ## Needs Human
 
-- Provide a writable checkout with sibling ../codex available. Then run the described regression against pre-fix main, implement the artifact, and run the two required test commands.
+- none
