@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T00:07:55.383Z",
+  "updated_at": "2026-08-21T00:09:09.600Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114466:5226093372:2026-08-08T12:25:38Z:re_review",
-      "comment_id": "5226093372",
-      "comment_version_key": "5226093372:2026-08-08T12:25:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114466#issuecomment-5226093372",
-      "comment_created_at": "2026-08-08T12:25:38Z",
-      "comment_updated_at": "2026-08-08T12:25:38Z",
-      "comment_body_sha256": "5ecdc8d5bc7863a6e18c0b9135d9b2d54a2d01b63b4d6b85eacb35ddb18ac6f7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114466,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T17:11:51.534Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114466:5229665734:2026-08-09T03:58:43Z:re_review",
       "comment_id": "5229665734",
@@ -31382,6 +31355,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126889:5363568125:2026-08-21T00:08:31Z:clawsweeper_needs_human",
+      "comment_id": "5363568125",
+      "comment_version_key": "5363568125:2026-08-21T00:08:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126889#issuecomment-5363568125",
+      "comment_created_at": "2026-08-21T00:08:31Z",
+      "comment_updated_at": "2026-08-21T00:08:31Z",
+      "comment_body_sha256": "2bade4a8bc9eefa3fc203bf7519cdd8d955048c9214272c698d1b27d6b3e1234",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126889,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Remove the unsupported model-catalog wildcard (P1)** - perplexity/* only exposes rows supplied by a model-catalog provider, but the existing Perplexity plugin declares only webSearchProviders and has no catalog/...; Review finding: [P1] Remove the unsupported model-catalog wildcard — docs/providers/perplexity-agent-api.md:94-100 - [P1] Retain the supported OpenRouter compatibility route — doc... (sha=5caf8295052d7960738d5c4c082e4dbf0c9baf45)",
+      "expected_head_sha": "5caf8295052d7960738d5c4c082e4dbf0c9baf45",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T00:09:09.600Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs-perplexity-agent-api-provider",
+        "head_sha": "5caf8295052d7960738d5c4c082e4dbf0c9baf45",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
