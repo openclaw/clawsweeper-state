@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T23:25:30.830Z",
+  "updated_at": "2026-08-21T23:26:37.698Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5310741600:2026-08-17T01:19:13Z:re_review",
-      "comment_id": "5310741600",
-      "comment_version_key": "5310741600:2026-08-17T01:19:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5310741600",
-      "comment_created_at": "2026-08-17T01:19:13Z",
-      "comment_updated_at": "2026-08-17T01:19:13Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T18:45:10.452Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5310970860:2026-08-17T02:05:42Z:re_review",
       "comment_id": "5310970860",
@@ -31870,6 +31843,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124831:5376426951:2026-08-21T23:25:56Z:freeform_assist",
+      "comment_id": "5376426951",
+      "comment_version_key": "5376426951:2026-08-21T23:25:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124831#issuecomment-5376426951",
+      "comment_created_at": "2026-08-21T23:25:56Z",
+      "comment_updated_at": "2026-08-21T23:25:56Z",
+      "comment_body_sha256": "d0d0be35629853b412b8aab4305bb9cee67740e80aac1a3fa973bd35e92d4b02",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124831,
+      "author": "hannesrudolph",
+      "author_id": 49103247,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "please re-review `e942563ddc4`; the vm-discovered keychain prompt and cold chatgpt detection race are fixed and the live parallels acceptance now passes.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T23:26:33.038Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/macos-prewarmed-runtime-pr",
+        "head_sha": "e942563ddc4eacea978b70d1b86c951c9c23d1da",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
