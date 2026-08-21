@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T18:58:25.092Z",
+  "updated_at": "2026-08-21T18:58:25.230Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124025:5300731845:2026-08-21T14:54:28Z:clawsweeper_needs_human",
-      "comment_id": "5300731845",
-      "comment_version_key": "5300731845:2026-08-21T14:54:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5300731845",
-      "comment_created_at": "2026-08-15T05:27:33Z",
-      "comment_updated_at": "2026-08-21T14:54:28Z",
-      "comment_body_sha256": "b8d4cea2bdc796d42378cc3e0832a030bb01663ba41081b8961be31c3e1a232e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124025,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recovery path can abort an active run; the version-matched Codex item-ID contract remains unverified because the PR cites rust-v0.147.0 while the plugin resolves 0.148.0. (sha=74cb2a548cc09fc30ee1cd0f2c35b243a9a9bfe1)",
-      "expected_head_sha": "74cb2a548cc09fc30ee1cd0f2c35b243a9a9bfe1",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T15:00:34.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/recovery-stale-tool-eligibility",
-        "head_sha": "74cb2a548cc09fc30ee1cd0f2c35b243a9a9bfe1",
-        "cluster_id": "automerge-openclaw-openclaw-124025",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124025.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124025:5311522690:2026-08-17T03:46:03Z:re_review",
       "comment_id": "5311522690",
@@ -32827,6 +32780,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-b3ce8c744c",
         "head_sha": "368236dae39a5827bd3786b0fbe3b8cdaaf64369",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127240:5372008838:2026-08-21T18:57:28Z:clawsweeper_needs_human",
+      "comment_id": "5372008838",
+      "comment_version_key": "5372008838:2026-08-21T18:57:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127240#issuecomment-5372008838",
+      "comment_created_at": "2026-08-21T15:38:42Z",
+      "comment_updated_at": "2026-08-21T18:57:28Z",
+      "comment_body_sha256": "24920b2355875a82f3887778cdc565a4a517ca4363891356e4fb9d776c909abd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127240,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve target-specific Kova contract selection (P1)** - When callers omit kova_ref, this now unconditionally writes the canonical contract. Current main derives canonical versus legacy-list from the selected t...; Review finding: [P1] Preserve target-specific Kova contract selection — .github/workflows/openclaw-performance.yml:134-136 - [medium] Verify the pinned Crabbox protocol boundary —... (sha=85f8d9b95d73bca76feed1614ead570258045087)",
+      "expected_head_sha": "85f8d9b95d73bca76feed1614ead570258045087",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T18:58:25.230Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/actions-performance-sut-isolation",
+        "head_sha": "a42d19e73c251fc630f5a192d51aab617b51b540",
         "cluster_id": null,
         "job_path": null
       }
