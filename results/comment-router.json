@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T01:54:28.006Z",
+  "updated_at": "2026-08-21T01:54:56.981Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:4715174043:2026-06-16T05:07:27Z:re_review",
-      "comment_id": "4715174043",
-      "comment_version_key": "4715174043:2026-06-16T05:07:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4715174043",
-      "comment_created_at": "2026-06-16T05:07:27Z",
-      "comment_updated_at": "2026-06-16T05:07:27Z",
-      "comment_body_sha256": "e524a34737af6808eeec69853448e9acaf4f06ad4d2774cf79726ca89163f29b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T18:53:53.119Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:4725526093:2026-06-17T03:10:03Z:re_review",
       "comment_id": "4725526093",
@@ -31515,6 +31488,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T01:54:28.006Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122918:5275132077:2026-08-21T01:53:53Z:clawsweeper_needs_human",
+      "comment_id": "5275132077",
+      "comment_version_key": "5275132077:2026-08-21T01:53:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122918#issuecomment-5275132077",
+      "comment_created_at": "2026-08-13T02:14:09Z",
+      "comment_updated_at": "2026-08-21T01:53:53Z",
+      "comment_body_sha256": "4fa4307853eb3a1c12df1ff07d2f7094b4d0c1d2d86689200f896ee974176f2b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122918,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging introduces a 12-hour bearer usable by another client acting as the same verified principal on the same managed Serve listener after the WebSocket closes; this is documented, b... (sha=5e8c8f9284a64157750c3deae3e290e87398ec32)",
+      "expected_head_sha": "5e8c8f9284a64157750c3deae3e290e87398ec32",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T01:54:56.981Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-tailscale-http-auth",
+        "head_sha": "5e8c8f9284a64157750c3deae3e290e87398ec32",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
