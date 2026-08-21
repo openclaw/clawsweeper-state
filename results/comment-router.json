@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-21T12:29:46.432Z",
+  "updated_at": "2026-08-21T12:28:12.323Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115801:5118158856:2026-08-21T06:06:51Z:clawsweeper_auto_repair",
+      "comment_id": "5118158856",
+      "comment_version_key": "5118158856:2026-08-21T06:06:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115801#issuecomment-5118158856",
+      "comment_created_at": "2026-07-29T13:07:10Z",
+      "comment_updated_at": "2026-08-21T06:06:51Z",
+      "comment_body_sha256": "59204c37f7027f15d053820591b34dfe9effd83cf59a830d20a69f4f0b6f99e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115801,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e4cc067a4b6e133041ccd07f79d9a989acdbbf8e)",
+      "expected_head_sha": "e4cc067a4b6e133041ccd07f79d9a989acdbbf8e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T06:45:13.353Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/claude-cli-fast-mode",
+        "head_sha": "e4cc067a4b6e133041ccd07f79d9a989acdbbf8e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116248:5127162503:2026-08-21T06:19:23Z:clawsweeper_auto_repair",
       "comment_id": "5127162503",
@@ -32920,39 +32953,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126495:5349946332:2026-08-21T12:28:05Z:clawsweeper_needs_human",
-      "comment_id": "5349946332",
-      "comment_version_key": "5349946332:2026-08-21T12:28:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126495#issuecomment-5349946332",
-      "comment_created_at": "2026-08-20T01:10:37Z",
-      "comment_updated_at": "2026-08-21T12:28:05Z",
-      "comment_body_sha256": "0767a56e4fed96c7705b668d61f8c8db3296ae904511e394dc55fc2956010679",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126495,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is an upgrade-sensitive provider-model rewrite: the next doctor repair changes existing explicitly image-tagged xAI model IDs, so the image-only predicate must remain intact. (sha=009fe72d6b812f31a123776fbca98e524eafa49a)",
-      "expected_head_sha": "009fe72d6b812f31a123776fbca98e524eafa49a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T12:29:46.432Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/xai-doctor-migrate-retired-media-models",
-        "head_sha": "009fe72d6b812f31a123776fbca98e524eafa49a",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
