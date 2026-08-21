@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T09:13:07.439Z",
+  "updated_at": "2026-08-21T09:13:28.919Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5253659317:2026-08-11T13:14:56Z:re_review",
-      "comment_id": "5253659317",
-      "comment_version_key": "5253659317:2026-08-11T13:14:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5253659317",
-      "comment_created_at": "2026-08-11T13:14:56Z",
-      "comment_updated_at": "2026-08-11T13:14:56Z",
-      "comment_body_sha256": "cdf1877c3f64c42bb851828e434568fc391f8995e3d7951ddfa3a063ff46c13d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T04:21:50.022Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5257679843:2026-08-11T19:11:55Z:re_review",
       "comment_id": "5257679843",
@@ -33663,6 +33636,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109707:4999628458:2026-08-21T09:12:11Z:clawsweeper_needs_human",
+      "comment_id": "4999628458",
+      "comment_version_key": "4999628458:2026-08-21T09:12:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/109707#issuecomment-4999628458",
+      "comment_created_at": "2026-07-17T06:19:11Z",
+      "comment_updated_at": "2026-08-21T09:12:11Z",
+      "comment_body_sha256": "558d550998cc995ecbcc366174ef391a343f0eba9da1cb1b01ab6828e67a5114",
+      "repo": "openclaw/openclaw",
+      "issue_number": 109707,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A healthy fd or ripgrep search that produces no stdout or stderr for 60 seconds now fails, whereas current main lets it continue until completion or an outer abort. (sha=ddd09c0a5a1538795ebf2c580d3e55948e1a8e55)",
+      "expected_head_sha": "ddd09c0a5a1538795ebf2c580d3e55948e1a8e55",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T09:13:28.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-find-grep-exec-timeout",
+        "head_sha": "ddd09c0a5a1538795ebf2c580d3e55948e1a8e55",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
