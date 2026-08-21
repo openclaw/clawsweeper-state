@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T07:40:00.932Z",
+  "updated_at": "2026-08-21T07:40:29.421Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-21T03:02:46Z:clawsweeper_needs_human",
-      "comment_id": "5290613923",
-      "comment_version_key": "5290613923:2026-08-21T03:02:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5290613923",
-      "comment_created_at": "2026-08-14T07:15:12Z",
-      "comment_updated_at": "2026-08-21T03:02:46Z",
-      "comment_body_sha256": "6e96d5faeddca1912cfd97bf7e4b8a3e1f712ca5616c2e6d8c2834615e6ac068",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is stacked on the open parent https://github.com/openclaw/openclaw/pull/123482 and GitHub reports it behind that base; rebasing can alter lifecycle ordering, so its browser... (sha=ea294c0a92cec3a7b9d2d17f1038feaf39676214)",
-      "expected_head_sha": "ea294c0a92cec3a7b9d2d17f1038feaf39676214",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T03:07:15.129Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-performance",
-        "head_sha": "ea294c0a92cec3a7b9d2d17f1038feaf39676214",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125323:5317316795:2026-08-21T02:46:20Z:clawsweeper_auto_repair",
       "comment_id": "5317316795",
@@ -33193,6 +33160,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/mcporter:330:5366774500:2026-08-21T07:39:45Z:re_review",
+      "comment_id": "5366774500",
+      "comment_version_key": "5366774500:2026-08-21T07:39:45Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/330#issuecomment-5366774500",
+      "comment_created_at": "2026-08-21T07:39:45Z",
+      "comment_updated_at": "2026-08-21T07:39:45Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/mcporter",
+      "issue_number": 330,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T07:40:27.451Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codeql-progress-interval-buckets",
+        "head_sha": "c2f9f392a5ff0288f573bf89d4d5f68c22e4f324",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
