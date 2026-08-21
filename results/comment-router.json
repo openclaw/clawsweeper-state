@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T12:22:10.182Z",
+  "updated_at": "2026-08-21T12:25:19.480Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127013:5365376939:2026-08-21T06:37:59Z:clawsweeper_needs_human",
-      "comment_id": "5365376939",
-      "comment_version_key": "5365376939:2026-08-21T06:37:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127013#issuecomment-5365376939",
-      "comment_created_at": "2026-08-21T04:56:32Z",
-      "comment_updated_at": "2026-08-21T06:37:59Z",
-      "comment_body_sha256": "e4cd4442d61d1cec0e239a9151a97f3465d562aba0f376e5a9c130f6a8d83563",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127013,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, so the release-user-journey lane should finish on the exact mergeable head before landing; this test-only change directly controls CI’s ability to d... (sha=885f027fcde121791ac444c53c7f7eaa2bb91b09)",
-      "expected_head_sha": "885f027fcde121791ac444c53c7f7eaa2bb91b09",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T06:38:47.067Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release-journey-channel-health",
-        "head_sha": "885f027fcde121791ac444c53c7f7eaa2bb91b09",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123906:5366115703:2026-08-21T06:38:25Z:re_review",
       "comment_id": "5366115703",
@@ -33219,6 +33186,65 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101593:4903258229:2026-08-21T12:23:52Z:clawsweeper_auto_merge",
+      "comment_id": "4903258229",
+      "comment_version_key": "4903258229:2026-08-21T12:23:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/101593#issuecomment-4903258229",
+      "comment_created_at": "2026-07-07T11:27:50Z",
+      "comment_updated_at": "2026-08-21T12:23:52Z",
+      "comment_body_sha256": "cee65ff104f72a81cde2033d92f8e32be2447fe524f6a04c326dbe59aaddb283",
+      "repo": "openclaw/openclaw",
+      "issue_number": 101593,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=8973666477d60c87d276c1b5f4ad22c21b0ccbb5); current checks are failing: checks-node-compact-small-whole-2:FAILURE",
+      "expected_head_sha": "8973666477d60c87d276c1b5f4ad22c21b0ccbb5",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-21T12:25:14.570Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/automerge-openclaw-openclaw-101489",
+        "head_sha": "8973666477d60c87d276c1b5f4ad22c21b0ccbb5",
+        "cluster_id": "automerge-openclaw-openclaw-101593",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-101593.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-101593.md"
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-101593.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
