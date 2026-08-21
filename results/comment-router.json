@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T07:02:07.307Z",
+  "updated_at": "2026-08-21T07:02:14.922Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126424:5364473986:2026-08-21T02:31:33Z:re_review",
-      "comment_id": "5364473986",
-      "comment_version_key": "5364473986:2026-08-21T02:31:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126424#issuecomment-5364473986",
-      "comment_created_at": "2026-08-21T02:31:33Z",
-      "comment_updated_at": "2026-08-21T02:31:33Z",
-      "comment_body_sha256": "6556874fb6881a8b4104c9b62463e23b13c3bdc8ea683c791783e748f61986aa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126424,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T02:41:08.283Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/conversation-route-ownership",
-        "head_sha": "aec6d37d7b29fc88360980d7efddffc31e104719",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123053:5364516562:2026-08-21T02:38:16Z:re_review",
       "comment_id": "5364516562",
@@ -33332,6 +33285,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-21T06:57:28Z:clawsweeper_needs_human",
+      "comment_id": "5365906478",
+      "comment_version_key": "5365906478:2026-08-21T06:57:28Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5365906478",
+      "comment_created_at": "2026-08-21T06:12:29Z",
+      "comment_updated_at": "2026-08-21T06:57:28Z",
+      "comment_body_sha256": "fc1f9e25547ede86a40967836ca889dbc0b02b094c643e2744c98b99dab543fa",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3501,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The later signal-query deployment must not run until production reports both staged indexes fully backfilled; otherwise that query switch can fail against indexes that remain unavaila... (sha=06a059de703228d0c84c665cb66ac8ddf7de8d11)",
+      "expected_head_sha": "06a059de703228d0c84c665cb66ac8ddf7de8d11",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T07:02:14.922Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/stage-signal-indexes",
+        "head_sha": "06a059de703228d0c84c665cb66ac8ddf7de8d11",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
