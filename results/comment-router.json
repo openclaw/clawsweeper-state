@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T11:08:17.797Z",
+  "updated_at": "2026-08-21T11:08:26.436Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123145:5279595276:2026-08-21T05:56:13Z:clawsweeper_auto_repair",
-      "comment_id": "5279595276",
-      "comment_version_key": "5279595276:2026-08-21T05:56:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123145#issuecomment-5279595276",
-      "comment_created_at": "2026-08-13T11:06:30Z",
-      "comment_updated_at": "2026-08-21T05:56:13Z",
-      "comment_body_sha256": "f362e85646f72d829544369ba8787859b2ff1350bffcdd2d930917baafd26456",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123145,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=84ff0565a646cbdace2a4287f63380aaf1b96069)",
-      "expected_head_sha": "84ff0565a646cbdace2a4287f63380aaf1b96069",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T06:02:09.777Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/qa-tool-search-evidence-aug13",
-        "head_sha": "84ff0565a646cbdace2a4287f63380aaf1b96069",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127042:5365806991:2026-08-21T05:59:37Z:clawsweeper_needs_human",
       "comment_id": "5365806991",
@@ -33262,6 +33229,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127151:5369055719:2026-08-21T11:07:44Z:re_review",
+      "comment_id": "5369055719",
+      "comment_version_key": "5369055719:2026-08-21T11:07:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127151#issuecomment-5369055719",
+      "comment_created_at": "2026-08-21T11:07:44Z",
+      "comment_updated_at": "2026-08-21T11:07:44Z",
+      "comment_body_sha256": "4b0ae27bdfe8520d8d8ff07a9d460b992d0efe4655de458a33f99afa7f975bc2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127151,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T11:08:24.605Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-session-routing-replacement",
+        "head_sha": "112c263675abbe8c34fdfe52cdceec40e2417cc5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
