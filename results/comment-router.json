@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-21T10:01:29.683Z",
+  "updated_at": "2026-08-21T10:00:36.842Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126825:5361245353:2026-08-21T04:52:34Z:clawsweeper_needs_human",
+      "comment_id": "5361245353",
+      "comment_version_key": "5361245353:2026-08-21T04:52:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126825#issuecomment-5361245353",
+      "comment_created_at": "2026-08-20T20:23:35Z",
+      "comment_updated_at": "2026-08-21T04:52:34Z",
+      "comment_body_sha256": "2cc5456d225cd613a30b3a8124f9fcb03df5ef7826f154b661ce7afc5c9df197",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126825,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This PR changes the external shared-state ownership admission boundary; rebase onto current main and require exact-head checks before merge. (sha=1e9af7903eeefd1da873148fa553afce7e52b912)",
+      "expected_head_sha": "1e9af7903eeefd1da873148fa553afce7e52b912",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T04:55:05.776Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/sqlite-schema-fast-path",
+        "head_sha": "1e9af7903eeefd1da873148fa553afce7e52b912",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127005:5365380712:2026-08-21T04:57:08Z:re_review",
       "comment_id": "5365380712",
@@ -33633,39 +33666,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:572:5368201832:2026-08-21T10:00:44Z:clawsweeper_needs_human",
-      "comment_id": "5368201832",
-      "comment_version_key": "5368201832:2026-08-21T10:00:44Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/572#issuecomment-5368201832",
-      "comment_created_at": "2026-08-21T09:39:36Z",
-      "comment_updated_at": "2026-08-21T10:00:44Z",
-      "comment_body_sha256": "5ccfdafbeaa7f4982447faa1fc73896da00d794acaff838eb2e299e14c044bcc",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 572,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Wrap every documented privileged recovery phase (P2)** - The recovery commands pass codesign-run and package-run directly to scripts, while the orchestrator uses --noprofile --norc -p -c 'exec \"$@\"'. This lets i...; Review finding: [P2] Wrap every documented privileged recovery phase — docs/RELEASING.md:104-120 - [medium] Manual instructions bypass the credential wrapper — docs/RELEASING.md:1... (sha=d66aeb316001a0364c56ebfbd059cab60c662773)",
-      "expected_head_sha": "d66aeb316001a0364c56ebfbd059cab60c662773",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T10:01:29.683Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/playground-artifact-provenance",
-        "head_sha": "d66aeb316001a0364c56ebfbd059cab60c662773",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
