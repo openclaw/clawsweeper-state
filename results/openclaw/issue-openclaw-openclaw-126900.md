@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126900"
 mode: "autonomous"
-run_id: "32433514379"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32433514379"
+run_id: "32435929109"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32435929109"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-21T00:49:38.043Z"
-canonical: "https://github.com/openclaw/openclaw/issues/126900"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/126900"
+published_at: "2026-08-21T01:27:55.587Z"
+canonical: "#126900"
+canonical_issue: "#126900"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32433514379](https://github.com/openclaw/clawsweeper/actions/runs/32433514379)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32435929109](https://github.com/openclaw/clawsweeper/actions/runs/32435929109)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/126900
+Canonical: #126900
 
 ## Summary
 
-#126900 remains a focused, reproducible non-security bug on main. Current byte-only preflight compaction has no persisted no-progress outcome. Implementation and validation are blocked because this worker is read-only, dependencies are absent, and the mandated ../codex checkout is unavailable for direct contract inspection.
+#126900 remains the canonical open issue. A narrow durable session-state repair is defined, but no branch was changed: this checkout is read-only, required sibling ../codex source is absent, and focused tests cannot start because dependencies are unavailable.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/126900
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126900 | fix_needed | planned | canonical | A narrow new fix PR is warranted; no existing candidate PR is hydrated. |
-| cluster:issue-openclaw-openclaw-126900 | build_fix_artifact | blocked | canonical | Executor must provision a writable checkout and the mandated sibling Codex clone, then implement and validate on clawsweeper/issue-openclaw-openclaw-126900. |
+| #126900 | build_fix_artifact | planned | canonical | Prepare a replacement fix PR once a writable, dependency-complete checkout with the required ../codex source is available. |
 
 ## Needs Human
 
