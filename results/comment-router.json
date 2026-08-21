@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T15:14:28.171Z",
+  "updated_at": "2026-08-21T15:15:44.095Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118831:5368712784:2026-08-21T10:32:55Z:re_review",
-      "comment_id": "5368712784",
-      "comment_version_key": "5368712784:2026-08-21T10:32:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118831#issuecomment-5368712784",
-      "comment_created_at": "2026-08-21T10:32:55Z",
-      "comment_updated_at": "2026-08-21T10:32:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118831,
-      "author": "ctbritt",
-      "author_id": 4516034,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T10:33:31.430Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/settings-scroll-fix",
-        "head_sha": "a99987651b2efa7f76835de34e4370c8c1382b50",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127122:5368251942:2026-08-21T10:32:36Z:clawsweeper_auto_repair",
       "comment_id": "5368251942",
@@ -31825,6 +31778,39 @@
         "kind": "pull_request",
         "branch": "fix/stdin-epipe",
         "head_sha": "8c44431587ccd6de0d3cd002b56cee01b22c3f15",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3105:5355157253:2026-08-21T15:14:41Z:clawsweeper_auto_repair",
+      "comment_id": "5355157253",
+      "comment_version_key": "5355157253:2026-08-21T15:14:41Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3105#issuecomment-5355157253",
+      "comment_created_at": "2026-08-20T11:19:36Z",
+      "comment_updated_at": "2026-08-21T15:14:41Z",
+      "comment_body_sha256": "29130d1eb0c644622b37325a4b20d0fc56bfdceac434173c682d7839f51da75f",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e6dd9fb2a31568a748651d10e683f49d4d554053)",
+      "expected_head_sha": "e6dd9fb2a31568a748651d10e683f49d4d554053",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T15:15:44.095Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/spend-perf-parallel-memoize",
+        "head_sha": "e6dd9fb2a31568a748651d10e683f49d4d554053",
         "cluster_id": null,
         "job_path": null
       }
