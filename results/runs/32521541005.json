@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124751",
+  "mode": "autonomous",
+  "run_id": "32521541005",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32521541005",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124751.md",
+  "published_at": "2026-08-21T20:15:27.726Z",
+  "canonical": "#124751",
+  "canonical_issue": "#124751",
+  "canonical_pr": null,
+  "summary": "Current main has the reported narrow Apple-chat defect: Gateway emits `session.message` envelope `runId`, but the shared Apple payload drops it, so a partial live final cannot adopt a fuller canonical final with different text. No patch or tests could run because the sandbox is read-only; it also lacks required sibling `../codex`, which cannot be cloned here.",
+  "actions": [
+    {
+      "target": "#98116",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": "#98117",
+      "reason": "Historical context only; no close action is permitted or needed."
+    },
+    {
+      "target": "#98117",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": "#98117",
+      "reason": "Merged historical repair; no mutation."
+    },
+    {
+      "target": "#108692",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Historical adjacent symptom only."
+    },
+    {
+      "target": "#123792",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Different runtime and root cause."
+    },
+    {
+      "target": "#124751",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "A narrow owner-boundary repair is clear, but this read-only environment cannot modify files, create the branch, or run Swift tests."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124751"
 mode: "autonomous"
-run_id: "32520505888"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32520505888"
+run_id: "32521541005"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32521541005"
 head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-21T20:08:24.677Z"
-canonical: "https://github.com/openclaw/openclaw/issues/124751"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/124751"
+published_at: "2026-08-21T20:15:27.726Z"
+canonical: "#124751"
+canonical_issue: "#124751"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32520505888](https://github.com/openclaw/clawsweeper/actions/runs/32520505888)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32521541005](https://github.com/openclaw/clawsweeper/actions/runs/32521541005)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/124751
+Canonical: #124751
 
 ## Summary
 
-#124751 remains the canonical narrow Apple-chat repair. Current main preserves the Gateway session.message envelope runId at src/gateway/session-transcript-message.ts:97 and emits it at src/gateway/server-session-events.ts:372, but the Apple payload model drops it at apps/shared/OpenClawKit/Sources/OpenClawChatUI/ChatModels.swift:806. Implementation is blocked: the mandatory ../codex checkout is absent, this sandbox is read-only, and the focused Swift test command cannot initialize its build target due to permissionDenied.
+Current main has the reported narrow Apple-chat defect: Gateway emits `session.message` envelope `runId`, but the shared Apple payload drops it, so a partial live final cannot adopt a fuller canonical final with different text. No patch or tests could run because the sandbox is read-only; it also lacks required sibling `../codex`, which cannot be cloned here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124751
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #124751 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/124751
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124751 | fix_needed | blocked | canonical | A narrow owner-boundary repair is identified, but no code or verified verdict can be produced until the mandatory Codex source inspection and writable test environment are available. |
-| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor but blocked from implementation and validation in this environment. |
-| #123792 | keep_independent | planned | independent | Separate root cause and implementation path; retain its existing follow-up. |
-| #98116 | keep_closed | skipped | related | Already closed; it is context, not a closure target. |
-| #98117 | keep_closed | skipped | related | Already merged and not the candidate fix for the remaining unequal-text path. |
-| #108692 | keep_closed | skipped | related | Already closed historical context; no closure action is valid. |
+| #98116 | keep_closed | skipped | related | Historical context only; no close action is permitted or needed. |
+| #98117 | keep_closed | skipped | related | Merged historical repair; no mutation. |
+| #108692 | keep_closed | skipped | related | Historical adjacent symptom only. |
+| #123792 | keep_independent | planned | independent | Different runtime and root cause. |
+| #124751 | build_fix_artifact | planned | canonical | A narrow owner-boundary repair is clear, but this read-only environment cannot modify files, create the branch, or run Swift tests. |
 
 ## Needs Human
 
