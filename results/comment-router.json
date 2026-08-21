@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T17:07:15.327Z",
+  "updated_at": "2026-08-21T17:07:28.474Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127187:5370483093:2026-08-21T13:37:46Z:re_review",
-      "comment_id": "5370483093",
-      "comment_version_key": "5370483093:2026-08-21T13:37:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127187#issuecomment-5370483093",
-      "comment_created_at": "2026-08-21T13:37:46Z",
-      "comment_updated_at": "2026-08-21T13:37:46Z",
-      "comment_body_sha256": "761e5cd85d1ff562b5791aeabdaee65e458b796a8e8b262cc4cd85595dbe0788",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127187,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T13:38:30.009Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-mobile-profileless-session-roster",
-        "head_sha": "80d6179b85a5bbd603c92b2a2312356e332bffea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5370515172:2026-08-21T13:40:47Z:re_review",
       "comment_id": "5370515172",
@@ -32022,6 +31975,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124015:5300602703:2026-08-21T17:02:41Z:clawsweeper_needs_human",
+      "comment_id": "5300602703",
+      "comment_version_key": "5300602703:2026-08-21T17:02:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5300602703",
+      "comment_created_at": "2026-08-15T04:50:09Z",
+      "comment_updated_at": "2026-08-21T17:02:41Z",
+      "comment_body_sha256": "86194903d85c6dfbe43416de412354688486cedba459cddac0e979b4ffd4e6bf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124015,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing managed-native accounts whose configured endpoint is occupied now fail before signal-cli starts; recovery is to free the endpoint, select a different existing transport.httpP... (sha=0bd85613ebdc01d7c3a725afe6c736505e37d3a7)",
+      "expected_head_sha": "0bd85613ebdc01d7c3a725afe6c736505e37d3a7",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T17:07:28.474Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/signal-port-collision",
+        "head_sha": "0bd85613ebdc01d7c3a725afe6c736505e37d3a7",
+        "cluster_id": "automerge-openclaw-openclaw-124015",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124015.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
