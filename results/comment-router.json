@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T15:58:11.803Z",
+  "updated_at": "2026-08-21T15:58:12.420Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119174:5177565663:2026-08-21T12:00:13Z:clawsweeper_needs_human",
-      "comment_id": "5177565663",
-      "comment_version_key": "5177565663:2026-08-21T12:00:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119174#issuecomment-5177565663",
-      "comment_created_at": "2026-08-04T10:10:14Z",
-      "comment_updated_at": "2026-08-21T12:00:13Z",
-      "comment_body_sha256": "71ba222c9c73fcea635ed9ae6f408633ec956ee5c9c7741bab7c76c65accee9f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119174,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body asserts live runs, but the record supplies no inspectable redacted trace, log, terminal output, artifact, screenshot, or recording...; Review finding: [P1] Terminalize post-ready provider failures — extensions/volcengine/realtime-voice-provider.ts:467-476 - [P1] Bound compressed frames before decompression — exte... (sha=9add234e5b2d280c9541f37907b352868fac3f02)",
-      "expected_head_sha": "9add234e5b2d280c9541f37907b352868fac3f02",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T12:06:26.514Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/doubao-realtime-voice",
-        "head_sha": "9add234e5b2d280c9541f37907b352868fac3f02",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120114:5211523982:2026-08-21T11:57:16Z:clawsweeper_needs_human",
       "comment_id": "5211523982",
@@ -31502,6 +31469,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T15:58:11.803Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127104:5367444887:2026-08-21T15:56:49Z:clawsweeper_needs_human",
+      "comment_id": "5367444887",
+      "comment_version_key": "5367444887:2026-08-21T15:56:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127104#issuecomment-5367444887",
+      "comment_created_at": "2026-08-21T08:29:26Z",
+      "comment_updated_at": "2026-08-21T15:56:49Z",
+      "comment_body_sha256": "e022f9329b32e6cecd1b0c8ca0e82b9ed1a35b0d3c35da715d7183a5e4f9c1a5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127104,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject every non-Gateway execution target (P1)** - effectiveHost can be sandbox as well as node, but this check only rejects node before manager.open always creates a Gateway-host PTY. A permissive sandbox-targe...; Review finding: [P1] Reject every non-Gateway execution target — src/agents/tools/terminal-tool.ts:380-384 - [P1] Forward session permissions through skill dispatch — src/skills/r... (sha=289faef365123591a373b3e6e351b6ff699f5128)",
+      "expected_head_sha": "289faef365123591a373b3e6e351b6ff699f5128",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T15:58:12.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/terminal-exec-policy-124946-v2",
+        "head_sha": "289faef365123591a373b3e6e351b6ff699f5128",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
