@@ -1,48 +1,6 @@
 {
-  "updated_at": "2026-08-21T07:27:14.192Z",
+  "updated_at": "2026-08-21T07:28:10.678Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126956:5364653024:2026-08-21T02:59:30Z:re_review",
-      "comment_id": "5364653024",
-      "comment_version_key": "5364653024:2026-08-21T02:59:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126956#issuecomment-5364653024",
-      "comment_created_at": "2026-08-21T02:59:30Z",
-      "comment_updated_at": "2026-08-21T02:59:30Z",
-      "comment_body_sha256": "39a82907e1bfd40c5defdb1f272093f97c64dcda88a47acf9cbe44dc6d754991",
-      "source_delivery_id": "5462de50-9d0c-11f1-9463-7fa924196615",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126956,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T03:00:07.963Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/config-docs-baseline",
-        "head_sha": "c77afda6d44a8230441838ee6684052ac914a703",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126958:5364653206:2026-08-21T02:59:31Z:re_review",
       "comment_id": "5364653206",
@@ -33203,6 +33161,39 @@
         "kind": "pull_request",
         "branch": "fix/agents-find-grep-exec-timeout",
         "head_sha": "f3b8721056102600c29071e2a650f25377177058",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:93:5366607120:2026-08-21T07:27:14Z:clawsweeper_needs_human",
+      "comment_id": "5366607120",
+      "comment_version_key": "5366607120:2026-08-21T07:27:14Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/93#issuecomment-5366607120",
+      "comment_created_at": "2026-08-21T07:27:14Z",
+      "comment_updated_at": "2026-08-21T07:27:14Z",
+      "comment_body_sha256": "eb4c28a9db5a944949573542064f513ba27d3663ad3eb5882353f9766f7b544d",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 93,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - ANSI v0.11.8 changes character-width behavior, and crawlkit uses its width and cut functions in the TUI; unusual multi-code-point text can alter terminal alignment after merge. (sha=ab90b938061a65fe355470f559a57d439e4f7663)",
+      "expected_head_sha": "ab90b938061a65fe355470f559a57d439e4f7663",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T07:28:10.678Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/charmbracelet/x/ansi-0.11.8",
+        "head_sha": "ab90b938061a65fe355470f559a57d439e4f7663",
         "cluster_id": null,
         "job_path": null
       }
