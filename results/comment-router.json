@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T20:03:07.442Z",
+  "updated_at": "2026-08-21T20:03:21.448Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127224:5372455548:2026-08-21T16:21:39Z:re_review",
-      "comment_id": "5372455548",
-      "comment_version_key": "5372455548:2026-08-21T16:21:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127224#issuecomment-5372455548",
-      "comment_created_at": "2026-08-21T16:21:39Z",
-      "comment_updated_at": "2026-08-21T16:21:39Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127224,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T16:22:21.563Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-contract-current-main",
-        "head_sha": "3e1fd96506bd0034e927eb52e62feb94f545bebc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127226:5372455792:2026-08-21T16:21:40Z:re_review",
       "comment_id": "5372455792",
@@ -32215,6 +32168,39 @@
         "kind": "pull_request",
         "branch": "fix/mistral-unknown-finish-reason",
         "head_sha": "524009f0f9d5793e44a6a1b3b5277c70acd2154b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127309:5373421432:2026-08-21T20:01:48Z:clawsweeper_needs_human",
+      "comment_id": "5373421432",
+      "comment_version_key": "5373421432:2026-08-21T20:01:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127309#issuecomment-5373421432",
+      "comment_created_at": "2026-08-21T17:58:22Z",
+      "comment_updated_at": "2026-08-21T20:01:48Z",
+      "comment_body_sha256": "e9038dbc2a0e5d8dd1ddc90dafaf96b959ab2eb0ded7231b1b3ab45bc41af274",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127309,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The posted run is a focused Vitest boundary test with mocked activation, while the claimed live result has no inspectable after-fix artifact. A... (sha=d356ceabfecdfad0442ac24e89157efd9d17c751)",
+      "expected_head_sha": "d356ceabfecdfad0442ac24e89157efd9d17c751",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T20:03:21.448Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-implicit-mentions",
+        "head_sha": "d356ceabfecdfad0442ac24e89157efd9d17c751",
         "cluster_id": null,
         "job_path": null
       }
