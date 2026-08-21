@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T09:58:37.879Z",
+  "updated_at": "2026-08-21T09:58:43.509Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123062:5277800609:2026-08-21T04:49:51Z:clawsweeper_needs_human",
-      "comment_id": "5277800609",
-      "comment_version_key": "5277800609:2026-08-21T04:49:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123062#issuecomment-5277800609",
-      "comment_created_at": "2026-08-13T08:15:16Z",
-      "comment_updated_at": "2026-08-21T04:49:51Z",
-      "comment_body_sha256": "1b9f9e330dd32b4a2e51f959ebe0737ccf9fc5c2d1ae4d0b75fe16bf17739bdc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123062,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new handshake-stage 16-frame cap closes clients that pipeline a seventeenth pre-auth frame with 1008; the supplied context does not contain the owner acceptance for that compatibi... (sha=db268843912345ccffbe16162f0826b7699bea3e)",
-      "expected_head_sha": "db268843912345ccffbe16162f0826b7699bea3e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T04:54:54.382Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/gateway-ws-aug13",
-        "head_sha": "db268843912345ccffbe16162f0826b7699bea3e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124467:5306326967:2026-08-21T04:51:25Z:clawsweeper_auto_repair",
       "comment_id": "5306326967",
@@ -33624,6 +33591,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127002:5368376059:2026-08-21T09:57:54Z:re_review",
+      "comment_id": "5368376059",
+      "comment_version_key": "5368376059:2026-08-21T09:57:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127002#issuecomment-5368376059",
+      "comment_created_at": "2026-08-21T09:57:54Z",
+      "comment_updated_at": "2026-08-21T09:57:54Z",
+      "comment_body_sha256": "743aa13bc9f21fdfd613d652e705c883ec9675bde2e31854bae3740073080c4d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127002,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T09:58:41.418Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-frozen-target-ci-compat",
+        "head_sha": "7a54d0443c89f46ef17bef67ec59b580e815f8ab",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
