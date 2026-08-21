@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T14:37:40.749Z",
+  "updated_at": "2026-08-21T14:37:45.461Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127098:5367237082:2026-08-21T09:00:52Z:clawsweeper_needs_human",
-      "comment_id": "5367237082",
-      "comment_version_key": "5367237082:2026-08-21T09:00:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127098#issuecomment-5367237082",
-      "comment_created_at": "2026-08-21T08:15:01Z",
-      "comment_updated_at": "2026-08-21T09:00:52Z",
-      "comment_body_sha256": "34fa07504588576f1932c2af0420b67fed7520e9432cfbbebc1af862af1fe0b6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127098,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep adapter lookup within the scoped authority (P1)** - A plugin tool is explicitly executed under its selected registry in src/plugins/tools.ts; falling through here lets a scoped miss obtain the root adapter...; Review finding: [P1] Keep adapter lookup within the scoped authority — src/channels/plugins/registry-loader.ts:29-31 - [high] Scoped plugin tools can obtain root outbound adapters... (sha=606fb27c0da7ae40cd5ee75d3110668eacf977db)",
-      "expected_head_sha": "606fb27c0da7ae40cd5ee75d3110668eacf977db",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T09:05:16.912Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "t3code/review-xxg0dlessxx-fixes",
-        "head_sha": "606fb27c0da7ae40cd5ee75d3110668eacf977db",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Tachikoma:73:5367719940:2026-08-21T09:01:35Z:clawsweeper_needs_human",
       "comment_id": "5367719940",
@@ -32278,6 +32245,53 @@
         "kind": "pull_request",
         "branch": "codex/agent-id-p0-control-ui-decision-receipts",
         "head_sha": "124afe2abad76dde8823be54d5f33f763e6e750d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125815:5371325858:2026-08-21T14:36:55Z:re_review",
+      "comment_id": "5371325858",
+      "comment_version_key": "5371325858:2026-08-21T14:36:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125815#issuecomment-5371325858",
+      "comment_created_at": "2026-08-21T14:36:55Z",
+      "comment_updated_at": "2026-08-21T14:36:55Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125815,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T14:37:43.493Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-owner-lifecycle-cas",
+        "head_sha": "db481ffc2a4fc0aa9780da351fc0cefd01053622",
         "cluster_id": null,
         "job_path": null
       },
