@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T20:10:38.213Z",
+  "updated_at": "2026-08-21T20:10:40.570Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123976:5300309045:2026-08-21T16:19:01Z:clawsweeper_needs_human",
-      "comment_id": "5300309045",
-      "comment_version_key": "5300309045:2026-08-21T16:19:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123976#issuecomment-5300309045",
-      "comment_created_at": "2026-08-15T03:27:04Z",
-      "comment_updated_at": "2026-08-21T16:19:01Z",
-      "comment_body_sha256": "1016b9168092b89bb27fd3ded03f8e2a328923f7eafa7d1cc0333361b58a8f9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123976,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is stacked on open https://github.com/openclaw/openclaw/pull/123975 and GitHub reports it behind its base; rerun the stopped-worker recovery proof on the final integrated head... (sha=825d0bd71f46f9f593a9e859310ddfa49552b871)",
-      "expected_head_sha": "825d0bd71f46f9f593a9e859310ddfa49552b871",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T16:35:48.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/workspace-quiescence-thaw",
-        "head_sha": "825d0bd71f46f9f593a9e859310ddfa49552b871",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124014:5300588734:2026-08-21T16:29:29Z:clawsweeper_needs_human",
       "comment_id": "5300588734",
@@ -32110,6 +32077,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T20:10:38.213Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1221:5373860560:2026-08-21T20:10:02Z:clawsweeper_needs_human",
+      "comment_id": "5373860560",
+      "comment_version_key": "5373860560:2026-08-21T20:10:02Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1221#issuecomment-5373860560",
+      "comment_created_at": "2026-08-21T18:41:38Z",
+      "comment_updated_at": "2026-08-21T20:10:02Z",
+      "comment_body_sha256": "71cd4bd4982fa8b863aacf28ffc05d38c28d652eda2bdb0e2ff1232f16c5750d",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1221,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Replace the shell handoff with a real execution boundary (P1)** - env -u only sanitizes the child process; the step shell remains its same-user ancestor with the command-file and runner variables. PR-head code c...; Review finding: [P1] Replace the shell handoff with a real execution boundary — .github/workflows/sweep.yml:1650-1655 - [high] Target execution can recover parent runner variables... (sha=a7ff08286987f5855f5171bb18377368cfda14ec)",
+      "expected_head_sha": "a7ff08286987f5855f5171bb18377368cfda14ec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T20:10:40.570Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/live-proof-three-job-isolation-20260821",
+        "head_sha": "a7ff08286987f5855f5171bb18377368cfda14ec",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
