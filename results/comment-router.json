@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T09:57:46.041Z",
+  "updated_at": "2026-08-21T09:58:37.879Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123062:5365267444:2026-08-21T04:39:19Z:re_review",
-      "comment_id": "5365267444",
-      "comment_version_key": "5365267444:2026-08-21T04:39:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123062#issuecomment-5365267444",
-      "comment_created_at": "2026-08-21T04:39:19Z",
-      "comment_updated_at": "2026-08-21T04:39:19Z",
-      "comment_body_sha256": "200b25534a71fb0d003c053d702fc528d9d30709c51d656a6e3b24dc0fcbae40",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123062,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T04:54:49.795Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/gateway-ws-aug13",
-        "head_sha": "db268843912345ccffbe16162f0826b7699bea3e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123062:5277800609:2026-08-21T04:49:51Z:clawsweeper_needs_human",
       "comment_id": "5277800609",
@@ -33635,6 +33588,39 @@
         "kind": "pull_request",
         "branch": "fix/otel-runtime-evidence-diagnostics",
         "head_sha": "d728c1d2564c1afb82809deebfa7d886acb98262",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1454:5368375830:2026-08-21T09:57:53Z:clawsweeper_needs_human",
+      "comment_id": "5368375830",
+      "comment_version_key": "5368375830:2026-08-21T09:57:53Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1454#issuecomment-5368375830",
+      "comment_created_at": "2026-08-21T09:57:53Z",
+      "comment_updated_at": "2026-08-21T09:57:53Z",
+      "comment_body_sha256": "b00d6acb599c73dec9ea1d5b087b73d15df6a69eb80b78bae3a2cfe12eaceb2b",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1454,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The declared base is a synthetic integration branch, so this PR must be restacked onto landed foundation commits before its final merge review. (sha=c89f3789ba6860346ac39468579c42439b29c75e)",
+      "expected_head_sha": "c89f3789ba6860346ac39468579c42439b29c75e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T09:58:37.879Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/aws-image-qualification-input",
+        "head_sha": "c89f3789ba6860346ac39468579c42439b29c75e",
         "cluster_id": null,
         "job_path": null
       }
