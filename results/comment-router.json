@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T07:02:14.922Z",
+  "updated_at": "2026-08-21T07:02:20.770Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123053:5364516562:2026-08-21T02:38:16Z:re_review",
-      "comment_id": "5364516562",
-      "comment_version_key": "5364516562:2026-08-21T02:38:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123053#issuecomment-5364516562",
-      "comment_created_at": "2026-08-21T02:38:16Z",
-      "comment_updated_at": "2026-08-21T02:38:16Z",
-      "comment_body_sha256": "c41e8c3305b460f0c6bd2ed860e702df4f27fb99223fd6e14eb27bc4c824b56e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123053,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T02:41:08.283Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/gateway-responses-aug13",
-        "head_sha": "fa19a566236c09a2fdb5ea85ab703e0e9b44738c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110544:5010497363:2026-08-21T02:10:45Z:clawsweeper_auto_repair",
       "comment_id": "5010497363",
@@ -33315,6 +33268,39 @@
         "kind": "pull_request",
         "branch": "jesse/stage-signal-indexes",
         "head_sha": "06a059de703228d0c84c665cb66ac8ddf7de8d11",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ffmpeg-wasm:5:5366304482:2026-08-21T06:58:41Z:clawsweeper_needs_human",
+      "comment_id": "5366304482",
+      "comment_version_key": "5366304482:2026-08-21T06:58:41Z",
+      "comment_url": "https://github.com/openclaw/ffmpeg-wasm/pull/5#issuecomment-5366304482",
+      "comment_created_at": "2026-08-21T06:58:41Z",
+      "comment_updated_at": "2026-08-21T06:58:41Z",
+      "comment_body_sha256": "55bd25b38a68fc8852aefa36b6816eed8dd5a2cd0a96b1ff46c4ba383c8c50ca",
+      "repo": "openclaw/ffmpeg-wasm",
+      "issue_number": 5,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Build and verify wasm is still in progress; merge should wait for its exact-head result because it exercises the browser/wasm delivery path changed by the E2E coverage. (sha=6d021e7a18439bf729c91881ae50c77ff8bade93)",
+      "expected_head_sha": "6d021e7a18439bf729c91881ae50c77ff8bade93",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T07:02:20.770Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codeql-alerts",
+        "head_sha": "6d021e7a18439bf729c91881ae50c77ff8bade93",
         "cluster_id": null,
         "job_path": null
       }
