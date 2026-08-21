@@ -1,119 +1,6 @@
 {
-  "updated_at": "2026-08-21T10:28:13.880Z",
+  "updated_at": "2026-08-21T10:28:16.574Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3494:5365544146:2026-08-21T05:22:08Z:re_review",
-      "comment_id": "5365544146",
-      "comment_version_key": "5365544146:2026-08-21T05:22:08Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3494#issuecomment-5365544146",
-      "comment_created_at": "2026-08-21T05:22:08Z",
-      "comment_updated_at": "2026-08-21T05:22:08Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3494,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T05:22:54.917Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/signal-owner-explanations",
-        "head_sha": "ee8c725ee9b9631989563da584a038d262a36d18",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127026:5365489247:2026-08-21T05:23:03Z:clawsweeper_needs_human",
-      "comment_id": "5365489247",
-      "comment_version_key": "5365489247:2026-08-21T05:23:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127026#issuecomment-5365489247",
-      "comment_created_at": "2026-08-21T05:13:39Z",
-      "comment_updated_at": "2026-08-21T05:23:03Z",
-      "comment_body_sha256": "ee1196ef092f63071f9f8323cd6e281363c32112f54e5f1e9a7b75f30ec351b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127026,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the tagged protocol contract** - The PR changes fail-closed MCP correlation and approval semantics, but the required local Codex source checkout is absent, so the claimed 0.149 w...; Review finding: [medium] Verify the tagged protocol contract — extensions/codex/src/app-server/native-mcp-app.ts:168 (sha=e26bb7ae5ab57f747a9f5c24fedb6f479b0eb77c)",
-      "expected_head_sha": "e26bb7ae5ab57f747a9f5c24fedb6f479b0eb77c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T05:23:52.532Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/beta3-codex-149-20260821",
-        "head_sha": "e26bb7ae5ab57f747a9f5c24fedb6f479b0eb77c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127015:5365449695:2026-08-21T05:21:51Z:clawsweeper_needs_human",
-      "comment_id": "5365449695",
-      "comment_version_key": "5365449695:2026-08-21T05:21:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127015#issuecomment-5365449695",
-      "comment_created_at": "2026-08-21T05:07:41Z",
-      "comment_updated_at": "2026-08-21T05:21:51Z",
-      "comment_body_sha256": "b682ee5a3ac996f997f05f99ddb4e85c751338502523e19d034c367b667fe44d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127015,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing remote-mode automation that incorrectly passes a local Gateway token flag will now fail before reset; the docs provide the migration path, but the prevalence of such scripts... (sha=92fa0adc1c79989de9821a26926bb72fe61ab058)",
-      "expected_head_sha": "92fa0adc1c79989de9821a26926bb72fe61ab058",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T05:23:56.205Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/onboarding-live-audit-round-three",
-        "head_sha": "92fa0adc1c79989de9821a26926bb72fe61ab058",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126994:5365226476:2026-08-21T05:20:57Z:clawsweeper_needs_human",
       "comment_id": "5365226476",
@@ -32582,6 +32469,53 @@
       ]
     },
     {
+      "idempotency_key": "comment-router:openclaw/openclaw:124467:5368640158:2026-08-21T10:26:36Z:re_review",
+      "comment_id": "5368640158",
+      "comment_version_key": "5368640158:2026-08-21T10:26:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5368640158",
+      "comment_created_at": "2026-08-21T10:26:36Z",
+      "comment_updated_at": "2026-08-21T10:26:36Z",
+      "comment_body_sha256": "f990dbf7a43ed6f4aa078416b82416296b00f5b8f18b20f86060e062f9a0b392",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124467,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T10:27:15.483Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/crabline-structured-identity",
+        "head_sha": "9895a61ec1f6e41e69b37cdb0d5f51d66d30d0a1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127008:5365337494:2026-08-21T10:26:45Z:clawsweeper_needs_human",
       "comment_id": "5365337494",
       "comment_version_key": "5365337494:2026-08-21T10:26:45Z",
@@ -32610,6 +32544,39 @@
         "kind": "pull_request",
         "branch": "fix/release-plan-contract3",
         "head_sha": "9763b51a2b48ee9b7ac553664679584769db3713",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127115:5367829610:2026-08-21T10:26:46Z:clawsweeper_needs_human",
+      "comment_id": "5367829610",
+      "comment_version_key": "5367829610:2026-08-21T10:26:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127115#issuecomment-5367829610",
+      "comment_created_at": "2026-08-21T09:03:09Z",
+      "comment_updated_at": "2026-08-21T10:26:46Z",
+      "comment_body_sha256": "6afb04718e8f0801cf027e075b11e42de02348d747a99f8c243ec49e0e20bb49",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127115,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned reusable ClawHub workflow is the security-critical consumer of the new authorization artifact; its exact deployed source could not be independently read from this environme... (sha=0368cbf252d861b7be7d57df23300618be6ab030)",
+      "expected_head_sha": "0368cbf252d861b7be7d57df23300618be6ab030",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T10:27:44.559Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/beta3-clawhub-v2-producer-20260821",
+        "head_sha": "0368cbf252d861b7be7d57df23300618be6ab030",
         "cluster_id": null,
         "job_path": null
       }
@@ -33378,6 +33345,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T10:28:13.880Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126616:5354020666:2026-08-21T10:23:35Z:clawsweeper_auto_repair",
+      "comment_id": "5354020666",
+      "comment_version_key": "5354020666:2026-08-21T10:23:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126616#issuecomment-5354020666",
+      "comment_created_at": "2026-08-20T09:27:59Z",
+      "comment_updated_at": "2026-08-21T10:23:35Z",
+      "comment_body_sha256": "b838e6d6b27d38bf171ab975abdefacf0a4b110b72acf0d90d0ef850633264cb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126616,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=87d1e5be0ed3d0d9043bb3cfd7d4a6debadd2438)",
+      "expected_head_sha": "87d1e5be0ed3d0d9043bb3cfd7d4a6debadd2438",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T10:28:16.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/http-user-session-from-conversation-id",
+        "head_sha": "d7b14cd0f577ad5e002b577687b4eb027fcff56e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
