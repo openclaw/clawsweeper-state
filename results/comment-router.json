@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T17:27:56.360Z",
+  "updated_at": "2026-08-21T17:28:02.302Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2457:5103922762:2026-07-28T12:06:29Z:re_review",
-      "comment_id": "5103922762",
-      "comment_version_key": "5103922762:2026-07-28T12:06:29Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5103922762",
-      "comment_created_at": "2026-07-28T12:06:29Z",
-      "comment_updated_at": "2026-07-28T12:06:29Z",
-      "comment_body_sha256": "57f707cb03ed885806cbdab30d7d5a053c40575098f068a92597f9e5982fc7b3",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2457,
-      "author": "EClinick",
-      "author_id": 69320739,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T14:11:31.248Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:2457:5107672442:2026-07-28T17:44:10Z:re_review",
       "comment_id": "5107672442",
@@ -32178,6 +32151,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T17:27:56.360Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:60:5348727238:2026-08-21T17:19:37Z:clawsweeper_needs_human",
+      "comment_id": "5348727238",
+      "comment_version_key": "5348727238:2026-08-21T17:19:37Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/60#issuecomment-5348727238",
+      "comment_created_at": "2026-08-19T22:24:15Z",
+      "comment_updated_at": "2026-08-21T17:19:37Z",
+      "comment_body_sha256": "e8ba7fb269151b55729b7a4c3d1f185092c12468660443e652f573a6342e245c",
+      "repo": "openclaw/ocm",
+      "issue_number": 60,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve every named-Service handler during migration (P1)** - The migration discovers individual handlers but drops their host/path identity, then groups by service and invokes a service-wide setter. A Service...; Review finding: [P1] Preserve every named-Service handler during migration — src/tailscale.rs:364-381 - [P1] Authenticate the loopback proxy boundary — src/identity_proxy.mjs:141-... (sha=824c589b7d889468b72f0daae7d6be2c55b4e7d9)",
+      "expected_head_sha": "824c589b7d889468b72f0daae7d6be2c55b4e7d9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T17:28:02.302Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-aware-restarts",
+        "head_sha": "4eb17425dc5f3610aad386f9a0fc8232be263143",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
