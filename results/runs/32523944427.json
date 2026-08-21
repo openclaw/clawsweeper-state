@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127379",
+  "mode": "autonomous",
+  "run_id": "32523944427",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32523944427",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127379.md",
+  "published_at": "2026-08-21T21:06:48.856Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127379",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127379",
+  "canonical_pr": null,
+  "summary": "#127379 is source-reproducible on current main. The narrow repair is clear, but this worker cannot modify, install dependencies, validate, or inspect the mandatory ../codex source because the checkout and /tmp are read-only, node_modules is absent, and ../codex does not exist.",
+  "actions": [
+    {
+      "target": "#125596",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#127379",
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#126720",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#127379",
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#127178",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#127379",
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#127379",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127379",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only worker environment and mandatory direct Codex-source gate; the source reproduction and narrow repair plan are ready for the executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127379",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127379",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is appropriate once a writable executor has cloned ../codex, installed dependencies, implemented, and validated the regression."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
