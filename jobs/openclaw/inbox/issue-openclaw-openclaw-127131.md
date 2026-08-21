@@ -67,14 +67,13 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the cached plugin-tool lifecycle for https://github.com/openclaw/openclaw/issues/127131. Preserve one concrete, plugin-scoped runtime tool instance for each cached facade across preparation, before_tool_call, finalization, and execution; retain prepared-generation registry selection, descriptor-cache invalidation, current availability checks, and fail-closed behavior. Do not broaden active-registry precedence, add configuration, or cache concrete tools beyond their request/facade lifecycle. Add a regression using factory-private state (for example a WeakMap-backed preparation/finalization invariant) that fails before the repair and proves identity through the real hook wrapper. Preserve the existing registry-replacement case. Run the focused tests; use the PR body for release-note context and do not edit CHANGELOG.md.
+Repair the cached plugin descriptor lifecycle bug in https://github.com/openclaw/openclaw/issues/127131. Keep descriptor construction lazy, but bind one concrete runtime tool on first preparation/finalization/execution and forward prepareBeforeToolCallParams plus finalizeBeforeToolCallParams so the same instance executes; preserve fail-closed missing-runtime behavior, registry retirement, and existing generation-scoped first-turn selection. Add a regression that proves WeakMap-backed prepared state survives cached prepare, hook, finalization, and execution; do not edit CHANGELOG.md or add config/API surface.
 
 Likely files:
 
 - src/plugins/tools.ts
-- src/plugins/tool-descriptor-cache.ts
 - src/plugins/tools.optional.test.ts
-- src/agents/agent-tools.before-tool-call.integration.e2e.test.ts
+- src/plugins/tool-descriptor-cache.ts
 
 Validation:
 
