@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127131",
+  "mode": "autonomous",
+  "run_id": "32501115163",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32501115163",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127131.md",
+  "published_at": "2026-08-21T16:17:06.962Z",
+  "canonical": "#127131",
+  "canonical_issue": "#127131",
+  "canonical_pr": null,
+  "summary": "#127131 remains the canonical open bug. Source inspection shows cached plugin descriptor tools expose only execute, so lifecycle hooks cannot retain factory-owned prepared state. A narrow repair plan is ready, but this read-only worker cannot create the required branch/test regression or satisfy the mandatory direct ../codex source inspection because that sibling checkout is absent.",
+  "actions": [
+    {
+      "target": "#127131",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127131",
+      "candidate_fix": null,
+      "reason": "The repair requires a writable branch plus direct Codex-source inspection and local validation before a PR can be opened."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair environment with dependencies and a sibling ../codex checkout so the executor can implement, inspect the required Codex runtime contract, run the regression pre-fix/post-fix, and open the allowed PR."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

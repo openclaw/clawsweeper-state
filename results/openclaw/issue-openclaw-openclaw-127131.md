@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127131"
 mode: "autonomous"
-run_id: "32498656888"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32498656888"
+run_id: "32501115163"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32501115163"
 head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-21T15:51:14.432Z"
-canonical: "https://github.com/openclaw/openclaw/issues/127131"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/127131"
+published_at: "2026-08-21T16:17:06.962Z"
+canonical: "#127131"
+canonical_issue: "#127131"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-127131
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32498656888](https://github.com/openclaw/clawsweeper/actions/runs/32498656888)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32501115163](https://github.com/openclaw/clawsweeper/actions/runs/32501115163)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/127131
+Canonical: #127131
 
 ## Summary
 
-A narrow repair is ready to implement on a writable branch: bind one lazy runtime tool per cached synthetic descriptor and forward prepare, finalize, and execute through it. This worker could not complete the required Codex hard gate or run tests: ../codex is absent, cloning it failed with EROFS, and pnpm cannot create its Corepack cache in the read-only environment.
+#127131 remains the canonical open bug. Source inspection shows cached plugin descriptor tools expose only execute, so lifecycle hooks cannot retain factory-owned prepared state. A narrow repair plan is ready, but this read-only worker cannot create the required branch/test regression or satisfy the mandatory direct ../codex source inspection because that sibling checkout is absent.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,8 @@ A narrow repair is ready to implement on a writable branch: bind one lazy runtim
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127131 | fix_needed | blocked | canonical | Implementation is blocked only by this worker environment. The executor must re-fetch issue state, inspect ../codex directly, install dependencies, add the regression, and validate on clawsweeper/issue-openclaw-openclaw-127131. |
-| cluster:issue-openclaw-openclaw-127131 | build_fix_artifact | planned | canonical | Executable repair plan for a writable executor after its mandatory direct ../codex inspection. |
+| #127131 | fix_needed | blocked | canonical | The repair requires a writable branch plus direct Codex-source inspection and local validation before a PR can be opened. |
 
 ## Needs Human
 
-- none
+- Provide a writable repair environment with dependencies and a sibling ../codex checkout so the executor can implement, inspect the required Codex runtime contract, run the regression pre-fix/post-fix, and open the allowed PR.
