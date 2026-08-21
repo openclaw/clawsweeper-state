@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T14:41:02.399Z",
+  "updated_at": "2026-08-21T14:41:44.309Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127060:5367899699:2026-08-21T09:09:50Z:re_review",
-      "comment_id": "5367899699",
-      "comment_version_key": "5367899699:2026-08-21T09:09:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127060#issuecomment-5367899699",
-      "comment_created_at": "2026-08-21T09:09:50Z",
-      "comment_updated_at": "2026-08-21T09:09:50Z",
-      "comment_body_sha256": "96a22a5ce5024363693aa7d59640e43e9aa83fb5d4328843b54c74d6b970c64f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127060,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T09:10:36.125Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/setup-onboarding-option-conflict",
-        "head_sha": "7264fe3890abe2eb9cbf3ff7e5448f11cf5b3c5a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127115:5367829610:2026-08-21T09:10:07Z:clawsweeper_needs_human",
       "comment_id": "5367829610",
@@ -32381,6 +32334,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:585:5371368885:2026-08-21T14:40:51Z:clawsweeper_needs_human",
+      "comment_id": "5371368885",
+      "comment_version_key": "5371368885:2026-08-21T14:40:51Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/585#issuecomment-5371368885",
+      "comment_created_at": "2026-08-21T14:40:51Z",
+      "comment_updated_at": "2026-08-21T14:40:51Z",
+      "comment_body_sha256": "50f39f9ad632ee017433daf7ca6a7bebce45442fbf92ccaa8b4bcd33ebf3e4f1",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 585,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Avoid process-wide mask replacement while forwarding signals (P1)** - sigprocmask(SIG_SETMASK, ...) changes the process-wide mask on Darwin. Forwarding a prompt signal can therefore leave unrelated threads with...; Review finding: [P1] Avoid process-wide mask replacement while forwarding signals — Apps/CLI/Sources/PeekabooCredentialPromptSignals/PeekabooCredentialPromptSignals.c:137-145 - [P... (sha=35dab41006692924fa949f44ac267a045ce353ab)",
+      "expected_head_sha": "35dab41006692924fa949f44ac267a045ce353ab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T14:41:44.309Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/credential-prompt-signal-restoration",
+        "head_sha": "35dab41006692924fa949f44ac267a045ce353ab",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
