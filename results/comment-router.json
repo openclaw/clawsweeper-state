@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-21T21:59:43.337Z",
+  "updated_at": "2026-08-21T21:58:31.020Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124517:5306618204:2026-08-21T17:24:45Z:clawsweeper_needs_human",
+      "comment_id": "5306618204",
+      "comment_version_key": "5306618204:2026-08-21T17:24:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124517#issuecomment-5306618204",
+      "comment_created_at": "2026-08-16T08:51:58Z",
+      "comment_updated_at": "2026-08-21T17:24:45Z",
+      "comment_body_sha256": "feed00f31cdb195f9280da6ae50f832e0a389d9780007e24ac9cbe48134d5efc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124517,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A full durable-plan namespace now stops a final LINE push before it reaches LINE; this intentionally favors at-most-once delivery over a possibly duplicated reply, but changes failure... (sha=6d558876b7410926281b3ece7b250432d6913dd6)",
+      "expected_head_sha": "6d558876b7410926281b3ece7b250432d6913dd6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T17:30:27.616Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-durable-crash-recovery",
+        "head_sha": "6d558876b7410926281b3ece7b250432d6913dd6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125815:5328823403:2026-08-21T17:26:17Z:clawsweeper_needs_human",
       "comment_id": "5328823403",
@@ -32047,39 +32080,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127524:5375172202:2026-08-21T21:58:48Z:clawsweeper_auto_repair",
-      "comment_id": "5375172202",
-      "comment_version_key": "5375172202:2026-08-21T21:58:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127524#issuecomment-5375172202",
-      "comment_created_at": "2026-08-21T20:40:36Z",
-      "comment_updated_at": "2026-08-21T21:58:48Z",
-      "comment_body_sha256": "29d2cc994ebe712a17317e342c48997296ebbdebc971fb8d2b15cfab7d73d6f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127524,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=8f4cd87c8e442dc82a8fa8fe1003d0da80393199)",
-      "expected_head_sha": "8f4cd87c8e442dc82a8fa8fe1003d0da80393199",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-21T21:59:43.337Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/xdg-config-home-clarify",
-        "head_sha": "8f4cd87c8e442dc82a8fa8fe1003d0da80393199",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
