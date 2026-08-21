@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T03:44:28.995Z",
+  "updated_at": "2026-08-21T03:44:38.100Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5231929530:2026-08-09T14:06:58Z:re_review",
-      "comment_id": "5231929530",
-      "comment_version_key": "5231929530:2026-08-09T14:06:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5231929530",
-      "comment_created_at": "2026-08-09T14:06:58Z",
-      "comment_updated_at": "2026-08-09T14:06:58Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T23:34:44.267Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118169:5235889962:2026-08-10T04:31:27Z:re_review",
       "comment_id": "5235889962",
@@ -31797,6 +31770,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T03:44:28.995Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126970:5364907569:2026-08-21T03:40:25Z:clawsweeper_needs_human",
+      "comment_id": "5364907569",
+      "comment_version_key": "5364907569:2026-08-21T03:40:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126970#issuecomment-5364907569",
+      "comment_created_at": "2026-08-21T03:40:25Z",
+      "comment_updated_at": "2026-08-21T03:40:25Z",
+      "comment_body_sha256": "e1e08143e7c3f4b2ad18278f903d4dbb2ab5c932566bd4677d76c0d21348522b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126970,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a shared release automation guard; exact-head npm preflight should confirm that the current artifact fits below 204 MiB while the historical 213.6 MiB bloat case remains... (sha=bb40f6b908ba478a59a2561710100a379e8145ce)",
+      "expected_head_sha": "bb40f6b908ba478a59a2561710100a379e8145ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T03:44:38.100Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/npm-pack-budget-doc-growth",
+        "head_sha": "bb40f6b908ba478a59a2561710100a379e8145ce",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
