@@ -1,72 +1,6 @@
 {
-  "updated_at": "2026-08-21T15:18:54.618Z",
+  "updated_at": "2026-08-21T15:18:59.691Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117646:5153581036:2026-08-21T09:49:42Z:clawsweeper_needs_human",
-      "comment_id": "5153581036",
-      "comment_version_key": "5153581036:2026-08-21T09:49:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117646#issuecomment-5153581036",
-      "comment_created_at": "2026-08-01T21:43:34Z",
-      "comment_updated_at": "2026-08-21T09:49:42Z",
-      "comment_body_sha256": "7c969b183825a81de32660ba7121518284598747053b416eea3f32f23257a784",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117646,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body cites focused mocked lifecycle tests and checks, but no after-fix runtime fault trace demonstrates later Gateway cleanup after a si... (sha=0f2e9064ca10e14bb0920c955c92a73d5654f940)",
-      "expected_head_sha": "0f2e9064ca10e14bb0920c955c92a73d5654f940",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T10:38:20.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-sidecar-stop-rejections",
-        "head_sha": "0f2e9064ca10e14bb0920c955c92a73d5654f940",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117721:5154331249:2026-08-21T09:51:50Z:clawsweeper_auto_repair",
-      "comment_id": "5154331249",
-      "comment_version_key": "5154331249:2026-08-21T09:51:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117721#issuecomment-5154331249",
-      "comment_created_at": "2026-08-02T01:05:01Z",
-      "comment_updated_at": "2026-08-21T09:51:50Z",
-      "comment_body_sha256": "4893b257446821719651bf4df84a0c70c4d0173389418f1d9a4ca6039c761bb4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117721,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=e92f3b61d62e2cbd2002ed17fad903e7267511c3)",
-      "expected_head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-21T10:38:20.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-88079",
-        "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
-        "cluster_id": "automerge-openclaw-openclaw-117721",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117721.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117823:5155442583:2026-08-21T09:49:06Z:clawsweeper_auto_repair",
       "comment_id": "5155442583",
@@ -31684,6 +31618,39 @@
       ]
     },
     {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127008:5365337494:2026-08-21T15:12:36Z:clawsweeper_needs_human",
+      "comment_id": "5365337494",
+      "comment_version_key": "5365337494:2026-08-21T15:12:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127008#issuecomment-5365337494",
+      "comment_created_at": "2026-08-21T04:50:28Z",
+      "comment_updated_at": "2026-08-21T15:12:36Z",
+      "comment_body_sha256": "cbf4047c7053e248f63403a9236990d7f470bef1246c07c767ddeb61c1a6ac79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127008,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Load YAML from an immutable verified snapshot (P1)** - The tree hash completes at line 449, but line 462 still loads YAML from the ambient package path and CommonJS cache. A replacement after verification—or a p...; Review finding: [P1] Load YAML from an immutable verified snapshot — scripts/release-plan-producer.mts:462 - [high] Parser load escapes the attested snapshot — scripts/release-pla... (sha=242d85732d96832dd150add2da13f5c7cefdff6d)",
+      "expected_head_sha": "242d85732d96832dd150add2da13f5c7cefdff6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T15:18:33.640Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-plan-contract3",
+        "head_sha": "242d85732d96832dd150add2da13f5c7cefdff6d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125823:5328843952:2026-08-21T15:10:46Z:clawsweeper_needs_human",
       "comment_id": "5328843952",
       "comment_version_key": "5328843952:2026-08-21T15:10:46Z",
@@ -31828,6 +31795,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-21T15:13:01Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-21T15:13:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-21T15:13:01Z",
+      "comment_body_sha256": "01b5d775550885170f54e644314220d0bfa0d0ab9ea7c2dc711588ad82b1b2e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog workflow guard (P1)** - The scan step now uses the v3.97.0 action SHA, but the guard still requires the v3.95.9 SHA at test/scripts/ci-workflow-guards.test.ts:3546. Its YAML parse will...; Review finding: [P1] Synchronize the TruffleHog workflow guard — .github/workflows/ci.yml:1158 - [medium] Review upgraded actions on credentialed release paths — .github/workflows... (sha=9442ef10d6a835fedd1971ff0bdf7596b5962b06)",
+      "expected_head_sha": "9442ef10d6a835fedd1971ff0bdf7596b5962b06",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T15:18:59.691Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "000c7fc6575d93a3be8692f72e485a5789d3cbfe",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
