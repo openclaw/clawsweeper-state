@@ -1,0 +1,120 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123360",
+  "mode": "autonomous",
+  "run_id": "32460886326",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32460886326",
+  "head_sha": "b853345fa6e3595c5d25f65c3ea8245a68ce091b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123360.md",
+  "published_at": "2026-08-21T08:06:54.166Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/123360",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123360",
+  "canonical_pr": null,
+  "summary": "Plan one narrow credited PR for #123360. Current main exposes an authoritative bounded terminal reply through the plugin subagent runtime, but Memory Core’s local surface drops it and falls back when session readback is empty.",
+  "actions": [
+    {
+      "target": "#123360",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "#123360 is the canonical remaining completed-output readback defect; no open implementation PR is hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-123360",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "A two-file owner-plugin repair is narrow and suitable for a new ClawSweeper PR."
+    },
+    {
+      "target": "#95746",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "This terminal-reply consumption repair neither implements nor supersedes the shared-lane concurrency fix."
+    },
+    {
+      "target": "#101603",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related Dream Diary loss family, but it retains unique queue-timeout and product-policy work."
+    },
+    {
+      "target": "#87182",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; historical context only."
+    },
+    {
+      "target": "#87206",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this closed PR to central OpenClaw security handling; it does not block the unrelated #123360 repair."
+    },
+    {
+      "target": "#90781",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; retain as historical evidence only."
+    },
+    {
+      "target": "#93191",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#101601",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; historical context only."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_independent": 1,
+    "keep_related": 1,
+    "keep_closed": 4,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 5,
+    "skipped": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
