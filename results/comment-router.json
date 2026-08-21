@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T08:50:04.195Z",
+  "updated_at": "2026-08-21T08:50:10.905Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5319094772:2026-08-17T19:12:40Z:re_review",
-      "comment_id": "5319094772",
-      "comment_version_key": "5319094772:2026-08-17T19:12:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5319094772",
-      "comment_created_at": "2026-08-17T19:12:40Z",
-      "comment_updated_at": "2026-08-17T19:12:40Z",
-      "comment_body_sha256": "c3d79d7ea2bafd045cae4fe8230b44428aee249c7f2ea837d509817101c333a6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T04:12:59.052Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5319176631:2026-08-17T19:20:16Z:re_review",
       "comment_id": "5319176631",
@@ -33387,6 +33360,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T08:50:04.195Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116373:5130005792:2026-08-21T08:42:16Z:clawsweeper_needs_human",
+      "comment_id": "5130005792",
+      "comment_version_key": "5130005792:2026-08-21T08:42:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116373#issuecomment-5130005792",
+      "comment_created_at": "2026-07-30T11:04:46Z",
+      "comment_updated_at": "2026-08-21T08:42:16Z",
+      "comment_body_sha256": "f2b7be7278d6128710f28576a47719b03660ac063889a493204ee5e7ade1cc79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116373,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies unit/mock results, while its real-Gateway E2E has no completed exact-head terminal output posted yet. After adding proof, updat... (sha=5754ef37f8edb0dc6b5c8a02d9550f8b4ac25e5e)",
+      "expected_head_sha": "5754ef37f8edb0dc6b5c8a02d9550f8b4ac25e5e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T08:50:10.905Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-session-forced-key",
+        "head_sha": "5754ef37f8edb0dc6b5c8a02d9550f8b4ac25e5e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
