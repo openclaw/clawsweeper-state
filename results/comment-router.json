@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T10:13:31.729Z",
+  "updated_at": "2026-08-21T10:14:48.624Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123084:5278513657:2026-08-21T05:00:03Z:clawsweeper_needs_human",
-      "comment_id": "5278513657",
-      "comment_version_key": "5278513657:2026-08-21T05:00:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123084#issuecomment-5278513657",
-      "comment_created_at": "2026-08-13T09:28:23Z",
-      "comment_updated_at": "2026-08-21T05:00:03Z",
-      "comment_body_sha256": "b2a74d503029027d38c174662b6f0cf953c270815fa19b622780ba77025dfacd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123084,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - CJK delimiter semantics intentionally change existing Control UI rendering; exact-head checks should complete before merge. (sha=118bb3a69ed1fdbc213e818a0d474407a7cf448a)",
-      "expected_head_sha": "118bb3a69ed1fdbc213e818a0d474407a7cf448a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T05:00:53.792Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/markdown-chat-aug13",
-        "head_sha": "118bb3a69ed1fdbc213e818a0d474407a7cf448a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127019:5365433455:2026-08-21T05:05:04Z:clawsweeper_needs_human",
       "comment_id": "5365433455",
@@ -33574,6 +33541,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127115:5368528160:2026-08-21T10:14:06Z:re_review",
+      "comment_id": "5368528160",
+      "comment_version_key": "5368528160:2026-08-21T10:14:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127115#issuecomment-5368528160",
+      "comment_created_at": "2026-08-21T10:14:06Z",
+      "comment_updated_at": "2026-08-21T10:14:06Z",
+      "comment_body_sha256": "8702c0cee16861d8c2530dcb9f557e3c8c78a514da132e507a2be8c7a4300ef4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127115,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T10:14:46.922Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/beta3-clawhub-v2-producer-20260821",
+        "head_sha": "0368cbf252d861b7be7d57df23300618be6ab030",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
