@@ -1,0 +1,54 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127034",
+  "mode": "autonomous",
+  "run_id": "32450976274",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32450976274",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127034.md",
+  "published_at": "2026-08-21T05:42:50.552Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127034",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127034",
+  "canonical_pr": null,
+  "summary": "A narrow Workboard repair path is prepared for #127034. Current main (9a64770ea6aded88b8babee84d4deb6ca6a6e686) rejects a documented terminal-proof ID-only completion flow. Implementation remains blocked in this worker because the mandatory readable sibling ../codex checkout is absent and cannot be cloned in the read-only workspace.",
+  "actions": [
+    {
+      "target": "#127034",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127034",
+      "candidate_fix": null,
+      "reason": "Repair the Workboard owner rather than tool or gateway callers: terminal stored proofs must resolve by proofId alone; pending unknown proofs still require proof.status."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127034",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127034",
+      "candidate_fix": null,
+      "reason": "Create one credited implementation PR after its writable executor restores the mandatory Codex-source preflight and runs the listed regression and changed-surface checks."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a readable sibling ../codex checkout, or run the implementation artifact in an environment where it can be cloned. The root AGENTS.md Codex gate forbids a final implementation verdict without that direct inspection."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
