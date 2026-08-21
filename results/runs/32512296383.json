@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126813",
+  "mode": "autonomous",
+  "run_id": "32512296383",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32512296383",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126813.md",
+  "published_at": "2026-08-21T18:27:01.199Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126813",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126813",
+  "canonical_pr": null,
+  "summary": "#126813 is a real queued-delivery gap on main: successful message-tool delivery is recorded but never consumed, while queued user requests retain an unconditional delivery hint. A narrow new-PR plan is prepared, but implementation is blocked by the mandatory unavailable ../codex source inspection.",
+  "actions": [
+    {
+      "target": "#126813",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126813",
+      "candidate_fix": null,
+      "reason": "Do not implement until the acting worker can inspect the mandatory sibling ../codex source for the exact runtime-context protocol. The directory is absent and this read-only, network-restricted environment cannot clone it."
+    },
+    {
+      "target": "#69208",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep the umbrella open; this issue is a related, separately repairable queued-turn subfamily."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126813",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126813",
+      "candidate_fix": null,
+      "reason": "Artifact is ready, but executor must first restore the required Codex source inspection."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide the sibling ../codex checkout (or authority/environment to clone it) so the executor can inspect the exact runtime-context protocol required by repository policy before changing code."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#126813",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
