@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T13:11:41.439Z",
+  "updated_at": "2026-08-21T13:12:35.582Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127068:5366345204:2026-08-21T07:03:11Z:clawsweeper_needs_human",
-      "comment_id": "5366345204",
-      "comment_version_key": "5366345204:2026-08-21T07:03:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127068#issuecomment-5366345204",
-      "comment_created_at": "2026-08-21T07:03:11Z",
-      "comment_updated_at": "2026-08-21T07:03:11Z",
-      "comment_body_sha256": "d41c54851835b99e990b9768e2f51da50fe213036fa5a6989ff6bd3363e5f293",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127068,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 80-second inner deadline creates an earlier release-test failure condition than the existing 90-second Vitest deadline; exact-head xAI live CI should confirm ordinary tool calls r... (sha=9a9f3251b4a666b7f7765424ad8d4ed2b1bccc84)",
-      "expected_head_sha": "9a9f3251b4a666b7f7765424ad8d4ed2b1bccc84",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T07:04:16.619Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/xai-live-tool-timeout-diagnostic",
-        "head_sha": "9a9f3251b4a666b7f7765424ad8d4ed2b1bccc84",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3500:5365192308:2026-08-21T07:04:09Z:clawsweeper_needs_human",
       "comment_id": "5365192308",
@@ -32818,6 +32785,53 @@
         "kind": "pull_request",
         "branch": "fix/codeql-go-overflow",
         "head_sha": "d6ab972438c38ce4408cd2347a824f976693b97a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120443:5370216557:2026-08-21T13:11:49Z:re_review",
+      "comment_id": "5370216557",
+      "comment_version_key": "5370216557:2026-08-21T13:11:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5370216557",
+      "comment_created_at": "2026-08-21T13:11:49Z",
+      "comment_updated_at": "2026-08-21T13:11:49Z",
+      "comment_body_sha256": "6a66f3e0d830a063218a0fa4496e7141c562fdfc9af6d3f6bc227fb378e4dfc8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120443,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T13:12:33.042Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119977-codex-stale-binding-compaction",
+        "head_sha": "94315a03ba88441e787f8ed65d9d85143a383af4",
         "cluster_id": null,
         "job_path": null
       },
