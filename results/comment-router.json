@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T15:48:03.144Z",
+  "updated_at": "2026-08-21T15:48:19.955Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127151:5369055719:2026-08-21T11:07:44Z:re_review",
-      "comment_id": "5369055719",
-      "comment_version_key": "5369055719:2026-08-21T11:07:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127151#issuecomment-5369055719",
-      "comment_created_at": "2026-08-21T11:07:44Z",
-      "comment_updated_at": "2026-08-21T11:07:44Z",
-      "comment_body_sha256": "4b0ae27bdfe8520d8d8ff07a9d460b992d0efe4655de458a33f99afa7f975bc2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127151,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T11:08:24.605Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/heartbeat-session-routing-replacement",
-        "head_sha": "112c263675abbe8c34fdfe52cdceec40e2417cc5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-21T11:08:42Z:clawsweeper_needs_human",
       "comment_id": "5154193917",
@@ -31799,6 +31752,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127231:5372083511:2026-08-21T15:45:47Z:clawsweeper_needs_human",
+      "comment_id": "5372083511",
+      "comment_version_key": "5372083511:2026-08-21T15:45:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127231#issuecomment-5372083511",
+      "comment_created_at": "2026-08-21T15:45:47Z",
+      "comment_updated_at": "2026-08-21T15:45:47Z",
+      "comment_body_sha256": "f29e87d81151c77f112d2bef361b12a0138a21f598c3903a34ddfe0cce3aa860",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127231,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes completed-process session lifetime semantics; merge after the exact head’s pending checks complete and GitHub’s merge result is refreshed against main. (sha=c028581cceb2194e8225b3a5e0f9a7e9fed751bb)",
+      "expected_head_sha": "c028581cceb2194e8225b3a5e0f9a7e9fed751bb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T15:48:19.955Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-exec-cleanup-retention",
+        "head_sha": "c028581cceb2194e8225b3a5e0f9a7e9fed751bb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
