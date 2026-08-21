@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T15:54:12.404Z",
+  "updated_at": "2026-08-21T15:54:12.518Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127171:5369465129:2026-08-21T11:51:43Z:re_review",
-      "comment_id": "5369465129",
-      "comment_version_key": "5369465129:2026-08-21T11:51:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127171#issuecomment-5369465129",
-      "comment_created_at": "2026-08-21T11:51:43Z",
-      "comment_updated_at": "2026-08-21T11:51:43Z",
-      "comment_body_sha256": "8981a0d77be92013ca757a446729dd0b0bd21c059baa380b048e16413b73ee20",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127171,
-      "author": "jacobtomlinson",
-      "author_id": 1610850,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T11:52:27.893Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-929-attachment-symlink",
-        "head_sha": "00216a7369c129b5b5fe2531e0572dd119c2b795",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126775:5369474942:2026-08-21T11:52:52Z:re_review",
       "comment_id": "5369474942",
@@ -31589,6 +31542,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T15:54:12.404Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124025:5300731845:2026-08-21T15:48:05Z:clawsweeper_needs_human",
+      "comment_id": "5300731845",
+      "comment_version_key": "5300731845:2026-08-21T15:48:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5300731845",
+      "comment_created_at": "2026-08-15T05:27:33Z",
+      "comment_updated_at": "2026-08-21T15:48:05Z",
+      "comment_body_sha256": "0dfda12fd7a7e7cd5939d51aca66aebb68d6bab0a0ae8a533895d0f025aff170",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The installed Codex dependency is 0.148.0, but the PR’s direct protocol evidence is for 0.147.0; an identity-contract change could make recovery miss a stalled call or abort an active... (sha=74cb2a548cc09fc30ee1cd0f2c35b243a9a9bfe1)",
+      "expected_head_sha": "74cb2a548cc09fc30ee1cd0f2c35b243a9a9bfe1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T15:54:12.518Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-stale-tool-eligibility",
+        "head_sha": "74cb2a548cc09fc30ee1cd0f2c35b243a9a9bfe1",
+        "cluster_id": "automerge-openclaw-openclaw-124025",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124025.md"
+      }
     }
   ]
 }
