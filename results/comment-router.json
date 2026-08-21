@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T10:25:54.985Z",
+  "updated_at": "2026-08-21T10:27:32.680Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127014:5365444203:2026-08-21T05:06:48Z:clawsweeper_auto_repair",
-      "comment_id": "5365444203",
-      "comment_version_key": "5365444203:2026-08-21T05:06:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127014#issuecomment-5365444203",
-      "comment_created_at": "2026-08-21T05:06:48Z",
-      "comment_updated_at": "2026-08-21T05:06:48Z",
-      "comment_body_sha256": "f23eee1be866bceff2be590a7fa5ed93020684bd113c0533a373980ecb929b8a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127014,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a42ddb80792ca1bb3e453605a15a6fbcdff5dd72)",
-      "expected_head_sha": "a42ddb80792ca1bb3e453605a15a6fbcdff5dd72",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T05:10:16.693Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-decision-diagnostic-drain",
-        "head_sha": "a42ddb80792ca1bb3e453605a15a6fbcdff5dd72",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127017:5365458805:2026-08-21T05:09:05Z:clawsweeper_auto_merge",
       "comment_id": "5365458805",
@@ -33616,6 +33583,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127008:5365337494:2026-08-21T10:26:45Z:clawsweeper_needs_human",
+      "comment_id": "5365337494",
+      "comment_version_key": "5365337494:2026-08-21T10:26:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127008#issuecomment-5365337494",
+      "comment_created_at": "2026-08-21T04:50:28Z",
+      "comment_updated_at": "2026-08-21T10:26:45Z",
+      "comment_body_sha256": "73dbdc1be6918c4b85fbdb8b2ad0441cddd73b2a0c0e28d41eccd0c7982505c3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127008,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify direct runtime dependencies in the tooling closure (P1)** - The closure walker follows only relative imports, but this producer and its lock parser import yaml as a bare dependency. A caller checkout can...; Review finding: [P1] Verify direct runtime dependencies in the tooling closure — scripts/release-plan-producer.mts:184-201 - [high] Caller-resolved parser escapes tooling verifica... (sha=9763b51a2b48ee9b7ac553664679584769db3713)",
+      "expected_head_sha": "9763b51a2b48ee9b7ac553664679584769db3713",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T10:27:32.680Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-plan-contract3",
+        "head_sha": "9763b51a2b48ee9b7ac553664679584769db3713",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
