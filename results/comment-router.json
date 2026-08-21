@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T08:39:11.567Z",
+  "updated_at": "2026-08-21T08:40:07.219Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5301460740:2026-08-15T08:52:11Z:re_review",
-      "comment_id": "5301460740",
-      "comment_version_key": "5301460740:2026-08-15T08:52:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5301460740",
-      "comment_created_at": "2026-08-15T08:52:11Z",
-      "comment_updated_at": "2026-08-15T08:52:11Z",
-      "comment_body_sha256": "9f1153ee0a645e738f6bb9fec5b415c1bd3e96d75254715a53fbc42f508b2cbd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T04:12:59.052Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5305653939:2026-08-16T04:07:56Z:re_review",
       "comment_id": "5305653939",
@@ -33215,6 +33188,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/carapace:73:5313686353:2026-08-21T08:36:16Z:clawsweeper_needs_human",
+      "comment_id": "5313686353",
+      "comment_version_key": "5313686353:2026-08-21T08:36:16Z",
+      "comment_url": "https://github.com/openclaw/carapace/pull/73#issuecomment-5313686353",
+      "comment_created_at": "2026-08-17T08:31:16Z",
+      "comment_updated_at": "2026-08-21T08:36:16Z",
+      "comment_body_sha256": "e669ec51e3ac2a68c64ac32fe6af25ce6e6ddb6f9bc674e185e2d6ae208345a2",
+      "repo": "openclaw/carapace",
+      "issue_number": 73,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - CodeQL v4.37.7 updates the default analysis bundle, so later scheduled or pull-request scans may report different findings despite the current successful runs. (sha=84238e5b1151c7c7d6f5988e24604ad35faab4a4)",
+      "expected_head_sha": "84238e5b1151c7c7d6f5988e24604ad35faab4a4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T08:40:07.219Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-a10aefb1c3",
+        "head_sha": "84238e5b1151c7c7d6f5988e24604ad35faab4a4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
