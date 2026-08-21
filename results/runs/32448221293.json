@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127009",
+  "mode": "autonomous",
+  "run_id": "32448221293",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32448221293",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127009.md",
+  "published_at": "2026-08-21T04:57:12.659Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127009",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127009",
+  "canonical_pr": null,
+  "summary": "#127009 is a confirmed narrow producer-boundary bug on preflight main 4ba2c46cc4badd216ac0b1950dae6b513ff964f6. A selected text-only model still causes read to base64/process and return an image result. Local implementation and validation are blocked because the checkout filesystem is read-only, dependencies are absent, and the required sibling ../codex source is unavailable for the repository’s Codex gate. A deterministic executor can apply the attached new-PR artifact.",
+  "actions": [
+    {
+      "target": "#127009",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127009",
+      "candidate_fix": null,
+      "reason": "The repair is scoped and ready for executor implementation, but this worker cannot write a branch, install dependencies, run validation, or complete the mandatory direct Codex-source inspection."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127009",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127009",
+      "candidate_fix": null,
+      "reason": "Create the narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-127009 after restoring a writable dependency-ready checkout and satisfying the direct Codex-source gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
