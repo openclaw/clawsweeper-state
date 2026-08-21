@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T11:13:59.387Z",
+  "updated_at": "2026-08-21T11:14:57.683Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127012:5365843008:2026-08-21T06:04:18Z:re_review",
-      "comment_id": "5365843008",
-      "comment_version_key": "5365843008:2026-08-21T06:04:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127012#issuecomment-5365843008",
-      "comment_created_at": "2026-08-21T06:04:18Z",
-      "comment_updated_at": "2026-08-21T06:04:18Z",
-      "comment_body_sha256": "f23ff65920371d2c09a08376c98e9ed375575d5d2bef09d0ea8855a1e401ab68",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127012,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T06:05:00.907Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-explicit-release-groups",
-        "head_sha": "24dd31da7d83f3333c85cc2c6355a3f1d351aa2f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Kova:93:5365816957:2026-08-21T06:00:56Z:clawsweeper_auto_repair",
       "comment_id": "5365816957",
@@ -33259,6 +33212,39 @@
         "kind": "pull_request",
         "branch": "fix/codeql-html-sanitization",
         "head_sha": "65ec530841b64be7789e0fc2defd1709dcfe4aa3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/goplaces:29:5369092280:2026-08-21T11:11:54Z:clawsweeper_needs_human",
+      "comment_id": "5369092280",
+      "comment_version_key": "5369092280:2026-08-21T11:11:54Z",
+      "comment_url": "https://github.com/openclaw/goplaces/pull/29#issuecomment-5369092280",
+      "comment_created_at": "2026-08-21T11:11:54Z",
+      "comment_updated_at": "2026-08-21T11:11:54Z",
+      "comment_body_sha256": "11553604d3b9b5fe38bb46fbc0bfce22a263726677c90ef2e01010fbeafaf09d",
+      "repo": "openclaw/goplaces",
+      "issue_number": 29,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This member-authored draft has no concrete repair finding; it needs ordinary readiness and check completion rather than an automated repair lane. (sha=a9154d06004ed66debe99d8e9fea014df09e4360)",
+      "expected_head_sha": "a9154d06004ed66debe99d8e9fea014df09e4360",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T11:14:57.683Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codeql-llms-sanitization",
+        "head_sha": "a9154d06004ed66debe99d8e9fea014df09e4360",
         "cluster_id": null,
         "job_path": null
       }
