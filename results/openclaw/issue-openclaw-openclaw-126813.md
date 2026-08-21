@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126813"
 mode: "autonomous"
-run_id: "32529789709"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32529789709"
+run_id: "32531970129"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32531970129"
 head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-21T21:52:51.105Z"
+published_at: "2026-08-21T22:25:18.117Z"
 canonical: "https://github.com/openclaw/openclaw/issues/126813"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/126813"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32529789709](https://github.com/openclaw/clawsweeper/actions/runs/32529789709)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32531970129](https://github.com/openclaw/clawsweeper/actions/runs/32531970129)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/126813
 
 ## Summary
 
-Current main has the reported missing handoff: queued admission preserves the unconditional message-tool delivery hint, while completed delivery facts are recorded but never read. A narrow fix PR is appropriate, but this read-only checkout has no dependencies and lacks the mandatory ../codex source checkout, so implementation and validation cannot proceed here.
+No code or GitHub mutation was made. Current main is 9903e404ef9ffb2212f8822054001c3d972f696f and the reported owner-boundary gap remains a narrow repair candidate, but this worker cannot patch or validate it: the required sibling Codex source checkout at ../codex is absent and the workspace is read-only.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main has the reported missing handoff: queued admission preserves the un
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126813 | fix_needed | blocked | canonical | Implementation is blocked locally: the filesystem is read-only, node_modules/tsx is absent, and ../codex is absent so the repository-required direct Codex source inspection cannot be completed. |
-| #69208 | keep_related | planned | related | Keep the umbrella open; this repair should remain scoped to #126813. |
-| cluster:issue-openclaw-openclaw-126813 | build_fix_artifact | planned | canonical | A writable executor can implement this as one focused fix PR after completing the required Codex-source check and local dependency setup. |
+| #126813 | fix_needed | blocked | canonical | Implementation is blocked only by the missing mandated sibling Codex checkout and read-only filesystem; no maintainer product decision is pending. |
+| #69208 | keep_related | planned | related | Keep open as the broader family index; #126813 is the focused queued message-tool delivery repair. |
+| cluster:issue-openclaw-openclaw-126813 | build_fix_artifact | planned |  | Executor should apply the narrow new-PR repair after provisioning ../codex and a writable checkout. |
 
 ## Needs Human
 
