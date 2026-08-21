@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T11:32:47.290Z",
+  "updated_at": "2026-08-21T11:32:58.697Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3500:5365903977:2026-08-21T06:12:08Z:re_review",
-      "comment_id": "5365903977",
-      "comment_version_key": "5365903977:2026-08-21T06:12:08Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3500#issuecomment-5365903977",
-      "comment_created_at": "2026-08-21T06:12:08Z",
-      "comment_updated_at": "2026-08-21T06:12:08Z",
-      "comment_body_sha256": "abf1da2b59d01402a7cf6409fa92ccd9d96327805984ac77bf94ef34e8080519",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3500,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T06:12:54.543Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clawhub-parent-authorization-v1",
-        "head_sha": "d3a2cae1c796ef8d855c0026af7f591c7c241cac",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabpot:290:5365939533:2026-08-21T06:16:31Z:re_review",
       "comment_id": "5365939533",
@@ -33103,6 +33056,39 @@
         "kind": "pull_request",
         "branch": "docs/docker-sandboxes-install",
         "head_sha": "ead650a93c5561e2bdc6b5bb66a31c90efa82b94",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127151:5368876657:2026-08-21T11:31:43Z:clawsweeper_needs_human",
+      "comment_id": "5368876657",
+      "comment_version_key": "5368876657:2026-08-21T11:31:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127151#issuecomment-5368876657",
+      "comment_created_at": "2026-08-21T10:48:29Z",
+      "comment_updated_at": "2026-08-21T11:31:43Z",
+      "comment_body_sha256": "63df124368e8ca69b27582f33b5b7ad8e3c6dac2aeabbde243dd423988d069c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127151,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally moves sessionless interval monitor work from synthetic main to heartbeat.session, changing queued-event, transcript, and delivery ownership for deployments that... (sha=112c263675abbe8c34fdfe52cdceec40e2417cc5)",
+      "expected_head_sha": "112c263675abbe8c34fdfe52cdceec40e2417cc5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T11:32:58.697Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-session-routing-replacement",
+        "head_sha": "112c263675abbe8c34fdfe52cdceec40e2417cc5",
         "cluster_id": null,
         "job_path": null
       }
