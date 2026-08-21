@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127131",
+  "mode": "autonomous",
+  "run_id": "32502352498",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32502352498",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127131.md",
+  "published_at": "2026-08-21T16:29:26.052Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127131",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127131",
+  "canonical_pr": null,
+  "summary": "Issue #127131 remains the canonical repair path. Current main defers cached-facade runtime construction until execute, after preparation and before_tool_call finalization. Implementation is blocked because the mandated sibling ../codex checkout is absent and this read-only worker cannot clone it; no code, test, or GitHub mutation was made.",
+  "actions": [
+    {
+      "target": "#127131",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127131",
+      "candidate_fix": null,
+      "reason": "Provision the required ../codex checkout or a writable worker that can clone it, then reproduce with the regression and implement the request-scoped runtime identity repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127131",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127131",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a correctly provisioned executor, but cannot be implemented or validated in this worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide the required sibling ../codex checkout (or a writable execution environment that can clone it) before implementation proceeds."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#127131",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
