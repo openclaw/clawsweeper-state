@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T17:48:04.526Z",
+  "updated_at": "2026-08-21T17:48:06.866Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5041708933:2026-07-22T04:00:26Z:re_review",
-      "comment_id": "5041708933",
-      "comment_version_key": "5041708933:2026-07-22T04:00:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5041708933",
-      "comment_created_at": "2026-07-22T04:00:26Z",
-      "comment_updated_at": "2026-07-22T04:00:26Z",
-      "comment_body_sha256": "e1bb617769a1467b4ad9da8dde0d7583f8cfcfb4be6f6d56bd9fb6ad4872ddba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T14:14:07.678Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5041714021:2026-07-22T04:01:24Z:re_review",
       "comment_id": "5041714021",
@@ -32472,6 +32445,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:60:5348727238:2026-08-21T17:43:46Z:clawsweeper_needs_human",
+      "comment_id": "5348727238",
+      "comment_version_key": "5348727238:2026-08-21T17:43:46Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/60#issuecomment-5348727238",
+      "comment_created_at": "2026-08-19T22:24:15Z",
+      "comment_updated_at": "2026-08-21T17:43:46Z",
+      "comment_body_sha256": "eb07378a31eae803fd762bad4db78418bf9b415a7eb32a6ae296946038d182d5",
+      "repo": "openclaw/ocm",
+      "issue_number": 60,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve every handler in a migrated Service (P1)** - The code collapses matching routes to one service-wide setter and stores only one original proxy. If a named Service also serves another host or path, that h...; Review finding: [P1] Preserve every handler in a migrated Service — src/tailscale.rs:364-381 - [P1] Authenticate the loopback proxy boundary — src/identity_proxy.mjs:141-153 - [hi... (sha=4eb17425dc5f3610aad386f9a0fc8232be263143)",
+      "expected_head_sha": "4eb17425dc5f3610aad386f9a0fc8232be263143",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T17:48:06.866Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-aware-restarts",
+        "head_sha": "4eb17425dc5f3610aad386f9a0fc8232be263143",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
