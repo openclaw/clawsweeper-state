@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T00:57:21.602Z",
+  "updated_at": "2026-08-21T01:01:39.127Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126007:5359719793:2026-08-20T17:57:16Z:re_review",
-      "comment_id": "5359719793",
-      "comment_version_key": "5359719793:2026-08-20T17:57:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126007#issuecomment-5359719793",
-      "comment_created_at": "2026-08-20T17:57:16Z",
-      "comment_updated_at": "2026-08-20T17:57:16Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126007,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T17:58:13.619Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-control-ui-decision-receipts",
-        "head_sha": "d54236ced3241c5fc69842a9f1f30d801ab4dee6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126725:5359634331:2026-08-20T17:49:09Z:re_review",
       "comment_id": "5359634331",
@@ -31603,6 +31556,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126496:5349956252:2026-08-21T01:00:52Z:clawsweeper_needs_human",
+      "comment_id": "5349956252",
+      "comment_version_key": "5349956252:2026-08-21T01:00:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126496#issuecomment-5349956252",
+      "comment_created_at": "2026-08-20T01:12:15Z",
+      "comment_updated_at": "2026-08-21T01:00:52Z",
+      "comment_body_sha256": "527001bd48de26d1229bf714eb4f758dbc1732e0b4c602a81ee51f8fc8d588b5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126496,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bind projected exec authority to its producer (P1)** - Do not treat the raw gateway_exec string as enough to create core exec authority. Cron persists only tool names, so a colliding non-Codex tool name or expli...; Review finding: [P1] Bind projected exec authority to its producer — src/cron/trigger-script.ts:121-132 - [high] Name-only alias projection widens execution authority — src/cron/t... (sha=a94e33093b1343968ec9a42cc1308c7573759b30)",
+      "expected_head_sha": "a94e33093b1343968ec9a42cc1308c7573759b30",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T01:01:39.127Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-trigger-codex-exec-alias",
+        "head_sha": "a94e33093b1343968ec9a42cc1308c7573759b30",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
