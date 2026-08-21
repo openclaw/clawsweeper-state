@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T16:17:19.570Z",
+  "updated_at": "2026-08-21T16:17:24.187Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123288:5358140540:2026-08-20T15:34:02Z:re_review",
-      "comment_id": "5358140540",
-      "comment_version_key": "5358140540:2026-08-20T15:34:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123288#issuecomment-5358140540",
-      "comment_created_at": "2026-08-20T15:34:02Z",
-      "comment_updated_at": "2026-08-20T15:34:02Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123288,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T12:25:28.109Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123288:5358399322:2026-08-20T15:55:48Z:re_review",
       "comment_id": "5358399322",
@@ -31839,6 +31812,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T16:17:19.570Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127138:5368278057:2026-08-21T16:13:50Z:clawsweeper_needs_human",
+      "comment_id": "5368278057",
+      "comment_version_key": "5368278057:2026-08-21T16:13:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127138#issuecomment-5368278057",
+      "comment_created_at": "2026-08-21T09:47:34Z",
+      "comment_updated_at": "2026-08-21T16:13:50Z",
+      "comment_body_sha256": "de6dfdbf80ceb9e6b7540cd71b261451903f451dcd73ccf7fbc179bf98ff47f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127138,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The final head has changed since the hosted installer-smoke run cited in the PR body; wait for exact-head installer validation and remaining CI before merging. (sha=a416905f82e392deaba8e01686b4763552f3aa98)",
+      "expected_head_sha": "a416905f82e392deaba8e01686b4763552f3aa98",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T16:17:24.187Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/frv-install-images",
+        "head_sha": "a416905f82e392deaba8e01686b4763552f3aa98",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
