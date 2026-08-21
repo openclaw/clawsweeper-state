@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T08:28:08.541Z",
+  "updated_at": "2026-08-21T08:28:53.371Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126939:5364314584:2026-08-21T04:06:39Z:clawsweeper_auto_repair",
-      "comment_id": "5364314584",
-      "comment_version_key": "5364314584:2026-08-21T04:06:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126939#issuecomment-5364314584",
-      "comment_created_at": "2026-08-21T02:06:07Z",
-      "comment_updated_at": "2026-08-21T04:06:39Z",
-      "comment_body_sha256": "5b38adaa9cb3902f1c467bc0e4542b5680088452b68b489f408df467cafd854a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126939,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=79716153926f8c8ca12d965458309e371d8dbfb3)",
-      "expected_head_sha": "79716153926f8c8ca12d965458309e371d8dbfb3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T04:10:23.295Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/transcript-display-foundation",
-        "head_sha": "79716153926f8c8ca12d965458309e371d8dbfb3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119195:5178448730:2026-08-21T04:04:35Z:clawsweeper_needs_human",
       "comment_id": "5178448730",
@@ -32939,6 +32906,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127098:5367237082:2026-08-21T08:28:08Z:clawsweeper_needs_human",
+      "comment_id": "5367237082",
+      "comment_version_key": "5367237082:2026-08-21T08:28:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127098#issuecomment-5367237082",
+      "comment_created_at": "2026-08-21T08:15:01Z",
+      "comment_updated_at": "2026-08-21T08:28:08Z",
+      "comment_body_sha256": "b039c58efae13580143946a733c88e219a668140b6a43c28bdb2e47a4c979527",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127098,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve host authority before falling back to root adapters (P1)** - A plugin tool executes under its supplied registry scope, but this miss now returns the process-active adapter. That exposes direct channel d...; Review finding: [P1] Preserve host authority before falling back to root adapters — src/channels/plugins/registry-loader.ts:30-31 - [high] Root adapter escapes the scoped plugin b... (sha=606fb27c0da7ae40cd5ee75d3110668eacf977db)",
+      "expected_head_sha": "606fb27c0da7ae40cd5ee75d3110668eacf977db",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T08:28:53.371Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "t3code/review-xxg0dlessxx-fixes",
+        "head_sha": "606fb27c0da7ae40cd5ee75d3110668eacf977db",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
