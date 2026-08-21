@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-21T23:11:34.717Z",
+  "updated_at": "2026-08-21T23:12:34.610Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126056:5336180729:2026-08-19T00:59:05Z:maintainer_approve_automerge",
-      "comment_id": "5336180729",
-      "comment_version_key": "5336180729:2026-08-19T00:59:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126056#issuecomment-5336180729",
-      "comment_created_at": "2026-08-19T00:59:05Z",
-      "comment_updated_at": "2026-08-19T00:59:05Z",
-      "comment_body_sha256": "7e04a93ea3dee91e5dbeb9209f6c1e1ec0e56633c4fd4df432503d57427c89d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126056,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "structured ClawSweeper verdict: pass; PR has merge conflicts and needs a cloud rebase repair before automerge",
-      "expected_head_sha": "c03a99edfc129ab39b33f7d4c5519e832c870bbf",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T18:40:53.473Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/test-2",
-        "head_sha": "c03a99edfc129ab39b33f7d4c5519e832c870bbf",
-        "cluster_id": "automerge-openclaw-openclaw-126056",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-126056.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "merge",
-          "status": "repair_needed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-126056.md"
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127217:5371281283:2026-08-21T18:37:11Z:clawsweeper_auto_repair",
       "comment_id": "5371281283",
@@ -31833,6 +31774,39 @@
         "kind": "pull_request",
         "branch": "feat/grokbot-provider",
         "head_sha": "69f1f188ace7f82883c894d5f42615e989ef0c67",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsg:239:5373523641:2026-08-21T23:11:50Z:clawsweeper_auto_repair",
+      "comment_id": "5373523641",
+      "comment_version_key": "5373523641:2026-08-21T23:11:50Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/239#issuecomment-5373523641",
+      "comment_created_at": "2026-08-21T18:08:12Z",
+      "comment_updated_at": "2026-08-21T23:11:50Z",
+      "comment_body_sha256": "1fb61331f0c45f50e65563dab9e76e1a3d630d02e05c4e8d6773d680f09b43e4",
+      "repo": "openclaw/imsg",
+      "issue_number": 239,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=5470900087d7459991d2fef69943f2f05ea7b876)",
+      "expected_head_sha": "5470900087d7459991d2fef69943f2f05ea7b876",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-21T23:12:34.610Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/poll-caption-status",
+        "head_sha": "5470900087d7459991d2fef69943f2f05ea7b876",
         "cluster_id": null,
         "job_path": null
       }
