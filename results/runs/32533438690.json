@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-101593",
+  "mode": "autonomous",
+  "run_id": "32533438690",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32533438690",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-101593.md",
+  "published_at": "2026-08-21T22:41:47.281Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/101593",
+  "canonical_issue": null,
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/101593",
+  "summary": "#101593 remains the adopted repair PR. Its runtime fix is already present on main, but the test-strengthening assertion needs a narrow rebase-and-repair so it compares the matched error-listener registration, not the first listener registration. No merge or close action is proposed.",
+  "actions": [
+    {
+      "target": "#101593",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#101593",
+      "candidate_fix": "#101593",
+      "reason": "Rebase #101593 onto latest main, then make the ordering assertion track the same error-listener index selected by the test."
+    },
+    {
+      "target": "#101593",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#101593",
+      "candidate_fix": "#101593",
+      "reason": "Produce the required contributor-branch repair path without merge or close authority."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
