@@ -2,53 +2,6 @@
   "updated_at": "2026-08-21T20:44:07.031Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:111347:5372747883:2026-08-21T16:50:32Z:re_review",
-      "comment_id": "5372747883",
-      "comment_version_key": "5372747883:2026-08-21T16:50:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111347#issuecomment-5372747883",
-      "comment_created_at": "2026-08-21T16:50:32Z",
-      "comment_updated_at": "2026-08-21T16:50:32Z",
-      "comment_body_sha256": "ea04f794be0a56b7498b0223118a4804336d440adbf8893d5b6426cedcdbb1c8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111347,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T16:51:19.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ingress-monitor-abort-outcome",
-        "head_sha": "7daf6fbc2a13e15cb6c4699f3f28282d9603c44e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:127008:5372697246:2026-08-21T16:45:17Z:re_review",
       "comment_id": "5372697246",
       "comment_version_key": "5372697246:2026-08-21T16:45:17Z",
@@ -32236,6 +32189,39 @@
         "kind": "pull_request",
         "branch": "docs/xdg-config-home-clarify",
         "head_sha": "a64209f91cd929a8f193ca88f6bdc7af9e1603ee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120077:5210511871:2026-08-21T20:41:18Z:clawsweeper_needs_human",
+      "comment_id": "5210511871",
+      "comment_version_key": "5210511871:2026-08-21T20:41:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120077#issuecomment-5210511871",
+      "comment_created_at": "2026-08-07T00:45:21Z",
+      "comment_updated_at": "2026-08-21T20:41:18Z",
+      "comment_body_sha256": "143c74d78d891ca3aa78bd54c5caf1a5a3ee29950d02bbef312e8ac2dec2400f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120077,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports a loopback result but supplies no inspectable transcript, log, recording, or artifact, and it does not demonstrate th...; Review finding: [P1] Disable native tools for all non-factory collectors — extensions/codex/src/app-server/dynamic-tool-build.ts:593-600 - [P1] Add lifecycle cleanup for factory a... (sha=e9e66cd3b41fad50bfad268992b8080faf00b62c)",
+      "expected_head_sha": "e9e66cd3b41fad50bfad268992b8080faf00b62c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T20:44:06.959Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-swarm-structured-output",
+        "head_sha": "e9e66cd3b41fad50bfad268992b8080faf00b62c",
         "cluster_id": null,
         "job_path": null
       }
