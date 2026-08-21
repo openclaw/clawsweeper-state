@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-119525"
 mode: "autonomous"
-run_id: "32436246029"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32436246029"
+run_id: "32438286038"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32438286038"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-21T01:37:19.366Z"
-canonical: "#119525"
-canonical_issue: null
-canonical_pr: "#119525"
-actions_total: 1
+published_at: "2026-08-21T02:08:00.329Z"
+canonical: "https://github.com/openclaw/openclaw/pull/119525"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/93199"
+canonical_pr: "https://github.com/openclaw/openclaw/pull/119525"
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32436246029](https://github.com/openclaw/clawsweeper/actions/runs/32436246029)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32438286038](https://github.com/openclaw/clawsweeper/actions/runs/32438286038)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #119525
+Canonical: https://github.com/openclaw/openclaw/pull/119525
 
 ## Summary
 
-Make PR #119525 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+Repair #119525 on its writable contributor branch. Current main routes its deadline through corpus-attempt normalization before the cooldown owner, so the timeout identity is lost and the 60-second provider cooldown is recorded. No merge or close action is authorized.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Make PR #119525 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119525 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| https://github.com/openclaw/openclaw/issues/93199 | keep_canonical | planned | canonical | Keep the issue open while the canonical repair is rebased and validated. |
+| https://github.com/openclaw/openclaw/pull/119525 | fix_needed | planned | canonical | Rebase and move the timeout classification through the current corpus-result boundary before deciding whether to record provider cooldown. |
+| https://github.com/openclaw/openclaw/pull/119525 | build_fix_artifact | planned | canonical | Provide the bounded repair contract for ClawSweeper's deterministic edit pass. |
 
 ## Needs Human
 
