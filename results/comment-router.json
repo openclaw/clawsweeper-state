@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T03:26:51.900Z",
+  "updated_at": "2026-08-21T03:26:55.051Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126864:5362882830:2026-08-20T22:36:03Z:clawsweeper_auto_repair",
-      "comment_id": "5362882830",
-      "comment_version_key": "5362882830:2026-08-20T22:36:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126864#issuecomment-5362882830",
-      "comment_created_at": "2026-08-20T22:36:03Z",
-      "comment_updated_at": "2026-08-20T22:36:03Z",
-      "comment_body_sha256": "7adc185731357c59f4337c1e64bc6c9da0596f2d4c1889282959a699511bc024",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126864,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=87f680cf234fd9f219dda9d9648804570ea375c0)",
-      "expected_head_sha": "87f680cf234fd9f219dda9d9648804570ea375c0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T22:36:50.275Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sashankh/fix-models-agent-flag",
-        "head_sha": "87f680cf234fd9f219dda9d9648804570ea375c0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3498:5362761897:2026-08-20T22:24:51Z:re_review",
       "comment_id": "5362761897",
@@ -31917,6 +31884,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126881:5363522354:2026-08-21T03:26:04Z:clawsweeper_needs_human",
+      "comment_id": "5363522354",
+      "comment_version_key": "5363522354:2026-08-21T03:26:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126881#issuecomment-5363522354",
+      "comment_created_at": "2026-08-21T00:02:09Z",
+      "comment_updated_at": "2026-08-21T03:26:04Z",
+      "comment_body_sha256": "fa5c7995f35691fafd920412d42a62ee39e238916d86b2f9c965762a08031505",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126881,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reuse the canonical script record guard (P1)** - This new local isRecord declaration is forbidden by the repository-wide coercion-helper check, which scans every tracked source file. Import isRecord from scripts...; Review finding: [P1] Reuse the canonical script record guard — scripts/release-tooling-identity.mjs:14-16 - [medium] Verify the pinned ClawHub publisher identity contract — .githu... (sha=20a01f9308bba3055dcd7abfaaa463f9caf50afc)",
+      "expected_head_sha": "20a01f9308bba3055dcd7abfaaa463f9caf50afc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T03:26:55.051Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-protected-tooling-trust",
+        "head_sha": "20a01f9308bba3055dcd7abfaaa463f9caf50afc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
