@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T04:32:30.797Z",
+  "updated_at": "2026-08-21T04:32:53.475Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126424:5363783168:2026-08-21T00:40:38Z:re_review",
-      "comment_id": "5363783168",
-      "comment_version_key": "5363783168:2026-08-21T00:40:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126424#issuecomment-5363783168",
-      "comment_created_at": "2026-08-21T00:40:38Z",
-      "comment_updated_at": "2026-08-21T00:40:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126424,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T00:41:27.756Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/conversation-route-ownership",
-        "head_sha": "1c6b2dee20383a40a4543dcc2d22cfd85e8ec29d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126489:5363717013:2026-08-21T00:30:19Z:re_review",
       "comment_id": "5363717013",
@@ -31432,6 +31385,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-21T04:30:04Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-21T04:30:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-21T04:30:04Z",
+      "comment_body_sha256": "80025a28a05f854aa73bd66016726dee00050a294bd69f0f881e1c4ed42c5c4e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner contract (P1)** - This changes the action to 3.97.0 but leaves its explicit scanner input on 3.95.9, and ci-workflow-guards still requires both old values. The scan does not re...; Review finding: [P1] Synchronize the TruffleHog scanner contract — .github/workflows/ci.yml:1084 - [P1] Refresh the Android attestation assertion — .github/workflows/android-relea... (sha=90733a05de3d9eaea1e82cac31471976b589617e)",
+      "expected_head_sha": "90733a05de3d9eaea1e82cac31471976b589617e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T04:32:53.475Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "90733a05de3d9eaea1e82cac31471976b589617e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
