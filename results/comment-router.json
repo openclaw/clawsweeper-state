@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-21T09:46:07.626Z",
+  "updated_at": "2026-08-21T09:46:27.258Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118008:5365246773:2026-08-21T04:35:53Z:re_review",
-      "comment_id": "5365246773",
-      "comment_version_key": "5365246773:2026-08-21T04:35:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118008#issuecomment-5365246773",
-      "comment_created_at": "2026-08-21T04:35:53Z",
-      "comment_updated_at": "2026-08-21T04:35:53Z",
-      "comment_body_sha256": "ec00fa7de9f01505564749c134cba70cd34b2913d293fb9ed350bc8c4d31b210",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118008,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T04:36:43.851Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/crabline-server-terminology",
-        "head_sha": "7049186efc29083d2c53177809f28ecf22d38be1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126881:5365249958:2026-08-21T04:36:25Z:re_review",
-      "comment_id": "5365249958",
-      "comment_version_key": "5365249958:2026-08-21T04:36:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126881#issuecomment-5365249958",
-      "comment_created_at": "2026-08-21T04:36:25Z",
-      "comment_updated_at": "2026-08-21T04:36:25Z",
-      "comment_body_sha256": "df7c20e2aaf97fa46dac69ab534c06b5eb3c68fb9b665b267cd00d8ccdcb8e82",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126881,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T04:37:18.003Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-protected-tooling-trust",
-        "head_sha": "94c755d2756c086236913d1e1e49d92bf9bbc27c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124467:5365254600:2026-08-21T04:37:13Z:re_review",
       "comment_id": "5365254600",
@@ -33762,6 +33668,72 @@
         "kind": "pull_request",
         "branch": "fix/agent-command-reply-run-lane",
         "head_sha": "7984f8fa187be5d083315e376f44743654016173",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127107:5367517700:2026-08-21T09:43:24Z:clawsweeper_needs_human",
+      "comment_id": "5367517700",
+      "comment_version_key": "5367517700:2026-08-21T09:43:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127107#issuecomment-5367517700",
+      "comment_created_at": "2026-08-21T08:34:48Z",
+      "comment_updated_at": "2026-08-21T09:43:24Z",
+      "comment_body_sha256": "670a0a2500055dd43a3091737b95e3041bc4a9a6cf8b2b20e84ba082b3f80329",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127107,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Cover every PR-capable Actions cache writer (P1)** - The new guard accepts bare actions/cache@ steps whenever their path is not Node-shaped. That leaves the Cargo writers in .github/workflows/linux-app.yml and S...; Review finding: [P1] Cover every PR-capable Actions cache writer — test/scripts/ci-workflow-guards.test.ts:3540-3543 - [high] Direct PR cache writers bypass the authority contract... (sha=d34ddc0687bbb22662133ef6a848a7cdeeee2950)",
+      "expected_head_sha": "d34ddc0687bbb22662133ef6a848a7cdeeee2950",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T09:46:27.258Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/actions-cache-policy",
+        "head_sha": "d34ddc0687bbb22662133ef6a848a7cdeeee2950",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127107:5368105150:2026-08-21T09:30:02Z:re_review",
+      "comment_id": "5368105150",
+      "comment_version_key": "5368105150:2026-08-21T09:30:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127107#issuecomment-5368105150",
+      "comment_created_at": "2026-08-21T09:30:02Z",
+      "comment_updated_at": "2026-08-21T09:30:02Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127107,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T09:46:27.258Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/actions-cache-policy",
+        "head_sha": "d34ddc0687bbb22662133ef6a848a7cdeeee2950",
         "cluster_id": null,
         "job_path": null
       }
