@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T04:04:27.508Z",
+  "updated_at": "2026-08-21T04:05:10.057Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123239:5285856812:2026-08-20T23:28:01Z:clawsweeper_needs_human",
-      "comment_id": "5285856812",
-      "comment_version_key": "5285856812:2026-08-20T23:28:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123239#issuecomment-5285856812",
-      "comment_created_at": "2026-08-13T20:12:18Z",
-      "comment_updated_at": "2026-08-20T23:28:01Z",
-      "comment_body_sha256": "2295f1369595a81cf622cb4b498f5aa7fddf4beff4850a2c522c76cbbc5a545f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123239,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as dirty, while later mainline Workboard lifecycle rewrites overlap every changed runtime surface; the exact merge result needs review before landing. (sha=d4df27f6d7ffc266d35f57887fd1825dbf479489)",
-      "expected_head_sha": "d4df27f6d7ffc266d35f57887fd1825dbf479489",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T23:35:21.153Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workboard-stale-execution-122911",
-        "head_sha": "d4df27f6d7ffc266d35f57887fd1825dbf479489",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123351:5287182958:2026-08-20T23:15:52Z:clawsweeper_auto_repair",
       "comment_id": "5287182958",
@@ -31953,6 +31920,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125303:5365046518:2026-08-21T04:04:19Z:re_review",
+      "comment_id": "5365046518",
+      "comment_version_key": "5365046518:2026-08-21T04:04:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125303#issuecomment-5365046518",
+      "comment_created_at": "2026-08-21T04:04:19Z",
+      "comment_updated_at": "2026-08-21T04:04:19Z",
+      "comment_body_sha256": "a819365cf1e1b96ef556420e38c457ae7493eb04b29fe8556350b1d1f7c755fb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125303,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T04:05:07.546Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-profile-timeout-budget",
+        "head_sha": "f4f574f3f130417f0edecf057afaae183ae3f7e0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
