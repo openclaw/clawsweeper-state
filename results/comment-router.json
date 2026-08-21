@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T16:44:07.098Z",
+  "updated_at": "2026-08-21T16:45:38.262Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125820:5328722257:2026-08-21T13:16:12Z:clawsweeper_auto_repair",
-      "comment_id": "5328722257",
-      "comment_version_key": "5328722257:2026-08-21T13:16:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125820#issuecomment-5328722257",
-      "comment_created_at": "2026-08-18T13:17:49Z",
-      "comment_updated_at": "2026-08-21T13:16:12Z",
-      "comment_body_sha256": "a00e5731c95edff35be3d1de6b6596ef49544778117246c689c1caff73778275",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125820,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=aa1dc8de686c933d2915cd56d767b3bf22bf514a)",
-      "expected_head_sha": "aa1dc8de686c933d2915cd56d767b3bf22bf514a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T13:17:47.264Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-row-inline-actions",
-        "head_sha": "aa1dc8de686c933d2915cd56d767b3bf22bf514a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127008:5370301727:2026-08-21T13:20:12Z:re_review",
       "comment_id": "5370301727",
@@ -31936,6 +31903,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127271:5372620594:2026-08-21T16:44:54Z:clawsweeper_needs_human",
+      "comment_id": "5372620594",
+      "comment_version_key": "5372620594:2026-08-21T16:44:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127271#issuecomment-5372620594",
+      "comment_created_at": "2026-08-21T16:37:30Z",
+      "comment_updated_at": "2026-08-21T16:44:54Z",
+      "comment_body_sha256": "ef77c6d58166609eb094e8f4ed46796998edaaa2e7d296c52180daa369ce16ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127271,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bind actions to the recorded Telegram window (P1)** - These lines rediscover the first TelegramDesktop window, while the session only records geometry. If another matching window exists, the bounds check still p...; Review finding: [P1] Bind actions to the recorded Telegram window — scripts/e2e/telegram-desktop-recorder.ts:876-883 - [medium] Desktop input is not bound to the recorded window —... (sha=1d53a9086a6f712420c00a3bfa1da13257d44d19)",
+      "expected_head_sha": "1d53a9086a6f712420c00a3bfa1da13257d44d19",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T16:45:38.262Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mantis-extensible-desktop",
+        "head_sha": "1d53a9086a6f712420c00a3bfa1da13257d44d19",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
