@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124751"
 mode: "autonomous"
-run_id: "32439830893"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32439830893"
+run_id: "32440405234"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32440405234"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-21T02:36:14.935Z"
+published_at: "2026-08-21T02:44:55.038Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_pr: null
-actions_total: 6
+actions_total: 7
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32439830893](https://github.com/openclaw/clawsweeper/actions/runs/32439830893)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32440405234](https://github.com/openclaw/clawsweeper/actions/runs/32440405234)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/124751
 
 ## Summary
 
-Current main reproduces the identity-loss path by source inspection: Gateway emits the session.message envelope runId, but the shared Apple payload decoder drops it; reconciliation then cannot match a partial chat.final to a fuller canonical row with a different durable idempotency key. A narrow Apple-side fix artifact is ready, but this checkout is read-only, so no regression, branch, or PR could be created here.
+Confirmed a narrow Apple-client identity-loss defect on current main. Gateway emits session.message.runId, but OpenClawSessionMessageEventPayload drops it; the shared reconciliation then cannot adopt a partial chat.final into the fuller durable row. Branch creation, regression execution, and simulator proof are blocked because this worker filesystem is read-only.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 7 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,13 @@ Current main reproduces the identity-loss path by source inspection: Gateway emi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #98116 | keep_closed | skipped | related | Already closed; no closure or mutation is permitted. |
-| #98117 | keep_closed | skipped | fixed_by_candidate | Already merged and not the canonical fix for this remaining defect. |
-| #108692 | keep_closed | skipped | related | Already closed; keyboard-follow behavior is outside this narrow reconciliation fix. |
-| #123792 | keep_independent | planned | independent | Separate root cause and implementation owner. |
-| #124751 | fix_needed | planned | canonical | The authoritative run identity is available at the producer but lost before Apple reconciliation. |
-| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | blocked | canonical | Implementation is blocked only by the local execution environment; the narrow repair plan is supplied below. |
+| #124751 | fix_needed | planned | canonical | The report remains reproducible in current source and is a focused regression in the shared Apple chat reconciliation owner. |
+| #123792 | keep_independent | planned | independent | Different runtime, persistence claim, and client surfaces. |
+| #98116 | keep_closed | skipped | related | Already closed; historical context only. |
+| #98117 | keep_closed | skipped | related | Already merged and does not cover the reported partial/full variant. |
+| #108692 | keep_closed | skipped | related | Already closed; not part of the identity-reconciliation repair. |
+| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | planned | canonical | Executor should implement and validate the narrow owner-boundary repair. |
+| cluster:issue-openclaw-openclaw-124751 | open_fix_pr | blocked | canonical | This worker cannot create the required writable branch, Swift build directory, or device proof. |
 
 ## Needs Human
 

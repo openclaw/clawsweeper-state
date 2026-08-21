@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124751",
+  "mode": "autonomous",
+  "run_id": "32440405234",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32440405234",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124751.md",
+  "published_at": "2026-08-21T02:44:55.038Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124751",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124751",
+  "canonical_pr": null,
+  "summary": "Confirmed a narrow Apple-client identity-loss defect on current main. Gateway emits session.message.runId, but OpenClawSessionMessageEventPayload drops it; the shared reconciliation then cannot adopt a partial chat.final into the fuller durable row. Branch creation, regression execution, and simulator proof are blocked because this worker filesystem is read-only.",
+  "actions": [
+    {
+      "target": "#124751",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "The report remains reproducible in current source and is a focused regression in the shared Apple chat reconciliation owner."
+    },
+    {
+      "target": "#123792",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different runtime, persistence claim, and client surfaces."
+    },
+    {
+      "target": "#98116",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Already closed; historical context only."
+    },
+    {
+      "target": "#98117",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Already merged and does not cover the reported partial/full variant."
+    },
+    {
+      "target": "#108692",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Already closed; not part of the identity-reconciliation repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124751",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Executor should implement and validate the narrow owner-boundary repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124751",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "This worker cannot create the required writable branch, Swift build directory, or device proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
