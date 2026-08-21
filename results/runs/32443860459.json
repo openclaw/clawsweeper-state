@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126906",
+  "mode": "autonomous",
+  "run_id": "32443860459",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32443860459",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126906.md",
+  "published_at": "2026-08-21T03:43:16.802Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126906",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126906",
+  "canonical_pr": null,
+  "summary": "#126906 remains a valid, narrow non-security repair: a memory flush can reach its success write after final tool policy removes its only append-only writer. Plan a new credited PR that fails the maintenance run visibly before the model can claim a save.",
+  "actions": [
+    {
+      "target": "#126906",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126906",
+      "candidate_fix": null,
+      "reason": "Require the final authorized memory-flush tool surface to retain append-only write; otherwise throw into the existing failed-state and visible-error path before a model run can report success."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126906",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126906",
+      "candidate_fix": null,
+      "reason": "A two-file owner-boundary repair and regression test are sufficient; no config, schema, migration, or changelog change is required."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126906",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126906",
+      "candidate_fix": null,
+      "reason": "The job allows one new implementation PR and disallows merge or issue closure."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
