@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T19:27:27.960Z",
+  "updated_at": "2026-08-21T19:27:36.382Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127138:5372200820:2026-08-21T15:56:30Z:re_review",
-      "comment_id": "5372200820",
-      "comment_version_key": "5372200820:2026-08-21T15:56:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127138#issuecomment-5372200820",
-      "comment_created_at": "2026-08-21T15:56:30Z",
-      "comment_updated_at": "2026-08-21T15:56:30Z",
-      "comment_body_sha256": "88dfd129ec80161dd3f6ead338c17c91fc5cceeeb0c98fac65fcc737f6ba3475",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127138,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T15:57:17.786Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/frv-install-images",
-        "head_sha": "a416905f82e392deaba8e01686b4763552f3aa98",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111347:5015237215:2026-08-21T15:52:31Z:clawsweeper_needs_human",
       "comment_id": "5015237215",
@@ -32413,6 +32366,39 @@
         "kind": "pull_request",
         "branch": "docs/tool-plugin-factory-execute-signature",
         "head_sha": "155cd96a42bd1e44d5f5d5c1558870788b813821",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:513:5373939798:2026-08-21T19:26:55Z:clawsweeper_auto_repair",
+      "comment_id": "5373939798",
+      "comment_version_key": "5373939798:2026-08-21T19:26:55Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/513#issuecomment-5373939798",
+      "comment_created_at": "2026-08-21T18:48:36Z",
+      "comment_updated_at": "2026-08-21T19:26:55Z",
+      "comment_body_sha256": "607418f140c2d9cd250ea7be4d2b7f59fac66866fd3c9395661538ab2a67c824",
+      "repo": "openclaw/acpx",
+      "issue_number": 513,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2e30c45ed82cfa05f20dfbb78c460cd1bdbeef9a)",
+      "expected_head_sha": "2e30c45ed82cfa05f20dfbb78c460cd1bdbeef9a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T19:27:36.382Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/bump-claude-and-pi-adapter-ranges",
+        "head_sha": "2e30c45ed82cfa05f20dfbb78c460cd1bdbeef9a",
         "cluster_id": null,
         "job_path": null
       }
