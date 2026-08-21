@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T15:00:16.332Z",
+  "updated_at": "2026-08-21T15:00:20.958Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124467:5368530428:2026-08-21T10:14:21Z:re_review",
-      "comment_id": "5368530428",
-      "comment_version_key": "5368530428:2026-08-21T10:14:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5368530428",
-      "comment_created_at": "2026-08-21T10:14:21Z",
-      "comment_updated_at": "2026-08-21T10:14:21Z",
-      "comment_body_sha256": "3c8e8bf16dc5e917428f0f0e88e734a3fc7e556efafe93e92e39534f1c67501d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124467,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T10:15:17.404Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/crabline-structured-identity",
-        "head_sha": "81bcf11e0894d2ef52f2c859bd492f4c2b65b4fe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1178:5345316217:2026-08-21T10:14:28Z:clawsweeper_needs_human",
       "comment_id": "5345316217",
@@ -31690,6 +31643,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T15:00:16.332Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127223:5371571073:2026-08-21T14:59:13Z:clawsweeper_needs_human",
+      "comment_id": "5371571073",
+      "comment_version_key": "5371571073:2026-08-21T14:59:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127223#issuecomment-5371571073",
+      "comment_created_at": "2026-08-21T14:59:13Z",
+      "comment_updated_at": "2026-08-21T14:59:13Z",
+      "comment_body_sha256": "29f84e7c48759c2007621be064ac322a688bcf2460a3a0ef3e9e3a4a94f3af3f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127223,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is incomplete and currently reports a failure in checks-node-compact-small-19; resolve or rerun that failure and wait for the remaining required checks before merge. (sha=7392d6c31a37cfe547a92c9768564895e89c325f)",
+      "expected_head_sha": "7392d6c31a37cfe547a92c9768564895e89c325f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T15:00:20.958Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-184-nodes-json",
+        "head_sha": "7392d6c31a37cfe547a92c9768564895e89c325f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
