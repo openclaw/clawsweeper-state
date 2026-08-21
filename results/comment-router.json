@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T06:12:14.123Z",
+  "updated_at": "2026-08-21T06:12:57.121Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126945:5364374542:2026-08-21T02:15:36Z:clawsweeper_needs_human",
-      "comment_id": "5364374542",
-      "comment_version_key": "5364374542:2026-08-21T02:15:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126945#issuecomment-5364374542",
-      "comment_created_at": "2026-08-21T02:15:36Z",
-      "comment_updated_at": "2026-08-21T02:15:36Z",
-      "comment_body_sha256": "0bdb15e80459212d79cf2056ea669e9c65abcafdeb045689cec74a289634a0ea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126945,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - The patch has no concrete automated repair remaining; the protected maintainer label and incomplete exact-head checks require normal maintainer merge handling. (sha=455807c80b942adbd551e98cf05ac6955eaa31b7)",
-      "expected_head_sha": "455807c80b942adbd551e98cf05ac6955eaa31b7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T02:16:54.622Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/practical-blackwell-f1ffff",
-        "head_sha": "455807c80b942adbd551e98cf05ac6955eaa31b7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126424:5348833872:2026-08-21T02:16:15Z:clawsweeper_auto_repair",
       "comment_id": "5348833872",
@@ -32464,6 +32431,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3500:5365903977:2026-08-21T06:12:08Z:re_review",
+      "comment_id": "5365903977",
+      "comment_version_key": "5365903977:2026-08-21T06:12:08Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3500#issuecomment-5365903977",
+      "comment_created_at": "2026-08-21T06:12:08Z",
+      "comment_updated_at": "2026-08-21T06:12:08Z",
+      "comment_body_sha256": "abf1da2b59d01402a7cf6409fa92ccd9d96327805984ac77bf94ef34e8080519",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3500,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T06:12:54.543Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawhub-parent-authorization-v1",
+        "head_sha": "d3a2cae1c796ef8d855c0026af7f591c7c241cac",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
