@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T14:23:29.227Z",
+  "updated_at": "2026-08-21T14:23:31.096Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127072:5366464029:2026-08-21T08:42:30Z:clawsweeper_needs_human",
-      "comment_id": "5366464029",
-      "comment_version_key": "5366464029:2026-08-21T08:42:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127072#issuecomment-5366464029",
-      "comment_created_at": "2026-08-21T07:15:24Z",
-      "comment_updated_at": "2026-08-21T08:42:30Z",
-      "comment_body_sha256": "3af5c92fdf8b3d75e71935205797890fbe2c1a7e0332d2d6083c4a2d06b42d95",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127072,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes retention of stored credentials, TLS pins, and SSH settings; exact-head CI and the actual merge result should confirm that equivalent URLs retain them while query changes... (sha=d318b2b0194bd34ac1f1cbe901bcadbc9bf090b3)",
-      "expected_head_sha": "d318b2b0194bd34ac1f1cbe901bcadbc9bf090b3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T08:45:01.946Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/onboarding-canonical-remote-url",
-        "head_sha": "d318b2b0194bd34ac1f1cbe901bcadbc9bf090b3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126961:5364791796:2026-08-21T08:41:06Z:clawsweeper_needs_human",
       "comment_id": "5364791796",
@@ -32085,6 +32052,65 @@
         "job_path": null
       },
       "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119341:5371157347:2026-08-21T14:22:39Z:autofix",
+      "comment_id": "5371157347",
+      "comment_version_key": "5371157347:2026-08-21T14:22:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119341#issuecomment-5371157347",
+      "comment_created_at": "2026-08-21T14:22:39Z",
+      "comment_updated_at": "2026-08-21T14:22:39Z",
+      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119341,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T14:23:20.610Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/system-agent-qr-contract",
+        "head_sha": "bfd832ad3a2da12a9a2b8ad312baa14d6f155025",
+        "cluster_id": "automerge-openclaw-openclaw-119341",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119341.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
         {
           "action": "dispatch_clawsweeper",
           "status": "executed",
