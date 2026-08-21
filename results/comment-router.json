@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-21T19:48:14.819Z",
+  "updated_at": "2026-08-21T19:46:33.530Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124025:5300731845:2026-08-21T16:06:27Z:clawsweeper_needs_human",
+      "comment_id": "5300731845",
+      "comment_version_key": "5300731845:2026-08-21T16:06:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124025#issuecomment-5300731845",
+      "comment_created_at": "2026-08-15T05:27:33Z",
+      "comment_updated_at": "2026-08-21T16:06:27Z",
+      "comment_body_sha256": "3d50a0b13586e13243c47f95f3895c0eb41d6bf917064ee46b2fd10cc26a53c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The installed dependency is Codex 0.148.0 but the PR’s direct protocol evidence is for 0.147.0; a changed item-ID mapping could leave a stalled call unrecovered or associate progress... (sha=74cb2a548cc09fc30ee1cd0f2c35b243a9a9bfe1)",
+      "expected_head_sha": "74cb2a548cc09fc30ee1cd0f2c35b243a9a9bfe1",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T16:19:06.811Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-stale-tool-eligibility",
+        "head_sha": "74cb2a548cc09fc30ee1cd0f2c35b243a9a9bfe1",
+        "cluster_id": "automerge-openclaw-openclaw-124025",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124025.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124123:5301527037:2026-08-21T16:11:11Z:clawsweeper_auto_repair",
       "comment_id": "5301527037",
@@ -32138,39 +32185,6 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/development-minor-and-patch-3b24459cdd",
         "head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118161:5160088917:2026-08-21T19:47:26Z:clawsweeper_needs_human",
-      "comment_id": "5160088917",
-      "comment_version_key": "5160088917:2026-08-21T19:47:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118161#issuecomment-5160088917",
-      "comment_created_at": "2026-08-02T19:59:55Z",
-      "comment_updated_at": "2026-08-21T19:47:26Z",
-      "comment_body_sha256": "8825bcd87499649681dca83df8ebbcfc4cebd21dfb51b72a572a1948db171336",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118161,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed because this open PR already contains the bounded documentation correction and has no actionable review finding. (sha=d772d039b9a3ef11a31474d307c23ae8939e6709)",
-      "expected_head_sha": "d772d039b9a3ef11a31474d307c23ae8939e6709",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T19:48:14.819Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/whatsapp-ack-reaction-canonical-key",
-        "head_sha": "d772d039b9a3ef11a31474d307c23ae8939e6709",
         "cluster_id": null,
         "job_path": null
       }
