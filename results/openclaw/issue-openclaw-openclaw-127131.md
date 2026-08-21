@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127131"
 mode: "autonomous"
-run_id: "32522328837"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32522328837"
+run_id: "32526517749"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32526517749"
 head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-21T20:22:05.290Z"
-canonical: "https://github.com/openclaw/openclaw/issues/127131"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/127131"
+published_at: "2026-08-21T21:12:20.228Z"
+canonical: "#127131"
+canonical_issue: "#127131"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32522328837](https://github.com/openclaw/clawsweeper/actions/runs/32522328837)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32526517749](https://github.com/openclaw/clawsweeper/actions/runs/32526517749)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/127131
+Canonical: #127131
 
 ## Summary
 
-Current main still has the cached-plugin lifecycle defect, but this worker cannot modify or validate a branch: the filesystem is read-only, pnpm cannot create Corepack’s cache, and the required sibling ../codex source is unavailable. A narrow, credited fix artifact is ready for the executor.
+Current main retains the cached-descriptor hook lifecycle defect, but no implementation PR was created: this checkout is read-only, dependencies are absent, and the mandatory sibling ../codex source checkout is unavailable for direct inspection.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Current main still has the cached-plugin lifecycle defect, but this worker canno
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127131 | fix_needed | blocked | canonical | The source-proven bug is narrow and suitable for a new fix PR, but branch editing and validation are blocked by the read-only worker environment and unavailable required Codex source. |
-| cluster:issue-openclaw-openclaw-127131 | build_fix_artifact | planned | canonical | Executable narrow repair plan for the deterministic executor. |
+| #127131 | build_fix_artifact | planned | canonical | A narrow root-cause repair is defined, but this worker cannot make or validate the required branch changes under the mandatory source and filesystem gates. |
 
 ## Needs Human
 
