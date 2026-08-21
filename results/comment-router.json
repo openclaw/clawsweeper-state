@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T20:07:40.273Z",
+  "updated_at": "2026-08-21T20:08:36.245Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127138:5372533311:2026-08-21T16:29:05Z:re_review",
-      "comment_id": "5372533311",
-      "comment_version_key": "5372533311:2026-08-21T16:29:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127138#issuecomment-5372533311",
-      "comment_created_at": "2026-08-21T16:29:05Z",
-      "comment_updated_at": "2026-08-21T16:29:05Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127138,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T16:29:52.129Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/frv-install-images",
-        "head_sha": "b3c58c9c93b3e0bfca3d9f00bb50337a9942dd59",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:591:5372472982:2026-08-21T16:23:24Z:clawsweeper_needs_human",
       "comment_id": "5372472982",
@@ -32171,6 +32124,39 @@
         "kind": "pull_request",
         "branch": "codex/spend-pricing-fallback",
         "head_sha": "9fb5d824e653d034645f5b07639943210f58f5ad",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119886:5202545135:2026-08-21T20:07:00Z:clawsweeper_auto_repair",
+      "comment_id": "5202545135",
+      "comment_version_key": "5202545135:2026-08-21T20:07:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119886#issuecomment-5202545135",
+      "comment_created_at": "2026-08-06T08:58:40Z",
+      "comment_updated_at": "2026-08-21T20:07:00Z",
+      "comment_body_sha256": "50655734e375485598563f2855e531f3ba3addc48b5b9f8c5293deb5207237ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119886,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ed95c8e30ac6ff62b81ce9ea6d0057c4125f6e6d)",
+      "expected_head_sha": "ed95c8e30ac6ff62b81ce9ea6d0057c4125f6e6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T20:08:36.245Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-identity-recovery-backoff",
+        "head_sha": "ed95c8e30ac6ff62b81ce9ea6d0057c4125f6e6d",
         "cluster_id": null,
         "job_path": null
       }
