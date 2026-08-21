@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-123360"
 mode: "autonomous"
-run_id: "32460886326"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32460886326"
+run_id: "32462016195"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32462016195"
 head_sha: "b853345fa6e3595c5d25f65c3ea8245a68ce091b"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-21T08:06:54.166Z"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-21T08:19:28.191Z"
 canonical: "https://github.com/openclaw/openclaw/issues/123360"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/123360"
 canonical_pr: null
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-123360
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32460886326](https://github.com/openclaw/clawsweeper/actions/runs/32460886326)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32462016195](https://github.com/openclaw/clawsweeper/actions/runs/32462016195)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/123360
 
 ## Summary
 
-Plan one narrow credited PR for #123360. Current main exposes an authoritative bounded terminal reply through the plugin subagent runtime, but Memory Core’s local surface drops it and falls back when session readback is empty.
+#123360 remains the canonical open report. Current main exposes a bounded producer-owned terminal reply through the plugin subagent runtime, but memory-core only reads the later session transcript and falls back when it is empty. A narrow two-file repair is identified, but the required direct ../codex protocol/runtime inspection cannot occur: that checkout is absent and this sandbox is read-only with restricted network access.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Plan one narrow credited PR for #123360. Current main exposes an authoritative b
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #123360 |  |  |
 
 ## Apply Actions
 
@@ -66,16 +66,16 @@ Plan one narrow credited PR for #123360. Current main exposes an authoritative b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #123360 | fix_needed | planned | canonical | #123360 is the canonical remaining completed-output readback defect; no open implementation PR is hydrated. |
-| cluster:issue-openclaw-openclaw-123360 | build_fix_artifact | planned | canonical | A two-file owner-plugin repair is narrow and suitable for a new ClawSweeper PR. |
-| #95746 | keep_independent | planned | independent | This terminal-reply consumption repair neither implements nor supersedes the shared-lane concurrency fix. |
-| #101603 | keep_related | planned | related | Related Dream Diary loss family, but it retains unique queue-timeout and product-policy work. |
 | #87182 | keep_closed | skipped | related | Already closed; historical context only. |
-| #87206 | route_security | planned | security_sensitive | Quarantine this closed PR to central OpenClaw security handling; it does not block the unrelated #123360 repair. |
-| #90781 | keep_closed | skipped | related | Already closed; retain as historical evidence only. |
-| #93191 | keep_closed | skipped | duplicate | Already closed; no mutation is valid. |
-| #101601 | keep_closed | skipped | related | Already closed; historical context only. |
+| #87206 | route_security | planned | security_sensitive | Quarantine this closed PR only; it does not block the unrelated #123360 repair path. |
+| #90781 | keep_closed | skipped | fixed_by_candidate | Already closed. |
+| #93191 | keep_closed | skipped | related | Already closed; historical context only. |
+| #95746 | keep_independent | planned | independent | Different root cause and repair owner. |
+| #101601 | keep_closed | skipped | fixed_by_candidate | Already closed. |
+| #101603 | keep_related | planned | related | Overlap in user symptom, but distinct root cause and policy scope. |
+| #123360 | fix_needed | blocked | canonical | Implementation is blocked solely by the repository Codex hard gate: ../codex is absent and cannot be cloned or inspected in this read-only, network-restricted sandbox. |
+| cluster:issue-openclaw-openclaw-123360 | build_fix_artifact | blocked | canonical | The narrow fix can be implemented only after the Codex protocol/runtime source gate is satisfied. |
 
 ## Needs Human
 
-- none
+- Provide the required sibling ../codex checkout (https://github.com/openai/codex.git) or an environment that permits its direct inspection; then re-run the bounded protocol audit before editing or opening the fix PR.

@@ -1,0 +1,141 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123360",
+  "mode": "autonomous",
+  "run_id": "32462016195",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32462016195",
+  "head_sha": "b853345fa6e3595c5d25f65c3ea8245a68ce091b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123360.md",
+  "published_at": "2026-08-21T08:19:28.191Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/123360",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123360",
+  "canonical_pr": null,
+  "summary": "#123360 remains the canonical open report. Current main exposes a bounded producer-owned terminal reply through the plugin subagent runtime, but memory-core only reads the later session transcript and falls back when it is empty. A narrow two-file repair is identified, but the required direct ../codex protocol/runtime inspection cannot occur: that checkout is absent and this sandbox is read-only with restricted network access.",
+  "actions": [
+    {
+      "target": "#87182",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "Already closed; historical context only."
+    },
+    {
+      "target": "#87206",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this closed PR only; it does not block the unrelated #123360 repair path."
+    },
+    {
+      "target": "#90781",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "fixed_by_candidate",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed."
+    },
+    {
+      "target": "#93191",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "Already closed; historical context only."
+    },
+    {
+      "target": "#95746",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different root cause and repair owner."
+    },
+    {
+      "target": "#101601",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "fixed_by_candidate",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed."
+    },
+    {
+      "target": "#101603",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "Overlap in user symptom, but distinct root cause and policy scope."
+    },
+    {
+      "target": "#123360",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked solely by the repository Codex hard gate: ../codex is absent and cannot be cloned or inspected in this read-only, network-restricted sandbox."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-123360",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "The narrow fix can be implemented only after the Codex protocol/runtime source gate is satisfied."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 4,
+    "route_security": 1,
+    "keep_independent": 1,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 4,
+    "planned": 3,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide the required sibling ../codex checkout (https://github.com/openai/codex.git) or an environment that permits its direct inspection; then re-run the bounded protocol audit before editing or opening the fix PR."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#123360",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
