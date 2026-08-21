@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-21T10:23:10.199Z",
+  "updated_at": "2026-08-21T10:19:33.447Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3500:5365192308:2026-08-21T05:01:25Z:clawsweeper_needs_human",
+      "comment_id": "5365192308",
+      "comment_version_key": "5365192308:2026-08-21T05:01:25Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3500#issuecomment-5365192308",
+      "comment_created_at": "2026-08-21T04:26:57Z",
+      "comment_updated_at": "2026-08-21T05:01:25Z",
+      "comment_body_sha256": "5e583a4c3caa5a3c18ef390743fc67581fa3fedd334ccb7ab33ccaeb82468be8",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3500,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The companion OpenClaw receipt producer at https://github.com/openclaw/openclaw/pull/126881 must land and be rehearsed before its reusable-workflow pin moves; pinning only one side wo... (sha=946ba45a911666caab2966fa9c7dd7068abcb7f2)",
+      "expected_head_sha": "946ba45a911666caab2966fa9c7dd7068abcb7f2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T05:10:05.604Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawhub-parent-authorization-v1",
+        "head_sha": "946ba45a911666caab2966fa9c7dd7068abcb7f2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126971:5364931519:2026-08-21T05:05:43Z:clawsweeper_auto_repair",
       "comment_id": "5364931519",
@@ -33569,39 +33602,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1455:5368453127:2026-08-21T10:21:12Z:clawsweeper_needs_human",
-      "comment_id": "5368453127",
-      "comment_version_key": "5368453127:2026-08-21T10:21:12Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1455#issuecomment-5368453127",
-      "comment_created_at": "2026-08-21T10:06:00Z",
-      "comment_updated_at": "2026-08-21T10:21:12Z",
-      "comment_body_sha256": "665c3d31bd0b42c456667e732f18aa88b053906d0dd45f94442308ef63848fab",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1455,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Use the lease region when releasing cache volumes (P1)** - createServerWithFallback can allocate through a fallback-region client, but this new cleanup call always uses this.client, which is constructed for the...; Review finding: [P1] Use the lease region when releasing cache volumes — worker/src/fleet.ts:24827-24832 - [medium] Fallback-region cleanup targets the wrong AWS region — worker/s... (sha=68e4d556e5b507888b71f0f5a7d0488cddd12fb4)",
-      "expected_head_sha": "68e4d556e5b507888b71f0f5a7d0488cddd12fb4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T10:23:10.199Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/aws-cache-volume-lifecycle",
-        "head_sha": "68e4d556e5b507888b71f0f5a7d0488cddd12fb4",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
