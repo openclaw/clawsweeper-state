@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T06:19:26.636Z",
+  "updated_at": "2026-08-21T06:19:28.138Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123062:5277800609:2026-08-21T02:18:22Z:clawsweeper_needs_human",
-      "comment_id": "5277800609",
-      "comment_version_key": "5277800609:2026-08-21T02:18:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123062#issuecomment-5277800609",
-      "comment_created_at": "2026-08-13T08:15:16Z",
-      "comment_updated_at": "2026-08-21T02:18:22Z",
-      "comment_body_sha256": "d4f754fbd8d80823be63b68ade875bc9cb3224a4ce52d8cf4051a4422db3319d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123062,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 16-frame queue can close aggressively pipelined pre-auth clients with 1008, so its compatibility contract needs explicit owner acceptance. (sha=84dad92235333325e7a33fafec562a493faa7e27)",
-      "expected_head_sha": "84dad92235333325e7a33fafec562a493faa7e27",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T02:23:29.161Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/gateway-ws-aug13",
-        "head_sha": "84dad92235333325e7a33fafec562a493faa7e27",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123062:5281257559:2026-08-13T13:45:17Z:re_review",
       "comment_id": "5281257559",
@@ -32464,6 +32431,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T06:19:26.636Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1450:5365726015:2026-08-21T06:13:08Z:clawsweeper_needs_human",
+      "comment_id": "5365726015",
+      "comment_version_key": "5365726015:2026-08-21T06:13:08Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1450#issuecomment-5365726015",
+      "comment_created_at": "2026-08-21T05:48:50Z",
+      "comment_updated_at": "2026-08-21T06:13:08Z",
+      "comment_body_sha256": "33a0fbf34b95eef2fed8bff51a10fe0380fd6addb9fc8e462dbb3bdac66821c3",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1450,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Typed CLI requests fail closed until the matching Worker routes are deployed, so enabling the option before coordinator rollout would stop typed pool operations. (sha=5f0ac379e2412c444826ea7ca7037c837038fab7)",
+      "expected_head_sha": "5f0ac379e2412c444826ea7ca7037c837038fab7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T06:19:28.138Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/typed-ready-pool-matching",
+        "head_sha": "5f0ac379e2412c444826ea7ca7037c837038fab7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
