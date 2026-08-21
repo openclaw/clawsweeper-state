@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T18:07:30.185Z",
+  "updated_at": "2026-08-21T18:07:30.442Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122425:5371024745:2026-08-21T14:14:33Z:re_review",
-      "comment_id": "5371024745",
-      "comment_version_key": "5371024745:2026-08-21T14:14:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5371024745",
-      "comment_created_at": "2026-08-21T14:14:33Z",
-      "comment_updated_at": "2026-08-21T14:14:33Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122425,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T14:15:13.686Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/inline-slash-skills",
-        "head_sha": "1eeb446a40f04680bc8e252b402dfb0e036f158b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/goplaces:29:5371041182:2026-08-21T14:15:30Z:re_review",
       "comment_id": "5371041182",
@@ -32827,6 +32780,39 @@
         "kind": "pull_request",
         "branch": "steipete/plugin-runtime-generation-reuse",
         "head_sha": "860c7eed6dbbf7fe96d129e558f8893a899d2ee7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127220:5371404762:2026-08-21T18:01:28Z:clawsweeper_auto_repair",
+      "comment_id": "5371404762",
+      "comment_version_key": "5371404762:2026-08-21T18:01:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127220#issuecomment-5371404762",
+      "comment_created_at": "2026-08-21T14:44:06Z",
+      "comment_updated_at": "2026-08-21T18:01:28Z",
+      "comment_body_sha256": "35b550fe2c81acf96e10ea2a75a9f3f6359eb3effe2642ac1fd8ed2475e94d36",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7a1a56c760c17d0922a2c80e9825a26827652303)",
+      "expected_head_sha": "7a1a56c760c17d0922a2c80e9825a26827652303",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T18:07:30.442Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ingress-deferred-stall",
+        "head_sha": "7a1a56c760c17d0922a2c80e9825a26827652303",
         "cluster_id": null,
         "job_path": null
       }
