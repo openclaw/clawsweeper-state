@@ -67,17 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/127238 at the TUI run-lifecycle owner. For ordinary chat abort/error terminal events whose run ID no longer matches a stale active ID, clear activity only through the existing no-tracked-run stale-stream guard; do not unconditionally clear status. Preserve promotion of concurrent tracked runs and the established inactive local `/btw` exception. Add a boundary regression in `src/tui/tui-event-handlers.test.ts` that fails on current main for an ordinary mismatched-ID abort (and cover the shared error sibling if the canonical change reaches it); prove it passes after the repair. Do not add config, Gateway protocol changes, fallback behavior, or CHANGELOG.md edits; include release-note context in the PR body.
+Repair the TUI lifecycle owner so an ordinary chat aborted or terminal error event clears stale streaming activity after its run is retired only when no tracked run remains. Preserve concurrent-run promotion and inactive local /btw behavior; add no configuration. Add a focused regression in src/tui/tui-event-handlers.test.ts that fails on current main for stale active-ID divergence. Do not edit CHANGELOG.md; put release-note context in the PR body.
 
 Likely files:
 
-- src/tui/tui-run-lifecycle.ts
 - src/tui/tui-event-handlers.ts
+- src/tui/tui-run-lifecycle.ts
 - src/tui/tui-event-handlers.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/tui/tui-event-handlers.test.ts
+- pnpm test src/tui/tui-event-handlers.test.ts
 - node scripts/run-vitest.mjs run --config test/vitest/vitest.tui-pty.config.ts
 
 ## Operator Prompt
