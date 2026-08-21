@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T04:46:29.695Z",
+  "updated_at": "2026-08-21T04:46:31.528Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119525:5188980437:2026-08-21T01:02:33Z:clawsweeper_auto_repair",
-      "comment_id": "5188980437",
-      "comment_version_key": "5188980437:2026-08-21T01:02:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119525#issuecomment-5188980437",
-      "comment_created_at": "2026-08-05T07:38:24Z",
-      "comment_updated_at": "2026-08-21T01:02:33Z",
-      "comment_body_sha256": "eeff3dd1cdf4b62eae07a94dfb25acb25d531e6cffeeac3740976bb349fcf4c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119525,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cca783dc532834f06074292703c6e971a397ecb7)",
-      "expected_head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T01:03:35.141Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/memory-search-timeout-classification",
-        "head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-        "cluster_id": "automerge-openclaw-openclaw-119525",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125068:5312151661:2026-08-21T01:02:42Z:clawsweeper_needs_human",
       "comment_id": "5312151661",
@@ -31358,6 +31311,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-steer-transcript-order",
         "head_sha": "4312a3613c843bea23a97dd9513dbf5c6bd2542f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126999:5365306257:2026-08-21T04:45:30Z:clawsweeper_needs_human",
+      "comment_id": "5365306257",
+      "comment_version_key": "5365306257:2026-08-21T04:45:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126999#issuecomment-5365306257",
+      "comment_created_at": "2026-08-21T04:45:30Z",
+      "comment_updated_at": "2026-08-21T04:45:30Z",
+      "comment_body_sha256": "01532e459e31e45c16ca353280f507ab2458adb78222075971a3c7bda4fbceb0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126999,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes active channel lifecycle during a secrets reload; before merge, an isolated repaired-file RPC smoke should confirm that a healthy sibling stays running and a manually sto... (sha=baea3dd54c0ff617f1139bc9657d7ce6ce86f284)",
+      "expected_head_sha": "baea3dd54c0ff617f1139bc9657d7ce6ce86f284",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T04:46:31.528Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/quizzical-swanson-566aef",
+        "head_sha": "baea3dd54c0ff617f1139bc9657d7ce6ce86f284",
         "cluster_id": null,
         "job_path": null
       }
