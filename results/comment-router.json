@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T15:49:43.532Z",
+  "updated_at": "2026-08-21T15:50:49.614Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127160:5369276979:2026-08-21T11:30:33Z:clawsweeper_needs_human",
-      "comment_id": "5369276979",
-      "comment_version_key": "5369276979:2026-08-21T11:30:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127160#issuecomment-5369276979",
-      "comment_created_at": "2026-08-21T11:30:33Z",
-      "comment_updated_at": "2026-08-21T11:30:33Z",
-      "comment_body_sha256": "e544553098ea2af8ee3373cd1bf97f2551bd02f19851b1ccf7f7aee50e0d2c26",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127160,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes noncanonical manual benchmark runs to cache-off, mock-only, and non-publishing; exact-head workflow validation must cover both that restricted path and t... (sha=d0bbce33797676bf9fe264c2eb0e6fc081ed09df)",
-      "expected_head_sha": "d0bbce33797676bf9fe264c2eb0e6fc081ed09df",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T11:31:41.084Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/performance-candidate-trust",
-        "head_sha": "d0bbce33797676bf9fe264c2eb0e6fc081ed09df",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126775:5359960804:2026-08-21T11:24:44Z:clawsweeper_needs_human",
       "comment_id": "5359960804",
@@ -31663,6 +31630,53 @@
       "status": "skipped",
       "processed_at": "2026-08-21T15:49:43.532Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126035:5372128205:2026-08-21T15:49:59Z:re_review",
+      "comment_id": "5372128205",
+      "comment_version_key": "5372128205:2026-08-21T15:49:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126035#issuecomment-5372128205",
+      "comment_created_at": "2026-08-21T15:49:59Z",
+      "comment_updated_at": "2026-08-21T15:49:59Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126035,
+      "author": "HermanZeng",
+      "author_id": 25895921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T15:50:47.564Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-reclamation-worker",
+        "head_sha": "878472f2a754a5552bbf12326d2cb45582ecc0b5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
