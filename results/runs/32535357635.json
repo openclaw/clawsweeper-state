@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-119160",
+  "mode": "autonomous",
+  "run_id": "32535357635",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32535357635",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119160.md",
+  "published_at": "2026-08-21T23:13:35.662Z",
+  "canonical": "#119160",
+  "canonical_issue": "#119148",
+  "canonical_pr": "#119160",
+  "summary": "Keep #119148 open as the source report and repair canonical PR #119160 on its contributor branch. Current main still drops a configured non-synthetic cap only for explicit Opus 5 reasoning-off requests; #119160 is dirty against main and must be rebased, rebased test expectations updated, then revalidated before any merge consideration.",
+  "actions": [
+    {
+      "target": "#119148",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119148",
+      "candidate_fix": "#119160",
+      "reason": "This remains the canonical user-facing reproduction until the repaired PR is validated and lands."
+    },
+    {
+      "target": "#119160",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119160",
+      "candidate_fix": "#119160",
+      "reason": "A narrow owner-boundary repair is available, but the adopted branch requires rebase and exact-head validation before it can become merge-ready."
+    },
+    {
+      "target": "#119160",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119160",
+      "candidate_fix": "#119160",
+      "reason": "Emit the required contributor-branch repair artifact; merge and closure are disabled by this job."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
