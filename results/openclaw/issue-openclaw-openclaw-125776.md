@@ -2,30 +2,30 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125776"
 mode: "autonomous"
-run_id: "32536305742"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32536305742"
-head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
+run_id: "32537237627"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32537237627"
+head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-21T23:25:46.613Z"
+published_at: "2026-08-21T23:43:59.085Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-125776
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32536305742](https://github.com/openclaw/clawsweeper/actions/runs/32536305742)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32537237627](https://github.com/openclaw/clawsweeper/actions/runs/32537237627)
 
 Workflow conclusion: success
 
@@ -35,20 +35,20 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 ## Summary
 
-#125776 remains the canonical, source-reproducible report. Current main drops the dynamic call identity when the Codex projector emits textual tool-result progress, while Telegram keys the structured start row by tool:<callId>. A narrow repair is identified, but the mandatory direct ../codex protocol inspection cannot run: the sibling checkout is absent and this read-only worker cannot clone it.
+Implementation is blocked before a safe fix artifact: the mandatory sibling Codex source checkout is absent, and this read-only/no-network worker cannot provision it. Current main is 1d5d5cf462a5e0099c1d5bf3b66608067c844165.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #116512 | keep_related | planned | related | Keep open as a related but independent repair family. |
-| #125776 | fix_needed | blocked | canonical | A direct Codex runtime/protocol check is mandatory before an implementation verdict or code change; this environment cannot provide it. |
-| #125779 | keep_closed | skipped | superseded | Historical candidate; retain contributor attribution in any later repair PR. |
-| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | blocked | canonical | Resume after a readable sibling Codex checkout is available and verify the DynamicToolCall callId lifecycle directly. |
+| #125776 | needs_human | blocked | needs_human | Provision a sibling ../codex checkout or rerun in an environment where it is available; then inspect its dynamic-tool lifecycle before selecting the callback identity contract and creating a fix artifact. |
+| #116512 | keep_related | planned | related | Keep open as a separate commentary-progress producer path; it is not a duplicate of this cluster's dynamic-tool repair. |
+| #125779 | keep_closed | skipped | superseded | Already closed; no closeout or mutation is permitted. |
 
 ## Needs Human
 
-- none
+- Provide the required sibling ../codex source checkout so the worker can directly verify the dynamic-tool protocol/runtime contract before producing a fix artifact.
