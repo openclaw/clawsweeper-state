@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127297",
+  "mode": "autonomous",
+  "run_id": "32506751980",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32506751980",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127297.md",
+  "published_at": "2026-08-21T18:18:20.206Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127297",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127297",
+  "canonical_pr": null,
+  "summary": "#127297 remains a narrow, source-reproducible bug on current main 40151953b0abefabc6fe43fbe9b6f8ab5ee7f5b5. The exact npm remediation target uses the raw gateway version while comparison already strips a trailing numeric packaging suffix. A writable dependency-ready checkout and the mandatory sibling ../codex source are unavailable, so no branch, test run, or PR can be safely produced here; the executable narrow repair artifact is included.",
+  "actions": [
+    {
+      "target": "#127297",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127297",
+      "candidate_fix": null,
+      "reason": "Implementation is appropriate but blocked only by the read-only, dependency-less checkout and missing mandatory sibling Codex source; use the cluster artifact in a writable executor."
+    },
+    {
+      "target": "#123136",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#127297",
+      "candidate_fix": null,
+      "reason": "Shares the plugin-drift area but has separate release and product follow-up; leave it open."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127297",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127297",
+      "candidate_fix": null,
+      "reason": "A writable executor should apply this focused new-fix-PR artifact after installing dependencies and completing the required Codex-source inspection."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
