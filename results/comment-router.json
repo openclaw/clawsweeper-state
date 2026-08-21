@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T14:58:28.181Z",
+  "updated_at": "2026-08-21T14:59:22.194Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:572:5368201832:2026-08-21T10:00:44Z:clawsweeper_needs_human",
-      "comment_id": "5368201832",
-      "comment_version_key": "5368201832:2026-08-21T10:00:44Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/572#issuecomment-5368201832",
-      "comment_created_at": "2026-08-21T09:39:36Z",
-      "comment_updated_at": "2026-08-21T10:00:44Z",
-      "comment_body_sha256": "5ccfdafbeaa7f4982447faa1fc73896da00d794acaff838eb2e299e14c044bcc",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 572,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Wrap every documented privileged recovery phase (P2)** - The recovery commands pass codesign-run and package-run directly to scripts, while the orchestrator uses --noprofile --norc -p -c 'exec \"$@\"'. This lets i...; Review finding: [P2] Wrap every documented privileged recovery phase — docs/RELEASING.md:104-120 - [medium] Manual instructions bypass the credential wrapper — docs/RELEASING.md:1... (sha=d66aeb316001a0364c56ebfbd059cab60c662773)",
-      "expected_head_sha": "d66aeb316001a0364c56ebfbd059cab60c662773",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T10:08:10.622Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/playground-artifact-provenance",
-        "head_sha": "d3e9191cc64c189323802dfff50f3c650249e8e8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125664:5324603599:2026-08-21T10:07:09Z:clawsweeper_auto_repair",
       "comment_id": "5324603599",
@@ -31728,6 +31695,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3120:5371562283:2026-08-21T14:58:23Z:clawsweeper_needs_human",
+      "comment_id": "5371562283",
+      "comment_version_key": "5371562283:2026-08-21T14:58:23Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3120#issuecomment-5371562283",
+      "comment_created_at": "2026-08-21T14:58:23Z",
+      "comment_updated_at": "2026-08-21T14:58:23Z",
+      "comment_body_sha256": "72d13929855585098c356f565a0575c4867f6d43e31b573e2dd8a2ae0f1ae5a5",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3120,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body only asserts formatter and linter success from another checkout; it provides no after-fix scanner run, focused test result, or reda...; Review finding: [P1] Rebase the change onto current main — Package.swift:1 - [P1] Restrict stale detection to actual regressions — Sources/CodexBarCore/Vendored/CostUsage/CostUsag... (sha=2db732f15f6ecd74da89da8a56979b2dc788ff5e)",
+      "expected_head_sha": "2db732f15f6ecd74da89da8a56979b2dc788ff5e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T14:59:22.194Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-tokscale-parity-p0",
+        "head_sha": "2db732f15f6ecd74da89da8a56979b2dc788ff5e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
