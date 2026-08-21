@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T04:55:05.776Z",
+  "updated_at": "2026-08-21T04:56:27.915Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125822:5364030362:2026-08-21T01:19:58Z:re_review",
-      "comment_id": "5364030362",
-      "comment_version_key": "5364030362:2026-08-21T01:19:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125822#issuecomment-5364030362",
-      "comment_created_at": "2026-08-21T01:19:58Z",
-      "comment_updated_at": "2026-08-21T01:19:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125822,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T01:20:40.979Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-ui-state",
-        "head_sha": "d43fb4976daeea6011c79a3f605972785b2f038b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:109707:5364046889:2026-08-21T01:22:50Z:re_review",
       "comment_id": "5364046889",
@@ -31378,6 +31331,39 @@
         "kind": "pull_request",
         "branch": "agent/sqlite-schema-fast-path",
         "head_sha": "1e9af7903eeefd1da873148fa553afce7e52b912",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123051:5277810385:2026-08-21T04:55:06Z:clawsweeper_needs_human",
+      "comment_id": "5277810385",
+      "comment_version_key": "5277810385:2026-08-21T04:55:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123051#issuecomment-5277810385",
+      "comment_created_at": "2026-08-13T08:16:21Z",
+      "comment_updated_at": "2026-08-21T04:55:06Z",
+      "comment_body_sha256": "d571b6a85e6e8e31d14cef5d8164cff5a845a23522cdda43e5565677a71f7777",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123051,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm the configured registry as a proxy trust anchor** - The authenticated catalog proxy will now fetch the exact icon route of OPENCLAW_CLAWHUB_URL or CLAWHUB_URL; this is bounded b...; Review finding: [low] Confirm the configured registry as a proxy trust anchor — src/plugins/management-service.ts:720 (sha=ff525cc687adcb2965ad392fff7f5687257e3388)",
+      "expected_head_sha": "ff525cc687adcb2965ad392fff7f5687257e3388",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T04:56:27.915Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/clawhub-icons-aug13",
+        "head_sha": "ff525cc687adcb2965ad392fff7f5687257e3388",
         "cluster_id": null,
         "job_path": null
       }
