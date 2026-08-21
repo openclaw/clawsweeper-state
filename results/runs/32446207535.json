@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124751",
+  "mode": "autonomous",
+  "run_id": "32446207535",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32446207535",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124751.md",
+  "published_at": "2026-08-21T04:23:54.214Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124751",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124751",
+  "canonical_pr": null,
+  "summary": "Current main still drops the authoritative session.message envelope runId in the shared Apple codec, so a partial chat.final and a fuller canonical row with differing text/idempotency identities cannot reconcile. A narrow fix artifact is prepared; this worker cannot patch, test, or open the branch because the checkout is read-only, ../codex is absent, and cloning is disallowed.",
+  "actions": [
+    {
+      "target": "#124751",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "The issue is a current, narrow shared Apple reconciliation defect; it is not the already-fixed keyboard-follow report or the independent CLI aggregate-rendering issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124751",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "The executor should implement the prepared, bounded Apple-side propagation and regression path on clawsweeper/issue-openclaw-openclaw-124751."
+    },
+    {
+      "target": "#98117",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Closed context only; no closure or mutation is valid."
+    },
+    {
+      "target": "#108692",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Closed context only; no closure or mutation is valid."
+    },
+    {
+      "target": "#123792",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Leave open independently."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2,
+    "keep_independent": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
