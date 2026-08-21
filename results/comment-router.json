@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T20:49:10.810Z",
+  "updated_at": "2026-08-21T20:50:13.594Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123288:5313497884:2026-08-17T08:12:17Z:re_review",
-      "comment_id": "5313497884",
-      "comment_version_key": "5313497884:2026-08-17T08:12:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123288#issuecomment-5313497884",
-      "comment_created_at": "2026-08-17T08:12:17Z",
-      "comment_updated_at": "2026-08-17T08:12:17Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123288,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T16:54:18.330Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123288:5357816134:2026-08-20T15:10:00Z:re_review",
       "comment_id": "5357816134",
@@ -32278,6 +32251,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3130:5375258380:2026-08-21T20:49:23Z:clawsweeper_auto_repair",
+      "comment_id": "5375258380",
+      "comment_version_key": "5375258380:2026-08-21T20:49:23Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3130#issuecomment-5375258380",
+      "comment_created_at": "2026-08-21T20:49:23Z",
+      "comment_updated_at": "2026-08-21T20:49:23Z",
+      "comment_body_sha256": "e859695dad46717a25adbc60584c0d3a4d1e9b937241a26a2cb4fdf1338e138d",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3130,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=a37fa553282d27832cce74e6273c5e16a72bfc7d)",
+      "expected_head_sha": "a37fa553282d27832cce74e6273c5e16a72bfc7d",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-21T20:50:13.594Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/persist-codex-priority-turn-cursor",
+        "head_sha": "a37fa553282d27832cce74e6273c5e16a72bfc7d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
