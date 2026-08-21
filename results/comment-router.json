@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T22:48:32.238Z",
+  "updated_at": "2026-08-21T22:48:37.137Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127224:5373603602:2026-08-21T18:16:06Z:re_review",
-      "comment_id": "5373603602",
-      "comment_version_key": "5373603602:2026-08-21T18:16:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127224#issuecomment-5373603602",
-      "comment_created_at": "2026-08-21T18:16:06Z",
-      "comment_updated_at": "2026-08-21T18:16:06Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127224,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T18:28:29.264Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-contract-current-main",
-        "head_sha": "8f37545b33f76237f50d730ea5af152ac0094b5c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124025:5373612911:2026-08-21T18:17:03Z:re_review",
       "comment_id": "5373612911",
@@ -31885,6 +31838,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-main-macos-child-exit-liveness",
         "head_sha": "ea4e5e8c82ac97cf389e07d9aa2251b1bfc344bb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127661:5376077726:2026-08-21T22:47:32Z:clawsweeper_needs_human",
+      "comment_id": "5376077726",
+      "comment_version_key": "5376077726:2026-08-21T22:47:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127661#issuecomment-5376077726",
+      "comment_created_at": "2026-08-21T22:31:45Z",
+      "comment_updated_at": "2026-08-21T22:47:32Z",
+      "comment_body_sha256": "9ef8a733514f06c401ee256fc0707a1c575824abe86bb353ff507bde3be1d251",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127661,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing callers that deliberately created sessions for unconfigured explicit owners will now fail immediately instead of creating lifecycle-unmanageable state; this is the intended c... (sha=1382d4ecb2ed40b399a269cf663c5cff4f02ded8)",
+      "expected_head_sha": "1382d4ecb2ed40b399a269cf663c5cff4f02ded8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T22:48:37.137Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/infallible-gould-ca77da",
+        "head_sha": "1382d4ecb2ed40b399a269cf663c5cff4f02ded8",
         "cluster_id": null,
         "job_path": null
       }
