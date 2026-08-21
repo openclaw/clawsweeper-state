@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32510449217"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32510449217"
+run_id: "32512309528"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32512309528"
 head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-21T18:11:13.417Z"
+published_at: "2026-08-21T18:34:35.221Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32510449217](https://github.com/openclaw/clawsweeper/actions/runs/32510449217)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32512309528](https://github.com/openclaw/clawsweeper/actions/runs/32512309528)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Current main source confirms the narrow fallback-selection defect: unconfigured probes ignore catalog status and select deprecated kimi-k2.5 before usable Ollama Cloud rows. A two-file repair artifact is planned, but this read-only checkout has no dependencies and Corepack cannot create its cache, so no branch, regression test, or local validation could be completed. The required sibling Codex checkout is also absent; no Codex verdict or merge recommendation is made.
+#124689 is a real, narrow probe-target bug on main 887b9dd5e879c10fac60b22eae4a7ce753884bfa. The fallback selector preserves catalog order after provider matching, so it selects deprecated ollama-cloud/kimi-k2.5 when no ollama-cloud candidate exists. A two-file fix artifact is ready; implementation and validation are blocked only by this worker's read-only checkout, missing dependencies, and unavailable required sibling ../codex source.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main source confirms the narrow fallback-selection defect: unconfigured 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout and unavailable dependencies; the source-defined repair path is narrow and does not need product or provider-policy judgment. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | A writable executor can implement and validate this focused repair on clawsweeper/issue-openclaw-openclaw-124689. |
+| #124689 | fix_needed | blocked | canonical | A narrow owner-boundary repair is appropriate, but this worker cannot write the branch or run the dependency-backed regression and changed gate. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Create one narrow credited ClawSweeper fix PR from clawsweeper/issue-openclaw-openclaw-124689 after restoring a writable dependency-complete checkout and satisfying the local Codex source gate. |
 
 ## Needs Human
 
