@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T16:42:29.093Z",
+  "updated_at": "2026-08-21T16:42:59.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127014:5370241594:2026-08-21T13:14:34Z:re_review",
-      "comment_id": "5370241594",
-      "comment_version_key": "5370241594:2026-08-21T13:14:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127014#issuecomment-5370241594",
-      "comment_created_at": "2026-08-21T13:14:20Z",
-      "comment_updated_at": "2026-08-21T13:14:34Z",
-      "comment_body_sha256": "4ede1e33ea55e9bc404b7977e97911bf44ffc74cb2f89c611347d8b45eeea7be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127014,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T13:15:12.777Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-decision-diagnostic-drain",
-        "head_sha": "9eca306ae1cc69d88dd72c288a0719f0a91420e4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126366:5345587421:2026-08-21T13:13:01Z:clawsweeper_needs_human",
       "comment_id": "5345587421",
@@ -31919,6 +31872,39 @@
         "kind": "pull_request",
         "branch": "fix/current-chat-media-guidance",
         "head_sha": "8d476a79716c26e7de087ee67f209c4aa57bf80e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126316:5342611771:2026-08-21T16:39:59Z:clawsweeper_needs_human",
+      "comment_id": "5342611771",
+      "comment_version_key": "5342611771:2026-08-21T16:39:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126316#issuecomment-5342611771",
+      "comment_created_at": "2026-08-19T13:11:36Z",
+      "comment_updated_at": "2026-08-21T16:39:59Z",
+      "comment_body_sha256": "b1cb295cfc88554c6acf4286bf2fd590ec4a5e4c817d8b8fcaa2f5c6974f1d4f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126316,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; before merge, refresh the merge result and rerun the generated-protocol check on the exact rebased head. (sha=a4007c58fdab616c6a303381c4eefe6bcc27c45e)",
+      "expected_head_sha": "a4007c58fdab616c6a303381c4eefe6bcc27c45e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T16:42:59.024Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-routing-contract-protocol",
+        "head_sha": "a4007c58fdab616c6a303381c4eefe6bcc27c45e",
         "cluster_id": null,
         "job_path": null
       }
