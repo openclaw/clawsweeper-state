@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T16:33:54.180Z",
+  "updated_at": "2026-08-21T16:34:01.561Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127186:5370026488:2026-08-21T12:52:34Z:clawsweeper_needs_human",
-      "comment_id": "5370026488",
-      "comment_version_key": "5370026488:2026-08-21T12:52:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127186#issuecomment-5370026488",
-      "comment_created_at": "2026-08-21T12:52:34Z",
-      "comment_updated_at": "2026-08-21T12:52:34Z",
-      "comment_body_sha256": "5e7263858255ef55b47e03602a69e21d418d1047aa7408f8e6af5292bdedd660",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127186,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging this precursor alone leaves the current Apple relay on the legacy unfenced cancellation path, despite the new protocol documentation requiring the current turn ID. (sha=62ec6037ee150f930684fa7133acac5d7faa438a)",
-      "expected_head_sha": "62ec6037ee150f930684fa7133acac5d7faa438a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T12:53:27.001Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/realtime-cancel-contract-l6a",
-        "head_sha": "62ec6037ee150f930684fa7133acac5d7faa438a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126616:5354020666:2026-08-21T12:50:18Z:clawsweeper_auto_repair",
       "comment_id": "5354020666",
@@ -32048,6 +32015,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124014:5372577660:2026-08-21T16:33:15Z:re_review",
+      "comment_id": "5372577660",
+      "comment_version_key": "5372577660:2026-08-21T16:33:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5372577660",
+      "comment_created_at": "2026-08-21T16:33:15Z",
+      "comment_updated_at": "2026-08-21T16:33:15Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124014,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T16:33:59.475Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/auth-reauth-state-reset",
+        "head_sha": "0533900ac48b7604084d11146eaedebd58414e6d",
+        "cluster_id": "automerge-openclaw-openclaw-124014",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
