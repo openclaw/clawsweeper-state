@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T08:23:42.169Z",
+  "updated_at": "2026-08-21T08:24:00.170Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126881:5365068382:2026-08-21T04:07:51Z:re_review",
-      "comment_id": "5365068382",
-      "comment_version_key": "5365068382:2026-08-21T04:07:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126881#issuecomment-5365068382",
-      "comment_created_at": "2026-08-21T04:07:51Z",
-      "comment_updated_at": "2026-08-21T04:07:51Z",
-      "comment_body_sha256": "3b8b8a0157286928d75a327ecbb02a7eb0a4c324399643e24e7c15eecce56f7f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126881,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T04:08:34.863Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-protected-tooling-trust",
-        "head_sha": "ac8018edcf93489277cd7c0267956518653c07ed",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116446:5133286180:2026-08-21T04:07:41Z:clawsweeper_needs_human",
       "comment_id": "5133286180",
@@ -32922,6 +32875,39 @@
         "kind": "pull_request",
         "branch": "fix/android-chat-mic-voice-note-fallback",
         "head_sha": "194ad17ffccdbbf665445ab9a351e500230e49d8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119195:5178448730:2026-08-21T08:22:49Z:clawsweeper_needs_human",
+      "comment_id": "5178448730",
+      "comment_version_key": "5178448730:2026-08-21T08:22:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119195#issuecomment-5178448730",
+      "comment_created_at": "2026-08-04T11:36:28Z",
+      "comment_updated_at": "2026-08-21T08:22:49Z",
+      "comment_body_sha256": "2f54508dd43ce69e9da731d91fcacc28cfd8ef2301fa008cb49e32a1e7c0539f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119195,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The net +209 production-line scheduler and Gateway-root lifecycle change is availability-sensitive; the isolated proof is strong, but required checks for this exact head should finish... (sha=43f99b9ccde1c4318459d647f8a38d36cd5a8d61)",
+      "expected_head_sha": "43f99b9ccde1c4318459d647f8a38d36cd5a8d61",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T08:24:00.170Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/cron-cross-tick-bounded-dispatcher",
+        "head_sha": "43f99b9ccde1c4318459d647f8a38d36cd5a8d61",
         "cluster_id": null,
         "job_path": null
       }
