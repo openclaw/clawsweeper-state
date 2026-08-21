@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124751",
+  "mode": "autonomous",
+  "run_id": "32441951201",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32441951201",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124751.md",
+  "published_at": "2026-08-21T03:11:31.867Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124751",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124751",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a code verdict: the required sibling ../codex checkout is absent, and this read-only worker cannot clone it to perform the repository-mandated direct protocol/runtime inspection.",
+  "actions": [
+    {
+      "target": "#98116",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Historical context only; already closed items must not receive closure actions."
+    },
+    {
+      "target": "#98117",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Historical merged PR; no mutation is valid."
+    },
+    {
+      "target": "#108692",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Historical related issue; no mutation is valid."
+    },
+    {
+      "target": "#123792",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different producer and failure path; keep its existing repair track separate."
+    },
+    {
+      "target": "#124751",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Provide an inspected ../codex checkout or authorize cloning it, then rerun the focused Apple reconciliation reproduction and repair lane."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "keep_independent": 1,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Codex hard gate: ../codex is absent and cannot be cloned in this read-only worker. A maintainer must provide/authorize the required direct Codex source inspection before implementation or a fix artifact."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#124751",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
