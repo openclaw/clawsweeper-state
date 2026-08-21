@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127272",
+  "mode": "autonomous",
+  "run_id": "32502765487",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32502765487",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127272.md",
+  "published_at": "2026-08-21T16:36:04.921Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127272",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127272",
+  "canonical_pr": null,
+  "summary": "#127272 remains a reproducible canonical bug on main d993742d: Bedrock emits `Bedrock stream ended before messageStop`, but shared classification/retry evidence recognizes only `message_stop`, so same-model retry and fallback are skipped. Implementation is blocked in this worker because the mandatory sibling `../codex` source checkout is absent and this read-only sandbox cannot clone it or write a repair branch; pnpm also cannot create its Corepack cache.",
+  "actions": [
+    {
+      "target": "#127272",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127272",
+      "candidate_fix": null,
+      "reason": "A narrow shared-classifier repair is warranted; no provider fallback or partial-output policy change is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127272",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127272",
+      "candidate_fix": null,
+      "reason": "The executable repair requires a writable runner with the mandatory sibling Codex checkout and installed dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
