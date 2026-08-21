@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T14:46:14.790Z",
+  "updated_at": "2026-08-21T14:47:15.228Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127115:5367829610:2026-08-21T09:37:42Z:clawsweeper_needs_human",
-      "comment_id": "5367829610",
-      "comment_version_key": "5367829610:2026-08-21T09:37:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127115#issuecomment-5367829610",
-      "comment_created_at": "2026-08-21T09:03:09Z",
-      "comment_updated_at": "2026-08-21T09:37:42Z",
-      "comment_body_sha256": "78e476e647c608722d6b1b2e3c0e23244ea8e797892f53335683c7f71df631f7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127115,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the external publication contract** - The reusable workflow at the pinned ClawHub commit is the enforcement point for the new parent artifact; confirm its artifact lookup and val...; Review finding: [medium] Verify the external publication contract — .github/workflows/plugin-clawhub-release.yml:618 (sha=43dc8d2bb38fab7f736d03ea8fe4ed92acc20e9c)",
-      "expected_head_sha": "43dc8d2bb38fab7f736d03ea8fe4ed92acc20e9c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T09:48:19.661Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/beta3-clawhub-v2-producer-20260821",
-        "head_sha": "43dc8d2bb38fab7f736d03ea8fe4ed92acc20e9c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127118:5367837836:2026-08-21T09:42:39Z:clawsweeper_needs_human",
       "comment_id": "5367837836",
@@ -31793,6 +31760,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/goplaces:29:5371432545:2026-08-21T14:46:34Z:re_review",
+      "comment_id": "5371432545",
+      "comment_version_key": "5371432545:2026-08-21T14:46:34Z",
+      "comment_url": "https://github.com/openclaw/goplaces/pull/29#issuecomment-5371432545",
+      "comment_created_at": "2026-08-21T14:46:34Z",
+      "comment_updated_at": "2026-08-21T14:46:34Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/goplaces",
+      "issue_number": 29,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T14:47:13.225Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codeql-llms-sanitization",
+        "head_sha": "2d5b922f10a16aef592da26d74e668946d7ce193",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
