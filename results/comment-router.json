@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T14:52:06.729Z",
+  "updated_at": "2026-08-21T14:53:46.476Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127002:5368376059:2026-08-21T09:57:54Z:re_review",
-      "comment_id": "5368376059",
-      "comment_version_key": "5368376059:2026-08-21T09:57:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127002#issuecomment-5368376059",
-      "comment_created_at": "2026-08-21T09:57:54Z",
-      "comment_updated_at": "2026-08-21T09:57:54Z",
-      "comment_body_sha256": "743aa13bc9f21fdfd613d652e705c883ec9675bde2e31854bae3740073080c4d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127002,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T09:58:41.418Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-frozen-target-ci-compat",
-        "head_sha": "7a54d0443c89f46ef17bef67ec59b580e815f8ab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127026:5368378140:2026-08-21T09:58:08Z:re_review",
       "comment_id": "5368378140",
@@ -31747,6 +31700,39 @@
         "kind": "pull_request",
         "branch": "security/performance-candidate-trust",
         "head_sha": "100d9974cd49fb96d7b6f93fdb991cedbbb212f6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127225:5371493171:2026-08-21T14:52:11Z:clawsweeper_needs_human",
+      "comment_id": "5371493171",
+      "comment_version_key": "5371493171:2026-08-21T14:52:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127225#issuecomment-5371493171",
+      "comment_created_at": "2026-08-21T14:52:11Z",
+      "comment_updated_at": "2026-08-21T14:52:11Z",
+      "comment_body_sha256": "01a2c05c754ea0e2116754548bb11f153f8b5d0fd1f0cd243d3362b059944a10",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127225,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 19 lines in a bug fix; the local candidate representation appears necessary to retain per-store agent identity through selection, but maintainers should confi... (sha=f8f53bdae652abf3068028c9e914af33c74b91c5)",
+      "expected_head_sha": "f8f53bdae652abf3068028c9e914af33c74b91c5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T14:53:46.476Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bound-sessions-cli-limit",
+        "head_sha": "f8f53bdae652abf3068028c9e914af33c74b91c5",
         "cluster_id": null,
         "job_path": null
       }
