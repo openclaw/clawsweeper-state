@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T22:37:52.389Z",
+  "updated_at": "2026-08-21T22:38:37.555Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121799:5331750027:2026-08-18T17:27:45Z:re_review",
-      "comment_id": "5331750027",
-      "comment_version_key": "5331750027:2026-08-18T17:27:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121799#issuecomment-5331750027",
-      "comment_created_at": "2026-08-18T17:27:45Z",
-      "comment_updated_at": "2026-08-18T17:27:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121799,
-      "author": "sasan1200",
-      "author_id": 28139727,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T18:10:38.271Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-21T17:59:00Z:clawsweeper_auto_repair",
       "comment_id": "5357688049",
@@ -32038,6 +32011,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124831:5376119705:2026-08-21T22:38:04Z:freeform_assist",
+      "comment_id": "5376119705",
+      "comment_version_key": "5376119705:2026-08-21T22:38:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124831#issuecomment-5376119705",
+      "comment_created_at": "2026-08-21T22:38:04Z",
+      "comment_updated_at": "2026-08-21T22:38:04Z",
+      "comment_body_sha256": "cae85f63363ad26a2028e1d68e5dfc55e4d6684eb516bce2740684a7a2a585d5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124831,
+      "author": "hannesrudolph",
+      "author_id": 49103247,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "please re-review the latest commit; the prewarmed plugin behavior has been redesigned as a dormant exact-package cache.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T22:38:36.098Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/macos-prewarmed-runtime-pr",
+        "head_sha": "b0f3948ffb11475aefbe14c88c9a3dca4050e772",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
