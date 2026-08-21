@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T12:56:54.916Z",
+  "updated_at": "2026-08-21T12:59:18.298Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124467:5366312915:2026-08-21T06:59:38Z:re_review",
-      "comment_id": "5366312915",
-      "comment_version_key": "5366312915:2026-08-21T06:59:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5366312915",
-      "comment_created_at": "2026-08-21T06:59:38Z",
-      "comment_updated_at": "2026-08-21T06:59:38Z",
-      "comment_body_sha256": "f5293b9b617f14139a23f2cfaab59886be60b8ffe45e76a5688ac59d56b1bd0b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124467,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T07:00:29.820Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/crabline-structured-identity",
-        "head_sha": "53012b82481c1ffeade02331b39481a417b96ad4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126887:5366314813:2026-08-21T06:59:51Z:re_review",
       "comment_id": "5366314813",
@@ -32680,6 +32633,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-b3ce8c744c",
         "head_sha": "a0041996a80b1b70aeca31edf1a7a69cc737f6b8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123288:5285890676:2026-08-21T12:58:05Z:clawsweeper_auto_repair",
+      "comment_id": "5285890676",
+      "comment_version_key": "5285890676:2026-08-21T12:58:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123288#issuecomment-5285890676",
+      "comment_created_at": "2026-08-13T20:15:45Z",
+      "comment_updated_at": "2026-08-21T12:58:05Z",
+      "comment_body_sha256": "3b89efb3954f2b39e7082cf89c84d0b4589cc6be11e144330107e96507a8deb5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123288,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fd77714adade44f7fa3ac669a61ae046d7be5ed3)",
+      "expected_head_sha": "fd77714adade44f7fa3ac669a61ae046d7be5ed3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T12:59:18.298Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/why-are-we-able-to-have-a-loading-spinner-and-an-activity-dot-at",
+        "head_sha": "fd77714adade44f7fa3ac669a61ae046d7be5ed3",
         "cluster_id": null,
         "job_path": null
       }
