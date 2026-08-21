@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T13:48:12.404Z",
+  "updated_at": "2026-08-21T13:49:39.982Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126991:5366829853:2026-08-21T07:44:10Z:re_review",
-      "comment_id": "5366829853",
-      "comment_version_key": "5366829853:2026-08-21T07:44:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126991#issuecomment-5366829853",
-      "comment_created_at": "2026-08-21T07:44:10Z",
-      "comment_updated_at": "2026-08-21T07:44:10Z",
-      "comment_body_sha256": "e45a3c6db0d6732abddc969bd008a89a75facc7ea8be677ba11cbb5782891f59",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126991,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T07:44:48.816Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clawhub-bootstrap-writer-trust",
-        "head_sha": "b6d7394a98a855e188f3d3d9e9dc6ed27beb54b3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126995:5365226842:2026-08-21T07:44:07Z:clawsweeper_needs_human",
       "comment_id": "5365226842",
@@ -32670,6 +32623,39 @@
         "kind": "pull_request",
         "branch": "feat/spend-tokscale-antigravity-cursor",
         "head_sha": "9c2e542f121770fcd703a71227363bb9c8af80bb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-21T13:48:50Z:clawsweeper_needs_human",
+      "comment_id": "5365906478",
+      "comment_version_key": "5365906478:2026-08-21T13:48:50Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5365906478",
+      "comment_created_at": "2026-08-21T06:12:29Z",
+      "comment_updated_at": "2026-08-21T13:48:50Z",
+      "comment_body_sha256": "9035613899ce95e3785b449b9951b87b5bc9f6abfc8fba77fc29e0b23bd8bb73",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3501,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The dependent query rollout must wait for both indexes to backfill and remove staged in its later schema deployment; otherwise Convex will reject queries using them. (sha=06a059de703228d0c84c665cb66ac8ddf7de8d11)",
+      "expected_head_sha": "06a059de703228d0c84c665cb66ac8ddf7de8d11",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T13:49:39.982Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/stage-signal-indexes",
+        "head_sha": "06a059de703228d0c84c665cb66ac8ddf7de8d11",
         "cluster_id": null,
         "job_path": null
       }
