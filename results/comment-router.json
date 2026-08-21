@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T04:08:36.270Z",
+  "updated_at": "2026-08-21T04:08:49.371Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126616:5354020666:2026-08-20T23:08:05Z:clawsweeper_auto_repair",
-      "comment_id": "5354020666",
-      "comment_version_key": "5354020666:2026-08-20T23:08:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126616#issuecomment-5354020666",
-      "comment_created_at": "2026-08-20T09:27:59Z",
-      "comment_updated_at": "2026-08-20T23:08:05Z",
-      "comment_body_sha256": "614fdae9220077555028fcf2442f7bdc00b66d9398da2f3584cf37b0b45527f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126616,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b504a545f87be3bff2d50a813ece42245aea501e)",
-      "expected_head_sha": "b504a545f87be3bff2d50a813ece42245aea501e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T23:35:21.153Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/http-user-session-from-conversation-id",
-        "head_sha": "b504a545f87be3bff2d50a813ece42245aea501e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126619:5354020910:2026-08-20T23:28:22Z:clawsweeper_needs_human",
       "comment_id": "5354020910",
@@ -31981,6 +31948,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116446:5133286180:2026-08-21T04:07:41Z:clawsweeper_needs_human",
+      "comment_id": "5133286180",
+      "comment_version_key": "5133286180:2026-08-21T04:07:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5133286180",
+      "comment_created_at": "2026-07-30T16:03:22Z",
+      "comment_updated_at": "2026-08-21T04:07:41Z",
+      "comment_body_sha256": "4cda15a5540965a9ec0994035537a4763df11ea5edc2ce65dc04b78593758b31",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Approve the token-routing QA boundary** - The transport injects the complete Discord endpoint triple into the child environment, redirecting its generated bot token to the local provide...; Review finding: [medium] Approve the token-routing QA boundary — extensions/qa-lab/src/crabline-transport.ts:486 - [medium] Audit the expedited Crabline release — pnpm-workspace.y... (sha=cf7bd084eac9a64c469a7be754666f413cbff03a)",
+      "expected_head_sha": "cf7bd084eac9a64c469a7be754666f413cbff03a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T04:08:49.371Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/qa-crabline-discord-0.1.13",
+        "head_sha": "cf7bd084eac9a64c469a7be754666f413cbff03a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
