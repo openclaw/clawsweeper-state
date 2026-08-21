@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T06:28:47.009Z",
+  "updated_at": "2026-08-21T06:28:55.795Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3111:5364458869:2026-08-21T02:29:03Z:re_review",
-      "comment_id": "5364458869",
-      "comment_version_key": "5364458869:2026-08-21T02:29:03Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3111#issuecomment-5364458869",
-      "comment_created_at": "2026-08-21T02:29:03Z",
-      "comment_updated_at": "2026-08-21T02:29:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3111,
-      "author": "sf-jin-ku",
-      "author_id": 16588145,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T02:35:44.449Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-swap-cloudkit-snapshot-keys",
-        "head_sha": "ecb286e95d92e095638952be9a0397593d7d45b5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3111:5359950240:2026-08-21T02:34:42Z:clawsweeper_auto_repair",
       "comment_id": "5359950240",
@@ -32326,6 +32279,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T06:28:47.009Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127008:5365337494:2026-08-21T06:27:43Z:clawsweeper_needs_human",
+      "comment_id": "5365337494",
+      "comment_version_key": "5365337494:2026-08-21T06:27:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127008#issuecomment-5365337494",
+      "comment_created_at": "2026-08-21T04:50:28Z",
+      "comment_updated_at": "2026-08-21T06:27:43Z",
+      "comment_body_sha256": "a5a76a78c0c313ee64aafcc796b433e85a90f91ee447965f06ff52fa5d316e9e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127008,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify protected tooling tags against the GitHub ref (P1)** - requireToolingRoute only checks the tag spelling and SHA prefix, and the following rev-parse resolves a local ref. A caller can create a local releas...; Review finding: [P1] Verify protected tooling tags against the GitHub ref — scripts/release-plan-producer.mts:503-505 - [P1] Track the shared collector as a ClawHub release input... (sha=583b3c2085037b1aa2c2b89185328472a4578c02)",
+      "expected_head_sha": "583b3c2085037b1aa2c2b89185328472a4578c02",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T06:28:55.795Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-plan-contract3",
+        "head_sha": "583b3c2085037b1aa2c2b89185328472a4578c02",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
