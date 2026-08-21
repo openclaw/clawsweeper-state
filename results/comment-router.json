@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T09:10:38.606Z",
+  "updated_at": "2026-08-21T09:10:51.252Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120491:5224970607:2026-08-21T04:20:30Z:clawsweeper_auto_repair",
-      "comment_id": "5224970607",
-      "comment_version_key": "5224970607:2026-08-21T04:20:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5224970607",
-      "comment_created_at": "2026-08-08T06:42:09Z",
-      "comment_updated_at": "2026-08-21T04:20:30Z",
-      "comment_body_sha256": "1594a9bb17f923eebbd5950719cf7350f883a3b1494da3d1f013f4b5785ead6b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0d97a025dfe3fad6d1a3124a20a1044789aa6b83)",
-      "expected_head_sha": "0d97a025dfe3fad6d1a3124a20a1044789aa6b83",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T04:21:50.021Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119992-per-turn-send-budget",
-        "head_sha": "0d97a025dfe3fad6d1a3124a20a1044789aa6b83",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5352695771:2026-08-20T07:19:01Z:re_review",
       "comment_id": "5352695771",
@@ -33575,6 +33542,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127115:5367829610:2026-08-21T09:10:07Z:clawsweeper_needs_human",
+      "comment_id": "5367829610",
+      "comment_version_key": "5367829610:2026-08-21T09:10:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127115#issuecomment-5367829610",
+      "comment_created_at": "2026-08-21T09:03:09Z",
+      "comment_updated_at": "2026-08-21T09:10:07Z",
+      "comment_body_sha256": "205829ef232177f374ece20dbb9771e1ce3499705846519645feeeb094755191",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127115,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve run-ID-only manual recovery (P1)** - release_publish_run_attempt remains optional and the preceding branch explicitly accepts human recovery with only a run ID, but this endpoint requires an attempt. Re...; Review finding: [P1] Preserve run-ID-only manual recovery — .github/workflows/plugin-clawhub-release.yml:429 - [medium] Verify the pinned ClawHub v2 authorization contract — .gith... (sha=9a8deeea09faac862b57221d90615df59f8f5ff1)",
+      "expected_head_sha": "9a8deeea09faac862b57221d90615df59f8f5ff1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T09:10:51.252Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/beta3-clawhub-v2-producer-20260821",
+        "head_sha": "9a8deeea09faac862b57221d90615df59f8f5ff1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
