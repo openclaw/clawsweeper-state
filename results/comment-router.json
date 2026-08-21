@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T11:43:27.878Z",
+  "updated_at": "2026-08-21T11:44:18.721Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126971:5365959996:2026-08-21T06:18:57Z:re_review",
-      "comment_id": "5365959996",
-      "comment_version_key": "5365959996:2026-08-21T06:18:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126971#issuecomment-5365959996",
-      "comment_created_at": "2026-08-21T06:18:57Z",
-      "comment_updated_at": "2026-08-21T06:18:57Z",
-      "comment_body_sha256": "07436074a34f902c6a503bdde30ff322ca7d6a00ad883568c84716c5c2751634",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126971,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T06:19:56.676Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-qa-failed-tool-honesty",
-        "head_sha": "d1f093e97bc6bd5bb3cc098699ffe79efcfe92f8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126537:5365961442:2026-08-21T06:19:07Z:re_review",
       "comment_id": "5365961442",
@@ -33106,6 +33059,39 @@
         "kind": "pull_request",
         "branch": "t3code/review-xxg0dlessxx-fixes",
         "head_sha": "49864b785af7d8db30c3ae4bb45a5e3ae1b68ceb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126924:5364133840:2026-08-21T11:43:17Z:clawsweeper_auto_repair",
+      "comment_id": "5364133840",
+      "comment_version_key": "5364133840:2026-08-21T11:43:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126924#issuecomment-5364133840",
+      "comment_created_at": "2026-08-21T01:37:12Z",
+      "comment_updated_at": "2026-08-21T11:43:17Z",
+      "comment_body_sha256": "e2ccc24ca6e7c9f8a7f49d29df85c6e2c8f926db69b6752ed38ad25422b91187",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126924,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a333d3529ede07c857b3bb0a71e3a56722698906)",
+      "expected_head_sha": "a333d3529ede07c857b3bb0a71e3a56722698906",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T11:44:18.721Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-wait-expiry-not-death",
+        "head_sha": "a333d3529ede07c857b3bb0a71e3a56722698906",
         "cluster_id": null,
         "job_path": null
       }
