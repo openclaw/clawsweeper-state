@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T09:09:31.326Z",
+  "updated_at": "2026-08-21T09:10:12.827Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5365147065:2026-08-21T04:19:28Z:re_review",
-      "comment_id": "5365147065",
-      "comment_version_key": "5365147065:2026-08-21T04:19:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5365147065",
-      "comment_created_at": "2026-08-21T04:19:28Z",
-      "comment_updated_at": "2026-08-21T04:19:28Z",
-      "comment_body_sha256": "f6cd270c61839937a8a42b5fba6f47936179c9f8e982dcf159d84f2fb5ca4772",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review `ea3d7d868f229ff2de9b78205dc8990998e5b0ee`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T04:20:09.102Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/queue-followup-persistence",
-        "head_sha": "ea3d7d868f229ff2de9b78205dc8990998e5b0ee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123075:5278284857:2026-08-21T04:19:17Z:clawsweeper_needs_human",
       "comment_id": "5278284857",
@@ -33575,6 +33528,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127083:5366822775:2026-08-21T09:09:18Z:clawsweeper_needs_human",
+      "comment_id": "5366822775",
+      "comment_version_key": "5366822775:2026-08-21T09:09:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127083#issuecomment-5366822775",
+      "comment_created_at": "2026-08-21T07:43:36Z",
+      "comment_updated_at": "2026-08-21T09:09:18Z",
+      "comment_body_sha256": "10014fe399bb1b63beb943433dff541cdeeaec74fa7883a1d8981be90fbd8913",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127083,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; rebase and exact-head validation are needed before merge even though GitHub currently reports a clean merge. (sha=f685781bed3f5e89d088ba8210312e70afe8bf91)",
+      "expected_head_sha": "f685781bed3f5e89d088ba8210312e70afe8bf91",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T09:10:12.826Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/onboarding-auth-rollback",
+        "head_sha": "f685781bed3f5e89d088ba8210312e70afe8bf91",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
