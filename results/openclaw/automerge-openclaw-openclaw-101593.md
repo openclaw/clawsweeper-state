@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-101593"
 mode: "autonomous"
-run_id: "32481839337"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32481839337"
+run_id: "32483135224"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32483135224"
 head_sha: "728f804d92275634a3afbeec0599446d8346e631"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-21T12:38:11.959Z"
+published_at: "2026-08-21T12:53:37.104Z"
 canonical: "#101593"
 canonical_issue: null
 canonical_pr: "#101593"
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32481839337](https://github.com/openclaw/clawsweeper/actions/runs/32481839337)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32483135224](https://github.com/openclaw/clawsweeper/actions/runs/32483135224)
 
 Workflow conclusion: failure
 
