@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-08-21T19:32:29.908Z",
+  "updated_at": "2026-08-21T19:32:30.746Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123288:5372300403:2026-08-21T16:06:12Z:re_review",
-      "comment_id": "5372300403",
-      "comment_version_key": "5372300403:2026-08-21T16:06:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123288#issuecomment-5372300403",
-      "comment_created_at": "2026-08-21T16:06:12Z",
-      "comment_updated_at": "2026-08-21T16:06:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123288,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T16:07:02.136Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/why-are-we-able-to-have-a-loading-spinner-and-an-activity-dot-at",
-        "head_sha": "61608041ccb6d2f577c921e85551b3be2ff8f0a3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/birdclaw:126:5332966875:2026-08-21T16:06:29Z:clawsweeper_needs_human",
-      "comment_id": "5332966875",
-      "comment_version_key": "5332966875:2026-08-21T16:06:29Z",
-      "comment_url": "https://github.com/steipete/birdclaw/pull/126#issuecomment-5332966875",
-      "comment_created_at": "2026-08-18T19:23:18Z",
-      "comment_updated_at": "2026-08-21T16:06:29Z",
-      "comment_body_sha256": "c8cd03935fc93625e90b949f72612d05c396abcfe38768a2843141db8c89746d",
-      "repo": "steipete/birdclaw",
-      "issue_number": 126,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this head as dirty against main; merging requires resolving the post-base live-sync refactor, then revalidating cursor isolation and normal no-token cache behavior on t... (sha=a3f96fa9227482f196b21817e2076bd29307315a)",
-      "expected_head_sha": "a3f96fa9227482f196b21817e2076bd29307315a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T16:07:45.926Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/saved-collection-pagination-token",
-        "head_sha": "a3f96fa9227482f196b21817e2076bd29307315a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:steipete/birdclaw:126:5333173588:2026-08-18T19:41:52Z:re_review",
       "comment_id": "5333173588",
@@ -32148,6 +32068,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127301:5373026414:2026-08-21T19:31:21Z:clawsweeper_needs_human",
+      "comment_id": "5373026414",
+      "comment_version_key": "5373026414:2026-08-21T19:31:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127301#issuecomment-5373026414",
+      "comment_created_at": "2026-08-21T17:18:04Z",
+      "comment_updated_at": "2026-08-21T19:31:21Z",
+      "comment_body_sha256": "65bf42b432a9479ecc67af9227291138624757393bca26e12ca3280b3df355c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127301,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body defers the only real non-publishing rerun demonstration until after landing; synthetic subprocess tests cannot establish that GitHub Actions artifacts, job logs, and rerun... (sha=9354542db85c79379877dca3b8963ebf9750e38e)",
+      "expected_head_sha": "9354542db85c79379877dca3b8963ebf9750e38e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T19:32:30.746Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-log-checkpoint",
+        "head_sha": "9354542db85c79379877dca3b8963ebf9750e38e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127301:5373923712:2026-08-21T18:47:11Z:re_review",
+      "comment_id": "5373923712",
+      "comment_version_key": "5373923712:2026-08-21T18:47:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127301#issuecomment-5373923712",
+      "comment_created_at": "2026-08-21T18:47:11Z",
+      "comment_updated_at": "2026-08-21T18:47:11Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127301,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T19:32:30.746Z",
+      "target": null
     }
   ]
 }
