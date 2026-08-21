@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T23:29:43.201Z",
+  "updated_at": "2026-08-21T23:30:43.597Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5317009673:2026-08-17T14:18:44Z:re_review",
-      "comment_id": "5317009673",
-      "comment_version_key": "5317009673:2026-08-17T14:18:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5317009673",
-      "comment_created_at": "2026-08-17T14:18:44Z",
-      "comment_updated_at": "2026-08-17T14:18:44Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T18:45:10.452Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5317155883:2026-08-17T14:48:18Z:re_review",
       "comment_id": "5317155883",
@@ -31968,6 +31941,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112896:5376448132:2026-08-21T23:29:54Z:re_review",
+      "comment_id": "5376448132",
+      "comment_version_key": "5376448132:2026-08-21T23:29:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112896#issuecomment-5376448132",
+      "comment_created_at": "2026-08-21T23:29:54Z",
+      "comment_updated_at": "2026-08-21T23:29:54Z",
+      "comment_body_sha256": "2a47e3254a1764bb474ce6f655e393b2e110598bbb648642183f44ad706a8efd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112896,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head `308d32e78a088a4743f78e5a6d38a68b8967b565`. this current-main restack narrows startup-pending admission to the exact originless local device-less `gateway-client`/`backend` read-only probe while restored admission is held, preserves the existing startup-node path, and carries that explicit allowance through the device-less authentication guard. pre-fix focused reproduction rejected the intended held probe; post-fix local validation passed 107 gateway/restore tests and 24 final/restored/journal tests, the gateway-root test type shard, assertion-safety ratchet, touched oxfmt/oxlint, and git diff --check. hosted ci/testbox is running on this exact head",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T23:30:41.812Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/rfc-0013-restored-admission",
+        "head_sha": "308d32e78a088a4743f78e5a6d38a68b8967b565",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
