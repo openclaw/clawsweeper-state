@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T03:01:41.077Z",
+  "updated_at": "2026-08-21T03:02:58.140Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106391:4958592011:2026-08-20T21:58:36Z:clawsweeper_auto_repair",
-      "comment_id": "4958592011",
-      "comment_version_key": "4958592011:2026-08-20T21:58:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/106391#issuecomment-4958592011",
-      "comment_created_at": "2026-07-13T13:43:40Z",
-      "comment_updated_at": "2026-08-20T21:58:36Z",
-      "comment_body_sha256": "007cdaa3e3e26e234bcaeb3ba17069db6c713f12f39bd17034b3590e70313334",
-      "repo": "openclaw/openclaw",
-      "issue_number": 106391,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T22:04:13.829Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gpt55-picker-profileid-dedup-clean3-20260713",
-        "head_sha": "07ed25f7bcca3882cf936ebe92a1bc79483fbf48",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-20T21:59:58Z:clawsweeper_needs_human",
       "comment_id": "5154193917",
@@ -31532,6 +31499,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118067:5364674849:2026-08-21T03:02:04Z:re_review",
+      "comment_id": "5364674849",
+      "comment_version_key": "5364674849:2026-08-21T03:02:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118067#issuecomment-5364674849",
+      "comment_created_at": "2026-08-21T03:02:04Z",
+      "comment_updated_at": "2026-08-21T03:02:04Z",
+      "comment_body_sha256": "6ba2b2f7805419c6895743a34c461a19cb74dc46aa744237128eef54457491ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118067,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T03:02:55.940Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/discord-provider-endpoint-runtime",
+        "head_sha": "36686d6805cfbac6a27e7a812d914be520467509",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
