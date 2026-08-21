@@ -1,0 +1,54 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-101593",
+  "mode": "autonomous",
+  "run_id": "32485895509",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32485895509",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-101593.md",
+  "published_at": "2026-08-21T13:24:13.345Z",
+  "canonical": "#101593",
+  "canonical_issue": "#101458",
+  "canonical_pr": "#101593",
+  "summary": "#101593 remains the adopted repair target. Its only diff is a regression-test strengthening, but its hydrated exact-head CI has a failed required shard and the branch predates current main. The required direct ../codex inspection cannot be completed because that checkout is absent and this worker is read-only, so no ClawSweeper/Codex merge verdict is issued.",
+  "actions": [
+    {
+      "target": "#101593",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#101593",
+      "candidate_fix": "#101593",
+      "reason": "Rebase the adopted branch onto current main, preserve only the still-useful test strengthening, diagnose the failed exact-head shard, and rerun the focused validation."
+    },
+    {
+      "target": "#101593",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#101593",
+      "candidate_fix": "#101593",
+      "reason": "Produce the bounded executor artifact; no merge or close action is authorized."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "The required sibling ../codex checkout is absent. This read-only worker cannot clone it, so the executor must complete the direct Codex source inspection before issuing any code-change, proof-sufficient, review, or merge verdict."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-101593"
 mode: "autonomous"
-run_id: "32483135224"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32483135224"
-head_sha: "728f804d92275634a3afbeec0599446d8346e631"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-21T12:53:37.104Z"
+run_id: "32485895509"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32485895509"
+head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-21T13:24:13.345Z"
 canonical: "#101593"
-canonical_issue: null
+canonical_issue: "#101458"
 canonical_pr: "#101593"
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # automerge-openclaw-openclaw-101593
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32483135224](https://github.com/openclaw/clawsweeper/actions/runs/32483135224)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32485895509](https://github.com/openclaw/clawsweeper/actions/runs/32485895509)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: #101593
 
 ## Summary
 
-Make PR #101593 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+#101593 remains the adopted repair target. Its only diff is a regression-test strengthening, but its hydrated exact-head CI has a failed required shard and the branch predates current main. The required direct ../codex inspection cannot be completed because that checkout is absent and this worker is read-only, so no ClawSweeper/Codex merge verdict is issued.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,9 @@ Make PR #101593 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #101593 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #101593 | fix_needed | planned | canonical | Rebase the adopted branch onto current main, preserve only the still-useful test strengthening, diagnose the failed exact-head shard, and rerun the focused validation. |
+| #101593 | build_fix_artifact | planned | canonical | Produce the bounded executor artifact; no merge or close action is authorized. |
 
 ## Needs Human
 
-- none
+- The required sibling ../codex checkout is absent. This read-only worker cannot clone it, so the executor must complete the direct Codex source inspection before issuing any code-change, proof-sufficient, review, or merge verdict.
