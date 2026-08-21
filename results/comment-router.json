@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T22:32:46.069Z",
+  "updated_at": "2026-08-21T22:32:52.259Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127026:5365489247:2026-08-21T17:47:57Z:clawsweeper_needs_human",
-      "comment_id": "5365489247",
-      "comment_version_key": "5365489247:2026-08-21T17:47:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127026#issuecomment-5365489247",
-      "comment_created_at": "2026-08-21T05:13:39Z",
-      "comment_updated_at": "2026-08-21T17:47:57Z",
-      "comment_body_sha256": "897b979f1d553d07fb2c2d6832218ab44733018d41d35199dbd84735ebecb887",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127026,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing configurations using the retired untrusted approval policy stop at runtime until Doctor persists the migration, so beta inclusion needs explicit upgrade-path acceptance. (sha=c3244ad7e673979929dcd818f3b3fbf62c8683b6)",
-      "expected_head_sha": "c3244ad7e673979929dcd818f3b3fbf62c8683b6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T17:57:59.524Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/beta3-codex-149-20260821",
-        "head_sha": "c3244ad7e673979929dcd818f3b3fbf62c8683b6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127220:5371404762:2026-08-21T17:51:50Z:clawsweeper_auto_repair",
       "comment_id": "5371404762",
@@ -31954,6 +31921,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T22:32:46.069Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:513:5373939798:2026-08-21T22:26:52Z:clawsweeper_needs_human",
+      "comment_id": "5373939798",
+      "comment_version_key": "5373939798:2026-08-21T22:26:52Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/513#issuecomment-5373939798",
+      "comment_created_at": "2026-08-21T18:48:36Z",
+      "comment_updated_at": "2026-08-21T22:26:52Z",
+      "comment_body_sha256": "226078ff77b5491c87d59b0f1ff8d8b8ff76f618a3240139bd823fc9dc96f7ec",
+      "repo": "openclaw/acpx",
+      "issue_number": 513,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This runtime range update changes fresh adapter code and the missing-argv recovery path for saved sessions; approve the fork workflow and require CI on the exact PR head before landin... (sha=c280ac26bf34527bcbb8177f3c228bcb681baa79)",
+      "expected_head_sha": "c280ac26bf34527bcbb8177f3c228bcb681baa79",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T22:32:52.259Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/bump-claude-and-pi-adapter-ranges",
+        "head_sha": "c280ac26bf34527bcbb8177f3c228bcb681baa79",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
