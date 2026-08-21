@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-21T09:02:23.956Z",
+  "updated_at": "2026-08-21T08:58:59.697Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126887:5365133405:2026-08-21T04:17:18Z:re_review",
+      "comment_id": "5365133405",
+      "comment_version_key": "5365133405:2026-08-21T04:17:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126887#issuecomment-5365133405",
+      "comment_created_at": "2026-08-21T04:17:18Z",
+      "comment_updated_at": "2026-08-21T04:17:18Z",
+      "comment_body_sha256": "3795e4f079549b7a4d26344254d9606ad18aaedc5350394217a2ed3269cd513e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126887,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T04:18:00.034Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-plugin-security-scanner",
+        "head_sha": "6e00a6c682268c2f1515ff8044d2b6ee51cc6cb6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126991:5365143306:2026-08-21T04:18:52Z:clawsweeper_needs_human",
       "comment_id": "5365143306",
@@ -33492,53 +33539,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121797:5367816211:2026-08-21T09:01:41Z:re_review",
-      "comment_id": "5367816211",
-      "comment_version_key": "5367816211:2026-08-21T09:01:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121797#issuecomment-5367816211",
-      "comment_created_at": "2026-08-21T09:01:41Z",
-      "comment_updated_at": "2026-08-21T09:01:41Z",
-      "comment_body_sha256": "2603a40e922b77ead0e0d0a3460866e88f595aeda153b05e66fe1df26f521ea0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121797,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T09:02:21.742Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-allowlist-suppression-warning",
-        "head_sha": "a60f73872c59634e54ca6e5f6d2283cee97b80b0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
