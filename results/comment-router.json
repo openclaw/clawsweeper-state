@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T09:56:48.760Z",
+  "updated_at": "2026-08-21T09:57:41.419Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3500:5365342657:2026-08-21T04:51:16Z:re_review",
-      "comment_id": "5365342657",
-      "comment_version_key": "5365342657:2026-08-21T04:51:16Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3500#issuecomment-5365342657",
-      "comment_created_at": "2026-08-21T04:51:16Z",
-      "comment_updated_at": "2026-08-21T04:51:16Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3500,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T04:52:08.094Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clawhub-parent-authorization-v1",
-        "head_sha": "946ba45a911666caab2966fa9c7dd7068abcb7f2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112820:5365348911:2026-08-21T04:52:15Z:re_review",
       "comment_id": "5365348911",
@@ -33666,6 +33619,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127002:5365234288:2026-08-21T09:55:32Z:clawsweeper_needs_human",
+      "comment_id": "5365234288",
+      "comment_version_key": "5365234288:2026-08-21T09:55:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127002#issuecomment-5365234288",
+      "comment_created_at": "2026-08-21T04:33:55Z",
+      "comment_updated_at": "2026-08-21T09:55:32Z",
+      "comment_body_sha256": "a08a44ce8f2f41e07745b501bac82988c01f512dd16a578d695d25459a46998c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127002,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A wrong assumption about the frozen candidate’s legacy scripts could make release validation fail or omit a validation slice; local fixture coverage does not execute that candidate. (sha=16b8c3efcb815c25914a8ff2fdeff03f6cc69f6b)",
+      "expected_head_sha": "16b8c3efcb815c25914a8ff2fdeff03f6cc69f6b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T09:57:41.419Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-frozen-target-ci-compat",
+        "head_sha": "16b8c3efcb815c25914a8ff2fdeff03f6cc69f6b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
