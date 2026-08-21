@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T07:28:10.678Z",
+  "updated_at": "2026-08-21T07:28:54.818Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126958:5364653206:2026-08-21T02:59:31Z:re_review",
-      "comment_id": "5364653206",
-      "comment_version_key": "5364653206:2026-08-21T02:59:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126958#issuecomment-5364653206",
-      "comment_created_at": "2026-08-21T02:59:31Z",
-      "comment_updated_at": "2026-08-21T02:59:31Z",
-      "comment_body_sha256": "805250c5c12f5373300e2a57e0d38c25a91996cab4b257d175ff9c59afd8a24e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126958,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T03:00:08.052Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/npm-onboard-agent-dir",
-        "head_sha": "93be8703458f79f32377ed43c8835ee9693aaac4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126953:5364566760:2026-08-21T03:00:37Z:clawsweeper_needs_human",
       "comment_id": "5364566760",
@@ -33194,6 +33147,39 @@
         "kind": "pull_request",
         "branch": "dependabot/go_modules/github.com/charmbracelet/x/ansi-0.11.8",
         "head_sha": "ab90b938061a65fe355470f559a57d439e4f7663",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:95:5366619718:2026-08-21T07:28:10Z:clawsweeper_needs_human",
+      "comment_id": "5366619718",
+      "comment_version_key": "5366619718:2026-08-21T07:28:10Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/95#issuecomment-5366619718",
+      "comment_created_at": "2026-08-21T07:28:10Z",
+      "comment_updated_at": "2026-08-21T07:28:10Z",
+      "comment_body_sha256": "0acb80a77fabe97888ddb8061ca8e7750f50ddf57b65bed3d6dd9b3b486c042d",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 95,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging adopts a new third-party scanner implementation; its additional detectors or classification changes could alter future secret-scan outcomes even though this PR’s scan succeede... (sha=01e5f1f979dd4828abfe9c73902159b8293f91bf)",
+      "expected_head_sha": "01e5f1f979dd4828abfe9c73902159b8293f91bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T07:28:54.818Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.97.0",
+        "head_sha": "01e5f1f979dd4828abfe9c73902159b8293f91bf",
         "cluster_id": null,
         "job_path": null
       }
