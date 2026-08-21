@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T12:15:22.095Z",
+  "updated_at": "2026-08-21T12:15:22.238Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127008:5365337494:2026-08-21T06:27:43Z:clawsweeper_needs_human",
-      "comment_id": "5365337494",
-      "comment_version_key": "5365337494:2026-08-21T06:27:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127008#issuecomment-5365337494",
-      "comment_created_at": "2026-08-21T04:50:28Z",
-      "comment_updated_at": "2026-08-21T06:27:43Z",
-      "comment_body_sha256": "a5a76a78c0c313ee64aafcc796b433e85a90f91ee447965f06ff52fa5d316e9e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127008,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Verify protected tooling tags against the GitHub ref (P1)** - requireToolingRoute only checks the tag spelling and SHA prefix, and the following rev-parse resolves a local ref. A caller can create a local releas...; Review finding: [P1] Verify protected tooling tags against the GitHub ref — scripts/release-plan-producer.mts:503-505 - [P1] Track the shared collector as a ClawHub release input... (sha=583b3c2085037b1aa2c2b89185328472a4578c02)",
-      "expected_head_sha": "583b3c2085037b1aa2c2b89185328472a4578c02",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T06:28:55.795Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-plan-contract3",
-        "head_sha": "583b3c2085037b1aa2c2b89185328472a4578c02",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123075:5278284857:2026-08-21T06:25:27Z:clawsweeper_needs_human",
       "comment_id": "5278284857",
@@ -33285,6 +33252,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:582:5369536019:2026-08-21T12:11:49Z:clawsweeper_needs_human",
+      "comment_id": "5369536019",
+      "comment_version_key": "5369536019:2026-08-21T12:11:49Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/582#issuecomment-5369536019",
+      "comment_created_at": "2026-08-21T11:59:59Z",
+      "comment_updated_at": "2026-08-21T12:11:49Z",
+      "comment_body_sha256": "3dc5656e93c905f69cc427081c657baf7a40f2f96a0b43a5526f29b14a834bed",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 582,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts retain positional and --api-key parsing, but the new deprecation diagnostic on stderr can affect automation that treats any stderr output as failure. (sha=eee7dbe2eb1a35032d2db70b49c04fc16d88cd19)",
+      "expected_head_sha": "eee7dbe2eb1a35032d2db70b49c04fc16d88cd19",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T12:15:22.238Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/credential-safe-input",
+        "head_sha": "eee7dbe2eb1a35032d2db70b49c04fc16d88cd19",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
