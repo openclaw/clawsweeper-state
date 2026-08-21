@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T16:41:41.873Z",
+  "updated_at": "2026-08-21T16:42:00.655Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127187:5370219901:2026-08-21T13:12:10Z:clawsweeper_needs_human",
-      "comment_id": "5370219901",
-      "comment_version_key": "5370219901:2026-08-21T13:12:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127187#issuecomment-5370219901",
-      "comment_created_at": "2026-08-21T13:12:10Z",
-      "comment_updated_at": "2026-08-21T13:12:10Z",
-      "comment_body_sha256": "bbd4a4d8d01553e89362c877286658acbd59a3e4ec7b1f1375b12077b31df598",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127187,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the default sidebar contents for existing profile-less run rows; current main intentionally treated unnamed runs as possible probes, so the attached mobile after-fix evid... (sha=80d6179b85a5bbd603c92b2a2312356e332bffea)",
-      "expected_head_sha": "80d6179b85a5bbd603c92b2a2312356e332bffea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T13:13:10.797Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-mobile-profileless-session-roster",
-        "head_sha": "80d6179b85a5bbd603c92b2a2312356e332bffea",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127014:5365444203:2026-08-21T13:08:59Z:clawsweeper_needs_human",
       "comment_id": "5365444203",
@@ -31908,6 +31875,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125617:5372655926:2026-08-21T16:41:07Z:re_review",
+      "comment_id": "5372655926",
+      "comment_version_key": "5372655926:2026-08-21T16:41:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125617#issuecomment-5372655926",
+      "comment_created_at": "2026-08-21T16:41:07Z",
+      "comment_updated_at": "2026-08-21T16:41:07Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125617,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T16:41:58.065Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/current-chat-media-guidance",
+        "head_sha": "8d476a79716c26e7de087ee67f209c4aa57bf80e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
