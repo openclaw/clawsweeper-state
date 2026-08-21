@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127034",
+  "mode": "autonomous",
+  "run_id": "32451561419",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32451561419",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127034.md",
+  "published_at": "2026-08-21T05:53:14.121Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127034",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127034",
+  "canonical_pr": null,
+  "summary": "#127034 remains the open canonical issue. Current main rejects proofId-only completion in the Workboard workflow before it consults the stored proof; the documented contract describes the opposite. A narrow owner-plugin repair is mapped, but implementation is blocked: required sibling ../codex source is absent, cloning it failed because github.com DNS is unavailable, and this worker has read-only storage. Focused Vitest validation is also unavailable because tsx is not installed.",
+  "actions": [
+    {
+      "target": "#127034",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127034",
+      "candidate_fix": null,
+      "reason": "Open canonical report with a clear bounded owner-plugin path; no closure or merge is authorized."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127034",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127034",
+      "candidate_fix": null,
+      "reason": "Do not implement until an executor can inspect ../codex and install the normal checkout dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127034",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127034",
+      "candidate_fix": null,
+      "reason": "Narrow artifact is ready for a writable executor after the Codex-source and dependency gates are satisfied."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable executor with sibling ../codex available (or network access to clone it) and normal dependencies installed; that executor must directly inspect the relevant Codex source before implementing or asserting proof sufficiency."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#127034",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
