@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T05:41:03.784Z",
+  "updated_at": "2026-08-21T05:41:14.599Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126618:5354682176:2026-08-20T10:30:35Z:re_review",
-      "comment_id": "5354682176",
-      "comment_version_key": "5354682176:2026-08-20T10:30:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126618#issuecomment-5354682176",
-      "comment_created_at": "2026-08-20T10:30:35Z",
-      "comment_updated_at": "2026-08-20T10:30:35Z",
-      "comment_body_sha256": "8a33295e1e112a7782ef2efcbfddf58de07cf2bea06348b44c7390217b11644e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126618,
-      "author": "RaviTharuma",
-      "author_id": 25951435,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T01:46:06.342Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126618:5354710416:2026-08-20T10:33:31Z:re_review",
       "comment_id": "5354710416",
@@ -32334,6 +32307,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126961:5364791796:2026-08-21T05:40:23Z:clawsweeper_needs_human",
+      "comment_id": "5364791796",
+      "comment_version_key": "5364791796:2026-08-21T05:40:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126961#issuecomment-5364791796",
+      "comment_created_at": "2026-08-21T03:20:58Z",
+      "comment_updated_at": "2026-08-21T05:40:23Z",
+      "comment_body_sha256": "0cc1877be78681d6b9055978e373471a6f08786449985bdf8489a805034a12e7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126961,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main has advanced beyond the PR base; rebasing changes the reviewed head, so exact-head CI and paired-node proof need refresh before merge. (sha=c5b3aae2c7eb8a3f8ec64095666de16bf73c46a1)",
+      "expected_head_sha": "c5b3aae2c7eb8a3f8ec64095666de16bf73c46a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T05:41:14.599Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/node-duplex-plugin-runtime",
+        "head_sha": "c5b3aae2c7eb8a3f8ec64095666de16bf73c46a1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
