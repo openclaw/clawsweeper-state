@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T15:48:00.783Z",
+  "updated_at": "2026-08-21T15:48:03.144Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127158:5369016699:2026-08-21T11:03:14Z:clawsweeper_needs_human",
-      "comment_id": "5369016699",
-      "comment_version_key": "5369016699:2026-08-21T11:03:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127158#issuecomment-5369016699",
-      "comment_created_at": "2026-08-21T11:03:14Z",
-      "comment_updated_at": "2026-08-21T11:03:14Z",
-      "comment_body_sha256": "23219b1ffc19bf7c81cdd091c9647ca1ce71621f022a1b10994e51487502c2c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127158,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The production change is net +3 lines; that growth is justified by retaining the registry as the sole TTL owner and reusing the existing sweep, so it should not grow into separate tim... (sha=310081c5f23673f038bff46671e397f8cd57bef7)",
-      "expected_head_sha": "310081c5f23673f038bff46671e397f8cd57bef7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T11:08:17.797Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-tool-event-recipient-pruning",
-        "head_sha": "310081c5f23673f038bff46671e397f8cd57bef7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127151:5369055719:2026-08-21T11:07:44Z:re_review",
       "comment_id": "5369055719",
@@ -31770,6 +31737,53 @@
         "head_sha": "f1d367cf15bdd9f63282919fcf7792334a051adc",
         "cluster_id": null,
         "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124014:5372100358:2026-08-21T15:47:19Z:re_review",
+      "comment_id": "5372100358",
+      "comment_version_key": "5372100358:2026-08-21T15:47:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5372100358",
+      "comment_created_at": "2026-08-21T15:47:19Z",
+      "comment_updated_at": "2026-08-21T15:47:19Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124014,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T15:48:01.484Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/auth-reauth-state-reset",
+        "head_sha": "f11d93d430f7716918a218b6e002d9716b896da8",
+        "cluster_id": "automerge-openclaw-openclaw-124014",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
       },
       "actions": [
         {
