@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-21T17:36:05.402Z",
+  "updated_at": "2026-08-21T17:35:17.476Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122425:5262218740:2026-08-21T14:03:18Z:clawsweeper_needs_human",
+      "comment_id": "5262218740",
+      "comment_version_key": "5262218740:2026-08-21T14:03:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5262218740",
+      "comment_created_at": "2026-08-12T04:18:02Z",
+      "comment_updated_at": "2026-08-21T14:03:18Z",
+      "comment_body_sha256": "94515539630d8a55f2f2c4c43f148500efff62f0d289370237136d629a55bfd3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122425,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Honor command interpretation suppression for inline skills (P1)** - CommandInterpretationSuppressed is the established contract for leaving command-shaped text literal, but this new gate only checks sender and s...; Review finding: [P1] Honor command interpretation suppression for inline skills — src/auto-reply/reply/get-reply-inline-actions.ts:338-343 - [medium] Inline skills bypass command... (sha=af640b37a6e500fe1a4106e20c67294c8cc8de91)",
+      "expected_head_sha": "af640b37a6e500fe1a4106e20c67294c8cc8de91",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T14:13:40.676Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inline-slash-skills",
+        "head_sha": "af640b37a6e500fe1a4106e20c67294c8cc8de91",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125706:5325308403:2026-08-21T14:05:38Z:clawsweeper_auto_repair",
       "comment_id": "5325308403",
@@ -32195,39 +32228,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120005:5209956530:2026-08-21T17:35:13Z:clawsweeper_auto_repair",
-      "comment_id": "5209956530",
-      "comment_version_key": "5209956530:2026-08-21T17:35:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120005#issuecomment-5209956530",
-      "comment_created_at": "2026-08-06T23:33:53Z",
-      "comment_updated_at": "2026-08-21T17:35:13Z",
-      "comment_body_sha256": "4e52626744aa4ec1c56126d752f0c33bcfcff110c29771467f75a0e930714d16",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120005,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e7c0c3c45092fb68a7d01dcab1b71402a67cf2f2)",
-      "expected_head_sha": "e7c0c3c45092fb68a7d01dcab1b71402a67cf2f2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T17:36:05.402Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oss-find/119270-at-prefix-destination",
-        "head_sha": "e7c0c3c45092fb68a7d01dcab1b71402a67cf2f2",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
