@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T09:45:57.571Z",
+  "updated_at": "2026-08-21T09:46:00.986Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126881:5363522354:2026-08-21T04:35:22Z:clawsweeper_needs_human",
-      "comment_id": "5363522354",
-      "comment_version_key": "5363522354:2026-08-21T04:35:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126881#issuecomment-5363522354",
-      "comment_created_at": "2026-08-21T00:02:09Z",
-      "comment_updated_at": "2026-08-21T04:35:22Z",
-      "comment_body_sha256": "c8947140f1fc9e1e474f54389077235648ae205faacea56390543b7112e0f3df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126881,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the pinned ClawHub publisher contract** - The workflow now invokes a42cd2f with a version-2 identity payload, while the PR evidence cites a different revision; confirm that this...; Review finding: [medium] Verify the pinned ClawHub publisher contract — .github/workflows/plugin-clawhub-release.yml:501 (sha=94c755d2756c086236913d1e1e49d92bf9bbc27c)",
-      "expected_head_sha": "94c755d2756c086236913d1e1e49d92bf9bbc27c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T04:36:23.697Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-protected-tooling-trust",
-        "head_sha": "94c755d2756c086236913d1e1e49d92bf9bbc27c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126881:5363602035:2026-08-21T00:13:20Z:re_review",
       "comment_id": "5363602035",
@@ -33753,6 +33720,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127108:5367696002:2026-08-21T09:45:08Z:clawsweeper_auto_repair",
+      "comment_id": "5367696002",
+      "comment_version_key": "5367696002:2026-08-21T09:45:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127108#issuecomment-5367696002",
+      "comment_created_at": "2026-08-21T08:48:47Z",
+      "comment_updated_at": "2026-08-21T09:45:08Z",
+      "comment_body_sha256": "5b5876f8da9ec1d391eb15ef49b8aa54dd6781af22df0bccba6899119079d2d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127108,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8aae319ece3a1c508f61db0be8d2b24cabd7dda1)",
+      "expected_head_sha": "8aae319ece3a1c508f61db0be8d2b24cabd7dda1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T09:46:00.986Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mantis-proof-outcomes",
+        "head_sha": "cc83d268a134903f68d2c1f7d7eac54bfc10a157",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
