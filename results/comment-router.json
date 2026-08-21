@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T14:26:44.186Z",
+  "updated_at": "2026-08-21T14:27:50.367Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127090:5367712595:2026-08-21T08:50:41Z:re_review",
-      "comment_id": "5367712595",
-      "comment_version_key": "5367712595:2026-08-21T08:50:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127090#issuecomment-5367712595",
-      "comment_created_at": "2026-08-21T08:50:41Z",
-      "comment_updated_at": "2026-08-21T08:50:41Z",
-      "comment_body_sha256": "bc87e6428bd6916b6669de6fed52da2e508c2e4f4b7abb3e5f893976e86d1c28",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127090,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T08:51:25.706Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-126231-lean-timeout-retry",
-        "head_sha": "0767186b8f81cc8050bf692e75b60bf7a8afd254",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116373:5130005792:2026-08-21T08:42:16Z:clawsweeper_needs_human",
       "comment_id": "5130005792",
@@ -32315,6 +32268,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T14:26:43.446Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120999:5231085062:2026-08-21T14:26:58Z:clawsweeper_needs_human",
+      "comment_id": "5231085062",
+      "comment_version_key": "5231085062:2026-08-21T14:26:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120999#issuecomment-5231085062",
+      "comment_created_at": "2026-08-09T10:42:12Z",
+      "comment_updated_at": "2026-08-21T14:26:58Z",
+      "comment_body_sha256": "0e6c3601c29ea9190211b3139266ca184ca7f2c71e095571192e680b088d23c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120999,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, so its three-way merge result and required checks must be refreshed on the rebased head. (sha=941a89235486a656ab6073df1e4b57d154ac8bae)",
+      "expected_head_sha": "941a89235486a656ab6073df1e4b57d154ac8bae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T14:27:50.367Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workboard-notification-cap-120956",
+        "head_sha": "941a89235486a656ab6073df1e4b57d154ac8bae",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
