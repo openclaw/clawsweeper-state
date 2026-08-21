@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T07:47:58.693Z",
+  "updated_at": "2026-08-21T07:48:05.962Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126853:5364865071:2026-08-21T03:33:19Z:re_review",
-      "comment_id": "5364865071",
-      "comment_version_key": "5364865071:2026-08-21T03:33:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126853#issuecomment-5364865071",
-      "comment_created_at": "2026-08-21T03:33:19Z",
-      "comment_updated_at": "2026-08-21T03:33:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126853,
-      "author": "jason-allen-oneal",
-      "author_id": 8335428,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T03:36:26.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-heartbeat-background-lane",
-        "head_sha": "f944f00a5d447c98059bc9cbc172d439d7f9ad40",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110544:5010497363:2026-08-21T03:06:56Z:clawsweeper_needs_human",
       "comment_id": "5010497363",
@@ -32780,6 +32733,39 @@
         "kind": "pull_request",
         "branch": "fix/release-frozen-target-ci-compat",
         "head_sha": "f0426f0590c0aff29520f8bfaec19c63c9715782",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125725:5325660518:2026-08-21T07:43:33Z:clawsweeper_needs_human",
+      "comment_id": "5325660518",
+      "comment_version_key": "5325660518:2026-08-21T07:43:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125725#issuecomment-5325660518",
+      "comment_created_at": "2026-08-18T08:32:07Z",
+      "comment_updated_at": "2026-08-21T07:43:33Z",
+      "comment_body_sha256": "4a05c1bcb00e2fba6977dc5720135c0c6a054f68e4d4772fc550ff875001cac5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125725,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes focused mocked tests but contains no redacted after-fix Codex app-server trace showing the event, hook payload, and approval r...; Review finding: [P1] Prove the event contract before denying file approvals — extensions/codex/src/app-server/approval-bridge.ts:481-487 - [medium] Validate the fail-closed approv... (sha=8648045eb5516c1eb781c933500af6f457d0eb6d)",
+      "expected_head_sha": "8648045eb5516c1eb781c933500af6f457d0eb6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T07:48:05.962Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-file-change-hook-params-current",
+        "head_sha": "8648045eb5516c1eb781c933500af6f457d0eb6d",
         "cluster_id": null,
         "job_path": null
       }
