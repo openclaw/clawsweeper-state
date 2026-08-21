@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T16:54:12.571Z",
+  "updated_at": "2026-08-21T16:54:14.578Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127171:5370162018:2026-08-21T13:06:17Z:re_review",
-      "comment_id": "5370162018",
-      "comment_version_key": "5370162018:2026-08-21T13:06:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127171#issuecomment-5370162018",
-      "comment_created_at": "2026-08-21T13:06:17Z",
-      "comment_updated_at": "2026-08-21T13:06:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127171,
-      "author": "jacobtomlinson",
-      "author_id": 1610850,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T13:33:46.904Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126662:5370195750:2026-08-21T13:09:39Z:re_review",
       "comment_id": "5370195750",
@@ -31886,6 +31859,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126007:5334228193:2026-08-21T16:51:15Z:clawsweeper_needs_human",
+      "comment_id": "5334228193",
+      "comment_version_key": "5334228193:2026-08-21T16:51:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126007#issuecomment-5334228193",
+      "comment_created_at": "2026-08-18T21:22:28Z",
+      "comment_updated_at": "2026-08-21T16:51:15Z",
+      "comment_body_sha256": "17bbbc1d823cfbf2f8ef5d30a5278f463298b6f3ab25cf90af25d1f6d035c50f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126007,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally replaces the audit.run.inspect v1 raw-receipt response; independently deployed beta clients expecting decisions must upgrade with the Gateway. (sha=124afe2abad76dde8823be54d5f33f763e6e750d)",
+      "expected_head_sha": "124afe2abad76dde8823be54d5f33f763e6e750d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T16:54:14.577Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-control-ui-decision-receipts",
+        "head_sha": "124afe2abad76dde8823be54d5f33f763e6e750d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
