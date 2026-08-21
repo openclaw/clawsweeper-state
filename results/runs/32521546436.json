@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127379",
+  "mode": "autonomous",
+  "run_id": "32521546436",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32521546436",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127379.md",
+  "published_at": "2026-08-21T20:39:13.084Z",
+  "canonical": "#127379",
+  "canonical_issue": "#127379",
+  "canonical_pr": null,
+  "summary": "#127379 remains a narrow, non-security repair: /models constructs a runtime-normalizing visibility policy, then resolveLogicalVisibleModelCatalog constructs it again. A writable worker with dependencies and the mandatory sibling Codex checkout is required before a fix branch or PR can be produced.",
+  "actions": [
+    {
+      "target": "#127379",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127379",
+      "candidate_fix": null,
+      "reason": "The filesystem sandbox prevents edits, dependency installation, branch creation, and the required direct ../codex inspection. No GitHub mutation was attempted."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Re-run this job in a writable repair worker with dependencies available and an inspectable sibling ../codex checkout; no product or maintainer-policy decision is outstanding."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
