@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T02:16:31.105Z",
+  "updated_at": "2026-08-21T02:16:40.641Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126786:5360282821:2026-08-20T18:49:36Z:clawsweeper_needs_human",
-      "comment_id": "5360282821",
-      "comment_version_key": "5360282821:2026-08-20T18:49:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126786#issuecomment-5360282821",
-      "comment_created_at": "2026-08-20T18:49:36Z",
-      "comment_updated_at": "2026-08-20T18:49:36Z",
-      "comment_body_sha256": "b4bbc669689256012eff1044475a8be14c028d2f9337ea20721e52e6dd88f73f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126786,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Redact unassigned Bearer credentials (P1)** - A line such as Authorization: Bearer ~abc+secret/== bypasses the new keyed-assignment matcher, and the remaining Bearer matcher rejects the leading ~; status --all s...; Review finding: [P1] Redact unassigned Bearer credentials — src/commands/status-all/format.ts:529-532 - [high] Direct Bearer payload remains visible — src/commands/status-all/form... (sha=f89a3b52779367183b428e6442118853b14d5827)",
-      "expected_head_sha": "f89a3b52779367183b428e6442118853b14d5827",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T18:57:30.596Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa25-degraded-status",
-        "head_sha": "f89a3b52779367183b428e6442118853b14d5827",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126789:5360320856:2026-08-20T18:53:08Z:clawsweeper_auto_repair",
       "comment_id": "5360320856",
@@ -31869,6 +31836,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126942:5364364691:2026-08-21T02:14:01Z:clawsweeper_needs_human",
+      "comment_id": "5364364691",
+      "comment_version_key": "5364364691:2026-08-21T02:14:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126942#issuecomment-5364364691",
+      "comment_created_at": "2026-08-21T02:14:01Z",
+      "comment_updated_at": "2026-08-21T02:14:01Z",
+      "comment_body_sha256": "17e6c64c9359e43cad03af91191d6ca3d3efefd4a06cc2f786a21524ef077783",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126942,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Fleet now relies on @openclaw/fs-safe 0.5.5 to distinguish an owned partial target from a raced destination; this checkout lacks the installed package source needed to independently v... (sha=91aab99ad5ae00440e70991b1e730dfb6a9baf8a)",
+      "expected_head_sha": "91aab99ad5ae00440e70991b1e730dfb6a9baf8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T02:16:40.641Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-174-fleet-backup",
+        "head_sha": "91aab99ad5ae00440e70991b1e730dfb6a9baf8a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
