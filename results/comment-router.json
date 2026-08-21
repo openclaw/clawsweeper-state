@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T23:56:40.853Z",
+  "updated_at": "2026-08-21T23:57:00.745Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127161:5369186401:2026-08-21T18:32:07Z:clawsweeper_needs_human",
-      "comment_id": "5369186401",
-      "comment_version_key": "5369186401:2026-08-21T18:32:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127161#issuecomment-5369186401",
-      "comment_created_at": "2026-08-21T11:22:26Z",
-      "comment_updated_at": "2026-08-21T18:32:07Z",
-      "comment_body_sha256": "de704abf2b30859aeceab3eb39481049db3b20b692eda0db2a2585852458f015",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127161,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the draft as non-mergeable with a dirty merge state; rebase and exact-head checks are required. (sha=88dd0c261f064eabf47d75a6e1f842d5f3d03a45)",
-      "expected_head_sha": "88dd0c261f064eabf47d75a6e1f842d5f3d03a45",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T18:51:43.819Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/release-candidate-receipt",
-        "head_sha": "88dd0c261f064eabf47d75a6e1f842d5f3d03a45",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127159:5369261194:2026-08-21T18:46:20Z:clawsweeper_needs_human",
       "comment_id": "5369261194",
@@ -32086,6 +32053,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112896:5376594964:2026-08-21T23:56:13Z:re_review",
+      "comment_id": "5376594964",
+      "comment_version_key": "5376594964:2026-08-21T23:56:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112896#issuecomment-5376594964",
+      "comment_created_at": "2026-08-21T23:56:13Z",
+      "comment_updated_at": "2026-08-21T23:56:13Z",
+      "comment_body_sha256": "28374e8511dea824cde84f06dc2a2290e4ef122c9bf06a468c6af87937bf0bb6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112896,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head `9ce3db8c3e20f2f127bc1a566a736734ada28007`. this supersedes the prior request and repairs the hosted `checks-node-compact-small-34` failure: the current-main startup-readiness contract now remains pending until sidecars are ready even when sidecar startup is deferred, while restored admission adds its independent held condition. pre-fix exact test failed locally; post-fix validation passed the full `server-kernel` suite plus focused restored/suspension/restore coverage (77 tests), gateway-root test types, formatter, linter, and diff checks. fresh hosted ci/testbox is running",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T23:56:58.698Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/rfc-0013-restored-admission",
+        "head_sha": "9ce3db8c3e20f2f127bc1a566a736734ada28007",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
