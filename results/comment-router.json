@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T04:41:08.341Z",
+  "updated_at": "2026-08-21T04:41:16.316Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126912:5363857382:2026-08-21T00:52:34Z:clawsweeper_needs_human",
-      "comment_id": "5363857382",
-      "comment_version_key": "5363857382:2026-08-21T00:52:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126912#issuecomment-5363857382",
-      "comment_created_at": "2026-08-21T00:52:34Z",
-      "comment_updated_at": "2026-08-21T00:52:34Z",
-      "comment_body_sha256": "de72cf68c164b54e6734660c6f07c51fa7df16c47544cac8df8464aad0a83acf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126912,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 21 lines for a bug fix; the added shared classifier is justified because a corpus-only filter would leave usage accounting and ID parsing inconsistent, and no... (sha=e8307c4f95e321583194b828c36915f2938b4593)",
-      "expected_head_sha": "e8307c4f95e321583194b828c36915f2938b4593",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T00:53:45.872Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-126879",
-        "head_sha": "e8307c4f95e321583194b828c36915f2938b4593",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126537:5351389413:2026-08-21T00:53:17Z:clawsweeper_auto_repair",
       "comment_id": "5351389413",
@@ -31361,6 +31328,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126595:5365274083:2026-08-21T04:40:24Z:re_review",
+      "comment_id": "5365274083",
+      "comment_version_key": "5365274083:2026-08-21T04:40:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126595#issuecomment-5365274083",
+      "comment_created_at": "2026-08-21T04:40:24Z",
+      "comment_updated_at": "2026-08-21T04:40:24Z",
+      "comment_body_sha256": "834508fc15423463e3b49c2ea7f1970538367c3e54ac0c699fbaa0ad4a030ec9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126595,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T04:41:14.395Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-explicit-roster-ownership",
+        "head_sha": "e232f29a02c7380e565b1fa21c0018409cb2a324",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
