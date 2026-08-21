@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T10:51:32.633Z",
+  "updated_at": "2026-08-21T10:52:15.699Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127035:5365728540:2026-08-21T05:49:09Z:clawsweeper_auto_repair",
-      "comment_id": "5365728540",
-      "comment_version_key": "5365728540:2026-08-21T05:49:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127035#issuecomment-5365728540",
-      "comment_created_at": "2026-08-21T05:49:09Z",
-      "comment_updated_at": "2026-08-21T05:49:09Z",
-      "comment_body_sha256": "a6ac0a1ef204233f2c87379f4f48c5d74809d440ec324dd0baf0aeedbf3c19f1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127035,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4d3d32f55f6556143cecb64e2624a55ee202bdb0)",
-      "expected_head_sha": "4d3d32f55f6556143cecb64e2624a55ee202bdb0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T05:50:03.702Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-windows-cli-registration-v2",
-        "head_sha": "4d3d32f55f6556143cecb64e2624a55ee202bdb0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127030:5365718791:2026-08-21T05:47:58Z:clawsweeper_needs_human",
       "comment_id": "5365718791",
@@ -33214,6 +33181,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127151:5368903456:2026-08-21T10:51:35Z:re_review",
+      "comment_id": "5368903456",
+      "comment_version_key": "5368903456:2026-08-21T10:51:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127151#issuecomment-5368903456",
+      "comment_created_at": "2026-08-21T10:51:35Z",
+      "comment_updated_at": "2026-08-21T10:51:35Z",
+      "comment_body_sha256": "62b95b69a32ec05150c05677cd55afb57e9f08ff394c624e233acef37b65465f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127151,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T10:52:13.612Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-session-routing-replacement",
+        "head_sha": "112c263675abbe8c34fdfe52cdceec40e2417cc5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
