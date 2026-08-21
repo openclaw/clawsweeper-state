@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T16:28:52.866Z",
+  "updated_at": "2026-08-21T16:29:54.396Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125323:5317316795:2026-08-21T12:45:27Z:clawsweeper_auto_repair",
-      "comment_id": "5317316795",
-      "comment_version_key": "5317316795:2026-08-21T12:45:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125323#issuecomment-5317316795",
-      "comment_created_at": "2026-08-17T15:24:02Z",
-      "comment_updated_at": "2026-08-21T12:45:27Z",
-      "comment_body_sha256": "031bfb4d7d0fc70a6993df1b6ba5cb6ecd900a5812743a616d6e8177ce22c796",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125323,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=747c8ee3d9cf339be5ebacb3d78cdcdaf9e58fd2)",
-      "expected_head_sha": "747c8ee3d9cf339be5ebacb3d78cdcdaf9e58fd2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T12:46:27.530Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-chat-mic-voice-note-fallback",
-        "head_sha": "747c8ee3d9cf339be5ebacb3d78cdcdaf9e58fd2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126618:5354060596:2026-08-21T12:46:47Z:clawsweeper_auto_repair",
       "comment_id": "5354060596",
@@ -31980,6 +31947,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127138:5372533311:2026-08-21T16:29:05Z:re_review",
+      "comment_id": "5372533311",
+      "comment_version_key": "5372533311:2026-08-21T16:29:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127138#issuecomment-5372533311",
+      "comment_created_at": "2026-08-21T16:29:05Z",
+      "comment_updated_at": "2026-08-21T16:29:05Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127138,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T16:29:52.129Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/frv-install-images",
+        "head_sha": "b3c58c9c93b3e0bfca3d9f00bb50337a9942dd59",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
