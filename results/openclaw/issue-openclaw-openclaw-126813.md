@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126813"
 mode: "autonomous"
-run_id: "32531970129"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32531970129"
+run_id: "32533004539"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32533004539"
 head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-21T22:25:18.117Z"
+published_at: "2026-08-21T22:36:01.885Z"
 canonical: "https://github.com/openclaw/openclaw/issues/126813"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/126813"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32531970129](https://github.com/openclaw/clawsweeper/actions/runs/32531970129)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32533004539](https://github.com/openclaw/clawsweeper/actions/runs/32533004539)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/126813
 
 ## Summary
 
-No code or GitHub mutation was made. Current main is 9903e404ef9ffb2212f8822054001c3d972f696f and the reported owner-boundary gap remains a narrow repair candidate, but this worker cannot patch or validate it: the required sibling Codex source checkout at ../codex is absent and the workspace is read-only.
+#126813 remains a focused, reproducible bug on main d630897a95947156119bb0453f0e738366256bbb. The canonical outcome store records a completed message-tool delivery but has no admission-time reader; queued user_request prompts therefore retain the unconditional delivery instruction. A narrow new-PR artifact is ready, but this worker cannot edit or validate because the checkout is read-only and required sibling ../codex source is unavailable for the repository’s mandatory Codex preflight.
 
 ## Impact
 
@@ -66,9 +66,9 @@ No code or GitHub mutation was made. Current main is 9903e404ef9ffb2212f88220540
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126813 | fix_needed | blocked | canonical | Implementation is blocked only by the missing mandated sibling Codex checkout and read-only filesystem; no maintainer product decision is pending. |
-| #69208 | keep_related | planned | related | Keep open as the broader family index; #126813 is the focused queued message-tool delivery repair. |
-| cluster:issue-openclaw-openclaw-126813 | build_fix_artifact | planned |  | Executor should apply the narrow new-PR repair after provisioning ../codex and a writable checkout. |
+| #126813 | fix_needed | blocked | canonical | A narrow root-cause repair is warranted, but local implementation and validation are blocked by the worker environment. |
+| #69208 | keep_related | planned | related | Related historical context only; do not fold or mutate the umbrella from this repair lane. |
+| cluster:issue-openclaw-openclaw-126813 | build_fix_artifact | planned | canonical | Executor should apply the narrow artifact in a writable checkout after completing the mandatory Codex source preflight. |
 
 ## Needs Human
 
