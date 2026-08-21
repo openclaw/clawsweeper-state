@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-21T18:10:42.060Z",
+  "updated_at": "2026-08-21T18:10:48.813Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119341:5371157347:2026-08-21T14:22:39Z:autofix",
-      "comment_id": "5371157347",
-      "comment_version_key": "5371157347:2026-08-21T14:22:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119341#issuecomment-5371157347",
-      "comment_created_at": "2026-08-21T14:22:39Z",
-      "comment_updated_at": "2026-08-21T14:22:39Z",
-      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119341,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T14:23:20.610Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-contract",
-        "head_sha": "bfd832ad3a2da12a9a2b8ad312baa14d6f155025",
-        "cluster_id": "automerge-openclaw-openclaw-119341",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119341.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/photoscrawl:9:5304641451:2026-08-21T14:22:25Z:clawsweeper_needs_human",
       "comment_id": "5304641451",
@@ -32743,6 +32684,39 @@
         "head_sha": "e7083690e0eecf854f9a6011aa55e3b42cae787a",
         "cluster_id": null,
         "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124014:5300588734:2026-08-21T18:07:34Z:clawsweeper_auto_merge",
+      "comment_id": "5300588734",
+      "comment_version_key": "5300588734:2026-08-21T18:07:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5300588734",
+      "comment_created_at": "2026-08-15T04:46:08Z",
+      "comment_updated_at": "2026-08-21T18:07:34Z",
+      "comment_body_sha256": "e73b27780d7a7bfa2e83c4f4663fc8699e65ae3ff746a1876cab2b9263fbd8e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124014,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=a89cef51d317d721e682c6fd6ad78bec30f32468)",
+      "expected_head_sha": "a89cef51d317d721e682c6fd6ad78bec30f32468",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T18:10:48.813Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/auth-reauth-state-reset",
+        "head_sha": "a89cef51d317d721e682c6fd6ad78bec30f32468",
+        "cluster_id": "automerge-openclaw-openclaw-124014",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
       }
     }
   ]
