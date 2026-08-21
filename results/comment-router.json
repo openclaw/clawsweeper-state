@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T11:01:24.135Z",
+  "updated_at": "2026-08-21T11:01:30.114Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121797:5365764949:2026-08-21T05:54:01Z:re_review",
-      "comment_id": "5365764949",
-      "comment_version_key": "5365764949:2026-08-21T05:54:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121797#issuecomment-5365764949",
-      "comment_created_at": "2026-08-21T05:54:01Z",
-      "comment_updated_at": "2026-08-21T05:54:01Z",
-      "comment_body_sha256": "b240b10c14acb3bf7a6fb9f2f0808bda30a09740d95451b2b896a573b55bfe8a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121797,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T05:54:35.847Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-allowlist-suppression-warning",
-        "head_sha": "9d602fd27f557b3af26445f1a870bc963652a25a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1450:5365726015:2026-08-21T05:48:50Z:clawsweeper_needs_human",
       "comment_id": "5365726015",
@@ -33220,6 +33173,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-125640-embed-batch-item-count-split",
         "head_sha": "272373238b29767e8c0fbc00a476cf2218ab0ac1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127077:5366504300:2026-08-21T10:58:28Z:clawsweeper_needs_human",
+      "comment_id": "5366504300",
+      "comment_version_key": "5366504300:2026-08-21T10:58:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127077#issuecomment-5366504300",
+      "comment_created_at": "2026-08-21T07:19:03Z",
+      "comment_updated_at": "2026-08-21T10:58:28Z",
+      "comment_body_sha256": "051974844aa95d2646aa16db5218469f1879dd6ec600f6d6fc703864caa9fd3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127077,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This active maintainer PR has no actionable repair finding; complete normal exact-head review and checks. (sha=de38c1ee0dc1df61fa14f681eb275854b0c0121f)",
+      "expected_head_sha": "de38c1ee0dc1df61fa14f681eb275854b0c0121f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T11:01:30.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/otel-runtime-evidence-diagnostics",
+        "head_sha": "de38c1ee0dc1df61fa14f681eb275854b0c0121f",
         "cluster_id": null,
         "job_path": null
       }
