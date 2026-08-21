@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T19:12:50.596Z",
+  "updated_at": "2026-08-21T19:12:53.814Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127215:5371701427:2026-08-21T15:11:04Z:re_review",
-      "comment_id": "5371701427",
-      "comment_version_key": "5371701427:2026-08-21T15:11:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127215#issuecomment-5371701427",
-      "comment_created_at": "2026-08-21T15:11:04Z",
-      "comment_updated_at": "2026-08-21T15:11:04Z",
-      "comment_body_sha256": "c54c2d0c8b523da51ee9c384162cc622f940f13a7e7667125879b011454c4766",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127215,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T15:11:53.073Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-publication-eligibility-v1",
-        "head_sha": "64f59cd84e6bfb37272fac5c681ea199316ae2fc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125823:5371721990:2026-08-21T15:12:56Z:re_review",
       "comment_id": "5371721990",
@@ -32927,6 +32880,39 @@
         "kind": "pull_request",
         "branch": "feat/googlechat-session-thread",
         "head_sha": "ab45d686dbae629555390a16ebef8682c66ae3ba",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:81787:4449842426:2026-08-21T19:11:27Z:clawsweeper_auto_repair",
+      "comment_id": "4449842426",
+      "comment_version_key": "4449842426:2026-08-21T19:11:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/81787#issuecomment-4449842426",
+      "comment_created_at": "2026-05-14T10:28:27Z",
+      "comment_updated_at": "2026-08-21T19:11:27Z",
+      "comment_body_sha256": "a27a8a16168e7402c6c2dd3ab9406b16e8b36cdc76015ffff7d8acf48f2ee997",
+      "repo": "openclaw/openclaw",
+      "issue_number": 81787,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7be9c416a1d387b91dffc0b05a9ee42dd32943f1)",
+      "expected_head_sha": "7be9c416a1d387b91dffc0b05a9ee42dd32943f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T19:12:53.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-81595-bundle-tools-diagnostics",
+        "head_sha": "7be9c416a1d387b91dffc0b05a9ee42dd32943f1",
         "cluster_id": null,
         "job_path": null
       }
