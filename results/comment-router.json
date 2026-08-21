@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T16:03:59.306Z",
+  "updated_at": "2026-08-21T16:04:51.629Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127171:5369670763:2026-08-21T12:14:35Z:clawsweeper_needs_human",
-      "comment_id": "5369670763",
-      "comment_version_key": "5369670763:2026-08-21T12:14:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127171#issuecomment-5369670763",
-      "comment_created_at": "2026-08-21T12:14:35Z",
-      "comment_updated_at": "2026-08-21T12:14:35Z",
-      "comment_body_sha256": "8cecd7cd98168ff3b60226c74b9b97db37b04babaf5b26eef5cdfbd598109ee3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127171,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Contain terminal attachment cleanup within the workspace (P1)** - The new workspace-relative facts only reach pre-start cleanup; successful runs still register absolute attachment paths. If a writable child repl...; Review finding: [P1] Contain terminal attachment cleanup within the workspace — src/agents/subagents/spawn/subagent-spawn.ts:331-332 - [P2] Remove partial staging trees recursivel... (sha=7b155bf3420409c2746b1305988125ff319bd24a)",
-      "expected_head_sha": "7b155bf3420409c2746b1305988125ff319bd24a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T12:15:39.485Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-929-attachment-symlink",
-        "head_sha": "7b155bf3420409c2746b1305988125ff319bd24a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112623:5078329042:2026-08-21T12:13:02Z:clawsweeper_auto_repair",
       "comment_id": "5078329042",
@@ -31638,6 +31605,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127226:5372280091:2026-08-21T16:04:13Z:re_review",
+      "comment_id": "5372280091",
+      "comment_version_key": "5372280091:2026-08-21T16:04:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127226#issuecomment-5372280091",
+      "comment_created_at": "2026-08-21T16:04:13Z",
+      "comment_updated_at": "2026-08-21T16:04:13Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127226,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T16:04:49.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-qr-setup-current-main",
+        "head_sha": "9e0c50fa6c37b1921604672bcf2372ec1fa7bf04",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
