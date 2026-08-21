@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T16:43:00.343Z",
+  "updated_at": "2026-08-21T16:43:10.603Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126708:5358368854:2026-08-21T13:14:38Z:clawsweeper_needs_human",
-      "comment_id": "5358368854",
-      "comment_version_key": "5358368854:2026-08-21T13:14:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126708#issuecomment-5358368854",
-      "comment_created_at": "2026-08-20T15:53:19Z",
-      "comment_updated_at": "2026-08-21T13:14:38Z",
-      "comment_body_sha256": "2ed3c6d4b9da94c92cf6bf48400a23b3aef76ea020ba39eba7a089c5a15deb9a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126708,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; the eventual merge/refreshed exact head should retain the global-pager behavior and complete required CI before landing. (sha=aa85f6d657495f519fdd24a5582e05bc8f5c5561)",
-      "expected_head_sha": "aa85f6d657495f519fdd24a5582e05bc8f5c5561",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T13:15:37.532Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/sessions-only-show-when-filtered-by-me",
-        "head_sha": "aa85f6d657495f519fdd24a5582e05bc8f5c5561",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127008:5365337494:2026-08-21T13:14:42Z:clawsweeper_needs_human",
       "comment_id": "5365337494",
@@ -31908,6 +31875,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126818:5372666501:2026-08-21T16:42:13Z:re_review",
+      "comment_id": "5372666501",
+      "comment_version_key": "5372666501:2026-08-21T16:42:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126818#issuecomment-5372666501",
+      "comment_created_at": "2026-08-21T16:42:13Z",
+      "comment_updated_at": "2026-08-21T16:42:13Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126818,
+      "author": "edenfunf",
+      "author_id": 146086744,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T16:43:07.749Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/webhook-body-limit-response-delivery",
+        "head_sha": "eb07bc5dfdc871f8e04908896db227fd2d93b6df",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
