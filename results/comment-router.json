@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T08:30:52.021Z",
+  "updated_at": "2026-08-21T08:31:45.668Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5300995964:2026-08-15T06:43:39Z:re_review",
-      "comment_id": "5300995964",
-      "comment_version_key": "5300995964:2026-08-15T06:43:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5300995964",
-      "comment_created_at": "2026-08-15T06:43:39Z",
-      "comment_updated_at": "2026-08-15T06:43:39Z",
-      "comment_body_sha256": "db7494fb79df486d450ddaccdb69350c983f8d3fc1f2da70580d3d58fd244720",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T04:12:59.052Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5301023655:2026-08-15T06:51:19Z:re_review",
       "comment_id": "5301023655",
@@ -33146,6 +33119,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127104:5367444887:2026-08-21T08:29:26Z:clawsweeper_needs_human",
+      "comment_id": "5367444887",
+      "comment_version_key": "5367444887:2026-08-21T08:29:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127104#issuecomment-5367444887",
+      "comment_created_at": "2026-08-21T08:29:26Z",
+      "comment_updated_at": "2026-08-21T08:29:26Z",
+      "comment_body_sha256": "b256f660cd76700cee2ce5caa134f17ffa243f6951ce404ff470f183d6884936",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127104,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject terminal opens when exec selects a non-Gateway host (P1)** - resolveExecDefaults returns effectiveHost, but this adapter drops it. With tools.exec.host: \"node\", the normal exec tool routes only to a node...; Review finding: [P1] Reject terminal opens when exec selects a non-Gateway host — src/agents/tools/terminal-tool.ts:193 - [P1] Forward session permissions through skill dispatch —... (sha=b5636c4ff34ab489ee9b9505fde6ba28042006ca)",
+      "expected_head_sha": "b5636c4ff34ab489ee9b9505fde6ba28042006ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T08:31:45.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/terminal-exec-policy-124946-v2",
+        "head_sha": "b5636c4ff34ab489ee9b9505fde6ba28042006ca",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
