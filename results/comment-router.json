@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-21T00:01:57.900Z",
+  "updated_at": "2026-08-21T00:02:29.723Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:561:5359170454:2026-08-20T17:05:57Z:re_review",
-      "comment_id": "5359170454",
-      "comment_version_key": "5359170454:2026-08-20T17:05:57Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/561#issuecomment-5359170454",
-      "comment_created_at": "2026-08-20T17:05:57Z",
-      "comment_updated_at": "2026-08-20T17:05:57Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 561,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T17:07:15.521Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clipboard-file-size-guard",
-        "head_sha": "6cd036862feb7cf4ae400c9bc2fc4418edad6a7c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126700:5359176545:2026-08-20T17:06:26Z:re_review",
-      "comment_id": "5359176545",
-      "comment_version_key": "5359176545:2026-08-20T17:06:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126700#issuecomment-5359176545",
-      "comment_created_at": "2026-08-20T17:06:26Z",
-      "comment_updated_at": "2026-08-20T17:06:26Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126700,
-      "author": "edenfunf",
-      "author_id": 146086744,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T17:07:18.562Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/message-send-scoped-plugin-target-resolution",
-        "head_sha": "63e37bdd135c3f8febf4b79695573f071effb7f3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126514:5359186362:2026-08-20T17:07:19Z:re_review",
       "comment_id": "5359186362",
@@ -30960,6 +30866,39 @@
       "target": null
     },
     {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117287:5150506609:2026-08-20T23:47:18Z:clawsweeper_needs_human",
+      "comment_id": "5150506609",
+      "comment_version_key": "5150506609:2026-08-20T23:47:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117287#issuecomment-5150506609",
+      "comment_created_at": "2026-08-01T07:55:31Z",
+      "comment_updated_at": "2026-08-20T23:47:18Z",
+      "comment_body_sha256": "ed66aa8872b83bdf58b8683035a3797ac51e5fae2e6a26ab7619dcb84179e1ea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117287,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This adds an optional field to two strict plugin configuration contracts; merge only with generated metadata and exact-head validation synchronized so CLI validation cannot diverge fr... (sha=a2d6a7209471d5bbdf58c4af563f50a62b850dca)",
+      "expected_head_sha": "a2d6a7209471d5bbdf58c4af563f50a62b850dca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-20T23:59:50.392Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/context-visibility-schema-parity",
+        "head_sha": "a2d6a7209471d5bbdf58c4af563f50a62b850dca",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117302:5150624297:2026-08-20T23:48:52Z:clawsweeper_auto_repair",
       "comment_id": "5150624297",
       "comment_version_key": "5150624297:2026-08-20T23:48:52Z",
@@ -31365,6 +31304,53 @@
         "kind": "pull_request",
         "branch": "fix/session-ui-state",
         "head_sha": "ff289c2ecb4468f13c23d7bda5fc1eff1d0d1092",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126865:5363519485:2026-08-21T00:01:47Z:re_review",
+      "comment_id": "5363519485",
+      "comment_version_key": "5363519485:2026-08-21T00:01:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126865#issuecomment-5363519485",
+      "comment_created_at": "2026-08-21T00:01:47Z",
+      "comment_updated_at": "2026-08-21T00:01:47Z",
+      "comment_body_sha256": "a93a5f540da22e89c69e03182db577ddb8c0f5380f3a6c6f1459e38449aa6eed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126865,
+      "author": "Seal5",
+      "author_id": 121348218,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T00:02:27.628Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-chat-history-replay-dedupe",
+        "head_sha": "1717f45afdd67fc2347b95f5a678e31a2cae2bff",
         "cluster_id": null,
         "job_path": null
       },
