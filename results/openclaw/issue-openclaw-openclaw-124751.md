@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124751"
 mode: "autonomous"
-run_id: "32441016697"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32441016697"
+run_id: "32441473696"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32441473696"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-21T02:55:15.576Z"
+published_at: "2026-08-21T03:05:27.644Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32441016697](https://github.com/openclaw/clawsweeper/actions/runs/32441016697)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32441473696](https://github.com/openclaw/clawsweeper/actions/runs/32441473696)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124751
 
 ## Summary
 
-Current main retains a real Apple-client bug: Gateway emits the session.message envelope runId, but the Swift payload codec drops it, so a partial chat.final cannot adopt a fuller durable assistant row with different content/idempotency identities. Implementation and proof are blocked only by this read-only checkout and the missing mandatory sibling ../codex source checkout.
+#124751 is a real, narrow Apple-client identity-loss bug. Gateway already emits terminal `session.message.runId`; the shared Swift payload codec drops it, so a partial `chat.final` cannot adopt a fuller canonical row with a different durable identity. The sandbox is read-only: no branch or regression could be written, and SwiftPM stops before compilation with `permissionDenied`.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main retains a real Apple-client bug: Gateway emits the session.message 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #124751 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,12 @@ Current main retains a real Apple-client bug: Gateway emits the session.message 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #98116 | keep_closed | skipped | related | Already closed; no closure action is valid. |
-| #98117 | keep_closed | skipped | related | Already merged and closed; retained as historical evidence only. |
-| #108692 | keep_closed | skipped | related | Already closed historical context. |
-| #123792 | keep_independent | planned | independent | Different runtime, display surfaces, and root cause. |
-| #124751 | fix_needed | blocked | canonical | A narrow Swift repair is identified, but this worker cannot modify or validate the branch in the read-only environment. |
-| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | blocked | canonical | Executor must perform the patch and validation on a writable checkout after satisfying the Codex source-inspection gate. |
+| #124751 | fix_needed | planned | canonical | Canonical issue remains open and needs the executor to implement the narrow Swift repair. |
+| #123792 | keep_independent | planned | independent | Related only by duplicate-rendering symptom; no mutation in this cluster. |
+| #98116 | keep_closed | skipped | fixed_by_candidate | Already closed; no closure action is permitted. |
+| #98117 | keep_closed | skipped | related | Already merged and closed; it is evidence, not a target. |
+| #108692 | keep_closed | skipped | related | Already closed; no closure action is permitted. |
+| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | planned | canonical | Implementation is blocked only by the read-only worker sandbox; the executor can apply this narrow artifact on clawsweeper/issue-openclaw-openclaw-124751. |
 
 ## Needs Human
 
