@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven exact npm plugin-drift remediation bug from https://github.com/openclaw/openclaw/issues/127297. In src/plugins/plugin-version-drift.ts, preserve the existing generic drift policy by applying its trailing numeric suffix normalization when constructing the exact npm package target; do not add config, fallback behavior, package-specific logic, or a registry query. First add a focused regression case for an exact @openclaw/brave-plugin pin and gatewayVersion 2026.7.1-2 that fails before the change and expects the normalized 2026.7.1 target. Confirm deep status continues to render the resolver's command. Do not edit CHANGELOG.md; record the user-visible remediation correction in PR-body release-note context.
+Repair the exact-pinned npm plugin-drift remediation path for gateway versions with a trailing numeric packaging suffix. In src/plugins/plugin-version-drift.ts, reuse the existing canonical suffix normalization when forming the exact npm target; preserve raw gateway versions in diagnostic text and preserve legitimate beta prerelease targets. Add a focused owner-boundary regression in src/plugins/plugin-version-drift.test.ts for gatewayVersion "2026.7.1-2" expecting @openclaw/brave-plugin@2026.7.1, and prove it fails before the repair. Confirm existing status and Doctor callers retain the corrected shared command. Do not add configuration, registry availability probes, renderer-specific workarounds, or CHANGELOG.md edits; include release-note context in the PR body.
 
 Likely files:
 
 - src/plugins/plugin-version-drift.ts
 - src/plugins/plugin-version-drift.test.ts
 - src/cli/daemon-cli/status.print.test.ts
+- src/commands/doctor-workspace-status.test.ts
 
 Validation:
 
-- pnpm test src/plugins/plugin-version-drift.test.ts
-- pnpm test src/cli/daemon-cli/status.print.test.ts
-- pnpm check:changed
+- node scripts/run-vitest.mjs run src/plugins/plugin-version-drift.test.ts
+- node scripts/run-vitest.mjs run src/cli/daemon-cli/status.print.test.ts src/commands/doctor-workspace-status.test.ts
+- node scripts/check-changed.mjs --dry-run -- src/plugins/plugin-version-drift.ts src/plugins/plugin-version-drift.test.ts
 
 ## Operator Prompt
 
