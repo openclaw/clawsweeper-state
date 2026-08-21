@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-21T06:18:23.962Z",
+  "updated_at": "2026-08-21T06:18:19.427Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123084:5364362350:2026-08-21T02:13:38Z:re_review",
+      "comment_id": "5364362350",
+      "comment_version_key": "5364362350:2026-08-21T02:13:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123084#issuecomment-5364362350",
+      "comment_created_at": "2026-08-21T02:13:38Z",
+      "comment_updated_at": "2026-08-21T02:13:38Z",
+      "comment_body_sha256": "acf1f962baef0e37d1b1272e08a906ce73d6dbe240495a5027ec408a5f976adc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123084,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T02:19:53.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/markdown-chat-aug13",
+        "head_sha": "07332973bf62b78061b66edc74d038f600215d82",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123084:5278513657:2026-08-21T02:19:12Z:clawsweeper_auto_repair",
       "comment_id": "5278513657",
@@ -32448,39 +32495,6 @@
         "kind": "pull_request",
         "branch": "codex/test-perf-30pct-integration",
         "head_sha": "ab21bbccec2c32b8cec85831660d8c5d3970de23",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124633:5307880441:2026-08-21T06:15:24Z:clawsweeper_needs_human",
-      "comment_id": "5307880441",
-      "comment_version_key": "5307880441:2026-08-21T06:15:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124633#issuecomment-5307880441",
-      "comment_created_at": "2026-08-16T14:17:53Z",
-      "comment_updated_at": "2026-08-21T06:15:24Z",
-      "comment_body_sha256": "13869fbbe60332af4c6dba1319e9bf5e0672b2213d514b3f376d774d44166063",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124633,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: A strong ephemeral gateway/mock-transport result is supplied for the earlier head, but the current head changes the parallel-child lif... (sha=05b67df13af55b7af8873a4ac97211e01f8693a2)",
-      "expected_head_sha": "05b67df13af55b7af8873a4ac97211e01f8693a2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T06:18:23.962Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/new-reset-ack-status-notice",
-        "head_sha": "05b67df13af55b7af8873a4ac97211e01f8693a2",
         "cluster_id": null,
         "job_path": null
       }
