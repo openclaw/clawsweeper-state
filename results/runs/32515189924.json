@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127379",
+  "mode": "autonomous",
+  "run_id": "32515189924",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32515189924",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127379.md",
+  "published_at": "2026-08-21T19:02:55.338Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127379",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127379",
+  "canonical_pr": null,
+  "summary": "#127379 remains a real, narrow /models browse-path bug on main 9a0e11df066dea98b20e96a3f43a8d3342c89ca7. The existing visibility-policy API already supports the repair; no new dependency, config, or API is needed. Local implementation is blocked because this checkout is read-only and focused validation cannot start: tsx is missing, while the required pnpm install retry would write the checkout.",
+  "actions": [
+    {
+      "target": "#127379",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127379",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor checkout with dependencies installed; no maintainer product decision is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127379",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127379",
+      "candidate_fix": null,
+      "reason": "A new narrow fix PR is the canonical path; opening it awaits a writable repair executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
