@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Ollama Cloud probe-target selection defect for https://github.com/openclaw/openclaw/issues/124689. Preserve the `models.probe` API and existing credential isolation. Canonically resolve cloud-form configured fallbacks before choosing a requested provider’s probe model, so `ollama/gemma4:31b-cloud` selects the corresponding Ollama Cloud target rather than an unrelated or retired catalog row. Add an owner-boundary regression that fails before the fix. Do not add config options or picker-side workarounds. Do not edit CHANGELOG.md; include concise user-visible release context in the PR body.
+Repair models.probe fallback selection so an unconfigured provider fallback never chooses a deprecated or disabled catalog row, while an explicitly configured legacy model remains probeable. Preserve the documented ollama versus ollama-cloud boundary; do not add aliases or a UI workaround. Extend the existing probe-target coverage with a catalog ordered as deprecated kimi-k2.5 then a usable Ollama Cloud model and only an ollama/* candidate; the pre-fix test must select Kimi and the repaired test the usable cloud row. Add release-note context to the PR body, not CHANGELOG.md. Stop if the repair requires new configuration, provider-policy direction, or changing explicit deprecated-model behavior.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.test.ts
-- src/gateway/server-methods/models-probe.test.ts
+- src/commands/models/list.probe.targets.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/commands/models/list.probe.test.ts
-- node scripts/run-vitest.mjs src/gateway/server-methods/models-probe.test.ts
-- node scripts/run-vitest.mjs ui/src/pages/chat/chat-view.test.ts
+- pnpm test src/commands/models/list.probe.targets.test.ts
+- pnpm check:changed
+- Run the documented redacted Ollama Cloud API-key smoke against current main and verify the Control UI enables the selected hosted model.
 
 ## Operator Prompt
 
