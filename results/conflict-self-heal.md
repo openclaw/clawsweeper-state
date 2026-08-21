@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-08-21T09:45:45.078Z
+Generated: 2026-08-21T10:43:17.425Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -29,7 +29,7 @@ Repository: openclaw/openclaw
 | [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | clawsweeper/issue-openclaw-openclaw-119958 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119901](https://github.com/openclaw/openclaw/pull/119901) | fix(doctor): analyze SQLite databases after offline compaction | clawsweeper/issue-openclaw-openclaw-119884 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119784](https://github.com/openclaw/openclaw/pull/119784) | fix(gateway): avoid parsing excluded chat history payloads | clawsweeper/issue-openclaw-openclaw-119578 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#119778](https://github.com/openclaw/openclaw/pull/119778) | fix(gateway): return retryable chat send error during transcript rebuild | clawsweeper/issue-openclaw-openclaw-119754 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#119778](https://github.com/openclaw/openclaw/pull/119778) | fix(gateway): return retryable chat send error during transcript rebuild | clawsweeper/issue-openclaw-openclaw-119754 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#119737](https://github.com/openclaw/openclaw/pull/119737) | fix(slack): require confirmed thread placement for terminal receipts | clawsweeper/issue-openclaw-openclaw-96692 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119735](https://github.com/openclaw/openclaw/pull/119735) | fix(whatsapp): refresh activity for pending inbound work | clawsweeper/issue-openclaw-openclaw-114169 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119722](https://github.com/openclaw/openclaw/pull/119722) | fix(uninstall): remove owned shell completion registrations with state | clawsweeper/issue-openclaw-openclaw-112625 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
