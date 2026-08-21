@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T23:22:04.397Z",
+  "updated_at": "2026-08-21T23:22:06.055Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5300238428:2026-08-15T03:07:21Z:re_review",
-      "comment_id": "5300238428",
-      "comment_version_key": "5300238428:2026-08-15T03:07:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5300238428",
-      "comment_created_at": "2026-08-15T03:07:21Z",
-      "comment_updated_at": "2026-08-15T03:07:21Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T18:45:10.452Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5300308291:2026-08-15T03:26:51Z:re_review",
       "comment_id": "5300308291",
@@ -31779,6 +31752,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1212:5376398153:2026-08-21T23:21:31Z:freeform_assist",
+      "comment_id": "5376398153",
+      "comment_version_key": "5376398153:2026-08-21T23:21:31Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1212#issuecomment-5376398153",
+      "comment_created_at": "2026-08-21T23:21:31Z",
+      "comment_updated_at": "2026-08-21T23:21:31Z",
+      "comment_body_sha256": "fa7358fd3423c061ad9205d0e87ecc0fbdf71b85f52831ae0f4b8c2119b1f21b",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1212,
+      "author": "brokemac79",
+      "author_id": 255583030,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review\\n\\nci is green on 28489ef29a3403ac60880b57d833b1e69a93c5e1. the pr body contains the refreshed canonical evidence and exact-head aws crabbox proof (run_f5f705050922).",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T23:22:03.705Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-134-closeout-provenance-r2",
+        "head_sha": "28489ef29a3403ac60880b57d833b1e69a93c5e1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw-tools:17:5298592194:2026-08-21T23:18:22Z:clawsweeper_auto_repair",
