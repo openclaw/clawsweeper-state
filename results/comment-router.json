@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T20:44:07.031Z",
+  "updated_at": "2026-08-21T20:44:08.464Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127008:5372697246:2026-08-21T16:45:17Z:re_review",
-      "comment_id": "5372697246",
-      "comment_version_key": "5372697246:2026-08-21T16:45:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127008#issuecomment-5372697246",
-      "comment_created_at": "2026-08-21T16:45:17Z",
-      "comment_updated_at": "2026-08-21T16:45:17Z",
-      "comment_body_sha256": "631f7e30ee2352d7dcad8c8d1a54f7fc32183c6eb4f08eeae970caa0c38da6e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127008,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T16:52:11.213Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-plan-contract3",
-        "head_sha": "484eeb661330c7fb7b1090481c73fff47eda9b75",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127008:5370095153:2026-08-21T12:59:29Z:re_review",
       "comment_id": "5370095153",
@@ -32255,6 +32208,39 @@
         "kind": "pull_request",
         "branch": "feat/dashboard-widget-actions",
         "head_sha": "d0e99edcf5f02bf81445b1433db6e2cc6e272838",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3504:5372359255:2026-08-21T20:43:26Z:clawsweeper_needs_human",
+      "comment_id": "5372359255",
+      "comment_version_key": "5372359255:2026-08-21T20:43:26Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3504#issuecomment-5372359255",
+      "comment_created_at": "2026-08-21T16:11:54Z",
+      "comment_updated_at": "2026-08-21T20:43:26Z",
+      "comment_body_sha256": "af4ab54d9f08a195db69c99ba2d0a0fb5dfa725f002cbaf817cd6a14bed93920",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3504,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The TanStack update changes the client/server routing graph, and the failing local-auth moderation browser scenario leaves upgrade compatibility unproven. (sha=c8ea5c6541e2ea09cc09110c85db983c1f06dcc4)",
+      "expected_head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T20:44:08.464Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/production-minor-and-patch-a1a6a844ee",
+        "head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
         "cluster_id": null,
         "job_path": null
       }
