@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T16:40:00.558Z",
+  "updated_at": "2026-08-21T16:40:06.327Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127026:5370205640:2026-08-21T13:10:41Z:re_review",
-      "comment_id": "5370205640",
-      "comment_version_key": "5370205640:2026-08-21T13:10:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127026#issuecomment-5370205640",
-      "comment_created_at": "2026-08-21T13:10:41Z",
-      "comment_updated_at": "2026-08-21T13:10:41Z",
-      "comment_body_sha256": "e96c486e970da9043d32e751a9f84ae8d39bf0431d330586d9ff3d1900822403",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127026,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T13:11:22.733Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/beta3-codex-149-20260821",
-        "head_sha": "5ece57bfeed2e8626a8bd6a4495c87ecde6616b0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/gogcli:1013:5370208275:2026-08-21T13:10:57Z:re_review",
       "comment_id": "5370208275",
@@ -31947,6 +31900,39 @@
         "kind": "pull_request",
         "branch": "fix/nostr-doctor-windows-teardown-ebusy",
         "head_sha": "182c2a8e1ba771f5ef2b3dd00cc2dc2eae428ff1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3106:5355182953:2026-08-21T16:39:02Z:clawsweeper_auto_repair",
+      "comment_id": "5355182953",
+      "comment_version_key": "5355182953:2026-08-21T16:39:02Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3106#issuecomment-5355182953",
+      "comment_created_at": "2026-08-20T11:22:20Z",
+      "comment_updated_at": "2026-08-21T16:39:02Z",
+      "comment_body_sha256": "7dddf34f95fcbff5f39cb9639f25fa0af9e63414bb362dde904e555f4b8e5f4d",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3106,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7172cdd47b4ffc67fd7189b9a62c2a17c8b807f9)",
+      "expected_head_sha": "7172cdd47b4ffc67fd7189b9a62c2a17c8b807f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T16:40:06.327Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/spend-silent-invalidation",
+        "head_sha": "7172cdd47b4ffc67fd7189b9a62c2a17c8b807f9",
         "cluster_id": null,
         "job_path": null
       }
