@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T04:58:09.348Z",
+  "updated_at": "2026-08-21T04:59:15.501Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117128:5200201969:2026-08-06T03:55:55Z:re_review",
-      "comment_id": "5200201969",
-      "comment_version_key": "5200201969:2026-08-06T03:55:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117128#issuecomment-5200201969",
-      "comment_created_at": "2026-08-06T03:55:55Z",
-      "comment_updated_at": "2026-08-06T03:55:55Z",
-      "comment_body_sha256": "24fe3d80c1ae2741932f58a9b451ae93b25bb877ff179488cc34d9660e597dcc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117128,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — p1 addressed on `91e47c98`; please re-evaluate",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T01:36:48.911Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117128:5204049108:2026-08-06T11:27:34Z:re_review",
       "comment_id": "5204049108",
@@ -31367,6 +31340,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112820:5075163592:2026-08-21T04:58:11Z:clawsweeper_needs_human",
+      "comment_id": "5075163592",
+      "comment_version_key": "5075163592:2026-08-21T04:58:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112820#issuecomment-5075163592",
+      "comment_created_at": "2026-07-24T22:41:54Z",
+      "comment_updated_at": "2026-08-21T04:58:11Z",
+      "comment_body_sha256": "fb94ffd67dd781dbdc3dcfcfadfd775d0a0d55fd548a767b3563923d2af15734",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112820,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Review the new trusted-plugin media authority** - Gateway-dispatch plugins with Talk scope can select a session, send microphone PCM, receive output PCM, and cancel playback; that publi...; Review finding: [medium] Review the new trusted-plugin media authority — src/gateway/talk-plugin-session.ts:29 (sha=e814e815da62036c07521166e19eecad374d0941)",
+      "expected_head_sha": "e814e815da62036c07521166e19eecad374d0941",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T04:59:15.501Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/talk-open-session",
+        "head_sha": "e814e815da62036c07521166e19eecad374d0941",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
