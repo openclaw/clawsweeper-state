@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T02:11:46.190Z",
+  "updated_at": "2026-08-21T02:11:49.288Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105350:4951097994:2026-08-20T18:46:43Z:clawsweeper_auto_repair",
-      "comment_id": "4951097994",
-      "comment_version_key": "4951097994:2026-08-20T18:46:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105350#issuecomment-4951097994",
-      "comment_created_at": "2026-07-12T12:01:46Z",
-      "comment_updated_at": "2026-08-20T18:46:43Z",
-      "comment_body_sha256": "d89e3fef784b7833477dfb4efb71c44e5241cc367c6cc3ed35659793dfbb32f2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105350,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3d6946a4076cf620d23ce35527151206a332eead)",
-      "expected_head_sha": "3d6946a4076cf620d23ce35527151206a332eead",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-20T18:57:30.596Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/steering-queue-dynamic-metadata-caps",
-        "head_sha": "3d6946a4076cf620d23ce35527151206a332eead",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105393:4951376381:2026-08-20T18:48:20Z:clawsweeper_auto_repair",
       "comment_id": "4951376381",
@@ -31823,6 +31790,53 @@
       "status": "skipped",
       "processed_at": "2026-08-21T02:11:46.190Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126948:5364344500:2026-08-21T02:10:47Z:re_review",
+      "comment_id": "5364344500",
+      "comment_version_key": "5364344500:2026-08-21T02:10:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126948#issuecomment-5364344500",
+      "comment_created_at": "2026-08-21T02:10:47Z",
+      "comment_updated_at": "2026-08-21T02:10:47Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126948,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T02:11:47.477Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/workshop-review-admission-backoff-20260820",
+        "head_sha": "99d5815ce1f3ab50c7556e3562cd11aa8f6113bd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
