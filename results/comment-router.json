@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T13:23:16.946Z",
+  "updated_at": "2026-08-21T13:27:45.115Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123075:5278284857:2026-08-21T07:15:17Z:clawsweeper_needs_human",
-      "comment_id": "5278284857",
-      "comment_version_key": "5278284857:2026-08-21T07:15:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123075#issuecomment-5278284857",
-      "comment_created_at": "2026-08-13T09:05:36Z",
-      "comment_updated_at": "2026-08-21T07:15:17Z",
-      "comment_body_sha256": "82866661249a60d5c93adaeba91a4032c471dd11642adc4d3640137b5c2beeda",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123075,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bind Watch approval replies to the request instance (P1)** - The new phone-side instanceId never reaches the Watch item or resolve event: OpenClawWatchExecApprovalItem and WatchExecApprovalResolveEvent carry onl...; Review finding: [P1] Bind Watch approval replies to the request instance — apps/ios/Sources/Model/NodeAppModel.swift:66 - [high] Watch replies can resolve a replacement approval —... (sha=83e892987aa1d9b16fce8cb9527040a876dbd434)",
-      "expected_head_sha": "83e892987aa1d9b16fce8cb9527040a876dbd434",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T07:16:13.107Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/approval-ui-aug13",
-        "head_sha": "83e892987aa1d9b16fce8cb9527040a876dbd434",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127035:5366477061:2026-08-21T07:16:39Z:re_review",
       "comment_id": "5366477061",
@@ -32883,6 +32850,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:583:5369994344:2026-08-21T13:27:03Z:clawsweeper_auto_repair",
+      "comment_id": "5369994344",
+      "comment_version_key": "5369994344:2026-08-21T13:27:03Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/583#issuecomment-5369994344",
+      "comment_created_at": "2026-08-21T12:49:06Z",
+      "comment_updated_at": "2026-08-21T13:27:03Z",
+      "comment_body_sha256": "e485e16bfd7e26039078bd2059409087213bb79dfe1b6fce1acdbc3df1138fcb",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 583,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=a9971d3a2756633505de5257749b221f47cc21ee)",
+      "expected_head_sha": "a9971d3a2756633505de5257749b221f47cc21ee",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-21T13:27:45.115Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cli-truth-routers",
+        "head_sha": "a9971d3a2756633505de5257749b221f47cc21ee",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
