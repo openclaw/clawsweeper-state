@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T06:52:53.485Z",
+  "updated_at": "2026-08-21T06:53:01.927Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5296915830:2026-08-14T18:41:24Z:re_review",
-      "comment_id": "5296915830",
-      "comment_version_key": "5296915830:2026-08-14T18:41:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5296915830",
-      "comment_created_at": "2026-08-14T18:41:24Z",
-      "comment_updated_at": "2026-08-14T18:41:24Z",
-      "comment_body_sha256": "ef208d3a4638d8b2e6306bf12a9dad29ef5d9084109181625506097f00a5dc1e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T02:40:39.767Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5297036807:2026-08-14T18:55:03Z:re_review",
       "comment_id": "5297036807",
@@ -33172,6 +33145,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123075:5278284857:2026-08-21T06:50:50Z:clawsweeper_needs_human",
+      "comment_id": "5278284857",
+      "comment_version_key": "5278284857:2026-08-21T06:50:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123075#issuecomment-5278284857",
+      "comment_created_at": "2026-08-13T09:05:36Z",
+      "comment_updated_at": "2026-08-21T06:50:50Z",
+      "comment_body_sha256": "69c7713541df127dd4e2a4a50498a96e52b1d2a9492733dc6932b4798c0962e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123075,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bind MCP approval responses to the request instance (P1)** - The newly emitted instanceId never reaches the MCP bridge: it stores pending approvals and calls both resolvers with only id and decision. If the Gate...; Review finding: [P1] Bind MCP approval responses to the request instance — src/gateway/server-methods/approval-shared.ts:157 - [high] MCP bypasses approval lifecycle binding — src... (sha=b7bc6109f119d2ece4df5525fad642ffd6968fd5)",
+      "expected_head_sha": "b7bc6109f119d2ece4df5525fad642ffd6968fd5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T06:53:01.927Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/approval-ui-aug13",
+        "head_sha": "b7bc6109f119d2ece4df5525fad642ffd6968fd5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
