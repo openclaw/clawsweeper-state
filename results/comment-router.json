@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T04:20:10.583Z",
+  "updated_at": "2026-08-21T04:21:34.205Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122200:5257563792:2026-08-21T00:16:11Z:clawsweeper_needs_human",
-      "comment_id": "5257563792",
-      "comment_version_key": "5257563792:2026-08-21T00:16:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122200#issuecomment-5257563792",
-      "comment_created_at": "2026-08-11T19:00:51Z",
-      "comment_updated_at": "2026-08-21T00:16:11Z",
-      "comment_body_sha256": "38ac4c8d7dad7868ca76783c3da7633c996519765eccccf7241ec0490bf0d935",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122200,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused Android and Gateway tests plus CI are useful, but the PR explicitly lacks final-head Android emulator or device proof of the visible re... (sha=091563cfef6aa00ce08caf8519af6160e3af5a17)",
-      "expected_head_sha": "091563cfef6aa00ce08caf8519af6160e3af5a17",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T00:17:05.187Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/122043-android-expand-truncated",
-        "head_sha": "091563cfef6aa00ce08caf8519af6160e3af5a17",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126618:5354060596:2026-08-21T00:16:22Z:clawsweeper_auto_repair",
       "comment_id": "5354060596",
@@ -31584,6 +31551,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123075:5278284857:2026-08-21T04:19:17Z:clawsweeper_needs_human",
+      "comment_id": "5278284857",
+      "comment_version_key": "5278284857:2026-08-21T04:19:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123075#issuecomment-5278284857",
+      "comment_created_at": "2026-08-13T09:05:36Z",
+      "comment_updated_at": "2026-08-21T04:19:17Z",
+      "comment_body_sha256": "81732aa73f8146b1ce32e7cb23b337245933bd80ee2dd0bc57fcccc6a8644044",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123075,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Expose the token to durable approval clients (P1)** - instanceId is accepted only on resolve params, but pending ApprovalSnapshots do not expose it. The approval page, CLI, and iOS unified resolver therefore kee...; Review finding: [P1] Expose the token to durable approval clients — packages/gateway-protocol/src/schema/approvals.ts:252-258 - [P1] Bind macOS prompt decisions to the live instan... (sha=03e6d23fbbd1541e7ac319a056c95b507526a240)",
+      "expected_head_sha": "03e6d23fbbd1541e7ac319a056c95b507526a240",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T04:21:34.205Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/approval-ui-aug13",
+        "head_sha": "03e6d23fbbd1541e7ac319a056c95b507526a240",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
