@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T17:07:28.474Z",
+  "updated_at": "2026-08-21T17:07:36.420Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5370515172:2026-08-21T13:40:47Z:re_review",
-      "comment_id": "5370515172",
-      "comment_version_key": "5370515172:2026-08-21T13:40:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5370515172",
-      "comment_created_at": "2026-08-21T13:40:47Z",
-      "comment_updated_at": "2026-08-21T13:40:47Z",
-      "comment_body_sha256": "75c7088bece8fd56a33cbc588008ca73b60d23bbacdc309328e20898b68d5b95",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review `cabefe72f6c22d02aeb08b60f822d6e96aca1911`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T13:41:34.405Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/queue-followup-persistence",
-        "head_sha": "cabefe72f6c22d02aeb08b60f822d6e96aca1911",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126028:5370541624:2026-08-21T13:43:12Z:re_review",
       "comment_id": "5370541624",
@@ -32022,6 +31975,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123979:5300325159:2026-08-21T17:01:08Z:clawsweeper_needs_human",
+      "comment_id": "5300325159",
+      "comment_version_key": "5300325159:2026-08-21T17:01:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123979#issuecomment-5300325159",
+      "comment_created_at": "2026-08-15T03:31:32Z",
+      "comment_updated_at": "2026-08-21T17:01:08Z",
+      "comment_body_sha256": "b80cc67cf24b545bb873423b5a5b75974e8afdb0c08e4e040447de29d0fa03f4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123979,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The cgroup resolver changes existing constrained-build sizing and adds a net 369 production lines; unusual cgroup mount and hierarchy layouts remain compatibility-sensitive despite fo... (sha=9c362fe41de681542257990325ddc390cbc1f2ba)",
+      "expected_head_sha": "9c362fe41de681542257990325ddc390cbc1f2ba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T17:07:36.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/tsdown-heap-host-scaled",
+        "head_sha": "9c362fe41de681542257990325ddc390cbc1f2ba",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
