@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124751"
 mode: "autonomous"
-run_id: "32519938157"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32519938157"
+run_id: "32520505888"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32520505888"
 head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-21T19:57:36.275Z"
+published_at: "2026-08-21T20:08:24.677Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124751"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32519938157](https://github.com/openclaw/clawsweeper/actions/runs/32519938157)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32520505888](https://github.com/openclaw/clawsweeper/actions/runs/32520505888)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124751
 
 ## Summary
 
-Narrow repair planned for the remaining Apple envelope-runId reconciliation path. Local implementation and validation are blocked: the checkout is read-only, Swift execution is denied, and the required sibling ../codex source is absent so its mandatory direct inspection cannot be completed.
+#124751 remains the canonical narrow Apple-chat repair. Current main preserves the Gateway session.message envelope runId at src/gateway/session-transcript-message.ts:97 and emits it at src/gateway/server-session-events.ts:372, but the Apple payload model drops it at apps/shared/OpenClawKit/Sources/OpenClawChatUI/ChatModels.swift:806. Implementation is blocked: the mandatory ../codex checkout is absent, this sandbox is read-only, and the focused Swift test command cannot initialize its build target due to permissionDenied.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Narrow repair planned for the remaining Apple envelope-runId reconciliation path
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #124751 |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,12 @@ Narrow repair planned for the remaining Apple envelope-runId reconciliation path
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #98116 | keep_closed | skipped | fixed_by_candidate | Already closed; historical evidence only. |
-| #98117 | keep_closed | skipped | related | Already merged and closed; no mutation. |
-| #108692 | keep_closed | skipped | related | Already closed; it is adjacent UX context rather than the remaining root cause. |
-| #123792 | keep_independent | planned | independent | Separate root cause and platform scope. |
-| #124751 | fix_needed | planned | canonical | The envelope-owned correlation fact is dropped before the reconciliation owner; a narrow Apple-side fix is appropriate. |
-| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | planned | canonical | Prepare one new credited ClawSweeper fix PR from clawsweeper/issue-openclaw-openclaw-124751. |
+| #124751 | fix_needed | blocked | canonical | A narrow owner-boundary repair is identified, but no code or verified verdict can be produced until the mandatory Codex source inspection and writable test environment are available. |
+| cluster:issue-openclaw-openclaw-124751 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor but blocked from implementation and validation in this environment. |
+| #123792 | keep_independent | planned | independent | Separate root cause and implementation path; retain its existing follow-up. |
+| #98116 | keep_closed | skipped | related | Already closed; it is context, not a closure target. |
+| #98117 | keep_closed | skipped | related | Already merged and not the candidate fix for the remaining unequal-text path. |
+| #108692 | keep_closed | skipped | related | Already closed historical context; no closure action is valid. |
 
 ## Needs Human
 
