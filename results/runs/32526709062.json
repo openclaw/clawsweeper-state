@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126813",
+  "mode": "autonomous",
+  "run_id": "32526709062",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32526709062",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126813.md",
+  "published_at": "2026-08-21T21:18:04.481Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126813",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126813",
+  "canonical_pr": null,
+  "summary": "#126813 is a confirmed narrow queue-admission bug on main 5b67b619. An executor-ready new-PR artifact is provided; this worker could not edit or validate because the checkout is read-only, dependencies lack tsx, and required ../codex source is absent.",
+  "actions": [
+    {
+      "target": "#126813",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126813",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker environment. The defect and narrow owner-boundary fix path are established."
+    },
+    {
+      "target": "#69208",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#126813",
+      "candidate_fix": null,
+      "reason": "#126813 is a focused queued message-tool delivery-awareness defect, not a duplicate closure candidate for the umbrella."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126813",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126813",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited PR from clawsweeper/issue-openclaw-openclaw-126813 after restoring write access, dependencies, and the Codex-source gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
