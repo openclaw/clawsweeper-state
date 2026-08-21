@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T22:10:08.235Z",
+  "updated_at": "2026-08-21T22:10:29.777Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119008:5174217233:2026-08-21T17:31:37Z:clawsweeper_needs_human",
-      "comment_id": "5174217233",
-      "comment_version_key": "5174217233:2026-08-21T17:31:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119008#issuecomment-5174217233",
-      "comment_created_at": "2026-08-04T03:19:40Z",
-      "comment_updated_at": "2026-08-21T17:31:37Z",
-      "comment_body_sha256": "bc7b486cd52d75ecfe699609859902e66f112203b005c19be2f751e45c574e1c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119008,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The branch uses PATH shims for both Keychain and codesign, so it needs a redacted after-fix run with a real valid non-Apple identity before mer...; Review finding: [P1] Unify automatic signing eligibility across Mac entry points — scripts/codesign-mac-app.sh:84-98 - [medium] Confirm automatic certificate trust boundary — scri... (sha=13c78c55582f885ea83422ce0db3093aabb5059a)",
-      "expected_head_sha": "13c78c55582f885ea83422ce0db3093aabb5059a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T17:43:39.493Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/elated-pike-32879f",
-        "head_sha": "13c78c55582f885ea83422ce0db3093aabb5059a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119834:5200787636:2026-08-21T17:33:20Z:clawsweeper_auto_repair",
       "comment_id": "5200787636",
@@ -31988,6 +31955,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T22:10:08.235Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-21T22:09:14Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-21T22:09:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-21T22:09:14Z",
+      "comment_body_sha256": "d5060d16a695c54353eeb0ae5175983e11588719bcf1e0352890620913768418",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog workflow guard (P1)** - The workflow now uses the v3.97.0 SHA, but test/scripts/ci-workflow-guards.test.ts still expects the v3.95.9 SHA, so the CI lane that runs this guard fails. Upd...; Review finding: [P1] Synchronize the TruffleHog workflow guard — .github/workflows/ci.yml:1158 - [P1] Refresh the Android attestation contract assertion — .github/workflows/androi... (sha=d0e814aa3368dad8e2af00a54914665637188a3f)",
+      "expected_head_sha": "d0e814aa3368dad8e2af00a54914665637188a3f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T22:10:29.777Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "d0e814aa3368dad8e2af00a54914665637188a3f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
