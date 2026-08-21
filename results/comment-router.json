@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T05:09:23.176Z",
+  "updated_at": "2026-08-21T05:10:05.604Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4657208692:2026-06-09T07:19:48Z:re_review",
-      "comment_id": "4657208692",
-      "comment_version_key": "4657208692:2026-06-09T07:19:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4657208692",
-      "comment_created_at": "2026-06-09T07:19:48Z",
-      "comment_updated_at": "2026-06-09T07:19:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T01:40:28.169Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4660098613:2026-06-09T13:15:47Z:re_review",
       "comment_id": "4660098613",
@@ -31499,6 +31472,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3500:5365192308:2026-08-21T05:01:25Z:clawsweeper_needs_human",
+      "comment_id": "5365192308",
+      "comment_version_key": "5365192308:2026-08-21T05:01:25Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3500#issuecomment-5365192308",
+      "comment_created_at": "2026-08-21T04:26:57Z",
+      "comment_updated_at": "2026-08-21T05:01:25Z",
+      "comment_body_sha256": "5e583a4c3caa5a3c18ef390743fc67581fa3fedd334ccb7ab33ccaeb82468be8",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3500,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The companion OpenClaw receipt producer at https://github.com/openclaw/openclaw/pull/126881 must land and be rehearsed before its reusable-workflow pin moves; pinning only one side wo... (sha=946ba45a911666caab2966fa9c7dd7068abcb7f2)",
+      "expected_head_sha": "946ba45a911666caab2966fa9c7dd7068abcb7f2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T05:10:05.604Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawhub-parent-authorization-v1",
+        "head_sha": "946ba45a911666caab2966fa9c7dd7068abcb7f2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
