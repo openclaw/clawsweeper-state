@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-21T13:20:54.477Z",
+  "updated_at": "2026-08-21T13:17:47.264Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126887:5363527632:2026-08-21T07:11:41Z:clawsweeper_needs_human",
+      "comment_id": "5363527632",
+      "comment_version_key": "5363527632:2026-08-21T07:11:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126887#issuecomment-5363527632",
+      "comment_created_at": "2026-08-21T00:02:50Z",
+      "comment_updated_at": "2026-08-21T07:11:41Z",
+      "comment_body_sha256": "034c095fe4042fdadd74f89c77c3d3346a04c06227435201100d3495a123a177",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126887,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is dirty against current main, so conflict resolution must preserve current frozen-target validation semantics before the scanner lane can be trusted. (sha=4b400b1f3063b8d6ed4d74167e882c1d1cfe1328)",
+      "expected_head_sha": "4b400b1f3063b8d6ed4d74167e882c1d1cfe1328",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T07:12:35.902Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-plugin-security-scanner",
+        "head_sha": "4b400b1f3063b8d6ed4d74167e882c1d1cfe1328",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126887:5365833496:2026-08-21T06:03:02Z:re_review",
       "comment_id": "5365833496",
@@ -32822,53 +32855,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/goplaces:30:5370292123:2026-08-21T13:19:16Z:re_review",
-      "comment_id": "5370292123",
-      "comment_version_key": "5370292123:2026-08-21T13:19:16Z",
-      "comment_url": "https://github.com/openclaw/goplaces/pull/30#issuecomment-5370292123",
-      "comment_created_at": "2026-08-21T13:19:16Z",
-      "comment_updated_at": "2026-08-21T13:19:16Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/goplaces",
-      "issue_number": 30,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T13:20:52.521Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/go-1.26.6-security",
-        "head_sha": "c5abfa7ea5b26e0e2f816c6dc00f8acde45c2bcc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
