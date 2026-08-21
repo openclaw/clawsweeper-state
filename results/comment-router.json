@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T18:40:56.405Z",
+  "updated_at": "2026-08-21T18:41:58.214Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124014:5371332260:2026-08-21T14:37:29Z:re_review",
-      "comment_id": "5371332260",
-      "comment_version_key": "5371332260:2026-08-21T14:37:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5371332260",
-      "comment_created_at": "2026-08-21T14:37:29Z",
-      "comment_updated_at": "2026-08-21T14:37:29Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124014,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T14:38:14.098Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auth-reauth-state-reset",
-        "head_sha": "1475489a6fac0852d0892a4e40d5effffe65e886",
-        "cluster_id": "automerge-openclaw-openclaw-124014",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124015:5371331799:2026-08-21T14:37:26Z:maintainer_approve_automerge",
       "comment_id": "5371331799",
@@ -32885,6 +32838,39 @@
         "kind": "pull_request",
         "branch": "fix/prepared-runtime-generation-handoff",
         "head_sha": "bf7a198029fb593f78a54289053bd7f8d39f98cf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117287:5150506609:2026-08-21T18:31:02Z:clawsweeper_needs_human",
+      "comment_id": "5150506609",
+      "comment_version_key": "5150506609:2026-08-21T18:31:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117287#issuecomment-5150506609",
+      "comment_created_at": "2026-08-01T07:55:31Z",
+      "comment_updated_at": "2026-08-21T18:31:02Z",
+      "comment_body_sha256": "6bf64e7312eb070efbf289b518775f341e6429c932e4749a1a49f549030e53f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117287,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind its GitHub base, so the regenerated metadata must be rechecked on the eventual merge result; otherwise CLI validation could diverge from the plugin schemas. (sha=16a8f9b8ebd2077473ed9d588199be839d0b97ee)",
+      "expected_head_sha": "16a8f9b8ebd2077473ed9d588199be839d0b97ee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T18:41:58.214Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/context-visibility-schema-parity",
+        "head_sha": "16a8f9b8ebd2077473ed9d588199be839d0b97ee",
         "cluster_id": null,
         "job_path": null
       }
