@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T05:33:42.307Z",
+  "updated_at": "2026-08-21T05:34:26.648Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5172283501:2026-08-03T22:09:48Z:re_review",
-      "comment_id": "5172283501",
-      "comment_version_key": "5172283501:2026-08-03T22:09:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5172283501",
-      "comment_created_at": "2026-08-03T22:09:48Z",
-      "comment_updated_at": "2026-08-03T22:09:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T01:40:28.169Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5174427026:2026-08-04T03:56:58Z:re_review",
       "comment_id": "5174427026",
@@ -32094,6 +32067,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123053:5277804115:2026-08-21T05:31:28Z:clawsweeper_needs_human",
+      "comment_id": "5277804115",
+      "comment_version_key": "5277804115:2026-08-21T05:31:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123053#issuecomment-5277804115",
+      "comment_created_at": "2026-08-13T08:15:39Z",
+      "comment_updated_at": "2026-08-21T05:31:28Z",
+      "comment_body_sha256": "1a41c6307c89f11bfa1ae5748bcd8972f5643efa3b1cdf8fdfb18b546f0cf32e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123053,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Redact lifecycle errors before writing Chat SSE failures (P1)** - The lifecycle listener retains evt.data.error, and the resolved-run path emits it before generic outcome handling. Provider diagnostics therefore...; Review finding: [P1] Redact lifecycle errors before writing Chat SSE failures — src/gateway/openai-http.ts:1368-1373 - [P1] Do not classify media-only payloads as HTTP recovery —... (sha=b10bf0b6e026a66bec7495891d8b07715072e1ae)",
+      "expected_head_sha": "b10bf0b6e026a66bec7495891d8b07715072e1ae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T05:34:26.648Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/gateway-responses-aug13",
+        "head_sha": "b10bf0b6e026a66bec7495891d8b07715072e1ae",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
