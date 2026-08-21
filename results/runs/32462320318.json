@@ -1,0 +1,141 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123360",
+  "mode": "autonomous",
+  "run_id": "32462320318",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32462320318",
+  "head_sha": "b853345fa6e3595c5d25f65c3ea8245a68ce091b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123360.md",
+  "published_at": "2026-08-21T08:24:17.951Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/123360",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123360",
+  "canonical_pr": null,
+  "summary": "The canonical issue has a narrow two-file repair path, but implementation planning is blocked by the repository’s mandatory Codex-source gate: ../codex is absent and this read-only, network-restricted worker cannot clone it.",
+  "actions": [
+    {
+      "target": "#87182",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "Already closed; current #123360 concerns the remaining terminal-reply consumption gap."
+    },
+    {
+      "target": "#87206",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact historical PR only; it does not block the unrelated #123360 repair path."
+    },
+    {
+      "target": "#90781",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "Already closed historical context."
+    },
+    {
+      "target": "#93191",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "Already closed historical context."
+    },
+    {
+      "target": "#95746",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open on its linked shared-lane repair path."
+    },
+    {
+      "target": "#101601",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "Already closed historical context."
+    },
+    {
+      "target": "#101603",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related timeout-policy work must remain separate."
+    },
+    {
+      "target": "#123360",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "Provision ../codex (or an equivalent readable sibling checkout) before authorizing the planned repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-123360",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#123360",
+      "candidate_fix": null,
+      "reason": "Artifact is retained for the executor, but no implementation may proceed until the mandatory direct Codex-source inspection is possible."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 4,
+    "route_security": 1,
+    "keep_independent": 1,
+    "keep_related": 1,
+    "needs_human": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 4,
+    "planned": 3,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a readable ../codex checkout (or authorize its creation) so the acting worker can satisfy the mandatory Codex hard gate before implementing #123360."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#123360",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

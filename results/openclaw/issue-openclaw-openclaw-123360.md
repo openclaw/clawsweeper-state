@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-123360"
 mode: "autonomous"
-run_id: "32462016195"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32462016195"
+run_id: "32462320318"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32462320318"
 head_sha: "b853345fa6e3595c5d25f65c3ea8245a68ce091b"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-21T08:19:28.191Z"
+published_at: "2026-08-21T08:24:17.951Z"
 canonical: "https://github.com/openclaw/openclaw/issues/123360"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/123360"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32462016195](https://github.com/openclaw/clawsweeper/actions/runs/32462016195)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32462320318](https://github.com/openclaw/clawsweeper/actions/runs/32462320318)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/123360
 
 ## Summary
 
-#123360 remains the canonical open report. Current main exposes a bounded producer-owned terminal reply through the plugin subagent runtime, but memory-core only reads the later session transcript and falls back when it is empty. A narrow two-file repair is identified, but the required direct ../codex protocol/runtime inspection cannot occur: that checkout is absent and this sandbox is read-only with restricted network access.
+The canonical issue has a narrow two-file repair path, but implementation planning is blocked by the repository’s mandatory Codex-source gate: ../codex is absent and this read-only, network-restricted worker cannot clone it.
 
 ## Impact
 
@@ -66,16 +66,16 @@ Canonical: https://github.com/openclaw/openclaw/issues/123360
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #87182 | keep_closed | skipped | related | Already closed; historical context only. |
-| #87206 | route_security | planned | security_sensitive | Quarantine this closed PR only; it does not block the unrelated #123360 repair path. |
-| #90781 | keep_closed | skipped | fixed_by_candidate | Already closed. |
-| #93191 | keep_closed | skipped | related | Already closed; historical context only. |
-| #95746 | keep_independent | planned | independent | Different root cause and repair owner. |
-| #101601 | keep_closed | skipped | fixed_by_candidate | Already closed. |
-| #101603 | keep_related | planned | related | Overlap in user symptom, but distinct root cause and policy scope. |
-| #123360 | fix_needed | blocked | canonical | Implementation is blocked solely by the repository Codex hard gate: ../codex is absent and cannot be cloned or inspected in this read-only, network-restricted sandbox. |
-| cluster:issue-openclaw-openclaw-123360 | build_fix_artifact | blocked | canonical | The narrow fix can be implemented only after the Codex protocol/runtime source gate is satisfied. |
+| #87182 | keep_closed | skipped | related | Already closed; current #123360 concerns the remaining terminal-reply consumption gap. |
+| #87206 | route_security | planned | security_sensitive | Quarantine this exact historical PR only; it does not block the unrelated #123360 repair path. |
+| #90781 | keep_closed | skipped | related | Already closed historical context. |
+| #93191 | keep_closed | skipped | related | Already closed historical context. |
+| #95746 | keep_independent | planned | independent | Keep open on its linked shared-lane repair path. |
+| #101601 | keep_closed | skipped | related | Already closed historical context. |
+| #101603 | keep_related | planned | related | Related timeout-policy work must remain separate. |
+| #123360 | needs_human | blocked | canonical | Provision ../codex (or an equivalent readable sibling checkout) before authorizing the planned repair. |
+| cluster:issue-openclaw-openclaw-123360 | build_fix_artifact | blocked | canonical | Artifact is retained for the executor, but no implementation may proceed until the mandatory direct Codex-source inspection is possible. |
 
 ## Needs Human
 
-- Provide the required sibling ../codex checkout (https://github.com/openai/codex.git) or an environment that permits its direct inspection; then re-run the bounded protocol audit before editing or opening the fix PR.
+- Provide a readable ../codex checkout (or authorize its creation) so the acting worker can satisfy the mandatory Codex hard gate before implementing #123360.
