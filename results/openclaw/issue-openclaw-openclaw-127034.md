@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127034"
 mode: "autonomous"
-run_id: "32451966439"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32451966439"
+run_id: "32451561419"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32451561419"
 head_sha: "3ca46ac6db373015b558de3423b73b0a837dbb3b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-21T06:03:25.206Z"
+published_at: "2026-08-21T05:53:14.121Z"
 canonical: "https://github.com/openclaw/openclaw/issues/127034"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/127034"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32451966439](https://github.com/openclaw/clawsweeper/actions/runs/32451966439)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32451561419](https://github.com/openclaw/clawsweeper/actions/runs/32451561419)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/127034
 
 ## Summary
 
-#127034 has a narrow Workboard repair path, but implementation is blocked in this read-only checkout: the required sibling ../codex source is absent, and dependencies cannot install or run validation.
+#127034 remains the open canonical issue. Current main rejects proofId-only completion in the Workboard workflow before it consults the stored proof; the documented contract describes the opposite. A narrow owner-plugin repair is mapped, but implementation is blocked: required sibling ../codex source is absent, cloning it failed because github.com DNS is unavailable, and this worker has read-only storage. Focused Vitest validation is also unavailable because tsx is not installed.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/127034
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #127034 |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/127034
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127034 | keep_canonical | planned | canonical | Keep the source issue open as the canonical implementation tracker; closure is prohibited for this lane. |
-| cluster:issue-openclaw-openclaw-127034 | fix_needed | blocked | canonical | A writable executor with the required ../codex checkout must perform the repair and validation. |
-| cluster:issue-openclaw-openclaw-127034 | build_fix_artifact | planned | canonical | Prepared for a writable executor; no GitHub or repository mutation was performed. |
+| #127034 | keep_canonical | planned | canonical | Open canonical report with a clear bounded owner-plugin path; no closure or merge is authorized. |
+| cluster:issue-openclaw-openclaw-127034 | fix_needed | blocked | canonical | Do not implement until an executor can inspect ../codex and install the normal checkout dependencies. |
+| cluster:issue-openclaw-openclaw-127034 | build_fix_artifact | blocked | canonical | Narrow artifact is ready for a writable executor after the Codex-source and dependency gates are satisfied. |
 
 ## Needs Human
 
-- Provide a writable sibling ../codex checkout (or an explicit waiver of AGENTS.md's Codex hard gate) so the executor can implement and validate the planned PR.
+- Provide a writable executor with sibling ../codex available (or network access to clone it) and normal dependencies installed; that executor must directly inspect the relevant Codex source before implementing or asserting proof sufficiency.

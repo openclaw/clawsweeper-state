@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T06:02:42.711Z",
+  "updated_at": "2026-08-21T06:02:18.439Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111609:5019144935:2026-07-20T05:43:50Z:re_review",
@@ -32285,51 +32285,37 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:127040:5365824655:2026-08-21T06:01:54Z:re_review",
-      "comment_id": "5365824655",
-      "comment_version_key": "5365824655:2026-08-21T06:01:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127040#issuecomment-5365824655",
-      "comment_created_at": "2026-08-21T06:01:54Z",
-      "comment_updated_at": "2026-08-21T06:01:54Z",
-      "comment_body_sha256": "5cdae0bc358a3a51bd0fc9306e01110d1ce5be694117c92e45e0bb8bf9b7454f",
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127044:5365820404:2026-08-21T06:01:22Z:clawsweeper_needs_human",
+      "comment_id": "5365820404",
+      "comment_version_key": "5365820404:2026-08-21T06:01:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127044#issuecomment-5365820404",
+      "comment_created_at": "2026-08-21T06:01:22Z",
+      "comment_updated_at": "2026-08-21T06:01:22Z",
+      "comment_body_sha256": "fa2b11617086b9ee1495902dec5dd7090635eea0126a4f3da34619b7caa57ee8",
       "repo": "openclaw/openclaw",
-      "issue_number": 127040,
-      "author": "RomneyDa",
-      "author_id": 6581799,
+      "issue_number": 127044,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
       "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by net 14 lines for a narrow UI defect; the growth is proportionate only because the shared tooltip must close an already-open popup and cancel pending reopens w... (sha=42b10a19ad304dba72b476ff484c3b8c2a47c997)",
+      "expected_head_sha": "42b10a19ad304dba72b476ff484c3b8c2a47c997",
       "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T06:02:40.925Z",
+      "status": "skipped",
+      "processed_at": "2026-08-21T06:02:18.439Z",
       "target": {
         "kind": "pull_request",
-        "branch": "fix/diffs-lazy-playwright",
-        "head_sha": "ed9651ae34c2720041dce4d1e197ae4a88caf49c",
+        "branch": "fix/sidebar-menu-tooltip",
+        "head_sha": "42b10a19ad304dba72b476ff484c3b8c2a47c997",
         "cluster_id": null,
         "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
+      }
     }
   ]
 }
