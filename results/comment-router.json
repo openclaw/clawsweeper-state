@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T02:59:13.839Z",
+  "updated_at": "2026-08-21T02:59:22.144Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126489:5362292716:2026-08-20T21:50:31Z:re_review",
-      "comment_id": "5362292716",
-      "comment_version_key": "5362292716:2026-08-20T21:50:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126489#issuecomment-5362292716",
-      "comment_created_at": "2026-08-20T21:50:31Z",
-      "comment_updated_at": "2026-08-20T21:50:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126489,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-20T21:51:19.417Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/memory-provenance-cutover",
-        "head_sha": "7658c8da38905bb726268115fefb40fe7aa4d852",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3111:5359950240:2026-08-20T21:52:03Z:clawsweeper_auto_repair",
       "comment_id": "5359950240",
@@ -31552,6 +31505,39 @@
         "kind": "pull_request",
         "branch": "fix/release-codex-oauth-validation",
         "head_sha": "9a1dfee3e61ab1651613ba6babbba7b062dd5d7d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125118:5312757948:2026-08-21T02:58:21Z:clawsweeper_needs_human",
+      "comment_id": "5312757948",
+      "comment_version_key": "5312757948:2026-08-21T02:58:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125118#issuecomment-5312757948",
+      "comment_created_at": "2026-08-17T06:46:29Z",
+      "comment_updated_at": "2026-08-21T02:58:21Z",
+      "comment_body_sha256": "a418c107c191e8c9c228bfa526ac78b0fa901ba93bb12d646ea5944ce0419e18",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125118,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Carry per-attempt exec policy into terminal opens (P1)** - exec uses effectiveExecPolicy, including the run-local mode/security/ask overrides supplied by both runtime builders, but this changed handoff only pass...; Review finding: [P1] Carry per-attempt exec policy into terminal opens — src/agents/agent-tools.ts:773 - [P1] Forward the agent session ID to terminal construction — src/agents/ag... (sha=7f3c4aba1e3f816be57eb1468c094a3800f4dccc)",
+      "expected_head_sha": "7f3c4aba1e3f816be57eb1468c094a3800f4dccc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T02:59:22.144Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/terminal-exec-policy-124946",
+        "head_sha": "7f3c4aba1e3f816be57eb1468c094a3800f4dccc",
         "cluster_id": null,
         "job_path": null
       }
