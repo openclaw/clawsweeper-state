@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124751",
+  "mode": "autonomous",
+  "run_id": "32439830893",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32439830893",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124751.md",
+  "published_at": "2026-08-21T02:36:14.935Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124751",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124751",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the identity-loss path by source inspection: Gateway emits the session.message envelope runId, but the shared Apple payload decoder drops it; reconciliation then cannot match a partial chat.final to a fuller canonical row with a different durable idempotency key. A narrow Apple-side fix artifact is ready, but this checkout is read-only, so no regression, branch, or PR could be created here.",
+  "actions": [
+    {
+      "target": "#98116",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation is permitted."
+    },
+    {
+      "target": "#98117",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "fixed_by_candidate",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Already merged and not the canonical fix for this remaining defect."
+    },
+    {
+      "target": "#108692",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Already closed; keyboard-follow behavior is outside this narrow reconciliation fix."
+    },
+    {
+      "target": "#123792",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate root cause and implementation owner."
+    },
+    {
+      "target": "#124751",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "The authoritative run identity is available at the producer but lost before Apple reconciliation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124751",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124751",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the local execution environment; the narrow repair plan is supplied below."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "keep_independent": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
