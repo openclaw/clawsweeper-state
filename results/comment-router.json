@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-21T10:02:51.588Z",
+  "updated_at": "2026-08-21T10:02:52.604Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127005:5365380712:2026-08-21T04:57:08Z:re_review",
-      "comment_id": "5365380712",
-      "comment_version_key": "5365380712:2026-08-21T04:57:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127005#issuecomment-5365380712",
-      "comment_created_at": "2026-08-21T04:57:08Z",
-      "comment_updated_at": "2026-08-21T04:57:08Z",
-      "comment_body_sha256": "8075b2803839dcd3618645bdfdb09651f6ae5df9f6932787c252e9939e45ce74",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127005,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T04:57:52.654Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-frozen-evidence-compat",
-        "head_sha": "700bcafa07eef7f6f4e121d9507f273f3758bc85",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126988:5365382544:2026-08-21T04:57:25Z:re_review",
       "comment_id": "5365382544",
@@ -33680,6 +33633,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127114:5367770219:2026-08-21T10:01:58Z:clawsweeper_needs_human",
+      "comment_id": "5367770219",
+      "comment_version_key": "5367770219:2026-08-21T10:01:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127114#issuecomment-5367770219",
+      "comment_created_at": "2026-08-21T08:56:55Z",
+      "comment_updated_at": "2026-08-21T10:01:58Z",
+      "comment_body_sha256": "f5da17f3b7efc07dc428b29878f653ec0a198f85e3b973d236fe9c518f2ea846",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127114,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "Maintainer decision needed: | Question | Recommendation | |---|---| | After exact-head checks finish, should an authorized Control UI owner merge this focused accessibility repair and its CI-lifecycle test stabilization... (sha=6b11bcda7350e3df618ae30d19f6bf57e8f43ca0)",
+      "expected_head_sha": "6b11bcda7350e3df618ae30d19f6bf57e8f43ca0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T10:02:52.604Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-worktrees-alert",
+        "head_sha": "6b11bcda7350e3df618ae30d19f6bf57e8f43ca0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
