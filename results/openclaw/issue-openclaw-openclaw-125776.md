@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125776"
 mode: "autonomous"
-run_id: "32537807744"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32537807744"
+run_id: "32538180212"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32538180212"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-21T23:51:03.405Z"
+published_at: "2026-08-21T23:59:05.463Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32537807744](https://github.com/openclaw/clawsweeper/actions/runs/32537807744)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32538180212](https://github.com/openclaw/clawsweeper/actions/runs/32538180212)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 ## Summary
 
-Current main still drops tool-call identity: the Codex result-progress emitter sends only text, while Telegram appends that unkeyed text. Implementation is blocked because the required sibling ../codex checkout is absent and this read-only environment cannot clone it; the focused test command is also blocked by Corepack cache writes on EROFS.
+#125776 remains the canonical, source-reproducible bug. Current main drops the dynamic tool call ID at the shared result-progress callback, so Telegram appends an unkeyed result beside its existing tool:<callId> row. A narrow new-fix PR is defined, but this worker cannot implement or validate it: ../codex is absent and the required clone fails in the read-only workspace; the checkout also lacks tsx for the changed-gate harness.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main still drops tool-call identity: the Codex result-progress emitter s
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #125776 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Current main still drops tool-call identity: the Codex result-progress emitter s
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #116512 | keep_related | planned | related | Keep open as a related, independently reproducible progress-identity issue. |
-| #125776 | fix_needed | blocked | canonical | A narrow repair is indicated, but the mandatory upstream-contract and executable-regression gates cannot run in this environment. |
-| #125779 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
-| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor after the mandatory protocol check. |
+| #116512 | keep_related | planned | related | Keep open independently; it is related progress-rendering work, not a duplicate of the dynamic-tool identity loss. |
+| #125776 | fix_needed | blocked | canonical | Implementation is blocked only on provisioning a writable checkout with the required ../codex source and installed dependencies; the repair artifact is otherwise executable. |
+| #125779 | keep_closed | skipped | superseded | Already closed; do not mutate or treat it as the candidate fix. |
+| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | planned | canonical | Create one narrow new-fix PR after the executor satisfies the upstream Codex source gate and installs dependencies. |
 
 ## Needs Human
 
