@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126906",
+  "mode": "autonomous",
+  "run_id": "32444244682",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32444244682",
+  "head_sha": "3ca46ac6db373015b558de3423b73b0a837dbb3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126906.md",
+  "published_at": "2026-08-21T03:48:24.749Z",
+  "canonical": "#126906",
+  "canonical_issue": "#126906",
+  "canonical_pr": null,
+  "summary": "#126906 remains the canonical open bug. Current main marks a memory flush successful after a resolved embedded run even when no successful append-only write was observed. A narrow two-file fix artifact is ready; this read-only worker could not create the branch or execute tests because dependencies are absent and Corepack cannot initialize its cache.",
+  "actions": [
+    {
+      "target": "#126906",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126906",
+      "candidate_fix": null,
+      "reason": "Implement the existing observed-write invariant at the memory-flush lifecycle owner; preserve tools.deny and the existing failure/visible-error path."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
