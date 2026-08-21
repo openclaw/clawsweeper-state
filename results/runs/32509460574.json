@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127287",
+  "mode": "autonomous",
+  "run_id": "32509460574",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32509460574",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127287.md",
+  "published_at": "2026-08-21T17:51:13.897Z",
+  "canonical": "#127287",
+  "canonical_issue": "#127287",
+  "canonical_pr": null,
+  "summary": "Blocked before implementation: the required sibling ../codex source checkout is absent, and this read-only, network-restricted worker cannot clone it. No code, tests, branch, PR, labels, or GitHub mutations were produced.",
+  "actions": [
+    {
+      "target": "#127287",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#127287",
+      "candidate_fix": null,
+      "reason": "Provide a readable sibling ../codex checkout, then rerun the implementation lane so its exact runtime/protocol contract can be inspected before changing the GitHub Copilot provider."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision ../codex from https://github.com/openai/codex.git (or explicitly waive AGENTS.md:14) and rerun this job in a writable environment with access to the required live GHE validation path."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
