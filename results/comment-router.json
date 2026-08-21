@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T17:37:22.517Z",
+  "updated_at": "2026-08-21T17:37:57.216Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127098:5367237082:2026-08-21T14:08:55Z:clawsweeper_needs_human",
-      "comment_id": "5367237082",
-      "comment_version_key": "5367237082:2026-08-21T14:08:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127098#issuecomment-5367237082",
-      "comment_created_at": "2026-08-21T08:15:01Z",
-      "comment_updated_at": "2026-08-21T14:08:55Z",
-      "comment_body_sha256": "f168a8dd52de2d97ac2a05dc3f063b073b8436ed4cbf8a67a1f464e73b5eb8b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127098,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Revalidate turn capability at Gateway dispatch (P1)** - The changed path validates the process-local turn capability before minting a signed identity, but the identity only carries a copied message-action contex...; Review finding: [P1] Revalidate turn capability at Gateway dispatch — src/infra/outbound/message.ts:313-321 - [P1] Key descriptors by delivery availability — src/plugins/tool-type... (sha=b0e37674f7899bdb9e8b47074d6e386578197087)",
-      "expected_head_sha": "b0e37674f7899bdb9e8b47074d6e386578197087",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T14:13:40.676Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "t3code/review-xxg0dlessxx-fixes",
-        "head_sha": "b0e37674f7899bdb9e8b47074d6e386578197087",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127189:5370444362:2026-08-21T14:07:14Z:clawsweeper_needs_human",
       "comment_id": "5370444362",
@@ -32242,6 +32209,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107671:4977139920:2026-08-21T17:36:52Z:clawsweeper_auto_repair",
+      "comment_id": "4977139920",
+      "comment_version_key": "4977139920:2026-08-21T17:36:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/107671#issuecomment-4977139920",
+      "comment_created_at": "2026-07-15T05:22:11Z",
+      "comment_updated_at": "2026-08-21T17:36:52Z",
+      "comment_body_sha256": "ea84bf5e3cab28b9cdfa45eb5b37632ce495c1ed8e6af1e16b78b7f7fb27e004",
+      "repo": "openclaw/openclaw",
+      "issue_number": 107671,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ece4917e7b8e5e15b0724757a1efd3d930ce12ef)",
+      "expected_head_sha": "ece4917e7b8e5e15b0724757a1efd3d930ce12ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T17:37:57.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auth-clear-cooldown-command",
+        "head_sha": "ece4917e7b8e5e15b0724757a1efd3d930ce12ef",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
