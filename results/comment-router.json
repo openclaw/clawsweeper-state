@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-21T12:08:45.094Z",
+  "updated_at": "2026-08-21T12:08:49.348Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113089:5229161726:2026-08-09T01:22:40Z:re_review",
-      "comment_id": "5229161726",
-      "comment_version_key": "5229161726:2026-08-09T01:22:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113089#issuecomment-5229161726",
-      "comment_created_at": "2026-08-09T01:22:40Z",
-      "comment_updated_at": "2026-08-09T01:22:40Z",
-      "comment_body_sha256": "17ea6710d2a76b88b9222e0e0eea785a4f76a20ecf63ca592ad44ad8863f1c06",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113089,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T06:28:47.009Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113089:5231334133:2026-08-09T11:42:45Z:re_review",
       "comment_id": "5231334133",
@@ -33235,6 +33208,39 @@
       "status": "skipped",
       "processed_at": "2026-08-21T12:08:45.094Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126775:5359960804:2026-08-21T12:06:20Z:clawsweeper_needs_human",
+      "comment_id": "5359960804",
+      "comment_version_key": "5359960804:2026-08-21T12:06:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126775#issuecomment-5359960804",
+      "comment_created_at": "2026-08-20T18:19:44Z",
+      "comment_updated_at": "2026-08-21T12:06:20Z",
+      "comment_body_sha256": "00e847d03bae4fa79a272c26b7cca465b1ad0c7613ee2b57aa2d7d84a641ff95",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126775,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Anchor ownership below a stable no-follow root (P1)** - O_NOFOLLOW only rejects a symlink at the final component. After the containment check, a writable caller can replace .openclaw or sandbox-skills; this path...; Review finding: [P1] Anchor ownership below a stable no-follow root — src/agents/sandbox/context.ts:213-219 - [P1] Handle accepted nonnumeric Docker users before provisioning — sr... (sha=63da43b04e7fe51fcbcb8a15cf723d3dde0a2182)",
+      "expected_head_sha": "63da43b04e7fe51fcbcb8a15cf723d3dde0a2182",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T12:08:49.348Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-126631-sandbox-skills-bind-mount-root-owned",
+        "head_sha": "63da43b04e7fe51fcbcb8a15cf723d3dde0a2182",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
