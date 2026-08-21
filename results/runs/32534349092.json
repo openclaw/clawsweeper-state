@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126813",
+  "mode": "autonomous",
+  "run_id": "32534349092",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32534349092",
+  "head_sha": "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126813.md",
+  "published_at": "2026-08-21T22:56:57.828Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126813",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126813",
+  "canonical_pr": null,
+  "summary": "Current main contains the reported missing handoff: message-tool-only completion is durably recorded, but queued-turn admission never reads that fact before retaining the unconditional user-request delivery hint. Implementation is blocked because the required sibling ../codex source is absent and this read-only environment cannot clone it, edit, install dependencies, or run the requested tests.",
+  "actions": [
+    {
+      "target": "#126813",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126813",
+      "candidate_fix": null,
+      "reason": "The narrow repair remains appropriate, but root policy requires direct sibling Codex source inspection before a code change, and the execution environment cannot supply that checkout or permit local implementation/validation."
+    },
+    {
+      "target": "#69208",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#126813",
+      "candidate_fix": null,
+      "reason": "#69208 is useful historical family context, not a duplicate target or a prerequisite for this focused repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126813",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126813",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor after the required direct ../codex inspection; no PR branch was created in this environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#126813",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

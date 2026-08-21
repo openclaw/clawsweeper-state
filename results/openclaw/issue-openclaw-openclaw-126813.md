@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-126813"
 mode: "autonomous"
-run_id: "32533004539"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32533004539"
+run_id: "32534349092"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32534349092"
 head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-21T22:36:01.885Z"
+published_at: "2026-08-21T22:56:57.828Z"
 canonical: "https://github.com/openclaw/openclaw/issues/126813"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/126813"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32533004539](https://github.com/openclaw/clawsweeper/actions/runs/32533004539)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32534349092](https://github.com/openclaw/clawsweeper/actions/runs/32534349092)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/126813
 
 ## Summary
 
-#126813 remains a focused, reproducible bug on main d630897a95947156119bb0453f0e738366256bbb. The canonical outcome store records a completed message-tool delivery but has no admission-time reader; queued user_request prompts therefore retain the unconditional delivery instruction. A narrow new-PR artifact is ready, but this worker cannot edit or validate because the checkout is read-only and required sibling ../codex source is unavailable for the repository’s mandatory Codex preflight.
+Current main contains the reported missing handoff: message-tool-only completion is durably recorded, but queued-turn admission never reads that fact before retaining the unconditional user-request delivery hint. Implementation is blocked because the required sibling ../codex source is absent and this read-only environment cannot clone it, edit, install dependencies, or run the requested tests.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/126813
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #126813 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/126813
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126813 | fix_needed | blocked | canonical | A narrow root-cause repair is warranted, but local implementation and validation are blocked by the worker environment. |
-| #69208 | keep_related | planned | related | Related historical context only; do not fold or mutate the umbrella from this repair lane. |
-| cluster:issue-openclaw-openclaw-126813 | build_fix_artifact | planned | canonical | Executor should apply the narrow artifact in a writable checkout after completing the mandatory Codex source preflight. |
+| #126813 | fix_needed | blocked | canonical | The narrow repair remains appropriate, but root policy requires direct sibling Codex source inspection before a code change, and the execution environment cannot supply that checkout or permit local implementation/validation. |
+| #69208 | keep_related | planned | related | #69208 is useful historical family context, not a duplicate target or a prerequisite for this focused repair. |
+| cluster:issue-openclaw-openclaw-126813 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor after the required direct ../codex inspection; no PR branch was created in this environment. |
 
 ## Needs Human
 
