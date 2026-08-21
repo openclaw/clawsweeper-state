@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T18:31:16.761Z",
+  "updated_at": "2026-08-21T18:31:24.951Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120550:5225566532:2026-08-20T03:42:27Z:autoclose",
-      "comment_id": "5225566532",
-      "comment_version_key": "5225566532:2026-08-20T03:42:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120550#issuecomment-5225566532",
-      "comment_created_at": "2026-08-08T09:44:21Z",
-      "comment_updated_at": "2026-08-20T03:42:27Z",
-      "comment_body_sha256": "2d7b59760037e2c6ff7bfab256a8d154ca004e4b26c7109a326d5a30856a0896",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120550,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required (sha=39af8be7f13b8b034602d18d44ab895db926274d)",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required (sha=39af8be7f13b8b034602d18d44ab895db926274d)",
-      "expected_head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T14:31:42.115Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-120536",
-        "head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
-        "cluster_id": "automerge-openclaw-openclaw-120550",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120550.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120606:5227052448:2026-08-21T14:12:14Z:clawsweeper_auto_repair",
       "comment_id": "5227052448",
@@ -32870,6 +32837,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1221:5373753207:2026-08-21T18:30:42Z:re_review",
+      "comment_id": "5373753207",
+      "comment_version_key": "5373753207:2026-08-21T18:30:42Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1221#issuecomment-5373753207",
+      "comment_created_at": "2026-08-21T18:30:42Z",
+      "comment_updated_at": "2026-08-21T18:30:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1221,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T18:31:23.280Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/live-proof-three-job-isolation-20260821",
+        "head_sha": "59bbb02df8dae3aedff40f5a0abed95cd6381953",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
