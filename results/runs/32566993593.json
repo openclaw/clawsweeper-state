@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124689",
+  "mode": "autonomous",
+  "run_id": "32566993593",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32566993593",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124689.md",
+  "published_at": "2026-08-22T10:26:09.401Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_pr": null,
+  "summary": "Confirmed narrow probe-planning defect on main 39cff92880f514873dbd794d6bdcf8b838548c29. Implementation is blocked only by the read-only checkout: dependencies cannot be installed or tests run because Corepack cannot create its cache. A ready-to-execute, two-file fix artifact is provided.",
+  "actions": [
+    {
+      "target": "#124689",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Current worker cannot create the required branch, edit files, install dependencies, run regression validation, or perform the required Codex-source inspection."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124689",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Executor should create/update clawsweeper/issue-openclaw-openclaw-124689 from current main and apply the artifact."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
