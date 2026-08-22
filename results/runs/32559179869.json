@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125776",
+  "mode": "autonomous",
+  "run_id": "32559179869",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32559179869",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125776.md",
+  "published_at": "2026-08-22T07:26:53.926Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125776",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125776",
+  "canonical_pr": null,
+  "summary": "#125776 is a real owner-boundary bug on main: Codex dynamic-tool result callbacks discard the known call ID, so Telegram appends an unkeyed line instead of replacing `tool:<callId>`. Implementation is blocked because the mandatory direct `../codex` source checkout is absent and this read-only sandbox cannot provision it.",
+  "actions": [
+    {
+      "target": "#116512",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Keep open as an adjacent, independent bug family."
+    },
+    {
+      "target": "#125776",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Do not implement or claim the Codex protocol contract until the executor directly inspects the pinned `../codex` source. Local focused validation is also unavailable because `node_modules` is absent and installation is disallowed."
+    },
+    {
+      "target": "#125779",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Historical source material only; no mutation is valid for an already-closed PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125776",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for the executor once the direct Codex source contract check can run."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#125776",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

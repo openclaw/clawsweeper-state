@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125776"
 mode: "autonomous"
-run_id: "32557514633"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32557514633"
+run_id: "32559179869"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32559179869"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-22T06:54:06.199Z"
+published_at: "2026-08-22T07:26:53.926Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32557514633](https://github.com/openclaw/clawsweeper/actions/runs/32557514633)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32559179869](https://github.com/openclaw/clawsweeper/actions/runs/32559179869)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 ## Summary
 
-#125776 is the canonical, reproducible dynamic-tool progress identity-loss bug on main 2fdfd64a1aa9929d905d4aef39453c545efdbc16. A narrow new-fix PR remains appropriate, but this worker cannot implement or validate it: the required ../codex sibling checkout is absent, and the read-only environment prevents cloning it or installing the missing tsx test dependency.
+#125776 is a real owner-boundary bug on main: Codex dynamic-tool result callbacks discard the known call ID, so Telegram appends an unkeyed line instead of replacing `tool:<callId>`. Implementation is blocked because the mandatory direct `../codex` source checkout is absent and this read-only sandbox cannot provision it.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #125776 |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #116512 | keep_related | planned | related | Keep open independently; it is adjacent Telegram progress work, not a duplicate. |
-| #125776 | fix_needed | blocked | canonical | Implementation is blocked only by the mandated Codex contract checkout and read-only dependency environment; do not open a PR until both are available. |
-| #125779 | keep_closed | skipped | related | Already closed; retain as historical source material only. |
-| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | planned | canonical | A mutable executor with the pinned Codex source and dependencies can implement this as one narrow PR. |
+| #116512 | keep_related | planned | related | Keep open as an adjacent, independent bug family. |
+| #125776 | fix_needed | blocked | canonical | Do not implement or claim the Codex protocol contract until the executor directly inspects the pinned `../codex` source. Local focused validation is also unavailable because `node_modules` is absent and installation is disallowed. |
+| #125779 | keep_closed | skipped | superseded | Historical source material only; no mutation is valid for an already-closed PR. |
+| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | blocked | canonical | Artifact is ready for the executor once the direct Codex source contract check can run. |
 
 ## Needs Human
 
