@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T18:18:11.738Z",
+  "updated_at": "2026-08-22T18:19:45.294Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127793:5378524498:2026-08-22T12:11:16Z:clawsweeper_needs_human",
-      "comment_id": "5378524498",
-      "comment_version_key": "5378524498:2026-08-22T12:11:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127793#issuecomment-5378524498",
-      "comment_created_at": "2026-08-22T06:36:18Z",
-      "comment_updated_at": "2026-08-22T12:11:16Z",
-      "comment_body_sha256": "618ba4855eb8b054924ca17feb94fc332cb4065c36d3ab60fdb13754fec227b0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127793,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: screenshots demonstrate the mocked Control UI flow, but no real Gateway final-effect trace shows a rev...; Review finding: [P1] Authorize dispatching retry targets — src/gateway/session-sharing.ts:368-374 - [medium] Prove revocation at the final I/O boundary (sha=b99d22c597ddfc7847fa1117a45b5f5ac02dece6)",
-      "expected_head_sha": "b99d22c597ddfc7847fa1117a45b5f5ac02dece6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T12:15:36.851Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/dashboard-sessions-bulk-messaging-support",
-        "head_sha": "b99d22c597ddfc7847fa1117a45b5f5ac02dece6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127875:5380348271:2026-08-22T12:08:42Z:clawsweeper_needs_human",
       "comment_id": "5380348271",
@@ -31588,6 +31555,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125742:5326253711:2026-08-22T18:16:35Z:clawsweeper_auto_repair",
+      "comment_id": "5326253711",
+      "comment_version_key": "5326253711:2026-08-22T18:16:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125742#issuecomment-5326253711",
+      "comment_created_at": "2026-08-18T09:26:53Z",
+      "comment_updated_at": "2026-08-22T18:16:35Z",
+      "comment_body_sha256": "f078900823b4c4a2efb6dce022fe85e387ca3f098d8d6521762f2021cf663719",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125742,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8a981a4189f267ddc5be6414d1fc5c91bc236521)",
+      "expected_head_sha": "8a981a4189f267ddc5be6414d1fc5c91bc236521",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T18:19:45.294Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/125601-quicksilver-input-transcription",
+        "head_sha": "8a981a4189f267ddc5be6414d1fc5c91bc236521",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
