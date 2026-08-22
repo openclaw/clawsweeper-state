@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92474"
 mode: "autonomous"
-run_id: "32570574239"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32570574239"
+run_id: "32571736814"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32571736814"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T12:05:04.475Z"
-canonical: "#92474"
-canonical_issue: "#92474"
+published_at: "2026-08-22T12:11:45.178Z"
+canonical: "https://github.com/openclaw/openclaw/issues/92474"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/92474"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-92474
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32570574239](https://github.com/openclaw/clawsweeper/actions/runs/32570574239)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32571736814](https://github.com/openclaw/clawsweeper/actions/runs/32571736814)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #92474
+Canonical: https://github.com/openclaw/openclaw/issues/92474
 
 ## Summary
 
-#92474 remains an open canonical bug. Current main invokes the dropped-env warning callback on every transport resolution, while retaining the fail-closed filter. No code was changed: this read-only worker cannot satisfy the mandatory ../codex source inspection or install missing test dependencies.
+Current main still logs every blocked stdio env key on each transport resolution. The narrow runtime-warning dedupe is appropriate, but this worker cannot modify or validate the branch: the checkout is read-only, `tsx` is absent, and the mandatory sibling `../codex` inspection cannot run because that checkout is absent.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,9 @@ Canonical: #92474
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #92474 | fix_needed | blocked | canonical | Blocked before implementation by the repository-required direct Codex-source gate and missing dependencies in a read-only checkout. |
+| #92474 | fix_needed | blocked | canonical | Implementation is blocked only by the worker environment; the executor should apply the attached narrow artifact after dependency installation and the required direct ../codex inspection. |
+| cluster:issue-openclaw-openclaw-92474 | build_fix_artifact | planned | canonical | A new narrow fix PR can preserve saved MCP configurations and the fail-closed filter while suppressing repeated warnings per process. |
 
 ## Needs Human
 
-- Provide a writable worker checkout with the required ../codex source available for direct inspection, then permit dependency installation so the failing repeated-resolution regression and focused Vitest validation can run.
+- none
