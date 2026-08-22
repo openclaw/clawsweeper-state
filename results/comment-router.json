@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T07:56:34.529Z",
+  "updated_at": "2026-08-22T08:00:45.771Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120190:5229477065:2026-08-09T02:57:56Z:re_review",
-      "comment_id": "5229477065",
-      "comment_version_key": "5229477065:2026-08-09T02:57:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120190#issuecomment-5229477065",
-      "comment_created_at": "2026-08-09T02:57:56Z",
-      "comment_updated_at": "2026-08-09T02:57:56Z",
-      "comment_body_sha256": "b63930b5507b5bcda5099102c9a223b288a85859676d2ce18fc8da65cc464169",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120190,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T01:20:41.774Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120190:5230162784:2026-08-09T06:30:31Z:re_review",
       "comment_id": "5230162784",
@@ -31819,6 +31792,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:95:5366619718:2026-08-22T08:00:01Z:clawsweeper_needs_human",
+      "comment_id": "5366619718",
+      "comment_version_key": "5366619718:2026-08-22T08:00:01Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/95#issuecomment-5366619718",
+      "comment_created_at": "2026-08-21T07:28:10Z",
+      "comment_updated_at": "2026-08-22T08:00:01Z",
+      "comment_body_sha256": "7d22ad474f753bfc53511bcf7d1bead75b5185657c286919d1977e7291a7fa76",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 95,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - TruffleHog v3.97.0 adds and changes detectors, so merging can create new verified-secret findings that block otherwise unchanged contributions. (sha=01e5f1f979dd4828abfe9c73902159b8293f91bf)",
+      "expected_head_sha": "01e5f1f979dd4828abfe9c73902159b8293f91bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T08:00:45.771Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.97.0",
+        "head_sha": "01e5f1f979dd4828abfe9c73902159b8293f91bf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
