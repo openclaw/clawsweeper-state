@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the legacy Slack interactive text renderer so each nonempty legacy text block is preserved in order across valid 3,000-character mrkdwn section blocks rather than truncated. Reuse the existing Slack mrkdwn-aware chunking owner; do not add config, change the modern presentation contract, or create a parallel sender. Establish a failing regression first, then cover entity/code-marker and UTF-16-safe continuation plus continuation into a second message after 50 blocks. Add release-note context to the PR body rather than editing CHANGELOG.md.
+Fix the legacy Slack interactive text loss in https://github.com/openclaw/openclaw/issues/126018. At the `buildSlackInteractiveBlocks` text producer in `extensions/slack/src/blocks-render.ts`, replace the one-section truncation with the existing Slack mrkdwn-safe chunking path; preserve current trimming and keep button/select limit handling unchanged. Add regression coverage that joins emitted text sections back to the complete input, keeps every section within the existing limit, preserves surrogate pairs and protected mrkdwn tokens, and proves reply resolution starts a new segment at the 50-block boundary. Use https://github.com/openclaw/openclaw/pull/126125 only as reference because it is closed unmerged. Confirm the Slack dependency limit contract directly before implementation; stop if the repair requires a new public API, config, or product-policy change.
 
 Likely files:
 
@@ -78,8 +78,9 @@ Likely files:
 
 Validation:
 
-- pnpm test extensions/slack/src/shared-interactive.test.ts extensions/slack/src/reply-blocks.test.ts extensions/slack/src/format.test.ts
-- Run the targeted Slack outbound boundary proof or mock-gateway harness and record that all continuation blocks are delivered in order.
+- node scripts/run-vitest.mjs extensions/slack/src/shared-interactive.test.ts extensions/slack/src/reply-blocks.test.ts extensions/slack/src/format.test.ts
+- node scripts/run-vitest.mjs extensions/slack/src/outbound-payload.test.ts
+- Verify the focused regression fails before the production change and passes afterward.
 
 ## Operator Prompt
 
