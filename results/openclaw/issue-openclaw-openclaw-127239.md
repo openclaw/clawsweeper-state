@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127239"
 mode: "autonomous"
-run_id: "32579786043"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32579786043"
+run_id: "32580285124"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32580285124"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T15:07:34.068Z"
+published_at: "2026-08-22T16:08:47.211Z"
 canonical: "https://github.com/openclaw/openclaw/issues/127239"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/127239"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-127239
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32579786043](https://github.com/openclaw/clawsweeper/actions/runs/32579786043)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32580285124](https://github.com/openclaw/clawsweeper/actions/runs/32580285124)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/127239
 
 ## Summary
 
-#127239 remains the canonical open issue. Current-main source inspection identifies a narrow synchronous static-catalog lookup candidate, but repository policy blocks a fix verdict or implementation plan until the required sibling ../codex source is available for direct inspection.
+#127239 remains a reproducible cold-cache context-resolution bug on main. Implementation is blocked because this worker has a read-only checkout and the required sibling ../codex source is absent; the focused test command also cannot start because Corepack cannot create its cache on the read-only filesystem.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/127239
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #127239 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/127239
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127239 | fix_needed | blocked | canonical | Direct Codex-source gate is unsatisfied, so the worker cannot declare the candidate repair correct or authorize an executable PR path. |
-| cluster:issue-openclaw-openclaw-127239 | build_fix_artifact | blocked | needs_human | Artifact is intentionally non-executable until direct ../codex inspection satisfies the repository hard gate. |
+| #127239 | fix_needed | planned | canonical | A configured override still wins through direct resolution, but an empty cache and catalog-only model reach the generic fallback before deferred warmup. |
+| cluster:issue-openclaw-openclaw-127239 | build_fix_artifact | blocked | canonical | Executor needs a writable checkout with dependencies and the required ../codex source before creating the repair branch. |
 
 ## Needs Human
 
-- Provide or authorize creation of the required sibling ../codex checkout, then repeat the direct Codex runtime/protocol inspection before selecting and implementing the synchronous prepared-catalog projection.
+- none
