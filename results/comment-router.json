@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T01:59:54.213Z",
+  "updated_at": "2026-08-22T01:59:55.399Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119784:5199365650:2026-08-21T19:28:42Z:clawsweeper_auto_repair",
-      "comment_id": "5199365650",
-      "comment_version_key": "5199365650:2026-08-21T19:28:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119784#issuecomment-5199365650",
-      "comment_created_at": "2026-08-06T01:31:28Z",
-      "comment_updated_at": "2026-08-21T19:28:42Z",
-      "comment_body_sha256": "ceb27966d9963c4a33c9a8f450d2d964d51f248b76b26a37d960cd00af791181",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119784,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8f272db71ccfd04fb8599eb84c0ba320d2b5173c)",
-      "expected_head_sha": "8f272db71ccfd04fb8599eb84c0ba320d2b5173c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T19:39:29.837Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119578",
-        "head_sha": "8f272db71ccfd04fb8599eb84c0ba320d2b5173c",
-        "cluster_id": "issue-openclaw-openclaw-119578",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119578.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119804:5199744802:2026-08-21T19:29:42Z:clawsweeper_needs_human",
       "comment_id": "5199744802",
@@ -32127,6 +32094,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125485:5322118447:2026-08-22T01:54:34Z:clawsweeper_needs_human",
+      "comment_id": "5322118447",
+      "comment_version_key": "5322118447:2026-08-22T01:54:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125485#issuecomment-5322118447",
+      "comment_created_at": "2026-08-18T01:00:45Z",
+      "comment_updated_at": "2026-08-22T01:54:34Z",
+      "comment_body_sha256": "e28e84f2efd285b64d5cfb545a965f8613036b62331a11668d3e98634799d498",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125485,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch predates current main’s process-availability split; refresh and exact-head proof must show the quoting instruction survives both process-present and process-absent Unix des... (sha=16d27858dabdfde1f15536a9a51197978f3367c5)",
+      "expected_head_sha": "16d27858dabdfde1f15536a9a51197978f3367c5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T01:59:55.399Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-shell-quoting-guidance",
+        "head_sha": "16d27858dabdfde1f15536a9a51197978f3367c5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
