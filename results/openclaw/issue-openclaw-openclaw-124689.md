@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32594763258"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32594763258"
+run_id: "32599401098"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32599401098"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T20:01:02.846Z"
+published_at: "2026-08-22T21:31:56.686Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32594763258](https://github.com/openclaw/clawsweeper/actions/runs/32594763258)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32599401098](https://github.com/openclaw/clawsweeper/actions/runs/32599401098)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-The remaining Ollama Cloud diagnostic defect is reproducible by source inspection on main 736b0c424b7bc1f330d264f5c79a05cd6a4c30c2, with a narrow two-file repair plan. Implementation and validation are blocked because this read-only worker cannot write a branch or initialize Corepack; the required sibling ../codex checkout is also absent.
+A narrow repair is planned for the deprecated Ollama Cloud catalog fallback. Implementation is blocked in this worker: the checkout is read-only and the required sibling ../codex source is absent, so the repository-mandated Codex inspection gate cannot be completed here.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The remaining Ollama Cloud diagnostic defect is reproducible by source inspectio
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | A narrow status-aware catalog-fallback repair is warranted, but this worker cannot create the required branch delta or run the required tests. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Create the narrow credited fix PR from the supplied ClawSweeper branch once a writable checkout with dependencies and the required Codex source checkout is available. |
+| #124689 | fix_needed | blocked | canonical | An executor with writable checkout access must complete the required Codex inspection, add the regression, apply the owner-boundary filter, and validate before opening the planned PR. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-124689 after the blocked local prerequisites are available. |
 
 ## Needs Human
 
