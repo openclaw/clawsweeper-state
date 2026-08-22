@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the ACP spawn-versus-requester-stop race for https://github.com/openclaw/openclaw/issues/105228. Preserve the canonical ACP task/session cancellation owner: if a requester stops while Gateway dispatch is pending, do not later register a child that can remain active; clean it up through the existing lifecycle and suppress terminal delivery to the stopped requester. Add a regression that holds dispatch, stops the requester before registration, releases dispatch, and proves the child cannot remain active; cover normal and already-stopped paths. Do not add config or a separate process killer. Recheck https://github.com/openclaw/openclaw/pull/105346, https://github.com/openclaw/openclaw/pull/105766, https://github.com/openclaw/openclaw/pull/108357, and https://github.com/openclaw/openclaw/pull/116406 before opening a replacement. Do not edit CHANGELOG.md; put release-note context in the PR body.
+Repair the existing ACP requester-stop bug in one focused PR. Trace the admitted parent AbortSignal from `src/agents/tools/sessions-spawn-tool.ts` into `src/agents/subagents/spawn/acp-spawn.ts`; make the canonical ACP spawn owner clean up a child when the requester aborts during or immediately after Gateway dispatch, before late registration can leave it active. Reuse `cleanupFailedAcpSpawn` and the ACP manager lifecycle rather than adding a separate process-tree killer or downstream retry. Add a regression that holds dispatch, aborts before registration, releases dispatch, and proves the runtime/session is cleaned up with no active registration or task surviving; it must fail on pre-fix code. Preserve successful spawn, already-registered requester-stop, and child-cap behavior. Do not add config, specialize an external harness, or edit CHANGELOG.md. Related context: https://github.com/openclaw/openclaw/pull/105346 and https://github.com/openclaw/openclaw/pull/116406.
 
 Likely files:
 
+- src/agents/tools/sessions-spawn-tool.ts
 - src/agents/subagents/spawn/acp-spawn.ts
-- src/agents/spawn-pipeline.ts
-- src/auto-reply/reply/abort.ts
 - src/agents/subagents/spawn/acp-spawn.test.ts
-- src/auto-reply/reply/abort.test.ts
+- src/agents/tools/sessions-spawn-tool.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/subagents/spawn/acp-spawn.test.ts src/auto-reply/reply/abort.test.ts
-- node scripts/run-vitest.mjs src/tasks/task-registry.test.ts
+- node scripts/run-vitest.mjs src/agents/subagents/spawn/acp-spawn.test.ts
+- node scripts/run-vitest.mjs src/agents/tools/sessions-spawn-tool.test.ts src/auto-reply/reply/abort.test.ts
+- pnpm check:types
 
 ## Operator Prompt
 
