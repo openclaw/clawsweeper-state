@@ -1,0 +1,110 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-92474",
+  "mode": "autonomous",
+  "run_id": "32566365573",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32566365573",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-92474.md",
+  "published_at": "2026-08-22T10:08:58.550Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/92474",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/92474",
+  "canonical_pr": null,
+  "summary": "#92474 remains the open canonical bug. Current main (04d174584d1b20c8bb3802576e04e4925ff7b4a3) unconditionally logs each blocked stdio env key on every transport resolution. A narrow runtime-only warning dedupe is planned, but this read-only checkout cannot apply or validate it and the mandatory sibling ../codex source checkout is unavailable for the required direct Codex inspection.",
+  "actions": [
+    {
+      "target": "#92474",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "The issue reports a real, narrow runtime journal-flood defect; existing closed proposals changed write-time/config compatibility and are context only."
+    },
+    {
+      "target": "#92474",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the execution environment; the external executor must inspect ../codex directly, apply the narrow patch, and run validation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-92474",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Create one new narrow fix PR from the configured ClawSweeper branch after the executor's required direct Codex inspection."
+    },
+    {
+      "target": "#92484",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Closed context only."
+    },
+    {
+      "target": "#92491",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Closed context only."
+    },
+    {
+      "target": "#92492",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Closed context only."
+    },
+    {
+      "target": "#92670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Closed context only."
+    },
+    {
+      "target": "#92754",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Closed context only."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 5
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1,
+    "skipped": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
