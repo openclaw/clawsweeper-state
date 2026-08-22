@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-45224",
+  "mode": "autonomous",
+  "run_id": "32602849964",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32602849964",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-45224.md",
+  "published_at": "2026-08-22T22:45:07.779Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_pr": null,
+  "summary": "Blocked from issuing an implementation verdict or fix artifact: the required sibling Codex source checkout and pinned Playwright runtime source are unavailable in this read-only checkout.",
+  "actions": [
+    {
+      "target": "#45224",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "OpenClaw policy requires direct ../codex inspection before a code verdict or change, and direct dependency inspection is mandatory here. The read-only, network-restricted environment cannot create the missing checkout or install the pinned dependency."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a readable sibling ../codex checkout and the pinned playwright-core@1.62.1 source (or an execution environment that can create them), then rerun the focused async CDP-callback reproduction before authorizing a fix artifact."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#45224",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
