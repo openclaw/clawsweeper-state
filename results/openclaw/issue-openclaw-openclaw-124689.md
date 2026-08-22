@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32563519860"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32563519860"
+run_id: "32565213041"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32565213041"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T09:04:51.507Z"
+published_at: "2026-08-22T09:41:31.074Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32563519860](https://github.com/openclaw/clawsweeper/actions/runs/32563519860)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32565213041](https://github.com/openclaw/clawsweeper/actions/runs/32565213041)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-#124689 remains the open canonical bug. Current main selects deprecated ollama-cloud/kimi-k2.5 whenever no exact ollama-cloud candidate exists. A narrow owner-level repair and regression are planned, but this read-only checkout cannot install dependencies or create the required sibling ../codex checkout, so no locally validated PR branch can be produced here.
+Current main still selects the first Ollama Cloud catalog row when no exact configured candidate exists; that row is deprecated Kimi K2.5. A narrow generic fallback repair is ready to implement, but this read-only worker cannot create the branch, install dependencies, run tests, or satisfy the required sibling Codex-source inspection because ../codex is absent.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | planned | canonical | Source reproduction is clear: an unrelated ollama default leaves ollama-cloud without a direct candidate, and the fallback returns the first catalog row despite its deprecated status. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned |  | Artifact is ready for a writable executor; implementation and validation are blocked only by the supplied checkout environment. |
+| #124689 | fix_needed | blocked | canonical | Implementation is blocked only by this worker's read-only environment and missing required ../codex checkout; the executor should apply the narrow artifact on clawsweeper/issue-openclaw-openclaw-124689. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Create the narrow credited fix PR after writable checkout, dependency setup, direct Codex-source gate, and validation are available. |
 
 ## Needs Human
 
