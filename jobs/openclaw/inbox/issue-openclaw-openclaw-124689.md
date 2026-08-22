@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current-main Ollama Cloud auth-probe selection defect described in https://github.com/openclaw/openclaw/issues/124689. Preserve the existing current-session picker flow: it already patches the selected session. At the probe-planning owner, make an `ollama-cloud` API-key probe select the configured/canonical eligible model route rather than falling through from `ollama/...-cloud` to an unrelated deprecated catalog row. Reuse an existing provider/catalog routing contract if available; do not hardcode customer model names, infer one provider from raw suffixes in core, rewrite user config, or add a configuration option. Add a regression that models the reporter shape and proves a retired `kimi-k2.5` fallback is not selected. Include release-note context in the PR body or commit message, not CHANGELOG.md. If the implementation requires a new permanent provider-route API or a product decision, stop and return to triage.
+Repair the remaining connection-test defect. Preserve active-session model patch behavior. At the generic auth-probe selector, ensure catalog fallback does not choose a deprecated model when no exact candidate exists; retain explicit direct candidates, do not special-case Ollama, and do not alter normal routing or credential precedence. Add a regression with a configured credential, no exact candidate, and a deprecated-first catalog that selects the active row. Do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.ollama.test.ts
-- src/gateway/server-methods/models-probe.test.ts
+- src/commands/models/list.probe.targets.test.ts
 
 Validation:
 
-- pnpm test src/commands/models/list.probe.ollama.test.ts
+- pnpm test src/commands/models/list.probe.targets.test.ts
 - pnpm test src/gateway/server-methods/models-probe.test.ts
-- Run a redacted `models.probe` against a configured Ollama Cloud API-key route if approved test credentials are available; otherwise state the live-provider proof gap explicitly.
+- pnpm test extensions/ollama/src/provider-models.test.ts
 
 ## Operator Prompt
 
