@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T11:12:08.553Z",
+  "updated_at": "2026-08-22T11:17:42.241Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126685:5357300993:2026-08-22T03:38:45Z:clawsweeper_needs_human",
-      "comment_id": "5357300993",
-      "comment_version_key": "5357300993:2026-08-22T03:38:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126685#issuecomment-5357300993",
-      "comment_created_at": "2026-08-20T14:29:50Z",
-      "comment_updated_at": "2026-08-22T03:38:45Z",
-      "comment_body_sha256": "55b11492d4bb1d732cb6f6f80d51924c1430f0df6493c4999257bb4b65083b5e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126685,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; GitHub reports it mergeable, but any rebase should retain the ENOENT/ENOTDIR-only filter and refresh exact-head checks. (sha=c6e4ad1fdf6e59d2a49bbb48c1c0a14251be247b)",
-      "expected_head_sha": "c6e4ad1fdf6e59d2a49bbb48c1c0a14251be247b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T03:41:21.713Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-migration-empty-store-scaling",
-        "head_sha": "c6e4ad1fdf6e59d2a49bbb48c1c0a14251be247b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126604:5353679197:2026-08-22T03:37:22Z:clawsweeper_auto_repair",
       "comment_id": "5353679197",
@@ -32662,6 +32629,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3508:5379933262:2026-08-22T11:16:51Z:re_review",
+      "comment_id": "5379933262",
+      "comment_version_key": "5379933262:2026-08-22T11:16:51Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3508#issuecomment-5379933262",
+      "comment_created_at": "2026-08-22T11:16:51Z",
+      "comment_updated_at": "2026-08-22T11:16:51Z",
+      "comment_body_sha256": "b7bb8eeecdc96359ef0c76c74bd331a252cb2e67e09bb416a5a709530b848f11",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3508,
+      "author": "lechiffre-cfo",
+      "author_id": 315702626,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T11:17:39.811Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-3349-orphaned-skill-version-repair",
+        "head_sha": "72915f75d803d2f20a968258b63386820106d7ad",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
