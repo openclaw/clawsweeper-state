@@ -1,0 +1,67 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125776",
+  "mode": "autonomous",
+  "run_id": "32552129022",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32552129022",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125776.md",
+  "published_at": "2026-08-22T04:46:44.050Z",
+  "canonical": "#125776",
+  "canonical_issue": "#125776",
+  "canonical_pr": null,
+  "summary": "Current main drops the dynamic tool call identity before Telegram handles the result. Repair is blocked: the mandatory sibling ../codex checkout is absent and cannot be cloned on this read-only filesystem; dependencies are also missing and pnpm install cannot write Corepack’s cache.",
+  "actions": [
+    {
+      "target": "#125776",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "The repository requires direct upstream Codex source inspection before a Codex-related verdict or code change. This worker cannot obtain that checkout or install the missing test dependency."
+    },
+    {
+      "target": "#116512",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Same Telegram progress area, but a different producer invariant; no closure is authorized."
+    },
+    {
+      "target": "#125779",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or revival action is valid."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable repair worker with a current sibling ../codex checkout, then perform the mandated direct protocol/runtime inspection before implementing.",
+    "Provide a writable dependency cache or preinstalled workspace dependencies so the required focused Vitest checks can run."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
