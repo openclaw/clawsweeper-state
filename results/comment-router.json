@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T20:53:41.875Z",
+  "updated_at": "2026-08-22T20:53:57.904Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126866:5362968386:2026-08-22T14:20:15Z:clawsweeper_needs_human",
-      "comment_id": "5362968386",
-      "comment_version_key": "5362968386:2026-08-22T14:20:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126866#issuecomment-5362968386",
-      "comment_created_at": "2026-08-20T22:45:02Z",
-      "comment_updated_at": "2026-08-22T14:20:15Z",
-      "comment_body_sha256": "2cdc7ecfd25e55640e87c5de37fa398fb4631c7963d0b5fe55e2d9ea978f4850",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126866,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This upgrade migration rewrites persisted modelPolicy.allow and model-map keys; merge only with exact-head CI green so canonical references and their runtime owners remain aligned. (sha=e2561b921f0d34c460b2e8e98ae952508ce03995)",
-      "expected_head_sha": "e2561b921f0d34c460b2e8e98ae952508ce03995",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T14:21:19.607Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-doctor-claude-cli-allowlist",
-        "head_sha": "e2561b921f0d34c460b2e8e98ae952508ce03995",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127834:5379635227:2026-08-22T14:20:47Z:clawsweeper_auto_repair",
       "comment_id": "5379635227",
@@ -31766,6 +31733,53 @@
         "kind": "pull_request",
         "branch": "fix/ollama-chat-local-service",
         "head_sha": "fcd331891162e7d9aba815cff95a6082d38c9b47",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128020:5382544830:2026-08-22T20:53:17Z:re_review",
+      "comment_id": "5382544830",
+      "comment_version_key": "5382544830:2026-08-22T20:53:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128020#issuecomment-5382544830",
+      "comment_created_at": "2026-08-22T20:53:17Z",
+      "comment_updated_at": "2026-08-22T20:53:17Z",
+      "comment_body_sha256": "2c41629c0dc559c4044bb5465b7c26cdfb6cec2a6c7116d3f5d071533e21c926",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128020,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T20:53:56.381Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/vitest-timeout-diagnostics-20260822",
+        "head_sha": "3ce2f4121cb9750d542eec5d1d1be11c46d0f424",
         "cluster_id": null,
         "job_path": null
       },
