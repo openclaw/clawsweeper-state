@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T22:00:22.146Z",
+  "updated_at": "2026-08-22T22:02:33.182Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:69417:5381195916:2026-08-22T15:36:00Z:re_review",
-      "comment_id": "5381195916",
-      "comment_version_key": "5381195916:2026-08-22T15:36:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/69417#issuecomment-5381195916",
-      "comment_created_at": "2026-08-22T15:36:00Z",
-      "comment_updated_at": "2026-08-22T15:36:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 69417,
-      "author": "fgabelmannjr",
-      "author_id": 579529,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T15:36:49.075Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/mcp-secretref-core-mcp-upstream-clean",
-        "head_sha": "b98c8035dd36574e3aebdcc71e0e6eef5946d94a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126618:5354060596:2026-08-22T15:34:26Z:clawsweeper_auto_repair",
       "comment_id": "5354060596",
@@ -31471,6 +31424,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-2b47f3b96e",
         "head_sha": "0d767aee3d133611431550c39bcf2560677ed808",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabhelm:20:5334578311:2026-08-22T22:01:48Z:clawsweeper_needs_human",
+      "comment_id": "5334578311",
+      "comment_version_key": "5334578311:2026-08-22T22:01:48Z",
+      "comment_url": "https://github.com/openclaw/crabhelm/pull/20#issuecomment-5334578311",
+      "comment_created_at": "2026-08-18T22:00:19Z",
+      "comment_updated_at": "2026-08-22T22:01:48Z",
+      "comment_body_sha256": "dcf45a5cfc4cb9d6964d93f0b264f564b1cf7ea34ff07f2687b1d6022c971711",
+      "repo": "openclaw/crabhelm",
+      "issue_number": 20,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The posted test output uses mocked fetch; add redacted runtime output from a real governed-tool/control-plane cancellation before merge, removi... (sha=a4cc9ce5712112c022aa37ba89c2cce222801152)",
+      "expected_head_sha": "a4cc9ce5712112c022aa37ba89c2cce222801152",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T22:02:33.182Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/confirmation-poll-cancel",
+        "head_sha": "a4cc9ce5712112c022aa37ba89c2cce222801152",
         "cluster_id": null,
         "job_path": null
       }
