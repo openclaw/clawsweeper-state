@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32556337184"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32556337184"
+run_id: "32556688175"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32556688175"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T06:25:13.803Z"
+published_at: "2026-08-22T06:32:01.218Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32556337184](https://github.com/openclaw/clawsweeper/actions/runs/32556337184)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32556688175](https://github.com/openclaw/clawsweeper/actions/runs/32556688175)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Confirmed current-main catalog-fallback defect: an Ollama Cloud API-key probe can select deprecated kimi-k2.5 because fallback selection ignores catalog lifecycle status. A narrow fix artifact is ready, but this worker cannot modify or validate the branch: the sandbox is read-only, pnpm cannot create its Corepack cache, and required sibling ../codex source is unavailable for the repository’s Codex gate.
+Current main contains the reported Ollama Cloud probe defect: a provider-mismatched configured candidate falls back to the first ollama-cloud catalog row, even when it is marked deprecated. A narrow generic status-aware selector fix is appropriate, but this checkout is read-only, has no dependencies, and lacks the mandatory sibling ../codex source checkout, so no branch or validated patch could be produced here.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Confirmed current-main catalog-fallback defect: an Ollama Cloud API-key probe ca
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | Implementation is blocked only in this worker environment: filesystem writes are denied; pnpm fails with EROFS while creating its Corepack cache; ../codex is absent and cannot be cloned under the read-only sandbox. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Executor should implement and validate this narrow fix on clawsweeper/issue-openclaw-openclaw-124689. |
+| #124689 | fix_needed | blocked | canonical | Implementation is blocked only by this worker environment. The deterministic executor should create the regression first, install dependencies if needed, inspect its writable ../codex checkout as required, then apply the narrow fix artifact. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | A narrow new fix PR is appropriate once run in a writable executor. |
 
 ## Needs Human
 
