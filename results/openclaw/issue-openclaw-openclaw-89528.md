@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-89528"
 mode: "autonomous"
-run_id: "32602108598"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32602108598"
+run_id: "32601597086"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32601597086"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T22:27:38.989Z"
+published_at: "2026-08-22T22:39:16.785Z"
 canonical: "https://github.com/openclaw/openclaw/issues/89528"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/89528"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32602108598](https://github.com/openclaw/clawsweeper/actions/runs/32602108598)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32601597086](https://github.com/openclaw/clawsweeper/actions/runs/32601597086)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/89528
 
 ## Summary
 
-#89528 remains a source-reproducible, narrow CLI/docs acknowledgement defect on main cc56ea534f78b9494afcd0a6fbf7b7cafaf8a418. The safe skip path bypasses only pre-SIGUSR1 active-work deferral, while server close retains the bounded pending-reply drain; current acknowledgement and both CLI docs incorrectly promise an immediate restart. Implementation is blocked in this read-only checkout: pnpm cannot create its Corepack cache, and mandatory sibling ../codex source is absent and cannot be cloned under the sandbox.
+The source mismatch is real and the fix shape is narrow, but this read-only worker cannot satisfy the mandatory direct ../codex source gate because that checkout is absent, nor create the required branch/test changes. A ready-to-execute narrow fix artifact is provided.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/89528
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #89528 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,14 +66,14 @@ Canonical: https://github.com/openclaw/openclaw/issues/89528
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #51620 | keep_related | planned | related | Keep open independently; no duplicate or closure action is appropriate. |
-| #72114 | keep_closed | skipped | related | Closed historical context only. |
-| #73303 | keep_closed | skipped | related | Closed historical context only. |
-| #78380 | keep_closed | skipped | related | Closed historical context only. |
-| #89528 | fix_needed | blocked | canonical | A narrow wording/docs regression is warranted, but this worker cannot modify or validate the branch in the read-only sandbox. |
-| #89604 | keep_closed | skipped | superseded | Closed historical candidate; do not reopen or close again. |
-| #95866 | keep_related | planned | related | Keep open independently; changing delivery policy is outside this bug-only wording repair. |
-| cluster:issue-openclaw-openclaw-89528 | build_fix_artifact | blocked | canonical | Executor needs a writable checkout and the required sibling Codex source before applying and validating this artifact. |
+| #51620 | keep_independent | planned | independent | Separate root cause and no close action is permitted. |
+| #72114 | keep_closed | skipped | independent | Closed historical context only. |
+| #73303 | keep_closed | skipped | related | Closed adjacent restart context only. |
+| #78380 | keep_closed | skipped | related | Closed adjacent restart-recovery context only. |
+| #89528 | fix_needed | blocked | canonical | Implementation is blocked only by the missing mandatory Codex checkout and read-only execution environment; the canonical repair remains a narrow acknowledgement/docs correction. |
+| #89604 | keep_closed | skipped | superseded | Closed historical proposal; no mutation. |
+| #95866 | keep_related | planned | related | Related delivery-safety work remains open and must not be changed by this bug-only repair. |
+| cluster:issue-openclaw-openclaw-89528 | build_fix_artifact | planned | canonical | Executor can create or update clawsweeper/issue-openclaw-openclaw-89528 after restoring the mandatory source gate and writable checkout. |
 
 ## Needs Human
 
