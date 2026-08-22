@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T03:41:18.326Z",
+  "updated_at": "2026-08-22T03:41:21.714Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112896:5058814483:2026-07-23T13:14:36Z:re_review",
-      "comment_id": "5058814483",
-      "comment_version_key": "5058814483:2026-07-23T13:14:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112896#issuecomment-5058814483",
-      "comment_created_at": "2026-07-23T13:14:36Z",
-      "comment_updated_at": "2026-07-23T13:14:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112896,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T21:56:59.936Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112896:5084162839:2026-07-26T15:36:40Z:re_review",
       "comment_id": "5084162839",
@@ -31498,6 +31471,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T03:41:18.326Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126685:5357300993:2026-08-22T03:38:45Z:clawsweeper_needs_human",
+      "comment_id": "5357300993",
+      "comment_version_key": "5357300993:2026-08-22T03:38:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126685#issuecomment-5357300993",
+      "comment_created_at": "2026-08-20T14:29:50Z",
+      "comment_updated_at": "2026-08-22T03:38:45Z",
+      "comment_body_sha256": "55b11492d4bb1d732cb6f6f80d51924c1430f0df6493c4999257bb4b65083b5e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126685,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; GitHub reports it mergeable, but any rebase should retain the ENOENT/ENOTDIR-only filter and refresh exact-head checks. (sha=c6e4ad1fdf6e59d2a49bbb48c1c0a14251be247b)",
+      "expected_head_sha": "c6e4ad1fdf6e59d2a49bbb48c1c0a14251be247b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T03:41:21.713Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-migration-empty-store-scaling",
+        "head_sha": "c6e4ad1fdf6e59d2a49bbb48c1c0a14251be247b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
