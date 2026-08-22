@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T13:08:35.952Z",
+  "updated_at": "2026-08-22T13:08:59.580Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127755:5377491041:2026-08-22T05:28:33Z:clawsweeper_auto_repair",
-      "comment_id": "5377491041",
-      "comment_version_key": "5377491041:2026-08-22T05:28:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127755#issuecomment-5377491041",
-      "comment_created_at": "2026-08-22T02:57:07Z",
-      "comment_updated_at": "2026-08-22T05:28:33Z",
-      "comment_body_sha256": "5cab6b0a1d17cb89650244b5b0c80ff04b97c56ab3dff1ca5a589ca72f288137",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127755,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f9333337329ad2a9d6497bdbc310577a1090d008)",
-      "expected_head_sha": "f9333337329ad2a9d6497bdbc310577a1090d008",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T05:34:49.037Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/tool-aware-cli-watchdog-upstream",
-        "head_sha": "f9333337329ad2a9d6497bdbc310577a1090d008",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127778:5378110121:2026-08-22T05:35:34Z:clawsweeper_needs_human",
       "comment_id": "5378110121",
@@ -32436,6 +32403,53 @@
         "kind": "pull_request",
         "branch": "feat/issue-126631-sandbox-skills-bind-mount-root-owned",
         "head_sha": "92ac88ca341cda70cc18bfe7f8ea4990960f12ac",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127873:5380576595:2026-08-22T13:08:14Z:re_review",
+      "comment_id": "5380576595",
+      "comment_version_key": "5380576595:2026-08-22T13:08:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127873#issuecomment-5380576595",
+      "comment_created_at": "2026-08-22T13:08:14Z",
+      "comment_updated_at": "2026-08-22T13:08:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127873,
+      "author": "masatohoshino",
+      "author_id": 246810661,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T13:08:57.459Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-gateway-reconnect-battery-backoff",
+        "head_sha": "fe1ed30761f26bbab5fed47fbb6d9926aff6c862",
         "cluster_id": null,
         "job_path": null
       },
