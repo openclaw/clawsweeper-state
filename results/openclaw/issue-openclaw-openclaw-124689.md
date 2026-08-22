@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32581469277"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32581469277"
+run_id: "32581789476"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32581789476"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T15:30:18.692Z"
+published_at: "2026-08-22T15:41:31.744Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32581469277](https://github.com/openclaw/clawsweeper/actions/runs/32581469277)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32581789476](https://github.com/openclaw/clawsweeper/actions/runs/32581789476)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Confirmed on supplied main 963fafbb16522239228d10383cf89356c84e2ab3: models.probe already scopes planning to the requested provider, but catalog fallback selects the first matching row without considering ModelCatalogEntry.status. Ollama Cloud’s first manifest row, kimi-k2.5, is deprecated, so a configured ollama-cloud credential can be probed against that retired route when global candidates belong to another provider. No code was changed: this checkout is read-only, has no node_modules, and the mandatory sibling ../codex source is absent and cannot be cloned because DNS/network access is unavailable.
+Current main still probes a deprecated Ollama Cloud fallback row when the requested provider has credentials but no direct configured candidate. A narrow fix artifact is ready; implementation is blocked in this immutable sandbox because ../codex is absent, the filesystem is read-only, and dependencies cannot bootstrap.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Confirmed on supplied main 963fafbb16522239228d10383cf89356c84e2ab3: models.prob
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #124689 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,8 @@ Confirmed on supplied main 963fafbb16522239228d10383cf89356c84e2ab3: models.prob
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | A narrow root-cause fix is defined, but implementation is blocked by the read-only checkout, missing dependencies, and the repository-mandated unavailable ../codex inspection gate. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | Artifact is ready for the deterministic executor once it has a writable checkout, dependencies, and the required sibling Codex source. |
+| #124689 | fix_needed | blocked | canonical | The open canonical issue needs a narrow repair, but this worker cannot edit or validate it locally. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | A writable executor can implement this bounded planner repair and open the one required fix PR. |
 
 ## Needs Human
 
