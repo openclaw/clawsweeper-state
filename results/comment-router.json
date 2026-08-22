@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T17:31:09.589Z",
+  "updated_at": "2026-08-22T17:32:04.505Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124015:5300602703:2026-08-21T17:02:41Z:clawsweeper_needs_human",
-      "comment_id": "5300602703",
-      "comment_version_key": "5300602703:2026-08-21T17:02:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5300602703",
-      "comment_created_at": "2026-08-15T04:50:09Z",
-      "comment_updated_at": "2026-08-21T17:02:41Z",
-      "comment_body_sha256": "86194903d85c6dfbe43416de412354688486cedba459cddac0e979b4ffd4e6bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124015,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing managed-native accounts whose configured endpoint is occupied now fail before signal-cli starts; recovery is to free the endpoint, select a different existing transport.httpP... (sha=0bd85613ebdc01d7c3a725afe6c736505e37d3a7)",
-      "expected_head_sha": "0bd85613ebdc01d7c3a725afe6c736505e37d3a7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T11:10:56.757Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/signal-port-collision",
-        "head_sha": "0bd85613ebdc01d7c3a725afe6c736505e37d3a7",
-        "cluster_id": "automerge-openclaw-openclaw-124015",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124015.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126335:5346113237:2026-08-22T11:06:38Z:clawsweeper_needs_human",
       "comment_id": "5346113237",
@@ -31333,6 +31300,53 @@
       "status": "skipped",
       "processed_at": "2026-08-22T17:31:09.589Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117432:5381692150:2026-08-22T17:31:23Z:re_review",
+      "comment_id": "5381692150",
+      "comment_version_key": "5381692150:2026-08-22T17:31:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117432#issuecomment-5381692150",
+      "comment_created_at": "2026-08-22T17:31:23Z",
+      "comment_updated_at": "2026-08-22T17:31:23Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117432,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T17:32:02.902Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/delegated-approval-handoff-116519",
+        "head_sha": "1d21bc6679526b098ce5265664fd5eed439281b4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
