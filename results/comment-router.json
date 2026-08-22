@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T07:09:02.185Z",
+  "updated_at": "2026-08-22T07:09:04.405Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112896:5376594964:2026-08-21T23:56:13Z:re_review",
-      "comment_id": "5376594964",
-      "comment_version_key": "5376594964:2026-08-21T23:56:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112896#issuecomment-5376594964",
-      "comment_created_at": "2026-08-21T23:56:13Z",
-      "comment_updated_at": "2026-08-21T23:56:13Z",
-      "comment_body_sha256": "28374e8511dea824cde84f06dc2a2290e4ef122c9bf06a468c6af87937bf0bb6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112896,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `9ce3db8c3e20f2f127bc1a566a736734ada28007`. this supersedes the prior request and repairs the hosted `checks-node-compact-small-34` failure: the current-main startup-readiness contract now remains pending until sidecars are ready even when sidecar startup is deferred, while restored admission adds its independent held condition. pre-fix exact test failed locally; post-fix validation passed the full `server-kernel` suite plus focused restored/suspension/restore coverage (77 tests), gateway-root test types, formatter, linter, and diff checks. fresh hosted ci/testbox is running",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T23:56:58.698Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/rfc-0013-restored-admission",
-        "head_sha": "9ce3db8c3e20f2f127bc1a566a736734ada28007",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122425:5376600765:2026-08-21T23:57:20Z:re_review",
       "comment_id": "5376600765",
@@ -31765,6 +31718,39 @@
         "kind": "pull_request",
         "branch": "agent/agent-exec-also-allow-tool-pr",
         "head_sha": "906c07f92463d8ddb37e99ae5938bdbda99bd1ec",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118470:5162457565:2026-08-22T07:03:26Z:clawsweeper_needs_human",
+      "comment_id": "5162457565",
+      "comment_version_key": "5162457565:2026-08-22T07:03:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118470#issuecomment-5162457565",
+      "comment_created_at": "2026-08-03T04:57:02Z",
+      "comment_updated_at": "2026-08-22T07:03:26Z",
+      "comment_body_sha256": "f5f370066413f17664e00e10bcc9e3ab8434bc89f8e838b034c00f5efd7da17e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118470,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing regular files that permit writing but not reading now fail before mutation; the supplied maintainer discussion explicitly accepts that integrity-preserving compatibility chan... (sha=6c2efeba4f634b59cc206352c45f578d1cd698b3)",
+      "expected_head_sha": "6c2efeba4f634b59cc206352c45f578d1cd698b3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T07:09:04.405Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/host-write-preserve-original",
+        "head_sha": "6c2efeba4f634b59cc206352c45f578d1cd698b3",
         "cluster_id": null,
         "job_path": null
       }
