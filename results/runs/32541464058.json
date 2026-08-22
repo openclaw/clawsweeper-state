@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127702",
+  "mode": "autonomous",
+  "run_id": "32541464058",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32541464058",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127702.md",
+  "published_at": "2026-08-22T00:56:07.077Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127702",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127702",
+  "canonical_pr": null,
+  "summary": "Current main shows a narrow Discord default-account regression, but implementation is blocked: the mandatory sibling Codex-source inspection cannot occur because that checkout is absent and this read-only, network-restricted worker cannot clone it; validation dependencies are also absent.",
+  "actions": [
+    {
+      "target": "#127702",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127702",
+      "candidate_fix": null,
+      "reason": "The required Codex-source gate and dependency installation/validation cannot be completed in this worker environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127702",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127702",
+      "candidate_fix": null,
+      "reason": "An executor with the required source checkout and dependencies can apply this narrow new-PR plan."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#127702",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
