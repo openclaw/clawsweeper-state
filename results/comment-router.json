@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-08-22T03:30:10.624Z",
+  "updated_at": "2026-08-22T03:30:14.016Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:119525",
-      "comment_id": "repair-loop-label-sweep:automerge:119525",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119525",
-      "comment_created_at": "2026-08-21T21:39:34.481Z",
-      "comment_updated_at": "2026-08-21T21:39:34.481Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119525,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "automerge enabled; PR has merge conflicts and needs a cloud rebase repair before automerge",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T21:40:39.832Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/memory-search-timeout-classification",
-        "head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-        "cluster_id": "automerge-openclaw-openclaw-119525",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125718:5325634918:2026-08-21T21:36:14Z:clawsweeper_auto_repair",
       "comment_id": "5325634918",
@@ -31554,6 +31502,39 @@
         "kind": "pull_request",
         "branch": "fix/session-migration-empty-store-scaling",
         "head_sha": "c6e4ad1fdf6e59d2a49bbb48c1c0a14251be247b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127768:5377619432:2026-08-22T03:29:03Z:clawsweeper_needs_human",
+      "comment_id": "5377619432",
+      "comment_version_key": "5377619432:2026-08-22T03:29:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127768#issuecomment-5377619432",
+      "comment_created_at": "2026-08-22T03:29:03Z",
+      "comment_updated_at": "2026-08-22T03:29:03Z",
+      "comment_body_sha256": "41df0c6feb603a5fbc0328a80a918b519efd5b44470ed04492b933eb09093ea8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127768,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head Docker release lane has not completed, so the full package-to-Git npm-install and Doctor-switch recovery still needs its normal Linux confirmation before merge. (sha=82dcf9f29add8e2de4655cd454e9703c5d4ce25c)",
+      "expected_head_sha": "82dcf9f29add8e2de4655cd454e9703c5d4ce25c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T03:30:14.016Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/package-git-fixture-postinstall",
+        "head_sha": "82dcf9f29add8e2de4655cd454e9703c5d4ce25c",
         "cluster_id": null,
         "job_path": null
       }
