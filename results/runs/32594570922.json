@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128005",
+  "mode": "autonomous",
+  "run_id": "32594570922",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32594570922",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128005.md",
+  "published_at": "2026-08-22T19:54:19.900Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128005",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128005",
+  "canonical_pr": null,
+  "summary": "Current main's Android capture owner applies maxAgeMs only to cached fixes; its live callback is serialized without freshness filtering. A narrow repair plan is ready, but this read-only worker cannot create the branch or run Android validation, and the required sibling ../codex checkout is absent, so the Codex hard gate cannot be completed here.",
+  "actions": [
+    {
+      "target": "#128005",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128005",
+      "candidate_fix": null,
+      "reason": "Canonical open bug with a narrow Android capture-owner repair path; no contributor PR is hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128005",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128005",
+      "candidate_fix": null,
+      "reason": "Prepare a new narrow credited fix PR; implementation and validation require a writable executor with the mandatory sibling Codex checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
