@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T20:48:02.443Z",
+  "updated_at": "2026-08-22T20:53:41.875Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3493:5365543947:2026-08-21T05:22:06Z:re_review",
-      "comment_id": "5365543947",
-      "comment_version_key": "5365543947:2026-08-21T05:22:06Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5365543947",
-      "comment_created_at": "2026-08-21T05:22:06Z",
-      "comment_updated_at": "2026-08-21T05:22:06Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T14:21:11.236Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126866:5362968386:2026-08-22T14:20:15Z:clawsweeper_needs_human",
       "comment_id": "5362968386",
@@ -31763,6 +31736,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128034:5382543776:2026-08-22T20:53:03Z:re_review",
+      "comment_id": "5382543776",
+      "comment_version_key": "5382543776:2026-08-22T20:53:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128034#issuecomment-5382543776",
+      "comment_created_at": "2026-08-22T20:53:03Z",
+      "comment_updated_at": "2026-08-22T20:53:03Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128034,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T20:53:39.288Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-chat-local-service",
+        "head_sha": "fcd331891162e7d9aba815cff95a6082d38c9b47",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
