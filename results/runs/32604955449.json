@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-45224",
+  "mode": "autonomous",
+  "run_id": "32604955449",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32604955449",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-45224.md",
+  "published_at": "2026-08-22T23:33:32.236Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_pr": null,
+  "summary": "Current main contains the reported containment gap, but this read-only checkout cannot install dependencies, run the required regression, inspect Playwright runtime source, or satisfy the mandatory Codex-source gate. A narrow executable fix artifact is prepared; no GitHub or repository mutation occurred.",
+  "actions": [
+    {
+      "target": "#45224",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the immutable worker environment and missing dependency/Codex-source inspection prerequisites; the canonical issue remains open."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-45224",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "A fresh writable executor can add the required pre-fix regression, implement the narrow owner-boundary repair, inspect Playwright 1.62.1 and Codex sources, and validate the branch."
+    },
+    {
+      "target": "#49163",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Already closed context evidence only."
+    },
+    {
+      "target": "#52051",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Already closed context evidence only."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
