@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the remaining diagnostic defect in https://github.com/openclaw/openclaw/issues/124689. Preserve runtime credential routing and the existing active-session picker path. In generic probe-model selection, do not choose a catalog row marked deprecated or disabled when an enabled row for the requested provider exists; retain an explicitly configured deprecated model only when it is the direct configured candidate. Add focused regression coverage using Ollama Cloud ordering where `kimi-k2.5` is deprecated and a current model follows. Verify the diagnostic selects the enabled row and continues to isolate credential probes. Record user-visible release-note context in the PR body; do not edit CHANGELOG.md.
+Fix the current-main provider-probe fallback so `models.probe` does not test a catalog row marked deprecated when there is no explicit model candidate for the requested provider. Preserve explicit same-provider configured-model priority and existing credential/profile behavior; do not alter runtime provider routing, API-key setup, or session-picker behavior. Carry catalog status into the probe selector, choose a non-deprecated row, and return the existing no-model result when no usable row exists. Add a regression covering an Ollama Cloud catalog with deprecated `kimi-k2.5` before a current row and a default belonging to another provider. Run focused probe tests and put user-facing release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.targets.test.ts
-- src/commands/models/list.probe.ts
+- src/commands/models/list.probe.ollama.test.ts
+- src/gateway/server-methods/models-probe.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/commands/models/list.probe.targets.test.ts
-- node scripts/run-vitest.mjs src/gateway/server-methods/models-probe.test.ts
-- node scripts/run-vitest.mjs extensions/ollama/index.test.ts
+- pnpm test src/commands/models/list.probe.ollama.test.ts
+- pnpm test src/gateway/server-methods/models-probe.test.ts
 
 ## Operator Prompt
 
