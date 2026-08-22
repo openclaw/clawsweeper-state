@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-45224"
 mode: "autonomous"
-run_id: "32604955449"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32604955449"
+run_id: "32605653532"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32605653532"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T23:33:32.236Z"
+published_at: "2026-08-22T23:49:40.356Z"
 canonical: "https://github.com/openclaw/openclaw/issues/45224"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/45224"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32604955449](https://github.com/openclaw/clawsweeper/actions/runs/32604955449)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32605653532](https://github.com/openclaw/clawsweeper/actions/runs/32605653532)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/45224
 
 ## Summary
 
-Current main contains the reported containment gap, but this read-only checkout cannot install dependencies, run the required regression, inspect Playwright runtime source, or satisfy the mandatory Codex-source gate. A narrow executable fix artifact is prepared; no GitHub or repository mutation occurred.
+A narrow repair remains indicated: ordinary CDP connects bypass the plugin-owned callback-containment transport. Implementation is blocked because this read-only checkout lacks Playwright/Vitest dependencies and the mandatory sibling ../codex source, so the required current-version regression and direct protocol verification cannot be completed or written safely.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Current main contains the reported containment gap, but this read-only checkout 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #45224 | fix_needed | blocked | canonical | Implementation is blocked only by the immutable worker environment and missing dependency/Codex-source inspection prerequisites; the canonical issue remains open. |
-| cluster:issue-openclaw-openclaw-45224 | build_fix_artifact | planned | canonical | A fresh writable executor can add the required pre-fix regression, implement the narrow owner-boundary repair, inspect Playwright 1.62.1 and Codex sources, and validate the branch. |
-| #49163 | keep_closed | skipped | duplicate | Already closed context evidence only. |
-| #52051 | keep_closed | skipped | related | Already closed context evidence only. |
+| #45224 | fix_needed | blocked | canonical | Implementation needs a writable dependency-ready checkout and direct Playwright/Codex contract inspection before the regression can be proved on pre-fix current main. |
+| cluster:issue-openclaw-openclaw-45224 | build_fix_artifact | planned | canonical | Executable repair plan prepared; validation remains blocked in this sandbox. |
+| #49163 | keep_closed | skipped | related | Already closed historical context. |
+| #52051 | keep_closed | skipped | related | Already closed historical context. |
 
 ## Needs Human
 
