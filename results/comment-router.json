@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T22:27:51.429Z",
+  "updated_at": "2026-08-22T22:27:54.379Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127964:5381250322:2026-08-22T16:06:37Z:clawsweeper_needs_human",
-      "comment_id": "5381250322",
-      "comment_version_key": "5381250322:2026-08-22T16:06:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127964#issuecomment-5381250322",
-      "comment_created_at": "2026-08-22T15:48:24Z",
-      "comment_updated_at": "2026-08-22T16:06:37Z",
-      "comment_body_sha256": "a6f2991602cdc8300c62a52e184e52e735704338cbda2f16ecfae4a8b9628639",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127964,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR provides deterministic tests but no exact-head privileged run showing that claim loss rejects before Doc...; Review finding: [P1] Revalidate the live claim before Docker control — scripts/mantis/mantis-sut-container.sh:1308-1310 - [high] Docker control survives lost lane ownership — scri... (sha=26a3b976c1c0c866f208885673bfd14b45d3ab5a)",
-      "expected_head_sha": "26a3b976c1c0c866f208885673bfd14b45d3ab5a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T16:10:19.096Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/mantis-lifecycle-fault-injection",
-        "head_sha": "26a3b976c1c0c866f208885673bfd14b45d3ab5a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127967:5381333443:2026-08-22T16:07:51Z:clawsweeper_needs_human",
       "comment_id": "5381333443",
@@ -31282,6 +31249,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T22:27:51.429Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-22T22:17:24Z:clawsweeper_needs_human",
+      "comment_id": "5376735204",
+      "comment_version_key": "5376735204:2026-08-22T22:17:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
+      "comment_created_at": "2026-08-22T00:21:26Z",
+      "comment_updated_at": "2026-08-22T22:17:24Z",
+      "comment_body_sha256": "937090751c4aed6a75119f28fe9e32153be3e7497258f828de43f5a36707bb2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127700,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog wrapper, runtime pin, and guard (P1)** - The changed wrapper is labelled v3.97.0, but this step retains a v3.95.9 version/digest and the guard still requires the old wrapper SHA and sa...; Review finding: [P1] Synchronize the TruffleHog wrapper, runtime pin, and guard — .github/workflows/ci.yml:1158-1162 - [P2] Update the Android attestation contract assertion — .gi... (sha=77313a1be68fa68db8a09e0558bbb55379d71bdc)",
+      "expected_head_sha": "77313a1be68fa68db8a09e0558bbb55379d71bdc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T22:27:54.379Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-2b47f3b96e",
+        "head_sha": "77313a1be68fa68db8a09e0558bbb55379d71bdc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
