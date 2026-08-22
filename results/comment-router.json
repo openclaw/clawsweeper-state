@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T09:08:32.142Z",
+  "updated_at": "2026-08-22T09:09:42.558Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127704:5377243582:2026-08-22T02:00:26Z:re_review",
-      "comment_id": "5377243582",
-      "comment_version_key": "5377243582:2026-08-22T02:00:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127704#issuecomment-5377243582",
-      "comment_created_at": "2026-08-22T02:00:26Z",
-      "comment_updated_at": "2026-08-22T02:00:26Z",
-      "comment_body_sha256": "a49bb0898819e95416a6b52722f7e3183d9d849b767a492a6f35237c1f8050c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127704,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T02:01:11.546Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-limited-access-bubble-layout",
-        "head_sha": "70ad8df1c5604e9ab9dcd563d4abc54d48da2857",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127752:5377255904:2026-08-22T02:02:44Z:clawsweeper_needs_human",
       "comment_id": "5377255904",
@@ -32270,6 +32223,39 @@
         "kind": "pull_request",
         "branch": "fix/wsl2-workspace-owner-stdin",
         "head_sha": "6471f2fb2d7711197de2872ef40e6c009da441be",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:50:5335183047:2026-08-22T09:06:29Z:clawsweeper_needs_human",
+      "comment_id": "5335183047",
+      "comment_version_key": "5335183047:2026-08-22T09:06:29Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/50#issuecomment-5335183047",
+      "comment_created_at": "2026-08-18T22:57:57Z",
+      "comment_updated_at": "2026-08-22T09:06:29Z",
+      "comment_body_sha256": "1b34e07746f57b6e24e802212e7c523c82e69c5836b4bde69498ccdb26027c5a",
+      "repo": "openclaw/libterminal",
+      "issue_number": 50,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No concrete repair remains after review; the next step is normal maintainer merge review of this proof-backed PR. (sha=fe65af2e4e4a30122a5ec32df8c2769fe8122f56)",
+      "expected_head_sha": "fe65af2e4e4a30122a5ec32df8c2769fe8122f56",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T09:09:42.558Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/attach-stdio-stdin-error",
+        "head_sha": "fe65af2e4e4a30122a5ec32df8c2769fe8122f56",
         "cluster_id": null,
         "job_path": null
       }
