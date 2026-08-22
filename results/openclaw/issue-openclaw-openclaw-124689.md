@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32588060829"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32588060829"
+run_id: "32588550224"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32588550224"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T17:42:41.182Z"
+published_at: "2026-08-22T17:54:30.589Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32588060829](https://github.com/openclaw/clawsweeper/actions/runs/32588060829)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32588550224](https://github.com/openclaw/clawsweeper/actions/runs/32588550224)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Current main contains the reported selection defect: src/commands/models/list.probe.models.ts selects the first same-provider catalog row without considering status, while Ollama’s catalog retains kimi-k2.5 as deprecated. Implementation is blocked before a verdict or patch because the mandatory direct sibling Codex checkout (../codex) is absent and this read-only worker cannot clone it; node_modules is also unavailable for validation.
+Current main still has the provider-scoped deprecated-catalog fallback. A narrow two-file fix is planned, but this worker cannot write the branch or run validation: the checkout is read-only, dependencies are absent, Corepack fails with EROFS, and the mandatory sibling ../codex source checkout is unavailable for the required direct inspection gate.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main contains the reported selection defect: src/commands/models/list.pr
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #124689 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,8 @@ Current main contains the reported selection defect: src/commands/models/list.pr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | The issue remains a narrow canonical bug, but the required direct Codex-source inspection and local test dependencies are unavailable. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked |  | Artifact is precise, but execution is blocked by the required Codex-source gate and missing local dependencies. |
+| #124689 | fix_needed | planned | canonical | The source-level reproduction is clear and narrowly owned; no existing viable PR is hydrated. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | Implementation is blocked only by this worker environment; the executor should apply the narrow artifact in a writable checkout with ../codex available. |
 
 ## Needs Human
 
