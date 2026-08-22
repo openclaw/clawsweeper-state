@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T08:44:43.957Z",
+  "updated_at": "2026-08-22T08:46:08.259Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126117:5377132501:2026-08-22T01:35:32Z:re_review",
-      "comment_id": "5377132501",
-      "comment_version_key": "5377132501:2026-08-22T01:35:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126117#issuecomment-5377132501",
-      "comment_created_at": "2026-08-22T01:35:32Z",
-      "comment_updated_at": "2026-08-22T01:35:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126117,
-      "author": "turing-cto",
-      "author_id": 296273347,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T01:50:21.051Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fleet-2955-self-marker",
-        "head_sha": "6a458790fd2ea3c780f83e683b0e5a07cfe88a4d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124021:5377072637:2026-08-22T01:27:13Z:re_review",
       "comment_id": "5377072637",
@@ -32336,6 +32289,39 @@
         "kind": "pull_request",
         "branch": "fix/frv-log-checkpoint",
         "head_sha": "b2208467ad405afd17aaf8f1ef68b6ddb6620056",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3504:5372359255:2026-08-22T08:45:22Z:clawsweeper_needs_human",
+      "comment_id": "5372359255",
+      "comment_version_key": "5372359255:2026-08-22T08:45:22Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3504#issuecomment-5372359255",
+      "comment_created_at": "2026-08-21T16:11:54Z",
+      "comment_updated_at": "2026-08-22T08:45:22Z",
+      "comment_body_sha256": "2d786bcd7490acc94c772e81dc9f0c29f040094020e26cb17c9bde738df02aeb",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3504,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The TanStack Start and Router runtime changes coincide with a failing signed-in Playwright shard; without a current-main baseline, merging could carry an uninvestigated browser regres... (sha=c8ea5c6541e2ea09cc09110c85db983c1f06dcc4)",
+      "expected_head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T08:46:08.259Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/production-minor-and-patch-a1a6a844ee",
+        "head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
         "cluster_id": null,
         "job_path": null
       }
