@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T22:37:06.521Z",
+  "updated_at": "2026-08-22T22:38:42.634Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/ocm:106:5378084779:2026-08-22T16:14:21Z:clawsweeper_auto_repair",
-      "comment_id": "5378084779",
-      "comment_version_key": "5378084779:2026-08-22T16:14:21Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/106#issuecomment-5378084779",
-      "comment_created_at": "2026-08-22T05:06:23Z",
-      "comment_updated_at": "2026-08-22T16:14:21Z",
-      "comment_body_sha256": "df80f20d6c8a475267d0b41ede5611ece8950866baf0237cadd1becbbc97be79",
-      "repo": "openclaw/ocm",
-      "issue_number": 106,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=39f28ecd40cbf99e6306d24db9345afa0cf1bc79)",
-      "expected_head_sha": "39f28ecd40cbf99e6306d24db9345afa0cf1bc79",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-22T16:19:27.592Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/isolate-gateway-restarts-20260822",
-        "head_sha": "39f28ecd40cbf99e6306d24db9345afa0cf1bc79",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/photoscrawl:10:5304643448:2026-08-22T16:16:30Z:clawsweeper_auto_repair",
       "comment_id": "5304643448",
@@ -31280,6 +31247,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125290:5317004444:2026-08-22T22:34:37Z:clawsweeper_needs_human",
+      "comment_id": "5317004444",
+      "comment_version_key": "5317004444:2026-08-22T22:34:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125290#issuecomment-5317004444",
+      "comment_created_at": "2026-08-17T14:17:42Z",
+      "comment_updated_at": "2026-08-22T22:34:37Z",
+      "comment_body_sha256": "7461c8dda42d88cfd2f2901c5b5d75f0d3a621757433c9d34f7de5900a132f7a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125290,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This release/install automation helper has a production net increase of three lines; the explicit Bash 3 read loop is required because no net-neutral indexed-array replacement exists... (sha=6e2f5c25e2c4552bedcd0c48cff4b7329a7c14b3)",
+      "expected_head_sha": "6e2f5c25e2c4552bedcd0c48cff4b7329a7c14b3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T22:38:42.633Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/shared-image-artifact-bash3",
+        "head_sha": "6e2f5c25e2c4552bedcd0c48cff4b7329a7c14b3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
