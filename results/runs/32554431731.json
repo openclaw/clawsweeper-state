@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127287",
+  "mode": "autonomous",
+  "run_id": "32554431731",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32554431731",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127287.md",
+  "published_at": "2026-08-22T06:43:10.042Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127287",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127287",
+  "canonical_pr": null,
+  "summary": "#127287 remains the open canonical bug on main 500bb603. The provider resolves an allowlisted GHE domain but hard-codes copilot-developer-cli for prepared inference, catalog discovery, embeddings, and stream defaults. Implementation is blocked in this read-only checkout: ../codex is absent (the repository's mandatory direct Codex-source gate cannot be met with restricted network), and the focused test command cannot start because tsx is missing; pnpm install is not permitted in this sandbox.",
+  "actions": [
+    {
+      "target": "#127287",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127287",
+      "candidate_fix": null,
+      "reason": "The source evidence supports a narrow provider-local repair, but direct ../codex inspection and writable dependency installation are mandatory blockers in this sandbox."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127287",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#127287",
+      "candidate_fix": null,
+      "reason": "A new branch/PR is appropriate after the two environment gates are satisfied."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#127287",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
