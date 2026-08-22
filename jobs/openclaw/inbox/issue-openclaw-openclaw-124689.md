@@ -67,17 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the remaining Ollama Cloud readiness-probe defect from https://github.com/openclaw/openclaw/issues/124689. Preserve explicit same-provider configured model selections, but make automatic catalog fallback exclude deprecated and disabled rows so a configured API key is not tested against retired kimi-k2.5. Add a regression test that fails before the repair and proves fallback selects a current model. Do not add config, compatibility fallbacks, or CHANGELOG.md edits; include concise release-note context in the PR body.
+Repair the remaining Ollama Cloud diagnostic defect in https://github.com/openclaw/openclaw/issues/124689. Do not change active-session model-selection semantics: current main already patches the selected session. At the auth-probe model-selection owner, ensure automatic fallback for `ollama-cloud` excludes catalog rows marked deprecated when no configured provider-specific candidate exists. Preserve explicit/configured exact model candidates, including legacy references. Add a focused regression that fails before the change for a catalog with deprecated `kimi-k2.5` before a current model. Do not add config flags or alter credential-routing precedence. Include release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.ollama.test.ts
+- src/commands/models/list.probe.targets.test.ts
+- src/gateway/server-methods/models-probe.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/commands/models/list.probe.ollama.test.ts
-- node scripts/run-vitest.mjs src/gateway/server-methods/models-probe.test.ts
+- pnpm test src/commands/models/list.probe.targets.test.ts
+- pnpm test src/gateway/server-methods/models-probe.test.ts
+- OPENCLAW_LIVE_TEST=1 OPENCLAW_LIVE_OLLAMA=1 OPENCLAW_LIVE_OLLAMA_BASE_URL=https://ollama.com OPENCLAW_LIVE_OLLAMA_MODEL=kimi-k2.6 pnpm test:live -- extensions/ollama/ollama.live.test.ts
 
 ## Operator Prompt
 
