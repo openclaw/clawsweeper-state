@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32567662468"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32567662468"
+run_id: "32570519151"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32570519151"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T10:37:26.734Z"
+published_at: "2026-08-22T11:42:42.446Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32567662468](https://github.com/openclaw/clawsweeper/actions/runs/32567662468)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32570519151](https://github.com/openclaw/clawsweeper/actions/runs/32570519151)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-#124689 remains a narrow canonical Gateway probe-planning bug. A fix artifact is ready, but implementation is blocked in this read-only checkout: dependencies cannot be installed and the mandatory direct Codex-source inspection cannot be completed because that checkout is absent.
+A narrow target-planning fix is ready to implement, but this worker cannot edit or validate it: the checkout is read-only, dependencies are absent, Corepack cannot create its cache, and the required sibling ../codex checkout is unavailable for the repository’s direct-source gate.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | The canonical repair is clear, but this worker cannot edit, install dependencies, or complete the mandatory direct Codex-source gate. The executor should implement the artifact in a writable checkout with sibling Codex source available. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned |  | Prepared for a writable executor; no GitHub mutation is proposed by this worker. |
+| #124689 | fix_needed | blocked | canonical | Implementation requires a writable checkout and dependencies to add the pre-fix regression. Required direct ../codex inspection is also unavailable in this read-only environment. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Create one narrow credited PR; do not change session-picker persistence or CHANGELOG.md. |
 
 ## Needs Human
 
