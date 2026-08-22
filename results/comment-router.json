@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T22:21:29.419Z",
+  "updated_at": "2026-08-22T22:26:39.200Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126278:5340382953:2026-08-22T15:56:01Z:clawsweeper_needs_human",
-      "comment_id": "5340382953",
-      "comment_version_key": "5340382953:2026-08-22T15:56:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126278#issuecomment-5340382953",
-      "comment_created_at": "2026-08-19T09:46:11Z",
-      "comment_updated_at": "2026-08-22T15:56:01Z",
-      "comment_body_sha256": "898083335b03d14f44c7076bdca0cba44f59b4ec6cb018bf1803e5b9b03804d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126278,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this PR as dirty; resolving its central transcript-grouping overlap must preserve current main’s context-compaction split and completed-work behavior. (sha=66b68d08a8258b59df055922deff98d5a2381350)",
-      "expected_head_sha": "66b68d08a8258b59df055922deff98d5a2381350",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T15:59:00.311Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/agent-run-transcript-grouping",
-        "head_sha": "66b68d08a8258b59df055922deff98d5a2381350",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126503:5350139332:2026-08-22T15:57:05Z:clawsweeper_needs_human",
       "comment_id": "5350139332",
@@ -31468,6 +31435,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120443:5382921369:2026-08-22T22:25:53Z:re_review",
+      "comment_id": "5382921369",
+      "comment_version_key": "5382921369:2026-08-22T22:25:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5382921369",
+      "comment_created_at": "2026-08-22T22:25:53Z",
+      "comment_updated_at": "2026-08-22T22:25:53Z",
+      "comment_body_sha256": "a8d40274f6f1b588f8b0e4fbe88995f9183645cfd21f1b5904bf0c403b4cde19",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120443,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T22:26:37.380Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119977-codex-stale-binding-compaction",
+        "head_sha": "937a0e330c20411b646e32da15c2d7f29c5a349f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
