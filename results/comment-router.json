@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T08:46:08.259Z",
+  "updated_at": "2026-08-22T08:47:19.828Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124021:5377072637:2026-08-22T01:27:13Z:re_review",
-      "comment_id": "5377072637",
-      "comment_version_key": "5377072637:2026-08-22T01:27:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124021#issuecomment-5377072637",
-      "comment_created_at": "2026-08-22T01:27:13Z",
-      "comment_updated_at": "2026-08-22T01:27:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124021,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T01:51:06.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ios-dark-tool-detail-text",
-        "head_sha": "19b858caeb427f4d12b699d07f9220ffa3d9cd6f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124021:5304940709:2026-08-16T00:29:08Z:re_review",
       "comment_id": "5304940709",
@@ -32322,6 +32275,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/production-minor-and-patch-a1a6a844ee",
         "head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127793:5378524498:2026-08-22T08:46:33Z:clawsweeper_needs_human",
+      "comment_id": "5378524498",
+      "comment_version_key": "5378524498:2026-08-22T08:46:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127793#issuecomment-5378524498",
+      "comment_created_at": "2026-08-22T06:36:18Z",
+      "comment_updated_at": "2026-08-22T08:46:33Z",
+      "comment_body_sha256": "c323ca33080b62e6100612aa6ed9d158fcf036d05c6e36b05ff7893492645af5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127793,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Authorize each bulk-message target before dispatch (P1)** - sessions.operations.create/retry call the sessions.send handler directly, skipping the router fence that gives ordinary sends session-participation che...; Review finding: [P1] Authorize each bulk-message target before dispatch — src/gateway/server-methods/sessions-operations.ts:233-243 - [P1] Scope operation history and retry to its... (sha=0ec703e1ef7149f9cb2bffe23eb2b89b676fb15f)",
+      "expected_head_sha": "0ec703e1ef7149f9cb2bffe23eb2b89b676fb15f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T08:47:19.828Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/dashboard-sessions-bulk-messaging-support",
+        "head_sha": "0ec703e1ef7149f9cb2bffe23eb2b89b676fb15f",
         "cluster_id": null,
         "job_path": null
       }
