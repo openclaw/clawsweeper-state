@@ -1,0 +1,54 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128005",
+  "mode": "autonomous",
+  "run_id": "32597009231",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32597009231",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128005.md",
+  "published_at": "2026-08-22T21:37:45.703Z",
+  "canonical": "#128005",
+  "canonical_issue": "#128005",
+  "canonical_pr": null,
+  "summary": "The Android capture owner accepts a live callback without applying `maxAgeMs`; a narrow timeout-bounded retry repair is identified. Implementation and validation are blocked because this sandbox is read-only, test tooling cannot create caches, and the required `../codex` checkout is absent.",
+  "actions": [
+    {
+      "target": "#128005",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128005",
+      "candidate_fix": null,
+      "reason": "A write-capable environment is required to create the regression, repair the owner, and run validation."
+    },
+    {
+      "target": "#128005",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128005",
+      "candidate_fix": null,
+      "reason": "The PR lane cannot be prepared under the current sandbox constraints."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable worker with the sibling `../codex` checkout available, then author the capture-boundary regression and validate the repair."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

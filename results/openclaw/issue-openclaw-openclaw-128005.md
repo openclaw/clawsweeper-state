@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128005"
 mode: "autonomous"
-run_id: "32594570922"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32594570922"
+run_id: "32597009231"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32597009231"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-22T19:54:19.900Z"
-canonical: "https://github.com/openclaw/openclaw/issues/128005"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/128005"
+published_at: "2026-08-22T21:37:45.703Z"
+canonical: "#128005"
+canonical_issue: "#128005"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-128005
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32594570922](https://github.com/openclaw/clawsweeper/actions/runs/32594570922)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32597009231](https://github.com/openclaw/clawsweeper/actions/runs/32597009231)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/128005
+Canonical: #128005
 
 ## Summary
 
-Current main's Android capture owner applies maxAgeMs only to cached fixes; its live callback is serialized without freshness filtering. A narrow repair plan is ready, but this read-only worker cannot create the branch or run Android validation, and the required sibling ../codex checkout is absent, so the Codex hard gate cannot be completed here.
+The Android capture owner accepts a live callback without applying `maxAgeMs`; a narrow timeout-bounded retry repair is identified. Implementation and validation are blocked because this sandbox is read-only, test tooling cannot create caches, and the required `../codex` checkout is absent.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Current main's Android capture owner applies maxAgeMs only to cached fixes; its 
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ Current main's Android capture owner applies maxAgeMs only to cached fixes; its 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128005 | fix_needed | planned | canonical | Canonical open bug with a narrow Android capture-owner repair path; no contributor PR is hydrated. |
-| cluster:issue-openclaw-openclaw-128005 | build_fix_artifact | planned | canonical | Prepare a new narrow credited fix PR; implementation and validation require a writable executor with the mandatory sibling Codex checkout. |
+| #128005 | fix_needed | blocked | canonical | A write-capable environment is required to create the regression, repair the owner, and run validation. |
+| #128005 | build_fix_artifact | blocked | canonical | The PR lane cannot be prepared under the current sandbox constraints. |
 
 ## Needs Human
 
-- none
+- Provide a writable worker with the sibling `../codex` checkout available, then author the capture-boundary regression and validate the repair.
