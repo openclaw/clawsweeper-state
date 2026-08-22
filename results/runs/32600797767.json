@@ -1,0 +1,110 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-89528",
+  "mode": "autonomous",
+  "run_id": "32600797767",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32600797767",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-89528.md",
+  "published_at": "2026-08-22T22:02:24.961Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/89528",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/89528",
+  "canonical_pr": null,
+  "summary": "Current main b7cafbe7e82686b14c0f7c8e7af83194fd05ad42 confirms #89528 is a narrow CLI/docs contract defect: --safe --skip-deferral bypasses only pre-SIGUSR1 active-work deferral, while the bounded close-stage reply drain remains intentional. A four-file fix PR is planned, but this read-only checkout cannot install dependencies, edit, validate, or create the branch.",
+  "actions": [
+    {
+      "target": "#51620",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Leave open independently."
+    },
+    {
+      "target": "#72114",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "fixed_by_candidate",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation."
+    },
+    {
+      "target": "#73303",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "fixed_by_candidate",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation."
+    },
+    {
+      "target": "#78380",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "fixed_by_candidate",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation."
+    },
+    {
+      "target": "#89528",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#89528",
+      "candidate_fix": null,
+      "reason": "Repair the operator-visible acknowledgement and documentation; retain the existing delivery-safe drain policy."
+    },
+    {
+      "target": "#89604",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#89528",
+      "candidate_fix": null,
+      "reason": "Historical non-viable implementation; no mutation."
+    },
+    {
+      "target": "#95866",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#89528",
+      "candidate_fix": null,
+      "reason": "Leave open for its separate maintainer product decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-89528",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#89528",
+      "candidate_fix": null,
+      "reason": "Executor should apply and validate the narrow artifact on the designated branch."
+    }
+  ],
+  "action_counts": {
+    "keep_independent": 1,
+    "keep_closed": 4,
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
