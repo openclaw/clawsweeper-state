@@ -67,18 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair Discord `asVoice` message sends so a failed requested voice attachment cannot finish as `deliveryStatus: sent` merely because fallback caption text posts. Retain intentional fallback text if appropriate, ensure its receipt is recorded, then propagate the voice failure through durable delivery so the result is `partial_failed` with `sentBeforeError`. Add an owner-boundary regression that fails on current main for an MP3-plus-caption voice request, confirms visible text delivery, and confirms the partial failure result. Keep the repair in the Discord outbound owner; do not add configuration, compatibility aliases, or channel-wide fallback policy. Add user-visible release-note context to the PR body, not CHANGELOG.md.
+Fix the Discord false-success path from https://github.com/openclaw/openclaw/issues/127758. In the Discord outbound payload owner, when a native asVoice send fails but fallback text is delivered, retain the fallback but report the original failure after delivery progress so the shared delivery pipeline returns partial_failed rather than sent. Do not add config, change successful voice/media paths, or alter other channels. Add a regression that injects voice conversion/upload failure plus successful fallback text, asserts a text-only receipt and partial-failed tool/delivery status, and confirms successful voice delivery remains sent. Do not edit release-owned CHANGELOG.md.
 
 Likely files:
 
 - extensions/discord/src/outbound-payload.ts
 - extensions/discord/src/outbound-adapter.test.ts
-- src/infra/outbound/message.test.ts
+- src/infra/outbound/deliver-core.ts
+- src/infra/outbound/deliver.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/discord/src/outbound-adapter.test.ts
-- node scripts/run-vitest.mjs src/infra/outbound/message.test.ts
+- pnpm vitest extensions/discord/src/outbound-adapter.test.ts
+- pnpm vitest src/infra/outbound/deliver.test.ts
+- pnpm vitest src/channels/message/send.test.ts
 
 ## Operator Prompt
 
