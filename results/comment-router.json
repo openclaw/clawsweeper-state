@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T05:24:52.692Z",
+  "updated_at": "2026-08-22T05:28:16.652Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127539:5376191805:2026-08-21T22:49:37Z:re_review",
-      "comment_id": "5376191805",
-      "comment_version_key": "5376191805:2026-08-21T22:49:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127539#issuecomment-5376191805",
-      "comment_created_at": "2026-08-21T22:49:37Z",
-      "comment_updated_at": "2026-08-21T22:49:37Z",
-      "comment_body_sha256": "7f5fbd9adbbe003a4493cca9d04c63d2dbb52ef19dcc96ad4be96c790b0a13ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127539,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T23:01:50.994Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/objective-shaw-7b4140",
-        "head_sha": "9156e29222393184788ea611dc252298011aaa59",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117757:5154776003:2026-08-21T22:55:03Z:clawsweeper_auto_repair",
       "comment_id": "5154776003",
@@ -31623,6 +31576,39 @@
         "kind": "pull_request",
         "branch": "fix/github-http-timeout",
         "head_sha": "b767776d2127c50298504eac0e15ab5a4f3f92a5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3137:5378192789:2026-08-22T05:27:30Z:clawsweeper_needs_human",
+      "comment_id": "5378192789",
+      "comment_version_key": "5378192789:2026-08-22T05:27:30Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3137#issuecomment-5378192789",
+      "comment_created_at": "2026-08-22T05:27:30Z",
+      "comment_updated_at": "2026-08-22T05:27:30Z",
+      "comment_body_sha256": "0e2e27b5ff005aa8c2cc45c74905371a0c052dae17b0c6015561aa9072fd8c05",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3137,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The dynamic binding-lane headline can change from one quota type to another between refreshes, so its stability versus urgency is a deliberate product choice rather than a purely mech... (sha=8f26c5a595726852cd86e7e174885bf32b9dd69c)",
+      "expected_head_sha": "8f26c5a595726852cd86e7e174885bf32b9dd69c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T05:28:16.652Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "widget-readability-redesign",
+        "head_sha": "8f26c5a595726852cd86e7e174885bf32b9dd69c",
         "cluster_id": null,
         "job_path": null
       }
