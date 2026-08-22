@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T00:41:37.058Z",
+  "updated_at": "2026-08-22T00:42:03.946Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127309:5374163847:2026-08-21T19:11:27Z:re_review",
-      "comment_id": "5374163847",
-      "comment_version_key": "5374163847:2026-08-21T19:11:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127309#issuecomment-5374163847",
-      "comment_created_at": "2026-08-21T19:11:27Z",
-      "comment_updated_at": "2026-08-21T19:11:27Z",
-      "comment_body_sha256": "9086769b6913739c5a1510849109bbddc3c0913c6199bb2d911a8833df3dc22e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127309,
-      "author": "aichohan",
-      "author_id": 157741769,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T19:12:10.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/whatsapp-implicit-mentions",
-        "head_sha": "194ad443388f92afb321d18f354293a530b9d78c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5374163558:2026-08-21T19:11:26Z:re_review",
       "comment_id": "5374163558",
@@ -32094,6 +32047,39 @@
         "kind": "pull_request",
         "branch": "jesse/stage-signal-indexes",
         "head_sha": "b0cdd14de2e7fc882a9479f5172251e94475e4b8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3504:5372359255:2026-08-22T00:41:17Z:clawsweeper_needs_human",
+      "comment_id": "5372359255",
+      "comment_version_key": "5372359255:2026-08-22T00:41:17Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3504#issuecomment-5372359255",
+      "comment_created_at": "2026-08-21T16:11:54Z",
+      "comment_updated_at": "2026-08-22T00:41:17Z",
+      "comment_body_sha256": "b07b5088bd30b6421a1ad901e4aaf6e3a2105b91b460ae456ffa22c4b5520842",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3504,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The TanStack update changes ClawHub’s client/server routing graph, and the failed local-auth browser scenario has not been shown to be unrelated to that change. (sha=c8ea5c6541e2ea09cc09110c85db983c1f06dcc4)",
+      "expected_head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T00:42:03.946Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/production-minor-and-patch-a1a6a844ee",
+        "head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
         "cluster_id": null,
         "job_path": null
       }
