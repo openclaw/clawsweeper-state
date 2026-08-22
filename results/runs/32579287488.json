@@ -1,0 +1,110 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-105228",
+  "mode": "autonomous",
+  "run_id": "32579287488",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32579287488",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-105228.md",
+  "published_at": "2026-08-22T14:48:03.228Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/105228",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/105228",
+  "canonical_pr": null,
+  "summary": "Current main drops the admitted requester AbortSignal before ACP spawn. The narrow repair is viable, but this read-only checkout cannot create the regression, patch, or locally validate the PR branch.",
+  "actions": [
+    {
+      "target": "#105228",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Source reproduction is clear on preflight main: an abort during the awaited Gateway dispatch cannot be observed by the ACP owner, so late registration can retain an already-stopped child."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-105228",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Narrow new-fix-PR plan prepared."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-105228",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Requires a writable executor to apply the artifact on `clawsweeper/issue-openclaw-openclaw-105228` and run the listed validation."
+    },
+    {
+      "target": "#105346",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation allowed for an already-closed PR."
+    },
+    {
+      "target": "#105766",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#106612",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent historical reference."
+    },
+    {
+      "target": "#108357",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#116406",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1,
+    "keep_closed": 5
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1,
+    "skipped": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
