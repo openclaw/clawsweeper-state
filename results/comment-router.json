@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T09:46:19.215Z",
+  "updated_at": "2026-08-22T09:47:10.835Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3129:5377247313:2026-08-22T02:01:04Z:re_review",
-      "comment_id": "5377247313",
-      "comment_version_key": "5377247313:2026-08-22T02:01:04Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3129#issuecomment-5377247313",
-      "comment_created_at": "2026-08-22T02:01:04Z",
-      "comment_updated_at": "2026-08-22T02:01:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3129,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T02:15:15.416Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/spend-pricing-fallback",
-        "head_sha": "bd3b0beac9bf55be57560d2f7d5b9a903a6db914",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3129:5374771041:2026-08-22T02:14:27Z:clawsweeper_auto_repair",
       "comment_id": "5374771041",
@@ -32407,6 +32360,39 @@
         "kind": "pull_request",
         "branch": "feature/codex-desktop-generation",
         "head_sha": "5a5f4aac77c0174ec237d3e11456f3096a1846a7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126255:5339397512:2026-08-22T09:45:32Z:clawsweeper_needs_human",
+      "comment_id": "5339397512",
+      "comment_version_key": "5339397512:2026-08-22T09:45:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126255#issuecomment-5339397512",
+      "comment_created_at": "2026-08-19T08:16:00Z",
+      "comment_updated_at": "2026-08-22T09:45:32Z",
+      "comment_body_sha256": "b384da352148465e81bf7539944b43909b5d4af058d52b35d4ffbfbbcb03ba18",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126255,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: supplied artifacts predate the scope reset and do not show the exact head rejecting a revoked approval...; Review finding: [P1] Revalidate host-exec policy immediately before Browser Harness I/O — extensions/browser/src/browser-use-cli-tool.ts:315-320 - [P1] Move daemon preflight off t... (sha=b29e7e2ca9f552237434be151c19a5c889696146)",
+      "expected_head_sha": "b29e7e2ca9f552237434be151c19a5c889696146",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T09:47:10.835Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/browser-harness-default",
+        "head_sha": "b29e7e2ca9f552237434be151c19a5c889696146",
         "cluster_id": null,
         "job_path": null
       }
