@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92474"
 mode: "autonomous"
-run_id: "32568051386"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32568051386"
+run_id: "32568422541"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32568422541"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T10:48:08.280Z"
+published_at: "2026-08-22T10:55:22.785Z"
 canonical: "https://github.com/openclaw/openclaw/issues/92474"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/92474"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32568051386](https://github.com/openclaw/clawsweeper/actions/runs/32568051386)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32568422541](https://github.com/openclaw/clawsweeper/actions/runs/32568422541)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/92474
 
 ## Summary
 
-Current main remains da0cb592ddbe3d4e0c322db68545cf0fdc3f8fe1. The resolver re-emits the blocked-stdio-env warning on every resolution while correctly dropping the key. A narrow resolver-local dedupe plus regression is ready to implement, but this worker cannot modify or validate: the checkout is read-only, node_modules is absent, and the required sibling ../codex source checkout is unavailable.
+#92474 remains a reproducible resolver-local bug on main da0cb592: every resolution invokes the blocked-env warning callback. A narrow new PR should reuse the bounded process-lifetime dedupe cache at the resolver boundary. Implementation and validation are blocked in this read-only, dependency-less checkout.
 
 ## Impact
 
@@ -66,13 +66,13 @@ Current main remains da0cb592ddbe3d4e0c322db68545cf0fdc3f8fe1. The resolver re-e
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #92474 | fix_needed | blocked | canonical | Implementation and required validation are blocked by read-only filesystem access, missing dependencies, and the unavailable mandatory ../codex checkout. |
-| cluster:issue-openclaw-openclaw-92474 | build_fix_artifact | planned | canonical | Narrow new-fix-PR plan retained for an executor with a writable checkout, dependencies, and the required Codex source. |
-| #92484 | keep_closed | skipped | superseded | Historical context only; no closure or revival action. |
-| #92491 | keep_closed | skipped | superseded | Historical context only; no closure or revival action. |
-| #92492 | keep_closed | skipped | superseded | Historical context only; no closure or revival action. |
-| #92670 | keep_closed | skipped | superseded | Historical context only; no closure or revival action. |
-| #92754 | keep_closed | skipped | superseded | Historical context only; no closure or revival action. |
+| #92474 | fix_needed | planned | canonical | Current main retains the repeated-warning path; no viable open implementation PR exists. |
+| #92484 | keep_closed | skipped | related | Closed context only; no mutation is valid. |
+| #92491 | keep_closed | skipped | related | Closed context only; no mutation is valid. |
+| #92492 | keep_closed | skipped | related | Closed context only; no mutation is valid. |
+| #92670 | keep_closed | skipped | related | Closed context only; no mutation is valid. |
+| #92754 | keep_closed | skipped | related | Closed context only; no mutation is valid. |
+| cluster:issue-openclaw-openclaw-92474 | build_fix_artifact | planned | canonical | A narrow new fix PR is warranted; executor must install dependencies in a writable normal checkout, implement, and validate. |
 
 ## Needs Human
 
