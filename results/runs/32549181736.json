@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125776",
+  "mode": "autonomous",
+  "run_id": "32549181736",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32549181736",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125776.md",
+  "published_at": "2026-08-22T03:40:29.558Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125776",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125776",
+  "canonical_pr": null,
+  "summary": "Current main still drops a dynamic tool callId before the Telegram result callback, so the structured tool row cannot be updated. A narrow new-PR plan is ready, but implementation is blocked: the mandatory Codex sibling source is unavailable and dependencies are absent in this read-only checkout.",
+  "actions": [
+    {
+      "target": "#125776",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Static current-main reproduction is clear, but the required dependency-contract inspection and focused regression execution cannot run in this checkout."
+    },
+    {
+      "target": "#116512",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Both affect Telegram progress rendering but have distinct producer contracts and fixes."
+    },
+    {
+      "target": "#125779",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Already closed; do not revive or mutate it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125776",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Prepared for a fresh narrow PR once environment gates are satisfied."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
