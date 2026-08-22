@@ -1,0 +1,66 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125776",
+  "mode": "autonomous",
+  "run_id": "32540858839",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32540858839",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125776.md",
+  "published_at": "2026-08-22T00:45:20.633Z",
+  "canonical": "#125776",
+  "canonical_issue": "#125776",
+  "canonical_pr": null,
+  "summary": "Blocked before any source change: current main locally shows the OpenClaw-side identity-loss path, but the mandatory sibling ../codex checkout is absent and this read-only, network-restricted worker cannot obtain it. The required regression command is also blocked by Corepack attempting to create its cache on the read-only filesystem. No branch, PR, comment, label, closure, or merge action was performed.",
+  "actions": [
+    {
+      "target": "#116512",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Meaningfully different root cause; no mutation is authorized or needed."
+    },
+    {
+      "target": "#125776",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Human or writable-worker intervention is required to provide the mandated direct ../codex inspection and run the pre-fix regression before an executable fix artifact can be safely created."
+    },
+    {
+      "target": "#125779",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Historical source work only; no mutation."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "needs_human": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable environment with the required sibling ../codex checkout and a usable Corepack/pnpm cache so the direct Codex contract check and pre-fix focused regression can be completed before creating a fix artifact for #125776."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
