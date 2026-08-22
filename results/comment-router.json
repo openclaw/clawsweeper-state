@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T20:55:53.369Z",
+  "updated_at": "2026-08-22T20:56:13.843Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/babelfish:16:5380903239:2026-08-22T14:27:35Z:re_review",
-      "comment_id": "5380903239",
-      "comment_version_key": "5380903239:2026-08-22T14:27:35Z",
-      "comment_url": "https://github.com/openclaw/babelfish/pull/16#issuecomment-5380903239",
-      "comment_created_at": "2026-08-22T14:27:35Z",
-      "comment_updated_at": "2026-08-22T14:27:35Z",
-      "comment_body_sha256": "850089408580343133bc5c676cea18f52bfa6889375fbad3eee43948763c934d",
-      "repo": "openclaw/babelfish",
-      "issue_number": 16,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T14:28:15.951Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/git-clone-timeout",
-        "head_sha": "543b7beac2c1609ed6913bd2e2983496caea4696",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabline:274:5380903163:2026-08-22T14:27:34Z:re_review",
       "comment_id": "5380903163",
@@ -31754,6 +31707,39 @@
         "kind": "pull_request",
         "branch": "feat/one-off-alarms",
         "head_sha": "b44f8c09a4fbdfacc1bb0d22855514b269bc88fc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/steipete:20:5303798606:2026-08-22T20:55:27Z:clawsweeper_auto_repair",
+      "comment_id": "5303798606",
+      "comment_version_key": "5303798606:2026-08-22T20:55:27Z",
+      "comment_url": "https://github.com/steipete/steipete/pull/20#issuecomment-5303798606",
+      "comment_created_at": "2026-08-15T19:10:50Z",
+      "comment_updated_at": "2026-08-22T20:55:27Z",
+      "comment_body_sha256": "5e9226b84783c1e6d75cd5ecbb23c9cc19d27f19cc5d3f8b06b2e2ac203bbac2",
+      "repo": "steipete/steipete",
+      "issue_number": 20,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b66cb321dc3753d4db3397d58e1e75b286200876)",
+      "expected_head_sha": "b66cb321dc3753d4db3397d58e1e75b286200876",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T20:56:13.843Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "patch-1",
+        "head_sha": "b66cb321dc3753d4db3397d58e1e75b286200876",
         "cluster_id": null,
         "job_path": null
       }
