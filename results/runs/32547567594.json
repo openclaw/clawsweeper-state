@@ -1,0 +1,54 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127758",
+  "mode": "autonomous",
+  "run_id": "32547567594",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32547567594",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127758.md",
+  "published_at": "2026-08-22T03:08:06.855Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127758",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127758",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the Discord false-success path. A narrow new-PR artifact is ready, but this read-only checkout cannot create or validate the branch and the required sibling ../codex source is absent.",
+  "actions": [
+    {
+      "target": "#127758",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127758",
+      "candidate_fix": null,
+      "reason": "Canonical reproducible Discord bug; create the narrow fix PR from clawsweeper/issue-openclaw-openclaw-127758."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127758",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127758",
+      "candidate_fix": null,
+      "reason": "Keep fallback delivery, then surface the original voice failure after progress so existing shared accounting reports partial_failed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "A writable executor checkout with sibling ../codex source is required before implementation: the repository hard gate requires direct Codex-source inspection, but ../codex is absent and this sandbox cannot clone or write."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
