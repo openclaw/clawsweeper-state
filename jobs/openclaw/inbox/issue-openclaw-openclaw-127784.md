@@ -67,21 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven runtime-only inbound-context leak for https://github.com/openclaw/openclaw/issues/127784. In the embedded prompt assembly, ensure currentInboundContext is delivered through the existing non-displayed runtime-context carrier for runtime-only turns as well as ordinary turns; persist and submit only the runtime-event stub as visible user text. Preserve runtime-event model delivery, cache/replay ordering, and existing ordinary-turn behavior; do not add channel-specific branches, config, or fallback paths. First convert the existing runtime-only expectations into a regression that fails on current main, then add focused boundary coverage proving rich inbound context reaches the model through the hidden carrier rather than the user prompt. Include user-visible release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the runtime-only inbound-context role leak in https://github.com/openclaw/openclaw/issues/127784. In the embedded attempt prompt path, preserve the runtime-event stub as the durable prompt, route current inbound metadata/history through the existing display:false runtime-context carrier, and ensure runtime-only submission installs that carrier without duplicating the runtime system context. Replace the current assertion that runtime-only inbound context is visible in the submitted prompt with a boundary regression that fails on main: the prompt remains the stub, the carrier contains the context, and the converted model request retains it. Cover retry/overflow placement if the carrier installation changes that path. Do not add configuration, a fallback reader, or CHANGELOG.md edits; put user-impact context in the PR body.
 
 Likely files:
 
 - src/agents/embedded-agent-runner/run/attempt-prompt-build.ts
 - src/agents/embedded-agent-runner/run/attempt-prompt-submit.ts
-- src/agents/embedded-agent-runner/run/runtime-context-prompt.ts
 - src/agents/embedded-agent-runner/run/attempt-prompt-context.test.ts
 - src/agents/embedded-agent-runner/run/attempt.spawn-workspace.context-engine.test.ts
-- src/agents/embedded-agent-runner/run/attempt-llm-boundary.cache-stability.test.ts
+- src/agents/embedded-agent-runner/run/attempt-prompt-submit.test.ts
 
 Validation:
 
-- pnpm vitest src/agents/embedded-agent-runner/run/attempt-prompt-context.test.ts src/agents/embedded-agent-runner/run/runtime-context-prompt.test.ts
-- pnpm vitest src/agents/embedded-agent-runner/run/attempt.spawn-workspace.context-engine.test.ts src/agents/embedded-agent-runner/run/attempt-llm-boundary.cache-stability.test.ts
+- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt-prompt-context.test.ts
+- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt.spawn-workspace.context-engine.test.ts
+- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt-prompt-submit.test.ts
 
 ## Operator Prompt
 
