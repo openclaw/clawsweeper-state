@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T04:11:38.196Z",
+  "updated_at": "2026-08-22T04:11:59.437Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123837:5298603873:2026-08-14T22:02:07Z:re_review",
-      "comment_id": "5298603873",
-      "comment_version_key": "5298603873:2026-08-14T22:02:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123837#issuecomment-5298603873",
-      "comment_created_at": "2026-08-14T22:02:07Z",
-      "comment_updated_at": "2026-08-14T22:02:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123837,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T22:08:43.773Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123837:5298708131:2026-08-14T22:17:06Z:re_review",
       "comment_id": "5298708131",
@@ -31513,6 +31486,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127772:5377799692:2026-08-22T04:10:50Z:clawsweeper_needs_human",
+      "comment_id": "5377799692",
+      "comment_version_key": "5377799692:2026-08-22T04:10:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127772#issuecomment-5377799692",
+      "comment_created_at": "2026-08-22T04:10:50Z",
+      "comment_updated_at": "2026-08-22T04:10:50Z",
+      "comment_body_sha256": "e96d2dc8113b9128f02c3553d107f343bcabe1814449d18c53f9e63000b17abf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127772,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed; await normal maintainer landing checks on the current head. (sha=6041a82b8ab44ddae60752d30cb8763ab201844d)",
+      "expected_head_sha": "6041a82b8ab44ddae60752d30cb8763ab201844d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T04:11:59.437Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-media-sniff-current",
+        "head_sha": "6041a82b8ab44ddae60752d30cb8763ab201844d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
