@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T07:00:04.067Z",
+  "updated_at": "2026-08-22T07:07:14.000Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125707:5325833647:2026-08-21T23:47:27Z:clawsweeper_needs_human",
-      "comment_id": "5325833647",
-      "comment_version_key": "5325833647:2026-08-21T23:47:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125707#issuecomment-5325833647",
-      "comment_created_at": "2026-08-18T08:48:15Z",
-      "comment_updated_at": "2026-08-21T23:47:27Z",
-      "comment_body_sha256": "d55e14eafc98bf92ea4dad368fec6ff6bd489c6159e5ef9287358b9fe8c111a7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125707,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging would make a fork probe’s reported effort write model_reasoning_effort into a newly materialized supervised thread; that can override an existing operator-native setting unles... (sha=915de54cb2bb6699b971c8af18f8ce3ce10b9b51)",
-      "expected_head_sha": "915de54cb2bb6699b971c8af18f8ce3ce10b9b51",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T23:56:40.853Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cached-codex-effort-route",
-        "head_sha": "915de54cb2bb6699b971c8af18f8ce3ce10b9b51",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127469:5374863801:2026-08-21T23:47:11Z:clawsweeper_auto_repair",
       "comment_id": "5374863801",
@@ -31754,6 +31721,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120491:5378904726:2026-08-22T07:06:25Z:re_review",
+      "comment_id": "5378904726",
+      "comment_version_key": "5378904726:2026-08-22T07:06:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5378904726",
+      "comment_created_at": "2026-08-22T07:06:25Z",
+      "comment_updated_at": "2026-08-22T07:06:25Z",
+      "comment_body_sha256": "14ec8a6855e5692c7edb4303f43f34da0b29f30cb869882dc1e78f22312711da",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120491,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — rebased onto latest main (new head d552d58e6b67be824746f706577ddc0b34af9afb)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T07:07:11.883Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119992-per-turn-send-budget",
+        "head_sha": "d552d58e6b67be824746f706577ddc0b34af9afb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
