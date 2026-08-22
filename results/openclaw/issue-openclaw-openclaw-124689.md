@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32605375811"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32605375811"
+run_id: "32606114642"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32606114642"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-22T23:38:32.955Z"
+published_at: "2026-08-22T23:55:28.141Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-124689
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32605375811](https://github.com/openclaw/clawsweeper/actions/runs/32605375811)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32606114642](https://github.com/openclaw/clawsweeper/actions/runs/32606114642)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Implementation is blocked before code changes: the mandatory sibling ../codex source checkout is absent, and cloning it is impossible because this environment is read-only. The reported selection defect remains narrowly scoped to the auth-probe catalog fallback on supplied main 8f18edfa10ab52b83083da4d1fd4e0f7e2d2e43f; no GitHub mutation or local edit was made.
+Source inspection confirms the generic probe fallback can choose the first deprecated Ollama Cloud catalog row. Implementation is blocked because this sandbox is read-only, dependencies cannot be installed, and the repository-mandated sibling ../codex checkout is absent.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Implementation is blocked before code changes: the mandatory sibling ../codex so
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #124689 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ Implementation is blocked before code changes: the mandatory sibling ../codex so
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | Root AGENTS.md requires the acting agent to inspect sibling ../codex before any code change or proof verdict. The required checkout cannot be created in this read-only worker. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | A writable executor with the required ../codex checkout can implement and validate the isolated owner-boundary repair. |
+| #124689 | fix_needed | blocked | canonical | Only implementation and validation are blocked. The hydrated issue remains the canonical open report. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | A narrow new fix PR is appropriate once a writable environment with the required Codex checkout is available. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout with dependencies and sibling ../codex available; then implement and validate the contained status-ranking repair.
