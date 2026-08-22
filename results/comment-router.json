@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T07:32:25.423Z",
+  "updated_at": "2026-08-22T07:32:46.698Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124171:5302281257:2026-08-22T00:26:46Z:clawsweeper_needs_human",
@@ -23806,33 +23806,6 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/maintainers:142:5378036931:2026-08-22T05:00:25Z:re_review",
-      "comment_id": "5378036931",
-      "comment_version_key": "5378036931:2026-08-22T05:00:25Z",
-      "comment_url": "https://github.com/openclaw/maintainers/pull/142#issuecomment-5378036931",
-      "comment_created_at": "2026-08-22T05:00:25Z",
-      "comment_updated_at": "2026-08-22T05:00:25Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/maintainers",
-      "issue_number": 142,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-22T05:24:23.369Z",
-      "target": null
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw-tools:17:5298592194:2026-08-22T05:24:14Z:clawsweeper_auto_repair",
       "comment_id": "5298592194",
       "comment_version_key": "5298592194:2026-08-22T05:24:14Z",
@@ -31673,6 +31646,55 @@
       "status": "skipped",
       "processed_at": "2026-08-22T07:32:25.423Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/maintainers:142:5378036931:2026-08-22T05:00:25Z:re_review",
+      "comment_id": "5378036931",
+      "comment_version_key": "5378036931:2026-08-22T05:00:25Z",
+      "comment_url": "https://github.com/openclaw/maintainers/pull/142#issuecomment-5378036931",
+      "comment_created_at": "2026-08-22T05:00:25Z",
+      "comment_updated_at": "2026-08-22T05:00:25Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/maintainers",
+      "issue_number": 142,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "forced_replay": true,
+      "attempt_id": "watchdog-142-comment-5378036931-20260822T073212Z-2f98ff61",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T07:32:44.474Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/maintainer-report-health-land",
+        "head_sha": "5d30eb55a66e630c1ce21da1fbd265a7c1f736d9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
