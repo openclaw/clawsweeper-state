@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T20:13:27.277Z",
+  "updated_at": "2026-08-22T20:14:14.097Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119256:5180866476:2026-08-22T13:55:00Z:clawsweeper_needs_human",
-      "comment_id": "5180866476",
-      "comment_version_key": "5180866476:2026-08-22T13:55:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119256#issuecomment-5180866476",
-      "comment_created_at": "2026-08-04T15:02:16Z",
-      "comment_updated_at": "2026-08-22T13:55:00Z",
-      "comment_body_sha256": "c9164f3b87b4489f6ea53cc1e9316db34e55440ed7e36a9c5b766568147cefa6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119256,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Remove the test-only poll-store injection seam (P2)** - The optional store override is explicitly test-only, and production callers all use the singleton. Keep state injection in test setup or mock the store own...; Review finding: [P2] Remove the test-only poll-store injection seam — extensions/whatsapp/src/inbound/poll-votes.ts:203-204 - [medium] Retained poll decryption material creates a... (sha=10c90a32229e32f437d9f9f8bdc76b2b020e36e9)",
-      "expected_head_sha": "10c90a32229e32f437d9f9f8bdc76b2b020e36e9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T14:00:36.809Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/whatsapp-poll-vote-hook",
-        "head_sha": "10c90a32229e32f437d9f9f8bdc76b2b020e36e9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123975:5300285477:2026-08-22T13:53:36Z:clawsweeper_auto_repair",
       "comment_id": "5300285477",
@@ -31793,6 +31760,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T20:13:27.277Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:60:5121741210:2026-08-22T20:13:25Z:clawsweeper_auto_repair",
+      "comment_id": "5121741210",
+      "comment_version_key": "5121741210:2026-08-22T20:13:25Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/60#issuecomment-5121741210",
+      "comment_created_at": "2026-07-29T18:09:07Z",
+      "comment_updated_at": "2026-08-22T20:13:25Z",
+      "comment_body_sha256": "d125abe9ac4984521da756e3f5fbe6c3fab08a7e73aa6f40dfb88c87461e9dd8",
+      "repo": "openclaw/shellbench",
+      "issue_number": 60,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=15dce335440688dd25fa45c28495e3fc0daa75a6)",
+      "expected_head_sha": "15dce335440688dd25fa45c28495e3fc0daa75a6",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-22T20:14:14.097Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-tool-discovery-telemetry",
+        "head_sha": "15dce335440688dd25fa45c28495e3fc0daa75a6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
