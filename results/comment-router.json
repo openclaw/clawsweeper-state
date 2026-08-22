@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T16:21:11.146Z",
+  "updated_at": "2026-08-22T16:22:10.356Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127524:5375250694:2026-08-21T20:48:29Z:re_review",
-      "comment_id": "5375250694",
-      "comment_version_key": "5375250694:2026-08-21T20:48:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127524#issuecomment-5375250694",
-      "comment_created_at": "2026-08-21T20:48:29Z",
-      "comment_updated_at": "2026-08-21T20:48:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127524,
-      "author": "dkling-it",
-      "author_id": 4270462,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T10:20:03.068Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123189:5281706896:2026-08-22T10:19:42Z:clawsweeper_auto_repair",
       "comment_id": "5281706896",
@@ -31415,6 +31388,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T16:21:11.146Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1206:5381144069:2026-08-22T16:21:21Z:clawsweeper_needs_human",
+      "comment_id": "5381144069",
+      "comment_version_key": "5381144069:2026-08-22T16:21:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1206#issuecomment-5381144069",
+      "comment_created_at": "2026-08-22T15:24:07Z",
+      "comment_updated_at": "2026-08-22T16:21:21Z",
+      "comment_body_sha256": "bcd10afcc1af352cdaf5dc645126b5ad89fda0db68434c149bb777426e70f714",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1206,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The current-head native WinUI test uses fake runtime, gateway, probe, and command objects. Add redacted live tray UI Automation output, a scree... (sha=edd4e75ce9c882435a277197245491ad5bffb21c)",
+      "expected_head_sha": "edd4e75ce9c882435a277197245491ad5bffb21c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T16:22:10.356Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-pr1204-managed-runtime-actions",
+        "head_sha": "edd4e75ce9c882435a277197245491ad5bffb21c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
