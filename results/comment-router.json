@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T08:28:47.032Z",
+  "updated_at": "2026-08-22T08:28:59.784Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4944776263:2026-07-11T10:12:46Z:re_review",
-      "comment_id": "4944776263",
-      "comment_version_key": "4944776263:2026-07-11T10:12:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4944776263",
-      "comment_created_at": "2026-07-11T10:12:46Z",
-      "comment_updated_at": "2026-07-11T10:12:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T01:32:48.663Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4947444032:2026-07-11T16:05:55Z:re_review",
       "comment_id": "4947444032",
@@ -32025,6 +31998,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127800:5379299525:2026-08-22T08:27:24Z:clawsweeper_needs_human",
+      "comment_id": "5379299525",
+      "comment_version_key": "5379299525:2026-08-22T08:27:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127800#issuecomment-5379299525",
+      "comment_created_at": "2026-08-22T08:27:24Z",
+      "comment_updated_at": "2026-08-22T08:27:24Z",
+      "comment_body_sha256": "6f8ec6fd11804436b5acb52cee52506b5d51c82459ab664a8d2d2e645c2f1df2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127800,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head checks are still in progress; merge should wait for their completion rather than rely only on the PR-body test report. (sha=beb38b59a8fd7e71391f9110ea97820ccb86ef9c)",
+      "expected_head_sha": "beb38b59a8fd7e71391f9110ea97820ccb86ef9c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T08:28:59.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-drift-correction-127297",
+        "head_sha": "beb38b59a8fd7e71391f9110ea97820ccb86ef9c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
