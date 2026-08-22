@@ -67,22 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Codex dynamic-tool progress regression. Preserve one canonical call ID from the structured dynamic-tool start through verbose result summaries and full output so a channel progress renderer updates the existing row. Do not deduplicate by tool name, arguments, or text; distinct same-name calls must remain distinct, while genuinely unkeyed legacy summaries must retain append behavior. Add a regression that fails before the repair at the Codex-to-Telegram progress boundary, plus coverage for distinct IDs and unkeyed legacy output. Do not add configuration or alter unrelated progress policy. Do not edit CHANGELOG.md.
+Repair https://github.com/openclaw/openclaw/issues/125776 at the dynamic-tool progress producer boundary. Preserve a Codex dynamic tool call's existing callId on result-summary and result-output callbacks, then have Telegram update the structured `tool:&lt;callId>` draft row rather than append id-less text. Keep legacy result payloads without an identity append-only, and never deduplicate by tool name or arguments. Inspect the pinned Codex app-server contract before landing because the review checkout lacked ../codex. Review https://github.com/openclaw/openclaw/pull/125779 only as unmerged source material; do not revive it. Add owner-boundary regression coverage for one call updating from start to summary/output, two same-name calls with different IDs staying distinct, and id-less legacy output. Do not add config or edit CHANGELOG.md; put release-note context in the PR body.
 
 Likely files:
 
 - extensions/codex/src/app-server/event-projector-tool-progress.ts
-- extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
-- extensions/telegram/src/bot-message-dispatch-turn.ts
-- extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
 - src/auto-reply/reply-payload.ts
-- src/auto-reply/get-reply-options.types.ts
+- extensions/telegram/src/bot-message-dispatch-turn.ts
+- extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
+- extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
 - node scripts/run-vitest.mjs extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
-- node scripts/check-changed.mjs --dry-run -- extensions/codex/src/app-server/event-projector-tool-progress.ts extensions/telegram/src/bot-message-dispatch-turn.ts
+- node scripts/run-vitest.mjs src/channels/progress-draft-compositor.test.ts
+- git diff --check
 
 ## Operator Prompt
 
