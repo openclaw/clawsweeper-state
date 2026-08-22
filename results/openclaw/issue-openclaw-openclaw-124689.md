@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32581789476"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32581789476"
+run_id: "32582864811"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32582864811"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T15:41:31.744Z"
+published_at: "2026-08-22T16:02:09.884Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32581789476](https://github.com/openclaw/clawsweeper/actions/runs/32581789476)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32582864811](https://github.com/openclaw/clawsweeper/actions/runs/32582864811)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Current main still probes a deprecated Ollama Cloud fallback row when the requested provider has credentials but no direct configured candidate. A narrow fix artifact is ready; implementation is blocked in this immutable sandbox because ../codex is absent, the filesystem is read-only, and dependencies cannot bootstrap.
+Current main 946aa39b has a narrow, source-proven probe-planning defect: the requested provider’s catalog fallback can select a deprecated row by input order when all configured global candidates belong to another provider. A two-file repair plan is ready, but this worker cannot edit or validate it because the checkout is read-only; the mandatory sibling ../codex source is also absent, so no Codex verdict is claimed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main still probes a deprecated Ollama Cloud fallback row when the reques
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | The open canonical issue needs a narrow repair, but this worker cannot edit or validate it locally. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | A writable executor can implement this bounded planner repair and open the one required fix PR. |
+| #124689 | fix_needed | planned | canonical | Narrow bug-only repair is appropriate. Implementation is blocked in this read-only worker; emit the repair artifact for the deterministic executor. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-124689 after applying and validating the artifact. |
 
 ## Needs Human
 
