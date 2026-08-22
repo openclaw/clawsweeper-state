@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128017"
 mode: "autonomous"
-run_id: "32598357853"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32598357853"
+run_id: "32599907560"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32599907560"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-22T21:10:42.869Z"
-canonical: "https://github.com/openclaw/openclaw/issues/128017"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/128017"
+published_at: "2026-08-22T21:43:11.094Z"
+canonical: "#128017"
+canonical_issue: "#128017"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32598357853](https://github.com/openclaw/clawsweeper/actions/runs/32598357853)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32599907560](https://github.com/openclaw/clawsweeper/actions/runs/32599907560)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/128017
+Canonical: #128017
 
 ## Summary
 
-Current main has the reported marker-only search/snippet defect. A narrow two-file repair is planned, but this read-only checkout cannot create the required branch/test changes or complete the mandatory direct ../codex source gate.
+#128017 is a valid canonical bug on main d6679815: standalone OpenClaw marker lines enter both local-page matching and fallback snippets. No branch changes were possible because this worker has a read-only filesystem; the required test command also cannot initialize Corepack. A narrow, ready-to-apply fix artifact is supplied.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Current main has the reported marker-only search/snippet defect. A narrow two-fi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128017 | fix_needed | planned | canonical | The issue is a reproducible existing-behavior bug with one canonical plugin-owner repair path; implementation is blocked only by this worker's read-only environment. |
-| cluster:issue-openclaw-openclaw-128017 | build_fix_artifact | planned | canonical | Create one credited ClawSweeper fix PR from the requested branch after applying the repair contract and validations. |
+| #128017 | fix_needed | blocked | canonical | Apply the supplied narrow fix in a writable checkout, then run the required regression and changed-file gates before opening the one allowed fix PR. |
 
 ## Needs Human
 
