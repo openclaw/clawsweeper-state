@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T05:08:59.550Z",
+  "updated_at": "2026-08-22T05:09:42.331Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121799:5288127485:2026-08-14T00:52:31Z:re_review",
-      "comment_id": "5288127485",
-      "comment_version_key": "5288127485:2026-08-14T00:52:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121799#issuecomment-5288127485",
-      "comment_created_at": "2026-08-14T00:52:31Z",
-      "comment_updated_at": "2026-08-14T00:52:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121799,
-      "author": "sasan1200",
-      "author_id": 28139727,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T22:46:56.597Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121799:5288921688:2026-08-14T03:04:24Z:re_review",
       "comment_id": "5288921688",
@@ -31596,6 +31569,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/remindctl:72:5334624429:2026-08-22T05:06:59Z:clawsweeper_needs_human",
+      "comment_id": "5334624429",
+      "comment_version_key": "5334624429:2026-08-22T05:06:59Z",
+      "comment_url": "https://github.com/openclaw/remindctl/pull/72#issuecomment-5334624429",
+      "comment_created_at": "2026-08-18T22:05:02Z",
+      "comment_updated_at": "2026-08-22T05:06:59Z",
+      "comment_body_sha256": "241455ca55c632857c1957c2e1d0928e0be306a370cc27af9f11caaa45323885",
+      "repo": "openclaw/remindctl",
+      "issue_number": 72,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The after-fix Swift test exercises only a mapping helper; the PR explicitly lacks a live EventKit orphan case. Add a redacted macOS terminal ru... (sha=a046f57088c85a1dbd98069bdc3422317f983e13)",
+      "expected_head_sha": "a046f57088c85a1dbd98069bdc3422317f983e13",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T05:09:42.331Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/list-nil-calendar",
+        "head_sha": "a046f57088c85a1dbd98069bdc3422317f983e13",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
