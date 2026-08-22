@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T19:28:30.066Z",
+  "updated_at": "2026-08-22T19:28:34.015Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127819:5379547987:2026-08-22T13:26:20Z:clawsweeper_needs_human",
-      "comment_id": "5379547987",
-      "comment_version_key": "5379547987:2026-08-22T13:26:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127819#issuecomment-5379547987",
-      "comment_created_at": "2026-08-22T09:28:27Z",
-      "comment_updated_at": "2026-08-22T13:26:20Z",
-      "comment_body_sha256": "85a98ac69f3aa456e565346ca3e9e3f465f0ac9445c3bcdc737e68f20695f567",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127819,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 12 net lines for this repair; the added candidate-catalog and local comparisons are needed to keep metadata updates, no-op detection, and refresh cadence dist... (sha=4af5846473f143e5575e0dd9438789e409df8cb6)",
-      "expected_head_sha": "4af5846473f143e5575e0dd9438789e409df8cb6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T13:35:12.040Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/hunt-ui-06",
-        "head_sha": "4af5846473f143e5575e0dd9438789e409df8cb6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127831:5379631479:2026-08-22T13:30:29Z:clawsweeper_needs_human",
       "comment_id": "5379631479",
@@ -31492,6 +31459,53 @@
         "kind": "pull_request",
         "branch": "fix/issue-107713",
         "head_sha": "886f44d98f58e6d541e83887f484d42b74a8cb05",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124408:5382189478:2026-08-22T19:27:39Z:re_review",
+      "comment_id": "5382189478",
+      "comment_version_key": "5382189478:2026-08-22T19:27:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124408#issuecomment-5382189478",
+      "comment_created_at": "2026-08-22T19:27:39Z",
+      "comment_updated_at": "2026-08-22T19:27:39Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124408,
+      "author": "synthalorian",
+      "author_id": 212206047,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T19:28:31.434Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-124343-settle-wake-deferral",
+        "head_sha": "e679c7a33df5b6ff0e15735f432720ce976946db",
         "cluster_id": null,
         "job_path": null
       },
