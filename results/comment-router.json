@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T04:40:31.238Z",
+  "updated_at": "2026-08-22T04:40:46.357Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120443:5224337448:2026-08-21T22:25:07Z:clawsweeper_auto_repair",
-      "comment_id": "5224337448",
-      "comment_version_key": "5224337448:2026-08-21T22:25:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5224337448",
-      "comment_created_at": "2026-08-08T03:41:53Z",
-      "comment_updated_at": "2026-08-21T22:25:07Z",
-      "comment_body_sha256": "1ab9d3f6192d66462e7504c944d891730637169c54d1e935f825c9ec31735075",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=48f58d80a0cac5c510dc98a90f86e5d4fa3312e8)",
-      "expected_head_sha": "48f58d80a0cac5c510dc98a90f86e5d4fa3312e8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T22:35:50.180Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119977-codex-stale-binding-compaction",
-        "head_sha": "48f58d80a0cac5c510dc98a90f86e5d4fa3312e8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124557:5307420693:2026-08-21T22:20:57Z:clawsweeper_auto_repair",
       "comment_id": "5307420693",
@@ -31486,6 +31453,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:89040:5377918625:2026-08-22T04:39:53Z:re_review",
+      "comment_id": "5377918625",
+      "comment_version_key": "5377918625:2026-08-22T04:39:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5377918625",
+      "comment_created_at": "2026-08-22T04:39:53Z",
+      "comment_updated_at": "2026-08-22T04:39:53Z",
+      "comment_body_sha256": "21b3c951334e177065b9160d39fea4c7a2ba4d4267d708b3aa9a178990abe981",
+      "repo": "openclaw/openclaw",
+      "issue_number": 89040,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T04:40:43.882Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bootstrap-context-event-loop-stall",
+        "head_sha": "be0ea7c18ff84e5eddd7361f6d57f0df055a33b5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
