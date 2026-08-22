@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32587760244"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32587760244"
+run_id: "32588060829"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32588060829"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-22T17:36:00.370Z"
+published_at: "2026-08-22T17:42:41.182Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-124689
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32587760244](https://github.com/openclaw/clawsweeper/actions/runs/32587760244)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32588060829](https://github.com/openclaw/clawsweeper/actions/runs/32588060829)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Implementation is blocked in this read-only checkout: `node_modules` is absent, focused Vitest cannot load `tsx`, and the required sibling `../codex` source is unavailable for the mandatory Codex gate. Source inspection identifies the narrow planned repair artifact.
+Current main contains the reported selection defect: src/commands/models/list.probe.models.ts selects the first same-provider catalog row without considering status, while Ollama’s catalog retains kimi-k2.5 as deprecated. Implementation is blocked before a verdict or patch because the mandatory direct sibling Codex checkout (../codex) is absent and this read-only worker cannot clone it; node_modules is also unavailable for validation.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Implementation is blocked in this read-only checkout: `node_modules` is absent, 
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #124689 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ Implementation is blocked in this read-only checkout: `node_modules` is absent, 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | A writable, dependency-complete checkout with sibling Codex source is required before code changes and regression proof. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | A narrow two-file repair is ready for a writable executor after the required Codex inspection and dependency installation. |
+| #124689 | fix_needed | blocked | canonical | The issue remains a narrow canonical bug, but the required direct Codex-source inspection and local test dependencies are unavailable. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked |  | Artifact is precise, but execution is blocked by the required Codex-source gate and missing local dependencies. |
 
 ## Needs Human
 
-- Provide a writable checkout with dependencies installed and the required sibling `../codex` source so the planned regression can be demonstrated pre-fix, implemented, and validated.
+- none
