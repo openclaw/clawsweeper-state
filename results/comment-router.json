@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T16:19:27.592Z",
+  "updated_at": "2026-08-22T16:19:35.351Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111349:5379551782:2026-08-22T09:29:27Z:re_review",
-      "comment_id": "5379551782",
-      "comment_version_key": "5379551782:2026-08-22T09:29:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111349#issuecomment-5379551782",
-      "comment_created_at": "2026-08-22T09:29:27Z",
-      "comment_updated_at": "2026-08-22T09:29:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111349,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T09:30:00.336Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-release-pretag-pack-deadline",
-        "head_sha": "1d07c742f2322c2746aa494760b5aadff96ebb08",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111349:5015262025:2026-08-22T09:28:06Z:clawsweeper_auto_repair",
       "comment_id": "5015262025",
@@ -32004,6 +31957,39 @@
         "kind": "pull_request",
         "branch": "fix/isolate-gateway-restarts-20260822",
         "head_sha": "39f28ecd40cbf99e6306d24db9345afa0cf1bc79",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:62:5303306179:2026-08-22T16:15:41Z:clawsweeper_needs_human",
+      "comment_id": "5303306179",
+      "comment_version_key": "5303306179:2026-08-22T16:15:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/62#issuecomment-5303306179",
+      "comment_created_at": "2026-08-15T17:05:32Z",
+      "comment_updated_at": "2026-08-22T16:15:41Z",
+      "comment_body_sha256": "096fbb99d16387e884de84f99fc867b258392525fea8b369cca254549b67b74d",
+      "repo": "openclaw/openclaw-ansible",
+      "issue_number": 62,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Automation risk: merging expands CI execution to two additional syntax checks, so the hosted Lint workflow should confirm runner behavior on the mergeable head. (sha=fdce460a7362484cf12a0d8c8ec5807c967f2d6f)",
+      "expected_head_sha": "fdce460a7362484cf12a0d8c8ec5807c967f2d6f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T16:19:35.351Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/validate-deploy-playbook",
+        "head_sha": "fdce460a7362484cf12a0d8c8ec5807c967f2d6f",
         "cluster_id": null,
         "job_path": null
       }
