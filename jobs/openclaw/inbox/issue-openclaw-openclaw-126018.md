@@ -67,20 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the legacy Slack interactive text loss in https://github.com/openclaw/openclaw/issues/126018. At the `buildSlackInteractiveBlocks` text producer in `extensions/slack/src/blocks-render.ts`, replace the one-section truncation with the existing Slack mrkdwn-safe chunking path; preserve current trimming and keep button/select limit handling unchanged. Add regression coverage that joins emitted text sections back to the complete input, keeps every section within the existing limit, preserves surrogate pairs and protected mrkdwn tokens, and proves reply resolution starts a new segment at the 50-block boundary. Use https://github.com/openclaw/openclaw/pull/126125 only as reference because it is closed unmerged. Confirm the Slack dependency limit contract directly before implementation; stop if the repair requires a new public API, config, or product-policy change.
+Repair the legacy Slack interactive text renderer for https://github.com/openclaw/openclaw/issues/126018. In extensions/slack/src/blocks-render.ts, replace the single-section truncation for legacy interactive text with consecutive sections from the existing Slack-safe mrkdwn chunker; retain truncation for labels, placeholders, and other genuinely bounded fields. Do not change modern presentation capability-gate semantics. Add regression coverage in extensions/slack/src/shared-interactive.test.ts for lossless long ASCII text, surrogate-pair safety, and protected Slack mrkdwn boundaries, and add a reply-boundary case in extensions/slack/src/reply-blocks.test.ts proving 51 generated sections become [50,1] ordered segments. Treat https://github.com/openclaw/openclaw/pull/126125 only as prior source material, not as a branch to revive. Record user-visible release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - extensions/slack/src/blocks-render.ts
 - extensions/slack/src/shared-interactive.test.ts
 - extensions/slack/src/reply-blocks.test.ts
+- extensions/slack/src/format.ts
 - extensions/slack/src/format.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs extensions/slack/src/shared-interactive.test.ts extensions/slack/src/reply-blocks.test.ts extensions/slack/src/format.test.ts
-- node scripts/run-vitest.mjs extensions/slack/src/outbound-payload.test.ts
-- Verify the focused regression fails before the production change and passes afterward.
+- node scripts/run-vitest.mjs extensions/slack/src/channel.test.ts
+- node scripts/run-vitest.mjs extensions/slack/src/send.blocks.test.ts -t "legacy interactive chunking"
 
 ## Operator Prompt
 
