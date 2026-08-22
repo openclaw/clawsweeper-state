@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T21:05:47.213Z",
+  "updated_at": "2026-08-22T21:05:50.513Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3119:5380919785:2026-08-22T14:31:29Z:re_review",
-      "comment_id": "5380919785",
-      "comment_version_key": "5380919785:2026-08-22T14:31:29Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3119#issuecomment-5380919785",
-      "comment_created_at": "2026-08-22T14:31:29Z",
-      "comment_updated_at": "2026-08-22T14:31:29Z",
-      "comment_body_sha256": "768466e46c31f12a4fc6a82f718f07a86135f65d26ee703ea1e538eb06345b7a",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3119,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T14:39:47.460Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "tmp-fix-3105-gatekeeper",
-        "head_sha": "5106df42243aab32187e0d56f9b9995c41229722",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3119:5370820306:2026-08-22T14:38:54Z:clawsweeper_auto_repair",
       "comment_id": "5370820306",
@@ -31682,6 +31635,39 @@
         "kind": "pull_request",
         "branch": "fix/session-routing-gateway-compat",
         "head_sha": "3eb3557718865314bd405605785249d571c72499",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-22T20:56:25Z:clawsweeper_needs_human",
+      "comment_id": "5376735204",
+      "comment_version_key": "5376735204:2026-08-22T20:56:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
+      "comment_created_at": "2026-08-22T00:21:26Z",
+      "comment_updated_at": "2026-08-22T20:56:25Z",
+      "comment_body_sha256": "9bb87fa2945ca97d98d16aa84ae4deafea0653c9f3b741b6953ebe3f70a6b948",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127700,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR body contains no redacted after-update evidence that Codex Action v1.12 preserves the allowed unprivileg...; Review finding: [P1] Synchronize the TruffleHog executable pin — .github/workflows/ci.yml:1158-1162 - [P2] Update the Android attestation workflow assertion — .github/workflows/an... (sha=88acbc75f33aa8167e3e84a14c61cb5c8cedd736)",
+      "expected_head_sha": "88acbc75f33aa8167e3e84a14c61cb5c8cedd736",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T21:05:50.513Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-2b47f3b96e",
+        "head_sha": "88acbc75f33aa8167e3e84a14c61cb5c8cedd736",
         "cluster_id": null,
         "job_path": null
       }
