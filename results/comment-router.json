@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T04:12:32.407Z",
+  "updated_at": "2026-08-22T04:12:35.004Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127024:5375953825:2026-08-21T22:14:03Z:re_review",
-      "comment_id": "5375953825",
-      "comment_version_key": "5375953825:2026-08-21T22:14:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127024#issuecomment-5375953825",
-      "comment_created_at": "2026-08-21T22:14:03Z",
-      "comment_updated_at": "2026-08-21T22:14:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127024,
-      "author": "bdjben",
-      "author_id": 188106718,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T22:14:41.130Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-refresh-in-place-computer-use-bundle",
-        "head_sha": "19406684a878f353c07eeff8b89a40cdc7b9de31",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/discrawl:180:5325656051:2026-08-21T22:14:09Z:clawsweeper_auto_repair",
       "comment_id": "5325656051",
@@ -31435,6 +31388,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T04:12:32.407Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:503:5307645408:2026-08-22T04:04:53Z:clawsweeper_auto_repair",
+      "comment_id": "5307645408",
+      "comment_version_key": "5307645408:2026-08-22T04:04:53Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/503#issuecomment-5307645408",
+      "comment_created_at": "2026-08-16T13:22:10Z",
+      "comment_updated_at": "2026-08-22T04:04:53Z",
+      "comment_body_sha256": "4065d74738ba8197f91fd5d76577c98fbc61ab8e386bc9941ab15aedbc2662a5",
+      "repo": "openclaw/acpx",
+      "issue_number": 503,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5b40647f7cf48e7f747191afeacc9110ef5c3c36)",
+      "expected_head_sha": "5b40647f7cf48e7f747191afeacc9110ef5c3c36",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T04:12:35.004Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mcode-agent",
+        "head_sha": "5b40647f7cf48e7f747191afeacc9110ef5c3c36",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
