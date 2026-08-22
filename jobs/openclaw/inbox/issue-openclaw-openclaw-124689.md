@@ -67,17 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the remaining provider diagnostic bug: when a requested provider has no explicit configured model candidate, choose a supported catalog fallback rather than a deprecated or disabled row. Preserve explicit configured model choices and existing provider/auth-alias routing; do not special-case Ollama, alter credential storage, add config, or edit CHANGELOG.md. Add a regression case with a deprecated-first catalog and a later supported row, then put user-visible release-note context in the PR body.
+Repair the remaining configured-provider diagnostic defect in https://github.com/openclaw/openclaw/issues/124689. Current main already patches the active Control UI session model; do not alter that path. In `src/commands/models/list.probe.models.ts`, when `models.probe` requests `ollama-cloud` but defaults contain only `ollama/gemma4:31b-cloud`, no same-provider configured candidate exists and fallback selection takes the first Cloud catalog row, retired `kimi-k2.5`. Preserve an explicitly configured legacy model, but make catalog fallback avoid deprecated/disabled rows and select a supported Cloud row. Add a regression that proves this exact provider-mismatch fallback no longer targets retired Kimi, while explicit legacy selection remains honored. Keep Ollama local-host `ollama signin` behavior and the documented distinct `ollama` versus `ollama-cloud` provider boundary unchanged. Run focused tests and, if authorized credentials are available, a redacted real Ollama Cloud API-key probe. Do not edit CHANGELOG.md; record user-facing release context in the PR body.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
+- src/commands/models/list.probe.ollama.test.ts
 - src/commands/models/list.probe.targets.test.ts
+- src/gateway/server-methods/models-probe.test.ts
 
 Validation:
 
+- pnpm test src/commands/models/list.probe.ollama.test.ts
 - pnpm test src/commands/models/list.probe.targets.test.ts
 - pnpm test src/gateway/server-methods/models-probe.test.ts
+- With authorized redacted credentials, run the documented Ollama Cloud live probe against a current non-deprecated catalog model.
 
 ## Operator Prompt
 
