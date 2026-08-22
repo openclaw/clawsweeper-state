@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32591601327"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32591601327"
+run_id: "32592986444"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32592986444"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T18:55:14.073Z"
+published_at: "2026-08-22T19:22:15.678Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32591601327](https://github.com/openclaw/clawsweeper/actions/runs/32591601327)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32592986444](https://github.com/openclaw/clawsweeper/actions/runs/32592986444)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-#124689 remains the canonical open bug. Current main selects a deprecated catalog fallback for a provider without an explicit model candidate; a narrow generic repair and regression test are planned. This worker could not apply or validate it because the checkout is read-only, dependencies are absent, and the required sibling ../codex source is unavailable.
+Confirmed narrow fallback defect on main 23854c39: an ollama-cloud probe with only ollama/gemma4:31b-cloud configured falls back to the first catalog row, including deprecated kimi-k2.5. Implementation and validation are blocked because this read-only worker cannot clone required ../codex, install dependencies, or edit the branch.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | planned | canonical | Repair the generic catalog fallback only; do not special-case Ollama or change credential routing. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Artifact is ready for a writable executor after dependency setup and required Codex-source inspection. |
-| cluster:issue-openclaw-openclaw-124689 | open_fix_pr | blocked | canonical | Blocked only by this worker's read-only checkout, missing dependencies, and missing mandatory ../codex source; no maintainer decision is required. |
+| #124689 | keep_canonical | planned | canonical | Open canonical bug; current main still has the documented fallback defect. |
+| #124689 | fix_needed | blocked | canonical | A writable executor must first inspect ../codex directly, then apply and validate the narrow fix. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Ready for a writable repair executor. |
 
 ## Needs Human
 
