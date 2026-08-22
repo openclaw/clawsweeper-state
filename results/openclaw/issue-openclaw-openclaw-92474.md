@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92474"
 mode: "autonomous"
-run_id: "32569374847"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32569374847"
+run_id: "32570321765"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32570321765"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T11:19:41.166Z"
+published_at: "2026-08-22T11:36:30.263Z"
 canonical: "https://github.com/openclaw/openclaw/issues/92474"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/92474"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32569374847](https://github.com/openclaw/clawsweeper/actions/runs/32569374847)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32570321765](https://github.com/openclaw/clawsweeper/actions/runs/32570321765)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/92474
 
 ## Summary
 
-#92474 remains a reproducible resolver-boundary bug: each stdio resolution logs dropped unsafe env keys again. A narrow new fix PR is appropriate, but this checkout is read-only and lacks test dependencies; no branch or validated patch can be produced here.
+Current main still emits the unsafe-stdio-env warning on each resolver invocation. A narrow resolver-local bounded dedupe repair is appropriate, but this read-only checkout has no node_modules, so no patch or validated branch could be produced.
 
 ## Impact
 
@@ -66,13 +66,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/92474
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #92474 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout and unavailable dependencies; the fix remains narrowly specified for the deterministic executor. |
-| cluster:issue-openclaw-openclaw-92474 | build_fix_artifact | planned | canonical | A narrow new fix PR is the only viable canonical implementation path; all earlier PRs are closed and intentionally pursued incompatible write-time validation. |
-| #92484 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
-| #92491 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
-| #92492 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
-| #92670 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
-| #92754 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
+| #92474 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only, dependency-incomplete checkout. The executor should install dependencies, apply the narrow artifact, and validate it. |
+| cluster:issue-openclaw-openclaw-92474 | build_fix_artifact | planned | canonical | A narrow new fix PR remains the canonical path. |
+| #92484 | keep_closed | skipped | related | Closed context only; no mutation. |
+| #92491 | keep_closed | skipped | related | Closed context only; no mutation. |
+| #92492 | keep_closed | skipped | related | Closed context only; no mutation. |
+| #92670 | keep_closed | skipped | related | Closed context only; no mutation. |
+| #92754 | keep_closed | skipped | related | Closed context only; no mutation. |
 
 ## Needs Human
 
