@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the exact-pinned npm plugin-drift remediation path for gateway versions with a trailing numeric packaging suffix. In src/plugins/plugin-version-drift.ts, reuse the existing canonical suffix normalization when forming the exact npm target; preserve raw gateway versions in diagnostic text and preserve legitimate beta prerelease targets. Add a focused owner-boundary regression in src/plugins/plugin-version-drift.test.ts for gatewayVersion "2026.7.1-2" expecting @openclaw/brave-plugin@2026.7.1, and prove it fails before the repair. Confirm existing status and Doctor callers retain the corrected shared command. Do not add configuration, registry availability probes, renderer-specific workarounds, or CHANGELOG.md edits; include release-note context in the PR body.
+Repair the plugin-drift exact npm remediation builder so numeric packaging build suffixes use the same canonical normalization as drift comparison. Keep drift eligibility, plugin ids, exact prerelease behavior such as `2026.6.10-beta.1`, and registry/network behavior unchanged; do not add a fallback or configuration option. Extend the existing owner-boundary command-builder tests with an exact pin whose gatewayVersion is `2026.7.1-2` and whose expected command targets `2026.7.1`; first confirm that case fails on current main. Include concise user-visible release-note context in the PR body, but do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/plugins/plugin-version-drift.ts
 - src/plugins/plugin-version-drift.test.ts
-- src/cli/daemon-cli/status.print.test.ts
-- src/commands/doctor-workspace-status.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs run src/plugins/plugin-version-drift.test.ts
-- node scripts/run-vitest.mjs run src/cli/daemon-cli/status.print.test.ts src/commands/doctor-workspace-status.test.ts
-- node scripts/check-changed.mjs --dry-run -- src/plugins/plugin-version-drift.ts src/plugins/plugin-version-drift.test.ts
+- Add the focused regression case and confirm it fails before the repair with `node scripts/run-vitest.mjs src/plugins/plugin-version-drift.test.ts`.
+- Run `node scripts/run-vitest.mjs src/plugins/plugin-version-drift.test.ts` after the repair.
+- Run `node scripts/run-vitest.mjs src/cli/daemon-cli/status.print.test.ts` to verify the deep-status presentation path.
+- Run `pnpm check:changed -- src/plugins/plugin-version-drift.ts src/plugins/plugin-version-drift.test.ts`.
 
 ## Operator Prompt
 
