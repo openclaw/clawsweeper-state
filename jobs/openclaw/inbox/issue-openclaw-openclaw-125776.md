@@ -67,20 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven dynamic-tool progress duplication in https://github.com/openclaw/openclaw/issues/125776. Preserve the already-known dynamic call ID through Codex result-summary and result-output callbacks, then have Telegram update the same keyed tool progress line. Cover item-first, transcript/server-request-first, and result-first paths where applicable; distinct call IDs must remain separate, and legacy untagged text progress must retain append behavior. Do not deduplicate by tool name or arguments, do not add configuration, and do not edit CHANGELOG.md; put release-note context in the PR body. Credit https://github.com/openclaw/openclaw/pull/125779 as prior source work if its approach is reused.
+Repair https://github.com/openclaw/openclaw/issues/125776 at the dynamic-tool progress producer boundary. Preserve a Codex dynamic tool call's existing callId on result-summary and result-output callbacks, then have Telegram update the structured `tool:&lt;callId>` draft row rather than append id-less text. Keep legacy result payloads without an identity append-only, and never deduplicate by tool name or arguments. Inspect the pinned Codex app-server contract before landing because the review checkout lacked ../codex. Review https://github.com/openclaw/openclaw/pull/125779 only as unmerged source material; do not revive it. Add owner-boundary regression coverage for one call updating from start to summary/output, two same-name calls with different IDs staying distinct, and id-less legacy output. Do not add config or edit CHANGELOG.md; put release-note context in the PR body.
 
 Likely files:
 
 - extensions/codex/src/app-server/event-projector-tool-progress.ts
-- extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
+- src/auto-reply/reply-payload.ts
 - extensions/telegram/src/bot-message-dispatch-turn.ts
+- extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
 - extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
 
 Validation:
 
-- pnpm test extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
-- pnpm test extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
-- pnpm test src/channels/progress-draft-compositor.test.ts
+- node scripts/run-vitest.mjs extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
+- node scripts/run-vitest.mjs extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
+- node scripts/run-vitest.mjs src/channels/progress-draft-compositor.test.ts
+- git diff --check
 
 ## Operator Prompt
 
