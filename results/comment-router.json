@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T21:31:20.767Z",
+  "updated_at": "2026-08-22T21:35:27.800Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5227761926:2026-08-08T19:34:12Z:re_review",
-      "comment_id": "5227761926",
-      "comment_version_key": "5227761926:2026-08-08T19:34:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5227761926",
-      "comment_created_at": "2026-08-08T19:34:12Z",
-      "comment_updated_at": "2026-08-08T19:34:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T14:43:07.677Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5229153211:2026-08-09T01:19:50Z:re_review",
       "comment_id": "5229153211",
@@ -31819,6 +31792,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T21:31:20.767Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126856:5362509435:2026-08-22T21:27:03Z:clawsweeper_needs_human",
+      "comment_id": "5362509435",
+      "comment_version_key": "5362509435:2026-08-22T21:27:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126856#issuecomment-5362509435",
+      "comment_created_at": "2026-08-20T22:04:49Z",
+      "comment_updated_at": "2026-08-22T21:27:03Z",
+      "comment_body_sha256": "9ec9b80cfe1ea99ca69cc28f59432436f5dd467a161772abe661bd0d89b6c66d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126856,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied monitor scenario substitutes the imsg transport and final dispatcher, so it is useful regression coverage but not after-fix native... (sha=90e9d75cb5e8647df02768d52f68a47334e708d0)",
+      "expected_head_sha": "90e9d75cb5e8647df02768d52f68a47334e708d0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T21:35:27.800Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-imessage-self-chat-loop-126468",
+        "head_sha": "90e9d75cb5e8647df02768d52f68a47334e708d0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
