@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T02:58:46.895Z",
+  "updated_at": "2026-08-22T02:58:50.363Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3501:5375479397:2026-08-21T21:13:31Z:re_review",
-      "comment_id": "5375479397",
-      "comment_version_key": "5375479397:2026-08-21T21:13:31Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5375479397",
-      "comment_created_at": "2026-08-21T21:13:31Z",
-      "comment_updated_at": "2026-08-21T21:13:31Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3501,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T21:14:06.882Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/stage-signal-indexes",
-        "head_sha": "b0cdd14de2e7fc882a9479f5172251e94475e4b8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3493:5375479320:2026-08-21T21:13:30Z:re_review",
       "comment_id": "5375479320",
@@ -31530,6 +31483,39 @@
         "kind": "pull_request",
         "branch": "fix/cli-watchdog-promotion-unreachable-125045",
         "head_sha": "f30f13509c4ea8b3d6e29dff8511c2525078ab2c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126307:5341603726:2026-08-22T02:54:06Z:clawsweeper_needs_human",
+      "comment_id": "5341603726",
+      "comment_version_key": "5341603726:2026-08-22T02:54:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126307#issuecomment-5341603726",
+      "comment_created_at": "2026-08-19T11:39:48Z",
+      "comment_updated_at": "2026-08-22T02:54:06Z",
+      "comment_body_sha256": "c5bbdc65ed8aeaff2ab351967a677abcf4f8227bd2bd3812aaf3b844b8989142",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126307,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared sanitizer will remove this reserved delimiter from any non-code text that contains the exact sequence; this is intentional for malformed MiniMax transport, but it is a cros... (sha=818f62f1e4774fa36e9661fb20392e051df376b2)",
+      "expected_head_sha": "818f62f1e4774fa36e9661fb20392e051df376b2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T02:58:50.363Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-minimax-encoded-tool-call-leak",
+        "head_sha": "818f62f1e4774fa36e9661fb20392e051df376b2",
         "cluster_id": null,
         "job_path": null
       }
