@@ -1,6 +1,72 @@
 {
-  "updated_at": "2026-08-22T02:53:15.406Z",
+  "updated_at": "2026-08-22T02:46:32.676Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123405:5288263682:2026-08-21T21:05:42Z:clawsweeper_auto_repair",
+      "comment_id": "5288263682",
+      "comment_version_key": "5288263682:2026-08-21T21:05:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123405#issuecomment-5288263682",
+      "comment_created_at": "2026-08-14T01:13:02Z",
+      "comment_updated_at": "2026-08-21T21:05:42Z",
+      "comment_body_sha256": "e7a15daa1a9de55236f90b4417b8cd2f1ed96763fc3242be47ac7da25e39faf3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123405,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=600cec5ffeb89a5305889d05b66a4424add69ad6)",
+      "expected_head_sha": "600cec5ffeb89a5305889d05b66a4424add69ad6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T21:12:07.635Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-main-ci-test-isolation-v2",
+        "head_sha": "600cec5ffeb89a5305889d05b66a4424add69ad6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127207:5371137716:2026-08-21T20:46:32Z:clawsweeper_needs_human",
+      "comment_id": "5371137716",
+      "comment_version_key": "5371137716:2026-08-21T20:46:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127207#issuecomment-5371137716",
+      "comment_created_at": "2026-08-21T14:21:13Z",
+      "comment_updated_at": "2026-08-21T20:46:32Z",
+      "comment_body_sha256": "e4935c082edfb2309d19be6d966f817ed8df7e515fef09540f4e9b96c53c7ca1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127207,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local read-only checkout lacks tsx, so the strict verifier was not independently run here; wait for the in-progress exact-head validation before merging. (sha=6d1eb5c057add2b294df879e2d67ad0c946f376b)",
+      "expected_head_sha": "6d1eb5c057add2b294df879e2d67ad0c946f376b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T21:12:07.635Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/control-ui-locale-refresh",
+        "head_sha": "6d1eb5c057add2b294df879e2d67ad0c946f376b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127217:5371281283:2026-08-21T21:07:29Z:clawsweeper_needs_human",
       "comment_id": "5371281283",
@@ -31467,86 +31533,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1222:5375660479:2026-08-22T02:52:01Z:clawsweeper_needs_human",
-      "comment_id": "5375660479",
-      "comment_version_key": "5375660479:2026-08-22T02:52:01Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1222#issuecomment-5375660479",
-      "comment_created_at": "2026-08-21T21:35:25Z",
-      "comment_updated_at": "2026-08-22T02:52:01Z",
-      "comment_body_sha256": "6770939f3bf26334f80dfe727289ca5a1d1b31599e08b2e83427943ca17c7b45",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1222,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After deployment or a public-repository allowlist change, Bay deliberately shows a one-hour warming state rather than reusing metrics from the old scope; maintainers should accept tha... (sha=021feff4cb1f2cd3d6b2b781faeaf9342791ade5)",
-      "expected_head_sha": "021feff4cb1f2cd3d6b2b781faeaf9342791ade5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T02:52:54.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bay-authoritative-lifecycle",
-        "head_sha": "021feff4cb1f2cd3d6b2b781faeaf9342791ade5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127704:5377243582:2026-08-22T02:52:39Z:re_review",
-      "comment_id": "5377243582",
-      "comment_version_key": "5377243582:2026-08-22T02:52:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127704#issuecomment-5377243582",
-      "comment_created_at": "2026-08-22T02:00:26Z",
-      "comment_updated_at": "2026-08-22T02:52:39Z",
-      "comment_body_sha256": "fcd0544de181b33e64b41a5ef933cac2a07b9d08423d4168898707bb2716b820",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127704,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T02:53:14.034Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-limited-access-bubble-layout",
-        "head_sha": "35a03643e55d112e9a20b474e7b666c39030fe2d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }

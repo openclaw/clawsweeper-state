@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the dynamic-tool progress identity loss described by this issue. Preserve the existing dynamic call ID through the Codex text result-progress callback and map it in Telegram to the existing `tool:&lt;callId>` compositor row. Do not deduplicate by tool name, arguments, or text; distinct call IDs must stay distinct and legacy untagged summaries must still append. Read the direct @openai/codex contract before implementation if available, then add producer and Telegram regressions covering start→summary, start→full output, same-name distinct calls, and legacy untagged behavior. Do not edit CHANGELOG.md.
+Repair the source-proven dynamic-tool progress duplication in https://github.com/openclaw/openclaw/issues/125776. Preserve the already-known dynamic call ID through Codex result-summary and result-output callbacks, then have Telegram update the same keyed tool progress line. Cover item-first, transcript/server-request-first, and result-first paths where applicable; distinct call IDs must remain separate, and legacy untagged text progress must retain append behavior. Do not deduplicate by tool name or arguments, do not add configuration, and do not edit CHANGELOG.md; put release-note context in the PR body. Credit https://github.com/openclaw/openclaw/pull/125779 as prior source work if its approach is reused.
 
 Likely files:
 
@@ -75,14 +75,12 @@ Likely files:
 - extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
 - extensions/telegram/src/bot-message-dispatch-turn.ts
 - extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
-- src/auto-reply/reply-payload.ts
 
 Validation:
 
 - pnpm test extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
-- pnpm test extensions/codex/src/app-server/run-attempt.test.ts
 - pnpm test extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
-- pnpm check:changed -- extensions/codex/src/app-server/event-projector-tool-progress.ts extensions/telegram/src/bot-message-dispatch-turn.ts src/auto-reply/reply-payload.ts
+- pnpm test src/channels/progress-draft-compositor.test.ts
 
 ## Operator Prompt
 
