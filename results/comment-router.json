@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T13:07:01.998Z",
+  "updated_at": "2026-08-22T13:07:47.857Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125365:5318926166:2026-08-22T05:24:38Z:clawsweeper_needs_human",
-      "comment_id": "5318926166",
-      "comment_version_key": "5318926166:2026-08-22T05:24:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125365#issuecomment-5318926166",
-      "comment_created_at": "2026-08-17T18:58:24Z",
-      "comment_updated_at": "2026-08-22T05:24:38Z",
-      "comment_body_sha256": "109c93b216884335cae3ed959552bb632c2d0ba6cd51cd7138bc00c7d549d3d8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125365,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR body reports tests, but the changed approval path is only shown with an injected Gateway runtime; add a...; Review finding: [medium] Prove approval authorization at the final resolver boundary — extensions/msteams/src/approval-control.ts:82 (sha=ce105d9d39754d672ab2618b647f9e0d5cb29a10)",
-      "expected_head_sha": "ce105d9d39754d672ab2618b647f9e0d5cb29a10",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T05:34:49.037Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "spinen/msteams-native-approval-actions",
-        "head_sha": "ce105d9d39754d672ab2618b647f9e0d5cb29a10",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126618:5354060596:2026-08-22T05:27:05Z:clawsweeper_auto_repair",
       "comment_id": "5354060596",
@@ -32408,6 +32375,53 @@
         "kind": "pull_request",
         "branch": "fix/issue-119992-per-turn-send-budget",
         "head_sha": "18e1cc41627dfd77649f190e2cdf028bea61a131",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119295:5380572115:2026-08-22T13:07:06Z:re_review",
+      "comment_id": "5380572115",
+      "comment_version_key": "5380572115:2026-08-22T13:07:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119295#issuecomment-5380572115",
+      "comment_created_at": "2026-08-22T13:07:06Z",
+      "comment_updated_at": "2026-08-22T13:07:06Z",
+      "comment_body_sha256": "4632a0c47d16ac39a34a2e9ecb9fa56554e3b82f727e0e972c6d2209d0919b3a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119295,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T13:07:46.413Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-webrtc-sdp-answer-limit",
+        "head_sha": "73ae5b6d85c43f213f52bb4eca45c5eeb83c9b69",
         "cluster_id": null,
         "job_path": null
       },
