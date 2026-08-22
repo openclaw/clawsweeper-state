@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92474"
 mode: "autonomous"
-run_id: "32569059765"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32569059765"
+run_id: "32569374847"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32569374847"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T11:09:10.140Z"
+published_at: "2026-08-22T11:19:41.166Z"
 canonical: "https://github.com/openclaw/openclaw/issues/92474"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/92474"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32569059765](https://github.com/openclaw/clawsweeper/actions/runs/32569059765)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32569374847](https://github.com/openclaw/clawsweeper/actions/runs/32569374847)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/92474
 
 ## Summary
 
-#92474 remains a reproducible resolver-boundary bug on main da0cb592: each stdio resolution re-runs the blocked-env callback and logs again. A narrow bounded-dedupe repair is specified, but this worker could not edit or validate it: the checkout is read-only, ../codex is absent, and pnpm install failed twice with EROFS before restoring tsx.
+#92474 remains a reproducible resolver-boundary bug: each stdio resolution logs dropped unsafe env keys again. A narrow new fix PR is appropriate, but this checkout is read-only and lacks test dependencies; no branch or validated patch can be produced here.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/92474
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #92474 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,13 +66,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/92474
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #92474 | fix_needed | blocked | canonical | The defect is clear, but this sandbox cannot write the prescribed branch or install the missing test runtime. |
-| cluster:issue-openclaw-openclaw-92474 | build_fix_artifact | blocked |  | Implementation is blocked only by this worker environment; the artifact is ready for a writable executor. |
-| #92484 | keep_closed | skipped | superseded | Closed context only; no mutation. |
-| #92491 | keep_closed | skipped | superseded | Closed context only; no mutation. |
-| #92492 | keep_closed | skipped | superseded | Closed context only; no mutation. |
-| #92670 | keep_closed | skipped | superseded | Closed context only; no mutation. |
-| #92754 | keep_closed | skipped | superseded | Closed context only; no mutation. |
+| #92474 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout and unavailable dependencies; the fix remains narrowly specified for the deterministic executor. |
+| cluster:issue-openclaw-openclaw-92474 | build_fix_artifact | planned | canonical | A narrow new fix PR is the only viable canonical implementation path; all earlier PRs are closed and intentionally pursued incompatible write-time validation. |
+| #92484 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
+| #92491 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
+| #92492 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
+| #92670 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
+| #92754 | keep_closed | skipped | superseded | Already closed; historical evidence only. |
 
 ## Needs Human
 
