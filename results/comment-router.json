@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T01:11:54.544Z",
+  "updated_at": "2026-08-22T01:13:48.257Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4730496813:2026-06-17T13:06:14Z:re_review",
-      "comment_id": "4730496813",
-      "comment_version_key": "4730496813:2026-06-17T13:06:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4730496813",
-      "comment_created_at": "2026-06-17T13:06:14Z",
-      "comment_updated_at": "2026-06-17T13:06:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T19:19:02.529Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4805535201:2026-06-26T01:06:55Z:re_review",
       "comment_id": "4805535201",
@@ -32107,6 +32080,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125002:5311300889:2026-08-22T01:10:43Z:clawsweeper_needs_human",
+      "comment_id": "5311300889",
+      "comment_version_key": "5311300889:2026-08-22T01:10:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125002#issuecomment-5311300889",
+      "comment_created_at": "2026-08-17T03:05:27Z",
+      "comment_updated_at": "2026-08-22T01:10:43Z",
+      "comment_body_sha256": "59da5d6c59730392203f2a2b9a0c5c9673468300af0927cb260112519cb3efd9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125002,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Resolve compacted reseed across auth changes** - The compaction return path emits prior summary and post-compaction messages without the raw-reseed allowlist after SQLite fallback suppl...; Review finding: [medium] Resolve compacted reseed across auth changes — src/agents/cli-runner/session-history.ts:728 (sha=bc44e6b6c3444f77fb2da1a0a1bae2a791bbac07)",
+      "expected_head_sha": "bc44e6b6c3444f77fb2da1a0a1bae2a791bbac07",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T01:13:48.257Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-reseed-sqlite-store",
+        "head_sha": "bc44e6b6c3444f77fb2da1a0a1bae2a791bbac07",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
