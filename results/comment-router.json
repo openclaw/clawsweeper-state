@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T10:21:30.717Z",
+  "updated_at": "2026-08-22T10:21:31.323Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127704:5377243582:2026-08-22T02:38:20Z:re_review",
-      "comment_id": "5377243582",
-      "comment_version_key": "5377243582:2026-08-22T02:38:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127704#issuecomment-5377243582",
-      "comment_created_at": "2026-08-22T02:00:26Z",
-      "comment_updated_at": "2026-08-22T02:38:20Z",
-      "comment_body_sha256": "0b9284ea6e942d169f51c3fcd42aeeb6016b60032abd8ed26e77033138e47b90",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127704,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T02:39:07.326Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-limited-access-bubble-layout",
-        "head_sha": "8b97362b0617607cf7b1654a43e01f4850be2da2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127761:5377413184:2026-08-22T02:38:21Z:clawsweeper_needs_human",
       "comment_id": "5377413184",
@@ -32674,6 +32627,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127848:5379738222:2026-08-22T10:20:31Z:clawsweeper_needs_human",
+      "comment_id": "5379738222",
+      "comment_version_key": "5379738222:2026-08-22T10:20:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127848#issuecomment-5379738222",
+      "comment_created_at": "2026-08-22T10:20:31Z",
+      "comment_updated_at": "2026-08-22T10:20:31Z",
+      "comment_body_sha256": "51d49154bd9db539dcd3ee02bfc83cd1a86b75949ddc3b7ef04c76bce174087c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127848,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 8 net lines; the shared anchored matcher is the canonical way to remove duplicated producer-string handling, but it should remain the only terminal-stream mat... (sha=44b3d452c9711e85f39debdd29a4e26cb6280ea5)",
+      "expected_head_sha": "44b3d452c9711e85f39debdd29a4e26cb6280ea5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T10:21:31.323Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/bug-03",
+        "head_sha": "44b3d452c9711e85f39debdd29a4e26cb6280ea5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
