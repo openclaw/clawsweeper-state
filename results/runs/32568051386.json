@@ -1,0 +1,100 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-92474",
+  "mode": "autonomous",
+  "run_id": "32568051386",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32568051386",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-92474.md",
+  "published_at": "2026-08-22T10:48:08.280Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/92474",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/92474",
+  "canonical_pr": null,
+  "summary": "Current main remains da0cb592ddbe3d4e0c322db68545cf0fdc3f8fe1. The resolver re-emits the blocked-stdio-env warning on every resolution while correctly dropping the key. A narrow resolver-local dedupe plus regression is ready to implement, but this worker cannot modify or validate: the checkout is read-only, node_modules is absent, and the required sibling ../codex source checkout is unavailable.",
+  "actions": [
+    {
+      "target": "#92474",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Implementation and required validation are blocked by read-only filesystem access, missing dependencies, and the unavailable mandatory ../codex checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-92474",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Narrow new-fix-PR plan retained for an executor with a writable checkout, dependencies, and the required Codex source."
+    },
+    {
+      "target": "#92484",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or revival action."
+    },
+    {
+      "target": "#92491",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or revival action."
+    },
+    {
+      "target": "#92492",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or revival action."
+    },
+    {
+      "target": "#92670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or revival action."
+    },
+    {
+      "target": "#92754",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92474",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or revival action."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 5
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
