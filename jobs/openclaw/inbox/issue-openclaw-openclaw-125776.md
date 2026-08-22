@@ -67,20 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Codex dynamic-tool result-summary path so its existing canonical call ID reaches Telegram progress composition as tool:&lt;callId>. Keep distinct call IDs separate and preserve append behavior for summaries that truly lack usable identity. Add a regression that fails before the repair for structured start plus result summary of one call ID, plus coverage for distinct IDs and unkeyed legacy summaries. Keep the repair at the producer/callback boundary; do not deduplicate by tool name, arguments, or text.
+Repair https://github.com/openclaw/openclaw/issues/125776 at the dynamic-tool progress producer boundary. Preserve a Codex dynamic tool call's existing callId on result-summary and result-output callbacks, then have Telegram update the structured `tool:&lt;callId>` draft row rather than append id-less text. Keep legacy result payloads without an identity append-only, and never deduplicate by tool name or arguments. Inspect the pinned Codex app-server contract before landing because the review checkout lacked ../codex. Review https://github.com/openclaw/openclaw/pull/125779 only as unmerged source material; do not revive it. Add owner-boundary regression coverage for one call updating from start to summary/output, two same-name calls with different IDs staying distinct, and id-less legacy output. Do not add config or edit CHANGELOG.md; put release-note context in the PR body.
 
 Likely files:
 
 - extensions/codex/src/app-server/event-projector-tool-progress.ts
+- src/auto-reply/reply-payload.ts
 - extensions/telegram/src/bot-message-dispatch-turn.ts
-- src/channels/progress-draft-lines.test.ts
 - extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
+- extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
 
 Validation:
 
-- Run the focused Codex app-server dynamic-tool projector tests.
-- Run the focused Telegram progress-update tests.
-- Run the shared progress line-identity tests and verify one row for start plus result with the same call ID.
+- node scripts/run-vitest.mjs extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
+- node scripts/run-vitest.mjs extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
+- node scripts/run-vitest.mjs src/channels/progress-draft-compositor.test.ts
+- git diff --check
 
 ## Operator Prompt
 
