@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127399"
 mode: "autonomous"
-run_id: "32564523570"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32564523570"
+run_id: "32566017234"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32566017234"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T09:26:04.597Z"
+published_at: "2026-08-22T10:03:41.124Z"
 canonical: "https://github.com/openclaw/openclaw/issues/127399"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/127399"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32564523570](https://github.com/openclaw/clawsweeper/actions/runs/32564523570)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32566017234](https://github.com/openclaw/clawsweeper/actions/runs/32566017234)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/127399
 
 ## Summary
 
-Confirmed source-level regression on main 3ae680f7143336e6918f8819163a3cbf21882e92: dispatch custody is persisted, but an identityless adapter rejection falls through as retryable and can rearm generated media. Implementation is blocked in this read-only checkout: ../codex is absent (required direct Codex-source gate) and Vitest cannot start because tsx is not installed.
+#127399 remains the open canonical issue. Static tracing matches the reported outbound-evidence gap, but this read-only checkout has no dependencies (`tsx` is missing), and ../codex is absent, so the required regression-first implementation and Codex hard-gate inspection cannot be completed here.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Confirmed source-level regression on main 3ae680f7143336e6918f8819163a3cbf21882e
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127399 | fix_needed | blocked | canonical | Need a writable checkout with dependencies plus the required ../codex source checkout before implementation, regression proof, review, and PR creation. |
-| cluster:issue-openclaw-openclaw-127399 | build_fix_artifact | planned | canonical | Narrow implementation plan is ready for an executor with a writable, dependency-complete checkout. |
+| #127399 | fix_needed | planned | canonical | A narrow owner-boundary repair is planned, but this worker cannot modify or validate the branch. |
+| cluster:issue-openclaw-openclaw-127399 | build_fix_artifact | planned | canonical | Execute this artifact in a writable dependency-complete checkout after directly inspecting the required Codex source. |
 
 ## Needs Human
 
