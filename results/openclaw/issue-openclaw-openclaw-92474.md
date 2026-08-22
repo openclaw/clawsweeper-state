@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92474"
 mode: "autonomous"
-run_id: "32564717549"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32564717549"
+run_id: "32564979657"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32564979657"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T09:31:17.704Z"
+published_at: "2026-08-22T09:35:56.791Z"
 canonical: "https://github.com/openclaw/openclaw/issues/92474"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/92474"
 canonical_pr: null
-actions_total: 7
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32564717549](https://github.com/openclaw/clawsweeper/actions/runs/32564717549)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32564979657](https://github.com/openclaw/clawsweeper/actions/runs/32564979657)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/92474
 
 ## Summary
 
-Current main reproduces the source-level defect: every dropped stdio env key reaches an unconditional warning callback during each transport resolution. A narrow runtime-only repair is defined, but this worker cannot edit or validate it: the checkout is read-only, dependencies are missing, and the required ../codex source checkout is absent.
+#92474 remains reproducible on main: each stdio transport resolution invokes the dropped-env warning callback. The repair is narrow, but this worker cannot modify or validate the branch because the checkout is read-only and dependencies/Corepack cannot write their required caches.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,8 @@ Current main reproduces the source-level defect: every dropped stdio env key rea
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #92474 | fix_needed | blocked | canonical | Only implementation is blocked by this immutable, dependency-less checkout and unavailable mandatory Codex source checkout; the repair artifact is ready for an executor. |
-| cluster:issue-openclaw-openclaw-92474 | build_fix_artifact | planned |  | Narrow compatible runtime-only fix; do not revive prior write-time validation or migration proposals. |
-| #92484 | keep_closed | skipped | related | Already closed; historical context only. |
-| #92491 | keep_closed | skipped | related | Already closed; historical context only. |
-| #92492 | keep_closed | skipped | related | Already closed; historical context only. |
-| #92670 | keep_closed | skipped | related | Already closed; historical context only. |
-| #92754 | keep_closed | skipped | related | Already closed; historical context only. |
+| #92474 | fix_needed | blocked | canonical | Implementation is blocked only by this read-only worker environment. The provided checkout has no writable sibling ../codex source checkout, and validation dependencies/cache cannot be installed. |
+| cluster:issue-openclaw-openclaw-92474 | build_fix_artifact | planned | canonical | Prepare one narrow new PR from clawsweeper/issue-openclaw-openclaw-92474 when a writable executor is available. |
 
 ## Needs Human
 
