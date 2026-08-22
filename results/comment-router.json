@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T01:09:46.968Z",
+  "updated_at": "2026-08-22T01:10:25.271Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4600442002:2026-06-02T08:42:31Z:re_review",
-      "comment_id": "4600442002",
-      "comment_version_key": "4600442002:2026-06-02T08:42:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4600442002",
-      "comment_created_at": "2026-06-02T08:42:31Z",
-      "comment_updated_at": "2026-06-02T08:42:31Z",
-      "comment_body_sha256": "74f3e5a0c55d95ae2bd402bec13147fc3ca9bb67b47f35b8ca120990924fb022",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T19:19:02.529Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4600478603:2026-06-02T08:45:25Z:re_review",
       "comment_id": "4600478603",
@@ -31969,6 +31942,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127681:5376488025:2026-08-22T01:09:16Z:clawsweeper_needs_human",
+      "comment_id": "5376488025",
+      "comment_version_key": "5376488025:2026-08-22T01:09:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127681#issuecomment-5376488025",
+      "comment_created_at": "2026-08-21T23:37:02Z",
+      "comment_updated_at": "2026-08-22T01:09:16Z",
+      "comment_body_sha256": "ad6b710db1363ef665ec19ed3e60f345471d521a8c93052a92d8d9f2a8d6dd0a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127681,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The force-pushed head still has Android build, test, and lint checks in progress, so it should not merge until those exact-head checks finish successfully. (sha=8b444044ac192f20ea65c6dbc50e5a6bac0fdbaa)",
+      "expected_head_sha": "8b444044ac192f20ea65c6dbc50e5a6bac0fdbaa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T01:10:25.271Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "8b444044ac192f20ea65c6dbc50e5a6bac0fdbaa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
