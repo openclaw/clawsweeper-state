@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T11:44:53.383Z",
+  "updated_at": "2026-08-22T11:44:54.643Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127697:5376688438:2026-08-22T03:59:55Z:clawsweeper_needs_human",
-      "comment_id": "5376688438",
-      "comment_version_key": "5376688438:2026-08-22T03:59:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127697#issuecomment-5376688438",
-      "comment_created_at": "2026-08-22T00:13:13Z",
-      "comment_updated_at": "2026-08-22T03:59:55Z",
-      "comment_body_sha256": "24292822112f98ad19c917e274eb1611aa3c521a8ea1d288e409abea6369f81d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127697,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve redaction for unquoted structured credential values (P1)** - The new tool-result set removes the prior config-assignment patterns, so api_key: arbitrarysecret no longer matches: the surviving environmen...; Review finding: [P1] Preserve redaction for unquoted structured credential values — src/logging/redact-patterns.ts:253-274 - [high] Unquoted configuration credentials can escape m... (sha=ddacbad376e3e9c696ec3cd6a477f9d2b28670a9)",
-      "expected_head_sha": "ddacbad376e3e9c696ec3cd6a477f9d2b28670a9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T04:00:58.535Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/redact-tool-payload-source-127640",
-        "head_sha": "ddacbad376e3e9c696ec3cd6a477f9d2b28670a9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:16:5304620123:2026-08-22T03:59:33Z:clawsweeper_auto_repair",
       "comment_id": "5304620123",
@@ -32732,6 +32699,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T11:44:53.383Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:598:5377219825:2026-08-22T11:36:52Z:clawsweeper_needs_human",
+      "comment_id": "5377219825",
+      "comment_version_key": "5377219825:2026-08-22T11:36:52Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/598#issuecomment-5377219825",
+      "comment_created_at": "2026-08-22T01:55:30Z",
+      "comment_updated_at": "2026-08-22T11:36:52Z",
+      "comment_body_sha256": "f0c10d81c504ef2c718bbc5f858e86ad852dc42775a857ae57e34aca90606a6c",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 598,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Defer mutation tracking until the host accepts the lease (P2)** - beginInteractionMutation() runs before foregroundModifierClickWithOutcome can reject a contested or invalid snapshot. That makes command teardown...; Review finding: [P2] Defer mutation tracking until the host accepts the lease — Apps/CLI/Sources/PeekabooCLI/Commands/Interaction/ClickCommand.swift:800 - [medium] Pre-lease mutat... (sha=5d20d159c7aa42c8af04d64ccdc92903982826d6)",
+      "expected_head_sha": "5d20d159c7aa42c8af04d64ccdc92903982826d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T11:44:54.643Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cua-parity-input-gaps",
+        "head_sha": "5d20d159c7aa42c8af04d64ccdc92903982826d6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
