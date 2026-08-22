@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-21T23:58:08.753Z",
+  "updated_at": "2026-08-22T00:02:07.122Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127215:5371137606:2026-08-21T18:48:51Z:clawsweeper_needs_human",
-      "comment_id": "5371137606",
-      "comment_version_key": "5371137606:2026-08-21T18:48:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127215#issuecomment-5371137606",
-      "comment_created_at": "2026-08-21T14:21:12Z",
-      "comment_updated_at": "2026-08-21T18:48:51Z",
-      "comment_body_sha256": "d76ddb359d195bd399a38a49cab0c2a2a47b9caeffa05a587b68c6f714a31b68",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127215,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Strip GitHub credentials before invoking npm (P2)** - This is a late finding on the unchanged reviewed head: the workflow exports GH_TOKEN to the collector, and this helper forwards it to npm view by copying pro...; Review finding: [P2] Strip GitHub credentials before invoking npm — scripts/release-publication-eligibility.mts:173-179 - [medium] npm subprocess inherits GH_TOKEN — scripts/relea... (sha=64f59cd84e6bfb37272fac5c681ea199316ae2fc)",
-      "expected_head_sha": "64f59cd84e6bfb37272fac5c681ea199316ae2fc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T18:51:43.819Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-publication-eligibility-v1",
-        "head_sha": "64f59cd84e6bfb37272fac5c681ea199316ae2fc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127240:5372008838:2026-08-21T18:38:12Z:clawsweeper_needs_human",
       "comment_id": "5372008838",
@@ -32114,6 +32081,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127652:5375868507:2026-08-22T00:01:27Z:clawsweeper_needs_human",
+      "comment_id": "5375868507",
+      "comment_version_key": "5375868507:2026-08-22T00:01:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127652#issuecomment-5375868507",
+      "comment_created_at": "2026-08-21T22:02:25Z",
+      "comment_updated_at": "2026-08-22T00:01:27Z",
+      "comment_body_sha256": "e8ff8cf9d68a55fa7314599c672c6c936280b0aeb78404cb48c70939fb6bc1b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127652,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the linked Windows proof does not establish that cancelling one local-shell scope cannot terminate the...; Review finding: [P2] Settle the root result before descendant-held output reaches EOF — src/process/supervisor/service-child-relay-host.ts:210-211 - [medium] Validate the native F... (sha=dfd5adca6c9ba40f071316f9b2a7159836ac0534)",
+      "expected_head_sha": "dfd5adca6c9ba40f071316f9b2a7159836ac0534",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T00:02:07.122Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/bold-blackburn-f5807a",
+        "head_sha": "dfd5adca6c9ba40f071316f9b2a7159836ac0534",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
