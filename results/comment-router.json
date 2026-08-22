@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T10:21:26.005Z",
+  "updated_at": "2026-08-22T10:21:30.717Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127722:5376893105:2026-08-22T02:30:52Z:clawsweeper_needs_human",
-      "comment_id": "5376893105",
-      "comment_version_key": "5376893105:2026-08-22T02:30:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127722#issuecomment-5376893105",
-      "comment_created_at": "2026-08-22T00:53:26Z",
-      "comment_updated_at": "2026-08-22T02:30:52Z",
-      "comment_body_sha256": "edc619ca6da0e9cf1a6fc1226619b1210ccb3bd38114e77dc6897c66dee2b70a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127722,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the migrated approval boundary** - untrusted is rewritten to on-request, but the required Codex 0.149 source was unavailable, so the candidate cannot establish that existing auth...; Review finding: [high] Verify the migrated approval boundary — extensions/codex/doctor-contract-api.ts:124 (sha=ee5ead24b1b46a3560f28f8d57e0afcd911acacb)",
-      "expected_head_sha": "ee5ead24b1b46a3560f28f8d57e0afcd911acacb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T02:38:07.017Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/beta3-candidate-final-20260821",
-        "head_sha": "ee5ead24b1b46a3560f28f8d57e0afcd911acacb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127704:5377243582:2026-08-22T02:38:20Z:re_review",
       "comment_id": "5377243582",
@@ -32660,6 +32627,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:97135:5379738725:2026-08-22T10:20:40Z:re_review",
+      "comment_id": "5379738725",
+      "comment_version_key": "5379738725:2026-08-22T10:20:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/97135#issuecomment-5379738725",
+      "comment_created_at": "2026-08-22T10:20:40Z",
+      "comment_updated_at": "2026-08-22T10:20:40Z",
+      "comment_body_sha256": "d87e705611540d6cc84620a3c83e54f2e601ca9ab6d02e00f7f928293b9d9d0d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 97135,
+      "author": "litang9",
+      "author_id": 141409885,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T10:21:28.726Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/hide-recovered-failed-progress",
+        "head_sha": "4a47ee4af989fa7eb580872c234969e1e88100e4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
