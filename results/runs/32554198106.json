@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127784",
+  "mode": "autonomous",
+  "run_id": "32554198106",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32554198106",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127784.md",
+  "published_at": "2026-08-22T05:35:34.417Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127784",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127784",
+  "canonical_pr": null,
+  "summary": "#127784 is the canonical open bug. Current main directly inlines inbound context into runtime-only prompt text, while submission bypasses the existing hidden carrier. A narrow repair is planned, but this read-only checkout lacks both the mandatory ../codex source checkout and test dependencies, so no branch or validated PR can be produced here.",
+  "actions": [
+    {
+      "target": "#127784",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127784",
+      "candidate_fix": null,
+      "reason": "A writable dependency-ready checkout with ../codex is required before changing code or claiming a validated repair."
+    },
+    {
+      "target": "#127276",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context only; no mutation or close action is applicable."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127784",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127784",
+      "candidate_fix": null,
+      "reason": "Narrow new-fix-PR plan prepared for a writable executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
