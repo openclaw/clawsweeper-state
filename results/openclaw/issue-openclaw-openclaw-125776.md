@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125776"
 mode: "autonomous"
-run_id: "32538963869"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32538963869"
+run_id: "32539314465"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32539314465"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T00:10:19.563Z"
+published_at: "2026-08-22T00:17:16.449Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32538963869](https://github.com/openclaw/clawsweeper/actions/runs/32538963869)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32539314465](https://github.com/openclaw/clawsweeper/actions/runs/32539314465)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 ## Summary
 
-#125776 remains the canonical, non-security bug on current main 7dfe406d203bacd2d5d34702316fe8373da4c791. The local owner boundary drops the dynamic call ID: Codex emits onToolResult with text only, the embedded runner forwards text only, and Telegram appends an unkeyed draft line. Implementation is blocked because the mandatory sibling ../codex source checkout is absent and the read-only workspace cannot clone it or create the required regression/PR branch.
+#125776 remains a reproducible narrow bug: Codex emits a result payload without the known item identity, and Telegram renders that payload as an unkeyed progress line. A focused new-PR repair is specified, but this read-only worker cannot create the regression, inspect the mandatory sibling Codex source checkout, or run tests: ../codex is absent, node_modules is absent, and pnpm fails while attempting a read-only Corepack cache write.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #125776 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #116512 | keep_related | planned | related | Keep open as an adjacent progress-rendering issue; it is not duplicate cleanup for this implementation job. |
-| #125776 | fix_needed | blocked | canonical | A narrow repair is indicated, but no code or regression can be authored until the direct Codex-source gate is satisfied in a writable checkout. |
-| #125779 | keep_closed | skipped | superseded | Already closed; do not mutate or treat it as the canonical fix. |
-| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor after it first restores and inspects ../codex. |
+| #116512 | keep_related | planned | related | Keep open independently; it is not a duplicate of the dynamic-tool result identity defect. |
+| #125776 | fix_needed | planned | canonical | Create a narrow credited replacement PR after direct Codex contract inspection and a failing owner-boundary regression are available. |
+| #125779 | keep_closed | skipped | superseded | Closed context only; retain as credited prior work, with no mutation. |
+| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | planned | canonical | Artifact is ready for an executor with a writable checkout, dependencies, and the required sibling Codex source. |
 
 ## Needs Human
 
