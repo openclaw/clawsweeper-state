@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32591601327"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32591601327"
+run_id: "32593526782"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32593526782"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T18:55:14.073Z"
+published_at: "2026-08-22T19:31:47.046Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32591601327](https://github.com/openclaw/clawsweeper/actions/runs/32591601327)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32593526782](https://github.com/openclaw/clawsweeper/actions/runs/32593526782)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-#124689 remains the canonical open bug. Current main selects a deprecated catalog fallback for a provider without an explicit model candidate; a narrow generic repair and regression test are planned. This worker could not apply or validate it because the checkout is read-only, dependencies are absent, and the required sibling ../codex source is unavailable.
+Current main contains the reported fallback defect, but this read-only checkout has no dependencies and cannot create the required branch/test changes or run validation. A narrow, executor-ready fix artifact is provided.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | planned | canonical | Repair the generic catalog fallback only; do not special-case Ollama or change credential routing. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Artifact is ready for a writable executor after dependency setup and required Codex-source inspection. |
-| cluster:issue-openclaw-openclaw-124689 | open_fix_pr | blocked | canonical | Blocked only by this worker's read-only checkout, missing dependencies, and missing mandatory ../codex source; no maintainer decision is required. |
+| #124689 | fix_needed | blocked | canonical | Implementation is well-scoped, but the worker cannot edit the tree, install dependencies, run the regression, or satisfy the required direct ../codex inspection. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Executor must apply and validate the narrow repair in a writable checkout. |
 
 ## Needs Human
 
