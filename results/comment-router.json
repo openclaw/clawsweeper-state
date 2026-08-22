@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T08:57:09.665Z",
+  "updated_at": "2026-08-22T08:57:31.123Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115405:5117935490:2026-08-22T01:39:42Z:clawsweeper_needs_human",
-      "comment_id": "5117935490",
-      "comment_version_key": "5117935490:2026-08-22T01:39:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115405#issuecomment-5117935490",
-      "comment_created_at": "2026-07-29T12:46:41Z",
-      "comment_updated_at": "2026-08-22T01:39:42Z",
-      "comment_body_sha256": "4d8399629949c1a2447e5e59d54a306909d518aed55364237141280209142233",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115405,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the real CLI child-to-loopback trace targets 49f09c0e43 rather than current head 56bcde16bcc5ac9a4a03c... (sha=56bcde16bcc5ac9a4a03cf4b734d729c96770bc8)",
-      "expected_head_sha": "56bcde16bcc5ac9a4a03cf4b734d729c96770bc8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T01:54:03.754Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/delegation-capability-cli-loopback",
-        "head_sha": "56bcde16bcc5ac9a4a03cf4b734d729c96770bc8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118361:5161527102:2026-08-21T10:35:44Z:clawsweeper_auto_repair",
       "comment_id": "5161527102",
@@ -32333,6 +32300,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3510:5379428705:2026-08-22T08:56:50Z:re_review",
+      "comment_id": "5379428705",
+      "comment_version_key": "5379428705:2026-08-22T08:56:50Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3510#issuecomment-5379428705",
+      "comment_created_at": "2026-08-22T08:56:50Z",
+      "comment_updated_at": "2026-08-22T08:56:50Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3510,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T08:57:29.682Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/prepublication-lease-noop",
+        "head_sha": "9dea04db4e2d0b513bdecc997031f0fb94b2fa4a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
