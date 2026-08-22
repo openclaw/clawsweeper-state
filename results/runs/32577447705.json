@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-105228",
+  "mode": "autonomous",
+  "run_id": "32577447705",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32577447705",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-105228.md",
+  "published_at": "2026-08-22T14:12:56.218Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/105228",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/105228",
+  "canonical_pr": null,
+  "summary": "Source inspection identifies the ACP dispatch-before-registration window, but implementation is blocked: the filesystem is read-only, required test dependencies are absent, and the mandatory sibling ../codex checkout is unavailable for direct protocol inspection.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/105228",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "No GitHub mutation or local implementation is safe without writable workspace, dependencies, and the required direct Codex source check."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable environment with dependencies and the required sibling ../codex checkout so the narrow repair and regression can be implemented and validated."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
