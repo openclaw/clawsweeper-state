@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125776"
 mode: "autonomous"
-run_id: "32553820578"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32553820578"
+run_id: "32557514633"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32557514633"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T05:29:59.303Z"
+published_at: "2026-08-22T06:54:06.199Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32553820578](https://github.com/openclaw/clawsweeper/actions/runs/32553820578)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32557514633](https://github.com/openclaw/clawsweeper/actions/runs/32557514633)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 ## Summary
 
-Current main visibly drops a dynamic tool result’s call identity before Telegram receives it, but implementation is blocked: the mandatory direct ../codex protocol-source check cannot run because the sibling checkout is absent, and focused tests cannot start because this read-only checkout has no node_modules (missing tsx). No code or GitHub state was changed.
+#125776 is the canonical, reproducible dynamic-tool progress identity-loss bug on main 2fdfd64a1aa9929d905d4aef39453c545efdbc16. A narrow new-fix PR remains appropriate, but this worker cannot implement or validate it: the required ../codex sibling checkout is absent, and the read-only environment prevents cloning it or installing the missing tsx test dependency.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main visibly drops a dynamic tool result’s call identity before Telegr
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #125776 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Current main visibly drops a dynamic tool result’s call identity before Telegr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #116512 | keep_related | planned | related | Keep open as a related, independent progress-identity report. |
-| #125776 | fix_needed | blocked | canonical | Await a pinned sibling ../codex checkout for direct contract inspection and an install-capable checkout for the required failing-regression and post-fix validation. |
-| #125779 | keep_closed | skipped | superseded | Already closed; do not revive or mutate it. |
-| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | blocked | canonical | Narrow repair plan is recorded, but must not execute until the direct Codex source contract and focused test environment are available. |
+| #116512 | keep_related | planned | related | Keep open independently; it is adjacent Telegram progress work, not a duplicate. |
+| #125776 | fix_needed | blocked | canonical | Implementation is blocked only by the mandated Codex contract checkout and read-only dependency environment; do not open a PR until both are available. |
+| #125779 | keep_closed | skipped | related | Already closed; retain as historical source material only. |
+| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | planned | canonical | A mutable executor with the pinned Codex source and dependencies can implement this as one narrow PR. |
 
 ## Needs Human
 
