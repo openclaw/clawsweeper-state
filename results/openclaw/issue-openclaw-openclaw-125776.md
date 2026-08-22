@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125776"
 mode: "autonomous"
-run_id: "32559179869"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32559179869"
+run_id: "32559396915"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32559396915"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T07:26:53.926Z"
+published_at: "2026-08-22T07:32:40.800Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32559179869](https://github.com/openclaw/clawsweeper/actions/runs/32559179869)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32559396915](https://github.com/openclaw/clawsweeper/actions/runs/32559396915)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 ## Summary
 
-#125776 is a real owner-boundary bug on main: Codex dynamic-tool result callbacks discard the known call ID, so Telegram appends an unkeyed line instead of replacing `tool:<callId>`. Implementation is blocked because the mandatory direct `../codex` source checkout is absent and this read-only sandbox cannot provision it.
+#125776 is a reproducible source-level canonical bug: the dynamic-tool start reaches Telegram with toolCallId, but result callbacks discard it and render unkeyed text. Implementation is blocked because this environment is read-only, dependencies cannot be installed, and the mandatory ../codex contract checkout is absent.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #125776 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #116512 | keep_related | planned | related | Keep open as an adjacent, independent bug family. |
-| #125776 | fix_needed | blocked | canonical | Do not implement or claim the Codex protocol contract until the executor directly inspects the pinned `../codex` source. Local focused validation is also unavailable because `node_modules` is absent and installation is disallowed. |
-| #125779 | keep_closed | skipped | superseded | Historical source material only; no mutation is valid for an already-closed PR. |
-| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | blocked | canonical | Artifact is ready for the executor once the direct Codex source contract check can run. |
+| #116512 | keep_related | planned | related | Keep open independently; it is not duplicate cleanup for this dynamic-tool repair. |
+| #125776 | fix_needed | blocked | canonical | Executor needs a writable checkout with dependencies and the required direct ../codex inspection before implementing and validating the narrow repair. |
+| #125779 | keep_closed | skipped | superseded | Already closed; preserve it only as historical source material. |
+| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | planned | canonical | A fresh ClawSweeper PR is appropriate once the executor has a writable validated environment. |
 
 ## Needs Human
 
