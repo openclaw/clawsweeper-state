@@ -67,23 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Codex dynamic-tool Telegram progress duplication for https://github.com/openclaw/openclaw/issues/125776. First establish the focused failing regression. Preserve the dynamic call’s existing identity through the result-progress callback at the shared owner boundary, then let Telegram update the existing tool:&lt;callId> draft row. Keep identity-less legacy result summaries append-only; do not deduplicate by tool name, arguments, or text. Cover same-ID start→summary/output replacement, distinct identical calls, and untagged legacy output. Use https://github.com/openclaw/openclaw/pull/125779 only as historical context because it was closed unmerged. Do not edit CHANGELOG.md; put user-visible release-note context in the PR body or commit message.
+Repair the source-proven dynamic-tool progress duplication in https://github.com/openclaw/openclaw/issues/125776. Preserve the already-known dynamic call ID through Codex result-summary and result-output callbacks, then have Telegram update the same keyed tool progress line. Cover item-first, transcript/server-request-first, and result-first paths where applicable; distinct call IDs must remain separate, and legacy untagged text progress must retain append behavior. Do not deduplicate by tool name or arguments, do not add configuration, and do not edit CHANGELOG.md; put release-note context in the PR body. Credit https://github.com/openclaw/openclaw/pull/125779 as prior source work if its approach is reused.
 
 Likely files:
 
 - extensions/codex/src/app-server/event-projector-tool-progress.ts
-- src/auto-reply/get-reply-options.types.ts
-- src/auto-reply/reply/agent-runner-embedded-candidate.ts
-- extensions/telegram/src/bot-message-dispatch-turn.ts
 - extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
+- extensions/telegram/src/bot-message-dispatch-turn.ts
 - extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
 
 Validation:
 
 - pnpm test extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
 - pnpm test extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
-- Run focused shared reply-progress contract coverage for the changed callback type.
-- Capture Telegram/mock-gateway after-fix proof that one call ID produces one updated progress row.
+- pnpm test src/channels/progress-draft-compositor.test.ts
 
 ## Operator Prompt
 
