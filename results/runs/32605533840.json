@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128017",
+  "mode": "autonomous",
+  "run_id": "32605533840",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32605533840",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128017.md",
+  "published_at": "2026-08-22T23:44:09.507Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128017",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128017",
+  "canonical_pr": null,
+  "summary": "#128017 remains the canonical open bug. Current main (8f18edfa10ab52b83083da4d1fd4e0f7e2d2e43f) has the confirmed owner-path defect: query.ts removes related blocks only, so standalone generated OpenClaw marker lines participate in raw-body scoring and snippet selection. No local change or PR could be produced because this worker checkout is read-only, dependencies are absent, and the required sibling ../codex checkout is unavailable.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/128017",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128017",
+      "candidate_fix": null,
+      "reason": "The issue reports a narrow existing plugin behavior regression with no security signal or duplicate candidate."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/128017",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128017",
+      "candidate_fix": null,
+      "reason": "A single canonical body-normalization helper in query.ts should feed both raw-body scoring and snippet selection."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/128017",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128017",
+      "candidate_fix": null,
+      "reason": "The implementation is narrow and specified, but must run in a writable checkout with dependencies and ../codex available."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/128017",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128017",
+      "candidate_fix": null,
+      "reason": "The job authorizes one replacement implementation PR and forbids merge or issue closure."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
