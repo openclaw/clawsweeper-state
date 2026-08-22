@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T08:58:51.804Z",
+  "updated_at": "2026-08-22T08:59:32.945Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125707:5325833647:2026-08-22T01:40:36Z:clawsweeper_needs_human",
-      "comment_id": "5325833647",
-      "comment_version_key": "5325833647:2026-08-22T01:40:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125707#issuecomment-5325833647",
-      "comment_created_at": "2026-08-18T08:48:15Z",
-      "comment_updated_at": "2026-08-22T01:40:36Z",
-      "comment_body_sha256": "234ae269ce17ff51c23298e0967da001f62dde410a344bebb74d2e1159cd148e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125707,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The fork-probe value overrides an existing model_reasoning_effort setting in the operator-native Codex home; merging needs an explicit precedence decision and conflict-case upgrade pr... (sha=3925bd89face82ba2f919a0c4733e8d56c2c76d9)",
-      "expected_head_sha": "3925bd89face82ba2f919a0c4733e8d56c2c76d9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T01:54:03.754Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cached-codex-effort-route",
-        "head_sha": "d78ae8b70022200299d655b034da9c4329c29def",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126117:5336526088:2026-08-22T01:48:54Z:clawsweeper_needs_human",
       "comment_id": "5336526088",
@@ -32343,6 +32310,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127808:5379435547:2026-08-22T08:58:42Z:re_review",
+      "comment_id": "5379435547",
+      "comment_version_key": "5379435547:2026-08-22T08:58:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127808#issuecomment-5379435547",
+      "comment_created_at": "2026-08-22T08:58:42Z",
+      "comment_updated_at": "2026-08-22T08:58:42Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127808,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T08:59:30.915Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/new-session-completion-owner",
+        "head_sha": "9a34563b0f4e7af43da906864c7cbf9a04677900",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
