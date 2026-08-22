@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32594162885"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32594162885"
+run_id: "32594763258"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32594763258"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T19:48:20.518Z"
+published_at: "2026-08-22T20:01:02.846Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32594162885](https://github.com/openclaw/clawsweeper/actions/runs/32594162885)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32594763258](https://github.com/openclaw/clawsweeper/actions/runs/32594763258)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-#124689 remains the canonical open bug. Current main deterministically selects deprecated `ollama-cloud/kimi-k2.5` when configured defaults contain only `ollama/gemma4:31b-cloud`, because catalog fallback preserves the first same-provider row. A narrow generic status filter fixes it while retaining explicit legacy selections. Implementation and local validation are blocked because this worker checkout is read-only, has no dependencies, and the required sibling ../codex checkout is absent.
+The remaining Ollama Cloud diagnostic defect is reproducible by source inspection on main 736b0c424b7bc1f330d264f5c79a05cd6a4c30c2, with a narrow two-file repair plan. Implementation and validation are blocked because this read-only worker cannot write a branch or initialize Corepack; the required sibling ../codex checkout is also absent.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | The code-level repair path is clear, but branch edits and required validation cannot run in this read-only environment. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Produce one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-124689. |
+| #124689 | fix_needed | blocked | canonical | A narrow status-aware catalog-fallback repair is warranted, but this worker cannot create the required branch delta or run the required tests. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Create the narrow credited fix PR from the supplied ClawSweeper branch once a writable checkout with dependencies and the required Codex source checkout is available. |
 
 ## Needs Human
 
