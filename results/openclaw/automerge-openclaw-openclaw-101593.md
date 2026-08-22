@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-101593"
 mode: "autonomous"
-run_id: "32533438690"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32533438690"
-head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
-workflow_conclusion: "success"
+run_id: "32551162083"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32551162083"
+head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-21T22:41:47.281Z"
-canonical: "https://github.com/openclaw/openclaw/pull/101593"
+published_at: "2026-08-22T04:31:48.223Z"
+canonical: "#101593"
 canonical_issue: null
-canonical_pr: "https://github.com/openclaw/openclaw/pull/101593"
-actions_total: 2
+canonical_pr: "#101593"
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32533438690](https://github.com/openclaw/clawsweeper/actions/runs/32533438690)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32551162083](https://github.com/openclaw/clawsweeper/actions/runs/32551162083)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/pull/101593
+Canonical: #101593
 
 ## Summary
 
-#101593 remains the adopted repair PR. Its runtime fix is already present on main, but the test-strengthening assertion needs a narrow rebase-and-repair so it compares the matched error-listener registration, not the first listener registration. No merge or close action is proposed.
+Make PR #101593 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Canonical: https://github.com/openclaw/openclaw/pull/101593
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #101593 | fix_needed | planned | canonical | Rebase #101593 onto latest main, then make the ordering assertion track the same error-listener index selected by the test. |
-| #101593 | build_fix_artifact | planned | canonical | Produce the required contributor-branch repair path without merge or close authority. |
+| #101593 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
