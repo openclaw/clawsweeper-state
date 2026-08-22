@@ -67,20 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/125776 on current main. Preserve the authoritative Codex dynamic-tool call ID through the existing verbose tool-result callback so Telegram updates the same `tool:&lt;callId>` progress row. Do not deduplicate by text, tool name, or arguments; preserve append behavior for truly id-less legacy summaries. Treat https://github.com/openclaw/openclaw/pull/125779 only as prior evidence because it is closed unmerged. Add regression coverage for summary/output replacement, distinct identical tool calls, and applicable item-first, transcript-first, and result-first paths. Establish the failing regression before editing, run focused Codex and Telegram progress checks, and include channel-visible mock-gateway or Telegram proof. Do not add configuration or change commentary identity behavior. Put release-note context in the PR body rather than CHANGELOG.md.
+Repair https://github.com/openclaw/openclaw/issues/125776 at the dynamic-tool progress producer boundary. Preserve a Codex dynamic tool call's existing callId on result-summary and result-output callbacks, then have Telegram update the structured `tool:&lt;callId>` draft row rather than append id-less text. Keep legacy result payloads without an identity append-only, and never deduplicate by tool name or arguments. Inspect the pinned Codex app-server contract before landing because the review checkout lacked ../codex. Review https://github.com/openclaw/openclaw/pull/125779 only as unmerged source material; do not revive it. Add owner-boundary regression coverage for one call updating from start to summary/output, two same-name calls with different IDs staying distinct, and id-less legacy output. Do not add config or edit CHANGELOG.md; put release-note context in the PR body.
 
 Likely files:
 
 - extensions/codex/src/app-server/event-projector-tool-progress.ts
-- extensions/codex/src/app-server/event-projector.verbose-hooks.test.ts
+- src/auto-reply/reply-payload.ts
 - extensions/telegram/src/bot-message-dispatch-turn.ts
+- extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
 - extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
 
 Validation:
 
-- pnpm exec vitest run extensions/codex/src/app-server/event-projector.verbose-hooks.test.ts --config vitest.config.ts
-- pnpm exec vitest run extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts --config vitest.config.ts
-- pnpm exec vitest run src/channels/progress-draft-compositor.test.ts --config vitest.config.ts
+- node scripts/run-vitest.mjs extensions/codex/src/app-server/event-projector.dynamic-tools.test.ts
+- node scripts/run-vitest.mjs extensions/telegram/src/bot-message-dispatch.progress-updates.test.ts
+- node scripts/run-vitest.mjs src/channels/progress-draft-compositor.test.ts
+- git diff --check
 
 ## Operator Prompt
 
