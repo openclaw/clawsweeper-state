@@ -1,0 +1,128 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-89528",
+  "mode": "autonomous",
+  "run_id": "32602108598",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32602108598",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-89528.md",
+  "published_at": "2026-08-22T22:27:38.989Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/89528",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/89528",
+  "canonical_pr": null,
+  "summary": "#89528 remains a source-reproducible, narrow CLI/docs acknowledgement defect on main cc56ea534f78b9494afcd0a6fbf7b7cafaf8a418. The safe skip path bypasses only pre-SIGUSR1 active-work deferral, while server close retains the bounded pending-reply drain; current acknowledgement and both CLI docs incorrectly promise an immediate restart. Implementation is blocked in this read-only checkout: pnpm cannot create its Corepack cache, and mandatory sibling ../codex source is absent and cannot be cloned under the sandbox.",
+  "actions": [
+    {
+      "target": "#51620",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open independently; no duplicate or closure action is appropriate."
+    },
+    {
+      "target": "#72114",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context only."
+    },
+    {
+      "target": "#73303",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context only."
+    },
+    {
+      "target": "#78380",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context only."
+    },
+    {
+      "target": "#89528",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#89528",
+      "candidate_fix": null,
+      "reason": "A narrow wording/docs regression is warranted, but this worker cannot modify or validate the branch in the read-only sandbox."
+    },
+    {
+      "target": "#89604",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#89528",
+      "candidate_fix": null,
+      "reason": "Closed historical candidate; do not reopen or close again."
+    },
+    {
+      "target": "#95866",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open independently; changing delivery policy is outside this bug-only wording repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-89528",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#89528",
+      "candidate_fix": null,
+      "reason": "Executor needs a writable checkout and the required sibling Codex source before applying and validating this artifact."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 2,
+    "keep_closed": 4,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 4,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#89528",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
