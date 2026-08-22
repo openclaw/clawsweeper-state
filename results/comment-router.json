@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T22:36:47.738Z",
+  "updated_at": "2026-08-22T22:37:06.521Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-22T16:08:44Z:clawsweeper_needs_human",
-      "comment_id": "5376735204",
-      "comment_version_key": "5376735204:2026-08-22T16:08:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
-      "comment_created_at": "2026-08-22T00:21:26Z",
-      "comment_updated_at": "2026-08-22T16:08:44Z",
-      "comment_body_sha256": "5cecc6d4804386b6f4c1cab8551bc5b9373dd9bbf94680e24f592b911afadf6b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127700,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: no redacted after-update trace proves the permitted unprivileged Mantis execution and rejection of the nearest...; Review finding: [P1] Keep the audited Codex Action pin until v1.12 is verified — .github/workflows/mantis-telegram-desktop-proof.yml:811 - [high] Codex Action upgrade lacks bounda... (sha=6bd49d58942c66451b6c633ddb298a37da035afc)",
-      "expected_head_sha": "6bd49d58942c66451b6c633ddb298a37da035afc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T16:17:31.242Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-2b47f3b96e",
-        "head_sha": "6bd49d58942c66451b6c633ddb298a37da035afc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:106:5378084779:2026-08-22T16:14:21Z:clawsweeper_auto_repair",
       "comment_id": "5378084779",
@@ -31266,6 +31233,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127530:5382959757:2026-08-22T22:36:13Z:re_review",
+      "comment_id": "5382959757",
+      "comment_version_key": "5382959757:2026-08-22T22:36:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127530#issuecomment-5382959757",
+      "comment_created_at": "2026-08-22T22:36:13Z",
+      "comment_updated_at": "2026-08-22T22:36:13Z",
+      "comment_body_sha256": "7dbcf8e8f166d7280e44b8aefa3b3c4e7b3840e06c2037519046c8b4a1d56f74",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127530,
+      "author": "Grynn",
+      "author_id": 212880,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T22:37:02.856Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/explicit-reset-clears-context",
+        "head_sha": "2feea92cb5f5114f5d8984e7b317c4c932d91dcc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
