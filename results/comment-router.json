@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T09:48:31.027Z",
+  "updated_at": "2026-08-22T09:48:42.892Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5279517623:2026-08-13T10:58:29Z:re_review",
-      "comment_id": "5279517623",
-      "comment_version_key": "5279517623:2026-08-13T10:58:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5279517623",
-      "comment_created_at": "2026-08-13T10:58:29Z",
-      "comment_updated_at": "2026-08-13T10:58:29Z",
-      "comment_body_sha256": "e6d70a2e66a98eac34e941fdfa9e164ed822f22d532f6962358f672737c76ad8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T02:16:28.390Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5301136507:2026-08-15T07:23:41Z:re_review",
       "comment_id": "5301136507",
@@ -32418,6 +32391,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T09:48:31.027Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:157:5360272080:2026-08-22T09:48:03Z:clawsweeper_needs_human",
+      "comment_id": "5360272080",
+      "comment_version_key": "5360272080:2026-08-22T09:48:03Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/157#issuecomment-5360272080",
+      "comment_created_at": "2026-08-20T18:48:33Z",
+      "comment_updated_at": "2026-08-22T09:48:03Z",
+      "comment_body_sha256": "62ba9b6d409a0fb23e07d323ecd2eca2ab4c2c4cd12ee8375672f351c18e7d76",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 157,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - v0.11.8 changes per-codepoint width calculation, while gitcrawl uses the affected helpers for terminal clipping and padding; emoji, CJK, and combining-character layout has not been vi... (sha=5b78a95e745f891f216ebfdceaeb03a98316cb79)",
+      "expected_head_sha": "5b78a95e745f891f216ebfdceaeb03a98316cb79",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T09:48:42.892Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/charmbracelet/x/ansi-0.11.8",
+        "head_sha": "5b78a95e745f891f216ebfdceaeb03a98316cb79",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
