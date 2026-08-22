@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-105228",
+  "mode": "autonomous",
+  "run_id": "32575161196",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32575161196",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-105228.md",
+  "published_at": "2026-08-22T13:25:02.728Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/105228",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/105228",
+  "canonical_pr": null,
+  "summary": "#105228 is reproducible on current main. A narrow fix plan is ready, but this read-only checkout lacks dependencies and the mandatory sibling ../codex source, so no validated branch or PR can be produced in this run.",
+  "actions": [
+    {
+      "target": "#105228",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker environment: filesystem is read-only, node_modules/tsx is absent, and the required sibling ../codex source is unavailable for the repository's Codex hard gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-105228",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Create one narrow PR from clawsweeper/issue-openclaw-openclaw-105228 after restoring a writable checkout and dependencies."
+    },
+    {
+      "target": "#105346",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Historical related attempt; the new canonical fix must be independently validated."
+    },
+    {
+      "target": "#105766",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Historical related attempt; the new canonical fix must be independently validated."
+    },
+    {
+      "target": "#108357",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Historical related attempt; the new canonical fix must be independently validated."
+    },
+    {
+      "target": "#116406",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Historical related attempt; the new canonical fix must be independently validated."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 4
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
