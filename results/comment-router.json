@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T07:49:10.742Z",
+  "updated_at": "2026-08-22T07:50:00.213Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5376967803:2026-08-22T01:09:05Z:re_review",
-      "comment_id": "5376967803",
-      "comment_version_key": "5376967803:2026-08-22T01:09:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5376967803",
-      "comment_created_at": "2026-08-22T01:09:05Z",
-      "comment_updated_at": "2026-08-22T01:09:05Z",
-      "comment_body_sha256": "6bbe684d994878c87bbaae77bf9b20cdbea5adb33e5b46f8c18b3dd92007c580",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest main (new head 2986acd1a3a586de6f28541c2258f08a6fb615d8)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T01:09:45.347Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119992-per-turn-send-budget",
-        "head_sha": "2986acd1a3a586de6f28541c2258f08a6fb615d8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127681:5376488025:2026-08-22T01:09:16Z:clawsweeper_needs_human",
       "comment_id": "5376488025",
@@ -31804,6 +31757,39 @@
         "kind": "pull_request",
         "branch": "fix/gap-discord-transcript-untrusted",
         "head_sha": "66d219692765dd8213a34a86e67a7bdc8068d8f2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127778:5378110121:2026-08-22T07:49:14Z:clawsweeper_needs_human",
+      "comment_id": "5378110121",
+      "comment_version_key": "5378110121:2026-08-22T07:49:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127778#issuecomment-5378110121",
+      "comment_created_at": "2026-08-22T05:10:05Z",
+      "comment_updated_at": "2026-08-22T07:49:14Z",
+      "comment_body_sha256": "7347df711fe8812d3e446db237d0367f5c5a76c2234dc8f14e107b071bca7a2e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127778,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes startup and retirement of existing managed desktop clients; the exact-head changed-extension check is currently failing. (sha=9e14fdb4dcf57309b8e1ee520ec355039e9ea6a9)",
+      "expected_head_sha": "9e14fdb4dcf57309b8e1ee520ec355039e9ea6a9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T07:50:00.213Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/codex-desktop-generation",
+        "head_sha": "9e14fdb4dcf57309b8e1ee520ec355039e9ea6a9",
         "cluster_id": null,
         "job_path": null
       }
