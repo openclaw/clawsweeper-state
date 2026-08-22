@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T06:33:08.043Z",
+  "updated_at": "2026-08-22T06:33:52.141Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112896:5376448132:2026-08-21T23:29:54Z:re_review",
-      "comment_id": "5376448132",
-      "comment_version_key": "5376448132:2026-08-21T23:29:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112896#issuecomment-5376448132",
-      "comment_created_at": "2026-08-21T23:29:54Z",
-      "comment_updated_at": "2026-08-21T23:29:54Z",
-      "comment_body_sha256": "2a47e3254a1764bb474ce6f655e393b2e110598bbb648642183f44ad706a8efd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112896,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `308d32e78a088a4743f78e5a6d38a68b8967b565`. this current-main restack narrows startup-pending admission to the exact originless local device-less `gateway-client`/`backend` read-only probe while restored admission is held, preserves the existing startup-node path, and carries that explicit allowance through the device-less authentication guard. pre-fix focused reproduction rejected the intended held probe; post-fix local validation passed 107 gateway/restore tests and 24 final/restored/journal tests, the gateway-root test type shard, assertion-safety ratchet, touched oxfmt/oxlint, and git diff --check. hosted ci/testbox is running on this exact head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T23:30:41.812Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/rfc-0013-restored-admission",
-        "head_sha": "308d32e78a088a4743f78e5a6d38a68b8967b565",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127652:5375868507:2026-08-21T23:30:05Z:clawsweeper_needs_human",
       "comment_id": "5375868507",
@@ -31749,6 +31702,39 @@
         "kind": "pull_request",
         "branch": "feat/aws-image-candidate-publisher",
         "head_sha": "9803c1fd1402ebaad9541cd7fbd03689786265b7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-22T06:26:51Z:clawsweeper_needs_human",
+      "comment_id": "5376735204",
+      "comment_version_key": "5376735204:2026-08-22T06:26:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
+      "comment_created_at": "2026-08-22T00:21:26Z",
+      "comment_updated_at": "2026-08-22T06:26:51Z",
+      "comment_body_sha256": "eb6c868e36fab68baf3c791985abe15d4e1f7bfd3f786b32fcfd987d28423298",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127700,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify the privileged Codex action before upgrading it (P1)** - The changed pin now supplies action revision 1.12 to a step with an API key, danger-full-access, and codex-user. The repository test only checks YA...; Review finding: [P1] Verify the privileged Codex action before upgrading it — .github/workflows/mantis-telegram-desktop-proof.yml:760 - [medium] Unverified action behavior at the... (sha=4edf07e0f1f3dacdfde8880f1cd44273c16ed0c9)",
+      "expected_head_sha": "4edf07e0f1f3dacdfde8880f1cd44273c16ed0c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T06:33:52.141Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-2b47f3b96e",
+        "head_sha": "4edf07e0f1f3dacdfde8880f1cd44273c16ed0c9",
         "cluster_id": null,
         "job_path": null
       }
