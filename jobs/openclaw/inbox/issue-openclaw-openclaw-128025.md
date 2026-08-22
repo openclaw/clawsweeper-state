@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/128025 at the auth-profile persistence boundary. Preserve or classify non-busy SQLite open/write failures so final auth-save callers do not claim the lock may be busy unless contention is verified. Keep existing migration-required and unreadable-store remediation intact; retain credential-safe output; do not add config or change a SQLite schema version. Add a regression using an actual non-busy store failure and prove the final operator diagnostic is not lock advice. Include release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the auth-profile write-error boundary. First establish the reported non-lock failure on current main with a temporary real SQLite agent store or a focused injected database failure. Preserve the actual credential-safe error through updateAuthProfileStoreWithLock and upsertAuthProfileWithLockOrThrow, and emit retry advice only for an explicitly classified SQLITE_BUSY or SQLITE_LOCKED failure. Do not log credentials, add configuration, change schema versions, or make background usage-state writers retry. Add a regression that fails before the repair for the non-lock failure; preserve the intended busy/locked behavior. Put concise release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
 - src/agents/auth-profiles/store.ts
 - src/agents/auth-profiles/upsert-with-lock.ts
-- src/agents/auth-profiles/upsert-with-lock.sqlite.test.ts
 - src/agents/auth-profiles/upsert-with-lock.test.ts
+- src/agents/auth-profiles/upsert-with-lock.sqlite.test.ts
 
 Validation:
 
-- pnpm test src/agents/auth-profiles/upsert-with-lock.sqlite.test.ts
-- pnpm test src/agents/auth-profiles/upsert-with-lock.test.ts
-- pnpm test src/agents/auth-profiles/source-check.test.ts
+- pnpm test src/agents/auth-profiles/upsert-with-lock.test.ts src/agents/auth-profiles/upsert-with-lock.sqlite.test.ts src/agents/auth-profiles/source-check.test.ts
+- pnpm check:changed -- src/agents/auth-profiles/store.ts src/agents/auth-profiles/upsert-with-lock.ts src/agents/auth-profiles/upsert-with-lock.test.ts src/agents/auth-profiles/upsert-with-lock.sqlite.test.ts
 
 ## Operator Prompt
 
