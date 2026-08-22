@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-126018",
+  "mode": "autonomous",
+  "run_id": "32583934708",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32583934708",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-126018.md",
+  "published_at": "2026-08-22T16:39:22.827Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/126018",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/126018",
+  "canonical_pr": null,
+  "summary": "Current main deterministically truncates legacy interactive Slack text at 3,000 characters. The canonical repair is a narrow Slack-plugin change that reuses the existing mrkdwn-safe chunker and existing reply segmentation. This read-only checkout lacks dependencies and ../codex, so no code, failing regression, direct Slack dependency-contract inspection, or validation could be completed here.",
+  "actions": [
+    {
+      "target": "#126018",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126018",
+      "candidate_fix": null,
+      "reason": "The open issue remains the canonical report and has a narrow owner-boundary repair path."
+    },
+    {
+      "target": "#126125",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#126018",
+      "candidate_fix": null,
+      "reason": "Preserve #126125 as credited reference while a new canonical fix PR is prepared."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126018",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#126018",
+      "candidate_fix": null,
+      "reason": "A narrow new-fix-PR artifact is ready for an executor with a writable dependency-ready checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-126018",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#126018",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the worker environment's read-only filesystem and missing prerequisite checkouts/dependencies; a writable executor should apply the artifact after confirming the Slack limits directly."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
