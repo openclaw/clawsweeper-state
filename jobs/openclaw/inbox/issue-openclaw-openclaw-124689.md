@@ -67,19 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the remaining Ollama Cloud diagnostic defect in https://github.com/openclaw/openclaw/issues/124689. Do not change active-session model-selection semantics: current main already patches the selected session. At the auth-probe model-selection owner, ensure automatic fallback for `ollama-cloud` excludes catalog rows marked deprecated when no configured provider-specific candidate exists. Preserve explicit/configured exact model candidates, including legacy references. Add a focused regression that fails before the change for a catalog with deprecated `kimi-k2.5` before a current model. Do not add config flags or alter credential-routing precedence. Include release-note context in the PR body, not CHANGELOG.md.
+Repair the remaining Ollama Cloud probe false failure in https://github.com/openclaw/openclaw/issues/124689. Leave the current active-session picker flow unchanged. At the auth-probe model-selection owner, automatic catalog fallback must prefer a non-deprecated row when one exists; an explicitly configured deprecated model must remain selectable. Add one owner-boundary regression in the existing probe suite using an ollama-cloud catalog with deprecated kimi-k2.5 before a usable successor and a configured candidate under another provider identity; it must fail before the repair because the emitted probe targets kimi-k2.5, then pass after selecting the usable row. Capture redacted real provider proof if credentials are available. Do not add config options or edit CHANGELOG.md; include release-note context in the PR body.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.targets.test.ts
-- src/gateway/server-methods/models-probe.test.ts
+- src/commands/models/list.probe.test.ts
 
 Validation:
 
-- pnpm test src/commands/models/list.probe.targets.test.ts
+- pnpm test src/commands/models/list.probe.test.ts
 - pnpm test src/gateway/server-methods/models-probe.test.ts
-- OPENCLAW_LIVE_TEST=1 OPENCLAW_LIVE_OLLAMA=1 OPENCLAW_LIVE_OLLAMA_BASE_URL=https://ollama.com OPENCLAW_LIVE_OLLAMA_MODEL=kimi-k2.6 pnpm test:live -- extensions/ollama/ollama.live.test.ts
 
 ## Operator Prompt
 
