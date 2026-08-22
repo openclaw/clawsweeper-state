@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T12:11:05.295Z",
+  "updated_at": "2026-08-22T12:12:19.811Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122425:5262218740:2026-08-22T04:20:58Z:clawsweeper_auto_repair",
-      "comment_id": "5262218740",
-      "comment_version_key": "5262218740:2026-08-22T04:20:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5262218740",
-      "comment_created_at": "2026-08-12T04:18:02Z",
-      "comment_updated_at": "2026-08-22T04:20:58Z",
-      "comment_body_sha256": "6912fda9b39ec4f7e475a35adb6eb49f80b2b7c90814746c3a663925bf055541",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122425,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=071f399d985da58529388ffdc89f73c4bbd66164)",
-      "expected_head_sha": "071f399d985da58529388ffdc89f73c4bbd66164",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T04:27:46.340Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/inline-slash-skills",
-        "head_sha": "071f399d985da58529388ffdc89f73c4bbd66164",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-22T04:16:17Z:clawsweeper_needs_human",
       "comment_id": "5290613923",
@@ -32651,6 +32618,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T12:11:05.295Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127793:5378524498:2026-08-22T12:11:16Z:clawsweeper_needs_human",
+      "comment_id": "5378524498",
+      "comment_version_key": "5378524498:2026-08-22T12:11:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127793#issuecomment-5378524498",
+      "comment_created_at": "2026-08-22T06:36:18Z",
+      "comment_updated_at": "2026-08-22T12:11:16Z",
+      "comment_body_sha256": "618ba4855eb8b054924ca17feb94fc332cb4065c36d3ab60fdb13754fec227b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127793,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: screenshots demonstrate the mocked Control UI flow, but no real Gateway final-effect trace shows a rev...; Review finding: [P1] Authorize dispatching retry targets — src/gateway/session-sharing.ts:368-374 - [medium] Prove revocation at the final I/O boundary (sha=b99d22c597ddfc7847fa1117a45b5f5ac02dece6)",
+      "expected_head_sha": "b99d22c597ddfc7847fa1117a45b5f5ac02dece6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T12:12:19.811Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/dashboard-sessions-bulk-messaging-support",
+        "head_sha": "b99d22c597ddfc7847fa1117a45b5f5ac02dece6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
