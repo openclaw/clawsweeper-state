@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven duplicate-media bug described at https://github.com/openclaw/openclaw/issues/127399. Preserve the existing durable outbound custody invariant: after a queue row records platform dispatch, a non-abort no-receipt error must serialize the affected payload as potentially sent so generated-media recovery dead-letters rather than rearming it. Repair the evidence producer in `src/infra/outbound/deliver-queue-execute.ts`; do not add a Telegram-specific branch, a consumer-only guard, configuration, schema change, or fallback. First establish a regression that fails on current main through the real queue-to-agent-delivery evidence boundary; cover proven-not-sent failures as the retryable contrast and the generated-media fail-closed outcome. Use the existing terminal-settlement patterns from https://github.com/openclaw/openclaw/pull/124825 as context. Do not edit `CHANGELOG.md`; include concise release-note context in the PR body.
+Repair the current-main outbound queue path where an adapter rejects after durable platform dispatch but before returning a receipt. The queue executor must carry its recorded dispatch custody into the failed payload evidence consumed by durable message and generated-media recovery, and settle the queue as unknown-after-send. Keep this generic across channels: do not add a Telegram-specific branch, consumer-side queue lookup, config option, schema change, or retry fallback. Preserve the distinction between an ambiguous attempted payload and later unattempted payloads. Add regression coverage that fails before the repair: inject a no-receipt failure after dispatch, assert unknown-after-send plus sentBeforeError for the attempted payload, and assert generated-media recovery dead-letters rather than starts a new agent attempt. Include release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/infra/outbound/deliver-queue-execute.ts
-- src/infra/outbound/deliver.test.ts
+- src/infra/outbound/deliver.queue-integration.test.ts
 - src/gateway/server-restart-sentinel.test.ts
 - src/agents/embedded-agent-runner/delivery-evidence.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/infra/outbound/deliver.test.ts src/infra/outbound/delivery-queue.recovery.test.ts src/gateway/server-restart-sentinel.test.ts src/agents/embedded-agent-runner/delivery-evidence.test.ts
-- node scripts/check-changed.mjs --dry-run -- src/infra/outbound/deliver-queue-execute.ts src/infra/outbound/deliver.test.ts src/gateway/server-restart-sentinel.test.ts
-- Verify the new regression fails before the repair because the dispatch marker is omitted from failed payload evidence, then passes with no generated-media rearm.
+- node scripts/run-vitest.mjs src/infra/outbound/deliver.queue-integration.test.ts
+- node scripts/run-vitest.mjs src/gateway/server-restart-sentinel.test.ts
+- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/delivery-evidence.test.ts
 
 ## Operator Prompt
 
