@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32560747094"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32560747094"
+run_id: "32561285891"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32561285891"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T08:02:07.930Z"
+published_at: "2026-08-22T08:13:09.690Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32560747094](https://github.com/openclaw/clawsweeper/actions/runs/32560747094)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32561285891](https://github.com/openclaw/clawsweeper/actions/runs/32561285891)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Current main source reproduces the Ollama Cloud probe-selection defect, but this read-only checkout cannot create the required branch or regression edit. Direct Codex-source inspection is also blocked because ../codex is absent, and focused tests cannot start because node_modules/tsx is unavailable. A narrow, provider-owned fix artifact is ready for the executor.
+#124689 remains a narrow canonical bug: the current probe planner misses an `ollama/...-cloud` configured candidate when probing `ollama-cloud`, then selects the first catalog row, including deprecated `kimi-k2.5`. No code or PR was created because this read-only checkout lacks dependencies and the mandatory sibling `../codex` source is absent, so the required Codex protocol gate cannot be satisfied.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Current main source reproduces the Ollama Cloud probe-selection defect, but this
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120752 | keep_related | planned | related | Keep open independently; no closure or fix action is appropriate for this cluster. |
-| #122851 | keep_related | planned | related | Keep open independently; this bug-only repair must not add the requested UI feature. |
-| #124689 | fix_needed | blocked | canonical | Implementation is blocked only by checkout capability and mandatory local evidence gates; the executor should apply the attached narrow artifact on clawsweeper/issue-openclaw-openclaw-124689. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | A narrow new-fix PR is appropriate once the executor has a writable checkout, dependencies, and direct Codex source available. |
+| #120752 | keep_related | planned | related | Keep open independently; it is not a duplicate of the Ollama Cloud probe defect. |
+| #122851 | keep_related | planned | related | Keep open independently; it requires product direction not present in this bug-only repair. |
+| #124689 | fix_needed | blocked | canonical | Implementation is blocked only by the unavailable mandatory Codex source gate and read-only/dependency-incomplete checkout; the fix path is otherwise narrow. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned |  | A capable executor can implement this as one narrow credited fix PR after satisfying the Codex source gate. |
 
 ## Needs Human
 
