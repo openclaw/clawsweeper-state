@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T11:37:59.101Z",
+  "updated_at": "2026-08-22T11:40:08.278Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127766:5377720699:2026-08-22T03:53:54Z:clawsweeper_needs_human",
-      "comment_id": "5377720699",
-      "comment_version_key": "5377720699:2026-08-22T03:53:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127766#issuecomment-5377720699",
-      "comment_created_at": "2026-08-22T03:53:54Z",
-      "comment_updated_at": "2026-08-22T03:53:54Z",
-      "comment_body_sha256": "3b60d6057813b174ae9208482c6b962e08c275dea2856831e3c02175c9836747",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127766,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; if it is rebased, rerun the focused Control UI E2E and exact-head required checks before landing. (sha=9b53fa2986be712b4942fc0a54df17698b9acd2c)",
-      "expected_head_sha": "9b53fa2986be712b4942fc0a54df17698b9acd2c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T03:56:29.584Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-prompt-restore-race",
-        "head_sha": "9b53fa2986be712b4942fc0a54df17698b9acd2c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3501:5365867758:2026-08-21T06:07:23Z:re_review",
       "comment_id": "5365867758",
@@ -32737,6 +32704,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126851:5362113139:2026-08-22T11:39:27Z:clawsweeper_needs_human",
+      "comment_id": "5362113139",
+      "comment_version_key": "5362113139:2026-08-22T11:39:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126851#issuecomment-5362113139",
+      "comment_created_at": "2026-08-20T21:38:58Z",
+      "comment_updated_at": "2026-08-22T11:39:27Z",
+      "comment_body_sha256": "2364b2f4c2ac62d9faff0a659ab9fc0c2c1f6df8edf6dcb49ef21a08962fc61f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126851,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The mock-gateway browser test uses a newer terminal timestamp that passes on current main, and no inspectable screenshot or video arti...; Review finding: [P1] Exercise the stale timestamp in the browser test — ui/src/e2e/session-spinner-clears.e2e.test.ts:103 - [P1] Remove the undeclared root lockfile importer — pnp... (sha=82b63770ad0d98d9c3cf066437e7a62341893fba)",
+      "expected_head_sha": "82b63770ad0d98d9c3cf066437e7a62341893fba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T11:40:08.278Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stale-terminal-session-clears-spinner",
+        "head_sha": "82b63770ad0d98d9c3cf066437e7a62341893fba",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
