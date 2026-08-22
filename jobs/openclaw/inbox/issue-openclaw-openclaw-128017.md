@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the memory-wiki wiki_search marker-snippet defect. In extensions/memory-wiki/src/query.ts, create one canonical normalized body-text path for fallback snippet selection and body matching/ranking: remove frontmatter, managed Related blocks, and standalone internal OpenClaw marker-comment lines, while retaining ordinary prose that mentions markers. Preserve metadata and structured-claim matching, claim snippet precedence, tool contracts, and configuration. Add a focused regression in extensions/memory-wiki/src/query.test.ts proving marker-only lines neither create a hit nor become a metadata-match fallback snippet; prove it fails before the repair. Do not add config, change tool contracts, or edit CHANGELOG.md; include release-note context in the PR body.
+Repair memory-wiki wiki_search so standalone generated OpenClaw marker-comment lines cannot create raw-body matches or become displayed snippets, while prose that discusses marker syntax remains searchable. Use one canonical normalization path in extensions/memory-wiki/src/query.ts for scoring and snippet selection; do not add config, change claim precedence, alter persisted wiki format, or change the public tool schema. Add a public wiki_search regression in extensions/memory-wiki/src/query.test.ts: a metadata-matched page with generated marker lines must return useful body text, and marker-only content must not match. Keep the existing related-block behavior. Include concise user-visible release-note context in the PR body or commit message.
 
 Likely files:
 
@@ -76,8 +76,9 @@ Likely files:
 
 Validation:
 
-- pnpm test extensions/memory-wiki/src/query.test.ts
-- pnpm check:changed -- extensions/memory-wiki/src/query.ts extensions/memory-wiki/src/query.test.ts
+- node scripts/run-vitest.mjs extensions/memory-wiki/src/query.test.ts
+- node scripts/check-changed.mjs --dry-run -- extensions/memory-wiki/src/query.ts extensions/memory-wiki/src/query.test.ts
+- node scripts/check-changed.mjs -- extensions/memory-wiki/src/query.ts extensions/memory-wiki/src/query.test.ts
 
 ## Operator Prompt
 
