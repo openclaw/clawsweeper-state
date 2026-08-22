@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32588550224"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32588550224"
+run_id: "32589295188"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32589295188"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T17:54:30.589Z"
+published_at: "2026-08-22T18:08:39.126Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32588550224](https://github.com/openclaw/clawsweeper/actions/runs/32588550224)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32589295188](https://github.com/openclaw/clawsweeper/actions/runs/32589295188)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Current main still has the provider-scoped deprecated-catalog fallback. A narrow two-file fix is planned, but this worker cannot write the branch or run validation: the checkout is read-only, dependencies are absent, Corepack fails with EROFS, and the mandatory sibling ../codex source checkout is unavailable for the required direct inspection gate.
+#124689 remains the canonical open report. A narrow generic probe-fallback repair is planned, but this worker could not modify or validate it: the checkout is read-only with dependencies absent, and required sibling ../codex source is unavailable for the repository’s hard gate.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Current main still has the provider-scoped deprecated-catalog fallback. A narrow
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | planned | canonical | The source-level reproduction is clear and narrowly owned; no existing viable PR is hydrated. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | Implementation is blocked only by this worker environment; the executor should apply the narrow artifact in a writable checkout with ../codex available. |
+| #124689 | fix_needed | blocked | canonical | Implementation is blocked only in this worker environment: no writable checkout/dependencies and no inspectable ../codex sibling source. The deterministic executor should apply the artifact in a writable checkout, inspect ../codex as required, then run the listed validation. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical |  |
+| cluster:issue-openclaw-openclaw-124689 | open_fix_pr | planned | canonical | No existing candidate PR was hydrated. |
 
 ## Needs Human
 
