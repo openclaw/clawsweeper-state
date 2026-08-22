@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T14:11:01.610Z",
+  "updated_at": "2026-08-22T14:12:54.654Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-22T07:27:51Z:clawsweeper_needs_human",
-      "comment_id": "5376735204",
-      "comment_version_key": "5376735204:2026-08-22T07:27:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
-      "comment_created_at": "2026-08-22T00:21:26Z",
-      "comment_updated_at": "2026-08-22T07:27:51Z",
-      "comment_body_sha256": "bd54b9ab61e328265311fb20a1d797a712316a66a8564b915fbf0064d7687c0d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127700,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Verify the privileged Codex Action before upgrading it (P1)** - The updated pin runs in the Mantis job with an API key, danger-full-access, and a codex-user confinement contract. The repository tests cover SHA p...; Review finding: [P1] Verify the privileged Codex Action before upgrading it — .github/workflows/mantis-telegram-desktop-proof.yml:760-783 - [high] Unverified action at a privilege... (sha=b0f83143cf45ea8aa33b77a450ba9448994eb568)",
-      "expected_head_sha": "b0f83143cf45ea8aa33b77a450ba9448994eb568",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T07:36:35.320Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-2b47f3b96e",
-        "head_sha": "b0f83143cf45ea8aa33b77a450ba9448994eb568",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127793:5378524498:2026-08-22T07:34:10Z:clawsweeper_auto_repair",
       "comment_id": "5378524498",
@@ -32148,6 +32115,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125810:5380838533:2026-08-22T14:12:08Z:re_review",
+      "comment_id": "5380838533",
+      "comment_version_key": "5380838533:2026-08-22T14:12:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125810#issuecomment-5380838533",
+      "comment_created_at": "2026-08-22T14:12:08Z",
+      "comment_updated_at": "2026-08-22T14:12:08Z",
+      "comment_body_sha256": "265a76d367f67a099d804ddfea71734291f008a1e22861d76cc09fbdd00e63c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125810,
+      "author": "wakqasahmed",
+      "author_id": 4486133,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T14:12:52.063Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-124852-double-ensuresession",
+        "head_sha": "9cc7893e635eeb11efc540929510a80663c84258",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
