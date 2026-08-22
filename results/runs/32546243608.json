@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125776",
+  "mode": "autonomous",
+  "run_id": "32546243608",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32546243608",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125776.md",
+  "published_at": "2026-08-22T02:36:14.970Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125776",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125776",
+  "canonical_pr": null,
+  "summary": "#125776 remains the canonical reproducible bug, but this worker cannot safely implement it: the mandatory ../codex protocol checkout is absent and cannot be cloned, and the target checkout is read-only, preventing both the regression edit and focused-test execution.",
+  "actions": [
+    {
+      "target": "#125776",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked pending a writable checkout with the required sibling Codex source available for direct contract inspection."
+    },
+    {
+      "target": "#116512",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Keep open as related follow-up work."
+    },
+    {
+      "target": "#125779",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Already closed; retain as credited historical evidence only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125776",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor, but this worker cannot produce or validate a branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#125776",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
