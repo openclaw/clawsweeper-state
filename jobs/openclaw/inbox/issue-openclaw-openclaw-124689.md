@@ -67,22 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the remaining Ollama Cloud diagnostic bug in this issue. Preserve the existing Control UI active-session model switch; current main already sends a session-scoped model patch and refreshes the row. At the Gateway auth-probe owner, reproduce that a `models.probe` request for `ollama-cloud` has no matching candidate when agent defaults use another provider spelling, then falls back to an arbitrary catalog row (historically retired `kimi-k2.5`). Select a valid intended configured/provider route or report an intentional no-model result; do not add a config option, weaken auth, or introduce UI-only availability overrides. Add a regression test that fails before the repair, cover direct configured credentials and profile-backed credentials as applicable, and preserve generic behavior for other providers. Include release-note context in the PR body, not CHANGELOG.md. Before landing, run a redacted real Ollama Cloud API-key probe against a currently available Cloud model.
+Repair the current-main Ollama Cloud auth-probe selection defect described in https://github.com/openclaw/openclaw/issues/124689. Preserve the existing current-session picker flow: it already patches the selected session. At the probe-planning owner, make an `ollama-cloud` API-key probe select the configured/canonical eligible model route rather than falling through from `ollama/...-cloud` to an unrelated deprecated catalog row. Reuse an existing provider/catalog routing contract if available; do not hardcode customer model names, infer one provider from raw suffixes in core, rewrite user config, or add a configuration option. Add a regression that models the reporter shape and proves a retired `kimi-k2.5` fallback is not selected. Include release-note context in the PR body or commit message, not CHANGELOG.md. If the implementation requires a new permanent provider-route API or a product decision, stop and return to triage.
 
 Likely files:
 
-- src/gateway/server-methods/models-probe.ts
-- src/gateway/server-methods/models-probe.test.ts
 - src/commands/models/list.probe.models.ts
 - src/commands/models/list.probe.ollama.test.ts
-- src/commands/models/list.probe.targets.test.ts
+- src/gateway/server-methods/models-probe.test.ts
 
 Validation:
 
-- pnpm test src/gateway/server-methods/models-probe.test.ts
 - pnpm test src/commands/models/list.probe.ollama.test.ts
-- pnpm test src/commands/models/list.probe.targets.test.ts
-- OPENCLAW_LIVE_TEST=1 OPENCLAW_LIVE_OLLAMA=1 OPENCLAW_LIVE_OLLAMA_BASE_URL=https://ollama.com OPENCLAW_LIVE_OLLAMA_MODEL=<current-cloud-model> pnpm test:live -- extensions/ollama/ollama.live.test.ts
+- pnpm test src/gateway/server-methods/models-probe.test.ts
+- Run a redacted `models.probe` against a configured Ollama Cloud API-key route if approved test credentials are available; otherwise state the live-provider proof gap explicitly.
 
 ## Operator Prompt
 
