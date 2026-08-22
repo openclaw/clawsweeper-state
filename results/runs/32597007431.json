@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128025",
+  "mode": "autonomous",
+  "run_id": "32597007431",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32597007431",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128025.md",
+  "published_at": "2026-08-22T20:44:03.356Z",
+  "canonical": "#128025",
+  "canonical_issue": "#128025",
+  "canonical_pr": null,
+  "summary": "#128025 remains a reproducible canonical bug on main. A narrow owner-boundary repair and regression are identified, but this sandbox is read-only, lacks required sibling ../codex source, and cannot run pnpm because Corepack cannot create its cache.",
+  "actions": [
+    {
+      "target": "#128025",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128025",
+      "candidate_fix": null,
+      "reason": "Implementation and validation are blocked by the read-only worker environment and the mandatory missing Codex sibling-source gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair checkout with sibling ../codex source and a writable pnpm/Corepack cache, then apply and validate the attached narrow fix artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

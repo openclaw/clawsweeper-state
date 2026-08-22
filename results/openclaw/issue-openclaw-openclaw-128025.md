@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128025"
 mode: "autonomous"
-run_id: "32595428733"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32595428733"
+run_id: "32597007431"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32597007431"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-22T20:12:02.823Z"
-canonical: "https://github.com/openclaw/openclaw/issues/128025"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/128025"
+published_at: "2026-08-22T20:44:03.356Z"
+canonical: "#128025"
+canonical_issue: "#128025"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-128025
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32595428733](https://github.com/openclaw/clawsweeper/actions/runs/32595428733)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32597007431](https://github.com/openclaw/clawsweeper/actions/runs/32597007431)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/128025
+Canonical: #128025
 
 ## Summary
 
-Confirmed on main a4dbe235: generic auth-store transaction failures become null in store.ts, then final upserts misreport them as lock contention. A narrow fix is planned, but this worker cannot edit, install dependencies, or satisfy the required sibling Codex-source inspection in its read-only environment.
+#128025 remains a reproducible canonical bug on main. A narrow owner-boundary repair and regression are identified, but this sandbox is read-only, lacks required sibling ../codex source, and cannot run pnpm because Corepack cannot create its cache.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,10 +66,8 @@ Confirmed on main a4dbe235: generic auth-store transaction failures become null 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128025 | keep_canonical | planned | canonical | Open canonical issue remains valid on current main; no implementation PR was hydrated. |
-| cluster:issue-openclaw-openclaw-128025 | fix_needed | blocked | canonical | Blocked by worker capabilities, not issue ambiguity. |
-| cluster:issue-openclaw-openclaw-128025 | build_fix_artifact | planned | canonical | A narrow new fix PR is appropriate once run by a writable executor. |
+| #128025 | fix_needed | blocked | canonical | Implementation and validation are blocked by the read-only worker environment and the mandatory missing Codex sibling-source gate. |
 
 ## Needs Human
 
-- none
+- Provide a writable repair checkout with sibling ../codex source and a writable pnpm/Corepack cache, then apply and validate the attached narrow fix artifact.
