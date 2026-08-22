@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T07:55:46.040Z",
+  "updated_at": "2026-08-22T07:56:02.281Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120190:5227446246:2026-08-08T18:12:42Z:re_review",
-      "comment_id": "5227446246",
-      "comment_version_key": "5227446246:2026-08-08T18:12:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120190#issuecomment-5227446246",
-      "comment_created_at": "2026-08-08T18:12:42Z",
-      "comment_updated_at": "2026-08-08T18:12:42Z",
-      "comment_body_sha256": "a2c2545748c02f3aaad02691a3530e16b4518b2203bfa6409537785373bedac2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120190,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T01:20:41.774Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120190:5227891876:2026-08-08T20:05:28Z:re_review",
       "comment_id": "5227891876",
@@ -31767,6 +31740,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T07:55:46.040Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127791:5378392484:2026-08-22T07:54:55Z:clawsweeper_needs_human",
+      "comment_id": "5378392484",
+      "comment_version_key": "5378392484:2026-08-22T07:54:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127791#issuecomment-5378392484",
+      "comment_created_at": "2026-08-22T06:14:48Z",
+      "comment_updated_at": "2026-08-22T07:54:55Z",
+      "comment_body_sha256": "7450e81a69a41ebd92a3fee22491b5ece2b4a53ffed5c8fdf447e33008586b17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127791,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - When a beta artifact is absent, the fallback selector is the bare package spec, which can resolve the stable registry default; the warning is visible, but that artifact can still be i... (sha=b97260060b0e7ab9c0581bb84b2368276a9b2147)",
+      "expected_head_sha": "b97260060b0e7ab9c0581bb84b2368276a9b2147",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T07:56:02.281Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/official-plugin-install-release-stream",
+        "head_sha": "b97260060b0e7ab9c0581bb84b2368276a9b2147",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
