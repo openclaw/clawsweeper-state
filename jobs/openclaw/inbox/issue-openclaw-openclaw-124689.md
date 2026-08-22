@@ -67,18 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair models.probe fallback selection so an unconfigured provider fallback never chooses a deprecated or disabled catalog row, while an explicitly configured legacy model remains probeable. Preserve the documented ollama versus ollama-cloud boundary; do not add aliases or a UI workaround. Extend the existing probe-target coverage with a catalog ordered as deprecated kimi-k2.5 then a usable Ollama Cloud model and only an ollama/* candidate; the pre-fix test must select Kimi and the repaired test the usable cloud row. Add release-note context to the PR body, not CHANGELOG.md. Stop if the repair requires new configuration, provider-policy direction, or changing explicit deprecated-model behavior.
+Repair `models.probe` model selection so a configured valid Ollama Cloud credential is never tested through a catalog row marked deprecated or disabled merely because the configured fallback is a cloud-suffixed `ollama/...` reference. Trace the existing model-catalog provider-family contract before mapping any provider identity; reuse `isCloudModelRef` or established routing metadata and do not hardcode the reporter's model or error text. Preserve arbitrary provider behavior and plugin ownership. Add a regression test with an Ollama Cloud API-key profile, `ollama/gemma4:31b-cloud` fallback, and a catalog whose first Cloud row is deprecated; assert a viable non-deprecated Cloud target is used and no false sign-in failure is reported. Apply the test-audit gate when adding tests.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.targets.test.ts
+- src/commands/models/list.probe.ts
+- src/commands/models/list.probe.ollama.test.ts
+- src/gateway/server-methods/models-probe.test.ts
 
 Validation:
 
-- pnpm test src/commands/models/list.probe.targets.test.ts
-- pnpm check:changed
-- Run the documented redacted Ollama Cloud API-key smoke against current main and verify the Control UI enables the selected hosted model.
+- pnpm test src/commands/models/list.probe.ollama.test.ts
+- pnpm test src/gateway/server-methods/models-probe.test.ts
+- Run the applicable test-audit review for the new regression coverage.
 
 ## Operator Prompt
 
