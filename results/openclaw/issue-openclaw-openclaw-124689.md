@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32558072500"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32558072500"
+run_id: "32558332389"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32558332389"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T07:02:20.379Z"
+published_at: "2026-08-22T07:09:45.987Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32558072500](https://github.com/openclaw/clawsweeper/actions/runs/32558072500)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32558332389](https://github.com/openclaw/clawsweeper/actions/runs/32558332389)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Source reproduction on current main is clear: an ollama-cloud probe falls back to deprecated kimi-k2.5 when the configured ollama/...-cloud candidate is keyed under ollama. A narrow generic catalog-lifecycle fix is planned, but this read-only worker could not inspect mandatory sibling Codex source or start pnpm tests.
+Current main contains the reported probe-selection defect: an ollama-cloud probe ignores the ollama/...-cloud configured candidate and selects deprecated kimi-k2.5 by catalog order. A narrow, existing-contract repair is planned, but this read-only checkout cannot create the branch, install dependencies, or run validation; the required ../codex source checkout is also absent.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Source reproduction on current main is clear: an ollama-cloud probe falls back t
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | Implementation is blocked only by this worker environment. The executor must provide sibling Codex source, apply the narrow fix, demonstrate the regression failing before the change, and rerun validation. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Ready for a writable executor after mandatory Codex-source and pre-fix regression gates. |
+| #124689 | fix_needed | blocked | canonical | Implementation and validation require a writable executor with dependencies and the required sibling Codex source checkout. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Ready for a writable ClawSweeper executor; do not add a new provider-route API. |
 
 ## Needs Human
 
