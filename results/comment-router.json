@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T02:36:51.747Z",
+  "updated_at": "2026-08-22T02:36:52.306Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127524:5375250694:2026-08-21T20:48:29Z:re_review",
-      "comment_id": "5375250694",
-      "comment_version_key": "5375250694:2026-08-21T20:48:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127524#issuecomment-5375250694",
-      "comment_created_at": "2026-08-21T20:48:29Z",
-      "comment_updated_at": "2026-08-21T20:48:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127524,
-      "author": "dkling-it",
-      "author_id": 4270462,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T20:49:08.967Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/xdg-config-home-clarify",
-        "head_sha": "1c6b6ba67500ec7ea0ad2d586b5044329f5a85ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3130:5375258380:2026-08-21T20:49:23Z:clawsweeper_auto_repair",
       "comment_id": "5375258380",
@@ -31508,6 +31461,39 @@
         "kind": "pull_request",
         "branch": "fix/acp-thread-bound-child-reply-delivery",
         "head_sha": "ab4f105db5d416bc8f313f9bc88d5d2d96bae94e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127760:5377402607:2026-08-22T02:35:53Z:clawsweeper_needs_human",
+      "comment_id": "5377402607",
+      "comment_version_key": "5377402607:2026-08-22T02:35:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127760#issuecomment-5377402607",
+      "comment_created_at": "2026-08-22T02:35:53Z",
+      "comment_updated_at": "2026-08-22T02:35:53Z",
+      "comment_body_sha256": "d727b61f444da8d3d49270d54c5fbc2993cd1720a498f5347467cd1fca837073",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127760,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +9 lines for a bug fix; the explicit owner-only completion path is justified because pointer completion and global blur cleanup have different ownership semanti... (sha=26989c91e628cae65e1c6eb371b5e36304a14154)",
+      "expected_head_sha": "26989c91e628cae65e1c6eb371b5e36304a14154",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T02:36:52.306Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-resizable-pointer",
+        "head_sha": "26989c91e628cae65e1c6eb371b5e36304a14154",
         "cluster_id": null,
         "job_path": null
       }
