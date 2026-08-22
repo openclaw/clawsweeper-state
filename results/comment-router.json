@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T01:27:54.806Z",
+  "updated_at": "2026-08-22T01:30:07.789Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5131133963:2026-07-30T13:00:43Z:re_review",
-      "comment_id": "5131133963",
-      "comment_version_key": "5131133963:2026-07-30T13:00:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5131133963",
-      "comment_created_at": "2026-07-30T13:00:43Z",
-      "comment_updated_at": "2026-07-30T13:00:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T19:19:02.529Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5147868280:2026-07-31T22:06:29Z:re_review",
       "comment_id": "5147868280",
@@ -32253,6 +32226,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T01:27:54.806Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127734:5377071976:2026-08-22T01:27:08Z:clawsweeper_needs_human",
+      "comment_id": "5377071976",
+      "comment_version_key": "5377071976:2026-08-22T01:27:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127734#issuecomment-5377071976",
+      "comment_created_at": "2026-08-22T01:27:08Z",
+      "comment_updated_at": "2026-08-22T01:27:08Z",
+      "comment_body_sha256": "bfe5b3f7db36219bac42d144a804b36e4a819be09dcd8cec35ca9a44b7fa1dd8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127734,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The actual @openclaw/fs-safe lock dependency could not be inspected locally, so the assumption that its permission error path is canonical rather than the caller-supplied path remains... (sha=8488b71c40bd5ea2f956d97ecf14cddd05911617)",
+      "expected_head_sha": "8488b71c40bd5ea2f956d97ecf14cddd05911617",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T01:30:07.789Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/config-write-permission-symlink",
+        "head_sha": "8488b71c40bd5ea2f956d97ecf14cddd05911617",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
