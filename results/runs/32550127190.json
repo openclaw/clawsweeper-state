@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125776",
+  "mode": "autonomous",
+  "run_id": "32550127190",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32550127190",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125776.md",
+  "published_at": "2026-08-22T04:06:25.628Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125776",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125776",
+  "canonical_pr": null,
+  "summary": "Current main retains the defect: Codex result callbacks discard the dynamic call identity, and Telegram renders the result as an anonymous progress line. A narrow new-PR repair is planned, but this worker cannot implement or validate it because the checkout and parent are read-only, dependencies are absent, and the required ../codex source checkout is missing.",
+  "actions": [
+    {
+      "target": "#116512",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Keep open as a related, independent progress-rendering defect."
+    },
+    {
+      "target": "#125776",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "The source reproduction is clear, but this worker cannot create the branch, install dependencies, or satisfy the mandatory direct Codex-source gate."
+    },
+    {
+      "target": "#125779",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Closed context PR; retain as credited source material for the replacement fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125776",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Prepare a narrow executor-owned PR plan after the pinned Codex contract is inspected in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
