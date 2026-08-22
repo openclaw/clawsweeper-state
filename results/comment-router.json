@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T03:43:38.461Z",
+  "updated_at": "2026-08-22T03:48:34.722Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120414:5223878450:2026-08-21T21:56:22Z:clawsweeper_needs_human",
-      "comment_id": "5223878450",
-      "comment_version_key": "5223878450:2026-08-21T21:56:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120414#issuecomment-5223878450",
-      "comment_created_at": "2026-08-08T01:38:32Z",
-      "comment_updated_at": "2026-08-21T21:56:22Z",
-      "comment_body_sha256": "5bd9811d642a39b48721b9dcc0cc68565fd1559bdc69c0f9b89e6b59a2f7c96e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120414,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The model-visible Codex dynamic-tool transport remains unverified against the exact declared upstream source because the mandatory sibling checkout is unavailable; merge should wait f... (sha=be4f9de93e8d40dac76b44380c7567aa5d99140e)",
-      "expected_head_sha": "be4f9de93e8d40dac76b44380c7567aa5d99140e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T21:57:27.929Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-running-state-wording",
-        "head_sha": "be4f9de93e8d40dac76b44380c7567aa5d99140e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127631:5375829730:2026-08-21T21:57:07Z:clawsweeper_needs_human",
       "comment_id": "5375829730",
@@ -31522,6 +31489,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:91271:5377686429:2026-08-22T03:47:48Z:re_review",
+      "comment_id": "5377686429",
+      "comment_version_key": "5377686429:2026-08-22T03:47:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/91271#issuecomment-5377686429",
+      "comment_created_at": "2026-08-22T03:46:33Z",
+      "comment_updated_at": "2026-08-22T03:47:48Z",
+      "comment_body_sha256": "d7cf4a63b3a57172323f2aac9b968ec5b7ea694b7538005722e7cbe76cddd41f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 91271,
+      "author": "deepujain",
+      "author_id": 406777,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T03:48:32.888Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/38570-a2a-requester-identity",
+        "head_sha": "cf6242b8e3003820215a6f6499b4f359de67393a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
