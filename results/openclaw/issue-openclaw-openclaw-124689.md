@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32553416673"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32553416673"
+run_id: "32554681030"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32554681030"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-22T05:17:50.536Z"
-canonical: "#124689"
-canonical_issue: "#124689"
+published_at: "2026-08-22T05:47:14.984Z"
+canonical: "https://github.com/openclaw/openclaw/issues/124689"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-124689
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32553416673](https://github.com/openclaw/clawsweeper/actions/runs/32553416673)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32554681030](https://github.com/openclaw/clawsweeper/actions/runs/32554681030)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: #124689
+Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-No code or PR was created. #124689 remains reproducible in current main, but this worker cannot satisfy the mandatory direct ../codex inspection or write/run validation in its read-only sandbox. A narrow, owner-bound repair artifact is prepared.
+Implementation is blocked before a code verdict: the required sibling Codex checkout (../codex) is absent, and this read-only environment cannot clone it. No files or GitHub state were changed.
 
 ## Impact
 
@@ -48,13 +48,13 @@ No code or PR was created. #124689 remains reproducible in current main, but thi
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #124689 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ No code or PR was created. #124689 remains reproducible in current main, but thi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120752 | keep_related | planned | related | Keep open independently; it is not a duplicate or a safe fix target for this cluster. |
-| #124689 | build_fix_artifact | planned | canonical | A writable worker with ../codex available can implement the existing provider-policy contract without a core raw-suffix special case. |
+| #124689 | fix_needed | blocked | canonical | The repair cannot be safely selected or validated until ../codex is available for the mandatory direct protocol/runtime inspection. The workspace is also read-only, so a failing regression cannot be added and demonstrated against pre-fix current main. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | Blocked fix-first artifact only; it authorizes no branch or GitHub mutation. |
 
 ## Needs Human
 
-- none
+- Provide the required sibling ../codex checkout (or an environment where it can be inspected) and a writable checkout so the failing regression and narrow provider-owned repair can be established.
