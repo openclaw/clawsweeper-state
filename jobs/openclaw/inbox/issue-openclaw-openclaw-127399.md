@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current-main outbound queue path where an adapter rejects after durable platform dispatch but before returning a receipt. The queue executor must carry its recorded dispatch custody into the failed payload evidence consumed by durable message and generated-media recovery, and settle the queue as unknown-after-send. Keep this generic across channels: do not add a Telegram-specific branch, consumer-side queue lookup, config option, schema change, or retry fallback. Preserve the distinction between an ambiguous attempted payload and later unattempted payloads. Add regression coverage that fails before the repair: inject a no-receipt failure after dispatch, assert unknown-after-send plus sentBeforeError for the attempted payload, and assert generated-media recovery dead-letters rather than starts a new agent attempt. Include release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the current-main generated-media duplicate-replay bug at the outbound evidence producer. When a queued external delivery has persisted platform-dispatch custody and the adapter rejects without a receipt, preserve that ambiguity in the failed payload outcome so generated-media recovery fails closed rather than rearming the media. Keep proven pre-send failures retryable; do not add Telegram-specific policy or a consumer-side workaround. Add a regression that fails before the repair through the outbound-to-agent-evidence boundary and proves recovery does not advance the session-delivery agent run for the ambiguous media. Preserve the terminal settlement policy established by https://github.com/openclaw/openclaw/pull/124825 and document user-visible duplicate-media prevention in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/infra/outbound/deliver-queue-execute.ts
 - src/infra/outbound/deliver.queue-integration.test.ts
 - src/gateway/server-restart-sentinel.test.ts
-- src/agents/embedded-agent-runner/delivery-evidence.test.ts
+- src/agents/command/delivery.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/infra/outbound/deliver.queue-integration.test.ts
 - node scripts/run-vitest.mjs src/gateway/server-restart-sentinel.test.ts
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/delivery-evidence.test.ts
+- node scripts/run-vitest.mjs src/agents/command/delivery.test.ts
 
 ## Operator Prompt
 
