@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127287"
 mode: "autonomous"
-run_id: "32562662108"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32562662108"
+run_id: "32565335590"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32565335590"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T09:10:19.526Z"
+published_at: "2026-08-22T09:46:57.586Z"
 canonical: "https://github.com/openclaw/openclaw/issues/127287"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/127287"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-127287
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32562662108](https://github.com/openclaw/clawsweeper/actions/runs/32562662108)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32565335590](https://github.com/openclaw/clawsweeper/actions/runs/32565335590)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/127287
 
 ## Summary
 
-No code or GitHub mutation was made. The current checkout is clean at 36d50b20098e8e45bc7a97b020d9755ab7a27414; provider-local header construction still hard-codes copilot-developer-cli. Implementation is blocked because the required sibling ../codex source checkout is absent and this worker has a read-only filesystem, so it cannot satisfy the repository’s mandatory Codex-source gate or create and validate the required branch.
+Implementation is blocked before editing: the mandatory sibling Codex source checkout (`../codex`) is absent, and this read-only, network-restricted worker cannot clone it. Local source inspection agrees with the supplied regression evidence: current main unconditionally sends `copilot-developer-cli` from the provider identity helper and through catalog/embedding paths.
 
 ## Impact
 
@@ -48,7 +48,7 @@ No code or GitHub mutation was made. The current checkout is clean at 36d50b2009
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ No code or GitHub mutation was made. The current checkout is clean at 36d50b2009
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127287 | fix_needed | blocked | canonical | The hydrated open issue is the canonical bug report and the repair shape is narrow, but implementation cannot proceed without the mandatory direct Codex-source inspection and a writable checkout. |
-| cluster:issue-openclaw-openclaw-127287 | build_fix_artifact | planned | canonical | Prepared executable repair plan for a writable executor with the mandatory Codex checkout. |
+| #127287 | fix_needed | blocked | needs_human | Do not edit or claim a Codex protocol verdict until a direct inspection of the required sibling Codex source is possible. |
+| cluster:issue-openclaw-openclaw-127287 | build_fix_artifact | planned | needs_human | A narrow new fix PR remains the intended path once the hard gate is satisfied. |
 
 ## Needs Human
 
-- none
+- Provide the required ../codex checkout (or authorize an environment where it can be cloned and inspected) before implementation or any correctness verdict.

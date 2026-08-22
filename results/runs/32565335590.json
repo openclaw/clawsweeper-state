@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127287",
+  "mode": "autonomous",
+  "run_id": "32565335590",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32565335590",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127287.md",
+  "published_at": "2026-08-22T09:46:57.586Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127287",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127287",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before editing: the mandatory sibling Codex source checkout (`../codex`) is absent, and this read-only, network-restricted worker cannot clone it. Local source inspection agrees with the supplied regression evidence: current main unconditionally sends `copilot-developer-cli` from the provider identity helper and through catalog/embedding paths.",
+  "actions": [
+    {
+      "target": "#127287",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#127287",
+      "candidate_fix": null,
+      "reason": "Do not edit or claim a Codex protocol verdict until a direct inspection of the required sibling Codex source is possible."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127287",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "needs_human",
+      "canonical": "#127287",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR remains the intended path once the hard gate is satisfied."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide the required ../codex checkout (or authorize an environment where it can be cloned and inspected) before implementation or any correctness verdict."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
