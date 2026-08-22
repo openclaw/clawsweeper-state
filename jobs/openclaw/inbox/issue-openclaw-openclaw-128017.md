@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the memory-wiki invariant that generated OpenClaw marker-only comments are neither searchable body content nor agent-visible snippets. In extensions/memory-wiki/src/query.ts, use one compact canonical marker-line sanitization path for both raw-body matching/ranking and buildSnippet; preserve real Markdown prose, metadata matching, claim snippets, and related-block handling. Extend extensions/memory-wiki/src/query.test.ts at the existing fallback/related-block coverage: prove a metadata match with leading generated markers returns meaningful content, and prove a page matched only by a generated marker is excluded. Establish that each regression fails before the fix, then run focused validation. Keep production changes minimal, add no configuration surface, and do not edit CHANGELOG.md.
+Repair the existing `wiki_search` local-wiki behavior described by https://github.com/openclaw/openclaw/issues/128017. In `extensions/memory-wiki/src/query.ts`, centralize searchable-body cleanup so both local scoring and fallback snippet selection exclude the full Related block, frontmatter, and standalone `&lt;!-- openclaw:... -->` marker-comment lines while preserving ordinary prose between markers. Do not add config, APIs, runtime fallbacks, or changes to `wiki_get`, marker persistence, or shared-memory snippets. Add behavior-level regressions in `extensions/memory-wiki/src/query.test.ts`: one metadata-only result must choose readable body text rather than any marker, and one marker-only page must not match `openclaw`; ensure they cover compiled-digest candidate selection where practical and fail before the repair. No canonical related item is established. Do not edit CHANGELOG.md; include concise user-visible release-note context in the PR body.
 
 Likely files:
 
@@ -76,8 +76,8 @@ Likely files:
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/memory-wiki/src/query.test.ts
-- git diff --check
+- pnpm test extensions/memory-wiki/src/query.test.ts
+- pnpm check:changed -- extensions/memory-wiki/src/query.ts extensions/memory-wiki/src/query.test.ts
 
 ## Operator Prompt
 
