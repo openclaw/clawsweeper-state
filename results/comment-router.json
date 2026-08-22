@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T00:16:30.627Z",
+  "updated_at": "2026-08-22T00:16:35.806Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126424:5374028229:2026-08-21T18:57:50Z:re_review",
-      "comment_id": "5374028229",
-      "comment_version_key": "5374028229:2026-08-21T18:57:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126424#issuecomment-5374028229",
-      "comment_created_at": "2026-08-21T18:57:50Z",
-      "comment_updated_at": "2026-08-21T18:57:50Z",
-      "comment_body_sha256": "b03c18a3a1f0c7b9b7b70987d784aca14127438d360bcd631809d8812facbe69",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126424,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T18:57:58.876Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/conversation-route-ownership",
-        "head_sha": "2a1e9002733854497aad86c310f1a3657e2c85ae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126424:5348833872:2026-08-21T18:56:38Z:clawsweeper_needs_human",
       "comment_id": "5348833872",
@@ -32212,6 +32165,39 @@
         "kind": "pull_request",
         "branch": "codex/autoqa-186-apple-new-chat",
         "head_sha": "161e132275ecdc3c9d2dce7d47645bfe4e130ae9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125002:5311300889:2026-08-22T00:15:49Z:clawsweeper_needs_human",
+      "comment_id": "5311300889",
+      "comment_version_key": "5311300889:2026-08-22T00:15:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125002#issuecomment-5311300889",
+      "comment_created_at": "2026-08-17T03:05:27Z",
+      "comment_updated_at": "2026-08-22T00:15:49Z",
+      "comment_body_sha256": "6c1b111616ae9f28bc0a7e55a84c57b3f46978f5c569a1ad5f7679eae020f6a7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125002,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve version-only auth tombstones on pre-run clears (P1)** - The transcript-missing repair clears before auth resolves. A live binding containing only authEpochVersion—a shape this PR writes—therefore reache...; Review finding: [P1] Preserve version-only auth tombstones on pre-run clears — src/agents/cli-session.ts:125-126 - [high] Pre-run clear erases version-only auth provenance — src/a... (sha=1d17a6d2664d90121dae4ee583b6ad048547f841)",
+      "expected_head_sha": "1d17a6d2664d90121dae4ee583b6ad048547f841",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T00:16:35.806Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-reseed-sqlite-store",
+        "head_sha": "1d17a6d2664d90121dae4ee583b6ad048547f841",
         "cluster_id": null,
         "job_path": null
       }
