@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128017"
 mode: "autonomous"
-run_id: "32603029688"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32603029688"
+run_id: "32604306305"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32604306305"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T22:50:24.641Z"
+published_at: "2026-08-22T23:16:57.763Z"
 canonical: "https://github.com/openclaw/openclaw/issues/128017"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/128017"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-128017
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32603029688](https://github.com/openclaw/clawsweeper/actions/runs/32603029688)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32604306305](https://github.com/openclaw/clawsweeper/actions/runs/32604306305)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/128017
 
 ## Summary
 
-Current main at aca83ac00c7b73dc99a4d679b2b21cc4c0cd89c2 retains the reproducible marker-snippet defect. A narrow, test-audited fix plan is ready, but this worker cannot modify or validate a branch: the checkout is read-only, dependencies are absent, and required ../codex source is unavailable.
+#128017 remains the open canonical bug. A narrow fix plan is ready, but implementation is blocked: the checkout is read-only and the mandatory sibling ../codex source checkout is absent, so this worker cannot satisfy the Codex-source gate, write the branch, or validate the regression.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Current main at aca83ac00c7b73dc99a4d679b2b21cc4c0cd89c2 retains the reproducibl
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ Current main at aca83ac00c7b73dc99a4d679b2b21cc4c0cd89c2 retains the reproducibl
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128017 | fix_needed | planned | canonical | The issue is a canonical, narrow memory-wiki bug. No contributor PR exists; build the credited ClawSweeper fix PR from the supplied artifact. |
-| cluster:issue-openclaw-openclaw-128017 | build_fix_artifact | planned | canonical | Executor should create the branch, apply the narrow owner-boundary repair, satisfy the Codex source-inspection gate, then run focused validation before opening the PR. |
+| #128017 | fix_needed | blocked | canonical | A writable checkout plus direct inspection of the mandated sibling Codex source is required before any code change. |
+| cluster:issue-openclaw-openclaw-128017 | build_fix_artifact | planned | canonical | The executor can apply this narrow owner-plugin repair once the environment blockers are resolved. |
 
 ## Needs Human
 
-- none
+- Provision a writable checkout with sibling ../codex source available for direct inspection; then execute the supplied new-fix-PR artifact on clawsweeper/issue-openclaw-openclaw-128017.

@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128017",
+  "mode": "autonomous",
+  "run_id": "32604306305",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32604306305",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128017.md",
+  "published_at": "2026-08-22T23:16:57.763Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128017",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128017",
+  "canonical_pr": null,
+  "summary": "#128017 remains the open canonical bug. A narrow fix plan is ready, but implementation is blocked: the checkout is read-only and the mandatory sibling ../codex source checkout is absent, so this worker cannot satisfy the Codex-source gate, write the branch, or validate the regression.",
+  "actions": [
+    {
+      "target": "#128017",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128017",
+      "candidate_fix": null,
+      "reason": "A writable checkout plus direct inspection of the mandated sibling Codex source is required before any code change."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128017",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128017",
+      "candidate_fix": null,
+      "reason": "The executor can apply this narrow owner-plugin repair once the environment blockers are resolved."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable checkout with sibling ../codex source available for direct inspection; then execute the supplied new-fix-PR artifact on clawsweeper/issue-openclaw-openclaw-128017."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
