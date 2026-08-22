@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T12:20:06.113Z",
+  "updated_at": "2026-08-22T12:20:07.044Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126775:5377915216:2026-08-22T04:39:16Z:re_review",
-      "comment_id": "5377915216",
-      "comment_version_key": "5377915216:2026-08-22T04:39:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126775#issuecomment-5377915216",
-      "comment_created_at": "2026-08-22T04:39:16Z",
-      "comment_updated_at": "2026-08-22T04:39:16Z",
-      "comment_body_sha256": "73a3af119f904a2a2f8ec279a95a37ef143d623566d117fce7b902eb29619674",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126775,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T04:39:59.738Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-126631-sandbox-skills-bind-mount-root-owned",
-        "head_sha": "add06ac61ad8ec67cb32a16abe1fe3d83cbb01b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127704:5377914829:2026-08-22T04:39:11Z:re_review",
       "comment_id": "5377914829",
@@ -32646,6 +32599,39 @@
         "kind": "pull_request",
         "branch": "fix/automod-bypass-role-errors",
         "head_sha": "8e708e2a6c251d05af2e161d3f4fb8c5c1280f1d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126761:5359766972:2026-08-22T12:18:03Z:clawsweeper_needs_human",
+      "comment_id": "5359766972",
+      "comment_version_key": "5359766972:2026-08-22T12:18:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126761#issuecomment-5359766972",
+      "comment_created_at": "2026-08-20T18:01:31Z",
+      "comment_updated_at": "2026-08-22T12:18:03Z",
+      "comment_body_sha256": "ce04a72962ff3b2223ffcb1b194a3c64a37cfdf830f4bc8c690c4e4f1c38c856",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126761,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that passed the formerly ignored parent option to aliases or scan will now exit nonzero. (sha=d82214a5e50b1ff38111d8b70e0bdb2940d9714d)",
+      "expected_head_sha": "d82214a5e50b1ff38111d8b70e0bdb2940d9714d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T12:20:07.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/models-agent-scope-guard",
+        "head_sha": "d82214a5e50b1ff38111d8b70e0bdb2940d9714d",
         "cluster_id": null,
         "job_path": null
       }
