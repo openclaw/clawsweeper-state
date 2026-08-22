@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T09:04:41.529Z",
+  "updated_at": "2026-08-22T09:04:43.376Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127469:5377123122:2026-08-22T01:33:40Z:re_review",
-      "comment_id": "5377123122",
-      "comment_version_key": "5377123122:2026-08-22T01:33:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127469#issuecomment-5377123122",
-      "comment_created_at": "2026-08-22T01:33:40Z",
-      "comment_updated_at": "2026-08-22T01:33:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127469,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T01:54:03.754Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/memory-provenance-auto-injection",
-        "head_sha": "8095fc17c7b54e62f9aabf3867aa6749e0ed5511",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127740:5377166703:2026-08-22T01:43:08Z:clawsweeper_needs_human",
       "comment_id": "5377166703",
@@ -32315,6 +32282,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T09:04:41.529Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacrawl:72:5297644458:2026-08-22T09:04:06Z:clawsweeper_needs_human",
+      "comment_id": "5297644458",
+      "comment_version_key": "5297644458:2026-08-22T09:04:06Z",
+      "comment_url": "https://github.com/openclaw/wacrawl/pull/72#issuecomment-5297644458",
+      "comment_created_at": "2026-08-14T20:04:05Z",
+      "comment_updated_at": "2026-08-22T09:04:06Z",
+      "comment_body_sha256": "a24d10ca89ae89e751aa04d5b24a06cf64b486ba2f4ca484ed2d3e27021b8459",
+      "repo": "openclaw/wacrawl",
+      "issue_number": 72,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - CHANGELOG.md is release-owned; merging the placeholder without release-owner confirmation could conflict with the intended release-closeout cadence, though it has no runtime or upgrad... (sha=6a6402e31b494929f2ab8b81cd5c60b8e52d8782)",
+      "expected_head_sha": "6a6402e31b494929f2ab8b81cd5c60b8e52d8782",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T09:04:43.376Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/next-unreleased-0.3.8-31835363404",
+        "head_sha": "6a6402e31b494929f2ab8b81cd5c60b8e52d8782",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
