@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T07:10:31.360Z",
+  "updated_at": "2026-08-22T07:11:06.376Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:22:4756680671:2026-08-21T23:56:51Z:clawsweeper_auto_repair",
-      "comment_id": "4756680671",
-      "comment_version_key": "4756680671:2026-08-21T23:56:51Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/22#issuecomment-4756680671",
-      "comment_created_at": "2026-06-20T06:08:15Z",
-      "comment_updated_at": "2026-08-21T23:56:51Z",
-      "comment_body_sha256": "0a6bcbb6de3d68f083e362ab93b94ec5dd422cd906a1380690a8eb6ad5b4bf4e",
-      "repo": "openclaw/rfcs",
-      "issue_number": 22,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=63fb092a20f8ddb426c202e4f654ba45ec28f4d2)",
-      "expected_head_sha": "63fb092a20f8ddb426c202e4f654ba45ec28f4d2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T00:06:51.463Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "rfc/multi-slot-memory-role-architecture",
-        "head_sha": "63fb092a20f8ddb426c202e4f654ba45ec28f4d2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/tachikoma:71:5335168897:2026-08-22T00:06:11Z:clawsweeper_auto_repair",
       "comment_id": "5335168897",
@@ -31762,6 +31729,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-22T07:10:10Z:clawsweeper_needs_human",
+      "comment_id": "5376735204",
+      "comment_version_key": "5376735204:2026-08-22T07:10:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
+      "comment_created_at": "2026-08-22T00:21:26Z",
+      "comment_updated_at": "2026-08-22T07:10:10Z",
+      "comment_body_sha256": "92c1d94dcf882889f6d7285832105046df7cae69bb8b4432b2ee315d8e40e8ea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127700,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify the privileged Codex Action before upgrading it (P1)** - This pin replaces the action that the Mantis lane relies on to validate codex-user and launch Codex as that unprivileged user, while the step also...; Review finding: [P1] Verify the privileged Codex Action before upgrading it — .github/workflows/mantis-telegram-desktop-proof.yml:760 - [medium] Unverified privileged Codex Action... (sha=c55915298ec07f09de87442f72acf8bfcafccf13)",
+      "expected_head_sha": "c55915298ec07f09de87442f72acf8bfcafccf13",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T07:11:06.376Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-2b47f3b96e",
+        "head_sha": "c55915298ec07f09de87442f72acf8bfcafccf13",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
