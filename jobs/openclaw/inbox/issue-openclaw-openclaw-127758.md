@@ -67,20 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the Discord false-success path from https://github.com/openclaw/openclaw/issues/127758. In the Discord outbound payload owner, when a native asVoice send fails but fallback text is delivered, retain the fallback but report the original failure after delivery progress so the shared delivery pipeline returns partial_failed rather than sent. Do not add config, change successful voice/media paths, or alter other channels. Add a regression that injects voice conversion/upload failure plus successful fallback text, asserts a text-only receipt and partial-failed tool/delivery status, and confirms successful voice delivery remains sent. Do not edit release-owned CHANGELOG.md.
+Repair the Discord voice-media false-success bug in https://github.com/openclaw/openclaw/issues/127758. When an audioAsVoice delivery fails after a media request, retain any delivered caption receipt but return the canonical partial-delivery failure so the message tool does not report sent with the requested media URL. Keep ambiguous Discord create handling unchanged, add no configuration, and add a regression that fails on current main for caption-plus-voice failure. Validate the Discord outbound payload boundary and existing message partial-delivery semantics; do not edit CHANGELOG.md.
 
 Likely files:
 
 - extensions/discord/src/outbound-payload.ts
 - extensions/discord/src/outbound-adapter.test.ts
-- src/infra/outbound/deliver-core.ts
-- src/infra/outbound/deliver.test.ts
 
 Validation:
 
-- pnpm vitest extensions/discord/src/outbound-adapter.test.ts
-- pnpm vitest src/infra/outbound/deliver.test.ts
-- pnpm vitest src/channels/message/send.test.ts
+- node scripts/run-vitest.mjs extensions/discord/src/outbound-adapter.test.ts
+- node scripts/run-vitest.mjs src/infra/outbound/message.test.ts
 
 ## Operator Prompt
 
