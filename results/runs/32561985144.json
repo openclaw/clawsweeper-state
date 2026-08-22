@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125776",
+  "mode": "autonomous",
+  "run_id": "32561985144",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32561985144",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125776.md",
+  "published_at": "2026-08-22T08:33:39.888Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125776",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125776",
+  "canonical_pr": null,
+  "summary": "Current main drops a dynamic tool’s call identity before Telegram’s progress draft merge. The repair is blocked because required direct sibling Codex source (`../codex`) is absent and dependencies are unavailable in this read-only checkout.",
+  "actions": [
+    {
+      "target": "#125776",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Await a direct Codex source checkout and writable dependency/repair environment."
+    },
+    {
+      "target": "#116512",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Distinct producer mechanism; retain as an independent follow-up."
+    },
+    {
+      "target": "#125779",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125776",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125776",
+      "candidate_fix": null,
+      "reason": "Resume after the required Codex checkout and dependencies are available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a direct sibling `../codex` source checkout at the pinned app-server revision and a writable environment for `pnpm install`; repository policy forbids a Codex-dependent implementation without that inspection."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#125776",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
