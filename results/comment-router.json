@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T22:18:14.218Z",
+  "updated_at": "2026-08-22T22:18:19.897Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126968:5381272352:2026-08-22T15:53:37Z:re_review",
-      "comment_id": "5381272352",
-      "comment_version_key": "5381272352:2026-08-22T15:53:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126968#issuecomment-5381272352",
-      "comment_created_at": "2026-08-22T15:53:37Z",
-      "comment_updated_at": "2026-08-22T15:53:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126968,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T15:54:20.004Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/agent-switcher-visual-intent",
-        "head_sha": "69716c7dc85280ce8dbdb53f3e83d7505bfb0137",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/imsgcrawl:12:5297630847:2026-08-22T15:54:57Z:clawsweeper_needs_human",
       "comment_id": "5297630847",
@@ -31479,6 +31432,39 @@
         "kind": "pull_request",
         "branch": "fix/attach-stdio-stdin-error",
         "head_sha": "fe65af2e4e4a30122a5ec32df8c2769fe8122f56",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:83:5338603709:2026-08-22T22:08:06Z:clawsweeper_needs_human",
+      "comment_id": "5338603709",
+      "comment_version_key": "5338603709:2026-08-22T22:08:06Z",
+      "comment_url": "https://github.com/openclaw/graincrawl/pull/83#issuecomment-5338603709",
+      "comment_created_at": "2026-08-19T06:54:14Z",
+      "comment_updated_at": "2026-08-22T22:08:06Z",
+      "comment_body_sha256": "619a8a4d97234167e768fb8ad1a9c59a243d2b17b22fa27cc1cdad8e90e48ec6",
+      "repo": "openclaw/graincrawl",
+      "issue_number": 83,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Crawlkit v0.14.7 source is not present in the local module cache, so a credentialed live-proof runner should not fetch and execute it; rely on the already-green trusted Go CI and norm... (sha=e577d7ebfb0b5d2cb89fd91ad132692cab77d231)",
+      "expected_head_sha": "e577d7ebfb0b5d2cb89fd91ad132692cab77d231",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T22:18:19.897Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.7",
+        "head_sha": "e577d7ebfb0b5d2cb89fd91ad132692cab77d231",
         "cluster_id": null,
         "job_path": null
       }
