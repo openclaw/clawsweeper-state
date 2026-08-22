@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T19:28:51.035Z",
+  "updated_at": "2026-08-22T19:33:27.740Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127935:5380656958:2026-08-22T13:27:55Z:clawsweeper_auto_repair",
-      "comment_id": "5380656958",
-      "comment_version_key": "5380656958:2026-08-22T13:27:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127935#issuecomment-5380656958",
-      "comment_created_at": "2026-08-22T13:27:55Z",
-      "comment_updated_at": "2026-08-22T13:27:55Z",
-      "comment_body_sha256": "50efb0a6c840e024e92ec98111cb13296de0d8b4f3020bdfb886ec926c93568e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127935,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e335b15d37730362d7083c3c19df4b8c00973b57)",
-      "expected_head_sha": "e335b15d37730362d7083c3c19df4b8c00973b57",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T13:35:12.040Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-ssrf-socket-error",
-        "head_sha": "e335b15d37730362d7083c3c19df4b8c00973b57",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127903:5380658839:2026-08-22T13:28:23Z:clawsweeper_needs_human",
       "comment_id": "5380658839",
@@ -31551,6 +31518,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128013:5382131432:2026-08-22T19:30:55Z:clawsweeper_needs_human",
+      "comment_id": "5382131432",
+      "comment_version_key": "5382131432:2026-08-22T19:30:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128013#issuecomment-5382131432",
+      "comment_created_at": "2026-08-22T19:15:06Z",
+      "comment_updated_at": "2026-08-22T19:30:55Z",
+      "comment_body_sha256": "9c161ed739c1f62ddd43a0c63cc5f422db21d78cc22de0e9442de035c5b57bfe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128013,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Render lane details as literal Markdown text (P2)** - This sanitizer leaves Markdown syntax intact, while the publisher inserts detail directly into its bot-authored PR comment. A lane can supply [link](url), ![...; Review finding: [P2] Render lane details as literal Markdown text — scripts/mantis/build-telegram-desktop-proof-evidence.mts:235-238 - [low] Markdown injection in proof verdict de... (sha=0196fe8045ad3e4a14de502dd1449f7d85696bfa)",
+      "expected_head_sha": "0196fe8045ad3e4a14de502dd1449f7d85696bfa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T19:33:27.740Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "t3code/mantis-verdict-reasons",
+        "head_sha": "0196fe8045ad3e4a14de502dd1449f7d85696bfa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
