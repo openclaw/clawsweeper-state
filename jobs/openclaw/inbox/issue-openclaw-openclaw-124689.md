@@ -67,17 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the remaining Ollama Cloud probe false failure in https://github.com/openclaw/openclaw/issues/124689. Leave the current active-session picker flow unchanged. At the auth-probe model-selection owner, automatic catalog fallback must prefer a non-deprecated row when one exists; an explicitly configured deprecated model must remain selectable. Add one owner-boundary regression in the existing probe suite using an ollama-cloud catalog with deprecated kimi-k2.5 before a usable successor and a configured candidate under another provider identity; it must fail before the repair because the emitted probe targets kimi-k2.5, then pass after selecting the usable row. Capture redacted real provider proof if credentials are available. Do not add config options or edit CHANGELOG.md; include release-note context in the PR body.
+Fix the remaining Ollama Cloud provider-probe defect in this issue. Preserve direct configured probe candidates, including an intentional deprecated pin, but when generic catalog fallback is required, rank deprecated and disabled rows below current rows before applying existing provider-specific ordering. Add a regression test where retired `ollama-cloud/kimi-k2.5` precedes a current cloud model and the selected probe uses the current row. Do not change the Control UI session-picker path, provider config format, manifest defaults, or CHANGELOG.md; put release-note context in the PR body. Stop and escalate if the repair requires a new setting, API contract, or provider-policy decision.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.test.ts
+- src/commands/models/list.probe.targets.test.ts
+- src/commands/models/list.probe.ollama.test.ts
 
 Validation:
 
-- pnpm test src/commands/models/list.probe.test.ts
-- pnpm test src/gateway/server-methods/models-probe.test.ts
+- pnpm test src/commands/models/list.probe.targets.test.ts src/commands/models/list.probe.ollama.test.ts
+- pnpm build
 
 ## Operator Prompt
 
