@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-105228",
+  "mode": "autonomous",
+  "run_id": "32578171533",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32578171533",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-105228.md",
+  "published_at": "2026-08-22T14:25:10.953Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/105228",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/105228",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked by this read-only/no-network worker environment before the required regression and branch can be created. The current main source path shows the abort signal stops at the tool construction boundary while ACP dispatch can register after requester stop; a narrow repair plan is prepared.",
+  "actions": [
+    {
+      "target": "#105228",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "A writable environment with dependencies and the required ../codex checkout is needed before the mandatory failing regression, repair, and validation can run."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-105228",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#105228",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor; local implementation and validation are blocked."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#105228",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
