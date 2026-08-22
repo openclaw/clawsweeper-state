@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T02:04:03.730Z",
+  "updated_at": "2026-08-22T02:04:21.316Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3080:5374436233:2026-08-21T19:38:15Z:re_review",
-      "comment_id": "5374436233",
-      "comment_version_key": "5374436233:2026-08-21T19:38:15Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3080#issuecomment-5374436233",
-      "comment_created_at": "2026-08-21T19:38:15Z",
-      "comment_updated_at": "2026-08-21T19:38:15Z",
-      "comment_body_sha256": "75382af27f846186c4b4c439b06f9ba51422a0f1a0ca5f52897962460b0db690",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3080,
-      "author": "Hek846",
-      "author_id": 47484037,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T19:44:36.495Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bailian-cli-token-plan",
-        "head_sha": "7ea2e12a1c0a83f28e35669b8fe9d6d38507dafe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3080:5348430374:2026-08-21T19:43:52Z:clawsweeper_needs_human",
       "comment_id": "5348430374",
@@ -32138,6 +32091,39 @@
         "kind": "pull_request",
         "branch": "fix/message-channel-cli-subcommands",
         "head_sha": "868def46dad1eee49a22aaced557d28994dfdcc3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/poltergeist:209:5318995661:2026-08-22T02:03:23Z:clawsweeper_needs_human",
+      "comment_id": "5318995661",
+      "comment_version_key": "5318995661:2026-08-22T02:03:23Z",
+      "comment_url": "https://github.com/steipete/poltergeist/pull/209#issuecomment-5318995661",
+      "comment_created_at": "2026-08-17T19:04:26Z",
+      "comment_updated_at": "2026-08-22T02:03:23Z",
+      "comment_body_sha256": "f0a010eb13fe3f171cadfef39e7baefc50a0f0579bc4a70cf38c906bc7bc5d22",
+      "repo": "steipete/poltergeist",
+      "issue_number": 209,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Version 0.84.2 changes the production terminal rendering/input library; green automated checks do not establish alternate-screen, key, and mouse behavior in a real TTY. (sha=67d2d4199e025504c1c82907e9eb9c0691e50181)",
+      "expected_head_sha": "67d2d4199e025504c1c82907e9eb9c0691e50181",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T02:04:21.316Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/earendil-works/pi-tui-0.84.2",
+        "head_sha": "67d2d4199e025504c1c82907e9eb9c0691e50181",
         "cluster_id": null,
         "job_path": null
       }
