@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128005"
 mode: "autonomous"
-run_id: "32594570922"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32594570922"
+run_id: "32595899014"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32595899014"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T19:54:19.900Z"
+published_at: "2026-08-22T20:19:53.469Z"
 canonical: "https://github.com/openclaw/openclaw/issues/128005"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/128005"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32594570922](https://github.com/openclaw/clawsweeper/actions/runs/32594570922)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32595899014](https://github.com/openclaw/clawsweeper/actions/runs/32595899014)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/128005
 
 ## Summary
 
-Current main's Android capture owner applies maxAgeMs only to cached fixes; its live callback is serialized without freshness filtering. A narrow repair plan is ready, but this read-only worker cannot create the branch or run Android validation, and the required sibling ../codex checkout is absent, so the Codex hard gate cannot be completed here.
+#128005 is a reproducible canonical Android freshness bug on main a4dbe235. Implementation is blocked in this worker because the checkout is read-only and lacks Gradle/Robolectric artifacts; ../codex is also absent, so the repository-required direct Codex-source gate cannot be completed here. A narrow new-PR artifact is ready for an executor with a writable validated checkout.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main's Android capture owner applies maxAgeMs only to cached fixes; its 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128005 | fix_needed | planned | canonical | Canonical open bug with a narrow Android capture-owner repair path; no contributor PR is hydrated. |
-| cluster:issue-openclaw-openclaw-128005 | build_fix_artifact | planned | canonical | Prepare a new narrow credited fix PR; implementation and validation require a writable executor with the mandatory sibling Codex checkout. |
+| #128005 | fix_needed | blocked | canonical | The bug is source-reproducible, but this worker cannot create or validate the required repair branch. |
+| cluster:issue-openclaw-openclaw-128005 | build_fix_artifact | planned | canonical | Create one narrow credited ClawSweeper fix PR after the executor establishes the Android capture-boundary regression on the writable branch. |
 
 ## Needs Human
 
