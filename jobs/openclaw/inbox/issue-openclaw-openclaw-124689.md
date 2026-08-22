@@ -67,18 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair models.probe fallback selection so an unconfigured provider fallback never chooses a deprecated or disabled catalog row, while an explicitly configured legacy model remains probeable. Preserve the documented ollama versus ollama-cloud boundary; do not add aliases or a UI workaround. Extend the existing probe-target coverage with a catalog ordered as deprecated kimi-k2.5 then a usable Ollama Cloud model and only an ollama/* candidate; the pre-fix test must select Kimi and the repaired test the usable cloud row. Add release-note context to the PR body, not CHANGELOG.md. Stop if the repair requires new configuration, provider-policy direction, or changing explicit deprecated-model behavior.
+Repair the current-main Ollama Cloud auth-probe selection defect described in https://github.com/openclaw/openclaw/issues/124689. Preserve the existing current-session picker flow: it already patches the selected session. At the probe-planning owner, make an `ollama-cloud` API-key probe select the configured/canonical eligible model route rather than falling through from `ollama/...-cloud` to an unrelated deprecated catalog row. Reuse an existing provider/catalog routing contract if available; do not hardcode customer model names, infer one provider from raw suffixes in core, rewrite user config, or add a configuration option. Add a regression that models the reporter shape and proves a retired `kimi-k2.5` fallback is not selected. Include release-note context in the PR body or commit message, not CHANGELOG.md. If the implementation requires a new permanent provider-route API or a product decision, stop and return to triage.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.targets.test.ts
+- src/commands/models/list.probe.ollama.test.ts
+- src/gateway/server-methods/models-probe.test.ts
 
 Validation:
 
-- pnpm test src/commands/models/list.probe.targets.test.ts
-- pnpm check:changed
-- Run the documented redacted Ollama Cloud API-key smoke against current main and verify the Control UI enables the selected hosted model.
+- pnpm test src/commands/models/list.probe.ollama.test.ts
+- pnpm test src/gateway/server-methods/models-probe.test.ts
+- Run a redacted `models.probe` against a configured Ollama Cloud API-key route if approved test credentials are available; otherwise state the live-provider proof gap explicitly.
 
 ## Operator Prompt
 
