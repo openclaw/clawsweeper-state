@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T03:41:12.928Z",
+  "updated_at": "2026-08-22T03:41:13.725Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112896:5200017858:2026-08-06T03:23:14Z:re_review",
-      "comment_id": "5200017858",
-      "comment_version_key": "5200017858:2026-08-06T03:23:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112896#issuecomment-5200017858",
-      "comment_created_at": "2026-08-06T03:23:14Z",
-      "comment_updated_at": "2026-08-06T03:23:14Z",
-      "comment_body_sha256": "96f75398cb04d17d38711f8da0b78a2e202f7d6497824ade9f43efdd12341ccd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112896,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review please",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T21:56:59.935Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112896:5200386770:2026-08-06T04:27:52Z:re_review",
       "comment_id": "5200386770",
@@ -31486,6 +31459,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T03:41:12.928Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124540:5307282123:2026-08-22T03:40:01Z:clawsweeper_needs_human",
+      "comment_id": "5307282123",
+      "comment_version_key": "5307282123:2026-08-22T03:40:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124540#issuecomment-5307282123",
+      "comment_created_at": "2026-08-16T11:49:01Z",
+      "comment_updated_at": "2026-08-22T03:40:01Z",
+      "comment_body_sha256": "571a267a2ac042751f788c64d6656bab0f6b014029ace85450d1f1b66ce83223",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124540,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body shows a Vitest run through mocked configuration and a seeded SQLite store, but needs redacted after-fix terminal evidence of a real... (sha=25e109c3f5ba30aba971efd1a5d7aa62bf784c53)",
+      "expected_head_sha": "25e109c3f5ba30aba971efd1a5d7aa62bf784c53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T03:41:13.725Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-list-archive-runtime-124524",
+        "head_sha": "25e109c3f5ba30aba971efd1a5d7aa62bf784c53",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
