@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T13:53:39.834Z",
+  "updated_at": "2026-08-22T13:55:32.261Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5259559764:2026-08-11T22:25:32Z:re_review",
-      "comment_id": "5259559764",
-      "comment_version_key": "5259559764:2026-08-11T22:25:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5259559764",
-      "comment_created_at": "2026-08-11T22:25:32Z",
-      "comment_updated_at": "2026-08-11T22:25:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T07:32:25.423Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5273332453:2026-08-12T22:06:22Z:re_review",
       "comment_id": "5273332453",
@@ -32030,6 +32003,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T13:53:39.834Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125210:5314886629:2026-08-22T13:51:45Z:clawsweeper_needs_human",
+      "comment_id": "5314886629",
+      "comment_version_key": "5314886629:2026-08-22T13:51:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125210#issuecomment-5314886629",
+      "comment_created_at": "2026-08-17T10:30:12Z",
+      "comment_updated_at": "2026-08-22T13:51:45Z",
+      "comment_body_sha256": "ac944923edad0337ad73f3f086ea5d7e8e8b0688b2a9adebdec789b0cf016542",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125210,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; require targeted compaction validation and required CI on the rebased or actual merge-result head before landing. (sha=04cd66dbd8ceff62b8e32e85178a3cfd8ad2b1f2)",
+      "expected_head_sha": "04cd66dbd8ceff62b8e32e85178a3cfd8ad2b1f2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T13:55:32.261Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-eligibility-context-size-120290",
+        "head_sha": "eb0bf7b71101e0a9b9f9e912bc77904dba945bda",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
