@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32551884886"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32551884886"
+run_id: "32552568259"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32552568259"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "success"
-result_status: "needs_human"
-published_at: "2026-08-22T04:40:02.883Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-22T04:55:20.405Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-124689
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32551884886](https://github.com/openclaw/clawsweeper/actions/runs/32551884886)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32552568259](https://github.com/openclaw/clawsweeper/actions/runs/32552568259)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: needs_human
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Current main source reproduces the Ollama Cloud probe mis-selection, but the correct repair requires a new plugin-owned cross-provider route contract. The job explicitly requires triage rather than adding that permanent API automatically.
+#124689 is a real, narrow Ollama Cloud auth-probe routing defect on main 48a2b45. Implementation is blocked because the checkout is read-only, dependencies are absent, and mandatory sibling ../codex source is unavailable for the required direct inspection.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Current main source reproduces the Ollama Cloud probe mis-selection, but the cor
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #124689 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Current main source reproduces the Ollama Cloud probe mis-selection, but the cor
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | A core suffix/provider special case would violate the issue guardrails and plugin-agnostic boundary. Approve a plugin-owned cross-provider probe-route contract, or explicitly narrow the intended behavior to choosing any non-deprecated catalog fallback. |
-| #120752 | keep_related | planned | related | Adjacent model-picker symptoms have different owner boundaries and should remain independently tracked. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | Awaiting maintainer direction on the required permanent provider-route API. |
+| #120752 | keep_related | planned | related | Adjacent picker area but distinct root cause and owner boundary. |
+| #124689 | fix_needed | planned | canonical | The API-key probe must select the configured eligible catalog route before generic fallback. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | Hand off to a writable executor with ../codex present and dependencies installed. |
 
 ## Needs Human
 
-- Approve or reject a plugin-owned cross-provider probe-route contract that maps an Ollama local cloud-suffixed configured route to the canonical ollama-cloud probe route. The requested bug-only lane forbids inventing this API autonomously.
+- none
