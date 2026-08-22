@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32589592509"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32589592509"
-head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
+run_id: "32591601327"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32591601327"
+head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T18:14:10.502Z"
+published_at: "2026-08-22T18:55:14.073Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32589592509](https://github.com/openclaw/clawsweeper/actions/runs/32589592509)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32591601327](https://github.com/openclaw/clawsweeper/actions/runs/32591601327)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-The generic probe fallback defect is source-evident, but no repaired branch can be produced: the checkout is read-only and mandatory sibling ../codex source is absent; cloning fails with a read-only filesystem error.
+#124689 remains the canonical open bug. Current main selects a deprecated catalog fallback for a provider without an explicit model candidate; a narrow generic repair and regression test are planned. This worker could not apply or validate it because the checkout is read-only, dependencies are absent, and the required sibling ../codex source is unavailable.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The generic probe fallback defect is source-evident, but no repaired branch can 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | keep_canonical | blocked | canonical | Keep the hydrated canonical issue open. Only local implementation is blocked; the issue remains a narrow bug-fix candidate. |
-| cluster:issue-openclaw-openclaw-124689 | fix_needed | planned | canonical | Filter deprecated and disabled rows only in the implicit catalog fallback, then preserve existing provider normalization and Anthropic priority/order. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | Ready for executor replay once checkout prerequisites are restored. |
+| #124689 | fix_needed | planned | canonical | Repair the generic catalog fallback only; do not special-case Ollama or change credential routing. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Artifact is ready for a writable executor after dependency setup and required Codex-source inspection. |
+| cluster:issue-openclaw-openclaw-124689 | open_fix_pr | blocked | canonical | Blocked only by this worker's read-only checkout, missing dependencies, and missing mandatory ../codex source; no maintainer decision is required. |
 
 ## Needs Human
 
