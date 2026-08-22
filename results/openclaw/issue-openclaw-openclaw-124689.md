@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32559193418"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32559193418"
+run_id: "32559977728"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32559977728"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T07:39:53.864Z"
+published_at: "2026-08-22T07:45:52.535Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32559193418](https://github.com/openclaw/clawsweeper/actions/runs/32559193418)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32559977728](https://github.com/openclaw/clawsweeper/actions/runs/32559977728)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Source tracing identifies a narrow probe-selection defect, but implementation and validation are blocked by this read-only checkout and the absent mandatory sibling ../codex source checkout. No GitHub mutations were made.
+The issue remains a current-main, narrow auth-probe bug: an ollama-cloud probe has no direct candidate for an `ollama/...-cloud` configured model and selects the first catalog row, which is deprecated `kimi-k2.5`. I could not implement or validate the repair because this worker has a read-only filesystem (Corepack fails with EROFS) and required sibling `../codex` source is absent, so the mandatory Codex direct-inspection gate cannot be satisfied.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Source tracing identifies a narrow probe-selection defect, but implementation an
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | keep_canonical | planned | canonical | Keep the issue open while the narrow repair is implemented and validated. |
-| #124689 | fix_needed | blocked | canonical | Implement the planner-level catalog-route selection once a writable checkout and required sibling Codex source are available. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned |  | Prepared a narrow, credited new-PR plan for the deterministic executor. |
+| #124689 | keep_canonical | planned | canonical | Canonical bug report; the session-picker portion is already fixed on current main, while this probe-planning defect remains. |
+| #124689 | fix_needed | blocked | canonical | Implementation is blocked only in this worker environment. A writable executor with ../codex available can apply the narrow artifact below. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Prepare one narrow credited fix PR after the executor completes the required Codex inspection, regression, validation, and review. |
 
 ## Needs Human
 
