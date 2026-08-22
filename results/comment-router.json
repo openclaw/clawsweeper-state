@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T08:33:03.583Z",
+  "updated_at": "2026-08-22T08:33:08.467Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4964447067:2026-07-14T01:13:44Z:re_review",
-      "comment_id": "4964447067",
-      "comment_version_key": "4964447067:2026-07-14T01:13:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4964447067",
-      "comment_created_at": "2026-07-14T01:13:44Z",
-      "comment_updated_at": "2026-07-14T01:13:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T01:32:48.663Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4966422803:2026-07-14T07:21:49Z:re_review",
       "comment_id": "4966422803",
@@ -32112,6 +32085,39 @@
         "head_sha": "a7b2ab531422738de9f88397aa0318b0a8bb7744",
         "cluster_id": "automerge-openclaw-openclaw-121050",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121050.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127791:5378392484:2026-08-22T08:32:01Z:clawsweeper_needs_human",
+      "comment_id": "5378392484",
+      "comment_version_key": "5378392484:2026-08-22T08:32:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127791#issuecomment-5378392484",
+      "comment_created_at": "2026-08-22T06:14:48Z",
+      "comment_updated_at": "2026-08-22T08:32:01Z",
+      "comment_body_sha256": "b6b444480500c51ccee28cd38720a2ad88a64f189abaff69b7e599c752efc1dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127791,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - If an official beta artifact is absent, the new fallback retries the bare selector and may install a stable plugin on a beta gateway, recreating the version-drift and compatibility co... (sha=ae2f862c5d1a9471117940ce301b93e32379e739)",
+      "expected_head_sha": "ae2f862c5d1a9471117940ce301b93e32379e739",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T08:33:08.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/official-plugin-install-release-stream",
+        "head_sha": "ae2f862c5d1a9471117940ce301b93e32379e739",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
