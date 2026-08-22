@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T22:26:39.200Z",
+  "updated_at": "2026-08-22T22:27:36.682Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126503:5350139332:2026-08-22T15:57:05Z:clawsweeper_needs_human",
-      "comment_id": "5350139332",
-      "comment_version_key": "5350139332:2026-08-22T15:57:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126503#issuecomment-5350139332",
-      "comment_created_at": "2026-08-20T01:40:35Z",
-      "comment_updated_at": "2026-08-22T15:57:05Z",
-      "comment_body_sha256": "fe33d7f37f4fd99d32d6c9fb29835d8940707a9eb86c66a92a273451c87c8f37",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126503,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch is stateful and has a net production increase of 24 lines; no net-neutral alternative can both bypass replay ingress dedupe and atomically transfer the existing unique SQLit... (sha=4d2a0912b1c64d3eb8281983ea0e4185e87c4619)",
-      "expected_head_sha": "4d2a0912b1c64d3eb8281983ea0e4185e87c4619",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-22T15:59:00.311Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-transcript-replay-idempotency-126469",
-        "head_sha": "4d2a0912b1c64d3eb8281983ea0e4185e87c4619",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127964:5381250322:2026-08-22T15:48:24Z:clawsweeper_needs_human",
       "comment_id": "5381250322",
@@ -31482,6 +31449,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124483:5306451471:2026-08-22T22:24:17Z:clawsweeper_needs_human",
+      "comment_id": "5306451471",
+      "comment_version_key": "5306451471:2026-08-22T22:24:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124483#issuecomment-5306451471",
+      "comment_created_at": "2026-08-16T08:05:10Z",
+      "comment_updated_at": "2026-08-22T22:24:17Z",
+      "comment_body_sha256": "839d28a601bc53bc3eb1ecc49579f0393d656983edda0a115d03fc82789cd897",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124483,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The credential-bearing aggregate profile cannot run against this PR head without weakening the workflow’s trusted-ref boundary, so aggregate after-fix evidence must be observed on tru... (sha=9b33cb825c48b0d589cfb350b261c44ab8199c55)",
+      "expected_head_sha": "9b33cb825c48b0d589cfb350b261c44ab8199c55",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T22:27:36.682Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-profile-timeout-evidence",
+        "head_sha": "9b33cb825c48b0d589cfb350b261c44ab8199c55",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
