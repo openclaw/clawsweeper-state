@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T15:11:26.940Z",
+  "updated_at": "2026-08-22T15:11:34.196Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1225:5379256024:2026-08-22T08:20:09Z:re_review",
-      "comment_id": "5379256024",
-      "comment_version_key": "5379256024:2026-08-22T08:20:09Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1225#issuecomment-5379256024",
-      "comment_created_at": "2026-08-22T08:20:09Z",
-      "comment_updated_at": "2026-08-22T08:20:09Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1225,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T08:20:59.178Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/publication-starvation",
-        "head_sha": "2760c124bfcdcc25d1e995355044c9a9d42a8ad5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127805:5379277999:2026-08-22T08:23:52Z:re_review",
       "comment_id": "5379277999",
@@ -32097,6 +32050,39 @@
         "kind": "pull_request",
         "branch": "fix/spend-catchup-stall",
         "head_sha": "482bdb67c630d9a564de98a063ccc1fab1badf23",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125385:5319881429:2026-08-22T15:10:39Z:clawsweeper_needs_human",
+      "comment_id": "5319881429",
+      "comment_version_key": "5319881429:2026-08-22T15:10:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125385#issuecomment-5319881429",
+      "comment_created_at": "2026-08-17T20:29:10Z",
+      "comment_updated_at": "2026-08-22T15:10:39Z",
+      "comment_body_sha256": "1c9cc030d032067cbae55a9d1a034aa52cf713aa6a74f1d7a8f84afd284765f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125385,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as conflict-dirty; current main changed watchdog recovery to its retry-disposition owner, so conflict resolution must not restore the branch's older direct... (sha=5e7d435fb0494ae46d32fce94c2adc6fd6a6bf67)",
+      "expected_head_sha": "5e7d435fb0494ae46d32fce94c2adc6fd6a6bf67",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T15:11:34.196Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/fix-slack-deferred-ingress-2",
+        "head_sha": "5e7d435fb0494ae46d32fce94c2adc6fd6a6bf67",
         "cluster_id": null,
         "job_path": null
       }
