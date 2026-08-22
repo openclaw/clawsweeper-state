@@ -67,17 +67,16 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the current-main provider-probe fallback so `models.probe` does not test a catalog row marked deprecated when there is no explicit model candidate for the requested provider. Preserve explicit same-provider configured-model priority and existing credential/profile behavior; do not alter runtime provider routing, API-key setup, or session-picker behavior. Carry catalog status into the probe selector, choose a non-deprecated row, and return the existing no-model result when no usable row exists. Add a regression covering an Ollama Cloud catalog with deprecated `kimi-k2.5` before a current row and a default belonging to another provider. Run focused probe tests and put user-facing release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the remaining provider diagnostic bug: when a requested provider has no explicit configured model candidate, choose a supported catalog fallback rather than a deprecated or disabled row. Preserve explicit configured model choices and existing provider/auth-alias routing; do not special-case Ollama, alter credential storage, add config, or edit CHANGELOG.md. Add a regression case with a deprecated-first catalog and a later supported row, then put user-visible release-note context in the PR body.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.ollama.test.ts
-- src/gateway/server-methods/models-probe.ts
+- src/commands/models/list.probe.targets.test.ts
 
 Validation:
 
-- pnpm test src/commands/models/list.probe.ollama.test.ts
+- pnpm test src/commands/models/list.probe.targets.test.ts
 - pnpm test src/gateway/server-methods/models-probe.test.ts
 
 ## Operator Prompt
