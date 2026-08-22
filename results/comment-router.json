@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T05:09:48.957Z",
+  "updated_at": "2026-08-22T05:09:51.051Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-21T22:42:03Z:clawsweeper_needs_human",
-      "comment_id": "5365906478",
-      "comment_version_key": "5365906478:2026-08-21T22:42:03Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5365906478",
-      "comment_created_at": "2026-08-21T06:12:29Z",
-      "comment_updated_at": "2026-08-21T22:42:03Z",
-      "comment_body_sha256": "214756bcf3d7f51c34348a891420b1c3ef84befa444b305e16968b9c9b424606",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3501,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body says to wait for “both” staged indexes, but the schema declares four; deploying the dependent query switch after only two backfills would violate the staged-index contract. (sha=b0cdd14de2e7fc882a9479f5172251e94475e4b8)",
-      "expected_head_sha": "b0cdd14de2e7fc882a9479f5172251e94475e4b8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T22:48:23.878Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/stage-signal-indexes",
-        "head_sha": "b0cdd14de2e7fc882a9479f5172251e94475e4b8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3131:5375366231:2026-08-21T22:48:10Z:clawsweeper_auto_repair",
       "comment_id": "5375366231",
@@ -31602,6 +31569,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T05:09:48.957Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:159:5335223197:2026-08-22T05:08:07Z:clawsweeper_needs_human",
+      "comment_id": "5335223197",
+      "comment_version_key": "5335223197:2026-08-22T05:08:07Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/159#issuecomment-5335223197",
+      "comment_created_at": "2026-08-18T23:01:27Z",
+      "comment_updated_at": "2026-08-22T05:08:07Z",
+      "comment_body_sha256": "32c3310d971f150f3c23adb62233a5d690ee431a57814cd1e9cd70f01b30a89b",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 159,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair-lane work is needed; the branch already has a focused implementation, regressions, and sufficient proof, so it needs ordinary maintainer merge review. (sha=6fc35a7346538fec822532a0e381e43ec3d933d8)",
+      "expected_head_sha": "6fc35a7346538fec822532a0e381e43ec3d933d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T05:09:51.051Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-repeated-cursor",
+        "head_sha": "6fc35a7346538fec822532a0e381e43ec3d933d8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
