@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T00:42:03.946Z",
+  "updated_at": "2026-08-22T00:42:07.680Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5374163558:2026-08-21T19:11:26Z:re_review",
-      "comment_id": "5374163558",
-      "comment_version_key": "5374163558:2026-08-21T19:11:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5374163558",
-      "comment_created_at": "2026-08-21T19:11:26Z",
-      "comment_updated_at": "2026-08-21T19:11:26Z",
-      "comment_body_sha256": "988c333211ffbe50ea0a9c7b3edf6fd876838701996c47044643ed0982960f2a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T19:12:17.553Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bootstrap-context-event-loop-stall",
-        "head_sha": "28273c071d7082015385ec410a2f5dd7766a5433",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:51762:4333312199:2026-08-21T19:07:03Z:clawsweeper_auto_repair",
       "comment_id": "4333312199",
@@ -32080,6 +32033,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/production-minor-and-patch-a1a6a844ee",
         "head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3505:5372360195:2026-08-22T00:41:17Z:clawsweeper_needs_human",
+      "comment_id": "5372360195",
+      "comment_version_key": "5372360195:2026-08-22T00:41:17Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3505#issuecomment-5372360195",
+      "comment_created_at": "2026-08-21T16:12:00Z",
+      "comment_updated_at": "2026-08-22T00:41:17Z",
+      "comment_body_sha256": "20ab42bec292ad22dd1cf1fb1253737b8f839d0005f5223f4a553c71d49b2866",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3505,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local-auth Playwright shard fails on this head; merging before it is rerun and classified could leave ClawHub’s CI validation incompatible with the updated tooling. (sha=fde2bd707df4ca56b67f4fb4ea576d2f05618c43)",
+      "expected_head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T00:42:07.680Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-3b24459cdd",
+        "head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
         "cluster_id": null,
         "job_path": null
       }
