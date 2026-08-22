@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32582864811"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32582864811"
+run_id: "32584368799"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32584368799"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T16:02:09.884Z"
+published_at: "2026-08-22T16:32:46.848Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32582864811](https://github.com/openclaw/clawsweeper/actions/runs/32582864811)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32584368799](https://github.com/openclaw/clawsweeper/actions/runs/32584368799)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Current main 946aa39b has a narrow, source-proven probe-planning defect: the requested provider’s catalog fallback can select a deprecated row by input order when all configured global candidates belong to another provider. A two-file repair plan is ready, but this worker cannot edit or validate it because the checkout is read-only; the mandatory sibling ../codex source is also absent, so no Codex verdict is claimed.
+Latest main (74189fb354749acc6cc910fdf091276283f99f70) still selects the first Ollama Cloud catalog row for an unconfigured provider probe, even when that row is deprecated. A narrow two-file fix is ready for an executor, but this read-only checkout cannot create the mandated ../codex checkout, install missing dependencies, edit the branch, or validate the regression.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main 946aa39b has a narrow, source-proven probe-planning defect: the req
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | planned | canonical | Narrow bug-only repair is appropriate. Implementation is blocked in this read-only worker; emit the repair artifact for the deterministic executor. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-124689 after applying and validating the artifact. |
+| #124689 | fix_needed | planned | canonical | Implement the catalog-fallback lifecycle filter and regression test on clawsweeper/issue-openclaw-openclaw-124689; do not alter runtime credential routing or the active-session picker. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | A narrow new fix PR remains appropriate; executor must satisfy the Codex source-inspection gate, install dependencies, implement, and validate. |
 
 ## Needs Human
 
