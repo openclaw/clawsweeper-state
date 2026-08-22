@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124689",
+  "mode": "autonomous",
+  "run_id": "32555594373",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32555594373",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124689.md",
+  "published_at": "2026-08-22T06:05:54.983Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_pr": null,
+  "summary": "A narrow fix PR is warranted: the auth-probe catalog fallback ignores deprecated/disabled status and can select deprecated ollama-cloud/kimi-k2.5. No files changed because this checkout is read-only and lacks dependencies; planned validation is blocked before execution by Corepack EROFS.",
+  "actions": [
+    {
+      "target": "#124689",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Current main reproduces the selection defect by source: non-Anthropic catalog rows share priority 50, so the deprecated first row is selected. Explicit configured candidates already return before the fallback."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124689",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Create the one narrow credited implementation PR on clawsweeper/issue-openclaw-openclaw-124689 after dependency installation and the required Codex sibling-source audit."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

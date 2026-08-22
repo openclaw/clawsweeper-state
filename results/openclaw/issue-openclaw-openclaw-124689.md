@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32555307708"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32555307708"
+run_id: "32555594373"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32555594373"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-22T06:00:06.523Z"
+result_status: "planned"
+published_at: "2026-08-22T06:05:54.983Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32555307708](https://github.com/openclaw/clawsweeper/actions/runs/32555307708)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32555594373](https://github.com/openclaw/clawsweeper/actions/runs/32555594373)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-#124689 remains the canonical open bug. Current main selects the first provider-matching catalog row without considering its deprecated status; Ollama Cloud declares kimi-k2.5 deprecated ahead of current rows. Implementation is blocked because this checkout is read-only and the mandatory sibling ../codex source checkout is absent.
+A narrow fix PR is warranted: the auth-probe catalog fallback ignores deprecated/disabled status and can select deprecated ollama-cloud/kimi-k2.5. No files changed because this checkout is read-only and lacks dependencies; planned validation is blocked before execution by Corepack EROFS.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | A narrow owner-boundary repair is defined, but this worker cannot write the branch or satisfy the mandatory Codex-source gate. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Prepare one narrow credited fix PR once a writable checkout with ../codex is available. |
+| #124689 | fix_needed | planned | canonical | Current main reproduces the selection defect by source: non-Anthropic catalog rows share priority 50, so the deprecated first row is selected. Explicit configured candidates already return before the fallback. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned |  | Create the one narrow credited implementation PR on clawsweeper/issue-openclaw-openclaw-124689 after dependency installation and the required Codex sibling-source audit. |
 
 ## Needs Human
 
