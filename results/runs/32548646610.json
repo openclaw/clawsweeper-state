@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124689",
+  "mode": "autonomous",
+  "run_id": "32548646610",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32548646610",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124689.md",
+  "published_at": "2026-08-22T03:31:01.812Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_pr": null,
+  "summary": "#124689 remains the open canonical report. Current main statically reproduces the probe-selection defect: an ollama/* candidate does not match an ollama-cloud probe, so the first cloud catalog row, deprecated kimi-k2.5, is selected. A narrow two-file fix artifact is ready, but this worker cannot edit or validate in the read-only checkout; node_modules and ../codex are absent, pnpm cannot initialize Corepack on EROFS, and no redacted Ollama Cloud API key is available for the required live smoke.",
+  "actions": [
+    {
+      "target": "#124689",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Keep the source issue open while the narrow probe repair is implemented; the active-session picker portion is outside this artifact and must not be claimed as fixed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124689",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "A writable executor must apply the artifact, install dependencies, inspect the required sibling Codex source, and run the regression and changed gates."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124689",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for the deterministic executor; no GitHub mutation is performed by this worker."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
