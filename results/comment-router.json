@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T01:59:58.291Z",
+  "updated_at": "2026-08-22T02:01:14.759Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119833:5200440258:2026-08-21T19:32:56Z:clawsweeper_auto_repair",
-      "comment_id": "5200440258",
-      "comment_version_key": "5200440258:2026-08-21T19:32:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119833#issuecomment-5200440258",
-      "comment_created_at": "2026-08-06T04:37:17Z",
-      "comment_updated_at": "2026-08-21T19:32:56Z",
-      "comment_body_sha256": "335212ed857347b177ead51342339605227f0a836d4c9bcc0657cfae6e2910ac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119833,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cb69607d804bce0d8250fd15c5810b87283d03e2)",
-      "expected_head_sha": "cb69607d804bce0d8250fd15c5810b87283d03e2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T19:39:29.837Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/code-mode-anthropic-transport-final-20260806",
-        "head_sha": "cb69607d804bce0d8250fd15c5810b87283d03e2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119910:5204080847:2026-08-21T19:33:48Z:clawsweeper_auto_repair",
       "comment_id": "5204080847",
@@ -32127,6 +32094,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127704:5377243582:2026-08-22T02:00:26Z:re_review",
+      "comment_id": "5377243582",
+      "comment_version_key": "5377243582:2026-08-22T02:00:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127704#issuecomment-5377243582",
+      "comment_created_at": "2026-08-22T02:00:26Z",
+      "comment_updated_at": "2026-08-22T02:00:26Z",
+      "comment_body_sha256": "a49bb0898819e95416a6b52722f7e3183d9d849b767a492a6f35237c1f8050c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127704,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T02:01:11.546Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-limited-access-bubble-layout",
+        "head_sha": "70ad8df1c5604e9ab9dcd563d4abc54d48da2857",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
