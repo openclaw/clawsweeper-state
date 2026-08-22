@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T10:10:09.430Z",
+  "updated_at": "2026-08-22T10:10:58.397Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126775:5366053681:2026-08-21T06:30:39Z:re_review",
-      "comment_id": "5366053681",
-      "comment_version_key": "5366053681:2026-08-21T06:30:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126775#issuecomment-5366053681",
-      "comment_created_at": "2026-08-21T06:30:39Z",
-      "comment_updated_at": "2026-08-21T06:30:39Z",
-      "comment_body_sha256": "0be513573d7e284f5daed014f085b1bc0d2ad46f0bbc0123f197fd13c1f64d30",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126775,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T02:20:44.160Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126775:5366482604:2026-08-21T07:17:09Z:re_review",
       "comment_id": "5366482604",
@@ -32628,6 +32601,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117128:5148652773:2026-08-22T10:05:43Z:clawsweeper_needs_human",
+      "comment_id": "5148652773",
+      "comment_version_key": "5148652773:2026-08-22T10:05:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117128#issuecomment-5148652773",
+      "comment_created_at": "2026-08-01T00:42:02Z",
+      "comment_updated_at": "2026-08-22T10:05:43Z",
+      "comment_body_sha256": "a37be14a38ad9a339e09fb8ee6833055b7ab78d03a62ab22e305c2d03e841cba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117128,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep the extracted validator at current startup parity (P1)** - Current main does not require a regular file or the owner-execute bit, but this helper now runs during activation as well as preflight. That newly...; Review finding: [P1] Keep the extracted validator at current startup parity — src/secrets/exec-provider-path-validation.ts:60-88 - [medium] New startup executable policy lacks rec... (sha=42bd62e798c462fc8d347bc4fcd9a03ba6fe046f)",
+      "expected_head_sha": "42bd62e798c462fc8d347bc4fcd9a03ba6fe046f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T10:10:58.397Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-secretref-path-preflight-117051",
+        "head_sha": "42bd62e798c462fc8d347bc4fcd9a03ba6fe046f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
