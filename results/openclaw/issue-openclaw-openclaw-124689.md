@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32586087457"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32586087457"
+run_id: "32584368799"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32584368799"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T17:04:36.046Z"
+published_at: "2026-08-22T16:32:46.848Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32586087457](https://github.com/openclaw/clawsweeper/actions/runs/32586087457)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32584368799](https://github.com/openclaw/clawsweeper/actions/runs/32584368799)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-#124689 remains the canonical open issue. A narrow diagnostic-selection repair is planned, but this read-only checkout cannot create the branch or install missing test dependencies, and the mandatory sibling ../codex source checkout is absent; no code or GitHub mutation was made.
+Latest main (74189fb354749acc6cc910fdf091276283f99f70) still selects the first Ollama Cloud catalog row for an unconfigured provider probe, even when that row is deprecated. A narrow two-file fix is ready for an executor, but this read-only checkout cannot create the mandated ../codex checkout, install missing dependencies, edit the branch, or validate the regression.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | keep_canonical | planned | canonical | Keep the report open while the planned narrow fix is implemented and validated. |
-| cluster:issue-openclaw-openclaw-124689 | fix_needed | blocked | canonical | Implementation is blocked only by checkout capabilities and the mandatory Codex-source gate, not by product ambiguity. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Executor can implement this two-file owner-boundary repair after provisioning dependencies and completing the mandatory direct ../codex inspection. |
+| #124689 | fix_needed | planned | canonical | Implement the catalog-fallback lifecycle filter and regression test on clawsweeper/issue-openclaw-openclaw-124689; do not alter runtime credential routing or the active-session picker. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | A narrow new fix PR remains appropriate; executor must satisfy the Codex source-inspection gate, install dependencies, implement, and validate. |
 
 ## Needs Human
 
