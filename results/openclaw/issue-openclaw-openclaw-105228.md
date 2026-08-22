@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-105228"
 mode: "autonomous"
-run_id: "32576083337"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32576083337"
+run_id: "32576931810"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32576931810"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T13:47:39.464Z"
+published_at: "2026-08-22T14:01:36.048Z"
 canonical: "https://github.com/openclaw/openclaw/issues/105228"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/105228"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32576083337](https://github.com/openclaw/clawsweeper/actions/runs/32576083337)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32576931810](https://github.com/openclaw/clawsweeper/actions/runs/32576931810)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/105228
 
 ## Summary
 
-#105228 remains the canonical, source-reproducible ACP requester-stop race on main d3ad7108. The AbortSignal reaches createSessionsSpawnTool but is omitted from the ACP context; after awaited Gateway dispatch, the shared spawn pipeline registers unconditionally. No code or GitHub mutation was made: this checkout is read-only, node_modules is absent (focused Vitest cannot resolve tsx), and ../codex is absent for the repository-required direct Codex inspection.
+Current main still has the ACP requester-stop/dispatch-registration race. A narrow fix artifact is ready, but this read-only checkout lacks dependencies and the required sibling ../codex source checkout, so no implementation or validated PR can be produced here.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/105228
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #105228 | fix_needed | planned | canonical | Implement the narrow cancellation handoff repair on clawsweeper/issue-openclaw-openclaw-105228; current local execution is blocked only by read-only checkout, missing dependencies, and absent required ../codex source. |
-| cluster:issue-openclaw-openclaw-105228 | build_fix_artifact | planned | canonical | Narrow new-fix-PR path; local implementation must wait for a writable, dependency-complete checkout and the mandated direct ../codex inspection. |
-| #105346 | keep_closed | skipped | related | Already closed; no mutation. |
-| #105766 | keep_closed | skipped | related | Already closed; no mutation. |
-| #108357 | keep_closed | skipped | related | Already closed; no mutation. |
-| #116406 | keep_closed | skipped | related | Already closed; no mutation. |
+| #105228 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only environment, missing dependencies, and unavailable required sibling Codex source; the executor can apply the narrow artifact after satisfying those gates. |
+| #105346 | keep_closed | skipped | superseded | Closed historical attempt; no mutation is valid. |
+| #105766 | keep_closed | skipped | superseded | Closed historical attempt; no mutation is valid. |
+| #108357 | keep_closed | skipped | superseded | Closed historical attempt; no mutation is valid. |
+| #116406 | keep_closed | skipped | superseded | Closed historical attempt; no mutation is valid. |
+| cluster:issue-openclaw-openclaw-105228 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR after the executor restores dependencies and completes the mandatory Codex source inspection. |
 
 ## Needs Human
 
