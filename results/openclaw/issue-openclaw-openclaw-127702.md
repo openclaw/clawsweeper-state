@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127702"
 mode: "autonomous"
-run_id: "32542450696"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32542450696"
+run_id: "32544964943"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32544964943"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-22T01:17:27.225Z"
-canonical: "https://github.com/openclaw/openclaw/issues/127702"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/127702"
+published_at: "2026-08-22T02:11:23.935Z"
+canonical: "#127702"
+canonical_issue: "#127702"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32542450696](https://github.com/openclaw/clawsweeper/actions/runs/32542450696)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32544964943](https://github.com/openclaw/clawsweeper/actions/runs/32544964943)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/127702
+Canonical: #127702
 
 ## Summary
 
-Confirmed current-main Discord default-account resolution bug. A narrow three-file fix is planned, but this checkout is read-only and lacks dependencies, so no branch/tested PR can be produced here.
+Current main reproduces the source-level defect: presence dispatch correctly gates the configured default account but drops config before gateway lookup, so an omitted account ID selects the registry’s separate unnamed sentinel. The intended repair is narrow and plugin-local, but this runner cannot edit the read-only checkout or install the missing test dependency (`tsx`).
 
 ## Impact
 
@@ -66,8 +66,8 @@ Confirmed current-main Discord default-account resolution bug. A narrow three-fi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127702 | fix_needed | blocked | canonical | Implement only after a writable checkout with dependencies and the mandated sibling Codex source are available. |
-| cluster:issue-openclaw-openclaw-127702 | build_fix_artifact | planned |  | Narrow canonical plugin-owned repair ready for a writable executor. |
+| #127702 | fix_needed | blocked | canonical | A code fix and regression are warranted, but local implementation and validation are blocked by the read-only runner and missing dependencies. |
+| #127702 | build_fix_artifact | planned | canonical | A deterministic executor can apply the narrow implementation once a writable checkout with dependencies is provisioned. |
 
 ## Needs Human
 
