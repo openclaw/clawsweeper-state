@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T13:08:20.655Z",
+  "updated_at": "2026-08-22T13:08:35.952Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127301:5373026414:2026-08-22T05:28:57Z:clawsweeper_auto_repair",
-      "comment_id": "5373026414",
-      "comment_version_key": "5373026414:2026-08-22T05:28:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127301#issuecomment-5373026414",
-      "comment_created_at": "2026-08-21T17:18:04Z",
-      "comment_updated_at": "2026-08-22T05:28:57Z",
-      "comment_body_sha256": "884db104d99a0687af5e3eed3a33af2b35f6a9c6231fa9122c4569d1ac34f520",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127301,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=aa436a78b93720682fac1af5211876edd0d9d2a0)",
-      "expected_head_sha": "aa436a78b93720682fac1af5211876edd0d9d2a0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T05:34:49.037Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-log-checkpoint",
-        "head_sha": "aa436a78b93720682fac1af5211876edd0d9d2a0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127755:5377491041:2026-08-22T05:28:33Z:clawsweeper_auto_repair",
       "comment_id": "5377491041",
@@ -32439,6 +32406,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126775:5380575229:2026-08-22T13:07:54Z:re_review",
+      "comment_id": "5380575229",
+      "comment_version_key": "5380575229:2026-08-22T13:07:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126775#issuecomment-5380575229",
+      "comment_created_at": "2026-08-22T13:07:54Z",
+      "comment_updated_at": "2026-08-22T13:07:54Z",
+      "comment_body_sha256": "4b0bbbf7fda1fd29715a461ffb09c8bfff25ad912f3a3ad10bf0a36f71ac453c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126775,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T13:08:33.879Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-126631-sandbox-skills-bind-mount-root-owned",
+        "head_sha": "92ac88ca341cda70cc18bfe7f8ea4990960f12ac",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
