@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/92474 at the MCP transport-resolver boundary. Keep the fail-closed stdio env filter in src/agents/mcp-config-shared.ts and preserve existing saved MCP configurations. Add bounded process-lifetime warning deduplication in src/agents/mcp-transport-config.ts for each server-plus-blocked-key pair; reuse an existing bounded dedupe pattern rather than adding an unbounded Set or a test-only production reset hook. Extend src/agents/mcp-transport-config.test.ts with an owner-boundary regression that fails on current main: repeated resolutions of the same unsafe stdio config emit one warning while still dropping the key, and a distinct server or blocked key remains observable. Run node scripts/run-vitest.mjs src/agents/mcp-transport-config.test.ts. Do not add write-time validation, schema/config options, doctor migration, or CHANGELOG.md edits; put user-visible release-note context in the PR body.
+Repair https://github.com/openclaw/openclaw/issues/92474 with one focused change. Preserve blocked-stdio-environment filtering, credential allowlisting, and current warning text; dedupe only warning emission once per sanitized server/key per process using the existing bounded dedupe pattern. Add a regression that resolves the same fresh command-bearing server twice and verifies one warning, then verifies a distinct server or key still warns. Do not add write-time rejection, schema validation, configuration options, or doctor migration. Do not edit CHANGELOG.md; put release-note context in the PR body if applicable.
 
 Likely files:
 
@@ -77,6 +77,7 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/mcp-transport-config.test.ts
+- pnpm tsgo:core
 
 ## Operator Prompt
 
