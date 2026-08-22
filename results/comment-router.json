@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T03:36:13.146Z",
+  "updated_at": "2026-08-22T03:37:24.815Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2936:5375753878:2026-08-21T21:47:10Z:re_review",
-      "comment_id": "5375753878",
-      "comment_version_key": "5375753878:2026-08-21T21:47:10Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2936#issuecomment-5375753878",
-      "comment_created_at": "2026-08-21T21:47:10Z",
-      "comment_updated_at": "2026-08-21T21:47:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2936,
-      "author": "toml0006",
-      "author_id": 34890,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T21:51:51.842Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/muse-provider",
-        "head_sha": "5556c11c7a70bfaeace7084b8df19f65b3ecf597",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2936:5295682900:2026-08-21T21:51:03Z:clawsweeper_needs_human",
       "comment_id": "5295682900",
@@ -31553,6 +31506,39 @@
         "kind": "pull_request",
         "branch": "fix/openai-native-pdf-transport",
         "head_sha": "6544389d47e710e40b9885a3f19f2638e6d57702",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127769:5377643496:2026-08-22T03:35:23Z:clawsweeper_needs_human",
+      "comment_id": "5377643496",
+      "comment_version_key": "5377643496:2026-08-22T03:35:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127769#issuecomment-5377643496",
+      "comment_created_at": "2026-08-22T03:35:23Z",
+      "comment_updated_at": "2026-08-22T03:35:23Z",
+      "comment_body_sha256": "a74772adeceeb625956e7c39a86e2e6eb18a7d6801af3e5f870996d2fa3626aa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127769,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The provided terminal material proves filesystem metadata changes, but it does not show the actual OpenClaw workspace loader returning... (sha=26688a45574a8434d7668a810ae54edaf353fa3e)",
+      "expected_head_sha": "26688a45574a8434d7668a810ae54edaf353fa3e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T03:37:24.815Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workspace-cache-ctime-127504",
+        "head_sha": "26688a45574a8434d7668a810ae54edaf353fa3e",
         "cluster_id": null,
         "job_path": null
       }
