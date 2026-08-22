@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127287"
 mode: "autonomous"
-run_id: "32554431731"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32554431731"
+run_id: "32562874604"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32562874604"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-22T06:43:10.042Z"
+published_at: "2026-08-22T08:49:08.512Z"
 canonical: "https://github.com/openclaw/openclaw/issues/127287"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/127287"
 canonical_pr: null
-actions_total: 2
+actions_total: 7
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32554431731](https://github.com/openclaw/clawsweeper/actions/runs/32554431731)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32562874604](https://github.com/openclaw/clawsweeper/actions/runs/32562874604)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/127287
 
 ## Summary
 
-#127287 remains the open canonical bug on main 500bb603. The provider resolves an allowlisted GHE domain but hard-codes copilot-developer-cli for prepared inference, catalog discovery, embeddings, and stream defaults. Implementation is blocked in this read-only checkout: ../codex is absent (the repository's mandatory direct Codex-source gate cannot be met with restricted network), and the focused test command cannot start because tsx is missing; pnpm install is not permitted in this sandbox.
+Implementation is blocked before a safe fix can be authored: current main hard-codes the Copilot CLI identity while resolving GHE domains, but the mandatory direct inspection of sibling ../codex source is impossible because that checkout is absent and this workspace is read-only. Dependencies are also absent, so the required pre-fix/repaired test run cannot be installed or executed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 7 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/127287
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127287 | fix_needed | blocked | canonical | The source evidence supports a narrow provider-local repair, but direct ../codex inspection and writable dependency installation are mandatory blockers in this sandbox. |
-| cluster:issue-openclaw-openclaw-127287 | build_fix_artifact | blocked |  | A new branch/PR is appropriate after the two environment gates are satisfied. |
+| #127287 | fix_needed | blocked | canonical | Do not select or ship a tenant request identity without the required direct Codex source inspection and executable regression proof. |
+| #13505 | keep_closed | skipped | related | Closed context only. |
+| #99221 | keep_closed | skipped | related | Closed context only. |
+| #102219 | keep_closed | skipped | related | Closed context only. |
+| #105584 | keep_closed | skipped | related | Closed context only. |
+| #114282 | keep_closed | skipped | related | Closed context only. |
+| cluster:issue-openclaw-openclaw-127287 | build_fix_artifact | blocked | canonical | Direct Codex inspection and a write-capable test environment are required before producing a fix branch. |
 
 ## Needs Human
 
