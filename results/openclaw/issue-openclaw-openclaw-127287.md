@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127287"
 mode: "autonomous"
-run_id: "32509460574"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32509460574"
-head_sha: "eb8e2caabeb2ceabb5ef8145ebbb72ad6e6d3cff"
-workflow_conclusion: "success"
+run_id: "32544819355"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32544819355"
+head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-21T17:51:13.897Z"
-canonical: "#127287"
-canonical_issue: "#127287"
+published_at: "2026-08-22T02:05:24.503Z"
+canonical: "https://github.com/openclaw/openclaw/issues/127287"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/127287"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-127287
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32509460574](https://github.com/openclaw/clawsweeper/actions/runs/32509460574)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32544819355](https://github.com/openclaw/clawsweeper/actions/runs/32544819355)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #127287
+Canonical: https://github.com/openclaw/openclaw/issues/127287
 
 ## Summary
 
-Blocked before implementation: the required sibling ../codex source checkout is absent, and this read-only, network-restricted worker cannot clone it. No code, tests, branch, PR, labels, or GitHub mutations were produced.
+#127287 remains the open canonical regression. Current main 557a5c131b2f2713063520aac10c0afbeabddf5d unconditionally applies copilot-developer-cli after resolving a valid GHE domain, across prepared inference headers, catalog/starter discovery, and embeddings. A narrow provider-owned repair is clear, but this read-only checkout cannot install dependencies or modify/test a branch, and the mandatory sibling ../codex source is absent; no PR should be opened from this run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,9 @@ Blocked before implementation: the required sibling ../codex source checkout is 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127287 | needs_human | blocked | needs_human | Provide a readable sibling ../codex checkout, then rerun the implementation lane so its exact runtime/protocol contract can be inspected before changing the GitHub Copilot provider. |
+| #127287 | fix_needed | blocked | canonical | Implementation is blocked only by the immutable environment and missing required Codex source; the source-level regression and narrow owner boundary are established. |
+| cluster:issue-openclaw-openclaw-127287 | build_fix_artifact | planned | canonical | Create the fix only in a writable, dependency-ready checkout after the required direct ../codex inspection and redacted GHE proof. |
 
 ## Needs Human
 
-- Provision ../codex from https://github.com/openai/codex.git (or explicitly waive AGENTS.md:14) and rerun this job in a writable environment with access to the required live GHE validation path.
+- none

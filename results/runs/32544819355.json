@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127287",
+  "mode": "autonomous",
+  "run_id": "32544819355",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32544819355",
+  "head_sha": "9a09faa3da3b94957e021a98fd00bb5061bff904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127287.md",
+  "published_at": "2026-08-22T02:05:24.503Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127287",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127287",
+  "canonical_pr": null,
+  "summary": "#127287 remains the open canonical regression. Current main 557a5c131b2f2713063520aac10c0afbeabddf5d unconditionally applies copilot-developer-cli after resolving a valid GHE domain, across prepared inference headers, catalog/starter discovery, and embeddings. A narrow provider-owned repair is clear, but this read-only checkout cannot install dependencies or modify/test a branch, and the mandatory sibling ../codex source is absent; no PR should be opened from this run.",
+  "actions": [
+    {
+      "target": "#127287",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#127287",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the immutable environment and missing required Codex source; the source-level regression and narrow owner boundary are established."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127287",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127287",
+      "candidate_fix": null,
+      "reason": "Create the fix only in a writable, dependency-ready checkout after the required direct ../codex inspection and redacted GHE proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
