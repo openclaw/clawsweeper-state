@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T02:29:31.946Z",
+  "updated_at": "2026-08-22T02:29:40.435Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1181:5375220375:2026-08-21T20:45:08Z:re_review",
-      "comment_id": "5375220375",
-      "comment_version_key": "5375220375:2026-08-21T20:45:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1181#issuecomment-5375220375",
-      "comment_created_at": "2026-08-21T20:45:08Z",
-      "comment_updated_at": "2026-08-21T20:45:08Z",
-      "comment_body_sha256": "e2c2409d734d29bab55642f9bdbb1f94af634db29c3a1e2e9896d7e150fe28fe",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1181,
-      "author": "TheAngryPit",
-      "author_id": 7040636,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T20:45:55.171Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-timeout-no-force-terminate",
-        "head_sha": "e4dd1735b47eb7cadc19e0c73e9fea1c93d87e09",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113894:5080972479:2026-08-21T20:39:32Z:clawsweeper_auto_repair",
       "comment_id": "5080972479",
@@ -31525,6 +31478,39 @@
       "status": "skipped",
       "processed_at": "2026-08-22T02:29:31.946Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126775:5359960804:2026-08-22T02:28:18Z:clawsweeper_needs_human",
+      "comment_id": "5359960804",
+      "comment_version_key": "5359960804:2026-08-22T02:28:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126775#issuecomment-5359960804",
+      "comment_created_at": "2026-08-20T18:19:44Z",
+      "comment_updated_at": "2026-08-22T02:28:18Z",
+      "comment_body_sha256": "d99a74b0944224bda27e4a8afdccfa3f9c1a83c9468bc04fcfdad9d82da74bdd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126775,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the available terminal text shows manual Docker pre-creation, while the supplied PR-body snapshot does...; Review finding: [P1] Create the bind target through a descriptor-rooted parent — src/agents/sandbox/context.ts:174-175 - [P2] Parse Docker user identifiers strictly — src/agents/s... (sha=4a7d4ca01d31629317d1e1a922ff76e7855b92a8)",
+      "expected_head_sha": "4a7d4ca01d31629317d1e1a922ff76e7855b92a8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T02:29:40.435Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-126631-sandbox-skills-bind-mount-root-owned",
+        "head_sha": "4a7d4ca01d31629317d1e1a922ff76e7855b92a8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
