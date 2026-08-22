@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-45224",
+  "mode": "autonomous",
+  "run_id": "32603483908",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32603483908",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-45224.md",
+  "published_at": "2026-08-22T22:59:31.099Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_pr": null,
+  "summary": "The source-level defect is confirmed on main: the browser CDP transport catches synchronous callback throws but drops rejected callback Promises. Both pinned and direct CDP routes need the browser-owned transport. Implementation and validation are blocked because this read-only sandbox cannot create the required branch/dependency cache, and the mandatory sibling ../codex source is unavailable (its clone fails with EROFS).",
+  "actions": [
+    {
+      "target": "#45224",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Narrow browser-plugin repair required; no viable fixing PR is hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-45224",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Artifact is narrow and ready for a writable executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-45224",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "A writable checkout with dependencies and the required sibling Codex source is needed before branch creation, regression proof, and PR opening."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
