@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-105228"
 mode: "autonomous"
-run_id: "32579287488"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32579287488"
+run_id: "32578171533"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32578171533"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-22T14:48:03.228Z"
+published_at: "2026-08-22T14:25:10.953Z"
 canonical: "https://github.com/openclaw/openclaw/issues/105228"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/105228"
 canonical_pr: null
-actions_total: 8
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32579287488](https://github.com/openclaw/clawsweeper/actions/runs/32579287488)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32578171533](https://github.com/openclaw/clawsweeper/actions/runs/32578171533)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/105228
 
 ## Summary
 
-Current main drops the admitted requester AbortSignal before ACP spawn. The narrow repair is viable, but this read-only checkout cannot create the regression, patch, or locally validate the PR branch.
+Implementation is blocked by this read-only/no-network worker environment before the required regression and branch can be created. The current main source path shows the abort signal stops at the tool construction boundary while ACP dispatch can register after requester stop; a narrow repair plan is prepared.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 8 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Current main drops the admitted requester AbortSignal before ACP spawn. The narr
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #105228 |  |  |
 
 ## Apply Actions
 
@@ -66,14 +66,8 @@ Current main drops the admitted requester AbortSignal before ACP spawn. The narr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #105228 | fix_needed | planned | canonical | Source reproduction is clear on preflight main: an abort during the awaited Gateway dispatch cannot be observed by the ACP owner, so late registration can retain an already-stopped child. |
-| cluster:issue-openclaw-openclaw-105228 | build_fix_artifact | planned |  | Narrow new-fix-PR plan prepared. |
-| cluster:issue-openclaw-openclaw-105228 | open_fix_pr | blocked |  | Requires a writable executor to apply the artifact on `clawsweeper/issue-openclaw-openclaw-105228` and run the listed validation. |
-| #105346 | keep_closed | skipped | related | Historical context only; no mutation allowed for an already-closed PR. |
-| #105766 | keep_closed | skipped | related | Historical context only. |
-| #106612 | keep_closed | skipped | independent | Independent historical reference. |
-| #108357 | keep_closed | skipped | related | Historical context only. |
-| #116406 | keep_closed | skipped | related | Historical context only. |
+| #105228 | fix_needed | blocked | canonical | A writable environment with dependencies and the required ../codex checkout is needed before the mandatory failing regression, repair, and validation can run. |
+| cluster:issue-openclaw-openclaw-105228 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor; local implementation and validation are blocked. |
 
 ## Needs Human
 
