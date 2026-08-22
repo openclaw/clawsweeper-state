@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127287"
 mode: "autonomous"
-run_id: "32562874604"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32562874604"
+run_id: "32562662108"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32562662108"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T08:49:08.512Z"
+published_at: "2026-08-22T09:10:19.526Z"
 canonical: "https://github.com/openclaw/openclaw/issues/127287"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/127287"
 canonical_pr: null
-actions_total: 7
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32562874604](https://github.com/openclaw/clawsweeper/actions/runs/32562874604)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32562662108](https://github.com/openclaw/clawsweeper/actions/runs/32562662108)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/127287
 
 ## Summary
 
-Implementation is blocked before a safe fix can be authored: current main hard-codes the Copilot CLI identity while resolving GHE domains, but the mandatory direct inspection of sibling ../codex source is impossible because that checkout is absent and this workspace is read-only. Dependencies are also absent, so the required pre-fix/repaired test run cannot be installed or executed.
+No code or GitHub mutation was made. The current checkout is clean at 36d50b20098e8e45bc7a97b020d9755ab7a27414; provider-local header construction still hard-codes copilot-developer-cli. Implementation is blocked because the required sibling ../codex source checkout is absent and this worker has a read-only filesystem, so it cannot satisfy the repository’s mandatory Codex-source gate or create and validate the required branch.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Implementation is blocked before a safe fix can be authored: current main hard-c
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #127287 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,13 +66,8 @@ Implementation is blocked before a safe fix can be authored: current main hard-c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127287 | fix_needed | blocked | canonical | Do not select or ship a tenant request identity without the required direct Codex source inspection and executable regression proof. |
-| #13505 | keep_closed | skipped | related | Closed context only. |
-| #99221 | keep_closed | skipped | related | Closed context only. |
-| #102219 | keep_closed | skipped | related | Closed context only. |
-| #105584 | keep_closed | skipped | related | Closed context only. |
-| #114282 | keep_closed | skipped | related | Closed context only. |
-| cluster:issue-openclaw-openclaw-127287 | build_fix_artifact | blocked | canonical | Direct Codex inspection and a write-capable test environment are required before producing a fix branch. |
+| #127287 | fix_needed | blocked | canonical | The hydrated open issue is the canonical bug report and the repair shape is narrow, but implementation cannot proceed without the mandatory direct Codex-source inspection and a writable checkout. |
+| cluster:issue-openclaw-openclaw-127287 | build_fix_artifact | planned | canonical | Prepared executable repair plan for a writable executor with the mandatory Codex checkout. |
 
 ## Needs Human
 
