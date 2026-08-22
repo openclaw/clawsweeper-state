@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T11:33:11.100Z",
+  "updated_at": "2026-08-22T11:33:42.913Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3493:5365867722:2026-08-21T06:07:23Z:re_review",
-      "comment_id": "5365867722",
-      "comment_version_key": "5365867722:2026-08-21T06:07:23Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5365867722",
-      "comment_created_at": "2026-08-21T06:07:23Z",
-      "comment_updated_at": "2026-08-21T06:07:23Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T03:53:50.831Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:84758:4504025650:2026-08-22T03:52:36Z:clawsweeper_auto_repair",
       "comment_id": "4504025650",
@@ -32720,6 +32693,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126851:5379989040:2026-08-22T11:32:56Z:re_review",
+      "comment_id": "5379989040",
+      "comment_version_key": "5379989040:2026-08-22T11:32:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126851#issuecomment-5379989040",
+      "comment_created_at": "2026-08-22T11:32:56Z",
+      "comment_updated_at": "2026-08-22T11:32:56Z",
+      "comment_body_sha256": "fbe379819da34b9cb9272d92b323b0319f06f5b1cf643ba06ec4f47f399cfec0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126851,
+      "author": "1MrazorT1",
+      "author_id": 132010255,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-22T11:33:40.898Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stale-terminal-session-clears-spinner",
+        "head_sha": "82b63770ad0d98d9c3cf066437e7a62341893fba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
