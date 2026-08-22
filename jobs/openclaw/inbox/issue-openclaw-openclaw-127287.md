@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing GHE Copilot inference regression in https://github.com/openclaw/openclaw/issues/127287. First establish the failing current-main regression in the provider test boundary. Keep `copilot-developer-cli` for public github.com, but derive the native GHE request identity from the existing resolved, allowlisted `githubDomain`; do not add an `integrationId` config key or environment variable. Thread the resolved fact through prepared inference headers, live catalog discovery, and native embeddings, while retaining the explicit-credential custom memory-endpoint boundary. Add focused public and `*.ghe.com` regression coverage that fails before the repair. Obtain a redacted live GHE after-fix request/response trace before landing, plus a public-domain control. Do not edit CHANGELOG.md; record release-note context in the PR body.
+Repair the documented GitHub Copilot GHE data-residency inference regression in the bundled provider. Keep public github.com on `copilot-developer-cli`; use the existing `vscode-chat` identity automatically for accepted `*.ghe.com` domains, without adding an arbitrary integration-id config or environment option. Carry the canonical resolved domain/identity through prepared inference headers, live model catalog and starter-model discovery, and standard GitHub Copilot embeddings; preserve domain allowlisting, precedence, custom-endpoint credential isolation, and public behavior. Add regression coverage for public and GHE identities on every affected request surface, update the request-compatibility docs, and obtain redacted after-fix proof from a real GHE tenant before merge. Do not edit CHANGELOG.md.
 
 Likely files:
 
@@ -75,16 +75,17 @@ Likely files:
 - extensions/github-copilot/index.ts
 - extensions/github-copilot/models.ts
 - extensions/github-copilot/embeddings.ts
-- extensions/github-copilot/index.test.ts
+- extensions/github-copilot/stream.test.ts
 - extensions/github-copilot/models.test.ts
 - extensions/github-copilot/embeddings.test.ts
-- extensions/github-copilot/stream.test.ts
+- extensions/github-copilot/index.test.ts
+- docs/providers/github-copilot.md
 
 Validation:
 
 - pnpm test extensions/github-copilot/index.test.ts extensions/github-copilot/models.test.ts extensions/github-copilot/embeddings.test.ts extensions/github-copilot/stream.test.ts
-- pnpm build
-- Redacted live `*.ghe.com` model request after the fix, with a github.com control and no credentials exposed.
+- pnpm check:changed -- extensions/github-copilot/runtime-identity.ts extensions/github-copilot/index.ts extensions/github-copilot/models.ts extensions/github-copilot/embeddings.ts extensions/github-copilot/stream.ts docs/providers/github-copilot.md
+- Redacted real `*.ghe.com` catalog and inference result showing the selected tenant identity and successful response.
 
 ## Operator Prompt
 
