@@ -67,17 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the remaining Ollama Cloud probe false failure in https://github.com/openclaw/openclaw/issues/124689. Leave the current active-session picker flow unchanged. At the auth-probe model-selection owner, automatic catalog fallback must prefer a non-deprecated row when one exists; an explicitly configured deprecated model must remain selectable. Add one owner-boundary regression in the existing probe suite using an ollama-cloud catalog with deprecated kimi-k2.5 before a usable successor and a configured candidate under another provider identity; it must fail before the repair because the emitted probe targets kimi-k2.5, then pass after selecting the usable row. Capture redacted real provider proof if credentials are available. Do not add config options or edit CHANGELOG.md; include release-note context in the PR body.
+Repair the remaining Ollama Cloud credential-probe defect in https://github.com/openclaw/openclaw/issues/124689. Keep the existing active-session model-picker flow unchanged. In the auth-probe planner, preserve an explicitly configured probe model, but when it must fall back to provider catalog rows, do not choose deprecated or disabled rows such as ollama-cloud/kimi-k2.5 ahead of a current row. Add a regression that models the reported provider mismatch: an ollama-keyed default plus an ollama-cloud probe whose catalog begins with deprecated kimi-k2.5 and includes a current row. Confirm the plan selects the current row and retains the configured API-key target. Do not add configuration, aliases, or a runtime fallback. Run the focused tests; if authorized credentials are available, also obtain a redacted Ollama Cloud API-key probe showing a current model succeeds. Do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.test.ts
+- src/commands/models/list.probe.targets.test.ts
+- src/commands/models/list.probe.ts
 
 Validation:
 
-- pnpm test src/commands/models/list.probe.test.ts
+- pnpm test src/commands/models/list.probe.targets.test.ts
 - pnpm test src/gateway/server-methods/models-probe.test.ts
+- If authorized credentials are available: OPENCLAW_LIVE_TEST=1 OPENCLAW_LIVE_OLLAMA=1 OPENCLAW_LIVE_OLLAMA_BASE_URL=https://ollama.com OPENCLAW_LIVE_OLLAMA_MODEL=<current-hosted-model> pnpm test:live -- extensions/ollama/ollama.live.test.ts
 
 ## Operator Prompt
 
