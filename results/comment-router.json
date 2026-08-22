@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-22T21:04:20.184Z",
+  "updated_at": "2026-08-22T21:04:42.801Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5380932115:2026-08-22T14:34:25Z:re_review",
-      "comment_id": "5380932115",
-      "comment_version_key": "5380932115:2026-08-22T14:34:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5380932115",
-      "comment_created_at": "2026-08-22T14:34:25Z",
-      "comment_updated_at": "2026-08-22T14:34:25Z",
-      "comment_body_sha256": "d84c0d0eca3a5b5d2a64918155ed585cd891de71d5f0dbbc6fae1b7aab5169dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T14:35:09.177Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119977-codex-stale-binding-compaction",
-        "head_sha": "3b00ca08303cb6cbf53503e7e1bfde0129fc3296",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:599:5380935249:2026-08-22T14:35:08Z:re_review",
-      "comment_id": "5380935249",
-      "comment_version_key": "5380935249:2026-08-22T14:35:08Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/599#issuecomment-5380935249",
-      "comment_created_at": "2026-08-22T14:35:08Z",
-      "comment_updated_at": "2026-08-22T14:35:08Z",
-      "comment_body_sha256": "17b59a59d8f255c216a8f27edd33097bb21d2bb0a0ef9591ad332d69ba479797",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 599,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T14:35:48.455Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sck-exclusive-flock-deadline",
-        "head_sha": "50525ce4d46bd0cdf935af5ba54c74da5066eff4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:16:5304620123:2026-08-22T14:36:11Z:clawsweeper_auto_repair",
       "comment_id": "5304620123",
@@ -31719,6 +31625,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127964:5381250322:2026-08-22T21:03:46Z:clawsweeper_needs_human",
+      "comment_id": "5381250322",
+      "comment_version_key": "5381250322:2026-08-22T21:03:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127964#issuecomment-5381250322",
+      "comment_created_at": "2026-08-22T15:48:24Z",
+      "comment_updated_at": "2026-08-22T21:03:46Z",
+      "comment_body_sha256": "20bbe2f024b59f78cee31f4e6eac6a7b732ecb86e9eaff6c77a220f13252c213",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127964,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: no redacted trusted upstream run shows both recovery after real Docker replacement and stale-claim rejection be...; Review finding: [medium] Prove stale-claim rejection before Docker I/O — scripts/mantis/mantis-sut-container.sh:1456 (sha=ea3f08d1b1823243c6f0155dfd48de028666475f)",
+      "expected_head_sha": "ea3f08d1b1823243c6f0155dfd48de028666475f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T21:04:42.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mantis-lifecycle-fault-injection",
+        "head_sha": "ea3f08d1b1823243c6f0155dfd48de028666475f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127964:5381700746:2026-08-22T17:33:22Z:re_review",
+      "comment_id": "5381700746",
+      "comment_version_key": "5381700746:2026-08-22T17:33:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127964#issuecomment-5381700746",
+      "comment_created_at": "2026-08-22T17:33:22Z",
+      "comment_updated_at": "2026-08-22T17:33:22Z",
+      "comment_body_sha256": "5bf4fd773c6582b398e1cd4102b0a4764d80240fe00c05144645947d010982ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127964,
+      "author": "HermanZeng",
+      "author_id": 25895921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T21:04:42.801Z",
+      "target": null
     }
   ]
 }
