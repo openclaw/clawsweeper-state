@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124689",
+  "mode": "autonomous",
+  "run_id": "32604878945",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32604878945",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124689.md",
+  "published_at": "2026-08-22T23:27:54.565Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_pr": null,
+  "summary": "Current main still selects deprecated Ollama Cloud fallback `kimi-k2.5` when no exact `ollama-cloud` candidate exists. A narrow repair is identified, but implementation is blocked: the mandatory sibling `../codex` source is absent and this read-only sandbox cannot clone it or write the branch; test execution is also blocked by Corepack EROFS.",
+  "actions": [
+    {
+      "target": "#124689",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout and the mandated direct `../codex` source inspection before editing."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124689",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Executor can apply after restoring the Codex sibling source and a writable validated checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
