@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125776"
 mode: "autonomous"
-run_id: "32543000736"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32543000736"
+run_id: "32543945442"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32543945442"
 head_sha: "9a09faa3da3b94957e021a98fd00bb5061bff904"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-22T01:29:01.672Z"
+published_at: "2026-08-22T01:46:56.401Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32543000736](https://github.com/openclaw/clawsweeper/actions/runs/32543000736)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32543945442](https://github.com/openclaw/clawsweeper/actions/runs/32543945442)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 ## Summary
 
-#125776 remains a reproducible narrow bug, but this worker cannot implement it: the mandatory ../codex source checkout is absent, and cloning it fails with a read-only-filesystem error. Focused tests are also unavailable because Corepack cannot create its cache and direct Vitest lacks tsx.
+No code or GitHub state was changed. Current-main source exposes the suspected identity drop, but this read-only worker cannot satisfy the mandatory direct Codex-source gate because ../codex is absent, and focused tests cannot start because Corepack cannot create its cache on the read-only filesystem.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #125776 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #116512 | keep_related | planned | related | Keep open as a related, independent commentary-progress investigation. |
-| #125776 | fix_needed | blocked | canonical | Rerun in a writable worker with ../codex provisioned, then reproduce and validate before editing. |
-| #125779 | keep_closed | skipped | superseded | Historical evidence only; do not mutate an already-closed PR. |
-| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | blocked | canonical | Implementation is blocked by the mandatory direct Codex-source inspection and read-only validation environment. |
+| #116512 | keep_related | planned | related | Related progress-rendering family; retain as an independent follow-up. |
+| #125776 | fix_needed | blocked | canonical | Implementation is blocked before the Codex protocol contract can be directly inspected and before the required pre-fix regression can run. |
+| #125779 | keep_closed | skipped | superseded | Already closed; no closure or mutation is valid. |
+| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | planned | canonical | Prepared a constrained repair plan without claiming locally validated implementation. |
 
 ## Needs Human
 
