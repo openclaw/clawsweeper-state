@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128017",
+  "mode": "autonomous",
+  "run_id": "32603029688",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32603029688",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128017.md",
+  "published_at": "2026-08-22T22:50:24.641Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128017",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128017",
+  "canonical_pr": null,
+  "summary": "Current main at aca83ac00c7b73dc99a4d679b2b21cc4c0cd89c2 retains the reproducible marker-snippet defect. A narrow, test-audited fix plan is ready, but this worker cannot modify or validate a branch: the checkout is read-only, dependencies are absent, and required ../codex source is unavailable.",
+  "actions": [
+    {
+      "target": "#128017",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128017",
+      "candidate_fix": null,
+      "reason": "The issue is a canonical, narrow memory-wiki bug. No contributor PR exists; build the credited ClawSweeper fix PR from the supplied artifact."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128017",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128017",
+      "candidate_fix": null,
+      "reason": "Executor should create the branch, apply the narrow owner-boundary repair, satisfy the Codex source-inspection gate, then run focused validation before opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
