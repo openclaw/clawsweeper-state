@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T05:24:23.369Z",
+  "updated_at": "2026-08-22T05:24:52.692Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:156:5360300849:2026-08-21T23:00:54Z:clawsweeper_needs_human",
-      "comment_id": "5360300849",
-      "comment_version_key": "5360300849:2026-08-21T23:00:54Z",
-      "comment_url": "https://github.com/openclaw/gitcrawl/pull/156#issuecomment-5360300849",
-      "comment_created_at": "2026-08-20T18:51:19Z",
-      "comment_updated_at": "2026-08-21T23:00:54Z",
-      "comment_body_sha256": "0acdbf11984ffa5f9e22be95793ae01af23f0e64ba0bd3198129eb1fded81b82",
-      "repo": "openclaw/gitcrawl",
-      "issue_number": 156,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the upgraded action’s immutable provenance** - This workflow executes trufflesecurity/trufflehog@v3.97.0 on pushes and pull requests with repository-content read access; the tag...; Review finding: [medium] Verify the upgraded action’s immutable provenance — .github/workflows/secret-scan.yml:52 (sha=a023c2c0aa9ed7044987056fc392ebf353ee981f)",
-      "expected_head_sha": "a023c2c0aa9ed7044987056fc392ebf353ee981f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T23:01:36.265Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.97.0",
-        "head_sha": "a023c2c0aa9ed7044987056fc392ebf353ee981f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127539:5376191805:2026-08-21T22:49:37Z:re_review",
       "comment_id": "5376191805",
@@ -31626,6 +31593,39 @@
       "status": "waiting",
       "processed_at": "2026-08-22T05:24:23.369Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw-tools:17:5298592194:2026-08-22T05:24:14Z:clawsweeper_auto_repair",
+      "comment_id": "5298592194",
+      "comment_version_key": "5298592194:2026-08-22T05:24:14Z",
+      "comment_url": "https://github.com/openclaw/nix-openclaw-tools/pull/17#issuecomment-5298592194",
+      "comment_created_at": "2026-08-14T22:00:35Z",
+      "comment_updated_at": "2026-08-22T05:24:14Z",
+      "comment_body_sha256": "8cf569b835db175c4214b73986fc36dc00b1b3e6e16d113b2c4b8786050075cc",
+      "repo": "openclaw/nix-openclaw-tools",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=b767776d2127c50298504eac0e15ab5a4f3f92a5)",
+      "expected_head_sha": "b767776d2127c50298504eac0e15ab5a4f3f92a5",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-22T05:24:52.692Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-http-timeout",
+        "head_sha": "b767776d2127c50298504eac0e15ab5a4f3f92a5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
