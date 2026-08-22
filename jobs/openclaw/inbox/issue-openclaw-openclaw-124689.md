@@ -67,19 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current-main Ollama Cloud auth-probe selection defect described in https://github.com/openclaw/openclaw/issues/124689. Preserve the existing current-session picker flow: it already patches the selected session. At the probe-planning owner, make an `ollama-cloud` API-key probe select the configured/canonical eligible model route rather than falling through from `ollama/...-cloud` to an unrelated deprecated catalog row. Reuse an existing provider/catalog routing contract if available; do not hardcode customer model names, infer one provider from raw suffixes in core, rewrite user config, or add a configuration option. Add a regression that models the reporter shape and proves a retired `kimi-k2.5` fallback is not selected. Include release-note context in the PR body or commit message, not CHANGELOG.md. If the implementation requires a new permanent provider-route API or a product decision, stop and return to triage.
+Repair the provider auth-probe fallback so it does not select deprecated or disabled catalog rows when no explicit configured candidate exists. Preserve an explicitly configured deprecated model as the probe target, keep the active-session picker path unchanged, and add a regression that places deprecated ollama-cloud/kimi-k2.5 before a current Cloud row and proves the current row is chosen. Run focused probe and Gateway tests; do not edit CHANGELOG.md, but record user-visible release-note context in the PR body.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.ollama.test.ts
+- src/commands/models/list.probe.targets.test.ts
 - src/gateway/server-methods/models-probe.test.ts
 
 Validation:
 
-- pnpm test src/commands/models/list.probe.ollama.test.ts
+- pnpm test src/commands/models/list.probe.targets.test.ts
 - pnpm test src/gateway/server-methods/models-probe.test.ts
-- Run a redacted `models.probe` against a configured Ollama Cloud API-key route if approved test credentials are available; otherwise state the live-provider proof gap explicitly.
+- pnpm test ui/src/pages/chat/chat-view.test.ts
 
 ## Operator Prompt
 
