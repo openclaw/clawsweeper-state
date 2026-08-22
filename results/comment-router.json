@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-08-22T03:53:54.905Z",
+  "updated_at": "2026-08-22T03:56:29.584Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:101593",
-      "comment_id": "repair-loop-label-sweep:automerge:101593",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101593",
-      "comment_created_at": "2026-08-21T22:04:29.820Z",
-      "comment_updated_at": "2026-08-21T22:04:29.820Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101593,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "automerge enabled; current checks are failing: checks-node-compact-small-whole-2:FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-21T22:05:54.316Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-101489",
-        "head_sha": "8973666477d60c87d276c1b5f4ad22c21b0ccbb5",
-        "cluster_id": "automerge-openclaw-openclaw-101593",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-101593.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-101593.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118960:5171703660:2026-08-21T21:57:20Z:clawsweeper_needs_human",
       "comment_id": "5171703660",
@@ -31518,6 +31466,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127766:5377720699:2026-08-22T03:53:54Z:clawsweeper_needs_human",
+      "comment_id": "5377720699",
+      "comment_version_key": "5377720699:2026-08-22T03:53:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127766#issuecomment-5377720699",
+      "comment_created_at": "2026-08-22T03:53:54Z",
+      "comment_updated_at": "2026-08-22T03:53:54Z",
+      "comment_body_sha256": "3b60d6057813b174ae9208482c6b962e08c275dea2856831e3c02175c9836747",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127766,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; if it is rebased, rerun the focused Control UI E2E and exact-head required checks before landing. (sha=9b53fa2986be712b4942fc0a54df17698b9acd2c)",
+      "expected_head_sha": "9b53fa2986be712b4942fc0a54df17698b9acd2c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T03:56:29.584Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-prompt-restore-race",
+        "head_sha": "9b53fa2986be712b4942fc0a54df17698b9acd2c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
