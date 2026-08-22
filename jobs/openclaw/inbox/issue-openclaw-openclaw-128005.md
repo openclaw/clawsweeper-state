@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Android `location.get` freshness invariant: do not return a live LocationManager callback whose `time` exceeds requested `maxAgeMs`; retain the timeout budget while rejecting stale live candidates and use the established `LOCATION_TIMEOUT` outcome when no fresh fix arrives. Keep the fix in the Android capture owner, add a capture-boundary regression covering stale-live then fresh or timeout behavior, and do not add configuration or gateway/CLI work. Do not edit CHANGELOG.md; capture user-visible release context in the PR body. Validate the Android unit suite and, when available, a real Android location invocation with a redacted timestamp comparison.
+Repair Android `location.get` so the existing `maxAgeMs` caller contract applies to both cached and current location fixes. Establish a failing Android capture-boundary regression before editing; do not convert a stale current callback into an immediate `LOCATION_UNAVAILABLE` error. Keep retries, if needed, inside the existing timeout budget and return the existing `LOCATION_TIMEOUT` shape when no acceptable fix arrives. Preserve parameter parsing, permission gates, provider selection, and public error codes. Do not edit CHANGELOG.md.
 
 Likely files:
 
 - apps/android/app/src/main/java/ai/openclaw/app/node/LocationCaptureManager.kt
-- apps/android/app/src/test/java/ai/openclaw/app/node/LocationCaptureManagerTest.kt
 - apps/android/app/src/test/java/ai/openclaw/app/node/LocationHandlerTest.kt
-- docs/nodes/location-command.md
+- extensions/linux-node/src/commands.test.ts
 
 Validation:
 
-- pnpm android:test
-- Focused Android capture-manager regression test under :app:testPlayDebugUnitTest
-- Real Android device invocation of location.get with a tight maxAgeMs, verifying a fresh timestamp or LOCATION_TIMEOUT
+- cd apps/android && ./gradlew :app:testPlayDebugUnitTest --tests ai.openclaw.app.node.LocationHandlerTest
+- cd apps/android && ./gradlew :app:testThirdPartyDebugUnitTest --tests ai.openclaw.app.node.LocationHandlerTest
+- pnpm exec vitest run extensions/linux-node/src/commands.test.ts
+- Capture a redacted Android device or production-harness result showing a stale live fix is not returned.
 
 ## Operator Prompt
 
