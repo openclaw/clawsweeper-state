@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-22T18:09:31.108Z",
+  "updated_at": "2026-08-22T18:09:34.008Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123975:5312510183:2026-08-17T06:14:34Z:re_review",
-      "comment_id": "5312510183",
-      "comment_version_key": "5312510183:2026-08-17T06:14:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123975#issuecomment-5312510183",
-      "comment_created_at": "2026-08-17T06:14:34Z",
-      "comment_updated_at": "2026-08-17T06:14:34Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123975,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T12:11:05.295Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123975:5312581222:2026-08-17T06:23:12Z:re_review",
       "comment_id": "5312581222",
@@ -31498,6 +31471,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127967:5381333443:2026-08-22T18:07:14Z:clawsweeper_needs_human",
+      "comment_id": "5381333443",
+      "comment_version_key": "5381333443:2026-08-22T18:07:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127967#issuecomment-5381333443",
+      "comment_created_at": "2026-08-22T16:07:51Z",
+      "comment_updated_at": "2026-08-22T18:07:14Z",
+      "comment_body_sha256": "c5884086381668347bfe3b551e95160f78837d32f5271373d8f70a5b00e91393",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127967,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes a delivery-sensitive queue boundary: any missed lifecycle, route, session, or event fence could cause duplicate or wrongly suppressed successor replies. (sha=29b020c80531e6458f197267e86112245565095e)",
+      "expected_head_sha": "29b020c80531e6458f197267e86112245565095e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T18:09:34.008Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reply-completion-handoff-126813",
+        "head_sha": "29b020c80531e6458f197267e86112245565095e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
