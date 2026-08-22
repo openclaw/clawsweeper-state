@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-22T16:30:20.231Z",
+  "updated_at": "2026-08-22T16:32:50.182Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1128:5379735253:2026-08-22T10:19:38Z:re_review",
-      "comment_id": "5379735253",
-      "comment_version_key": "5379735253:2026-08-22T10:19:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1128#issuecomment-5379735253",
-      "comment_created_at": "2026-08-22T10:19:38Z",
-      "comment_updated_at": "2026-08-22T10:19:38Z",
-      "comment_body_sha256": "7319b0b24d78e22f2ae157f7b58c89ecc6f665e225bdd469a4bbfcf58d5e899b",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1128,
-      "author": "TheAngryPit",
-      "author_id": 7040636,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T10:24:44.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tailscale-legacy-upgrade-20260807",
-        "head_sha": "0ad95b5edc4ce3745a4724d171a73447df7a1a03",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1128:5225378319:2026-08-22T10:23:58Z:clawsweeper_needs_human",
       "comment_id": "5225378319",
@@ -31412,6 +31365,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-2b47f3b96e",
         "head_sha": "72088ee63d09e05228cb60d6151f8309371cb41a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127935:5380656958:2026-08-22T16:30:05Z:clawsweeper_needs_human",
+      "comment_id": "5380656958",
+      "comment_version_key": "5380656958:2026-08-22T16:30:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127935#issuecomment-5380656958",
+      "comment_created_at": "2026-08-22T13:27:55Z",
+      "comment_updated_at": "2026-08-22T16:30:05Z",
+      "comment_body_sha256": "56c5227d2986f71e542446c77e24f72145fee3fc973b0912deeed14c66a43bdf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127935,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Missing: the PR body cites CI only; after repairing the findings, add a redacted terminal or production-boundary trace showing a socket/DNS fai...; Review finding: [P0] Keep trusted-host IPv6 filtering — src/infra/net/ssrf.ts:462 - [P1] Preserve the pinned dispatcher contract — src/infra/net/ssrf.ts:532-542 - [P1] Retain CONN... (sha=e335b15d37730362d7083c3c19df4b8c00973b57)",
+      "expected_head_sha": "e335b15d37730362d7083c3c19df4b8c00973b57",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T16:32:50.182Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-ssrf-socket-error",
+        "head_sha": "e335b15d37730362d7083c3c19df4b8c00973b57",
         "cluster_id": null,
         "job_path": null
       }
