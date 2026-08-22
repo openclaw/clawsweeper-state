@@ -67,25 +67,26 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the documented GitHub Copilot GHE data-residency inference regression in the bundled provider. Keep public github.com on `copilot-developer-cli`; use the existing `vscode-chat` identity automatically for accepted `*.ghe.com` domains, without adding an arbitrary integration-id config or environment option. Carry the canonical resolved domain/identity through prepared inference headers, live model catalog and starter-model discovery, and standard GitHub Copilot embeddings; preserve domain allowlisting, precedence, custom-endpoint credential isolation, and public behavior. Add regression coverage for public and GHE identities on every affected request surface, update the request-compatibility docs, and obtain redacted after-fix proof from a real GHE tenant before merge. Do not edit CHANGELOG.md.
+Repair the GitHub Copilot GHE integration-identity regression from https://github.com/openclaw/openclaw/issues/127287. Keep identity policy in `extensions/github-copilot`; do not add an `integrationId` config option or change custom memory-remote semantics. Derive the identity from the existing allowlisted resolved GitHub domain, preserve `copilot-developer-cli` for public github.com, and use the tenant identity for supported `*.ghe.com` routing consistently in prepared inference headers, live catalog discovery, starter-model discovery, and normal GHE embeddings. Add owner-boundary regression coverage that fails on current main for public and GHE paths, including final headers for all three stream transports and controls for custom remotes. Ask the reporter to perform a redacted real-tenant after-fix inference check. Do not edit CHANGELOG.md.
 
 Likely files:
 
 - extensions/github-copilot/runtime-identity.ts
 - extensions/github-copilot/index.ts
 - extensions/github-copilot/models.ts
+- extensions/github-copilot/dynamic-models.ts
+- extensions/github-copilot/starter-model.ts
 - extensions/github-copilot/embeddings.ts
-- extensions/github-copilot/stream.test.ts
-- extensions/github-copilot/models.test.ts
-- extensions/github-copilot/embeddings.test.ts
 - extensions/github-copilot/index.test.ts
-- docs/providers/github-copilot.md
+- extensions/github-copilot/models.test.ts
+- extensions/github-copilot/stream.test.ts
+- extensions/github-copilot/embeddings.test.ts
 
 Validation:
 
-- pnpm test extensions/github-copilot/index.test.ts extensions/github-copilot/models.test.ts extensions/github-copilot/embeddings.test.ts extensions/github-copilot/stream.test.ts
-- pnpm check:changed -- extensions/github-copilot/runtime-identity.ts extensions/github-copilot/index.ts extensions/github-copilot/models.ts extensions/github-copilot/embeddings.ts extensions/github-copilot/stream.ts docs/providers/github-copilot.md
-- Redacted real `*.ghe.com` catalog and inference result showing the selected tenant identity and successful response.
+- node scripts/test-projects.mjs extensions/github-copilot/index.test.ts extensions/github-copilot/models.test.ts extensions/github-copilot/stream.test.ts extensions/github-copilot/embeddings.test.ts
+- Run the new GHE regression assertions against pre-fix and repaired code.
+- Obtain a redacted reporter GHE tenant inference result showing successful streaming after the fix.
 
 ## Operator Prompt
 
