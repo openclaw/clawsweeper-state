@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128017",
+  "mode": "autonomous",
+  "run_id": "32592649522",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32592649522",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128017.md",
+  "published_at": "2026-08-22T20:06:41.638Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128017",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128017",
+  "canonical_pr": null,
+  "summary": "Confirmed the marker-only search/snippet defect on current main (0a35d548). A narrow plugin-local repair is ready to plan, but this read-only checkout cannot create the branch or regression tests; focused validation is also blocked because `tsx` is not installed. The required sibling `../codex` source is absent and cannot be cloned here.",
+  "actions": [
+    {
+      "target": "#128017",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128017",
+      "candidate_fix": null,
+      "reason": "The issue is a confirmed canonical bug. Its repair is blocked only by this worker environment's read-only filesystem, missing dependencies, and unavailable required Codex sibling source."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128017",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128017",
+      "candidate_fix": null,
+      "reason": "Executor should apply this narrow artifact in a writable checkout with dependencies and the required Codex sibling source available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
