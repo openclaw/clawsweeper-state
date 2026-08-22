@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-22T02:01:14.759Z",
+  "updated_at": "2026-08-22T02:03:31.140Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119910:5204080847:2026-08-21T19:33:48Z:clawsweeper_auto_repair",
-      "comment_id": "5204080847",
-      "comment_version_key": "5204080847:2026-08-21T19:33:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119910#issuecomment-5204080847",
-      "comment_created_at": "2026-08-06T11:31:07Z",
-      "comment_updated_at": "2026-08-21T19:33:48Z",
-      "comment_body_sha256": "99a6a714c032489211a1c9a7427128803d207351ccd4d404c0e0ba0c8d11ed84",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119910,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cce5bb7a5d7aeb83299c8db60d7d7aa88d3e7ed1)",
-      "expected_head_sha": "cce5bb7a5d7aeb83299c8db60d7d7aa88d3e7ed1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-21T19:39:29.837Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-slack-commentary-classifier-20260806",
-        "head_sha": "cce5bb7a5d7aeb83299c8db60d7d7aa88d3e7ed1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119983:5209715304:2026-08-21T19:35:51Z:clawsweeper_auto_repair",
       "comment_id": "5209715304",
@@ -32141,6 +32108,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127752:5377255904:2026-08-22T02:02:44Z:clawsweeper_needs_human",
+      "comment_id": "5377255904",
+      "comment_version_key": "5377255904:2026-08-22T02:02:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127752#issuecomment-5377255904",
+      "comment_created_at": "2026-08-22T02:02:44Z",
+      "comment_updated_at": "2026-08-22T02:02:44Z",
+      "comment_body_sha256": "824295f72c7274be1bd690745fcdf9040bd723509bd3a63e3ea859f01ac3e56c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127752,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: no attached after-fix cloud run shows both an approved Codex attempt and rejection of the nearest revoked or un...; Review finding: [P1] Prove cloud-node Codex authority before enabling the route — extensions/crabbox/src/crabbox-worker-node-enrollment.ts:54-60 - [medium] Cloud Codex executable... (sha=ffb1ba1402360a02f747de0c1676b78b2923efc5)",
+      "expected_head_sha": "ffb1ba1402360a02f747de0c1676b78b2923efc5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-22T02:03:31.140Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cloud-node-multimode-harnesses",
+        "head_sha": "ffb1ba1402360a02f747de0c1676b78b2923efc5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
