@@ -1,6 +1,86 @@
 {
-  "updated_at": "2026-08-22T03:51:33.940Z",
+  "updated_at": "2026-08-22T03:50:24.345Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1222:5375834104:2026-08-21T21:57:45Z:re_review",
+      "comment_id": "5375834104",
+      "comment_version_key": "5375834104:2026-08-21T21:57:45Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1222#issuecomment-5375834104",
+      "comment_created_at": "2026-08-21T21:57:45Z",
+      "comment_updated_at": "2026-08-21T21:57:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1222,
+      "author": "brokemac79",
+      "author_id": 255583030,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-21T21:58:28.707Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bay-authoritative-lifecycle",
+        "head_sha": "c78a2b67f444ffe31551ff3cf05a82b3262e2bfe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3113:5365181346:2026-08-21T22:00:28Z:clawsweeper_auto_repair",
+      "comment_id": "5365181346",
+      "comment_version_key": "5365181346:2026-08-21T22:00:28Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3113#issuecomment-5365181346",
+      "comment_created_at": "2026-08-21T04:25:09Z",
+      "comment_updated_at": "2026-08-21T22:00:28Z",
+      "comment_body_sha256": "73d216b30d96adb88a653f9515992608e5b42ace4069292bcb6db52da5517827",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3113,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=667fe62545a6567188acb4d416f00eb9042749cf)",
+      "expected_head_sha": "667fe62545a6567188acb4d416f00eb9042749cf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-21T22:01:18.442Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/spend-tokscale-antigravity-cursor",
+        "head_sha": "667fe62545a6567188acb4d416f00eb9042749cf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/carapace:73:5313686353:2026-08-21T22:01:27Z:clawsweeper_needs_human",
       "comment_id": "5313686353",
@@ -31456,100 +31536,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:75299:5377705899:2026-08-22T03:50:50Z:re_review",
-      "comment_id": "5377705899",
-      "comment_version_key": "5377705899:2026-08-22T03:50:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/75299#issuecomment-5377705899",
-      "comment_created_at": "2026-08-22T03:50:50Z",
-      "comment_updated_at": "2026-08-22T03:50:50Z",
-      "comment_body_sha256": "16c23afec9df74671dd405a69d21dad2f807b1ba4e23607ec0dcf5e31cb590f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 75299,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T03:51:26.001Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/command-queue-priority",
-        "head_sha": "3a5134687d920d04bac8d1dae1455d9145144f62",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/babelfish:16:5377705823:2026-08-22T03:50:49Z:re_review",
-      "comment_id": "5377705823",
-      "comment_version_key": "5377705823:2026-08-22T03:50:49Z",
-      "comment_url": "https://github.com/openclaw/babelfish/pull/16#issuecomment-5377705823",
-      "comment_created_at": "2026-08-22T03:50:49Z",
-      "comment_updated_at": "2026-08-22T03:50:49Z",
-      "comment_body_sha256": "67f032c819c946e19ce977e716eade6029f4b824b7bd5fee18619de585c3d6f2",
-      "repo": "openclaw/babelfish",
-      "issue_number": 16,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T03:51:31.505Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/git-clone-timeout",
-        "head_sha": "378b8ae19a3becdc8a76cd8cd65f9a11e749d6da",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
