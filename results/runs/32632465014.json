@@ -1,0 +1,99 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128156",
+  "mode": "autonomous",
+  "run_id": "32632465014",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32632465014",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128156.md",
+  "published_at": "2026-08-23T11:06:06.755Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128156",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128156",
+  "canonical_pr": null,
+  "summary": "#128156 remains the canonical availability-performance report. Current main at 7700a3b3 retains the synchronous per-pattern bounded replacement walk, but implementation is blocked by the repository-required direct `../codex` source inspection: that sibling checkout is absent and this read-only worker cannot create it. A narrow, credit-preserving repair plan is prepared for an environment satisfying that gate.",
+  "actions": [
+    {
+      "target": "#128156",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "Keep the issue open as the single implementation and validation thread."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128156",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only on the required direct Codex source inspection and a baseline deterministic work-count reproduction."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128156",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "Prepare the bounded, semantics-preserving repair for a writable environment that can satisfy the blocking gates."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "skipped": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a readable sibling `../codex` checkout, or run the artifact in an environment permitted to create it, so the acting executor can perform the mandatory direct Codex source inspection before deciding or changing code."
+  ],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "skipped",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "needs_human",
+      "reason": "worker marked the fix path as non-executable; closure actions may still apply",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128156",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
