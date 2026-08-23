@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T18:49:45.055Z",
+  "updated_at": "2026-08-23T18:49:22.680Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128230:5386386011:2026-08-23T13:59:33Z:clawsweeper_auto_repair",
@@ -32649,15 +32649,15 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128326:5387823691:2026-08-23T18:46:16Z:clawsweeper_needs_human",
-      "comment_id": "5387823691",
-      "comment_version_key": "5387823691:2026-08-23T18:46:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128326#issuecomment-5387823691",
-      "comment_created_at": "2026-08-23T18:46:16Z",
-      "comment_updated_at": "2026-08-23T18:46:16Z",
-      "comment_body_sha256": "3af36be10e806e7f645a1fe94416ec9b3a35e4ba81c6b08ad9faaa16fc923db7",
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128279:5387278649:2026-08-23T18:48:29Z:clawsweeper_needs_human",
+      "comment_id": "5387278649",
+      "comment_version_key": "5387278649:2026-08-23T18:48:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128279#issuecomment-5387278649",
+      "comment_created_at": "2026-08-23T17:16:00Z",
+      "comment_updated_at": "2026-08-23T18:48:29Z",
+      "comment_body_sha256": "8280dd46cb312462e97ab9c242292f9bea118771de6085f9b861c26485747b30",
       "repo": "openclaw/openclaw",
-      "issue_number": 128326,
+      "issue_number": 128279,
       "author": "clawsweeper[bot]",
       "author_id": 274271284,
       "author_name": null,
@@ -32668,15 +32668,15 @@
       "trusted_bot": true,
       "trusted_bot_author": "clawsweeper[bot]",
       "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused unit tests only; add a redacted terminal run that shows a real installed dotted-ID plugin in openclaw plugins list...; Review finding: [P2] Allow valid dot-separated plugin IDs — src/plugins/discovery.ts:342 - [medium] Dotted valid IDs remain outside audit roots — src/security/installed-plugin-dir... (sha=64e26bf315c7ff192bafd6d8d9732dbd0dbf2d7e)",
-      "expected_head_sha": "64e26bf315c7ff192bafd6d8d9732dbd0dbf2d7e",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is a security-boundary change: a low-risk model decision now covers multiple executables, so the protected owner must explicitly accept that scope even though each executable is... (sha=706918b37c933f84a1303916d91de34b507ae7bd)",
+      "expected_head_sha": "706918b37c933f84a1303916d91de34b507ae7bd",
       "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T18:49:45.055Z",
+      "status": "waiting",
+      "processed_at": "2026-08-23T18:49:22.680Z",
       "target": {
         "kind": "pull_request",
-        "branch": "fix/plugin-disabled-suffix-filter",
-        "head_sha": "64e26bf315c7ff192bafd6d8d9732dbd0dbf2d7e",
+        "branch": "openclaw/quickjs-code-mode-guardian-approvals-audit",
+        "head_sha": "706918b37c933f84a1303916d91de34b507ae7bd",
         "cluster_id": null,
         "job_path": null
       }
