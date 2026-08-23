@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair this issue as a Browser-plugin reliability bug. Make the Browser-owned CDP transport cover ordinary loopback/Browser Relay connections as well as pinned connections, and ensure a Promise rejection returned by Playwright's message callback closes only that transport and reaches its normal disconnect path. Preserve existing DNS pinning, proxy bypass, redirect, authentication-header, and redaction behavior. Do not add a global unhandled-rejection suppression, a config option, or a child-process architecture. First establish a regression using the actual async rejected onmessage shape; add focused coverage for async rejection and ordinary loopback selection. Do not edit CHANGELOG.md; place release-note context in the PR body.
+Repair the current-main browser CDP failure boundary for https://github.com/openclaw/openclaw/issues/45224. First establish a failing regression on the ordinary loopback/no-pinned-lookup connect path: a synchronous exception from Playwright’s CDP message callback must close or retire only that browser connection and must not emit an unhandled rejection or terminate the Gateway. Reuse the plugin-owned ConnectOverCDPTransport containment path for ordinary and pinned connections; do not add a global assertion-name exemption or per-tool catch. Preserve CDP headers, proxy bypass, DNS pinning, redirect, credential-redaction, and connection-retirement behavior. Add focused regression coverage adjacent to the existing pinned-transport and connection tests, and stop if current Playwright 1.62.1 no longer exposes the callback shape or the repair requires a product/config change. Do not edit CHANGELOG.md.
 
 Likely files:
 
