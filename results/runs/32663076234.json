@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121778",
+  "mode": "autonomous",
+  "run_id": "32663076234",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32663076234",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121778.md",
+  "published_at": "2026-08-23T20:12:16.508Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/121778",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/121778",
+  "canonical_pr": null,
+  "summary": "No safe implementation PR is planned. The reported string drop exists in current main, but the requested coercion would choose between conflicting public contracts, and the required sibling Codex runtime source is unavailable for protocol verification.",
+  "actions": [
+    {
+      "target": "#121778",
+      "action": "needs_human",
+      "status": "planned",
+      "classification": "needs_human",
+      "canonical": "#121778",
+      "candidate_fix": null,
+      "reason": "Maintainer direction is required on the public contract: either make Discord-native `components` a supported, schema-described message-tool input (with aligned docs and validation), or retain the portable `presentation` contract and correct/remove the contradictory Discord guidance. The prerequisite direct Codex protocol inspection is also unavailable."
+    },
+    {
+      "target": "#121991",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#121778",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is permitted or needed."
+    },
+    {
+      "target": "#122943",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#121778",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is permitted or needed."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Decide the supported public interface for Discord-rich agent messages: portable `presentation` only, or a schema-described Discord-native `components` extension. Then provide a checkout with `../codex` available for direct MCP protocol/runtime verification before implementation."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#121778",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

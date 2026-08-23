@@ -2,59 +2,59 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-121778"
 mode: "autonomous"
-run_id: "31448106853"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31448106853"
-head_sha: "765644804756d5f6b1dc1e940d62c50711e398d8"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-11T01:29:15.311Z"
+run_id: "32663076234"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32663076234"
+head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
+workflow_conclusion: "success"
+result_status: "needs_human"
+published_at: "2026-08-23T20:12:16.508Z"
 canonical: "https://github.com/openclaw/openclaw/issues/121778"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/121778"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-121778
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31448106853](https://github.com/openclaw/clawsweeper/actions/runs/31448106853)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32663076234](https://github.com/openclaw/clawsweeper/actions/runs/32663076234)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: needs_human
 
 Canonical: https://github.com/openclaw/openclaw/issues/121778
 
 ## Summary
 
-#121778 is a current-main Discord plugin bug. JSON-string `components` values are discarded before component parsing on durable, local-action, and runtime-send routes; plan one narrow credited fix PR.
+No safe implementation PR is planned. The reported string drop exists in current main, but the requested coercion would choose between conflicting public contracts, and the required sibling Codex runtime source is unavailable for protocol verification.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #121778 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/121778
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #121778 | fix_needed | planned | canonical | The issue is open, source-proven, non-security-sensitive, and has a bounded Discord-owned repair with no viable PR yet. |
-| cluster:issue-openclaw-openclaw-121778 | build_fix_artifact | planned | canonical | Open a single PR from clawsweeper/issue-openclaw-openclaw-121778 after applying the narrow repair and validation. |
+| #121778 | needs_human | planned | needs_human | Maintainer direction is required on the public contract: either make Discord-native `components` a supported, schema-described message-tool input (with aligned docs and validation), or retain the portable `presentation` contract and correct/remove the contradictory Discord guidance. The prerequisite direct Codex protocol inspection is also unavailable. |
+| #121991 | keep_closed | skipped | superseded | Already closed; no mutation is permitted or needed. |
+| #122943 | keep_closed | skipped | superseded | Already closed; no mutation is permitted or needed. |
 
 ## Needs Human
 
-- none
+- Decide the supported public interface for Discord-rich agent messages: portable `presentation` only, or a schema-described Discord-native `components` extension. Then provide a checkout with `../codex` available for direct MCP protocol/runtime verification before implementation.
