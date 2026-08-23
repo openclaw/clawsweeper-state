@@ -67,18 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the generic provider auth-probe target selection for this issue. Preserve the current active-session model patch behavior. Add a regression that configures an Ollama Cloud API key, gives the agent an ollama fallback, and supplies an ollama-cloud catalog whose first row is deprecated and whose later row is usable; prove the probe targets the usable requested-provider row rather than the deprecated one. Keep the repair generic: do not special-case Ollama, add config or environment options, alter credential resolution, or edit CHANGELOG.md. The PR body should state that the probe no longer turns a retired-model response into misleading credential guidance.
+Repair the remaining Ollama Cloud provider-probe false failure in https://github.com/openclaw/openclaw/issues/124689. Preserve the existing Control UI active-session model patch behavior. In generic auth-probe model selection, retain explicit configured candidates but skip deprecated and disabled catalog rows when selecting a fallback. Add regression coverage with a deprecated first Ollama Cloud row and a serviceable later row. Do not add configuration, fallback readers, or provider-specific special cases; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.targets.test.ts
+- src/commands/models/list.probe.ollama.test.ts
+- src/gateway/server-methods/models-probe.test.ts
 
 Validation:
 
-- pnpm test src/commands/models/list.probe.targets.test.ts
+- pnpm test src/commands/models/list.probe.ollama.test.ts
 - pnpm test src/gateway/server-methods/models-probe.test.ts
-- pnpm check:changed -- src/commands/models/list.probe.models.ts src/commands/models/list.probe.targets.test.ts
 
 ## Operator Prompt
 
