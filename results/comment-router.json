@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T07:16:49.584Z",
+  "updated_at": "2026-08-23T07:16:49.778Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128071:5383649577:2026-08-23T02:28:53Z:clawsweeper_needs_human",
-      "comment_id": "5383649577",
-      "comment_version_key": "5383649577:2026-08-23T02:28:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128071#issuecomment-5383649577",
-      "comment_created_at": "2026-08-23T01:47:28Z",
-      "comment_updated_at": "2026-08-23T02:28:53Z",
-      "comment_body_sha256": "43a70ea1855f57ae106d78517ad644180f57e77e070e22be5600792b020d2972",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128071,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: add an owner-boundary harness trace where the original prompt permits Code Mode but excludes core read...; Review finding: [P1] Carry final prompt tool policy into reconciliation — src/agents/embedded-agent-runner/run/attempt-session-prepare.ts:237-244 - [medium] Prompt-time read denia... (sha=820f15ec04780749162c17bf97ece12ff11ee500)",
-      "expected_head_sha": "820f15ec04780749162c17bf97ece12ff11ee500",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T02:29:44.004Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-read-only-recovery",
-        "head_sha": "820f15ec04780749162c17bf97ece12ff11ee500",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126986:5383809130:2026-08-23T02:31:01Z:re_review",
       "comment_id": "5383809130",
@@ -31433,6 +31400,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118282:5160760627:2026-08-23T07:14:09Z:clawsweeper_needs_human",
+      "comment_id": "5160760627",
+      "comment_version_key": "5160760627:2026-08-23T07:14:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118282#issuecomment-5160760627",
+      "comment_created_at": "2026-08-02T23:01:13Z",
+      "comment_updated_at": "2026-08-23T07:14:09Z",
+      "comment_body_sha256": "e1c612c7d17a116c8f475a06def7a118a92f23f2a8c6477c5d5c8ec4c50f35d5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118282,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging will import a retired allowlist into active canonical approval state when historical null usage metadata is its only validation failure. (sha=c3e731b0b34789e47fb02b9d4556aa791016446e)",
+      "expected_head_sha": "c3e731b0b34789e47fb02b9d4556aa791016446e",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T07:16:49.778Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118242",
+        "head_sha": "c3e731b0b34789e47fb02b9d4556aa791016446e",
+        "cluster_id": "automerge-openclaw-openclaw-118282",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118282.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
