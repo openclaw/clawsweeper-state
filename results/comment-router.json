@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T04:41:57.298Z",
+  "updated_at": "2026-08-23T04:42:00.816Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126986:5365198371:2026-08-22T23:10:54Z:clawsweeper_needs_human",
-      "comment_id": "5365198371",
-      "comment_version_key": "5365198371:2026-08-22T23:10:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126986#issuecomment-5365198371",
-      "comment_created_at": "2026-08-21T04:27:59Z",
-      "comment_updated_at": "2026-08-22T23:10:54Z",
-      "comment_body_sha256": "e62969a3a0f89aa049a009f3d1acba5478afbc84b00b8cc6e8926603c6c62498",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126986,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The posted native two-turn proof ran at 875f2228, while the current head materially refactors capture state and does not prove the new...; Review finding: [P1] Preserve message-only instruction isolation — extensions/codex/src/app-server/attempt-context.ts:249-250 - [medium] Restricted replies receive workspace instr... (sha=2b8b71d34480d6debc8b5607148be647156a2e38)",
-      "expected_head_sha": "2b8b71d34480d6debc8b5607148be647156a2e38",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T23:16:29.000Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-codex-bootstrap-context",
-        "head_sha": "2b8b71d34480d6debc8b5607148be647156a2e38",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127280:5373182164:2026-08-22T23:12:07Z:clawsweeper_auto_repair",
       "comment_id": "5373182164",
@@ -31032,6 +30999,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112623:5384251968:2026-08-23T04:41:11Z:re_review",
+      "comment_id": "5384251968",
+      "comment_version_key": "5384251968:2026-08-23T04:41:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112623#issuecomment-5384251968",
+      "comment_created_at": "2026-08-23T04:41:11Z",
+      "comment_updated_at": "2026-08-23T04:41:11Z",
+      "comment_body_sha256": "1ce75d3c78d2fda1ced6001cec485f4165a79820c9079174f4064cb3a5d89fc3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112623,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T04:41:58.110Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "spike/recently-completed-subagents-prompt",
+        "head_sha": "9f70e6c4b355186c69a016418307070366289199",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
