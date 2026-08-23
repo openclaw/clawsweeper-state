@@ -2,15 +2,15 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-125422"
 mode: "autonomous"
-run_id: "32633804366"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32633804366"
+run_id: "32634057672"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32634057672"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-23T10:36:48.517Z"
-canonical: "#125422"
-canonical_issue: null
-canonical_pr: "#125422"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-23T10:42:38.546Z"
+canonical: "#119195"
+canonical_issue: "#119083"
+canonical_pr: "#119195"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # automerge-openclaw-openclaw-125422
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32633804366](https://github.com/openclaw/clawsweeper/actions/runs/32633804366)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32634057672](https://github.com/openclaw/clawsweeper/actions/runs/32634057672)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #125422
+Canonical: #119195
 
 ## Summary
 
-Make PR #125422 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+#119195 already merged the canonical Cron repair. #125422 remains open with a ClawSweeper-identified Gateway-lifecycle defect; retain the required contributor-branch repair artifact, but direct Codex source inspection is unavailable in this read-only worker.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Make PR #125422 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,8 @@ Make PR #125422 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125422 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #125422 | fix_needed | blocked | superseded | A branch repair or merge-readiness verdict requires current-main reconciliation and the mandatory direct Codex source check. |
 
 ## Needs Human
 
-- none
+- Provide or mount ../codex (or authorize its checkout) so the required Codex source inspection can complete before a repair verdict.
