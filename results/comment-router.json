@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T15:04:14.409Z",
+  "updated_at": "2026-08-23T15:04:44.627Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5229225936:2026-08-09T01:43:18Z:re_review",
-      "comment_id": "5229225936",
-      "comment_version_key": "5229225936:2026-08-09T01:43:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5229225936",
-      "comment_created_at": "2026-08-09T01:43:18Z",
-      "comment_updated_at": "2026-08-09T01:43:18Z",
-      "comment_body_sha256": "fb747bb3df86cc7dfd079484f80bb0589fbab9417e114a2c33f354fee7c614a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T10:26:19.484Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5229976380:2026-08-09T05:35:08Z:re_review",
       "comment_id": "5229976380",
@@ -32036,6 +32009,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128222:5386169839:2026-08-23T15:03:42Z:clawsweeper_needs_human",
+      "comment_id": "5386169839",
+      "comment_version_key": "5386169839:2026-08-23T15:03:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128222#issuecomment-5386169839",
+      "comment_created_at": "2026-08-23T13:10:46Z",
+      "comment_updated_at": "2026-08-23T15:03:42Z",
+      "comment_body_sha256": "fe46269e407668ca10dadbb12d076eb6ce09ddebf9dcdaf2290a42502ba9a238",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128222,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this PR behind current main, so merge the refreshed three-way result only after the relevant Gateway checks pass on its exact resulting head. (sha=b427c6c31d05e57b8855382b0b14a50affaf4ed3)",
+      "expected_head_sha": "b427c6c31d05e57b8855382b0b14a50affaf4ed3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T15:04:44.627Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-health-clock-rollback-20260823",
+        "head_sha": "b427c6c31d05e57b8855382b0b14a50affaf4ed3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
