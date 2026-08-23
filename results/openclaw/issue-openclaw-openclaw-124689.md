@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32609331009"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32609331009"
+run_id: "32609926742"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32609926742"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-23T01:15:08.153Z"
+published_at: "2026-08-23T01:28:19.051Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32609331009](https://github.com/openclaw/clawsweeper/actions/runs/32609331009)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32609926742](https://github.com/openclaw/clawsweeper/actions/runs/32609926742)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Current main contains the generic fallback defect: automatic probing ignores catalog status and can choose deprecated Ollama Cloud `kimi-k2.5`. No code was changed because this worker has a read-only filesystem, lacks dependencies, and cannot satisfy the mandatory direct `../codex` source inspection gate because that sibling checkout is absent.
+The canonical issue remains reproducible from current main source: automatic catalog fallback can select Ollama Cloud's deprecated kimi-k2.5. No code or GitHub mutation was made because this read-only checkout lacks ../codex (a mandatory direct-inspection gate) and dependencies cannot be installed or run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Current main contains the generic fallback defect: automatic probing ignores cat
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #124689 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,8 @@ Current main contains the generic fallback defect: automatic probing ignores cat
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | keep_canonical | planned | canonical | The issue remains the canonical non-security bug report. |
-| #124689 | fix_needed | blocked | canonical | A narrow owner-boundary repair is clear, but implementation and validation are blocked by the read-only environment and missing mandatory Codex source checkout. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Prepared narrow implementation plan for a writable executor. |
+| #124689 | fix_needed | blocked | canonical | A narrow generic repair is indicated, but the required Codex gate and executable test environment are unavailable. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | Ready for a writable executor after direct ../codex inspection and dependency installation. |
 
 ## Needs Human
 
