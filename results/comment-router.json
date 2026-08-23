@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T14:18:00.106Z",
+  "updated_at": "2026-08-23T14:19:37.125Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121100:5232396583:2026-08-23T09:51:47Z:clawsweeper_needs_human",
-      "comment_id": "5232396583",
-      "comment_version_key": "5232396583:2026-08-23T09:51:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121100#issuecomment-5232396583",
-      "comment_created_at": "2026-08-09T15:52:44Z",
-      "comment_updated_at": "2026-08-23T09:51:47Z",
-      "comment_body_sha256": "417455a9632f947b8b98a0a9e1c5c53e9b8d1f3c8c13f55b8c2df65bbe2049d7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121100,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 13 lines for a bug fix; the named schema option is the smallest clear representation of the scope-dependent contract, but it is not net-neutral. (sha=33b68a6bffd7f9495b5d57956b0f5f575f128f32)",
-      "expected_head_sha": "33b68a6bffd7f9495b5d57956b0f5f575f128f32",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T09:59:18.031Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/scoped-automation-update-schema",
-        "head_sha": "33b68a6bffd7f9495b5d57956b0f5f575f128f32",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124525:5306823897:2026-08-23T09:54:55Z:clawsweeper_auto_repair",
       "comment_id": "5306823897",
@@ -31481,6 +31448,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T14:18:00.106Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126851:5362113139:2026-08-23T14:16:47Z:clawsweeper_needs_human",
+      "comment_id": "5362113139",
+      "comment_version_key": "5362113139:2026-08-23T14:16:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126851#issuecomment-5362113139",
+      "comment_created_at": "2026-08-20T21:38:58Z",
+      "comment_updated_at": "2026-08-23T14:16:47Z",
+      "comment_body_sha256": "0c5d8980739c207890dc4976911fe610277802284e9f984258de4549f888f410",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126851,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The attached screenshots and mock-browser E2E show a normal newer terminal update, not the equal-or-older timestamp this PR changes; a...; Review finding: [P1] Reject terminal rows with no current-run discriminator — ui/src/lib/sessions/reconcile.ts:230-234 - [P1] Exercise an equal-or-older terminal timestamp in the... (sha=1515c028dd2b862e4e4e9364d55814b7ab78a3f3)",
+      "expected_head_sha": "1515c028dd2b862e4e4e9364d55814b7ab78a3f3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T14:19:37.125Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stale-terminal-session-clears-spinner",
+        "head_sha": "1515c028dd2b862e4e4e9364d55814b7ab78a3f3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
