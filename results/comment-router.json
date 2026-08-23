@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T06:54:06.284Z",
+  "updated_at": "2026-08-23T06:55:22.359Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3505:5372360195:2026-08-23T02:02:45Z:clawsweeper_needs_human",
-      "comment_id": "5372360195",
-      "comment_version_key": "5372360195:2026-08-23T02:02:45Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3505#issuecomment-5372360195",
-      "comment_created_at": "2026-08-21T16:12:00Z",
-      "comment_updated_at": "2026-08-23T02:02:45Z",
-      "comment_body_sha256": "d590f540ed0c961d05c3aa58831be164d568ab3cae47901ebfca9b1866692a32",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3505,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head local-auth Chromium scenario failed; although its test and runner are outside this diff, merge should wait for a rerun or diagnosis. (sha=fde2bd707df4ca56b67f4fb4ea576d2f05618c43)",
-      "expected_head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T02:03:32.571Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/development-minor-and-patch-3b24459cdd",
-        "head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120794:5229034586:2026-08-23T02:03:00Z:clawsweeper_auto_repair",
       "comment_id": "5229034586",
@@ -31389,6 +31356,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128103:5384717227:2026-08-23T06:54:42Z:re_review",
+      "comment_id": "5384717227",
+      "comment_version_key": "5384717227:2026-08-23T06:54:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128103#issuecomment-5384717227",
+      "comment_created_at": "2026-08-23T06:54:42Z",
+      "comment_updated_at": "2026-08-23T06:54:42Z",
+      "comment_body_sha256": "04e35aa4f0287b5cb0fb29c023f4b6e3d977242058c3dbdc3c3ae1b6b9460e98",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128103,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T06:55:20.612Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-stale-worker-startup-replay",
+        "head_sha": "ba293e9e36ce12bb09c2b1b4a647a85af6aeaab1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
