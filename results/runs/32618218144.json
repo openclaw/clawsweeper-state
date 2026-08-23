@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124689",
+  "mode": "autonomous",
+  "run_id": "32618218144",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32618218144",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124689.md",
+  "published_at": "2026-08-23T04:45:24.023Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_pr": null,
+  "summary": "#124689 remains a valid canonical bug. Current main selects the first matching fallback catalog row even when it is deprecated; a narrow generic status filter plus one regression test is ready for an executor, but this worker cannot modify or validate the checkout because the filesystem is read-only, dependencies cannot install, and required sibling ../codex source is absent.",
+  "actions": [
+    {
+      "target": "#124689",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Implement the generic catalog-fallback status filter and regression test on a writable branch; this worker is read-only and lacks the required ../codex source checkout for the repository Codex gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124689",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Executor must use a writable checkout with dependencies and clone/provide ../codex before editing and validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

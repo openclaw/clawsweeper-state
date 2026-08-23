@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32617674651"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32617674651"
+run_id: "32618218144"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32618218144"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T04:30:47.028Z"
+published_at: "2026-08-23T04:45:24.023Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32617674651](https://github.com/openclaw/clawsweeper/actions/runs/32617674651)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32618218144](https://github.com/openclaw/clawsweeper/actions/runs/32618218144)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-#124689 remains the canonical open bug. Current main selects the first provider catalog row without excluding deprecated or disabled rows; Ollama Cloud’s first manifest row is deprecated. A narrow generic fallback fix and regression are planned, but this read-only checkout cannot create the required branch/files, lacks dependencies for validation, and does not contain the mandatory sibling ../codex source checkout for the Codex hard gate.
+#124689 remains a valid canonical bug. Current main selects the first matching fallback catalog row even when it is deprecated; a narrow generic status filter plus one regression test is ready for an executor, but this worker cannot modify or validate the checkout because the filesystem is read-only, dependencies cannot install, and required sibling ../codex source is absent.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | planned | canonical | Implement the status-aware generic fallback while retaining the existing explicit-candidate early return; do not alter the active-session model patch. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned |  | Artifact is ready for the deterministic executor; local implementation and validation are blocked only by the supplied environment. |
+| #124689 | fix_needed | planned | canonical | Implement the generic catalog-fallback status filter and regression test on a writable branch; this worker is read-only and lacks the required ../codex source checkout for the repository Codex gate. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | Executor must use a writable checkout with dependencies and clone/provide ../codex before editing and validation. |
 
 ## Needs Human
 
