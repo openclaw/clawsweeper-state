@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124689",
+  "mode": "autonomous",
+  "run_id": "32613784888",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32613784888",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124689.md",
+  "published_at": "2026-08-23T02:59:09.528Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_pr": null,
+  "summary": "Confirmed a narrow generic probe-fallback bug on main 672ac118: deprecated and disabled catalog rows remain eligible for automatic selection. Implementation is blocked because the mandatory sibling ../codex source checkout is absent and this checkout is read-only; dependency installation and tests cannot run.",
+  "actions": [
+    {
+      "target": "#124689",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "The bug is confirmed and has a narrow canonical repair, but repository policy forbids a code-change or proof-sufficient verdict without direct ../codex inspection; this sandbox cannot provide that checkout or install dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124689",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for an executor with a writable checkout, dependency installation, and the required ../codex source checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#124689",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
