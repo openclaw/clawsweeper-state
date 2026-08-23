@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32610600683"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32610600683"
+run_id: "32610926485"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32610926485"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T01:40:38.958Z"
+published_at: "2026-08-23T01:51:48.513Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32610600683](https://github.com/openclaw/clawsweeper/actions/runs/32610600683)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32610926485](https://github.com/openclaw/clawsweeper/actions/runs/32610926485)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-#124689 remains a narrow, reproducible model-probe fallback defect: automatic fallback selects the deprecated Ollama Cloud `kimi-k2.5` row. A fix artifact is ready, but this read-only worker could not create the required Codex checkout, install pnpm, run the regression, or modify the branch.
+Narrow generic fix identified, but this read-only worker cannot edit, run tests, or satisfy the required direct ../codex inspection. No GitHub mutation was made.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | planned | canonical | No open candidate PR is hydrated. The owner-boundary repair is a narrow automatic-fallback filter that preserves explicit configured candidates and Anthropic ordering. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Executor should apply the narrow patch on `clawsweeper/issue-openclaw-openclaw-124689`, capture the failing regression before editing, then run the listed validation. |
+| #124689 | fix_needed | blocked | canonical | Implementation requires a writable checkout, functional pnpm/Corepack cache, and the mandated sibling Codex checkout. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | A writable executor can apply this narrow new-PR plan after direct Codex inspection. |
 
 ## Needs Human
 
