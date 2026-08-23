@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T10:43:11.936Z",
+  "updated_at": "2026-08-23T10:44:07.748Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3145:5384352333:2026-08-23T05:09:52Z:re_review",
-      "comment_id": "5384352333",
-      "comment_version_key": "5384352333:2026-08-23T05:09:52Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3145#issuecomment-5384352333",
-      "comment_created_at": "2026-08-23T05:09:52Z",
-      "comment_updated_at": "2026-08-23T05:09:52Z",
-      "comment_body_sha256": "29e0d599584a91c694c5fcfe935ffdc98585b31df86b20b09d1b4dc862891001",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3145,
-      "author": "yicone",
-      "author_id": 229222,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T05:19:34.214Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upstream-cli-install-status-20260822",
-        "head_sha": "ca6b532d559a0f514ce16132308036dbba8f2ac4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3145:5381683584:2026-08-23T05:18:42Z:clawsweeper_needs_human",
       "comment_id": "5381683584",
@@ -31631,6 +31584,39 @@
         "kind": "pull_request",
         "branch": "jesse/stage-signal-indexes",
         "head_sha": "b0cdd14de2e7fc882a9479f5172251e94475e4b8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3505:5372360195:2026-08-23T10:43:24Z:clawsweeper_needs_human",
+      "comment_id": "5372360195",
+      "comment_version_key": "5372360195:2026-08-23T10:43:24Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3505#issuecomment-5372360195",
+      "comment_created_at": "2026-08-21T16:12:00Z",
+      "comment_updated_at": "2026-08-23T10:43:24Z",
+      "comment_body_sha256": "973c9de2861d5689e819efdbfbe24dde21414d2f80890fdf5345310a14c27014",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3505,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The updated tooling feeds CI, and the local-auth Chromium scenario is reported failing on this head; the available record does not prove whether it is a dependency regression or an un... (sha=fde2bd707df4ca56b67f4fb4ea576d2f05618c43)",
+      "expected_head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T10:44:07.748Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-3b24459cdd",
+        "head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
         "cluster_id": null,
         "job_path": null
       }
