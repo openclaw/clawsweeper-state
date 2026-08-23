@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T16:22:04.347Z",
+  "updated_at": "2026-08-23T16:22:59.195Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97103:5094575579:2026-07-27T17:27:59Z:re_review",
-      "comment_id": "5094575579",
-      "comment_version_key": "5094575579:2026-07-27T17:27:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97103#issuecomment-5094575579",
-      "comment_created_at": "2026-07-27T17:27:59Z",
-      "comment_updated_at": "2026-07-27T17:27:59Z",
-      "comment_body_sha256": "5400aadb7f7d5300a569c0c1f2da3c521b3344c5152ddae620029041a9cf8d78",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97103,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T12:08:34.011Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97103:5128263567:2026-07-30T08:08:27Z:re_review",
       "comment_id": "5128263567",
@@ -32102,6 +32075,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128197:5385773212:2026-08-23T16:21:49Z:clawsweeper_needs_human",
+      "comment_id": "5385773212",
+      "comment_version_key": "5385773212:2026-08-23T16:21:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128197#issuecomment-5385773212",
+      "comment_created_at": "2026-08-23T11:32:48Z",
+      "comment_updated_at": "2026-08-23T16:21:49Z",
+      "comment_body_sha256": "c7b25ffd3f13ab858e96347359439cc40845c743e2b1f40f55aaccf284c8fa26",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128197,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Commit the cutover into the merged workflow (P1)** - This workflow runs only for pushes to the feature branch and rewrites that branch; merging this PR leaves the active Mantis workflow on its existing prompt, r...; Review finding: [P1] Commit the cutover into the merged workflow — .github/workflows/mantis-cutover-bootstrap.yml:4-6 - [P2] Remove the retained probe file — .tmp-probe:1 - [P2] R... (sha=f888dc24420c9582517fb3a2fa93fac8c348111b)",
+      "expected_head_sha": "f888dc24420c9582517fb3a2fa93fac8c348111b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T16:22:59.195Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/mantis-telegram-visible-v2",
+        "head_sha": "f888dc24420c9582517fb3a2fa93fac8c348111b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
