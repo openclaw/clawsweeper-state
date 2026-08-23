@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T15:19:15.205Z",
+  "updated_at": "2026-08-23T15:21:14.220Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/ask-molty:10:5334544777:2026-08-23T11:04:19Z:clawsweeper_auto_repair",
-      "comment_id": "5334544777",
-      "comment_version_key": "5334544777:2026-08-23T11:04:19Z",
-      "comment_url": "https://github.com/openclaw/ask-molty/pull/10#issuecomment-5334544777",
-      "comment_created_at": "2026-08-18T21:56:46Z",
-      "comment_updated_at": "2026-08-23T11:04:19Z",
-      "comment_body_sha256": "960a6b30b1203c5530b0fa7cb5e3e5ff2e91eea452227eb6f4eb707a98e78499",
-      "repo": "openclaw/ask-molty",
-      "issue_number": 10,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=074094476ac194c177ebe4a46f03df6e5f846248)",
-      "expected_head_sha": "074094476ac194c177ebe4a46f03df6e5f846248",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T11:05:07.555Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sse-skip-bad-json",
-        "head_sha": "074094476ac194c177ebe4a46f03df6e5f846248",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/summarize:389:5308839178:2026-08-23T11:04:09Z:clawsweeper_needs_human",
       "comment_id": "5308839178",
@@ -31704,6 +31671,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120056:5386753399:2026-08-23T15:20:28Z:re_review",
+      "comment_id": "5386753399",
+      "comment_version_key": "5386753399:2026-08-23T15:20:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120056#issuecomment-5386753399",
+      "comment_created_at": "2026-08-23T15:20:28Z",
+      "comment_updated_at": "2026-08-23T15:20:28Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120056,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T15:21:12.830Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-silent-reply-clears-tool-error",
+        "head_sha": "3beafccff71605825974b0d9f0faf415f03fe396",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
