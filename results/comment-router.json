@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T21:29:00.936Z",
+  "updated_at": "2026-08-23T21:29:16.898Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102165:4914615071:2026-08-23T15:25:54Z:clawsweeper_needs_human",
-      "comment_id": "4914615071",
-      "comment_version_key": "4914615071:2026-08-23T15:25:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/102165#issuecomment-4914615071",
-      "comment_created_at": "2026-07-08T12:08:54Z",
-      "comment_updated_at": "2026-08-23T15:25:54Z",
-      "comment_body_sha256": "9db4c23961ee5a18524eb417032f157e05672064f7cd29ddaf621deb417cc9de",
-      "repo": "openclaw/openclaw",
-      "issue_number": 102165,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied live logs show earlier in-process cancellation, but they predate final-head durable persi...; Review finding: [P3] Remove the ineffective Feishu login rerun — docs/channels/feishu.md:272 - [medium] Prove recall cancellation stays scoped to its authorized source — extension... (sha=7d666ffa96cae5b636159d92bc1becf5258c580f)",
-      "expected_head_sha": "7d666ffa96cae5b636159d92bc1becf5258c580f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T15:40:22.840Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-recall-abort",
-        "head_sha": "7d666ffa96cae5b636159d92bc1becf5258c580f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102173:4914801332:2026-08-23T15:26:42Z:clawsweeper_auto_repair",
       "comment_id": "4914801332",
@@ -32502,6 +32469,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3505:5372360195:2026-08-23T21:28:32Z:clawsweeper_needs_human",
+      "comment_id": "5372360195",
+      "comment_version_key": "5372360195:2026-08-23T21:28:32Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3505#issuecomment-5372360195",
+      "comment_created_at": "2026-08-21T16:12:00Z",
+      "comment_updated_at": "2026-08-23T21:28:32Z",
+      "comment_body_sha256": "69a915e67dced36520f88a97fcb558e3ffe3ab8e5154505b1dfc97a13835993e",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3505,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Oxfmt and Oxlint directly power the static CI gate, and Oxlint 1.79.0 changes rule behavior; a static/unit rerun is needed before merge. (sha=fde2bd707df4ca56b67f4fb4ea576d2f05618c43)",
+      "expected_head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T21:29:16.898Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-3b24459cdd",
+        "head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
