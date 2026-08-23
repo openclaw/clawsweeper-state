@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T22:07:24.360Z",
+  "updated_at": "2026-08-23T22:08:08.583Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112362:5120146443:2026-08-23T16:10:02Z:clawsweeper_needs_human",
-      "comment_id": "5120146443",
-      "comment_version_key": "5120146443:2026-08-23T16:10:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112362#issuecomment-5120146443",
-      "comment_created_at": "2026-07-29T15:43:12Z",
-      "comment_updated_at": "2026-08-23T16:10:02Z",
-      "comment_body_sha256": "4828d0cdeaca311984ebcccbf3edff34c82e4e7a82b7d08d9386857ce7071750",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112362,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve canonical explicit-agent validation (P1)** - This resolver turns a blank --agent into an implicit default and passes an unknown ID straight to workspace resolution. Current main rejects both cases throu...; Review finding: [P1] Preserve canonical explicit-agent validation — src/cli/skills-cli.ts:150-154 - [P1] Keep the shared CLI error handling — src/cli/skills-cli.ts:225-227 - [medi... (sha=aee574787de1f1ce4dacd3a534bba34eb5722da8)",
-      "expected_head_sha": "aee574787de1f1ce4dacd3a534bba34eb5722da8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T16:13:49.352Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pr-skills-bypass-config-guard",
-        "head_sha": "aee574787de1f1ce4dacd3a534bba34eb5722da8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113188:5144179622:2026-08-23T16:12:11Z:clawsweeper_needs_human",
       "comment_id": "5144179622",
@@ -32359,6 +32326,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128371:5388727213:2026-08-23T22:07:13Z:re_review",
+      "comment_id": "5388727213",
+      "comment_version_key": "5388727213:2026-08-23T22:07:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128371#issuecomment-5388727213",
+      "comment_created_at": "2026-08-23T22:07:13Z",
+      "comment_updated_at": "2026-08-23T22:07:13Z",
+      "comment_body_sha256": "914b87972ff1117f8bc72644fa9e16f4d96489107bfaeab721d6e4923d930a64",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128371,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T22:08:05.867Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/beta3-authorized-focused-eed27fdb",
+        "head_sha": "e9a46d2185043c2d86e6b06943ed6fc9725141a7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
