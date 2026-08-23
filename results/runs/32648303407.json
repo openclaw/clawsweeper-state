@@ -1,0 +1,113 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-81892",
+  "mode": "autonomous",
+  "run_id": "32648303407",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32648303407",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-81892.md",
+  "published_at": "2026-08-23T15:33:15.015Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/81892",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/81892",
+  "canonical_pr": null,
+  "summary": "Current main has the documented Matrix reasoning-delivery defect: shared reply filtering requires reasoningPayloadsEnabled, Matrix does not opt in, and Matrix delivery also suppresses explicit reasoning. A narrow repair plan is ready, but this read-only checkout cannot create a branch or install the missing test dependency; the mandatory sibling ../codex checkout is also absent.",
+  "actions": [
+    {
+      "target": "#81892",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Canonical open bug; repair is narrow and plugin-owned."
+    },
+    {
+      "target": "#24411",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#82907",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Historical source only."
+    },
+    {
+      "target": "#90560",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Historical source only."
+    },
+    {
+      "target": "#93696",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine to central OpenClaw security handling; this does not block the ordinary Matrix repair."
+    },
+    {
+      "target": "#93830",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Historical source only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-81892",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for the deterministic executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-81892",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "A writable executor with dependencies and ../codex is required before branch creation and validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 4,
+    "route_security": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies installed and the mandatory sibling ../codex checkout; then execute the narrow fix artifact and capture the requested redacted Matrix trace."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
