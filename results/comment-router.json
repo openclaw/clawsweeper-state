@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T05:44:19.932Z",
+  "updated_at": "2026-08-23T05:44:22.005Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119023:5322920444:2026-08-18T02:54:09Z:freeform_assist",
-      "comment_id": "5322920444",
-      "comment_version_key": "5322920444:2026-08-18T02:54:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119023#issuecomment-5322920444",
-      "comment_created_at": "2026-08-18T02:54:09Z",
-      "comment_updated_at": "2026-08-18T02:54:09Z",
-      "comment_body_sha256": "1acb5e2bad379acd4921fd78a450de02aa677a8e97f606e395eb1dcb3ecb4f06",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119023,
-      "author": "scoootscooob",
-      "author_id": 167050519,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review\\n\\nrebased conflict-free onto current `main` (`a928da457f8`) at exact head `bf50e729d3520fdbec1e042185bb6857a4774862`. on this head: 602 focused tests, both typechecks, full format, the exact hosted lint stripe, generated channel metadata, plugin sdk surface, and autoreview all pass.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T00:29:17.254Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/slack-inherit-channel-context",
-        "head_sha": "7a4d1126fafd582eeeae5cf0fddbb8ee4e81786b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128049:5382987144:2026-08-23T00:26:48Z:clawsweeper_needs_human",
       "comment_id": "5382987144",
@@ -31335,6 +31288,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126085:5335784225:2026-08-23T05:41:00Z:clawsweeper_needs_human",
+      "comment_id": "5335784225",
+      "comment_version_key": "5335784225:2026-08-23T05:41:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126085#issuecomment-5335784225",
+      "comment_created_at": "2026-08-19T00:03:43Z",
+      "comment_updated_at": "2026-08-23T05:41:00Z",
+      "comment_body_sha256": "9c9082651decfd6a926b0ee8c62885a2b0352e805da3f5ac6a3955596e085ff9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126085,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local partial clone could not retrieve the current-main lifecycle source because github.com DNS resolution failed, so rebase/current-main comparison remains a maintainer check. (sha=d0a51cc2fac6505f470d50432afc84b2a5e2b575)",
+      "expected_head_sha": "d0a51cc2fac6505f470d50432afc84b2a5e2b575",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T05:44:22.005Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-stop-scoped-probe-v2",
+        "head_sha": "d0a51cc2fac6505f470d50432afc84b2a5e2b575",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
