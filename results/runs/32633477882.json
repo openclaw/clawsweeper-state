@@ -1,0 +1,89 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128156",
+  "mode": "autonomous",
+  "run_id": "32633477882",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32633477882",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128156.md",
+  "published_at": "2026-08-23T10:30:12.064Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128156",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128156",
+  "canonical_pr": null,
+  "summary": "#128156 remains a real, narrow default-redaction performance bug on main d26e097263c13239394488b12c4b68bd8fa05cc8. The fix path is ready, but this worker cannot create or validate the branch: the checkout is read-only, dependencies are absent (tsx), and the required sibling ../codex source is unavailable for the repository’s direct-inspection gate.",
+  "actions": [
+    {
+      "target": "#111376",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "Same event-loop-stall family, but a separate root cause and linked repair path."
+    },
+    {
+      "target": "#117262",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "Related stall symptom; distinct persistence/lifecycle repair."
+    },
+    {
+      "target": "#122950",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "Distinct channel-recovery owner boundary."
+    },
+    {
+      "target": "#123540",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "Related event-loop symptom with an independent session-summary root cause."
+    },
+    {
+      "target": "#128156",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "Add a cloned-regex no-match gate only for patterns derived from the built-in default table, preserving custom-regex and full-context semantics."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128156",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "The implementation is narrowly specified, but execution and validation require a writable checkout with dependencies and the required Codex sibling source."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 4,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 6
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

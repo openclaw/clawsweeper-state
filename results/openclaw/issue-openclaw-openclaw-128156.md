@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128156"
 mode: "autonomous"
-run_id: "32632712412"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32632712412"
+run_id: "32633477882"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32633477882"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T10:15:22.876Z"
+published_at: "2026-08-23T10:30:12.064Z"
 canonical: "https://github.com/openclaw/openclaw/issues/128156"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/128156"
 canonical_pr: null
-actions_total: 2
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32632712412](https://github.com/openclaw/clawsweeper/actions/runs/32632712412)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32633477882](https://github.com/openclaw/clawsweeper/actions/runs/32633477882)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/128156
 
 ## Summary
 
-The redactor still has the reported all-pattern work amplification, but this worker cannot safely create or validate the required PR: the checkout is read-only with no dependencies, and the mandatory direct ../codex source inspection is unavailable because the sibling clone is absent and network DNS is blocked.
+#128156 remains a real, narrow default-redaction performance bug on main d26e097263c13239394488b12c4b68bd8fa05cc8. The fix path is ready, but this worker cannot create or validate the branch: the checkout is read-only, dependencies are absent (tsx), and the required sibling ../codex source is unavailable for the repository’s direct-inspection gate.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ The redactor still has the reported all-pattern work amplification, but this wor
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #128156 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,12 @@ The redactor still has the reported all-pattern work amplification, but this wor
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128156 | fix_needed | blocked | canonical | Implementation is blocked only by the immutable/offline execution environment, not by an unresolved product or security decision. |
-| cluster:issue-openclaw-openclaw-128156 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable, dependency-complete executor after the mandatory Codex source gate is restored. |
+| #111376 | keep_related | planned | related | Same event-loop-stall family, but a separate root cause and linked repair path. |
+| #117262 | keep_related | planned | related | Related stall symptom; distinct persistence/lifecycle repair. |
+| #122950 | keep_related | planned | related | Distinct channel-recovery owner boundary. |
+| #123540 | keep_related | planned | related | Related event-loop symptom with an independent session-summary root cause. |
+| #128156 | fix_needed | planned | canonical | Add a cloned-regex no-match gate only for patterns derived from the built-in default table, preserving custom-regex and full-context semantics. |
+| cluster:issue-openclaw-openclaw-128156 | build_fix_artifact | planned |  | The implementation is narrowly specified, but execution and validation require a writable checkout with dependencies and the required Codex sibling source. |
 
 ## Needs Human
 
