@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T19:14:13.236Z",
+  "updated_at": "2026-08-23T19:14:15.796Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128115:5386429299:2026-08-23T14:09:04Z:re_review",
-      "comment_id": "5386429299",
-      "comment_version_key": "5386429299:2026-08-23T14:09:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128115#issuecomment-5386429299",
-      "comment_created_at": "2026-08-23T14:09:04Z",
-      "comment_updated_at": "2026-08-23T14:09:04Z",
-      "comment_body_sha256": "8654dee831639cb5100917e631a22646d527cd1c81e90fa7346a0712d7af9bfd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128115,
-      "author": "Solvely-Colin",
-      "author_id": 211764741,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T14:15:26.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/workboard-collapsible-columns",
-        "head_sha": "09f494c92845c28b8f00bcafe59dd9041eeb47fb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127841:5386442877:2026-08-23T14:12:09Z:re_review",
       "comment_id": "5386442877",
@@ -32655,6 +32608,39 @@
         "kind": "pull_request",
         "branch": "fix/provider-tool-result-whitespace",
         "head_sha": "950a14ae3d20173a83577f8eb086bda744fe0709",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128334:5387946372:2026-08-23T19:11:28Z:clawsweeper_needs_human",
+      "comment_id": "5387946372",
+      "comment_version_key": "5387946372:2026-08-23T19:11:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128334#issuecomment-5387946372",
+      "comment_created_at": "2026-08-23T19:11:28Z",
+      "comment_updated_at": "2026-08-23T19:11:28Z",
+      "comment_body_sha256": "4fda35d1de5dd8890a56f07e23b8036eadddf28492635bf5b16aa0cd6ea3b7d7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128334,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The sandbox denies Swift execution, so independent native compilation was not possible here; exact-head iOS/Swift CI should remain the final validation gate. (sha=ad7d029e7f5d99829f45652ff04042d2800e50d6)",
+      "expected_head_sha": "ad7d029e7f5d99829f45652ff04042d2800e50d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T19:14:15.796Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/land-aug23-swift-protocol",
+        "head_sha": "ad7d029e7f5d99829f45652ff04042d2800e50d6",
         "cluster_id": null,
         "job_path": null
       }
