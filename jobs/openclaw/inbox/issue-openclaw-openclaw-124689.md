@@ -67,21 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-In the model-probe selector, preserve explicitly configured candidates exactly as today, but exclude deprecated and disabled catalog rows during automatic fallback. Retain Anthropic preference ordering among eligible rows and return no model when all fallback rows are ineligible. Do not special-case Ollama or reorder its manifest. Add observable regressions for deprecated-first fallback, an explicit deprecated candidate, and all-ineligible fallback.
+Repair the generic provider auth-probe target selection for this issue. Preserve the current active-session model patch behavior. Add a regression that configures an Ollama Cloud API key, gives the agent an ollama fallback, and supplies an ollama-cloud catalog whose first row is deprecated and whose later row is usable; prove the probe targets the usable requested-provider row rather than the deprecated one. Keep the repair generic: do not special-case Ollama, add config or environment options, alter credential resolution, or edit CHANGELOG.md. The PR body should state that the probe no longer turns a retired-model response into misleading credential guidance.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.models.test.ts
-- src/commands/models/list.probe.test.ts
-- extensions/ollama/src/provider-models.test.ts
+- src/commands/models/list.probe.targets.test.ts
 
 Validation:
 
-- Capture the pre-fix failing regression for deprecated-first automatic fallback, then rerun it after the repair.
-- pnpm test src/commands/models/list.probe.models.test.ts
-- pnpm test src/commands/models/list.probe.test.ts
-- pnpm test extensions/ollama/src/provider-models.test.ts
+- pnpm test src/commands/models/list.probe.targets.test.ts
+- pnpm test src/gateway/server-methods/models-probe.test.ts
+- pnpm check:changed -- src/commands/models/list.probe.models.ts src/commands/models/list.probe.targets.test.ts
 
 ## Operator Prompt
 
