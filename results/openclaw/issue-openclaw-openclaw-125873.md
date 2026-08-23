@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125873"
 mode: "autonomous"
-run_id: "32660918633"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32660918633"
+run_id: "32661240885"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32661240885"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-23T19:33:09.008Z"
+published_at: "2026-08-23T19:40:16.764Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125873"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125873"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32660918633](https://github.com/openclaw/clawsweeper/actions/runs/32660918633)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32661240885](https://github.com/openclaw/clawsweeper/actions/runs/32661240885)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/125873
 
 ## Summary
 
-#125873 remains a real, narrow Bedrock replay bug: persisted tool-call arguments reach Converse `toolUse.input` unchanged. A two-file fix is planned, but this read-only checkout has no dependencies and the mandatory sibling `../codex` source is absent, so no branch, regression test, validation, or PR can be safely produced here.
+Current main still replays persisted Bedrock tool-call arguments unchanged, but implementation is blocked by the repository’s mandatory direct ../codex source-inspection gate: ../codex is absent and network DNS prevents the required clone/inspection.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125873
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #125873 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/125873
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125873 | fix_needed | planned | canonical | Historical or otherwise malformed persisted arguments bypass the producer-side validation and poison subsequent Bedrock requests. |
-| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | planned | canonical | The repair is a narrow owner-boundary reuse with one captured Converse payload regression. |
-| cluster:issue-openclaw-openclaw-125873 | open_fix_pr | blocked | canonical | Implementation requires a writable checkout with dependencies and the required sibling Codex source inspection before a PR can be opened. |
+| #125873 | fix_needed | blocked | canonical | Do not change code or claim proof sufficient until the required direct ../codex inspection is possible. |
+| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | blocked | canonical | Provision or make ../codex readable, then inspect the applicable runtime/protocol source before applying the bounded repair. |
 
 ## Needs Human
 
