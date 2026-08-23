@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T23:49:01.083Z",
+  "updated_at": "2026-08-23T23:49:03.565Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1486:5388288728:2026-08-23T20:27:43Z:re_review",
-      "comment_id": "5388288728",
-      "comment_version_key": "5388288728:2026-08-23T20:27:43Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1486#issuecomment-5388288728",
-      "comment_created_at": "2026-08-23T20:27:43Z",
-      "comment_updated_at": "2026-08-23T20:27:43Z",
-      "comment_body_sha256": "a106563df4d90f2251d03ed71e442826d75741290093346c12c0b09ccaf9b3a8",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1486,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T20:28:34.777Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/wsl2-owner-file-backed-stdin",
-        "head_sha": "152575b1f1e8f987a4bb9d476d7b84d9e6a98ebc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127231:5372083511:2026-08-23T20:24:59Z:clawsweeper_needs_human",
       "comment_id": "5372083511",
@@ -30150,6 +30103,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T23:49:01.083Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3162:5388938556:2026-08-23T23:48:12Z:clawsweeper_needs_human",
+      "comment_id": "5388938556",
+      "comment_version_key": "5388938556:2026-08-23T23:48:12Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3162#issuecomment-5388938556",
+      "comment_created_at": "2026-08-23T22:55:58Z",
+      "comment_updated_at": "2026-08-23T23:48:12Z",
+      "comment_body_sha256": "7e31bb01c0e1929e97ae27f2648d1656fdb1965e131f207986fcbdbca61683e3",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3162,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body asserts a successful ad-hoc-bundle test, but no inspectable after-fix proof is attached; add redacted terminal output, logs, or a reco... (sha=d32db7c277586e94532f159611682565c6c6fa9d)",
+      "expected_head_sha": "d32db7c277586e94532f159611682565c6c6fa9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T23:49:03.565Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-claude-web-cookie-refresh",
+        "head_sha": "d32db7c277586e94532f159611682565c6c6fa9d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
