@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T15:14:36.703Z",
+  "updated_at": "2026-08-23T15:14:44.276Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111351:5381143458:2026-08-22T15:23:59Z:re_review",
-      "comment_id": "5381143458",
-      "comment_version_key": "5381143458:2026-08-22T15:23:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111351#issuecomment-5381143458",
-      "comment_created_at": "2026-08-22T15:23:59Z",
-      "comment_updated_at": "2026-08-22T15:23:59Z",
-      "comment_body_sha256": "4dc73cc6936c3f34f5dd067aac52c4b0ea30d7096bdc819eb426d0a0d343f0fc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111351,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T11:01:30.046Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111351:5384104773:2026-08-23T03:58:53Z:re_review",
       "comment_id": "5384104773",
@@ -31700,6 +31673,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128154:5385082851:2026-08-23T15:13:35Z:clawsweeper_needs_human",
+      "comment_id": "5385082851",
+      "comment_version_key": "5385082851:2026-08-23T15:13:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128154#issuecomment-5385082851",
+      "comment_created_at": "2026-08-23T08:33:47Z",
+      "comment_updated_at": "2026-08-23T15:13:35Z",
+      "comment_body_sha256": "1318c99e60f0e4e5141c22f1c6c951bf099f1ef64e4c1fe68a969ee631f9b108",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128154,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This adds a 34-second browser E2E budget gate and metrics-artifact output; the remaining exact-head UI E2E shard should finish successfully before merge to confirm CI timing remains s... (sha=2b706a53aad5153911e8418d03cff0c570350036)",
+      "expected_head_sha": "2b706a53aad5153911e8418d03cff0c570350036",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T15:14:44.276Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/ci-performance-gates",
+        "head_sha": "2b706a53aad5153911e8418d03cff0c570350036",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
