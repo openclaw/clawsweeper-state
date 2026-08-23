@@ -1,48 +1,6 @@
 {
-  "updated_at": "2026-08-23T22:45:20.824Z",
+  "updated_at": "2026-08-23T22:46:18.815Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119204:5387123237:2026-08-23T16:41:52Z:re_review",
-      "comment_id": "5387123237",
-      "comment_version_key": "5387123237:2026-08-23T16:41:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119204#issuecomment-5387123237",
-      "comment_created_at": "2026-08-23T16:41:52Z",
-      "comment_updated_at": "2026-08-23T16:41:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "8b881dd0-9f11-11f1-97e9-0bdd4aef3c2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119204,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T16:42:28.983Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-prs-merged-heads-beyond-cap",
-        "head_sha": "f66f32a8fc709847dc159b728e4f985bb424293d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:407:5379928639:2026-08-23T16:42:33Z:clawsweeper_auto_repair",
       "comment_id": "5379928639",
@@ -32432,6 +32390,39 @@
         "kind": "pull_request",
         "branch": "fix/dependency-guard-comment-trigger",
         "head_sha": "7dfd1ae2791ea6b71dec445e867e0453653d8408",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3505:5372360195:2026-08-23T22:45:26Z:clawsweeper_needs_human",
+      "comment_id": "5372360195",
+      "comment_version_key": "5372360195:2026-08-23T22:45:26Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3505#issuecomment-5372360195",
+      "comment_created_at": "2026-08-21T16:12:00Z",
+      "comment_updated_at": "2026-08-23T22:45:26Z",
+      "comment_body_sha256": "4837e6ed96e8c7c104b430b34f31a0aae7ee72fc7908d44f3bb6d22264c9ba96",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3505,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Oxfmt and Oxlint directly power the static gate, and Oxlint 1.79 changes upstream rule behavior; no successful current-head static or unit validation is supplied. The reported local-a... (sha=fde2bd707df4ca56b67f4fb4ea576d2f05618c43)",
+      "expected_head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T22:46:18.815Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-3b24459cdd",
+        "head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
         "cluster_id": null,
         "job_path": null
       }
