@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128086",
+  "mode": "autonomous",
+  "run_id": "32616000951",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32616000951",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128086.md",
+  "published_at": "2026-08-23T03:50:55.386Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128086",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128086",
+  "canonical_pr": null,
+  "summary": "#128086 remains a reproducible canonical bug on main. The cold SQLite client reads an unexpired locator and dials it without checking PID liveness; registration-time pruning is not reached. A narrow no-cleanup fix is planned, but this worker cannot write or validate a branch in the read-only checkout, and the mandatory sibling ../codex source is absent and cannot be cloned here.",
+  "actions": [
+    {
+      "target": "#128086",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128086",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor that can inspect sibling ../codex before changing code, add the regression, and run validation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128086",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128086",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited ClawSweeper PR after the executor clears the local write and direct-Codex-source blockers."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
