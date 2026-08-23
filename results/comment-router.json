@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T16:03:59.856Z",
+  "updated_at": "2026-08-23T16:04:09.764Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5312168248:2026-08-17T05:20:07Z:re_review",
-      "comment_id": "5312168248",
-      "comment_version_key": "5312168248:2026-08-17T05:20:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5312168248",
-      "comment_created_at": "2026-08-17T05:20:07Z",
-      "comment_updated_at": "2026-08-17T05:20:07Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T12:07:29.312Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5312234298:2026-08-17T05:31:12Z:re_review",
       "comment_id": "5312234298",
@@ -31795,6 +31768,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/notcrawl:105:5386946872:2026-08-23T16:03:20Z:clawsweeper_needs_human",
+      "comment_id": "5386946872",
+      "comment_version_key": "5386946872:2026-08-23T16:03:20Z",
+      "comment_url": "https://github.com/openclaw/notcrawl/pull/105#issuecomment-5386946872",
+      "comment_created_at": "2026-08-23T16:03:20Z",
+      "comment_updated_at": "2026-08-23T16:03:20Z",
+      "comment_body_sha256": "89b90616f2cf9c5fc51e923395305e6f1151b61826035351fc7f3ea2f2903468",
+      "repo": "openclaw/notcrawl",
+      "issue_number": 105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body lists real compiled CLI smokes, but it does not include observable after-fix output; attach redacted terminal output, a scree... (sha=828cc8f19e26477c8d0ead33856001aafa4b0015)",
+      "expected_head_sha": "828cc8f19e26477c8d0ead33856001aafa4b0015",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T16:04:09.764Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/t30-deps-refresh-20260823",
+        "head_sha": "828cc8f19e26477c8d0ead33856001aafa4b0015",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
