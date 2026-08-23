@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T15:21:14.220Z",
+  "updated_at": "2026-08-23T15:19:38.484Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:steipete/summarize:389:5308839178:2026-08-23T11:04:09Z:clawsweeper_needs_human",
@@ -31673,51 +31673,37 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:120056:5386753399:2026-08-23T15:20:28Z:re_review",
-      "comment_id": "5386753399",
-      "comment_version_key": "5386753399:2026-08-23T15:20:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120056#issuecomment-5386753399",
-      "comment_created_at": "2026-08-23T15:20:28Z",
-      "comment_updated_at": "2026-08-23T15:20:28Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125815:5328823403:2026-08-23T15:16:39Z:clawsweeper_needs_human",
+      "comment_id": "5328823403",
+      "comment_version_key": "5328823403:2026-08-23T15:16:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125815#issuecomment-5328823403",
+      "comment_created_at": "2026-08-18T13:25:46Z",
+      "comment_updated_at": "2026-08-23T15:16:39Z",
+      "comment_body_sha256": "f07e77a1a5209fa1270e9e4b12d33190bd748419f49353bddad8d5738422ee1c",
       "repo": "openclaw/openclaw",
-      "issue_number": 120056,
-      "author": "vincentkoc",
-      "author_id": 25068,
+      "issue_number": 125815,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
       "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; rebase and rerun its session and UI regressions on the resulting exact head. (sha=c4d0485a7d8b322a0425035430d309ba68229373)",
+      "expected_head_sha": "c4d0485a7d8b322a0425035430d309ba68229373",
       "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T15:21:12.830Z",
+      "status": "skipped",
+      "processed_at": "2026-08-23T15:19:38.484Z",
       "target": {
         "kind": "pull_request",
-        "branch": "fix/cron-silent-reply-clears-tool-error",
-        "head_sha": "3beafccff71605825974b0d9f0faf415f03fe396",
+        "branch": "fix/session-owner-lifecycle-cas",
+        "head_sha": "c4d0485a7d8b322a0425035430d309ba68229373",
         "cluster_id": null,
         "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
+      }
     }
   ]
 }
