@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T07:45:17.880Z",
+  "updated_at": "2026-08-23T07:45:37.281Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120550:5225566532:2026-08-20T03:42:27Z:autoclose",
-      "comment_id": "5225566532",
-      "comment_version_key": "5225566532:2026-08-20T03:42:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120550#issuecomment-5225566532",
-      "comment_created_at": "2026-08-08T09:44:21Z",
-      "comment_updated_at": "2026-08-20T03:42:27Z",
-      "comment_body_sha256": "2d7b59760037e2c6ff7bfab256a8d154ca004e4b26c7109a326d5a30856a0896",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120550,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required (sha=39af8be7f13b8b034602d18d44ab895db926274d)",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required (sha=39af8be7f13b8b034602d18d44ab895db926274d)",
-      "expected_head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T03:12:56.692Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-120536",
-        "head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
-        "cluster_id": "automerge-openclaw-openclaw-120550",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120550.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120794:5229034586:2026-08-23T03:10:24Z:clawsweeper_auto_repair",
       "comment_id": "5229034586",
@@ -31377,6 +31344,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T07:45:17.880Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-23T07:44:36Z:clawsweeper_needs_human",
+      "comment_id": "5376735204",
+      "comment_version_key": "5376735204:2026-08-23T07:44:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
+      "comment_created_at": "2026-08-22T00:21:26Z",
+      "comment_updated_at": "2026-08-23T07:44:36Z",
+      "comment_body_sha256": "88af68c37073d817c2ce95cf5b144b04ea9920082787f609d747c36610c85f68",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127700,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog action and runtime (P1)** - The workflow changes the action to v3.97.0 but leaves its with.version declaration at v3.95.9, while the focused guard still asserts the old action contract...; Review finding: [P1] Synchronize the TruffleHog action and runtime — .github/workflows/ci.yml:1158-1162 - [P2] Refresh the Android attestation assertion — .github/workflows/androi... (sha=9750d67685a784789cb4ba3bab6a43c9625fb0b5)",
+      "expected_head_sha": "9750d67685a784789cb4ba3bab6a43c9625fb0b5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T07:45:37.281Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-2b47f3b96e",
+        "head_sha": "9750d67685a784789cb4ba3bab6a43c9625fb0b5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
