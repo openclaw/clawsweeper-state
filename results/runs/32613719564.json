@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-45224",
+  "mode": "autonomous",
+  "run_id": "32613719564",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32613719564",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-45224.md",
+  "published_at": "2026-08-23T03:45:39.837Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_pr": null,
+  "summary": "#45224 remains a valid canonical Browser reliability bug: unpinned loopback CDP uses Playwright’s raw transport, and the owned transport only catches synchronous message-handler failures. No code or GitHub state was changed because this read-only worker cannot create the required branch/tests and the mandatory sibling ../codex source checkout is absent.",
+  "actions": [
+    {
+      "target": "#45224",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the worker’s read-only filesystem and missing required Codex sibling source, not by product or maintainer ambiguity."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-45224",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is the canonical path once an executable checkout with ../codex source is available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
