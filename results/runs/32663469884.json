@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121778",
+  "mode": "autonomous",
+  "run_id": "32663469884",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32663469884",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121778.md",
+  "published_at": "2026-08-23T20:17:42.740Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/121778",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/121778",
+  "canonical_pr": null,
+  "summary": "No repair PR is planned. Current main intentionally exposes portable `presentation`, not Discord-native `components`, on the generic message tool; accepting stringified raw components would establish a new public native escape hatch rather than repair a documented contract.",
+  "actions": [
+    {
+      "target": "#121778",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#121778",
+      "candidate_fix": null,
+      "reason": "A maintainer must decide whether generic message-tool callers may use Discord-native components. If yes, this is a public schema/product-contract change requiring a broader design and migration of the existing presentation policy; if no, #121778 should document or route callers to presentation rather than add coercion."
+    },
+    {
+      "target": "#121991",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#121778",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or replacement action is valid until the public-contract decision for #121778 is made."
+    },
+    {
+      "target": "#122943",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#121778",
+      "candidate_fix": null,
+      "reason": "Already closed; it cannot serve as an automated fix path."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Decide whether raw Discord-native `components` is a supported public generic message-tool contract. The current schema and Discord contract test say no; the supported existing route is `presentation`."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#121778",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
