@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T20:45:53.864Z",
+  "updated_at": "2026-08-23T20:46:19.023Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122425:5269756875:2026-08-12T16:48:32Z:re_review",
-      "comment_id": "5269756875",
-      "comment_version_key": "5269756875:2026-08-12T16:48:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5269756875",
-      "comment_created_at": "2026-08-12T16:48:32Z",
-      "comment_updated_at": "2026-08-12T16:48:32Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122425,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T15:12:23.730Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122425:5274685715:2026-08-13T01:07:35Z:re_review",
       "comment_id": "5274685715",
@@ -32279,6 +32252,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/goplaces:32:5388370625:2026-08-23T20:45:39Z:clawsweeper_needs_human",
+      "comment_id": "5388370625",
+      "comment_version_key": "5388370625:2026-08-23T20:45:39Z",
+      "comment_url": "https://github.com/openclaw/goplaces/pull/32#issuecomment-5388370625",
+      "comment_created_at": "2026-08-23T20:45:39Z",
+      "comment_updated_at": "2026-08-23T20:45:39Z",
+      "comment_body_sha256": "f3704fee8ac2202557a34252282a7a7e72abbcf4302eda6da9d863666a2b5c01",
+      "repo": "openclaw/goplaces",
+      "issue_number": 32,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This needs ordinary release-owner merge review, not an automated repair lane. (sha=53605fe0f192656d8d7c50f1f31d9a199c7875cc)",
+      "expected_head_sha": "53605fe0f192656d8d7c50f1f31d9a199c7875cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T20:46:19.023Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/prepare-v0.4.5",
+        "head_sha": "53605fe0f192656d8d7c50f1f31d9a199c7875cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
