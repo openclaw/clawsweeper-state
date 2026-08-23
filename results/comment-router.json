@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T12:13:44.919Z",
+  "updated_at": "2026-08-23T12:13:51.663Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128124:5384696909:2026-08-23T06:48:54Z:re_review",
-      "comment_id": "5384696909",
-      "comment_version_key": "5384696909:2026-08-23T06:48:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128124#issuecomment-5384696909",
-      "comment_created_at": "2026-08-23T06:48:54Z",
-      "comment_updated_at": "2026-08-23T06:48:54Z",
-      "comment_body_sha256": "1dda00359881805047905d229dc423acf10684a99584833caefbf215f12edc31",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128124,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T06:49:34.916Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "t3code/mantis-verdict-coherence",
-        "head_sha": "b513f50802ecd5be6f69239df7188aa1fc2ec325",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3504:5372359255:2026-08-23T06:45:26Z:clawsweeper_needs_human",
       "comment_id": "5372359255",
@@ -31461,6 +31414,39 @@
         "kind": "pull_request",
         "branch": "fix/github-http-timeout",
         "head_sha": "b767776d2127c50298504eac0e15ab5a4f3f92a5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119057:5173970388:2026-08-23T12:12:47Z:clawsweeper_needs_human",
+      "comment_id": "5173970388",
+      "comment_version_key": "5173970388:2026-08-23T12:12:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119057#issuecomment-5173970388",
+      "comment_created_at": "2026-08-04T02:38:32Z",
+      "comment_updated_at": "2026-08-23T12:12:47Z",
+      "comment_body_sha256": "141d2d0fada8b509e4bd8d97d909db3eccd3bf503093ddcd3db2e3e6be91c8c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119057,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: tests cover a fake adapter, but the PR supplies no after-fix production-path trace showing allowed delivery and...; Review finding: [low] Real adapter authority proof is missing — src/agents/current-turn-delivery.ts:164 (sha=cde34c7ac05fd38d4649483c228dab70466b3ac9)",
+      "expected_head_sha": "cde34c7ac05fd38d4649483c228dab70466b3ac9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T12:13:51.663Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-mode-semantic-observation-stack-20260804",
+        "head_sha": "cde34c7ac05fd38d4649483c228dab70466b3ac9",
         "cluster_id": null,
         "job_path": null
       }
