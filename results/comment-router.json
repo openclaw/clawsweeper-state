@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T05:11:31.494Z",
+  "updated_at": "2026-08-23T05:12:35.746Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113089:5080589138:2026-07-25T21:08:35Z:re_review",
-      "comment_id": "5080589138",
-      "comment_version_key": "5080589138:2026-07-25T21:08:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113089#issuecomment-5080589138",
-      "comment_created_at": "2026-07-25T21:08:35Z",
-      "comment_updated_at": "2026-07-25T21:08:35Z",
-      "comment_body_sha256": "c6ccf27a86ce4a8a09339396ad0a3790919db61b50d370607312f72d58b400e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113089,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T23:58:21.613Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113089:5093478679:2026-07-27T15:44:14Z:re_review",
       "comment_id": "5093478679",
@@ -31107,6 +31080,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127722:5376893105:2026-08-23T05:11:45Z:clawsweeper_needs_human",
+      "comment_id": "5376893105",
+      "comment_version_key": "5376893105:2026-08-23T05:11:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127722#issuecomment-5376893105",
+      "comment_created_at": "2026-08-22T00:53:26Z",
+      "comment_updated_at": "2026-08-23T05:11:45Z",
+      "comment_body_sha256": "518dc1b5c07ee8fe151bfa36e55c9f20937033bd30c8209eba1bc48dd4246225",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127722,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the checked-in receipt fixture is not observed after-fix final-effect evidence, and direct Codex 0.149...; Review finding: [medium] Verify the migrated approval policy against Codex 0.149 — extensions/codex/doctor-contract-api.ts:124 (sha=ee5ead24b1b46a3560f28f8d57e0afcd911acacb)",
+      "expected_head_sha": "ee5ead24b1b46a3560f28f8d57e0afcd911acacb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T05:12:35.746Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/beta3-candidate-final-20260821",
+        "head_sha": "ee5ead24b1b46a3560f28f8d57e0afcd911acacb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
