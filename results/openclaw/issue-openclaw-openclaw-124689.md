@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32614093045"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32614093045"
+run_id: "32616645204"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32616645204"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T03:08:49.948Z"
+published_at: "2026-08-23T04:07:51.656Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32614093045](https://github.com/openclaw/clawsweeper/actions/runs/32614093045)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32616645204](https://github.com/openclaw/clawsweeper/actions/runs/32616645204)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Current main reproduces the generic probe-selection defect, but this read-only worker cannot apply or validate the repair: `../codex` is absent despite the repository’s mandatory direct-source gate, and Corepack cannot create its cache. A narrow new-PR artifact is prepared.
+Current main selects the first requested-provider catalog row for non-Anthropic probes even when it is marked deprecated, so the reported misleading credential guidance remains reproducible by source. A narrow generic fix is planned, but this read-only worker cannot create the required ../codex checkout or install/run dependencies.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Current main reproduces the generic probe-selection defect, but this read-only w
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #124689 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,9 @@ Current main reproduces the generic probe-selection defect, but this read-only w
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | keep_canonical | blocked | canonical | Canonical issue remains a real, narrow bug; implementation is blocked only by execution-environment gates. |
-| #120752 | keep_related | planned | related | Distinct root cause; keep its existing repair path open. |
-| cluster:issue-openclaw-openclaw-124689 | fix_needed | blocked | canonical | Use a writable executor with the required Codex sibling source, then apply the prepared narrow fix. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | The fix is ready to implement but cannot be applied or validated locally. |
+| #120752 | keep_related | planned | related | Adjacent session-state report; not a duplicate of the provider auth-probe defect. |
+| #124689 | fix_needed | blocked | canonical | Implementation is blocked only by this worker environment. The deterministic executor should apply the narrow artifact in a writable checkout with the required Codex sibling source and dependencies. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-124689 after rerunning the regression against pre-fix main. |
 
 ## Needs Human
 
