@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T15:20:01.282Z",
+  "updated_at": "2026-08-23T15:20:43.807Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1212:5385665575:2026-08-23T11:04:51Z:re_review",
-      "comment_id": "5385665575",
-      "comment_version_key": "5385665575:2026-08-23T11:04:51Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1212#issuecomment-5385665575",
-      "comment_created_at": "2026-08-23T11:04:51Z",
-      "comment_updated_at": "2026-08-23T11:04:51Z",
-      "comment_body_sha256": "9e0f658e47b4a04e857b47f0261d6530382637e88893e7a608cd0e189ce8b30a",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1212,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T11:05:35.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-134-closeout-provenance-r2",
-        "head_sha": "81e2845481b900830c33559f9bb4a9dcfa301d85",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128192:5385669862:2026-08-23T11:05:56Z:re_review",
       "comment_id": "5385669862",
@@ -31707,6 +31660,39 @@
         "kind": "pull_request",
         "branch": "feat/process-lifecycle-hooks",
         "head_sha": "08a86019e73ea140f5eb3e2eebfbc061344eb13e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-23T15:14:50Z:clawsweeper_needs_human",
+      "comment_id": "5290613923",
+      "comment_version_key": "5290613923:2026-08-23T15:14:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5290613923",
+      "comment_created_at": "2026-08-14T07:15:12Z",
+      "comment_updated_at": "2026-08-23T15:14:50Z",
+      "comment_body_sha256": "9a44b41484b1eac7bef62d96e6749c8e36aa5f1577ab285ee1b473a1212f8837",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123535,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The stacked branch must be rebased or manually integrated with current main: its touched live-state test file now overlaps current main’s host-local comparison coverage, so an incorre... (sha=ea294c0a92cec3a7b9d2d17f1038feaf39676214)",
+      "expected_head_sha": "ea294c0a92cec3a7b9d2d17f1038feaf39676214",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T15:20:43.807Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-performance",
+        "head_sha": "ea294c0a92cec3a7b9d2d17f1038feaf39676214",
         "cluster_id": null,
         "job_path": null
       }
