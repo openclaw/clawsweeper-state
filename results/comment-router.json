@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T15:25:31.791Z",
+  "updated_at": "2026-08-23T15:26:53.190Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125100:5312564394:2026-08-23T11:08:21Z:clawsweeper_needs_human",
-      "comment_id": "5312564394",
-      "comment_version_key": "5312564394:2026-08-23T11:08:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125100#issuecomment-5312564394",
-      "comment_created_at": "2026-08-17T06:21:13Z",
-      "comment_updated_at": "2026-08-23T11:08:21Z",
-      "comment_body_sha256": "53f9e2b454a5d0b5ad00fbe57505eee45d36792b18758de83b01190bee1859de",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125100,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Compose the original authority guard with startup ownership (P1)** - prepareCommitGuard originally includes authority.commitGuard, but this assignment replaces it with a session-operation check. A delegated runt...; Review finding: [P1] Compose the original authority guard with startup ownership — src/gateway/server-methods/sessions-create.ts:701 - [P2] Rollback a worktree when cancellation w... (sha=ac2b0044fcbb8768114b30d1cfb70b320c302917)",
-      "expected_head_sha": "ac2b0044fcbb8768114b30d1cfb70b320c302917",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T11:10:42.849Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/124966-optimistic-worktree-sessions",
-        "head_sha": "ac2b0044fcbb8768114b30d1cfb70b320c302917",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3107:5355192750:2026-08-23T11:10:09Z:clawsweeper_auto_repair",
       "comment_id": "5355192750",
@@ -31724,6 +31691,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1481:5386779039:2026-08-23T15:26:17Z:re_review",
+      "comment_id": "5386779039",
+      "comment_version_key": "5386779039:2026-08-23T15:26:17Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1481#issuecomment-5386779039",
+      "comment_created_at": "2026-08-23T15:26:17Z",
+      "comment_updated_at": "2026-08-23T15:26:17Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1481,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T15:26:51.645Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/wsl2-stdin-staging",
+        "head_sha": "a999560aea5b38d1ab1103dfc6f894d74c8ce6fd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
