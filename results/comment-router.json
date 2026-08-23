@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T17:00:40.126Z",
+  "updated_at": "2026-08-23T17:02:05.660Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128209:5386036351:2026-08-23T12:38:01Z:re_review",
-      "comment_id": "5386036351",
-      "comment_version_key": "5386036351:2026-08-23T12:38:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128209#issuecomment-5386036351",
-      "comment_created_at": "2026-08-23T12:38:01Z",
-      "comment_updated_at": "2026-08-23T12:38:01Z",
-      "comment_body_sha256": "5878e622b0e7366c4d6895853996ec5a8523faede597983cb8ee4d4a00812460",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128209,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T12:53:28.680Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-memory-skipped-probe",
-        "head_sha": "cebac379013108ebbe709f09848f0c215d5be060",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/Peekaboo:607:5386098326:2026-08-23T12:53:36Z:re_review",
       "comment_id": "5386098326",
@@ -32346,6 +32299,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127031:5365660668:2026-08-23T17:00:47Z:clawsweeper_needs_human",
+      "comment_id": "5365660668",
+      "comment_version_key": "5365660668:2026-08-23T17:00:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127031#issuecomment-5365660668",
+      "comment_created_at": "2026-08-21T05:40:22Z",
+      "comment_updated_at": "2026-08-23T17:00:47Z",
+      "comment_body_sha256": "c80a8f71fcead044df5a57eae8067a7ee94dfb324b37a3a0b9ff18434991b9af",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127031,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally adds a warning for every memory flush whose final policy removes write, including node-provider runs; rebase and exact-head checks should confirm the deliberate dia... (sha=1964388374c0c05ee7a60cdae9cb57278be028cf)",
+      "expected_head_sha": "1964388374c0c05ee7a60cdae9cb57278be028cf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T17:02:05.660Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-flush-missing-write-tool",
+        "head_sha": "1964388374c0c05ee7a60cdae9cb57278be028cf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
