@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T18:43:46.226Z",
+  "updated_at": "2026-08-23T18:44:36.872Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1449:5365714094:2026-08-23T14:02:54Z:clawsweeper_needs_human",
-      "comment_id": "5365714094",
-      "comment_version_key": "5365714094:2026-08-23T14:02:54Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1449#issuecomment-5365714094",
-      "comment_created_at": "2026-08-21T05:47:23Z",
-      "comment_updated_at": "2026-08-23T14:02:54Z",
-      "comment_body_sha256": "bf675b0d6e31de5891cb90d6693ec07c86f4053e894bff553cd7c410a7382d4a",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1449,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Redact AuthSecret usernames before returning SSH stderr (P1)** - This appends raw SSH stderr after only generic structural redaction. For AuthSecret targets the SSH username is a token, and OpenSSH failures can...; Review finding: [P1] Redact AuthSecret usernames before returning SSH stderr — internal/cli/workspace_owner.go:79-81 - [high] AuthSecret username can reach returned error text — i... (sha=8d2b01c3ed13579186f2a0981b8bdaa829440fcc)",
-      "expected_head_sha": "8d2b01c3ed13579186f2a0981b8bdaa829440fcc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T14:03:44.855Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workspace-owner-ssh-stderr",
-        "head_sha": "8d2b01c3ed13579186f2a0981b8bdaa829440fcc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125271:5316438487:2026-08-23T13:52:44Z:clawsweeper_needs_human",
       "comment_id": "5316438487",
@@ -32666,6 +32633,53 @@
       "status": "skipped",
       "processed_at": "2026-08-23T18:43:46.226Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126986:5387804913:2026-08-23T18:43:47Z:re_review",
+      "comment_id": "5387804913",
+      "comment_version_key": "5387804913:2026-08-23T18:43:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126986#issuecomment-5387804913",
+      "comment_created_at": "2026-08-23T18:43:47Z",
+      "comment_updated_at": "2026-08-23T18:43:47Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126986,
+      "author": "jason-allen-oneal",
+      "author_id": 8335428,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T18:44:34.726Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-codex-bootstrap-context",
+        "head_sha": "9b52119bb6a0a110cb7d32804ab6e9b1c72c7135",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
