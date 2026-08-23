@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T13:36:46.768Z",
+  "updated_at": "2026-08-23T13:39:10.771Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121894:5385090351:2026-08-23T08:35:40Z:re_review",
-      "comment_id": "5385090351",
-      "comment_version_key": "5385090351:2026-08-23T08:35:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121894#issuecomment-5385090351",
-      "comment_created_at": "2026-08-23T08:35:40Z",
-      "comment_updated_at": "2026-08-23T08:35:40Z",
-      "comment_body_sha256": "2f4438b95969dd76181be511cbe80aeb16e99e98fa47d6903943c494f0182f6d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121894,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T08:36:31.362Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/realtime-relay-lifecycle-l5",
-        "head_sha": "5dcf61039c23072f9e3a2924e295562bc75e8573",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128101:5384129117:2026-08-23T08:35:59Z:clawsweeper_needs_human",
       "comment_id": "5384129117",
@@ -31366,6 +31319,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128146:5384992725:2026-08-23T13:36:42Z:clawsweeper_needs_human",
+      "comment_id": "5384992725",
+      "comment_version_key": "5384992725:2026-08-23T13:36:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128146#issuecomment-5384992725",
+      "comment_created_at": "2026-08-23T08:10:36Z",
+      "comment_updated_at": "2026-08-23T13:36:42Z",
+      "comment_body_sha256": "5fa0235287bc7ac432ccc68209926d824f565165b6a89c7cc113c56ae31b10c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128146,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repair adds net production code (+18); no clear net-neutral absorption is evident because lifecycle code must explicitly construct the stored scope, merge it, and recache retained... (sha=4e47034f0c9498b54d8cfe7b82c2b814bb72055f)",
+      "expected_head_sha": "4e47034f0c9498b54d8cfe7b82c2b814bb72055f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T13:39:10.771Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-recovery-fences",
+        "head_sha": "4e47034f0c9498b54d8cfe7b82c2b814bb72055f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
