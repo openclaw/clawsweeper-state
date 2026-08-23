@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124689",
+  "mode": "autonomous",
+  "run_id": "32617674651",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32617674651",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124689.md",
+  "published_at": "2026-08-23T04:30:47.028Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_pr": null,
+  "summary": "#124689 remains the canonical open bug. Current main selects the first provider catalog row without excluding deprecated or disabled rows; Ollama Cloud’s first manifest row is deprecated. A narrow generic fallback fix and regression are planned, but this read-only checkout cannot create the required branch/files, lacks dependencies for validation, and does not contain the mandatory sibling ../codex source checkout for the Codex hard gate.",
+  "actions": [
+    {
+      "target": "#124689",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Implement the status-aware generic fallback while retaining the existing explicit-candidate early return; do not alter the active-session model patch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124689",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for the deterministic executor; local implementation and validation are blocked only by the supplied environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
