@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T22:33:34.930Z",
+  "updated_at": "2026-08-23T22:33:38.174Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119447:5387025400:2026-08-23T16:20:39Z:re_review",
-      "comment_id": "5387025400",
-      "comment_version_key": "5387025400:2026-08-23T16:20:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119447#issuecomment-5387025400",
-      "comment_created_at": "2026-08-23T16:20:39Z",
-      "comment_updated_at": "2026-08-23T16:20:39Z",
-      "comment_body_sha256": "c7d2363c8e68baee7c19e8165c44f49c43ddf22eb405f2a31ce9fc2ee0948ef8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119447,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T16:27:41.112Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/compaction-summary-output-budget",
-        "head_sha": "1189958124784a1c81035a4cbd35f92f9963ab26",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119447:5248828693:2026-08-11T04:00:13Z:re_review",
       "comment_id": "5248828693",
@@ -32504,6 +32457,39 @@
         "kind": "pull_request",
         "branch": "codex/target-identity",
         "head_sha": "b909e045cac8e7276fd32aee680366efb8ce3079",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120189:5215948116:2026-08-23T22:24:44Z:clawsweeper_needs_human",
+      "comment_id": "5215948116",
+      "comment_version_key": "5215948116:2026-08-23T22:24:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120189#issuecomment-5215948116",
+      "comment_created_at": "2026-08-07T10:36:10Z",
+      "comment_updated_at": "2026-08-23T22:24:44Z",
+      "comment_body_sha256": "560a176bb6eece96bd8aafb7749809b0644405b1dd83100e41936244ec68bd16",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120189,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The submitted artifact-only acceptance evidence names a harness SHA different from the PR head, so it does not yet prove the exact branch after a rebase. (sha=8fa1ea537344b43dc96e781d2e390fce21604523)",
+      "expected_head_sha": "8fa1ea537344b43dc96e781d2e390fce21604523",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T22:33:38.174Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/prerelease-registry-dist-tags",
+        "head_sha": "8fa1ea537344b43dc96e781d2e390fce21604523",
         "cluster_id": null,
         "job_path": null
       }
