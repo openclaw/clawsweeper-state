@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T06:37:54.331Z",
+  "updated_at": "2026-08-23T06:41:35.790Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128071:5383649577:2026-08-23T01:47:28Z:clawsweeper_needs_human",
-      "comment_id": "5383649577",
-      "comment_version_key": "5383649577:2026-08-23T01:47:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128071#issuecomment-5383649577",
-      "comment_created_at": "2026-08-23T01:47:28Z",
-      "comment_updated_at": "2026-08-23T01:47:28Z",
-      "comment_body_sha256": "4899676fdc56fb57b70b713fd53eb0babd09cb436ce0f8fd2e3b158b80f44fa2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128071,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve the original tool allowlist during reconciliation (P1)** - This replaces attempt.toolsAllow with [\"read\"], even though that value is the caller's explicit model-tool boundary. A run that intentionally e...; Review finding: [P1] Preserve the original tool allowlist during reconciliation — src/agents/embedded-agent-runner/run/attempt-tool-prepare.ts:82-84 - [high] Recovery bypasses cal... (sha=aa5cf25ba9923aaeadd6a2f8c2ffdfb87fc65803)",
-      "expected_head_sha": "aa5cf25ba9923aaeadd6a2f8c2ffdfb87fc65803",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T01:48:27.593Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-read-only-recovery",
-        "head_sha": "aa5cf25ba9923aaeadd6a2f8c2ffdfb87fc65803",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125670:5324651464:2026-08-23T01:41:19Z:clawsweeper_auto_repair",
       "comment_id": "5324651464",
@@ -31402,6 +31369,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1456:5370230387:2026-08-23T06:40:48Z:clawsweeper_needs_human",
+      "comment_id": "5370230387",
+      "comment_version_key": "5370230387:2026-08-23T06:40:48Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1456#issuecomment-5370230387",
+      "comment_created_at": "2026-08-21T13:13:12Z",
+      "comment_updated_at": "2026-08-23T06:40:48Z",
+      "comment_body_sha256": "34902a1fc3ef34ef8ae2879182585ad310d3d6660c05e819e97f7b8c1cfa5f1e",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1456,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR supplies no real AWS run showing that allowed qualification succeeds, an unrelated principal is rejected...; Review finding: [P1] Replace fleet-wide admin authority before qualification — .github/workflows/devtools-image-qualify.yml:220-221 - [high] Fleet-wide coordinator admin token rea... (sha=106c10904021b889b1ecacf201c8765801e6ce3a)",
+      "expected_head_sha": "106c10904021b889b1ecacf201c8765801e6ce3a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T06:41:35.790Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/aws-builder-qualification-canary",
+        "head_sha": "106c10904021b889b1ecacf201c8765801e6ce3a",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
