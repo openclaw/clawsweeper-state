@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125873",
+  "mode": "autonomous",
+  "run_id": "32655517083",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32655517083",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125873.md",
+  "published_at": "2026-08-23T17:53:15.052Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125873",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125873",
+  "canonical_pr": null,
+  "summary": "#125873 remains the open canonical report. Current main forwards persisted Bedrock tool-call arguments through an unchecked cast at the replay boundary; the planned repair is a two-file, owner-boundary fix using the existing transport coercion helper. Implementation and validation are blocked in this worker because the checkout is read-only, dependencies cannot be installed, and the mandatory sibling ../codex source checkout is absent.",
+  "actions": [
+    {
+      "target": "#125873",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "The source-level fix shape is narrow and the issue is still live, but this worker cannot make or validate code changes under the mandatory Codex and writable/dependency gates."
+    },
+    {
+      "target": "#21873",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Historical context only; it is already closed and must not receive a closure action."
+    },
+    {
+      "target": "#126391",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Historical partial-overlap context only; it is already merged and does not fix this replay boundary."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125873",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "A narrow credited fix PR remains the canonical path once a writable executor can inspect ../codex, install dependencies, reproduce the failing regression, and validate the branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
