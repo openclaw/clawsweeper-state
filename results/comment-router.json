@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T19:13:30.051Z",
+  "updated_at": "2026-08-23T19:13:33.629Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127837:5386406735:2026-08-23T14:04:20Z:re_review",
-      "comment_id": "5386406735",
-      "comment_version_key": "5386406735:2026-08-23T14:04:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127837#issuecomment-5386406735",
-      "comment_created_at": "2026-08-23T14:04:20Z",
-      "comment_updated_at": "2026-08-23T14:04:20Z",
-      "comment_body_sha256": "0d29889abc1ef3d276ff75be9bcebbd37f016f73b912c2c000cc584999a0d66d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127837,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T14:15:26.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/bug-05-workspace",
-        "head_sha": "561f1dbafb094e2b4e9f2a6980ded1228a3a3726",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128235:5386427432:2026-08-23T14:08:37Z:re_review",
       "comment_id": "5386427432",
@@ -32683,6 +32636,39 @@
         "kind": "pull_request",
         "branch": "fix/http-client-timeout",
         "head_sha": "606deed8c1e616b3a35c46f51e59eb94e77ddc5f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ffmpeg-wasm:6:5366886700:2026-08-23T19:09:59Z:clawsweeper_auto_repair",
+      "comment_id": "5366886700",
+      "comment_version_key": "5366886700:2026-08-23T19:09:59Z",
+      "comment_url": "https://github.com/openclaw/ffmpeg-wasm/pull/6#issuecomment-5366886700",
+      "comment_created_at": "2026-08-21T07:48:29Z",
+      "comment_updated_at": "2026-08-23T19:09:59Z",
+      "comment_body_sha256": "c67e07b98d3a23976aeaf62dfb9d083c5ccc7c3346c527e68a77dc5e3c236cec",
+      "repo": "openclaw/ffmpeg-wasm",
+      "issue_number": 6,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ed9f500e0613f3f3e10a3b3b61d7efc0c05c32f3)",
+      "expected_head_sha": "ed9f500e0613f3f3e10a3b3b61d7efc0c05c32f3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T19:13:33.629Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-repo-ffmpeg-wasm-pnpm-minimum-release-age",
+        "head_sha": "ed9f500e0613f3f3e10a3b3b61d7efc0c05c32f3",
         "cluster_id": null,
         "job_path": null
       }
