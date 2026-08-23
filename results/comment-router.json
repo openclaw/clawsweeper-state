@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T13:49:49.188Z",
+  "updated_at": "2026-08-23T13:49:59.136Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3505:5372360195:2026-08-23T08:41:43Z:clawsweeper_needs_human",
-      "comment_id": "5372360195",
-      "comment_version_key": "5372360195:2026-08-23T08:41:43Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3505#issuecomment-5372360195",
-      "comment_created_at": "2026-08-21T16:12:00Z",
-      "comment_updated_at": "2026-08-23T08:41:43Z",
-      "comment_body_sha256": "fcfef3ffe5391afd5ac209a3cce27f607ab6658c5bb003b46740b9472541ab50",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3505,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The formatter, linter, and test-runner resolutions are used by CI, while a local-auth Chromium scenario is reported failing on this head; the available evidence does not distinguish a... (sha=fde2bd707df4ca56b67f4fb4ea576d2f05618c43)",
-      "expected_head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T08:42:39.167Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/development-minor-and-patch-3b24459cdd",
-        "head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128144:5384950516:2026-08-23T08:44:16Z:clawsweeper_needs_human",
       "comment_id": "5384950516",
@@ -31400,6 +31367,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128231:5386342910:2026-08-23T13:49:15Z:re_review",
+      "comment_id": "5386342910",
+      "comment_version_key": "5386342910:2026-08-23T13:49:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128231#issuecomment-5386342910",
+      "comment_created_at": "2026-08-23T13:49:15Z",
+      "comment_updated_at": "2026-08-23T13:49:15Z",
+      "comment_body_sha256": "f6afba5217cb8915afeedeeb896ada88dc174a1055c552c65780de7ca801e268",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128231,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T13:49:56.909Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/beta3-qa-statusless-3203",
+        "head_sha": "54b1b1d92cbd526376a189315de9b093d016f75f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
