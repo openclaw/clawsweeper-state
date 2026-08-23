@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T06:16:53.429Z",
+  "updated_at": "2026-08-23T06:18:13.226Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5150973734:2026-08-01T10:12:10Z:re_review",
-      "comment_id": "5150973734",
-      "comment_version_key": "5150973734:2026-08-01T10:12:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5150973734",
-      "comment_created_at": "2026-08-01T10:12:10Z",
-      "comment_updated_at": "2026-08-01T10:12:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T01:34:07.680Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5152286750:2026-08-01T16:19:49Z:re_review",
       "comment_id": "5152286750",
@@ -31193,6 +31166,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T06:16:53.429Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124540:5307282123:2026-08-23T06:10:02Z:clawsweeper_needs_human",
+      "comment_id": "5307282123",
+      "comment_version_key": "5307282123:2026-08-23T06:10:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124540#issuecomment-5307282123",
+      "comment_created_at": "2026-08-16T11:49:01Z",
+      "comment_updated_at": "2026-08-23T06:10:02Z",
+      "comment_body_sha256": "6f6be36c5c0e8ae942c21c548d87deec1150215a5982502e703296448e3b4230",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124540,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current closing directive would close https://github.com/openclaw/openclaw/issues/124524 even though its effective-runtime semantics remain unresolved. (sha=25e109c3f5ba30aba971efd1a5d7aa62bf784c53)",
+      "expected_head_sha": "25e109c3f5ba30aba971efd1a5d7aa62bf784c53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T06:18:13.226Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-list-archive-runtime-124524",
+        "head_sha": "25e109c3f5ba30aba971efd1a5d7aa62bf784c53",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
