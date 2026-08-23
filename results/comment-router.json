@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T21:04:03.478Z",
+  "updated_at": "2026-08-23T21:04:15.981Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126924:5364133840:2026-08-23T15:15:10Z:clawsweeper_needs_human",
-      "comment_id": "5364133840",
-      "comment_version_key": "5364133840:2026-08-23T15:15:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126924#issuecomment-5364133840",
-      "comment_created_at": "2026-08-21T01:37:12Z",
-      "comment_updated_at": "2026-08-23T15:15:10Z",
-      "comment_body_sha256": "2e7fa8b43b55d4e05b18aff54cd332862c2ec926e424efb2545c0a393020ca66",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126924,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied script exercises real registry and store code but stubs the Gateway wait and has no live child process; add redacted isolated-Gate... (sha=1bef7c3b113cd33f3feabad9aaf83d335b584b44)",
-      "expected_head_sha": "1bef7c3b113cd33f3feabad9aaf83d335b584b44",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T15:23:47.078Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-wait-expiry-not-death",
-        "head_sha": "1bef7c3b113cd33f3feabad9aaf83d335b584b44",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127224:5372040610:2026-08-23T15:19:43Z:clawsweeper_auto_repair",
       "comment_id": "5372040610",
@@ -32351,6 +32318,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1442:5388448504:2026-08-23T21:03:29Z:re_review",
+      "comment_id": "5388448504",
+      "comment_version_key": "5388448504:2026-08-23T21:03:29Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1442#issuecomment-5388448504",
+      "comment_created_at": "2026-08-23T21:03:29Z",
+      "comment_updated_at": "2026-08-23T21:03:29Z",
+      "comment_body_sha256": "2a13452f16822e1eee1daa5afaf965a49889e6cf52662b727d7e530b709c49cd",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1442,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T21:04:13.955Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workspace-supervise-remote-children",
+        "head_sha": "791aaa7c65baa1d917f079fbb50440af1fe603ce",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
