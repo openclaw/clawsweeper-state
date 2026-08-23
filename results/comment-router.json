@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T05:00:26.335Z",
+  "updated_at": "2026-08-23T05:01:11.166Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112623:5094504138:2026-07-27T17:21:09Z:re_review",
-      "comment_id": "5094504138",
-      "comment_version_key": "5094504138:2026-07-27T17:21:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112623#issuecomment-5094504138",
-      "comment_created_at": "2026-07-27T17:21:09Z",
-      "comment_updated_at": "2026-07-27T17:21:09Z",
-      "comment_body_sha256": "a33519167a96c6c81614d553378d98ecfe3a8ac783cd4c4eb655b83c00fcc2d8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112623,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T23:45:21.406Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112623:5150561797:2026-08-01T08:11:06Z:re_review",
       "comment_id": "5150561797",
@@ -31089,6 +31062,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T05:00:26.335Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127752:5377255904:2026-08-23T05:00:22Z:clawsweeper_needs_human",
+      "comment_id": "5377255904",
+      "comment_version_key": "5377255904:2026-08-23T05:00:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127752#issuecomment-5377255904",
+      "comment_created_at": "2026-08-22T02:02:44Z",
+      "comment_updated_at": "2026-08-23T05:00:22Z",
+      "comment_body_sha256": "9ec0c3dd148d4501a2f1d09f8820e789e22c20533c03a69f99dd0f7d4d872dc3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127752,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: paired-node and UI evidence are useful, but the direct AWS broker never produced an enrolled node, lea...; Review finding: [P1] Recheck command authorization after pairing resolution — extensions/crabbox/src/crabbox-worker-provider.ts:479 - [high] Command revocation can race final node... (sha=d74ebfc0b04f078115190304b610faa82211d7d0)",
+      "expected_head_sha": "d74ebfc0b04f078115190304b610faa82211d7d0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T05:01:11.166Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cloud-node-multimode-harnesses",
+        "head_sha": "d74ebfc0b04f078115190304b610faa82211d7d0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
