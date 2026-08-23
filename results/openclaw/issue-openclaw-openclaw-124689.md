@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32618670701"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32618670701"
+run_id: "32618877358"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32618877358"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T04:53:42.112Z"
+published_at: "2026-08-23T05:00:23.274Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32618670701](https://github.com/openclaw/clawsweeper/actions/runs/32618670701)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32618877358](https://github.com/openclaw/clawsweeper/actions/runs/32618877358)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Implementation is blocked by the read-only checkout: no branch, dependency cache, or sibling ../codex checkout can be created. Current main is 663f4e796d300587111ed6ccc64daa9b65ab995e; the requested focused test cannot start because Corepack cannot create its cache directory. A narrow executor-ready fix plan is included.
+Current main contains the reported generic fallback defect, but this checkout is read-only and has no dependencies: implementation and validation cannot run here. A narrow fix artifact is ready for a writable executor.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Implementation is blocked by the read-only checkout: no branch, dependency cache
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #124689 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,8 @@ Implementation is blocked by the read-only checkout: no branch, dependency cache
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | A writable executor with dependencies and the mandatory sibling Codex checkout is required before code changes, regression proof, or PR creation. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | The repair is narrow, but the worker cannot edit or validate in this read-only sandbox. |
+| #124689 | fix_needed | blocked | canonical | A writable checkout with dependencies is required to add the pre-fix-failing regression, apply the generic status filter, run focused tests and pnpm check:changed, then open/update the authorized branch. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Create the narrow credited fix on clawsweeper/issue-openclaw-openclaw-124689 from current main. |
 
 ## Needs Human
 
