@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125873"
 mode: "autonomous"
-run_id: "32657907711"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32657907711"
+run_id: "32658257878"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32658257878"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T18:34:31.650Z"
+published_at: "2026-08-23T18:40:13.009Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125873"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125873"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32657907711](https://github.com/openclaw/clawsweeper/actions/runs/32657907711)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32658257878](https://github.com/openclaw/clawsweeper/actions/runs/32658257878)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125873
 
 ## Summary
 
-#125873 has a narrow replay-boundary fix: Bedrock forwards persisted tool-call arguments unchanged. Implementation and executable validation are blocked because this read-only checkout has no dependencies and the required ../codex inspection checkout is absent.
+Confirmed current-main replay defect: Bedrock forwards persisted toolCall.arguments unchanged at extensions/amazon-bedrock/stream.runtime.ts:1011, despite the exported canonical coercion helper. A narrow two-file fix is planned, but this worker cannot write or validate it: the sandbox is read-only, dependencies are absent, and required sibling ../codex source is unavailable.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/125873
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125873 | fix_needed | planned | canonical | No viable open PR exists; the canonical issue needs a new narrow fix PR. |
-| #21873 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| #126391 | keep_closed | skipped | related | Already merged; preserve its validation unchanged. |
-| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | blocked |  | The repair plan is deterministic, but this worker cannot produce or validate a branch delta in the supplied environment. |
+| #125873 | fix_needed | blocked | canonical | Implementation is warranted and narrow, but this read-only worker cannot modify the target branch or install the pinned package manager/dependencies. |
+| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | planned | canonical | Executor can create one narrow fix PR once a writable checkout with dependencies and required Codex source inspection is available. |
+| #21873 | keep_closed | skipped | related | Already closed; historical sibling only. |
+| #126391 | keep_closed | skipped | related | Already merged historical context; preserve its producer-side validation. |
 
 ## Needs Human
 
