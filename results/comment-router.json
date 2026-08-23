@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T12:01:36.674Z",
+  "updated_at": "2026-08-23T12:04:00.931Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123975:5300351139:2026-08-15T03:38:45Z:re_review",
-      "comment_id": "5300351139",
-      "comment_version_key": "5300351139:2026-08-15T03:38:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123975#issuecomment-5300351139",
-      "comment_created_at": "2026-08-15T03:38:45Z",
-      "comment_updated_at": "2026-08-15T03:38:45Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123975,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T05:49:03.104Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123975:5300430615:2026-08-15T04:01:25Z:re_review",
       "comment_id": "5300430615",
@@ -31962,6 +31935,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T12:01:36.674Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127842:5379714309:2026-08-23T12:00:30Z:clawsweeper_needs_human",
+      "comment_id": "5379714309",
+      "comment_version_key": "5379714309:2026-08-23T12:00:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127842#issuecomment-5379714309",
+      "comment_created_at": "2026-08-22T10:13:41Z",
+      "comment_updated_at": "2026-08-23T12:00:30Z",
+      "comment_body_sha256": "c221ea4eecafac86544a9b8f21ce5d209b6875e38345a88cee9bfb9c9eb35f3b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127842,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the persisted active transcript path; the added regression models the interleaving at the production transaction boundary, but a final two-process writer trace would prov... (sha=d7ee8c2844534262524de8c5583b1930c7e02614)",
+      "expected_head_sha": "d7ee8c2844534262524de8c5583b1930c7e02614",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T12:04:00.931Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/bug-02",
+        "head_sha": "d7ee8c2844534262524de8c5583b1930c7e02614",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
