@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T07:16:49.778Z",
+  "updated_at": "2026-08-23T07:18:06.798Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126986:5383809130:2026-08-23T02:31:01Z:re_review",
-      "comment_id": "5383809130",
-      "comment_version_key": "5383809130:2026-08-23T02:31:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126986#issuecomment-5383809130",
-      "comment_created_at": "2026-08-23T02:31:01Z",
-      "comment_updated_at": "2026-08-23T02:31:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126986,
-      "author": "jason-allen-oneal",
-      "author_id": 8335428,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T02:31:44.060Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-codex-bootstrap-context",
-        "head_sha": "37df57eba189187f86d73af436a20de928ed1f75",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2457:5081410241:2026-08-23T02:30:45Z:clawsweeper_auto_repair",
       "comment_id": "5081410241",
@@ -31447,6 +31400,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:47:5305413167:2026-08-23T07:12:40Z:clawsweeper_needs_human",
+      "comment_id": "5305413167",
+      "comment_version_key": "5305413167:2026-08-23T07:12:40Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/47#issuecomment-5305413167",
+      "comment_created_at": "2026-08-16T02:53:29Z",
+      "comment_updated_at": "2026-08-23T07:12:40Z",
+      "comment_body_sha256": "f4aa3bc92d69dbd64f72024ab6e6f6f1fad8eb7de5c569975e820c563cf7b9f3",
+      "repo": "openclaw/clawscan",
+      "issue_number": 47,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The fixed 5,520-ID ceiling is correct for the pinned SkillTrustBench revision, but a future dataset expansion must update the revision, ceiling, and documentation together. (sha=6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a)",
+      "expected_head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T07:18:06.798Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ids-stream-semantic-bound",
+        "head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
