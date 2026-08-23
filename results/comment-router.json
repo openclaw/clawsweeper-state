@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-08-23T18:09:55.113Z",
+  "updated_at": "2026-08-23T18:11:23.040Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:124014",
-      "comment_id": "repair-loop-label-sweep:automerge:124014",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124014",
-      "comment_created_at": "2026-08-23T13:49:03.132Z",
-      "comment_updated_at": "2026-08-23T13:49:03.132Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124014,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T13:50:40.410Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auth-reauth-state-reset",
-        "head_sha": "a88a739e217ab2f16a9ff84315473190fa4c15cf",
-        "cluster_id": "automerge-openclaw-openclaw-124014",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:84848:4505342358:2026-08-23T13:37:07Z:clawsweeper_auto_repair",
       "comment_id": "4505342358",
@@ -32497,6 +32445,39 @@
         "kind": "pull_request",
         "branch": "jesse/stage-signal-indexes",
         "head_sha": "b0cdd14de2e7fc882a9479f5172251e94475e4b8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126986:5365198371:2026-08-23T18:10:24Z:clawsweeper_needs_human",
+      "comment_id": "5365198371",
+      "comment_version_key": "5365198371:2026-08-23T18:10:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126986#issuecomment-5365198371",
+      "comment_created_at": "2026-08-21T04:27:59Z",
+      "comment_updated_at": "2026-08-23T18:10:24Z",
+      "comment_body_sha256": "6400bb5e76cc512179dfa5f73ae0a8b5c403d79bdbbc4b9df09e4dfb3c0efe51",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126986,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR includes a real same-workspace trace from an earlier head and current-head Vitest output, but not a current-head real Codex tra... (sha=9b52119bb6a0a110cb7d32804ab6e9b1c72c7135)",
+      "expected_head_sha": "9b52119bb6a0a110cb7d32804ab6e9b1c72c7135",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T18:11:23.040Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-codex-bootstrap-context",
+        "head_sha": "9b52119bb6a0a110cb7d32804ab6e9b1c72c7135",
         "cluster_id": null,
         "job_path": null
       }
