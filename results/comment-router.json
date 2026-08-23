@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T08:19:45.727Z",
+  "updated_at": "2026-08-23T08:19:54.087Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-23T03:41:36Z:clawsweeper_needs_human",
-      "comment_id": "5376735204",
-      "comment_version_key": "5376735204:2026-08-23T03:41:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
-      "comment_created_at": "2026-08-22T00:21:26Z",
-      "comment_updated_at": "2026-08-23T03:41:36Z",
-      "comment_body_sha256": "d52c976365e3e77e3a4d5b926e47bca2b75b4b6414dab222ae2d8dbb5cb7fc25",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127700,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Synchronize the TruffleHog workflow contract (P1)** - This changes the action to v3.97.0, but ci-workflow-guards.test.ts still requires the old action SHA and the job still passes a v3.95.9 scanner input. The ex...; Review finding: [P1] Synchronize the TruffleHog workflow contract — .github/workflows/ci.yml:1158-1162 - [P2] Update the Android attestation assertion — .github/workflows/android-... (sha=0d55174c6c87a5dd80a5f904819cbc6b4eca55cd)",
-      "expected_head_sha": "0d55174c6c87a5dd80a5f904819cbc6b4eca55cd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T03:53:35.964Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-2b47f3b96e",
-        "head_sha": "0d55174c6c87a5dd80a5f904819cbc6b4eca55cd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127797:5384085021:2026-08-23T03:52:52Z:re_review",
       "comment_id": "5384085021",
@@ -31280,6 +31247,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T08:19:45.727Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/spogo:48:5304651483:2026-08-23T08:18:47Z:clawsweeper_needs_human",
+      "comment_id": "5304651483",
+      "comment_version_key": "5304651483:2026-08-23T08:18:47Z",
+      "comment_url": "https://github.com/openclaw/spogo/pull/48#issuecomment-5304651483",
+      "comment_created_at": "2026-08-15T23:04:11Z",
+      "comment_updated_at": "2026-08-23T08:18:47Z",
+      "comment_body_sha256": "84e01607a9445807de1607e909a5f3f3d174a7956ef2ce6cee5f8c52dd5db90b",
+      "repo": "openclaw/spogo",
+      "issue_number": 48,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Web-engine token requests that previously waited indefinitely will now fail after 10 seconds by default, or sooner when a user explicitly configured a shorter timeout; this aligns wit... (sha=e7cef3c3fbfe69139ec1d10246adbf74ca473c71)",
+      "expected_head_sha": "e7cef3c3fbfe69139ec1d10246adbf74ca473c71",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T08:19:54.087Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/web-token-client-timeout",
+        "head_sha": "e7cef3c3fbfe69139ec1d10246adbf74ca473c71",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
