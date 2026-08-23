@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128156",
+  "mode": "autonomous",
+  "run_id": "32631057735",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32631057735",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128156.md",
+  "published_at": "2026-08-23T09:51:59.724Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128156",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128156",
+  "canonical_pr": null,
+  "summary": "#128156 remains the canonical open report. Its proposed narrow repair is clear, but implementation is blocked: the preflight main SHA is unavailable in this one-commit checkout, required sibling Codex source is unavailable, and dependencies cannot be installed or run in the read-only sandbox.",
+  "actions": [
+    {
+      "target": "#128156",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "The report identifies the shared redaction owner and has no security-sensitive signal; no viable implementation PR is hydrated."
+    },
+    {
+      "target": "#128156",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "Revalidate the exact current main, inspect the required Codex source, and run the pre-fix regression before changing the redactor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128156",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "A narrow new-PR plan is available, but its executor must first clear the exact-main, Codex-source, and runnable-test blockers."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128156",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "The worker cannot safely create or validate a branch from the unavailable preflight main revision in this sandbox."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
