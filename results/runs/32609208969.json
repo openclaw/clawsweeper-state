@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-45224",
+  "mode": "autonomous",
+  "run_id": "32609208969",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32609208969",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-45224.md",
+  "published_at": "2026-08-23T01:09:34.869Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_pr": null,
+  "summary": "#45224 remains the canonical open report. Current-main source shows the unpinned discovered-CDP branch bypasses the existing callback-containment transport, but implementation is blocked in this read-only checkout: required sibling ../codex is absent, dependencies are unavailable, and pnpm cannot initialize Corepack on the read-only filesystem.",
+  "actions": [
+    {
+      "target": "#45224",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "The executor must first provide writable dependencies and inspect the required sibling Codex source, then establish the pre-fix regression before modifying the branch."
+    },
+    {
+      "target": "#49163",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Already closed."
+    },
+    {
+      "target": "#52051",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Already closed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-45224",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Create the narrow credited fix only after the executor clears the local dependency and required Codex-source inspection gates."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
