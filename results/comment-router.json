@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T20:37:32.510Z",
+  "updated_at": "2026-08-23T20:37:56.099Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128234:5386643073:2026-08-23T14:56:18Z:re_review",
-      "comment_id": "5386643073",
-      "comment_version_key": "5386643073:2026-08-23T14:56:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128234#issuecomment-5386643073",
-      "comment_created_at": "2026-08-23T14:56:18Z",
-      "comment_updated_at": "2026-08-23T14:56:18Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128234,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T14:59:13.899Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/slack-reply-delivery-seam",
-        "head_sha": "0db8e08c461a6e7919957f4041341e24d7144152",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128235:5386653206:2026-08-23T14:58:33Z:re_review",
       "comment_id": "5386653206",
@@ -32569,6 +32522,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/production-minor-and-patch-a1a6a844ee",
         "head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsgcrawl:12:5297630847:2026-08-23T20:37:20Z:clawsweeper_needs_human",
+      "comment_id": "5297630847",
+      "comment_version_key": "5297630847:2026-08-23T20:37:20Z",
+      "comment_url": "https://github.com/openclaw/imsgcrawl/pull/12#issuecomment-5297630847",
+      "comment_created_at": "2026-08-14T20:02:49Z",
+      "comment_updated_at": "2026-08-23T20:37:20Z",
+      "comment_body_sha256": "cba0da3ebfa146cbed999b1b1e048c0b689b68948fc21019d32391dc64b28193",
+      "repo": "openclaw/imsgcrawl",
+      "issue_number": 12,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed; a maintainer can merge this clean release-closeout PR. (sha=671a582d29b5119ae8fc0ccc357e869bd0a4b9b9)",
+      "expected_head_sha": "671a582d29b5119ae8fc0ccc357e869bd0a4b9b9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T20:37:56.099Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/next-unreleased-0.2.0-31835411683",
+        "head_sha": "671a582d29b5119ae8fc0ccc357e869bd0a4b9b9",
         "cluster_id": null,
         "job_path": null
       }
