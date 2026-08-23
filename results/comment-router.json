@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T12:59:52.905Z",
+  "updated_at": "2026-08-23T12:59:56.508Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128137:5384895422:2026-08-23T07:43:53Z:clawsweeper_needs_human",
-      "comment_id": "5384895422",
-      "comment_version_key": "5384895422:2026-08-23T07:43:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128137#issuecomment-5384895422",
-      "comment_created_at": "2026-08-23T07:43:53Z",
-      "comment_updated_at": "2026-08-23T07:43:53Z",
-      "comment_body_sha256": "b9c9305736cad1a747ad2c97bbe3fd97ad45eb03732a74bcfe09d8a214cc65fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128137,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Update the stale scanner-helper caller (P1)** - isReviewedPublishableCriticalFinding now requires evidence, but the existing assertion at line 605 still calls it with only the key. That produces TS2554 in this r...; Review finding: [P1] Update the stale scanner-helper caller — src/plugins/npm-install-security-scan.release.test.ts:187 - [P1] Update the older Bun workflow assertions — .github/w... (sha=28416983630ea816b1e272e31704074c8d3260f6)",
-      "expected_head_sha": "28416983630ea816b1e272e31704074c8d3260f6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T07:45:06.834Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/beta3-tooling-c96-blocker-repair",
-        "head_sha": "28416983630ea816b1e272e31704074c8d3260f6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119056:5179651798:2026-08-04T13:21:05Z:re_review",
       "comment_id": "5179651798",
@@ -31481,6 +31448,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T12:59:52.905Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116486:5134057686:2026-08-23T12:56:20Z:clawsweeper_needs_human",
+      "comment_id": "5134057686",
+      "comment_version_key": "5134057686:2026-08-23T12:56:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116486#issuecomment-5134057686",
+      "comment_created_at": "2026-07-30T17:19:35Z",
+      "comment_updated_at": "2026-08-23T12:56:20Z",
+      "comment_body_sha256": "68430255968636812be270c5a71632f91910bcdc4beb29de1c4b8c21b09aa3b5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116486,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch adds approximately production +105/-6 lines for an internal async outcome seam and delivery-ledger propagation; exact-head CI and a current-main comparison should confirm th... (sha=6301e83b41126370865a4dc8d726e9cd3fd2c0cc)",
+      "expected_head_sha": "6301e83b41126370865a4dc8d726e9cd3fd2c0cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T12:59:56.508Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dispatch-zero-count-attribution",
+        "head_sha": "6301e83b41126370865a4dc8d726e9cd3fd2c0cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
