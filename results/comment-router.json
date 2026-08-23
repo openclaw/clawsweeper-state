@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T12:44:37.467Z",
+  "updated_at": "2026-08-23T12:44:43.289Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128137:5384837953:2026-08-23T07:27:49Z:re_review",
-      "comment_id": "5384837953",
-      "comment_version_key": "5384837953:2026-08-23T07:27:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128137#issuecomment-5384837953",
-      "comment_created_at": "2026-08-23T07:27:49Z",
-      "comment_updated_at": "2026-08-23T07:27:49Z",
-      "comment_body_sha256": "b82641201d50e04c3f8a406ecb94f3a09e2d47ff4c110e01a207a5efcdab311a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128137,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T07:28:38.970Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/beta3-tooling-c96-blocker-repair",
-        "head_sha": "28416983630ea816b1e272e31704074c8d3260f6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124301:5304629222:2026-08-23T07:28:46Z:clawsweeper_needs_human",
       "comment_id": "5304629222",
@@ -31286,6 +31239,39 @@
         "kind": "pull_request",
         "branch": "feat/workboard-collapsible-columns",
         "head_sha": "ab251f062de42ca2127027175ddf226cce24ce49",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:100048:4883372190:2026-08-23T12:43:55Z:clawsweeper_auto_repair",
+      "comment_id": "4883372190",
+      "comment_version_key": "4883372190:2026-08-23T12:43:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/100048#issuecomment-4883372190",
+      "comment_created_at": "2026-07-04T18:19:37Z",
+      "comment_updated_at": "2026-08-23T12:43:55Z",
+      "comment_body_sha256": "faf9764b4b615a75599c11327abd131adce3b9d79c849275acbc2746c125c54b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 100048,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=419764acda9abe4980352f0754093952bcfba8b9)",
+      "expected_head_sha": "419764acda9abe4980352f0754093952bcfba8b9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T12:44:43.289Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "meow/agents-workspace-cron-ui",
+        "head_sha": "419764acda9abe4980352f0754093952bcfba8b9",
         "cluster_id": null,
         "job_path": null
       }
