@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T17:51:54.840Z",
+  "updated_at": "2026-08-23T17:51:59.790Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5278450967:2026-08-13T09:22:11Z:re_review",
-      "comment_id": "5278450967",
-      "comment_version_key": "5278450967:2026-08-13T09:22:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5278450967",
-      "comment_created_at": "2026-08-13T09:22:11Z",
-      "comment_updated_at": "2026-08-13T09:22:11Z",
-      "comment_body_sha256": "c0b2d5b43f74aaa1c9bd10215fddfe153970cad8ff922ebc78809b6adb3284f7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T13:22:53.628Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5290656230:2026-08-14T07:20:45Z:re_review",
       "comment_id": "5290656230",
@@ -32470,6 +32443,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T17:51:54.840Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:62:5303306179:2026-08-23T17:51:20Z:clawsweeper_needs_human",
+      "comment_id": "5303306179",
+      "comment_version_key": "5303306179:2026-08-23T17:51:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/62#issuecomment-5303306179",
+      "comment_created_at": "2026-08-15T17:05:32Z",
+      "comment_updated_at": "2026-08-23T17:51:20Z",
+      "comment_body_sha256": "e13a6f9b112546d885392ee1b1486bc2caa5265909b8803fff44048b1c01aea6",
+      "repo": "openclaw/openclaw-ansible",
+      "issue_number": 62,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes CI, but the current PR check list contains only dispatch runs; run Lint on the merge result to confirm the added commands execute while main’s read-only workflow permissi... (sha=fdce460a7362484cf12a0d8c8ec5807c967f2d6f)",
+      "expected_head_sha": "fdce460a7362484cf12a0d8c8ec5807c967f2d6f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T17:51:59.790Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/validate-deploy-playbook",
+        "head_sha": "fdce460a7362484cf12a0d8c8ec5807c967f2d6f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
