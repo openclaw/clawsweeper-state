@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-81892"
 mode: "autonomous"
-run_id: "32646341773"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32646341773"
+run_id: "32645859522"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32645859522"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-23T15:01:23.198Z"
+published_at: "2026-08-23T14:46:22.226Z"
 canonical: "https://github.com/openclaw/openclaw/issues/81892"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/81892"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32646341773](https://github.com/openclaw/clawsweeper/actions/runs/32646341773)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32645859522](https://github.com/openclaw/clawsweeper/actions/runs/32645859522)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/81892
 
 ## Summary
 
-#81892 remains the canonical open bug. Current main suppresses explicit Matrix reasoning at both shared dispatch and Matrix delivery; a narrow repair is identified but cannot be implemented or validated in this read-only checkout because ../codex is absent (mandatory direct-inspection gate) and test dependencies are missing.
+#81892 remains a reproducible Matrix bug on main 000db97c: Matrix neither enables the existing explicit-reasoning capability nor renders typed reasoning payloads. A narrow fix PR is appropriate, but this worker cannot implement or validate it because the checkout is read-only, dependencies cannot be installed, and the required sibling Codex source cannot be cloned for the repository’s hard gate.
 
 ## Impact
 
@@ -66,13 +66,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/81892
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #81892 | fix_needed | blocked | canonical | Implementation is blocked by the required direct ../codex inspection gate and read-only/missing-dependency environment, not by product ambiguity. |
-| cluster:issue-openclaw-openclaw-81892 | build_fix_artifact | blocked |  | Artifact is ready for an executor with writable checkout, dependencies, and required ../codex source. |
-| #24411 | keep_closed | skipped | related | Already closed. |
-| #82907 | keep_closed | skipped | superseded | Already closed. |
-| #90560 | keep_closed | skipped | superseded | Already closed. |
-| #93696 | route_security | planned | security_sensitive | Security-sensitive item is outside this repair lane. |
-| #93830 | keep_closed | skipped | superseded | Already closed. |
+| #81892 | fix_needed | blocked | canonical | Implementation and required regression/changed-gate validation require a writable checkout with dependencies plus the mandated sibling ../codex source; neither is available in this worker. |
+| cluster:issue-openclaw-openclaw-81892 | build_fix_artifact | blocked | canonical | A new narrow PR is the canonical repair path, but artifact execution is blocked by the read-only worker environment and mandatory validation/Codex-source gate. |
+| #24411 | keep_closed | skipped | related | Already closed historical context; no closeout action is permitted or needed. |
+| #82907 | keep_closed | skipped | related | Already closed historical context; no mutation. |
+| #90560 | keep_closed | skipped | related | Already closed historical context; no mutation. |
+| #93696 | route_security | planned | security_sensitive | Quarantine this exact linked PR for central security handling; do not mutate or use it as the canonical fix path. |
+| #93830 | keep_closed | skipped | related | Already closed historical context; no mutation. |
 
 ## Needs Human
 
