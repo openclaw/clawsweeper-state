@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T20:35:40.939Z",
+  "updated_at": "2026-08-23T20:37:31.425Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123976:5386636122:2026-08-23T14:54:48Z:re_review",
-      "comment_id": "5386636122",
-      "comment_version_key": "5386636122:2026-08-23T14:54:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123976#issuecomment-5386636122",
-      "comment_created_at": "2026-08-23T14:54:48Z",
-      "comment_updated_at": "2026-08-23T14:54:48Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123976,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T14:55:32.123Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/workspace-quiescence-thaw",
-        "head_sha": "7038a0b5bc2f8731fcf75b8ee3ca95acbd6273be",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125815:5328823403:2026-08-23T14:54:04Z:clawsweeper_needs_human",
       "comment_id": "5328823403",
@@ -32586,6 +32539,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3505:5372360195:2026-08-23T20:36:41Z:clawsweeper_needs_human",
+      "comment_id": "5372360195",
+      "comment_version_key": "5372360195:2026-08-23T20:36:41Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3505#issuecomment-5372360195",
+      "comment_created_at": "2026-08-21T16:12:00Z",
+      "comment_updated_at": "2026-08-23T20:36:41Z",
+      "comment_body_sha256": "60437c5beea8045bef9358961a2b9ce821d6f32a1104b3948f82a490458063f7",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3505,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Blacksmith reported a failing local-auth Chromium shard on this head; although that path uses root Vite and Playwright rather than the updated Vitest executable, no paired base run es... (sha=fde2bd707df4ca56b67f4fb4ea576d2f05618c43)",
+      "expected_head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T20:37:31.425Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-3b24459cdd",
+        "head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
