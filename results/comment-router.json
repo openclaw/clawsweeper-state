@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T12:40:19.995Z",
+  "updated_at": "2026-08-23T12:41:46.521Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128137:5384809373:2026-08-23T07:19:59Z:re_review",
-      "comment_id": "5384809373",
-      "comment_version_key": "5384809373:2026-08-23T07:19:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128137#issuecomment-5384809373",
-      "comment_created_at": "2026-08-23T07:19:59Z",
-      "comment_updated_at": "2026-08-23T07:19:59Z",
-      "comment_body_sha256": "e277497c622d3670bfc72bcb1f4c0a7c938acc363070807f5110abb3ea75ec6f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128137,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T07:20:36.238Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/beta3-tooling-c96-blocker-repair",
-        "head_sha": "327f998272170bf23f7cf7243b88264e532700aa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110455:5384809441:2026-08-23T07:20:00Z:re_review",
       "comment_id": "5384809441",
@@ -31306,6 +31259,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/development-minor-and-patch-3b24459cdd",
         "head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128101:5384129117:2026-08-23T12:37:52Z:clawsweeper_auto_repair",
+      "comment_id": "5384129117",
+      "comment_version_key": "5384129117:2026-08-23T12:37:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128101#issuecomment-5384129117",
+      "comment_created_at": "2026-08-23T04:05:54Z",
+      "comment_updated_at": "2026-08-23T12:37:52Z",
+      "comment_body_sha256": "b4705fa80a08e53605b9bb03ce171758bf1e422ba28be9ec005a61b2aa5fb5df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128101,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=952359408dae2e8582dcb0f1f325d0fbaa3fea1a)",
+      "expected_head_sha": "952359408dae2e8582dcb0f1f325d0fbaa3fea1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T12:41:46.521Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-realtime-playout-owner",
+        "head_sha": "952359408dae2e8582dcb0f1f325d0fbaa3fea1a",
         "cluster_id": null,
         "job_path": null
       }
