@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T06:23:01.810Z",
+  "updated_at": "2026-08-23T06:23:31.748Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5307581006:2026-08-16T13:06:10Z:re_review",
-      "comment_id": "5307581006",
-      "comment_version_key": "5307581006:2026-08-16T13:06:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5307581006",
-      "comment_created_at": "2026-08-16T13:06:10Z",
-      "comment_updated_at": "2026-08-16T13:06:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T01:34:07.680Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5309166762:2026-08-16T19:06:11Z:re_review",
       "comment_id": "5309166762",
@@ -31291,6 +31264,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T06:23:01.810Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128131:5384601467:2026-08-23T06:22:38Z:clawsweeper_needs_human",
+      "comment_id": "5384601467",
+      "comment_version_key": "5384601467:2026-08-23T06:22:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128131#issuecomment-5384601467",
+      "comment_created_at": "2026-08-23T06:22:38Z",
+      "comment_updated_at": "2026-08-23T06:22:38Z",
+      "comment_body_sha256": "c7e681c3826063247db30fd65a542b67e57eec679ba9c137abedb7adef4330a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128131,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the submitted terminal evidence proves a logged-out SDK error path and hook callback, not a successful...; Review finding: [P1] Keep SDK subprocesses under managed lifecycle ownership — src/agents/cli-runner/execute-process.ts:254-266 - [P3] Remove the release-owned changelog entry — C... (sha=48f9e0bbf195320fd559f515cfd45763ea507b99)",
+      "expected_head_sha": "48f9e0bbf195320fd559f515cfd45763ea507b99",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T06:23:31.748Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/anthropic-agent-sdk",
+        "head_sha": "48f9e0bbf195320fd559f515cfd45763ea507b99",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
