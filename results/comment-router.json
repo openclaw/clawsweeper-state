@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T09:21:48.914Z",
+  "updated_at": "2026-08-23T09:22:30.911Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5319023988:2026-08-17T19:06:56Z:re_review",
-      "comment_id": "5319023988",
-      "comment_version_key": "5319023988:2026-08-17T19:06:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5319023988",
-      "comment_created_at": "2026-08-17T19:06:56Z",
-      "comment_updated_at": "2026-08-17T19:06:56Z",
-      "comment_body_sha256": "a85198f5f308c8bb084fba6967f1d92f65cb7499dbab097c1a64a9645623b0f3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T04:11:37.849Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5319094772:2026-08-17T19:12:40Z:re_review",
       "comment_id": "5319094772",
@@ -31607,6 +31580,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T09:21:48.914Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128141:5384873530:2026-08-23T09:21:39Z:clawsweeper_needs_human",
+      "comment_id": "5384873530",
+      "comment_version_key": "5384873530:2026-08-23T09:21:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128141#issuecomment-5384873530",
+      "comment_created_at": "2026-08-23T07:37:45Z",
+      "comment_updated_at": "2026-08-23T09:21:39Z",
+      "comment_body_sha256": "96480d07e56a06108ca436b6713a80cc53f1eca76ea49f2a096b51bc75d8cacc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128141,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR body defers the controlled recovery trace, so no after-fix evidence yet shows both allowed recovery and...; Review finding: [medium] Prove the GitHub mutation boundary — scripts/frv.mjs:1211 (sha=1cb8dd88287325537151c74abb82ad38f051db7d)",
+      "expected_head_sha": "1cb8dd88287325537151c74abb82ad38f051db7d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T09:22:30.911Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-canonical-continuation-20260822",
+        "head_sha": "1cb8dd88287325537151c74abb82ad38f051db7d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
