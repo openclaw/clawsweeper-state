@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T20:38:40.680Z",
+  "updated_at": "2026-08-23T20:42:36.207Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127874:5386710057:2026-08-23T15:10:45Z:re_review",
-      "comment_id": "5386710057",
-      "comment_version_key": "5386710057:2026-08-23T15:10:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127874#issuecomment-5386710057",
-      "comment_created_at": "2026-08-23T15:10:45Z",
-      "comment_updated_at": "2026-08-23T15:10:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127874,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T15:11:35.366Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugins-update-downgrade-reporting",
-        "head_sha": "0bf2583365d122c71d1d5b37eff83d6faac46431",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122425:5262218740:2026-08-23T15:11:28Z:clawsweeper_needs_human",
       "comment_id": "5262218740",
@@ -32267,6 +32220,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T20:38:40.680Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124672:5308287685:2026-08-23T20:41:47Z:clawsweeper_needs_human",
+      "comment_id": "5308287685",
+      "comment_version_key": "5308287685:2026-08-23T20:41:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124672#issuecomment-5308287685",
+      "comment_created_at": "2026-08-16T15:50:55Z",
+      "comment_updated_at": "2026-08-23T20:41:47Z",
+      "comment_body_sha256": "0e9b3b69c402f4c5e12b2825841f4010d242b0f2ff6486bb6906818d93039400",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124672,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed; the submitted documentation patch already supplies the bounded correction. (sha=bc62efb702e00df9874043e90541861498e7718e)",
+      "expected_head_sha": "bc62efb702e00df9874043e90541861498e7718e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T20:42:36.207Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/taskflow-audit-inconsistent-timestamps",
+        "head_sha": "bc62efb702e00df9874043e90541861498e7718e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
