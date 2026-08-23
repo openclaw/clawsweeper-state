@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T18:30:04.085Z",
+  "updated_at": "2026-08-23T18:34:03.899Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2457:5101099146:2026-07-28T07:13:33Z:re_review",
-      "comment_id": "5101099146",
-      "comment_version_key": "5101099146:2026-07-28T07:13:33Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5101099146",
-      "comment_created_at": "2026-07-28T07:13:33Z",
-      "comment_updated_at": "2026-07-28T07:13:33Z",
-      "comment_body_sha256": "57e4bb24a04a202245581b1fcc4b59e6d8f7d4f78a67bdabe70edfd13befb2e7",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2457,
-      "author": "EClinick",
-      "author_id": 69320739,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T13:53:26.125Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:2457:5101210720:2026-07-28T07:26:31Z:re_review",
       "comment_id": "5101210720",
@@ -32592,6 +32565,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T18:30:04.085Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-23T18:32:56Z:clawsweeper_needs_human",
+      "comment_id": "5376735204",
+      "comment_version_key": "5376735204:2026-08-23T18:32:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
+      "comment_created_at": "2026-08-22T00:21:26Z",
+      "comment_updated_at": "2026-08-23T18:32:56Z",
+      "comment_body_sha256": "dbae08ecf8b29ddcdc49e63f65201b255d112332812de2daad9537d50b4a8924",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127700,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog workflow guard (P1)** - This changes the scan action to v3.97.0, but test/scripts/ci-workflow-guards.test.ts still requires the v3.95.9 SHA at its exact workflow step. Update the guard...; Review finding: [P1] Synchronize the TruffleHog workflow guard — .github/workflows/ci.yml:1158 - [P2] Refresh the Android attestation contract assertion — .github/workflows/androi... (sha=03decf72aec08bc18af576cef912b88f64bd90ea)",
+      "expected_head_sha": "03decf72aec08bc18af576cef912b88f64bd90ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T18:34:03.899Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-2b47f3b96e",
+        "head_sha": "03decf72aec08bc18af576cef912b88f64bd90ea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
