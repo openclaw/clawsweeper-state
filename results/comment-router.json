@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T14:55:34.354Z",
+  "updated_at": "2026-08-23T14:58:43.287Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5013663847:2026-07-19T01:24:01Z:re_review",
-      "comment_id": "5013663847",
-      "comment_version_key": "5013663847:2026-07-19T01:24:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5013663847",
-      "comment_created_at": "2026-07-19T01:24:01Z",
-      "comment_updated_at": "2026-07-19T01:24:01Z",
-      "comment_body_sha256": "48f897e30f14d5771e6fbbbd39b2d0aab25fb8b0486fb3799aadaf918376bf0f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (0 behind); pr head is now 3e5025c12d. all pr-touched suites green locally (workspace 62, internal-hooks 39, bootstrap-extra-files handler 3, load-extra-bootstrap-files 19, attempt-stage-timing 7). please re-review against the current head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T10:26:19.484Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5015318434:2026-07-19T10:09:46Z:re_review",
       "comment_id": "5015318434",
@@ -31815,6 +31788,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127109:5367532844:2026-08-23T14:55:39Z:clawsweeper_auto_repair",
+      "comment_id": "5367532844",
+      "comment_version_key": "5367532844:2026-08-23T14:55:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127109#issuecomment-5367532844",
+      "comment_created_at": "2026-08-21T08:35:56Z",
+      "comment_updated_at": "2026-08-23T14:55:39Z",
+      "comment_body_sha256": "fdce92032701a521cafe6f8103daa39bf6db8f906a8cf100abaad973afa3124a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127109,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7161137611ccf68dae1123afaa07c1b9300f0399)",
+      "expected_head_sha": "7161137611ccf68dae1123afaa07c1b9300f0399",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T14:58:43.287Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/127095-node-host-dedupe-skill-bins-refresh",
+        "head_sha": "7161137611ccf68dae1123afaa07c1b9300f0399",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
