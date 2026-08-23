@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128005"
 mode: "autonomous"
-run_id: "32636222816"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32636222816"
+run_id: "32636826074"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32636826074"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-23T11:28:53.461Z"
-canonical: "https://github.com/openclaw/openclaw/issues/128005"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/128005"
+published_at: "2026-08-23T11:40:08.811Z"
+canonical: "#128005"
+canonical_issue: "#128005"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-128005
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32636222816](https://github.com/openclaw/clawsweeper/actions/runs/32636222816)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32636826074](https://github.com/openclaw/clawsweeper/actions/runs/32636826074)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/128005
+Canonical: #128005
 
 ## Summary
 
-The Android owner accepts an unchecked live location after validating only cached locations. A narrow repair artifact is ready, but this read-only worker cannot modify or validate the branch: Gradle cannot create its wrapper lock, and required ../codex source is unavailable for the repository’s mandatory gate.
+Confirmed on main 5c922502: Android rejects stale cached locations but returns a stale getCurrentLocation callback unchecked. No code, test, branch, or PR was created because the checkout is read-only; the mandatory sibling ../codex inspection is also impossible because it cannot be cloned into the read-only parent.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,8 @@ The Android owner accepts an unchecked live location after validating only cache
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128005 | fix_needed | blocked | canonical | Implementation is blocked only by environment constraints; preserve #128005 as the canonical issue and hand the repair artifact to a writable executor. |
-| cluster:issue-openclaw-openclaw-128005 | build_fix_artifact | planned | canonical | A writable executor can implement and validate this one-issue Android repair without widening the branch. |
+| #128005 | fix_needed | blocked | canonical | A narrow non-security repair is warranted, but the worker cannot satisfy the required writable-test and direct-Codex gates in this environment. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout with sibling ../codex available, then apply and validate the prepared narrow fix artifact.
