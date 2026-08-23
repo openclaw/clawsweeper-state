@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-08-23T01:33:32.777Z",
+  "updated_at": "2026-08-23T01:33:35.130Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:119525",
-      "comment_id": "repair-loop-label-sweep:automerge:119525",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119525",
-      "comment_created_at": "2026-08-22T18:55:34.464Z",
-      "comment_updated_at": "2026-08-22T18:55:34.464Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119525,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "automerge enabled; PR has merge conflicts and needs a cloud rebase repair before automerge",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T18:56:46.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/memory-search-timeout-classification",
-        "head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-        "cluster_id": "automerge-openclaw-openclaw-119525",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124899:5310194513:2026-08-22T18:55:11Z:clawsweeper_needs_human",
       "comment_id": "5310194513",
@@ -31239,6 +31187,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T01:33:32.777Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:17:5304621335:2026-08-23T01:24:50Z:clawsweeper_needs_human",
+      "comment_id": "5304621335",
+      "comment_version_key": "5304621335:2026-08-23T01:24:50Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/17#issuecomment-5304621335",
+      "comment_created_at": "2026-08-15T22:55:04Z",
+      "comment_updated_at": "2026-08-23T01:24:50Z",
+      "comment_body_sha256": "b29348287713a8314f807109182bf81288721a429d2b3003cd8d4b82aed944bd",
+      "repo": "openclaw/babelfish",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A valid installed MCP server with more than 50 catalogue pages, or one that needs longer than a single discovery budget, will now fail plugin installation or regeneration rather than... (sha=7faed6693a7b660e981fb3ba257c9df112439876)",
+      "expected_head_sha": "7faed6693a7b660e981fb3ba257c9df112439876",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T01:33:35.130Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/listtools-page-cap",
+        "head_sha": "7faed6693a7b660e981fb3ba257c9df112439876",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
