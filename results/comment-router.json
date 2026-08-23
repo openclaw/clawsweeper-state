@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T13:20:36.770Z",
+  "updated_at": "2026-08-23T13:20:54.946Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:83:5338603709:2026-08-23T08:00:17Z:clawsweeper_needs_human",
-      "comment_id": "5338603709",
-      "comment_version_key": "5338603709:2026-08-23T08:00:17Z",
-      "comment_url": "https://github.com/openclaw/graincrawl/pull/83#issuecomment-5338603709",
-      "comment_created_at": "2026-08-19T06:54:14Z",
-      "comment_updated_at": "2026-08-23T08:00:17Z",
-      "comment_body_sha256": "336b7707145bd49e66ee05f49ac97d0562850e9be07bc1b1f2434b29678edc32",
-      "repo": "openclaw/graincrawl",
-      "issue_number": 83,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The review sandbox cannot create a Go module cache, so Crawlkit v0.14.7 could not be inspected or exercised locally; a storage owner should inspect the upstream change and confirm an... (sha=e577d7ebfb0b5d2cb89fd91ad132692cab77d231)",
-      "expected_head_sha": "e577d7ebfb0b5d2cb89fd91ad132692cab77d231",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T08:10:25.017Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.7",
-        "head_sha": "e577d7ebfb0b5d2cb89fd91ad132692cab77d231",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126263:5339579210:2026-08-19T08:33:01Z:re_review",
       "comment_id": "5339579210",
@@ -31409,6 +31376,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/rfcs:62:5386212932:2026-08-23T13:20:11Z:re_review",
+      "comment_id": "5386212932",
+      "comment_version_key": "5386212932:2026-08-23T13:20:11Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/62#issuecomment-5386212932",
+      "comment_created_at": "2026-08-23T13:20:11Z",
+      "comment_updated_at": "2026-08-23T13:20:11Z",
+      "comment_body_sha256": "c212988c60e823e1a7833bcb40926261c9ceb048b18bf63eec95c17990126af1",
+      "repo": "openclaw/rfcs",
+      "issue_number": 62,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T13:20:53.356Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/rfc-0029-handshake-capabilities",
+        "head_sha": "939dc20ec8cbea4ae7e41f4fcc8f0b53d96601a7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
