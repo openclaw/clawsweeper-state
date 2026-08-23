@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125873"
 mode: "autonomous"
-run_id: "32661416013"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32661416013"
+run_id: "32661965496"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32661965496"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T19:46:15.949Z"
+published_at: "2026-08-23T19:52:23.359Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125873"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125873"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32661416013](https://github.com/openclaw/clawsweeper/actions/runs/32661416013)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32661965496](https://github.com/openclaw/clawsweeper/actions/runs/32661965496)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125873
 
 ## Summary
 
-#125873 is a confirmed narrow Bedrock replay-boundary bug on current main. The planned repair reuses the existing public coercion helper and adds one captured-Converse-payload regression. Implementation and validation are blocked only because this worker sandbox is read-only, has no installed dependencies, and lacks the required sibling ../codex checkout for the repository's Codex gate.
+Confirmed the historic Bedrock replay bug on main b3b33d24: the converter forwards non-record tool arguments through a cast. A narrow two-file repair is prepared, but this read-only checkout lacks dependencies and cannot create ../codex for the mandatory direct Codex-source inspection, so no branch or PR can be produced here.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/125873
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125873 | fix_needed | blocked | canonical | A writable executor with dependencies and the required ../codex checkout must apply and validate the narrow repair. |
-| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | planned | canonical | The fix is a one-line replay-boundary normalization plus a focused behavioral regression. |
-| #21873 | keep_closed | skipped | related | Already closed; no closure or mutation is permitted. |
-| #126391 | keep_closed | skipped | related | Already merged and complementary, not a fix for the replay defect. |
+| #125873 | fix_needed | blocked | canonical | The source reproduction remains valid, but implementation and mandatory direct Codex-source inspection cannot run in this read-only environment. |
+| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | planned | canonical | A narrow new PR can repair the canonical replay boundary once run in a writable checkout with dependencies and the required ../codex inspection. |
+| #21873 | keep_closed | skipped | related | Already closed; no mutation permitted or needed. |
+| #126391 | keep_closed | skipped | related | Already merged and only partial-overlap context. |
 
 ## Needs Human
 

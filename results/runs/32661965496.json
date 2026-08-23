@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125873",
+  "mode": "autonomous",
+  "run_id": "32661965496",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32661965496",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125873.md",
+  "published_at": "2026-08-23T19:52:23.359Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125873",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125873",
+  "canonical_pr": null,
+  "summary": "Confirmed the historic Bedrock replay bug on main b3b33d24: the converter forwards non-record tool arguments through a cast. A narrow two-file repair is prepared, but this read-only checkout lacks dependencies and cannot create ../codex for the mandatory direct Codex-source inspection, so no branch or PR can be produced here.",
+  "actions": [
+    {
+      "target": "#125873",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "The source reproduction remains valid, but implementation and mandatory direct Codex-source inspection cannot run in this read-only environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125873",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "A narrow new PR can repair the canonical replay boundary once run in a writable checkout with dependencies and the required ../codex inspection."
+    },
+    {
+      "target": "#21873",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation permitted or needed."
+    },
+    {
+      "target": "#126391",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Already merged and only partial-overlap context."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
