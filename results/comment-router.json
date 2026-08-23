@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T19:13:23.628Z",
+  "updated_at": "2026-08-23T19:13:24.896Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127226:5386443040:2026-08-23T14:12:11Z:re_review",
-      "comment_id": "5386443040",
-      "comment_version_key": "5386443040:2026-08-23T14:12:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127226#issuecomment-5386443040",
-      "comment_created_at": "2026-08-23T14:12:11Z",
-      "comment_updated_at": "2026-08-23T14:12:11Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127226,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T14:12:56.689Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/signal-qr-setup-current-main",
-        "head_sha": "21f5524d6b932297d752d3f6b1bf3d396f2e6471",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/sweet-cookie:43:5316084611:2026-08-23T14:13:22Z:clawsweeper_needs_human",
       "comment_id": "5316084611",
@@ -32697,6 +32650,39 @@
         "kind": "pull_request",
         "branch": "fix/confirmation-poll-cancel",
         "head_sha": "a4cc9ce5712112c022aa37ba89c2cce222801152",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:154:5297648322:2026-08-23T18:59:55Z:clawsweeper_needs_human",
+      "comment_id": "5297648322",
+      "comment_version_key": "5297648322:2026-08-23T18:59:55Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/154#issuecomment-5297648322",
+      "comment_created_at": "2026-08-14T20:04:25Z",
+      "comment_updated_at": "2026-08-23T18:59:55Z",
+      "comment_body_sha256": "7e1e6689a13895e2d7b8b41011e5b394e2c9c4926dc9f7b5c7bcca04305c90d4",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 154,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging before the documented release-completion conditions are confirmed would open the next changelog cycle while v0.9.2 closeout may still be incomplete. (sha=fe353a46d17211eb0e1d5328521ed4984f17016f)",
+      "expected_head_sha": "fe353a46d17211eb0e1d5328521ed4984f17016f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T19:13:24.895Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/next-unreleased-0.9.2-31835391693",
+        "head_sha": "fe353a46d17211eb0e1d5328521ed4984f17016f",
         "cluster_id": null,
         "job_path": null
       }
