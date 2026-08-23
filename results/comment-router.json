@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T17:00:12.546Z",
+  "updated_at": "2026-08-23T17:00:40.126Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128209:5386036351:2026-08-23T12:38:01Z:re_review",
@@ -32268,59 +32268,6 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128240:5386720934:2026-08-23T16:56:50Z:clawsweeper_auto_merge",
-      "comment_id": "5386720934",
-      "comment_version_key": "5386720934:2026-08-23T16:56:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128240#issuecomment-5386720934",
-      "comment_created_at": "2026-08-23T15:13:12Z",
-      "comment_updated_at": "2026-08-23T16:56:50Z",
-      "comment_body_sha256": "d39d5dff2f64dd137b1fd5edce74d408b43fcfdcb3b3fc310a4989375d1e3ec8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128240,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=37498ac7b1cab252eef387ddc912b9ce68b610e2); PR head is behind base and needs a cloud rebase repair before automerge",
-      "expected_head_sha": "37498ac7b1cab252eef387ddc912b9ce68b610e2",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-23T17:00:03.022Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/improve-mobile-model-picker-padding",
-        "head_sha": "37498ac7b1cab252eef387ddc912b9ce68b610e2",
-        "cluster_id": "automerge-openclaw-openclaw-128240",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128240.md"
-      },
-      "actions": [
-        {
-          "action": "merge",
-          "status": "repair_needed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "pending",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "waiting",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128240.md"
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125385:5319881429:2026-08-23T16:57:40Z:clawsweeper_auto_repair",
       "comment_id": "5319881429",
       "comment_version_key": "5319881429:2026-08-23T16:57:40Z",
@@ -32352,6 +32299,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128240:5386720934:2026-08-23T16:56:50Z:clawsweeper_auto_merge",
+      "comment_id": "5386720934",
+      "comment_version_key": "5386720934:2026-08-23T16:56:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128240#issuecomment-5386720934",
+      "comment_created_at": "2026-08-23T15:13:12Z",
+      "comment_updated_at": "2026-08-23T16:56:50Z",
+      "comment_body_sha256": "d39d5dff2f64dd137b1fd5edce74d408b43fcfdcb3b3fc310a4989375d1e3ec8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128240,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=37498ac7b1cab252eef387ddc912b9ce68b610e2)",
+      "expected_head_sha": "37498ac7b1cab252eef387ddc912b9ce68b610e2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T17:00:40.126Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/improve-mobile-model-picker-padding",
+        "head_sha": "37498ac7b1cab252eef387ddc912b9ce68b610e2",
+        "cluster_id": "automerge-openclaw-openclaw-128240",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128240.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
