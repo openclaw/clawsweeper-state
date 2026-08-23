@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125873",
+  "mode": "autonomous",
+  "run_id": "32660654969",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32660654969",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125873.md",
+  "published_at": "2026-08-23T19:26:53.253Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125873",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125873",
+  "canonical_pr": null,
+  "summary": "Confirmed narrow replay defect, but implementation is blocked: required ../codex source is absent, the checkout is read-only, and dependencies are unavailable. A new-fix-PR artifact is prepared.",
+  "actions": [
+    {
+      "target": "#125873",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "The repair is narrow and supported by current-main source, but this worker cannot satisfy the mandatory direct Codex-source gate, edit files, install dependencies, or run validation."
+    },
+    {
+      "target": "#126391",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Closed historical context only; no mutation is valid."
+    },
+    {
+      "target": "#21873",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Closed historical sibling only; no mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125873",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Narrow implementation plan prepared for the deterministic executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
