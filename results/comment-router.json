@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T22:02:22.164Z",
+  "updated_at": "2026-08-23T22:02:25.043Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115984:5386895997:2026-08-23T15:52:10Z:re_review",
-      "comment_id": "5386895997",
-      "comment_version_key": "5386895997:2026-08-23T15:52:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115984#issuecomment-5386895997",
-      "comment_created_at": "2026-08-23T15:52:10Z",
-      "comment_updated_at": "2026-08-23T15:52:10Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115984,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T16:03:51.166Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/status-summary-recent-session-model-agent-id",
-        "head_sha": "aadf17a907c909a2666d95ef2d6250e2a99f3781",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117890:5386911943:2026-08-23T15:55:48Z:re_review",
       "comment_id": "5386911943",
@@ -32461,6 +32414,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T22:02:22.164Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Kova:95:5388677225:2026-08-23T21:55:52Z:clawsweeper_needs_human",
+      "comment_id": "5388677225",
+      "comment_version_key": "5388677225:2026-08-23T21:55:52Z",
+      "comment_url": "https://github.com/openclaw/Kova/pull/95#issuecomment-5388677225",
+      "comment_created_at": "2026-08-23T21:55:52Z",
+      "comment_updated_at": "2026-08-23T21:55:52Z",
+      "comment_body_sha256": "e03b512be83fed66f6e7a3d7eee31ea4591a2bdc5b66136fabc5164da0e5dd2d",
+      "repo": "openclaw/Kova",
+      "issue_number": 95,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body lists checks but provides no after-fix real OCM execution output proving that an observed integrity reaches the report, receipt, an...; Review finding: [P2] Require a full SHA-512 digest before claiming exact identity — src/target-identity.mjs:40 - [medium] Truncated integrity values can be published as exact evid... (sha=de7f1b8426741e4a8d6a9a99211211e26ec36af6)",
+      "expected_head_sha": "de7f1b8426741e4a8d6a9a99211211e26ec36af6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T22:02:25.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/target-identity",
+        "head_sha": "de7f1b8426741e4a8d6a9a99211211e26ec36af6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
