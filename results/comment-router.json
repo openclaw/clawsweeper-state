@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T19:45:49.233Z",
+  "updated_at": "2026-08-23T19:45:53.030Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125823:5386527849:2026-08-23T14:30:53Z:re_review",
-      "comment_id": "5386527849",
-      "comment_version_key": "5386527849:2026-08-23T14:30:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125823#issuecomment-5386527849",
-      "comment_created_at": "2026-08-23T14:30:53Z",
-      "comment_updated_at": "2026-08-23T14:30:53Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125823,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T14:31:31.714Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/webchat-terminal-dedupe-recovery",
-        "head_sha": "2fa70f1a51a303f0587bcffdd774d28b96560391",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125815:5328823403:2026-08-23T14:29:39Z:clawsweeper_needs_human",
       "comment_id": "5328823403",
@@ -32501,6 +32454,39 @@
         "kind": "pull_request",
         "branch": "fix/stream-direct-download",
         "head_sha": "f02c0bfa604b366a8cc0ee23e6ced7a1c337ac17",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3504:5372359255:2026-08-23T19:34:50Z:clawsweeper_needs_human",
+      "comment_id": "5372359255",
+      "comment_version_key": "5372359255:2026-08-23T19:34:50Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3504#issuecomment-5372359255",
+      "comment_created_at": "2026-08-21T16:11:54Z",
+      "comment_updated_at": "2026-08-23T19:34:50Z",
+      "comment_body_sha256": "858a9035102ff1a92afcbb50c7af697ccfd0c620690764f42fee563a3db4b46d",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3504,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Blacksmith reported failures in the authenticated malicious-skill browser test on this head; the report does not establish causality, but the dependency update has not been rerun agai... (sha=c8ea5c6541e2ea09cc09110c85db983c1f06dcc4)",
+      "expected_head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T19:45:53.030Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/production-minor-and-patch-a1a6a844ee",
+        "head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
         "cluster_id": null,
         "job_path": null
       }
