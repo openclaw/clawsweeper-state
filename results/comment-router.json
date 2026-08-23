@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T17:00:03.022Z",
+  "updated_at": "2026-08-23T17:00:12.546Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126180:5371361869:2026-08-21T14:40:12Z:re_review",
-      "comment_id": "5371361869",
-      "comment_version_key": "5371361869:2026-08-21T14:40:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126180#issuecomment-5371361869",
-      "comment_created_at": "2026-08-21T14:40:12Z",
-      "comment_updated_at": "2026-08-21T14:40:12Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126180,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T12:51:23.742Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128209:5386036351:2026-08-23T12:38:01Z:re_review",
       "comment_id": "5386036351",
@@ -32346,6 +32319,39 @@
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128240.md"
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125385:5319881429:2026-08-23T16:57:40Z:clawsweeper_auto_repair",
+      "comment_id": "5319881429",
+      "comment_version_key": "5319881429:2026-08-23T16:57:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125385#issuecomment-5319881429",
+      "comment_created_at": "2026-08-17T20:29:10Z",
+      "comment_updated_at": "2026-08-23T16:57:40Z",
+      "comment_body_sha256": "59a2d99234a2bfff1609d529c0dd39f048c6cf5da413c6cca17651b99a5341d5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125385,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5e7d435fb0494ae46d32fce94c2adc6fd6a6bf67)",
+      "expected_head_sha": "5e7d435fb0494ae46d32fce94c2adc6fd6a6bf67",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T17:00:12.546Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/fix-slack-deferred-ingress-2",
+        "head_sha": "5e7d435fb0494ae46d32fce94c2adc6fd6a6bf67",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
