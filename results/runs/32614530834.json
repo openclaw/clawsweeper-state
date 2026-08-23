@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-45224",
+  "mode": "autonomous",
+  "run_id": "32614530834",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32614530834",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-45224.md",
+  "published_at": "2026-08-23T03:20:27.944Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_pr": null,
+  "summary": "Current main has the reported Browser CDP failure: async Playwright message-handler rejection escapes the transport’s synchronous catch, and ordinary loopback relay connections bypass that transport. A narrow fix PR plan is ready, but this worker cannot implement or validate it because the checkout is read-only, dependencies are absent, Corepack cannot write its cache, and the required sibling ../codex checkout is unavailable.",
+  "actions": [
+    {
+      "target": "#45224",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker environment; the canonical issue remains open and the executor should apply the attached narrow new-PR artifact in a writable checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-45224",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "A narrow, source-reproducible Browser-plugin repair is appropriate; executor validation remains required."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
