@@ -1,0 +1,119 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-81892",
+  "mode": "autonomous",
+  "run_id": "32645859522",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32645859522",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-81892.md",
+  "published_at": "2026-08-23T14:46:22.226Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/81892",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/81892",
+  "canonical_pr": null,
+  "summary": "#81892 remains a reproducible Matrix bug on main 000db97c: Matrix neither enables the existing explicit-reasoning capability nor renders typed reasoning payloads. A narrow fix PR is appropriate, but this worker cannot implement or validate it because the checkout is read-only, dependencies cannot be installed, and the required sibling Codex source cannot be cloned for the repository’s hard gate.",
+  "actions": [
+    {
+      "target": "#81892",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Implementation and required regression/changed-gate validation require a writable checkout with dependencies plus the mandated sibling ../codex source; neither is available in this worker."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-81892",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "A new narrow PR is the canonical repair path, but artifact execution is blocked by the read-only worker environment and mandatory validation/Codex-source gate."
+    },
+    {
+      "target": "#24411",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no closeout action is permitted or needed."
+    },
+    {
+      "target": "#82907",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no mutation."
+    },
+    {
+      "target": "#90560",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no mutation."
+    },
+    {
+      "target": "#93696",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact linked PR for central security handling; do not mutate or use it as the canonical fix path."
+    },
+    {
+      "target": "#93830",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no mutation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 4,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 4,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#81892",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
