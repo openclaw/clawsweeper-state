@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T15:30:59.065Z",
+  "updated_at": "2026-08-23T15:31:02.823Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128111:5384257886:2026-08-23T11:22:43Z:clawsweeper_needs_human",
-      "comment_id": "5384257886",
-      "comment_version_key": "5384257886:2026-08-23T11:22:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128111#issuecomment-5384257886",
-      "comment_created_at": "2026-08-23T04:42:52Z",
-      "comment_updated_at": "2026-08-23T11:22:43Z",
-      "comment_body_sha256": "61614dd82fcc795aa820e1ed53f37b5426b615439c2f6c329da981cadb61cada",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128111,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair is needed; wait for the exact-head checks and follow the normal generated-PR merge path. (sha=355e191764ed2636621f729500a3360449cf9f3e)",
-      "expected_head_sha": "355e191764ed2636621f729500a3360449cf9f3e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T11:23:33.783Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/control-ui-locale-refresh",
-        "head_sha": "355e191764ed2636621f729500a3360449cf9f3e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128192:5385736473:2026-08-23T11:23:18Z:re_review",
       "comment_id": "5385736473",
@@ -31628,6 +31595,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117480:5152181599:2026-08-23T15:27:50Z:clawsweeper_needs_human",
+      "comment_id": "5152181599",
+      "comment_version_key": "5152181599:2026-08-23T15:27:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117480#issuecomment-5152181599",
+      "comment_created_at": "2026-08-01T15:54:23Z",
+      "comment_updated_at": "2026-08-23T15:27:50Z",
+      "comment_body_sha256": "e45dd3a0ba04f8dd80cd5d7f585a4aceff696de447035b374ad6ca0b17fbac92",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117480,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A 300-second per-transfer limit intentionally turns exceptionally slow Testbox downloads into visible failures; confirm the exact PR head in Testbox CI before merge. (sha=2333938c86d0fbdb415f6cbe3f669e46e100618c)",
+      "expected_head_sha": "2333938c86d0fbdb415f6cbe3f669e46e100618c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T15:31:02.823Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/install-trufflehog-curl-timeout",
+        "head_sha": "2333938c86d0fbdb415f6cbe3f669e46e100618c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
