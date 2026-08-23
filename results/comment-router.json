@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T19:13:33.629Z",
+  "updated_at": "2026-08-23T19:14:13.236Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128235:5386427432:2026-08-23T14:08:37Z:re_review",
-      "comment_id": "5386427432",
-      "comment_version_key": "5386427432:2026-08-23T14:08:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128235#issuecomment-5386427432",
-      "comment_created_at": "2026-08-23T14:08:37Z",
-      "comment_updated_at": "2026-08-23T14:08:37Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128235,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T14:15:26.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-binding-log-proof",
-        "head_sha": "33668c7f407a24e68dbcf00f09481011e8ee2320",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128115:5386429299:2026-08-23T14:09:04Z:re_review",
       "comment_id": "5386429299",
@@ -32669,6 +32622,39 @@
         "kind": "pull_request",
         "branch": "fix-repo-ffmpeg-wasm-pnpm-minimum-release-age",
         "head_sha": "ed9f500e0613f3f3e10a3b3b61d7efc0c05c32f3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128266:5387060161:2026-08-23T19:10:02Z:clawsweeper_needs_human",
+      "comment_id": "5387060161",
+      "comment_version_key": "5387060161:2026-08-23T19:10:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128266#issuecomment-5387060161",
+      "comment_created_at": "2026-08-23T16:28:15Z",
+      "comment_updated_at": "2026-08-23T19:10:02Z",
+      "comment_body_sha256": "50fafcbac6b29e3139375b50ca1306cc3c9f7da010d54611d764832b0d1a0570",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128266,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body supplies useful after-fix Ollama live-output evidence, but Mistral has only a mocked SDK payload test; add a redacted afte... (sha=950a14ae3d20173a83577f8eb086bda744fe0709)",
+      "expected_head_sha": "950a14ae3d20173a83577f8eb086bda744fe0709",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T19:14:13.236Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/provider-tool-result-whitespace",
+        "head_sha": "950a14ae3d20173a83577f8eb086bda744fe0709",
         "cluster_id": null,
         "job_path": null
       }
