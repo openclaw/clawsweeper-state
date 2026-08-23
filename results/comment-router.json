@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T14:15:25.943Z",
+  "updated_at": "2026-08-23T14:15:29.033Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-23T09:47:23Z:clawsweeper_needs_human",
-      "comment_id": "5376735204",
-      "comment_version_key": "5376735204:2026-08-23T09:47:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
-      "comment_created_at": "2026-08-22T00:21:26Z",
-      "comment_updated_at": "2026-08-23T09:47:23Z",
-      "comment_body_sha256": "07e50bb8f96b92f79ee270c94fd45fa433786ec0ed8a80808ad867cf137e144f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127700,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Synchronize the TruffleHog scan contract (P1)** - The action is updated to v3.97.0, but its explicit binary input and guard still specify v3.95.9. The guard therefore rejects this head; decide whether the binary...; Review finding: [P1] Synchronize the TruffleHog scan contract — .github/workflows/ci.yml:1158-1162 - [P2] Refresh the Android attestation contract — .github/workflows/android-rele... (sha=39e0aa039eac7b4224b45bb9902f1d181ae03523)",
-      "expected_head_sha": "39e0aa039eac7b4224b45bb9902f1d181ae03523",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T09:48:18.404Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-2b47f3b96e",
-        "head_sha": "39e0aa039eac7b4224b45bb9902f1d181ae03523",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:83:5338603709:2026-08-23T09:47:38Z:clawsweeper_needs_human",
       "comment_id": "5338603709",
@@ -31303,6 +31270,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125815:5386454397:2026-08-23T14:14:42Z:re_review",
+      "comment_id": "5386454397",
+      "comment_version_key": "5386454397:2026-08-23T14:14:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125815#issuecomment-5386454397",
+      "comment_created_at": "2026-08-23T14:14:42Z",
+      "comment_updated_at": "2026-08-23T14:14:42Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125815,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T14:15:27.445Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-owner-lifecycle-cas",
+        "head_sha": "c4d0485a7d8b322a0425035430d309ba68229373",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
