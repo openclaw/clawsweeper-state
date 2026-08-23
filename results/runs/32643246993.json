@@ -1,0 +1,119 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-81892",
+  "mode": "autonomous",
+  "run_id": "32643246993",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32643246993",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-81892.md",
+  "published_at": "2026-08-23T13:53:08.025Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/81892",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/81892",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before code changes: the required sibling ../codex checkout is absent and this read-only environment cannot clone it or create the repair branch. Current main source evidence identifies the Matrix reasoning suppression path; the existing Matrix test command also cannot start because tsx is not installed.",
+  "actions": [
+    {
+      "target": "#81892",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "A narrow repair remains appropriate, but implementation cannot proceed until a writable checkout with ../codex source and installed dependencies is provided."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-81892",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor but cannot be locally implemented or validated in this environment."
+    },
+    {
+      "target": "#24411",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation action is valid."
+    },
+    {
+      "target": "#82907",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Already closed; its useful behavior constraints are carried into the new-fix artifact."
+    },
+    {
+      "target": "#90560",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation action is valid."
+    },
+    {
+      "target": "#93696",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantined independently; it does not block the ordinary Matrix bug repair path."
+    },
+    {
+      "target": "#93830",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation action is valid."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 4,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 4,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#81892",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
