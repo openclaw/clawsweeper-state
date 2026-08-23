@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-81892",
+  "mode": "autonomous",
+  "run_id": "32647241424",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32647241424",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-81892.md",
+  "published_at": "2026-08-23T15:14:53.412Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/81892",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/81892",
+  "canonical_pr": null,
+  "summary": "#81892 remains the open canonical report. Current main still has the Matrix capability gate and suppresses explicit reasoning payloads; a narrow credited fix plan is ready, but this worker cannot implement or validate it because the checkout is read-only, required ../codex source is absent, and Vitest cannot load the missing tsx dependency.",
+  "actions": [
+    {
+      "target": "#81892",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Implementation and required validation are blocked by the local sandbox, not by a maintainer decision. The planned artifact gives an executor the narrow PR path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-81892",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#81892",
+      "candidate_fix": null,
+      "reason": "Emit a narrow new-fix-PR artifact; the executor must complete the blocked local implementation and validation steps before opening it."
+    },
+    {
+      "target": "#24411",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; this lane may not close or mutate it."
+    },
+    {
+      "target": "#82907",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; this lane may not close or mutate it."
+    },
+    {
+      "target": "#90560",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; this lane may not close or mutate it."
+    },
+    {
+      "target": "#93696",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantined independently; it does not block the ordinary Matrix reasoning repair path."
+    },
+    {
+      "target": "#93830",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; this lane may not close or mutate it."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 4,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
