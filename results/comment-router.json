@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-23T18:02:44.338Z",
+  "updated_at": "2026-08-23T17:59:34.338Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127076:5366516383:2026-08-23T13:23:39Z:clawsweeper_auto_repair",
+      "comment_id": "5366516383",
+      "comment_version_key": "5366516383:2026-08-23T13:23:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127076#issuecomment-5366516383",
+      "comment_created_at": "2026-08-21T07:20:03Z",
+      "comment_updated_at": "2026-08-23T13:23:39Z",
+      "comment_body_sha256": "46379cc7a8623c446bd15f39b49ed1eae5f6d36bfec053ebc43a4ab66fe2e871",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127076,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d74c18641e1fdd2e8ce4de2b9bb677d0ad80ea62)",
+      "expected_head_sha": "d74c18641e1fdd2e8ce4de2b9bb677d0ad80ea62",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T13:31:34.709Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/chat-attachment-kinds",
+        "head_sha": "e62b8b83050a00ceee757e3e4374bfb06f87957b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127093:5367077960:2026-08-23T13:26:59Z:clawsweeper_needs_human",
       "comment_id": "5367077960",
@@ -32528,53 +32561,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124222:5387607416:2026-08-23T18:01:59Z:re_review",
-      "comment_id": "5387607416",
-      "comment_version_key": "5387607416:2026-08-23T18:01:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124222#issuecomment-5387607416",
-      "comment_created_at": "2026-08-23T18:01:59Z",
-      "comment_updated_at": "2026-08-23T18:01:59Z",
-      "comment_body_sha256": "e9abca7d4385c3f65f830126231917513be0d084b99829d17dd825b05c61399f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124222,
-      "author": "a-yeyang",
-      "author_id": 88581400,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T18:02:42.526Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-rich-callback-edit",
-        "head_sha": "4c3b62ba677c10371573e4bcee872360aea0b457",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
