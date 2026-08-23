@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T10:07:42.214Z",
+  "updated_at": "2026-08-23T10:10:03.712Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127797:5378997071:2026-08-23T04:15:23Z:clawsweeper_needs_human",
-      "comment_id": "5378997071",
-      "comment_version_key": "5378997071:2026-08-23T04:15:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127797#issuecomment-5378997071",
-      "comment_created_at": "2026-08-22T07:24:15Z",
-      "comment_updated_at": "2026-08-23T04:15:23Z",
-      "comment_body_sha256": "1803c3d086be9ce71e06479fff1a0c83231313dbc0504438ed2aaade8f74d7ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127797,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Live GitHub reads and deeper promisor-history retrieval were unavailable during review, so current server-side merge state and the original introducing commit could not be independent... (sha=b9903a7c09720569582e5a06e0514de104b48e31)",
-      "expected_head_sha": "b9903a7c09720569582e5a06e0514de104b48e31",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T04:23:51.297Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/sync-hook-message-pipeline-main",
-        "head_sha": "b9903a7c09720569582e5a06e0514de104b48e31",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127959:5381016925:2026-08-23T04:15:34Z:clawsweeper_needs_human",
       "comment_id": "5381016925",
@@ -31991,6 +31958,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121123:5385453026:2026-08-23T10:09:18Z:re_review",
+      "comment_id": "5385453026",
+      "comment_version_key": "5385453026:2026-08-23T10:09:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121123#issuecomment-5385453026",
+      "comment_created_at": "2026-08-23T10:09:18Z",
+      "comment_updated_at": "2026-08-23T10:09:18Z",
+      "comment_body_sha256": "e156a20f194f76d62c966816450dd57f361a36fa1275efc3821dce638f176959",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121123,
+      "author": "arhxam",
+      "author_id": 132888838,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T10:10:02.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-sticker-unavailable-context",
+        "head_sha": "f00d878edc2f9cb2897c541579a37e326d5de380",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
