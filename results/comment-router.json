@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T09:37:29.481Z",
+  "updated_at": "2026-08-23T09:37:09.691Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5337912536:2026-08-19T05:27:16Z:re_review",
@@ -31640,6 +31640,59 @@
       "target": null
     },
     {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125422:5321015898:2026-08-23T09:34:33Z:clawsweeper_auto_repair",
+      "comment_id": "5321015898",
+      "comment_version_key": "5321015898:2026-08-23T09:34:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125422#issuecomment-5321015898",
+      "comment_created_at": "2026-08-17T22:31:11Z",
+      "comment_updated_at": "2026-08-23T09:34:33Z",
+      "comment_body_sha256": "57107b4c3e044b95b4df716593f99cbe66efb5009eb887c0b711b5a16546cebb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125422,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=14710e9a297a05524585b268d6514587725f3dfe)",
+      "expected_head_sha": "14710e9a297a05524585b268d6514587725f3dfe",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-23T09:36:53.607Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/fix-cron-cross-tick-admission",
+        "head_sha": "14710e9a297a05524585b268d6514587725f3dfe",
+        "cluster_id": "automerge-openclaw-openclaw-125422",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125422.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125422.md"
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125422.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127110:5367700593:2026-08-23T09:35:54Z:clawsweeper_needs_human",
       "comment_id": "5367700593",
       "comment_version_key": "5367700593:2026-08-23T09:35:54Z",
@@ -31764,53 +31817,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125422:5321015898:2026-08-23T09:34:33Z:clawsweeper_auto_repair",
-      "comment_id": "5321015898",
-      "comment_version_key": "5321015898:2026-08-23T09:34:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125422#issuecomment-5321015898",
-      "comment_created_at": "2026-08-17T22:31:11Z",
-      "comment_updated_at": "2026-08-23T09:34:33Z",
-      "comment_body_sha256": "57107b4c3e044b95b4df716593f99cbe66efb5009eb887c0b711b5a16546cebb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125422,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=14710e9a297a05524585b268d6514587725f3dfe)",
-      "expected_head_sha": "14710e9a297a05524585b268d6514587725f3dfe",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T09:37:12.479Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/fix-cron-cross-tick-admission",
-        "head_sha": "14710e9a297a05524585b268d6514587725f3dfe",
-        "cluster_id": "automerge-openclaw-openclaw-125422",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125422.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125422.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
