@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T15:31:02.823Z",
+  "updated_at": "2026-08-23T15:31:04.738Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128192:5385736473:2026-08-23T11:23:18Z:re_review",
-      "comment_id": "5385736473",
-      "comment_version_key": "5385736473:2026-08-23T11:23:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128192#issuecomment-5385736473",
-      "comment_created_at": "2026-08-23T11:23:18Z",
-      "comment_updated_at": "2026-08-23T11:23:18Z",
-      "comment_body_sha256": "885be820f767223b577d31efe34757690c12a9f548bf546889522af9037c39bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128192,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T11:24:06.788Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/beta3-final-candidate-repair-20260823",
-        "head_sha": "c3099598934cc1a7cea3209bf7f35cd2ebb4ac05",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119055:5385737210:2026-08-23T11:23:30Z:re_review",
       "comment_id": "5385737210",
@@ -31625,6 +31578,39 @@
         "kind": "pull_request",
         "branch": "fix/install-trufflehog-curl-timeout",
         "head_sha": "2333938c86d0fbdb415f6cbe3f669e46e100618c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:514:5382957488:2026-08-23T15:28:37Z:clawsweeper_needs_human",
+      "comment_id": "5382957488",
+      "comment_version_key": "5382957488:2026-08-23T15:28:37Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/514#issuecomment-5382957488",
+      "comment_created_at": "2026-08-22T22:35:37Z",
+      "comment_updated_at": "2026-08-23T15:28:37Z",
+      "comment_body_sha256": "c076637589d452cf54d94250bffe763b3e1c5a3dbee6ab180997a5f2185f4a43",
+      "repo": "openclaw/acpx",
+      "issue_number": 514,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The four callback names, payloads, ordering, and awaited admission semantics become a durable embedding API contract. (sha=08a86019e73ea140f5eb3e2eebfbc061344eb13e)",
+      "expected_head_sha": "08a86019e73ea140f5eb3e2eebfbc061344eb13e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T15:31:04.738Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/process-lifecycle-hooks",
+        "head_sha": "08a86019e73ea140f5eb3e2eebfbc061344eb13e",
         "cluster_id": null,
         "job_path": null
       }
