@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T06:55:22.359Z",
+  "updated_at": "2026-08-23T06:55:41.456Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120794:5229034586:2026-08-23T02:03:00Z:clawsweeper_auto_repair",
-      "comment_id": "5229034586",
-      "comment_version_key": "5229034586:2026-08-23T02:03:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120794#issuecomment-5229034586",
-      "comment_created_at": "2026-08-09T00:43:10Z",
-      "comment_updated_at": "2026-08-23T02:03:00Z",
-      "comment_body_sha256": "74197c5f2fb864b7fd48c4042603a243127ce4bfaa90e42c4c29e2fdb7127027",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120794,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=77c93203107013939ac9b28d0a1650d68bf75d70)",
-      "expected_head_sha": "77c93203107013939ac9b28d0a1650d68bf75d70",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T02:04:02.193Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/channel-context-budget",
-        "head_sha": "77c93203107013939ac9b28d0a1650d68bf75d70",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120794:5265301886:2026-08-12T10:09:13Z:re_review",
       "comment_id": "5265301886",
@@ -31403,6 +31370,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126145:5337218881:2026-08-23T06:54:35Z:clawsweeper_needs_human",
+      "comment_id": "5337218881",
+      "comment_version_key": "5337218881:2026-08-23T06:54:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126145#issuecomment-5337218881",
+      "comment_created_at": "2026-08-19T03:38:29Z",
+      "comment_updated_at": "2026-08-23T06:54:35Z",
+      "comment_body_sha256": "205be5c454bffdbbdf515c7d64994c37bf0b3f01ca6c0c54b35dac89d4134b4b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126145,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes when cron delivery state becomes durable; rebase and exact-head CI must confirm the durable sender’s partial-delivery and receipt-adoption semantics still match the callb... (sha=ea427f7dc0bf4c72c1a4ac880231475b7755ce97)",
+      "expected_head_sha": "ea427f7dc0bf4c72c1a4ac880231475b7755ce97",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T06:55:41.456Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-outbound-route-persist-after-send-112710",
+        "head_sha": "ea427f7dc0bf4c72c1a4ac880231475b7755ce97",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
