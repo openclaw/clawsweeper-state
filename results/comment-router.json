@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T17:36:52.679Z",
+  "updated_at": "2026-08-23T17:37:01.130Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126180:5386154943:2026-08-23T13:07:18Z:re_review",
-      "comment_id": "5386154943",
-      "comment_version_key": "5386154943:2026-08-23T13:07:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126180#issuecomment-5386154943",
-      "comment_created_at": "2026-08-23T13:07:18Z",
-      "comment_updated_at": "2026-08-23T13:07:18Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126180,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T13:08:04.281Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/control-ui-stuck-queue",
-        "head_sha": "f5a180f45a63fca48b705fbea6147bacae3e9cb2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128174:5385446204:2026-08-23T13:07:52Z:clawsweeper_auto_repair",
       "comment_id": "5385446204",
@@ -32445,6 +32398,65 @@
       "finding_id": null,
       "status": "waiting",
       "processed_at": "2026-08-23T17:36:52.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/improve-mobile-model-picker-padding",
+        "head_sha": "811140e0a0d05f9cadc5410bc8a97ea1319d2151",
+        "cluster_id": "automerge-openclaw-openclaw-128240",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128240.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "pending",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "repair_needed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128240.md"
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128240:5387491231:2026-08-23T17:36:26Z:maintainer_approve_automerge",
+      "comment_id": "5387491231",
+      "comment_version_key": "5387491231:2026-08-23T17:36:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128240#issuecomment-5387491231",
+      "comment_created_at": "2026-08-23T17:36:26Z",
+      "comment_updated_at": "2026-08-23T17:36:26Z",
+      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128240,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "structured ClawSweeper verdict: pass; PR head is behind base and needs a cloud rebase repair before automerge",
+      "expected_head_sha": "811140e0a0d05f9cadc5410bc8a97ea1319d2151",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-23T17:37:01.130Z",
       "target": {
         "kind": "pull_request",
         "branch": "openclaw/improve-mobile-model-picker-padding",
