@@ -25134,39 +25134,6 @@
       ]
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:124014:5372567260:2026-08-21T16:32:12Z:maintainer_approve_automerge",
-      "comment_id": "5372567260",
-      "comment_version_key": "5372567260:2026-08-21T16:32:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5372567260",
-      "comment_created_at": "2026-08-21T16:32:12Z",
-      "comment_updated_at": "2026-08-21T16:32:12Z",
-      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124014,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T14:09:34.218Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auth-reauth-state-reset",
-        "head_sha": "a88a739e217ab2f16a9ff84315473190fa4c15cf",
-        "cluster_id": "automerge-openclaw-openclaw-124014",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
-      }
-    },
-    {
       "idempotency_key": "clawsweeper-repair:steipete/releasebar:85:5354644456:2026-08-23T14:10:18Z:clawsweeper_needs_human",
       "comment_id": "5354644456",
       "comment_version_key": "5354644456:2026-08-23T14:10:18Z",
@@ -31652,6 +31619,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124014:5372567260:2026-08-21T16:32:12Z:maintainer_approve_automerge",
+      "comment_id": "5372567260",
+      "comment_version_key": "5372567260:2026-08-21T16:32:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5372567260",
+      "comment_created_at": "2026-08-21T16:32:12Z",
+      "comment_updated_at": "2026-08-21T16:32:12Z",
+      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124014,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "structured ClawSweeper verdict: pass; PR head is behind base and needs a cloud rebase repair before automerge",
+      "expected_head_sha": "a88a739e217ab2f16a9ff84315473190fa4c15cf",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T14:51:12.296Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/auth-reauth-state-reset",
+        "head_sha": "a88a739e217ab2f16a9ff84315473190fa4c15cf",
+        "cluster_id": "automerge-openclaw-openclaw-124014",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "repair_needed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127853:5379784166:2026-08-23T14:46:39Z:clawsweeper_needs_human",
