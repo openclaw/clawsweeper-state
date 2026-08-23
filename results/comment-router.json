@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-23T10:59:13.797Z",
+  "updated_at": "2026-08-23T10:55:16.343Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127752:5377255904:2026-08-23T05:00:22Z:clawsweeper_needs_human",
+      "comment_id": "5377255904",
+      "comment_version_key": "5377255904:2026-08-23T05:00:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127752#issuecomment-5377255904",
+      "comment_created_at": "2026-08-22T02:02:44Z",
+      "comment_updated_at": "2026-08-23T05:00:22Z",
+      "comment_body_sha256": "9ec0c3dd148d4501a2f1d09f8820e789e22c20533c03a69f99dd0f7d4d872dc3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127752,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: paired-node and UI evidence are useful, but the direct AWS broker never produced an enrolled node, lea...; Review finding: [P1] Recheck command authorization after pairing resolution — extensions/crabbox/src/crabbox-worker-provider.ts:479 - [high] Command revocation can race final node... (sha=d74ebfc0b04f078115190304b610faa82211d7d0)",
+      "expected_head_sha": "d74ebfc0b04f078115190304b610faa82211d7d0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T05:32:15.658Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cloud-node-multimode-harnesses",
+        "head_sha": "d74ebfc0b04f078115190304b610faa82211d7d0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127853:5379784166:2026-08-23T04:57:36Z:clawsweeper_needs_human",
       "comment_id": "5379784166",
@@ -31561,53 +31594,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128192:5385641082:2026-08-23T10:58:31Z:re_review",
-      "comment_id": "5385641082",
-      "comment_version_key": "5385641082:2026-08-23T10:58:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128192#issuecomment-5385641082",
-      "comment_created_at": "2026-08-23T10:58:31Z",
-      "comment_updated_at": "2026-08-23T10:58:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128192,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T10:59:12.039Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/beta3-final-candidate-repair-20260823",
-        "head_sha": "fc4cf8b8b4e9ca163af22e80319d8068d59e320b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
