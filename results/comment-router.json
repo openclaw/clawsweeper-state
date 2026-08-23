@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T02:55:12.840Z",
+  "updated_at": "2026-08-23T02:55:16.048Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:47:5305413167:2026-08-22T21:16:05Z:clawsweeper_needs_human",
-      "comment_id": "5305413167",
-      "comment_version_key": "5305413167:2026-08-22T21:16:05Z",
-      "comment_url": "https://github.com/openclaw/clawscan/pull/47#issuecomment-5305413167",
-      "comment_created_at": "2026-08-16T02:53:29Z",
-      "comment_updated_at": "2026-08-22T21:16:05Z",
-      "comment_body_sha256": "376eafa901421ed7a40269bad0845b65d703fc354e12dcf765e4f1182b05cfb5",
-      "repo": "openclaw/clawscan",
-      "issue_number": 47,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The fixed 5,520-ID ceiling is tied to the pinned SkillTrustBench set; a future dataset expansion must update the limit and documentation together. (sha=6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a)",
-      "expected_head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T21:19:12.414Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ids-stream-semantic-bound",
-        "head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82582:4466902716:2026-08-22T21:20:32Z:autoclose",
       "comment_id": "4466902716",
@@ -30502,6 +30469,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T02:55:12.840Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128077:5383795892:2026-08-23T02:54:33Z:clawsweeper_needs_human",
+      "comment_id": "5383795892",
+      "comment_version_key": "5383795892:2026-08-23T02:54:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128077#issuecomment-5383795892",
+      "comment_created_at": "2026-08-23T02:27:16Z",
+      "comment_updated_at": "2026-08-23T02:54:33Z",
+      "comment_body_sha256": "c80ed9ee800bd8de560efe744e29ef346034b594fcc410f838a0d59d2df82265",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128077,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body shows the global setting changes behavior, but does not prove a configured non-owner still...; Review finding: [P1] Restrict the opt-out to verified owner turns — src/agents/transcript-credential-safety.ts:21-24 - [high] Do not apply an operator exception to non-owner turns... (sha=1511316d4d7cc7a850a08ef24ccbfdf8cc6a532d)",
+      "expected_head_sha": "1511316d4d7cc7a850a08ef24ccbfdf8cc6a532d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T02:55:16.048Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/credential-safety-opt-out",
+        "head_sha": "1511316d4d7cc7a850a08ef24ccbfdf8cc6a532d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
