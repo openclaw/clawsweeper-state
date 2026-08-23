@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T17:34:37.573Z",
+  "updated_at": "2026-08-23T17:36:52.679Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128220:5386143661:2026-08-23T13:04:44Z:clawsweeper_needs_human",
-      "comment_id": "5386143661",
-      "comment_version_key": "5386143661:2026-08-23T13:04:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128220#issuecomment-5386143661",
-      "comment_created_at": "2026-08-23T13:04:44Z",
-      "comment_updated_at": "2026-08-23T13:04:44Z",
-      "comment_body_sha256": "c3352eea6e9a2a6e12d510161a20a36d32277d288ff65171eea9cbd9b7f7574b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128220,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Production code grows by 15 net lines for a bug fix; the ordered fallback and source guard are justified by the shared projection dropping fileName, so this resolver should remain the... (sha=d97079d580c8071ca635a6d34f95e780030b6021)",
-      "expected_head_sha": "d97079d580c8071ca635a6d34f95e780030b6021",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T13:07:32.685Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-media-filename-kind-20260823",
-        "head_sha": "d97079d580c8071ca635a6d34f95e780030b6021",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126180:5386154943:2026-08-23T13:07:18Z:re_review",
       "comment_id": "5386154943",
@@ -32452,6 +32419,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128240:5387489838:2026-08-23T17:36:08Z:maintainer_approve_automerge",
+      "comment_id": "5387489838",
+      "comment_version_key": "5387489838:2026-08-23T17:36:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128240#issuecomment-5387489838",
+      "comment_created_at": "2026-08-23T17:36:08Z",
+      "comment_updated_at": "2026-08-23T17:36:08Z",
+      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128240,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "structured ClawSweeper verdict: pass; PR head is behind base and needs a cloud rebase repair before automerge",
+      "expected_head_sha": "811140e0a0d05f9cadc5410bc8a97ea1319d2151",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-23T17:36:52.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/improve-mobile-model-picker-padding",
+        "head_sha": "811140e0a0d05f9cadc5410bc8a97ea1319d2151",
+        "cluster_id": "automerge-openclaw-openclaw-128240",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128240.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "pending",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "repair_needed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128240.md"
+        }
+      ]
     }
   ]
 }
