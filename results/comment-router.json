@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T14:06:35.084Z",
+  "updated_at": "2026-08-23T14:09:13.261Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94871:4749942672:2026-08-23T09:19:49Z:clawsweeper_auto_repair",
-      "comment_id": "4749942672",
-      "comment_version_key": "4749942672:2026-08-23T09:19:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/94871#issuecomment-4749942672",
-      "comment_created_at": "2026-06-19T08:39:27Z",
-      "comment_updated_at": "2026-08-23T09:19:49Z",
-      "comment_body_sha256": "70943728a5c615dc465abd375048ef31f5d3567b195266817a287d932ed631ca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 94871,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fb11c8a7ccc669a6373310a0fe19de339f3d82e8)",
-      "expected_head_sha": "fb11c8a7ccc669a6373310a0fe19de339f3d82e8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T09:32:23.938Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/async-io-credential-paths-78805",
-        "head_sha": "fb11c8a7ccc669a6373310a0fe19de339f3d82e8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:95847:4781080101:2026-08-23T09:20:13Z:clawsweeper_needs_human",
       "comment_id": "4781080101",
@@ -31401,6 +31368,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128223:5386159713:2026-08-23T14:08:00Z:clawsweeper_needs_human",
+      "comment_id": "5386159713",
+      "comment_version_key": "5386159713:2026-08-23T14:08:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128223#issuecomment-5386159713",
+      "comment_created_at": "2026-08-23T13:08:26Z",
+      "comment_updated_at": "2026-08-23T14:08:00Z",
+      "comment_body_sha256": "5b28c026faed79593d463ef0ff7878fdc0a7c91acbeac8b0ff1dabef535906ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128223,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing configurations with an authored alias that shadows a runtime-materialized built-in now consistently select the authored target for future aliases add writes; this matches mod... (sha=01d7ef51ec9fa22790a398586253dae56f038e41)",
+      "expected_head_sha": "01d7ef51ec9fa22790a398586253dae56f038e41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T14:09:13.261Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/models-aliases-add-cas-snapshot",
+        "head_sha": "01d7ef51ec9fa22790a398586253dae56f038e41",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
