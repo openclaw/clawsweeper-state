@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T04:53:05.298Z",
+  "updated_at": "2026-08-23T04:53:13.488Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128050:5383167811:2026-08-22T23:33:41Z:re_review",
-      "comment_id": "5383167811",
-      "comment_version_key": "5383167811:2026-08-22T23:33:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128050#issuecomment-5383167811",
-      "comment_created_at": "2026-08-22T23:33:41Z",
-      "comment_updated_at": "2026-08-22T23:33:41Z",
-      "comment_body_sha256": "69e14c256e8d38a0cd58ad445b354548fd8050337bf34b567e7b2bab0caa41a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128050,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T23:34:21.924Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/find-session-about-x-video-web-ui-feature",
-        "head_sha": "7e4b9faa454ca939dc7d9288f9ef8b41ec19de39",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3140:5379656136:2026-08-22T23:34:22Z:clawsweeper_needs_human",
       "comment_id": "5379656136",
@@ -31048,6 +31001,39 @@
         "kind": "pull_request",
         "branch": "gaoanze888/mcp-dedupe-blocked-env-warnings",
         "head_sha": "adfb8df7ab83d97810dfbdb46536b2dfd8083ede",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128104:5384203997:2026-08-23T04:52:09Z:clawsweeper_needs_human",
+      "comment_id": "5384203997",
+      "comment_version_key": "5384203997:2026-08-23T04:52:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128104#issuecomment-5384203997",
+      "comment_created_at": "2026-08-23T04:26:57Z",
+      "comment_updated_at": "2026-08-23T04:52:09Z",
+      "comment_body_sha256": "223294e90e6e41d601bf0873ebb8465ce761c212b8a7fbdb75ccc2cf853b7a45",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128104,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes how persisted session transcript rows become restart prompts; complete exact-head CI and a normal base comparison before merge, since this checkout could not resolve the... (sha=b3339dc1123dfa235535279cda1c21e91345a20d)",
+      "expected_head_sha": "b3339dc1123dfa235535279cda1c21e91345a20d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T04:53:13.488Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/subagent-restart-transcript-qa",
+        "head_sha": "b3339dc1123dfa235535279cda1c21e91345a20d",
         "cluster_id": null,
         "job_path": null
       }
