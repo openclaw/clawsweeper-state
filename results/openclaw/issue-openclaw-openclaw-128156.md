@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128156"
 mode: "autonomous"
-run_id: "32632465014"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32632465014"
+run_id: "32635336102"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32635336102"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-23T11:06:06.755Z"
-canonical: "https://github.com/openclaw/openclaw/issues/128156"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/128156"
+published_at: "2026-08-23T11:11:59.450Z"
+canonical: "#128156"
+canonical_issue: "#128156"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-128156
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32632465014](https://github.com/openclaw/clawsweeper/actions/runs/32632465014)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32635336102](https://github.com/openclaw/clawsweeper/actions/runs/32635336102)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/128156
+Canonical: #128156
 
 ## Summary
 
-#128156 remains the canonical availability-performance report. Current main at 7700a3b3 retains the synchronous per-pattern bounded replacement walk, but implementation is blocked by the repository-required direct `../codex` source inspection: that sibling checkout is absent and this read-only worker cannot create it. A narrow, credit-preserving repair plan is prepared for an environment satisfying that gate.
+Current main source shows the broad default prefilter admits text, then the redactor runs every resolved pattern through bounded replacement. A narrow cloned-regex no-match gate at that owner boundary is appropriate, but this read-only worker cannot install dependencies, edit, validate, create the required branch, or satisfy the required sibling-Codex inspection gate.
 
 ## Impact
 
@@ -48,14 +48,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/128156
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | skipped |  |  | worker marked the fix path as non-executable; closure actions may still apply |
-| issue_implementation_status_comment | updated | #128156 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/128156
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128156 | keep_canonical | planned | canonical | Keep the issue open as the single implementation and validation thread. |
-| cluster:issue-openclaw-openclaw-128156 | fix_needed | blocked | canonical | Implementation is blocked only on the required direct Codex source inspection and a baseline deterministic work-count reproduction. |
-| cluster:issue-openclaw-openclaw-128156 | build_fix_artifact | planned | canonical | Prepare the bounded, semantics-preserving repair for a writable environment that can satisfy the blocking gates. |
+| #128156 | keep_canonical | planned | canonical | The other hydrated issues are distinct event-loop-stall sources or downstream consequences; #128156 is the sole repair target. |
+| #128156 | fix_needed | blocked | canonical | A writable runner must implement and validate the repair before a PR can be opened. |
+| #128156 | build_fix_artifact | planned | canonical | Create one new narrow PR from clawsweeper/issue-openclaw-openclaw-128156 when a writable, dependency-capable runner is available. |
 
 ## Needs Human
 
-- Provide a readable sibling `../codex` checkout, or run the artifact in an environment permitted to create it, so the acting executor can perform the mandatory direct Codex source inspection before deciding or changing code.
+- none
