@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T02:28:14.961Z",
+  "updated_at": "2026-08-23T02:28:23.179Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:87471:4589458281:2026-06-01T04:07:36Z:re_review",
-      "comment_id": "4589458281",
-      "comment_version_key": "4589458281:2026-06-01T04:07:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/87471#issuecomment-4589458281",
-      "comment_created_at": "2026-06-01T04:07:36Z",
-      "comment_updated_at": "2026-06-01T04:07:36Z",
-      "comment_body_sha256": "d916549d016d73f652c5c54b99bb430abb133d7d32496284e7e77dd47fc93a63",
-      "repo": "openclaw/openclaw",
-      "issue_number": 87471,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T20:13:27.277Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:87471:4595082760:2026-06-01T17:47:14Z:re_review",
       "comment_id": "4595082760",
@@ -30687,6 +30660,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T02:28:14.961Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128077:5383795892:2026-08-23T02:27:16Z:clawsweeper_needs_human",
+      "comment_id": "5383795892",
+      "comment_version_key": "5383795892:2026-08-23T02:27:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128077#issuecomment-5383795892",
+      "comment_created_at": "2026-08-23T02:27:16Z",
+      "comment_updated_at": "2026-08-23T02:27:16Z",
+      "comment_body_sha256": "c171c7be619ccab0c17a587a921c0e94b2e4c97f7f651045daa803abcd8e93a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128077,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restrict the opt-out to verified operator turns (P1)** - This returns undefined for the whole contract, so one gateway-wide setting also removes the no-solicitation and no-echo rules from non-owner channel and h...; Review finding: [P1] Restrict the opt-out to verified operator turns — src/agents/transcript-credential-safety.ts:21-24 - [high] Global opt-out drops protections for non-owner tur... (sha=1511316d4d7cc7a850a08ef24ccbfdf8cc6a532d)",
+      "expected_head_sha": "1511316d4d7cc7a850a08ef24ccbfdf8cc6a532d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T02:28:23.179Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/credential-safety-opt-out",
+        "head_sha": "1511316d4d7cc7a850a08ef24ccbfdf8cc6a532d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
