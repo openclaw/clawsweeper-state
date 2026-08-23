@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-45224",
+  "mode": "autonomous",
+  "run_id": "32608071086",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32608071086",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-45224.md",
+  "published_at": "2026-08-23T00:39:49.033Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/45224",
+  "canonical_pr": null,
+  "summary": "#45224 remains the canonical reproducible browser-CDP crash report. Current main routes unpinned/ordinary CDP connections directly through Playwright, bypassing the plugin-owned callback-containment transport. A narrow fix plan is ready, but this read-only checkout cannot create the required branch/test changes or install dependencies; the mandatory sibling ../codex source is also absent and cannot be cloned under the filesystem policy.",
+  "actions": [
+    {
+      "target": "#45224",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "The canonical repair is to use the existing transport for both pinned and ordinary CDP connections, retaining optional DNS lookup behavior."
+    },
+    {
+      "target": "#49163",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Already closed in hydrated GitHub state."
+    },
+    {
+      "target": "#52051",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Already closed in hydrated GitHub state."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-45224",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#45224",
+      "candidate_fix": null,
+      "reason": "Executor must apply the narrow fix in a writable checkout, inspect ../codex as required by repository policy, then run the regression and changed-file gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
