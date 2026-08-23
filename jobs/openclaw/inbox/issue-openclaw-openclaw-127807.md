@@ -67,18 +67,24 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/127807 at the embedded-agent tool-result bridge. Preserve the existing AgentToolResult `terminate` field from the raw embedded event through middleware output and the callback return, so the canonical agent loop receives it. Add a regression that fails before the change because middleware-produced termination is dropped, then prove a terminal result prevents a subsequent model turn while preserving current multi-tool batch semantics. Do not add a hook, config option, or parallel termination API. Include release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the embedded-agent plugin tool-result middleware terminal propagation bug. Preserve the existing `AgentToolResult.terminate` field through `src/agents/embedded-agent-runner/extensions.ts`, `src/agents/sessions/extensions/types.ts`, `src/agents/sessions/extensions/runner.ts`, and `src/agents/sessions/agent-session-base.ts` so a plugin middleware return of `{ result: { ...event.result, terminate: true } }` reaches Agent Core. Do not add a parallel top-level middleware field or make `after_tool_call` non-observational. Add a regression that proves a terminal middleware result ends a single-tool batch and that mixed batches retain Agent Core's all-results terminal rule. Do not edit CHANGELOG.md; put user-visible release-note context in the PR body.
 
 Likely files:
 
 - src/agents/embedded-agent-runner/extensions.ts
-- src/agents/embedded-agent-runner/extensions.test.ts
+- src/agents/sessions/extensions/types.ts
+- src/agents/sessions/extensions/runner.ts
+- src/agents/sessions/agent-session-base.ts
+- src/agents/embedded-agent-runner.extensions.test.ts
+- src/agents/sessions/extensions/runner.test.ts
 - packages/agent-core/src/agent-loop.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/extensions.test.ts
-- node scripts/run-vitest.mjs packages/agent-core/src/agent-loop.test.ts
+- pnpm test src/agents/embedded-agent-runner.extensions.test.ts
+- pnpm test src/agents/sessions/extensions/runner.test.ts
+- pnpm test packages/agent-core/src/agent-loop.test.ts
+- pnpm check:changed -- src/agents/embedded-agent-runner/extensions.ts src/agents/sessions/extensions/types.ts src/agents/sessions/extensions/runner.ts src/agents/sessions/agent-session-base.ts
 
 ## Operator Prompt
 
