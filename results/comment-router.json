@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T03:30:06.941Z",
+  "updated_at": "2026-08-23T03:30:17.467Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5312025386:2026-08-17T04:57:52Z:re_review",
-      "comment_id": "5312025386",
-      "comment_version_key": "5312025386:2026-08-17T04:57:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5312025386",
-      "comment_created_at": "2026-08-17T04:57:52Z",
-      "comment_updated_at": "2026-08-17T04:57:52Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T21:38:19.159Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5312168248:2026-08-17T05:20:07Z:re_review",
       "comment_id": "5312168248",
@@ -30730,6 +30703,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:69417:4340779491:2026-08-23T03:29:21Z:clawsweeper_needs_human",
+      "comment_id": "4340779491",
+      "comment_version_key": "4340779491:2026-08-23T03:29:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/69417#issuecomment-4340779491",
+      "comment_created_at": "2026-04-29T04:24:13Z",
+      "comment_updated_at": "2026-08-23T03:29:21Z",
+      "comment_body_sha256": "02718212fa5643796f98bd161c6a3926932f7f47ff6a7ff6fda0cdf616dbb468",
+      "repo": "openclaw/openclaw",
+      "issue_number": 69417,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A configuration saved with structured MCP SecretRefs will not parse on an older OpenClaw release after downgrade. (sha=1e2396d0a5e15cae7b887959f09633f88214b5b8)",
+      "expected_head_sha": "1e2396d0a5e15cae7b887959f09633f88214b5b8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T03:30:17.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/mcp-secretref-core-mcp-upstream-clean",
+        "head_sha": "1e2396d0a5e15cae7b887959f09633f88214b5b8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
