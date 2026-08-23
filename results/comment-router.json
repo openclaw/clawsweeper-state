@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T05:00:26.335Z",
+  "updated_at": "2026-08-23T05:02:10.408Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112623:5094504138:2026-07-27T17:21:09Z:re_review",
-      "comment_id": "5094504138",
-      "comment_version_key": "5094504138:2026-07-27T17:21:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112623#issuecomment-5094504138",
-      "comment_created_at": "2026-07-27T17:21:09Z",
-      "comment_updated_at": "2026-07-27T17:21:09Z",
-      "comment_body_sha256": "a33519167a96c6c81614d553378d98ecfe3a8ac783cd4c4eb655b83c00fcc2d8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112623,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T23:45:21.406Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112623:5150561797:2026-08-01T08:11:06Z:re_review",
       "comment_id": "5150561797",
@@ -31089,6 +31062,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T05:00:26.335Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127853:5379784166:2026-08-23T04:57:36Z:clawsweeper_needs_human",
+      "comment_id": "5379784166",
+      "comment_version_key": "5379784166:2026-08-23T04:57:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127853#issuecomment-5379784166",
+      "comment_created_at": "2026-08-22T10:33:56Z",
+      "comment_updated_at": "2026-08-23T04:57:36Z",
+      "comment_body_sha256": "4430ec194e1fe38542c4f4a1bd1aafbe2ed6e9c4bf49f8e401288d976f615ee3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127853,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body contains older-head embedded-runner test output, but not the current-head ephemeral-Gateway result that exercises the added provider-i... (sha=5f8c56adb4aec2f8aa75c836e3578dedb90c8e54)",
+      "expected_head_sha": "5f8c56adb4aec2f8aa75c836e3578dedb90c8e54",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T05:02:10.408Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/runtime-only-hidden-inbound-context",
+        "head_sha": "5f8c56adb4aec2f8aa75c836e3578dedb90c8e54",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
