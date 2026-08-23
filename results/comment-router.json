@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-08-23T19:14:19.440Z",
+  "updated_at": "2026-08-23T19:14:24.975Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:119525",
-      "comment_id": "repair-loop-label-sweep:automerge:119525",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119525",
-      "comment_created_at": "2026-08-23T14:13:32.690Z",
-      "comment_updated_at": "2026-08-23T14:13:32.690Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119525,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "automerge enabled; PR has merge conflicts and needs a cloud rebase repair before automerge",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T14:15:26.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/memory-search-timeout-classification",
-        "head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-        "cluster_id": "automerge-openclaw-openclaw-119525",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125815:5386454397:2026-08-23T14:14:42Z:re_review",
       "comment_id": "5386454397",
@@ -32627,6 +32575,39 @@
         "kind": "pull_request",
         "branch": "steipete/secretref-beam-owner",
         "head_sha": "2dd5b26e8229f21e02fc1c39b4e68b9456a75b00",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-23T19:13:22Z:clawsweeper_needs_human",
+      "comment_id": "5376735204",
+      "comment_version_key": "5376735204:2026-08-23T19:13:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
+      "comment_created_at": "2026-08-22T00:21:26Z",
+      "comment_updated_at": "2026-08-23T19:13:22Z",
+      "comment_body_sha256": "7b26238fe6b317ff569374c15ba49f374ca95f7f2d65291f4eb0c1c9890bbcfe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127700,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner contract (P1)** - The action is bumped to v3.97.0, but version still pins v3.95.9 and the focused CI guard requires both former values. The guard will fail and the scanner bina...; Review finding: [P1] Synchronize the TruffleHog scanner contract — .github/workflows/ci.yml:1158-1162 - [P2] Refresh the Android attestation contract assertion — .github/workflows... (sha=2791c55e59e00f21b71e0052866c4ca52b2b571b)",
+      "expected_head_sha": "2791c55e59e00f21b71e0052866c4ca52b2b571b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T19:14:24.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-2b47f3b96e",
+        "head_sha": "2791c55e59e00f21b71e0052866c4ca52b2b571b",
         "cluster_id": null,
         "job_path": null
       }
