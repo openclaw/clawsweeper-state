@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T09:47:56.165Z",
+  "updated_at": "2026-08-23T09:47:58.858Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3113:5384144993:2026-08-23T04:10:24Z:re_review",
-      "comment_id": "5384144993",
-      "comment_version_key": "5384144993:2026-08-23T04:10:24Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3113#issuecomment-5384144993",
-      "comment_created_at": "2026-08-23T04:10:24Z",
-      "comment_updated_at": "2026-08-23T04:10:24Z",
-      "comment_body_sha256": "2cfc548e02821f579499cb77544eedfcb9b672d157dade222ad0f9ca76805378",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3113,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T04:20:50.447Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/spend-tokscale-antigravity-cursor",
-        "head_sha": "902c7401a93291393ba2ba0c48004da9fbd38a17",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3113:5365181346:2026-08-23T04:18:20Z:clawsweeper_auto_repair",
       "comment_id": "5365181346",
@@ -31895,6 +31848,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:158:5360272197:2026-08-23T09:47:17Z:clawsweeper_needs_human",
+      "comment_id": "5360272197",
+      "comment_version_key": "5360272197:2026-08-23T09:47:17Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/158#issuecomment-5360272197",
+      "comment_created_at": "2026-08-20T18:48:33Z",
+      "comment_updated_at": "2026-08-23T09:47:17Z",
+      "comment_body_sha256": "241b178cbe53b65141ecf8bc83f6b61f3db566d71cf88a6976198138b906338f",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 158,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Gitcrawl publishes Windows archives but documents Windows as not actively tested; CI snapshot builds cover cross-compilation, not Windows startup behavior. (sha=ab2b0dd65dc4241702e26c032036d288a26d3ed2)",
+      "expected_head_sha": "ab2b0dd65dc4241702e26c032036d288a26d3ed2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T09:47:58.858Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.7",
+        "head_sha": "ab2b0dd65dc4241702e26c032036d288a26d3ed2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
