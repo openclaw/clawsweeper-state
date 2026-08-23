@@ -32,7 +32,7 @@ security_sensitive: false
 target_branch: clawsweeper/automerge-openclaw-openclaw-124015
 source: pr_automerge
 requested_by: "clawsweeper"
-request_comment_url: "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5386479869"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/124015#issuecomment-5329223870"
 requested_by_id: "280513762"
 ---
 
@@ -41,7 +41,7 @@ requested_by_id: "280513762"
 Maintainer opted #124015 into ClawSweeper automerge.
 
 Requested by: clawsweeper
-Request comment: https://github.com/openclaw/openclaw/pull/124015#issuecomment-5386479869
+Request comment: https://github.com/openclaw/openclaw/pull/124015#issuecomment-5329223870
 
 
 Source PR: https://github.com/openclaw/openclaw/pull/124015
