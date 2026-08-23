@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-125422",
+  "mode": "autonomous",
+  "run_id": "32632599011",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32632599011",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125422.md",
+  "published_at": "2026-08-23T10:09:51.742Z",
+  "canonical": "#119195",
+  "canonical_issue": "#119083",
+  "canonical_pr": "#119195",
+  "summary": "#125422 is conflict-stale against the already-merged canonical repair #119195; current main contains the cross-tick admission and Gateway-root safeguards. No branch change was made. The required direct ../codex source inspection is unavailable in this read-only worker, so no ClawSweeper verdict or merge-ready claim is safe.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/125422",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "superseded",
+      "canonical": "#119195",
+      "candidate_fix": "#119195",
+      "reason": "Rebasing #125422 onto current main should collapse its stale repair rather than recreate or merge an older version that lacks later lifecycle safeguards."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/125422",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "superseded",
+      "canonical": "#119195",
+      "candidate_fix": "#119195",
+      "reason": "Provide the required repair handoff while allowing the executor to stop without a replacement PR when rebasing proves there is no remaining delta."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide the mandated sibling ../codex checkout or authorize a writable/network-enabled environment to obtain it; until then the AGENTS.md Codex hard gate prevents a code verdict or proof-sufficient claim."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
