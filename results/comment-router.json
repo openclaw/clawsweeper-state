@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T10:48:04.288Z",
+  "updated_at": "2026-08-23T10:48:06.812Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128091:5384166725:2026-08-23T05:25:54Z:clawsweeper_auto_repair",
-      "comment_id": "5384166725",
-      "comment_version_key": "5384166725:2026-08-23T05:25:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128091#issuecomment-5384166725",
-      "comment_created_at": "2026-08-23T04:16:22Z",
-      "comment_updated_at": "2026-08-23T05:25:54Z",
-      "comment_body_sha256": "49b1c7c370ea4cfcc909b856e4e16a4d4b8c3aee6f4871da983be2237f4a2f8d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128091,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a9332c0dd231aaee3ab58fc9c41831e4852912e1)",
-      "expected_head_sha": "a9332c0dd231aaee3ab58fc9c41831e4852912e1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T05:28:11.355Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/review-markdown-preview",
-        "head_sha": "a9332c0dd231aaee3ab58fc9c41831e4852912e1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128119:5384409508:2026-08-23T05:27:02Z:clawsweeper_auto_repair",
       "comment_id": "5384409508",
@@ -31536,6 +31503,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T10:48:04.288Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128189:5385598184:2026-08-23T10:47:06Z:clawsweeper_needs_human",
+      "comment_id": "5385598184",
+      "comment_version_key": "5385598184:2026-08-23T10:47:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128189#issuecomment-5385598184",
+      "comment_created_at": "2026-08-23T10:47:06Z",
+      "comment_updated_at": "2026-08-23T10:47:06Z",
+      "comment_body_sha256": "9eaee87e417ce0da5f58350a35567ac9898aeefa123d44305d1e1426c06bab92",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128189,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve sticky-pattern chunk-boundary redaction (P1)** - Configured regex literals accept y, but a full-text test() for /.../gy only checks the current sticky position. The old bounded path reran that pattern a...; Review finding: [P1] Preserve sticky-pattern chunk-boundary redaction — src/logging/redact.ts:760-761 - [high] Sticky configured pattern can be skipped — src/logging/redact.ts:760 (sha=06ed8c9a3d2ce4511e381855a4efb5ccef64e9e0)",
+      "expected_head_sha": "06ed8c9a3d2ce4511e381855a4efb5ccef64e9e0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T10:48:06.812Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/redact-chunked-pattern-prefilter-128156",
+        "head_sha": "06ed8c9a3d2ce4511e381855a4efb5ccef64e9e0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
