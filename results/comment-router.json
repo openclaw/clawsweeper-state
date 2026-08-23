@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T04:29:47.510Z",
+  "updated_at": "2026-08-23T04:30:45.996Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118505:5271398907:2026-08-12T18:59:53Z:re_review",
-      "comment_id": "5271398907",
-      "comment_version_key": "5271398907:2026-08-12T18:59:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118505#issuecomment-5271398907",
-      "comment_created_at": "2026-08-12T18:59:53Z",
-      "comment_updated_at": "2026-08-12T18:59:53Z",
-      "comment_body_sha256": "447c30607e965d0e53f4cdd4ae75bf94f99fa86d74ed655bd7adf7b0c59bb1c8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118505,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T22:55:22.187Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118505:5276622803:2026-08-13T06:10:38Z:re_review",
       "comment_id": "5276622803",
@@ -30950,6 +30923,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T04:29:47.510Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126883:5363486502:2026-08-23T04:26:59Z:clawsweeper_needs_human",
+      "comment_id": "5363486502",
+      "comment_version_key": "5363486502:2026-08-23T04:26:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126883#issuecomment-5363486502",
+      "comment_created_at": "2026-08-20T23:56:40Z",
+      "comment_updated_at": "2026-08-23T04:26:59Z",
+      "comment_body_sha256": "621c1191c206548b030e713fece03170c0c05a00a89a8321f9b71f0fb867f1e8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126883,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body supplies focused mocked process and runner tests, but its real Claude CLI proof remains marked pending; post redacted after-fix ter... (sha=7ce8b85611d66a9d987173ebe652146b05957fe6)",
+      "expected_head_sha": "7ce8b85611d66a9d987173ebe652146b05957fe6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T04:30:45.996Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-claude-abort-partial-output-120207",
+        "head_sha": "7ce8b85611d66a9d987173ebe652146b05957fe6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
