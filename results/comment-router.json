@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T22:37:19.909Z",
+  "updated_at": "2026-08-23T22:37:24.110Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/ocm:106:5387041606:2026-08-23T16:24:14Z:re_review",
-      "comment_id": "5387041606",
-      "comment_version_key": "5387041606:2026-08-23T16:24:14Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/106#issuecomment-5387041606",
-      "comment_created_at": "2026-08-23T16:24:14Z",
-      "comment_updated_at": "2026-08-23T16:24:14Z",
-      "comment_body_sha256": "a8798b1c1552afe4bf9877fabcf729ad1f58f335412fe51a70469031a4f6755f",
-      "repo": "openclaw/ocm",
-      "issue_number": 106,
-      "author": "hannesrudolph",
-      "author_id": 49103247,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T16:36:34.554Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/isolate-gateway-restarts-20260822",
-        "head_sha": "54339c20bdbfb8695f0053abb66157f990b387da",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:106:5378084779:2026-08-23T16:32:55Z:clawsweeper_auto_repair",
       "comment_id": "5378084779",
@@ -32454,6 +32407,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-matrix-prepared-body-current",
         "head_sha": "4e36fe8c9c23dcbeb04a7da7bfc3f5f937b2defa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:62:5374539403:2026-08-23T22:27:33Z:clawsweeper_auto_repair",
+      "comment_id": "5374539403",
+      "comment_version_key": "5374539403:2026-08-23T22:27:33Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/62#issuecomment-5374539403",
+      "comment_created_at": "2026-08-21T19:44:46Z",
+      "comment_updated_at": "2026-08-23T22:27:33Z",
+      "comment_body_sha256": "807928859ea6dc4ae6d84e2cd64f8dea4982f7db9288febc1bc342bc86f40270",
+      "repo": "openclaw/rfcs",
+      "issue_number": 62,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7a8f437ce152c0f13860e43b04afbf56e50928ef)",
+      "expected_head_sha": "7a8f437ce152c0f13860e43b04afbf56e50928ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T22:37:24.110Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/rfc-0029-handshake-capabilities",
+        "head_sha": "7a8f437ce152c0f13860e43b04afbf56e50928ef",
         "cluster_id": null,
         "job_path": null
       }
