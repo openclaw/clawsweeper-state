@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32607139156"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32607139156"
+run_id: "32609331009"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32609331009"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T00:19:02.866Z"
+published_at: "2026-08-23T01:15:08.153Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32607139156](https://github.com/openclaw/clawsweeper/actions/runs/32607139156)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32609331009](https://github.com/openclaw/clawsweeper/actions/runs/32609331009)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-Current main confirms a narrow generic catalog-fallback bug. Implementation is blocked in this read-only checkout: dependencies are absent, Corepack cannot create its cache, and the mandatory sibling ../codex source checkout is unavailable for direct inspection.
+Current main contains the generic fallback defect: automatic probing ignores catalog status and can choose deprecated Ollama Cloud `kimi-k2.5`. No code was changed because this worker has a read-only filesystem, lacks dependencies, and cannot satisfy the mandatory direct `../codex` source inspection gate because that sibling checkout is absent.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main confirms a narrow generic catalog-fallback bug. Implementation is b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | keep_canonical | planned | canonical | Open canonical bug; no candidate PR is hydrated. |
-| cluster:issue-openclaw-openclaw-124689 | fix_needed | blocked | canonical | A writable checkout with dependencies and sibling Codex source is required to add the pre-fix regression, implement, and validate the repair. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Create one narrow fix PR once execution blockers clear. |
+| #124689 | keep_canonical | planned | canonical | The issue remains the canonical non-security bug report. |
+| #124689 | fix_needed | blocked | canonical | A narrow owner-boundary repair is clear, but implementation and validation are blocked by the read-only environment and missing mandatory Codex source checkout. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Prepared narrow implementation plan for a writable executor. |
 
 ## Needs Human
 
