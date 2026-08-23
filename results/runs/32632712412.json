@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128156",
+  "mode": "autonomous",
+  "run_id": "32632712412",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32632712412",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128156.md",
+  "published_at": "2026-08-23T10:15:22.876Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128156",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128156",
+  "canonical_pr": null,
+  "summary": "The redactor still has the reported all-pattern work amplification, but this worker cannot safely create or validate the required PR: the checkout is read-only with no dependencies, and the mandatory direct ../codex source inspection is unavailable because the sibling clone is absent and network DNS is blocked.",
+  "actions": [
+    {
+      "target": "#128156",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the immutable/offline execution environment, not by an unresolved product or security decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128156",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable, dependency-complete executor after the mandatory Codex source gate is restored."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128156",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
