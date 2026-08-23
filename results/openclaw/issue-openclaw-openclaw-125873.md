@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125873"
 mode: "autonomous"
-run_id: "32645881747"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32645881747"
+run_id: "32655083679"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32655083679"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-23T15:40:14.847Z"
+published_at: "2026-08-23T17:41:29.518Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125873"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125873"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32645881747](https://github.com/openclaw/clawsweeper/actions/runs/32645881747)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32655083679](https://github.com/openclaw/clawsweeper/actions/runs/32655083679)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125873
 
 ## Summary
 
-Plan a narrow new PR for the open canonical issue: normalize non-object persisted Bedrock tool-call input at the Bedrock replay boundary, with a payload-level regression test. No GitHub mutation was performed.
+#125873 is a live, canonical Bedrock replay bug. Plan one narrow PR that reuses the existing structured tool-argument coercion at the Bedrock replay egress boundary and proves the outbound Converse request no longer forwards malformed persisted arguments.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Plan a narrow new PR for the open canonical issue: normalize non-object persiste
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125873 | fix_needed | planned | canonical | #125873 remains open and reports the unhandled persisted-history replay path. |
-| #21873 | keep_closed | skipped | related | Historical related evidence only. |
-| #126391 | keep_closed | skipped | related | Merged partial-overlap repair; it does not cover malformed values already stored in history. |
-| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | planned | canonical | No open implementation PR exists. |
-| cluster:issue-openclaw-openclaw-125873 | open_fix_pr | planned | canonical | The job authorizes a new fix PR but not merge or close actions. |
+| #125873 | fix_needed | planned | canonical | Current main has the persisted-replay egress gap; merged #126391 validates streamed producer output but does not change this replay projection. |
+| #21873 | keep_closed | skipped | related | Historical evidence only; no closeout action is valid for an already closed PR. |
+| #126391 | keep_closed | skipped | related | Historical partial-overlap evidence only; no action is valid for an already merged PR. |
+| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | planned | canonical | Narrow new-fix-PR path is appropriate; no viable open implementation PR exists. |
+| cluster:issue-openclaw-openclaw-125873 | open_fix_pr | planned | canonical | Job authorizes a new implementation PR but not merge or issue closure. |
 
 ## Needs Human
 
