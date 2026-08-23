@@ -67,21 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-In the model-probe selector, preserve explicitly configured candidates exactly as today, but exclude deprecated and disabled catalog rows during automatic fallback. Retain Anthropic preference ordering among eligible rows and return no model when all fallback rows are ineligible. Do not special-case Ollama or reorder its manifest. Add observable regressions for deprecated-first fallback, an explicit deprecated candidate, and all-ineligible fallback.
+Repair provider probe target selection so catalog fallback excludes deprecated and disabled rows. Preserve explicit requested-provider model candidates, add a regression through the probe-target boundary with a deprecated first row and an available successor, and obtain redacted after-fix evidence from a configured Ollama Cloud profile if feasible. Do not add an Ollama-only exception, new configuration, or CHANGELOG.md edit; include release-note context in the PR body.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.models.test.ts
-- src/commands/models/list.probe.test.ts
-- extensions/ollama/src/provider-models.test.ts
+- src/commands/models/list.probe.targets.test.ts
+- src/gateway/server-methods/models-probe.test.ts
 
 Validation:
 
-- Capture the pre-fix failing regression for deprecated-first automatic fallback, then rerun it after the repair.
-- pnpm test src/commands/models/list.probe.models.test.ts
-- pnpm test src/commands/models/list.probe.test.ts
-- pnpm test extensions/ollama/src/provider-models.test.ts
+- node scripts/run-vitest.mjs src/commands/models/list.probe.targets.test.ts
+- node scripts/run-vitest.mjs src/gateway/server-methods/models-probe.test.ts
+- node scripts/run-vitest.mjs ui/src/pages/chat/chat-view.test.ts
 
 ## Operator Prompt
 
