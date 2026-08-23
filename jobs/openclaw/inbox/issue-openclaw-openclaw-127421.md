@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/127421 in the Discord plugin. Establish failing regressions for an npm-style installed plugin root and an existing Discord entry-point command before changing production code. Resolve the SDK from the package-emitted `dist/assets` location, and preserve the Discord-owned entry-point command during generic reconciliation after directly verifying Discord’s contract from installed dependency source or official documentation. Do not add config, core special cases, runtime fallback readers, or CHANGELOG edits; put release-note context in the PR body. Validate the focused Activities, command-deploy, and plugin-package tests, and add real configured-Discord proof if credentials are available.
+Repair the documented Discord Activities launch flow for https://github.com/openclaw/openclaw/issues/127421. First inspect the official Discord Embedded App SDK and Primary Entry Point command contract directly, then reproduce the packaged asset path and, if confirmed, the command-reconcile deletion through the real Discord path. Fix asset lookup at the installed-plugin artifact boundary without breaking bundled runtime layout; preserve or canonically manage the Primary Entry Point only as required by the verified Discord contract. Add regression coverage for the packaged layout and for retaining the relevant non-OpenClaw command through reconcile. Run focused Activities and command-deploy tests plus `pnpm check:changed`; include real-client or production-boundary proof. Do not edit CHANGELOG.md; put release-note context in the PR body. Stop for maintainer direction if the verified Discord contract requires a new user-facing command/configuration policy.
 
 Likely files:
 
@@ -80,8 +80,8 @@ Likely files:
 Validation:
 
 - pnpm test extensions/discord/src/activities/register.test.ts extensions/discord/src/activities/http.test.ts extensions/discord/src/internal/command-deploy.test.ts
-- pnpm test test/plugin-npm-package-manifest.test.ts
-- pnpm check:changed -- extensions/discord/src/activities/register.ts extensions/discord/src/activities/register.test.ts extensions/discord/src/activities/http.test.ts extensions/discord/src/internal/command-deploy.ts extensions/discord/src/internal/command-deploy.test.ts
+- pnpm check:changed
+- Real configured Discord Activity launch showing the SDK loads and the Entry Point survives reconciliation
 
 ## Operator Prompt
 
