@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125776"
 mode: "autonomous"
-run_id: "32619389864"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32619389864"
+run_id: "32619945447"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32619945447"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T05:11:12.593Z"
+published_at: "2026-08-23T05:26:57.274Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125776"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-125776
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32619389864](https://github.com/openclaw/clawsweeper/actions/runs/32619389864)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32619945447](https://github.com/openclaw/clawsweeper/actions/runs/32619945447)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 ## Summary
 
-#125776 is a reproducible canonical bug: Codex emits dynamic-tool result progress without its call identity, while Telegram appends id-less text instead of updating the existing tool:<callId> row. Implementation is blocked in this worker because the mandatory ../codex contract checkout is absent, cloning fails on the read-only filesystem, and test dependencies cannot be installed.
+A narrow producer-to-Telegram repair path is identified, but this worker cannot make the required Codex-dependent implementation verdict: ../codex is absent and the read-only, network-restricted environment cannot clone it. Focused tests also cannot start because tsx is not installed and pnpm cannot create its Corepack cache. No files or GitHub state were mutated.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #125776 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/125776
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125776 | fix_needed | blocked | canonical | Direct Codex protocol inspection is a repository hard gate for this Codex-dependent repair; this worker cannot restore the required sibling checkout or dependencies. |
-| #116512 | keep_related | planned | related | The reports share Telegram progress rendering but not root cause or safe repair scope. |
-| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | blocked | canonical | The repair path is narrow and ready for a writable, dependency-complete worker once it has directly inspected the required Codex source. |
+| #116512 | keep_related | planned | related | Keep open independently; it is not a duplicate of the dynamic-tool result correlation defect. |
+| #125776 | fix_needed | blocked | canonical | The local owner boundary supports a small repair, but applying or endorsing it requires a fresh direct ../codex contract inspection and a writable dependency-ready checkout. |
+| cluster:issue-openclaw-openclaw-125776 | build_fix_artifact | planned | canonical | Artifact is ready for a writable executor after it rehydrates ../codex, verifies the upstream contract, and installs dependencies. |
 
 ## Needs Human
 
-- Provide a writable worker with ../codex restored (or otherwise make the exact Codex source available) so the dynamic-tool call-id contract can be inspected before implementation. The current worker cannot clone it because the filesystem is read-only.
+- none
