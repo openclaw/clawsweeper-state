@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T08:37:05.000Z",
+  "updated_at": "2026-08-23T08:37:52.857Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5384134710:2026-08-23T04:07:30Z:re_review",
-      "comment_id": "5384134710",
-      "comment_version_key": "5384134710:2026-08-23T04:07:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5384134710",
-      "comment_created_at": "2026-08-23T04:07:30Z",
-      "comment_updated_at": "2026-08-23T04:07:30Z",
-      "comment_body_sha256": "be5d3046493a839deff9ae5b8ce6ff9d7bf4c25b2fecbd2fcca85cd7dbf3e053",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T04:08:14.360Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119977-codex-stale-binding-compaction",
-        "head_sha": "a50bd1c17b8926f413a86b0c2349ba68fa1db668",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125063:5312139330:2026-08-23T04:04:07Z:clawsweeper_auto_repair",
       "comment_id": "5312139330",
@@ -31280,6 +31233,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-2b47f3b96e",
         "head_sha": "b71aa00a2f376c9b51e3e8126dd9885f0b41203a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1206:5381144069:2026-08-23T08:37:07Z:clawsweeper_needs_human",
+      "comment_id": "5381144069",
+      "comment_version_key": "5381144069:2026-08-23T08:37:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1206#issuecomment-5381144069",
+      "comment_created_at": "2026-08-22T15:24:07Z",
+      "comment_updated_at": "2026-08-23T08:37:07Z",
+      "comment_body_sha256": "258c1b0932d343cbf244db3996552be2c266b7b4c0c24f1053ab1251b1b61f67",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1206,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This PR is stacked on the open unavailable-state UX PR. Landing that prerequisite without this follow-up would globally disable controls for an already installed runtime on unsupporte... (sha=2887846627225b2486ce297ba952e08ab439ef3d)",
+      "expected_head_sha": "2887846627225b2486ce297ba952e08ab439ef3d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T08:37:52.857Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-pr1204-managed-runtime-actions",
+        "head_sha": "2887846627225b2486ce297ba952e08ab439ef3d",
         "cluster_id": null,
         "job_path": null
       }
