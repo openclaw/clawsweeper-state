@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T12:14:00.973Z",
+  "updated_at": "2026-08-23T12:15:11.659Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125479:5384694404:2026-08-23T06:48:13Z:re_review",
-      "comment_id": "5384694404",
-      "comment_version_key": "5384694404:2026-08-23T06:48:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125479#issuecomment-5384694404",
-      "comment_created_at": "2026-08-23T06:48:13Z",
-      "comment_updated_at": "2026-08-23T06:48:13Z",
-      "comment_body_sha256": "c35e608fbd08433e9e67f820d73b723f40c3b570c4240f76e8f26bd769cc7258",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125479,
-      "author": "wakqasahmed",
-      "author_id": 4486133,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T06:59:29.069Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-125333-total-tokens-inflation",
-        "head_sha": "6a5f26d4b8a68166e3808f4df7330eb87860c197",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118505:5384728249:2026-08-23T06:58:02Z:re_review",
       "comment_id": "5384728249",
@@ -31485,6 +31438,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:137:5355358593:2026-08-23T12:12:00Z:clawsweeper_needs_human",
+      "comment_id": "5355358593",
+      "comment_version_key": "5355358593:2026-08-23T12:12:00Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/137#issuecomment-5355358593",
+      "comment_created_at": "2026-08-20T11:40:23Z",
+      "comment_updated_at": "2026-08-23T12:12:00Z",
+      "comment_body_sha256": "f2c1deb6a7602f3db0af25c12a18e7d8f7bdc5664249e27e31929697a7578e95",
+      "repo": "openclaw/lobster",
+      "issue_number": 137,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the submitted branch is already a focused, correct test addition awaiting ordinary maintainer review. (sha=cf1730443ea4636c101bf22b168cefc79bc6a279)",
+      "expected_head_sha": "cf1730443ea4636c101bf22b168cefc79bc6a279",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T12:15:11.659Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "scout-t-2026-08-20",
+        "head_sha": "cf1730443ea4636c101bf22b168cefc79bc6a279",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
