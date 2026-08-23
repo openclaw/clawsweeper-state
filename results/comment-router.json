@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T16:47:25.654Z",
+  "updated_at": "2026-08-23T16:47:28.971Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116248:5127213151:2026-07-30T06:03:52Z:re_review",
-      "comment_id": "5127213151",
-      "comment_version_key": "5127213151:2026-07-30T06:03:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116248#issuecomment-5127213151",
-      "comment_created_at": "2026-07-30T06:03:52Z",
-      "comment_updated_at": "2026-07-30T06:03:52Z",
-      "comment_body_sha256": "cac81cdbed40a41af3e9741a78e6914e58326eaa64ec5f2ba19891f012b086ce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116248,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T12:33:12.888Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116248:5132366763:2026-07-30T14:49:53Z:re_review",
       "comment_id": "5132366763",
@@ -32169,6 +32142,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T16:47:25.654Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128197:5385773212:2026-08-23T16:46:43Z:clawsweeper_needs_human",
+      "comment_id": "5385773212",
+      "comment_version_key": "5385773212:2026-08-23T16:46:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128197#issuecomment-5385773212",
+      "comment_created_at": "2026-08-23T11:32:48Z",
+      "comment_updated_at": "2026-08-23T16:46:43Z",
+      "comment_body_sha256": "5b6f6b49f50d3756176a746711fdc178ffc96294dd3e0a361c82243e9467eb21",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128197,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Validate sourced assets against hidden-fact controls (P1)** - run.sh can source an allowed asset, but validation never scans asset contents. That asset can invoke the raw bridge's provider or Bot API commands an...; Review finding: [P1] Validate sourced assets against hidden-fact controls — scripts/mantis/telegram-visible-proof-contract.mjs:287-290 - [P1] Bind a passing differential to the de... (sha=9a7954f0892be97c9b7b3d3c5d60a8bda3f6a265)",
+      "expected_head_sha": "9a7954f0892be97c9b7b3d3c5d60a8bda3f6a265",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T16:47:28.971Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/mantis-telegram-visible-v2",
+        "head_sha": "9a7954f0892be97c9b7b3d3c5d60a8bda3f6a265",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
