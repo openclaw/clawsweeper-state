@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven large-payload redaction stall from https://github.com/openclaw/openclaw/issues/128156. Work at the shared logging redactor, not a Gateway-only consumer: first capture a deterministic pre-fix work-count or benchmark regression using a large payload that passes the default prefilter, then reduce unnecessary default-pattern work without weakening redaction, changing registered-secret behavior, breaking full-context mode, or adding a logging config option. Preserve chunk-boundary and data-URL safety behavior. Add a regression that fails before the repair for the intended aggregate-work reason, plus existing behavioral coverage. Do not edit CHANGELOG.md; put user-visible performance context in the PR body.
+Repair the proven default-redaction work amplification in this issue. Keep the ordered default pattern table, capture-based masking semantics, form/auth preprocessing, and chunk-unsafe/full-context behavior intact. First establish a deterministic failing work-count or benchmark regression against the real redactor; do not use elapsed-time assertions or add test-only production seams. Then add a safe per-pattern no-match gate using cloned or reset regex state, and replace repeated chunk concatenation only if output equivalence remains covered. Do not add logging config, disable or weaken redaction, introduce an off-thread fallback, or edit CHANGELOG.md; record release-note context in the PR body. Stop and escalate if preserving custom-regex semantics requires a product or security policy choice.
 
 Likely files:
 
 - src/logging/redact.ts
 - src/logging/redact-bounded.ts
 - src/logging/redact.test.ts
-- src/logging/logger-redaction-behavior.test.ts
+- src/logging/redact-token-ordering.test.ts
 
 Validation:
 
-- pnpm test src/logging/redact.test.ts
-- pnpm test src/logging/logger-redaction-behavior.test.ts
-- pnpm check:changed
+- node scripts/run-vitest.mjs src/logging/redact.test.ts src/logging/redact-token-ordering.test.ts src/logging/log-tail.test.ts
+- node scripts/check-changed.mjs -- src/logging/redact.ts src/logging/redact-bounded.ts src/logging/redact.test.ts
 
 ## Operator Prompt
 
