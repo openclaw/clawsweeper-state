@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T17:33:44.788Z",
+  "updated_at": "2026-08-23T17:33:59.353Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127224:5372040610:2026-08-23T12:57:59Z:clawsweeper_needs_human",
-      "comment_id": "5372040610",
-      "comment_version_key": "5372040610:2026-08-23T12:57:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127224#issuecomment-5372040610",
-      "comment_created_at": "2026-08-21T15:41:41Z",
-      "comment_updated_at": "2026-08-23T12:57:59Z",
-      "comment_body_sha256": "4d25dc0f1ac1fbf88821413c54fb7f365f065d3946318f6ce60cba18386b7015",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127224,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body identifies an older head (8f37545…) while the reviewed head is 4189f435…; refresh the evidence and exact-head validation reference before merge. (sha=4189f43522197f113b0ffde08f413b2941bbb8cf)",
-      "expected_head_sha": "4189f43522197f113b0ffde08f413b2941bbb8cf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T13:00:30.463Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-contract-current-main",
-        "head_sha": "4189f43522197f113b0ffde08f413b2941bbb8cf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127224:5372048036:2026-08-21T15:42:23Z:re_review",
       "comment_id": "5372048036",
@@ -32480,6 +32447,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128240:5386720934:2026-08-23T17:32:10Z:clawsweeper_needs_human",
+      "comment_id": "5386720934",
+      "comment_version_key": "5386720934:2026-08-23T17:32:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128240#issuecomment-5386720934",
+      "comment_created_at": "2026-08-23T15:13:12Z",
+      "comment_updated_at": "2026-08-23T17:32:10Z",
+      "comment_body_sha256": "29a233f13b05c769cd35e853fce7248c731a59172f11b0181f6c0d67fec6c930",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128240,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local partial clone could not materialize the current-main merge result; finish the current-head UI E2E gate before the existing automerge path evaluates it. (sha=811140e0a0d05f9cadc5410bc8a97ea1319d2151)",
+      "expected_head_sha": "811140e0a0d05f9cadc5410bc8a97ea1319d2151",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T17:33:59.353Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/improve-mobile-model-picker-padding",
+        "head_sha": "811140e0a0d05f9cadc5410bc8a97ea1319d2151",
+        "cluster_id": "automerge-openclaw-openclaw-128240",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128240.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
