@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125873"
 mode: "autonomous"
-run_id: "32655517083"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32655517083"
+run_id: "32656644394"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32656644394"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-23T17:53:15.052Z"
-canonical: "https://github.com/openclaw/openclaw/issues/125873"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/125873"
+published_at: "2026-08-23T18:11:40.724Z"
+canonical: "#125873"
+canonical_issue: "#125873"
 canonical_pr: null
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32655517083](https://github.com/openclaw/clawsweeper/actions/runs/32655517083)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32656644394](https://github.com/openclaw/clawsweeper/actions/runs/32656644394)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/125873
+Canonical: #125873
 
 ## Summary
 
-#125873 remains the open canonical report. Current main forwards persisted Bedrock tool-call arguments through an unchecked cast at the replay boundary; the planned repair is a two-file, owner-boundary fix using the existing transport coercion helper. Implementation and validation are blocked in this worker because the checkout is read-only, dependencies cannot be installed, and the mandatory sibling ../codex source checkout is absent.
+#125873 remains the canonical open Bedrock replay bug. Current main forwards persisted tool-call arguments unchanged at the Bedrock payload boundary; a narrow two-file repair artifact is ready, but this worker cannot write or validate a branch because the required sibling Codex source and local test dependency are unavailable in the read-only environment.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/125873
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125873 | fix_needed | blocked | canonical | The source-level fix shape is narrow and the issue is still live, but this worker cannot make or validate code changes under the mandatory Codex and writable/dependency gates. |
-| #21873 | keep_closed | skipped | related | Historical context only; it is already closed and must not receive a closure action. |
-| #126391 | keep_closed | skipped | related | Historical partial-overlap context only; it is already merged and does not fix this replay boundary. |
-| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | planned |  | A narrow credited fix PR remains the canonical path once a writable executor can inspect ../codex, install dependencies, reproduce the failing regression, and validate the branch. |
+| #125873 | build_fix_artifact | planned | canonical | Narrow non-security repair is appropriate, but branch edits and proof are blocked by the read-only environment, missing node_modules/tsx, and unavailable required ../codex source. |
 
 ## Needs Human
 

@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125873",
+  "mode": "autonomous",
+  "run_id": "32656644394",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32656644394",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125873.md",
+  "published_at": "2026-08-23T18:11:40.724Z",
+  "canonical": "#125873",
+  "canonical_issue": "#125873",
+  "canonical_pr": null,
+  "summary": "#125873 remains the canonical open Bedrock replay bug. Current main forwards persisted tool-call arguments unchanged at the Bedrock payload boundary; a narrow two-file repair artifact is ready, but this worker cannot write or validate a branch because the required sibling Codex source and local test dependency are unavailable in the read-only environment.",
+  "actions": [
+    {
+      "target": "#125873",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Narrow non-security repair is appropriate, but branch edits and proof are blocked by the read-only environment, missing node_modules/tsx, and unavailable required ../codex source."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
