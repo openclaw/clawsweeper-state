@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T02:38:15.695Z",
+  "updated_at": "2026-08-23T02:38:18.140Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128034:5382543776:2026-08-22T20:53:03Z:re_review",
-      "comment_id": "5382543776",
-      "comment_version_key": "5382543776:2026-08-22T20:53:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128034#issuecomment-5382543776",
-      "comment_created_at": "2026-08-22T20:53:03Z",
-      "comment_updated_at": "2026-08-22T20:53:03Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128034,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T20:53:39.288Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-chat-local-service",
-        "head_sha": "fcd331891162e7d9aba815cff95a6082d38c9b47",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128020:5382544830:2026-08-22T20:53:17Z:re_review",
       "comment_id": "5382544830",
@@ -30545,6 +30498,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T02:38:15.695Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128081:5383831003:2026-08-23T02:37:17Z:clawsweeper_needs_human",
+      "comment_id": "5383831003",
+      "comment_version_key": "5383831003:2026-08-23T02:37:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128081#issuecomment-5383831003",
+      "comment_created_at": "2026-08-23T02:37:17Z",
+      "comment_updated_at": "2026-08-23T02:37:17Z",
+      "comment_body_sha256": "2eca529ab76ef7d0da877d0424bcbc9530cc11912fff4ba70a6cb135945455b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128081,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging establishes sessions.create.toolOverrides as a durable admin-only Gateway contract controlling first-turn tools; a feature owner should explicitly accept that public API direc... (sha=064b6e0648af88b41a0cdced8e8951b257350ce9)",
+      "expected_head_sha": "064b6e0648af88b41a0cdced8e8951b257350ce9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T02:38:18.140Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/new-session-composer-capabilities",
+        "head_sha": "064b6e0648af88b41a0cdced8e8951b257350ce9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
