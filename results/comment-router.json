@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T16:11:14.049Z",
+  "updated_at": "2026-08-23T16:11:38.706Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5313566615:2026-08-17T08:18:42Z:re_review",
-      "comment_id": "5313566615",
-      "comment_version_key": "5313566615:2026-08-17T08:18:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5313566615",
-      "comment_created_at": "2026-08-17T08:18:42Z",
-      "comment_updated_at": "2026-08-17T08:18:42Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T12:07:29.312Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5313669618:2026-08-17T08:29:29Z:re_review",
       "comment_id": "5313669618",
@@ -31896,6 +31869,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/ReleaseBar:87:5386981288:2026-08-23T16:10:49Z:clawsweeper_needs_human",
+      "comment_id": "5386981288",
+      "comment_version_key": "5386981288:2026-08-23T16:10:49Z",
+      "comment_url": "https://github.com/steipete/ReleaseBar/pull/87#issuecomment-5386981288",
+      "comment_created_at": "2026-08-23T16:10:49Z",
+      "comment_updated_at": "2026-08-23T16:10:49Z",
+      "comment_body_sha256": "d5dc2323099bc9f172658c4eb8fb481d308fdebe986b9bc18ba66a8dafe1ce84",
+      "repo": "steipete/ReleaseBar",
+      "issue_number": 87,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Svelte runtime and Vite-plugin updates can alter rendered dashboard behavior despite successful static checks; the normal Worker deployment smoke should remain the rollout guard. (sha=47fa73a653aa47ad9d81a617a38d199f60290a45)",
+      "expected_head_sha": "47fa73a653aa47ad9d81a617a38d199f60290a45",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T16:11:38.706Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/t30-deps-refresh-20260823",
+        "head_sha": "47fa73a653aa47ad9d81a617a38d199f60290a45",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
