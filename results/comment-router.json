@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T02:32:11.237Z",
+  "updated_at": "2026-08-23T02:36:36.609Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:87552:4817455608:2026-06-27T12:24:07Z:re_review",
-      "comment_id": "4817455608",
-      "comment_version_key": "4817455608:2026-06-27T12:24:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/87552#issuecomment-4817455608",
-      "comment_created_at": "2026-06-27T12:24:07Z",
-      "comment_updated_at": "2026-06-27T12:24:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 87552,
-      "author": "solavrc",
-      "author_id": 145330217,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T20:44:00.707Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:87552:4921699445:2026-07-09T04:56:44Z:re_review",
       "comment_id": "4921699445",
@@ -30553,6 +30526,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:138:5318907104:2026-08-23T02:21:42Z:clawsweeper_auto_repair",
+      "comment_id": "5318907104",
+      "comment_version_key": "5318907104:2026-08-23T02:21:42Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/138#issuecomment-5318907104",
+      "comment_created_at": "2026-08-17T18:56:43Z",
+      "comment_updated_at": "2026-08-23T02:21:42Z",
+      "comment_body_sha256": "8cc43bf0bfe8aef444be853f74c8d8278a6a87e84167f884e6000e3bb2f3b632",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 138,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=85a012d759da1c4d68066e09150aa1a58643b613)",
+      "expected_head_sha": "85a012d759da1c4d68066e09150aa1a58643b613",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-23T02:36:36.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/emnapi/runtime-2.0.0-alpha.4",
+        "head_sha": "85a012d759da1c4d68066e09150aa1a58643b613",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
