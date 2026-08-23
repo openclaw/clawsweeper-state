@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T09:12:41.164Z",
+  "updated_at": "2026-08-23T09:12:47.463Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5313566199:2026-08-17T08:18:39Z:re_review",
-      "comment_id": "5313566199",
-      "comment_version_key": "5313566199:2026-08-17T08:18:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5313566199",
-      "comment_created_at": "2026-08-17T08:18:39Z",
-      "comment_updated_at": "2026-08-17T08:18:39Z",
-      "comment_body_sha256": "f201001e39bb2a4c2804668cb283aef9302c59580aa7e779d45d862634b1be2a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T04:11:37.849Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5313691876:2026-08-17T08:31:52Z:re_review",
       "comment_id": "5313691876",
@@ -31517,6 +31490,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T09:12:41.164Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128149:5385058072:2026-08-23T09:10:40Z:clawsweeper_needs_human",
+      "comment_id": "5385058072",
+      "comment_version_key": "5385058072:2026-08-23T09:10:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128149#issuecomment-5385058072",
+      "comment_created_at": "2026-08-23T08:27:21Z",
+      "comment_updated_at": "2026-08-23T09:10:40Z",
+      "comment_body_sha256": "caf3b8d8755d6ee3208436af41b3176db9380a3437def29c2cb1c7e169df9033",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128149,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only focused in-process Gateway tests are reported; add redacted after-fix Gateway or Control UI evidence of rejection, Default recovery, and r... (sha=0df6e0d4f39b44d3b304e2383d8c40073eed71cd)",
+      "expected_head_sha": "0df6e0d4f39b44d3b304e2383d8c40073eed71cd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T09:12:47.463Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-128039-rootless-session-permission",
+        "head_sha": "0df6e0d4f39b44d3b304e2383d8c40073eed71cd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
