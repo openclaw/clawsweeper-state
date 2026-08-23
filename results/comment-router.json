@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T01:34:16.937Z",
+  "updated_at": "2026-08-23T01:34:33.322Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124408:5305699446:2026-08-22T19:42:00Z:clawsweeper_auto_repair",
-      "comment_id": "5305699446",
-      "comment_version_key": "5305699446:2026-08-22T19:42:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124408#issuecomment-5305699446",
-      "comment_created_at": "2026-08-16T04:22:19Z",
-      "comment_updated_at": "2026-08-22T19:42:00Z",
-      "comment_body_sha256": "f87fe9105947fc1449fb54fe9af7ddc0b53740acd7a7561010b2cb904e6da45d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124408,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e679c7a33df5b6ff0e15735f432720ce976946db)",
-      "expected_head_sha": "e679c7a33df5b6ff0e15735f432720ce976946db",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-22T19:44:36.483Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-124343-settle-wake-deferral",
-        "head_sha": "e679c7a33df5b6ff0e15735f432720ce976946db",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112271:5143051656:2026-08-22T19:38:20Z:clawsweeper_auto_repair",
       "comment_id": "5143051656",
@@ -30576,6 +30543,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T01:34:16.937Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120491:5224970607:2026-08-23T01:32:09Z:clawsweeper_needs_human",
+      "comment_id": "5224970607",
+      "comment_version_key": "5224970607:2026-08-23T01:32:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5224970607",
+      "comment_created_at": "2026-08-08T06:42:09Z",
+      "comment_updated_at": "2026-08-23T01:32:09Z",
+      "comment_body_sha256": "8654e9f1b0ce4710873cb6aff9608e95f2b9a1b8c20668347b53895e3b05fff6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120491,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The default-on reminder changes model-visible tool output for every second same-target send, including legitimate multipart workflows. (sha=3dbf16be3f23a351a8d9e2cace7927cbd84429d8)",
+      "expected_head_sha": "3dbf16be3f23a351a8d9e2cace7927cbd84429d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T01:34:33.322Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119992-per-turn-send-budget",
+        "head_sha": "3dbf16be3f23a351a8d9e2cace7927cbd84429d8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
