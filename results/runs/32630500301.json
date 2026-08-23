@@ -1,0 +1,99 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128156",
+  "mode": "autonomous",
+  "run_id": "32630500301",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32630500301",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128156.md",
+  "published_at": "2026-08-23T09:24:27.975Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128156",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128156",
+  "canonical_pr": null,
+  "summary": "#128156 remains the canonical open report. Current main structurally retains the reported path: a broad prefilter admits the payload, then redactText walks every resolved default pattern and uses chunked replacement for each eligible pattern. No code or GitHub mutation was made. An executable PR is blocked because the mandatory sibling ../codex source checkout is absent and the checkout lacks tsx, so the required owner test cannot run in this read-only environment.",
+  "actions": [
+    {
+      "target": "#128156",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "Keep the report open while the environment prerequisites for a verified narrow fix are restored."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128156",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "The bounded redaction helper is the architectural owner; no setting, fallback, or downstream gateway guard is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128156",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128156",
+      "candidate_fix": null,
+      "reason": "The plan is intentionally non-executable until the mandatory Codex source and normal test dependencies are available."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "skipped": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide the required sibling ../codex checkout and a dependency-complete writable validation environment, then rerun the focused logging test and the proposed deterministic no-match chunk-work regression before authorizing the PR."
+  ],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "skipped",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "needs_human",
+      "reason": "worker marked the fix path as non-executable; closure actions may still apply",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128156",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
