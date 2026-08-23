@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T12:15:11.659Z",
+  "updated_at": "2026-08-23T12:15:19.349Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118505:5384728249:2026-08-23T06:58:02Z:re_review",
-      "comment_id": "5384728249",
-      "comment_version_key": "5384728249:2026-08-23T06:58:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118505#issuecomment-5384728249",
-      "comment_created_at": "2026-08-23T06:58:02Z",
-      "comment_updated_at": "2026-08-23T06:58:02Z",
-      "comment_body_sha256": "d55781fb3584a667e3c82b224b10fc74e1569fe053746e496d677f0b31e7f0b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118505,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T06:59:29.069Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/macos-realtime-talk-settings",
-        "head_sha": "b32096ae95fbf2ca21d620b6a7892d164aa39c86",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:95665:4764893751:2026-08-23T06:51:01Z:clawsweeper_auto_repair",
       "comment_id": "4764893751",
@@ -31469,6 +31422,39 @@
         "kind": "pull_request",
         "branch": "scout-t-2026-08-20",
         "head_sha": "cf1730443ea4636c101bf22b168cefc79bc6a279",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128203:5385935955:2026-08-23T12:13:04Z:clawsweeper_needs_human",
+      "comment_id": "5385935955",
+      "comment_version_key": "5385935955:2026-08-23T12:13:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128203#issuecomment-5385935955",
+      "comment_created_at": "2026-08-23T12:13:04Z",
+      "comment_updated_at": "2026-08-23T12:13:04Z",
+      "comment_body_sha256": "0e618ede3ccad890c5d668fe24e1b0baa9df15beff28a8980a2d3ac8265890dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128203,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI was still in progress; merge only after the ratchet check passes against the merge base. (sha=4bccf98ef113bdd43b983bac85657e0885cd1712)",
+      "expected_head_sha": "4bccf98ef113bdd43b983bac85657e0885cd1712",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T12:15:19.349Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-discord-assertion-ratchet",
+        "head_sha": "4bccf98ef113bdd43b983bac85657e0885cd1712",
         "cluster_id": null,
         "job_path": null
       }
