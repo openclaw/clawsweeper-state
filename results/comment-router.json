@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T07:33:32.439Z",
+  "updated_at": "2026-08-23T07:36:13.238Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-23T02:41:46Z:clawsweeper_needs_human",
-      "comment_id": "5376735204",
-      "comment_version_key": "5376735204:2026-08-23T02:41:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
-      "comment_created_at": "2026-08-22T00:21:26Z",
-      "comment_updated_at": "2026-08-23T02:41:46Z",
-      "comment_body_sha256": "ec50ba94608ee717ce72b4585d08096b17cf94e69da98048aafe6fa8a1ee2def",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127700,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Synchronize the TruffleHog executable and guard (P1)** - The action pin now names v3.97.0, but with.version still installs v3.95.9 and the CI guard requires the old action SHA and digest. The guard test therefor...; Review finding: [P1] Synchronize the TruffleHog executable and guard — .github/workflows/ci.yml:1158-1162 - [P2] Update the Android attestation contract assertion — .github/workfl... (sha=77313a1be68fa68db8a09e0558bbb55379d71bdc)",
-      "expected_head_sha": "77313a1be68fa68db8a09e0558bbb55379d71bdc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T02:42:47.427Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-2b47f3b96e",
-        "head_sha": "77313a1be68fa68db8a09e0558bbb55379d71bdc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rfcs:62:5374539403:2026-08-23T02:47:43Z:clawsweeper_auto_repair",
       "comment_id": "5374539403",
@@ -31481,6 +31448,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127353:5374085129:2026-08-23T07:28:41Z:clawsweeper_needs_human",
+      "comment_id": "5374085129",
+      "comment_version_key": "5374085129:2026-08-23T07:28:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127353#issuecomment-5374085129",
+      "comment_created_at": "2026-08-21T19:03:40Z",
+      "comment_updated_at": "2026-08-23T07:28:41Z",
+      "comment_body_sha256": "a520baa1da3f672cd0026ffd7825e0dc037b27d5863c6b288145a4e3f3942a25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127353,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The cited Slack and Telegram provider contracts could not be independently rechecked because dependency sources are absent and GitHub DNS is unavailable. (sha=d09c1480c4671fcf7bc3f00a779d56d70363db5a)",
+      "expected_head_sha": "d09c1480c4671fcf7bc3f00a779d56d70363db5a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T07:36:13.238Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/outbound-permanent-rejection-126844",
+        "head_sha": "d09c1480c4671fcf7bc3f00a779d56d70363db5a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
