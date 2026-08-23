@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T16:08:38.339Z",
+  "updated_at": "2026-08-23T16:08:44.365Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5312826419:2026-08-17T06:55:19Z:re_review",
-      "comment_id": "5312826419",
-      "comment_version_key": "5312826419:2026-08-17T06:55:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5312826419",
-      "comment_created_at": "2026-08-17T06:55:19Z",
-      "comment_updated_at": "2026-08-17T06:55:19Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T12:07:29.312Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5312944136:2026-08-17T07:09:37Z:re_review",
       "comment_id": "5312944136",
@@ -31846,6 +31819,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T16:08:38.339Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128206:5385981233:2026-08-23T16:07:21Z:clawsweeper_needs_human",
+      "comment_id": "5385981233",
+      "comment_version_key": "5385981233:2026-08-23T16:07:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128206#issuecomment-5385981233",
+      "comment_created_at": "2026-08-23T12:24:22Z",
+      "comment_updated_at": "2026-08-23T16:07:21Z",
+      "comment_body_sha256": "7b178d25560af7bf6af4ebbcb8aa05cc818bd23d2b5365fd69635877a392c65d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128206,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Five exact-head checks, including the SQLite session lifecycle lane, were still in progress in the supplied PR state; merge should wait for their successful completion. (sha=2f60615312cae5b8fbe0b9103c952f17efadff66)",
+      "expected_head_sha": "2f60615312cae5b8fbe0b9103c952f17efadff66",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T16:08:44.365Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/hungry-blackburn-03a1f7",
+        "head_sha": "2f60615312cae5b8fbe0b9103c952f17efadff66",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
