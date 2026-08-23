@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124689",
+  "mode": "autonomous",
+  "run_id": "32618670701",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32618670701",
+  "head_sha": "648ad3538d987a05833ed3bcdff1cf1d8961cc48",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124689.md",
+  "published_at": "2026-08-23T04:53:42.112Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124689",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked by the read-only checkout: no branch, dependency cache, or sibling ../codex checkout can be created. Current main is 663f4e796d300587111ed6ccc64daa9b65ab995e; the requested focused test cannot start because Corepack cannot create its cache directory. A narrow executor-ready fix plan is included.",
+  "actions": [
+    {
+      "target": "#124689",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "A writable executor with dependencies and the mandatory sibling Codex checkout is required before code changes, regression proof, or PR creation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124689",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124689",
+      "candidate_fix": null,
+      "reason": "The repair is narrow, but the worker cannot edit or validate in this read-only sandbox."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#124689",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32618218144"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32618218144"
+run_id: "32618670701"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32618670701"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-23T04:45:24.023Z"
+published_at: "2026-08-23T04:53:42.112Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32618218144](https://github.com/openclaw/clawsweeper/actions/runs/32618218144)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32618670701](https://github.com/openclaw/clawsweeper/actions/runs/32618670701)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-#124689 remains a valid canonical bug. Current main selects the first matching fallback catalog row even when it is deprecated; a narrow generic status filter plus one regression test is ready for an executor, but this worker cannot modify or validate the checkout because the filesystem is read-only, dependencies cannot install, and required sibling ../codex source is absent.
+Implementation is blocked by the read-only checkout: no branch, dependency cache, or sibling ../codex checkout can be created. Current main is 663f4e796d300587111ed6ccc64daa9b65ab995e; the requested focused test cannot start because Corepack cannot create its cache directory. A narrow executor-ready fix plan is included.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #124689 |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | planned | canonical | Implement the generic catalog-fallback status filter and regression test on a writable branch; this worker is read-only and lacks the required ../codex source checkout for the repository Codex gate. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | Executor must use a writable checkout with dependencies and clone/provide ../codex before editing and validation. |
+| #124689 | fix_needed | blocked | canonical | A writable executor with dependencies and the mandatory sibling Codex checkout is required before code changes, regression proof, or PR creation. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | The repair is narrow, but the worker cannot edit or validate in this read-only sandbox. |
 
 ## Needs Human
 
