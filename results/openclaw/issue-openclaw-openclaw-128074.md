@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128074"
 mode: "autonomous"
-run_id: "32611723308"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32611723308"
+run_id: "32612723043"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32612723043"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T02:12:13.649Z"
+published_at: "2026-08-23T02:37:13.991Z"
 canonical: "https://github.com/openclaw/openclaw/issues/128074"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/128074"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32611723308](https://github.com/openclaw/clawsweeper/actions/runs/32611723308)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32612723043](https://github.com/openclaw/clawsweeper/actions/runs/32612723043)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/128074
 
 ## Summary
 
-#128074 is a real current-main regression with a narrow owner-boundary repair, but this read-only worker cannot complete the mandatory direct ../codex inspection or run tests because ../codex and tsx are unavailable.
+#128074 remains the open canonical report. Source inspection identifies a narrow runner-boundary repair candidate, but implementation is blocked because the mandatory sibling ../codex source is absent and this read-only sandbox cannot clone it for the required direct Codex runtime check.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/128074
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125596 | keep_closed | skipped | related | Closed historical context; no mutation is permitted or needed. |
-| #127217 | keep_closed | skipped | related | Closed related PR, not a closure target. |
-| #128074 | fix_needed | planned | canonical | Canonical open bug; a new narrow fix PR is appropriate. |
-| cluster:issue-openclaw-openclaw-128074 | build_fix_artifact | planned | canonical | Executor should implement and validate the narrow repair after satisfying the unavailable local gates. |
+| #125596 | keep_closed | skipped | related | Already closed historical context. |
+| #127217 | keep_closed | skipped | related | Already closed historical context. |
+| #128074 | fix_needed | blocked | canonical | Do not create or update a fix PR until the required direct Codex runtime-source inspection is possible. |
+| cluster:issue-openclaw-openclaw-128074 | build_fix_artifact | planned | canonical | Preserves a narrow, auditable repair path for an executor with the required source access. |
 
 ## Needs Human
 
