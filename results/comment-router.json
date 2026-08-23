@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T06:58:56.661Z",
+  "updated_at": "2026-08-23T06:59:23.151Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117152:5148936030:2026-08-23T02:00:01Z:clawsweeper_auto_repair",
-      "comment_id": "5148936030",
-      "comment_version_key": "5148936030:2026-08-23T02:00:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117152#issuecomment-5148936030",
-      "comment_created_at": "2026-08-01T01:50:21Z",
-      "comment_updated_at": "2026-08-23T02:00:01Z",
-      "comment_body_sha256": "b8aadd51b556199ad7fb6b2471ba000c7ae97dfd0298ff065d44b0b42e7f77ce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117152,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=43da850d08bc61025b2c6cad65ff6caff5b379d7)",
-      "expected_head_sha": "43da850d08bc61025b2c6cad65ff6caff5b379d7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T02:11:14.468Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/116554-claude-ask-user",
-        "head_sha": "43da850d08bc61025b2c6cad65ff6caff5b379d7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118309:5160996295:2026-08-19T17:21:12Z:clawsweeper_auto_repair",
       "comment_id": "5160996295",
@@ -31383,6 +31350,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128129:5384585472:2026-08-23T06:58:28Z:clawsweeper_needs_human",
+      "comment_id": "5384585472",
+      "comment_version_key": "5384585472:2026-08-23T06:58:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128129#issuecomment-5384585472",
+      "comment_created_at": "2026-08-23T06:18:09Z",
+      "comment_updated_at": "2026-08-23T06:58:28Z",
+      "comment_body_sha256": "8ede229baa29ba7e2c291c598c650f85a073c941e2c14c2a24dc277dcc650daa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128129,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing automation that used the undocumented replacement behavior of mcp add will now receive a duplicate error and must use mcp set. (sha=202c184c00f7b3193b67a8f96ae1c78e32ca86c8)",
+      "expected_head_sha": "202c184c00f7b3193b67a8f96ae1c78e32ca86c8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T06:59:23.151Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-mcp-add-create-only",
+        "head_sha": "202c184c00f7b3193b67a8f96ae1c78e32ca86c8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
