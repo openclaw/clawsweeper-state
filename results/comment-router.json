@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T01:48:26.458Z",
+  "updated_at": "2026-08-23T01:48:27.593Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117266:5382269032:2026-08-22T19:46:47Z:re_review",
-      "comment_id": "5382269032",
-      "comment_version_key": "5382269032:2026-08-22T19:46:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117266#issuecomment-5382269032",
-      "comment_created_at": "2026-08-22T19:46:47Z",
-      "comment_updated_at": "2026-08-22T19:46:47Z",
-      "comment_body_sha256": "df4804d13c53c60a64aef9aac537a8ab3acbcf3b00b00b65b46155cf52f228f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117266,
-      "author": "yetval",
-      "author_id": 102706514,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-22T19:50:04.208Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/managed-media-branch-retention",
-        "head_sha": "2d04e11581b7657e2cd82d7484ffbc0a07d92d14",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114983:5100804526:2026-08-22T19:45:26Z:clawsweeper_needs_human",
       "comment_id": "5100804526",
@@ -30582,6 +30535,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T01:48:26.458Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128071:5383649577:2026-08-23T01:47:28Z:clawsweeper_needs_human",
+      "comment_id": "5383649577",
+      "comment_version_key": "5383649577:2026-08-23T01:47:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128071#issuecomment-5383649577",
+      "comment_created_at": "2026-08-23T01:47:28Z",
+      "comment_updated_at": "2026-08-23T01:47:28Z",
+      "comment_body_sha256": "4899676fdc56fb57b70b713fd53eb0babd09cb436ce0f8fd2e3b158b80f44fa2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128071,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve the original tool allowlist during reconciliation (P1)** - This replaces attempt.toolsAllow with [\"read\"], even though that value is the caller's explicit model-tool boundary. A run that intentionally e...; Review finding: [P1] Preserve the original tool allowlist during reconciliation — src/agents/embedded-agent-runner/run/attempt-tool-prepare.ts:82-84 - [high] Recovery bypasses cal... (sha=aa5cf25ba9923aaeadd6a2f8c2ffdfb87fc65803)",
+      "expected_head_sha": "aa5cf25ba9923aaeadd6a2f8c2ffdfb87fc65803",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T01:48:27.593Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-mode-read-only-recovery",
+        "head_sha": "aa5cf25ba9923aaeadd6a2f8c2ffdfb87fc65803",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
