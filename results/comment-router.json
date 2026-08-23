@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T14:15:19.988Z",
+  "updated_at": "2026-08-23T14:15:24.197Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1212:5385368876:2026-08-23T09:47:08Z:re_review",
-      "comment_id": "5385368876",
-      "comment_version_key": "5385368876:2026-08-23T09:47:08Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1212#issuecomment-5385368876",
-      "comment_created_at": "2026-08-23T09:47:08Z",
-      "comment_updated_at": "2026-08-23T09:47:08Z",
-      "comment_body_sha256": "d6985fff7c02b3c5e820688487b6558ad91fe60777be6548fddc1e90011d1dba",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1212,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T09:47:54.213Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-134-closeout-provenance-r2",
-        "head_sha": "cecd1da2c6e10f52630378842b0987089a90c656",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:158:5360272197:2026-08-23T09:47:17Z:clawsweeper_needs_human",
       "comment_id": "5360272197",
@@ -31314,6 +31267,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/bug-02",
         "head_sha": "398e15d799ef3be654c2c4ffe915ad9a39e928f4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128222:5386169839:2026-08-23T14:12:08Z:clawsweeper_auto_repair",
+      "comment_id": "5386169839",
+      "comment_version_key": "5386169839:2026-08-23T14:12:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128222#issuecomment-5386169839",
+      "comment_created_at": "2026-08-23T13:10:46Z",
+      "comment_updated_at": "2026-08-23T14:12:08Z",
+      "comment_body_sha256": "70847be2be1c9c426644d6e5273e39146b1bfb49968556c2517d9fdd1f85fe00",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128222,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=79b4bad1909ef6c22f4825a23dc585bd67af9356)",
+      "expected_head_sha": "79b4bad1909ef6c22f4825a23dc585bd67af9356",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-23T14:15:24.197Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-health-clock-rollback-20260823",
+        "head_sha": "79b4bad1909ef6c22f4825a23dc585bd67af9356",
         "cluster_id": null,
         "job_path": null
       }
