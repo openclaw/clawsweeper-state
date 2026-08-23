@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125873"
 mode: "autonomous"
-run_id: "32660654969"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32660654969"
+run_id: "32660918633"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32660918633"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T19:26:53.253Z"
+published_at: "2026-08-23T19:33:09.008Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125873"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125873"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32660654969](https://github.com/openclaw/clawsweeper/actions/runs/32660654969)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32660918633](https://github.com/openclaw/clawsweeper/actions/runs/32660918633)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/125873
 
 ## Summary
 
-Confirmed narrow replay defect, but implementation is blocked: required ../codex source is absent, the checkout is read-only, and dependencies are unavailable. A new-fix-PR artifact is prepared.
+#125873 remains a real, narrow Bedrock replay bug: persisted tool-call arguments reach Converse `toolUse.input` unchanged. A two-file fix is planned, but this read-only checkout has no dependencies and the mandatory sibling `../codex` source is absent, so no branch, regression test, validation, or PR can be safely produced here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Confirmed narrow replay defect, but implementation is blocked: required ../codex
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125873 | fix_needed | blocked | canonical | The repair is narrow and supported by current-main source, but this worker cannot satisfy the mandatory direct Codex-source gate, edit files, install dependencies, or run validation. |
-| #126391 | keep_closed | skipped | related | Closed historical context only; no mutation is valid. |
-| #21873 | keep_closed | skipped | related | Closed historical sibling only; no mutation is valid. |
-| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | planned | canonical | Narrow implementation plan prepared for the deterministic executor. |
+| #125873 | fix_needed | planned | canonical | Historical or otherwise malformed persisted arguments bypass the producer-side validation and poison subsequent Bedrock requests. |
+| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | planned | canonical | The repair is a narrow owner-boundary reuse with one captured Converse payload regression. |
+| cluster:issue-openclaw-openclaw-125873 | open_fix_pr | blocked | canonical | Implementation requires a writable checkout with dependencies and the required sibling Codex source inspection before a PR can be opened. |
 
 ## Needs Human
 

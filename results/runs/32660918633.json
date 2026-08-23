@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125873",
+  "mode": "autonomous",
+  "run_id": "32660918633",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32660918633",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125873.md",
+  "published_at": "2026-08-23T19:33:09.008Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125873",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125873",
+  "canonical_pr": null,
+  "summary": "#125873 remains a real, narrow Bedrock replay bug: persisted tool-call arguments reach Converse `toolUse.input` unchanged. A two-file fix is planned, but this read-only checkout has no dependencies and the mandatory sibling `../codex` source is absent, so no branch, regression test, validation, or PR can be safely produced here.",
+  "actions": [
+    {
+      "target": "#125873",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Historical or otherwise malformed persisted arguments bypass the producer-side validation and poison subsequent Bedrock requests."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125873",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "The repair is a narrow owner-boundary reuse with one captured Converse payload regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125873",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout with dependencies and the required sibling Codex source inspection before a PR can be opened."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
