@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T08:04:14.913Z",
+  "updated_at": "2026-08-23T08:04:17.089Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127752:5383950524:2026-08-23T03:29:24Z:re_review",
-      "comment_id": "5383950524",
-      "comment_version_key": "5383950524:2026-08-23T03:29:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127752#issuecomment-5383950524",
-      "comment_created_at": "2026-08-23T03:13:18Z",
-      "comment_updated_at": "2026-08-23T03:29:24Z",
-      "comment_body_sha256": "faf673f4d1da2846471e0340b235ae475b56e5218325f1ca17cd6b374e3299c3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127752,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T03:30:05.339Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cloud-node-multimode-harnesses",
-        "head_sha": "d74ebfc0b04f078115190304b610faa82211d7d0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:69417:4340779491:2026-08-23T03:29:21Z:clawsweeper_needs_human",
       "comment_id": "4340779491",
@@ -31412,6 +31365,39 @@
         "kind": "pull_request",
         "branch": "codex/mac-attach-only-launchagent-ownership-20260822",
         "head_sha": "effa54bc5f1f60c8cd904d08c807fa5bd86d3af1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128138:5384886644:2026-08-23T08:01:29Z:clawsweeper_needs_human",
+      "comment_id": "5384886644",
+      "comment_version_key": "5384886644:2026-08-23T08:01:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128138#issuecomment-5384886644",
+      "comment_created_at": "2026-08-23T07:41:30Z",
+      "comment_updated_at": "2026-08-23T08:01:29Z",
+      "comment_body_sha256": "4c9cca5fbf644d8e7882189fd25c65518ee16677ca288495a3ec80cd40f3684f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128138,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is behind current main, and this shallow partial checkout could not fetch current-main source because DNS resolution for the promisor remote failed; exact-current-main interact... (sha=5888b6b321dc27f1a95288f0ebd74812489cd592)",
+      "expected_head_sha": "5888b6b321dc27f1a95288f0ebd74812489cd592",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T08:04:17.088Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-runtime-generation-owner",
+        "head_sha": "5888b6b321dc27f1a95288f0ebd74812489cd592",
         "cluster_id": null,
         "job_path": null
       }
