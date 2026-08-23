@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T06:53:19.634Z",
+  "updated_at": "2026-08-23T06:53:25.887Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128046:5383684126:2026-08-23T01:57:39Z:re_review",
-      "comment_id": "5383684126",
-      "comment_version_key": "5383684126:2026-08-23T01:57:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128046#issuecomment-5383684126",
-      "comment_created_at": "2026-08-23T01:57:39Z",
-      "comment_updated_at": "2026-08-23T01:57:39Z",
-      "comment_body_sha256": "652a2eee1f728f3c140e2a7f540f78707d5ce2b8ee933559e2bde0e64b8501f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128046,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T01:58:18.792Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/developer-mode-plugin",
-        "head_sha": "8c55d832d7bd80b66baf33cffe2201243da84726",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:69417:4340779491:2026-08-23T01:56:58Z:clawsweeper_auto_repair",
       "comment_id": "4340779491",
@@ -31406,6 +31359,39 @@
         "kind": "pull_request",
         "branch": "feat/aws-image-qualification-input",
         "head_sha": "86f80abead5e3aa6e1ff698fd028cdfdbe995b7e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125664:5324603599:2026-08-23T06:47:21Z:clawsweeper_needs_human",
+      "comment_id": "5324603599",
+      "comment_version_key": "5324603599:2026-08-23T06:47:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125664#issuecomment-5324603599",
+      "comment_created_at": "2026-08-18T06:45:06Z",
+      "comment_updated_at": "2026-08-23T06:47:21Z",
+      "comment_body_sha256": "6db5e1173be2622513bf844ea31f1acdba8db3db325d2b41660cad8d5f014118",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125664,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is behind main, and the unavailable current-main/base objects prevented verification that its Gateway and Feishu changes remain correct after the actual three-way merge. (sha=73b253dc56456ccf339d4f05f78108565657eba8)",
+      "expected_head_sha": "73b253dc56456ccf339d4f05f78108565657eba8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T06:53:25.887Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-send-attachment-drop-112244",
+        "head_sha": "73b253dc56456ccf339d4f05f78108565657eba8",
         "cluster_id": null,
         "job_path": null
       }
