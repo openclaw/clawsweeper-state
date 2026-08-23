@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T06:57:21.157Z",
+  "updated_at": "2026-08-23T06:57:28.777Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119525:5188980437:2026-08-23T02:02:09Z:clawsweeper_auto_repair",
-      "comment_id": "5188980437",
-      "comment_version_key": "5188980437:2026-08-23T02:02:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119525#issuecomment-5188980437",
-      "comment_created_at": "2026-08-05T07:38:24Z",
-      "comment_updated_at": "2026-08-23T02:02:09Z",
-      "comment_body_sha256": "6a9156237836bdaaeced184d4586d9f3d39d4f92ab160f2b2144bf396814874b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119525,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cca783dc532834f06074292703c6e971a397ecb7)",
-      "expected_head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T02:10:38.660Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/memory-search-timeout-classification",
-        "head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-        "cluster_id": "automerge-openclaw-openclaw-119525",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3506:5373967460:2026-08-23T02:10:25Z:clawsweeper_auto_repair",
       "comment_id": "5373967460",
@@ -31392,6 +31345,39 @@
         "kind": "pull_request",
         "branch": "auto/prospect-mcp-configure-nested-merge",
         "head_sha": "1c32d3f9dcb2d7fe5a13b1430e668d580fcb2a08",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125381:5319553742:2026-08-23T06:51:09Z:clawsweeper_needs_human",
+      "comment_id": "5319553742",
+      "comment_version_key": "5319553742:2026-08-23T06:51:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125381#issuecomment-5319553742",
+      "comment_created_at": "2026-08-17T19:56:16Z",
+      "comment_updated_at": "2026-08-23T06:51:09Z",
+      "comment_body_sha256": "1cfa1def14ca9b9217e3316836e117af169158b1357852b2d096d5f9762b527c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The helper controls a process-availability boundary; fresh exact-head validation must confirm that the new check-phase handoff preserves the hard bound as well as the delayed-output c... (sha=390949e0765ce906b6a12293f13eb522c512f643)",
+      "expected_head_sha": "390949e0765ce906b6a12293f13eb522c512f643",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T06:57:28.777Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/child-output-stall-drain-pr",
+        "head_sha": "390949e0765ce906b6a12293f13eb522c512f643",
         "cluster_id": null,
         "job_path": null
       }
