@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T08:19:54.087Z",
+  "updated_at": "2026-08-23T08:20:00.485Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127797:5384085021:2026-08-23T03:52:52Z:re_review",
-      "comment_id": "5384085021",
-      "comment_version_key": "5384085021:2026-08-23T03:52:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127797#issuecomment-5384085021",
-      "comment_created_at": "2026-08-23T03:52:52Z",
-      "comment_updated_at": "2026-08-23T03:52:52Z",
-      "comment_body_sha256": "401abcb09744af0c9a37ccb6c4c596a4204f90859b7519fed32a093317dbf80f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127797,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T03:53:42.526Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/sync-hook-message-pipeline-main",
-        "head_sha": "b9903a7c09720569582e5a06e0514de104b48e31",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128034:5382543776:2026-08-22T20:53:03Z:re_review",
       "comment_id": "5382543776",
@@ -31277,6 +31230,39 @@
         "kind": "pull_request",
         "branch": "fix/web-token-client-timeout",
         "head_sha": "e7cef3c3fbfe69139ec1d10246adbf74ca473c71",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128147:5385016685:2026-08-23T08:16:47Z:clawsweeper_needs_human",
+      "comment_id": "5385016685",
+      "comment_version_key": "5385016685:2026-08-23T08:16:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128147#issuecomment-5385016685",
+      "comment_created_at": "2026-08-23T08:16:47Z",
+      "comment_updated_at": "2026-08-23T08:16:47Z",
+      "comment_body_sha256": "edabd960a93bacdf0b6d35bc30a2c6f509c55e109fe7ceaf164c076a714df47f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128147,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 11 lines; the explicit irreversible disposal state is justified because an idle connection with no streams is reusable, while a disposed connection must never... (sha=1c637c1bde073405f528c1af4eb4a5e49d5e5463)",
+      "expected_head_sha": "1c637c1bde073405f528c1af4eb4a5e49d5e5463",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T08:20:00.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/async-owner-fences",
+        "head_sha": "1c637c1bde073405f528c1af4eb4a5e49d5e5463",
         "cluster_id": null,
         "job_path": null
       }
