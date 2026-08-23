@@ -67,18 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the remaining Ollama Cloud provider-probe defect in this issue. Preserve direct configured probe candidates, including an intentional deprecated pin, but when generic catalog fallback is required, rank deprecated and disabled rows below current rows before applying existing provider-specific ordering. Add a regression test where retired `ollama-cloud/kimi-k2.5` precedes a current cloud model and the selected probe uses the current row. Do not change the Control UI session-picker path, provider config format, manifest defaults, or CHANGELOG.md; put release-note context in the PR body. Stop and escalate if the repair requires a new setting, API contract, or provider-policy decision.
+In the model-probe selector, preserve explicitly configured candidates exactly as today, but exclude deprecated and disabled catalog rows during automatic fallback. Retain Anthropic preference ordering among eligible rows and return no model when all fallback rows are ineligible. Do not special-case Ollama or reorder its manifest. Add observable regressions for deprecated-first fallback, an explicit deprecated candidate, and all-ineligible fallback.
 
 Likely files:
 
 - src/commands/models/list.probe.models.ts
-- src/commands/models/list.probe.targets.test.ts
-- src/commands/models/list.probe.ollama.test.ts
+- src/commands/models/list.probe.models.test.ts
+- src/commands/models/list.probe.test.ts
+- extensions/ollama/src/provider-models.test.ts
 
 Validation:
 
-- pnpm test src/commands/models/list.probe.targets.test.ts src/commands/models/list.probe.ollama.test.ts
-- pnpm build
+- Capture the pre-fix failing regression for deprecated-first automatic fallback, then rerun it after the repair.
+- pnpm test src/commands/models/list.probe.models.test.ts
+- pnpm test src/commands/models/list.probe.test.ts
+- pnpm test extensions/ollama/src/provider-models.test.ts
 
 ## Operator Prompt
 
