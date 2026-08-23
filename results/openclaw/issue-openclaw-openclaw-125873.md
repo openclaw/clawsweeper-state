@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125873"
 mode: "autonomous"
-run_id: "32661965496"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32661965496"
+run_id: "32662967826"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32662967826"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-23T19:52:23.359Z"
-canonical: "https://github.com/openclaw/openclaw/issues/125873"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/125873"
+published_at: "2026-08-23T20:06:55.027Z"
+canonical: "#125873"
+canonical_issue: "#125873"
 canonical_pr: null
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-125873
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32661965496](https://github.com/openclaw/clawsweeper/actions/runs/32661965496)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32662967826](https://github.com/openclaw/clawsweeper/actions/runs/32662967826)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/125873
+Canonical: #125873
 
 ## Summary
 
-Confirmed the historic Bedrock replay bug on main b3b33d24: the converter forwards non-record tool arguments through a cast. A narrow two-file repair is prepared, but this read-only checkout lacks dependencies and cannot create ../codex for the mandatory direct Codex-source inspection, so no branch or PR can be produced here.
+Blocked before code changes: the mandatory sibling Codex-source gate cannot be satisfied because ../codex is absent, while this worker has read-only filesystem access and restricted network access. Current main still has the reported replay boundary.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,8 @@ Confirmed the historic Bedrock replay bug on main b3b33d24: the converter forwar
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125873 | fix_needed | blocked | canonical | The source reproduction remains valid, but implementation and mandatory direct Codex-source inspection cannot run in this read-only environment. |
-| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | planned | canonical | A narrow new PR can repair the canonical replay boundary once run in a writable checkout with dependencies and the required ../codex inspection. |
-| #21873 | keep_closed | skipped | related | Already closed; no mutation permitted or needed. |
-| #126391 | keep_closed | skipped | related | Already merged and only partial-overlap context. |
+| #125873 | needs_human | blocked | needs_human | A human must provide the mandatory sibling ../codex checkout or rerun in a writable, network-enabled worker before this repair can be implemented or validated. |
 
 ## Needs Human
 
-- none
+- Provide the mandatory sibling ../codex source checkout, or rerun this repair in an environment that can create it; the repository instruction forbids any code change without that direct inspection.

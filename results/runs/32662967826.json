@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125873",
+  "mode": "autonomous",
+  "run_id": "32662967826",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32662967826",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125873.md",
+  "published_at": "2026-08-23T20:06:55.027Z",
+  "canonical": "#125873",
+  "canonical_issue": "#125873",
+  "canonical_pr": null,
+  "summary": "Blocked before code changes: the mandatory sibling Codex-source gate cannot be satisfied because ../codex is absent, while this worker has read-only filesystem access and restricted network access. Current main still has the reported replay boundary.",
+  "actions": [
+    {
+      "target": "#125873",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "A human must provide the mandatory sibling ../codex checkout or rerun in a writable, network-enabled worker before this repair can be implemented or validated."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide the mandatory sibling ../codex source checkout, or rerun this repair in an environment that can create it; the repository instruction forbids any code change without that direct inspection."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
