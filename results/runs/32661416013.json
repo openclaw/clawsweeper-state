@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125873",
+  "mode": "autonomous",
+  "run_id": "32661416013",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32661416013",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125873.md",
+  "published_at": "2026-08-23T19:46:15.949Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125873",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125873",
+  "canonical_pr": null,
+  "summary": "#125873 is a confirmed narrow Bedrock replay-boundary bug on current main. The planned repair reuses the existing public coercion helper and adds one captured-Converse-payload regression. Implementation and validation are blocked only because this worker sandbox is read-only, has no installed dependencies, and lacks the required sibling ../codex checkout for the repository's Codex gate.",
+  "actions": [
+    {
+      "target": "#125873",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "A writable executor with dependencies and the required ../codex checkout must apply and validate the narrow repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125873",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "The fix is a one-line replay-boundary normalization plus a focused behavioral regression."
+    },
+    {
+      "target": "#21873",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation is permitted."
+    },
+    {
+      "target": "#126391",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Already merged and complementary, not a fix for the replay defect."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
