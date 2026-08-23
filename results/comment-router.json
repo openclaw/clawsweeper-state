@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T09:48:40.061Z",
+  "updated_at": "2026-08-23T09:53:06.772Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127699:5376876658:2026-08-22T00:49:46Z:re_review",
-      "comment_id": "5376876658",
-      "comment_version_key": "5376876658:2026-08-22T00:49:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127699#issuecomment-5376876658",
-      "comment_created_at": "2026-08-22T00:49:46Z",
-      "comment_updated_at": "2026-08-22T00:49:46Z",
-      "comment_body_sha256": "c70874420bf5c9118eb63c9a87130b86c9ccbc5fe249d45678fa7784e227e5b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127699,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T04:22:00.756Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5225990525:2026-08-08T11:55:36Z:re_review",
       "comment_id": "5225990525",
@@ -31875,6 +31848,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T09:48:40.061Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128103:5384152509:2026-08-23T09:50:10Z:clawsweeper_needs_human",
+      "comment_id": "5384152509",
+      "comment_version_key": "5384152509:2026-08-23T09:50:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128103#issuecomment-5384152509",
+      "comment_created_at": "2026-08-23T04:12:30Z",
+      "comment_updated_at": "2026-08-23T09:50:10Z",
+      "comment_body_sha256": "7c5efe7147a50520af2ece039f2610187e6ab6b1911c745844a22c2c1edf9721",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128103,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the updated harness reaches real placement and environment-service owners but substitutes provider functions, s... (sha=e3278e24860cc5b831b85e5e3c44b4274c29d583)",
+      "expected_head_sha": "e3278e24860cc5b831b85e5e3c44b4274c29d583",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T09:53:06.772Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-stale-worker-startup-replay",
+        "head_sha": "e3278e24860cc5b831b85e5e3c44b4274c29d583",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
