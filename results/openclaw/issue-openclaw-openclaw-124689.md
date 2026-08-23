@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124689"
 mode: "autonomous"
-run_id: "32609926742"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32609926742"
+run_id: "32610600683"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32610600683"
 head_sha: "648ad3538d987a05833ed3bcdff1cf1d8961cc48"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T01:28:19.051Z"
+published_at: "2026-08-23T01:40:38.958Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124689"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32609926742](https://github.com/openclaw/clawsweeper/actions/runs/32609926742)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32610600683](https://github.com/openclaw/clawsweeper/actions/runs/32610600683)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124689
 
 ## Summary
 
-The canonical issue remains reproducible from current main source: automatic catalog fallback can select Ollama Cloud's deprecated kimi-k2.5. No code or GitHub mutation was made because this read-only checkout lacks ../codex (a mandatory direct-inspection gate) and dependencies cannot be installed or run.
+#124689 remains a narrow, reproducible model-probe fallback defect: automatic fallback selects the deprecated Ollama Cloud `kimi-k2.5` row. A fix artifact is ready, but this read-only worker could not create the required Codex checkout, install pnpm, run the regression, or modify the branch.
 
 ## Impact
 
@@ -54,7 +54,7 @@ The canonical issue remains reproducible from current main source: automatic cat
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #124689 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,8 @@ The canonical issue remains reproducible from current main source: automatic cat
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124689 | fix_needed | blocked | canonical | A narrow generic repair is indicated, but the required Codex gate and executable test environment are unavailable. |
-| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | blocked | canonical | Ready for a writable executor after direct ../codex inspection and dependency installation. |
+| #124689 | fix_needed | planned | canonical | No open candidate PR is hydrated. The owner-boundary repair is a narrow automatic-fallback filter that preserves explicit configured candidates and Anthropic ordering. |
+| cluster:issue-openclaw-openclaw-124689 | build_fix_artifact | planned | canonical | Executor should apply the narrow patch on `clawsweeper/issue-openclaw-openclaw-124689`, capture the failing regression before editing, then run the listed validation. |
 
 ## Needs Human
 
