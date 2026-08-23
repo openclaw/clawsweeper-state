@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T06:56:21.658Z",
+  "updated_at": "2026-08-23T06:57:21.157Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101593:4903258229:2026-08-22T05:18:08Z:clawsweeper_auto_merge",
-      "comment_id": "4903258229",
-      "comment_version_key": "4903258229:2026-08-22T05:18:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101593#issuecomment-4903258229",
-      "comment_created_at": "2026-07-07T11:27:50Z",
-      "comment_updated_at": "2026-08-22T05:18:08Z",
-      "comment_body_sha256": "89c6e860f340dabb5ec0868042f2662622b0929c0e84ea9e29052fbd599adf14",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101593,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=8973666477d60c87d276c1b5f4ad22c21b0ccbb5); current checks are failing: checks-node-compact-small-whole-2:FAILURE",
-      "expected_head_sha": "8973666477d60c87d276c1b5f4ad22c21b0ccbb5",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T02:10:38.660Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-101489",
-        "head_sha": "8973666477d60c87d276c1b5f4ad22c21b0ccbb5",
-        "cluster_id": "automerge-openclaw-openclaw-101593",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-101593.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-101593.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119525:5188980437:2026-08-23T02:02:09Z:clawsweeper_auto_repair",
       "comment_id": "5188980437",
@@ -31406,6 +31359,39 @@
         "kind": "pull_request",
         "branch": "t3code/mantis-verdict-coherence",
         "head_sha": "b513f50802ecd5be6f69239df7188aa1fc2ec325",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124551:5307366079:2026-08-23T06:48:35Z:clawsweeper_needs_human",
+      "comment_id": "5307366079",
+      "comment_version_key": "5307366079:2026-08-23T06:48:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124551#issuecomment-5307366079",
+      "comment_created_at": "2026-08-16T12:10:47Z",
+      "comment_updated_at": "2026-08-23T06:48:35Z",
+      "comment_body_sha256": "b9c543e42562b314f1c4c64b7d15b1de06c8208462f6a708f0535d0e6cc27396",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124551,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, which has separately changed the same CLI and config modules; GitHub reports a clean merge, but validation must be refreshed on the resulting head. (sha=1c32d3f9dcb2d7fe5a13b1430e668d580fcb2a08)",
+      "expected_head_sha": "1c32d3f9dcb2d7fe5a13b1430e668d580fcb2a08",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T06:57:21.157Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "auto/prospect-mcp-configure-nested-merge",
+        "head_sha": "1c32d3f9dcb2d7fe5a13b1430e668d580fcb2a08",
         "cluster_id": null,
         "job_path": null
       }
