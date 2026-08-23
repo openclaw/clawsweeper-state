@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T16:29:26.058Z",
+  "updated_at": "2026-08-23T16:29:52.070Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123942:5300131176:2026-08-23T11:52:58Z:clawsweeper_needs_human",
-      "comment_id": "5300131176",
-      "comment_version_key": "5300131176:2026-08-23T11:52:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123942#issuecomment-5300131176",
-      "comment_created_at": "2026-08-15T02:41:27Z",
-      "comment_updated_at": "2026-08-23T11:52:58Z",
-      "comment_body_sha256": "81ddaa8398e106dc5ff8616396b412fd95545b0d154a54c3dc4e03f3eb39e4c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123942,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The terminal before/after capture uses real SQLite reset persistence, but it explicitly omits the channel-turn path that calls the inj... (sha=5cc181d445da8444a82ae3f18f49cd6aa3b3b3a2)",
-      "expected_head_sha": "5cc181d445da8444a82ae3f18f49cd6aa3b3b3a2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T12:14:00.973Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "session-transcript-boundary-cutoff",
-        "head_sha": "5cc181d445da8444a82ae3f18f49cd6aa3b3b3a2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124538:5307246906:2026-08-23T11:45:50Z:clawsweeper_auto_repair",
       "comment_id": "5307246906",
@@ -32148,6 +32115,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128034:5387063822:2026-08-23T16:29:04Z:re_review",
+      "comment_id": "5387063822",
+      "comment_version_key": "5387063822:2026-08-23T16:29:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128034#issuecomment-5387063822",
+      "comment_created_at": "2026-08-23T16:29:04Z",
+      "comment_updated_at": "2026-08-23T16:29:04Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128034,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T16:29:48.819Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-chat-local-service",
+        "head_sha": "d58274e1f5fcfd289a9cf55f379e65228c843dfa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
