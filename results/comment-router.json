@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T20:13:41.865Z",
+  "updated_at": "2026-08-23T20:16:03.559Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113089:5151591575:2026-08-01T13:17:40Z:re_review",
-      "comment_id": "5151591575",
-      "comment_version_key": "5151591575:2026-08-01T13:17:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113089#issuecomment-5151591575",
-      "comment_created_at": "2026-08-01T13:17:40Z",
-      "comment_updated_at": "2026-08-01T13:17:40Z",
-      "comment_body_sha256": "3d460c4095be9475374e062b2fb8d65c75a997eb43971dde84600fec15846d32",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113089,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T14:45:00.622Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113089:5151763704:2026-08-01T14:04:54Z:re_review",
       "comment_id": "5151763704",
@@ -32604,6 +32577,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128349:5388222350:2026-08-23T20:12:44Z:clawsweeper_needs_human",
+      "comment_id": "5388222350",
+      "comment_version_key": "5388222350:2026-08-23T20:12:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128349#issuecomment-5388222350",
+      "comment_created_at": "2026-08-23T20:12:44Z",
+      "comment_updated_at": "2026-08-23T20:12:44Z",
+      "comment_body_sha256": "d81fb3c64815b08334eb220802c1b31b3723bdc77aff10c02202ae14cd9ff476",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128349,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This relocates a public CLI contract; the worktree lacks Commander’s installed source and could not independently run the claimed option-surface fingerprint, so exact-head compatibili... (sha=5a1265cf29c6eee6b0a95972e299a46c4c8d6ac6)",
+      "expected_head_sha": "5a1265cf29c6eee6b0a95972e299a46c4c8d6ac6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T20:16:03.559Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/refactor-onboarding-cli-options",
+        "head_sha": "5a1265cf29c6eee6b0a95972e299a46c4c8d6ac6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
