@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T09:36:55.079Z",
+  "updated_at": "2026-08-23T09:36:58.502Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5337766911:2026-08-19T05:05:19Z:re_review",
-      "comment_id": "5337766911",
-      "comment_version_key": "5337766911:2026-08-19T05:05:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5337766911",
-      "comment_created_at": "2026-08-19T05:05:19Z",
-      "comment_updated_at": "2026-08-19T05:05:19Z",
-      "comment_body_sha256": "29d75b451fc2996658ca8693dd511b77afae5a680e3321948107615800fbc3d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T04:11:37.849Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5337788618:2026-08-19T05:08:41Z:re_review",
       "comment_id": "5337788618",
@@ -31719,6 +31692,59 @@
       "status": "skipped",
       "processed_at": "2026-08-23T09:33:44.695Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125422:5321015898:2026-08-23T09:34:33Z:clawsweeper_auto_repair",
+      "comment_id": "5321015898",
+      "comment_version_key": "5321015898:2026-08-23T09:34:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125422#issuecomment-5321015898",
+      "comment_created_at": "2026-08-17T22:31:11Z",
+      "comment_updated_at": "2026-08-23T09:34:33Z",
+      "comment_body_sha256": "57107b4c3e044b95b4df716593f99cbe66efb5009eb887c0b711b5a16546cebb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125422,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=14710e9a297a05524585b268d6514587725f3dfe)",
+      "expected_head_sha": "14710e9a297a05524585b268d6514587725f3dfe",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-23T09:36:53.607Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/fix-cron-cross-tick-admission",
+        "head_sha": "14710e9a297a05524585b268d6514587725f3dfe",
+        "cluster_id": "automerge-openclaw-openclaw-125422",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125422.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125422.md"
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-125422.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127110:5367700593:2026-08-23T09:35:54Z:clawsweeper_needs_human",
