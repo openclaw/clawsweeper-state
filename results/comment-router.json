@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-23T22:13:36.201Z",
+  "updated_at": "2026-08-23T22:14:05.135Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126986:5365198371:2026-08-23T16:11:31Z:clawsweeper_needs_human",
-      "comment_id": "5365198371",
-      "comment_version_key": "5365198371:2026-08-23T16:11:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126986#issuecomment-5365198371",
-      "comment_created_at": "2026-08-21T04:27:59Z",
-      "comment_updated_at": "2026-08-23T16:11:31Z",
-      "comment_body_sha256": "6ffd3c32528c746d6493f2e8229302cd35bb8b3384c1a9e76ace0fb9f9fa090c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126986,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Clean up the temporary directories in this test (P3)** - useAutoCleanupTempDirTracker only tracks directories made through tempDirs.make, but this new test calls fs.mkdtemp twice and never removes either directo...; Review finding: [P3] Clean up the temporary directories in this test — extensions/codex/src/app-server/attempt-context.test.ts:126-127 - [medium] Verify native document authority... (sha=966c4e1dbb7b233d1545ad5baa20332597a5e838)",
-      "expected_head_sha": "966c4e1dbb7b233d1545ad5baa20332597a5e838",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T16:13:49.352Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-codex-bootstrap-context",
-        "head_sha": "966c4e1dbb7b233d1545ad5baa20332597a5e838",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127226:5371461805:2026-08-23T16:05:06Z:clawsweeper_needs_human",
       "comment_id": "5371461805",
@@ -32367,6 +32334,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/Kova:95:5388754531:2026-08-23T22:13:27Z:re_review",
+      "comment_id": "5388754531",
+      "comment_version_key": "5388754531:2026-08-23T22:13:27Z",
+      "comment_url": "https://github.com/openclaw/Kova/pull/95#issuecomment-5388754531",
+      "comment_created_at": "2026-08-23T22:13:27Z",
+      "comment_updated_at": "2026-08-23T22:13:27Z",
+      "comment_body_sha256": "7fda478211ee7dfb4a3253a0f356e087f9579b6fca77afb89a06b195debd80ed",
+      "repo": "openclaw/Kova",
+      "issue_number": 95,
+      "author": "pdurlej",
+      "author_id": 1210027,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T22:14:03.527Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/target-identity",
+        "head_sha": "b909e045cac8e7276fd32aee680366efb8ce3079",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
