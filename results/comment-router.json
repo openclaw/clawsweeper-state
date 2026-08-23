@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T22:25:28.235Z",
+  "updated_at": "2026-08-23T22:25:36.645Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118616:5387028853:2026-08-23T16:21:25Z:re_review",
-      "comment_id": "5387028853",
-      "comment_version_key": "5387028853:2026-08-23T16:21:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118616#issuecomment-5387028853",
-      "comment_created_at": "2026-08-23T16:21:25Z",
-      "comment_updated_at": "2026-08-23T16:21:25Z",
-      "comment_body_sha256": "c07242ee1750ac38d813b43e89186f54f752d36ee7b3221bffeb449c34e80cdd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118616,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T16:22:02.759Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-call-background-liveness",
-        "head_sha": "8e9d8d59476658ca05a6279f974338ffb8313571",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128197:5385773212:2026-08-23T16:21:49Z:clawsweeper_needs_human",
       "comment_id": "5385773212",
@@ -32474,6 +32427,39 @@
         "kind": "pull_request",
         "branch": "jesse/stage-signal-indexes",
         "head_sha": "b0cdd14de2e7fc882a9479f5172251e94475e4b8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124633:5307880441:2026-08-23T22:23:12Z:clawsweeper_needs_human",
+      "comment_id": "5307880441",
+      "comment_version_key": "5307880441:2026-08-23T22:23:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124633#issuecomment-5307880441",
+      "comment_created_at": "2026-08-16T14:17:53Z",
+      "comment_updated_at": "2026-08-23T22:23:12Z",
+      "comment_body_sha256": "6f52d862c03ec4de9f9ef560c566629e8fcfe0bdf86e8e2c683ea1ce9e22f87c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124633,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - session_start.reason becomes an additive plugin-visible lifecycle contract; maintainers should preserve its optional, replacement-only semantics so parallel child sessions remain dist... (sha=05b67df13af55b7af8873a4ac97211e01f8693a2)",
+      "expected_head_sha": "05b67df13af55b7af8873a4ac97211e01f8693a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T22:25:36.645Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/new-reset-ack-status-notice",
+        "head_sha": "05b67df13af55b7af8873a4ac97211e01f8693a2",
         "cluster_id": null,
         "job_path": null
       }
