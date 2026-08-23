@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128005",
+  "mode": "autonomous",
+  "run_id": "32636222816",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32636222816",
+  "head_sha": "2da70c23b043609f338c2b05eb2d5d7f091946f3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128005.md",
+  "published_at": "2026-08-23T11:28:53.461Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128005",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128005",
+  "canonical_pr": null,
+  "summary": "The Android owner accepts an unchecked live location after validating only cached locations. A narrow repair artifact is ready, but this read-only worker cannot modify or validate the branch: Gradle cannot create its wrapper lock, and required ../codex source is unavailable for the repository’s mandatory gate.",
+  "actions": [
+    {
+      "target": "#128005",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128005",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by environment constraints; preserve #128005 as the canonical issue and hand the repair artifact to a writable executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128005",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128005",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement and validate this one-issue Android repair without widening the branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

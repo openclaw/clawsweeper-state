@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128005"
 mode: "autonomous"
-run_id: "32635657663"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32635657663"
+run_id: "32636222816"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32636222816"
 head_sha: "2da70c23b043609f338c2b05eb2d5d7f091946f3"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-23T11:18:17.821Z"
+published_at: "2026-08-23T11:28:53.461Z"
 canonical: "https://github.com/openclaw/openclaw/issues/128005"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/128005"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-128005
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32635657663](https://github.com/openclaw/clawsweeper/actions/runs/32635657663)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32636222816](https://github.com/openclaw/clawsweeper/actions/runs/32636222816)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/128005
 
 ## Summary
 
-#128005 remains the canonical open bug. Current main source shows cached fixes honor maxAgeMs while the live-fallback callback is returned unchecked. No branch or PR was produced because this read-only worker cannot add/run the mandatory pre-fix Android regression, Gradle cannot create its wrapper lock, and the required sibling ../codex checkout is absent.
+The Android owner accepts an unchecked live location after validating only cached locations. A narrow repair artifact is ready, but this read-only worker cannot modify or validate the branch: Gradle cannot create its wrapper lock, and required ../codex source is unavailable for the repository’s mandatory gate.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/128005
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/128005
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128005 | fix_needed | blocked | canonical | A narrow repair is indicated, but implementation and proof are blocked until a writable checkout provides Gradle/Corepack state and the required sibling Codex source inspection. |
-| cluster:issue-openclaw-openclaw-128005 | build_fix_artifact | planned |  | Prepared for a writable executor after it completes the required Codex inspection and pre-fix regression. |
+| #128005 | fix_needed | blocked | canonical | Implementation is blocked only by environment constraints; preserve #128005 as the canonical issue and hand the repair artifact to a writable executor. |
+| cluster:issue-openclaw-openclaw-128005 | build_fix_artifact | planned | canonical | A writable executor can implement and validate this one-issue Android repair without widening the branch. |
 
 ## Needs Human
 
-- Provide a writable repair environment with the required sibling ../codex checkout (or permission to clone it) so the capture-boundary regression can be added, demonstrated failing on current main, and validated.
+- none
