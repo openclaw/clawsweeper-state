@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-23T22:19:58.099Z",
+  "updated_at": "2026-08-23T22:20:42.620Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126082:5382887790:2026-08-22T22:17:15Z:re_review",
-      "comment_id": "5382887790",
-      "comment_version_key": "5382887790:2026-08-22T22:17:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126082#issuecomment-5382887790",
-      "comment_created_at": "2026-08-22T22:17:15Z",
-      "comment_updated_at": "2026-08-22T22:17:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126082,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T16:15:43.671Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1481:5386817336:2026-08-23T16:10:05Z:clawsweeper_needs_human",
       "comment_id": "5386817336",
@@ -32471,6 +32444,39 @@
       "status": "skipped",
       "processed_at": "2026-08-23T22:19:58.099Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3506:5373967460:2026-08-23T22:13:01Z:clawsweeper_needs_human",
+      "comment_id": "5373967460",
+      "comment_version_key": "5373967460:2026-08-23T22:13:01Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3506#issuecomment-5373967460",
+      "comment_created_at": "2026-08-21T18:51:28Z",
+      "comment_updated_at": "2026-08-23T22:13:01Z",
+      "comment_body_sha256": "cadb5de5de5d8e0a4f06bb21f324b77a902d310364240fbeb9a89c7963b8aeda",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3506,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve Bearer-authenticated download metering (P1)** - The new 307 at this line changes the origin, so clients do not carry Authorization to Nitro. Nitro then sends only its Vercel OIDC header for the manifest...; Review finding: [P1] Preserve Bearer-authenticated download metering — convex/downloads.ts:88-98 - [medium] Bearer identity is lost across the redirect — convex/downloads.ts:88 (sha=f02c0bfa604b366a8cc0ee23e6ced7a1c337ac17)",
+      "expected_head_sha": "f02c0bfa604b366a8cc0ee23e6ced7a1c337ac17",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T22:20:42.620Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stream-direct-download",
+        "head_sha": "f02c0bfa604b366a8cc0ee23e6ced7a1c337ac17",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
