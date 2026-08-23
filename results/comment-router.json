@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T12:27:37.104Z",
+  "updated_at": "2026-08-23T12:27:41.754Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5384769199:2026-08-23T07:09:05Z:re_review",
-      "comment_id": "5384769199",
-      "comment_version_key": "5384769199:2026-08-23T07:09:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5384769199",
-      "comment_created_at": "2026-08-23T07:09:05Z",
-      "comment_updated_at": "2026-08-23T07:09:05Z",
-      "comment_body_sha256": "0090c74ff4f3dc62882c975c60331fbcf3bfce14b4e692d11f7e32118827feb4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T07:09:53.135Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119977-codex-stale-binding-compaction",
-        "head_sha": "cdf539f155d725b9a373022fd71787a9f9ab179c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5384770599:2026-08-23T07:09:27Z:re_review",
       "comment_id": "5384770599",
@@ -31463,6 +31416,39 @@
         "kind": "pull_request",
         "branch": "meow/agents-workspace-cron-ui",
         "head_sha": "419764acda9abe4980352f0754093952bcfba8b9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127074:5366490081:2026-08-23T12:22:43Z:clawsweeper_needs_human",
+      "comment_id": "5366490081",
+      "comment_version_key": "5366490081:2026-08-23T12:22:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127074#issuecomment-5366490081",
+      "comment_created_at": "2026-08-21T07:17:50Z",
+      "comment_updated_at": "2026-08-23T12:22:43Z",
+      "comment_body_sha256": "494f7dc84380fea46f35d7dbf0da2ee27c784b2d5a72badaff9f50296212e47c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127074,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, so its successful head checks do not prove the final merge result; rebase or refresh the merge result and exact-head CI before landing. (sha=5585848a9d5ac84f3fcaf0575cde3adc3e0e9e4e)",
+      "expected_head_sha": "5585848a9d5ac84f3fcaf0575cde3adc3e0e9e4e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T12:27:41.754Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-workboard-complete-proofid-alone-127034",
+        "head_sha": "5585848a9d5ac84f3fcaf0575cde3adc3e0e9e4e",
         "cluster_id": null,
         "job_path": null
       }
