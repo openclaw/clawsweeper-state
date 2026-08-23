@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T14:09:31.408Z",
+  "updated_at": "2026-08-23T14:09:34.218Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128103:5385343621:2026-08-23T09:40:25Z:re_review",
-      "comment_id": "5385343621",
-      "comment_version_key": "5385343621:2026-08-23T09:40:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128103#issuecomment-5385343621",
-      "comment_created_at": "2026-08-23T09:40:25Z",
-      "comment_updated_at": "2026-08-23T09:40:25Z",
-      "comment_body_sha256": "4112d013fd47ba9f840d4b86b58dacc9d939828ae306b7aff68666e21afe68e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128103,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T09:41:09.813Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-stale-worker-startup-replay",
-        "head_sha": "e3278e24860cc5b831b85e5e3c44b4274c29d583",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:604:5385261575:2026-08-23T09:41:20Z:clawsweeper_needs_human",
       "comment_id": "5385261575",
@@ -27221,39 +27174,6 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:124014:5372567260:2026-08-21T16:32:12Z:maintainer_approve_automerge",
-      "comment_id": "5372567260",
-      "comment_version_key": "5372567260:2026-08-21T16:32:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5372567260",
-      "comment_created_at": "2026-08-21T16:32:12Z",
-      "comment_updated_at": "2026-08-21T16:32:12Z",
-      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124014,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T13:39:22.730Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auth-reauth-state-reset",
-        "head_sha": "7d8f1dcf8ebe934081e24fe0adee1252c26cd26e",
-        "cluster_id": "automerge-openclaw-openclaw-124014",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
-      }
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128197:5385773212:2026-08-23T13:39:20Z:clawsweeper_auto_repair",
       "comment_id": "5385773212",
       "comment_version_key": "5385773212:2026-08-23T13:39:20Z",
@@ -31282,6 +31202,86 @@
         "head_sha": "7bc5e69135a4c79695f77768ce621a5d70b53cf8",
         "cluster_id": null,
         "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124014:5300588734:2026-08-23T14:03:10Z:clawsweeper_needs_human",
+      "comment_id": "5300588734",
+      "comment_version_key": "5300588734:2026-08-23T14:03:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5300588734",
+      "comment_created_at": "2026-08-15T04:46:08Z",
+      "comment_updated_at": "2026-08-23T14:03:10Z",
+      "comment_body_sha256": "b23639a39fe9a5f90c7f6c06ed808c8bd22c6ddff211f1852eae296f2bf45a0d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124014,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted credential-routing semantics and adds an optional generation field; exact-head CI must cover multi-agent ownership, stale settlement fencing, and old-reader tol... (sha=a88a739e217ab2f16a9ff84315473190fa4c15cf)",
+      "expected_head_sha": "a88a739e217ab2f16a9ff84315473190fa4c15cf",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T14:09:34.218Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/auth-reauth-state-reset",
+        "head_sha": "a88a739e217ab2f16a9ff84315473190fa4c15cf",
+        "cluster_id": "automerge-openclaw-openclaw-124014",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124014:5372567260:2026-08-21T16:32:12Z:maintainer_approve_automerge",
+      "comment_id": "5372567260",
+      "comment_version_key": "5372567260:2026-08-21T16:32:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5372567260",
+      "comment_created_at": "2026-08-21T16:32:12Z",
+      "comment_updated_at": "2026-08-21T16:32:12Z",
+      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124014,
+      "author": "clawsweeper",
+      "author_id": 280513762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T14:09:34.218Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/auth-reauth-state-reset",
+        "head_sha": "a88a739e217ab2f16a9ff84315473190fa4c15cf",
+        "cluster_id": "automerge-openclaw-openclaw-124014",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
       }
     }
   ]
