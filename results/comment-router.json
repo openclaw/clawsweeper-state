@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-23T22:59:42.196Z",
+  "updated_at": "2026-08-23T22:58:14.662Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:141:5387072690:2026-08-23T16:47:19Z:clawsweeper_needs_human",
+      "comment_id": "5387072690",
+      "comment_version_key": "5387072690:2026-08-23T16:47:19Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/141#issuecomment-5387072690",
+      "comment_created_at": "2026-08-23T16:31:01Z",
+      "comment_updated_at": "2026-08-23T16:47:19Z",
+      "comment_body_sha256": "4f98c26e8a9d0f92f6778142c957aed20c36c60a9d2a15bbeb2593ca8f59480b",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 141,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing JavaScript-backend consumers that previously accepted malformed link-marked ZIP entries will now receive the documented entry-link failure; the Unreleased note makes this int... (sha=3c394571dba4adcb6ecfe3f498530cc804aff626)",
+      "expected_head_sha": "3c394571dba4adcb6ecfe3f498530cc804aff626",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T16:52:45.030Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/zip-link-directory-bit",
+        "head_sha": "3c394571dba4adcb6ecfe3f498530cc804aff626",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120056:5387146186:2026-08-23T16:46:50Z:re_review",
       "comment_id": "5387146186",
@@ -32409,53 +32442,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128357:5388950593:2026-08-23T22:58:55Z:re_review",
-      "comment_id": "5388950593",
-      "comment_version_key": "5388950593:2026-08-23T22:58:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128357#issuecomment-5388950593",
-      "comment_created_at": "2026-08-23T22:58:55Z",
-      "comment_updated_at": "2026-08-23T22:58:55Z",
-      "comment_body_sha256": "a9dc2e56211415b059b7c7e2983076f0934387ad32dd1c9e03a15a52f55cab82",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128357,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T22:59:40.408Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-discord-outbound-cancel-20260823",
-        "head_sha": "312830b0d12ca83d6e1bfd19dbde6f458d2e4d6b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
