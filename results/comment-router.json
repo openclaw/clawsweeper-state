@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T20:37:56.099Z",
+  "updated_at": "2026-08-23T20:38:07.314Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128235:5386653206:2026-08-23T14:58:33Z:re_review",
-      "comment_id": "5386653206",
-      "comment_version_key": "5386653206:2026-08-23T14:58:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128235#issuecomment-5386653206",
-      "comment_created_at": "2026-08-23T14:58:33Z",
-      "comment_updated_at": "2026-08-23T14:58:33Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128235,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T14:59:15.118Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-binding-log-proof",
-        "head_sha": "308a87600f06930e625f6e1241653985060a2450",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2457:5081410241:2026-08-23T14:57:44Z:clawsweeper_auto_repair",
       "comment_id": "5081410241",
@@ -32555,6 +32508,39 @@
         "kind": "pull_request",
         "branch": "release/next-unreleased-0.2.0-31835411683",
         "head_sha": "671a582d29b5119ae8fc0ccc357e869bd0a4b9b9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3512:5381521199:2026-08-23T20:27:25Z:clawsweeper_needs_human",
+      "comment_id": "5381521199",
+      "comment_version_key": "5381521199:2026-08-23T20:27:25Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3512#issuecomment-5381521199",
+      "comment_created_at": "2026-08-22T16:51:50Z",
+      "comment_updated_at": "2026-08-23T20:27:25Z",
+      "comment_body_sha256": "51baa33bcd16840b26662a8a95484ee9dd5d119815df683851c396048d763956",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3512,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required structured autoreview helper remains unrun because its TruffleHog prerequisite is absent from this review environment. (sha=14540d18c747a1f7fecdb57a8e286485b086f092)",
+      "expected_head_sha": "14540d18c747a1f7fecdb57a8e286485b086f092",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T20:38:07.314Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skills-first-page-error-state",
+        "head_sha": "14540d18c747a1f7fecdb57a8e286485b086f092",
         "cluster_id": null,
         "job_path": null
       }
