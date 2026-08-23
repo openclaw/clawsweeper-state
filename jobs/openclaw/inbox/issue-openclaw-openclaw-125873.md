@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current Bedrock replay bug described by https://github.com/openclaw/openclaw/issues/125873. In `extensions/amazon-bedrock/stream.runtime.ts`, reuse the exported `coerceTransportToolCallArguments` helper when translating persisted assistant `toolCall` blocks into Bedrock `toolUse.input`; do not add config, persistence migration, or a parallel helper. Add a focused captured-Converse-payload regression in the existing Bedrock stream tests showing persisted scalar, array, null, and JSON-object-string arguments become object-shaped while valid objects remain unchanged. Preserve the producer-side terminal validation added by https://github.com/openclaw/openclaw/pull/126391. Run the focused extension test and stop if the repair requires an AWS schema policy decision or broader transcript redesign; include user-visible release-note context in the PR body, not CHANGELOG.md.
+Repair the Bedrock provider’s historic tool-call replay boundary for this issue. In extensions/amazon-bedrock/stream.runtime.ts, reuse the exported shared coercion path from openclaw/plugin-sdk/provider-transport-runtime when projecting toolUse.input, so persisted malformed values become an object-shaped input while valid records remain unchanged. Do not add a session-storage fallback, configuration option, model-specific branch, or CHANGELOG edit. Add a behavior-focused regression in extensions/amazon-bedrock/stream.runtime.test.ts that injects historic malformed tool-call arguments into the context, captures the real ConverseStreamCommand input, and proves it is object-shaped; retain a valid-record case. Related context: https://github.com/openclaw/openclaw/pull/126391 and https://github.com/openclaw/openclaw/pull/21873. Establish the failing test on pre-fix code before opening a PR.
 
 Likely files:
 
@@ -76,8 +76,8 @@ Likely files:
 
 Validation:
 
-- pnpm test extensions/amazon-bedrock/stream.runtime.test.ts
-- pnpm check:changed -- extensions/amazon-bedrock/stream.runtime.ts extensions/amazon-bedrock/stream.runtime.test.ts
+- node scripts/run-vitest.mjs extensions/amazon-bedrock/stream.runtime.test.ts
+- node scripts/check-changed.mjs --dry-run -- extensions/amazon-bedrock/stream.runtime.ts extensions/amazon-bedrock/stream.runtime.test.ts
 
 ## Operator Prompt
 
