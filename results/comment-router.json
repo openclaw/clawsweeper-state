@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T04:56:30.301Z",
+  "updated_at": "2026-08-24T04:56:37.536Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127112:5389674808:2026-08-24T01:27:15Z:re_review",
-      "comment_id": "5389674808",
-      "comment_version_key": "5389674808:2026-08-24T01:27:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127112#issuecomment-5389674808",
-      "comment_created_at": "2026-08-24T01:27:15Z",
-      "comment_updated_at": "2026-08-24T01:27:15Z",
-      "comment_body_sha256": "307e85da4946c7ec5bcce30182be1d3264bbf793abf6694ed6eb63a9d44f4190",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127112,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T01:28:06.341Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/read-non-vision-image-drop-127009",
-        "head_sha": "78ba79b3f74e5eccecabfb42b2b1071901c60d64",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128421:5389428813:2026-08-24T01:27:51Z:clawsweeper_auto_repair",
       "comment_id": "5389428813",
@@ -31613,6 +31566,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T04:56:30.301Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128386:5388801996:2026-08-24T04:53:56Z:clawsweeper_needs_human",
+      "comment_id": "5388801996",
+      "comment_version_key": "5388801996:2026-08-24T04:53:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128386#issuecomment-5388801996",
+      "comment_created_at": "2026-08-23T22:24:32Z",
+      "comment_updated_at": "2026-08-24T04:53:56Z",
+      "comment_body_sha256": "5da7bf44c335d3335cd59d49ade6658d1c14da92728f8d7f86e8fcfda410b71d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128386,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The provided exact-head status snapshot still shows ios-build, macos-node, and macos-swift queued, with other CI work in progress; merge readiness remains unproven until they complete... (sha=8a9ec641311c8bc98a98f08e70ec4580cc36eed1)",
+      "expected_head_sha": "8a9ec641311c8bc98a98f08e70ec4580cc36eed1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T04:56:37.536Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "8a9ec641311c8bc98a98f08e70ec4580cc36eed1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
