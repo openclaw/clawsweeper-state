@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-08-24T12:16:10.818Z",
+  "updated_at": "2026-08-24T12:16:16.033Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125313:5391800689:2026-08-24T07:01:36Z:re_review",
-      "comment_id": "5391800689",
-      "comment_version_key": "5391800689:2026-08-24T07:01:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/125313#issuecomment-5391800689",
-      "comment_created_at": "2026-08-24T07:01:36Z",
-      "comment_updated_at": "2026-08-24T07:01:36Z",
-      "comment_body_sha256": "49f592aaea33d4ba026252e4f14b4d19ae8f7cbd33f9e8a7b619bfe895bd9833",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125313,
-      "author": "Grynn",
-      "author_id": 212880,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T07:02:17.474Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/goplaces:47:5391804314:2026-08-24T07:02:03Z:clawsweeper_auto_repair",
       "comment_id": "5391804314",
@@ -32320,6 +32275,39 @@
         "kind": "pull_request",
         "branch": "feat/budget-guide-and-model-tiering",
         "head_sha": "7b9f5dd70e015b21321014de15996c2313d01fea",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126856:5362509435:2026-08-24T12:11:50Z:clawsweeper_needs_human",
+      "comment_id": "5362509435",
+      "comment_version_key": "5362509435:2026-08-24T12:11:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126856#issuecomment-5362509435",
+      "comment_created_at": "2026-08-20T22:04:49Z",
+      "comment_updated_at": "2026-08-24T12:11:50Z",
+      "comment_body_sha256": "a9285ceb80a2ec6d47c6862fed37b820d1c0fe1bcdc7eb438466b08a6b60851f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126856,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied monitor harness is valuable regression coverage, but its mocked iMessage transport and final dispatcher do not show after-fix nati... (sha=90e9d75cb5e8647df02768d52f68a47334e708d0)",
+      "expected_head_sha": "90e9d75cb5e8647df02768d52f68a47334e708d0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T12:16:16.033Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-imessage-self-chat-loop-126468",
+        "head_sha": "90e9d75cb5e8647df02768d52f68a47334e708d0",
         "cluster_id": null,
         "job_path": null
       }
