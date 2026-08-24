@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T05:07:30.109Z",
+  "updated_at": "2026-08-24T05:08:01.563Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128397:5388950385:2026-08-24T01:37:40Z:clawsweeper_needs_human",
-      "comment_id": "5388950385",
-      "comment_version_key": "5388950385:2026-08-24T01:37:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128397#issuecomment-5388950385",
-      "comment_created_at": "2026-08-23T22:58:52Z",
-      "comment_updated_at": "2026-08-24T01:37:40Z",
-      "comment_body_sha256": "3503fd40b254e342999848acee684b1162bd3dd638deff74e9f58fecbe71b005",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128397,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds net 17 production lines; the added owner-level predicate is the necessary place to preserve filtered-roster correctness, so future work should not duplicate this poli... (sha=28a8357a44ae8d3a145cd09da00948388e57b8b9)",
-      "expected_head_sha": "28a8357a44ae8d3a145cd09da00948388e57b8b9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T01:38:49.127Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/team-server-performance-bottlenecks-1b45be",
-        "head_sha": "28a8357a44ae8d3a145cd09da00948388e57b8b9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128418:5389503456:2026-08-24T01:36:56Z:clawsweeper_needs_human",
       "comment_id": "5389503456",
@@ -31613,6 +31580,53 @@
         {
           "action": "merge",
           "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128463:5390972937:2026-08-24T05:07:15Z:re_review",
+      "comment_id": "5390972937",
+      "comment_version_key": "5390972937:2026-08-24T05:07:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128463#issuecomment-5390972937",
+      "comment_created_at": "2026-08-24T05:07:15Z",
+      "comment_updated_at": "2026-08-24T05:07:15Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128463,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T05:07:59.611Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-package-source-preflight",
+        "head_sha": "8e231de9f4e314d897d949719e319057f16fa4d7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
           "label": null,
           "job_path": null
         },
