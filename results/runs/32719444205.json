@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128637",
+  "mode": "autonomous",
+  "run_id": "32719444205",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32719444205",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128637.md",
+  "published_at": "2026-08-24T11:09:10.305Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128637",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128637",
+  "canonical_pr": null,
+  "summary": "#128637 remains the open canonical report. Source inspection identifies an owner-propagation gap in the channel wizard, but implementation planning is blocked by the repository-required direct ../codex inspection: that sibling checkout is absent and this worker is read-only.",
+  "actions": [
+    {
+      "target": "#128637",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128637",
+      "candidate_fix": null,
+      "reason": "Keep the report open; neither close nor merge is allowed in this job."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128637",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128637",
+      "candidate_fix": null,
+      "reason": "A repair likely needs selected-agent propagation through Control UI, protocol, gateway, and channel-setup ownership paths, but the mandatory Codex-source gate prevents an auditable fix artifact or PR plan."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a readable sibling ../codex checkout, or explicitly waive the AGENTS.md Codex-source gate for this non-Codex channel-wizard repair; then rerun this implementation job with dependencies available for focused regression proof."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128637",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
