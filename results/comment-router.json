@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T05:39:41.518Z",
+  "updated_at": "2026-08-24T05:40:56.358Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:87471:4559992191:2026-08-24T02:10:56Z:clawsweeper_needs_human",
-      "comment_id": "4559992191",
-      "comment_version_key": "4559992191:2026-08-24T02:10:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/87471#issuecomment-4559992191",
-      "comment_created_at": "2026-05-28T01:10:00Z",
-      "comment_updated_at": "2026-08-24T02:10:56Z",
-      "comment_body_sha256": "b50338ba6eb6788409f427183ec06d14f5f7ec0fbb0076a84ea779f90f157a89",
-      "repo": "openclaw/openclaw",
-      "issue_number": 87471,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep private yield context out of history (P1)** - Current main defines sessions_yield.message as private resumed-turn context, but this detector reads it from the hidden record and buildMirror emits it as assis...; Review finding: [P1] Keep private yield context out of history — src/gateway/chat-display-projection.sessions-yield.ts:10-17 - [P1] Accept all canonical yielded-result transcript... (sha=a2d9014a96eddc3c577c4a019ba48eaf9caf081c)",
-      "expected_head_sha": "a2d9014a96eddc3c577c4a019ba48eaf9caf081c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T02:41:12.554Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-87321-visible-tool-replay",
-        "head_sha": "a2d9014a96eddc3c577c4a019ba48eaf9caf081c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:87552:4561466290:2026-08-24T02:07:42Z:clawsweeper_auto_repair",
       "comment_id": "4561466290",
@@ -31153,6 +31120,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:93952:5391177925:2026-08-24T05:40:13Z:re_review",
+      "comment_id": "5391177925",
+      "comment_version_key": "5391177925:2026-08-24T05:40:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/93952#issuecomment-5391177925",
+      "comment_created_at": "2026-08-24T05:40:13Z",
+      "comment_updated_at": "2026-08-24T05:40:13Z",
+      "comment_body_sha256": "e08180d0bde47af4df6a2713686db400b0178c15785a17c44b067a15abe48760",
+      "repo": "openclaw/openclaw",
+      "issue_number": 93952,
+      "author": "amittell",
+      "author_id": 1388680,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head 08ac13304253a362bd9e69350781cdd21bd2d2b7",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T05:40:54.431Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auth-refresh-deadline-guard",
+        "head_sha": "08ac13304253a362bd9e69350781cdd21bd2d2b7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
