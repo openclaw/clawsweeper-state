@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T01:51:11.803Z",
+  "updated_at": "2026-08-24T01:52:15.016Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111351:5015268158:2026-08-23T22:15:53Z:clawsweeper_auto_repair",
-      "comment_id": "5015268158",
-      "comment_version_key": "5015268158:2026-08-23T22:15:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111351#issuecomment-5015268158",
-      "comment_created_at": "2026-07-19T09:51:30Z",
-      "comment_updated_at": "2026-08-23T22:15:53Z",
-      "comment_body_sha256": "285f4c147833f2b30f58f54af50404ee89f688fdfbd133b8f109ffc825898cc3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111351,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f947ad73513db0976d2e6a43f4dccc7599375cda)",
-      "expected_head_sha": "f947ad73513db0976d2e6a43f4dccc7599375cda",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T22:18:32.780Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-tombstone-rollover-defer",
-        "head_sha": "f947ad73513db0976d2e6a43f4dccc7599375cda",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118152:5160061935:2026-08-23T22:16:32Z:clawsweeper_auto_repair",
       "comment_id": "5160061935",
@@ -30627,6 +30594,53 @@
       "status": "skipped",
       "processed_at": "2026-08-24T01:51:11.803Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3493:5389804475:2026-08-24T01:51:30Z:re_review",
+      "comment_id": "5389804475",
+      "comment_version_key": "5389804475:2026-08-24T01:51:30Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5389804475",
+      "comment_created_at": "2026-08-24T01:51:30Z",
+      "comment_updated_at": "2026-08-24T01:51:30Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3493,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T01:52:12.205Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/meaningful-traffic-signals",
+        "head_sha": "33eecb324d902fefb2f689bf6124330bccf04d0c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
