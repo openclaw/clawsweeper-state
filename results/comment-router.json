@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T06:41:03.784Z",
+  "updated_at": "2026-08-24T06:41:08.937Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3514:5390509457:2026-08-24T03:52:58Z:re_review",
-      "comment_id": "5390509457",
-      "comment_version_key": "5390509457:2026-08-24T03:52:58Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3514#issuecomment-5390509457",
-      "comment_created_at": "2026-08-24T03:52:58Z",
-      "comment_updated_at": "2026-08-24T03:52:58Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3514,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T03:53:45.600Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/stage-signal-workflow-indexes",
-        "head_sha": "477c0acabc66eb95952ca0b8424d4d2685fb80f8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3494:5390510396:2026-08-24T03:53:09Z:re_review",
       "comment_id": "5390510396",
@@ -31164,6 +31117,39 @@
         "kind": "pull_request",
         "branch": "codex/autoqa-synology-outbound-intent-20260824",
         "head_sha": "8eecc53dcecd7786e56007750685bb46c7c33de3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128559:5391641070:2026-08-24T06:40:03Z:clawsweeper_auto_repair",
+      "comment_id": "5391641070",
+      "comment_version_key": "5391641070:2026-08-24T06:40:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128559#issuecomment-5391641070",
+      "comment_created_at": "2026-08-24T06:40:03Z",
+      "comment_updated_at": "2026-08-24T06:40:03Z",
+      "comment_body_sha256": "bc00666505e269a4e175893606ca7aa54724c330ae5a12b74f2139d82ea81665",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128559,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=5f81932604f1f07ec9e4fdadda5d38954e0fb9d3)",
+      "expected_head_sha": "5f81932604f1f07ec9e4fdadda5d38954e0fb9d3",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-24T06:41:08.936Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-81269-runtime-identity",
+        "head_sha": "5f81932604f1f07ec9e4fdadda5d38954e0fb9d3",
         "cluster_id": null,
         "job_path": null
       }
