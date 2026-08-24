@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T14:34:52.641Z",
+  "updated_at": "2026-08-24T14:35:18.570Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-24T10:43:54Z:clawsweeper_needs_human",
-      "comment_id": "5365906478",
-      "comment_version_key": "5365906478:2026-08-24T10:43:54Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5365906478",
-      "comment_created_at": "2026-08-21T06:12:29Z",
-      "comment_updated_at": "2026-08-24T10:43:54Z",
-      "comment_body_sha256": "aeb309be1e769d412f26e65ad8a87f485a4f27acd0bf852edfa2cfac7976eaf4",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3501,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The dependent detector must not query either staged index until this schema is deployed and production backfill has completed; a later schema deployment must remove staged only with t... (sha=bd01f13aa001714b63ec48748df5db7f3d1227f9)",
-      "expected_head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T10:46:08.330Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/stage-signal-indexes",
-        "head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3514:5390207954:2026-08-24T10:44:40Z:clawsweeper_needs_human",
       "comment_id": "5390207954",
@@ -31549,6 +31516,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T14:34:52.641Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128756:5396733218:2026-08-24T14:34:14Z:clawsweeper_needs_human",
+      "comment_id": "5396733218",
+      "comment_version_key": "5396733218:2026-08-24T14:34:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128756#issuecomment-5396733218",
+      "comment_created_at": "2026-08-24T14:34:14Z",
+      "comment_updated_at": "2026-08-24T14:34:14Z",
+      "comment_body_sha256": "08b3e23c8a6676576d2b2e8869c501ff2a0e79236299ba8011e91141b624a620",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128756,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Redact local paths before placing them in agent handoffs (P1)** - bundle.path is inserted verbatim into a prompt that the next lines send to Claude or Codex. redactTextForSupport does not redact filesystem paths...; Review finding: [P1] Redact local paths before placing them in agent handoffs — src/commands/triage-prompt.ts:70 - [medium] Raw local path in external agent prompt — src/commands/... (sha=82133af57d79239eb6418fede50185c476243a60)",
+      "expected_head_sha": "82133af57d79239eb6418fede50185c476243a60",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T14:35:18.570Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/openclaw-feature-fit-371f1e",
+        "head_sha": "82133af57d79239eb6418fede50185c476243a60",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
