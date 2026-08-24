@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128411",
+  "mode": "autonomous",
+  "run_id": "32675274693",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32675274693",
+  "head_sha": "d5b0aa42ff03edf2752d0f8b960c3a60bb70a246",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128411.md",
+  "published_at": "2026-08-24T00:08:23.384Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128411",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128411",
+  "canonical_pr": null,
+  "summary": "Current main has the reported lifecycle-rotation cleanup gap, but repair is blocked before code changes: required sibling ../codex is unavailable for direct hook-contract inspection, and this read-only environment also prevents test execution.",
+  "actions": [
+    {
+      "target": "#128409",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#128411",
+      "candidate_fix": null,
+      "reason": "Adjacent native-hook lifetime issue; no duplicate or closure action."
+    },
+    {
+      "target": "#128411",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128411",
+      "candidate_fix": null,
+      "reason": "Await direct inspection of the Codex hook contract in ../codex; then implement and validate the narrow rotation handler."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128411",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128411",
+      "candidate_fix": null,
+      "reason": "A narrow fix remains appropriate once the mandatory upstream contract and writable test environment are available."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide or permit creation of sibling ../codex for direct inspection of the native-hook contract; then rerun this repair in a writable environment so the failing regression and focused tests can run."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128411",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
