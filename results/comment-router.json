@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T19:25:23.301Z",
+  "updated_at": "2026-08-24T19:25:31.823Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99530:4876206725:2026-08-24T13:49:00Z:clawsweeper_needs_human",
-      "comment_id": "4876206725",
-      "comment_version_key": "4876206725:2026-08-24T13:49:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99530#issuecomment-4876206725",
-      "comment_created_at": "2026-07-03T12:26:03Z",
-      "comment_updated_at": "2026-08-24T13:49:00Z",
-      "comment_body_sha256": "31d926b585910e200b7a3227b83c02d5e55d7f7d3cfc8fb133e755640d2156bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99530,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Preserve final-effect approval binding** - Current main revalidates CWD and mutable script operands immediately before local spawn. Since this PR conflicts with that path, the resolved...; Review finding: [high] Preserve final-effect approval binding — src/node-host/invoke-system-run.ts:1070 (sha=eb151c35b94dd026d439943dc574f06b8b5e4c8e)",
-      "expected_head_sha": "eb151c35b94dd026d439943dc574f06b8b5e4c8e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T13:50:35.720Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approval-lifecycle-guard",
-        "head_sha": "eb151c35b94dd026d439943dc574f06b8b5e4c8e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127224:5396160945:2026-08-24T13:50:00Z:re_review",
       "comment_id": "5396160945",
@@ -32718,6 +32685,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Swabble:4:5304981351:2026-08-24T19:24:47Z:clawsweeper_auto_repair",
+      "comment_id": "5304981351",
+      "comment_version_key": "5304981351:2026-08-24T19:24:47Z",
+      "comment_url": "https://github.com/openclaw/Swabble/pull/4#issuecomment-5304981351",
+      "comment_created_at": "2026-08-16T00:40:50Z",
+      "comment_updated_at": "2026-08-24T19:24:47Z",
+      "comment_body_sha256": "b739ed050873c69dba8ab1673924411f563f67c7a87e4022af9a763335d5d4e9",
+      "repo": "openclaw/Swabble",
+      "issue_number": 4,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0ac5df0db30c51b8c83d4dddc3f552be607a3f68)",
+      "expected_head_sha": "0ac5df0db30c51b8c83d4dddc3f552be607a3f68",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T19:25:31.823Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/serve-tap-backpressure",
+        "head_sha": "0ac5df0db30c51b8c83d4dddc3f552be607a3f68",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
