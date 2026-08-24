@@ -67,23 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the documented nested plugin-help fast path for `openclaw plugins install --help` and `openclaw plugins list --help`. Extend the packaged startup-metadata producer and both launcher/runtime resolvers with an explicit static command-path representation; preserve runtime fallback for config-sensitive or ambiguous paths, and do not replace this with a route-import deferral. Add regression coverage showing both packaged commands emit help without importing `entry.js`, plus metadata and argv-shape coverage. Run focused CLI tests and a built-package bounded help smoke; do not edit CHANGELOG.md, but include user-facing release-note context in the PR body.
+Repair nested plugin help so `openclaw plugins list --help` and `openclaw plugins install --help` do not import the route layer. Guard the route-first import in `run-main` using the already-normalized help/version fact; preserve existing Commander parsing and all non-help route-first behavior. Add regression coverage proving route import is skipped for nested plugin help and that help still renders successfully. Do not alter plugin install behavior, config, networking, or command semantics. Include release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
-- openclaw.mjs
-- src/cli/precomputed-help.ts
-- src/cli/root-help-metadata.ts
-- scripts/write-cli-startup-metadata.ts
-- src/entry.test.ts
-- test/openclaw-launcher.e2e.test.ts
-- test/scripts/write-cli-startup-metadata.test.ts
+- src/cli/run-main.ts
+- src/cli/run-main.exit.test.ts
+- src/cli/program/help.test.ts
 
 Validation:
 
-- pnpm test src/cli/precomputed-help.test.ts src/entry.test.ts test/openclaw-launcher.e2e.test.ts test/scripts/write-cli-startup-metadata.test.ts
-- pnpm build
-- Run the built packaged launcher for `plugins install --help` and `plugins list --help` under a bounded timeout and verify help output with no runtime-entry import.
+- pnpm test src/cli/run-main.exit.test.ts src/cli/program/help.test.ts
+- Run bounded packaged CLI checks for `pnpm openclaw plugins list --help` and `pnpm openclaw plugins install --help`, verifying prompt usage output.
 
 ## Operator Prompt
 
