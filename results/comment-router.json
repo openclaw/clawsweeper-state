@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T13:52:24.798Z",
+  "updated_at": "2026-08-24T13:53:37.860Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128658:5393790610:2026-08-24T10:13:47Z:clawsweeper_needs_human",
-      "comment_id": "5393790610",
-      "comment_version_key": "5393790610:2026-08-24T10:13:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128658#issuecomment-5393790610",
-      "comment_created_at": "2026-08-24T10:13:47Z",
-      "comment_updated_at": "2026-08-24T10:13:47Z",
-      "comment_body_sha256": "a5546dc97aabcd366f04a94904dceba5ebc7c6e554e27ff2ff0cbae3d6477017",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128658,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared AGP pin reaches app, library, and test modules, including an internal AGP API consumer, so incomplete Android build/test results leave compatibility unproven. (sha=434035aafcff78b3ae67fabf1cfe589e880e2db7)",
-      "expected_head_sha": "434035aafcff78b3ae67fabf1cfe589e880e2db7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T10:14:35.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/gradle/apps/android/android-deps-3af0a0a1af",
-        "head_sha": "434035aafcff78b3ae67fabf1cfe589e880e2db7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/lobster:137:5355358593:2026-08-24T10:13:43Z:clawsweeper_needs_human",
       "comment_id": "5355358593",
@@ -31243,6 +31210,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128701:5396192199:2026-08-24T13:52:42Z:re_review",
+      "comment_id": "5396192199",
+      "comment_version_key": "5396192199:2026-08-24T13:52:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128701#issuecomment-5396192199",
+      "comment_created_at": "2026-08-24T13:52:42Z",
+      "comment_updated_at": "2026-08-24T13:52:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128701,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T13:53:35.289Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/queue-state-invariant",
+        "head_sha": "61d0039f4a792d7fc04f5574117388d4c064cc81",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
