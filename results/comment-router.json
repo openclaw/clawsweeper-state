@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T17:33:43.138Z",
+  "updated_at": "2026-08-24T17:36:53.098Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5312633914:2026-08-17T06:30:08Z:re_review",
-      "comment_id": "5312633914",
-      "comment_version_key": "5312633914:2026-08-17T06:30:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5312633914",
-      "comment_created_at": "2026-08-17T06:30:08Z",
-      "comment_updated_at": "2026-08-17T06:30:08Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T12:55:28.049Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5312735248:2026-08-17T06:43:36Z:re_review",
       "comment_id": "5312735248",
@@ -32117,6 +32090,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:49:5296191122:2026-08-24T17:35:01Z:clawsweeper_needs_human",
+      "comment_id": "5296191122",
+      "comment_version_key": "5296191122:2026-08-24T17:35:01Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/49#issuecomment-5296191122",
+      "comment_created_at": "2026-08-14T17:20:59Z",
+      "comment_updated_at": "2026-08-24T17:35:01Z",
+      "comment_body_sha256": "d8b07b855c67d9836de816bf52581cb5b89026217d1397ecfc8eb912da29e28b",
+      "repo": "openclaw/libterminal",
+      "issue_number": 49,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the third-party security-scanning implementation that runs with security-events: write; the SHA pin and successful CodeQL runs reduce this supply-chain and automation... (sha=7a87c12c95688465f6ce5eb813fe62ddae67a2c1)",
+      "expected_head_sha": "7a87c12c95688465f6ce5eb813fe62ddae67a2c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T17:36:53.098Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-97c731b4de",
+        "head_sha": "7a87c12c95688465f6ce5eb813fe62ddae67a2c1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
