@@ -2,53 +2,6 @@
   "updated_at": "2026-08-24T12:16:59.368Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:120419:5391820031:2026-08-24T07:04:02Z:re_review",
-      "comment_id": "5391820031",
-      "comment_version_key": "5391820031:2026-08-24T07:04:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120419#issuecomment-5391820031",
-      "comment_created_at": "2026-08-24T07:04:02Z",
-      "comment_updated_at": "2026-08-24T07:04:02Z",
-      "comment_body_sha256": "b5cb5d50fa82850a1edd02953364339b7d9ede787cb8e17fe2e5e576e912754c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120419,
-      "author": "Grynn",
-      "author_id": 212880,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T07:04:48.949Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ingress-stall-requeue",
-        "head_sha": "cd0e3eee599c0c33b8ef12f29b191793e0fe9aec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126715:5358447543:2026-08-24T07:01:15Z:clawsweeper_needs_human",
       "comment_id": "5358447543",
       "comment_version_key": "5358447543:2026-08-24T07:01:15Z",
@@ -32225,6 +32178,39 @@
         "kind": "pull_request",
         "branch": "feat/chat-document-flow-identity",
         "head_sha": "d7ef49376d12c7c5199899b7aa91953e42caf08a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125338:5317504959:2026-08-24T12:09:38Z:clawsweeper_needs_human",
+      "comment_id": "5317504959",
+      "comment_version_key": "5317504959:2026-08-24T12:09:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125338#issuecomment-5317504959",
+      "comment_created_at": "2026-08-17T16:08:28Z",
+      "comment_updated_at": "2026-08-24T12:09:38Z",
+      "comment_body_sha256": "07116188c5a316e9f4d22bdfa48f853fbed21e37b3811e2e17ad554a67e91089",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125338,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - For failed local-media uploads, existing operators will now receive an error rather than a successful-looking caption-only reply; this is an intentional compatibility change that matc... (sha=553903b5352c5ca31fcd879356d9891e14e1dcdf)",
+      "expected_head_sha": "553903b5352c5ca31fcd879356d9891e14e1dcdf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T12:16:59.347Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mattermost-reply-media-upload",
+        "head_sha": "553903b5352c5ca31fcd879356d9891e14e1dcdf",
         "cluster_id": null,
         "job_path": null
       }
