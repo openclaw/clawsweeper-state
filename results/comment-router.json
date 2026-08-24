@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T03:40:36.981Z",
+  "updated_at": "2026-08-24T03:40:54.412Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5322378367:2026-08-18T01:41:20Z:re_review",
-      "comment_id": "5322378367",
-      "comment_version_key": "5322378367:2026-08-18T01:41:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5322378367",
-      "comment_created_at": "2026-08-18T01:41:20Z",
-      "comment_updated_at": "2026-08-18T01:41:20Z",
-      "comment_body_sha256": "74814632663500044359ef174baef911062527905ab7e9e91cc1e03883dbe1ae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T23:20:45.531Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5322395347:2026-08-18T01:44:08Z:re_review",
       "comment_id": "5322395347",
@@ -31513,6 +31486,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T03:40:36.981Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111051:5013429040:2026-08-24T03:37:41Z:clawsweeper_needs_human",
+      "comment_id": "5013429040",
+      "comment_version_key": "5013429040:2026-08-24T03:37:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111051#issuecomment-5013429040",
+      "comment_created_at": "2026-07-19T00:01:24Z",
+      "comment_updated_at": "2026-08-24T03:37:41Z",
+      "comment_body_sha256": "b6167abbb21dc6b3a8d81bb6230db867b825364868fd6db5a4befcab3d97ab9a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111051,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new 5-minute worktree, 30-minute install/build, and scenario-derived QA deadlines can fail an existing but slow QA run that previously continued indefinitely. (sha=0b16e5e143fe0bae342565338b9e4cf2300a25c5)",
+      "expected_head_sha": "0b16e5e143fe0bae342565338b9e4cf2300a25c5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T03:40:54.412Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mantis-command-deadline",
+        "head_sha": "0b16e5e143fe0bae342565338b9e4cf2300a25c5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
