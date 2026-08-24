@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T13:47:09.791Z",
+  "updated_at": "2026-08-24T13:48:23.505Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128459:5390065852:2026-08-24T09:58:50Z:clawsweeper_needs_human",
-      "comment_id": "5390065852",
-      "comment_version_key": "5390065852:2026-08-24T09:58:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128459#issuecomment-5390065852",
-      "comment_created_at": "2026-08-24T02:36:45Z",
-      "comment_updated_at": "2026-08-24T09:58:50Z",
-      "comment_body_sha256": "3e17b230de37161a139c8ef46184453cf46678d357058439eccd7be266116657",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128459,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied current-check snapshot still has exact-head extension and Telegram jobs queued or in progress; merge only after required checks complete successfully on the current head. (sha=700e10834afac7b77d5216ab4cd90220e08b4123)",
-      "expected_head_sha": "700e10834afac7b77d5216ab4cd90220e08b4123",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T10:01:29.357Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/frv-telegram-test-shards",
-        "head_sha": "700e10834afac7b77d5216ab4cd90220e08b4123",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1487:5388558786:2026-08-24T10:01:23Z:clawsweeper_auto_repair",
       "comment_id": "5388558786",
@@ -31211,6 +31178,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113587:5077953640:2026-08-24T13:47:25Z:clawsweeper_needs_human",
+      "comment_id": "5077953640",
+      "comment_version_key": "5077953640:2026-08-24T13:47:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113587#issuecomment-5077953640",
+      "comment_created_at": "2026-07-25T09:15:16Z",
+      "comment_updated_at": "2026-08-24T13:47:25Z",
+      "comment_body_sha256": "aa107a51299251dedede741a2cf2e056022f433ad924777316b2b1e469c8dc02",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113587,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bound remote context and output limits (P2)** - The mapper accepts every finite positive models.dev limit, then publishes it as contextWindow and maxTokens. Runtime compaction uses contextWindow to size its toke...; Review finding: [P2] Bound remote context and output limits — src/plugin-sdk/provider-catalog-hybrid-runtime.ts:304-307 - [medium] Bound third-party model limits — src/plugin-sdk/... (sha=3e06c16c2c5c39233abb72ca1f55f09732f3727b)",
+      "expected_head_sha": "3e06c16c2c5c39233abb72ca1f55f09732f3727b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T13:48:23.505Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/opencode-models-dev-hybrid-catalog",
+        "head_sha": "3e06c16c2c5c39233abb72ca1f55f09732f3727b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
