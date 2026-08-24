@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T00:45:09.986Z",
+  "updated_at": "2026-08-24T00:45:52.654Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128034:5382640674:2026-08-22T21:16:10Z:re_review",
-      "comment_id": "5382640674",
-      "comment_version_key": "5382640674:2026-08-22T21:16:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128034#issuecomment-5382640674",
-      "comment_created_at": "2026-08-22T21:16:10Z",
-      "comment_updated_at": "2026-08-22T21:16:10Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128034,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T21:02:50.723Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128034:5386364167:2026-08-23T13:54:17Z:re_review",
       "comment_id": "5386364167",
@@ -30417,6 +30390,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T00:45:09.986Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/goplaces:37:5389459111:2026-08-24T00:45:05Z:clawsweeper_needs_human",
+      "comment_id": "5389459111",
+      "comment_version_key": "5389459111:2026-08-24T00:45:05Z",
+      "comment_url": "https://github.com/openclaw/goplaces/pull/37#issuecomment-5389459111",
+      "comment_created_at": "2026-08-24T00:45:05Z",
+      "comment_updated_at": "2026-08-24T00:45:05Z",
+      "comment_body_sha256": "c7b8b7a503bc813099fdf8bfd603a681e436118ed13c541b3d4b9d5166bf994e",
+      "repo": "openclaw/goplaces",
+      "issue_number": 37,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify newly authorized external helper bytes** - This SHA-256 permits a new external library to be copied and executed for codesigning and draft release work, but the library is not pr...; Review finding: [medium] Verify newly authorized external helper bytes — scripts/release-local:25 (sha=a5ec61d78cec4c69374945d0762a366b86c7d792)",
+      "expected_head_sha": "a5ec61d78cec4c69374945d0762a366b86c7d792",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T00:45:52.654Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/repin-release-helper",
+        "head_sha": "a5ec61d78cec4c69374945d0762a366b86c7d792",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
