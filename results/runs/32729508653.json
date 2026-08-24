@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128719",
+  "mode": "autonomous",
+  "run_id": "32729508653",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32729508653",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128719.md",
+  "published_at": "2026-08-24T13:09:59.250Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128719",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128719",
+  "canonical_pr": null,
+  "summary": "#128719 remains the open canonical bug. Current main contains the reported self-blocking guard, but a fix plan is blocked by the mandatory direct Codex-source check: ../codex is unavailable and this read-only, network-restricted worker cannot clone it.",
+  "actions": [
+    {
+      "target": "#128719",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128719",
+      "candidate_fix": null,
+      "reason": "Keep the canonical report open while the required Codex app-server protocol/runtime contract is made available for direct inspection."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a readable sibling ../codex checkout (or an equivalent approved direct source path) so the worker can verify the exact app-server/runtime contract before producing a repair artifact."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128719",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
