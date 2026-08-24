@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T03:14:57.826Z",
+  "updated_at": "2026-08-24T03:15:07.283Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5317781167:2026-08-17T16:38:20Z:re_review",
-      "comment_id": "5317781167",
-      "comment_version_key": "5317781167:2026-08-17T16:38:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5317781167",
-      "comment_created_at": "2026-08-17T16:38:20Z",
-      "comment_updated_at": "2026-08-17T16:38:20Z",
-      "comment_body_sha256": "295ab46fe71f6ed5ee2a2c15745fd835b2745193bcaeeb1617deb51d15f16d01",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T23:20:45.531Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5317873297:2026-08-17T16:48:59Z:re_review",
       "comment_id": "5317873297",
@@ -31169,6 +31142,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T03:14:57.826Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128465:5390281438:2026-08-24T03:13:54Z:clawsweeper_needs_human",
+      "comment_id": "5390281438",
+      "comment_version_key": "5390281438:2026-08-24T03:13:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128465#issuecomment-5390281438",
+      "comment_created_at": "2026-08-24T03:13:54Z",
+      "comment_updated_at": "2026-08-24T03:13:54Z",
+      "comment_body_sha256": "0415fffe4d36884aaf92fb7077b932fb746e75857fb3583c0000d133049cb471",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128465,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing configurations that enable the documented command logger must run Doctor repair after this intentional retirement; the hook has no runtime fallback. (sha=81a38adafa77e2b0375a17cd729e9fe19913e6f6)",
+      "expected_head_sha": "81a38adafa77e2b0375a17cd729e9fe19913e6f6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T03:15:07.283Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/remove-command-logger",
+        "head_sha": "81a38adafa77e2b0375a17cd729e9fe19913e6f6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
