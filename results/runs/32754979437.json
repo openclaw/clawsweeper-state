@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128782",
+  "mode": "autonomous",
+  "run_id": "32754979437",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32754979437",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128782.md",
+  "published_at": "2026-08-24T17:29:10.150Z",
+  "canonical": "#128782",
+  "canonical_issue": "#128782",
+  "canonical_pr": null,
+  "summary": "#128782 is a valid package-lifecycle bug: postinstall invokes the shared SQLite-writing registry migration outside the disable-gated flow. The explicit Doctor flow already owns initialization. No branch or PR could be built in this read-only run because required Codex-source inspection is unavailable and test dependencies are missing.",
+  "actions": [
+    {
+      "target": "#120663",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#128782",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#122617",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#128782",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#127997",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#128782",
+      "candidate_fix": null,
+      "reason": "Different root cause and owner boundary."
+    },
+    {
+      "target": "#128782",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128782",
+      "candidate_fix": null,
+      "reason": "Remove the postinstall migration call; retain the established Doctor migration path."
+    },
+    {
+      "target": "#128782",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128782",
+      "candidate_fix": null,
+      "reason": "A narrow replacement PR remains appropriate once a writable, dependency-complete environment with the required Codex source is available."
+    },
+    {
+      "target": "#128782",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128782",
+      "candidate_fix": null,
+      "reason": "Blocked by unavailable required Codex sibling source, unavailable GitHub DNS for the mandated clone, and missing writable test dependencies."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "keep_independent": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 2,
+    "blocked": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
