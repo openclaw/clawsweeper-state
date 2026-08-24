@@ -1,0 +1,75 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128743",
+  "mode": "autonomous",
+  "run_id": "32749088267",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32749088267",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128743.md",
+  "published_at": "2026-08-24T16:33:19.185Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128743",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128743",
+  "canonical_pr": null,
+  "summary": "Confirmed source-level root cause on hydrated main, but no PR can be produced here: the mandated sibling ../codex source is absent and the worktree is read-only. The narrow, testable repair artifact is ready for a writable Codex-gated worker.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/128743",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128743",
+      "candidate_fix": null,
+      "reason": "It is the sole canonical issue. The job forbids close and merge actions."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/128743",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128743",
+      "candidate_fix": null,
+      "reason": "Merge root properties into the existing flattened property accumulator so every preserved root-required field remains declared."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/128743",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128743",
+      "candidate_fix": null,
+      "reason": "A net-neutral shared-normalizer correction plus two behavior-focused regressions is the narrow repair."
+    },
+    {
+      "target": "clawsweeper/issue-openclaw-openclaw-128743",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128743",
+      "candidate_fix": null,
+      "reason": "A writable worktree with ../codex is required before changing code, running the failing/passing regression, and opening the permitted PR."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable task worktree containing the required sibling ../codex checkout, then rerun this repair artifact. No product or security judgment is unresolved."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
