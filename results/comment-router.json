@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T09:08:46.900Z",
+  "updated_at": "2026-08-24T09:14:49.836Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128197:5385773212:2026-08-24T04:32:48Z:clawsweeper_needs_human",
-      "comment_id": "5385773212",
-      "comment_version_key": "5385773212:2026-08-24T04:32:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128197#issuecomment-5385773212",
-      "comment_created_at": "2026-08-23T11:32:48Z",
-      "comment_updated_at": "2026-08-24T04:32:48Z",
-      "comment_body_sha256": "5c0652f193360a9b750dc61c22c55a670baa3fb4cc3d55cf6c94f4a4e0718cb7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128197,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the linked successful Mantis run targets an earlier head and does not prove that an active or stale SU...; Review finding: [P1] Fence Mantis lanes before snapshotting evidence — scripts/mantis/telegram-visible-collect-proof.sh:22-27 - [high] Active SUT can affect evidence after Codex t... (sha=c05350b5bf228630b4e05d44a63aedcf48de7488)",
-      "expected_head_sha": "c05350b5bf228630b4e05d44a63aedcf48de7488",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:46:01.291Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/mantis-telegram-visible-v2",
-        "head_sha": "c05350b5bf228630b4e05d44a63aedcf48de7488",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128397:5388950385:2026-08-24T04:32:37Z:clawsweeper_auto_repair",
       "comment_id": "5388950385",
@@ -32433,6 +32400,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128051:5393095847:2026-08-24T09:13:56Z:re_review",
+      "comment_id": "5393095847",
+      "comment_version_key": "5393095847:2026-08-24T09:13:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128051#issuecomment-5393095847",
+      "comment_created_at": "2026-08-24T09:13:56Z",
+      "comment_updated_at": "2026-08-24T09:13:56Z",
+      "comment_body_sha256": "77d9f8a455254de56c0f1006bd367d29e5aeea9fde15d576371a3334faaf2084",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128051,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T09:14:47.310Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-recovery-key-text-hint",
+        "head_sha": "cad9254757689942ee20c05f99953e10da14075c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
