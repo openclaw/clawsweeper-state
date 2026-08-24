@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T10:45:31.026Z",
+  "updated_at": "2026-08-24T10:46:08.330Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122425:5269756875:2026-08-12T16:48:32Z:re_review",
-      "comment_id": "5269756875",
-      "comment_version_key": "5269756875:2026-08-12T16:48:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5269756875",
-      "comment_created_at": "2026-08-12T16:48:32Z",
-      "comment_updated_at": "2026-08-12T16:48:32Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122425,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T05:32:44.087Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122425:5274685715:2026-08-13T01:07:35Z:re_review",
       "comment_id": "5274685715",
@@ -32695,6 +32668,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T10:45:31.026Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-24T10:43:54Z:clawsweeper_needs_human",
+      "comment_id": "5365906478",
+      "comment_version_key": "5365906478:2026-08-24T10:43:54Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5365906478",
+      "comment_created_at": "2026-08-21T06:12:29Z",
+      "comment_updated_at": "2026-08-24T10:43:54Z",
+      "comment_body_sha256": "aeb309be1e769d412f26e65ad8a87f485a4f27acd0bf852edfa2cfac7976eaf4",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3501,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The dependent detector must not query either staged index until this schema is deployed and production backfill has completed; a later schema deployment must remove staged only with t... (sha=bd01f13aa001714b63ec48748df5db7f3d1227f9)",
+      "expected_head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T10:46:08.330Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/stage-signal-indexes",
+        "head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
