@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T07:09:16.844Z",
+  "updated_at": "2026-08-24T07:09:16.959Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124803:5309462677:2026-08-24T04:04:56Z:clawsweeper_auto_repair",
-      "comment_id": "5309462677",
-      "comment_version_key": "5309462677:2026-08-24T04:04:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124803#issuecomment-5309462677",
-      "comment_created_at": "2026-08-16T20:15:30Z",
-      "comment_updated_at": "2026-08-24T04:04:56Z",
-      "comment_body_sha256": "5ab779fd2c721c2f4aaedea29f0df390c2387618d2112d2964aaf7a57d24618e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124803,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=31fdb19cbede1375acf0d073ad89d837c62902e7)",
-      "expected_head_sha": "31fdb19cbede1375acf0d073ad89d837c62902e7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:07:52.341Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/requester-settle-gateway-ready-20260817",
-        "head_sha": "31fdb19cbede1375acf0d073ad89d837c62902e7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125103:5312625940:2026-08-24T04:06:15Z:clawsweeper_auto_repair",
       "comment_id": "5312625940",
@@ -31123,6 +31090,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T07:09:16.844Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125725:5325660518:2026-08-24T07:02:54Z:clawsweeper_needs_human",
+      "comment_id": "5325660518",
+      "comment_version_key": "5325660518:2026-08-24T07:02:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125725#issuecomment-5325660518",
+      "comment_created_at": "2026-08-18T08:32:07Z",
+      "comment_updated_at": "2026-08-24T07:02:54Z",
+      "comment_body_sha256": "1462670fa060565e1feabf0d933d12a50fefa0a1266d9c277349f182b26443a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125725,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body has redacted after-fix hook output, but independent validation of the governing Codex event contract is unavailable to thi... (sha=af8774c1de4fccf8f61c31e02f2048257fd7a99e)",
+      "expected_head_sha": "af8774c1de4fccf8f61c31e02f2048257fd7a99e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T07:09:16.959Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-file-change-hook-params-current",
+        "head_sha": "af8774c1de4fccf8f61c31e02f2048257fd7a99e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
