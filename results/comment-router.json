@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T08:44:12.012Z",
+  "updated_at": "2026-08-24T08:45:36.289Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123556:5311829864:2026-08-17T04:31:04Z:re_review",
-      "comment_id": "5311829864",
-      "comment_version_key": "5311829864:2026-08-17T04:31:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5311829864",
-      "comment_created_at": "2026-08-17T04:31:04Z",
-      "comment_updated_at": "2026-08-17T04:31:04Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123556,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:45:12.588Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123556:5312025389:2026-08-17T04:57:52Z:re_review",
       "comment_id": "5312025389",
@@ -32143,6 +32116,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128629:5392786294:2026-08-24T08:44:48Z:clawsweeper_needs_human",
+      "comment_id": "5392786294",
+      "comment_version_key": "5392786294:2026-08-24T08:44:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128629#issuecomment-5392786294",
+      "comment_created_at": "2026-08-24T08:44:48Z",
+      "comment_updated_at": "2026-08-24T08:44:48Z",
+      "comment_body_sha256": "325b716e0f1fba26ab904e8ca9ba811380f93357912674737ab2d79b113203bf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128629,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - CommonMark 0.30 changes parser defaults used by the mobile chat renderer, while Media3, OkHttp, and the Gradle/AGP pair also change runtime or build behavior; upstream compatibility m... (sha=c647e2d9a05cb2d8c553385911cb03f940ee4a94)",
+      "expected_head_sha": "c647e2d9a05cb2d8c553385911cb03f940ee4a94",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T08:45:36.289Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/gradle/apps/android/android-deps-3e8f4c8b03",
+        "head_sha": "c647e2d9a05cb2d8c553385911cb03f940ee4a94",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
