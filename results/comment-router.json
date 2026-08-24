@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T21:21:38.037Z",
+  "updated_at": "2026-08-24T21:21:44.016Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128286:5398151952:2026-08-24T16:23:56Z:re_review",
-      "comment_id": "5398151952",
-      "comment_version_key": "5398151952:2026-08-24T16:23:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128286#issuecomment-5398151952",
-      "comment_created_at": "2026-08-24T16:23:56Z",
-      "comment_updated_at": "2026-08-24T16:23:56Z",
-      "comment_body_sha256": "e916836999459b68d18743807ea29c04e6399d0ad6c003bd61a07976064191c6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128286,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T16:24:39.892Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/pin-to-a-group-instead-of-globally",
-        "head_sha": "eeae1eef9f551ccb83842cd03429f1e17c7508b1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127967:5392979149:2026-08-24T16:24:47Z:re_review",
       "comment_id": "5392979149",
@@ -31985,6 +31938,39 @@
         "kind": "pull_request",
         "branch": "openclaw/standalone-page-consistency-audit",
         "head_sha": "24aebe40b0666edaeaec44eea4817c9f905025f3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128856:5401230701:2026-08-24T21:19:54Z:clawsweeper_needs_human",
+      "comment_id": "5401230701",
+      "comment_version_key": "5401230701:2026-08-24T21:19:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128856#issuecomment-5401230701",
+      "comment_created_at": "2026-08-24T20:51:40Z",
+      "comment_updated_at": "2026-08-24T21:19:54Z",
+      "comment_body_sha256": "04cd8fd04ce268e5fbe84bdc371e6afafc3bd8697c80981a2f445bda4d8cd409",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128856,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This deliberately changes the agent and conversation chosen for cron-generated messages; a missed side-effect form could still target the wrong conversation, so exact-head scheduler c... (sha=a02df56678d8ece25ac1da35d605af08dde7e1ab)",
+      "expected_head_sha": "a02df56678d8ece25ac1da35d605af08dde7e1ab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T21:21:44.016Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-cron-script-owner-routing-20260824",
+        "head_sha": "a02df56678d8ece25ac1da35d605af08dde7e1ab",
         "cluster_id": null,
         "job_path": null
       }
