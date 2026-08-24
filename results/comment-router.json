@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T14:26:53.227Z",
+  "updated_at": "2026-08-24T14:30:17.050Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124014:5300588734:2026-08-23T15:07:27Z:clawsweeper_needs_human",
-      "comment_id": "5300588734",
-      "comment_version_key": "5300588734:2026-08-23T15:07:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5300588734",
-      "comment_created_at": "2026-08-15T04:46:08Z",
-      "comment_updated_at": "2026-08-23T15:07:27Z",
-      "comment_body_sha256": "d12a3de777132b639d1b237dcaad8efb94f965f3d980284f5c322146c6211099",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124014,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR adds persisted credential-generation state and is behind current main, so inherited-owner and old-reader behavior must be rerun on the exact merge head. (sha=a88a739e217ab2f16a9ff84315473190fa4c15cf)",
-      "expected_head_sha": "a88a739e217ab2f16a9ff84315473190fa4c15cf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T10:42:58.891Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auth-reauth-state-reset",
-        "head_sha": "a88a739e217ab2f16a9ff84315473190fa4c15cf",
-        "cluster_id": "automerge-openclaw-openclaw-124014",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124025:5300731845:2026-08-21T19:13:49Z:clawsweeper_needs_human",
       "comment_id": "5300731845",
@@ -31513,6 +31480,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118876:5170578774:2026-08-24T14:24:20Z:clawsweeper_needs_human",
+      "comment_id": "5170578774",
+      "comment_version_key": "5170578774:2026-08-24T14:24:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118876#issuecomment-5170578774",
+      "comment_created_at": "2026-08-03T19:04:35Z",
+      "comment_updated_at": "2026-08-24T14:24:20Z",
+      "comment_body_sha256": "a54b7458e6bf8495b203ccd50be09b4eed8f3cdc4340c21cf539ae2945b0809c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118876,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep provenance conditional on fetched history (P1)** - The earlier P1 remains: resultContentSource is read from the tool definition after every execution, so this declaration taints the no-session and no-bindin...; Review finding: [P1] Keep provenance conditional on fetched history — extensions/clickclack/src/discussions/tool.ts:15 - [medium] Static source taints local sentinel results — ext... (sha=ce7f10106cf995d54a7aaba653f9ce75ca309bbb)",
+      "expected_head_sha": "ce7f10106cf995d54a7aaba653f9ce75ca309bbb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T14:30:17.050Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-clickclack-discussion-network-provenance",
+        "head_sha": "ce7f10106cf995d54a7aaba653f9ce75ca309bbb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
