@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T21:21:44.016Z",
+  "updated_at": "2026-08-24T21:21:51.231Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127967:5392979149:2026-08-24T16:24:47Z:re_review",
-      "comment_id": "5392979149",
-      "comment_version_key": "5392979149:2026-08-24T16:24:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127967#issuecomment-5392979149",
-      "comment_created_at": "2026-08-24T09:02:46Z",
-      "comment_updated_at": "2026-08-24T16:24:47Z",
-      "comment_body_sha256": "0b30d0c93ca1bdffa832f2963209897e592cbd37efd81406b53b1bad97f332d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127967,
-      "author": "HermanZeng",
-      "author_id": 25895921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T16:25:25.152Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reply-completion-handoff-126813",
-        "head_sha": "bb47f213255e5c7f934b20511654230a1f6a66ee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128185:5385558196:2026-08-24T16:25:27Z:clawsweeper_needs_human",
       "comment_id": "5385558196",
@@ -31971,6 +31924,39 @@
         "kind": "pull_request",
         "branch": "codex/autoqa-cron-script-owner-routing-20260824",
         "head_sha": "a02df56678d8ece25ac1da35d605af08dde7e1ab",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127105:5367462036:2026-08-24T21:17:29Z:clawsweeper_needs_human",
+      "comment_id": "5367462036",
+      "comment_version_key": "5367462036:2026-08-24T21:17:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127105#issuecomment-5367462036",
+      "comment_created_at": "2026-08-21T08:30:40Z",
+      "comment_updated_at": "2026-08-24T21:17:29Z",
+      "comment_body_sha256": "14f28e412d4f9ba0f49368f5e49f33b692aba500e6ee05433bf245f7ee066c8b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The persistent session-state finalizer grows by net 226 production lines; the added ownership grouping, byte sizing, and partial-progress accounting should remain the sole canonical f... (sha=5e4d36117c173abe8bac83098e6ea8801ee24bc0)",
+      "expected_head_sha": "5e4d36117c173abe8bac83098e6ea8801ee24bc0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T21:21:51.231Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-cleanup-batching-126647",
+        "head_sha": "5e4d36117c173abe8bac83098e6ea8801ee24bc0",
         "cluster_id": null,
         "job_path": null
       }
