@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T03:15:34.104Z",
+  "updated_at": "2026-08-24T03:15:35.668Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5318014051:2026-08-17T17:03:35Z:re_review",
-      "comment_id": "5318014051",
-      "comment_version_key": "5318014051:2026-08-17T17:03:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5318014051",
-      "comment_created_at": "2026-08-17T17:03:35Z",
-      "comment_updated_at": "2026-08-17T17:03:35Z",
-      "comment_body_sha256": "537b6eeed2fcdac2e0df380840ceb9175df5481eaf35cd84fd2c2957f419d639",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T23:20:45.531Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5318295318:2026-08-17T17:43:21Z:re_review",
       "comment_id": "5318295318",
@@ -31187,6 +31160,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T03:15:34.104Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128458:5390067218:2026-08-24T03:14:39Z:clawsweeper_needs_human",
+      "comment_id": "5390067218",
+      "comment_version_key": "5390067218:2026-08-24T03:14:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128458#issuecomment-5390067218",
+      "comment_created_at": "2026-08-24T02:37:00Z",
+      "comment_updated_at": "2026-08-24T03:14:39Z",
+      "comment_body_sha256": "c55aaa8f0dd6bd798dfa413bf0a2dd66c5985d7c4d7abf9afe46142372fe8c8f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128458,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Static workflow guards do not demonstrate GitHub Actions queue behavior; an exact-candidate run must show Matrix and Buzz progressing independently while duplicate Matrix and pooled-c... (sha=d6151db73a99e490dcc48011af949565f43d6307)",
+      "expected_head_sha": "d6151db73a99e490dcc48011af949565f43d6307",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T03:15:35.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/qa-lock-scope",
+        "head_sha": "d6151db73a99e490dcc48011af949565f43d6307",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
