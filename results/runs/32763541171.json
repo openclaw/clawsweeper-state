@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128797",
+  "mode": "autonomous",
+  "run_id": "32763541171",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32763541171",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128797.md",
+  "published_at": "2026-08-24T19:42:30.890Z",
+  "canonical": "#128797",
+  "canonical_issue": "#128797",
+  "canonical_pr": null,
+  "summary": "#128797 remains the canonical bug. Current main appends the admitted direct-cron mirror and updates only updatedAt; idle reset instead reads lastInteractionAt. A narrow owner-boundary fix is appropriate, but this runner is read-only, has no ../codex checkout required by AGENTS.md, and cannot run pnpm because Corepack cannot create its cache.",
+  "actions": [
+    {
+      "target": "#128797",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128797",
+      "candidate_fix": null,
+      "reason": "The reported behavior is reproducible from current source, but the requested implementation and validation cannot run in this environment."
+    },
+    {
+      "target": "#128797",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128797",
+      "candidate_fix": null,
+      "reason": "Create one narrow PR after moving to a writable runner with the required Codex source checkout and test dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
