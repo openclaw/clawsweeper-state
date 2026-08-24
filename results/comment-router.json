@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T17:37:10.154Z",
+  "updated_at": "2026-08-24T17:37:48.684Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5313331530:2026-08-17T07:53:59Z:re_review",
-      "comment_id": "5313331530",
-      "comment_version_key": "5313331530:2026-08-17T07:53:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5313331530",
-      "comment_created_at": "2026-08-17T07:53:59Z",
-      "comment_updated_at": "2026-08-17T07:53:59Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T12:55:28.049Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5313472525:2026-08-17T08:09:46Z:re_review",
       "comment_id": "5313472525",
@@ -32167,6 +32140,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:74:5304878124:2026-08-24T17:26:55Z:clawsweeper_auto_repair",
+      "comment_id": "5304878124",
+      "comment_version_key": "5304878124:2026-08-24T17:26:55Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/74#issuecomment-5304878124",
+      "comment_created_at": "2026-08-16T00:12:20Z",
+      "comment_updated_at": "2026-08-24T17:26:55Z",
+      "comment_body_sha256": "525e72e69d19573a4a95ca1026c4248727d5761a8178c63f52bc4f017f7aee96",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 74,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6fed9344d081f06ec5c64ee35a473a4e34b1be21)",
+      "expected_head_sha": "6fed9344d081f06ec5c64ee35a473a4e34b1be21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T17:37:48.684Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-fetch-timeout",
+        "head_sha": "6fed9344d081f06ec5c64ee35a473a4e34b1be21",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
