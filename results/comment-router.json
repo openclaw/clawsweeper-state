@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T16:24:44.067Z",
+  "updated_at": "2026-08-24T16:25:29.872Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125414:5320435664:2026-08-24T12:06:30Z:clawsweeper_needs_human",
-      "comment_id": "5320435664",
-      "comment_version_key": "5320435664:2026-08-24T12:06:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125414#issuecomment-5320435664",
-      "comment_created_at": "2026-08-17T21:25:38Z",
-      "comment_updated_at": "2026-08-24T12:06:30Z",
-      "comment_body_sha256": "3ebbc96339c4450fd0ce0675b26f98d87d213892fc5c90da1291e8dbe782a386",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125414,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, which has a later change in src/plugins/management-service.ts; exact-head conflict recovery has not yet been shown after integrating that owner-path... (sha=50560c5e76ee0f1a4bc9ccbca56cf9e326990f32)",
-      "expected_head_sha": "50560c5e76ee0f1a4bc9ccbca56cf9e326990f32",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T12:13:11.509Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "recovery/plugin-install-atomicity-20260817",
-        "head_sha": "50560c5e76ee0f1a4bc9ccbca56cf9e326990f32",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128236:5386614016:2026-08-24T12:10:35Z:clawsweeper_needs_human",
       "comment_id": "5386614016",
@@ -31871,6 +31838,53 @@
         "kind": "pull_request",
         "branch": "openclaw/pin-to-a-group-instead-of-globally",
         "head_sha": "eeae1eef9f551ccb83842cd03429f1e17c7508b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127967:5392979149:2026-08-24T16:24:47Z:re_review",
+      "comment_id": "5392979149",
+      "comment_version_key": "5392979149:2026-08-24T16:24:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127967#issuecomment-5392979149",
+      "comment_created_at": "2026-08-24T09:02:46Z",
+      "comment_updated_at": "2026-08-24T16:24:47Z",
+      "comment_body_sha256": "0b30d0c93ca1bdffa832f2963209897e592cbd37efd81406b53b1bad97f332d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127967,
+      "author": "HermanZeng",
+      "author_id": 25895921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T16:25:25.152Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reply-completion-handoff-126813",
+        "head_sha": "bb47f213255e5c7f934b20511654230a1f6a66ee",
         "cluster_id": null,
         "job_path": null
       },
