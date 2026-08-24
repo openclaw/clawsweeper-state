@@ -67,21 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the install-time shared-state mutation reported by https://github.com/openclaw/openclaw/issues/128782. Package postinstall must not open or migrate an existing operator state database. Preserve explicit doctor or new-runtime ownership for registry persistence, and make OPENCLAW_DISABLE_BUNDLED_PLUGIN_POSTINSTALL cover all lifecycle side effects if it remains the documented opt-out. Add a regression that fails on current main with an older supported state database and proves postinstall leaves its schema and registry untouched; separately prove the explicit doctor/runtime migration still restores needed plugin-registry state. Do not bump SQLite schema versions, add config/env surface, add runtime fallback readers, or edit CHANGELOG.md; put release-note context in the PR body.
+Repair https://github.com/openclaw/openclaw/issues/128782 at the package lifecycle owner. Trace scripts/postinstall-bundled-plugins.mjs through src/commands/doctor/shared/plugin-registry-migration.ts and the installed-plugin index store. Ensure npm postinstall cannot create, migrate, or rewrite the operator shared SQLite state database; keep any necessary registry initialization in an explicit OpenClaw runtime or Doctor flow. Make OPENCLAW_DISABLE_BUNDLED_PLUGIN_POSTINSTALL cover the intended lifecycle side effects without adding a new setting or changing SQLite schema versions. Add a regression using a clean HOME and copied old-schema state database; prove postinstall leaves user_version and schema metadata unchanged, then prove explicit Doctor/runtime initialization still works. Put release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
 - scripts/postinstall-bundled-plugins.mjs
 - test/scripts/postinstall-bundled-plugins.test.ts
 - src/commands/doctor/shared/plugin-registry-migration.ts
-- src/commands/doctor/shared/plugin-registry-migration.test.ts
+- src/commands/doctor-plugin-registry.ts
 - src/plugins/installed-plugin-index-store.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs test/scripts/postinstall-bundled-plugins.test.ts
 - node scripts/run-vitest.mjs src/commands/doctor/shared/plugin-registry-migration.test.ts
-- node scripts/run-vitest.mjs src/state/openclaw-state-db.test.ts
+- Run the decoy-HOME npm package-install scenario against a copied old-schema database and verify its user_version and schema_meta row remain unchanged.
 
 ## Operator Prompt
 
