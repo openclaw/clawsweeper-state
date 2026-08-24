@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T14:43:51.645Z",
+  "updated_at": "2026-08-24T14:43:56.593Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122436:5262571860:2026-08-24T11:14:27Z:clawsweeper_needs_human",
-      "comment_id": "5262571860",
-      "comment_version_key": "5262571860:2026-08-24T11:14:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122436#issuecomment-5262571860",
-      "comment_created_at": "2026-08-12T05:11:21Z",
-      "comment_updated_at": "2026-08-24T11:14:27Z",
-      "comment_body_sha256": "fe96bada64aa619c0a73a8552f06699470b7f27de950e24ae6accefac46be1a4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122436,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a dirty merge; conflict resolution must retain current main’s --agent selection and provider-auth lookup paths while applying the parser repair. (sha=6a9854e846fe6ae27a0dd6ff5c7ff7696415dea2)",
-      "expected_head_sha": "6a9854e846fe6ae27a0dd6ff5c7ff7696415dea2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T11:17:34.846Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "capability-image-resolution-union",
-        "head_sha": "6a9854e846fe6ae27a0dd6ff5c7ff7696415dea2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124476:5306412786:2026-08-24T10:54:36Z:clawsweeper_auto_repair",
       "comment_id": "5306412786",
@@ -31437,6 +31404,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128659:5396845015:2026-08-24T14:42:50Z:re_review",
+      "comment_id": "5396845015",
+      "comment_version_key": "5396845015:2026-08-24T14:42:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128659#issuecomment-5396845015",
+      "comment_created_at": "2026-08-24T14:42:50Z",
+      "comment_updated_at": "2026-08-24T14:42:50Z",
+      "comment_body_sha256": "2a111dda3f5abfe5aaab2132a2dc53f8866c76b506d02c2bcd87db3a70bb184a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128659,
+      "author": "Leon-SK668",
+      "author_id": 17695126,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T14:43:54.453Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/slack-http-setup-credentials-20260824",
+        "head_sha": "527edb6c809d07e510e51daf755e175161801105",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
