@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T01:36:27.456Z",
+  "updated_at": "2026-08-24T01:37:15.141Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110562:5176285736:2026-08-04T08:07:57Z:re_review",
-      "comment_id": "5176285736",
-      "comment_version_key": "5176285736:2026-08-04T08:07:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110562#issuecomment-5176285736",
-      "comment_created_at": "2026-08-04T08:07:57Z",
-      "comment_updated_at": "2026-08-04T08:07:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110562,
-      "author": "sunlit-deng",
-      "author_id": 253064511,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T22:02:11.261Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125338:5317504959:2026-08-23T21:59:28Z:clawsweeper_auto_repair",
       "comment_id": "5317504959",
@@ -30497,6 +30470,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T01:36:27.456Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128444:5389722733:2026-08-24T01:36:14Z:clawsweeper_needs_human",
+      "comment_id": "5389722733",
+      "comment_version_key": "5389722733:2026-08-24T01:36:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128444#issuecomment-5389722733",
+      "comment_created_at": "2026-08-24T01:36:14Z",
+      "comment_updated_at": "2026-08-24T01:36:14Z",
+      "comment_body_sha256": "1dbbc5af61940b88ca741a8abe59613f10481adb7e7d8416b6140fcf3816fa85",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128444,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This creates a new authority-bearing route to persistent session state; the checkout could not verify current main or inspect the required sibling Codex source, so it is not ready for... (sha=b3db3383764a464a09bc403abf0544a9a058890d)",
+      "expected_head_sha": "b3db3383764a464a09bc403abf0544a9a058890d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T01:37:15.141Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sessions/detached-create",
+        "head_sha": "b3db3383764a464a09bc403abf0544a9a058890d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
