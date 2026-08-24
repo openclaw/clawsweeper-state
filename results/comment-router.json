@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T19:52:42.298Z",
+  "updated_at": "2026-08-24T19:55:18.630Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128653:5393819577:2026-08-24T14:43:22Z:clawsweeper_auto_repair",
-      "comment_id": "5393819577",
-      "comment_version_key": "5393819577:2026-08-24T14:43:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128653#issuecomment-5393819577",
-      "comment_created_at": "2026-08-24T10:15:34Z",
-      "comment_updated_at": "2026-08-24T14:43:22Z",
-      "comment_body_sha256": "edda9b6bfa9731666f0ed9fee6726edc1d79e8697652a0f5fa6c7fcd340b07ea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128653,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=83e25b533de69fb419276ac74720c1d4324339de)",
-      "expected_head_sha": "83e25b533de69fb419276ac74720c1d4324339de",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T14:49:34.307Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-128532",
-        "head_sha": "83e25b533de69fb419276ac74720c1d4324339de",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128760:5396915120:2026-08-24T14:47:42Z:clawsweeper_needs_human",
       "comment_id": "5396915120",
@@ -31768,6 +31735,53 @@
         "kind": "pull_request",
         "branch": "feat/acp-plugin-approvals",
         "head_sha": "bdcadb1beab3ad1adfb4d40261b91dd164dc6b40",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127778:5400534493:2026-08-24T19:53:58Z:re_review",
+      "comment_id": "5400534493",
+      "comment_version_key": "5400534493:2026-08-24T19:53:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127778#issuecomment-5400534493",
+      "comment_created_at": "2026-08-24T19:53:58Z",
+      "comment_updated_at": "2026-08-24T19:53:58Z",
+      "comment_body_sha256": "53fe2c4f141173230c46820761d6acf035413c1dae7363c5577765257a6b8e0a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127778,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: the pr body now records the accepted maintainer product decision and links exact-head signed macos x→y evidence. please inspect the linked redacted artifact. per the repository agents.md codex hard gate, if `../codex` is missing, clone `openai/codex` there and directly inspect the upstream source before the verdict. although member-authored proof is not a merge gate, assess the quality of the supplied optional proof rather than discarding it solely because the author is a member",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T19:55:15.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/codex-desktop-generation",
+        "head_sha": "c002ca80ba198ce4e532b6e07faf1df6b55c2635",
         "cluster_id": null,
         "job_path": null
       },
