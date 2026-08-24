@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T05:11:35.502Z",
+  "updated_at": "2026-08-24T05:12:56.347Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3512:5381521199:2026-08-24T01:32:50Z:clawsweeper_needs_human",
-      "comment_id": "5381521199",
-      "comment_version_key": "5381521199:2026-08-24T01:32:50Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3512#issuecomment-5381521199",
-      "comment_created_at": "2026-08-22T16:51:50Z",
-      "comment_updated_at": "2026-08-24T01:32:50Z",
-      "comment_body_sha256": "d10bf5c3d6b466d8e0e1a3e82f669d050f929464a633c516a02a7f1882461a6b",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3512,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Repository policy requires an autoreview closeout, but this runner lacks TruffleHog; this is a process gate rather than a defect in the patch. (sha=14540d18c747a1f7fecdb57a8e286485b086f092)",
-      "expected_head_sha": "14540d18c747a1f7fecdb57a8e286485b086f092",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T01:39:24.729Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skills-first-page-error-state",
-        "head_sha": "14540d18c747a1f7fecdb57a8e286485b086f092",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128431:5389613954:2026-08-24T01:37:54Z:clawsweeper_needs_human",
       "comment_id": "5389613954",
@@ -31637,6 +31604,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3493:5391001255:2026-08-24T05:12:19Z:re_review",
+      "comment_id": "5391001255",
+      "comment_version_key": "5391001255:2026-08-24T05:12:19Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5391001255",
+      "comment_created_at": "2026-08-24T05:12:19Z",
+      "comment_updated_at": "2026-08-24T05:12:19Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3493,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T05:12:54.970Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/meaningful-traffic-signals",
+        "head_sha": "ac2ec8fe352a0622f39c648b87d5567bb0631710",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
