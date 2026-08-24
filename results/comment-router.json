@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T16:45:49.551Z",
+  "updated_at": "2026-08-24T16:48:33.290Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128460:5395082860:2026-08-24T12:18:53Z:re_review",
-      "comment_id": "5395082860",
-      "comment_version_key": "5395082860:2026-08-24T12:18:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128460#issuecomment-5395082860",
-      "comment_created_at": "2026-08-24T12:18:53Z",
-      "comment_updated_at": "2026-08-24T12:18:53Z",
-      "comment_body_sha256": "d58a8567d01123ee6f8cfcc3fd6db41043880f97cb4d688498edf79a232e9e6b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128460,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T12:34:25.885Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/ios-screenshot-shards",
-        "head_sha": "d3792535c6b6c84554819a848752be5a5f4d739f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128644:5393455338:2026-08-24T12:31:56Z:clawsweeper_needs_human",
       "comment_id": "5393455338",
@@ -31882,6 +31835,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/github-actions-b632086d0b",
         "head_sha": "4fabe4262f2e9a7a592caf2407659847e1ab1e02",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/birdclaw:132:5346490744:2026-08-24T16:46:49Z:clawsweeper_needs_human",
+      "comment_id": "5346490744",
+      "comment_version_key": "5346490744:2026-08-24T16:46:49Z",
+      "comment_url": "https://github.com/steipete/birdclaw/pull/132#issuecomment-5346490744",
+      "comment_created_at": "2026-08-19T18:41:10Z",
+      "comment_updated_at": "2026-08-24T16:46:49Z",
+      "comment_body_sha256": "88a0083a9df05adf8dac23e4b22d5aab6189036eb13ce67587c7439bbd266c19",
+      "repo": "steipete/birdclaw",
+      "issue_number": 132,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes compatibility for scripts that supplied fractional, negative, text, signed, or exponent-form limits: some paths previously normalized or accepted those inputs, while a... (sha=0bf72cb1c96bc0fa8ddb33249d499aa9726ea6c1)",
+      "expected_head_sha": "0bf72cb1c96bc0fa8ddb33249d499aa9726ea6c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T16:48:33.290Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/search-limit-validation",
+        "head_sha": "0bf72cb1c96bc0fa8ddb33249d499aa9726ea6c1",
         "cluster_id": null,
         "job_path": null
       }
