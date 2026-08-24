@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T09:43:45.559Z",
+  "updated_at": "2026-08-24T09:45:54.721Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126056:5336180830:2026-08-19T00:59:06Z:re_review",
-      "comment_id": "5336180830",
-      "comment_version_key": "5336180830:2026-08-19T00:59:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126056#issuecomment-5336180830",
-      "comment_created_at": "2026-08-19T00:59:06Z",
-      "comment_updated_at": "2026-08-19T00:59:06Z",
-      "comment_body_sha256": "9466887d9bfafc103739d9c68acf305822d1904d81a823fafa97236a8953d320",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126056,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T05:06:22.406Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126056:5336270769:2026-08-19T01:12:25Z:re_review",
       "comment_id": "5336270769",
@@ -32481,6 +32454,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T09:43:45.559Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1224:5379011746:2026-08-24T09:40:30Z:clawsweeper_needs_human",
+      "comment_id": "5379011746",
+      "comment_version_key": "5379011746:2026-08-24T09:40:30Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1224#issuecomment-5379011746",
+      "comment_created_at": "2026-08-22T07:28:13Z",
+      "comment_updated_at": "2026-08-24T09:40:30Z",
+      "comment_body_sha256": "fe91614aefa085f32d6b51c2c6e9fed1773edf444804757cb86c0d918a29357b",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1224,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The live replay proved the missing check-rollup permission is fixed but then exposed a separate private-target checkout authentication failure; merging this PR alone will not restore... (sha=2f98ff61881d839141e63597f44c28ca9defb794)",
+      "expected_head_sha": "2f98ff61881d839141e63597f44c28ca9defb794",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T09:45:54.721Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/repair-router-permission-checks",
+        "head_sha": "2f98ff61881d839141e63597f44c28ca9defb794",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
