@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T07:45:37.354Z",
+  "updated_at": "2026-08-24T07:48:24.391Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128485:5390745229:2026-08-24T04:31:14Z:re_review",
-      "comment_id": "5390745229",
-      "comment_version_key": "5390745229:2026-08-24T04:31:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128485#issuecomment-5390745229",
-      "comment_created_at": "2026-08-24T04:29:47Z",
-      "comment_updated_at": "2026-08-24T04:31:14Z",
-      "comment_body_sha256": "b156788ebdc54496e868020cf8f3026874c3c39b514cf8580e6b952129cf1a77",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128485,
-      "author": "bek91",
-      "author_id": 66288351,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:32:02.938Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-native-hook-relay-lifecycle",
-        "head_sha": "64e2cd217457ee9e9487082948bc9bc9f1621225",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:88908:4589575955:2026-08-24T04:30:35Z:clawsweeper_needs_human",
       "comment_id": "4589575955",
@@ -31159,6 +31126,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120138:5212438693:2026-08-24T07:47:44Z:clawsweeper_needs_human",
+      "comment_id": "5212438693",
+      "comment_version_key": "5212438693:2026-08-24T07:47:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120138#issuecomment-5212438693",
+      "comment_created_at": "2026-08-07T04:36:34Z",
+      "comment_updated_at": "2026-08-24T07:47:44Z",
+      "comment_body_sha256": "b9866e2de469f76dfcb817f1e8e742f76df83cef9baa5086429e817ccd8ae469",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120138,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally makes any bundled channel secret-contract load error fail the repository docs gate until that contract is repaired; this is a contributor and CI policy change, n... (sha=c05bef2bb019f9ce930596efe4df3329ffcca82b)",
+      "expected_head_sha": "c05bef2bb019f9ce930596efe4df3329ffcca82b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T07:48:24.391Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/secretref-docs-generator",
+        "head_sha": "c05bef2bb019f9ce930596efe4df3329ffcca82b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
