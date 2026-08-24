@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128859",
+  "mode": "autonomous",
+  "run_id": "32776033565",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32776033565",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128859.md",
+  "published_at": "2026-08-24T21:00:40.245Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128859",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128859",
+  "canonical_pr": null,
+  "summary": "#128859 remains the canonical open issue. OpenClaw source identifies a narrow Code Mode recovery-message repair, but implementation is blocked: the mandatory sibling ../codex source is absent and this read-only environment cannot clone it; test dependencies are also unavailable.",
+  "actions": [
+    {
+      "target": "#111442",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context ref; no mutation."
+    },
+    {
+      "target": "#116452",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context ref; no mutation."
+    },
+    {
+      "target": "#128859",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128859",
+      "candidate_fix": null,
+      "reason": "Potential repair is blocked pending direct ../codex source inspection and an environment with installed dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128859",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128859",
+      "candidate_fix": null,
+      "reason": "Blocked on mandatory Codex-source inspection and unavailable test dependencies."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a repair environment containing the required sibling ../codex source and writable dependency cache/node_modules, then rerun direct Codex contract inspection and focused regression validation before creating the PR."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128859",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
