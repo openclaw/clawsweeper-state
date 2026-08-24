@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T00:21:07.024Z",
+  "updated_at": "2026-08-24T00:21:47.352Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5313906297:2026-08-17T08:55:02Z:re_review",
-      "comment_id": "5313906297",
-      "comment_version_key": "5313906297:2026-08-17T08:55:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5313906297",
-      "comment_created_at": "2026-08-17T08:55:02Z",
-      "comment_updated_at": "2026-08-17T08:55:02Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T20:38:40.680Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5314103055:2026-08-17T09:14:30Z:re_review",
       "comment_id": "5314103055",
@@ -30339,6 +30312,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128393:5388885193:2026-08-24T00:20:58Z:clawsweeper_needs_human",
+      "comment_id": "5388885193",
+      "comment_version_key": "5388885193:2026-08-24T00:20:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128393#issuecomment-5388885193",
+      "comment_created_at": "2026-08-23T22:44:04Z",
+      "comment_updated_at": "2026-08-24T00:20:58Z",
+      "comment_body_sha256": "70292fe0df1d7a3cfbbe93a80dfc2212d537458c68d533375d5aa33ed72c6e18",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128393,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Two compact Node checks were still in progress in the supplied PR state, so this review is not an exact-head merge authorization. (sha=bf69a8953e8918e2123a78c69284cd66b1bc0833)",
+      "expected_head_sha": "bf69a8953e8918e2123a78c69284cd66b1bc0833",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T00:21:47.352Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-gateway-pending-reentrant-20260823",
+        "head_sha": "bf69a8953e8918e2123a78c69284cd66b1bc0833",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
