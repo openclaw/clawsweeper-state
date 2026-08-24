@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128877",
+  "mode": "autonomous",
+  "run_id": "32783416042",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32783416042",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128877.md",
+  "published_at": "2026-08-24T22:23:13.672Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128877",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128877",
+  "canonical_pr": null,
+  "summary": "Current main rejects a 40-character commit line, but the exact pinned b10453 binary version trace could not be captured because GitHub DNS is unavailable and no local binary exists. The fix remains blocked pending that required contract proof.",
+  "actions": [
+    {
+      "target": "#128877",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128877",
+      "candidate_fix": null,
+      "reason": "Blocked fix-first path: capture the exact pinned b10453 llama-server --version line in a writable, network-enabled worker, then implement and validate the narrow owner-plugin repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128877",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128877",
+      "candidate_fix": null,
+      "reason": "A repair artifact is retained for the narrow two-file fix, but opening or updating a PR is blocked until the upstream binary contract is observed."
+    },
+    {
+      "target": "#128879",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open independently; it has no shared repair invariant with the version-line parser."
+    },
+    {
+      "target": "#128880",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open independently; it is outside this bug-only implementation cluster."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_independent": 2
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Capture the exact b10453 managed llama-server --version output or an equivalent redacted trace from a writable, network-enabled environment; the job requires this dependency-contract proof before code changes."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128877",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
