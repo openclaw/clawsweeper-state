@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T10:42:42.105Z",
+  "updated_at": "2026-08-24T10:42:44.878Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3494:5365544146:2026-08-21T05:22:08Z:re_review",
-      "comment_id": "5365544146",
-      "comment_version_key": "5365544146:2026-08-21T05:22:08Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3494#issuecomment-5365544146",
-      "comment_created_at": "2026-08-21T05:22:08Z",
-      "comment_updated_at": "2026-08-21T05:22:08Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3494,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T05:32:30.056Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3494:5365867752:2026-08-21T06:07:23Z:re_review",
       "comment_id": "5365867752",
@@ -32630,6 +32603,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T10:42:42.105Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128651:5393691921:2026-08-24T10:40:12Z:clawsweeper_needs_human",
+      "comment_id": "5393691921",
+      "comment_version_key": "5393691921:2026-08-24T10:40:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128651#issuecomment-5393691921",
+      "comment_created_at": "2026-08-24T10:06:13Z",
+      "comment_updated_at": "2026-08-24T10:40:12Z",
+      "comment_body_sha256": "4613f05af25c39370b4c7640acd77c34c2c6149fd2eb79d646d60cda1bde2328",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128651,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch changes existing in-flight cancellation semantics and needs its exact-head required checks resolved before merge. (sha=e7fde3136622551c9c682ae607f3f06dbff2c269)",
+      "expected_head_sha": "e7fde3136622551c9c682ae607f3f06dbff2c269",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T10:42:44.878Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-browser-download-cancellation-20260824",
+        "head_sha": "e7fde3136622551c9c682ae607f3f06dbff2c269",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
