@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T18:57:05.330Z",
+  "updated_at": "2026-08-24T18:58:26.375Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122444:5264691122:2026-08-12T09:09:13Z:re_review",
-      "comment_id": "5264691122",
-      "comment_version_key": "5264691122:2026-08-12T09:09:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122444#issuecomment-5264691122",
-      "comment_created_at": "2026-08-12T09:09:13Z",
-      "comment_updated_at": "2026-08-12T09:09:13Z",
-      "comment_body_sha256": "ec79b7b62db50256665c6f517d22d9e5e382efcea7b9be0182accc0190ee4615",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122444,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T13:36:07.389Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122444:5264925585:2026-08-12T09:31:58Z:re_review",
       "comment_id": "5264925585",
@@ -32628,6 +32601,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T18:57:05.330Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127284:5373041863:2026-08-24T18:56:35Z:clawsweeper_needs_human",
+      "comment_id": "5373041863",
+      "comment_version_key": "5373041863:2026-08-24T18:56:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127284#issuecomment-5373041863",
+      "comment_created_at": "2026-08-21T17:19:36Z",
+      "comment_updated_at": "2026-08-24T18:56:35Z",
+      "comment_body_sha256": "644f7c38e2abdbe24ce028ff932f31d2080131b06cc55b4842f73cd58f5d199b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127284,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - This changes reload-time behavior from a recorded error to scoped discovery; the synthetic regression covers the static fallback, while the cited hot-reload run should be confirmed ag... (sha=86d156523fbd0bcd8a1c91e39567724c26689a8e)",
+      "expected_head_sha": "86d156523fbd0bcd8a1c91e39567724c26689a8e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T18:58:26.375Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/prepared-thinking-reload",
+        "head_sha": "86d156523fbd0bcd8a1c91e39567724c26689a8e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
