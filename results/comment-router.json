@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T07:54:17.075Z",
+  "updated_at": "2026-08-24T07:58:25.703Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5314265709:2026-08-17T09:29:20Z:re_review",
-      "comment_id": "5314265709",
-      "comment_version_key": "5314265709:2026-08-17T09:29:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5314265709",
-      "comment_created_at": "2026-08-17T09:29:20Z",
-      "comment_updated_at": "2026-08-17T09:29:20Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:41:52.162Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5314406141:2026-08-17T09:42:26Z:re_review",
       "comment_id": "5314406141",
@@ -31225,6 +31198,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T07:54:17.075Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124993:5311242227:2026-08-24T07:57:06Z:clawsweeper_needs_human",
+      "comment_id": "5311242227",
+      "comment_version_key": "5311242227:2026-08-24T07:57:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124993#issuecomment-5311242227",
+      "comment_created_at": "2026-08-17T02:53:59Z",
+      "comment_updated_at": "2026-08-24T07:57:06Z",
+      "comment_body_sha256": "0e5558b1c545603bcfbb3edf5142d418b05c1a714ec605edb7e122fb3a91d6ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124993,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main has changed the shared backup module after the PR base; this review checkout cannot construct the exact three-way merge, so clean rebase/merge resolution and exact-head c... (sha=54bc66c90dc4fab773c7fe2763560d23f5e78209)",
+      "expected_head_sha": "54bc66c90dc4fab773c7fe2763560d23f5e78209",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T07:58:25.703Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/fleet-restore-recovery",
+        "head_sha": "54bc66c90dc4fab773c7fe2763560d23f5e78209",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
