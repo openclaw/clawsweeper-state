@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T11:15:59.493Z",
+  "updated_at": "2026-08-24T11:17:37.345Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127824:5379617139:2026-08-24T05:31:10Z:clawsweeper_auto_repair",
-      "comment_id": "5379617139",
-      "comment_version_key": "5379617139:2026-08-24T05:31:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127824#issuecomment-5379617139",
-      "comment_created_at": "2026-08-22T09:47:03Z",
-      "comment_updated_at": "2026-08-24T05:31:10Z",
-      "comment_body_sha256": "4797ab6a7a698756a691c6fa44c23c14af49deb576d876e19d2445f558d97b3e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127824,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d6c319d4d7479e5c2a572a9b78d0bb2e1b29689f)",
-      "expected_head_sha": "d6c319d4d7479e5c2a572a9b78d0bb2e1b29689f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T05:34:22.073Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/composer-invocations",
-        "head_sha": "d6c319d4d7479e5c2a572a9b78d0bb2e1b29689f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126056:5334946992:2026-08-18T22:36:55Z:automerge",
       "comment_id": "5334946992",
@@ -32967,6 +32934,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128289:5387183075:2026-08-24T11:16:47Z:clawsweeper_needs_human",
+      "comment_id": "5387183075",
+      "comment_version_key": "5387183075:2026-08-24T11:16:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128289#issuecomment-5387183075",
+      "comment_created_at": "2026-08-23T16:54:59Z",
+      "comment_updated_at": "2026-08-24T11:16:47Z",
+      "comment_body_sha256": "b77c7adb040609cb718e1ea71a313fd1c974625db542191a18b7b4e0e0209606",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128289,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR asserts local runs but supplies no inspectable redacted artifact showing an allowed Browser-bound call a...; Review finding: [P1] Keep non-Browser plugins out of the Browser node path — src/meeting-bot/browser-node.ts:136-150 - [P1] Preserve a usable upgrade path for direct browser-node... (sha=1b279f42334f076772db4f46373d70d49ccef64d)",
+      "expected_head_sha": "1b279f42334f076772db4f46373d70d49ccef64d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T11:17:37.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/browser-session-credential-steward-mvp-repair",
+        "head_sha": "1b279f42334f076772db4f46373d70d49ccef64d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
