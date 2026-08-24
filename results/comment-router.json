@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T13:18:03.666Z",
+  "updated_at": "2026-08-24T13:18:29.189Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126976:5365643166:2026-08-21T05:37:39Z:re_review",
-      "comment_id": "5365643166",
-      "comment_version_key": "5365643166:2026-08-21T05:37:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126976#issuecomment-5365643166",
-      "comment_created_at": "2026-08-21T05:37:39Z",
-      "comment_updated_at": "2026-08-21T05:37:39Z",
-      "comment_body_sha256": "7d88fb96e1c835cc197595824fd9c8c0c0cd5190d625f49943bbef6ac0fe015d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126976,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T08:35:42.237Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122036:5253510728:2026-08-24T08:26:17Z:clawsweeper_needs_human",
       "comment_id": "5253510728",
@@ -31727,6 +31700,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119135:5175711918:2026-08-24T13:12:58Z:clawsweeper_needs_human",
+      "comment_id": "5175711918",
+      "comment_version_key": "5175711918:2026-08-24T13:12:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119135#issuecomment-5175711918",
+      "comment_created_at": "2026-08-04T07:06:02Z",
+      "comment_updated_at": "2026-08-24T13:12:58Z",
+      "comment_body_sha256": "7d7b9d22c843876d90427f410c3ce3d4cba62630a5a2d57be5b4a11fbe08109a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only claimed unit/check results are provided; add redacted after-fix terminal output or logs showing a simple inbound user request selects the...; Review finding: [P1] Reject backtracking-prone custom regexes — src/config/zod-schema.core.ts:75 - [P1] Keep tiering out of system-triggered agent runs — src/commands/agent.ts:330... (sha=7b9f5dd70e015b21321014de15996c2313d01fea)",
+      "expected_head_sha": "7b9f5dd70e015b21321014de15996c2313d01fea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T13:18:29.189Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/budget-guide-and-model-tiering",
+        "head_sha": "7b9f5dd70e015b21321014de15996c2313d01fea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
