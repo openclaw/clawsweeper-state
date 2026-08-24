@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128821",
+  "mode": "autonomous",
+  "run_id": "32760594735",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32760594735",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128821.md",
+  "published_at": "2026-08-24T18:32:10.546Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128821",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128821",
+  "canonical_pr": null,
+  "summary": "Current main has a narrow nested plugin-help fast-path gap, but this read-only checkout lacks dependencies and dist output; the required ../codex direct-source inspection is also unavailable. A ready-to-execute fix artifact is provided.",
+  "actions": [
+    {
+      "target": "#128821",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128821",
+      "candidate_fix": null,
+      "reason": "The issue is open, reproducible from current source structure, and remains the canonical bug report."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128821",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128821",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only in this worker sandbox; the supplied artifact defines a narrow new PR path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128821",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128821",
+      "candidate_fix": null,
+      "reason": "A narrow implementation PR is appropriate once a writable checkout with dependencies and the required Codex-source gate is available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128821",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128821",
+      "candidate_fix": null,
+      "reason": "The deterministic executor should open or update the branch after applying the artifact and completing required local validation."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
