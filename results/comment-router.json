@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T03:49:23.754Z",
+  "updated_at": "2026-08-24T03:50:01.727Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5323327764:2026-08-18T03:44:48Z:re_review",
-      "comment_id": "5323327764",
-      "comment_version_key": "5323327764:2026-08-18T03:44:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5323327764",
-      "comment_created_at": "2026-08-18T03:44:48Z",
-      "comment_updated_at": "2026-08-18T03:44:48Z",
-      "comment_body_sha256": "fad95af5c1b3b75c75aed4eae0e44969923936dea6f4f3f0bad80c1a7ad94f2a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T23:20:45.531Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5323360832:2026-08-18T03:49:49Z:re_review",
       "comment_id": "5323360832",
@@ -31699,6 +31672,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127076:5366516383:2026-08-24T03:49:09Z:clawsweeper_needs_human",
+      "comment_id": "5366516383",
+      "comment_version_key": "5366516383:2026-08-24T03:49:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127076#issuecomment-5366516383",
+      "comment_created_at": "2026-08-21T07:20:03Z",
+      "comment_updated_at": "2026-08-24T03:49:09Z",
+      "comment_body_sha256": "d1a65a951979f27c8c48d3eb4f75b6a1caca128ac548a04317460fa850824d8a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127076,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Prevent remote attachment previews from loading subresources (P1)** - attachmentUrl may be any HTTP(S) URL, but this new iframe loads it as soon as the transcript card renders. A bare sandbox does not prevent th...; Review finding: [P1] Prevent remote attachment previews from loading subresources — ui/src/pages/chat/components/chat-message-attachments.ts:384-392 - [P2] Keep inline previews fo... (sha=3bc310d3f2c913133f9cecbb058216cac68f5ad9)",
+      "expected_head_sha": "3bc310d3f2c913133f9cecbb058216cac68f5ad9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T03:50:01.727Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/chat-attachment-kinds",
+        "head_sha": "3bc310d3f2c913133f9cecbb058216cac68f5ad9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
