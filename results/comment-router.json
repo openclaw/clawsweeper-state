@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T23:37:54.331Z",
+  "updated_at": "2026-08-24T23:39:38.703Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119674:5196142367:2026-08-05T19:05:47Z:re_review",
-      "comment_id": "5196142367",
-      "comment_version_key": "5196142367:2026-08-05T19:05:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119674#issuecomment-5196142367",
-      "comment_created_at": "2026-08-05T19:05:47Z",
-      "comment_updated_at": "2026-08-05T19:05:47Z",
-      "comment_body_sha256": "4a913ade854f57d85733355110543dcc8a839d0351310701f0b1a3ea940473eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119674,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T19:17:06.817Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119674:5243077485:2026-08-10T16:32:17Z:re_review",
       "comment_id": "5243077485",
@@ -31464,6 +31437,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T23:37:54.331Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128868:5401906259:2026-08-24T23:38:31Z:clawsweeper_needs_human",
+      "comment_id": "5401906259",
+      "comment_version_key": "5401906259:2026-08-24T23:38:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128868#issuecomment-5401906259",
+      "comment_created_at": "2026-08-24T21:56:08Z",
+      "comment_updated_at": "2026-08-24T23:38:31Z",
+      "comment_body_sha256": "000c2a0e057f98654f3f2604f9ef74c140b82d7ec2ebc7fb0d2f94a516972407",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128868,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body provides focused test claims but no after-fix managed-service/systemd handoff trace showing the detached helper installs the requested SHA. (sha=40d5ea40831e043ef5fc7231bf73420bbca4b3ab)",
+      "expected_head_sha": "40d5ea40831e043ef5fc7231bf73420bbca4b3ab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T23:39:38.703Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/update-run-exact-target-20260824",
+        "head_sha": "40d5ea40831e043ef5fc7231bf73420bbca4b3ab",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
