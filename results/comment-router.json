@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T11:58:50.563Z",
+  "updated_at": "2026-08-24T12:00:17.671Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127836:5391446665:2026-08-24T06:18:38Z:re_review",
-      "comment_id": "5391446665",
-      "comment_version_key": "5391446665:2026-08-24T06:18:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127836#issuecomment-5391446665",
-      "comment_created_at": "2026-08-24T06:18:38Z",
-      "comment_updated_at": "2026-08-24T06:18:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127836,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T06:27:27.151Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/bug-05-steering",
-        "head_sha": "abfe37549cb50ed6298a35d7e7aea36dbe407bfb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:93952:4726450629:2026-08-24T06:21:53Z:clawsweeper_needs_human",
       "comment_id": "4726450629",
@@ -32694,6 +32647,39 @@
         "kind": "pull_request",
         "branch": "fix/capture-child-timeout",
         "head_sha": "694d9ecde8078b371b0a210274f3ddb12020f876",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128580:5391916504:2026-08-24T11:57:57Z:clawsweeper_needs_human",
+      "comment_id": "5391916504",
+      "comment_version_key": "5391916504:2026-08-24T11:57:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128580#issuecomment-5391916504",
+      "comment_created_at": "2026-08-24T07:15:23Z",
+      "comment_updated_at": "2026-08-24T11:57:57Z",
+      "comment_body_sha256": "f33cdc6ce984811f47cf22faef02c93ffbb3f9a58176df7cab5e0c480e77a19e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128580,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This delivery-suppression predicate can drop or retain outbound replies; because the branch is behind main, rerun the focused test and proof harness after the exact merge head is refr... (sha=af003ec370ea6fceec1d1406aef378f5959e76c2)",
+      "expected_head_sha": "af003ec370ea6fceec1d1406aef378f5959e76c2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T12:00:17.671Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/messaging-tool-blank-media-dedupe",
+        "head_sha": "af003ec370ea6fceec1d1406aef378f5959e76c2",
         "cluster_id": null,
         "job_path": null
       }
