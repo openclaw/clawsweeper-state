@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T19:34:45.462Z",
+  "updated_at": "2026-08-24T19:34:51.298Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128735:5396246178:2026-08-24T13:57:22Z:re_review",
-      "comment_id": "5396246178",
-      "comment_version_key": "5396246178:2026-08-24T13:57:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128735#issuecomment-5396246178",
-      "comment_created_at": "2026-08-24T13:57:22Z",
-      "comment_updated_at": "2026-08-24T13:57:22Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128735,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T13:58:16.245Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci/ios-fastlane-toolchain",
-        "head_sha": "7a636134903e67d4aefaf9f95c3826b99d013ca2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127224:5396244477:2026-08-24T13:57:14Z:re_review",
       "comment_id": "5396244477",
@@ -32558,6 +32511,39 @@
         "kind": "pull_request",
         "branch": "fix/fs-safe-symlink-skip-win32",
         "head_sha": "9c8b17475dbbc4caeb6d32f61ec0ac41d3d0f6fa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:62:5374539403:2026-08-24T19:32:28Z:clawsweeper_auto_repair",
+      "comment_id": "5374539403",
+      "comment_version_key": "5374539403:2026-08-24T19:32:28Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/62#issuecomment-5374539403",
+      "comment_created_at": "2026-08-21T19:44:46Z",
+      "comment_updated_at": "2026-08-24T19:32:28Z",
+      "comment_body_sha256": "b78262de637c6ddaaa5eef6ceac05ba506f8e609f37058b12ad0be024ee3b4e2",
+      "repo": "openclaw/rfcs",
+      "issue_number": 62,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7a8f437ce152c0f13860e43b04afbf56e50928ef)",
+      "expected_head_sha": "7a8f437ce152c0f13860e43b04afbf56e50928ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T19:34:51.298Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/rfc-0029-handshake-capabilities",
+        "head_sha": "7a8f437ce152c0f13860e43b04afbf56e50928ef",
         "cluster_id": null,
         "job_path": null
       }
