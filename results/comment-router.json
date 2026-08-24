@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T01:25:19.796Z",
+  "updated_at": "2026-08-24T01:26:20.700Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:74:5304878124:2026-08-23T21:30:05Z:clawsweeper_auto_repair",
-      "comment_id": "5304878124",
-      "comment_version_key": "5304878124:2026-08-23T21:30:05Z",
-      "comment_url": "https://github.com/openclaw/krillswitch/pull/74#issuecomment-5304878124",
-      "comment_created_at": "2026-08-16T00:12:20Z",
-      "comment_updated_at": "2026-08-23T21:30:05Z",
-      "comment_body_sha256": "158ac8e5b7e9923f1bf4c6bcb3277da1e4587f5a96375519bccdc55c48055b72",
-      "repo": "openclaw/krillswitch",
-      "issue_number": 74,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6fed9344d081f06ec5c64ee35a473a4e34b1be21)",
-      "expected_head_sha": "6fed9344d081f06ec5c64ee35a473a4e34b1be21",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T21:34:41.343Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-fetch-timeout",
-        "head_sha": "6fed9344d081f06ec5c64ee35a473a4e34b1be21",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128356:5388422945:2026-08-23T21:33:48Z:clawsweeper_auto_repair",
       "comment_id": "5388422945",
@@ -30521,6 +30488,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128448:5389666699:2026-08-24T01:25:39Z:re_review",
+      "comment_id": "5389666699",
+      "comment_version_key": "5389666699:2026-08-24T01:25:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128448#issuecomment-5389666699",
+      "comment_created_at": "2026-08-24T01:25:39Z",
+      "comment_updated_at": "2026-08-24T01:25:39Z",
+      "comment_body_sha256": "b625f32c66572678c67dec28830735ef4f21361a9f20aecddc25992549168a10",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128448,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T01:26:18.644Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/slack-postas-key",
+        "head_sha": "1298aafc079c0c30dec512827bf7b51dd33a6472",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
