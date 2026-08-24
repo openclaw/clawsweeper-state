@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-24T11:34:32.191Z",
+  "updated_at": "2026-08-24T11:33:48.635Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111589:5018228671:2026-08-24T06:02:56Z:clawsweeper_auto_repair",
+      "comment_id": "5018228671",
+      "comment_version_key": "5018228671:2026-08-24T06:02:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111589#issuecomment-5018228671",
+      "comment_created_at": "2026-07-20T02:27:25Z",
+      "comment_updated_at": "2026-08-24T06:02:56Z",
+      "comment_body_sha256": "5fc4f60a92eec6eeb6d853ede9764d967421444cab784346fca5e53d3e7591e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c5f24edfdf55d325e6eaf7972d573e191ee24e87)",
+      "expected_head_sha": "c5f24edfdf55d325e6eaf7972d573e191ee24e87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T06:10:25.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bound-models-catalog-read",
+        "head_sha": "c5f24edfdf55d325e6eaf7972d573e191ee24e87",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118720:5168149980:2026-08-24T06:05:04Z:clawsweeper_needs_human",
       "comment_id": "5168149980",
@@ -32592,39 +32625,6 @@
       "status": "skipped",
       "processed_at": "2026-08-24T11:33:48.635Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128458:5390067218:2026-08-24T11:31:48Z:clawsweeper_needs_human",
-      "comment_id": "5390067218",
-      "comment_version_key": "5390067218:2026-08-24T11:31:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128458#issuecomment-5390067218",
-      "comment_created_at": "2026-08-24T02:37:00Z",
-      "comment_updated_at": "2026-08-24T11:31:48Z",
-      "comment_body_sha256": "44ee0ac8d768d0b7210f4e0114d46cbfc14416ec6024f738b31d6529da1d1f35",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128458,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, so the scheduler trace and focused guard should be refreshed against the eventual merge result before landing. (sha=08788ce729351e2485ed1abe0a71482dc2f62d67)",
-      "expected_head_sha": "08788ce729351e2485ed1abe0a71482dc2f62d67",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T11:34:32.191Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci/qa-lock-scope",
-        "head_sha": "08788ce729351e2485ed1abe0a71482dc2f62d67",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
