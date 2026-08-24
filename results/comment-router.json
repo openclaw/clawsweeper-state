@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T19:48:27.904Z",
+  "updated_at": "2026-08-24T19:50:54.755Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123556:5291077099:2026-08-24T14:44:41Z:clawsweeper_needs_human",
-      "comment_id": "5291077099",
-      "comment_version_key": "5291077099:2026-08-24T14:44:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5291077099",
-      "comment_created_at": "2026-08-14T08:12:51Z",
-      "comment_updated_at": "2026-08-24T14:44:41Z",
-      "comment_body_sha256": "2e78fafd05f5bf7cf6d49498006932adc941fbab2287b8b822789941063fded7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123556,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +16 lines for a process-local promise map; correctness depends on retaining settlement eviction so completed checkout state is never cached. (sha=9121b5caf1bb4af4161624da7759b3ec0d8fab5f)",
-      "expected_head_sha": "9121b5caf1bb4af4161624da7759b3ec0d8fab5f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T14:47:04.444Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-concurrency",
-        "head_sha": "9121b5caf1bb4af4161624da7759b3ec0d8fab5f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128742:5396910864:2026-08-24T14:47:26Z:re_review",
       "comment_id": "5396910864",
@@ -31771,6 +31738,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126496:5400488270:2026-08-24T19:49:51Z:re_review",
+      "comment_id": "5400488270",
+      "comment_version_key": "5400488270:2026-08-24T19:49:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126496#issuecomment-5400488270",
+      "comment_created_at": "2026-08-24T19:49:51Z",
+      "comment_updated_at": "2026-08-24T19:49:51Z",
+      "comment_body_sha256": "29e7022cef8ce94d0c0d4d61f70877fad0c8367c370f46a48ae7c9daef4fa2a6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126496,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T19:50:52.359Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-trigger-codex-exec-alias",
+        "head_sha": "91c2627943916336bdb05932558867338139e818",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
