@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T11:10:22.365Z",
+  "updated_at": "2026-08-24T11:11:32.621Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122425:5376744159:2026-08-22T00:23:09Z:re_review",
-      "comment_id": "5376744159",
-      "comment_version_key": "5376744159:2026-08-22T00:23:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5376744159",
-      "comment_created_at": "2026-08-22T00:23:09Z",
-      "comment_updated_at": "2026-08-22T00:23:09Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122425,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T05:32:44.087Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122425:5377286874:2026-08-22T02:09:46Z:re_review",
       "comment_id": "5377286874",
@@ -32889,6 +32862,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128684:5394380560:2026-08-24T11:10:35Z:clawsweeper_needs_human",
+      "comment_id": "5394380560",
+      "comment_version_key": "5394380560:2026-08-24T11:10:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128684#issuecomment-5394380560",
+      "comment_created_at": "2026-08-24T11:10:35Z",
+      "comment_updated_at": "2026-08-24T11:10:35Z",
+      "comment_body_sha256": "f26093a694ca631b374e31a605a471f7654307aad7da22d5287ba87e204c0ca2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128684,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The submitted test is useful but mocks profile storage and provider-runtime dispatch; add redacted after-fix proof from a real Claude CLI-only... (sha=5cebb72787a8e9bf7d9c1e2d64cedd830290244d)",
+      "expected_head_sha": "5cebb72787a8e9bf7d9c1e2d64cedd830290244d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T11:11:32.621Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/claude-cli-usage-gate-20260824",
+        "head_sha": "5cebb72787a8e9bf7d9c1e2d64cedd830290244d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
