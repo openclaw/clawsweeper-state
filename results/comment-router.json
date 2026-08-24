@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T22:37:31.464Z",
+  "updated_at": "2026-08-24T22:37:47.501Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126789:5399223102:2026-08-24T17:55:59Z:re_review",
-      "comment_id": "5399223102",
-      "comment_version_key": "5399223102:2026-08-24T17:55:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126789#issuecomment-5399223102",
-      "comment_created_at": "2026-08-24T17:55:59Z",
-      "comment_updated_at": "2026-08-24T17:55:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126789,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T17:56:48.215Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-reply-self-media-rederive-202608",
-        "head_sha": "8b612a6dd56e60cff8d166fccc2bc56dbc583160",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126082:5399225388:2026-08-24T17:56:11Z:re_review",
       "comment_id": "5399225388",
@@ -31648,6 +31601,39 @@
         "kind": "pull_request",
         "branch": "feat/android-single-button-agent-picker",
         "head_sha": "86175ec6c51ee201f568dd7f5b126b56a82da137",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128673:5394073888:2026-08-24T22:36:06Z:clawsweeper_needs_human",
+      "comment_id": "5394073888",
+      "comment_version_key": "5394073888:2026-08-24T22:36:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128673#issuecomment-5394073888",
+      "comment_created_at": "2026-08-24T10:40:31Z",
+      "comment_updated_at": "2026-08-24T22:36:06Z",
+      "comment_body_sha256": "4178e75baae32574f12e511b2f48a1a845e07616a760ac89fa8f031da8bf07ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128673,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Audit the credentialed Codex Action update (P1)** - This changes the executable action used with an OpenAI API key, but the exact v1.12 action and Codex runtime source have not been audited. Keep v1.11 or add a...; Review finding: [P1] Audit the credentialed Codex Action update — .github/workflows/mantis-telegram-desktop-proof.yml:266 - [high] Unreviewed credentialed action revision — .githu... (sha=20c45a7db687ea96d26db11118ae9b23782b6ab6)",
+      "expected_head_sha": "20c45a7db687ea96d26db11118ae9b23782b6ab6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T22:37:47.501Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-020742e8ff",
+        "head_sha": "20c45a7db687ea96d26db11118ae9b23782b6ab6",
         "cluster_id": null,
         "job_path": null
       }
