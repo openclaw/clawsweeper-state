@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T00:37:04.680Z",
+  "updated_at": "2026-08-24T00:38:46.629Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5317964523:2026-08-17T16:58:33Z:re_review",
-      "comment_id": "5317964523",
-      "comment_version_key": "5317964523:2026-08-17T16:58:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5317964523",
-      "comment_created_at": "2026-08-17T16:58:33Z",
-      "comment_updated_at": "2026-08-17T16:58:33Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T20:38:40.680Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5318196883:2026-08-17T17:29:44Z:re_review",
       "comment_id": "5318196883",
@@ -30512,6 +30485,53 @@
       "actions": [
         {
           "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128115:5389425437:2026-08-24T00:38:08Z:freeform_assist",
+      "comment_id": "5389425437",
+      "comment_version_key": "5389425437:2026-08-24T00:38:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128115#issuecomment-5389425437",
+      "comment_created_at": "2026-08-24T00:38:08Z",
+      "comment_updated_at": "2026-08-24T00:38:08Z",
+      "comment_body_sha256": "847621d3b74c7f36c23c3e6b93bf8302bd186af20d8a6fbbea89d1f0df53691b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128115,
+      "author": "Solvely-Colin",
+      "author_id": 211764741,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "maintainer approval for this direction",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T00:38:45.102Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/workboard-collapsible-columns",
+        "head_sha": "42f771f5a5fb4cb7f942cc3b449724eaa6bcccbb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
           "status": "executed",
           "label": null,
           "job_path": null
