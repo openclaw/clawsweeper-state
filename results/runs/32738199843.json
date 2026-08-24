@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-117144",
+  "mode": "autonomous",
+  "run_id": "32738199843",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32738199843",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md",
+  "published_at": "2026-08-24T15:44:27.808Z",
+  "canonical": "#117144",
+  "canonical_issue": null,
+  "canonical_pr": "#117144",
+  "summary": "Make PR #117144 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.",
+  "actions": [
+    {
+      "target": "#117144",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117144",
+      "candidate_fix": "#117144",
+      "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "failed": 1,
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "repair_contributor_branch",
+      "status": "failed",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": "Codex /review did not pass after final base synchronization: Blocked: the repair still omits transitive ACPX adapter runtimes from the extracted artifact, so the deferred Codex/Claude ACP path fails despite the reported changed-surface check passing.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "repair_contributor_branch",
+      "reason": "Codex /review did not pass after final base synchronization: Blocked: the repair still omits transitive ACPX adapter runtimes from the extracted artifact, so the deferred Codex/Claude ACP path fails despite the reported changed-surface check passing.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "automerge_repair_outcome_comment",
+      "status": "updated",
+      "target": "#117144",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
