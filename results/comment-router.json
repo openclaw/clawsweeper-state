@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T08:09:03.348Z",
+  "updated_at": "2026-08-24T08:09:05.155Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5294108220:2026-08-14T13:54:27Z:re_review",
-      "comment_id": "5294108220",
-      "comment_version_key": "5294108220:2026-08-14T13:54:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5294108220",
-      "comment_created_at": "2026-08-14T13:54:27Z",
-      "comment_updated_at": "2026-08-14T13:54:27Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:41:52.163Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5294192660:2026-08-14T14:02:53Z:re_review",
       "comment_id": "5294192660",
@@ -31459,6 +31432,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128414:5389231224:2026-08-24T07:56:20Z:clawsweeper_needs_human",
+      "comment_id": "5389231224",
+      "comment_version_key": "5389231224:2026-08-24T07:56:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128414#issuecomment-5389231224",
+      "comment_created_at": "2026-08-24T00:04:21Z",
+      "comment_updated_at": "2026-08-24T07:56:20Z",
+      "comment_body_sha256": "3bb23916c11cc38cfd85f25c80c6db8421c77270b64de96ee50e28dbd9800359",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128414,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Invalidate stale Android SDK caches before accepting them (P1)** - The new 15859902 primary cache key still restores any android-sdk-v1- cache. A current-main 14742923 cache therefore restores successfully, sati...; Review finding: [P1] Invalidate stale Android SDK caches before accepting them — .github/actions/setup-android-toolchain/action.yml:49 - [medium] Cached Android tools bypass the n... (sha=29cf13417c57a51957b29505291e8a7c325415c3)",
+      "expected_head_sha": "29cf13417c57a51957b29505291e8a7c325415c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T08:09:05.155Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/seven-day-dependency-updates-6c0cb4",
+        "head_sha": "29cf13417c57a51957b29505291e8a7c325415c3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
