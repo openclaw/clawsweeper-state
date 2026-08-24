@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T18:45:57.363Z",
+  "updated_at": "2026-08-24T18:46:08.043Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123556:5314610661:2026-08-17T10:01:46Z:re_review",
-      "comment_id": "5314610661",
-      "comment_version_key": "5314610661:2026-08-17T10:01:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5314610661",
-      "comment_created_at": "2026-08-17T10:01:46Z",
-      "comment_updated_at": "2026-08-17T10:01:46Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123556,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T13:26:23.349Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123556:5314813634:2026-08-17T10:22:17Z:re_review",
       "comment_id": "5314813634",
@@ -32480,6 +32453,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120658:5227567198:2026-08-24T18:41:04Z:clawsweeper_needs_human",
+      "comment_id": "5227567198",
+      "comment_version_key": "5227567198:2026-08-24T18:41:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120658#issuecomment-5227567198",
+      "comment_created_at": "2026-08-08T18:44:01Z",
+      "comment_updated_at": "2026-08-24T18:41:04Z",
+      "comment_body_sha256": "0e019a0edc714dd4aa6eff35b36b350a55c373d65e40a80532a03dca741caa17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120658,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch predates later Active Memory refactors; although GitHub reports it mergeable, rebase or exact merge-result validation should confirm the terminal-failure guard survives cur... (sha=ebcd320acd8e7f65215347aeac9a9d67d21adca6)",
+      "expected_head_sha": "ebcd320acd8e7f65215347aeac9a9d67d21adca6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T18:46:08.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/active-memory-error-payload",
+        "head_sha": "ebcd320acd8e7f65215347aeac9a9d67d21adca6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
