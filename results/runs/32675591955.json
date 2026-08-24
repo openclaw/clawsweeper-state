@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128411",
+  "mode": "autonomous",
+  "run_id": "32675591955",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32675591955",
+  "head_sha": "d5b0aa42ff03edf2752d0f8b960c3a60bb70a246",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128411.md",
+  "published_at": "2026-08-24T00:15:33.068Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128411",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128411",
+  "canonical_pr": null,
+  "summary": "The canonical lifecycle-cleanup bug remains reproducible on current main, but implementation is blocked until the required direct ../codex hook-contract inspection is available. A narrow, non-executable fix artifact records the exact intended surface and validation path.",
+  "actions": [
+    {
+      "target": "#128411",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128411",
+      "candidate_fix": null,
+      "reason": "Blocked fix-first: direct Codex source inspection is required before a repair verdict, regression design, or executable PR path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128411",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128411",
+      "candidate_fix": null,
+      "reason": "Artifact is intentionally non-executable until the Codex contract and resulting regression assertions are directly verified."
+    },
+    {
+      "target": "#128409",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#128411",
+      "candidate_fix": null,
+      "reason": "Keep open as related follow-up work; it has a distinct owner-boundary defect and is not covered by this repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable execution environment with ../codex available (or allow its clone), then rerun the narrow fix path after direct inspection of the exact native-hook contract."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128411",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

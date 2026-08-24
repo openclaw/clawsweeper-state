@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128411"
 mode: "autonomous"
-run_id: "32675274693"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32675274693"
+run_id: "32675591955"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32675591955"
 head_sha: "d5b0aa42ff03edf2752d0f8b960c3a60bb70a246"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-24T00:08:23.384Z"
+published_at: "2026-08-24T00:15:33.068Z"
 canonical: "https://github.com/openclaw/openclaw/issues/128411"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/128411"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32675274693](https://github.com/openclaw/clawsweeper/actions/runs/32675274693)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32675591955](https://github.com/openclaw/clawsweeper/actions/runs/32675591955)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/128411
 
 ## Summary
 
-Current main has the reported lifecycle-rotation cleanup gap, but repair is blocked before code changes: required sibling ../codex is unavailable for direct hook-contract inspection, and this read-only environment also prevents test execution.
+The canonical lifecycle-cleanup bug remains reproducible on current main, but implementation is blocked until the required direct ../codex hook-contract inspection is available. A narrow, non-executable fix artifact records the exact intended surface and validation path.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Current main has the reported lifecycle-rotation cleanup gap, but repair is bloc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128409 | keep_related | planned | related | Adjacent native-hook lifetime issue; no duplicate or closure action. |
-| #128411 | fix_needed | blocked | canonical | Await direct inspection of the Codex hook contract in ../codex; then implement and validate the narrow rotation handler. |
-| cluster:issue-openclaw-openclaw-128411 | build_fix_artifact | blocked | canonical | A narrow fix remains appropriate once the mandatory upstream contract and writable test environment are available. |
+| #128411 | fix_needed | blocked | canonical | Blocked fix-first: direct Codex source inspection is required before a repair verdict, regression design, or executable PR path. |
+| cluster:issue-openclaw-openclaw-128411 | build_fix_artifact | blocked | canonical | Artifact is intentionally non-executable until the Codex contract and resulting regression assertions are directly verified. |
+| #128409 | keep_related | planned | related | Keep open as related follow-up work; it has a distinct owner-boundary defect and is not covered by this repair. |
 
 ## Needs Human
 
-- Provide or permit creation of sibling ../codex for direct inspection of the native-hook contract; then rerun this repair in a writable environment so the failing regression and focused tests can run.
+- Provide a writable execution environment with ../codex available (or allow its clone), then rerun the narrow fix path after direct inspection of the exact native-hook contract.
