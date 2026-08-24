@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T18:17:15.488Z",
+  "updated_at": "2026-08-24T18:17:49.910Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120606:5395730622:2026-08-24T13:16:01Z:re_review",
-      "comment_id": "5395730622",
-      "comment_version_key": "5395730622:2026-08-24T13:16:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120606#issuecomment-5395730622",
-      "comment_created_at": "2026-08-24T13:16:01Z",
-      "comment_updated_at": "2026-08-24T13:16:01Z",
-      "comment_body_sha256": "9ac08271c049facf65158ec6326ea3d3c3210f26179474c4a9db500e54d3a837",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120606,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T13:16:49.812Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-120561",
-        "head_sha": "80c4e3b8384aa8a4ca24ed863db433039582ed02",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128356:5395745325:2026-08-24T13:17:11Z:re_review",
       "comment_id": "5395745325",
@@ -32390,6 +32343,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T18:17:15.488Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126789:5360320856:2026-08-24T18:15:27Z:clawsweeper_needs_human",
+      "comment_id": "5360320856",
+      "comment_version_key": "5360320856:2026-08-24T18:15:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126789#issuecomment-5360320856",
+      "comment_created_at": "2026-08-20T18:53:08Z",
+      "comment_updated_at": "2026-08-24T18:15:27Z",
+      "comment_body_sha256": "4d0a920458a34210d933756f858cf0e6aafae6abe7a8d1be2cb38d84cd206ac0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126789,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied screenshots and GIFs are from a failed stale head, not an after-fix provider-boundary result for the current head; add re... (sha=8b612a6dd56e60cff8d166fccc2bc56dbc583160)",
+      "expected_head_sha": "8b612a6dd56e60cff8d166fccc2bc56dbc583160",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T18:17:49.910Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-reply-self-media-rederive-202608",
+        "head_sha": "8b612a6dd56e60cff8d166fccc2bc56dbc583160",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
