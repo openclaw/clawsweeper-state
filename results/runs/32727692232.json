@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128718",
+  "mode": "autonomous",
+  "run_id": "32727692232",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32727692232",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128718.md",
+  "published_at": "2026-08-24T12:45:14.557Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128718",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128718",
+  "canonical_pr": null,
+  "summary": "Current main contains the reported leak, but implementation is blocked before any edit: the required sibling ../codex source is absent and cannot be cloned on this read-only filesystem. Dependencies are also absent and pnpm install cannot write Corepack cache.",
+  "actions": [
+    {
+      "target": "#128718",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128718",
+      "candidate_fix": null,
+      "reason": "A writable checkout with the mandated sibling Codex source is required before making or validating this protocol-adjacent repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128718",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128718",
+      "candidate_fix": null,
+      "reason": "Implementation environment is unavailable; preserve the artifact for the deterministic executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128718",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
