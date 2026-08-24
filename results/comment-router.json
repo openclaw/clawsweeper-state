@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T16:27:42.602Z",
+  "updated_at": "2026-08-24T16:27:44.354Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125815:5395030303:2026-08-24T12:14:13Z:re_review",
-      "comment_id": "5395030303",
-      "comment_version_key": "5395030303:2026-08-24T12:14:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125815#issuecomment-5395030303",
-      "comment_created_at": "2026-08-24T12:14:13Z",
-      "comment_updated_at": "2026-08-24T12:14:13Z",
-      "comment_body_sha256": "5c084afe0263d7cdbecc8ea9353ab8e3c4ef1c8397992f2f40c289ea4efbf926",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125815,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T12:14:56.807Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-owner-lifecycle-cas",
-        "head_sha": "2a5b3c71e75b0bd02bc26b5e58ebe23697022ec6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/remindctl:72:5334624429:2026-08-24T12:10:39Z:clawsweeper_needs_human",
       "comment_id": "5334624429",
@@ -31885,6 +31838,39 @@
         "kind": "pull_request",
         "branch": "fix/api-repeated-list-cursors",
         "head_sha": "84197df1cf7190bfafad03a4b518c50c18213e48",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126947:5364419632:2026-08-24T16:23:54Z:clawsweeper_needs_human",
+      "comment_id": "5364419632",
+      "comment_version_key": "5364419632:2026-08-24T16:23:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126947#issuecomment-5364419632",
+      "comment_created_at": "2026-08-21T02:22:32Z",
+      "comment_updated_at": "2026-08-24T16:23:54Z",
+      "comment_body_sha256": "46e55eb7f482ca645fdf4b22726c56ffb1e92363c3a6db4cabaa64edcadb40d7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126947,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes two same-version additive SQLite columns and the readiness rule for active, search, and display transcript state; upgrade and downgrade behavior must be proven against th... (sha=56f12dc867ad6405fad5fb08d3cc3c70a8bad40e)",
+      "expected_head_sha": "56f12dc867ad6405fad5fb08d3cc3c70a8bad40e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T16:27:44.354Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/transcript-projection-bindings",
+        "head_sha": "56f12dc867ad6405fad5fb08d3cc3c70a8bad40e",
         "cluster_id": null,
         "job_path": null
       }
