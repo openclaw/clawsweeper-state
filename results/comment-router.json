@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T07:02:44.552Z",
+  "updated_at": "2026-08-24T07:03:37.920Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128197:5385773212:2026-08-24T03:48:05Z:clawsweeper_needs_human",
-      "comment_id": "5385773212",
-      "comment_version_key": "5385773212:2026-08-24T03:48:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128197#issuecomment-5385773212",
-      "comment_created_at": "2026-08-23T11:32:48Z",
-      "comment_updated_at": "2026-08-24T03:48:05Z",
-      "comment_body_sha256": "1eee5ee765eec06a489d9731b7dbafaf4b42c1fe9ca470ebaea6b8d9ca353d4b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128197,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the linked run targets an earlier head and does not show that an active or stale SUT cannot reach Tele...; Review finding: [P1] Fence SUT lanes before collecting evidence — .github/workflows/mantis-telegram-desktop-proof.yml:288-295 - [high] Unfenced SUTs survive the trusted snapshot —... (sha=0d2a9c3d5afde9ce1aaf8ec17d8ca1662f41ea78)",
-      "expected_head_sha": "0d2a9c3d5afde9ce1aaf8ec17d8ca1662f41ea78",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:00:53.789Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/mantis-telegram-visible-v2",
-        "head_sha": "31e41b6ae0d0d4e267689ebccce97651cb6c3393",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128460:5390119608:2026-08-24T03:48:42Z:clawsweeper_needs_human",
       "comment_id": "5390119608",
@@ -31081,6 +31048,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125314:5391810138:2026-08-24T07:02:45Z:re_review",
+      "comment_id": "5391810138",
+      "comment_version_key": "5391810138:2026-08-24T07:02:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/125314#issuecomment-5391810138",
+      "comment_created_at": "2026-08-24T07:02:45Z",
+      "comment_updated_at": "2026-08-24T07:02:45Z",
+      "comment_body_sha256": "d670e6d5bb396ef6c5bb3af60fa3799a105b7775b27b23745e9d896d00c2a0fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125314,
+      "author": "Grynn",
+      "author_id": 212880,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T07:03:35.573Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
