@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T01:03:36.693Z",
+  "updated_at": "2026-08-24T01:04:25.195Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113554:5077572359:2026-08-23T21:06:20Z:clawsweeper_needs_human",
-      "comment_id": "5077572359",
-      "comment_version_key": "5077572359:2026-08-23T21:06:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113554#issuecomment-5077572359",
-      "comment_created_at": "2026-07-25T07:48:49Z",
-      "comment_updated_at": "2026-08-23T21:06:20Z",
-      "comment_body_sha256": "4dd2cf002b2f160395b80195033ea3d7e31fea159edda0411c45cd8650c04816",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113554,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This delivery-critical branch is behind current main and its required exact-head checks are still in progress; a false route classification could either duplicate a reply or suppress... (sha=11413bc0a8feb0cb0586b2674d552c9881d40365)",
-      "expected_head_sha": "11413bc0a8feb0cb0586b2674d552c9881d40365",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T21:14:03.764Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-source-reply-explicit-route-kg9",
-        "head_sha": "11413bc0a8feb0cb0586b2674d552c9881d40365",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117976:5157740894:2026-08-22T22:23:22Z:clawsweeper_auto_repair",
       "comment_id": "5157740894",
@@ -30541,6 +30508,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:88908:5389548660:2026-08-24T01:03:20Z:re_review",
+      "comment_id": "5389548660",
+      "comment_version_key": "5389548660:2026-08-24T01:03:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/88908#issuecomment-5389548660",
+      "comment_created_at": "2026-08-24T01:03:20Z",
+      "comment_updated_at": "2026-08-24T01:03:20Z",
+      "comment_body_sha256": "b759f3fc75bfbe6f60141d7ed205a2cf1e9332028c73b1d54a3e19bf1d43234d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 88908,
+      "author": "amittell",
+      "author_id": 1388680,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T01:04:23.058Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-shutdown-zombie-exit",
+        "head_sha": "0ad914aac56486f8ed2721289cc80f3a6f54ed7d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
