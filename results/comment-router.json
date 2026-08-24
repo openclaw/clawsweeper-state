@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T01:09:46.961Z",
+  "updated_at": "2026-08-24T01:11:17.492Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126082:5335760239:2026-08-23T21:15:06Z:clawsweeper_auto_repair",
-      "comment_id": "5335760239",
-      "comment_version_key": "5335760239:2026-08-23T21:15:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126082#issuecomment-5335760239",
-      "comment_created_at": "2026-08-19T00:00:13Z",
-      "comment_updated_at": "2026-08-23T21:15:06Z",
-      "comment_body_sha256": "86b8ca30cdd57055493062bd4347db71041cc35131b52721203b5efb1cc85e5c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126082,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=04e5c8e7662c551ad2185f635542600beffa2e8a)",
-      "expected_head_sha": "04e5c8e7662c551ad2185f635542600beffa2e8a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T21:20:16.847Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-autonomous-task-lifecycle",
-        "head_sha": "04e5c8e7662c551ad2185f635542600beffa2e8a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128348:5388121036:2026-08-23T21:19:09Z:clawsweeper_needs_human",
       "comment_id": "5388121036",
@@ -30481,6 +30448,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109646:4999062029:2026-08-24T01:03:56Z:clawsweeper_needs_human",
+      "comment_id": "4999062029",
+      "comment_version_key": "4999062029:2026-08-24T01:03:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/109646#issuecomment-4999062029",
+      "comment_created_at": "2026-07-17T04:45:48Z",
+      "comment_updated_at": "2026-08-24T01:03:56Z",
+      "comment_body_sha256": "462ffd0a7269969c5ef689e32ce7b843a9c2f01b8c26ca28070643939c8ed02c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 109646,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +1 line; the added owner-bound cache comment documents the bounded-state invariant, so removing it would not be a clearer net-neutral repair. (sha=33ea31c4d8a2f1b43418027700a8650910445418)",
+      "expected_head_sha": "33ea31c4d8a2f1b43418027700a8650910445418",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T01:11:17.492Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bound-telegram-cache-v2",
+        "head_sha": "33ea31c4d8a2f1b43418027700a8650910445418",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
