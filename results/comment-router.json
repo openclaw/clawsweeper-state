@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T22:50:10.596Z",
+  "updated_at": "2026-08-24T22:51:01.491Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128820:5399317669:2026-08-24T18:04:40Z:clawsweeper_needs_human",
-      "comment_id": "5399317669",
-      "comment_version_key": "5399317669:2026-08-24T18:04:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128820#issuecomment-5399317669",
-      "comment_created_at": "2026-08-24T18:04:40Z",
-      "comment_updated_at": "2026-08-24T18:04:40Z",
-      "comment_body_sha256": "9b78ef1bfb426ed89759932dbd657ff6a4b9f8dc24b20114bd9fa8bc106420ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128820,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The fake Keychain tests do not establish that an item inaccessible to the current signing identity suppresses macOS authentication UI on the PR head. (sha=5c39e305c2579557902a1c0ebd9fb22c667c7256)",
-      "expected_head_sha": "5c39e305c2579557902a1c0ebd9fb22c667c7256",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T18:10:50.223Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-keychain-noninteractive",
-        "head_sha": "5c39e305c2579557902a1c0ebd9fb22c667c7256",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128370:5388520988:2026-08-24T18:10:16Z:clawsweeper_needs_human",
       "comment_id": "5388520988",
@@ -31527,6 +31494,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127763:5402557014:2026-08-24T22:50:06Z:re_review",
+      "comment_id": "5402557014",
+      "comment_version_key": "5402557014:2026-08-24T22:50:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127763#issuecomment-5402557014",
+      "comment_created_at": "2026-08-24T22:50:06Z",
+      "comment_updated_at": "2026-08-24T22:50:06Z",
+      "comment_body_sha256": "66036d271b451ed9ba124bfbe69f5ff3518f771ca8ffb899821dc26a72ae740b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127763,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T22:50:59.480Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/kova-runtime-major-baseline",
+        "head_sha": "eb4defeb39e23dd2738e4a25ed95b3e59d21a65e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
