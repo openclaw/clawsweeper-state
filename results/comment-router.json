@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T12:11:01.709Z",
+  "updated_at": "2026-08-24T12:11:36.895Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119537:5391777244:2026-08-24T06:58:27Z:re_review",
-      "comment_id": "5391777244",
-      "comment_version_key": "5391777244:2026-08-24T06:58:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119537#issuecomment-5391777244",
-      "comment_created_at": "2026-08-24T06:58:27Z",
-      "comment_updated_at": "2026-08-24T06:58:27Z",
-      "comment_body_sha256": "b1de8f930d6f2c91786a8420a9ceab6145d6e13e7878b8a989760eeb46c26fc6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119537,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T06:59:09.046Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t24-06-ollama-embedding-error-redaction",
-        "head_sha": "9af38357abd4fe61bd34a1bd74baef3de44f3ba2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3512:5381521199:2026-08-24T06:52:34Z:clawsweeper_needs_human",
       "comment_id": "5381521199",
@@ -32285,6 +32238,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:64:5386388139:2026-08-24T12:10:18Z:clawsweeper_needs_human",
+      "comment_id": "5386388139",
+      "comment_version_key": "5386388139:2026-08-24T12:10:18Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/64#issuecomment-5386388139",
+      "comment_created_at": "2026-08-23T14:00:04Z",
+      "comment_updated_at": "2026-08-24T12:10:18Z",
+      "comment_body_sha256": "fab234e3ecb16630648089b0df724152f2e1889018f7b94de11babe158613039",
+      "repo": "openclaw/rfcs",
+      "issue_number": 64,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Not applicable: This PR changes only an RFC document, so runtime proof is not applicable. (sha=04bec7369788586004cf6efbae04503c99b9f166)",
+      "expected_head_sha": "04bec7369788586004cf6efbae04503c99b9f166",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T12:11:36.895Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rfc/0031-demand-driven-session-sidebar",
+        "head_sha": "04bec7369788586004cf6efbae04503c99b9f166",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
