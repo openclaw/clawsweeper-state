@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T06:25:04.105Z",
+  "updated_at": "2026-08-24T06:25:05.147Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128463:5390403278:2026-08-24T03:34:44Z:re_review",
-      "comment_id": "5390403278",
-      "comment_version_key": "5390403278:2026-08-24T03:34:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128463#issuecomment-5390403278",
-      "comment_created_at": "2026-08-24T03:34:44Z",
-      "comment_updated_at": "2026-08-24T03:34:44Z",
-      "comment_body_sha256": "7f63b6250bcae51bba5da1b96299bf4a809ae9f8d777687f31f19c1c4ba3ed0c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128463,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T03:35:35.209Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-package-source-preflight",
-        "head_sha": "46ebdc97d47d5d43d1062eba2fa12b9e3ca52292",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125103:5312625940:2026-08-24T03:33:55Z:clawsweeper_auto_repair",
       "comment_id": "5312625940",
@@ -31305,6 +31258,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T06:25:04.105Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128521:5391249168:2026-08-24T06:22:08Z:clawsweeper_needs_human",
+      "comment_id": "5391249168",
+      "comment_version_key": "5391249168:2026-08-24T06:22:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128521#issuecomment-5391249168",
+      "comment_created_at": "2026-08-24T05:52:05Z",
+      "comment_updated_at": "2026-08-24T06:22:08Z",
+      "comment_body_sha256": "4997e80f19d1a59fb10b3301028462ae7546e12d93f103461c878147a2bb56f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128521,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only resolver tests and static checks are shown; add redacted after-fix real session-flow evidence before merge. After adding proof, update the... (sha=34b4433eda2aeb3f7ac56d8acd3aea7265893bce)",
+      "expected_head_sha": "34b4433eda2aeb3f7ac56d8acd3aea7265893bce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T06:25:05.147Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "gaoanze888/skip-parent-auto-fallback-inheritance",
+        "head_sha": "34b4433eda2aeb3f7ac56d8acd3aea7265893bce",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
