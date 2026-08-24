@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T01:19:42.365Z",
+  "updated_at": "2026-08-24T01:19:55.414Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127282:5372812607:2026-08-23T21:14:13Z:clawsweeper_auto_repair",
-      "comment_id": "5372812607",
-      "comment_version_key": "5372812607:2026-08-23T21:14:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127282#issuecomment-5372812607",
-      "comment_created_at": "2026-08-21T16:57:03Z",
-      "comment_updated_at": "2026-08-23T21:14:13Z",
-      "comment_body_sha256": "1697b3f70dca56c43bbbd91e199102db7d8dbe654dbca7057809343b0c740fee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127282,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T21:29:00.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/runtime-failures",
-        "head_sha": "7580407775a40799f81c832fc4e3702e8cb8601b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128351:5388388048:2026-08-23T21:24:44Z:clawsweeper_auto_repair",
       "comment_id": "5388388048",
@@ -30481,6 +30448,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128436:5389632087:2026-08-24T01:18:46Z:clawsweeper_needs_human",
+      "comment_id": "5389632087",
+      "comment_version_key": "5389632087:2026-08-24T01:18:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128436#issuecomment-5389632087",
+      "comment_created_at": "2026-08-24T01:18:46Z",
+      "comment_updated_at": "2026-08-24T01:18:46Z",
+      "comment_body_sha256": "0bb6107df78ee550ef599d7702a133ae5b7bf0c3e915a73f1a78bb0ee55b5286",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128436,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check state still had exact-head shards in progress; merge should wait for the normal exact-head check completion. (sha=4b2afbbbdd8c33691e7742a516f641404608e802)",
+      "expected_head_sha": "4b2afbbbdd8c33691e7742a516f641404608e802",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T01:19:55.414Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-pending-wait-correlation",
+        "head_sha": "4b2afbbbdd8c33691e7742a516f641404608e802",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
