@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125838",
+  "mode": "autonomous",
+  "run_id": "32787616523",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32787616523",
+  "head_sha": "ed20a56037dc7e1141140513e0307df69f0d394a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125838.md",
+  "published_at": "2026-08-24T23:13:24.401Z",
+  "canonical": "#125838",
+  "canonical_issue": "#125838",
+  "canonical_pr": null,
+  "summary": "#125838 remains a canonical, reproducible bug. Current main restricts the early command-reply path to native commands and two internal text commands, while the normal busy-operation path records `reply-operation-active` with zero queued replies. This worker cannot edit, validate, or open the required PR because the checkout is read-only; `pnpm test` also fails before tests start with Corepack EROFS, and the mandatory sibling `../codex` source checkout is absent.",
+  "actions": [
+    {
+      "target": "#125838",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125838",
+      "candidate_fix": null,
+      "reason": "A narrow code repair is indicated, but this environment cannot make or validate it."
+    },
+    {
+      "target": "#125838",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125838",
+      "candidate_fix": null,
+      "reason": "Prepared for execution in a writable worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with runnable pnpm/Corepack dependencies and the required sibling `../codex` source checkout; then create or update branch `clawsweeper/issue-openclaw-openclaw-125838` from main."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
