@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T16:20:35.866Z",
+  "updated_at": "2026-08-24T16:23:35.366Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127226:5371461805:2026-08-24T12:11:00Z:clawsweeper_needs_human",
-      "comment_id": "5371461805",
-      "comment_version_key": "5371461805:2026-08-24T12:11:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127226#issuecomment-5371461805",
-      "comment_created_at": "2026-08-21T14:49:15Z",
-      "comment_updated_at": "2026-08-24T12:11:00Z",
-      "comment_body_sha256": "49a06b8c25cc49c9846e55081b8e927c3c6615b8512408e925d33ebda7bb7035",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127226,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the real v0.14.7 child-process trace proves pre-association protocol continuity, but not a completed a...; Review finding: [P1] Keep hosted QR setup cancellable until association begins — extensions/signal/src/setup-surface.ts:163 - [P3] Remove the duplicated endpoint tests — extension... (sha=027310e8220ee9bbb93644df8cb0ae392570ec10)",
-      "expected_head_sha": "027310e8220ee9bbb93644df8cb0ae392570ec10",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T12:12:16.991Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/signal-qr-setup-current-main",
-        "head_sha": "027310e8220ee9bbb93644df8cb0ae392570ec10",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125413:5320450624:2026-08-24T12:04:48Z:clawsweeper_auto_repair",
       "comment_id": "5320450624",
@@ -31846,6 +31813,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128289:5398134752:2026-08-24T16:22:30Z:re_review",
+      "comment_id": "5398134752",
+      "comment_version_key": "5398134752:2026-08-24T16:22:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128289#issuecomment-5398134752",
+      "comment_created_at": "2026-08-24T16:22:30Z",
+      "comment_updated_at": "2026-08-24T16:22:30Z",
+      "comment_body_sha256": "dbe578f2fa1aa8f97184cbdbef0017d8a80fe405d4e2ebdea890dc00a3532b53",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128289,
+      "author": "SnowBelt",
+      "author_id": 31227031,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T16:23:31.619Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/browser-session-credential-steward-mvp-repair",
+        "head_sha": "fff2be68e08c7bbddb0f779bd9a92503d16577ee",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
