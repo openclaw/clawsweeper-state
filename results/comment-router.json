@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T10:16:11.669Z",
+  "updated_at": "2026-08-24T10:16:31.460Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122444:5276099225:2026-08-13T04:49:53Z:re_review",
-      "comment_id": "5276099225",
-      "comment_version_key": "5276099225:2026-08-13T04:49:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122444#issuecomment-5276099225",
-      "comment_created_at": "2026-08-13T04:49:53Z",
-      "comment_updated_at": "2026-08-13T04:49:53Z",
-      "comment_body_sha256": "1d085349eb44647b1518ad59ce36a665729e0a2d43d98e3d5ced6ce16d8f2a46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122444,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T05:21:58.306Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122444:5276328091:2026-08-13T05:25:55Z:re_review",
       "comment_id": "5276328091",
@@ -32497,6 +32470,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T10:16:11.669Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-24T10:02:08Z:clawsweeper_needs_human",
+      "comment_id": "5376735204",
+      "comment_version_key": "5376735204:2026-08-24T10:02:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
+      "comment_created_at": "2026-08-22T00:21:26Z",
+      "comment_updated_at": "2026-08-24T10:02:08Z",
+      "comment_body_sha256": "b068826c0a80918a12df2d009880b1805e118187341f4420553eac531a2baff2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127700,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Refresh the Android attestation guard (P2)** - The Android workflow now pins actions/attest v4.2.2, but the package-acceptance guard still requires the removed v4.2.0 SHA. Its exact string assertion will fail un...; Review finding: [P2] Refresh the Android attestation guard — .github/workflows/android-release.yml:355 - [P2] Refresh the Vercel Buildx guard — .github/workflows/vercel-container-... (sha=79e7d44941771a3d811c43ecaacda7a72231fb2a)",
+      "expected_head_sha": "79e7d44941771a3d811c43ecaacda7a72231fb2a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T10:16:31.460Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-2b47f3b96e",
+        "head_sha": "b7315bcb748f483834c398bb610436b9ffe2fb98",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
