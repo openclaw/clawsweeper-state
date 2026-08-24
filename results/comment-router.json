@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T00:15:56.238Z",
+  "updated_at": "2026-08-24T00:17:02.426Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5313472716:2026-08-17T08:09:47Z:re_review",
-      "comment_id": "5313472716",
-      "comment_version_key": "5313472716:2026-08-17T08:09:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5313472716",
-      "comment_created_at": "2026-08-17T08:09:47Z",
-      "comment_updated_at": "2026-08-17T08:09:47Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T20:38:40.680Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5313566615:2026-08-17T08:18:42Z:re_review",
       "comment_id": "5313566615",
@@ -30287,6 +30260,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128111:5384257886:2026-08-24T00:15:46Z:clawsweeper_needs_human",
+      "comment_id": "5384257886",
+      "comment_version_key": "5384257886:2026-08-24T00:15:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128111#issuecomment-5384257886",
+      "comment_created_at": "2026-08-23T04:42:52Z",
+      "comment_updated_at": "2026-08-24T00:15:46Z",
+      "comment_body_sha256": "25ba95a7aa431d7b963616f7691a9b149c5776c96e015e4097ee7bbbc20e18e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128111,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress; merge should wait for its completion even though no source-level defect was found. (sha=06e3dedee9b38955536f44b0f61cd2c458f781dc)",
+      "expected_head_sha": "06e3dedee9b38955536f44b0f61cd2c458f781dc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T00:17:02.426Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/control-ui-locale-refresh",
+        "head_sha": "06e3dedee9b38955536f44b0f61cd2c458f781dc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
