@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T14:11:52.106Z",
+  "updated_at": "2026-08-24T14:12:38.143Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128671:5393934221:2026-08-24T10:26:37Z:re_review",
-      "comment_id": "5393934221",
-      "comment_version_key": "5393934221:2026-08-24T10:26:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128671#issuecomment-5393934221",
-      "comment_created_at": "2026-08-24T10:26:37Z",
-      "comment_updated_at": "2026-08-24T10:26:37Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128671,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T10:27:20.205Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/anthropic-sdk-lock",
-        "head_sha": "61cb1fd2224abea05b0061fde59936c3d052697e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125664:5324603599:2026-08-24T10:24:42Z:clawsweeper_auto_repair",
       "comment_id": "5324603599",
@@ -31350,6 +31303,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/st-empty-truth",
         "head_sha": "6fb96fa868372e01ac786b541b465f9131786faa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:91:5297817254:2026-08-24T14:11:49Z:clawsweeper_needs_human",
+      "comment_id": "5297817254",
+      "comment_version_key": "5297817254:2026-08-24T14:11:49Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/91#issuecomment-5297817254",
+      "comment_created_at": "2026-08-14T20:23:04Z",
+      "comment_updated_at": "2026-08-24T14:11:49Z",
+      "comment_body_sha256": "b6d652d850125b94eda703e3afe213fafea4f29194f5dce46f9084c548fdceec",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 91,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is release-owned metadata; the release owner should confirm the v0.14.7 closeout is complete before merging, even though the current three-way merge is clean. (sha=6f34f07ff3778be3ab5e66ef1f8113e71f67ea9e)",
+      "expected_head_sha": "6f34f07ff3778be3ab5e66ef1f8113e71f67ea9e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T14:12:38.143Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/next-unreleased-0.14.7-31836986812",
+        "head_sha": "6f34f07ff3778be3ab5e66ef1f8113e71f67ea9e",
         "cluster_id": null,
         "job_path": null
       }
