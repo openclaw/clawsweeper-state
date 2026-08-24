@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T14:56:48.062Z",
+  "updated_at": "2026-08-24T14:56:57.818Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127177:5394457329:2026-08-24T11:18:04Z:re_review",
-      "comment_id": "5394457329",
-      "comment_version_key": "5394457329:2026-08-24T11:18:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127177#issuecomment-5394457329",
-      "comment_created_at": "2026-08-24T11:18:04Z",
-      "comment_updated_at": "2026-08-24T11:18:04Z",
-      "comment_body_sha256": "e331cf32ccddd0ae68ec6de17e87641452dec83350b667bc43669fe47ff59ac4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127177,
-      "author": "wszkxlllll",
-      "author_id": 142909575,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T11:18:50.875Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-shared-client-platform-metadata",
-        "head_sha": "a7bda769bf820f7e122d388fc750fd70eecaa980",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127226:5394472664:2026-08-24T11:19:38Z:re_review",
       "comment_id": "5394472664",
@@ -31446,6 +31399,39 @@
         "kind": "pull_request",
         "branch": "automation/native-app-locale-refresh",
         "head_sha": "236c1723e4ab7245523afe739706e4672624de7e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126908:5363926603:2026-08-24T14:53:22Z:clawsweeper_needs_human",
+      "comment_id": "5363926603",
+      "comment_version_key": "5363926603:2026-08-24T14:53:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126908#issuecomment-5363926603",
+      "comment_created_at": "2026-08-21T01:03:27Z",
+      "comment_updated_at": "2026-08-24T14:53:22Z",
+      "comment_body_sha256": "7337e6d577ce72086806fe2c7f4c16adc747c365d3d2ce723245eee59b017d13",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126908,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current-main and historical provenance remain unverified because the local grafted snapshot cannot fetch its missing Git objects while GitHub DNS is unavailable. (sha=12eeda8f233890613cb6d79238c42dac1bcf8a6d)",
+      "expected_head_sha": "12eeda8f233890613cb6d79238c42dac1bcf8a6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T14:56:57.818Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nextcloud-limiter-dispose",
+        "head_sha": "12eeda8f233890613cb6d79238c42dac1bcf8a6d",
         "cluster_id": null,
         "job_path": null
       }
