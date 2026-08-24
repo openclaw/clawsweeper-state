@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T19:23:15.376Z",
+  "updated_at": "2026-08-24T19:25:23.301Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118876:5170578774:2026-08-24T13:37:59Z:clawsweeper_needs_human",
-      "comment_id": "5170578774",
-      "comment_version_key": "5170578774:2026-08-24T13:37:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118876#issuecomment-5170578774",
-      "comment_created_at": "2026-08-03T19:04:35Z",
-      "comment_updated_at": "2026-08-24T13:37:59Z",
-      "comment_body_sha256": "58b1aec0bf075f8ee5166dd1a8153cccc703f00f2e8ef90718161b298ca325c6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118876,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep provenance conditional on fetched history (P1)** - resultContentSource is read from the tool definition after every execution, so this line taints the no-session and no-binding sentinel paths even though li...; Review finding: [P1] Keep provenance conditional on fetched history — extensions/clickclack/src/discussions/tool.ts:15 - [medium] Static provenance taints local sentinel output —... (sha=ce7f10106cf995d54a7aaba653f9ce75ca309bbb)",
-      "expected_head_sha": "ce7f10106cf995d54a7aaba653f9ce75ca309bbb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T13:50:25.112Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-clickclack-discussion-network-provenance",
-        "head_sha": "ce7f10106cf995d54a7aaba653f9ce75ca309bbb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99530:4876206725:2026-08-24T13:49:00Z:clawsweeper_needs_human",
       "comment_id": "4876206725",
@@ -32704,6 +32671,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128836:5400199833:2026-08-24T19:24:24Z:re_review",
+      "comment_id": "5400199833",
+      "comment_version_key": "5400199833:2026-08-24T19:24:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128836#issuecomment-5400199833",
+      "comment_created_at": "2026-08-24T19:24:24Z",
+      "comment_updated_at": "2026-08-24T19:24:24Z",
+      "comment_body_sha256": "cb5caa0b50151ecdcb2ca44211d3a0239d99ec6812ab8fcae141577597f695b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128836,
+      "author": "husodrn46",
+      "author_id": 76519526,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T19:25:21.689Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/turkish-docs-i18n",
+        "head_sha": "49aa31cfb5d7ee1cf10107d6d5c76b6bc65599ee",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
