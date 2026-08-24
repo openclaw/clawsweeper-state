@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T19:26:00.565Z",
+  "updated_at": "2026-08-24T19:28:01.934Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128735:5396151229:2026-08-24T13:49:09Z:re_review",
-      "comment_id": "5396151229",
-      "comment_version_key": "5396151229:2026-08-24T13:49:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128735#issuecomment-5396151229",
-      "comment_created_at": "2026-08-24T13:49:09Z",
-      "comment_updated_at": "2026-08-24T13:49:09Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128735,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T13:55:56.737Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci/ios-fastlane-toolchain",
-        "head_sha": "83e946286f36d4fb1b1a4799ee8252713c5f5ac4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125815:5392408338:2026-08-24T08:09:27Z:re_review",
       "comment_id": "5392408338",
@@ -32585,6 +32538,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T19:26:00.565Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/remindctl:72:5334624429:2026-08-24T19:24:19Z:clawsweeper_needs_human",
+      "comment_id": "5334624429",
+      "comment_version_key": "5334624429:2026-08-24T19:24:19Z",
+      "comment_url": "https://github.com/openclaw/remindctl/pull/72#issuecomment-5334624429",
+      "comment_created_at": "2026-08-18T22:05:02Z",
+      "comment_updated_at": "2026-08-24T19:24:19Z",
+      "comment_body_sha256": "1143edaaabf5f0ec5d313ae16d4da4730d9f9d7dcef5f0ac4f19a1ff7b98360a",
+      "repo": "openclaw/remindctl",
+      "issue_number": 72,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The posted Swift test verifies the extracted mapper, but the PR explicitly lacks an after-fix run against a live EventKit store; add a redacted... (sha=a046f57088c85a1dbd98069bdc3422317f983e13)",
+      "expected_head_sha": "a046f57088c85a1dbd98069bdc3422317f983e13",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T19:28:01.934Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/list-nil-calendar",
+        "head_sha": "a046f57088c85a1dbd98069bdc3422317f983e13",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
