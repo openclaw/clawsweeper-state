@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T17:11:11.610Z",
+  "updated_at": "2026-08-24T17:11:53.085Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5319705724:2026-08-17T20:11:26Z:re_review",
-      "comment_id": "5319705724",
-      "comment_version_key": "5319705724:2026-08-17T20:11:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5319705724",
-      "comment_created_at": "2026-08-17T20:11:26Z",
-      "comment_updated_at": "2026-08-17T20:11:26Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T12:55:28.048Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5319849705:2026-08-17T20:25:59Z:re_review",
       "comment_id": "5319849705",
@@ -31817,6 +31790,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T17:11:11.610Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128805:5398602327:2026-08-24T17:11:07Z:clawsweeper_needs_human",
+      "comment_id": "5398602327",
+      "comment_version_key": "5398602327:2026-08-24T17:11:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128805#issuecomment-5398602327",
+      "comment_created_at": "2026-08-24T17:03:36Z",
+      "comment_updated_at": "2026-08-24T17:11:07Z",
+      "comment_body_sha256": "ae1b124e7877f1056e9aa6796f6d4ecd1538634ff8913ec4dca65457659b4e4f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128805,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: no after-fix real SDK/Claude trace shows that a denied canonical policy selection prevents the native executabl...; Review finding: [P1] Map native names before canonical policy matching — src/agents/cli-runner/execute-plugin.ts:88-90 - [high] Canonical web policy does not match Anthropic WebFe... (sha=f66f27449161e26c5e4c1f8ed940b9ecdbac1fe2)",
+      "expected_head_sha": "f66f27449161e26c5e4c1f8ed940b9ecdbac1fe2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T17:11:53.085Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/anthropic-agent-sdk-native-policy",
+        "head_sha": "f66f27449161e26c5e4c1f8ed940b9ecdbac1fe2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
