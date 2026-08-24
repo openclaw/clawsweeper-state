@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T20:45:13.162Z",
+  "updated_at": "2026-08-24T20:45:23.183Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118616:5397837889:2026-08-24T15:58:32Z:re_review",
-      "comment_id": "5397837889",
-      "comment_version_key": "5397837889:2026-08-24T15:58:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118616#issuecomment-5397837889",
-      "comment_created_at": "2026-08-24T15:58:32Z",
-      "comment_updated_at": "2026-08-24T15:58:32Z",
-      "comment_body_sha256": "eb5d57f7a27e5667f8f90dcd0a6424d4aec55d5c17b9c083f0d3d5b33246ce9f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118616,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T16:02:33.295Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-call-background-liveness",
-        "head_sha": "d367ec9d29102acb4d8d8577b8db40a35689bd87",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128778:5397845931:2026-08-24T15:59:13Z:re_review",
       "comment_id": "5397845931",
@@ -31786,6 +31739,39 @@
         "kind": "pull_request",
         "branch": "codex/capability-empty-output-20260824",
         "head_sha": "d13cdeaf92e1c9b6011d52d9591fb649bfe51182",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128185:5385558196:2026-08-24T20:41:01Z:clawsweeper_needs_human",
+      "comment_id": "5385558196",
+      "comment_version_key": "5385558196:2026-08-24T20:41:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128185#issuecomment-5385558196",
+      "comment_created_at": "2026-08-23T10:36:34Z",
+      "comment_updated_at": "2026-08-24T20:41:01Z",
+      "comment_body_sha256": "c90124d34dd8851d2fb4f9e087e7d3632b5bdcb73579b6ceff64cd52844a3485",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128185,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch now permits five-minute Machine0 lifecycle commands and 60/65-minute outer calls, while its body still presents a three-minute, 51/56-minute contract; maintainers cannot as... (sha=3f9f8cbf7586a3766742acd7fb2b35c0ab11eb1a)",
+      "expected_head_sha": "3f9f8cbf7586a3766742acd7fb2b35c0ab11eb1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T20:45:23.183Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/machine0-cloud-target-support-8c52a6",
+        "head_sha": "3f9f8cbf7586a3766742acd7fb2b35c0ab11eb1a",
         "cluster_id": null,
         "job_path": null
       }
