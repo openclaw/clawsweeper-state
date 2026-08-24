@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T05:19:08.452Z",
+  "updated_at": "2026-08-24T05:19:08.593Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128279:5387278649:2026-08-24T01:41:32Z:clawsweeper_needs_human",
-      "comment_id": "5387278649",
-      "comment_version_key": "5387278649:2026-08-24T01:41:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128279#issuecomment-5387278649",
-      "comment_created_at": "2026-08-23T17:16:00Z",
-      "comment_updated_at": "2026-08-24T01:41:32Z",
-      "comment_body_sha256": "238fa70f90e476997208b9802e4ff4cd7b06bf844afb5c75243f0b3c00ce5c97",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128279,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging deliberately changes auto mode from human approval to one model decision for a compound command; exact binding reduces substitution risk, but a protected owner must accept tha... (sha=852e3ad524d53ddab19df2bef9a3b19cdd4ed871)",
-      "expected_head_sha": "852e3ad524d53ddab19df2bef9a3b19cdd4ed871",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T01:43:29.929Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/quickjs-code-mode-guardian-approvals-audit",
-        "head_sha": "852e3ad524d53ddab19df2bef9a3b19cdd4ed871",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128279:5387668339:2026-08-23T18:14:39Z:re_review",
       "comment_id": "5387668339",
@@ -31611,6 +31578,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T05:19:08.452Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:93952:4726450629:2026-08-24T05:17:34Z:clawsweeper_needs_human",
+      "comment_id": "4726450629",
+      "comment_version_key": "4726450629:2026-08-24T05:17:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/93952#issuecomment-4726450629",
+      "comment_created_at": "2026-06-17T05:44:09Z",
+      "comment_updated_at": "2026-08-24T05:17:34Z",
+      "comment_body_sha256": "32dabdb4c1416c130dd4d6f9769ab285c7d08abda51d8e7111804748d23b0ce3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 93952,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The copied real app-server output is useful boundary evidence, but it is from a predecessor head using Codex 0.147.0 and injects refre...; Review finding: [P1] Start the caller deadline before refresh queueing — src/agents/auth-profiles/oauth-manager.ts:944-945 - [medium] Prove different-account rejection at the fina... (sha=c953b0afe382b53c3482cb396176d8f14e82fcc5)",
+      "expected_head_sha": "c953b0afe382b53c3482cb396176d8f14e82fcc5",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-24T05:19:08.593Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auth-refresh-deadline-guard",
+        "head_sha": "c953b0afe382b53c3482cb396176d8f14e82fcc5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
