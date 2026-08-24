@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T20:25:27.214Z",
+  "updated_at": "2026-08-24T20:26:02.527Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128761:5396857003:2026-08-24T15:23:12Z:clawsweeper_auto_repair",
-      "comment_id": "5396857003",
-      "comment_version_key": "5396857003:2026-08-24T15:23:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128761#issuecomment-5396857003",
-      "comment_created_at": "2026-08-24T14:43:45Z",
-      "comment_updated_at": "2026-08-24T15:23:12Z",
-      "comment_body_sha256": "fe350ca210abf434c1798dd1e66a6c3ebb59a879797428e72aaf24af96f722eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128761,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a4119359d6be3f5975a4d27524d1b19113e7d481)",
-      "expected_head_sha": "a4119359d6be3f5975a4d27524d1b19113e7d481",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T15:24:14.540Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/nifty-turing-695a4e",
-        "head_sha": "a4119359d6be3f5975a4d27524d1b19113e7d481",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116806:5144674437:2026-07-31T15:37:57Z:re_review",
       "comment_id": "5144674437",
@@ -31751,6 +31718,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T20:25:27.214Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128286:5387213432:2026-08-24T20:22:35Z:clawsweeper_needs_human",
+      "comment_id": "5387213432",
+      "comment_version_key": "5387213432:2026-08-24T20:22:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128286#issuecomment-5387213432",
+      "comment_created_at": "2026-08-23T17:01:44Z",
+      "comment_updated_at": "2026-08-24T20:22:35Z",
+      "comment_body_sha256": "7845e08b9fb1dbce3c049cbe29aa7c3285eead20f258171ba48da08800e28d43",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128286,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restore strict data-URL validation (P1)** - This replaces current-main commit b91f1ea6's constrained metadata parser with a broad [^;]+ capture and removes its malformed-metadata coverage. Invalid marker orderin...; Review finding: [P1] Restore strict data-URL validation — src/infra/outbound/message-action-params.ts:276 - [P1] Keep Git commit identity in plugin update outcomes — src/plugins/u... (sha=a029404bee88b5e51b5e246ddaecc151ccf65a58)",
+      "expected_head_sha": "a029404bee88b5e51b5e246ddaecc151ccf65a58",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T20:26:02.527Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pin-to-a-group-instead-of-globally",
+        "head_sha": "a029404bee88b5e51b5e246ddaecc151ccf65a58",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
