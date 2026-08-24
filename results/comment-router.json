@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T09:46:02.258Z",
+  "updated_at": "2026-08-24T09:46:08.223Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125041:5311912200:2026-08-24T05:01:14Z:clawsweeper_needs_human",
-      "comment_id": "5311912200",
-      "comment_version_key": "5311912200:2026-08-24T05:01:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125041#issuecomment-5311912200",
-      "comment_created_at": "2026-08-17T04:41:39Z",
-      "comment_updated_at": "2026-08-24T05:01:14Z",
-      "comment_body_sha256": "8494d2931c75ca6b4916ef35d1d7041f7580d3dff9ea17a3883b276da1a350cc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125041,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing MiniMax M3 API and Portal users on the default auto policy will move from normal tool exposure to Code Mode controls after upgrade; this matches the documented preferred-mode... (sha=ae3008c377ff8ddfd2bb1d08ce3a1c19f8e2ed32)",
-      "expected_head_sha": "ae3008c377ff8ddfd2bb1d08ce3a1c19f8e2ed32",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T05:06:29.874Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/minimax-code-mode-projection",
-        "head_sha": "ae3008c377ff8ddfd2bb1d08ce3a1c19f8e2ed32",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126094:5335919571:2026-08-24T05:02:34Z:clawsweeper_auto_repair",
       "comment_id": "5335919571",
@@ -32499,6 +32466,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128459:5393240645:2026-08-24T09:45:23Z:re_review",
+      "comment_id": "5393240645",
+      "comment_version_key": "5393240645:2026-08-24T09:45:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128459#issuecomment-5393240645",
+      "comment_created_at": "2026-08-24T09:26:21Z",
+      "comment_updated_at": "2026-08-24T09:45:23Z",
+      "comment_body_sha256": "517d192ac6911873b96451776b0d9eb27f3a248f44255602b6987c3d44e343c6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128459,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T09:46:06.681Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/frv-telegram-test-shards",
+        "head_sha": "700e10834afac7b77d5216ab4cd90220e08b4123",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
