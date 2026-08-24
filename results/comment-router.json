@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T01:15:03.375Z",
+  "updated_at": "2026-08-24T01:15:54.155Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1487:5388558786:2026-08-23T21:28:20Z:clawsweeper_needs_human",
-      "comment_id": "5388558786",
-      "comment_version_key": "5388558786:2026-08-23T21:28:20Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1487#issuecomment-5388558786",
-      "comment_created_at": "2026-08-23T21:28:20Z",
-      "comment_updated_at": "2026-08-23T21:28:20Z",
-      "comment_body_sha256": "98db174e0a0acb7ecbf8e83c56376af3313ea2484b33f5e0e7df80b3701bd5ab",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1487,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: No after-fix live Machine0 warmup, final inspection, and cleanup trace is attached; the PR itself identifies that exact-head rerun as a merge g...; Review finding: [P1] Refresh inventory before recording the fixed create attempt — internal/providers/machine0/fixed.go:102-109 - [high] Stale inventory can authorize an unowned f... (sha=5851ca4823e98e44dfba1cd33d894d2f91ff1484)",
-      "expected_head_sha": "5851ca4823e98e44dfba1cd33d894d2f91ff1484",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T21:28:59.216Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/machine0-read-pressure-20260823",
-        "head_sha": "5851ca4823e98e44dfba1cd33d894d2f91ff1484",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121827:5248899796:2026-08-23T21:21:55Z:clawsweeper_auto_repair",
       "comment_id": "5248899796",
@@ -30453,6 +30420,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128116:5389612254:2026-08-24T01:15:04Z:re_review",
+      "comment_id": "5389612254",
+      "comment_version_key": "5389612254:2026-08-24T01:15:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128116#issuecomment-5389612254",
+      "comment_created_at": "2026-08-24T01:15:04Z",
+      "comment_updated_at": "2026-08-24T01:15:04Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128116,
+      "author": "Finn763",
+      "author_id": 165816600,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T01:15:50.534Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-124689-probe-fallback",
+        "head_sha": "4e98276707a4dc5d4ba271e382407d42ded6773f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
