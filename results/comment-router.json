@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T05:15:33.500Z",
+  "updated_at": "2026-08-24T05:16:36.457Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3493:5389741307:2026-08-24T01:39:40Z:re_review",
-      "comment_id": "5389741307",
-      "comment_version_key": "5389741307:2026-08-24T01:39:40Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5389741307",
-      "comment_created_at": "2026-08-24T01:39:40Z",
-      "comment_updated_at": "2026-08-24T01:39:40Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T01:40:22.898Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/meaningful-traffic-signals",
-        "head_sha": "6c6487c195a725fd5350666f2b249140f482d2bb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3494:5389741457:2026-08-24T01:39:42Z:re_review",
       "comment_id": "5389741457",
@@ -31648,6 +31601,39 @@
         "kind": "pull_request",
         "branch": "fix/verifier-workflow-id",
         "head_sha": "c1e0568e090d48b225a81c658c32501cf1e2910d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw-tools:17:5298592194:2026-08-24T05:15:52Z:clawsweeper_auto_repair",
+      "comment_id": "5298592194",
+      "comment_version_key": "5298592194:2026-08-24T05:15:52Z",
+      "comment_url": "https://github.com/openclaw/nix-openclaw-tools/pull/17#issuecomment-5298592194",
+      "comment_created_at": "2026-08-14T22:00:35Z",
+      "comment_updated_at": "2026-08-24T05:15:52Z",
+      "comment_body_sha256": "9dca846d246276520daa4807c4bf79c537d28eb1b77ddaacfc90157648e1c62e",
+      "repo": "openclaw/nix-openclaw-tools",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=b767776d2127c50298504eac0e15ab5a4f3f92a5)",
+      "expected_head_sha": "b767776d2127c50298504eac0e15ab5a4f3f92a5",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-24T05:16:36.457Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-http-timeout",
+        "head_sha": "b767776d2127c50298504eac0e15ab5a4f3f92a5",
         "cluster_id": null,
         "job_path": null
       }
