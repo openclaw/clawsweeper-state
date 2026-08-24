@@ -2,21 +2,21 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-117144"
 mode: "autonomous"
-run_id: "32738199843"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32738199843"
+run_id: "32744982673"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32744982673"
 head_sha: "ce250708c1ea10228f29fc5740cba95460dcdf74"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-24T15:44:27.808Z"
+published_at: "2026-08-24T16:43:17.513Z"
 canonical: "#117144"
 canonical_issue: null
 canonical_pr: "#117144"
 actions_total: 1
 fix_executed: 0
-fix_failed: 1
-fix_blocked: 1
+fix_failed: 0
+fix_blocked: 0
 apply_executed: 0
-apply_blocked: 0
+apply_blocked: 1
 apply_skipped: 0
 needs_human_count: 0
 ---
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32738199843](https://github.com/openclaw/clawsweeper/actions/runs/32738199843)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32744982673](https://github.com/openclaw/clawsweeper/actions/runs/32744982673)
 
 Workflow conclusion: success
 
@@ -43,10 +43,10 @@ Make PR #117144 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 | --- | ---: |
 | Worker actions | 1 |
 | Fix executed | 0 |
-| Fix failed | 1 |
-| Fix blocked | 1 |
+| Fix failed | 0 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
-| Apply blocked | 0 |
+| Apply blocked | 1 |
 | Apply skipped | 0 |
 | Needs human | 0 |
 
@@ -54,15 +54,13 @@ Make PR #117144 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| repair_contributor_branch | failed |  |  | Codex /review did not pass after final base synchronization: Blocked: the repair still omits transitive ACPX adapter runtimes from the extracted artifact, so the deferred Codex/Claude ACP path fails despite the reported changed-surface check passing. |
-| execute_fix | blocked |  |  | Codex /review did not pass after final base synchronization: Blocked: the repair still omits transitive ACPX adapter runtimes from the extracted artifact, so the deferred Codex/Claude ACP path fails despite the reported changed-surface check passing. |
-| automerge_repair_outcome_comment | updated | #117144 |  |  |
+| repair_contributor_branch | pushed | https://github.com/openclaw/openclaw/pull/117144 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #117144 | merge_canonical | blocked | fix_pr | autofix-only job cannot merge |
 
 ## Worker Action Matrix
 
