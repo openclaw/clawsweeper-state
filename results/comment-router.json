@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T06:58:39.898Z",
+  "updated_at": "2026-08-24T06:59:10.992Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123356:5287474810:2026-08-24T03:34:51Z:clawsweeper_auto_repair",
-      "comment_id": "5287474810",
-      "comment_version_key": "5287474810:2026-08-24T03:34:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123356#issuecomment-5287474810",
-      "comment_created_at": "2026-08-13T23:18:35Z",
-      "comment_updated_at": "2026-08-24T03:34:51Z",
-      "comment_body_sha256": "cd83b208739d66fb05000a2e90ede8b18de974837ce164933d2d9de372406b3d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123356,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7077daf25a25e8883335c8ea21efb2a75132fe00)",
-      "expected_head_sha": "7077daf25a25e8883335c8ea21efb2a75132fe00",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:00:53.789Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "improve/command-arg-staged-input",
-        "head_sha": "7077daf25a25e8883335c8ea21efb2a75132fe00",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-24T03:35:52Z:clawsweeper_needs_human",
       "comment_id": "5290613923",
@@ -31079,6 +31046,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119537:5391777244:2026-08-24T06:58:27Z:re_review",
+      "comment_id": "5391777244",
+      "comment_version_key": "5391777244:2026-08-24T06:58:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119537#issuecomment-5391777244",
+      "comment_created_at": "2026-08-24T06:58:27Z",
+      "comment_updated_at": "2026-08-24T06:58:27Z",
+      "comment_body_sha256": "b1de8f930d6f2c91786a8420a9ceab6145d6e13e7878b8a989760eeb46c26fc6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119537,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T06:59:09.046Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/oc-t24-06-ollama-embedding-error-redaction",
+        "head_sha": "9af38357abd4fe61bd34a1bd74baef3de44f3ba2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
