@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T02:07:32.346Z",
+  "updated_at": "2026-08-24T02:11:41.634Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126566:5352673093:2026-08-23T22:28:14Z:clawsweeper_needs_human",
-      "comment_id": "5352673093",
-      "comment_version_key": "5352673093:2026-08-23T22:28:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126566#issuecomment-5352673093",
-      "comment_created_at": "2026-08-20T07:16:33Z",
-      "comment_updated_at": "2026-08-23T22:28:14Z",
-      "comment_body_sha256": "452809991dcede1ef37cc4d6339dabd1085517883823e5993df64fe088ff4f76",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126566,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main substantially rewrote the lifecycle path and deleted the branch’s deferred-owner helper; GitHub’s clean merge state does not prove the old branch design remains the canon... (sha=3e52427ebfd8c44c40fa6e9a78ba7b3e2161382a)",
-      "expected_head_sha": "3e52427ebfd8c44c40fa6e9a78ba7b3e2161382a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T22:34:35.583Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-126311-fallback-lifecycle",
-        "head_sha": "3e52427ebfd8c44c40fa6e9a78ba7b3e2161382a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126623:5354127267:2026-08-23T22:31:06Z:clawsweeper_needs_human",
       "comment_id": "5354127267",
@@ -30601,6 +30568,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:89526:5389916984:2026-08-24T02:10:55Z:re_review",
+      "comment_id": "5389916984",
+      "comment_version_key": "5389916984:2026-08-24T02:10:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/89526#issuecomment-5389916984",
+      "comment_created_at": "2026-08-24T02:10:55Z",
+      "comment_updated_at": "2026-08-24T02:10:55Z",
+      "comment_body_sha256": "8fbcc3899443c5290f542ef3467b6f4b448c3d166255661c142f606d024b2180",
+      "repo": "openclaw/openclaw",
+      "issue_number": 89526,
+      "author": "amittell",
+      "author_id": 1388680,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T02:11:38.676Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/restart-required-reload-diagnostics",
+        "head_sha": "fa1dcbe5a0f080002e93f820175f60933a870b9a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
