@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T08:15:30.741Z",
+  "updated_at": "2026-08-24T08:15:33.355Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5300410472:2026-08-15T03:55:36Z:re_review",
-      "comment_id": "5300410472",
-      "comment_version_key": "5300410472:2026-08-15T03:55:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5300410472",
-      "comment_created_at": "2026-08-15T03:55:36Z",
-      "comment_updated_at": "2026-08-15T03:55:36Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:41:52.163Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5300452585:2026-08-15T04:07:28Z:re_review",
       "comment_id": "5300452585",
@@ -31523,6 +31496,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117318:5150899180:2026-08-24T08:09:52Z:clawsweeper_auto_repair",
+      "comment_id": "5150899180",
+      "comment_version_key": "5150899180:2026-08-24T08:09:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117318#issuecomment-5150899180",
+      "comment_created_at": "2026-08-01T09:49:31Z",
+      "comment_updated_at": "2026-08-24T08:09:52Z",
+      "comment_body_sha256": "447025ba356efaba57ecd2452cfbbca8a573222b10cd93b077f2e116f9f454b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117318,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f6c77cee9dba7846a2b1775bd70b1323731566a1)",
+      "expected_head_sha": "f6c77cee9dba7846a2b1775bd70b1323731566a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T08:15:33.355Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-tui-gateway-terminal-lifetime",
+        "head_sha": "f6c77cee9dba7846a2b1775bd70b1323731566a1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
