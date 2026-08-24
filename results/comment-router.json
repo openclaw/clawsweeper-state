@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T12:17:06.997Z",
+  "updated_at": "2026-08-24T12:17:09.675Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126497:5350894744:2026-08-20T03:14:44Z:re_review",
-      "comment_id": "5350894744",
-      "comment_version_key": "5350894744:2026-08-20T03:14:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126497#issuecomment-5350894744",
-      "comment_created_at": "2026-08-20T03:14:44Z",
-      "comment_updated_at": "2026-08-20T03:14:44Z",
-      "comment_body_sha256": "2e778be6814f95c2f55326fc34e16bb4b7d6b4274379e98e536e7f8b292619f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126497,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T07:07:29.610Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126497:5351016959:2026-08-20T03:31:55Z:re_review",
       "comment_id": "5351016959",
@@ -32223,6 +32196,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T12:17:06.997Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:159:5335223197:2026-08-24T12:12:06Z:clawsweeper_needs_human",
+      "comment_id": "5335223197",
+      "comment_version_key": "5335223197:2026-08-24T12:12:06Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/159#issuecomment-5335223197",
+      "comment_created_at": "2026-08-18T23:01:27Z",
+      "comment_updated_at": "2026-08-24T12:12:06Z",
+      "comment_body_sha256": "fd679d28632f5552e5a0ee60e3ba0343f4a8fdd91baca16e3d8c08bc3b67f762",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 159,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The cited after-fix command names an absent test, so the remaining evidence is mock-server unit coverage; add a redacted production-owner, real... (sha=6fc35a7346538fec822532a0e381e43ec3d933d8)",
+      "expected_head_sha": "6fc35a7346538fec822532a0e381e43ec3d933d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T12:17:09.675Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-repeated-cursor",
+        "head_sha": "6fc35a7346538fec822532a0e381e43ec3d933d8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
