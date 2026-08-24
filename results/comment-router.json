@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T15:05:56.917Z",
+  "updated_at": "2026-08-24T15:09:47.526Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125822:5336243129:2026-08-19T01:07:57Z:re_review",
-      "comment_id": "5336243129",
-      "comment_version_key": "5336243129:2026-08-19T01:07:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125822#issuecomment-5336243129",
-      "comment_created_at": "2026-08-19T01:07:57Z",
-      "comment_updated_at": "2026-08-19T01:07:57Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125822,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T11:33:48.635Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125822:5336329420:2026-08-19T01:21:33Z:re_review",
       "comment_id": "5336329420",
@@ -31493,6 +31466,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsgcrawl:12:5297630847:2026-08-24T15:08:28Z:clawsweeper_needs_human",
+      "comment_id": "5297630847",
+      "comment_version_key": "5297630847:2026-08-24T15:08:28Z",
+      "comment_url": "https://github.com/openclaw/imsgcrawl/pull/12#issuecomment-5297630847",
+      "comment_created_at": "2026-08-14T20:02:49Z",
+      "comment_updated_at": "2026-08-24T15:08:28Z",
+      "comment_body_sha256": "76bb3dba80d5fd4c7562b045d90e7eb729545b6fe7d3eabd3e1504142d2b2f03",
+      "repo": "openclaw/imsgcrawl",
+      "issue_number": 12,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is based on v0.2.0 while main has advanced; GitHub reports it mergeable, but the final merge or refresh should retain the later main-branch changes. (sha=671a582d29b5119ae8fc0ccc357e869bd0a4b9b9)",
+      "expected_head_sha": "671a582d29b5119ae8fc0ccc357e869bd0a4b9b9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T15:09:47.526Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/next-unreleased-0.2.0-31835411683",
+        "head_sha": "671a582d29b5119ae8fc0ccc357e869bd0a4b9b9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
