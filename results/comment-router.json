@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T19:50:54.755Z",
+  "updated_at": "2026-08-24T19:51:11.947Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128742:5396910864:2026-08-24T14:47:26Z:re_review",
-      "comment_id": "5396910864",
-      "comment_version_key": "5396910864:2026-08-24T14:47:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128742#issuecomment-5396910864",
-      "comment_created_at": "2026-08-24T14:47:26Z",
-      "comment_updated_at": "2026-08-24T14:47:26Z",
-      "comment_body_sha256": "2844ebc7a23a2adca1978e7d91f36728e89aa23596081b1a4174c65f59d8afba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128742,
-      "author": "libaojiang",
-      "author_id": 101562714,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T14:48:22.930Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/128719-codex-bind-self-run",
-        "head_sha": "cd07f46a33075d0ba8ef5966a36a37d2e37f3dda",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128748:5396533526:2026-08-24T14:46:16Z:clawsweeper_auto_repair",
       "comment_id": "5396533526",
@@ -31785,6 +31738,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/carapace:76:5392643319:2026-08-24T19:50:29Z:clawsweeper_needs_human",
+      "comment_id": "5392643319",
+      "comment_version_key": "5392643319:2026-08-24T19:50:29Z",
+      "comment_url": "https://github.com/openclaw/carapace/pull/76#issuecomment-5392643319",
+      "comment_created_at": "2026-08-24T08:30:41Z",
+      "comment_updated_at": "2026-08-24T19:50:29Z",
+      "comment_body_sha256": "7484dba14ec69213491cb91925237697ee643e1aca7a9511bfc4fd8f97b22b81",
+      "repo": "openclaw/carapace",
+      "issue_number": 76,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A Vite/Rolldown resolution regression would first appear in the post-merge Pages preview build, leaving the reference-site deployment failed or stale despite green contract checks. (sha=de38aa3f0b7a88bfe3951e4080ac6a1f4ec95a00)",
+      "expected_head_sha": "de38aa3f0b7a88bfe3951e4080ac6a1f4ec95a00",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T19:51:11.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-dd9ce1e772",
+        "head_sha": "de38aa3f0b7a88bfe3951e4080ac6a1f4ec95a00",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
