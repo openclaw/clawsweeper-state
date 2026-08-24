@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T06:38:00.488Z",
+  "updated_at": "2026-08-24T06:39:18.949Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127076:5366516383:2026-08-24T03:49:09Z:clawsweeper_needs_human",
-      "comment_id": "5366516383",
-      "comment_version_key": "5366516383:2026-08-24T03:49:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127076#issuecomment-5366516383",
-      "comment_created_at": "2026-08-21T07:20:03Z",
-      "comment_updated_at": "2026-08-24T03:49:09Z",
-      "comment_body_sha256": "d1a65a951979f27c8c48d3eb4f75b6a1caca128ac548a04317460fa850824d8a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127076,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Prevent remote attachment previews from loading subresources (P1)** - attachmentUrl may be any HTTP(S) URL, but this new iframe loads it as soon as the transcript card renders. A bare sandbox does not prevent th...; Review finding: [P1] Prevent remote attachment previews from loading subresources — ui/src/pages/chat/components/chat-message-attachments.ts:384-392 - [P2] Keep inline previews fo... (sha=3bc310d3f2c913133f9cecbb058216cac68f5ad9)",
-      "expected_head_sha": "3bc310d3f2c913133f9cecbb058216cac68f5ad9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T03:50:01.727Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/chat-attachment-kinds",
-        "head_sha": "3bc310d3f2c913133f9cecbb058216cac68f5ad9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128386:5388801996:2026-08-24T03:43:12Z:clawsweeper_needs_human",
       "comment_id": "5388801996",
@@ -31149,6 +31116,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128572:5391629630:2026-08-24T06:38:32Z:re_review",
+      "comment_id": "5391629630",
+      "comment_version_key": "5391629630:2026-08-24T06:38:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128572#issuecomment-5391629630",
+      "comment_created_at": "2026-08-24T06:38:32Z",
+      "comment_updated_at": "2026-08-24T06:38:32Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128572,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T06:39:16.854Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-sdk-root-loader",
+        "head_sha": "0d31cebce1a2cefc60bbc789057d62c33b221220",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
