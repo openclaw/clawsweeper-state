@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T06:41:11.586Z",
+  "updated_at": "2026-08-24T06:41:44.239Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:88908:5390516392:2026-08-24T03:54:16Z:re_review",
-      "comment_id": "5390516392",
-      "comment_version_key": "5390516392:2026-08-24T03:54:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/88908#issuecomment-5390516392",
-      "comment_created_at": "2026-08-24T03:54:16Z",
-      "comment_updated_at": "2026-08-24T03:54:16Z",
-      "comment_body_sha256": "408fa99cd5efb532273e8859b5a879496101dc2be2930ffcf728d9b066c31318",
-      "repo": "openclaw/openclaw",
-      "issue_number": 88908,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T03:54:59.978Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-shutdown-zombie-exit",
-        "head_sha": "e475ba47651376b00819a4000d76ef2369fccf81",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103113:4930384453:2026-08-24T03:48:31Z:clawsweeper_needs_human",
       "comment_id": "4930384453",
@@ -31136,6 +31089,39 @@
         "kind": "pull_request",
         "branch": "codex/reply-audio-stream-order-owner-20260824",
         "head_sha": "d494f73512b9b88e276a32fb1f9b0251a99dee53",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3505:5372360195:2026-08-24T06:41:04Z:clawsweeper_needs_human",
+      "comment_id": "5372360195",
+      "comment_version_key": "5372360195:2026-08-24T06:41:04Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3505#issuecomment-5372360195",
+      "comment_created_at": "2026-08-21T16:12:00Z",
+      "comment_updated_at": "2026-08-24T06:41:04Z",
+      "comment_body_sha256": "63b0769a8f764cff408ff61cddd5e174319e909729e17ef8f37f952ee37fd256",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3505,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Oxfmt, Oxlint, and Vitest execute in repository validation; the reported local-auth test failure must be rerun on the current merge result before this dependency update lands. (sha=fde2bd707df4ca56b67f4fb4ea576d2f05618c43)",
+      "expected_head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T06:41:44.239Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-3b24459cdd",
+        "head_sha": "fde2bd707df4ca56b67f4fb4ea576d2f05618c43",
         "cluster_id": null,
         "job_path": null
       }
