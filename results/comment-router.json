@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T14:35:18.570Z",
+  "updated_at": "2026-08-24T14:36:56.534Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3514:5390207954:2026-08-24T10:44:40Z:clawsweeper_needs_human",
-      "comment_id": "5390207954",
-      "comment_version_key": "5390207954:2026-08-24T10:44:40Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3514#issuecomment-5390207954",
-      "comment_created_at": "2026-08-24T03:02:14Z",
-      "comment_updated_at": "2026-08-24T10:44:40Z",
-      "comment_body_sha256": "ea1d05ccdee82b4a3553c767764545693a21d97f6fb0162bf1a28727664d33c0",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3514,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The staged indexes cannot serve queries until a later activation deployment; enabling the dependent owner-contact workflow before both backfills complete would leave its staff views u... (sha=4f29d8e3ccc2f5cd86473c887ebdebb2039bbc01)",
-      "expected_head_sha": "4f29d8e3ccc2f5cd86473c887ebdebb2039bbc01",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T10:46:09.135Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/stage-signal-workflow-indexes",
-        "head_sha": "4f29d8e3ccc2f5cd86473c887ebdebb2039bbc01",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3514:5390947635:2026-08-24T05:02:37Z:re_review",
       "comment_id": "5390947635",
@@ -31549,6 +31516,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:104691:5396758101:2026-08-24T14:36:09Z:re_review",
+      "comment_id": "5396758101",
+      "comment_version_key": "5396758101:2026-08-24T14:36:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/104691#issuecomment-5396758101",
+      "comment_created_at": "2026-08-24T14:36:09Z",
+      "comment_updated_at": "2026-08-24T14:36:09Z",
+      "comment_body_sha256": "36a68f19693e639688b72972dfbc0721df51e530371feefd1a7f82b1478b199c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 104691,
+      "author": "jimmypuckett",
+      "author_id": 3220069,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T14:36:54.658Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "spinen/msteams-conversation-migration-safety",
+        "head_sha": "baafdc5ff6e405c637326801f92fd96bc292ecfe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
