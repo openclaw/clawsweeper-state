@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T04:09:48.183Z",
+  "updated_at": "2026-08-24T04:10:26.557Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5260308273:2026-08-12T00:04:19Z:re_review",
-      "comment_id": "5260308273",
-      "comment_version_key": "5260308273:2026-08-12T00:04:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5260308273",
-      "comment_created_at": "2026-08-12T00:04:19Z",
-      "comment_updated_at": "2026-08-12T00:04:19Z",
-      "comment_body_sha256": "c4f9cb6ba3ed499a3a135e053c9830ee2b3c43992dac1b9620ebdbd323e90b23",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T23:20:45.532Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5260380549:2026-08-12T00:14:46Z:re_review",
       "comment_id": "5260380549",
@@ -32387,6 +32360,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:51:5359317404:2026-08-24T04:09:43Z:clawsweeper_needs_human",
+      "comment_id": "5359317404",
+      "comment_version_key": "5359317404:2026-08-24T04:09:43Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/51#issuecomment-5359317404",
+      "comment_created_at": "2026-08-20T17:19:41Z",
+      "comment_updated_at": "2026-08-24T04:09:43Z",
+      "comment_body_sha256": "974829858d8fda03238ffdb35d5fd36c9091144ed25d1051804291e8c93d0664",
+      "repo": "openclaw/libterminal",
+      "issue_number": 51,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Oxfmt 0.64.0 and Oxlint 1.79.0 run in pnpm check, so their changed formatting or rule semantics can alter future contributor and CI outcomes even though the current matrix is green. (sha=fea0499fd619c4094cdc76ed4b3b75b6f7ca86f0)",
+      "expected_head_sha": "fea0499fd619c4094cdc76ed4b3b75b6f7ca86f0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T04:10:26.557Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-6feeff8a91",
+        "head_sha": "fea0499fd619c4094cdc76ed4b3b75b6f7ca86f0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
