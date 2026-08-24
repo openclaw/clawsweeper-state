@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128719",
+  "mode": "autonomous",
+  "run_id": "32730079006",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32730079006",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128719.md",
+  "published_at": "2026-08-24T13:20:44.520Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128719",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128719",
+  "canonical_pr": null,
+  "summary": "#128719 remains the open canonical report. Current main contains the reported active-source guard, but this read-only worker cannot satisfy the required direct ../codex runtime-contract inspection: the checkout is absent and cloning it failed on the read-only filesystem. No fix PR is safe to plan until that prerequisite and dependencies are available.",
+  "actions": [
+    {
+      "target": "#128719",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128719",
+      "candidate_fix": null,
+      "reason": "Canonical issue stays open while its runtime-contract precondition is unavailable."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128719",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#128719",
+      "candidate_fix": null,
+      "reason": "Blocked only on mandatory upstream-contract inspection and unavailable local dependencies; no code or GitHub mutation was attempted."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128719",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#128719",
+      "candidate_fix": null,
+      "reason": "A PR artifact is intentionally non-executable until the mandatory runtime contract can be inspected."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a readable sibling ../codex checkout (or rerun in a writable worker that can clone it) and installed OpenClaw dependencies; then verify the exact app-server/runtime contract before selecting the self-run distinction."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128719",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128719"
 mode: "autonomous"
-run_id: "32729508653"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32729508653"
+run_id: "32730079006"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32730079006"
 head_sha: "ce250708c1ea10228f29fc5740cba95460dcdf74"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-24T13:09:59.250Z"
+published_at: "2026-08-24T13:20:44.520Z"
 canonical: "https://github.com/openclaw/openclaw/issues/128719"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/128719"
 canonical_pr: null
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32729508653](https://github.com/openclaw/clawsweeper/actions/runs/32729508653)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32730079006](https://github.com/openclaw/clawsweeper/actions/runs/32730079006)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/128719
 
 ## Summary
 
-#128719 remains the open canonical bug. Current main contains the reported self-blocking guard, but a fix plan is blocked by the mandatory direct Codex-source check: ../codex is unavailable and this read-only, network-restricted worker cannot clone it.
+#128719 remains the open canonical report. Current main contains the reported active-source guard, but this read-only worker cannot satisfy the required direct ../codex runtime-contract inspection: the checkout is absent and cloning it failed on the read-only filesystem. No fix PR is safe to plan until that prerequisite and dependencies are available.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/128719
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128719 | keep_canonical | planned | canonical | Keep the canonical report open while the required Codex app-server protocol/runtime contract is made available for direct inspection. |
+| #128719 | keep_canonical | planned | canonical | Canonical issue stays open while its runtime-contract precondition is unavailable. |
+| cluster:issue-openclaw-openclaw-128719 | fix_needed | blocked | needs_human | Blocked only on mandatory upstream-contract inspection and unavailable local dependencies; no code or GitHub mutation was attempted. |
+| cluster:issue-openclaw-openclaw-128719 | build_fix_artifact | blocked | needs_human | A PR artifact is intentionally non-executable until the mandatory runtime contract can be inspected. |
 
 ## Needs Human
 
-- Provide a readable sibling ../codex checkout (or an equivalent approved direct source path) so the worker can verify the exact app-server/runtime contract before producing a repair artifact.
+- Provide a readable sibling ../codex checkout (or rerun in a writable worker that can clone it) and installed OpenClaw dependencies; then verify the exact app-server/runtime contract before selecting the self-run distinction.
