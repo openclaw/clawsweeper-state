@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T00:51:31.339Z",
+  "updated_at": "2026-08-24T00:51:51.343Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127530:5375312427:2026-08-23T20:54:58Z:clawsweeper_needs_human",
-      "comment_id": "5375312427",
-      "comment_version_key": "5375312427:2026-08-23T20:54:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127530#issuecomment-5375312427",
-      "comment_created_at": "2026-08-21T20:55:38Z",
-      "comment_updated_at": "2026-08-23T20:54:58Z",
-      "comment_body_sha256": "856141dc0e8acfa90c8d870a966e5f1478dc70a1b3f9fc25b9217ef6cf7614a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127530,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is currently conflicting with main across the reset-boundary owner, session initialization, and Gateway reset service; it must be rebased before its proof and checks can su... (sha=2feea92cb5f5114f5d8984e7b317c4c932d91dcc)",
-      "expected_head_sha": "2feea92cb5f5114f5d8984e7b317c4c932d91dcc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T21:04:03.478Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/explicit-reset-clears-context",
-        "head_sha": "2feea92cb5f5114f5d8984e7b317c4c932d91dcc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127722:5376893105:2026-08-23T20:56:06Z:clawsweeper_needs_human",
       "comment_id": "5376893105",
@@ -30471,6 +30438,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:109646:5389488914:2026-08-24T00:51:13Z:re_review",
+      "comment_id": "5389488914",
+      "comment_version_key": "5389488914:2026-08-24T00:51:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/109646#issuecomment-5389488914",
+      "comment_created_at": "2026-08-24T00:51:13Z",
+      "comment_updated_at": "2026-08-24T00:51:13Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 109646,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T00:51:49.742Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bound-telegram-cache-v2",
+        "head_sha": "33ea31c4d8a2f1b43418027700a8650910445418",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
