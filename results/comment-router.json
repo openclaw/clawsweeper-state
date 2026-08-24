@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T06:01:24.850Z",
+  "updated_at": "2026-08-24T06:02:13.432Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124305:5304840142:2026-08-24T02:53:02Z:clawsweeper_auto_repair",
-      "comment_id": "5304840142",
-      "comment_version_key": "5304840142:2026-08-24T02:53:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124305#issuecomment-5304840142",
-      "comment_created_at": "2026-08-16T00:02:25Z",
-      "comment_updated_at": "2026-08-24T02:53:02Z",
-      "comment_body_sha256": "2ce6bc785d060af0e20e9529ac2815a9e54aba5e6b164618adab349f72df7966",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124305,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3e683e8b43f6553f41b71b5ab40fd1686ab497fb)",
-      "expected_head_sha": "3e683e8b43f6553f41b71b5ab40fd1686ab497fb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T02:54:00.572Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/whatsapp-reply-rate",
-        "head_sha": "3e683e8b43f6553f41b71b5ab40fd1686ab497fb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128197:5385773212:2026-08-24T02:53:23Z:clawsweeper_needs_human",
       "comment_id": "5385773212",
@@ -31279,6 +31246,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120216:5391307953:2026-08-24T06:01:32Z:freeform_assist",
+      "comment_id": "5391307953",
+      "comment_version_key": "5391307953:2026-08-24T06:01:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120216#issuecomment-5391307953",
+      "comment_created_at": "2026-08-24T06:01:32Z",
+      "comment_updated_at": "2026-08-24T06:01:32Z",
+      "comment_body_sha256": "42a87119be48fa1fc68df74b774b9ec0f6154d40b82c59458ff934892b0daf39",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120216,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review. maintainer follow-up now validates all imessage attachment buffers through the existing decodebase64buffer owner, removes the redundant extra decoder, preserves all three contributor regression tests, and corrects the previous pr-body claim about #117321. direct runtime proof confirms malformed input is rejected while padded, unpadded, and whitespace-containing valid base64 remain supported; formatting and fresh structured review passed. exact-head ci is pending for e8159ad05b5055dc871a19ce035d7ebbaf1c8872.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T06:02:10.960Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/imessage-base64-validation",
+        "head_sha": "e8159ad05b5055dc871a19ce035d7ebbaf1c8872",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
