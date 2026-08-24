@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T23:12:13.247Z",
+  "updated_at": "2026-08-24T23:12:48.816Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:88908:5389548660:2026-08-24T01:03:20Z:re_review",
-      "comment_id": "5389548660",
-      "comment_version_key": "5389548660:2026-08-24T01:03:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/88908#issuecomment-5389548660",
-      "comment_created_at": "2026-08-24T01:03:20Z",
-      "comment_updated_at": "2026-08-24T01:03:20Z",
-      "comment_body_sha256": "b759f3fc75bfbe6f60141d7ed205a2cf1e9332028c73b1d54a3e19bf1d43234d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 88908,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T18:32:09.843Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:88908:5390516392:2026-08-24T03:54:16Z:re_review",
       "comment_id": "5390516392",
@@ -31635,6 +31608,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128460:5390119608:2026-08-24T23:09:21Z:clawsweeper_needs_human",
+      "comment_id": "5390119608",
+      "comment_version_key": "5390119608:2026-08-24T23:09:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128460#issuecomment-5390119608",
+      "comment_created_at": "2026-08-24T02:46:13Z",
+      "comment_updated_at": "2026-08-24T23:09:21Z",
+      "comment_body_sha256": "8988289a971142fd4053e9f3e598cb7e4818c2226f6e32e92338246671f7778a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128460,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The critical artifact handoff depends on hosted macOS capture and GitHub Actions artifact extraction, neither of which is demonstrated by the exact-head evidence yet. (sha=2772a645616a598ee4a893bdade5e3a08f651328)",
+      "expected_head_sha": "2772a645616a598ee4a893bdade5e3a08f651328",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T23:12:48.816Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/ios-screenshot-shards",
+        "head_sha": "2772a645616a598ee4a893bdade5e3a08f651328",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
