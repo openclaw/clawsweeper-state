@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T05:06:39.969Z",
+  "updated_at": "2026-08-24T05:07:06.248Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126082:5389732070:2026-08-24T01:37:55Z:re_review",
-      "comment_id": "5389732070",
-      "comment_version_key": "5389732070:2026-08-24T01:37:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126082#issuecomment-5389732070",
-      "comment_created_at": "2026-08-24T01:37:55Z",
-      "comment_updated_at": "2026-08-24T01:37:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126082,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T01:38:39.031Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-autonomous-task-lifecycle",
-        "head_sha": "a49853673d46884954f9aea0146769bfe2a811a3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124305:5304840142:2026-08-24T01:34:22Z:clawsweeper_auto_repair",
       "comment_id": "5304840142",
@@ -31620,6 +31573,39 @@
         "kind": "pull_request",
         "branch": "codex/autoqa-agent-reasoning-end-20260823",
         "head_sha": "f7f1ef6ae342152ebde28e3f77a2b594f07c5d04",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3494:5357432561:2026-08-24T05:06:14Z:clawsweeper_needs_human",
+      "comment_id": "5357432561",
+      "comment_version_key": "5357432561:2026-08-24T05:06:14Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3494#issuecomment-5357432561",
+      "comment_created_at": "2026-08-20T14:40:18Z",
+      "comment_updated_at": "2026-08-24T05:06:14Z",
+      "comment_body_sha256": "b7c47cc2bb754718eb7e4f18a26aa2174da09a7dfab2e2b0ff92e4d4ea6a0ca0",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3494,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: screenshots demonstrate the owner and staff UI, but ownership and retry final-effect evidence is only from mock...; Review finding: [P2] Preserve one response capability across retries — convex/emailsNode.ts:318 - [medium] Retry invalidates the earlier owner capability — convex/emailsNode.ts:318 (sha=ecd947a765e5959e83b8b9c012a10b1577ae6bf6)",
+      "expected_head_sha": "ecd947a765e5959e83b8b9c012a10b1577ae6bf6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T05:07:06.248Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-owner-explanations",
+        "head_sha": "ecd947a765e5959e83b8b9c012a10b1577ae6bf6",
         "cluster_id": null,
         "job_path": null
       }
