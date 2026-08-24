@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T05:06:15.449Z",
+  "updated_at": "2026-08-24T05:06:18.218Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:88908:4589575955:2026-08-24T01:33:42Z:clawsweeper_needs_human",
-      "comment_id": "4589575955",
-      "comment_version_key": "4589575955:2026-08-24T01:33:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/88908#issuecomment-4589575955",
-      "comment_created_at": "2026-06-01T04:31:56Z",
-      "comment_updated_at": "2026-08-24T01:33:42Z",
-      "comment_body_sha256": "797b5ac21b64608e07f8e5a8f2bb894ff23877905dbffd836d963780be881932",
-      "repo": "openclaw/openclaw",
-      "issue_number": 88908,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive strict=1 query changes /healthz to 503 during drain for any caller that opts in; maintainers must explicitly accept that narrow compatibility contract before merge. (sha=0ad914aac56486f8ed2721289cc80f3a6f54ed7d)",
-      "expected_head_sha": "0ad914aac56486f8ed2721289cc80f3a6f54ed7d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T01:35:07.001Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-shutdown-zombie-exit",
-        "head_sha": "0ad914aac56486f8ed2721289cc80f3a6f54ed7d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:88908:4911389155:2026-07-08T04:31:28Z:re_review",
       "comment_id": "4911389155",
@@ -31533,6 +31500,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:93952:5390964137:2026-08-24T05:05:37Z:re_review",
+      "comment_id": "5390964137",
+      "comment_version_key": "5390964137:2026-08-24T05:05:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/93952#issuecomment-5390964137",
+      "comment_created_at": "2026-08-24T05:05:37Z",
+      "comment_updated_at": "2026-08-24T05:05:37Z",
+      "comment_body_sha256": "4925011e4db19888f114f3833087f28d1f19ded6013d8d559a2016735d17809d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 93952,
+      "author": "amittell",
+      "author_id": 1388680,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T05:06:16.543Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auth-refresh-deadline-guard",
+        "head_sha": "c953b0afe382b53c3482cb396176d8f14e82fcc5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
