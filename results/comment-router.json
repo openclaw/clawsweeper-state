@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T07:42:49.307Z",
+  "updated_at": "2026-08-24T07:44:35.659Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128066:5383386936:2026-08-24T04:23:53Z:clawsweeper_needs_human",
-      "comment_id": "5383386936",
-      "comment_version_key": "5383386936:2026-08-24T04:23:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128066#issuecomment-5383386936",
-      "comment_created_at": "2026-08-23T00:32:12Z",
-      "comment_updated_at": "2026-08-24T04:23:53Z",
-      "comment_body_sha256": "c6ba192c771c322301c52caabce9192c28e6aa1b8490b5b05c5afe055aeb78d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128066,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds five production lines; this is justified because no existing shared helper receives raw Mistral chunks, and an inline owner-boundary guard is narrower than adding a n... (sha=6c2f421d121a5264f786d221876ade7c97bb4835)",
-      "expected_head_sha": "6c2f421d121a5264f786d221876ade7c97bb4835",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:31:59.911Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mistral-stream-response-model",
-        "head_sha": "6c2f421d121a5264f786d221876ade7c97bb4835",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128463:5390244691:2026-08-24T04:26:31Z:clawsweeper_needs_human",
       "comment_id": "5390244691",
@@ -31114,6 +31081,53 @@
         "kind": "pull_request",
         "branch": "fix/topic-edit-threadname-alias",
         "head_sha": "a1423b3807a8400a1b0c73285863017dec630892",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128512:5391416249:2026-08-24T07:43:51Z:re_review",
+      "comment_id": "5391416249",
+      "comment_version_key": "5391416249:2026-08-24T07:43:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128512#issuecomment-5391416249",
+      "comment_created_at": "2026-08-24T06:15:22Z",
+      "comment_updated_at": "2026-08-24T07:43:51Z",
+      "comment_body_sha256": "42509eecca7c8912bc011117f71ff87b37037aa83748713ef48dcce4defd9f11",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128512,
+      "author": "Leon-SK668",
+      "author_id": 17695126,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T07:44:34.016Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/subagent-failure-notice-20260824",
+        "head_sha": "71176410024c6f1f4ac74430552baf3fb33c81ff",
         "cluster_id": null,
         "job_path": null
       },
