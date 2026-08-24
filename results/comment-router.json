@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-24T16:47:15.021Z",
+  "updated_at": "2026-08-24T16:45:49.551Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128460:5395082860:2026-08-24T12:18:53Z:re_review",
+      "comment_id": "5395082860",
+      "comment_version_key": "5395082860:2026-08-24T12:18:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128460#issuecomment-5395082860",
+      "comment_created_at": "2026-08-24T12:18:53Z",
+      "comment_updated_at": "2026-08-24T12:18:53Z",
+      "comment_body_sha256": "d58a8567d01123ee6f8cfcc3fd6db41043880f97cb4d688498edf79a232e9e6b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128460,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T12:34:25.885Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/ios-screenshot-shards",
+        "head_sha": "d3792535c6b6c84554819a848752be5a5f4d739f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128644:5393455338:2026-08-24T12:31:56Z:clawsweeper_needs_human",
       "comment_id": "5393455338",
@@ -31835,39 +31882,6 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/github-actions-b632086d0b",
         "head_sha": "4fabe4262f2e9a7a592caf2407659847e1ab1e02",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112819:5075542954:2026-08-24T16:45:59Z:clawsweeper_needs_human",
-      "comment_id": "5075542954",
-      "comment_version_key": "5075542954:2026-08-24T16:45:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112819#issuecomment-5075542954",
-      "comment_created_at": "2026-07-24T23:29:05Z",
-      "comment_updated_at": "2026-08-24T16:45:59Z",
-      "comment_body_sha256": "d3adb12ccd689ac17b201780e475d758f57abcdc1b5921a9043bdfac83822729",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112819,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The claimed CLI round-trip proof is for older head 62bc1c6f, not current head 3434491, and no current-head artifact shows the after-fi... (sha=343449124e38979df5d34e854fb29bb4e59eaea6)",
-      "expected_head_sha": "343449124e38979df5d34e854fb29bb4e59eaea6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T16:47:15.021Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claw-export-mcp-timeout",
-        "head_sha": "343449124e38979df5d34e854fb29bb4e59eaea6",
         "cluster_id": null,
         "job_path": null
       }
