@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128860",
+  "mode": "autonomous",
+  "run_id": "32776824511",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32776824511",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128860.md",
+  "published_at": "2026-08-24T21:27:39.382Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128860",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128860",
+  "canonical_pr": null,
+  "summary": "Current main (5775cd3dfaf406e0df4b928117050caf754f85cc) retains the dispatcher-to-claim persistence path: dispatcher supplies the fallback owner and claim writes it into an unassigned card.agentId. A narrow plugin-local repair is planned, but this read-only checkout cannot write the branch or install the missing test dependency; the mandatory sibling ../codex checkout is also absent.",
+  "actions": [
+    {
+      "target": "#128860",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128860",
+      "candidate_fix": null,
+      "reason": "Implementation is narrowly defined but blocked only by the worker environment: no write access, missing local test dependency, and unavailable mandatory ../codex source inspection."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128860",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128860",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR after restoring a writable checkout, the Codex sibling checkout, and local dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
