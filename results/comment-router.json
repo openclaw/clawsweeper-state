@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T06:42:50.109Z",
+  "updated_at": "2026-08-24T06:46:31.326Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89526:5390522921:2026-08-24T03:55:28Z:re_review",
-      "comment_id": "5390522921",
-      "comment_version_key": "5390522921:2026-08-24T03:55:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89526#issuecomment-5390522921",
-      "comment_created_at": "2026-08-24T03:55:28Z",
-      "comment_updated_at": "2026-08-24T03:55:28Z",
-      "comment_body_sha256": "bbf88ed409da354ea233b7564164b45fb34a6e1f9fa987dc5623f162f2199599",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89526,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T03:55:38.673Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/restart-required-reload-diagnostics",
-        "head_sha": "b80a8b010fda636f915b75c947ddb19f050961d9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89526:4604300916:2026-08-24T03:54:21Z:clawsweeper_auto_repair",
       "comment_id": "4604300916",
@@ -31137,6 +31090,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T06:42:50.109Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3135:5377914134:2026-08-24T06:45:36Z:clawsweeper_auto_repair",
+      "comment_id": "5377914134",
+      "comment_version_key": "5377914134:2026-08-24T06:45:36Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3135#issuecomment-5377914134",
+      "comment_created_at": "2026-08-22T04:39:02Z",
+      "comment_updated_at": "2026-08-24T06:45:36Z",
+      "comment_body_sha256": "83de97f7054a0cc78a5373d9f92be22ad9aae488d373e052c7f6714a806f001f",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=16a2737a32435b8c7480054cda6feebda9e6aed1)",
+      "expected_head_sha": "16a2737a32435b8c7480054cda6feebda9e6aed1",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-24T06:46:31.326Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/grok-real-token-usage",
+        "head_sha": "16a2737a32435b8c7480054cda6feebda9e6aed1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
