@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T13:26:23.349Z",
+  "updated_at": "2026-08-24T13:26:37.622Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128459:5393240645:2026-08-24T09:26:58Z:re_review",
-      "comment_id": "5393240645",
-      "comment_version_key": "5393240645:2026-08-24T09:26:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128459#issuecomment-5393240645",
-      "comment_created_at": "2026-08-24T09:26:21Z",
-      "comment_updated_at": "2026-08-24T09:26:58Z",
-      "comment_body_sha256": "e76d3d5ee3c7106c4135e03d3d20349c0968a50591dc693b92f00f76281f2e47",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128459,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T09:27:11.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/frv-telegram-test-shards",
-        "head_sha": "700e10834afac7b77d5216ab4cd90220e08b4123",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-24T09:25:45Z:clawsweeper_needs_human",
       "comment_id": "5365906478",
@@ -31203,6 +31156,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T13:26:23.349Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128734:5395851706:2026-08-24T13:25:32Z:clawsweeper_needs_human",
+      "comment_id": "5395851706",
+      "comment_version_key": "5395851706:2026-08-24T13:25:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128734#issuecomment-5395851706",
+      "comment_created_at": "2026-08-24T13:25:32Z",
+      "comment_updated_at": "2026-08-24T13:25:32Z",
+      "comment_body_sha256": "709f8dea5e32e00f44c7f72a3abb09ce0ae808e5d43c10c5aa0b54caf417a5fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128734,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head Android build, unit-test, and ktlint checks are still queued or running; merge only after they complete green. (sha=bb45567a33ecd6f1ef2798162597c5825515e0d3)",
+      "expected_head_sha": "bb45567a33ecd6f1ef2798162597c5825515e0d3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T13:26:37.622Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/android-motion-null",
+        "head_sha": "bb45567a33ecd6f1ef2798162597c5825515e0d3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
