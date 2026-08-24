@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T04:44:51.064Z",
+  "updated_at": "2026-08-24T04:44:51.997Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128374:5388591968:2026-08-24T00:07:02Z:clawsweeper_needs_human",
-      "comment_id": "5388591968",
-      "comment_version_key": "5388591968:2026-08-24T00:07:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128374#issuecomment-5388591968",
-      "comment_created_at": "2026-08-23T21:36:00Z",
-      "comment_updated_at": "2026-08-24T00:07:02Z",
-      "comment_body_sha256": "5381deff2870123ca11a55c57edc663388990be17cb2e1d6ce6e972ee386e710",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128374,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a clean but behind branch, while this review environment could not materialize the supplied current-main revision; rebase and refresh the exact-head lifecycle checks be... (sha=6e5cc30effc745f9d1019f17d34d0b4bb5781c1f)",
-      "expected_head_sha": "6e5cc30effc745f9d1019f17d34d0b4bb5781c1f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T00:09:09.625Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-cron-drain-deadline-20260823",
-        "head_sha": "6e5cc30effc745f9d1019f17d34d0b4bb5781c1f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128403:5389057870:2026-08-24T00:08:00Z:clawsweeper_auto_repair",
       "comment_id": "5389057870",
@@ -32407,6 +32374,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128420:5390840391:2026-08-24T04:44:10Z:freeform_assist",
+      "comment_id": "5390840391",
+      "comment_version_key": "5390840391:2026-08-24T04:44:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128420#issuecomment-5390840391",
+      "comment_created_at": "2026-08-24T04:44:10Z",
+      "comment_updated_at": "2026-08-24T04:44:10Z",
+      "comment_body_sha256": "89aeb7dafbd74fc5f6137633c554c6940cc2afdc225651bf3bb9c5d3aa64114b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128420,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "good catch, and it was right — the loopback gate has been removed rather than patched. verified the counterexample before acting: `ssh -n -l 18789:127.0.0.1:18789` is the documented default in seven docs pages, and `docs/platforms/mac/remote.md` says so explicitly (\"the gateway sees the node's ip as `127.0.0.1` because the tunnel is loopback\"). server-side peer ip is fooled the same way, so a browser genuinely cannot distinguish a local gateway from a tunneled one. rather than add provenance to the protocol, the fix uses a signal the native macos app already publishes: `appstate.connectionmode` (`local`/`remote`) is serialised as `kind` on each entry of `window.__openclaw_native_gateways__` by `dashboardgatewaycatalog`, so a tunneled gateway is `\"remote\"` despite its loopback url. the gate reads that through the existing `nativegatewayscapability` seam. consequence, stated plainly: the editor handoff is now native-app-only. a plain browser never offers it, including at genuine `localhost` on linux and windows. that is a deliberate owner decision — no authoritative locality signal exists in a browser, and a dead menu item is worse than none. test coverage now includes the tunnel case (native `kind: \"remote\"`), and the guards are verified to fail when the predicate is forced back to \"always local\". pr body and screenshots have been rewritten; the earlier loopback-era screenshots no longer describe shipped behavior.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T04:44:50.168Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/narrow-case-computer-dependency-638630",
+        "head_sha": "047d875c69fe48b1d041bc1f246712d7e8e7f896",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128490:5390837311:2026-08-24T04:43:41Z:clawsweeper_needs_human",
