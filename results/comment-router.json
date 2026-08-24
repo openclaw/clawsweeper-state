@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T19:36:45.507Z",
+  "updated_at": "2026-08-24T19:37:58.039Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113816:5365336829:2026-08-21T04:50:22Z:re_review",
-      "comment_id": "5365336829",
-      "comment_version_key": "5365336829:2026-08-21T04:50:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113816#issuecomment-5365336829",
-      "comment_created_at": "2026-08-21T04:50:22Z",
-      "comment_updated_at": "2026-08-21T04:50:22Z",
-      "comment_body_sha256": "2c34150c7cbfcee80f5fbe488e1a0391b266dc985ca2540893785102ee39c510",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113816,
-      "author": "1052326311",
-      "author_id": 65798732,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T13:59:24.864Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3505:5372360195:2026-08-24T13:50:29Z:clawsweeper_needs_human",
       "comment_id": "5372360195",
@@ -32565,6 +32538,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128838:5400319010:2026-08-24T19:35:10Z:clawsweeper_needs_human",
+      "comment_id": "5400319010",
+      "comment_version_key": "5400319010:2026-08-24T19:35:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128838#issuecomment-5400319010",
+      "comment_created_at": "2026-08-24T19:35:10Z",
+      "comment_updated_at": "2026-08-24T19:35:10Z",
+      "comment_body_sha256": "631696b5fd202a0db1b46fa1b5f29c075b55fc73b28c1341767781ba5e2b873c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128838,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds net 10 production lines; the post-resolution clamp is necessary to preserve the shared resolver’s configured/discovered-cap handling while enforcing an effective sele... (sha=0d64d8aebe536d42e74cf1f040d3dd9f67167a00)",
+      "expected_head_sha": "0d64d8aebe536d42e74cf1f040d3dd9f67167a00",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T19:37:58.039Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-run-selected-context-window",
+        "head_sha": "0d64d8aebe536d42e74cf1f040d3dd9f67167a00",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
