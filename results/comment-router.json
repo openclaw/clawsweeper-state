@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T01:34:45.150Z",
+  "updated_at": "2026-08-24T01:34:46.891Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128356:5388648346:2026-08-23T21:49:02Z:re_review",
-      "comment_id": "5388648346",
-      "comment_version_key": "5388648346:2026-08-23T21:49:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128356#issuecomment-5388648346",
-      "comment_created_at": "2026-08-23T21:49:02Z",
-      "comment_updated_at": "2026-08-23T21:49:02Z",
-      "comment_body_sha256": "6d048783c852434bf728dcdbde955b7b80521dbfbe666e792e931faddc246a3f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128356,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T21:55:44.352Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/unified-session-context-search",
-        "head_sha": "b490bd9b537fb2a856f250fae75f251744f04bc4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:83254:4472384133:2026-08-23T21:43:57Z:clawsweeper_needs_human",
       "comment_id": "4472384133",
@@ -30609,6 +30562,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T01:34:45.150Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1496:5389710546:2026-08-24T01:34:03Z:clawsweeper_needs_human",
+      "comment_id": "5389710546",
+      "comment_version_key": "5389710546:2026-08-24T01:34:03Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1496#issuecomment-5389710546",
+      "comment_created_at": "2026-08-24T01:34:03Z",
+      "comment_updated_at": "2026-08-24T01:34:03Z",
+      "comment_body_sha256": "56e87b249ae44b199ec8e09d8b9f35bac5eaa4f52ce299b943150ec44f1f8a0d",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1496,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The manual clear path now intentionally refuses to proceed until the coordinator environment secret is removed; operators using that path must follow the updated order. (sha=4c3c386fdccd5375ae0dac4f775feecf4fa9b983)",
+      "expected_head_sha": "4c3c386fdccd5375ae0dac4f775feecf4fa9b983",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T01:34:46.891Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/coordinator-secret-rollout",
+        "head_sha": "4c3c386fdccd5375ae0dac4f775feecf4fa9b983",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
