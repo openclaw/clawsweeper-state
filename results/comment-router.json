@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T16:53:46.939Z",
+  "updated_at": "2026-08-24T16:56:33.871Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128717:5395327203:2026-08-24T12:41:04Z:clawsweeper_needs_human",
-      "comment_id": "5395327203",
-      "comment_version_key": "5395327203:2026-08-24T12:41:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128717#issuecomment-5395327203",
-      "comment_created_at": "2026-08-24T12:41:04Z",
-      "comment_updated_at": "2026-08-24T12:41:04Z",
-      "comment_body_sha256": "16005c25f6003dbf78149d803933515daeb427286e143cfb7d95d13aba6ad902",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128717,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed because the review found no concrete defect; this PR only needs ordinary exact-head CI and merge handling. (sha=b8bf6341c8464d2ca4499efc3c27311bb230cf4d)",
-      "expected_head_sha": "b8bf6341c8464d2ca4499efc3c27311bb230cf4d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T12:44:06.249Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cleanup2-firecrawl-owner-20260824",
-        "head_sha": "b8bf6341c8464d2ca4499efc3c27311bb230cf4d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117285:5395353831:2026-08-24T12:43:33Z:re_review",
       "comment_id": "5395353831",
@@ -31765,6 +31732,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T16:53:46.939Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3514:5390207954:2026-08-24T16:52:15Z:clawsweeper_needs_human",
+      "comment_id": "5390207954",
+      "comment_version_key": "5390207954:2026-08-24T16:52:15Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3514#issuecomment-5390207954",
+      "comment_created_at": "2026-08-24T03:02:14Z",
+      "comment_updated_at": "2026-08-24T16:52:15Z",
+      "comment_body_sha256": "62052155c511b468871e751684369e391782abc34c5f71f431ec0b830a962a5b",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3514,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The dependent owner-contact workflow must not deploy writers or staff queries until both staged indexes finish backfilling, or its staff views will be unavailable. (sha=4f29d8e3ccc2f5cd86473c887ebdebb2039bbc01)",
+      "expected_head_sha": "4f29d8e3ccc2f5cd86473c887ebdebb2039bbc01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T16:56:33.871Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/stage-signal-workflow-indexes",
+        "head_sha": "4f29d8e3ccc2f5cd86473c887ebdebb2039bbc01",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
