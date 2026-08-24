@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T07:20:25.833Z",
+  "updated_at": "2026-08-24T07:20:29.265Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112375:5076848606:2026-08-24T04:01:59Z:clawsweeper_needs_human",
-      "comment_id": "5076848606",
-      "comment_version_key": "5076848606:2026-08-24T04:01:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5076848606",
-      "comment_created_at": "2026-07-25T04:07:05Z",
-      "comment_updated_at": "2026-08-24T04:01:59Z",
-      "comment_body_sha256": "345730b2f526f327848b5640146190e055c51c82c5c0c20349d2647b6b9a8d0a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The old terminal harness does not demonstrate final-head persisted Gateway scheduling, run history, and no-agent/model behavior; add r...; Review finding: [P1] Honor durable exec approvals for prechecks — src/cron/job-precheck.ts:400-433 - [medium] Prechecks cannot use durable exec approvals — src/cron/job-precheck.t... (sha=4532eecd5a7410b4fd8c7aaa871733ead5686543)",
-      "expected_head_sha": "4532eecd5a7410b4fd8c7aaa871733ead5686543",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:24:16.229Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bartok9/cron-precheck-gate",
-        "head_sha": "4532eecd5a7410b4fd8c7aaa871733ead5686543",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118161:5160088917:2026-08-24T04:18:58Z:clawsweeper_needs_human",
       "comment_id": "5160088917",
@@ -31065,6 +31032,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T07:20:25.833Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128581:5391952423:2026-08-24T07:19:35Z:clawsweeper_needs_human",
+      "comment_id": "5391952423",
+      "comment_version_key": "5391952423:2026-08-24T07:19:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128581#issuecomment-5391952423",
+      "comment_created_at": "2026-08-24T07:19:35Z",
+      "comment_updated_at": "2026-08-24T07:19:35Z",
+      "comment_body_sha256": "b7f7d361870cdb49ffdb1d7d0284c7eb5f4f44f0f786bf2d4aee65e0317c095a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128581,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The unchanged session-key-only fallback leaves the linked issue's prior isolated-session cron scenario unresolved; the PR's closing syntax could retire that remaining work without an... (sha=70c506c62485180952cee48328f6cd67ecdff0d3)",
+      "expected_head_sha": "70c506c62485180952cee48328f6cd67ecdff0d3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T07:20:29.265Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-43292",
+        "head_sha": "70c506c62485180952cee48328f6cd67ecdff0d3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
