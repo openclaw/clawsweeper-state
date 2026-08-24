@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-24T13:08:33.370Z",
+  "updated_at": "2026-08-24T13:08:29.449Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128552:5392492079:2026-08-24T08:17:13Z:re_review",
+      "comment_id": "5392492079",
+      "comment_version_key": "5392492079:2026-08-24T08:17:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128552#issuecomment-5392492079",
+      "comment_created_at": "2026-08-24T08:17:13Z",
+      "comment_updated_at": "2026-08-24T08:17:13Z",
+      "comment_body_sha256": "ae6f44024e192d59fd3ff4616ff61f92233c9db3636ea56ba65963bcd24ef8f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128552,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T08:32:00.022Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/disk-space-diagnostics",
+        "head_sha": "1fc921a40c85cabd9aab278708e43eb767a92e3f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:79185:4402794116:2026-08-24T07:58:59Z:clawsweeper_auto_repair",
       "comment_id": "4402794116",
@@ -31649,39 +31696,6 @@
         "kind": "pull_request",
         "branch": "fix/cli-session-format-failover-128698",
         "head_sha": "e95d791252caa91ec51309d54b02abc81c21d7c6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127224:5372040610:2026-08-24T13:07:14Z:clawsweeper_needs_human",
-      "comment_id": "5372040610",
-      "comment_version_key": "5372040610:2026-08-24T13:07:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127224#issuecomment-5372040610",
-      "comment_created_at": "2026-08-21T15:41:41Z",
-      "comment_updated_at": "2026-08-24T13:07:14Z",
-      "comment_body_sha256": "e7e7ac5377c8df0d826a7d41568d6c16d9f2afaf6d00f954eb4b041ca0c9c42c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127224,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: available proof does not show that cancellation or disposal during the awaited authority check prevent...; Review finding: [P1] Revalidate cancellation after the awaited authority check — src/system-agent/chat-wizard-host.ts:496-500 - [P2] Correct the documented QR expiry maximum — doc... (sha=6e6e72846acbba523426738981824a3151d85280)",
-      "expected_head_sha": "6e6e72846acbba523426738981824a3151d85280",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T13:08:33.370Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-contract-current-main",
-        "head_sha": "6e6e72846acbba523426738981824a3151d85280",
         "cluster_id": null,
         "job_path": null
       }
