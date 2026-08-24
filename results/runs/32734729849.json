@@ -1,0 +1,71 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128743",
+  "mode": "autonomous",
+  "run_id": "32734729849",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32734729849",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128743.md",
+  "published_at": "2026-08-24T15:57:02.204Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128743",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128743",
+  "canonical_pr": null,
+  "summary": "Current main contains the reported root-composition schema defect. A narrow fix plan is ready, but this read-only checkout cannot be patched or validated and required sibling Codex source (`../codex`) is absent.",
+  "actions": [
+    {
+      "target": "#128743",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128743",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor checkout with sibling Codex source available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128743",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#128743",
+      "candidate_fix": null,
+      "reason": "Prepared for a writable ClawSweeper executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): validation command runtime budget exhausted",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
