@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T03:36:14.878Z",
+  "updated_at": "2026-08-24T03:36:26.294Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5321577576:2026-08-17T23:45:57Z:re_review",
-      "comment_id": "5321577576",
-      "comment_version_key": "5321577576:2026-08-17T23:45:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5321577576",
-      "comment_created_at": "2026-08-17T23:45:57Z",
-      "comment_updated_at": "2026-08-17T23:45:57Z",
-      "comment_body_sha256": "e6fbfe4aaa0be3c63bd6d3ff9d302735cd99d2bd377a10672c9019fba18daa44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T23:20:45.531Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5321613744:2026-08-17T23:50:40Z:re_review",
       "comment_id": "5321613744",
@@ -31391,6 +31364,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128093:5384046490:2026-08-24T03:35:18Z:clawsweeper_needs_human",
+      "comment_id": "5384046490",
+      "comment_version_key": "5384046490:2026-08-24T03:35:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128093#issuecomment-5384046490",
+      "comment_created_at": "2026-08-23T03:41:07Z",
+      "comment_updated_at": "2026-08-24T03:35:18Z",
+      "comment_body_sha256": "f37b1ab4e111a83af0bd6214e245309d1a5e0fb3f6a58aba9b23f48bf0abc575",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128093,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging makes context.isNew a supported Plugin SDK compatibility commitment for channel plugins, even though it is intentionally narrower than exposing the queue result. (sha=2a882df8c7d0511be0c7d397feb88a5dfb287b80)",
+      "expected_head_sha": "2a882df8c7d0511be0c7d397feb88a5dfb287b80",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T03:36:26.294Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/signal-pending-redelivery",
+        "head_sha": "2a882df8c7d0511be0c7d397feb88a5dfb287b80",
+        "cluster_id": "automerge-openclaw-openclaw-128093",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128093.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
