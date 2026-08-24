@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T01:09:38.534Z",
+  "updated_at": "2026-08-24T01:09:46.961Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-23T21:18:56Z:clawsweeper_auto_repair",
-      "comment_id": "5357688049",
-      "comment_version_key": "5357688049:2026-08-23T21:18:56Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5357688049",
-      "comment_created_at": "2026-08-20T15:00:20Z",
-      "comment_updated_at": "2026-08-23T21:18:56Z",
-      "comment_body_sha256": "2b78a524fecfe5948d5b424537650e28fc51465eaf9f7d03c33196e26fa8a42a",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=7c0888d92c5a6b5af390bd91e316f922a17adb1c)",
-      "expected_head_sha": "7c0888d92c5a6b5af390bd91e316f922a17adb1c",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-23T21:19:40.283Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/meaningful-traffic-signals",
-        "head_sha": "7c0888d92c5a6b5af390bd91e316f922a17adb1c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126082:5335760239:2026-08-23T21:15:06Z:clawsweeper_auto_repair",
       "comment_id": "5335760239",
@@ -30467,6 +30434,53 @@
       "status": "skipped",
       "processed_at": "2026-08-24T01:09:38.534Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128093:5384046490:2026-08-24T01:08:29Z:clawsweeper_needs_human",
+      "comment_id": "5384046490",
+      "comment_version_key": "5384046490:2026-08-24T01:08:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128093#issuecomment-5384046490",
+      "comment_created_at": "2026-08-23T03:41:07Z",
+      "comment_updated_at": "2026-08-24T01:08:29Z",
+      "comment_body_sha256": "39922591fbd2a3781847bd5c444f79d527f2729a7b26aabbb7267828ad928055",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128093,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive isNew field becomes a stable public Plugin SDK semantic because external channel plugins can call createChannelIngressMonitor through channel-outbound. (sha=56408dec0a891e640a6e7da663f0178abd0a9cb6)",
+      "expected_head_sha": "56408dec0a891e640a6e7da663f0178abd0a9cb6",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T01:09:46.961Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/signal-pending-redelivery",
+        "head_sha": "56408dec0a891e640a6e7da663f0178abd0a9cb6",
+        "cluster_id": "automerge-openclaw-openclaw-128093",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128093.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
