@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-08-24T21:16:03.233Z",
+  "updated_at": "2026-08-24T21:16:08.183Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128779:5397902376:2026-08-24T16:03:57Z:re_review",
-      "comment_id": "5397902376",
-      "comment_version_key": "5397902376:2026-08-24T16:03:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/128779#issuecomment-5397902376",
-      "comment_created_at": "2026-08-24T16:03:57Z",
-      "comment_updated_at": "2026-08-24T16:03:57Z",
-      "comment_body_sha256": "870a3b31b317f7405c090e8c6c234e3e1e432c71c6b37ecf6511229dece91ab8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128779,
-      "author": "damemi",
-      "author_id": 1839101,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T16:04:44.758Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128741:5396112814:2026-08-24T16:03:51Z:clawsweeper_needs_human",
       "comment_id": "5396112814",
@@ -32121,6 +32076,39 @@
         "kind": "pull_request",
         "branch": "openclaw/root-cause-analysis-for-thread-error",
         "head_sha": "dd27e123fe689633bf29cccb9009763a98e70152",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-08-24T21:14:53Z:clawsweeper_needs_human",
+      "comment_id": "5075679870",
+      "comment_version_key": "5075679870:2026-08-24T21:14:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112811#issuecomment-5075679870",
+      "comment_created_at": "2026-07-24T23:58:02Z",
+      "comment_updated_at": "2026-08-24T21:14:53Z",
+      "comment_body_sha256": "99d931f358135ea0efbc7ed0ff87a49f1948156289f5688bd3f55063c3c85556",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112811,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied live Teams evidence predates the final sender-binding repair; add a redacted final-head two-account transcript, recording... (sha=591f90bf4ca8dc126ec386b62d1b25ec9db43eca)",
+      "expected_head_sha": "591f90bf4ca8dc126ec386b62d1b25ec9db43eca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T21:16:08.183Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/msteams-multi-account-replacement-20260722",
+        "head_sha": "591f90bf4ca8dc126ec386b62d1b25ec9db43eca",
         "cluster_id": null,
         "job_path": null
       }
