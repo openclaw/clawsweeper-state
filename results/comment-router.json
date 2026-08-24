@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T13:57:04.868Z",
+  "updated_at": "2026-08-24T13:57:09.015Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128580:5391916504:2026-08-24T10:16:11Z:clawsweeper_needs_human",
-      "comment_id": "5391916504",
-      "comment_version_key": "5391916504:2026-08-24T10:16:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128580#issuecomment-5391916504",
-      "comment_created_at": "2026-08-24T07:15:23Z",
-      "comment_updated_at": "2026-08-24T10:16:11Z",
-      "comment_body_sha256": "e1add4f549751cd9833ab47af90ec5fca18964920ccb5bc1bdf69339d483ae5c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128580,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The production Telegram adapter is exercised, but its final transport is a recording loopback; add redacted ephemeral-gateway or real-channel a... (sha=fef4d6e7374d685ae756ed05f50f25ed8f6a6392)",
-      "expected_head_sha": "fef4d6e7374d685ae756ed05f50f25ed8f6a6392",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T10:16:59.293Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/messaging-tool-blank-media-dedupe",
-        "head_sha": "fef4d6e7374d685ae756ed05f50f25ed8f6a6392",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/imsg:239:5373523641:2026-08-24T10:16:32Z:clawsweeper_auto_repair",
       "comment_id": "5373523641",
@@ -31285,6 +31252,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123535:5396229823:2026-08-24T13:56:01Z:re_review",
+      "comment_id": "5396229823",
+      "comment_version_key": "5396229823:2026-08-24T13:56:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5396229823",
+      "comment_created_at": "2026-08-24T13:56:01Z",
+      "comment_updated_at": "2026-08-24T13:56:01Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123535,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T13:57:06.177Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-bootstrap-performance",
+        "head_sha": "471534df1e84c26d29c8538ffe38fbd2aa3f967c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
