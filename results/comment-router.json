@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T03:11:11.753Z",
+  "updated_at": "2026-08-24T03:14:54.420Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5316544539:2026-08-17T13:14:35Z:re_review",
-      "comment_id": "5316544539",
-      "comment_version_key": "5316544539:2026-08-17T13:14:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5316544539",
-      "comment_created_at": "2026-08-17T13:14:35Z",
-      "comment_updated_at": "2026-08-17T13:14:35Z",
-      "comment_body_sha256": "2070e70565e00b943b39990c20be697db40d5d26567b08e8824b42ca3579984e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T23:20:45.531Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5317566923:2026-08-17T16:17:57Z:re_review",
       "comment_id": "5317566923",
@@ -31151,6 +31124,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128459:5390065852:2026-08-24T03:12:19Z:clawsweeper_auto_repair",
+      "comment_id": "5390065852",
+      "comment_version_key": "5390065852:2026-08-24T03:12:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128459#issuecomment-5390065852",
+      "comment_created_at": "2026-08-24T02:36:45Z",
+      "comment_updated_at": "2026-08-24T03:12:19Z",
+      "comment_body_sha256": "2cac0126c08cf8d41981bd724baed936d07df273219645de5c52b947a7205fdc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128459,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=10e9d7373af47504ed4512e91e1850aaeea0c8c4)",
+      "expected_head_sha": "10e9d7373af47504ed4512e91e1850aaeea0c8c4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T03:14:54.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/frv-telegram-test-shards",
+        "head_sha": "10e9d7373af47504ed4512e91e1850aaeea0c8c4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
