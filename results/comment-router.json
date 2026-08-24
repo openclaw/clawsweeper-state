@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T07:04:36.188Z",
+  "updated_at": "2026-08-24T07:04:51.485Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128471:5390496030:2026-08-24T03:50:33Z:clawsweeper_needs_human",
-      "comment_id": "5390496030",
-      "comment_version_key": "5390496030:2026-08-24T03:50:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128471#issuecomment-5390496030",
-      "comment_created_at": "2026-08-24T03:50:33Z",
-      "comment_updated_at": "2026-08-24T03:50:33Z",
-      "comment_body_sha256": "648a88ffeb477aede47beca6658a7b5089d138e1474ac9fa5b8a195a71b00954",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128471,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still incomplete and GitHub reports the branch behind main; wait for the completed checks and current merge result before landing. (sha=fcb49b20a1fbd3038847f5b4ab5b903a325a4ae7)",
-      "expected_head_sha": "fcb49b20a1fbd3038847f5b4ab5b903a325a4ae7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:00:53.789Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-feishu-outbound-current",
-        "head_sha": "fcb49b20a1fbd3038847f5b4ab5b903a325a4ae7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128474:5390526045:2026-08-24T03:56:02Z:clawsweeper_needs_human",
       "comment_id": "5390526045",
@@ -31120,6 +31087,53 @@
       "processed_at": "2026-08-24T07:04:34.546Z",
       "target": {
         "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120419:5391820031:2026-08-24T07:04:02Z:re_review",
+      "comment_id": "5391820031",
+      "comment_version_key": "5391820031:2026-08-24T07:04:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120419#issuecomment-5391820031",
+      "comment_created_at": "2026-08-24T07:04:02Z",
+      "comment_updated_at": "2026-08-24T07:04:02Z",
+      "comment_body_sha256": "b5cb5d50fa82850a1edd02953364339b7d9ede787cb8e17fe2e5e576e912754c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120419,
+      "author": "Grynn",
+      "author_id": 212880,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T07:04:48.949Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ingress-stall-requeue",
+        "head_sha": "cd0e3eee599c0c33b8ef12f29b191793e0fe9aec",
         "cluster_id": null,
         "job_path": null
       },
