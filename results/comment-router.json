@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T05:55:16.424Z",
+  "updated_at": "2026-08-24T05:59:46.779Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112932:5109486872:2026-07-28T20:45:38Z:re_review",
-      "comment_id": "5109486872",
-      "comment_version_key": "5109486872:2026-07-28T20:45:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112932#issuecomment-5109486872",
-      "comment_created_at": "2026-07-28T20:45:38Z",
-      "comment_updated_at": "2026-07-28T20:45:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112932,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T02:53:02.799Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112932:5127805556:2026-07-30T07:16:18Z:re_review",
       "comment_id": "5127805556",
@@ -31263,6 +31236,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:93952:5391291371:2026-08-24T05:58:53Z:re_review",
+      "comment_id": "5391291371",
+      "comment_version_key": "5391291371:2026-08-24T05:58:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/93952#issuecomment-5391291371",
+      "comment_created_at": "2026-08-24T05:58:53Z",
+      "comment_updated_at": "2026-08-24T05:58:53Z",
+      "comment_body_sha256": "919f50bb4f314264ecdecf3af7b71913b9aae05e4649e07b29c01a90c320b0ae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 93952,
+      "author": "amittell",
+      "author_id": 1388680,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head db0f075d5f55f3542aceaf267fccb3899713a431",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T05:59:44.785Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auth-refresh-deadline-guard",
+        "head_sha": "db0f075d5f55f3542aceaf267fccb3899713a431",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
