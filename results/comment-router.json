@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T07:07:51.932Z",
+  "updated_at": "2026-08-24T07:09:15.326Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128403:5390566189:2026-08-24T04:02:52Z:re_review",
-      "comment_id": "5390566189",
-      "comment_version_key": "5390566189:2026-08-24T04:02:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128403#issuecomment-5390566189",
-      "comment_created_at": "2026-08-24T04:02:52Z",
-      "comment_updated_at": "2026-08-24T04:02:52Z",
-      "comment_body_sha256": "d9e7904bb0e0937d899f803021bb4b97f97309b0ab8df4c5d3bdd2a1a2f91e69",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128403,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the updated head publishes the state path atomically at its producer and removes the previous 150 ms timer",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T04:03:35.674Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/e2e-state-dir-wait-for-content",
-        "head_sha": "51013ab4ced696dcb0f478214f0df1d751873d73",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128185:5385558196:2026-08-24T04:06:37Z:clawsweeper_auto_repair",
       "comment_id": "5385558196",
@@ -31128,6 +31081,39 @@
         "kind": "pull_request",
         "branch": "steipete/seven-day-dependency-updates-6c0cb4",
         "head_sha": "f8f24b6d8df02c2dc7dee1568aad7ba1a87fa879",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128521:5391249168:2026-08-24T07:05:37Z:clawsweeper_needs_human",
+      "comment_id": "5391249168",
+      "comment_version_key": "5391249168:2026-08-24T07:05:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128521#issuecomment-5391249168",
+      "comment_created_at": "2026-08-24T05:52:05Z",
+      "comment_updated_at": "2026-08-24T07:05:37Z",
+      "comment_body_sha256": "6f1f4ce87286c4e1ed884743a5b0ce785b9d80bbaaa4c6f991fbb58d4a16de0a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128521,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only unit resolver checks and static validation are shown; add redacted after-fix evidence from a real parent-to-child session flow before merg... (sha=34b4433eda2aeb3f7ac56d8acd3aea7265893bce)",
+      "expected_head_sha": "34b4433eda2aeb3f7ac56d8acd3aea7265893bce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T07:09:15.325Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "gaoanze888/skip-parent-auto-fallback-inheritance",
+        "head_sha": "34b4433eda2aeb3f7ac56d8acd3aea7265893bce",
         "cluster_id": null,
         "job_path": null
       }
