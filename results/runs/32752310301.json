@@ -1,0 +1,65 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128743",
+  "mode": "autonomous",
+  "run_id": "32752310301",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32752310301",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128743.md",
+  "published_at": "2026-08-24T16:51:34.101Z",
+  "canonical": "#128743",
+  "canonical_issue": "#128743",
+  "canonical_pr": null,
+  "summary": "Current main contains the reported root cause: flattening root anyOf/oneOf starts from empty merged properties, while retaining root required and additionalProperties. The requested repair could not be applied or validated because the workspace is read-only, dependencies are absent, and the mandatory ../codex source checkout is unavailable.",
+  "actions": [
+    {
+      "target": "#128743",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128743",
+      "candidate_fix": null,
+      "reason": "A narrow root-cause repair and two boundary regressions are defined, but no code change, reproduction, or validation can run in this read-only environment."
+    },
+    {
+      "target": "#128799",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#128743",
+      "candidate_fix": "#128799",
+      "reason": "Keep the contributor PR open and preserve @LiuwqGit attribution; it is overlapping useful work but not a replacement for the requested fully validated ClawSweeper branch."
+    },
+    {
+      "target": "#128743",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128743",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a subsequent writable run."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies and a readable sibling ../codex checkout; then execute the supplied new-fix-PR artifact and run its reproduction and validation commands."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
