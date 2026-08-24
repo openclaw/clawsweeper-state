@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T14:31:04.544Z",
+  "updated_at": "2026-08-24T14:31:54.006Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126263:5341803618:2026-08-24T10:38:27Z:clawsweeper_needs_human",
-      "comment_id": "5341803618",
-      "comment_version_key": "5341803618:2026-08-24T10:38:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126263#issuecomment-5341803618",
-      "comment_created_at": "2026-08-19T12:00:04Z",
-      "comment_updated_at": "2026-08-24T10:38:27Z",
-      "comment_body_sha256": "ca7893bed6aac1fde82addc3ee4649b5942a74613fe8c2cf756e55dacb66e69e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126263,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind a current main that materially changed every core lifecycle and run-context surface it edits; merge only after an exact-head rebase proves both the matching-task... (sha=4ea3d26b8ccb99a919f26134191b3b96968f986d)",
-      "expected_head_sha": "4ea3d26b8ccb99a919f26134191b3b96968f986d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T10:42:58.891Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-terminal-reply-fixture",
-        "head_sha": "4ea3d26b8ccb99a919f26134191b3b96968f986d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127808:5379379546:2026-08-24T10:39:53Z:clawsweeper_auto_repair",
       "comment_id": "5379379546",
@@ -31527,6 +31494,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115745:5118102960:2026-08-24T14:25:43Z:clawsweeper_needs_human",
+      "comment_id": "5118102960",
+      "comment_version_key": "5118102960:2026-08-24T14:25:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115745#issuecomment-5118102960",
+      "comment_created_at": "2026-07-29T13:02:03Z",
+      "comment_updated_at": "2026-08-24T14:25:43Z",
+      "comment_body_sha256": "cdf330e23a2d375dbf8eb9ab1048f4a84eb6b166518aa2334f3cb1b6fea95f12",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115745,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bind prompt provenance before final-payload sanitization (P1)** - bindReplyDispatcherConversationContext is reached only after normal agent finals have passed through buildReplyPayloads, whose sanitizeFinalReply...; Review finding: [P1] Bind prompt provenance before final-payload sanitization — src/auto-reply/reply/dispatch-from-config.gather.ts:71 - [high] Prompt redaction can fail after ear... (sha=70a9ffd386db86be51204ea70cb5d065ecd99ecd)",
+      "expected_head_sha": "70a9ffd386db86be51204ea70cb5d065ecd99ecd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T14:31:54.006Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/s28-suppress-copied-reply-scaffolding",
+        "head_sha": "70a9ffd386db86be51204ea70cb5d065ecd99ecd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
