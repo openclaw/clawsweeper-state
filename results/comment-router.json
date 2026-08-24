@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T05:22:54.517Z",
+  "updated_at": "2026-08-24T05:25:36.607Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121063:5384935347:2026-08-23T07:55:01Z:re_review",
-      "comment_id": "5384935347",
-      "comment_version_key": "5384935347:2026-08-23T07:55:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121063#issuecomment-5384935347",
-      "comment_created_at": "2026-08-23T07:55:01Z",
-      "comment_updated_at": "2026-08-23T07:55:01Z",
-      "comment_body_sha256": "3505e369aa13329ea79fe5f474285c06864e6125ef80f6884f0de90d5f4228b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121063,
-      "author": "Papilionidae",
-      "author_id": 39980552,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review (head 532924e6a: p1 fixed — launcher capability fence + wire serialization now gated on isloopguardruntimeconfigenabled (any guard field non-undefined); configless and enabled:false sessions dispatch on legacy bundles without the loop-guard capability, assignment carries no loopguardconfig key; regression it.each added. p2 fixed — schema.help.runtime.ts + types.tools.ts + worker runtime comment aligned to explicit-block opt-in semantics; config-baseline regenerated (sha256 only, counts unchanged). ci @ head: 193 pass / 0 fail / 17 skipping; mergeable mergeable/behind)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T01:57:13.832Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3494:5357432561:2026-08-24T01:56:34Z:clawsweeper_needs_human",
       "comment_id": "5357432561",
@@ -31445,6 +31418,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T05:22:54.517Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128481:5390604994:2026-08-24T05:24:34Z:clawsweeper_auto_repair",
+      "comment_id": "5390604994",
+      "comment_version_key": "5390604994:2026-08-24T05:24:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128481#issuecomment-5390604994",
+      "comment_created_at": "2026-08-24T04:09:17Z",
+      "comment_updated_at": "2026-08-24T05:24:34Z",
+      "comment_body_sha256": "fd505aa1f6550979a4646a797dd1165564189f14c8bdd6b0556399d07bf0df26",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128481,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=43e1cdadfb05da8ba27ae5c79081d5524e4b1188)",
+      "expected_head_sha": "43e1cdadfb05da8ba27ae5c79081d5524e4b1188",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T05:25:36.607Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-codex-ultra-projection",
+        "head_sha": "43e1cdadfb05da8ba27ae5c79081d5524e4b1188",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
