@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T04:00:39.789Z",
+  "updated_at": "2026-08-24T04:00:41.572Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5226165885:2026-08-08T12:46:53Z:re_review",
-      "comment_id": "5226165885",
-      "comment_version_key": "5226165885:2026-08-08T12:46:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5226165885",
-      "comment_created_at": "2026-08-08T12:46:53Z",
-      "comment_updated_at": "2026-08-08T12:46:53Z",
-      "comment_body_sha256": "a0d102fd485a599b67bd2476796a3a318fe4cfe1acd7328d218c0bfa2b1771cb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T23:20:45.532Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5226168138:2026-08-08T12:47:32Z:re_review",
       "comment_id": "5226168138",
@@ -31920,6 +31893,39 @@
         "head_sha": "2a882df8c7d0511be0c7d397feb88a5dfb287b80",
         "cluster_id": "automerge-openclaw-openclaw-128093",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128093.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128477:5390545962:2026-08-24T03:59:30Z:clawsweeper_needs_human",
+      "comment_id": "5390545962",
+      "comment_version_key": "5390545962:2026-08-24T03:59:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128477#issuecomment-5390545962",
+      "comment_created_at": "2026-08-24T03:59:30Z",
+      "comment_updated_at": "2026-08-24T03:59:30Z",
+      "comment_body_sha256": "651e3eb792b5fe6ef3ee17d02dbbd27f3b847e9107d072e0c79fcd6996e9161b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128477,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes an after-fix dynamic-import result, but no inspectable transcript, log, recording, or artifact shows it; add redacted terminal... (sha=d5fdcb76fb00cb38210699c4915f8e835aa396ca)",
+      "expected_head_sha": "d5fdcb76fb00cb38210699c4915f8e835aa396ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T04:00:41.572Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hooks-import-ctime",
+        "head_sha": "d5fdcb76fb00cb38210699c4915f8e835aa396ca",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
