@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128782",
+  "mode": "autonomous",
+  "run_id": "32746666387",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32746666387",
+  "head_sha": "ce250708c1ea10228f29fc5740cba95460dcdf74",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128782.md",
+  "published_at": "2026-08-24T16:57:50.992Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128782",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128782",
+  "canonical_pr": null,
+  "summary": "Current main still lets npm postinstall call the plugin-registry migration, which opens the shared SQLite state database for a write. Plan a narrow new PR that removes that lifecycle call, retains explicit `openclaw doctor --fix` migration ownership, and adds isolated package-postinstall regression coverage.",
+  "actions": [
+    {
+      "target": "#128782",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128782",
+      "candidate_fix": null,
+      "reason": "The reported install-time state mutation remains present on current main and has a bounded producer-side repair."
+    },
+    {
+      "target": "#127997",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Open contributor PR is unrelated to this install-side-effect cluster."
+    },
+    {
+      "target": "#120663",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context only."
+    },
+    {
+      "target": "#122617",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128782",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#128782",
+      "candidate_fix": null,
+      "reason": "A narrow credited fix PR is appropriate; no existing viable PR addresses this behavior."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
