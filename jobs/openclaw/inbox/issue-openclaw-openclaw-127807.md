@@ -67,24 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the embedded-agent plugin tool-result middleware terminal propagation bug. Preserve the existing `AgentToolResult.terminate` field through `src/agents/embedded-agent-runner/extensions.ts`, `src/agents/sessions/extensions/types.ts`, `src/agents/sessions/extensions/runner.ts`, and `src/agents/sessions/agent-session-base.ts` so a plugin middleware return of `{ result: { ...event.result, terminate: true } }` reaches Agent Core. Do not add a parallel top-level middleware field or make `after_tool_call` non-observational. Add a regression that proves a terminal middleware result ends a single-tool batch and that mixed batches retain Agent Core's all-results terminal rule. Do not edit CHANGELOG.md; put user-visible release-note context in the PR body.
+Repair the existing plugin middleware terminal-result bridge for https://github.com/openclaw/openclaw/issues/127807. Preserve optional `terminate` from AgentToolResult through session extension event/result types, ExtensionRunner merging, AgentSessionBase’s after-tool callback, and the embedded middleware factory. Keep the established all-finalized-results-in-a-batch termination rule; do not add a hook, config option, fallback, or parallel API. Add a boundary regression that fails before the repair: registered `api.registerAgentToolResultMiddleware` returns `terminate: true`, and that fact reaches the agent-core terminal decision. Do not edit CHANGELOG.md; provide release-note context in the PR body.
 
 Likely files:
 
-- src/agents/embedded-agent-runner/extensions.ts
 - src/agents/sessions/extensions/types.ts
 - src/agents/sessions/extensions/runner.ts
 - src/agents/sessions/agent-session-base.ts
+- src/agents/embedded-agent-runner/extensions.ts
 - src/agents/embedded-agent-runner.extensions.test.ts
-- src/agents/sessions/extensions/runner.test.ts
-- packages/agent-core/src/agent-loop.test.ts
 
 Validation:
 
-- pnpm test src/agents/embedded-agent-runner.extensions.test.ts
-- pnpm test src/agents/sessions/extensions/runner.test.ts
-- pnpm test packages/agent-core/src/agent-loop.test.ts
-- pnpm check:changed -- src/agents/embedded-agent-runner/extensions.ts src/agents/sessions/extensions/types.ts src/agents/sessions/extensions/runner.ts src/agents/sessions/agent-session-base.ts
+- node scripts/run-vitest.mjs src/agents/embedded-agent-runner.extensions.test.ts
+- node scripts/run-vitest.mjs src/agents/sessions/agent-session-loop-correctness.test.ts
+- node scripts/run-vitest.mjs packages/agent-core/src/agent-loop.test.ts
+- node scripts/check-changed.mjs --dry-run -- src/agents/sessions/extensions/types.ts src/agents/sessions/extensions/runner.ts src/agents/sessions/agent-session-base.ts src/agents/embedded-agent-runner/extensions.ts
 
 ## Operator Prompt
 
