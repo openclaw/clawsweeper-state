@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T22:12:49.112Z",
+  "updated_at": "2026-08-24T22:13:18.515Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128081:5398991532:2026-08-24T17:36:15Z:re_review",
-      "comment_id": "5398991532",
-      "comment_version_key": "5398991532:2026-08-24T17:36:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128081#issuecomment-5398991532",
-      "comment_created_at": "2026-08-24T17:36:15Z",
-      "comment_updated_at": "2026-08-24T17:36:15Z",
-      "comment_body_sha256": "f173a94bb7cf22ed9a4cb6ba9712cd214a2f13d966c818a3d9f799b566da6daf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128081,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T17:37:08.283Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/new-session-composer-capabilities",
-        "head_sha": "3e5cbe23ebebf3e40a282ee58e2fd0575120b073",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:74:5304878124:2026-08-24T17:26:55Z:clawsweeper_auto_repair",
       "comment_id": "5304878124",
@@ -31683,6 +31636,39 @@
         "kind": "pull_request",
         "branch": "fix/destroy-timeout",
         "head_sha": "25061111f4faacb103c5c1633a90aa935f197f95",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:141:5387072690:2026-08-24T22:10:55Z:clawsweeper_needs_human",
+      "comment_id": "5387072690",
+      "comment_version_key": "5387072690:2026-08-24T22:10:55Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/141#issuecomment-5387072690",
+      "comment_created_at": "2026-08-23T16:31:01Z",
+      "comment_updated_at": "2026-08-24T22:10:55Z",
+      "comment_body_sha256": "6d2400ace4c70cd4f7cc7a9c0c262f7e83f0bf46407cbf0039c0a28f7de92cb1",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 141,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing consumers that intentionally accepted malformed ZIP entries with both directory metadata and symlink mode will now receive the already-documented entry-link error. (sha=3c394571dba4adcb6ecfe3f498530cc804aff626)",
+      "expected_head_sha": "3c394571dba4adcb6ecfe3f498530cc804aff626",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T22:13:18.515Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/zip-link-directory-bit",
+        "head_sha": "3c394571dba4adcb6ecfe3f498530cc804aff626",
         "cluster_id": null,
         "job_path": null
       }
