@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T01:28:34.211Z",
+  "updated_at": "2026-08-24T01:28:37.325Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/ocm:106:5378084779:2026-08-23T21:31:00Z:clawsweeper_needs_human",
-      "comment_id": "5378084779",
-      "comment_version_key": "5378084779:2026-08-23T21:31:00Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/106#issuecomment-5378084779",
-      "comment_created_at": "2026-08-22T05:06:23Z",
-      "comment_updated_at": "2026-08-23T21:31:00Z",
-      "comment_body_sha256": "33e8e0253ccac46008f32e2b08ff07eb479bbcd42b35716168e86edf89f6674c",
-      "repo": "openclaw/ocm",
-      "issue_number": 106,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted supervisor state used to manage gateway processes; a future rebase should retain the running-daemon and stopped-daemon isolation regressions. (sha=786705082866057b3da0c8840d16cb89a6d2dccf)",
-      "expected_head_sha": "786705082866057b3da0c8840d16cb89a6d2dccf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T21:34:52.823Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/isolate-gateway-restarts-20260822",
-        "head_sha": "786705082866057b3da0c8840d16cb89a6d2dccf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128374:5388591968:2026-08-23T21:36:00Z:clawsweeper_needs_human",
       "comment_id": "5388591968",
@@ -30569,6 +30536,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128279:5389678241:2026-08-24T01:27:55Z:re_review",
+      "comment_id": "5389678241",
+      "comment_version_key": "5389678241:2026-08-24T01:27:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128279#issuecomment-5389678241",
+      "comment_created_at": "2026-08-24T01:27:55Z",
+      "comment_updated_at": "2026-08-24T01:27:55Z",
+      "comment_body_sha256": "624f8f3267992969e98772a0c672be4196edc402a8544628338192e0c2556fb8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128279,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the rewritten head materially changes executable binding, guardian lifecycle handling, and revalidation behavior",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T01:28:35.688Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/quickjs-code-mode-guardian-approvals-audit",
+        "head_sha": "852e3ad524d53ddab19df2bef9a3b19cdd4ed871",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
