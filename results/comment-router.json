@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T05:51:25.107Z",
+  "updated_at": "2026-08-24T05:52:59.921Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89526:4911479608:2026-07-08T04:50:47Z:re_review",
-      "comment_id": "4911479608",
-      "comment_version_key": "4911479608:2026-07-08T04:50:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89526#issuecomment-4911479608",
-      "comment_created_at": "2026-07-08T04:50:47Z",
-      "comment_updated_at": "2026-07-08T04:50:47Z",
-      "comment_body_sha256": "11cfc1e2808f3d6765017cc989c20a318a47ada0fd83440e33471c7980e627d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89526,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T02:52:55.191Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89526:5085441829:2026-07-26T21:18:01Z:re_review",
       "comment_id": "5085441829",
@@ -31197,6 +31170,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3504:5372359255:2026-08-24T05:39:28Z:clawsweeper_needs_human",
+      "comment_id": "5372359255",
+      "comment_version_key": "5372359255:2026-08-24T05:39:28Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3504#issuecomment-5372359255",
+      "comment_created_at": "2026-08-21T16:11:54Z",
+      "comment_updated_at": "2026-08-24T05:39:28Z",
+      "comment_body_sha256": "2f0c4f0a4a33e611c4bc8aaf33ff1aa51cbf076964733fc48bdb3b3fbf874271",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3504,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The grouped web-framework update changes 13 resolved package records, while the only integration signal is a failed signed-in local-auth scenario without a baseline comparison or trac... (sha=c8ea5c6541e2ea09cc09110c85db983c1f06dcc4)",
+      "expected_head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T05:52:59.921Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/production-minor-and-patch-a1a6a844ee",
+        "head_sha": "c8ea5c6541e2ea09cc09110c85db983c1f06dcc4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
