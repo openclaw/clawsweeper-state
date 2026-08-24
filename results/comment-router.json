@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T05:33:55.677Z",
+  "updated_at": "2026-08-24T05:33:56.163Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89526:5390024385:2026-08-24T02:29:29Z:re_review",
-      "comment_id": "5390024385",
-      "comment_version_key": "5390024385:2026-08-24T02:29:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89526#issuecomment-5390024385",
-      "comment_created_at": "2026-08-24T02:29:29Z",
-      "comment_updated_at": "2026-08-24T02:29:29Z",
-      "comment_body_sha256": "84c18dd9a130a127f19a60d085a0d864a68c6c435b4aa15ed826a386f35a2565",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89526,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T02:30:22.053Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/restart-required-reload-diagnostics",
-        "head_sha": "38dead8a74fe3672d0d276a0c9816e78f2953bdc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126875:5390026129:2026-08-24T02:29:47Z:autoclose",
       "comment_id": "5390026129",
@@ -31238,6 +31191,39 @@
         "kind": "pull_request",
         "branch": "gaoanze888/discord-components-string-coerce",
         "head_sha": "74c453616fc5274c77a619698476586904b87e0b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128397:5388950385:2026-08-24T05:31:27Z:clawsweeper_needs_human",
+      "comment_id": "5388950385",
+      "comment_version_key": "5388950385:2026-08-24T05:31:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128397#issuecomment-5388950385",
+      "comment_created_at": "2026-08-23T22:58:52Z",
+      "comment_updated_at": "2026-08-24T05:31:27Z",
+      "comment_body_sha256": "56ffe901a74362962c4005531a47f305be7d4df03dd536ec73f6dcf030d1374f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128397,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is behind current main; refresh the three-way merge state and exact-head checks before merge rather than inferring a source regression from base drift. (sha=2e288f4c70d054a2d686b291fdd8f2f0105667f3)",
+      "expected_head_sha": "2e288f4c70d054a2d686b291fdd8f2f0105667f3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T05:33:56.163Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/team-server-performance-bottlenecks-1b45be",
+        "head_sha": "2e288f4c70d054a2d686b291fdd8f2f0105667f3",
         "cluster_id": null,
         "job_path": null
       }
