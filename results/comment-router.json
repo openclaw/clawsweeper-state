@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T10:05:46.143Z",
+  "updated_at": "2026-08-24T10:07:26.036Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128487:5390776652:2026-08-24T05:14:54Z:clawsweeper_needs_human",
-      "comment_id": "5390776652",
-      "comment_version_key": "5390776652:2026-08-24T05:14:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128487#issuecomment-5390776652",
-      "comment_created_at": "2026-08-24T04:34:19Z",
-      "comment_updated_at": "2026-08-24T05:14:54Z",
-      "comment_body_sha256": "89952f440641dabef84ab291c9ff96c7a28175c4877a0cee106ddfcf171073fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128487,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - One transient connection now spans all chunks in an operation, so a mid-batch IRC disconnect affects remaining chunks rather than allowing later calls to reconnect independently; the... (sha=d2de91705d17eb00459faed32002ba0b61aeb4ff)",
-      "expected_head_sha": "d2de91705d17eb00459faed32002ba0b61aeb4ff",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T05:20:13.017Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-irc-outbound-current",
-        "head_sha": "d2de91705d17eb00459faed32002ba0b61aeb4ff",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-24T05:13:29Z:clawsweeper_needs_human",
       "comment_id": "5357688049",
@@ -32461,6 +32428,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127965:5381247209:2026-08-24T10:03:00Z:clawsweeper_auto_repair",
+      "comment_id": "5381247209",
+      "comment_version_key": "5381247209:2026-08-24T10:03:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127965#issuecomment-5381247209",
+      "comment_created_at": "2026-08-22T15:47:42Z",
+      "comment_updated_at": "2026-08-24T10:03:00Z",
+      "comment_body_sha256": "ac220ee36b8160723563af6348ea827a484ec212078813b628f9ac0762adfa2d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127965,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7e99773e2dcffda4e61b9bd456ff290f5cc1024f)",
+      "expected_head_sha": "7e99773e2dcffda4e61b9bd456ff290f5cc1024f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T10:07:26.036Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-127287-copilot-ghe-integration-id",
+        "head_sha": "7e99773e2dcffda4e61b9bd456ff290f5cc1024f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
