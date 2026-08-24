@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T19:28:20.880Z",
+  "updated_at": "2026-08-24T19:29:19.643Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125861:5330128766:2026-08-24T13:48:30Z:clawsweeper_auto_repair",
-      "comment_id": "5330128766",
-      "comment_version_key": "5330128766:2026-08-24T13:48:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125861#issuecomment-5330128766",
-      "comment_created_at": "2026-08-18T15:08:35Z",
-      "comment_updated_at": "2026-08-24T13:48:30Z",
-      "comment_body_sha256": "d1505091ebfbbd8c8b037d38242e332f93fe9f96f28283696fd938092dfa4d9e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125861,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7e5942afe50fd962471dee0fd41cf45c2ea12327)",
-      "expected_head_sha": "7e5942afe50fd962471dee0fd41cf45c2ea12327",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T13:57:54.440Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/tavily-keyless",
-        "head_sha": "7e5942afe50fd962471dee0fd41cf45c2ea12327",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126943:5364357446:2026-08-24T13:54:26Z:clawsweeper_needs_human",
       "comment_id": "5364357446",
@@ -32539,6 +32506,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1453:5400245089:2026-08-24T19:28:31Z:re_review",
+      "comment_id": "5400245089",
+      "comment_version_key": "5400245089:2026-08-24T19:28:31Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1453#issuecomment-5400245089",
+      "comment_created_at": "2026-08-24T19:28:31Z",
+      "comment_updated_at": "2026-08-24T19:28:31Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1453,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T19:29:17.603Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/git-seed-dirty-overlay",
+        "head_sha": "a897fa8175d8b2a2ba8c56f0f38970345bec7223",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
