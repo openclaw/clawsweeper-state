@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T06:33:59.778Z",
+  "updated_at": "2026-08-24T06:34:02.576Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128463:5390481904:2026-08-24T03:48:07Z:re_review",
-      "comment_id": "5390481904",
-      "comment_version_key": "5390481904:2026-08-24T03:48:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128463#issuecomment-5390481904",
-      "comment_created_at": "2026-08-24T03:48:07Z",
-      "comment_updated_at": "2026-08-24T03:48:07Z",
-      "comment_body_sha256": "4ad2e629b2814db9bf2420ae1e5aa2603e6c929900cf07b06c035b3b90f1de7d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128463,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T03:48:53.142Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-package-source-preflight",
-        "head_sha": "f4210cf22d77f30b0839daccaf88b7279df321f2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128463:5390244691:2026-08-24T03:46:46Z:clawsweeper_auto_repair",
       "comment_id": "5390244691",
@@ -31174,6 +31127,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-computer-wait-cua",
         "head_sha": "7da01c24d4e199c879d4e96e27af00c6ee872f05",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3506:5373967460:2026-08-24T06:28:54Z:clawsweeper_needs_human",
+      "comment_id": "5373967460",
+      "comment_version_key": "5373967460:2026-08-24T06:28:54Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3506#issuecomment-5373967460",
+      "comment_created_at": "2026-08-21T18:51:28Z",
+      "comment_updated_at": "2026-08-24T06:28:54Z",
+      "comment_body_sha256": "a15384ba76d818b022033378c43668977af3cfba4a4b03e8cfee1c4a4e8c23bb",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3506,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the supplied images are action buttons, not an after-fix trace proving a hosted Bearer download retains user id...; Review finding: [P1] Preserve Bearer-authenticated download metering — convex/downloads.ts:88-99 - [medium] Bearer identity can be lost before manifest signing — convex/downloads.... (sha=f02c0bfa604b366a8cc0ee23e6ced7a1c337ac17)",
+      "expected_head_sha": "f02c0bfa604b366a8cc0ee23e6ced7a1c337ac17",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T06:34:02.576Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stream-direct-download",
+        "head_sha": "f02c0bfa604b366a8cc0ee23e6ced7a1c337ac17",
         "cluster_id": null,
         "job_path": null
       }
