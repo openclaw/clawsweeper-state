@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-24T04:33:32.076Z",
+  "updated_at": "2026-08-24T04:33:30.095Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:110736:5389114398:2026-08-23T23:37:11Z:re_review",
+      "comment_id": "5389114398",
+      "comment_version_key": "5389114398:2026-08-23T23:37:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110736#issuecomment-5389114398",
+      "comment_created_at": "2026-08-23T23:37:11Z",
+      "comment_updated_at": "2026-08-23T23:37:11Z",
+      "comment_body_sha256": "427d91181a2edb7a795aebcb12c67e107026025428a7e29f55a685c6a31f1d76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110736,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-23T23:38:04.991Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-plugin-clawhub-release-git-fetch-operations-lack-timeout-boundin",
+        "head_sha": "f7bb7e75003a367b7b5d5602c6590df840caebfb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128115:5385990274:2026-08-23T12:26:37Z:re_review",
       "comment_id": "5385990274",
@@ -32701,39 +32748,6 @@
         "kind": "pull_request",
         "branch": "brzezowski/composer-invocations",
         "head_sha": "d6c319d4d7479e5c2a572a9b78d0bb2e1b29689f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127823:5379724636:2026-08-24T04:29:11Z:clawsweeper_auto_repair",
-      "comment_id": "5379724636",
-      "comment_version_key": "5379724636:2026-08-24T04:29:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127823#issuecomment-5379724636",
-      "comment_created_at": "2026-08-22T10:16:33Z",
-      "comment_updated_at": "2026-08-24T04:29:11Z",
-      "comment_body_sha256": "8afaa46dedf77b965703ce089685a01751eb8b5b4798dc4373c6748ddd717910",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127823,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=40965d85a605e7535b03913c46a72aa45786beea)",
-      "expected_head_sha": "40965d85a605e7535b03913c46a72aa45786beea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:33:32.076Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/composer-queue-attached",
-        "head_sha": "a6fb4d6d93a75f0c5e80e45187fecb2249b7fa55",
         "cluster_id": null,
         "job_path": null
       }
