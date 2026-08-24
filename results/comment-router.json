@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T10:38:37.006Z",
+  "updated_at": "2026-08-24T10:38:55.142Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128453:5390023888:2026-08-24T05:24:29Z:clawsweeper_needs_human",
-      "comment_id": "5390023888",
-      "comment_version_key": "5390023888:2026-08-24T05:24:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128453#issuecomment-5390023888",
-      "comment_created_at": "2026-08-24T02:29:23Z",
-      "comment_updated_at": "2026-08-24T05:24:29Z",
-      "comment_body_sha256": "4ba240129cb3d1aaf985786f663609f56f48e3676ca8e3e77033e633b4886d99",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128453,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR documents mocked-client sender tests, but needs a redacted live Matrix event trace or the repository mock-gateway verdict before merge;... (sha=704e09b8b189188993e09b75ee31c4f7f5d113ec)",
-      "expected_head_sha": "704e09b8b189188993e09b75ee31c4f7f5d113ec",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T05:28:59.696Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/matrix-spoiler-collision-128429",
-        "head_sha": "704e09b8b189188993e09b75ee31c4f7f5d113ec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128481:5390604994:2026-08-24T05:24:34Z:clawsweeper_auto_repair",
       "comment_id": "5390604994",
@@ -32622,6 +32589,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1508:5392440485:2026-08-24T10:38:02Z:clawsweeper_needs_human",
+      "comment_id": "5392440485",
+      "comment_version_key": "5392440485:2026-08-24T10:38:02Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1508#issuecomment-5392440485",
+      "comment_created_at": "2026-08-24T08:12:32Z",
+      "comment_updated_at": "2026-08-24T10:38:02Z",
+      "comment_body_sha256": "377aed7147685cd5add1b6c39eb71236003dc30b000b5cfc12884888e8db45be",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1508,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The generated bootstrap relies on real Windows OpenSSH-to-WSL2 process and process-group behavior; fixture coverage cannot by itself confirm that retained-session cleanup works on the... (sha=8a589f20ab41517ca76f5b15dc238b4de072788d)",
+      "expected_head_sha": "8a589f20ab41517ca76f5b15dc238b4de072788d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T10:38:55.142Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/wsl2-exact-frame-reads",
+        "head_sha": "8a589f20ab41517ca76f5b15dc238b4de072788d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
