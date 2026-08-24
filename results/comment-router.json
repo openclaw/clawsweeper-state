@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T19:29:19.643Z",
+  "updated_at": "2026-08-24T19:30:09.764Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126943:5364357446:2026-08-24T13:54:26Z:clawsweeper_needs_human",
-      "comment_id": "5364357446",
-      "comment_version_key": "5364357446:2026-08-24T13:54:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126943#issuecomment-5364357446",
-      "comment_created_at": "2026-08-21T02:12:51Z",
-      "comment_updated_at": "2026-08-24T13:54:26Z",
-      "comment_body_sha256": "8d2c7f581fb8e4a7407b3b5041c04627377d444fc818b63bdcae649fda64006f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126943,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The semantic layer depends on the still-open foundation and source-generation fencing PRs; merging or validating the stack out of order could leave derived transcript state incomplete. (sha=91177f77e1265332e5d05a2eb9e75f68fbe60a55)",
-      "expected_head_sha": "91177f77e1265332e5d05a2eb9e75f68fbe60a55",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T13:57:54.440Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/transcript-display-semantics",
-        "head_sha": "91177f77e1265332e5d05a2eb9e75f68fbe60a55",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126947:5364419632:2026-08-24T13:55:55Z:clawsweeper_auto_repair",
       "comment_id": "5364419632",
@@ -32553,6 +32520,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128673:5394073888:2026-08-24T19:29:04Z:clawsweeper_needs_human",
+      "comment_id": "5394073888",
+      "comment_version_key": "5394073888:2026-08-24T19:29:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128673#issuecomment-5394073888",
+      "comment_created_at": "2026-08-24T10:40:31Z",
+      "comment_updated_at": "2026-08-24T19:29:04Z",
+      "comment_body_sha256": "6e58b22010fb82ba1d6e43957e373583d61ffb47794ddb59727fa0aa20e9b0c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128673,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: no redacted after-update trace proves that v1.12 preserves the configured execution-user and credential boundar...; Review finding: [P1] Audit Codex Action v1.12 before secret-bearing jobs — .github/workflows/mantis-telegram-desktop-proof.yml:266 - [medium] Unreviewed secret-bearing action upgr... (sha=41360070242fab6093bf350f979ded7759dcdccc)",
+      "expected_head_sha": "41360070242fab6093bf350f979ded7759dcdccc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T19:30:09.764Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-020742e8ff",
+        "head_sha": "41360070242fab6093bf350f979ded7759dcdccc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
