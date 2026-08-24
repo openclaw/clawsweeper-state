@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T11:52:39.789Z",
+  "updated_at": "2026-08-24T11:55:06.928Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127808:5379381413:2026-08-22T08:44:00Z:re_review",
-      "comment_id": "5379381413",
-      "comment_version_key": "5379381413:2026-08-22T08:44:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127808#issuecomment-5379381413",
-      "comment_created_at": "2026-08-22T08:44:00Z",
-      "comment_updated_at": "2026-08-22T08:44:00Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127808,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T06:24:57.614Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127808:5379435547:2026-08-22T08:58:42Z:re_review",
       "comment_id": "5379435547",
@@ -32655,6 +32628,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T11:52:39.789Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128458:5390067218:2026-08-24T11:52:15Z:clawsweeper_needs_human",
+      "comment_id": "5390067218",
+      "comment_version_key": "5390067218:2026-08-24T11:52:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128458#issuecomment-5390067218",
+      "comment_created_at": "2026-08-24T02:37:00Z",
+      "comment_updated_at": "2026-08-24T11:52:15Z",
+      "comment_body_sha256": "16e89f59ec0fc5f23058c1be98b22c006fa5e8faa5a778f6251263a3ef8c146c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128458,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes release-QA scheduler behavior; the retained Matrix and Buzz job locks must remain present so independent lanes overlap without duplicating target work or pooled creden... (sha=08788ce729351e2485ed1abe0a71482dc2f62d67)",
+      "expected_head_sha": "08788ce729351e2485ed1abe0a71482dc2f62d67",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T11:55:06.928Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/qa-lock-scope",
+        "head_sha": "08788ce729351e2485ed1abe0a71482dc2f62d67",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
