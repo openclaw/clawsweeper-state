@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T08:04:22.741Z",
+  "updated_at": "2026-08-24T08:04:31.661Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5318452656:2026-08-17T18:05:46Z:re_review",
-      "comment_id": "5318452656",
-      "comment_version_key": "5318452656:2026-08-17T18:05:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5318452656",
-      "comment_created_at": "2026-08-17T18:05:46Z",
-      "comment_updated_at": "2026-08-17T18:05:46Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:41:52.162Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5318974958:2026-08-17T19:02:47Z:re_review",
       "comment_id": "5318974958",
@@ -31341,6 +31314,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126947:5364419632:2026-08-24T08:01:49Z:clawsweeper_needs_human",
+      "comment_id": "5364419632",
+      "comment_version_key": "5364419632:2026-08-24T08:01:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126947#issuecomment-5364419632",
+      "comment_created_at": "2026-08-21T02:22:32Z",
+      "comment_updated_at": "2026-08-24T08:01:49Z",
+      "comment_body_sha256": "558964ad61c805675fbae7df22afe346b5c43ca2f7e38561a0b02b2da149866d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126947,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This introduces a lazy persisted SQLite binding group without a schema-version bump; merge needs exact-head reopen and older-reader compatibility proof after the whole stack is compos... (sha=0cfc35407a89f26834695695db87f06131f829f7)",
+      "expected_head_sha": "0cfc35407a89f26834695695db87f06131f829f7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T08:04:31.661Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/transcript-projection-bindings",
+        "head_sha": "0cfc35407a89f26834695695db87f06131f829f7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
