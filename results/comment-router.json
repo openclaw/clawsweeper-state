@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T21:20:56.665Z",
+  "updated_at": "2026-08-24T21:20:57.208Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128289:5398134752:2026-08-24T16:22:30Z:re_review",
-      "comment_id": "5398134752",
-      "comment_version_key": "5398134752:2026-08-24T16:22:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128289#issuecomment-5398134752",
-      "comment_created_at": "2026-08-24T16:22:30Z",
-      "comment_updated_at": "2026-08-24T16:22:30Z",
-      "comment_body_sha256": "dbe578f2fa1aa8f97184cbdbef0017d8a80fe405d4e2ebdea890dc00a3532b53",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128289,
-      "author": "SnowBelt",
-      "author_id": 31227031,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T16:23:31.619Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/browser-session-credential-steward-mvp-repair",
-        "head_sha": "fff2be68e08c7bbddb0f779bd9a92503d16577ee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128735:5398138133:2026-08-24T16:22:48Z:re_review",
       "comment_id": "5398138133",
@@ -32013,6 +31966,39 @@
         "kind": "pull_request",
         "branch": "fix/cron-delivery-mirror-idle-freshness",
         "head_sha": "64fc3926ec25d1bafc3a83d8c7cbee12672180e5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119674:5194289602:2026-08-24T21:18:03Z:clawsweeper_needs_human",
+      "comment_id": "5194289602",
+      "comment_version_key": "5194289602:2026-08-24T21:18:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119674#issuecomment-5194289602",
+      "comment_created_at": "2026-08-05T16:11:53Z",
+      "comment_updated_at": "2026-08-24T21:18:03Z",
+      "comment_body_sha256": "6041234b02e82898d92e99e2ff9e043f4ded2bec86a4e019e48c6634f28e0aa9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119674,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The temporary-file trace exercises production helpers, but not the after-fix Linux Doctor/systemctl path; add redacted Linux evidence... (sha=e0c499371325986111f7b88ffb3bff2c1c88e7a8)",
+      "expected_head_sha": "e0c499371325986111f7b88ffb3bff2c1c88e7a8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T21:20:57.208Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/119648-doctor-profile-service-identity",
+        "head_sha": "e0c499371325986111f7b88ffb3bff2c1c88e7a8",
         "cluster_id": null,
         "job_path": null
       }
