@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T16:07:51.933Z",
+  "updated_at": "2026-08-24T16:11:03.134Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5319176722:2026-08-17T19:20:16Z:re_review",
-      "comment_id": "5319176722",
-      "comment_version_key": "5319176722:2026-08-17T19:20:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5319176722",
-      "comment_created_at": "2026-08-17T19:20:16Z",
-      "comment_updated_at": "2026-08-17T19:20:16Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T12:09:44.744Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5319368649:2026-08-17T19:38:02Z:re_review",
       "comment_id": "5319368649",
@@ -31732,6 +31705,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T16:07:51.933Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127093:5367077960:2026-08-24T16:07:46Z:clawsweeper_needs_human",
+      "comment_id": "5367077960",
+      "comment_version_key": "5367077960:2026-08-24T16:07:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127093#issuecomment-5367077960",
+      "comment_created_at": "2026-08-21T08:02:54Z",
+      "comment_updated_at": "2026-08-24T16:07:46Z",
+      "comment_body_sha256": "a7193bab8e39276493da1d18e3855bd43086c44418eb792e8fd2907093d15123",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127093,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch changes transient routing and per-client session state; exact-head validation should retain the known-child guard so a malformed or root detach cannot retire the parent sess... (sha=b5e813231b4e288ff1424bd39fc3b46428786886)",
+      "expected_head_sha": "b5e813231b4e288ff1424bd39fc3b46428786886",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T16:11:03.134Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-extension-relay-child-detach",
+        "head_sha": "b5e813231b4e288ff1424bd39fc3b46428786886",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
