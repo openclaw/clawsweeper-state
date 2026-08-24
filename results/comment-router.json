@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T07:16:27.129Z",
+  "updated_at": "2026-08-24T07:16:42.386Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:108060:5390632684:2026-08-24T04:13:39Z:re_review",
-      "comment_id": "5390632684",
-      "comment_version_key": "5390632684:2026-08-24T04:13:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/108060#issuecomment-5390632684",
-      "comment_created_at": "2026-08-24T04:13:39Z",
-      "comment_updated_at": "2026-08-24T04:13:39Z",
-      "comment_body_sha256": "0cdb225d199222e8f3f026aa8889ece5bac88bac685f7fd1b32f86e4ee296441",
-      "repo": "openclaw/openclaw",
-      "issue_number": 108060,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T04:14:29.261Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-107202-exec-blocked-verb",
-        "head_sha": "228cc70df81fa23d63f07ad4abdcb419dcc6be80",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/imsgcrawl:12:5297630847:2026-08-24T04:14:48Z:clawsweeper_needs_human",
       "comment_id": "5297630847",
@@ -31014,6 +30967,39 @@
         "kind": "pull_request",
         "branch": "sunlit/fix/messaging-tool-blank-media-dedupe",
         "head_sha": "12651280cda7e1773ba84e9dc404e37a3bd0c99e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127700:5376735204:2026-08-24T07:15:41Z:clawsweeper_needs_human",
+      "comment_id": "5376735204",
+      "comment_version_key": "5376735204:2026-08-24T07:15:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127700#issuecomment-5376735204",
+      "comment_created_at": "2026-08-22T00:21:26Z",
+      "comment_updated_at": "2026-08-24T07:15:41Z",
+      "comment_body_sha256": "c9553deabb9e61e6567cc57f9805c72888eb1535fbc0c5d9772ba8e9fd6143c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127700,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the selected TruffleHog release (P1)** - The action pin now says v3.97.0, but with.version still forces v3.95.9 and the guard test requires the old action SHA. Select one reviewed scanner release, th...; Review finding: [P1] Synchronize the selected TruffleHog release — .github/workflows/ci.yml:1159 - [P2] Refresh the Android attestation guard — .github/workflows/android-release.y... (sha=21c74a9897a29d83504ca121a6e11cf963a1a0c0)",
+      "expected_head_sha": "21c74a9897a29d83504ca121a6e11cf963a1a0c0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T07:16:42.386Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-2b47f3b96e",
+        "head_sha": "21c74a9897a29d83504ca121a6e11cf963a1a0c0",
         "cluster_id": null,
         "job_path": null
       }
