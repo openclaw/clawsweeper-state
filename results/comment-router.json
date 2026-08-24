@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T11:13:10.123Z",
+  "updated_at": "2026-08-24T11:13:13.520Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127823:5379724636:2026-08-24T05:30:00Z:clawsweeper_auto_repair",
-      "comment_id": "5379724636",
-      "comment_version_key": "5379724636:2026-08-24T05:30:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127823#issuecomment-5379724636",
-      "comment_created_at": "2026-08-22T10:16:33Z",
-      "comment_updated_at": "2026-08-24T05:30:00Z",
-      "comment_body_sha256": "b2365ad4d26bf5f87696a34d587ad14c2a5027c0451e5d6c2b3cfad0750fe364",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127823,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a6fb4d6d93a75f0c5e80e45187fecb2249b7fa55)",
-      "expected_head_sha": "a6fb4d6d93a75f0c5e80e45187fecb2249b7fa55",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T05:33:56.682Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/composer-queue-attached",
-        "head_sha": "a6fb4d6d93a75f0c5e80e45187fecb2249b7fa55",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119967:5206084299:2026-08-24T05:32:32Z:clawsweeper_auto_repair",
       "comment_id": "5206084299",
@@ -32893,6 +32860,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T11:13:10.123Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:62:5303306179:2026-08-24T11:11:10Z:clawsweeper_needs_human",
+      "comment_id": "5303306179",
+      "comment_version_key": "5303306179:2026-08-24T11:11:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/62#issuecomment-5303306179",
+      "comment_created_at": "2026-08-15T17:05:32Z",
+      "comment_updated_at": "2026-08-24T11:11:10Z",
+      "comment_body_sha256": "eead3cf47520814bcd2e7b807229ba5bc9af0121940c60874d2ea2e225ebcd57",
+      "repo": "openclaw/openclaw-ansible",
+      "issue_number": 62,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check list contains dispatch runs but no observed Lint job for the current PR head; verify the clean merge result executes the expanded validation while retaining main's... (sha=fdce460a7362484cf12a0d8c8ec5807c967f2d6f)",
+      "expected_head_sha": "fdce460a7362484cf12a0d8c8ec5807c967f2d6f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T11:13:13.520Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/validate-deploy-playbook",
+        "head_sha": "fdce460a7362484cf12a0d8c8ec5807c967f2d6f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
