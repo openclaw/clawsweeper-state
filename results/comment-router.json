@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-24T09:13:59.165Z",
+  "updated_at": "2026-08-24T09:08:46.900Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128197:5385773212:2026-08-24T04:32:48Z:clawsweeper_needs_human",
+      "comment_id": "5385773212",
+      "comment_version_key": "5385773212:2026-08-24T04:32:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128197#issuecomment-5385773212",
+      "comment_created_at": "2026-08-23T11:32:48Z",
+      "comment_updated_at": "2026-08-24T04:32:48Z",
+      "comment_body_sha256": "5c0652f193360a9b750dc61c22c55a670baa3fb4cc3d55cf6c94f4a4e0718cb7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128197,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the linked successful Mantis run targets an earlier head and does not prove that an active or stale SU...; Review finding: [P1] Fence Mantis lanes before snapshotting evidence — scripts/mantis/telegram-visible-collect-proof.sh:22-27 - [high] Active SUT can affect evidence after Codex t... (sha=c05350b5bf228630b4e05d44a63aedcf48de7488)",
+      "expected_head_sha": "c05350b5bf228630b4e05d44a63aedcf48de7488",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T04:46:01.291Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/mantis-telegram-visible-v2",
+        "head_sha": "c05350b5bf228630b4e05d44a63aedcf48de7488",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128397:5388950385:2026-08-24T04:32:37Z:clawsweeper_auto_repair",
       "comment_id": "5388950385",
@@ -32400,53 +32433,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128631:5393086392:2026-08-24T09:13:04Z:re_review",
-      "comment_id": "5393086392",
-      "comment_version_key": "5393086392:2026-08-24T09:13:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128631#issuecomment-5393086392",
-      "comment_created_at": "2026-08-24T09:13:04Z",
-      "comment_updated_at": "2026-08-24T09:13:04Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128631,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T09:13:55.988Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/team-server-performance-bottlenecks-2-20260824",
-        "head_sha": "a71b1420a97f3a3daab119b3ed18d6d7e6ae06a2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
