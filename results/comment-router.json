@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T20:15:22.619Z",
+  "updated_at": "2026-08-24T20:15:31.469Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125815:5397352590:2026-08-24T15:19:30Z:re_review",
-      "comment_id": "5397352590",
-      "comment_version_key": "5397352590:2026-08-24T15:19:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125815#issuecomment-5397352590",
-      "comment_created_at": "2026-08-24T15:19:30Z",
-      "comment_updated_at": "2026-08-24T15:19:30Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125815,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T15:20:23.200Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-owner-lifecycle-cas",
-        "head_sha": "c9cf9585fe8b2e452c551caebea863077bc992de",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128249:5397321538:2026-08-24T15:17:15Z:re_review",
       "comment_id": "5397321538",
@@ -31850,6 +31803,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/development-minor-and-patch-8f8c31b548",
         "head_sha": "defa2b325aaafd4cc15781d63efd3b6d5ed87acc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126496:5349956252:2026-08-24T20:14:34Z:clawsweeper_needs_human",
+      "comment_id": "5349956252",
+      "comment_version_key": "5349956252:2026-08-24T20:14:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126496#issuecomment-5349956252",
+      "comment_created_at": "2026-08-20T01:12:15Z",
+      "comment_updated_at": "2026-08-24T20:14:34Z",
+      "comment_body_sha256": "b38a483159df3c5a89f55d73e8643448609fd9cad71c88a91caa713317f3f7f4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126496,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR body reports test results but provides no inspectable after-fix allowed and nearest-forbidden final-effe...; Review finding: [P1] Reject unsealed bindings from predecessor authority rows — src/cron/store/runtime-authority-store.ts:170-185 - [high] Unsealed legacy binding can restore exec... (sha=884df9dd3674f3f6a56187ff451b68e1653c349f)",
+      "expected_head_sha": "884df9dd3674f3f6a56187ff451b68e1653c349f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T20:15:31.469Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-trigger-codex-exec-alias",
+        "head_sha": "884df9dd3674f3f6a56187ff451b68e1653c349f",
         "cluster_id": null,
         "job_path": null
       }
