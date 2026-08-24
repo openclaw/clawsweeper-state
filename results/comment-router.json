@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T09:23:28.300Z",
+  "updated_at": "2026-08-24T09:24:01.107Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128497:5390893279:2026-08-24T04:52:33Z:re_review",
-      "comment_id": "5390893279",
-      "comment_version_key": "5390893279:2026-08-24T04:52:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128497#issuecomment-5390893279",
-      "comment_created_at": "2026-08-24T04:52:33Z",
-      "comment_updated_at": "2026-08-24T04:52:33Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128497,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T04:53:17.673Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/mac-node-capabilities",
-        "head_sha": "e4539315362d4ca0e0fb8be3332d79a8120ea355",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128454:5390001178:2026-08-24T04:52:08Z:clawsweeper_auto_repair",
       "comment_id": "5390001178",
@@ -32469,6 +32422,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127965:5381247209:2026-08-24T09:21:09Z:clawsweeper_auto_repair",
+      "comment_id": "5381247209",
+      "comment_version_key": "5381247209:2026-08-24T09:21:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127965#issuecomment-5381247209",
+      "comment_created_at": "2026-08-22T15:47:42Z",
+      "comment_updated_at": "2026-08-24T09:21:09Z",
+      "comment_body_sha256": "85ba53e37ca0ccd8c10dfe5076cc5486a08ddba46eb2d90b2db65a48a81ee351",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127965,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c9aea1ad447b829d89c7ed70dfb1d556bc2c23c4)",
+      "expected_head_sha": "c9aea1ad447b829d89c7ed70dfb1d556bc2c23c4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T09:24:01.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-127287-copilot-ghe-integration-id",
+        "head_sha": "c9aea1ad447b829d89c7ed70dfb1d556bc2c23c4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
