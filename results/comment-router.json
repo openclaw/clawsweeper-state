@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T08:36:02.178Z",
+  "updated_at": "2026-08-24T08:36:06.055Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5320873301:2026-08-17T22:13:42Z:re_review",
-      "comment_id": "5320873301",
-      "comment_version_key": "5320873301:2026-08-17T22:13:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5320873301",
-      "comment_created_at": "2026-08-17T22:13:42Z",
-      "comment_updated_at": "2026-08-17T22:13:42Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:44:58.997Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123556:5291738495:2026-08-14T09:29:04Z:re_review",
       "comment_id": "5291738495",
@@ -31979,6 +31952,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T08:36:02.178Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128131:5384601467:2026-08-24T08:35:10Z:clawsweeper_needs_human",
+      "comment_id": "5384601467",
+      "comment_version_key": "5384601467:2026-08-24T08:35:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128131#issuecomment-5384601467",
+      "comment_created_at": "2026-08-23T06:22:38Z",
+      "comment_updated_at": "2026-08-24T08:35:10Z",
+      "comment_body_sha256": "6d21f6f6d2bbe9fc75dc89c8f0a9be5acd46c6e7d1508297b7114fc5a7360005",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128131,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Audit the pinned SDK’s subprocess and hook contract** - The patch delegates Claude process startup, permission callbacks, and query lifecycle to a newly added runtime dependency, whose...; Review finding: [medium] Audit the pinned SDK’s subprocess and hook contract — extensions/anthropic/agent-sdk.runtime.ts:4 (sha=283b66f4d779ccfa4b976e2ed3835974e258f161)",
+      "expected_head_sha": "283b66f4d779ccfa4b976e2ed3835974e258f161",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T08:36:06.055Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/anthropic-agent-sdk",
+        "head_sha": "283b66f4d779ccfa4b976e2ed3835974e258f161",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
