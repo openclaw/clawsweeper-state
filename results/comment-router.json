@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T19:06:08.779Z",
+  "updated_at": "2026-08-24T19:08:32.514Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127224:5372040610:2026-08-24T13:33:35Z:clawsweeper_needs_human",
-      "comment_id": "5372040610",
-      "comment_version_key": "5372040610:2026-08-24T13:33:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127224#issuecomment-5372040610",
-      "comment_created_at": "2026-08-21T15:41:41Z",
-      "comment_updated_at": "2026-08-24T13:33:35Z",
-      "comment_body_sha256": "e34cd1e4d4210729705e587f85579eafeeac9b6839b7b4f06234cdbab7a8f411",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127224,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Restore abort rechecks around context-engine awaits (P1)** - This removes the cancellation checks that current main added in dad94f8f2 to stop context-engine work before another provider request. If cancellation...; Review finding: [P1] Restore abort rechecks around context-engine awaits — src/agents/embedded-agent-runner/tool-result-context-guard.ts:339-343 - [high] Cancellation can no longe... (sha=a8895b47010d923b76953153a3b833cd2dfec60d)",
-      "expected_head_sha": "a8895b47010d923b76953153a3b833cd2dfec60d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T13:36:20.168Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-contract-current-main",
-        "head_sha": "a8895b47010d923b76953153a3b833cd2dfec60d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128289:5387183075:2026-08-24T13:31:17Z:clawsweeper_needs_human",
       "comment_id": "5387183075",
@@ -32716,6 +32683,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/rfcs:5:5400013746:2026-08-24T19:07:36Z:re_review",
+      "comment_id": "5400013746",
+      "comment_version_key": "5400013746:2026-08-24T19:07:36Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/5#issuecomment-5400013746",
+      "comment_created_at": "2026-08-24T19:07:36Z",
+      "comment_updated_at": "2026-08-24T19:07:36Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/rfcs",
+      "issue_number": 5,
+      "author": "amittell",
+      "author_id": 1388680,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T19:08:29.722Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rfc/pluggable-scheduler",
+        "head_sha": "dc1519a51b4e6221af6c40e48ca7013ec45ac5a0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
