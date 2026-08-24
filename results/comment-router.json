@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T11:47:37.885Z",
+  "updated_at": "2026-08-24T11:47:56.322Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/songsee:7:5304174384:2026-08-24T06:10:42Z:clawsweeper_needs_human",
-      "comment_id": "5304174384",
-      "comment_version_key": "5304174384:2026-08-24T06:10:42Z",
-      "comment_url": "https://github.com/openclaw/songsee/pull/7#issuecomment-5304174384",
-      "comment_created_at": "2026-08-15T20:50:14Z",
-      "comment_updated_at": "2026-08-24T06:10:42Z",
-      "comment_body_sha256": "ad342eba5129fdea8cdc8032cf5b3ec788c61dddbc39c20be19b5b924aac8a32",
-      "repo": "openclaw/songsee",
-      "issue_number": 7,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bound complete WAV data before allocating (P1)** - The new guard only rejects declarations larger than the remaining file bytes. A complete large WAV passes it, then allocates data and a proportional float64 sam...; Review finding: [P1] Bound complete WAV data before allocating — internal/audio/wav.go:106-110 - [medium] Complete WAV inputs can still exhaust process memory — internal/audio/wav... (sha=15e679b3474da11b60c09fddcb2e859868e2ef6a)",
-      "expected_head_sha": "15e679b3474da11b60c09fddcb2e859868e2ef6a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T06:14:15.726Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ffmpeg-timeout-wav-cap",
-        "head_sha": "15e679b3474da11b60c09fddcb2e859868e2ef6a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/songsee:7:5351290489:2026-08-20T04:16:55Z:re_review",
       "comment_id": "5351290489",
@@ -32693,6 +32660,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126943:5364357446:2026-08-24T11:47:07Z:clawsweeper_needs_human",
+      "comment_id": "5364357446",
+      "comment_version_key": "5364357446:2026-08-24T11:47:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126943#issuecomment-5364357446",
+      "comment_created_at": "2026-08-21T02:12:51Z",
+      "comment_updated_at": "2026-08-24T11:47:07Z",
+      "comment_body_sha256": "dd464902ee5077297e0f1440adb38d1ef63765915266592beebcbedcabd1353c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126943,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The three additive projection layers must be integrated and validated in dependency order; this PR intentionally does not provide the source-generation publication fencing owned by ht... (sha=95f433865670a33faea919b6043a2a729fd0a373)",
+      "expected_head_sha": "95f433865670a33faea919b6043a2a729fd0a373",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T11:47:56.322Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/transcript-display-semantics",
+        "head_sha": "95f433865670a33faea919b6043a2a729fd0a373",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
