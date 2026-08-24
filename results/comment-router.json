@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T07:34:18.898Z",
+  "updated_at": "2026-08-24T07:34:38.163Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5390712527:2026-08-24T04:25:03Z:re_review",
-      "comment_id": "5390712527",
-      "comment_version_key": "5390712527:2026-08-24T04:25:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5390712527",
-      "comment_created_at": "2026-08-24T04:25:03Z",
-      "comment_updated_at": "2026-08-24T04:25:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T04:25:44.407Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-performance",
-        "head_sha": "0b385942ca5a0464c5d08c06334ee1dd61d651ee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119326:5184023904:2026-08-24T04:26:00Z:clawsweeper_needs_human",
       "comment_id": "5184023904",
@@ -31092,6 +31045,39 @@
         "kind": "pull_request",
         "branch": "fix/catalog-worker-fingerprint-mismatch-fail-open",
         "head_sha": "4f288981f9334c3fd6a1e1a5c87ae34899f56ef4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124551:5307366079:2026-08-24T07:28:31Z:clawsweeper_needs_human",
+      "comment_id": "5307366079",
+      "comment_version_key": "5307366079:2026-08-24T07:28:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124551#issuecomment-5307366079",
+      "comment_created_at": "2026-08-16T12:10:47Z",
+      "comment_updated_at": "2026-08-24T07:28:31Z",
+      "comment_body_sha256": "d6fd05bc1700211fe25bd8d958c24aff695a579528448dd5510557100f00011f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124551,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing automation that intentionally relied on a one-sided update deleting sibling OAuth or tool-filter state will now need an explicit clear operation. (sha=b4529aa338dbb16c493b30738cc8989afeceeadf)",
+      "expected_head_sha": "b4529aa338dbb16c493b30738cc8989afeceeadf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T07:34:38.163Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "auto/prospect-mcp-configure-nested-merge",
+        "head_sha": "b4529aa338dbb16c493b30738cc8989afeceeadf",
         "cluster_id": null,
         "job_path": null
       }
