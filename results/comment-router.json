@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T08:47:11.883Z",
+  "updated_at": "2026-08-24T08:48:34.072Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123556:5312467038:2026-08-17T06:09:01Z:re_review",
-      "comment_id": "5312467038",
-      "comment_version_key": "5312467038:2026-08-17T06:09:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5312467038",
-      "comment_created_at": "2026-08-17T06:09:01Z",
-      "comment_updated_at": "2026-08-17T06:09:01Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123556,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:45:12.588Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123556:5312554026:2026-08-17T06:19:58Z:re_review",
       "comment_id": "5312554026",
@@ -32193,6 +32166,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1186:5363274638:2026-08-24T08:47:48Z:clawsweeper_needs_human",
+      "comment_id": "5363274638",
+      "comment_version_key": "5363274638:2026-08-24T08:47:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1186#issuecomment-5363274638",
+      "comment_created_at": "2026-08-20T23:24:22Z",
+      "comment_updated_at": "2026-08-24T08:47:48Z",
+      "comment_body_sha256": "216b3c055aacaed73e9f8651178b0b5a86957ef24cd2b780bc63c61d67d9dfe6",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1186,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the body reports local builds from an earlier head but provides no inspectable current-head installati...; Review finding: [P1] Verify the staged payload before executing it — packaging/gateway-msix/src/OpenClaw.Gateway.MSIXHost/PayloadStager.cs:100-112 - [P1] Avoid overriding an exist... (sha=b70bbfab80cf0fb2f96f13f68a984763c707a426)",
+      "expected_head_sha": "b70bbfab80cf0fb2f96f13f68a984763c707a426",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T08:48:34.072Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gateway-msix-packaging",
+        "head_sha": "b70bbfab80cf0fb2f96f13f68a984763c707a426",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
