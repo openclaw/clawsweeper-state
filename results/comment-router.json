@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T23:54:35.037Z",
+  "updated_at": "2026-08-24T23:55:46.784Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:93952:4911398845:2026-07-08T04:33:43Z:re_review",
-      "comment_id": "4911398845",
-      "comment_version_key": "4911398845:2026-07-08T04:33:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/93952#issuecomment-4911398845",
-      "comment_created_at": "2026-07-08T04:33:43Z",
-      "comment_updated_at": "2026-07-08T04:33:43Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 93952,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T19:26:00.565Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:93952:4920475134:2026-07-09T00:46:27Z:re_review",
       "comment_id": "4920475134",
@@ -31448,6 +31421,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1212:5403062756:2026-08-24T23:54:52Z:clawsweeper_needs_human",
+      "comment_id": "5403062756",
+      "comment_version_key": "5403062756:2026-08-24T23:54:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1212#issuecomment-5403062756",
+      "comment_created_at": "2026-08-24T23:54:52Z",
+      "comment_updated_at": "2026-08-24T23:54:52Z",
+      "comment_body_sha256": "9a17cab6adafbd150bb55bd62bdc40db2017903d19dd0efcaf87d781b795fc4c",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1212,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Current evidence is mock-only: deterministic HTTP and lifecycle tests cover the predicate, but no after-fix managed llama-server plus gateway r... (sha=e6a93133d58e008f988994e05819157f5e37b343)",
+      "expected_head_sha": "e6a93133d58e008f988994e05819157f5e37b343",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T23:55:46.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/1192-managed-model-readiness",
+        "head_sha": "e6a93133d58e008f988994e05819157f5e37b343",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
