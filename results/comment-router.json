@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T12:35:18.678Z",
+  "updated_at": "2026-08-24T12:36:48.911Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119537:5189855935:2026-08-05T09:08:22Z:re_review",
-      "comment_id": "5189855935",
-      "comment_version_key": "5189855935:2026-08-05T09:08:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119537#issuecomment-5189855935",
-      "comment_created_at": "2026-08-05T09:08:22Z",
-      "comment_updated_at": "2026-08-05T09:08:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119537,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T07:16:11.217Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119537:5189859236:2026-08-05T09:08:44Z:re_review",
       "comment_id": "5189859236",
@@ -32401,6 +32374,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128236:5386614016:2026-08-24T12:35:24Z:clawsweeper_needs_human",
+      "comment_id": "5386614016",
+      "comment_version_key": "5386614016:2026-08-24T12:35:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128236#issuecomment-5386614016",
+      "comment_created_at": "2026-08-23T14:49:55Z",
+      "comment_updated_at": "2026-08-24T12:35:24Z",
+      "comment_body_sha256": "fa036423ee44e0a9f0f9d43f131aa739beb7f3784c2b9ebe7a5a814c267bdcfd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128236,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing Gateway with an explicit gateway.controlUi.github.token now uses that credential for profile verification too; if that configured owner is unavailable, profile-bound reque... (sha=cfbeb4c4f41ec0a952d3d5b4413924aa6177c8ff)",
+      "expected_head_sha": "cfbeb4c4f41ec0a952d3d5b4413924aa6177c8ff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T12:36:48.911Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/github-profile-rate-limit-fix",
+        "head_sha": "cfbeb4c4f41ec0a952d3d5b4413924aa6177c8ff",
+        "cluster_id": "github-profile-rate-limit-fix",
+        "job_path": null
+      }
     }
   ]
 }
