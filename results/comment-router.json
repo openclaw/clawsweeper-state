@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T08:02:24.966Z",
+  "updated_at": "2026-08-24T08:03:41.900Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5317300978:2026-08-17T15:20:41Z:re_review",
-      "comment_id": "5317300978",
-      "comment_version_key": "5317300978:2026-08-17T15:20:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5317300978",
-      "comment_created_at": "2026-08-17T15:20:41Z",
-      "comment_updated_at": "2026-08-17T15:20:41Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T04:41:52.162Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5317379158:2026-08-17T15:39:01Z:re_review",
       "comment_id": "5317379158",
@@ -31285,6 +31258,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T08:02:24.966Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127976:5381555875:2026-08-24T07:56:08Z:clawsweeper_needs_human",
+      "comment_id": "5381555875",
+      "comment_version_key": "5381555875:2026-08-24T07:56:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127976#issuecomment-5381555875",
+      "comment_created_at": "2026-08-22T16:59:55Z",
+      "comment_updated_at": "2026-08-24T07:56:08Z",
+      "comment_body_sha256": "2babcc64d0eae1be92d67b468b50d3ee2be5ef422d681e48bee1b68ae913bcd0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127976,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally adds stdout JSON to invalid --json invocations that previously produced no stdout; retain the text-mode no-JSON behavior and verify the exact-head CLI boundary befo... (sha=dec7955947730bf5618180701d3a36dbb96dc45e)",
+      "expected_head_sha": "dec7955947730bf5618180701d3a36dbb96dc45e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T08:03:41.900Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/onboard-json-option-rejections",
+        "head_sha": "dec7955947730bf5618180701d3a36dbb96dc45e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
