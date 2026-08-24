@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-24T02:39:09.958Z",
+  "updated_at": "2026-08-24T02:39:12.118Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111581:5388941189:2026-08-23T22:56:37Z:re_review",
-      "comment_id": "5388941189",
-      "comment_version_key": "5388941189:2026-08-23T22:56:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111581#issuecomment-5388941189",
-      "comment_created_at": "2026-08-23T22:56:37Z",
-      "comment_updated_at": "2026-08-23T22:56:37Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111581,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T22:58:04.485Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bound-release-beta-verifier-commands",
-        "head_sha": "f3d915be3a7289d89ec0308e5feb21fc4024fa3b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:84827:4505122663:2026-08-23T22:53:50Z:clawsweeper_auto_repair",
       "comment_id": "4505122663",
@@ -30692,6 +30645,39 @@
         "kind": "pull_request",
         "branch": "fix/ids-stream-semantic-bound",
         "head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128458:5390067218:2026-08-24T02:37:00Z:clawsweeper_needs_human",
+      "comment_id": "5390067218",
+      "comment_version_key": "5390067218:2026-08-24T02:37:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128458#issuecomment-5390067218",
+      "comment_created_at": "2026-08-24T02:37:00Z",
+      "comment_updated_at": "2026-08-24T02:37:00Z",
+      "comment_body_sha256": "895e3197a59b1ed631b966d56142d72b31a45f669acff6140e54b204d1aa4f87",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128458,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Static YAML guards do not observe GitHub’s actual queueing behavior; before merge, an exact-candidate release run should demonstrate independent Matrix/Buzz progress while preserving... (sha=d6151db73a99e490dcc48011af949565f43d6307)",
+      "expected_head_sha": "d6151db73a99e490dcc48011af949565f43d6307",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T02:39:12.118Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/qa-lock-scope",
+        "head_sha": "d6151db73a99e490dcc48011af949565f43d6307",
         "cluster_id": null,
         "job_path": null
       }
