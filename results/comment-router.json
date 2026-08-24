@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-24T13:08:38.676Z",
+  "updated_at": "2026-08-24T13:04:45.813Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128612:5392647977:2026-08-24T08:31:08Z:clawsweeper_needs_human",
+      "comment_id": "5392647977",
+      "comment_version_key": "5392647977:2026-08-24T08:31:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128612#issuecomment-5392647977",
+      "comment_created_at": "2026-08-24T08:31:08Z",
+      "comment_updated_at": "2026-08-24T08:31:08Z",
+      "comment_body_sha256": "818935f09d13cdb76003bdb5cededd4e0310352d2b9c3908757b7bf0903c3705",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128612,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The deliberate 100-marker cap means a delayed duplicate for an evicted oldest task can appear again; this is a bounded-memory tradeoff that exact-head validation should preserve. (sha=2b6491ac5ba4458b79e12f73f884405512856938)",
+      "expected_head_sha": "2b6491ac5ba4458b79e12f73f884405512856938",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T08:31:53.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-122352",
+        "head_sha": "2b6491ac5ba4458b79e12f73f884405512856938",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128552:5392492079:2026-08-24T08:17:13Z:re_review",
       "comment_id": "5392492079",
@@ -31666,53 +31699,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5395631062:2026-08-24T13:07:54Z:re_review",
-      "comment_id": "5395631062",
-      "comment_version_key": "5395631062:2026-08-24T13:07:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5395631062",
-      "comment_created_at": "2026-08-24T13:07:54Z",
-      "comment_updated_at": "2026-08-24T13:07:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T13:08:36.615Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-performance",
-        "head_sha": "9ce241f5e04969930d8a44c1aacc07528bd47d75",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
