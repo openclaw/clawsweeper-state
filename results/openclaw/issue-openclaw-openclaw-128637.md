@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128637"
 mode: "autonomous"
-run_id: "32718085840"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32718085840"
+run_id: "32720125659"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32720125659"
 head_sha: "ce250708c1ea10228f29fc5740cba95460dcdf74"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-24T10:52:30.909Z"
-canonical: "https://github.com/openclaw/openclaw/issues/128637"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/128637"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-24T11:16:21.383Z"
+canonical: "#128637"
+canonical_issue: "#128637"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32718085840](https://github.com/openclaw/clawsweeper/actions/runs/32718085840)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32720125659](https://github.com/openclaw/clawsweeper/actions/runs/32720125659)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/128637
+Canonical: #128637
 
 ## Summary
 
-Planned a narrow new-fix-PR artifact for #128637. On main 1bca825, channel setup resolves an ambient workspace owner before plugin discovery; an ownerless explicit multi-agent fleet therefore throws before the existing routing picker can run. The reported exec-review path was not included because current source did not independently establish it.
+Confirmed canonical bug path, but this read-only worker cannot create the required branch/patch or run tests. A narrow owner-boundary fix artifact is ready for an executable worker.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Planned a narrow new-fix-PR artifact for #128637. On main 1bca825, channel setup
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128637 | fix_needed | planned | canonical | The live preflight marks #128637 open and canonical; source tracing identifies a concrete owner-selection ordering defect. |
-| cluster:issue-openclaw-openclaw-128637 | build_fix_artifact | planned | canonical | A new narrow branch is required; no hydrated implementation PR exists. |
+| #128637 | fix_needed | blocked | canonical | A writable worker with sibling Codex source must implement and validate the prepared-owner propagation before opening the allowed fix PR. |
 
 ## Needs Human
 
