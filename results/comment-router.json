@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-24T04:29:34.119Z",
+  "updated_at": "2026-08-24T04:29:45.402Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89739:4832717184:2026-06-29T12:43:52Z:re_review",
-      "comment_id": "4832717184",
-      "comment_version_key": "4832717184:2026-06-29T12:43:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89739#issuecomment-4832717184",
-      "comment_created_at": "2026-06-29T12:43:52Z",
-      "comment_updated_at": "2026-06-29T12:43:52Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89739,
-      "author": "amknight",
-      "author_id": 15041791,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-23T23:30:35.772Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128401:5389075412:2026-08-23T23:27:49Z:clawsweeper_needs_human",
       "comment_id": "5389075412",
@@ -32745,6 +32718,39 @@
       "status": "skipped",
       "processed_at": "2026-08-24T04:29:34.119Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128460:5390119608:2026-08-24T04:28:14Z:clawsweeper_needs_human",
+      "comment_id": "5390119608",
+      "comment_version_key": "5390119608:2026-08-24T04:28:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128460#issuecomment-5390119608",
+      "comment_created_at": "2026-08-24T02:46:13Z",
+      "comment_updated_at": "2026-08-24T04:28:14Z",
+      "comment_body_sha256": "e091846dcb27b1eecf0318e30b9cf9f567171627cb47dcfd841360cf9f43c638",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128460,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head hosted screenshot workflow is still unobserved: the supplied checks show the new iOS jobs skipped while the PR is draft, so artifact download/reduction should be proven... (sha=181e0bc7ad6d1c35b1ff37f8a526d4874e406364)",
+      "expected_head_sha": "181e0bc7ad6d1c35b1ff37f8a526d4874e406364",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T04:29:45.402Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/ios-screenshot-shards",
+        "head_sha": "181e0bc7ad6d1c35b1ff37f8a526d4874e406364",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
