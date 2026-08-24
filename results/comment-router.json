@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T20:07:10.748Z",
+  "updated_at": "2026-08-24T20:09:17.756Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125815:5328823403:2026-08-24T14:57:14Z:clawsweeper_needs_human",
-      "comment_id": "5328823403",
-      "comment_version_key": "5328823403:2026-08-24T14:57:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125815#issuecomment-5328823403",
-      "comment_created_at": "2026-08-18T13:25:46Z",
-      "comment_updated_at": "2026-08-24T14:57:14Z",
-      "comment_body_sha256": "38d0c7d845ce0a682e5b8e80368d2386c38a477bc049f16f46e83085ab03eecf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125815,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes persisted session concurrency and Control UI reconciliation; its positive production growth needs exact-head CI and real UI proof before merge. (sha=c9cf9585fe8b2e452c551caebea863077bc992de)",
-      "expected_head_sha": "c9cf9585fe8b2e452c551caebea863077bc992de",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T15:04:34.160Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-owner-lifecycle-cas",
-        "head_sha": "c9cf9585fe8b2e452c551caebea863077bc992de",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126056:5335368176:2026-08-24T05:27:17Z:clawsweeper_needs_human",
       "comment_id": "5335368176",
@@ -31777,6 +31744,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126496:5400713208:2026-08-24T20:08:23Z:re_review",
+      "comment_id": "5400713208",
+      "comment_version_key": "5400713208:2026-08-24T20:08:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126496#issuecomment-5400713208",
+      "comment_created_at": "2026-08-24T20:08:23Z",
+      "comment_updated_at": "2026-08-24T20:08:23Z",
+      "comment_body_sha256": "16101522bcf3e8f4141edbb2c996a75aa1c243c8a7ba134a59766c6613c56ff9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126496,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T20:09:15.770Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-trigger-codex-exec-alias",
+        "head_sha": "884df9dd3674f3f6a56187ff451b68e1653c349f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
