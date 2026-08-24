@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-24T05:50:17.864Z",
+  "updated_at": "2026-08-24T05:49:33.238Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128453:5390023888:2026-08-24T02:29:23Z:clawsweeper_needs_human",
+      "comment_id": "5390023888",
+      "comment_version_key": "5390023888:2026-08-24T02:29:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128453#issuecomment-5390023888",
+      "comment_created_at": "2026-08-24T02:29:23Z",
+      "comment_updated_at": "2026-08-24T02:29:23Z",
+      "comment_body_sha256": "bbe4080dfbc0fd12da9eb87c4b22428b2b176a4f05f7593a9b1ddea44a778e85",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128453,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only formatter tests are described. Add a redacted mock-gateway or live Matrix event trace showing the after-fix bodies; redact homeserver URLs... (sha=1e29a143504f78099ee6e267fcf02ed5350748b1)",
+      "expected_head_sha": "1e29a143504f78099ee6e267fcf02ed5350748b1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T02:41:12.554Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-spoiler-collision-128429",
+        "head_sha": "1e29a143504f78099ee6e267fcf02ed5350748b1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128459:5390065852:2026-08-24T02:36:45Z:clawsweeper_auto_repair",
       "comment_id": "5390065852",
@@ -31198,53 +31231,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:108060:5391234710:2026-08-24T05:49:39Z:re_review",
-      "comment_id": "5391234710",
-      "comment_version_key": "5391234710:2026-08-24T05:49:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/108060#issuecomment-5391234710",
-      "comment_created_at": "2026-08-24T05:49:39Z",
-      "comment_updated_at": "2026-08-24T05:49:39Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 108060,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T05:50:16.007Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-107202-exec-blocked-verb",
-        "head_sha": "c7930dfa2441460361b6327f80fafa4773ff7e79",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
