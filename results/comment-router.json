@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-24T17:58:29.729Z",
+  "updated_at": "2026-08-24T17:58:50.975Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128723:5395490830:2026-08-24T12:55:47Z:clawsweeper_needs_human",
-      "comment_id": "5395490830",
-      "comment_version_key": "5395490830:2026-08-24T12:55:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128723#issuecomment-5395490830",
-      "comment_created_at": "2026-08-24T12:55:47Z",
-      "comment_updated_at": "2026-08-24T12:55:47Z",
-      "comment_body_sha256": "f27248b9da5212d36c3be4df1e7b302bd807a469a10ecc6561c6e20b0d23f8ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128723,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, and exact-head checks are still incomplete with one completed failing shard; validate the clean merge result and that shard before landing. (sha=3951a8516b4f3fef3c1ca7b04790dafd4a17b1fa)",
-      "expected_head_sha": "3951a8516b4f3fef3c1ca7b04790dafd4a17b1fa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T13:01:18.561Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-foreign-session-reset",
-        "head_sha": "3951a8516b4f3fef3c1ca7b04790dafd4a17b1fa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128724:5395506375:2026-08-24T12:57:08Z:clawsweeper_needs_human",
       "comment_id": "5395506375",
@@ -32362,6 +32329,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128802:5399244332:2026-08-24T17:57:56Z:re_review",
+      "comment_id": "5399244332",
+      "comment_version_key": "5399244332:2026-08-24T17:57:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128802#issuecomment-5399244332",
+      "comment_created_at": "2026-08-24T17:57:56Z",
+      "comment_updated_at": "2026-08-24T17:57:56Z",
+      "comment_body_sha256": "66fd280965ef8134854dde999a20f521ecd16d2b58682dcd102360dd10263a1a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128802,
+      "author": "elikampf",
+      "author_id": 200843760,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-24T17:58:49.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/external-cli-owned-auth-status",
+        "head_sha": "4d99434f71e8adb1d5c522c4ce76f347cae10b94",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
