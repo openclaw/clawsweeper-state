@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-23T23:53:41.440Z",
+  "updated_at": "2026-08-23T23:57:36.431Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113980:5388294404:2026-08-23T20:28:57Z:re_review",
-      "comment_id": "5388294404",
-      "comment_version_key": "5388294404:2026-08-23T20:28:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113980#issuecomment-5388294404",
-      "comment_created_at": "2026-08-23T20:28:57Z",
-      "comment_updated_at": "2026-08-23T20:28:57Z",
-      "comment_body_sha256": "8670b936d62daa65df36384dac7bdedfd32d4d08bfbb3d01648c7b1cee3fe433",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113980,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-23T20:29:37.426Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/111854-truncation-placeholder",
-        "head_sha": "34ed23db070236746baa165d79e0a1af4226e0d1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120331:5221300974:2026-08-23T20:29:11Z:clawsweeper_needs_human",
       "comment_id": "5221300974",
@@ -30158,6 +30111,39 @@
         "kind": "pull_request",
         "branch": "fix/wsl2-workspace-owned-stdin",
         "head_sha": "3b2220a532de2b2b2eb44af2c1d47977d0fd1616",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128131:5384601467:2026-08-23T23:56:47Z:clawsweeper_needs_human",
+      "comment_id": "5384601467",
+      "comment_version_key": "5384601467:2026-08-23T23:56:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128131#issuecomment-5384601467",
+      "comment_created_at": "2026-08-23T06:22:38Z",
+      "comment_updated_at": "2026-08-23T23:56:47Z",
+      "comment_body_sha256": "9519eef5bc3334a1a05dcab3303ecc21ea6bc41dea782aa5f4daf77d9ab62871",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128131,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the redacted logged-out SDK run shows startup and an authentication failure, not an authenticated resp...; Review finding: [P1] Keep the SDK child under managed lifecycle ownership — extensions/anthropic/agent-sdk.runtime.ts:415-417 - [P1] Avoid bundling every Agent SDK platform binary... (sha=fe842dadefc290086f29b00b173908bc08dbb4b9)",
+      "expected_head_sha": "fe842dadefc290086f29b00b173908bc08dbb4b9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-23T23:57:36.431Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/anthropic-agent-sdk",
+        "head_sha": "fe842dadefc290086f29b00b173908bc08dbb4b9",
         "cluster_id": null,
         "job_path": null
       }
