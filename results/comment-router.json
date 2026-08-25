@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T02:56:31.391Z",
+  "updated_at": "2026-08-25T02:58:46.267Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128757:5396785812:2026-08-24T23:08:01Z:clawsweeper_auto_repair",
-      "comment_id": "5396785812",
-      "comment_version_key": "5396785812:2026-08-24T23:08:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128757#issuecomment-5396785812",
-      "comment_created_at": "2026-08-24T14:38:16Z",
-      "comment_updated_at": "2026-08-24T23:08:01Z",
-      "comment_body_sha256": "42bbc4dcbda470bce9f5276ab5760b81f81b1711b7a034259e0fb184d9586617",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128757,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=8fd6823b034bb3a2da8f8b9bf3f5199745a0d179)",
-      "expected_head_sha": "8fd6823b034bb3a2da8f8b9bf3f5199745a0d179",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-24T23:13:55.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-thinking-adaptive-ollama",
-        "head_sha": "8fd6823b034bb3a2da8f8b9bf3f5199745a0d179",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128888:5402690703:2026-08-24T23:06:18Z:clawsweeper_needs_human",
       "comment_id": "5402690703",
@@ -30382,6 +30349,53 @@
         "kind": "pull_request",
         "branch": "fix/vault-relative-expiry",
         "head_sha": "272f53af8a1a66fa6760cbe4eaeb06fd75c00b2e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128905:5404474352:2026-08-25T02:58:01Z:re_review",
+      "comment_id": "5404474352",
+      "comment_version_key": "5404474352:2026-08-25T02:58:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128905#issuecomment-5404474352",
+      "comment_created_at": "2026-08-25T02:58:01Z",
+      "comment_updated_at": "2026-08-25T02:58:01Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128905,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T02:58:44.055Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/127583-sessions-cleanup-all-agents",
+        "head_sha": "24598bdec6820d52a8824b2b6bd6c7662b26de24",
         "cluster_id": null,
         "job_path": null
       },
