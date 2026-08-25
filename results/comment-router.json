@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T15:14:54.837Z",
+  "updated_at": "2026-08-25T15:15:00.371Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123356:5287474810:2026-08-25T10:44:12Z:clawsweeper_auto_repair",
-      "comment_id": "5287474810",
-      "comment_version_key": "5287474810:2026-08-25T10:44:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123356#issuecomment-5287474810",
-      "comment_created_at": "2026-08-13T23:18:35Z",
-      "comment_updated_at": "2026-08-25T10:44:12Z",
-      "comment_body_sha256": "9690fe0c38ea3f10c74fd8930d94a64ac792d7aa18ca82fc8498fcbb8d3a463e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123356,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7077daf25a25e8883335c8ea21efb2a75132fe00)",
-      "expected_head_sha": "7077daf25a25e8883335c8ea21efb2a75132fe00",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T10:50:00.044Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "improve/command-arg-staged-input",
-        "head_sha": "7077daf25a25e8883335c8ea21efb2a75132fe00",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128253:5386885962:2026-08-25T10:46:25Z:clawsweeper_needs_human",
       "comment_id": "5386885962",
@@ -31573,6 +31540,53 @@
       "status": "skipped",
       "processed_at": "2026-08-25T15:14:54.837Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129324:5412551048:2026-08-25T15:13:34Z:re_review",
+      "comment_id": "5412551048",
+      "comment_version_key": "5412551048:2026-08-25T15:13:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129324#issuecomment-5412551048",
+      "comment_created_at": "2026-08-25T15:13:34Z",
+      "comment_updated_at": "2026-08-25T15:13:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129324,
+      "author": "Finn763",
+      "author_id": 165816600,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T15:14:58.566Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/129209-json-nesting-stack-overflow",
+        "head_sha": "9915ef6f65f2ee537c02b5185fb5d48c0bb0e34e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
