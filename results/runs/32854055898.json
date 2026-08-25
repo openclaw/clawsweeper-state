@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-129349",
+  "mode": "autonomous",
+  "run_id": "32854055898",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32854055898",
+  "head_sha": "d61664303d1bcab286362c8386cc2b5cb77e2c7f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-129349.md",
+  "published_at": "2026-08-25T14:46:18.271Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/129349",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/129349",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the parser defect at extensions/line/src/card-command.ts:64: unconditional comma splitting truncates URI actions before both /card action and /card buttons consume the shared parser. A narrow two-file repair is planned; this worker cannot edit or validate because the checkout is read-only and Corepack cannot initialize its cache.",
+  "actions": [
+    {
+      "target": "#129349",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#129349",
+      "candidate_fix": null,
+      "reason": "Implementation is appropriate and narrowly scoped, but this worker cannot modify the branch or run the focused test in the supplied read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-129349",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#129349",
+      "candidate_fix": null,
+      "reason": "Executor should create or update the requested ClawSweeper branch after restoring a writable checkout and dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
