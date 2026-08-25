@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T19:36:07.494Z",
+  "updated_at": "2026-08-25T19:36:37.751Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123179:5288036884:2026-08-25T13:35:29Z:clawsweeper_needs_human",
-      "comment_id": "5288036884",
-      "comment_version_key": "5288036884:2026-08-25T13:35:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123179#issuecomment-5288036884",
-      "comment_created_at": "2026-08-14T00:42:12Z",
-      "comment_updated_at": "2026-08-25T13:35:29Z",
-      "comment_body_sha256": "1e2e37d0eefb13a37cd38dde3a2430a2720f10687586903e5fdf0a09398c1831",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123179,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a dirty merge state; any rebase must preserve current-main Matrix tests and rerun the focused route and trace suites before landing. (sha=631ff34fea54ce3ffc3911e4f103370514d2253b)",
-      "expected_head_sha": "631ff34fea54ce3ffc3911e4f103370514d2253b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T13:43:39.742Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/matrix-campaign-fixtures",
-        "head_sha": "631ff34fea54ce3ffc3911e4f103370514d2253b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:617:5410623893:2026-08-25T13:42:56Z:clawsweeper_auto_repair",
       "comment_id": "5410623893",
@@ -32460,6 +32427,53 @@
         "kind": "pull_request",
         "branch": "fix/codeql-workflow-docs-20260825",
         "head_sha": "6c5e405888ee75416c2e5ddadb28866d4fde46ae",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/libopus-wasm:5:5415691770:2026-08-25T19:35:04Z:re_review",
+      "comment_id": "5415691770",
+      "comment_version_key": "5415691770:2026-08-25T19:35:04Z",
+      "comment_url": "https://github.com/openclaw/libopus-wasm/pull/5#issuecomment-5415691770",
+      "comment_created_at": "2026-08-25T19:35:04Z",
+      "comment_updated_at": "2026-08-25T19:35:04Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/libopus-wasm",
+      "issue_number": 5,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T19:36:34.906Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codeql-workflow-permissions",
+        "head_sha": "411efb03b6baddc8194bb64900ef632bfa845a4b",
         "cluster_id": null,
         "job_path": null
       },
