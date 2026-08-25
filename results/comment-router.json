@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T21:27:20.123Z",
+  "updated_at": "2026-08-25T21:27:24.560Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:4714275462:2026-06-16T02:26:15Z:re_review",
-      "comment_id": "4714275462",
-      "comment_version_key": "4714275462:2026-06-16T02:26:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4714275462",
-      "comment_created_at": "2026-06-16T02:26:15Z",
-      "comment_updated_at": "2026-06-16T02:26:15Z",
-      "comment_body_sha256": "7517273973da1a647ad855731610365e10cb3963c5ef2e6c8feeccf0874f2142",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T15:00:29.755Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:4715174043:2026-06-16T05:07:27Z:re_review",
       "comment_id": "4715174043",
@@ -32347,6 +32320,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T21:27:20.123Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129570:5417019384:2026-08-25T21:25:54Z:clawsweeper_needs_human",
+      "comment_id": "5417019384",
+      "comment_version_key": "5417019384:2026-08-25T21:25:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129570#issuecomment-5417019384",
+      "comment_created_at": "2026-08-25T21:25:54Z",
+      "comment_updated_at": "2026-08-25T21:25:54Z",
+      "comment_body_sha256": "8f8c9be726490f0162cf8505b30443b32b41c345b8254a3e453a40bb546e2f6b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129570,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Logbook databases would create four persistent indexes on their next open; the PR reports about 19.25 MB of added storage and roughly 366 ms of aggregate build time at 400,00... (sha=5dc2e8b9dc2474653436fe0deea0dc45379eb03d)",
+      "expected_head_sha": "5dc2e8b9dc2474653436fe0deea0dc45379eb03d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T21:27:24.560Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/logbook-sqlite-indexes",
+        "head_sha": "5dc2e8b9dc2474653436fe0deea0dc45379eb03d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
