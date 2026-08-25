@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T14:34:56.232Z",
+  "updated_at": "2026-08-25T14:35:08.516Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:335:5403467746:2026-08-25T09:39:47Z:clawsweeper_needs_human",
-      "comment_id": "5403467746",
-      "comment_version_key": "5403467746:2026-08-25T09:39:47Z",
-      "comment_url": "https://github.com/openclaw/mcporter/pull/335#issuecomment-5403467746",
-      "comment_created_at": "2026-08-25T00:47:03Z",
-      "comment_updated_at": "2026-08-25T09:39:47Z",
-      "comment_body_sha256": "66502ec75319b193399bc108a5a2dde503324e5d9344a7f86c6bda4d6f01d9b5",
-      "repo": "openclaw/mcporter",
-      "issue_number": 335,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing automation that replays an old token response containing only expires_in will now receive a derived future expiry; such automation must provide expires_at or expiresAt as the... (sha=272f53af8a1a66fa6760cbe4eaeb06fd75c00b2e)",
-      "expected_head_sha": "272f53af8a1a66fa6760cbe4eaeb06fd75c00b2e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T09:48:54.511Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/vault-relative-expiry",
-        "head_sha": "272f53af8a1a66fa6760cbe4eaeb06fd75c00b2e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/mcporter:335:5403696404:2026-08-25T01:14:33Z:re_review",
       "comment_id": "5403696404",
@@ -32339,6 +32306,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127813:5411984588:2026-08-25T14:33:37Z:re_review",
+      "comment_id": "5411984588",
+      "comment_version_key": "5411984588:2026-08-25T14:33:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127813#issuecomment-5411984588",
+      "comment_created_at": "2026-08-25T14:33:37Z",
+      "comment_updated_at": "2026-08-25T14:33:37Z",
+      "comment_body_sha256": "950eb5a9aae02ea47464295c8507f006de7d197c44d77234dcf82a21bfb6d4e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127813,
+      "author": "Marvinthebored",
+      "author_id": 262704729,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T14:35:05.930Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/explicit-model-persistence-scopes",
+        "head_sha": "9c70539f491f467e938916e8f9349698108f51f4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
