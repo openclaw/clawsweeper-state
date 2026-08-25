@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:04:03.460Z",
+  "updated_at": "2026-08-25T23:04:06.716Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118275:5160729479:2026-08-25T15:52:26Z:clawsweeper_auto_repair",
-      "comment_id": "5160729479",
-      "comment_version_key": "5160729479:2026-08-25T15:52:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118275#issuecomment-5160729479",
-      "comment_created_at": "2026-08-02T22:52:06Z",
-      "comment_updated_at": "2026-08-25T15:52:26Z",
-      "comment_body_sha256": "e705d6a6008df97f8a910e7427bbeb0f643355b59c568a44c12abbfce650fa18",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118275,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1b375753f6213e0d83f19b1a8870b66cf8ef0057)",
-      "expected_head_sha": "1b375753f6213e0d83f19b1a8870b66cf8ef0057",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T16:06:26.522Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-toolfilter-probe-names-98193",
-        "head_sha": "1b375753f6213e0d83f19b1a8870b66cf8ef0057",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122596:5265834592:2026-08-25T15:50:13Z:clawsweeper_needs_human",
       "comment_id": "5265834592",
@@ -33109,6 +33076,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128475:5390482203:2026-08-25T23:01:27Z:clawsweeper_needs_human",
+      "comment_id": "5390482203",
+      "comment_version_key": "5390482203:2026-08-25T23:01:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128475#issuecomment-5390482203",
+      "comment_created_at": "2026-08-24T03:48:10Z",
+      "comment_updated_at": "2026-08-25T23:01:27Z",
+      "comment_body_sha256": "b8d2b26ac07444e278eab0217f3cbb8ad465ef589b2f150aa8cf662fb7f12391",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128475,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Private QA routes that previously fell back to OpenClaw will now invoke Codex, so a real Codex/mock transport mismatch will surface as a QA failure rather than a false-green fallback. (sha=a3033e5061244f915b7e67f4666d60236e0ca934)",
+      "expected_head_sha": "a3033e5061244f915b7e67f4666d60236e0ca934",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T23:04:06.716Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-runtime-pair-config",
+        "head_sha": "a3033e5061244f915b7e67f4666d60236e0ca934",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
