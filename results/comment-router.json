@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T20:44:20.420Z",
+  "updated_at": "2026-08-25T20:44:22.932Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128905:5411751592:2026-08-25T14:17:26Z:re_review",
-      "comment_id": "5411751592",
-      "comment_version_key": "5411751592:2026-08-25T14:17:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128905#issuecomment-5411751592",
-      "comment_created_at": "2026-08-25T14:17:26Z",
-      "comment_updated_at": "2026-08-25T14:17:26Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128905,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T14:18:15.267Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/127583-sessions-cleanup-all-agents",
-        "head_sha": "e320db3ffaf3b7942a33e47fa06ffc29bf2f64cf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129348:5411763472:2026-08-25T14:18:13Z:re_review",
       "comment_id": "5411763472",
@@ -32294,6 +32247,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-native-browser-import-mode-lifecycle-20260825",
         "head_sha": "da3a20b611dd1d5af02370aaadd2fb041fe6609d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/uirouter:21:5304826827:2026-08-25T20:42:30Z:clawsweeper_needs_human",
+      "comment_id": "5304826827",
+      "comment_version_key": "5304826827:2026-08-25T20:42:30Z",
+      "comment_url": "https://github.com/openclaw/uirouter/pull/21#issuecomment-5304826827",
+      "comment_created_at": "2026-08-15T23:58:21Z",
+      "comment_updated_at": "2026-08-25T20:42:30Z",
+      "comment_body_sha256": "302a904a2a48f8d4b45ff83585227ba5f277952cb4d94acf21cae25eec02949d",
+      "repo": "openclaw/uirouter",
+      "issue_number": 21,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the established unbounded behavior: a valid finite loader-redirect sequence longer than ten hops now ends in an error with no consumer override. (sha=8c45e1b347a4d7524f7b6ce2f47a5f457178d536)",
+      "expected_head_sha": "8c45e1b347a4d7524f7b6ce2f47a5f457178d536",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T20:44:22.932Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/redirect-hop-limit",
+        "head_sha": "8c45e1b347a4d7524f7b6ce2f47a5f457178d536",
         "cluster_id": null,
         "job_path": null
       }
