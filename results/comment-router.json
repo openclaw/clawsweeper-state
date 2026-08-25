@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:38:13.727Z",
+  "updated_at": "2026-08-25T23:38:15.032Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122036:5413764126:2026-08-25T16:52:22Z:re_review",
-      "comment_id": "5413764126",
-      "comment_version_key": "5413764126:2026-08-25T16:52:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122036#issuecomment-5413764126",
-      "comment_created_at": "2026-08-25T16:52:22Z",
-      "comment_updated_at": "2026-08-25T16:52:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122036,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T16:54:12.989Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-119715-single-timeout-final",
-        "head_sha": "b163faaf9265e3bc8c109139e20768e777e2668b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129467:5413779403:2026-08-25T16:53:32Z:clawsweeper_needs_human",
       "comment_id": "5413779403",
@@ -32893,6 +32846,39 @@
         "kind": "pull_request",
         "branch": "fix/tools-sessions-reload",
         "head_sha": "de1f589933c603d02ff49c83210262d9544867fc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116354:5129657580:2026-08-25T23:33:46Z:clawsweeper_needs_human",
+      "comment_id": "5129657580",
+      "comment_version_key": "5129657580:2026-08-25T23:33:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116354#issuecomment-5129657580",
+      "comment_created_at": "2026-07-30T10:30:28Z",
+      "comment_updated_at": "2026-08-25T23:33:46Z",
+      "comment_body_sha256": "f37e5376b3f88015414f3052b69708b71bf8b24611ed1191ee21eda2e870a7eb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116354,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing callers that sent malformed values will now receive 400 instead of coercion and agent/provider work; that intentional compatibility correction should be checked against the p... (sha=485f7ae36f645bf345a41fd17ba5c4badef1db4b)",
+      "expected_head_sha": "485f7ae36f645bf345a41fd17ba5c4badef1db4b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T23:38:15.032Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-gateway-api-20260730",
+        "head_sha": "485f7ae36f645bf345a41fd17ba5c4badef1db4b",
         "cluster_id": null,
         "job_path": null
       }
