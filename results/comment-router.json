@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T02:46:33.045Z",
+  "updated_at": "2026-08-25T02:48:28.976Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118468:5162446005:2026-08-24T23:03:06Z:clawsweeper_auto_repair",
-      "comment_id": "5162446005",
-      "comment_version_key": "5162446005:2026-08-24T23:03:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118468#issuecomment-5162446005",
-      "comment_created_at": "2026-08-03T04:54:57Z",
-      "comment_updated_at": "2026-08-24T23:03:06Z",
-      "comment_body_sha256": "dfcafbd160a17ba1e2819ac0bb6f91eb39053319e4d009c9b2c36801c10a9b2b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118468,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a3a306659a81158eaf5b4ea9c3f7421a71e0fba0)",
-      "expected_head_sha": "a3a306659a81158eaf5b4ea9c3f7421a71e0fba0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T23:13:55.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stall-diagnostics-wording",
-        "head_sha": "a3a306659a81158eaf5b4ea9c3f7421a71e0fba0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120249:5219149537:2026-08-20T00:14:14Z:clawsweeper_auto_repair",
       "comment_id": "5219149537",
@@ -30373,6 +30340,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128790:5404409984:2026-08-25T02:47:51Z:re_review",
+      "comment_id": "5404409984",
+      "comment_version_key": "5404409984:2026-08-25T02:47:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128790#issuecomment-5404409984",
+      "comment_created_at": "2026-08-25T02:47:51Z",
+      "comment_updated_at": "2026-08-25T02:47:51Z",
+      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128790,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T02:48:26.662Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/view-image-timeout-grace-83416",
+        "head_sha": "a125b50e5594dee9812755b2bf2023f00f679c5e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
