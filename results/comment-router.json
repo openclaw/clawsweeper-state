@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T02:33:02.252Z",
+  "updated_at": "2026-08-25T02:33:08.554Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127292:5402580829:2026-08-24T22:53:13Z:re_review",
-      "comment_id": "5402580829",
-      "comment_version_key": "5402580829:2026-08-24T22:53:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127292#issuecomment-5402580829",
-      "comment_created_at": "2026-08-24T22:53:13Z",
-      "comment_updated_at": "2026-08-24T22:53:13Z",
-      "comment_body_sha256": "b0d4d2258a8a238fbeeb933a55f446f704b82aa3a3d1f55fbcff51a796429522",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127292,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T22:54:04.390Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fanout-visible-final",
-        "head_sha": "7b86257d4b879908d88624c3cd5a258a69b74c13",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabbox:1513:5402608434:2026-08-24T22:56:25Z:re_review",
       "comment_id": "5402608434",
@@ -30404,6 +30357,39 @@
         "kind": "pull_request",
         "branch": "sunlit/fix/doctor-transcript-atomic",
         "head_sha": "9d5df5dfe68413ab74dbf184153b8c57e02c676e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115735:5118124660:2026-08-25T02:29:23Z:clawsweeper_auto_repair",
+      "comment_id": "5118124660",
+      "comment_version_key": "5118124660:2026-08-25T02:29:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115735#issuecomment-5118124660",
+      "comment_created_at": "2026-07-29T13:04:02Z",
+      "comment_updated_at": "2026-08-25T02:29:23Z",
+      "comment_body_sha256": "6011b0182b2430c0af5d94121001440dff8ca739572e3c86c4d0444798106e84",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115735,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=893df76e42b6520b73941684e08004fe0c992909)",
+      "expected_head_sha": "893df76e42b6520b73941684e08004fe0c992909",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T02:33:08.554Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skills-codex-invocation-policy",
+        "head_sha": "893df76e42b6520b73941684e08004fe0c992909",
         "cluster_id": null,
         "job_path": null
       }
