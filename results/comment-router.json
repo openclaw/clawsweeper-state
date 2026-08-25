@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-08-25T20:43:41.420Z",
+  "updated_at": "2026-08-25T20:44:02.878Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129363:5411677310:2026-08-25T14:12:34Z:clawsweeper_auto_repair",
-      "comment_id": "5411677310",
-      "comment_version_key": "5411677310:2026-08-25T14:12:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129363#issuecomment-5411677310",
-      "comment_created_at": "2026-08-25T14:12:34Z",
-      "comment_updated_at": "2026-08-25T14:12:34Z",
-      "comment_body_sha256": "14e5a6b79b394c6bb2f2f3cd654d4fb5c6c2ff979443929fd9b59867c5a92db6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129363,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ca7d07c16dafa04147598dcef451295fe5152124)",
-      "expected_head_sha": "ca7d07c16dafa04147598dcef451295fe5152124",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T14:15:22.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/129359-emit-guard-no-handlers",
-        "head_sha": "ca7d07c16dafa04147598dcef451295fe5152124",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128757:5411712982:2026-08-25T14:14:54Z:re_review",
-      "comment_id": "5411712982",
-      "comment_version_key": "5411712982:2026-08-25T14:14:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128757#issuecomment-5411712982",
-      "comment_created_at": "2026-08-25T14:14:54Z",
-      "comment_updated_at": "2026-08-25T14:14:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128757,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T14:15:38.405Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-thinking-adaptive-ollama",
-        "head_sha": "8d8921d6827bde1f5947272699b38939f02c5980",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124305:5411714008:2026-08-25T14:14:58Z:re_review",
       "comment_id": "5411714008",
@@ -32359,6 +32279,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125130:5312875847:2026-08-25T20:31:08Z:clawsweeper_needs_human",
+      "comment_id": "5312875847",
+      "comment_version_key": "5312875847:2026-08-25T20:31:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125130#issuecomment-5312875847",
+      "comment_created_at": "2026-08-17T07:01:32Z",
+      "comment_updated_at": "2026-08-25T20:31:08Z",
+      "comment_body_sha256": "a7f44f42751927a2822c8d3a6728da9805f6b8b7673e8b4189064434b8c0000b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125130,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by nine lines for a diagnostic repair; the shared delivery owner is the narrow point that has both phase evidence and run/session identity, so no net-neutral pla... (sha=67508935f79fbb9796087b9265c74a6d0cf276ca)",
+      "expected_head_sha": "67508935f79fbb9796087b9265c74a6d0cf276ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T20:44:02.878Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/candidate-core",
+        "head_sha": "67508935f79fbb9796087b9265c74a6d0cf276ca",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125130:5408143304:2026-08-25T09:13:01Z:re_review",
+      "comment_id": "5408143304",
+      "comment_version_key": "5408143304:2026-08-25T09:13:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125130#issuecomment-5408143304",
+      "comment_created_at": "2026-08-25T09:13:01Z",
+      "comment_updated_at": "2026-08-25T09:13:01Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125130,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T20:44:02.878Z",
+      "target": null
     }
   ]
 }
