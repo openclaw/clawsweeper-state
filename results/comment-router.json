@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T18:34:11.675Z",
+  "updated_at": "2026-08-25T18:34:12.872Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129316:5410604078:2026-08-25T12:48:49Z:re_review",
-      "comment_id": "5410604078",
-      "comment_version_key": "5410604078:2026-08-25T12:48:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129316#issuecomment-5410604078",
-      "comment_created_at": "2026-08-25T12:48:49Z",
-      "comment_updated_at": "2026-08-25T12:48:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129316,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T13:28:36.448Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129328:5410656624:2026-08-25T12:53:15Z:re_review",
       "comment_id": "5410656624",
@@ -31911,6 +31884,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T18:34:11.675Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126685:5357300993:2026-08-25T18:29:15Z:clawsweeper_needs_human",
+      "comment_id": "5357300993",
+      "comment_version_key": "5357300993:2026-08-25T18:29:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126685#issuecomment-5357300993",
+      "comment_created_at": "2026-08-20T14:29:50Z",
+      "comment_updated_at": "2026-08-25T18:29:15Z",
+      "comment_body_sha256": "9100be54a80973ea9cce957c13ea6bf7c2a5394f43d8c273e92a6e730a7fc142",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126685,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports after-fix measurements but has no inspectable redacted terminal output, logs, recording, or artifact from the real migratio... (sha=509eb2c53f055f75eb1fdeb6cff92de374b4f60d)",
+      "expected_head_sha": "509eb2c53f055f75eb1fdeb6cff92de374b4f60d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T18:34:12.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-migration-empty-store-scaling",
+        "head_sha": "509eb2c53f055f75eb1fdeb6cff92de374b4f60d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
