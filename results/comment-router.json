@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-25T20:00:07.135Z",
+  "updated_at": "2026-08-25T19:59:21.889Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129357:5411674877:2026-08-25T14:12:24Z:re_review",
+      "comment_id": "5411674877",
+      "comment_version_key": "5411674877:2026-08-25T14:12:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129357#issuecomment-5411674877",
+      "comment_created_at": "2026-08-25T14:12:24Z",
+      "comment_updated_at": "2026-08-25T14:12:24Z",
+      "comment_body_sha256": "d1b7f5e8314e4bc4dd289f2d38c4bc913843abb170648cd6ea377cf12c845563",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129357,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T14:14:47.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/fix-main-ci-auth-baselines",
+        "head_sha": "a2f415154fcc15be8e3da15c29ffa09e94f6f73e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92230:4683232032:2026-08-24T09:30:02Z:clawsweeper_auto_repair",
       "comment_id": "4683232032",
@@ -32220,53 +32267,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/wacli:370:5415988143:2026-08-25T19:59:13Z:re_review",
-      "comment_id": "5415988143",
-      "comment_version_key": "5415988143:2026-08-25T19:59:13Z",
-      "comment_url": "https://github.com/openclaw/wacli/pull/370#issuecomment-5415988143",
-      "comment_created_at": "2026-08-25T19:59:13Z",
-      "comment_updated_at": "2026-08-25T19:59:13Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/wacli",
-      "issue_number": 370,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T20:00:04.806Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codeql-docs-toc-sanitization-20260825",
-        "head_sha": "72ac652a522795159522d018336c2ed62da6dcdd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
