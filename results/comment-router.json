@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T07:31:10.589Z",
+  "updated_at": "2026-08-25T07:32:04.369Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128286:5387213432:2026-08-25T03:26:01Z:clawsweeper_auto_repair",
-      "comment_id": "5387213432",
-      "comment_version_key": "5387213432:2026-08-25T03:26:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128286#issuecomment-5387213432",
-      "comment_created_at": "2026-08-23T17:01:44Z",
-      "comment_updated_at": "2026-08-25T03:26:01Z",
-      "comment_body_sha256": "a6d0823f4f154c6d819e02571a99cf334c6c7c664bcacfa891e5528436d18efb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128286,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=955736e5080eb61e80ebdcbd5c3055f70b71adf8)",
-      "expected_head_sha": "955736e5080eb61e80ebdcbd5c3055f70b71adf8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T03:27:20.557Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/pin-to-a-group-instead-of-globally",
-        "head_sha": "955736e5080eb61e80ebdcbd5c3055f70b71adf8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128954:5404705432:2026-08-25T03:32:00Z:re_review",
       "comment_id": "5404705432",
@@ -30557,6 +30524,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1517:5407018019:2026-08-25T07:31:14Z:clawsweeper_needs_human",
+      "comment_id": "5407018019",
+      "comment_version_key": "5407018019:2026-08-25T07:31:14Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1517#issuecomment-5407018019",
+      "comment_created_at": "2026-08-25T07:31:14Z",
+      "comment_updated_at": "2026-08-25T07:31:14Z",
+      "comment_body_sha256": "75de7fb412c161ceaff2532a7816a9a461b76f510efc01024fc2f974833e48ef",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1517,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body lists test commands, but the supplied regression path uses an in-memory HTTP transport; before merge, provide redacted evidence fro...; Review finding: [P1] Initialize redaction state before late coordinator attachment — internal/cli/run_recorder.go:48-52 - [medium] Late coordinator binding omits the credential sn... (sha=459431dc8d434aa854f07d8005ade2e06acc8b3d)",
+      "expected_head_sha": "459431dc8d434aa854f07d8005ade2e06acc8b3d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T07:32:04.369Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-run-recorder-secret-redaction",
+        "head_sha": "459431dc8d434aa854f07d8005ade2e06acc8b3d",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
