@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T13:39:23.340Z",
+  "updated_at": "2026-08-25T13:39:26.529Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127091:5367081444:2026-08-25T08:22:06Z:clawsweeper_needs_human",
-      "comment_id": "5367081444",
-      "comment_version_key": "5367081444:2026-08-25T08:22:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127091#issuecomment-5367081444",
-      "comment_created_at": "2026-08-21T08:03:10Z",
-      "comment_updated_at": "2026-08-25T08:22:06Z",
-      "comment_body_sha256": "ea1a579be8987d50fdfa04959c788132ced7a232296b03d35598abde7b6b3f56",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127091,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The submitted terminal output is useful helper evidence, but its script is absent from the head and it does not show a redacted config...; Review finding: [P1] Use the supported JSON5 configuration in the quick start — docs/reference/privacy-config.md:9-14 - [P1] Remove the tool-output redaction promise — docs/refere... (sha=305ea08a7e8fb762e15197375e5e3fc4fbfecdce)",
-      "expected_head_sha": "305ea08a7e8fb762e15197375e5e3fc4fbfecdce",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T08:24:59.767Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "privacy/payload-redaction-v2",
-        "head_sha": "305ea08a7e8fb762e15197375e5e3fc4fbfecdce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/imsgcrawl:12:5297630847:2026-08-25T08:04:38Z:clawsweeper_needs_human",
       "comment_id": "5297630847",
@@ -32579,6 +32546,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113115:5411219262:2026-08-25T13:38:17Z:re_review",
+      "comment_id": "5411219262",
+      "comment_version_key": "5411219262:2026-08-25T13:38:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113115#issuecomment-5411219262",
+      "comment_created_at": "2026-08-25T13:38:17Z",
+      "comment_updated_at": "2026-08-25T13:38:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113115,
+      "author": "bdjben",
+      "author_id": 188106718,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T13:39:24.610Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/matrix-pr73455-port-20260723",
+        "head_sha": "81a9f7ff451f989f0f2a0e281201a9b57ef86780",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
