@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T09:53:42.173Z",
+  "updated_at": "2026-08-25T09:53:45.086Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5311145571:2026-08-17T02:39:07Z:re_review",
-      "comment_id": "5311145571",
-      "comment_version_key": "5311145571:2026-08-17T02:39:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5311145571",
-      "comment_created_at": "2026-08-17T02:39:07Z",
-      "comment_updated_at": "2026-08-17T02:39:07Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T05:33:20.743Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5311276595:2026-08-17T03:00:32Z:re_review",
       "comment_id": "5311276595",
@@ -31944,6 +31917,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128845:5407886026:2026-08-25T09:53:02Z:re_review",
+      "comment_id": "5407886026",
+      "comment_version_key": "5407886026:2026-08-25T09:53:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128845#issuecomment-5407886026",
+      "comment_created_at": "2026-08-25T08:53:30Z",
+      "comment_updated_at": "2026-08-25T09:53:02Z",
+      "comment_body_sha256": "7deb5fd1b3aed97f7ab9b02f22f9a7db43e96e4805f2327129e01251d66a623e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128845,
+      "author": "Thinkr1",
+      "author_id": 146010473,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T09:53:43.098Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-delivery-mirror-idle-freshness",
+        "head_sha": "2c9d102fa5a645aa20d03dc02972b33f8d393f63",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
