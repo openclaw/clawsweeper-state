@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T04:34:02.235Z",
+  "updated_at": "2026-08-25T04:34:25.575Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112214:5242613514:2026-08-10T15:50:19Z:re_review",
-      "comment_id": "5242613514",
-      "comment_version_key": "5242613514:2026-08-10T15:50:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112214#issuecomment-5242613514",
-      "comment_created_at": "2026-08-10T15:50:19Z",
-      "comment_updated_at": "2026-08-10T15:50:19Z",
-      "comment_body_sha256": "bdb27e675d391505f44034887ea45aaa77222bc83b9442ffb10b196a79957196",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112214,
-      "author": "AdrianIp0204",
-      "author_id": 255652477,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T00:29:36.987Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112214:5242929522:2026-08-10T16:18:29Z:re_review",
       "comment_id": "5242929522",
@@ -30604,6 +30577,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129003:5405269983:2026-08-25T04:33:24Z:clawsweeper_needs_human",
+      "comment_id": "5405269983",
+      "comment_version_key": "5405269983:2026-08-25T04:33:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129003#issuecomment-5405269983",
+      "comment_created_at": "2026-08-25T04:33:24Z",
+      "comment_updated_at": "2026-08-25T04:33:24Z",
+      "comment_body_sha256": "b5b490d6210486862b9ec9b5d82af1a24000943f24ae06f0c9dfa44bff1b15ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129003,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by one line to override the runtime writer’s pretty-print default; changing that default instead would alter unrelated JSON commands. (sha=d86476511f23f219bc550a260a0a8627d521cb38)",
+      "expected_head_sha": "d86476511f23f219bc550a260a0a8627d521cb38",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T04:34:25.575Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "autoqa30-telemetry-json-stdout",
+        "head_sha": "d86476511f23f219bc550a260a0a8627d521cb38",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
