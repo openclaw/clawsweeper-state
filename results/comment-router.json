@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T13:21:43.939Z",
+  "updated_at": "2026-08-25T13:23:50.937Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5366554955:2026-08-21T07:23:09Z:re_review",
-      "comment_id": "5366554955",
-      "comment_version_key": "5366554955:2026-08-21T07:23:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5366554955",
-      "comment_created_at": "2026-08-21T07:23:09Z",
-      "comment_updated_at": "2026-08-21T07:23:09Z",
-      "comment_body_sha256": "ba853fd5df146c1005aa3dc4af33ac359a07dc5a1d06ebde453675142d46148e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T08:01:38.540Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5374163558:2026-08-21T19:11:26Z:re_review",
       "comment_id": "5374163558",
@@ -32833,6 +32806,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128498:5390961196:2026-08-25T13:21:27Z:clawsweeper_needs_human",
+      "comment_id": "5390961196",
+      "comment_version_key": "5390961196:2026-08-25T13:21:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128498#issuecomment-5390961196",
+      "comment_created_at": "2026-08-24T05:05:07Z",
+      "comment_updated_at": "2026-08-25T13:21:27Z",
+      "comment_body_sha256": "16b44dcdcb061f5e95519dcf83c7f3a2298b14ea0587e0390c5ea3f4e98a6559",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128498,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body has unit/mock coverage, but needs redacted after-fix mock-gateway or live Discord evidence that the stringified message-tool value... (sha=2ab057436d1681af50016b1f60382c873e04ebf9)",
+      "expected_head_sha": "2ab057436d1681af50016b1f60382c873e04ebf9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T13:23:50.937Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "gaoanze888/discord-components-string-coerce",
+        "head_sha": "2ab057436d1681af50016b1f60382c873e04ebf9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
