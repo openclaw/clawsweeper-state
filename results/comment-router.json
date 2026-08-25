@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T03:08:58.237Z",
+  "updated_at": "2026-08-25T03:09:19.021Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121799:5288008025:2026-08-14T00:37:39Z:re_review",
-      "comment_id": "5288008025",
-      "comment_version_key": "5288008025:2026-08-14T00:37:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121799#issuecomment-5288008025",
-      "comment_created_at": "2026-08-14T00:37:39Z",
-      "comment_updated_at": "2026-08-14T00:37:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121799,
-      "author": "sasan1200",
-      "author_id": 28139727,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T23:20:38.016Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121799:5288127485:2026-08-14T00:52:31Z:re_review",
       "comment_id": "5288127485",
@@ -30467,6 +30440,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128790:5398697840:2026-08-25T03:05:41Z:clawsweeper_needs_human",
+      "comment_id": "5398697840",
+      "comment_version_key": "5398697840:2026-08-25T03:05:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128790#issuecomment-5398697840",
+      "comment_created_at": "2026-08-24T17:11:47Z",
+      "comment_updated_at": "2026-08-25T03:05:41Z",
+      "comment_body_sha256": "592fc04b7588d6f93073ef69401e6de0dc93f79c562ba1120672cfdaf3fcfb8c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128790,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied terminal output invokes the watchdog with a simulated bridge/provider failure rather than the registered image fallback; add redac... (sha=a125b50e5594dee9812755b2bf2023f00f679c5e)",
+      "expected_head_sha": "a125b50e5594dee9812755b2bf2023f00f679c5e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T03:09:19.021Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/view-image-timeout-grace-83416",
+        "head_sha": "a125b50e5594dee9812755b2bf2023f00f679c5e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
