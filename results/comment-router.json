@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T05:55:20.632Z",
+  "updated_at": "2026-08-25T05:55:32.920Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4969677154:2026-07-14T13:27:24Z:re_review",
-      "comment_id": "4969677154",
-      "comment_version_key": "4969677154:2026-07-14T13:27:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4969677154",
-      "comment_created_at": "2026-07-14T13:27:24Z",
-      "comment_updated_at": "2026-07-14T13:27:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T02:03:08.461Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4972982789:2026-07-14T19:10:37Z:re_review",
       "comment_id": "4972982789",
@@ -30292,6 +30265,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128997:5405242237:2026-08-25T05:53:54Z:clawsweeper_needs_human",
+      "comment_id": "5405242237",
+      "comment_version_key": "5405242237:2026-08-25T05:53:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128997#issuecomment-5405242237",
+      "comment_created_at": "2026-08-25T04:29:37Z",
+      "comment_updated_at": "2026-08-25T05:53:54Z",
+      "comment_body_sha256": "9ef9d187b31ad38590222b86fadb8363e47b862dfa25050ad51323c1a069eabf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128997,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: No after-fix real agent-session capture is present; add redacted runtime output showing both notices survive one persisted result before merge.... (sha=a1ba00783544de421e5bad3a94ed01755b05a383)",
+      "expected_head_sha": "a1ba00783544de421e5bad3a94ed01755b05a383",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T05:55:32.920Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-128967-session-truncation-disclosure",
+        "head_sha": "a1ba00783544de421e5bad3a94ed01755b05a383",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
