@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T12:48:37.686Z",
+  "updated_at": "2026-08-25T12:48:38.979Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129049:5407260429:2026-08-25T07:55:55Z:re_review",
-      "comment_id": "5407260429",
-      "comment_version_key": "5407260429:2026-08-25T07:55:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129049#issuecomment-5407260429",
-      "comment_created_at": "2026-08-25T07:55:55Z",
-      "comment_updated_at": "2026-08-25T07:55:55Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129049,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T07:56:32.583Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/media-auto-image-selection-20260825",
-        "head_sha": "0880f5eb0ecbf4dd635d32fceff4710d52dc11c5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3512:5381521199:2026-08-25T07:49:36Z:clawsweeper_needs_human",
       "comment_id": "5381521199",
@@ -32150,6 +32103,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-playwright-scenario-patterns-20260825",
         "head_sha": "a9f4a8794ad07fdf9c8c3c7a2185d65820dbfc64",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129308:5410566881:2026-08-25T12:45:44Z:clawsweeper_needs_human",
+      "comment_id": "5410566881",
+      "comment_version_key": "5410566881:2026-08-25T12:45:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129308#issuecomment-5410566881",
+      "comment_created_at": "2026-08-25T12:45:44Z",
+      "comment_updated_at": "2026-08-25T12:45:44Z",
+      "comment_body_sha256": "6e207ccc35d4d66818b2c5596e661554c9e2554c87a48608761d76411e86353f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129308,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Several exact-head CI checks are currently failed or incomplete; their causes need resolution or attribution before merge, even though the patch itself has no identified correctness d... (sha=caeb14e63ddcd394fc2046a914382949a09f160f)",
+      "expected_head_sha": "caeb14e63ddcd394fc2046a914382949a09f160f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T12:48:38.979Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-message-reactions-limit",
+        "head_sha": "caeb14e63ddcd394fc2046a914382949a09f160f",
         "cluster_id": null,
         "job_path": null
       }
