@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T14:43:22.820Z",
+  "updated_at": "2026-08-25T14:43:36.684Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129211:5408608149:2026-08-25T09:48:59Z:clawsweeper_needs_human",
-      "comment_id": "5408608149",
-      "comment_version_key": "5408608149:2026-08-25T09:48:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129211#issuecomment-5408608149",
-      "comment_created_at": "2026-08-25T09:48:59Z",
-      "comment_updated_at": "2026-08-25T09:48:59Z",
-      "comment_body_sha256": "d181e6d4940daa5a784c8d45df58b8ff1c517702b600a5683770a5ce246a1514",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129211,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Restrict ambient API-key import to a trusted provider set (P1)** - This excludes workspace manifests but still accepts any enabled installed non-bundled plugin. Such a plugin can mark a provider as app-guided, n...; Review finding: [P1] Restrict ambient API-key import to a trusted provider set — src/commands/daemon-install-helpers.ts:240-264 - [high] Enabled external manifests can select pers... (sha=fd7f8652611b9f03627f7c76185b13e1ca5f3d83)",
-      "expected_head_sha": "fd7f8652611b9f03627f7c76185b13e1ca5f3d83",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T09:49:39.157Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/linux-tauri-onboarding-parity",
-        "head_sha": "fd7f8652611b9f03627f7c76185b13e1ca5f3d83",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129052:5406533257:2026-08-25T09:49:02Z:clawsweeper_auto_repair",
       "comment_id": "5406533257",
@@ -32390,6 +32357,53 @@
         "kind": "pull_request",
         "branch": "fix/129359-emit-guard-no-handlers",
         "head_sha": "27f83e9a67468d62db7cc9732904b18e7b5de817",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128997:5412104769:2026-08-25T14:42:43Z:re_review",
+      "comment_id": "5412104769",
+      "comment_version_key": "5412104769:2026-08-25T14:42:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128997#issuecomment-5412104769",
+      "comment_created_at": "2026-08-25T14:42:43Z",
+      "comment_updated_at": "2026-08-25T14:42:43Z",
+      "comment_body_sha256": "20bf33eab5edcdb1e16f0a4cec7006481c2c27d6330f65f6fff75a595a3987ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128997,
+      "author": "Finn763",
+      "author_id": 165816600,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T14:43:34.355Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-128967-session-truncation-disclosure",
+        "head_sha": "a1ba00783544de421e5bad3a94ed01755b05a383",
         "cluster_id": null,
         "job_path": null
       },
