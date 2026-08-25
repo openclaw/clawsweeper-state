@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/128993 at the Telegram outbound adapter boundary. Rich-enabled accounts must use the existing typed rich-block splitter before generic Markdown pre-chunking can cut HTML islands, while plain Telegram remains capped at its existing limit. Preserve explicit top-level and per-account `textChunkLimit` settings, including lower user-selected bounds; do not add a config key or duplicate rich splitting in core. Add a regression that exercises the effective limit for default and named rich accounts and proves a multi-gallery Markdown document reaches the rich planner intact. Validate the adapter/core handoff and rich sender behavior, obtain Telegram harness or live-channel evidence before landing, and place release-note context in the PR body rather than editing CHANGELOG.md.
+Repair https://github.com/openclaw/openclaw/issues/128993 at the Telegram outbound owner boundary. For rich Telegram accounts, prevent shared outbound delivery from generic Markdown pre-chunking so `sendMessageTelegram` receives the full Markdown document and applies its existing account-aware typed rich-block split. Preserve plain and explicit HTML behavior, do not add config or fallback paths, and do not edit CHANGELOG.md; put release-note context in the PR body. Add a regression through the shared outbound path with an over-4,096-character rich document containing a gallery and later heading/list, proving all blocks reach rich delivery and the test fails before the fix.
 
 Likely files:
 
 - extensions/telegram/src/outbound-adapter.ts
 - extensions/telegram/src/telegram-outbound.test.ts
-- extensions/telegram/src/send.test.ts
+- src/infra/outbound/deliver.test.ts
 
 Validation:
 
 - pnpm test extensions/telegram/src/telegram-outbound.test.ts
-- pnpm test extensions/telegram/src/send.test.ts
-- Run a Telegram channel harness or redacted live rich-message send showing all generated galleries and trailing heading/list content are retained.
+- pnpm test src/infra/outbound/deliver.test.ts
 
 ## Operator Prompt
 
