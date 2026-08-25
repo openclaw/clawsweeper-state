@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T08:15:43.692Z",
+  "updated_at": "2026-08-25T08:17:09.685Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5301055418:2026-08-15T07:00:44Z:re_review",
-      "comment_id": "5301055418",
-      "comment_version_key": "5301055418:2026-08-15T07:00:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5301055418",
-      "comment_created_at": "2026-08-15T07:00:44Z",
-      "comment_updated_at": "2026-08-15T07:00:44Z",
-      "comment_body_sha256": "1d89c7d4e169fa96deeb34ef199d2c2c21ab7544b83bb7a45342ddabcda90e9f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T04:49:22.723Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5301153649:2026-08-15T07:28:22Z:re_review",
       "comment_id": "5301153649",
@@ -30746,6 +30719,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129113:5407249586:2026-08-25T08:14:55Z:clawsweeper_needs_human",
+      "comment_id": "5407249586",
+      "comment_version_key": "5407249586:2026-08-25T08:14:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129113#issuecomment-5407249586",
+      "comment_created_at": "2026-08-25T07:54:53Z",
+      "comment_updated_at": "2026-08-25T08:14:55Z",
+      "comment_body_sha256": "9a1ac64413c2dd4f9d23996d47ab76736c1f4456a13645f779685ce21f8bcfeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129113,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact head has no successful macOS Swift compilation, SwiftFormat, or SwiftLint evidence, so platform-native buildability remains unverified. (sha=9bac5c66ec55e80cd7efb329e325244728b5b6d0)",
+      "expected_head_sha": "9bac5c66ec55e80cd7efb329e325244728b5b6d0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T08:17:09.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cleanup/apps-chat-value-normalization",
+        "head_sha": "9bac5c66ec55e80cd7efb329e325244728b5b6d0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
