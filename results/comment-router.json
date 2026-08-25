@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T16:56:52.080Z",
+  "updated_at": "2026-08-25T16:56:57.301Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128803:5398689711:2026-08-25T12:34:12Z:clawsweeper_needs_human",
-      "comment_id": "5398689711",
-      "comment_version_key": "5398689711:2026-08-25T12:34:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128803#issuecomment-5398689711",
-      "comment_created_at": "2026-08-24T17:11:09Z",
-      "comment_updated_at": "2026-08-25T12:34:12Z",
-      "comment_body_sha256": "d714ed343e04bec439a62f72c882aea12a0773945f73bcd7b5d81fcf046e0f76",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128803,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The redacted authenticated WebSocket trace convincingly shows the Gateway response, but the repository policy for this UI-visible chan... (sha=4b2c64a4059c4ca6e56620c7f715141a206b981f)",
-      "expected_head_sha": "4b2c64a4059c4ca6e56620c7f715141a206b981f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T12:37:41.451Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-usage-owner-attribution-128755",
-        "head_sha": "4b2c64a4059c4ca6e56620c7f715141a206b981f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129315:5410417977:2026-08-25T12:32:30Z:clawsweeper_needs_human",
       "comment_id": "5410417977",
@@ -31905,6 +31872,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128997:5413803953:2026-08-25T16:55:26Z:re_review",
+      "comment_id": "5413803953",
+      "comment_version_key": "5413803953:2026-08-25T16:55:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128997#issuecomment-5413803953",
+      "comment_created_at": "2026-08-25T16:55:26Z",
+      "comment_updated_at": "2026-08-25T16:55:26Z",
+      "comment_body_sha256": "f96cbe07484a0ecf647c63aa2c22f45869de9c8d08f5ff46f0ab22960f18bfab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128997,
+      "author": "Finn763",
+      "author_id": 165816600,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T16:56:55.252Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-128967-session-truncation-disclosure",
+        "head_sha": "fe2dc35afc58a078a89fdb2a692bfa5d03b9e79a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
