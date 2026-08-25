@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:17:55.662Z",
+  "updated_at": "2026-08-25T23:19:15.669Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117918:5413537556:2026-08-25T16:32:58Z:re_review",
-      "comment_id": "5413537556",
-      "comment_version_key": "5413537556:2026-08-25T16:32:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117918#issuecomment-5413537556",
-      "comment_created_at": "2026-08-25T16:32:58Z",
-      "comment_updated_at": "2026-08-25T16:32:58Z",
-      "comment_body_sha256": "c0a060ad4c2fa6ce370f320f53f23b4c42492bf3948657f67f19ee9364d4b3db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117918,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T16:34:20.069Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-node-invoke-stream-lifecycle-86a-rev2",
-        "head_sha": "73c14d13330e1cbe92cd4f71231927fb9501cde5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128289:5413541331:2026-08-25T16:33:18Z:re_review",
       "comment_id": "5413541331",
@@ -33040,6 +32993,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115745:5118102960:2026-08-25T23:13:26Z:clawsweeper_needs_human",
+      "comment_id": "5118102960",
+      "comment_version_key": "5118102960:2026-08-25T23:13:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115745#issuecomment-5118102960",
+      "comment_created_at": "2026-07-29T13:02:03Z",
+      "comment_updated_at": "2026-08-25T23:13:26Z",
+      "comment_body_sha256": "8c6cdd0299cf9d263c23d49226b66b7dab58372361712c6e6c9c7f83599152e0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115745,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Strip per-line Markdown quote prefixes before prompt matching (P1)** - A standard blockquote prefixes every prompt line with > , so the raw newline-only pattern never matches and the private history/current-mess...; Review finding: [P1] Strip per-line Markdown quote prefixes before prompt matching — src/agents/embedded-agent-helpers/sanitize-user-facing-text.ts:95-98 - [high] Quoted prompt co... (sha=03d75c2c799c91e5d073223d457c7603690d3714)",
+      "expected_head_sha": "03d75c2c799c91e5d073223d457c7603690d3714",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T23:19:15.669Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/s28-suppress-copied-reply-scaffolding",
+        "head_sha": "d0171802d1a110d4486c3a55a8de35ddbf68e76e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
