@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-25T01:15:11.657Z",
+  "updated_at": "2026-08-25T01:14:24.594Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126146:5337216348:2026-08-24T21:01:27Z:clawsweeper_auto_repair",
+      "comment_id": "5337216348",
+      "comment_version_key": "5337216348:2026-08-24T21:01:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126146#issuecomment-5337216348",
+      "comment_created_at": "2026-08-19T03:38:02Z",
+      "comment_updated_at": "2026-08-24T21:01:27Z",
+      "comment_body_sha256": "7bf21702beb8253f2cd5326adca36ae2660522370f5dd7b7a3a8aeebc32e4919",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126146,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e83f41e7b31d96ee8d6a75043440eaa87f85ead0)",
+      "expected_head_sha": "e83f41e7b31d96ee8d6a75043440eaa87f85ead0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T21:02:27.590Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/session-organize-tools",
+        "head_sha": "e83f41e7b31d96ee8d6a75043440eaa87f85ead0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1186:5363274638:2026-08-24T21:03:04Z:clawsweeper_needs_human",
       "comment_id": "5363274638",
@@ -30876,53 +30909,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/mcporter:335:5403696404:2026-08-25T01:14:33Z:re_review",
-      "comment_id": "5403696404",
-      "comment_version_key": "5403696404:2026-08-25T01:14:33Z",
-      "comment_url": "https://github.com/openclaw/mcporter/pull/335#issuecomment-5403696404",
-      "comment_created_at": "2026-08-25T01:14:33Z",
-      "comment_updated_at": "2026-08-25T01:14:33Z",
-      "comment_body_sha256": "85e7aca55df6aecd2ba920aa9dc5f5ef2f0b26927bec49b97e8a8232fe2e0edb",
-      "repo": "openclaw/mcporter",
-      "issue_number": 335,
-      "author": "feniix",
-      "author_id": 91633,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T01:15:09.754Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/vault-relative-expiry",
-        "head_sha": "a8c877271472328d23dae2eac77cf1f020c11d7d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
