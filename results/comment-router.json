@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T00:06:10.421Z",
+  "updated_at": "2026-08-25T00:07:14.925Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1453:5400245089:2026-08-24T19:28:31Z:re_review",
-      "comment_id": "5400245089",
-      "comment_version_key": "5400245089:2026-08-24T19:28:31Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1453#issuecomment-5400245089",
-      "comment_created_at": "2026-08-24T19:28:31Z",
-      "comment_updated_at": "2026-08-24T19:28:31Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1453,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T19:29:17.603Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/git-seed-dirty-overlay",
-        "head_sha": "a897fa8175d8b2a2ba8c56f0f38970345bec7223",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128673:5394073888:2026-08-24T19:29:04Z:clawsweeper_needs_human",
       "comment_id": "5394073888",
@@ -31522,6 +31475,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-settled-turn-mcp-tool-names",
         "head_sha": "82aaec8ae86c7a4bd952dc04df22a112b1ad6c7d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3181:5402474260:2026-08-25T00:02:35Z:clawsweeper_needs_human",
+      "comment_id": "5402474260",
+      "comment_version_key": "5402474260:2026-08-25T00:02:35Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3181#issuecomment-5402474260",
+      "comment_created_at": "2026-08-24T22:41:26Z",
+      "comment_updated_at": "2026-08-25T00:02:35Z",
+      "comment_body_sha256": "8c654b0fc2d4fe1058f40dc5b0a3addf07d0d02490d797cb73a43070d925c540",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3181,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - For affected period-only accounts, a refresh can wait up to six seconds for the optional grok.com request before returning the metadata-only proxy result; the bounded fallback prevent... (sha=75b2118bf0b76b60963445bbd281ac97d69cb32b)",
+      "expected_head_sha": "75b2118bf0b76b60963445bbd281ac97d69cb32b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T00:07:14.925Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/grok-period-only-usage-fallback",
+        "head_sha": "75b2118bf0b76b60963445bbd281ac97d69cb32b",
         "cluster_id": null,
         "job_path": null
       }
