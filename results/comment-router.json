@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T11:48:51.895Z",
+  "updated_at": "2026-08-25T11:50:52.971Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117337:5150947481:2026-08-25T06:53:21Z:clawsweeper_needs_human",
-      "comment_id": "5150947481",
-      "comment_version_key": "5150947481:2026-08-25T06:53:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117337#issuecomment-5150947481",
-      "comment_created_at": "2026-08-01T10:04:19Z",
-      "comment_updated_at": "2026-08-25T06:53:21Z",
-      "comment_body_sha256": "40198d5eb690a7930260dc2d12fdfb596c07c73322ac26f69b3fb04b9de8b398",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117337,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This introduces one persisted voice preference per native app; empty or invalid values preserve the existing language-only behavior, but accepting the new settings surface is a mainta... (sha=9d6cf81f244b874dc23a64b682f252e6d11926ac)",
-      "expected_head_sha": "9d6cf81f244b874dc23a64b682f252e6d11926ac",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T07:00:11.900Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/on-device-tts-voice-picker",
-        "head_sha": "9d6cf81f244b874dc23a64b682f252e6d11926ac",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117337:5152086608:2026-08-01T15:29:49Z:re_review",
       "comment_id": "5152086608",
@@ -32599,6 +32566,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129292:5409947877:2026-08-25T11:50:01Z:re_review",
+      "comment_id": "5409947877",
+      "comment_version_key": "5409947877:2026-08-25T11:50:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129292#issuecomment-5409947877",
+      "comment_created_at": "2026-08-25T11:50:01Z",
+      "comment_updated_at": "2026-08-25T11:50:01Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129292,
+      "author": "gaoanze888",
+      "author_id": 214786078,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T11:50:50.316Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-rich-chunk-limit",
+        "head_sha": "d4a87e037da6c4ced69e583d95ff809fa32e2ef5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
