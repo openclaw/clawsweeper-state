@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125838"
 mode: "autonomous"
-run_id: "32799606491"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32799606491"
-head_sha: "ed20a56037dc7e1141140513e0307df69f0d394a"
+run_id: "32824136836"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32824136836"
+head_sha: "56591f8ebaf3e958cf659786adeb69dd2d095046"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-25T02:10:18.875Z"
-canonical: "#125838"
-canonical_issue: "#125838"
+published_at: "2026-08-25T08:09:00.924Z"
+canonical: "https://github.com/openclaw/openclaw/issues/125838"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/125838"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32799606491](https://github.com/openclaw/clawsweeper/actions/runs/32799606491)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32824136836](https://github.com/openclaw/clawsweeper/actions/runs/32824136836)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: #125838
+Canonical: https://github.com/openclaw/openclaw/issues/125838
 
 ## Summary
 
-The source confirms the silent-command path, but this worker cannot safely create the required PR: the mandatory sibling Codex checkout is absent and the sandbox is read-only (with no installed dependencies).
+#125838 remains the canonical reproducible bug. Source shows the same-session busy path returns zero payloads before lightweight command acknowledgements run; a narrow shared lifecycle repair is planned, but this read-only worker cannot create the required branch, install dependencies, or satisfy the repository’s mandatory sibling-Codex inspection gate.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ The source confirms the silent-command path, but this worker cannot safely creat
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #125838 |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,9 @@ The source confirms the silent-command path, but this worker cannot safely creat
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125838 | fix_needed | blocked | canonical | The job requires a tested implementation PR, but the mandated source gate and writable/dependency-ready checkout are unavailable. |
+| #125838 | fix_needed | blocked | canonical | Implementation is blocked only by the worker environment, not by product ambiguity. Use the artifact to create or update clawsweeper/issue-openclaw-openclaw-125838 in a writable worker. |
+| cluster:issue-openclaw-openclaw-125838 | build_fix_artifact | blocked | canonical | Narrow source-backed repair artifact; execution is blocked by the read-only checkout and unavailable validation tooling. |
 
 ## Needs Human
 
-- Provide a writable, dependency-ready checkout with the sibling ../codex source available so the required direct Codex inspection, regression, implementation, validation, and PR artifact can be completed.
+- Provide a writable repair worker with ../codex available for the mandatory direct inspection, a writable Corepack cache, and installed dependencies; then execute the planned regression-first repair and validation.

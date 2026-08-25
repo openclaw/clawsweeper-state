@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125838",
+  "mode": "autonomous",
+  "run_id": "32824136836",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32824136836",
+  "head_sha": "56591f8ebaf3e958cf659786adeb69dd2d095046",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125838.md",
+  "published_at": "2026-08-25T08:09:00.924Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125838",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125838",
+  "canonical_pr": null,
+  "summary": "#125838 remains the canonical reproducible bug. Source shows the same-session busy path returns zero payloads before lightweight command acknowledgements run; a narrow shared lifecycle repair is planned, but this read-only worker cannot create the required branch, install dependencies, or satisfy the repository’s mandatory sibling-Codex inspection gate.",
+  "actions": [
+    {
+      "target": "#125838",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125838",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the worker environment, not by product ambiguity. Use the artifact to create or update clawsweeper/issue-openclaw-openclaw-125838 in a writable worker."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125838",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125838",
+      "candidate_fix": null,
+      "reason": "Narrow source-backed repair artifact; execution is blocked by the read-only checkout and unavailable validation tooling."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair worker with ../codex available for the mandatory direct inspection, a writable Corepack cache, and installed dependencies; then execute the planned regression-first repair and validation."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#125838",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
