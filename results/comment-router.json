@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T00:10:40.487Z",
+  "updated_at": "2026-08-25T00:10:41.955Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:93247:5400233031:2026-08-24T19:27:24Z:re_review",
-      "comment_id": "5400233031",
-      "comment_version_key": "5400233031:2026-08-24T19:27:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/93247#issuecomment-5400233031",
-      "comment_created_at": "2026-08-24T19:27:24Z",
-      "comment_updated_at": "2026-08-24T19:27:24Z",
-      "comment_body_sha256": "5eb321fda410af4d45ebbedcb6402f19b884fbacaed7aa90110e34a9cb4425e1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 93247,
-      "author": "1052326311",
-      "author_id": 65798732,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T19:40:18.895Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/diagnostic-ghost-entries-pruning",
-        "head_sha": "4ae1b6a7d9778b24a2afb62e9c38bc4ee52e4739",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113734:5079320592:2026-08-24T19:35:43Z:clawsweeper_auto_repair",
       "comment_id": "5079320592",
@@ -31480,6 +31433,39 @@
         "kind": "pull_request",
         "branch": "fix/cli-session-format-failover-128698",
         "head_sha": "48cccd4667309355cb01482aed9b6fa1150ebbd4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128903:5403169882:2026-08-25T00:09:31Z:clawsweeper_needs_human",
+      "comment_id": "5403169882",
+      "comment_version_key": "5403169882:2026-08-25T00:09:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128903#issuecomment-5403169882",
+      "comment_created_at": "2026-08-25T00:09:31Z",
+      "comment_updated_at": "2026-08-25T00:09:31Z",
+      "comment_body_sha256": "677503d9eb31bd5f540f56d42f149adc85e567260971c2e4f71a17cedb96aca8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128903,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Revalidate scope after a metadata refresh (P1)** - When the initial private URL fails, resolveSlackMedia performs another files.info call and immediately downloads that response's URL. The predicate here only ch...; Review finding: [P1] Revalidate scope after a metadata refresh — extensions/slack/src/actions.ts:731 - [high] Refreshed file metadata bypasses conversation scope — extensions/slac... (sha=5d57400e6333dc53c86151e71c3921904e3619d2)",
+      "expected_head_sha": "5d57400e6333dc53c86151e71c3921904e3619d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T00:10:41.954Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/slack-file-scope-binding",
+        "head_sha": "5d57400e6333dc53c86151e71c3921904e3619d2",
         "cluster_id": null,
         "job_path": null
       }
