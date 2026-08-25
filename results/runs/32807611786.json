@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128993",
+  "mode": "autonomous",
+  "run_id": "32807611786",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32807611786",
+  "head_sha": "91a2bf6453271d8851ddc91506ddff71dff81a6a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128993.md",
+  "published_at": "2026-08-25T04:39:36.092Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128993",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128993",
+  "canonical_pr": null,
+  "summary": "#128993 is a reproducible narrow Telegram adapter bug on main 935c555c. Implementation is blocked only by this read-only worker: it cannot create the required ../codex checkout, edit the branch, or initialize pnpm’s Corepack cache. A narrow new-fix-PR artifact is ready.",
+  "actions": [
+    {
+      "target": "#128993",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128993",
+      "candidate_fix": null,
+      "reason": "The bug is suitable for an automated narrow fix, but this sandbox cannot satisfy the repository’s required Codex-source gate or perform/write-test the implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128993",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#128993",
+      "candidate_fix": null,
+      "reason": "Executor should apply the adapter-only repair on clawsweeper/issue-openclaw-openclaw-128993."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
