@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T19:57:53.978Z",
+  "updated_at": "2026-08-25T19:59:21.889Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:108461:5411674498:2026-08-25T14:12:23Z:re_review",
-      "comment_id": "5411674498",
-      "comment_version_key": "5411674498:2026-08-25T14:12:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/108461#issuecomment-5411674498",
-      "comment_created_at": "2026-08-25T14:12:23Z",
-      "comment_updated_at": "2026-08-25T14:12:23Z",
-      "comment_body_sha256": "8f590f67768567473a2a0a67dc82610f77f26d7eadd2ccc81ec62c1328a52849",
-      "repo": "openclaw/openclaw",
-      "issue_number": 108461,
-      "author": "snotty",
-      "author_id": 5853861,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T14:14:47.101Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/responses-completed-flush-tool-calls",
-        "head_sha": "15ae7b05e352d5fdde9471fe7480d3fe14dd8450",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129357:5411674877:2026-08-25T14:12:24Z:re_review",
       "comment_id": "5411674877",
@@ -32278,6 +32231,39 @@
         "kind": "pull_request",
         "branch": "automation/design-system-audit",
         "head_sha": "a11090d4bb105a0012c674895b32a92ff1c62391",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129315:5410417977:2026-08-25T19:58:00Z:clawsweeper_needs_human",
+      "comment_id": "5410417977",
+      "comment_version_key": "5410417977:2026-08-25T19:58:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129315#issuecomment-5410417977",
+      "comment_created_at": "2026-08-25T12:32:30Z",
+      "comment_updated_at": "2026-08-25T19:58:00Z",
+      "comment_body_sha256": "eecd27c8b35b792be37d1ff9f9529596f1a2d8fe91e1f93c28b1ab0a861ad8c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129315,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: provide a redacted after-update run showing the updated action preserves the configured restricted user/allowli...; Review finding: [P1] Verify Codex Action v1.12 before changing secret-bearing jobs — .github/workflows/mantis-telegram-desktop-proof.yml:266 - [medium] Unverified secret-bearing a... (sha=52cf5a22ba8c3d40d5588da9dc44540b7d46b997)",
+      "expected_head_sha": "52cf5a22ba8c3d40d5588da9dc44540b7d46b997",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T19:59:21.889Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-f2d04ee7a0",
+        "head_sha": "52cf5a22ba8c3d40d5588da9dc44540b7d46b997",
         "cluster_id": null,
         "job_path": null
       }
