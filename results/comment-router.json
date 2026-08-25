@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T20:48:44.773Z",
+  "updated_at": "2026-08-25T20:49:55.984Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129316:5411833446:2026-08-25T14:22:37Z:re_review",
-      "comment_id": "5411833446",
-      "comment_version_key": "5411833446:2026-08-25T14:22:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129316#issuecomment-5411833446",
-      "comment_created_at": "2026-08-25T14:22:37Z",
-      "comment_updated_at": "2026-08-25T14:22:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129316,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T14:23:25.201Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/review-gateway-session-dates",
-        "head_sha": "93dce70cd14df757c0d6a06975afe8f4d73652b5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3494:5411864884:2026-08-25T14:24:54Z:re_review",
       "comment_id": "5411864884",
@@ -32294,6 +32247,39 @@
         "kind": "pull_request",
         "branch": "fix/1193-wslconfig-surgical",
         "head_sha": "cfd4f27c8395311f51dfa2424073c86c201c4b6f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129494:5415102647:2026-08-25T20:45:21Z:clawsweeper_needs_human",
+      "comment_id": "5415102647",
+      "comment_version_key": "5415102647:2026-08-25T20:45:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129494#issuecomment-5415102647",
+      "comment_created_at": "2026-08-25T18:46:08Z",
+      "comment_updated_at": "2026-08-25T20:45:21Z",
+      "comment_body_sha256": "1d2b17edf19621d252d58285435877294df5214235c16746f5f652cfe8911b67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129494,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR head still has a failed openclaw/ci-gate; the supplied PR evidence attributes the underlying test failure to separate open work, but a green exact-head replacement run is... (sha=bfd4efb23d05089fbaa1ac87d5a0a15908582db1)",
+      "expected_head_sha": "bfd4efb23d05089fbaa1ac87d5a0a15908582db1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T20:49:55.984Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/status-single-config-resolution",
+        "head_sha": "bfd4efb23d05089fbaa1ac87d5a0a15908582db1",
         "cluster_id": null,
         "job_path": null
       }
