@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T10:52:09.267Z",
+  "updated_at": "2026-08-25T10:52:09.880Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129007:5406374989:2026-08-25T06:20:39Z:re_review",
-      "comment_id": "5406374989",
-      "comment_version_key": "5406374989:2026-08-25T06:20:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129007#issuecomment-5406374989",
-      "comment_created_at": "2026-08-25T06:20:39Z",
-      "comment_updated_at": "2026-08-25T06:20:39Z",
-      "comment_body_sha256": "53048f987cb1c5e5f15c0609edbbd807f9ba332661d6026135fa204be2075e2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129007,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T06:21:27.794Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/systemd-handoff-convergence",
-        "head_sha": "49373bd3ccf4928434ff065abbbac33f0e3489ba",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116505:5134542153:2026-08-25T06:18:43Z:clawsweeper_auto_repair",
       "comment_id": "5134542153",
@@ -32390,6 +32343,39 @@
         "kind": "pull_request",
         "branch": "nemotron-speech",
         "head_sha": "65f45fe4c8875cb4698e34bb65c536f9885671e7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129243:5409317565:2026-08-25T10:51:10Z:clawsweeper_needs_human",
+      "comment_id": "5409317565",
+      "comment_version_key": "5409317565:2026-08-25T10:51:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129243#issuecomment-5409317565",
+      "comment_created_at": "2026-08-25T10:51:10Z",
+      "comment_updated_at": "2026-08-25T10:51:10Z",
+      "comment_body_sha256": "0e775c1d7b420b1d31afce57d52cfee068e1b83da485fd9f3ceaf5b6bd0205e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129243,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical follow-up is needed; await exact-head CI for this maintainer-authored focused fix. (sha=ac1141de7da7f4540b74185c712de1e1dc2bc069)",
+      "expected_head_sha": "ac1141de7da7f4540b74185c712de1e1dc2bc069",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T10:52:09.880Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-gateway-service-start-hint-20260825",
+        "head_sha": "ac1141de7da7f4540b74185c712de1e1dc2bc069",
         "cluster_id": null,
         "job_path": null
       }
