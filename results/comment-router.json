@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-25T09:29:07.015Z",
+  "updated_at": "2026-08-25T09:28:10.925Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126986:5365198371:2026-08-25T05:06:28Z:clawsweeper_auto_repair",
+      "comment_id": "5365198371",
+      "comment_version_key": "5365198371:2026-08-25T05:06:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126986#issuecomment-5365198371",
+      "comment_created_at": "2026-08-21T04:27:59Z",
+      "comment_updated_at": "2026-08-25T05:06:28Z",
+      "comment_body_sha256": "767e6c58ba8e28c25c4f45a0e9f732c507a08b4e30b48cfe41f63c2ea56ef738",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126986,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=932aecc28bc674acc23af380053188e32ffa3cd4)",
+      "expected_head_sha": "932aecc28bc674acc23af380053188e32ffa3cd4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T05:08:58.195Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-codex-bootstrap-context",
+        "head_sha": "932aecc28bc674acc23af380053188e32ffa3cd4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127778:5378110121:2026-08-25T05:07:15Z:clawsweeper_auto_repair",
       "comment_id": "5378110121",
@@ -31705,39 +31738,6 @@
       "status": "skipped",
       "processed_at": "2026-08-25T09:28:10.925Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129187:5408341738:2026-08-25T09:28:20Z:clawsweeper_needs_human",
-      "comment_id": "5408341738",
-      "comment_version_key": "5408341738:2026-08-25T09:28:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129187#issuecomment-5408341738",
-      "comment_created_at": "2026-08-25T09:28:20Z",
-      "comment_updated_at": "2026-08-25T09:28:20Z",
-      "comment_body_sha256": "327887bcacc7e74a174624e6527b236616212e8278a152fdd73a917eb6ecf901",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129187,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Verify the Sherpa runtime archives before extraction (P1)** - These new URLs select executable archives, but the shared download installer has no digest field and streams the response directly into the extracted...; Review finding: [P1] Verify the Sherpa runtime archives before extraction — skills/sherpa-onnx-tts/SKILL.md:17-39 - [high] Unverified executable runtime archives — skills/sherpa-o... (sha=8b74ec7b4862e35f97dd796213ee61d0f02c26bf)",
-      "expected_head_sha": "8b74ec7b4862e35f97dd796213ee61d0f02c26bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T09:29:07.015Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/seven-day-dependency-updates-20260824",
-        "head_sha": "8b74ec7b4862e35f97dd796213ee61d0f02c26bf",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
