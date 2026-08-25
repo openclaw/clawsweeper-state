@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T21:44:06.771Z",
+  "updated_at": "2026-08-25T21:44:09.288Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5357489688:2026-08-20T14:44:52Z:re_review",
-      "comment_id": "5357489688",
-      "comment_version_key": "5357489688:2026-08-20T14:44:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5357489688",
-      "comment_created_at": "2026-08-20T14:44:52Z",
-      "comment_updated_at": "2026-08-20T14:44:52Z",
-      "comment_body_sha256": "3a2ca4fc36a23c9d8f03f38567b788ebea64aa91678e69cda9c236cbf5d2c6c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T15:00:29.755Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5358207647:2026-08-20T15:39:30Z:re_review",
       "comment_id": "5358207647",
@@ -32649,6 +32622,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T21:44:06.771Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129563:5416012524:2026-08-25T21:38:45Z:clawsweeper_needs_human",
+      "comment_id": "5416012524",
+      "comment_version_key": "5416012524:2026-08-25T21:38:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129563#issuecomment-5416012524",
+      "comment_created_at": "2026-08-25T20:01:20Z",
+      "comment_updated_at": "2026-08-25T21:38:45Z",
+      "comment_body_sha256": "8d7f955c292ab2f158013a03f4c432427d6e24832a089b3f362ffc8ac337e2a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129563,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body describes pre-fix logs and test results, but provides no after-fix final-effect evidence f...; Review finding: [P1] Revalidate the paired grant before accepting the fast path — src/gateway/server/ws-connection/connect-device-pairing.ts:413-421 - [high] Fast path admits a st... (sha=7f3f83eb9bce618d931f555a214ffa68834d5562)",
+      "expected_head_sha": "7f3f83eb9bce618d931f555a214ffa68834d5562",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T21:44:09.288Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/trusted-proxy-scope-narrowing",
+        "head_sha": "7f3f83eb9bce618d931f555a214ffa68834d5562",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
