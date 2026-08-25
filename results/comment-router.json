@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-25T09:30:20.977Z",
+  "updated_at": "2026-08-25T09:28:10.925Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126986:5365198371:2026-08-25T05:06:28Z:clawsweeper_auto_repair",
+      "comment_id": "5365198371",
+      "comment_version_key": "5365198371:2026-08-25T05:06:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126986#issuecomment-5365198371",
+      "comment_created_at": "2026-08-21T04:27:59Z",
+      "comment_updated_at": "2026-08-25T05:06:28Z",
+      "comment_body_sha256": "767e6c58ba8e28c25c4f45a0e9f732c507a08b4e30b48cfe41f63c2ea56ef738",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126986,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=932aecc28bc674acc23af380053188e32ffa3cd4)",
+      "expected_head_sha": "932aecc28bc674acc23af380053188e32ffa3cd4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T05:08:58.195Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-codex-bootstrap-context",
+        "head_sha": "932aecc28bc674acc23af380053188e32ffa3cd4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127778:5378110121:2026-08-25T05:07:15Z:clawsweeper_auto_repair",
       "comment_id": "5378110121",
@@ -31705,39 +31738,6 @@
       "status": "skipped",
       "processed_at": "2026-08-25T09:28:10.925Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128658:5393790610:2026-08-25T09:29:34Z:clawsweeper_needs_human",
-      "comment_id": "5393790610",
-      "comment_version_key": "5393790610:2026-08-25T09:29:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128658#issuecomment-5393790610",
-      "comment_created_at": "2026-08-24T10:13:47Z",
-      "comment_updated_at": "2026-08-25T09:29:34Z",
-      "comment_body_sha256": "a4d27a96b5d34d8f2f4dd405753bed2371e8aa23d290282da149a0cfde8a89e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128658,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The app build imports AGP's internal VariantOutputImpl, so source review cannot establish that AGP 9.3.2 still compiles the APK naming path. (sha=ad1001fb76c095763e886bd294c907cd8a2e84b5)",
-      "expected_head_sha": "ad1001fb76c095763e886bd294c907cd8a2e84b5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T09:30:20.977Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/gradle/apps/android/android-deps-3af0a0a1af",
-        "head_sha": "ad1001fb76c095763e886bd294c907cd8a2e84b5",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
