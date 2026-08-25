@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T14:34:51.943Z",
+  "updated_at": "2026-08-25T14:34:54.872Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128803:5408571276:2026-08-25T09:46:12Z:re_review",
-      "comment_id": "5408571276",
-      "comment_version_key": "5408571276:2026-08-25T09:46:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128803#issuecomment-5408571276",
-      "comment_created_at": "2026-08-25T09:46:12Z",
-      "comment_updated_at": "2026-08-25T09:46:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128803,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T09:46:54.293Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-usage-owner-attribution-128755",
-        "head_sha": "4f3dd82f5940e495e9259d788961f806acd5fabe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/mcporter:332:5398363947:2026-08-24T16:42:13Z:re_review",
       "comment_id": "5398363947",
@@ -32344,6 +32297,39 @@
         "kind": "pull_request",
         "branch": "fix/129209-json-nesting-stack-overflow",
         "head_sha": "098152c8f034ec1c39b1c3b88c754fdd859b627c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128692:5394618724:2026-08-25T14:30:09Z:clawsweeper_needs_human",
+      "comment_id": "5394618724",
+      "comment_version_key": "5394618724:2026-08-25T14:30:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128692#issuecomment-5394618724",
+      "comment_created_at": "2026-08-24T11:34:29Z",
+      "comment_updated_at": "2026-08-25T14:30:09Z",
+      "comment_body_sha256": "1dfd89fbbb0c4b53cdc80f1c4eeb7b637459724461e8bb25e06926f915701835",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128692,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Controlled fixtures cover scan counts and cleanup branches, but no real existing-session smoke confirms that the temporary Chrome MCP subprocess and descendants exit cleanly. (sha=a56362072be8182c0ac8902691c636da3085c44b)",
+      "expected_head_sha": "a56362072be8182c0ac8902691c636da3085c44b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T14:34:54.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/browser-status-process-scan-20260824",
+        "head_sha": "a56362072be8182c0ac8902691c636da3085c44b",
         "cluster_id": null,
         "job_path": null
       }
