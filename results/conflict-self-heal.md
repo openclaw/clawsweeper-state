@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-08-25T13:51:48.580Z
+Generated: 2026-08-25T14:47:59.593Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -24,9 +24,9 @@ Repository: openclaw/openclaw
 | [#120249](https://github.com/openclaw/openclaw/pull/120249) | fix(discord): honor maxLinesPerMessage for CLI sends | clawsweeper/issue-openclaw-openclaw-91860 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#120230](https://github.com/openclaw/openclaw/pull/120230) | fix(windows): preserve gateway restart CLI during Scheduled Task handoff | clawsweeper/issue-openclaw-openclaw-120134 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#120150](https://github.com/openclaw/openclaw/pull/120150) | fix(discord): identify native-command empty reply outcomes | clawsweeper/issue-openclaw-openclaw-120142 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#120143](https://github.com/openclaw/openclaw/pull/120143) | fix(matrix): warn when open DMs lack an allowlist wildcard | clawsweeper/issue-openclaw-openclaw-89254 | MERGEABLE | BEHIND | skipped | head repository is unknown |
-| [#119983](https://github.com/openclaw/openclaw/pull/119983) | fix(workboard): include operator notes in Start prompt | clawsweeper/issue-openclaw-openclaw-119962 | CONFLICTING | DIRTY | skipped | head repository is unknown |
-| [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | clawsweeper/issue-openclaw-openclaw-119958 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#120143](https://github.com/openclaw/openclaw/pull/120143) | fix(matrix): warn when open DMs lack an allowlist wildcard | clawsweeper/issue-openclaw-openclaw-89254 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#119983](https://github.com/openclaw/openclaw/pull/119983) | fix(workboard): include operator notes in Start prompt | clawsweeper/issue-openclaw-openclaw-119962 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | clawsweeper/issue-openclaw-openclaw-119958 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119901](https://github.com/openclaw/openclaw/pull/119901) | fix(doctor): analyze SQLite databases after offline compaction | clawsweeper/issue-openclaw-openclaw-119884 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119784](https://github.com/openclaw/openclaw/pull/119784) | fix(gateway): avoid parsing excluded chat history payloads | clawsweeper/issue-openclaw-openclaw-119578 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119778](https://github.com/openclaw/openclaw/pull/119778) | fix(gateway): return retryable chat send error during transcript rebuild | clawsweeper/issue-openclaw-openclaw-119754 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
