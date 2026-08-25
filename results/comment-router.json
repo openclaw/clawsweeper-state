@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T19:34:53.280Z",
+  "updated_at": "2026-08-25T19:36:07.494Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3494:5391481488:2026-08-24T06:21:59Z:re_review",
-      "comment_id": "5391481488",
-      "comment_version_key": "5391481488:2026-08-24T06:21:59Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3494#issuecomment-5391481488",
-      "comment_created_at": "2026-08-24T06:21:59Z",
-      "comment_updated_at": "2026-08-24T06:21:59Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3494,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T13:43:35.600Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123179:5288036884:2026-08-25T13:35:29Z:clawsweeper_needs_human",
       "comment_id": "5288036884",
@@ -32457,6 +32430,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/Swabble:5:5415691736:2026-08-25T19:35:04Z:re_review",
+      "comment_id": "5415691736",
+      "comment_version_key": "5415691736:2026-08-25T19:35:04Z",
+      "comment_url": "https://github.com/openclaw/Swabble/pull/5#issuecomment-5415691736",
+      "comment_created_at": "2026-08-25T19:35:04Z",
+      "comment_updated_at": "2026-08-25T19:35:04Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/Swabble",
+      "issue_number": 5,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T19:36:01.988Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codeql-workflow-docs-20260825",
+        "head_sha": "6c5e405888ee75416c2e5ddadb28866d4fde46ae",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
