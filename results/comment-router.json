@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T07:38:12.595Z",
+  "updated_at": "2026-08-25T07:38:39.863Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1508:5404799371:2026-08-25T03:44:15Z:re_review",
-      "comment_id": "5404799371",
-      "comment_version_key": "5404799371:2026-08-25T03:44:15Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1508#issuecomment-5404799371",
-      "comment_created_at": "2026-08-25T03:44:15Z",
-      "comment_updated_at": "2026-08-25T03:44:15Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1508,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T03:45:01.071Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/wsl2-exact-frame-reads",
-        "head_sha": "0f3231e03d756b66756b1c867739b7403aebe506",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128867:5404811888:2026-08-25T03:46:19Z:re_review",
       "comment_id": "5404811888",
@@ -30579,6 +30532,39 @@
         "kind": "pull_request",
         "branch": "codex/land-aug23-telegram-migration-owner",
         "head_sha": "c033be118c7d5ea0a5c43ddf19d06448dae76260",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129077:5406916609:2026-08-25T07:34:27Z:clawsweeper_needs_human",
+      "comment_id": "5406916609",
+      "comment_version_key": "5406916609:2026-08-25T07:34:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129077#issuecomment-5406916609",
+      "comment_created_at": "2026-08-25T07:20:55Z",
+      "comment_updated_at": "2026-08-25T07:34:27Z",
+      "comment_body_sha256": "5ed54623de93214277c7c338a9c1af7c424d96e42d3b15a5f0b48ecd6af34468",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129077,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "Maintainer decision needed: | Question | Recommendation | |---|---| | Should this protected maintainer-authored Android fix be merged with its submitted real-device evidence and green Android checks? | **Merge the focus... (sha=29f1e68ea3712893e55dfba405f5cc2dac691ddb)",
+      "expected_head_sha": "29f1e68ea3712893e55dfba405f5cc2dac691ddb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T07:38:39.863Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/android-onboarding-sms-sentinel",
+        "head_sha": "29f1e68ea3712893e55dfba405f5cc2dac691ddb",
         "cluster_id": null,
         "job_path": null
       }
