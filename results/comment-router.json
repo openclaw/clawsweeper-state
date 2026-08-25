@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T20:22:19.227Z",
+  "updated_at": "2026-08-25T20:24:15.940Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128257:5386909616:2026-08-25T14:11:35Z:clawsweeper_needs_human",
-      "comment_id": "5386909616",
-      "comment_version_key": "5386909616:2026-08-25T14:11:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128257#issuecomment-5386909616",
-      "comment_created_at": "2026-08-23T15:55:15Z",
-      "comment_updated_at": "2026-08-25T14:11:35Z",
-      "comment_body_sha256": "b2733c0ca32b47316257e920e1304047693da7ec8d8c25b47d810bbeddba6393",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128257,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds roughly production +150/-18 lines across transcript and UI ownership boundaries; the added boundary state and scoped lookup need direct upstream-contract confirmation. (sha=3af96fd027fec67eef29fbfc5b3b20ad12036a84)",
-      "expected_head_sha": "3af96fd027fec67eef29fbfc5b3b20ad12036a84",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T14:15:22.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/root-cause-analysis-for-thread-error",
-        "head_sha": "3af96fd027fec67eef29fbfc5b3b20ad12036a84",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128289:5387183075:2026-08-25T13:57:01Z:clawsweeper_needs_human",
       "comment_id": "5387183075",
@@ -32283,6 +32250,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125647:5416275884:2026-08-25T20:23:36Z:re_review",
+      "comment_id": "5416275884",
+      "comment_version_key": "5416275884:2026-08-25T20:23:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125647#issuecomment-5416275884",
+      "comment_created_at": "2026-08-25T20:23:36Z",
+      "comment_updated_at": "2026-08-25T20:23:36Z",
+      "comment_body_sha256": "e1e53412582a8fb63c6ba0d6b24cd5619be6766cee481d4b2235650ef0736ce1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125647,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T20:24:14.065Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/taskflow-managed-flows",
+        "head_sha": "eb14dd181d8332552c6d0528a6aa878579c6cd77",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
