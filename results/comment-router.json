@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T03:54:29.833Z",
+  "updated_at": "2026-08-25T03:55:53.917Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122238:5258303133:2026-08-24T23:31:16Z:clawsweeper_needs_human",
-      "comment_id": "5258303133",
-      "comment_version_key": "5258303133:2026-08-24T23:31:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122238#issuecomment-5258303133",
-      "comment_created_at": "2026-08-11T20:11:58Z",
-      "comment_updated_at": "2026-08-24T23:31:16Z",
-      "comment_body_sha256": "129891580b80fa706c82c983ed2793abe92ff3ca894696af2fc60823457d373f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122238,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The submitted gateway proof shows queued message collection, but it neither asserts the final aggregate-ID execution context nor runs... (sha=6df1189d660a9320a83f04408154e1a502581ff6)",
-      "expected_head_sha": "6df1189d660a9320a83f04408154e1a502581ff6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T23:43:37.104Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "koc/discord-queued-message-batching",
-        "head_sha": "6df1189d660a9320a83f04408154e1a502581ff6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126986:5365198371:2026-08-24T23:33:01Z:clawsweeper_auto_repair",
       "comment_id": "5365198371",
@@ -30794,6 +30761,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1508:5404866326:2026-08-25T03:55:04Z:re_review",
+      "comment_id": "5404866326",
+      "comment_version_key": "5404866326:2026-08-25T03:55:04Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1508#issuecomment-5404866326",
+      "comment_created_at": "2026-08-25T03:55:04Z",
+      "comment_updated_at": "2026-08-25T03:55:04Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1508,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T03:55:51.675Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/wsl2-exact-frame-reads",
+        "head_sha": "2a022c24a67cd108ee4d34a54a97505f3aa123c2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
