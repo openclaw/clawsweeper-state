@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T02:00:41.283Z",
+  "updated_at": "2026-08-25T02:00:46.569Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:98458:5071593700:2026-07-24T15:35:01Z:re_review",
-      "comment_id": "5071593700",
-      "comment_version_key": "5071593700:2026-07-24T15:35:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/98458#issuecomment-5071593700",
-      "comment_created_at": "2026-07-24T15:35:01Z",
-      "comment_updated_at": "2026-07-24T15:35:01Z",
-      "comment_body_sha256": "101a18acde346b9db8a9751b1ff403863574644e74c1db1854f6ac7530e74078",
-      "repo": "openclaw/openclaw",
-      "issue_number": 98458,
-      "author": "areslp",
-      "author_id": 100579,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T21:57:53.761Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:98458:5121204680:2026-07-29T17:19:11Z:re_review",
       "comment_id": "5121204680",
@@ -30863,6 +30836,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T02:00:41.283Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128803:5398689711:2026-08-25T01:55:18Z:clawsweeper_needs_human",
+      "comment_id": "5398689711",
+      "comment_version_key": "5398689711:2026-08-25T01:55:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128803#issuecomment-5398689711",
+      "comment_created_at": "2026-08-24T17:11:09Z",
+      "comment_updated_at": "2026-08-25T01:55:18Z",
+      "comment_body_sha256": "4c155a17e3d668ab6f2bfae2902f702884782b5dcb6e9e837a9febd3562f3cec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128803,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR has focused mocked regression coverage but no after-fix real Gateway or dashboard evidence; add a redacted artifact before merge. After... (sha=33eb35575a01ea8bf255d0212872832dc4afff01)",
+      "expected_head_sha": "33eb35575a01ea8bf255d0212872832dc4afff01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T02:00:46.569Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-usage-owner-attribution-128755",
+        "head_sha": "33eb35575a01ea8bf255d0212872832dc4afff01",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
