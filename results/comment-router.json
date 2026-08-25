@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T05:14:50.255Z",
+  "updated_at": "2026-08-25T05:14:57.769Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121063:5307474591:2026-08-16T12:38:47Z:re_review",
-      "comment_id": "5307474591",
-      "comment_version_key": "5307474591:2026-08-16T12:38:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121063#issuecomment-5307474591",
-      "comment_created_at": "2026-08-16T12:38:47Z",
-      "comment_updated_at": "2026-08-16T12:38:47Z",
-      "comment_body_sha256": "79057891445c9df242cf8189196812ddb2b107b8cdd4aea30e36be97fa0df1b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121063,
-      "author": "Papilionidae",
-      "author_id": 39980552,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review (p2 env-restore fix pushed: ca6ad5a13 — transport test now saves and restores openai_api_key)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T01:21:30.468Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121063:5307566556:2026-08-16T13:02:34Z:re_review",
       "comment_id": "5307566556",
@@ -30417,6 +30390,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:47:5305413167:2026-08-25T05:04:21Z:clawsweeper_needs_human",
+      "comment_id": "5305413167",
+      "comment_version_key": "5305413167:2026-08-25T05:04:21Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/47#issuecomment-5305413167",
+      "comment_created_at": "2026-08-16T02:53:29Z",
+      "comment_updated_at": "2026-08-25T05:04:21Z",
+      "comment_body_sha256": "2afb7588f9b9b81486be6782af9267052280ac51390fa51e8295d93ea40047db",
+      "repo": "openclaw/clawscan",
+      "issue_number": 47,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 5,520-ID ceiling is correct only for the current pinned SkillTrustBench revision; a future larger pin must update the constant, tests, help text, and docs together or a valid full... (sha=6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a)",
+      "expected_head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T05:14:57.769Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ids-stream-semantic-bound",
+        "head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
