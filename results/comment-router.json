@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T11:42:56.966Z",
+  "updated_at": "2026-08-25T11:43:15.032Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129033:5406380091:2026-08-25T06:21:19Z:clawsweeper_needs_human",
-      "comment_id": "5406380091",
-      "comment_version_key": "5406380091:2026-08-25T06:21:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129033#issuecomment-5406380091",
-      "comment_created_at": "2026-08-25T06:21:19Z",
-      "comment_updated_at": "2026-08-25T06:21:19Z",
-      "comment_body_sha256": "e7a8165a8c2875712d3bc4f3470f22c2aca79f2480f81581dd6b780c70cfce4b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129033,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - This maintainer-labeled PR needs normal exact-head CI completion and review, not an automated repair job. (sha=d691eef73f970f0e16b40c701b7a906e833ff230)",
-      "expected_head_sha": "d691eef73f970f0e16b40c701b7a906e833ff230",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T06:41:36.440Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/admiring-hopper-97c227",
-        "head_sha": "d691eef73f970f0e16b40c701b7a906e833ff230",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129035:5406400169:2026-08-25T06:34:30Z:clawsweeper_needs_human",
       "comment_id": "5406400169",
@@ -32619,6 +32586,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3528:5408608857:2026-08-25T11:37:01Z:clawsweeper_auto_merge",
+      "comment_id": "5408608857",
+      "comment_version_key": "5408608857:2026-08-25T11:37:01Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3528#issuecomment-5408608857",
+      "comment_created_at": "2026-08-25T09:49:02Z",
+      "comment_updated_at": "2026-08-25T11:37:01Z",
+      "comment_body_sha256": "30b054eb98e1ab6b3778821e71e536adc1ca66eb15016baefa7d59d120067cb7",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3528,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=fbdc0a4818c48f19a07e00e16f8f59ffe24f74f0); failed required checks before automerge: Vercel – clawhub:ACTION_REQUIRED",
+      "expected_head_sha": "fbdc0a4818c48f19a07e00e16f8f59ffe24f74f0",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T11:43:15.032Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/issue-3507-trusted-publish-ref",
+        "head_sha": "fbdc0a4818c48f19a07e00e16f8f59ffe24f74f0",
+        "cluster_id": "automerge-openclaw-clawhub-3528",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-clawhub-3528.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "repair_needed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-clawhub-3528.md"
+        }
+      ]
     }
   ]
 }
