@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T18:09:53.996Z",
+  "updated_at": "2026-08-25T18:10:02.014Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129329:5410885779:2026-08-25T13:12:45Z:clawsweeper_needs_human",
-      "comment_id": "5410885779",
-      "comment_version_key": "5410885779:2026-08-25T13:12:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129329#issuecomment-5410885779",
-      "comment_created_at": "2026-08-25T13:12:45Z",
-      "comment_updated_at": "2026-08-25T13:12:45Z",
-      "comment_body_sha256": "738cbcf49e2dea66535b4514773bb65da3940595e2ff388a8c7b75639de1f96e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129329,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by eight lines for a bug fix; the explicit four-part identity/status boundary is warranted because a shorter provider-only rule would hide custom or static Claud... (sha=6f43ac6d9575e10b793955ccdd1ecafc2808d583)",
-      "expected_head_sha": "6f43ac6d9575e10b793955ccdd1ecafc2808d583",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T13:15:46.210Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/repair-aug25-broken-main-auth-health",
-        "head_sha": "6f43ac6d9575e10b793955ccdd1ecafc2808d583",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129092:5406811114:2026-08-25T07:11:04Z:re_review",
       "comment_id": "5406811114",
@@ -32081,6 +32048,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129329:5414654982:2026-08-25T18:09:13Z:re_review",
+      "comment_id": "5414654982",
+      "comment_version_key": "5414654982:2026-08-25T18:09:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129329#issuecomment-5414654982",
+      "comment_created_at": "2026-08-25T18:09:13Z",
+      "comment_updated_at": "2026-08-25T18:09:13Z",
+      "comment_body_sha256": "0da34cb11ef77bc48bed88d65723345455fd0916092d9b4ad7be5ac13fad42e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129329,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T18:10:00.118Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/repair-aug25-broken-main-auth-health",
+        "head_sha": "127a1e9781b2a7219c888d57f6db6ae45dddab60",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
