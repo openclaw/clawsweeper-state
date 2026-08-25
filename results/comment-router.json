@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T01:23:44.182Z",
+  "updated_at": "2026-08-25T01:24:27.845Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119674:5194289602:2026-08-24T21:18:03Z:clawsweeper_needs_human",
-      "comment_id": "5194289602",
-      "comment_version_key": "5194289602:2026-08-24T21:18:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119674#issuecomment-5194289602",
-      "comment_created_at": "2026-08-05T16:11:53Z",
-      "comment_updated_at": "2026-08-24T21:18:03Z",
-      "comment_body_sha256": "6041234b02e82898d92e99e2ff9e043f4ded2bec86a4e019e48c6634f28e0aa9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119674,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The temporary-file trace exercises production helpers, but not the after-fix Linux Doctor/systemctl path; add redacted Linux evidence... (sha=e0c499371325986111f7b88ffb3bff2c1c88e7a8)",
-      "expected_head_sha": "e0c499371325986111f7b88ffb3bff2c1c88e7a8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T21:20:57.208Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/119648-doctor-profile-service-identity",
-        "head_sha": "e0c499371325986111f7b88ffb3bff2c1c88e7a8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127778:5378110121:2026-08-24T21:19:26Z:clawsweeper_auto_repair",
       "comment_id": "5378110121",
@@ -30803,6 +30770,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1508:5403779932:2026-08-25T01:23:41Z:re_review",
+      "comment_id": "5403779932",
+      "comment_version_key": "5403779932:2026-08-25T01:23:41Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1508#issuecomment-5403779932",
+      "comment_created_at": "2026-08-25T01:23:41Z",
+      "comment_updated_at": "2026-08-25T01:23:41Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1508,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T01:24:25.173Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/wsl2-exact-frame-reads",
+        "head_sha": "2f9130ca4f82c075f237b7dd7bcf75b1cd691e36",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
