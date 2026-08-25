@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T18:11:37.412Z",
+  "updated_at": "2026-08-25T18:12:08.743Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129299:5410887952:2026-08-25T13:12:56Z:clawsweeper_needs_human",
-      "comment_id": "5410887952",
-      "comment_version_key": "5410887952:2026-08-25T13:12:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129299#issuecomment-5410887952",
-      "comment_created_at": "2026-08-25T13:12:56Z",
-      "comment_updated_at": "2026-08-25T13:12:56Z",
-      "comment_body_sha256": "bec4666b682f0ec5724b8cb6e415aa369e8e3e4ace3998ea5b5f7c0659f10f58",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129299,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only mocked store/subagent tests and local checks are reported; add a redacted real Gateway/Workboard dispatch showing an ownerless card retain... (sha=3d3ca08bafe1c2318d03a1d4204f88786e2ef3fd)",
-      "expected_head_sha": "3d3ca08bafe1c2318d03a1d4204f88786e2ef3fd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T13:15:56.532Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workboard-dispatcher-owner-sentinel",
-        "head_sha": "3d3ca08bafe1c2318d03a1d4204f88786e2ef3fd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129304:5410488025:2026-08-25T13:14:20Z:clawsweeper_auto_repair",
       "comment_id": "5410488025",
@@ -32104,6 +32071,53 @@
         "kind": "pull_request",
         "branch": "fix/issue-128967-session-truncation-disclosure",
         "head_sha": "13b12e784078e9564805accf78737d31d5cae010",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129172:5414678224:2026-08-25T18:11:12Z:re_review",
+      "comment_id": "5414678224",
+      "comment_version_key": "5414678224:2026-08-25T18:11:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129172#issuecomment-5414678224",
+      "comment_created_at": "2026-08-25T18:11:12Z",
+      "comment_updated_at": "2026-08-25T18:11:12Z",
+      "comment_body_sha256": "a92ca0a4afd1ffc3a01aebda70080e79c72806de266849700f4382a4a4755146",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129172,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T18:12:07.059Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/49350-googlechat-identity",
+        "head_sha": "07cce39bac242ffe57dc34ba71d7d2c222a8dc7e",
         "cluster_id": null,
         "job_path": null
       },
