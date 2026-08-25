@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T14:56:26.780Z",
+  "updated_at": "2026-08-25T14:56:53.824Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124283:5304242743:2026-08-25T09:40:46Z:clawsweeper_needs_human",
-      "comment_id": "5304242743",
-      "comment_version_key": "5304242743:2026-08-25T09:40:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124283#issuecomment-5304242743",
-      "comment_created_at": "2026-08-15T21:08:31Z",
-      "comment_updated_at": "2026-08-25T09:40:46Z",
-      "comment_body_sha256": "803e21980b3f46ad65fee889a13835c252c3d09d68f2f2570dbf9453a31776eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124283,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +6 lines; the remaining growth is the caller-owned roster loop needed to present one diagnostic per agent, and exact-head checks should complete before merge. (sha=0e7e76e97f65b982f09e752026e17de6b268fc87)",
-      "expected_head_sha": "0e7e76e97f65b982f09e752026e17de6b268fc87",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T09:51:22.021Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugins-inspect-multi-agent-workshop",
-        "head_sha": "0e7e76e97f65b982f09e752026e17de6b268fc87",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126376:5345826812:2026-08-25T09:31:10Z:clawsweeper_auto_repair",
       "comment_id": "5345826812",
@@ -32449,6 +32416,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129255:5412304433:2026-08-25T14:55:54Z:re_review",
+      "comment_id": "5412304433",
+      "comment_version_key": "5412304433:2026-08-25T14:55:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129255#issuecomment-5412304433",
+      "comment_created_at": "2026-08-25T14:55:54Z",
+      "comment_updated_at": "2026-08-25T14:55:54Z",
+      "comment_body_sha256": "284e63b081a0461dae04392bf2f3b398a3f3abb14e7029d08b837da3a4b250c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129255,
+      "author": "Finn763",
+      "author_id": 165816600,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T14:56:51.340Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/129222-sentence-boundary-no-space",
+        "head_sha": "c037caac71fdb74b0d2d7d85afc131a7f57fa153",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
