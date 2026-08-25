@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T17:47:01.240Z",
+  "updated_at": "2026-08-25T17:47:30.160Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129316:5410713294:2026-08-25T12:58:13Z:re_review",
-      "comment_id": "5410713294",
-      "comment_version_key": "5410713294:2026-08-25T12:58:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129316#issuecomment-5410713294",
-      "comment_created_at": "2026-08-25T12:58:13Z",
-      "comment_updated_at": "2026-08-25T12:58:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129316,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T12:59:02.164Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/review-gateway-session-dates",
-        "head_sha": "68ce2a078a9dbbba6aee7bd1a0dc55c38c542601",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:16:5304620123:2026-08-25T12:52:00Z:clawsweeper_auto_repair",
       "comment_id": "5304620123",
@@ -32090,6 +32043,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-authenticated-hook-context",
         "head_sha": "97914d545d7678ff6127d67151ce08efc18811c2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128783:5398910662:2026-08-25T17:40:52Z:clawsweeper_needs_human",
+      "comment_id": "5398910662",
+      "comment_version_key": "5398910662:2026-08-25T17:40:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128783#issuecomment-5398910662",
+      "comment_created_at": "2026-08-24T17:29:46Z",
+      "comment_updated_at": "2026-08-25T17:40:52Z",
+      "comment_body_sha256": "ed6af94f3531167f77b5b36777c8f32375535b69039b56e4033f489ed6d44c6c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128783,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The new opt-in config value and ACP callback depend on ACPX 0.13.1 semantics; this checkout lacks installed ACPX source and network DNS, so the read/search undefined fallback could no... (sha=5cc9d68b971479a1286f7f017e1debb9841e3a76)",
+      "expected_head_sha": "5cc9d68b971479a1286f7f017e1debb9841e3a76",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T17:47:30.160Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/acp-plugin-approvals",
+        "head_sha": "5cc9d68b971479a1286f7f017e1debb9841e3a76",
         "cluster_id": null,
         "job_path": null
       }
