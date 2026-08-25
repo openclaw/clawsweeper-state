@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T14:44:58.630Z",
+  "updated_at": "2026-08-25T14:45:19.327Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3514:5390207954:2026-08-25T09:44:30Z:clawsweeper_needs_human",
-      "comment_id": "5390207954",
-      "comment_version_key": "5390207954:2026-08-25T09:44:30Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3514#issuecomment-5390207954",
-      "comment_created_at": "2026-08-24T03:02:14Z",
-      "comment_updated_at": "2026-08-25T09:44:30Z",
-      "comment_body_sha256": "db2642409d61e4083c6059730611657ceb8b3c1a80dec128bfbae605cda0461a",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3514,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The dependent workflow must not query either staged index until its backfill has completed. (sha=4f29d8e3ccc2f5cd86473c887ebdebb2039bbc01)",
-      "expected_head_sha": "4f29d8e3ccc2f5cd86473c887ebdebb2039bbc01",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T09:49:49.869Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/stage-signal-workflow-indexes",
-        "head_sha": "4f29d8e3ccc2f5cd86473c887ebdebb2039bbc01",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3188:5408614442:2026-08-25T09:49:27Z:clawsweeper_auto_repair",
       "comment_id": "5408614442",
@@ -32418,6 +32385,53 @@
         "kind": "pull_request",
         "branch": "codex/matrix-pr73455-port-20260723",
         "head_sha": "81a9f7ff451f989f0f2a0e281201a9b57ef86780",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129348:5412125784:2026-08-25T14:44:18Z:re_review",
+      "comment_id": "5412125784",
+      "comment_version_key": "5412125784:2026-08-25T14:44:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129348#issuecomment-5412125784",
+      "comment_created_at": "2026-08-25T14:44:18Z",
+      "comment_updated_at": "2026-08-25T14:44:18Z",
+      "comment_body_sha256": "faf8ae745e6aca589adc47071d1ad17d1e400645e8b3997c8f1cae5afdf68a7a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129348,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T14:45:17.115Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/push-notifications-for-permission-requests",
+        "head_sha": "bfc8136f3a26b52ea4f3a0524f4daa54d7f2ddf1",
         "cluster_id": null,
         "job_path": null
       },
