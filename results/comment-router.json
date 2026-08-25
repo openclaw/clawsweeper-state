@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T16:28:42.191Z",
+  "updated_at": "2026-08-25T16:29:33.571Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119132:5175681717:2026-08-25T11:58:48Z:clawsweeper_needs_human",
-      "comment_id": "5175681717",
-      "comment_version_key": "5175681717:2026-08-25T11:58:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119132#issuecomment-5175681717",
-      "comment_created_at": "2026-08-04T07:02:36Z",
-      "comment_updated_at": "2026-08-25T11:58:48Z",
-      "comment_body_sha256": "fd61621ca27e501c6809bcd7211414a2d54ff4ad9347f740090152e58f5b2095",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119132,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as dirty against main; overlapping plugin, CLI, and frontmatter paths need conflict resolution and an exact-head review. (sha=8f98965c3679c822be268601a5c71542676c7d78)",
-      "expected_head_sha": "8f98965c3679c822be268601a5c71542676c7d78",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T12:04:33.615Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/compatible-bundle-agent-metadata",
-        "head_sha": "8f98965c3679c822be268601a5c71542676c7d78",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-25T11:47:44Z:clawsweeper_auto_repair",
       "comment_id": "5290613923",
@@ -31805,6 +31772,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122425:5413488839:2026-08-25T16:28:48Z:re_review",
+      "comment_id": "5413488839",
+      "comment_version_key": "5413488839:2026-08-25T16:28:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5413488839",
+      "comment_created_at": "2026-08-25T16:28:48Z",
+      "comment_updated_at": "2026-08-25T16:28:48Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122425,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T16:29:30.277Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inline-slash-skills",
+        "head_sha": "84e55575b85ad65be18d78b469e7f9a50e59ab22",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
