@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T15:41:30.284Z",
+  "updated_at": "2026-08-25T15:41:37.296Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129255:5409585677:2026-08-25T11:17:17Z:clawsweeper_auto_repair",
-      "comment_id": "5409585677",
-      "comment_version_key": "5409585677:2026-08-25T11:17:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129255#issuecomment-5409585677",
-      "comment_created_at": "2026-08-25T11:17:17Z",
-      "comment_updated_at": "2026-08-25T11:17:17Z",
-      "comment_body_sha256": "3370be804297f835488d02e851f8cefeff0633b0db3a78db40fbff59ab4e9940",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129255,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9083fd3a27e2978fd7f0791ea2b1c18c2aa36943)",
-      "expected_head_sha": "9083fd3a27e2978fd7f0791ea2b1c18c2aa36943",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T11:20:14.120Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/129222-sentence-boundary-no-space",
-        "head_sha": "9083fd3a27e2978fd7f0791ea2b1c18c2aa36943",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128249:5409587797:2026-08-25T11:17:28Z:re_review",
       "comment_id": "5409587797",
@@ -31547,6 +31514,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129329:5412907074:2026-08-25T15:40:51Z:re_review",
+      "comment_id": "5412907074",
+      "comment_version_key": "5412907074:2026-08-25T15:40:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129329#issuecomment-5412907074",
+      "comment_created_at": "2026-08-25T15:40:51Z",
+      "comment_updated_at": "2026-08-25T15:40:51Z",
+      "comment_body_sha256": "af53dc9367449ce306948bd68f27a2b9dbedb59c9471edf96921779d9d2ecc25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129329,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T15:41:35.370Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/repair-aug25-broken-main-auth-health",
+        "head_sha": "a60b1c172d85bd1c3316c4810bf5d832e79ec084",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
