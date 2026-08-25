@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T08:54:01.301Z",
+  "updated_at": "2026-08-25T08:54:16.664Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128286:5387213432:2026-08-25T04:53:52Z:clawsweeper_needs_human",
-      "comment_id": "5387213432",
-      "comment_version_key": "5387213432:2026-08-25T04:53:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128286#issuecomment-5387213432",
-      "comment_created_at": "2026-08-23T17:01:44Z",
-      "comment_updated_at": "2026-08-25T04:53:52Z",
-      "comment_body_sha256": "717f4450badb1cd423b582142c0ea2bb1761f9750a9cb5926e4ae02d4c349a94",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128286,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging makes pinScope and categoryPinnedAt durable cross-client session semantics; maintainers need to accept that public compatibility boundary before it becomes a supported contrac... (sha=cc16bacfce1924b25a3ade43cdb51cab88f0caf2)",
-      "expected_head_sha": "cc16bacfce1924b25a3ade43cdb51cab88f0caf2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T04:55:20.166Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/pin-to-a-group-instead-of-globally",
-        "head_sha": "cc16bacfce1924b25a3ade43cdb51cab88f0caf2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129012:5405459466:2026-08-25T04:59:37Z:clawsweeper_needs_human",
       "comment_id": "5405459466",
@@ -31236,6 +31203,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128845:5407886026:2026-08-25T08:53:30Z:re_review",
+      "comment_id": "5407886026",
+      "comment_version_key": "5407886026:2026-08-25T08:53:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128845#issuecomment-5407886026",
+      "comment_created_at": "2026-08-25T08:53:30Z",
+      "comment_updated_at": "2026-08-25T08:53:30Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128845,
+      "author": "Thinkr1",
+      "author_id": 146010473,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T08:54:14.034Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-delivery-mirror-idle-freshness",
+        "head_sha": "2c9d102fa5a645aa20d03dc02972b33f8d393f63",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
