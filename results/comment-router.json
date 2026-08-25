@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T01:44:53.728Z",
+  "updated_at": "2026-08-25T01:45:07.754Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122981:5275861923:2026-08-24T21:34:22Z:clawsweeper_needs_human",
-      "comment_id": "5275861923",
-      "comment_version_key": "5275861923:2026-08-24T21:34:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122981#issuecomment-5275861923",
-      "comment_created_at": "2026-08-13T04:12:00Z",
-      "comment_updated_at": "2026-08-24T21:34:22Z",
-      "comment_body_sha256": "70d1d3c107cbfacc2e6d2d1678fdaee5d563ebd9dbc1e4215d460f8ce98fdca7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122981,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recorded full-file proof predates the latest merge-from-main commits, so the focused Gateway test and required checks should finish on the exact head before landing. (sha=19526ff3e1dde92354e0ae068c0675e0f25fe93d)",
-      "expected_head_sha": "19526ff3e1dde92354e0ae068c0675e0f25fe93d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T21:46:49.562Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-test-sidecar-race",
-        "head_sha": "19526ff3e1dde92354e0ae068c0675e0f25fe93d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123356:5287474810:2026-08-24T21:30:46Z:clawsweeper_auto_repair",
       "comment_id": "5287474810",
@@ -30863,6 +30830,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128951:5403929580:2026-08-25T01:44:18Z:re_review",
+      "comment_id": "5403929580",
+      "comment_version_key": "5403929580:2026-08-25T01:44:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128951#issuecomment-5403929580",
+      "comment_created_at": "2026-08-25T01:44:18Z",
+      "comment_updated_at": "2026-08-25T01:44:18Z",
+      "comment_body_sha256": "a585ff1103d45da7206f325c24f154f65d60c8deee7050e3071a00ad2e908528",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128951,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T01:45:05.547Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/attribute-automation-activity-to-its-creator",
+        "head_sha": "015e1979ea7074676e555f0ad3f52cde052eb10e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
