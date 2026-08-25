@@ -67,21 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current-main bug where an authorized text slash command on a channel without native commands can be dropped with `reply-operation-active` and no visible acknowledgement. Preserve command authorization, session persistence, and normal-message queue behavior; do not special-case QQBot or Feishu and do not add config. Prefer extending the existing command fast path for authorized text commands so `/status` and directive-only `/think high` can return their marked command reply without contending with an active reply operation. First establish a failing regression through the channel/reply pipeline with an active operation, then add focused coverage for `/status` and `/think`; verify native-command behavior remains intact. Do not edit CHANGELOG.md; put release-note context in the PR body.
+Repair the shared active-session command acknowledgement bug reported by https://github.com/openclaw/openclaw/issues/125838. Start by adding a failing regression for an authorized text `/status` and directive-only `/think` on the same session as an active reply operation; each must produce a visible final reply while the active operation remains valid. Trace `src/auto-reply/reply/dispatch-from-config.prepare-operation.ts`, `src/auto-reply/reply/dispatch-from-config.lifecycle.ts`, and the reply pipeline before changing code. Keep ordinary active-message queue/steer/followup behavior and channel adapters unchanged; do not special-case QQBot or Feishu, add config, or alter authority semantics. Add focused boundary coverage and record user-visible release-note context in the PR body.
 
 Likely files:
 
-- src/auto-reply/reply/get-reply-native-slash-fast-path.ts
-- src/auto-reply/reply/get-reply-native-slash-fast-path.test.ts
+- src/auto-reply/reply/dispatch-from-config.lifecycle.ts
+- src/auto-reply/reply/dispatch-from-config.prepare-operation.ts
 - src/auto-reply/reply/dispatch-from-config.acp-abort.test.ts
 - src/channels/turn/run-channel-turn.pipeline.test.ts
 
 Validation:
 
-- pnpm test src/auto-reply/reply/get-reply-native-slash-fast-path.test.ts
 - pnpm test src/auto-reply/reply/dispatch-from-config.acp-abort.test.ts
 - pnpm test src/channels/turn/run-channel-turn.pipeline.test.ts
-- pnpm check:changed -- src/auto-reply/reply/get-reply-native-slash-fast-path.ts src/auto-reply/reply/get-reply-native-slash-fast-path.test.ts src/auto-reply/reply/dispatch-from-config.acp-abort.test.ts
+- Add and run a focused same-session authorized text-command regression that fails before the repair and verifies visible delivery after it.
 
 ## Operator Prompt
 
