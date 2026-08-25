@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T13:53:44.720Z",
+  "updated_at": "2026-08-25T13:54:07.506Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129131:5407355096:2026-08-25T08:52:29Z:clawsweeper_needs_human",
-      "comment_id": "5407355096",
-      "comment_version_key": "5407355096:2026-08-25T08:52:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129131#issuecomment-5407355096",
-      "comment_created_at": "2026-08-25T08:05:27Z",
-      "comment_updated_at": "2026-08-25T08:52:29Z",
-      "comment_body_sha256": "9380c1534a6051f9d954401d9f5a87635a9230cb1e6c47cf156672e06e47aa22",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129131,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the provided lifecycle tests verify fresh lookups after abort, but do not show that a pre-abort borrowed flow i...; Review finding: [P1] Fence borrowed Reef work before final relay I/O — extensions/reef/src/channel.ts:450-454 - [high] Stale retained flow can send after account abort — extension... (sha=42186b13d147c68abbbe9c8e8d00533f9190719b)",
-      "expected_head_sha": "42186b13d147c68abbbe9c8e8d00533f9190719b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T08:54:54.020Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/elegant-haibt-0097be",
-        "head_sha": "42186b13d147c68abbbe9c8e8d00533f9190719b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129145:5407545829:2026-08-25T08:54:09Z:clawsweeper_auto_repair",
       "comment_id": "5407545829",
@@ -32325,6 +32292,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129316:5411411432:2026-08-25T13:53:14Z:re_review",
+      "comment_id": "5411411432",
+      "comment_version_key": "5411411432:2026-08-25T13:53:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129316#issuecomment-5411411432",
+      "comment_created_at": "2026-08-25T13:53:14Z",
+      "comment_updated_at": "2026-08-25T13:53:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129316,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T13:54:03.767Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/review-gateway-session-dates",
+        "head_sha": "7726553806a96d611be0bec69e7b4fae1637e2b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
