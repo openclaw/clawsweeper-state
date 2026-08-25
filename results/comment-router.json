@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T17:37:44.718Z",
+  "updated_at": "2026-08-25T17:38:54.952Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/songsee:7:5304174384:2026-08-25T12:39:18Z:clawsweeper_auto_repair",
-      "comment_id": "5304174384",
-      "comment_version_key": "5304174384:2026-08-25T12:39:18Z",
-      "comment_url": "https://github.com/openclaw/songsee/pull/7#issuecomment-5304174384",
-      "comment_created_at": "2026-08-15T20:50:14Z",
-      "comment_updated_at": "2026-08-25T12:39:18Z",
-      "comment_body_sha256": "fc412d3f16e88bdc6e463d21c3ccc848707ed20d4f2e2c15de2e8dda41edea97",
-      "repo": "openclaw/songsee",
-      "issue_number": 7,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=15e679b3474da11b60c09fddcb2e859868e2ef6a)",
-      "expected_head_sha": "15e679b3474da11b60c09fddcb2e859868e2ef6a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T12:40:36.383Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ffmpeg-timeout-wav-cap",
-        "head_sha": "15e679b3474da11b60c09fddcb2e859868e2ef6a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ask-molty:10:5334544777:2026-08-25T12:40:37Z:clawsweeper_auto_repair",
       "comment_id": "5334544777",
@@ -32051,6 +32018,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127126:5414295706:2026-08-25T17:37:44Z:re_review",
+      "comment_id": "5414295706",
+      "comment_version_key": "5414295706:2026-08-25T17:37:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127126#issuecomment-5414295706",
+      "comment_created_at": "2026-08-25T17:37:44Z",
+      "comment_updated_at": "2026-08-25T17:37:44Z",
+      "comment_body_sha256": "e835c4521a7ea1a1a5065c6a4ebcd68c985c4634acb98fb2410a5ec22fb233b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127126,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T17:38:52.824Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-plugin-allowlist-warning-cache",
+        "head_sha": "1c5a1b8be8627f2ef5c93a6b156aed7cf6e47c58",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
