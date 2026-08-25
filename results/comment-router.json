@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T15:03:03.680Z",
+  "updated_at": "2026-08-25T15:03:08.909Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129208:5408679748:2026-08-25T10:32:55Z:clawsweeper_needs_human",
-      "comment_id": "5408679748",
-      "comment_version_key": "5408679748:2026-08-25T10:32:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129208#issuecomment-5408679748",
-      "comment_created_at": "2026-08-25T09:54:28Z",
-      "comment_updated_at": "2026-08-25T10:32:55Z",
-      "comment_body_sha256": "40cd40e67d41d207deaa2149237075cb4b9a0a97ea2c1fd9945a32df07e6e3d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129208,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - A maintainer-owned, maintainer-labeled cleanup needs an explicit landing choice; no bounded repair is indicated. (sha=17f707a5d386492597a376c77e9557dab49ad4fe)",
-      "expected_head_sha": "17f707a5d386492597a376c77e9557dab49ad4fe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T10:42:31.163Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cleanup20k-zai-retired-repro-owner-20260825",
-        "head_sha": "17f707a5d386492597a376c77e9557dab49ad4fe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129210:5408696565:2026-08-25T10:34:38Z:clawsweeper_auto_repair",
       "comment_id": "5408696565",
@@ -31611,6 +31578,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3494:5412403413:2026-08-25T15:02:18Z:re_review",
+      "comment_id": "5412403413",
+      "comment_version_key": "5412403413:2026-08-25T15:02:18Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3494#issuecomment-5412403413",
+      "comment_created_at": "2026-08-25T15:02:18Z",
+      "comment_updated_at": "2026-08-25T15:02:18Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3494,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T15:03:06.544Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-owner-explanations",
+        "head_sha": "a44b8e436526bb9cff5b5b79e73db4bcebe1cf49",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
