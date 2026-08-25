@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T05:04:41.354Z",
+  "updated_at": "2026-08-25T05:04:47.230Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128608:5392606512:2026-08-25T01:04:09Z:clawsweeper_needs_human",
-      "comment_id": "5392606512",
-      "comment_version_key": "5392606512:2026-08-25T01:04:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128608#issuecomment-5392606512",
-      "comment_created_at": "2026-08-24T08:27:09Z",
-      "comment_updated_at": "2026-08-25T01:04:09Z",
-      "comment_body_sha256": "f79c3544b06a2240270bdd4591e6d63c1d13541690d75bce3d680615be2bd928",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128608,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes compatibility-sensitive live config publication: an incorrect future no-op classification could reuse a prepared catalog when a rebuild is required. (sha=5763b4bedc3994fdb724db2fa6361030241a0240)",
-      "expected_head_sha": "5763b4bedc3994fdb724db2fa6361030241a0240",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T01:09:28.010Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/prepared-model-config-stamp-128515",
-        "head_sha": "5763b4bedc3994fdb724db2fa6361030241a0240",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128940:5403625153:2026-08-25T01:06:06Z:clawsweeper_auto_repair",
       "comment_id": "5403625153",
@@ -30332,6 +30299,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T05:04:41.354Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128980:5404611812:2026-08-25T05:01:29Z:clawsweeper_needs_human",
+      "comment_id": "5404611812",
+      "comment_version_key": "5404611812:2026-08-25T05:01:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128980#issuecomment-5404611812",
+      "comment_created_at": "2026-08-25T03:19:08Z",
+      "comment_updated_at": "2026-08-25T05:01:29Z",
+      "comment_body_sha256": "5c7f8726edcb7e8e95b41900abfc4b9cb4654cc257c1c5a90ef09d02b2c6e964",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128980,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted transcript archive and deletion ordering; exact-head proof must confirm the worker sidecar is packaged and changed snapshots cannot be reclaimed. (sha=8425baa28d4c4117913e7d75d9ef9c13dba9b53c)",
+      "expected_head_sha": "8425baa28d4c4117913e7d75d9ef9c13dba9b53c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T05:04:47.230Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/backport-bounded-session-archive-plans",
+        "head_sha": "8425baa28d4c4117913e7d75d9ef9c13dba9b53c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
