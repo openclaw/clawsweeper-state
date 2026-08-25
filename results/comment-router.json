@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-25T01:11:31.339Z",
+  "updated_at": "2026-08-25T01:10:07.003Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111913:5028110685:2026-08-24T20:57:25Z:clawsweeper_auto_repair",
+      "comment_id": "5028110685",
+      "comment_version_key": "5028110685:2026-08-24T20:57:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111913#issuecomment-5028110685",
+      "comment_created_at": "2026-07-20T23:05:42Z",
+      "comment_updated_at": "2026-08-24T20:57:25Z",
+      "comment_body_sha256": "e7a6e39404308854cc967f6741a2395a5407c45a13ac6bbd8d2406ca0857e7cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111913,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=182d5b386d34e89f01dfbf58c427676148059795)",
+      "expected_head_sha": "182d5b386d34e89f01dfbf58c427676148059795",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T21:01:40.212Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/anthropic-long-context-compact",
+        "head_sha": "182d5b386d34e89f01dfbf58c427676148059795",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126146:5337216348:2026-08-24T21:01:27Z:clawsweeper_auto_repair",
       "comment_id": "5337216348",
@@ -30859,53 +30892,6 @@
         "kind": "pull_request",
         "branch": "fix/127583-sessions-cleanup-all-agents",
         "head_sha": "a74c1939e0c6dc7f5e6041391150f38ad71827d6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128508:5403660902:2026-08-25T01:10:41Z:re_review",
-      "comment_id": "5403660902",
-      "comment_version_key": "5403660902:2026-08-25T01:10:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128508#issuecomment-5403660902",
-      "comment_created_at": "2026-08-25T01:10:41Z",
-      "comment_updated_at": "2026-08-25T01:10:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128508,
-      "author": "bek91",
-      "author_id": 66288351,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T01:11:28.515Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-native-hook-relay-lifecycle-v2",
-        "head_sha": "1995eb57110ad53dd820ff064bef742c5f1024e5",
         "cluster_id": null,
         "job_path": null
       },
