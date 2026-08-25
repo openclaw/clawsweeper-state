@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T21:05:12.404Z",
+  "updated_at": "2026-08-25T21:05:21.795Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122502:5265071901:2026-08-12T09:46:45Z:re_review",
-      "comment_id": "5265071901",
-      "comment_version_key": "5265071901:2026-08-12T09:46:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122502#issuecomment-5265071901",
-      "comment_created_at": "2026-08-12T09:46:45Z",
-      "comment_updated_at": "2026-08-12T09:46:45Z",
-      "comment_body_sha256": "094ede8bbc3f20b6a020d3ce9ff53efc5699b2dff5ac1cc57c99795b772c6b8c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122502,
-      "author": "AppleSpriter",
-      "author_id": 26051275,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T14:58:24.202Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123183:5287185259:2026-08-25T14:53:22Z:clawsweeper_auto_repair",
       "comment_id": "5287185259",
@@ -32239,6 +32212,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127054:5366060249:2026-08-25T21:01:51Z:clawsweeper_needs_human",
+      "comment_id": "5366060249",
+      "comment_version_key": "5366060249:2026-08-25T21:01:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127054#issuecomment-5366060249",
+      "comment_created_at": "2026-08-21T06:31:29Z",
+      "comment_updated_at": "2026-08-25T21:01:51Z",
+      "comment_body_sha256": "2ae3a79aefa25f1ee23e782201b153ab0db2fffce3f605d97e584101574ca979",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127054,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a bearer-token authorization boundary in a restricted secrets path; merge only after the exact-head security checks and listed security-owner review are complete. (sha=c09f0cd0cedb8aa951ed7f926d6a6df10703ee61)",
+      "expected_head_sha": "c09f0cd0cedb8aa951ed7f926d6a6df10703ee61",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T21:05:21.795Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/codeql-proxy-digest-20260821",
+        "head_sha": "c09f0cd0cedb8aa951ed7f926d6a6df10703ee61",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
