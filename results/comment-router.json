@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T13:34:51.126Z",
+  "updated_at": "2026-08-25T13:35:05.871Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124658:5407453820:2026-08-25T08:14:58Z:re_review",
-      "comment_id": "5407453820",
-      "comment_version_key": "5407453820:2026-08-25T08:14:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124658#issuecomment-5407453820",
-      "comment_created_at": "2026-08-25T08:14:58Z",
-      "comment_updated_at": "2026-08-25T08:14:58Z",
-      "comment_body_sha256": "1a636d05d2e2d1912b05be0f749f56103e6218861980113970dab22bc2bf10a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124658,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T08:15:42.037Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clawhub-windows-appdata-config",
-        "head_sha": "b8506adf610280457492a318e9366d62218dfc77",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/hermit:28:5352355168:2026-08-25T08:09:40Z:clawsweeper_needs_human",
       "comment_id": "5352355168",
@@ -32703,6 +32656,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T13:34:51.126Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3189:5411145049:2026-08-25T13:32:34Z:clawsweeper_auto_repair",
+      "comment_id": "5411145049",
+      "comment_version_key": "5411145049:2026-08-25T13:32:34Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3189#issuecomment-5411145049",
+      "comment_created_at": "2026-08-25T13:32:34Z",
+      "comment_updated_at": "2026-08-25T13:32:34Z",
+      "comment_body_sha256": "a824ef03b8f2e21735741d9dcf4291f2d8e237348713e8642e55b9e8c256e036",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3189,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b277023d51be51152bca714911fe7f85f79f1964)",
+      "expected_head_sha": "b277023d51be51152bca714911fe7f85f79f1964",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T13:35:05.871Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-codex-card-refresh",
+        "head_sha": "b277023d51be51152bca714911fe7f85f79f1964",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
