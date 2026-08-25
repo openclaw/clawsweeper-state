@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T14:16:34.628Z",
+  "updated_at": "2026-08-25T14:17:48.355Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129182:5408357823:2026-08-25T09:29:34Z:clawsweeper_needs_human",
-      "comment_id": "5408357823",
-      "comment_version_key": "5408357823:2026-08-25T09:29:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129182#issuecomment-5408357823",
-      "comment_created_at": "2026-08-25T09:29:34Z",
-      "comment_updated_at": "2026-08-25T09:29:34Z",
-      "comment_body_sha256": "3b82f3d37dc192b44651985d847ac35c1b7414fc9087d0afaf2f69e75f1829bd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129182,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - During worker convergence, active-projection readers deliberately return retryable unavailability and FTS omits the affected session; exact-head validation must preserve those recover... (sha=28b38294d571c9d8240b49b920b076b929d5466c)",
-      "expected_head_sha": "28b38294d571c9d8240b49b920b076b929d5466c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T09:30:50.763Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/deferred-transcript-index-rebuild",
-        "head_sha": "28b38294d571c9d8240b49b920b076b929d5466c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129092:5407038431:2026-08-25T09:29:30Z:clawsweeper_needs_human",
       "comment_id": "5407038431",
@@ -32313,6 +32280,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129092:5411744081:2026-08-25T14:16:58Z:re_review",
+      "comment_id": "5411744081",
+      "comment_version_key": "5411744081:2026-08-25T14:16:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129092#issuecomment-5411744081",
+      "comment_created_at": "2026-08-25T14:16:58Z",
+      "comment_updated_at": "2026-08-25T14:16:58Z",
+      "comment_body_sha256": "4446f49cf541da67848a4fbf2ac400391203b44a1309bf38f355d1bd8fa3d27c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129092,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review this exact head with the following mandatory direct-source gate",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T14:17:46.022Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-model-credential-selection",
+        "head_sha": "c465155ae6b6cbcab130e054afc51c7058c457f9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
