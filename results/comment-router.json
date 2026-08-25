@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T03:13:34.756Z",
+  "updated_at": "2026-08-25T03:14:30.416Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111913:5247387679:2026-08-11T00:35:20Z:re_review",
-      "comment_id": "5247387679",
-      "comment_version_key": "5247387679:2026-08-11T00:35:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111913#issuecomment-5247387679",
-      "comment_created_at": "2026-08-10T23:55:24Z",
-      "comment_updated_at": "2026-08-11T00:35:20Z",
-      "comment_body_sha256": "55e932b8ceab057fd3d73c1fcdf0240941b391be72b7acf8396470c074b1f8d0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111913,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T23:26:25.619Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111913:5247562283:2026-08-11T00:21:36Z:re_review",
       "comment_id": "5247562283",
@@ -30541,6 +30514,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T03:13:34.756Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128966:5404140803:2026-08-25T03:13:47Z:clawsweeper_needs_human",
+      "comment_id": "5404140803",
+      "comment_version_key": "5404140803:2026-08-25T03:13:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128966#issuecomment-5404140803",
+      "comment_created_at": "2026-08-25T02:11:17Z",
+      "comment_updated_at": "2026-08-25T03:13:47Z",
+      "comment_body_sha256": "ff2bd4abcf7a1592f4e44b9daaa8f0cec6e1b099f6e3e8f69d8878c7132105de",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128966,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR intentionally does not dispatch the broker, so it lacks redacted hosted evidence of an allowed exact rer...; Review finding: [medium] Prove the hosted final write boundary — scripts/frv-proof-broker.mjs:289 (sha=70a4abc9b603ac51f71b861250aed6d17849a9fb)",
+      "expected_head_sha": "70a4abc9b603ac51f71b861250aed6d17849a9fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T03:14:30.416Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-proof-broker",
+        "head_sha": "70a4abc9b603ac51f71b861250aed6d17849a9fb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
