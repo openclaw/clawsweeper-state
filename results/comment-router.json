@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T07:06:06.677Z",
+  "updated_at": "2026-08-25T07:10:29.762Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123083:5278394565:2026-08-25T02:42:45Z:clawsweeper_needs_human",
-      "comment_id": "5278394565",
-      "comment_version_key": "5278394565:2026-08-25T02:42:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123083#issuecomment-5278394565",
-      "comment_created_at": "2026-08-13T09:16:47Z",
-      "comment_updated_at": "2026-08-25T02:42:45Z",
-      "comment_body_sha256": "af7b7f63e5fad2f16d0a92de310124b373569a87bcf502dc298a03ef2c51b432",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123083,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing users with stored update.channel: dev change from a failed package-tag attempt to a Git checkout switch; the explicit-tag carve-out and its regression case are the compatibil... (sha=07c6eb3c04b74a141cd088b1b06a9de723ffadfb)",
-      "expected_head_sha": "07c6eb3c04b74a141cd088b1b06a9de723ffadfb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T02:46:25.210Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-stored-dev-channel-git-routing",
-        "head_sha": "07c6eb3c04b74a141cd088b1b06a9de723ffadfb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128790:5398697840:2026-08-25T02:45:20Z:clawsweeper_needs_human",
       "comment_id": "5398697840",
@@ -30612,6 +30579,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128742:5406798664:2026-08-25T07:09:42Z:re_review",
+      "comment_id": "5406798664",
+      "comment_version_key": "5406798664:2026-08-25T07:09:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128742#issuecomment-5406798664",
+      "comment_created_at": "2026-08-25T07:09:42Z",
+      "comment_updated_at": "2026-08-25T07:09:42Z",
+      "comment_body_sha256": "b23d134621a0bf9fc79201c3771663ccd73ca23e8bf9ee7c40d19c4165c38563",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128742,
+      "author": "libaojiang",
+      "author_id": 101562714,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T07:10:24.764Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/128719-codex-bind-self-run",
+        "head_sha": "997279d6d1efad3c135ed9f394b3416ede62e9b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
