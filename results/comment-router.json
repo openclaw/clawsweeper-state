@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T12:58:04.295Z",
+  "updated_at": "2026-08-25T12:58:12.817Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4654028532:2026-06-08T22:17:15Z:re_review",
-      "comment_id": "4654028532",
-      "comment_version_key": "4654028532:2026-06-08T22:17:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4654028532",
-      "comment_created_at": "2026-06-08T22:17:15Z",
-      "comment_updated_at": "2026-06-08T22:17:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T08:01:38.540Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4655991161:2026-06-09T04:06:21Z:re_review",
       "comment_id": "4655991161",
@@ -32151,6 +32124,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T12:58:04.295Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/summarize:392:5348725479:2026-08-25T12:56:46Z:clawsweeper_needs_human",
+      "comment_id": "5348725479",
+      "comment_version_key": "5348725479:2026-08-25T12:56:46Z",
+      "comment_url": "https://github.com/steipete/summarize/pull/392#issuecomment-5348725479",
+      "comment_created_at": "2026-08-19T22:24:02Z",
+      "comment_updated_at": "2026-08-25T12:56:46Z",
+      "comment_body_sha256": "2811df3ba1b109d1e3d3304449a8a83362f2430fe134736e1198110e91181033",
+      "repo": "steipete/summarize",
+      "issue_number": 392,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports tests and a mocked HTTP smoke, but no redacted after-fix run against a real FAL queue; add terminal output or runtime logs... (sha=77eb0dff9f2b970f45927c1d5bb39772609bd939)",
+      "expected_head_sha": "77eb0dff9f2b970f45927c1d5bb39772609bd939",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T12:58:12.817Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-fal-timeout",
+        "head_sha": "77eb0dff9f2b970f45927c1d5bb39772609bd939",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
