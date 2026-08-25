@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T17:59:01.890Z",
+  "updated_at": "2026-08-25T17:59:18.473Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5410828587:2026-08-25T13:08:00Z:re_review",
-      "comment_id": "5410828587",
-      "comment_version_key": "5410828587:2026-08-25T13:08:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5410828587",
-      "comment_created_at": "2026-08-25T13:08:00Z",
-      "comment_updated_at": "2026-08-25T13:08:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T13:08:46.271Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119992-per-turn-send-budget",
-        "head_sha": "077011e74478f0ce64507f7e4c683250cd1c9fff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120854:5229807960:2026-08-25T13:00:31Z:clawsweeper_needs_human",
       "comment_id": "5229807960",
@@ -32010,6 +31963,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-compaction-registry-test-owner",
         "head_sha": "7615961cce18cd3c537753a2d1019bd875fdb1ad",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128997:5405242237:2026-08-25T17:54:04Z:clawsweeper_needs_human",
+      "comment_id": "5405242237",
+      "comment_version_key": "5405242237:2026-08-25T17:54:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128997#issuecomment-5405242237",
+      "comment_created_at": "2026-08-25T04:29:37Z",
+      "comment_updated_at": "2026-08-25T17:54:04Z",
+      "comment_body_sha256": "387bc92556878c8419cae8eaeee206bb9116f2c3f293b358e6af7b48f3f16623",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128997,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still queued; it must pass before merging a change to agent-visible persisted transcript text. (sha=fe2dc35afc58a078a89fdb2a692bfa5d03b9e79a)",
+      "expected_head_sha": "fe2dc35afc58a078a89fdb2a692bfa5d03b9e79a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T17:59:18.473Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-128967-session-truncation-disclosure",
+        "head_sha": "fe2dc35afc58a078a89fdb2a692bfa5d03b9e79a",
         "cluster_id": null,
         "job_path": null
       }
