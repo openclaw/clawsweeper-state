@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T12:59:04.388Z",
+  "updated_at": "2026-08-25T12:59:31.908Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4717352774:2026-06-16T10:06:15Z:re_review",
-      "comment_id": "4717352774",
-      "comment_version_key": "4717352774:2026-06-16T10:06:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4717352774",
-      "comment_created_at": "2026-06-16T10:06:15Z",
-      "comment_updated_at": "2026-06-16T10:06:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T08:01:38.540Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4719181729:2026-06-16T13:19:10Z:re_review",
       "comment_id": "4719181729",
@@ -32215,6 +32188,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:16:5304620123:2026-08-25T12:52:00Z:clawsweeper_auto_repair",
+      "comment_id": "5304620123",
+      "comment_version_key": "5304620123:2026-08-25T12:52:00Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/16#issuecomment-5304620123",
+      "comment_created_at": "2026-08-15T22:54:41Z",
+      "comment_updated_at": "2026-08-25T12:52:00Z",
+      "comment_body_sha256": "6c1e0fc37ea78ea58f6ef0a77b68b50b51e81bdc70a1a145ab2e7f7bdfe91dab",
+      "repo": "openclaw/babelfish",
+      "issue_number": 16,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9f4ac50539537b27b24942c9925841a15436162c)",
+      "expected_head_sha": "9f4ac50539537b27b24942c9925841a15436162c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T12:59:31.908Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/git-clone-timeout",
+        "head_sha": "9f4ac50539537b27b24942c9925841a15436162c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
