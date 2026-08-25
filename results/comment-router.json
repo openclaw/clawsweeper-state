@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T19:56:31.541Z",
+  "updated_at": "2026-08-25T19:57:53.978Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129328:5411670180:2026-08-25T14:12:06Z:re_review",
-      "comment_id": "5411670180",
-      "comment_version_key": "5411670180:2026-08-25T14:12:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129328#issuecomment-5411670180",
-      "comment_created_at": "2026-08-25T14:12:06Z",
-      "comment_updated_at": "2026-08-25T14:12:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129328,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T14:14:47.101Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/working-thread-without-spinner",
-        "head_sha": "7d35eb181ae93c83a41817e9d2510da8c4f7f133",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:108461:5411674498:2026-08-25T14:12:23Z:re_review",
       "comment_id": "5411674498",
@@ -32294,6 +32247,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3532:5415957601:2026-08-25T19:56:39Z:clawsweeper_needs_human",
+      "comment_id": "5415957601",
+      "comment_version_key": "5415957601:2026-08-25T19:56:39Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3532#issuecomment-5415957601",
+      "comment_created_at": "2026-08-25T19:56:39Z",
+      "comment_updated_at": "2026-08-25T19:56:39Z",
+      "comment_body_sha256": "1aaba88c8eb903be874d7ea86e96cfbf98917ceca5417337db6cc414a6e001b6",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3532,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This intentionally draft automation report needs normal audit triage, not an automated repair on the report branch. (sha=a11090d4bb105a0012c674895b32a92ff1c62391)",
+      "expected_head_sha": "a11090d4bb105a0012c674895b32a92ff1c62391",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T19:57:53.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/design-system-audit",
+        "head_sha": "a11090d4bb105a0012c674895b32a92ff1c62391",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
