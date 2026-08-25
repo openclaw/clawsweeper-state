@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T10:59:37.117Z",
+  "updated_at": "2026-08-25T11:01:37.794Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120854:5237535838:2026-08-10T08:05:20Z:re_review",
-      "comment_id": "5237535838",
-      "comment_version_key": "5237535838:2026-08-10T08:05:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120854#issuecomment-5237535838",
-      "comment_created_at": "2026-08-10T08:05:20Z",
-      "comment_updated_at": "2026-08-10T08:05:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120854,
-      "author": "aolea",
-      "author_id": 35071898,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T06:24:36.609Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120854:5246178334:2026-08-10T21:20:45Z:re_review",
       "comment_id": "5246178334",
@@ -32439,6 +32412,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128289:5387183075:2026-08-25T11:00:30Z:clawsweeper_needs_human",
+      "comment_id": "5387183075",
+      "comment_version_key": "5387183075:2026-08-25T11:00:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128289#issuecomment-5387183075",
+      "comment_created_at": "2026-08-23T16:54:59Z",
+      "comment_updated_at": "2026-08-25T11:00:30Z",
+      "comment_body_sha256": "bb317c221da2412d030b8316f55632c3fba816cab37d3c97aed53cbfb15f3e5a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128289,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: no inspectable exact-head evidence shows both an authorized Browser effect and a revoked or expired authority b...; Review finding: [P1] Redact credential-bearing response headers — extensions/browser/src/browser/pw-tools-core.responses.ts:87-89 - [high] Credential headers are returned verbatim... (sha=e0de93e2acfe455ef72f76ba255228fd57da9b95)",
+      "expected_head_sha": "e0de93e2acfe455ef72f76ba255228fd57da9b95",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T11:01:37.794Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/browser-session-credential-steward-mvp-repair",
+        "head_sha": "e0de93e2acfe455ef72f76ba255228fd57da9b95",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
