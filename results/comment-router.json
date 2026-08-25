@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T09:53:39.360Z",
+  "updated_at": "2026-08-25T09:53:42.173Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5311019740:2026-08-17T02:14:32Z:re_review",
-      "comment_id": "5311019740",
-      "comment_version_key": "5311019740:2026-08-17T02:14:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5311019740",
-      "comment_created_at": "2026-08-17T02:14:32Z",
-      "comment_updated_at": "2026-08-17T02:14:32Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T05:33:20.743Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5311145571:2026-08-17T02:39:07Z:re_review",
       "comment_id": "5311145571",
@@ -31937,6 +31910,39 @@
         "head_sha": "fbdc0a4818c48f19a07e00e16f8f59ffe24f74f0",
         "cluster_id": "automerge-openclaw-clawhub-3528",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-clawhub-3528.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129172:5408208252:2026-08-25T09:52:12Z:clawsweeper_needs_human",
+      "comment_id": "5408208252",
+      "comment_version_key": "5408208252:2026-08-25T09:52:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129172#issuecomment-5408208252",
+      "comment_created_at": "2026-08-25T09:17:56Z",
+      "comment_updated_at": "2026-08-25T09:52:12Z",
+      "comment_body_sha256": "f3e293c355ae9646203529b679a366e674c3b54616877d19db98b063bc1b650c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129172,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body promises mock-gateway or live Google Chat evidence before it is marked ready; that user-visible proof is not yet present. (sha=07cce39bac242ffe57dc34ba71d7d2c222a8dc7e)",
+      "expected_head_sha": "07cce39bac242ffe57dc34ba71d7d2c222a8dc7e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T09:53:42.173Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/49350-googlechat-identity",
+        "head_sha": "07cce39bac242ffe57dc34ba71d7d2c222a8dc7e",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
