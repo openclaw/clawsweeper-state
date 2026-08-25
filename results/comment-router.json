@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-25T06:44:14.451Z",
+  "updated_at": "2026-08-25T06:41:36.440Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128370:5388520988:2026-08-25T02:16:07Z:clawsweeper_needs_human",
+      "comment_id": "5388520988",
+      "comment_version_key": "5388520988:2026-08-25T02:16:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128370#issuecomment-5388520988",
+      "comment_created_at": "2026-08-23T21:19:21Z",
+      "comment_updated_at": "2026-08-25T02:16:07Z",
+      "comment_body_sha256": "d04d21a83e01c003e3c26624124d7cb628eda1f4bb9002b0ec72025c432252fb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128370,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the exact Codex executable dependency contract** - The manifest upgrades the managed executable to 0.149.1, but the required sibling Codex source checkout was unavailable, so pro...; Review finding: [medium] Verify the exact Codex executable dependency contract — extensions/codex/package.json:11 (sha=868d6467eb4019a654cb0a13ea1b6f8ccd4ef46c)",
+      "expected_head_sha": "868d6467eb4019a654cb0a13ea1b6f8ccd4ef46c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T02:27:34.631Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/codex-0.149-main",
+        "head_sha": "868d6467eb4019a654cb0a13ea1b6f8ccd4ef46c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128370:5395759410:2026-08-24T13:18:20Z:re_review",
       "comment_id": "5395759410",
@@ -30532,39 +30565,6 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128904:5403517898:2026-08-25T06:43:18Z:clawsweeper_needs_human",
-      "comment_id": "5403517898",
-      "comment_version_key": "5403517898:2026-08-25T06:43:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128904#issuecomment-5403517898",
-      "comment_created_at": "2026-08-25T00:51:50Z",
-      "comment_updated_at": "2026-08-25T06:43:18Z",
-      "comment_body_sha256": "fcdc1b461cd77e4dca8dfdccb6ab932d4a8d3acf12e8cf19d710c00ba7132beb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128904,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied redacted terminal run proves validation, schema selection, and Gateway startup, but it explicitly excludes the changed ce...; Review finding: [P1] Use the supplied config as its own authored source — src/system-agent/config-redaction.ts:109-142 - [P2] Propagate source-only ownership changes to restart pl... (sha=1ae72e71b916e28bcd87f5fe19eb858ad41bbca3)",
-      "expected_head_sha": "1ae72e71b916e28bcd87f5fe19eb858ad41bbca3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T06:44:14.451Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/channel-ownership-core",
-        "head_sha": "1ae72e71b916e28bcd87f5fe19eb858ad41bbca3",
-        "cluster_id": null,
-        "job_path": null
       }
     }
   ]
