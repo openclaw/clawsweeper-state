@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T02:16:53.872Z",
+  "updated_at": "2026-08-25T02:17:48.917Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127983:5381704046:2026-08-24T22:48:30Z:clawsweeper_needs_human",
-      "comment_id": "5381704046",
-      "comment_version_key": "5381704046:2026-08-24T22:48:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127983#issuecomment-5381704046",
-      "comment_created_at": "2026-08-22T17:34:07Z",
-      "comment_updated_at": "2026-08-24T22:48:30Z",
-      "comment_body_sha256": "a6b89fad111d746a4fd46d02e76974cf993f5ac85016b817882d7ae6dcf36a0f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127983,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging deliberately changes existing Doctor behavior: a held snapshot lock or snapshot-write failure now leaves an invalid config unchanged rather than silently repairing it. (sha=3ff289328ad6246a97474be4006f7f8ebaa034db)",
-      "expected_head_sha": "3ff289328ad6246a97474be4006f7f8ebaa034db",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T22:52:50.641Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/config-recovery-require-clobber-snapshot",
-        "head_sha": "3ff289328ad6246a97474be4006f7f8ebaa034db",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128327:5387834189:2026-08-24T22:50:13Z:clawsweeper_needs_human",
       "comment_id": "5387834189",
@@ -30351,6 +30318,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127964:5404190974:2026-08-25T02:16:57Z:re_review",
+      "comment_id": "5404190974",
+      "comment_version_key": "5404190974:2026-08-25T02:16:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127964#issuecomment-5404190974",
+      "comment_created_at": "2026-08-25T02:16:57Z",
+      "comment_updated_at": "2026-08-25T02:16:57Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127964,
+      "author": "HermanZeng",
+      "author_id": 25895921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T02:17:46.741Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mantis-lifecycle-fault-injection",
+        "head_sha": "c7eee4ad89f5241c3d7c00827a99bdb30455bb52",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
