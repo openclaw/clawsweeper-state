@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T16:38:52.831Z",
+  "updated_at": "2026-08-25T16:38:54.207Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128306:5410118518:2026-08-25T12:05:18Z:re_review",
-      "comment_id": "5410118518",
-      "comment_version_key": "5410118518:2026-08-25T12:05:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128306#issuecomment-5410118518",
-      "comment_created_at": "2026-08-25T12:05:18Z",
-      "comment_updated_at": "2026-08-25T12:05:18Z",
-      "comment_body_sha256": "e439edbc78146f9d22004ad2a3bd40f2e25b2065f5ee72af9c10814114b70c6d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128306,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T12:06:06.492Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/desktop-view-only-rfb-upstream",
-        "head_sha": "32e8d42beb9d41c6033fcac3c97d10444450aab7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3493:5375479320:2026-08-21T21:13:30Z:re_review",
       "comment_id": "5375479320",
@@ -31869,6 +31822,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128995:5405243455:2026-08-25T16:31:22Z:clawsweeper_needs_human",
+      "comment_id": "5405243455",
+      "comment_version_key": "5405243455:2026-08-25T16:31:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128995#issuecomment-5405243455",
+      "comment_created_at": "2026-08-25T04:29:48Z",
+      "comment_updated_at": "2026-08-25T16:31:22Z",
+      "comment_body_sha256": "95b3324374371c9c598dae4a57c1bac64d8e52cf8eb78cbf7f22fc2d04655a76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128995,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reported exact-head check set includes six failed compact-node jobs and eight still running jobs; resolve their causes or rerun them successfully before merge. (sha=54e81403756646bd01618c9fec21fc12cb3b44b6)",
+      "expected_head_sha": "54e81403756646bd01618c9fec21fc12cb3b44b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T16:38:54.207Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/align-top-right-and-sidebar-session-menus",
+        "head_sha": "54e81403756646bd01618c9fec21fc12cb3b44b6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
