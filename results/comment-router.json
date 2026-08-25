@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T09:15:36.655Z",
+  "updated_at": "2026-08-25T09:16:23.133Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116562:5156085883:2026-08-02T07:03:39Z:re_review",
-      "comment_id": "5156085883",
-      "comment_version_key": "5156085883:2026-08-02T07:03:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5156085883",
-      "comment_created_at": "2026-08-02T07:03:39Z",
-      "comment_updated_at": "2026-08-02T07:03:39Z",
-      "comment_body_sha256": "12340b973d9bdd0bc337ad1484e03b0990e294e4a75d64f3c5f5308a79be99bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116562,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T05:04:30.320Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116562:5156329056:2026-08-02T07:49:57Z:re_review",
       "comment_id": "5156329056",
@@ -31585,6 +31558,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113115:5143882966:2026-08-25T09:14:20Z:clawsweeper_needs_human",
+      "comment_id": "5143882966",
+      "comment_version_key": "5143882966:2026-08-25T09:14:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113115#issuecomment-5143882966",
+      "comment_created_at": "2026-07-31T14:19:34Z",
+      "comment_updated_at": "2026-08-25T09:14:20Z",
+      "comment_body_sha256": "4ec86cdbcef6adcae2cc3489d7b2583c013de64d67754ace348188a5de1ae854",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113115,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR says corrected real-world Matrix validation is pending, and the only submitted media link is unavailable...; Review finding: [P1] Keep room-event automatic-delivery authority unforgeable — src/auto-reply/get-reply-options.types.ts:401 - [high] Forgeable room-event delivery authority — sr... (sha=05174d236f897c3ea3849ae3f8f61c13dc54c9ab)",
+      "expected_head_sha": "05174d236f897c3ea3849ae3f8f61c13dc54c9ab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T09:16:23.133Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/matrix-pr73455-port-20260723",
+        "head_sha": "05174d236f897c3ea3849ae3f8f61c13dc54c9ab",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
