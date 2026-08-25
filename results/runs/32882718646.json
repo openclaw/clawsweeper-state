@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-129518",
+  "mode": "autonomous",
+  "run_id": "32882718646",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32882718646",
+  "head_sha": "a958131e8846d0e07673655fb1db2795971e4c12",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-129518.md",
+  "published_at": "2026-08-25T18:34:24.549Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/129518",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/129518",
+  "canonical_pr": null,
+  "summary": "#129518 is a current, source-reproducible canonical bug: current main renders raw `thinking` content in the shared compaction serializer. A narrow shared-owner repair is specified, but this read-only worker cannot add the required failing regression, modify the branch, or run pnpm because Corepack cannot create its cache. The mandatory sibling `../codex` checkout is absent and cannot be cloned in this sandbox.",
+  "actions": [
+    {
+      "target": "#125148",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#129518",
+      "candidate_fix": null,
+      "reason": "Historical adjacent context only; no closure or repair action is appropriate."
+    },
+    {
+      "target": "#129518",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#129518",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout and the mandated direct Codex-source inspection; the bug remains valid on current main."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-129518",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#129518",
+      "candidate_fix": null,
+      "reason": "Ready for deterministic execution in a writable repair environment."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#129518",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
