@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T20:44:19.915Z",
+  "updated_at": "2026-08-25T20:44:20.420Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129346:5411748811:2026-08-25T14:17:16Z:re_review",
-      "comment_id": "5411748811",
-      "comment_version_key": "5411748811:2026-08-25T14:17:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129346#issuecomment-5411748811",
-      "comment_created_at": "2026-08-25T14:17:16Z",
-      "comment_updated_at": "2026-08-25T14:17:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129346,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T14:18:03.652Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/repair-native-anthropic-availability-main",
-        "head_sha": "4e81535dc7b2491057d0b11ef45f807ca4745ce5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128905:5411751592:2026-08-25T14:17:26Z:re_review",
       "comment_id": "5411751592",
@@ -32308,6 +32261,39 @@
         "kind": "pull_request",
         "branch": "fix/realtime-base-url-guard",
         "head_sha": "2f58dacb91d6d08a8da61a1d468bbaf5b84c6fb7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129559:5416427442:2026-08-25T20:36:09Z:clawsweeper_needs_human",
+      "comment_id": "5416427442",
+      "comment_version_key": "5416427442:2026-08-25T20:36:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129559#issuecomment-5416427442",
+      "comment_created_at": "2026-08-25T20:36:09Z",
+      "comment_updated_at": "2026-08-25T20:36:09Z",
+      "comment_body_sha256": "52267b2e8d8d301fb4492b51c2c087663ea4b1dd7139760551cd6935829d3e0d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129559,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the patch is coherent and only needs normal exact-head native-check completion before merge. (sha=da3a20b611dd1d5af02370aaadd2fb041fe6609d)",
+      "expected_head_sha": "da3a20b611dd1d5af02370aaadd2fb041fe6609d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T20:44:20.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-native-browser-import-mode-lifecycle-20260825",
+        "head_sha": "da3a20b611dd1d5af02370aaadd2fb041fe6609d",
         "cluster_id": null,
         "job_path": null
       }
