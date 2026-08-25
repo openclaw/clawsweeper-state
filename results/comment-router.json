@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T17:42:17.764Z",
+  "updated_at": "2026-08-25T17:46:03.417Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124301:5309107910:2026-08-16T18:53:01Z:re_review",
-      "comment_id": "5309107910",
-      "comment_version_key": "5309107910:2026-08-16T18:53:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124301#issuecomment-5309107910",
-      "comment_created_at": "2026-08-16T18:53:01Z",
-      "comment_updated_at": "2026-08-16T18:53:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124301,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T12:58:04.295Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/summarize:392:5348725479:2026-08-25T12:56:46Z:clawsweeper_needs_human",
       "comment_id": "5348725479",
@@ -32101,6 +32074,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-25T17:44:40Z:clawsweeper_auto_repair",
+      "comment_id": "5357688049",
+      "comment_version_key": "5357688049:2026-08-25T17:44:40Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5357688049",
+      "comment_created_at": "2026-08-20T15:00:20Z",
+      "comment_updated_at": "2026-08-25T17:44:40Z",
+      "comment_body_sha256": "9550bd039a7c4b1cd3eca6e0e5abea6aa7d5ea1b29c3316f0789a758f2f2ea5c",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3493,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=ac2ec8fe352a0622f39c648b87d5567bb0631710)",
+      "expected_head_sha": "ac2ec8fe352a0622f39c648b87d5567bb0631710",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-25T17:46:03.417Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/meaningful-traffic-signals",
+        "head_sha": "ac2ec8fe352a0622f39c648b87d5567bb0631710",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
