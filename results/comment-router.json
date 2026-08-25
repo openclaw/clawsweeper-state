@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T01:22:49.594Z",
+  "updated_at": "2026-08-25T01:23:37.706Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128796:5398374144:2026-08-24T21:19:04Z:clawsweeper_needs_human",
-      "comment_id": "5398374144",
-      "comment_version_key": "5398374144:2026-08-24T21:19:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128796#issuecomment-5398374144",
-      "comment_created_at": "2026-08-24T16:43:07Z",
-      "comment_updated_at": "2026-08-24T21:19:04Z",
-      "comment_body_sha256": "7b4a3ee04e6500144c662798abf969e4872084f71c9d3b3f58757af81e3de20f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128796,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The loopback server is real, but the test replaces the guarded transport with raw fetch; add redacted after-fix output from an unmocked guarded...; Review finding: [P2] Preserve charset-aware decoding for error details — src/agents/tools/web-search-provider-common.ts:193-195 - [low] Do not treat raw fetch as guarded-transport... (sha=850076d7301987dc40714643cce1f9086abec42d)",
-      "expected_head_sha": "850076d7301987dc40714643cce1f9086abec42d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-24T21:20:48.231Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/websearch-redacted-api-errors",
-        "head_sha": "850076d7301987dc40714643cce1f9086abec42d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128845:5400763023:2026-08-24T21:20:03Z:clawsweeper_needs_human",
       "comment_id": "5400763023",
@@ -30789,6 +30756,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128903:5403773846:2026-08-25T01:22:51Z:re_review",
+      "comment_id": "5403773846",
+      "comment_version_key": "5403773846:2026-08-25T01:22:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128903#issuecomment-5403773846",
+      "comment_created_at": "2026-08-25T01:22:51Z",
+      "comment_updated_at": "2026-08-25T01:22:51Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128903,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T01:23:36.288Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/slack-file-scope-binding",
+        "head_sha": "c7fb1e775cc8fcdfbeef86e3703351e5f3a24c17",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
