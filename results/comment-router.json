@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:13:14.497Z",
+  "updated_at": "2026-08-25T23:13:39.407Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129396:5412769454:2026-08-25T16:17:44Z:clawsweeper_needs_human",
-      "comment_id": "5412769454",
-      "comment_version_key": "5412769454:2026-08-25T16:17:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129396#issuecomment-5412769454",
-      "comment_created_at": "2026-08-25T15:30:00Z",
-      "comment_updated_at": "2026-08-25T16:17:44Z",
-      "comment_body_sha256": "6572a708620eb89df51f3f31e53ada8efbf54fa72952b9707b0853512c634a1c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129396,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Several exact-head checks are failing, and their relationship to this UI-only change is not established. (sha=fdacc3ee7848de7785c61db3df8040d963851e17)",
-      "expected_head_sha": "fdacc3ee7848de7785c61db3df8040d963851e17",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T16:22:47.280Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-cron-required-delivery-presentation-20260825",
-        "head_sha": "fdacc3ee7848de7785c61db3df8040d963851e17",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129422:5413379764:2026-08-25T16:19:28Z:clawsweeper_auto_repair",
       "comment_id": "5413379764",
@@ -33018,6 +32985,53 @@
       "status": "skipped",
       "processed_at": "2026-08-25T23:13:14.497Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116108:5418182613:2026-08-25T23:12:49Z:re_review",
+      "comment_id": "5418182613",
+      "comment_version_key": "5418182613:2026-08-25T23:12:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116108#issuecomment-5418182613",
+      "comment_created_at": "2026-08-25T23:12:49Z",
+      "comment_updated_at": "2026-08-25T23:12:49Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116108,
+      "author": "sasan1200",
+      "author_id": 28139727,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T23:13:35.650Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/config-include-write-through",
+        "head_sha": "f6b06ca91012a59cfff7a83aa04e81841349c26d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
