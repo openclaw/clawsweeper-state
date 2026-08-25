@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T14:25:46.166Z",
+  "updated_at": "2026-08-25T14:26:58.833Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1021:5408471508:2026-08-25T09:38:17Z:clawsweeper_auto_repair",
-      "comment_id": "5408471508",
-      "comment_version_key": "5408471508:2026-08-25T09:38:17Z",
-      "comment_url": "https://github.com/openclaw/gogcli/pull/1021#issuecomment-5408471508",
-      "comment_created_at": "2026-08-25T09:38:17Z",
-      "comment_updated_at": "2026-08-25T09:38:17Z",
-      "comment_body_sha256": "14f3702bd3158acd950e61497442dd8504887f5acd4284e8e4a8f36657534b7b",
-      "repo": "openclaw/gogcli",
-      "issue_number": 1021,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=1db44c311fc5f0422f5ceb33accb28eb40f33bd9)",
-      "expected_head_sha": "1db44c311fc5f0422f5ceb33accb28eb40f33bd9",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-25T09:41:20.564Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gog-fix-1014-20260825",
-        "head_sha": "1db44c311fc5f0422f5ceb33accb28eb40f33bd9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129131:5407355096:2026-08-25T09:39:38Z:clawsweeper_needs_human",
       "comment_id": "5407355096",
@@ -32355,6 +32322,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129348:5411555180:2026-08-25T14:25:59Z:clawsweeper_needs_human",
+      "comment_id": "5411555180",
+      "comment_version_key": "5411555180:2026-08-25T14:25:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129348#issuecomment-5411555180",
+      "comment_created_at": "2026-08-25T14:04:02Z",
+      "comment_updated_at": "2026-08-25T14:25:59Z",
+      "comment_body_sha256": "bbfb439d8db725c8c2f353d031e43c7ae531df222b6653a81a7cdd63ab7c5ef3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129348,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Revalidate approval state after preparation (P2)** - Transport preparation and pairing each await before the final send. Another client can resolve the same live record, or its timer can expire, during those awa...; Review finding: [P2] Revalidate approval state after preparation — src/gateway/approval-web-push.ts:135-136 - [medium] Stale approval notification can cross the temporal boundary... (sha=156577c7547df94a965d03a1932de7ddbab61707)",
+      "expected_head_sha": "156577c7547df94a965d03a1932de7ddbab61707",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T14:26:58.833Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/push-notifications-for-permission-requests",
+        "head_sha": "156577c7547df94a965d03a1932de7ddbab61707",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
