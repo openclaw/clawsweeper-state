@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T20:56:31.017Z",
+  "updated_at": "2026-08-25T20:56:37.989Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128306:5387559351:2026-08-25T14:29:49Z:clawsweeper_needs_human",
-      "comment_id": "5387559351",
-      "comment_version_key": "5387559351:2026-08-25T14:29:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128306#issuecomment-5387559351",
-      "comment_created_at": "2026-08-23T17:51:29Z",
-      "comment_updated_at": "2026-08-25T14:29:49Z",
-      "comment_body_sha256": "4cd8af57497f3ced250a20c0f9c5dfb93c43df5778198f0dcb65c97cc0cb250f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128306,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep Claude CLI credentials out of the SDK reader (P1)** - Current main intentionally keeps this public export null-only so Claude owns native login. This branch reads .claude credentials and returns access and...; Review finding: [P1] Keep Claude CLI credentials out of the SDK reader — src/plugin-sdk/provider-auth-claude-compat.ts:268 - [P1] Preserve synthetic-auth activation and ownership... (sha=54779d24b3a2ff69c985f67f7707df67f6a62760)",
-      "expected_head_sha": "54779d24b3a2ff69c985f67f7707df67f6a62760",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T14:30:34.034Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/desktop-view-only-rfb-upstream",
-        "head_sha": "54779d24b3a2ff69c985f67f7707df67f6a62760",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3494:5357432561:2026-08-25T14:30:14Z:clawsweeper_needs_human",
       "comment_id": "5357432561",
@@ -32269,6 +32236,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129568:5416659653:2026-08-25T20:55:23Z:re_review",
+      "comment_id": "5416659653",
+      "comment_version_key": "5416659653:2026-08-25T20:55:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129568#issuecomment-5416659653",
+      "comment_created_at": "2026-08-25T20:55:23Z",
+      "comment_updated_at": "2026-08-25T20:55:23Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129568,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T20:56:35.810Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workboard-sqlite-indexes",
+        "head_sha": "4f6832f281f2e52697ded621447b355681cb39cc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
