@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:17:44.811Z",
+  "updated_at": "2026-08-25T23:17:49.765Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113115:5143882966:2026-08-25T16:27:50Z:clawsweeper_needs_human",
-      "comment_id": "5143882966",
-      "comment_version_key": "5143882966:2026-08-25T16:27:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113115#issuecomment-5143882966",
-      "comment_created_at": "2026-07-31T14:19:34Z",
-      "comment_updated_at": "2026-08-25T16:27:50Z",
-      "comment_body_sha256": "f976c604b83c64ac5b083cd7b749d43db0320af8b42220180642884fc5bcfd2f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113115,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the added harness exercises mocked model and Matrix-client seams, but the PR body provides no inspectable redac...; Review finding: [medium] Prove authority rejection at final Matrix I/O — src/channels/turn/lifecycle.ts:447 (sha=de3938e2d05ee6f0c85120959fe739111c377200)",
-      "expected_head_sha": "de3938e2d05ee6f0c85120959fe739111c377200",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T16:34:04.337Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/matrix-pr73455-port-20260723",
-        "head_sha": "de3938e2d05ee6f0c85120959fe739111c377200",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128886:5402547882:2026-08-25T16:32:00Z:clawsweeper_needs_human",
       "comment_id": "5402547882",
@@ -33012,6 +32979,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128905:5418233208:2026-08-25T23:17:13Z:re_review",
+      "comment_id": "5418233208",
+      "comment_version_key": "5418233208:2026-08-25T23:17:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128905#issuecomment-5418233208",
+      "comment_created_at": "2026-08-25T23:17:13Z",
+      "comment_updated_at": "2026-08-25T23:17:13Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128905,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T23:17:48.171Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/127583-sessions-cleanup-all-agents",
+        "head_sha": "48874d7b4292c8f8431ede4e530df0c8888c8e85",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
