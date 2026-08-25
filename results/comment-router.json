@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T13:55:24.641Z",
+  "updated_at": "2026-08-25T13:55:30.173Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:69022:5407984006:2026-08-25T09:00:26Z:re_review",
-      "comment_id": "5407984006",
-      "comment_version_key": "5407984006:2026-08-25T09:00:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/69022#issuecomment-5407984006",
-      "comment_created_at": "2026-08-25T09:00:26Z",
-      "comment_updated_at": "2026-08-25T09:00:26Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 69022,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T09:01:18.632Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/68945-telegram-humandelay",
-        "head_sha": "eff606f2b285aff90fbc0cf02aafaa60c6735e61",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129178:5408006228:2026-08-25T09:02:06Z:clawsweeper_needs_human",
       "comment_id": "5408006228",
@@ -32359,6 +32312,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129301:5410831662:2026-08-25T13:52:48Z:clawsweeper_needs_human",
+      "comment_id": "5410831662",
+      "comment_version_key": "5410831662:2026-08-25T13:52:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129301#issuecomment-5410831662",
+      "comment_created_at": "2026-08-25T13:08:16Z",
+      "comment_updated_at": "2026-08-25T13:52:48Z",
+      "comment_body_sha256": "1dfe1649622f040ae409b788061c838b22b6286bfad2b01793ed82fd93b23482",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129301,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, and the supplied exact-head check state shows five failed compact jobs plus the aggregate CI gate; inspect their logs, rebase if needed, and obtain... (sha=28945e9948980dea6352afa63f60c1b71156c15b)",
+      "expected_head_sha": "28945e9948980dea6352afa63f60c1b71156c15b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T13:55:30.173Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-versioned-node-runtime-discovery-20260825",
+        "head_sha": "28945e9948980dea6352afa63f60c1b71156c15b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
