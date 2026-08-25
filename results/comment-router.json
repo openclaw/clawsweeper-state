@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T22:43:36.707Z",
+  "updated_at": "2026-08-25T22:43:55.370Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128816:5399529579:2026-08-25T15:40:18Z:clawsweeper_needs_human",
-      "comment_id": "5399529579",
-      "comment_version_key": "5399529579:2026-08-25T15:40:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128816#issuecomment-5399529579",
-      "comment_created_at": "2026-08-24T18:23:31Z",
-      "comment_updated_at": "2026-08-25T15:40:18Z",
-      "comment_body_sha256": "c354c3a6f82ce6b360af5c0ef6e937255918a932e2eb115470d371a2c7b4a11b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128816,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging creates a durable schema_meta receipt that permanently changes when Doctor rescans existing agent databases; its retention, downgrade, recovery, and rollback contract has not... (sha=7b8cd6ced9713f9b9ea36870e70213b930b49bb6)",
-      "expected_head_sha": "7b8cd6ced9713f9b9ea36870e70213b930b49bb6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T15:46:25.923Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-bound-media-rescan",
-        "head_sha": "7b8cd6ced9713f9b9ea36870e70213b930b49bb6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128862:5401482651:2026-08-25T15:42:20Z:clawsweeper_needs_human",
       "comment_id": "5401482651",
@@ -32887,6 +32854,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118152:5160061935:2026-08-25T22:38:53Z:clawsweeper_auto_repair",
+      "comment_id": "5160061935",
+      "comment_version_key": "5160061935:2026-08-25T22:38:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118152#issuecomment-5160061935",
+      "comment_created_at": "2026-08-02T19:52:32Z",
+      "comment_updated_at": "2026-08-25T22:38:53Z",
+      "comment_body_sha256": "3a71387d8a7bff538e72e9bfa27a9ce2ac63d5c30f83b11574adfd8ed5412f8b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118152,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8ccf0a272ba82877a40a5054900f316400fb2818)",
+      "expected_head_sha": "8ccf0a272ba82877a40a5054900f316400fb2818",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T22:43:55.370Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/history-limit-schema-parity",
+        "head_sha": "8ccf0a272ba82877a40a5054900f316400fb2818",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
