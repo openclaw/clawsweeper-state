@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T08:22:22.578Z",
+  "updated_at": "2026-08-25T08:22:41.679Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5313150907:2026-08-17T07:33:16Z:re_review",
-      "comment_id": "5313150907",
-      "comment_version_key": "5313150907:2026-08-17T07:33:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5313150907",
-      "comment_created_at": "2026-08-17T07:33:16Z",
-      "comment_updated_at": "2026-08-17T07:33:16Z",
-      "comment_body_sha256": "6e418dfd8e0ef76793d89b10905d97e5191eaa425afa1e2fd3cd9fab49a41f42",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T04:49:22.723Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5313263826:2026-08-17T07:46:08Z:re_review",
       "comment_id": "5313263826",
@@ -30856,6 +30829,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128673:5394073888:2026-08-25T08:21:43Z:clawsweeper_needs_human",
+      "comment_id": "5394073888",
+      "comment_version_key": "5394073888:2026-08-25T08:21:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128673#issuecomment-5394073888",
+      "comment_created_at": "2026-08-24T10:40:31Z",
+      "comment_updated_at": "2026-08-25T08:21:43Z",
+      "comment_body_sha256": "04f96ee5df4a7d69b0b9b4f9f575642ad62971b82d50f8aef4ff7d3543722144",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128673,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: no after-fix evidence shows that v1.12 preserves credential handling and rejects the nearest unauthorized path...; Review finding: [P1] Audit the Codex action before credentialed execution — .github/workflows/mantis-telegram-desktop-proof.yml:266-272 - [medium] Unreviewed credentialed action r... (sha=4a0a8ff69cb8706c827ecb35041042eef500b321)",
+      "expected_head_sha": "4a0a8ff69cb8706c827ecb35041042eef500b321",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T08:22:41.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-020742e8ff",
+        "head_sha": "4a0a8ff69cb8706c827ecb35041042eef500b321",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
