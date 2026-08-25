@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T20:41:47.041Z",
+  "updated_at": "2026-08-25T20:42:52.945Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129335:5411092621:2026-08-25T14:11:13Z:clawsweeper_needs_human",
-      "comment_id": "5411092621",
-      "comment_version_key": "5411092621:2026-08-25T14:11:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129335#issuecomment-5411092621",
-      "comment_created_at": "2026-08-25T13:28:32Z",
-      "comment_updated_at": "2026-08-25T14:11:13Z",
-      "comment_body_sha256": "f09d5c63b00a4850d551562e27959b0bffb14cd02d6b8289522d4837995099e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129335,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR deliberately changes Doctor’s auth-provider repair behavior; retain the exact OAuth/provider/profile-ID guard and resolve the failing exact-head checks before merge. (sha=d2e5a03a179be9e85345086860f9367dd7debee5)",
-      "expected_head_sha": "d2e5a03a179be9e85345086860f9367dd7debee5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T14:15:22.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cleanup20k-doctor-native-auth-runtime-owner-20260825",
-        "head_sha": "d2e5a03a179be9e85345086860f9367dd7debee5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129316:5411150242:2026-08-25T13:32:57Z:clawsweeper_needs_human",
       "comment_id": "5411150242",
@@ -32339,6 +32306,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122345:5260249243:2026-08-25T20:34:05Z:clawsweeper_needs_human",
+      "comment_id": "5260249243",
+      "comment_version_key": "5260249243:2026-08-25T20:34:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122345#issuecomment-5260249243",
+      "comment_created_at": "2026-08-11T23:55:39Z",
+      "comment_updated_at": "2026-08-25T20:34:05Z",
+      "comment_body_sha256": "3b16d5209a3d0b6da4d70a19ae8ac631b15d0444c50679a8e767fbd227de05ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122345,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Available after-fix evidence is mock-backed Vitest coverage: the changed heartbeat test injects state through a mocked reply function and uses... (sha=b071c0624f89cc812231784813eb708f53fed540)",
+      "expected_head_sha": "b071c0624f89cc812231784813eb708f53fed540",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T20:42:52.945Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-cancel-status-122251",
+        "head_sha": "f80254c7bf2f065becefa34136ca405165ff2ef8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
