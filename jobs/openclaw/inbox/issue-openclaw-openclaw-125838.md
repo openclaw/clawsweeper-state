@@ -67,21 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current-main bug where an authorized text slash command on a channel without native commands can be dropped with `reply-operation-active` and no visible acknowledgement. Preserve command authorization, session persistence, and normal-message queue behavior; do not special-case QQBot or Feishu and do not add config. Prefer extending the existing command fast path for authorized text commands so `/status` and directive-only `/think high` can return their marked command reply without contending with an active reply operation. First establish a failing regression through the channel/reply pipeline with an active operation, then add focused coverage for `/status` and `/think`; verify native-command behavior remains intact. Do not edit CHANGELOG.md; put release-note context in the PR body.
+Repair https://github.com/openclaw/openclaw/issues/125838 at the shared reply-dispatch owner boundary. Preserve session serialization while ensuring an authorized text `/status` or `/think` command cannot finish with zero visible response merely because its target session has an active reply operation. Reuse the existing queue/lifecycle contract; do not add QQBot-specific core logic. First establish a failing regression on current main, then prove the same invariant through the Feishu and QQBot-compatible channel integration path. Preserve authorization, deduplication, and no-double-send guarantees. Do not edit CHANGELOG.md.
 
 Likely files:
 
-- src/auto-reply/reply/get-reply-native-slash-fast-path.ts
-- src/auto-reply/reply/get-reply-native-slash-fast-path.test.ts
-- src/auto-reply/reply/dispatch-from-config.acp-abort.test.ts
-- src/channels/turn/run-channel-turn.pipeline.test.ts
+- src/auto-reply/reply/dispatch-from-config.prepare-context.ts
+- src/auto-reply/reply/dispatch-from-config.lifecycle.ts
+- src/channels/turn/execution.ts
+- src/auto-reply/reply/dispatch-from-config.base.test-utils.ts
+- extensions/feishu/src/bot.test.ts
 
 Validation:
 
-- pnpm test src/auto-reply/reply/get-reply-native-slash-fast-path.test.ts
-- pnpm test src/auto-reply/reply/dispatch-from-config.acp-abort.test.ts
+- pnpm test src/auto-reply/reply/dispatch-from-config.test.ts
 - pnpm test src/channels/turn/run-channel-turn.pipeline.test.ts
-- pnpm check:changed -- src/auto-reply/reply/get-reply-native-slash-fast-path.ts src/auto-reply/reply/get-reply-native-slash-fast-path.test.ts src/auto-reply/reply/dispatch-from-config.acp-abort.test.ts
+- pnpm test extensions/feishu/src/bot.test.ts
+- pnpm check:changed -- src/auto-reply/reply/dispatch-from-config.prepare-context.ts src/channels/turn/execution.ts
 
 ## Operator Prompt
 
