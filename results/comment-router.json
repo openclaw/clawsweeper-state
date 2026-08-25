@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T04:07:54.177Z",
+  "updated_at": "2026-08-25T04:08:00.992Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128289:5403046943:2026-08-24T23:52:41Z:re_review",
-      "comment_id": "5403046943",
-      "comment_version_key": "5403046943:2026-08-24T23:52:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128289#issuecomment-5403046943",
-      "comment_created_at": "2026-08-24T23:52:41Z",
-      "comment_updated_at": "2026-08-24T23:52:41Z",
-      "comment_body_sha256": "d8a5d12ec8207d5855f9e4ddaa5e8b46c64cabbd9f278e197e3d4c9e267a983b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128289,
-      "author": "SnowBelt",
-      "author_id": 31227031,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T23:53:26.526Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/browser-session-credential-steward-mvp-repair",
-        "head_sha": "06d9dd71e7caa6264f12b010ebe012417f568e81",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127300:5373095382:2026-08-24T23:44:39Z:clawsweeper_needs_human",
       "comment_id": "5373095382",
@@ -30783,6 +30736,39 @@
         "kind": "pull_request",
         "branch": "fix/terminal-initial-command-readiness-128696",
         "head_sha": "f90ce9ac1aa868e0737931f25f1d6379dcf2dd9a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128991:5404947918:2026-08-25T04:06:48Z:clawsweeper_needs_human",
+      "comment_id": "5404947918",
+      "comment_version_key": "5404947918:2026-08-25T04:06:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128991#issuecomment-5404947918",
+      "comment_created_at": "2026-08-25T04:06:48Z",
+      "comment_updated_at": "2026-08-25T04:06:48Z",
+      "comment_body_sha256": "c0eeaa847ee9d4c9f96b582a5a782aaf89f9c6698d60b6f7f2cd1eddb569ea3f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128991,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR body reports focused tests and a clean build, but no after-fix allowed-versus-revoked final channel-pres...; Review finding: [P1] Provide structured input to every existing tool surface — src/agents/tools/ask-user-tool.ts:96-100 - [P2] Restrict the extended timeout to OpenClaw’s managed... (sha=45222230a6d4af5e3e6022c129b0d4b95c03e18c)",
+      "expected_head_sha": "45222230a6d4af5e3e6022c129b0d4b95c03e18c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T04:08:00.992Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/116554-mcp-ask-user-capability",
+        "head_sha": "45222230a6d4af5e3e6022c129b0d4b95c03e18c",
         "cluster_id": null,
         "job_path": null
       }
