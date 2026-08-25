@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T22:57:12.101Z",
+  "updated_at": "2026-08-25T22:57:19.248Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127813:5413012947:2026-08-25T15:49:23Z:re_review",
-      "comment_id": "5413012947",
-      "comment_version_key": "5413012947:2026-08-25T15:49:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127813#issuecomment-5413012947",
-      "comment_created_at": "2026-08-25T15:49:23Z",
-      "comment_updated_at": "2026-08-25T15:49:23Z",
-      "comment_body_sha256": "d69d69cd69c3b43d4bde958c48204d8c0a26a22d44863a0d3e9bd59867ec6f2f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127813,
-      "author": "Marvinthebored",
-      "author_id": 262704729,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T15:50:36.281Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/explicit-model-persistence-scopes",
-        "head_sha": "31eadf895cd40ef29387c248d7df006121e51d60",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125725:5325660518:2026-08-25T15:51:22Z:clawsweeper_needs_human",
       "comment_id": "5325660518",
@@ -32994,6 +32947,39 @@
         "kind": "pull_request",
         "branch": "alix/fix-google-response-model",
         "head_sha": "3adc4c0f7d92b4f2f358f69bfadf3e8fe3f67663",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126320:5343181701:2026-08-25T22:53:39Z:clawsweeper_needs_human",
+      "comment_id": "5343181701",
+      "comment_version_key": "5343181701:2026-08-25T22:53:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126320#issuecomment-5343181701",
+      "comment_created_at": "2026-08-19T13:58:28Z",
+      "comment_updated_at": "2026-08-25T22:53:39Z",
+      "comment_body_sha256": "41930264c2367493d3822c10d4f74ea7d41dfc7f27546714eb5b6b7cf381e801",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126320,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The JSON result adds two fields; existing workspace is retained, but consumers that reject unknown JSON keys could need an upgrade check. (sha=50afc45bbea3a8dcd37c9915627f8113fb0cb3b6)",
+      "expected_head_sha": "50afc45bbea3a8dcd37c9915627f8113fb0cb3b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T22:57:19.248Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-set-identity-workspace-locator",
+        "head_sha": "50afc45bbea3a8dcd37c9915627f8113fb0cb3b6",
         "cluster_id": null,
         "job_path": null
       }
