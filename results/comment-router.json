@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T20:44:02.878Z",
+  "updated_at": "2026-08-25T20:44:09.162Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124305:5411714008:2026-08-25T14:14:58Z:re_review",
-      "comment_id": "5411714008",
-      "comment_version_key": "5411714008:2026-08-25T14:14:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124305#issuecomment-5411714008",
-      "comment_created_at": "2026-08-25T14:14:58Z",
-      "comment_updated_at": "2026-08-25T14:14:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124305,
-      "author": "srikarkrishna",
-      "author_id": 17678386,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T14:15:45.694Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/whatsapp-reply-rate",
-        "head_sha": "ba8a7e1e7f2c505d733162b20c38fcc65210679b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128289:5387183075:2026-08-25T14:14:55Z:clawsweeper_needs_human",
       "comment_id": "5387183075",
@@ -32339,6 +32292,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T20:44:02.878Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129523:5415207019:2026-08-25T20:33:55Z:clawsweeper_needs_human",
+      "comment_id": "5415207019",
+      "comment_version_key": "5415207019:2026-08-25T20:33:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129523#issuecomment-5415207019",
+      "comment_created_at": "2026-08-25T18:55:12Z",
+      "comment_updated_at": "2026-08-25T20:33:55Z",
+      "comment_body_sha256": "4d319099fe08d310074a688ff9d0494bc3827b5e4bbfd2671c86fcc153f79cfc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129523,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check rollup is incomplete and includes failures; landing should wait for the relevant exact-head checks to finish green or receive an owner-confirmed resoluti... (sha=2527caecc4e08eb0be6c1db9dd1763599ae4ad32)",
+      "expected_head_sha": "2527caecc4e08eb0be6c1db9dd1763599ae4ad32",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T20:44:09.162Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup-aug25-tool-display-json",
+        "head_sha": "2527caecc4e08eb0be6c1db9dd1763599ae4ad32",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
