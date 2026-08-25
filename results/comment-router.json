@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T19:06:36.827Z",
+  "updated_at": "2026-08-25T19:08:04.003Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128116:5389269193:2026-08-24T00:10:46Z:re_review",
-      "comment_id": "5389269193",
-      "comment_version_key": "5389269193:2026-08-24T00:10:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128116#issuecomment-5389269193",
-      "comment_created_at": "2026-08-24T00:10:46Z",
-      "comment_updated_at": "2026-08-24T00:10:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128116,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T13:34:51.126Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3189:5411145049:2026-08-25T13:32:34Z:clawsweeper_auto_repair",
       "comment_id": "5411145049",
@@ -32242,6 +32215,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129315:5410417977:2026-08-25T19:06:54Z:clawsweeper_needs_human",
+      "comment_id": "5410417977",
+      "comment_version_key": "5410417977:2026-08-25T19:06:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129315#issuecomment-5410417977",
+      "comment_created_at": "2026-08-25T12:32:30Z",
+      "comment_updated_at": "2026-08-25T19:06:54Z",
+      "comment_body_sha256": "c49222fdc4c5f7c8e85916914017b27f6a03181b025ebb47c7d0e519c57b7fb3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129315,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify Codex Action v1.12 before changing secret-bearing jobs (P1)** - This replaces the executable action in jobs that pass an API key and request workspace-write access, but no exact v1.12 manifest/runtime com...; Review finding: [P1] Verify Codex Action v1.12 before changing secret-bearing jobs — .github/workflows/dated-todo-sweep.yml:55 - [medium] Unverified Codex Action contract in secre... (sha=226bade18441359f0b9cf7222708eea55b47fe87)",
+      "expected_head_sha": "226bade18441359f0b9cf7222708eea55b47fe87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T19:08:04.003Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-f2d04ee7a0",
+        "head_sha": "226bade18441359f0b9cf7222708eea55b47fe87",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
