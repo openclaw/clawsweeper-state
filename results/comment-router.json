@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T14:50:57.811Z",
+  "updated_at": "2026-08-25T14:51:35.003Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129201:5408610072:2026-08-25T09:49:08Z:clawsweeper_needs_human",
-      "comment_id": "5408610072",
-      "comment_version_key": "5408610072:2026-08-25T09:49:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129201#issuecomment-5408610072",
-      "comment_created_at": "2026-08-25T09:49:08Z",
-      "comment_updated_at": "2026-08-25T09:49:08Z",
-      "comment_body_sha256": "efff880e4a7cb4280715c65d1798eabb0e8270ec91ac84e80560e399de9428fb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129201,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes release-automation trust plumbing; fixture tests cover candidate staging and cleanup, but only an authorized recovery run can exercise GitHub attestation, artifact downlo... (sha=b9e0fcb6d6ba070ee9531789afc5493e0c0ae6cd)",
-      "expected_head_sha": "b9e0fcb6d6ba070ee9531789afc5493e0c0ae6cd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T09:50:12.119Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/beta-docker-candidate-verification",
-        "head_sha": "b9e0fcb6d6ba070ee9531789afc5493e0c0ae6cd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3528:5408624192:2026-08-25T09:50:11Z:re_review",
       "comment_id": "5408624192",
@@ -32435,6 +32402,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:82572:5412213124:2026-08-25T14:50:47Z:re_review",
+      "comment_id": "5412213124",
+      "comment_version_key": "5412213124:2026-08-25T14:50:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5412213124",
+      "comment_created_at": "2026-08-25T14:50:47Z",
+      "comment_updated_at": "2026-08-25T14:50:47Z",
+      "comment_body_sha256": "4ef63f29a3febafcc5b36c3fc957aaed9a7496fc1b5ca38cd6e3a9b5154eb88f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 82572,
+      "author": "jewseppi",
+      "author_id": 6901751,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T14:51:32.761Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/queue-followup-persistence",
+        "head_sha": "e5750e94dcbe318b04ca3ab6157c5445ff91b5d8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
