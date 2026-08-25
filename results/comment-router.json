@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T08:23:33.091Z",
+  "updated_at": "2026-08-25T08:23:34.978Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5313846669:2026-08-17T08:48:30Z:re_review",
-      "comment_id": "5313846669",
-      "comment_version_key": "5313846669:2026-08-17T08:48:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5313846669",
-      "comment_created_at": "2026-08-17T08:48:30Z",
-      "comment_updated_at": "2026-08-17T08:48:30Z",
-      "comment_body_sha256": "74fa659329670bcce00da00f1eb9ad6127ff17ce13a74dbea452dc70dfa08903",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T04:49:22.723Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5313950371:2026-08-17T08:59:39Z:re_review",
       "comment_id": "5313950371",
@@ -30912,6 +30885,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T08:23:33.091Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129135:5407515152:2026-08-25T08:20:43Z:clawsweeper_needs_human",
+      "comment_id": "5407515152",
+      "comment_version_key": "5407515152:2026-08-25T08:20:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129135#issuecomment-5407515152",
+      "comment_created_at": "2026-08-25T08:20:43Z",
+      "comment_updated_at": "2026-08-25T08:20:43Z",
+      "comment_body_sha256": "67e38daf6ba76b7a481bac446aa344d59d4a915e1f63d0d8d28116a73c810239",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Normal 60-second polling now commonly refreshes pull-request and local Git facts on the next cycle because the new 75/90-second TTLs outlive one poll; existing Control UI indicators c... (sha=3600db95ab3e81859b7b528821bec20f2ef37d95)",
+      "expected_head_sha": "3600db95ab3e81859b7b528821bec20f2ef37d95",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T08:23:34.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/openclaw-performance-debug-6f241a",
+        "head_sha": "3600db95ab3e81859b7b528821bec20f2ef37d95",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
