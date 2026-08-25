@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T18:54:54.890Z",
+  "updated_at": "2026-08-25T18:56:36.074Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5310722401:2026-08-17T01:15:14Z:re_review",
-      "comment_id": "5310722401",
-      "comment_version_key": "5310722401:2026-08-17T01:15:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5310722401",
-      "comment_created_at": "2026-08-17T01:15:14Z",
-      "comment_updated_at": "2026-08-17T01:15:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T13:34:46.135Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5312926896:2026-08-17T07:07:37Z:re_review",
       "comment_id": "5312926896",
@@ -32093,6 +32066,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129481:5415207644:2026-08-25T18:55:15Z:clawsweeper_needs_human",
+      "comment_id": "5415207644",
+      "comment_version_key": "5415207644:2026-08-25T18:55:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129481#issuecomment-5415207644",
+      "comment_created_at": "2026-08-25T18:55:15Z",
+      "comment_updated_at": "2026-08-25T18:55:15Z",
+      "comment_body_sha256": "d7b7d3d44b1f7b1133797271a5b43278b74cdadfadd9ad66560be4db10d5e90c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129481,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The new regression uses a real child process but mocks the logger sink; add a redacted after-fix terminal or log capture showing the durable re... (sha=3167c4e6d9f3dc3aa7b0faf923f337a3c051803d)",
+      "expected_head_sha": "3167c4e6d9f3dc3aa7b0faf923f337a3c051803d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T18:56:36.074Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/126400-cli-terminal-failure-log",
+        "head_sha": "3167c4e6d9f3dc3aa7b0faf923f337a3c051803d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
