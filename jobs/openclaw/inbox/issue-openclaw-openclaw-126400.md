@@ -67,17 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Claude CLI live-turn failure warning in https://github.com/openclaw/openclaw/issues/126400. First extend the existing live-turn error-result boundary test so it fails on current main when the warning omits runId and the meaningful error message. In failClaudeTurn, add the canonical redacting formatter and emit the current turn's runId plus formatted error detail in the existing warning. Do not add events, config, persistent state, fallback paths, sessionKey/agentId logging, or external Claude CLI contract changes. Keep the normal diagnostic event path unchanged. Do not edit CHANGELOG.md; record concise release-note context in the PR body.
+Fix the listener-free Claude CLI terminal-failure diagnostic gap from https://github.com/openclaw/openclaw/issues/126400. Keep structured diagnostics listener-gated; at the canonical post-recovery terminal-failure owner, emit exactly one existing backend warn record after retries are exhausted with runId, provider/model, duration, and formatErrorMessage(error). Do not log sessionKey or add config. Add behavior-level regression coverage that fails before the fix and proves a forced terminal Claude CLI failure produces the redacted correlated record once, including after an eligible retry fails. Do not edit CHANGELOG.md.
 
 Likely files:
 
-- src/agents/cli-runner/claude-live-turn.ts
-- src/agents/cli-runner/claude-live-turn.test.ts
+- src/agents/cli-runner.ts
+- src/agents/cli-runner/cli-run-recovery.ts
+- src/agents/cli-runner.reliability.test.ts
 
 Validation:
 
-- pnpm test src/agents/cli-runner/claude-live-turn.test.ts
-- pnpm check:changed -- src/agents/cli-runner/claude-live-turn.ts src/agents/cli-runner/claude-live-turn.test.ts
+- node scripts/run-vitest.mjs src/agents/cli-runner.reliability.test.ts
+- node scripts/run-vitest.mjs src/agents/cli-runner.before-agent-reply-cron.test.ts
+- node scripts/run-oxlint.mjs src/agents/cli-runner.ts src/agents/cli-runner/cli-run-recovery.ts
 
 ## Operator Prompt
 
