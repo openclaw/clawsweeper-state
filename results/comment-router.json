@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T18:22:43.001Z",
+  "updated_at": "2026-08-25T18:22:46.410Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129343:5410945168:2026-08-25T13:17:23Z:re_review",
-      "comment_id": "5410945168",
-      "comment_version_key": "5410945168:2026-08-25T13:17:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129343#issuecomment-5410945168",
-      "comment_created_at": "2026-08-25T13:17:23Z",
-      "comment_updated_at": "2026-08-25T13:17:23Z",
-      "comment_body_sha256": "6bd641adc72f451f7585c192bd555b2aa47d557101cf761f8ecc1d9a94c15851",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129343,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T13:18:13.311Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/issue-120394-gateway-memory",
-        "head_sha": "ea13816f0301f79576b77bd1cea20be788b8db9e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129306:5410533136:2026-08-25T13:15:19Z:clawsweeper_needs_human",
       "comment_id": "5410533136",
@@ -32080,6 +32033,39 @@
         "kind": "pull_request",
         "branch": "fix/doctor-bound-media-rescan",
         "head_sha": "9fa7ade4648e5ef84d375106544f6ed876a8f724",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129478:5414787128:2026-08-25T18:19:36Z:clawsweeper_needs_human",
+      "comment_id": "5414787128",
+      "comment_version_key": "5414787128:2026-08-25T18:19:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129478#issuecomment-5414787128",
+      "comment_created_at": "2026-08-25T18:19:36Z",
+      "comment_updated_at": "2026-08-25T18:19:36Z",
+      "comment_body_sha256": "bfdac19f8224c845e9e885a62cf5fe0ff18ec93043a2833f4da0b65ba28ba235",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129478,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR head has failing compact checks and a failing CI gate in the supplied status rollup; inspect and repair those failures before merge. (sha=484abae6ff5c8646d34c1bb019c583f59bc629fa)",
+      "expected_head_sha": "484abae6ff5c8646d34c1bb019c583f59bc629fa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T18:22:46.410Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-cron-dst-missed-slot",
+        "head_sha": "484abae6ff5c8646d34c1bb019c583f59bc629fa",
         "cluster_id": null,
         "job_path": null
       }
