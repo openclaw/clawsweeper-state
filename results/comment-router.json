@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:48:15.412Z",
+  "updated_at": "2026-08-25T23:48:22.452Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123720:5295456189:2026-08-25T17:15:24Z:clawsweeper_needs_human",
-      "comment_id": "5295456189",
-      "comment_version_key": "5295456189:2026-08-25T17:15:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123720#issuecomment-5295456189",
-      "comment_created_at": "2026-08-14T16:02:53Z",
-      "comment_updated_at": "2026-08-25T17:15:24Z",
-      "comment_body_sha256": "b4fc96a368766cf6e324012ea5af57a7c50ef94c08f62a631c09062ad3fa4a01",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123720,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 103 lines for a warning-only diagnostic; the dedicated Windows adapter is justified by its environment-root contract and existing platform-specific sibling ch... (sha=0bb6c9c9ee34832493532c26584ef8fec4b6fac6)",
-      "expected_head_sha": "0bb6c9c9ee34832493532c26584ef8fec4b6fac6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T17:23:49.780Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-windows-cloud-state-dir",
-        "head_sha": "0bb6c9c9ee34832493532c26584ef8fec4b6fac6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129379:5412881924:2026-08-25T17:19:08Z:clawsweeper_auto_repair",
       "comment_id": "5412881924",
@@ -32888,6 +32855,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128871:5418557551:2026-08-25T23:47:27Z:re_review",
+      "comment_id": "5418557551",
+      "comment_version_key": "5418557551:2026-08-25T23:47:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128871#issuecomment-5418557551",
+      "comment_created_at": "2026-08-25T23:47:27Z",
+      "comment_updated_at": "2026-08-25T23:47:27Z",
+      "comment_body_sha256": "d8b38e4e7d7cde76f53fa3115c1158e0549466737e52c2d6c1bc635962052d8d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128871,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T23:48:19.494Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-workshop-targeted-patch-authority",
+        "head_sha": "df804f989811ae08d47ba2ea9085dfc8b491ee25",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
