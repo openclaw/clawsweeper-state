@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125838",
+  "mode": "autonomous",
+  "run_id": "32799606491",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32799606491",
+  "head_sha": "ed20a56037dc7e1141140513e0307df69f0d394a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125838.md",
+  "published_at": "2026-08-25T02:10:18.875Z",
+  "canonical": "#125838",
+  "canonical_issue": "#125838",
+  "canonical_pr": null,
+  "summary": "The source confirms the silent-command path, but this worker cannot safely create the required PR: the mandatory sibling Codex checkout is absent and the sandbox is read-only (with no installed dependencies).",
+  "actions": [
+    {
+      "target": "#125838",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125838",
+      "candidate_fix": null,
+      "reason": "The job requires a tested implementation PR, but the mandated source gate and writable/dependency-ready checkout are unavailable."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable, dependency-ready checkout with the sibling ../codex source available so the required direct Codex inspection, regression, implementation, validation, and PR artifact can be completed."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
