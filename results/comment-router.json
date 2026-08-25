@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T21:45:37.490Z",
+  "updated_at": "2026-08-25T21:45:40.929Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3494:5412403413:2026-08-25T15:02:18Z:re_review",
-      "comment_id": "5412403413",
-      "comment_version_key": "5412403413:2026-08-25T15:02:18Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3494#issuecomment-5412403413",
-      "comment_created_at": "2026-08-25T15:02:18Z",
-      "comment_updated_at": "2026-08-25T15:02:18Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3494,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T15:03:06.544Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/signal-owner-explanations",
-        "head_sha": "a44b8e436526bb9cff5b5b79e73db4bcebe1cf49",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3527:5408228788:2026-08-25T15:02:39Z:clawsweeper_auto_repair",
       "comment_id": "5408228788",
@@ -32752,6 +32705,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-control-ui-filtered-roster-refresh",
         "head_sha": "3eb0f7c2d0e6a9c312bceaf9c9e6a2f6e25eeca5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119868:5202547621:2026-08-25T21:44:44Z:clawsweeper_needs_human",
+      "comment_id": "5202547621",
+      "comment_version_key": "5202547621:2026-08-25T21:44:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119868#issuecomment-5202547621",
+      "comment_created_at": "2026-08-06T08:58:56Z",
+      "comment_updated_at": "2026-08-25T21:44:44Z",
+      "comment_body_sha256": "cb628d7945996bb967c83e6b23258a25953df83a330999124a161679fd43bd04",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119868,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The head is behind current main and iOS scans are still queued or running; refresh exact-head native build and render-smoke evidence after any rebase before landing. (sha=b42376b0eb518740a98fd2e30a5288da7820a042)",
+      "expected_head_sha": "b42376b0eb518740a98fd2e30a5288da7820a042",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T21:45:40.929Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-profile-durable-evidence-20260806",
+        "head_sha": "b42376b0eb518740a98fd2e30a5288da7820a042",
         "cluster_id": null,
         "job_path": null
       }
