@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T09:02:59.098Z",
+  "updated_at": "2026-08-25T09:03:31.334Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2457:5090997660:2026-07-27T11:59:02Z:re_review",
-      "comment_id": "5090997660",
-      "comment_version_key": "5090997660:2026-07-27T11:59:02Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5090997660",
-      "comment_created_at": "2026-07-27T11:59:02Z",
-      "comment_updated_at": "2026-07-27T11:59:02Z",
-      "comment_body_sha256": "04ce5d122a76f9cf8da26a9d5f6f3dff4d51a1ff07ffec8762d9033c979409d3",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2457,
-      "author": "EClinick",
-      "author_id": 69320739,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T05:04:13.351Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:2457:5091197709:2026-07-27T12:19:00Z:re_review",
       "comment_id": "5091197709",
@@ -31320,6 +31293,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1519:5408016642:2026-08-25T09:02:49Z:clawsweeper_needs_human",
+      "comment_id": "5408016642",
+      "comment_version_key": "5408016642:2026-08-25T09:02:49Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1519#issuecomment-5408016642",
+      "comment_created_at": "2026-08-25T09:02:49Z",
+      "comment_updated_at": "2026-08-25T09:02:49Z",
+      "comment_body_sha256": "2230acf98a6ed13f92656c50ef8983edd465810d5542d5ca81828da2e8a7ccba",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1519,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports focused tests and CI, but no after-fix real AWS lease behavior; add a redacted live lease transcript covering readiness and dual...; Review finding: [P1] Restore Code portal URL credential redaction — internal/cli/code.go:785-787 - [P1] Restore WebVNC browser URL credential redaction — internal/cli/webvnc.go:47... (sha=b226cf12eeb994576ad792677c6bce09fe369ae4)",
+      "expected_head_sha": "b226cf12eeb994576ad792677c6bce09fe369ae4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T09:03:31.334Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/aws-readiness-cidr",
+        "head_sha": "b226cf12eeb994576ad792677c6bce09fe369ae4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
