@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128967",
+  "mode": "autonomous",
+  "run_id": "32801746585",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32801746585",
+  "head_sha": "ed20a56037dc7e1141140513e0307df69f0d394a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128967.md",
+  "published_at": "2026-08-25T02:40:52.571Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128967",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128967",
+  "canonical_pr": null,
+  "summary": "No fix artifact emitted. Current main source appears to prevent the reported silent front-truncation path, but the mandatory direct sibling Codex-source inspection cannot be completed: the checkout is absent and this worker is read-only, so it cannot clone it. That gate blocks a final current-main verdict.",
+  "actions": [
+    {
+      "target": "#128967",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#128967",
+      "candidate_fix": null,
+      "reason": "Resolve the required direct Codex-runtime inspection in a writable environment, then confirm whether the current source-level behavior fully covers the reported installed-build reproduction. The source evidence suggests no narrow PR is needed."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide or permit the required sibling Codex checkout for direct runtime/protocol inspection; without it, repository policy blocks the final current-main verdict."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128967",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
