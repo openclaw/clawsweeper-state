@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T22:57:19.248Z",
+  "updated_at": "2026-08-25T22:58:48.138Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125725:5325660518:2026-08-25T15:51:22Z:clawsweeper_needs_human",
-      "comment_id": "5325660518",
-      "comment_version_key": "5325660518:2026-08-25T15:51:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125725#issuecomment-5325660518",
-      "comment_created_at": "2026-08-18T08:32:07Z",
-      "comment_updated_at": "2026-08-25T15:51:22Z",
-      "comment_body_sha256": "0daa3f80eb9ae2988c672c4689b69777b02e2666f195a0152142238cec295fe1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125725,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new fail-closed branch will deny a file approval if the pinned Codex event ordering or item identity differs from the asserted contract. (sha=7c88322126819d0a0d25716d7dbfcdf3d72062b5)",
-      "expected_head_sha": "7c88322126819d0a0d25716d7dbfcdf3d72062b5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T15:53:38.924Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-file-change-hook-params-current",
-        "head_sha": "7c88322126819d0a0d25716d7dbfcdf3d72062b5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2457:5081410241:2026-08-25T15:51:01Z:clawsweeper_auto_repair",
       "comment_id": "5081410241",
@@ -32983,6 +32950,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128318:5418022655:2026-08-25T22:58:04Z:re_review",
+      "comment_id": "5418022655",
+      "comment_version_key": "5418022655:2026-08-25T22:58:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128318#issuecomment-5418022655",
+      "comment_created_at": "2026-08-25T22:58:04Z",
+      "comment_updated_at": "2026-08-25T22:58:04Z",
+      "comment_body_sha256": "4e52a8f09e1a6b4e6452f810833913a5849c29aa6ea566cc655e6de7f56a0ef9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128318,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T22:58:45.752Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/secretref-manifest-owner-contract",
+        "head_sha": "7a8d83a346262545992de940eafe673b631acd12",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
