@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125838",
+  "mode": "autonomous",
+  "run_id": "32795470464",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32795470464",
+  "head_sha": "ed20a56037dc7e1141140513e0307df69f0d394a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125838.md",
+  "published_at": "2026-08-25T01:05:21.348Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125838",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125838",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before mutation: current main is at preflight SHA 3b0cad5d7087e08a5288f4f3d513a06571be4f9e, but the mandatory sibling ../codex source checkout is absent and this worker is read-only. The local focused-test harness is also unavailable because tsx is not installed.",
+  "actions": [
+    {
+      "target": "#125838",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125838",
+      "candidate_fix": null,
+      "reason": "A narrow repair remains appropriate, but this worker cannot satisfy the repository’s direct-Codex-source prerequisite or install the missing local test dependency."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125838",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125838",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a compliant writable executor; this worker cannot create its branch or validate a patch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#125838",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
