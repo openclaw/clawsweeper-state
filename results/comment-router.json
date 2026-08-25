@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T10:50:04.989Z",
+  "updated_at": "2026-08-25T10:50:08.385Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:47:5305413167:2026-08-25T06:14:27Z:clawsweeper_needs_human",
-      "comment_id": "5305413167",
-      "comment_version_key": "5305413167:2026-08-25T06:14:27Z",
-      "comment_url": "https://github.com/openclaw/clawscan/pull/47#issuecomment-5305413167",
-      "comment_created_at": "2026-08-16T02:53:29Z",
-      "comment_updated_at": "2026-08-25T06:14:27Z",
-      "comment_body_sha256": "df5434d8bf0913f0a7c202f4f1e6cface15dd89c0b02cfc984f0ee735daaca61",
-      "repo": "openclaw/clawscan",
-      "issue_number": 47,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 5,520-ID ceiling duplicates the current pinned dataset size; a future pin with more cases would reject a valid full selection unless its constant, tests, CLI help, and docs change... (sha=6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a)",
-      "expected_head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T06:18:25.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ids-stream-semantic-bound",
-        "head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128185:5387103970:2026-08-23T16:37:41Z:re_review",
       "comment_id": "5387103970",
@@ -32367,6 +32334,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115405:5409299205:2026-08-25T10:49:16Z:re_review",
+      "comment_id": "5409299205",
+      "comment_version_key": "5409299205:2026-08-25T10:49:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115405#issuecomment-5409299205",
+      "comment_created_at": "2026-08-25T10:49:16Z",
+      "comment_updated_at": "2026-08-25T10:49:16Z",
+      "comment_body_sha256": "9102a2445f24659ed042542d31d93e7d5998172646b8df239acb6a2951836b8f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115405,
+      "author": "MertBasar0",
+      "author_id": 100199793,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T10:50:06.205Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/delegation-capability-cli-loopback",
+        "head_sha": "5b6c15826c1d7a2f665277f4dd0fd7183959043e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
