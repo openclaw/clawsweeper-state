@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T06:36:09.337Z",
+  "updated_at": "2026-08-25T06:37:52.456Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128903:5403169882:2026-08-25T02:13:41Z:clawsweeper_needs_human",
-      "comment_id": "5403169882",
-      "comment_version_key": "5403169882:2026-08-25T02:13:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128903#issuecomment-5403169882",
-      "comment_created_at": "2026-08-25T00:09:31Z",
-      "comment_updated_at": "2026-08-25T02:13:41Z",
-      "comment_body_sha256": "ec8650f09c62f88469b1171b351ba893df82c80ebea482e6e3e2610f800947d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128903,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: focused mocks cover rejection before a mocked refreshed fetch, but the supplied artifacts contain no r...; Review finding: [medium] Prove rejected metadata blocks retry I/O — extensions/slack/src/monitor/media.ts:223 (sha=c7fb1e775cc8fcdfbeef86e3703351e5f3a24c17)",
-      "expected_head_sha": "c7fb1e775cc8fcdfbeef86e3703351e5f3a24c17",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T02:16:19.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/slack-file-scope-binding",
-        "head_sha": "c7fb1e775cc8fcdfbeef86e3703351e5f3a24c17",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128964:5404179432:2026-08-25T02:15:42Z:clawsweeper_needs_human",
       "comment_id": "5404179432",
@@ -30594,6 +30561,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128756:5396733218:2026-08-25T06:34:21Z:clawsweeper_needs_human",
+      "comment_id": "5396733218",
+      "comment_version_key": "5396733218:2026-08-25T06:34:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128756#issuecomment-5396733218",
+      "comment_created_at": "2026-08-24T14:34:14Z",
+      "comment_updated_at": "2026-08-25T06:34:21Z",
+      "comment_body_sha256": "3274c447a2da3efe80c07495b862a5932dcb1278beb339a963d024518b379495",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128756,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Prevent credential inheritance in external handoffs (P1)** - Doctor loads dotenv values into process.env before this path, and this spawn call supplies no env, so selecting Claude or Codex can pass Gateway/provi...; Review finding: [P1] Prevent credential inheritance in external handoffs — src/commands/triage.ts:183 - [P1] Render a runnable Windows manual Codex handoff — src/commands/triage.t... (sha=ced5db45bc4aa661d468789a14158227b0512a3e)",
+      "expected_head_sha": "ced5db45bc4aa661d468789a14158227b0512a3e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T06:37:52.456Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/openclaw-feature-fit-371f1e",
+        "head_sha": "ced5db45bc4aa661d468789a14158227b0512a3e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
