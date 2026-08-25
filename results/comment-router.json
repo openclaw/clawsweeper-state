@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T09:50:13.717Z",
+  "updated_at": "2026-08-25T09:51:03.292Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129016:5405993503:2026-08-25T05:31:54Z:clawsweeper_needs_human",
-      "comment_id": "5405993503",
-      "comment_version_key": "5405993503:2026-08-25T05:31:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129016#issuecomment-5405993503",
-      "comment_created_at": "2026-08-25T05:31:54Z",
-      "comment_updated_at": "2026-08-25T05:31:54Z",
-      "comment_body_sha256": "d82f436b216e795afb3b39d0f8e4cc8d027cf0595e325131db74cf3643903fa2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129016,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +1 line: the added abort check is necessary to prevent local overdue-delivery notices after the lifecycle has ended; the cancellation propagation itself replace... (sha=3c1c502908067bc19bd85d7fe846197a2234feba)",
-      "expected_head_sha": "3c1c502908067bc19bd85d7fe846197a2234feba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T05:32:58.775Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/stoic-jackson-9f12ea",
-        "head_sha": "3c1c502908067bc19bd85d7fe846197a2234feba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:3178:5405811844:2026-08-25T05:21:37Z:re_review",
       "comment_id": "5405811844",
@@ -31852,6 +31819,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3528:5408624192:2026-08-25T09:50:11Z:re_review",
+      "comment_id": "5408624192",
+      "comment_version_key": "5408624192:2026-08-25T09:50:11Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3528#issuecomment-5408624192",
+      "comment_created_at": "2026-08-25T09:50:11Z",
+      "comment_updated_at": "2026-08-25T09:50:11Z",
+      "comment_body_sha256": "ac9be444fa3c157066113d32ef28924f1e71df51da4f23ab50169e10ffaff7e4",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3528,
+      "author": "momothemage",
+      "author_id": 35096042,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T09:51:01.246Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/issue-3507-trusted-publish-ref",
+        "head_sha": "fbdc0a4818c48f19a07e00e16f8f59ffe24f74f0",
+        "cluster_id": "automerge-openclaw-clawhub-3528",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-clawhub-3528.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
