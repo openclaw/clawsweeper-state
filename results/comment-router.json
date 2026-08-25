@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-25T02:51:01.348Z",
+  "updated_at": "2026-08-25T02:48:28.976Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120249:5219149537:2026-08-20T00:14:14Z:clawsweeper_auto_repair",
+      "comment_id": "5219149537",
+      "comment_version_key": "5219149537:2026-08-20T00:14:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120249#issuecomment-5219149537",
+      "comment_created_at": "2026-08-07T15:48:34Z",
+      "comment_updated_at": "2026-08-20T00:14:14Z",
+      "comment_body_sha256": "00fc165f1ec0580c2594dd01a260c11c3c5c6159cf7b8c10a6afba3be1c17ca0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120249,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-24T23:13:55.179Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-91860",
+        "head_sha": "f2dc4662d1e72d6a46547ad32ca7dc8a889ffb5a",
+        "cluster_id": "issue-openclaw-openclaw-91860",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-91860.md"
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121982:5251626998:2026-08-24T23:11:45Z:clawsweeper_auto_repair",
       "comment_id": "5251626998",
@@ -30354,39 +30387,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1240:5403433718:2026-08-25T02:48:05Z:clawsweeper_needs_human",
-      "comment_id": "5403433718",
-      "comment_version_key": "5403433718:2026-08-25T02:48:05Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1240#issuecomment-5403433718",
-      "comment_created_at": "2026-08-25T00:43:50Z",
-      "comment_updated_at": "2026-08-25T02:48:05Z",
-      "comment_body_sha256": "5d8db875f4edf77f11f3fd6953fd001374aa5271e773ad25d055067337442353",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1240,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The before/after output drives ExactReviewQueue through MemoryDurableStorage, so it is useful regression evidence but not real Durable Object b... (sha=dc76448f008368a82d4df393782ae78e7f5e6ca8)",
-      "expected_head_sha": "dc76448f008368a82d4df393782ae78e7f5e6ca8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T02:51:01.348Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exact-review-do-json-errors",
-        "head_sha": "dc76448f008368a82d4df393782ae78e7f5e6ca8",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
