@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T15:14:04.482Z",
+  "updated_at": "2026-08-25T15:14:17.248Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128481:5390604994:2026-08-25T10:18:10Z:clawsweeper_auto_repair",
-      "comment_id": "5390604994",
-      "comment_version_key": "5390604994:2026-08-25T10:18:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128481#issuecomment-5390604994",
-      "comment_created_at": "2026-08-24T04:09:17Z",
-      "comment_updated_at": "2026-08-25T10:18:10Z",
-      "comment_body_sha256": "c37be5999c2bd9a9144899e6cf0fc650f3b59fdc7bdbba894a1e6a6dbdb4ffce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128481,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T10:42:31.164Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-codex-ultra-projection",
-        "head_sha": "b2e615fc7a5a7ec73e69cbe68d7c209e44ee8263",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128490:5390837311:2026-08-25T10:18:47Z:clawsweeper_needs_human",
       "comment_id": "5390837311",
@@ -31601,6 +31568,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129276:5412548524:2026-08-25T15:13:22Z:re_review",
+      "comment_id": "5412548524",
+      "comment_version_key": "5412548524:2026-08-25T15:13:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129276#issuecomment-5412548524",
+      "comment_created_at": "2026-08-25T15:13:22Z",
+      "comment_updated_at": "2026-08-25T15:13:22Z",
+      "comment_body_sha256": "f1d952560abf9088a94ec10f5a9104a8fd49185dfe846b763d5c94ce2cee4046",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129276,
+      "author": "Finn763",
+      "author_id": 165816600,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T15:14:15.017Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-codex-external-health-surface",
+        "head_sha": "b7161b1ed106fcf56b687c71082ff84ed87cc6ca",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
