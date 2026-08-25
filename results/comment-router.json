@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T13:49:26.780Z",
+  "updated_at": "2026-08-25T13:50:03.412Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1518:5407692259:2026-08-25T08:36:51Z:re_review",
-      "comment_id": "5407692259",
-      "comment_version_key": "5407692259:2026-08-25T08:36:51Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1518#issuecomment-5407692259",
-      "comment_created_at": "2026-08-25T08:36:51Z",
-      "comment_updated_at": "2026-08-25T08:36:51Z",
-      "comment_body_sha256": "517774f7b45c0f7c40941de56aec9109e74c4e08b9dbf8d1f6683df171dd20df",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1518,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T08:37:28.921Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-portal-url-userinfo-redaction",
-        "head_sha": "36ef6ce93788b8ae831fb7ac74a958efbd65c17c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3501:5365867758:2026-08-21T06:07:23Z:re_review",
       "comment_id": "5365867758",
@@ -32519,6 +32472,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129351:5411354922:2026-08-25T13:48:53Z:clawsweeper_needs_human",
+      "comment_id": "5411354922",
+      "comment_version_key": "5411354922:2026-08-25T13:48:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129351#issuecomment-5411354922",
+      "comment_created_at": "2026-08-25T13:48:53Z",
+      "comment_updated_at": "2026-08-25T13:48:53Z",
+      "comment_body_sha256": "825817d3c35dd1abba8788c9b0332fd1476a50db1d941215c6600082fbdb6a41",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129351,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head status includes two failed compact CI jobs whose logs were unavailable to attribute; merge should wait for their resolved status. (sha=71820b94e1ac9b3c5809dec0e8316895a704a26c)",
+      "expected_head_sha": "71820b94e1ac9b3c5809dec0e8316895a704a26c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T13:50:03.412Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup20k-cli-lazy-subcli-registration-20260825",
+        "head_sha": "71820b94e1ac9b3c5809dec0e8316895a704a26c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
