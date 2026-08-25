@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T10:20:43.881Z",
+  "updated_at": "2026-08-25T10:27:24.189Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117351:5151158895:2026-08-25T05:35:42Z:clawsweeper_needs_human",
-      "comment_id": "5151158895",
-      "comment_version_key": "5151158895:2026-08-25T05:35:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117351#issuecomment-5151158895",
-      "comment_created_at": "2026-08-01T11:08:29Z",
-      "comment_updated_at": "2026-08-25T05:35:42Z",
-      "comment_body_sha256": "61d2027752149c30fa6fed9f19f5c808cac22dbf82b9b7c76ff0897ceba942ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117351,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub marks the branch dirty; resolving it against current main needs a fresh review because the same CLI contract is already present amid surrounding refactors. (sha=2282d6b4c229648a2ce42cce842464dd5c98b30f)",
-      "expected_head_sha": "2282d6b4c229648a2ce42cce842464dd5c98b30f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T05:38:44.388Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-plugin-enable-blocked",
-        "head_sha": "2282d6b4c229648a2ce42cce842464dd5c98b30f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117220:5149895861:2026-08-25T05:32:58Z:clawsweeper_auto_repair",
       "comment_id": "5149895861",
@@ -32344,6 +32311,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:110947:5409073265:2026-08-25T10:26:34Z:re_review",
+      "comment_id": "5409073265",
+      "comment_version_key": "5409073265:2026-08-25T10:26:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110947#issuecomment-5409073265",
+      "comment_created_at": "2026-08-25T10:26:34Z",
+      "comment_updated_at": "2026-08-25T10:26:34Z",
+      "comment_body_sha256": "435dfc03dc515ce0f498dd19f57d382074c4021b669b689e56b4ab0cee00d2a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110947,
+      "author": "NehoraiHadad",
+      "author_id": 106696390,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T10:27:21.575Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/whatsapp-temporary-listen-window",
+        "head_sha": "68fe72d3d00663e18d9a5a8fb83e392f28a716f1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
