@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T10:57:58.779Z",
+  "updated_at": "2026-08-25T10:58:42.217Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120854:5233178616:2026-08-09T18:33:12Z:re_review",
-      "comment_id": "5233178616",
-      "comment_version_key": "5233178616:2026-08-09T18:33:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120854#issuecomment-5233178616",
-      "comment_created_at": "2026-08-09T18:33:12Z",
-      "comment_updated_at": "2026-08-09T18:33:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120854,
-      "author": "aolea",
-      "author_id": 35071898,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T06:24:36.609Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120854:5234201440:2026-08-09T22:36:27Z:re_review",
       "comment_id": "5234201440",
@@ -32412,6 +32385,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129245:5409372250:2026-08-25T10:56:38Z:clawsweeper_needs_human",
+      "comment_id": "5409372250",
+      "comment_version_key": "5409372250:2026-08-25T10:56:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129245#issuecomment-5409372250",
+      "comment_created_at": "2026-08-25T10:56:38Z",
+      "comment_updated_at": "2026-08-25T10:56:38Z",
+      "comment_body_sha256": "afb2fb62575e464242aec8b4d1c3bb6d167c0cfe9512a54d0f083e1e4004f31e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129245,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied recording shows allowed same-client reconnect recovery, but not rejection before config.p...; Review finding: [P1] Bind the delete confirmation to the original Gateway client — ui/src/pages/cloud-workers/cloud-workers-page.ts:262-264 - [medium] Confirmation can cross a Gat... (sha=046b41300bca1f117cbf39898e894f159aaed035)",
+      "expected_head_sha": "046b41300bca1f117cbf39898e894f159aaed035",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T10:58:42.217Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cloud-worker-delete-reconnect",
+        "head_sha": "046b41300bca1f117cbf39898e894f159aaed035",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
