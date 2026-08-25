@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T20:31:50.900Z",
+  "updated_at": "2026-08-25T20:35:23.557Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129276:5409981751:2026-08-25T14:07:27Z:clawsweeper_auto_repair",
-      "comment_id": "5409981751",
-      "comment_version_key": "5409981751:2026-08-25T14:07:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129276#issuecomment-5409981751",
-      "comment_created_at": "2026-08-25T11:53:16Z",
-      "comment_updated_at": "2026-08-25T14:07:27Z",
-      "comment_body_sha256": "8888973a7c1d36d48569df33e8cab8b6630528b53675bf35c32c6192ae862270",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129276,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=af46faf674417a0ea69c52e55a2d542cd2b70316)",
-      "expected_head_sha": "af46faf674417a0ea69c52e55a2d542cd2b70316",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-25T14:15:22.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-codex-external-health-surface",
-        "head_sha": "af46faf674417a0ea69c52e55a2d542cd2b70316",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129289:5410245594:2026-08-25T13:33:06Z:clawsweeper_auto_repair",
       "comment_id": "5410245594",
@@ -32325,6 +32292,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129526:5416408156:2026-08-25T20:34:32Z:clawsweeper_needs_human",
+      "comment_id": "5416408156",
+      "comment_version_key": "5416408156:2026-08-25T20:34:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129526#issuecomment-5416408156",
+      "comment_created_at": "2026-08-25T20:34:32Z",
+      "comment_updated_at": "2026-08-25T20:34:32Z",
+      "comment_body_sha256": "33984abb96c8460f0bdba760fbf6e66d83b93bb5202423363f699d4046a4e393",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129526,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Revalidate standing grants immediately before process spawn (P1)** - The grant is consumed at this return path, but bash-tools.exec-run.ts then awaits script preflight and only revalidates mutable-file bindings...; Review finding: [P1] Revalidate standing grants immediately before process spawn — src/agents/bash-tools.exec-host-gateway.ts:830-844 - [P1] Do not expose node cron approvals as s... (sha=57b5b8b32ae2e7a72dcf0895ab1a2a38b9c03401)",
+      "expected_head_sha": "57b5b8b32ae2e7a72dcf0895ab1a2a38b9c03401",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T20:35:23.557Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cron-standing-grants",
+        "head_sha": "57b5b8b32ae2e7a72dcf0895ab1a2a38b9c03401",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
