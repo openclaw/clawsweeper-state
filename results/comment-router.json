@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T22:36:09.836Z",
+  "updated_at": "2026-08-25T22:36:14.772Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129383:5412657180:2026-08-25T15:21:41Z:clawsweeper_needs_human",
-      "comment_id": "5412657180",
-      "comment_version_key": "5412657180:2026-08-25T15:21:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129383#issuecomment-5412657180",
-      "comment_created_at": "2026-08-25T15:21:41Z",
-      "comment_updated_at": "2026-08-25T15:21:41Z",
-      "comment_body_sha256": "32fc0c2af8c5372b6f85432dd76689695d70bd3d6cf5060c0aa81aadaee8c74f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129383,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This removes two names from the current-main public provider-auth declaration; a plugin built against unreleased main could stop typechecking, so confirm the stated no-stable-release... (sha=ad3a8cabc3e00e9792c11a9cd544b73bd2a1db5e)",
-      "expected_head_sha": "ad3a8cabc3e00e9792c11a9cd544b73bd2a1db5e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T15:26:18.251Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/claude-auth-sdk-surface",
-        "head_sha": "ad3a8cabc3e00e9792c11a9cd544b73bd2a1db5e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129399:5412715951:2026-08-25T15:25:53Z:clawsweeper_needs_human",
       "comment_id": "5412715951",
@@ -32919,6 +32886,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128189:5385598184:2026-08-25T22:30:13Z:clawsweeper_needs_human",
+      "comment_id": "5385598184",
+      "comment_version_key": "5385598184:2026-08-25T22:30:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128189#issuecomment-5385598184",
+      "comment_created_at": "2026-08-23T10:47:06Z",
+      "comment_updated_at": "2026-08-25T22:30:13Z",
+      "comment_body_sha256": "447085b60b9ea1a1fe651a338a66e9f58f043b4674f3af80f21edaff2811c107",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128189,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Exclude boundary-sensitive defaults from the prefilter (P1)** - CHUNK_SAFE_PATTERN_SOURCES admits every default, but chunkUnsafePatterns excludes only a subset. The default (^|[\\s,;])... assignment pattern is th...; Review finding: [P1] Exclude boundary-sensitive defaults from the prefilter — src/logging/redact.ts:50 - [high] Default pattern can be skipped before masking — src/logging/redact.... (sha=9444353a3182e3af4d7b7c6af570aca38a1c0221)",
+      "expected_head_sha": "9444353a3182e3af4d7b7c6af570aca38a1c0221",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T22:36:14.772Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/redact-chunked-pattern-prefilter-128156",
+        "head_sha": "9444353a3182e3af4d7b7c6af570aca38a1c0221",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
