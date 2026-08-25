@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T00:30:14.245Z",
+  "updated_at": "2026-08-25T00:32:45.725Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127778:5400534493:2026-08-24T19:53:58Z:re_review",
-      "comment_id": "5400534493",
-      "comment_version_key": "5400534493:2026-08-24T19:53:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127778#issuecomment-5400534493",
-      "comment_created_at": "2026-08-24T19:53:58Z",
-      "comment_updated_at": "2026-08-24T19:53:58Z",
-      "comment_body_sha256": "53fe2c4f141173230c46820761d6acf035413c1dae7363c5577765257a6b8e0a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127778,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: the pr body now records the accepted maintainer product decision and links exact-head signed macos x→y evidence. please inspect the linked redacted artifact. per the repository agents.md codex hard gate, if `../codex` is missing, clone `openai/codex` there and directly inspect the upstream source before the verdict. although member-authored proof is not a merge gate, assess the quality of the supplied optional proof rather than discarding it solely because the author is a member",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T19:55:15.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/codex-desktop-generation",
-        "head_sha": "c002ca80ba198ce4e532b6e07faf1df6b55c2635",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128832:5400532900:2026-08-24T19:53:49Z:clawsweeper_auto_repair",
       "comment_id": "5400532900",
@@ -31746,6 +31699,39 @@
         "kind": "pull_request",
         "branch": "fix/compact-nondecreasing-label",
         "head_sha": "422d16e8ee5a029eef92b89e4e0b15d615897e30",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/carapace:76:5392643319:2026-08-25T00:09:03Z:clawsweeper_needs_human",
+      "comment_id": "5392643319",
+      "comment_version_key": "5392643319:2026-08-25T00:09:03Z",
+      "comment_url": "https://github.com/openclaw/carapace/pull/76#issuecomment-5392643319",
+      "comment_created_at": "2026-08-24T08:30:41Z",
+      "comment_updated_at": "2026-08-25T00:09:03Z",
+      "comment_body_sha256": "10922aa1522be0fa9d477be98cea9a23fd386b7ba714b3076d4a44bb0a21b68d",
+      "repo": "openclaw/carapace",
+      "issue_number": 76,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Vite 8.2.2 updates the Rolldown resolution and optional native bindings, but the normal check command does not run preview:build; a regression would first surface in the post-merge Pa... (sha=de38aa3f0b7a88bfe3951e4080ac6a1f4ec95a00)",
+      "expected_head_sha": "de38aa3f0b7a88bfe3951e4080ac6a1f4ec95a00",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T00:32:45.725Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-dd9ce1e772",
+        "head_sha": "de38aa3f0b7a88bfe3951e4080ac6a1f4ec95a00",
         "cluster_id": null,
         "job_path": null
       }
