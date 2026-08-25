@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:46:13.028Z",
+  "updated_at": "2026-08-25T23:46:16.851Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/oracle:415:5413600744:2026-08-25T16:38:28Z:re_review",
-      "comment_id": "5413600744",
-      "comment_version_key": "5413600744:2026-08-25T16:38:28Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/415#issuecomment-5413600744",
-      "comment_created_at": "2026-08-25T16:38:28Z",
-      "comment_updated_at": "2026-08-25T16:38:28Z",
-      "comment_body_sha256": "bd50268a09167f6358de286685281c52af4c051fca3e09162bcc1e9b57d4fe30",
-      "repo": "steipete/oracle",
-      "issue_number": 415,
-      "author": "devYRPauli",
-      "author_id": 55940078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T17:20:26.005Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/attach-running-probe-devtools-endpoint",
-        "head_sha": "edf26a08e97795524171cc736567af0e6b36a3de",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:415:5400102790:2026-08-25T17:19:21Z:clawsweeper_needs_human",
       "comment_id": "5400102790",
@@ -32871,6 +32824,39 @@
         "kind": "pull_request",
         "branch": "refactor/lobster-managed-flow-parser-20260825",
         "head_sha": "d5af606d91f9f0a2893f0b2287fbe9910f7c325d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129517:5417738911:2026-08-25T23:43:27Z:clawsweeper_needs_human",
+      "comment_id": "5417738911",
+      "comment_version_key": "5417738911:2026-08-25T23:43:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129517#issuecomment-5417738911",
+      "comment_created_at": "2026-08-25T22:31:42Z",
+      "comment_updated_at": "2026-08-25T23:43:27Z",
+      "comment_body_sha256": "c717a0d5dfeae522434ef7ec9f806272182452113b288281a07ce980413f60f9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129517,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The +13 production lines deliberately extend session-cache lifetime across socket rotation; an error in the logical-connection discriminator could temporarily retain rows from a diffe... (sha=148954390772377732949594891da24be3956ea2)",
+      "expected_head_sha": "148954390772377732949594891da24be3956ea2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T23:46:16.851Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pinned-sidebar-reconnect",
+        "head_sha": "148954390772377732949594891da24be3956ea2",
         "cluster_id": null,
         "job_path": null
       }
