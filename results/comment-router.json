@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T04:40:30.474Z",
+  "updated_at": "2026-08-25T04:44:47.655Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128673:5394073888:2026-08-25T00:33:39Z:clawsweeper_needs_human",
-      "comment_id": "5394073888",
-      "comment_version_key": "5394073888:2026-08-25T00:33:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128673#issuecomment-5394073888",
-      "comment_created_at": "2026-08-24T10:40:31Z",
-      "comment_updated_at": "2026-08-25T00:33:39Z",
-      "comment_body_sha256": "04945f86e101df83e314dde2992ca1af0b508f16c615b00909c63f2fc63ceb80",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128673,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Audit Codex Action v1.12 before credentialed execution (P1)** - This changes the executable action used by jobs that pass an OpenAI key and permit workspace writes, but the exact v1.12 manifest and runtime could...; Review finding: [P1] Audit Codex Action v1.12 before credentialed execution — .github/workflows/dated-todo-sweep.yml:55 - [high] Unreviewed credentialed action upgrade — .github/w... (sha=90c254cf7465c77b288f2820e57dfb0c9ba2f0d3)",
-      "expected_head_sha": "90c254cf7465c77b288f2820e57dfb0c9ba2f0d3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T00:34:48.886Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-020742e8ff",
-        "head_sha": "90c254cf7465c77b288f2820e57dfb0c9ba2f0d3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128831:5400102657:2026-08-25T00:34:51Z:clawsweeper_auto_repair",
       "comment_id": "5400102657",
@@ -30444,6 +30411,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128756:5396733218:2026-08-25T04:44:04Z:clawsweeper_needs_human",
+      "comment_id": "5396733218",
+      "comment_version_key": "5396733218:2026-08-25T04:44:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128756#issuecomment-5396733218",
+      "comment_created_at": "2026-08-24T14:34:14Z",
+      "comment_updated_at": "2026-08-25T04:44:04Z",
+      "comment_body_sha256": "ab657e2bacd535b3bdbfadddc41c228587cf6bf0aef6b3b42a2887a9812dc8fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128756,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Scrub inherited credentials before spawning external agents (P1)** - This launch inherits all of process.env. The preceding Doctor collection loads OpenClaw global dotenv files into that environment, so choosing...; Review finding: [P1] Scrub inherited credentials before spawning external agents — src/commands/triage.ts:183 - [P2] Provide Windows-runnable manual handoff commands — src/command... (sha=26752575d31711389c2af5f047d5d9784dbe85db)",
+      "expected_head_sha": "26752575d31711389c2af5f047d5d9784dbe85db",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T04:44:47.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/openclaw-feature-fit-371f1e",
+        "head_sha": "26752575d31711389c2af5f047d5d9784dbe85db",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
