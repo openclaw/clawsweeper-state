@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T01:02:29.030Z",
+  "updated_at": "2026-08-25T01:02:33.452Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128854:5400922029:2026-08-24T20:27:40Z:re_review",
-      "comment_id": "5400922029",
-      "comment_version_key": "5400922029:2026-08-24T20:27:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128854#issuecomment-5400922029",
-      "comment_created_at": "2026-08-24T20:27:40Z",
-      "comment_updated_at": "2026-08-24T20:27:40Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128854,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T20:28:29.267Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ios-fastlane-source-root",
-        "head_sha": "999fe294047290c8d9af6a8fbf084816284ccce2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1513:5399381224:2026-08-24T20:21:56Z:clawsweeper_needs_human",
       "comment_id": "5399381224",
@@ -31510,6 +31463,39 @@
         "kind": "pull_request",
         "branch": "fix/media-max-mb-schema-parity",
         "head_sha": "0acf26ab5e11156c5e306c14aec26d28b2bf92ac",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114193:5085962616:2026-08-25T00:57:58Z:clawsweeper_auto_repair",
+      "comment_id": "5085962616",
+      "comment_version_key": "5085962616:2026-08-25T00:57:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114193#issuecomment-5085962616",
+      "comment_created_at": "2026-07-26T23:43:44Z",
+      "comment_updated_at": "2026-08-25T00:57:58Z",
+      "comment_body_sha256": "b3a6acb7d3ae772bfd437fc6a6449fe5de59c76a88bd68ab2926ef9acf05be9a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114193,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f0a833d0170e196d76810787db3f7e56aed664cf)",
+      "expected_head_sha": "f0a833d0170e196d76810787db3f7e56aed664cf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T01:02:33.452Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-search-timeout-diagnostics",
+        "head_sha": "f0a833d0170e196d76810787db3f7e56aed664cf",
         "cluster_id": null,
         "job_path": null
       }
