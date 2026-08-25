@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:04:54.123Z",
+  "updated_at": "2026-08-25T23:05:53.641Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124301:5304629222:2026-08-25T15:56:52Z:clawsweeper_needs_human",
-      "comment_id": "5304629222",
-      "comment_version_key": "5304629222:2026-08-25T15:56:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124301#issuecomment-5304629222",
-      "comment_created_at": "2026-08-15T22:57:29Z",
-      "comment_updated_at": "2026-08-25T15:56:52Z",
-      "comment_body_sha256": "9261ce5bc76a1fe939f3a774a1b066127db1c6682f7fd447af8f1bba71d17de4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124301,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the prepared Mantis capture shows an earlier mocked chat turn, not current-head administrator Full suc...; Review finding: [P2] Anchor the task-popover height to its real composer position — ui/src/styles/chat/layout.css:2587 - [medium] Prove Full-mode rejection before session creation... (sha=d3396c4d3b48bcfa0b890a59550dd08608a62e43)",
-      "expected_head_sha": "d3396c4d3b48bcfa0b890a59550dd08608a62e43",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T16:06:26.522Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/composer-multiline-restyle",
-        "head_sha": "d3396c4d3b48bcfa0b890a59550dd08608a62e43",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125190:5314420291:2026-08-25T15:56:03Z:clawsweeper_auto_repair",
       "comment_id": "5314420291",
@@ -33109,6 +33076,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129620:5418094400:2026-08-25T23:04:57Z:re_review",
+      "comment_id": "5418094400",
+      "comment_version_key": "5418094400:2026-08-25T23:04:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129620#issuecomment-5418094400",
+      "comment_created_at": "2026-08-25T23:04:57Z",
+      "comment_updated_at": "2026-08-25T23:04:57Z",
+      "comment_body_sha256": "32024b16ed4109400d35c31ba39e23c7300f2ebef029ea36216a9519d6ba581c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129620,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T23:05:51.213Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/rescue-lazy-session-files-ecf063",
+        "head_sha": "787bc25cb0d350b9f2c9bd2b939c49841830eab0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
