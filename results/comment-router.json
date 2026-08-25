@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T18:44:57.723Z",
+  "updated_at": "2026-08-25T18:48:08.746Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5250240163:2026-08-11T07:24:39Z:re_review",
-      "comment_id": "5250240163",
-      "comment_version_key": "5250240163:2026-08-11T07:24:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5250240163",
-      "comment_created_at": "2026-08-11T07:24:39Z",
-      "comment_updated_at": "2026-08-11T07:24:39Z",
-      "comment_body_sha256": "620704634535afbe8ea675c11b48bb57c621959cad77df2ad438566ce669c868",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T13:34:46.135Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5252018205:2026-08-11T10:34:17Z:re_review",
       "comment_id": "5252018205",
@@ -31986,6 +31959,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129494:5415102647:2026-08-25T18:46:08Z:clawsweeper_needs_human",
+      "comment_id": "5415102647",
+      "comment_version_key": "5415102647:2026-08-25T18:46:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129494#issuecomment-5415102647",
+      "comment_created_at": "2026-08-25T18:46:08Z",
+      "comment_updated_at": "2026-08-25T18:46:08Z",
+      "comment_body_sha256": "af4e92068994a4ecef55e71e02a13d9ce5ffe3c8cb74b6e6fcf111b017190124",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129494,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The provided exact-head check state includes failures for checks-node-compact-small-23 and openclaw/ci-gate; their logs were unavailable during this review, so their relation to the p... (sha=bfd4efb23d05089fbaa1ac87d5a0a15908582db1)",
+      "expected_head_sha": "bfd4efb23d05089fbaa1ac87d5a0a15908582db1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T18:48:08.746Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/status-single-config-resolution",
+        "head_sha": "bfd4efb23d05089fbaa1ac87d5a0a15908582db1",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
