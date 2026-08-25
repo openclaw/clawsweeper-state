@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T19:15:39.737Z",
+  "updated_at": "2026-08-25T19:15:40.503Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128289:5398134752:2026-08-24T16:22:30Z:re_review",
-      "comment_id": "5398134752",
-      "comment_version_key": "5398134752:2026-08-24T16:22:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128289#issuecomment-5398134752",
-      "comment_created_at": "2026-08-24T16:22:30Z",
-      "comment_updated_at": "2026-08-24T16:22:30Z",
-      "comment_body_sha256": "dbe578f2fa1aa8f97184cbdbef0017d8a80fe405d4e2ebdea890dc00a3532b53",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128289,
-      "author": "SnowBelt",
-      "author_id": 31227031,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T13:35:28.849Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128289:5403046943:2026-08-24T23:52:41Z:re_review",
       "comment_id": "5403046943",
@@ -32303,6 +32276,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T19:15:39.737Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129403:5412624782:2026-08-25T19:08:30Z:clawsweeper_needs_human",
+      "comment_id": "5412624782",
+      "comment_version_key": "5412624782:2026-08-25T19:08:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129403#issuecomment-5412624782",
+      "comment_created_at": "2026-08-25T15:19:12Z",
+      "comment_updated_at": "2026-08-25T19:08:30Z",
+      "comment_body_sha256": "4a2d875fd5fa78e619a05714306089052b4384129ddaa6ebedd5c21842aee48b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129403,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The copied terminal output calls a built helper directly, not the reported CLI flows on this PR head; it does not prove the primary lo...; Review finding: [P1] Guard the actual config-loading parser boundary — src/config/io.read-helpers.ts:161-165 - [P1] Fix escaped-quote parity in the raw nesting scanner — src/confi... (sha=132d68d3aeb2a8515404e36828985c3a7ff858e5)",
+      "expected_head_sha": "132d68d3aeb2a8515404e36828985c3a7ff858e5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T19:15:40.503Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/129209-json-nesting-stack-overflow",
+        "head_sha": "132d68d3aeb2a8515404e36828985c3a7ff858e5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
