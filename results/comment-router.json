@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:45:49.037Z",
+  "updated_at": "2026-08-25T23:45:57.824Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1520:5413962816:2026-08-25T17:08:36Z:re_review",
-      "comment_id": "5413962816",
-      "comment_version_key": "5413962816:2026-08-25T17:08:36Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1520#issuecomment-5413962816",
-      "comment_created_at": "2026-08-25T17:08:36Z",
-      "comment_updated_at": "2026-08-25T17:08:36Z",
-      "comment_body_sha256": "33f0960c3cf78eff40e25fd1cb2cb367649407541659ea30ca7380a5fee66450",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1520,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T17:09:23.412Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/stop-force-recovery",
-        "head_sha": "e892def0d1f0dcc4552ed89ca5dc8353a837f42c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129370:5412678237:2026-08-25T17:03:48Z:clawsweeper_needs_human",
       "comment_id": "5412678237",
@@ -32871,6 +32824,39 @@
         "kind": "pull_request",
         "branch": "alix/fix-google-response-model",
         "head_sha": "3adc4c0f7d92b4f2f358f69bfadf3e8fe3f67663",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129560:5415810648:2026-08-25T23:41:38Z:clawsweeper_needs_human",
+      "comment_id": "5415810648",
+      "comment_version_key": "5415810648:2026-08-25T23:41:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129560#issuecomment-5415810648",
+      "comment_created_at": "2026-08-25T19:45:11Z",
+      "comment_updated_at": "2026-08-25T23:41:38Z",
+      "comment_body_sha256": "6ca055e6401987b32c26ee6504db662ea3d26e4db101e5367ee482f3f3eab6d7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129560,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is not complete: the supplied check state includes one failed compact-large check and many queued or in-progress checks, so this is not merge-ready yet. (sha=709f9fdf8e878dc5e9dbafe26ceb0a273cb2fca4)",
+      "expected_head_sha": "709f9fdf8e878dc5e9dbafe26ceb0a273cb2fca4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T23:45:57.824Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cron-auto-disable-safety-notice",
+        "head_sha": "5f267b40ceee3dd3372487ee4668ac9bd3df305b",
         "cluster_id": null,
         "job_path": null
       }
