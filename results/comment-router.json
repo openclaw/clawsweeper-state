@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T12:37:52.370Z",
+  "updated_at": "2026-08-25T12:38:50.654Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129101:5407152399:2026-08-25T07:45:01Z:clawsweeper_needs_human",
-      "comment_id": "5407152399",
-      "comment_version_key": "5407152399:2026-08-25T07:45:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129101#issuecomment-5407152399",
-      "comment_created_at": "2026-08-25T07:45:01Z",
-      "comment_updated_at": "2026-08-25T07:45:01Z",
-      "comment_body_sha256": "5c84a3b2b8366d474c16e6e22873f3dfe1d8fa06147fc4b3537d9b7f31af17a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129101,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 21 net lines for this bug fix; the shared presentation mapping is justified because it removes repeated raw-status interpretation across callers and should re... (sha=21905d3130c7221ead2a07841fb36c58f1da11ac)",
-      "expected_head_sha": "21905d3130c7221ead2a07841fb36c58f1da11ac",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T07:47:27.052Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/blocked-task-human-status-20260824",
-        "head_sha": "21905d3130c7221ead2a07841fb36c58f1da11ac",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabbox:1517:5407192661:2026-08-25T07:49:03Z:re_review",
       "comment_id": "5407192661",
@@ -32271,6 +32238,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/stats-store:310:5390660962:2026-08-25T12:12:13Z:clawsweeper_needs_human",
+      "comment_id": "5390660962",
+      "comment_version_key": "5390660962:2026-08-25T12:12:13Z",
+      "comment_url": "https://github.com/steipete/stats-store/pull/310#issuecomment-5390660962",
+      "comment_created_at": "2026-08-24T04:17:37Z",
+      "comment_updated_at": "2026-08-25T12:12:13Z",
+      "comment_body_sha256": "9e374ecac815fb97a7853fbe9d745d09a3420bf632329df47b6048c75b2a754b",
+      "repo": "steipete/stats-store",
+      "issue_number": 310,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep the lockfile scoped to the formatter update (P1)** - The manifest changes only oxfmt, but this hunk also upgrades framer-motion and input-otp, which are production dashboard dependencies. Frozen installs wo...; Review finding: [P1] Keep the lockfile scoped to the formatter update — pnpm-lock.yaml:140-145 - [medium] Limit unrequested runtime dependency changes — pnpm-lock.yaml:140 (sha=662cfbcf1cb8e54570e71d6b54ccd9ce66ec69f9)",
+      "expected_head_sha": "662cfbcf1cb8e54570e71d6b54ccd9ce66ec69f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T12:38:50.654Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/oxfmt-0.64.0",
+        "head_sha": "662cfbcf1cb8e54570e71d6b54ccd9ce66ec69f9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
