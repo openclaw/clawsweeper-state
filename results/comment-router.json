@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T05:04:54.799Z",
+  "updated_at": "2026-08-25T05:05:18.180Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128905:5403652023:2026-08-25T01:09:27Z:re_review",
-      "comment_id": "5403652023",
-      "comment_version_key": "5403652023:2026-08-25T01:09:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128905#issuecomment-5403652023",
-      "comment_created_at": "2026-08-25T01:09:27Z",
-      "comment_updated_at": "2026-08-25T01:09:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128905,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T01:10:05.425Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/127583-sessions-cleanup-all-agents",
-        "head_sha": "a74c1939e0c6dc7f5e6041391150f38ad71827d6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/birdclaw:134:5403296890:2026-08-25T01:13:40Z:clawsweeper_auto_repair",
       "comment_id": "5403296890",
@@ -30329,6 +30282,39 @@
         "kind": "pull_request",
         "branch": "codex/backport-lazy-transcript-newest-event",
         "head_sha": "ac4bd07be8a79dd080c4dd98b08302188b68770f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3519:5398014946:2026-08-25T05:04:25Z:clawsweeper_needs_human",
+      "comment_id": "5398014946",
+      "comment_version_key": "5398014946:2026-08-25T05:04:25Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3519#issuecomment-5398014946",
+      "comment_created_at": "2026-08-24T16:13:11Z",
+      "comment_updated_at": "2026-08-25T05:04:25Z",
+      "comment_body_sha256": "83de7772a67cb802e5cca1e965c47f90136e566d8bc59f6909706cece5e5bd31",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3519,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The updated Vite/Vitest toolchain overlaps the 60 recorded browser-suite failures, but no base-versus-merge-result comparison establishes whether the update regresses CI or exposes a... (sha=defa2b325aaafd4cc15781d63efd3b6d5ed87acc)",
+      "expected_head_sha": "defa2b325aaafd4cc15781d63efd3b6d5ed87acc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T05:05:18.180Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-8f8c31b548",
+        "head_sha": "defa2b325aaafd4cc15781d63efd3b6d5ed87acc",
         "cluster_id": null,
         "job_path": null
       }
