@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T21:35:51.089Z",
+  "updated_at": "2026-08-25T21:36:14.701Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5256547584:2026-08-11T17:24:08Z:re_review",
-      "comment_id": "5256547584",
-      "comment_version_key": "5256547584:2026-08-11T17:24:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5256547584",
-      "comment_created_at": "2026-08-11T17:24:08Z",
-      "comment_updated_at": "2026-08-11T17:24:08Z",
-      "comment_body_sha256": "00c457cf2e1e061b0f611f9eeeb97bf8f2f609900f682941fe10c60d57fad2da",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T15:00:29.755Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5256549401:2026-08-11T17:24:15Z:re_review",
       "comment_id": "5256549401",
@@ -32561,6 +32534,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T21:35:51.089Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129567:5417118111:2026-08-25T21:34:42Z:clawsweeper_needs_human",
+      "comment_id": "5417118111",
+      "comment_version_key": "5417118111:2026-08-25T21:34:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129567#issuecomment-5417118111",
+      "comment_created_at": "2026-08-25T21:34:42Z",
+      "comment_updated_at": "2026-08-25T21:34:42Z",
+      "comment_body_sha256": "65e1b4310ba66878bae958a6dd8569c611e0a7c00cf4e9cf742dcaff96960739",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129567,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides a production-entry trace with a deterministic local completion sink, but external-PR merge proof still needs a redacted after-f... (sha=a0658c572070eb98f18f117ec255e05765881ea0)",
+      "expected_head_sha": "a0658c572070eb98f18f117ec255e05765881ea0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T21:36:14.701Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/129518-omit-compaction-thinking",
+        "head_sha": "a0658c572070eb98f18f117ec255e05765881ea0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
