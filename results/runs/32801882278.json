@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128971",
+  "mode": "autonomous",
+  "run_id": "32801882278",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32801882278",
+  "head_sha": "ed20a56037dc7e1141140513e0307df69f0d394a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128971.md",
+  "published_at": "2026-08-25T02:47:17.499Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128971",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128971",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before code changes: current main contains the reported terminal-release ordering, but the mandatory sibling ../codex checkout is absent and this read-only environment cannot clone it. Focused test execution is also blocked by missing tsx; dependency installation cannot run in the read-only checkout.",
+  "actions": [
+    {
+      "target": "#128971",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128971",
+      "candidate_fix": null,
+      "reason": "Do not alter Codex-specific behavior or claim proof sufficiency without the mandatory direct ../codex source check; dependency installation is additionally unavailable."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128971",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128971",
+      "candidate_fix": null,
+      "reason": "A valid implementation artifact cannot be made executable until direct Codex source inspection and local dependency installation are possible."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a readable sibling ../codex checkout (or a writable environment that can clone it) and a writable dependency-capable OpenClaw checkout; then rerun this single-cluster repair."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#128971",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
