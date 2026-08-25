@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T14:13:17.242Z",
+  "updated_at": "2026-08-25T14:13:46.944Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129171:5408187917:2026-08-25T09:16:25Z:clawsweeper_needs_human",
-      "comment_id": "5408187917",
-      "comment_version_key": "5408187917:2026-08-25T09:16:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129171#issuecomment-5408187917",
-      "comment_created_at": "2026-08-25T09:16:25Z",
-      "comment_updated_at": "2026-08-25T09:16:25Z",
-      "comment_body_sha256": "204e899db44ba5c4a9d37df279a30568bca435c767e6654e6cd96626945a89c9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129171,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve complete shared-alias boundary enforcement (P2)** - The previous test compared the whole map to the curated boundary contract. This loop now accepts any alias whose target starts with ../dist, ../packag...; Review finding: [P2] Preserve complete shared-alias boundary enforcement — src/plugins/contracts/extension-package-project-boundaries.test.ts:180-184 - [low] Alias-policy guard no... (sha=342ef60a9ff11218b18fa00f0c3290bb3f3d987c)",
-      "expected_head_sha": "342ef60a9ff11218b18fa00f0c3290bb3f3d987c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T09:19:18.770Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cleanup20k-extension-boundary-contract-20260825",
-        "head_sha": "342ef60a9ff11218b18fa00f0c3290bb3f3d987c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129172:5408208252:2026-08-25T09:17:56Z:clawsweeper_auto_repair",
       "comment_id": "5408208252",
@@ -32242,6 +32209,53 @@
         "kind": "pull_request",
         "branch": "codex/repair-native-anthropic-availability-main",
         "head_sha": "5c96c4726a296cbe99e471abd8a5dc42b4912f67",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:108461:5411674498:2026-08-25T14:12:23Z:re_review",
+      "comment_id": "5411674498",
+      "comment_version_key": "5411674498:2026-08-25T14:12:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/108461#issuecomment-5411674498",
+      "comment_created_at": "2026-08-25T14:12:23Z",
+      "comment_updated_at": "2026-08-25T14:12:23Z",
+      "comment_body_sha256": "8f590f67768567473a2a0a67dc82610f77f26d7eadd2ccc81ec62c1328a52849",
+      "repo": "openclaw/openclaw",
+      "issue_number": 108461,
+      "author": "snotty",
+      "author_id": 5853861,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T14:13:43.414Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/responses-completed-flush-tool-calls",
+        "head_sha": "15ae7b05e352d5fdde9471fe7480d3fe14dd8450",
         "cluster_id": null,
         "job_path": null
       },
