@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-25T07:22:55.696Z",
+  "updated_at": "2026-08-25T07:23:00.636Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabpot:283:5194849316:2026-08-05T17:05:22Z:automerge",
-      "comment_id": "5194849316",
-      "comment_version_key": "5194849316:2026-08-05T17:05:22Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/283#issuecomment-5194849316",
-      "comment_created_at": "2026-08-05T17:05:22Z",
-      "comment_updated_at": "2026-08-05T17:05:22Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/crabpot",
-      "issue_number": 283,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T03:09:16.412Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "0cb363fdae97a06cc91f96525529cb3907ae20ad",
-        "cluster_id": "automerge-openclaw-crabpot-283",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabpot-283.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128790:5398697840:2026-08-25T03:05:41Z:clawsweeper_needs_human",
       "comment_id": "5398697840",
@@ -30617,6 +30564,39 @@
         "kind": "pull_request",
         "branch": "codex/land-aug23-plugin-fixture-cleanup",
         "head_sha": "e039e63c41cf4a0aabd1e78613c486e8e71f9075",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129035:5406400169:2026-08-25T07:19:10Z:clawsweeper_needs_human",
+      "comment_id": "5406400169",
+      "comment_version_key": "5406400169:2026-08-25T07:19:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129035#issuecomment-5406400169",
+      "comment_created_at": "2026-08-25T06:23:47Z",
+      "comment_updated_at": "2026-08-25T07:19:10Z",
+      "comment_body_sha256": "d8d2f6474a74be249e0264d4f439b29d4751a2bf777f9cec799df0563d58f9d0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129035,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Share the tar preflight deadline with extraction (P2)** - readTarSymlinks starts a full ten-minute timer, then extractArchive starts another full ten-minute timeout. A slow archive can therefore hold the managed...; Review finding: [P2] Share the tar preflight deadline with extraction — extensions/llama-cpp/src/llama-server-extract.ts:141-147 - [medium] Verify the shared archive filtering con... (sha=8745dcae70f3c7035adc0c5873ad59e09b0004c8)",
+      "expected_head_sha": "8745dcae70f3c7035adc0c5873ad59e09b0004c8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T07:23:00.636Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-976",
+        "head_sha": "8745dcae70f3c7035adc0c5873ad59e09b0004c8",
         "cluster_id": null,
         "job_path": null
       }
