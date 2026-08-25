@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T08:11:17.746Z",
+  "updated_at": "2026-08-25T08:11:26.431Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128504:5405354020:2026-08-25T04:46:23Z:re_review",
-      "comment_id": "5405354020",
-      "comment_version_key": "5405354020:2026-08-25T04:46:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128504#issuecomment-5405354020",
-      "comment_created_at": "2026-08-25T04:46:23Z",
-      "comment_updated_at": "2026-08-25T04:46:23Z",
-      "comment_body_sha256": "aff9e1a4920efdae67b137b07f047beffe300d82993708fa4b1bae08864931b5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128504,
-      "author": "damilolaphillips",
-      "author_id": 257906279,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T04:47:08.433Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "kiri/barycenters-admit-security",
-        "head_sha": "5ece842045642f5ab6a61a71995f8e36e7921c9c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3516:5392108486:2026-08-25T04:42:39Z:clawsweeper_needs_human",
       "comment_id": "5392108486",
@@ -30638,6 +30591,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T08:11:17.746Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129133:5407405283:2026-08-25T08:10:17Z:clawsweeper_needs_human",
+      "comment_id": "5407405283",
+      "comment_version_key": "5407405283:2026-08-25T08:10:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129133#issuecomment-5407405283",
+      "comment_created_at": "2026-08-25T08:10:17Z",
+      "comment_updated_at": "2026-08-25T08:10:17Z",
+      "comment_body_sha256": "267b0113aacf79f43fe90b1d1cc3c9744a0d494995b2dce45482b252220b8d10",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129133,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This protected draft has skipped exact-head checks; before merge, a maintainer should confirm the attached visual proof and rerun the applicable UI checks on the final head. (sha=c80f2e3054c5748d887319aee5f755eb6670fc73)",
+      "expected_head_sha": "c80f2e3054c5748d887319aee5f755eb6670fc73",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T08:11:26.431Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/debug-avatar-and-text-alignment",
+        "head_sha": "c80f2e3054c5748d887319aee5f755eb6670fc73",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
