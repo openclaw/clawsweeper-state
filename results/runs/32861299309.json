@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-129377",
+  "mode": "autonomous",
+  "run_id": "32861299309",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32861299309",
+  "head_sha": "d61664303d1bcab286362c8386cc2b5cb77e2c7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-129377.md",
+  "published_at": "2026-08-25T15:47:04.824Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/129377",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/129377",
+  "canonical_pr": null,
+  "summary": "Current main has the reported raw-activity/session-progress split, but this worker cannot implement or validate it: the required ../codex source checkout is absent in a read-only, network-restricted sandbox, and focused tests cannot load because tsx is missing. A narrow, provider-neutral fix artifact is supplied for a writable worker.",
+  "actions": [
+    {
+      "target": "#93610",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure action is valid."
+    },
+    {
+      "target": "#93965",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation is permitted for a closed PR."
+    },
+    {
+      "target": "#129377",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#129377",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked until a writable worker can inspect required ../codex source and install the missing test dependency."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-129377",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#129377",
+      "candidate_fix": null,
+      "reason": "Artifact is ready, but this sandbox cannot make or validate the branch changes."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#129377",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
