@@ -1,0 +1,87 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125838",
+  "mode": "autonomous",
+  "run_id": "32796014041",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32796014041",
+  "head_sha": "ed20a56037dc7e1141140513e0307df69f0d394a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125838.md",
+  "published_at": "2026-08-25T01:43:26.426Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125838",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125838",
+  "canonical_pr": null,
+  "summary": "#125838 remains the canonical open bug. Current main still routes authorized external text slash commands through the busy reply-operation path; a narrow shared fast-path repair is identified, but this worker cannot edit the read-only checkout or inspect the required sibling ../codex source (it is absent).",
+  "actions": [
+    {
+      "target": "#125838",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125838",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only checkout and unavailable mandatory Codex sibling source; no maintainer product decision is unresolved."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125838",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125838",
+      "candidate_fix": null,
+      "reason": "Executable narrow repair plan prepared for an environment with writable checkout and ../codex available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#125838",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
