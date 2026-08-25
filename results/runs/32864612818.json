@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-129349",
+  "mode": "autonomous",
+  "run_id": "32864612818",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32864612818",
+  "head_sha": "d61664303d1bcab286362c8386cc2b5cb77e2c7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-129349.md",
+  "published_at": "2026-08-25T15:30:19.790Z",
+  "canonical": "#129349",
+  "canonical_issue": "#129349",
+  "canonical_pr": null,
+  "summary": "Current main contains the reported shared-parser behavior, but this run cannot safely materialize or validate a repair: the mandatory ../codex checkout is absent and cannot be cloned in the read-only environment, and dependencies cannot be installed. A narrow, branch-ready repair artifact is provided for a writable rerun.",
+  "actions": [
+    {
+      "target": "#129349",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#129349",
+      "candidate_fix": null,
+      "reason": "A writable rerun with ../codex available is required before any code change or proof claim."
+    },
+    {
+      "target": "#129360",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#129349",
+      "candidate_fix": "#129360",
+      "reason": "Keep the contributor PR open; do not merge, supersede, or close it from this lane."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

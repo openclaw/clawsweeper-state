@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-129349"
 mode: "autonomous"
-run_id: "32854055898"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32854055898"
+run_id: "32864612818"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32864612818"
 head_sha: "d61664303d1bcab286362c8386cc2b5cb77e2c7f"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-25T14:46:18.271Z"
-canonical: "https://github.com/openclaw/openclaw/issues/129349"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/129349"
+published_at: "2026-08-25T15:30:19.790Z"
+canonical: "#129349"
+canonical_issue: "#129349"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32854055898](https://github.com/openclaw/clawsweeper/actions/runs/32854055898)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32864612818](https://github.com/openclaw/clawsweeper/actions/runs/32864612818)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/129349
+Canonical: #129349
 
 ## Summary
 
-Current main reproduces the parser defect at extensions/line/src/card-command.ts:64: unconditional comma splitting truncates URI actions before both /card action and /card buttons consume the shared parser. A narrow two-file repair is planned; this worker cannot edit or validate because the checkout is read-only and Corepack cannot initialize its cache.
+Current main contains the reported shared-parser behavior, but this run cannot safely materialize or validate a repair: the mandatory ../codex checkout is absent and cannot be cloned in the read-only environment, and dependencies cannot be installed. A narrow, branch-ready repair artifact is provided for a writable rerun.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main reproduces the parser defect at extensions/line/src/card-command.ts
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #129349 | fix_needed | blocked | canonical | Implementation is appropriate and narrowly scoped, but this worker cannot modify the branch or run the focused test in the supplied read-only checkout. |
-| cluster:issue-openclaw-openclaw-129349 | build_fix_artifact | planned | canonical | Executor should create or update the requested ClawSweeper branch after restoring a writable checkout and dependencies. |
+| #129349 | build_fix_artifact | blocked | canonical | A writable rerun with ../codex available is required before any code change or proof claim. |
+| #129360 | keep_related | planned | related | Keep the contributor PR open; do not merge, supersede, or close it from this lane. |
 
 ## Needs Human
 
