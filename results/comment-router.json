@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T10:20:11.647Z",
+  "updated_at": "2026-08-25T10:20:43.881Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127778:5406004947:2026-08-25T05:33:10Z:re_review",
-      "comment_id": "5406004947",
-      "comment_version_key": "5406004947:2026-08-25T05:33:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127778#issuecomment-5406004947",
-      "comment_created_at": "2026-08-25T05:33:10Z",
-      "comment_updated_at": "2026-08-25T05:33:10Z",
-      "comment_body_sha256": "1d2d4c30853e547f1a5686666fccfd954a10f75057955e44d57b492529876e5d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127778,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T05:33:54.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/codex-desktop-generation",
-        "head_sha": "89906f686f2211af94349939d30d6ae6182f9903",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117351:5151158895:2026-08-25T05:35:42Z:clawsweeper_needs_human",
       "comment_id": "5151158895",
@@ -32355,6 +32308,39 @@
         "kind": "pull_request",
         "branch": "oc-4af/provider-usage-auth-store",
         "head_sha": "171dc0998364ec23f3c0ead034cc2b8ff5c877b1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129226:5409003364:2026-08-25T10:19:40Z:clawsweeper_needs_human",
+      "comment_id": "5409003364",
+      "comment_version_key": "5409003364:2026-08-25T10:19:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129226#issuecomment-5409003364",
+      "comment_created_at": "2026-08-25T10:19:40Z",
+      "comment_updated_at": "2026-08-25T10:19:40Z",
+      "comment_body_sha256": "2e98098b4f82aef8f68dad596c0ec833f68bea913146e3f2cce0907d2ebc10b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129226,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Separate the Windows mode reference from prior manifests (P1)** - This reference is appended on every remote platform, but the manifest script treats it as a normal prior manifest and re-adds all of its entries...; Review finding: [P1] Separate the Windows mode reference from prior manifests — src/gateway/worker-environments/node-worker-tunnel.ts:337 - [P3] Remove the release-owned changelog... (sha=c79068b2ce79ebce8118b77668e6f46bfad1cb88)",
+      "expected_head_sha": "c79068b2ce79ebce8118b77668e6f46bfad1cb88",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T10:20:43.881Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cloud-worker-windows-executable-modes",
+        "head_sha": "73388c68e857893507d94941abe3bd5f71149c10",
         "cluster_id": null,
         "job_path": null
       }
