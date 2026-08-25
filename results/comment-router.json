@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:49:46.990Z",
+  "updated_at": "2026-08-25T23:49:48.897Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129419:5413380442:2026-08-25T17:21:31Z:clawsweeper_auto_repair",
-      "comment_id": "5413380442",
-      "comment_version_key": "5413380442:2026-08-25T17:21:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129419#issuecomment-5413380442",
-      "comment_created_at": "2026-08-25T16:19:31Z",
-      "comment_updated_at": "2026-08-25T17:21:31Z",
-      "comment_body_sha256": "d4964c0a75fa67b75c68f0e22ca4c429bfc275da864381a31ae64b6a1fc9e3b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129419,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=292ffc07466ecc25db696a0842e654b9b8dce6ba)",
-      "expected_head_sha": "292ffc07466ecc25db696a0842e654b9b8dce6ba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T17:23:53.445Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-plugin-entry-replacement-alignment-20260825",
-        "head_sha": "292ffc07466ecc25db696a0842e654b9b8dce6ba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3529:5412904154:2026-08-25T17:15:19Z:clawsweeper_auto_repair",
       "comment_id": "5412904154",
@@ -32930,6 +32897,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126457:5348830579:2026-08-25T23:43:54Z:clawsweeper_needs_human",
+      "comment_id": "5348830579",
+      "comment_version_key": "5348830579:2026-08-25T23:43:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126457#issuecomment-5348830579",
+      "comment_created_at": "2026-08-19T22:37:28Z",
+      "comment_updated_at": "2026-08-25T23:43:54Z",
+      "comment_body_sha256": "88a8a511a81e3bdc70a9473a6d90bd10da44b811721b3af8d46d5816d4dc4feb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Unreadable or legacy LaunchAgent metadata now causes immediate restart shutdown; that is safer for an unknown shorter supervisor deadline but can interrupt active work. (sha=b7ee2d698706a109372fabdfbdd9ea80dc013091)",
+      "expected_head_sha": "b7ee2d698706a109372fabdfbdd9ea80dc013091",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T23:49:48.897Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/launchd-tailscale-owner-lifecycle",
+        "head_sha": "b7ee2d698706a109372fabdfbdd9ea80dc013091",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
