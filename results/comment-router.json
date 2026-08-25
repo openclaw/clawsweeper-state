@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T09:49:36.455Z",
+  "updated_at": "2026-08-25T09:49:39.157Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1242:5404506811:2026-08-25T05:20:30Z:clawsweeper_needs_human",
-      "comment_id": "5404506811",
-      "comment_version_key": "5404506811:2026-08-25T05:20:30Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1242#issuecomment-5404506811",
-      "comment_created_at": "2026-08-25T03:02:55Z",
-      "comment_updated_at": "2026-08-25T05:20:30Z",
-      "comment_body_sha256": "e7e2296e4ba0cb9100e5901dfa22583368435637e4a0faae48c71b5c8d2af760",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1242,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Projected reads will make unconditional GitHub API responses rather than reusable 304 validations, so maintainers should accept the bounded REST-quota trade-off and observe apply-lane... (sha=c6c0908b99ff824a0a83abe922e0b4a7c136b1a4)",
-      "expected_head_sha": "c6c0908b99ff824a0a83abe922e0b4a7c136b1a4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T05:32:47.206Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/etag-projected-read-bypass",
-        "head_sha": "c6c0908b99ff824a0a83abe922e0b4a7c136b1a4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119298:5183483965:2026-08-25T05:27:40Z:clawsweeper_needs_human",
       "comment_id": "5183483965",
@@ -31822,6 +31789,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129211:5408608149:2026-08-25T09:48:59Z:clawsweeper_needs_human",
+      "comment_id": "5408608149",
+      "comment_version_key": "5408608149:2026-08-25T09:48:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129211#issuecomment-5408608149",
+      "comment_created_at": "2026-08-25T09:48:59Z",
+      "comment_updated_at": "2026-08-25T09:48:59Z",
+      "comment_body_sha256": "d181e6d4940daa5a784c8d45df58b8ff1c517702b600a5683770a5ce246a1514",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129211,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restrict ambient API-key import to a trusted provider set (P1)** - This excludes workspace manifests but still accepts any enabled installed non-bundled plugin. Such a plugin can mark a provider as app-guided, n...; Review finding: [P1] Restrict ambient API-key import to a trusted provider set — src/commands/daemon-install-helpers.ts:240-264 - [high] Enabled external manifests can select pers... (sha=fd7f8652611b9f03627f7c76185b13e1ca5f3d83)",
+      "expected_head_sha": "fd7f8652611b9f03627f7c76185b13e1ca5f3d83",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T09:49:39.157Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/linux-tauri-onboarding-parity",
+        "head_sha": "fd7f8652611b9f03627f7c76185b13e1ca5f3d83",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
