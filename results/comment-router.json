@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:52:17.286Z",
+  "updated_at": "2026-08-25T23:52:22.428Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125479:5414285206:2026-08-25T17:36:47Z:re_review",
-      "comment_id": "5414285206",
-      "comment_version_key": "5414285206:2026-08-25T17:36:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125479#issuecomment-5414285206",
-      "comment_created_at": "2026-08-25T17:36:47Z",
-      "comment_updated_at": "2026-08-25T17:36:47Z",
-      "comment_body_sha256": "d1a8a9febdeaeecb6b6e31612c90539d58ca1d0db7937567adc093d9970b585c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125479,
-      "author": "wakqasahmed",
-      "author_id": 4486133,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T17:37:37.921Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-125333-total-tokens-inflation",
-        "head_sha": "9e08aa0e5920184cacc3c72977cad097f57f10cf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127126:5414295706:2026-08-25T17:37:44Z:re_review",
-      "comment_id": "5414295706",
-      "comment_version_key": "5414295706:2026-08-25T17:37:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127126#issuecomment-5414295706",
-      "comment_created_at": "2026-08-25T17:37:44Z",
-      "comment_updated_at": "2026-08-25T17:37:44Z",
-      "comment_body_sha256": "e835c4521a7ea1a1a5065c6a4ebcd68c985c4634acb98fb2410a5ec22fb233b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127126,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T17:38:52.824Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-plugin-allowlist-warning-cache",
-        "head_sha": "1c5a1b8be8627f2ef5c93a6b156aed7cf6e47c58",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128995:5413969659:2026-08-25T17:09:12Z:re_review",
       "comment_id": "5413969659",
@@ -32781,6 +32687,39 @@
       }
     },
     {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120014:5211012925:2026-08-25T23:44:02Z:clawsweeper_needs_human",
+      "comment_id": "5211012925",
+      "comment_version_key": "5211012925:2026-08-25T23:44:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120014#issuecomment-5211012925",
+      "comment_created_at": "2026-08-07T01:35:56Z",
+      "comment_updated_at": "2026-08-25T23:44:02Z",
+      "comment_body_sha256": "9df4ddb6e24ed7ae1a1b1b145fb0b2ad4c0f376062b391baa8abf7f0fc9a6039",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120014,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head CI matrix is still queued or running, so merge readiness remains unproven despite no source-level finding. (sha=62a9e342348250fde12761b24f30af73858eddfd)",
+      "expected_head_sha": "62a9e342348250fde12761b24f30af73858eddfd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T23:52:03.008Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/knip-dlx-layout-isolation-20260806",
+        "head_sha": "62a9e342348250fde12761b24f30af73858eddfd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129444:5414517903:2026-08-25T23:46:28Z:clawsweeper_needs_human",
       "comment_id": "5414517903",
       "comment_version_key": "5414517903:2026-08-25T23:46:28Z",
@@ -32952,6 +32891,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/poltergeist:210:5398612199:2026-08-25T23:51:28Z:clawsweeper_auto_repair",
+      "comment_id": "5398612199",
+      "comment_version_key": "5398612199:2026-08-25T23:51:28Z",
+      "comment_url": "https://github.com/steipete/poltergeist/pull/210#issuecomment-5398612199",
+      "comment_created_at": "2026-08-24T17:04:30Z",
+      "comment_updated_at": "2026-08-25T23:51:28Z",
+      "comment_body_sha256": "2c052012c221662d3ce52342cb4c646a73683badbeca73d755ae59f70ac53787",
+      "repo": "steipete/poltergeist",
+      "issue_number": 210,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=4e5e10134a34937e0fc078aa0ff1cf20b73ff2a8)",
+      "expected_head_sha": "4e5e10134a34937e0fc078aa0ff1cf20b73ff2a8",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-25T23:52:22.428Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-reload-stale-builder",
+        "head_sha": "4e5e10134a34937e0fc078aa0ff1cf20b73ff2a8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
