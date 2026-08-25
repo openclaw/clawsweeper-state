@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T22:30:19.444Z",
+  "updated_at": "2026-08-25T22:30:46.592Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125857:5330016242:2026-08-25T15:21:53Z:clawsweeper_auto_repair",
-      "comment_id": "5330016242",
-      "comment_version_key": "5330016242:2026-08-25T15:21:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125857#issuecomment-5330016242",
-      "comment_created_at": "2026-08-18T14:59:32Z",
-      "comment_updated_at": "2026-08-25T15:21:53Z",
-      "comment_body_sha256": "7177a9456f0a4e067a535eff79a497069b7d53809f920dc9dad54b3afc412723",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125857,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3d2f8259508500b2ebcbc15d96cc131da7e3c32e)",
-      "expected_head_sha": "3d2f8259508500b2ebcbc15d96cc131da7e3c32e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T15:26:18.251Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pr/8-cron-json-parse-v2",
-        "head_sha": "3d2f8259508500b2ebcbc15d96cc131da7e3c32e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128223:5386159713:2026-08-25T14:13:32Z:clawsweeper_needs_human",
       "comment_id": "5386159713",
@@ -32877,6 +32844,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129315:5410417977:2026-08-25T22:29:44Z:clawsweeper_needs_human",
+      "comment_id": "5410417977",
+      "comment_version_key": "5410417977:2026-08-25T22:29:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129315#issuecomment-5410417977",
+      "comment_created_at": "2026-08-25T12:32:30Z",
+      "comment_updated_at": "2026-08-25T22:29:44Z",
+      "comment_body_sha256": "715640506b7c82993b517504e2b34e7466553f07b641d3bf04b70b536f4633ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129315,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify Codex Action v1.12 before passing it OpenAI credentials (P1)** - This changed revision executes in a workflow that supplies openai-api-key. The required direct v1.12 manifest/runtime inspection is still u...; Review finding: [P1] Verify Codex Action v1.12 before passing it OpenAI credentials — .github/workflows/mantis-telegram-desktop-proof.yml:266-269 - [high] Unverified action revisi... (sha=35b60d5580afd2da3736c51d3b3c6f4c789f212a)",
+      "expected_head_sha": "35b60d5580afd2da3736c51d3b3c6f4c789f212a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T22:30:46.592Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-f2d04ee7a0",
+        "head_sha": "35b60d5580afd2da3736c51d3b3c6f4c789f212a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
