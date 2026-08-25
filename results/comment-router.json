@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T05:33:20.743Z",
+  "updated_at": "2026-08-25T05:33:26.196Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126496:5373978466:2026-08-21T18:52:39Z:re_review",
-      "comment_id": "5373978466",
-      "comment_version_key": "5373978466:2026-08-21T18:52:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126496#issuecomment-5373978466",
-      "comment_created_at": "2026-08-21T18:52:39Z",
-      "comment_updated_at": "2026-08-21T18:52:39Z",
-      "comment_body_sha256": "3fa9f0e5d9b71091316a05aaa819aab728faa58bb09c1cf9f1a69ab05f8c832c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126496,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T02:00:41.283Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126496:5373990022:2026-08-21T18:53:51Z:re_review",
       "comment_id": "5373990022",
@@ -30025,6 +29998,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T05:33:20.743Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127076:5366516383:2026-08-25T05:27:09Z:clawsweeper_needs_human",
+      "comment_id": "5366516383",
+      "comment_version_key": "5366516383:2026-08-25T05:27:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127076#issuecomment-5366516383",
+      "comment_created_at": "2026-08-21T07:20:03Z",
+      "comment_updated_at": "2026-08-25T05:27:09Z",
+      "comment_body_sha256": "8572021764ae861bb7f158768ed29a01f9ddbfdcb9995579d8aba69d8808170f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127076,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep external documents out of the sidebar iframe (P1)** - safeAttachmentHref accepts arbitrary http:/https: URLs for downloads, and this new branch immediately assigns those URLs to an iframe for text, JSON, an...; Review finding: [P1] Keep external documents out of the sidebar iframe — ui/src/pages/chat/components/chat-sidebar-content.ts:92-97 - [high] Remote document sidebar preview — ui/s... (sha=b7aa088719a3c9041c107012d7bc8e4b680f8c13)",
+      "expected_head_sha": "b7aa088719a3c9041c107012d7bc8e4b680f8c13",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T05:33:26.196Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/chat-attachment-kinds",
+        "head_sha": "b7aa088719a3c9041c107012d7bc8e4b680f8c13",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
