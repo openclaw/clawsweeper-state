@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T22:32:58.891Z",
+  "updated_at": "2026-08-25T22:33:01.043Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128692:5394618724:2026-08-25T14:55:59Z:clawsweeper_needs_human",
-      "comment_id": "5394618724",
-      "comment_version_key": "5394618724:2026-08-25T14:55:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128692#issuecomment-5394618724",
-      "comment_created_at": "2026-08-24T11:34:29Z",
-      "comment_updated_at": "2026-08-25T14:55:59Z",
-      "comment_body_sha256": "1ef11a666fdd48b98ce743b23ffa10682a250cea86461fbfabf4de182ae2d3ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128692,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The controlled fixture does not launch an actual Chrome MCP subprocess or validate cleanup against a real existing Chrome session; the PR body explicitly records this gap. (sha=a56362072be8182c0ac8902691c636da3085c44b)",
-      "expected_head_sha": "a56362072be8182c0ac8902691c636da3085c44b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T15:26:18.251Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/browser-status-process-scan-20260824",
-        "head_sha": "a56362072be8182c0ac8902691c636da3085c44b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128694:5394668855:2026-08-25T15:20:33Z:clawsweeper_auto_repair",
       "comment_id": "5394668855",
@@ -32891,6 +32858,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129517:5417738911:2026-08-25T22:31:42Z:clawsweeper_needs_human",
+      "comment_id": "5417738911",
+      "comment_version_key": "5417738911:2026-08-25T22:31:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129517#issuecomment-5417738911",
+      "comment_created_at": "2026-08-25T22:31:42Z",
+      "comment_updated_at": "2026-08-25T22:31:42Z",
+      "comment_body_sha256": "dd82baa5d1d0fdd90b6bb7cd34cfedfb3b90252d11d6e164a645f27f59921f96",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129517,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The +13 production lines add a shared logical-connection fact and alter session-list lifetime; a misclassified connection change could briefly retain stale sidebar rows or clear valid... (sha=148954390772377732949594891da24be3956ea2)",
+      "expected_head_sha": "148954390772377732949594891da24be3956ea2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T22:33:01.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pinned-sidebar-reconnect",
+        "head_sha": "148954390772377732949594891da24be3956ea2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
