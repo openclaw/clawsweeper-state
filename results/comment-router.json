@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T06:57:40.437Z",
+  "updated_at": "2026-08-25T06:58:22.468Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:50:5335183047:2026-08-25T02:28:02Z:clawsweeper_needs_human",
-      "comment_id": "5335183047",
-      "comment_version_key": "5335183047:2026-08-25T02:28:02Z",
-      "comment_url": "https://github.com/openclaw/libterminal/pull/50#issuecomment-5335183047",
-      "comment_created_at": "2026-08-18T22:57:57Z",
-      "comment_updated_at": "2026-08-25T02:28:02Z",
-      "comment_body_sha256": "e610a7f33ebe8961315b9d056f6a6106a1cc985846d4f20a25ba8913499ae027",
-      "repo": "openclaw/libterminal",
-      "issue_number": 50,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required autoreview helper could not construct a safe diff bundle in this grafted checkout; a base-aware run from a normal clone remains the only merge-readiness gap. (sha=fe65af2e4e4a30122a5ec32df8c2769fe8122f56)",
-      "expected_head_sha": "fe65af2e4e4a30122a5ec32df8c2769fe8122f56",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T02:31:02.981Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/attach-stdio-stdin-error",
-        "head_sha": "fe65af2e4e4a30122a5ec32df8c2769fe8122f56",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:77:5373942560:2026-08-25T02:17:04Z:clawsweeper_needs_human",
       "comment_id": "5373942560",
@@ -30626,6 +30593,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128479:5406688936:2026-08-25T06:57:40Z:re_review",
+      "comment_id": "5406688936",
+      "comment_version_key": "5406688936:2026-08-25T06:57:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128479#issuecomment-5406688936",
+      "comment_created_at": "2026-08-25T06:57:40Z",
+      "comment_updated_at": "2026-08-25T06:57:40Z",
+      "comment_body_sha256": "26c2aa46927c3602f3a4431752c0321e278dd7193e9a674541f3217f6099bff9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128479,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T06:58:20.751Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-matrix-blank-media-fallback",
+        "head_sha": "6b04c79e5f03c9ca9a1b5aa0e5b0f4b4c0b31714",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
