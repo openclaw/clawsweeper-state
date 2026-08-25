@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T14:17:48.355Z",
+  "updated_at": "2026-08-25T14:18:06.427Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129092:5407038431:2026-08-25T09:29:30Z:clawsweeper_needs_human",
-      "comment_id": "5407038431",
-      "comment_version_key": "5407038431:2026-08-25T09:29:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129092#issuecomment-5407038431",
-      "comment_created_at": "2026-08-25T07:33:22Z",
-      "comment_updated_at": "2026-08-25T09:29:30Z",
-      "comment_body_sha256": "025a9e77a5abac833495e62f4cb7650dd411315003c7d4cdc6995a50e9587c51",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129092,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Revalidate CLI admission before enqueueing routing work (P1)** - Both sites enqueue a routing receipt after await admitPreparedParams without checking that the exact admitted run is still active. The later FIFO/...; Review finding: [P1] Revalidate CLI admission before enqueueing routing work — src/agents/cli-runner/prepare.ts:1840-1854 - [medium] Fence stale CLI routing receipts — src/agents/... (sha=548d3405f98acf27c8f2d671c57f17b4e3f47c3c)",
-      "expected_head_sha": "548d3405f98acf27c8f2d671c57f17b4e3f47c3c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T09:30:51.672Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-model-credential-selection",
-        "head_sha": "548d3405f98acf27c8f2d671c57f17b4e3f47c3c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129052:5406533257:2026-08-25T09:25:34Z:clawsweeper_auto_repair",
       "comment_id": "5406533257",
@@ -32310,6 +32277,53 @@
         "kind": "pull_request",
         "branch": "codex/agent-id-p0-model-credential-selection",
         "head_sha": "c465155ae6b6cbcab130e054afc51c7058c457f9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129346:5411748811:2026-08-25T14:17:16Z:re_review",
+      "comment_id": "5411748811",
+      "comment_version_key": "5411748811:2026-08-25T14:17:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129346#issuecomment-5411748811",
+      "comment_created_at": "2026-08-25T14:17:16Z",
+      "comment_updated_at": "2026-08-25T14:17:16Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129346,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T14:18:03.652Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/repair-native-anthropic-availability-main",
+        "head_sha": "4e81535dc7b2491057d0b11ef45f807ca4745ce5",
         "cluster_id": null,
         "job_path": null
       },
