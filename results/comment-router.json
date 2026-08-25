@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-25T21:57:44.105Z",
+  "updated_at": "2026-08-25T21:57:40.020Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3514:5390207954:2026-08-25T15:03:01Z:clawsweeper_needs_human",
+      "comment_id": "5390207954",
+      "comment_version_key": "5390207954:2026-08-25T15:03:01Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3514#issuecomment-5390207954",
+      "comment_created_at": "2026-08-24T03:02:14Z",
+      "comment_updated_at": "2026-08-25T15:03:01Z",
+      "comment_body_sha256": "80889e0ae8f9b7f07cac6e8fa106453ed8a53d99509bfb4dcdf10023d845ae29",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3514,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The staged signal indexes must finish backfilling before the downstream workflow queries them; otherwise the later deployment cannot use those indexes. (sha=4f29d8e3ccc2f5cd86473c887ebdebb2039bbc01)",
+      "expected_head_sha": "4f29d8e3ccc2f5cd86473c887ebdebb2039bbc01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T15:10:58.127Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/stage-signal-workflow-indexes",
+        "head_sha": "4f29d8e3ccc2f5cd86473c887ebdebb2039bbc01",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123356:5287474810:2026-08-25T15:05:50Z:clawsweeper_auto_repair",
       "comment_id": "5287474810",
@@ -32774,53 +32807,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129619:5417357808:2026-08-25T21:57:00Z:re_review",
-      "comment_id": "5417357808",
-      "comment_version_key": "5417357808:2026-08-25T21:57:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129619#issuecomment-5417357808",
-      "comment_created_at": "2026-08-25T21:57:00Z",
-      "comment_updated_at": "2026-08-25T21:57:00Z",
-      "comment_body_sha256": "fd704538f19a1e085a503304b6435cb3850109dc295a8b60d089441ccc7bd2a4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129619,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T21:57:42.329Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gateway-response-terminal-stages",
-        "head_sha": "fad873c8731fa62cc17ba31027f8589c57c6d8ef",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
