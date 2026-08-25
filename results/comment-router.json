@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:59:01.532Z",
+  "updated_at": "2026-08-25T23:59:01.668Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129402:5414309843:2026-08-25T17:39:00Z:re_review",
-      "comment_id": "5414309843",
-      "comment_version_key": "5414309843:2026-08-25T17:39:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129402#issuecomment-5414309843",
-      "comment_created_at": "2026-08-25T17:39:00Z",
-      "comment_updated_at": "2026-08-25T17:39:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129402,
-      "author": "ashawwal",
-      "author_id": 62305104,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T17:39:48.100Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-authenticated-hook-context",
-        "head_sha": "97914d545d7678ff6127d67151ce08efc18811c2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129427:5414291378:2026-08-25T17:37:20Z:clawsweeper_needs_human",
       "comment_id": "5414291378",
@@ -32933,6 +32886,39 @@
         "kind": "pull_request",
         "branch": "fix/129377-stream-session-progress",
         "head_sha": "ae2f2296160dba3b92bb9a4b1b042f46f96629ab",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129670:5418409324:2026-08-25T23:58:21Z:clawsweeper_needs_human",
+      "comment_id": "5418409324",
+      "comment_version_key": "5418409324:2026-08-25T23:58:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129670#issuecomment-5418409324",
+      "comment_created_at": "2026-08-25T23:33:19Z",
+      "comment_updated_at": "2026-08-25T23:58:21Z",
+      "comment_body_sha256": "235f789e60e60bd6fc870a6b1165e1c7fb6c7054fed25decc24897ebd3b77f8e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Not applicable: Authority-chain proof required: provide allowed-path and stale, revoked, and replaced-run rejection evidence before secret-store I/O.; Review finding: [P1] Keep agent-requested credentials out of env readback — src/agents/tools/secrets-tool.ts:164-165 - [P1] Gate store-bound questions from incompatible clients —... (sha=4357c63dcbed2c24d25f137aa558809390335a4e)",
+      "expected_head_sha": "4357c63dcbed2c24d25f137aa558809390335a4e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T23:59:01.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/agent-api-key-storage-41f09e",
+        "head_sha": "4357c63dcbed2c24d25f137aa558809390335a4e",
         "cluster_id": null,
         "job_path": null
       }
