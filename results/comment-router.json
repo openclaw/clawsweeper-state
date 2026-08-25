@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T20:44:22.932Z",
+  "updated_at": "2026-08-25T20:45:55.990Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129348:5411763472:2026-08-25T14:18:13Z:re_review",
-      "comment_id": "5411763472",
-      "comment_version_key": "5411763472:2026-08-25T14:18:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129348#issuecomment-5411763472",
-      "comment_created_at": "2026-08-25T14:18:13Z",
-      "comment_updated_at": "2026-08-25T14:18:13Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129348,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T14:19:05.412Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/push-notifications-for-permission-requests",
-        "head_sha": "156577c7547df94a965d03a1932de7ddbab61707",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/mcporter:332:5411797129:2026-08-25T14:20:22Z:re_review",
       "comment_id": "5411797129",
@@ -32280,6 +32233,39 @@
         "kind": "pull_request",
         "branch": "fix/redirect-hop-limit",
         "head_sha": "8c45e1b347a4d7524f7b6ce2f47a5f457178d536",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1240:5403433718:2026-08-25T20:45:14Z:clawsweeper_needs_human",
+      "comment_id": "5403433718",
+      "comment_version_key": "5403433718:2026-08-25T20:45:14Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1240#issuecomment-5403433718",
+      "comment_created_at": "2026-08-25T00:43:50Z",
+      "comment_updated_at": "2026-08-25T20:45:14Z",
+      "comment_body_sha256": "8964cd3168952f102ee2ddbdd6cc050a3df4cc54ee9bc16dec4f68116fdba00f",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1240,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Protect pre-existing proof-injection files (P2)** - This redirection overwrites dashboard/proof-entry-do-error.ts; the later config redirection does the same for dashboard/wrangler.proof.toml, and cleanup delete...; Review finding: [P2] Protect pre-existing proof-injection files — docs/proof/exact-review-do-json-errors/run-proof.sh:42 - [medium] Proof runner clobbers fixed local paths — docs/... (sha=b59d320b47fc98320d88ee52a1fe137965dd972b)",
+      "expected_head_sha": "b59d320b47fc98320d88ee52a1fe137965dd972b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T20:45:55.990Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exact-review-do-json-errors",
+        "head_sha": "b59d320b47fc98320d88ee52a1fe137965dd972b",
         "cluster_id": null,
         "job_path": null
       }
