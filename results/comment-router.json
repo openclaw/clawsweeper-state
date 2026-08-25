@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T04:36:31.864Z",
+  "updated_at": "2026-08-25T04:36:34.840Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112214:5280374244:2026-08-13T12:25:54Z:re_review",
-      "comment_id": "5280374244",
-      "comment_version_key": "5280374244:2026-08-13T12:25:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112214#issuecomment-5280374244",
-      "comment_created_at": "2026-08-13T12:25:54Z",
-      "comment_updated_at": "2026-08-13T12:25:54Z",
-      "comment_body_sha256": "8efe092f6f32b8e3af6cf06275594933ac7ace3cdae6382888a6d9fb1d7c9b00",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112214,
-      "author": "AdrianIp0204",
-      "author_id": 255652477,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T00:29:36.987Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112214:5280463131:2026-08-13T12:33:59Z:re_review",
       "comment_id": "5280463131",
@@ -30590,6 +30563,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T04:36:31.864Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128986:5404849489:2026-08-25T04:35:20Z:clawsweeper_needs_human",
+      "comment_id": "5404849489",
+      "comment_version_key": "5404849489:2026-08-25T04:35:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128986#issuecomment-5404849489",
+      "comment_created_at": "2026-08-25T03:52:20Z",
+      "comment_updated_at": "2026-08-25T04:35:20Z",
+      "comment_body_sha256": "c1c3885bce2dfdd620304474d534369bda3863aecaffca012e0ba14dab3fec29",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128986,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally reclassifies existing creation-provenance rows with no read marker and later activity as unread; the PR discussion records acceptance of that visible session-sta... (sha=85b9923b2c74c8b4df9b6c74286e59a58b3ea88a)",
+      "expected_head_sha": "85b9923b2c74c8b4df9b6c74286e59a58b3ea88a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T04:36:34.840Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/read-and-unread-status-bug",
+        "head_sha": "85b9923b2c74c8b4df9b6c74286e59a58b3ea88a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
