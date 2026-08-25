@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T13:36:39.105Z",
+  "updated_at": "2026-08-25T13:39:09.076Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1508:5404799371:2026-08-25T03:44:15Z:re_review",
-      "comment_id": "5404799371",
-      "comment_version_key": "5404799371:2026-08-25T03:44:15Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1508#issuecomment-5404799371",
-      "comment_created_at": "2026-08-25T03:44:15Z",
-      "comment_updated_at": "2026-08-25T03:44:15Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1508,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T08:23:33.091Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabbox:1508:5404866326:2026-08-25T03:55:04Z:re_review",
       "comment_id": "5404866326",
@@ -32579,6 +32552,39 @@
       "status": "skipped",
       "processed_at": "2026-08-25T13:36:39.105Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126986:5365198371:2026-08-25T13:37:44Z:clawsweeper_needs_human",
+      "comment_id": "5365198371",
+      "comment_version_key": "5365198371:2026-08-25T13:37:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126986#issuecomment-5365198371",
+      "comment_created_at": "2026-08-21T04:27:59Z",
+      "comment_updated_at": "2026-08-25T13:37:44Z",
+      "comment_body_sha256": "7330e4425918c84e9ebb0385bdba29c517806c79727c1ba25ca62dccfd889e6c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126986,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify bridge semantics against the pinned Codex source (P1)** - The new bridge omits the bounded root because these lines assume native project discovery both loads that root and supplies the required developer...; Review finding: [P1] Verify bridge semantics against the pinned Codex source — extensions/codex/src/app-server/attempt-context.ts:266-299 - [high] Native discovery authority is un... (sha=0ba1e3502089e067573c5be8bf456787abb6668e)",
+      "expected_head_sha": "0ba1e3502089e067573c5be8bf456787abb6668e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T13:39:09.076Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-codex-bootstrap-context",
+        "head_sha": "0ba1e3502089e067573c5be8bf456787abb6668e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
