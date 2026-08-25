@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-25T13:15:32.229Z",
+  "updated_at": "2026-08-25T13:15:46.210Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5077457943:2026-07-25T07:14:15Z:re_review",
-      "comment_id": "5077457943",
-      "comment_version_key": "5077457943:2026-07-25T07:14:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5077457943",
-      "comment_created_at": "2026-07-25T07:14:15Z",
-      "comment_updated_at": "2026-07-25T07:14:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T08:01:38.540Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5131133963:2026-07-30T13:00:43Z:re_review",
       "comment_id": "5131133963",
@@ -32573,6 +32546,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129329:5410885779:2026-08-25T13:12:45Z:clawsweeper_needs_human",
+      "comment_id": "5410885779",
+      "comment_version_key": "5410885779:2026-08-25T13:12:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129329#issuecomment-5410885779",
+      "comment_created_at": "2026-08-25T13:12:45Z",
+      "comment_updated_at": "2026-08-25T13:12:45Z",
+      "comment_body_sha256": "738cbcf49e2dea66535b4514773bb65da3940595e2ff388a8c7b75639de1f96e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129329,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by eight lines for a bug fix; the explicit four-part identity/status boundary is warranted because a shorter provider-only rule would hide custom or static Claud... (sha=6f43ac6d9575e10b793955ccdd1ecafc2808d583)",
+      "expected_head_sha": "6f43ac6d9575e10b793955ccdd1ecafc2808d583",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T13:15:46.210Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/repair-aug25-broken-main-auth-health",
+        "head_sha": "6f43ac6d9575e10b793955ccdd1ecafc2808d583",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
