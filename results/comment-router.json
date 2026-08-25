@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T02:33:08.554Z",
+  "updated_at": "2026-08-25T02:34:58.015Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1513:5402608434:2026-08-24T22:56:25Z:re_review",
-      "comment_id": "5402608434",
-      "comment_version_key": "5402608434:2026-08-24T22:56:25Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1513#issuecomment-5402608434",
-      "comment_created_at": "2026-08-24T22:56:25Z",
-      "comment_updated_at": "2026-08-24T22:56:25Z",
-      "comment_body_sha256": "fba49d5d041fef7aaa91ab13efcfb0320d725a58bf6205c767dfd20986802a0f",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1513,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-24T22:57:17.132Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/machine0-transient-read-retry-20260824",
-        "head_sha": "f3b2a6834d55bbe343c5aca5516d133775002572",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:75299:5402610255:2026-08-24T22:56:38Z:re_review",
       "comment_id": "5402610255",
@@ -30390,6 +30343,39 @@
         "kind": "pull_request",
         "branch": "fix/skills-codex-invocation-policy",
         "head_sha": "893df76e42b6520b73941684e08004fe0c992909",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115882:5118252328:2026-08-25T02:29:26Z:clawsweeper_needs_human",
+      "comment_id": "5118252328",
+      "comment_version_key": "5118252328:2026-08-25T02:29:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115882#issuecomment-5118252328",
+      "comment_created_at": "2026-07-29T13:15:33Z",
+      "comment_updated_at": "2026-08-25T02:29:26Z",
+      "comment_body_sha256": "c9f8af3c8e81829e2269f450ef2486cdefe1290eb5539497221ac6825c7d8f74",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115882,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts whose action files exceed 1,000,000 bytes will now exit nonzero and must split their plans; this is intentional stdin alignment but remains a compatibility decision. (sha=31ce954b70f35c0b2d031df2d068248b745d18c5)",
+      "expected_head_sha": "31ce954b70f35c0b2d031df2d068248b745d18c5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T02:34:58.015Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/browser-actions-file-limit",
+        "head_sha": "31ce954b70f35c0b2d031df2d068248b745d18c5",
         "cluster_id": null,
         "job_path": null
       }
