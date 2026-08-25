@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/clawhub",
+  "cluster_id": "automerge-openclaw-clawhub-3528",
+  "mode": "autonomous",
+  "run_id": "32848991944",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32848991944",
+  "head_sha": "d61664303d1bcab286362c8386cc2b5cb77e2c7f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-clawhub-3528.md",
+  "published_at": "2026-08-25T12:51:42.014Z",
+  "canonical": "https://github.com/openclaw/clawhub/pull/3528",
+  "canonical_issue": "https://github.com/openclaw/clawhub/issues/3507",
+  "canonical_pr": "https://github.com/openclaw/clawhub/pull/3528",
+  "summary": "#3528 is the credited canonical repair. Its scope addresses the current-main tag-ref regression, with all repository checks passing except the external Vercel authorization gate. Repair/rebase and revalidation may proceed on @momothemage’s writable branch; final readiness is blocked on OpenClaw Foundation Vercel authorization. #3507 remains quarantined for central security handling.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/clawhub/issues/3507",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Security-sensitive issue is out of scope for repair automation."
+    },
+    {
+      "target": "https://github.com/openclaw/clawhub/pull/3528",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#3528",
+      "candidate_fix": "#3528",
+      "reason": "Rebase the writable contributor branch onto current main, preserve the focused implementation and tests, then rerun validation and review. Branch code cannot resolve the external Vercel authorization gate."
+    },
+    {
+      "target": "https://github.com/openclaw/clawhub/pull/3528",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#3528",
+      "candidate_fix": "#3528",
+      "reason": "Produce a bounded contributor-branch repair plan; no replacement PR is warranted."
+    }
+  ],
+  "action_counts": {
+    "route_security": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "An OpenClaw Foundation Vercel-team member must authorize the Vercel deployment for the exact post-rebase #3528 head after its required checks and fresh ClawSweeper review pass. This external authorization cannot be repaired in the contributor branch."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
