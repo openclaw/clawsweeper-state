@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T23:57:32.277Z",
+  "updated_at": "2026-08-25T23:57:59.492Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129407:5413900572:2026-08-25T17:03:10Z:clawsweeper_needs_human",
-      "comment_id": "5413900572",
-      "comment_version_key": "5413900572:2026-08-25T17:03:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129407#issuecomment-5413900572",
-      "comment_created_at": "2026-08-25T17:03:10Z",
-      "comment_updated_at": "2026-08-25T17:03:10Z",
-      "comment_body_sha256": "f69ea3f534b6ce79094d4392ce0bd23b1260adadd8adb6c5f5702f628b1f4669",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129407,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied context omits the body of the latest ClawSweeper comment, so any current rank-up moves must be checked before merge; the supplied check rollup is also not green on this h... (sha=83c8cca28396c26e2cb7bdc838839793bd4c64e4)",
-      "expected_head_sha": "83c8cca28396c26e2cb7bdc838839793bd4c64e4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T17:39:22.843Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-cron-script-timeout-option-20260825",
-        "head_sha": "83c8cca28396c26e2cb7bdc838839793bd4c64e4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129423:5413924479:2026-08-25T17:05:13Z:clawsweeper_needs_human",
       "comment_id": "5413924479",
@@ -32922,6 +32889,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1521:5418650210:2026-08-25T23:57:14Z:re_review",
+      "comment_id": "5418650210",
+      "comment_version_key": "5418650210:2026-08-25T23:57:14Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1521#issuecomment-5418650210",
+      "comment_created_at": "2026-08-25T23:57:14Z",
+      "comment_updated_at": "2026-08-25T23:57:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1521,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-25T23:57:52.946Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/provider-exact-claim-lifecycle",
+        "head_sha": "75e78abc7facf58a0d90f4eb22ffeda593d8c78f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
