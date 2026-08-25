@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-25T16:54:15.067Z",
+  "updated_at": "2026-08-25T16:55:05.710Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128905:5410431498:2026-08-25T12:33:43Z:re_review",
-      "comment_id": "5410431498",
-      "comment_version_key": "5410431498:2026-08-25T12:33:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128905#issuecomment-5410431498",
-      "comment_created_at": "2026-08-25T12:33:43Z",
-      "comment_updated_at": "2026-08-25T12:33:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128905,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T12:34:36.173Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/127583-sessions-cleanup-all-agents",
-        "head_sha": "c78958ab95b531e02aa1e99e70bf86b919d7d4b1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128289:5410443980:2026-08-25T12:34:51Z:re_review",
       "comment_id": "5410443980",
@@ -31947,6 +31900,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129467:5413779403:2026-08-25T16:53:32Z:clawsweeper_needs_human",
+      "comment_id": "5413779403",
+      "comment_version_key": "5413779403:2026-08-25T16:53:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129467#issuecomment-5413779403",
+      "comment_created_at": "2026-08-25T16:53:32Z",
+      "comment_updated_at": "2026-08-25T16:53:32Z",
+      "comment_body_sha256": "ee427f1ad3007f01ec8dcbf406afb97af434f8ca95cd49375c3bc0063fbede01",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129467,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Revalidate recovery inputs before publishing (P1)** - The dispatch route passes caller-controlled source_digests into the copy tool after only branch and environment checks. Unlike the automatic route, it never...; Review finding: [P1] Revalidate recovery inputs before publishing — .github/workflows/vercel-container-registry-publish.yml:150-164 - [high] Recovery digests lack release-attestat... (sha=d3c602b95f3198db9196d9db260ff2a6db5804dd)",
+      "expected_head_sha": "d3c602b95f3198db9196d9db260ff2a6db5804dd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T16:55:05.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/vigorous-khayyam-880beb",
+        "head_sha": "d3c602b95f3198db9196d9db260ff2a6db5804dd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
