@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-25T12:04:33.616Z",
+  "updated_at": "2026-08-25T12:04:45.911Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129082:5407000712:2026-08-25T07:29:25Z:clawsweeper_needs_human",
-      "comment_id": "5407000712",
-      "comment_version_key": "5407000712:2026-08-25T07:29:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129082#issuecomment-5407000712",
-      "comment_created_at": "2026-08-25T07:29:25Z",
-      "comment_updated_at": "2026-08-25T07:29:25Z",
-      "comment_body_sha256": "4c36a623094412284d0a9669207492214180ec472b7c26803bc7c141bf0af961",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129082,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body reports focused tests, but no inspectable live or mock-gateway harness trace demonstrates a rich payload reaching an adapter; preserve that operator-visible proof in landi... (sha=991a39a7e547dc7d7d38091925fd3adaec5aaf17)",
-      "expected_head_sha": "991a39a7e547dc7d7d38091925fd3adaec5aaf17",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T07:31:10.588Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/rich-reply-silent-token-owner-20260824",
-        "head_sha": "991a39a7e547dc7d7d38091925fd3adaec5aaf17",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107479:4971448190:2026-08-22T21:23:51Z:clawsweeper_needs_human",
       "comment_id": "4971448190",
@@ -32226,6 +32193,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129282:5410102787:2026-08-25T12:03:51Z:clawsweeper_needs_human",
+      "comment_id": "5410102787",
+      "comment_version_key": "5410102787:2026-08-25T12:03:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129282#issuecomment-5410102787",
+      "comment_created_at": "2026-08-25T12:03:51Z",
+      "comment_updated_at": "2026-08-25T12:03:51Z",
+      "comment_body_sha256": "6d9b4fa03d3fb8c5c7dd401b6e19051374b006623c171b06230fb0f7bcbaa9d4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129282,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restore exact ownership at the final apply boundary (P1)** - Removing the ownership checks leaves the normal skill_workshop update/apply path able to write a handwritten workspace skill: it still calls proposeUp...; Review finding: [P1] Restore exact ownership at the final apply boundary — src/skills/workshop/apply-transition.ts:218-220 - [P1] Do not start MCP servers for a Workshop-only revi... (sha=afa8a8c4d0ce6f68d7b0a82f261af236d6703db0)",
+      "expected_head_sha": "afa8a8c4d0ce6f68d7b0a82f261af236d6703db0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-25T12:04:45.911Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-workshop-lean-review",
+        "head_sha": "afa8a8c4d0ce6f68d7b0a82f261af236d6703db0",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
