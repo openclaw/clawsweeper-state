@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T10:57:47.089Z",
+  "updated_at": "2026-08-26T10:57:50.508Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123556:5317237178:2026-08-17T15:06:54Z:re_review",
-      "comment_id": "5317237178",
-      "comment_version_key": "5317237178:2026-08-17T15:06:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5317237178",
-      "comment_created_at": "2026-08-17T15:06:54Z",
-      "comment_updated_at": "2026-08-17T15:06:54Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123556,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T07:08:26.329Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123556:5317304769:2026-08-17T15:21:33Z:re_review",
       "comment_id": "5317304769",
@@ -32081,6 +32054,39 @@
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130033:5423212138:2026-08-26T10:53:44Z:clawsweeper_needs_human",
+      "comment_id": "5423212138",
+      "comment_version_key": "5423212138:2026-08-26T10:53:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130033#issuecomment-5423212138",
+      "comment_created_at": "2026-08-26T09:19:46Z",
+      "comment_updated_at": "2026-08-26T10:53:44Z",
+      "comment_body_sha256": "a7394aa020d8acabc764c7a9d30e261cdf0cc0b7978079445ccc20e11cf6c376",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130033,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; rebase and remeasure startup CSS headroom on the resulting exact head before merge, rather than relying on the earlier-base byte count. (sha=6198a1f368c4b6753e586401b5f20f916b3ad885)",
+      "expected_head_sha": "6198a1f368c4b6753e586401b5f20f916b3ad885",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T10:57:50.508Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/control-ui-css-budget",
+        "head_sha": "6198a1f368c4b6753e586401b5f20f916b3ad885",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
