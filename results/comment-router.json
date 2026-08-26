@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T17:26:08.978Z",
+  "updated_at": "2026-08-26T17:26:31.647Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130035:5424168241:2026-08-26T10:44:01Z:re_review",
-      "comment_id": "5424168241",
-      "comment_version_key": "5424168241:2026-08-26T10:44:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130035#issuecomment-5424168241",
-      "comment_created_at": "2026-08-26T10:44:01Z",
-      "comment_updated_at": "2026-08-26T10:44:01Z",
-      "comment_body_sha256": "b9dd54235086f2ae01612384aaf5bdcf527e6dfb9eff9f1ec5d622eb210f8879",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130035,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T10:44:44.543Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/onboarding-doctor-fix-guidance",
-        "head_sha": "c388806a2e53e4f8ce9c7d48a7a14076b55c4919",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128505:5424026160:2026-08-26T10:30:51Z:re_review",
       "comment_id": "5424026160",
@@ -32502,6 +32455,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130105:5425874473:2026-08-26T17:25:15Z:clawsweeper_needs_human",
+      "comment_id": "5425874473",
+      "comment_version_key": "5425874473:2026-08-26T17:25:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130105#issuecomment-5425874473",
+      "comment_created_at": "2026-08-26T13:17:03Z",
+      "comment_updated_at": "2026-08-26T17:25:15Z",
+      "comment_body_sha256": "7a619adfdf5f3b29941fa3d1b6775d96e637e43d26ad4210204ce4fbae61f82a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; GitHub reports a clean merge, but exact-head validation is still needed before landing. (sha=e8f081dc33553249cc19ebc70e31f79e6a5b7bb7)",
+      "expected_head_sha": "e8f081dc33553249cc19ebc70e31f79e6a5b7bb7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T17:26:31.647Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/orbs-concept-support-a3c2ac",
+        "head_sha": "e8f081dc33553249cc19ebc70e31f79e6a5b7bb7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
