@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T22:01:53.456Z",
+  "updated_at": "2026-08-26T22:02:11.825Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3519:5398014946:2026-08-26T17:21:22Z:clawsweeper_needs_human",
-      "comment_id": "5398014946",
-      "comment_version_key": "5398014946:2026-08-26T17:21:22Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3519#issuecomment-5398014946",
-      "comment_created_at": "2026-08-24T16:13:11Z",
-      "comment_updated_at": "2026-08-26T17:21:22Z",
-      "comment_body_sha256": "742033dc43f253175f0fd478b139a6ce7778021ecf7272ab515cd893d0852a4b",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3519,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Review the new Rolldown native binding** - Vite 8.2.2 resolves Rolldown 1.2.6, whose optional platform dependencies include the newly locked Android ARM EABI binary; Socket previously f...; Review finding: [medium] Review the new Rolldown native binding — bun.lock:2197 (sha=0d5026267ea994f8730c0b21876aaf4b97688a8c)",
-      "expected_head_sha": "0d5026267ea994f8730c0b21876aaf4b97688a8c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T17:23:05.147Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/development-minor-and-patch-8f8c31b548",
-        "head_sha": "0d5026267ea994f8730c0b21876aaf4b97688a8c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108988:4992602000:2026-08-26T17:14:28Z:clawsweeper_auto_repair",
       "comment_id": "4992602000",
@@ -31986,6 +31953,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129255:5431627663:2026-08-26T22:01:32Z:re_review",
+      "comment_id": "5431627663",
+      "comment_version_key": "5431627663:2026-08-26T22:01:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129255#issuecomment-5431627663",
+      "comment_created_at": "2026-08-26T22:01:32Z",
+      "comment_updated_at": "2026-08-26T22:01:32Z",
+      "comment_body_sha256": "1e8b5dbbf1aa6d19819f78bc2469287588614ecdfffbd442655da1c84b611455",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129255,
+      "author": "Finn763",
+      "author_id": 165816600,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T22:02:10.293Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/129222-sentence-boundary-no-space",
+        "head_sha": "17a0c662a39ba6d0af65827b394a1ff433b5916b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
