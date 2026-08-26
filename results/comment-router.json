@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:14:26.302Z",
+  "updated_at": "2026-08-26T09:15:18.643Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129486:5417006132:2026-08-26T05:47:32Z:clawsweeper_needs_human",
-      "comment_id": "5417006132",
-      "comment_version_key": "5417006132:2026-08-26T05:47:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129486#issuecomment-5417006132",
-      "comment_created_at": "2026-08-25T21:24:41Z",
-      "comment_updated_at": "2026-08-26T05:47:32Z",
-      "comment_body_sha256": "60734a54c143e15e29451e76a29817b7315302d85fae4e9e605f4cb2fb6dbeb6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129486,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the pinned-root dependency contract** - The final archive publication uses Root.copyIn and Root.mkdir as the security boundary; this review could not inspect the installed @openc...; Review finding: [medium] Verify the pinned-root dependency contract — src/skills/lifecycle/install-download.ts:149 (sha=3d4ca2fb9a4fddd9675085296ec5eb9db633e874)",
-      "expected_head_sha": "3d4ca2fb9a4fddd9675085296ec5eb9db633e874",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T05:58:30.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/great-joliot-0c21cf",
-        "head_sha": "3d4ca2fb9a4fddd9675085296ec5eb9db633e874",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T05:49:28Z:clawsweeper_needs_human",
       "comment_id": "5418912080",
@@ -31669,6 +31636,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125002:5311300889:2026-08-26T09:14:24Z:clawsweeper_needs_human",
+      "comment_id": "5311300889",
+      "comment_version_key": "5311300889:2026-08-26T09:14:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125002#issuecomment-5311300889",
+      "comment_created_at": "2026-08-17T03:05:27Z",
+      "comment_updated_at": "2026-08-26T09:14:24Z",
+      "comment_body_sha256": "995623c7c14122efc5e6bfcf3e0a29fabb1ce32bc3a67f49bebd3a81c0830bcd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125002,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the submitted terminal evidence calls the clear helper directly, but does not show the handled before_... (sha=51a8f1363c5c1efc92977e175f2f6385b049374c)",
+      "expected_head_sha": "51a8f1363c5c1efc92977e175f2f6385b049374c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T09:15:18.643Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-reseed-sqlite-store",
+        "head_sha": "51a8f1363c5c1efc92977e175f2f6385b049374c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
