@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T01:29:43.939Z",
+  "updated_at": "2026-08-26T01:30:11.497Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5311757075:2026-08-17T04:21:46Z:re_review",
-      "comment_id": "5311757075",
-      "comment_version_key": "5311757075:2026-08-17T04:21:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5311757075",
-      "comment_created_at": "2026-08-17T04:21:46Z",
-      "comment_updated_at": "2026-08-17T04:21:46Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T19:46:29.719Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5311829849:2026-08-17T04:31:03Z:re_review",
       "comment_id": "5311829849",
@@ -32978,6 +32951,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T01:29:43.939Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1224:5416562511:2026-08-26T01:29:11Z:clawsweeper_needs_human",
+      "comment_id": "5416562511",
+      "comment_version_key": "5416562511:2026-08-26T01:29:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1224#issuecomment-5416562511",
+      "comment_created_at": "2026-08-25T20:47:38Z",
+      "comment_updated_at": "2026-08-26T01:29:11Z",
+      "comment_body_sha256": "1b7c7aa368b7d8fd1c7b076789cdfcf08a45e3e14f8879c38e48af75037017b6",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1224,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - BOM-less UTF-16 and UTF-32 files will now safely make local-AI networking unavailable rather than being rewritten, so affected users need a clear re-save-and-retry recovery path. (sha=5f7138acf1601d86a5875ec50649e1d2c90fc292)",
+      "expected_head_sha": "5f7138acf1601d86a5875ec50649e1d2c90fc292",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T01:30:11.497Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/1193-wslconfig-surgical",
+        "head_sha": "5f7138acf1601d86a5875ec50649e1d2c90fc292",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
