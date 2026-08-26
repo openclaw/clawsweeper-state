@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:25:17.872Z",
+  "updated_at": "2026-08-26T03:25:21.411Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3107:5417402750:2026-08-25T22:01:13Z:re_review",
-      "comment_id": "5417402750",
-      "comment_version_key": "5417402750:2026-08-25T22:01:13Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3107#issuecomment-5417402750",
-      "comment_created_at": "2026-08-25T22:01:13Z",
-      "comment_updated_at": "2026-08-25T22:01:13Z",
-      "comment_body_sha256": "b0cbf0e747aeb6542d4dc9ebec85eacb10ed612a340b84b433538af8f318624a",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3107,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review b8315b51d847eb915bc3f3d19dd20754f4d04a4c",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T23:52:28.901Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/spend-cache-ttl",
-        "head_sha": "da069eb4ae5271d278a9416dd9d6c0da97d880cc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/birdclaw:133:5398115637:2026-08-25T23:50:23Z:clawsweeper_needs_human",
       "comment_id": "5398115637",
@@ -32190,6 +32143,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-otel-code-mode-reconciliation",
         "head_sha": "27f18137be4cbc5ee195633396c4401926e8308b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:47:5305413167:2026-08-26T03:20:41Z:clawsweeper_needs_human",
+      "comment_id": "5305413167",
+      "comment_version_key": "5305413167:2026-08-26T03:20:41Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/47#issuecomment-5305413167",
+      "comment_created_at": "2026-08-16T02:53:29Z",
+      "comment_updated_at": "2026-08-26T03:20:41Z",
+      "comment_body_sha256": "73c14ccced62fc24bcf2fc4f152b8847f03a468fc32a7f79f3d5b207f7319412",
+      "repo": "openclaw/clawscan",
+      "issue_number": 47,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 5,520-ID ceiling intentionally follows the current pinned SkillTrustBench set; a future pin expansion must update the cap and its surrounding contract together. (sha=6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a)",
+      "expected_head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T03:25:21.411Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ids-stream-semantic-bound",
+        "head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
         "cluster_id": null,
         "job_path": null
       }
