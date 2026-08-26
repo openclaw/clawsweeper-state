@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T22:58:41.966Z",
+  "updated_at": "2026-08-26T22:59:54.921Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129408:5413860740:2026-08-26T17:46:24Z:clawsweeper_needs_human",
-      "comment_id": "5413860740",
-      "comment_version_key": "5413860740:2026-08-26T17:46:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129408#issuecomment-5413860740",
-      "comment_created_at": "2026-08-25T16:59:44Z",
-      "comment_updated_at": "2026-08-26T17:46:24Z",
-      "comment_body_sha256": "65287d958a19f769f0112851db1cc467d2cb2143a179ba0de344dd6662275ff3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129408,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the clean PR as behind main; refresh it and obtain exact-head required checks before merge. This does not show a three-way-merge regression. (sha=a5cda46aac9c973e68ccd94777cd7a23347f597d)",
-      "expected_head_sha": "a5cda46aac9c973e68ccd94777cd7a23347f597d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T17:50:49.797Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-stale-cron-delivery-explanation-20260825",
-        "head_sha": "a5cda46aac9c973e68ccd94777cd7a23347f597d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:144:5398920485:2026-08-26T17:31:22Z:clawsweeper_needs_human",
       "comment_id": "5398920485",
@@ -32152,6 +32119,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3219:5431876517:2026-08-26T22:59:03Z:clawsweeper_needs_human",
+      "comment_id": "5431876517",
+      "comment_version_key": "5431876517:2026-08-26T22:59:03Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3219#issuecomment-5431876517",
+      "comment_created_at": "2026-08-26T22:31:21Z",
+      "comment_updated_at": "2026-08-26T22:59:03Z",
+      "comment_body_sha256": "f4a05c434736abcb390ca992140331e89d27774d2238f11f353cc3cb918bf554",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3219,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed branch-protection aggregate and exact-head Linux/macOS jobs were still running in the provided check state, so merge should wait for their completed results. (sha=9582144959ef1e479d0edfa3023a6892a3e78117)",
+      "expected_head_sha": "9582144959ef1e479d0edfa3023a6892a3e78117",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T22:59:54.921Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/linux-ci-gate",
+        "head_sha": "9582144959ef1e479d0edfa3023a6892a3e78117",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
