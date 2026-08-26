@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T00:28:16.060Z",
+  "updated_at": "2026-08-26T00:29:59.662Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129468:5414114223:2026-08-25T18:07:58Z:clawsweeper_needs_human",
-      "comment_id": "5414114223",
-      "comment_version_key": "5414114223:2026-08-25T18:07:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129468#issuecomment-5414114223",
-      "comment_created_at": "2026-08-25T17:21:42Z",
-      "comment_updated_at": "2026-08-25T18:07:58Z",
-      "comment_body_sha256": "0927024654d269b123687b95e8c7dba4de120280cee424a8b60e4d2b6178e58a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129468,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The updated Codex credential assertion relies on an external storage contract that could not be independently verified because the required sibling checkout is unavailable. (sha=19c82f65ed6a7dcca8c56a0d538fc11b97b5c45e)",
-      "expected_head_sha": "19c82f65ed6a7dcca8c56a0d538fc11b97b5c45e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T18:10:43.294Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/main-ci-doctor-onboard",
-        "head_sha": "19c82f65ed6a7dcca8c56a0d538fc11b97b5c45e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129479:5414626038:2026-08-25T18:06:46Z:clawsweeper_needs_human",
       "comment_id": "5414626038",
@@ -32876,6 +32843,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1522:5418880539:2026-08-26T00:29:06Z:automerge",
+      "comment_id": "5418880539",
+      "comment_version_key": "5418880539:2026-08-26T00:29:06Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1522#issuecomment-5418880539",
+      "comment_created_at": "2026-08-26T00:29:06Z",
+      "comment_updated_at": "2026-08-26T00:29:06Z",
+      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1522,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T00:29:52.657Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/machine0-heartbeat-claim",
+        "head_sha": "8da69c56b252d5248d2ca0ffba1825935d703c02",
+        "cluster_id": "automerge-openclaw-crabbox-1522",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1522.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1522.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
