@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-129749",
+  "mode": "autonomous",
+  "run_id": "32924253994",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32924253994",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-129749.md",
+  "published_at": "2026-08-26T03:25:04.924Z",
+  "canonical": "#129749",
+  "canonical_issue": "#129749",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the source-level omission: memory CLI uses a private two-target set that excludes provider API-key SecretRefs. A narrow canonical repair is defined, but this environment is read-only, has no dependencies, and lacks the required sibling ../codex source audit checkout; no branch or PR can be produced here.",
+  "actions": [
+    {
+      "target": "#129749",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#129749",
+      "candidate_fix": null,
+      "reason": "A writable environment with dependencies and the mandatory sibling ../codex checkout is required before the Codex-source audit, edit, validation, and PR creation can occur."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies and sibling ../codex source available for the required direct Codex audit; then apply the attached narrow fix artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

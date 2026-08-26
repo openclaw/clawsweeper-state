@@ -2,60 +2,59 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-129749"
 mode: "autonomous"
-run_id: "32920556219"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32920556219"
+run_id: "32924253994"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32924253994"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-26T02:38:50.381Z"
-canonical: "https://github.com/openclaw/openclaw/issues/129749"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/129749"
+published_at: "2026-08-26T03:25:04.924Z"
+canonical: "#129749"
+canonical_issue: "#129749"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-129749
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32920556219](https://github.com/openclaw/clawsweeper/actions/runs/32920556219)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32924253994](https://github.com/openclaw/clawsweeper/actions/runs/32924253994)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/129749
+Canonical: #129749
 
 ## Summary
 
-Confirmed on main: memory CLI replaces the canonical embedding SecretRef scope with a private two-entry set, excluding provider API-key SecretRefs. A narrow SDK-facade repair is ready, but this read-only checkout lacks dependencies and the required sibling ../codex source, so no branch or validated patch can be produced here.
+Current main reproduces the source-level omission: memory CLI uses a private two-target set that excludes provider API-key SecretRefs. A narrow canonical repair is defined, but this environment is read-only, has no dependencies, and lacks the required sibling ../codex source audit checkout; no branch or PR can be produced here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #129749 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,10 +66,8 @@ Confirmed on main: memory CLI replaces the canonical embedding SecretRef scope w
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #129749 | keep_canonical | planned | canonical | Open non-security issue with a source-reproducible broken existing behavior; close and merge are prohibited by the job. |
-| cluster:issue-openclaw-openclaw-129749 | fix_needed | blocked | canonical | Only execution environment constraints block implementation; the repair itself is narrow and specified below. |
-| cluster:issue-openclaw-openclaw-129749 | build_fix_artifact | planned | canonical | Executor should create the one allowed new fix PR after obtaining a writable, dependency-ready checkout and performing the required Codex-source inspection. |
+| #129749 | fix_needed | blocked | canonical | A writable environment with dependencies and the mandatory sibling ../codex checkout is required before the Codex-source audit, edit, validation, and PR creation can occur. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout with dependencies and sibling ../codex source available for the required direct Codex audit; then apply the attached narrow fix artifact.
