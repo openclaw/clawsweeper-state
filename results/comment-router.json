@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-26T05:00:52.366Z",
+  "updated_at": "2026-08-26T05:02:39.765Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110434:5010083683:2026-08-26T02:03:57Z:clawsweeper_auto_merge",
-      "comment_id": "5010083683",
-      "comment_version_key": "5010083683:2026-08-26T02:03:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110434#issuecomment-5010083683",
-      "comment_created_at": "2026-07-18T05:33:37Z",
-      "comment_updated_at": "2026-08-26T02:03:57Z",
-      "comment_body_sha256": "6725d0589ea9e0cda68ca6630b8a9ad951563d8c83327e24eb01fabbb03b13b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110434,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=6e8de2857c67da5d702b272d3608950d246e19cd); current checks are failing: check-lint:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": "6e8de2857c67da5d702b272d3608950d246e19cd",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T02:07:50.723Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/microsoft-foundry-execaz-sigkill",
-        "head_sha": "6e8de2857c67da5d702b272d3608950d246e19cd",
-        "cluster_id": "automerge-openclaw-openclaw-110434",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-110434.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:merge-ready",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-110434.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128149:5419584130:2026-08-26T02:04:45Z:re_review",
       "comment_id": "5419584130",
@@ -32130,6 +32071,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-android-node-offline-status-20260826",
         "head_sha": "a6f25055774e3d0acd68898ac3d95909dc2cffc0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114214:5086343552:2026-08-26T04:56:58Z:clawsweeper_needs_human",
+      "comment_id": "5086343552",
+      "comment_version_key": "5086343552:2026-08-26T04:56:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114214#issuecomment-5086343552",
+      "comment_created_at": "2026-07-27T01:12:24Z",
+      "comment_updated_at": "2026-08-26T04:56:58Z",
+      "comment_body_sha256": "98b9b4d46c6a053ed7b39dedd09659c7ef0c6f081b32e0c670f016e060227a8b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114214,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No discrete repair remains; normal exact-head merge validation is the next action. (sha=d8dfc545f21813d25714259e133c5f56bc2a859e)",
+      "expected_head_sha": "d8dfc545f21813d25714259e133c5f56bc2a859e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T05:02:39.765Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-101676-live-model-switch-retry",
+        "head_sha": "d8dfc545f21813d25714259e133c5f56bc2a859e",
         "cluster_id": null,
         "job_path": null
       }
