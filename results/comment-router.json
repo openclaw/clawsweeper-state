@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T06:48:40.685Z",
+  "updated_at": "2026-08-26T06:48:42.151Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125303:5419982375:2026-08-26T03:02:58Z:re_review",
-      "comment_id": "5419982375",
-      "comment_version_key": "5419982375:2026-08-26T03:02:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125303#issuecomment-5419982375",
-      "comment_created_at": "2026-08-26T03:02:58Z",
-      "comment_updated_at": "2026-08-26T03:02:58Z",
-      "comment_body_sha256": "960b6dc07432beac258e959dc458198d68951794aabb242e878e597e5b0447a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125303,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T03:03:41.825Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-profile-timeout-budget",
-        "head_sha": "779bf1b925051a8dfbd4b41e00d3b18756ebd775",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128995:5419935795:2026-08-26T02:56:01Z:re_review",
       "comment_id": "5419935795",
@@ -32384,6 +32337,39 @@
         "kind": "pull_request",
         "branch": "fix/native-agent-release-checks",
         "head_sha": "da2b769391c281fe666010df52f8eba2a21d12d5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129878:5420870849:2026-08-26T06:44:27Z:clawsweeper_needs_human",
+      "comment_id": "5420870849",
+      "comment_version_key": "5420870849:2026-08-26T06:44:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129878#issuecomment-5420870849",
+      "comment_created_at": "2026-08-26T05:07:34Z",
+      "comment_updated_at": "2026-08-26T06:44:27Z",
+      "comment_body_sha256": "b7dcf5471dec6b6b513db89a8589c1725f835a8e804b84cdc92b68cb339ff953",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129878,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head checks are still queued or running, and the local partial clone could not compare the branch against the supplied current-main tree; refresh the merge result and required v... (sha=6aefaa83c475078411fecbeb7a4cf06325b86412)",
+      "expected_head_sha": "6aefaa83c475078411fecbeb7a4cf06325b86412",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T06:48:42.151Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/models-list-refresh-bug-97eb7b",
+        "head_sha": "6aefaa83c475078411fecbeb7a4cf06325b86412",
         "cluster_id": null,
         "job_path": null
       }
