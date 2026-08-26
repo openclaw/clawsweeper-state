@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130161",
+  "mode": "autonomous",
+  "run_id": "32979533908",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32979533908",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130161.md",
+  "published_at": "2026-08-26T14:41:29.724Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130161",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130161",
+  "canonical_pr": null,
+  "summary": "Current main contains the reported lifecycle race, but implementation is blocked: the mandatory sibling ../codex source checkout is absent and this read-only environment cannot create it or add/run the required real-Worker regression. A narrow new-PR artifact is prepared for #130161 once that gate is available.",
+  "actions": [
+    {
+      "target": "#130161",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130161",
+      "candidate_fix": null,
+      "reason": "Blocked only on the mandatory direct Codex-source inspection and read-only implementation environment; the issue remains the live canonical bug."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130161",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130161",
+      "candidate_fix": null,
+      "reason": "Prepared for execution after the required direct ../codex inspection is possible."
+    },
+    {
+      "target": "#129182",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#130161",
+      "candidate_fix": null,
+      "reason": "Closed context reference only."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a readable sibling ../codex checkout (or a writable environment that can create one) so the mandatory direct Codex protocol/runtime inspection, real-Worker regression, and local validation can proceed."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#130161",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
