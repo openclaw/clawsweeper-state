@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T17:23:15.923Z",
+  "updated_at": "2026-08-26T17:23:21.644Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129754:5424048691:2026-08-26T10:33:00Z:re_review",
-      "comment_id": "5424048691",
-      "comment_version_key": "5424048691:2026-08-26T10:33:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129754#issuecomment-5424048691",
-      "comment_created_at": "2026-08-26T10:33:00Z",
-      "comment_updated_at": "2026-08-26T10:33:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129754,
-      "author": "MertBasar0",
-      "author_id": 100199793,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T10:33:42.557Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-completion-restore-durability",
-        "head_sha": "53ebdd52db4964a9df4abdaf74a8c0fe35072b96",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130065:5424044488:2026-08-26T10:32:37Z:clawsweeper_needs_human",
       "comment_id": "5424044488",
@@ -32568,6 +32521,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T17:23:15.923Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130108:5425726931:2026-08-26T17:18:51Z:clawsweeper_needs_human",
+      "comment_id": "5425726931",
+      "comment_version_key": "5425726931:2026-08-26T17:18:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130108#issuecomment-5425726931",
+      "comment_created_at": "2026-08-26T13:05:08Z",
+      "comment_updated_at": "2026-08-26T17:18:51Z",
+      "comment_body_sha256": "baaaf1a8bef8ba10b4e5aefcd840fefa451c47adcdcf603dde1508018de9e6c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130108,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied current check state has checks-ui-e2e (2/4) and openclaw/ci-gate failing; the successful evidence in the PR body is for an earlier head, so the current head needs an exac... (sha=eaf754d28334455641bbacaf6deac946b7a4f199)",
+      "expected_head_sha": "eaf754d28334455641bbacaf6deac946b7a4f199",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T17:23:21.644Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/remove-duplicate-attachment-url-lifecycle",
+        "head_sha": "eaf754d28334455641bbacaf6deac946b7a4f199",
+        "cluster_id": "automerge-openclaw-openclaw-130108",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-130108.md"
+      }
     }
   ]
 }
