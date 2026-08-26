@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T13:49:12.386Z",
+  "updated_at": "2026-08-26T13:53:29.458Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129976:5422327649:2026-08-26T08:33:57Z:clawsweeper_needs_human",
-      "comment_id": "5422327649",
-      "comment_version_key": "5422327649:2026-08-26T08:33:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129976#issuecomment-5422327649",
-      "comment_created_at": "2026-08-26T07:57:54Z",
-      "comment_updated_at": "2026-08-26T08:33:57Z",
-      "comment_body_sha256": "1ee17431fe856ece2c60b79c8d2d7b5a456b5d79d91365950b45ad449a3ebc5e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129976,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this draft branch is behind its base; refresh the clean merge result before marking it ready. (sha=5f99fcf376aae9e2c98dcdd60c5ae972f232d3f8)",
-      "expected_head_sha": "5f99fcf376aae9e2c98dcdd60c5ae972f232d3f8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T08:37:31.460Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/refactor-plugin-hook-void-owners-00367880",
-        "head_sha": "5f99fcf376aae9e2c98dcdd60c5ae972f232d3f8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129978:5422726521:2026-08-26T08:35:01Z:clawsweeper_auto_repair",
       "comment_id": "5422726521",
@@ -32622,6 +32589,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129993:5422628506:2026-08-26T13:48:39Z:clawsweeper_needs_human",
+      "comment_id": "5422628506",
+      "comment_version_key": "5422628506:2026-08-26T13:48:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129993#issuecomment-5422628506",
+      "comment_created_at": "2026-08-26T08:25:36Z",
+      "comment_updated_at": "2026-08-26T13:48:39Z",
+      "comment_body_sha256": "9dd970013069b9fea1f4d50b326c2de9b48ef098f92c3968f437abb0415b7353",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129993,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied Discord trace shows idle-parent recovery, but it does not show that an ownerless or post-...; Review finding: [P1] Block ambient Gateway fallback for ownerless completions — src/agents/subagents/registry/subagent-registry-lifecycle-announce-cleanup.ts:612-614 - [P1] Revali... (sha=c3633fdff16ebf7cdd4d49bae3c64f96dfc80c96)",
+      "expected_head_sha": "c3633fdff16ebf7cdd4d49bae3c64f96dfc80c96",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T13:53:29.458Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-announce-idle-parent-context",
+        "head_sha": "c3633fdff16ebf7cdd4d49bae3c64f96dfc80c96",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
