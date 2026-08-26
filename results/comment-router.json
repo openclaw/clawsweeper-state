@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T21:16:06.271Z",
+  "updated_at": "2026-08-26T21:16:25.101Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125822:5390752688:2026-08-24T04:30:47Z:re_review",
-      "comment_id": "5390752688",
-      "comment_version_key": "5390752688:2026-08-24T04:30:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125822#issuecomment-5390752688",
-      "comment_created_at": "2026-08-24T04:30:47Z",
-      "comment_updated_at": "2026-08-24T04:30:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125822,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T16:13:53.689Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125822:5394399852:2026-08-24T11:12:26Z:re_review",
       "comment_id": "5394399852",
@@ -31590,6 +31563,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130399:5431185604:2026-08-26T21:13:18Z:clawsweeper_needs_human",
+      "comment_id": "5431185604",
+      "comment_version_key": "5431185604:2026-08-26T21:13:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130399#issuecomment-5431185604",
+      "comment_created_at": "2026-08-26T21:13:18Z",
+      "comment_updated_at": "2026-08-26T21:13:18Z",
+      "comment_body_sha256": "99f9df49a4306546273a71ba5df46518958fb3750a1e35479d97f42ec88f057f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130399,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +4 lines; the accepted-media list is necessary owner-boundary state because the existing flow otherwise discards the distinction between requested and accepted... (sha=803821394a15270d157c40bf97fb94012264cf64)",
+      "expected_head_sha": "803821394a15270d157c40bf97fb94012264cf64",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T21:16:25.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-telegram-accepted-media-20260826",
+        "head_sha": "803821394a15270d157c40bf97fb94012264cf64",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
