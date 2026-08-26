@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T05:00:38.120Z",
+  "updated_at": "2026-08-26T05:00:41.065Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129591:5419586360:2026-08-26T02:05:01Z:re_review",
-      "comment_id": "5419586360",
-      "comment_version_key": "5419586360:2026-08-26T02:05:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129591#issuecomment-5419586360",
-      "comment_created_at": "2026-08-26T02:05:01Z",
-      "comment_updated_at": "2026-08-26T02:05:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129591,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T02:05:46.395Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-media-generation-policy-owner",
-        "head_sha": "913ddfcc5c1479320ec8f69bb8d3d1f101ac9682",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127002:5419600439:2026-08-26T02:06:49Z:re_review",
       "comment_id": "5419600439",
@@ -32161,6 +32114,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T05:00:38.120Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129784:5419993461:2026-08-26T04:58:19Z:clawsweeper_needs_human",
+      "comment_id": "5419993461",
+      "comment_version_key": "5419993461:2026-08-26T04:58:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129784#issuecomment-5419993461",
+      "comment_created_at": "2026-08-26T03:04:36Z",
+      "comment_updated_at": "2026-08-26T04:58:19Z",
+      "comment_body_sha256": "0764f165856d48e66611252967c221214844738869f48c78e51c96d244a3f191",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129784,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The workflow/tooling change is net +204 production lines; exact-head Package Telegram acceptance must demonstrate that the shared helper remains the sole registry-owner path before me... (sha=0febe6f0a0d0936e1c2a0af9e629349b88abfa5f)",
+      "expected_head_sha": "0febe6f0a0d0936e1c2a0af9e629349b88abfa5f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T05:00:41.065Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-release-package-telegram-registry",
+        "head_sha": "0febe6f0a0d0936e1c2a0af9e629349b88abfa5f",
+        "cluster_id": "automerge-openclaw-openclaw-129784",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-129784.md"
+      }
     }
   ]
 }
