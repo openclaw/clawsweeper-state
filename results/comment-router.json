@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T20:43:38.743Z",
+  "updated_at": "2026-08-26T20:44:19.203Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121156:5235498967:2026-08-10T03:19:23Z:re_review",
-      "comment_id": "5235498967",
-      "comment_version_key": "5235498967:2026-08-10T03:19:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121156#issuecomment-5235498967",
-      "comment_created_at": "2026-08-10T03:19:23Z",
-      "comment_updated_at": "2026-08-10T03:19:23Z",
-      "comment_body_sha256": "64f8f4298ced90d6fee9d53d8f7a403d3948bf6ba69f7f418dd415e80e945c33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121156,
-      "author": "Leon-SK668",
-      "author_id": 17695126,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T15:00:06.922Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121156:5235658827:2026-08-10T03:50:42Z:re_review",
       "comment_id": "5235658827",
@@ -31647,6 +31620,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130296:5429736606:2026-08-26T20:43:21Z:clawsweeper_needs_human",
+      "comment_id": "5429736606",
+      "comment_version_key": "5429736606:2026-08-26T20:43:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130296#issuecomment-5429736606",
+      "comment_created_at": "2026-08-26T18:55:31Z",
+      "comment_updated_at": "2026-08-26T20:43:21Z",
+      "comment_body_sha256": "381479ba31f3181064e511a1411bc2d602bf2652fd28a15e63aab444f6a0f83f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130296,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Inspect the new OpenShell installer before executing it** - The workflow downloads the changed raw GitHub installer reference and executes it with sh; direct source review is needed to...; Review finding: [medium] Inspect the new OpenShell installer before executing it — .github/workflows/openclaw-live-and-e2e-checks-reusable.yml:1089 (sha=53d603762718a03097910ff06236540f5cee6835)",
+      "expected_head_sha": "53d603762718a03097910ff06236540f5cee6835",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T20:44:19.203Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/seven-day-dependency-updates-20260826",
+        "head_sha": "53d603762718a03097910ff06236540f5cee6835",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
