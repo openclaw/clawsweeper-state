@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T01:41:29.520Z",
+  "updated_at": "2026-08-26T01:43:41.486Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/imsg:241:5415879453:2026-08-25T19:50:45Z:re_review",
-      "comment_id": "5415879453",
-      "comment_version_key": "5415879453:2026-08-25T19:50:45Z",
-      "comment_url": "https://github.com/openclaw/imsg/pull/241#issuecomment-5415879453",
-      "comment_created_at": "2026-08-25T19:50:45Z",
-      "comment_updated_at": "2026-08-25T19:50:45Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/imsg",
-      "issue_number": 241,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T19:51:33.433Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codeql-docs-sanitizer-20260825",
-        "head_sha": "d11e6af0252f5deb9f91a8cb23c4848c8e2ae37a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabfleet:118:5415881158:2026-08-25T19:50:53Z:re_review",
       "comment_id": "5415881158",
@@ -33070,6 +33023,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T01:41:29.520Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129386:5412971230:2026-08-26T01:41:54Z:clawsweeper_needs_human",
+      "comment_id": "5412971230",
+      "comment_version_key": "5412971230:2026-08-26T01:41:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129386#issuecomment-5412971230",
+      "comment_created_at": "2026-08-25T15:46:00Z",
+      "comment_updated_at": "2026-08-26T01:41:54Z",
+      "comment_body_sha256": "b520ef6a9b09fc221ff5234ae54d68101bfee127d87f4a58daeacad67b251f86",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129386,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive session contract spans Gateway and four independently released clients; an older active client can still send a bare legacy read and clear a manual marker until it suppor... (sha=0cfe00c183255fe01b033e69c1259035fd1c9a0c)",
+      "expected_head_sha": "0cfe00c183255fe01b033e69c1259035fd1c9a0c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T01:43:41.486Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/mark-as-read-not-working",
+        "head_sha": "0cfe00c183255fe01b033e69c1259035fd1c9a0c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
