@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T00:33:39.542Z",
+  "updated_at": "2026-08-26T00:33:44.983Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118197:5160310893:2026-08-25T18:14:31Z:clawsweeper_auto_repair",
-      "comment_id": "5160310893",
-      "comment_version_key": "5160310893:2026-08-25T18:14:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118197#issuecomment-5160310893",
-      "comment_created_at": "2026-08-02T20:58:28Z",
-      "comment_updated_at": "2026-08-25T18:14:31Z",
-      "comment_body_sha256": "d5ec66944f9521d805e0d7b98a5f38e65dc6fd11b187b34dff2705ce3eb8d570",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118197,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=37c417210e84190a63d69874f845c4c0dc132a81)",
-      "expected_head_sha": "37c417210e84190a63d69874f845c4c0dc132a81",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T18:22:37.821Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-control-ui-accept-precedence",
-        "head_sha": "37c417210e84190a63d69874f845c4c0dc132a81",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118197:5160348321:2026-08-02T21:08:06Z:re_review",
       "comment_id": "5160348321",
@@ -32851,6 +32818,39 @@
         "head_sha": "55656192fa059f5265056a9232a194a6a094f347",
         "cluster_id": null,
         "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1522:5417653416:2026-08-26T00:26:41Z:clawsweeper_needs_human",
+      "comment_id": "5417653416",
+      "comment_version_key": "5417653416:2026-08-26T00:26:41Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1522#issuecomment-5417653416",
+      "comment_created_at": "2026-08-25T22:23:38Z",
+      "comment_updated_at": "2026-08-26T00:26:41Z",
+      "comment_body_sha256": "bd099f37d8fbbe486ff7970812f5c9131188d96b18df2073dfe1c4cefb58b3a8",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1522,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Machine0 callers that bypass supported CLI resolution and invoke lifecycle touch without an exact claim snapshot will now fail closed. (sha=8da69c56b252d5248d2ca0ffba1825935d703c02)",
+      "expected_head_sha": "8da69c56b252d5248d2ca0ffba1825935d703c02",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T00:33:44.983Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/machine0-heartbeat-claim",
+        "head_sha": "8da69c56b252d5248d2ca0ffba1825935d703c02",
+        "cluster_id": "automerge-openclaw-crabbox-1522",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1522.md"
       }
     }
   ]
