@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:26:47.496Z",
+  "updated_at": "2026-08-26T02:26:54.369Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129315:5410417977:2026-08-25T21:46:46Z:clawsweeper_needs_human",
-      "comment_id": "5410417977",
-      "comment_version_key": "5410417977:2026-08-25T21:46:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129315#issuecomment-5410417977",
-      "comment_created_at": "2026-08-25T12:32:30Z",
-      "comment_updated_at": "2026-08-25T21:46:46Z",
-      "comment_body_sha256": "839e178c9fef1119bbaf845998926e4d39213c0e909bd47c507ef9e522431883",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129315,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Verify Codex Action v1.12 before passing it OpenAI credentials (P1)** - This changed pin runs in workflows that pass openai-api-key, including this Mantis job. The exact v1.12 manifest/runtime contract and an af...; Review finding: [P1] Verify Codex Action v1.12 before passing it OpenAI credentials — .github/workflows/mantis-telegram-desktop-proof.yml:266-269 - [medium] Unverified credential-... (sha=9b8d0abd14e94e53add071f6ed76a3839fd93a9c)",
-      "expected_head_sha": "9b8d0abd14e94e53add071f6ed76a3839fd93a9c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T21:54:30.358Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-f2d04ee7a0",
-        "head_sha": "9b8d0abd14e94e53add071f6ed76a3839fd93a9c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129526:5416408156:2026-08-25T21:42:30Z:clawsweeper_needs_human",
       "comment_id": "5416408156",
@@ -32724,6 +32691,53 @@
         "kind": "pull_request",
         "branch": "fix/provider-response-idle-timeout",
         "head_sha": "0a040d55ae8b30be8d2c0a1392440bdd2489473e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128995:5419727585:2026-08-26T02:26:10Z:re_review",
+      "comment_id": "5419727585",
+      "comment_version_key": "5419727585:2026-08-26T02:26:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128995#issuecomment-5419727585",
+      "comment_created_at": "2026-08-26T02:26:10Z",
+      "comment_updated_at": "2026-08-26T02:26:10Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128995,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T02:26:51.318Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/align-top-right-and-sidebar-session-menus",
+        "head_sha": "93e5b8479bbbaef5130a3de5f5f6eabe6fd02c01",
         "cluster_id": null,
         "job_path": null
       },
