@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-130059"
 mode: "autonomous"
-run_id: "32961805265"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32961805265"
+run_id: "32963493435"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32963493435"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-26T11:47:29.517Z"
-canonical: "#130059"
-canonical_issue: "#130059"
+published_at: "2026-08-26T12:15:38.342Z"
+canonical: "https://github.com/openclaw/openclaw/issues/130059"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/130059"
 canonical_pr: null
-actions_total: 4
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 2
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-130059
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32961805265](https://github.com/openclaw/clawsweeper/actions/runs/32961805265)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32963493435](https://github.com/openclaw/clawsweeper/actions/runs/32963493435)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #130059
+Canonical: https://github.com/openclaw/openclaw/issues/130059
 
 ## Summary
 
-#130059 remains the canonical, source-reproducible bug. Current main removes the active provider-ID index on terminal finalization, then a late Twilio completed callback can enter outbound auto-registration. A narrow retained-terminal reconciliation is ready to implement, but this read-only checkout cannot edit/create the branch, ../codex is absent for the required direct Codex-source gate, and validation cannot start because tsx is missing.
+Source inspection on main e2e5d1bca685bffbda31b742e51c9e23377d950b confirms the late-terminal-callback phantom-record path. A narrow two-file fix is prepared, but this worker cannot edit or validate it: the required sibling ../codex checkout is absent and the read-only sandbox rejects Corepack cache writes (EROFS).
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 2 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,12 +66,12 @@ Canonical: #130059
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #130059 | build_fix_artifact | planned | canonical | Implement the issue-scoped owner-boundary repair on clawsweeper/issue-openclaw-openclaw-130059. |
-| #124596 | keep_independent | planned | independent | Do not fold a new outbound identity/config contract into this bug-only repair. |
-| #130054 | keep_independent | planned | independent | Keep the config/product decision separate from this narrow state-ownership fix. |
-| #124594 | keep_closed | skipped | related | Historical context only; no closure action is valid. |
+| #124594 | keep_closed | skipped | related | Historical adjacent issue, not part of the terminal callback ownership defect. |
+| #124596 | keep_related | planned | related | Separate product decision; no shared repair path. |
+| #130054 | keep_related | planned | related | Separate product/configuration work; no shared repair path. |
+| #130059 | fix_needed | blocked | canonical | Implementation is blocked only by the worker environment; the supplied narrow repair artifact is ready for a writable executor with the required Codex checkout. |
+| cluster:issue-openclaw-openclaw-130059 | build_fix_artifact | planned | canonical | Narrow owner-boundary repair for #130059. |
 
 ## Needs Human
 
-- Provide a writable checkout with the required sibling ../codex source (or an environment where it can be cloned) so the mandatory direct Codex-source gate can be completed before a repair verdict/code change.
-- Install workspace dependencies in a writable normal checkout. The required focused command failed before test collection because module 'tsx' is absent; this worker cannot run the mandated pnpm install retry in the read-only sandbox.
+- none
