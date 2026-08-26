@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair issue https://github.com/openclaw/openclaw/issues/130226 at the embedded overflow-recovery owner. When attempt.preflightRecovery carries a valid promptBudgetBeforeReserve, pass that exact budget to forced overflow compaction; preserve raw contextTokenBudget for non-preflight provider overflow and timeout recovery. Add a boundary regression that fails before the fix by proving a reserve-adjusted preflight recovery passes its saved target while ordinary overflow still passes the raw budget. Do not add config, change the ContextEngine API, alter plugin-specific policy, or edit CHANGELOG.md; record release-note context in the PR body if user-visible behavior is described.
+Repair https://github.com/openclaw/openclaw/issues/130226 at the embedded-runner recovery boundary. When a mid-turn precheck caused recovery, pass its stored reserve-adjusted prompt budget to the generic ContextEngine compact call using compactionTarget "budget"; retain the raw context budget for ordinary provider-overflow recovery. Do not special-case lossless-claw, add config, change the plugin API, or edit CHANGELOG.md. Extend the existing recovery regression coverage so it fails before the repair for a precheck-triggered compact_only case and proves the raw-budget sibling case remains unchanged. Put release-note context in the PR body.
 
 Likely files:
 
@@ -79,7 +79,7 @@ Validation:
 
 - pnpm test src/agents/embedded-agent-runner/run.overflow-context-recovery.test.ts
 - pnpm test src/agents/embedded-agent-runner/run.overflow-compaction.test.ts
-- pnpm check:changed -- src/agents/embedded-agent-runner/run/overflow-context-recovery.ts src/agents/embedded-agent-runner/run.overflow-context-recovery.test.ts
+- pnpm test src/agents/embedded-agent-runner/run/attempt-prompt-preflight.test.ts
 
 ## Operator Prompt
 
