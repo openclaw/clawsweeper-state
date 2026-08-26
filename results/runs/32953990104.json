@@ -1,0 +1,65 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130028",
+  "mode": "autonomous",
+  "run_id": "32953990104",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32953990104",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130028.md",
+  "published_at": "2026-08-26T09:46:56.599Z",
+  "canonical": "#130028",
+  "canonical_issue": "#130028",
+  "canonical_pr": null,
+  "summary": "#130028 remains the canonical, source-proven Feishu bug. Current main aliases rootless topic threads at the debounce-key owner, but this worker cannot modify or validate a repair: the checkout is read-only with no dependencies, and the required sibling ../codex source is absent.",
+  "actions": [
+    {
+      "target": "#130028",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130028",
+      "candidate_fix": null,
+      "reason": "Canonical issue is a narrow plugin-local behavior defect; no security-sensitive signal is present."
+    },
+    {
+      "target": "#130028",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130028",
+      "candidate_fix": null,
+      "reason": "A writable checkout, dependency installation, and the mandated Codex source checkout are required before modifying or validating the branch."
+    },
+    {
+      "target": "#130028",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130028",
+      "candidate_fix": null,
+      "reason": "A narrow replacement PR remains appropriate once the environment blockers are resolved."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair checkout with dependencies and the required sibling ../codex source checkout, then rerun this job to create and validate the PR."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
