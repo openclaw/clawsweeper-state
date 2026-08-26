@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T04:52:01.939Z",
+  "updated_at": "2026-08-26T04:53:17.586Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:75336:5256747046:2026-08-11T17:42:38Z:re_review",
-      "comment_id": "5256747046",
-      "comment_version_key": "5256747046:2026-08-11T17:42:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/75336#issuecomment-5256747046",
-      "comment_created_at": "2026-08-11T17:42:38Z",
-      "comment_updated_at": "2026-08-11T17:42:38Z",
-      "comment_body_sha256": "bc5ac58a70cc3ad299b78b6e4866b403d4d445941a925f1ebca5da7b61300225",
-      "repo": "openclaw/openclaw",
-      "issue_number": 75336,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T01:56:07.169Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:75336:5268081195:2026-08-12T14:21:22Z:re_review",
       "comment_id": "5268081195",
@@ -32239,6 +32212,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129080:5406937473:2026-08-26T04:48:25Z:clawsweeper_needs_human",
+      "comment_id": "5406937473",
+      "comment_version_key": "5406937473:2026-08-26T04:48:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129080#issuecomment-5406937473",
+      "comment_created_at": "2026-08-25T07:23:01Z",
+      "comment_updated_at": "2026-08-26T04:48:25Z",
+      "comment_body_sha256": "cf4e70cd6fac39b0849c7eaa3fd886cd706bd1ba120a93ad1a3ed76fb940f843",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129080,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 22 lines; the growth is confined to the Telegram-owned TypeBox metadata needed to express channel-specific guidance, with no smaller existing helper for this... (sha=b35c74ee68e1c4995a11d067102a73496bb70c09)",
+      "expected_head_sha": "b35c74ee68e1c4995a11d067102a73496bb70c09",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T04:53:17.586Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/issue-128935",
+        "head_sha": "b35c74ee68e1c4995a11d067102a73496bb70c09",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
