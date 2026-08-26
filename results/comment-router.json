@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:23:06.369Z",
+  "updated_at": "2026-08-26T02:24:37.157Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125526:5323255008:2026-08-18T03:33:22Z:re_review",
-      "comment_id": "5323255008",
-      "comment_version_key": "5323255008:2026-08-18T03:33:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125526#issuecomment-5323255008",
-      "comment_created_at": "2026-08-18T03:33:22Z",
-      "comment_updated_at": "2026-08-18T03:33:22Z",
-      "comment_body_sha256": "5111ff1c85b826a62f8ca3056796486b2983d3b7d9054c1b6cf5aa98d0c04631",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125526,
-      "author": "TreyLawrence",
-      "author_id": 665297,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T21:43:30.991Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125526:5330716290:2026-08-18T15:54:53Z:re_review",
       "comment_id": "5330716290",
@@ -32703,6 +32676,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115745:5118102960:2026-08-26T02:19:27Z:clawsweeper_needs_human",
+      "comment_id": "5118102960",
+      "comment_version_key": "5118102960:2026-08-26T02:19:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115745#issuecomment-5118102960",
+      "comment_created_at": "2026-07-29T13:02:03Z",
+      "comment_updated_at": "2026-08-26T02:19:27Z",
+      "comment_body_sha256": "61d6a56970cc0bac6fbb81090ead9b4ee28885a3781538ff06631811eca13f36",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115745,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Sanitize routed ACP output with the bound prompt context (P1)** - This binds provenance only for the dispatcher path, but routed ACP output takes prepareAcpDeliveryPayload(... routed: true), which directly calls...; Review finding: [P1] Sanitize routed ACP output with the bound prompt context — src/auto-reply/reply/dispatch-from-config.gather.ts:98 - [high] Routed ACP replies bypass prompt-co... (sha=225015104fb096a3b9dabc230f5fca6bd5f2d5fd)",
+      "expected_head_sha": "225015104fb096a3b9dabc230f5fca6bd5f2d5fd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T02:24:37.157Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/s28-suppress-copied-reply-scaffolding",
+        "head_sha": "225015104fb096a3b9dabc230f5fca6bd5f2d5fd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
