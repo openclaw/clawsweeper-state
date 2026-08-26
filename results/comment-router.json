@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T04:59:12.998Z",
+  "updated_at": "2026-08-26T04:59:29.126Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:77638:5268886542:2026-08-12T15:28:10Z:re_review",
-      "comment_id": "5268886542",
-      "comment_version_key": "5268886542:2026-08-12T15:28:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/77638#issuecomment-5268886542",
-      "comment_created_at": "2026-08-12T15:28:10Z",
-      "comment_updated_at": "2026-08-12T15:28:10Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 77638,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T01:57:17.580Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:77638:5269410138:2026-08-12T16:15:19Z:re_review",
       "comment_id": "5269410138",
@@ -32307,6 +32280,39 @@
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3202:5420809157:2026-08-26T04:58:37Z:clawsweeper_needs_human",
+      "comment_id": "5420809157",
+      "comment_version_key": "5420809157:2026-08-26T04:58:37Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3202#issuecomment-5420809157",
+      "comment_created_at": "2026-08-26T04:58:37Z",
+      "comment_updated_at": "2026-08-26T04:58:37Z",
+      "comment_body_sha256": "e2ea544e61e8cac08710098ef516df32cc436ac9735f1f397445f5bbcdd438d3",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3202,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied settings screenshot does not show a successful, redacted Manage Key fetch and rendered ba...; Review finding: [medium] Constrain custom endpoint credential routing — Sources/CodexBarCore/Providers/AIHubMix/AIHubMixUsageFetcher.swift:107 (sha=0ca4b13919ef0f40a9a468ade3e3b820e510becd)",
+      "expected_head_sha": "0ca4b13919ef0f40a9a468ade3e3b820e510becd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T04:59:29.126Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "add-aihubmix",
+        "head_sha": "0ca4b13919ef0f40a9a468ade3e3b820e510becd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
