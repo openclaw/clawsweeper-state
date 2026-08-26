@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T05:06:43.460Z",
+  "updated_at": "2026-08-26T05:06:05.873Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123459:5289387961:2026-08-26T01:07:43Z:clawsweeper_needs_human",
@@ -32098,37 +32098,51 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:77:5373942560:2026-08-26T05:05:53Z:clawsweeper_needs_human",
-      "comment_id": "5373942560",
-      "comment_version_key": "5373942560:2026-08-26T05:05:53Z",
-      "comment_url": "https://github.com/openclaw/krillswitch/pull/77#issuecomment-5373942560",
-      "comment_created_at": "2026-08-21T18:48:52Z",
-      "comment_updated_at": "2026-08-26T05:05:53Z",
-      "comment_body_sha256": "59085e0a55f14a1ec53362ee04c28acfe717fb9a8f48dd46f66ea04bb24c693e",
-      "repo": "openclaw/krillswitch",
-      "issue_number": 77,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
+      "idempotency_key": "comment-router:openclaw/openclaw:114214:5420854238:2026-08-26T05:05:15Z:re_review",
+      "comment_id": "5420854238",
+      "comment_version_key": "5420854238:2026-08-26T05:05:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114214#issuecomment-5420854238",
+      "comment_created_at": "2026-08-26T05:05:15Z",
+      "comment_updated_at": "2026-08-26T05:05:15Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114214,
+      "author": "steipete",
+      "author_id": 58493,
       "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the API integration-test emulator from stable Miniflare 4 to Miniflare 5 alpha; green CI does not establish that this prerelease baseline is intended for ongoing local... (sha=18b1c01d56d7fe943cc09a515808c8c47d95b420)",
-      "expected_head_sha": "18b1c01d56d7fe943cc09a515808c8c47d95b420",
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
       "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T05:06:43.460Z",
+      "status": "executed",
+      "processed_at": "2026-08-26T05:06:03.950Z",
       "target": {
         "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/development-75c6cb11bf",
-        "head_sha": "18b1c01d56d7fe943cc09a515808c8c47d95b420",
+        "branch": "codex/issue-101676-live-model-switch-retry",
+        "head_sha": "d8dfc545f21813d25714259e133c5f56bc2a859e",
         "cluster_id": null,
         "job_path": null
-      }
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
