@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T07:02:57.712Z",
+  "updated_at": "2026-08-26T07:03:00.073Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5307411131:2026-08-16T12:22:46Z:re_review",
-      "comment_id": "5307411131",
-      "comment_version_key": "5307411131:2026-08-16T12:22:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5307411131",
-      "comment_created_at": "2026-08-16T12:22:46Z",
-      "comment_updated_at": "2026-08-16T12:22:46Z",
-      "comment_body_sha256": "32c7b4bc5d0224399809c054095fa08baae4f7b8039dcd624fe09c32e5a26613",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T03:05:51.369Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:5308169325:2026-08-16T15:24:27Z:re_review",
       "comment_id": "5308169325",
@@ -32679,6 +32652,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129386:5412971230:2026-08-26T06:56:00Z:clawsweeper_needs_human",
+      "comment_id": "5412971230",
+      "comment_version_key": "5412971230:2026-08-26T06:56:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129386#issuecomment-5412971230",
+      "comment_created_at": "2026-08-25T15:46:00Z",
+      "comment_updated_at": "2026-08-26T06:56:00Z",
+      "comment_body_sha256": "346bd9a6cd5a6cbc6468c1f550e76fbbf6f4f68c18767b989a933b57b8f8d73d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129386,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - During a staggered update, an older active client can still send a bare read acknowledgement and clear a newer manual marker; the PR documents this as an intentional compatibility bou... (sha=0d9e2680a1cecc2faba2b557b98e67fe37dd5451)",
+      "expected_head_sha": "0d9e2680a1cecc2faba2b557b98e67fe37dd5451",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T07:03:00.073Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/mark-as-read-not-working",
+        "head_sha": "0d9e2680a1cecc2faba2b557b98e67fe37dd5451",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
