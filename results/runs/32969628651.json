@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130059",
+  "mode": "autonomous",
+  "run_id": "32969628651",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32969628651",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130059.md",
+  "published_at": "2026-08-26T12:52:57.086Z",
+  "canonical": "#130059",
+  "canonical_issue": "#130059",
+  "canonical_pr": null,
+  "summary": "#130059 is a confirmed narrow lifecycle bug on main, but this worker cannot write the branch or install/run tests: the checkout and temp space are read-only, and Corepack fails with EROFS. The required sibling Codex source checkout is also absent, blocking the mandatory Codex source inspection gate. A focused replacement PR artifact is ready.",
+  "actions": [
+    {
+      "target": "#124596",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "No mutation."
+    },
+    {
+      "target": "#130054",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "No mutation."
+    },
+    {
+      "target": "#130059",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130059",
+      "candidate_fix": null,
+      "reason": "Requires a writable checkout with dependencies and the mandatory sibling Codex source checkout before code changes or a proof-sufficient verdict."
+    },
+    {
+      "target": "#130059",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130059",
+      "candidate_fix": null,
+      "reason": "Ready for the deterministic writable-branch executor."
+    }
+  ],
+  "action_counts": {
+    "keep_independent": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair checkout with dependencies and the required sibling Codex source checkout; then apply and validate the attached narrow fix artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
