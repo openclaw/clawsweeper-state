@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T21:58:57.778Z",
+  "updated_at": "2026-08-26T21:59:26.928Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123864:5298827849:2026-08-26T17:13:51Z:clawsweeper_needs_human",
-      "comment_id": "5298827849",
-      "comment_version_key": "5298827849:2026-08-26T17:13:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123864#issuecomment-5298827849",
-      "comment_created_at": "2026-08-14T22:34:25Z",
-      "comment_updated_at": "2026-08-26T17:13:51Z",
-      "comment_body_sha256": "4cf6b793a6f205024a0eadf9c0c4b718a0c7555fdaad12adc5d1b172fe72c874",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123864,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as dirty; current main changed the same reset owner boundary, so merge resolution must preserve current missing-session creation authorization and receive f... (sha=2aba1f0e225fec6c9f90d9de9112e115fdbc58b8)",
-      "expected_head_sha": "2aba1f0e225fec6c9f90d9de9112e115fdbc58b8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T17:22:45.363Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-reset-lifecycle-cas",
-        "head_sha": "84976882a1f11257982aebf3bdf23ff4fe6f8d11",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123864:5298945338:2026-08-14T22:53:09Z:re_review",
       "comment_id": "5298945338",
@@ -31883,6 +31850,53 @@
         "kind": "pull_request",
         "branch": "fix/exact-merge-130108",
         "head_sha": "d718aac1086fbceed62ea58eefc2ddff9023179d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128905:5431603886:2026-08-26T21:58:45Z:re_review",
+      "comment_id": "5431603886",
+      "comment_version_key": "5431603886:2026-08-26T21:58:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128905#issuecomment-5431603886",
+      "comment_created_at": "2026-08-26T21:58:45Z",
+      "comment_updated_at": "2026-08-26T21:58:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128905,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T21:59:24.049Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/127583-sessions-cleanup-all-agents",
+        "head_sha": "19fefe9b3a4d3188a4b61543efa72fc02ac6c2ba",
         "cluster_id": null,
         "job_path": null
       },
