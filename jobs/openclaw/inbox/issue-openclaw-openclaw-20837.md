@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/20837 in the command prompt builder. In src/auto-reply/reply/commands-system-prompt.ts, carry normalized channel, account-aware capabilities, supported channel actions, shell, and real host/OS/arch into buildSystemPromptParams using the established embedded-agent-runner pattern. Do not change reply routing, delivery defaults, configuration, or public APIs. Add regression coverage that fails before the change for command runtime metadata, and retain `/context` and `/export-session` consumers. Do not edit CHANGELOG.md.
+Repair the command-generated system prompt so `/context` fallback reports and `/export-session` retain normalized source-channel runtime facts already provided to normal embedded turns. First add a failing regression proving that `resolveCommandsSystemPromptBundle()` passes the command channel and account-aware metadata into runtime prompt construction; then reuse existing channel-capability/action helpers as appropriate. Preserve existing reply routing, channel docking, public config, and plugin APIs; do not introduce a selective-routing policy or edit CHANGELOG.md. Put concise release-note context in the PR body.
 
 Likely files:
 
@@ -78,8 +78,8 @@ Likely files:
 
 Validation:
 
-- pnpm test src/auto-reply/reply/commands-system-prompt.test.ts
-- pnpm test src/auto-reply/reply/commands-context-report.test.ts src/auto-reply/reply/commands-export-session.test.ts
+- pnpm test src/auto-reply/reply/commands-system-prompt.test.ts src/auto-reply/reply/commands-context-report.test.ts src/auto-reply/reply/commands-export-session.test.ts src/auto-reply/reply/inbound-meta.test.ts
+- pnpm test src/auto-reply/reply/routing-policy.test.ts
 - pnpm check:changed -- src/auto-reply/reply/commands-system-prompt.ts src/auto-reply/reply/commands-system-prompt.test.ts
 
 ## Operator Prompt
