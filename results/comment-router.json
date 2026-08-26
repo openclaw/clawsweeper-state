@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T08:01:41.641Z",
+  "updated_at": "2026-08-26T08:02:08.895Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124953:5346801762:2026-08-19T19:09:29Z:re_review",
@@ -31448,65 +31448,6 @@
       "target": null
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:122425:5422358695:2026-08-26T08:00:55Z:maintainer_approve_automerge",
-      "comment_id": "5422358695",
-      "comment_version_key": "5422358695:2026-08-26T08:00:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5422358695",
-      "comment_created_at": "2026-08-26T08:00:55Z",
-      "comment_updated_at": "2026-08-26T08:00:55Z",
-      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122425,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "structured ClawSweeper verdict: pass; PR head is behind base and needs a cloud rebase repair before automerge",
-      "expected_head_sha": "ae9e65dbf7dbd4a068dd3d64715cdfa5e48ef84e",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-26T08:01:40.530Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/inline-slash-skills",
-        "head_sha": "ae9e65dbf7dbd4a068dd3d64715cdfa5e48ef84e",
-        "cluster_id": "automerge-openclaw-openclaw-122425",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "pending",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "merge",
-          "status": "repair_needed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "pending",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "waiting",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-26T08:01:03Z:clawsweeper_auto_repair",
       "comment_id": "5357688049",
       "comment_version_key": "5357688049:2026-08-26T08:01:03Z",
@@ -31538,6 +31479,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122425:5422358695:2026-08-26T08:00:55Z:maintainer_approve_automerge",
+      "comment_id": "5422358695",
+      "comment_version_key": "5422358695:2026-08-26T08:00:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5422358695",
+      "comment_created_at": "2026-08-26T08:00:55Z",
+      "comment_updated_at": "2026-08-26T08:00:55Z",
+      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122425,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "structured ClawSweeper verdict: pass; PR head is behind base and needs a cloud rebase repair before automerge",
+      "expected_head_sha": "ae9e65dbf7dbd4a068dd3d64715cdfa5e48ef84e",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-26T08:02:08.895Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inline-slash-skills",
+        "head_sha": "ae9e65dbf7dbd4a068dd3d64715cdfa5e48ef84e",
+        "cluster_id": "automerge-openclaw-openclaw-122425",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "repair_needed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "active",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
+        }
+      ]
     }
   ]
 }
