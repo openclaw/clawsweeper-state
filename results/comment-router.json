@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T14:43:51.395Z",
+  "updated_at": "2026-08-26T14:43:52.427Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129975:5423156128:2026-08-26T09:15:16Z:re_review",
-      "comment_id": "5423156128",
-      "comment_version_key": "5423156128:2026-08-26T09:15:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129975#issuecomment-5423156128",
-      "comment_created_at": "2026-08-26T09:15:16Z",
-      "comment_updated_at": "2026-08-26T09:15:16Z",
-      "comment_body_sha256": "969a864bc175f3bf96d305b2a01c3a23e0d35e99437984a51ecc4cad91891bfd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129975,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T09:28:02.581Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/meeting-audio-exhaustive-switch",
-        "head_sha": "8ecb311eb1b5cd11e7e7ab688a192637c6547b1f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78747:4393916980:2026-08-26T09:21:11Z:clawsweeper_auto_repair",
       "comment_id": "4393916980",
@@ -32605,6 +32558,39 @@
         "kind": "pull_request",
         "branch": "dashboard-board-authority",
         "head_sha": "4af5df9cee15f6044ae6487d1f10b8ab93600667",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130105:5425874473:2026-08-26T14:36:21Z:clawsweeper_needs_human",
+      "comment_id": "5425874473",
+      "comment_version_key": "5425874473:2026-08-26T14:36:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130105#issuecomment-5425874473",
+      "comment_created_at": "2026-08-26T13:17:03Z",
+      "comment_updated_at": "2026-08-26T14:36:21Z",
+      "comment_body_sha256": "e2bd221b74118f4ca46544e9fe297578aa900c011c5489f96bea7d6e1331c016",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Fence reused-portal metadata before mutation (P1)** - The executor checks authority before open, but the serialized reuse branch can then update the existing portal’s title, description, path, and origin before...; Review finding: [P1] Fence reused-portal metadata before mutation — src/gateway/portals/portal-service.ts:178-189 - [medium] Stale authority updates an existing portal — src/gatew... (sha=bc6c6c887db7842e1d48d8d06fdcccc78d73a135)",
+      "expected_head_sha": "bc6c6c887db7842e1d48d8d06fdcccc78d73a135",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T14:43:52.427Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/orbs-concept-support-a3c2ac",
+        "head_sha": "bc6c6c887db7842e1d48d8d06fdcccc78d73a135",
         "cluster_id": null,
         "job_path": null
       }
