@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T13:22:42.951Z",
+  "updated_at": "2026-08-26T13:24:37.392Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129885:5421531696:2026-08-26T08:03:41Z:clawsweeper_needs_human",
-      "comment_id": "5421531696",
-      "comment_version_key": "5421531696:2026-08-26T08:03:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129885#issuecomment-5421531696",
-      "comment_created_at": "2026-08-26T06:34:50Z",
-      "comment_updated_at": "2026-08-26T08:03:41Z",
-      "comment_body_sha256": "8fe0bc219d3b3108b35d9f83aa09a20870828c6c9793990aed61abfdf3154d03",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129885,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Selecting the new persisted ui.prefs.theme value is additive for upgrades, but an older reader after a downgrade may not accept that value. (sha=b5344d5c950ba72feb16e988729802b360891639)",
-      "expected_head_sha": "b5344d5c950ba72feb16e988729802b360891639",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T08:05:57.170Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/neutral-skill-ui-c41900",
-        "head_sha": "b5344d5c950ba72feb16e988729802b360891639",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129954:5422386973:2026-08-26T08:03:46Z:clawsweeper_needs_human",
       "comment_id": "5422386973",
@@ -32584,6 +32551,53 @@
         "kind": "pull_request",
         "branch": "codex/worker-terminal-state-cleanup-20260826",
         "head_sha": "07165f7ef2d730f61c7cbb60fe3bf668374e19ab",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128848:5425958354:2026-08-26T13:23:55Z:re_review",
+      "comment_id": "5425958354",
+      "comment_version_key": "5425958354:2026-08-26T13:23:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128848#issuecomment-5425958354",
+      "comment_created_at": "2026-08-26T13:23:55Z",
+      "comment_updated_at": "2026-08-26T13:23:55Z",
+      "comment_body_sha256": "6839ddd9efcb085fb4574bac03986d4e1d03d3537a2f48c60224aaeb742a09de",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128848,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T13:24:35.415Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-responses-continuation-idle-ttl",
+        "head_sha": "d95eb24b41537a6328abcd0385f8f96571d49429",
         "cluster_id": null,
         "job_path": null
       },
