@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T16:14:00.380Z",
+  "updated_at": "2026-08-26T16:18:54.719Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122425:5262218740:2026-08-26T09:33:45Z:clawsweeper_auto_repair",
-      "comment_id": "5262218740",
-      "comment_version_key": "5262218740:2026-08-26T09:33:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5262218740",
-      "comment_created_at": "2026-08-12T04:18:02Z",
-      "comment_updated_at": "2026-08-26T09:33:45Z",
-      "comment_body_sha256": "1ebdaa22ce3e5f8787d40232d74e779580c0f24a24419f6d5c6f71f2b5c1e241",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122425,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=502c0ac0b45482486697addfe771fe4b6b4ba2f5)",
-      "expected_head_sha": "502c0ac0b45482486697addfe771fe4b6b4ba2f5",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-26T09:51:41.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/inline-slash-skills",
-        "head_sha": "502c0ac0b45482486697addfe771fe4b6b4ba2f5",
-        "cluster_id": "automerge-openclaw-openclaw-122425",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "active",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128692:5423370522:2026-08-26T09:33:33Z:re_review",
       "comment_id": "5423370522",
@@ -32983,6 +32936,39 @@
         "kind": "pull_request",
         "branch": "fix/talk-realtime-provider-activation",
         "head_sha": "6d484dd4df0a4496a11fb03a7ab68fb601fd0a34",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126856:5362509435:2026-08-26T16:06:25Z:clawsweeper_needs_human",
+      "comment_id": "5362509435",
+      "comment_version_key": "5362509435:2026-08-26T16:06:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126856#issuecomment-5362509435",
+      "comment_created_at": "2026-08-20T22:04:49Z",
+      "comment_updated_at": "2026-08-26T16:06:25Z",
+      "comment_body_sha256": "b0b7e745641fbbb61b9ce93fd3762e2609f59c518801ac384789c7d93c9fae0a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126856,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied monitor harness is valuable regression coverage, but its mocked iMessage transport and final dispatcher do not show after-fix nati... (sha=90e9d75cb5e8647df02768d52f68a47334e708d0)",
+      "expected_head_sha": "90e9d75cb5e8647df02768d52f68a47334e708d0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T16:18:54.719Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-imessage-self-chat-loop-126468",
+        "head_sha": "90e9d75cb5e8647df02768d52f68a47334e708d0",
         "cluster_id": null,
         "job_path": null
       }
