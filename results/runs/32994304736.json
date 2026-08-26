@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130237",
+  "mode": "autonomous",
+  "run_id": "32994304736",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32994304736",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130237.md",
+  "published_at": "2026-08-26T18:50:55.368Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130237",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130237",
+  "canonical_pr": null,
+  "summary": "#130237 remains the canonical open bug. Current main’s per-store loop propagates the deleted-owner database fence and aborts maintenance. Implementation is blocked in this worker because the checkout is read-only and required sibling ../codex source is absent, so the requested failing regression and repair cannot be authored or run here. A narrow executable fix artifact is provided.",
+  "actions": [
+    {
+      "target": "#130237",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130237",
+      "candidate_fix": null,
+      "reason": "Repair must be completed by a writable executor after directly inspecting the required Codex source and capturing the pre-fix regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130237",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130237",
+      "candidate_fix": null,
+      "reason": "A writable executor should reproduce, repair, validate, and open the single generated fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
