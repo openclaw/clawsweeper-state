@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T20:37:26.463Z",
+  "updated_at": "2026-08-26T20:37:29.003Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130182:5427137531:2026-08-26T14:53:31Z:re_review",
-      "comment_id": "5427137531",
-      "comment_version_key": "5427137531:2026-08-26T14:53:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130182#issuecomment-5427137531",
-      "comment_created_at": "2026-08-26T14:53:31Z",
-      "comment_updated_at": "2026-08-26T14:53:31Z",
-      "comment_body_sha256": "7af5bfca9abf7da3ac145df5c09c7051077682a85170f6afa90779d09a0226e6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130182,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T14:57:28.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-128967-stderr-tail-disclosure",
-        "head_sha": "2785a848e2d60ff480241064e00e48062403d589",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112820:5075163592:2026-08-26T14:49:46Z:clawsweeper_needs_human",
       "comment_id": "5075163592",
@@ -31612,6 +31565,39 @@
         "kind": "pull_request",
         "branch": "codex/loc-sweep-telegram-callbacks-20260826",
         "head_sha": "f8002353b6fb7c6cbcce8062fb68d816119d4810",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T20:36:20Z:clawsweeper_needs_human",
+      "comment_id": "5418912080",
+      "comment_version_key": "5418912080:2026-08-26T20:36:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129705#issuecomment-5418912080",
+      "comment_created_at": "2026-08-26T00:33:33Z",
+      "comment_updated_at": "2026-08-26T20:36:20Z",
+      "comment_body_sha256": "e3beb20c91a13db64b624d816595f4115f6257606d10e31e0820f374cc75597c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129705,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the CI guard with the TruffleHog pin (P1)** - The new SHA no longer matches test/scripts/ci-workflow-guards.test.ts, which still expects the former pin. The selected workflow guard will fail until it...; Review finding: [P1] Synchronize the CI guard with the TruffleHog pin — .github/workflows/ci.yml:1162 - [P1] Advance the configured TruffleHog scanner payload — .github/workflows/... (sha=c169cd859ef0f1e067866d8e37f56ee939a52ac2)",
+      "expected_head_sha": "c169cd859ef0f1e067866d8e37f56ee939a52ac2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T20:37:29.003Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-4b81979af6",
+        "head_sha": "c169cd859ef0f1e067866d8e37f56ee939a52ac2",
         "cluster_id": null,
         "job_path": null
       }
