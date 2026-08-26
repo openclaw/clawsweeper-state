@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:28:02.621Z",
+  "updated_at": "2026-08-26T02:28:06.036Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129627:5417336861:2026-08-25T21:55:03Z:re_review",
-      "comment_id": "5417336861",
-      "comment_version_key": "5417336861:2026-08-25T21:55:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129627#issuecomment-5417336861",
-      "comment_created_at": "2026-08-25T21:55:03Z",
-      "comment_updated_at": "2026-08-25T21:55:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129627,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T21:55:48.946Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-main-model-resolution-partial-mock",
-        "head_sha": "731ff035c102271600e6d6e7563d2b5b4e0b6a80",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126320:5416219811:2026-08-25T21:56:34Z:re_review",
       "comment_id": "5416219811",
@@ -32766,6 +32719,39 @@
         "kind": "pull_request",
         "branch": "codex/issue-119030-reply-threading",
         "head_sha": "99e86925ced139cdbf00684772a9d9e5e8487fd9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127813:5379454623:2026-08-26T02:22:21Z:clawsweeper_needs_human",
+      "comment_id": "5379454623",
+      "comment_version_key": "5379454623:2026-08-26T02:22:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127813#issuecomment-5379454623",
+      "comment_created_at": "2026-08-22T09:03:39Z",
+      "comment_updated_at": "2026-08-26T02:22:21Z",
+      "comment_body_sha256": "cbe8b70a3f7c2ff00c50a190f07491444ce3e7138e731f72eb2487f1c3703d86",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127813,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes existing owner/admin and alias callers: bare /model &lt;model> would no longer persist a configured default unless callers add -a or -g. (sha=2681fa4ecf4cca51dd26af15755665aba0d0da4b)",
+      "expected_head_sha": "2681fa4ecf4cca51dd26af15755665aba0d0da4b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T02:28:06.036Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/explicit-model-persistence-scopes",
+        "head_sha": "2681fa4ecf4cca51dd26af15755665aba0d0da4b",
         "cluster_id": null,
         "job_path": null
       }
