@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:04:53.011Z",
+  "updated_at": "2026-08-26T02:05:01.097Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111278:5014874256:2026-08-25T20:22:15Z:clawsweeper_auto_repair",
-      "comment_id": "5014874256",
-      "comment_version_key": "5014874256:2026-08-25T20:22:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111278#issuecomment-5014874256",
-      "comment_created_at": "2026-07-19T07:31:55Z",
-      "comment_updated_at": "2026-08-25T20:22:15Z",
-      "comment_body_sha256": "80bdd9b197f1b7855179522050063ec0026c0e045976310f8e49f3c5b4929989",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111278,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3c344e0a98f34dbb954275f45ca738f744aea3e7)",
-      "expected_head_sha": "3c344e0a98f34dbb954275f45ca738f744aea3e7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T21:00:16.523Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/durable-core-pr3-recovery-v5",
-        "head_sha": "3c344e0a98f34dbb954275f45ca738f744aea3e7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119237:5180120776:2026-08-25T20:38:52Z:clawsweeper_needs_human",
       "comment_id": "5180120776",
@@ -32780,6 +32747,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128804:5419579853:2026-08-26T02:04:13Z:re_review",
+      "comment_id": "5419579853",
+      "comment_version_key": "5419579853:2026-08-26T02:04:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128804#issuecomment-5419579853",
+      "comment_created_at": "2026-08-26T02:04:13Z",
+      "comment_updated_at": "2026-08-26T02:04:13Z",
+      "comment_body_sha256": "53ae48217f0ac85a45e6d6ee3e5f10aa4228cb7f9b365669756e3ba31fe3699a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128804,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T02:04:58.834Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/terminal-shell-readiness-handoff",
+        "head_sha": "ff7831cb7b645a2aa43a7cb9000002b7ba6dae59",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
