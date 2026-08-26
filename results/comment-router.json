@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T05:20:33.184Z",
+  "updated_at": "2026-08-26T05:20:54.123Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129754:5419608662:2026-08-26T02:07:59Z:clawsweeper_needs_human",
-      "comment_id": "5419608662",
-      "comment_version_key": "5419608662:2026-08-26T02:07:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129754#issuecomment-5419608662",
-      "comment_created_at": "2026-08-26T02:07:59Z",
-      "comment_updated_at": "2026-08-26T02:07:59Z",
-      "comment_body_sha256": "c47bbb731c41f10c839d2ac31990668671217fc7e8f1e08088c36c9e4da49d04",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129754,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The new tests exercise real SQLite persistence but mock the announce flow; add a redacted production-boundary fault trace showing delete, resta... (sha=2ea15917330dea1cf73fc15778e7760ddf2e4726)",
-      "expected_head_sha": "2ea15917330dea1cf73fc15778e7760ddf2e4726",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T02:12:02.961Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-completion-restore-durability",
-        "head_sha": "2ea15917330dea1cf73fc15778e7760ddf2e4726",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129757:5419618419:2026-08-26T02:09:26Z:clawsweeper_needs_human",
       "comment_id": "5419618419",
@@ -32166,6 +32133,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122425:5262218740:2026-08-26T05:13:52Z:clawsweeper_needs_human",
+      "comment_id": "5262218740",
+      "comment_version_key": "5262218740:2026-08-26T05:13:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5262218740",
+      "comment_created_at": "2026-08-12T04:18:02Z",
+      "comment_updated_at": "2026-08-26T05:13:52Z",
+      "comment_body_sha256": "6155f6e6cf315454fefceacd522bbd23729be8b8ddfb3be9aaeaedd983ec4001",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122425,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Recognized inline slash text in existing drafts can now dispatch separately instead of reaching the model as literal prose; the PR body calls this intentional, but it is a compatibili... (sha=3703e232ffe3314f0018caa7f144c4ce6cfd5979)",
+      "expected_head_sha": "3703e232ffe3314f0018caa7f144c4ce6cfd5979",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T05:20:54.123Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inline-slash-skills",
+        "head_sha": "3703e232ffe3314f0018caa7f144c4ce6cfd5979",
+        "cluster_id": "automerge-openclaw-openclaw-122425",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
