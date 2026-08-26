@@ -1,0 +1,75 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130059",
+  "mode": "autonomous",
+  "run_id": "32961805265",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32961805265",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130059.md",
+  "published_at": "2026-08-26T11:47:29.517Z",
+  "canonical": "#130059",
+  "canonical_issue": "#130059",
+  "canonical_pr": null,
+  "summary": "#130059 remains the canonical, source-reproducible bug. Current main removes the active provider-ID index on terminal finalization, then a late Twilio completed callback can enter outbound auto-registration. A narrow retained-terminal reconciliation is ready to implement, but this read-only checkout cannot edit/create the branch, ../codex is absent for the required direct Codex-source gate, and validation cannot start because tsx is missing.",
+  "actions": [
+    {
+      "target": "#130059",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130059",
+      "candidate_fix": null,
+      "reason": "Implement the issue-scoped owner-boundary repair on clawsweeper/issue-openclaw-openclaw-130059."
+    },
+    {
+      "target": "#124596",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#130059",
+      "candidate_fix": null,
+      "reason": "Do not fold a new outbound identity/config contract into this bug-only repair."
+    },
+    {
+      "target": "#130054",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#130059",
+      "candidate_fix": null,
+      "reason": "Keep the config/product decision separate from this narrow state-ownership fix."
+    },
+    {
+      "target": "#124594",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#130059",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure action is valid."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_independent": 2,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with the required sibling ../codex source (or an environment where it can be cloned) so the mandatory direct Codex-source gate can be completed before a repair verdict/code change.",
+    "Install workspace dependencies in a writable normal checkout. The required focused command failed before test collection because module 'tsx' is absent; this worker cannot run the mandated pnpm install retry in the read-only sandbox."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
