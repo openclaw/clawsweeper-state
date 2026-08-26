@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-130226"
 mode: "autonomous"
-run_id: "33019641723"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33019641723"
+run_id: "33023841760"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33023841760"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-26T22:38:07.673Z"
-canonical: "#130226"
-canonical_issue: "#130226"
+published_at: "2026-08-26T23:44:08.712Z"
+canonical: "https://github.com/openclaw/openclaw/issues/130226"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/130226"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-130226
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33019641723](https://github.com/openclaw/clawsweeper/actions/runs/33019641723)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33023841760](https://github.com/openclaw/clawsweeper/actions/runs/33023841760)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: #130226
+Canonical: https://github.com/openclaw/openclaw/issues/130226
 
 ## Summary
 
-Current main still has the bug: mid-turn recovery records the reserve-adjusted budget but forwards the raw context budget to forced context-engine compaction. This read-only checkout lacks `tsx`, lacks the required sibling `../codex` source checkout, and cannot create the required code/test edits or PR branch.
+Current main retains the reported raw-versus-reserve budget mismatch, but implementation is blocked: this checkout is read-only, dependencies are absent, and the mandatory sibling ../codex source checkout is unavailable for the required direct contract inspection before a code-change verdict.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Current main still has the bug: mid-turn recovery records the reserve-adjusted b
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #130226 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ Current main still has the bug: mid-turn recovery records the reserve-adjusted b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #130226 | keep_canonical | planned | canonical | A narrow repair is clear, but environment constraints block mandated source inspection, editing, and validation. |
-| #130226 | build_fix_artifact | blocked | canonical | Apply the artifact in a writable dependency-ready checkout. |
+| #130226 | fix_needed | blocked | canonical | Narrow repair remains indicated, but a writable checkout with dependencies and sibling Codex source is required before editing or opening the PR. |
+| cluster:issue-openclaw-openclaw-130226 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor after direct Codex-source inspection and dependency installation. |
 
 ## Needs Human
 
-- Provision a writable checkout with dependencies and the required sibling ../codex source checkout, then apply and validate the narrow fix artifact.
+- none
