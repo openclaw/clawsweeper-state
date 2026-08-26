@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T10:54:34.996Z",
+  "updated_at": "2026-08-26T10:55:01.913Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123556:5316295756:2026-08-17T12:52:01Z:re_review",
-      "comment_id": "5316295756",
-      "comment_version_key": "5316295756:2026-08-17T12:52:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123556#issuecomment-5316295756",
-      "comment_created_at": "2026-08-17T12:52:01Z",
-      "comment_updated_at": "2026-08-17T12:52:01Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123556,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T07:08:26.329Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123556:5316361202:2026-08-17T12:58:07Z:re_review",
       "comment_id": "5316361202",
@@ -32005,6 +31978,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122425:5262218740:2026-08-26T10:48:29Z:clawsweeper_needs_human",
+      "comment_id": "5262218740",
+      "comment_version_key": "5262218740:2026-08-26T10:48:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5262218740",
+      "comment_created_at": "2026-08-12T04:18:02Z",
+      "comment_updated_at": "2026-08-26T10:48:29Z",
+      "comment_body_sha256": "33057246f0fb0cc287fd89bcd2585cf48aaf83084806457a2daee6e8a97bd2d4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122425,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Inline /reset, /model, and similar commands intentionally affect the active session while adjacent prose remains unsent; the accepted product behavior needs exact-head CI to finish be... (sha=30eaa143dfe6c8bcce6f875740cd2b54242eedb5)",
+      "expected_head_sha": "30eaa143dfe6c8bcce6f875740cd2b54242eedb5",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T10:55:01.913Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inline-slash-skills",
+        "head_sha": "30eaa143dfe6c8bcce6f875740cd2b54242eedb5",
+        "cluster_id": "automerge-openclaw-openclaw-122425",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
