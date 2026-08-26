@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T00:54:33.379Z",
+  "updated_at": "2026-08-26T00:54:33.757Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129495:5415194386:2026-08-25T18:54:04Z:re_review",
-      "comment_id": "5415194386",
-      "comment_version_key": "5415194386:2026-08-25T18:54:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129495#issuecomment-5415194386",
-      "comment_created_at": "2026-08-25T18:54:04Z",
-      "comment_updated_at": "2026-08-25T18:54:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129495,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T18:54:52.664Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/unable-to-dismiss-this-alert",
-        "head_sha": "4e503a98efa98172c3224b262695dd979a23cf35",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129481:5415207644:2026-08-25T18:55:15Z:clawsweeper_needs_human",
       "comment_id": "5415207644",
@@ -32896,6 +32849,39 @@
         "kind": "pull_request",
         "branch": "fix/copilot-opus5-reasoning-efforts",
         "head_sha": "27b1cb97f1bd03d54089bb8e2d307f52849eadb3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129645:5418771181:2026-08-26T00:50:54Z:clawsweeper_needs_human",
+      "comment_id": "5418771181",
+      "comment_version_key": "5418771181:2026-08-26T00:50:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129645#issuecomment-5418771181",
+      "comment_created_at": "2026-08-26T00:13:58Z",
+      "comment_updated_at": "2026-08-26T00:50:54Z",
+      "comment_body_sha256": "4f8e3943508c257ba884b6fd6c9fb5fc010a46d785630c073b24ef39521165cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129645,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The supplied exact-head CI state has a failing openclaw/ci-gate; resolve it and revalidate this fallback path after any branch refresh before merge. (sha=6a6bad329a5626f8f680953df04accdc7e0cc28f)",
+      "expected_head_sha": "6a6bad329a5626f8f680953df04accdc7e0cc28f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T00:54:33.757Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-cron-failure-alert-session-routing-20260825",
+        "head_sha": "6a6bad329a5626f8f680953df04accdc7e0cc28f",
         "cluster_id": null,
         "job_path": null
       }
