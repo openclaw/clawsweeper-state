@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-129756",
+  "mode": "autonomous",
+  "run_id": "32921005538",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32921005538",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-129756.md",
+  "published_at": "2026-08-26T03:17:43.823Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/129756",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/129756",
+  "canonical_pr": null,
+  "summary": "#129756 is a source-confirmed TUI bug on main c841a9958abc8344b37ce5c6c5a06bec4cfa6b91. A narrow fix plan is ready, but this read-only checkout cannot modify a branch; ../codex is absent (required direct-inspection gate), and focused Vitest cannot start because tsx is not installed.",
+  "actions": [
+    {
+      "target": "#129756",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#129756",
+      "candidate_fix": null,
+      "reason": "Implementation is narrow and suitable for a new fix PR, but local modification and required validation are blocked by the worker environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-129756",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#129756",
+      "candidate_fix": null,
+      "reason": "Create the narrow credited fix PR once a writable checkout with dependencies and the required ../codex sibling checkout is available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
