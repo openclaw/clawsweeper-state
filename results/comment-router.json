@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T04:51:46.494Z",
+  "updated_at": "2026-08-26T04:52:01.939Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:75336:5070498218:2026-07-24T13:41:12Z:re_review",
-      "comment_id": "5070498218",
-      "comment_version_key": "5070498218:2026-07-24T13:41:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/75336#issuecomment-5070498218",
-      "comment_created_at": "2026-07-24T13:41:12Z",
-      "comment_updated_at": "2026-07-24T13:41:12Z",
-      "comment_body_sha256": "dfbff1437c4aab92ddf9b011bf7026981cae08d5128952de0bf3a454aed22bae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 75336,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T01:56:07.169Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:75336:5256747046:2026-08-11T17:42:38Z:re_review",
       "comment_id": "5256747046",
@@ -32219,6 +32192,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122425:5262218740:2026-08-26T04:45:55Z:clawsweeper_needs_human",
+      "comment_id": "5262218740",
+      "comment_version_key": "5262218740:2026-08-26T04:45:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5262218740",
+      "comment_created_at": "2026-08-12T04:18:02Z",
+      "comment_updated_at": "2026-08-26T04:45:55Z",
+      "comment_body_sha256": "a16fed9e1a6f4adf8f4aef08121b564dd71e562b84d0eaa67e48ce5675339f20",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122425,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The intentional Enter-key behavior change for recognized inline slash tokens needs exact-head validation after GitHub constructs the current merge result. (sha=3703e232ffe3314f0018caa7f144c4ce6cfd5979)",
+      "expected_head_sha": "3703e232ffe3314f0018caa7f144c4ce6cfd5979",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T04:52:01.939Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inline-slash-skills",
+        "head_sha": "3703e232ffe3314f0018caa7f144c4ce6cfd5979",
+        "cluster_id": "automerge-openclaw-openclaw-122425",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
