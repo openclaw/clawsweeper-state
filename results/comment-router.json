@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:22:21.791Z",
+  "updated_at": "2026-08-26T03:22:23.466Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128306:5418565379:2026-08-25T23:48:07Z:re_review",
-      "comment_id": "5418565379",
-      "comment_version_key": "5418565379:2026-08-25T23:48:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128306#issuecomment-5418565379",
-      "comment_created_at": "2026-08-25T23:48:07Z",
-      "comment_updated_at": "2026-08-25T23:48:07Z",
-      "comment_body_sha256": "e7ca75d2b2dd7b2549af62fef0a281d38fee449416d09736c25083a648ae759b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128306,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T23:49:09.127Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/desktop-view-only-rfb-upstream",
-        "head_sha": "392e5755fb3a820d33a91e877023fc8191d4dbe9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124301:5418575246:2026-08-25T23:49:05Z:re_review",
       "comment_id": "5418575246",
@@ -32261,6 +32214,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T03:22:21.791Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121343:5235627695:2026-08-26T03:15:53Z:clawsweeper_auto_repair",
+      "comment_id": "5235627695",
+      "comment_version_key": "5235627695:2026-08-26T03:15:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121343#issuecomment-5235627695",
+      "comment_created_at": "2026-08-10T03:44:41Z",
+      "comment_updated_at": "2026-08-26T03:15:53Z",
+      "comment_body_sha256": "ee7af525084c40d5fdeaa3466bb754b930f266e9b74540e19c4b9f424d5e4d69",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121343,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f999d0ae4d9a83a3861c617c9a4991b00dfa8dc8)",
+      "expected_head_sha": "f999d0ae4d9a83a3861c617c9a4991b00dfa8dc8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T03:22:23.466Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-auth-error-mapping-upstream",
+        "head_sha": "f999d0ae4d9a83a3861c617c9a4991b00dfa8dc8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
