@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:55:46.142Z",
+  "updated_at": "2026-08-26T09:56:00.448Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129876:5420889143:2026-08-26T06:39:41Z:clawsweeper_needs_human",
-      "comment_id": "5420889143",
-      "comment_version_key": "5420889143:2026-08-26T06:39:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129876#issuecomment-5420889143",
-      "comment_created_at": "2026-08-26T05:10:07Z",
-      "comment_updated_at": "2026-08-26T06:39:41Z",
-      "comment_body_sha256": "37f4197423d94ac3c78962c5379a87a59a0d0b24587d555a261b3473c7127549",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129876,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head is conflict-dirty; resolving it can alter migration ordering or test fixtures, so the runtime-open and Doctor upgrade proof must be rerun on the resolved head. (sha=50beca0b9a97d8f504793002256524610653f4ac)",
-      "expected_head_sha": "50beca0b9a97d8f504793002256524610653f4ac",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T06:46:38.850Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/sqlite-singleton-foldin",
-        "head_sha": "50beca0b9a97d8f504793002256524610653f4ac",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129845:5420500893:2026-08-26T06:37:37Z:clawsweeper_auto_repair",
       "comment_id": "5420500893",
@@ -31503,6 +31470,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130057:5423628464:2026-08-26T09:55:15Z:re_review",
+      "comment_id": "5423628464",
+      "comment_version_key": "5423628464:2026-08-26T09:55:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130057#issuecomment-5423628464",
+      "comment_created_at": "2026-08-26T09:55:15Z",
+      "comment_updated_at": "2026-08-26T09:55:15Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130057,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T09:55:58.106Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup-backup-outcome-recording",
+        "head_sha": "4222a0614c7308b22fbddc67e08ec85a97ad8c57",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
