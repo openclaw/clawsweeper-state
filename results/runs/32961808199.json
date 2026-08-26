@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130018",
+  "mode": "autonomous",
+  "run_id": "32961808199",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32961808199",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130018.md",
+  "published_at": "2026-08-26T12:44:45.345Z",
+  "canonical": "#130018",
+  "canonical_issue": "#130018",
+  "canonical_pr": null,
+  "summary": "Confirmed narrow Doctor migration defect, but the read-only sandbox and absent required ../codex checkout prevent creating and validating the patch.",
+  "actions": [
+    {
+      "target": "#130018",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130018",
+      "candidate_fix": null,
+      "reason": "Filesystem is read-only, and the mandated ../codex source checkout is absent and cannot be cloned."
+    },
+    {
+      "target": "#130018",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130018",
+      "candidate_fix": null,
+      "reason": "A writable worker can make the narrow owner-boundary repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with the required ../codex source clone, then rerun this repair job."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
