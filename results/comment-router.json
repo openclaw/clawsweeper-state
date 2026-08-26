@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T07:33:46.932Z",
+  "updated_at": "2026-08-26T07:34:12.913Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129840:5420430610:2026-08-26T04:06:44Z:clawsweeper_needs_human",
-      "comment_id": "5420430610",
-      "comment_version_key": "5420430610:2026-08-26T04:06:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129840#issuecomment-5420430610",
-      "comment_created_at": "2026-08-26T04:06:44Z",
-      "comment_updated_at": "2026-08-26T04:06:44Z",
-      "comment_body_sha256": "007b4c841b8e8e51a67b60aededfd164554d1d2ae70ef4cc3c730680b4f96660",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129840,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a clean merge but the branch is behind main and its exact-head check rollup is incomplete; refresh review after required CI finishes. (sha=1b9cb0928364640bf200525cb9b23ecc3f566a68)",
-      "expected_head_sha": "1b9cb0928364640bf200525cb9b23ecc3f566a68",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T04:12:03.644Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-channel-sender-allowlist-evidence-20260826",
-        "head_sha": "1b9cb0928364640bf200525cb9b23ecc3f566a68",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129844:5420465364:2026-08-26T04:11:05Z:clawsweeper_auto_repair",
       "comment_id": "5420465364",
@@ -31862,6 +31829,53 @@
         "kind": "pull_request",
         "branch": "openclaw/pwa-stuck-after-gateway-update",
         "head_sha": "fece7e004ea403aaa45876bea08759d6f6a8ed12",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128631:5422081381:2026-08-26T07:33:29Z:re_review",
+      "comment_id": "5422081381",
+      "comment_version_key": "5422081381:2026-08-26T07:33:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128631#issuecomment-5422081381",
+      "comment_created_at": "2026-08-26T07:33:29Z",
+      "comment_updated_at": "2026-08-26T07:33:29Z",
+      "comment_body_sha256": "28c8892dfd9407271dde680bd54100e24618746e97e0220dc55c31862919ae33",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128631,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T07:34:10.845Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/team-server-performance-bottlenecks-2-20260824",
+        "head_sha": "cca7ad07b35d6e9c7fd265ee7ee41f1dc5ff9733",
         "cluster_id": null,
         "job_path": null
       },
