@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the workspace-only sandbox read path so a declared read-only Docker bind is permitted by the same canonical mount model used by the sandbox filesystem bridge. Reproduce the reported failure before editing. In src/agents/core-coding-tools.ts, replace the partial read-only guard mount derivation with canonical read-only non-workspace mounts from src/agents/sandbox/fs-paths.ts; do not add configuration, broaden write/edit/apply_patch access, or permit undeclared paths. Add an assembled-tool regression using workspaceAccess:none and a real declared :ro bind, proving read succeeds, writes remain unavailable/rejected, and an undeclared absolute path still fails. Do not edit CHANGELOG.md; record user-visible release context in the PR body.
+Repair the workspace-only sandbox read guard so it authorizes the same declared Docker bind mounts that the sandbox filesystem bridge can resolve. Keep write and edit confinement unchanged; preserve protected-skill precedence and mount precedence, including overlapping container destinations. Add a regression that exercises the real core coding-tool assembly or agent tool factory with `workspaceOnly: true`, `workspaceAccess: "none"`, and a read-only bind at a distinct container path; prove read succeeds through the bridge while write/edit remain rejected. Do not add a config option, fallback, or CHANGELOG entry. Stop for maintainer review if sharing the canonical mount table would change authorization for paths not represented by the bridge.
 
 Likely files:
 
 - src/agents/core-coding-tools.ts
-- src/agents/agent-tools.create-openclaw-coding-tools.test.ts
 - src/agents/sandbox/fs-paths.ts
+- src/agents/agent-tools.workspace-paths.test.ts
+- src/agents/sandbox/fs-paths.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/agent-tools.create-openclaw-coding-tools.test.ts
-- node scripts/run-vitest.mjs src/agents/sandbox/fs-paths.test.ts
-- node scripts/run-vitest.mjs src/agents/agent-tools.read.workspace-root-guard.test.ts
-- node scripts/check-changed.mjs -- src/agents/core-coding-tools.ts src/agents/agent-tools.create-openclaw-coding-tools.test.ts
+- pnpm test:fast -- src/agents/agent-tools.workspace-paths.test.ts src/agents/sandbox/fs-paths.test.ts
+- Run the new focused regression through the real core tool assembly and confirm it fails before the repair.
+- Run a Docker sandbox with the reported read-only bind: read succeeds with workspace-only enabled, while write and edit to that bind remain denied.
 
 ## Operator Prompt
 
