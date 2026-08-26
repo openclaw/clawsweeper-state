@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the command-prompt metadata gap in https://github.com/openclaw/openclaw/issues/20837. Preserve normal inbound behavior and trusted reply routing; do not add model-directed channel selection, config, or fallback routes. In src/auto-reply/reply/commands-system-prompt.ts, derive normalized account-aware runtime metadata equivalent to the embedded run path so /context estimates and /export-session reconstructions include channel, capabilities, shell, real host/OS/architecture, and applicable channel actions. Add an owner-boundary regression that fails before the repair. Do not edit CHANGELOG.md; include release-note context in the PR body.
+Repair command-generated system-prompt reconstruction so `/context` fallback reporting and `/export-session` use the normal embedded-run channel/runtime metadata contract. Reuse normalized originating channel, account-aware capabilities, supported channel actions, message guidance, shell, host, OS, and architecture as appropriate; do not change reply routing, add configuration, or make the model choose delivery channels. Treat https://github.com/openclaw/openclaw/pull/21271 as source context only. Add regression coverage that fails before the repair, run the listed focused checks, and put release-note context in the PR body rather than editing CHANGELOG.md.
 
 Likely files:
 
 - src/auto-reply/reply/commands-system-prompt.ts
 - src/auto-reply/reply/commands-system-prompt.test.ts
-- src/auto-reply/reply/commands-context-report.test.ts
+- src/agents/embedded-agent-runner/run/attempt-system-prompt-prepare.ts
 - src/auto-reply/reply/commands-export-session.test.ts
 
 Validation:
 
-- pnpm test src/auto-reply/reply/commands-system-prompt.test.ts src/auto-reply/reply/commands-context-report.test.ts src/auto-reply/reply/commands-export-session.test.ts
-- pnpm exec oxfmt --check --threads=1 src/auto-reply/reply/commands-system-prompt.ts src/auto-reply/reply/commands-system-prompt.test.ts
+- pnpm test src/auto-reply/reply/commands-system-prompt.test.ts src/auto-reply/reply/inbound-meta.test.ts
+- pnpm test src/auto-reply/reply/commands-context-report.test.ts src/auto-reply/reply/commands-export-session.test.ts
+- pnpm format src/auto-reply/reply/commands-system-prompt.ts src/auto-reply/reply/commands-system-prompt.test.ts
 
 ## Operator Prompt
 
