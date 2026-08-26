@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T07:13:07.916Z",
+  "updated_at": "2026-08-26T07:14:32.483Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128816:5399529579:2026-08-26T03:45:51Z:clawsweeper_needs_human",
-      "comment_id": "5399529579",
-      "comment_version_key": "5399529579:2026-08-26T03:45:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128816#issuecomment-5399529579",
-      "comment_created_at": "2026-08-24T18:23:31Z",
-      "comment_updated_at": "2026-08-26T03:45:51Z",
-      "comment_body_sha256": "a09a008b25d5ce9e939f6ec4e2f4b919ba48f6eec61ab36149f218d90a1af4b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128816,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This upgrade-time migration rewrites persisted session data; a cursor or ordering mistake could leave legacy media fields unmigrated, so exact-head required checks must complete befor... (sha=3cfab1c31ec32b8be49eeffb69106c3b63392118)",
-      "expected_head_sha": "3cfab1c31ec32b8be49eeffb69106c3b63392118",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T03:53:07.648Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-bound-media-rescan",
-        "head_sha": "3cfab1c31ec32b8be49eeffb69106c3b63392118",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128816:5417714596:2026-08-25T22:29:24Z:re_review",
       "comment_id": "5417714596",
@@ -31783,6 +31750,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111922:5028191194:2026-08-26T07:12:06Z:clawsweeper_needs_human",
+      "comment_id": "5028191194",
+      "comment_version_key": "5028191194:2026-08-26T07:12:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111922#issuecomment-5028191194",
+      "comment_created_at": "2026-07-20T23:19:41Z",
+      "comment_updated_at": "2026-08-26T07:12:06Z",
+      "comment_body_sha256": "da27d9180b8bbceae1a0459de7315ea5b599363511b6f04a234cb09b54543bcd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111922,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes future session-corpus selection: assistant replies exactly matching the bounded patterns will no longer become Dreaming candidates; the listed durable ident... (sha=0764f2d218980f346aec4deea2f624aa1a029b91)",
+      "expected_head_sha": "0764f2d218980f346aec4deea2f624aa1a029b91",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T07:14:32.483Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-filter-process-chatter-80664",
+        "head_sha": "0764f2d218980f346aec4deea2f624aa1a029b91",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
