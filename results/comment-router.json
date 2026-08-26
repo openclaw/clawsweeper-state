@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T07:47:21.681Z",
+  "updated_at": "2026-08-26T07:48:57.309Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129858:5420576382:2026-08-26T04:23:52Z:re_review",
-      "comment_id": "5420576382",
-      "comment_version_key": "5420576382:2026-08-26T04:23:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129858#issuecomment-5420576382",
-      "comment_created_at": "2026-08-26T04:23:52Z",
-      "comment_updated_at": "2026-08-26T04:23:52Z",
-      "comment_body_sha256": "34fda9c933108e9e9aed3d1000387a5ce1d1fac8d636b86c75bdcf5db7cc2538",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129858,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T04:24:33.855Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/problem-solution-2",
-        "head_sha": "f0178375e60d3a9583ccf12617ed9acdaf7dd520",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ffmpeg-wasm:6:5366886700:2026-08-26T04:21:35Z:clawsweeper_auto_repair",
       "comment_id": "5366886700",
@@ -31917,6 +31870,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129962:5422211237:2026-08-26T07:46:10Z:clawsweeper_needs_human",
+      "comment_id": "5422211237",
+      "comment_version_key": "5422211237:2026-08-26T07:46:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129962#issuecomment-5422211237",
+      "comment_created_at": "2026-08-26T07:46:10Z",
+      "comment_updated_at": "2026-08-26T07:46:10Z",
+      "comment_body_sha256": "e55131edba0982b75cd03744395d077f918a712d4ef6ad630398eaffc28e3b26",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129962,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This moves a published provider’s event assembly onto a shared parser, so the direct-mode compatibility tests and exact-head CI should complete before merge. (sha=5afc4082c9ee4dbf06e7bb53efc3167f13a52cf0)",
+      "expected_head_sha": "5afc4082c9ee4dbf06e7bb53efc3167f13a52cf0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T07:48:57.309Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/unify-openai-completions-stream-processing",
+        "head_sha": "5afc4082c9ee4dbf06e7bb53efc3167f13a52cf0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
