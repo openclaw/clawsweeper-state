@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T20:50:57.884Z",
+  "updated_at": "2026-08-26T20:50:59.766Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127770:5427598588:2026-08-26T15:40:50Z:re_review",
-      "comment_id": "5427598588",
-      "comment_version_key": "5427598588:2026-08-26T15:40:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127770#issuecomment-5427598588",
-      "comment_created_at": "2026-08-26T15:40:50Z",
-      "comment_updated_at": "2026-08-26T15:40:50Z",
-      "comment_body_sha256": "2719c4f26f94dd3e5ec9ec8a1a981bfba43779ba4a8eb84370cfd12879b3b891",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127770,
-      "author": "shannon0430",
-      "author_id": 258282406,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T15:57:17.965Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-native-pdf-transport",
-        "head_sha": "d0deb629f562f6dd5a40148df5e7a1d65fb4c8b3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5427640040:2026-08-26T15:46:10Z:re_review",
       "comment_id": "5427640040",
@@ -31526,6 +31479,39 @@
         "kind": "pull_request",
         "branch": "release/next-unreleased-0.9.2-31835391693",
         "head_sha": "fe353a46d17211eb0e1d5328521ed4984f17016f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsg:240:5417121506:2026-08-26T20:45:06Z:clawsweeper_needs_human",
+      "comment_id": "5417121506",
+      "comment_version_key": "5417121506:2026-08-26T20:45:06Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/240#issuecomment-5417121506",
+      "comment_created_at": "2026-08-25T21:34:59Z",
+      "comment_updated_at": "2026-08-26T20:45:06Z",
+      "comment_body_sha256": "f7d1d64f7a76885ca1f3288bff75e5f32d1231233be8bf59c91688152f3046b6",
+      "repo": "openclaw/imsg",
+      "issue_number": 240,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - A MEMBER-authored draft requires explicit maintainer readiness and merge handling; no mechanical repair is indicated. (sha=c24003f8d692b80b4582cb430349248418e5f89c)",
+      "expected_head_sha": "c24003f8d692b80b4582cb430349248418e5f89c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T20:50:59.766Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codeql-workflow-permissions-20260825",
+        "head_sha": "c24003f8d692b80b4582cb430349248418e5f89c",
         "cluster_id": null,
         "job_path": null
       }
