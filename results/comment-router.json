@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:40:11.665Z",
+  "updated_at": "2026-08-26T02:42:08.068Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129527:5417684232:2026-08-25T22:26:29Z:re_review",
-      "comment_id": "5417684232",
-      "comment_version_key": "5417684232:2026-08-25T22:26:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129527#issuecomment-5417684232",
-      "comment_created_at": "2026-08-25T22:26:29Z",
-      "comment_updated_at": "2026-08-25T22:26:29Z",
-      "comment_body_sha256": "832e1442d6f595e0c04f28996d9d82bcb74df87002feb77e3bb220f3245b6b3c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129527,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T22:27:16.251Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/nice-northcutt-d51e80",
-        "head_sha": "5db2aa284d8421c388afe2e984ed8834499d91ec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129307:5410700372:2026-08-25T22:22:18Z:clawsweeper_auto_repair",
       "comment_id": "5410700372",
@@ -32672,6 +32625,39 @@
         "kind": "pull_request",
         "branch": "steipete/pr-blocked-gateway-reconciliation-a45910",
         "head_sha": "317367a62c4796d1046d847dd1fdf993ec615b1a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129403:5412624782:2026-08-26T02:41:21Z:clawsweeper_needs_human",
+      "comment_id": "5412624782",
+      "comment_version_key": "5412624782:2026-08-26T02:41:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129403#issuecomment-5412624782",
+      "comment_created_at": "2026-08-25T15:19:12Z",
+      "comment_updated_at": "2026-08-26T02:41:21Z",
+      "comment_body_sha256": "09162e568f1cdc270b71fbb7cb8fc29d896ea6a437b8f943f329e74a20e4c896",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129403,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal output calls a built helper directly rather than the affected CLI or Gateway paths, so it does not show after-fi...; Review finding: [P1] Guard the Gateway dispatch parser — src/config/gateway-dispatch-config.ts:112 - [P1] Process JSON5 comments before quote state — src/config/nesting-limit.ts:5... (sha=bb309a308e3b9b00ff7d76fd63b314334b732af1)",
+      "expected_head_sha": "bb309a308e3b9b00ff7d76fd63b314334b732af1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T02:42:08.068Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/129209-json-nesting-stack-overflow",
+        "head_sha": "bb309a308e3b9b00ff7d76fd63b314334b732af1",
         "cluster_id": null,
         "job_path": null
       }
