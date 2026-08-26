@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130017",
+  "mode": "autonomous",
+  "run_id": "32949039387",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32949039387",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130017.md",
+  "published_at": "2026-08-26T08:54:10.943Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130017",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130017",
+  "canonical_pr": null,
+  "summary": "#130017 is a real, narrow importer-bound migration defect on main, but implementation is blocked pending the required maintainer acceptance for its material persistent-state semantics and its unresolved terminal-timestamp contract.",
+  "actions": [
+    {
+      "target": "#130017",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130017",
+      "candidate_fix": null,
+      "reason": "Blocked pending accepted maintainer decision for the terminal timestamp and durable migration semantics; the hydrated issue has no maintainer acceptance. The required sibling ../codex source is also absent and this read-only, network-restricted worker cannot clone it for the mandatory direct inspection gate."
+    },
+    {
+      "target": "#103168",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context only; no close or mutation is applicable."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130017",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130017",
+      "candidate_fix": null,
+      "reason": "A bounded fix plan is available, but it cannot be executed until the material-store checkpoint records the accepted terminal/timestamp contract."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Record maintainer acceptance for the material task_runs migration: only legacy cron rows with status `reconciling` should become a terminal, non-deliverable canonical record on import and in already-imported state; explicitly choose the ended_at/last_event_at rule and rollback/validation plan."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#130017",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
