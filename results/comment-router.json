@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T10:06:29.762Z",
+  "updated_at": "2026-08-26T10:06:33.255Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129806:5421657149:2026-08-26T06:49:41Z:re_review",
-      "comment_id": "5421657149",
-      "comment_version_key": "5421657149:2026-08-26T06:49:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129806#issuecomment-5421657149",
-      "comment_created_at": "2026-08-26T06:49:41Z",
-      "comment_updated_at": "2026-08-26T06:49:41Z",
-      "comment_body_sha256": "ce8d12ce9ca41f6b425ca68cfeca198812813adeae2a0955201b1ecc12ef6662",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129806,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T06:50:34.877Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-otel-code-mode-reconciliation",
-        "head_sha": "2c81c16fc3c80e70ee7552e64cff6f75297e9330",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107104:4968266168:2026-08-26T06:44:47Z:clawsweeper_auto_repair",
       "comment_id": "4968266168",
@@ -31572,6 +31525,39 @@
         "kind": "pull_request",
         "branch": "automation/control-ui-locale-refresh",
         "head_sha": "5d4188d934839a289b91b59e486a81c36808b07f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111277:5014843128:2026-08-26T09:57:00Z:clawsweeper_needs_human",
+      "comment_id": "5014843128",
+      "comment_version_key": "5014843128:2026-08-26T09:57:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111277#issuecomment-5014843128",
+      "comment_created_at": "2026-07-19T07:20:18Z",
+      "comment_updated_at": "2026-08-26T09:57:00Z",
+      "comment_body_sha256": "c0cb6d0982aa1e831ba677afb346e3e415571a8e6ec8fe2ad166d68eafaa3e89",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111277,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, so maintainers should rebase or rely on GitHub’s clean three-way merge and refresh exact-head checks before landing. (sha=8acd789f7bc7b728bc26b2b573eb5e296921a7fd)",
+      "expected_head_sha": "8acd789f7bc7b728bc26b2b573eb5e296921a7fd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T10:06:33.255Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-github-copilot-login-leaves-failed-response-streams-open",
+        "head_sha": "8acd789f7bc7b728bc26b2b573eb5e296921a7fd",
         "cluster_id": null,
         "job_path": null
       }
