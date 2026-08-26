@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T23:10:48.329Z",
+  "updated_at": "2026-08-26T23:15:06.297Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112820:5075163592:2026-08-26T18:17:14Z:clawsweeper_needs_human",
-      "comment_id": "5075163592",
-      "comment_version_key": "5075163592:2026-08-26T18:17:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112820#issuecomment-5075163592",
-      "comment_created_at": "2026-07-24T22:41:54Z",
-      "comment_updated_at": "2026-08-26T18:17:14Z",
-      "comment_body_sha256": "863c5684a4689cafa7a1b383c801606c7c35acba5b061a46952edc83af8ed0fc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112820,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: focused mocked tests cover scope rejection and abort handling, but no real authenticated route/transport trace...; Review finding: [medium] Prove route closure blocks raw-media final effects — src/gateway/talk-realtime-session-create.ts:96 (sha=545baea9ba703839a20e47d78e3e63295be60ab9)",
-      "expected_head_sha": "545baea9ba703839a20e47d78e3e63295be60ab9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T18:25:11.465Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/talk-open-session",
-        "head_sha": "545baea9ba703839a20e47d78e3e63295be60ab9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130186:5428880488:2026-08-26T18:19:14Z:clawsweeper_needs_human",
       "comment_id": "5428880488",
@@ -32092,6 +32059,53 @@
       "status": "skipped",
       "processed_at": "2026-08-26T23:10:48.329Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130131:5432193103:2026-08-26T23:14:26Z:re_review",
+      "comment_id": "5432193103",
+      "comment_version_key": "5432193103:2026-08-26T23:14:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130131#issuecomment-5432193103",
+      "comment_created_at": "2026-08-26T23:14:26Z",
+      "comment_updated_at": "2026-08-26T23:14:26Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130131,
+      "author": "shakkernerd",
+      "author_id": 165377636,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T23:15:03.756Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dashboard-board-authority",
+        "head_sha": "a743d3526d143b4619b5f97343fa8d442305734c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
