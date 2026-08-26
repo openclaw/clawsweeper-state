@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T17:49:47.817Z",
+  "updated_at": "2026-08-26T17:49:58.322Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125725:5325660518:2026-08-26T11:53:32Z:clawsweeper_needs_human",
-      "comment_id": "5325660518",
-      "comment_version_key": "5325660518:2026-08-26T11:53:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125725#issuecomment-5325660518",
-      "comment_created_at": "2026-08-18T08:32:07Z",
-      "comment_updated_at": "2026-08-26T11:53:32Z",
-      "comment_body_sha256": "38d7d13bb44c74391b596ca8055b57bf0bd1b4e8692cbe767990b0cdf3b1b7cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125725,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new fail-closed branch can deny legitimate file approvals if Codex changes the asserted start/request identity or ordering; direct inspection of the pinned upstream source was blo... (sha=7c88322126819d0a0d25716d7dbfcdf3d72062b5)",
-      "expected_head_sha": "7c88322126819d0a0d25716d7dbfcdf3d72062b5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T12:07:25.301Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-file-change-hook-params-current",
-        "head_sha": "7c88322126819d0a0d25716d7dbfcdf3d72062b5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T12:02:55Z:clawsweeper_needs_human",
       "comment_id": "5418912080",
@@ -32002,6 +31969,53 @@
       "status": "skipped",
       "processed_at": "2026-08-26T17:49:47.817Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130270:5428975295:2026-08-26T17:49:17Z:re_review",
+      "comment_id": "5428975295",
+      "comment_version_key": "5428975295:2026-08-26T17:49:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130270#issuecomment-5428975295",
+      "comment_created_at": "2026-08-26T17:49:17Z",
+      "comment_updated_at": "2026-08-26T17:49:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130270,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T17:49:56.245Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/native-locale-repair",
+        "head_sha": "b541b2ff8128d61a7a2bd6c6c596d8446f323cb4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
