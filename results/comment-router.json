@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T18:09:40.527Z",
+  "updated_at": "2026-08-26T18:09:41.576Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/hermit:28:5365544432:2026-08-21T05:22:10Z:re_review",
-      "comment_id": "5365544432",
-      "comment_version_key": "5365544432:2026-08-21T05:22:10Z",
-      "comment_url": "https://github.com/openclaw/hermit/pull/28#issuecomment-5365544432",
-      "comment_created_at": "2026-08-21T05:22:10Z",
-      "comment_updated_at": "2026-08-21T05:22:10Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/hermit",
-      "issue_number": 28,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T12:17:24.552Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/hermit:28:5365867712:2026-08-21T06:07:23Z:re_review",
       "comment_id": "5365867712",
@@ -32138,6 +32111,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:49:5296191122:2026-08-26T18:08:42Z:clawsweeper_needs_human",
+      "comment_id": "5296191122",
+      "comment_version_key": "5296191122:2026-08-26T18:08:42Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/49#issuecomment-5296191122",
+      "comment_created_at": "2026-08-14T17:20:59Z",
+      "comment_updated_at": "2026-08-26T18:08:42Z",
+      "comment_body_sha256": "9389c5d0c774fb94dddf65c571c5ae057fa2f882c187a49be9e80caa403d9c44",
+      "repo": "openclaw/libterminal",
+      "issue_number": 49,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Validate the new CodeQL action revision** - Both uses: entries move to a new upstream commit that executes in the security-scanning job; approve the third-party revision before merge.; Review finding: [medium] Validate the new CodeQL action revision — .github/workflows/codeql.yml:42 (sha=7a87c12c95688465f6ce5eb813fe62ddae67a2c1)",
+      "expected_head_sha": "7a87c12c95688465f6ce5eb813fe62ddae67a2c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T18:09:41.576Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-97c731b4de",
+        "head_sha": "7a87c12c95688465f6ce5eb813fe62ddae67a2c1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
