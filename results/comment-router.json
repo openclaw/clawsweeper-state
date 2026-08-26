@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T07:45:10.545Z",
+  "updated_at": "2026-08-26T07:45:15.825Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128995:5420549847:2026-08-26T04:20:13Z:re_review",
-      "comment_id": "5420549847",
-      "comment_version_key": "5420549847:2026-08-26T04:20:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128995#issuecomment-5420549847",
-      "comment_created_at": "2026-08-26T04:20:13Z",
-      "comment_updated_at": "2026-08-26T04:20:13Z",
-      "comment_body_sha256": "a95aff724fe9ce99a02a50b2c5c71cf80852411db32beb36fb2a414e2c3d1af2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128995,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T04:20:57.318Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/align-top-right-and-sidebar-session-menus",
-        "head_sha": "df5cb591c39451d9cb39da96d661729760cd03b2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129633:5420554926:2026-08-26T04:20:49Z:status",
       "comment_id": "5420554926",
@@ -31922,6 +31875,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-task-audit-age-test",
         "head_sha": "6646ee3939d26f407c3e2fd4551cf523ddee7653",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129965:5422192056:2026-08-26T07:44:17Z:clawsweeper_needs_human",
+      "comment_id": "5422192056",
+      "comment_version_key": "5422192056:2026-08-26T07:44:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129965#issuecomment-5422192056",
+      "comment_created_at": "2026-08-26T07:44:17Z",
+      "comment_updated_at": "2026-08-26T07:44:17Z",
+      "comment_body_sha256": "50a2b5fee23ad2c4055a3ab2661653a893b6999c64d3eb9187ef4724ecd1bf9f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129965,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +8 lines for a bug fix; the added display-width sampling appears justified by the orientation invariant, but exact-head Android validation should confirm it. (sha=04fecc33d79723c36689922607737e28d75b2f60)",
+      "expected_head_sha": "04fecc33d79723c36689922607737e28d75b2f60",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T07:45:15.825Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/android-six-photos-exif-20260825",
+        "head_sha": "04fecc33d79723c36689922607737e28d75b2f60",
         "cluster_id": null,
         "job_path": null
       }
