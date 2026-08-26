@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T08:34:12.993Z",
+  "updated_at": "2026-08-26T08:34:15.572Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3494:5375479475:2026-08-21T21:13:31Z:re_review",
-      "comment_id": "5375479475",
-      "comment_version_key": "5375479475:2026-08-21T21:13:31Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3494#issuecomment-5375479475",
-      "comment_created_at": "2026-08-21T21:13:31Z",
-      "comment_updated_at": "2026-08-21T21:13:31Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3494,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T05:00:38.120Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3494:5389741457:2026-08-24T01:39:42Z:re_review",
       "comment_id": "5389741457",
@@ -31579,6 +31552,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T08:34:12.993Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:47:5305413167:2026-08-26T08:24:56Z:clawsweeper_needs_human",
+      "comment_id": "5305413167",
+      "comment_version_key": "5305413167:2026-08-26T08:24:56Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/47#issuecomment-5305413167",
+      "comment_created_at": "2026-08-16T02:53:29Z",
+      "comment_updated_at": "2026-08-26T08:24:56Z",
+      "comment_body_sha256": "6db9ad57861d2aa70a417c05677474ad771258cf065f6dc51fb16b07dc7c5477",
+      "repo": "openclaw/clawscan",
+      "issue_number": 47,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The hard 5,520-ID ceiling intentionally follows the current pinned SkillTrustBench set; a future pin expansion must update the cap, tests, and documentation together. (sha=6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a)",
+      "expected_head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T08:34:15.572Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ids-stream-semantic-bound",
+        "head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
