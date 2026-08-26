@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-20837",
+  "mode": "autonomous",
+  "run_id": "33016251707",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33016251707",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-20837.md",
+  "published_at": "2026-08-26T21:55:40.553Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/20837",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/20837",
+  "canonical_pr": null,
+  "summary": "The command-prompt metadata gap is source-visible on current main, but this read-only checkout lacks the mandatory sibling ../codex source and cannot clone it; dependencies are also absent and pnpm cannot create its Corepack cache. No code or PR plan is safe to execute under the repository hard gate.",
+  "actions": [
+    {
+      "target": "#20837",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Blocked only on the mandatory direct Codex-source gate and unavailable writable dependency environment; the issue remains the open canonical tracker."
+    },
+    {
+      "target": "#21271",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Closed context reference; retain attribution to @evansantos if implementation resumes."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-20837",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Do not open a repair PR until an executor can inspect ../codex directly and run the required focused checks."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable execution environment containing ../codex (or permit its clone) so the repository-required direct Codex runtime-contract inspection and regression validation can be completed."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#20837",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
