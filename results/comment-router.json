@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T01:59:02.258Z",
+  "updated_at": "2026-08-26T02:00:24.048Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128116:5389269193:2026-08-24T00:10:46Z:re_review",
-      "comment_id": "5389269193",
-      "comment_version_key": "5389269193:2026-08-24T00:10:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128116#issuecomment-5389269193",
-      "comment_created_at": "2026-08-24T00:10:46Z",
-      "comment_updated_at": "2026-08-24T00:10:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128116,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T20:47:45.547Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3514:5390207954:2026-08-25T20:37:20Z:clawsweeper_needs_human",
       "comment_id": "5390207954",
@@ -32802,6 +32775,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129423:5413924479:2026-08-26T01:59:07Z:clawsweeper_needs_human",
+      "comment_id": "5413924479",
+      "comment_version_key": "5413924479:2026-08-26T01:59:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129423#issuecomment-5413924479",
+      "comment_created_at": "2026-08-25T17:05:13Z",
+      "comment_updated_at": "2026-08-26T01:59:07Z",
+      "comment_body_sha256": "66ea48d7a0944f1933776027171a2e41a936a7554486d56fe5030ca40c7bca3b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129423,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep provider-controlled codes out of transport logs (P1)** - The prior errorMessage leak is fixed, but projectProviderError() still takes code and type directly from provider error objects, and the Responses pa...; Review finding: [P1] Keep provider-controlled codes out of transport logs — packages/ai/src/providers/openai-chatgpt-responses.ts:654-655 - [medium] Provider-derived error fields... (sha=0110b96a1493b87a55b9fce63d76fdc33a472a48)",
+      "expected_head_sha": "0110b96a1493b87a55b9fce63d76fdc33a472a48",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T02:00:24.048Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-compaction-identifier-retention",
+        "head_sha": "0110b96a1493b87a55b9fce63d76fdc33a472a48",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
