@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T07:32:06.393Z",
+  "updated_at": "2026-08-26T07:33:46.932Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129841:5420441213:2026-08-26T04:08:04Z:clawsweeper_needs_human",
-      "comment_id": "5420441213",
-      "comment_version_key": "5420441213:2026-08-26T04:08:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129841#issuecomment-5420441213",
-      "comment_created_at": "2026-08-26T04:08:04Z",
-      "comment_updated_at": "2026-08-26T04:08:04Z",
-      "comment_body_sha256": "8dc7935a623d321f6e129db894796222cdb977644df58ef1245f9f3dede7ac5d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129841,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that deliberately pass an empty --thread-id will now fail fast instead of silently omitting topic targeting; this is an intentional compatibility tightening. (sha=e31b0f46aa15d76cfd7f02062def28bc6710f0ab)",
-      "expected_head_sha": "e31b0f46aa15d76cfd7f02062def28bc6710f0ab",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T04:12:02.908Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-cron-explicit-thread-id-validation-20260826",
-        "head_sha": "e31b0f46aa15d76cfd7f02062def28bc6710f0ab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129840:5420430610:2026-08-26T04:06:44Z:clawsweeper_needs_human",
       "comment_id": "5420430610",
@@ -31848,6 +31815,53 @@
         "kind": "pull_request",
         "branch": "fix/subagent-model-policy-preflight",
         "head_sha": "0f56e2c6ad52a134435417d4386d3172b7e6587f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129922:5422061176:2026-08-26T07:31:41Z:re_review",
+      "comment_id": "5422061176",
+      "comment_version_key": "5422061176:2026-08-26T07:31:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129922#issuecomment-5422061176",
+      "comment_created_at": "2026-08-26T07:31:41Z",
+      "comment_updated_at": "2026-08-26T07:31:41Z",
+      "comment_body_sha256": "72535197ca88d61e7104dd9d57c2161f2a59f4a3e41cbfd0587ee2d60fba2734",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129922,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T07:33:44.683Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pwa-stuck-after-gateway-update",
+        "head_sha": "fece7e004ea403aaa45876bea08759d6f6a8ed12",
         "cluster_id": null,
         "job_path": null
       },
