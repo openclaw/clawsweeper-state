@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:08:44.950Z",
+  "updated_at": "2026-08-26T02:09:25.401Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129425:5416711469:2026-08-25T20:59:42Z:re_review",
-      "comment_id": "5416711469",
-      "comment_version_key": "5416711469:2026-08-25T20:59:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129425#issuecomment-5416711469",
-      "comment_created_at": "2026-08-25T20:59:42Z",
-      "comment_updated_at": "2026-08-25T20:59:42Z",
-      "comment_body_sha256": "1b962c3683129a07a953b503b57f876fb3679f5ea4a718b421972b613cf7a6dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129425,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T21:00:37.929Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-32866251836-skill-authoring-contract",
-        "head_sha": "3d6357e143e1ecbf3add40397b7b76c3d0d0865b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129604:5416717165:2026-08-25T21:00:12Z:clawsweeper_auto_repair",
       "comment_id": "5416717165",
@@ -32864,6 +32817,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129759:5419613982:2026-08-26T02:08:46Z:clawsweeper_needs_human",
+      "comment_id": "5419613982",
+      "comment_version_key": "5419613982:2026-08-26T02:08:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129759#issuecomment-5419613982",
+      "comment_created_at": "2026-08-26T02:08:46Z",
+      "comment_updated_at": "2026-08-26T02:08:46Z",
+      "comment_body_sha256": "100c35f134d5d6bf505f5b0e31df40bcb82d3370b19674ecc646473295ddbd6f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129759,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep live credentials out of the host auth store (P1)** - This write happens before runGatewayModelSuite creates its temporary state directory at line 4944, so a local live run can persist or replace openai:live...; Review finding: [P1] Keep live credentials out of the host auth store — src/gateway/gateway-models.profiles.live.test.ts:5910 - [high] Prevent host auth-profile mutation — src/gat... (sha=2fabd4982f063f71c40c74afb0fc588634c37e16)",
+      "expected_head_sha": "2fabd4982f063f71c40c74afb0fc588634c37e16",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T02:09:25.401Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-openai-auth-materialization",
+        "head_sha": "eff83368aaef52dbd69cba5c7ac295273e232578",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
