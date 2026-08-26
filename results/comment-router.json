@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:18:18.769Z",
+  "updated_at": "2026-08-26T03:19:39.264Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127342:5373560722:2026-08-25T23:36:18Z:clawsweeper_needs_human",
-      "comment_id": "5373560722",
-      "comment_version_key": "5373560722:2026-08-25T23:36:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127342#issuecomment-5373560722",
-      "comment_created_at": "2026-08-21T18:11:40Z",
-      "comment_updated_at": "2026-08-25T23:36:18Z",
-      "comment_body_sha256": "63c0a6f486ccc1300565eca2712d3dc1d88bdf44263c2175d660e179fb6aa8cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127342,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Automatic recovery will now send an answer to an unclaimed session’s persisted route; exact-head coverage must retain claim precedence, policy denial, and no-duplicate delivery. (sha=4a48fdb46b1157e0e4ae7ab6e5ef04ada1ebd96e)",
-      "expected_head_sha": "4a48fdb46b1157e0e4ae7ab6e5ef04ada1ebd96e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T23:43:36.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/restart-recovery-resume-session-route",
-        "head_sha": "4a48fdb46b1157e0e4ae7ab6e5ef04ada1ebd96e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129664:5418495636:2026-08-25T23:41:21Z:clawsweeper_needs_human",
       "comment_id": "5418495636",
@@ -32355,6 +32322,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128816:5420091313:2026-08-26T03:18:44Z:re_review",
+      "comment_id": "5420091313",
+      "comment_version_key": "5420091313:2026-08-26T03:18:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128816#issuecomment-5420091313",
+      "comment_created_at": "2026-08-26T03:18:44Z",
+      "comment_updated_at": "2026-08-26T03:18:44Z",
+      "comment_body_sha256": "ae7385b6f973e01f1d1ddab56d4c390da8fc26c6f80657506060748e9204ce00",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128816,
+      "author": "ashawwal",
+      "author_id": 62305104,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T03:19:36.594Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-bound-media-rescan",
+        "head_sha": "3cfab1c31ec32b8be49eeffb69106c3b63392118",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
