@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:56:58.925Z",
+  "updated_at": "2026-08-26T03:56:59.374Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129665:5418976554:2026-08-26T00:43:16Z:re_review",
-      "comment_id": "5418976554",
-      "comment_version_key": "5418976554:2026-08-26T00:43:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129665#issuecomment-5418976554",
-      "comment_created_at": "2026-08-26T00:43:16Z",
-      "comment_updated_at": "2026-08-26T00:43:16Z",
-      "comment_body_sha256": "d1075352c9b5aa49081367f48b7d6c5b783d45e11e9ca639bee5dc7468a198e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129665,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T00:43:58.329Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/wonderful-matsumoto-f14584",
-        "head_sha": "704a909eba39686d5016359064fb359c947901e1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129525:5418611307:2026-08-26T00:39:16Z:clawsweeper_needs_human",
       "comment_id": "5418611307",
@@ -32006,6 +31959,39 @@
         "kind": "pull_request",
         "branch": "claude/ios-sidebar-followups",
         "head_sha": "c563b5f7b60c8d962a294feed489ac5a2fcbba62",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103201:4933838406:2026-08-26T03:46:01Z:clawsweeper_needs_human",
+      "comment_id": "4933838406",
+      "comment_version_key": "4933838406:2026-08-26T03:46:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103201#issuecomment-4933838406",
+      "comment_created_at": "2026-07-10T09:14:56Z",
+      "comment_updated_at": "2026-08-26T03:46:01Z",
+      "comment_body_sha256": "5dc88800832798c91d12143ba4966ec3600943a946bdcf7e7eacc5fabae0dbba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103201,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head is conflicted with main, whose Memory Core writer has changed since the branch point; prior CI and proof do not establish the three-way merge result. (sha=33dc80ae533bca6e1e66f9621a4c3c9f11491016)",
+      "expected_head_sha": "33dc80ae533bca6e1e66f9621a4c3c9f11491016",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T03:56:59.374Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/incremental-session-chunk-diff",
+        "head_sha": "33dc80ae533bca6e1e66f9621a4c3c9f11491016",
         "cluster_id": null,
         "job_path": null
       }
