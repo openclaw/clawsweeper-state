@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:47:49.028Z",
+  "updated_at": "2026-08-26T03:48:24.620Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T00:33:33Z:clawsweeper_needs_human",
-      "comment_id": "5418912080",
-      "comment_version_key": "5418912080:2026-08-26T00:33:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129705#issuecomment-5418912080",
-      "comment_created_at": "2026-08-26T00:33:33Z",
-      "comment_updated_at": "2026-08-26T00:33:33Z",
-      "comment_body_sha256": "6d29c4a5f6070f9f073cdb46106e479caac39fea223852df566427cb45859cda",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129705,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Update the pinned TruffleHog scanner version (P1)** - The action revision changes to v3.97.1, but its explicit version input still pins the scanner binary to 3.97.0. Update that version and digest together; othe...; Review finding: [P1] Update the pinned TruffleHog scanner version — .github/workflows/ci.yml:1162 - [medium] TruffleHog executable remains on the prior release — .github/workflows... (sha=63f22df83faae1b0c06bbe5d10736f4e1bac568d)",
-      "expected_head_sha": "63f22df83faae1b0c06bbe5d10736f4e1bac568d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T00:34:35.650Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-4b81979af6",
-        "head_sha": "63f22df83faae1b0c06bbe5d10736f4e1bac568d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116108:5124048798:2026-08-26T00:34:04Z:clawsweeper_needs_human",
       "comment_id": "5124048798",
@@ -31891,6 +31858,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125303:5420301991:2026-08-26T03:47:36Z:re_review",
+      "comment_id": "5420301991",
+      "comment_version_key": "5420301991:2026-08-26T03:47:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125303#issuecomment-5420301991",
+      "comment_created_at": "2026-08-26T03:47:36Z",
+      "comment_updated_at": "2026-08-26T03:47:36Z",
+      "comment_body_sha256": "59a2972fb57c9e41126a99cb10562b826bbaae2d0f585aba27499cc9dde43e7d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125303,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T03:48:22.271Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-profile-timeout-budget",
+        "head_sha": "779bf1b925051a8dfbd4b41e00d3b18756ebd775",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
