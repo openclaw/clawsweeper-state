@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T18:41:47.763Z",
+  "updated_at": "2026-08-26T18:41:50.135Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128910:5425925256:2026-08-26T13:21:15Z:re_review",
-      "comment_id": "5425925256",
-      "comment_version_key": "5425925256:2026-08-26T13:21:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128910#issuecomment-5425925256",
-      "comment_created_at": "2026-08-26T13:21:15Z",
-      "comment_updated_at": "2026-08-26T13:21:15Z",
-      "comment_body_sha256": "207b5df6a4feb68e613dd0c48bf8a8e469595746c7de58613cdf3ef1f52abeaf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128910,
-      "author": "hartmark",
-      "author_id": 12826053,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T13:43:05.203Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/http-continuation-toolcall-id-resanitization",
-        "head_sha": "75664a5d7ff9d512919f635c9177bca5d47e9c41",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129851:5421496824:2026-08-26T06:30:36Z:re_review",
       "comment_id": "5421496824",
@@ -31543,6 +31496,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/github-actions-a10aefb1c3",
         "head_sha": "c1d8104aaac6fab2b246cf317e13103b167651ae",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/carapace:76:5392643319:2026-08-26T18:30:45Z:clawsweeper_needs_human",
+      "comment_id": "5392643319",
+      "comment_version_key": "5392643319:2026-08-26T18:30:45Z",
+      "comment_url": "https://github.com/openclaw/carapace/pull/76#issuecomment-5392643319",
+      "comment_created_at": "2026-08-24T08:30:41Z",
+      "comment_updated_at": "2026-08-26T18:30:45Z",
+      "comment_body_sha256": "127f83be2d2485e50250ff79c2aa9d82d3808e85a2af87cc09b8fab453d83202",
+      "repo": "openclaw/carapace",
+      "issue_number": 76,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Vite 8.2.2 advances Rolldown and its platform-native bindings, while the preview build that uses Vite first runs in the post-merge Pages workflow; a compatibility failure would delay... (sha=de38aa3f0b7a88bfe3951e4080ac6a1f4ec95a00)",
+      "expected_head_sha": "de38aa3f0b7a88bfe3951e4080ac6a1f4ec95a00",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T18:41:50.135Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-dd9ce1e772",
+        "head_sha": "de38aa3f0b7a88bfe3951e4080ac6a1f4ec95a00",
         "cluster_id": null,
         "job_path": null
       }
