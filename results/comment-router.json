@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T05:15:01.797Z",
+  "updated_at": "2026-08-26T05:19:58.352Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129309:5419625870:2026-08-26T02:10:34Z:re_review",
-      "comment_id": "5419625870",
-      "comment_version_key": "5419625870:2026-08-26T02:10:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129309#issuecomment-5419625870",
-      "comment_created_at": "2026-08-26T02:10:34Z",
-      "comment_updated_at": "2026-08-26T02:10:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129309,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T02:11:12.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cleanup-aug25-clawhub-fixtures",
-        "head_sha": "b8828e0e344e0a994fc421eb6917eb2fb4ad15ed",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128804:5398707503:2026-08-26T02:10:40Z:clawsweeper_needs_human",
       "comment_id": "5398707503",
@@ -32177,6 +32130,39 @@
         "kind": "pull_request",
         "branch": "scout-t-2026-08-20",
         "head_sha": "cf1730443ea4636c101bf22b168cefc79bc6a279",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123062:5277800609:2026-08-26T05:15:15Z:clawsweeper_needs_human",
+      "comment_id": "5277800609",
+      "comment_version_key": "5277800609:2026-08-26T05:15:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123062#issuecomment-5277800609",
+      "comment_created_at": "2026-08-13T08:15:16Z",
+      "comment_updated_at": "2026-08-26T05:15:15Z",
+      "comment_body_sha256": "7f5ad820ddbb7910c4c93324d58c4aa4ac48e7d9219cbf51db19f46f2b96541a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123062,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes an existing client's effective pre-auth pipeline limit: a connection that sends a seventeenth frame before registration now closes instead of continuing concurrent adm... (sha=79c4c21b1b83383202c629760d73520b5b07fd58)",
+      "expected_head_sha": "79c4c21b1b83383202c629760d73520b5b07fd58",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T05:19:58.352Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/gateway-ws-aug13",
+        "head_sha": "79c4c21b1b83383202c629760d73520b5b07fd58",
         "cluster_id": null,
         "job_path": null
       }
