@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:12:57.587Z",
+  "updated_at": "2026-08-26T09:13:07.472Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117287:5150506609:2026-08-26T05:56:42Z:clawsweeper_auto_repair",
-      "comment_id": "5150506609",
-      "comment_version_key": "5150506609:2026-08-26T05:56:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117287#issuecomment-5150506609",
-      "comment_created_at": "2026-08-01T07:55:31Z",
-      "comment_updated_at": "2026-08-26T05:56:42Z",
-      "comment_body_sha256": "9d89be5656c917db82dfb8fe02fe4050683d20b23949f8d9085bbb1566f75166",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117287,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d96bfebe6aa13e24b55fb99451fa84a1a1edae7c)",
-      "expected_head_sha": "d96bfebe6aa13e24b55fb99451fa84a1a1edae7c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T05:58:30.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/context-visibility-schema-parity",
-        "head_sha": "d96bfebe6aa13e24b55fb99451fa84a1a1edae7c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123774:5296461119:2026-08-26T05:48:43Z:clawsweeper_auto_repair",
       "comment_id": "5296461119",
@@ -31610,6 +31577,53 @@
         "kind": "pull_request",
         "branch": "fix/129359-emit-guard-no-handlers",
         "head_sha": "eb5694d86e3b5ff40abc45affb3b3cdbd1e8d946",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129210:5423123066:2026-08-26T09:12:16Z:re_review",
+      "comment_id": "5423123066",
+      "comment_version_key": "5423123066:2026-08-26T09:12:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129210#issuecomment-5423123066",
+      "comment_created_at": "2026-08-26T09:12:16Z",
+      "comment_updated_at": "2026-08-26T09:12:16Z",
+      "comment_body_sha256": "6a1ffed5ed3b2bef764345622013cee5244e6dc44fd468b6be208eebe3bf9a59",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129210,
+      "author": "KhanCold",
+      "author_id": 119404710,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T09:13:05.374Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/129154-telegram-reply-directive-leak",
+        "head_sha": "325ee23c8e9a68326b48024edfc21bdf07ce1168",
         "cluster_id": null,
         "job_path": null
       },
