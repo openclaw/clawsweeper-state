@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T14:40:44.196Z",
+  "updated_at": "2026-08-26T14:41:04.138Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130031:5422936241:2026-08-26T09:17:33Z:clawsweeper_auto_repair",
-      "comment_id": "5422936241",
-      "comment_version_key": "5422936241:2026-08-26T09:17:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130031#issuecomment-5422936241",
-      "comment_created_at": "2026-08-26T08:54:51Z",
-      "comment_updated_at": "2026-08-26T09:17:33Z",
-      "comment_body_sha256": "6821f9cc51061a4ef7e38672744874a04670c6bfd6db23ae665c7ed0e3d2942a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130031,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5c2f77f34e15d4a05ed1260951d0dd72a7cc795e)",
-      "expected_head_sha": "5c2f77f34e15d4a05ed1260951d0dd72a7cc795e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T09:20:48.715Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/openshell-integration-backlog-hardening",
-        "head_sha": "5c2f77f34e15d4a05ed1260951d0dd72a7cc795e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130036:5423206806:2026-08-26T09:19:22Z:clawsweeper_needs_human",
       "comment_id": "5423206806",
@@ -32662,6 +32629,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126320:5343181701:2026-08-26T14:32:23Z:clawsweeper_needs_human",
+      "comment_id": "5343181701",
+      "comment_version_key": "5343181701:2026-08-26T14:32:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126320#issuecomment-5343181701",
+      "comment_created_at": "2026-08-19T13:58:28Z",
+      "comment_updated_at": "2026-08-26T14:32:23Z",
+      "comment_body_sha256": "dfa42bd79952bfc2dc3e18fdcec5819e05918e10f5d7947a30ecf7f131e9eca7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126320,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes the human-readable Workspace line and adds JSON fields; JSON workspace retains its resolved-directory meaning, but scripts parsing terminal output should... (sha=b8954d55c3eecd71ad7b1b0d2d6a3326b32b9e48)",
+      "expected_head_sha": "b8954d55c3eecd71ad7b1b0d2d6a3326b32b9e48",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T14:41:04.138Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-set-identity-workspace-locator",
+        "head_sha": "b8954d55c3eecd71ad7b1b0d2d6a3326b32b9e48",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
