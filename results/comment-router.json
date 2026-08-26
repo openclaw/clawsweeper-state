@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:22:21.077Z",
+  "updated_at": "2026-08-26T03:22:21.791Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120176:5418544158:2026-08-25T23:46:08Z:re_review",
-      "comment_id": "5418544158",
-      "comment_version_key": "5418544158:2026-08-25T23:46:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120176#issuecomment-5418544158",
-      "comment_created_at": "2026-08-25T23:46:08Z",
-      "comment_updated_at": "2026-08-25T23:46:08Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120176,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T23:46:54.413Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-matrix-config-transaction-20260807",
-        "head_sha": "0b92524ec341ea305d9fb4f4d1977c19193c361d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128871:5418557551:2026-08-25T23:47:27Z:re_review",
-      "comment_id": "5418557551",
-      "comment_version_key": "5418557551:2026-08-25T23:47:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128871#issuecomment-5418557551",
-      "comment_created_at": "2026-08-25T23:47:27Z",
-      "comment_updated_at": "2026-08-25T23:47:27Z",
-      "comment_body_sha256": "d8b38e4e7d7cde76f53fa3115c1158e0549466737e52c2d6c1bc635962052d8d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128871,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T23:48:19.494Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skill-workshop-targeted-patch-authority",
-        "head_sha": "df804f989811ae08d47ba2ea9085dfc8b491ee25",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128306:5418565379:2026-08-25T23:48:07Z:re_review",
       "comment_id": "5418565379",
@@ -32295,6 +32201,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104872:4949550134:2026-08-26T03:14:50Z:clawsweeper_needs_human",
+      "comment_id": "4949550134",
+      "comment_version_key": "4949550134:2026-08-26T03:14:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/104872#issuecomment-4949550134",
+      "comment_created_at": "2026-07-12T02:00:28Z",
+      "comment_updated_at": "2026-08-26T03:14:50Z",
+      "comment_body_sha256": "babde439dd2e943308f6efec825e35969a74b658fc347eaaa58a75d67aa43199",
+      "repo": "openclaw/openclaw",
+      "issue_number": 104872,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR body asserts a successful run, but no inspectable current-head trace shows that a forged caller is denie...; Review finding: [P1] Revalidate channel owner authority after lazy dispatch — src/plugins/registry-runtime.ts:1000-1002 - [high] Retained owner admission survives an async rollbac... (sha=52ff4729339e5a83d7c11c616bdfec3e4ef138be)",
+      "expected_head_sha": "52ff4729339e5a83d7c11c616bdfec3e4ef138be",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T03:22:21.791Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/conversation-identity-ingress",
+        "head_sha": "52ff4729339e5a83d7c11c616bdfec3e4ef138be",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:104872:5242310654:2026-08-10T15:23:46Z:re_review",
+      "comment_id": "5242310654",
+      "comment_version_key": "5242310654:2026-08-10T15:23:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/104872#issuecomment-5242310654",
+      "comment_created_at": "2026-08-10T15:23:46Z",
+      "comment_updated_at": "2026-08-10T15:23:46Z",
+      "comment_body_sha256": "922f29ce7db0f950e0b0eeb7bd2723880c69a1bb108d1d6a3403d23d8e12e78a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 104872,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T03:22:21.791Z",
+      "target": null
     }
   ]
 }
