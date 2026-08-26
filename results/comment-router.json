@@ -1,37 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:40:13.507Z",
+  "updated_at": "2026-08-26T09:40:14.011Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:79360:4405948938:2026-08-26T06:18:49Z:autoclose",
-      "comment_id": "4405948938",
-      "comment_version_key": "4405948938:2026-08-26T06:18:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/79360#issuecomment-4405948938",
-      "comment_created_at": "2026-05-08T11:11:00Z",
-      "comment_updated_at": "2026-08-26T06:18:49Z",
-      "comment_body_sha256": "751000995fb4d3a73c476ab4b7639205a17cd6f4cc5c83fb64c71588a04ddd97",
-      "repo": "openclaw/openclaw",
-      "issue_number": 79360,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T06:35:00.453Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82105:4458886902:2026-08-26T06:28:25Z:clawsweeper_auto_repair",
       "comment_id": "4458886902",
@@ -31374,6 +31343,39 @@
         "kind": "pull_request",
         "branch": "pe/fix-http-rate-limit-contention",
         "head_sha": "4a97626584771502c682546ae1a6ab5841118f41",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-26T09:31:04Z:clawsweeper_needs_human",
+      "comment_id": "5365906478",
+      "comment_version_key": "5365906478:2026-08-26T09:31:04Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5365906478",
+      "comment_created_at": "2026-08-21T06:12:29Z",
+      "comment_updated_at": "2026-08-26T09:31:04Z",
+      "comment_body_sha256": "d2417cd38b7702e6e86c50c088a0cf318ab1a42c8bedc43b717493ecfb16d452",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3501,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The dependent detector must not query either index until the staged backfills are confirmed ready; enabling it earlier can fail production queries. (sha=bd01f13aa001714b63ec48748df5db7f3d1227f9)",
+      "expected_head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T09:40:14.011Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/stage-signal-indexes",
+        "head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
         "cluster_id": null,
         "job_path": null
       }
