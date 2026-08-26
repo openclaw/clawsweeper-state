@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:28:21.413Z",
+  "updated_at": "2026-08-26T02:29:00.151Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129630:5417396514:2026-08-25T22:00:37Z:clawsweeper_auto_repair",
-      "comment_id": "5417396514",
-      "comment_version_key": "5417396514:2026-08-25T22:00:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129630#issuecomment-5417396514",
-      "comment_created_at": "2026-08-25T22:00:37Z",
-      "comment_updated_at": "2026-08-25T22:00:37Z",
-      "comment_body_sha256": "7f4a39bba8c8ceded1e24899633daec189e0d6c8a69ec1f39f536be88e928f1d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129630,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=f9edc92553f860a62fc562a48539c5e21b176105)",
-      "expected_head_sha": "f9edc92553f860a62fc562a48539c5e21b176105",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-25T22:09:29.710Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/gifted-antonelli-48949c",
-        "head_sha": "f9edc92553f860a62fc562a48539c5e21b176105",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129527:5417488941:2026-08-25T22:08:53Z:clawsweeper_auto_repair",
       "comment_id": "5417488941",
@@ -32663,6 +32630,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125303:5419741104:2026-08-26T02:28:16Z:re_review",
+      "comment_id": "5419741104",
+      "comment_version_key": "5419741104:2026-08-26T02:28:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125303#issuecomment-5419741104",
+      "comment_created_at": "2026-08-26T02:28:16Z",
+      "comment_updated_at": "2026-08-26T02:28:16Z",
+      "comment_body_sha256": "9979a4145d79cd47790b680db2383606f60f91ca376701d70b1a38baa5e05228",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125303,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T02:28:57.361Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-profile-timeout-budget",
+        "head_sha": "2b051ae5d0ea83be96beeeb4542ac95368a8e56e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
