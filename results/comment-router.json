@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:16:12.485Z",
+  "updated_at": "2026-08-26T09:19:55.680Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129792:5419937709:2026-08-26T05:50:33Z:clawsweeper_auto_repair",
-      "comment_id": "5419937709",
-      "comment_version_key": "5419937709:2026-08-26T05:50:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129792#issuecomment-5419937709",
-      "comment_created_at": "2026-08-26T02:56:19Z",
-      "comment_updated_at": "2026-08-26T05:50:33Z",
-      "comment_body_sha256": "75c8bbb3d0f220e76d460c568deb9041464d78b5876500ad15a71fad7148dcc6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129792,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=707163f319309160a4585bd595a3c971b4a3d9c3)",
-      "expected_head_sha": "707163f319309160a4585bd595a3c971b4a3d9c3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T05:58:30.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/midturn-overflow-async-tools",
-        "head_sha": "7ff73e5c0eaef2f435e23d5ca8b1a563cf9a95ce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129845:5420500893:2026-08-26T05:49:14Z:clawsweeper_auto_repair",
       "comment_id": "5420500893",
@@ -31669,6 +31636,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111277:5423203825:2026-08-26T09:19:09Z:re_review",
+      "comment_id": "5423203825",
+      "comment_version_key": "5423203825:2026-08-26T09:19:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111277#issuecomment-5423203825",
+      "comment_created_at": "2026-08-26T09:19:09Z",
+      "comment_updated_at": "2026-08-26T09:19:09Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111277,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T09:19:49.866Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-github-copilot-login-leaves-failed-response-streams-open",
+        "head_sha": "e3bba1024b359752c7eebb2eefc71bcb5e984233",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
