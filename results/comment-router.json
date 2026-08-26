@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T11:25:11.132Z",
+  "updated_at": "2026-08-26T11:25:37.870Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5312944136:2026-08-17T07:09:37Z:re_review",
-      "comment_id": "5312944136",
-      "comment_version_key": "5312944136:2026-08-17T07:09:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5312944136",
-      "comment_created_at": "2026-08-17T07:09:37Z",
-      "comment_updated_at": "2026-08-17T07:09:37Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T07:09:40.245Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5313059260:2026-08-17T07:22:34Z:re_review",
       "comment_id": "5313059260",
@@ -32415,6 +32388,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T11:24:19Z:clawsweeper_needs_human",
+      "comment_id": "5418912080",
+      "comment_version_key": "5418912080:2026-08-26T11:24:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129705#issuecomment-5418912080",
+      "comment_created_at": "2026-08-26T00:33:33Z",
+      "comment_updated_at": "2026-08-26T11:24:19Z",
+      "comment_body_sha256": "5c6e6f7bd5c0def3c77088ed3144ab803a35f123ebcc23703f92240263a8dcf2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129705,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Advance the TruffleHog scanner payload (P1)** - The changed action pin names v3.97.1, but this step still explicitly requests the v3.97.0 scanner payload. The repository installer and its tests also remain on v3...; Review finding: [P1] Advance the TruffleHog scanner payload — .github/workflows/ci.yml:1162-1166 - [P1] Synchronize the CI guard with the TruffleHog pin — .github/workflows/ci.yml... (sha=29f457f30da60080bf83231d1de51df1bd6b6bf0)",
+      "expected_head_sha": "29f457f30da60080bf83231d1de51df1bd6b6bf0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T11:25:37.870Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-4b81979af6",
+        "head_sha": "29f457f30da60080bf83231d1de51df1bd6b6bf0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
