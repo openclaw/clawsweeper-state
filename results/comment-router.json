@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T17:45:44.401Z",
+  "updated_at": "2026-08-26T17:45:51.405Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130071:5424799771:2026-08-26T11:45:54Z:re_review",
-      "comment_id": "5424799771",
-      "comment_version_key": "5424799771:2026-08-26T11:45:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130071#issuecomment-5424799771",
-      "comment_created_at": "2026-08-26T11:45:54Z",
-      "comment_updated_at": "2026-08-26T11:45:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130071,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T11:46:37.089Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gateway-heavy-load-performance",
-        "head_sha": "27a2b9546b9b114e933c6a6d88fe7ac82e2cfb6d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130057:5424803032:2026-08-26T11:46:14Z:re_review",
       "comment_id": "5424803032",
@@ -32033,6 +31986,39 @@
         "kind": "pull_request",
         "branch": "fix/104358-clean-staging-media-reopened",
         "head_sha": "18a0ad4ba599ad212bc8d6f39da7be6f82007e80",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129912:5421543406:2026-08-26T17:34:38Z:clawsweeper_needs_human",
+      "comment_id": "5421543406",
+      "comment_version_key": "5421543406:2026-08-26T17:34:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129912#issuecomment-5421543406",
+      "comment_created_at": "2026-08-26T06:36:14Z",
+      "comment_updated_at": "2026-08-26T17:34:38Z",
+      "comment_body_sha256": "8a2ff6f7c47d924e185251761fe9a2f0e5822a6d075e3845bfc03baaf7184e46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129912,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This modifies release-workflow inputs and artifact handoff; rebase onto current main and rerun exact-head required checks before merge because the PR is behind and its current check r... (sha=906259f97cc2c4aebfc1f410c200fa8c76b9934f)",
+      "expected_head_sha": "906259f97cc2c4aebfc1f410c200fa8c76b9934f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T17:45:51.405Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/package-acceptance-plugin-registry",
+        "head_sha": "a42a3e80f3a7ab3794b226ac043658afe2cb1c25",
         "cluster_id": null,
         "job_path": null
       }
