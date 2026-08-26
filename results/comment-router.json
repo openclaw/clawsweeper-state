@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:12:32.657Z",
+  "updated_at": "2026-08-26T03:12:35.167Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129670:5418409324:2026-08-25T23:33:19Z:clawsweeper_needs_human",
-      "comment_id": "5418409324",
-      "comment_version_key": "5418409324:2026-08-25T23:33:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129670#issuecomment-5418409324",
-      "comment_created_at": "2026-08-25T23:33:19Z",
-      "comment_updated_at": "2026-08-25T23:33:19Z",
-      "comment_body_sha256": "a20af617dd1ea74d7167c18f183a51d3d80057e13d9a7f6e6278cbff0f25d158",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129670,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep agent-requested credentials out of the env readback path (P1)** - request accepts kind: \"env\", while list returns the env value in the model tool result. Since this tool is also enabled for the messaging pr...; Review finding: [P1] Keep agent-requested credentials out of the env readback path — src/agents/tools/secrets-tool.ts:165 - [high] Agent-requested env values can enter model conte... (sha=300f1b7c331ddedeadc7b9e0358b9790ed96ec62)",
-      "expected_head_sha": "300f1b7c331ddedeadc7b9e0358b9790ed96ec62",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T23:34:04.615Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/agent-api-key-storage-41f09e",
-        "head_sha": "88f78438a44e21309384610591f271bbc73fc476",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129386:5418421590:2026-08-25T23:34:27Z:re_review",
       "comment_id": "5418421590",
@@ -32266,6 +32233,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124467:5420040945:2026-08-26T03:11:40Z:re_review",
+      "comment_id": "5420040945",
+      "comment_version_key": "5420040945:2026-08-26T03:11:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5420040945",
+      "comment_created_at": "2026-08-26T03:11:40Z",
+      "comment_updated_at": "2026-08-26T03:11:40Z",
+      "comment_body_sha256": "2e9105139a06fab624b175d363160cac8656f9f0503dd848e6f437e9f3741279",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124467,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T03:12:32.352Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/crabline-structured-identity",
+        "head_sha": "cbfd3269b1ebc9a5c2890ba8fbe812ed0c7c408f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129719:5419232279:2026-08-26T03:11:41Z:clawsweeper_needs_human",
