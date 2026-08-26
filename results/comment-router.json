@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:44:28.294Z",
+  "updated_at": "2026-08-26T09:44:39.096Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124014:5300588734:2026-08-24T13:18:19Z:clawsweeper_needs_human",
-      "comment_id": "5300588734",
-      "comment_version_key": "5300588734:2026-08-24T13:18:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124014#issuecomment-5300588734",
-      "comment_created_at": "2026-08-15T04:46:08Z",
-      "comment_updated_at": "2026-08-24T13:18:19Z",
-      "comment_body_sha256": "7b0fa4b42253290b4d0d384c9f3cd5221f7203aeb03b002997aac9076f84e029",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124014,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Successful re-login will no longer clear sibling profiles’ cooldowns or disables; operators who require provider-wide recovery must use the documented --force path, so listed auth-own... (sha=28374c3df277809dba5278f96722303b3b95e562)",
-      "expected_head_sha": "28374c3df277809dba5278f96722303b3b95e562",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T06:35:00.453Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auth-reauth-state-reset",
-        "head_sha": "28374c3df277809dba5278f96722303b3b95e562",
-        "cluster_id": "automerge-openclaw-openclaw-124014",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-124014.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126986:5365198371:2026-08-26T06:24:14Z:clawsweeper_needs_human",
       "comment_id": "5365198371",
@@ -31393,6 +31360,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130035:5423490586:2026-08-26T09:43:47Z:re_review",
+      "comment_id": "5423490586",
+      "comment_version_key": "5423490586:2026-08-26T09:43:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130035#issuecomment-5423490586",
+      "comment_created_at": "2026-08-26T09:43:47Z",
+      "comment_updated_at": "2026-08-26T09:43:47Z",
+      "comment_body_sha256": "951d4eb258bf688e2c605240f29ab67da5969091d415fa1b2fa67f2bc8a8f358",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130035,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the prior review lease expired without publishing a verdict. exact head `b0a76b1c1d9f0a851a5e73dabda6acabc7cbfb3e` remains unchanged and required ci is green",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T09:44:36.725Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/onboarding-doctor-fix-guidance",
+        "head_sha": "b0a76b1c1d9f0a851a5e73dabda6acabc7cbfb3e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
