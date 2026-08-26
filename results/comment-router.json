@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:28:13.455Z",
+  "updated_at": "2026-08-26T09:30:17.466Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:72677:4405899591:2026-05-08T11:02:25Z:re_review",
-      "comment_id": "4405899591",
-      "comment_version_key": "4405899591:2026-05-08T11:02:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/72677#issuecomment-4405899591",
-      "comment_created_at": "2026-05-08T11:02:25Z",
-      "comment_updated_at": "2026-05-08T11:02:25Z",
-      "comment_body_sha256": "81d9e8f90ce7795896cd9173be873c37ee3de14e459114abecd651b861e0ac5a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 72677,
-      "author": "liaoandi",
-      "author_id": 31417269,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T06:12:59.658Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:72677:4405970653:2026-05-08T11:14:55Z:re_review",
       "comment_id": "4405970653",
@@ -31713,6 +31686,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129958:5423322260:2026-08-26T09:29:22Z:freeform_assist",
+      "comment_id": "5423322260",
+      "comment_version_key": "5423322260:2026-08-26T09:29:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129958#issuecomment-5423322260",
+      "comment_created_at": "2026-08-26T09:29:22Z",
+      "comment_updated_at": "2026-08-26T09:29:22Z",
+      "comment_body_sha256": "17eacc5d26aafd8eaf59b5e28ce867623776cc8539d6715ff2723ac0a19f938c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129958,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review\\n\\nthe reviewed lifecycle finding is fixed on exact head `c5c9caf5d15c6c49305f40ab79c32c90579dd0a3`: the boundary poll now requires `configsaving: false` alongside the persisted dirty/apply state before the reconnect step. focused tests, `pnpm ui:build`, changed-files validation, and branch autoreview are green.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T09:30:11.773Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test-audit/ui-browser-link-duplicate",
+        "head_sha": "c5c9caf5d15c6c49305f40ab79c32c90579dd0a3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
