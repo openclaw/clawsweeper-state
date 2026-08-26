@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T05:42:46.206Z",
+  "updated_at": "2026-08-26T05:48:12.211Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129761:5419677543:2026-08-26T02:18:17Z:re_review",
-      "comment_id": "5419677543",
-      "comment_version_key": "5419677543:2026-08-26T02:18:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129761#issuecomment-5419677543",
-      "comment_created_at": "2026-08-26T02:18:17Z",
-      "comment_updated_at": "2026-08-26T02:18:17Z",
-      "comment_body_sha256": "08442117bd1cb2e3a7bf0dfd4f9a58ce459168d6fc0a4955fcfbe17c0de76a96",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129761,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T02:19:04.456Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-ci-release-validation-github-client",
-        "head_sha": "70319520c0e868ebd0f9eed8346578f080463275",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129523:5414818243:2026-08-25T18:22:05Z:re_review",
       "comment_id": "5414818243",
@@ -32325,6 +32278,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-browser-download-deadline",
         "head_sha": "92dd307af48a517cef6060648ed1938417767e3d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129888:5420997207:2026-08-26T05:47:12Z:clawsweeper_needs_human",
+      "comment_id": "5420997207",
+      "comment_version_key": "5420997207:2026-08-26T05:47:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129888#issuecomment-5420997207",
+      "comment_created_at": "2026-08-26T05:25:30Z",
+      "comment_updated_at": "2026-08-26T05:47:12Z",
+      "comment_body_sha256": "b80184ca64dec5bf9d68625c06375b3fae11bea67c23fe32eab0093cf5309dc1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129888,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local partial clone cannot materialize current main or retrieve the PR media because DNS is unavailable, so exact current-base comparison and independent screenshot inspection rem... (sha=7c54a74e6594c524c573fcbd3946bf0e1da9fb57)",
+      "expected_head_sha": "7c54a74e6594c524c573fcbd3946bf0e1da9fb57",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T05:48:12.211Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/control-ui-qa-settings-navigation-state",
+        "head_sha": "7c54a74e6594c524c573fcbd3946bf0e1da9fb57",
         "cluster_id": null,
         "job_path": null
       }
