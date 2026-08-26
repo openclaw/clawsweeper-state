@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-openclaw-129784
 source: pr_automerge
 requested_by: "vincentkoc"
 requested_by_id: "25068"
-request_comment_url: "https://github.com/openclaw/openclaw/pull/129784#issuecomment-5420382088"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/129784#issuecomment-5420832922"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/openclaw/pull/129784#issuecomm
 Maintainer opted #129784 into ClawSweeper automerge.
 
 Requested by: vincentkoc
-Request comment: https://github.com/openclaw/openclaw/pull/129784#issuecomment-5420382088
+Request comment: https://github.com/openclaw/openclaw/pull/129784#issuecomment-5420832922
 
 
 Source PR: https://github.com/openclaw/openclaw/pull/129784
@@ -55,4 +55,13 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 - Never add forbidden changelog credit lines for `@codex`, `@openclaw`, or `@steipete`; preserve contributor credit through source links, PR body, and commit/PR history.
 - Do not merge, close, or bypass review gates from the worker. The comment router owns final merge only after a passing ClawSweeper verdict for the exact current head.
 - Keep repair scope limited to actionable ClawSweeper findings, failing relevant checks, and required review feedback on this PR.
+
+Maintainer special instructions:
+
+Canonical landing decision:
+- Keep #129784 as the canonical PR. Its source branch is writable, and exact head `0febe6f0a0d0936e1c2a0af9e629349b88abfa5f` includes the independent immutable provenance repair.
+- Require exact-head Package Telegram acceptance before merge. Run https://github.com/openclaw/openclaw/actions/runs/32930886008 passed candidate resolution, package integrity, Telegram package E2E, and final verification on this exact head.
+- Exact-head CI is green: https://github.com/openclaw/openclaw/actions/runs/32930882105.
+- Squash merge only. Do not push, rebase, or merge main into the branch.
+- Close #129860 as superseded after #129784 lands, preserving its existing credit note.
 
