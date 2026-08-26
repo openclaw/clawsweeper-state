@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:11:06.117Z",
+  "updated_at": "2026-08-26T03:11:32.329Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128454:5398950420:2026-08-24T17:32:58Z:re_review",
-      "comment_id": "5398950420",
-      "comment_version_key": "5398950420:2026-08-24T17:32:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5398950420",
-      "comment_created_at": "2026-08-24T17:32:58Z",
-      "comment_updated_at": "2026-08-24T17:32:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T23:30:01.283Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5399192915:2026-08-24T17:53:12Z:re_review",
       "comment_id": "5399192915",
@@ -32267,6 +32240,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T03:11:06.117Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129754:5419608662:2026-08-26T03:07:44Z:clawsweeper_needs_human",
+      "comment_id": "5419608662",
+      "comment_version_key": "5419608662:2026-08-26T03:07:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129754#issuecomment-5419608662",
+      "comment_created_at": "2026-08-26T02:07:59Z",
+      "comment_updated_at": "2026-08-26T03:07:44Z",
+      "comment_body_sha256": "5d2ed417635cc8f0ee684905f4765024411d2d0731a7cb5a04c0e8cf178f5218",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129754,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused tests use real SQLite persistence but mock the announce transport; add a redacted production-boundary trace of delete, restart, and rec... (sha=24cfbd5203d3aa387db2d804ce7457fe17fd44df)",
+      "expected_head_sha": "24cfbd5203d3aa387db2d804ce7457fe17fd44df",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T03:11:32.329Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-completion-restore-durability",
+        "head_sha": "24cfbd5203d3aa387db2d804ce7457fe17fd44df",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
