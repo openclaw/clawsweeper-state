@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:25:51.092Z",
+  "updated_at": "2026-08-26T02:26:09.127Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120098:5210688571:2026-08-07T01:02:22Z:re_review",
-      "comment_id": "5210688571",
-      "comment_version_key": "5210688571:2026-08-07T01:02:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120098#issuecomment-5210688571",
-      "comment_created_at": "2026-08-07T01:02:22Z",
-      "comment_updated_at": "2026-08-07T01:02:22Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120098,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T21:44:45.359Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120098:5210750051:2026-08-07T01:08:30Z:re_review",
       "comment_id": "5210750051",
@@ -32737,6 +32710,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112004:5042941069:2026-08-26T02:16:03Z:clawsweeper_auto_repair",
+      "comment_id": "5042941069",
+      "comment_version_key": "5042941069:2026-08-26T02:16:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112004#issuecomment-5042941069",
+      "comment_created_at": "2026-07-22T07:08:20Z",
+      "comment_updated_at": "2026-08-26T02:16:03Z",
+      "comment_body_sha256": "35ba983ea51a073fd9e994e84b0c748c497c7b8cfa768082ca42cebb79699ac9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112004,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=f22cf6dd6ef8008e504a2a4fc25ab7400b64f7a2)",
+      "expected_head_sha": "f22cf6dd6ef8008e504a2a4fc25ab7400b64f7a2",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-26T02:26:09.127Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/ios-sidebar-followups",
+        "head_sha": "f22cf6dd6ef8008e504a2a4fc25ab7400b64f7a2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
