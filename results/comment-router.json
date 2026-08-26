@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T17:48:26.756Z",
+  "updated_at": "2026-08-26T17:48:48.759Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T11:41:06Z:clawsweeper_needs_human",
-      "comment_id": "5418912080",
-      "comment_version_key": "5418912080:2026-08-26T11:41:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129705#issuecomment-5418912080",
-      "comment_created_at": "2026-08-26T00:33:33Z",
-      "comment_updated_at": "2026-08-26T11:41:06Z",
-      "comment_body_sha256": "69d789456abb1bcc4c629b453b48436da4c11e2e60c732d59403f3cd2dc628a5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129705,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Advance the TruffleHog scanner payload (P1)** - The v3.97.1 action is overridden by version: \"3.97.0@…\", so the PR does not update the scanner it runs. The Testbox installer and its tests also remain on 3.97.0;...; Review finding: [P1] Advance the TruffleHog scanner payload — .github/workflows/ci.yml:1162 - [P1] Synchronize the CI guard with the TruffleHog pin — .github/workflows/ci.yml:1162... (sha=5bad32bd0ce7ee410539f9180eec1e02556704d1)",
-      "expected_head_sha": "5bad32bd0ce7ee410539f9180eec1e02556704d1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T11:52:10.947Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-4b81979af6",
-        "head_sha": "5bad32bd0ce7ee410539f9180eec1e02556704d1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129990:5422728964:2026-08-26T11:49:10Z:clawsweeper_needs_human",
       "comment_id": "5422728964",
@@ -32014,6 +31981,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127849:5379730054:2026-08-26T17:40:01Z:clawsweeper_auto_repair",
+      "comment_id": "5379730054",
+      "comment_version_key": "5379730054:2026-08-26T17:40:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127849#issuecomment-5379730054",
+      "comment_created_at": "2026-08-22T10:18:06Z",
+      "comment_updated_at": "2026-08-26T17:40:01Z",
+      "comment_body_sha256": "08283e9d7fcbddc7dacd397529499c30dbb358454b8f30093cd6faa990f9a2ea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127849,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e35203fd598d0e7680a3fdcfcab434199119fcea)",
+      "expected_head_sha": "e35203fd598d0e7680a3fdcfcab434199119fcea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T17:48:48.759Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ingress-retry-lane-head",
+        "head_sha": "e35203fd598d0e7680a3fdcfcab434199119fcea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
