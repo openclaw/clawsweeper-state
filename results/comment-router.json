@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T14:04:38.434Z",
+  "updated_at": "2026-08-26T14:05:00.972Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110657:5013413320:2026-07-18T23:55:25Z:re_review",
-      "comment_id": "5013413320",
-      "comment_version_key": "5013413320:2026-07-18T23:55:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110657#issuecomment-5013413320",
-      "comment_created_at": "2026-07-18T23:55:25Z",
-      "comment_updated_at": "2026-07-18T23:55:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110657,
-      "author": "xydigit-zt",
-      "author_id": 294751694,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T08:48:44.713Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110657:5013446367:2026-07-19T00:07:03Z:re_review",
       "comment_id": "5013446367",
@@ -32582,6 +32555,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T14:04:38.434Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-26T13:59:52Z:clawsweeper_needs_human",
+      "comment_id": "5365906478",
+      "comment_version_key": "5365906478:2026-08-26T13:59:52Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5365906478",
+      "comment_created_at": "2026-08-21T06:12:29Z",
+      "comment_updated_at": "2026-08-26T13:59:52Z",
+      "comment_body_sha256": "9f7b2993acd7968ad631a7c34769aacc069b54710a859b397cb633e4e18a7e28",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3501,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is an operational schema transition: any later detector deployment must wait for both Convex index backfills and remove the staged flags before querying either index. (sha=bd01f13aa001714b63ec48748df5db7f3d1227f9)",
+      "expected_head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T14:05:00.972Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/stage-signal-indexes",
+        "head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
