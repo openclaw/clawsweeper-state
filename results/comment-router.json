@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T01:08:59.770Z",
+  "updated_at": "2026-08-26T01:09:04.345Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129348:5411555180:2026-08-25T19:10:54Z:clawsweeper_auto_repair",
-      "comment_id": "5411555180",
-      "comment_version_key": "5411555180:2026-08-25T19:10:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129348#issuecomment-5411555180",
-      "comment_created_at": "2026-08-25T14:04:02Z",
-      "comment_updated_at": "2026-08-25T19:10:54Z",
-      "comment_body_sha256": "cd8241e0a3501b684e7fee3510fbfd1260107c956c3a8c94eb67cd2f4f37009d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129348,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bac2d457ed65d108a6bf26a11de2c16bf84249eb)",
-      "expected_head_sha": "bac2d457ed65d108a6bf26a11de2c16bf84249eb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T19:22:28.157Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/push-notifications-for-permission-requests",
-        "head_sha": "bac2d457ed65d108a6bf26a11de2c16bf84249eb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129346:5411702364:2026-08-25T19:10:23Z:clawsweeper_auto_repair",
       "comment_id": "5411702364",
@@ -32770,6 +32737,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126307:5419172630:2026-08-26T01:08:13Z:re_review",
+      "comment_id": "5419172630",
+      "comment_version_key": "5419172630:2026-08-26T01:08:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126307#issuecomment-5419172630",
+      "comment_created_at": "2026-08-26T01:08:13Z",
+      "comment_updated_at": "2026-08-26T01:08:13Z",
+      "comment_body_sha256": "17cb41f3edde412a29e908773a2bb5643321306df0715173ddd4b0a4d2ee37a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126307,
+      "author": "zhucegep",
+      "author_id": 1473037,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T01:09:02.057Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-minimax-encoded-tool-call-leak",
+        "head_sha": "b6da27e2cd0f946317e25c42a694666725e213dd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
