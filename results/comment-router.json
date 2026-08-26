@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T00:25:56.452Z",
+  "updated_at": "2026-08-26T00:27:27.663Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122425:5262218740:2026-08-25T18:01:14Z:clawsweeper_needs_human",
-      "comment_id": "5262218740",
-      "comment_version_key": "5262218740:2026-08-25T18:01:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5262218740",
-      "comment_created_at": "2026-08-12T04:18:02Z",
-      "comment_updated_at": "2026-08-25T18:01:14Z",
-      "comment_body_sha256": "05ac5a59d2e66a6cc5e2770bb98b444323d4be043391b4d86371bc4f667ec4b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122425,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is behind current main and the supplied exact-head check summary contains failures; rebase and resolve those failures before merge. (sha=84e55575b85ad65be18d78b469e7f9a50e59ab22)",
-      "expected_head_sha": "84e55575b85ad65be18d78b469e7f9a50e59ab22",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T18:10:43.294Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/inline-slash-skills",
-        "head_sha": "84e55575b85ad65be18d78b469e7f9a50e59ab22",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128784:5397830092:2026-08-25T18:07:55Z:clawsweeper_auto_repair",
       "comment_id": "5397830092",
@@ -32848,6 +32815,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1240:5418864700:2026-08-26T00:26:46Z:re_review",
+      "comment_id": "5418864700",
+      "comment_version_key": "5418864700:2026-08-26T00:26:46Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1240#issuecomment-5418864700",
+      "comment_created_at": "2026-08-26T00:26:46Z",
+      "comment_updated_at": "2026-08-26T00:26:46Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1240,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T00:27:24.949Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exact-review-do-json-errors",
+        "head_sha": "0e6ef72c14bfbfe25d8a5ac247d95787563e82f5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
