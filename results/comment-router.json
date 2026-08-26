@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T05:50:43.542Z",
+  "updated_at": "2026-08-26T05:50:49.927Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129293:5419681989:2026-08-26T02:18:57Z:re_review",
-      "comment_id": "5419681989",
-      "comment_version_key": "5419681989:2026-08-26T02:18:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129293#issuecomment-5419681989",
-      "comment_created_at": "2026-08-26T02:18:57Z",
-      "comment_updated_at": "2026-08-26T02:18:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129293,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T02:19:36.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cleanup-aug25-agent-core-tool-batch",
-        "head_sha": "424955d35f73bf2d6f4af88c47619655b414300a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123051:5277810385:2026-08-26T02:19:23Z:clawsweeper_needs_human",
       "comment_id": "5277810385",
@@ -32317,6 +32270,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-slack-thread-ingress-lanes",
         "head_sha": "a611653fe9085e010d684a2c94a58c9bc4879c11",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129873:5420879348:2026-08-26T05:49:03Z:clawsweeper_needs_human",
+      "comment_id": "5420879348",
+      "comment_version_key": "5420879348:2026-08-26T05:49:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129873#issuecomment-5420879348",
+      "comment_created_at": "2026-08-26T05:08:45Z",
+      "comment_updated_at": "2026-08-26T05:49:03Z",
+      "comment_body_sha256": "db762cb37dd84af0d4e6d5730775fe4784cf2b61ace6c6da9f2ef29c7ebf6173",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129873,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging activates automatic deletion of persisted ended TaskFlows that are already older than seven days; this matches the existing manual retention owner, but operators who relied on... (sha=8448cb5196b5484ef9852487bed3217a6688ba59)",
+      "expected_head_sha": "8448cb5196b5484ef9852487bed3217a6688ba59",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T05:50:49.927Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "galin/flow-block",
+        "head_sha": "8448cb5196b5484ef9852487bed3217a6688ba59",
         "cluster_id": null,
         "job_path": null
       }
