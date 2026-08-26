@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T12:35:35.119Z",
+  "updated_at": "2026-08-26T12:35:37.936Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129501:5422291119:2026-08-26T07:54:17Z:re_review",
-      "comment_id": "5422291119",
-      "comment_version_key": "5422291119:2026-08-26T07:54:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129501#issuecomment-5422291119",
-      "comment_created_at": "2026-08-26T07:54:17Z",
-      "comment_updated_at": "2026-08-26T07:54:17Z",
-      "comment_body_sha256": "1db906583713c6b23b1d055e2f3e3bc90442ed7592fbe55ba36b4589b6cf76af",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129501,
-      "author": "goffern",
-      "author_id": 10464170,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T07:55:00.484Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mattermost-ws-auth-silent-failure",
-        "head_sha": "720005053e67c7f3164addb92fa98ae00e8c16f9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129555:5416601510:2026-08-26T07:48:26Z:clawsweeper_auto_repair",
       "comment_id": "5416601510",
@@ -32290,6 +32243,39 @@
         "kind": "pull_request",
         "branch": "fix/node-launchagent-compile-cache",
         "head_sha": "e9a78c64efe6ee38e4c843898302db321164d1cc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130081:5424773389:2026-08-26T12:32:28Z:clawsweeper_needs_human",
+      "comment_id": "5424773389",
+      "comment_version_key": "5424773389:2026-08-26T12:32:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130081#issuecomment-5424773389",
+      "comment_created_at": "2026-08-26T11:43:15Z",
+      "comment_updated_at": "2026-08-26T12:32:28Z",
+      "comment_body_sha256": "c007131b4714e6823d295c82c7df392028111201b1cb69436b611a3bc501c488",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130081,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - The existing maintainer-owned branch contains the bounded repair and needs normal exact-head validation, not an automated replacement. (sha=324060af17590f74f115797cb2e8b106ddae6095)",
+      "expected_head_sha": "324060af17590f74f115797cb2e8b106ddae6095",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T12:35:37.936Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-process-poll-pending-output",
+        "head_sha": "324060af17590f74f115797cb2e8b106ddae6095",
         "cluster_id": null,
         "job_path": null
       }
