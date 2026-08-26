@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T16:44:05.954Z",
+  "updated_at": "2026-08-26T16:55:14.355Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119426:5187152998:2026-08-26T10:05:17Z:clawsweeper_needs_human",
-      "comment_id": "5187152998",
-      "comment_version_key": "5187152998:2026-08-26T10:05:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119426#issuecomment-5187152998",
-      "comment_created_at": "2026-08-05T03:21:25Z",
-      "comment_updated_at": "2026-08-26T10:05:17Z",
-      "comment_body_sha256": "8bbec6b17a0fe8bf70ef132c7de22bb2c9b6ad9466a6d06323100560622be941",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119426,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch predates the current-main session-tool refactor, so its focused proof does not yet demonstrate the exact merge head. (sha=1e36d86fbeb8e285f4c96c7517c4e22de551c346)",
-      "expected_head_sha": "1e36d86fbeb8e285f4c96c7517c4e22de551c346",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T10:12:01.029Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auto-qa-sessions-send-timeout-owner-3b6",
-        "head_sha": "1e36d86fbeb8e285f4c96c7517c4e22de551c346",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129210:5408696565:2026-08-26T09:59:21Z:clawsweeper_auto_repair",
       "comment_id": "5408696565",
@@ -32730,6 +32697,53 @@
       "status": "skipped",
       "processed_at": "2026-08-26T16:44:05.954Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129412:5428147084:2026-08-26T16:37:42Z:re_review",
+      "comment_id": "5428147084",
+      "comment_version_key": "5428147084:2026-08-26T16:37:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129412#issuecomment-5428147084",
+      "comment_created_at": "2026-08-26T16:37:42Z",
+      "comment_updated_at": "2026-08-26T16:37:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129412,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T16:55:11.776Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-qa-summary-empty-scenarios-20260825",
+        "head_sha": "6d1a6e3ba2ebf9fcf1aa669fe2b4e60954e1ad62",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
