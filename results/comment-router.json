@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:24:59.175Z",
+  "updated_at": "2026-08-26T02:25:51.092Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/imsg:240:5417121506:2026-08-25T21:34:59Z:clawsweeper_needs_human",
-      "comment_id": "5417121506",
-      "comment_version_key": "5417121506:2026-08-25T21:34:59Z",
-      "comment_url": "https://github.com/openclaw/imsg/pull/240#issuecomment-5417121506",
-      "comment_created_at": "2026-08-25T21:34:59Z",
-      "comment_updated_at": "2026-08-25T21:34:59Z",
-      "comment_body_sha256": "79b80e21f8de67ea014579caf4674262c174028612e1e37d2f1662c01473148e",
-      "repo": "openclaw/imsg",
-      "issue_number": 240,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c24003f8d692b80b4582cb430349248418e5f89c)",
-      "expected_head_sha": "c24003f8d692b80b4582cb430349248418e5f89c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T21:44:11.442Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codeql-workflow-permissions-20260825",
-        "head_sha": "c24003f8d692b80b4582cb430349248418e5f89c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120098:5210688571:2026-08-07T01:02:22Z:re_review",
       "comment_id": "5210688571",
@@ -32723,6 +32690,53 @@
       "status": "skipped",
       "processed_at": "2026-08-26T02:24:59.175Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129759:5419720873:2026-08-26T02:25:08Z:freeform_assist",
+      "comment_id": "5419720873",
+      "comment_version_key": "5419720873:2026-08-26T02:25:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129759#issuecomment-5419720873",
+      "comment_created_at": "2026-08-26T02:25:08Z",
+      "comment_updated_at": "2026-08-26T02:25:08Z",
+      "comment_body_sha256": "2eba33fe1cf0ec261314ab05ef308612065a5389cafd5700979d7bced4545c13",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129759,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\nthe head changed materially after the active review began. exact-head trusted openai api-key-default proof is now green: https://github.com/openclaw/openclaw/actions/runs/32922170925/job/98038199357",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T02:25:48.915Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-openai-auth-materialization",
+        "head_sha": "bbd102ace765bbc6ac2a5578a9f8cf0671969134",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
