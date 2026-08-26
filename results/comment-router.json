@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:02:12.862Z",
+  "updated_at": "2026-08-26T02:03:21.811Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1225:5416653755:2026-08-25T20:54:59Z:clawsweeper_needs_human",
-      "comment_id": "5416653755",
-      "comment_version_key": "5416653755:2026-08-25T20:54:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1225#issuecomment-5416653755",
-      "comment_created_at": "2026-08-25T20:54:59Z",
-      "comment_updated_at": "2026-08-25T20:54:59Z",
-      "comment_body_sha256": "2de74454149cf797199fd012d7cbce32c5887014a92c65d0c99a328e2134656e",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1225,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Archive extraction is a security boundary. Let the in-progress CodeQL and Windows validation suites complete before merging the explicit containment rewrite. (sha=3420bfd695d343b17de5db661a136a23690ffa5c)",
-      "expected_head_sha": "3420bfd695d343b17de5db661a136a23690ffa5c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T20:56:25.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codeql-archive-entry-destination",
-        "head_sha": "3420bfd695d343b17de5db661a136a23690ffa5c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1247:5416662670:2026-08-25T20:55:37Z:clawsweeper_auto_repair",
       "comment_id": "5416662670",
@@ -32834,6 +32801,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129670:5418409324:2026-08-26T02:02:33Z:clawsweeper_needs_human",
+      "comment_id": "5418409324",
+      "comment_version_key": "5418409324:2026-08-26T02:02:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129670#issuecomment-5418409324",
+      "comment_created_at": "2026-08-25T23:33:19Z",
+      "comment_updated_at": "2026-08-26T02:02:33Z",
+      "comment_body_sha256": "73a6e2a0ad949fe8db78b843dd2a73e5656975ec67168f15bb3ed395a4dd0dc3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the linked allowed-flow recording does not show that agent-requested env values remain unreadable or t...; Review finding: [P1] Reject readable env entries from agent requests — src/agents/tools/secrets-tool.ts:75-77 - [P1] Revalidate requester authority before the secret-store write —... (sha=b2163bddfc363b71e764ef8b3927a2e129f2f588)",
+      "expected_head_sha": "b2163bddfc363b71e764ef8b3927a2e129f2f588",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T02:03:21.811Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/agent-api-key-storage-41f09e",
+        "head_sha": "b2163bddfc363b71e764ef8b3927a2e129f2f588",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
