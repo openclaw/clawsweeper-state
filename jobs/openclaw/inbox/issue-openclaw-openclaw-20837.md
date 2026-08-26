@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the command-generated system prompt so `/context` fallback reports and `/export-session` retain normalized source-channel runtime facts already provided to normal embedded turns. First add a failing regression proving that `resolveCommandsSystemPromptBundle()` passes the command channel and account-aware metadata into runtime prompt construction; then reuse existing channel-capability/action helpers as appropriate. Preserve existing reply routing, channel docking, public config, and plugin APIs; do not introduce a selective-routing policy or edit CHANGELOG.md. Put concise release-note context in the PR body.
+Repair the command-prompt metadata gap in https://github.com/openclaw/openclaw/issues/20837. Preserve normal inbound behavior and trusted reply routing; do not add model-directed channel selection, config, or fallback routes. In src/auto-reply/reply/commands-system-prompt.ts, derive normalized account-aware runtime metadata equivalent to the embedded run path so /context estimates and /export-session reconstructions include channel, capabilities, shell, real host/OS/architecture, and applicable channel actions. Add an owner-boundary regression that fails before the repair. Do not edit CHANGELOG.md; include release-note context in the PR body.
 
 Likely files:
 
@@ -78,9 +78,8 @@ Likely files:
 
 Validation:
 
-- pnpm test src/auto-reply/reply/commands-system-prompt.test.ts src/auto-reply/reply/commands-context-report.test.ts src/auto-reply/reply/commands-export-session.test.ts src/auto-reply/reply/inbound-meta.test.ts
-- pnpm test src/auto-reply/reply/routing-policy.test.ts
-- pnpm check:changed -- src/auto-reply/reply/commands-system-prompt.ts src/auto-reply/reply/commands-system-prompt.test.ts
+- pnpm test src/auto-reply/reply/commands-system-prompt.test.ts src/auto-reply/reply/commands-context-report.test.ts src/auto-reply/reply/commands-export-session.test.ts
+- pnpm exec oxfmt --check --threads=1 src/auto-reply/reply/commands-system-prompt.ts src/auto-reply/reply/commands-system-prompt.test.ts
 
 ## Operator Prompt
 
