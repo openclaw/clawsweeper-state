@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T04:01:06.428Z",
+  "updated_at": "2026-08-26T04:01:13.403Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3080:5349788067:2026-08-20T00:46:31Z:re_review",
-      "comment_id": "5349788067",
-      "comment_version_key": "5349788067:2026-08-20T00:46:31Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3080#issuecomment-5349788067",
-      "comment_created_at": "2026-08-20T00:46:31Z",
-      "comment_updated_at": "2026-08-20T00:46:31Z",
-      "comment_body_sha256": "88cb8e7bfd75a770f01d8e913ae17a927d5bf86ccb96aa74a7ab1a547ac4b2b6",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3080,
-      "author": "Hek846",
-      "author_id": 47484037,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T00:44:50.769Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:419:5418982365:2026-08-26T00:44:09Z:clawsweeper_needs_human",
       "comment_id": "5418982365",
@@ -32027,6 +32000,39 @@
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-129784.md"
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129670:5418409324:2026-08-26T04:00:30Z:clawsweeper_needs_human",
+      "comment_id": "5418409324",
+      "comment_version_key": "5418409324:2026-08-26T04:00:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129670#issuecomment-5418409324",
+      "comment_created_at": "2026-08-25T23:33:19Z",
+      "comment_updated_at": "2026-08-26T04:00:30Z",
+      "comment_body_sha256": "28e2298cde7972145be07b495c8a54bc17f8f2ae679d1216166fc94d9dcb8da4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied web flow does not demonstrate rejection before secret-store I/O after requester terminati...; Review finding: [P1] Reject readable env entries from agent requests — src/agents/tools/secrets-tool.ts:75-77 - [P1] Fence store writes with the live requester — src/gateway/serve... (sha=4fb3c4570d3ed3da8e1ed2c3b52007b8e6a3a44e)",
+      "expected_head_sha": "4fb3c4570d3ed3da8e1ed2c3b52007b8e6a3a44e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T04:01:13.403Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/agent-api-key-storage-41f09e",
+        "head_sha": "4fb3c4570d3ed3da8e1ed2c3b52007b8e6a3a44e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
