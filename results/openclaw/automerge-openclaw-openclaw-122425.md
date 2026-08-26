@@ -2,15 +2,15 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-122425"
 mode: "autonomous"
-run_id: "32988146423"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32988146423"
+run_id: "32986188393"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32986188393"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-26T16:48:03.720Z"
+published_at: "2026-08-26T16:35:40.026Z"
 canonical: "#122425"
 canonical_issue: null
-canonical_pr: "#122425"
+canonical_pr: "https://github.com/openclaw/openclaw/pull/122425"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32988146423](https://github.com/openclaw/clawsweeper/actions/runs/32988146423)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32986188393](https://github.com/openclaw/clawsweeper/actions/runs/32986188393)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: #122425
 
 ## Summary
 
-No repair is needed: canonical PR #122425 was merged into main and is closed.
+No repair branch is needed: #122425 is already merged into main, so the requested contributor-branch repair is inapplicable.
 
 ## Impact
 
@@ -66,7 +66,7 @@ No repair is needed: canonical PR #122425 was merged into main and is closed.
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122425 | keep_closed | skipped | canonical | The requested repair-contributor-branch path is obsolete because the source PR has already landed. |
+| #122425 | keep_closed | skipped | canonical | Already-merged canonical PR; no remaining open PR exists to repair, merge, or close. |
 
 ## Needs Human
 
