@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:19:39.264Z",
+  "updated_at": "2026-08-26T03:20:04.911Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129664:5418495636:2026-08-25T23:41:21Z:clawsweeper_needs_human",
-      "comment_id": "5418495636",
-      "comment_version_key": "5418495636:2026-08-25T23:41:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129664#issuecomment-5418495636",
-      "comment_created_at": "2026-08-25T23:41:21Z",
-      "comment_updated_at": "2026-08-25T23:41:21Z",
-      "comment_body_sha256": "af379105dbf027628c35709e1c3d6f6536e9f80c68648a7ac59af700a92a2bfa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129664,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local OpenAI SDK type declarations are unavailable in this read-only checkout, so its declared finish_reason union could not be independently inspected; this does not invalidate t... (sha=a9ae031193fcc321950afcbfe33e08017d63c0eb)",
-      "expected_head_sha": "a9ae031193fcc321950afcbfe33e08017d63c0eb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T23:43:39.247Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/r4-singular-tool-call",
-        "head_sha": "a9ae031193fcc321950afcbfe33e08017d63c0eb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129652:5418475930:2026-08-25T23:39:29Z:clawsweeper_auto_repair",
       "comment_id": "5418475930",
@@ -32352,6 +32319,53 @@
         "kind": "pull_request",
         "branch": "fix/doctor-bound-media-rescan",
         "head_sha": "3cfab1c31ec32b8be49eeffb69106c3b63392118",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112820:5420095442:2026-08-26T03:19:14Z:re_review",
+      "comment_id": "5420095442",
+      "comment_version_key": "5420095442:2026-08-26T03:19:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112820#issuecomment-5420095442",
+      "comment_created_at": "2026-08-26T03:19:14Z",
+      "comment_updated_at": "2026-08-26T03:19:14Z",
+      "comment_body_sha256": "80ec0c9e41de4d5e405f23e79be4f05ba2572af6195a5448d08ca5790aeb2882",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112820,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T03:20:02.310Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/talk-open-session",
+        "head_sha": "3d05cf7ff5e20cf8d752ce576c2649fdf0016ece",
         "cluster_id": null,
         "job_path": null
       },
