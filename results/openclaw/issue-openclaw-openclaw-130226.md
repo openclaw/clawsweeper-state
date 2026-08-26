@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-130226"
 mode: "autonomous"
-run_id: "33003786154"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33003786154"
+run_id: "33016229171"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33016229171"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-26T20:32:18.574Z"
-canonical: "#130226"
-canonical_issue: "#130226"
+published_at: "2026-08-26T21:49:33.162Z"
+canonical: "https://github.com/openclaw/openclaw/issues/130226"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/130226"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-130226
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33003786154](https://github.com/openclaw/clawsweeper/actions/runs/33003786154)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33016229171](https://github.com/openclaw/clawsweeper/actions/runs/33016229171)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #130226
+Canonical: https://github.com/openclaw/openclaw/issues/130226
 
 ## Summary
 
-Blocked before a repair verdict or branch change: the required sibling ../codex source checkout is absent and this read-only worker cannot clone it; dependencies are also unavailable, so the focused Vitest reproduction cannot run. Source inspection identifies the proposed narrow repair seam, but it is not sufficient to bypass the repository’s Codex gate.
+Confirmed on main aec260b7002cf56232add300f3dd3454c81a10cf: mid-turn preflight preserves the reserve-adjusted budget, but overflow recovery passes raw contextTokenBudget to context-engine compaction. The checkout is read-only, so no branch or validation run could be produced; a narrow, regression-first fix artifact is ready.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,10 +66,9 @@ Blocked before a repair verdict or branch change: the required sibling ../codex 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #130226 | needs_human | blocked | needs_human | Rerun in a writable worker with ../codex cloned and dependencies installed; then implement and validate the narrow recovery-budget change. |
-| #119117 | keep_related | planned | related | Keep open as a separate context-engine lifecycle issue. |
-| #86023 | keep_closed | skipped | related | Closed historical context only; no closure action is valid. |
+| #130226 | fix_needed | blocked | canonical | Implementation is blocked only by the worker filesystem policy; the defect and narrow owner-boundary repair are clear. |
+| cluster:issue-openclaw-openclaw-130226 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-130226. |
 
 ## Needs Human
 
-- Provide a writable repair environment containing sibling ../codex source and installable repository dependencies, then rerun the focused reproduction and repair workflow.
+- none
