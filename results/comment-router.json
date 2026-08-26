@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T05:06:49.383Z",
+  "updated_at": "2026-08-26T05:07:07.483Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129670:5418409324:2026-08-26T02:02:33Z:clawsweeper_needs_human",
-      "comment_id": "5418409324",
-      "comment_version_key": "5418409324:2026-08-26T02:02:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129670#issuecomment-5418409324",
-      "comment_created_at": "2026-08-25T23:33:19Z",
-      "comment_updated_at": "2026-08-26T02:02:33Z",
-      "comment_body_sha256": "73a6e2a0ad949fe8db78b843dd2a73e5656975ec67168f15bb3ed395a4dd0dc3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129670,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the linked allowed-flow recording does not show that agent-requested env values remain unreadable or t...; Review finding: [P1] Reject readable env entries from agent requests — src/agents/tools/secrets-tool.ts:75-77 - [P1] Revalidate requester authority before the secret-store write —... (sha=b2163bddfc363b71e764ef8b3927a2e129f2f588)",
-      "expected_head_sha": "b2163bddfc363b71e764ef8b3927a2e129f2f588",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T02:08:44.949Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/agent-api-key-storage-41f09e",
-        "head_sha": "b2163bddfc363b71e764ef8b3927a2e129f2f588",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129497:5418625682:2026-08-26T02:04:33Z:clawsweeper_needs_human",
       "comment_id": "5418625682",
@@ -32095,6 +32062,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T05:06:49.383Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:74940:4350593201:2026-08-26T05:05:45Z:clawsweeper_auto_repair",
+      "comment_id": "4350593201",
+      "comment_version_key": "4350593201:2026-08-26T05:05:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/74940#issuecomment-4350593201",
+      "comment_created_at": "2026-04-30T07:44:25Z",
+      "comment_updated_at": "2026-08-26T05:05:45Z",
+      "comment_body_sha256": "b74fb87a4a2dae20ebbe8fd47276a6e9ba97f5caf60b1246a2416c4e23dbedb2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 74940,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a31467686e272b092e421ae6fe40c76768857c27)",
+      "expected_head_sha": "a31467686e272b092e421ae6fe40c76768857c27",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T05:07:07.483Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-llm-timeout-legacy-diagnostics",
+        "head_sha": "a31467686e272b092e421ae6fe40c76768857c27",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
