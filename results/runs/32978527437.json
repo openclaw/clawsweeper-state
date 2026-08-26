@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-20837",
+  "mode": "autonomous",
+  "run_id": "32978527437",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32978527437",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-20837.md",
+  "published_at": "2026-08-26T15:55:36.881Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/20837",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/20837",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked locally: the mandatory sibling ../codex checkout is absent and this workspace is read-only, so I cannot clone it, add the required failing regression, or create/validate the repair branch. The hydrated issue remains the canonical open path; #21271 is closed historical context only.",
+  "actions": [
+    {
+      "target": "#20837",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "A writable execution checkout with ../codex available is required before reproducing, editing, and validating this repair."
+    },
+    {
+      "target": "#21271",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Historical implementation evidence only; do not mutate an already-closed PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-20837",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "A narrow new PR is appropriate once the executor has a writable checkout and satisfies the Codex source gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
