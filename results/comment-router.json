@@ -2,53 +2,6 @@
   "updated_at": "2026-08-26T07:08:21.243Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:128816:5420091313:2026-08-26T03:18:44Z:re_review",
-      "comment_id": "5420091313",
-      "comment_version_key": "5420091313:2026-08-26T03:18:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128816#issuecomment-5420091313",
-      "comment_created_at": "2026-08-26T03:18:44Z",
-      "comment_updated_at": "2026-08-26T03:18:44Z",
-      "comment_body_sha256": "ae7385b6f973e01f1d1ddab56d4c390da8fc26c6f80657506060748e9204ce00",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128816,
-      "author": "ashawwal",
-      "author_id": 62305104,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T03:19:36.594Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-bound-media-rescan",
-        "head_sha": "3cfab1c31ec32b8be49eeffb69106c3b63392118",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:112820:5420095442:2026-08-26T03:19:14Z:re_review",
       "comment_id": "5420095442",
       "comment_version_key": "5420095442:2026-08-26T03:19:14Z",
@@ -32437,6 +32390,39 @@
         "kind": "pull_request",
         "branch": "split/qa-tool-search-evidence-aug13",
         "head_sha": "55c0ed924335bacaf4812afa499c652ac3e9090b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129806:5420136965:2026-08-26T07:05:09Z:clawsweeper_needs_human",
+      "comment_id": "5420136965",
+      "comment_version_key": "5420136965:2026-08-26T07:05:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129806#issuecomment-5420136965",
+      "comment_created_at": "2026-08-26T03:24:13Z",
+      "comment_updated_at": "2026-08-26T07:05:09Z",
+      "comment_body_sha256": "b5ab7fcef0a31c1356b4c522eda552034e362e04bc31e6eb39321f9f5129d4f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129806,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still running; merge only after required checks complete successfully. (sha=2c81c16fc3c80e70ee7552e64cff6f75297e9330)",
+      "expected_head_sha": "2c81c16fc3c80e70ee7552e64cff6f75297e9330",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T07:08:21.173Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-otel-code-mode-reconciliation",
+        "head_sha": "2c81c16fc3c80e70ee7552e64cff6f75297e9330",
         "cluster_id": null,
         "job_path": null
       }
