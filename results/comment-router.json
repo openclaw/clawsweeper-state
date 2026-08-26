@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:50:46.143Z",
+  "updated_at": "2026-08-26T09:50:47.090Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124467:5421537320:2026-08-26T06:35:31Z:re_review",
-      "comment_id": "5421537320",
-      "comment_version_key": "5421537320:2026-08-26T06:35:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5421537320",
-      "comment_created_at": "2026-08-26T06:35:31Z",
-      "comment_updated_at": "2026-08-26T06:35:31Z",
-      "comment_body_sha256": "9b490498cab4b31fa825cc84e32b5d4ab4033402766df4abebbfea173245eca2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124467,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T06:36:19.289Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/crabline-structured-identity",
-        "head_sha": "aef5a9ac27e966b7c2d6e06c43666f6b31d9b6c4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3494:5357432561:2026-08-26T06:36:31Z:clawsweeper_needs_human",
       "comment_id": "5357432561",
@@ -31442,6 +31395,39 @@
         "kind": "pull_request",
         "branch": "sunlit/fix/issue-126879",
         "head_sha": "08502473439b8930359a6d17a63547e05c00d8fc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129912:5421543406:2026-08-26T09:50:00Z:clawsweeper_auto_repair",
+      "comment_id": "5421543406",
+      "comment_version_key": "5421543406:2026-08-26T09:50:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129912#issuecomment-5421543406",
+      "comment_created_at": "2026-08-26T06:36:14Z",
+      "comment_updated_at": "2026-08-26T09:50:00Z",
+      "comment_body_sha256": "9bb1a4d27174285d7443b7a2081a2e2d6349869bbddfc24d2227708b0326823d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129912,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=47a32fe2739f00987bb6021eca97755606ab8f43)",
+      "expected_head_sha": "47a32fe2739f00987bb6021eca97755606ab8f43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T09:50:47.090Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/package-acceptance-plugin-registry",
+        "head_sha": "47a32fe2739f00987bb6021eca97755606ab8f43",
         "cluster_id": null,
         "job_path": null
       }
