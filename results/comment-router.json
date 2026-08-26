@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T07:59:18.957Z",
+  "updated_at": "2026-08-26T08:01:40.530Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124953:5322572232:2026-08-18T02:10:41Z:re_review",
-      "comment_id": "5322572232",
-      "comment_version_key": "5322572232:2026-08-18T02:10:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124953#issuecomment-5322572232",
-      "comment_created_at": "2026-08-18T02:10:41Z",
-      "comment_updated_at": "2026-08-18T02:10:41Z",
-      "comment_body_sha256": "df7db9d1074d71e9b3975858af561369343e197f1e4f6707dbd9d21c16c9b0a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124953,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T04:34:07.593Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124953:5337025943:2026-08-19T03:09:39Z:re_review",
       "comment_id": "5337025943",
@@ -31500,6 +31473,65 @@
       "status": "skipped",
       "processed_at": "2026-08-26T07:59:18.957Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122425:5422358695:2026-08-26T08:00:55Z:maintainer_approve_automerge",
+      "comment_id": "5422358695",
+      "comment_version_key": "5422358695:2026-08-26T08:00:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5422358695",
+      "comment_created_at": "2026-08-26T08:00:55Z",
+      "comment_updated_at": "2026-08-26T08:00:55Z",
+      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122425,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "structured ClawSweeper verdict: pass; PR head is behind base and needs a cloud rebase repair before automerge",
+      "expected_head_sha": "ae9e65dbf7dbd4a068dd3d64715cdfa5e48ef84e",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-26T08:01:40.530Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inline-slash-skills",
+        "head_sha": "ae9e65dbf7dbd4a068dd3d64715cdfa5e48ef84e",
+        "cluster_id": "automerge-openclaw-openclaw-122425",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "pending",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "repair_needed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
+        }
+      ]
     }
   ]
 }
