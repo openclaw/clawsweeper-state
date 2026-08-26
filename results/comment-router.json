@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-26T07:22:01.009Z",
+  "updated_at": "2026-08-26T07:22:04.456Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129784:5420382088:2026-08-26T03:59:47Z:maintainer_approve_automerge",
-      "comment_id": "5420382088",
-      "comment_version_key": "5420382088:2026-08-26T03:59:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129784#issuecomment-5420382088",
-      "comment_created_at": "2026-08-26T03:59:47Z",
-      "comment_updated_at": "2026-08-26T03:59:47Z",
-      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129784,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "structured ClawSweeper verdict: pass; PR head is behind base and needs a cloud rebase repair before automerge",
-      "expected_head_sha": "6506b95d6b78c75e8458c334765bab3584f53275",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T04:01:06.428Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-release-package-telegram-registry",
-        "head_sha": "6506b95d6b78c75e8458c334765bab3584f53275",
-        "cluster_id": "automerge-openclaw-openclaw-129784",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-129784.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "merge",
-          "status": "repair_needed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-129784.md"
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129670:5418409324:2026-08-26T04:00:30Z:clawsweeper_needs_human",
       "comment_id": "5418409324",
@@ -31810,6 +31751,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-doctor-json-lint-selectors",
         "head_sha": "09465afec208bb7c630f3ce4140bd4689eab3414",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129292:5410214895:2026-08-26T07:13:44Z:clawsweeper_auto_repair",
+      "comment_id": "5410214895",
+      "comment_version_key": "5410214895:2026-08-26T07:13:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129292#issuecomment-5410214895",
+      "comment_created_at": "2026-08-25T12:14:12Z",
+      "comment_updated_at": "2026-08-26T07:13:44Z",
+      "comment_body_sha256": "4f7df12a77f187c3e1301149b98a6b7951fdcd5a50092f3b20cc6b5e3572cf72",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129292,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2c244cf28426ba015e3201ef40563c5905b972f2)",
+      "expected_head_sha": "2c244cf28426ba015e3201ef40563c5905b972f2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T07:22:04.456Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-rich-chunk-limit",
+        "head_sha": "134ebebe09f3b4e365e6b451eb614ae00ad5d46a",
         "cluster_id": null,
         "job_path": null
       }
