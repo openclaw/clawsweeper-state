@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T07:22:09.050Z",
+  "updated_at": "2026-08-26T07:22:12.396Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124953:5420403017:2026-08-26T04:02:50Z:re_review",
-      "comment_id": "5420403017",
-      "comment_version_key": "5420403017:2026-08-26T04:02:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124953#issuecomment-5420403017",
-      "comment_created_at": "2026-08-26T04:02:50Z",
-      "comment_updated_at": "2026-08-26T04:02:50Z",
-      "comment_body_sha256": "db8990297ca0e51067fd1fce252c023f6bb1029a21f78cb9d4e3171b8f7120c3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124953,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T04:03:38.141Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-104950-recovery-trajectory-interrupted",
-        "head_sha": "96683d1291f5a2468eeef86c8c4e5049acc37bc4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129829:5420406070:2026-08-26T04:03:17Z:clawsweeper_needs_human",
       "comment_id": "5420406070",
@@ -31778,6 +31731,39 @@
         "kind": "pull_request",
         "branch": "leon/cli-core-send-failure-outcome-20260826",
         "head_sha": "6b99c9179c80f2012700b95fd3f1571b759aa3d3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129943:5421945954:2026-08-26T07:20:26Z:clawsweeper_needs_human",
+      "comment_id": "5421945954",
+      "comment_version_key": "5421945954:2026-08-26T07:20:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129943#issuecomment-5421945954",
+      "comment_created_at": "2026-08-26T07:20:26Z",
+      "comment_updated_at": "2026-08-26T07:20:26Z",
+      "comment_body_sha256": "b068539c69f5c7428df3040c500caa07358fad225e8b271539991da3a919da51",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129943,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +3 lines for a bug fix; the shared extracted-result message is the identified owner-boundary reason, and a net-neutral formulation would reintroduce duplicate p... (sha=b1ca8d0acd39b5a8c956ebcc1749d0666dac8365)",
+      "expected_head_sha": "b1ca8d0acd39b5a8c956ebcc1749d0666dac8365",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T07:22:12.396Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/macos-gateway-service-recovery-hints-20260826",
+        "head_sha": "b1ca8d0acd39b5a8c956ebcc1749d0666dac8365",
         "cluster_id": null,
         "job_path": null
       }
