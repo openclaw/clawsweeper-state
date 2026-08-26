@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T11:49:51.300Z",
+  "updated_at": "2026-08-26T11:49:53.287Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116446:5421910450:2026-08-26T07:16:48Z:re_review",
-      "comment_id": "5421910450",
-      "comment_version_key": "5421910450:2026-08-26T07:16:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5421910450",
-      "comment_created_at": "2026-08-26T07:16:48Z",
-      "comment_updated_at": "2026-08-26T07:16:48Z",
-      "comment_body_sha256": "4e0349d7b1c047d706fe1424fca76afcb0c0ecf7f58c67f97c55eacd404e255f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116446,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T07:17:29.408Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/qa-crabline-discord-0.1.13",
-        "head_sha": "8ba79e2e6aa069740201a8c15773378534c99ae5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120185:5420220406:2026-08-26T03:35:27Z:re_review",
       "comment_id": "5420220406",
@@ -32644,6 +32597,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-process-poll-pending-output",
         "head_sha": "a15559e89af8a7ed7ae9dff1f7485a6eb91d9bcc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130090:5424808441:2026-08-26T11:46:44Z:clawsweeper_needs_human",
+      "comment_id": "5424808441",
+      "comment_version_key": "5424808441:2026-08-26T11:46:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130090#issuecomment-5424808441",
+      "comment_created_at": "2026-08-26T11:46:44Z",
+      "comment_updated_at": "2026-08-26T11:46:44Z",
+      "comment_body_sha256": "4ff10a60105b2af043ae61f516ed151c01f4f64801c37570f45736dc584e1f28",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130090,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: After-fix real behavior proof is missing; add redacted channel-harness or Feishu runtime evidence showing the two-topic separation before merge... (sha=acf8aca0cb8cb1e593c48ecd36b68c405b787806)",
+      "expected_head_sha": "acf8aca0cb8cb1e593c48ecd36b68c405b787806",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T11:49:53.287Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/130028-feishu-debounce-thread-id",
+        "head_sha": "acf8aca0cb8cb1e593c48ecd36b68c405b787806",
         "cluster_id": null,
         "job_path": null
       }
