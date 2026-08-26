@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T17:46:54.231Z",
+  "updated_at": "2026-08-26T17:47:45.540Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129363:5411677310:2026-08-26T11:50:31Z:clawsweeper_auto_repair",
-      "comment_id": "5411677310",
-      "comment_version_key": "5411677310:2026-08-26T11:50:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129363#issuecomment-5411677310",
-      "comment_created_at": "2026-08-25T14:12:34Z",
-      "comment_updated_at": "2026-08-26T11:50:31Z",
-      "comment_body_sha256": "4dc0b522b32cb69bacdeb26bf7a77712e5756a740308ff713843b3339bc47fcd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129363,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=72239537da80c37f822073f65426b66c70eebf43)",
-      "expected_head_sha": "72239537da80c37f822073f65426b66c70eebf43",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T11:51:15.186Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/129359-emit-guard-no-handlers",
-        "head_sha": "72239537da80c37f822073f65426b66c70eebf43",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130080:5424852183:2026-08-26T11:50:54Z:re_review",
       "comment_id": "5424852183",
@@ -32000,6 +31967,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130270:5428936887:2026-08-26T17:46:05Z:freeform_assist",
+      "comment_id": "5428936887",
+      "comment_version_key": "5428936887:2026-08-26T17:46:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130270#issuecomment-5428936887",
+      "comment_created_at": "2026-08-26T17:46:05Z",
+      "comment_updated_at": "2026-08-26T17:46:05Z",
+      "comment_body_sha256": "eb36089199e61a96dda4ee4b7eac31929087047c0c1ddcbfa5abd9389681ed2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130270,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review\\n\\ncanonical generated-only locale refresh from successful non-publishing run 32990586155. exact source artifact and current-main sync/check proof are in the pr body. no merge requested.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T17:47:43.176Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/native-locale-repair",
+        "head_sha": "b541b2ff8128d61a7a2bd6c6c596d8446f323cb4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
