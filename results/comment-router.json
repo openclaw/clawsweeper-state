@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T12:53:44.459Z",
+  "updated_at": "2026-08-26T12:53:46.742Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122425:5269368911:2026-08-12T16:11:06Z:re_review",
-      "comment_id": "5269368911",
-      "comment_version_key": "5269368911:2026-08-12T16:11:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5269368911",
-      "comment_created_at": "2026-08-12T16:11:06Z",
-      "comment_updated_at": "2026-08-12T16:11:06Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122425,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T07:59:18.957Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122425:5269536734:2026-08-12T16:27:43Z:re_review",
       "comment_id": "5269536734",
@@ -32341,6 +32314,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T12:53:44.459Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130103:5425566227:2026-08-26T12:51:26Z:clawsweeper_needs_human",
+      "comment_id": "5425566227",
+      "comment_version_key": "5425566227:2026-08-26T12:51:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130103#issuecomment-5425566227",
+      "comment_created_at": "2026-08-26T12:51:26Z",
+      "comment_updated_at": "2026-08-26T12:51:26Z",
+      "comment_body_sha256": "87685697032efaeeea62a262693c307bda1c0558d0af38148d5f24f93b7ec1fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130103,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Isolate room evidence and disable tools for the automatic turn (P1)** - Room metadata and history are untrusted participant-controlled input, yet this prompt interpolates them into an isolated agent turn with no...; Review finding: [P1] Isolate room evidence and disable tools for the automatic turn — src/channels/join-intro/join-intro-prompt.ts:84-89 - [P1] Select a policy-allowed Discord cha... (sha=e228cf78c6a5137a43a19b1a29db7142a0e27288)",
+      "expected_head_sha": "e228cf78c6a5137a43a19b1a29db7142a0e27288",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T12:53:46.742Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/vigilant-noyce-9e35ee",
+        "head_sha": "e228cf78c6a5137a43a19b1a29db7142a0e27288",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
