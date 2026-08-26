@@ -67,18 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the forced mid-turn context-engine compaction budget mismatch. In src/agents/embedded-agent-runner/run/overflow-context-recovery.ts, when attempt.preflightRecovery has source "mid-turn" and a valid promptBudgetBeforeReserve, pass that reserve-adjusted budget to compactEmbeddedRunForRecovery instead of the raw contextTokenBudget; retain the raw budget for ordinary provider-reported overflow with no matching precheck snapshot. Extend the existing recovery regression test to prove both the preflight estimate and reserve-adjusted tokenBudget reach the context-engine compaction request, failing before the repair. Do not add configuration, change plugin APIs, alter generic provider-overflow behavior, or edit CHANGELOG.md.
+Repair the embedded runner’s mid-turn preflight overflow recovery so a finite positive promptBudgetBeforeReserve reaches forced context-engine compaction only when the synthetic overflow came from that preflight. Retain raw contextTokenBudget for ordinary provider overflow and timeout recovery. Extend the existing recovery test to assert the adjusted token budget; do not add config, alter plugin thresholds, or edit CHANGELOG.md. Include https://github.com/openclaw/openclaw/issues/130226 and release-note context in the PR body.
 
 Likely files:
 
 - src/agents/embedded-agent-runner/run/overflow-context-recovery.ts
 - src/agents/embedded-agent-runner/run.overflow-context-recovery.test.ts
+- src/agents/embedded-agent-runner/run.overflow-compaction.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run.overflow-context-recovery.test.ts
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt-prompt-preflight.test.ts
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/preemptive-compaction.test.ts
+- node scripts/run-vitest.mjs run src/agents/embedded-agent-runner/run.overflow-context-recovery.test.ts
+- node scripts/run-vitest.mjs run src/agents/embedded-agent-runner/run.overflow-compaction.test.ts
+- node scripts/run-vitest.mjs run src/agents/embedded-agent-runner/run.attempt-prompt-preflight.test.ts
 
 ## Operator Prompt
 
