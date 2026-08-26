@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:49:06.221Z",
+  "updated_at": "2026-08-26T09:49:09.201Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2936:5421496200:2026-08-26T06:30:31Z:re_review",
-      "comment_id": "5421496200",
-      "comment_version_key": "5421496200:2026-08-26T06:30:31Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2936#issuecomment-5421496200",
-      "comment_created_at": "2026-08-26T06:30:31Z",
-      "comment_updated_at": "2026-08-26T06:30:31Z",
-      "comment_body_sha256": "a83e5336118fe796c5d173144e2ed6946ca2c9d16cbae8d741a0b8109f2f0d52",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2936,
-      "author": "toml0006",
-      "author_id": 34890,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T06:35:32.888Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/muse-provider",
-        "head_sha": "138c5d8af3fef3b1cecb11e0fb1cb0e7144a7d68",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2936:5295682900:2026-08-26T06:34:47Z:clawsweeper_needs_human",
       "comment_id": "5295682900",
@@ -31432,6 +31385,39 @@
         "kind": "pull_request",
         "branch": "fix/tool-report-entry-cache-content-key",
         "head_sha": "d3d8fe50e781c8ac7071bcd1c96604bb678d59d3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129365:5411901649:2026-08-26T09:45:11Z:clawsweeper_needs_human",
+      "comment_id": "5411901649",
+      "comment_version_key": "5411901649:2026-08-26T09:45:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129365#issuecomment-5411901649",
+      "comment_created_at": "2026-08-25T14:27:38Z",
+      "comment_updated_at": "2026-08-26T09:45:11Z",
+      "comment_body_sha256": "8a0809365c5e8e262f44d436e3ad80210e2e728ef2230123437eff02ed4cdb49",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129365,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +6 lines; the retained local state and three-line invariant comment are justified by preserving one shared context without a second traversal, but exact-head va... (sha=6844f33f15a6add7d52a7f44e623d393d34beb91)",
+      "expected_head_sha": "6844f33f15a6add7d52a7f44e623d393d34beb91",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T09:49:09.201Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lazy-extension-context-per-event",
+        "head_sha": "6844f33f15a6add7d52a7f44e623d393d34beb91",
         "cluster_id": null,
         "job_path": null
       }
