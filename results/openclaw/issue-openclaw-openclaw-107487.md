@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-107487"
 mode: "autonomous"
-run_id: "33010055491"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33010055491"
+run_id: "33014655993"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33014655993"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-26T20:41:41.399Z"
-canonical: "https://github.com/openclaw/openclaw/issues/107487"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/107487"
+published_at: "2026-08-26T22:31:30.684Z"
+canonical: "#107487"
+canonical_issue: "#107487"
 canonical_pr: null
 actions_total: 4
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33010055491](https://github.com/openclaw/clawsweeper/actions/runs/33010055491)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33014655993](https://github.com/openclaw/clawsweeper/actions/runs/33014655993)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/107487
+Canonical: #107487
 
 ## Summary
 
-#107487 remains a reproducible canonical bug on current local main a27f7fe56c2868d89a60db534f9dcd041fe2fdda: `/acp close` omits durable discard, and ACPX only has an in-memory fresh marker. A narrow four-file repair is specified, but this read-only checkout lacks dependencies and the required sibling ../codex source, so no branch or validation can be produced here.
+#107487 remains a real, narrow non-security defect on current main: `/acp close` omits persistent discard, while ACPX’s fresh marker is process-local and therefore lost after restart. No repair branch or PR was created because this workspace is read-only, dependencies are absent, the required pinned ACPX source cannot be inspected, and the required sibling `../codex` checkout is unavailable.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/107487
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #107487 | fix_needed | planned | canonical | The issue is a broken established close invariant; no viable open PR exists. |
-| cluster:issue-openclaw-openclaw-107487 | build_fix_artifact | blocked | canonical | Implementation and validation require a writable checkout with installed pinned dependencies and the mandated Codex sibling source. |
-| #109270 | keep_closed | skipped | related | Already closed; not a mutation target. |
-| #111628 | keep_closed | skipped | superseded | Already closed; retain attribution in the replacement PR rather than attempting closure or merge. |
+| #107487 | fix_needed | blocked | canonical | The repair is appropriate, but its required upstream-contract inspection, regression run, local edit, and branch validation cannot occur in this read-only checkout. |
+| #107487 | build_fix_artifact | blocked | canonical | Artifact is supplied for a writable executor after it inspects the pinned dependency and validates the implementation. |
+| #109270 | keep_closed | skipped | related | Historical related context only; no closure action is valid. |
+| #111628 | keep_closed | skipped | superseded | Already closed contributor work; do not mutate or close again. |
 
 ## Needs Human
 

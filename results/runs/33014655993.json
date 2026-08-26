@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-107487",
+  "mode": "autonomous",
+  "run_id": "33014655993",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33014655993",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-107487.md",
+  "published_at": "2026-08-26T22:31:30.684Z",
+  "canonical": "#107487",
+  "canonical_issue": "#107487",
+  "canonical_pr": null,
+  "summary": "#107487 remains a real, narrow non-security defect on current main: `/acp close` omits persistent discard, while ACPX’s fresh marker is process-local and therefore lost after restart. No repair branch or PR was created because this workspace is read-only, dependencies are absent, the required pinned ACPX source cannot be inspected, and the required sibling `../codex` checkout is unavailable.",
+  "actions": [
+    {
+      "target": "#107487",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#107487",
+      "candidate_fix": null,
+      "reason": "The repair is appropriate, but its required upstream-contract inspection, regression run, local edit, and branch validation cannot occur in this read-only checkout."
+    },
+    {
+      "target": "#107487",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#107487",
+      "candidate_fix": null,
+      "reason": "Artifact is supplied for a writable executor after it inspects the pinned dependency and validates the implementation."
+    },
+    {
+      "target": "#109270",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#107487",
+      "candidate_fix": null,
+      "reason": "Historical related context only; no closure action is valid."
+    },
+    {
+      "target": "#111628",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#107487",
+      "candidate_fix": null,
+      "reason": "Already closed contributor work; do not mutate or close again."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
