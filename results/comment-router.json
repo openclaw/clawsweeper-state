@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T01:57:17.580Z",
+  "updated_at": "2026-08-26T01:57:20.062Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:47:5305413167:2026-08-25T19:49:29Z:clawsweeper_needs_human",
-      "comment_id": "5305413167",
-      "comment_version_key": "5305413167:2026-08-25T19:49:29Z",
-      "comment_url": "https://github.com/openclaw/clawscan/pull/47#issuecomment-5305413167",
-      "comment_created_at": "2026-08-16T02:53:29Z",
-      "comment_updated_at": "2026-08-25T19:49:29Z",
-      "comment_body_sha256": "80dda28ffd1c5b5350afa06a85df8477ef463d5d47104a58f7b611f73de94bce",
-      "repo": "openclaw/clawscan",
-      "issue_number": 47,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 5,520-ID ceiling is intentionally coupled to the current pinned SkillTrustBench set; a future pin expansion must update the constant, tests, CLI help, and documentation together. (sha=6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a)",
-      "expected_head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T20:47:20.236Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ids-stream-semantic-bound",
-        "head_sha": "6baa16f5fe70e10ca1f69925ae1fe25d034a2b9a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129129:5407363069:2026-08-25T20:41:44Z:clawsweeper_auto_repair",
       "comment_id": "5407363069",
@@ -32788,6 +32755,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T01:57:17.580Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1225:5416653755:2026-08-26T01:56:06Z:clawsweeper_needs_human",
+      "comment_id": "5416653755",
+      "comment_version_key": "5416653755:2026-08-26T01:56:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1225#issuecomment-5416653755",
+      "comment_created_at": "2026-08-25T20:54:59Z",
+      "comment_updated_at": "2026-08-26T01:56:06Z",
+      "comment_body_sha256": "6f0615aebd2c6cce3bb1270e823a227d5a80c2cf1fb4ed02ddd2d9c10dde9db3",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1225,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Archive extraction is a filesystem security boundary. The current head's hosted test job is failed on an accessibility readiness timeout reported as unrelated in the PR body, so it ne... (sha=477157b042155ea50c1585f244ad4bf98439d4fe)",
+      "expected_head_sha": "477157b042155ea50c1585f244ad4bf98439d4fe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T01:57:20.062Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codeql-archive-entry-destination",
+        "head_sha": "477157b042155ea50c1585f244ad4bf98439d4fe",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
