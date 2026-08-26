@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:05:51.369Z",
+  "updated_at": "2026-08-26T03:05:57.047Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115745:5118102960:2026-08-25T23:13:26Z:clawsweeper_needs_human",
-      "comment_id": "5118102960",
-      "comment_version_key": "5118102960:2026-08-25T23:13:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115745#issuecomment-5118102960",
-      "comment_created_at": "2026-07-29T13:02:03Z",
-      "comment_updated_at": "2026-08-25T23:13:26Z",
-      "comment_body_sha256": "8c6cdd0299cf9d263c23d49226b66b7dab58372361712c6e6c9c7f83599152e0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115745,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Strip per-line Markdown quote prefixes before prompt matching (P1)** - A standard blockquote prefixes every prompt line with > , so the raw newline-only pattern never matches and the private history/current-mess...; Review finding: [P1] Strip per-line Markdown quote prefixes before prompt matching — src/agents/embedded-agent-helpers/sanitize-user-facing-text.ts:95-98 - [high] Quoted prompt co... (sha=03d75c2c799c91e5d073223d457c7603690d3714)",
-      "expected_head_sha": "03d75c2c799c91e5d073223d457c7603690d3714",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T23:19:15.669Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/s28-suppress-copied-reply-scaffolding",
-        "head_sha": "d0171802d1a110d4486c3a55a8de35ddbf68e76e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118152:5160061935:2026-08-25T23:14:45Z:clawsweeper_auto_repair",
       "comment_id": "5160061935",
@@ -32195,6 +32162,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T03:05:51.369Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129386:5412971230:2026-08-26T03:04:18Z:clawsweeper_needs_human",
+      "comment_id": "5412971230",
+      "comment_version_key": "5412971230:2026-08-26T03:04:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129386#issuecomment-5412971230",
+      "comment_created_at": "2026-08-25T15:46:00Z",
+      "comment_updated_at": "2026-08-26T03:04:18Z",
+      "comment_body_sha256": "71b0a452a550e41043ee0a71d8493151453aa4e5f5319dea06bcb7b1b6f288d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129386,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An active client that does not implement the acknowledgement contract can still issue a legacy bare read and clear a manual marker; this is documented compatibility behavior, not comp... (sha=7ff7ac813a08f7246d9140f0c9a51c5075a9c20d)",
+      "expected_head_sha": "7ff7ac813a08f7246d9140f0c9a51c5075a9c20d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T03:05:57.047Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/mark-as-read-not-working",
+        "head_sha": "7ff7ac813a08f7246d9140f0c9a51c5075a9c20d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
