@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T08:38:07.835Z",
+  "updated_at": "2026-08-26T08:39:56.559Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129386:5412971230:2026-08-26T05:02:56Z:clawsweeper_auto_repair",
-      "comment_id": "5412971230",
-      "comment_version_key": "5412971230:2026-08-26T05:02:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129386#issuecomment-5412971230",
-      "comment_created_at": "2026-08-25T15:46:00Z",
-      "comment_updated_at": "2026-08-26T05:02:56Z",
-      "comment_body_sha256": "2bf594b961c8835435324eb5d6555b8047fe8482d7cdb11c7f82ab2dd60c620d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129386,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d56b5851dfebc0c7dd8d8291e7fc24ae013e1027)",
-      "expected_head_sha": "d56b5851dfebc0c7dd8d8291e7fc24ae013e1027",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T05:06:48.759Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/mark-as-read-not-working",
-        "head_sha": "d56b5851dfebc0c7dd8d8291e7fc24ae013e1027",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129792:5419937709:2026-08-26T05:04:12Z:clawsweeper_auto_repair",
       "comment_id": "5419937709",
@@ -31561,6 +31528,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129975:5422769377:2026-08-26T08:39:17Z:re_review",
+      "comment_id": "5422769377",
+      "comment_version_key": "5422769377:2026-08-26T08:39:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129975#issuecomment-5422769377",
+      "comment_created_at": "2026-08-26T08:39:17Z",
+      "comment_updated_at": "2026-08-26T08:39:17Z",
+      "comment_body_sha256": "cec727ac86db6a262c0298efec735fbc8934bced47e28e8a4d7cde424cb2ef9f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129975,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T08:39:54.853Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cleanup/meeting-audio-exhaustive-switch",
+        "head_sha": "b3663515a090138b6c7e25c3720f356230b8aeb0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
