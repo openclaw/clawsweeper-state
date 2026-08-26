@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T20:48:12.149Z",
+  "updated_at": "2026-08-26T20:48:12.456Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128254:5427336476:2026-08-26T15:09:53Z:re_review",
-      "comment_id": "5427336476",
-      "comment_version_key": "5427336476:2026-08-26T15:09:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128254#issuecomment-5427336476",
-      "comment_created_at": "2026-08-26T15:09:53Z",
-      "comment_updated_at": "2026-08-26T15:09:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128254,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T15:57:17.965Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "gaoanze888/matrix-reasoning-notices",
-        "head_sha": "2b879583b27f1002f6d25fd84a5df822b07a1214",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130175:5427447670:2026-08-26T15:22:36Z:re_review",
       "comment_id": "5427447670",
@@ -31596,6 +31549,39 @@
         "kind": "pull_request",
         "branch": "fix/qa-remote-log-tail-proof",
         "head_sha": "7adba1eabdd8d5b85d7702a65886320c3b2b909e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130359:5430896730:2026-08-26T20:45:04Z:clawsweeper_needs_human",
+      "comment_id": "5430896730",
+      "comment_version_key": "5430896730:2026-08-26T20:45:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130359#issuecomment-5430896730",
+      "comment_created_at": "2026-08-26T20:45:04Z",
+      "comment_updated_at": "2026-08-26T20:45:04Z",
+      "comment_body_sha256": "f5f67189465812c5d6aeab6dbd7d272414cc76faf71eafe7442f7a26f14920e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130359,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The selected @openai/codex 0.149.1 source was not available locally, so direct verification of the app-server login-success contract is still needed before merge. (sha=e889ce14d2c3ea0fdab4fa5ff829324df684d782)",
+      "expected_head_sha": "e889ce14d2c3ea0fdab4fa5ff829324df684d782",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T20:48:12.456Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-issue-130266-in-openclaw",
+        "head_sha": "e889ce14d2c3ea0fdab4fa5ff829324df684d782",
         "cluster_id": null,
         "job_path": null
       }
