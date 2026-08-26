@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130226",
+  "mode": "autonomous",
+  "run_id": "33002638795",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33002638795",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130226.md",
+  "published_at": "2026-08-26T20:22:16.663Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130226",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130226",
+  "canonical_pr": null,
+  "summary": "Current main confirms the defect: mid-turn preflight stores `promptBudgetBeforeReserve`, but recovery always supplies raw `contextTokenBudget` to forced budget compaction. No files changed: this sandbox is read-only, `../codex` is absent, and Corepack cannot initialize its cache here.",
+  "actions": [
+    {
+      "target": "#130226",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130226",
+      "candidate_fix": null,
+      "reason": "Narrow bug repair required; local implementation is blocked by sandbox constraints."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130226",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130226",
+      "candidate_fix": null,
+      "reason": "Delegate to a writable executor after refreshing main and completing the required direct sibling Codex inspection."
+    },
+    {
+      "target": "#119117",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent root cause."
+    },
+    {
+      "target": "#86023",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence only."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_independent": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
