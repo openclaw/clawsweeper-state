@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T01:05:37.277Z",
+  "updated_at": "2026-08-26T01:05:48.397Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/songsee:8:5415520332:2026-08-25T19:20:53Z:re_review",
-      "comment_id": "5415520332",
-      "comment_version_key": "5415520332:2026-08-25T19:20:53Z",
-      "comment_url": "https://github.com/openclaw/songsee/pull/8#issuecomment-5415520332",
-      "comment_created_at": "2026-08-25T19:20:53Z",
-      "comment_updated_at": "2026-08-25T19:20:53Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/songsee",
-      "issue_number": 8,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T19:22:00.056Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codeql-docs-toc-permissions",
-        "head_sha": "ff0bd85ae0b027117b7a0007ed76f7f22558833f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124301:5415330280:2026-08-25T19:05:52Z:re_review",
       "comment_id": "5415330280",
@@ -32767,6 +32720,39 @@
         "kind": "pull_request",
         "branch": "openclaw/working-thread-without-spinner",
         "head_sha": "26a264d2b46960eee1b22501d22a5b107ecdd2fd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129717:5419135713:2026-08-26T01:04:19Z:clawsweeper_auto_repair",
+      "comment_id": "5419135713",
+      "comment_version_key": "5419135713:2026-08-26T01:04:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129717#issuecomment-5419135713",
+      "comment_created_at": "2026-08-26T01:04:19Z",
+      "comment_updated_at": "2026-08-26T01:04:19Z",
+      "comment_body_sha256": "ee6a0627aebace091e3c8827b08c3224a2cb1a4ccdcabc486a6bf8ff14a663e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129717,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2bc8ee71fb89ece753bd5c72779c4e2054c9d8d7)",
+      "expected_head_sha": "2bc8ee71fb89ece753bd5c72779c4e2054c9d8d7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T01:05:48.397Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ingress-bind-limit-127474",
+        "head_sha": "2bc8ee71fb89ece753bd5c72779c4e2054c9d8d7",
         "cluster_id": null,
         "job_path": null
       }
