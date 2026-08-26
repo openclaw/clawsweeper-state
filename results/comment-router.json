@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T01:39:13.026Z",
+  "updated_at": "2026-08-26T01:41:28.825Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129561:5415825021:2026-08-25T19:46:22Z:re_review",
-      "comment_id": "5415825021",
-      "comment_version_key": "5415825021:2026-08-25T19:46:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129561#issuecomment-5415825021",
-      "comment_created_at": "2026-08-25T19:46:22Z",
-      "comment_updated_at": "2026-08-25T19:46:22Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129561,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T19:47:27.512Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/39777-debug-refresh-v2",
-        "head_sha": "86e5293d99514f5a6738f76292ca79104bc11aa9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128965:5404166601:2026-08-25T19:43:22Z:clawsweeper_auto_repair",
       "comment_id": "5404166601",
@@ -33101,6 +33054,39 @@
         "kind": "pull_request",
         "branch": "codex/bootstrap-cleanup-single-owner",
         "head_sha": "c5341d02b1820dc6915a1f6ac6c6ce9ae8fda603",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129714:5419221288:2026-08-26T01:40:23Z:clawsweeper_needs_human",
+      "comment_id": "5419221288",
+      "comment_version_key": "5419221288:2026-08-26T01:40:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129714#issuecomment-5419221288",
+      "comment_created_at": "2026-08-26T01:13:49Z",
+      "comment_updated_at": "2026-08-26T01:40:23Z",
+      "comment_body_sha256": "e6d6ca12555ecf6125245fa804ecf4fdd8aa85bf8286102b7094a76f77cbeef0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129714,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that deliberately pass an explicitly blank working-directory flag will fail locally after upgrade instead of silently using the Gateway directory. (sha=99e0c9aefd48b85a425d197d7db3490c3741120e)",
+      "expected_head_sha": "99e0c9aefd48b85a425d197d7db3490c3741120e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T01:41:28.825Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-cron-create-command-cwd-validation-20260825",
+        "head_sha": "99e0c9aefd48b85a425d197d7db3490c3741120e",
         "cluster_id": null,
         "job_path": null
       }
