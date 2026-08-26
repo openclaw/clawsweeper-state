@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T17:33:52.951Z",
+  "updated_at": "2026-08-26T17:35:47.985Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/esp-openclaw-node:28:5307365254:2026-08-26T11:21:54Z:clawsweeper_auto_repair",
-      "comment_id": "5307365254",
-      "comment_version_key": "5307365254:2026-08-26T11:21:54Z",
-      "comment_url": "https://github.com/openclaw/esp-openclaw-node/pull/28#issuecomment-5307365254",
-      "comment_created_at": "2026-08-16T12:10:35Z",
-      "comment_updated_at": "2026-08-26T11:21:54Z",
-      "comment_body_sha256": "a4bf25079c849f91552915fc52b4f96172d14d1e25cd00aaaac2b95b8c671f4f",
-      "repo": "openclaw/esp-openclaw-node",
-      "issue_number": 28,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=25061111f4faacb103c5c1633a90aa935f197f95)",
-      "expected_head_sha": "25061111f4faacb103c5c1633a90aa935f197f95",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T11:22:34.638Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/destroy-timeout",
-        "head_sha": "25061111f4faacb103c5c1633a90aa935f197f95",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:17:5304621335:2026-08-26T11:15:37Z:clawsweeper_auto_repair",
       "comment_id": "5304621335",
@@ -32144,6 +32111,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T17:33:52.951Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130242:5428811642:2026-08-26T17:34:55Z:clawsweeper_needs_human",
+      "comment_id": "5428811642",
+      "comment_version_key": "5428811642:2026-08-26T17:34:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130242#issuecomment-5428811642",
+      "comment_created_at": "2026-08-26T17:34:55Z",
+      "comment_updated_at": "2026-08-26T17:34:55Z",
+      "comment_body_sha256": "8b9df826cff938d8fb16defa6d1c4453fe997812cb9eaefc0d01d2ce2872b4cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130242,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep warm-image capture opt-in until its secret boundary is proven (P1)** - This changes omitted warmImage from false to true, so every eligible profile teardown can snapshot state after arbitrary settings.setup...; Review finding: [P1] Keep warm-image capture opt-in until its secret boundary is proven — extensions/crabbox/src/crabbox-worker-profile.ts:204 - [high] Default capture can retain... (sha=ad84b2f76ec5d3b182a0773170875cb340864c11)",
+      "expected_head_sha": "ad84b2f76ec5d3b182a0773170875cb340864c11",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T17:35:47.985Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/worker-auto-suspend",
+        "head_sha": "ad84b2f76ec5d3b182a0773170875cb340864c11",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
