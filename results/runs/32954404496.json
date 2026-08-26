@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130051",
+  "mode": "autonomous",
+  "run_id": "32954404496",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32954404496",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130051.md",
+  "published_at": "2026-08-26T10:32:34.384Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130051",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130051",
+  "canonical_pr": null,
+  "summary": "A narrow canonical repair is identified, but this read-only worker cannot create the required branch or run tests: dependencies are absent, pnpm cannot write its cache, and the mandated sibling Codex checkout cannot be created. The executor should apply the prepared new-PR artifact in a writable environment.",
+  "actions": [
+    {
+      "target": "#130051",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130051",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker environment: the focused test cannot resolve tsx; pnpm install fails with EROFS while creating the Corepack cache; and cloning required ../codex fails with EROFS. No GitHub mutation was attempted."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130051",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130051",
+      "candidate_fix": null,
+      "reason": "Prepared for a writable executor; this worker did not alter files or GitHub."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
