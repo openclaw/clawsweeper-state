@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T01:04:13.698Z",
+  "updated_at": "2026-08-26T01:04:17.786Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129403:5412624782:2026-08-25T19:08:30Z:clawsweeper_needs_human",
-      "comment_id": "5412624782",
-      "comment_version_key": "5412624782:2026-08-25T19:08:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129403#issuecomment-5412624782",
-      "comment_created_at": "2026-08-25T15:19:12Z",
-      "comment_updated_at": "2026-08-25T19:08:30Z",
-      "comment_body_sha256": "4a2d875fd5fa78e619a05714306089052b4384129ddaa6ebedd5c21842aee48b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129403,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The copied terminal output calls a built helper directly, not the reported CLI flows on this PR head; it does not prove the primary lo...; Review finding: [P1] Guard the actual config-loading parser boundary — src/config/io.read-helpers.ts:161-165 - [P1] Fix escaped-quote parity in the raw nesting scanner — src/confi... (sha=132d68d3aeb2a8515404e36828985c3a7ff858e5)",
-      "expected_head_sha": "132d68d3aeb2a8515404e36828985c3a7ff858e5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T19:15:40.503Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/129209-json-nesting-stack-overflow",
-        "head_sha": "132d68d3aeb2a8515404e36828985c3a7ff858e5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:66:5170678735:2026-08-25T19:05:15Z:clawsweeper_needs_human",
       "comment_id": "5170678735",
@@ -32874,6 +32841,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129636:5417622439:2026-08-26T01:01:26Z:clawsweeper_needs_human",
+      "comment_id": "5417622439",
+      "comment_version_key": "5417622439:2026-08-26T01:01:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129636#issuecomment-5417622439",
+      "comment_created_at": "2026-08-25T22:20:42Z",
+      "comment_updated_at": "2026-08-26T01:01:26Z",
+      "comment_body_sha256": "bb76309e2f46b058fc9e835227fc533b70b6bd2478a6e33456959f64f703f24e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129636,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing argv-only generated approvals intentionally become inactive; operators may need to reapprove commands after Doctor removes the obsolete generated rules. (sha=4b39a7c521d8453c68f4d360dbced98ddd6b7888)",
+      "expected_head_sha": "4b39a7c521d8453c68f4d360dbced98ddd6b7888",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T01:04:17.786Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/cwd-bound-exec-approvals",
+        "head_sha": "4b39a7c521d8453c68f4d360dbced98ddd6b7888",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
