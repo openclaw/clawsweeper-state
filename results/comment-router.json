@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T04:03:40.255Z",
+  "updated_at": "2026-08-26T04:04:06.569Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120125:5212029845:2026-08-26T00:39:12Z:clawsweeper_needs_human",
-      "comment_id": "5212029845",
-      "comment_version_key": "5212029845:2026-08-26T00:39:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120125#issuecomment-5212029845",
-      "comment_created_at": "2026-08-07T03:40:58Z",
-      "comment_updated_at": "2026-08-26T00:39:12Z",
-      "comment_body_sha256": "5930ace88362aa00e18e386805599452991883251dc9889cba1c6b887b81a7f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120125,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The focused test uses a local HTTP server and injected RPC failure, but the PR has no after-fix benchmark runtime or terminal trace; add redact... (sha=7388446e7515f18e832cb3b57bae4612f16973ad)",
-      "expected_head_sha": "7388446e7515f18e832cb3b57bae4612f16973ad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T00:46:41.084Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bench-gateway-surrogate-probe-error",
-        "head_sha": "7388446e7515f18e832cb3b57bae4612f16973ad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120125:5213024606:2026-08-07T05:54:48Z:re_review",
       "comment_id": "5213024606",
@@ -32047,6 +32014,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129829:5420406070:2026-08-26T04:03:17Z:clawsweeper_needs_human",
+      "comment_id": "5420406070",
+      "comment_version_key": "5420406070:2026-08-26T04:03:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129829#issuecomment-5420406070",
+      "comment_created_at": "2026-08-26T04:03:17Z",
+      "comment_updated_at": "2026-08-26T04:03:17Z",
+      "comment_body_sha256": "b7a2792c29ab8c27c9ecd7144700b8b8940b4444f2e64bd5e3da45e91ea95f75",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129829,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The first post-merge recovery will deliberately reach existing registry-authentication and write steps after protected approval; no safe pre-merge VCR dispatch was performed. (sha=52062900f387d40dd69afcde69540a0d7412446f)",
+      "expected_head_sha": "52062900f387d40dd69afcde69540a0d7412446f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T04:04:06.569Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/vcr-recovery-boolean",
+        "head_sha": "52062900f387d40dd69afcde69540a0d7412446f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
