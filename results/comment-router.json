@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:39:15.413Z",
+  "updated_at": "2026-08-26T03:39:19.828Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120456:5418793733:2026-08-26T00:16:58Z:re_review",
-      "comment_id": "5418793733",
-      "comment_version_key": "5418793733:2026-08-26T00:16:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120456#issuecomment-5418793733",
-      "comment_created_at": "2026-08-26T00:16:58Z",
-      "comment_updated_at": "2026-08-26T00:16:58Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120456,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T00:17:44.294Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-lint-gate-tests",
-        "head_sha": "7bc4984fe3d61c05303485c10235b5cebe36fd86",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129423:5413924479:2026-08-26T00:17:49Z:clawsweeper_needs_human",
       "comment_id": "5413924479",
@@ -31910,6 +31863,39 @@
         "kind": "pull_request",
         "branch": "sunlit/fix/issue-126879",
         "head_sha": "a110ca56f89361e83a0042e83e1c006e4c46d05f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129758:5419626011:2026-08-26T03:36:09Z:clawsweeper_needs_human",
+      "comment_id": "5419626011",
+      "comment_version_key": "5419626011:2026-08-26T03:36:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129758#issuecomment-5419626011",
+      "comment_created_at": "2026-08-26T02:10:35Z",
+      "comment_updated_at": "2026-08-26T03:36:09Z",
+      "comment_body_sha256": "915cd560af7e421af1302307cac8f6b403b81aae7eec0dfe12dfceb0d5e148ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129758,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging expands the accepted package range by 6 MiB despite the guard's documented correlation between historical package bloat and low-memory startup or doctor failures; the candidat... (sha=8d23bc5f50e3d7f09eda27b4fe1cdd0b7a6fdcab)",
+      "expected_head_sha": "8d23bc5f50e3d7f09eda27b4fe1cdd0b7a6fdcab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T03:39:19.828Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/npm-pack-budget-210mib",
+        "head_sha": "8d23bc5f50e3d7f09eda27b4fe1cdd0b7a6fdcab",
         "cluster_id": null,
         "job_path": null
       }
