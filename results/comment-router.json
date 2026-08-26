@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T18:40:08.345Z",
+  "updated_at": "2026-08-26T18:40:15.386Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126457:5348830579:2026-08-26T13:30:06Z:clawsweeper_needs_human",
-      "comment_id": "5348830579",
-      "comment_version_key": "5348830579:2026-08-26T13:30:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126457#issuecomment-5348830579",
-      "comment_created_at": "2026-08-19T22:37:28Z",
-      "comment_updated_at": "2026-08-26T13:30:06Z",
-      "comment_body_sha256": "8ca351ae1bfc0ad62794c34c2b72499740411c102a4e861aaac3fe4c029c4f11",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126457,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - If the selected loaded LaunchAgent plist is missing, unreadable, or lacks ExitTimeOut, an existing launchd installation now exits immediately and can interrupt active work instead of... (sha=2753d64e6dc8f57011eebeb6ca938930ea611d80)",
-      "expected_head_sha": "2753d64e6dc8f57011eebeb6ca938930ea611d80",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T13:35:27.741Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/launchd-tailscale-owner-lifecycle",
-        "head_sha": "2753d64e6dc8f57011eebeb6ca938930ea611d80",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116372:5136002493:2026-07-30T20:35:55Z:re_review",
       "comment_id": "5136002493",
@@ -31514,6 +31481,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1444:5429560387:2026-08-26T18:39:34Z:re_review",
+      "comment_id": "5429560387",
+      "comment_version_key": "5429560387:2026-08-26T18:39:34Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1444#issuecomment-5429560387",
+      "comment_created_at": "2026-08-26T18:39:34Z",
+      "comment_updated_at": "2026-08-26T18:39:34Z",
+      "comment_body_sha256": "4fd7e683b7d9dca530507cca65e49265f59b035246b2472e69db1c115785699a",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1444,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T18:40:13.264Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/linux-readiness-manifest",
+        "head_sha": "f0735c46e28932d087c638211dd990289fb1afbb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
