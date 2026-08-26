@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T08:41:14.841Z",
+  "updated_at": "2026-08-26T08:41:17.541Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120979:5232529075:2026-08-09T16:24:39Z:re_review",
-      "comment_id": "5232529075",
-      "comment_version_key": "5232529075:2026-08-09T16:24:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120979#issuecomment-5232529075",
-      "comment_created_at": "2026-08-09T16:24:39Z",
-      "comment_updated_at": "2026-08-09T16:24:39Z",
-      "comment_body_sha256": "39b9686ab569639b67eab1caa8420ddb1b5d5e687f759ff0f225c0f5bb68bc70",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120979,
-      "author": "litang9",
-      "author_id": 141409885,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T05:06:49.383Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120979:5288781490:2026-08-14T02:39:54Z:re_review",
       "comment_id": "5288781490",
@@ -31639,6 +31612,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127060:5366128937:2026-08-26T08:34:26Z:clawsweeper_needs_human",
+      "comment_id": "5366128937",
+      "comment_version_key": "5366128937:2026-08-26T08:34:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127060#issuecomment-5366128937",
+      "comment_created_at": "2026-08-21T06:40:01Z",
+      "comment_updated_at": "2026-08-26T08:34:26Z",
+      "comment_body_sha256": "845ab3bc634ea7cc866a2604374c62364bd400c0878ec18109a9fe24606f107b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127060,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that mix a system-agent request with onboarding flags will now exit instead of following the prior onboarding-precedence behavior. (sha=da2047950a675e9125e552a38cbd22249bf7717b)",
+      "expected_head_sha": "da2047950a675e9125e552a38cbd22249bf7717b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T08:41:17.541Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/setup-onboarding-option-conflict",
+        "head_sha": "da2047950a675e9125e552a38cbd22249bf7717b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
