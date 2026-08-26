@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T16:19:26.545Z",
+  "updated_at": "2026-08-26T16:19:32.522Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110884:5423517308:2026-08-26T09:46:07Z:re_review",
-      "comment_id": "5423517308",
-      "comment_version_key": "5423517308:2026-08-26T09:46:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110884#issuecomment-5423517308",
-      "comment_created_at": "2026-08-26T09:46:07Z",
-      "comment_updated_at": "2026-08-26T09:46:07Z",
-      "comment_body_sha256": "f8e596580a595e200f4fc12718c41c18edea3b0507fd4a30ade6de43c313deae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110884,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T09:51:41.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-post-action-target-continuity-103785",
-        "head_sha": "25b11de3b4915550a819f72f7107d49dcbbd6c1a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:109723:5423536110:2026-08-26T09:47:44Z:re_review",
       "comment_id": "5423536110",
@@ -32941,6 +32894,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-128967-stderr-tail-disclosure",
         "head_sha": "2785a848e2d60ff480241064e00e48062403d589",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130183:5427916077:2026-08-26T16:16:31Z:clawsweeper_needs_human",
+      "comment_id": "5427916077",
+      "comment_version_key": "5427916077:2026-08-26T16:16:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130183#issuecomment-5427916077",
+      "comment_created_at": "2026-08-26T16:16:31Z",
+      "comment_updated_at": "2026-08-26T16:16:31Z",
+      "comment_body_sha256": "12d945facf8acd9467b3ab753ec2426724f698b794f546044e96db9eede283d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130183,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This branch declares https://github.com/openclaw/openclaw/pull/130109 as a prerequisite; before that placement change lands, the rail still invokes the card without session status, so... (sha=fc6c1301c8138e644f5739cd9bb387f54b4ad50e)",
+      "expected_head_sha": "fc6c1301c8138e644f5739cd9bb387f54b4ad50e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T16:19:32.522Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/progress-copy",
+        "head_sha": "fc6c1301c8138e644f5739cd9bb387f54b4ad50e",
         "cluster_id": null,
         "job_path": null
       }
