@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:03:35.017Z",
+  "updated_at": "2026-08-26T02:04:43.135Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129568:5416659653:2026-08-25T20:55:23Z:re_review",
-      "comment_id": "5416659653",
-      "comment_version_key": "5416659653:2026-08-25T20:55:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129568#issuecomment-5416659653",
-      "comment_created_at": "2026-08-25T20:55:23Z",
-      "comment_updated_at": "2026-08-25T20:55:23Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129568,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T20:56:35.810Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workboard-sqlite-indexes",
-        "head_sha": "4f6832f281f2e52697ded621447b355681cb39cc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129534:5415969499:2026-08-25T19:57:37Z:re_review",
       "comment_id": "5415969499",
@@ -32848,6 +32801,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129742:5419548363:2026-08-26T01:59:58Z:clawsweeper_needs_human",
+      "comment_id": "5419548363",
+      "comment_version_key": "5419548363:2026-08-26T01:59:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129742#issuecomment-5419548363",
+      "comment_created_at": "2026-08-26T01:59:58Z",
+      "comment_updated_at": "2026-08-26T01:59:58Z",
+      "comment_body_sha256": "29ca6e206752e05a499c6c0bf235a88e12ea81012ec04ed0d48fb180b7aae526",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129742,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: this is a normal maintainer PR review with no actionable defect found. (sha=fe98d9f562824e87f5935f52ec5938baa0e71808)",
+      "expected_head_sha": "fe98d9f562824e87f5935f52ec5938baa0e71808",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T02:04:43.135Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/manifest-model-id-lifecycle",
+        "head_sha": "fe98d9f562824e87f5935f52ec5938baa0e71808",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
