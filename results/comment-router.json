@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T21:04:18.160Z",
+  "updated_at": "2026-08-26T21:04:30.120Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3107:5427312779:2026-08-26T15:07:23Z:re_review",
-      "comment_id": "5427312779",
-      "comment_version_key": "5427312779:2026-08-26T15:07:23Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3107#issuecomment-5427312779",
-      "comment_created_at": "2026-08-26T15:07:23Z",
-      "comment_updated_at": "2026-08-26T15:07:23Z",
-      "comment_body_sha256": "07c0f11cb6d796b40c322672d5edfe858a4d07a65bd80031cdeeb9d1579a79d8",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3107,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T16:10:12.015Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/spend-cache-ttl",
-        "head_sha": "fd4dc885334076cb1c24ad8b927da2214ee567d0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/poltergeist:210:5398612199:2026-08-26T16:09:01Z:clawsweeper_auto_repair",
       "comment_id": "5398612199",
@@ -31479,6 +31432,39 @@
         "kind": "pull_request",
         "branch": "codex/embedding-batch-runtime-contract",
         "head_sha": "a6f391aa4901440ee7175d875c75e3a4fc9f1835",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130348:5431032900:2026-08-26T20:58:15Z:clawsweeper_needs_human",
+      "comment_id": "5431032900",
+      "comment_version_key": "5431032900:2026-08-26T20:58:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130348#issuecomment-5431032900",
+      "comment_created_at": "2026-08-26T20:58:15Z",
+      "comment_updated_at": "2026-08-26T20:58:15Z",
+      "comment_body_sha256": "a0489ede8cc7824b4ec3bdfe205b11c5c30d5250ac6014836261a1e4967956fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130348,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The checkout cannot independently compare the PR with current main or inspect the full parent diff because required promisor objects are unavailable and GitHub DNS is unreachable; sel... (sha=fcc2cebd107ae517278a4612fb2203c9df37bd7c)",
+      "expected_head_sha": "fcc2cebd107ae517278a4612fb2203c9df37bd7c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T21:04:30.120Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup20k-discord-zalouser-private-facades-20260826",
+        "head_sha": "fcc2cebd107ae517278a4612fb2203c9df37bd7c",
         "cluster_id": null,
         "job_path": null
       }
