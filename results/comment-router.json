@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T04:34:17.622Z",
+  "updated_at": "2026-08-26T04:35:37.656Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/ocm:110:5419275082:2026-08-26T01:21:30Z:clawsweeper_needs_human",
-      "comment_id": "5419275082",
-      "comment_version_key": "5419275082:2026-08-26T01:21:30Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/110#issuecomment-5419275082",
-      "comment_created_at": "2026-08-26T01:21:30Z",
-      "comment_updated_at": "2026-08-26T01:21:30Z",
-      "comment_body_sha256": "25c5409385699f4969ac7a9630b1e869ad6a7f06c167c22a73db1cbdbce4ff05",
-      "repo": "openclaw/ocm",
-      "issue_number": 110,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR supplies a command-level regression test but no redacted after-fix production-command transcript; show a...; Review finding: [medium] Provide final-effect containment proof — src/store/openclaw_state.rs:405 (sha=a4f91fc37c93a90acb33800a55a11eee3c005fc0)",
-      "expected_head_sha": "a4f91fc37c93a90acb33800a55a11eee3c005fc0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T01:28:53.944Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/adopt-external-plugin-containment",
-        "head_sha": "a4f91fc37c93a90acb33800a55a11eee3c005fc0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-08-26T01:27:38Z:clawsweeper_needs_human",
       "comment_id": "5075679870",
@@ -32133,6 +32100,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129707:5420650566:2026-08-26T04:34:51Z:re_review",
+      "comment_id": "5420650566",
+      "comment_version_key": "5420650566:2026-08-26T04:34:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129707#issuecomment-5420650566",
+      "comment_created_at": "2026-08-26T04:34:51Z",
+      "comment_updated_at": "2026-08-26T04:34:51Z",
+      "comment_body_sha256": "78262fc8a53d9cec1c7eb52da78e526092f69f98ef61682fd8f316089a27e78d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129707,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T04:35:35.506Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/composer-invocations",
+        "head_sha": "70a69db17e63f9a9fb4dc9a0b3400551b901fa2a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
