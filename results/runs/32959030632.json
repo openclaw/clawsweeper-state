@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130018",
+  "mode": "autonomous",
+  "run_id": "32959030632",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32959030632",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130018.md",
+  "published_at": "2026-08-26T11:59:52.602Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130018",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130018",
+  "canonical_pr": null,
+  "summary": "#130018 remains the canonical open bug. Current-main source evidence isolates the gap to standalone auth-state.json being imported without the collision-safe OpenAI Codex profile-ID map. A narrow two-file repair plan is ready, but this worker cannot implement or validate it because the supplied checkout is read-only.",
+  "actions": [
+    {
+      "target": "#130018",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130018",
+      "candidate_fix": null,
+      "reason": "Implement the owner-boundary repair on a writable executor, then run the focused migration regression and changed gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130018",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130018",
+      "candidate_fix": null,
+      "reason": "A narrow new PR can repair the standalone-state producer without runtime aliases, configuration changes, or schema changes."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
