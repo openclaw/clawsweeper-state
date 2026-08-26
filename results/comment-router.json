@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T20:51:04.563Z",
+  "updated_at": "2026-08-26T20:51:04.771Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118720:5168149980:2026-08-26T14:56:24Z:clawsweeper_needs_human",
-      "comment_id": "5168149980",
-      "comment_version_key": "5168149980:2026-08-26T14:56:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118720#issuecomment-5168149980",
-      "comment_created_at": "2026-08-03T15:07:52Z",
-      "comment_updated_at": "2026-08-26T14:56:24Z",
-      "comment_body_sha256": "5ebba3c0dd503759465c88810c2f70b0c9fc253a6efe8283057147a31dc1e546",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118720,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - When the Gateway itself fails to answer, plain node-plugin calls can wait up to 35 seconds rather than the previous 30 seconds. (sha=84586a8749eacb0db6b48c9065159e617361f5ff)",
-      "expected_head_sha": "84586a8749eacb0db6b48c9065159e617361f5ff",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T15:58:07.613Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/node-plugin-tool-invoke-deadline",
-        "head_sha": "84586a8749eacb0db6b48c9065159e617361f5ff",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119256:5180866476:2026-08-26T15:01:11Z:clawsweeper_auto_repair",
       "comment_id": "5180866476",
@@ -31461,6 +31428,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T20:51:04.563Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102886:4926296016:2026-08-26T20:46:13Z:clawsweeper_needs_human",
+      "comment_id": "4926296016",
+      "comment_version_key": "4926296016:2026-08-26T20:46:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/102886#issuecomment-4926296016",
+      "comment_created_at": "2026-07-09T14:45:44Z",
+      "comment_updated_at": "2026-08-26T20:46:13Z",
+      "comment_body_sha256": "1e6ebd0e510563c10dfba11b38ccda0ca8e3062614247dc8698649bd194493e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 102886,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The intentional 10-second deadline can surface setup failure on very slow networks; exact-head hosted checks are still incomplete. (sha=0994784d36bdc847f8f8dec63d13b08e92eea26a)",
+      "expected_head_sha": "0994784d36bdc847f8f8dec63d13b08e92eea26a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T20:51:04.771Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-copilot-embedding-discovery-timeout",
+        "head_sha": "0994784d36bdc847f8f8dec63d13b08e92eea26a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
