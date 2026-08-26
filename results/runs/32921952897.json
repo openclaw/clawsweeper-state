@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-57259",
+  "mode": "autonomous",
+  "run_id": "32921952897",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32921952897",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-57259.md",
+  "published_at": "2026-08-26T02:24:41.092Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/57259",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/57259",
+  "canonical_pr": null,
+  "summary": "No code was changed. Current main contains the configured image-model route, GitHub Copilot vision metadata, and Copilot-specific image request shaping, but this worker cannot issue the required final implementation verdict: the mandatory sibling Codex source checkout is absent and dependencies cannot be installed in the read-only sandbox.",
+  "actions": [
+    {
+      "target": "#57259",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#57259",
+      "candidate_fix": null,
+      "reason": "Provide a verification environment with the required sibling Codex source and installable dependencies, or explicitly waive the Codex-source gate for this GitHub-Copilot-only issue before deciding that no PR is needed."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Decide whether to supply the required Codex checkout/dependency-ready environment or waive that gate for this issue; without it, ClawSweeper cannot make the final already-implemented verdict or create a no-op PR."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#57259",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
