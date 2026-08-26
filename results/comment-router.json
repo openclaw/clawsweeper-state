@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T08:37:28.780Z",
+  "updated_at": "2026-08-26T08:37:31.460Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129762:5420829748:2026-08-26T05:01:37Z:re_review",
-      "comment_id": "5420829748",
-      "comment_version_key": "5420829748:2026-08-26T05:01:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129762#issuecomment-5420829748",
-      "comment_created_at": "2026-08-26T05:01:37Z",
-      "comment_updated_at": "2026-08-26T05:01:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129762,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T05:03:35.353Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/file-transfer-exact-approvals",
-        "head_sha": "836d84219ed9d27cd5a514ddb49e2bc07b40c33b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/notcrawl:106:5420223116:2026-08-26T05:05:10Z:clawsweeper_needs_human",
       "comment_id": "5420223116",
@@ -31586,6 +31539,39 @@
         "kind": "pull_request",
         "branch": "cleanup/logbook-batch-enqueue",
         "head_sha": "45c767612820596daad0adc91518a5eab615f012",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129976:5422327649:2026-08-26T08:33:57Z:clawsweeper_needs_human",
+      "comment_id": "5422327649",
+      "comment_version_key": "5422327649:2026-08-26T08:33:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129976#issuecomment-5422327649",
+      "comment_created_at": "2026-08-26T07:57:54Z",
+      "comment_updated_at": "2026-08-26T08:33:57Z",
+      "comment_body_sha256": "1ee17431fe856ece2c60b79c8d2d7b5a456b5d79d91365950b45ad449a3ebc5e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129976,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this draft branch is behind its base; refresh the clean merge result before marking it ready. (sha=5f99fcf376aae9e2c98dcdd60c5ae972f232d3f8)",
+      "expected_head_sha": "5f99fcf376aae9e2c98dcdd60c5ae972f232d3f8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T08:37:31.460Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/refactor-plugin-hook-void-owners-00367880",
+        "head_sha": "5f99fcf376aae9e2c98dcdd60c5ae972f232d3f8",
         "cluster_id": null,
         "job_path": null
       }
