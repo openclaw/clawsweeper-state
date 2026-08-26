@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Doctor-owned OpenAI Codex auth migration for standalone auth-state.json. First establish a failing focused regression using five named legacy OAuth profiles plus legacy default, a standalone legacy order/lastGood/usageStats, and a conflicting legacy config order. Apply the existing collision-aware profile-ID mapping to standalone state before coercion and SQLite write; preserve the explicitly named order without injecting default, retain canonical credential precedence, and archive consumed legacy files. Reuse the existing migration abstraction rather than adding runtime aliases, config options, fallback reads, or schema changes. Add boundary regression coverage that fails before the repair. Do not edit CHANGELOG.md; put any release-note context in the PR body.
+Repair https://github.com/openclaw/openclaw/issues/130018 at the core Doctor auth-migration owner. Canonicalize separately loaded auth-state.json order, lastGood, and usageStats with the same collision-safe openai-codex-to-openai profile-ID map used for credential records before merging into SQLite. Preserve standalone state precedence over auth-profiles state and preserve an existing canonical credential over stale flat state. Do not add runtime aliases, configuration, or schema changes. Add one owner-boundary regression scenario with five named legacy OAuth profiles plus default, separate legacy state, and conflicting config order; assert exact named canonical state order without default injection, canonical lastGood/usageStats, preserved canonical credentials, and archived consumed files. Put release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
