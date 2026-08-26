@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T05:02:39.765Z",
+  "updated_at": "2026-08-26T05:02:41.198Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128149:5419584130:2026-08-26T02:04:45Z:re_review",
-      "comment_id": "5419584130",
-      "comment_version_key": "5419584130:2026-08-26T02:04:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128149#issuecomment-5419584130",
-      "comment_created_at": "2026-08-26T02:04:45Z",
-      "comment_updated_at": "2026-08-26T02:04:45Z",
-      "comment_body_sha256": "f9ddc020682a9ef5223430fd23afbbe5f02a74d98e774cba5c35ff692044418d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128149,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T02:07:50.723Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-128039-rootless-session-permission",
-        "head_sha": "d5d72cd276f5a16bcc461be018ef5168fd3cdbca",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:60034:4337702678:2026-08-26T01:34:23Z:autoclose",
       "comment_id": "4337702678",
@@ -32104,6 +32057,39 @@
         "kind": "pull_request",
         "branch": "codex/issue-101676-live-model-switch-retry",
         "head_sha": "d8dfc545f21813d25714259e133c5f56bc2a859e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125451:5321606598:2026-08-26T04:58:03Z:clawsweeper_needs_human",
+      "comment_id": "5321606598",
+      "comment_version_key": "5321606598:2026-08-26T04:58:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125451#issuecomment-5321606598",
+      "comment_created_at": "2026-08-17T23:49:43Z",
+      "comment_updated_at": "2026-08-26T04:58:03Z",
+      "comment_body_sha256": "afacc7650e9d45d10341b2e52c710e5a26d1f7eb1d1ee31676a6d3a158975d80",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125451,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes shared SQLite startup failure semantics and adds 12 net production lines; merge only after exact-head state and required CI validation confirms ENOENT remains limited to... (sha=b55af763330eb7920abe36e198babab844574d4f)",
+      "expected_head_sha": "b55af763330eb7920abe36e198babab844574d4f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T05:02:41.198Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/state-db-sidecar-chmod-enoent-race",
+        "head_sha": "b55af763330eb7920abe36e198babab844574d4f",
         "cluster_id": null,
         "job_path": null
       }
