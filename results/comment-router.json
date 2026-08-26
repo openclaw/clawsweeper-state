@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:16:40.873Z",
+  "updated_at": "2026-08-26T02:16:46.043Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128289:5397956768:2026-08-24T16:08:42Z:re_review",
-      "comment_id": "5397956768",
-      "comment_version_key": "5397956768:2026-08-24T16:08:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128289#issuecomment-5397956768",
-      "comment_created_at": "2026-08-24T16:08:42Z",
-      "comment_updated_at": "2026-08-24T16:08:42Z",
-      "comment_body_sha256": "6fd816f61cc1fca9c23cb835f704462eb1b7624dbe282bf3145bffa148a26527",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128289,
-      "author": "SnowBelt",
-      "author_id": 31227031,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T21:37:29.783Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128289:5398134752:2026-08-24T16:22:30Z:re_review",
       "comment_id": "5398134752",
@@ -32721,6 +32694,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T02:16:40.873Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129719:5419232279:2026-08-26T02:15:39Z:clawsweeper_needs_human",
+      "comment_id": "5419232279",
+      "comment_version_key": "5419232279:2026-08-26T02:15:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129719#issuecomment-5419232279",
+      "comment_created_at": "2026-08-26T01:15:28Z",
+      "comment_updated_at": "2026-08-26T02:15:39Z",
+      "comment_body_sha256": "590b41550973c286dd9b557cc89205d5745e83ea675e655512d2a4306e4b15ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129719,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the pinned Codex launcher contract** - The new enrollment script resolves @openai/codex/bin/codex.js and accepts its exact version output before enabling remote execution. The re...; Review finding: [medium] Verify the pinned Codex launcher contract — extensions/crabbox/src/crabbox-worker-node-enrollment.ts:57 (sha=769075000a1be47b405a5f9a9308428d8ada5d70)",
+      "expected_head_sha": "769075000a1be47b405a5f9a9308428d8ada5d70",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T02:16:46.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cloud-worker-lifecycle-cleanup",
+        "head_sha": "769075000a1be47b405a5f9a9308428d8ada5d70",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
