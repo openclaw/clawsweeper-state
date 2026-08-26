@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair task maintenance for a discoverable retained store whose owner has a completed deletion journal. First create a failing regression with one healthy store and one deleted-agent store. In preview and apply modes, preserve the deletion fence, maintain the healthy store, and return a clear skipped-store result for the deleted store rather than rejecting the entire command. Keep the repair at the coordinator/result boundary; do not add config, migrations, runtime fallbacks, or CHANGELOG.md edits. Include PR-body release-note context for the CLI reliability change.
+Repair the existing task-maintenance bug where a deliberately retained store for an agent with a completed deletion journal aborts `openclaw tasks maintenance`. Keep retired/manual store discovery and the deletion fence intact for normal runtime access and incomplete deletions. At the session-registry maintenance owner boundary, classify only a verified completed deleted-agent target as a per-store skipped result, continue processing healthy stores, and expose that skipped result in the JSON/terminal maintenance report. Add a regression with one healthy stale cron store and one retained completed-deleted-agent store; verify preview and apply both complete, preserve the retained store, and maintain the healthy store. Do not add config, alter SQLite schema, weaken general database-open failures, or edit CHANGELOG.md; record the user-visible diagnostic in the PR body.
 
 Likely files:
 
 - src/commands/tasks-session-registry-maintenance.ts
 - src/commands/tasks-session-registry-maintenance.test.ts
 - src/config/sessions/session-registry-maintenance.ts
+- src/state/agent-deletion-journal.ts
 
 Validation:
 
 - pnpm test src/commands/tasks-session-registry-maintenance.test.ts
-- pnpm test src/config/sessions/targets.test.ts
-- pnpm check:changed -- src/commands/tasks-session-registry-maintenance.ts src/commands/tasks-session-registry-maintenance.test.ts
+- pnpm test src/commands/tasks.test.ts
+- pnpm check:changed -- src/commands/tasks-session-registry-maintenance.ts src/commands/tasks-session-registry-maintenance.test.ts src/config/sessions/session-registry-maintenance.ts
 
 ## Operator Prompt
 
