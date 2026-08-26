@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:13:08.601Z",
+  "updated_at": "2026-08-26T09:14:26.302Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129386:5412971230:2026-08-26T05:47:03Z:clawsweeper_auto_repair",
-      "comment_id": "5412971230",
-      "comment_version_key": "5412971230:2026-08-26T05:47:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129386#issuecomment-5412971230",
-      "comment_created_at": "2026-08-25T15:46:00Z",
-      "comment_updated_at": "2026-08-26T05:47:03Z",
-      "comment_body_sha256": "12f8998732fc37341d95c5bedbf703e151fbb505c27fce7959dfe0f3b078b649",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129386,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=a9747b50134a449b3716fea459354b45e89831e8)",
-      "expected_head_sha": "a9747b50134a449b3716fea459354b45e89831e8",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-26T05:58:30.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/mark-as-read-not-working",
-        "head_sha": "29c3ebd02ccc27152d9997cdeb4703c2eb2d2677",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129486:5417006132:2026-08-26T05:47:32Z:clawsweeper_needs_human",
       "comment_id": "5417006132",
@@ -31638,6 +31605,53 @@
         "kind": "pull_request",
         "branch": "fix/129154-telegram-reply-directive-leak",
         "head_sha": "325ee23c8e9a68326b48024edfc21bdf07ce1168",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:105393:5423137698:2026-08-26T09:13:38Z:re_review",
+      "comment_id": "5423137698",
+      "comment_version_key": "5423137698:2026-08-26T09:13:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/105393#issuecomment-5423137698",
+      "comment_created_at": "2026-08-26T09:13:38Z",
+      "comment_updated_at": "2026-08-26T09:13:38Z",
+      "comment_body_sha256": "a6260c67608b0ce87d6ec3a773a25a5182c84a564974f88765f14a5e99a064d7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 105393,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T09:14:24.638Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/screenshot-no-focus-steal-headed-105357",
+        "head_sha": "7b4a8b6b94fa0c03c84be5d2076df43c7e503cd0",
         "cluster_id": null,
         "job_path": null
       },
