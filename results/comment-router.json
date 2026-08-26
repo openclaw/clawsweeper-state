@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T10:20:24.677Z",
+  "updated_at": "2026-08-26T10:20:26.632Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124467:5368530428:2026-08-21T10:14:21Z:re_review",
-      "comment_id": "5368530428",
-      "comment_version_key": "5368530428:2026-08-21T10:14:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5368530428",
-      "comment_created_at": "2026-08-21T10:14:21Z",
-      "comment_updated_at": "2026-08-21T10:14:21Z",
-      "comment_body_sha256": "3c8e8bf16dc5e917428f0f0e88e734a3fc7e556efafe93e92e39534f1c67501d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124467,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T07:03:22.606Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124467:5368640158:2026-08-21T10:26:36Z:re_review",
       "comment_id": "5368640158",
@@ -31475,6 +31448,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129918:5421440862:2026-08-26T10:18:48Z:clawsweeper_needs_human",
+      "comment_id": "5421440862",
+      "comment_version_key": "5421440862:2026-08-26T10:18:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129918#issuecomment-5421440862",
+      "comment_created_at": "2026-08-26T06:23:43Z",
+      "comment_updated_at": "2026-08-26T10:18:48Z",
+      "comment_body_sha256": "6e0a9181eace1c1b57aaa7a061c66013b5c40170df876835fbdb2abd82bb98fb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129918,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR supplies relevant terminal output for the helper, but needs a redacted after-fix run of the actual config command with the deep... (sha=5fdc30b8da3b926570b0a9e3b3e8a226eaac90c3)",
+      "expected_head_sha": "5fdc30b8da3b926570b0a9e3b3e8a226eaac90c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T10:20:26.632Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-patch-depth-limit-129734",
+        "head_sha": "5fdc30b8da3b926570b0a9e3b3e8a226eaac90c3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
