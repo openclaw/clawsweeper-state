@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-26T20:21:23.818Z",
+  "updated_at": "2026-08-26T20:16:52.935Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126320:5343181701:2026-08-26T14:32:23Z:clawsweeper_needs_human",
+      "comment_id": "5343181701",
+      "comment_version_key": "5343181701:2026-08-26T14:32:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126320#issuecomment-5343181701",
+      "comment_created_at": "2026-08-19T13:58:28Z",
+      "comment_updated_at": "2026-08-26T14:32:23Z",
+      "comment_body_sha256": "dfa42bd79952bfc2dc3e18fdcec5819e05918e10f5d7947a30ecf7f131e9eca7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126320,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes the human-readable Workspace line and adds JSON fields; JSON workspace retains its resolved-directory meaning, but scripts parsing terminal output should... (sha=b8954d55c3eecd71ad7b1b0d2d6a3326b32b9e48)",
+      "expected_head_sha": "b8954d55c3eecd71ad7b1b0d2d6a3326b32b9e48",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T14:41:04.138Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-set-identity-workspace-locator",
+        "head_sha": "b8954d55c3eecd71ad7b1b0d2d6a3326b32b9e48",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130068:5424018245:2026-08-26T14:38:54Z:clawsweeper_needs_human",
       "comment_id": "5424018245",
@@ -31524,39 +31557,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130360:5430641162:2026-08-26T20:20:23Z:clawsweeper_needs_human",
-      "comment_id": "5430641162",
-      "comment_version_key": "5430641162:2026-08-26T20:20:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130360#issuecomment-5430641162",
-      "comment_created_at": "2026-08-26T20:20:23Z",
-      "comment_updated_at": "2026-08-26T20:20:23Z",
-      "comment_body_sha256": "ea676d426138451ccb05a34b599034bf2e3d08f8bc6cba79b62332c5b8fed5dd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130360,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new registry mount and immutable identity tuple are only exercised by the Docker candidate path; a bad handoff would fail release validation before onboarding reaches the repaired... (sha=757d4ec427f692a6f5e9b5f95075c23119e2bcf5)",
-      "expected_head_sha": "757d4ec427f692a6f5e9b5f95075c23119e2bcf5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T20:21:23.818Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/npm-onboard-candidate-codex-registry",
-        "head_sha": "757d4ec427f692a6f5e9b5f95075c23119e2bcf5",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
