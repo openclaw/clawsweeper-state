@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T04:31:35.958Z",
+  "updated_at": "2026-08-26T04:31:56.297Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125303:5419148736:2026-08-26T01:05:41Z:re_review",
-      "comment_id": "5419148736",
-      "comment_version_key": "5419148736:2026-08-26T01:05:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125303#issuecomment-5419148736",
-      "comment_created_at": "2026-08-26T01:05:41Z",
-      "comment_updated_at": "2026-08-26T01:05:41Z",
-      "comment_body_sha256": "73eda06dda00f51c8af9ca650a9de6f07c3997add43cdee504062605857de3ca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125303,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T01:06:28.840Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-profile-timeout-budget",
-        "head_sha": "8ba017779e9da89452417c941ab31ac03ce6cd87",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1224:5419156531:2026-08-26T01:06:30Z:re_review",
       "comment_id": "5419156531",
@@ -32154,6 +32107,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-repeated-request-timeout-contract",
         "head_sha": "9e03e7d74420c196f08001372aa5275dfbd91b7d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T04:31:01Z:clawsweeper_needs_human",
+      "comment_id": "5418912080",
+      "comment_version_key": "5418912080:2026-08-26T04:31:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129705#issuecomment-5418912080",
+      "comment_created_at": "2026-08-26T00:33:33Z",
+      "comment_updated_at": "2026-08-26T04:31:01Z",
+      "comment_body_sha256": "dfbe7c57169b44ee1c1f8e91c87c60c187e84c832940b0b9f92a164fa94b08a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129705,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog workflow guard (P1)** - The changed action SHA no longer matches the guard’s TRUFFLEHOG_V3_95_9 assertion, so the focused workflow test will fail. Update the guarded pin and its associ...; Review finding: [P1] Synchronize the TruffleHog workflow guard — .github/workflows/ci.yml:1162-1166 - [P1] Synchronize the Vercel Buildx assertion — .github/workflows/vercel-conta... (sha=3bb521cebfdce1c4c409db396f171f89aee576d1)",
+      "expected_head_sha": "3bb521cebfdce1c4c409db396f171f89aee576d1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T04:31:56.297Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-4b81979af6",
+        "head_sha": "3bb521cebfdce1c4c409db396f171f89aee576d1",
         "cluster_id": null,
         "job_path": null
       }
