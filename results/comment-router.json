@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:56:32.880Z",
+  "updated_at": "2026-08-26T03:56:46.560Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129694:5418964606:2026-08-26T00:41:24Z:clawsweeper_needs_human",
-      "comment_id": "5418964606",
-      "comment_version_key": "5418964606:2026-08-26T00:41:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129694#issuecomment-5418964606",
-      "comment_created_at": "2026-08-26T00:41:24Z",
-      "comment_updated_at": "2026-08-26T00:41:24Z",
-      "comment_body_sha256": "8eb27a481705110f051dcc4bf95e90bb8f640bb2788d7fb2277874254d4ad9f3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129694,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Reviewer-side DNS failure prevented an independent Venice endpoint check; attach redacted endpoint-to-manifest comparison output before merge to validate the pricing-authority claim. (sha=437f2efbe91127112fd6a498683c28c65fe9e90d)",
-      "expected_head_sha": "437f2efbe91127112fd6a498683c28c65fe9e90d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T00:43:44.358Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-venice-authoritative-model-pricing-20260825",
-        "head_sha": "437f2efbe91127112fd6a498683c28c65fe9e90d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1521:5416982757:2026-08-26T00:43:14Z:clawsweeper_auto_repair",
       "comment_id": "5416982757",
@@ -31995,6 +31962,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129784:5419993461:2026-08-26T03:55:50Z:clawsweeper_needs_human",
+      "comment_id": "5419993461",
+      "comment_version_key": "5419993461:2026-08-26T03:55:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129784#issuecomment-5419993461",
+      "comment_created_at": "2026-08-26T03:04:36Z",
+      "comment_updated_at": "2026-08-26T03:55:50Z",
+      "comment_body_sha256": "45cd35e9e6122d21c3fb2d68d5bb737e31c115acd8aaca61c6a0a90fa44bf1b9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129784,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head Package Acceptance and Telegram Docker QA are still running, so the full artifact-backed recovery flow has not yet reached a terminal CI result. (sha=6506b95d6b78c75e8458c334765bab3584f53275)",
+      "expected_head_sha": "6506b95d6b78c75e8458c334765bab3584f53275",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T03:56:46.560Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-release-package-telegram-registry",
+        "head_sha": "6506b95d6b78c75e8458c334765bab3584f53275",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
