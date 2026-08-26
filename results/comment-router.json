@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T10:13:45.273Z",
+  "updated_at": "2026-08-26T10:14:39.236Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121378:5235627467:2026-08-26T06:53:22Z:clawsweeper_needs_human",
-      "comment_id": "5235627467",
-      "comment_version_key": "5235627467:2026-08-26T06:53:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121378#issuecomment-5235627467",
-      "comment_created_at": "2026-08-10T03:44:38Z",
-      "comment_updated_at": "2026-08-26T06:53:22Z",
-      "comment_body_sha256": "e34feee66bd9d1155051d48a11322fb7e9f3ce242e4465976e1d2551e979cbbf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121378,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Until the Control UI correction in https://github.com/openclaw/openclaw/pull/121557 lands, a persisted true can be displayed as enabled by the current UI while the global configuratio... (sha=300f10a6d62c831be60509b90c6415cd55114a8a)",
-      "expected_head_sha": "300f10a6d62c831be60509b90c6415cd55114a8a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T06:56:24.468Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-patch-websearch-true-persist",
-        "head_sha": "300f10a6d62c831be60509b90c6415cd55114a8a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122425:5262218740:2026-08-26T06:48:13Z:clawsweeper_needs_human",
       "comment_id": "5262218740",
@@ -31561,6 +31528,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122425:5423841820:2026-08-26T10:13:58Z:automerge",
+      "comment_id": "5423841820",
+      "comment_version_key": "5423841820:2026-08-26T10:13:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5423841820",
+      "comment_created_at": "2026-08-26T10:13:58Z",
+      "comment_updated_at": "2026-08-26T10:13:58Z",
+      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122425,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T10:14:31.608Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inline-slash-skills",
+        "head_sha": "30eaa143dfe6c8bcce6f875740cd2b54242eedb5",
+        "cluster_id": "automerge-openclaw-openclaw-122425",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
