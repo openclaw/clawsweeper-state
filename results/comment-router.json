@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:38:13.698Z",
+  "updated_at": "2026-08-26T09:38:22.452Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129928:5421476461:2026-08-26T06:28:06Z:re_review",
-      "comment_id": "5421476461",
-      "comment_version_key": "5421476461:2026-08-26T06:28:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129928#issuecomment-5421476461",
-      "comment_created_at": "2026-08-26T06:28:06Z",
-      "comment_updated_at": "2026-08-26T06:28:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129928,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T06:34:42.220Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/improve-model-picker-width-and-scrolling",
-        "head_sha": "b8e63df5978cb2f8a4d6b46e62a54d4a835c6ab2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129851:5421496824:2026-08-26T06:30:36Z:re_review",
       "comment_id": "5421496824",
@@ -31402,6 +31355,39 @@
         "kind": "pull_request",
         "branch": "codex/cleanup-aug26-session-owner-scope",
         "head_sha": "4bf88f636d29a275b2367b20556388729674d69f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T09:37:17Z:clawsweeper_needs_human",
+      "comment_id": "5418912080",
+      "comment_version_key": "5418912080:2026-08-26T09:37:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129705#issuecomment-5418912080",
+      "comment_created_at": "2026-08-26T00:33:33Z",
+      "comment_updated_at": "2026-08-26T09:37:17Z",
+      "comment_body_sha256": "d23666b5196f178e4fd47c66239b3968f5553b54935de499f54597f8354b2d32",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129705,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Update the Vercel workflow's Buildx assertion (P1)** - The workflow now uses the v4.3.0 SHA, but the YAML-parsing test still expects the retired v4.2.0 SHA. Update the assertion with this pin or the workflow-con...; Review finding: [P1] Update the Vercel workflow's Buildx assertion — .github/workflows/vercel-container-registry-publish.yml:95 - [P1] Advance the scanner payload with the Truffle... (sha=f8de50c9f1921c32132b26e40f81b028af5087ce)",
+      "expected_head_sha": "f8de50c9f1921c32132b26e40f81b028af5087ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T09:38:22.452Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-4b81979af6",
+        "head_sha": "f8de50c9f1921c32132b26e40f81b028af5087ce",
         "cluster_id": null,
         "job_path": null
       }
