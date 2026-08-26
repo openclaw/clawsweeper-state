@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T04:24:36.087Z",
+  "updated_at": "2026-08-26T04:25:55.208Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1168:5310173452:2026-08-26T00:58:56Z:clawsweeper_auto_repair",
-      "comment_id": "5310173452",
-      "comment_version_key": "5310173452:2026-08-26T00:58:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1168#issuecomment-5310173452",
-      "comment_created_at": "2026-08-16T23:15:44Z",
-      "comment_updated_at": "2026-08-26T00:58:56Z",
-      "comment_body_sha256": "b846b8a869090cd4a6668d4285c6d420fab79cdcb3f17f21b9a690135018dca6",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1168,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2a2cac6f2ce370b925a79a792a69920b1bf05a07)",
-      "expected_head_sha": "2a2cac6f2ce370b925a79a792a69920b1bf05a07",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T01:00:02.128Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bound-process-cmdline-drain",
-        "head_sha": "2a2cac6f2ce370b925a79a792a69920b1bf05a07",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127280:5419102409:2026-08-26T00:59:49Z:re_review",
       "comment_id": "5419102409",
@@ -32109,6 +32076,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120185:5215429662:2026-08-26T04:24:51Z:clawsweeper_needs_human",
+      "comment_id": "5215429662",
+      "comment_version_key": "5215429662:2026-08-26T04:24:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120185#issuecomment-5215429662",
+      "comment_created_at": "2026-08-07T09:41:44Z",
+      "comment_updated_at": "2026-08-26T04:24:51Z",
+      "comment_body_sha256": "cd0b155384bc784715d929f2e360b6f12b4f3d8189e5d8afc56b61c421497bdf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120185,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the available focused test uses mocked Gateway behavior and manually invokes session selection; add an after-fi...; Review finding: [P1] Revalidate the explicit profile at provider preparation — src/agents/subagents/spawn/subagent-spawn-child-plan.ts:134-154 - [P2] Expose the child auth-profile... (sha=269aaf3217373993302523093300f9d712893f38)",
+      "expected_head_sha": "269aaf3217373993302523093300f9d712893f38",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T04:25:55.208Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-model-policy-preflight",
+        "head_sha": "269aaf3217373993302523093300f9d712893f38",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
