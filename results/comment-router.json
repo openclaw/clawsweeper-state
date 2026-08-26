@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:22:23.466Z",
+  "updated_at": "2026-08-26T03:22:28.471Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128318:5418594929:2026-08-25T23:50:58Z:re_review",
-      "comment_id": "5418594929",
-      "comment_version_key": "5418594929:2026-08-25T23:50:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128318#issuecomment-5418594929",
-      "comment_created_at": "2026-08-25T23:50:58Z",
-      "comment_updated_at": "2026-08-25T23:50:58Z",
-      "comment_body_sha256": "f57dbf0f4da883071f4bfa842a22522c424d3d55a106a40898844bfbd29b8074",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128318,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T23:51:46.395Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/secretref-manifest-owner-contract",
-        "head_sha": "c5f35f1d8be4365875a26c3f8fab6e108e5f5dee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:59:5304139701:2026-08-25T23:51:11Z:clawsweeper_auto_repair",
       "comment_id": "5304139701",
@@ -32184,6 +32137,39 @@
         "kind": "pull_request",
         "branch": "fix/slack-auth-error-mapping-upstream",
         "head_sha": "f999d0ae4d9a83a3861c617c9a4991b00dfa8dc8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129717:5419135713:2026-08-26T03:18:49Z:clawsweeper_auto_repair",
+      "comment_id": "5419135713",
+      "comment_version_key": "5419135713:2026-08-26T03:18:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129717#issuecomment-5419135713",
+      "comment_created_at": "2026-08-26T01:04:19Z",
+      "comment_updated_at": "2026-08-26T03:18:49Z",
+      "comment_body_sha256": "229381ee521f8a2bc0cf22ffb1555ea1d7a668658724fa6aaf46305eadf56b16",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129717,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8a5e0b2680bec7ee7efb12fe4455c869c0de0f41)",
+      "expected_head_sha": "8a5e0b2680bec7ee7efb12fe4455c869c0de0f41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T03:22:28.471Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ingress-bind-limit-127474",
+        "head_sha": "8a5e0b2680bec7ee7efb12fe4455c869c0de0f41",
         "cluster_id": null,
         "job_path": null
       }
