@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:44:57.723Z",
+  "updated_at": "2026-08-26T09:45:16.073Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127823:5379724636:2026-08-26T06:29:10Z:clawsweeper_needs_human",
-      "comment_id": "5379724636",
-      "comment_version_key": "5379724636:2026-08-26T06:29:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127823#issuecomment-5379724636",
-      "comment_created_at": "2026-08-22T10:16:33Z",
-      "comment_updated_at": "2026-08-26T06:29:10Z",
-      "comment_body_sha256": "d23a31265e67add257a8065d76c0d2248e95dd041f47c8acbc06287916fe703e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127823,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Hide Steer while settings are pending (P2)** - waiting-model is deliberately not steerable, so canSteer is false while the queue-wide Applying chat settings state holds chat.send. The added special case still re...; Review finding: [P2] Hide Steer while settings are pending — ui/src/pages/chat/components/chat-composer-queue.ts:245-250 - [medium] Resolve the guarded ignore-file change (sha=a9c3c27f3857a5b1af2ad0c78605dfbe02f1b111)",
-      "expected_head_sha": "a9c3c27f3857a5b1af2ad0c78605dfbe02f1b111",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T06:35:00.453Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/composer-queue-attached",
-        "head_sha": "a9c3c27f3857a5b1af2ad0c78605dfbe02f1b111",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T06:29:46Z:clawsweeper_needs_human",
       "comment_id": "5418912080",
@@ -31407,6 +31374,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111277:5423499615:2026-08-26T09:44:33Z:re_review",
+      "comment_id": "5423499615",
+      "comment_version_key": "5423499615:2026-08-26T09:44:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111277#issuecomment-5423499615",
+      "comment_created_at": "2026-08-26T09:44:33Z",
+      "comment_updated_at": "2026-08-26T09:44:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111277,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T09:45:14.319Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-github-copilot-login-leaves-failed-response-streams-open",
+        "head_sha": "8acd789f7bc7b728bc26b2b573eb5e296921a7fd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
