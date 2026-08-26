@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T10:22:52.901Z",
+  "updated_at": "2026-08-26T10:25:21.575Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129797:5420079115:2026-08-26T06:56:34Z:clawsweeper_needs_human",
-      "comment_id": "5420079115",
-      "comment_version_key": "5420079115:2026-08-26T06:56:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129797#issuecomment-5420079115",
-      "comment_created_at": "2026-08-26T03:17:21Z",
-      "comment_updated_at": "2026-08-26T06:56:34Z",
-      "comment_body_sha256": "fbd57194bd317c72cb67dd506ff6e8a95d4f6374f3d42590f695cbb22110cf74",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129797,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR leaves tools enabled when any non-error route supports them; that is safe only if the Hugging Face router routes tool-bearing requests exclusively to tool-capable backends, a l... (sha=62e1b0b55838e6ba64cf6e5ad989945537557262)",
-      "expected_head_sha": "62e1b0b55838e6ba64cf6e5ad989945537557262",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T07:05:31.129Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-huggingface-live-provider-capabilities-20260826",
-        "head_sha": "62e1b0b55838e6ba64cf6e5ad989945537557262",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129843:5420455075:2026-08-26T06:59:16Z:clawsweeper_needs_human",
       "comment_id": "5420455075",
@@ -31505,6 +31472,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128748:5423955509:2026-08-26T10:24:36Z:re_review",
+      "comment_id": "5423955509",
+      "comment_version_key": "5423955509:2026-08-26T10:24:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128748#issuecomment-5423955509",
+      "comment_created_at": "2026-08-26T10:24:36Z",
+      "comment_updated_at": "2026-08-26T10:24:36Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128748,
+      "author": "Synthetic2802",
+      "author_id": 45599846,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T10:25:19.796Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-file-change-after-hook-current",
+        "head_sha": "79ede0f0a3622dbc8236ca91de2eadc62979d612",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
