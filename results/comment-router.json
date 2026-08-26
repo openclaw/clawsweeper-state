@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T06:15:34.506Z",
+  "updated_at": "2026-08-26T06:15:38.635Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128505:5419693462:2026-08-26T02:20:42Z:re_review",
-      "comment_id": "5419693462",
-      "comment_version_key": "5419693462:2026-08-26T02:20:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128505#issuecomment-5419693462",
-      "comment_created_at": "2026-08-26T02:20:42Z",
-      "comment_updated_at": "2026-08-26T02:20:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128505,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T02:41:39.620Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "gaoanze888/plugin-tool-result-terminate",
-        "head_sha": "240e066de344e2ed630196cf267d9c026ed318ba",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129786:5419776471:2026-08-26T02:33:39Z:re_review",
       "comment_id": "5419776471",
@@ -32307,6 +32260,39 @@
         "kind": "pull_request",
         "branch": "fix/realtime-base-url-guard",
         "head_sha": "2f58dacb91d6d08a8da61a1d468bbaf5b84c6fb7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129670:5418409324:2026-08-26T06:11:34Z:clawsweeper_needs_human",
+      "comment_id": "5418409324",
+      "comment_version_key": "5418409324:2026-08-26T06:11:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129670#issuecomment-5418409324",
+      "comment_created_at": "2026-08-25T23:33:19Z",
+      "comment_updated_at": "2026-08-26T06:11:34Z",
+      "comment_body_sha256": "1e68b77b902607c60b3d76cc10ca29bae27189c1c561b8a1189bcccea35e6cf8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the linked web recording shows a happy-path masked submission but does not prove that terminated or re...; Review finding: [P1] Reject readable env entries from agent requests — src/agents/tools/secrets-tool.ts:75-78 - [P1] Fence the store write with the live requester — src/gateway/se... (sha=8eb218fca7e26d9c81d3c56452b0c5731676758d)",
+      "expected_head_sha": "8eb218fca7e26d9c81d3c56452b0c5731676758d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T06:15:38.635Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/agent-api-key-storage-41f09e",
+        "head_sha": "8eb218fca7e26d9c81d3c56452b0c5731676758d",
         "cluster_id": null,
         "job_path": null
       }
