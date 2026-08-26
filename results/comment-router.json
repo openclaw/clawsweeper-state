@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T13:43:08.910Z",
+  "updated_at": "2026-08-26T13:43:13.611Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129997:5422616344:2026-08-26T08:24:25Z:clawsweeper_needs_human",
-      "comment_id": "5422616344",
-      "comment_version_key": "5422616344:2026-08-26T08:24:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129997#issuecomment-5422616344",
-      "comment_created_at": "2026-08-26T08:24:25Z",
-      "comment_updated_at": "2026-08-26T08:24:25Z",
-      "comment_body_sha256": "6126ce0ccda23798441888d99ffcab9ce1aea1c653ef7f9cbea09aa9fb1a1610",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129997,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair dispatch is warranted: the reviewed patch has no discrete correctness finding; it only needs normal exact-head CI completion. (sha=d1fac9422ae362b358967e10092331b18c122d69)",
-      "expected_head_sha": "d1fac9422ae362b358967e10092331b18c122d69",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T08:25:19.016Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/elated-raman-db9b18",
-        "head_sha": "d1fac9422ae362b358967e10092331b18c122d69",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130010:5422585716:2026-08-26T08:21:32Z:re_review",
       "comment_id": "5422585716",
@@ -32639,6 +32606,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T13:43:08.910Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130127:5426197705:2026-08-26T13:41:57Z:clawsweeper_needs_human",
+      "comment_id": "5426197705",
+      "comment_version_key": "5426197705:2026-08-26T13:41:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130127#issuecomment-5426197705",
+      "comment_created_at": "2026-08-26T13:41:57Z",
+      "comment_updated_at": "2026-08-26T13:41:57Z",
+      "comment_body_sha256": "b12e4d4798e5ffe1f87ec9fefcf433a76fcf610ee0f4e2654e3b5c1682a14894",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130127,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by four lines; that growth is justified only as the single connected-snapshot predicate and should not expand into reconnect-specific parallel policy. (sha=63e7e39c8c80f260978bbfea0093884b0db65f69)",
+      "expected_head_sha": "63e7e39c8c80f260978bbfea0093884b0db65f69",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T13:43:13.611Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/limited-access-approval-keeps-recurring",
+        "head_sha": "63e7e39c8c80f260978bbfea0093884b0db65f69",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
