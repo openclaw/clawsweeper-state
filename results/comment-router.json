@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:37:54.928Z",
+  "updated_at": "2026-08-26T09:37:59.842Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127005:5421493267:2026-08-26T06:30:10Z:re_review",
-      "comment_id": "5421493267",
-      "comment_version_key": "5421493267:2026-08-26T06:30:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127005#issuecomment-5421493267",
-      "comment_created_at": "2026-08-26T06:30:10Z",
-      "comment_updated_at": "2026-08-26T06:30:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127005,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T06:31:01.760Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-frozen-evidence-compat",
-        "head_sha": "30a906ede687815d8fd446493ff3e64d65072dab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3494:5357432561:2026-08-26T06:30:43Z:clawsweeper_needs_human",
       "comment_id": "5357432561",
@@ -31433,6 +31386,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T09:37:54.928Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129770:5419823660:2026-08-26T09:31:57Z:clawsweeper_needs_human",
+      "comment_id": "5419823660",
+      "comment_version_key": "5419823660:2026-08-26T09:31:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129770#issuecomment-5419823660",
+      "comment_created_at": "2026-08-26T02:40:49Z",
+      "comment_updated_at": "2026-08-26T09:31:57Z",
+      "comment_body_sha256": "82d1988e7209f7869ee31b826497499e7ec47b00b355af80c75c8e000ae40e3e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129770,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared picker owner grows by five production lines; the request identity is justified by stale-request isolation, but exact-head TUI checks should complete before merge. (sha=a1673ed02fb28831fea3239601cf1ebf4a08cd03)",
+      "expected_head_sha": "a1673ed02fb28831fea3239601cf1ebf4a08cd03",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T09:37:59.842Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tui-dismiss-loading-models-notice",
+        "head_sha": "a1673ed02fb28831fea3239601cf1ebf4a08cd03",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
