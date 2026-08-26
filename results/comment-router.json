@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:38:08.361Z",
+  "updated_at": "2026-08-26T03:38:31.140Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1230:5418764931:2026-08-26T00:13:08Z:clawsweeper_needs_human",
-      "comment_id": "5418764931",
-      "comment_version_key": "5418764931:2026-08-26T00:13:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1230#issuecomment-5418764931",
-      "comment_created_at": "2026-08-26T00:13:08Z",
-      "comment_updated_at": "2026-08-26T00:13:08Z",
-      "comment_body_sha256": "5595d8249e2fbfccd0bd2c1e0b05b6af85d1212cb22d64bfacba457cb98b6a31",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1230,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the supplied proof uses fake WSL inventory and command-runner cases, so it does not show an allowed registratio...; Review finding: [P1] Keep the gateway command on stdin — src/OpenClaw.Connection/WslGatewayController.cs:36-42 - [high] Registration binding can become stale before destructive I/... (sha=70670093c0db3b7a006db8c4af911e5a38d69da8)",
-      "expected_head_sha": "70670093c0db3b7a006db8c4af911e5a38d69da8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T00:13:57.909Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "shanselman-fix-wsl-registration-binding",
-        "head_sha": "70670093c0db3b7a006db8c4af911e5a38d69da8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129692:5418768357:2026-08-26T00:13:36Z:clawsweeper_auto_repair",
       "comment_id": "5418768357",
@@ -31971,6 +31938,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118015:5420236182:2026-08-26T03:37:42Z:re_review",
+      "comment_id": "5420236182",
+      "comment_version_key": "5420236182:2026-08-26T03:37:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118015#issuecomment-5420236182",
+      "comment_created_at": "2026-08-26T03:37:42Z",
+      "comment_updated_at": "2026-08-26T03:37:42Z",
+      "comment_body_sha256": "2a5f00364b3c6ddeb54bc4ee648ef206bad441272746f2e4aa4f043e58777eb9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118015,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T03:38:28.678Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-profile-script-tail",
+        "head_sha": "fde9134f6915794f3ebaf883522b9457ee721db5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
