@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:50:53.894Z",
+  "updated_at": "2026-08-26T02:52:04.155Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119326:5184023904:2026-08-25T22:50:20Z:clawsweeper_needs_human",
-      "comment_id": "5184023904",
-      "comment_version_key": "5184023904:2026-08-25T22:50:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119326#issuecomment-5184023904",
-      "comment_created_at": "2026-08-04T20:06:23Z",
-      "comment_updated_at": "2026-08-25T22:50:20Z",
-      "comment_body_sha256": "aede2c9fc515db8c62bb0e83f47eb84030858f956892a62c206fc0cfa1fae68a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119326,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: A terminal-level resolver trace exists, but it does not show after-fix configured Gateway or approved QA routing carrying an account t... (sha=af7f0522022fc9291e0d72501485510836b7bef1)",
-      "expected_head_sha": "af7f0522022fc9291e0d72501485510836b7bef1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T22:53:00.089Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/history-limit-account-scope",
-        "head_sha": "af7f0522022fc9291e0d72501485510836b7bef1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129315:5410417977:2026-08-25T22:51:26Z:clawsweeper_needs_human",
       "comment_id": "5410417977",
@@ -32504,6 +32471,53 @@
           "action": "label",
           "status": "executed",
           "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124467:5419902273:2026-08-26T02:51:14Z:re_review",
+      "comment_id": "5419902273",
+      "comment_version_key": "5419902273:2026-08-26T02:51:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5419902273",
+      "comment_created_at": "2026-08-26T02:51:14Z",
+      "comment_updated_at": "2026-08-26T02:51:14Z",
+      "comment_body_sha256": "c2dd77f84b24484cc8f9bf99f8b9a873c09e9f77bb459d4c0ba669e52d69cdec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124467,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T02:52:01.886Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/crabline-structured-identity",
+        "head_sha": "7e96c50197845c70f20f72bf60a85230bf73d082",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
           "job_path": null
         },
         {
