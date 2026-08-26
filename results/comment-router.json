@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T07:03:26.174Z",
+  "updated_at": "2026-08-26T07:03:34.595Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124467:5420040945:2026-08-26T03:11:40Z:re_review",
-      "comment_id": "5420040945",
-      "comment_version_key": "5420040945:2026-08-26T03:11:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5420040945",
-      "comment_created_at": "2026-08-26T03:11:40Z",
-      "comment_updated_at": "2026-08-26T03:11:40Z",
-      "comment_body_sha256": "2e9105139a06fab624b175d363160cac8656f9f0503dd848e6f437e9f3741279",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124467,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T03:12:32.352Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/crabline-structured-identity",
-        "head_sha": "cbfd3269b1ebc9a5c2890ba8fbe812ed0c7c408f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129719:5419232279:2026-08-26T03:11:41Z:clawsweeper_needs_human",
       "comment_id": "5419232279",
@@ -32566,6 +32519,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-telegram-reaction-target-48e026161eb8",
         "head_sha": "72e6008dc1ade8c3c78d0c92d51ffc7f3c3b54a0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128840:5400456741:2026-08-26T07:00:50Z:clawsweeper_needs_human",
+      "comment_id": "5400456741",
+      "comment_version_key": "5400456741:2026-08-26T07:00:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128840#issuecomment-5400456741",
+      "comment_created_at": "2026-08-24T19:47:02Z",
+      "comment_updated_at": "2026-08-26T07:00:50Z",
+      "comment_body_sha256": "cfd03edc8a118df129a6e36ef1d502f6a92c818c40a262486306a2e86b5143b5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128840,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The change adds 41 production lines that expand final-reply recovery; its transient-error and consumer-side settlement gates must remain intact to avoid generating a recovery reply af... (sha=2ae9a37973a3ad7b7ceae0a27f3d6f0cdf5bd0e3)",
+      "expected_head_sha": "2ae9a37973a3ad7b7ceae0a27f3d6f0cdf5bd0e3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T07:03:34.595Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/settled-turn-finalization-context",
+        "head_sha": "2ae9a37973a3ad7b7ceae0a27f3d6f0cdf5bd0e3",
         "cluster_id": null,
         "job_path": null
       }
