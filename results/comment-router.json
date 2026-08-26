@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T06:47:21.818Z",
+  "updated_at": "2026-08-26T06:48:40.685Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129782:5419974373:2026-08-26T03:01:51Z:clawsweeper_auto_repair",
-      "comment_id": "5419974373",
-      "comment_version_key": "5419974373:2026-08-26T03:01:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129782#issuecomment-5419974373",
-      "comment_created_at": "2026-08-26T03:01:51Z",
-      "comment_updated_at": "2026-08-26T03:01:51Z",
-      "comment_body_sha256": "cdc9dabc1e27b7d91e5229dd793028c86ea454804c942f1b23d3bcc17b99c9d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129782,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=c99a5b1f2cd6f8a144ca6b953dea917832a23335)",
-      "expected_head_sha": "c99a5b1f2cd6f8a144ca6b953dea917832a23335",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-26T03:03:11.632Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/package-external-plugin-dist",
-        "head_sha": "c99a5b1f2cd6f8a144ca6b953dea917832a23335",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125303:5419982375:2026-08-26T03:02:58Z:re_review",
       "comment_id": "5419982375",
@@ -32387,6 +32354,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T06:47:21.818Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129789:5420110373:2026-08-26T06:43:12Z:clawsweeper_needs_human",
+      "comment_id": "5420110373",
+      "comment_version_key": "5420110373:2026-08-26T06:43:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129789#issuecomment-5420110373",
+      "comment_created_at": "2026-08-26T03:21:03Z",
+      "comment_updated_at": "2026-08-26T06:43:12Z",
+      "comment_body_sha256": "4ad3d5de7ab77c331327ac403ccbfa5ee8da9d6c9281a0ad1883c07ab8329740",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129789,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: linked exact-head output supports cataloged reads, but does not show an unlisted path being rejected b...; Review finding: [P2] Preflight every required mutation field — src/agents/tools/skill-workshop-tool.ts:95-97 - [low] Prove forbidden reads stop before filesystem access — src/agen... (sha=da2b769391c281fe666010df52f8eba2a21d12d5)",
+      "expected_head_sha": "da2b769391c281fe666010df52f8eba2a21d12d5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T06:48:40.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-agent-release-checks",
+        "head_sha": "da2b769391c281fe666010df52f8eba2a21d12d5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
