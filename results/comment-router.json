@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:38:22.589Z",
+  "updated_at": "2026-08-26T02:38:44.178Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128318:5389615428:2026-08-24T01:15:38Z:re_review",
-      "comment_id": "5389615428",
-      "comment_version_key": "5389615428:2026-08-24T01:15:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128318#issuecomment-5389615428",
-      "comment_created_at": "2026-08-24T01:15:38Z",
-      "comment_updated_at": "2026-08-24T01:15:38Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128318,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T22:23:44.814Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1522:5417653416:2026-08-25T22:23:38Z:clawsweeper_auto_repair",
       "comment_id": "5417653416",
@@ -32669,6 +32642,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128973:5404423576:2026-08-26T02:37:14Z:clawsweeper_needs_human",
+      "comment_id": "5404423576",
+      "comment_version_key": "5404423576:2026-08-26T02:37:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128973#issuecomment-5404423576",
+      "comment_created_at": "2026-08-25T02:50:05Z",
+      "comment_updated_at": "2026-08-26T02:37:14Z",
+      "comment_body_sha256": "29f427f47c70b16d34aebdff92cd6e85f3083a6e3893528972fae18b87dcb472",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128973,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A legacy collapsed key that previously collided between a custom group and a filesystem project remains intentionally ambiguous: both groups stay collapsed until users toggle into the... (sha=92e6be615aed39a15c3881fd83a760d357e675d5)",
+      "expected_head_sha": "92e6be615aed39a15c3881fd83a760d357e675d5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T02:38:44.178Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sidebar-hover-followup",
+        "head_sha": "92e6be615aed39a15c3881fd83a760d357e675d5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
