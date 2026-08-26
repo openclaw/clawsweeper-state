@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:13:04.276Z",
+  "updated_at": "2026-08-26T02:13:25.209Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129580:5417047807:2026-08-25T21:28:24Z:clawsweeper_needs_human",
-      "comment_id": "5417047807",
-      "comment_version_key": "5417047807:2026-08-25T21:28:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129580#issuecomment-5417047807",
-      "comment_created_at": "2026-08-25T21:28:24Z",
-      "comment_updated_at": "2026-08-25T21:28:24Z",
-      "comment_body_sha256": "24f62b5d7d36c5bc3196b634d8e3685aaa1bc86ae6263308e51744fc76e41b85",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129580,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging deliberately changes existing trusted external-provider setups with retired stored profiles from selection to an actionable rejection until the profile is replaced or migrated. (sha=ae447bb113c3e38dd5ec4bb963f8ae466d987294)",
-      "expected_head_sha": "ae447bb113c3e38dd5ec4bb963f8ae466d987294",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T21:30:26.479Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cold-external-retired-auth-policy",
-        "head_sha": "ae447bb113c3e38dd5ec4bb963f8ae466d987294",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129593:5417072047:2026-08-25T21:30:31Z:re_review",
       "comment_id": "5417072047",
@@ -32715,6 +32682,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T02:13:04.276Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:141:5387072690:2026-08-26T02:00:08Z:clawsweeper_needs_human",
+      "comment_id": "5387072690",
+      "comment_version_key": "5387072690:2026-08-26T02:00:08Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/141#issuecomment-5387072690",
+      "comment_created_at": "2026-08-23T16:31:01Z",
+      "comment_updated_at": "2026-08-26T02:00:08Z",
+      "comment_body_sha256": "043032981feb27b0e267fcb9f39533e62664348ce1a7a313404feba010485441",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 141,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Intentional compatibility change: consumers that accepted malformed ZIP entries with symlink mode plus directory metadata will now receive the existing entry-link error. (sha=3c394571dba4adcb6ecfe3f498530cc804aff626)",
+      "expected_head_sha": "3c394571dba4adcb6ecfe3f498530cc804aff626",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T02:13:25.209Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/zip-link-directory-bit",
+        "head_sha": "3c394571dba4adcb6ecfe3f498530cc804aff626",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
