@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T06:12:40.972Z",
+  "updated_at": "2026-08-26T06:12:45.885Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125303:5419741104:2026-08-26T02:28:16Z:re_review",
-      "comment_id": "5419741104",
-      "comment_version_key": "5419741104:2026-08-26T02:28:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125303#issuecomment-5419741104",
-      "comment_created_at": "2026-08-26T02:28:16Z",
-      "comment_updated_at": "2026-08-26T02:28:16Z",
-      "comment_body_sha256": "9979a4145d79cd47790b680db2383606f60f91ca376701d70b1a38baa5e05228",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125303,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T02:28:57.361Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-profile-timeout-budget",
-        "head_sha": "2b051ae5d0ea83be96beeeb4542ac95368a8e56e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118945:5171795857:2026-08-26T02:18:53Z:clawsweeper_auto_repair",
       "comment_id": "5171795857",
@@ -32355,6 +32308,39 @@
         "kind": "pull_request",
         "branch": "security/file-transfer-exact-approvals",
         "head_sha": "f8d61add0838f0e253fc92563e3b4ef4beb36f2b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129819:5420341514:2026-08-26T06:07:56Z:clawsweeper_needs_human",
+      "comment_id": "5420341514",
+      "comment_version_key": "5420341514:2026-08-26T06:07:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129819#issuecomment-5420341514",
+      "comment_created_at": "2026-08-26T03:53:34Z",
+      "comment_updated_at": "2026-08-26T06:07:56Z",
+      "comment_body_sha256": "8482b43b4d7148f7e88ac95742840c22db6914e5a9dbc86d7b2c707b5a8065ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129819,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - The existing PR already owns the narrow repair; no separate automated repair is warranted. (sha=90ca1ba3ca9e1fd2d737eab2d20260bfef9d34ce)",
+      "expected_head_sha": "90ca1ba3ca9e1fd2d737eab2d20260bfef9d34ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T06:12:45.885Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup-aug25-slack-preview-cleanup",
+        "head_sha": "90ca1ba3ca9e1fd2d737eab2d20260bfef9d34ce",
         "cluster_id": null,
         "job_path": null
       }
