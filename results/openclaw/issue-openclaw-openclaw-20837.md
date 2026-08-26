@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-20837"
 mode: "autonomous"
-run_id: "32958948411"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32958948411"
+run_id: "32959898424"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32959898424"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
-workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-26T10:51:31.404Z"
+workflow_conclusion: "failure"
+result_status: "planned"
+published_at: "2026-08-26T12:08:32.657Z"
 canonical: "https://github.com/openclaw/openclaw/issues/20837"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/20837"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32958948411](https://github.com/openclaw/clawsweeper/actions/runs/32958948411)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32959898424](https://github.com/openclaw/clawsweeper/actions/runs/32959898424)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/20837
 
 ## Summary
 
-Current main still omits channel runtime facts in the command prompt bundle. A narrow shared-owner repair is planned, but implementation is blocked because required sibling ../codex source is absent and this read-only runner cannot clone it or initialize Corepack for tests.
+Narrow command-prompt metadata repair planned for canonical issue #20837. Current main omits normalized source channel, account-aware capabilities, shell, and real host/OS/arch only in command prompt reconstruction; /context fallback and /export-session consume that shared bundle. This read-only checkout has neither node_modules nor the required sibling ../codex source, so implementation and validation remain for the executor.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main still omits channel runtime facts in the command prompt bundle. A n
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #20837 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ Current main still omits channel runtime facts in the command prompt bundle. A n
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #20837 | fix_needed | blocked | canonical | The source-proven fix needs a writable runner containing the required sibling ../codex checkout before code changes, regression proof, and validation may proceed. |
-| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | blocked | canonical | Executable implementation is blocked only by unavailable required Codex source and read-only test tooling. |
-| #21271 | keep_closed | skipped | related | Closed context reference; preserve as attribution evidence without attempting closeout. |
+| #20837 | fix_needed | planned | canonical | Confirmed owner-boundary omission on current main; no config, routing, plugin API, or selective-delivery policy change is required. |
+| #21271 | keep_closed | skipped | superseded | Already closed context ref; no closure action is valid. |
+| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-20837 after satisfying the repository's direct Codex-source and dependency-install gates. |
 
 ## Needs Human
 
