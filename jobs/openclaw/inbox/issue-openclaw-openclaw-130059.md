@@ -67,21 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the voice-call plugin bug described in https://github.com/openclaw/openclaw/issues/130059. Preserve the canonical originating call record when a realtime termination is followed by a Twilio terminal status callback carrying the same internal call ID and provider CallSid; do not auto-register a second default-agent outbound record. Keep genuine externally initiated outbound-api calls auto-registerable. Work only in the voice-call plugin, add an ordered regression that fails before the fix, and do not add configuration, fallback readers, or CHANGELOG.md edits. Include PR-body release-note context describing corrected call-history attribution.
+Repair the voice-call terminal-callback ownership bug from https://github.com/openclaw/openclaw/issues/130059. Preserve normal auto-registration for genuine first nonterminal inbound and externally initiated outbound calls, but ensure a Twilio terminal callback arriving after realtime lifecycle finalization cannot create a second default-agent record. Keep the repair in the voice-call manager/lifecycle owner boundary; do not add config, a runtime fallback stack, or CHANGELOG.md edits. Add a regression that exercises the real ordering: outbound record receives and persists its providerCallId, realtime completion finalizes it, then a completion callback for the same provider ID is processed; assert one persisted logical call and no new active/default-agent record. Include release-note context in the PR body rather than editing CHANGELOG.md.
 
 Likely files:
 
 - extensions/voice-call/src/manager/events.ts
-- extensions/voice-call/src/manager/store.ts
+- extensions/voice-call/src/manager/lifecycle.ts
 - extensions/voice-call/src/manager/events.test.ts
-- extensions/voice-call/src/manager/outbound.test.ts
 - extensions/voice-call/src/webhook/realtime-handler.lifecycle.test.ts
 
 Validation:
 
-- pnpm test extensions/voice-call/src/manager/events.test.ts extensions/voice-call/src/manager/outbound.test.ts
-- pnpm test extensions/voice-call/src/providers/twilio.test.ts extensions/voice-call/src/webhook/realtime-handler.lifecycle.test.ts
-- pnpm check:changed -- extensions/voice-call/src/manager/events.ts extensions/voice-call/src/manager/events.test.ts
+- pnpm test extensions/voice-call/src/manager/events.test.ts
+- pnpm test extensions/voice-call/src/webhook/realtime-handler.lifecycle.test.ts
+- pnpm test extensions/voice-call/src/providers/twilio.test.ts
 
 ## Operator Prompt
 
