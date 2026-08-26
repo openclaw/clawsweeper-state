@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T14:22:36.742Z",
+  "updated_at": "2026-08-26T14:22:59.232Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-26T08:44:38Z:clawsweeper_needs_human",
-      "comment_id": "5365906478",
-      "comment_version_key": "5365906478:2026-08-26T08:44:38Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5365906478",
-      "comment_created_at": "2026-08-21T06:12:29Z",
-      "comment_updated_at": "2026-08-26T08:44:38Z",
-      "comment_body_sha256": "59f378b5647eacf60a24736d6f514cdb34b63406bc96ca51025a41ef5b871957",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3501,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new indexes intentionally remain unavailable to queries until Convex finishes both backfills; deploying the dependent detector earlier could make its production queries fail. (sha=bd01f13aa001714b63ec48748df5db7f3d1227f9)",
-      "expected_head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T08:55:15.574Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/stage-signal-indexes",
-        "head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3501:5375479397:2026-08-21T21:13:31Z:re_review",
       "comment_id": "5375479397",
@@ -32790,6 +32757,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130103:5425566227:2026-08-26T14:22:09Z:clawsweeper_needs_human",
+      "comment_id": "5425566227",
+      "comment_version_key": "5425566227:2026-08-26T14:22:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130103#issuecomment-5425566227",
+      "comment_created_at": "2026-08-26T12:51:26Z",
+      "comment_updated_at": "2026-08-26T14:22:09Z",
+      "comment_body_sha256": "9f82bd9abd85eb21d9e93b2d4e45ce238259a426d1c6b0e2dc48c2daa39d58a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130103,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Isolate room evidence and disable tools for the automatic turn (P1)** - Room metadata and recent participant messages are untrusted, but this payload sets neither external-content provenance nor toolsAllow: []....; Review finding: [P1] Isolate room evidence and disable tools for the automatic turn — src/channels/join-intro/report-channel-room-join.ts:158-162 - [P1] Select a policy-allowed Di... (sha=52d2ed6adf1752860b9a6532dfac06478069ad8b)",
+      "expected_head_sha": "52d2ed6adf1752860b9a6532dfac06478069ad8b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T14:22:59.232Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/vigilant-noyce-9e35ee",
+        "head_sha": "52d2ed6adf1752860b9a6532dfac06478069ad8b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
