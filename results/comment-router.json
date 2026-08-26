@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T06:58:05.802Z",
+  "updated_at": "2026-08-26T06:58:29.705Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5302700477:2026-08-15T14:36:16Z:re_review",
-      "comment_id": "5302700477",
-      "comment_version_key": "5302700477:2026-08-15T14:36:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5302700477",
-      "comment_created_at": "2026-08-15T14:36:16Z",
-      "comment_updated_at": "2026-08-15T14:36:16Z",
-      "comment_body_sha256": "a2388b16eb3034dc3831207c287661afce3ac7a45872b0414359b7b2bd320e67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T03:05:51.369Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:5302758352:2026-08-15T14:50:47Z:re_review",
       "comment_id": "5302758352",
@@ -32629,6 +32602,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129941:5421726446:2026-08-26T06:57:41Z:clawsweeper_needs_human",
+      "comment_id": "5421726446",
+      "comment_version_key": "5421726446:2026-08-26T06:57:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129941#issuecomment-5421726446",
+      "comment_created_at": "2026-08-26T06:57:41Z",
+      "comment_updated_at": "2026-08-26T06:57:41Z",
+      "comment_body_sha256": "70c62283416d9936192c3e93d22dee4d89439cf72f4cf7e05b2c69e1e53680e7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129941,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify refreshed trust pins against upstream** - The PR changes runtime SHA-256 and official plugin package integrity values; registry and publisher access were unavailable for independ...; Review finding: [medium] Verify refreshed trust pins against upstream — scripts/lib/official-external-channel-seed.json:37 (sha=2e51ec0ebf57488b8b617dcb843c81153aa6d915)",
+      "expected_head_sha": "2e51ec0ebf57488b8b617dcb843c81153aa6d915",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T06:58:29.705Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/seven-day-dependency-updates-20260825",
+        "head_sha": "2e51ec0ebf57488b8b617dcb843c81153aa6d915",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
