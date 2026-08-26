@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130177",
+  "mode": "autonomous",
+  "run_id": "32982976016",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32982976016",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130177.md",
+  "published_at": "2026-08-26T17:06:17.017Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130177",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130177",
+  "canonical_pr": null,
+  "summary": "#130177 is a narrow, source-proven Control UI regression on current main f07ac003. The active-pane handoff invokes selectApplicationSession without ownership; its helper only derives an owner from explicit agentId or an encoded key, so legacy bare main leaves the prior header agent selected. Implementation and required validation are blocked solely by this read-only checkout: pnpm cannot initialize Corepack and node_modules/tsx are absent.",
+  "actions": [
+    {
+      "target": "#15893",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#130177",
+      "candidate_fix": null,
+      "reason": "Already closed; retained only as historical context."
+    },
+    {
+      "target": "#39392",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#130177",
+      "candidate_fix": null,
+      "reason": "Already closed; related UI-state history only."
+    },
+    {
+      "target": "#130177",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130177",
+      "candidate_fix": null,
+      "reason": "The repair is bounded and ready for an executor, but this worker cannot add the required failing regression, edit the branch, or run validation in the read-only sandbox."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130177",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130177",
+      "candidate_fix": null,
+      "reason": "One narrow replacement PR is appropriate; no contributor PR exists to repair."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
