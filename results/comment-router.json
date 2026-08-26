@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T06:23:42.736Z",
+  "updated_at": "2026-08-26T06:23:44.488Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129120:5419830462:2026-08-26T02:41:49Z:re_review",
-      "comment_id": "5419830462",
-      "comment_version_key": "5419830462:2026-08-26T02:41:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129120#issuecomment-5419830462",
-      "comment_created_at": "2026-08-26T02:41:49Z",
-      "comment_updated_at": "2026-08-26T02:41:49Z",
-      "comment_body_sha256": "2653cb0b7caf27287822cde70f3f263df5c4ce90bf946d3e280f6df906b9e6c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129120,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T02:42:38.698Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-search-empty-query-129054",
-        "head_sha": "13daf634d0f417b4c75deb3efe2e4639bfb01ea8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129752:5419783843:2026-08-26T02:34:45Z:clawsweeper_auto_repair",
       "comment_id": "5419783843",
@@ -32200,6 +32153,39 @@
         "kind": "pull_request",
         "branch": "fix/midturn-overflow-async-tools",
         "head_sha": "7ff73e5c0eaef2f435e23d5ca8b1a563cf9a95ce",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129913:5421421674:2026-08-26T06:21:18Z:clawsweeper_needs_human",
+      "comment_id": "5421421674",
+      "comment_version_key": "5421421674:2026-08-26T06:21:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129913#issuecomment-5421421674",
+      "comment_created_at": "2026-08-26T06:21:18Z",
+      "comment_updated_at": "2026-08-26T06:21:18Z",
+      "comment_body_sha256": "e3aceaa245e7dec99100aa596ffef52877b2f739800c95316db85d2eb2912d1c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129913,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes real SQLite-backed before/after runs, but no inspectable terminal output, log, screenshot, recording, or linked artifact demon... (sha=626610f69675d047c56bc3a865b9a8db98f45b2f)",
+      "expected_head_sha": "626610f69675d047c56bc3a865b9a8db98f45b2f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T06:23:44.488Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/session-delivery-monotonic-20260826",
+        "head_sha": "626610f69675d047c56bc3a865b9a8db98f45b2f",
         "cluster_id": null,
         "job_path": null
       }
