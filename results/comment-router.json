@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T21:35:57.973Z",
+  "updated_at": "2026-08-26T21:35:59.216Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2457:5427022409:2026-08-26T14:44:25Z:re_review",
-      "comment_id": "5427022409",
-      "comment_version_key": "5427022409:2026-08-26T14:44:25Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5427022409",
-      "comment_created_at": "2026-08-26T14:44:25Z",
-      "comment_updated_at": "2026-08-26T14:44:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2457,
-      "author": "EClinick",
-      "author_id": 69320739,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T16:43:56.553Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "task/ec/codex-proxy-attribution",
-        "head_sha": "0a4b2b471596116c22cf93576368978987c7cfdd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2457:5081410241:2026-08-26T16:42:34Z:clawsweeper_needs_human",
       "comment_id": "5081410241",
@@ -31671,6 +31624,39 @@
         "kind": "pull_request",
         "branch": "fix/context-visibility-schema-parity",
         "head_sha": "343319f4d51657861b65aa488aaa527b58f56822",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120736:5229031651:2026-08-26T21:30:22Z:clawsweeper_needs_human",
+      "comment_id": "5229031651",
+      "comment_version_key": "5229031651:2026-08-26T21:30:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120736#issuecomment-5229031651",
+      "comment_created_at": "2026-08-09T00:42:16Z",
+      "comment_updated_at": "2026-08-26T21:30:22Z",
+      "comment_body_sha256": "97f60dcabc29565f883314aa0e7ffb5b4a245fcaf0513c13275cad4b0a1dee84",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120736,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The generated configuration contract adds 19 channel paths for existing accepted settings, so exact-head schema and config-baseline checks should confirm the committed generated artif... (sha=0dfc7b4d4ad196ab76c0b29bb39c87575a6c2fb4)",
+      "expected_head_sha": "0dfc7b4d4ad196ab76c0b29bb39c87575a6c2fb4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T21:35:59.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-schema-channel-core-keys",
+        "head_sha": "0dfc7b4d4ad196ab76c0b29bb39c87575a6c2fb4",
         "cluster_id": null,
         "job_path": null
       }
