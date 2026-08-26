@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T08:41:33.242Z",
+  "updated_at": "2026-08-26T08:45:05.068Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124576:5420864699:2026-08-26T05:06:43Z:re_review",
-      "comment_id": "5420864699",
-      "comment_version_key": "5420864699:2026-08-26T05:06:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124576#issuecomment-5420864699",
-      "comment_created_at": "2026-08-26T05:06:43Z",
-      "comment_updated_at": "2026-08-26T05:06:43Z",
-      "comment_body_sha256": "94a9576e6a70d99868c3af33d561eb8c14109592bedfe4f79bec51453a39e9b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124576,
-      "author": "santhiprakash",
-      "author_id": 38608178,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T05:07:25.982Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/duplicate-plugin-warning-show-overridden-path",
-        "head_sha": "8fa2bfb79b03413a8e0417aa02c4c9a111e57da2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123448:5289485993:2026-08-26T04:58:52Z:clawsweeper_auto_repair",
       "comment_id": "5289485993",
@@ -31654,6 +31607,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-ui-session-diff-copy-feedback-20260826",
         "head_sha": "4efaac2696e68528bb8427f425b09f9053788cb0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T08:41:00Z:clawsweeper_needs_human",
+      "comment_id": "5418912080",
+      "comment_version_key": "5418912080:2026-08-26T08:41:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129705#issuecomment-5418912080",
+      "comment_created_at": "2026-08-26T00:33:33Z",
+      "comment_updated_at": "2026-08-26T08:41:00Z",
+      "comment_body_sha256": "1f99ca9daf94effb90898d74863a2feb609ccca7832e0734f80297d858f6a8ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129705,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Advance the TruffleHog payload with its action (P1)** - The wrapper now points at v3.97.1, but with.version remains v3.97.0. Update the version and verified digest together so the requested scanner release is se...; Review finding: [P1] Advance the TruffleHog payload with its action — .github/workflows/ci.yml:1162 - [P1] Synchronize the CI workflow guard with the new TruffleHog pin — .github/... (sha=b252e33755896c33bb9e80d226f6d5ba124f45f1)",
+      "expected_head_sha": "b252e33755896c33bb9e80d226f6d5ba124f45f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T08:45:05.068Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-4b81979af6",
+        "head_sha": "0592b26c4ab2f1b32d72061089020ca463e6fd63",
         "cluster_id": null,
         "job_path": null
       }
