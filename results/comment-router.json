@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T11:26:43.912Z",
+  "updated_at": "2026-08-26T11:26:45.509Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5314265907:2026-08-17T09:29:21Z:re_review",
-      "comment_id": "5314265907",
-      "comment_version_key": "5314265907:2026-08-17T09:29:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5314265907",
-      "comment_created_at": "2026-08-17T09:29:21Z",
-      "comment_updated_at": "2026-08-17T09:29:21Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T07:09:40.245Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5314406355:2026-08-17T09:42:28Z:re_review",
       "comment_id": "5314406355",
@@ -32445,6 +32418,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T11:26:43.912Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:140:5387059000:2026-08-26T11:23:03Z:clawsweeper_needs_human",
+      "comment_id": "5387059000",
+      "comment_version_key": "5387059000:2026-08-26T11:23:03Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/140#issuecomment-5387059000",
+      "comment_created_at": "2026-08-23T16:27:59Z",
+      "comment_updated_at": "2026-08-26T11:23:03Z",
+      "comment_body_sha256": "b8091b2f7ef2284901d722674df585950c26862639be7c4857666840b514a258",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 140,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A configured remove-if-unchanged default will now let a synchronous caller that also supplies per-call removal approval reclaim an eligible stale lock instead of receiving file_lock_s... (sha=89413e94f614777ee26d1fcdc3d90dd07772bac9)",
+      "expected_head_sha": "89413e94f614777ee26d1fcdc3d90dd07772bac9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T11:26:45.509Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sync-lock-process-defaults",
+        "head_sha": "89413e94f614777ee26d1fcdc3d90dd07772bac9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
