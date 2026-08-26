@@ -2,18 +2,18 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-122425"
 mode: "autonomous"
-run_id: "32957004316"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32957004316"
+run_id: "32959015657"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32959015657"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-26T10:25:22.791Z"
+published_at: "2026-08-26T11:17:40.223Z"
 canonical: "#122425"
 canonical_issue: null
 canonical_pr: "#122425"
 actions_total: 1
 fix_executed: 0
-fix_failed: 0
+fix_failed: 1
 fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32957004316](https://github.com/openclaw/clawsweeper/actions/runs/32957004316)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32959015657](https://github.com/openclaw/clawsweeper/actions/runs/32959015657)
 
 Workflow conclusion: failure
 
@@ -43,7 +43,7 @@ Make PR #122425 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 | --- | ---: |
 | Worker actions | 1 |
 | Fix executed | 0 |
-| Fix failed | 0 |
+| Fix failed | 1 |
 | Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
@@ -54,7 +54,8 @@ Make PR #122425 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| repair_contributor_branch | blocked | https://github.com/openclaw/openclaw/pull/122425 |  | source PR head changed after automerge planning: expected 502c0ac0b45482486697addfe771fe4b6b4ba2f5, current 30eaa143dfe6c8bcce6f875740cd2b54242eedb5 |
+| repair_contributor_branch | failed |  |  | Codex fix worker timed out after 1800000ms |
+| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
 | automerge_repair_outcome_comment | updated | #122425 |  |  |
 
 ## Apply Actions
