@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T00:33:44.983Z",
+  "updated_at": "2026-08-26T00:33:49.580Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118197:5160348321:2026-08-02T21:08:06Z:re_review",
-      "comment_id": "5160348321",
-      "comment_version_key": "5160348321:2026-08-02T21:08:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118197#issuecomment-5160348321",
-      "comment_created_at": "2026-08-02T21:08:06Z",
-      "comment_updated_at": "2026-08-02T21:08:06Z",
-      "comment_body_sha256": "ce78b890c047d06d039d3cd1ffa712002b28bde1e916646806928eaeda7b6c76",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118197,
-      "author": "peterolkhov",
-      "author_id": 300679841,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T18:22:37.821Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118197:5160396001:2026-08-02T21:21:10Z:re_review",
       "comment_id": "5160396001",
@@ -32851,6 +32824,39 @@
         "head_sha": "8da69c56b252d5248d2ca0ffba1825935d703c02",
         "cluster_id": "automerge-openclaw-crabbox-1522",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1522.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128808:5398979328:2026-08-26T00:28:31Z:clawsweeper_needs_human",
+      "comment_id": "5398979328",
+      "comment_version_key": "5398979328:2026-08-26T00:28:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128808#issuecomment-5398979328",
+      "comment_created_at": "2026-08-24T17:35:18Z",
+      "comment_updated_at": "2026-08-26T00:28:31Z",
+      "comment_body_sha256": "145842df5b3a1e3d10ea6b3f90b6c49106d2e9c9d73a77b3cbf3543d6d6f6d0e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128808,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied macOS/zsh PTY transcript credibly demonstrates the readiness handshake, but it does not p...; Review finding: [P1] Preserve terminal command authorization — src/agents/tools/terminal-tool.ts:233-367 - [P1] Reinstate approval checks for terminal input — src/agents/tools/ter... (sha=a953c679431ee44aa4e46925855faf30e91d71ef)",
+      "expected_head_sha": "a953c679431ee44aa4e46925855faf30e91d71ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T00:33:49.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/terminal-initial-command-readiness-128696",
+        "head_sha": "a953c679431ee44aa4e46925855faf30e91d71ef",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
