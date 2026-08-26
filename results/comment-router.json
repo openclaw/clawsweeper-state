@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T00:19:24.650Z",
+  "updated_at": "2026-08-26T00:20:26.063Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129469:5414545450:2026-08-25T17:59:37Z:clawsweeper_needs_human",
-      "comment_id": "5414545450",
-      "comment_version_key": "5414545450:2026-08-25T17:59:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129469#issuecomment-5414545450",
-      "comment_created_at": "2026-08-25T17:59:37Z",
-      "comment_updated_at": "2026-08-25T17:59:37Z",
-      "comment_body_sha256": "42d9c19db55b7057999e8e2df413d0fb61fad037747ebb9a42b706e03cfe682b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129469,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 40 net lines for a bug fix; the added clone-source state is bounded to preserving schedule details the form cannot render and is cleared on edit, reset, and s... (sha=36cdf32e03679ff172e6d976a3a985f05a7dec0f)",
-      "expected_head_sha": "36cdf32e03679ff172e6d976a3a985f05a7dec0f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T18:02:51.266Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/control-ui-qa-repairs",
-        "head_sha": "3f79ddb391326d47853ea1e0313caf163cd017bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabpot:283:5194651438:2026-08-05T16:46:08Z:automerge",
       "comment_id": "5194651438",
@@ -32934,6 +32901,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1248:5418812943:2026-08-26T00:19:32Z:re_review",
+      "comment_id": "5418812943",
+      "comment_version_key": "5418812943:2026-08-26T00:19:32Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1248#issuecomment-5418812943",
+      "comment_created_at": "2026-08-26T00:19:32Z",
+      "comment_updated_at": "2026-08-26T00:19:32Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1248,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T00:20:20.631Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exact-review-codex-source",
+        "head_sha": "c34e0ffd2ff7b338ef24ab6ec8a4d7ca11e025da",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
