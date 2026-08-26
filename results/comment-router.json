@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T01:56:07.169Z",
+  "updated_at": "2026-08-26T01:56:10.206Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129593:5416410639:2026-08-25T20:34:45Z:clawsweeper_auto_repair",
-      "comment_id": "5416410639",
-      "comment_version_key": "5416410639:2026-08-25T20:34:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129593#issuecomment-5416410639",
-      "comment_created_at": "2026-08-25T20:34:45Z",
-      "comment_updated_at": "2026-08-25T20:34:45Z",
-      "comment_body_sha256": "5ba4649bef0e347a432e42ade7b879fa4b3d282f478c4686159c473fa5eaf2f8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129593,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9ad30a5ced2811bc26b82e093594c631cde115aa)",
-      "expected_head_sha": "9ad30a5ced2811bc26b82e093594c631cde115aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T20:35:33.197Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bun-daemon-runtime",
-        "head_sha": "9ad30a5ced2811bc26b82e093594c631cde115aa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129588:5416485212:2026-08-25T20:41:04Z:re_review",
       "comment_id": "5416485212",
@@ -32838,6 +32805,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T01:56:07.169Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129724:5419479399:2026-08-26T01:49:32Z:clawsweeper_needs_human",
+      "comment_id": "5419479399",
+      "comment_version_key": "5419479399:2026-08-26T01:49:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129724#issuecomment-5419479399",
+      "comment_created_at": "2026-08-26T01:49:32Z",
+      "comment_updated_at": "2026-08-26T01:49:32Z",
+      "comment_body_sha256": "537bbcc7125dc37812d22523a5a8d51ed0fb3c199fe3d0c82c481fec04d77fe3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129724,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The stricter release guard can reject a real package if npm includes a dist/ file that inventory generation intentionally excludes; exact-head build-artifact and package-acceptance ch... (sha=b4e82346202fe5615b02f9b5fea786d73b32d9f6)",
+      "expected_head_sha": "b4e82346202fe5615b02f9b5fea786d73b32d9f6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T01:56:10.206Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/package-inventory-parity-20260825",
+        "head_sha": "b4e82346202fe5615b02f9b5fea786d73b32d9f6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
