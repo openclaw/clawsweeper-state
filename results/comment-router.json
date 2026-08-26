@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:47:44.709Z",
+  "updated_at": "2026-08-26T02:47:47.760Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129638:5417861093:2026-08-25T22:42:57Z:re_review",
-      "comment_id": "5417861093",
-      "comment_version_key": "5417861093:2026-08-25T22:42:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129638#issuecomment-5417861093",
-      "comment_created_at": "2026-08-25T22:42:57Z",
-      "comment_updated_at": "2026-08-25T22:42:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129638,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T22:43:34.871Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/bind-session-catalog-home-policy",
-        "head_sha": "d0c9969cd9258e4027ef51641f15b6122a8c8c09",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118152:5160061935:2026-08-25T22:38:53Z:clawsweeper_auto_repair",
       "comment_id": "5160061935",
@@ -32660,6 +32613,39 @@
         "kind": "pull_request",
         "branch": "leon/requester-settle-continuation-20260826",
         "head_sha": "5d0ea25f83d6fdf2537e0934f2b9ae3bdf4e60b8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129728:5419613493:2026-08-26T02:45:13Z:clawsweeper_needs_human",
+      "comment_id": "5419613493",
+      "comment_version_key": "5419613493:2026-08-26T02:45:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129728#issuecomment-5419613493",
+      "comment_created_at": "2026-08-26T02:08:41Z",
+      "comment_updated_at": "2026-08-26T02:45:13Z",
+      "comment_body_sha256": "5782a33220cb0a14c3d3c0ad6e2ef87862f02de16c987081d8167bc15d6c4d03",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129728,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests, but no redacted post-fix CLI invocation or runtime artifact shows the changed text or JSON behavior. After a... (sha=6b99c9179c80f2012700b95fd3f1571b759aa3d3)",
+      "expected_head_sha": "6b99c9179c80f2012700b95fd3f1571b759aa3d3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T02:47:47.760Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/cli-core-send-failure-outcome-20260826",
+        "head_sha": "6b99c9179c80f2012700b95fd3f1571b759aa3d3",
         "cluster_id": null,
         "job_path": null
       }
