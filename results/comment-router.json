@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T14:34:16.206Z",
+  "updated_at": "2026-08-26T14:35:02.825Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113330:5085527352:2026-08-26T08:57:23Z:clawsweeper_needs_human",
-      "comment_id": "5085527352",
-      "comment_version_key": "5085527352:2026-08-26T08:57:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113330#issuecomment-5085527352",
-      "comment_created_at": "2026-07-26T21:41:31Z",
-      "comment_updated_at": "2026-08-26T08:57:23Z",
-      "comment_body_sha256": "12221c60847624ce7bf90ac689d42251632b76721a5de7eed4c0720aa5d4958e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113330,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main’s redaction refactor; GitHub reports it mergeable, but focused validation must run on the rebased or resulting merge head before landing. (sha=4f43c016152992c1c7be54408bcc239a50ac7a11)",
-      "expected_head_sha": "4f43c016152992c1c7be54408bcc239a50ac7a11",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T09:09:46.341Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/redact-shopify-access-tokens",
-        "head_sha": "4f43c016152992c1c7be54408bcc239a50ac7a11",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116446:5133286180:2026-08-26T09:03:00Z:clawsweeper_needs_human",
       "comment_id": "5133286180",
@@ -32746,6 +32713,53 @@
       "status": "skipped",
       "processed_at": "2026-08-26T14:34:16.206Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120185:5426888766:2026-08-26T14:34:12Z:re_review",
+      "comment_id": "5426888766",
+      "comment_version_key": "5426888766:2026-08-26T14:34:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120185#issuecomment-5426888766",
+      "comment_created_at": "2026-08-26T14:34:12Z",
+      "comment_updated_at": "2026-08-26T14:34:12Z",
+      "comment_body_sha256": "e8fe3c9c37ee74f5020077c2bab9f6c4382fd81982248d6b10c9067730f2e630",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120185,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T14:35:00.442Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-model-policy-preflight",
+        "head_sha": "b76e1e41b80f594f7187c7bbbcbeac411fef0011",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
