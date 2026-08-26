@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T08:31:39.581Z",
+  "updated_at": "2026-08-26T08:32:40.556Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:607:5386041846:2026-08-26T04:52:52Z:clawsweeper_auto_repair",
-      "comment_id": "5386041846",
-      "comment_version_key": "5386041846:2026-08-26T04:52:52Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/607#issuecomment-5386041846",
-      "comment_created_at": "2026-08-23T12:39:26Z",
-      "comment_updated_at": "2026-08-26T04:52:52Z",
-      "comment_body_sha256": "80d83824fa4e2d2bbfd7583a23b6c98d7f99f1aacc88981cdc76ab113ffe6b98",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 607,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f5fc52b86a7d1664eefa890543d2971f5218dd84)",
-      "expected_head_sha": "f5fc52b86a7d1664eefa890543d2971f5218dd84",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T05:00:34.416Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/default-see-save-path",
-        "head_sha": "f5fc52b86a7d1664eefa890543d2971f5218dd84",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/Peekaboo:607:5386053611:2026-08-23T12:42:26Z:re_review",
       "comment_id": "5386053611",
@@ -31555,6 +31522,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120973:5230440257:2026-08-26T08:31:34Z:clawsweeper_needs_human",
+      "comment_id": "5230440257",
+      "comment_version_key": "5230440257:2026-08-26T08:31:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120973#issuecomment-5230440257",
+      "comment_created_at": "2026-08-09T07:49:48Z",
+      "comment_updated_at": "2026-08-26T08:31:34Z",
+      "comment_body_sha256": "f7f6befde284f1a79336bbc20ffedcec32e7679ae0190ae0b5174b9be5026606",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120973,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep the hosted timeout tied to the selected runner (P1)** - For an external first-attempt PR, runs-on still resolves to hosted macos-26, but this predicate now yields the Blacksmith 20-minute budget. That reint...; Review finding: [P1] Keep the hosted timeout tied to the selected runner — .github/workflows/ci.yml:3613-3615 - [medium] Isolate security-sensitive branch drift (sha=7a685be914229d0063d186376e07f139a9c41c01)",
+      "expected_head_sha": "7a685be914229d0063d186376e07f139a9c41c01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T08:32:40.556Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-release-gate-native-i18n-scope-20260809",
+        "head_sha": "7a685be914229d0063d186376e07f139a9c41c01",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
