@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T22:10:51.039Z",
+  "updated_at": "2026-08-26T22:10:52.611Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128249:5386792928:2026-08-26T17:22:40Z:clawsweeper_auto_repair",
-      "comment_id": "5386792928",
-      "comment_version_key": "5386792928:2026-08-26T17:22:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128249#issuecomment-5386792928",
-      "comment_created_at": "2026-08-23T15:29:21Z",
-      "comment_updated_at": "2026-08-26T17:22:40Z",
-      "comment_body_sha256": "59e89611aaf827a37a509ee534f8b1e654a2b9cd139d8d619862bdc3d9b437b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128249,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ec9efc034d8d4de22483714b9521070f9b0e2c6a)",
-      "expected_head_sha": "ec9efc034d8d4de22483714b9521070f9b0e2c6a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T17:29:50.602Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "gaoanze888/reasoning-inherited-visibility",
-        "head_sha": "ec9efc034d8d4de22483714b9521070f9b0e2c6a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128249:5386860269:2026-08-23T15:44:12Z:re_review",
       "comment_id": "5386860269",
@@ -31974,6 +31941,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T22:10:51.039Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T22:09:57Z:clawsweeper_needs_human",
+      "comment_id": "5418912080",
+      "comment_version_key": "5418912080:2026-08-26T22:09:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129705#issuecomment-5418912080",
+      "comment_created_at": "2026-08-26T00:33:33Z",
+      "comment_updated_at": "2026-08-26T22:09:57Z",
+      "comment_body_sha256": "3feefe115279279308dbb561cc045058b1bdef39a9dd423b501e815a6df2ab82",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129705,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the CI guard with the TruffleHog pin (P1)** - The changed action SHA no longer matches test/scripts/ci-workflow-guards.test.ts:41 and its assertion at line 3738, so the established workflow guard wil...; Review finding: [P1] Synchronize the CI guard with the TruffleHog pin — .github/workflows/ci.yml:1162 - [P1] Advance the configured TruffleHog scanner payload — .github/workflows/... (sha=3ae954d783ab21c101547c5d4e17a9bc8f0e649e)",
+      "expected_head_sha": "3ae954d783ab21c101547c5d4e17a9bc8f0e649e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T22:10:52.611Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-4b81979af6",
+        "head_sha": "3ae954d783ab21c101547c5d4e17a9bc8f0e649e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
