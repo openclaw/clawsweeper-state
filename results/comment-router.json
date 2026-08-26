@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T01:35:55.764Z",
+  "updated_at": "2026-08-26T01:37:40.440Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123535:5313059260:2026-08-17T07:22:34Z:re_review",
-      "comment_id": "5313059260",
-      "comment_version_key": "5313059260:2026-08-17T07:22:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5313059260",
-      "comment_created_at": "2026-08-17T07:22:34Z",
-      "comment_updated_at": "2026-08-17T07:22:34Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T19:46:29.719Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123535:5313199848:2026-08-17T07:38:37Z:re_review",
       "comment_id": "5313199848",
@@ -33052,6 +33025,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T01:35:55.764Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129616:5419089701:2026-08-26T01:33:52Z:clawsweeper_needs_human",
+      "comment_id": "5419089701",
+      "comment_version_key": "5419089701:2026-08-26T01:33:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129616#issuecomment-5419089701",
+      "comment_created_at": "2026-08-26T00:58:18Z",
+      "comment_updated_at": "2026-08-26T01:33:52Z",
+      "comment_body_sha256": "7b7a7c1b5bc8ea0ce1c8fd9b90223ccaaf4f5c5af04a8158b9b3feb99f4813c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129616,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and the runtime-parity file has later main-branch changes, so the merge result should be refreshed before landing. (sha=cb34a186721aeccb25e7e5766b8c4b2da3f8a073)",
+      "expected_head_sha": "cb34a186721aeccb25e7e5766b8c4b2da3f8a073",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T01:37:40.440Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-qa-parity-report-skipped-runtime-cell-20260825",
+        "head_sha": "cb34a186721aeccb25e7e5766b8c4b2da3f8a073",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
