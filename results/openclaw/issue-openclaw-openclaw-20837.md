@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-20837"
 mode: "autonomous"
-run_id: "32998620485"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32998620485"
+run_id: "33002098025"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33002098025"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-26T18:33:17.178Z"
+published_at: "2026-08-26T19:07:35.007Z"
 canonical: "https://github.com/openclaw/openclaw/issues/20837"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/20837"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-20837
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32998620485](https://github.com/openclaw/clawsweeper/actions/runs/32998620485)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33002098025](https://github.com/openclaw/clawsweeper/actions/runs/33002098025)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/20837
 
 ## Summary
 
-#20837 remains a source-proven command-prompt fidelity bug on main 1fec7b6ccd89224a1f3a9489bbc59cab2d99226d: the command reconstruction hardcodes host/OS/arch as unknown and omits channel, capabilities, shell, and channel actions. Implementation is blocked before any code change because the mandatory sibling ../codex source checkout is absent and this read-only workspace cannot clone it or create/validate the required branch.
+Current main matches the preflight SHA and still reconstructs command prompts with `host`, `os`, and `arch` set to `unknown`, while omitting channel runtime data. The normal embedded path has the required account-aware metadata flow. A narrow two-file repair is identified, but this worker cannot create the required branch or run validation: the checkout is read-only, dependencies are absent, and the required sibling `../codex` source is unavailable for the repository’s mandatory direct inspection gate.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/20837
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #20837 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/20837
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #20837 | fix_needed | blocked | canonical | The issue has a narrow canonical repair, but the Codex-source gate and read-only filesystem block implementation and validation. |
-| #21271 | keep_closed | skipped | related | Already closed; do not mutate or use for closeout. |
-| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | blocked | canonical | The repair plan is narrow, but executor work is blocked until the required Codex sibling source is available in a writable validation workspace. |
+| #20837 | fix_needed | planned | canonical | A narrow owner-boundary repair is appropriate; implementation must proceed on the generated PR branch. |
+| #21271 | keep_closed | skipped | superseded | Historical source only; no mutation is permitted or needed for an already-closed PR. |
+| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | blocked | canonical | The artifact is ready for the deterministic executor, but local implementation and validation are blocked by the read-only environment and missing mandatory Codex source. |
 
 ## Needs Human
 
-- Provide a writable worker environment with the mandatory sibling ../codex checkout (or otherwise satisfy the repository's direct Codex-source inspection gate); then implement and validate the attached narrow new-PR plan.
+- none
