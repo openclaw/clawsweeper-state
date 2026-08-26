@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T20:48:12.456Z",
+  "updated_at": "2026-08-26T20:48:35.467Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130175:5427447670:2026-08-26T15:22:36Z:re_review",
-      "comment_id": "5427447670",
-      "comment_version_key": "5427447670:2026-08-26T15:22:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130175#issuecomment-5427447670",
-      "comment_created_at": "2026-08-26T15:22:36Z",
-      "comment_updated_at": "2026-08-26T15:22:36Z",
-      "comment_body_sha256": "29b7a69111826976cc356ac8395fd4c71c131ee6e07883b2cb61c341a99e5c95",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130175,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T15:57:17.965Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/live-profile-prepared-thinking",
-        "head_sha": "301cbebb345f2c7733a97cdfd3f873e773efab2b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128249:5427454140:2026-08-26T15:23:23Z:re_review",
       "comment_id": "5427454140",
@@ -31582,6 +31535,39 @@
         "kind": "pull_request",
         "branch": "openclaw/fix-issue-130266-in-openclaw",
         "head_sha": "e889ce14d2c3ea0fdab4fa5ff829324df684d782",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129367:5411784918:2026-08-26T20:35:54Z:clawsweeper_needs_human",
+      "comment_id": "5411784918",
+      "comment_version_key": "5411784918:2026-08-26T20:35:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129367#issuecomment-5411784918",
+      "comment_created_at": "2026-08-25T14:19:37Z",
+      "comment_updated_at": "2026-08-26T20:35:54Z",
+      "comment_body_sha256": "e5dc89f88af792ff93dcb68e05d14b1ffcf48cad617f4b236890ba446dc10b27",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129367,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The earlier real Gateway-to-Telegram trace supports the leading-marker path but predates the final anchoring repair; exact-head tests... (sha=7e6afa610c9b915661f2adae42da5e9ef225f680)",
+      "expected_head_sha": "7e6afa610c9b915661f2adae42da5e9ef225f680",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T20:48:35.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-129154-reply-directive-leak",
+        "head_sha": "7e6afa610c9b915661f2adae42da5e9ef225f680",
         "cluster_id": null,
         "job_path": null
       }
