@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T22:26:46.415Z",
+  "updated_at": "2026-08-26T22:26:51.853Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129727:5428751093:2026-08-26T17:29:29Z:re_review",
-      "comment_id": "5428751093",
-      "comment_version_key": "5428751093:2026-08-26T17:29:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129727#issuecomment-5428751093",
-      "comment_created_at": "2026-08-26T17:29:29Z",
-      "comment_updated_at": "2026-08-26T17:29:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129727,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T17:30:59.293Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-ui-workspace-copy-feedback-20260825",
-        "head_sha": "ced9c2cbe31bac4a51649fae62ce29a7c5862ab4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117887:5156337351:2026-08-26T17:24:08Z:clawsweeper_needs_human",
       "comment_id": "5156337351",
@@ -32189,6 +32142,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-128967-stderr-tail-disclosure",
         "head_sha": "292c38efc58fcab5ca44c74d85e7af1e37d09da4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124576:5307508448:2026-08-26T22:18:20Z:clawsweeper_needs_human",
+      "comment_id": "5307508448",
+      "comment_version_key": "5307508448:2026-08-26T22:18:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124576#issuecomment-5307508448",
+      "comment_created_at": "2026-08-16T12:47:36Z",
+      "comment_updated_at": "2026-08-26T22:18:20Z",
+      "comment_body_sha256": "2880080182f2f7a07e008874b7c1fcd8d4e9829a2acdd58d4def84f1885dbbe1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124576,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The read-time migration changes how released persisted diagnostic text is interpreted; exact-head compatibility gates should confirm both fresh and upgraded indexes before merge. (sha=4debace07f396ddc90db47075fab17aaea4ac920)",
+      "expected_head_sha": "4debace07f396ddc90db47075fab17aaea4ac920",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T22:26:51.853Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/duplicate-plugin-warning-show-overridden-path",
+        "head_sha": "4debace07f396ddc90db47075fab17aaea4ac920",
         "cluster_id": null,
         "job_path": null
       }
