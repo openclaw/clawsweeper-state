@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-122425"
 mode: "autonomous"
-run_id: "32976227011"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32976227011"
+run_id: "32986188393"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32986188393"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-26T14:51:11.563Z"
+published_at: "2026-08-26T16:35:40.026Z"
 canonical: "#122425"
 canonical_issue: null
-canonical_pr: "#122425"
+canonical_pr: "https://github.com/openclaw/openclaw/pull/122425"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32976227011](https://github.com/openclaw/clawsweeper/actions/runs/32976227011)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/32986188393](https://github.com/openclaw/clawsweeper/actions/runs/32986188393)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: #122425
 
 ## Summary
 
-Make PR #122425 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+No repair branch is needed: #122425 is already merged into main, so the requested contributor-branch repair is inapplicable.
 
 ## Impact
 
@@ -44,7 +44,7 @@ Make PR #122425 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 | Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Make PR #122425 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| repair_contributor_branch | blocked | https://github.com/openclaw/openclaw/pull/122425 |  | source PR head changed after automerge planning: expected ece5716f91ee4a4e620924dc6dfea4b3bbd5e03d, current 499956e8e0b91d222e6ceaaf21dedfa3bc15bddf |
-| automerge_repair_outcome_comment | updated | #122425 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,7 +66,7 @@ Make PR #122425 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122425 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #122425 | keep_closed | skipped | canonical | Already-merged canonical PR; no remaining open PR exists to repair, merge, or close. |
 
 ## Needs Human
 
