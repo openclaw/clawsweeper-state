@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T19:52:11.172Z",
+  "updated_at": "2026-08-26T19:53:52.164Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127943:5380680909:2026-08-26T14:07:01Z:clawsweeper_auto_repair",
-      "comment_id": "5380680909",
-      "comment_version_key": "5380680909:2026-08-26T14:07:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127943#issuecomment-5380680909",
-      "comment_created_at": "2026-08-22T13:33:51Z",
-      "comment_updated_at": "2026-08-26T14:07:01Z",
-      "comment_body_sha256": "e843670ca655bc4ba5974bf8506cb43cfa7ed0969539b71d04b0bd805757640d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127943,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T14:29:14.453Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fs-safe-symlink-skip-win32",
-        "head_sha": "9c8b17475dbbc4caeb6d32f61ec0ac41d3d0f6fa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128725:5395756905:2026-08-26T14:08:19Z:clawsweeper_auto_repair",
       "comment_id": "5395756905",
@@ -31460,6 +31427,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130166:5430348897:2026-08-26T19:52:49Z:re_review",
+      "comment_id": "5430348897",
+      "comment_version_key": "5430348897:2026-08-26T19:52:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130166#issuecomment-5430348897",
+      "comment_created_at": "2026-08-26T19:52:49Z",
+      "comment_updated_at": "2026-08-26T19:52:49Z",
+      "comment_body_sha256": "57bbac9d5cfd93e9e37ad44588defb9fd11994faf18cb3f096434c89ecef1be6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130166,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T19:53:49.495Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-cron-inbound-metadata-continuation-stability",
+        "head_sha": "ad5ff5811090d720906f2b69d11d10b2aef9aa5e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
