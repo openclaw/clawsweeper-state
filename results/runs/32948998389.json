@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130019",
+  "mode": "autonomous",
+  "run_id": "32948998389",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32948998389",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130019.md",
+  "published_at": "2026-08-26T09:17:08.352Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130019",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130019",
+  "canonical_pr": null,
+  "summary": "Blocked before implementation: current main contains the reported legacy-owner resolution path, but the mandatory sibling ../codex source checkout is absent and this read-only, network-restricted worker cannot clone it or edit/test a branch. No GitHub mutations or code changes were made.",
+  "actions": [
+    {
+      "target": "#130019",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130019",
+      "candidate_fix": null,
+      "reason": "The proposed repair cannot be validated or implemented without the required direct Codex-source inspection; this worker also cannot write the required branch or run the mutation-producing test workflow."
+    },
+    {
+      "target": "#126360",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open as a broader related explicit-ownership cluster."
+    },
+    {
+      "target": "#93031",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no close action is permitted."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130019",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130019",
+      "candidate_fix": null,
+      "reason": "Conditional repair artifact prepared; executor must first satisfy the Codex-source and writable-checkout gates."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#130019",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
