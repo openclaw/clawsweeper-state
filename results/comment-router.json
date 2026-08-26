@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T17:38:28.042Z",
+  "updated_at": "2026-08-26T17:38:31.728Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130073:5424692445:2026-08-26T11:35:15Z:re_review",
-      "comment_id": "5424692445",
-      "comment_version_key": "5424692445:2026-08-26T11:35:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130073#issuecomment-5424692445",
-      "comment_created_at": "2026-08-26T11:35:15Z",
-      "comment_updated_at": "2026-08-26T11:35:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130073,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T11:35:54.304Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/pr-121797-repair",
-        "head_sha": "e09b445c9c1a9dd3968eeeeaf830aca2a51c4cd3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123906:5424567986:2026-08-26T11:23:16Z:re_review",
       "comment_id": "5424567986",
@@ -32032,6 +31985,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T17:38:28.042Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128871:5402057172:2026-08-26T17:32:23Z:clawsweeper_needs_human",
+      "comment_id": "5402057172",
+      "comment_version_key": "5402057172:2026-08-26T17:32:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128871#issuecomment-5402057172",
+      "comment_created_at": "2026-08-24T22:08:23Z",
+      "comment_updated_at": "2026-08-26T17:32:23Z",
+      "comment_body_sha256": "2986c272260e8f00d1d565731ad25ff650da919544d650c826676d6cd7ef439f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128871,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Cap preparations after a failed redemption (P2)** - Deleting the prepared span before comparing old_string lets a deliberate mismatch throw before the mutation budget is reserved. The reviewer can then prepare a...; Review finding: [P2] Cap preparations after a failed redemption — src/agents/tools/skill-workshop-tool-patch.ts:152 - [medium] Failed redemption reopens bounded skill reads — src/... (sha=ba830ba05125260684df188ff79aaab7872e1d3c)",
+      "expected_head_sha": "ba830ba05125260684df188ff79aaab7872e1d3c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T17:38:31.728Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-workshop-targeted-patch-authority",
+        "head_sha": "ba830ba05125260684df188ff79aaab7872e1d3c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
