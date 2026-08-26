@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T19:56:51.990Z",
+  "updated_at": "2026-08-26T19:56:54.510Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116521:5308796005:2026-08-16T17:45:45Z:re_review",
-      "comment_id": "5308796005",
-      "comment_version_key": "5308796005:2026-08-16T17:45:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116521#issuecomment-5308796005",
-      "comment_created_at": "2026-08-16T17:45:45Z",
-      "comment_updated_at": "2026-08-16T17:45:45Z",
-      "comment_body_sha256": "be7410813859083411ddacf8b3fa02b760fedd7b057886738770370d5fbcb19a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116521,
-      "author": "sloptop-the-terrible",
-      "author_id": 310909503,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T14:36:35.420Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116521:5136361773:2026-07-30T21:17:36Z:re_review",
       "comment_id": "5136361773",
@@ -31408,6 +31381,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T19:56:51.990Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129276:5409981751:2026-08-26T19:49:00Z:clawsweeper_needs_human",
+      "comment_id": "5409981751",
+      "comment_version_key": "5409981751:2026-08-26T19:49:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129276#issuecomment-5409981751",
+      "comment_created_at": "2026-08-25T11:53:16Z",
+      "comment_updated_at": "2026-08-26T19:49:00Z",
+      "comment_body_sha256": "a85a4b5e806a735a68a4513de9601aa95efea55a1b02ed520793a1340396da66",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129276,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The external plugin artifact is compatibility-sensitive: the submitted live proof uses the beta package that exports api.js, while intentionally pinned older official plugin records c... (sha=e0a822cc767a7718160208eebc97be3e61c82d10)",
+      "expected_head_sha": "e0a822cc767a7718160208eebc97be3e61c82d10",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T19:56:54.510Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-codex-external-health-surface",
+        "head_sha": "e0a822cc767a7718160208eebc97be3e61c82d10",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
