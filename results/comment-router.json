@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T07:21:16.124Z",
+  "updated_at": "2026-08-26T07:21:17.641Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125015:5311525675:2026-08-26T03:49:13Z:clawsweeper_needs_human",
-      "comment_id": "5311525675",
-      "comment_version_key": "5311525675:2026-08-26T03:49:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125015#issuecomment-5311525675",
-      "comment_created_at": "2026-08-17T03:46:34Z",
-      "comment_updated_at": "2026-08-26T03:49:13Z",
-      "comment_body_sha256": "9b8937d1fa490acbe8e3f3fdd11dc706fa98b22e413cf947a4ec9902c1795c8e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125015,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally enables full Anthropic replay validation for existing Copilot Claude sessions, which can discard malformed assistant-final tails; rebase and exact-head validation s... (sha=8be939af5cb890a0952c6b3b6af39f027a951887)",
-      "expected_head_sha": "8be939af5cb890a0952c6b3b6af39f027a951887",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T03:56:22.032Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/copilot-claude-anthropic-replay-policy",
-        "head_sha": "8be939af5cb890a0952c6b3b6af39f027a951887",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125015:5321397658:2026-08-17T23:23:15Z:re_review",
       "comment_id": "5321397658",
@@ -31865,6 +31832,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T07:21:16.124Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:632:5421947486:2026-08-26T07:20:36Z:clawsweeper_needs_human",
+      "comment_id": "5421947486",
+      "comment_version_key": "5421947486:2026-08-26T07:20:36Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/632#issuecomment-5421947486",
+      "comment_created_at": "2026-08-26T07:20:36Z",
+      "comment_updated_at": "2026-08-26T07:20:36Z",
+      "comment_body_sha256": "20efd70757ba38b2fc1b1eb81da9f6ff7b325229c64518d3893622a8740805b1",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 632,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the external release-helper hash binding** - The builder will trust the new external helper only when its checkout commit and two hashes match these constants, but this review en...; Review finding: [medium] Verify the external release-helper hash binding — scripts/build-terminal-artifacts.sh:85 (sha=14ef02caf03157d584a23db0ccdd477f09a067cd)",
+      "expected_head_sha": "14ef02caf03157d584a23db0ccdd477f09a067cd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T07:21:17.641Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-agent-scripts-pin",
+        "head_sha": "14ef02caf03157d584a23db0ccdd477f09a067cd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
