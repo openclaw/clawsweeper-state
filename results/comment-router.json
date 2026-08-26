@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T22:36:58.583Z",
+  "updated_at": "2026-08-26T22:37:52.588Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122560:5265207261:2026-08-12T10:00:09Z:re_review",
-      "comment_id": "5265207261",
-      "comment_version_key": "5265207261:2026-08-12T10:00:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122560#issuecomment-5265207261",
-      "comment_created_at": "2026-08-12T10:00:09Z",
-      "comment_updated_at": "2026-08-12T10:00:09Z",
-      "comment_body_sha256": "518c72f2324668b67068dbae1d26ad81884a7254188ed804b55e091a1814b92a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122560,
-      "author": "snotty",
-      "author_id": 5853861,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T17:38:24.448Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122560:5305592055:2026-08-16T03:47:52Z:re_review",
       "comment_id": "5305592055",
@@ -32220,6 +32193,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120736:5229031651:2026-08-26T22:35:16Z:clawsweeper_needs_human",
+      "comment_id": "5229031651",
+      "comment_version_key": "5229031651:2026-08-26T22:35:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120736#issuecomment-5229031651",
+      "comment_created_at": "2026-08-09T00:42:16Z",
+      "comment_updated_at": "2026-08-26T22:35:16Z",
+      "comment_body_sha256": "d300c49a5e00f391b0a638e9d469d6a051c524d09a58c29861cfdf598dd828e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120736,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the current head as merge-conflicted; resolve it against main and regenerate the baseline rather than carrying the branch's stale core count. (sha=c016bcab0a05bdee247bf409ae0dd8ddb12746bb)",
+      "expected_head_sha": "c016bcab0a05bdee247bf409ae0dd8ddb12746bb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T22:37:52.588Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-schema-channel-core-keys",
+        "head_sha": "b6a3aa9e037389ef2f153b820449250f9e9cfeca",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
