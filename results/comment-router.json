@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T09:45:16.073Z",
+  "updated_at": "2026-08-26T09:45:44.233Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T06:29:46Z:clawsweeper_needs_human",
-      "comment_id": "5418912080",
-      "comment_version_key": "5418912080:2026-08-26T06:29:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129705#issuecomment-5418912080",
-      "comment_created_at": "2026-08-26T00:33:33Z",
-      "comment_updated_at": "2026-08-26T06:29:46Z",
-      "comment_body_sha256": "1f4d8722693a62f10230239041dad8ed26928e30c2f54882095b329c55682c37",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129705,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Advance the scanner payload with the TruffleHog action (P1)** - The action reference is upgraded to v3.97.1, but with.version still pins the v3.97.0 scanner payload. Verify the v3.97.1 integrity value and update...; Review finding: [P1] Advance the scanner payload with the TruffleHog action — .github/workflows/ci.yml:1162-1166 - [P1] Synchronize the TruffleHog workflow guard — .github/workflo... (sha=3c5f28fef17e3fe4fd6d2016adb5e065ed5d946c)",
-      "expected_head_sha": "3c5f28fef17e3fe4fd6d2016adb5e065ed5d946c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T06:35:00.453Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-4b81979af6",
-        "head_sha": "3c5f28fef17e3fe4fd6d2016adb5e065ed5d946c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129815:5420274306:2026-08-26T06:23:09Z:clawsweeper_auto_repair",
       "comment_id": "5420274306",
@@ -31404,6 +31371,53 @@
         "kind": "pull_request",
         "branch": "fix/problem-github-copilot-login-leaves-failed-response-streams-open",
         "head_sha": "8acd789f7bc7b728bc26b2b573eb5e296921a7fd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129992:5423502227:2026-08-26T09:44:48Z:re_review",
+      "comment_id": "5423502227",
+      "comment_version_key": "5423502227:2026-08-26T09:44:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129992#issuecomment-5423502227",
+      "comment_created_at": "2026-08-26T09:44:48Z",
+      "comment_updated_at": "2026-08-26T09:44:48Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129992,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T09:45:41.806Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/top-left-update-overlap",
+        "head_sha": "91106a5d90be67ece889dad7f62de12912c6975f",
         "cluster_id": null,
         "job_path": null
       },
