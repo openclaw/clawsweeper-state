@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T05:42:44.908Z",
+  "updated_at": "2026-08-26T05:42:46.206Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129733:5419674005:2026-08-26T02:17:44Z:re_review",
-      "comment_id": "5419674005",
-      "comment_version_key": "5419674005:2026-08-26T02:17:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129733#issuecomment-5419674005",
-      "comment_created_at": "2026-08-26T02:17:44Z",
-      "comment_updated_at": "2026-08-26T02:17:44Z",
-      "comment_body_sha256": "2c21302ec7bfc7e7f106f8286ea91bf96f381db7ed709cc564150115a30376f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129733,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T02:18:31.596Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-validation-github-type",
-        "head_sha": "6905e7cdd98918c78c6aea3a5eb5feba92957e26",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129761:5419677543:2026-08-26T02:18:17Z:re_review",
       "comment_id": "5419677543",
@@ -32339,6 +32292,39 @@
         "kind": "pull_request",
         "branch": "codex/refactor-cron-stream-owner-options-00367880",
         "head_sha": "79499bff672d08742dd2dbe15b3f393e10898188",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129899:5421102793:2026-08-26T05:40:16Z:clawsweeper_needs_human",
+      "comment_id": "5421102793",
+      "comment_version_key": "5421102793:2026-08-26T05:40:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129899#issuecomment-5421102793",
+      "comment_created_at": "2026-08-26T05:40:16Z",
+      "comment_updated_at": "2026-08-26T05:40:16Z",
+      "comment_body_sha256": "6208ce2a3927b8cc9170d328a34cf5414b48fcf4b7f2dbb49cecc60a6140d7da",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129899,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The implementation adds six net production lines to a bug fix; the added operation-owned cancellation lifetime is justified by the required deadline boundary, but it should remain lim... (sha=92dd307af48a517cef6060648ed1938417767e3d)",
+      "expected_head_sha": "92dd307af48a517cef6060648ed1938417767e3d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T05:42:46.206Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-browser-download-deadline",
+        "head_sha": "92dd307af48a517cef6060648ed1938417767e3d",
         "cluster_id": null,
         "job_path": null
       }
