@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T04:39:11.052Z",
+  "updated_at": "2026-08-26T04:40:04.302Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129444:5414517903:2026-08-26T01:31:16Z:clawsweeper_auto_repair",
-      "comment_id": "5414517903",
-      "comment_version_key": "5414517903:2026-08-26T01:31:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129444#issuecomment-5414517903",
-      "comment_created_at": "2026-08-25T17:57:10Z",
-      "comment_updated_at": "2026-08-26T01:31:16Z",
-      "comment_body_sha256": "4da9c5ceab2bf9613df1ccc53222c6fac474a22d8f3d4b37a69b040366c11758",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129444,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fca32967bc857fe7aee9b962436f54eff4f00e0c)",
-      "expected_head_sha": "fca32967bc857fe7aee9b962436f54eff4f00e0c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T01:37:45.476Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/macos-upgrade-skip-unneeded-pack-20260825",
-        "head_sha": "fca32967bc857fe7aee9b962436f54eff4f00e0c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129661:5419124644:2026-08-26T01:34:55Z:clawsweeper_needs_human",
       "comment_id": "5419124644",
@@ -32141,6 +32108,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129782:5420679107:2026-08-26T04:39:12Z:automerge",
+      "comment_id": "5420679107",
+      "comment_version_key": "5420679107:2026-08-26T04:39:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129782#issuecomment-5420679107",
+      "comment_created_at": "2026-08-26T04:39:12Z",
+      "comment_updated_at": "2026-08-26T04:39:12Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129782,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T04:39:54.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/package-external-plugin-dist",
+        "head_sha": "e41d949e919f5425d1d89e8450538f538477be8a",
+        "cluster_id": "automerge-openclaw-openclaw-129782",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-129782.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
