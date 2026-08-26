@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Voice Call plugin's late-terminal-callback record ownership bug. Preserve the existing providerCallId persistence in outbound initiation. Before auto-registering an unmatched directional callback in extensions/voice-call/src/manager/events.ts, reconcile an exact retained terminal record using both the internal call ID and providerCallId; consume the late terminal event without creating or reopening a call. Preserve registration for genuinely unknown externally initiated outbound calls. Add a boundary regression that creates an outbound record, finalizes it so active indexes are removed, then processes a completed Twilio-style callback with the same IDs and proves one retained record with the original agent remains. Do not add config, default-agent fallbacks, sidecar storage, or CHANGELOG.md edits; include release-note context in the PR body.
+Repair the voice-call plugin bug described in https://github.com/openclaw/openclaw/issues/130059. Preserve the canonical originating call record when a realtime termination is followed by a Twilio terminal status callback carrying the same internal call ID and provider CallSid; do not auto-register a second default-agent outbound record. Keep genuine externally initiated outbound-api calls auto-registerable. Work only in the voice-call plugin, add an ordered regression that fails before the fix, and do not add configuration, fallback readers, or CHANGELOG.md edits. Include PR-body release-note context describing corrected call-history attribution.
 
 Likely files:
 
@@ -75,13 +75,13 @@ Likely files:
 - extensions/voice-call/src/manager/store.ts
 - extensions/voice-call/src/manager/events.test.ts
 - extensions/voice-call/src/manager/outbound.test.ts
-- extensions/voice-call/src/providers/twilio.test.ts
+- extensions/voice-call/src/webhook/realtime-handler.lifecycle.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/voice-call/src/manager/events.test.ts extensions/voice-call/src/manager/store.test.ts extensions/voice-call/src/manager/outbound.test.ts extensions/voice-call/src/providers/twilio.test.ts
-- pnpm test extensions/voice-call
-- Run a real or production-boundary provider callback proof showing terminal callback recovery without a second record.
+- pnpm test extensions/voice-call/src/manager/events.test.ts extensions/voice-call/src/manager/outbound.test.ts
+- pnpm test extensions/voice-call/src/providers/twilio.test.ts extensions/voice-call/src/webhook/realtime-handler.lifecycle.test.ts
+- pnpm check:changed -- extensions/voice-call/src/manager/events.ts extensions/voice-call/src/manager/events.test.ts
 
 ## Operator Prompt
 
