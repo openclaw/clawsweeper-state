@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-26T19:23:57.543Z",
+  "updated_at": "2026-08-26T20:58:19.103Z",
   "notifications": [
     {
       "key": "clawsweeper.repair_blocked:openclaw/openclaw:target-unknown:repair_contributor_branch:failed:2026-08-01T01:19:28.194Z",
@@ -5360,6 +5360,41 @@
       },
       "notifiedAt": "2026-08-26T19:23:57.543Z",
       "hookRunId": "0fdc820d-1fa1-4f08-bc02-78ac20aa4ccf",
+      "discordTarget": "channel:1499243561407741994"
+    },
+    {
+      "key": "clawsweeper.repair_blocked:openclaw/openclaw:target-unknown:repair_contributor_branch:failed:2026-08-26T20:58:15.046Z",
+      "idempotencyKey": "clawsweeper.repair_blocked:openclaw/openclaw:target-unknown:repair_contributor_branch:failed:2026-08-26T20:58:15.046Z",
+      "type": "clawsweeper.repair_blocked",
+      "severity": "error",
+      "repo": "openclaw/openclaw",
+      "target": null,
+      "title": null,
+      "url": null,
+      "action": "repair_contributor_branch",
+      "status": "failed",
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=coreTests, ui [check:changed] ui/src/e2e/question-flow.e2e.test.ts: UI test [check:changed] ui/src/pages/chat/components/chat-composer-view.ts: UI production [check:changed] ui/src/styles/chat/question-card.css: UI production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] max-lines suppression ratchet $ node --import tsx scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import tsx scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import tsx scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import tsx scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import tsx scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import tsx scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] coercion helper declaration guard $ node --import tsx scripts/check-coercion-helper-declarations.mts [check:changed] dependency pin guard $ node --import tsx scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- ui/src/e2e/question-flow.e2e.test.ts ui/src/pages/chat/components/chat-composer-view.ts ui/src/styles/chat/question-card.css [check:changed] package patch guard $ node --import tsx scripts/check-package-patches.mts [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) deadcode production unused-export scan produced no export sections. [ERR_PNPM_NO_OFFLINE_META] Failed to resolve knip@6.32.2 in package mirror /tmp/clawsweeper-target-user-XmB0Oj/cache/pnpm/v11/metadata-full-filtered/registry.npmjs.org/knip.jsonl [check:changed] summary 413ms ok conflict markers 17.20s ok max-lines suppression ratchet 7.78s ok assertion SAFETY comment ratchet 360ms ok changelog attributions 350ms ok doctor deprecation registry 391ms ok guarded extension wildcard re-exports 373ms ok plugin-sdk wildcard re-exports 418ms ok duplicate scan target coverage 10.43s ok coercion helper declaration guard 387ms ok dependency pin guard 369ms ok format changed files 540ms ok package patch guard 373ms failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [check:changed] FAILED (exit 1) max-lines ratchet OK: 892 grandfathered suppressions. OPENCLAW_* count 501/501 assertion SAFETY ratchet OK: 4242 files, 13267 grandfathered assertions. [doctor-deprecation-registry] OK as of 2026-08-26 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok Coercion helper declaration guard passed (106 allowlisted declarations). PASS direct dependency pin guard: checked 630 directly declared dependency specs across 179 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 64ms on 3 files using 4 threads. PASS package patch guard: no new pnpm patches; 2 approved patches allowlisted. [ELIFECYCLE] Command failed with exit code 1.",
+      "runId": "33007299834",
+      "runUrl": "https://github.com/openclaw/clawsweeper/actions/runs/33007299834",
+      "clusterId": "automerge-openclaw-openclaw-130179",
+      "publishedAt": "2026-08-26T20:58:15.046Z",
+      "details": {
+        "action": "repair_contributor_branch",
+        "status": "failed",
+        "target": null,
+        "pr": null,
+        "branch": null,
+        "source_action": null,
+        "source_status": null,
+        "repair_strategy": null,
+        "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=coreTests, ui [check:changed] ui/src/e2e/question-flow.e2e.test.ts: UI test [check:changed] ui/src/pages/chat/components/chat-composer-view.ts: UI production [check:changed] ui/src/styles/chat/question-card.css: UI production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] max-lines suppression ratchet $ node --import tsx scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import tsx scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import tsx scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import tsx scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import tsx scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import tsx scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] coercion helper declaration guard $ node --import tsx scripts/check-coercion-helper-declarations.mts [check:changed] dependency pin guard $ node --import tsx scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- ui/src/e2e/question-flow.e2e.test.ts ui/src/pages/chat/components/chat-composer-view.ts ui/src/styles/chat/question-card.css [check:changed] package patch guard $ node --import tsx scripts/check-package-patches.mts [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) deadcode production unused-export scan produced no export sections. [ERR_PNPM_NO_OFFLINE_META] Failed to resolve knip@6.32.2 in package mirror /tmp/clawsweeper-target-user-XmB0Oj/cache/pnpm/v11/metadata-full-filtered/registry.npmjs.org/knip.jsonl [check:changed] summary 413ms ok conflict markers 17.20s ok max-lines suppression ratchet 7.78s ok assertion SAFETY comment ratchet 360ms ok changelog attributions 350ms ok doctor deprecation registry 391ms ok guarded extension wildcard re-exports 373ms ok plugin-sdk wildcard re-exports 418ms ok duplicate scan target coverage 10.43s ok coercion helper declaration guard 387ms ok dependency pin guard 369ms ok format changed files 540ms ok package patch guard 373ms failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [check:changed] FAILED (exit 1) max-lines ratchet OK: 892 grandfathered suppressions. OPENCLAW_* count 501/501 assertion SAFETY ratchet OK: 4242 files, 13267 grandfathered assertions. [doctor-deprecation-registry] OK as of 2026-08-26 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok Coercion helper declaration guard passed (106 allowlisted declarations). PASS direct dependency pin guard: checked 630 directly declared dependency specs across 179 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 64ms on 3 files using 4 threads. PASS package patch guard: no new pnpm patches; 2 approved patches allowlisted. [ELIFECYCLE] Command failed with exit code 1.",
+        "title": null,
+        "url": null,
+        "commit": null,
+        "base_sync": false
+      },
+      "notifiedAt": "2026-08-26T20:58:19.103Z",
+      "hookRunId": "0a078156-1e6d-4067-9a6d-54d91b848627",
       "discordTarget": "channel:1499243561407741994"
     }
   ]
