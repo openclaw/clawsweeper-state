@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/130018 at the core Doctor auth-migration owner. Canonicalize separately loaded auth-state.json order, lastGood, and usageStats with the same collision-safe openai-codex-to-openai profile-ID map used for credential records before merging into SQLite. Preserve standalone state precedence over auth-profiles state and preserve an existing canonical credential over stale flat state. Do not add runtime aliases, configuration, or schema changes. Add one owner-boundary regression scenario with five named legacy OAuth profiles plus default, separate legacy state, and conflicting config order; assert exact named canonical state order without default injection, canonical lastGood/usageStats, preserved canonical credentials, and archived consumed files. Put release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the Doctor JSON-to-SQLite auth migration so a separate legacy auth-state file receives the same collision-aware OpenAI Codex-to-OpenAI profile-ID map used for credential records. Add one boundary regression fixture with five named legacy profiles plus default: preserve each named order entry once, canonicalize lastGood and usageStats, do not inject default into explicitly named order, preserve an existing canonical credential over stale flat state, and archive only after verification. Do not add runtime aliases, configuration, or CHANGELOG.md edits; put release-note context in the PR body.
 
 Likely files:
 
@@ -76,8 +76,9 @@ Likely files:
 
 Validation:
 
-- pnpm test src/commands/doctor-auth-flat-profiles.test.ts
-- pnpm check:changed -- src/commands/doctor-auth-flat-profiles.ts src/commands/doctor-auth-flat-profiles.test.ts
+- node scripts/run-vitest.mjs src/commands/doctor-auth-flat-profiles.test.ts
+- node scripts/check-changed.mjs --dry-run -- src/commands/doctor-auth-flat-profiles.ts src/commands/doctor-auth-flat-profiles.test.ts
+- node scripts/check-changed.mjs -- src/commands/doctor-auth-flat-profiles.ts src/commands/doctor-auth-flat-profiles.test.ts
 
 ## Operator Prompt
 
