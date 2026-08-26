@@ -1,0 +1,71 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-129756",
+  "mode": "autonomous",
+  "run_id": "32927657640",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32927657640",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-129756.md",
+  "published_at": "2026-08-26T03:54:40.044Z",
+  "canonical": "#129756",
+  "canonical_issue": "#129756",
+  "canonical_pr": "#129770",
+  "summary": "Current main reproduces #129756: the model selector permanently appends its loading row. A repair plan for writable PR #129770 is ready, but this read-only runner cannot satisfy the mandatory direct-Codex inspection gate or install the missing test dependency (`tsx`) to validate it.",
+  "actions": [
+    {
+      "target": "#129756",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#129756",
+      "candidate_fix": "#129770",
+      "reason": "Broken existing TUI behavior remains on current main; do not close."
+    },
+    {
+      "target": "#129770",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#129756",
+      "candidate_fix": "#129770",
+      "reason": "Repair the useful writable contributor branch; re-fetch its exact head before updating."
+    },
+    {
+      "target": "#129770",
+      "action": "label",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#129756",
+      "candidate_fix": "#129770",
+      "reason": "Apply labels after re-fetching the open PR."
+    },
+    {
+      "target": "#129770",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#129756",
+      "candidate_fix": "#129770",
+      "reason": "Concrete narrow repair artifact follows."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 2,
+    "label": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
