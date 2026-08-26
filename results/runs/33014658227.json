@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130237",
+  "mode": "autonomous",
+  "run_id": "33014658227",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33014658227",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130237.md",
+  "published_at": "2026-08-26T21:32:10.081Z",
+  "canonical": "#130237",
+  "canonical_issue": "#130237",
+  "canonical_pr": null,
+  "summary": "#130237 is a valid current-main bug: the coordinator opens every discovered store, including a retained deleted-agent store whose durable deletion fence rejects the open. This worker cannot modify the read-only checkout, lacks the mandated ../codex source checkout, and cannot run tests because dependencies are unavailable and installation is blocked by EROFS.",
+  "actions": [
+    {
+      "target": "#130237",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130237",
+      "candidate_fix": null,
+      "reason": "A writable, dependency-ready repair worker with ../codex is required to create the pre-fix regression, implement the coordinator-boundary fix, validate it, and open the allowed PR."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
