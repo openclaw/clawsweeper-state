@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-120143",
+  "mode": "autonomous",
+  "run_id": "32924256351",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32924256351",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120143.md",
+  "published_at": "2026-08-26T03:01:11.695Z",
+  "canonical": "#120143",
+  "canonical_issue": "#89254",
+  "canonical_pr": "#120143",
+  "summary": "#120143 remains the canonical repair path for #89254, but its nested-Matrix diagnostic must be repaired and rebased before any merge consideration.",
+  "actions": [
+    {
+      "target": "#120143",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120143",
+      "candidate_fix": "#120143",
+      "reason": "Repair the contributor branch rather than replace it; it is same-repository and writable, but needs a rebase and one focused correctness repair."
+    },
+    {
+      "target": "#120143",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120143",
+      "candidate_fix": "#120143",
+      "reason": "Produce the required repair-contributor-branch artifact; merge and closure are disabled by this job."
+    },
+    {
+      "target": "#89254",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#120143",
+      "candidate_fix": "#120143",
+      "reason": "Keep the reported user impact tracked while #120143 is repaired and revalidated."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
