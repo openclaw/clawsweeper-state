@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T21:42:33.810Z",
+  "updated_at": "2026-08-26T21:42:42.175Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120491:5224970607:2026-08-26T17:04:27Z:clawsweeper_auto_repair",
-      "comment_id": "5224970607",
-      "comment_version_key": "5224970607:2026-08-26T17:04:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5224970607",
-      "comment_created_at": "2026-08-08T06:42:09Z",
-      "comment_updated_at": "2026-08-26T17:04:27Z",
-      "comment_body_sha256": "c4c95f2c3fb80a181337ce059bd50ee9a1a552e48e849d8d7b7066610105e599",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fe83d4804290995821cd9623e57b768064f177b3)",
-      "expected_head_sha": "fe83d4804290995821cd9623e57b768064f177b3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T17:08:44.902Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119992-per-turn-send-budget",
-        "head_sha": "fe83d4804290995821cd9623e57b768064f177b3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5225935465:2026-08-08T11:38:43Z:re_review",
       "comment_id": "5225935465",
@@ -31722,6 +31689,39 @@
       "status": "skipped",
       "processed_at": "2026-08-26T21:42:33.810Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129348:5411555180:2026-08-26T21:41:08Z:clawsweeper_needs_human",
+      "comment_id": "5411555180",
+      "comment_version_key": "5411555180:2026-08-26T21:41:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129348#issuecomment-5411555180",
+      "comment_created_at": "2026-08-25T14:04:02Z",
+      "comment_updated_at": "2026-08-26T21:41:08Z",
+      "comment_body_sha256": "cdb50016bf5eb4f3ba1e6f5439e9ad37804b26d308b1fd237e956ff8b73937e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129348,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Recheck terminal targets against their original binding (P1)** - This join reloads the current subscription row from a delivery record that retained only subscription_id. Rebinding the endpoint before resolution...; Review finding: [P1] Recheck terminal targets against their original binding — src/infra/push-web-store.ts:322-333 - [high] Terminal push trusts a reassigned subscription — src/in... (sha=b387d994f0514872d38a876507d0e4ca35eb77b2)",
+      "expected_head_sha": "b387d994f0514872d38a876507d0e4ca35eb77b2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T21:42:42.175Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/push-notifications-for-permission-requests",
+        "head_sha": "b387d994f0514872d38a876507d0e4ca35eb77b2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
