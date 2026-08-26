@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-20837",
+  "mode": "autonomous",
+  "run_id": "32987981537",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/32987981537",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-20837.md",
+  "published_at": "2026-08-26T16:58:08.876Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/20837",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/20837",
+  "canonical_pr": null,
+  "summary": "Current main f2ff510e source-reproduces the command-prompt metadata gap: the command bundle supplies unknown host/OS/arch and omits channel, account-aware capabilities, shell, and channel-action metadata, while normal embedded turns supply them. A narrow replacement PR is appropriate, but this worker cannot modify or validate it: the filesystem is read-only, dependencies are absent, and the required sibling ../codex source checkout is unavailable.",
+  "actions": [
+    {
+      "target": "#20837",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Implementation and local validation are blocked by the read-only checkout, missing dependencies, and unavailable required ../codex source; the narrow repair plan is otherwise ready for the deterministic executor."
+    },
+    {
+      "target": "#21271",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation is permitted. Preserve @evansantos attribution in the replacement PR context."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-20837",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Create a narrow credited PR once the executor has a writable checkout, dependencies, and the required ../codex source available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
