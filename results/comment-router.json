@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-26T17:23:57.642Z",
+  "updated_at": "2026-08-26T17:24:01.061Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122425:5422358695:2026-08-26T08:00:55Z:maintainer_approve_automerge",
-      "comment_id": "5422358695",
-      "comment_version_key": "5422358695:2026-08-26T08:00:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5422358695",
-      "comment_created_at": "2026-08-26T08:00:55Z",
-      "comment_updated_at": "2026-08-26T08:00:55Z",
-      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122425,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "structured ClawSweeper verdict: pass; failed required checks before automerge: checks-node-changed-extensions-config-36:FAILURE, checks-node-changed-extensions-config-39:FAILURE, checks-node-changed-extensions-config-64:FAILURE",
-      "expected_head_sha": "30eaa143dfe6c8bcce6f875740cd2b54242eedb5",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T10:35:30.378Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/inline-slash-skills",
-        "head_sha": "30eaa143dfe6c8bcce6f875740cd2b54242eedb5",
-        "cluster_id": "automerge-openclaw-openclaw-122425",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "merge",
-          "status": "repair_needed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T10:38:26Z:clawsweeper_needs_human",
       "comment_id": "5418912080",
@@ -32519,6 +32460,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/development-6feeff8a91",
         "head_sha": "fea0499fd619c4094cdc76ed4b3b75b6f7ca86f0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/codexbar:3212:5428644811:2026-08-26T17:21:23Z:clawsweeper_auto_repair",
+      "comment_id": "5428644811",
+      "comment_version_key": "5428644811:2026-08-26T17:21:23Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3212#issuecomment-5428644811",
+      "comment_created_at": "2026-08-26T17:21:23Z",
+      "comment_updated_at": "2026-08-26T17:21:23Z",
+      "comment_body_sha256": "88721a3c6cc04b90f7016ae10ea7c298ad3a63826a164b5e6e73c805d64a8ace",
+      "repo": "steipete/codexbar",
+      "issue_number": 3212,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4f560df642fbb0a1cb07469531983e9683d9f04d)",
+      "expected_head_sha": "4f560df642fbb0a1cb07469531983e9683d9f04d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T17:24:01.061Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/antigravity-local-session-cost",
+        "head_sha": "4f560df642fbb0a1cb07469531983e9683d9f04d",
         "cluster_id": null,
         "job_path": null
       }
