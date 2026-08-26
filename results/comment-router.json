@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T17:40:17.671Z",
+  "updated_at": "2026-08-26T17:41:39.099Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130085:5424708527:2026-08-26T11:36:51Z:clawsweeper_needs_human",
-      "comment_id": "5424708527",
-      "comment_version_key": "5424708527:2026-08-26T11:36:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130085#issuecomment-5424708527",
-      "comment_created_at": "2026-08-26T11:36:51Z",
-      "comment_updated_at": "2026-08-26T11:36:51Z",
-      "comment_body_sha256": "619a831839f16cb24a2dba6c235f33dca4ddac716ec16768fa588ca3a26de5bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130085,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the patch is correct, maintainer-owned, and awaiting ordinary exact-head CI and merge handling. (sha=495f00a35fdec864a171b70747c88cb7081643e4)",
-      "expected_head_sha": "495f00a35fdec864a171b70747c88cb7081643e4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T11:39:15.474Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/cli-screen-writers",
-        "head_sha": "495f00a35fdec864a171b70747c88cb7081643e4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130005:5423766626:2026-08-26T11:36:04Z:clawsweeper_auto_repair",
       "comment_id": "5423766626",
@@ -31995,6 +31962,65 @@
         "job_path": null
       },
       "actions": [
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130179:5428875821:2026-08-26T17:40:33Z:autofix",
+      "comment_id": "5428875821",
+      "comment_version_key": "5428875821:2026-08-26T17:40:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130179#issuecomment-5428875821",
+      "comment_created_at": "2026-08-26T17:40:33Z",
+      "comment_updated_at": "2026-08-26T17:40:33Z",
+      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130179,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T17:41:30.029Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/suggestions-to-resolve-the-highlighted-issue",
+        "head_sha": "83e6a5b795810682a1089123b169287ffce5f66c",
+        "cluster_id": "automerge-openclaw-openclaw-130179",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-130179.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-130179.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
         {
           "action": "comment",
           "status": "executed",
