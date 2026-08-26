@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T04:34:12.076Z",
+  "updated_at": "2026-08-26T04:34:16.814Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110434:5419304275:2026-08-26T01:25:14Z:re_review",
-      "comment_id": "5419304275",
-      "comment_version_key": "5419304275:2026-08-26T01:25:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110434#issuecomment-5419304275",
-      "comment_created_at": "2026-08-26T01:25:14Z",
-      "comment_updated_at": "2026-08-26T01:25:14Z",
-      "comment_body_sha256": "1a90d8d7bdc70b0bcb104a9aadb7fc0c262726a2fb5af4f94ccafb9cab5d97a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110434,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T01:25:55.428Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/microsoft-foundry-execaz-sigkill",
-        "head_sha": "6e8de2857c67da5d702b272d3608950d246e19cd",
-        "cluster_id": "automerge-openclaw-openclaw-110434",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-110434.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3529:5412904154:2026-08-26T01:18:59Z:clawsweeper_auto_repair",
       "comment_id": "5412904154",
@@ -32144,6 +32097,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-packaged-provider-discovery-entry-20260826",
         "head_sha": "b3835f32956df977bf28e53f8f76c7879c99ce71",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125015:5311525675:2026-08-26T04:29:53Z:clawsweeper_needs_human",
+      "comment_id": "5311525675",
+      "comment_version_key": "5311525675:2026-08-26T04:29:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125015#issuecomment-5311525675",
+      "comment_created_at": "2026-08-17T03:46:34Z",
+      "comment_updated_at": "2026-08-26T04:29:53Z",
+      "comment_body_sha256": "68658b2f4ca6dae4d22ba8e6a1a1f77814c3127102c5724c4ac29fb66461a610",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125015,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Copilot Claude sessions with an assistant-final tail will now discard that unreplayable tail to recover the next request; this is intentional but compatibility-sensitive. (sha=8be939af5cb890a0952c6b3b6af39f027a951887)",
+      "expected_head_sha": "8be939af5cb890a0952c6b3b6af39f027a951887",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T04:34:16.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/copilot-claude-anthropic-replay-policy",
+        "head_sha": "8be939af5cb890a0952c6b3b6af39f027a951887",
         "cluster_id": null,
         "job_path": null
       }
