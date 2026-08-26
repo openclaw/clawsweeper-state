@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-26T07:18:13.842Z",
+  "updated_at": "2026-08-26T07:18:49.935Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123062:5365267444:2026-08-21T04:39:19Z:re_review",
-      "comment_id": "5365267444",
-      "comment_version_key": "5365267444:2026-08-21T04:39:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123062#issuecomment-5365267444",
-      "comment_created_at": "2026-08-21T04:39:19Z",
-      "comment_updated_at": "2026-08-21T04:39:19Z",
-      "comment_body_sha256": "200b25534a71fb0d003c053d702fc528d9d30709c51d656a6e3b24dc0fcbae40",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123062,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T03:53:08.561Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129523:5415207019:2026-08-26T03:50:25Z:clawsweeper_needs_human",
       "comment_id": "5415207019",
@@ -31855,6 +31828,39 @@
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-122425.md"
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112659:5085427315:2026-08-26T07:18:03Z:clawsweeper_needs_human",
+      "comment_id": "5085427315",
+      "comment_version_key": "5085427315:2026-08-26T07:18:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112659#issuecomment-5085427315",
+      "comment_created_at": "2026-07-26T21:14:10Z",
+      "comment_updated_at": "2026-08-26T07:18:03Z",
+      "comment_body_sha256": "60c7c535d7ef00d2895484eef3fe0b01359f2277f0ae18475e5f5e5b6af6cc93",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112659,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the shipped Copilot default from stripping every encrypted reasoning item to retaining complete same-run reasoning, so the active-versus-restored session contract need... (sha=a4678f16da797e4d48ca50154ece453cc90d6881)",
+      "expected_head_sha": "a4678f16da797e4d48ca50154ece453cc90d6881",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T07:18:49.935Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "newfuture-fix-copilot-reasoning-lifecycle",
+        "head_sha": "a4678f16da797e4d48ca50154ece453cc90d6881",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
