@@ -1,0 +1,71 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130237",
+  "mode": "autonomous",
+  "run_id": "33006053987",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33006053987",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130237.md",
+  "published_at": "2026-08-26T21:09:38.535Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130237",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130237",
+  "canonical_pr": null,
+  "summary": "Current main a665f9ab has the reported coordinator failure: every discovered store is opened at src/commands/tasks-session-registry-maintenance.ts:86, while the deletion fence rejects the deleted owner before checking cleanup completion at src/state/agent-deletion-journal.ts:212. A narrow coordinator-level fix is planned, but this read-only worker cannot edit or validate it; the required sibling ../codex source is also absent and cannot be cloned here.",
+  "actions": [
+    {
+      "target": "#130237",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130237",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable checkout with dependencies and the mandated sibling Codex source. The issue remains a narrow canonical bug candidate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130237",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#130237",
+      "candidate_fix": null,
+      "reason": "Prepared for a writable executor; no branch, PR, label, or comment was mutated by this worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): validation command runtime budget exhausted",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
