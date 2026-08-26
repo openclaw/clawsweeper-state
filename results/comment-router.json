@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T19:47:34.458Z",
+  "updated_at": "2026-08-26T19:48:37.752Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92649:4698127317:2026-08-26T14:14:53Z:clawsweeper_needs_human",
-      "comment_id": "4698127317",
-      "comment_version_key": "4698127317:2026-08-26T14:14:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/92649#issuecomment-4698127317",
-      "comment_created_at": "2026-06-13T09:27:38Z",
-      "comment_updated_at": "2026-08-26T14:14:53Z",
-      "comment_body_sha256": "1cf20960e5876e04349accb1c3b5c9cc1d069474fcf765ec690144b98f4d2763",
-      "repo": "openclaw/openclaw",
-      "issue_number": 92649,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Honor agent models.json endpoint overrides (P1)** - The managed-only check reads only ctx.config.models.providers, but an agent’s non-empty models.json base URL wins at runtime. A Kimi API key configured for a p...; Review finding: [P1] Honor agent models.json endpoint overrides — extensions/kimi-coding/index.ts:114-119 - [P2] Align models-status documentation with its API-key behavior — docs... (sha=a1b3f1bdeb0dc25ade59ddb12d6bca2254ea426d)",
-      "expected_head_sha": "a1b3f1bdeb0dc25ade59ddb12d6bca2254ea426d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T14:29:14.453Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/kimi-code-usage-quota",
-        "head_sha": "a1b3f1bdeb0dc25ade59ddb12d6bca2254ea426d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110458:5010193657:2026-08-26T14:19:22Z:clawsweeper_auto_repair",
       "comment_id": "5010193657",
@@ -31432,6 +31399,53 @@
       "status": "skipped",
       "processed_at": "2026-08-26T19:47:34.458Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129458:5430295449:2026-08-26T19:47:45Z:re_review",
+      "comment_id": "5430295449",
+      "comment_version_key": "5430295449:2026-08-26T19:47:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129458#issuecomment-5430295449",
+      "comment_created_at": "2026-08-26T19:47:45Z",
+      "comment_updated_at": "2026-08-26T19:47:45Z",
+      "comment_body_sha256": "7328ff2e4e572bacfd05f853f40280e9e5a218fac0baec8fc944cba4f6002b4f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129458,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T19:48:35.568Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-gateway-failed-websocket-delivery-20260825",
+        "head_sha": "12b65bb016a358ce2d977056351dc3e1ca6173e0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
