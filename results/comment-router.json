@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T14:40:31.051Z",
+  "updated_at": "2026-08-26T14:40:44.196Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129994:5422617694:2026-08-26T09:16:32Z:clawsweeper_needs_human",
-      "comment_id": "5422617694",
-      "comment_version_key": "5422617694:2026-08-26T09:16:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129994#issuecomment-5422617694",
-      "comment_created_at": "2026-08-26T08:24:32Z",
-      "comment_updated_at": "2026-08-26T09:16:32Z",
-      "comment_body_sha256": "8a4e868bf8ff7bc4a00095c65a838131822dc54ea09e8121ef24a7b9630ffc4b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129994,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the upstream workspace-write boundary** - The branch supplies the agent workspace as the Codex root, cwd, and runtime workspace roots; direct upstream protocol inspection is requ...; Review finding: [medium] Verify the upstream workspace-write boundary — extensions/codex/src/conversation-binding.ts:222 (sha=71501984fe60e595e10967f6181a04f377a585d7)",
-      "expected_head_sha": "71501984fe60e595e10967f6181a04f377a585d7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T09:20:48.393Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/error-diagnosis-d9bb58",
-        "head_sha": "71501984fe60e595e10967f6181a04f377a585d7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130031:5422936241:2026-08-26T09:17:33Z:clawsweeper_auto_repair",
       "comment_id": "5422936241",
@@ -32648,6 +32615,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122991:5426958102:2026-08-26T14:39:21Z:re_review",
+      "comment_id": "5426958102",
+      "comment_version_key": "5426958102:2026-08-26T14:39:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122991#issuecomment-5426958102",
+      "comment_created_at": "2026-08-26T14:39:21Z",
+      "comment_updated_at": "2026-08-26T14:39:21Z",
+      "comment_body_sha256": "059ca0db6b3d841e623db41b8a1b2ebaa0aa906b78df5386a9187b27cb4df95f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122991,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T14:40:42.078Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/home-dir-replace-dollar-injection",
+        "head_sha": "289d1822bdd4d9c0e2941b57a1d73cba39f5763c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
