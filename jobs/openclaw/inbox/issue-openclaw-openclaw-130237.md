@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair task maintenance for a discoverable retained store whose owner has a completed deletion journal. First create a failing regression with one healthy store and one deleted-agent store. In preview and apply modes, preserve the deletion fence, maintain the healthy store, and return a clear skipped-store result for the deleted store rather than rejecting the entire command. Keep the repair at the coordinator/result boundary; do not add config, migrations, runtime fallbacks, or CHANGELOG.md edits. Include PR-body release-note context for the CLI reliability change.
+Repair this issue as a focused core bug fix. Preserve the deletion journal and database-lease fence: a deleted agent must remain unable to reclaim its database. At the task session-registry maintenance aggregation boundary, handle only a typed authoritative deleted-owner rejection as a structured skipped-store result and continue healthy discovered stores; propagate every other database-open error. Add regression coverage for preview and apply with one healthy store and one discoverable retained deleted-agent store whose completed journal still fences its identity. Assert healthy maintenance completes, the skipped store is reported, and the deleted store remains untouched/fenced. Do not add config, change SQLite schemas, remove retired-store discovery, or edit CHANGELOG.md; put release-note context in the PR body.
 
 Likely files:
 
 - src/commands/tasks-session-registry-maintenance.ts
 - src/commands/tasks-session-registry-maintenance.test.ts
 - src/config/sessions/session-registry-maintenance.ts
+- src/state/agent-deletion-journal.ts
 
 Validation:
 
 - pnpm test src/commands/tasks-session-registry-maintenance.test.ts
-- pnpm test src/config/sessions/targets.test.ts
-- pnpm check:changed -- src/commands/tasks-session-registry-maintenance.ts src/commands/tasks-session-registry-maintenance.test.ts
+- pnpm test src/commands/tasks.test.ts
+- pnpm test src/config/sessions/session-registry-maintenance.test.ts
 
 ## Operator Prompt
 
