@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T14:00:04.974Z",
+  "updated_at": "2026-08-26T14:00:35.308Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3512:5381521199:2026-08-26T08:46:05Z:clawsweeper_auto_repair",
-      "comment_id": "5381521199",
-      "comment_version_key": "5381521199:2026-08-26T08:46:05Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3512#issuecomment-5381521199",
-      "comment_created_at": "2026-08-22T16:51:50Z",
-      "comment_updated_at": "2026-08-26T08:46:05Z",
-      "comment_body_sha256": "3323b61e07bed68c7a0d537fadb9e51176c0f362d84dde3fb75922980eb68378",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3512,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=14540d18c747a1f7fecdb57a8e286485b086f092)",
-      "expected_head_sha": "14540d18c747a1f7fecdb57a8e286485b086f092",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-26T08:46:51.401Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skills-first-page-error-state",
-        "head_sha": "14540d18c747a1f7fecdb57a8e286485b086f092",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/carapace:73:5313686353:2026-08-26T08:38:22Z:clawsweeper_needs_human",
       "comment_id": "5313686353",
@@ -32562,6 +32529,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111466:5426428745:2026-08-26T13:59:45Z:re_review",
+      "comment_id": "5426428745",
+      "comment_version_key": "5426428745:2026-08-26T13:59:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111466#issuecomment-5426428745",
+      "comment_created_at": "2026-08-26T13:59:45Z",
+      "comment_updated_at": "2026-08-26T13:59:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111466,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T14:00:33.483Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/teams-meetings-reused-tab-listen-probe",
+        "head_sha": "dfe9579a89ceb939e4a94b1f67216796b7ab4057",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
