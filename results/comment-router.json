@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:15:46.518Z",
+  "updated_at": "2026-08-26T03:16:08.053Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116354:5129657580:2026-08-25T23:33:46Z:clawsweeper_needs_human",
-      "comment_id": "5129657580",
-      "comment_version_key": "5129657580:2026-08-25T23:33:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116354#issuecomment-5129657580",
-      "comment_created_at": "2026-07-30T10:30:28Z",
-      "comment_updated_at": "2026-08-25T23:33:46Z",
-      "comment_body_sha256": "f37e5376b3f88015414f3052b69708b71bf8b24611ed1191ee21eda2e870a7eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116354,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing callers that sent malformed values will now receive 400 instead of coercion and agent/provider work; that intentional compatibility correction should be checked against the p... (sha=485f7ae36f645bf345a41fd17ba5c4badef1db4b)",
-      "expected_head_sha": "485f7ae36f645bf345a41fd17ba5c4badef1db4b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T23:38:15.032Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-gateway-api-20260730",
-        "head_sha": "485f7ae36f645bf345a41fd17ba5c4badef1db4b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98539:4853395969:2026-08-25T23:36:40Z:clawsweeper_auto_repair",
       "comment_id": "4853395969",
@@ -32333,6 +32300,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129402:5420065126:2026-08-26T03:15:18Z:re_review",
+      "comment_id": "5420065126",
+      "comment_version_key": "5420065126:2026-08-26T03:15:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129402#issuecomment-5420065126",
+      "comment_created_at": "2026-08-26T03:15:18Z",
+      "comment_updated_at": "2026-08-26T03:15:18Z",
+      "comment_body_sha256": "d18671704643ca0aa1b2bdb3e10a489f8bf0c6a3d630afd7106a5983e024e242",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129402,
+      "author": "ashawwal",
+      "author_id": 62305104,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T03:16:05.123Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-authenticated-hook-context",
+        "head_sha": "f27dd5d796d2dcf99d3a0cc96761d819ea544648",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
