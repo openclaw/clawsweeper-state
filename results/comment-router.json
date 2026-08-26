@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T21:30:48.757Z",
+  "updated_at": "2026-08-26T21:32:32.725Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112820:5427732064:2026-08-26T15:57:23Z:re_review",
-      "comment_id": "5427732064",
-      "comment_version_key": "5427732064:2026-08-26T15:57:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112820#issuecomment-5427732064",
-      "comment_created_at": "2026-08-26T15:57:23Z",
-      "comment_updated_at": "2026-08-26T15:57:23Z",
-      "comment_body_sha256": "3ec90a259ddd6e3643e0a3555c7b8cbab9709173d4491a6fd53be8681f362829",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112820,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T16:32:21.609Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/talk-open-session",
-        "head_sha": "da705764f5967f16f7ef0cc9bf4bbf648237c7b7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128249:5427735651:2026-08-26T15:57:48Z:re_review",
       "comment_id": "5427735651",
@@ -31783,6 +31736,39 @@
         "kind": "pull_request",
         "branch": "fix/wsl-inspection-flake-and-dead-end",
         "head_sha": "c4d68f6dec25b0c40f7e3ef0d25e259593a370a7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1531:5430968962:2026-08-26T21:21:51Z:clawsweeper_needs_human",
+      "comment_id": "5430968962",
+      "comment_version_key": "5430968962:2026-08-26T21:21:51Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1531#issuecomment-5430968962",
+      "comment_created_at": "2026-08-26T20:52:03Z",
+      "comment_updated_at": "2026-08-26T21:21:51Z",
+      "comment_body_sha256": "55b4e062060b02811837888579e45eea1925998abc78b221da5651adacb3d08d",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1531,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied live probe demonstrates the underlying OpenSSH failure and diagnostic separation, but not after-fix Crabbox retry or dire... (sha=e482654558c82edc7945462cdf0730d95c41e575)",
+      "expected_head_sha": "e482654558c82edc7945462cdf0730d95c41e575",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T21:32:32.725Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ssh-mux-backpressure-retry",
+        "head_sha": "e482654558c82edc7945462cdf0730d95c41e575",
         "cluster_id": null,
         "job_path": null
       }
