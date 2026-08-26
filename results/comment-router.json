@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:36:15.321Z",
+  "updated_at": "2026-08-26T03:37:22.412Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:160:5388239471:2026-08-25T23:12:16Z:clawsweeper_needs_human",
-      "comment_id": "5388239471",
-      "comment_version_key": "5388239471:2026-08-25T23:12:16Z",
-      "comment_url": "https://github.com/openclaw/slacrawl/pull/160#issuecomment-5388239471",
-      "comment_created_at": "2026-08-23T20:16:31Z",
-      "comment_updated_at": "2026-08-25T23:12:16Z",
-      "comment_body_sha256": "c970e3b3c33761428f2c99a5495dd3fce3ba4cc7eee6cf865b1781f107eee5cb",
-      "repo": "openclaw/slacrawl",
-      "issue_number": 160,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The read-only review environment could not create a Go module cache, so v0.0.28’s source could not be independently inspected locally; the committed checksum and successful supplied c... (sha=e4bbe2ba8a0ab7912b0a6562973ad8b089705907)",
-      "expected_head_sha": "e4bbe2ba8a0ab7912b0a6562973ad8b089705907",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T00:12:40.059Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/go_modules/github.com/mattn/go-runewidth-0.0.28",
-        "head_sha": "e4bbe2ba8a0ab7912b0a6562973ad8b089705907",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115745:5118102960:2026-08-26T00:07:51Z:clawsweeper_needs_human",
       "comment_id": "5118102960",
@@ -31940,6 +31907,53 @@
         "kind": "pull_request",
         "branch": "fix/subagent-model-policy-preflight",
         "head_sha": "36745231900b16c9026134be32b90d4ebadd2b7a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129762:5420228334:2026-08-26T03:36:37Z:re_review",
+      "comment_id": "5420228334",
+      "comment_version_key": "5420228334:2026-08-26T03:36:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129762#issuecomment-5420228334",
+      "comment_created_at": "2026-08-26T03:36:37Z",
+      "comment_updated_at": "2026-08-26T03:36:37Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129762,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T03:37:20.656Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/file-transfer-exact-approvals",
+        "head_sha": "dcc052a61d03764edd496473ae9ccaefb64dd0bb",
         "cluster_id": null,
         "job_path": null
       },
