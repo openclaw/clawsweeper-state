@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T05:05:59.080Z",
+  "updated_at": "2026-08-26T05:06:05.873Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123055:5277806756:2026-08-26T02:03:19Z:clawsweeper_needs_human",
-      "comment_id": "5277806756",
-      "comment_version_key": "5277806756:2026-08-26T02:03:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123055#issuecomment-5277806756",
-      "comment_created_at": "2026-08-13T08:15:57Z",
-      "comment_updated_at": "2026-08-26T02:03:19Z",
-      "comment_body_sha256": "f3c668389f9247b3ccbd1d45ddf119dc8bc369f9d4c0862d2b9a3baea5ecf770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123055,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The PR changes timeout and release behavior for active session work; required checks are still queued or running for the current head, so merge should wait for exact-head or merge-ref... (sha=c73555ba5d51079cdad13f5403914ba2707c53ed)",
-      "expected_head_sha": "c73555ba5d51079cdad13f5403914ba2707c53ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T02:08:44.949Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/lane-admission-aug13",
-        "head_sha": "c73555ba5d51079cdad13f5403914ba2707c53ed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123459:5289387961:2026-08-26T01:07:43Z:clawsweeper_needs_human",
       "comment_id": "5289387961",
@@ -32129,6 +32096,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114214:5420854238:2026-08-26T05:05:15Z:re_review",
+      "comment_id": "5420854238",
+      "comment_version_key": "5420854238:2026-08-26T05:05:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114214#issuecomment-5420854238",
+      "comment_created_at": "2026-08-26T05:05:15Z",
+      "comment_updated_at": "2026-08-26T05:05:15Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114214,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T05:06:03.950Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-101676-live-model-switch-retry",
+        "head_sha": "d8dfc545f21813d25714259e133c5f56bc2a859e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
