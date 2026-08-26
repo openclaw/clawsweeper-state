@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T02:26:14.249Z",
+  "updated_at": "2026-08-26T02:26:16.433Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129604:5416717165:2026-08-25T21:46:20Z:clawsweeper_needs_human",
-      "comment_id": "5416717165",
-      "comment_version_key": "5416717165:2026-08-25T21:46:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129604#issuecomment-5416717165",
-      "comment_created_at": "2026-08-25T21:00:12Z",
-      "comment_updated_at": "2026-08-25T21:46:20Z",
-      "comment_body_sha256": "d7af22ddb5e789844f358b05dd1bbff6345f8d7bf11458ffbc1bf31375e1e851",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129604,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: after the repair, show that an active full-access run writes successfully and that the nearest release...; Review finding: [P1] Fence full-mode terminal input with the live run — src/agents/tools/terminal-tool.ts:203-205 - [high] Full-mode input outlives run authority — src/agents/tool... (sha=4de21b2c45275459e95b6b606a7ebf7c857d3e0f)",
-      "expected_head_sha": "4de21b2c45275459e95b6b606a7ebf7c857d3e0f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T21:47:09.373Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/terminal-input-permissions",
-        "head_sha": "4de21b2c45275459e95b6b606a7ebf7c857d3e0f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128306:5387559351:2026-08-25T21:48:21Z:clawsweeper_needs_human",
       "comment_id": "5387559351",
@@ -32727,6 +32694,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129777:5419723195:2026-08-26T02:25:31Z:re_review",
+      "comment_id": "5419723195",
+      "comment_version_key": "5419723195:2026-08-26T02:25:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129777#issuecomment-5419723195",
+      "comment_created_at": "2026-08-26T02:25:31Z",
+      "comment_updated_at": "2026-08-26T02:25:31Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129777,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-26T02:26:14.326Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup-aug25-native-source-v2",
+        "head_sha": "65099f388e0c1c3d17d2565463e9b48e9cb66f4b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
