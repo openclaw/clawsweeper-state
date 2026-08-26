@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-130226"
 mode: "autonomous"
-run_id: "33002638795"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33002638795"
+run_id: "33003786154"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33003786154"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-26T20:22:16.663Z"
-canonical: "https://github.com/openclaw/openclaw/issues/130226"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/130226"
+published_at: "2026-08-26T20:32:18.574Z"
+canonical: "#130226"
+canonical_issue: "#130226"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-130226
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33002638795](https://github.com/openclaw/clawsweeper/actions/runs/33002638795)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33003786154](https://github.com/openclaw/clawsweeper/actions/runs/33003786154)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/130226
+Canonical: #130226
 
 ## Summary
 
-Current main confirms the defect: mid-turn preflight stores `promptBudgetBeforeReserve`, but recovery always supplies raw `contextTokenBudget` to forced budget compaction. No files changed: this sandbox is read-only, `../codex` is absent, and Corepack cannot initialize its cache here.
+Blocked before a repair verdict or branch change: the required sibling ../codex source checkout is absent and this read-only worker cannot clone it; dependencies are also unavailable, so the focused Vitest reproduction cannot run. Source inspection identifies the proposed narrow repair seam, but it is not sufficient to bypass the repository’s Codex gate.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,10 @@ Current main confirms the defect: mid-turn preflight stores `promptBudgetBeforeR
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #130226 | fix_needed | planned | canonical | Narrow bug repair required; local implementation is blocked by sandbox constraints. |
-| cluster:issue-openclaw-openclaw-130226 | build_fix_artifact | blocked | canonical | Delegate to a writable executor after refreshing main and completing the required direct sibling Codex inspection. |
-| #119117 | keep_independent | planned | independent | Independent root cause. |
-| #86023 | keep_closed | skipped | related | Historical evidence only. |
+| #130226 | needs_human | blocked | needs_human | Rerun in a writable worker with ../codex cloned and dependencies installed; then implement and validate the narrow recovery-budget change. |
+| #119117 | keep_related | planned | related | Keep open as a separate context-engine lifecycle issue. |
+| #86023 | keep_closed | skipped | related | Closed historical context only; no closure action is valid. |
 
 ## Needs Human
 
-- none
+- Provide a writable repair environment containing sibling ../codex source and installable repository dependencies, then rerun the focused reproduction and repair workflow.

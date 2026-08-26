@@ -1,0 +1,66 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130226",
+  "mode": "autonomous",
+  "run_id": "33003786154",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33003786154",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130226.md",
+  "published_at": "2026-08-26T20:32:18.574Z",
+  "canonical": "#130226",
+  "canonical_issue": "#130226",
+  "canonical_pr": null,
+  "summary": "Blocked before a repair verdict or branch change: the required sibling ../codex source checkout is absent and this read-only worker cannot clone it; dependencies are also unavailable, so the focused Vitest reproduction cannot run. Source inspection identifies the proposed narrow repair seam, but it is not sufficient to bypass the repository’s Codex gate.",
+  "actions": [
+    {
+      "target": "#130226",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#130226",
+      "candidate_fix": null,
+      "reason": "Rerun in a writable worker with ../codex cloned and dependencies installed; then implement and validate the narrow recovery-budget change."
+    },
+    {
+      "target": "#119117",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#130226",
+      "candidate_fix": null,
+      "reason": "Keep open as a separate context-engine lifecycle issue."
+    },
+    {
+      "target": "#86023",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#130226",
+      "candidate_fix": null,
+      "reason": "Closed historical context only; no closure action is valid."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair environment containing sibling ../codex source and installable repository dependencies, then rerun the focused reproduction and repair workflow."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
