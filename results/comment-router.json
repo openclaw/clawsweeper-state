@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-26T03:30:34.551Z",
+  "updated_at": "2026-08-26T03:31:32.585Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120014:5211012925:2026-08-25T23:44:02Z:clawsweeper_needs_human",
-      "comment_id": "5211012925",
-      "comment_version_key": "5211012925:2026-08-25T23:44:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120014#issuecomment-5211012925",
-      "comment_created_at": "2026-08-07T01:35:56Z",
-      "comment_updated_at": "2026-08-25T23:44:02Z",
-      "comment_body_sha256": "9df4ddb6e24ed7ae1a1b1b145fb0b2ad4c0f376062b391baa8abf7f0fc9a6039",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120014,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head CI matrix is still queued or running, so merge readiness remains unproven despite no source-level finding. (sha=62a9e342348250fde12761b24f30af73858eddfd)",
-      "expected_head_sha": "62a9e342348250fde12761b24f30af73858eddfd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-25T23:54:37.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/knip-dlx-layout-isolation-20260806",
-        "head_sha": "62a9e342348250fde12761b24f30af73858eddfd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126457:5348830579:2026-08-25T23:43:54Z:clawsweeper_needs_human",
       "comment_id": "5348830579",
@@ -32217,6 +32184,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116446:5133286180:2026-08-26T03:30:31Z:clawsweeper_needs_human",
+      "comment_id": "5133286180",
+      "comment_version_key": "5133286180:2026-08-26T03:30:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5133286180",
+      "comment_created_at": "2026-07-30T16:03:22Z",
+      "comment_updated_at": "2026-08-26T03:30:31Z",
+      "comment_body_sha256": "35d843f7b3d89193e91e71a24756f48912740c3ba4c16c43b284e0606bc48ec9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Remove the stale Crabline release-age exclusion (P2)** - @openclaw/crabline resolves to 0.1.17 in both the QA Lab manifest and lockfile, but this entry exempts only 0.1.13. The release-age checker matches versio...; Review finding: [P2] Remove the stale Crabline release-age exclusion — pnpm-workspace.yaml:11 - [medium] Unused Crabline release-age exception — pnpm-workspace.yaml:11 (sha=111625a868ac048f8b03950ebe22146762576743)",
+      "expected_head_sha": "111625a868ac048f8b03950ebe22146762576743",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-26T03:31:32.585Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/qa-crabline-discord-0.1.13",
+        "head_sha": "111625a868ac048f8b03950ebe22146762576743",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
