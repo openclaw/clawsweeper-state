@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-26T00:30:43.160Z",
+  "updated_at": "2026-08-26T00:31:38.823Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128997:5414670490:2026-08-25T18:10:34Z:re_review",
-      "comment_id": "5414670490",
-      "comment_version_key": "5414670490:2026-08-25T18:10:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128997#issuecomment-5414670490",
-      "comment_created_at": "2026-08-25T18:10:34Z",
-      "comment_updated_at": "2026-08-25T18:10:34Z",
-      "comment_body_sha256": "b9eaa53fdad560e64158a846104c883c3276c73795540b39033d9e31e76a20ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128997,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review for head 13b12e78 (just pushed: large-19 bash-tools regression fixed in the same diff; evidence comment posted for the rest as main red window). thanks",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-25T18:11:35.296Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-128967-session-truncation-disclosure",
-        "head_sha": "13b12e784078e9564805accf78737d31d5cae010",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129172:5414678224:2026-08-25T18:11:12Z:re_review",
       "comment_id": "5414678224",
@@ -32899,6 +32852,39 @@
         "kind": "pull_request",
         "branch": "codex/provider-exact-claim-lifecycle",
         "head_sha": "75e78abc7facf58a0d90f4eb22ffeda593d8c78f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:332:5387433779:2026-08-26T00:30:48Z:clawsweeper_auto_repair",
+      "comment_id": "5387433779",
+      "comment_version_key": "5387433779:2026-08-26T00:30:48Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/332#issuecomment-5387433779",
+      "comment_created_at": "2026-08-23T17:30:18Z",
+      "comment_updated_at": "2026-08-26T00:30:48Z",
+      "comment_body_sha256": "54df35c27e3decef1bbb33f800fd7f6c7a292e0a2c8c33e3196f494ba39f2fd6",
+      "repo": "openclaw/mcporter",
+      "issue_number": 332,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=37a1ae5e0ff761fd983689ef13eeb50463633cbb)",
+      "expected_head_sha": "37a1ae5e0ff761fd983689ef13eeb50463633cbb",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-26T00:31:38.823Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/generate-cli-flag-grammar",
+        "head_sha": "37a1ae5e0ff761fd983689ef13eeb50463633cbb",
         "cluster_id": null,
         "job_path": null
       }
