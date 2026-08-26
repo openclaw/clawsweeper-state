@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130226",
+  "mode": "autonomous",
+  "run_id": "33019641723",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33019641723",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130226.md",
+  "published_at": "2026-08-26T22:38:07.673Z",
+  "canonical": "#130226",
+  "canonical_issue": "#130226",
+  "canonical_pr": null,
+  "summary": "Current main still has the bug: mid-turn recovery records the reserve-adjusted budget but forwards the raw context budget to forced context-engine compaction. This read-only checkout lacks `tsx`, lacks the required sibling `../codex` source checkout, and cannot create the required code/test edits or PR branch.",
+  "actions": [
+    {
+      "target": "#130226",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130226",
+      "candidate_fix": null,
+      "reason": "A narrow repair is clear, but environment constraints block mandated source inspection, editing, and validation."
+    },
+    {
+      "target": "#130226",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130226",
+      "candidate_fix": null,
+      "reason": "Apply the artifact in a writable dependency-ready checkout."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable checkout with dependencies and the required sibling ../codex source checkout, then apply and validate the narrow fix artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-130226"
 mode: "autonomous"
-run_id: "33016229171"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33016229171"
+run_id: "33019641723"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33019641723"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-26T21:49:33.162Z"
-canonical: "https://github.com/openclaw/openclaw/issues/130226"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/130226"
+published_at: "2026-08-26T22:38:07.673Z"
+canonical: "#130226"
+canonical_issue: "#130226"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-130226
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33016229171](https://github.com/openclaw/clawsweeper/actions/runs/33016229171)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33019641723](https://github.com/openclaw/clawsweeper/actions/runs/33019641723)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/130226
+Canonical: #130226
 
 ## Summary
 
-Confirmed on main aec260b7002cf56232add300f3dd3454c81a10cf: mid-turn preflight preserves the reserve-adjusted budget, but overflow recovery passes raw contextTokenBudget to context-engine compaction. The checkout is read-only, so no branch or validation run could be produced; a narrow, regression-first fix artifact is ready.
+Current main still has the bug: mid-turn recovery records the reserve-adjusted budget but forwards the raw context budget to forced context-engine compaction. This read-only checkout lacks `tsx`, lacks the required sibling `../codex` source checkout, and cannot create the required code/test edits or PR branch.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Confirmed on main aec260b7002cf56232add300f3dd3454c81a10cf: mid-turn preflight p
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ Confirmed on main aec260b7002cf56232add300f3dd3454c81a10cf: mid-turn preflight p
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #130226 | fix_needed | blocked | canonical | Implementation is blocked only by the worker filesystem policy; the defect and narrow owner-boundary repair are clear. |
-| cluster:issue-openclaw-openclaw-130226 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-130226. |
+| #130226 | keep_canonical | planned | canonical | A narrow repair is clear, but environment constraints block mandated source inspection, editing, and validation. |
+| #130226 | build_fix_artifact | blocked | canonical | Apply the artifact in a writable dependency-ready checkout. |
 
 ## Needs Human
 
-- none
+- Provision a writable checkout with dependencies and the required sibling ../codex source checkout, then apply and validate the narrow fix artifact.
