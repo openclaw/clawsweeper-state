@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-20837"
 mode: "autonomous"
-run_id: "33006410580"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33006410580"
+run_id: "33009989581"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33009989581"
 head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-26T19:59:25.919Z"
+published_at: "2026-08-26T21:24:40.931Z"
 canonical: "https://github.com/openclaw/openclaw/issues/20837"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/20837"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33006410580](https://github.com/openclaw/clawsweeper/actions/runs/33006410580)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33009989581](https://github.com/openclaw/clawsweeper/actions/runs/33009989581)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/20837
 
 ## Summary
 
-Current main a665f9ab498dd509789af38b018554267552f352 still hardcodes unknown host/OS/arch in command prompt reconstruction and omits the normal embedded-run runtime metadata. Implementation is blocked because this checkout is read-only (including Corepack’s cache) and required sibling ../codex is absent, so its mandated direct inspection cannot be completed or code/tests changed.
+Static inspection at main a27f7fe56c2868d89a60db534f9dcd041fe2fdda found the command reconstruction hardcoding unknown host/OS/arch and omitting channel metadata. No branch or test result was produced: this worker checkout is read-only, has no dependencies, and the required sibling ../codex checkout is absent.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main a665f9ab498dd509789af38b018554267552f352 still hardcodes unknown ho
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #20837 | fix_needed | blocked | canonical | Repair is source-proven and narrow, but cannot be edited or validated in this read-only checkout. |
-| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | planned | canonical |  |
-| #21271 | keep_closed | skipped | superseded | Already closed. |
+| #20837 | fix_needed | blocked | canonical | A narrow repair path is defined, but implementation and validation are blocked only by this read-only worker environment and the missing required Codex checkout. |
+| #21271 | keep_closed | skipped | superseded | Already closed; retain as credited historical evidence for the new canonical fix. |
+| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | planned | canonical | Create one narrow new fix PR from clawsweeper/issue-openclaw-openclaw-20837 after a writable executor satisfies the direct Codex-source gate and runs validation. |
 
 ## Needs Human
 

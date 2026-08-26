@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-20837",
+  "mode": "autonomous",
+  "run_id": "33009989581",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33009989581",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-20837.md",
+  "published_at": "2026-08-26T21:24:40.931Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/20837",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/20837",
+  "canonical_pr": null,
+  "summary": "Static inspection at main a27f7fe56c2868d89a60db534f9dcd041fe2fdda found the command reconstruction hardcoding unknown host/OS/arch and omitting channel metadata. No branch or test result was produced: this worker checkout is read-only, has no dependencies, and the required sibling ../codex checkout is absent.",
+  "actions": [
+    {
+      "target": "#20837",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "A narrow repair path is defined, but implementation and validation are blocked only by this read-only worker environment and the missing required Codex checkout."
+    },
+    {
+      "target": "#21271",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Already closed; retain as credited historical evidence for the new canonical fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-20837",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Create one narrow new fix PR from clawsweeper/issue-openclaw-openclaw-20837 after a writable executor satisfies the direct Codex-source gate and runs validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
