@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T03:17:23.049Z",
+  "updated_at": "2026-08-27T03:17:48.751Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:141:5387072690:2026-08-26T22:25:22Z:clawsweeper_needs_human",
-      "comment_id": "5387072690",
-      "comment_version_key": "5387072690:2026-08-26T22:25:22Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/141#issuecomment-5387072690",
-      "comment_created_at": "2026-08-23T16:31:01Z",
-      "comment_updated_at": "2026-08-26T22:25:22Z",
-      "comment_body_sha256": "2df1f7b497aa15564717d7accf9ae229fdfa2a3e005f247d7703e893478640b6",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 141,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing JavaScript-fallback consumers that accepted contradictory ZIP metadata will now receive the existing entry-link error; that is the documented and native-backend behavior, but... (sha=3c394571dba4adcb6ecfe3f498530cc804aff626)",
-      "expected_head_sha": "3c394571dba4adcb6ecfe3f498530cc804aff626",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T22:30:18.657Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/zip-link-directory-bit",
-        "head_sha": "3c394571dba4adcb6ecfe3f498530cc804aff626",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1237:5431512110:2026-08-26T22:29:16Z:clawsweeper_auto_repair",
       "comment_id": "5431512110",
@@ -32174,6 +32141,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129702:5433916684:2026-08-27T03:17:04Z:re_review",
+      "comment_id": "5433916684",
+      "comment_version_key": "5433916684:2026-08-27T03:17:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129702#issuecomment-5433916684",
+      "comment_created_at": "2026-08-27T03:17:04Z",
+      "comment_updated_at": "2026-08-27T03:17:04Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129702,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T03:17:46.839Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-compact-ci-lifecycle-129590",
+        "head_sha": "9124ed0f53f29e177a818fb5c39dff6aa2e7eca7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
