@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T12:07:34.642Z",
+  "updated_at": "2026-08-27T12:07:37.776Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121478:5435273346:2026-08-27T06:34:27Z:re_review",
-      "comment_id": "5435273346",
-      "comment_version_key": "5435273346:2026-08-27T06:34:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121478#issuecomment-5435273346",
-      "comment_created_at": "2026-08-27T06:34:27Z",
-      "comment_updated_at": "2026-08-27T06:34:27Z",
-      "comment_body_sha256": "e627de6d47230d11814ff447f83ec2df3c15cec758ce38dbc34f847701290bf7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121478,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T06:57:29.305Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/restart-recovery-paired-session-refs",
-        "head_sha": "a8f9d9026ae5ed6944fb3650a72d9a9ea8f595f8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121478:5236878034:2026-08-27T06:54:00Z:clawsweeper_auto_repair",
       "comment_id": "5236878034",
@@ -32030,6 +31983,39 @@
         "kind": "pull_request",
         "branch": "steipete/channels-json-inventory-20260827",
         "head_sha": "9fdeb00d1e6333616427c8877b82f3f867b6a975",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130889:5438827927:2026-08-27T12:06:43Z:clawsweeper_needs_human",
+      "comment_id": "5438827927",
+      "comment_version_key": "5438827927:2026-08-27T12:06:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130889#issuecomment-5438827927",
+      "comment_created_at": "2026-08-27T12:06:43Z",
+      "comment_updated_at": "2026-08-27T12:06:43Z",
+      "comment_body_sha256": "cec3e83579482e8a686778567bfe28349cd744c990e37426dc399888cf0790f9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130889,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies compilation and lint output but no after-fix Android runtime proof. Please attach redacted emulator or device evidence showing... (sha=34f43c25da583b506166dfd345bd948d6c259a7a)",
+      "expected_head_sha": "34f43c25da583b506166dfd345bd948d6c259a7a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T12:07:37.776Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-config-changed",
+        "head_sha": "34f43c25da583b506166dfd345bd948d6c259a7a",
         "cluster_id": null,
         "job_path": null
       }
