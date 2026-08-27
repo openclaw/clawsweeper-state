@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T21:35:04.141Z",
+  "updated_at": "2026-08-27T21:35:21.194Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/Trimmy:31:5440889262:2026-08-27T14:50:42Z:re_review",
-      "comment_id": "5440889262",
-      "comment_version_key": "5440889262:2026-08-27T14:50:42Z",
-      "comment_url": "https://github.com/steipete/Trimmy/pull/31#issuecomment-5440889262",
-      "comment_created_at": "2026-08-27T14:50:42Z",
-      "comment_updated_at": "2026-08-27T14:50:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/Trimmy",
-      "issue_number": 31,
-      "author": "rewtraw",
-      "author_id": 1424776,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T14:58:41.460Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/automatic-text-reflow",
-        "head_sha": "eb3d9527c5f525f6f5da4f348289f6bee94974c0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/Trimmy:31:5428775983:2026-08-27T14:57:51Z:clawsweeper_auto_repair",
       "comment_id": "5428775983",
@@ -32039,6 +31992,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/control-ui-tool-activity-groups",
         "head_sha": "fc0036e17255c06b6b42022b302776afc83ee4ed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129324:5410897900:2026-08-27T21:34:05Z:clawsweeper_needs_human",
+      "comment_id": "5410897900",
+      "comment_version_key": "5410897900:2026-08-27T21:34:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129324#issuecomment-5410897900",
+      "comment_created_at": "2026-08-25T13:13:47Z",
+      "comment_updated_at": "2026-08-27T21:34:05Z",
+      "comment_body_sha256": "102fe205e6cea2174d5f2e5032bde0a0d0dcfb15c90ced32cbabaf0b7030b535",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129324,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A fixed 512-level ceiling can reject previously parseable deep configuration, include, manifest, plan, or catalog files without an explicit upgrade or recovery contract. (sha=2e61992ae4d80da37281e14f08665e41f1526634)",
+      "expected_head_sha": "2e61992ae4d80da37281e14f08665e41f1526634",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T21:35:21.194Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/129209-json-nesting-stack-overflow",
+        "head_sha": "2e61992ae4d80da37281e14f08665e41f1526634",
         "cluster_id": null,
         "job_path": null
       }
