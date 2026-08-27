@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T01:22:55.596Z",
+  "updated_at": "2026-08-27T01:24:22.307Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130166:5430348897:2026-08-26T19:52:49Z:re_review",
-      "comment_id": "5430348897",
-      "comment_version_key": "5430348897:2026-08-26T19:52:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130166#issuecomment-5430348897",
-      "comment_created_at": "2026-08-26T19:52:49Z",
-      "comment_updated_at": "2026-08-26T19:52:49Z",
-      "comment_body_sha256": "57bbac9d5cfd93e9e37ad44588defb9fd11994faf18cb3f096434c89ecef1be6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130166,
-      "author": "hartmark",
-      "author_id": 12826053,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T19:53:49.495Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/heartbeat-cron-inbound-metadata-continuation-stability",
-        "head_sha": "ad5ff5811090d720906f2b69d11d10b2aef9aa5e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1234:5430350219:2026-08-26T19:52:57Z:clawsweeper_needs_human",
       "comment_id": "5430350219",
@@ -32609,6 +32562,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-wiki-source-ownership-scope",
         "head_sha": "8e175cb6f0e32b414f3b7fbf22a8eec8409d6827",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113115:5143882966:2026-08-27T01:23:22Z:clawsweeper_needs_human",
+      "comment_id": "5143882966",
+      "comment_version_key": "5143882966:2026-08-27T01:23:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113115#issuecomment-5143882966",
+      "comment_created_at": "2026-07-31T14:19:34Z",
+      "comment_updated_at": "2026-08-27T01:23:22Z",
+      "comment_body_sha256": "53bec39f6cee509e16975d70e9ca9b8bcdf1efa4a878ae3697840d5cb422203f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113115,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Remove the package export for the Matrix finalization bridge (P1)** - This export lets any installed JavaScript plugin import the supposedly private bridge and call its binder, which mints a host-recognized toke...; Review finding: [P1] Remove the package export for the Matrix finalization bridge — package.json:1282-1284 - [medium] Package export exposes a private delivery control — package.j... (sha=c19a8be38decd5682ff93fd9769d915e4bffa4c1)",
+      "expected_head_sha": "c19a8be38decd5682ff93fd9769d915e4bffa4c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T01:24:22.307Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/matrix-pr73455-port-20260723",
+        "head_sha": "c19a8be38decd5682ff93fd9769d915e4bffa4c1",
         "cluster_id": null,
         "job_path": null
       }
