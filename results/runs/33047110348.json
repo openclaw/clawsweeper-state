@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-20837",
+  "mode": "autonomous",
+  "run_id": "33047110348",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33047110348",
+  "head_sha": "ff813ac2fa76d853d8a9129e6763d09624cafe72",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-20837.md",
+  "published_at": "2026-08-27T07:06:07.661Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/20837",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/20837",
+  "canonical_pr": null,
+  "summary": "#20837 remains the canonical open bug. Current checkout source shows the command prompt reconstruction omits runtime channel metadata, but implementation is blocked because the read-only, shallow checkout does not contain the preflight main SHA and has no dependencies or required ../codex checkout.",
+  "actions": [
+    {
+      "target": "#20837",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "A fresh writable checkout at the preflight/latest main SHA is required before the failing regression can be added and validated."
+    },
+    {
+      "target": "#21271",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Historical implementation context; do not revive or close it from this lane."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-20837",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Executor must first obtain a writable, current main checkout with dependencies and the mandated sibling Codex source available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#20837",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

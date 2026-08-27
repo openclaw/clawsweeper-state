@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-20837"
 mode: "autonomous"
-run_id: "33038640770"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33038640770"
-head_sha: "387cf82c7eba81fa6dfd1cff12765cf2c2d80a27"
+run_id: "33047110348"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33047110348"
+head_sha: "ff813ac2fa76d853d8a9129e6763d09624cafe72"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-27T05:28:15.440Z"
+published_at: "2026-08-27T07:06:07.661Z"
 canonical: "https://github.com/openclaw/openclaw/issues/20837"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/20837"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33038640770](https://github.com/openclaw/clawsweeper/actions/runs/33038640770)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33047110348](https://github.com/openclaw/clawsweeper/actions/runs/33047110348)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/20837
 
 ## Summary
 
-Current main (110eb787a14e7a43bdcb91c5aa0fd8794d3d5478) still drops normal-run channel/runtime metadata when reconstructing prompts for /context fallback and /export-session. A narrow credited fix PR is appropriate, but this read-only checkout lacks node_modules and the required ../codex source checkout, so the worker cannot implement or validate it locally.
+#20837 remains the canonical open bug. Current checkout source shows the command prompt reconstruction omits runtime channel metadata, but implementation is blocked because the read-only, shallow checkout does not contain the preflight main SHA and has no dependencies or required ../codex checkout.
 
 ## Impact
 
@@ -44,7 +44,7 @@ Current main (110eb787a14e7a43bdcb91c5aa0fd8794d3d5478) still drops normal-run c
 | Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,6 @@ Current main (110eb787a14e7a43bdcb91c5aa0fd8794d3d5478) still drops normal-run c
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests [check:changed] src/auto-reply/reply/commands-system-prompt.test.ts: core test [check:changed] src/auto-reply/reply/commands-system-prompt.ts: core production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] max-lines suppression ratchet $ node --import tsx scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import tsx scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import tsx scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import tsx scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import tsx scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import tsx scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] coercion helper declaration guard $ node --import tsx scripts/check-coercion-helper-declarations.mts [check:changed] dependency pin guard $ node --import tsx scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- src/auto-reply/reply/commands-system-prompt.test.ts src/auto-reply/reply/commands-system-prompt.ts [check:changed] deprecated API usage $ node --import tsx scripts/check-deprecated-api-usage.mts [check:changed] plugin boundaries $ node --import tsx scripts/plugin-boundary-report.ts --summary --fail-on-eligible-compat [check:changed] wrapper shadowing $ node --import tsx scripts/check-wrapper-shadowing.mts [check:changed] package patch guard $ node --import tsx scripts/check-package-patches.mts [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) deadcode production unused-export scan produced no export sections. [ERR_PNPM_NO_OFFLINE_META] Failed to resolve knip@6.32.2 in package mirror /tmp/clawsweeper-target-user-JTLZ8F/cache/pnpm/v11/metadata-full-filtered/registry.npmjs.org/knip.jsonl [check:changed] summary 338ms ok conflict markers 14.44s ok max-lines suppression ratchet 6.79s ok assertion SAFETY comment ratchet 299ms ok changelog attributions 295ms ok doctor deprecation registry 317ms ok guarded extension wildcard re-exports 313ms ok plugin-sdk wildcard re-exports 359ms ok duplicate scan target coverage 9.57s ok coercion helper declaration guard 354ms ok dependency pin guard 304ms ok format changed files 5.36s ok deprecated API usage 950ms ok plugin boundaries 3.81s ok wrapper shadowing 541ms ok package patch guard 357ms failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [check:changed] FAILED (exit 1) max-lines ratchet OK: 891 grandfathered suppressions. OPENCLAW_* count 501/501 assertion SAFETY ratchet OK: 4232 files, 13220 grandfathered assertions. [doctor-deprecation-registry] OK as of 2026-08-27 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok Coercion helper declaration guard passed (106 allowlisted declarations). PASS direct dependency pin guard: checked 633 directly declared dependency specs across 180 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 12ms on 2 files using 4 threads. deprecated API usage guard passed Plugin Boundary Report compat deprecated=23 eligibleForRemoval=0 removalPending=3 removalPendingDue=0 removal-pending 2026-09-30 plugin-sdk-media-understanding-public-demotion due=false blocker=`api.registerMediaUnderstandingProvider(...)` with provider-owned request helpers and types from `openclaw/plugin-sdk/plugin-entry`; retain the public subpath through the 2026-09-30 window while official plugin consumers migrate readerRefs=44 readers=extensions/anthropic/media-understanding-provider.ts,extensions/browser/src/browser/vision.ts,extensions/browser/src/sdk-setup-tools.ts,extensions/codex/media-understanding-provider.ts,extensions/deepgram/audio.ts removal-pending 2026-09-30 plugin-sdk-memory-host-core-public-demotion due=false blocker=host-prepared memory prompts via `openclaw/plugin-sdk/core` and memory capability registration through the injected plugin API; retain the facade through the 2026-09-30 window and until a focused public-artifact read seam exists readerRefs=23 readers=extensions/active-memory/index.test.ts,extensions/active-memory/index.ts,extensions/codex/src/app-server/attempt-context.test.ts,extensions/memory-core/src/memory-get-corpus.test.ts,extensions/memory-core/src/public-artifacts.ts removal-pending 2026-12-01 plugin-sdk-plugin-config-runtime-public-demotion due=false blocker=`api.pluginConfig`, runtime tool context config, and focused `config-contracts`, `runtime-config-snapshot`, or `config-mutation` subpaths; retain the public subpath through the 2026-12-01 window while official plugin consumers migrate readerRefs=58 readers=extensions/active-memory/index.ts,extensions/active-memory/session-policy.ts,extensions/amazon-bedrock-mantle/register.sync.runtime.ts,extensions/amazon-bedrock/register.sync.runtime.ts,extensions/browser/src/sdk-config.ts plugin-sdk entrypoints=339 supportedBundledFacade=2 publicPluginOwned=1 memory-host-sdk implementation=private-package-core-integrated private=true exports=10 sourceBridgeFiles=0 coreReferenceFiles=11 wrapper shadowing guard passed. PASS package patch guard: no new pnpm patches; 2 approved patches allowlisted. [ELIFECYCLE] Command failed with exit code 1. |
 | issue_implementation_status_comment | updated | #20837 |  |  |
 
 ## Apply Actions
@@ -67,9 +66,9 @@ Current main (110eb787a14e7a43bdcb91c5aa0fd8794d3d5478) still drops normal-run c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #20837 | fix_needed | blocked | canonical | The bug is source-reproducible and has a narrow owner-boundary repair, but local implementation and validation are blocked by the read-only environment, missing dependencies, and absent required Codex source checkout. |
-| #21271 | keep_closed | skipped | superseded | Already closed; no closure or mutation is permitted for this historical source PR. |
-| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | planned | canonical | Prepare a new narrow PR after the executor restores dependencies and completes the required Codex source inspection. |
+| #20837 | fix_needed | blocked | canonical | A fresh writable checkout at the preflight/latest main SHA is required before the failing regression can be added and validated. |
+| #21271 | keep_closed | skipped | related | Historical implementation context; do not revive or close it from this lane. |
+| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | blocked | canonical | Executor must first obtain a writable, current main checkout with dependencies and the mandated sibling Codex source available. |
 
 ## Needs Human
 
