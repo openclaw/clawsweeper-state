@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130983",
+  "mode": "autonomous",
+  "run_id": "33085036328",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33085036328",
+  "head_sha": "cab813112d6fbba18ce7876bbe016d7dbd618bc0",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130983.md",
+  "published_at": "2026-08-27T15:13:02.828Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130983",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130983",
+  "canonical_pr": null,
+  "summary": "#130983 remains the open canonical bug. Current main is 671e41a8773bb9df6f044372fe227f7415a45b38, but implementation is blocked: the required sibling ../codex source checkout is absent and this read-only worker cannot clone it; local dependencies are also absent, so the mandated reproduction and validation commands fail resolving tsx.",
+  "actions": [
+    {
+      "target": "#130983",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130983",
+      "candidate_fix": null,
+      "reason": "Do not implement or open a PR until an executor with the required ../codex checkout and installed dependencies can reproduce the failing boundary test and validate the owner-boundary repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130983",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130983",
+      "candidate_fix": null,
+      "reason": "Narrow new-PR plan is ready, but its implementation and proof are blocked by the unavailable Codex sibling checkout and missing tsx dependency."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#130983",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
