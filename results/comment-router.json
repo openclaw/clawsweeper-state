@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T04:47:20.696Z",
+  "updated_at": "2026-08-27T04:48:16.922Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:90703:4763627421:2026-06-21T23:30:58Z:re_review",
-      "comment_id": "4763627421",
-      "comment_version_key": "4763627421:2026-06-21T23:30:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90703#issuecomment-4763627421",
-      "comment_created_at": "2026-06-21T23:30:58Z",
-      "comment_updated_at": "2026-06-21T23:30:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90703,
-      "author": "Alex-Govorov",
-      "author_id": 17878677,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T00:55:52.499Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:90703:4765975177:2026-06-22T07:37:57Z:re_review",
       "comment_id": "4765975177",
@@ -31830,6 +31803,39 @@
       "status": "skipped",
       "processed_at": "2026-08-27T04:47:20.696Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129575:5416289138:2026-08-27T04:47:28Z:clawsweeper_needs_human",
+      "comment_id": "5416289138",
+      "comment_version_key": "5416289138:2026-08-27T04:47:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129575#issuecomment-5416289138",
+      "comment_created_at": "2026-08-25T20:24:38Z",
+      "comment_updated_at": "2026-08-27T04:47:28Z",
+      "comment_body_sha256": "3bc5f1fc0ee780f4466f53c53b44857046bef901898d5be9da4f74383b17b008",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129575,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This refactor changes the provider-auth selection used by current Parallels smoke runs; the stated W1B controller admission remains intentionally outside this staged PR, so its frozen... (sha=c3cf13ab8e907702bb8721987018948ac2595edc)",
+      "expected_head_sha": "c3cf13ab8e907702bb8721987018948ac2595edc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T04:48:16.922Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-parallels-prerequisite",
+        "head_sha": "c3cf13ab8e907702bb8721987018948ac2595edc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
