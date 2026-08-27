@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T21:45:39.287Z",
+  "updated_at": "2026-08-27T21:45:41.604Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111277:5440776005:2026-08-27T14:42:11Z:re_review",
-      "comment_id": "5440776005",
-      "comment_version_key": "5440776005:2026-08-27T14:42:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111277#issuecomment-5440776005",
-      "comment_created_at": "2026-08-27T14:42:11Z",
-      "comment_updated_at": "2026-08-27T14:42:11Z",
-      "comment_body_sha256": "dd3ae5c29be6e3ecd6aa4ff2e8d90fc74cdf2bceb35dbf2ef3207fe55560d5e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111277,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T15:04:25.961Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/problem-github-copilot-login-leaves-failed-response-streams-open",
-        "head_sha": "6bc8e4987e8fab4e83378e499f9c94dcd671a561",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114900:5099659551:2026-08-27T14:59:15Z:clawsweeper_needs_human",
       "comment_id": "5099659551",
@@ -32023,6 +31976,39 @@
         "kind": "pull_request",
         "branch": "xlinush/cleanup-launcher-workflow",
         "head_sha": "07ea449498dc5852025454544f7cafe12446e901",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2457:5081410241:2026-08-27T21:43:38Z:clawsweeper_needs_human",
+      "comment_id": "5081410241",
+      "comment_version_key": "5081410241:2026-08-27T21:43:38Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5081410241",
+      "comment_created_at": "2026-07-26T01:33:07Z",
+      "comment_updated_at": "2026-08-27T21:43:38Z",
+      "comment_body_sha256": "330130bde98a180f2ff8079c51168fc3d0a7b040224dfa756f24d8c167a66ee2",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging adds a persistent integration setting, destructive queue consumption, and cost-cache migration/cleanup behavior across 70 files; the supplied proof covers routed output and re... (sha=ff946d2c34fac00b742625bbcd2929ff7ed05259)",
+      "expected_head_sha": "ff946d2c34fac00b742625bbcd2929ff7ed05259",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T21:45:41.604Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "task/ec/codex-proxy-attribution",
+        "head_sha": "ff946d2c34fac00b742625bbcd2929ff7ed05259",
         "cluster_id": null,
         "job_path": null
       }
