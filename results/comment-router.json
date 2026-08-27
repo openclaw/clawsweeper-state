@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T17:40:34.855Z",
+  "updated_at": "2026-08-27T17:41:39.514Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130877:5437893744:2026-08-27T12:16:27Z:clawsweeper_needs_human",
-      "comment_id": "5437893744",
-      "comment_version_key": "5437893744:2026-08-27T12:16:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130877#issuecomment-5437893744",
-      "comment_created_at": "2026-08-27T10:46:24Z",
-      "comment_updated_at": "2026-08-27T12:16:27Z",
-      "comment_body_sha256": "dde301f28878aa978f1c1614cde99f63b1395df228a896ce130ce74e39adfcf4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130877,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 99 net lines for export-only limits; that growth is bounded to the two distinct typed SQLite readers and no existing shared constrained-row reader covers both... (sha=28cbcce30ff49bb8aede53e4f248c4237974d59a)",
-      "expected_head_sha": "28cbcce30ff49bb8aede53e4f248c4237974d59a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T12:17:59.224Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/trajectory-sqlite-byte-budget-127433",
-        "head_sha": "28cbcce30ff49bb8aede53e4f248c4237974d59a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128249:5386792928:2026-08-27T12:13:39Z:clawsweeper_auto_repair",
       "comment_id": "5386792928",
@@ -31926,6 +31893,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128748:5442931305:2026-08-27T17:40:52Z:re_review",
+      "comment_id": "5442931305",
+      "comment_version_key": "5442931305:2026-08-27T17:40:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128748#issuecomment-5442931305",
+      "comment_created_at": "2026-08-27T17:40:52Z",
+      "comment_updated_at": "2026-08-27T17:40:52Z",
+      "comment_body_sha256": "cdff0161bb6b82a6ce8a963f51d39f6eca860b2d066195106639fad5eeab1492",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128748,
+      "author": "Synthetic2802",
+      "author_id": 45599846,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T17:41:37.445Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-file-change-after-hook-current",
+        "head_sha": "ed84288695cbc25c9f9b3c66b28410e1b39f95a5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
