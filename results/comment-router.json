@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T07:29:34.234Z",
+  "updated_at": "2026-08-27T07:32:27.249Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128141:5407763287:2026-08-25T08:43:11Z:re_review",
-      "comment_id": "5407763287",
-      "comment_version_key": "5407763287:2026-08-25T08:43:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128141#issuecomment-5407763287",
-      "comment_created_at": "2026-08-25T08:43:11Z",
-      "comment_updated_at": "2026-08-25T08:43:11Z",
-      "comment_body_sha256": "c15a5c837eb5f93389d94cceddb4bfb164a7c3a57f88d96f14acc1d985091ea9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128141,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T04:07:50.374Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128141:5415500967:2026-08-25T19:19:20Z:re_review",
       "comment_id": "5415500967",
@@ -31435,6 +31408,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1259:5434890771:2026-08-27T07:26:16Z:clawsweeper_needs_human",
+      "comment_id": "5434890771",
+      "comment_version_key": "5434890771:2026-08-27T07:26:16Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1259#issuecomment-5434890771",
+      "comment_created_at": "2026-08-27T05:43:52Z",
+      "comment_updated_at": "2026-08-27T07:26:16Z",
+      "comment_body_sha256": "1796d23ef18e81d545b796c685f91a82f6fe76614eab429a100e0f3b542bd1e8",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1259,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A previously generated terminal plan that still repeats its entry as the first run will now execute twice and can correctly trip a non-overwrite guard instead of being silently rewrit... (sha=a08acddf53cc688d4fd38206898fb35023c9c1f6)",
+      "expected_head_sha": "a08acddf53cc688d4fd38206898fb35023c9c1f6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T07:32:27.249Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/terminal-proof-planning-20260827",
+        "head_sha": "a08acddf53cc688d4fd38206898fb35023c9c1f6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
