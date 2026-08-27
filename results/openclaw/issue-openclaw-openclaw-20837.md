@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-20837"
 mode: "autonomous"
-run_id: "33047110348"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33047110348"
+run_id: "33048205911"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33048205911"
 head_sha: "ff813ac2fa76d853d8a9129e6763d09624cafe72"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-27T07:06:07.661Z"
+published_at: "2026-08-27T07:17:38.972Z"
 canonical: "https://github.com/openclaw/openclaw/issues/20837"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/20837"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33047110348](https://github.com/openclaw/clawsweeper/actions/runs/33047110348)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33048205911](https://github.com/openclaw/clawsweeper/actions/runs/33048205911)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/20837
 
 ## Summary
 
-#20837 remains the canonical open bug. Current checkout source shows the command prompt reconstruction omits runtime channel metadata, but implementation is blocked because the read-only, shallow checkout does not contain the preflight main SHA and has no dependencies or required ../codex checkout.
+#20837 remains the canonical open bug. Current main reconstructs command prompts with host/os/arch set to "unknown" and omits normalized channel, account-aware capabilities, channel actions, message guidance, and shell. Implementation is blocked before code changes because the mandatory sibling ../codex source is absent and this read-only worker cannot clone it or modify the checkout.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/20837
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #20837 | fix_needed | blocked | canonical | A fresh writable checkout at the preflight/latest main SHA is required before the failing regression can be added and validated. |
-| #21271 | keep_closed | skipped | related | Historical implementation context; do not revive or close it from this lane. |
-| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | blocked | canonical | Executor must first obtain a writable, current main checkout with dependencies and the mandated sibling Codex source available. |
+| #20837 | fix_needed | blocked | canonical | Do not modify or validate the branch until the Codex hard gate is satisfiable. |
+| #21271 | keep_closed | skipped | superseded | Historical evidence only; no mutation is permitted for an already-closed pull request. |
+| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | blocked | canonical | Implementation and regression validation are blocked by the missing mandatory Codex sibling source and read-only checkout. |
 
 ## Needs Human
 
