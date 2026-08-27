@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T01:41:56.759Z",
+  "updated_at": "2026-08-27T01:42:04.775Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129426:5430226894:2026-08-26T19:41:11Z:re_review",
-      "comment_id": "5430226894",
-      "comment_version_key": "5430226894:2026-08-26T19:41:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129426#issuecomment-5430226894",
-      "comment_created_at": "2026-08-26T19:41:11Z",
-      "comment_updated_at": "2026-08-26T19:41:11Z",
-      "comment_body_sha256": "c36fa8b7df91acc736b579b7ab0410c98c967bc458d5e893296d08f4d7b9902e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129426,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T20:08:59.820Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-hidden-turn-history-replies-20260825",
-        "head_sha": "55270f5cb040564ba995363151302594ae7854c4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130358:5430543874:2026-08-26T20:11:10Z:re_review",
       "comment_id": "5430543874",
@@ -32798,6 +32751,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116302:5128286439:2026-08-27T01:35:26Z:clawsweeper_needs_human",
+      "comment_id": "5128286439",
+      "comment_version_key": "5128286439:2026-08-27T01:35:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116302#issuecomment-5128286439",
+      "comment_created_at": "2026-07-30T08:10:40Z",
+      "comment_updated_at": "2026-08-27T01:35:26Z",
+      "comment_body_sha256": "51b3221101826c2caa85de78c8a683e2d89a1f0a2f96bcefbaa726d8038ba9b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116302,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body demonstrates the unbound setup-verification RPC, but not a full bound openclaw.chat session; source and regression coverage support its revalidation path, yet an end-to-en... (sha=3e7166ba41b1f5bf4de8a1a0c1e45702d86ad214)",
+      "expected_head_sha": "3e7166ba41b1f5bf4de8a1a0c1e45702d86ad214",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T01:42:04.775Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/115062-secretref-setup-inference",
+        "head_sha": "3e7166ba41b1f5bf4de8a1a0c1e45702d86ad214",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
