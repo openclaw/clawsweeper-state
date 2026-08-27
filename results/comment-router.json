@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T02:15:25.542Z",
+  "updated_at": "2026-08-27T02:15:46.133Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124576:5307508448:2026-08-26T21:32:32Z:clawsweeper_needs_human",
-      "comment_id": "5307508448",
-      "comment_version_key": "5307508448:2026-08-26T21:32:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124576#issuecomment-5307508448",
-      "comment_created_at": "2026-08-16T12:47:36Z",
-      "comment_updated_at": "2026-08-26T21:32:32Z",
-      "comment_body_sha256": "c6b850951de0cb6d0402c96eeeaf9f12261a6c77cd8d380876acab84b8953afa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124576,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes interpretation of persisted diagnostics from released builds; rebase and exact-head validation must confirm it composes with later installed-index changes on main. (sha=5fdad32876f539aa906e7e34d5a4c368bf0f3ee5)",
-      "expected_head_sha": "5fdad32876f539aa906e7e34d5a4c368bf0f3ee5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T21:38:04.835Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/duplicate-plugin-warning-show-overridden-path",
-        "head_sha": "5fdad32876f539aa906e7e34d5a4c368bf0f3ee5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124576:5307821853:2026-08-16T14:04:10Z:re_review",
       "comment_id": "5307821853",
@@ -31880,6 +31847,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128169:5433504071:2026-08-27T02:15:06Z:re_review",
+      "comment_id": "5433504071",
+      "comment_version_key": "5433504071:2026-08-27T02:15:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128169#issuecomment-5433504071",
+      "comment_created_at": "2026-08-27T02:15:06Z",
+      "comment_updated_at": "2026-08-27T02:15:06Z",
+      "comment_body_sha256": "b0f478a086d0fcdab5ab14caf7431f659cfe65783143c30933947cba6ad317f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128169,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T02:15:44.331Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-acp-configured-binding-thinking-128145",
+        "head_sha": "ab915c0e30dd02f9ef9bde426ac8f2425964306e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
