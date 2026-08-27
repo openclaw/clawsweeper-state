@@ -1,0 +1,120 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131104",
+  "mode": "autonomous",
+  "run_id": "33102945510",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33102945510",
+  "head_sha": "7f9e3f99e312dc14e17084e66f23c1590e559b9e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131104.md",
+  "published_at": "2026-08-27T18:38:22.905Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131104",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131104",
+  "canonical_pr": null,
+  "summary": "#131104 remains the canonical focused bug. Source inspection identifies the configured-refresh branch that stays read-only without a wildcard, but implementation is blocked: the mandatory sibling ../codex source checkout is absent and this worker cannot create it in the read-only sandbox. No code, GitHub mutation, or validation run was performed.",
+  "actions": [
+    {
+      "target": "#10687",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct broader work; leave open."
+    },
+    {
+      "target": "#74481",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct product decision; leave open."
+    },
+    {
+      "target": "#118465",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent broad draft PR."
+    },
+    {
+      "target": "#129307",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#129626",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; unrelated."
+    },
+    {
+      "target": "#129878",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; relevant predecessor evidence only."
+    },
+    {
+      "target": "#130706",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent broad PR with unresolved failures."
+    },
+    {
+      "target": "#131104",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131104",
+      "candidate_fix": null,
+      "reason": "A direct implementation verdict and code change require the missing mandatory Codex source inspection."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131104",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131104",
+      "candidate_fix": null,
+      "reason": "Executor may implement only after satisfying the mandatory Codex source gate."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 2,
+    "keep_independent": 2,
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 5,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
