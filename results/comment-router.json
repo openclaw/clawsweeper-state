@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T15:40:42.227Z",
+  "updated_at": "2026-08-27T15:41:10.034Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127290:5372934610:2026-08-27T07:20:11Z:clawsweeper_needs_human",
-      "comment_id": "5372934610",
-      "comment_version_key": "5372934610:2026-08-27T07:20:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127290#issuecomment-5372934610",
-      "comment_created_at": "2026-08-21T17:08:34Z",
-      "comment_updated_at": "2026-08-27T07:20:11Z",
-      "comment_body_sha256": "77fdca7ea77c970f6278e586d56e3afc2dfc46869e58d8deb94ed9c532fd1967",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127290,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head release and plugin-prerelease aggregate checks are failing; without their logs or a successful frozen-candidate trace, merging could leave the intended release validation b... (sha=afc3535d2585ffeabb7c2fc00969b236045f2a20)",
-      "expected_head_sha": "afc3535d2585ffeabb7c2fc00969b236045f2a20",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T09:41:08.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/beta3-tooling-manifest-unblock-20260821",
-        "head_sha": "afc3535d2585ffeabb7c2fc00969b236045f2a20",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127745:5377235080:2026-08-27T08:38:14Z:clawsweeper_auto_repair",
       "comment_id": "5377235080",
@@ -32441,6 +32408,53 @@
         "kind": "pull_request",
         "branch": "fix/stall-aware-resume-breaker-122950",
         "head_sha": "f8ef07436a04ebf4667457145177966f86487724",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128783:5441533953:2026-08-27T15:39:55Z:re_review",
+      "comment_id": "5441533953",
+      "comment_version_key": "5441533953:2026-08-27T15:39:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128783#issuecomment-5441533953",
+      "comment_created_at": "2026-08-27T15:39:55Z",
+      "comment_updated_at": "2026-08-27T15:39:55Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128783,
+      "author": "damemi",
+      "author_id": 1839101,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T15:41:07.301Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/acp-plugin-approvals",
+        "head_sha": "280c89af76810bb6ffb00ac6526c1a7de1aa5db3",
         "cluster_id": null,
         "job_path": null
       },
