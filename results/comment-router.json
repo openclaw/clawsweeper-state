@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T07:10:51.121Z",
+  "updated_at": "2026-08-27T07:11:03.075Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112362:5434071494:2026-08-27T03:40:49Z:re_review",
-      "comment_id": "5434071494",
-      "comment_version_key": "5434071494:2026-08-27T03:40:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112362#issuecomment-5434071494",
-      "comment_created_at": "2026-08-27T03:40:49Z",
-      "comment_updated_at": "2026-08-27T03:40:49Z",
-      "comment_body_sha256": "c6faca5993275e1d283986a540df5f4120b4b6c1346ec188331a88659aca8e56",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112362,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T03:41:26.923Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pr-skills-bypass-config-guard",
-        "head_sha": "82da54d5f06f68f53bf0acffa2fb7b5604bf0f28",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130588:5434079287:2026-08-27T03:42:04Z:re_review",
       "comment_id": "5434079287",
@@ -31434,6 +31387,39 @@
         "kind": "pull_request",
         "branch": "steipete/sqlite-widerow-v13",
         "head_sha": "f88768764d5585237894442a0773d50c786262ed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-08-27T07:03:22Z:clawsweeper_needs_human",
+      "comment_id": "5075679870",
+      "comment_version_key": "5075679870:2026-08-27T07:03:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112811#issuecomment-5075679870",
+      "comment_created_at": "2026-07-24T23:58:02Z",
+      "comment_updated_at": "2026-08-27T07:03:22Z",
+      "comment_body_sha256": "a8fca6e686104c13a7b5238c3c5eb530eb392dc15d025c0322e4f19832eb290a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112811,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: supplied two-bot evidence does not show on the current head both authorized issuing-account approval a...; Review finding: [medium] Prove approval effects stay on the issuing account — extensions/msteams/src/approval-card-submit.ts:53 (sha=08dd16b5cc1536fb7e100e1f337b001815406828)",
+      "expected_head_sha": "08dd16b5cc1536fb7e100e1f337b001815406828",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T07:11:03.075Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/msteams-multi-account-replacement-20260722",
+        "head_sha": "08dd16b5cc1536fb7e100e1f337b001815406828",
         "cluster_id": null,
         "job_path": null
       }
