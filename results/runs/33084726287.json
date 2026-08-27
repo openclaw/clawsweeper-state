@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130981",
+  "mode": "autonomous",
+  "run_id": "33084726287",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33084726287",
+  "head_sha": "cab813112d6fbba18ce7876bbe016d7dbd618bc0",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130981.md",
+  "published_at": "2026-08-27T15:27:11.417Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130981",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130981",
+  "canonical_pr": null,
+  "summary": "#130981 is a confirmed narrow Discord adapter defect on main 671e41a8773bb9df6f044372fe227f7415a45b38. A successful active-run deferral reaches the empty-warning fallback because it is neither visible delivery nor deliberate silence. Implementation is blocked in this worker: the checkout is read-only and the mandatory sibling ../codex source is absent, so no branch, regression run, or PR can be safely produced here.",
+  "actions": [
+    {
+      "target": "#48003",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different owner boundary and remaining work."
+    },
+    {
+      "target": "#120142",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Overlapping adapter surface, distinct outcome classification."
+    },
+    {
+      "target": "#120150",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate repair remains open; do not conflate its diagnostic change with the deferred-command fix."
+    },
+    {
+      "target": "#130981",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130981",
+      "candidate_fix": null,
+      "reason": "The fix shape is clear, but this worker cannot create the required branch or complete the mandatory proof gates."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130981",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130981",
+      "candidate_fix": null,
+      "reason": "Ready for a writable worker after its Codex contract gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130981",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130981",
+      "candidate_fix": null,
+      "reason": "No validated branch exists to publish."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "blocked": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
