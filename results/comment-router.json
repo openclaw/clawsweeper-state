@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T15:01:26.482Z",
+  "updated_at": "2026-08-27T15:01:58.936Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128748:5399853864:2026-08-24T18:53:15Z:re_review",
-      "comment_id": "5399853864",
-      "comment_version_key": "5399853864:2026-08-24T18:53:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128748#issuecomment-5399853864",
-      "comment_created_at": "2026-08-24T18:53:15Z",
-      "comment_updated_at": "2026-08-24T18:53:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128748,
-      "author": "Synthetic2802",
-      "author_id": 45599846,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T09:08:33.938Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128748:5423726858:2026-08-26T10:03:53Z:re_review",
       "comment_id": "5423726858",
@@ -32639,6 +32612,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121557:5239242955:2026-08-27T15:00:41Z:clawsweeper_needs_human",
+      "comment_id": "5239242955",
+      "comment_version_key": "5239242955:2026-08-27T15:00:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121557#issuecomment-5239242955",
+      "comment_created_at": "2026-08-10T10:59:43Z",
+      "comment_updated_at": "2026-08-27T15:00:41Z",
+      "comment_body_sha256": "b9bcbee211d9578f019b19ac5b36922256a947cc279a5e48040fea71f2a71a3b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121557,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Clicking a stale stored webSearch: true while the global setting is disabled removes that stored session preference; this is intentional UI cleanup but changes an existing session set... (sha=e13f7877c86d5c578581fa854b142abf8e8cfb44)",
+      "expected_head_sha": "e13f7877c86d5c578581fa854b142abf8e8cfb44",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T15:01:58.936Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-websearch-global-kill-switch",
+        "head_sha": "e13f7877c86d5c578581fa854b142abf8e8cfb44",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
