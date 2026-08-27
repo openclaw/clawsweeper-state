@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T09:59:09.168Z",
+  "updated_at": "2026-08-27T09:59:29.907Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130511:5432662933:2026-08-27T05:52:58Z:clawsweeper_needs_human",
-      "comment_id": "5432662933",
-      "comment_version_key": "5432662933:2026-08-27T05:52:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130511#issuecomment-5432662933",
-      "comment_created_at": "2026-08-27T00:18:19Z",
-      "comment_updated_at": "2026-08-27T05:52:58Z",
-      "comment_body_sha256": "35cc3616b1ce80b280e98e3f970928a66735306d0c2e0c38f9042958852c8945",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130511,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging requires resolving the generated-metadata conflict and revalidating the resulting head; otherwise the manifest, catalog, and documentation baseline may not match the runtime s... (sha=315f52ab72df48699ad9b1ea2f35c223b6067904)",
-      "expected_head_sha": "315f52ab72df48699ad9b1ea2f35c223b6067904",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T05:57:21.447Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/buzz-flat-replies",
-        "head_sha": "315f52ab72df48699ad9b1ea2f35c223b6067904",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128236:5434777330:2026-08-27T05:27:51Z:re_review",
       "comment_id": "5434777330",
@@ -32414,6 +32381,53 @@
         "kind": "pull_request",
         "branch": "fix/fix-976",
         "head_sha": "7ad69b536292ab5d1a0c71b8c69e1ecf158afe46",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129174:5437386583:2026-08-27T09:58:27Z:re_review",
+      "comment_id": "5437386583",
+      "comment_version_key": "5437386583:2026-08-27T09:58:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129174#issuecomment-5437386583",
+      "comment_created_at": "2026-08-27T09:58:27Z",
+      "comment_updated_at": "2026-08-27T09:58:27Z",
+      "comment_body_sha256": "5bd7ccc4b9a04c30cdbea6fad6d991de86f2d1d4137f333f6e8f2de06e0ac41f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129174,
+      "author": "quangtran88",
+      "author_id": 107824159,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — added the exact-head before/after dispatcher benchmark (512→8 callbacks per delta at 64 concurrent runs, median of 7 reps, host and node recorded) and a concurrent-run isolation trace that is byte-identical at the merge-base, both in the pr body",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T09:59:24.634Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/run-indexed-agent-event-listeners",
+        "head_sha": "8b4789579b400d9036226e8ecd94214437a972ca",
         "cluster_id": null,
         "job_path": null
       },
