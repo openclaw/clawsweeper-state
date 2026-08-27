@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T04:36:17.499Z",
+  "updated_at": "2026-08-27T04:36:38.958Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130429:5431514060:2026-08-27T00:44:11Z:clawsweeper_needs_human",
-      "comment_id": "5431514060",
-      "comment_version_key": "5431514060:2026-08-27T00:44:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130429#issuecomment-5431514060",
-      "comment_created_at": "2026-08-26T21:48:16Z",
-      "comment_updated_at": "2026-08-27T00:44:11Z",
-      "comment_body_sha256": "7a2c8a3eb9e1a5f88c44da9624eaa9f01e684e2391bbbb43e5ad1f4c8577a148",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130429,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Mock-only: the PR body reports unit tests and formatting, not redacted after-fix output from two complete Claude migrations showing the second...; Review finding: [P1] Handle the initial copy before checking append markers — extensions/migrate-claude/helpers.ts:91-94 - [P2] Read the target through the regular-file guard — ex... (sha=0f3c8752132d129ecd9f70d14cb5a5895cf7ba19)",
-      "expected_head_sha": "0f3c8752132d129ecd9f70d14cb5a5895cf7ba19",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T00:46:08.006Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/127401-migration-idempotent-instructions",
-        "head_sha": "0f3c8752132d129ecd9f70d14cb5a5895cf7ba19",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130458:5431973209:2026-08-27T00:42:44Z:clawsweeper_needs_human",
       "comment_id": "5431973209",
@@ -31821,6 +31788,53 @@
         "kind": "pull_request",
         "branch": "fix/ci-frv-workflow-test-routing",
         "head_sha": "80655c1e06148fb2d5257e7e42805a5f799b274c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130095:5434431302:2026-08-27T04:35:54Z:re_review",
+      "comment_id": "5434431302",
+      "comment_version_key": "5434431302:2026-08-27T04:35:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130095#issuecomment-5434431302",
+      "comment_created_at": "2026-08-27T04:35:54Z",
+      "comment_updated_at": "2026-08-27T04:35:54Z",
+      "comment_body_sha256": "1c54789f6a5088129408ad076ac24a6c40ae2f7ee6735a2877cef73c96723dc5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130095,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T04:36:36.396Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-release-gate-runner-profile",
+        "head_sha": "34cbf2e3a8bf5148a6f22e15db471cdeb3d32616",
         "cluster_id": null,
         "job_path": null
       },
