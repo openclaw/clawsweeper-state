@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T11:52:32.934Z",
+  "updated_at": "2026-08-27T11:54:14.712Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clownfish:317:5435407219:2026-08-27T06:49:57Z:re_review",
-      "comment_id": "5435407219",
-      "comment_version_key": "5435407219:2026-08-27T06:49:57Z",
-      "comment_url": "https://github.com/openclaw/clownfish/pull/317#issuecomment-5435407219",
-      "comment_created_at": "2026-08-27T06:49:57Z",
-      "comment_updated_at": "2026-08-27T06:49:57Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/clownfish",
-      "issue_number": 317,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T06:50:38.352Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/authoritative-exact-merge-evidence",
-        "head_sha": "431877f79df34bca730adf212a8d552c1c193568",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130719:5435411286:2026-08-27T06:50:25Z:re_review",
       "comment_id": "5435411286",
@@ -32076,6 +32029,39 @@
         "kind": "pull_request",
         "branch": "ocpr/auto-issue-20260826-2",
         "head_sha": "52dd03df4a02f5a9ca1fc8f77cc92e1747ebcb3a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3237:5438268855:2026-08-27T11:53:19Z:clawsweeper_needs_human",
+      "comment_id": "5438268855",
+      "comment_version_key": "5438268855:2026-08-27T11:53:19Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3237#issuecomment-5438268855",
+      "comment_created_at": "2026-08-27T11:23:59Z",
+      "comment_updated_at": "2026-08-27T11:53:19Z",
+      "comment_body_sha256": "50b01a7cf2a6fc02578c9874085569009dbd49b3e996e12be6b0ba07155926f0",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3237,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes the in-memory credential-selection boundary for Grok billing and account metadata; merge only after the remaining exact-head macOS test shard passes. (sha=b8e4ee0a1e93362158bfaf503c21da33207cdd3e)",
+      "expected_head_sha": "b8e4ee0a1e93362158bfaf503c21da33207cdd3e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T11:54:14.712Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/grok-account-context",
+        "head_sha": "b8e4ee0a1e93362158bfaf503c21da33207cdd3e",
         "cluster_id": null,
         "job_path": null
       }
