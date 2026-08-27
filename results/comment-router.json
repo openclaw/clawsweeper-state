@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T18:01:15.743Z",
+  "updated_at": "2026-08-27T18:01:16.655Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130897:5439367961:2026-08-27T12:49:02Z:clawsweeper_needs_human",
-      "comment_id": "5439367961",
-      "comment_version_key": "5439367961:2026-08-27T12:49:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130897#issuecomment-5439367961",
-      "comment_created_at": "2026-08-27T12:49:02Z",
-      "comment_updated_at": "2026-08-27T12:49:02Z",
-      "comment_body_sha256": "360b7c72377243551ee89a7678a61348e2c5679a7ef96cfcf5d8a966fe64ec6b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130897,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the audited upstream Codex release** - The direct @openai/codex dependency and lockfile change determine the executable app-server and platform packages; acceptance should confir...; Review finding: [medium] Verify the audited upstream Codex release — extensions/codex/package.json:11 (sha=94e637a94d610f2c0f61d37b9e349e5a0b9dfd29)",
-      "expected_head_sha": "94e637a94d610f2c0f61d37b9e349e5a0b9dfd29",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T12:49:46.576Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "validation/head-94e637a94d61-1787834503",
-        "head_sha": "94e637a94d610f2c0f61d37b9e349e5a0b9dfd29",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130896:5439431918:2026-08-27T12:54:46Z:clawsweeper_needs_human",
       "comment_id": "5439431918",
@@ -31842,6 +31809,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131059:5443129748:2026-08-27T17:57:48Z:clawsweeper_auto_repair",
+      "comment_id": "5443129748",
+      "comment_version_key": "5443129748:2026-08-27T17:57:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131059#issuecomment-5443129748",
+      "comment_created_at": "2026-08-27T17:57:48Z",
+      "comment_updated_at": "2026-08-27T17:57:48Z",
+      "comment_body_sha256": "d5a106a21d5afd03a5571e200d928d558161d8a8bed198a501876919737f68dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131059,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5f4270ffbe1e4162cba39b40ae3ad049e454fb58)",
+      "expected_head_sha": "5f4270ffbe1e4162cba39b40ae3ad049e454fb58",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T18:01:16.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-plugin-hook-scheduling",
+        "head_sha": "5f4270ffbe1e4162cba39b40ae3ad049e454fb58",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
