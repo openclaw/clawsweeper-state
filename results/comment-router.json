@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T07:15:04.922Z",
+  "updated_at": "2026-08-27T07:15:13.055Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128254:5434102863:2026-08-27T03:45:50Z:re_review",
-      "comment_id": "5434102863",
-      "comment_version_key": "5434102863:2026-08-27T03:45:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128254#issuecomment-5434102863",
-      "comment_created_at": "2026-08-27T03:45:50Z",
-      "comment_updated_at": "2026-08-27T03:45:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128254,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T03:46:36.479Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "gaoanze888/matrix-reasoning-notices",
-        "head_sha": "a90f2c26680913993eacf08d1827b7c1f4f4b42c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130624:5433961433:2026-08-27T03:46:08Z:clawsweeper_auto_repair",
       "comment_id": "5433961433",
@@ -31420,6 +31373,39 @@
         "kind": "pull_request",
         "branch": "issue-130187-channels-logs-level",
         "head_sha": "5e3c72cbf4ac45be492828dc9c35e23f1790aa9a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130747:5435217290:2026-08-27T07:12:25Z:clawsweeper_needs_human",
+      "comment_id": "5435217290",
+      "comment_version_key": "5435217290:2026-08-27T07:12:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130747#issuecomment-5435217290",
+      "comment_created_at": "2026-08-27T06:27:33Z",
+      "comment_updated_at": "2026-08-27T07:12:25Z",
+      "comment_body_sha256": "adff80317de39bb038aa6e592807eb7efa70ba97774f448a597afa4ac1ed8ab6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130747,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR remains a draft and the supplied exact-head GitHub check set is skipped, so a non-skipped exact-head Control UI E2E result is still needed before landing. (sha=2b6a4921171bacbd56c4c6faa2c622cc8729b195)",
+      "expected_head_sha": "2b6a4921171bacbd56c4c6faa2c622cc8729b195",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T07:15:13.055Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-sidebar-presented-pane-race",
+        "head_sha": "2b6a4921171bacbd56c4c6faa2c622cc8729b195",
         "cluster_id": null,
         "job_path": null
       }
