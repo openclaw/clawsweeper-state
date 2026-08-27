@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130773",
+  "mode": "autonomous",
+  "run_id": "33048969828",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33048969828",
+  "head_sha": "ff813ac2fa76d853d8a9129e6763d09624cafe72",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130773.md",
+  "published_at": "2026-08-27T07:38:33.912Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130773",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130773",
+  "canonical_pr": null,
+  "summary": "#130773 is a confirmed narrow runtime-inspection bug on main ab255086f7e11cd35d0259b727f4ed687259b5f6. `--runtime` calls the diagnostics report without tool-discovery intent, so its non-activating load selects discovery and bundled channel entries omit `registerFull`; the existing tool-discovery path would register the route without hydrating the channel sidecar. Implementation and validation are blocked in this worker because the checkout is read-only, dependencies are absent, and the required sibling ../codex source is unavailable for the mandatory Codex-source gate.",
+  "actions": [
+    {
+      "target": "#130773",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130773",
+      "candidate_fix": null,
+      "reason": "The fix path is clear, but this worker cannot edit or validate a branch in the read-only checkout and cannot satisfy the repository's mandatory ../codex source-inspection gate because that sibling checkout is absent."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130773",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130773",
+      "candidate_fix": null,
+      "reason": "A deterministic executor with a writable checkout, dependencies, and sibling ../codex source can apply this narrow new-PR artifact."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#130773",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
