@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-92015",
+  "mode": "autonomous",
+  "run_id": "33054742610",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33054742610",
+  "head_sha": "71df3a1ce714d737e250008597075bb5eaeb2ac4",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-92015.md",
+  "published_at": "2026-08-27T08:55:36.093Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/92015",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/92015",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a source-level verdict: the mandatory sibling Codex checkout (`../codex`) is absent, and this worker's read-only sandbox cannot clone it. Root policy requires direct Codex protocol/runtime inspection before a code change or proof claim.",
+  "actions": [
+    {
+      "target": "#78093",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Keep open independently."
+    },
+    {
+      "target": "#92015",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Cannot make the required Codex-backed repair verdict or create the regression in this environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-92015",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Blocked by the mandatory unavailable Codex source prerequisite."
+    },
+    {
+      "target": "#92939",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Historical evidence only; no closure action is valid."
+    },
+    {
+      "target": "#93176",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Historical related context only; no closure action is valid."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#92015",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
