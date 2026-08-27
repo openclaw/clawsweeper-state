@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T06:29:26.115Z",
+  "updated_at": "2026-08-27T06:30:37.763Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130586:5433796452:2026-08-27T02:59:28Z:re_review",
-      "comment_id": "5433796452",
-      "comment_version_key": "5433796452:2026-08-27T02:59:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130586#issuecomment-5433796452",
-      "comment_created_at": "2026-08-27T02:59:28Z",
-      "comment_updated_at": "2026-08-27T02:59:28Z",
-      "comment_body_sha256": "00f304ce5b32793b7a46830a646f134b2418cc80913dcae619d1cf91881dcee8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130586,
-      "author": "ZengWen-DT",
-      "author_id": 290981215,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T03:00:06.903Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/130164-spawn-ambiguous-dispatch",
-        "head_sha": "56c3c86e265323bda9ed7fa224e8bb2deed5e443",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128078:5383802284:2026-08-27T02:55:45Z:clawsweeper_needs_human",
       "comment_id": "5383802284",
@@ -31392,6 +31345,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1259:5434890771:2026-08-27T06:29:55Z:clawsweeper_needs_human",
+      "comment_id": "5434890771",
+      "comment_version_key": "5434890771:2026-08-27T06:29:55Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1259#issuecomment-5434890771",
+      "comment_created_at": "2026-08-27T05:43:52Z",
+      "comment_updated_at": "2026-08-27T06:29:55Z",
+      "comment_body_sha256": "6048a7ca39141a493b72a0c7f9fcb51cb4a5bac751f5405bee9242d42fd26ed5",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1259,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Remove the unsandboxed Codex proof command (P1)** - The new reproduction instructions run codex exec --yolo, which bypasses approval and sandbox protections; the receipt confirms sandboxDangerFullAccess. A tempo...; Review finding: [P1] Remove the unsandboxed Codex proof command — docs/proof/terminal-proof-planning/README.md:60-64 - [high] Full-access model execution in proof instructions — d... (sha=ca48d41487affa905cb775da8a985d1b128b18c3)",
+      "expected_head_sha": "ca48d41487affa905cb775da8a985d1b128b18c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T06:30:37.763Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/terminal-proof-planning-20260827",
+        "head_sha": "ca48d41487affa905cb775da8a985d1b128b18c3",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
