@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T02:36:24.520Z",
+  "updated_at": "2026-08-27T02:36:27.974Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129705:5418912080:2026-08-26T21:48:47Z:clawsweeper_needs_human",
-      "comment_id": "5418912080",
-      "comment_version_key": "5418912080:2026-08-26T21:48:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129705#issuecomment-5418912080",
-      "comment_created_at": "2026-08-26T00:33:33Z",
-      "comment_updated_at": "2026-08-26T21:48:47Z",
-      "comment_body_sha256": "fc20ce15ab6e5cef307c789818c0e7e73d64997d7ad8d82ed428b7f2565c18c2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129705,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Synchronize the CI guard with the TruffleHog pin (P1)** - This changes the workflow action SHA, but test/scripts/ci-workflow-guards.test.ts:3738 still expects the old SHA. The established guard will fail until i...; Review finding: [P1] Synchronize the CI guard with the TruffleHog pin — .github/workflows/ci.yml:1162 - [P1] Advance the configured TruffleHog scanner payload — .github/workflows/... (sha=3554ed7935992d81a6c7ffa3bbdfe5b347402154)",
-      "expected_head_sha": "3554ed7935992d81a6c7ffa3bbdfe5b347402154",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T21:49:50.136Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-4b81979af6",
-        "head_sha": "3554ed7935992d81a6c7ffa3bbdfe5b347402154",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130345:5430871270:2026-08-26T21:43:25Z:clawsweeper_needs_human",
       "comment_id": "5430871270",
@@ -32148,6 +32115,39 @@
       "status": "skipped",
       "processed_at": "2026-08-27T02:36:24.520Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128078:5383802284:2026-08-27T02:21:47Z:clawsweeper_needs_human",
+      "comment_id": "5383802284",
+      "comment_version_key": "5383802284:2026-08-27T02:21:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128078#issuecomment-5383802284",
+      "comment_created_at": "2026-08-23T02:29:08Z",
+      "comment_updated_at": "2026-08-27T02:21:47Z",
+      "comment_body_sha256": "923e706e05329387e796b0f3dcbe0a0a0a32afd32fb33deb62f2f0676f2acf12",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128078,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new cancellation path has no Windows abort/reap/WAL runtime smoke; a platform-specific termination failure could leave both KNN admission slots occupied after cancelled searches. (sha=b868cb292ddc1e3e3c988ab36dbde79289815f59)",
+      "expected_head_sha": "b868cb292ddc1e3e3c988ab36dbde79289815f59",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T02:36:27.973Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-search-knn-subprocess-main-20260822",
+        "head_sha": "c5e7d99fbb048c9c38dfbb859911c043ce9b5bf1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
