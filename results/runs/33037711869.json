@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-20837",
+  "mode": "autonomous",
+  "run_id": "33037711869",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33037711869",
+  "head_sha": "387cf82c7eba81fa6dfd1cff12765cf2c2d80a27",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-20837.md",
+  "published_at": "2026-08-27T04:11:03.130Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/20837",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/20837",
+  "canonical_pr": null,
+  "summary": "#20837 is a current, source-reproducible command-prompt fidelity bug. Current main hard-codes unknown host/OS/arch and drops originating channel, account-aware capabilities, shell, and message guidance for both `/context` fallback and `/export-session`. Implementation is blocked because this checkout is read-only with dependencies absent, and the required sibling `../codex` source is unavailable for the mandatory direct Codex check.",
+  "actions": [
+    {
+      "target": "#20837",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Open canonical issue with a narrow bug-only repair path; no closure or merge is permitted by this job."
+    },
+    {
+      "target": "#21271",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Already closed; do not mutate or close again."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-20837",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "The repair is narrow and appropriate, but this worker cannot edit, install dependencies, or validate in the read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-20837",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Executor should implement and validate this artifact in a writable checkout after satisfying the required direct Codex-source gate."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#20837",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
