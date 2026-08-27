@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T03:43:47.027Z",
+  "updated_at": "2026-08-27T03:43:48.031Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128366:5432069644:2026-08-26T22:57:57Z:re_review",
-      "comment_id": "5432069644",
-      "comment_version_key": "5432069644:2026-08-26T22:57:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128366#issuecomment-5432069644",
-      "comment_created_at": "2026-08-26T22:57:57Z",
-      "comment_updated_at": "2026-08-26T22:57:57Z",
-      "comment_body_sha256": "f8461259cecdc4227e56c47c0ace829004cb1872fd5411ea0509b4f51da1834b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128366,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T22:58:39.715Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "worktree-codex-binding-owner-fix-20260822",
-        "head_sha": "0dacb6f18afdcd260297383d3960ddf9021f5535",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3219:5431876517:2026-08-26T22:59:03Z:clawsweeper_needs_human",
       "comment_id": "5431876517",
@@ -32285,6 +32238,39 @@
         "kind": "pull_request",
         "branch": "fix/129209-json-nesting-stack-overflow",
         "head_sha": "e4445b14b15405af7a6f89206e6b83de168ca844",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130261:5429143972:2026-08-27T03:39:50Z:clawsweeper_needs_human",
+      "comment_id": "5429143972",
+      "comment_version_key": "5429143972:2026-08-27T03:39:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130261#issuecomment-5429143972",
+      "comment_created_at": "2026-08-26T18:03:11Z",
+      "comment_updated_at": "2026-08-27T03:39:50Z",
+      "comment_body_sha256": "d0bb9359b5958e06b699225f44b82b49e0efdd4e4672d573011a7b6e8b883a01",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130261,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body describes an after-fix isolated Chrome run, but no inspectable redacted trace or artifact demonstrates the observed block;... (sha=c7bd4a6b5cae7551aa819e94f5381d29139ff5a1)",
+      "expected_head_sha": "c7bd4a6b5cae7551aa819e94f5381d29139ff5a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T03:43:48.031Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/loop-detection-wrapper-nonce-130210",
+        "head_sha": "c7bd4a6b5cae7551aa819e94f5381d29139ff5a1",
         "cluster_id": null,
         "job_path": null
       }
