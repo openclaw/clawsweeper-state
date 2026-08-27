@@ -2,39 +2,6 @@
   "updated_at": "2026-08-27T19:17:15.978Z",
   "commands": [
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-27T11:15:07Z:clawsweeper_needs_human",
-      "comment_id": "5290613923",
-      "comment_version_key": "5290613923:2026-08-27T11:15:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123535#issuecomment-5290613923",
-      "comment_created_at": "2026-08-14T07:15:12Z",
-      "comment_updated_at": "2026-08-27T11:15:07Z",
-      "comment_body_sha256": "b9fabeafb50a2c16c469ec0face88f4e5de1bcd9570f775d9cb536528554046d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123535,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The scheduler changes when remote catalogs refresh; modeled coverage is strong, but a current-base browser activation smoke should confirm that passive focus neither replaces the 30-s... (sha=746d759ed720662f261ffcfa574c8df7a2ba789e)",
-      "expected_head_sha": "746d759ed720662f261ffcfa574c8df7a2ba789e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T13:14:20.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-bootstrap-performance",
-        "head_sha": "746d759ed720662f261ffcfa574c8df7a2ba789e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124848:5309801707:2026-08-27T10:36:03Z:clawsweeper_needs_human",
       "comment_id": "5309801707",
       "comment_version_key": "5309801707:2026-08-27T10:36:03Z",
@@ -32002,6 +31969,53 @@
         "kind": "pull_request",
         "branch": "codex/installer-dependency-policy",
         "head_sha": "0c01ee0c9e075d3c0e441495212b99d68967e042",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128289:5444074842:2026-08-27T19:16:09Z:re_review",
+      "comment_id": "5444074842",
+      "comment_version_key": "5444074842:2026-08-27T19:16:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128289#issuecomment-5444074842",
+      "comment_created_at": "2026-08-27T19:16:09Z",
+      "comment_updated_at": "2026-08-27T19:16:09Z",
+      "comment_body_sha256": "ae61c0b03ce0f4f27fa9d6921e2673f996ec2df1c73bb9e830fb76c338d274a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128289,
+      "author": "SnowBelt",
+      "author_id": 31227031,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review the current head after the browser steward final-effect approval fix, removal of the pr-added eval workflow, documentation correction, and regression proof. report any remaining actionable findings; do not merge",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T19:17:11.922Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/browser-session-credential-steward-mvp-repair",
+        "head_sha": "26e4768a322db3bc50c9150123954ee1ecd00cf6",
         "cluster_id": null,
         "job_path": null
       },
