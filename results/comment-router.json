@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T14:51:06.844Z",
+  "updated_at": "2026-08-27T14:53:07.306Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5041714021:2026-07-22T04:01:24Z:re_review",
-      "comment_id": "5041714021",
-      "comment_version_key": "5041714021:2026-07-22T04:01:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5041714021",
-      "comment_created_at": "2026-07-22T04:01:24Z",
-      "comment_updated_at": "2026-07-22T04:01:24Z",
-      "comment_body_sha256": "4e9dc321b04059973065a54e52d6fad735b3716704c60cbdd8f9996bbb7da8c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T09:02:48.872Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5052907037:2026-07-23T00:10:37Z:re_review",
       "comment_id": "5052907037",
@@ -32495,6 +32468,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129402:5413000217:2026-08-27T14:52:01Z:clawsweeper_needs_human",
+      "comment_id": "5413000217",
+      "comment_version_key": "5413000217:2026-08-27T14:52:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129402#issuecomment-5413000217",
+      "comment_created_at": "2026-08-25T15:48:21Z",
+      "comment_updated_at": "2026-08-27T14:52:01Z",
+      "comment_body_sha256": "c1e1d67d6e892c3abd41fd33df7a3f702f84c8123707490de1b1832f577d22a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129402,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR transports authenticated channel identity to plugin hooks, and the required direct verification of the pinned Codex compaction lifecycle cannot be completed without the sibling... (sha=22b66d819260e5401c9f4eedf95cc0da9ac17840)",
+      "expected_head_sha": "22b66d819260e5401c9f4eedf95cc0da9ac17840",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T14:53:07.306Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-authenticated-hook-context",
+        "head_sha": "22b66d819260e5401c9f4eedf95cc0da9ac17840",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
