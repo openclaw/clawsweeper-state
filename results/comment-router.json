@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T10:06:16.687Z",
+  "updated_at": "2026-08-27T10:06:31.645Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:108988:5434984553:2026-08-27T05:56:57Z:re_review",
-      "comment_id": "5434984553",
-      "comment_version_key": "5434984553:2026-08-27T05:56:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/108988#issuecomment-5434984553",
-      "comment_created_at": "2026-08-27T05:56:57Z",
-      "comment_updated_at": "2026-08-27T05:56:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 108988,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T05:57:37.591Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-acpx-pi-read-cap",
-        "head_sha": "d52e919ee556d57d728807f774d2b3eb08ad8419",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ffmpeg-wasm:6:5366886700:2026-08-27T05:52:28Z:clawsweeper_auto_repair",
       "comment_id": "5366886700",
@@ -32468,6 +32421,39 @@
         "kind": "pull_request",
         "branch": "codex/spend-pricing-fallback",
         "head_sha": "85257dec9ee2ef574b2e4e9555054bf6e0d78ff1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82572:4466829643:2026-08-27T10:03:17Z:clawsweeper_needs_human",
+      "comment_id": "4466829643",
+      "comment_version_key": "4466829643:2026-08-27T10:03:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4466829643",
+      "comment_created_at": "2026-05-16T12:19:59Z",
+      "comment_updated_at": "2026-08-27T10:03:17Z",
+      "comment_body_sha256": "29d001955e156b5efb07cbf796368cfe68175ff2f53daf3ed3b4436a18d710f4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 82572,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Fail close on restrictive exec overrides (P1)** - execOverrides also carries restrictions from session policy and directives, such as security: \"deny\" and ask: \"always\". Dropping it on restore makes the rehydrat...; Review finding: [P1] Fail close on restrictive exec overrides — src/auto-reply/reply/queue/persist-codec.ts:76-78 - [P1] Do not acknowledge a failed final delivery — src/auto-repl... (sha=bc110b51754c1783d71bbb04c2728588c5789ab7)",
+      "expected_head_sha": "bc110b51754c1783d71bbb04c2728588c5789ab7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T10:06:31.645Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/queue-followup-persistence",
+        "head_sha": "bc110b51754c1783d71bbb04c2728588c5789ab7",
         "cluster_id": null,
         "job_path": null
       }
