@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T20:24:57.006Z",
+  "updated_at": "2026-08-27T20:28:14.586Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128236:5434571746:2026-08-27T04:57:56Z:re_review",
-      "comment_id": "5434571746",
-      "comment_version_key": "5434571746:2026-08-27T04:57:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128236#issuecomment-5434571746",
-      "comment_created_at": "2026-08-27T04:57:56Z",
-      "comment_updated_at": "2026-08-27T04:57:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128236,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T14:27:27.843Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128236:5434777330:2026-08-27T05:27:51Z:re_review",
       "comment_id": "5434777330",
@@ -31966,6 +31939,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82572:4466829643:2026-08-27T20:24:40Z:clawsweeper_needs_human",
+      "comment_id": "4466829643",
+      "comment_version_key": "4466829643:2026-08-27T20:24:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4466829643",
+      "comment_created_at": "2026-05-16T12:19:59Z",
+      "comment_updated_at": "2026-08-27T20:24:40Z",
+      "comment_body_sha256": "82e6e9d6d3798a7ee6a25d3e16b4a3ab7f0533c7b6a61d466b49224da8602f55",
+      "repo": "openclaw/openclaw",
+      "issue_number": 82572,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A process death after a channel send succeeds but before SQLite records the receipt can replay that follow-up after restart, producing an intentional at-least-once duplicate. (sha=01be80b9dd4e867e573bdd20dc3a76792ee66035)",
+      "expected_head_sha": "01be80b9dd4e867e573bdd20dc3a76792ee66035",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T20:28:14.586Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/queue-followup-persistence",
+        "head_sha": "01be80b9dd4e867e573bdd20dc3a76792ee66035",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
