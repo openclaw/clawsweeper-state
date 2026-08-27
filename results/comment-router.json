@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T06:04:48.260Z",
+  "updated_at": "2026-08-27T06:04:48.609Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128498:5433607473:2026-08-27T02:30:43Z:re_review",
-      "comment_id": "5433607473",
-      "comment_version_key": "5433607473:2026-08-27T02:30:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128498#issuecomment-5433607473",
-      "comment_created_at": "2026-08-27T02:30:43Z",
-      "comment_updated_at": "2026-08-27T02:30:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128498,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T02:31:34.397Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "gaoanze888/discord-components-string-coerce",
-        "head_sha": "d5e16200a17a876827be2c4173c05a4c6cdc401f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130583:5433546167:2026-08-27T02:31:55Z:clawsweeper_auto_repair",
       "comment_id": "5433546167",
@@ -31068,6 +31021,39 @@
         "kind": "pull_request",
         "branch": "fix/http-client-timeout",
         "head_sha": "606deed8c1e616b3a35c46f51e59eb94e77ddc5f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:140:5387059000:2026-08-27T06:01:24Z:clawsweeper_needs_human",
+      "comment_id": "5387059000",
+      "comment_version_key": "5387059000:2026-08-27T06:01:24Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/140#issuecomment-5387059000",
+      "comment_created_at": "2026-08-23T16:27:59Z",
+      "comment_updated_at": "2026-08-27T06:01:24Z",
+      "comment_body_sha256": "0e6be5c4d7c70355c6b6a7de6cb7efcb26fe3fe3587f8a9f1131381ec1186d95",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 140,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging makes a process-wide staleRecovery: \"remove-if-unchanged\" setting affect synchronous calls that also provide per-call removal approval; those calls can reclaim an eligible sta... (sha=89413e94f614777ee26d1fcdc3d90dd07772bac9)",
+      "expected_head_sha": "89413e94f614777ee26d1fcdc3d90dd07772bac9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T06:04:48.608Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sync-lock-process-defaults",
+        "head_sha": "89413e94f614777ee26d1fcdc3d90dd07772bac9",
         "cluster_id": null,
         "job_path": null
       }
