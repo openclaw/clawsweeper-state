@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130523",
+  "mode": "autonomous",
+  "run_id": "33027347065",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33027347065",
+  "head_sha": "afe976209aa58a5629041b42b66f6ee11b2812a7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130523.md",
+  "published_at": "2026-08-27T00:47:44.427Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130523",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130523",
+  "canonical_pr": null,
+  "summary": "#130523 remains the canonical open bug. Current main statically confirms the missing doctor migration: strict binding validation rejects `peer.kind: \"dm\"`, while the doctor migration registry has no corresponding rewrite. A narrow two-file fix plan is ready, but this worker cannot apply or validate it because the checkout is read-only, dependencies are absent, and the mandatory sibling `../codex` source is unavailable.",
+  "actions": [
+    {
+      "target": "#124460",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#130523",
+      "candidate_fix": null,
+      "reason": "Historical context only; do not conflate it with the binding peer-kind migration."
+    },
+    {
+      "target": "#126899",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#130523",
+      "candidate_fix": null,
+      "reason": "Historical context only; do not conflate it with the binding peer-kind migration."
+    },
+    {
+      "target": "#129337",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#130523",
+      "candidate_fix": null,
+      "reason": "Historical context only; do not conflate it with the binding peer-kind migration."
+    },
+    {
+      "target": "#130523",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130523",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable checkout with dependencies and the mandatory sibling Codex source available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130523",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130523",
+      "candidate_fix": null,
+      "reason": "A writable executor can apply this bounded artifact as one new fix PR."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
