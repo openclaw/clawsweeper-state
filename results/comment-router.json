@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T01:19:16.503Z",
+  "updated_at": "2026-08-27T01:21:16.141Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129458:5430295449:2026-08-26T19:47:45Z:re_review",
-      "comment_id": "5430295449",
-      "comment_version_key": "5430295449:2026-08-26T19:47:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129458#issuecomment-5430295449",
-      "comment_created_at": "2026-08-26T19:47:45Z",
-      "comment_updated_at": "2026-08-26T19:47:45Z",
-      "comment_body_sha256": "7328ff2e4e572bacfd05f853f40280e9e5a218fac0baec8fc944cba4f6002b4f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129458,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T19:48:35.568Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-gateway-failed-websocket-delivery-20260825",
-        "head_sha": "12b65bb016a358ce2d977056351dc3e1ca6173e0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabhelm:20:5334578311:2026-08-26T19:48:16Z:clawsweeper_auto_repair",
       "comment_id": "5334578311",
@@ -32664,6 +32617,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108981:4993010037:2026-08-27T01:12:54Z:clawsweeper_needs_human",
+      "comment_id": "4993010037",
+      "comment_version_key": "4993010037:2026-08-27T01:12:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/108981#issuecomment-4993010037",
+      "comment_created_at": "2026-07-16T14:23:26Z",
+      "comment_updated_at": "2026-08-27T01:12:54Z",
+      "comment_body_sha256": "67de5d58c73678e07819a2a5517963193ff77ba1bcba64430030784f4b40bd78",
+      "repo": "openclaw/openclaw",
+      "issue_number": 108981,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head QA Smoke and remaining CI are still in progress; the changed process-settlement path can affect QA job completion if an uncovered platform case fails. (sha=92341a4373b25f32fc48b7dd5013f2dc0ab4e4bc)",
+      "expected_head_sha": "92341a4373b25f32fc48b7dd5013f2dc0ab4e4bc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T01:21:16.141Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-lab-settle-child-pipe-errors",
+        "head_sha": "92341a4373b25f32fc48b7dd5013f2dc0ab4e4bc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
