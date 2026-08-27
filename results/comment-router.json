@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-27T01:35:35.670Z",
+  "updated_at": "2026-08-27T01:35:51.473Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126335:5430382208:2026-08-26T19:56:03Z:re_review",
-      "comment_id": "5430382208",
-      "comment_version_key": "5430382208:2026-08-26T19:56:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126335#issuecomment-5430382208",
-      "comment_created_at": "2026-08-26T19:56:03Z",
-      "comment_updated_at": "2026-08-26T19:56:03Z",
-      "comment_body_sha256": "8f4e47e1947f0e85eef155708cad13f8fc86886851204c263b6359c15bc2c75f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126335,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T19:57:05.319Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/channel-slash-hidden-skill",
-        "head_sha": "e3f4411f897b71024b683997bde06e6329b8b17a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130166:5430384888:2026-08-26T19:56:19Z:re_review",
-      "comment_id": "5430384888",
-      "comment_version_key": "5430384888:2026-08-26T19:56:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130166#issuecomment-5430384888",
-      "comment_created_at": "2026-08-26T19:56:19Z",
-      "comment_updated_at": "2026-08-26T19:56:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130166,
-      "author": "hartmark",
-      "author_id": 12826053,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T19:57:06.765Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/heartbeat-cron-inbound-metadata-continuation-stability",
-        "head_sha": "9b52c0c6e82e807fd6cf25ed06655cef50ceb2b8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:79702:4411845078:2026-08-26T19:55:39Z:clawsweeper_needs_human",
       "comment_id": "4411845078",
@@ -32726,6 +32632,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118591:5164181847:2026-08-27T01:31:54Z:clawsweeper_needs_human",
+      "comment_id": "5164181847",
+      "comment_version_key": "5164181847:2026-08-27T01:31:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118591#issuecomment-5164181847",
+      "comment_created_at": "2026-08-03T08:43:44Z",
+      "comment_updated_at": "2026-08-27T01:31:54Z",
+      "comment_body_sha256": "6dffe93e153e1134ad57bc35164d1fcc3c5bf58f4483d6160ef731db71dcc5fe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118591,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body’s claimed current-head Chromium proof cannot be verified: it names f9df0f55 rather than head 37ed7c0e, and prepared artifacts... (sha=37ed7c0ec34ec549facb0a7126f998699e887ac9)",
+      "expected_head_sha": "37ed7c0ec34ec549facb0a7126f998699e887ac9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T01:35:51.473Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-pointer-drag-active-pointer-id",
+        "head_sha": "37ed7c0ec34ec549facb0a7126f998699e887ac9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118591:5322549919:2026-08-18T02:07:11Z:re_review",
+      "comment_id": "5322549919",
+      "comment_version_key": "5322549919:2026-08-18T02:07:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118591#issuecomment-5322549919",
+      "comment_created_at": "2026-08-18T02:07:11Z",
+      "comment_updated_at": "2026-08-18T02:07:11Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118591,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T01:35:51.473Z",
+      "target": null
     }
   ]
 }
