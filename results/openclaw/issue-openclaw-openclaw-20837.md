@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-20837"
 mode: "autonomous"
-run_id: "33048205911"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33048205911"
+run_id: "33050058608"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33050058608"
 head_sha: "ff813ac2fa76d853d8a9129e6763d09624cafe72"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-27T07:17:38.972Z"
+published_at: "2026-08-27T07:48:16.654Z"
 canonical: "https://github.com/openclaw/openclaw/issues/20837"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/20837"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33048205911](https://github.com/openclaw/clawsweeper/actions/runs/33048205911)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33050058608](https://github.com/openclaw/clawsweeper/actions/runs/33050058608)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/20837
 
 ## Summary
 
-#20837 remains the canonical open bug. Current main reconstructs command prompts with host/os/arch set to "unknown" and omits normalized channel, account-aware capabilities, channel actions, message guidance, and shell. Implementation is blocked before code changes because the mandatory sibling ../codex source is absent and this read-only worker cannot clone it or modify the checkout.
+#20837 remains a reproducible command-prompt fidelity bug on main fa16a4f8: command reconstruction hardcodes host/OS/arch and omits channel metadata. A narrow fix PR is appropriate, but this worker cannot satisfy the mandatory direct ../codex source gate or install/run dependencies because the sibling checkout is absent and the filesystem is read-only.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/20837
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #20837 | fix_needed | blocked | canonical | Do not modify or validate the branch until the Codex hard gate is satisfiable. |
-| #21271 | keep_closed | skipped | superseded | Historical evidence only; no mutation is permitted for an already-closed pull request. |
-| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | blocked | canonical | Implementation and regression validation are blocked by the missing mandatory Codex sibling source and read-only checkout. |
+| #20837 | fix_needed | blocked | canonical | Canonical bug is clear, but implementation and validation are blocked only by the worker environment; no maintainer product decision is needed. |
+| #21271 | keep_closed | skipped | related | Closed context only; preserve @evansantos attribution in the new PR body rather than reviving or closing this PR. |
+| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor after it clones and inspects ../codex; this worker cannot create the required branch or run tests. |
 
 ## Needs Human
 
