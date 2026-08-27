@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T22:24:00.280Z",
+  "updated_at": "2026-08-27T22:24:08.067Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/oracle:401:5441288990:2026-08-27T15:20:23Z:re_review",
-      "comment_id": "5441288990",
-      "comment_version_key": "5441288990:2026-08-27T15:20:23Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/401#issuecomment-5441288990",
-      "comment_created_at": "2026-08-27T15:20:23Z",
-      "comment_updated_at": "2026-08-27T15:20:23Z",
-      "comment_body_sha256": "a771f8f6a460f96c3c562ea490e9e96cefebce506df63cadf8c1a6b0145818f5",
-      "repo": "steipete/oracle",
-      "issue_number": 401,
-      "author": "devYRPauli",
-      "author_id": 55940078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T15:31:03.808Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/attachment-collision-rename-short-stem",
-        "head_sha": "928d98023eeca251a60e4d8c433f022286501752",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:401:5347059904:2026-08-27T15:30:00Z:clawsweeper_needs_human",
       "comment_id": "5347059904",
@@ -32047,6 +32000,39 @@
         "kind": "pull_request",
         "branch": "fix/129455-requester-settle-continuation",
         "head_sha": "15b850dc42528f130ae28168d0b55251d14b66fa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131163:5445256407:2026-08-27T22:21:31Z:clawsweeper_auto_repair",
+      "comment_id": "5445256407",
+      "comment_version_key": "5445256407:2026-08-27T22:21:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131163#issuecomment-5445256407",
+      "comment_created_at": "2026-08-27T21:09:48Z",
+      "comment_updated_at": "2026-08-27T22:21:31Z",
+      "comment_body_sha256": "28a00be432c9c2aa54b91fffa3da428e820fe97fb2124ebb86061f76d5b8a0ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131163,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f2d4714be8bd8d65f6723c770f09213717f8a0c8)",
+      "expected_head_sha": "f2d4714be8bd8d65f6723c770f09213717f8a0c8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T22:24:08.067Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "giodl/claws-adopt-existing-workspace-rebase",
+        "head_sha": "f2d4714be8bd8d65f6723c770f09213717f8a0c8",
         "cluster_id": null,
         "job_path": null
       }
