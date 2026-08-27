@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T14:46:09.845Z",
+  "updated_at": "2026-08-27T14:47:12.604Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:4711129200:2026-06-15T18:33:12Z:re_review",
-      "comment_id": "4711129200",
-      "comment_version_key": "4711129200:2026-06-15T18:33:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4711129200",
-      "comment_created_at": "2026-06-15T18:33:12Z",
-      "comment_updated_at": "2026-06-15T18:33:12Z",
-      "comment_body_sha256": "944429ff641f1ddecccbd9e5e20cf1cd6fd2bb598cc86401fb3ea3636bcf04f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T09:02:48.872Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:4713707704:2026-06-16T00:29:18Z:re_review",
       "comment_id": "4713707704",
@@ -32425,6 +32398,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130463:5431998041:2026-08-27T14:39:31Z:clawsweeper_auto_repair",
+      "comment_id": "5431998041",
+      "comment_version_key": "5431998041:2026-08-27T14:39:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130463#issuecomment-5431998041",
+      "comment_created_at": "2026-08-26T22:48:23Z",
+      "comment_updated_at": "2026-08-27T14:39:31Z",
+      "comment_body_sha256": "fe732dab0f8c77142417489f9034797915b2d4b5794845077acf8423f6f28cd6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130463,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5ae6b20d0ed537e85a421378058bea821a4bb93e)",
+      "expected_head_sha": "5ae6b20d0ed537e85a421378058bea821a4bb93e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T14:47:12.604Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-image-history-mention-strip",
+        "head_sha": "5ae6b20d0ed537e85a421378058bea821a4bb93e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
