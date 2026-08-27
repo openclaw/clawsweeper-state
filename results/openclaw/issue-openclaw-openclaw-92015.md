@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92015"
 mode: "autonomous"
-run_id: "33067331346"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33067331346"
+run_id: "33068290831"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33068290831"
 head_sha: "0bd84d42bc0487c32af2285006884d4f9b2f7763"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-27T11:46:42.532Z"
+published_at: "2026-08-27T11:58:05.149Z"
 canonical: "https://github.com/openclaw/openclaw/issues/92015"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/92015"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33067331346](https://github.com/openclaw/clawsweeper/actions/runs/33067331346)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33068290831](https://github.com/openclaw/clawsweeper/actions/runs/33068290831)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/92015
 
 ## Summary
 
-#92015 remains reproducible on main c76729846538bf44815ac94cb6edc1331460f132: command preparation bootstraps the inherited workspace before resolving ready ACP metadata. No patch or tests could run because this checkout is read-only and the required sibling ../codex source is unavailable.
+The ACP inherited-workspace scaffold ordering remains present on main. Implementation is blocked because the mandatory sibling ../codex source checkout is unavailable and this read-only workspace cannot clone it, author a failing regression, or produce the required branch.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/92015
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #92015 |  |  |
 
 ## Apply Actions
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/92015
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #92015 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout and missing required ../codex source inspection; the repair path is otherwise narrow. |
-| #78093 | keep_related | planned | related | Different root cause and product scope. |
-| #92939 | keep_closed | skipped | superseded | Already closed; no mutation allowed or needed. |
-| #93176 | keep_closed | skipped | related | Already closed; historical context only. |
-| cluster:issue-openclaw-openclaw-92015 | build_fix_artifact | planned | canonical | Ready for a writable executor after the required Codex-source gate. |
+| #78093 | keep_related | planned | related | Keep open independently; it is not a duplicate of the ACP-specific lifecycle defect. |
+| #92015 | fix_needed | blocked | canonical | The issue remains canonical. The executable fix path is blocked pending direct Codex-source inspection and a writable checkout for the required pre-fix regression. |
+| cluster:issue-openclaw-openclaw-92015 | build_fix_artifact | blocked | canonical | Preserve the authorized new-PR repair path without claiming an unverified implementation is ready. |
+| #92939 | keep_closed | skipped | superseded | Historical useful attempt only; no mutation is permitted for an already-closed PR. |
+| #93176 | keep_closed | skipped | related | Historical related context, not an ACP lifecycle fix target. |
 
 ## Needs Human
 
