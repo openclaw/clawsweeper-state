@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T21:05:22.814Z",
+  "updated_at": "2026-08-27T21:06:18.402Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111351:5308312100:2026-08-16T15:56:40Z:re_review",
-      "comment_id": "5308312100",
-      "comment_version_key": "5308312100:2026-08-16T15:56:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111351#issuecomment-5308312100",
-      "comment_created_at": "2026-08-16T15:56:40Z",
-      "comment_updated_at": "2026-08-16T15:56:40Z",
-      "comment_body_sha256": "7dbaf34aced3ed8e7d95151f59dda061cbbacf6ae29af72424dafccbb3eccaba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111351,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T14:41:28.836Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111351:5378381218:2026-08-22T06:12:03Z:re_review",
       "comment_id": "5378381218",
@@ -32000,6 +31973,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3539:5445213556:2026-08-27T21:05:27Z:clawsweeper_needs_human",
+      "comment_id": "5445213556",
+      "comment_version_key": "5445213556:2026-08-27T21:05:27Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3539#issuecomment-5445213556",
+      "comment_created_at": "2026-08-27T21:05:27Z",
+      "comment_updated_at": "2026-08-27T21:05:27Z",
+      "comment_body_sha256": "3dbec96a102f9966640890f947c2ec2282652aef75285f871e9e4a069f338396",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3539,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restrict the cleanup job to main before granting Production access (P1)** - This manually dispatched job has no main-ref gate, unlike the existing deploy and catalog-publication workflows. A non-main ref contain...; Review finding: [P1] Restrict the cleanup job to main before granting Production access — .github/workflows/skill-manual-override-cleanup.yml:32-35 - [P1] Pin checkout to the exis... (sha=e122d81f92fcce4641f30a4bb364fe4bc90499a2)",
+      "expected_head_sha": "e122d81f92fcce4641f30a4bb364fe4bc90499a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T21:06:18.402Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/manual-override-cleanup-runner",
+        "head_sha": "e122d81f92fcce4641f30a4bb364fe4bc90499a2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
