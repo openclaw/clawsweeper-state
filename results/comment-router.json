@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T13:03:53.492Z",
+  "updated_at": "2026-08-27T13:04:50.158Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1260:5435908368:2026-08-27T07:37:40Z:clawsweeper_needs_human",
-      "comment_id": "5435908368",
-      "comment_version_key": "5435908368:2026-08-27T07:37:40Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1260#issuecomment-5435908368",
-      "comment_created_at": "2026-08-27T07:37:40Z",
-      "comment_updated_at": "2026-08-27T07:37:40Z",
-      "comment_body_sha256": "5d0021e564879d192404519a74e98d0be9ff732323534620a8c6fb8cdbf0dc59",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1260,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body reports that the local full check is not green for disclosed inherited failures, so the in-progress exact-head hosted pnpm check should complete successfully before merge. (sha=f8536584ad1bc26f50f5d81a08cafd669ad10f49)",
-      "expected_head_sha": "f8536584ad1bc26f50f5d81a08cafd669ad10f49",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T07:42:19.423Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/offline-baseline-preparation",
-        "head_sha": "f8536584ad1bc26f50f5d81a08cafd669ad10f49",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1239:5435948521:2026-08-27T07:41:22Z:clawsweeper_auto_repair",
       "comment_id": "5435948521",
@@ -31935,6 +31902,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120161:5439539072:2026-08-27T13:04:01Z:re_review",
+      "comment_id": "5439539072",
+      "comment_version_key": "5439539072:2026-08-27T13:04:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120161#issuecomment-5439539072",
+      "comment_created_at": "2026-08-27T13:04:01Z",
+      "comment_updated_at": "2026-08-27T13:04:01Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120161,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T13:04:48.124Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-shard-concurrency-env",
+        "head_sha": "a76ea0dca9e8c8b6a6d6c2c0f6b116985042cec3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
