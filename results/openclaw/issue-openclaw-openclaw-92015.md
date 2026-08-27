@@ -2,30 +2,30 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92015"
 mode: "autonomous"
-run_id: "33063586396"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33063586396"
-head_sha: "a22ff989bdf474dbe9c917f34199c7fea45c27c1"
+run_id: "33067331346"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33067331346"
+head_sha: "0bd84d42bc0487c32af2285006884d4f9b2f7763"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-27T11:20:43.061Z"
+published_at: "2026-08-27T11:46:42.532Z"
 canonical: "https://github.com/openclaw/openclaw/issues/92015"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/92015"
 canonical_pr: null
 actions_total: 5
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-92015
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33063586396](https://github.com/openclaw/clawsweeper/actions/runs/33063586396)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33067331346](https://github.com/openclaw/clawsweeper/actions/runs/33067331346)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/92015
 
 ## Summary
 
-#92015 remains a narrow, source-reproducible ACP workspace-lifecycle bug, but this worker cannot safely implement or validate it: the required sibling ../codex checkout is absent, and the read-only sandbox prevents both cloning it and running tests (Corepack failed with EROFS).
+#92015 remains reproducible on main c76729846538bf44815ac94cb6edc1331460f132: command preparation bootstraps the inherited workspace before resolving ready ACP metadata. No patch or tests could run because this checkout is read-only and the required sibling ../codex source is unavailable.
 
 ## Impact
 
@@ -44,18 +44,17 @@ Canonical: https://github.com/openclaw/openclaw/issues/92015
 | Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #92015 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,12 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/92015
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #78093 | keep_related | planned | related | Related workspace family, but not a duplicate. |
-| #92015 | fix_needed | blocked | canonical | Implementation and regression proof require a writable checkout with the mandated ../codex source inspection. |
-| #92939 | keep_closed | skipped | superseded | Closed historical attempt; no closure action is valid. |
-| #93176 | keep_closed | skipped | related | Closed related context; no closure action is valid. |
-| cluster:issue-openclaw-openclaw-92015 | build_fix_artifact | planned | canonical | Narrow repair plan is ready, but execution is blocked by the environment. |
+| #92015 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout and missing required ../codex source inspection; the repair path is otherwise narrow. |
+| #78093 | keep_related | planned | related | Different root cause and product scope. |
+| #92939 | keep_closed | skipped | superseded | Already closed; no mutation allowed or needed. |
+| #93176 | keep_closed | skipped | related | Already closed; historical context only. |
+| cluster:issue-openclaw-openclaw-92015 | build_fix_artifact | planned | canonical | Ready for a writable executor after the required Codex-source gate. |
 
 ## Needs Human
 
-- Provide a writable, current checkout that includes the required sibling ../codex source (or permits its clone); then reproduce the regression, implement the artifact, and run the listed validations.
+- none

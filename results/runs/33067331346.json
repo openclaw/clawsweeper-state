@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-92015",
+  "mode": "autonomous",
+  "run_id": "33067331346",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33067331346",
+  "head_sha": "0bd84d42bc0487c32af2285006884d4f9b2f7763",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-92015.md",
+  "published_at": "2026-08-27T11:46:42.532Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/92015",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/92015",
+  "canonical_pr": null,
+  "summary": "#92015 remains reproducible on main c76729846538bf44815ac94cb6edc1331460f132: command preparation bootstraps the inherited workspace before resolving ready ACP metadata. No patch or tests could run because this checkout is read-only and the required sibling ../codex source is unavailable.",
+  "actions": [
+    {
+      "target": "#92015",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only checkout and missing required ../codex source inspection; the repair path is otherwise narrow."
+    },
+    {
+      "target": "#78093",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Different root cause and product scope."
+    },
+    {
+      "target": "#92939",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation allowed or needed."
+    },
+    {
+      "target": "#93176",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Already closed; historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-92015",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Ready for a writable executor after the required Codex-source gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
