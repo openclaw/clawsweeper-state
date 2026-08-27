@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T18:33:38.902Z",
+  "updated_at": "2026-08-27T18:35:26.689Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113896:5080971631:2026-08-27T11:50:03Z:clawsweeper_auto_repair",
-      "comment_id": "5080971631",
-      "comment_version_key": "5080971631:2026-08-27T11:50:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113896#issuecomment-5080971631",
-      "comment_created_at": "2026-07-25T23:10:11Z",
-      "comment_updated_at": "2026-08-27T11:50:03Z",
-      "comment_body_sha256": "3eeb69135202f31abe84681cd35f8fefc2230d5617cf527d04dd3e4023ed23f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113896,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f9521eedf826ded4e5ee53de2a2699eb98dbbf4d)",
-      "expected_head_sha": "f9521eedf826ded4e5ee53de2a2699eb98dbbf4d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T13:14:20.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "nephesh_integration",
-        "head_sha": "f9521eedf826ded4e5ee53de2a2699eb98dbbf4d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114193:5085962616:2026-08-27T11:48:37Z:clawsweeper_auto_repair",
       "comment_id": "5085962616",
@@ -31814,6 +31781,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130721:5443583329:2026-08-27T18:34:37Z:re_review",
+      "comment_id": "5443583329",
+      "comment_version_key": "5443583329:2026-08-27T18:34:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130721#issuecomment-5443583329",
+      "comment_created_at": "2026-08-27T18:34:37Z",
+      "comment_updated_at": "2026-08-27T18:34:37Z",
+      "comment_body_sha256": "5d685534b7179f6f566b9f0a4e4e5c10d31c9b87e953bfc0fc2afabfeba98ec8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130721,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T18:35:23.755Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/resume-turn-after-transport-drop",
+        "head_sha": "58fc21a8d8b87897ef923e6eabaf7b5bfa58c994",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
