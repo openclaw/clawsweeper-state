@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130960",
+  "mode": "autonomous",
+  "run_id": "33080649264",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33080649264",
+  "head_sha": "0bd84d42bc0487c32af2285006884d4f9b2f7763",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130960.md",
+  "published_at": "2026-08-27T15:38:40.184Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130960",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130960",
+  "canonical_pr": null,
+  "summary": "#130960 remains the open canonical bug. Source inspection locates the pre-dispatch blank-category rejection, but this worker cannot implement or validate the repair: the checkout is read-only, `tsx` is absent, and the required sibling Codex source checkout is unavailable for the mandated direct inspection.",
+  "actions": [
+    {
+      "target": "#130960",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130960",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only/missing-dependency environment and unavailable required Codex-source inspection; no GitHub mutation was attempted."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130960",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130960",
+      "candidate_fix": null,
+      "reason": "Executor should apply and validate this artifact in a writable checkout with dependencies and the required sibling Codex source available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
