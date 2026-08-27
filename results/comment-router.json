@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T18:28:55.273Z",
+  "updated_at": "2026-08-27T18:29:16.681Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113366:5072128959:2026-08-27T09:44:12Z:clawsweeper_needs_human",
-      "comment_id": "5072128959",
-      "comment_version_key": "5072128959:2026-08-27T09:44:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113366#issuecomment-5072128959",
-      "comment_created_at": "2026-07-24T16:40:21Z",
-      "comment_updated_at": "2026-08-27T09:44:12Z",
-      "comment_body_sha256": "331dc29af741fe810b15c695f1bd8d0181b79da835d9e5c0bae51e8a3e1b8599",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113366,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The fallback is readable but static: invalid-carousel actions no longer remain clickable, so maintainers should explicitly accept that degradation over silent reply loss. (sha=34c11b0094546f6e7838237f52e4cfd001dc901f)",
-      "expected_head_sha": "34c11b0094546f6e7838237f52e4cfd001dc901f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T13:14:20.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-carousel-column-consistency",
-        "head_sha": "34c11b0094546f6e7838237f52e4cfd001dc901f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112748:5074840239:2026-08-27T11:45:21Z:clawsweeper_auto_repair",
       "comment_id": "5074840239",
@@ -31769,6 +31736,53 @@
         "kind": "pull_request",
         "branch": "security/codeql-caclawphony-workflow-permissions-20260827",
         "head_sha": "e2409fb7d635723f7f765eb450163be6c4b7f907",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124162:5443509169:2026-08-27T18:28:23Z:re_review",
+      "comment_id": "5443509169",
+      "comment_version_key": "5443509169:2026-08-27T18:28:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5443509169",
+      "comment_created_at": "2026-08-27T18:28:23Z",
+      "comment_updated_at": "2026-08-27T18:28:23Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124162,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T18:29:14.210Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-aware-resume-breaker-122950",
+        "head_sha": "6189bac576d1c21720dfab28b3afcfb6bd157559",
         "cluster_id": null,
         "job_path": null
       },
