@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-20837",
+  "mode": "autonomous",
+  "run_id": "33032367455",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33032367455",
+  "head_sha": "4a6f9ecb165edc400996fb3bb58c1a56d6133bd2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-20837.md",
+  "published_at": "2026-08-27T02:19:40.679Z",
+  "canonical": "#20837",
+  "canonical_issue": "#20837",
+  "canonical_pr": null,
+  "summary": "Current main still drops command-prompt runtime metadata. A narrow fix PR is appropriate, but this worker cannot complete the required direct ../codex source inspection or write a repair branch in the provided environment.",
+  "actions": [
+    {
+      "target": "#20837",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "The canonical issue has a scoped repair plan, but the mandatory Codex gate and read-only checkout block producing the validated branch."
+    },
+    {
+      "target": "#21271",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#20837",
+      "candidate_fix": null,
+      "reason": "Historical source context only."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair checkout and the required sibling ../codex source checkout so the mandatory direct Codex inspection, regression reproduction, patch, and validation can proceed."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

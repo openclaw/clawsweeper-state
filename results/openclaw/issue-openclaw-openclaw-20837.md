@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-20837"
 mode: "autonomous"
-run_id: "33028385141"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33028385141"
-head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
-workflow_conclusion: "failure"
+run_id: "33032367455"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33032367455"
+head_sha: "4a6f9ecb165edc400996fb3bb58c1a56d6133bd2"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-27T01:07:23.905Z"
-canonical: "https://github.com/openclaw/openclaw/issues/20837"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/20837"
+published_at: "2026-08-27T02:19:40.679Z"
+canonical: "#20837"
+canonical_issue: "#20837"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-20837
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33028385141](https://github.com/openclaw/clawsweeper/actions/runs/33028385141)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33032367455](https://github.com/openclaw/clawsweeper/actions/runs/33032367455)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/20837
+Canonical: #20837
 
 ## Summary
 
-#20837 remains the canonical, source-reproducible command-prompt metadata bug. Implementation is blocked in this read-only checkout: the required sibling ../codex source is absent and cannot be cloned (EROFS), and dependencies are unavailable for Vitest.
+Current main still drops command-prompt runtime metadata. A narrow fix PR is appropriate, but this worker cannot complete the required direct ../codex source inspection or write a repair branch in the provided environment.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/20837
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #20837 | keep_canonical | planned | canonical | The hydrated issue is open and is the single canonical tracker; selective reply routing remains outside this repair. |
-| #20837 | fix_needed | blocked | canonical | No code change or PR can be prepared until a writable checkout with dependencies and the required sibling Codex source is available. |
-| cluster:issue-openclaw-openclaw-20837 | build_fix_artifact | planned | canonical | Create one credited ClawSweeper fix PR after the blocked local prerequisites are restored. |
-| #21271 | keep_closed | skipped | superseded | Preserve as source context and credit @evansantos in the new PR; do not reopen or close an already-closed PR. |
+| #20837 | fix_needed | blocked | canonical | The canonical issue has a scoped repair plan, but the mandatory Codex gate and read-only checkout block producing the validated branch. |
+| #21271 | keep_closed | skipped | related | Historical source context only. |
 
 ## Needs Human
 
-- none
+- Provide a writable repair checkout and the required sibling ../codex source checkout so the mandatory direct Codex inspection, regression reproduction, patch, and validation can proceed.
