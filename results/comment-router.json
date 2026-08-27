@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T07:29:34.234Z",
+  "updated_at": "2026-08-27T07:30:35.929Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128141:5407763287:2026-08-25T08:43:11Z:re_review",
-      "comment_id": "5407763287",
-      "comment_version_key": "5407763287:2026-08-25T08:43:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128141#issuecomment-5407763287",
-      "comment_created_at": "2026-08-25T08:43:11Z",
-      "comment_updated_at": "2026-08-25T08:43:11Z",
-      "comment_body_sha256": "c15a5c837eb5f93389d94cceddb4bfb164a7c3a57f88d96f14acc1d985091ea9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128141,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T04:07:50.374Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128141:5415500967:2026-08-25T19:19:20Z:re_review",
       "comment_id": "5415500967",
@@ -31435,6 +31408,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130691:5434552827:2026-08-27T07:29:45Z:clawsweeper_needs_human",
+      "comment_id": "5434552827",
+      "comment_version_key": "5434552827:2026-08-27T07:29:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130691#issuecomment-5434552827",
+      "comment_created_at": "2026-08-27T04:54:58Z",
+      "comment_updated_at": "2026-08-27T07:29:45Z",
+      "comment_body_sha256": "7f69c3a014b934fb1a60a30c536264f1c5f07e212f47f67c1b0cab263b0e1dfa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130691,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: provide inspectable, redacted exact-head evidence that revoking the nearest worker turn or replacing t... (sha=b3c68e3e6ed7b4923de7ec81046ecee88d455e7e)",
+      "expected_head_sha": "b3c68e3e6ed7b4923de7ec81046ecee88d455e7e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T07:30:35.929Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-e2e-fix-worker-spawn-context",
+        "head_sha": "b3c68e3e6ed7b4923de7ec81046ecee88d455e7e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
