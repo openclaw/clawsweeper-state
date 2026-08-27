@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T10:08:55.466Z",
+  "updated_at": "2026-08-27T10:08:56.215Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5294192660:2026-08-14T14:02:53Z:re_review",
-      "comment_id": "5294192660",
-      "comment_version_key": "5294192660:2026-08-14T14:02:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5294192660",
-      "comment_created_at": "2026-08-14T14:02:53Z",
-      "comment_updated_at": "2026-08-14T14:02:53Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T05:57:46.771Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5294289413:2026-08-14T14:12:15Z:re_review",
       "comment_id": "5294289413",
@@ -32491,6 +32464,39 @@
       "status": "skipped",
       "processed_at": "2026-08-27T10:08:55.466Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130804:5436264159:2026-08-27T10:07:03Z:clawsweeper_needs_human",
+      "comment_id": "5436264159",
+      "comment_version_key": "5436264159:2026-08-27T10:07:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130804#issuecomment-5436264159",
+      "comment_created_at": "2026-08-27T08:12:05Z",
+      "comment_updated_at": "2026-08-27T10:07:03Z",
+      "comment_body_sha256": "d9926babbd5c23c590be90ebd16b85d050d26967eddc7a4c543bfae7b3178c94",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130804,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The lifecycle change depends on Undici 8.10.0 abort and dispatcher-close behavior that could not be independently inspected here; the exact-head hosted checks remain incomplete. (sha=fe2cb3cd0f28a607a435699576c3c3a95639e598)",
+      "expected_head_sha": "fe2cb3cd0f28a607a435699576c3c3a95639e598",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T10:08:56.215Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/lmstudio-response-release-r11",
+        "head_sha": "fe2cb3cd0f28a607a435699576c3c3a95639e598",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
