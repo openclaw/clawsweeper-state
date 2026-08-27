@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T03:43:53.867Z",
+  "updated_at": "2026-08-27T03:44:29.696Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129348:5429452464:2026-08-26T22:43:42Z:re_review",
-      "comment_id": "5429452464",
-      "comment_version_key": "5429452464:2026-08-26T22:43:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129348#issuecomment-5429452464",
-      "comment_created_at": "2026-08-26T18:29:38Z",
-      "comment_updated_at": "2026-08-26T22:43:42Z",
-      "comment_body_sha256": "7673ba43d0eb8d8a09f1f7ce5bf197199166e9b1b952d12918b2a491f52a0f15",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129348,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T23:00:05.577Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/push-notifications-for-permission-requests",
-        "head_sha": "a36e244facc26c573b1d376ef7aa035b90d83048",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129348:5411555180:2026-08-26T22:59:06Z:clawsweeper_needs_human",
       "comment_id": "5411555180",
@@ -32271,6 +32224,39 @@
         "kind": "pull_request",
         "branch": "claude/130550-gemini-empty-candidate",
         "head_sha": "512b61077669c24026d8ffa091f23cd4f1ed0393",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130653:5434089694:2026-08-27T03:43:46Z:clawsweeper_needs_human",
+      "comment_id": "5434089694",
+      "comment_version_key": "5434089694:2026-08-27T03:43:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130653#issuecomment-5434089694",
+      "comment_created_at": "2026-08-27T03:43:46Z",
+      "comment_updated_at": "2026-08-27T03:43:46Z",
+      "comment_body_sha256": "f9907ca29e221af135d04c326bf63ba568111e2b30a582ad11a9d5dd4aa4609d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130653,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Complete dependency and artifact provenance verification** - The PR changes resolved packages, native hashes, and Docker digests, while this review environment could not retrieve upstre...; Review finding: [medium] Complete dependency and artifact provenance verification — pnpm-lock.yaml:1 (sha=afc92a0840cb99cca875ec0b2f94f4ea19ad9c86)",
+      "expected_head_sha": "afc92a0840cb99cca875ec0b2f94f4ea19ad9c86",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T03:44:29.696Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cooled-dependency-followup-20260827",
+        "head_sha": "afc92a0840cb99cca875ec0b2f94f4ea19ad9c86",
         "cluster_id": null,
         "job_path": null
       }
