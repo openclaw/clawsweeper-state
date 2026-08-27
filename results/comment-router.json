@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T17:21:09.645Z",
+  "updated_at": "2026-08-27T17:21:49.572Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130859:5437037504:2026-08-27T11:06:28Z:clawsweeper_needs_human",
-      "comment_id": "5437037504",
-      "comment_version_key": "5437037504:2026-08-27T11:06:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130859#issuecomment-5437037504",
-      "comment_created_at": "2026-08-27T09:25:36Z",
-      "comment_updated_at": "2026-08-27T11:06:28Z",
-      "comment_body_sha256": "0999c77b2fe709a1b3595ebe1b36bce8ac30fe5ad90e44f28121cf30330b82df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130859,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The copied curl results call Slack directly and do not show the PR’s OpenClaw message-action-to-runtime path; add redacted after-fix O...; Review finding: [P1] Document the optional OAuth scope installation path — docs/channels/slack.md:1293 - [P2] Correct the documented authorization boundary — docs/channels/slack.m... (sha=0c15fbbf47ece9d9e337366bb150ad2a3cd36b55)",
-      "expected_head_sha": "0c15fbbf47ece9d9e337366bb150ad2a3cd36b55",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T11:07:15.323Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/slack-channel-management",
-        "head_sha": "0c15fbbf47ece9d9e337366bb150ad2a3cd36b55",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128141:5384873530:2026-08-27T11:07:25Z:clawsweeper_needs_human",
       "comment_id": "5384873530",
@@ -32308,6 +32275,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117248:5442707303:2026-08-27T17:21:00Z:re_review",
+      "comment_id": "5442707303",
+      "comment_version_key": "5442707303:2026-08-27T17:21:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117248#issuecomment-5442707303",
+      "comment_created_at": "2026-08-27T17:21:00Z",
+      "comment_updated_at": "2026-08-27T17:21:00Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117248,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T17:21:47.059Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-rem-junk-topics",
+        "head_sha": "ae06208a7206aa591806a2072051e1f8fb150d2d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
