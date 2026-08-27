@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92015"
 mode: "autonomous"
-run_id: "33044336946"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33044336946"
-head_sha: "ff813ac2fa76d853d8a9129e6763d09624cafe72"
-workflow_conclusion: "failure"
+run_id: "33054243454"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33054243454"
+head_sha: "71df3a1ce714d737e250008597075bb5eaeb2ac4"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-27T07:27:56.375Z"
+published_at: "2026-08-27T08:45:27.581Z"
 canonical: "https://github.com/openclaw/openclaw/issues/92015"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/92015"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-92015
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33044336946](https://github.com/openclaw/clawsweeper/actions/runs/33044336946)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33054243454](https://github.com/openclaw/clawsweeper/actions/runs/33054243454)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/92015
 
 ## Summary
 
-#92015 has a narrow, reproducible repair path, but implementation is blocked in this run: the target checkout is read-only and the mandatory sibling ../codex source is unavailable for the required direct protocol/runtime check. The fix artifact is ready for a writable executor.
+#92015 remains the canonical reproducible ACP workspace-lifecycle bug, but this worker cannot create or validate the required repair: the mandatory sibling ../codex direct-inspection gate cannot be met because that checkout is absent and the workspace is read-only, which also prevents a regression reproduction and branch edits.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/92015
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #92015 |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/92015
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #78093 | keep_related | planned | related | Leave open as a separate workspace-policy discussion. |
-| #92015 | fix_needed | blocked | canonical | A writable checkout plus the required sibling Codex source are needed before making and validating the repair. |
-| #92939 | keep_closed | skipped | superseded | Closed context only; retain as credited historical input, not a candidate to revive. |
-| #93176 | keep_closed | skipped | related | Closed related context; no action appropriate. |
-| cluster:issue-openclaw-openclaw-92015 | build_fix_artifact | planned | canonical | Prepare one narrow replacement PR from clawsweeper/issue-openclaw-openclaw-92015 when a writable executor is available. |
+| #78093 | keep_related | planned | related | Keep open independently; neither report subsumes the other. |
+| #92015 | fix_needed | blocked | canonical | A repair must carry authored-versus-inherited workspace and ACP effective-cwd facts to the shared lifecycle owner, but direct Codex protocol inspection and writable regression validation are unavailable. |
+| cluster:issue-openclaw-openclaw-92015 | build_fix_artifact | blocked | canonical | Implementation artifact is blocked pending a writable checkout and the required direct ../codex inspection. |
+| #92939 | keep_closed | skipped | superseded | Historical contributor attempt; do not mutate an already-closed PR. |
+| #93176 | keep_closed | skipped | related | Historical related work; do not mutate an already-closed PR. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout with the required sibling ../codex source available, then rerun the focused ACP lifecycle regression and implementation lane.
