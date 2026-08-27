@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T22:54:32.354Z",
+  "updated_at": "2026-08-27T22:56:36.836Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1264:5441527947:2026-08-27T15:39:25Z:re_review",
-      "comment_id": "5441527947",
-      "comment_version_key": "5441527947:2026-08-27T15:39:25Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1264#issuecomment-5441527947",
-      "comment_created_at": "2026-08-27T15:39:25Z",
-      "comment_updated_at": "2026-08-27T15:39:25Z",
-      "comment_body_sha256": "f52f26a6a561087f2bedb7cd99cdf03e370dfb36f6bd3832a18a1a3f4a728e46",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1264,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T15:40:15.125Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/terminal-plan-prerequisites-20260827",
-        "head_sha": "213927808a1d14c11fb8507e45dcc061ceeade62",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124162:5441500485:2026-08-27T15:37:13Z:re_review",
       "comment_id": "5441500485",
@@ -31949,6 +31902,39 @@
         "kind": "pull_request",
         "branch": "codex/browser-capability-isolation-after-645",
         "head_sha": "8ec4ba14b0cbf8795cd1e47d785a313013722a28",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3246:5443560635:2026-08-27T22:55:54Z:clawsweeper_needs_human",
+      "comment_id": "5443560635",
+      "comment_version_key": "5443560635:2026-08-27T22:55:54Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3246#issuecomment-5443560635",
+      "comment_created_at": "2026-08-27T18:32:47Z",
+      "comment_updated_at": "2026-08-27T22:55:54Z",
+      "comment_body_sha256": "185ee4ef1c367977f70568c53c86207ebd6ae7f566358012607287dc8a2804b8",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3246,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR contains after-fix offscreen production-view screenshots using synthetic fixtures, but not a redacted installed-app or CLI capt... (sha=02b8b872dbd18aa2ba2a69cdf595b09c659e4ca9)",
+      "expected_head_sha": "02b8b872dbd18aa2ba2a69cdf595b09c659e4ca9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T22:56:36.836Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/pi-provider-tokscale",
+        "head_sha": "02b8b872dbd18aa2ba2a69cdf595b09c659e4ca9",
         "cluster_id": null,
         "job_path": null
       }
