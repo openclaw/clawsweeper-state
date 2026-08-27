@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T12:24:29.974Z",
+  "updated_at": "2026-08-27T12:24:31.710Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130609:5435529635:2026-08-27T07:04:26Z:re_review",
-      "comment_id": "5435529635",
-      "comment_version_key": "5435529635:2026-08-27T07:04:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130609#issuecomment-5435529635",
-      "comment_created_at": "2026-08-27T07:04:26Z",
-      "comment_updated_at": "2026-08-27T07:04:26Z",
-      "comment_body_sha256": "4607f69f8dea36d88f2cfbca256b5c67ce7fd4ea26a1743f117d78824c84a887",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130609,
-      "author": "pengzh1",
-      "author_id": 24854675,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T07:05:13.209Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pdf-tool-workspace-relative",
-        "head_sha": "e6062a8f404991ba0df4b91bf2f447ad2900f85b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3230:5435543514:2026-08-27T07:05:48Z:clawsweeper_auto_repair",
       "comment_id": "5435543514",
@@ -32140,6 +32093,39 @@
         "kind": "pull_request",
         "branch": "issue-130187-channels-logs-level",
         "head_sha": "2afb303259ef82f6dc12bf67a1d413f199fd5349",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130205:5428901410:2026-08-27T12:23:30Z:clawsweeper_needs_human",
+      "comment_id": "5428901410",
+      "comment_version_key": "5428901410:2026-08-27T12:23:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130205#issuecomment-5428901410",
+      "comment_created_at": "2026-08-26T17:42:54Z",
+      "comment_updated_at": "2026-08-27T12:23:30Z",
+      "comment_body_sha256": "48efcdf36dd2aeb0b28dc8a98fe8a19916c77b88b94eadd817b47b63db3755d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130205,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The claimed in-process event-bus proof is relevant, but it is not inspectable and reports eventCount=1 although the checked probe emit... (sha=52c2c2a7f81454050bdbde56b7f057647e82ef2b)",
+      "expected_head_sha": "52c2c2a7f81454050bdbde56b7f057647e82ef2b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T12:24:31.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/code-bug-agent-terminal-receipt-normalization",
+        "head_sha": "52c2c2a7f81454050bdbde56b7f057647e82ef2b",
         "cluster_id": null,
         "job_path": null
       }
