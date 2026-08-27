@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92015"
 mode: "autonomous"
-run_id: "33068290831"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33068290831"
+run_id: "33069580676"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33069580676"
 head_sha: "0bd84d42bc0487c32af2285006884d4f9b2f7763"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-27T11:58:05.149Z"
+published_at: "2026-08-27T12:25:32.284Z"
 canonical: "https://github.com/openclaw/openclaw/issues/92015"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/92015"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33068290831](https://github.com/openclaw/clawsweeper/actions/runs/33068290831)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33069580676](https://github.com/openclaw/clawsweeper/actions/runs/33069580676)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/92015
 
 ## Summary
 
-The ACP inherited-workspace scaffold ordering remains present on main. Implementation is blocked because the mandatory sibling ../codex source checkout is unavailable and this read-only workspace cannot clone it, author a failing regression, or produce the required branch.
+A narrow ACP workspace-lifecycle repair is identified, but this worker cannot implement or validate it: the checkout and temp filesystem are read-only, pnpm/Corepack fails with EROFS, and mandatory ../codex source is absent and cannot be cloned. No GitHub or source mutation was performed.
 
 ## Impact
 
@@ -54,7 +54,7 @@ The ACP inherited-workspace scaffold ordering remains present on main. Implement
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #92015 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,11 +66,11 @@ The ACP inherited-workspace scaffold ordering remains present on main. Implement
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #78093 | keep_related | planned | related | Keep open independently; it is not a duplicate of the ACP-specific lifecycle defect. |
-| #92015 | fix_needed | blocked | canonical | The issue remains canonical. The executable fix path is blocked pending direct Codex-source inspection and a writable checkout for the required pre-fix regression. |
-| cluster:issue-openclaw-openclaw-92015 | build_fix_artifact | blocked | canonical | Preserve the authorized new-PR repair path without claiming an unverified implementation is ready. |
-| #92939 | keep_closed | skipped | superseded | Historical useful attempt only; no mutation is permitted for an already-closed PR. |
-| #93176 | keep_closed | skipped | related | Historical related context, not an ACP lifecycle fix target. |
+| #92015 | fix_needed | blocked | canonical | A writable executor must complete the required direct Codex-source preflight, add a pre-fix boundary regression, and validate the repair. |
+| cluster:issue-openclaw-openclaw-92015 | build_fix_artifact | planned | canonical | Artifact is ready for a writable executor; local implementation is blocked by environment restrictions. |
+| #78093 | keep_related | planned | related | Same subsystem, distinct root cause; leave open. |
+| #92939 | keep_closed | skipped | superseded | Historical source only; closed items receive no closeout action. |
+| #93176 | keep_closed | skipped | related | Historical related context only; closed items receive no closeout action. |
 
 ## Needs Human
 
