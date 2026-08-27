@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-92015",
+  "mode": "autonomous",
+  "run_id": "33072289852",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33072289852",
+  "head_sha": "0bd84d42bc0487c32af2285006884d4f9b2f7763",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-92015.md",
+  "published_at": "2026-08-27T12:49:49.192Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/92015",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/92015",
+  "canonical_pr": null,
+  "summary": "#92015 remains a reproducible lifecycle-order bug on current main, but implementation is blocked: the mandatory sibling ../codex source checkout is absent and this read-only sandbox cannot clone it or write the repair. No GitHub mutations were made.",
+  "actions": [
+    {
+      "target": "#78093",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Related workspace family, but a distinct root cause and product decision."
+    },
+    {
+      "target": "#92015",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "The ACP binding/effective-cwd contract must be checked in the required Codex source before implementing the lifecycle gate."
+    },
+    {
+      "target": "#92939",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Closed historical attempt; no closure action is valid."
+    },
+    {
+      "target": "#93176",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Closed related context; no closure action is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-92015",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Narrow repair path identified but cannot be safely finalized or written without the required Codex-source inspection."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#92015",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
