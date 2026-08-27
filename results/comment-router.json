@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T05:06:08.616Z",
+  "updated_at": "2026-08-27T05:06:50.629Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129250:5409502609:2026-08-27T01:15:47Z:clawsweeper_needs_human",
-      "comment_id": "5409502609",
-      "comment_version_key": "5409502609:2026-08-27T01:15:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129250#issuecomment-5409502609",
-      "comment_created_at": "2026-08-25T11:09:46Z",
-      "comment_updated_at": "2026-08-27T01:15:47Z",
-      "comment_body_sha256": "97cae1c0c6bdb1c645be114304f4da3f4e52ca8d1763d045a35d4b9e3aa00d79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129250,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Reload now intentionally makes a still-running retired callback observe no run context and makes its writes and clears no-ops; maintainers must confirm that this is the Plugin SDK cal... (sha=bb7b135523de78e976193108bbb4eb59c6bf982d)",
-      "expected_head_sha": "bb7b135523de78e976193108bbb4eb59c6bf982d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T01:21:23.105Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oc-92a.10/agent-event-generation-fence",
-        "head_sha": "bb7b135523de78e976193108bbb4eb59c6bf982d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130547:5433107688:2026-08-27T01:17:55Z:clawsweeper_needs_human",
       "comment_id": "5433107688",
@@ -31716,6 +31683,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123482:5434625262:2026-08-27T05:06:04Z:re_review",
+      "comment_id": "5434625262",
+      "comment_version_key": "5434625262:2026-08-27T05:06:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5434625262",
+      "comment_created_at": "2026-08-27T05:06:04Z",
+      "comment_updated_at": "2026-08-27T05:06:04Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123482,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T05:06:48.255Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/session-performance",
+        "head_sha": "b8633cc2fcec959546f605d203720d34e3f3b76f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
