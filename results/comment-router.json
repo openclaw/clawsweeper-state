@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T14:04:11.850Z",
+  "updated_at": "2026-08-27T14:04:12.670Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:91988:4703463377:2026-08-27T08:54:41Z:clawsweeper_auto_repair",
-      "comment_id": "4703463377",
-      "comment_version_key": "4703463377:2026-08-27T08:54:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/91988#issuecomment-4703463377",
-      "comment_created_at": "2026-06-14T23:48:29Z",
-      "comment_updated_at": "2026-08-27T08:54:41Z",
-      "comment_body_sha256": "e04ae5d4ef21a39e74950c9476679c57ffe00efda59f186c15564dcea91e2f54",
-      "repo": "openclaw/openclaw",
-      "issue_number": 91988,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=aa33aa044203e85614802c3dd3fc26a5785f9541)",
-      "expected_head_sha": "aa33aa044203e85614802c3dd3fc26a5785f9541",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T08:55:46.056Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/preseeded-bootstrap-91931",
-        "head_sha": "aa33aa044203e85614802c3dd3fc26a5785f9541",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:91988:4703562328:2026-06-15T00:20:46Z:re_review",
       "comment_id": "4703562328",
@@ -32127,6 +32094,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129913:5421421674:2026-08-27T14:02:10Z:clawsweeper_needs_human",
+      "comment_id": "5421421674",
+      "comment_version_key": "5421421674:2026-08-27T14:02:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129913#issuecomment-5421421674",
+      "comment_created_at": "2026-08-26T06:21:18Z",
+      "comment_updated_at": "2026-08-27T14:02:10Z",
+      "comment_body_sha256": "3e23ca7d00cc8af205151755c33a41f3b2c3ddad14d8bfc7171a345763ec4d50",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129913,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body includes terminal output for the new SQLite-backed tests, but their final delivery callback is mocked; add redacted after-fix evide... (sha=626610f69675d047c56bc3a865b9a8db98f45b2f)",
+      "expected_head_sha": "626610f69675d047c56bc3a865b9a8db98f45b2f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T14:04:12.670Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/session-delivery-monotonic-20260826",
+        "head_sha": "626610f69675d047c56bc3a865b9a8db98f45b2f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
