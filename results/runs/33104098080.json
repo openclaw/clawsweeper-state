@@ -1,0 +1,110 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131113",
+  "mode": "autonomous",
+  "run_id": "33104098080",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33104098080",
+  "head_sha": "7f9e3f99e312dc14e17084e66f23c1590e559b9e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131113.md",
+  "published_at": "2026-08-27T18:51:52.290Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131113",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131113",
+  "canonical_pr": null,
+  "summary": "#131113 is the open canonical bug. Source inspection confirms the nested-drain window and its coupled transcript predicate self-wait path. A narrow fix plan is ready, but this read-only shallow checkout cannot apply it, install missing dependencies, verify preflight main 5e924a574cf5d90efcd344131429936e718c20d6, or inspect the mandatory sibling ../codex checkout. Separate test-only queue-clear race was found and intentionally deferred as out of this one-cluster repair scope.",
+  "actions": [
+    {
+      "target": "#98416",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical related context only; no close or mutation is valid."
+    },
+    {
+      "target": "#98931",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical related context only; no close or mutation is valid."
+    },
+    {
+      "target": "#100314",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical related context only; no close or mutation is valid."
+    },
+    {
+      "target": "#101167",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical related context only; no close or mutation is valid."
+    },
+    {
+      "target": "#119221",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged historical PR; preserve its rebound invariant in the new repair."
+    },
+    {
+      "target": "#131113",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131113",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only, dependency-incomplete, shallow checkout and missing mandatory ../codex source; the repair itself is narrow and planned below."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131113",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131113",
+      "candidate_fix": null,
+      "reason": "Narrow new-fix-PR path; no contributor PR exists to repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131113",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131113",
+      "candidate_fix": null,
+      "reason": "Blocked pending execution of the attached artifact in a writable, current checkout."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 5,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "skipped": 5,
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
