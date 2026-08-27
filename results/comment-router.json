@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T11:57:08.344Z",
+  "updated_at": "2026-08-27T12:00:12.038Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125725:5435442027:2026-08-27T06:54:05Z:re_review",
-      "comment_id": "5435442027",
-      "comment_version_key": "5435442027:2026-08-27T06:54:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125725#issuecomment-5435442027",
-      "comment_created_at": "2026-08-27T06:54:05Z",
-      "comment_updated_at": "2026-08-27T06:54:05Z",
-      "comment_body_sha256": "00d5385452690b06205db848a751fa99256217fab6a6ee0d6713db562274a244",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125725,
-      "author": "Synthetic2802",
-      "author_id": 45599846,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T06:54:48.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-file-change-hook-params-current",
-        "head_sha": "8898ad9b5a6ed0012dfd259bd49d152348f2924f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clownfish:317:5432820842:2026-08-27T06:54:06Z:clawsweeper_needs_human",
       "comment_id": "5432820842",
@@ -32039,6 +31992,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130884:5438685629:2026-08-27T11:57:36Z:clawsweeper_needs_human",
+      "comment_id": "5438685629",
+      "comment_version_key": "5438685629:2026-08-27T11:57:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130884#issuecomment-5438685629",
+      "comment_created_at": "2026-08-27T11:57:36Z",
+      "comment_updated_at": "2026-08-27T11:57:36Z",
+      "comment_body_sha256": "26e651b3630d0dbeec988c7cb2da9549b82fe99aecabe4782f7a4b41e1fd3f28",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130884,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This protected maintainer PR needs ordinary maintainer and exact-head CI review, not a ClawSweeper repair lane. (sha=8240e0b10a2c4a20249e2f558e6907c194434333)",
+      "expected_head_sha": "8240e0b10a2c4a20249e2f558e6907c194434333",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T12:00:12.038Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/npm-install-throw-rollback",
+        "head_sha": "8240e0b10a2c4a20249e2f558e6907c194434333",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
