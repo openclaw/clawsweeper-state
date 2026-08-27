@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T00:51:10.889Z",
+  "updated_at": "2026-08-27T00:53:49.907Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:91237:5356935876:2026-08-20T14:01:05Z:re_review",
-      "comment_id": "5356935876",
-      "comment_version_key": "5356935876:2026-08-20T14:01:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/91237#issuecomment-5356935876",
-      "comment_created_at": "2026-08-20T14:01:05Z",
-      "comment_updated_at": "2026-08-20T14:01:05Z",
-      "comment_body_sha256": "c6fb7c1acdb4a7e71a2b9944aa1b07baf3fcdf30d244b1009172d6da530ba0c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 91237,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T19:14:17.639Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:91237:5357104036:2026-08-20T14:14:52Z:re_review",
       "comment_id": "5357104036",
@@ -32600,6 +32573,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129904:5422251287:2026-08-27T00:53:08Z:clawsweeper_needs_human",
+      "comment_id": "5422251287",
+      "comment_version_key": "5422251287:2026-08-27T00:53:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129904#issuecomment-5422251287",
+      "comment_created_at": "2026-08-26T07:50:17Z",
+      "comment_updated_at": "2026-08-27T00:53:08Z",
+      "comment_body_sha256": "a9119a77ff7a97890a639e712c0974469528130bc8c23cfac95f7de4c8149e53",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129904,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared MIME-aware ingestion changes affect image, audio, and video callers as well as WebChat; an error in detected-kind handling could reject otherwise deliverable media. (sha=14079ec1e1474549cd343a8f1925d5ed6186ac72)",
+      "expected_head_sha": "14079ec1e1474549cd343a8f1925d5ed6186ac72",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T00:53:49.907Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/webchat-message-document-attachments",
+        "head_sha": "14079ec1e1474549cd343a8f1925d5ed6186ac72",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
