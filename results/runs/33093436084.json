@@ -1,0 +1,108 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130977",
+  "mode": "autonomous",
+  "run_id": "33093436084",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33093436084",
+  "head_sha": "2129a78a502e4e6ed3dd0c521db5034743f1757a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130977.md",
+  "published_at": "2026-08-27T17:00:20.997Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130977",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130977",
+  "canonical_pr": null,
+  "summary": "#130977 is a real CI-harness concern, but the preflight omits the raw passing/failing startup-memory sample distributions needed to calibrate a non-arbitrary Linux Blacksmith threshold or sampling rule. Current main uses three cold samples, a 1 MiB tolerance, and a 400 MiB Blacksmith plugins-list base limit (401 MiB effective).",
+  "actions": [
+    {
+      "target": "#130977",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130977",
+      "candidate_fix": null,
+      "reason": "Do not weaken this regression gate by choosing a new tolerance or base limit without the raw distributions and an accepted sustained-regression rule."
+    },
+    {
+      "target": "#128904",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different root cause and owner surface."
+    },
+    {
+      "target": "#130893",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different user-visible failure and owner surface."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130977",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130977",
+      "candidate_fix": null,
+      "reason": "A narrow implementation is likely, but its calibration input is absent from preflight."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 3
+  },
+  "fix_counts": {
+    "skipped": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide or approve the raw plugins-list RSS samples from the failing Blacksmith run and comparable passing runs, plus the intended sustained-regression acceptance rule; this determines whether the narrow repair changes only the Blacksmith CI limit or the checker’s sampling/tolerance policy."
+  ],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "skipped",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "needs_human",
+      "reason": "worker marked the fix path as non-executable; closure actions may still apply",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#130977",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
