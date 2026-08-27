@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T10:04:47.339Z",
+  "updated_at": "2026-08-27T10:05:53.290Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128236:5394742438:2026-08-24T11:46:52Z:re_review",
-      "comment_id": "5394742438",
-      "comment_version_key": "5394742438:2026-08-24T11:46:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128236#issuecomment-5394742438",
-      "comment_created_at": "2026-08-24T11:46:52Z",
-      "comment_updated_at": "2026-08-24T11:46:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128236,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T05:57:25.325Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128236:5395057363:2026-08-24T12:16:34Z:re_review",
       "comment_id": "5395057363",
@@ -32459,6 +32432,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129250:5409502609:2026-08-27T10:03:19Z:clawsweeper_needs_human",
+      "comment_id": "5409502609",
+      "comment_version_key": "5409502609:2026-08-27T10:03:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129250#issuecomment-5409502609",
+      "comment_created_at": "2026-08-25T11:09:46Z",
+      "comment_updated_at": "2026-08-27T10:03:19Z",
+      "comment_body_sha256": "4779e13a1d9485e41764a0a64722724c368760bac0eec14c5ab0b91dcdddd8ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129250,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing plugins with an in-flight callback will now observe undefined and no-op context operations after reload; maintainers must confirm that revocation is the intended Plugin SDK l... (sha=bb7b135523de78e976193108bbb4eb59c6bf982d)",
+      "expected_head_sha": "bb7b135523de78e976193108bbb4eb59c6bf982d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T10:05:53.290Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "oc-92a.10/agent-event-generation-fence",
+        "head_sha": "bb7b135523de78e976193108bbb4eb59c6bf982d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
