@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T13:48:09.323Z",
+  "updated_at": "2026-08-27T13:48:09.537Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130829:5436642047:2026-08-27T08:49:16Z:re_review",
-      "comment_id": "5436642047",
-      "comment_version_key": "5436642047:2026-08-27T08:49:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130829#issuecomment-5436642047",
-      "comment_created_at": "2026-08-27T08:49:16Z",
-      "comment_updated_at": "2026-08-27T08:49:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130829,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T08:49:54.062Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/new-session-loading-picker-gap",
-        "head_sha": "46637b18e1f1c4ea192ca7cd289e8f7b0d245490",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130788:5436585836:2026-08-27T08:49:27Z:re_review",
       "comment_id": "5436585836",
@@ -32146,6 +32099,39 @@
         "kind": "pull_request",
         "branch": "codex/land-qa-update-20260827",
         "head_sha": "d124ef3be29145e8044d4eeca0f18ee2b82b7757",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130913:5440057035:2026-08-27T13:46:36Z:clawsweeper_needs_human",
+      "comment_id": "5440057035",
+      "comment_version_key": "5440057035:2026-08-27T13:46:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130913#issuecomment-5440057035",
+      "comment_created_at": "2026-08-27T13:46:36Z",
+      "comment_updated_at": "2026-08-27T13:46:36Z",
+      "comment_body_sha256": "88bb637d7c9d611fcb41157959e250ca35589ce23f73b2dfa4a86f75d8863bc9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130913,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: attach a redacted runtime-inspect JSON transcript from a route-bearing channel plugin that shows the co... (sha=9ee66e9949401c4f9b9fa0f88f8891d55f7a4586)",
+      "expected_head_sha": "9ee66e9949401c4f9b9fa0f88f8891d55f7a4586",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T13:48:09.537Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "gaoanze888/plugins-inspect-runtime-routes",
+        "head_sha": "9ee66e9949401c4f9b9fa0f88f8891d55f7a4586",
         "cluster_id": null,
         "job_path": null
       }
