@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T18:01:25.969Z",
+  "updated_at": "2026-08-27T18:01:31.590Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120105:5439449073:2026-08-27T12:56:13Z:re_review",
-      "comment_id": "5439449073",
-      "comment_version_key": "5439449073:2026-08-27T12:56:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120105#issuecomment-5439449073",
-      "comment_created_at": "2026-08-27T12:56:13Z",
-      "comment_updated_at": "2026-08-27T12:56:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120105,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T12:57:01.209Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/scripts-stable-shard-timing-key",
-        "head_sha": "4a33cb5ddcb9de6e35d1560b4716a2453f8c3275",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119923:5439459821:2026-08-27T12:57:09Z:re_review",
       "comment_id": "5439459821",
@@ -31839,6 +31792,39 @@
         "kind": "pull_request",
         "branch": "fix/tavily-tools-secret-ref",
         "head_sha": "fb7962a791b9f1084564d4280b10c8e462a5cfbe",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131060:5443147408:2026-08-27T17:59:17Z:clawsweeper_needs_human",
+      "comment_id": "5443147408",
+      "comment_version_key": "5443147408:2026-08-27T17:59:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131060#issuecomment-5443147408",
+      "comment_created_at": "2026-08-27T17:59:17Z",
+      "comment_updated_at": "2026-08-27T17:59:17Z",
+      "comment_body_sha256": "e71a6e95ba7e2a455c4902c8f66349b1b7c55071cd90c9569f01da5c012376d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131060,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Direct mailauth runtime source/type inspection could not be completed in this offline, dependency-free checkout; the pending exact-head validation should retain the PR's real-authenti... (sha=37cb145d5c49a0365da1743ef94a9596ae32d383)",
+      "expected_head_sha": "37cb145d5c49a0365da1743ef94a9596ae32d383",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T18:01:31.590Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-imap-dmarc-outcomes",
+        "head_sha": "37cb145d5c49a0365da1743ef94a9596ae32d383",
         "cluster_id": null,
         "job_path": null
       }
