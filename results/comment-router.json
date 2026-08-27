@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T18:52:44.957Z",
+  "updated_at": "2026-08-27T18:56:21.178Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117432:5151757860:2026-08-27T13:08:03Z:clawsweeper_needs_human",
-      "comment_id": "5151757860",
-      "comment_version_key": "5151757860:2026-08-27T13:08:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117432#issuecomment-5151757860",
-      "comment_created_at": "2026-08-01T14:03:20Z",
-      "comment_updated_at": "2026-08-27T13:08:03Z",
-      "comment_body_sha256": "23aae882b1b6873d522eca5a7f498973b11d660b0706d5d542169ee3c4c1cfcc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117432,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Current-head real behavior proof is insufficient: supplied logs identify an earlier commit, so redacted evidence must show this head r... (sha=6f026bfd407fe508ed46fef3100f0978690b3935)",
-      "expected_head_sha": "6f026bfd407fe508ed46fef3100f0978690b3935",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T13:14:20.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/delegated-approval-handoff-116519",
-        "head_sha": "6f026bfd407fe508ed46fef3100f0978690b3935",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117595:5153063158:2026-08-27T12:39:13Z:clawsweeper_auto_repair",
       "comment_id": "5153063158",
@@ -31894,6 +31861,53 @@
       "status": "skipped",
       "processed_at": "2026-08-27T18:52:44.957Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130098:5443830528:2026-08-27T18:55:25Z:re_review",
+      "comment_id": "5443830528",
+      "comment_version_key": "5443830528:2026-08-27T18:55:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130098#issuecomment-5443830528",
+      "comment_created_at": "2026-08-27T18:55:25Z",
+      "comment_updated_at": "2026-08-27T18:55:25Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130098,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T18:56:18.628Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/comfy-headers-seed-randomization",
+        "head_sha": "4b0a290dae5ef3a29e1ce6c318e543f17c7be99c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
