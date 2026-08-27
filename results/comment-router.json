@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T06:45:21.547Z",
+  "updated_at": "2026-08-27T06:46:11.652Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130261:5433949239:2026-08-27T03:22:21Z:re_review",
-      "comment_id": "5433949239",
-      "comment_version_key": "5433949239:2026-08-27T03:22:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130261#issuecomment-5433949239",
-      "comment_created_at": "2026-08-27T03:22:21Z",
-      "comment_updated_at": "2026-08-27T03:22:21Z",
-      "comment_body_sha256": "2648cbea208514f292edd3c3d033a370a41ebc2ee54fa5ae59d1a7078f50d28f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130261,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T03:23:16.409Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/loop-detection-wrapper-nonce-130210",
-        "head_sha": "c7bd4a6b5cae7551aa819e94f5381d29139ff5a1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5390456578:2026-08-24T03:43:46Z:re_review",
       "comment_id": "5390456578",
@@ -31315,6 +31268,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1552:5435321440:2026-08-27T06:39:47Z:clawsweeper_needs_human",
+      "comment_id": "5435321440",
+      "comment_version_key": "5435321440:2026-08-27T06:39:47Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1552#issuecomment-5435321440",
+      "comment_created_at": "2026-08-27T06:39:47Z",
+      "comment_updated_at": "2026-08-27T06:39:47Z",
+      "comment_body_sha256": "29e64aed4c6211b53cea269879eeffbca48743f668ee6cd9095bfad6420a61b5",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1552,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only offline fixture validation is described; add redacted after-fix real-provider output for a generated retry, rescue, or stop path, then upd... (sha=c1d5b633ddaaa3e828836d72beb6e30db1be5927)",
+      "expected_head_sha": "c1d5b633ddaaa3e828836d72beb6e30db1be5927",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T06:46:11.652Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/provider-command-routing",
+        "head_sha": "c1d5b633ddaaa3e828836d72beb6e30db1be5927",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
