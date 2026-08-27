@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T21:18:42.846Z",
+  "updated_at": "2026-08-27T21:18:45.607Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119976:5440004247:2026-08-27T13:42:18Z:re_review",
-      "comment_id": "5440004247",
-      "comment_version_key": "5440004247:2026-08-27T13:42:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119976#issuecomment-5440004247",
-      "comment_created_at": "2026-08-27T13:42:18Z",
-      "comment_updated_at": "2026-08-27T13:42:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119976,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T14:47:38.848Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-nextcloud-talk-redact-error-body",
-        "head_sha": "7a97ad361010063631b2fcef2d1ddc3f4f2f57e6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119976:5207156546:2026-08-27T14:37:35Z:clawsweeper_auto_repair",
       "comment_id": "5207156546",
@@ -32043,6 +31996,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/anim-overlays",
         "head_sha": "c1325666ed2284986ee7c05bc3da7717cba2594f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:651:5445308901:2026-08-27T21:15:01Z:clawsweeper_needs_human",
+      "comment_id": "5445308901",
+      "comment_version_key": "5445308901:2026-08-27T21:15:01Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/651#issuecomment-5445308901",
+      "comment_created_at": "2026-08-27T21:15:01Z",
+      "comment_updated_at": "2026-08-27T21:15:01Z",
+      "comment_body_sha256": "4d0a89514fa00b0a87caff37188f298ac1a3c8c286f609adb22a1b1b4f411a34",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 651,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current-head Swift analysis and macOS build/test checks were still in progress in the supplied PR state, so merge should wait for their exact-head results. (sha=03fb59e39874badb25ec98f5abd59fb2a27e323c)",
+      "expected_head_sha": "03fb59e39874badb25ec98f5abd59fb2a27e323c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T21:18:45.607Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/codeql-peekaboo-keychain-credentials-20260827",
+        "head_sha": "03fb59e39874badb25ec98f5abd59fb2a27e323c",
         "cluster_id": null,
         "job_path": null
       }
