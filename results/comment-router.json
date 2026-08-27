@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T17:42:54.329Z",
+  "updated_at": "2026-08-27T17:42:57.334Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129488:5439068536:2026-08-27T12:22:14Z:re_review",
-      "comment_id": "5439068536",
-      "comment_version_key": "5439068536:2026-08-27T12:22:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129488#issuecomment-5439068536",
-      "comment_created_at": "2026-08-27T12:22:14Z",
-      "comment_updated_at": "2026-08-27T12:22:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129488,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T12:22:56.949Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-secrets-confirmation-client-owner",
-        "head_sha": "568619d7d831a4aaa352096ece33c27cc448b9a2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129035:5406400169:2026-08-27T12:21:53Z:clawsweeper_needs_human",
       "comment_id": "5406400169",
@@ -31901,6 +31854,39 @@
         "kind": "pull_request",
         "branch": "test/regexp-escape-coverage",
         "head_sha": "e9439cf651370fc960d44d4a7269d36f3915c127",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130902:5439622520:2026-08-27T17:36:23Z:clawsweeper_needs_human",
+      "comment_id": "5439622520",
+      "comment_version_key": "5439622520:2026-08-27T17:36:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130902#issuecomment-5439622520",
+      "comment_created_at": "2026-08-27T13:11:16Z",
+      "comment_updated_at": "2026-08-27T17:36:23Z",
+      "comment_body_sha256": "b10c1c86eb2384dd249357411a920802a25cbaeb5d0db1860cd5e13dd8883168",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130902,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the PR body lists tests and static checks but explicitly says no external source-install or Git-update... (sha=0c01ee0c9e075d3c0e441495212b99d68967e042)",
+      "expected_head_sha": "0c01ee0c9e075d3c0e441495212b99d68967e042",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T17:42:57.334Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/installer-dependency-policy",
+        "head_sha": "0c01ee0c9e075d3c0e441495212b99d68967e042",
         "cluster_id": null,
         "job_path": null
       }
