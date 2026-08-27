@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T13:27:10.692Z",
+  "updated_at": "2026-08-27T13:29:57.718Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130758:5436391987:2026-08-27T08:24:42Z:re_review",
-      "comment_id": "5436391987",
-      "comment_version_key": "5436391987:2026-08-27T08:24:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130758#issuecomment-5436391987",
-      "comment_created_at": "2026-08-27T08:24:42Z",
-      "comment_updated_at": "2026-08-27T08:24:42Z",
-      "comment_body_sha256": "5f8d2145dafe878169f696df7fd0f9cc5090c8c7607e4b034110b2109eb83d70",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130758,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T08:25:25.282Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/virtual-sizing-bug-d152ef",
-        "head_sha": "4d3795f6bfe15c930aabf8fe86366c9d0a155ef6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124305:5304840142:2026-08-27T08:26:14Z:clawsweeper_auto_repair",
       "comment_id": "5304840142",
@@ -32127,6 +32080,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:518:5395913037:2026-08-27T13:29:13Z:clawsweeper_needs_human",
+      "comment_id": "5395913037",
+      "comment_version_key": "5395913037:2026-08-27T13:29:13Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/518#issuecomment-5395913037",
+      "comment_created_at": "2026-08-24T13:29:52Z",
+      "comment_updated_at": "2026-08-27T13:29:13Z",
+      "comment_body_sha256": "9683a3d1f8fe7f9fd970228fdf58b9e93e5ce4f5f88d567cc19943061ae2b9f4",
+      "repo": "openclaw/acpx",
+      "issue_number": 518,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging would move the production ACP protocol runtime to an SDK release with changed initialization, method-contract, and routed-message behavior while the required Test job currentl... (sha=431813f0bd7ffcf1f2d3e02dff67838a2f2efb9e)",
+      "expected_head_sha": "431813f0bd7ffcf1f2d3e02dff67838a2f2efb9e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T13:29:57.718Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-5f07562c05",
+        "head_sha": "431813f0bd7ffcf1f2d3e02dff67838a2f2efb9e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
