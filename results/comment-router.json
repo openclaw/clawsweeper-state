@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T19:17:38.956Z",
+  "updated_at": "2026-08-27T19:17:46.561Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125421:5320697810:2026-08-27T09:57:40Z:clawsweeper_auto_repair",
-      "comment_id": "5320697810",
-      "comment_version_key": "5320697810:2026-08-27T09:57:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125421#issuecomment-5320697810",
-      "comment_created_at": "2026-08-17T21:53:14Z",
-      "comment_updated_at": "2026-08-27T09:57:40Z",
-      "comment_body_sha256": "ba7a2eb3caec21073bded91b1bbb09a6ba407c178644f61189fb8999708dab28",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125421,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2d2fd74beffec302f820d294d28070da294e293e)",
-      "expected_head_sha": "2d2fd74beffec302f820d294d28070da294e293e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T13:14:20.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "recovery/migration-agent-owner-20260817",
-        "head_sha": "2d2fd74beffec302f820d294d28070da294e293e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125788:5327253258:2026-08-27T10:30:15Z:clawsweeper_auto_repair",
       "comment_id": "5327253258",
@@ -32094,6 +32061,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123720:5295456189:2026-08-27T19:10:22Z:clawsweeper_needs_human",
+      "comment_id": "5295456189",
+      "comment_version_key": "5295456189:2026-08-27T19:10:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123720#issuecomment-5295456189",
+      "comment_created_at": "2026-08-14T16:02:53Z",
+      "comment_updated_at": "2026-08-27T19:10:22Z",
+      "comment_body_sha256": "557ac339a272ec53a71f775498f9101e0717e6fade3b77111cf8b771488817dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123720,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The production delta is justified only while this remains a OneDrive-environment-rooted Windows diagnostic; expanding it into generic cloud-folder path heuristics would reintroduce fa... (sha=0f8a11785b308595d58c429c8bcedd00201a9590)",
+      "expected_head_sha": "0f8a11785b308595d58c429c8bcedd00201a9590",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T19:17:46.561Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-windows-cloud-state-dir",
+        "head_sha": "0f8a11785b308595d58c429c8bcedd00201a9590",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
