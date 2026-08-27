@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T06:24:07.534Z",
+  "updated_at": "2026-08-27T06:25:29.245Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129933:5421816336:2026-08-27T02:38:04Z:clawsweeper_needs_human",
-      "comment_id": "5421816336",
-      "comment_version_key": "5421816336:2026-08-27T02:38:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129933#issuecomment-5421816336",
-      "comment_created_at": "2026-08-26T07:07:17Z",
-      "comment_updated_at": "2026-08-27T02:38:04Z",
-      "comment_body_sha256": "a0dda0eaf7f978eed6b7a26654cbbe8c5d55b4cb69899d4639d3df4d8d868274",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129933,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The head is mergeable but behind current main, and required exact-head checks were still running in the supplied context; landing should validate the current merge result after those... (sha=b1b4fd55d49e47ffa765340d2e8e1dfb330dc515)",
-      "expected_head_sha": "b1b4fd55d49e47ffa765340d2e8e1dfb330dc515",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T02:43:54.892Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/clarify-git-icons-and-sizing",
-        "head_sha": "b1b4fd55d49e47ffa765340d2e8e1dfb330dc515",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113115:5433692045:2026-08-27T02:43:19Z:re_review",
       "comment_id": "5433692045",
@@ -31289,6 +31256,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129825:5435194470:2026-08-27T06:24:43Z:re_review",
+      "comment_id": "5435194470",
+      "comment_version_key": "5435194470:2026-08-27T06:24:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129825#issuecomment-5435194470",
+      "comment_created_at": "2026-08-27T06:24:43Z",
+      "comment_updated_at": "2026-08-27T06:24:43Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129825,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T06:25:27.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-112796-whatsapp-ack-scope-warning",
+        "head_sha": "1c79363d3ad936d2fa53634f107395231b13e046",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
