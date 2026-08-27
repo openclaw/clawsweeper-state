@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T10:55:27.245Z",
+  "updated_at": "2026-08-27T10:55:38.847Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126549:5351817173:2026-08-27T06:08:58Z:clawsweeper_auto_repair",
-      "comment_id": "5351817173",
-      "comment_version_key": "5351817173:2026-08-27T06:08:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126549#issuecomment-5351817173",
-      "comment_created_at": "2026-08-20T05:36:24Z",
-      "comment_updated_at": "2026-08-27T06:08:58Z",
-      "comment_body_sha256": "fb2b2d771f2b91f8b967ab18879627509c1de971f299fe71bba2d2391ec00678",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126549,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f96bfcced92e5ec857a13fb537921f1d60e6337a)",
-      "expected_head_sha": "f96bfcced92e5ec857a13fb537921f1d60e6337a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T06:29:26.115Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-ui-cursor-inflight",
-        "head_sha": "f96bfcced92e5ec857a13fb537921f1d60e6337a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126548:5351880712:2026-08-27T06:09:54Z:clawsweeper_needs_human",
       "comment_id": "5351880712",
@@ -32117,6 +32084,39 @@
       "status": "skipped",
       "processed_at": "2026-08-27T10:55:27.245Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129174:5408217824:2026-08-27T10:53:58Z:clawsweeper_needs_human",
+      "comment_id": "5408217824",
+      "comment_version_key": "5408217824:2026-08-27T10:53:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129174#issuecomment-5408217824",
+      "comment_created_at": "2026-08-25T09:18:40Z",
+      "comment_updated_at": "2026-08-27T10:53:58Z",
+      "comment_body_sha256": "68132da7dd4ac0fff8403e89e4a197f48bf3b78969c40de5a575346c40ba7512",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129174,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This deliberately changes relative listener order: global listeners now always run before run-specific consumers, so regressions would affect stream delivery or run-scoped lifecycle s... (sha=8b4789579b400d9036226e8ecd94214437a972ca)",
+      "expected_head_sha": "8b4789579b400d9036226e8ecd94214437a972ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T10:55:38.847Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/run-indexed-agent-event-listeners",
+        "head_sha": "8b4789579b400d9036226e8ecd94214437a972ca",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
