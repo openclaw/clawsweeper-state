@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T19:12:04.322Z",
+  "updated_at": "2026-08-27T19:14:21.610Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120472:5224770619:2026-08-27T12:08:48Z:clawsweeper_needs_human",
-      "comment_id": "5224770619",
-      "comment_version_key": "5224770619:2026-08-27T12:08:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120472#issuecomment-5224770619",
-      "comment_created_at": "2026-08-08T05:40:49Z",
-      "comment_updated_at": "2026-08-27T12:08:48Z",
-      "comment_body_sha256": "fce0b648986e4a18a9584afd5b7ada78392b5b600a830cc6061d83108655749a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120472,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by five net lines for a small fix; that growth is justified by consuming the shared tagged result, so later refreshes should preserve this canonical parser rathe... (sha=0fecdcaa5cb338f01579a3575b564a4fae7f1ca9)",
-      "expected_head_sha": "0fecdcaa5cb338f01579a3575b564a4fae7f1ca9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T13:14:20.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/verify-pr-hosted-gates-decimal-pr",
-        "head_sha": "0fecdcaa5cb338f01579a3575b564a4fae7f1ca9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120569:5226146956:2026-08-27T13:07:40Z:clawsweeper_auto_repair",
       "comment_id": "5226146956",
@@ -31954,6 +31921,53 @@
       "status": "skipped",
       "processed_at": "2026-08-27T19:12:04.322Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130993:5444046937:2026-08-27T19:13:33Z:re_review",
+      "comment_id": "5444046937",
+      "comment_version_key": "5444046937:2026-08-27T19:13:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130993#issuecomment-5444046937",
+      "comment_created_at": "2026-08-27T19:13:33Z",
+      "comment_updated_at": "2026-08-27T19:13:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130993,
+      "author": "VACInc",
+      "author_id": 3279061,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T19:14:19.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/managed-context-pressure",
+        "head_sha": "76598e92b81e3e52489f9e8025a2333b46c33069",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
