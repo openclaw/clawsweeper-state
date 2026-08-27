@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T21:25:12.182Z",
+  "updated_at": "2026-08-27T21:25:36.278Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5365147065:2026-08-21T04:19:28Z:re_review",
-      "comment_id": "5365147065",
-      "comment_version_key": "5365147065:2026-08-21T04:19:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5365147065",
-      "comment_created_at": "2026-08-21T04:19:28Z",
-      "comment_updated_at": "2026-08-21T04:19:28Z",
-      "comment_body_sha256": "f6cd270c61839937a8a42b5fba6f47936179c9f8e982dcf159d84f2fb5ca4772",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review `ea3d7d868f229ff2de9b78205dc8990998e5b0ee`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T14:56:20.899Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5370515172:2026-08-21T13:40:47Z:re_review",
       "comment_id": "5370515172",
@@ -32002,6 +31975,39 @@
       "status": "skipped",
       "processed_at": "2026-08-27T21:25:12.182Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131179:5445399138:2026-08-27T21:24:15Z:clawsweeper_needs_human",
+      "comment_id": "5445399138",
+      "comment_version_key": "5445399138:2026-08-27T21:24:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131179#issuecomment-5445399138",
+      "comment_created_at": "2026-08-27T21:24:15Z",
+      "comment_updated_at": "2026-08-27T21:24:15Z",
+      "comment_body_sha256": "73e8e047759496be1c76d282140e1da3c75de7b5491685b21a7b5307748c2d1d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131179,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body reports that exact-head hosted checks and live Gateway proof are still pending; confirm those before landing because this changes persistent memory-deletion sequencing. (sha=4ce524af08e461ebad793eeabced9f14a75db803)",
+      "expected_head_sha": "4ce524af08e461ebad793eeabced9f14a75db803",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T21:25:36.278Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/memory-provenance-repair",
+        "head_sha": "4ce524af08e461ebad793eeabced9f14a75db803",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
