@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T03:12:33.293Z",
+  "updated_at": "2026-08-27T03:13:47.125Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130451:5431855758:2026-08-26T22:28:37Z:clawsweeper_needs_human",
-      "comment_id": "5431855758",
-      "comment_version_key": "5431855758:2026-08-26T22:28:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130451#issuecomment-5431855758",
-      "comment_created_at": "2026-08-26T22:28:37Z",
-      "comment_updated_at": "2026-08-26T22:28:37Z",
-      "comment_body_sha256": "3b34efebe0a364320d633fb696d78007aa678ed55f57783eb3f17795c4badcba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130451,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared mutation lock times out after 10 seconds under concurrent ownership; exact-head operator proof should show the intended retryable outcome rather than a silent restoration. (sha=392b79d0a63e1e10eb5a7893bee7da5aa8b325d2)",
-      "expected_head_sha": "392b79d0a63e1e10eb5a7893bee7da5aa8b325d2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T22:29:44.464Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/memory-provenance-repair",
-        "head_sha": "392b79d0a63e1e10eb5a7893bee7da5aa8b325d2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabline:274:5335010673:2026-08-26T22:24:27Z:clawsweeper_auto_repair",
       "comment_id": "5335010673",
@@ -32126,6 +32093,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1256:5433888547:2026-08-27T03:13:07Z:re_review",
+      "comment_id": "5433888547",
+      "comment_version_key": "5433888547:2026-08-27T03:13:07Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1256#issuecomment-5433888547",
+      "comment_created_at": "2026-08-27T03:13:07Z",
+      "comment_updated_at": "2026-08-27T03:13:07Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1256,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T03:13:45.265Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/live-proof-output-evidence",
+        "head_sha": "e2a0789405ff9d209df3b7f00a7e42991d71d329",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
