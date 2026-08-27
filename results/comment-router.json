@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T12:00:18.209Z",
+  "updated_at": "2026-08-27T12:00:32.229Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111899:5028150302:2026-08-27T06:50:41Z:clawsweeper_auto_repair",
-      "comment_id": "5028150302",
-      "comment_version_key": "5028150302:2026-08-27T06:50:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111899#issuecomment-5028150302",
-      "comment_created_at": "2026-07-20T23:12:34Z",
-      "comment_updated_at": "2026-08-27T06:50:41Z",
-      "comment_body_sha256": "da7845eb7b28217a9f2fbedad15f875c969397c98b88d897a2679926d6d234db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111899,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f5950df12305245ea3434f3d6ed9f99db93f1bc8)",
-      "expected_head_sha": "f5950df12305245ea3434f3d6ed9f99db93f1bc8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T06:56:35.137Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-111407-accepted-run-no-fallback",
-        "head_sha": "f5950df12305245ea3434f3d6ed9f99db93f1bc8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111899:5248004777:2026-08-11T01:30:17Z:re_review",
       "comment_id": "5248004777",
@@ -32005,6 +31972,39 @@
       "status": "skipped",
       "processed_at": "2026-08-27T12:00:18.209Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130885:5438710850:2026-08-27T11:59:12Z:clawsweeper_needs_human",
+      "comment_id": "5438710850",
+      "comment_version_key": "5438710850:2026-08-27T11:59:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130885#issuecomment-5438710850",
+      "comment_created_at": "2026-08-27T11:59:12Z",
+      "comment_updated_at": "2026-08-27T11:59:12Z",
+      "comment_body_sha256": "7e320c3f8dbb5407f4d209c1f68411d931c366f13078a9a788aa866e94c57077",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130885,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Explicit local-image calls above DEFAULT_MAX_BYTES.image will now reject rather than load the entire file; this aligns the local path with the existing bounded cache policy but change... (sha=341571e534d3303058dcd50fa7e0f63fd932931f)",
+      "expected_head_sha": "341571e534d3303058dcd50fa7e0f63fd932931f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T12:00:32.229Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/media-cache-bounded-reads",
+        "head_sha": "341571e534d3303058dcd50fa7e0f63fd932931f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
