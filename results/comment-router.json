@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T06:09:59.993Z",
+  "updated_at": "2026-08-27T06:11:10.245Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128249:5390538737:2026-08-24T03:58:13Z:re_review",
-      "comment_id": "5390538737",
-      "comment_version_key": "5390538737:2026-08-24T03:58:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128249#issuecomment-5390538737",
-      "comment_created_at": "2026-08-24T03:58:13Z",
-      "comment_updated_at": "2026-08-24T03:58:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128249,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T02:36:24.520Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128249:5397321538:2026-08-24T15:17:15Z:re_review",
       "comment_id": "5397321538",
@@ -31103,6 +31076,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3207:5423261703:2026-08-27T06:10:09Z:clawsweeper_needs_human",
+      "comment_id": "5423261703",
+      "comment_version_key": "5423261703:2026-08-27T06:10:09Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3207#issuecomment-5423261703",
+      "comment_created_at": "2026-08-26T09:23:57Z",
+      "comment_updated_at": "2026-08-27T06:10:09Z",
+      "comment_body_sha256": "4c99e03b5e420d7aadb946f3eb93eb38305fff46d13f5c3fad66c2f2eb950991",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3207,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Fixture tests are valuable but are mock-only evidence; add a redacted after-fix run against a real local session corpus, with paths and session... (sha=25c4a45c9824e2e2ceda068aa5fec6b6b194101f)",
+      "expected_head_sha": "25c4a45c9824e2e2ceda068aa5fec6b6b194101f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T06:11:10.245Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/deferred-file-budget-starvation",
+        "head_sha": "25c4a45c9824e2e2ceda068aa5fec6b6b194101f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
