@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T15:38:55.663Z",
+  "updated_at": "2026-08-27T15:40:17.361Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126566:5352673093:2026-08-27T08:47:41Z:clawsweeper_needs_human",
-      "comment_id": "5352673093",
-      "comment_version_key": "5352673093:2026-08-27T08:47:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126566#issuecomment-5352673093",
-      "comment_created_at": "2026-08-20T07:16:33Z",
-      "comment_updated_at": "2026-08-27T08:47:41Z",
-      "comment_body_sha256": "d5786e7cc28cde4a62b2eb849cbfd6ffad99926a8ab59c9da47628d3a020033c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126566,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the current head as dirty against newer main; resolving that conflict can alter lifecycle ordering, so the existing ancestor proof cannot substitute for validation of t... (sha=3e52427ebfd8c44c40fa6e9a78ba7b3e2161382a)",
-      "expected_head_sha": "3e52427ebfd8c44c40fa6e9a78ba7b3e2161382a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T09:41:08.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-126311-fallback-lifecycle",
-        "head_sha": "3e52427ebfd8c44c40fa6e9a78ba7b3e2161382a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126604:5353679197:2026-08-27T07:21:18Z:clawsweeper_needs_human",
       "comment_id": "5353679197",
@@ -32430,6 +32397,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1264:5441527947:2026-08-27T15:39:25Z:re_review",
+      "comment_id": "5441527947",
+      "comment_version_key": "5441527947:2026-08-27T15:39:25Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1264#issuecomment-5441527947",
+      "comment_created_at": "2026-08-27T15:39:25Z",
+      "comment_updated_at": "2026-08-27T15:39:25Z",
+      "comment_body_sha256": "f52f26a6a561087f2bedb7cd99cdf03e370dfb36f6bd3832a18a1a3f4a728e46",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1264,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T15:40:15.125Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/terminal-plan-prerequisites-20260827",
+        "head_sha": "213927808a1d14c11fb8507e45dcc061ceeade62",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
