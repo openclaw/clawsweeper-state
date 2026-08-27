@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T23:21:31.245Z",
+  "updated_at": "2026-08-27T23:21:42.712Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5256651203:2026-08-11T17:33:15Z:re_review",
-      "comment_id": "5256651203",
-      "comment_version_key": "5256651203:2026-08-11T17:33:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5256651203",
-      "comment_created_at": "2026-08-11T17:33:15Z",
-      "comment_updated_at": "2026-08-11T17:33:15Z",
-      "comment_body_sha256": "7be7cbda068c5eeabf3655757bf91e514028b4991ad7e80b382f6887fef5d563",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T15:49:57.240Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5256694745:2026-08-11T17:37:34Z:re_review",
       "comment_id": "5256694745",
@@ -32062,6 +32035,39 @@
       "status": "skipped",
       "processed_at": "2026-08-27T23:21:31.245Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1508:5392440485:2026-08-27T23:09:35Z:clawsweeper_needs_human",
+      "comment_id": "5392440485",
+      "comment_version_key": "5392440485:2026-08-27T23:09:35Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1508#issuecomment-5392440485",
+      "comment_created_at": "2026-08-24T08:12:32Z",
+      "comment_updated_at": "2026-08-27T23:09:35Z",
+      "comment_body_sha256": "b633e93e30d96e7e68014db7af06c14ada0e9d36a380d7271fe6c018ad9d5b54",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1508,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: exact-head tests cover fixtures, but the PR body confirms that real Windows OpenSSH proof of both allowed execu...; Review finding: [medium] Resolve the exact-head CodeQL hashing alert — internal/cli/ssh_wsl_stage.go:352 (sha=330ddd0178093784c3efec4c7b11f301898fad2c)",
+      "expected_head_sha": "330ddd0178093784c3efec4c7b11f301898fad2c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T23:21:42.712Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/wsl2-exact-frame-reads",
+        "head_sha": "330ddd0178093784c3efec4c7b11f301898fad2c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
