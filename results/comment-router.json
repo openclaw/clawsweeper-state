@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T06:21:19.836Z",
+  "updated_at": "2026-08-27T06:21:25.428Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129700:5433623800:2026-08-27T02:33:14Z:re_review",
-      "comment_id": "5433623800",
-      "comment_version_key": "5433623800:2026-08-27T02:33:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129700#issuecomment-5433623800",
-      "comment_created_at": "2026-08-27T02:33:14Z",
-      "comment_updated_at": "2026-08-27T02:33:14Z",
-      "comment_body_sha256": "3d7c8c8054283a3f7035a94f77b1ff4694757768de57e15e6970deb1b7f2d352",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129700,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T02:41:05.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/embedded-alias-static-route",
-        "head_sha": "388ea252271e52758ebe6dd64a5cd781f46320ed",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129700:5419045552:2026-08-27T02:40:18Z:clawsweeper_needs_human",
       "comment_id": "5419045552",
@@ -31300,6 +31253,39 @@
         "kind": "pull_request",
         "branch": "issue-130187-channels-logs-level",
         "head_sha": "25264c0dc910e24e48ba70c0800c651733a98d06",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw.ai:244:5435161389:2026-08-27T06:20:13Z:clawsweeper_needs_human",
+      "comment_id": "5435161389",
+      "comment_version_key": "5435161389:2026-08-27T06:20:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw.ai/pull/244#issuecomment-5435161389",
+      "comment_created_at": "2026-08-27T06:20:13Z",
+      "comment_updated_at": "2026-08-27T06:20:13Z",
+      "comment_body_sha256": "e66f631814077a4e0714eb6cea7d656c4b68abfbbc0496c86ec8ff1e95abe49b",
+      "repo": "openclaw/openclaw.ai",
+      "issue_number": 244,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - contents: read removes every unspecified token scope. Source shows no direct write consumer, but the remaining exact-head installer jobs should complete before merge to confirm no imp... (sha=92fb53b842a03dda076d7c24a2968e2d09c4823b)",
+      "expected_head_sha": "92fb53b842a03dda076d7c24a2968e2d09c4823b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T06:21:25.428Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/codeql-openclawai-workflow-permissions-20260827",
+        "head_sha": "92fb53b842a03dda076d7c24a2968e2d09c4823b",
         "cluster_id": null,
         "job_path": null
       }
