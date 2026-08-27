@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T12:08:03.751Z",
+  "updated_at": "2026-08-27T12:14:48.365Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121478:5248068604:2026-08-11T01:41:58Z:re_review",
-      "comment_id": "5248068604",
-      "comment_version_key": "5248068604:2026-08-11T01:41:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121478#issuecomment-5248068604",
-      "comment_created_at": "2026-08-11T01:41:58Z",
-      "comment_updated_at": "2026-08-11T01:41:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121478,
-      "author": "barbarhan",
-      "author_id": 80099286,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T06:57:31.385Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121478:5248653548:2026-08-11T03:29:45Z:re_review",
       "comment_id": "5248653548",
@@ -32033,6 +32006,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110058:5004651694:2026-08-27T12:13:39Z:clawsweeper_needs_human",
+      "comment_id": "5004651694",
+      "comment_version_key": "5004651694:2026-08-27T12:13:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110058#issuecomment-5004651694",
+      "comment_created_at": "2026-07-17T15:08:44Z",
+      "comment_updated_at": "2026-08-27T12:13:39Z",
+      "comment_body_sha256": "5f51affac38fff52eaf5a24776ca4f50c50eec972f732cac9ae0c2f4cec2392e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110058,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: existing unit-style checks and the earlier normal migration transcript do not demonstrate that retaine...; Review finding: [medium] Prove post-lock queue mutation is impossible — src/infra/state-migrations.plugin-doctor-context.ts:126 (sha=b5a2c5202c366a15ffa81b99ab45b4d485f4ffbd)",
+      "expected_head_sha": "b5a2c5202c366a15ffa81b99ab45b4d485f4ffbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T12:14:48.365Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-spool-legacy-payload-upgrade",
+        "head_sha": "b5a2c5202c366a15ffa81b99ab45b4d485f4ffbd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
