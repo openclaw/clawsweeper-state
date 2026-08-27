@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-92015",
+  "mode": "autonomous",
+  "run_id": "33055233413",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33055233413",
+  "head_sha": "71df3a1ce714d737e250008597075bb5eaeb2ac4",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-92015.md",
+  "published_at": "2026-08-27T09:06:34.568Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/92015",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/92015",
+  "canonical_pr": null,
+  "summary": "#92015 remains a real ACP workspace-lifecycle bug on main, but this read-only worker cannot make or validate the required change: the mandatory sibling ../codex source is absent. A narrow new-PR repair artifact is ready for an executor that can inspect that dependency and write the branch.",
+  "actions": [
+    {
+      "target": "#78093",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Keep open independently; no closure is permitted or warranted."
+    },
+    {
+      "target": "#92015",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "A new fix PR is appropriate, but implementation is blocked until an executor can inspect the required Codex source and write the target branch."
+    },
+    {
+      "target": "#92939",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Closed context PR; no mutation."
+    },
+    {
+      "target": "#93176",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Closed context PR; no mutation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-92015",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Produce the narrow repair plan below."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-92015",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Do not open a PR without the required dependency inspection and validated patch."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
