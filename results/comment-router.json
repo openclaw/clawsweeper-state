@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T15:55:05.740Z",
+  "updated_at": "2026-08-27T15:57:23.193Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128904:5403517898:2026-08-27T10:10:32Z:clawsweeper_needs_human",
-      "comment_id": "5403517898",
-      "comment_version_key": "5403517898:2026-08-27T10:10:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128904#issuecomment-5403517898",
-      "comment_created_at": "2026-08-25T00:51:50Z",
-      "comment_updated_at": "2026-08-27T10:10:32Z",
-      "comment_body_sha256": "c120f4fe7d581f15621a653ff093cae1f95e478aff97ecdd8e934ac6fe3552cb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128904,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal trace demonstrates the intended schema direction but does not prove which plugin owns the final Gateway registry...; Review finding: [P1] Preserve dotted channel-key boundaries in redaction hints — src/config/redact-snapshot-channel-metadata.ts:9-22 - [P1] Reject undeclared registrations of cede... (sha=6c00d1ecfe8c7a868b78bd459e97ed7c8730426c)",
-      "expected_head_sha": "6c00d1ecfe8c7a868b78bd459e97ed7c8730426c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T10:11:27.076Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/channel-ownership-core",
-        "head_sha": "6c00d1ecfe8c7a868b78bd459e97ed7c8730426c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115277:5106840475:2026-08-27T10:12:44Z:clawsweeper_auto_repair",
       "comment_id": "5106840475",
@@ -31976,6 +31943,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130706:5441718578:2026-08-27T15:55:01Z:re_review",
+      "comment_id": "5441718578",
+      "comment_version_key": "5441718578:2026-08-27T15:55:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130706#issuecomment-5441718578",
+      "comment_created_at": "2026-08-27T15:55:01Z",
+      "comment_updated_at": "2026-08-27T15:55:01Z",
+      "comment_body_sha256": "f11026532f2187a8ed4a503561d83ee15e7ba731c48561033a576b0ac932e127",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130706,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T15:57:20.175Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-metadata-ownership",
+        "head_sha": "ec8c2d4151b174b0f3f21e8cc86ae587abc27012",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
