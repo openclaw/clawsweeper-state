@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T17:30:09.722Z",
+  "updated_at": "2026-08-27T17:30:25.966Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108988:4992602000:2026-08-27T11:46:52Z:clawsweeper_auto_repair",
-      "comment_id": "4992602000",
-      "comment_version_key": "4992602000:2026-08-27T11:46:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/108988#issuecomment-4992602000",
-      "comment_created_at": "2026-07-16T13:42:34Z",
-      "comment_updated_at": "2026-08-27T11:46:52Z",
-      "comment_body_sha256": "6a3532c41287292bc744eacf784448362bc1e1a7538340fd120b1e74aeb6f55c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 108988,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=df8c6cd4ff9382ae29110954fcc96c07c3af3d62)",
-      "expected_head_sha": "df8c6cd4ff9382ae29110954fcc96c07c3af3d62",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T11:49:31.453Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-acpx-pi-read-cap",
-        "head_sha": "df8c6cd4ff9382ae29110954fcc96c07c3af3d62",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130876:5437879451:2026-08-27T11:51:21Z:clawsweeper_needs_human",
       "comment_id": "5437879451",
@@ -32048,6 +32015,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110058:5004651694:2026-08-27T17:23:49Z:clawsweeper_needs_human",
+      "comment_id": "5004651694",
+      "comment_version_key": "5004651694:2026-08-27T17:23:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110058#issuecomment-5004651694",
+      "comment_created_at": "2026-07-17T15:08:44Z",
+      "comment_updated_at": "2026-08-27T17:23:49Z",
+      "comment_body_sha256": "38e2cdad22da548a1c9ab2e4ab17f81744341a619697eded3bd4084a467a4163",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110058,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the available Vitest/harness evidence shows hidden mutators and post-section rejection, but not an after-fix pe...; Review finding: [P1] Use a physically read-only database path for detection — src/infra/state-migrations.plugin-doctor-context.ts:223-226 - [medium] Detection opens writable share... (sha=c99bebc81e29d84a8e9a32d8078046d42b2c9d73)",
+      "expected_head_sha": "c99bebc81e29d84a8e9a32d8078046d42b2c9d73",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T17:30:25.966Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-spool-legacy-payload-upgrade",
+        "head_sha": "c99bebc81e29d84a8e9a32d8078046d42b2c9d73",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
