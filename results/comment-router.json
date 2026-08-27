@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T12:22:59.637Z",
+  "updated_at": "2026-08-27T12:24:20.583Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130682:5434696097:2026-08-27T06:59:57Z:clawsweeper_needs_human",
-      "comment_id": "5434696097",
-      "comment_version_key": "5434696097:2026-08-27T06:59:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130682#issuecomment-5434696097",
-      "comment_created_at": "2026-08-27T05:16:38Z",
-      "comment_updated_at": "2026-08-27T06:59:57Z",
-      "comment_body_sha256": "f29a75d6bef0c583f8b0c956a0c159d9c16786653025d1620c5830babdaf7dad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130682,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - The active maintainer-owned PR already supplies the bounded repair; no separate fix lane is appropriate. (sha=17baa65d026458e2dc4b1c919fd733aa6b6f1871)",
-      "expected_head_sha": "17baa65d026458e2dc4b1c919fd733aa6b6f1871",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T07:03:01.357Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/configure-gateway-readiness",
-        "head_sha": "17baa65d026458e2dc4b1c919fd733aa6b6f1871",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130466:5432039092:2026-08-27T06:58:42Z:clawsweeper_auto_repair",
       "comment_id": "5432039092",
@@ -32137,6 +32104,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130871:5437662308:2026-08-27T12:23:34Z:clawsweeper_needs_human",
+      "comment_id": "5437662308",
+      "comment_version_key": "5437662308:2026-08-27T12:23:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130871#issuecomment-5437662308",
+      "comment_created_at": "2026-08-27T10:25:00Z",
+      "comment_updated_at": "2026-08-27T12:23:34Z",
+      "comment_body_sha256": "7a65fdf194f264db5556500f1f0fb8cce1c80cac2a1a62dbc585141c193e1ec9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130871,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Awareness is intentionally transient: a Gateway restart or non-exact route can leave a delivered alert without target-turn context, while the patch fails closed to prevent wrong-sessi... (sha=d6b6e661864b859b90689b6c95da9476d3ad37ad)",
+      "expected_head_sha": "d6b6e661864b859b90689b6c95da9476d3ad37ad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T12:24:20.583Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-target-session-projection-minimal",
+        "head_sha": "d6b6e661864b859b90689b6c95da9476d3ad37ad",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
