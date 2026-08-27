@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T15:40:17.361Z",
+  "updated_at": "2026-08-27T15:40:42.227Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126604:5353679197:2026-08-27T07:21:18Z:clawsweeper_needs_human",
-      "comment_id": "5353679197",
-      "comment_version_key": "5353679197:2026-08-27T07:21:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126604#issuecomment-5353679197",
-      "comment_created_at": "2026-08-20T08:57:06Z",
-      "comment_updated_at": "2026-08-27T07:21:18Z",
-      "comment_body_sha256": "2e5436189e232ec37645f1382abae971e134371150446b9f542de77447c54b02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126604,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing catalogs with any metadata file above 16 MiB, or more than 64 MiB collectively, will now omit otherwise valid sessions until reduced; the partial diagnostic makes this visibl... (sha=3767c59ccab2fa19fa6f4979fe5d8fc81fc8e5ba)",
-      "expected_head_sha": "3767c59ccab2fa19fa6f4979fe5d8fc81fc8e5ba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T09:41:08.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/anthropic-session-catalog-json-cap",
-        "head_sha": "3767c59ccab2fa19fa6f4979fe5d8fc81fc8e5ba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127290:5372934610:2026-08-27T07:20:11Z:clawsweeper_needs_human",
       "comment_id": "5372934610",
@@ -32427,6 +32394,53 @@
         "kind": "pull_request",
         "branch": "steipete/terminal-plan-prerequisites-20260827",
         "head_sha": "213927808a1d14c11fb8507e45dcc061ceeade62",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124162:5441500485:2026-08-27T15:37:13Z:re_review",
+      "comment_id": "5441500485",
+      "comment_version_key": "5441500485:2026-08-27T15:37:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5441500485",
+      "comment_created_at": "2026-08-27T15:37:13Z",
+      "comment_updated_at": "2026-08-27T15:37:13Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124162,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T15:40:39.684Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-aware-resume-breaker-122950",
+        "head_sha": "f8ef07436a04ebf4667457145177966f86487724",
         "cluster_id": null,
         "job_path": null
       },
