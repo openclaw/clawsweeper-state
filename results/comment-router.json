@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T07:20:41.701Z",
+  "updated_at": "2026-08-27T07:22:04.003Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112362:5120146443:2026-08-27T03:53:21Z:clawsweeper_needs_human",
-      "comment_id": "5120146443",
-      "comment_version_key": "5120146443:2026-08-27T03:53:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112362#issuecomment-5120146443",
-      "comment_created_at": "2026-07-29T15:43:12Z",
-      "comment_updated_at": "2026-08-27T03:53:21Z",
-      "comment_body_sha256": "96f0d30e171a90de2c36abe2c2ceaad8475528509e51b57764ba2223108693f2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112362,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The four browse commands intentionally become permissive for invalid configuration; configured remote Gateway and credential failures must remain fail-closed, as the updated table tes... (sha=82da54d5f06f68f53bf0acffa2fb7b5604bf0f28)",
-      "expected_head_sha": "82da54d5f06f68f53bf0acffa2fb7b5604bf0f28",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T03:58:22.359Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pr-skills-bypass-config-guard",
-        "head_sha": "82da54d5f06f68f53bf0acffa2fb7b5604bf0f28",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128141:5434181906:2026-08-27T03:58:13Z:re_review",
       "comment_id": "5434181906",
@@ -31361,6 +31328,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130691:5435687941:2026-08-27T07:21:16Z:re_review",
+      "comment_id": "5435687941",
+      "comment_version_key": "5435687941:2026-08-27T07:21:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130691#issuecomment-5435687941",
+      "comment_created_at": "2026-08-27T07:21:16Z",
+      "comment_updated_at": "2026-08-27T07:21:16Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130691,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T07:22:02.306Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-e2e-fix-worker-spawn-context",
+        "head_sha": "b3c68e3e6ed7b4923de7ec81046ecee88d455e7e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
