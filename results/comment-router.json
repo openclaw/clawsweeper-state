@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T01:11:27.567Z",
+  "updated_at": "2026-08-27T01:11:27.842Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129876:5430121813:2026-08-26T19:31:17Z:re_review",
-      "comment_id": "5430121813",
-      "comment_version_key": "5430121813:2026-08-26T19:31:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129876#issuecomment-5430121813",
-      "comment_created_at": "2026-08-26T19:31:17Z",
-      "comment_updated_at": "2026-08-26T19:31:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129876,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T19:32:03.943Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/sqlite-singleton-foldin",
-        "head_sha": "cafd65ec1fb377b25bbbffc908ea8563cf3cee31",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112820:5430124058:2026-08-26T19:31:29Z:re_review",
       "comment_id": "5430124058",
@@ -32671,6 +32624,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-clear-stale-error-on-withheld-publication",
         "head_sha": "c7ab0a29a087cbb5691cf7ee56d46aae15dccbee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130520:5432843887:2026-08-27T01:02:10Z:clawsweeper_needs_human",
+      "comment_id": "5432843887",
+      "comment_version_key": "5432843887:2026-08-27T01:02:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130520#issuecomment-5432843887",
+      "comment_created_at": "2026-08-27T00:43:53Z",
+      "comment_updated_at": "2026-08-27T01:02:10Z",
+      "comment_body_sha256": "3c94306e2ebee21e6fc6500c7629a5668912419a0023616b6e23ba1d0bc13040",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130520,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The focused proof reaches the production payload and TTS policy but not a real channel transport; because no adapter or transport policy changes, this is a bounded message-delivery in... (sha=fba20392416ea4cbc79c81f5540f29cd84f8d1c8)",
+      "expected_head_sha": "fba20392416ea4cbc79c81f5540f29cd84f8d1c8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T01:11:27.842Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cron-tts-facts-wave9",
+        "head_sha": "fba20392416ea4cbc79c81f5540f29cd84f8d1c8",
         "cluster_id": null,
         "job_path": null
       }
