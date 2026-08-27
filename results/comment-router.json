@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T05:17:21.147Z",
+  "updated_at": "2026-08-27T05:17:32.606Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121554:5433185331:2026-08-27T01:27:36Z:re_review",
-      "comment_id": "5433185331",
-      "comment_version_key": "5433185331:2026-08-27T01:27:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121554#issuecomment-5433185331",
-      "comment_created_at": "2026-08-27T01:27:36Z",
-      "comment_updated_at": "2026-08-27T01:27:36Z",
-      "comment_body_sha256": "244fcebbebf09afc608483c9d15687ab123c7fe97737504e6bedd2235b8baa32",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121554,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T01:28:23.766Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/daytona-sandbox-backend",
-        "head_sha": "f219949f40ac6c26de3fa135002f41b023f5d729",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:639:5431406040:2026-08-27T01:18:49Z:clawsweeper_auto_repair",
       "comment_id": "5431406040",
@@ -31793,6 +31746,39 @@
         "kind": "pull_request",
         "branch": "codex/delegated-sandbox-lifecycle",
         "head_sha": "5bc2d90a3552d9d54210c4b49178a3544c2c1aa9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130636:5433879031:2026-08-27T05:16:28Z:clawsweeper_needs_human",
+      "comment_id": "5433879031",
+      "comment_version_key": "5433879031:2026-08-27T05:16:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130636#issuecomment-5433879031",
+      "comment_created_at": "2026-08-27T03:11:48Z",
+      "comment_updated_at": "2026-08-27T05:16:28Z",
+      "comment_body_sha256": "45a94b580a7831883b7a85883e39ce4bf9c74088c7e8e0e1d666ac0c6e98d82c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130636,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the Codex sandbox contract directly** - The changed predicate determines whether configured host MCP reaches a Codex thread; the required upstream Codex checkout is unavailable,...; Review finding: [medium] Verify the Codex sandbox contract directly — extensions/codex/src/app-server/attempt-startup.ts:486 (sha=443f2d4aba074c170e4e514ca8ed1dad8f1d606e)",
+      "expected_head_sha": "443f2d4aba074c170e4e514ca8ed1dad8f1d606e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T05:17:32.606Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/always-project-user-mcp",
+        "head_sha": "443f2d4aba074c170e4e514ca8ed1dad8f1d606e",
         "cluster_id": null,
         "job_path": null
       }
