@@ -1,0 +1,117 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-92015",
+  "mode": "autonomous",
+  "run_id": "33070093916",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33070093916",
+  "head_sha": "0bd84d42bc0487c32af2285006884d4f9b2f7763",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-92015.md",
+  "published_at": "2026-08-27T12:38:15.496Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/92015",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/92015",
+  "canonical_pr": null,
+  "summary": "#92015 remains a reproducible, narrow command-preparation ordering bug on main. A fix plan is ready, but this read-only checkout cannot capture the required failing regression or validate it, and the required direct ../codex source inspection is unavailable because that sibling checkout cannot be created.",
+  "actions": [
+    {
+      "target": "#92015",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the non-writable execution environment, unavailable dependencies, and the mandatory direct ../codex inspection gate; no product or security decision is unresolved."
+    },
+    {
+      "target": "#78093",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#92015",
+      "candidate_fix": null,
+      "reason": "Same workspace area, but a distinct root cause and product-policy question; keep open independently."
+    },
+    {
+      "target": "#92939",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical candidate with incomplete path coverage; do not mutate."
+    },
+    {
+      "target": "#93176",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-92015",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "A writable executor can implement and validate the narrow owner-boundary repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker failed: Selected model is at capacity. Please try a different model.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#92015",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
