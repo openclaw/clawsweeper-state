@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T02:10:10.769Z",
+  "updated_at": "2026-08-27T02:10:14.411Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clownfish:315:5431384923:2026-08-26T21:33:57Z:re_review",
-      "comment_id": "5431384923",
-      "comment_version_key": "5431384923:2026-08-26T21:33:57Z",
-      "comment_url": "https://github.com/openclaw/clownfish/pull/315#issuecomment-5431384923",
-      "comment_created_at": "2026-08-26T21:33:57Z",
-      "comment_updated_at": "2026-08-26T21:33:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clownfish",
-      "issue_number": 315,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T21:34:43.015Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pin-codex-review-dependency-v2",
-        "head_sha": "91fa163bf05c62ef88e30e9da634c115efaa02f6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130417:5431384408:2026-08-26T21:33:54Z:re_review",
       "comment_id": "5431384408",
@@ -31905,6 +31858,39 @@
         "kind": "pull_request",
         "branch": "fix/signal-approval-reaction-replay",
         "head_sha": "146f4e0699f8fce8ad58f312bbf450586d760f1b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129825:5420344777:2026-08-27T02:03:19Z:clawsweeper_needs_human",
+      "comment_id": "5420344777",
+      "comment_version_key": "5420344777:2026-08-27T02:03:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129825#issuecomment-5420344777",
+      "comment_created_at": "2026-08-26T03:54:03Z",
+      "comment_updated_at": "2026-08-27T02:03:19Z",
+      "comment_body_sha256": "e76025cc442a3720ec6e68e39d3513391a65015ab7e50cd81e53180dd8d5d876",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129825,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch was force-pushed and its exact-head checks are still queued; merge only after the current head passes the required validation. (sha=5d722708bc32cc70294f793dcc43a1ec3e61165d)",
+      "expected_head_sha": "5d722708bc32cc70294f793dcc43a1ec3e61165d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T02:10:14.411Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-112796-whatsapp-ack-scope-warning",
+        "head_sha": "5d722708bc32cc70294f793dcc43a1ec3e61165d",
         "cluster_id": null,
         "job_path": null
       }
