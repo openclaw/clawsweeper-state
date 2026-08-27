@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T09:09:11.893Z",
+  "updated_at": "2026-08-27T09:09:22.636Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130207:5434794817:2026-08-27T05:30:13Z:re_review",
-      "comment_id": "5434794817",
-      "comment_version_key": "5434794817:2026-08-27T05:30:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130207#issuecomment-5434794817",
-      "comment_created_at": "2026-08-27T05:30:13Z",
-      "comment_updated_at": "2026-08-27T05:30:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130207,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T05:30:51.011Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/docs-list-fence-boundary-20260826",
-        "head_sha": "5eeea9272a4bd713934a21edfc85acd927dc1d70",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130532:5433033650:2026-08-27T05:27:14Z:clawsweeper_needs_human",
       "comment_id": "5433033650",
@@ -31391,6 +31344,39 @@
         "kind": "pull_request",
         "branch": "fix/new-draft-responsive",
         "head_sha": "da5a92ed3d78a83af0cc719919ba73efd5cca972",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130845:5436845338:2026-08-27T09:08:08Z:clawsweeper_needs_human",
+      "comment_id": "5436845338",
+      "comment_version_key": "5436845338:2026-08-27T09:08:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130845#issuecomment-5436845338",
+      "comment_created_at": "2026-08-27T09:08:08Z",
+      "comment_updated_at": "2026-08-27T09:08:08Z",
+      "comment_body_sha256": "8bcba448db925d6696ac0aa17dab63eb2198fabae53838f1eb4a2e73b3b2d9aa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130845,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewer checkout could not complete an independent base/current-main tree comparison because required partial-clone objects could not be fetched; confirm the exact merge result w... (sha=6cc893b64d8c1ccee72bb2e890fb7d05f4a1fb77)",
+      "expected_head_sha": "6cc893b64d8c1ccee72bb2e890fb7d05f4a1fb77",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T09:09:22.636Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup20k-diagnostic-reader-projection-20260827",
+        "head_sha": "6cc893b64d8c1ccee72bb2e890fb7d05f4a1fb77",
         "cluster_id": null,
         "job_path": null
       }
