@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T07:05:15.548Z",
+  "updated_at": "2026-08-27T07:06:43.203Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128498:5434031687:2026-08-27T03:34:27Z:re_review",
-      "comment_id": "5434031687",
-      "comment_version_key": "5434031687:2026-08-27T03:34:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128498#issuecomment-5434031687",
-      "comment_created_at": "2026-08-27T03:34:27Z",
-      "comment_updated_at": "2026-08-27T03:34:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128498,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T03:35:15.537Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "gaoanze888/discord-components-string-coerce",
-        "head_sha": "3ac7287e9105056e80e576b9db07d419cddc026c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129702:5434035378:2026-08-27T03:35:02Z:re_review",
       "comment_id": "5434035378",
@@ -31465,6 +31418,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3230:5435543514:2026-08-27T07:05:48Z:clawsweeper_auto_repair",
+      "comment_id": "5435543514",
+      "comment_version_key": "5435543514:2026-08-27T07:05:48Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3230#issuecomment-5435543514",
+      "comment_created_at": "2026-08-27T07:05:48Z",
+      "comment_updated_at": "2026-08-27T07:05:48Z",
+      "comment_body_sha256": "56514fc7a209974fe098159b3a22e57dafa88c68ecf3d49e566e60042088db7c",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3230,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=f2b2b5ea14bb4fdd2b39ec388642903f07b034ab)",
+      "expected_head_sha": "f2b2b5ea14bb4fdd2b39ec388642903f07b034ab",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-27T07:06:43.203Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-local-ledger-publication",
+        "head_sha": "f2b2b5ea14bb4fdd2b39ec388642903f07b034ab",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
