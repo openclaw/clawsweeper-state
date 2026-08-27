@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T05:33:57.782Z",
+  "updated_at": "2026-08-27T05:35:45.117Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111347:5034232064:2026-07-21T12:50:52Z:re_review",
-      "comment_id": "5034232064",
-      "comment_version_key": "5034232064:2026-07-21T12:50:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111347#issuecomment-5034232064",
-      "comment_created_at": "2026-07-21T12:50:52Z",
-      "comment_updated_at": "2026-07-21T12:50:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111347,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T01:48:37.650Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111347:5041044171:2026-07-22T02:13:14Z:re_review",
       "comment_id": "5041044171",
@@ -31534,6 +31507,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1531:5430968962:2026-08-27T05:35:03Z:clawsweeper_needs_human",
+      "comment_id": "5430968962",
+      "comment_version_key": "5430968962:2026-08-27T05:35:03Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1531#issuecomment-5430968962",
+      "comment_created_at": "2026-08-26T20:52:03Z",
+      "comment_updated_at": "2026-08-27T05:35:03Z",
+      "comment_body_sha256": "9c4938f02c6f8778f21dd8ec5bd8050acb0e18218945806ea5951f242ebee177",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1531,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared transport may make up to three SSH invocations for one failure sequence; the private local diagnostic gate addresses duplicate remote execution, but the final-head hosted c... (sha=e63e4961637e0f0159c24828190c9a424e56b028)",
+      "expected_head_sha": "e63e4961637e0f0159c24828190c9a424e56b028",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T05:35:45.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ssh-mux-backpressure-retry",
+        "head_sha": "e63e4961637e0f0159c24828190c9a424e56b028",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
