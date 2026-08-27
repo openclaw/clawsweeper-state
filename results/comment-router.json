@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-27T12:40:41.637Z",
+  "updated_at": "2026-08-27T12:40:48.371Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130691:5435687941:2026-08-27T07:21:16Z:re_review",
-      "comment_id": "5435687941",
-      "comment_version_key": "5435687941:2026-08-27T07:21:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130691#issuecomment-5435687941",
-      "comment_created_at": "2026-08-27T07:21:16Z",
-      "comment_updated_at": "2026-08-27T07:21:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130691,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T07:22:02.306Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-e2e-fix-worker-spawn-context",
-        "head_sha": "b3c68e3e6ed7b4923de7ec81046ecee88d455e7e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129035:5435688603:2026-08-27T07:21:20Z:re_review",
-      "comment_id": "5435688603",
-      "comment_version_key": "5435688603:2026-08-27T07:21:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129035#issuecomment-5435688603",
-      "comment_created_at": "2026-08-27T07:21:20Z",
-      "comment_updated_at": "2026-08-27T07:21:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129035,
-      "author": "pgondhi987",
-      "author_id": 270720687,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T07:22:10.354Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-976",
-        "head_sha": "d7cb0cd7b3fcd2632dc2451078f1a752511e3ad7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125725:5325660518:2026-08-27T07:21:19Z:clawsweeper_auto_repair",
       "comment_id": "5325660518",
@@ -32071,6 +31977,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103794:4937465218:2026-08-27T12:36:39Z:clawsweeper_needs_human",
+      "comment_id": "4937465218",
+      "comment_version_key": "4937465218:2026-08-27T12:36:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103794#issuecomment-4937465218",
+      "comment_created_at": "2026-07-10T16:37:21Z",
+      "comment_updated_at": "2026-08-27T12:36:39Z",
+      "comment_body_sha256": "24873b6734539c5ed16d9af0d493a3498a8f66362ee10e0ceed9363ca03af539",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103794,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing plugins that explicitly set selectionDocsPrefix to an empty string will change from a labeled docs link to an unlabeled one after upgrade; that is the documented intended com... (sha=e375e04a7dc600c337c76e86146bed11c2c21627)",
+      "expected_head_sha": "e375e04a7dc600c337c76e86146bed11c2c21627",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T12:40:48.371Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "llagy007/plugin-contract-hygiene",
+        "head_sha": "e375e04a7dc600c337c76e86146bed11c2c21627",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:103794:4937764919:2026-07-10T17:15:42Z:re_review",
+      "comment_id": "4937764919",
+      "comment_version_key": "4937764919:2026-07-10T17:15:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103794#issuecomment-4937764919",
+      "comment_created_at": "2026-07-10T17:15:42Z",
+      "comment_updated_at": "2026-07-10T17:15:42Z",
+      "comment_body_sha256": "3cf17fd57596facfe1d405d8bd8311931994441aa3606edfd3cbb2dc68e12fe1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103794,
+      "author": "Leon-SK668",
+      "author_id": 17695126,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T12:40:48.371Z",
+      "target": null
     }
   ]
 }
