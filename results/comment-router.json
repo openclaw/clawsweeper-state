@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T10:13:48.207Z",
+  "updated_at": "2026-08-27T10:15:25.034Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5312944083:2026-08-17T07:09:36Z:re_review",
-      "comment_id": "5312944083",
-      "comment_version_key": "5312944083:2026-08-17T07:09:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5312944083",
-      "comment_created_at": "2026-08-17T07:09:36Z",
-      "comment_updated_at": "2026-08-17T07:09:36Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T05:57:46.771Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5313059262:2026-08-17T07:22:34Z:re_review",
       "comment_id": "5313059262",
@@ -32527,6 +32500,39 @@
       "status": "skipped",
       "processed_at": "2026-08-27T10:13:48.207Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127849:5379730054:2026-08-27T10:11:06Z:clawsweeper_needs_human",
+      "comment_id": "5379730054",
+      "comment_version_key": "5379730054:2026-08-27T10:11:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127849#issuecomment-5379730054",
+      "comment_created_at": "2026-08-22T10:18:06Z",
+      "comment_updated_at": "2026-08-27T10:11:06Z",
+      "comment_body_sha256": "7564e366b636c53ab26568377cc26e921df0606c38f0122a06a9582d4e2ce8dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127849,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes shared same-lane message scheduling, so merge should wait for the still-running exact-head channel checks. (sha=117e472c1a214b1b7ac20d5a6bdaaeca8926284b)",
+      "expected_head_sha": "117e472c1a214b1b7ac20d5a6bdaaeca8926284b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T10:15:25.034Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ingress-retry-lane-head",
+        "head_sha": "117e472c1a214b1b7ac20d5a6bdaaeca8926284b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
