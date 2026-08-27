@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T10:30:21.371Z",
+  "updated_at": "2026-08-27T10:30:29.642Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107608:4975690826:2026-08-27T04:51:45Z:clawsweeper_auto_repair",
-      "comment_id": "4975690826",
-      "comment_version_key": "4975690826:2026-08-27T04:51:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107608#issuecomment-4975690826",
-      "comment_created_at": "2026-07-15T01:00:42Z",
-      "comment_updated_at": "2026-08-27T04:51:45Z",
-      "comment_body_sha256": "35a658139647fb27dde3c1d86781338363137ce3a5d66b0efdac2ee1b521eb3f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107608,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d53981db10d7fa090af031ef74e7c24f32833689)",
-      "expected_head_sha": "d53981db10d7fa090af031ef74e7c24f32833689",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T06:29:26.115Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-get-cap-limit",
-        "head_sha": "d53981db10d7fa090af031ef74e7c24f32833689",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107693:4977442960:2026-08-27T04:52:15Z:clawsweeper_auto_repair",
       "comment_id": "4977442960",
@@ -32153,6 +32120,39 @@
       "status": "skipped",
       "processed_at": "2026-08-27T10:30:21.371Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130827:5436726757:2026-08-27T10:29:02Z:clawsweeper_needs_human",
+      "comment_id": "5436726757",
+      "comment_version_key": "5436726757:2026-08-27T10:29:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130827#issuecomment-5436726757",
+      "comment_created_at": "2026-08-27T08:57:20Z",
+      "comment_updated_at": "2026-08-27T10:29:02Z",
+      "comment_body_sha256": "2cdd1ee77627446bc946858b71c307a27a10f3aed5523bd24db722d99cb368fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130827,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Production code grows by 35 net lines; this appears necessary because one canonical loader owns the cap, fallback, and identical ordering for two callers, but it cannot be absorbed wi... (sha=20abb1e87faa7555c23d8cc9458858a322755be0)",
+      "expected_head_sha": "20abb1e87faa7555c23d8cc9458858a322755be0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T10:30:29.642Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-due-wave-targeted-load-127257",
+        "head_sha": "20abb1e87faa7555c23d8cc9458858a322755be0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
