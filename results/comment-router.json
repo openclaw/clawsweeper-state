@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T17:42:23.930Z",
+  "updated_at": "2026-08-27T17:42:29.151Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103794:5439000939:2026-08-27T12:17:35Z:re_review",
-      "comment_id": "5439000939",
-      "comment_version_key": "5439000939:2026-08-27T12:17:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103794#issuecomment-5439000939",
-      "comment_created_at": "2026-08-27T12:17:35Z",
-      "comment_updated_at": "2026-08-27T12:17:35Z",
-      "comment_body_sha256": "79d06d7aa396fde3db6e48e1f4e3754820ecfced796c9cf638197c6bc3c6970c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103794,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T12:18:28.026Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "llagy007/plugin-contract-hygiene",
-        "head_sha": "e375e04a7dc600c337c76e86146bed11c2c21627",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/photoscrawl:14:5431841450:2026-08-26T22:26:48Z:re_review",
       "comment_id": "5431841450",
@@ -31937,6 +31890,39 @@
         "kind": "pull_request",
         "branch": "fix/line-carousel-column-consistency",
         "head_sha": "b70fc29a8c6df15e7ff002f49c1f0864a67c51f6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116604:5137949038:2026-08-27T17:34:58Z:clawsweeper_needs_human",
+      "comment_id": "5137949038",
+      "comment_version_key": "5137949038:2026-08-27T17:34:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116604#issuecomment-5137949038",
+      "comment_created_at": "2026-07-31T01:01:06Z",
+      "comment_updated_at": "2026-08-27T17:34:58Z",
+      "comment_body_sha256": "b3cf0401c14752f226ed92c78133d11324aae9704322d7867cdfeab240a98935",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116604,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied projector-level test output is useful supplemental evidence, but no after-fix Codex app-server-to-Control-UI trace or capture is p...; Review finding: [P1] Exclude async messages from delivered-answer selection — extensions/codex/src/app-server/event-projector-assistant-delivered-answer.ts:23 - [medium] Async upd... (sha=6d87f3207c0c18016327322ebdb776c353f36a1e)",
+      "expected_head_sha": "6d87f3207c0c18016327322ebdb776c353f36a1e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T17:42:29.151Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-projector-trailing-no-reply",
+        "head_sha": "6d87f3207c0c18016327322ebdb776c353f36a1e",
         "cluster_id": null,
         "job_path": null
       }
