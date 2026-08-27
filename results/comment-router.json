@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T06:51:09.043Z",
+  "updated_at": "2026-08-27T06:53:14.462Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128454:5401448858:2026-08-24T21:12:55Z:re_review",
-      "comment_id": "5401448858",
-      "comment_version_key": "5401448858:2026-08-24T21:12:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5401448858",
-      "comment_created_at": "2026-08-24T21:12:55Z",
-      "comment_updated_at": "2026-08-24T21:12:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T03:23:31.542Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5401594959:2026-08-24T21:27:40Z:re_review",
       "comment_id": "5401594959",
@@ -31445,6 +31418,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130691:5434552827:2026-08-27T06:52:15Z:clawsweeper_needs_human",
+      "comment_id": "5434552827",
+      "comment_version_key": "5434552827:2026-08-27T06:52:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130691#issuecomment-5434552827",
+      "comment_created_at": "2026-08-27T04:54:58Z",
+      "comment_updated_at": "2026-08-27T06:52:15Z",
+      "comment_body_sha256": "87002196b2a5a3c44285d0a861236d6e6e7fd2fccb4f92d5461e38deb001e130",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130691,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR describes replacement-race results but provides no inspectable after-fix trace for the nearest forbidden...; Review finding: [P1] Revalidate worker-turn authority before committing the child session — src/gateway/worker-environments/worker-session-tool-executor.ts:187-190 - [high] Revoke... (sha=c3ab29977e5371b66e5a89f3f439687aaa9eb499)",
+      "expected_head_sha": "c3ab29977e5371b66e5a89f3f439687aaa9eb499",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T06:53:14.462Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-e2e-fix-worker-spawn-context",
+        "head_sha": "c3ab29977e5371b66e5a89f3f439687aaa9eb499",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
