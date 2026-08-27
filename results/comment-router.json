@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T03:52:42.594Z",
+  "updated_at": "2026-08-27T03:54:02.750Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3211:5432103294:2026-08-26T23:02:22Z:re_review",
-      "comment_id": "5432103294",
-      "comment_version_key": "5432103294:2026-08-26T23:02:22Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3211#issuecomment-5432103294",
-      "comment_created_at": "2026-08-26T23:02:22Z",
-      "comment_updated_at": "2026-08-26T23:02:22Z",
-      "comment_body_sha256": "dc2f0ada946aa46c64a3c97883a6a9913c4b3e9fd189581d77aa5a61e26398d6",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3211,
-      "author": "kriptoburak",
-      "author_id": 8755484,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T23:06:59.314Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/add-xquik-provider",
-        "head_sha": "eafbf2d5b945f728f61671d21627679d706f0db4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3211:5428404054:2026-08-26T23:06:12Z:clawsweeper_needs_human",
       "comment_id": "5428404054",
@@ -32358,6 +32311,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128904:5403517898:2026-08-27T03:53:09Z:clawsweeper_needs_human",
+      "comment_id": "5403517898",
+      "comment_version_key": "5403517898:2026-08-27T03:53:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128904#issuecomment-5403517898",
+      "comment_created_at": "2026-08-25T00:51:50Z",
+      "comment_updated_at": "2026-08-27T03:53:09Z",
+      "comment_body_sha256": "f2b4c00739840e05882ee45838860e26b80ce2fabeaba5fffa3a5dcc7cc0c559",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128904,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied isolated proof predates the reviewed head and explicitly does not exercise ceded runtime registration; add fresh redacted...; Review finding: [P1] Preserve authored selections in config.set and config.apply — src/gateway/server-methods/config.ts:586-605 - [P1] Retain active-owner hints in system-agent co... (sha=ebb3f97976979276ad6e9eb97c4f10538b8fa30f)",
+      "expected_head_sha": "ebb3f97976979276ad6e9eb97c4f10538b8fa30f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T03:54:02.750Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/channel-ownership-core",
+        "head_sha": "ebb3f97976979276ad6e9eb97c4f10538b8fa30f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
