@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T13:34:19.334Z",
+  "updated_at": "2026-08-27T13:35:19.934Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130588:5436443918:2026-08-27T08:29:45Z:re_review",
-      "comment_id": "5436443918",
-      "comment_version_key": "5436443918:2026-08-27T08:29:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130588#issuecomment-5436443918",
-      "comment_created_at": "2026-08-27T08:29:45Z",
-      "comment_updated_at": "2026-08-27T08:29:45Z",
-      "comment_body_sha256": "f5b6e09b8a7cf30b3ca050d09540ebee808eb39c4b9663b07817063133b79e33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130588,
-      "author": "pengzh1",
-      "author_id": 24854675,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T08:30:40.554Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-reconciliation-attribution",
-        "head_sha": "e91cda4100763e54c72d74e15aadda2673806d37",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/carapace:76:5392643319:2026-08-27T08:30:44Z:clawsweeper_needs_human",
       "comment_id": "5392643319",
@@ -32181,6 +32134,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123189:5281706896:2026-08-27T13:34:10Z:clawsweeper_needs_human",
+      "comment_id": "5281706896",
+      "comment_version_key": "5281706896:2026-08-27T13:34:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123189#issuecomment-5281706896",
+      "comment_created_at": "2026-08-13T14:23:44Z",
+      "comment_updated_at": "2026-08-27T13:34:10Z",
+      "comment_body_sha256": "0a7108c911788744ca0776bbdf27c746a789b19584452e7bfaa8a56e2e961d19",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123189,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch adds a net 468 production lines across embedded-run state, Gateway projection, and abort routing; maintainers should preserve this single bounded owner bridge rather than ad... (sha=7b1be90aae6a1b46cf36d51ecaa4ae4b3eb2fc8e)",
+      "expected_head_sha": "7b1be90aae6a1b46cf36d51ecaa4ae4b3eb2fc8e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T13:35:19.934Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-run-recovery-121756",
+        "head_sha": "7b1be90aae6a1b46cf36d51ecaa4ae4b3eb2fc8e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
