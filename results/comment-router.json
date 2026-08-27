@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T03:41:28.817Z",
+  "updated_at": "2026-08-27T03:42:49.058Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123145:5279595276:2026-08-26T22:52:07Z:clawsweeper_needs_human",
-      "comment_id": "5279595276",
-      "comment_version_key": "5279595276:2026-08-26T22:52:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123145#issuecomment-5279595276",
-      "comment_created_at": "2026-08-13T11:06:30Z",
-      "comment_updated_at": "2026-08-26T22:52:07Z",
-      "comment_body_sha256": "51d9b685e53240fa89a25d624831f26311c0bf370221c4d3962c33945ce478e0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123145,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The child is stacked on the still-open Gateway parent at https://github.com/openclaw/openclaw/pull/123053, so the final QA evidence must be validated against the combined landing head... (sha=8d11ef99dd0c6af84eba1ecc71266eb72269a22d)",
-      "expected_head_sha": "8d11ef99dd0c6af84eba1ecc71266eb72269a22d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T22:56:12.003Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/qa-tool-search-evidence-aug13",
-        "head_sha": "8d11ef99dd0c6af84eba1ecc71266eb72269a22d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130443:5431781805:2026-08-26T22:55:05Z:clawsweeper_needs_human",
       "comment_id": "5431781805",
@@ -32257,6 +32224,53 @@
         "kind": "pull_request",
         "branch": "pr-skills-bypass-config-guard",
         "head_sha": "82da54d5f06f68f53bf0acffa2fb7b5604bf0f28",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130588:5434079287:2026-08-27T03:42:04Z:re_review",
+      "comment_id": "5434079287",
+      "comment_version_key": "5434079287:2026-08-27T03:42:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130588#issuecomment-5434079287",
+      "comment_created_at": "2026-08-27T03:42:04Z",
+      "comment_updated_at": "2026-08-27T03:42:04Z",
+      "comment_body_sha256": "8a3c2100b9e20b79dd2e612a7d413e9619391c8c6e34d1c4f0eb6082209e7e88",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130588,
+      "author": "pengzh1",
+      "author_id": 24854675,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T03:42:47.368Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-mode-reconciliation-attribution",
+        "head_sha": "cb6c6a384a27a8e0b39ad5bd08c745e02653e779",
         "cluster_id": null,
         "job_path": null
       },
