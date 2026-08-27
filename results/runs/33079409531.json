@@ -1,0 +1,89 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130954",
+  "mode": "autonomous",
+  "run_id": "33079409531",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33079409531",
+  "head_sha": "0bd84d42bc0487c32af2285006884d4f9b2f7763",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130954.md",
+  "published_at": "2026-08-27T14:56:00.331Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130954",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130954",
+  "canonical_pr": null,
+  "summary": "#130954 is a reproducible canonical P1 self-deadlock on main 0b652b009107c7c4a6516f26ba7a96a0cb168881. A narrow fix is defined, but this worker cannot edit or validate it: the checkout is read-only and the mandatory ../codex source checkout is absent.",
+  "actions": [
+    {
+      "target": "#130954",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130954",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only execution sandbox and the root-required direct ../codex source inspection; the source defect itself is clear."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130954",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130954",
+      "candidate_fix": null,
+      "reason": "A fresh writable executor with ../codex provisioned can implement this one-issue repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable execution checkout and the required sibling ../codex source clone before implementation or a Codex verdict; no maintainer product decision is otherwise needed."
+  ],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#130954",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
