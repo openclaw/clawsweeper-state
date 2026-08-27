@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T21:35:21.194Z",
+  "updated_at": "2026-08-27T21:35:39.391Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/Trimmy:31:5428775983:2026-08-27T14:57:51Z:clawsweeper_auto_repair",
-      "comment_id": "5428775983",
-      "comment_version_key": "5428775983:2026-08-27T14:57:51Z",
-      "comment_url": "https://github.com/steipete/Trimmy/pull/31#issuecomment-5428775983",
-      "comment_created_at": "2026-08-26T17:31:42Z",
-      "comment_updated_at": "2026-08-27T14:57:51Z",
-      "comment_body_sha256": "2633c6618b2fb28cb97479fdae2d22000ce7fc64acf7f23c49a69bb33ea9efba",
-      "repo": "steipete/Trimmy",
-      "issue_number": 31,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=eb3d9527c5f525f6f5da4f348289f6bee94974c0)",
-      "expected_head_sha": "eb3d9527c5f525f6f5da4f348289f6bee94974c0",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-27T14:58:45.156Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/automatic-text-reflow",
-        "head_sha": "eb3d9527c5f525f6f5da4f348289f6bee94974c0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130986:5440988170:2026-08-27T14:58:15Z:clawsweeper_needs_human",
       "comment_id": "5440988170",
@@ -32028,6 +31995,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128127:5445496318:2026-08-27T21:34:44Z:re_review",
+      "comment_id": "5445496318",
+      "comment_version_key": "5445496318:2026-08-27T21:34:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128127#issuecomment-5445496318",
+      "comment_created_at": "2026-08-27T21:34:44Z",
+      "comment_updated_at": "2026-08-27T21:34:44Z",
+      "comment_body_sha256": "c9a065cf9e1ddcf9d9005e20f619d48fcf8b15b54f9e62cae9542abe31bc019a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128127,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T21:35:36.442Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-cancel-reverted-restart",
+        "head_sha": "ba17633d92151e063135d3467c5fe0044b1dd807",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
