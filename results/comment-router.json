@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T15:12:12.207Z",
+  "updated_at": "2026-08-27T15:12:20.578Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130319:5437020919:2026-08-27T09:24:03Z:re_review",
-      "comment_id": "5437020919",
-      "comment_version_key": "5437020919:2026-08-27T09:24:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130319#issuecomment-5437020919",
-      "comment_created_at": "2026-08-27T09:24:03Z",
-      "comment_updated_at": "2026-08-27T09:24:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130319,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T09:24:43.576Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "mobile-chat/global-drawer",
-        "head_sha": "b98a8cb6288d06087972289702193886580b9ad3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130859:5437037504:2026-08-27T09:25:36Z:clawsweeper_needs_human",
       "comment_id": "5437037504",
@@ -32470,6 +32423,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1558:5441057902:2026-08-27T15:03:41Z:clawsweeper_auto_repair",
+      "comment_id": "5441057902",
+      "comment_version_key": "5441057902:2026-08-27T15:03:41Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1558#issuecomment-5441057902",
+      "comment_created_at": "2026-08-27T15:03:41Z",
+      "comment_updated_at": "2026-08-27T15:03:41Z",
+      "comment_body_sha256": "55e30b98e7f32e1eb72d3c0ba3cea9149632a0a1a5fa738f5d31d90e5bdfb2bb",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1558,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e48408af3d010f010da851540105cfbf1f74dce3)",
+      "expected_head_sha": "e48408af3d010f010da851540105cfbf1f74dce3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T15:12:20.578Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ssh-mux-backpressure-recovery",
+        "head_sha": "e48408af3d010f010da851540105cfbf1f74dce3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
