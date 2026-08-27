@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T03:48:58.623Z",
+  "updated_at": "2026-08-27T03:52:08.647Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123053:5277804115:2026-08-26T22:55:51Z:clawsweeper_needs_human",
-      "comment_id": "5277804115",
-      "comment_version_key": "5277804115:2026-08-26T22:55:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123053#issuecomment-5277804115",
-      "comment_created_at": "2026-08-13T08:15:39Z",
-      "comment_updated_at": "2026-08-26T22:55:51Z",
-      "comment_body_sha256": "1080909d82fc5f6aa29398b3a5a02cfb4b3a06c601c8821076b8e6a246573778",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123053,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing clients may encounter stricter Responses replay validation and a fresh session when a previous_response_id is reused with a different or omitted user value. (sha=f3329d0768c845543593c8c8e16dd4f86ecac67d)",
-      "expected_head_sha": "f3329d0768c845543593c8c8e16dd4f86ecac67d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T23:01:58.135Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/gateway-responses-aug13",
-        "head_sha": "f3329d0768c845543593c8c8e16dd4f86ecac67d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130434:5431641631:2026-08-26T23:02:29Z:clawsweeper_needs_human",
       "comment_id": "5431641631",
@@ -32299,6 +32266,53 @@
         "kind": "pull_request",
         "branch": "fix/pool-provider-bound-capacity",
         "head_sha": "a6ea7d6c8467a6a9ef47c5dc0f287234e3bf24f0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1443:5434137064:2026-08-27T03:51:13Z:re_review",
+      "comment_id": "5434137064",
+      "comment_version_key": "5434137064:2026-08-27T03:51:13Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1443#issuecomment-5434137064",
+      "comment_created_at": "2026-08-27T03:51:13Z",
+      "comment_updated_at": "2026-08-27T03:51:13Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1443,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T03:52:06.427Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "improve/runner-phase-telemetry",
+        "head_sha": "517c83891e9b527088454134e0821a1506707e87",
         "cluster_id": null,
         "job_path": null
       },
