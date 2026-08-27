@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-130523"
 mode: "autonomous"
-run_id: "33027347065"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33027347065"
-head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
-workflow_conclusion: "failure"
+run_id: "33032369024"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33032369024"
+head_sha: "4a6f9ecb165edc400996fb3bb58c1a56d6133bd2"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-27T00:47:44.427Z"
-canonical: "https://github.com/openclaw/openclaw/issues/130523"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/130523"
+published_at: "2026-08-27T04:30:58.967Z"
+canonical: "#130523"
+canonical_issue: "#130523"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33027347065](https://github.com/openclaw/clawsweeper/actions/runs/33027347065)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33032369024](https://github.com/openclaw/clawsweeper/actions/runs/33032369024)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/130523
+Canonical: #130523
 
 ## Summary
 
-#130523 remains the canonical open bug. Current main statically confirms the missing doctor migration: strict binding validation rejects `peer.kind: "dm"`, while the doctor migration registry has no corresponding rewrite. A narrow two-file fix plan is ready, but this worker cannot apply or validate it because the checkout is read-only, dependencies are absent, and the mandatory sibling `../codex` source is unavailable.
+No patch or PR was produced: this checkout is read-only, has no dependencies installed, and lacks the required ../codex source checkout. The attached artifact is a narrow source-informed repair plan, not a completion verdict.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/130523
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124460 | keep_closed | skipped | related | Historical context only; do not conflate it with the binding peer-kind migration. |
-| #126899 | keep_closed | skipped | related | Historical context only; do not conflate it with the binding peer-kind migration. |
-| #129337 | keep_closed | skipped | related | Historical context only; do not conflate it with the binding peer-kind migration. |
-| #130523 | fix_needed | blocked | canonical | Implementation and validation require a writable checkout with dependencies and the mandatory sibling Codex source available. |
-| cluster:issue-openclaw-openclaw-130523 | build_fix_artifact | planned | canonical | A writable executor can apply this bounded artifact as one new fix PR. |
+| #124460 | keep_closed | skipped | related | Historical related context; already closed and no closure action is permitted. |
+| #126899 | keep_closed | skipped | related | Historical related context; already closed and no closure action is permitted. |
+| #129337 | keep_closed | skipped | related | Historical related context; already closed and no closure action is permitted. |
+| #130523 | fix_needed | blocked | canonical | A writable checkout with dependencies and the required ../codex checkout is needed to implement and validate the allowed narrow fix. |
 
 ## Needs Human
 
