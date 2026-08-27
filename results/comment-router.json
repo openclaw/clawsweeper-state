@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T08:58:35.035Z",
+  "updated_at": "2026-08-27T08:58:37.857Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129575:5434464942:2026-08-27T04:41:18Z:re_review",
-      "comment_id": "5434464942",
-      "comment_version_key": "5434464942:2026-08-27T04:41:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129575#issuecomment-5434464942",
-      "comment_created_at": "2026-08-27T04:41:18Z",
-      "comment_updated_at": "2026-08-27T04:41:18Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129575,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T04:41:57.632Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-parallels-prerequisite",
-        "head_sha": "c3cf13ab8e907702bb8721987018948ac2595edc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130563:5433358542:2026-08-27T04:42:06Z:clawsweeper_needs_human",
       "comment_id": "5433358542",
@@ -31971,6 +31924,39 @@
         "kind": "pull_request",
         "branch": "fix/cron-due-wave-targeted-load-127257",
         "head_sha": "f6854ca980fc3d2d6cbf32850021fbb796e345a3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130168:5426903916:2026-08-27T08:55:56Z:clawsweeper_needs_human",
+      "comment_id": "5426903916",
+      "comment_version_key": "5426903916:2026-08-27T08:55:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130168#issuecomment-5426903916",
+      "comment_created_at": "2026-08-26T14:35:16Z",
+      "comment_updated_at": "2026-08-27T08:55:56Z",
+      "comment_body_sha256": "066448929d498ef2d34e80c42c1414de01d11afa98ce4c22f1aba982374567d4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130168,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Redact Git provenance before returning plugin inspection (P1)** - plugins.inspect returns the raw persisted install spec, and the new dialog renders it. Git install accepts HTTP URLs and persists request.spec, s...; Review finding: [P1] Redact Git provenance before returning plugin inspection — src/plugins/management-service.ts:1062-1069 - [P2] Let accepted external plugins re-enable without... (sha=1472351bab797c688fca492f89bab916fa659318)",
+      "expected_head_sha": "1472351bab797c688fca492f89bab916fa659318",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T08:58:37.857Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/musing-pascal-efafdf",
+        "head_sha": "1472351bab797c688fca492f89bab916fa659318",
         "cluster_id": null,
         "job_path": null
       }
