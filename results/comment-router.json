@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T18:35:58.041Z",
+  "updated_at": "2026-08-27T18:39:04.893Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114204:5086149256:2026-08-27T11:23:57Z:clawsweeper_needs_human",
-      "comment_id": "5086149256",
-      "comment_version_key": "5086149256:2026-08-27T11:23:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114204#issuecomment-5086149256",
-      "comment_created_at": "2026-07-27T00:28:09Z",
-      "comment_updated_at": "2026-08-27T11:23:57Z",
-      "comment_body_sha256": "17bdc483479b46afd6d7656f6f63735bfc66b7f3d63ea8dc3da79c0205c51699",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114204,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body reports test and static results, but no inspectable after-fix OpenAI or Azure-compatible SDK/HTTP trace; add redacted loopback evidenc... (sha=2f6917d24998bc22ccb8c73a2bbf2ebb1f82be59)",
-      "expected_head_sha": "2f6917d24998bc22ccb8c73a2bbf2ebb1f82be59",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T13:14:20.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qa-laptop-qa03-c66ca2f",
-        "head_sha": "2f6917d24998bc22ccb8c73a2bbf2ebb1f82be59",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114254:5086945029:2026-08-27T11:43:22Z:clawsweeper_auto_repair",
       "comment_id": "5086945029",
@@ -31828,6 +31795,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130986:5443619377:2026-08-27T18:37:57Z:re_review",
+      "comment_id": "5443619377",
+      "comment_version_key": "5443619377:2026-08-27T18:37:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130986#issuecomment-5443619377",
+      "comment_created_at": "2026-08-27T18:37:57Z",
+      "comment_updated_at": "2026-08-27T18:37:57Z",
+      "comment_body_sha256": "c03584753550b108c6ba2ac739e0447000804d5aeb2f38640441b19a6efc9ba8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130986,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the swift generator and direct-dispatch repairs change behavior beyond the prior reviewed head",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T18:39:02.392Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/keen-jepsen-5573f5",
+        "head_sha": "089599a8825cd1091dcc295854a0c23936b05977",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
