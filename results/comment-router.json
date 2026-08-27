@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T02:12:03.385Z",
+  "updated_at": "2026-08-27T02:12:05.529Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130392:5431394001:2026-08-26T21:34:57Z:re_review",
-      "comment_id": "5431394001",
-      "comment_version_key": "5431394001:2026-08-26T21:34:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130392#issuecomment-5431394001",
-      "comment_created_at": "2026-08-26T21:34:57Z",
-      "comment_updated_at": "2026-08-26T21:34:57Z",
-      "comment_body_sha256": "b595e8a54485e13f4d772290d3e0de4f65e77d0333a427e1ee9b746bdeb94b9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130392,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-26T21:35:59.078Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-discord-stale-draft-cleanup-20260826",
-        "head_sha": "7e346d56c77c6a57c58a3e881946cf2689a0a164",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120736:5229031651:2026-08-26T21:30:22Z:clawsweeper_needs_human",
       "comment_id": "5229031651",
@@ -31891,6 +31844,39 @@
         "kind": "pull_request",
         "branch": "roboclaw/per-user-ui-prefs",
         "head_sha": "50c7c4d14179be9c9aeeea7d1b4d70bd0f9ced8b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130560:5433240809:2026-08-27T02:09:01Z:clawsweeper_needs_human",
+      "comment_id": "5433240809",
+      "comment_version_key": "5433240809:2026-08-27T02:09:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130560#issuecomment-5433240809",
+      "comment_created_at": "2026-08-27T01:35:56Z",
+      "comment_updated_at": "2026-08-27T02:09:01Z",
+      "comment_body_sha256": "616475c0c3b2465064e106f6005d55351c07e9b17f1aeb98ef76742857506e1d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130560,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production grows by 26 net lines for an AsyncLocalStorage ownership seam; exact-head validation should confirm the deferred audit ordering across the broader tool suite before merge. (sha=3cd8705f5d814605a6050bb35f21259e3cbcce07)",
+      "expected_head_sha": "3cd8705f5d814605a6050bb35f21259e3cbcce07",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T02:12:05.529Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/int-owner-native-tool-receipts",
+        "head_sha": "3cd8705f5d814605a6050bb35f21259e3cbcce07",
         "cluster_id": null,
         "job_path": null
       }
