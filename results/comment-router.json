@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T03:36:52.121Z",
+  "updated_at": "2026-08-27T03:38:31.975Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130463:5431998041:2026-08-26T22:48:23Z:clawsweeper_auto_repair",
-      "comment_id": "5431998041",
-      "comment_version_key": "5431998041:2026-08-26T22:48:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130463#issuecomment-5431998041",
-      "comment_created_at": "2026-08-26T22:48:23Z",
-      "comment_updated_at": "2026-08-26T22:48:23Z",
-      "comment_body_sha256": "a03a20e5ba959190b72e1e764f290b7dbc2f15fda1c3d7b8f4fb0ba7c678f8b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130463,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9ca5c678462122f4075a2e0bd64b772e006b5435)",
-      "expected_head_sha": "9ca5c678462122f4075a2e0bd64b772e006b5435",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T22:55:36.624Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-image-history-mention-strip",
-        "head_sha": "9ca5c678462122f4075a2e0bd64b772e006b5435",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125485:5322118447:2026-08-26T22:45:05Z:clawsweeper_needs_human",
       "comment_id": "5322118447",
@@ -32260,6 +32227,39 @@
       "status": "skipped",
       "processed_at": "2026-08-27T03:36:52.121Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130650:5434052618:2026-08-27T03:37:48Z:clawsweeper_needs_human",
+      "comment_id": "5434052618",
+      "comment_version_key": "5434052618:2026-08-27T03:37:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130650#issuecomment-5434052618",
+      "comment_created_at": "2026-08-27T03:37:48Z",
+      "comment_updated_at": "2026-08-27T03:37:48Z",
+      "comment_body_sha256": "07dab7c5a52a44cd9df198dd0250d522547bdb6619106918a7cfc1cc7c916a0a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130650,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restrict Swift cache publication to trusted contexts (P1)** - This save runs after pull-request code has packaged the app, but has no equivalent of main CI’s cache_write_allowed gate. That lets a PR publish its...; Review finding: [P1] Restrict Swift cache publication to trusted contexts — .github/workflows/macos-onboarding-e2e.yml:93-98 - [P2] Trigger the harness for all packaged-app inputs... (sha=3c3291b8069c68cd6ef3d30c86a4a23e86fc4aaf)",
+      "expected_head_sha": "3c3291b8069c68cd6ef3d30c86a4a23e86fc4aaf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T03:38:31.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/macos-onboarding-e2e",
+        "head_sha": "3c3291b8069c68cd6ef3d30c86a4a23e86fc4aaf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
