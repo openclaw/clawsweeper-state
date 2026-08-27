@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T04:12:52.297Z",
+  "updated_at": "2026-08-27T04:13:01.712Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128078:5383802284:2026-08-26T23:31:06Z:clawsweeper_needs_human",
-      "comment_id": "5383802284",
-      "comment_version_key": "5383802284:2026-08-26T23:31:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128078#issuecomment-5383802284",
-      "comment_created_at": "2026-08-23T02:29:08Z",
-      "comment_updated_at": "2026-08-26T23:31:06Z",
-      "comment_body_sha256": "ca020df7281b9dafd81c4a4f05b8d99ad1b029675bc3328aa702e3d01ba8ecbf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128078,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Windows process-tree termination and post-abort reaping are part of the new runtime path but remain un-smoke-tested; a failure could retain both child-admission slots after cancelled... (sha=22bc51b3aec894ad3594ae781904fa57ce85d9f9)",
-      "expected_head_sha": "22bc51b3aec894ad3594ae781904fa57ce85d9f9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-26T23:36:19.049Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-knn-subprocess-main-20260822",
-        "head_sha": "22bc51b3aec894ad3594ae781904fa57ce85d9f9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128366:5388483229:2026-08-26T23:32:34Z:clawsweeper_auto_repair",
       "comment_id": "5388483229",
@@ -32460,6 +32427,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127054:5434276995:2026-08-27T04:12:14Z:re_review",
+      "comment_id": "5434276995",
+      "comment_version_key": "5434276995:2026-08-27T04:12:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127054#issuecomment-5434276995",
+      "comment_created_at": "2026-08-27T04:12:14Z",
+      "comment_updated_at": "2026-08-27T04:12:14Z",
+      "comment_body_sha256": "5387a38c4a30f0a84d60baa4af70edf2bd4224620543335e390ea86ad2efb149",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127054,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T04:12:59.709Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "security/codeql-proxy-digest-20260821",
+        "head_sha": "837b88eddd913e944ae1f9df68fa07a92313ea70",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
