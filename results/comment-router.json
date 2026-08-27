@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T07:35:04.265Z",
+  "updated_at": "2026-08-27T07:35:09.044Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129575:5434271606:2026-08-27T04:11:25Z:re_review",
-      "comment_id": "5434271606",
-      "comment_version_key": "5434271606:2026-08-27T04:11:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129575#issuecomment-5434271606",
-      "comment_created_at": "2026-08-27T04:11:25Z",
-      "comment_updated_at": "2026-08-27T04:11:25Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129575,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T04:12:03.045Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-parallels-prerequisite",
-        "head_sha": "112782b6f4f2d48647625fd89f6207dd4a2905ad",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:75336:4357272005:2026-08-27T03:26:25Z:clawsweeper_needs_human",
       "comment_id": "4357272005",
@@ -31345,6 +31298,39 @@
       "status": "skipped",
       "processed_at": "2026-08-27T07:35:04.265Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130516:5432755874:2026-08-27T07:33:13Z:clawsweeper_needs_human",
+      "comment_id": "5432755874",
+      "comment_version_key": "5432755874:2026-08-27T07:33:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130516#issuecomment-5432755874",
+      "comment_created_at": "2026-08-27T00:31:37Z",
+      "comment_updated_at": "2026-08-27T07:33:13Z",
+      "comment_body_sha256": "f4eb535867737a8ee218aa1abf17bc8c7dace2c6ff2d3e42865fc849f1723168",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130516,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Path identity remains compatibility-sensitive across Windows junctions and symlinked state directories; the PR body says exact-head Windows proof will be recorded, but no reviewer-vis... (sha=2f47db1fb1e09c116cd0cb2794344d7ba3f2d192)",
+      "expected_head_sha": "2f47db1fb1e09c116cd0cb2794344d7ba3f2d192",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T07:35:09.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/existing-ancestor-path-resolution",
+        "head_sha": "2f47db1fb1e09c116cd0cb2794344d7ba3f2d192",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
