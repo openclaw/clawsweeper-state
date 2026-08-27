@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-27T10:27:08.332Z",
+  "updated_at": "2026-08-27T10:28:31.999Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123482:5317726656:2026-08-17T16:32:19Z:re_review",
-      "comment_id": "5317726656",
-      "comment_version_key": "5317726656:2026-08-17T16:32:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123482#issuecomment-5317726656",
-      "comment_created_at": "2026-08-17T16:32:19Z",
-      "comment_updated_at": "2026-08-17T16:32:19Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123482,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T05:57:46.771Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123482:5317964319:2026-08-17T16:58:32Z:re_review",
       "comment_id": "5317964319",
@@ -32735,6 +32708,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/ReleaseBar:90:5437696964:2026-08-27T10:27:45Z:clawsweeper_needs_human",
+      "comment_id": "5437696964",
+      "comment_version_key": "5437696964:2026-08-27T10:27:45Z",
+      "comment_url": "https://github.com/steipete/ReleaseBar/pull/90#issuecomment-5437696964",
+      "comment_created_at": "2026-08-27T10:27:45Z",
+      "comment_updated_at": "2026-08-27T10:27:45Z",
+      "comment_body_sha256": "6d07324a1a4339074b27d725d0a2685ffb1cd494fcec3b41da2bb1b98f9cd039",
+      "repo": "steipete/ReleaseBar",
+      "issue_number": 90,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Oxlint 1.79.0 declares a breaking React/React Compiler rule-category change. It appears irrelevant to the current configuration, but the pending static check should confirm compatibil... (sha=1b9fd98a8a825f79ada2deb0fff09c2becd1ad12)",
+      "expected_head_sha": "1b9fd98a8a825f79ada2deb0fff09c2becd1ad12",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T10:28:31.999Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/oxlint-1.79.0",
+        "head_sha": "1b9fd98a8a825f79ada2deb0fff09c2becd1ad12",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
