@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92015"
 mode: "autonomous"
-run_id: "33044133226"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33044133226"
+run_id: "33044336946"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33044336946"
 head_sha: "ff813ac2fa76d853d8a9129e6763d09624cafe72"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-27T06:11:12.538Z"
+published_at: "2026-08-27T07:27:56.375Z"
 canonical: "https://github.com/openclaw/openclaw/issues/92015"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/92015"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33044133226](https://github.com/openclaw/clawsweeper/actions/runs/33044133226)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33044336946](https://github.com/openclaw/clawsweeper/actions/runs/33044336946)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/92015
 
 ## Summary
 
-Implementation is blocked before editing: current main still resolves and initializes an inherited workspace before resolving the ACP session, but the mandatory direct ../codex protocol/runtime inspection cannot be performed because ../codex is absent and this checkout plus its parent are read-only. No GitHub mutations or local edits were made.
+#92015 has a narrow, reproducible repair path, but implementation is blocked in this run: the target checkout is read-only and the mandatory sibling ../codex source is unavailable for the required direct protocol/runtime check. The fix artifact is ready for a writable executor.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Implementation is blocked before editing: current main still resolves and initia
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #92015 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,11 +66,11 @@ Implementation is blocked before editing: current main still resolves and initia
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #78093 | keep_related | planned | related | Related workspace area, distinct root cause and product scope. |
-| #92015 | fix_needed | blocked | canonical | A narrow fix remains indicated by source, but direct Codex runtime/protocol verification and writable regression work are prerequisites. |
-| #92939 | keep_closed | skipped | related | Historical, incomplete source attempt; closed items receive no mutation. |
-| #93176 | keep_closed | skipped | related | Historical partial-overlap work; closed items receive no mutation. |
-| cluster:issue-openclaw-openclaw-92015 | build_fix_artifact | blocked | canonical | Artifact retained for a writable executor after the mandatory Codex source prerequisite is restored. |
+| #78093 | keep_related | planned | related | Leave open as a separate workspace-policy discussion. |
+| #92015 | fix_needed | blocked | canonical | A writable checkout plus the required sibling Codex source are needed before making and validating the repair. |
+| #92939 | keep_closed | skipped | superseded | Closed context only; retain as credited historical input, not a candidate to revive. |
+| #93176 | keep_closed | skipped | related | Closed related context; no action appropriate. |
+| cluster:issue-openclaw-openclaw-92015 | build_fix_artifact | planned | canonical | Prepare one narrow replacement PR from clawsweeper/issue-openclaw-openclaw-92015 when a writable executor is available. |
 
 ## Needs Human
 
