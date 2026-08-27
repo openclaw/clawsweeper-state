@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-27T10:33:37.192Z",
+  "updated_at": "2026-08-27T10:32:56.000Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113330:5085527352:2026-08-27T05:31:26Z:clawsweeper_needs_human",
+      "comment_id": "5085527352",
+      "comment_version_key": "5085527352:2026-08-27T05:31:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113330#issuecomment-5085527352",
+      "comment_created_at": "2026-07-26T21:41:31Z",
+      "comment_updated_at": "2026-08-27T05:31:26Z",
+      "comment_body_sha256": "c53c7958d8d489b63af0c66f47f29015cdf7bfd36d6c0323cf3533b643f46036",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113330,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The direct runtime transcript names pre-force-push head 97c4ec0, while the current branch is a registry port onto an actively refactored surface; run the focused logging test on a reb... (sha=4f43c016152992c1c7be54408bcc239a50ac7a11)",
+      "expected_head_sha": "4f43c016152992c1c7be54408bcc239a50ac7a11",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T06:29:26.115Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/redact-shopify-access-tokens",
+        "head_sha": "4f43c016152992c1c7be54408bcc239a50ac7a11",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113437:5086099110:2026-08-27T06:13:05Z:clawsweeper_auto_repair",
       "comment_id": "5086099110",
@@ -32134,53 +32167,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130844:5437759999:2026-08-27T10:32:51Z:re_review",
-      "comment_id": "5437759999",
-      "comment_version_key": "5437759999:2026-08-27T10:32:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130844#issuecomment-5437759999",
-      "comment_created_at": "2026-08-27T10:32:51Z",
-      "comment_updated_at": "2026-08-27T10:32:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130844,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T10:33:34.871Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/settings-theme-controls",
-        "head_sha": "c2bed09d6fe2fe21c0f97a93091bc5c23a912928",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
