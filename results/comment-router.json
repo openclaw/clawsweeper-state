@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T13:09:28.851Z",
+  "updated_at": "2026-08-27T13:12:16.367Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123782:5435971401:2026-08-27T07:43:36Z:re_review",
-      "comment_id": "5435971401",
-      "comment_version_key": "5435971401:2026-08-27T07:43:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123782#issuecomment-5435971401",
-      "comment_created_at": "2026-08-27T07:43:36Z",
-      "comment_updated_at": "2026-08-27T07:43:36Z",
-      "comment_body_sha256": "d4e3c7ee9f6c41aa1c9c754a23e472cf320c4ba9b29adfe832f7dbe7eb4ff842",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123782,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T07:44:24.638Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "omarshahine/rfc-0027-kernel",
-        "head_sha": "132fc7c82f19ee841fa2f92a86695963f01a63a6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123793:5435972412:2026-08-27T07:43:42Z:re_review",
       "comment_id": "5435972412",
@@ -31958,6 +31911,39 @@
         "kind": "pull_request",
         "branch": "docs/line-inbound-durability",
         "head_sha": "7e2982729240e6fca6d40d338be1ad9f381b076b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130859:5437037504:2026-08-27T13:09:39Z:clawsweeper_needs_human",
+      "comment_id": "5437037504",
+      "comment_version_key": "5437037504:2026-08-27T13:09:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130859#issuecomment-5437037504",
+      "comment_created_at": "2026-08-27T09:25:36Z",
+      "comment_updated_at": "2026-08-27T13:09:39Z",
+      "comment_body_sha256": "74661f692f8872b8b5f139a671b57a6f997473257d541010e19bda78e5b6b210",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130859,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body shows a live owner success and direct-operator denial, but lacks redacted after-fix eviden... (sha=702d02375f91b934b4cb7f92950992cbcd1f3e83)",
+      "expected_head_sha": "702d02375f91b934b4cb7f92950992cbcd1f3e83",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T13:12:16.367Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/slack-channel-management",
+        "head_sha": "702d02375f91b934b4cb7f92950992cbcd1f3e83",
         "cluster_id": null,
         "job_path": null
       }
