@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T05:20:58.848Z",
+  "updated_at": "2026-08-27T05:21:58.042Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130319:5433222105:2026-08-27T01:33:06Z:re_review",
-      "comment_id": "5433222105",
-      "comment_version_key": "5433222105:2026-08-27T01:33:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130319#issuecomment-5433222105",
-      "comment_created_at": "2026-08-27T01:33:06Z",
-      "comment_updated_at": "2026-08-27T01:33:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130319,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T01:33:49.901Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "mobile-chat/global-drawer",
-        "head_sha": "bb179c2e3cffeb1af9e4c2bff85ffe8e04e76af4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130318:5433222107:2026-08-27T01:33:06Z:re_review",
       "comment_id": "5433222107",
@@ -31796,6 +31749,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3222:5433333626:2026-08-27T05:21:04Z:clawsweeper_needs_human",
+      "comment_id": "5433333626",
+      "comment_version_key": "5433333626:2026-08-27T05:21:04Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3222#issuecomment-5433333626",
+      "comment_created_at": "2026-08-27T01:49:37Z",
+      "comment_updated_at": "2026-08-27T05:21:04Z",
+      "comment_body_sha256": "d3e0059b34341f3cbe042359d1c6789e85014df87e35f77c3efea2eaf763a3f1",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3222,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides synthetic auth-file, sentinel-CLI, and stubbed-transport tests, but no redacted after-fix real native credential-path trace; ad... (sha=87860e5e1a1dc3706265a1e826056ea8e3184891)",
+      "expected_head_sha": "87860e5e1a1dc3706265a1e826056ea8e3184891",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T05:21:58.042Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-oauth-jwt-expiry",
+        "head_sha": "87860e5e1a1dc3706265a1e826056ea8e3184891",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
