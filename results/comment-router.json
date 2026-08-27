@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-27T17:42:47.238Z",
+  "updated_at": "2026-08-27T17:42:48.452Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121144:5439045170:2026-08-27T12:20:14Z:re_review",
-      "comment_id": "5439045170",
-      "comment_version_key": "5439045170:2026-08-27T12:20:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121144#issuecomment-5439045170",
-      "comment_created_at": "2026-08-27T12:20:14Z",
-      "comment_updated_at": "2026-08-27T12:20:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121144,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T12:21:05.556Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t12-01-discord-parent-permission",
-        "head_sha": "fa993f424269bc084cdcb7019ee5621900ac37ae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130205:5439054413:2026-08-27T12:21:01Z:re_review",
       "comment_id": "5439054413",
@@ -31929,6 +31882,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-97c731b4de",
         "head_sha": "7a87c12c95688465f6ce5eb813fe62ddae67a2c1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130915:5439977803:2026-08-27T17:39:52Z:clawsweeper_needs_human",
+      "comment_id": "5439977803",
+      "comment_version_key": "5439977803:2026-08-27T17:39:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130915#issuecomment-5439977803",
+      "comment_created_at": "2026-08-27T13:40:12Z",
+      "comment_updated_at": "2026-08-27T17:39:52Z",
+      "comment_body_sha256": "cc1a77a1c6a8443b903bd09e47add25e513238853f4df222c9bc61b420e616f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130915,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +22 lines; the growth is the explicit two-timestamp contract and required construction sites, and no net-neutral representation can retain activity-time filteri... (sha=482f5baf2c8dfa3f8e7905b312618982a543154f)",
+      "expected_head_sha": "482f5baf2c8dfa3f8e7905b312618982a543154f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T17:42:48.452Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/usage-rollup-archive-identity",
+        "head_sha": "482f5baf2c8dfa3f8e7905b312618982a543154f",
         "cluster_id": null,
         "job_path": null
       }
