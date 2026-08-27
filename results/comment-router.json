@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T18:51:05.358Z",
+  "updated_at": "2026-08-27T18:51:10.719Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115702:5118084706:2026-08-27T13:08:31Z:clawsweeper_needs_human",
-      "comment_id": "5118084706",
-      "comment_version_key": "5118084706:2026-08-27T13:08:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115702#issuecomment-5118084706",
-      "comment_created_at": "2026-07-29T13:00:23Z",
-      "comment_updated_at": "2026-08-27T13:08:31Z",
-      "comment_body_sha256": "6eb7d7f410800997c2f40b7c342c52a3839a6f15a95474845309c4bf1b033917",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115702,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The connected environment could not directly inspect the linked LINE vendor page or the installed @line/bot-sdk source, so those external-contract details should receive a connected m... (sha=7e2982729240e6fca6d40d338be1ad9f381b076b)",
-      "expected_head_sha": "7e2982729240e6fca6d40d338be1ad9f381b076b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T13:14:20.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/line-inbound-durability",
-        "head_sha": "7e2982729240e6fca6d40d338be1ad9f381b076b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115735:5118124660:2026-08-27T12:35:46Z:clawsweeper_auto_repair",
       "comment_id": "5118124660",
@@ -31898,6 +31865,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:160:5443775621:2026-08-27T18:50:20Z:clawsweeper_needs_human",
+      "comment_id": "5443775621",
+      "comment_version_key": "5443775621:2026-08-27T18:50:20Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/160#issuecomment-5443775621",
+      "comment_created_at": "2026-08-27T18:50:20Z",
+      "comment_updated_at": "2026-08-27T18:50:20Z",
+      "comment_body_sha256": "ed51974a284173ff2a59b98ed024c84e95c6788ab74dcab770e57506ac5a3155",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 160,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Pin TruffleHog to a reviewed immutable commit (P2)** - The new v3.97.1 ref remains mutable, so a later upstream tag retarget changes code executed against the full checkout without a repository review. Replace i...; Review finding: [P2] Pin TruffleHog to a reviewed immutable commit — .github/workflows/secret-scan.yml:52 - [medium] Mutable action tag selects unreviewed future code — .github/wo... (sha=6efcfd9384771c64b79470c287996b88cb816ab3)",
+      "expected_head_sha": "6efcfd9384771c64b79470c287996b88cb816ab3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-27T18:51:10.719Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.97.1",
+        "head_sha": "6efcfd9384771c64b79470c287996b88cb816ab3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
