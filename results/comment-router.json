@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-27T18:06:30.309Z",
+  "updated_at": "2026-08-27T18:07:07.724Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127158:5369016699:2026-08-27T12:58:38Z:clawsweeper_needs_human",
-      "comment_id": "5369016699",
-      "comment_version_key": "5369016699:2026-08-27T12:58:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127158#issuecomment-5369016699",
-      "comment_created_at": "2026-08-21T11:03:14Z",
-      "comment_updated_at": "2026-08-27T12:58:38Z",
-      "comment_body_sha256": "0776b21a1a6901de7471f123c05dc7ca25b528738b943f4931d7fb9d0297eef1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127158,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head CI gate is failing because the mandatory Codex autoreview step did not return a result; merge validation remains incomplete until that gate is restored or rerun. (sha=310081c5f23673f038bff46671e397f8cd57bef7)",
-      "expected_head_sha": "310081c5f23673f038bff46671e397f8cd57bef7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T13:06:52.290Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-tool-event-recipient-pruning",
-        "head_sha": "310081c5f23673f038bff46671e397f8cd57bef7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130860:5437115025:2026-08-27T13:05:47Z:clawsweeper_needs_human",
       "comment_id": "5437115025",
@@ -31794,6 +31761,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128001:5443232797:2026-08-27T18:06:16Z:re_review",
+      "comment_id": "5443232797",
+      "comment_version_key": "5443232797:2026-08-27T18:06:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128001#issuecomment-5443232797",
+      "comment_created_at": "2026-08-27T18:06:16Z",
+      "comment_updated_at": "2026-08-27T18:06:16Z",
+      "comment_body_sha256": "7272dc9d81680b5081484360adb0a28cdc16668881a3e9c40f33a276c30fe439",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128001,
+      "author": "original4422",
+      "author_id": 97350516,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-27T18:07:02.779Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-105228",
+        "head_sha": "f473546f924500f11af0a5981eb0c3ef21757f7f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
