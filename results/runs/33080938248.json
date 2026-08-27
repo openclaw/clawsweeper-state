@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130742",
+  "mode": "autonomous",
+  "run_id": "33080938248",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33080938248",
+  "head_sha": "0bd84d42bc0487c32af2285006884d4f9b2f7763",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130742.md",
+  "published_at": "2026-08-27T14:43:03.303Z",
+  "canonical": "#130742",
+  "canonical_issue": "#130742",
+  "canonical_pr": null,
+  "summary": "#130742 remains an open canonical bug. Current main scans missing and orphan legacy transcripts only for the resolved default agent. A narrow repair can enumerate only configured, SQLite-deduplicated targets; however this worker cannot edit or run validation because the workspace is read-only (the focused pnpm test stops when Corepack tries to create its cache).",
+  "actions": [
+    {
+      "target": "#130742",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130742",
+      "candidate_fix": null,
+      "reason": "Configured non-default session stores cannot reach either transcript integrity path."
+    },
+    {
+      "target": "#130742",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130742",
+      "candidate_fix": null,
+      "reason": "A configured-only transcript scan and boundary-level multi-agent regression are well-scoped; no config, schema, or security change is needed."
+    },
+    {
+      "target": "#130742",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130742",
+      "candidate_fix": null,
+      "reason": "Job authorizes one new ClawSweeper fix PR for the hydrated canonical issue and forbids merge/close."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
