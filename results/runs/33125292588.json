@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131232",
+  "mode": "autonomous",
+  "run_id": "33125292588",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33125292588",
+  "head_sha": "d103c0cf5c98b0f3d4242bb4202c032856c36a49",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131232.md",
+  "published_at": "2026-08-27T23:50:32.662Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131232",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131232",
+  "canonical_pr": null,
+  "summary": "#131232 is a confirmed browser-plugin bug on main. A selector opts into the role-snapshot path, where the default Playwright locator snapshot waits for an absent element; nested proxy watchdogs explain the reported ~30-second delay. Plan a narrow new PR that returns the canonical empty role snapshot immediately for zero selector matches.",
+  "actions": [
+    {
+      "target": "#131232",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131232",
+      "candidate_fix": null,
+      "reason": "No active implementation PR is hydrated. The repair belongs in the browser plugin snapshot owner and needs no config, schema, or documentation change."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131232",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131232",
+      "candidate_fix": null,
+      "reason": "Create or update the single ClawSweeper branch PR from this narrow artifact; do not merge or close the issue in this lane."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
