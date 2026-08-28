@@ -1,47 +1,6 @@
 {
-  "updated_at": "2026-08-28T19:42:25.416Z",
+  "updated_at": "2026-08-28T19:42:40.749Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131021:5453891354:2026-08-28T14:40:10Z:re_review",
-      "comment_id": "5453891354",
-      "comment_version_key": "5453891354:2026-08-28T14:40:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131021#issuecomment-5453891354",
-      "comment_created_at": "2026-08-28T14:40:10Z",
-      "comment_updated_at": "2026-08-28T14:40:10Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131021,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T14:40:48.861Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/sealed-systemd-refresh",
-        "head_sha": "a6ef8b022e37d02d4e7fa892860bd52185b33152",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1257:5450347957:2026-08-28T14:41:02Z:clawsweeper_needs_human",
       "comment_id": "5450347957",
@@ -32635,6 +32594,39 @@
         "kind": "pull_request",
         "branch": "fix/mobile-transcript-grouping-refresh",
         "head_sha": "7a5572b0531c8f162d8521c5ab3c9567bb3f0f07",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131121:5444487446:2026-08-28T19:41:42Z:clawsweeper_needs_human",
+      "comment_id": "5444487446",
+      "comment_version_key": "5444487446:2026-08-28T19:41:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131121#issuecomment-5444487446",
+      "comment_created_at": "2026-08-27T19:55:00Z",
+      "comment_updated_at": "2026-08-28T19:41:42Z",
+      "comment_body_sha256": "9ce9da6201f1d68035498638d0ef248221947475f0e1e047e4371b31fd7b7636",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131121,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - On upgrade, databases already above 50,000 entries will delete older cache rows at the next sync; later use of those embeddings can require provider calls and incur usage cost. (sha=a004d928c94e388418b670871b914d782ca033a5)",
+      "expected_head_sha": "a004d928c94e388418b670871b914d782ca033a5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T19:42:40.749Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-embedding-cache-default-cap",
+        "head_sha": "a004d928c94e388418b670871b914d782ca033a5",
         "cluster_id": null,
         "job_path": null
       }
