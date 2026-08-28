@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T16:02:56.207Z",
+  "updated_at": "2026-08-28T16:02:57.128Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127854:5379789486:2026-08-28T10:03:30Z:clawsweeper_auto_repair",
-      "comment_id": "5379789486",
-      "comment_version_key": "5379789486:2026-08-28T10:03:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127854#issuecomment-5379789486",
-      "comment_created_at": "2026-08-22T10:35:27Z",
-      "comment_updated_at": "2026-08-28T10:03:30Z",
-      "comment_body_sha256": "4b27c085ec764703f08b3ccfaeafc698777959fec389725bca6d1be5b63cca6d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127854,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=00ac558ef899ffc7a9172a4618bb739a44341abd)",
-      "expected_head_sha": "00ac558ef899ffc7a9172a4618bb739a44341abd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T10:09:03.239Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-current-session-generation-fence",
-        "head_sha": "00ac558ef899ffc7a9172a4618bb739a44341abd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131621:5449917398:2026-08-28T10:05:21Z:clawsweeper_needs_human",
       "comment_id": "5449917398",
@@ -32395,6 +32362,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1570:5454765344:2026-08-28T16:01:38Z:clawsweeper_needs_human",
+      "comment_id": "5454765344",
+      "comment_version_key": "5454765344:2026-08-28T16:01:38Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1570#issuecomment-5454765344",
+      "comment_created_at": "2026-08-28T16:01:38Z",
+      "comment_updated_at": "2026-08-28T16:01:38Z",
+      "comment_body_sha256": "c295734a7a4ac16419186394cad6db612499a6938ac46a258326f468b17843b6",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1570,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the body describes a live recovery, but it includes no redacted transcript, logs, recording, or artifa...; Review finding: [P1] Require an ID-bound delete before stopping prepared fixed leases — internal/providers/machine0/fixed.go:339 - [P2] Reject fixed claims without an intent inste... (sha=5d0e2226ea4db4d1dfc4bdeb1a9bf6623f30f804)",
+      "expected_head_sha": "5d0e2226ea4db4d1dfc4bdeb1a9bf6623f30f804",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T16:02:57.128Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/machine0-prepared-lease-cleanup-e9dc2a",
+        "head_sha": "5d0e2226ea4db4d1dfc4bdeb1a9bf6623f30f804",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
