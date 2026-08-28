@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T20:53:27.910Z",
+  "updated_at": "2026-08-28T20:54:45.235Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131872:5454866935:2026-08-28T16:11:17Z:re_review",
-      "comment_id": "5454866935",
-      "comment_version_key": "5454866935:2026-08-28T16:11:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131872#issuecomment-5454866935",
-      "comment_created_at": "2026-08-28T16:11:17Z",
-      "comment_updated_at": "2026-08-28T16:11:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131872,
-      "author": "edenfunf",
-      "author_id": 146086744,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T16:12:09.294Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-sticker-projection",
-        "head_sha": "bedd723fe5dc769119cf330b6d29db83f4cbd69d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-08-28T16:13:33Z:clawsweeper_auto_repair",
       "comment_id": "5075679870",
@@ -33014,6 +32967,39 @@
         "kind": "pull_request",
         "branch": "codex/native-health-probe-diagnostics",
         "head_sha": "e029560593038498d7be3c30f39c715d1013c95d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3258:5457650220:2026-08-28T20:53:49Z:clawsweeper_needs_human",
+      "comment_id": "5457650220",
+      "comment_version_key": "5457650220:2026-08-28T20:53:49Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3258#issuecomment-5457650220",
+      "comment_created_at": "2026-08-28T20:53:49Z",
+      "comment_updated_at": "2026-08-28T20:53:49Z",
+      "comment_body_sha256": "5649ee185b8a5dc7491ea95d31afd8612044cfe515922813c9fe0ba072affc38",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3258,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Hosted exact-head lint and test checks were still incomplete in the captured PR state; merging should wait for their result. (sha=f7979b2cfdc02f74b3812f269895059c2d461bd4)",
+      "expected_head_sha": "f7979b2cfdc02f74b3812f269895059c2d461bd4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T20:54:45.235Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/keychain-startup-preference",
+        "head_sha": "f7979b2cfdc02f74b3812f269895059c2d461bd4",
         "cluster_id": null,
         "job_path": null
       }
