@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T21:54:07.992Z",
+  "updated_at": "2026-08-28T21:55:04.354Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131929:5455306332:2026-08-28T16:54:11Z:re_review",
-      "comment_id": "5455306332",
-      "comment_version_key": "5455306332:2026-08-28T16:54:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131929#issuecomment-5455306332",
-      "comment_created_at": "2026-08-28T16:54:11Z",
-      "comment_updated_at": "2026-08-28T16:54:11Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131929,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T16:55:10.109Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-agent-use-transport-liveness-for-idl",
-        "head_sha": "1db8a20d02cdba4d060402525978ba6edd25e3af",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131904:5455323751:2026-08-28T16:55:58Z:clawsweeper_needs_human",
       "comment_id": "5455323751",
@@ -33029,6 +32982,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-ui-startup-budget-20260828",
         "head_sha": "effc0143139f6dddfbda04a98414a18bd7c2d96a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132062:5457149484:2026-08-28T21:54:13Z:clawsweeper_needs_human",
+      "comment_id": "5457149484",
+      "comment_version_key": "5457149484:2026-08-28T21:54:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132062#issuecomment-5457149484",
+      "comment_created_at": "2026-08-28T19:58:15Z",
+      "comment_updated_at": "2026-08-28T21:54:13Z",
+      "comment_body_sha256": "a0a2c15aa1c209ff5e34a91a1e256cf124f4ef4f86dc723cf4ebeaeae69f611c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132062,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head required-check rollup is still incomplete in the captured state, including the queued macOS Swift job, so merge integration remains unverified on the final head. (sha=0b321a2ca78ecfcb66811a9d30fbed82bf85c5b0)",
+      "expected_head_sha": "0b321a2ca78ecfcb66811a9d30fbed82bf85c5b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T21:55:04.354Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/native-health-probe-diagnostics",
+        "head_sha": "0b321a2ca78ecfcb66811a9d30fbed82bf85c5b0",
         "cluster_id": null,
         "job_path": null
       }
