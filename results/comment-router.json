@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T02:14:25.452Z",
+  "updated_at": "2026-08-28T02:14:46.721Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1266:5443845832:2026-08-27T21:08:30Z:clawsweeper_needs_human",
-      "comment_id": "5443845832",
-      "comment_version_key": "5443845832:2026-08-27T21:08:30Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1266#issuecomment-5443845832",
-      "comment_created_at": "2026-08-27T18:56:49Z",
-      "comment_updated_at": "2026-08-27T21:08:30Z",
-      "comment_body_sha256": "1d63cf66fd01888e554fa26eaa76e47c36f9c0b52262fc3a8160a243cbaadeba",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1266,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Same-UID targets can evade lease cleanup** - The target inherits descriptor 9 and can deliberately close it or interfere with same-user controller resources, allowing descendants outsid...; Review finding: [medium] Same-UID targets can evade lease cleanup — src/live-proof/drivers.ts:1160 (sha=a3ac02a6f3bd810d5cf407f4ca8c72782ddc2733)",
-      "expected_head_sha": "a3ac02a6f3bd810d5cf407f4ca8c72782ddc2733",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T21:09:17.159Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/live-proof-integrity",
-        "head_sha": "a3ac02a6f3bd810d5cf407f4ca8c72782ddc2733",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:85866:4526802849:2026-08-27T21:07:56Z:clawsweeper_auto_repair",
       "comment_id": "4526802849",
@@ -32158,6 +32125,53 @@
       "status": "skipped",
       "processed_at": "2026-08-28T02:14:25.452Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130993:5447549865:2026-08-28T02:14:03Z:re_review",
+      "comment_id": "5447549865",
+      "comment_version_key": "5447549865:2026-08-28T02:14:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130993#issuecomment-5447549865",
+      "comment_created_at": "2026-08-28T02:14:03Z",
+      "comment_updated_at": "2026-08-28T02:14:03Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130993,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T02:14:44.950Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/managed-context-pressure",
+        "head_sha": "6ab2b77ebd62269ec4b1591888c0a32820805412",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
