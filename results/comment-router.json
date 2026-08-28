@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T20:38:36.087Z",
+  "updated_at": "2026-08-28T20:40:09.060Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131878:5454739997:2026-08-28T15:59:08Z:clawsweeper_needs_human",
-      "comment_id": "5454739997",
-      "comment_version_key": "5454739997:2026-08-28T15:59:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131878#issuecomment-5454739997",
-      "comment_created_at": "2026-08-28T15:59:08Z",
-      "comment_updated_at": "2026-08-28T15:59:08Z",
-      "comment_body_sha256": "4c49dfc0e53167b26dd25c82b97cc4cee79f390550d59a560b1001775301b2de",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131878,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The release authorization boundary changes by a net +143 production lines; the new independent parent ref/full-ref, tag-target, and dispatch bindings justify the growth, but no net-ne... (sha=46a0d667da3bfa151ad0c4d4faa86987e53dcbce)",
-      "expected_head_sha": "46a0d667da3bfa151ad0c4d4faa86987e53dcbce",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T15:59:55.494Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-publish-parent-identity-20260828",
-        "head_sha": "46a0d667da3bfa151ad0c4d4faa86987e53dcbce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131848:5454740746:2026-08-28T15:59:13Z:clawsweeper_needs_human",
       "comment_id": "5454740746",
@@ -33045,6 +33012,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130902:5457526100:2026-08-28T20:39:22Z:re_review",
+      "comment_id": "5457526100",
+      "comment_version_key": "5457526100:2026-08-28T20:39:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130902#issuecomment-5457526100",
+      "comment_created_at": "2026-08-28T20:39:22Z",
+      "comment_updated_at": "2026-08-28T20:39:22Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130902,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T20:40:05.616Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/installer-dependency-policy",
+        "head_sha": "3b014477e07fa022e00e3d3443fb3ab91407ca53",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
