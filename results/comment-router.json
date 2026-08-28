@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T13:22:39.964Z",
+  "updated_at": "2026-08-28T13:23:49.169Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1253:5448317024:2026-08-28T07:34:07Z:clawsweeper_auto_repair",
-      "comment_id": "5448317024",
-      "comment_version_key": "5448317024:2026-08-28T07:34:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1253#issuecomment-5448317024",
-      "comment_created_at": "2026-08-28T04:13:52Z",
-      "comment_updated_at": "2026-08-28T07:34:07Z",
-      "comment_body_sha256": "2eafa28eceb8fd0b020be56a712fc6a12de53b62039296dcf09bbf0b58d3d9dd",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1253,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=aff93c17fc1983b305d3a2c89765b864f18e016a)",
-      "expected_head_sha": "aff93c17fc1983b305d3a2c89765b864f18e016a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T07:34:53.210Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cuda-only-local-ai-qualification",
-        "head_sha": "aff93c17fc1983b305d3a2c89765b864f18e016a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126986:5365198371:2026-08-28T07:32:00Z:clawsweeper_needs_human",
       "comment_id": "5365198371",
@@ -33039,6 +33006,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131717:5451289644:2026-08-28T13:21:10Z:clawsweeper_needs_human",
+      "comment_id": "5451289644",
+      "comment_version_key": "5451289644:2026-08-28T13:21:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131717#issuecomment-5451289644",
+      "comment_created_at": "2026-08-28T10:13:52Z",
+      "comment_updated_at": "2026-08-28T13:21:10Z",
+      "comment_body_sha256": "365dcf4c21dc101042e703dd744814be87698560d4f107d04dc8905d39f5fec1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131717,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the pinned Codex transport contract directly** - The introduced runtime launches Codex over stdio; the required sibling Codex checkout was unavailable and GitHub DNS failed, prev...; Review finding: [medium] Verify the pinned Codex transport contract directly — extensions/codex/src/node-exec-server.runtime.ts:189 (sha=f3ed06598853b59cdd40ba6f37b4e7ce070a68dc)",
+      "expected_head_sha": "f3ed06598853b59cdd40ba6f37b4e7ce070a68dc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T13:23:49.169Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/claw-node-session-setup-6be983",
+        "head_sha": "f3ed06598853b59cdd40ba6f37b4e7ce070a68dc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
