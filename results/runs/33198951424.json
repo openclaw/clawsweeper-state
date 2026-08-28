@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-132000",
+  "mode": "autonomous",
+  "run_id": "33198951424",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33198951424",
+  "head_sha": "566889b0dc5a0756e8ad7d2a36402e8ea84ac175",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-132000.md",
+  "published_at": "2026-08-28T18:40:55.953Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/132000",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/132000",
+  "canonical_pr": null,
+  "summary": "#132000 remains a reproducible, plugin-local LINE message-loss bug on main 86789b6823cdf276c22d2e466c0dd6be7406cc3c. No branch or PR was created: the read-only checkout lacks dependencies and the mandatory ../codex source checkout, so the SDK contract, regression, and final validation cannot be completed here.",
+  "actions": [
+    {
+      "target": "#132000",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132000",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker environment: filesystem writes are disallowed, node_modules is absent, the focused Vitest command fails because tsx cannot be resolved, and ../codex is absent despite the repository's mandatory direct-Codex inspection gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-132000",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132000",
+      "candidate_fix": null,
+      "reason": "A normal writable executor checkout must install dependencies and provide ../codex before applying and validating this otherwise narrow repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#132000",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
