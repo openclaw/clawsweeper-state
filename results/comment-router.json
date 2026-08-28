@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T10:15:09.850Z",
+  "updated_at": "2026-08-28T10:17:03.379Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123416:5448516425:2026-08-28T04:40:22Z:re_review",
-      "comment_id": "5448516425",
-      "comment_version_key": "5448516425:2026-08-28T04:40:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123416#issuecomment-5448516425",
-      "comment_created_at": "2026-08-28T04:40:22Z",
-      "comment_updated_at": "2026-08-28T04:40:22Z",
-      "comment_body_sha256": "86af001f4c0a486bebb5ec52bb013d78080e505e19be1330e158dbedf3f4dd45",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123416,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto current main (head fa3851677aa); main's installed-plugin-index-store split moved the policy-refresh recomputation into installed-plugin-index-store-write.ts, and the caller-env threading is re-applied there (policy hash + per-record enable state). the sidecar two-root regression moved to its own file (loader-shared.bundled-discovery.test.ts) alongside main's rewrite of loader-shared.test.ts. all 7 bundled-discovery suites green (73 tests), tsgo + test-types clean, import cycles 0",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T04:41:09.975Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/123297-compat-activation-gate",
-        "head_sha": "fa3851677aa87fb11cd42765c3f71c30740da8a3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:151:5448403530:2026-08-28T04:35:41Z:clawsweeper_needs_human",
       "comment_id": "5448403530",
@@ -33039,6 +32992,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128001:5381929489:2026-08-28T09:59:28Z:clawsweeper_needs_human",
+      "comment_id": "5381929489",
+      "comment_version_key": "5381929489:2026-08-28T09:59:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128001#issuecomment-5381929489",
+      "comment_created_at": "2026-08-22T18:26:42Z",
+      "comment_updated_at": "2026-08-28T09:59:28Z",
+      "comment_body_sha256": "ecd08402717e41a81d27cb4a646aa75ad2ced2643a6917202137927e014a060a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128001,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only mocked unit coverage is supplied; add a redacted configured ACP/Gateway trace or authorized production-boundary harness output before merg... (sha=9f0bdeb50f294382e3c854a250a15d6f957c424f)",
+      "expected_head_sha": "9f0bdeb50f294382e3c854a250a15d6f957c424f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T10:17:03.379Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-105228",
+        "head_sha": "9f0bdeb50f294382e3c854a250a15d6f957c424f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
