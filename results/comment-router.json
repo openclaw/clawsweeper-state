@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T14:59:16.620Z",
+  "updated_at": "2026-08-28T15:00:53.111Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131185:5450532610:2026-08-28T08:59:14Z:re_review",
-      "comment_id": "5450532610",
-      "comment_version_key": "5450532610:2026-08-28T08:59:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131185#issuecomment-5450532610",
-      "comment_created_at": "2026-08-28T08:59:14Z",
-      "comment_updated_at": "2026-08-28T08:59:14Z",
-      "comment_body_sha256": "25047e88012a74a78a03b08d23e35d9445a712f8d73286ce1748d97bde3a393d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131185,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T08:59:55.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "giodl/claws-adopt-configured-agent",
-        "head_sha": "37cb1f7cc4c6fef0f8eb3eae4812c6fd0f8dd0d3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131163:5450532595:2026-08-28T08:59:14Z:re_review",
       "comment_id": "5450532595",
@@ -32737,6 +32690,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131833:5454108085:2026-08-28T14:59:55Z:clawsweeper_needs_human",
+      "comment_id": "5454108085",
+      "comment_version_key": "5454108085:2026-08-28T14:59:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131833#issuecomment-5454108085",
+      "comment_created_at": "2026-08-28T14:59:55Z",
+      "comment_updated_at": "2026-08-28T14:59:55Z",
+      "comment_body_sha256": "cdfcc5462ebb4e4a250b2c86688ddf5af145b7c849dbd5c5485a2c46e464a3c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131833,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the authorization metadata for package publication; exact-head hosted workflow checks are still in progress, so merge should wait for their completion. (sha=e018ac4f87b235ada8bad205deee1215bdb926ff)",
+      "expected_head_sha": "e018ac4f87b235ada8bad205deee1215bdb926ff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T15:00:53.111Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-publish-parent-approval-ref-20260828",
+        "head_sha": "e018ac4f87b235ada8bad205deee1215bdb926ff",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
