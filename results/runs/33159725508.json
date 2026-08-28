@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131700",
+  "mode": "autonomous",
+  "run_id": "33159725508",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33159725508",
+  "head_sha": "d56daf07f0c32a58f28283936dc4568cf5069828",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131700.md",
+  "published_at": "2026-08-28T10:03:14.393Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131700",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131700",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the identity mismatch in source: Copilot overwrites the admitted OpenClaw session ID with its native SDK ID. A narrow two-file repair is defined, but this read-only checkout lacks dependencies, so no branch/test validation or PR can be produced here.",
+  "actions": [
+    {
+      "target": "#131700",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131700",
+      "candidate_fix": null,
+      "reason": "Canonical open bug; repair belongs at the Copilot result producer and does not require a core, config, schema, migration, or policy change."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131700",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131700",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable checkout with dependencies before applying and validating the narrow repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
