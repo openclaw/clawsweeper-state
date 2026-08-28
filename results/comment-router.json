@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T15:58:54.397Z",
+  "updated_at": "2026-08-28T15:59:01.216Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130563:5451080605:2026-08-28T09:52:46Z:re_review",
-      "comment_id": "5451080605",
-      "comment_version_key": "5451080605:2026-08-28T09:52:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130563#issuecomment-5451080605",
-      "comment_created_at": "2026-08-28T09:52:46Z",
-      "comment_updated_at": "2026-08-28T09:52:46Z",
-      "comment_body_sha256": "871e935094ecf3b7d8acbb7d05930f0784fe2e76b008839e7575ceb2f4215b0b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130563,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T09:53:34.202Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ocpr/auto-issue-20260826-2",
-        "head_sha": "e6d670620cea5a480b74564edb4218e4343c28fd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131710:5451081312:2026-08-28T09:52:51Z:clawsweeper_needs_human",
       "comment_id": "5451081312",
@@ -32418,6 +32371,39 @@
         "kind": "pull_request",
         "branch": "shakkernerd/deferred-maintenance-shutdown-abort",
         "head_sha": "f577328983bcfa10de7784581e96a6d416a8dc2e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:143:5454730281:2026-08-28T15:58:10Z:clawsweeper_needs_human",
+      "comment_id": "5454730281",
+      "comment_version_key": "5454730281:2026-08-28T15:58:10Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/143#issuecomment-5454730281",
+      "comment_created_at": "2026-08-28T15:58:10Z",
+      "comment_updated_at": "2026-08-28T15:58:10Z",
+      "comment_body_sha256": "d436f69f1ddd39f961e4ce051f550cd99b7239120130b9b7e2ace0da3e5e5b74",
+      "repo": "openclaw/lobster",
+      "issue_number": 143,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports local validation but supplies no attached or linked after-fix output for a successful hosted CI run, and the current Node 2... (sha=238cc50219f061b10dc7097ee8de1ac5ea0e222d)",
+      "expected_head_sha": "238cc50219f061b10dc7097ee8de1ac5ea0e222d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T15:59:01.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/add-build-test-workflow",
+        "head_sha": "238cc50219f061b10dc7097ee8de1ac5ea0e222d",
         "cluster_id": null,
         "job_path": null
       }
