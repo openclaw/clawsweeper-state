@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T13:16:49.916Z",
+  "updated_at": "2026-08-28T13:17:16.898Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:99556:5449523210:2026-08-28T07:06:29Z:re_review",
-      "comment_id": "5449523210",
-      "comment_version_key": "5449523210:2026-08-28T07:06:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-5449523210",
-      "comment_created_at": "2026-08-28T07:06:29Z",
-      "comment_updated_at": "2026-08-28T07:06:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99556,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T07:33:45.856Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-history-sanitize-input-image",
-        "head_sha": "40ed4fce5d71237df97cbcd1bccac72a82a93288",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131590:5449400383:2026-08-28T07:29:13Z:clawsweeper_needs_human",
       "comment_id": "5449400383",
@@ -33016,6 +32969,39 @@
         "kind": "pull_request",
         "branch": "agent/fix-codex-bootstrap-context",
         "head_sha": "aeddec1ba7909c4f902c6918838929b70635fa85",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120658:5227567198:2026-08-28T13:15:31Z:clawsweeper_needs_human",
+      "comment_id": "5227567198",
+      "comment_version_key": "5227567198:2026-08-28T13:15:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120658#issuecomment-5227567198",
+      "comment_created_at": "2026-08-08T18:44:01Z",
+      "comment_updated_at": "2026-08-28T13:15:31Z",
+      "comment_body_sha256": "30fed73b040993f1091a97d31cc51f6710a3f65e6417aee77ffb3ea4750c58e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120658,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: ClawSweeper live verification failed on the reviewed terminal surface. After adding proof, update the PR body; ClawSweeper should re-r... (sha=5029a5956ebf0213d239b6d531096b58debf62fb)",
+      "expected_head_sha": "5029a5956ebf0213d239b6d531096b58debf62fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T13:17:16.898Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/active-memory-error-payload",
+        "head_sha": "5029a5956ebf0213d239b6d531096b58debf62fb",
         "cluster_id": null,
         "job_path": null
       }
