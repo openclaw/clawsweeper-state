@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T07:35:34.677Z",
+  "updated_at": "2026-08-28T07:37:36.040Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131430:5447795630:2026-08-28T02:51:54Z:clawsweeper_needs_human",
-      "comment_id": "5447795630",
-      "comment_version_key": "5447795630:2026-08-28T02:51:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131430#issuecomment-5447795630",
-      "comment_created_at": "2026-08-28T02:51:54Z",
-      "comment_updated_at": "2026-08-28T02:51:54Z",
-      "comment_body_sha256": "33a875dc750d94e03a1c19622d8ab568135ea6df15913c0c96e9860744b607dd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131430,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The choice to keep only a pointer in root guidance relies partly on the PR body's Codex loading-boundary claim; direct Codex source was unavailable here, so that contract remains to b... (sha=9919aae234550f52c69cc3046f3f6e85281f4465)",
-      "expected_head_sha": "9919aae234550f52c69cc3046f3f6e85281f4465",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T02:54:59.385Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/agents-md-media-upload-consolidation",
-        "head_sha": "9919aae234550f52c69cc3046f3f6e85281f4465",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:652:5447244142:2026-08-28T02:48:12Z:clawsweeper_needs_human",
       "comment_id": "5447244142",
@@ -32183,6 +32150,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127241:5449782288:2026-08-28T07:36:54Z:re_review",
+      "comment_id": "5449782288",
+      "comment_version_key": "5449782288:2026-08-28T07:36:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127241#issuecomment-5449782288",
+      "comment_created_at": "2026-08-28T07:36:54Z",
+      "comment_updated_at": "2026-08-28T07:36:54Z",
+      "comment_body_sha256": "ea6cf96dc8338b309bafe4a192c06b3794cfa3a8fa52d9807646aae3aeb81670",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127241,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T07:37:34.021Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-doctor-transcript-atomic-repair",
+        "head_sha": "faf2dc413a430a81e0edf3ade90cc53d42ed1577",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
