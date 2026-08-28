@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T07:11:22.732Z",
+  "updated_at": "2026-08-28T07:11:37.639Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3224:5433914516:2026-08-28T02:30:50Z:clawsweeper_auto_repair",
-      "comment_id": "5433914516",
-      "comment_version_key": "5433914516:2026-08-28T02:30:50Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3224#issuecomment-5433914516",
-      "comment_created_at": "2026-08-27T03:16:43Z",
-      "comment_updated_at": "2026-08-28T02:30:50Z",
-      "comment_body_sha256": "aeff6777e95f4b01e1085b754a13abd9dba706dd76aa0ca139e139f6c9d5fa8d",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3224,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=74b5ded4c962b57b93d29ac5f5a4fc62ed2d8648)",
-      "expected_head_sha": "74b5ded4c962b57b93d29ac5f5a4fc62ed2d8648",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T02:32:41.925Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/feat-openclaw-token-cost",
-        "head_sha": "74b5ded4c962b57b93d29ac5f5a4fc62ed2d8648",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:3224:5435526930:2026-08-27T07:04:07Z:re_review",
       "comment_id": "5435526930",
@@ -32243,6 +32210,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3285:5449559764:2026-08-28T07:10:47Z:re_review",
+      "comment_id": "5449559764",
+      "comment_version_key": "5449559764:2026-08-28T07:10:47Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3285#issuecomment-5449559764",
+      "comment_created_at": "2026-08-28T07:10:47Z",
+      "comment_updated_at": "2026-08-28T07:10:47Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3285,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T07:11:35.232Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/integrate-krill-switch-flags",
+        "head_sha": "e705d21939c288686fefa5b54f9d3320c99c86ba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
