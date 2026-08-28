@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T18:28:45.802Z",
+  "updated_at": "2026-08-28T18:29:33.314Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:54409:5325128664:2026-08-18T07:41:32Z:re_review",
-      "comment_id": "5325128664",
-      "comment_version_key": "5325128664:2026-08-18T07:41:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/54409#issuecomment-5325128664",
-      "comment_created_at": "2026-08-18T07:41:32Z",
-      "comment_updated_at": "2026-08-18T07:41:32Z",
-      "comment_body_sha256": "596659c1618aaeb1b7806622d1dc461591a28be1f4ccdaa92aa0f77830e3d904",
-      "repo": "openclaw/openclaw",
-      "issue_number": 54409,
-      "author": "AnCoSONG",
-      "author_id": 32268203,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T13:24:07.683Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118806:5170245430:2026-08-28T12:55:59Z:clawsweeper_auto_repair",
       "comment_id": "5170245430",
@@ -32392,6 +32365,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132011:5456255930:2026-08-28T18:28:36Z:clawsweeper_needs_human",
+      "comment_id": "5456255930",
+      "comment_version_key": "5456255930:2026-08-28T18:28:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132011#issuecomment-5456255930",
+      "comment_created_at": "2026-08-28T18:28:36Z",
+      "comment_updated_at": "2026-08-28T18:28:36Z",
+      "comment_body_sha256": "9de68f8fce8a838b78b97b9e9a2c6532bd1d3c5a127623b59cebe9a38fb62b6b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132011,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the Gateway sessions.fork handler, which delegates to SQLite session cloning; the PR provides focused tests inc... (sha=f53b9b436dc210f401950ef36eacce00f02aace1)",
+      "expected_head_sha": "f53b9b436dc210f401950ef36eacce00f02aace1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T18:29:33.314Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-131954",
+        "head_sha": "f53b9b436dc210f401950ef36eacce00f02aace1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
