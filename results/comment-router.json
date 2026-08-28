@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T02:54:50.674Z",
+  "updated_at": "2026-08-28T02:54:59.385Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128141:5445922222:2026-08-27T22:24:01Z:re_review",
-      "comment_id": "5445922222",
-      "comment_version_key": "5445922222:2026-08-27T22:24:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128141#issuecomment-5445922222",
-      "comment_created_at": "2026-08-27T22:24:01Z",
-      "comment_updated_at": "2026-08-27T22:24:01Z",
-      "comment_body_sha256": "91b795260939fbcef3a8b9dfaacb24e73b92802b216db7d5b0d93b4d0503a456",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128141,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review please review exact head `2758b003b77a4ad05b5045ea33961fb0bf93c1ec`, rebased once onto `2364fb9273b6d0465c4505dc15211a3f70263abb`. range-diff shows only main's existing `scripts/tsx.mjs` package-script context plus the `frv` entry; focused validation passed 836 tests and the complete changed gate passed in an exact-head full clone. protected-main proof remains blocked because no legitimate historical legacy all-group candidate exists. the pr remains draft; no frv dispatch, temporary ref, release, publication, ready transition, or merge was performed",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T22:47:48.649Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-canonical-continuation-20260822",
-        "head_sha": "2758b003b77a4ad05b5045ea33961fb0bf93c1ec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131226:5446120151:2026-08-27T22:46:49Z:clawsweeper_auto_repair",
       "comment_id": "5446120151",
@@ -32332,6 +32285,39 @@
       "status": "skipped",
       "processed_at": "2026-08-28T02:54:50.674Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131430:5447795630:2026-08-28T02:51:54Z:clawsweeper_needs_human",
+      "comment_id": "5447795630",
+      "comment_version_key": "5447795630:2026-08-28T02:51:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131430#issuecomment-5447795630",
+      "comment_created_at": "2026-08-28T02:51:54Z",
+      "comment_updated_at": "2026-08-28T02:51:54Z",
+      "comment_body_sha256": "33a875dc750d94e03a1c19622d8ab568135ea6df15913c0c96e9860744b607dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131430,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The choice to keep only a pointer in root guidance relies partly on the PR body's Codex loading-boundary claim; direct Codex source was unavailable here, so that contract remains to b... (sha=9919aae234550f52c69cc3046f3f6e85281f4465)",
+      "expected_head_sha": "9919aae234550f52c69cc3046f3f6e85281f4465",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T02:54:59.385Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/agents-md-media-upload-consolidation",
+        "head_sha": "9919aae234550f52c69cc3046f3f6e85281f4465",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
