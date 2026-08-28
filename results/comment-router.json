@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T04:30:12.983Z",
+  "updated_at": "2026-08-28T04:30:14.706Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118053:5446637868:2026-08-27T23:59:07Z:re_review",
-      "comment_id": "5446637868",
-      "comment_version_key": "5446637868:2026-08-27T23:59:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118053#issuecomment-5446637868",
-      "comment_created_at": "2026-08-27T23:59:07Z",
-      "comment_updated_at": "2026-08-27T23:59:07Z",
-      "comment_body_sha256": "76b0ae9dff1b3878da9b57b80f25b89a9b414e7bddd4554e1fb04b2999627ff8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118053,
-      "author": "harjothkhara",
-      "author_id": 48686985,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T23:59:57.302Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oss-find/openclaw-104064",
-        "head_sha": "541073aebd9723e0c3097b78126f7846ef408fd8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1268:5446652782:2026-08-28T00:01:17Z:re_review",
       "comment_id": "5446652782",
@@ -31857,6 +31810,39 @@
         "kind": "pull_request",
         "branch": "steipete/keen-jepsen-5573f5",
         "head_sha": "00bd5b072a3c5be10e6c68a58224b28e671973bb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131499:5448448273:2026-08-28T04:29:13Z:clawsweeper_needs_human",
+      "comment_id": "5448448273",
+      "comment_version_key": "5448448273:2026-08-28T04:29:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131499#issuecomment-5448448273",
+      "comment_created_at": "2026-08-28T04:29:13Z",
+      "comment_updated_at": "2026-08-28T04:29:13Z",
+      "comment_body_sha256": "ab39a66e4cb9149ad9416c33e08f69a740c65a00ba12b0321f991accc573784a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131499,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair job is needed: this protected maintainer-owned draft has no discrete defect for an automated repair lane. (sha=42b8f95d5cc979dd2dcf8816b59345620368b003)",
+      "expected_head_sha": "42b8f95d5cc979dd2dcf8816b59345620368b003",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T04:30:14.706Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/lobster-resume-failure-id",
+        "head_sha": "42b8f95d5cc979dd2dcf8816b59345620368b003",
         "cluster_id": null,
         "job_path": null
       }
