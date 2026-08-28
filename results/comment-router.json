@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T10:54:29.964Z",
+  "updated_at": "2026-08-28T10:59:38.622Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131356:5448471181:2026-08-28T04:32:58Z:re_review",
-      "comment_id": "5448471181",
-      "comment_version_key": "5448471181:2026-08-28T04:32:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131356#issuecomment-5448471181",
-      "comment_created_at": "2026-08-28T04:32:58Z",
-      "comment_updated_at": "2026-08-28T04:32:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131356,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T05:22:34.911Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ios-sidebar-session-owner",
-        "head_sha": "96aeba87f83ef5790236c2ae73d7f1a2a297a71f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131509:5448676673:2026-08-28T05:06:24Z:re_review",
       "comment_id": "5448676673",
@@ -32850,6 +32803,39 @@
         "kind": "pull_request",
         "branch": "bench/goal-mobile",
         "head_sha": "337b5c441113f0bb38538a4d211a2726186c9bd9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127854:5379789486:2026-08-28T10:58:49Z:clawsweeper_needs_human",
+      "comment_id": "5379789486",
+      "comment_version_key": "5379789486:2026-08-28T10:58:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127854#issuecomment-5379789486",
+      "comment_created_at": "2026-08-22T10:35:27Z",
+      "comment_updated_at": "2026-08-28T10:58:49Z",
+      "comment_body_sha256": "1bad5343e1011f544d97637f43500888dbe93e504c4b157db1b403177c6b2366",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127854,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A current-target cron completion after reset now intentionally reports delivery failure instead of attaching to the replacement conversation; this is a compatibility-sensitive but nec... (sha=c799411f747d6386c0e329d188e21eae2188080f)",
+      "expected_head_sha": "c799411f747d6386c0e329d188e21eae2188080f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T10:59:38.622Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-current-session-generation-fence",
+        "head_sha": "c799411f747d6386c0e329d188e21eae2188080f",
         "cluster_id": null,
         "job_path": null
       }
