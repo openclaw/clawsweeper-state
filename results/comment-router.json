@@ -1,37 +1,6 @@
 {
-  "updated_at": "2026-08-28T06:30:19.668Z",
+  "updated_at": "2026-08-28T06:30:25.031Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:87362:4556976531:2026-08-28T00:54:44Z:autoclose",
-      "comment_id": "4556976531",
-      "comment_version_key": "4556976531:2026-08-28T00:54:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/87362#issuecomment-4556976531",
-      "comment_created_at": "2026-05-27T17:30:51Z",
-      "comment_updated_at": "2026-08-28T00:54:44Z",
-      "comment_body_sha256": "db2098ba1357119e409c83a612d228282192ddadece7fa39ac11bcd7f7f89f3a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 87362,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T02:28:08.588Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90703:4633109334:2026-08-28T01:26:14Z:clawsweeper_auto_repair",
       "comment_id": "4633109334",
@@ -32148,6 +32117,39 @@
         "kind": "pull_request",
         "branch": "codex/tui-reconnect-membership",
         "head_sha": "b7ba439eecedf21a9118188b68b58fb5652cb578",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131572:5449217849:2026-08-28T06:26:59Z:clawsweeper_needs_human",
+      "comment_id": "5449217849",
+      "comment_version_key": "5449217849:2026-08-28T06:26:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131572#issuecomment-5449217849",
+      "comment_created_at": "2026-08-28T06:26:59Z",
+      "comment_updated_at": "2026-08-28T06:26:59Z",
+      "comment_body_sha256": "c9f1fd9f5809f6dca44add306884728bd44d10558158cbb16dbe91d19abf1f79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131572,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Record the squash parent after the final main read (P1)** - The new final-main check can authorize the admin merge, but only returns workflowSha; merge-run later reads the merge commit without comparing its firs...; Review finding: [P1] Record the squash parent after the final main read — scripts/pr-lib/crabbox-merge-bypass.mjs:305 - [high] Admin bypass does not audit post-read main movement... (sha=3c5bfbd50253582ae403b7824aec6a9f1fbf1abc)",
+      "expected_head_sha": "3c5bfbd50253582ae403b7824aec6a9f1fbf1abc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T06:30:25.031Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-crabbox-publisher-ancestry",
+        "head_sha": "3c5bfbd50253582ae403b7824aec6a9f1fbf1abc",
         "cluster_id": null,
         "job_path": null
       }
