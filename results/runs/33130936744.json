@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131322",
+  "mode": "autonomous",
+  "run_id": "33130936744",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33130936744",
+  "head_sha": "6230a9d7c8b4bb103a6872de63add3f7e3b77701",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131322.md",
+  "published_at": "2026-08-28T01:03:20.979Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131322",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131322",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked by the mandatory Codex-source gate: sibling ../codex is absent and this read-only worker cannot clone it. No GitHub or repository mutations were made.",
+  "actions": [
+    {
+      "target": "#131322",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#131322",
+      "candidate_fix": null,
+      "reason": "A maintainer or writable worker must provide ../codex (or run where it can be cloned) and repeat the runtime-contract check before producing an implementation verdict or fix artifact."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide the required sibling ../codex checkout (or a writable execution environment that can clone it) so the mandated Codex-source inspection can complete."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#131322",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
