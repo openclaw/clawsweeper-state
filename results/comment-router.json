@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T14:51:11.793Z",
+  "updated_at": "2026-08-28T14:51:29.086Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122899:5450466482:2026-08-28T08:51:52Z:re_review",
-      "comment_id": "5450466482",
-      "comment_version_key": "5450466482:2026-08-28T08:51:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122899#issuecomment-5450466482",
-      "comment_created_at": "2026-08-28T08:51:52Z",
-      "comment_updated_at": "2026-08-28T08:51:52Z",
-      "comment_body_sha256": "e855e1bb30c6cb4e069ac02482553f68ea56a9fd74aa522f11d2745a587158db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122899,
-      "author": "ceckert",
-      "author_id": 779559,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T08:52:26.371Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/native-file-discovery",
-        "head_sha": "5ab707182de573bbf2a0136483f03598d2137d84",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/carapace:78:5450390898:2026-08-28T08:43:36Z:clawsweeper_needs_human",
       "comment_id": "5450390898",
@@ -32770,6 +32723,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131810:5453702396:2026-08-28T14:50:44Z:clawsweeper_needs_human",
+      "comment_id": "5453702396",
+      "comment_version_key": "5453702396:2026-08-28T14:50:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131810#issuecomment-5453702396",
+      "comment_created_at": "2026-08-28T14:24:05Z",
+      "comment_updated_at": "2026-08-28T14:50:44Z",
+      "comment_body_sha256": "5bd69b79462533277149390f12d74a563d5b700db3b7e4cf4aa5c5a32af4c4e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131810,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Adding the optional restart member changes the machine-readable update result and persisted sentinel shape; consumers with strict decoders need the maintainers to explicitly accept th... (sha=de94fc3579afeede56a77ca8d137a170c3f99844)",
+      "expected_head_sha": "de94fc3579afeede56a77ca8d137a170c3f99844",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T14:51:29.086Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-update-report-foreign-root-restart-s",
+        "head_sha": "de94fc3579afeede56a77ca8d137a170c3f99844",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
