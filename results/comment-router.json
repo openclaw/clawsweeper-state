@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T18:00:42.931Z",
+  "updated_at": "2026-08-28T18:00:47.587Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131755:5452406389:2026-08-28T12:17:19Z:clawsweeper_needs_human",
-      "comment_id": "5452406389",
-      "comment_version_key": "5452406389:2026-08-28T12:17:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131755#issuecomment-5452406389",
-      "comment_created_at": "2026-08-28T12:17:19Z",
-      "comment_updated_at": "2026-08-28T12:17:19Z",
-      "comment_body_sha256": "2f91c522a3bac0f9124bd5422c0cc1ee9d2128acbbe9da6b744382981a130c73",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131755,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured checks were still running. GitHub DNS failure and missing promisor blobs prevented inspection of the workflow log, latest filtered PR comment, and English source catalog,... (sha=236498c7b2c34817afc3dd0072ae068e9294c370)",
-      "expected_head_sha": "236498c7b2c34817afc3dd0072ae068e9294c370",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T12:18:42.874Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/control-ui-locale-refresh",
-        "head_sha": "236498c7b2c34817afc3dd0072ae068e9294c370",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131387:5447512086:2026-08-28T12:15:41Z:clawsweeper_needs_human",
       "comment_id": "5447512086",
@@ -32549,6 +32516,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130463:5455965789:2026-08-28T17:59:42Z:re_review",
+      "comment_id": "5455965789",
+      "comment_version_key": "5455965789:2026-08-28T17:59:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130463#issuecomment-5455965789",
+      "comment_created_at": "2026-08-28T17:59:42Z",
+      "comment_updated_at": "2026-08-28T17:59:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130463,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T18:00:45.709Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-image-history-mention-strip",
+        "head_sha": "4516fe4d4aa95f3650322a4183b11e9714921a9d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
