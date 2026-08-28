@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T10:32:09.787Z",
+  "updated_at": "2026-08-28T10:33:24.009Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131176:5448589441:2026-08-28T04:52:17Z:re_review",
-      "comment_id": "5448589441",
-      "comment_version_key": "5448589441:2026-08-28T04:52:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131176#issuecomment-5448589441",
-      "comment_created_at": "2026-08-28T04:52:17Z",
-      "comment_updated_at": "2026-08-28T04:52:17Z",
-      "comment_body_sha256": "6d13bac5ce3ea606dda88764a0762f71c918309ce1be2f93c4772d642729ce39",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131176,
-      "author": "ashawwal",
-      "author_id": 62305104,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T04:53:31.015Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-skill-workshop-usage",
-        "head_sha": "a841f4085c71db9b6d304d2a5a0e9dddb2910b8f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131504:5448620820:2026-08-28T04:57:23Z:re_review",
       "comment_id": "5448620820",
@@ -32986,6 +32939,39 @@
         "kind": "pull_request",
         "branch": "codex/release-qa-mcp-cancel-observation",
         "head_sha": "dafd9df3b6e5f07751a7a8813524282f558d6acc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110429:5010052996:2026-08-28T10:32:29Z:clawsweeper_auto_repair",
+      "comment_id": "5010052996",
+      "comment_version_key": "5010052996:2026-08-28T10:32:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110429#issuecomment-5010052996",
+      "comment_created_at": "2026-07-18T05:22:08Z",
+      "comment_updated_at": "2026-08-28T10:32:29Z",
+      "comment_body_sha256": "302e1f48c46d9e940e6ba4262266833cd2e9bd228f3a179cbe3716f2409c7f38",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110429,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=765bed2665ecd03bd79fa6df0870987c8767a832)",
+      "expected_head_sha": "765bed2665ecd03bd79fa6df0870987c8767a832",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T10:33:24.009Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jjy/fix/comfy-workflow-file-cap",
+        "head_sha": "765bed2665ecd03bd79fa6df0870987c8767a832",
         "cluster_id": null,
         "job_path": null
       }
