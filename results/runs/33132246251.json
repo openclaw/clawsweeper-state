@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131355",
+  "mode": "autonomous",
+  "run_id": "33132246251",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33132246251",
+  "head_sha": "78540e0458bfcf452635b259b728516d59347343",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131355.md",
+  "published_at": "2026-08-28T01:57:01.248Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131355",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131355",
+  "canonical_pr": null,
+  "summary": "#131355 remains a credible focused bug: current main derives a parent for unpinned Telegram DM-topic sessions and reads its persisted override. No implementation PR can be safely prepared in this read-only worker: node_modules is absent, the required install/reproduction cannot run, and the mandatory sibling ../codex source is unavailable for direct inspection. A narrow new-PR artifact is prepared for an executor with a writable checkout.",
+  "actions": [
+    {
+      "target": "#131355",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131355",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the checkout capabilities; the issue stays canonical and open."
+    },
+    {
+      "target": "#45877",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#131355",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#45902",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this linked item to central OpenClaw security triage; it does not block the independent #131355 repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131355",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131355",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow credited implementation PR after the executor captures the failing regression on current main."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
