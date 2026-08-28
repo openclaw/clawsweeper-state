@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T13:09:42.427Z",
+  "updated_at": "2026-08-28T13:10:11.411Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3493:5391201786:2026-08-24T05:44:22Z:re_review",
-      "comment_id": "5391201786",
-      "comment_version_key": "5391201786:2026-08-24T05:44:22Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5391201786",
-      "comment_created_at": "2026-08-24T05:44:22Z",
-      "comment_updated_at": "2026-08-24T05:44:22Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T07:32:58.321Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3493:5391352696:2026-08-24T06:08:08Z:re_review",
       "comment_id": "5391352696",
@@ -32987,6 +32960,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131757:5452426379:2026-08-28T13:09:12Z:clawsweeper_auto_repair",
+      "comment_id": "5452426379",
+      "comment_version_key": "5452426379:2026-08-28T13:09:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131757#issuecomment-5452426379",
+      "comment_created_at": "2026-08-28T12:19:30Z",
+      "comment_updated_at": "2026-08-28T13:09:12Z",
+      "comment_body_sha256": "5f0f7b1d1adbb124410887fb600039d964b796ce1707e86be45e442491f8c1d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131757,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f947b0f6beccbe8d173b18eed3b57b290540c141)",
+      "expected_head_sha": "f947b0f6beccbe8d173b18eed3b57b290540c141",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T13:10:11.411Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/tauri-onboarding-cross-platform-parity-79706c",
+        "head_sha": "f947b0f6beccbe8d173b18eed3b57b290540c141",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
