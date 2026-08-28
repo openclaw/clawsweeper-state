@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-131355"
 mode: "autonomous"
-run_id: "33132246251"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33132246251"
-head_sha: "78540e0458bfcf452635b259b728516d59347343"
-workflow_conclusion: "failure"
+run_id: "33139961207"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33139961207"
+head_sha: "3ec84eef2517e655a859e5d8cdf8c9ae618b3f88"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-28T01:57:01.248Z"
-canonical: "https://github.com/openclaw/openclaw/issues/131355"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/131355"
+published_at: "2026-08-28T04:11:54.658Z"
+canonical: "#131355"
+canonical_issue: "#131355"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-131355
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33132246251](https://github.com/openclaw/clawsweeper/actions/runs/33132246251)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33139961207](https://github.com/openclaw/clawsweeper/actions/runs/33139961207)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/131355
+Canonical: #131355
 
 ## Summary
 
-#131355 remains a credible focused bug: current main derives a parent for unpinned Telegram DM-topic sessions and reads its persisted override. No implementation PR can be safely prepared in this read-only worker: node_modules is absent, the required install/reproduction cannot run, and the mandatory sibling ../codex source is unavailable for direct inspection. A narrow new-PR artifact is prepared for an executor with a writable checkout.
+#131355 remains a valid canonical bug: inferred parent fallback at src/sessions/stored-model-overrides.ts:66 makes an unpinned Telegram DM topic inherit the base session’s model. Local validation and edits are blocked because this environment is read-only, has no node_modules, Corepack cannot create its cache, and the mandatory sibling ../codex checkout cannot be cloned.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/131355
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #131355 | fix_needed | blocked | canonical | Implementation is blocked only by the checkout capabilities; the issue stays canonical and open. |
-| #45877 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| #45902 | route_security | planned | security_sensitive | Quarantine this linked item to central OpenClaw security triage; it does not block the independent #131355 repair. |
-| cluster:issue-openclaw-openclaw-131355 | build_fix_artifact | planned | canonical | Prepare one narrow credited implementation PR after the executor captures the failing regression on current main. |
+| #45877 | keep_closed | skipped | related | Already closed; no closure action is permitted. |
+| #45902 | route_security | planned | security_sensitive | Quarantine this exact historical PR; it does not block the independent #131355 repair. |
+| #131355 | fix_needed | blocked | canonical | A writable checkout with dependencies and the required sibling Codex source is necessary before editing, executing the failing regression, or opening the allowed fix PR. |
 
 ## Needs Human
 
-- none
+- Provide a writable repair environment with dependencies and an inspectable sibling ../codex checkout; then execute the pre-fix regression and apply the artifact.
