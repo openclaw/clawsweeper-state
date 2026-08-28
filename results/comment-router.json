@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T20:58:49.862Z",
+  "updated_at": "2026-08-28T20:58:53.879Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130579:5454963400:2026-08-28T16:20:41Z:re_review",
-      "comment_id": "5454963400",
-      "comment_version_key": "5454963400:2026-08-28T16:20:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130579#issuecomment-5454963400",
-      "comment_created_at": "2026-08-28T16:20:41Z",
-      "comment_updated_at": "2026-08-28T16:20:41Z",
-      "comment_body_sha256": "9a4d11360cb9bfbe2f6770d598cfc76b7f25b5114176aaed0ea308f532f1d0d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130579,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T16:21:31.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oc-979/cron-codex-exec-canonical-capture",
-        "head_sha": "7a6d056e2bbbf9a03536c364a2b58e132332b475",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131474:5448144234:2026-08-28T16:20:49Z:clawsweeper_needs_human",
       "comment_id": "5448144234",
@@ -33000,6 +32953,39 @@
         "kind": "pull_request",
         "branch": "codex/telegram-userbot-convex",
         "head_sha": "ea4242fbeb246c3ba2fd4cac1ce7f811d3e6181d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:140:5387059000:2026-08-28T20:41:04Z:clawsweeper_needs_human",
+      "comment_id": "5387059000",
+      "comment_version_key": "5387059000:2026-08-28T20:41:04Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/140#issuecomment-5387059000",
+      "comment_created_at": "2026-08-23T16:27:59Z",
+      "comment_updated_at": "2026-08-28T20:41:04Z",
+      "comment_body_sha256": "2c6092e6f09725b4e5485aa31c34367b68db4fb5b7d979f3eff7fdd212cc4f0f",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 140,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing synchronous callers that configured process-wide timeout, retry, stale-age, or recovery settings will begin honoring those settings after upgrade; this is intended parity but... (sha=dfe3681d7f831e88923fa28e1ad140475980636e)",
+      "expected_head_sha": "dfe3681d7f831e88923fa28e1ad140475980636e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T20:58:53.879Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sync-lock-process-defaults",
+        "head_sha": "dfe3681d7f831e88923fa28e1ad140475980636e",
         "cluster_id": null,
         "job_path": null
       }
