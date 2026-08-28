@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T16:50:37.796Z",
+  "updated_at": "2026-08-28T16:51:58.850Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128910:5426279533:2026-08-26T13:48:25Z:re_review",
-      "comment_id": "5426279533",
-      "comment_version_key": "5426279533:2026-08-26T13:48:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128910#issuecomment-5426279533",
-      "comment_created_at": "2026-08-26T13:48:25Z",
-      "comment_updated_at": "2026-08-26T13:48:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128910,
-      "author": "hartmark",
-      "author_id": 12826053,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T11:47:31.925Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131710:5451081312:2026-08-28T11:36:24Z:clawsweeper_needs_human",
       "comment_id": "5451081312",
@@ -32375,6 +32348,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131921:5455276433:2026-08-28T16:51:02Z:re_review",
+      "comment_id": "5455276433",
+      "comment_version_key": "5455276433:2026-08-28T16:51:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131921#issuecomment-5455276433",
+      "comment_created_at": "2026-08-28T16:51:02Z",
+      "comment_updated_at": "2026-08-28T16:51:02Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131921,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T16:51:55.523Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-media-retain-generated-artifacts-whe",
+        "head_sha": "6b0972bf55b43cd78a10fe08fcef87c630ab6e34",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
