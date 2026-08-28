@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T07:32:58.321Z",
+  "updated_at": "2026-08-28T07:33:37.360Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130986:5443619377:2026-08-27T18:37:57Z:re_review",
-      "comment_id": "5443619377",
-      "comment_version_key": "5443619377:2026-08-27T18:37:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130986#issuecomment-5443619377",
-      "comment_created_at": "2026-08-27T18:37:57Z",
-      "comment_updated_at": "2026-08-27T18:37:57Z",
-      "comment_body_sha256": "c03584753550b108c6ba2ac739e0447000804d5aeb2f38640441b19a6efc9ba8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130986,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the swift generator and direct-dispatch repairs change behavior beyond the prior reviewed head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T02:51:13.725Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131115:5443588481:2026-08-28T02:47:17Z:clawsweeper_auto_repair",
       "comment_id": "5443588481",
@@ -32171,6 +32144,39 @@
       "status": "skipped",
       "processed_at": "2026-08-28T07:32:58.321Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131409:5447679911:2026-08-28T07:26:08Z:clawsweeper_needs_human",
+      "comment_id": "5447679911",
+      "comment_version_key": "5447679911:2026-08-28T07:26:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131409#issuecomment-5447679911",
+      "comment_created_at": "2026-08-28T02:34:18Z",
+      "comment_updated_at": "2026-08-28T07:26:08Z",
+      "comment_body_sha256": "afe079f0923932073599be4fccdad477347ae9d36ddc6c26bbd036ce0bef1138",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131409,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep the maintained Tlon S3 dependency pins (P2)** - This still downgrades the active S3 client, presigner, and resolved Node HTTP handler from current main on the custom-S3 credential path. The prior blocker re...; Review finding: [P2] Keep the maintained Tlon S3 dependency pins — extensions/tlon/package.json:11-12 - [medium] Unverified downgrade in signed-upload dependency closure — extensi... (sha=889d890686d42e2de9a81a86c9873a66058a05f0)",
+      "expected_head_sha": "889d890686d42e2de9a81a86c9873a66058a05f0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T07:33:37.360Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/openclaw-pr-vs-crabbox-de0dbe",
+        "head_sha": "889d890686d42e2de9a81a86c9873a66058a05f0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
