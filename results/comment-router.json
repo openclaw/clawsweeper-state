@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T11:02:15.586Z",
+  "updated_at": "2026-08-28T11:02:38.666Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128803:5448760310:2026-08-28T05:19:28Z:re_review",
-      "comment_id": "5448760310",
-      "comment_version_key": "5448760310:2026-08-28T05:19:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128803#issuecomment-5448760310",
-      "comment_created_at": "2026-08-28T05:19:28Z",
-      "comment_updated_at": "2026-08-28T05:19:28Z",
-      "comment_body_sha256": "3e04a3adb0ce9a162edb50ce35d5697dbb4ecd1c3f0fb584b85f703d6c239195",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128803,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T05:22:34.911Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-usage-owner-attribution-128755",
-        "head_sha": "c40992d3f8cd8a64db25302e61bc8aa9929341bc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3529:5412904154:2026-08-28T05:14:54Z:clawsweeper_auto_repair",
       "comment_id": "5412904154",
@@ -32825,6 +32778,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:428:5451703401:2026-08-28T11:01:44Z:clawsweeper_needs_human",
+      "comment_id": "5451703401",
+      "comment_version_key": "5451703401:2026-08-28T11:01:44Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/428#issuecomment-5451703401",
+      "comment_created_at": "2026-08-28T11:01:44Z",
+      "comment_updated_at": "2026-08-28T11:01:44Z",
+      "comment_body_sha256": "f4e9ca5a67759f7bf70dd54aff1867c6b9501c3150fc8ef6f326ca00697c29cf",
+      "repo": "steipete/oracle",
+      "issue_number": 428,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - ChatGPT controls are externally owned; without an after-fix browser capture, the localized selector and selected-pill check remain unverified against the real UI. (sha=bb5ca9a65046feb0c5611038b999aba87ab03d45)",
+      "expected_head_sha": "bb5ca9a65046feb0c5611038b999aba87ab03d45",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T11:02:38.666Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chinese-deep-research-picker",
+        "head_sha": "bb5ca9a65046feb0c5611038b999aba87ab03d45",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
