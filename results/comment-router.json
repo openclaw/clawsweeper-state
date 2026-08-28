@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T11:24:33.961Z",
+  "updated_at": "2026-08-28T11:25:06.544Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131228:5446452312:2026-08-28T05:19:00Z:clawsweeper_needs_human",
-      "comment_id": "5446452312",
-      "comment_version_key": "5446452312:2026-08-28T05:19:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131228#issuecomment-5446452312",
-      "comment_created_at": "2026-08-27T23:31:24Z",
-      "comment_updated_at": "2026-08-28T05:19:00Z",
-      "comment_body_sha256": "d33e5d22844a9cc2e1f4cadc18194f5fce3d9544957ac6d8bbb8f70add7ff3b0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131228,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing persisted jobs that omit bestEffort will change completion and one-shot retention behavior without an explicit upgrade decision. (sha=a658083ae43a25a36421b1d6d56f86bd34686635)",
-      "expected_head_sha": "a658083ae43a25a36421b1d6d56f86bd34686635",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T05:23:52.274Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cron-false-success-prep",
-        "head_sha": "a658083ae43a25a36421b1d6d56f86bd34686635",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131350:5447160982:2026-08-28T05:08:05Z:clawsweeper_needs_human",
       "comment_id": "5447160982",
@@ -32837,6 +32804,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131007:5451930381:2026-08-28T11:24:27Z:re_review",
+      "comment_id": "5451930381",
+      "comment_version_key": "5451930381:2026-08-28T11:24:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131007#issuecomment-5451930381",
+      "comment_created_at": "2026-08-28T11:24:27Z",
+      "comment_updated_at": "2026-08-28T11:24:27Z",
+      "comment_body_sha256": "866da530d63c6de63570ec11a212671cbd52d41b71a7d3c50951bddaa8ce7a68",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131007,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T11:25:04.742Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-130274",
+        "head_sha": "a6f5cd6d1082895aa8443ecc00a593675fbedf1e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
