@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T04:10:58.235Z",
+  "updated_at": "2026-08-28T04:11:08.083Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131020:5442348211:2026-08-27T16:48:39Z:clawsweeper_needs_human",
-      "comment_id": "5442348211",
-      "comment_version_key": "5442348211:2026-08-27T16:48:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131020#issuecomment-5442348211",
-      "comment_created_at": "2026-08-27T16:48:39Z",
-      "comment_updated_at": "2026-08-27T16:48:39Z",
-      "comment_body_sha256": "d4efb27b411ed0e6cdff625610aa8b47d2332905bb9e62792fdf151460f15a95",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131020,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 18 net lines; the added parser is narrowly justified by preserving scoped events while treating legacy or malformed peer signals as safe global clears. (sha=28cea920f5c7aa903b9cadc50821b2914a33a377)",
-      "expected_head_sha": "28cea920f5c7aa903b9cadc50821b2914a33a377",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T23:53:32.349Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/fix-retained-session-invalidation",
-        "head_sha": "28cea920f5c7aa903b9cadc50821b2914a33a377",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131032:5442384757:2026-08-27T16:51:52Z:clawsweeper_needs_human",
       "comment_id": "5442384757",
@@ -32406,6 +32373,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131153:5448292187:2026-08-28T04:10:16Z:re_review",
+      "comment_id": "5448292187",
+      "comment_version_key": "5448292187:2026-08-28T04:10:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131153#issuecomment-5448292187",
+      "comment_created_at": "2026-08-28T04:10:16Z",
+      "comment_updated_at": "2026-08-28T04:10:16Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131153,
+      "author": "ctbritt",
+      "author_id": 4516034,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T04:11:06.038Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/configure-agent-owner",
+        "head_sha": "45d23d7c1b2e359267c72bccf64e8b7704018b4f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
