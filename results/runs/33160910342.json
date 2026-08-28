@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131708",
+  "mode": "autonomous",
+  "run_id": "33160910342",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33160910342",
+  "head_sha": "d56daf07f0c32a58f28283936dc4568cf5069828",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131708.md",
+  "published_at": "2026-08-28T14:47:43.299Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131708",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131708",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before code changes: the checkout is at 75b2570ac24e55703b49c4914cdd9ac991881351, while preflight identifies current main as aa6c174e701377a745f473373d099770291ea8e8, which is absent locally. The required sibling ../codex source is also absent, so the repository’s mandatory direct Codex inspection cannot be completed. node_modules is absent, preventing the required direct inspection of Lit 3.3.3’s live directive and browser regression execution. The local source does show the reported write site at ui/src/pages/chat/components/chat-composer-view.ts:411-414, but no fix or proof claim is made against stale source.",
+  "actions": [
+    {
+      "target": "#131708",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131708",
+      "candidate_fix": null,
+      "reason": "Refresh to preflight main, provide ../codex, and install pinned dependencies before implementation and validation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131708",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131708",
+      "candidate_fix": null,
+      "reason": "Artifact is ready, but implementation remains blocked on current-base, Codex-source, and pinned-Lit prerequisites."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
