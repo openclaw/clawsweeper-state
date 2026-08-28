@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T11:00:15.891Z",
+  "updated_at": "2026-08-28T11:01:33.352Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131479:5448688860:2026-08-28T05:08:21Z:re_review",
-      "comment_id": "5448688860",
-      "comment_version_key": "5448688860:2026-08-28T05:08:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131479#issuecomment-5448688860",
-      "comment_created_at": "2026-08-28T05:08:21Z",
-      "comment_updated_at": "2026-08-28T05:08:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131479,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T05:22:34.911Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "gaoanze888/git-agent-cli-external-cwd",
-        "head_sha": "c36275238aea323cdaffb4e03332132d6fa9e98d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131495:5448759925:2026-08-28T05:19:24Z:re_review",
       "comment_id": "5448759925",
@@ -32839,6 +32792,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131370:5447518164:2026-08-28T11:00:28Z:clawsweeper_needs_human",
+      "comment_id": "5447518164",
+      "comment_version_key": "5447518164:2026-08-28T11:00:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131370#issuecomment-5447518164",
+      "comment_created_at": "2026-08-28T02:09:05Z",
+      "comment_updated_at": "2026-08-28T11:00:28Z",
+      "comment_body_sha256": "a630743ba057f1ded1d4fb35990e49a1f724218fb0d928a45579faf261bcef91",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131370,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new protocol and persisted Goal/replay state need the pending exact-head required checks to complete before merge; the local partial clone cannot independently compare the final c... (sha=f252956f5a885b480ddf68de1eb12be4b018fdee)",
+      "expected_head_sha": "f252956f5a885b480ddf68de1eb12be4b018fdee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T11:01:33.352Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/goal-composer",
+        "head_sha": "f252956f5a885b480ddf68de1eb12be4b018fdee",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
