@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T00:26:41.000Z",
+  "updated_at": "2026-08-28T00:26:50.247Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129324:5443067541:2026-08-27T17:52:41Z:re_review",
-      "comment_id": "5443067541",
-      "comment_version_key": "5443067541:2026-08-27T17:52:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129324#issuecomment-5443067541",
-      "comment_created_at": "2026-08-27T17:52:41Z",
-      "comment_updated_at": "2026-08-27T17:52:41Z",
-      "comment_body_sha256": "fe41037e659df9c575fa42a9dff8d37f4b8003226590cebe43613a3f36ee1a8a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129324,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T17:53:29.718Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/129209-json-nesting-stack-overflow",
-        "head_sha": "f4c52fbbefa77dd417117557c72b970b435e454f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:2:5443072863:2026-08-27T17:53:08Z:clawsweeper_auto_repair",
       "comment_id": "5443072863",
@@ -32777,6 +32730,39 @@
         "kind": "pull_request",
         "branch": "fix/claude-cli-usage-credits-billing",
         "head_sha": "fc8e2991f899328cc68bd4d4ed220fe3b734e536",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128904:5403517898:2026-08-28T00:22:50Z:clawsweeper_auto_repair",
+      "comment_id": "5403517898",
+      "comment_version_key": "5403517898:2026-08-28T00:22:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128904#issuecomment-5403517898",
+      "comment_created_at": "2026-08-25T00:51:50Z",
+      "comment_updated_at": "2026-08-28T00:22:50Z",
+      "comment_body_sha256": "43e0b91ace196dab19f9b4ac9ad0e7c9a71abcad11fe71a85398c62356f6d99f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128904,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2745ef040f318731d91150cfcbca9a5c7341707d)",
+      "expected_head_sha": "2745ef040f318731d91150cfcbca9a5c7341707d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T00:26:50.247Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/channel-ownership-core",
+        "head_sha": "2745ef040f318731d91150cfcbca9a5c7341707d",
         "cluster_id": null,
         "job_path": null
       }
