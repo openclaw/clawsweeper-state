@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T03:52:01.427Z",
+  "updated_at": "2026-08-28T03:52:18.828Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123189:5281706896:2026-08-27T15:14:47Z:clawsweeper_needs_human",
-      "comment_id": "5281706896",
-      "comment_version_key": "5281706896:2026-08-27T15:14:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123189#issuecomment-5281706896",
-      "comment_created_at": "2026-08-13T14:23:44Z",
-      "comment_updated_at": "2026-08-27T15:14:47Z",
-      "comment_body_sha256": "eddcb3ea0c7e255f1220b4064099516d9e057f56623674cd252f325fa96bf72b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123189,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug-fix PR adds production +343/-72 lines (net +271); the session-state merge needs exact-head integration checks before merge. (sha=26e7738ed33426c77133d1cf7af1c77253bb724c)",
-      "expected_head_sha": "26e7738ed33426c77133d1cf7af1c77253bb724c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T23:53:32.349Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-run-recovery-121756",
-        "head_sha": "26e7738ed33426c77133d1cf7af1c77253bb724c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123535:5290613923:2026-08-27T14:58:35Z:clawsweeper_needs_human",
       "comment_id": "5290613923",
@@ -32338,6 +32305,53 @@
       "status": "skipped",
       "processed_at": "2026-08-28T03:52:01.427Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130798:5448174444:2026-08-28T03:51:27Z:re_review",
+      "comment_id": "5448174444",
+      "comment_version_key": "5448174444:2026-08-28T03:51:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130798#issuecomment-5448174444",
+      "comment_created_at": "2026-08-28T03:51:27Z",
+      "comment_updated_at": "2026-08-28T03:51:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130798,
+      "author": "zw-xysk",
+      "author_id": 294457748,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T03:52:13.178Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/slack-polls",
+        "head_sha": "f86d54074334bc57bcf4c2f2a082ff79bce0fe97",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
