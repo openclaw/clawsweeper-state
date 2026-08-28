@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T20:33:12.554Z",
+  "updated_at": "2026-08-28T20:34:00.068Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:646:5454297245:2026-08-28T15:16:48Z:re_review",
-      "comment_id": "5454297245",
-      "comment_version_key": "5454297245:2026-08-28T15:16:48Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/646#issuecomment-5454297245",
-      "comment_created_at": "2026-08-28T15:16:48Z",
-      "comment_updated_at": "2026-08-28T15:16:48Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 646,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T15:17:43.443Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/browser-capability-isolation-after-645",
-        "head_sha": "024c01d54813dd6125092aff67ba5afb96227dec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131841:5454303756:2026-08-28T15:17:24Z:clawsweeper_needs_human",
       "comment_id": "5454303756",
@@ -32885,6 +32838,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131284:5446756333:2026-08-28T20:32:39Z:clawsweeper_auto_repair",
+      "comment_id": "5446756333",
+      "comment_version_key": "5446756333:2026-08-28T20:32:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131284#issuecomment-5446756333",
+      "comment_created_at": "2026-08-28T00:15:51Z",
+      "comment_updated_at": "2026-08-28T20:32:39Z",
+      "comment_body_sha256": "c5d1beb68d6872ebee45963fcd3d41a2542392b0c4eff8eed8561c967d6fa29c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131284,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=94be57af17966322a5548c27b5699b3c41d7736c)",
+      "expected_head_sha": "94be57af17966322a5548c27b5699b3c41d7736c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T20:34:00.068Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/msteams-sso-retention",
+        "head_sha": "94be57af17966322a5548c27b5699b3c41d7736c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
