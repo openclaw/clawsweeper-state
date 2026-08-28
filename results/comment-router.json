@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T16:02:51.349Z",
+  "updated_at": "2026-08-28T16:02:56.207Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1280:5450226639:2026-08-28T10:05:05Z:clawsweeper_auto_repair",
-      "comment_id": "5450226639",
-      "comment_version_key": "5450226639:2026-08-28T10:05:05Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1280#issuecomment-5450226639",
-      "comment_created_at": "2026-08-28T08:25:27Z",
-      "comment_updated_at": "2026-08-28T10:05:05Z",
-      "comment_body_sha256": "ea20827fce4eb21035a45b3a5e1ae575213dc8e3f450d3aa9f04a4034cc8312c",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1280,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ceb93f3c4fbe707de01a2430047c511c0e94591f)",
-      "expected_head_sha": "ceb93f3c4fbe707de01a2430047c511c0e94591f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T10:05:48.634Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/remove-automatic-live-proof",
-        "head_sha": "ceb93f3c4fbe707de01a2430047c511c0e94591f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127854:5379789486:2026-08-28T10:03:30Z:clawsweeper_auto_repair",
       "comment_id": "5379789486",
@@ -32381,6 +32348,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131750:5454771398:2026-08-28T16:02:13Z:re_review",
+      "comment_id": "5454771398",
+      "comment_version_key": "5454771398:2026-08-28T16:02:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131750#issuecomment-5454771398",
+      "comment_created_at": "2026-08-28T16:02:13Z",
+      "comment_updated_at": "2026-08-28T16:02:13Z",
+      "comment_body_sha256": "17f658e1ff8f520792f5240087e7650ab37187def74e6fac10eec4ca48264666",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131750,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — pr body evidence now links inspectable sanitized browser captures (before/after screenshots and screen recordings of the undo/redo key sequence with a programmatic-value-write hud: 20 writes unpatched → 0 writes patched), and the branch is rebased onto latest main with all checks green",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T16:02:52.292Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-131708-webchat-textarea-redo",
+        "head_sha": "055cd3ad58561915043b7f164fbcb47d735f7af9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
