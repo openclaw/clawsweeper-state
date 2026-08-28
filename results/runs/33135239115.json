@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131401",
+  "mode": "autonomous",
+  "run_id": "33135239115",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33135239115",
+  "head_sha": "2a5c59f9d5e59798c5de9fbbf7e428a2e6b4a8e5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131401.md",
+  "published_at": "2026-08-28T02:34:23.728Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131401",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131401",
+  "canonical_pr": null,
+  "summary": "#131401 remains a source-reproducible, narrow cron SQLite stale-write bug on main 9cb1d2dbe3d752418f22de614425119303feeb9b. Implementation is blocked in this read-only worker: ../codex is absent (the required direct Codex-source gate cannot be satisfied), and Corepack cannot create its cache, so dependencies, the regression, and changed-gate validation cannot run. No branch, PR, comment, label, close, or merge action was performed.",
+  "actions": [
+    {
+      "target": "#131401",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131401",
+      "candidate_fix": null,
+      "reason": "The defect has a precise storage-boundary repair, but the worker cannot modify files or establish the mandatory direct ../codex source check and test proof."
+    },
+    {
+      "target": "#13613",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#131401",
+      "candidate_fix": null,
+      "reason": "Distinct scope and root cause; leave the HA design issue open."
+    },
+    {
+      "target": "#122948",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#131401",
+      "candidate_fix": null,
+      "reason": "Closed historical context; no closeout action is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131401",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131401",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor, but implementation and validation cannot occur in this sandbox."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#131401",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
