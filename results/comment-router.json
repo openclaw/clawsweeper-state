@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T18:20:45.967Z",
+  "updated_at": "2026-08-28T18:21:10.011Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128454:5433822856:2026-08-27T03:03:40Z:re_review",
-      "comment_id": "5433822856",
-      "comment_version_key": "5433822856:2026-08-27T03:03:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5433822856",
-      "comment_created_at": "2026-08-27T03:03:40Z",
-      "comment_updated_at": "2026-08-27T03:03:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T12:42:24.375Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5433907886:2026-08-27T03:15:46Z:re_review",
       "comment_id": "5433907886",
@@ -32613,6 +32586,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124517:5306618204:2026-08-28T17:52:24Z:clawsweeper_needs_human",
+      "comment_id": "5306618204",
+      "comment_version_key": "5306618204:2026-08-28T17:52:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124517#issuecomment-5306618204",
+      "comment_created_at": "2026-08-16T08:51:58Z",
+      "comment_updated_at": "2026-08-28T17:52:24Z",
+      "comment_body_sha256": "8e5e16ee0ece162e58f524d047af5936513c7b63668171a6fe5e87a41d037395",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124517,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - At its 10,000-entry or 64 MiB cap, the new reject-new plan namespace fails a durable final push before LINE I/O; existing deployments could observe a new visible delivery failure inst... (sha=c43f8baa2c8045aea2a0e1ce7f8aa23f22bf3051)",
+      "expected_head_sha": "c43f8baa2c8045aea2a0e1ce7f8aa23f22bf3051",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T18:21:10.011Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-durable-crash-recovery",
+        "head_sha": "c43f8baa2c8045aea2a0e1ce7f8aa23f22bf3051",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
