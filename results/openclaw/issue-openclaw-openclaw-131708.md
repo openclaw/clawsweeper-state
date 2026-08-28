@@ -2,15 +2,15 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-131708"
 mode: "autonomous"
-run_id: "33160910342"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33160910342"
-head_sha: "d56daf07f0c32a58f28283936dc4568cf5069828"
-workflow_conclusion: "failure"
+run_id: "33202487568"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33202487568"
+head_sha: "3a094723aa362ff8efc89805a48d900f1e3ec573"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-28T14:47:43.299Z"
-canonical: "https://github.com/openclaw/openclaw/issues/131708"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/131708"
-canonical_pr: null
+published_at: "2026-08-28T22:15:41.630Z"
+canonical: "#131708"
+canonical_issue: "#131708"
+canonical_pr: "#131750"
 actions_total: 2
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33160910342](https://github.com/openclaw/clawsweeper/actions/runs/33160910342)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33202487568](https://github.com/openclaw/clawsweeper/actions/runs/33202487568)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/131708
+Canonical: #131708
 
 ## Summary
 
-Implementation is blocked before code changes: the checkout is at 75b2570ac24e55703b49c4914cdd9ac991881351, while preflight identifies current main as aa6c174e701377a745f473373d099770291ea8e8, which is absent locally. The required sibling ../codex source is also absent, so the repository’s mandatory direct Codex inspection cannot be completed. node_modules is absent, preventing the required direct inspection of Lit 3.3.3’s live directive and browser regression execution. The local source does show the reported write site at ui/src/pages/chat/components/chat-composer-view.ts:411-414, but no fix or proof claim is made against stale source.
+Current main retains the redundant textarea property write after native input. A narrow repair remains appropriate, but this read-only checkout lacks both installed Lit source/types and the mandated sibling ../codex checkout; #131750's exact head is also unavailable locally. The repair cannot be validated or safely finalized here.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Implementation is blocked before code changes: the checkout is at 75b2570ac24e55
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #131708 | fix_needed | blocked | canonical | Refresh to preflight main, provide ../codex, and install pinned dependencies before implementation and validation. |
-| cluster:issue-openclaw-openclaw-131708 | build_fix_artifact | planned | canonical | Artifact is ready, but implementation remains blocked on current-base, Codex-source, and pinned-Lit prerequisites. |
+| #131708 | keep_canonical | planned | canonical | Keep the issue as the canonical user-visible bug thread; closure is disallowed. |
+| #131750 | fix_needed | blocked | canonical | Repair the editable contributor branch only after direct Lit and Codex-source checks plus exact-head diff inspection are available; do not replace or close the contributor PR. |
 
 ## Needs Human
 
