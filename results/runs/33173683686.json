@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131770",
+  "mode": "autonomous",
+  "run_id": "33173683686",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33173683686",
+  "head_sha": "a4592a03e194228fc66b57bc4ad64deb11fb444b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131770.md",
+  "published_at": "2026-08-28T13:17:31.870Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131770",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131770",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a trustworthy reproduction: preflight main b03d2e79e9aa4703f6ceb3a4a62e1a3a8fbafc3d is absent from this shallow checkout, ../codex is absent, the filesystem is read-only, and dependencies are unavailable. Local source nevertheless identifies the heartbeat replacement path requiring a current-main regression check.",
+  "actions": [
+    {
+      "target": "#131770",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131770",
+      "candidate_fix": null,
+      "reason": "Use a writable checkout containing the preflight main SHA and ../codex, install dependencies, then capture the specified failing regression before editing."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131770",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131770",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable, current-main executor after required reproduction and Codex-source inspection."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#131770",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
