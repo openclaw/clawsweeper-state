@@ -1,0 +1,87 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131491",
+  "mode": "autonomous",
+  "run_id": "33140420201",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33140420201",
+  "head_sha": "9bad4750e84b4666c0b5e616d0f8c7f191744496",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131491.md",
+  "published_at": "2026-08-28T04:42:48.162Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131491",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131491",
+  "canonical_pr": null,
+  "summary": "The canonical issue remains a source-proven, narrow bug, but implementation is blocked: the mandatory sibling ../codex checkout is absent and the read-only worker cannot create it; focused validation also cannot initialize Corepack because its cache directory is read-only. A narrow fix artifact is provided for a writable, policy-compliant executor.",
+  "actions": [
+    {
+      "target": "#131491",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131491",
+      "candidate_fix": null,
+      "reason": "Implementation must first satisfy the repository's mandatory direct ../codex source inspection and run the focused reproduction in a writable package-manager environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131491",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131491",
+      "candidate_fix": null,
+      "reason": "Prepare the narrow canonical repair for execution once the environmental policy gates are available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#131491",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
