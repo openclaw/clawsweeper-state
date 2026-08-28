@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T06:25:13.767Z",
+  "updated_at": "2026-08-28T06:28:05.543Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130962:5447433971:2026-08-28T01:56:20Z:re_review",
-      "comment_id": "5447433971",
-      "comment_version_key": "5447433971:2026-08-28T01:56:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130962#issuecomment-5447433971",
-      "comment_created_at": "2026-08-28T01:56:20Z",
-      "comment_updated_at": "2026-08-28T01:56:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130962,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T02:27:27.827Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "gaoanze888/backup-legacy-audit-lease-scope",
-        "head_sha": "c67184aa22b0a9c991298fbc143066172c22c9b5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131358:5447525477:2026-08-28T02:10:14Z:re_review",
       "comment_id": "5447525477",
@@ -32227,6 +32180,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131409:5447679911:2026-08-28T06:23:40Z:clawsweeper_needs_human",
+      "comment_id": "5447679911",
+      "comment_version_key": "5447679911:2026-08-28T06:23:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131409#issuecomment-5447679911",
+      "comment_created_at": "2026-08-28T02:34:18Z",
+      "comment_updated_at": "2026-08-28T06:23:40Z",
+      "comment_body_sha256": "029487cbc52121b88e39324a64c2d1d75e88522eaca30a57dabc2e79a9c717ea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131409,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: ClawSweeper live verification failed on the reviewed terminal surface. After adding proof, update the PR body; ClawSweeper should re-r...; Review finding: [P2] Keep the maintained Tlon S3 dependency pins — extensions/tlon/package.json:11-12 - [medium] Review the Tlon S3 dependency rollback — extensions/tlon/package.j... (sha=ca0a78288ebbac33eb717c0d5bb822c3d0b7ea69)",
+      "expected_head_sha": "ca0a78288ebbac33eb717c0d5bb822c3d0b7ea69",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T06:28:05.543Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/openclaw-pr-vs-crabbox-de0dbe",
+        "head_sha": "ca0a78288ebbac33eb717c0d5bb822c3d0b7ea69",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
