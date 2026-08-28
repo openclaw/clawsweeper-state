@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T17:22:50.305Z",
+  "updated_at": "2026-08-28T17:22:53.348Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131569:5452336104:2026-08-28T12:09:42Z:re_review",
-      "comment_id": "5452336104",
-      "comment_version_key": "5452336104:2026-08-28T12:09:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131569#issuecomment-5452336104",
-      "comment_created_at": "2026-08-28T12:09:42Z",
-      "comment_updated_at": "2026-08-28T12:09:42Z",
-      "comment_body_sha256": "bc1e04adcd6fbb157e08b9902342222da5326648448ffb894a08679367866efb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131569,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T12:10:31.732Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/auto-reply-tombstone-active-run-deferral",
-        "head_sha": "31a2a701ff499faa111bc3e4cf40edf68bc5a272",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131754:5452365936:2026-08-28T12:12:58Z:clawsweeper_needs_human",
       "comment_id": "5452365936",
@@ -32512,6 +32465,39 @@
         "kind": "pull_request",
         "branch": "refactor/codex-argument-flow",
         "head_sha": "82661a4584645c39b801dadbd3f74c64b80fce98",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131904:5455323751:2026-08-28T17:22:04Z:clawsweeper_needs_human",
+      "comment_id": "5455323751",
+      "comment_version_key": "5455323751:2026-08-28T17:22:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131904#issuecomment-5455323751",
+      "comment_created_at": "2026-08-28T16:55:58Z",
+      "comment_updated_at": "2026-08-28T17:22:04Z",
+      "comment_body_sha256": "60fc5fbc31719f9af5e038f5d4c686710a379fac44eafe6dfcd9dfb769681a0d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131904,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head live evaluation reports zero proposals in the positive case; that does not establish an introduced source defect, but it prevents treating the branch as accept... (sha=4c20d34623a62a336bf2e77c9a63cb5da29369f6)",
+      "expected_head_sha": "4c20d34623a62a336bf2e77c9a63cb5da29369f6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T17:22:53.348Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workshop-review-capabilities-04b48b",
+        "head_sha": "4c20d34623a62a336bf2e77c9a63cb5da29369f6",
         "cluster_id": null,
         "job_path": null
       }
