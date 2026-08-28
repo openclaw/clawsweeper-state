@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T14:43:09.453Z",
+  "updated_at": "2026-08-28T14:44:00.053Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131602:5449959092:2026-08-28T08:40:58Z:clawsweeper_needs_human",
-      "comment_id": "5449959092",
-      "comment_version_key": "5449959092:2026-08-28T08:40:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131602#issuecomment-5449959092",
-      "comment_created_at": "2026-08-28T07:56:35Z",
-      "comment_updated_at": "2026-08-28T08:40:58Z",
-      "comment_body_sha256": "0c0432cfc15fe2f934b57c26f83753d50c161c1104026b8b04c04ff567aeada4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131602,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Migrate the mandatory-expiry table before startup validation (P1)** - An existing grants database from #129526 has expires_at_ms INTEGER NOT NULL, while this hunk makes canonical state nullable. Fresh open valid...; Review finding: [P1] Migrate the mandatory-expiry table before startup validation — src/state/openclaw-state-schema.sql:522 - [P1] Do not display a grant term that resolution can... (sha=288b72fa91beee40c95a6aafb3db49cb2ac3d43e)",
-      "expected_head_sha": "288b72fa91beee40c95a6aafb3db49cb2ac3d43e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T08:43:19.528Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/grants-surface",
-        "head_sha": "288b72fa91beee40c95a6aafb3db49cb2ac3d43e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131312:5446966737:2026-08-28T08:35:56Z:clawsweeper_auto_repair",
       "comment_id": "5446966737",
@@ -32720,6 +32687,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131810:5453924448:2026-08-28T14:43:16Z:re_review",
+      "comment_id": "5453924448",
+      "comment_version_key": "5453924448:2026-08-28T14:43:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131810#issuecomment-5453924448",
+      "comment_created_at": "2026-08-28T14:43:16Z",
+      "comment_updated_at": "2026-08-28T14:43:16Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131810,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T14:43:58.232Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-update-report-foreign-root-restart-s",
+        "head_sha": "de94fc3579afeede56a77ca8d137a170c3f99844",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
