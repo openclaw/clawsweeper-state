@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T14:52:29.696Z",
+  "updated_at": "2026-08-28T14:53:13.276Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106818:4963055124:2026-08-28T08:45:57Z:clawsweeper_needs_human",
-      "comment_id": "4963055124",
-      "comment_version_key": "4963055124:2026-08-28T08:45:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/106818#issuecomment-4963055124",
-      "comment_created_at": "2026-07-13T21:50:20Z",
-      "comment_updated_at": "2026-08-28T08:45:57Z",
-      "comment_body_sha256": "a8d4d029106e7560e7fac45fb184edde82caf6e77f72c80911b4c2e7998132fc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 106818,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body describes native RISC-V results, but it supplies no inspectable after-fix output or artifact; add redacted build, pull, start...; Review finding: [P1] Keep every release-pushed image attested — .github/workflows/docker-release.yml:862-863 - [P1] Remove the unpinned Dockerfile frontend — Dockerfile.riscv64:1... (sha=392860cbe6211b6d5b1e2bbb99951e5466eaeb8e)",
-      "expected_head_sha": "392860cbe6211b6d5b1e2bbb99951e5466eaeb8e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T08:54:00.457Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/riscv64-docker-refresh",
-        "head_sha": "392860cbe6211b6d5b1e2bbb99951e5466eaeb8e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130902:5439622520:2026-08-28T08:47:15Z:clawsweeper_auto_repair",
       "comment_id": "5439622520",
@@ -32756,6 +32723,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131835:5454026694:2026-08-28T14:52:30Z:re_review",
+      "comment_id": "5454026694",
+      "comment_version_key": "5454026694:2026-08-28T14:52:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131835#issuecomment-5454026694",
+      "comment_created_at": "2026-08-28T14:52:30Z",
+      "comment_updated_at": "2026-08-28T14:52:30Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131835,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T14:53:11.408Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-exec-unify-effective-elevated-level",
+        "head_sha": "0a8f8a1cdd5d87f312ae7c08f31d818eb2d012ad",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
