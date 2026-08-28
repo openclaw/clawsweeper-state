@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T22:44:29.472Z",
+  "updated_at": "2026-08-28T22:44:45.162Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128289:5397956768:2026-08-24T16:08:42Z:re_review",
-      "comment_id": "5397956768",
-      "comment_version_key": "5397956768:2026-08-24T16:08:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128289#issuecomment-5397956768",
-      "comment_created_at": "2026-08-24T16:08:42Z",
-      "comment_updated_at": "2026-08-24T16:08:42Z",
-      "comment_body_sha256": "6fd816f61cc1fca9c23cb835f704462eb1b7624dbe282bf3145bffa148a26527",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128289,
-      "author": "SnowBelt",
-      "author_id": 31227031,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T18:24:38.513Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128289:5398134752:2026-08-24T16:22:30Z:re_review",
       "comment_id": "5398134752",
@@ -32732,6 +32705,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132168:5458527495:2026-08-28T22:43:54Z:clawsweeper_needs_human",
+      "comment_id": "5458527495",
+      "comment_version_key": "5458527495:2026-08-28T22:43:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132168#issuecomment-5458527495",
+      "comment_created_at": "2026-08-28T22:43:54Z",
+      "comment_updated_at": "2026-08-28T22:43:54Z",
+      "comment_body_sha256": "2ea34da79a6736424be49d7ce829da49ce713c7402085e15945129bf68924a2d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132168,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Before landing, confirm the unavailable latest ClawSweeper comment's Rank-up moves and exact-head CI; the supplied context filtered that comment and the GitHub API was unreachable dur... (sha=ca435e4f76ef042e8d19028a33b6985079eb2c63)",
+      "expected_head_sha": "ca435e4f76ef042e8d19028a33b6985079eb2c63",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T22:44:45.162Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/testperf-tsdown-native-probes",
+        "head_sha": "ca435e4f76ef042e8d19028a33b6985079eb2c63",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
