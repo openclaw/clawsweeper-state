@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T04:38:43.453Z",
+  "updated_at": "2026-08-28T04:41:12.073Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128289:5404532053:2026-08-25T03:06:46Z:re_review",
-      "comment_id": "5404532053",
-      "comment_version_key": "5404532053:2026-08-25T03:06:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128289#issuecomment-5404532053",
-      "comment_created_at": "2026-08-25T03:06:46Z",
-      "comment_updated_at": "2026-08-25T03:06:46Z",
-      "comment_body_sha256": "df80a3beb2fbaff34a8a61cb3d8a3f1e05af54119c3b5faec2417f71deaf2959",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128289,
-      "author": "SnowBelt",
-      "author_id": 31227031,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T00:27:05.434Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128289:5407397014:2026-08-25T08:09:30Z:re_review",
       "comment_id": "5407397014",
@@ -31734,6 +31707,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123416:5448516425:2026-08-28T04:40:22Z:re_review",
+      "comment_id": "5448516425",
+      "comment_version_key": "5448516425:2026-08-28T04:40:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123416#issuecomment-5448516425",
+      "comment_created_at": "2026-08-28T04:40:22Z",
+      "comment_updated_at": "2026-08-28T04:40:22Z",
+      "comment_body_sha256": "86af001f4c0a486bebb5ec52bb013d78080e505e19be1330e158dbedf3f4dd45",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123416,
+      "author": "lonexreb",
+      "author_id": 95570942,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — rebased onto current main (head fa3851677aa); main's installed-plugin-index-store split moved the policy-refresh recomputation into installed-plugin-index-store-write.ts, and the caller-env threading is re-applied there (policy hash + per-record enable state). the sidecar two-root regression moved to its own file (loader-shared.bundled-discovery.test.ts) alongside main's rewrite of loader-shared.test.ts. all 7 bundled-discovery suites green (73 tests), tsgo + test-types clean, import cycles 0",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T04:41:09.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/123297-compat-activation-gate",
+        "head_sha": "fa3851677aa87fb11cd42765c3f71c30740da8a3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
