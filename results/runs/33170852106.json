@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131711",
+  "mode": "autonomous",
+  "run_id": "33170852106",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33170852106",
+  "head_sha": "a4592a03e194228fc66b57bc4ad64deb11fb444b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131711.md",
+  "published_at": "2026-08-28T13:53:29.917Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131711",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131711",
+  "canonical_pr": null,
+  "summary": "#131711 remains a real, narrow agent-run abortability bug on main. The embedded queue handle defaults to abortable after the reply operation has frozen cancellation, allowing chat.abort to persist a completed reply as an aborted partial. Plan one new focused PR; no merge or closure is authorized.",
+  "actions": [
+    {
+      "target": "#131711",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131711",
+      "candidate_fix": null,
+      "reason": "Use the existing reply-operation abort-signal predicate at the embedded handle factory; no new state, config, schema, or public API is needed."
+    },
+    {
+      "target": "#110922",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131711",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131711",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited ClawSweeper implementation PR from clawsweeper/issue-openclaw-openclaw-131711."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -2,40 +2,40 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-131711"
 mode: "autonomous"
-run_id: "33168194346"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33168194346"
-head_sha: "d56daf07f0c32a58f28283936dc4568cf5069828"
+run_id: "33170852106"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33170852106"
+head_sha: "a4592a03e194228fc66b57bc4ad64deb11fb444b"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-28T12:31:36.808Z"
+result_status: "planned"
+published_at: "2026-08-28T13:53:29.917Z"
 canonical: "https://github.com/openclaw/openclaw/issues/131711"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/131711"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-131711
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33168194346](https://github.com/openclaw/clawsweeper/actions/runs/33168194346)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33170852106](https://github.com/openclaw/clawsweeper/actions/runs/33170852106)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/131711
 
 ## Summary
 
-Issue #131711 remains reproducible on main c85129f85507b5f2e6c3bd0ce4ede29e1420195a. The real embedded queue handle omits its abortability state, allowing a completed/finalizing reply to be treated as abortable; a later chat.abort then persists a duplicate abort transcript entry. A narrow new fix PR is appropriate, but this checkout is read-only: the mandatory direct ../codex source inspection and focused test execution cannot be completed.
+#131711 remains a real, narrow agent-run abortability bug on main. The embedded queue handle defaults to abortable after the reply operation has frozen cancellation, allowing chat.abort to persist a completed reply as an aborted partial. Plan one new focused PR; no merge or closure is authorized.
 
 ## Impact
 
@@ -44,18 +44,17 @@ Issue #131711 remains reproducible on main c85129f85507b5f2e6c3bd0ce4ede29e14201
 | Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #131711 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,10 +66,10 @@ Issue #131711 remains reproducible on main c85129f85507b5f2e6c3bd0ce4ede29e14201
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #131711 | fix_needed | blocked | canonical | Implementation is blocked only by this immutable worker environment: ../codex is absent and cannot be cloned into the read-only parent directory, and pnpm install failed twice because Corepack cannot create its cache. The focused Vitest command consequently cannot find tsx. |
-| #110922 | keep_closed | skipped | related | Closed historical reference; no mutation is valid or needed. |
-| cluster:issue-openclaw-openclaw-131711 | build_fix_artifact | planned | canonical | A new focused PR is the canonical fix path; do not change the persisted schema or add a fallback. |
+| #131711 | fix_needed | planned | canonical | Use the existing reply-operation abort-signal predicate at the embedded handle factory; no new state, config, schema, or public API is needed. |
+| #110922 | keep_closed | skipped | related | Already closed; no mutation is valid. |
+| cluster:issue-openclaw-openclaw-131711 | build_fix_artifact | planned | canonical | Create one narrow credited ClawSweeper implementation PR from clawsweeper/issue-openclaw-openclaw-131711. |
 
 ## Needs Human
 
-- Provide a writable repair checkout (including writable Corepack cache) with ../codex available, or otherwise supply direct Codex runtime/protocol source access, so the mandatory Codex gate and focused regression validation can be completed before opening the PR.
+- none
