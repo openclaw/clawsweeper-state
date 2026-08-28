@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T00:46:26.570Z",
+  "updated_at": "2026-08-28T00:48:14.499Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131077:5443841801:2026-08-27T18:56:27Z:clawsweeper_needs_human",
-      "comment_id": "5443841801",
-      "comment_version_key": "5443841801:2026-08-27T18:56:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131077#issuecomment-5443841801",
-      "comment_created_at": "2026-08-27T18:56:27Z",
-      "comment_updated_at": "2026-08-27T18:56:27Z",
-      "comment_body_sha256": "daf8290aa05beda117c3598e6602ba64f42070a5499205bf8ca9c0971e66961e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131077,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A shallow foreground completion during async prepareReview can re-arm the old deep candidate; the original callback then exits on generation mismatch and the stale review runs on the... (sha=7eb994ab033fb3a49752c7cd8c75ab23868f7c1f)",
-      "expected_head_sha": "7eb994ab033fb3a49752c7cd8c75ab23868f7c1f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T18:58:06.632Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-workshop-review-isolation",
-        "head_sha": "7eb994ab033fb3a49752c7cd8c75ab23868f7c1f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124162:5302206606:2026-08-27T18:51:09Z:clawsweeper_needs_human",
       "comment_id": "5302206606",
@@ -32420,6 +32387,39 @@
       "status": "skipped",
       "processed_at": "2026-08-28T00:46:26.570Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121309:5235612506:2026-08-28T00:42:15Z:clawsweeper_auto_repair",
+      "comment_id": "5235612506",
+      "comment_version_key": "5235612506:2026-08-28T00:42:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121309#issuecomment-5235612506",
+      "comment_created_at": "2026-08-10T03:41:37Z",
+      "comment_updated_at": "2026-08-28T00:42:15Z",
+      "comment_body_sha256": "544d6a5c79e32586f62d7a226e57dda4518fb284a33053e7c05f11466c4b6889",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121309,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e3dcd266884cd896da60a988a5d2ec2ef13f29ac)",
+      "expected_head_sha": "e3dcd266884cd896da60a988a5d2ec2ef13f29ac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T00:48:14.499Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "prep/delete-cleanup-completion-receipts",
+        "head_sha": "e3dcd266884cd896da60a988a5d2ec2ef13f29ac",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
