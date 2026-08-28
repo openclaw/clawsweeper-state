@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T17:10:32.135Z",
+  "updated_at": "2026-08-28T17:11:05.266Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130993:5452167316:2026-08-28T11:51:36Z:re_review",
-      "comment_id": "5452167316",
-      "comment_version_key": "5452167316:2026-08-28T11:51:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130993#issuecomment-5452167316",
-      "comment_created_at": "2026-08-28T11:51:36Z",
-      "comment_updated_at": "2026-08-28T11:51:36Z",
-      "comment_body_sha256": "22c8caf168e6f30e434facf75f00e47640396726a4721dc0947f3640994915e1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130993,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T11:52:19.596Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/managed-context-pressure",
-        "head_sha": "fa810150aa7f7bd22db7eda7bc3f917dd4d6bc2d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129174:5408217824:2026-08-28T11:49:18Z:clawsweeper_needs_human",
       "comment_id": "5408217824",
@@ -32486,6 +32439,39 @@
         "kind": "pull_request",
         "branch": "fix/explicit-skill-repair-receipt",
         "head_sha": "50bc9c7a8eccbba9bed6a4b55d1995ac84c03d4d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131393:5447592559:2026-08-28T17:08:37Z:clawsweeper_needs_human",
+      "comment_id": "5447592559",
+      "comment_version_key": "5447592559:2026-08-28T17:08:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131393#issuecomment-5447592559",
+      "comment_created_at": "2026-08-28T02:20:34Z",
+      "comment_updated_at": "2026-08-28T17:08:37Z",
+      "comment_body_sha256": "4a6e4462a9d04d236bf6978e3f3c7d2538f94154b8fb1682fe1efd62ea9d31ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131393,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body’s recorded Testbox verification names an earlier head, while the current force-pushed head is 16ca9a8c; several exact-head checks remain in progress and no direct managed-... (sha=16ca9a8cf06220aebafda829d19857bb01423cb7)",
+      "expected_head_sha": "16ca9a8cf06220aebafda829d19857bb01423cb7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T17:11:05.266Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "shakkernerd/update-completion-restart-order",
+        "head_sha": "16ca9a8cf06220aebafda829d19857bb01423cb7",
         "cluster_id": null,
         "job_path": null
       }
