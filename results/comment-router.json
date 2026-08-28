@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T12:42:24.375Z",
+  "updated_at": "2026-08-28T12:42:56.733Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122899:5449639272:2026-08-28T07:20:20Z:re_review",
-      "comment_id": "5449639272",
-      "comment_version_key": "5449639272:2026-08-28T07:20:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122899#issuecomment-5449639272",
-      "comment_created_at": "2026-08-28T07:20:20Z",
-      "comment_updated_at": "2026-08-28T07:20:20Z",
-      "comment_body_sha256": "cf337431f2581cf18dc8e87369581d35c4ec8f4b45e8d38f3d987a7a002a946f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122899,
-      "author": "ceckert",
-      "author_id": 779559,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T07:20:57.675Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/native-file-discovery",
-        "head_sha": "4e357f87c7a82ebf1308b3ee4206e5fc2083d57f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:291:5449556769:2026-08-28T07:10:24Z:clawsweeper_needs_human",
       "comment_id": "5449556769",
@@ -32882,6 +32835,39 @@
       "status": "skipped",
       "processed_at": "2026-08-28T12:42:24.375Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3164:5389652288:2026-08-28T12:42:17Z:clawsweeper_needs_human",
+      "comment_id": "5389652288",
+      "comment_version_key": "5389652288:2026-08-28T12:42:17Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3164#issuecomment-5389652288",
+      "comment_created_at": "2026-08-24T01:22:46Z",
+      "comment_updated_at": "2026-08-28T12:42:17Z",
+      "comment_body_sha256": "0b13cc9fc921c79ebe0c6fea77fb38e08f16026643e5d10934fd25d37d6ed65c",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3164,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR adds 2,536 production lines across 48 files, including eleven persisted settings and an optional global shortcut; the feature is safely off by default, but its permanent produc... (sha=8afbba8e1176caf75583ec9f727e1a7575c97144)",
+      "expected_head_sha": "8afbba8e1176caf75583ec9f727e1a7575c97144",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T12:42:56.733Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "notch-usage-overlay",
+        "head_sha": "8afbba8e1176caf75583ec9f727e1a7575c97144",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
