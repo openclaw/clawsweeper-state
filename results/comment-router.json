@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T13:50:36.671Z",
+  "updated_at": "2026-08-28T13:51:29.595Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119800:5199734293:2026-08-28T06:05:54Z:clawsweeper_auto_repair",
-      "comment_id": "5199734293",
-      "comment_version_key": "5199734293:2026-08-28T06:05:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119800#issuecomment-5199734293",
-      "comment_created_at": "2026-08-06T02:34:12Z",
-      "comment_updated_at": "2026-08-28T06:05:54Z",
-      "comment_body_sha256": "a803378eb0f2690e34cc9fea77a671c5abb9d135c17d9196d98dddfead592271",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119800,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c77fdb87b01680dc353e04183a7ad40ee7128c19)",
-      "expected_head_sha": "c77fdb87b01680dc353e04183a7ad40ee7128c19",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T08:08:31.578Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-command-quiescence-stack-20260805",
-        "head_sha": "c77fdb87b01680dc353e04183a7ad40ee7128c19",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119833:5200440258:2026-08-28T06:08:18Z:clawsweeper_auto_repair",
       "comment_id": "5200440258",
@@ -32821,6 +32788,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131203:5453336780:2026-08-28T13:50:42Z:re_review",
+      "comment_id": "5453336780",
+      "comment_version_key": "5453336780:2026-08-28T13:50:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131203#issuecomment-5453336780",
+      "comment_created_at": "2026-08-28T13:50:42Z",
+      "comment_updated_at": "2026-08-28T13:50:42Z",
+      "comment_body_sha256": "1d512375b517600f1e6fe0a6a418e94ae3e1432441a75065aaef1823c2115858",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131203,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T13:51:27.450Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-spawn-subtree-authorization-after-subagent-recovery",
+        "head_sha": "fb57b7550a20b81072b83511c37933244b5050c8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
