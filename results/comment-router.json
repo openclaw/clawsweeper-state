@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T15:39:03.779Z",
+  "updated_at": "2026-08-28T15:39:05.009Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131569:5450935835:2026-08-28T09:37:47Z:re_review",
-      "comment_id": "5450935835",
-      "comment_version_key": "5450935835:2026-08-28T09:37:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131569#issuecomment-5450935835",
-      "comment_created_at": "2026-08-28T09:37:47Z",
-      "comment_updated_at": "2026-08-28T09:37:47Z",
-      "comment_body_sha256": "bddbff0cb313cedab45a81e7742db0987211ee54771085523811592cc119fd67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131569,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T09:38:31.691Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/auto-reply-tombstone-active-run-deferral",
-        "head_sha": "0385431cf801d1b3539a40494c7fbd63080f6f0a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131604:5449651344:2026-08-28T09:39:32Z:clawsweeper_needs_human",
       "comment_id": "5449651344",
@@ -32424,6 +32377,39 @@
         "kind": "pull_request",
         "branch": "steipete/jolly-roentgen-4f0467",
         "head_sha": "6d180b03c6edef1ecf79f75aefc26901ff1164a5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131859:5454526212:2026-08-28T15:38:17Z:clawsweeper_needs_human",
+      "comment_id": "5454526212",
+      "comment_version_key": "5454526212:2026-08-28T15:38:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131859#issuecomment-5454526212",
+      "comment_created_at": "2026-08-28T15:38:17Z",
+      "comment_updated_at": "2026-08-28T15:38:17Z",
+      "comment_body_sha256": "35a07bf4b01c4402d565080fa419b1b1a932784d8746484b292bd6bc35e39850",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131859,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress, and the focused regression was not executed locally in this read-only review. (sha=cde211d30b0e49781551dfc2a871a292105a377b)",
+      "expected_head_sha": "cde211d30b0e49781551dfc2a871a292105a377b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T15:39:05.009Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/webchat-reply-directive-persistence",
+        "head_sha": "cde211d30b0e49781551dfc2a871a292105a377b",
         "cluster_id": null,
         "job_path": null
       }
