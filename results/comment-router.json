@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T01:50:02.495Z",
+  "updated_at": "2026-08-28T01:50:57.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130098:5432692408:2026-08-27T00:22:19Z:re_review",
-      "comment_id": "5432692408",
-      "comment_version_key": "5432692408:2026-08-27T00:22:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130098#issuecomment-5432692408",
-      "comment_created_at": "2026-08-27T00:22:19Z",
-      "comment_updated_at": "2026-08-27T00:22:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130098,
-      "author": "hartmark",
-      "author_id": 12826053,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T20:00:44.232Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130098:5436050488:2026-08-27T07:51:37Z:re_review",
       "comment_id": "5436050488",
@@ -32314,6 +32287,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/poltergeist:210:5398612199:2026-08-28T01:47:23Z:clawsweeper_needs_human",
+      "comment_id": "5398612199",
+      "comment_version_key": "5398612199:2026-08-28T01:47:23Z",
+      "comment_url": "https://github.com/steipete/poltergeist/pull/210#issuecomment-5398612199",
+      "comment_created_at": "2026-08-24T17:04:30Z",
+      "comment_updated_at": "2026-08-28T01:47:23Z",
+      "comment_body_sha256": "cc6bf7dd3f2a27739e0a38f89cbe87bdb04014d8cfaa44e01bdec94b4c439174",
+      "repo": "steipete/poltergeist",
+      "issue_number": 210,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The change deliberately alters timing around existing build commands, output paths, environments, and child-process restarts; a future unmodeled lifecycle transition could still launc... (sha=b0a308cde497191b3e4c9f81d1faeab15cfe53d4)",
+      "expected_head_sha": "b0a308cde497191b3e4c9f81d1faeab15cfe53d4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T01:50:57.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-reload-stale-builder",
+        "head_sha": "b0a308cde497191b3e4c9f81d1faeab15cfe53d4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
