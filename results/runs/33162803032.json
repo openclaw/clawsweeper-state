@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131711",
+  "mode": "autonomous",
+  "run_id": "33162803032",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33162803032",
+  "head_sha": "d56daf07f0c32a58f28283936dc4568cf5069828",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131711.md",
+  "published_at": "2026-08-28T11:44:36.533Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131711",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131711",
+  "canonical_pr": null,
+  "summary": "#131711 remains an open canonical bug. Plan a narrow new fix PR that makes a finished embedded queue handle explicitly non-abortable during deferred terminal settlement, preventing chat.abort from persisting the completed reply again as an aborted partial. #110922 is closed, related historical context only.",
+  "actions": [
+    {
+      "target": "#131711",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131711",
+      "candidate_fix": null,
+      "reason": "The finishing lifecycle owns cancellation eligibility; a transcript-content deduplication workaround would mask the upstream state error."
+    },
+    {
+      "target": "#110922",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#131711",
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation is valid or needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131711",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131711",
+      "candidate_fix": null,
+      "reason": "No viable open contributor PR exists, and the repair is a focused lifecycle-owner change."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
