@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T01:23:38.787Z",
+  "updated_at": "2026-08-28T01:23:43.298Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1556:5443950061:2026-08-27T19:05:41Z:re_review",
-      "comment_id": "5443950061",
-      "comment_version_key": "5443950061:2026-08-27T19:05:41Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1556#issuecomment-5443950061",
-      "comment_created_at": "2026-08-27T19:05:41Z",
-      "comment_updated_at": "2026-08-27T19:05:41Z",
-      "comment_body_sha256": "00e5cc20b08186cf0668b842d8d36445fc7d439de95b1178a0693d159f841375",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1556,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T19:36:35.919Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/remote-runner-protocol",
-        "head_sha": "a313703092e85ee3b493d0f971e195339adc8c64",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1556:5437305236:2026-08-27T19:28:22Z:clawsweeper_needs_human",
       "comment_id": "5437305236",
@@ -32323,6 +32276,39 @@
         "kind": "pull_request",
         "branch": "fix/exec-secretref-path-preflight-117051",
         "head_sha": "aef72f1052cece19a472e8fd6495c4816d1c93f2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131091:5443237125:2026-08-28T01:22:18Z:clawsweeper_needs_human",
+      "comment_id": "5443237125",
+      "comment_version_key": "5443237125:2026-08-28T01:22:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131091#issuecomment-5443237125",
+      "comment_created_at": "2026-08-27T18:06:37Z",
+      "comment_updated_at": "2026-08-28T01:22:18Z",
+      "comment_body_sha256": "15b018e89d8920f30cd081648c2d3631ebbfd66b09f7dd9558e8d72a83107c28",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131091,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Reverify the Crabbox broker contract** - The new merge authority trusts Crabbox v0.46 run identity, lifecycle, event, upload, and command fields; the sibling source checkout and network...; Review finding: [medium] Reverify the Crabbox broker contract — scripts/pr-lib/gates.sh:257 (sha=81f53f32c4fb4f9fe74c768475012b0684d4e0e1)",
+      "expected_head_sha": "81f53f32c4fb4f9fe74c768475012b0684d4e0e1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T01:23:43.298Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/pr-gates-crabbox-aws",
+        "head_sha": "81f53f32c4fb4f9fe74c768475012b0684d4e0e1",
         "cluster_id": null,
         "job_path": null
       }
