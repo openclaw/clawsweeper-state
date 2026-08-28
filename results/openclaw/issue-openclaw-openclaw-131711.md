@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-131711"
 mode: "autonomous"
-run_id: "33161408982"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33161408982"
+run_id: "33162087001"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33162087001"
 head_sha: "d56daf07f0c32a58f28283936dc4568cf5069828"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-28T10:18:48.677Z"
+published_at: "2026-08-28T10:30:27.364Z"
 canonical: "https://github.com/openclaw/openclaw/issues/131711"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/131711"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33161408982](https://github.com/openclaw/clawsweeper/actions/runs/33161408982)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33162087001](https://github.com/openclaw/clawsweeper/actions/runs/33162087001)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/131711
 
 ## Summary
 
-#131711 remains the open canonical issue. A narrow producer-side repair is identified, but implementation is blocked because the required sibling ../codex checkout is absent and this read-only, network-restricted worker cannot inspect or clone it.
+No implementation artifact: the required direct ../codex runtime-source inspection is unavailable in this read-only checkout, and no deterministic current-main reproduction is hydrated. Current source contains targeted finalizing-run abort guards, so a duplicate-text workaround would be unsafe.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/131711
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #131711 | fix_needed | blocked | canonical | The repair needs direct ../codex source inspection before a worker may change code; the required source is unavailable in this environment. |
-| cluster:issue-openclaw-openclaw-131711 | build_fix_artifact | blocked | canonical | A narrow artifact is prepared for a worker that can satisfy the mandatory Codex-source inspection gate. |
+| #131711 | keep_canonical | planned | canonical | Keep the report open pending an accessible direct Codex-source inspection and a deterministic current-main reproduction of the claimed completed-reply/late-abort ordering. |
+| #110922 | keep_closed | skipped | related | Already merged and closed; retained only as related historical evidence. |
 
 ## Needs Human
 
