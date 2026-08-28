@@ -3,128 +3,23 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Apply finished",
-  "detail": "Apply/comment-sync run finished with 0 fresh closes out of requested limit 40. See apply-report.json for per-item results.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33163538740",
-  "planned_count": null,
-  "planned_capacity": null,
-  "planned_shards": null,
-  "active_codex": null,
-  "due_backlog": null,
-  "oldest_unreviewed_at": null,
-  "capacity_reason": null,
+  "state": "Hot intake publish complete",
+  "detail": "Merged 1 hot intake artifacts for run 33163341313 without full folder reconciliation. Captured 1 shard metrics; 0 shards reported non-success review status.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33163341313",
+  "planned_count": 1,
+  "planned_capacity": 1,
+  "planned_shards": 1,
+  "active_codex": 0,
+  "due_backlog": 1328,
+  "oldest_unreviewed_at": "2026-08-28T10:16:21Z",
+  "capacity_reason": "saturated: due backlog filled planned capacity",
   "inherited_label_cleanups": null,
   "self_heal_conflict_repairs": null,
   "failed_review_retries": null,
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": {
-    "schema_version": 1,
-    "generated_at": "2026-08-28T11:09:07.792Z",
-    "target_repo": "openclaw/openclaw",
-    "mode": "close",
-    "status": "ok",
-    "summary": "135 examined; 23/600 action records; 0 closed, 17 comments synced, 6 skipped; cursor at #103356.",
-    "examined": 135,
-    "action_records": 23,
-    "processed": 23,
-    "processed_limit": 600,
-    "close_limit": 40,
-    "closed": 0,
-    "comment_synced": 17,
-    "skipped": 6,
-    "skip_reasons": {
-      "kept_open": 3,
-      "skipped_low_signal_live_guard": 1,
-      "skipped_runtime_budget": 2
-    },
-    "lanes": {
-      "closure": {
-        "processed": 6,
-        "closed": 0,
-        "comment_synced": 0,
-        "skipped": 6,
-        "skip_reasons": {
-          "kept_open": 3,
-          "skipped_low_signal_live_guard": 1,
-          "skipped_runtime_budget": 2
-        }
-      },
-      "comment_sync": {
-        "processed": 17,
-        "closed": 0,
-        "comment_synced": 17,
-        "skipped": 0,
-        "skip_reasons": {}
-      }
-    },
-    "next_actions": [
-      {
-        "reason": "kept_open",
-        "count": 3,
-        "bucket": "inspect",
-        "owner": "maintainer",
-        "retryable": false,
-        "label": "Inspect skip",
-        "summary": "Apply reported an unmapped skip bucket.",
-        "next_step": "Inspect the workflow run and add a deterministic mapping if this repeats."
-      },
-      {
-        "reason": "skipped_runtime_budget",
-        "count": 2,
-        "bucket": "run_budget",
-        "owner": "clawsweeper",
-        "retryable": true,
-        "label": "Runtime budget",
-        "summary": "The apply lane stopped because it reached its bounded runtime.",
-        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
-      },
-      {
-        "reason": "skipped_low_signal_live_guard",
-        "count": 1,
-        "bucket": "stable_skip",
-        "owner": "none",
-        "retryable": false,
-        "label": "Live close guard",
-        "summary": "Current GitHub state no longer satisfies the low-signal close policy.",
-        "next_step": "Leave the item open until a later review or live-state change makes it eligible."
-      }
-    ],
-    "next_action_buckets": {
-      "inspect": 3,
-      "run_budget": 2,
-      "stable_skip": 1
-    },
-    "cycle": {
-      "basis": "scheduled_close_cursor",
-      "apply_ready_count": 205,
-      "candidate_counts": {
-        "confirmed_proposal": 0,
-        "guarded_retry": 116,
-        "proof_required": 2,
-        "promotion_total": 639,
-        "promotion_eligible": 89,
-        "promotion_cooldown_eligible": 125,
-        "cooldown_eligible_total": 261,
-        "inconsistent_or_stale": 0
-      },
-      "window_size": 135,
-      "estimated_full_cycle_windows": 2,
-      "estimated_full_cycle_minutes": 30,
-      "scheduled_interval_minutes": 15,
-      "label": "205 currently actionable close candidates (0 confirmed proposals, 116 guarded retries, 89/639 promotion probes admitted; 2 require proof; 261 cooldown-eligible backlog (125 promotions); 0 inconsistent or stale records excluded) at 135 records per latest cursor advance: about 2 windows; scheduled cadence alone would take roughly 30 min at 15-minute intervals, while successful windows can continue sooner."
-    },
-    "attention_reasons": [],
-    "cursor_required": true,
-    "cursor": {
-      "path": "results/apply-cursors/openclaw-openclaw.json",
-      "next_after_number": 103356,
-      "next_after_apply_checked_at": "2026-08-28T11:08:22.063Z",
-      "updated_at": "2026-08-28T11:08:37.803Z"
-    },
-    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33163538740"
-  },
+  "apply_health": null,
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-08-28T11:09:07.792Z",
@@ -231,5 +126,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33163538740"
   },
-  "updated_at": "2026-08-28T11:09:08.446Z"
+  "updated_at": "2026-08-28T11:10:25.739Z"
 }
