@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T02:42:15.511Z",
+  "updated_at": "2026-08-28T02:42:29.308Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131163:5445812744:2026-08-27T22:10:41Z:re_review",
-      "comment_id": "5445812744",
-      "comment_version_key": "5445812744:2026-08-27T22:10:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131163#issuecomment-5445812744",
-      "comment_created_at": "2026-08-27T22:10:41Z",
-      "comment_updated_at": "2026-08-27T22:10:41Z",
-      "comment_body_sha256": "511575b561e17756b7825c905c1885bc91e59d69106eac36220af144dc1f8a65",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131163,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T22:11:22.837Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "giodl/claws-adopt-existing-workspace-rebase",
-        "head_sha": "f2d4714be8bd8d65f6723c770f09213717f8a0c8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131185:5445812761:2026-08-27T22:10:41Z:re_review",
       "comment_id": "5445812761",
@@ -32396,6 +32349,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131386:5447547861:2026-08-28T02:38:45Z:clawsweeper_needs_human",
+      "comment_id": "5447547861",
+      "comment_version_key": "5447547861:2026-08-28T02:38:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131386#issuecomment-5447547861",
+      "comment_created_at": "2026-08-28T02:13:45Z",
+      "comment_updated_at": "2026-08-28T02:38:45Z",
+      "comment_body_sha256": "a9a2efe41ef4b245b475be2596e36afaa0b27e66654fc0bc1d9f3de8462b81f8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131386,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by eight net lines for a one-use recommendation list; it should remain the sole UI definition of that order so it does not turn into a competing channel registry. (sha=d2980e67e1db8b5c185e51fceda23a3d03f73dc1)",
+      "expected_head_sha": "d2980e67e1db8b5c185e51fceda23a3d03f73dc1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T02:42:29.307Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-add-channel-list",
+        "head_sha": "b3a08c2d80ff0ab182e03e4b4054c126f0e93487",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
