@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T16:21:28.621Z",
+  "updated_at": "2026-08-28T16:21:33.116Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130546:5433313532:2026-08-28T10:43:48Z:clawsweeper_needs_human",
-      "comment_id": "5433313532",
-      "comment_version_key": "5433313532:2026-08-28T10:43:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130546#issuecomment-5433313532",
-      "comment_created_at": "2026-08-27T01:47:00Z",
-      "comment_updated_at": "2026-08-28T10:43:48Z",
-      "comment_body_sha256": "93d165bde00f158b0cd6f8c7423f47d36db926e1d48693e6b5eb8ffb043954d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130546,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds 350 net production lines for a new asynchronous lifecycle owner; regressions could leave supplemental sections stale or loading after reconnects despite the focused c... (sha=9441b41b3d0d2b21a0f17a9a3d59507e6fd11eda)",
-      "expected_head_sha": "9441b41b3d0d2b21a0f17a9a3d59507e6fd11eda",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T10:47:39.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-130111",
-        "head_sha": "9441b41b3d0d2b21a0f17a9a3d59507e6fd11eda",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131281:5446801933:2026-08-28T10:45:12Z:clawsweeper_needs_human",
       "comment_id": "5446801933",
@@ -32325,6 +32292,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130579:5454963400:2026-08-28T16:20:41Z:re_review",
+      "comment_id": "5454963400",
+      "comment_version_key": "5454963400:2026-08-28T16:20:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130579#issuecomment-5454963400",
+      "comment_created_at": "2026-08-28T16:20:41Z",
+      "comment_updated_at": "2026-08-28T16:20:41Z",
+      "comment_body_sha256": "9a4d11360cb9bfbe2f6770d598cfc76b7f25b5114176aaed0ea308f532f1d0d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130579,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T16:21:31.065Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "oc-979/cron-codex-exec-canonical-capture",
+        "head_sha": "7a6d056e2bbbf9a03536c364a2b58e132332b475",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
