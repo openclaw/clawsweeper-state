@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T00:52:33.698Z",
+  "updated_at": "2026-08-28T00:53:12.730Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130989:5443940690:2026-08-27T19:05:01Z:re_review",
-      "comment_id": "5443940690",
-      "comment_version_key": "5443940690:2026-08-27T19:05:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130989#issuecomment-5443940690",
-      "comment_created_at": "2026-08-27T19:05:01Z",
-      "comment_updated_at": "2026-08-27T19:05:01Z",
-      "comment_body_sha256": "58e6e989f7a351c779f88e6e8272b3aa1c140f6ad212e1c111d021ab20458d9b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130989,
-      "author": "zw-xysk",
-      "author_id": 294457748,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T19:05:47.071Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/slack-tts-voice",
-        "head_sha": "d3631115ad4574bd7a4fa6ec8864d63570517f83",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3532:5415957601:2026-08-27T19:05:50Z:clawsweeper_needs_human",
       "comment_id": "5415957601",
@@ -32452,6 +32405,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1552:5435321440:2026-08-28T00:37:08Z:clawsweeper_needs_human",
+      "comment_id": "5435321440",
+      "comment_version_key": "5435321440:2026-08-28T00:37:08Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1552#issuecomment-5435321440",
+      "comment_created_at": "2026-08-27T06:39:47Z",
+      "comment_updated_at": "2026-08-28T00:37:08Z",
+      "comment_body_sha256": "1a2560968737cd847fa40000b7013d2ef24ebd4024bc0593a77dfb72bcf7ef6b",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1552,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - For legacy claim scopes whose endpoint contains credentials, fragments, or opaque bytes, newly generated commands intentionally omit the endpoint and require the original private conf... (sha=09e00453706d1b9462ee382c7603f5e5236ff7de)",
+      "expected_head_sha": "09e00453706d1b9462ee382c7603f5e5236ff7de",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T00:53:12.730Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/provider-command-routing",
+        "head_sha": "09e00453706d1b9462ee382c7603f5e5236ff7de",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
