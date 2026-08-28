@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T11:38:57.317Z",
+  "updated_at": "2026-08-28T11:38:57.787Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128803:5448760310:2026-08-28T05:24:47Z:re_review",
-      "comment_id": "5448760310",
-      "comment_version_key": "5448760310:2026-08-28T05:24:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128803#issuecomment-5448760310",
-      "comment_created_at": "2026-08-28T05:19:28Z",
-      "comment_updated_at": "2026-08-28T05:24:47Z",
-      "comment_body_sha256": "2b6cab2c9b827de99f36560304cbf2027e5076195de549bb88863e62e6a92c21",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128803,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T05:25:33.025Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-usage-owner-attribution-128755",
-        "head_sha": "c40992d3f8cd8a64db25302e61bc8aa9929341bc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117128:5448799948:2026-08-28T05:25:28Z:re_review",
       "comment_id": "5448799948",
@@ -32836,6 +32789,39 @@
         "kind": "pull_request",
         "branch": "repro/memory-lancedb-autocapture-cursor-reset",
         "head_sha": "5f7bf261427730e10a64ccc389b32d85b09cb5ca",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131502:5448425746:2026-08-28T11:33:00Z:clawsweeper_needs_human",
+      "comment_id": "5448425746",
+      "comment_version_key": "5448425746:2026-08-28T11:33:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131502#issuecomment-5448425746",
+      "comment_created_at": "2026-08-28T04:25:26Z",
+      "comment_updated_at": "2026-08-28T11:33:00Z",
+      "comment_body_sha256": "de9e47cdb96e4dc60e3ab695fe19ced1a5832b9cd5dc5161fec4a284abb9e58c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131502,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required CI for a350a364e8f188d6d47bb4305bfb67c81748a981 is still incomplete, so merge readiness is not yet established. (sha=a350a364e8f188d6d47bb4305bfb67c81748a981)",
+      "expected_head_sha": "a350a364e8f188d6d47bb4305bfb67c81748a981",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T11:38:57.787Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/jovial-mendel-06df0f",
+        "head_sha": "a350a364e8f188d6d47bb4305bfb67c81748a981",
         "cluster_id": null,
         "job_path": null
       }
