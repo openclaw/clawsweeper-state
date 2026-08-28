@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T16:04:08.501Z",
+  "updated_at": "2026-08-28T16:04:57.107Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130563:5451329165:2026-08-28T10:18:20Z:re_review",
-      "comment_id": "5451329165",
-      "comment_version_key": "5451329165:2026-08-28T10:18:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130563#issuecomment-5451329165",
-      "comment_created_at": "2026-08-28T10:18:20Z",
-      "comment_updated_at": "2026-08-28T10:18:20Z",
-      "comment_body_sha256": "8c5e45b56e1d5ca3537d03dd5b60ccb315d08c550eaf5cf6d69db1c53d2fb6c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130563,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T10:19:06.790Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ocpr/auto-issue-20260826-2",
-        "head_sha": "7338f5b6ec23ecef9ba4aad4e24762f9c7cdd66e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131716:5451345226:2026-08-28T10:20:13Z:clawsweeper_auto_repair",
       "comment_id": "5451345226",
@@ -32316,6 +32269,39 @@
         "kind": "pull_request",
         "branch": "fix/doctor-switch-execstart",
         "head_sha": "278bfd007715f9430f0cb73c40eb0a09e70b8123",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131616:5449856406:2026-08-28T16:04:07Z:clawsweeper_needs_human",
+      "comment_id": "5449856406",
+      "comment_version_key": "5449856406:2026-08-28T16:04:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131616#issuecomment-5449856406",
+      "comment_created_at": "2026-08-28T07:44:43Z",
+      "comment_updated_at": "2026-08-28T16:04:07Z",
+      "comment_body_sha256": "80e2e375a649133f7921793c6477c9392f6a410f8758ecd82af0361426196b5b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131616,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Gateway-mode staging persists sandbox bytes into the managed outbound-media store before remote dispatch; the policy and focused tests cover it, but this is a message-delivery boundar... (sha=e51030d890b5bf3a6a752847f842c50e3aa839a8)",
+      "expected_head_sha": "e51030d890b5bf3a6a752847f842c50e3aa839a8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T16:04:57.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/message-sandbox-bridge-reader-131192",
+        "head_sha": "e51030d890b5bf3a6a752847f842c50e3aa839a8",
         "cluster_id": null,
         "job_path": null
       }
