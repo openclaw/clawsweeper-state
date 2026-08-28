@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T00:28:36.690Z",
+  "updated_at": "2026-08-28T00:28:43.915Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130989:5443263176:2026-08-27T18:08:47Z:re_review",
-      "comment_id": "5443263176",
-      "comment_version_key": "5443263176:2026-08-27T18:08:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130989#issuecomment-5443263176",
-      "comment_created_at": "2026-08-27T18:08:47Z",
-      "comment_updated_at": "2026-08-27T18:08:47Z",
-      "comment_body_sha256": "5fe212832bdbc462a81ac86ccb55df859f386b6790cac684fb6476ef68ab4387",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130989,
-      "author": "zw-xysk",
-      "author_id": 294457748,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T18:09:39.588Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/slack-tts-voice",
-        "head_sha": "75b75b8dd2cae0f7158e3c12386cf24d3d3fa555",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131083:5443262104:2026-08-27T18:08:42Z:clawsweeper_auto_repair",
       "comment_id": "5443262104",
@@ -32635,6 +32588,39 @@
         "kind": "pull_request",
         "branch": "codex/config-reload-self-wait",
         "head_sha": "e55a7483c16f98bc500a471df4217d4611b5e694",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1202:5376517880:2026-08-28T00:27:31Z:clawsweeper_needs_human",
+      "comment_id": "5376517880",
+      "comment_version_key": "5376517880:2026-08-28T00:27:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1202#issuecomment-5376517880",
+      "comment_created_at": "2026-08-21T23:42:21Z",
+      "comment_updated_at": "2026-08-28T00:27:31Z",
+      "comment_body_sha256": "3bedb883d9f53dad65d830e038cf3bce37b90dfd9a21038516e462be6de23659",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1202,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body still names a9ad12cc as its current head, while the reviewed head is 8971907 and includes a follow-up no-retry change plus a main merge; complete exact-head checks and ref... (sha=8971907bf6e4dea8c266b8722befb410a86f30a6)",
+      "expected_head_sha": "8971907bf6e4dea8c266b8722befb410a86f30a6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T00:28:43.915Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "karkarl-auto-recover-missing-wsl",
+        "head_sha": "8971907bf6e4dea8c266b8722befb410a86f30a6",
         "cluster_id": null,
         "job_path": null
       }
