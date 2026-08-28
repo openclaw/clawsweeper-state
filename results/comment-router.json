@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T20:08:16.996Z",
+  "updated_at": "2026-08-28T20:09:42.117Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119516:5454104835:2026-08-28T14:59:40Z:re_review",
-      "comment_id": "5454104835",
-      "comment_version_key": "5454104835:2026-08-28T14:59:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119516#issuecomment-5454104835",
-      "comment_created_at": "2026-08-28T14:59:40Z",
-      "comment_updated_at": "2026-08-28T14:59:40Z",
-      "comment_body_sha256": "67b36bd7f8586410405e4c77656125fd264ae86f5d8d2540ac68881cd14c63d8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119516,
-      "author": "zyw02",
-      "author_id": 59604424,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T15:10:14.508Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "auto/issue-119515",
-        "head_sha": "03504a162d6b495e1f4a5840d442e5c9be3c556d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131715:5451280282:2026-08-28T15:09:18Z:clawsweeper_needs_human",
       "comment_id": "5451280282",
@@ -32704,6 +32657,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-tui-retained-finals",
         "head_sha": "c128b7cd08c7143dec39730f4a4de3701c8015dc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131646:5450396014:2026-08-28T20:08:53Z:clawsweeper_needs_human",
+      "comment_id": "5450396014",
+      "comment_version_key": "5450396014:2026-08-28T20:08:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131646#issuecomment-5450396014",
+      "comment_created_at": "2026-08-28T08:44:10Z",
+      "comment_updated_at": "2026-08-28T20:08:53Z",
+      "comment_body_sha256": "eef862259f01ab8e7dfbe094f9d5757d35091997c6f1ded8996f9eddab078d4d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131646,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is incomplete and one compact check is failed in the supplied snapshot; no logs establish that it is caused by this patch, but required checks must resolve before landin... (sha=11d918e04a974d131c5e20674e0f43f122cf1d38)",
+      "expected_head_sha": "11d918e04a974d131c5e20674e0f43f122cf1d38",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T20:09:42.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-agent-handoff-copy",
+        "head_sha": "11d918e04a974d131c5e20674e0f43f122cf1d38",
         "cluster_id": null,
         "job_path": null
       }
