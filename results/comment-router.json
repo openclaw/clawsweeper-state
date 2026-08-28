@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T19:52:09.135Z",
+  "updated_at": "2026-08-28T19:52:44.660Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121309:5454002391:2026-08-28T14:50:15Z:re_review",
-      "comment_id": "5454002391",
-      "comment_version_key": "5454002391:2026-08-28T14:50:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121309#issuecomment-5454002391",
-      "comment_created_at": "2026-08-28T14:50:15Z",
-      "comment_updated_at": "2026-08-28T14:50:15Z",
-      "comment_body_sha256": "29b045ecf84e82d89e4b16eb85f78e7c942468353601ae4e2568ba95f7be4f46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121309,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T14:51:09.491Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "prep/delete-cleanup-completion-receipts",
-        "head_sha": "29e1fbeeb10bd51fbb295006a585e9274e2bef29",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131810:5453702396:2026-08-28T14:50:44Z:clawsweeper_needs_human",
       "comment_id": "5453702396",
@@ -32602,6 +32555,39 @@
       "status": "skipped",
       "processed_at": "2026-08-28T19:52:09.135Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131503:5448434448:2026-08-28T19:51:46Z:clawsweeper_needs_human",
+      "comment_id": "5448434448",
+      "comment_version_key": "5448434448:2026-08-28T19:51:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131503#issuecomment-5448434448",
+      "comment_created_at": "2026-08-28T04:26:54Z",
+      "comment_updated_at": "2026-08-28T19:51:46Z",
+      "comment_body_sha256": "2836a545574fe20290da924ac56de39033e4b0581e0efbb1d74941e6816d5ddb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131503,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main persists the scoped registryIndex, while this branch re-resolves an index after the lease; because the PR is conflicted, merging without reconciliation could restore dive... (sha=90c98048af7221706512c2987d1fa2e3007b8ef2)",
+      "expected_head_sha": "90c98048af7221706512c2987d1fa2e3007b8ef2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T19:52:44.660Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cli-startup-preparation-a0c9da",
+        "head_sha": "90c98048af7221706512c2987d1fa2e3007b8ef2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
