@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T13:14:02.673Z",
+  "updated_at": "2026-08-28T13:16:44.122Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131465:5448066094:2026-08-28T07:27:26Z:clawsweeper_needs_human",
-      "comment_id": "5448066094",
-      "comment_version_key": "5448066094:2026-08-28T07:27:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131465#issuecomment-5448066094",
-      "comment_created_at": "2026-08-28T03:33:36Z",
-      "comment_updated_at": "2026-08-28T07:27:26Z",
-      "comment_body_sha256": "87eabd9840255423908bb78da491ccbe1948cbac4601b12b8a3a52478e6a6261",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131465,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact hosted success evidence is for this child on its open parent; after the parent lands, the retargeted main-based head still needs hosted OpenShell E2E and exact-head CI verif... (sha=c2b5d4180e0be705bd495f94f66523564ee1bc01)",
-      "expected_head_sha": "c2b5d4180e0be705bd495f94f66523564ee1bc01",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T07:33:42.543Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/openshell-fixture-bootstrap",
-        "head_sha": "c2b5d4180e0be705bd495f94f66523564ee1bc01",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:99556:5449523210:2026-08-28T07:06:29Z:re_review",
       "comment_id": "5449523210",
@@ -33019,6 +32986,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131043:5442772867:2026-08-28T13:15:30Z:clawsweeper_needs_human",
+      "comment_id": "5442772867",
+      "comment_version_key": "5442772867:2026-08-28T13:15:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131043#issuecomment-5442772867",
+      "comment_created_at": "2026-08-27T17:26:59Z",
+      "comment_updated_at": "2026-08-28T13:15:30Z",
+      "comment_body_sha256": "9dd93ee2f939d8a712158e06946f2f3509687922b791901f20abd42df5b0260d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131043,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Independently verify the newly executed toolchain** - The changed lockfile introduces pnpm 12 and native executables that run during CI, Docker builds, and source bootstrap; local sourc...; Review finding: [low] Independently verify the newly executed toolchain — pnpm-lock.yaml:1 (sha=6fec2bca44e5701f460ca331c0b5dc6bd5b52397)",
+      "expected_head_sha": "6fec2bca44e5701f460ca331c0b5dc6bd5b52397",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T13:16:44.122Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/pnpm-12-migration-cleanup-6945f8",
+        "head_sha": "6fec2bca44e5701f460ca331c0b5dc6bd5b52397",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
