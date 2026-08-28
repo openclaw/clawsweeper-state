@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T13:17:27.662Z",
+  "updated_at": "2026-08-28T13:20:29.652Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:54:4863981862:2026-08-28T07:32:38Z:clawsweeper_needs_human",
-      "comment_id": "4863981862",
-      "comment_version_key": "4863981862:2026-08-28T07:32:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/54#issuecomment-4863981862",
-      "comment_created_at": "2026-07-02T08:58:29Z",
-      "comment_updated_at": "2026-08-28T07:32:38Z",
-      "comment_body_sha256": "0427a2ecd365751b7eccf60c9429815ad876f93c6c1c11f6033a38e537e596af",
-      "repo": "openclaw/openclaw-ansible",
-      "issue_number": 54,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Sufficient (terminal): The PR body provides redacted after-fix terminal output from real Ansible execution against a disposable Linux Tailscale-compatible setup, with observed recover...; Review finding: [P1] Preserve existing Tailscale preferences during reconnect — roles/openclaw/tasks/tailscale-linux.yml:77 - [P2] Enable Tailscale for documented auth-key-only se... (sha=9948e6c685f860e38911c3426b2dbea9191f4bee)",
-      "expected_head_sha": "9948e6c685f860e38911c3426b2dbea9191f4bee",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T07:33:49.948Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tailscale-authkey-auto-connect",
-        "head_sha": "9948e6c685f860e38911c3426b2dbea9191f4bee",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99556:4876928065:2026-08-28T07:30:53Z:clawsweeper_needs_human",
       "comment_id": "4876928065",
@@ -33005,6 +32972,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1280:5453016441:2026-08-28T13:19:32Z:re_review",
+      "comment_id": "5453016441",
+      "comment_version_key": "5453016441:2026-08-28T13:19:32Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1280#issuecomment-5453016441",
+      "comment_created_at": "2026-08-28T13:19:32Z",
+      "comment_updated_at": "2026-08-28T13:19:32Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1280,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T13:20:26.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/remove-automatic-live-proof",
+        "head_sha": "aeccb97a2fac48a3cf270fcb90d4df84b6dedf5b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
