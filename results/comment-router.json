@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T19:19:57.466Z",
+  "updated_at": "2026-08-28T19:20:17.515Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128748:5453532672:2026-08-28T14:09:17Z:re_review",
-      "comment_id": "5453532672",
-      "comment_version_key": "5453532672:2026-08-28T14:09:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128748#issuecomment-5453532672",
-      "comment_created_at": "2026-08-28T14:09:17Z",
-      "comment_updated_at": "2026-08-28T14:09:17Z",
-      "comment_body_sha256": "c5343084867abeacc76f1ebb0ebced0fe574cc94f96b48ebf5e7f100372fce84",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128748,
-      "author": "Synthetic2802",
-      "author_id": 45599846,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T14:09:58.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-file-change-after-hook-current",
-        "head_sha": "81d3f66aab572c414582ad10a5734ca649260cf4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131409:5447679911:2026-08-28T14:09:18Z:clawsweeper_needs_human",
       "comment_id": "5447679911",
@@ -32621,6 +32574,39 @@
         "kind": "pull_request",
         "branch": "codex/msteams-multi-account-replacement-20260722",
         "head_sha": "509eb2c127c6ca95ea60cf50fa51095998c9c21c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131946:5455626927:2026-08-28T19:19:24Z:clawsweeper_needs_human",
+      "comment_id": "5455626927",
+      "comment_version_key": "5455626927:2026-08-28T19:19:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131946#issuecomment-5455626927",
+      "comment_created_at": "2026-08-28T17:26:37Z",
+      "comment_updated_at": "2026-08-28T19:19:24Z",
+      "comment_body_sha256": "46e901137674549aca65f66c9033de6f8fa7b99ce5e272db4410aedb004128d5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131946,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Two exact-head checks remain in progress; do not merge until the current head reaches terminal green, although the available status does not indicate a diff-caused failure. (sha=742930a8239ddb68f8d4cf1d4cee29ad7427fdf6)",
+      "expected_head_sha": "742930a8239ddb68f8d4cf1d4cee29ad7427fdf6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T19:20:17.515Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/frosty-wilson-adef68",
+        "head_sha": "742930a8239ddb68f8d4cf1d4cee29ad7427fdf6",
         "cluster_id": null,
         "job_path": null
       }
