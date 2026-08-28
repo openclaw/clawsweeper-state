@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T23:55:57.831Z",
+  "updated_at": "2026-08-28T23:56:07.992Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Kova:100:5457008659:2026-08-28T19:42:45Z:clawsweeper_needs_human",
-      "comment_id": "5457008659",
-      "comment_version_key": "5457008659:2026-08-28T19:42:45Z",
-      "comment_url": "https://github.com/openclaw/Kova/pull/100#issuecomment-5457008659",
-      "comment_created_at": "2026-08-28T19:42:45Z",
-      "comment_updated_at": "2026-08-28T19:42:45Z",
-      "comment_body_sha256": "27836c30546ff75459bcf548248f747b382242d2fcdbf22eb94354c90468f34d",
-      "repo": "openclaw/Kova",
-      "issue_number": 100,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Publication must wait for the squash-merged main SHA to pass the exact-main CI gate; successful PR-head checks do not replace that release safeguard. (sha=b345d0e8b385897a2d1a08abc6e2e286cd57cbff)",
-      "expected_head_sha": "b345d0e8b385897a2d1a08abc6e2e286cd57cbff",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T19:43:38.913Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/v0.1.2",
-        "head_sha": "b345d0e8b385897a2d1a08abc6e2e286cd57cbff",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131704:5451013150:2026-08-28T19:43:41Z:clawsweeper_auto_repair",
       "comment_id": "5451013150",
@@ -33167,6 +33134,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131750:5458974429:2026-08-28T23:55:26Z:re_review",
+      "comment_id": "5458974429",
+      "comment_version_key": "5458974429:2026-08-28T23:55:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131750#issuecomment-5458974429",
+      "comment_created_at": "2026-08-28T23:55:26Z",
+      "comment_updated_at": "2026-08-28T23:55:26Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131750,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T23:56:06.199Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-131708-webchat-textarea-redo",
+        "head_sha": "0f273b611377e5b8eb13b3b93fcd577cbbeb0e6f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
