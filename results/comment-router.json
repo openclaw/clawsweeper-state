@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T23:54:06.615Z",
+  "updated_at": "2026-08-28T23:54:32.152Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132024:5456853692:2026-08-28T19:26:01Z:re_review",
-      "comment_id": "5456853692",
-      "comment_version_key": "5456853692:2026-08-28T19:26:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132024#issuecomment-5456853692",
-      "comment_created_at": "2026-08-28T19:26:01Z",
-      "comment_updated_at": "2026-08-28T19:26:01Z",
-      "comment_body_sha256": "8df72eaf33de1708efd4776135daff414b1f73a66fee745eafbf87eddd258822",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132024,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T19:42:22.862Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mobile-transcript-grouping-refresh",
-        "head_sha": "7a5572b0531c8f162d8521c5ab3c9567bb3f0f07",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131764:5452766213:2026-08-28T19:41:40Z:clawsweeper_needs_human",
       "comment_id": "5452766213",
@@ -33192,6 +33145,39 @@
         "kind": "pull_request",
         "branch": "steipete/pnpm-12-migration-cleanup-6945f8",
         "head_sha": "ebe6fc14fbe3791f72a9e14325d934f978a6a3fb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132216:5458965697:2026-08-28T23:53:48Z:clawsweeper_needs_human",
+      "comment_id": "5458965697",
+      "comment_version_key": "5458965697:2026-08-28T23:53:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132216#issuecomment-5458965697",
+      "comment_created_at": "2026-08-28T23:53:48Z",
+      "comment_updated_at": "2026-08-28T23:53:48Z",
+      "comment_body_sha256": "49e8e0e9f3e69de0ebcdb6725534086c862651e6e831e5f4e6e67eb97f245184",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132216,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied context omits the body of the newest ClawSweeper comment, so its possible rank-up moves should be checked before landing. (sha=eed2fcfa2e551d2a1eed203d6043a654819c85eb)",
+      "expected_head_sha": "eed2fcfa2e551d2a1eed203d6043a654819c85eb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T23:54:32.152Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-unique-anthropic-job",
+        "head_sha": "eed2fcfa2e551d2a1eed203d6043a654819c85eb",
         "cluster_id": null,
         "job_path": null
       }
