@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T14:06:36.346Z",
+  "updated_at": "2026-08-28T14:07:30.837Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130798:5436261529:2026-08-28T05:58:03Z:clawsweeper_needs_human",
-      "comment_id": "5436261529",
-      "comment_version_key": "5436261529:2026-08-28T05:58:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130798#issuecomment-5436261529",
-      "comment_created_at": "2026-08-27T08:11:48Z",
-      "comment_updated_at": "2026-08-28T05:58:03Z",
-      "comment_body_sha256": "23bf765be33a60f3225d69b9a53c8cbd577ecbdb8dbdcc6e3f8fcbe3092c8123",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130798,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The external PR provides mocked transport and state tests, but no redacted after-fix Slack create-to-vote tally result from a real setup. After...; Review finding: [P1] Preserve the final send-authority check for poll posts — extensions/slack/src/outbound-adapter.ts:430-446 - [P2] Order tally publication with the per-poll mut... (sha=33cdd75f225cf060b93083b11b6df152786262bb)",
-      "expected_head_sha": "33cdd75f225cf060b93083b11b6df152786262bb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T08:08:31.578Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/slack-polls",
-        "head_sha": "33cdd75f225cf060b93083b11b6df152786262bb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130877:5437893744:2026-08-28T07:40:22Z:clawsweeper_needs_human",
       "comment_id": "5437893744",
@@ -32721,6 +32688,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130563:5453503112:2026-08-28T14:06:40Z:re_review",
+      "comment_id": "5453503112",
+      "comment_version_key": "5453503112:2026-08-28T14:06:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130563#issuecomment-5453503112",
+      "comment_created_at": "2026-08-28T14:06:40Z",
+      "comment_updated_at": "2026-08-28T14:06:40Z",
+      "comment_body_sha256": "a3d2dbed3dbb4c07855f791aae10187f6102a34d41238d7d89a04a77f69703ae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130563,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T14:07:26.249Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ocpr/auto-issue-20260826-2",
+        "head_sha": "5ff752e3798ead1024246f1a4b079220d61511a3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
