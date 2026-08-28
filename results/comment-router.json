@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T21:10:29.750Z",
+  "updated_at": "2026-08-28T21:10:45.960Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118084:5159560923:2026-08-28T12:54:05Z:clawsweeper_needs_human",
-      "comment_id": "5159560923",
-      "comment_version_key": "5159560923:2026-08-28T12:54:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118084#issuecomment-5159560923",
-      "comment_created_at": "2026-08-02T17:40:11Z",
-      "comment_updated_at": "2026-08-28T12:54:05Z",
-      "comment_body_sha256": "f6948b48c216910d27da4cb3f19f4c0fe156962b64ab24ff06446c241dbebae6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118084,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch conflicts with current main; resolving it without preserving the newer shared-store, cooldown, retirement, and native-CLI coverage would weaken a security-sensitive regress... (sha=89884fd2ea5aa5c48fbc3be5ef9cb7d63770089f)",
-      "expected_head_sha": "89884fd2ea5aa5c48fbc3be5ef9cb7d63770089f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T16:32:39.513Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/goal100k-model-auth-fixture-wave17-2d45",
-        "head_sha": "89884fd2ea5aa5c48fbc3be5ef9cb7d63770089f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118094:5159623620:2026-08-28T12:54:39Z:clawsweeper_auto_repair",
       "comment_id": "5159623620",
@@ -32935,6 +32902,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132096:5457701076:2026-08-28T21:09:44Z:clawsweeper_auto_repair",
+      "comment_id": "5457701076",
+      "comment_version_key": "5457701076:2026-08-28T21:09:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132096#issuecomment-5457701076",
+      "comment_created_at": "2026-08-28T20:59:52Z",
+      "comment_updated_at": "2026-08-28T21:09:44Z",
+      "comment_body_sha256": "91d1bccd79aef8c0bef4967987cbe228edeeacefaa25e64e5db93f4f94a4eda0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132096,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=security-review sha=c9d43ab3e1a1bfb3d1c291eb1612b893831a0209)",
+      "expected_head_sha": "c9d43ab3e1a1bfb3d1c291eb1612b893831a0209",
+      "finding_id": "security-review",
+      "status": "executed",
+      "processed_at": "2026-08-28T21:10:30.897Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-mcp-app-sandbox",
+        "head_sha": "c9d43ab3e1a1bfb3d1c291eb1612b893831a0209",
+        "cluster_id": "automerge-openclaw-openclaw-132096",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-132096.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-132096.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
