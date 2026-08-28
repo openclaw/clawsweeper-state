@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-86050",
+  "mode": "autonomous",
+  "run_id": "33196594366",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33196594366",
+  "head_sha": "566889b0dc5a0756e8ad7d2a36402e8ea84ac175",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-86050.md",
+  "published_at": "2026-08-28T18:09:31.643Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/86050",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/86050",
+  "canonical_pr": null,
+  "summary": "#86050 remains a source-reproducible Claude CLI streaming bug on checked-out main b5acb499: agent-mode Claude uses the Anthropic Agent SDK, which emits partial assistant records into the generic JSONL parser; that parser only accepts nested stream_event text deltas. Local implementation and validation are blocked because this worker filesystem is read-only and dependencies are absent; pnpm install fails with EROFS and the required Vitest retry cannot resolve tsx.",
+  "actions": [
+    {
+      "target": "#86050",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#86050",
+      "candidate_fix": null,
+      "reason": "A narrow implementation is appropriate, but this worker cannot write the repair branch or run validation in the read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-86050",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#86050",
+      "candidate_fix": null,
+      "reason": "Produce one new, narrow credited-by-history fix PR from clawsweeper/issue-openclaw-openclaw-86050 once a writable checkout with dependencies is available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-86050",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#86050",
+      "candidate_fix": null,
+      "reason": "Implementation, branch validation, and PR creation require a writable executor checkout with dependencies."
+    },
+    {
+      "target": "#86649",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#86050",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation is permitted."
+    },
+    {
+      "target": "#95404",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed and independently resolved."
+    },
+    {
+      "target": "#95422",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#95404",
+      "reason": "Already closed and outside this Claude CLI repair cluster."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
