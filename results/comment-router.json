@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T14:22:32.871Z",
+  "updated_at": "2026-08-28T14:22:58.771Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131638:5450123701:2026-08-28T08:14:47Z:clawsweeper_needs_human",
-      "comment_id": "5450123701",
-      "comment_version_key": "5450123701:2026-08-28T08:14:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131638#issuecomment-5450123701",
-      "comment_created_at": "2026-08-28T08:14:47Z",
-      "comment_updated_at": "2026-08-28T08:14:47Z",
-      "comment_body_sha256": "359e44b37f4d8afc60eb8a756445e2c7d2a1af5e2ec42c2f7721656fd25f8ae1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131638,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local strict check could not run because this read-only checkout lacks tsx; rely on the linked locale-refresh run and completion of exact-head CI before merge. (sha=d58888a997d9642c0e92f563832cb12a104fdcc1)",
-      "expected_head_sha": "d58888a997d9642c0e92f563832cb12a104fdcc1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T08:15:45.440Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/control-ui-locale-refresh",
-        "head_sha": "d58888a997d9642c0e92f563832cb12a104fdcc1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131632:5450123423:2026-08-28T08:14:45Z:clawsweeper_needs_human",
       "comment_id": "5450123423",
@@ -32750,6 +32717,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131805:5453681285:2026-08-28T14:22:08Z:clawsweeper_auto_repair",
+      "comment_id": "5453681285",
+      "comment_version_key": "5453681285:2026-08-28T14:22:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131805#issuecomment-5453681285",
+      "comment_created_at": "2026-08-28T14:22:08Z",
+      "comment_updated_at": "2026-08-28T14:22:08Z",
+      "comment_body_sha256": "21e04cba2ebec7adc058c408fab98237e154df27573bc1e36aa8b9025e383823",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131805,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a84188c87120574c4997ea0e918885f528d43a72)",
+      "expected_head_sha": "a84188c87120574c4997ea0e918885f528d43a72",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T14:22:58.771Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/86174-explicit-default-selection",
+        "head_sha": "a84188c87120574c4997ea0e918885f528d43a72",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
