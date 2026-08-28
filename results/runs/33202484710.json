@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131954",
+  "mode": "autonomous",
+  "run_id": "33202484710",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33202484710",
+  "head_sha": "3a094723aa362ff8efc89805a48d900f1e3ec573",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131954.md",
+  "published_at": "2026-08-28T19:34:30.460Z",
+  "canonical": "#131954",
+  "canonical_issue": "#131954",
+  "canonical_pr": null,
+  "summary": "#131954 remains the open canonical bug. A narrow repair path is identified, but no branch, code change, or test run could be produced: the mandatory sibling ../codex checkout is absent and this read-only environment cannot clone it; pnpm also fails before execution with EROFS creating Corepack cache state.",
+  "actions": [
+    {
+      "target": "#131954",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131954",
+      "candidate_fix": null,
+      "reason": "The implementation needs a writable runner with the required sibling Codex checkout before the mandated real-handler regression can be added and run."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
