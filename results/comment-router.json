@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T21:14:24.360Z",
+  "updated_at": "2026-08-28T21:14:48.661Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121733:5246568034:2026-08-28T13:13:24Z:clawsweeper_auto_repair",
-      "comment_id": "5246568034",
-      "comment_version_key": "5246568034:2026-08-28T13:13:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121733#issuecomment-5246568034",
-      "comment_created_at": "2026-08-10T22:05:51Z",
-      "comment_updated_at": "2026-08-28T13:13:24Z",
-      "comment_body_sha256": "bb1bedd60a49584fa6cf944ef92fdfc3c56bbcf144d2c3e4ef620ed9c44b34f3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121733,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=60784fd8dd558d7347709074abe2d95d856e76e7)",
-      "expected_head_sha": "60784fd8dd558d7347709074abe2d95d856e76e7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T16:32:39.513Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/oauth-refresh-lifecycle-cas",
-        "head_sha": "60784fd8dd558d7347709074abe2d95d856e76e7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121871:5249495446:2026-08-28T13:50:06Z:clawsweeper_needs_human",
       "comment_id": "5249495446",
@@ -32949,6 +32916,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1257:5457825389:2026-08-28T21:14:08Z:freeform_assist",
+      "comment_id": "5457825389",
+      "comment_version_key": "5457825389:2026-08-28T21:14:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1257#issuecomment-5457825389",
+      "comment_created_at": "2026-08-28T21:14:08Z",
+      "comment_updated_at": "2026-08-28T21:14:08Z",
+      "comment_body_sha256": "25d7d088cab0afb325610a2f78cce4c75175bcfa06b499232020220d4ca9fce7",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1257,
+      "author": "shanselman",
+      "author_id": 2892,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "automerge`n`nspecial instructions:`nall exact-head ci checks and independent opus/codex reviews are green at f9d4b4cf. merge with squash after re-verifying the head. this maintainer session cannot merge workflow changes because its oauth token lacks workflow scope; do not modify or drop the workflow file.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T21:14:46.894Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "shanselman-define-windows-proof-pools",
+        "head_sha": "f9d4b4cfb25a838595b2a6e21d3efc94337a8887",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
