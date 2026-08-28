@@ -2,60 +2,59 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-131491"
 mode: "autonomous"
-run_id: "33140420201"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33140420201"
-head_sha: "9bad4750e84b4666c0b5e616d0f8c7f191744496"
-workflow_conclusion: "failure"
+run_id: "33148139995"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33148139995"
+head_sha: "af8f89fe69e1e35009591a640c55d12a4a083cf9"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-28T04:42:48.162Z"
-canonical: "https://github.com/openclaw/openclaw/issues/131491"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/131491"
+published_at: "2026-08-28T06:42:40.043Z"
+canonical: "#131491"
+canonical_issue: "#131491"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-131491
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33140420201](https://github.com/openclaw/clawsweeper/actions/runs/33140420201)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33148139995](https://github.com/openclaw/clawsweeper/actions/runs/33148139995)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/131491
+Canonical: #131491
 
 ## Summary
 
-The canonical issue remains a source-proven, narrow bug, but implementation is blocked: the mandatory sibling ../codex checkout is absent and the read-only worker cannot create it; focused validation also cannot initialize Corepack because its cache directory is read-only. A narrow fix artifact is provided for a writable, policy-compliant executor.
+No implementation PR is justified: current main already retains a default announce one-shot whose delivery is skipped solely for staleness. The requested default-path regression would pass on main, not fail. The remaining explicit bestEffort case is a distinct policy/contract decision, outside this bug-only job. No writes were possible in this read-only worker environment.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #131491 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,9 +66,8 @@ The canonical issue remains a source-proven, narrow bug, but implementation is b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #131491 | fix_needed | blocked | canonical | Implementation must first satisfy the repository's mandatory direct ../codex source inspection and run the focused reproduction in a writable package-manager environment. |
-| cluster:issue-openclaw-openclaw-131491 | build_fix_artifact | planned | canonical | Prepare the narrow canonical repair for execution once the environmental policy gates are available. |
+| #131491 | keep_canonical | blocked | canonical | The reported default announce behavior is already repaired on current main; adding its requested regression would not reproduce a failure. |
 
 ## Needs Human
 
-- none
+- Decide whether a stale delivery must override an explicitly configured delivery.bestEffort=true success/deletion contract. That is a distinct behavior-policy change; it cannot be justified as the reported default-path regression.

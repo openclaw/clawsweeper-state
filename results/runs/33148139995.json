@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131491",
+  "mode": "autonomous",
+  "run_id": "33148139995",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33148139995",
+  "head_sha": "af8f89fe69e1e35009591a640c55d12a4a083cf9",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131491.md",
+  "published_at": "2026-08-28T06:42:40.043Z",
+  "canonical": "#131491",
+  "canonical_issue": "#131491",
+  "canonical_pr": null,
+  "summary": "No implementation PR is justified: current main already retains a default announce one-shot whose delivery is skipped solely for staleness. The requested default-path regression would pass on main, not fail. The remaining explicit bestEffort case is a distinct policy/contract decision, outside this bug-only job. No writes were possible in this read-only worker environment.",
+  "actions": [
+    {
+      "target": "#131491",
+      "action": "keep_canonical",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131491",
+      "candidate_fix": null,
+      "reason": "The reported default announce behavior is already repaired on current main; adding its requested regression would not reproduce a failure."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Decide whether a stale delivery must override an explicitly configured delivery.bestEffort=true success/deletion contract. That is a distinct behavior-policy change; it cannot be justified as the reported default-path regression."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
