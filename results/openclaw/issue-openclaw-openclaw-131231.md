@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-131231"
 mode: "autonomous"
-run_id: "33131214099"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33131214099"
-head_sha: "6230a9d7c8b4bb103a6872de63add3f7e3b77701"
-workflow_conclusion: "success"
+run_id: "33129852314"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33129852314"
+head_sha: "0b3a1250880149a6945df6edb0d41091f03a11cc"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-28T01:12:56.372Z"
-canonical: "#131231"
-canonical_issue: "#131231"
+published_at: "2026-08-28T04:02:59.188Z"
+canonical: "https://github.com/openclaw/openclaw/issues/131231"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/131231"
 canonical_pr: null
-actions_total: 4
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-131231
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33131214099](https://github.com/openclaw/clawsweeper/actions/runs/33131214099)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33129852314](https://github.com/openclaw/clawsweeper/actions/runs/33129852314)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #131231
+Canonical: https://github.com/openclaw/openclaw/issues/131231
 
 ## Summary
 
-#131231 remains the canonical open bug. Current main at 903d6666 normalizes a descriptor lacking `value` into a field without `value` (extensions/browser/src/browser/form-fields.ts:35-41); managed Playwright and existing-session Chrome MCP then coerce it to an empty string (extensions/browser/src/browser/pw-tools-core.interactions.actions.ts:319-336; extensions/browser/src/browser/routes/agent.act.ts:651-660). A narrow new fix PR is appropriate, but this worker cannot edit or validate: filesystem is read-only, node_modules is absent, the focused Vitest command fails because `tsx` is unavailable, and required sibling ../codex source is unavailable for the Codex gate.
+#131231 is a real canonical bug on main 4ef9446d: the shared normalizer admits a descriptor without `value`, then both managed Playwright and existing-session Chrome MCP coerce it to an empty fill. A narrow shared-boundary fix is planned, but this worker cannot implement or validate it: the checkout is read-only, dependencies lack `tsx`, and mandatory sibling `../codex` source is absent.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,13 @@ Canonical: #131231
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #131231 | keep_canonical | planned | canonical | The linked browser items are closed, adjacent, and concern dependency availability, broader features, or auth; none covers malformed fill descriptors. |
-| #131231 | fix_needed | blocked | canonical | Repair is source-proven but cannot be applied or verified in this read-only, dependency-free checkout. |
-| #131231 | build_fix_artifact | planned | canonical | A new PR is allowed by the job and is the narrowest repair path. |
-| #131231 | open_fix_pr | blocked | canonical | Blocked until a writable worker with dependencies and the required ../codex checkout executes the artifact. |
+| #131231 | fix_needed | blocked | canonical | Implementation is blocked only by the unavailable writable/dependency-ready environment and mandatory Codex-source gate; no product or security decision remains. |
+| #44431 | keep_closed | skipped | related | Already closed; no action permitted or needed. |
+| #50644 | keep_closed | skipped | independent | Already closed; no action permitted or needed. |
+| #54023 | keep_closed | skipped | independent | Already closed; no action permitted or needed. |
+| #70193 | keep_closed | skipped | independent | Already closed; no action permitted or needed. |
+| cluster:issue-openclaw-openclaw-131231 | build_fix_artifact | planned | canonical | One narrow new fix PR is appropriate once deterministic execution prerequisites are available. |
 
 ## Needs Human
 
-- Provide a writable repair runner with dependencies installed and sibling ../codex source available; then apply the artifact, demonstrate the regression fails before the patch, and run the listed focused validation.
+- none

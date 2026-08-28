@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131231",
+  "mode": "autonomous",
+  "run_id": "33129852314",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33129852314",
+  "head_sha": "0b3a1250880149a6945df6edb0d41091f03a11cc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131231.md",
+  "published_at": "2026-08-28T04:02:59.188Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131231",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131231",
+  "canonical_pr": null,
+  "summary": "#131231 is a real canonical bug on main 4ef9446d: the shared normalizer admits a descriptor without `value`, then both managed Playwright and existing-session Chrome MCP coerce it to an empty fill. A narrow shared-boundary fix is planned, but this worker cannot implement or validate it: the checkout is read-only, dependencies lack `tsx`, and mandatory sibling `../codex` source is absent.",
+  "actions": [
+    {
+      "target": "#131231",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131231",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the unavailable writable/dependency-ready environment and mandatory Codex-source gate; no product or security decision remains."
+    },
+    {
+      "target": "#44431",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#131231",
+      "candidate_fix": null,
+      "reason": "Already closed; no action permitted or needed."
+    },
+    {
+      "target": "#50644",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no action permitted or needed."
+    },
+    {
+      "target": "#54023",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no action permitted or needed."
+    },
+    {
+      "target": "#70193",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no action permitted or needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131231",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131231",
+      "candidate_fix": null,
+      "reason": "One narrow new fix PR is appropriate once deterministic execution prerequisites are available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 4,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
