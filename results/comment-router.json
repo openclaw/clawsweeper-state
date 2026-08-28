@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T08:22:13.872Z",
+  "updated_at": "2026-08-28T08:22:14.840Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123416:5448051925:2026-08-28T03:31:18Z:re_review",
-      "comment_id": "5448051925",
-      "comment_version_key": "5448051925:2026-08-28T03:31:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123416#issuecomment-5448051925",
-      "comment_created_at": "2026-08-28T03:31:18Z",
-      "comment_updated_at": "2026-08-28T03:31:18Z",
-      "comment_body_sha256": "02095a3f60bc4dbecde4a2d202ec87fa6ac6b848ceffc04004b383fcc8137fe9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123416,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — round 7 on head 665ce34e264 (rebased on current main): the default-startup fallback now forwards the plan env (the last unthreaded activation decision), with a real-state two-root plan regression that fails without it. the single caller-environment flow is complete across all activation surfaces",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T04:00:02.451Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/123297-compat-activation-gate",
-        "head_sha": "665ce34e264b1fa976d7d2bd782176f3b87aac16",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123416:5289014423:2026-08-28T03:56:32Z:clawsweeper_needs_human",
       "comment_id": "5289014423",
@@ -32180,6 +32133,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-wiki-lint-vault-wide-links",
         "head_sha": "fef4a4cb4a092a598fc4b3a532859ad3e86745d7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131582:5449302639:2026-08-28T08:20:04Z:clawsweeper_needs_human",
+      "comment_id": "5449302639",
+      "comment_version_key": "5449302639:2026-08-28T08:20:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131582#issuecomment-5449302639",
+      "comment_created_at": "2026-08-28T06:38:20Z",
+      "comment_updated_at": "2026-08-28T08:20:04Z",
+      "comment_body_sha256": "0aab331dcbd9342931e924221e509326bc55b2fffb624bfc832323165316be07",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131582,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: ClawSweeper live verification failed on the reviewed terminal surface. After adding proof, update the PR body; ClawSweeper should re-r... (sha=20f0afff125dc5db4f3d60f616ff55ce5bcdcc56)",
+      "expected_head_sha": "20f0afff125dc5db4f3d60f616ff55ce5bcdcc56",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T08:22:14.840Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-worktree-branch-naming-for-pr-9535738d9993",
+        "head_sha": "5baa2da1e3dad30c1bc208e1f28085371c870d9a",
         "cluster_id": null,
         "job_path": null
       }
