@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T16:55:12.863Z",
+  "updated_at": "2026-08-28T16:56:46.712Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131387:5452044588:2026-08-28T11:37:10Z:re_review",
-      "comment_id": "5452044588",
-      "comment_version_key": "5452044588:2026-08-28T11:37:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131387#issuecomment-5452044588",
-      "comment_created_at": "2026-08-28T11:37:10Z",
-      "comment_updated_at": "2026-08-28T11:37:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131387,
-      "author": "aspalagin",
-      "author_id": 263096044,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T11:47:45.293Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/thread-session-model-override-isolation",
-        "head_sha": "40bb3b8690bdb85f50ebe5059dc6ee827c26865c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131387:5447512086:2026-08-28T11:46:50Z:clawsweeper_needs_human",
       "comment_id": "5447512086",
@@ -32423,6 +32376,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131904:5455323751:2026-08-28T16:55:58Z:clawsweeper_needs_human",
+      "comment_id": "5455323751",
+      "comment_version_key": "5455323751:2026-08-28T16:55:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131904#issuecomment-5455323751",
+      "comment_created_at": "2026-08-28T16:55:58Z",
+      "comment_updated_at": "2026-08-28T16:55:58Z",
+      "comment_body_sha256": "33b3ed40e21b7a9514d682b44cc7b40a55ee17cf47234a79619a6e3d0e73396e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131904,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is incomplete: one compact lane reports failure and other lanes remain in progress; no available failure log establishes a patch-caused defect. (sha=4c20d34623a62a336bf2e77c9a63cb5da29369f6)",
+      "expected_head_sha": "4c20d34623a62a336bf2e77c9a63cb5da29369f6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T16:56:46.712Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workshop-review-capabilities-04b48b",
+        "head_sha": "4c20d34623a62a336bf2e77c9a63cb5da29369f6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
