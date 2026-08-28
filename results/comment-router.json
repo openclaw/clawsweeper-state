@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T23:53:45.897Z",
+  "updated_at": "2026-08-28T23:53:49.893Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131740:5451916507:2026-08-28T19:38:47Z:clawsweeper_needs_human",
-      "comment_id": "5451916507",
-      "comment_version_key": "5451916507:2026-08-28T19:38:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131740#issuecomment-5451916507",
-      "comment_created_at": "2026-08-28T11:23:15Z",
-      "comment_updated_at": "2026-08-28T19:38:47Z",
-      "comment_body_sha256": "6d83fc3e7412526d39971f6216df2c5228433b970ee2455a4b8499d73eae0c24",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131740,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Fail closed when GitHub omits a source patch (P1)** - patch // \"\" makes an omitted patch indistinguishable from an empty diff. For a monitored non-test source file that is not one of the unconditional filename t...; Review finding: [P1] Fail closed when GitHub omits a source patch — .github/workflows/codeql-critical-quality.yml:456-468 - [medium] Omitted patches bypass network CodeQL — .githu... (sha=b4d3f9dc44068d4558f187c4abe9b3ca2be42354)",
-      "expected_head_sha": "b4d3f9dc44068d4558f187c4abe9b3ca2be42354",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T19:40:05.189Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/kind-vaughan-6d9a27",
-        "head_sha": "b4d3f9dc44068d4558f187c4abe9b3ca2be42354",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3512:5381521199:2026-08-28T19:41:15Z:clawsweeper_needs_human",
       "comment_id": "5381521199",
@@ -33181,6 +33148,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132032:5458962005:2026-08-28T23:53:11Z:re_review",
+      "comment_id": "5458962005",
+      "comment_version_key": "5458962005:2026-08-28T23:53:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132032#issuecomment-5458962005",
+      "comment_created_at": "2026-08-28T23:53:11Z",
+      "comment_updated_at": "2026-08-28T23:53:11Z",
+      "comment_body_sha256": "7223c1f8d518b72974a1e69fe164c98361df012ab70ee89a97fb20a1424fe370",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132032,
+      "author": "pengzh1",
+      "author_id": 24854675,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T23:53:47.359Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/requester-settle-wake-dedup",
+        "head_sha": "b282ac4494c497fb9ec1ee53db73e7ed2c5150dd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
