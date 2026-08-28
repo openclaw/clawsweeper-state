@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T04:22:01.682Z",
+  "updated_at": "2026-08-28T04:22:07.871Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130894:5439250844:2026-08-27T13:47:31Z:clawsweeper_auto_repair",
-      "comment_id": "5439250844",
-      "comment_version_key": "5439250844:2026-08-27T13:47:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130894#issuecomment-5439250844",
-      "comment_created_at": "2026-08-27T12:38:41Z",
-      "comment_updated_at": "2026-08-27T13:47:31Z",
-      "comment_body_sha256": "6f2f65d07746cdbf3c41c570328e76b0fb36c23bc463814c88bca53004edc38a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130894,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9476f3a2198279beec985e941f32fb722aa57e8c)",
-      "expected_head_sha": "9476f3a2198279beec985e941f32fb722aa57e8c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T23:53:32.350Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/legacyNpmSpecs",
-        "head_sha": "9476f3a2198279beec985e941f32fb722aa57e8c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130901:5439625495:2026-08-27T13:42:24Z:clawsweeper_needs_human",
       "comment_id": "5439625495",
@@ -32356,6 +32323,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131383:5448386499:2026-08-28T04:21:13Z:re_review",
+      "comment_id": "5448386499",
+      "comment_version_key": "5448386499:2026-08-28T04:21:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131383#issuecomment-5448386499",
+      "comment_created_at": "2026-08-28T04:21:13Z",
+      "comment_updated_at": "2026-08-28T04:21:13Z",
+      "comment_body_sha256": "03a7e69a2d1f6f280536b2aad2ac70ae888edc8eb25b15ca8c9f99b07352b941",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131383,
+      "author": "zenglingbiao",
+      "author_id": 290951975,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — addressed the p1 finding: applymemoryfilerewrite now re-checks the planned preimage before rename (sibling beforerename parity), preserves the parent dir mode, and falls back to the sibling's checked, restore-on-failure writeexistingmemoryinplace on temp-replacement permission errors; added the focused fixture (writable file + parent rejecting temp replacement) in memory-forget-atomic-write.test.ts. also fixed the check-lint and changed-extensions-config ci failures by re-pointing the fault-injection tests at fs.open (fs-safe 0.5.6 writes the temp blob via open + filehandle.writefile). merged current main (new head 7b657d3c7fb); screenshot proof + transcripts on proof-assets-20260828, embedded in the pr body",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T04:22:05.376Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-forget-atomic-rewrite",
+        "head_sha": "7b657d3c7fb10d5165a0dd5883402ca0d772492a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
