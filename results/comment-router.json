@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T01:24:17.315Z",
+  "updated_at": "2026-08-28T01:25:00.126Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131128:5444276177:2026-08-27T19:35:21Z:clawsweeper_needs_human",
-      "comment_id": "5444276177",
-      "comment_version_key": "5444276177:2026-08-27T19:35:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131128#issuecomment-5444276177",
-      "comment_created_at": "2026-08-27T19:35:21Z",
-      "comment_updated_at": "2026-08-27T19:35:21Z",
-      "comment_body_sha256": "cfbe8375030f129d7bb5cc052c2f5f9427b6382c124616de58d5e0aef6625e58",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131128,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Two new channel settings and two account overrides intentionally change future group-join behavior for existing Matrix and LINE setups. (sha=e05ebf3f70d637403bee9eb5bcd048e82f5a3304)",
-      "expected_head_sha": "e05ebf3f70d637403bee9eb5bcd048e82f5a3304",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T19:36:51.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/matrix-line-join-intros",
-        "head_sha": "e05ebf3f70d637403bee9eb5bcd048e82f5a3304",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125091:5312575174:2026-08-27T19:28:36Z:clawsweeper_auto_repair",
       "comment_id": "5312575174",
@@ -32312,6 +32279,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1271:5447217921:2026-08-28T01:24:11Z:re_review",
+      "comment_id": "5447217921",
+      "comment_version_key": "5447217921:2026-08-28T01:24:11Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1271#issuecomment-5447217921",
+      "comment_created_at": "2026-08-28T01:24:11Z",
+      "comment_updated_at": "2026-08-28T01:24:11Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1271,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T01:24:58.549Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/proof-gate-integrity",
+        "head_sha": "a82d922c7a2efdb2f404c15384616362c1abeebe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
