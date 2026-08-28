@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-131711"
 mode: "autonomous"
-run_id: "33170852106"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33170852106"
-head_sha: "a4592a03e194228fc66b57bc4ad64deb11fb444b"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-28T13:53:29.917Z"
-canonical: "https://github.com/openclaw/openclaw/issues/131711"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/131711"
+run_id: "33180780863"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33180780863"
+head_sha: "f72ea010c1d7fd134b1bd0826b3a707778c312bc"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-28T14:59:28.462Z"
+canonical: "#131711"
+canonical_issue: "#131711"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33170852106](https://github.com/openclaw/clawsweeper/actions/runs/33170852106)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33180780863](https://github.com/openclaw/clawsweeper/actions/runs/33180780863)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/131711
+Canonical: #131711
 
 ## Summary
 
-#131711 remains a real, narrow agent-run abortability bug on main. The embedded queue handle defaults to abortable after the reply operation has frozen cancellation, allowing chat.abort to persist a completed reply as an aborted partial. Plan one new focused PR; no merge or closure is authorized.
+Current main still has the narrow abortability gap, but this read-only worker cannot create the required branch/test changes or complete required validation. A focused replacement fix artifact is ready for #131711.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/131711
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #131711 | fix_needed | planned | canonical | Use the existing reply-operation abort-signal predicate at the embedded handle factory; no new state, config, schema, or public API is needed. |
-| #110922 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| cluster:issue-openclaw-openclaw-131711 | build_fix_artifact | planned | canonical | Create one narrow credited ClawSweeper implementation PR from clawsweeper/issue-openclaw-openclaw-131711. |
+| #131711 | fix_needed | blocked | canonical | A stopped/finalizing embedded handle remains abortable through the Gateway bridge. Creating and validating the repair is blocked by the supplied read-only environment, missing dependencies, and unavailable required Codex source checkout. |
 
 ## Needs Human
 
