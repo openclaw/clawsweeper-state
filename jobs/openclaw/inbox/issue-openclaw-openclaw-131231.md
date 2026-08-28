@@ -67,22 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the browser fill descriptor validation for this issue. At the shared `extensions/browser/src/browser/form-fields.ts` boundary, reject descriptors with unsupported keys or no own canonical `value` property before CLI or /act dispatch; do not add a `text` alias or any configuration. Preserve deliberate explicit clearing only through a documented canonical value. Add behavior-focused regressions for the /act normalizer and CLI parser proving `{ref, text}` fails before Playwright and Chrome MCP I/O, while documented valid descriptors still work. Run the focused browser tests, stop if this requires a new API/config/product-policy choice, and include user-visible release-note context in the PR body rather than editing CHANGELOG.md.
+Repair the browser fill validation defect in https://github.com/openclaw/openclaw/issues/131231. At the shared form-field validation boundary, reject every descriptor that lacks a valid documented `value` instead of normalizing it into an empty-value action; do not add a `text` alias, config option, fallback, or driver-specific workaround. Cover managed Playwright and existing-session Chrome MCP dispatch through the common route, and keep CLI `browser fill` validation aligned. Add a regression that fails before the repair for `{ref:"e1",text:"Neo Benchmark"}` and proves no browser fill is dispatched on rejection. Do not edit release-owned CHANGELOG.md; record concise user-visible release context in the PR body.
 
 Likely files:
 
 - extensions/browser/src/browser/form-fields.ts
 - extensions/browser/src/browser/routes/agent.act.normalize.ts
 - extensions/browser/src/browser/routes/agent.act.normalize.test.ts
+- extensions/browser/src/browser/server.agent-contract-form-layout-act-commands.test.ts
 - extensions/browser/src/cli/browser-cli-actions-input/shared.ts
 - extensions/browser/src/cli/browser-cli-actions-input/shared.test.ts
 
 Validation:
 
-- pnpm test extensions/browser/src/browser/routes/agent.act.normalize.test.ts
-- pnpm test extensions/browser/src/cli/browser-cli-actions-input/shared.test.ts
-- pnpm test extensions/browser/src/cli/browser-cli-actions-input/register.form-wait-eval.test.ts
-- pnpm test extensions/browser/src/browser/server.agent-contract-form-layout-act-commands.test.ts
+- node scripts/run-vitest.mjs run --config test/vitest/vitest.extension-browser.config.ts extensions/browser/src/browser/routes/agent.act.normalize.test.ts extensions/browser/src/browser/server.agent-contract-form-layout-act-commands.test.ts extensions/browser/src/cli/browser-cli-actions-input/shared.test.ts
 
 ## Operator Prompt
 
