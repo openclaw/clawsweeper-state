@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T18:58:55.118Z",
+  "updated_at": "2026-08-28T18:59:10.956Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121073:5232119345:2026-08-28T13:50:06Z:clawsweeper_needs_human",
-      "comment_id": "5232119345",
-      "comment_version_key": "5232119345:2026-08-28T13:50:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121073#issuecomment-5232119345",
-      "comment_created_at": "2026-08-09T14:51:01Z",
-      "comment_updated_at": "2026-08-28T13:50:06Z",
-      "comment_body_sha256": "f7b2950d9cd40af30df34cfaef8ce8287c65b871cfd7afa7586e7b64cfea54d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121073,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repair adds 59 net production lines; that is justified by retaining an otherwise-lost origin fact across the corpus boundary and in-memory cooldown, but it is still a maintenance-... (sha=ae0d72a77244be3f0dd932aaacd4b15e8cde8a0f)",
-      "expected_head_sha": "ae0d72a77244be3f0dd932aaacd4b15e8cde8a0f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T13:55:56.317Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-timeout-reported-as-provider-error",
-        "head_sha": "ae0d72a77244be3f0dd932aaacd4b15e8cde8a0f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121073:5252436645:2026-08-11T11:18:01Z:re_review",
       "comment_id": "5252436645",
@@ -32456,6 +32423,39 @@
       "status": "skipped",
       "processed_at": "2026-08-28T18:58:55.118Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:116:5456543466:2026-08-28T18:58:28Z:clawsweeper_needs_human",
+      "comment_id": "5456543466",
+      "comment_version_key": "5456543466:2026-08-28T18:58:28Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/116#issuecomment-5456543466",
+      "comment_created_at": "2026-08-28T18:58:28Z",
+      "comment_updated_at": "2026-08-28T18:58:28Z",
+      "comment_body_sha256": "67f4a12a2fd3791fe8fc914cf9e922fa7b15858b6c964af8ffa34391cb62dac8",
+      "repo": "openclaw/ocm",
+      "issue_number": 116,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - A supported supervisor that needs more than five seconds to publish a restarted child will now make snapshot creation return an error after the snapshot is created, so the timeout sho... (sha=11d1f182c99e555287ee5f9a082fa71f4fa74cf6)",
+      "expected_head_sha": "11d1f182c99e555287ee5f9a082fa71f4fa74cf6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T18:59:10.956Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-snapshot-sibling-service-preservation",
+        "head_sha": "11d1f182c99e555287ee5f9a082fa71f4fa74cf6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
