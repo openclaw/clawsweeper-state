@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T05:10:27.183Z",
+  "updated_at": "2026-08-28T05:10:29.305Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122513:5446636062:2026-08-27T23:58:49Z:re_review",
-      "comment_id": "5446636062",
-      "comment_version_key": "5446636062:2026-08-27T23:58:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122513#issuecomment-5446636062",
-      "comment_created_at": "2026-08-27T23:58:49Z",
-      "comment_updated_at": "2026-08-27T23:58:49Z",
-      "comment_body_sha256": "6941117890e37660325437deef463f125da100a79e283b7240f490c00589e392",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122513,
-      "author": "harjothkhara",
-      "author_id": 48686985,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T00:29:59.214Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-call-repair-quadratic-protection-parse",
-        "head_sha": "2a5299922be6c46ff1b0ed3fd4cfcca59ca56926",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122513:5263563850:2026-08-28T00:26:23Z:clawsweeper_needs_human",
       "comment_id": "5263563850",
@@ -32095,6 +32048,39 @@
         "kind": "pull_request",
         "branch": "steipete/gateway-reload-receipt-handoff",
         "head_sha": "93e62f33d7ac753821f440410024d04739c0dca2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131121:5444487446:2026-08-28T05:04:05Z:clawsweeper_needs_human",
+      "comment_id": "5444487446",
+      "comment_version_key": "5444487446:2026-08-28T05:04:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131121#issuecomment-5444487446",
+      "comment_created_at": "2026-08-27T19:55:00Z",
+      "comment_updated_at": "2026-08-28T05:04:05Z",
+      "comment_body_sha256": "0194c881e2badbf1b5d79e6447adad3b7f58af592742c6551510bcf4a34163eb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131121,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A 50,000-entry default intentionally evicts cache rows on upgraded installations whose active working set exceeds that bound; subsequent syncs may re-embed evicted rows and incur prov... (sha=ea600e323dd276c191f6b91c8178ec240338e505)",
+      "expected_head_sha": "ea600e323dd276c191f6b91c8178ec240338e505",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T05:10:29.305Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-embedding-cache-default-cap",
+        "head_sha": "ea600e323dd276c191f6b91c8178ec240338e505",
         "cluster_id": null,
         "job_path": null
       }
