@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T21:40:07.031Z",
+  "updated_at": "2026-08-28T21:41:02.294Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131604:5455132245:2026-08-28T16:36:19Z:re_review",
-      "comment_id": "5455132245",
-      "comment_version_key": "5455132245:2026-08-28T16:36:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131604#issuecomment-5455132245",
-      "comment_created_at": "2026-08-28T16:36:19Z",
-      "comment_updated_at": "2026-08-28T16:36:19Z",
-      "comment_body_sha256": "e9b11c3393da67f8943852213174730421dd564aa78e7024f53e0af8568d158f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131604,
-      "author": "michielhdoteth",
-      "author_id": 97935846,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review after addressing all three cycles of findings",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T16:37:12.516Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-117741-atomic-append",
-        "head_sha": "93f447fa6e58f4c8513467400d31c0abb6216839",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130575:5433327868:2026-08-28T16:36:40Z:clawsweeper_needs_human",
       "comment_id": "5433327868",
@@ -33059,6 +33012,39 @@
         "kind": "pull_request",
         "branch": "fix/talk-current-run-authority",
         "head_sha": "8f0db2201ab34e799134d1e6046860be0beec195",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132125:5458047424:2026-08-28T21:40:17Z:clawsweeper_needs_human",
+      "comment_id": "5458047424",
+      "comment_version_key": "5458047424:2026-08-28T21:40:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132125#issuecomment-5458047424",
+      "comment_created_at": "2026-08-28T21:40:17Z",
+      "comment_updated_at": "2026-08-28T21:40:17Z",
+      "comment_body_sha256": "eaca5bc1d246a47d7bb2d5a80a7ca8f36513b265dfd50305f6beb1d11993873e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132125,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Direct inspection of the pinned tsdown/Rolldown minification contract was unavailable because this checkout has no dependencies and network access could not reach GitHub; exact-head b... (sha=c7be701ca906b91df0617abebcfab400507aded3)",
+      "expected_head_sha": "c7be701ca906b91df0617abebcfab400507aded3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T21:41:02.294Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/minify-worker-deploy",
+        "head_sha": "c7be701ca906b91df0617abebcfab400507aded3",
         "cluster_id": null,
         "job_path": null
       }
