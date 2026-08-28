@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T12:59:55.080Z",
+  "updated_at": "2026-08-28T13:00:11.266Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131609:5449720493:2026-08-28T07:29:47Z:clawsweeper_needs_human",
-      "comment_id": "5449720493",
-      "comment_version_key": "5449720493:2026-08-28T07:29:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131609#issuecomment-5449720493",
-      "comment_created_at": "2026-08-28T07:29:47Z",
-      "comment_updated_at": "2026-08-28T07:29:47Z",
-      "comment_body_sha256": "db9a6617835c451a50dbe52312bf7a6c47fef36eac129e00ce7a4bed567d1884",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131609,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes durable queue settlement and retry decisions; supplied exact-head checks are skipped and this read-only review did not execute the focused live/recovery tests. (sha=b2f835c8c1a4e95bbbf9d5ed5e563bb3b3bc4d1b)",
-      "expected_head_sha": "b2f835c8c1a4e95bbbf9d5ed5e563bb3b3bc4d1b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T07:32:02.642Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/delivery-uncertainty-cluster",
-        "head_sha": "b2f835c8c1a4e95bbbf9d5ed5e563bb3b3bc4d1b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131333:5447122802:2026-08-28T07:28:24Z:clawsweeper_auto_repair",
       "comment_id": "5447122802",
@@ -32905,6 +32872,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131717:5451289644:2026-08-28T12:54:57Z:clawsweeper_needs_human",
+      "comment_id": "5451289644",
+      "comment_version_key": "5451289644:2026-08-28T12:54:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131717#issuecomment-5451289644",
+      "comment_created_at": "2026-08-28T10:13:52Z",
+      "comment_updated_at": "2026-08-28T12:54:57Z",
+      "comment_body_sha256": "043cff0df114df578acd04bb017675acbb8b22f3698de80d46214e52b1b59a76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131717,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the pinned Codex stdio lifecycle directly** - The new node process launch executes the pinned Codex binary and depends on its one-connection stdio behavior; the required sibling...; Review finding: [medium] Verify the pinned Codex stdio lifecycle directly — extensions/codex/src/node-exec-server.runtime.ts:212 (sha=f3ed06598853b59cdd40ba6f37b4e7ce070a68dc)",
+      "expected_head_sha": "f3ed06598853b59cdd40ba6f37b4e7ce070a68dc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T13:00:11.266Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/claw-node-session-setup-6be983",
+        "head_sha": "f3ed06598853b59cdd40ba6f37b4e7ce070a68dc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
