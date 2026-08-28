@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T00:38:52.881Z",
+  "updated_at": "2026-08-28T00:40:12.082Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1562:5443781253:2026-08-27T18:50:52Z:re_review",
-      "comment_id": "5443781253",
-      "comment_version_key": "5443781253:2026-08-27T18:50:52Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1562#issuecomment-5443781253",
-      "comment_created_at": "2026-08-27T18:50:52Z",
-      "comment_updated_at": "2026-08-27T18:50:52Z",
-      "comment_body_sha256": "c7b81a0029a24d7cc5d5ed91c5ab657a2bde9709f5326069609600cd42d0cd2c",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1562,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T18:51:32.182Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/daytona-stop-claim-retention",
-        "head_sha": "e6b4576d9fdaee3b50be346d2e208127d4422f0a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1562:5443681678:2026-08-27T18:43:00Z:clawsweeper_needs_human",
       "comment_id": "5443681678",
@@ -32463,6 +32416,39 @@
         "kind": "pull_request",
         "branch": "fix/auth-paste-subagent-breaks-main-env",
         "head_sha": "0f7928f7a6268008da74dae757231db3812b98a4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131313:5446921116:2026-08-28T00:39:22Z:clawsweeper_needs_human",
+      "comment_id": "5446921116",
+      "comment_version_key": "5446921116:2026-08-28T00:39:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131313#issuecomment-5446921116",
+      "comment_created_at": "2026-08-28T00:39:22Z",
+      "comment_updated_at": "2026-08-28T00:39:22Z",
+      "comment_body_sha256": "e27550695691b19b159d76c36d2a937276570dd7df00a1b6400a5747ad904e1e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131313,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is incomplete, with one compact Node check failed and many checks still in progress; inspect and resolve the final check state before landing. (sha=833284b0d9a8ceecc3cecbe362a4acee933775fb)",
+      "expected_head_sha": "833284b0d9a8ceecc3cecbe362a4acee933775fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T00:40:12.082Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/magical-wu-3eeea8",
+        "head_sha": "833284b0d9a8ceecc3cecbe362a4acee933775fb",
         "cluster_id": null,
         "job_path": null
       }
