@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T16:00:47.467Z",
+  "updated_at": "2026-08-28T16:01:13.383Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131539:5451158943:2026-08-28T10:00:44Z:re_review",
-      "comment_id": "5451158943",
-      "comment_version_key": "5451158943:2026-08-28T10:00:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131539#issuecomment-5451158943",
-      "comment_created_at": "2026-08-28T10:00:44Z",
-      "comment_updated_at": "2026-08-28T10:00:44Z",
-      "comment_body_sha256": "0d027c3151c7d07f1cf8b7aeeec45cd5b48eab47c3f5637c2fcd2927585f1799",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131539,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T10:01:33.479Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/musing-jemison-53ecda",
-        "head_sha": "8ccdd7eb5b0ad89c5bd0674a593e106e26101cf3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131681:5450755675:2026-08-28T09:57:58Z:clawsweeper_needs_human",
       "comment_id": "5450755675",
@@ -32395,6 +32348,39 @@
       "status": "skipped",
       "processed_at": "2026-08-28T16:00:47.467Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131869:5454751196:2026-08-28T16:00:15Z:clawsweeper_needs_human",
+      "comment_id": "5454751196",
+      "comment_version_key": "5454751196:2026-08-28T16:00:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131869#issuecomment-5454751196",
+      "comment_created_at": "2026-08-28T16:00:15Z",
+      "comment_updated_at": "2026-08-28T16:00:15Z",
+      "comment_body_sha256": "6bfd72693ee07148574aa8a8d7109343973afaac713f822b63cf2b41e9b022fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131869,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +53 lines for a bug fix; the message-scoped state appears justified, but its implementation should be kept canonical rather than adding a parallel replacement p... (sha=59e44c27146889e1c6dcd397423dbeeacdccd705)",
+      "expected_head_sha": "59e44c27146889e1c6dcd397423dbeeacdccd705",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T16:01:13.383Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/nice-lamarr-fef0a7",
+        "head_sha": "59e44c27146889e1c6dcd397423dbeeacdccd705",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
