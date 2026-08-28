@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T22:29:37.589Z",
+  "updated_at": "2026-08-28T22:30:00.052Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129402:5417844729:2026-08-25T22:41:25Z:re_review",
-      "comment_id": "5417844729",
-      "comment_version_key": "5417844729:2026-08-25T22:41:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129402#issuecomment-5417844729",
-      "comment_created_at": "2026-08-25T22:41:25Z",
-      "comment_updated_at": "2026-08-25T22:41:25Z",
-      "comment_body_sha256": "9757e87b883ba2f52e4ac4b74eaad0ea2f49a86c963509c8ab82b7e0f9e2a325",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129402,
-      "author": "ashawwal",
-      "author_id": 62305104,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T17:45:18.510Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129402:5420065126:2026-08-26T03:15:18Z:re_review",
       "comment_id": "5420065126",
@@ -32660,6 +32633,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132054:5457059431:2026-08-28T22:29:16Z:clawsweeper_needs_human",
+      "comment_id": "5457059431",
+      "comment_version_key": "5457059431:2026-08-28T22:29:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132054#issuecomment-5457059431",
+      "comment_created_at": "2026-08-28T19:48:25Z",
+      "comment_updated_at": "2026-08-28T22:29:16Z",
+      "comment_body_sha256": "551a35a82f0722afea78d7b068cf97e74f9042d0db9bd70789961ab16d175a31",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132054,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Codex active-turn change depends on the installed @openai/codex steering contract, but this review environment could not inspect the required sibling source; a maintainer should v... (sha=732285142ead93614cde9b73dd6c2fd58a2db82c)",
+      "expected_head_sha": "732285142ead93614cde9b73dd6c2fd58a2db82c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T22:30:00.052Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/cross-session-messaging-viz-9c8f83",
+        "head_sha": "732285142ead93614cde9b73dd6c2fd58a2db82c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
