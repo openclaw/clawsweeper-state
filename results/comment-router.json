@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T16:38:49.395Z",
+  "updated_at": "2026-08-28T16:38:59.520Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131727:5451763208:2026-08-28T11:08:18Z:re_review",
-      "comment_id": "5451763208",
-      "comment_version_key": "5451763208:2026-08-28T11:08:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131727#issuecomment-5451763208",
-      "comment_created_at": "2026-08-28T11:08:18Z",
-      "comment_updated_at": "2026-08-28T11:08:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131727,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T11:33:58.754Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/windows-upgrade-timing-evidence",
-        "head_sha": "f8dad4fcc344e9039010e2eb8cd9fffd2553fa25",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131727:5451577713:2026-08-28T11:32:22Z:clawsweeper_needs_human",
       "comment_id": "5451577713",
@@ -32442,6 +32395,39 @@
         "kind": "pull_request",
         "branch": "fix/preseeded-bootstrap-91931",
         "head_sha": "ec111843c85aca500efb3b8132b62032bd86b613",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-28T16:38:03Z:clawsweeper_needs_human",
+      "comment_id": "5365906478",
+      "comment_version_key": "5365906478:2026-08-28T16:38:03Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5365906478",
+      "comment_created_at": "2026-08-21T06:12:29Z",
+      "comment_updated_at": "2026-08-28T16:38:03Z",
+      "comment_body_sha256": "21cbb6df861f7383c87460b961425c60ace3269f4496de1f7003c8c19deb275a",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3501,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Before the dependent detector PR is deployed, maintainers must confirm both indexes are ready and that its deployment removes the staged flags before querying them. (sha=bd01f13aa001714b63ec48748df5db7f3d1227f9)",
+      "expected_head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T16:38:59.520Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/stage-signal-indexes",
+        "head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
         "cluster_id": null,
         "job_path": null
       }
