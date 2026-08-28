@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T05:49:45.045Z",
+  "updated_at": "2026-08-28T05:49:51.692Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131276:5447507951:2026-08-28T02:07:31Z:re_review",
-      "comment_id": "5447507951",
-      "comment_version_key": "5447507951:2026-08-28T02:07:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131276#issuecomment-5447507951",
-      "comment_created_at": "2026-08-28T02:07:31Z",
-      "comment_updated_at": "2026-08-28T02:07:31Z",
-      "comment_body_sha256": "cbb3408ba587e9d546171c5ba5d0bba578dccd5e4634d0a5bf9ca247df1052e0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131276,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T02:08:22.475Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/openclaw-migration-stress-testing-43a217",
-        "head_sha": "e3887beb8da8099b316633a32c2937ccd706b91a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1271:5447513214:2026-08-28T02:08:19Z:re_review",
       "comment_id": "5447513214",
@@ -32150,6 +32103,39 @@
         "kind": "pull_request",
         "branch": "codex/browser-session-credential-steward-mvp-repair",
         "head_sha": "f751f0b74910eea497e80fec4dc9469540760800",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Kova:95:5388677225:2026-08-28T05:49:16Z:clawsweeper_auto_repair",
+      "comment_id": "5388677225",
+      "comment_version_key": "5388677225:2026-08-28T05:49:16Z",
+      "comment_url": "https://github.com/openclaw/Kova/pull/95#issuecomment-5388677225",
+      "comment_created_at": "2026-08-23T21:55:52Z",
+      "comment_updated_at": "2026-08-28T05:49:16Z",
+      "comment_body_sha256": "ae192994dce10d075262f508a720b20d31477fe8d4194d9c2d5fd35583eb9899",
+      "repo": "openclaw/Kova",
+      "issue_number": 95,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b909e045cac8e7276fd32aee680366efb8ce3079)",
+      "expected_head_sha": "b909e045cac8e7276fd32aee680366efb8ce3079",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T05:49:51.692Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/target-identity",
+        "head_sha": "b909e045cac8e7276fd32aee680366efb8ce3079",
         "cluster_id": null,
         "job_path": null
       }
