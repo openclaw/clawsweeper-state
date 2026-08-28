@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T18:00:47.587Z",
+  "updated_at": "2026-08-28T18:02:41.339Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131387:5447512086:2026-08-28T12:15:41Z:clawsweeper_needs_human",
-      "comment_id": "5447512086",
-      "comment_version_key": "5447512086:2026-08-28T12:15:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131387#issuecomment-5447512086",
-      "comment_created_at": "2026-08-28T02:08:08Z",
-      "comment_updated_at": "2026-08-28T12:15:41Z",
-      "comment_body_sha256": "66d1dfe6444e5f4cf8ec1764b170069fddbd60be0e0524cebfbe1edddaa8ee00",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131387,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Telegram DM topics that previously inherited a flat-DM pin will instead select their configured default; that is the intended fix but a compatibility change for active setups. (sha=40bb3b8690bdb85f50ebe5059dc6ee827c26865c)",
-      "expected_head_sha": "40bb3b8690bdb85f50ebe5059dc6ee827c26865c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T12:18:53.596Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/thread-session-model-override-isolation",
-        "head_sha": "40bb3b8690bdb85f50ebe5059dc6ee827c26865c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3512:5381521199:2026-08-28T12:18:13Z:clawsweeper_needs_human",
       "comment_id": "5381521199",
@@ -32563,6 +32530,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131955:5455641806:2026-08-28T18:01:46Z:clawsweeper_needs_human",
+      "comment_id": "5455641806",
+      "comment_version_key": "5455641806:2026-08-28T18:01:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131955#issuecomment-5455641806",
+      "comment_created_at": "2026-08-28T17:28:09Z",
+      "comment_updated_at": "2026-08-28T18:01:46Z",
+      "comment_body_sha256": "f74d310c2bf6f11d768dc46c827456f290527a0a1fba97637fecb960f8374106",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131955,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes a formerly successful but unusable local-file request into INVALID_REQUEST; maintainers should confirm that API compatibility change before landing. (sha=b04c40b0e836b2d57a793314508f7a1179db6082)",
+      "expected_head_sha": "b04c40b0e836b2d57a793314508f7a1179db6082",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T18:02:41.339Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/validate-session-root-directory-type-v2",
+        "head_sha": "b04c40b0e836b2d57a793314508f7a1179db6082",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
