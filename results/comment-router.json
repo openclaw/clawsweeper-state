@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T10:39:12.042Z",
+  "updated_at": "2026-08-28T10:41:16.160Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117432:5448636970:2026-08-28T05:00:03Z:re_review",
-      "comment_id": "5448636970",
-      "comment_version_key": "5448636970:2026-08-28T05:00:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117432#issuecomment-5448636970",
-      "comment_created_at": "2026-08-28T05:00:03Z",
-      "comment_updated_at": "2026-08-28T05:00:03Z",
-      "comment_body_sha256": "9c6f28a2bbebdeb7abcaa8a0f9cb8965f0b1dfcb8030e94d1833d67c0bc87705",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117432,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T05:00:48.159Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/delegated-approval-handoff-116519",
-        "head_sha": "8e4edf83695d3e6341af2dff8cf7014cda70af0e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131498:5448639149:2026-08-28T05:00:23Z:re_review",
       "comment_id": "5448639149",
@@ -32946,6 +32899,39 @@
         "kind": "pull_request",
         "branch": "codex/telegram-userbot-convex",
         "head_sha": "43cc95d26de4dbc5d4bf3487be2c71b5faba6a8c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128176:5385496969:2026-08-28T10:40:32Z:clawsweeper_auto_repair",
+      "comment_id": "5385496969",
+      "comment_version_key": "5385496969:2026-08-28T10:40:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128176#issuecomment-5385496969",
+      "comment_created_at": "2026-08-23T10:20:10Z",
+      "comment_updated_at": "2026-08-28T10:40:32Z",
+      "comment_body_sha256": "f396a2e2a474004c7fa3a803ce5767e6e1472302a8681b677e71adb6300e27db",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128176,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5e0fef75d5ecce485651e724c60d66b3ead8cb3b)",
+      "expected_head_sha": "5e0fef75d5ecce485651e724c60d66b3ead8cb3b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T10:41:16.160Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-current-channel-health",
+        "head_sha": "5e0fef75d5ecce485651e724c60d66b3ead8cb3b",
         "cluster_id": null,
         "job_path": null
       }
