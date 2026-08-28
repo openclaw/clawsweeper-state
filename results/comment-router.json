@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T07:32:11.113Z",
+  "updated_at": "2026-08-28T07:32:11.323Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116046:5447727386:2026-08-28T02:41:17Z:re_review",
-      "comment_id": "5447727386",
-      "comment_version_key": "5447727386:2026-08-28T02:41:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116046#issuecomment-5447727386",
-      "comment_created_at": "2026-08-28T02:41:17Z",
-      "comment_updated_at": "2026-08-28T02:41:17Z",
-      "comment_body_sha256": "348a71b6313f136a0c4f3503315f6df58bfbe78aa829a9ec7010d1ced157070a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116046,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T02:42:13.262Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/camera-snap-prefer-landscape",
-        "head_sha": "3e8e1f74b4e703952a307096ea1436df5cfeb477",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131386:5447547861:2026-08-28T02:38:45Z:clawsweeper_needs_human",
       "comment_id": "5447547861",
@@ -32230,6 +32183,39 @@
         "kind": "pull_request",
         "branch": "fix/claude-sdk-can-use-tool-warning",
         "head_sha": "76d50dfe668742385640c488876384871875c728",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131610:5449732979:2026-08-28T07:31:12Z:clawsweeper_auto_repair",
+      "comment_id": "5449732979",
+      "comment_version_key": "5449732979:2026-08-28T07:31:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131610#issuecomment-5449732979",
+      "comment_created_at": "2026-08-28T07:31:12Z",
+      "comment_updated_at": "2026-08-28T07:31:12Z",
+      "comment_body_sha256": "d3baa4abaf81c396c5bee8e011b6b422cb099c54cb9d180bb3fc214bb810a8ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131610,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3ca8f653c6ccf296858029e1a9267af48e8526cb)",
+      "expected_head_sha": "3ca8f653c6ccf296858029e1a9267af48e8526cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T07:32:11.323Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/131490-cron-oneshot-disable-notify",
+        "head_sha": "3ca8f653c6ccf296858029e1a9267af48e8526cb",
         "cluster_id": null,
         "job_path": null
       }
