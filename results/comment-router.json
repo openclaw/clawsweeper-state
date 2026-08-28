@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T07:22:46.760Z",
+  "updated_at": "2026-08-28T07:22:48.918Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130763:5447709385:2026-08-28T02:38:24Z:re_review",
-      "comment_id": "5447709385",
-      "comment_version_key": "5447709385:2026-08-28T02:38:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130763#issuecomment-5447709385",
-      "comment_created_at": "2026-08-28T02:38:24Z",
-      "comment_updated_at": "2026-08-28T02:38:24Z",
-      "comment_body_sha256": "7d3a2f2000c2396ced431f0fec5af220e8f6384dab0de982dd8302698cda49d9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130763,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T02:39:09.051Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/auth-migration-rotation-state",
-        "head_sha": "20280f51937ae4521b7a20fbe26ee69b1174a135",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131441:5447716310:2026-08-28T02:39:32Z:re_review",
       "comment_id": "5447716310",
@@ -32274,6 +32227,39 @@
         "kind": "pull_request",
         "branch": "fix/131491-stale-delivery-discard",
         "head_sha": "0a3644c615b1832a1b932db92bf60a02d1e05154",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131110:5443777304:2026-08-28T07:15:16Z:clawsweeper_needs_human",
+      "comment_id": "5443777304",
+      "comment_version_key": "5443777304:2026-08-28T07:15:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131110#issuecomment-5443777304",
+      "comment_created_at": "2026-08-27T18:50:30Z",
+      "comment_updated_at": "2026-08-28T07:15:16Z",
+      "comment_body_sha256": "d46f7933d526efb04ca4310103b001c653534e5f9a3c05f5fe4557ea883806bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131110,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The code path is well covered by mocks, but merge should wait for inspectable, redacted evidence from the claimed production handler and real managed-media persistence run. (sha=9128db1add60465ffa9e92c39ff04884ee18a02d)",
+      "expected_head_sha": "9128db1add60465ffa9e92c39ff04884ee18a02d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T07:22:48.918Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-127575-video-output-order",
+        "head_sha": "9128db1add60465ffa9e92c39ff04884ee18a02d",
         "cluster_id": null,
         "job_path": null
       }
