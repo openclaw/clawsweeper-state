@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T23:20:10.396Z",
+  "updated_at": "2026-08-28T23:20:28.274Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127670:5456384493:2026-08-28T18:41:55Z:re_review",
-      "comment_id": "5456384493",
-      "comment_version_key": "5456384493:2026-08-28T18:41:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127670#issuecomment-5456384493",
-      "comment_created_at": "2026-08-28T18:41:55Z",
-      "comment_updated_at": "2026-08-28T18:41:55Z",
-      "comment_body_sha256": "ae3b95478325db76d0263b557027cbd34db13c1e0c1b7d4388cbefe71226989c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127670,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T18:42:46.272Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/control-model-oc1",
-        "head_sha": "0657a56233f1d5b1c8b5e00331ecaae04bba9e37",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131905:5455218425:2026-08-28T18:42:12Z:clawsweeper_needs_human",
       "comment_id": "5455218425",
@@ -33017,6 +32970,39 @@
         "kind": "pull_request",
         "branch": "fix/machine0-uuid-lookup",
         "head_sha": "71545f826dedc84e177e5e20b5c5035d49627f62",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132190:5458763500:2026-08-28T23:19:26Z:clawsweeper_needs_human",
+      "comment_id": "5458763500",
+      "comment_version_key": "5458763500:2026-08-28T23:19:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132190#issuecomment-5458763500",
+      "comment_created_at": "2026-08-28T23:19:26Z",
+      "comment_updated_at": "2026-08-28T23:19:26Z",
+      "comment_body_sha256": "34c7c5dd8b48ea854d17982bac2dbd4ae4d16048d3fddc0131451d5b062160b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132190,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing custom memory-flush plans will stop using softThresholdTokens to trigger required compaction early; that is the documented intended semantics, but a non-default-plan integrat... (sha=917738e14367cdca40ac51d1c1277349d2c94ceb)",
+      "expected_head_sha": "917738e14367cdca40ac51d1c1277349d2c94ceb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T23:20:28.274Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/ollama-compaction-main-79706c",
+        "head_sha": "917738e14367cdca40ac51d1c1277349d2c94ceb",
         "cluster_id": null,
         "job_path": null
       }
