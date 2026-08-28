@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T05:26:11.087Z",
+  "updated_at": "2026-08-28T05:26:33.838Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131331:5447113683:2026-08-28T01:08:48Z:clawsweeper_needs_human",
-      "comment_id": "5447113683",
-      "comment_version_key": "5447113683:2026-08-28T01:08:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131331#issuecomment-5447113683",
-      "comment_created_at": "2026-08-28T01:08:48Z",
-      "comment_updated_at": "2026-08-28T01:08:48Z",
-      "comment_body_sha256": "c9e11987625bc66dd1675191363ea45a029854955615e69e138924ed3399d785",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131331,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes mixed-version behavior: an older process now fails clearly instead of reopening and writing an upgraded or differently owned agent database. (sha=6ff3f90526fc284a763d1dee3749c8e93cb19141)",
-      "expected_head_sha": "6ff3f90526fc284a763d1dee3749c8e93cb19141",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T01:11:21.348Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "shakkernerd/agent-db-reopen-schema-gate",
-        "head_sha": "6ff3f90526fc284a763d1dee3749c8e93cb19141",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131333:5447122802:2026-08-28T01:10:16Z:clawsweeper_auto_repair",
       "comment_id": "5447122802",
@@ -32330,6 +32297,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:49:5448766836:2026-08-28T05:20:29Z:clawsweeper_needs_human",
+      "comment_id": "5448766836",
+      "comment_version_key": "5448766836:2026-08-28T05:20:29Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/49#issuecomment-5448766836",
+      "comment_created_at": "2026-08-28T05:20:29Z",
+      "comment_updated_at": "2026-08-28T05:20:29Z",
+      "comment_body_sha256": "413a3abc7d1b53c52f0d5834b4ec86543cba6e2b0a230f1596246737baef2a50",
+      "repo": "openclaw/clawscan",
+      "issue_number": 49,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Major action upgrades and the changed hf invocation affect release and dataset-publishing paths that normal pull-request checks cannot fully exercise. (sha=11033b352f1a505fe9d5a399f58be9f7306fd52e)",
+      "expected_head_sha": "11033b352f1a505fe9d5a399f58be9f7306fd52e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T05:26:33.838Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deps/update-20260827",
+        "head_sha": "11033b352f1a505fe9d5a399f58be9f7306fd52e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
