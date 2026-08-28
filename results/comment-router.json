@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T01:46:21.350Z",
+  "updated_at": "2026-08-28T01:46:21.825Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114900:5100209225:2026-07-28T05:09:22Z:re_review",
-      "comment_id": "5100209225",
-      "comment_version_key": "5100209225:2026-07-28T05:09:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114900#issuecomment-5100209225",
-      "comment_created_at": "2026-07-28T05:09:22Z",
-      "comment_updated_at": "2026-07-28T05:09:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114900,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T20:00:34.713Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114900:5102457305:2026-07-28T09:38:47Z:re_review",
       "comment_id": "5102457305",
@@ -32264,6 +32237,39 @@
       "status": "skipped",
       "processed_at": "2026-08-28T01:46:21.350Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131272:5446655378:2026-08-28T01:42:35Z:clawsweeper_needs_human",
+      "comment_id": "5446655378",
+      "comment_version_key": "5446655378:2026-08-28T01:42:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131272#issuecomment-5446655378",
+      "comment_created_at": "2026-08-28T00:01:40Z",
+      "comment_updated_at": "2026-08-28T01:42:35Z",
+      "comment_body_sha256": "077e3960a2295680b0bfbf58512375586f15c595f184e9ea3ee53372ff2f98bc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131272,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the supplied tests and UI screenshots do not show a provider-facing initial turn honoring Fast Mode for a write...; Review finding: [medium] Confirm Fast Mode creation authority — src/gateway/session-create-service.ts:1044 (sha=fa09651f153348a9432b5bf3625f878a0ac51757)",
+      "expected_head_sha": "fa09651f153348a9432b5bf3625f878a0ac51757",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T01:46:21.825Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/turn-on-fast-mode",
+        "head_sha": "fa09651f153348a9432b5bf3625f878a0ac51757",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
