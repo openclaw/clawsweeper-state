@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T10:31:46.954Z",
+  "updated_at": "2026-08-28T10:31:50.370Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131174:5448591692:2026-08-28T04:52:39Z:re_review",
-      "comment_id": "5448591692",
-      "comment_version_key": "5448591692:2026-08-28T04:52:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131174#issuecomment-5448591692",
-      "comment_created_at": "2026-08-28T04:52:39Z",
-      "comment_updated_at": "2026-08-28T04:52:39Z",
-      "comment_body_sha256": "64ae96894591f16745a6cac62c7b96de24daa35ca7e76b32cb1e5ad7e7eadd28",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131174,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T04:53:29.238Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/fix-control-ui-final-reconcile-20260827",
-        "head_sha": "df012710a6cf42664f23b98f2c212a82dc046a1c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131540:5448585895:2026-08-28T04:51:43Z:re_review",
       "comment_id": "5448585895",
@@ -33014,6 +32967,39 @@
         "kind": "pull_request",
         "branch": "fix/control-ui-thinking-refresh",
         "head_sha": "f2044e49447fbd1dac67666b55b1760ad05fd240",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131499:5448448273:2026-08-28T10:30:52Z:clawsweeper_needs_human",
+      "comment_id": "5448448273",
+      "comment_version_key": "5448448273:2026-08-28T10:30:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131499#issuecomment-5448448273",
+      "comment_created_at": "2026-08-28T04:29:13Z",
+      "comment_updated_at": "2026-08-28T10:30:52Z",
+      "comment_body_sha256": "717d553585d2038afd257919d1efea524dd096953f9ff1c0480eed60095ca7b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131499,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI remains in progress; merge gating should wait for its completion, though this is not a patch correctness finding. (sha=42b8f95d5cc979dd2dcf8816b59345620368b003)",
+      "expected_head_sha": "42b8f95d5cc979dd2dcf8816b59345620368b003",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T10:31:50.370Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/lobster-resume-failure-id",
+        "head_sha": "42b8f95d5cc979dd2dcf8816b59345620368b003",
         "cluster_id": null,
         "job_path": null
       }
