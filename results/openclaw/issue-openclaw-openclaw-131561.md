@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-131561"
 mode: "autonomous"
-run_id: "33150721394"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33150721394"
-head_sha: "af8f89fe69e1e35009591a640c55d12a4a083cf9"
-workflow_conclusion: "failure"
+run_id: "33163328848"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33163328848"
+head_sha: "d56daf07f0c32a58f28283936dc4568cf5069828"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-28T08:39:58.087Z"
-canonical: "https://github.com/openclaw/openclaw/issues/131561"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/131561"
+published_at: "2026-08-28T10:40:36.450Z"
+canonical: "#131561"
+canonical_issue: "#131561"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33150721394](https://github.com/openclaw/clawsweeper/actions/runs/33150721394)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33163328848](https://github.com/openclaw/clawsweeper/actions/runs/33163328848)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/131561
+Canonical: #131561
 
 ## Summary
 
-#131561 remains the canonical open report. The hydrated artifact source-proves a missed terminal-lifecycle persistence path, but this checkout cannot verify or repair the artifact’s stated main SHA: it contains only unrelated shallow HEAD 3797c383e34918fede75579aad06c080336e7619, not 8d51e415d6a14ae7b6d1023fc9661e4bc1e9c725. The required sibling ../codex source is also absent in this read-only environment. A narrow, non-security repair artifact is ready for an executor with the exact base and Codex source.
+#131561 remains the canonical, source-reproducible Gateway terminal-persistence defect. Latest main stamps terminal pending state but, when async agent-event dispatch is lost, retains neither the terminal event nor a maintenance path that persists it while the controller expiry is still future. A narrow fix should retain the exact terminal lifecycle projection and replay it after grace through persistGatewaySessionLifecycleEvent; no branch or PR was created because this worker sandbox is read-only and the required ../codex checkout is absent.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/131561
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119714 | keep_closed | skipped | related | Historical context only; no closure action is valid for an already-closed issue. |
-| #121756 | keep_closed | skipped | related | Historical related issue; no mutation. |
-| #123192 | keep_closed | skipped | related | Merged historical mitigation; it is not a verified full fix for #131561. |
-| #126850 | keep_related | planned | related | Open, distinct root cause; retain as a related issue. |
-| #131561 | fix_needed | blocked | canonical | Implementation must first obtain the exact preflight main revision and sibling Codex source, then reproduce the lost-handler ordering on that base. |
-| cluster:issue-openclaw-openclaw-131561 | build_fix_artifact | planned | canonical | Create the single issue-linked repair PR after exact-base verification. |
+| #119714 | keep_closed | skipped | related | Already closed; partial historical overlap only. |
+| #121756 | keep_closed | skipped | independent | Already closed and independently resolved. |
+| #123192 | keep_closed | skipped | related | Merged partial predecessor; it does not cover this canonical defect. |
+| #126850 | keep_related | planned | related | Same session-state symptom family, distinct owner boundary and repair. |
+| #131561 | build_fix_artifact | blocked | canonical | Narrow bug-only repair is clear, but implementation and local validation are blocked by the worker environment. |
 
 ## Needs Human
 

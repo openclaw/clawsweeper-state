@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131561",
+  "mode": "autonomous",
+  "run_id": "33163328848",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33163328848",
+  "head_sha": "d56daf07f0c32a58f28283936dc4568cf5069828",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131561.md",
+  "published_at": "2026-08-28T10:40:36.450Z",
+  "canonical": "#131561",
+  "canonical_issue": "#131561",
+  "canonical_pr": null,
+  "summary": "#131561 remains the canonical, source-reproducible Gateway terminal-persistence defect. Latest main stamps terminal pending state but, when async agent-event dispatch is lost, retains neither the terminal event nor a maintenance path that persists it while the controller expiry is still future. A narrow fix should retain the exact terminal lifecycle projection and replay it after grace through persistGatewaySessionLifecycleEvent; no branch or PR was created because this worker sandbox is read-only and the required ../codex checkout is absent.",
+  "actions": [
+    {
+      "target": "#119714",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#131561",
+      "candidate_fix": "#123192",
+      "reason": "Already closed; partial historical overlap only."
+    },
+    {
+      "target": "#121756",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": "#131561",
+      "candidate_fix": null,
+      "reason": "Already closed and independently resolved."
+    },
+    {
+      "target": "#123192",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#131561",
+      "candidate_fix": null,
+      "reason": "Merged partial predecessor; it does not cover this canonical defect."
+    },
+    {
+      "target": "#126850",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#131561",
+      "candidate_fix": null,
+      "reason": "Same session-state symptom family, distinct owner boundary and repair."
+    },
+    {
+      "target": "#131561",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131561",
+      "candidate_fix": null,
+      "reason": "Narrow bug-only repair is clear, but implementation and local validation are blocked by the worker environment."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
