@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-openclaw-windows-node-1257
 source: pr_automerge
 requested_by: "shanselman"
 requested_by_id: "2892"
-request_comment_url: "https://github.com/openclaw/openclaw-windows-node/pull/1257#issuecomment-5457832561"
+request_comment_url: "https://github.com/openclaw/openclaw-windows-node/pull/1257#issuecomment-5458360219"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/openclaw-windows-node/pull/125
 Maintainer opted #1257 into ClawSweeper automerge.
 
 Requested by: shanselman
-Request comment: https://github.com/openclaw/openclaw-windows-node/pull/1257#issuecomment-5457832561
+Request comment: https://github.com/openclaw/openclaw-windows-node/pull/1257#issuecomment-5458360219
 
 
 Source PR: https://github.com/openclaw/openclaw-windows-node/pull/1257
