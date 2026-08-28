@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-28T13:40:49.180Z",
+  "updated_at": "2026-08-28T14:05:14.389Z",
   "notifications": [
     {
       "key": "clawsweeper.repair_blocked:openclaw/openclaw:target-unknown:repair_contributor_branch:failed:2026-08-01T01:19:28.194Z",
@@ -5535,6 +5535,41 @@
       },
       "notifiedAt": "2026-08-28T13:40:49.180Z",
       "hookRunId": "ef314d97-6cec-42f5-b2bf-737bc6cad51e",
+      "discordTarget": "channel:1499243561407741994"
+    },
+    {
+      "key": "clawsweeper.repair_blocked:openclaw/openclaw:target-unknown:repair_contributor_branch:failed:2026-08-28T14:05:10.316Z",
+      "idempotencyKey": "clawsweeper.repair_blocked:openclaw/openclaw:target-unknown:repair_contributor_branch:failed:2026-08-28T14:05:10.316Z",
+      "type": "clawsweeper.repair_blocked",
+      "severity": "error",
+      "repo": "openclaw/openclaw",
+      "target": null,
+      "title": null,
+      "url": null,
+      "action": "repair_contributor_branch",
+      "status": "failed",
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=coreTests, ui [check:changed] ui/src/e2e/config-safe-write.e2e.test.ts: UI test [check:changed] ui/src/lib/config/config-gateway-operations.ts: UI production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import ./scripts/tsx.mjs scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] coercion helper declaration guard $ node --import ./scripts/tsx.mjs scripts/check-coercion-helper-declarations.mts [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- ui/src/e2e/config-safe-write.e2e.test.ts ui/src/lib/config/config-gateway-operations.ts [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) deadcode production unused-export scan produced no export sections. [ERR_PNPM_NO_OFFLINE_META] Failed to resolve knip@6.32.2 in package mirror /tmp/clawsweeper-target-user-sA6r0J/cache/pnpm/v11/metadata-full-filtered/registry.npmjs.org/knip.jsonl [check:changed] summary 602ms ok conflict markers 27.03s ok max-lines suppression ratchet 8.51s ok assertion SAFETY comment ratchet 401ms ok changelog attributions 418ms ok doctor deprecation registry 432ms ok guarded extension wildcard re-exports 454ms ok plugin-sdk wildcard re-exports 561ms ok duplicate scan target coverage 12.59s ok coercion helper declaration guard 487ms ok dependency pin guard 543ms ok format changed files 820ms ok package patch guard 550ms failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [check:changed] FAILED (exit 1) max-lines ratchet OK: 887 grandfathered suppressions. OPENCLAW_* count 500/500 assertion SAFETY ratchet OK: 4201 files, 13052 grandfathered assertions. [doctor-deprecation-registry] OK as of 2026-08-28 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok Coercion helper declaration guard passed (107 allowlisted declarations). PASS direct dependency pin guard: checked 632 directly declared dependency specs across 179 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 30ms on 2 files using 4 threads. PASS package patch guard: no new pnpm patches; 2 approved patches allowlisted. [ELIFECYCLE] Command failed with exit code 1.",
+      "runId": "33172053893",
+      "runUrl": "https://github.com/openclaw/clawsweeper/actions/runs/33172053893",
+      "clusterId": "automerge-openclaw-openclaw-121050",
+      "publishedAt": "2026-08-28T14:05:10.316Z",
+      "details": {
+        "action": "repair_contributor_branch",
+        "status": "failed",
+        "target": null,
+        "pr": null,
+        "branch": null,
+        "source_action": null,
+        "source_status": null,
+        "repair_strategy": null,
+        "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=coreTests, ui [check:changed] ui/src/e2e/config-safe-write.e2e.test.ts: UI test [check:changed] ui/src/lib/config/config-gateway-operations.ts: UI production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import ./scripts/tsx.mjs scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] coercion helper declaration guard $ node --import ./scripts/tsx.mjs scripts/check-coercion-helper-declarations.mts [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- ui/src/e2e/config-safe-write.e2e.test.ts ui/src/lib/config/config-gateway-operations.ts [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) deadcode production unused-export scan produced no export sections. [ERR_PNPM_NO_OFFLINE_META] Failed to resolve knip@6.32.2 in package mirror /tmp/clawsweeper-target-user-sA6r0J/cache/pnpm/v11/metadata-full-filtered/registry.npmjs.org/knip.jsonl [check:changed] summary 602ms ok conflict markers 27.03s ok max-lines suppression ratchet 8.51s ok assertion SAFETY comment ratchet 401ms ok changelog attributions 418ms ok doctor deprecation registry 432ms ok guarded extension wildcard re-exports 454ms ok plugin-sdk wildcard re-exports 561ms ok duplicate scan target coverage 12.59s ok coercion helper declaration guard 487ms ok dependency pin guard 543ms ok format changed files 820ms ok package patch guard 550ms failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [check:changed] FAILED (exit 1) max-lines ratchet OK: 887 grandfathered suppressions. OPENCLAW_* count 500/500 assertion SAFETY ratchet OK: 4201 files, 13052 grandfathered assertions. [doctor-deprecation-registry] OK as of 2026-08-28 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok Coercion helper declaration guard passed (107 allowlisted declarations). PASS direct dependency pin guard: checked 632 directly declared dependency specs across 179 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 30ms on 2 files using 4 threads. PASS package patch guard: no new pnpm patches; 2 approved patches allowlisted. [ELIFECYCLE] Command failed with exit code 1.",
+        "title": null,
+        "url": null,
+        "commit": null,
+        "base_sync": false
+      },
+      "notifiedAt": "2026-08-28T14:05:14.389Z",
+      "hookRunId": "93b34744-9135-4c13-92bf-fa693e4055ff",
       "discordTarget": "channel:1499243561407741994"
     }
   ]
