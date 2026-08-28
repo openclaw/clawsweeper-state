@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T17:29:10.835Z",
+  "updated_at": "2026-08-28T17:29:12.780Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131407:5452392553:2026-08-28T12:15:50Z:re_review",
-      "comment_id": "5452392553",
-      "comment_version_key": "5452392553:2026-08-28T12:15:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131407#issuecomment-5452392553",
-      "comment_created_at": "2026-08-28T12:15:50Z",
-      "comment_updated_at": "2026-08-28T12:15:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131407,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T12:16:40.612Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-explicit-activation",
-        "head_sha": "d03038c07d9514cf955fad87ca34211e92fcd6e0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121622:5241982342:2026-08-28T12:07:08Z:clawsweeper_auto_repair",
       "comment_id": "5241982342",
@@ -32526,6 +32479,39 @@
         "kind": "pull_request",
         "branch": "test/classic-onboarding-hook-diagnostics",
         "head_sha": "77ea606c01a278c066be528a31c46e2afc48fc05",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131956:5455641379:2026-08-28T17:28:06Z:clawsweeper_auto_repair",
+      "comment_id": "5455641379",
+      "comment_version_key": "5455641379:2026-08-28T17:28:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131956#issuecomment-5455641379",
+      "comment_created_at": "2026-08-28T17:28:06Z",
+      "comment_updated_at": "2026-08-28T17:28:06Z",
+      "comment_body_sha256": "4def3d30b0d01b2dac77e7c0230018f5e7b6a93e10952ce5c588d0b08fdf49f8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131956,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bb8220aba5da05cf0baec804891d111aa09726ec)",
+      "expected_head_sha": "bb8220aba5da05cf0baec804891d111aa09726ec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T17:29:12.780Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/restart-sentinel-immediate-wake",
+        "head_sha": "bb8220aba5da05cf0baec804891d111aa09726ec",
         "cluster_id": null,
         "job_path": null
       }
