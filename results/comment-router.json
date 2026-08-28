@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T02:42:29.308Z",
+  "updated_at": "2026-08-28T02:42:37.093Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131185:5445812761:2026-08-27T22:10:41Z:re_review",
-      "comment_id": "5445812761",
-      "comment_version_key": "5445812761:2026-08-27T22:10:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131185#issuecomment-5445812761",
-      "comment_created_at": "2026-08-27T22:10:41Z",
-      "comment_updated_at": "2026-08-27T22:10:41Z",
-      "comment_body_sha256": "c9f7f44ff4c3555a3e50fb625c8b592583d924b5e8bb3fec092fb0ef79304d4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131185,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T22:11:30.456Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "giodl/claws-adopt-configured-agent",
-        "head_sha": "e1ddcf0afde77cdaf795444cdd14318470f69101",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-08-27T22:13:26Z:clawsweeper_needs_human",
       "comment_id": "5075679870",
@@ -32379,6 +32332,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-add-channel-list",
         "head_sha": "b3a08c2d80ff0ab182e03e4b4054c126f0e93487",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131420:5447724714:2026-08-28T02:40:52Z:clawsweeper_needs_human",
+      "comment_id": "5447724714",
+      "comment_version_key": "5447724714:2026-08-28T02:40:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131420#issuecomment-5447724714",
+      "comment_created_at": "2026-08-28T02:40:52Z",
+      "comment_updated_at": "2026-08-28T02:40:52Z",
+      "comment_body_sha256": "9162b23333a9567de95eac4c381e86b8715943ddadd87a2ff8679fe754f6c926",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131420,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 20 net lines for a bug fix; the shared formatter and deletion of the Git-local implementation justify it, but exact-head focused validation should confirm the... (sha=aa7f2904036b8e3bd18aebc45459d7dd223f459b)",
+      "expected_head_sha": "aa7f2904036b8e3bd18aebc45459d7dd223f459b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T02:42:37.093Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/stoic-lalande-352bfc",
+        "head_sha": "aa7f2904036b8e3bd18aebc45459d7dd223f459b",
         "cluster_id": null,
         "job_path": null
       }
