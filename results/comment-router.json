@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T03:57:29.014Z",
+  "updated_at": "2026-08-28T03:58:25.689Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129402:5413000217:2026-08-27T14:52:01Z:clawsweeper_needs_human",
-      "comment_id": "5413000217",
-      "comment_version_key": "5413000217:2026-08-27T14:52:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129402#issuecomment-5413000217",
-      "comment_created_at": "2026-08-25T15:48:21Z",
-      "comment_updated_at": "2026-08-27T14:52:01Z",
-      "comment_body_sha256": "c1e1d67d6e892c3abd41fd33df7a3f702f84c8123707490de1b1832f577d22a9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129402,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR transports authenticated channel identity to plugin hooks, and the required direct verification of the pinned Codex compaction lifecycle cannot be completed without the sibling... (sha=22b66d819260e5401c9f4eedf95cc0da9ac17840)",
-      "expected_head_sha": "22b66d819260e5401c9f4eedf95cc0da9ac17840",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T23:53:32.349Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-authenticated-hook-context",
-        "head_sha": "22b66d819260e5401c9f4eedf95cc0da9ac17840",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129729:5419637924:2026-08-27T15:01:26Z:clawsweeper_needs_human",
       "comment_id": "5419637924",
@@ -32354,6 +32321,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130798:5448210878:2026-08-28T03:57:35Z:re_review",
+      "comment_id": "5448210878",
+      "comment_version_key": "5448210878:2026-08-28T03:57:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130798#issuecomment-5448210878",
+      "comment_created_at": "2026-08-28T03:57:35Z",
+      "comment_updated_at": "2026-08-28T03:57:35Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130798,
+      "author": "zw-xysk",
+      "author_id": 294457748,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T03:58:22.965Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/slack-polls",
+        "head_sha": "ba44b5de9425f275854847c21a461878c0087fae",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
