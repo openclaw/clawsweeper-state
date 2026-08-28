@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T10:21:49.879Z",
+  "updated_at": "2026-08-28T10:22:41.013Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131379:5447466736:2026-08-28T04:39:49Z:clawsweeper_auto_repair",
-      "comment_id": "5447466736",
-      "comment_version_key": "5447466736:2026-08-28T04:39:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131379#issuecomment-5447466736",
-      "comment_created_at": "2026-08-28T02:01:20Z",
-      "comment_updated_at": "2026-08-28T04:39:49Z",
-      "comment_body_sha256": "bcaa3e126054c8e80a8f379b07362906a017a70cabb8a49ab3cda212bc1e277c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131379,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d11cd5219b0a4c668ce931b929f6b2ffa219d968)",
-      "expected_head_sha": "d11cd5219b0a4c668ce931b929f6b2ffa219d968",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T04:43:34.521Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fervent-rhodes-e23695",
-        "head_sha": "d11cd5219b0a4c668ce931b929f6b2ffa219d968",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131497:5448522928:2026-08-28T04:41:21Z:clawsweeper_needs_human",
       "comment_id": "5448522928",
@@ -33045,6 +33012,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131479:5451359723:2026-08-28T10:21:55Z:re_review",
+      "comment_id": "5451359723",
+      "comment_version_key": "5451359723:2026-08-28T10:21:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131479#issuecomment-5451359723",
+      "comment_created_at": "2026-08-28T10:21:55Z",
+      "comment_updated_at": "2026-08-28T10:21:55Z",
+      "comment_body_sha256": "277f7d2a951f4fd33ab91d77aa622b701b3d088f50b03abeb06b09fa69fd585b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131479,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T10:22:38.887Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "gaoanze888/git-agent-cli-external-cwd",
+        "head_sha": "d04d9f84aea60bdd0532f5cb6eb855550c7e31ac",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
