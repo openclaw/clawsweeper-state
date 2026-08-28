@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T02:25:35.481Z",
+  "updated_at": "2026-08-28T02:25:36.289Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5256570796:2026-08-11T17:25:44Z:re_review",
-      "comment_id": "5256570796",
-      "comment_version_key": "5256570796:2026-08-11T17:25:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5256570796",
-      "comment_created_at": "2026-08-11T17:25:44Z",
-      "comment_updated_at": "2026-08-11T17:25:44Z",
-      "comment_body_sha256": "eee132d1928fb13adeed4e703909b6d75c7e7f077df2dbeb64e647132dd50963",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T21:19:13.156Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:5269674075:2026-08-12T16:40:30Z:re_review",
       "comment_id": "5269674075",
@@ -32282,6 +32255,39 @@
       "status": "skipped",
       "processed_at": "2026-08-28T02:25:35.480Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131393:5447592559:2026-08-28T02:20:34Z:clawsweeper_needs_human",
+      "comment_id": "5447592559",
+      "comment_version_key": "5447592559:2026-08-28T02:20:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131393#issuecomment-5447592559",
+      "comment_created_at": "2026-08-28T02:20:34Z",
+      "comment_updated_at": "2026-08-28T02:20:34Z",
+      "comment_body_sha256": "ff45a9751755255aabcce88216f385aea3fe69807be1505a7393e09e2a1250ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131393,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix has a net production increase of 23 lines; the added branches are limited to making two distinct optional completion owners advisory, but that exception surface should rem... (sha=286aef10ca07676f441d696c06f88a0d7b570dc9)",
+      "expected_head_sha": "286aef10ca07676f441d696c06f88a0d7b570dc9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T02:25:36.289Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "shakkernerd/update-completion-restart-order",
+        "head_sha": "286aef10ca07676f441d696c06f88a0d7b570dc9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
