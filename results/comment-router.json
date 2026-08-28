@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T03:37:41.720Z",
+  "updated_at": "2026-08-28T03:37:50.599Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129001:5440617202:2026-08-27T14:29:43Z:re_review",
-      "comment_id": "5440617202",
-      "comment_version_key": "5440617202:2026-08-27T14:29:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129001#issuecomment-5440617202",
-      "comment_created_at": "2026-08-27T14:29:43Z",
-      "comment_updated_at": "2026-08-27T14:29:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129001,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T23:52:44.126Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-128971-steer-terminal-receipt",
-        "head_sha": "80187ddf801729d8746032a5dac996476911e10d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:85183:4514518487:2026-08-27T17:50:36Z:clawsweeper_auto_repair",
       "comment_id": "4514518487",
@@ -32291,6 +32244,39 @@
         "kind": "pull_request",
         "branch": "steipete/fervent-rhodes-e23695",
         "head_sha": "cbc4026414f83fce569477ee74aac8869cb28adf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131400:5448076249:2026-08-28T03:35:19Z:clawsweeper_needs_human",
+      "comment_id": "5448076249",
+      "comment_version_key": "5448076249:2026-08-28T03:35:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131400#issuecomment-5448076249",
+      "comment_created_at": "2026-08-28T03:35:19Z",
+      "comment_updated_at": "2026-08-28T03:35:19Z",
+      "comment_body_sha256": "b3072d78d80e45956b756c8d8f9c8e9d71d59e8ded564b5cd517abf6b791205a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131400,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix has a production delta of +4 lines; it is owner-bound validation that replaces duplicated CLI checks, but remains a small exception to the net-neutral bug-fix target. (sha=aaeba9fb7f25e974668ae2ccd1929dc587f49225)",
+      "expected_head_sha": "aaeba9fb7f25e974668ae2ccd1929dc587f49225",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T03:37:50.599Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-131231-fill-field-validation",
+        "head_sha": "aaeba9fb7f25e974668ae2ccd1929dc587f49225",
         "cluster_id": null,
         "job_path": null
       }
