@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T16:32:39.514Z",
+  "updated_at": "2026-08-28T16:32:59.852Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131724:5451883416:2026-08-28T11:20:12Z:re_review",
-      "comment_id": "5451883416",
-      "comment_version_key": "5451883416:2026-08-28T11:20:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131724#issuecomment-5451883416",
-      "comment_created_at": "2026-08-28T11:20:12Z",
-      "comment_updated_at": "2026-08-28T11:20:12Z",
-      "comment_body_sha256": "fcc55f0e930c82edee0900ca69da3f13ec208174c9be1fcf4cc15847b337eb40",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131724,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T11:29:27.908Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-http-rejection-transport-20260828",
-        "head_sha": "1e0eb61d97e5a51c91e31afaf965bad4684040e8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131724:5451622051:2026-08-28T11:28:35Z:clawsweeper_needs_human",
       "comment_id": "5451622051",
@@ -32464,6 +32417,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1574:5455081244:2026-08-28T16:32:11Z:clawsweeper_needs_human",
+      "comment_id": "5455081244",
+      "comment_version_key": "5455081244:2026-08-28T16:32:11Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1574#issuecomment-5455081244",
+      "comment_created_at": "2026-08-28T16:32:11Z",
+      "comment_updated_at": "2026-08-28T16:32:11Z",
+      "comment_body_sha256": "7e0de7f03ebdc06eb5278dfc6ae00b9ba513911d1b914b60c88f0a31302689ed",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1574,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides a strong CLI integration regression test, but its Machine0 executable is a fixture and no redacted after-fix run against a real... (sha=0785b6aa9b7ad3a23f80c49107c0a498272671e8)",
+      "expected_head_sha": "0785b6aa9b7ad3a23f80c49107c0a498272671e8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T16:32:59.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-machine0-checkpoint-config-20260828",
+        "head_sha": "cba6ce78d6b2413a47aff0275db9c66770105799",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
