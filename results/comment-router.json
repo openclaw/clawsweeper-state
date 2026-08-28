@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T23:25:13.232Z",
+  "updated_at": "2026-08-28T23:25:14.451Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132017:5456484734:2026-08-28T18:52:25Z:re_review",
-      "comment_id": "5456484734",
-      "comment_version_key": "5456484734:2026-08-28T18:52:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132017#issuecomment-5456484734",
-      "comment_created_at": "2026-08-28T18:52:25Z",
-      "comment_updated_at": "2026-08-28T18:52:25Z",
-      "comment_body_sha256": "c41afe3458b7de74caf6b2a93f1f0303ad4b710183cb0c9c1a0f86651fffb6eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132017,
-      "author": "safzanpirani",
-      "author_id": 5602916,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T18:54:50.840Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/aggregate-tool-result-cache-prefix",
-        "head_sha": "bd96368097d3feafe7ae3f2740c0f94b6b2ce327",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132033:5456529404:2026-08-28T18:56:56Z:clawsweeper_auto_repair",
       "comment_id": "5456529404",
@@ -32861,6 +32814,39 @@
         "kind": "pull_request",
         "branch": "openclaw/nova-shell",
         "head_sha": "02ffbb0b97c01a7b0ee7bf3ad08d4e98abc6f8f0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132196:5458794186:2026-08-28T23:24:25Z:clawsweeper_needs_human",
+      "comment_id": "5458794186",
+      "comment_version_key": "5458794186:2026-08-28T23:24:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132196#issuecomment-5458794186",
+      "comment_created_at": "2026-08-28T23:24:25Z",
+      "comment_updated_at": "2026-08-28T23:24:25Z",
+      "comment_body_sha256": "726c3510d5b790356627aadb6de51e9e71197a3c9521a0605189ead777dd6eca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132196,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI remains incomplete and one additional-boundaries check has failed; its unavailable log prevents attributing the failure to this branch. (sha=b1e27059c3cb1cac1e8af1086005fdb8ce6feade)",
+      "expected_head_sha": "b1e27059c3cb1cac1e8af1086005fdb8ce6feade",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T23:25:14.451Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sessions-page-tabs-alignment",
+        "head_sha": "b1e27059c3cb1cac1e8af1086005fdb8ce6feade",
         "cluster_id": null,
         "job_path": null
       }
