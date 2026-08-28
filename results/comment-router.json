@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T22:01:44.339Z",
+  "updated_at": "2026-08-28T22:03:16.144Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131914:5455613270:2026-08-28T17:25:13Z:re_review",
-      "comment_id": "5455613270",
-      "comment_version_key": "5455613270:2026-08-28T17:25:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131914#issuecomment-5455613270",
-      "comment_created_at": "2026-08-28T17:25:13Z",
-      "comment_updated_at": "2026-08-28T17:25:13Z",
-      "comment_body_sha256": "98e769d53e5d37a2e93a1828930e528b5cd6e1991671e68126a0ebbb37316b3a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131914,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T17:25:58.472Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/frv-acquisition-phases",
-        "head_sha": "9d000a325c00b8655d5a40090e0fad2f7f125cfe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131840:5454179861:2026-08-28T17:25:07Z:clawsweeper_needs_human",
       "comment_id": "5454179861",
@@ -32707,6 +32660,39 @@
         "kind": "pull_request",
         "branch": "fix/ca-softcat-drift",
         "head_sha": "3527267585aaa78180a91cf3acc3511479371ca9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132146:5458220636:2026-08-28T22:02:23Z:clawsweeper_needs_human",
+      "comment_id": "5458220636",
+      "comment_version_key": "5458220636:2026-08-28T22:02:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132146#issuecomment-5458220636",
+      "comment_created_at": "2026-08-28T22:02:23Z",
+      "comment_updated_at": "2026-08-28T22:02:23Z",
+      "comment_body_sha256": "5fb88f5ea8920c9155ef403feaa08969c4cfedc7c71736d83bfa98657bd81305",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132146,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix has a net production increase of 103 lines; its private exact-object receipt boundary is justified by the new ownership invariant, but exact-head checks should complete be... (sha=af3564a632d08971c08ba2711718db1e244c131d)",
+      "expected_head_sha": "af3564a632d08971c08ba2711718db1e244c131d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T22:03:16.144Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/fix-code-mode-effect-provenance-131340",
+        "head_sha": "af3564a632d08971c08ba2711718db1e244c131d",
         "cluster_id": null,
         "job_path": null
       }
