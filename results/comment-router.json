@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T01:04:16.046Z",
+  "updated_at": "2026-08-28T01:04:16.344Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130900:5444071839:2026-08-27T19:15:53Z:re_review",
-      "comment_id": "5444071839",
-      "comment_version_key": "5444071839:2026-08-27T19:15:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130900#issuecomment-5444071839",
-      "comment_created_at": "2026-08-27T19:15:53Z",
-      "comment_updated_at": "2026-08-27T19:15:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130900,
-      "author": "jason-allen-oneal",
-      "author_id": 8335428,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T19:17:11.957Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/installer-gateway-transition",
-        "head_sha": "a66f6adce310b4f96f89ebabc2b816bf5ddc2739",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/libopus-wasm:8:5443977557:2026-08-27T19:07:31Z:clawsweeper_auto_repair",
       "comment_id": "5443977557",
@@ -32301,6 +32254,39 @@
         "kind": "pull_request",
         "branch": "goal-protocol",
         "head_sha": "2c249e66a3c2cbcc6adbed56ddc98bfb8d0bb6ba",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131339:5447064757:2026-08-28T01:01:40Z:clawsweeper_needs_human",
+      "comment_id": "5447064757",
+      "comment_version_key": "5447064757:2026-08-28T01:01:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131339#issuecomment-5447064757",
+      "comment_created_at": "2026-08-28T01:01:40Z",
+      "comment_updated_at": "2026-08-28T01:01:40Z",
+      "comment_body_sha256": "f76340c7f8cbc19c7e43b7b1cabce8032ba7cbce7bc05efc0f92f9bd4a40f753",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131339,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR remains a draft and has no executed exact-head check run after becoming ready for review; do not merge until the normal gate completes. (sha=7d254d2088ca569d570eae07f05411adadba509c)",
+      "expected_head_sha": "7d254d2088ca569d570eae07f05411adadba509c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T01:04:16.344Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/unruffled-curran-ae2815",
+        "head_sha": "7d254d2088ca569d570eae07f05411adadba509c",
         "cluster_id": null,
         "job_path": null
       }
