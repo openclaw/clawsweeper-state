@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131855",
+  "mode": "autonomous",
+  "run_id": "33186841670",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33186841670",
+  "head_sha": "f72ea010c1d7fd134b1bd0826b3a707778c312bc",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131855.md",
+  "published_at": "2026-08-28T16:12:04.821Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131855",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131855",
+  "canonical_pr": null,
+  "summary": "#131855 remains the canonical, source-reproducible context-loss bug. Current main builds the generic default heartbeat prompt at src/infra/heartbeat-runner-prompt.ts:277-301, then consumes all inspected generic events at src/infra/heartbeat-runner-prompt.ts:304-326 and src/infra/heartbeat-runner-delivery.ts:541-544. Implementation is blocked before any edit: the mandatory sibling ../codex checkout is absent and GitHub DNS is unavailable; focused test execution is also blocked because tsx is missing in this read-only checkout.",
+  "actions": [
+    {
+      "target": "#131855",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131855",
+      "candidate_fix": null,
+      "reason": "The repair shape is narrow and does not require a configuration, storage, or security-boundary change, but this worker cannot satisfy the repository's mandatory Codex-source inspection or provision missing test dependencies."
+    },
+    {
+      "target": "#131850",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#131855",
+      "candidate_fix": null,
+      "reason": "Related restart-sentinel wake family, but distinct admission-policy defect with unique no-schedule reproduction."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131855",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#131855",
+      "candidate_fix": null,
+      "reason": "Blocked only on worker provisioning; the successor should use this narrow new-PR plan after cloning ../codex and installing dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#131855",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
