@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T09:41:43.473Z",
+  "updated_at": "2026-08-28T09:42:55.572Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5382104382:2026-08-22T19:08:29Z:re_review",
-      "comment_id": "5382104382",
-      "comment_version_key": "5382104382:2026-08-22T19:08:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5382104382",
-      "comment_created_at": "2026-08-22T19:08:29Z",
-      "comment_updated_at": "2026-08-22T19:08:29Z",
-      "comment_body_sha256": "22285b180bb9a95a8104905fe38ff6fc0d1b5574ce9eeaeeb4ed3d017fcb2e93",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T04:31:28.119Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5382921369:2026-08-22T22:25:53Z:re_review",
       "comment_id": "5382921369",
@@ -32789,6 +32762,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:285:5450905041:2026-08-28T09:34:40Z:clawsweeper_needs_human",
+      "comment_id": "5450905041",
+      "comment_version_key": "5450905041:2026-08-28T09:34:40Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/285#issuecomment-5450905041",
+      "comment_created_at": "2026-08-28T09:34:40Z",
+      "comment_updated_at": "2026-08-28T09:34:40Z",
+      "comment_body_sha256": "6a5f3cc2daf516bc01ac7907b81c2b314c83c0349df1f650076c40e62e5e7938",
+      "repo": "openclaw/crabline",
+      "issue_number": 285,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The draft is dirty against current main, so its lock-cleanup refinement and replacement test coverage cannot yet be evaluated as a merged result. (sha=16fef0fd83c13f6039100286c5fe546296fdcae1)",
+      "expected_head_sha": "16fef0fd83c13f6039100286c5fe546296fdcae1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T09:42:55.572Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/recorder-readiness-shutdown",
+        "head_sha": "16fef0fd83c13f6039100286c5fe546296fdcae1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
