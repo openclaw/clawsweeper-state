@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T03:33:35.885Z",
+  "updated_at": "2026-08-28T03:33:42.445Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128141:5384873530:2026-08-27T23:39:57Z:clawsweeper_needs_human",
-      "comment_id": "5384873530",
-      "comment_version_key": "5384873530:2026-08-27T23:39:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128141#issuecomment-5384873530",
-      "comment_created_at": "2026-08-23T07:37:45Z",
-      "comment_updated_at": "2026-08-27T23:39:57Z",
-      "comment_body_sha256": "f3af8bffb1580e940796d03e6670c5e6e93e1724a6f0f4750a05d46e1bf9c877",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128141,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reject whitespace-only continuation input (P2)** - The shell validation treats a whitespace-only continuation_plan_json as absent, but the introduced job conditions treat it as present and skip every child. An a...; Review finding: [P2] Reject whitespace-only continuation input — .github/workflows/full-release-validation.yml:279 - [medium] Temporary-ref authority path lacks final-effect proof... (sha=dcb1cb1ccd0a8ef89d526a4ff232278577718dd2)",
-      "expected_head_sha": "dcb1cb1ccd0a8ef89d526a4ff232278577718dd2",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-27T23:47:43.315Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-canonical-continuation-20260822",
-        "head_sha": "dcb1cb1ccd0a8ef89d526a4ff232278577718dd2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131267:5446552826:2026-08-27T23:46:19Z:clawsweeper_auto_repair",
       "comment_id": "5446552826",
@@ -32314,6 +32281,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130563:5448061948:2026-08-28T03:32:55Z:re_review",
+      "comment_id": "5448061948",
+      "comment_version_key": "5448061948:2026-08-28T03:32:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130563#issuecomment-5448061948",
+      "comment_created_at": "2026-08-28T03:32:55Z",
+      "comment_updated_at": "2026-08-28T03:32:55Z",
+      "comment_body_sha256": "ba7af60c7419126a287b2b1e8d66c6f2a793855311ee8f91995cb6eb176f4d41",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130563,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T03:33:40.116Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ocpr/auto-issue-20260826-2",
+        "head_sha": "8bdb5e26973c74b0e079c036b8ea18d2c231906f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
