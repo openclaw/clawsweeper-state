@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T17:51:24.988Z",
+  "updated_at": "2026-08-28T17:51:35.752Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123083:5278394565:2026-08-28T10:23:26Z:clawsweeper_needs_human",
-      "comment_id": "5278394565",
-      "comment_version_key": "5278394565:2026-08-28T10:23:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123083#issuecomment-5278394565",
-      "comment_created_at": "2026-08-13T09:16:47Z",
-      "comment_updated_at": "2026-08-28T10:23:26Z",
-      "comment_body_sha256": "3a38e0e103bda25cafec28516be584f3afa66f40083029eef09714b10026c430",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123083,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the update mechanism for existing package installs with saved update.channel: dev: they will create and update a Git checkout instead of attempting an npm dist-tag upd... (sha=dc4b03e9043d3c5d4f5a1952977692c91a6a6429)",
-      "expected_head_sha": "dc4b03e9043d3c5d4f5a1952977692c91a6a6429",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T12:16:42.344Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-stored-dev-channel-git-routing",
-        "head_sha": "d990054e1a12f6fa6d52c67a246d128555b1a486",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123730:5295667121:2026-08-28T09:00:04Z:clawsweeper_needs_human",
       "comment_id": "5295667121",
@@ -32529,6 +32496,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131901:5455869115:2026-08-28T17:50:50Z:re_review",
+      "comment_id": "5455869115",
+      "comment_version_key": "5455869115:2026-08-28T17:50:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131901#issuecomment-5455869115",
+      "comment_created_at": "2026-08-28T17:50:50Z",
+      "comment_updated_at": "2026-08-28T17:50:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131901,
+      "author": "IWhatsskill",
+      "author_id": 284122573,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T17:51:33.570Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/system-agent-session-key",
+        "head_sha": "b135e39ce4408b862e12e61f798a7a902acc5ac5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
