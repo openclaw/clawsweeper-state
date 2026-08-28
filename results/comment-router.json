@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-08-28T19:47:11.649Z",
+  "updated_at": "2026-08-28T19:47:36.392Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131418:5447705243:2026-08-28T14:45:33Z:clawsweeper_needs_human",
-      "comment_id": "5447705243",
-      "comment_version_key": "5447705243:2026-08-28T14:45:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131418#issuecomment-5447705243",
-      "comment_created_at": "2026-08-28T02:37:49Z",
-      "comment_updated_at": "2026-08-28T14:45:33Z",
-      "comment_body_sha256": "dc019c21cc32ace1e3f110ba2cf1838d027f80c9a29a5f88936f42ae75390d78",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131418,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +10 lines after extracting the existing writer; the small growth is justified by eliminating a second host-write policy owner, but should remain a single shared... (sha=ccd1defbd63e24897e87c97c7faf9eaa2d3d8452)",
-      "expected_head_sha": "ccd1defbd63e24897e87c97c7faf9eaa2d3d8452",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T14:46:27.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/apply-patch-host-atomic-write",
-        "head_sha": "ccd1defbd63e24897e87c97c7faf9eaa2d3d8452",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130993:5453962516:2026-08-28T14:46:47Z:re_review",
-      "comment_id": "5453962516",
-      "comment_version_key": "5453962516:2026-08-28T14:46:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130993#issuecomment-5453962516",
-      "comment_created_at": "2026-08-28T14:46:47Z",
-      "comment_updated_at": "2026-08-28T14:46:47Z",
-      "comment_body_sha256": "1f3f3f9553a27aeff28e241db3c044100c2e3ce30faffcef236436ecfd807d53",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130993,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T14:47:35.911Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/managed-context-pressure",
-        "head_sha": "e22498a24f06f74dd04092cd02e2f1f5ac366d9b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131827:5453963666:2026-08-28T14:46:54Z:clawsweeper_auto_repair",
       "comment_id": "5453963666",
@@ -32627,6 +32547,86 @@
         "kind": "pull_request",
         "branch": "steipete/tart-isolation-loc-followup",
         "head_sha": "cd6f0dbffe5462779af68a2e6d3d6ec3a7e28eb9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132017:5456947019:2026-08-28T19:36:00Z:re_review",
+      "comment_id": "5456947019",
+      "comment_version_key": "5456947019:2026-08-28T19:36:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132017#issuecomment-5456947019",
+      "comment_created_at": "2026-08-28T19:36:00Z",
+      "comment_updated_at": "2026-08-28T19:36:00Z",
+      "comment_body_sha256": "fe75fd1b996d69356a317d96466d404d6db8e0c22a07e6822bdbb7b7fe18bd67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132017,
+      "author": "safzanpirani",
+      "author_id": 5602916,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T19:47:28.825Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/aggregate-tool-result-cache-prefix",
+        "head_sha": "06753e1ef883fcc48ecba2f5293d4f3259777da4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132017:5456369162:2026-08-28T19:46:40Z:clawsweeper_auto_repair",
+      "comment_id": "5456369162",
+      "comment_version_key": "5456369162:2026-08-28T19:46:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132017#issuecomment-5456369162",
+      "comment_created_at": "2026-08-28T18:40:19Z",
+      "comment_updated_at": "2026-08-28T19:46:40Z",
+      "comment_body_sha256": "c4f86e3099fb35a37e21f549eed37be35fb8d7d6f681b15dab5d604b74df601b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132017,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=06753e1ef883fcc48ecba2f5293d4f3259777da4)",
+      "expected_head_sha": "06753e1ef883fcc48ecba2f5293d4f3259777da4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T19:47:36.392Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/aggregate-tool-result-cache-prefix",
+        "head_sha": "06753e1ef883fcc48ecba2f5293d4f3259777da4",
         "cluster_id": null,
         "job_path": null
       }
