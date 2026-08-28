@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131232",
+  "mode": "autonomous",
+  "run_id": "33127932228",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33127932228",
+  "head_sha": "d103c0cf5c98b0f3d4242bb4202c032856c36a49",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131232.md",
+  "published_at": "2026-08-28T00:08:32.032Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/131232",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/131232",
+  "canonical_pr": null,
+  "summary": "#131232 remains the canonical reproducible browser-plugin bug, but implementation is blocked: this read-only shallow checkout has no node_modules, cannot run the required Chromium regression, and lacks the mandatory sibling ../codex source required by the repository hard gate. No files changed.",
+  "actions": [
+    {
+      "target": "#131232",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131232",
+      "candidate_fix": null,
+      "reason": "Provision a writable checkout with dependencies and sibling ../codex, then reproduce before applying the narrow owner repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-131232",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131232",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor, but no executable PR path is safe until required reproduction and Codex-source inspection complete."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#131232",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

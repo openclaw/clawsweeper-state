@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-131232"
 mode: "autonomous"
-run_id: "33125292588"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33125292588"
+run_id: "33127932228"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33127932228"
 head_sha: "d103c0cf5c98b0f3d4242bb4202c032856c36a49"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-27T23:50:32.662Z"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-28T00:08:32.032Z"
 canonical: "https://github.com/openclaw/openclaw/issues/131232"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/131232"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33125292588](https://github.com/openclaw/clawsweeper/actions/runs/33125292588)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33127932228](https://github.com/openclaw/clawsweeper/actions/runs/33127932228)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/131232
 
 ## Summary
 
-#131232 is a confirmed browser-plugin bug on main. A selector opts into the role-snapshot path, where the default Playwright locator snapshot waits for an absent element; nested proxy watchdogs explain the reported ~30-second delay. Plan a narrow new PR that returns the canonical empty role snapshot immediately for zero selector matches.
+#131232 remains the canonical reproducible browser-plugin bug, but implementation is blocked: this read-only shallow checkout has no node_modules, cannot run the required Chromium regression, and lacks the mandatory sibling ../codex source required by the repository hard gate. No files changed.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/131232
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #131232 |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/131232
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #131232 | fix_needed | planned | canonical | No active implementation PR is hydrated. The repair belongs in the browser plugin snapshot owner and needs no config, schema, or documentation change. |
-| cluster:issue-openclaw-openclaw-131232 | build_fix_artifact | planned | canonical | Create or update the single ClawSweeper branch PR from this narrow artifact; do not merge or close the issue in this lane. |
+| #131232 | fix_needed | blocked | canonical | Provision a writable checkout with dependencies and sibling ../codex, then reproduce before applying the narrow owner repair. |
+| cluster:issue-openclaw-openclaw-131232 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor, but no executable PR path is safe until required reproduction and Codex-source inspection complete. |
 
 ## Needs Human
 
