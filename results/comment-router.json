@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T01:40:53.945Z",
+  "updated_at": "2026-08-28T01:40:54.704Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1267:5444486223:2026-08-27T19:54:52Z:re_review",
-      "comment_id": "5444486223",
-      "comment_version_key": "5444486223:2026-08-27T19:54:52Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1267#issuecomment-5444486223",
-      "comment_created_at": "2026-08-27T19:54:52Z",
-      "comment_updated_at": "2026-08-27T19:54:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1267,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-27T19:55:48.271Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-142-workflow-classifier",
-        "head_sha": "7070f5175eaf3adeba4d9fec4ebb97298d14703f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131121:5444487446:2026-08-27T19:55:00Z:clawsweeper_auto_repair",
       "comment_id": "5444487446",
@@ -32267,6 +32220,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-131209",
         "head_sha": "1299746c6f3ffea6be63d840ef913488b71c397c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1552:5435321440:2026-08-28T01:34:17Z:clawsweeper_needs_human",
+      "comment_id": "5435321440",
+      "comment_version_key": "5435321440:2026-08-28T01:34:17Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1552#issuecomment-5435321440",
+      "comment_created_at": "2026-08-27T06:39:47Z",
+      "comment_updated_at": "2026-08-28T01:34:17Z",
+      "comment_body_sha256": "f0baa5a9366e29cd3ed4bfd05cfebbe80258d26eaf839e587a35751ba0139ab5",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1552,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - For legacy claim identities containing credentials, fragments, or opaque endpoint bytes, copied recovery commands now intentionally require the original private configuration and can... (sha=8f2d1177e0a1e46a3085316979a5817cc2a0a3fb)",
+      "expected_head_sha": "8f2d1177e0a1e46a3085316979a5817cc2a0a3fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T01:40:54.704Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/provider-command-routing",
+        "head_sha": "8f2d1177e0a1e46a3085316979a5817cc2a0a3fb",
         "cluster_id": null,
         "job_path": null
       }
