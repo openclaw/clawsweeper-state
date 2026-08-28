@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T23:41:23.854Z",
+  "updated_at": "2026-08-28T23:41:50.440Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131121:5456917371:2026-08-28T19:32:55Z:re_review",
-      "comment_id": "5456917371",
-      "comment_version_key": "5456917371:2026-08-28T19:32:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131121#issuecomment-5456917371",
-      "comment_created_at": "2026-08-28T19:32:55Z",
-      "comment_updated_at": "2026-08-28T19:32:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131121,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T19:33:46.397Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-embedding-cache-default-cap",
-        "head_sha": "a004d928c94e388418b670871b914d782ca033a5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132016:5456375121:2026-08-28T19:15:55Z:clawsweeper_needs_human",
       "comment_id": "5456375121",
@@ -33118,6 +33071,39 @@
         "kind": "pull_request",
         "branch": "fix/dedupe-fs-safe-native",
         "head_sha": "a93c579cae5236be86cb78885f16f69a1f02c7af",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131110:5443777304:2026-08-28T23:41:04Z:clawsweeper_needs_human",
+      "comment_id": "5443777304",
+      "comment_version_key": "5443777304:2026-08-28T23:41:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131110#issuecomment-5443777304",
+      "comment_created_at": "2026-08-27T18:50:30Z",
+      "comment_updated_at": "2026-08-28T23:41:04Z",
+      "comment_body_sha256": "a29164d651b2d786ecbe0414355fe6f2fe22f274e7293fe41fdb1c7af5530dfa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131110,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still incomplete, so merge readiness remains unconfirmed despite the focused proof. (sha=f24d55f32ced790d203b6a8f811bde303fe7c627)",
+      "expected_head_sha": "f24d55f32ced790d203b6a8f811bde303fe7c627",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T23:41:50.440Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-127575-video-output-order",
+        "head_sha": "f24d55f32ced790d203b6a8f811bde303fe7c627",
         "cluster_id": null,
         "job_path": null
       }
