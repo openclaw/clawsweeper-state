@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T08:13:45.090Z",
+  "updated_at": "2026-08-28T08:13:54.178Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:653:5448171891:2026-08-28T03:51:01Z:re_review",
-      "comment_id": "5448171891",
-      "comment_version_key": "5448171891:2026-08-28T03:51:01Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/653#issuecomment-5448171891",
-      "comment_created_at": "2026-08-28T03:51:01Z",
-      "comment_updated_at": "2026-08-28T03:51:01Z",
-      "comment_body_sha256": "5124c868c6c738f20f055408832960cfd16854dc9b4bb8a689db1110f39523c6",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 653,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T03:53:00.741Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/learn-command-actor-crash",
-        "head_sha": "e55039f22f1594dba3ee9a4e48d3ed8c5a24742f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1558:5441057902:2026-08-28T03:51:14Z:clawsweeper_needs_human",
       "comment_id": "5441057902",
@@ -32196,6 +32149,39 @@
         "kind": "pull_request",
         "branch": "jesse/meaningful-traffic-signals",
         "head_sha": "b2fe5c577a4d424b54ab5b070ff8096fdadc357c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131602:5449959092:2026-08-28T08:13:00Z:clawsweeper_needs_human",
+      "comment_id": "5449959092",
+      "comment_version_key": "5449959092:2026-08-28T08:13:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131602#issuecomment-5449959092",
+      "comment_created_at": "2026-08-28T07:56:35Z",
+      "comment_updated_at": "2026-08-28T08:13:00Z",
+      "comment_body_sha256": "e25d3e8f94542c74e63b26b429ed8348507cfe7f252fd35f312a2bf3cb81ad79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131602,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Escape the stored revoker label before rendering the CLI ledger (P2)** - revokedBy is interpolated directly into terminal output, but it originates from the connected client's display name and the handshake perm...; Review finding: [P2] Escape the stored revoker label before rendering the CLI ledger — src/cli/exec-approvals-cli.ts:561 - [medium] Client display name reaches terminal output uns... (sha=960451aaa726b635cb05d66216ce6ce64c542ada)",
+      "expected_head_sha": "960451aaa726b635cb05d66216ce6ce64c542ada",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-28T08:13:54.178Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/grants-surface",
+        "head_sha": "960451aaa726b635cb05d66216ce6ce64c542ada",
         "cluster_id": null,
         "job_path": null
       }
