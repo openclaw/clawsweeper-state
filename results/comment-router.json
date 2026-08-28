@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T08:49:31.734Z",
+  "updated_at": "2026-08-28T08:50:18.690Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131373:5448386275:2026-08-28T04:21:11Z:re_review",
-      "comment_id": "5448386275",
-      "comment_version_key": "5448386275:2026-08-28T04:21:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131373#issuecomment-5448386275",
-      "comment_created_at": "2026-08-28T04:21:11Z",
-      "comment_updated_at": "2026-08-28T04:21:11Z",
-      "comment_body_sha256": "aff2d2e2525e77da563857641f8d0d4811c1fc8a5c4b896f9b714ad0ed79f12f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131373,
-      "author": "zenglingbiao",
-      "author_id": 290951975,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — addressed the needs-proof ask: replaced the handcrafted error objects with a redacted loopback transport trace (real undici econnrefused and und_err_socket emitted from real tcp exchanges on 127.0.0.1, two retry attempts ~300ms apart, observed recovery, plus a real http 400 still failing fast). merged current main (new head c9505153d25); screenshot proof + transcripts on proof-assets-20260828, embedded in the pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T04:21:51.764Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/daytona-transient-retry-classification",
-        "head_sha": "c9505153d25593142e4990f7079b6066b342a629",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131391:5447907066:2026-08-28T04:13:22Z:clawsweeper_needs_human",
       "comment_id": "5447907066",
@@ -32140,6 +32093,39 @@
         "kind": "pull_request",
         "branch": "shanselman-automate-repository-triage",
         "head_sha": "db74a49e89cead2433be87664b162d28cf5a2e7a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131656:5450443907:2026-08-28T08:49:20Z:clawsweeper_needs_human",
+      "comment_id": "5450443907",
+      "comment_version_key": "5450443907:2026-08-28T08:49:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131656#issuecomment-5450443907",
+      "comment_created_at": "2026-08-28T08:49:20Z",
+      "comment_updated_at": "2026-08-28T08:49:20Z",
+      "comment_body_sha256": "85f81c696cf4f7ab1182c10edf611a89bff5f243b614bff73a00c1806b735e39",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131656,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body says exact-head hosted CI and redacted real CLI probes are still being finalized; do not land until those results are recorded. (sha=7ab456c4c66fb72c36b395e8efad000a6c56f2e0)",
+      "expected_head_sha": "7ab456c4c66fb72c36b395e8efad000a6c56f2e0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T08:50:18.690Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/config-preflight-owner-refactor",
+        "head_sha": "7ab456c4c66fb72c36b395e8efad000a6c56f2e0",
         "cluster_id": null,
         "job_path": null
       }
