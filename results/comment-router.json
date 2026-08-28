@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T03:25:23.739Z",
+  "updated_at": "2026-08-28T03:25:25.691Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131212:5445771903:2026-08-27T23:37:29Z:clawsweeper_needs_human",
-      "comment_id": "5445771903",
-      "comment_version_key": "5445771903:2026-08-27T23:37:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131212#issuecomment-5445771903",
-      "comment_created_at": "2026-08-27T22:05:50Z",
-      "comment_updated_at": "2026-08-27T23:37:29Z",
-      "comment_body_sha256": "122505ddfcf6541e5e8abe5a462c17448dc8125d6f573f7acae5b165087a468e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131212,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Obtain approval for the new configuration surface (P1)** - This introduces appServer.networkProxy.filesystem, a public operator-controlled permission map. Repository policy requires explicit approval before addi...; Review finding: [P1] Obtain approval for the new configuration surface — extensions/codex/openclaw.plugin.json:375-381 - [medium] Verify special-path and deny precedence — extensi... (sha=de4282202acfbdcda4094469ba0c69eaef168e7e)",
-      "expected_head_sha": "de4282202acfbdcda4094469ba0c69eaef168e7e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T23:42:59.455Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/red-owner-permissions",
-        "head_sha": "de4282202acfbdcda4094469ba0c69eaef168e7e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128127:5384563954:2026-08-27T23:35:54Z:clawsweeper_needs_human",
       "comment_id": "5384563954",
@@ -32276,6 +32243,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129268:5448010110:2026-08-28T03:24:41Z:re_review",
+      "comment_id": "5448010110",
+      "comment_version_key": "5448010110:2026-08-28T03:24:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129268#issuecomment-5448010110",
+      "comment_created_at": "2026-08-28T03:24:41Z",
+      "comment_updated_at": "2026-08-28T03:24:41Z",
+      "comment_body_sha256": "268167ee6283456b1bbaca9ceceb1b2dfe9c0291d9a74c39288b86ec5a40d7a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129268,
+      "author": "Finn763",
+      "author_id": 165816600,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T03:25:23.847Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-read-receipts-on-receive",
+        "head_sha": "7968468d7fdc0be787a0641173fef6c1cf46184e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
