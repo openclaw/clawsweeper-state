@@ -1,0 +1,75 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-131231",
+  "mode": "autonomous",
+  "run_id": "33131214099",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33131214099",
+  "head_sha": "6230a9d7c8b4bb103a6872de63add3f7e3b77701",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-131231.md",
+  "published_at": "2026-08-28T01:12:56.372Z",
+  "canonical": "#131231",
+  "canonical_issue": "#131231",
+  "canonical_pr": null,
+  "summary": "#131231 remains the canonical open bug. Current main at 903d6666 normalizes a descriptor lacking `value` into a field without `value` (extensions/browser/src/browser/form-fields.ts:35-41); managed Playwright and existing-session Chrome MCP then coerce it to an empty string (extensions/browser/src/browser/pw-tools-core.interactions.actions.ts:319-336; extensions/browser/src/browser/routes/agent.act.ts:651-660). A narrow new fix PR is appropriate, but this worker cannot edit or validate: filesystem is read-only, node_modules is absent, the focused Vitest command fails because `tsx` is unavailable, and required sibling ../codex source is unavailable for the Codex gate.",
+  "actions": [
+    {
+      "target": "#131231",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131231",
+      "candidate_fix": null,
+      "reason": "The linked browser items are closed, adjacent, and concern dependency availability, broader features, or auth; none covers malformed fill descriptors."
+    },
+    {
+      "target": "#131231",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131231",
+      "candidate_fix": null,
+      "reason": "Repair is source-proven but cannot be applied or verified in this read-only, dependency-free checkout."
+    },
+    {
+      "target": "#131231",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#131231",
+      "candidate_fix": null,
+      "reason": "A new PR is allowed by the job and is the narrowest repair path."
+    },
+    {
+      "target": "#131231",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#131231",
+      "candidate_fix": null,
+      "reason": "Blocked until a writable worker with dependencies and the required ../codex checkout executes the artifact."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair runner with dependencies installed and sibling ../codex source available; then apply the artifact, demonstrate the regression fails before the patch, and run the listed focused validation."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

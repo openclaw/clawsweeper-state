@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-131231"
 mode: "autonomous"
-run_id: "33123976868"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33123976868"
-head_sha: "d103c0cf5c98b0f3d4242bb4202c032856c36a49"
-workflow_conclusion: "failure"
+run_id: "33131214099"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33131214099"
+head_sha: "6230a9d7c8b4bb103a6872de63add3f7e3b77701"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-27T23:38:44.325Z"
-canonical: "https://github.com/openclaw/openclaw/issues/131231"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/131231"
+published_at: "2026-08-28T01:12:56.372Z"
+canonical: "#131231"
+canonical_issue: "#131231"
 canonical_pr: null
-actions_total: 2
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-131231
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33123976868](https://github.com/openclaw/clawsweeper/actions/runs/33123976868)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33131214099](https://github.com/openclaw/clawsweeper/actions/runs/33131214099)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/131231
+Canonical: #131231
 
 ## Summary
 
-#131231 is a narrow, source-proven browser fill validation defect on current main (0706f629c3b550f285d70767f9b869fa7ae5bb4c). A repair artifact is ready, but this worker cannot create or validate the branch: the checkout is read-only, dependencies are absent, and required sibling ../codex source could not be obtained.
+#131231 remains the canonical open bug. Current main at 903d6666 normalizes a descriptor lacking `value` into a field without `value` (extensions/browser/src/browser/form-fields.ts:35-41); managed Playwright and existing-session Chrome MCP then coerce it to an empty string (extensions/browser/src/browser/pw-tools-core.interactions.actions.ts:319-336; extensions/browser/src/browser/routes/agent.act.ts:651-660). A narrow new fix PR is appropriate, but this worker cannot edit or validate: filesystem is read-only, node_modules is absent, the focused Vitest command fails because `tsx` is unavailable, and required sibling ../codex source is unavailable for the Codex gate.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/131231
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #131231 | fix_needed | blocked | canonical | Implementation is blocked only by this worker environment. The deterministic executor needs a writable checkout with dependencies and the required ../codex source inspection before it can make the planned repair and run validation. |
-| cluster:issue-openclaw-openclaw-131231 | build_fix_artifact | planned |  | Narrow new-fix-PR plan for the canonical issue. |
+| #131231 | keep_canonical | planned | canonical | The linked browser items are closed, adjacent, and concern dependency availability, broader features, or auth; none covers malformed fill descriptors. |
+| #131231 | fix_needed | blocked | canonical | Repair is source-proven but cannot be applied or verified in this read-only, dependency-free checkout. |
+| #131231 | build_fix_artifact | planned | canonical | A new PR is allowed by the job and is the narrowest repair path. |
+| #131231 | open_fix_pr | blocked | canonical | Blocked until a writable worker with dependencies and the required ../codex checkout executes the artifact. |
 
 ## Needs Human
 
-- none
+- Provide a writable repair runner with dependencies installed and sibling ../codex source available; then apply the artifact, demonstrate the regression fails before the patch, and run the listed focused validation.
