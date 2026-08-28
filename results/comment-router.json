@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-28T12:44:17.426Z",
+  "updated_at": "2026-08-28T12:45:14.665Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1278:5449551630:2026-08-28T07:21:55Z:re_review",
-      "comment_id": "5449551630",
-      "comment_version_key": "5449551630:2026-08-28T07:21:55Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1278#issuecomment-5449551630",
-      "comment_created_at": "2026-08-28T07:09:47Z",
-      "comment_updated_at": "2026-08-28T07:21:55Z",
-      "comment_body_sha256": "1b8d7aecf4b07d6755b386e88ed3249bbdfd25df7fcf610fbb1a5c95bc38ea87",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1278,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T07:22:36.966Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/live-proof-process-completion",
-        "head_sha": "ee0cdf6b9738b41bda664e59151ca77120a88a6a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131078:5443677712:2026-08-28T07:13:42Z:clawsweeper_needs_human",
       "comment_id": "5443677712",
@@ -32865,6 +32818,39 @@
         "kind": "pull_request",
         "branch": "fix/tui-local-auth-diagnostics",
         "head_sha": "cb1aaf06f30e631f496f37333caa264b3d3a55ed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:31:4599109781:2026-08-28T12:44:16Z:clawsweeper_auto_repair",
+      "comment_id": "4599109781",
+      "comment_version_key": "4599109781:2026-08-28T12:44:16Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/31#issuecomment-4599109781",
+      "comment_created_at": "2026-06-02T05:55:04Z",
+      "comment_updated_at": "2026-08-28T12:44:16Z",
+      "comment_body_sha256": "55a0b745290f9595e89edd2a34476dfc0e475d520fa50ec1cd9b12f82df71514",
+      "repo": "openclaw/shellbench",
+      "issue_number": 31,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=140c17c30175d6e469e7ad6844cb9c6d49343056)",
+      "expected_head_sha": "140c17c30175d6e469e7ad6844cb9c6d49343056",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T12:45:14.665Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/spatio-temporal-dynamics-v2",
+        "head_sha": "140c17c30175d6e469e7ad6844cb9c6d49343056",
         "cluster_id": null,
         "job_path": null
       }
