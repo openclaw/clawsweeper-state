@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T01:31:21.800Z",
+  "updated_at": "2026-08-28T01:31:23.424Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-27T19:30:34Z:clawsweeper_auto_repair",
-      "comment_id": "5357688049",
-      "comment_version_key": "5357688049:2026-08-27T19:30:34Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5357688049",
-      "comment_created_at": "2026-08-20T15:00:20Z",
-      "comment_updated_at": "2026-08-27T19:30:34Z",
-      "comment_body_sha256": "6974217a81ac5e66ff6e2c6afa8e4714bd06c9a75dda62d358e6b73023808954",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ab05efe1d02c96f22a7793f4c79acd84bd40ddd0)",
-      "expected_head_sha": "ab05efe1d02c96f22a7793f4c79acd84bd40ddd0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-27T19:41:51.874Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/meaningful-traffic-signals",
-        "head_sha": "ab05efe1d02c96f22a7793f4c79acd84bd40ddd0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128270:5387494753:2026-08-27T19:36:05Z:clawsweeper_auto_repair",
       "comment_id": "5387494753",
@@ -32270,6 +32237,39 @@
       "status": "skipped",
       "processed_at": "2026-08-28T01:31:21.800Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126924:5364133840:2026-08-28T01:23:40Z:clawsweeper_needs_human",
+      "comment_id": "5364133840",
+      "comment_version_key": "5364133840:2026-08-28T01:23:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126924#issuecomment-5364133840",
+      "comment_created_at": "2026-08-21T01:37:12Z",
+      "comment_updated_at": "2026-08-28T01:23:40Z",
+      "comment_body_sha256": "4e511a8075f81ee6e619d36b4de751f936546c051aac9ffa8b271bb7cf6c7b8e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126924,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied script exercises registry code but stubs the Gateway wait response and does not run a real child or isolated Gateway. After adding... (sha=50fed8a51892dc88b7966ab1705f7e9866483cf8)",
+      "expected_head_sha": "50fed8a51892dc88b7966ab1705f7e9866483cf8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T01:31:23.424Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-wait-expiry-not-death",
+        "head_sha": "50fed8a51892dc88b7966ab1705f7e9866483cf8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
