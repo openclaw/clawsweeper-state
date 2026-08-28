@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-28T09:38:34.053Z",
+  "updated_at": "2026-08-28T09:40:24.973Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5375945768:2026-08-21T22:12:55Z:re_review",
-      "comment_id": "5375945768",
-      "comment_version_key": "5375945768:2026-08-21T22:12:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5375945768",
-      "comment_created_at": "2026-08-21T22:12:55Z",
-      "comment_updated_at": "2026-08-21T22:12:55Z",
-      "comment_body_sha256": "7511fa0f2e7f6d1764feaae310ba06e0cf17d951451e96601502b14b5527be33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T04:31:28.119Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5377799496:2026-08-22T04:10:47Z:re_review",
       "comment_id": "5377799496",
@@ -32745,6 +32718,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131604:5449651344:2026-08-28T09:39:32Z:clawsweeper_needs_human",
+      "comment_id": "5449651344",
+      "comment_version_key": "5449651344:2026-08-28T09:39:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131604#issuecomment-5449651344",
+      "comment_created_at": "2026-08-28T07:21:40Z",
+      "comment_updated_at": "2026-08-28T09:39:32Z",
+      "comment_body_sha256": "4ec9cd8e2b019237e0285e617d08347eec905a4c04514868055fe4ba80b23ec1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131604,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied material describes test-style evidence but provides no inspectable after-fix concurrent sandbox run showing intact records and mat...; Review finding: [P1] Serialize each complete memory-flush record — src/agents/sandbox/fs-bridge-mutation-helper.ts:440-443 - [P1] Choose the newline separator inside the record ap... (sha=3a124091ec05b3e07f88356ae0013c1c6e652678)",
+      "expected_head_sha": "3a124091ec05b3e07f88356ae0013c1c6e652678",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-28T09:40:24.973Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-117741-atomic-append",
+        "head_sha": "3a124091ec05b3e07f88356ae0013c1c6e652678",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
