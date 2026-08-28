@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-28T23:51:57.702Z",
+  "updated_at": "2026-08-28T23:51:58.666Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131216:5445957736:2026-08-28T19:37:45Z:clawsweeper_needs_human",
-      "comment_id": "5445957736",
-      "comment_version_key": "5445957736:2026-08-28T19:37:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131216#issuecomment-5445957736",
-      "comment_created_at": "2026-08-27T22:28:19Z",
-      "comment_updated_at": "2026-08-28T19:37:45Z",
-      "comment_body_sha256": "f488f6b89b3ae5e43615971cab83fda8d3f5b30d05d97551da37a8b95d82bac4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131216,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 14 net lines; that growth is the explicit optional metadata field at the LINE producer, shared normalizer, and display consumer, so it should remain one displ... (sha=1487995d5bf93940b6407442f38111100e610ca5)",
-      "expected_head_sha": "1487995d5bf93940b6407442f38111100e610ca5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T19:38:56.704Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-inbound-attachment-filename",
-        "head_sha": "1487995d5bf93940b6407442f38111100e610ca5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132051:5456968922:2026-08-28T19:38:23Z:clawsweeper_auto_repair",
       "comment_id": "5456968922",
@@ -33150,6 +33117,53 @@
         "kind": "pull_request",
         "branch": "fix/release-frozen-target-ci-compat",
         "head_sha": "e58f3700b4a40526e653578b8fa447e4083c838b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126887:5458951723:2026-08-28T23:51:16Z:re_review",
+      "comment_id": "5458951723",
+      "comment_version_key": "5458951723:2026-08-28T23:51:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126887#issuecomment-5458951723",
+      "comment_created_at": "2026-08-28T23:51:16Z",
+      "comment_updated_at": "2026-08-28T23:51:16Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126887,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-28T23:51:56.936Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-plugin-security-scanner",
+        "head_sha": "4b400b1f3063b8d6ed4d74167e882c1d1cfe1328",
         "cluster_id": null,
         "job_path": null
       },
