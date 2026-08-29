@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T08:48:48.518Z",
+  "updated_at": "2026-08-29T08:49:04.186Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1609:5460417903:2026-08-29T04:49:52Z:clawsweeper_needs_human",
-      "comment_id": "5460417903",
-      "comment_version_key": "5460417903:2026-08-29T04:49:52Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1609#issuecomment-5460417903",
-      "comment_created_at": "2026-08-29T04:49:52Z",
-      "comment_updated_at": "2026-08-29T04:49:52Z",
-      "comment_body_sha256": "7d0fdffc967e74946b5e8b2347fd6dc8591692e566b27ae7fb2bca4a82b82e9d",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1609,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native images intentionally retain root-disk application data, including any application credentials users stored there; operators must treat the documented private checkpoint images... (sha=40021f699a1f53fc52db20f08bcc2110b5ecd169)",
-      "expected_head_sha": "40021f699a1f53fc52db20f08bcc2110b5ecd169",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T04:50:33.135Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/incus-session-checkpoints",
-        "head_sha": "40021f699a1f53fc52db20f08bcc2110b5ecd169",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132367:5460420298:2026-08-29T04:50:27Z:clawsweeper_auto_repair",
       "comment_id": "5460420298",
@@ -32684,6 +32651,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132032:5461384776:2026-08-29T08:48:17Z:re_review",
+      "comment_id": "5461384776",
+      "comment_version_key": "5461384776:2026-08-29T08:48:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132032#issuecomment-5461384776",
+      "comment_created_at": "2026-08-29T08:48:17Z",
+      "comment_updated_at": "2026-08-29T08:48:17Z",
+      "comment_body_sha256": "5f707fe3b612eccd15f04b562f9683fe8cdfce459870e9a6989dc58b8f316d99",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132032,
+      "author": "pengzh1",
+      "author_id": 24854675,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T08:49:02.545Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/requester-settle-wake-dedup",
+        "head_sha": "b02fec8ebee1b17d3f258aac55fbda7b3deea460",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
