@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T02:21:14.392Z",
+  "updated_at": "2026-08-29T02:21:15.649Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132040:5458242860:2026-08-28T22:04:59Z:re_review",
-      "comment_id": "5458242860",
-      "comment_version_key": "5458242860:2026-08-28T22:04:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132040#issuecomment-5458242860",
-      "comment_created_at": "2026-08-28T22:04:59Z",
-      "comment_updated_at": "2026-08-28T22:04:59Z",
-      "comment_body_sha256": "fee88fe813964d812c337cd34a40ab6f83c087b3f32fbc366e2219aea28fdc33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132040,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T22:20:10.359Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/acp-accepted-config-feedback",
-        "head_sha": "5137a92c4de030ce451227c3f904153a3fbf21b2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132040:5456766065:2026-08-28T22:19:09Z:clawsweeper_auto_repair",
       "comment_id": "5456766065",
@@ -33050,6 +33003,39 @@
         "kind": "pull_request",
         "branch": "fix/discover-onvif-port-in-host",
         "head_sha": "e57e3c109c2df61ef43856a7137d1be4160d50dc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2502:5123499528:2026-08-29T02:20:12Z:clawsweeper_needs_human",
+      "comment_id": "5123499528",
+      "comment_version_key": "5123499528:2026-08-29T02:20:12Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2502#issuecomment-5123499528",
+      "comment_created_at": "2026-07-29T21:22:17Z",
+      "comment_updated_at": "2026-08-29T02:20:12Z",
+      "comment_body_sha256": "b782908a132e85ef0d1fdabc867a39158b74f4a636e74e081d6308b23832d8ea",
+      "repo": "steipete/codexbar",
+      "issue_number": 2502,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed strategy resolver can send a selected API-token-account refresh through an ambient Hyper browser se...; Review finding: [P1] Regenerate the current provider manifests — Sources/CodexBarCore/Providers/ProviderDescriptor.swift:169 - [P2] Honor selected Hyper API-token accounts — Sourc... (sha=27b802af3bab6dc85f22eadb5f6505362539cabe)",
+      "expected_head_sha": "27b802af3bab6dc85f22eadb5f6505362539cabe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T02:21:15.649Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/charm-hyper-combined",
+        "head_sha": "27b802af3bab6dc85f22eadb5f6505362539cabe",
         "cluster_id": null,
         "job_path": null
       }
