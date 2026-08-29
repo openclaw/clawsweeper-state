@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T21:39:07.408Z",
+  "updated_at": "2026-08-29T21:40:21.877Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132622:5462924463:2026-08-29T16:11:52Z:clawsweeper_auto_repair",
-      "comment_id": "5462924463",
-      "comment_version_key": "5462924463:2026-08-29T16:11:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132622#issuecomment-5462924463",
-      "comment_created_at": "2026-08-29T14:20:31Z",
-      "comment_updated_at": "2026-08-29T16:11:52Z",
-      "comment_body_sha256": "f0a28e97a865f021c6a5239b7580549d5a78516b45c27d38e5c4a8ab5d1699ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132622,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=38503b6ec48b7275adb35f079cb640170dc92200)",
-      "expected_head_sha": "38503b6ec48b7275adb35f079cb640170dc92200",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T16:12:50.703Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/feishu-group-management-130823",
-        "head_sha": "38503b6ec48b7275adb35f079cb640170dc92200",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132703:5463469522:2026-08-29T16:12:58Z:clawsweeper_needs_human",
       "comment_id": "5463469522",
@@ -32792,6 +32759,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132513:5465036285:2026-08-29T21:39:44Z:re_review",
+      "comment_id": "5465036285",
+      "comment_version_key": "5465036285:2026-08-29T21:39:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132513#issuecomment-5465036285",
+      "comment_created_at": "2026-08-29T21:39:44Z",
+      "comment_updated_at": "2026-08-29T21:39:44Z",
+      "comment_body_sha256": "4e82478c4cc01fff886e410da2f520981d07ca0b1e7c65ebfeed27c3cf5a5f61",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132513,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T21:40:19.394Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-frozen-plugin-security-inventory",
+        "head_sha": "85dc42481e7458338a56775466633a5126f48fa0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
