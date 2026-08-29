@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T02:28:55.275Z",
+  "updated_at": "2026-08-29T02:30:35.551Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131977:5455840178:2026-08-28T21:45:11Z:clawsweeper_needs_human",
-      "comment_id": "5455840178",
-      "comment_version_key": "5455840178:2026-08-28T21:45:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131977#issuecomment-5455840178",
-      "comment_created_at": "2026-08-28T17:47:51Z",
-      "comment_updated_at": "2026-08-28T21:45:11Z",
-      "comment_body_sha256": "fdd8e4390821703cea6dabd4517f7821613120ada1e915bec755117703b3be9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131977,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix is production net +16 lines in the shared serializer; its per-message Set is the direct mechanism that preserves a bounded omission fact, but repository policy asks for ex... (sha=3d16345e936d1ff62c12d48fec8df2e9628aabf4)",
-      "expected_head_sha": "3d16345e936d1ff62c12d48fec8df2e9628aabf4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T22:23:53.417Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/compaction-image-marker",
-        "head_sha": "3d16345e936d1ff62c12d48fec8df2e9628aabf4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132107:5457820322:2026-08-28T22:22:33Z:clawsweeper_auto_repair",
       "comment_id": "5457820322",
@@ -32999,6 +32966,53 @@
       "status": "skipped",
       "processed_at": "2026-08-29T02:28:55.275Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130958:5459789906:2026-08-29T02:29:46Z:re_review",
+      "comment_id": "5459789906",
+      "comment_version_key": "5459789906:2026-08-29T02:29:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130958#issuecomment-5459789906",
+      "comment_created_at": "2026-08-29T02:29:46Z",
+      "comment_updated_at": "2026-08-29T02:29:46Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130958,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T02:30:33.666Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/feature-20837-channel-context",
+        "head_sha": "c4b9d93ca021274d6296f64b23792b349869f6c1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
