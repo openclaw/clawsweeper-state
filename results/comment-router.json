@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T06:13:45.545Z",
+  "updated_at": "2026-08-29T06:13:53.665Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:152:5297636076:2026-08-29T02:15:55Z:clawsweeper_needs_human",
-      "comment_id": "5297636076",
-      "comment_version_key": "5297636076:2026-08-29T02:15:55Z",
-      "comment_url": "https://github.com/openclaw/slacrawl/pull/152#issuecomment-5297636076",
-      "comment_created_at": "2026-08-14T20:03:19Z",
-      "comment_updated_at": "2026-08-29T02:15:55Z",
-      "comment_body_sha256": "fd97982f2098297e5db14ece11025f65101e41869aa3c3a8588a0110cebae41b",
-      "repo": "openclaw/slacrawl",
-      "issue_number": 152,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as dirty; landing it would require a refreshed merge decision even though its intended heading is already present on current main. (sha=a3c85c2aa18e44b7878fc4b4e28f76224f2bd7bf)",
-      "expected_head_sha": "a3c85c2aa18e44b7878fc4b4e28f76224f2bd7bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T02:16:45.136Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/next-unreleased-0.8.5-31835385176",
-        "head_sha": "a3c85c2aa18e44b7878fc4b4e28f76224f2bd7bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131503:5448434448:2026-08-29T02:10:24Z:clawsweeper_needs_human",
       "comment_id": "5448434448",
@@ -32043,6 +32010,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1293:5460748867:2026-08-29T06:11:57Z:re_review",
+      "comment_id": "5460748867",
+      "comment_version_key": "5460748867:2026-08-29T06:11:57Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1293#issuecomment-5460748867",
+      "comment_created_at": "2026-08-29T06:11:57Z",
+      "comment_updated_at": "2026-08-29T06:11:57Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1293,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T06:13:51.757Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hosted-review-secret-scan",
+        "head_sha": "efd611760cf18ec855f8717873b0184be6a6b55c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
