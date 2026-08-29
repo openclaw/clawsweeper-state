@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-29T01:09:50.868Z",
+  "updated_at": "2026-08-29T01:09:52.053Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132096:5457728017:2026-08-28T21:02:58Z:automerge",
-      "comment_id": "5457728017",
-      "comment_version_key": "5457728017:2026-08-28T21:02:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132096#issuecomment-5457728017",
-      "comment_created_at": "2026-08-28T21:02:58Z",
-      "comment_updated_at": "2026-08-28T21:02:58Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132096,
-      "author": "omarshahine",
-      "author_id": 10343873,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T21:03:31.884Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-mcp-app-sandbox",
-        "head_sha": "c9d43ab3e1a1bfb3d1c291eb1612b893831a0209",
-        "cluster_id": "automerge-openclaw-openclaw-132096",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-132096.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-132096.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131967:5455712704:2026-08-28T21:03:40Z:clawsweeper_needs_human",
       "comment_id": "5455712704",
@@ -32874,6 +32815,39 @@
         "kind": "pull_request",
         "branch": "fix/extended-stable-2026-6-35-tar-security",
         "head_sha": "fbc5348a96b75b90474eea6d1ecbeb51f56cdbe2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132251:5459387541:2026-08-29T01:08:57Z:clawsweeper_needs_human",
+      "comment_id": "5459387541",
+      "comment_version_key": "5459387541:2026-08-29T01:08:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132251#issuecomment-5459387541",
+      "comment_created_at": "2026-08-29T01:08:57Z",
+      "comment_updated_at": "2026-08-29T01:08:57Z",
+      "comment_body_sha256": "880996cd690fc3dc5e3940bfed3f5ea0a69d31ea222280c1f4d7f8115a029042",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132251,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the macOS CI execution path; until the exact-head macos-swift job completes, a runner-specific Node, cache, or native-test launch failure remains unverified. (sha=35a40f28c9b507fc8b1bb51866a7031a5b542ed2)",
+      "expected_head_sha": "35a40f28c9b507fc8b1bb51866a7031a5b542ed2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T01:09:52.053Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/goofy-raman-991c30",
+        "head_sha": "35a40f28c9b507fc8b1bb51866a7031a5b542ed2",
         "cluster_id": null,
         "job_path": null
       }
