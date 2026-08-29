@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T23:12:39.259Z",
+  "updated_at": "2026-08-29T23:12:40.659Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132450:5464024982:2026-08-29T18:08:43Z:re_review",
-      "comment_id": "5464024982",
-      "comment_version_key": "5464024982:2026-08-29T18:08:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132450#issuecomment-5464024982",
-      "comment_created_at": "2026-08-29T18:08:43Z",
-      "comment_updated_at": "2026-08-29T18:08:43Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132450,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T18:09:27.807Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-controls",
-        "head_sha": "b5bc476ec2dc651d613f8fd3f5f00805cdc7c9d8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5464024987:2026-08-29T18:08:43Z:re_review",
       "comment_id": "5464024987",
@@ -32916,6 +32869,39 @@
         "kind": "pull_request",
         "branch": "fix/f014-hostinger-sleep-ctx",
         "head_sha": "2e9000821cd54971def21c63d7b59644432d1ace",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:331:5367552643:2026-08-29T22:53:31Z:clawsweeper_needs_human",
+      "comment_id": "5367552643",
+      "comment_version_key": "5367552643:2026-08-29T22:53:31Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/331#issuecomment-5367552643",
+      "comment_created_at": "2026-08-21T08:37:24Z",
+      "comment_updated_at": "2026-08-29T22:53:31Z",
+      "comment_body_sha256": "40d11ff2a5510e67a92d3a50ae1fb4b822f49304514371539749f219569bfa08",
+      "repo": "openclaw/mcporter",
+      "issue_number": 331,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The introduced suite calls the real validation guards, and the PR body records isolated Vitest and mutation results, but it provides no after-c... (sha=93d52128b21606468d302155e568f3775c2d2051)",
+      "expected_head_sha": "93d52128b21606468d302155e568f3775c2d2051",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T23:12:40.659Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/oauth-credential-validation-coverage",
+        "head_sha": "93d52128b21606468d302155e568f3775c2d2051",
         "cluster_id": null,
         "job_path": null
       }
