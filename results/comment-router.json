@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T19:47:48.844Z",
+  "updated_at": "2026-08-29T19:48:01.538Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/oracle:406:5379895630:2026-08-29T14:38:42Z:clawsweeper_auto_repair",
-      "comment_id": "5379895630",
-      "comment_version_key": "5379895630:2026-08-29T14:38:42Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/406#issuecomment-5379895630",
-      "comment_created_at": "2026-08-22T11:06:12Z",
-      "comment_updated_at": "2026-08-29T14:38:42Z",
-      "comment_body_sha256": "ab8dc46cdb0b4517b0e66861c49ac6f94e7b5d3ba2eab9a9a08a7d820879d145",
-      "repo": "steipete/oracle",
-      "issue_number": 406,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ea6cc378101e72378812f7c6335da16382f95af6)",
-      "expected_head_sha": "ea6cc378101e72378812f7c6335da16382f95af6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T14:39:26.152Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/browser-zip-default-bundle",
-        "head_sha": "ea6cc378101e72378812f7c6335da16382f95af6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129416:5413307823:2026-08-29T14:38:56Z:clawsweeper_needs_human",
       "comment_id": "5413307823",
@@ -33211,6 +33178,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T19:47:48.844Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132801:5464486222:2026-08-29T19:47:07Z:clawsweeper_needs_human",
+      "comment_id": "5464486222",
+      "comment_version_key": "5464486222:2026-08-29T19:47:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132801#issuecomment-5464486222",
+      "comment_created_at": "2026-08-29T19:47:07Z",
+      "comment_updated_at": "2026-08-29T19:47:07Z",
+      "comment_body_sha256": "77b3810c89794ac2dad3b50e5ef917f18a9c757bd917873d0221a7c77e11b9e0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132801,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve auth ownership across stateless settlement (P1)** - A successful sessionMode: \"none\" run clears its CLI binding, so the next turn has no old profile or epoch for resolveCliSessionReuse to invalidate. Th...; Review finding: [P1] Preserve auth ownership across stateless settlement — src/agents/cli-runner/prepare.ts:1729-1734 - [medium] Cross-auth raw transcript reseed — src/agents/cli-... (sha=1c2e1cd58e3995038a1d3eb814b2581ce7e75933)",
+      "expected_head_sha": "1c2e1cd58e3995038a1d3eb814b2581ce7e75933",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T19:48:01.538Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-none-history",
+        "head_sha": "1c2e1cd58e3995038a1d3eb814b2581ce7e75933",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
