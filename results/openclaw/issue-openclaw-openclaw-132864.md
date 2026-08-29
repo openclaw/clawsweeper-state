@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-132864"
 mode: "autonomous"
-run_id: "33277687430"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33277687430"
+run_id: "33280096564"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33280096564"
 head_sha: "8d11c21558ba90ac6812b80b95efd0dd9b0aa936"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-29T22:26:25.301Z"
-canonical: "https://github.com/openclaw/openclaw/issues/132864"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/132864"
+published_at: "2026-08-29T23:21:51.342Z"
+canonical: "#132864"
+canonical_issue: "#132864"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-132864
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33277687430](https://github.com/openclaw/clawsweeper/actions/runs/33277687430)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33280096564](https://github.com/openclaw/clawsweeper/actions/runs/33280096564)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/132864
+Canonical: #132864
 
 ## Summary
 
-#132864 remains a source-reproducible canonical bug: build identity is treated as mismatched before restart-health has observed a reachable Gateway. A narrow fix/PR plan is ready, but implementation is blocked in this worker because the checkout is read-only, dependencies are absent, and the mandatory sibling Codex source checkout cannot be created or inspected.
+#132864 is a valid, narrow canonical bug. Current main turns an unobserved build identity into an immediate mismatch before the detached restart can run. A writable, Codex-gated worker is required to apply and validate the owner-boundary fix.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/132864
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/132864
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #132864 | fix_needed | planned | canonical | No viable open PR exists; the hydrated issue is open and canonical. |
-| cluster:issue-openclaw-openclaw-132864 | build_fix_artifact | planned |  | Artifact is ready for an executor with a writable checkout, installed dependencies, and the mandatory sibling Codex source checkout. |
-| cluster:issue-openclaw-openclaw-132864 | open_fix_pr | blocked |  | Blocked only on writable execution prerequisites; no maintainer product decision is needed. |
+| #132864 | fix_needed | planned | canonical | Owner-boundary repair is clear; no issue closure or merge is authorized. |
+| #132864 | build_fix_artifact | planned | canonical | Create the narrow artifact for a writable repair worker. |
+| #132864 | open_fix_pr | blocked | canonical | A branch, commit, PR, and required validation cannot be produced in the read-only environment. |
 
 ## Needs Human
 
-- none
+- Rerun in a writable checkout with dependencies available and sibling ../codex source present, so the mandatory direct Codex-source check, regression reproduction, validation, and PR creation can complete.

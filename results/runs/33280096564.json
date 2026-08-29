@@ -1,0 +1,65 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-132864",
+  "mode": "autonomous",
+  "run_id": "33280096564",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33280096564",
+  "head_sha": "8d11c21558ba90ac6812b80b95efd0dd9b0aa936",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-132864.md",
+  "published_at": "2026-08-29T23:21:51.342Z",
+  "canonical": "#132864",
+  "canonical_issue": "#132864",
+  "canonical_pr": null,
+  "summary": "#132864 is a valid, narrow canonical bug. Current main turns an unobserved build identity into an immediate mismatch before the detached restart can run. A writable, Codex-gated worker is required to apply and validate the owner-boundary fix.",
+  "actions": [
+    {
+      "target": "#132864",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#132864",
+      "candidate_fix": null,
+      "reason": "Owner-boundary repair is clear; no issue closure or merge is authorized."
+    },
+    {
+      "target": "#132864",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#132864",
+      "candidate_fix": null,
+      "reason": "Create the narrow artifact for a writable repair worker."
+    },
+    {
+      "target": "#132864",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132864",
+      "candidate_fix": null,
+      "reason": "A branch, commit, PR, and required validation cannot be produced in the read-only environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Rerun in a writable checkout with dependencies available and sibling ../codex source present, so the mandatory direct Codex-source check, regression reproduction, validation, and PR creation can complete."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
