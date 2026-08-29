@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T12:19:27.351Z",
+  "updated_at": "2026-08-29T12:19:27.416Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116604:5137949038:2026-08-29T07:19:20Z:clawsweeper_needs_human",
-      "comment_id": "5137949038",
-      "comment_version_key": "5137949038:2026-08-29T07:19:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116604#issuecomment-5137949038",
-      "comment_created_at": "2026-07-31T01:01:06Z",
-      "comment_updated_at": "2026-08-29T07:19:20Z",
-      "comment_body_sha256": "0059588fb183c3e81f0275b9e4a36d7919e52e8ff4b29ac70990ee807e41f199",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116604,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied projector-level test output is useful supplemental evidence, but no after-fix Codex app-server-to-Control-UI trace or capture is p...; Review finding: [P1] Exclude async messages from delivered-answer selection — extensions/codex/src/app-server/event-projector-assistant-delivered-answer.ts:23 - [medium] Async upd... (sha=6d87f3207c0c18016327322ebdb776c353f36a1e)",
-      "expected_head_sha": "6d87f3207c0c18016327322ebdb776c353f36a1e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T07:27:16.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-projector-trailing-no-reply",
-        "head_sha": "6d87f3207c0c18016327322ebdb776c353f36a1e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117220:5149895861:2026-08-29T07:16:20Z:clawsweeper_auto_repair",
       "comment_id": "5149895861",
@@ -32412,6 +32379,53 @@
         "kind": "pull_request",
         "branch": "fix/sync-private-origin-fallback",
         "head_sha": "a3bedb732ab8e9cb2e579bd5fb01aa10385b922b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1624:5462376995:2026-08-29T12:18:43Z:re_review",
+      "comment_id": "5462376995",
+      "comment_version_key": "5462376995:2026-08-29T12:18:43Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1624#issuecomment-5462376995",
+      "comment_created_at": "2026-08-29T12:18:43Z",
+      "comment_updated_at": "2026-08-29T12:18:43Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1624,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T12:19:25.856Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sync-transactional-overlay",
+        "head_sha": "97e67440b038a9b68111723eb034e13b8754e86c",
         "cluster_id": null,
         "job_path": null
       },
