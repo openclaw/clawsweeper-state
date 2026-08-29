@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T13:57:03.743Z",
+  "updated_at": "2026-08-29T13:57:21.565Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3236:5461168873:2026-08-29T07:55:57Z:re_review",
-      "comment_id": "5461168873",
-      "comment_version_key": "5461168873:2026-08-29T07:55:57Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3236#issuecomment-5461168873",
-      "comment_created_at": "2026-08-29T07:55:57Z",
-      "comment_updated_at": "2026-08-29T07:55:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3236,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T08:43:37.614Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/grok-build-tokens",
-        "head_sha": "d3ee3eb8dccfc29d2e71905e6b1b182f9030ac78",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3236:5438113647:2026-08-29T08:42:56Z:clawsweeper_auto_repair",
       "comment_id": "5438113647",
@@ -32093,6 +32046,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T13:57:03.743Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3196:5416108606:2026-08-29T13:56:29Z:clawsweeper_needs_human",
+      "comment_id": "5416108606",
+      "comment_version_key": "5416108606:2026-08-29T13:56:29Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3196#issuecomment-5416108606",
+      "comment_created_at": "2026-08-25T20:09:28Z",
+      "comment_updated_at": "2026-08-29T13:56:29Z",
+      "comment_body_sha256": "d341b57ac223b973e2aa5cee150269da9b3b54db3f9ac12488ea2424bce94195",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3196,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This introduces a synced provider-config field, so a visibility choice on one device can intentionally alter the menu presentation on another device. (sha=0aca04968aea58f02d4a34c55e2d526f7508d38b)",
+      "expected_head_sha": "0aca04968aea58f02d4a34c55e2d526f7508d38b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T13:57:21.565Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/provider-usage-visibility",
+        "head_sha": "0aca04968aea58f02d4a34c55e2d526f7508d38b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
