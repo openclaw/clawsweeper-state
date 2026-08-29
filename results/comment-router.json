@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T05:59:30.336Z",
+  "updated_at": "2026-08-29T06:01:51.762Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124418:5305792040:2026-08-29T01:49:17Z:clawsweeper_auto_repair",
-      "comment_id": "5305792040",
-      "comment_version_key": "5305792040:2026-08-29T01:49:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124418#issuecomment-5305792040",
-      "comment_created_at": "2026-08-16T04:52:07Z",
-      "comment_updated_at": "2026-08-29T01:49:17Z",
-      "comment_body_sha256": "033a11ef5c52b77bb3aa21210aeb7d4e877b0b3325962b27da9c858ebf52c1a6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124418,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c172ec9f2879ae74e0a324bbdda59640bb027f5d)",
-      "expected_head_sha": "c172ec9f2879ae74e0a324bbdda59640bb027f5d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T02:01:58.628Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-124390-apply-patch-preserve-bytes",
-        "head_sha": "c172ec9f2879ae74e0a324bbdda59640bb027f5d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124472:5306383640:2026-08-29T01:49:23Z:clawsweeper_auto_repair",
       "comment_id": "5306383640",
@@ -32009,6 +31976,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131009:5442215821:2026-08-29T06:00:30Z:clawsweeper_needs_human",
+      "comment_id": "5442215821",
+      "comment_version_key": "5442215821:2026-08-29T06:00:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131009#issuecomment-5442215821",
+      "comment_created_at": "2026-08-27T16:37:14Z",
+      "comment_updated_at": "2026-08-29T06:00:30Z",
+      "comment_body_sha256": "5dea37fc6cb8432294c031bc3302c0f965b4420ffc1732bd77998a298baf8cf2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131009,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes the behavior of existing Crabbox lease reconciliation; without direct Crabbox source/contract inspection, the semantics of provider-reported terminal states and nonzero... (sha=32b3973ecc77fbe12f9231691e2a143cca9a2db2)",
+      "expected_head_sha": "32b3973ecc77fbe12f9231691e2a143cca9a2db2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T06:01:51.762Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/crabbox-class-omission-130966",
+        "head_sha": "32b3973ecc77fbe12f9231691e2a143cca9a2db2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
