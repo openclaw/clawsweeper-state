@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T00:09:33.720Z",
+  "updated_at": "2026-08-29T00:09:39.904Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113611:5078242723:2026-08-28T20:18:27Z:clawsweeper_needs_human",
-      "comment_id": "5078242723",
-      "comment_version_key": "5078242723:2026-08-28T20:18:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113611#issuecomment-5078242723",
-      "comment_created_at": "2026-07-25T11:01:27Z",
-      "comment_updated_at": "2026-08-28T20:18:27Z",
-      "comment_body_sha256": "fa8d779e3225eaad2d26ee7b7296ce38029ef79d50a3401a01f75284cc4fe3df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113611,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is generated Feishu config validation, but the supplied terminal trace compiles only its JSON schema and...; Review finding: [P1] Retain HTTPS enforcement in generated validation — extensions/feishu/src/config-schema.ts:61-64 - [P1] Normalize domains on the actual config-to-runtime path... (sha=af0697c31b6e7ba77e95e09c8babac35edcaca78)",
-      "expected_head_sha": "af0697c31b6e7ba77e95e09c8babac35edcaca78",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T20:34:42.287Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-https-domain-case",
-        "head_sha": "af0697c31b6e7ba77e95e09c8babac35edcaca78",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112512:5128467595:2026-08-28T17:04:27Z:clawsweeper_auto_repair",
       "comment_id": "5128467595",
@@ -32663,6 +32630,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131872:5459054066:2026-08-29T00:08:50Z:re_review",
+      "comment_id": "5459054066",
+      "comment_version_key": "5459054066:2026-08-29T00:08:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131872#issuecomment-5459054066",
+      "comment_created_at": "2026-08-29T00:08:50Z",
+      "comment_updated_at": "2026-08-29T00:08:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131872,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T00:09:36.792Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-sticker-projection",
+        "head_sha": "0de21d8b3cd1c4f0eed2921ec4a3c44d1ddf6b4b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
