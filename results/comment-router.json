@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T10:28:24.927Z",
+  "updated_at": "2026-08-29T10:28:50.051Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128175:5460691585:2026-08-29T05:57:30Z:re_review",
-      "comment_id": "5460691585",
-      "comment_version_key": "5460691585:2026-08-29T05:57:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128175#issuecomment-5460691585",
-      "comment_created_at": "2026-08-29T05:57:30Z",
-      "comment_updated_at": "2026-08-29T05:57:30Z",
-      "comment_body_sha256": "dd9190cd296c2553b08bdb72dd6f688fc1c7ef10c7acf16367b62d5bd786926d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128175,
-      "author": "TheAngryPit",
-      "author_id": 7040636,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T06:03:31.293Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-typed-gateway-auth-secretrefs",
-        "head_sha": "1b72615e3a95a94fc4b2b61ed24500b21817cf00",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132412:5460712106:2026-08-29T06:02:39Z:clawsweeper_needs_human",
       "comment_id": "5460712106",
@@ -32398,6 +32351,39 @@
         "kind": "pull_request",
         "branch": "steipete/dazzling-vaughan-6f6d8e",
         "head_sha": "83fbc75385d64ee7b2af63b1d758d1f336005917",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132544:5461799424:2026-08-29T10:28:09Z:clawsweeper_needs_human",
+      "comment_id": "5461799424",
+      "comment_version_key": "5461799424:2026-08-29T10:28:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132544#issuecomment-5461799424",
+      "comment_created_at": "2026-08-29T10:28:09Z",
+      "comment_updated_at": "2026-08-29T10:28:09Z",
+      "comment_body_sha256": "8f2b19c5fba028220d845346e5807682d2bb9240cd32bc82d35bb2df747263f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132544,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing CLI sessions that accidentally inherited an API-discovered 1M budget will return to their native 200K budget on the next preparation; confirm the intended upgrade behavior wi... (sha=7094061964c65a0df0ae7562ed5a5bf5fdd3ff90)",
+      "expected_head_sha": "7094061964c65a0df0ae7562ed5a5bf5fdd3ff90",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T10:28:50.051Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cli-owned-context-budget",
+        "head_sha": "7094061964c65a0df0ae7562ed5a5bf5fdd3ff90",
         "cluster_id": null,
         "job_path": null
       }
