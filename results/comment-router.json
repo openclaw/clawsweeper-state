@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T04:47:06.274Z",
+  "updated_at": "2026-08-29T04:47:23.185Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131272:5459187000:2026-08-29T00:30:29Z:re_review",
-      "comment_id": "5459187000",
-      "comment_version_key": "5459187000:2026-08-29T00:30:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131272#issuecomment-5459187000",
-      "comment_created_at": "2026-08-29T00:30:29Z",
-      "comment_updated_at": "2026-08-29T00:30:29Z",
-      "comment_body_sha256": "888d3ba87d6b8f4b04bd9bff66e536bd2a751cab26cc218152c29d6b2b3c3055",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131272,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T00:31:08.348Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/turn-on-fast-mode",
-        "head_sha": "3415266e76158358587839eb5bf55aa5913e3b3f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132096:5457701076:2026-08-29T00:30:09Z:clawsweeper_needs_human",
       "comment_id": "5457701076",
@@ -32039,6 +31992,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132352:5460404760:2026-08-29T04:46:37Z:clawsweeper_needs_human",
+      "comment_id": "5460404760",
+      "comment_version_key": "5460404760:2026-08-29T04:46:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132352#issuecomment-5460404760",
+      "comment_created_at": "2026-08-29T04:46:37Z",
+      "comment_updated_at": "2026-08-29T04:46:37Z",
+      "comment_body_sha256": "e21bd598529cb96c56a9fa890db57869943f886579ab58b2705391b46689f2db",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132352,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally adds one callable export to the public Plugin SDK, so its documented default-alias semantics become a compatibility contract for third-party plugins. (sha=9f6ba1ee3959b2b53bb3976da53f908ab2d44982)",
+      "expected_head_sha": "9f6ba1ee3959b2b53bb3976da53f908ab2d44982",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T04:47:23.185Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/gracious-aryabhata-a82dba",
+        "head_sha": "9f6ba1ee3959b2b53bb3976da53f908ab2d44982",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
