@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T12:15:29.355Z",
+  "updated_at": "2026-08-29T12:15:32.156Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131431:5461001100:2026-08-29T07:13:51Z:re_review",
-      "comment_id": "5461001100",
-      "comment_version_key": "5461001100:2026-08-29T07:13:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131431#issuecomment-5461001100",
-      "comment_created_at": "2026-08-29T07:13:51Z",
-      "comment_updated_at": "2026-08-29T07:13:51Z",
-      "comment_body_sha256": "7245658d1368a8012404d09cd2c92e08b843e9669954c9a3c50354ac3d16bca9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131431,
-      "author": "zenglingbiao",
-      "author_id": 290951975,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — addressed the p1 finding: the save now resolves an existing final settings.json symlink via the repo's existing resolvejsonsavetarget (src/infra/json-file.ts) and atomically replaces the target, so the link survives and the operator-managed target receives the update (matching the pre-atomic writefilesync-through-link behavior). new regression test: final symlink survives while target receives new json. also fixed both ci failures on the previous head: fault injection now hooks the temp-file fs.opensync + writefilesync(fd) path (fs-safe 0.5.6), clearing the no-base-to-string lint error too. merged current main; new head 333921a343. three-run screenshot proof (main torn-write / previous head symlink regression / fixed head) on proof-assets-20260828, embedded in the pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T07:27:08.006Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/settings-json-atomic-write",
-        "head_sha": "333921a3435c5e6f82fba9a0b61d8b2d1f18d179",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132251:5461027097:2026-08-29T07:20:08Z:re_review",
       "comment_id": "5461027097",
@@ -32467,6 +32420,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T12:15:29.355Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:62:5303306179:2026-08-29T12:12:36Z:clawsweeper_needs_human",
+      "comment_id": "5303306179",
+      "comment_version_key": "5303306179:2026-08-29T12:12:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/62#issuecomment-5303306179",
+      "comment_created_at": "2026-08-15T17:05:32Z",
+      "comment_updated_at": "2026-08-29T12:12:36Z",
+      "comment_body_sha256": "a085c981c1a73350f90c150dfa53b40ab911bd4c6f287b439ceadde63faece7b",
+      "repo": "openclaw/openclaw-ansible",
+      "issue_number": 62,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally makes future malformed standalone install or deployment playbooks fail CI; this is the requested enforcement expansion. (sha=fdce460a7362484cf12a0d8c8ec5807c967f2d6f)",
+      "expected_head_sha": "fdce460a7362484cf12a0d8c8ec5807c967f2d6f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T12:15:32.156Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/validate-deploy-playbook",
+        "head_sha": "fdce460a7362484cf12a0d8c8ec5807c967f2d6f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
