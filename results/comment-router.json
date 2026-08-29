@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T06:34:12.451Z",
+  "updated_at": "2026-08-29T06:34:16.220Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1595:5459862921:2026-08-29T02:46:11Z:re_review",
-      "comment_id": "5459862921",
-      "comment_version_key": "5459862921:2026-08-29T02:46:11Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1595#issuecomment-5459862921",
-      "comment_created_at": "2026-08-29T02:46:11Z",
-      "comment_updated_at": "2026-08-29T02:46:11Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1595,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T02:46:58.195Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gcp-created-image-provenance",
-        "head_sha": "c4253fa4180b9672cd02c282948e01c921611bf7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131973:5459864883:2026-08-29T02:46:35Z:re_review",
       "comment_id": "5459864883",
@@ -31777,6 +31730,39 @@
         "kind": "pull_request",
         "branch": "steipete/agent-secret-requests-4ae354",
         "head_sha": "a7f5a09a3ccdfb67c102e680f0ba113b56d2be93",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132396:5460618663:2026-08-29T06:32:32Z:clawsweeper_needs_human",
+      "comment_id": "5460618663",
+      "comment_version_key": "5460618663:2026-08-29T06:32:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132396#issuecomment-5460618663",
+      "comment_created_at": "2026-08-29T05:39:51Z",
+      "comment_updated_at": "2026-08-29T06:32:32Z",
+      "comment_body_sha256": "f406864c7047cb89254399d044557af42bfadf6bd02a81fb278c7b08690f2704",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132396,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the direct loader’s busy-lock retry loop. The supplied real-lock trace uses an 80 ms caller override t... (sha=d65bd1807e90921a3d5e8bf9c9e5716710fc1874)",
+      "expected_head_sha": "d65bd1807e90921a3d5e8bf9c9e5716710fc1874",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T06:34:16.220Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/usage-cost-direct-refresh-deadline",
+        "head_sha": "d65bd1807e90921a3d5e8bf9c9e5716710fc1874",
         "cluster_id": null,
         "job_path": null
       }
