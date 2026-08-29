@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T20:19:36.533Z",
+  "updated_at": "2026-08-29T20:20:28.972Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102212:4916091285:2026-08-29T15:17:37Z:clawsweeper_needs_human",
-      "comment_id": "4916091285",
-      "comment_version_key": "4916091285:2026-08-29T15:17:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/102212#issuecomment-4916091285",
-      "comment_created_at": "2026-07-08T14:53:12Z",
-      "comment_updated_at": "2026-08-29T15:17:37Z",
-      "comment_body_sha256": "470eeb50cf6b9bf10be50f58d24884f5c792070cd128e22748826b39dfaf39bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 102212,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is Gateway’s reload planner, whose reloadPlugins action reaches the plugin activation and service-restart... (sha=04ed2f5267206ab7a63b98fcf2d2ae7d0c22a14b)",
-      "expected_head_sha": "04ed2f5267206ab7a63b98fcf2d2ae7d0c22a14b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T15:18:55.604Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/102205-acp-hot-reload",
-        "head_sha": "04ed2f5267206ab7a63b98fcf2d2ae7d0c22a14b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:165:5463204815:2026-08-29T15:18:39Z:clawsweeper_needs_human",
       "comment_id": "5463204815",
@@ -32979,6 +32946,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132824:5464673838:2026-08-29T20:19:42Z:re_review",
+      "comment_id": "5464673838",
+      "comment_version_key": "5464673838:2026-08-29T20:19:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132824#issuecomment-5464673838",
+      "comment_created_at": "2026-08-29T20:19:42Z",
+      "comment_updated_at": "2026-08-29T20:19:42Z",
+      "comment_body_sha256": "8f5c6ed1d4a8a8aac460f0fc6af169cc893b8228ff69d3b6516b3efc7a258fee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132824,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T20:20:27.298Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/vitest-shutdown-profiler-routing",
+        "head_sha": "9e2a8f59f98fafc244eb251da8b475633f98d29e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
