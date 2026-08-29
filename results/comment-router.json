@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T04:28:38.655Z",
+  "updated_at": "2026-08-29T04:29:27.578Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127005:5458951551:2026-08-28T23:51:14Z:re_review",
-      "comment_id": "5458951551",
-      "comment_version_key": "5458951551:2026-08-28T23:51:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127005#issuecomment-5458951551",
-      "comment_created_at": "2026-08-28T23:51:14Z",
-      "comment_updated_at": "2026-08-28T23:51:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127005,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T23:51:53.789Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-frozen-evidence-compat",
-        "head_sha": "30a906ede687815d8fd446493ff3e64d65072dab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127002:5458951458:2026-08-28T23:51:13Z:re_review",
       "comment_id": "5458951458",
@@ -32811,6 +32764,39 @@
         "kind": "pull_request",
         "branch": "fix/workshop-action-unconfirmed",
         "head_sha": "e99f9b51924c3d3e94eb39c2dbf2bde440d09235",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3260:5459690319:2026-08-29T04:28:40Z:clawsweeper_needs_human",
+      "comment_id": "5459690319",
+      "comment_version_key": "5459690319:2026-08-29T04:28:40Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3260#issuecomment-5459690319",
+      "comment_created_at": "2026-08-29T02:06:53Z",
+      "comment_updated_at": "2026-08-29T04:28:40Z",
+      "comment_body_sha256": "80af429fa2e305eed7c90e1c71c85c1cdafbdfbcb3f750178a0d59e675895bb9",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3260,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed SettingsStore and snapshot client are exercised only with in-memory credential stores and injected... (sha=e88f18e8acd4cd83ce517e65c53a0e2a7e945b90)",
+      "expected_head_sha": "e88f18e8acd4cd83ce517e65c53a0e2a7e945b90",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T04:29:27.578Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/remote-codexbar-serve",
+        "head_sha": "e88f18e8acd4cd83ce517e65c53a0e2a7e945b90",
         "cluster_id": null,
         "job_path": null
       }
