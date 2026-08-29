@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-130144"
 mode: "autonomous"
-run_id: "33241856541"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33241856541"
+run_id: "33242696485"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33242696485"
 head_sha: "e1eefe217304f0f510acb3890db1155cef61682e"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-29T08:17:16.154Z"
+result_status: "blocked"
+published_at: "2026-08-29T08:32:38.753Z"
 canonical: "https://github.com/openclaw/openclaw/issues/130144"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/130144"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33241856541](https://github.com/openclaw/clawsweeper/actions/runs/33241856541)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33242696485](https://github.com/openclaw/clawsweeper/actions/runs/33242696485)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/130144
 
 ## Summary
 
-#130144 is a valid narrow Telegram-plugin repair. The existing shared `streaming.progress.maxLineChars` contract is accepted and documented, but Telegram’s native structured preview re-clips lines with a fixed 300-unit helper, bypassing that budget and its boundary-aware behavior. Plan one new credited fix PR; do not add a configuration option or edit CHANGELOG.md.
+Current main reproduces the Telegram-only progress clipping mismatch, but this read-only checkout lacks dependencies, build output, Convex access, and the required sibling Codex checkout. No implementation or Telegram Test Server proof can be produced here; a narrow, ready-to-execute fix artifact is attached.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/130144
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #130144 | fix_needed | planned | canonical | Open canonical issue; no viable implementation PR is hydrated. |
-| #111944 | keep_related | planned | related | Related Telegram progress area, but a different root cause and validation path. |
-| #87795 | keep_closed | skipped | superseded | Already closed; no closure action is valid. |
-| #126477 | keep_closed | skipped | independent | Already closed historical context. |
-| #126480 | keep_closed | skipped | independent | Already merged and outside this repair. |
-| cluster:issue-openclaw-openclaw-130144 | build_fix_artifact | planned | canonical | A narrow implementation path exists and requires a new ClawSweeper PR. |
+| #130144 | fix_needed | blocked | canonical | Implementation is blocked only by the immutable, dependency-free execution environment and missing mandatory live-proof/Codex prerequisites; the source-level bug is reproduced on current main. |
+| cluster:issue-openclaw-openclaw-130144 | build_fix_artifact | planned | canonical | Narrow replacement implementation is clear, but must run in a writable dependency-ready checkout with Telegram Test Server credentials. |
+| #111944 | keep_related | planned | related | Same Telegram progress area, but this repair does not alter commentary admission, verbosity, or edit lifecycle. |
+| #87795 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
+| #126477 | keep_closed | skipped | independent | Already closed and outside this repair boundary. |
+| #126480 | keep_closed | skipped | independent | Already merged and outside this Telegram-specific repair. |
 
 ## Needs Human
 

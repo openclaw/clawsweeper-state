@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130144",
+  "mode": "autonomous",
+  "run_id": "33242696485",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33242696485",
+  "head_sha": "e1eefe217304f0f510acb3890db1155cef61682e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130144.md",
+  "published_at": "2026-08-29T08:32:38.753Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130144",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130144",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the Telegram-only progress clipping mismatch, but this read-only checkout lacks dependencies, build output, Convex access, and the required sibling Codex checkout. No implementation or Telegram Test Server proof can be produced here; a narrow, ready-to-execute fix artifact is attached.",
+  "actions": [
+    {
+      "target": "#130144",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130144",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the immutable, dependency-free execution environment and missing mandatory live-proof/Codex prerequisites; the source-level bug is reproduced on current main."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130144",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#130144",
+      "candidate_fix": null,
+      "reason": "Narrow replacement implementation is clear, but must run in a writable dependency-ready checkout with Telegram Test Server credentials."
+    },
+    {
+      "target": "#111944",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#130144",
+      "candidate_fix": null,
+      "reason": "Same Telegram progress area, but this repair does not alter commentary admission, verbosity, or edit lifecycle."
+    },
+    {
+      "target": "#87795",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#130144",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#126477",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed and outside this repair boundary."
+    },
+    {
+      "target": "#126480",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already merged and outside this Telegram-specific repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
