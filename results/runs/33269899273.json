@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-132766",
+  "mode": "autonomous",
+  "run_id": "33269899273",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33269899273",
+  "head_sha": "db14db010bf3044be85f25fe40a587a5ca77523a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-132766.md",
+  "published_at": "2026-08-29T19:25:16.024Z",
+  "canonical": "#132766",
+  "canonical_issue": "#132766",
+  "canonical_pr": null,
+  "summary": "The canonical issue remains source-supported on current main, but this read-only worker cannot establish the mandatory pre-edit reproduction because dependencies are absent. Human/provisioning intervention is required before a fix-first action can safely produce a PR artifact.",
+  "actions": [
+    {
+      "target": "#132766",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Provision dependencies and the required sibling Codex source, then establish the A-to-B failing regression before editing. The likely canonical repair is to remove the four outer unscoped fence propagations and rely on the existing canonical append owner, which compares the full resolved destination scope; add A-to-B omission and A-to-A preservation coverage plus distinct rebound diagnostics."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision the checkout dependencies and required ../codex sibling source, then rerun the mandatory pre-edit A-to-B reproduction before creating a fix artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
