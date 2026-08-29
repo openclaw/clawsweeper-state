@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T23:43:38.076Z",
+  "updated_at": "2026-08-29T23:46:16.072Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132668:5463275621:2026-08-29T18:35:11Z:clawsweeper_auto_repair",
-      "comment_id": "5463275621",
-      "comment_version_key": "5463275621:2026-08-29T18:35:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132668#issuecomment-5463275621",
-      "comment_created_at": "2026-08-29T15:32:58Z",
-      "comment_updated_at": "2026-08-29T18:35:11Z",
-      "comment_body_sha256": "53f6bbf117580be306a956b5be49dede05f5f18075278f2a0d0a70b5ed96bd68",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132668,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0f8d5e56cf3d7662f576c50b9764f2c2388bd772)",
-      "expected_head_sha": "0f8d5e56cf3d7662f576c50b9764f2c2388bd772",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T18:47:00.460Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-132317",
-        "head_sha": "0f8d5e56cf3d7662f576c50b9764f2c2388bd772",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132698:5463405965:2026-08-29T18:42:50Z:clawsweeper_needs_human",
       "comment_id": "5463405965",
@@ -32685,6 +32652,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132916:5465569032:2026-08-29T23:45:39Z:clawsweeper_needs_human",
+      "comment_id": "5465569032",
+      "comment_version_key": "5465569032:2026-08-29T23:45:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132916#issuecomment-5465569032",
+      "comment_created_at": "2026-08-29T23:45:39Z",
+      "comment_updated_at": "2026-08-29T23:45:39Z",
+      "comment_body_sha256": "ac235705b48b97f19d9b0f5036a404f9b3b1c8590bac65200187164e78e0205a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132916,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes a managed Gateway with newer schema state from ordinary failure to a terminal stopped service; independent exact-head systemd/launchd observation was not av... (sha=603655bffb325f50343306baa0ef90f96a1e62b6)",
+      "expected_head_sha": "603655bffb325f50343306baa0ef90f96a1e62b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T23:46:16.072Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-newer-schema-startup",
+        "head_sha": "603655bffb325f50343306baa0ef90f96a1e62b6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
