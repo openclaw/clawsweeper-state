@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T05:00:46.170Z",
+  "updated_at": "2026-08-29T05:00:46.955Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131901:5459395832:2026-08-29T01:10:22Z:re_review",
-      "comment_id": "5459395832",
-      "comment_version_key": "5459395832:2026-08-29T01:10:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131901#issuecomment-5459395832",
-      "comment_created_at": "2026-08-29T01:10:22Z",
-      "comment_updated_at": "2026-08-29T01:10:22Z",
-      "comment_body_sha256": "30c17a64a06758f49d8a9cb11e139c0f714ff793a860df75b0ddef9f3129df34",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131901,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T01:11:05.001Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/system-agent-session-key",
-        "head_sha": "ee093b473216a017da2f0c6b913abda3995bf968",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123052:5459401087:2026-08-29T01:11:20Z:re_review",
       "comment_id": "5459401087",
@@ -31970,6 +31923,39 @@
         "kind": "pull_request",
         "branch": "codex/cleanup20k-ratchet-fixtures-20260829",
         "head_sha": "4cba0a3f472554205bc24ac4609f8160de37bb1d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132376:5460457693:2026-08-29T05:00:04Z:clawsweeper_needs_human",
+      "comment_id": "5460457693",
+      "comment_version_key": "5460457693:2026-08-29T05:00:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132376#issuecomment-5460457693",
+      "comment_created_at": "2026-08-29T05:00:04Z",
+      "comment_updated_at": "2026-08-29T05:00:04Z",
+      "comment_body_sha256": "fefc477a14fd416e2c6a7d6e33051afffce9b453dae6ad82fbc6ac902f1b1bf9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132376,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body reports that exact Linux channel-switch acceptance and a fresh live-provider execution remain pending; exact-head CI should establish those before landing. (sha=41bf31cd065b6ee24af9cff244eaca8bcf941e71)",
+      "expected_head_sha": "41bf31cd065b6ee24af9cff244eaca8bcf941e71",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T05:00:46.955Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/frv-release-fixtures",
+        "head_sha": "41bf31cd065b6ee24af9cff244eaca8bcf941e71",
         "cluster_id": null,
         "job_path": null
       }
