@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T02:04:02.949Z",
+  "updated_at": "2026-08-29T02:04:05.490Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132121:5458235051:2026-08-28T22:04:05Z:re_review",
-      "comment_id": "5458235051",
-      "comment_version_key": "5458235051:2026-08-28T22:04:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132121#issuecomment-5458235051",
-      "comment_created_at": "2026-08-28T22:04:05Z",
-      "comment_updated_at": "2026-08-28T22:04:05Z",
-      "comment_body_sha256": "97c1f5d39ec21b12a4b7b5416d8b126f40b5ae5b26d7fde13819363ae98df6e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132121,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T22:11:50.459Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/restart-recovery-mixed-residue",
-        "head_sha": "3715756dd592228a3461d54ad78e2802fb9a86ab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132121:5458013970:2026-08-28T22:10:58Z:clawsweeper_needs_human",
       "comment_id": "5458013970",
@@ -32887,6 +32840,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T02:04:02.949Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132272:5459673585:2026-08-29T02:03:12Z:clawsweeper_needs_human",
+      "comment_id": "5459673585",
+      "comment_version_key": "5459673585:2026-08-29T02:03:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132272#issuecomment-5459673585",
+      "comment_created_at": "2026-08-29T02:03:12Z",
+      "comment_updated_at": "2026-08-29T02:03:12Z",
+      "comment_body_sha256": "ce51c5c1e698682453475e803f105ce5671bdac0ef9b7896605fba1846c010f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132272,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied context omits the body of the latest ClawSweeper bot comment, while a live GitHub read was unavailable; check its Rank-up moves before merge. Exact-head CI was still in p... (sha=eda8d5103aa1dc6c7b25cf1f504abff7e344cce8)",
+      "expected_head_sha": "eda8d5103aa1dc6c7b25cf1f504abff7e344cce8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T02:04:05.490Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup20k-health-dead-state-20260828",
+        "head_sha": "eda8d5103aa1dc6c7b25cf1f504abff7e344cce8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
