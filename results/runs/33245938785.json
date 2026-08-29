@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-70634",
+  "mode": "autonomous",
+  "run_id": "33245938785",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33245938785",
+  "head_sha": "e1eefe217304f0f510acb3890db1155cef61682e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-70634.md",
+  "published_at": "2026-08-29T09:52:20.168Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/70634",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/70634",
+  "canonical_pr": null,
+  "summary": "#70634 remains the canonical narrow bug-fix path. Current main routes inter-session work through foreground priority when its trigger is user/manual, despite sessions_send and agent-step preserving inter_session provenance. Implementation is blocked in this worker: the required sibling ../codex source is absent and the read-only checkout cannot clone it or install the missing tsx dependency needed to run the regression suite.",
+  "actions": [
+    {
+      "target": "#70634",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "A writable, dependency-complete checkout with the required ../codex sibling is required before the repair can be implemented and validated."
+    },
+    {
+      "target": "#75299",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Related generic queue-aging work; retain independently of the provenance-classification repair."
+    },
+    {
+      "target": "#79589",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Open related product-policy issue with distinct remaining work."
+    },
+    {
+      "target": "#80199",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure action is valid for an already-closed PR."
+    },
+    {
+      "target": "#84575",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate session-identity defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-70634",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Ready as a narrow executor artifact once the Codex source gate and dependencies are available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 4,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
