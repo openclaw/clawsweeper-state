@@ -1,0 +1,76 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-129173",
+  "mode": "autonomous",
+  "run_id": "33264676910",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33264676910",
+  "head_sha": "db14db010bf3044be85f25fe40a587a5ca77523a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-129173.md",
+  "published_at": "2026-08-29T17:19:36.246Z",
+  "canonical": "#129173",
+  "canonical_issue": "#129173",
+  "canonical_pr": "#132692",
+  "summary": "#129173 remains a reproducible residual run-scoped approval-wait fan-out. #132692 is the useful open follow-up but requires focused proof and CI repair. No branch was changed because the checkout is read-only, dependencies are absent, and the required sibling ../codex source is unavailable.",
+  "actions": [
+    {
+      "target": "#112698",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#129173",
+      "candidate_fix": null,
+      "reason": "Related event-loop performance family, but distinct root cause and scope."
+    },
+    {
+      "target": "#129173",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#129173",
+      "candidate_fix": "#132692",
+      "reason": "Keep open until the candidate has focused proof and passing CI."
+    },
+    {
+      "target": "#129174",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#129173",
+      "candidate_fix": null,
+      "reason": "Already-merged partial repair; no closure action is valid."
+    },
+    {
+      "target": "#132692",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#129173",
+      "candidate_fix": "#132692",
+      "reason": "Repair the writable contributor branch: retain the run-id guard, add a regression covering run-indexed registration, and resolve CI proof failures."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair environment with dependencies installed and sibling ../codex source available; root policy blocks a code-change verdict without that direct inspection."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

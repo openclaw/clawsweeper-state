@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-129173"
 mode: "autonomous"
-run_id: "33258872192"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33258872192"
+run_id: "33264676910"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33264676910"
 head_sha: "db14db010bf3044be85f25fe40a587a5ca77523a"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-29T16:31:12.068Z"
-canonical: "https://github.com/openclaw/openclaw/issues/129173"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/129173"
-canonical_pr: null
-actions_total: 5
+published_at: "2026-08-29T17:19:36.246Z"
+canonical: "#129173"
+canonical_issue: "#129173"
+canonical_pr: "#132692"
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-129173
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33258872192](https://github.com/openclaw/clawsweeper/actions/runs/33258872192)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33264676910](https://github.com/openclaw/clawsweeper/actions/runs/33264676910)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/129173
+Canonical: #129173
 
 ## Summary
 
-A narrow repair remains appropriate: current checkout HEAD 8bdf14b8 still registers the run-scoped approval observer through the global listener. Implementation and validation are blocked because this checkout is read-only with missing dependencies, and the required sibling ../codex source checkout is absent.
+#129173 remains a reproducible residual run-scoped approval-wait fan-out. #132692 is the useful open follow-up but requires focused proof and CI repair. No branch was changed because the checkout is read-only, dependencies are absent, and the required sibling ../codex source is unavailable.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,12 +66,11 @@ A narrow repair remains appropriate: current checkout HEAD 8bdf14b8 still regist
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #112698 | keep_independent | planned | independent | Keep open independently; it has distinct root cause and maintainer/product proof labels. |
-| #129173 | fix_needed | blocked | canonical | Repair is narrowly specified, but implementation cannot proceed in this read-only, dependency-incomplete checkout and cannot pass the repository's Codex-source gate. |
-| #129174 | keep_closed | skipped | related | Already merged and closed; retain as historical related evidence only. |
-| cluster:issue-openclaw-openclaw-129173 | build_fix_artifact | planned | canonical | Executable narrow PR plan prepared for an executor with a writable checkout and dependencies. |
-| cluster:issue-openclaw-openclaw-129173 | open_fix_pr | blocked | canonical | The required implementation and validation cannot be performed in this read-only checkout. |
+| #112698 | keep_related | planned | related | Related event-loop performance family, but distinct root cause and scope. |
+| #129173 | keep_canonical | planned | canonical | Keep open until the candidate has focused proof and passing CI. |
+| #129174 | keep_closed | skipped | related | Already-merged partial repair; no closure action is valid. |
+| #132692 | fix_needed | blocked | canonical | Repair the writable contributor branch: retain the run-id guard, add a regression covering run-indexed registration, and resolve CI proof failures. |
 
 ## Needs Human
 
-- none
+- Provide a writable repair environment with dependencies installed and sibling ../codex source available; root policy blocks a code-change verdict without that direct inspection.
