@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T01:07:57.341Z",
+  "updated_at": "2026-08-29T01:09:16.132Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130463:5457705456:2026-08-28T21:00:20Z:re_review",
-      "comment_id": "5457705456",
-      "comment_version_key": "5457705456:2026-08-28T21:00:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130463#issuecomment-5457705456",
-      "comment_created_at": "2026-08-28T21:00:20Z",
-      "comment_updated_at": "2026-08-28T21:00:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130463,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T21:01:13.848Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-image-history-mention-strip",
-        "head_sha": "ef35b4570a2c2f556c080990352264fd5fe1aea0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131503:5457629035:2026-08-28T20:51:17Z:re_review",
       "comment_id": "5457629035",
@@ -32902,6 +32855,39 @@
         "kind": "pull_request",
         "branch": "codex/ssh-mux-backpressure-retry",
         "head_sha": "2b1b16eee229293ecdbde52f8a460e4f328eda93",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132203:5458910124:2026-08-29T01:08:21Z:clawsweeper_needs_human",
+      "comment_id": "5458910124",
+      "comment_version_key": "5458910124:2026-08-29T01:08:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132203#issuecomment-5458910124",
+      "comment_created_at": "2026-08-28T23:43:47Z",
+      "comment_updated_at": "2026-08-29T01:08:21Z",
+      "comment_body_sha256": "9bcb8aa154c53c838db630cd0619a263a4a878d615c1b3ab599d9b644bb4e612",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132203,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured exact-head CI and required native prepare/merge gates were incomplete; they must pass before landing. (sha=9a4ba8366d7906cdcbc879f8163a2b3d6613b6e4)",
+      "expected_head_sha": "9a4ba8366d7906cdcbc879f8163a2b3d6613b6e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T01:09:16.132Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/frosty-mclean-5c961d",
+        "head_sha": "9a4ba8366d7906cdcbc879f8163a2b3d6613b6e4",
         "cluster_id": null,
         "job_path": null
       }
