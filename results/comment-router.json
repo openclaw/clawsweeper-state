@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T16:12:50.703Z",
+  "updated_at": "2026-08-29T16:13:35.633Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132538:5461960287:2026-08-29T11:02:37Z:re_review",
-      "comment_id": "5461960287",
-      "comment_version_key": "5461960287:2026-08-29T11:02:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132538#issuecomment-5461960287",
-      "comment_created_at": "2026-08-29T11:02:37Z",
-      "comment_updated_at": "2026-08-29T11:02:37Z",
-      "comment_body_sha256": "4a069cab7361561f5563a4f3f3aa8949803c74f04820d70c4fe92c01cb9ccf96",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132538,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T11:11:28.609Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/partial-reply-failure-recovery",
-        "head_sha": "2381666b36bbc76138f370f0fd923046e6831e62",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:51762:4333312199:2026-08-29T11:07:58Z:clawsweeper_needs_human",
       "comment_id": "4333312199",
@@ -32628,6 +32581,39 @@
         "kind": "pull_request",
         "branch": "feat/feishu-group-management-130823",
         "head_sha": "38503b6ec48b7275adb35f079cb640170dc92200",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132703:5463469522:2026-08-29T16:12:58Z:clawsweeper_needs_human",
+      "comment_id": "5463469522",
+      "comment_version_key": "5463469522:2026-08-29T16:12:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132703#issuecomment-5463469522",
+      "comment_created_at": "2026-08-29T16:12:58Z",
+      "comment_updated_at": "2026-08-29T16:12:58Z",
+      "comment_body_sha256": "2be3ae361938e84623240e0522e240c01608d1df560970655f3326781f090830",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132703,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the Firecrawl manifest contract consumed during Gateway secret preparation, but the supplied evidence is a dire... (sha=93557a2d57d56c940b60a2b7dc6641bd1ba7e2f6)",
+      "expected_head_sha": "93557a2d57d56c940b60a2b7dc6641bd1ba7e2f6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T16:13:35.633Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-firecrawl-capability",
+        "head_sha": "93557a2d57d56c940b60a2b7dc6641bd1ba7e2f6",
         "cluster_id": null,
         "job_path": null
       }
