@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T02:03:22.288Z",
+  "updated_at": "2026-08-29T02:03:27.656Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132051:5458206042:2026-08-28T22:00:34Z:re_review",
-      "comment_id": "5458206042",
-      "comment_version_key": "5458206042:2026-08-28T22:00:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132051#issuecomment-5458206042",
-      "comment_created_at": "2026-08-28T22:00:34Z",
-      "comment_updated_at": "2026-08-28T22:00:34Z",
-      "comment_body_sha256": "29082d0ef932694b08b20ce8d13ff250ef3178ca2002e297e6261cd0b9176804",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132051,
-      "author": "pengzh1",
-      "author_id": 24854675,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T22:08:46.377Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-failure-alert-delivery-outcome",
-        "head_sha": "4db2d53a90861b7bbc118990a5f337378ce1ef42",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132051:5456968922:2026-08-28T22:07:57Z:clawsweeper_auto_repair",
       "comment_id": "5456968922",
@@ -32918,6 +32871,39 @@
         "kind": "pull_request",
         "branch": "fix/list-nil-calendar",
         "head_sha": "a046f57088c85a1dbd98069bdc3422317f983e13",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:52:5119082703:2026-08-29T02:02:44Z:clawsweeper_needs_human",
+      "comment_id": "5119082703",
+      "comment_version_key": "5119082703:2026-08-29T02:02:44Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/52#issuecomment-5119082703",
+      "comment_created_at": "2026-07-29T14:25:13Z",
+      "comment_updated_at": "2026-08-29T02:02:44Z",
+      "comment_body_sha256": "9f4e7b33b9c0998158099e979f30c884050cb6f778deeef22f542dc2e9e35912",
+      "repo": "openclaw/shellbench",
+      "issue_number": 52,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The verified three-way merge conflicts with current main in both changed files, so this exact head cannot land without a rebase or manual conflict resolution. (sha=ac1c974c12749dddb5d49af734561cec59910c65)",
+      "expected_head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T02:03:27.656Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-claude-trajectory-eligibility",
+        "head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
         "cluster_id": null,
         "job_path": null
       }
