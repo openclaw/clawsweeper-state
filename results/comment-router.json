@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T00:29:36.543Z",
+  "updated_at": "2026-08-29T00:29:58.296Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3257:5455643441:2026-08-28T20:43:15Z:clawsweeper_auto_repair",
-      "comment_id": "5455643441",
-      "comment_version_key": "5455643441:2026-08-28T20:43:15Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3257#issuecomment-5455643441",
-      "comment_created_at": "2026-08-28T17:28:19Z",
-      "comment_updated_at": "2026-08-28T20:43:15Z",
-      "comment_body_sha256": "70df8f77aaade702a22e73e1100d0ec6e86c25444869f4675a61bb6644f52a46",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3257,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bf99c5015e3392e13189730f7545aa81f07717a9)",
-      "expected_head_sha": "bf99c5015e3392e13189730f7545aa81f07717a9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T20:43:54.899Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/spend-dashboard-low-energy",
-        "head_sha": "bf99c5015e3392e13189730f7545aa81f07717a9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131823:5453873772:2026-08-28T20:39:40Z:clawsweeper_needs_human",
       "comment_id": "5453873772",
@@ -32707,6 +32674,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131966:5459166313:2026-08-29T00:29:06Z:re_review",
+      "comment_id": "5459166313",
+      "comment_version_key": "5459166313:2026-08-29T00:29:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131966#issuecomment-5459166313",
+      "comment_created_at": "2026-08-29T00:26:53Z",
+      "comment_updated_at": "2026-08-29T00:29:06Z",
+      "comment_body_sha256": "38d0c38046cba62248b4e4cd1c12c3da3f259a4bd7ecb0c658fde72b780185ca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131966,
+      "author": "PollyBot13",
+      "author_id": 261872620,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T00:29:55.483Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/131046-event-loop-stall-restart",
+        "head_sha": "62c311937af0eacb13179fbf97179f771e0b0962",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
