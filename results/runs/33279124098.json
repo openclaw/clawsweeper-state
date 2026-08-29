@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-110564",
+  "mode": "autonomous",
+  "run_id": "33279124098",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33279124098",
+  "head_sha": "8d11c21558ba90ac6812b80b95efd0dd9b0aa936",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-110564.md",
+  "published_at": "2026-08-29T23:09:13.136Z",
+  "canonical": "#110564",
+  "canonical_issue": "#110564",
+  "canonical_pr": null,
+  "summary": "#110564 remains the canonical, source-reproducible compaction bug. Current main splits a safely fitting 262K-window history into two map requests plus a merge. A narrow new-fix-PR artifact is ready, but this runner cannot edit, install dependencies, run tests, or satisfy the mandatory direct ../codex inspection because its filesystem is read-only and ../codex is absent.",
+  "actions": [
+    {
+      "target": "#110564",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#110564",
+      "candidate_fix": null,
+      "reason": "A writable repair environment with dependencies and ../codex is required before code changes or a validation verdict."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Rerun the artifact in a writable repair runner that provides ../codex and can install the repository-pinned pnpm dependencies."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
