@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T15:29:47.987Z",
+  "updated_at": "2026-08-29T15:29:52.790Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132530:5461674340:2026-08-29T09:58:44Z:clawsweeper_auto_repair",
-      "comment_id": "5461674340",
-      "comment_version_key": "5461674340:2026-08-29T09:58:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132530#issuecomment-5461674340",
-      "comment_created_at": "2026-08-29T09:58:44Z",
-      "comment_updated_at": "2026-08-29T09:58:44Z",
-      "comment_body_sha256": "a75f8bf32f08006ebbac93529547a4fd824f477fde620c922f977a61d5969ce7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132530,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e71f5db8199fc2d27b5333f6caa6713d83d09687)",
-      "expected_head_sha": "e71f5db8199fc2d27b5333f6caa6713d83d09687",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T09:59:23.916Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-130144-telegram-progress-clip-budget",
-        "head_sha": "e71f5db8199fc2d27b5333f6caa6713d83d09687",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98658:4856266627:2026-08-29T09:58:32Z:clawsweeper_auto_repair",
       "comment_id": "4856266627",
@@ -32393,6 +32360,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132664:5463257149:2026-08-29T15:29:09Z:clawsweeper_needs_human",
+      "comment_id": "5463257149",
+      "comment_version_key": "5463257149:2026-08-29T15:29:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132664#issuecomment-5463257149",
+      "comment_created_at": "2026-08-29T15:29:09Z",
+      "comment_updated_at": "2026-08-29T15:29:09Z",
+      "comment_body_sha256": "fdf3bcc91f6c09199263f86bc021e4e10ae1841d5362753a390b5d66971535db",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132664,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep native Codex lifecycle events private (P1)** - Removing the marker makes normalized command, file, MCP, and web-search events reach the shared channel handler, which forwards every unhidden start/update to...; Review finding: [P1] Keep native Codex lifecycle events private — extensions/codex/src/app-server/event-projector-events.ts:122-124 - [P1] Keep dynamic tool lifecycle events priva... (sha=8cbedebf00bcb8333a25363391972c9b13430d85)",
+      "expected_head_sha": "8cbedebf00bcb8333a25363391972c9b13430d85",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T15:29:52.790Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/restore-codex-tool-progress",
+        "head_sha": "8cbedebf00bcb8333a25363391972c9b13430d85",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
