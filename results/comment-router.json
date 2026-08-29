@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T13:07:41.095Z",
+  "updated_at": "2026-08-29T13:07:56.852Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119052:5461001311:2026-08-29T08:01:22Z:re_review",
-      "comment_id": "5461001311",
-      "comment_version_key": "5461001311:2026-08-29T08:01:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119052#issuecomment-5461001311",
-      "comment_created_at": "2026-08-29T07:13:54Z",
-      "comment_updated_at": "2026-08-29T08:01:22Z",
-      "comment_body_sha256": "833ad1fcf0d5c1ad37b724acbb5a7e03921ba59396957be90b2a5219dd2592e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119052,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T08:02:02.204Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/schtasks-launch-evidence",
-        "head_sha": "9fec59bdca2b523d50826ddc45c1a80e86658ea8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/acpx:514:5382957488:2026-08-29T07:56:32Z:clawsweeper_needs_human",
       "comment_id": "5382957488",
@@ -32146,6 +32099,39 @@
         "kind": "pull_request",
         "branch": "fix/search-limit-validation",
         "head_sha": "df2aad92ca8909f546f894d8e2f8bb3d79f0f196",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/birdclaw:134:5403296890:2026-08-29T13:07:16Z:clawsweeper_needs_human",
+      "comment_id": "5403296890",
+      "comment_version_key": "5403296890:2026-08-29T13:07:16Z",
+      "comment_url": "https://github.com/steipete/birdclaw/pull/134#issuecomment-5403296890",
+      "comment_created_at": "2026-08-25T00:26:21Z",
+      "comment_updated_at": "2026-08-29T13:07:16Z",
+      "comment_body_sha256": "abf7a78ee3b32a9e0437f3128f341bacd01c5ba122b8ac3247babe6e6ae2da8c",
+      "repo": "steipete/birdclaw",
+      "issue_number": 134,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After a schema-v9 export or sync, any installation still on Birdclaw 0.12.1 will reject the shared backup until upgraded; the documentation explains recovery, but accepting that coord... (sha=5beae12b3cdbaec02450c1ae347b96cda530738a)",
+      "expected_head_sha": "5beae12b3cdbaec02450c1ae347b96cda530738a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T13:07:56.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/note-tweet-support",
+        "head_sha": "5beae12b3cdbaec02450c1ae347b96cda530738a",
         "cluster_id": null,
         "job_path": null
       }
