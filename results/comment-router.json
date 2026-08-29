@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T09:55:12.127Z",
+  "updated_at": "2026-08-29T09:55:28.831Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3260:5460648671:2026-08-29T05:47:25Z:re_review",
-      "comment_id": "5460648671",
-      "comment_version_key": "5460648671:2026-08-29T05:47:25Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3260#issuecomment-5460648671",
-      "comment_created_at": "2026-08-29T05:47:25Z",
-      "comment_updated_at": "2026-08-29T05:47:25Z",
-      "comment_body_sha256": "8edbacd847e539708846407ce5ea8a0e187b8035cdb7096eb6dbb8a52d8cdc1f",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3260,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T05:51:58.029Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/remote-codexbar-serve",
-        "head_sha": "4660db18e52c6316f00e6d7ee2b2b13d5b7d469f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3260:5459690319:2026-08-29T05:51:10Z:clawsweeper_needs_human",
       "comment_id": "5459690319",
@@ -32538,6 +32491,39 @@
         "kind": "pull_request",
         "branch": "steipete/cloud-session-image-support-254b7f",
         "head_sha": "6c501f41142faf1b009d30195903b1db9ec6f04b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127837:5379691979:2026-08-29T09:54:37Z:clawsweeper_needs_human",
+      "comment_id": "5379691979",
+      "comment_version_key": "5379691979:2026-08-29T09:54:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127837#issuecomment-5379691979",
+      "comment_created_at": "2026-08-22T10:07:36Z",
+      "comment_updated_at": "2026-08-29T09:54:37Z",
+      "comment_body_sha256": "ff375290012d439672ade27b63e3940a4e20eeec745bc0e428750cc49b0640d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127837,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A process-wide 12 MiB/64-entry limit intentionally trades retained prompt bytes for more filesystem reads under high workspace fan-out; the intended operational budget remains a maint... (sha=5906ec285b026441b4395a2aefbbfe84d4354787)",
+      "expected_head_sha": "5906ec285b026441b4395a2aefbbfe84d4354787",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T09:55:28.831Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/bug-05-workspace",
+        "head_sha": "5906ec285b026441b4395a2aefbbfe84d4354787",
         "cluster_id": null,
         "job_path": null
       }
