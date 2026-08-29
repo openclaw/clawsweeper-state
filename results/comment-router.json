@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T10:26:50.215Z",
+  "updated_at": "2026-08-29T10:28:24.927Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128882:5460712274:2026-08-29T06:02:42Z:re_review",
-      "comment_id": "5460712274",
-      "comment_version_key": "5460712274:2026-08-29T06:02:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128882#issuecomment-5460712274",
-      "comment_created_at": "2026-08-29T06:02:42Z",
-      "comment_updated_at": "2026-08-29T06:02:42Z",
-      "comment_body_sha256": "cb7f67c7537da0450f78f7d921870f10b19f64be0a3e331349575cf32ef3894e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128882,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T06:03:27.314Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sashankh/fix-deepseek-doubled-bar-dsml",
-        "head_sha": "53dfb34db57532833720491187a46a2e5018c5a3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128175:5460691585:2026-08-29T05:57:30Z:re_review",
       "comment_id": "5460691585",
@@ -32412,6 +32365,39 @@
         "kind": "pull_request",
         "branch": "leon/channel-setup-explicit-owner-20260824",
         "head_sha": "ede0637c3ee9d3c11792ce05849d89b4e329e46d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132428:5460810679:2026-08-29T10:27:19Z:clawsweeper_needs_human",
+      "comment_id": "5460810679",
+      "comment_version_key": "5460810679:2026-08-29T10:27:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132428#issuecomment-5460810679",
+      "comment_created_at": "2026-08-29T06:27:00Z",
+      "comment_updated_at": "2026-08-29T10:27:19Z",
+      "comment_body_sha256": "54e0702c7a7afa551d588195edafe44eec06197aa82fba9ab85e043879635e5d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132428,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The verified hosted merge uses an older main parent; current main is 39 commits later and also changed ci.yml, so the supplied lifecycle proof does not establish behavior on a refresh... (sha=83fbc75385d64ee7b2af63b1d758d1f336005917)",
+      "expected_head_sha": "83fbc75385d64ee7b2af63b1d758d1f336005917",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T10:28:24.927Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/dazzling-vaughan-6f6d8e",
+        "head_sha": "83fbc75385d64ee7b2af63b1d758d1f336005917",
         "cluster_id": null,
         "job_path": null
       }
