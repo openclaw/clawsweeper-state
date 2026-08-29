@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T10:26:05.544Z",
+  "updated_at": "2026-08-29T10:26:17.718Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132338:5460706984:2026-08-29T06:01:24Z:re_review",
-      "comment_id": "5460706984",
-      "comment_version_key": "5460706984:2026-08-29T06:01:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132338#issuecomment-5460706984",
-      "comment_created_at": "2026-08-29T06:01:24Z",
-      "comment_updated_at": "2026-08-29T06:01:24Z",
-      "comment_body_sha256": "bcff6d5dc20345c037c8946172fb8f8c92350413df2ea6200f23047b6794da6f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132338,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T06:02:02.990Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-rerun-write-once",
-        "head_sha": "5a4efd3c215234b98519fddda6ed353326dc9643",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1042:5460711314:2026-08-29T06:02:28Z:clawsweeper_needs_human",
       "comment_id": "5460711314",
@@ -32426,6 +32379,39 @@
         "kind": "pull_request",
         "branch": "jesse/meaningful-traffic-signals",
         "head_sha": "b2fe5c577a4d424b54ab5b070ff8096fdadc357c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132540:5461788593:2026-08-29T10:25:32Z:clawsweeper_needs_human",
+      "comment_id": "5461788593",
+      "comment_version_key": "5461788593:2026-08-29T10:25:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132540#issuecomment-5461788593",
+      "comment_created_at": "2026-08-29T10:25:32Z",
+      "comment_updated_at": "2026-08-29T10:25:32Z",
+      "comment_body_sha256": "45cd93cc426eba23a3fd460951d7d3fd1a879afce613bd4e50d752ed84296764",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132540,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed provider-owned channel-list route reaches Telegram getChat from raw context without final provider/...; Review finding: [P1] Use grammY’s positional chat API calls — extensions/telegram/src/send-chat-info.ts:37-56 - [P1] Authorize channel-list before Telegram I/O — extensions/telegr... (sha=071aafa94aedd562fd1a406e6afece4064daa2da)",
+      "expected_head_sha": "071aafa94aedd562fd1a406e6afece4064daa2da",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T10:26:17.718Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/telegram-channel-info-129983",
+        "head_sha": "071aafa94aedd562fd1a406e6afece4064daa2da",
         "cluster_id": null,
         "job_path": null
       }
