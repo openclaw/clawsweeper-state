@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T01:10:15.725Z",
+  "updated_at": "2026-08-29T01:10:51.271Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127280:5402572816:2026-08-24T23:03:59Z:re_review",
-      "comment_id": "5402572816",
-      "comment_version_key": "5402572816:2026-08-24T23:03:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127280#issuecomment-5402572816",
-      "comment_created_at": "2026-08-24T22:52:11Z",
-      "comment_updated_at": "2026-08-24T23:03:59Z",
-      "comment_body_sha256": "94c8f7083e4379d4a4943fc0ea2f521d720deca8af0f2190796ca75033bba8f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127280,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T21:05:41.611Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127280:5402697259:2026-08-24T23:07:04Z:re_review",
       "comment_id": "5402697259",
@@ -32845,6 +32818,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T01:10:15.725Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132097:5457803009:2026-08-29T01:09:49Z:clawsweeper_needs_human",
+      "comment_id": "5457803009",
+      "comment_version_key": "5457803009:2026-08-29T01:09:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132097#issuecomment-5457803009",
+      "comment_created_at": "2026-08-28T21:11:27Z",
+      "comment_updated_at": "2026-08-29T01:09:49Z",
+      "comment_body_sha256": "ed66436f6f076e4d4f97c635b75ce5635767944f1f88cbcd7bfd43578f5be332",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132097,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - signal?: AbortSignal becomes a supported optional parameter on the public SSRF-policy helper; existing callers remain source-compatible, but the cancellation semantics are a lasting p... (sha=be964d635522b3c68601843615ece2151e9554ba)",
+      "expected_head_sha": "be964d635522b3c68601843615ece2151e9554ba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T01:10:51.271Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/brave-preflight-cancellation-1e32aa",
+        "head_sha": "be964d635522b3c68601843615ece2151e9554ba",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
