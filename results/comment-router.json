@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T10:44:26.634Z",
+  "updated_at": "2026-08-29T10:44:28.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112945:5243993156:2026-08-10T17:59:59Z:re_review",
-      "comment_id": "5243993156",
-      "comment_version_key": "5243993156:2026-08-10T17:59:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112945#issuecomment-5243993156",
-      "comment_created_at": "2026-08-10T17:59:59Z",
-      "comment_updated_at": "2026-08-10T17:59:59Z",
-      "comment_body_sha256": "c3d0cf98ec9d60c440b5d4f37232fdc934802e2b75d0b6b94065f1d55ab307db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112945,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T06:20:11.991Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112945:5243996764:2026-08-10T18:00:20Z:re_review",
       "comment_id": "5243996764",
@@ -32363,6 +32336,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3543:5454855424:2026-08-29T10:32:15Z:clawsweeper_needs_human",
+      "comment_id": "5454855424",
+      "comment_version_key": "5454855424:2026-08-29T10:32:15Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3543#issuecomment-5454855424",
+      "comment_created_at": "2026-08-28T16:10:12Z",
+      "comment_updated_at": "2026-08-29T10:32:15Z",
+      "comment_body_sha256": "a621afb6c99cc8f1b04b5b963fa318e164275fc4f5fcd4619737f95dee3f94f4",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3543,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact head has a broad browser-test failure signal while changing the Vite build path; without the failed trace and an equivalent base run, merging could retain a frontend build o... (sha=4f66cf22fdf6089e25e21204a5c15de40058f672)",
+      "expected_head_sha": "4f66cf22fdf6089e25e21204a5c15de40058f672",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T10:44:28.024Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-e098b16569",
+        "head_sha": "4f66cf22fdf6089e25e21204a5c15de40058f672",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
