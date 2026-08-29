@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T11:37:11.714Z",
+  "updated_at": "2026-08-29T11:37:15.645Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120486:5274955984:2026-08-13T01:47:06Z:re_review",
-      "comment_id": "5274955984",
-      "comment_version_key": "5274955984:2026-08-13T01:47:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120486#issuecomment-5274955984",
-      "comment_created_at": "2026-08-13T01:47:06Z",
-      "comment_updated_at": "2026-08-13T01:47:06Z",
-      "comment_body_sha256": "4d10a4c6d57f4897582d5b23296afdce007978a8692c17c8d68018d41d5e17f2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120486,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T07:06:57.801Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120486:5276317198:2026-08-13T05:24:15Z:re_review",
       "comment_id": "5276317198",
@@ -32529,6 +32502,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129345:5411343629:2026-08-29T11:36:33Z:clawsweeper_needs_human",
+      "comment_id": "5411343629",
+      "comment_version_key": "5411343629:2026-08-29T11:36:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129345#issuecomment-5411343629",
+      "comment_created_at": "2026-08-25T13:48:00Z",
+      "comment_updated_at": "2026-08-29T11:36:33Z",
+      "comment_body_sha256": "e185a9484eb076a623d55ffd2f106276aa33b7980857c07344a55ae455d2226c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129345,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner, extensions/msteams/src/monitor-handler/thread-context.ts, now directs an inbound Teams channel activity to existing Graph pa... (sha=062fef50e097ad7ff4cb63402c091a07d67fac8e)",
+      "expected_head_sha": "062fef50e097ad7ff4cb63402c091a07d67fac8e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T11:37:15.645Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-channel-thread-parent-fallback",
+        "head_sha": "062fef50e097ad7ff4cb63402c091a07d67fac8e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
