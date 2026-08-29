@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T00:17:10.895Z",
+  "updated_at": "2026-08-29T00:17:13.488Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124543:5307321930:2026-08-28T20:14:44Z:clawsweeper_auto_repair",
-      "comment_id": "5307321930",
-      "comment_version_key": "5307321930:2026-08-28T20:14:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124543#issuecomment-5307321930",
-      "comment_created_at": "2026-08-16T11:59:56Z",
-      "comment_updated_at": "2026-08-28T20:14:44Z",
-      "comment_body_sha256": "29bfe7fc14adc547673feb609bfaadb444fcded62aa66298cd0a5942b22ad04f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124543,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=23b601008888063c580be622fd359b045fc34b81)",
-      "expected_head_sha": "23b601008888063c580be622fd359b045fc34b81",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T20:34:42.287Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-aggregate-turn-duplication-123792",
-        "head_sha": "23b601008888063c580be622fd359b045fc34b81",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128254:5386880059:2026-08-28T20:10:18Z:clawsweeper_auto_repair",
       "comment_id": "5386880059",
@@ -32691,6 +32658,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T00:17:10.895Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131329:5447106605:2026-08-29T00:16:21Z:clawsweeper_needs_human",
+      "comment_id": "5447106605",
+      "comment_version_key": "5447106605:2026-08-29T00:16:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131329#issuecomment-5447106605",
+      "comment_created_at": "2026-08-28T01:07:40Z",
+      "comment_updated_at": "2026-08-29T00:16:21Z",
+      "comment_body_sha256": "32c1401a7a244ce88e57ce75faa484f9fb0e65c8b4d460c326fa34a467b95cf0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131329,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the LanceDB plugin’s agent-end handler, reached through embedded attempt finalization; the supplied before/afte... (sha=01662ef682f109fc41d6bf3916e9c08f0c643196)",
+      "expected_head_sha": "01662ef682f109fc41d6bf3916e9c08f0c643196",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T00:17:13.488Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "repro/memory-lancedb-autocapture-cursor-reset",
+        "head_sha": "01662ef682f109fc41d6bf3916e9c08f0c643196",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
