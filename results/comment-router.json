@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T15:13:03.480Z",
+  "updated_at": "2026-08-29T15:13:21.814Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132182:5458629902:2026-08-29T09:13:47Z:clawsweeper_needs_human",
-      "comment_id": "5458629902",
-      "comment_version_key": "5458629902:2026-08-29T09:13:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132182#issuecomment-5458629902",
-      "comment_created_at": "2026-08-28T22:58:57Z",
-      "comment_updated_at": "2026-08-29T09:13:47Z",
-      "comment_body_sha256": "6fdec99b2bc9e968f43a40d4493cbf11295a60b1bad06f1c9e9c19b33f1ea3db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132182,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The attached UI image could not be downloaded for independent inspection because the review environment could not resolve github.com; the supplied exact-head proof remains affirmative... (sha=4436eb23492526a224c3c6c1c6e1e27ac22b04e8)",
-      "expected_head_sha": "4436eb23492526a224c3c6c1c6e1e27ac22b04e8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T09:37:50.527Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/code-mode-catalog-lifetime-b4970f",
-        "head_sha": "4436eb23492526a224c3c6c1c6e1e27ac22b04e8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132251:5459387541:2026-08-29T09:33:31Z:clawsweeper_auto_repair",
       "comment_id": "5459387541",
@@ -32342,6 +32309,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128093:5463175317:2026-08-29T15:12:42Z:re_review",
+      "comment_id": "5463175317",
+      "comment_version_key": "5463175317:2026-08-29T15:12:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128093#issuecomment-5463175317",
+      "comment_created_at": "2026-08-29T15:12:42Z",
+      "comment_updated_at": "2026-08-29T15:12:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128093,
+      "author": "sallyom",
+      "author_id": 11166065,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T15:13:19.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/signal-pending-redelivery",
+        "head_sha": "2a882df8c7d0511be0c7d397feb88a5dfb287b80",
+        "cluster_id": "automerge-openclaw-openclaw-128093",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-128093.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
