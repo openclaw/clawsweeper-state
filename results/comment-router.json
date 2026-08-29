@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T11:22:29.159Z",
+  "updated_at": "2026-08-29T11:22:40.008Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119516:5190773148:2026-08-05T10:46:37Z:re_review",
-      "comment_id": "5190773148",
-      "comment_version_key": "5190773148:2026-08-05T10:46:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119516#issuecomment-5190773148",
-      "comment_created_at": "2026-08-05T10:46:37Z",
-      "comment_updated_at": "2026-08-05T10:46:37Z",
-      "comment_body_sha256": "b8f79824182b364a1170ab19b0269d6ae2ac9fa587f02e10cbdf74fa47c8393a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119516,
-      "author": "zyw02",
-      "author_id": 59604424,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T06:49:40.591Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119516:5190773223:2026-08-05T10:46:38Z:re_review",
       "comment_id": "5190773223",
@@ -32455,6 +32428,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T11:22:29.159Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1615:5461379509:2026-08-29T11:21:49Z:clawsweeper_needs_human",
+      "comment_id": "5461379509",
+      "comment_version_key": "5461379509:2026-08-29T11:21:49Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1615#issuecomment-5461379509",
+      "comment_created_at": "2026-08-29T08:47:00Z",
+      "comment_updated_at": "2026-08-29T11:21:49Z",
+      "comment_body_sha256": "c95754287e1b44ba8a49f11ed0169308467849195b38e9fd30f5e7fd49cfdab8",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1615,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: ssh.go routes workspace-owned WSL2 commands into wslStageSpool.run, which stages the envelope and invokes the W...; Review finding: [P1] Preserve or explicitly migrate static WSL2 hosts — internal/cli/ssh.go:527-531 - [medium] Prove final-effect rejection for a substituted or replayed stage — i... (sha=47caebb56c5db7385118d4445d22e9b5b4649b75)",
+      "expected_head_sha": "47caebb56c5db7385118d4445d22e9b5b4649b75",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T11:22:40.008Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/wsl2-staged-execution-current",
+        "head_sha": "47caebb56c5db7385118d4445d22e9b5b4649b75",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
