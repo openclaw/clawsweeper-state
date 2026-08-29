@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T07:02:12.640Z",
+  "updated_at": "2026-08-29T07:03:07.170Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132298:5459937543:2026-08-29T03:02:54Z:re_review",
-      "comment_id": "5459937543",
-      "comment_version_key": "5459937543:2026-08-29T03:02:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132298#issuecomment-5459937543",
-      "comment_created_at": "2026-08-29T03:02:54Z",
-      "comment_updated_at": "2026-08-29T03:02:54Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132298,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T03:03:41.266Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/noninteractive-alias-correction",
-        "head_sha": "b380e4986b8e7216d5ade33b14a6028af99555b0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabbox:1596:5459942104:2026-08-29T03:03:49Z:re_review",
       "comment_id": "5459942104",
@@ -31921,6 +31874,39 @@
         "kind": "pull_request",
         "branch": "codex/frv-process-output",
         "head_sha": "b34fa0623c13a617c7de7831f2289e8511c004bf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1612:5460909392:2026-08-29T07:02:17Z:clawsweeper_needs_human",
+      "comment_id": "5460909392",
+      "comment_version_key": "5460909392:2026-08-29T07:02:17Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1612#issuecomment-5460909392",
+      "comment_created_at": "2026-08-29T06:51:02Z",
+      "comment_updated_at": "2026-08-29T07:02:17Z",
+      "comment_body_sha256": "48172277fe4faaec6d62a55422820155b35275d8fa01f896ae79aefe6075a287",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1612,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the branch is a coherent fix with sufficient behavior proof and no actionable review finding. (sha=d438e6d82bdb409c28cc8aaf465860bfd0e63e2c)",
+      "expected_head_sha": "d438e6d82bdb409c28cc8aaf465860bfd0e63e2c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T07:03:07.170Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/triage-failure-tail",
+        "head_sha": "d438e6d82bdb409c28cc8aaf465860bfd0e63e2c",
         "cluster_id": null,
         "job_path": null
       }
