@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T19:46:38.284Z",
+  "updated_at": "2026-08-29T19:47:23.389Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116248:5463008472:2026-08-29T14:37:23Z:re_review",
-      "comment_id": "5463008472",
-      "comment_version_key": "5463008472:2026-08-29T14:37:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116248#issuecomment-5463008472",
-      "comment_created_at": "2026-08-29T14:37:23Z",
-      "comment_updated_at": "2026-08-29T14:37:23Z",
-      "comment_body_sha256": "1162ef3d4f2f9f2689911042d7e384639aa91d5388eba9fd14fbce76116f7ede",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116248,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T14:38:04.898Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/auth-paste-subagent-breaks-main-env",
-        "head_sha": "96c21a91441fe052b8212e2edd48e9f59f20120d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132622:5463008938:2026-08-29T14:37:29Z:re_review",
       "comment_id": "5463008938",
@@ -33256,6 +33209,39 @@
         "kind": "pull_request",
         "branch": "codex/frv-clipboard-document-lifecycle",
         "head_sha": "e569965ea1194657ad0088bf82648ea2c8501251",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1296:5464431607:2026-08-29T19:46:25Z:clawsweeper_needs_human",
+      "comment_id": "5464431607",
+      "comment_version_key": "5464431607:2026-08-29T19:46:25Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1296#issuecomment-5464431607",
+      "comment_created_at": "2026-08-29T19:35:20Z",
+      "comment_updated_at": "2026-08-29T19:46:25Z",
+      "comment_body_sha256": "8874aa323a1942838cb621b7e016e9cb73b97873c7fa1f9bb3f365e02b15e82c",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1296,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a security-sensitive automated admission boundary; future TruffleHog output-contract changes will safely block reviews until the pinned classifier is requalified. (sha=6e0e0a75a46bac1f656069e87e9a379642155450)",
+      "expected_head_sha": "6e0e0a75a46bac1f656069e87e9a379642155450",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T19:47:23.389Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/review-synthetic-fixture-classification",
+        "head_sha": "6e0e0a75a46bac1f656069e87e9a379642155450",
         "cluster_id": null,
         "job_path": null
       }
