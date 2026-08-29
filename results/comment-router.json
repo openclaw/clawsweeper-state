@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T00:13:17.481Z",
+  "updated_at": "2026-08-29T00:13:28.502Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118361:5161527102:2026-08-23T12:14:39Z:clawsweeper_auto_repair",
-      "comment_id": "5161527102",
-      "comment_version_key": "5161527102:2026-08-23T12:14:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118361#issuecomment-5161527102",
-      "comment_created_at": "2026-08-03T01:55:27Z",
-      "comment_updated_at": "2026-08-23T12:14:39Z",
-      "comment_body_sha256": "ee85e2c6d511241ee0f95c13db7e2a2826f197aed129c4d026dd8129e6adba33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118361,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2532feb490cb7b4e05df868ec4296a0364484b2a)",
-      "expected_head_sha": "2532feb490cb7b4e05df868ec4296a0364484b2a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T20:34:42.287Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-116747",
-        "head_sha": "2532feb490cb7b4e05df868ec4296a0364484b2a",
-        "cluster_id": "issue-openclaw-openclaw-116747",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-116747.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118679:5167057200:2026-08-26T02:41:12Z:clawsweeper_auto_repair",
       "comment_id": "5167057200",
@@ -32719,6 +32686,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131772:5452936661:2026-08-29T00:12:36Z:clawsweeper_needs_human",
+      "comment_id": "5452936661",
+      "comment_version_key": "5452936661:2026-08-29T00:12:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131772#issuecomment-5452936661",
+      "comment_created_at": "2026-08-28T13:11:46Z",
+      "comment_updated_at": "2026-08-29T00:12:36Z",
+      "comment_body_sha256": "b0e49468fdfa657a810cbbe876abfc74265d5f22a0041be0d88ce562dd80e933",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131772,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging this baseline leaves the late terminal-callback race unresolved: a stop can arrive after Session snapshots handoff state, allowing stale continuation or settlement and a reply... (sha=f7d9e62befb28a3f320ef295a0d1512e9324840a)",
+      "expected_head_sha": "f7d9e62befb28a3f320ef295a0d1512e9324840a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T00:13:28.502Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-128008-terminal-outcome",
+        "head_sha": "f7d9e62befb28a3f320ef295a0d1512e9324840a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
