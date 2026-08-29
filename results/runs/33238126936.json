@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98468",
+  "mode": "autonomous",
+  "run_id": "33238126936",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33238126936",
+  "head_sha": "b1d6b8513271c3ac492237e863ba17784b12a897",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98468.md",
+  "published_at": "2026-08-29T06:43:54.872Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98468",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98468",
+  "canonical_pr": null,
+  "summary": "#98468 remains the canonical bug, but this checkout cannot safely produce or validate the requested PR: it is at 9e10397d while the preflight main SHA dc9405e9 is absent, ../codex is unavailable for the mandatory direct contract inspection, and focused Vitest cannot start because tsx is missing. A narrow fix artifact is ready for a correctly provisioned checkout.",
+  "actions": [
+    {
+      "target": "#98468",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked until an executor has the preflight base, the mandatory sibling Codex source, and installed dependencies."
+    },
+    {
+      "target": "#98141",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical source only; no closure action is valid."
+    },
+    {
+      "target": "#101473",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical source only; no closure action is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98468",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Narrow new fix PR once the deterministic environment blockers are cleared."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
