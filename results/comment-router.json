@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T05:07:20.262Z",
+  "updated_at": "2026-08-29T05:08:05.842Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126889:5363568125:2026-08-29T01:01:17Z:clawsweeper_needs_human",
-      "comment_id": "5363568125",
-      "comment_version_key": "5363568125:2026-08-29T01:01:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126889#issuecomment-5363568125",
-      "comment_created_at": "2026-08-21T00:08:31Z",
-      "comment_updated_at": "2026-08-29T01:01:17Z",
-      "comment_body_sha256": "d8a85313f95e146b8bf195e951013111f500b78ddedd271f8bc1ca03aa513b8a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126889,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Avoid overwriting the shared custom-provider credential (P1)** - The guide tells readers to replace an existing CUSTOM_API_KEY, but non-interactive custom-provider onboarding uses that one hard-coded environment...; Review finding: [P1] Avoid overwriting the shared custom-provider credential — docs/providers/perplexity-agent-api.md:70-75 - [P2] Document legacy transport credential precedence... (sha=39116eaf5a6e73102ecf68b9f197ce104ea952c4)",
-      "expected_head_sha": "39116eaf5a6e73102ecf68b9f197ce104ea952c4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T01:12:04.354Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs-perplexity-agent-api-provider",
-        "head_sha": "39116eaf5a6e73102ecf68b9f197ce104ea952c4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127002:5365234288:2026-08-29T01:05:29Z:clawsweeper_needs_human",
       "comment_id": "5365234288",
@@ -31987,6 +31954,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132374:5460487373:2026-08-29T05:07:15Z:clawsweeper_needs_human",
+      "comment_id": "5460487373",
+      "comment_version_key": "5460487373:2026-08-29T05:07:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132374#issuecomment-5460487373",
+      "comment_created_at": "2026-08-29T05:07:15Z",
+      "comment_updated_at": "2026-08-29T05:07:15Z",
+      "comment_body_sha256": "61acdeabb8e33c4d8c9820ee5bd3939d166772ea143adcd9952fb99874f783be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132374,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Gateway owner is the private cloud desktop transport, but the supplied PR body says its packaged cl...; Review finding: [medium] Prove revoked placement cannot reach desktop input — src/gateway/worker-environments/computer-transport.ts:336 (sha=b5ba615ad817a4b3792a2566ca961ea31ed2fdf7)",
+      "expected_head_sha": "b5ba615ad817a4b3792a2566ca961ea31ed2fdf7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T05:08:05.842Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cloud-session-computer-transport",
+        "head_sha": "b5ba615ad817a4b3792a2566ca961ea31ed2fdf7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
