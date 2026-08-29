@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T10:45:16.202Z",
+  "updated_at": "2026-08-29T10:48:26.430Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112945:5246080726:2026-08-10T21:10:27Z:re_review",
-      "comment_id": "5246080726",
-      "comment_version_key": "5246080726:2026-08-10T21:10:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112945#issuecomment-5246080726",
-      "comment_created_at": "2026-08-10T21:10:27Z",
-      "comment_updated_at": "2026-08-10T21:10:27Z",
-      "comment_body_sha256": "0a836ed693df0bbc4cfc1d9b67ebdbcaaad43a0f4f5df469ca6648b2261d5e6d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112945,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T06:20:11.991Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112945:5246596769:2026-08-10T22:09:16Z:re_review",
       "comment_id": "5246596769",
@@ -32387,6 +32360,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T10:45:16.202Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131669:5450549201:2026-08-29T10:47:40Z:clawsweeper_needs_human",
+      "comment_id": "5450549201",
+      "comment_version_key": "5450549201:2026-08-29T10:47:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131669#issuecomment-5450549201",
+      "comment_created_at": "2026-08-28T09:01:04Z",
+      "comment_updated_at": "2026-08-29T10:47:40Z",
+      "comment_body_sha256": "6444b3aa18a816fbf8e9241a6b4551cdbf58f9eec074ba78c9ada26061d9a784",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131669,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied exact-head terminal trace credibly covers policy blocks and revocation before provider al...; Review finding: [P1] Fence deferred node enrollment with live authority — src/gateway/worker-environments/provider-lifecycle.ts:264 - [high] Deferred pairing setup outlives worker... (sha=d79ca36a2b156447b6d10729932005db0aeb34f1)",
+      "expected_head_sha": "d79ca36a2b156447b6d10729932005db0aeb34f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T10:48:26.430Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/worker-session-tool-policy",
+        "head_sha": "d79ca36a2b156447b6d10729932005db0aeb34f1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
