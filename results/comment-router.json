@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T03:03:43.392Z",
+  "updated_at": "2026-08-29T03:04:03.605Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3493:5390508678:2026-08-24T03:52:49Z:re_review",
-      "comment_id": "5390508678",
-      "comment_version_key": "5390508678:2026-08-24T03:52:49Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5390508678",
-      "comment_created_at": "2026-08-24T03:52:49Z",
-      "comment_updated_at": "2026-08-24T03:52:49Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T22:42:55.136Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3493:5390947340:2026-08-24T05:02:33Z:re_review",
       "comment_id": "5390947340",
@@ -32902,6 +32875,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131967:5455712704:2026-08-29T03:03:12Z:clawsweeper_needs_human",
+      "comment_id": "5455712704",
+      "comment_version_key": "5455712704:2026-08-29T03:03:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131967#issuecomment-5455712704",
+      "comment_created_at": "2026-08-28T17:35:07Z",
+      "comment_updated_at": "2026-08-29T03:03:12Z",
+      "comment_body_sha256": "6f2c1618fc77a16842d64fdf8c183c7fd3f0af75047d44aee74ea6512b83ec6c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131967,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "Maintainer decision needed: | Question | Recommendation | |---|---| | Should this maintainer-owned Matrix cleanup be accepted through the normal maintainer review path? | **Accept the cleanup:** Land the refactor after... (sha=d736a3b01e01bd7ad672299c1923776d1a373f0e)",
+      "expected_head_sha": "d736a3b01e01bd7ad672299c1923776d1a373f0e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T03:04:03.605Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup20k-matrix-env-projection-20260828",
+        "head_sha": "d736a3b01e01bd7ad672299c1923776d1a373f0e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
