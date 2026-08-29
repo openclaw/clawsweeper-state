@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T04:31:33.156Z",
+  "updated_at": "2026-08-29T04:31:35.697Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126887:5458951723:2026-08-28T23:51:16Z:re_review",
-      "comment_id": "5458951723",
-      "comment_version_key": "5458951723:2026-08-28T23:51:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126887#issuecomment-5458951723",
-      "comment_created_at": "2026-08-28T23:51:16Z",
-      "comment_updated_at": "2026-08-28T23:51:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126887,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T23:51:56.936Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-plugin-security-scanner",
-        "head_sha": "4b400b1f3063b8d6ed4d74167e882c1d1cfe1328",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132210:5458954041:2026-08-28T23:51:43Z:clawsweeper_auto_repair",
       "comment_id": "5458954041",
@@ -32783,6 +32736,39 @@
         "kind": "pull_request",
         "branch": "steipete/sweet-sanderson-26a4f5",
         "head_sha": "fc701fa3d48c4a281ecfe89d0ce25c01683c074a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131689:5450821393:2026-08-29T04:30:43Z:clawsweeper_needs_human",
+      "comment_id": "5450821393",
+      "comment_version_key": "5450821393:2026-08-29T04:30:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131689#issuecomment-5450821393",
+      "comment_created_at": "2026-08-28T09:25:56Z",
+      "comment_updated_at": "2026-08-29T04:30:43Z",
+      "comment_body_sha256": "5ae91321752f5af7c7b7f0cf8a82e571524e58b2ae8867937d86c77e3914746a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131689,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new public not_sent result relies on an adapter's assertion that dispatch never began; a false assertion after platform I/O would suppress success accounting and commit evidence. (sha=64230a73738a27f1a9440ef0a609d7d00dc8d3f5)",
+      "expected_head_sha": "64230a73738a27f1a9440ef0a609d7d00dc8d3f5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T04:31:35.697Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/twitch-skipped-receipt",
+        "head_sha": "64230a73738a27f1a9440ef0a609d7d00dc8d3f5",
         "cluster_id": null,
         "job_path": null
       }
