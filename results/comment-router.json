@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-29T05:44:14.598Z",
+  "updated_at": "2026-08-29T05:43:42.033Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113869:5080828455:2026-08-29T01:26:35Z:clawsweeper_needs_human",
+      "comment_id": "5080828455",
+      "comment_version_key": "5080828455:2026-08-29T01:26:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113869#issuecomment-5080828455",
+      "comment_created_at": "2026-07-25T22:24:35Z",
+      "comment_updated_at": "2026-08-29T01:26:35Z",
+      "comment_body_sha256": "853fae338c6d25adbd5d0b868c32f51df601605170b1cb51d745e7a259f1c29c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113869,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Mock-only: the PR reports synthetic stream/converter tests and CI, but no redacted after-fix native two-turn Responses trace showing the tempor... (sha=09687b6ebfcbb4f1bafa426685b973559704b237)",
+      "expected_head_sha": "09687b6ebfcbb4f1bafa426685b973559704b237",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T01:46:41.700Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/responses-transient-reasoning-replay",
+        "head_sha": "09687b6ebfcbb4f1bafa426685b973559704b237",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113896:5080971631:2026-08-29T01:27:18Z:clawsweeper_auto_repair",
       "comment_id": "5080971631",
@@ -31957,39 +31990,6 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132397:5460633261:2026-08-29T05:43:33Z:clawsweeper_needs_human",
-      "comment_id": "5460633261",
-      "comment_version_key": "5460633261:2026-08-29T05:43:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132397#issuecomment-5460633261",
-      "comment_created_at": "2026-08-29T05:43:33Z",
-      "comment_updated_at": "2026-08-29T05:43:33Z",
-      "comment_body_sha256": "0317672dcf6a9bd78a9f745d9ccd2c26593e75f6f8a078d2aec05fc7b38d03b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132397,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the allowlist command handler, but the supplied after-fix run uses a mocked pairing-store reader and test plugi... (sha=37131ec80030015723ddc303fe15aaf5dc362b75)",
-      "expected_head_sha": "37131ec80030015723ddc303fe15aaf5dc362b75",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T05:44:14.598Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/allowlist-list-store-read-error",
-        "head_sha": "37131ec80030015723ddc303fe15aaf5dc362b75",
-        "cluster_id": null,
-        "job_path": null
       }
     }
   ]
