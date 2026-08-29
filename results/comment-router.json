@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T01:28:11.735Z",
+  "updated_at": "2026-08-29T01:29:08.983Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130902:5458037629:2026-08-28T21:39:08Z:re_review",
-      "comment_id": "5458037629",
-      "comment_version_key": "5458037629:2026-08-28T21:39:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130902#issuecomment-5458037629",
-      "comment_created_at": "2026-08-28T21:39:08Z",
-      "comment_updated_at": "2026-08-28T21:39:08Z",
-      "comment_body_sha256": "63556d611b3b0be7f2a2276f05158dc26bd4597a6f8eb65c1cfd5f0596c3ad0e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130902,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T21:39:59.397Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/installer-dependency-policy",
-        "head_sha": "280de71e9d688e855b4daaad010c6a4c1502a35b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132129:5458037837:2026-08-28T21:39:09Z:clawsweeper_needs_human",
       "comment_id": "5458037837",
@@ -32812,6 +32765,39 @@
         "kind": "pull_request",
         "branch": "feat/meta-image-gen-provider",
         "head_sha": "bf17da28b37f312d38f37f1e10c79b7b9c778c03",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132032:5456691218:2026-08-29T01:28:15Z:clawsweeper_needs_human",
+      "comment_id": "5456691218",
+      "comment_version_key": "5456691218:2026-08-29T01:28:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132032#issuecomment-5456691218",
+      "comment_created_at": "2026-08-28T19:10:24Z",
+      "comment_updated_at": "2026-08-29T01:28:15Z",
+      "comment_body_sha256": "3deda461eee4302788dd2b20bda937786f6e32a68e84f66ca87b5c6a8702e84e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132032,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The scan intentionally reads only the newest 25 transcript messages, so an unusually busy requester can fail safe by retaining the original retry rather than receiving this deduplicat... (sha=c9567ee1c7cf18bbdbdf092536c22c4b8e2e3873)",
+      "expected_head_sha": "c9567ee1c7cf18bbdbdf092536c22c4b8e2e3873",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T01:29:08.983Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/requester-settle-wake-dedup",
+        "head_sha": "c9567ee1c7cf18bbdbdf092536c22c4b8e2e3873",
         "cluster_id": null,
         "job_path": null
       }
