@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T12:13:48.097Z",
+  "updated_at": "2026-08-29T12:13:50.700Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:664:5459472262:2026-08-29T07:20:08Z:clawsweeper_auto_repair",
-      "comment_id": "5459472262",
-      "comment_version_key": "5459472262:2026-08-29T07:20:08Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/664#issuecomment-5459472262",
-      "comment_created_at": "2026-08-29T01:24:15Z",
-      "comment_updated_at": "2026-08-29T07:20:08Z",
-      "comment_body_sha256": "d4703148b8ba44591c650bd38517428f72af09c8b18a86a96d1240c7e6f34fa4",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 664,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=671f9cf5b452cb1069f84f5cf68ecaf74bdf7182)",
-      "expected_head_sha": "671f9cf5b452cb1069f84f5cf68ecaf74bdf7182",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T07:20:48.068Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/4.3.0-20260828",
-        "head_sha": "671f9cf5b452cb1069f84f5cf68ecaf74bdf7182",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132466:5461037004:2026-08-29T07:22:34Z:re_review",
       "comment_id": "5461037004",
@@ -32447,6 +32414,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1623:5462352409:2026-08-29T12:13:14Z:re_review",
+      "comment_id": "5462352409",
+      "comment_version_key": "5462352409:2026-08-29T12:13:14Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1623#issuecomment-5462352409",
+      "comment_created_at": "2026-08-29T12:13:14Z",
+      "comment_updated_at": "2026-08-29T12:13:14Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1623,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T12:13:49.164Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sync-reused-overlay-boundaries",
+        "head_sha": "0720b8304a92eac8cbb9721407badcf9844af6ce",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
