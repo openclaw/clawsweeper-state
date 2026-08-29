@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T23:13:24.871Z",
+  "updated_at": "2026-08-29T23:13:25.629Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1166:5304768336:2026-08-29T17:00:47Z:clawsweeper_auto_repair",
-      "comment_id": "5304768336",
-      "comment_version_key": "5304768336:2026-08-29T17:00:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1166#issuecomment-5304768336",
-      "comment_created_at": "2026-08-15T23:39:25Z",
-      "comment_updated_at": "2026-08-29T17:00:47Z",
-      "comment_body_sha256": "21078c6f653b15bdde812ba21e53f072f2d5165a046aa08087047b5f876ebcf1",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1166,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bb12539e90255f49f3b384cd9360d8949fd72a27)",
-      "expected_head_sha": "bb12539e90255f49f3b384cd9360d8949fd72a27",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T18:12:19.441Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "local/issue-1122-bounded-mxc-cleanup",
-        "head_sha": "bb12539e90255f49f3b384cd9360d8949fd72a27",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/release-workflows:25:5462516746:2026-08-29T18:11:13Z:clawsweeper_needs_human",
       "comment_id": "5462516746",
@@ -32877,6 +32844,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132879:5465286547:2026-08-29T23:12:37Z:clawsweeper_needs_human",
+      "comment_id": "5465286547",
+      "comment_version_key": "5465286547:2026-08-29T23:12:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132879#issuecomment-5465286547",
+      "comment_created_at": "2026-08-29T22:37:45Z",
+      "comment_updated_at": "2026-08-29T23:12:37Z",
+      "comment_body_sha256": "1c1cf7d51e480088553100f2f40f026672a84e38e07ddda7d0b81953218c3c30",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132879,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This compatibility-sensitive change turns an early build-verification failure into a bounded wait for dev Git updates; an unobserved identity can now consume the restart budget before... (sha=6d69ff8f6f59a4a257f435afd6db521118e32b54)",
+      "expected_head_sha": "6d69ff8f6f59a4a257f435afd6db521118e32b54",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T23:13:25.629Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/132864-build-id-pending",
+        "head_sha": "6d69ff8f6f59a4a257f435afd6db521118e32b54",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
