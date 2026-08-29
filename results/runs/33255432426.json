@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-132597",
+  "mode": "autonomous",
+  "run_id": "33255432426",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33255432426",
+  "head_sha": "e1eefe217304f0f510acb3890db1155cef61682e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-132597.md",
+  "published_at": "2026-08-29T13:58:44.135Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/132597",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/132597",
+  "canonical_pr": null,
+  "summary": "#132597 is a source-proven canonical regression on main, but this worker cannot implement or validate it: the checkout and /tmp are read-only, dependencies are absent, pnpm/Corepack cannot create its cache, GitHub search lacks credentials, and the mandatory sibling ../codex source is unavailable.",
+  "actions": [
+    {
+      "target": "#132597",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132597",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable checkout with dependencies, authenticated GitHub preflight, and the mandated ../codex source checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-132597",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#132597",
+      "candidate_fix": null,
+      "reason": "A writable executor can apply this narrow owner-boundary repair after completing the blocked preflight and validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
