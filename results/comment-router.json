@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T04:26:38.979Z",
+  "updated_at": "2026-08-29T04:26:43.739Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131966:5455719739:2026-08-28T23:49:23Z:clawsweeper_needs_human",
-      "comment_id": "5455719739",
-      "comment_version_key": "5455719739:2026-08-28T23:49:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131966#issuecomment-5455719739",
-      "comment_created_at": "2026-08-28T17:35:44Z",
-      "comment_updated_at": "2026-08-28T23:49:23Z",
-      "comment_body_sha256": "9748ae265aaf8e95a8b5cae48107ff8fe38691e692aa37aa1ed1582459152e87",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131966,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Skip removed accounts in deferred thaw recovery (P1)** - A retained target that disappears during hot reload has no snapshot row, but this branch still explicitly starts it. Explicit recovery startup bypasses ac...; Review finding: [P1] Skip removed accounts in deferred thaw recovery — src/gateway/channel-thaw-restart.ts:75-77 - [medium] Do not restart removed account IDs — src/gateway/channe... (sha=9f9a0bbe428ee066c39cc006c8d354e799d29cfd)",
-      "expected_head_sha": "9f9a0bbe428ee066c39cc006c8d354e799d29cfd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T23:50:30.183Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/131046-event-loop-stall-restart",
-        "head_sha": "9f9a0bbe428ee066c39cc006c8d354e799d29cfd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131966:5456546297:2026-08-28T18:58:45Z:re_review",
       "comment_id": "5456546297",
@@ -32836,6 +32803,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T04:26:38.979Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126224:5338632469:2026-08-29T04:25:49Z:clawsweeper_needs_human",
+      "comment_id": "5338632469",
+      "comment_version_key": "5338632469:2026-08-29T04:25:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126224#issuecomment-5338632469",
+      "comment_created_at": "2026-08-19T06:57:40Z",
+      "comment_updated_at": "2026-08-29T04:25:49Z",
+      "comment_body_sha256": "40b3919e5b27db32a804373962ade83f3d1ea62c2215462db0c3747f0e492a75",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126224,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the configured prepared runtime, reached by Gateway models.list through deferred catalog loading. The... (sha=ee1f8cf996d3b7123a8306e1b94ae4f8c6bf41ca)",
+      "expected_head_sha": "ee1f8cf996d3b7123a8306e1b94ae4f8c6bf41ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T04:26:43.739Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/prepared-catalog-generation-recovery",
+        "head_sha": "ee1f8cf996d3b7123a8306e1b94ae4f8c6bf41ca",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
