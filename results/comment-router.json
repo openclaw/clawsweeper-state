@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T14:19:04.303Z",
+  "updated_at": "2026-08-29T14:19:23.763Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132032:5461384776:2026-08-29T08:48:17Z:re_review",
-      "comment_id": "5461384776",
-      "comment_version_key": "5461384776:2026-08-29T08:48:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132032#issuecomment-5461384776",
-      "comment_created_at": "2026-08-29T08:48:17Z",
-      "comment_updated_at": "2026-08-29T08:48:17Z",
-      "comment_body_sha256": "5f707fe3b612eccd15f04b562f9683fe8cdfce459870e9a6989dc58b8f316d99",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132032,
-      "author": "pengzh1",
-      "author_id": 24854675,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T08:49:02.545Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/requester-settle-wake-dedup",
-        "head_sha": "b02fec8ebee1b17d3f258aac55fbda7b3deea460",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:77184:5461373482:2026-08-29T08:45:31Z:re_review",
       "comment_id": "5461373482",
@@ -32267,6 +32220,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T14:19:04.303Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132618:5462915230:2026-08-29T14:18:34Z:clawsweeper_needs_human",
+      "comment_id": "5462915230",
+      "comment_version_key": "5462915230:2026-08-29T14:18:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132618#issuecomment-5462915230",
+      "comment_created_at": "2026-08-29T14:18:34Z",
+      "comment_updated_at": "2026-08-29T14:18:34Z",
+      "comment_body_sha256": "3576cd090f313d836314affc934d53f83e60ab1ef8741c87a295d8ce12349ff9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132618,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repair changes persisted session-summary shape in memory; focused tests cover generated and legacy shapes, but a live gateway replay was not available in this managed worktree and... (sha=4526bd41be4d4f1dc16bc4eddd73394c1f904044)",
+      "expected_head_sha": "4526bd41be4d4f1dc16bc4eddd73394c1f904044",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T14:19:23.762Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/vito-vacinc-issue-132423",
+        "head_sha": "4526bd41be4d4f1dc16bc4eddd73394c1f904044",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
