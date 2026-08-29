@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-105517",
+  "mode": "autonomous",
+  "run_id": "33281135976",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33281135976",
+  "head_sha": "8d11c21558ba90ac6812b80b95efd0dd9b0aa936",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-105517.md",
+  "published_at": "2026-08-29T23:49:58.543Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/105517",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/105517",
+  "canonical_pr": null,
+  "summary": "#105517 remains a narrow, reproducible command-final transcript defect on supplied main d0d3bc6a42af693e5d24785b2145b995b49f2645. The repair is ready to implement, but this worker cannot modify or validate the checkout: it is read-only, ../codex is absent (the repository’s mandatory direct Codex-source gate cannot be completed), and Corepack cannot create its cache for focused tests.",
+  "actions": [
+    {
+      "target": "#105517",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#105517",
+      "candidate_fix": null,
+      "reason": "A focused fix is appropriate; no configuration, schema, dependency, or security-boundary change is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-105517",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#105517",
+      "candidate_fix": null,
+      "reason": "Narrow implementation plan prepared for the writable repair executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-105517",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#105517",
+      "candidate_fix": null,
+      "reason": "Implementation and local validation require a writable checkout with the mandatory sibling Codex source available."
+    },
+    {
+      "target": "#83494",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#105517",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation."
+    },
+    {
+      "target": "#104543",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation."
+    },
+    {
+      "target": "#104544",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#105517",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation."
+    },
+    {
+      "target": "#106073",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#105517",
+      "candidate_fix": null,
+      "reason": "Already merged; no mutation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1,
+    "keep_closed": 4
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1,
+    "skipped": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
