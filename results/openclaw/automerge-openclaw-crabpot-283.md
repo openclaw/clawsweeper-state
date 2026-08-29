@@ -2,12 +2,12 @@
 repo: "openclaw/crabpot"
 cluster_id: "automerge-openclaw-crabpot-283"
 mode: "autonomous"
-run_id: "32998162485"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/32998162485"
-head_sha: "afe976209aa58a5629041b42b66f6ee11b2812a7"
-workflow_conclusion: "failure"
+run_id: "33278163274"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33278163274"
+head_sha: "8d11c21558ba90ac6812b80b95efd0dd9b0aa936"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-26T18:24:47.172Z"
+published_at: "2026-08-29T22:41:51.042Z"
 canonical: "#283"
 canonical_issue: null
 canonical_pr: "#283"
@@ -16,7 +16,7 @@ fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
-apply_blocked: 0
+apply_blocked: 1
 apply_skipped: 0
 needs_human_count: 0
 ---
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/crabpot
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/32998162485](https://github.com/openclaw/clawsweeper/actions/runs/32998162485)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33278163274](https://github.com/openclaw/clawsweeper/actions/runs/33278163274)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -46,7 +46,7 @@ Make PR #283 merge-ready for ClawSweeper automerge. Rebase onto latest main, add
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
-| Apply blocked | 0 |
+| Apply blocked | 1 |
 | Apply skipped | 0 |
 | Needs human | 0 |
 
@@ -54,13 +54,13 @@ Make PR #283 merge-ready for ClawSweeper automerge. Rebase onto latest main, add
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| repair_contributor_branch | pushed | https://github.com/openclaw/crabpot/pull/283 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #283 | merge_canonical | blocked | fix_pr | job does not allow merge |
 
 ## Worker Action Matrix
 
