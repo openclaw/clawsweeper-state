@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T09:11:27.213Z",
+  "updated_at": "2026-08-29T09:11:31.416Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131949:5460554450:2026-08-29T05:23:30Z:re_review",
-      "comment_id": "5460554450",
-      "comment_version_key": "5460554450:2026-08-29T05:23:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131949#issuecomment-5460554450",
-      "comment_created_at": "2026-08-29T05:23:30Z",
-      "comment_updated_at": "2026-08-29T05:23:30Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131949,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T05:24:12.263Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-131711",
-        "head_sha": "0ba3c25ef8d332500c2efda03722c934fa1f5769",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132385:5460568794:2026-08-29T05:27:07Z:clawsweeper_needs_human",
       "comment_id": "5460568794",
@@ -32555,6 +32508,39 @@
         "kind": "pull_request",
         "branch": "fix/reconnect-sleep-context",
         "head_sha": "1310d1869d48633854e56067789abe0b5a6d698d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3532:5415957601:2026-08-29T09:08:25Z:clawsweeper_needs_human",
+      "comment_id": "5415957601",
+      "comment_version_key": "5415957601:2026-08-29T09:08:25Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3532#issuecomment-5415957601",
+      "comment_created_at": "2026-08-25T19:56:39Z",
+      "comment_updated_at": "2026-08-29T09:08:25Z",
+      "comment_body_sha256": "475bbccff800f46a4b20cebca234d1d7fce7f7ab16b715144f28dbf2b2cd51d5",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3532,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging would label a report for bc4b1ec8 as the latest audit while current main is 9d43db7f; the report remains accurate about its own snapshot but is not a complete audit of later m... (sha=a11090d4bb105a0012c674895b32a92ff1c62391)",
+      "expected_head_sha": "a11090d4bb105a0012c674895b32a92ff1c62391",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T09:11:31.416Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/design-system-audit",
+        "head_sha": "a11090d4bb105a0012c674895b32a92ff1c62391",
         "cluster_id": null,
         "job_path": null
       }
