@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T03:21:37.277Z",
+  "updated_at": "2026-08-29T03:22:39.145Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132093:5457671373:2026-08-28T23:07:53Z:clawsweeper_needs_human",
-      "comment_id": "5457671373",
-      "comment_version_key": "5457671373:2026-08-28T23:07:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132093#issuecomment-5457671373",
-      "comment_created_at": "2026-08-28T20:56:21Z",
-      "comment_updated_at": "2026-08-28T23:07:53Z",
-      "comment_body_sha256": "7d094a0d7aee82baf3af8ac48b3464d20f9b3e98cff8cb5a5acc69f910a86431",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132093,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by four net lines; the per-registry retired-state check is the narrow existing reuse boundary, while clearing the shared cache on every retirement would also dis... (sha=ca72271b6ba0a65b4a98b88b06e6bf8712aa87f1)",
-      "expected_head_sha": "ca72271b6ba0a65b4a98b88b06e6bf8712aa87f1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T23:08:43.643Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/release-plugin-retirement-20260828",
-        "head_sha": "ca72271b6ba0a65b4a98b88b06e6bf8712aa87f1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131990:5458644433:2026-08-28T23:01:03Z:re_review",
       "comment_id": "5458644433",
@@ -32948,6 +32915,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132260:5459519082:2026-08-29T03:21:52Z:clawsweeper_needs_human",
+      "comment_id": "5459519082",
+      "comment_version_key": "5459519082:2026-08-29T03:21:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132260#issuecomment-5459519082",
+      "comment_created_at": "2026-08-29T01:32:36Z",
+      "comment_updated_at": "2026-08-29T03:21:52Z",
+      "comment_body_sha256": "dc682d07af40c5fd5ace0b1b1467c961dd34dd0fbe785081671bff52efb205b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132260,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the WhatsApp inbox monitor; supplied after-fix evidence exercises it with a mocked Baileys socket, seeded test credentials... (sha=c7e7f33de68b2549a074234e3c618b5542dc00f6)",
+      "expected_head_sha": "c7e7f33de68b2549a074234e3c618b5542dc00f6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T03:22:39.145Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-cold-start-append-catchup",
+        "head_sha": "c7e7f33de68b2549a074234e3c618b5542dc00f6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
