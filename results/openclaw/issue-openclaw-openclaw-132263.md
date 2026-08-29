@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-132263"
 mode: "autonomous"
-run_id: "33229349066"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33229349066"
+run_id: "33232803020"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33232803020"
 head_sha: "b1d6b8513271c3ac492237e863ba17784b12a897"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-29T02:52:48.239Z"
-canonical: "https://github.com/openclaw/openclaw/issues/132263"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/132263"
+published_at: "2026-08-29T04:12:37.494Z"
+canonical: "#132263"
+canonical_issue: "#132263"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33229349066](https://github.com/openclaw/clawsweeper/actions/runs/33229349066)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33232803020](https://github.com/openclaw/clawsweeper/actions/runs/33232803020)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/132263
+Canonical: #132263
 
 ## Summary
 
-#132263 remains the canonical open bug. Current main statically shows the phase-aware extraction contract is bypassed by the Control UI bubble projection when mixed assistant content is normalized as a tool row. A narrow fix PR is appropriate, but this read-only worker cannot install dependencies, run the required regression/browser proof, create the branch, or satisfy the mandatory direct ../codex source inspection because that checkout is absent.
+Current main still has the phase-projection defect: the bubble owner renders every normalized text block, while the canonical extractor excludes commentary-signed text. The mixed assistant/tool shape is normalized as a tool result, so the raw assistant phase contract is bypassed. #131681 did not touch this owner. No patch or runnable reproduction was possible: this checkout and Corepack cache are read-only, dependencies are absent, and the required sibling ../codex source checkout is missing.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/132263
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #132263 | fix_needed | blocked | canonical | Implementation is narrowly specified, but local reproduction, test validation, browser evidence, and the repository's mandatory Codex-source gate are blocked by the immutable worker environment. |
-| cluster:issue-openclaw-openclaw-132263 | build_fix_artifact | planned | canonical | Prepare one narrow new fix PR from clawsweeper/issue-openclaw-openclaw-132263 after provisioning a writable dependency-complete checkout and the required ../codex source. |
+| #132263 | fix_needed | blocked | canonical | A narrow repair is warranted, but this read-only worker cannot modify the branch, install dependencies, run the regression/browser proof, or satisfy the mandatory direct ../codex inspection gate. |
 
 ## Needs Human
 
