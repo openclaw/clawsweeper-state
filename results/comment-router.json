@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T19:10:52.005Z",
+  "updated_at": "2026-08-29T19:12:56.367Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132564:5462290627:2026-08-29T13:54:10Z:clawsweeper_needs_human",
-      "comment_id": "5462290627",
-      "comment_version_key": "5462290627:2026-08-29T13:54:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132564#issuecomment-5462290627",
-      "comment_created_at": "2026-08-29T11:58:43Z",
-      "comment_updated_at": "2026-08-29T13:54:10Z",
-      "comment_body_sha256": "76c8579134b2d4dff5e2f43dfb947746b5045503f437f19a2084428c767ecb0d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132564,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing explicit default-mode focus longer than 800 Unicode code points loses its tail before the model request; the maintainer discussion records this as an intentional, documented... (sha=e369cde8e906155450ae3ef9bee3457d24867024)",
-      "expected_head_sha": "e369cde8e906155450ae3ef9bee3457d24867024",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T14:00:24.429Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/compaction-prefix-focus-625078",
-        "head_sha": "e369cde8e906155450ae3ef9bee3457d24867024",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132610:5462798532:2026-08-29T13:53:52Z:clawsweeper_auto_repair",
       "comment_id": "5462798532",
@@ -33017,6 +32984,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132453:5464322158:2026-08-29T19:12:12Z:re_review",
+      "comment_id": "5464322158",
+      "comment_version_key": "5464322158:2026-08-29T19:12:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132453#issuecomment-5464322158",
+      "comment_created_at": "2026-08-29T19:12:12Z",
+      "comment_updated_at": "2026-08-29T19:12:12Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132453,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T19:12:54.279Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/provider-profile-usage",
+        "head_sha": "8e7ca649594191987fe9ff05d4adb9137d88596b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
