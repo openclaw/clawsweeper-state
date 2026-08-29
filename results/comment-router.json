@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T11:08:21.831Z",
+  "updated_at": "2026-08-29T11:09:01.449Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112811:5056224570:2026-07-23T08:39:04Z:re_review",
-      "comment_id": "5056224570",
-      "comment_version_key": "5056224570:2026-07-23T08:39:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112811#issuecomment-5056224570",
-      "comment_created_at": "2026-07-23T08:39:04Z",
-      "comment_updated_at": "2026-07-23T08:39:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112811,
-      "author": "jimmypuckett",
-      "author_id": 3220069,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T06:34:03.027Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-08-29T06:14:56Z:clawsweeper_needs_human",
       "comment_id": "5075679870",
@@ -32479,6 +32452,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132542:5461771390:2026-08-29T11:08:06Z:clawsweeper_needs_human",
+      "comment_id": "5461771390",
+      "comment_version_key": "5461771390:2026-08-29T11:08:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132542#issuecomment-5461771390",
+      "comment_created_at": "2026-08-29T10:21:31Z",
+      "comment_updated_at": "2026-08-29T11:08:06Z",
+      "comment_body_sha256": "e3199aa12dfb5368b9fa059ea0d8c8ccdba9e228bb66fa2ababf471bd58e955b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132542,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress. Because the branch changes Docker credential staging and dynamic CLI package setup, merge should wait for the relevant exact-head automation result... (sha=11c128dc567989ad9cc94f94baf0f4b34363ae32)",
+      "expected_head_sha": "11c128dc567989ad9cc94f94baf0f4b34363ae32",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T11:09:01.449Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/live-cli-fixture-contracts",
+        "head_sha": "11c128dc567989ad9cc94f94baf0f4b34363ae32",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
