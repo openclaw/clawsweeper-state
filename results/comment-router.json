@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T22:13:53.213Z",
+  "updated_at": "2026-08-29T22:14:20.261Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128905:5403232649:2026-08-29T16:54:43Z:clawsweeper_auto_repair",
-      "comment_id": "5403232649",
-      "comment_version_key": "5403232649:2026-08-29T16:54:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128905#issuecomment-5403232649",
-      "comment_created_at": "2026-08-25T00:17:52Z",
-      "comment_updated_at": "2026-08-29T16:54:43Z",
-      "comment_body_sha256": "6e74ed3297a7d488cae7866029a420fb556a79c147c6c89aae01ef616a01d2ea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128905,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1540b946dbe35087dc46d620bcc3013cda012544)",
-      "expected_head_sha": "1540b946dbe35087dc46d620bcc3013cda012544",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T17:19:02.294Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/127583-sessions-cleanup-all-agents",
-        "head_sha": "1540b946dbe35087dc46d620bcc3013cda012544",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132429:5460801764:2026-08-29T16:50:43Z:clawsweeper_needs_human",
       "comment_id": "5460801764",
@@ -32590,6 +32557,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132868:5465184930:2026-08-29T22:13:32Z:clawsweeper_needs_human",
+      "comment_id": "5465184930",
+      "comment_version_key": "5465184930:2026-08-29T22:13:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132868#issuecomment-5465184930",
+      "comment_created_at": "2026-08-29T22:13:32Z",
+      "comment_updated_at": "2026-08-29T22:13:32Z",
+      "comment_body_sha256": "2e30138622d7f88afbb38562e573864b4bf0dc24dbb25f3874fe056331da972a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132868,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The contributor supplied a pre/post terminal trace for the changed armTimer owner, but it uses a synthetic in-memory CronService state rather t... (sha=55971a4a4d1cda30c3ce03070b26ba678ca61e4e)",
+      "expected_head_sha": "55971a4a4d1cda30c3ce03070b26ba678ca61e4e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T22:14:20.261Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-legacy-job-timer-arming",
+        "head_sha": "55971a4a4d1cda30c3ce03070b26ba678ca61e4e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
