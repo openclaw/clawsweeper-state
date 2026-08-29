@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T16:40:47.884Z",
+  "updated_at": "2026-08-29T16:40:57.769Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-29T11:29:42Z:clawsweeper_needs_human",
-      "comment_id": "5365906478",
-      "comment_version_key": "5365906478:2026-08-29T11:29:42Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5365906478",
-      "comment_created_at": "2026-08-21T06:12:29Z",
-      "comment_updated_at": "2026-08-29T11:29:42Z",
-      "comment_body_sha256": "7a7640279945e88534b394e1b85eb67351fdaba967e2343b80f620d52a92a19d",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3501,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The later detector deployment must wait for both backfills to complete and remove staging before querying either index; activating consumers early would fail those queries. (sha=bd01f13aa001714b63ec48748df5db7f3d1227f9)",
-      "expected_head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T11:37:17.710Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/stage-signal-indexes",
-        "head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3530:5413278014:2026-08-29T11:29:40Z:clawsweeper_needs_human",
       "comment_id": "5413278014",
@@ -32515,6 +32482,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131456:5463599481:2026-08-29T16:40:06Z:re_review",
+      "comment_id": "5463599481",
+      "comment_version_key": "5463599481:2026-08-29T16:40:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131456#issuecomment-5463599481",
+      "comment_created_at": "2026-08-29T16:40:06Z",
+      "comment_updated_at": "2026-08-29T16:40:06Z",
+      "comment_body_sha256": "b2985828b9ac2761464a36325f0f8bf48b499b31d4080393173915ca6e45203d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131456,
+      "author": "gaoanze888",
+      "author_id": 214786078,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T16:40:55.683Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "gaoanze888/store-writer-nested-drain",
+        "head_sha": "b7a02751ec185f133e097abd2424a4f199756ab2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
