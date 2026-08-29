@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T02:45:31.371Z",
+  "updated_at": "2026-08-29T02:47:00.371Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120168:5214713094:2026-08-28T21:15:47Z:clawsweeper_auto_repair",
-      "comment_id": "5214713094",
-      "comment_version_key": "5214713094:2026-08-28T21:15:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120168#issuecomment-5214713094",
-      "comment_created_at": "2026-08-07T08:36:24Z",
-      "comment_updated_at": "2026-08-28T21:15:47Z",
-      "comment_body_sha256": "079986d5dd58679c90dd66bbd1699cbae4e74f65de79dca25947162c49e17596",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120168,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=089056737bd173a02afe129b9b27142fbf587c38)",
-      "expected_head_sha": "089056737bd173a02afe129b9b27142fbf587c38",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T22:42:36.720Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/matrix-e2ee-generation-lifecycle-20260807",
-        "head_sha": "089056737bd173a02afe129b9b27142fbf587c38",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121982:5251626998:2026-08-28T21:20:50Z:clawsweeper_auto_repair",
       "comment_id": "5251626998",
@@ -32990,6 +32957,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1595:5459862921:2026-08-29T02:46:11Z:re_review",
+      "comment_id": "5459862921",
+      "comment_version_key": "5459862921:2026-08-29T02:46:11Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1595#issuecomment-5459862921",
+      "comment_created_at": "2026-08-29T02:46:11Z",
+      "comment_updated_at": "2026-08-29T02:46:11Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1595,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T02:46:58.195Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gcp-created-image-provenance",
+        "head_sha": "c4253fa4180b9672cd02c282948e01c921611bf7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
