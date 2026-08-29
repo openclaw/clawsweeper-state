@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T21:21:53.167Z",
+  "updated_at": "2026-08-29T21:22:08.626Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132622:5463423106:2026-08-29T16:03:13Z:re_review",
-      "comment_id": "5463423106",
-      "comment_version_key": "5463423106:2026-08-29T16:03:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132622#issuecomment-5463423106",
-      "comment_created_at": "2026-08-29T16:03:13Z",
-      "comment_updated_at": "2026-08-29T16:03:13Z",
-      "comment_body_sha256": "8ce166a7336433252dfc42d52c2f0f67a62c9e5992c78ea46a3b415e7d7fe59a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132622,
-      "author": "zw-xysk",
-      "author_id": 294457748,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — added real dispatcher + real lark authority-chain proof to the pr body (production-path proof section). the forbidden requester is now shown rejected by the dispatcher before lark i/o, and the authorized operator.admin request is shown reaching lark i/o (lark 99992356 validation response). addressing the proof-confidence finding from the last review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T16:10:58.159Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/feishu-group-management-130823",
-        "head_sha": "38503b6ec48b7275adb35f079cb640170dc92200",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131466:5463448444:2026-08-29T16:08:31Z:re_review",
       "comment_id": "5463448444",
@@ -32869,6 +32822,39 @@
         "kind": "pull_request",
         "branch": "codex/issue-132077-memory-wiki-snapshot",
         "head_sha": "2de34b37490065ef0188a3caa8248ffc97a3b4be",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132852:5464954214:2026-08-29T21:21:21Z:clawsweeper_needs_human",
+      "comment_id": "5464954214",
+      "comment_version_key": "5464954214:2026-08-29T21:21:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132852#issuecomment-5464954214",
+      "comment_created_at": "2026-08-29T21:21:21Z",
+      "comment_updated_at": "2026-08-29T21:21:21Z",
+      "comment_body_sha256": "e9c7686e2a227a72d73884d48de50178a550373a7beacce549bb4d4052e79900",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132852,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owners are the outbound mirror boundaries and their destination-fence matcher; supplied evidence shows pre-fix logs and... (sha=00ec1ec16c7b54cadd1fbc3a29c9fc35098fde12)",
+      "expected_head_sha": "00ec1ec16c7b54cadd1fbc3a29c9fc35098fde12",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T21:22:08.626Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mirror-writer-fence-destination-132766",
+        "head_sha": "00ec1ec16c7b54cadd1fbc3a29c9fc35098fde12",
         "cluster_id": null,
         "job_path": null
       }
