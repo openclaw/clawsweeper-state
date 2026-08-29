@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-70634"
 mode: "autonomous"
-run_id: "33246679797"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33246679797"
+run_id: "33248280697"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33248280697"
 head_sha: "e1eefe217304f0f510acb3890db1155cef61682e"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-29T10:13:22.142Z"
-canonical: "https://github.com/openclaw/openclaw/issues/70634"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/70634"
+published_at: "2026-08-29T10:54:24.911Z"
+canonical: "#70634"
+canonical_issue: "#70634"
 canonical_pr: null
-actions_total: 6
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33246679797](https://github.com/openclaw/clawsweeper/actions/runs/33246679797)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33248280697](https://github.com/openclaw/clawsweeper/actions/runs/33248280697)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/70634
+Canonical: #70634
 
 ## Summary
 
-#70634 remains the canonical narrow bug: inter-session provenance reaches the embedded runner but is currently ignored by lane priority selection, so agent-loop work shares foreground priority with external user work. A two-file owner-boundary repair and regression are specified below. Local implementation and execution-order validation are blocked because this worker has a read-only checkout; the mandatory sibling ../codex source is also unavailable for the repository’s Codex gate.
+#70634 remains a narrow, source-reproducible embedded-run scheduling bug. A repair artifact is ready, but this read-only worker cannot create or validate the branch: the required sibling ../codex checkout is absent and dependencies lack tsx; policy requires pnpm install, which cannot run in this filesystem sandbox.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/70634
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #70634 | fix_needed | blocked | canonical | Implementation is narrowly specified but cannot be performed or locally validated in this read-only worker. |
-| #75299 | keep_related | planned | related | Related scheduling-policy work, not a replacement for the provenance-classification repair. |
-| #79589 | keep_related | planned | related | Separate product-policy discussion remains open. |
-| #80199 | keep_closed | skipped | superseded | Historical context only; no closure action is valid. |
-| #84575 | keep_independent | planned | independent | Independent session-admission defect. |
-| cluster:issue-openclaw-openclaw-70634 | build_fix_artifact | planned |  | Executor should implement the narrow artifact on clawsweeper/issue-openclaw-openclaw-70634. |
+| #70634 | build_fix_artifact | planned | canonical | Repair the priority decision at its owner; producer provenance is already present and should not acquire duplicate caller-side priority logic. |
 
 ## Needs Human
 

@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-70634",
+  "mode": "autonomous",
+  "run_id": "33248280697",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33248280697",
+  "head_sha": "e1eefe217304f0f510acb3890db1155cef61682e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-70634.md",
+  "published_at": "2026-08-29T10:54:24.911Z",
+  "canonical": "#70634",
+  "canonical_issue": "#70634",
+  "canonical_pr": null,
+  "summary": "#70634 remains a narrow, source-reproducible embedded-run scheduling bug. A repair artifact is ready, but this read-only worker cannot create or validate the branch: the required sibling ../codex checkout is absent and dependencies lack tsx; policy requires pnpm install, which cannot run in this filesystem sandbox.",
+  "actions": [
+    {
+      "target": "#70634",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Repair the priority decision at its owner; producer provenance is already present and should not acquire duplicate caller-side priority logic."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
