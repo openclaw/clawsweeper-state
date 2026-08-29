@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T20:20:28.972Z",
+  "updated_at": "2026-08-29T20:24:20.786Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:165:5463204815:2026-08-29T15:18:39Z:clawsweeper_needs_human",
-      "comment_id": "5463204815",
-      "comment_version_key": "5463204815:2026-08-29T15:18:39Z",
-      "comment_url": "https://github.com/openclaw/gitcrawl/pull/165#issuecomment-5463204815",
-      "comment_created_at": "2026-08-29T15:18:39Z",
-      "comment_updated_at": "2026-08-29T15:18:39Z",
-      "comment_body_sha256": "b8b9504b61d74750ae7cb2e135b30576ab7c98aaf2b74dc7d8b94de017108666",
-      "repo": "openclaw/gitcrawl",
-      "issue_number": 165,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the PR is a complete, reviewable release-closeout change with no discrete defect to automate. (sha=fc133934245dcbfb007b13fc39c3d87b0b61499e)",
-      "expected_head_sha": "fc133934245dcbfb007b13fc39c3d87b0b61499e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T15:19:25.155Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/next-unreleased-0.9.3-33259384290",
-        "head_sha": "fc133934245dcbfb007b13fc39c3d87b0b61499e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3268:5463205463:2026-08-29T15:18:47Z:clawsweeper_needs_human",
       "comment_id": "5463205463",
@@ -32993,6 +32960,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:163:5464691790:2026-08-29T20:23:33Z:clawsweeper_needs_human",
+      "comment_id": "5464691790",
+      "comment_version_key": "5464691790:2026-08-29T20:23:33Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/163#issuecomment-5464691790",
+      "comment_created_at": "2026-08-29T20:23:33Z",
+      "comment_updated_at": "2026-08-29T20:23:33Z",
+      "comment_body_sha256": "fd34e2a871ce4927bd53e782dea7eb230cf038a9efaef3fca05db9bc7785cc32",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 163,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the durable queue reader, and the supplied tests invoke it with real local I/O while modeling Windows stat rece... (sha=6d228b78a8c5fab21b620162c9a31bae0594c528)",
+      "expected_head_sha": "6d228b78a8c5fab21b620162c9a31bae0594c528",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T20:24:20.786Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/durable-queue-lossless-identity",
+        "head_sha": "6d228b78a8c5fab21b620162c9a31bae0594c528",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
