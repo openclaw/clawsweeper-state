@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T02:33:27.232Z",
+  "updated_at": "2026-08-29T02:33:47.826Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132032:5458422751:2026-08-28T22:28:42Z:re_review",
-      "comment_id": "5458422751",
-      "comment_version_key": "5458422751:2026-08-28T22:28:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132032#issuecomment-5458422751",
-      "comment_created_at": "2026-08-28T22:28:42Z",
-      "comment_updated_at": "2026-08-28T22:28:42Z",
-      "comment_body_sha256": "239b31aa0206fd0a4b92b4c45d01f08a15e3b9b4ca88a9cad7bde2d4053d616e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132032,
-      "author": "pengzh1",
-      "author_id": 24854675,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T22:29:27.971Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/requester-settle-wake-dedup",
-        "head_sha": "074f3c617c243297f960780de19f9532550332d0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132011:5458422769:2026-08-28T22:28:42Z:re_review",
       "comment_id": "5458422769",
@@ -33010,6 +32963,39 @@
         "kind": "pull_request",
         "branch": "fix/worker-session-tool-policy",
         "head_sha": "c7fabdecef4ea1b4679c0dda71725c4496a8f2e3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131600:5449577047:2026-08-29T02:33:06Z:clawsweeper_needs_human",
+      "comment_id": "5449577047",
+      "comment_version_key": "5449577047:2026-08-29T02:33:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131600#issuecomment-5449577047",
+      "comment_created_at": "2026-08-28T07:12:50Z",
+      "comment_updated_at": "2026-08-29T02:33:06Z",
+      "comment_body_sha256": "9ccab383eb95b15f3f24e6eda72a4c3ba73918bf8f1782d3b18952583e34d3fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131600,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the Control UI lifecycle action that maps a Gateway proposal record into a row and notice. The body describes screenshots... (sha=035860b6f59183868c69af951569e27dc6d53533)",
+      "expected_head_sha": "035860b6f59183868c69af951569e27dc6d53533",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T02:33:47.826Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workshop-action-unconfirmed",
+        "head_sha": "035860b6f59183868c69af951569e27dc6d53533",
         "cluster_id": null,
         "job_path": null
       }
