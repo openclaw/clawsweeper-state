@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T15:04:08.199Z",
+  "updated_at": "2026-08-29T15:04:09.048Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132470:5461088925:2026-08-29T09:05:21Z:clawsweeper_needs_human",
-      "comment_id": "5461088925",
-      "comment_version_key": "5461088925:2026-08-29T09:05:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132470#issuecomment-5461088925",
-      "comment_created_at": "2026-08-29T07:35:30Z",
-      "comment_updated_at": "2026-08-29T09:05:21Z",
-      "comment_body_sha256": "9f74103b46394c0c043bfb7480ddf0c87245695877ee9e5127fdc74b8234af06",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132470,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes historical release-test pass/fail classification; current context still shows required CI in progress for 1fee5e06bc6bd69ec14c8bf2e461b3457c65c07d. (sha=1fee5e06bc6bd69ec14c8bf2e461b3457c65c07d)",
-      "expected_head_sha": "1fee5e06bc6bd69ec14c8bf2e461b3457c65c07d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T09:11:48.961Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/historical-upgrade-proof",
-        "head_sha": "1fee5e06bc6bd69ec14c8bf2e461b3457c65c07d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132475:5461108907:2026-08-29T09:00:49Z:clawsweeper_auto_repair",
       "comment_id": "5461108907",
@@ -32269,6 +32236,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T15:04:08.199Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132648:5463129286:2026-08-29T15:03:23Z:clawsweeper_needs_human",
+      "comment_id": "5463129286",
+      "comment_version_key": "5463129286:2026-08-29T15:03:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132648#issuecomment-5463129286",
+      "comment_created_at": "2026-08-29T15:03:23Z",
+      "comment_updated_at": "2026-08-29T15:03:23Z",
+      "comment_body_sha256": "75b0fd2dd5951101c9edaa4cd889007981f3c29f1a6953e9c68c8b415c3edcb5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132648,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Use a non-colliding identity before signaling an orphan (P1)** - lstart is a formatted second-resolution timestamp, so rapid PID reuse can make an unrelated new process group match a stale child record after the...; Review finding: [P1] Use a non-colliding identity before signaling an orphan — extensions/codex/src/app-server/transport-process-containment.ts:73-85 - [high] Coarse PID identity... (sha=d971dd256c1016f03c0ec017c8d2609f291cf791)",
+      "expected_head_sha": "d971dd256c1016f03c0ec017c8d2609f291cf791",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T15:04:09.048Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/reap-codex-orphans",
+        "head_sha": "d971dd256c1016f03c0ec017c8d2609f291cf791",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
