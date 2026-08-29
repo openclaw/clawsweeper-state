@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T16:16:40.318Z",
+  "updated_at": "2026-08-29T16:20:00.563Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123146:5279602923:2026-08-29T11:05:10Z:clawsweeper_needs_human",
-      "comment_id": "5279602923",
-      "comment_version_key": "5279602923:2026-08-29T11:05:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123146#issuecomment-5279602923",
-      "comment_created_at": "2026-08-13T11:07:17Z",
-      "comment_updated_at": "2026-08-29T11:05:10Z",
-      "comment_body_sha256": "c41ebd6f7f50acb449dfa3fe89e389b60daf3c823a5372f8061d0a90f9225c22",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123146,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides mocked handler tests and an unverified manual claim, but no posted after-fix Telegram trace, recording, terminal output, or red... (sha=ea090826ce60779b160277f660c99dea0fceab64)",
-      "expected_head_sha": "ea090826ce60779b160277f660c99dea0fceab64",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T11:11:32.692Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-skip-audio-download-when-preflight-disabled",
-        "head_sha": "ea090826ce60779b160277f660c99dea0fceab64",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123139:5279718579:2026-08-29T11:04:18Z:clawsweeper_auto_repair",
       "comment_id": "5279718579",
@@ -32599,6 +32566,53 @@
       "status": "skipped",
       "processed_at": "2026-08-29T16:16:40.318Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131525:5463499645:2026-08-29T16:19:15Z:re_review",
+      "comment_id": "5463499645",
+      "comment_version_key": "5463499645:2026-08-29T16:19:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131525#issuecomment-5463499645",
+      "comment_created_at": "2026-08-29T16:19:15Z",
+      "comment_updated_at": "2026-08-29T16:19:15Z",
+      "comment_body_sha256": "726b4644a41af8e47efc7cec705bfd0b2be8ca5e81454400ecb3fce0058a7de0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131525,
+      "author": "gaoanze888",
+      "author_id": 214786078,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T16:19:58.493Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "gaoanze888/cron-disabled-crud-runtime-state",
+        "head_sha": "25dd5fad3ca2d4754ef9836184fd1d4c7556bb95",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
