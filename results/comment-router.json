@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T06:37:52.245Z",
+  "updated_at": "2026-08-29T06:38:35.843Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1508:5399491822:2026-08-24T18:20:09Z:re_review",
-      "comment_id": "5399491822",
-      "comment_version_key": "5399491822:2026-08-24T18:20:09Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1508#issuecomment-5399491822",
-      "comment_created_at": "2026-08-24T18:20:09Z",
-      "comment_updated_at": "2026-08-24T18:20:09Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1508,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T02:53:24.914Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabbox:1508:5399598803:2026-08-24T18:29:52Z:re_review",
       "comment_id": "5399598803",
@@ -31718,6 +31691,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T06:37:52.245Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132309:5460065778:2026-08-29T06:37:53Z:clawsweeper_needs_human",
+      "comment_id": "5460065778",
+      "comment_version_key": "5460065778:2026-08-29T06:37:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132309#issuecomment-5460065778",
+      "comment_created_at": "2026-08-29T03:31:40Z",
+      "comment_updated_at": "2026-08-29T06:37:53Z",
+      "comment_body_sha256": "520b635f97ebaee4dd9df3909e453c8e1d588d8f31b8e3f1bdddc023bedbc350",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132309,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Gate the early write on the live context claim (P1)** - This starts a durable session write before server-chat.ts can reject a stale or released contextClaimId. A registered controller is optional, so trackedOwn...; Review finding: [P1] Gate the early write on the live context claim — src/gateway/server-runtime-subscriptions.ts:351-358 - [P1] Do not persist retryable errors before the retry g... (sha=3c4861fa26a402e5b85a46a9b3c00879c5f894e3)",
+      "expected_head_sha": "3c4861fa26a402e5b85a46a9b3c00879c5f894e3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T06:38:35.843Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-131561",
+        "head_sha": "3c4861fa26a402e5b85a46a9b3c00879c5f894e3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
