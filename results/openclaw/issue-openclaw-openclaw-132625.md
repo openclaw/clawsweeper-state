@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-132625"
 mode: "autonomous"
-run_id: "33257789129"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33257789129"
-head_sha: "e1eefe217304f0f510acb3890db1155cef61682e"
+run_id: "33258687303"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33258687303"
+head_sha: "db14db010bf3044be85f25fe40a587a5ca77523a"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-29T14:46:38.789Z"
+published_at: "2026-08-29T15:09:28.753Z"
 canonical: "https://github.com/openclaw/openclaw/issues/132625"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/132625"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33257789129](https://github.com/openclaw/clawsweeper/actions/runs/33257789129)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33258687303](https://github.com/openclaw/clawsweeper/actions/runs/33258687303)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/132625
 
 ## Summary
 
-Issue #132625 is a reproducible canonical bug on main f5eea3197c55c0ed0e609d182bd88a7f09ec55e9: omitted --thinking reaches simple completion without reasoning, while Z.AI GLM-5.3 already declares defaultLevel max and maps it to an enabled reasoning effort. Implementation is blocked because this worker has a read-only checkout, dependencies cannot be installed, and the required sibling ../codex source cannot be cloned for the repository's Codex hard gate.
+Current main reproduces the source-level defect: omitted `--thinking` reaches local simple completion without a reasoning level, while Z.AI GLM-5.3 policy defaults to `max`; the OpenAI-completions formatter therefore emits disabled thinking. Implementation is blocked because this checkout is read-only, dependencies/corepack cannot write its cache, and mandatory sibling `../codex` source is absent and cannot be cloned.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Issue #132625 is a reproducible canonical bug on main f5eea3197c55c0ed0e609d182b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #132625 | fix_needed | blocked | canonical | The canonical fix is narrow and does not require a product/config decision, but this sandbox cannot create the regression test, edit the branch, install dependencies, or satisfy the mandatory direct ../codex inspection gate. |
-| cluster:issue-openclaw-openclaw-132625 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR after moving to a writable checkout with installed dependencies and a readable ../codex sibling. |
+| #132625 | fix_needed | blocked | canonical | A narrow bug fix remains appropriate, but this worker cannot edit, install dependencies, or complete the required Codex-source gate. |
+| cluster:issue-openclaw-openclaw-132625 | build_fix_artifact | planned | canonical | Prepared for a writable executor after it performs the mandatory direct ../codex inspection. |
 
 ## Needs Human
 

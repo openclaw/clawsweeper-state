@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-132625",
+  "mode": "autonomous",
+  "run_id": "33258687303",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33258687303",
+  "head_sha": "db14db010bf3044be85f25fe40a587a5ca77523a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-132625.md",
+  "published_at": "2026-08-29T15:09:28.753Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/132625",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/132625",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the source-level defect: omitted `--thinking` reaches local simple completion without a reasoning level, while Z.AI GLM-5.3 policy defaults to `max`; the OpenAI-completions formatter therefore emits disabled thinking. Implementation is blocked because this checkout is read-only, dependencies/corepack cannot write its cache, and mandatory sibling `../codex` source is absent and cannot be cloned.",
+  "actions": [
+    {
+      "target": "#132625",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132625",
+      "candidate_fix": null,
+      "reason": "A narrow bug fix remains appropriate, but this worker cannot edit, install dependencies, or complete the required Codex-source gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-132625",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#132625",
+      "candidate_fix": null,
+      "reason": "Prepared for a writable executor after it performs the mandatory direct ../codex inspection."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
