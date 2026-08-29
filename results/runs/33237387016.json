@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98468",
+  "mode": "autonomous",
+  "run_id": "33237387016",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33237387016",
+  "head_sha": "b1d6b8513271c3ac492237e863ba17784b12a897",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98468.md",
+  "published_at": "2026-08-29T06:19:01.280Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98468",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98468",
+  "canonical_pr": null,
+  "summary": "#98468 is a confirmed canonical bug on main aa4e4be7: its SCP owner call supplies neither timeoutMs nor killProcessTree, so a hung transfer retains staging cleanup. A narrow new-fix PR is appropriate, but this worker cannot edit or validate because the checkout is read-only, node_modules is absent, and required sibling ../codex source is unavailable for the repository’s Codex gate.",
+  "actions": [
+    {
+      "target": "#98468",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Build the narrow artifact for a new credited fix PR; do not change issue state or post a mutation from this worker."
+    },
+    {
+      "target": "#98141",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical evidence only; already closed targets must not receive close actions."
+    },
+    {
+      "target": "#101473",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical evidence only; already closed targets must not receive close actions."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98468",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Create one narrow new-fix PR after the executor provides a writable checkout, installs dependencies, and performs the required Codex-source inspection."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

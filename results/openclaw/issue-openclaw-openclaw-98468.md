@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-98468"
 mode: "autonomous"
-run_id: "33236824178"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33236824178"
+run_id: "33237387016"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33237387016"
 head_sha: "b1d6b8513271c3ac492237e863ba17784b12a897"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-29T06:00:39.843Z"
+published_at: "2026-08-29T06:19:01.280Z"
 canonical: "https://github.com/openclaw/openclaw/issues/98468"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/98468"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33236824178](https://github.com/openclaw/clawsweeper/actions/runs/33236824178)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33237387016](https://github.com/openclaw/clawsweeper/actions/runs/33237387016)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/98468
 
 ## Summary
 
-#98468 remains a reproducible canonical bug on main bcac331e: SCP staging omits both a deadline and tree cleanup. A narrow new fix PR is appropriate, but this worker cannot modify or validate it because the checkout is read-only, the required tsx dependency is absent, and mandated ../codex source is unavailable to inspect.
+#98468 is a confirmed canonical bug on main aa4e4be7: its SCP owner call supplies neither timeoutMs nor killProcessTree, so a hung transfer retains staging cleanup. A narrow new-fix PR is appropriate, but this worker cannot edit or validate because the checkout is read-only, node_modules is absent, and required sibling ../codex source is unavailable for the repository’s Codex gate.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/98468
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #98468 | fix_needed | blocked | canonical | Implementation is blocked only in this sandbox: it is read-only, so pnpm install, branch edits, and validation cannot proceed; ../codex is also absent and cannot be cloned for the repository’s required direct Codex-source inspection. |
-| #98141 | keep_closed | skipped | superseded | Historical evidence only; no closure action is valid for an already-closed PR. |
-| #101473 | keep_closed | skipped | superseded | Historical evidence only; no closure action is valid for an already-closed PR. |
-| cluster:issue-openclaw-openclaw-98468 | build_fix_artifact | planned | canonical | Executor should create or update the one ClawSweeper branch after restoring a writable dependency-complete checkout. |
+| #98468 | fix_needed | blocked | canonical | Build the narrow artifact for a new credited fix PR; do not change issue state or post a mutation from this worker. |
+| #98141 | keep_closed | skipped | superseded | Historical evidence only; already closed targets must not receive close actions. |
+| #101473 | keep_closed | skipped | superseded | Historical evidence only; already closed targets must not receive close actions. |
+| cluster:issue-openclaw-openclaw-98468 | build_fix_artifact | planned | canonical | Create one narrow new-fix PR after the executor provides a writable checkout, installs dependencies, and performs the required Codex-source inspection. |
 
 ## Needs Human
 
