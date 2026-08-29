@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T00:22:54.395Z",
+  "updated_at": "2026-08-29T00:23:49.160Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130275:5429442321:2026-08-28T20:36:58Z:clawsweeper_needs_human",
-      "comment_id": "5429442321",
-      "comment_version_key": "5429442321:2026-08-28T20:36:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130275#issuecomment-5429442321",
-      "comment_created_at": "2026-08-26T18:28:41Z",
-      "comment_updated_at": "2026-08-28T20:36:58Z",
-      "comment_body_sha256": "66e23e9c79f835b8f1a7c7dac9b7e2f25ebaf235600bb157d72a2c5f58a34715",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130275,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The deliberately narrow matcher depends on Groq retaining a token-denominated Limit … Requested … refusal; unrecognized wording remains on the pre-existing rate-limit path. (sha=8e115ac5c00bc9c3618db1acf1e5826fc489619c)",
-      "expected_head_sha": "8e115ac5c00bc9c3618db1acf1e5826fc489619c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T20:37:56.061Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tpm-request-size-ceiling-overflow",
-        "head_sha": "8e115ac5c00bc9c3618db1acf1e5826fc489619c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131009:5442215821:2026-08-28T20:37:14Z:clawsweeper_auto_repair",
       "comment_id": "5442215821",
@@ -32676,6 +32643,53 @@
           "action": "label",
           "status": "executed",
           "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132096:5459142151:2026-08-29T00:23:07Z:re_review",
+      "comment_id": "5459142151",
+      "comment_version_key": "5459142151:2026-08-29T00:23:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132096#issuecomment-5459142151",
+      "comment_created_at": "2026-08-29T00:23:07Z",
+      "comment_updated_at": "2026-08-29T00:23:07Z",
+      "comment_body_sha256": "272fa320f1dd52522786102d624d072dc443a0ca1bdb5cb9e8622723afdef15a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132096,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T00:23:47.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-mcp-app-sandbox",
+        "head_sha": "3105cbdcf9710e1f048ab515de386937897c5058",
+        "cluster_id": "automerge-openclaw-openclaw-132096",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-132096.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
           "job_path": null
         },
         {
