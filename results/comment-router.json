@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T00:33:31.063Z",
+  "updated_at": "2026-08-29T00:33:37.509Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131575:5457577878:2026-08-28T20:45:22Z:re_review",
-      "comment_id": "5457577878",
-      "comment_version_key": "5457577878:2026-08-28T20:45:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131575#issuecomment-5457577878",
-      "comment_created_at": "2026-08-28T20:45:22Z",
-      "comment_updated_at": "2026-08-28T20:45:22Z",
-      "comment_body_sha256": "d875f82f3e484562d37754bb9ad3df2421568ca5a6e2da3f2fd62bc223281ca6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131575,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T20:46:03.994Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/android-ten-full-reply",
-        "head_sha": "7f736624f587b4c5748273c373563be61bdb78df",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131648:5450241698:2026-08-28T20:31:04Z:clawsweeper_auto_repair",
       "comment_id": "5450241698",
@@ -32732,6 +32685,39 @@
         "kind": "pull_request",
         "branch": "feat/process-lifecycle-hooks",
         "head_sha": "08a86019e73ea140f5eb3e2eebfbc061344eb13e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132203:5458910124:2026-08-29T00:32:35Z:clawsweeper_needs_human",
+      "comment_id": "5458910124",
+      "comment_version_key": "5458910124:2026-08-29T00:32:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132203#issuecomment-5458910124",
+      "comment_created_at": "2026-08-28T23:43:47Z",
+      "comment_updated_at": "2026-08-29T00:32:35Z",
+      "comment_body_sha256": "5a83b468c408dd93f09a2ae515af9de3b72825d4b62a92194f4ab2166d5aa7e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132203,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "Maintainer decision needed: | Question | Recommendation | |---|---| | Should this maintainer-authored CI fixture repair be accepted for landing now that the requested deterministic record ordering and focused cancellati... (sha=245c50fc6b295de9606d8c68588246cb498fbddc)",
+      "expected_head_sha": "245c50fc6b295de9606d8c68588246cb498fbddc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T00:33:37.509Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/frosty-mclean-5c961d",
+        "head_sha": "245c50fc6b295de9606d8c68588246cb498fbddc",
         "cluster_id": null,
         "job_path": null
       }
