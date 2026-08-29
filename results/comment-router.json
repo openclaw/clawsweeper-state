@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T09:57:08.204Z",
+  "updated_at": "2026-08-29T09:57:41.234Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132266:5460644905:2026-08-29T05:46:30Z:re_review",
-      "comment_id": "5460644905",
-      "comment_version_key": "5460644905:2026-08-29T05:46:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132266#issuecomment-5460644905",
-      "comment_created_at": "2026-08-29T05:46:30Z",
-      "comment_updated_at": "2026-08-29T05:46:30Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132266,
-      "author": "MonkeyLeeT",
-      "author_id": 6754057,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T05:54:46.010Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-codex-hidden-tool-progress",
-        "head_sha": "40cc47153d7bc1f7e6d135d8a3d449d32d12028f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99193:4869271726:2026-08-29T05:49:32Z:clawsweeper_needs_human",
       "comment_id": "4869271726",
@@ -32510,6 +32463,39 @@
         "kind": "pull_request",
         "branch": "steipete/declaration-ownership-integration-20260829",
         "head_sha": "c689460d4c9b026e0b2a9cfdebc1c6860d71395e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132507:5461433601:2026-08-29T09:56:57Z:clawsweeper_needs_human",
+      "comment_id": "5461433601",
+      "comment_version_key": "5461433601:2026-08-29T09:56:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132507#issuecomment-5461433601",
+      "comment_created_at": "2026-08-29T09:00:32Z",
+      "comment_updated_at": "2026-08-29T09:56:57Z",
+      "comment_body_sha256": "bebd3cb82171f18e2c215a59a0633b2e87ce0169c3381f9b6d8c8efe7348bc6f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132507,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The lifecycle repair changes recovery and cancellation behavior for active cloud turns; landing should wait for the pending exact-head parent-visible reply result to confirm that the... (sha=4b3e9b1dd8ffd5464556abc3968e415b321369a8)",
+      "expected_head_sha": "4b3e9b1dd8ffd5464556abc3968e415b321369a8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T09:57:41.234Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cloud-worker-run-ownership",
+        "head_sha": "4b3e9b1dd8ffd5464556abc3968e415b321369a8",
         "cluster_id": null,
         "job_path": null
       }
