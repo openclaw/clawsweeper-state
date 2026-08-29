@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T21:57:17.484Z",
+  "updated_at": "2026-08-29T21:59:03.445Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128905:5418233208:2026-08-25T23:17:13Z:re_review",
-      "comment_id": "5418233208",
-      "comment_version_key": "5418233208:2026-08-25T23:17:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128905#issuecomment-5418233208",
-      "comment_created_at": "2026-08-25T23:17:13Z",
-      "comment_updated_at": "2026-08-25T23:17:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128905,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T16:28:18.639Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128905:5419112976:2026-08-26T01:01:13Z:re_review",
       "comment_id": "5419112976",
@@ -32966,6 +32939,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132853:5465029630:2026-08-29T21:58:14Z:clawsweeper_needs_human",
+      "comment_id": "5465029630",
+      "comment_version_key": "5465029630:2026-08-29T21:58:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132853#issuecomment-5465029630",
+      "comment_created_at": "2026-08-29T21:38:15Z",
+      "comment_updated_at": "2026-08-29T21:58:14Z",
+      "comment_body_sha256": "93916f41c5d7fd825d678ff01a487fd5921c624761d6e3232a36f90d18f13d3c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132853,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing automatic-restart updates now return a nonzero result when service inspection is unavailable; operators must restore inspection access or deliberately choose the documented m... (sha=e84f90fb8dcd4baf34a86cf9e4f176fcb8787dbf)",
+      "expected_head_sha": "e84f90fb8dcd4baf34a86cf9e4f176fcb8787dbf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T21:59:03.445Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-fail-closed-service-inspection",
+        "head_sha": "e84f90fb8dcd4baf34a86cf9e4f176fcb8787dbf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
