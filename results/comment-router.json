@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T06:56:18.622Z",
+  "updated_at": "2026-08-29T06:56:27.917Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132250:5459362180:2026-08-29T02:33:35Z:clawsweeper_needs_human",
-      "comment_id": "5459362180",
-      "comment_version_key": "5459362180:2026-08-29T02:33:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132250#issuecomment-5459362180",
-      "comment_created_at": "2026-08-29T01:04:09Z",
-      "comment_updated_at": "2026-08-29T02:33:35Z",
-      "comment_body_sha256": "873a319f7219b37b3dd5a678e17ef5aea797ec7259eb6291ef9ac487ea4ec396",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132250,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - This member-owned, maintainer-labeled PR already owns the bounded repair; no separate ClawSweeper fix lane is appropriate. (sha=1dc773d0a98a537e867937671a0e7e2b847db065)",
-      "expected_head_sha": "1dc773d0a98a537e867937671a0e7e2b847db065",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T02:57:48.576Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/unruffled-montalcini-907b25",
-        "head_sha": "1dc773d0a98a537e867937671a0e7e2b847db065",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132255:5459425848:2026-08-29T02:46:51Z:clawsweeper_needs_human",
       "comment_id": "5459425848",
@@ -31914,6 +31881,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131464:5460926883:2026-08-29T06:55:26Z:re_review",
+      "comment_id": "5460926883",
+      "comment_version_key": "5460926883:2026-08-29T06:55:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131464#issuecomment-5460926883",
+      "comment_created_at": "2026-08-29T06:55:26Z",
+      "comment_updated_at": "2026-08-29T06:55:26Z",
+      "comment_body_sha256": "c926b966adcff8299e900b8db57a84249015b2df5b70af833b922bc476c2c86a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131464,
+      "author": "zenglingbiao",
+      "author_id": 290951975,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — addressed the p1 finding: completetask() now sweeps stale tasks before completing (a final delivery that is the first store op past the deadline is rejected), and each task owns an unref'd 1h expiry timer that fails it autonomously (re-armed on the submitted→working status change, cleared on terminal transition, disarmed in stop()). new tests cover delivery-as-first-op-after-deadline, timer-driven idle expiry, and timer disarm on stop. merged current main; new head 1652b15acd7. screenshot proof + transcripts on proof-assets-20260828, embedded in the pr body",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T06:56:25.371Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/a2a-task-store-stale-sweep",
+        "head_sha": "1652b15acd775a385d8292c7f5bcdd58c7298112",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
