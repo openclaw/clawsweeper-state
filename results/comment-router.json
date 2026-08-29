@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T13:05:30.888Z",
+  "updated_at": "2026-08-29T13:07:41.095Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131901:5461183477:2026-08-29T07:59:34Z:re_review",
-      "comment_id": "5461183477",
-      "comment_version_key": "5461183477:2026-08-29T07:59:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131901#issuecomment-5461183477",
-      "comment_created_at": "2026-08-29T07:59:34Z",
-      "comment_updated_at": "2026-08-29T07:59:34Z",
-      "comment_body_sha256": "529e1584adad54be44ff24b18a97e787fddee4787516abbf5e6fdf4e9fe9dd94",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131901,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T08:00:25.906Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/system-agent-session-key",
-        "head_sha": "f2efbe819f8f9fc89f92d367ff5a784056a71697",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119052:5461001311:2026-08-29T08:01:22Z:re_review",
       "comment_id": "5461001311",
@@ -32160,6 +32113,39 @@
         "kind": "pull_request",
         "branch": "fix/process-poll-nondestructive-drain",
         "head_sha": "8c8093d7f22aec6dcc7eb54bbe3bd17190bff568",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/birdclaw:132:5346490744:2026-08-29T13:06:54Z:clawsweeper_needs_human",
+      "comment_id": "5346490744",
+      "comment_version_key": "5346490744:2026-08-29T13:06:54Z",
+      "comment_url": "https://github.com/steipete/birdclaw/pull/132#issuecomment-5346490744",
+      "comment_created_at": "2026-08-19T18:41:10Z",
+      "comment_updated_at": "2026-08-29T13:06:54Z",
+      "comment_body_sha256": "4c27f9b6b796b9ab7adeb9ea6eb40fd5cdab4ab2cb38ce4cde1b732235f7c5a7",
+      "repo": "steipete/birdclaw",
+      "issue_number": 132,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts using fractional --limit values with search links (and some formerly normalized whois cases) will now receive a structured error; valid integer-valued Number() spelli... (sha=df2aad92ca8909f546f894d8e2f8bb3d79f0f196)",
+      "expected_head_sha": "df2aad92ca8909f546f894d8e2f8bb3d79f0f196",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T13:07:41.095Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/search-limit-validation",
+        "head_sha": "df2aad92ca8909f546f894d8e2f8bb3d79f0f196",
         "cluster_id": null,
         "job_path": null
       }
