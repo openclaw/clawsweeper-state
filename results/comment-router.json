@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T05:42:32.384Z",
+  "updated_at": "2026-08-29T05:42:40.516Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123052:5459503609:2026-08-29T01:29:51Z:re_review",
-      "comment_id": "5459503609",
-      "comment_version_key": "5459503609:2026-08-29T01:29:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123052#issuecomment-5459503609",
-      "comment_created_at": "2026-08-29T01:29:51Z",
-      "comment_updated_at": "2026-08-29T01:29:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123052,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T01:30:36.192Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/provider-routing-aug13",
-        "head_sha": "c8e2fe0e83586967ae07a487c1bada71ca5dbfb4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131750:5459521836:2026-08-29T01:33:03Z:re_review",
       "comment_id": "5459521836",
@@ -31992,6 +31945,39 @@
         "kind": "pull_request",
         "branch": "notch-usage-overlay",
         "head_sha": "a775d0c6b350e73e9662f7cc6173039e93cc6c1d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132399:5460626987:2026-08-29T05:41:59Z:clawsweeper_needs_human",
+      "comment_id": "5460626987",
+      "comment_version_key": "5460626987:2026-08-29T05:41:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132399#issuecomment-5460626987",
+      "comment_created_at": "2026-08-29T05:41:59Z",
+      "comment_updated_at": "2026-08-29T05:41:59Z",
+      "comment_body_sha256": "f332cc2680ebd5314474df7350d8cb579bb408aa6d1d1bf8f059109fea740075",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132399,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production grows by 33 net lines for this bug fix; the growth is confined to the packaged QA-child boundary, but the still-running exact-head package and type/lint checks should compl... (sha=91e1d2caa7151047c91695695f0bdfa81bdf6d60)",
+      "expected_head_sha": "91e1d2caa7151047c91695695f0bdfa81bdf6d60",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T05:42:40.516Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/frv-package-qa-bootstrap",
+        "head_sha": "91e1d2caa7151047c91695695f0bdfa81bdf6d60",
         "cluster_id": null,
         "job_path": null
       }
