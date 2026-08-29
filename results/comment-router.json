@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T03:23:19.251Z",
+  "updated_at": "2026-08-29T03:24:34.156Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131990:5456037491:2026-08-28T23:08:38Z:clawsweeper_needs_human",
-      "comment_id": "5456037491",
-      "comment_version_key": "5456037491:2026-08-28T23:08:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131990#issuecomment-5456037491",
-      "comment_created_at": "2026-08-28T18:06:31Z",
-      "comment_updated_at": "2026-08-28T23:08:38Z",
-      "comment_body_sha256": "e12886293bb305137974bd657e0e3474fb66504a2251ab4157ed75404db0f176",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131990,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds 48 net production lines to shared error formatting; keep the parser centralized and wait for exact-head CI to validate the pending integration lanes. (sha=e2dac46c77b7cec0002b05b811178496cc092606)",
-      "expected_head_sha": "e2dac46c77b7cec0002b05b811178496cc092606",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T23:09:25.473Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-131797",
-        "head_sha": "e2dac46c77b7cec0002b05b811178496cc092606",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132185:5458698424:2026-08-28T23:09:02Z:clawsweeper_auto_repair",
       "comment_id": "5458698424",
@@ -32934,6 +32901,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1595:5460031066:2026-08-29T03:23:51Z:re_review",
+      "comment_id": "5460031066",
+      "comment_version_key": "5460031066:2026-08-29T03:23:51Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1595#issuecomment-5460031066",
+      "comment_created_at": "2026-08-29T03:23:51Z",
+      "comment_updated_at": "2026-08-29T03:23:51Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1595,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T03:24:32.098Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gcp-created-image-provenance",
+        "head_sha": "b3870688507748b6a45743a08dc6daaba3284b09",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
