@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T00:26:08.275Z",
+  "updated_at": "2026-08-29T00:26:50.121Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130902:5457526100:2026-08-28T20:39:22Z:re_review",
-      "comment_id": "5457526100",
-      "comment_version_key": "5457526100:2026-08-28T20:39:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130902#issuecomment-5457526100",
-      "comment_created_at": "2026-08-28T20:39:22Z",
-      "comment_updated_at": "2026-08-28T20:39:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130902,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T20:40:05.616Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/installer-dependency-policy",
-        "head_sha": "3b014477e07fa022e00e3d3443fb3ab91407ca53",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132083:5457527689:2026-08-28T20:39:32Z:clawsweeper_needs_human",
       "comment_id": "5457527689",
@@ -32713,6 +32666,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132204:5458924641:2026-08-29T00:26:04Z:clawsweeper_needs_human",
+      "comment_id": "5458924641",
+      "comment_version_key": "5458924641:2026-08-29T00:26:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132204#issuecomment-5458924641",
+      "comment_created_at": "2026-08-28T23:46:25Z",
+      "comment_updated_at": "2026-08-29T00:26:04Z",
+      "comment_body_sha256": "fed0f82d1f072b2deb1cec20cda3cc30dc1fbbb5049d388ec2f0fa340ddbe3b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132204,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a shared cross-platform CI cleanup owner; despite preserving the existing missing-group and fail-closed paths, a maintainer should confirm the exact-head required-check r... (sha=5aa57199b90eda3abb1fc365f42d8fd70ae61896)",
+      "expected_head_sha": "5aa57199b90eda3abb1fc365f42d8fd70ae61896",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T00:26:50.121Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/intelligent-mclaren-572f05",
+        "head_sha": "5aa57199b90eda3abb1fc365f42d8fd70ae61896",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
