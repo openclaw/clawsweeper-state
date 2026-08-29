@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T02:59:19.886Z",
+  "updated_at": "2026-08-29T02:59:30.814Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-28T22:41:57Z:clawsweeper_needs_human",
-      "comment_id": "5357688049",
-      "comment_version_key": "5357688049:2026-08-28T22:41:57Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5357688049",
-      "comment_created_at": "2026-08-20T15:00:20Z",
-      "comment_updated_at": "2026-08-28T22:41:57Z",
-      "comment_body_sha256": "185e007e367f61441acfb398ec8153958d077ea6f8b65ea067537376b43ff1f8",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new scan consumes indexes supplied by the still-open prerequisite https://github.com/openclaw/clawhub/pull/3501; deploying this branch before those staged indexes are built and ac... (sha=b2fe5c577a4d424b54ab5b070ff8096fdadc357c)",
-      "expected_head_sha": "b2fe5c577a4d424b54ab5b070ff8096fdadc357c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T22:42:55.136Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/meaningful-traffic-signals",
-        "head_sha": "b2fe5c577a4d424b54ab5b070ff8096fdadc357c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3493:5365543947:2026-08-21T05:22:06Z:re_review",
       "comment_id": "5365543947",
@@ -32852,6 +32819,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T02:59:19.886Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128842:5401188918:2026-08-29T02:58:26Z:clawsweeper_needs_human",
+      "comment_id": "5401188918",
+      "comment_version_key": "5401188918:2026-08-29T02:58:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128842#issuecomment-5401188918",
+      "comment_created_at": "2026-08-24T20:47:39Z",
+      "comment_updated_at": "2026-08-29T02:58:26Z",
+      "comment_body_sha256": "d2a5acfbeea81ed4798fba0b8c3b788d250767028090dde9cf4610905e89b4b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128842,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports unit tests, build, and CI only; it provides no after-fix operator run for the changed Claws CLI, consent cache, or destruct...; Review finding: [P1] Register --consent-latest for claws add — src/cli/claws-cli.ts:20 - [P1] Resolve cached consent before comparing the add plan — src/cli/claws-cli.runtime.ts:3... (sha=a0cc53d31d0b1cf820ba90de852b2126c1fa7594)",
+      "expected_head_sha": "a0cc53d31d0b1cf820ba90de852b2126c1fa7594",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T02:59:30.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/claws-ownership-diff",
+        "head_sha": "a0cc53d31d0b1cf820ba90de852b2126c1fa7594",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
