@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T17:52:33.205Z",
+  "updated_at": "2026-08-29T17:52:54.947Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97103:5256728202:2026-08-11T17:40:47Z:re_review",
-      "comment_id": "5256728202",
-      "comment_version_key": "5256728202:2026-08-11T17:40:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97103#issuecomment-5256728202",
-      "comment_created_at": "2026-08-11T17:40:47Z",
-      "comment_updated_at": "2026-08-11T17:40:47Z",
-      "comment_body_sha256": "69231a17569f33144e80e3725ba42d604ebf156a98a4eeaddfb5aad96296b5b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97103,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T12:35:54.517Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97103:5257590208:2026-08-11T19:03:24Z:re_review",
       "comment_id": "5257590208",
@@ -32912,6 +32885,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132740:5463871691:2026-08-29T17:51:53Z:clawsweeper_needs_human",
+      "comment_id": "5463871691",
+      "comment_version_key": "5463871691:2026-08-29T17:51:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132740#issuecomment-5463871691",
+      "comment_created_at": "2026-08-29T17:36:11Z",
+      "comment_updated_at": "2026-08-29T17:51:53Z",
+      "comment_body_sha256": "d0ea5d4397c134a07264204f430ac04b00727befa3bb1167c4d11a7635660ecb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132740,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve mandatory approval during legacy-policy migration (P1)** - full/always (and allowlist-plus-always) resolves to ask, then this mapping stores guarded. guarded resolves to allowlist/on-miss, so an analyze...; Review finding: [P1] Preserve mandatory approval during legacy-policy migration — src/commands/doctor-session-exec-policy.ts:32-37 - [high] Migration removes every-command approva... (sha=4e81bbda685537bcafbc59eb039da2188e93e73c)",
+      "expected_head_sha": "4e81bbda685537bcafbc59eb039da2188e93e73c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T17:52:54.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/exec-policy-phase1-legacy-delete",
+        "head_sha": "4e81bbda685537bcafbc59eb039da2188e93e73c",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
