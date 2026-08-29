@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98468",
+  "mode": "autonomous",
+  "run_id": "33236824178",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33236824178",
+  "head_sha": "b1d6b8513271c3ac492237e863ba17784b12a897",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98468.md",
+  "published_at": "2026-08-29T06:00:39.843Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98468",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98468",
+  "canonical_pr": null,
+  "summary": "#98468 remains a reproducible canonical bug on main bcac331e: SCP staging omits both a deadline and tree cleanup. A narrow new fix PR is appropriate, but this worker cannot modify or validate it because the checkout is read-only, the required tsx dependency is absent, and mandated ../codex source is unavailable to inspect.",
+  "actions": [
+    {
+      "target": "#98468",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only in this sandbox: it is read-only, so pnpm install, branch edits, and validation cannot proceed; ../codex is also absent and cannot be cloned for the repository’s required direct Codex-source inspection."
+    },
+    {
+      "target": "#98141",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical evidence only; no closure action is valid for an already-closed PR."
+    },
+    {
+      "target": "#101473",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical evidence only; no closure action is valid for an already-closed PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98468",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Executor should create or update the one ClawSweeper branch after restoring a writable dependency-complete checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
