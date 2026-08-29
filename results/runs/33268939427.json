@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98403",
+  "mode": "autonomous",
+  "run_id": "33268939427",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33268939427",
+  "head_sha": "db14db010bf3044be85f25fe40a587a5ca77523a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98403.md",
+  "published_at": "2026-08-29T18:58:41.733Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98403",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98403",
+  "canonical_pr": null,
+  "summary": "#98403 remains the canonical reproducible bug. Current main validates before the handler and rejects the explicit-null metadata that the handler normalizes. A narrow three-file repair is planned, but this read-only worker cannot install dependencies or validate/create the branch; the required sibling ../codex checkout is also absent and cannot be cloned here.",
+  "actions": [
+    {
+      "target": "#98403",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#98403",
+      "candidate_fix": null,
+      "reason": "Implementation and local validation are blocked only by the read-only worker environment; the fix artifact is ready for an executor with a writable checkout and the required Codex sibling source."
+    },
+    {
+      "target": "#98404",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98403",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#103530",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98403",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98403",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98403",
+      "candidate_fix": null,
+      "reason": "Execute in a writable, dependency-complete checkout after the mandatory ../codex source inspection."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
