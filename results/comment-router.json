@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T23:31:33.706Z",
+  "updated_at": "2026-08-29T23:32:11.135Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132727:5464106658:2026-08-29T18:25:53Z:re_review",
-      "comment_id": "5464106658",
-      "comment_version_key": "5464106658:2026-08-29T18:25:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132727#issuecomment-5464106658",
-      "comment_created_at": "2026-08-29T18:25:53Z",
-      "comment_updated_at": "2026-08-29T18:25:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132727,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T18:26:37.812Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/code-bug-docs-link-audit-fence-20260830",
-        "head_sha": "50863df21d92c2cc444a9a215687cc288d0e84fe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3271:5463765347:2026-08-29T18:23:07Z:clawsweeper_needs_human",
       "comment_id": "5463765347",
@@ -32766,6 +32719,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-119992-per-turn-send-budget",
         "head_sha": "e3a392128eccec76fe75d9490fb55f872df5c803",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132909:5465506309:2026-08-29T23:31:31Z:clawsweeper_needs_human",
+      "comment_id": "5465506309",
+      "comment_version_key": "5465506309:2026-08-29T23:31:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132909#issuecomment-5465506309",
+      "comment_created_at": "2026-08-29T23:31:31Z",
+      "comment_updated_at": "2026-08-29T23:31:31Z",
+      "comment_body_sha256": "7d7cb925e2ffe25b9ee020da0f715a455de292bcc0a04eb8d17d5d2323c623d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132909,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check rollup is incomplete and includes one failed shard with no available log, so merge readiness is not yet established. (sha=d365dabb296b6a87c8918145f6c74bf3e8d3388b)",
+      "expected_head_sha": "d365dabb296b6a87c8918145f6c74bf3e8d3388b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T23:32:11.135Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/node-pending-work-lifecycle",
+        "head_sha": "d365dabb296b6a87c8918145f6c74bf3e8d3388b",
         "cluster_id": null,
         "job_path": null
       }
