@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T17:16:58.226Z",
+  "updated_at": "2026-08-29T17:18:38.259Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119938:5204803306:2026-08-29T12:02:42Z:clawsweeper_auto_repair",
-      "comment_id": "5204803306",
-      "comment_version_key": "5204803306:2026-08-29T12:02:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119938#issuecomment-5204803306",
-      "comment_created_at": "2026-08-06T12:45:59Z",
-      "comment_updated_at": "2026-08-29T12:02:42Z",
-      "comment_body_sha256": "81c22777ed07a26689582b7145b05a03dbdfbd39d5bc4fa9418326894ffe5cbe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119938,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1d1c03d939d11b863bca883fb30a493436b78dec)",
-      "expected_head_sha": "1d1c03d939d11b863bca883fb30a493436b78dec",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T12:10:44.916Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/image-edit-delivery-ownership",
-        "head_sha": "1d1c03d939d11b863bca883fb30a493436b78dec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120819:5229640600:2026-08-29T12:04:30Z:clawsweeper_auto_repair",
       "comment_id": "5229640600",
@@ -32685,6 +32652,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127983:5381704046:2026-08-29T17:17:48Z:clawsweeper_needs_human",
+      "comment_id": "5381704046",
+      "comment_version_key": "5381704046:2026-08-29T17:17:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127983#issuecomment-5381704046",
+      "comment_created_at": "2026-08-22T17:34:07Z",
+      "comment_updated_at": "2026-08-29T17:17:48Z",
+      "comment_body_sha256": "bc8bb28511807b893e2cc0cc0b4134d15c439ae0b9a3eddfccb41bd4c6ff52b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127983,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging changes an existing recovery fallback: with a held snapshot lock or unwritable snapshot path, doctor --fix now retains an invalid configuration instead of silently repairing i... (sha=3ff289328ad6246a97474be4006f7f8ebaa034db)",
+      "expected_head_sha": "3ff289328ad6246a97474be4006f7f8ebaa034db",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T17:18:38.259Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-recovery-require-clobber-snapshot",
+        "head_sha": "3ff289328ad6246a97474be4006f7f8ebaa034db",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
