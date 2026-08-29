@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T02:04:57.365Z",
+  "updated_at": "2026-08-29T02:07:21.925Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132158:5458315166:2026-08-28T22:13:46Z:clawsweeper_needs_human",
-      "comment_id": "5458315166",
-      "comment_version_key": "5458315166:2026-08-28T22:13:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132158#issuecomment-5458315166",
-      "comment_created_at": "2026-08-28T22:13:46Z",
-      "comment_updated_at": "2026-08-28T22:13:46Z",
-      "comment_body_sha256": "752cebe8f954351dd87758651519e479e78f824d10ee08bcf6383a68a4a25be6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132158,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is extensions/codex/src/command-plugins-management.ts, reached by the registered /codex plugins command; tests exercise its p... (sha=5715dc5f1cf00bdea6c9d5c4b992480c08b82d7e)",
-      "expected_head_sha": "5715dc5f1cf00bdea6c9d5c4b992480c08b82d7e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T22:14:36.472Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dev/stevenlee/cgp-hosted-plugin-pages",
-        "head_sha": "5715dc5f1cf00bdea6c9d5c4b992480c08b82d7e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3516:5392108486:2026-08-28T22:09:25Z:clawsweeper_needs_human",
       "comment_id": "5392108486",
@@ -32873,6 +32840,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131285:5459688693:2026-08-29T02:06:30Z:re_review",
+      "comment_id": "5459688693",
+      "comment_version_key": "5459688693:2026-08-29T02:06:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131285#issuecomment-5459688693",
+      "comment_created_at": "2026-08-29T02:06:30Z",
+      "comment_updated_at": "2026-08-29T02:06:30Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131285,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T02:07:14.583Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-definitive-rejection",
+        "head_sha": "4f3c15c28f6e74e684bae284df0e7f2df66cc5ef",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
