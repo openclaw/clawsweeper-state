@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T20:17:22.283Z",
+  "updated_at": "2026-08-29T20:17:46.293Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-29T14:31:04Z:clawsweeper_needs_human",
-      "comment_id": "5365906478",
-      "comment_version_key": "5365906478:2026-08-29T14:31:04Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5365906478",
-      "comment_created_at": "2026-08-21T06:12:29Z",
-      "comment_updated_at": "2026-08-29T14:31:04Z",
-      "comment_body_sha256": "eea55af83a8c87f27adba48fd811e2ab3307d4af3a5460d2b6033336f0852d9c",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3501,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local partial checkout could not independently materialize the fetched current-main tree; maintainers should refresh the downstream stack review against current main. (sha=bd01f13aa001714b63ec48748df5db7f3d1227f9)",
-      "expected_head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T15:18:50.654Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/stage-signal-indexes",
-        "head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3501:5375479397:2026-08-21T21:13:31Z:re_review",
       "comment_id": "5375479397",
@@ -32961,6 +32928,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T20:17:22.283Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132569:5462323616:2026-08-29T20:16:58Z:clawsweeper_needs_human",
+      "comment_id": "5462323616",
+      "comment_version_key": "5462323616:2026-08-29T20:16:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132569#issuecomment-5462323616",
+      "comment_created_at": "2026-08-29T12:06:27Z",
+      "comment_updated_at": "2026-08-29T20:16:58Z",
+      "comment_body_sha256": "a9970f8a29eb634925a394ace8836649a07fbe5efac9dcc9f284a4025b792998",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132569,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: ChannelsStore’s production save → reload → apply path is exercised with a blocked ConfigStore save and injected successful configuration snapsh... (sha=d90c84e56de3ca2786d3babbffca1cee66e19faa)",
+      "expected_head_sha": "d90c84e56de3ca2786d3babbffca1cee66e19faa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T20:17:46.293Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/channels-config-save-draft-revision",
+        "head_sha": "d90c84e56de3ca2786d3babbffca1cee66e19faa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
