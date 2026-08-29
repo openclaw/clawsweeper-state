@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T04:52:40.947Z",
+  "updated_at": "2026-08-29T04:52:51.231Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127002:5459288362:2026-08-29T00:49:19Z:re_review",
-      "comment_id": "5459288362",
-      "comment_version_key": "5459288362:2026-08-29T00:49:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127002#issuecomment-5459288362",
-      "comment_created_at": "2026-08-29T00:49:19Z",
-      "comment_updated_at": "2026-08-29T00:49:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127002,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T00:50:06.324Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-frozen-target-ci-compat",
-        "head_sha": "f2ee4c55316effb68ed539159ab64e79e41512f6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132240:5459292689:2026-08-29T00:50:13Z:clawsweeper_auto_repair",
       "comment_id": "5459292689",
@@ -31992,6 +31945,39 @@
         "kind": "pull_request",
         "branch": "fix/config-reload-stale-builder",
         "head_sha": "b0a308cde497191b3e4c9f81d1faeab15cfe53d4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:184:5335414556:2026-08-29T04:52:11Z:clawsweeper_needs_human",
+      "comment_id": "5335414556",
+      "comment_version_key": "5335414556:2026-08-29T04:52:11Z",
+      "comment_url": "https://github.com/openclaw/agent-skills/pull/184#issuecomment-5335414556",
+      "comment_created_at": "2026-08-18T23:19:52Z",
+      "comment_updated_at": "2026-08-29T04:52:11Z",
+      "comment_body_sha256": "d947d0c3ef0d9d91712f1b488772b6afdc6c3abe0c46535081b8195ba8e22bf6",
+      "repo": "openclaw/agent-skills",
+      "issue_number": 184,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Not applicable: The only changed file is documentation; the supplied exact-head terminal validation is useful supplemental evidence, but runtime proof is not required for this formatt... (sha=0ed865fea8b263bddafab54192d6c4bde9101b15)",
+      "expected_head_sha": "0ed865fea8b263bddafab54192d6c4bde9101b15",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T04:52:51.231Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/format-autoreview-skill",
+        "head_sha": "0ed865fea8b263bddafab54192d6c4bde9101b15",
         "cluster_id": null,
         "job_path": null
       }
