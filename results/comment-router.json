@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T14:32:55.538Z",
+  "updated_at": "2026-08-29T14:34:12.698Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132503:5461383238:2026-08-29T09:00:07Z:clawsweeper_needs_human",
-      "comment_id": "5461383238",
-      "comment_version_key": "5461383238:2026-08-29T09:00:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132503#issuecomment-5461383238",
-      "comment_created_at": "2026-08-29T08:47:54Z",
-      "comment_updated_at": "2026-08-29T09:00:07Z",
-      "comment_body_sha256": "75f92a1cb39ba53c398a027fe6a6e4c90fce820f433731e453c575cf092c4806",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132503,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair is needed; this remains a normal maintainer merge review. (sha=27f84107f9e41400ace4086482dda32e1fa41f42)",
-      "expected_head_sha": "27f84107f9e41400ace4086482dda32e1fa41f42",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T09:02:37.942Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/feature-9876-macos-session-20260829",
-        "head_sha": "27f84107f9e41400ace4086482dda32e1fa41f42",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132511:5461418566:2026-08-29T08:56:50Z:clawsweeper_needs_human",
       "comment_id": "5461418566",
@@ -32185,6 +32152,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132582:5462988571:2026-08-29T14:33:19Z:re_review",
+      "comment_id": "5462988571",
+      "comment_version_key": "5462988571:2026-08-29T14:33:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132582#issuecomment-5462988571",
+      "comment_created_at": "2026-08-29T14:33:19Z",
+      "comment_updated_at": "2026-08-29T14:33:19Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132582,
+      "author": "TARSDrakon",
+      "author_id": 262872503,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T14:34:11.010Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tars/fix-cli-timeout-hash-race",
+        "head_sha": "23649236ed1cea8c2cf9683ad016284434bfedbc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
