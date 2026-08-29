@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-132766",
+  "mode": "autonomous",
+  "run_id": "33268298909",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33268298909",
+  "head_sha": "db14db010bf3044be85f25fe40a587a5ca77523a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-132766.md",
+  "published_at": "2026-08-29T18:45:45.581Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/132766",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/132766",
+  "canonical_pr": null,
+  "summary": "#132766 remains the open canonical bug. Current main at 0f2211294740cf855c64f09cc73bb45ce7cf0964 has four production no-argument fence reads feeding transcript appends; a narrow fix artifact is ready. This worker could not create or validate the branch because the checkout is read-only and the mandatory sibling ../codex source is unavailable.",
+  "actions": [
+    {
+      "target": "#122630",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation is permitted."
+    },
+    {
+      "target": "#125885",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Historical same-root-cause report; preserve attribution in the new fix PR."
+    },
+    {
+      "target": "#132766",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only in this worker: test -w . reports read-only, so no regression, branch, or validation can be created; ../codex is absent, so the repository-required direct Codex-source inspection cannot be completed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-132766",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Executor-ready narrow repair plan."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
