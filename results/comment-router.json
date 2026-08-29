@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T05:00:46.955Z",
+  "updated_at": "2026-08-29T05:01:31.736Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123052:5459401087:2026-08-29T01:11:20Z:re_review",
-      "comment_id": "5459401087",
-      "comment_version_key": "5459401087:2026-08-29T01:11:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123052#issuecomment-5459401087",
-      "comment_created_at": "2026-08-29T01:11:20Z",
-      "comment_updated_at": "2026-08-29T01:11:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123052,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T01:12:04.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/provider-routing-aug13",
-        "head_sha": "8e9b2d0ba7713e38e6a7f08e61ff86e77b711821",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132203:5458910124:2026-08-29T01:08:21Z:clawsweeper_needs_human",
       "comment_id": "5458910124",
@@ -31956,6 +31909,39 @@
         "kind": "pull_request",
         "branch": "codex/frv-release-fixtures",
         "head_sha": "41bf31cd065b6ee24af9cff244eaca8bcf941e71",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1602:5460224166:2026-08-29T04:58:08Z:clawsweeper_needs_human",
+      "comment_id": "5460224166",
+      "comment_version_key": "5460224166:2026-08-29T04:58:08Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1602#issuecomment-5460224166",
+      "comment_created_at": "2026-08-29T04:03:42Z",
+      "comment_updated_at": "2026-08-29T04:58:08Z",
+      "comment_body_sha256": "1dd801914ba199e1fc80b5142de90ae6de49e0779895b440a9eb6ec4d8398fb2",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1602,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The foreground registrar is now on the availability-critical retained-workload path; the supplied macOS SSH evidence is strong, but a Linux retained/reused trace would reduce shell an... (sha=0f0a033cf580630853afa08f2584c45ece86f505)",
+      "expected_head_sha": "0f0a033cf580630853afa08f2584c45ece86f505",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T05:01:31.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-posix-witness-signals",
+        "head_sha": "0f0a033cf580630853afa08f2584c45ece86f505",
         "cluster_id": null,
         "job_path": null
       }
