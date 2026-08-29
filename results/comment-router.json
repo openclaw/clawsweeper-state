@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T17:20:39.019Z",
+  "updated_at": "2026-08-29T17:21:33.879Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132059:5457078422:2026-08-29T12:13:06Z:clawsweeper_needs_human",
-      "comment_id": "5457078422",
-      "comment_version_key": "5457078422:2026-08-29T12:13:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132059#issuecomment-5457078422",
-      "comment_created_at": "2026-08-28T19:50:30Z",
-      "comment_updated_at": "2026-08-29T12:13:06Z",
-      "comment_body_sha256": "0abee0facf1df5c282413ceb5fb985f1cd5042b19acd5fd073f1fcb06271588c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132059,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds approximately production +430/-58 lines; the extra client-side reconciliation state needs a clear owner-boundary justification before merge. (sha=6b0b4167a46dcd4d2a4045a00b50c250530e9897)",
-      "expected_head_sha": "6b0b4167a46dcd4d2a4045a00b50c250530e9897",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T12:14:12.639Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/improve-gateway-client-centralize-operat",
-        "head_sha": "6b0b4167a46dcd4d2a4045a00b50c250530e9897",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw-tools:17:5298592194:2026-08-29T11:55:35Z:clawsweeper_auto_repair",
       "comment_id": "5298592194",
@@ -32640,6 +32607,53 @@
         "kind": "pull_request",
         "branch": "feat/feishu-group-management-130823",
         "head_sha": "b6e0baf0c1e4b241c7ab7a24b5e2aaf89bacedb0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132224:5463785248:2026-08-29T17:18:10Z:re_review",
+      "comment_id": "5463785248",
+      "comment_version_key": "5463785248:2026-08-29T17:18:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132224#issuecomment-5463785248",
+      "comment_created_at": "2026-08-29T17:18:10Z",
+      "comment_updated_at": "2026-08-29T17:18:10Z",
+      "comment_body_sha256": "0b4e964b7f4508fca483ef7694c0deae83298e9b1f990033ec042bf4114df43b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132224,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the profiler change is behavior beyond the preceding test-only review refresh. please review the new head; the ci/current-main holds above are explicit",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T17:21:31.425Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cloud-allocation-cleanup-e9dc2a",
+        "head_sha": "8ee4fb77a8f4e9637ba8384a39c98945ea3e67b5",
         "cluster_id": null,
         "job_path": null
       },
