@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-129173",
+  "mode": "autonomous",
+  "run_id": "33258872192",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33258872192",
+  "head_sha": "db14db010bf3044be85f25fe40a587a5ca77523a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-129173.md",
+  "published_at": "2026-08-29T16:31:12.068Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/129173",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/129173",
+  "canonical_pr": null,
+  "summary": "A narrow repair remains appropriate: current checkout HEAD 8bdf14b8 still registers the run-scoped approval observer through the global listener. Implementation and validation are blocked because this checkout is read-only with missing dependencies, and the required sibling ../codex source checkout is absent.",
+  "actions": [
+    {
+      "target": "#112698",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open independently; it has distinct root cause and maintainer/product proof labels."
+    },
+    {
+      "target": "#129173",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#129173",
+      "candidate_fix": null,
+      "reason": "Repair is narrowly specified, but implementation cannot proceed in this read-only, dependency-incomplete checkout and cannot pass the repository's Codex-source gate."
+    },
+    {
+      "target": "#129174",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#129173",
+      "candidate_fix": null,
+      "reason": "Already merged and closed; retain as historical related evidence only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-129173",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#129173",
+      "candidate_fix": null,
+      "reason": "Executable narrow PR plan prepared for an executor with a writable checkout and dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-129173",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#129173",
+      "candidate_fix": null,
+      "reason": "The required implementation and validation cannot be performed in this read-only checkout."
+    }
+  ],
+  "action_counts": {
+    "keep_independent": 1,
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
