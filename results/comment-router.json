@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T06:16:51.199Z",
+  "updated_at": "2026-08-29T06:19:22.083Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132223:5459054442:2026-08-29T02:16:57Z:clawsweeper_needs_human",
-      "comment_id": "5459054442",
-      "comment_version_key": "5459054442:2026-08-29T02:16:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132223#issuecomment-5459054442",
-      "comment_created_at": "2026-08-29T00:08:54Z",
-      "comment_updated_at": "2026-08-29T02:16:57Z",
-      "comment_body_sha256": "5f0609d5ea76d8b1262f1a0b8ccea51b9965f5c30502b7ed6bc313bf1639d86f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132223,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Obtain approval for the new Git configuration contract (P1)** - hooks.blockedLiteralsFile is a new user-facing configuration option. The applicable repository policy requires explicit approval before adding any...; Review finding: [P1] Obtain approval for the new Git configuration contract — scripts/pre-commit/guard-staged-content.mjs:5 - [P1] Redact overlapping literals without exposing a s... (sha=5d0ab56a0bcd74fb505c7145b99a499ec26caf1d)",
-      "expected_head_sha": "5d0ab56a0bcd74fb505c7145b99a499ec26caf1d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T02:21:04.930Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/regex-git-hook-filtering-fda4df",
-        "head_sha": "5d0ab56a0bcd74fb505c7145b99a499ec26caf1d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/camsnap:15:5407831085:2026-08-29T02:19:00Z:clawsweeper_auto_repair",
       "comment_id": "5407831085",
@@ -32029,6 +31996,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131582:5449991096:2026-08-29T06:18:39Z:re_review",
+      "comment_id": "5449991096",
+      "comment_version_key": "5449991096:2026-08-29T06:18:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131582#issuecomment-5449991096",
+      "comment_created_at": "2026-08-28T08:00:14Z",
+      "comment_updated_at": "2026-08-29T06:18:39Z",
+      "comment_body_sha256": "e97a31a76ab01d41c7f774738b6e47e492fd2050c31eeefda56b38866834acc2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131582,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T06:19:20.035Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-worktree-branch-naming-for-pr-9535738d9993",
+        "head_sha": "89b177a4aa82b43ff595753a7cefd3a85787ea12",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
