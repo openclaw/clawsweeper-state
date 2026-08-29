@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-123815"
 mode: "autonomous"
-run_id: "33236041897"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33236041897"
+run_id: "33238132938"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33238132938"
 head_sha: "b1d6b8513271c3ac492237e863ba17784b12a897"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-29T05:41:09.213Z"
+result_status: "needs_human"
+published_at: "2026-08-29T06:32:01.420Z"
 canonical: "https://github.com/openclaw/openclaw/issues/123815"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/123815"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33236041897](https://github.com/openclaw/clawsweeper/actions/runs/33236041897)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33238132938](https://github.com/openclaw/clawsweeper/actions/runs/33238132938)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: needs_human
 
 Canonical: https://github.com/openclaw/openclaw/issues/123815
 
 ## Summary
 
-Implementation is blocked before editing: current main sends a gateway-local staged path to external-native native JSON-RPC, but this environment has neither a supported signal-cli source/help nor a runnable separate-UID daemon to prove data-URI acceptance, filename semantics, or request limits. Focused tests also cannot start because dependencies are absent, and the required sibling ../codex source is unavailable in the read-only sandbox.
+Current main still passes the gateway-local attachment path to native Signal RPC for external-native transport, but the mandatory supported signal-cli contract inspection and separate-UID daemon reproduction are unavailable. No safe automated fix path is established.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Implementation is blocked before editing: current main sends a gateway-local sta
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #123815 | fix_needed | blocked | canonical | A narrow repair is plausible, but the job requires direct supported signal-cli contract inspection and a real separate-UID daemon proof before editing; both are unavailable. |
-| #124105 | keep_closed | skipped | related | Already closed; no closure or mutation is valid for this context PR. |
-| cluster:issue-openclaw-openclaw-123815 | build_fix_artifact | blocked | canonical | Do not open a PR until the supported native signal-cli attachment contract and live separate-UID behavior are directly proven. |
+| #123815 | needs_human | blocked | needs_human | The source-level defect is present, but the required supported signal-cli protocol proof and real separate-UID reproduction are unavailable. The missing direct ../codex inspection independently prevents a repair verdict or executable fix artifact. |
+| #124105 | keep_closed | skipped | related | Already closed; retained only as historical implementation evidence and contributor context. |
 
 ## Needs Human
 
-- Provide a writable, network-enabled environment with the supported signal-cli source/help and a real external-native daemon running under a different operating-system user, then rerun this job. The evidence must establish native data-URI syntax, filename handling, and request-size limits before a data-URI repair is authorized.
+- Provide a checkout with supported signal-cli source/help and a runnable external-native daemon under a distinct operating-system user, plus the required sibling ../codex checkout. Then rerun this repair job to capture the pre-fix failure and validate a narrow owner-boundary fix.
