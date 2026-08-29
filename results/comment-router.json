@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T16:24:00.940Z",
+  "updated_at": "2026-08-29T16:24:06.305Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130749:5462057970:2026-08-29T11:21:10Z:re_review",
-      "comment_id": "5462057970",
-      "comment_version_key": "5462057970:2026-08-29T11:21:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130749#issuecomment-5462057970",
-      "comment_created_at": "2026-08-29T11:21:10Z",
-      "comment_updated_at": "2026-08-29T11:21:10Z",
-      "comment_body_sha256": "a9548ba2bf754b5bec230e260526578caec47d37868361191bd1922431b4a70b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130749,
-      "author": "Marvinthebored",
-      "author_id": 262704729,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T11:21:54.303Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/standalone-claude-cli-availability",
-        "head_sha": "51801f4b310383b3a78844a98d75f359bef81d80",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:51762:4703174912:2026-06-14T21:45:13Z:re_review",
       "comment_id": "4703174912",
@@ -32602,6 +32555,39 @@
         "kind": "pull_request",
         "branch": "codex/ard-negotiation-timeout",
         "head_sha": "1b4f01f058237bf7bfef62b365797f644ff2b3f4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132454:5461020893:2026-08-29T16:23:13Z:clawsweeper_needs_human",
+      "comment_id": "5461020893",
+      "comment_version_key": "5461020893:2026-08-29T16:23:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5461020893",
+      "comment_created_at": "2026-08-29T07:18:34Z",
+      "comment_updated_at": "2026-08-29T16:23:13Z",
+      "comment_body_sha256": "9b839f73f6f3823b8ea306087245edb8c55afb4caa1fd2bf9c980f21658b8d15",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132454,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The review host could not resolve the separately fetched current-main object from its partial clone, so a current-main rebase and exact-head validation remain necessary before landing... (sha=c3cf2d75d0aece1f4f6f64be1a85002151e02b3c)",
+      "expected_head_sha": "c3cf2d75d0aece1f4f6f64be1a85002151e02b3c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T16:24:06.305Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/provider-profile-usage-ui",
+        "head_sha": "c3cf2d75d0aece1f4f6f64be1a85002151e02b3c",
         "cluster_id": null,
         "job_path": null
       }
