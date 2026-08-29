@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-130144"
 mode: "autonomous"
-run_id: "33241517162"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33241517162"
+run_id: "33241856541"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33241856541"
 head_sha: "e1eefe217304f0f510acb3890db1155cef61682e"
-workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-29T08:04:11.430Z"
+workflow_conclusion: "failure"
+result_status: "planned"
+published_at: "2026-08-29T08:17:16.154Z"
 canonical: "https://github.com/openclaw/openclaw/issues/130144"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/130144"
 canonical_pr: null
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-130144
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33241517162](https://github.com/openclaw/clawsweeper/actions/runs/33241517162)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33241856541](https://github.com/openclaw/clawsweeper/actions/runs/33241856541)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/130144
 
 ## Summary
 
-#130144 remains the canonical open repair request, but no implementation artifact is safe to execute: the required direct sibling ../codex source check cannot run because ../codex is absent and this read-only worker cannot create it. Current main source shows the shared maxLineChars setting reaches the Telegram compositor while Telegram’s preview renderer still calls a fixed 300-unit clipper.
+#130144 is a valid narrow Telegram-plugin repair. The existing shared `streaming.progress.maxLineChars` contract is accepted and documented, but Telegram’s native structured preview re-clips lines with a fixed 300-unit helper, bypassing that budget and its boundary-aware behavior. Plan one new credited fix PR; do not add a configuration option or edit CHANGELOG.md.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/130144
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #130144 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,13 +66,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/130144
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
+| #130144 | fix_needed | planned | canonical | Open canonical issue; no viable implementation PR is hydrated. |
+| #111944 | keep_related | planned | related | Related Telegram progress area, but a different root cause and validation path. |
 | #87795 | keep_closed | skipped | superseded | Already closed; no closure action is valid. |
-| #111944 | keep_related | planned | related | Same Telegram progress area, distinct failure mode and repair owner. |
-| #126477 | keep_closed | skipped | related | Already closed and outside this Telegram repair. |
-| #126480 | keep_closed | skipped | related | Already merged; no action is valid. |
-| #130144 | fix_needed | blocked | canonical | Repository policy prohibits a code-change verdict or executable fix plan without direct ../codex source inspection. |
-| cluster:issue-openclaw-openclaw-130144 | build_fix_artifact | blocked | canonical | Blocked pending direct inspection of the required ../codex source. |
+| #126477 | keep_closed | skipped | independent | Already closed historical context. |
+| #126480 | keep_closed | skipped | independent | Already merged and outside this repair. |
+| cluster:issue-openclaw-openclaw-130144 | build_fix_artifact | planned | canonical | A narrow implementation path exists and requires a new ClawSweeper PR. |
 
 ## Needs Human
 
-- Restore or provide read access to the required ../codex sibling source, then rerun the direct Codex protocol/runtime inspection before creating a fix PR.
+- none
