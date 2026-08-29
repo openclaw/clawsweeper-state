@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T14:31:04.116Z",
+  "updated_at": "2026-08-29T14:31:28.152Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119718:5196803797:2026-08-29T08:53:33Z:clawsweeper_auto_repair",
-      "comment_id": "5196803797",
-      "comment_version_key": "5196803797:2026-08-29T08:53:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119718#issuecomment-5196803797",
-      "comment_created_at": "2026-08-05T20:10:31Z",
-      "comment_updated_at": "2026-08-29T08:53:33Z",
-      "comment_body_sha256": "26d1258aa25f774f7b8a82b56dc3942b925a8f9cda5d2d2fb5e0ce14cb49552c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119718,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=81021f3ac1971e0452a8f7e7d74aeece7e9e4b20)",
-      "expected_head_sha": "81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T09:02:22.425Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-89430",
-        "head_sha": "81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
-        "cluster_id": "automerge-openclaw-openclaw-119718",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119718.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119718.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82950:4469526858:2026-08-29T08:57:34Z:clawsweeper_auto_repair",
       "comment_id": "4469526858",
@@ -32219,6 +32172,53 @@
       "status": "skipped",
       "processed_at": "2026-08-29T14:31:04.116Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131785:5462976093:2026-08-29T14:30:47Z:re_review",
+      "comment_id": "5462976093",
+      "comment_version_key": "5462976093:2026-08-29T14:30:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131785#issuecomment-5462976093",
+      "comment_created_at": "2026-08-29T14:30:47Z",
+      "comment_updated_at": "2026-08-29T14:30:47Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131785,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T14:31:24.595Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-test-gateway-client-cleanup-20260828",
+        "head_sha": "15c0bb49c0913ea6b98d0f0b5c288d3de512f287",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
