@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-132766",
+  "mode": "autonomous",
+  "run_id": "33271510901",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33271510901",
+  "head_sha": "db14db010bf3044be85f25fe40a587a5ca77523a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-132766.md",
+  "published_at": "2026-08-29T19:57:44.722Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/132766",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/132766",
+  "canonical_pr": null,
+  "summary": "#132766 is the open canonical bug report. Static source inspection at main a9978c1c6edd570b8bbe34c7276df54aabcf639b found four unsafe zero-argument writer-fence lookups feeding durable appends. Implementation and validation are blocked: the required sibling ../codex checkout is absent and cannot be cloned in this read-only environment; node_modules is also absent, so the required regression/test commands cannot run.",
+  "actions": [
+    {
+      "target": "#122630",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation is valid."
+    },
+    {
+      "target": "#125885",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Closed historical predecessor; preserve attribution through the replacement PR."
+    },
+    {
+      "target": "#132766",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "A narrow repair is identified, but this worker cannot satisfy the mandatory Codex-source and executable-validation gates."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-132766",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor, but cannot be implemented or validated in this sandbox."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#132766",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
