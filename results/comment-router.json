@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T14:34:12.698Z",
+  "updated_at": "2026-08-29T14:34:26.680Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132511:5461418566:2026-08-29T08:56:50Z:clawsweeper_needs_human",
-      "comment_id": "5461418566",
-      "comment_version_key": "5461418566:2026-08-29T08:56:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132511#issuecomment-5461418566",
-      "comment_created_at": "2026-08-29T08:56:50Z",
-      "comment_updated_at": "2026-08-29T08:56:50Z",
-      "comment_body_sha256": "d517a045f2a11ed576f41a2af5223a163b78518858cf73eb3defcc91652fbf38",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132511,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied package Docker evidence predates the current rebase, so exact-head Docker acceptance and required CI should complete before merge. (sha=2696ab021a3563a27f1b637ddea2f552162d86ae)",
-      "expected_head_sha": "2696ab021a3563a27f1b637ddea2f552162d86ae",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T09:02:37.942Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/docker-six-lane-harness",
-        "head_sha": "2696ab021a3563a27f1b637ddea2f552162d86ae",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132509:5461420430:2026-08-29T08:57:21Z:clawsweeper_needs_human",
       "comment_id": "5461420430",
@@ -32199,6 +32166,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129504:5417088992:2026-08-29T14:33:42Z:clawsweeper_auto_repair",
+      "comment_id": "5417088992",
+      "comment_version_key": "5417088992:2026-08-29T14:33:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129504#issuecomment-5417088992",
+      "comment_created_at": "2026-08-25T21:32:00Z",
+      "comment_updated_at": "2026-08-29T14:33:42Z",
+      "comment_body_sha256": "9e2d9cf8405c8421a54004ac0a72e0fc51311bfb673199f8375c1a03b12f5923",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129504,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e655ca7342e0eacce8c437be86fe25a9500f776f)",
+      "expected_head_sha": "e655ca7342e0eacce8c437be86fe25a9500f776f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T14:34:26.680Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-exec-close-transient-sqlite",
+        "head_sha": "e655ca7342e0eacce8c437be86fe25a9500f776f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
