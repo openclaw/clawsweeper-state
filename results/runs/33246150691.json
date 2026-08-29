@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-70634",
+  "mode": "autonomous",
+  "run_id": "33246150691",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33246150691",
+  "head_sha": "e1eefe217304f0f510acb3890db1155cef61682e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-70634.md",
+  "published_at": "2026-08-29T10:03:21.091Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/70634",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/70634",
+  "canonical_pr": null,
+  "summary": "#70634 remains the canonical, narrowly repairable provenance-classification defect on main bb2f3a5bf8868da1c43d104566412476cf8ad580. Implementation is blocked: the checkout is read-only, dependencies (tsx) are absent, and the required sibling ../codex source checkout is unavailable.",
+  "actions": [
+    {
+      "target": "#70634",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Provision a writable checkout with dependencies and the required sibling Codex source, then apply the narrow repair artifact."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-70634",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Ready for a provisioned executor; implementation remains blocked in this read-only checkout."
+    },
+    {
+      "target": "#75299",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Related scheduler policy work, not a fix for #70634's producer classification."
+    },
+    {
+      "target": "#79589",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Distinct remaining work and maintainer policy decision."
+    },
+    {
+      "target": "#80199",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no action on a closed PR."
+    },
+    {
+      "target": "#84575",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate session-admission defect."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 2,
+    "keep_closed": 1,
+    "keep_independent": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 4,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
