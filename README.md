@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 29, 2026, 23:33 UTC
+Last source update: Aug 29, 2026, 23:50 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Aug 29, 2026, 23:33 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Aug 29, 2026, 23:33 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33279095625) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 29, 2026, 23:26 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33280953446) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Aug 29, 2026, 23:50 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33280946586) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 29, 2026, 23:42 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33281528364) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 29, 2026, 09:05 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33244643511) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 29, 2026, 23:35 UTC
+Last source update: Aug 29, 2026, 23:49 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 698 | 100% |
-| Run attempts archived | 2367 | audit |
+| Run attempts archived | 2368 | audit |
 | Latest successful clusters | 582 | 83.4% |
 | Latest failed clusters | 114 | 16.3% |
 | Latest cancelled clusters | 2 | 0.3% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 698 clusters: 245 maintainer action, 114 automation snapshot, 309 intervention needed, 30 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [issue-openclaw-openclaw-132864](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-132864.md) is maintainer_input: Rerun in a writable checkout with dependencies available and sibling ../codex source present, so the mandatory direct Codex-source check,....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#105517](https://github.com/openclaw/openclaw/pull/105517) is automation_failed: Create one narrow fix PR once a writable, dependency-ready checkout is available..
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [cluster:issue-openclaw-openclaw-105517](cluster:issue-openclaw-openclaw-105517) is automation_failed: Implementation and local validation require a writable checkout with the mandatory sibling Codex source available..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#119737](https://github.com/openclaw/openclaw/pull/119737) is action_planned: Repair the same-repository writable branch, preserving the existing PR and issue linkage..
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#105517](https://github.com/openclaw/openclaw/pull/105517) | automation_failed | Create one narrow fix PR once a writable, dependency-ready checkout is available. | Aug 29, 2026, 23:35 UTC | [issue-openclaw-openclaw-105517](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-105517.md) | [33280097679](https://github.com/openclaw/clawsweeper/actions/runs/33280097679) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-105517](cluster:issue-openclaw-openclaw-105517) | automation_failed | Implementation and local validation require a writable checkout with the mandatory sibling Codex source available. | Aug 29, 2026, 23:49 UTC | [issue-openclaw-openclaw-105517](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-105517.md) | [33281135976](https://github.com/openclaw/clawsweeper/actions/runs/33281135976) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#98403](https://github.com/openclaw/openclaw/pull/98403) | automation_blocked | A writable executor must install dependencies, inspect the required sibling Codex checkout, add the pre-fix regression, then apply and validate the... | Aug 29, 2026, 22:54 UTC | [issue-openclaw-openclaw-98403](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-98403.md) | [33275984354](https://github.com/openclaw/clawsweeper/actions/runs/33275984354) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119975](https://github.com/openclaw/openclaw/pull/119975) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 29, 2026, 21:45 UTC | [automerge-openclaw-openclaw-119975](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119975.md) | [33275832177](https://github.com/openclaw/clawsweeper/actions/runs/33275832177) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#132766](https://github.com/openclaw/openclaw/pull/132766) | automation_failed | The bug is narrowly repairable, but this worker cannot perform required writes or complete the repository's direct Codex-source gate. | Aug 29, 2026, 21:13 UTC | [issue-openclaw-openclaw-132766](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-132766.md) | [33274670597](https://github.com/openclaw/clawsweeper/actions/runs/33274670597) |
