@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T10:29:51.836Z",
+  "updated_at": "2026-08-29T10:29:57.485Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125531:5322892433:2026-08-29T05:56:30Z:clawsweeper_needs_human",
-      "comment_id": "5322892433",
-      "comment_version_key": "5322892433:2026-08-29T05:56:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125531#issuecomment-5322892433",
-      "comment_created_at": "2026-08-18T02:50:45Z",
-      "comment_updated_at": "2026-08-29T05:56:30Z",
-      "comment_body_sha256": "e1dc40b0b30a29b758bc0e7db6e57a05fddceece514df0fc5ff6f51a61779358",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125531,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The copied log shows rollback counters but does not independently show a committed transcript rewrite, a redone step, or the claimed c...; Review finding: [P1] Make the durable rewrite atomic before reporting failure — src/agents/embedded-agent-runner/run/attempt-step-audit.ts:234-249 - [P1] Bind audit handles to the... (sha=874c8a12ad944ffbfb73905c8cca577d601380fc)",
-      "expected_head_sha": "874c8a12ad944ffbfb73905c8cca577d601380fc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T06:03:35.526Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/step-audit-checkpoints",
-        "head_sha": "874c8a12ad944ffbfb73905c8cca577d601380fc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131009:5442215821:2026-08-29T06:00:30Z:clawsweeper_needs_human",
       "comment_id": "5442215821",
@@ -32351,6 +32318,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T10:29:51.836Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98544:4853447897:2026-08-29T10:29:13Z:clawsweeper_auto_repair",
+      "comment_id": "4853447897",
+      "comment_version_key": "4853447897:2026-08-29T10:29:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/98544#issuecomment-4853447897",
+      "comment_created_at": "2026-07-01T10:40:06Z",
+      "comment_updated_at": "2026-08-29T10:29:13Z",
+      "comment_body_sha256": "80c9951ca106a4c1969f289f8f25ea2d799a4bc1c606018de67362a9423e57c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 98544,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a63be5228efda075fc97acaf545e0ac5a0ff9711)",
+      "expected_head_sha": "a63be5228efda075fc97acaf545e0ac5a0ff9711",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T10:29:57.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/composer-tool-stream-bridge",
+        "head_sha": "a63be5228efda075fc97acaf545e0ac5a0ff9711",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
