@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T00:51:46.355Z",
+  "updated_at": "2026-08-29T00:51:47.076Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124467:5457638111:2026-08-28T20:52:21Z:re_review",
-      "comment_id": "5457638111",
-      "comment_version_key": "5457638111:2026-08-28T20:52:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5457638111",
-      "comment_created_at": "2026-08-28T20:52:21Z",
-      "comment_updated_at": "2026-08-28T20:52:21Z",
-      "comment_body_sha256": "1da65f8acf459ab9d21f9ecab22d7114cc53ff19e2309fe15cabe65e9d79627b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124467,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T20:53:08.203Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/crabline-structured-identity",
-        "head_sha": "da9232b2855a2d733708980a2d31324409fc51de",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132062:5457149484:2026-08-28T20:51:02Z:clawsweeper_needs_human",
       "comment_id": "5457149484",
@@ -32882,6 +32835,39 @@
         "kind": "pull_request",
         "branch": "automation/native-app-locale-refresh",
         "head_sha": "ce177eba7347f7b1c9ad185994a8c08cbf82b849",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132128:5458005010:2026-08-29T00:29:49Z:clawsweeper_needs_human",
+      "comment_id": "5458005010",
+      "comment_version_key": "5458005010:2026-08-29T00:29:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132128#issuecomment-5458005010",
+      "comment_created_at": "2026-08-28T21:34:59Z",
+      "comment_updated_at": "2026-08-29T00:29:49Z",
+      "comment_body_sha256": "87b4d391ff01354e823ed1e478109ec03d2814852de4b11e0e9d7c142e37923a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132128,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the session-result terminalization decision during owner teardown; the exact owner, claim, and Gateway-instance guards mitigate cross-session handling, but it remains a s... (sha=9bbbd08b84918baee35796a8b85ad34f924bc31b)",
+      "expected_head_sha": "9bbbd08b84918baee35796a8b85ad34f924bc31b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T00:51:47.076Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stale-worker-recovery-handoff",
+        "head_sha": "9bbbd08b84918baee35796a8b85ad34f924bc31b",
         "cluster_id": null,
         "job_path": null
       }
