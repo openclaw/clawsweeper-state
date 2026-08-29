@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T19:43:23.117Z",
+  "updated_at": "2026-08-29T19:43:33.791Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129504:5417088992:2026-08-29T14:33:42Z:clawsweeper_auto_repair",
-      "comment_id": "5417088992",
-      "comment_version_key": "5417088992:2026-08-29T14:33:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129504#issuecomment-5417088992",
-      "comment_created_at": "2026-08-25T21:32:00Z",
-      "comment_updated_at": "2026-08-29T14:33:42Z",
-      "comment_body_sha256": "9e2d9cf8405c8421a54004ac0a72e0fc51311bfb673199f8375c1a03b12f5923",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129504,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e655ca7342e0eacce8c437be86fe25a9500f776f)",
-      "expected_head_sha": "e655ca7342e0eacce8c437be86fe25a9500f776f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T14:34:26.680Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-exec-close-transient-sqlite",
-        "head_sha": "e655ca7342e0eacce8c437be86fe25a9500f776f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132630:5462992080:2026-08-29T14:34:00Z:clawsweeper_auto_repair",
       "comment_id": "5462992080",
@@ -33231,6 +33198,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1296:5464465035:2026-08-29T19:42:46Z:re_review",
+      "comment_id": "5464465035",
+      "comment_version_key": "5464465035:2026-08-29T19:42:46Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1296#issuecomment-5464465035",
+      "comment_created_at": "2026-08-29T19:42:46Z",
+      "comment_updated_at": "2026-08-29T19:42:46Z",
+      "comment_body_sha256": "3bd05012b2905342e543a27bda7cc80cda65b6dcce13e9a4e567ee302197b36c",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1296,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T19:43:28.855Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/review-synthetic-fixture-classification",
+        "head_sha": "6e0e0a75a46bac1f656069e87e9a379642155450",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
