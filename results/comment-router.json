@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T01:06:18.351Z",
+  "updated_at": "2026-08-29T01:06:33.970Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:140:5387059000:2026-08-28T20:41:04Z:clawsweeper_needs_human",
-      "comment_id": "5387059000",
-      "comment_version_key": "5387059000:2026-08-28T20:41:04Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/140#issuecomment-5387059000",
-      "comment_created_at": "2026-08-23T16:27:59Z",
-      "comment_updated_at": "2026-08-28T20:41:04Z",
-      "comment_body_sha256": "2c6092e6f09725b4e5485aa31c34367b68db4fb5b7d979f3eff7fdd212cc4f0f",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 140,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing synchronous callers that configured process-wide timeout, retry, stale-age, or recovery settings will begin honoring those settings after upgrade; this is intended parity but... (sha=dfe3681d7f831e88923fa28e1ad140475980636e)",
-      "expected_head_sha": "dfe3681d7f831e88923fa28e1ad140475980636e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T20:58:53.879Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sync-lock-process-defaults",
-        "head_sha": "dfe3681d7f831e88923fa28e1ad140475980636e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132087:5457687278:2026-08-28T20:58:16Z:clawsweeper_needs_human",
       "comment_id": "5457687278",
@@ -32873,6 +32840,51 @@
       "status": "skipped",
       "processed_at": "2026-08-29T01:06:18.351Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127931:5459371362:2026-08-29T01:05:47Z:re_review",
+      "comment_id": "5459371362",
+      "comment_version_key": "5459371362:2026-08-29T01:05:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/127931#issuecomment-5459371362",
+      "comment_created_at": "2026-08-29T01:05:47Z",
+      "comment_updated_at": "2026-08-29T01:05:47Z",
+      "comment_body_sha256": "c5e9498a50e70af46078ca2e31aa093928ff0f84c1db758d7418c6701cb1e10a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127931,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T01:06:31.687Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
