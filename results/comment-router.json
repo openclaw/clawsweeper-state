@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T04:28:38.655Z",
+  "updated_at": "2026-08-29T04:30:14.819Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127005:5458951551:2026-08-28T23:51:14Z:re_review",
-      "comment_id": "5458951551",
-      "comment_version_key": "5458951551:2026-08-28T23:51:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127005#issuecomment-5458951551",
-      "comment_created_at": "2026-08-28T23:51:14Z",
-      "comment_updated_at": "2026-08-28T23:51:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127005,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T23:51:53.789Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-frozen-evidence-compat",
-        "head_sha": "30a906ede687815d8fd446493ff3e64d65072dab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127002:5458951458:2026-08-28T23:51:13Z:re_review",
       "comment_id": "5458951458",
@@ -32811,6 +32764,39 @@
         "kind": "pull_request",
         "branch": "fix/workshop-action-unconfirmed",
         "head_sha": "e99f9b51924c3d3e94eb39c2dbf2bde440d09235",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131949:5455624311:2026-08-29T04:29:24Z:clawsweeper_needs_human",
+      "comment_id": "5455624311",
+      "comment_version_key": "5455624311:2026-08-29T04:29:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131949#issuecomment-5455624311",
+      "comment_created_at": "2026-08-28T17:26:21Z",
+      "comment_updated_at": "2026-08-29T04:29:24Z",
+      "comment_body_sha256": "e2cb1b52e6b6a1f4a9d73f63e1ae0bc558c7d58bda830a526d35af5b0cb9ef3f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131949,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The added E2E creates an isolated Gateway with real RPC and persistence but uses a mock model service and generated plugin; no captured after-f... (sha=a1433216f9df3d7b8bfce5b79999a0f0806199a2)",
+      "expected_head_sha": "a1433216f9df3d7b8bfce5b79999a0f0806199a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T04:30:14.819Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-131711",
+        "head_sha": "a1433216f9df3d7b8bfce5b79999a0f0806199a2",
         "cluster_id": null,
         "job_path": null
       }
