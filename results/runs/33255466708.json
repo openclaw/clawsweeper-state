@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-119735",
+  "mode": "autonomous",
+  "run_id": "33255466708",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33255466708",
+  "head_sha": "e1eefe217304f0f510acb3890db1155cef61682e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119735.md",
+  "published_at": "2026-08-29T14:14:19.533Z",
+  "canonical": "#119735",
+  "canonical_issue": "#114169",
+  "canonical_pr": "#119735",
+  "summary": "Keep #114169 open as the root-cause report and repair the adopted canonical PR #119735. Current main still marks 26-minute-old busy activity as stuck, while the WhatsApp status owner updates run activity only on pending-work transitions. The hydrated ClawSweeper review identifies an unresolved reconnect P1, so merge and issue closeout remain blocked.",
+  "actions": [
+    {
+      "target": "#114169",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114169",
+      "candidate_fix": "#119735",
+      "reason": "Do not mark fixed by #119735 until its reconnect repair is rebased, validated, and re-reviewed."
+    },
+    {
+      "target": "#119735",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119735",
+      "candidate_fix": "#119735",
+      "reason": "Repair the writable same-repository contributor branch; no merge is authorized in this autofix job."
+    },
+    {
+      "target": "#119735",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119735",
+      "candidate_fix": "#119735",
+      "reason": "Emit the required narrow repair handoff; deterministic applicators, not this worker, update the branch."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
