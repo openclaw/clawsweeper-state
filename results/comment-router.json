@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T07:27:16.779Z",
+  "updated_at": "2026-08-29T07:27:29.284Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128905:5410031258:2026-08-25T11:57:49Z:re_review",
-      "comment_id": "5410031258",
-      "comment_version_key": "5410031258:2026-08-25T11:57:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128905#issuecomment-5410031258",
-      "comment_created_at": "2026-08-25T11:57:49Z",
-      "comment_updated_at": "2026-08-25T11:57:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128905,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T03:50:35.444Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128905:5410431498:2026-08-25T12:33:43Z:re_review",
       "comment_id": "5410431498",
@@ -31977,6 +31950,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132461:5461054404:2026-08-29T07:26:44Z:clawsweeper_needs_human",
+      "comment_id": "5461054404",
+      "comment_version_key": "5461054404:2026-08-29T07:26:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132461#issuecomment-5461054404",
+      "comment_created_at": "2026-08-29T07:26:44Z",
+      "comment_updated_at": "2026-08-29T07:26:44Z",
+      "comment_body_sha256": "42cef0ddd69b4ef9094ccdfe2394dc263ba2fa2dbfab5e2fba0d2d4aa1566df7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132461,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Focused Swift compilation could not complete on the reviewer host without full Xcode, so the queued macos-swift check is still the native build confirmation for this exact head. (sha=1d0fa597cb7bc973dbce5eaf97a65f871213fba6)",
+      "expected_head_sha": "1d0fa597cb7bc973dbce5eaf97a65f871213fba6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T07:27:29.284Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cleanup/tests-native-seams",
+        "head_sha": "1d0fa597cb7bc973dbce5eaf97a65f871213fba6",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
