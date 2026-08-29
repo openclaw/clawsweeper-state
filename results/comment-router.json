@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T16:29:07.702Z",
+  "updated_at": "2026-08-29T16:30:36.627Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131888:5462114933:2026-08-29T11:29:38Z:re_review",
-      "comment_id": "5462114933",
-      "comment_version_key": "5462114933:2026-08-29T11:29:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131888#issuecomment-5462114933",
-      "comment_created_at": "2026-08-29T11:29:38Z",
-      "comment_updated_at": "2026-08-29T11:29:38Z",
-      "comment_body_sha256": "b76aeb081e567ecd95992edde82871559bf946b80d11c485bb1cc620e2001071",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131888,
-      "author": "R0gner",
-      "author_id": 8760800,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T11:30:21.361Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/restart-sentinel-unscheduled-wake",
-        "head_sha": "ea3e9d57c99c8eb4e4c2070a7d9368c7117c631e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120486:5462118957:2026-08-29T11:30:37Z:re_review",
       "comment_id": "5462118957",
@@ -32558,6 +32511,39 @@
         "kind": "pull_request",
         "branch": "codex/ios-composer-webui",
         "head_sha": "f16b9ab6d3fe3236e74abef649fdd9e279391958",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132711:5463550555:2026-08-29T16:29:59Z:clawsweeper_needs_human",
+      "comment_id": "5463550555",
+      "comment_version_key": "5463550555:2026-08-29T16:29:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132711#issuecomment-5463550555",
+      "comment_created_at": "2026-08-29T16:29:59Z",
+      "comment_updated_at": "2026-08-29T16:29:59Z",
+      "comment_body_sha256": "416fd745e37cec1d5244d25a0a2021a4fd4c72057e1f233917ed48037cdb5720",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132711,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes recovery for parent-owned candidate plans: operators must start a fresh all-group validation instead of continuing the original parent. The reviewer could n... (sha=138a7e21b0c96e8b6afda9ccd74343cbd29e349e)",
+      "expected_head_sha": "138a7e21b0c96e8b6afda9ccd74343cbd29e349e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T16:30:36.627Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-parent-artifact-continuation",
+        "head_sha": "138a7e21b0c96e8b6afda9ccd74343cbd29e349e",
         "cluster_id": null,
         "job_path": null
       }
