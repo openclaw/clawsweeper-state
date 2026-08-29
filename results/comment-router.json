@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T21:05:48.826Z",
+  "updated_at": "2026-08-29T21:05:57.644Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112227:5078519486:2026-08-29T15:42:49Z:clawsweeper_auto_repair",
-      "comment_id": "5078519486",
-      "comment_version_key": "5078519486:2026-08-29T15:42:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112227#issuecomment-5078519486",
-      "comment_created_at": "2026-07-25T12:42:29Z",
-      "comment_updated_at": "2026-08-29T15:42:49Z",
-      "comment_body_sha256": "7069509d23206d618c32dd47f6498718b3d8e0464a552897486b149c0e84c65a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112227,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8f075f36856bca952d6bd90e844aeed3ded046af)",
-      "expected_head_sha": "8f075f36856bca952d6bd90e844aeed3ded046af",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T15:55:26.779Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-106362-concurrent-session-groups",
-        "head_sha": "8f075f36856bca952d6bd90e844aeed3ded046af",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114032:5082172353:2026-08-29T15:46:28Z:clawsweeper_auto_repair",
       "comment_id": "5082172353",
@@ -32939,6 +32906,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132809:5464878159:2026-08-29T21:05:09Z:re_review",
+      "comment_id": "5464878159",
+      "comment_version_key": "5464878159:2026-08-29T21:05:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132809#issuecomment-5464878159",
+      "comment_created_at": "2026-08-29T21:05:09Z",
+      "comment_updated_at": "2026-08-29T21:05:09Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132809,
+      "author": "yetval",
+      "author_id": 102706514,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T21:05:53.131Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-interaction-durable-ingress",
+        "head_sha": "e572563d2f08110ed03da1fa987e4aab2cc86230",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
