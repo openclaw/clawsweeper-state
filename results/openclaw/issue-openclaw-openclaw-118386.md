@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118386"
 mode: "autonomous"
-run_id: "33232268423"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33232268423"
+run_id: "33230564208"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33230564208"
 head_sha: "b1d6b8513271c3ac492237e863ba17784b12a897"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-29T04:04:12.783Z"
+published_at: "2026-08-29T03:22:03.356Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118386"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118386"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33232268423](https://github.com/openclaw/clawsweeper/actions/runs/33232268423)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33230564208](https://github.com/openclaw/clawsweeper/actions/runs/33230564208)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118386
 
 ## Summary
 
-#118386 remains a narrow, reproducible repair candidate on main 56c2083fbdd5cac62d69cae92bb71cc68e512412. Implementation is blocked in this read-only checkout: focused Vitest cannot load missing tsx, pnpm cannot initialize its cache, and the mandatory sibling ../codex source is absent for a complete Codex-gated verdict.
+Current main 383a293b32d97254014437430b62aaf406bc11ac still has the reported gap: CLI background-task state remains local while model-call recovery has no corresponding floor. Implementation is blocked because this worker filesystem is read-only and the required sibling ../codex source checkout is absent, so no edit, failing-first run, or Codex-gated proof can be completed here.
 
 ## Impact
 
@@ -66,17 +66,17 @@ Canonical: https://github.com/openclaw/openclaw/issues/118386
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118386 | fix_needed | blocked | canonical | A writable, dependency-ready repair checkout and the required sibling Codex source are needed before this can be implemented and validated. |
-| cluster:issue-openclaw-openclaw-118386 | build_fix_artifact | planned | canonical | A narrow new fix PR is appropriate once the execution environment is provisioned. |
-| #85532 | keep_related | planned | related | Keep open as related context while #118386 owns this exact CLI-host-to-diagnostic repair. |
-| #88870 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| #113972 | keep_related | planned | related | Keep open as related context pending its own validation path. |
-| #116949 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| #116959 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| #118427 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| #118442 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| #118459 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| #118616 | keep_closed | skipped | related | Already closed; no mutation is valid. |
+| #118386 | fix_needed | blocked | canonical | A narrow root-cause repair is defined, but this worker cannot modify or validate a branch. |
+| cluster:issue-openclaw-openclaw-118386 | build_fix_artifact | planned | canonical | Produce the narrow, executor-ready repair plan. |
+| #85532 | keep_related | planned | related | Distinct producer and recovery evidence; keep open independently. |
+| #88870 | keep_closed | skipped | related | Already closed; historical evidence only. |
+| #113972 | keep_related | planned | related | Separate liveness-instrumentation defect. |
+| #116949 | keep_closed | skipped | independent | Already closed and independent. |
+| #116959 | keep_closed | skipped | independent | Already closed and unrelated to the required fix. |
+| #118427 | keep_closed | skipped | superseded | Already closed; do not mutate. |
+| #118442 | keep_closed | skipped | superseded | Already closed; do not mutate. |
+| #118459 | keep_closed | skipped | superseded | Already closed; do not mutate. |
+| #118616 | keep_closed | skipped | superseded | Already closed; its useful owner-boundary direction informs the new narrow artifact. |
 
 ## Needs Human
 
