@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T04:17:51.046Z",
+  "updated_at": "2026-08-29T04:18:34.090Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132193:5458748636:2026-08-28T23:40:38Z:clawsweeper_needs_human",
-      "comment_id": "5458748636",
-      "comment_version_key": "5458748636:2026-08-28T23:40:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132193#issuecomment-5458748636",
-      "comment_created_at": "2026-08-28T23:16:56Z",
-      "comment_updated_at": "2026-08-28T23:40:38Z",
-      "comment_body_sha256": "a6aead1b3271c6fcb37fc49ff981fe7085932f3804bf763457368b7aa40f1619",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132193,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A malformed or changed fs-safe relative-path contract would make installed worker native require mode unable to find its binary; the transform fails closed, but this reviewer could no... (sha=a93c579cae5236be86cb78885f16f69a1f02c7af)",
-      "expected_head_sha": "a93c579cae5236be86cb78885f16f69a1f02c7af",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T23:41:23.854Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dedupe-fs-safe-native",
-        "head_sha": "a93c579cae5236be86cb78885f16f69a1f02c7af",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131110:5443777304:2026-08-28T23:41:04Z:clawsweeper_needs_human",
       "comment_id": "5443777304",
@@ -32798,6 +32765,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132032:5460285565:2026-08-29T04:17:39Z:re_review",
+      "comment_id": "5460285565",
+      "comment_version_key": "5460285565:2026-08-29T04:17:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132032#issuecomment-5460285565",
+      "comment_created_at": "2026-08-29T04:17:39Z",
+      "comment_updated_at": "2026-08-29T04:17:39Z",
+      "comment_body_sha256": "9ee5ce406e6a38bc8b910e2d4ffb51915809002a2e00b897adaf463782431cff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132032,
+      "author": "pengzh1",
+      "author_id": 24854675,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T04:18:31.813Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/requester-settle-wake-dedup",
+        "head_sha": "96d00d38e5462df7dc1565ca82f383093521c1c8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
