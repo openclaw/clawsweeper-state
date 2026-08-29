@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118386"
 mode: "autonomous"
-run_id: "33230564208"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33230564208"
+run_id: "33231558833"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33231558833"
 head_sha: "b1d6b8513271c3ac492237e863ba17784b12a897"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-29T03:22:03.356Z"
+published_at: "2026-08-29T03:46:54.914Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118386"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118386"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33230564208](https://github.com/openclaw/clawsweeper/actions/runs/33230564208)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33231558833](https://github.com/openclaw/clawsweeper/actions/runs/33231558833)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118386
 
 ## Summary
 
-Current main 383a293b32d97254014437430b62aaf406bc11ac still has the reported gap: CLI background-task state remains local while model-call recovery has no corresponding floor. Implementation is blocked because this worker filesystem is read-only and the required sibling ../codex source checkout is absent, so no edit, failing-first run, or Codex-gated proof can be completed here.
+#118386 remains the canonical open bug. Current main has no run-bound diagnostic background-work fact: CLI stream handling only counts background tasks for its own no-output timeout, while model-call recovery still uses the ordinary timeout. Implementation and the required failing-first reproduction are blocked because this worker has a read-only checkout and the mandatory sibling ../codex source checkout is absent.
 
 ## Impact
 
@@ -66,17 +66,17 @@ Current main 383a293b32d97254014437430b62aaf406bc11ac still has the reported gap
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118386 | fix_needed | blocked | canonical | A narrow root-cause repair is defined, but this worker cannot modify or validate a branch. |
-| cluster:issue-openclaw-openclaw-118386 | build_fix_artifact | planned | canonical | Produce the narrow, executor-ready repair plan. |
-| #85532 | keep_related | planned | related | Distinct producer and recovery evidence; keep open independently. |
-| #88870 | keep_closed | skipped | related | Already closed; historical evidence only. |
-| #113972 | keep_related | planned | related | Separate liveness-instrumentation defect. |
-| #116949 | keep_closed | skipped | independent | Already closed and independent. |
-| #116959 | keep_closed | skipped | independent | Already closed and unrelated to the required fix. |
-| #118427 | keep_closed | skipped | superseded | Already closed; do not mutate. |
-| #118442 | keep_closed | skipped | superseded | Already closed; do not mutate. |
-| #118459 | keep_closed | skipped | superseded | Already closed; do not mutate. |
-| #118616 | keep_closed | skipped | superseded | Already closed; its useful owner-boundary direction informs the new narrow artifact. |
+| #118386 | fix_needed | blocked | canonical | A narrow repair path exists, but this worker cannot meet the mandatory Codex contract inspection or create and validate the required branch. |
+| cluster:issue-openclaw-openclaw-118386 | build_fix_artifact | planned | canonical | New narrow fix PR required; no open viable candidate exists. |
+| #85532 | keep_related | planned | related | Related stale-recovery family, distinct runtime and root cause. |
+| #113972 | keep_related | planned | related | Related false-abort symptom but independent Codex-resume ownership path. |
+| #88870 | keep_closed | skipped | related | No closure action is valid for an already closed issue. |
+| #116949 | keep_closed | skipped | independent | Separate issue already fixed by merged PR #116959. |
+| #116959 | keep_closed | skipped | independent | Closed historical context only. |
+| #118427 | keep_closed | skipped | superseded | No action on an already closed PR. |
+| #118442 | keep_closed | skipped | superseded | No action on an already closed PR. |
+| #118459 | keep_closed | skipped | superseded | No action on an already closed PR. |
+| #118616 | keep_closed | skipped | superseded | Historical implementation evidence only; current fix must be rebuilt narrowly. |
 
 ## Needs Human
 
