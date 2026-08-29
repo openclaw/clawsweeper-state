@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T05:09:16.275Z",
+  "updated_at": "2026-08-29T05:09:24.444Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131669:5450549201:2026-08-29T00:18:07Z:clawsweeper_needs_human",
-      "comment_id": "5450549201",
-      "comment_version_key": "5450549201:2026-08-29T00:18:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131669#issuecomment-5450549201",
-      "comment_created_at": "2026-08-28T09:01:04Z",
-      "comment_updated_at": "2026-08-29T00:18:07Z",
-      "comment_body_sha256": "1af01559f28ce3b9e9696338c42947a5910b32ecf716513ca9ae7146ff6e606e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131669,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the visible PR body narrates an isolated Gateway/node-worker run but supplies no inspectable trace, ar...; Review finding: [P1] Fence sends after the policy await — src/gateway/worker-environments/worker-session-tool-executor.ts:607-611 - [high] Allowed policy wait bypasses delegated-r... (sha=00b5c0faa4a0262058151e6e7bb87a27ea16570e)",
-      "expected_head_sha": "00b5c0faa4a0262058151e6e7bb87a27ea16570e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T01:12:04.354Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/worker-session-tool-policy",
-        "head_sha": "cce749e2e15ac38a0d719894e83bbd14edbe3845",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131829:5454037134:2026-08-29T00:57:27Z:clawsweeper_auto_repair",
       "comment_id": "5454037134",
@@ -31987,6 +31954,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132032:5460493166:2026-08-29T05:08:44Z:re_review",
+      "comment_id": "5460493166",
+      "comment_version_key": "5460493166:2026-08-29T05:08:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132032#issuecomment-5460493166",
+      "comment_created_at": "2026-08-29T05:08:44Z",
+      "comment_updated_at": "2026-08-29T05:08:44Z",
+      "comment_body_sha256": "c3fb25dfb1425dae45c7148435b61227e0be5e4e01b3250bfab264cda776b926",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132032,
+      "author": "pengzh1",
+      "author_id": 24854675,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T05:09:22.332Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/requester-settle-wake-dedup",
+        "head_sha": "5cc2cdef1655dd7a2736c394f75b5f7c81b7613c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
