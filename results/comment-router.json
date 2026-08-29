@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-29T08:57:08.272Z",
+  "updated_at": "2026-08-29T08:55:51.384Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/poltergeist:210:5398612199:2026-08-29T04:51:58Z:clawsweeper_needs_human",
+      "comment_id": "5398612199",
+      "comment_version_key": "5398612199:2026-08-29T04:51:58Z",
+      "comment_url": "https://github.com/steipete/poltergeist/pull/210#issuecomment-5398612199",
+      "comment_created_at": "2026-08-24T17:04:30Z",
+      "comment_updated_at": "2026-08-29T04:51:58Z",
+      "comment_body_sha256": "bce0458112e720f1c1876115855b50133504810f59a1509836563a26b6797c3f",
+      "repo": "steipete/poltergeist",
+      "issue_number": 210,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A reload that changes auto-run settings during an active build or restart now takes effect after the old artifact lifecycle completes; operators expecting an immediate command or envi... (sha=b0a308cde497191b3e4c9f81d1faeab15cfe53d4)",
+      "expected_head_sha": "b0a308cde497191b3e4c9f81d1faeab15cfe53d4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T04:52:40.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-reload-stale-builder",
+        "head_sha": "b0a308cde497191b3e4c9f81d1faeab15cfe53d4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:184:5335414556:2026-08-29T04:52:11Z:clawsweeper_needs_human",
       "comment_id": "5335414556",
@@ -32611,39 +32644,6 @@
       "status": "skipped",
       "processed_at": "2026-08-29T08:55:51.384Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/ask-molty:10:5334544777:2026-08-29T08:56:32Z:clawsweeper_auto_repair",
-      "comment_id": "5334544777",
-      "comment_version_key": "5334544777:2026-08-29T08:56:32Z",
-      "comment_url": "https://github.com/openclaw/ask-molty/pull/10#issuecomment-5334544777",
-      "comment_created_at": "2026-08-18T21:56:46Z",
-      "comment_updated_at": "2026-08-29T08:56:32Z",
-      "comment_body_sha256": "ea432d68ffc9c75fac6a2f88b393a1e955fe7357504aac81495db5ef5fbd7d95",
-      "repo": "openclaw/ask-molty",
-      "issue_number": 10,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=074094476ac194c177ebe4a46f03df6e5f846248)",
-      "expected_head_sha": "074094476ac194c177ebe4a46f03df6e5f846248",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T08:57:08.272Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sse-skip-bad-json",
-        "head_sha": "074094476ac194c177ebe4a46f03df6e5f846248",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
