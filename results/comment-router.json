@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T13:16:36.129Z",
+  "updated_at": "2026-08-29T13:16:50.028Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123858:5298563833:2026-08-29T08:05:14Z:clawsweeper_needs_human",
-      "comment_id": "5298563833",
-      "comment_version_key": "5298563833:2026-08-29T08:05:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123858#issuecomment-5298563833",
-      "comment_created_at": "2026-08-14T21:56:55Z",
-      "comment_updated_at": "2026-08-29T08:05:14Z",
-      "comment_body_sha256": "09990b0df6f8cbb1ebe52ac84842c420ee8978b353ebb8631922e779b05dbaf9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123858,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Scan the complete pack before partitioning it (P1)** - build_review_prompts splits an oversized logical bundle before this per-prompt scan. A credential spanning the split is absent from every TruffleHog input e...; Review finding: [P1] Scan the complete pack before partitioning it — .agents/skills/autoreview/scripts/autoreview:5781 - [P2] Reject or document unused keyed overrides — .agents/s... (sha=67779a63b92b8d43dfa2a243c2dee1a87ed6847e)",
-      "expected_head_sha": "67779a63b92b8d43dfa2a243c2dee1a87ed6847e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T08:09:15.863Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bound-sleeping-reviewer",
-        "head_sha": "67779a63b92b8d43dfa2a243c2dee1a87ed6847e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128175:5385443900:2026-08-29T08:06:12Z:clawsweeper_auto_repair",
       "comment_id": "5385443900",
@@ -32203,6 +32170,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132595:5462624859:2026-08-29T13:16:05Z:re_review",
+      "comment_id": "5462624859",
+      "comment_version_key": "5462624859:2026-08-29T13:16:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132595#issuecomment-5462624859",
+      "comment_created_at": "2026-08-29T13:16:05Z",
+      "comment_updated_at": "2026-08-29T13:16:05Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132595,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T13:16:47.868Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-transport-uncertainty",
+        "head_sha": "d765e71b6698ac016ce416b75a130fe5c6abfe7f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
