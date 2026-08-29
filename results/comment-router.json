@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T15:37:49.764Z",
+  "updated_at": "2026-08-29T15:39:02.294Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112811:5461687287:2026-08-29T10:01:55Z:re_review",
-      "comment_id": "5461687287",
-      "comment_version_key": "5461687287:2026-08-29T10:01:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112811#issuecomment-5461687287",
-      "comment_created_at": "2026-08-29T10:01:55Z",
-      "comment_updated_at": "2026-08-29T10:01:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112811,
-      "author": "jimmypuckett",
-      "author_id": 3220069,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T10:02:46.186Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/msteams-multi-account-replacement-20260722",
-        "head_sha": "14f1771a14a5f9bba94bbda6eb10d4f674afb4c5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132536:5461689460:2026-08-29T10:02:28Z:clawsweeper_needs_human",
       "comment_id": "5461689460",
@@ -32446,6 +32399,39 @@
         "kind": "pull_request",
         "branch": "grok-remaining-resets-coupon",
         "head_sha": "76f001a4578f819f8c10826bc18e3b6a5c72cd11",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132055:5457027162:2026-08-29T15:38:12Z:clawsweeper_needs_human",
+      "comment_id": "5457027162",
+      "comment_version_key": "5457027162:2026-08-29T15:38:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132055#issuecomment-5457027162",
+      "comment_created_at": "2026-08-28T19:44:49Z",
+      "comment_updated_at": "2026-08-29T15:38:12Z",
+      "comment_body_sha256": "0d725ed4f88b6a092edacf1dff0c02bba3d4985573ea9b0bd643a1fe41007854",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132055,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally expands default group-turn activation for authorized LINE senders who quote one of the latest 500 Gateway-sent messages per account; older and pre-restart messag... (sha=176a11066ef9ff4051a580a79107ca775a61a032)",
+      "expected_head_sha": "176a11066ef9ff4051a580a79107ca775a61a032",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T15:39:02.294Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-quoted-bot-activation",
+        "head_sha": "176a11066ef9ff4051a580a79107ca775a61a032",
         "cluster_id": null,
         "job_path": null
       }
