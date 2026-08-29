@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T22:38:57.570Z",
+  "updated_at": "2026-08-29T22:39:00.093Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128249:5463938291:2026-08-29T17:50:05Z:re_review",
-      "comment_id": "5463938291",
-      "comment_version_key": "5463938291:2026-08-29T17:50:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128249#issuecomment-5463938291",
-      "comment_created_at": "2026-08-29T17:50:05Z",
-      "comment_updated_at": "2026-08-29T17:50:05Z",
-      "comment_body_sha256": "86d2031f695781f4b5b3ed03e8d186c2b71cad1ad68cf3432e201ec4e007535f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128249,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T17:50:51.338Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "gaoanze888/reasoning-inherited-visibility",
-        "head_sha": "a9cb7d39660ef61a2c905c490a9ddc61a21737cc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/remindctl:72:5334624429:2026-08-29T17:00:24Z:clawsweeper_needs_human",
       "comment_id": "5334624429",
@@ -32643,6 +32596,39 @@
         "kind": "pull_request",
         "branch": "codex/frv-slack-progress-contracts",
         "head_sha": "598ab18a238eb687a5f27850edb7688dee9dc118",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132813:5464514690:2026-08-29T22:38:15Z:clawsweeper_needs_human",
+      "comment_id": "5464514690",
+      "comment_version_key": "5464514690:2026-08-29T22:38:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132813#issuecomment-5464514690",
+      "comment_created_at": "2026-08-29T19:52:16Z",
+      "comment_updated_at": "2026-08-29T22:38:15Z",
+      "comment_body_sha256": "5a04eeeda1e0a793f1b2f3876b90299c592520afe56ee54a6643c2273631c0ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132813,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally fail-closed change leaves a managed Gateway stopped whenever a rollback build produces non-excluded tracked or untracked output; affected existing Git-install opera... (sha=84f1b22af0607f8ee670ede15ed53ce0b3414c53)",
+      "expected_head_sha": "84f1b22af0607f8ee670ede15ed53ce0b3414c53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T22:39:00.093Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/rollback-build-cleanliness",
+        "head_sha": "84f1b22af0607f8ee670ede15ed53ce0b3414c53",
         "cluster_id": null,
         "job_path": null
       }
