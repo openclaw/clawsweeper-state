@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98468",
+  "mode": "autonomous",
+  "run_id": "33240190255",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33240190255",
+  "head_sha": "e1eefe217304f0f510acb3890db1155cef61682e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98468.md",
+  "published_at": "2026-08-29T07:24:43.477Z",
+  "canonical": "#98468",
+  "canonical_issue": "#98468",
+  "canonical_pr": null,
+  "summary": "#98468 remains the canonical reproducible bug: its SCP owner call omits both the deadline and process-tree cleanup options. A narrow two-file repair is defined, but this worker cannot modify or validate the branch because its filesystem is read-only; the required sibling ../codex source is also unavailable for the mandatory Codex gate.",
+  "actions": [
+    {
+      "target": "#98468",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "A writable execution environment and the mandatory ../codex source checkout are required before making a Codex-gated code change and running the regression proof."
+    },
+    {
+      "target": "#98468",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Portable implementation handoff; no GitHub mutation is proposed."
+    },
+    {
+      "target": "#98141",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical contributor work; no closure or mutation is valid for an already-closed PR."
+    },
+    {
+      "target": "#101473",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical contributor work; no closure or mutation is valid for an already-closed PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
