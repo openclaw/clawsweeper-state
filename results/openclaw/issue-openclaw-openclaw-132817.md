@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-132817"
 mode: "autonomous"
-run_id: "33272333779"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33272333779"
-head_sha: "f8f467433af276bdf653e0243318f6abd19f1912"
-workflow_conclusion: "failure"
+run_id: "33273987112"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33273987112"
+head_sha: "8d11c21558ba90ac6812b80b95efd0dd9b0aa936"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-29T20:14:54.466Z"
-canonical: "https://github.com/openclaw/openclaw/issues/132817"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/132817"
+published_at: "2026-08-29T20:52:30.758Z"
+canonical: "#132817"
+canonical_issue: "#132817"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33272333779](https://github.com/openclaw/clawsweeper/actions/runs/33272333779)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33273987112](https://github.com/openclaw/clawsweeper/actions/runs/33273987112)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/132817
+Canonical: #132817
 
 ## Summary
 
-Implementation is blocked before code changes: the mandatory sibling ../codex source checkout is absent and this read-only worker cannot create it. A narrow, credited fix plan is prepared for #132817.
+#132817 remains the canonical open bug. Current source has the reported allowlist gap, but this read-only worker cannot create the required Codex sibling checkout, install dependencies, edit the branch, or run validation; an executable narrow fix artifact is provided.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Implementation is blocked before code changes: the mandatory sibling ../codex so
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #132817 | fix_needed | blocked | canonical | Do not alter source or claim sufficient proof until a writable repair workspace has the required ../codex checkout for direct protocol/runtime inspection. |
-| cluster:issue-openclaw-openclaw-132817 | build_fix_artifact | planned | canonical | The repair remains a small canonical-classification change with table-driven regression coverage. |
+| #132817 | fix_needed | blocked | canonical | A writable repair executor with the mandated sibling Codex checkout is required to apply and validate the focused fix. |
+| #80540 | keep_closed | skipped | related | Already closed context reference. |
 
 ## Needs Human
 
