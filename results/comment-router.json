@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T02:07:21.925Z",
+  "updated_at": "2026-08-29T02:07:32.995Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3516:5392108486:2026-08-28T22:09:25Z:clawsweeper_needs_human",
-      "comment_id": "5392108486",
-      "comment_version_key": "5392108486:2026-08-28T22:09:25Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3516#issuecomment-5392108486",
-      "comment_created_at": "2026-08-24T07:37:32Z",
-      "comment_updated_at": "2026-08-28T22:09:25Z",
-      "comment_body_sha256": "099b9cd59eedddc6ee87e01366673bfbb83e9f4de715679936ff4651a62a73f4",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3516,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and GitHub reports unstable mergeability, so its generated output should be refreshed against the current base before landing. (sha=2a93195d1ea6c0828d84f59a872dfb653cf4a6a4)",
-      "expected_head_sha": "2a93195d1ea6c0828d84f59a872dfb653cf4a6a4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T22:14:39.915Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/update-convex-ai-files",
-        "head_sha": "2a93195d1ea6c0828d84f59a872dfb653cf4a6a4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128345:5388114345:2026-08-28T22:11:51Z:clawsweeper_needs_human",
       "comment_id": "5388114345",
@@ -32887,6 +32854,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3260:5459690319:2026-08-29T02:06:53Z:clawsweeper_needs_human",
+      "comment_id": "5459690319",
+      "comment_version_key": "5459690319:2026-08-29T02:06:53Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3260#issuecomment-5459690319",
+      "comment_created_at": "2026-08-29T02:06:53Z",
+      "comment_updated_at": "2026-08-29T02:06:53Z",
+      "comment_body_sha256": "b9f6871392c53618f2f1580402fb10001fb6cc8a996397d406034b4837fe8f4c",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3260,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed owner persists a bearer token, reloads it at startup, and sends it through the production HTTP clie...; Review finding: [P1] Commit the endpoint only after the credential write succeeds — Sources/CodexBar/SettingsStore+RemoteCodexBar.swift:36-44 - [P2] Enforce the response limit whi... (sha=2a6111727ef646a9e70d6dbb0cc47079a01df643)",
+      "expected_head_sha": "2a6111727ef646a9e70d6dbb0cc47079a01df643",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T02:07:32.995Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/remote-codexbar-serve",
+        "head_sha": "2a6111727ef646a9e70d6dbb0cc47079a01df643",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
