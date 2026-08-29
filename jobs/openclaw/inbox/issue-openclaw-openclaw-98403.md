@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the nullable plugin-approval metadata contract for https://github.com/openclaw/openclaw/issues/98403. At the Gateway protocol schema boundary, accept explicit null only for metadata already handled as null/omitted by the plugin approval handler and canonical payload: pluginId, detail, severity, scope, toolName, toolCallId, allowedDecisions, agentId, sessionKey, and turn-source fields. Keep approvalReviewerDeviceIds, timeoutMs, and twoPhase strict. Add focused regression coverage that fails before the repair for explicit-null metadata and proves the handler can register the approval with canonical defaults; preserve rejection of invalid non-null values and unknown keys. Do not add config, fallbacks, or a parallel API. Treat https://github.com/openclaw/openclaw/pull/98404 and https://github.com/openclaw/openclaw/pull/103530 as closed source attempts, not branches to revive. Do not edit CHANGELOG.md; put release-note context in the PR body.
+Repair the Gateway protocol boundary for https://github.com/openclaw/openclaw/issues/98403. First add and run a focused failing regression against current main for plugin.approval.request carrying explicit null in the descriptive/routing metadata that the handler already types and normalizes as nullable (pluginId, severity, toolName, toolCallId, allowedDecisions, agentId, sessionKey, and turn-source fields; include detail or scope only if their current handler contract is verified as equivalent). Then align only those schema fields in packages/gateway-protocol/src/schema/plugin-approvals.ts, retaining required fields, closed-object behavior, invalid non-null values, and approvalReviewerDeviceIds validation. Add owner-boundary regression coverage in packages/gateway-protocol/src/plugin-approvals-validators.test.ts and run the direct Gateway handler test to ensure registration/routing remains intact. Treat https://github.com/openclaw/openclaw/pull/98404 and https://github.com/openclaw/openclaw/pull/103530 as closed unmerged reference attempts, not code to copy. Do not add configuration, protocol-version, persistence, or security-policy changes. Put user-visible release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
@@ -79,7 +79,7 @@ Validation:
 
 - node scripts/run-vitest.mjs packages/gateway-protocol/src/plugin-approvals-validators.test.ts
 - node scripts/run-vitest.mjs src/gateway/server-methods/plugin-approval.test.ts
-- git diff --check
+- node scripts/check-changed.mjs -- packages/gateway-protocol/src/schema/plugin-approvals.ts packages/gateway-protocol/src/plugin-approvals-validators.test.ts
 
 ## Operator Prompt
 
