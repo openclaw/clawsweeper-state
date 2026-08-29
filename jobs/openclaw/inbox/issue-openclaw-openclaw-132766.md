@@ -67,25 +67,26 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the outbound transcript-fence ownership invariant for https://github.com/openclaw/openclaw/issues/132766, preserving credit to the earlier related report https://github.com/openclaw/openclaw/issues/125885. A transcript mirror into destination session B must never carry an active writer fence from source session A. Audit every production no-argument getOwnedSessionTranscriptWriterFence use that feeds a durable append; propagate a fence only after comparing the full canonical destination scope, while keeping matching same-session writes fenced. Cover the generic and plugin-handled outbound mirrors, and keep source-reply/internal paths correct after the audit. Improve the session-rebound diagnostic so session-id, lifecycle-revision, and writer-run mismatches are distinguishable. Do not add configuration, retries of an already-sent payload, fallback writers, schema changes, or CHANGELOG.md edits; put release-note context in the PR body. Establish a failing regression before editing, then add boundary-level tests for source A to target B and for same-session preservation.
+Repair the cross-session transcript-fence leak reported at https://github.com/openclaw/openclaw/issues/132766. At every durable outbound mirror writer, request an inherited writer fence only with the fully resolved canonical destination scope (agent id, session id when known, session key, and store path), so an ambient run for session A cannot constrain an append to session B. Cover generic delivery, plugin-handled sends, and source-reply mirroring; audit the private WebChat persistence writer for the same invariant rather than assuming it is safe. Preserve the intentional post-send non-retry behavior, add distinct stable refusal diagnostics for session-id, lifecycle-revision, and writer-run mismatches if they can share the existing contract, and do not add configuration, schema, fallback, or channel-specific behavior. Establish a failing regression before editing and include release-note context in the PR body rather than editing CHANGELOG.md. Related context: https://github.com/openclaw/openclaw/issues/125885 was closed while the same defect remained; https://github.com/openclaw/openclaw/issues/122630 is adjacent but distinct.
 
 Likely files:
 
 - src/config/sessions/transcript-write-context.ts
-- src/config/sessions/transcript.ts
 - src/infra/outbound/deliver-transcript.ts
 - src/infra/outbound/outbound-send-service.ts
 - src/infra/outbound/source-reply-mirror.ts
-- src/gateway/internal-source-reply-persistence.ts
 - src/infra/outbound/deliver.test.ts
 - src/infra/outbound/outbound-send-service.test.ts
 - src/infra/outbound/source-reply-mirror.test.ts
+- src/config/sessions/transcript.ts
+- src/config/sessions/transcript.test.ts
 
 Validation:
 
 - pnpm test src/infra/outbound/deliver.test.ts
-- pnpm test src/infra/outbound/outbound-send-service.test.ts src/infra/outbound/source-reply-mirror.test.ts
-- pnpm check:changed -- src/config/sessions/transcript-write-context.ts src/config/sessions/transcript.ts src/infra/outbound/deliver-transcript.ts src/infra/outbound/outbound-send-service.ts src/infra/outbound/source-reply-mirror.ts src/gateway/internal-source-reply-persistence.ts
+- pnpm test src/infra/outbound/outbound-send-service.test.ts
+- pnpm test src/infra/outbound/source-reply-mirror.test.ts
+- pnpm test src/config/sessions/transcript.test.ts
 
 ## Operator Prompt
 
