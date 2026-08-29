@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T16:11:12.773Z",
+  "updated_at": "2026-08-29T16:11:16.122Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:86:5456403752:2026-08-29T11:07:11Z:clawsweeper_needs_human",
-      "comment_id": "5456403752",
-      "comment_version_key": "5456403752:2026-08-29T11:07:11Z",
-      "comment_url": "https://github.com/openclaw/krillswitch/pull/86#issuecomment-5456403752",
-      "comment_created_at": "2026-08-28T18:43:59Z",
-      "comment_updated_at": "2026-08-29T11:07:11Z",
-      "comment_body_sha256": "8d2913727e6dbaf583cb31605b00b6f034a92787cafa06d4f384f94a53f78087",
-      "repo": "openclaw/krillswitch",
-      "issue_number": 86,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep the auth schema generator aligned with Better Auth (P1)** - The PR raises the Worker runtime to better-auth 1.7.1, but the generator still invokes auth@1.6.30. The development guide promises a runtime-match...; Review finding: [P1] Keep the auth schema generator aligned with Better Auth — apps/api/package.json:22 - [P2] Document the production authentication upgrade — apps/api/package.js... (sha=121fe2ecf670d89342c1427d6c2e97d97bf1830a)",
-      "expected_head_sha": "121fe2ecf670d89342c1427d6c2e97d97bf1830a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T11:08:04.253Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/production-26f486ef68",
-        "head_sha": "121fe2ecf670d89342c1427d6c2e97d97bf1830a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabbox:1620:5461985094:2026-08-29T11:07:27Z:re_review",
       "comment_id": "5461985094",
@@ -32671,6 +32638,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132453:5463457860:2026-08-29T16:10:31Z:re_review",
+      "comment_id": "5463457860",
+      "comment_version_key": "5463457860:2026-08-29T16:10:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132453#issuecomment-5463457860",
+      "comment_created_at": "2026-08-29T16:10:31Z",
+      "comment_updated_at": "2026-08-29T16:10:31Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132453,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T16:11:14.393Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/provider-profile-usage",
+        "head_sha": "fd614bb350283521119917e10013edc85faeab5e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
