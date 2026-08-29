@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T12:45:42.284Z",
+  "updated_at": "2026-08-29T12:46:07.511Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131455:5461140069:2026-08-29T07:48:42Z:re_review",
-      "comment_id": "5461140069",
-      "comment_version_key": "5461140069:2026-08-29T07:48:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131455#issuecomment-5461140069",
-      "comment_created_at": "2026-08-29T07:48:42Z",
-      "comment_updated_at": "2026-08-29T07:48:42Z",
-      "comment_body_sha256": "10defec38b373d21132dc07124cddbb04e27fd8bd0d1b4c1e45dd80fd880bfa9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131455,
-      "author": "zenglingbiao",
-      "author_id": 290951975,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — addressed the p1 + medium security findings: the registry-global owner getter is removed; resolvesubagentrungatewaycaller(currententry) now threads the selected run's retained binding (fenced at registration, never replaced by a replacement gateway's activation) into steer/follow-up dispatch and fails closed when that binding is stale. the registry-internal agent.wait wrapper (completion waits) also prefers the waited-on run's bound resolver. updated tests bind the run exactly like production registration and drive b's real activatesubagentregistry, asserting the binding survives and b/generic see zero calls (red on unfixed sources, green with fix). merged current main; new head 1573ccb0d5. screenshot proof + transcripts on proof-assets-20260828, embedded in the pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T07:58:06.523Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-control-owner-gateway",
-        "head_sha": "1573ccb0d5c5310bee328871f92c8725253eced4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129120:5407334534:2026-08-29T07:50:42Z:clawsweeper_needs_human",
       "comment_id": "5407334534",
@@ -32091,6 +32044,33 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132588:5462490577:2026-08-29T12:45:28Z:clawsweeper_needs_human",
+      "comment_id": "5462490577",
+      "comment_version_key": "5462490577:2026-08-29T12:45:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132588#issuecomment-5462490577",
+      "comment_created_at": "2026-08-29T12:45:28Z",
+      "comment_updated_at": "2026-08-29T12:45:28Z",
+      "comment_body_sha256": "c84b16be84bfce3ebb9adb968f243f41c0afe3987583dddcd01fdfd5cf19bf9d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132588,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured exact-head check rollup still had required jobs in progress, so this review does not establish merge readiness. (sha=66228484377b088edf8eb7f781b5b7f585ffc19a)",
+      "expected_head_sha": "66228484377b088edf8eb7f781b5b7f585ffc19a",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-29T12:46:07.511Z",
+      "target": null
     }
   ]
 }
