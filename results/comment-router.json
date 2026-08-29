@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T23:12:40.659Z",
+  "updated_at": "2026-08-29T23:12:50.360Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5464024987:2026-08-29T18:08:43Z:re_review",
-      "comment_id": "5464024987",
-      "comment_version_key": "5464024987:2026-08-29T18:08:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5464024987",
-      "comment_created_at": "2026-08-29T18:08:43Z",
-      "comment_updated_at": "2026-08-29T18:08:43Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T18:09:28.156Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-usage-ui",
-        "head_sha": "03c04cc7336994f4a0eaee9ba0bea15ea28f0377",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132451:5464024984:2026-08-29T18:08:43Z:re_review",
       "comment_id": "5464024984",
@@ -32902,6 +32855,39 @@
         "kind": "pull_request",
         "branch": "test/oauth-credential-validation-coverage",
         "head_sha": "93d52128b21606468d302155e568f3775c2d2051",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129348:5411555180:2026-08-29T23:11:17Z:clawsweeper_needs_human",
+      "comment_id": "5411555180",
+      "comment_version_key": "5411555180:2026-08-29T23:11:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129348#issuecomment-5411555180",
+      "comment_created_at": "2026-08-25T14:04:02Z",
+      "comment_updated_at": "2026-08-29T23:11:17Z",
+      "comment_body_sha256": "db2a940a1490925dd50f333f1dae2064ab40a06b328b735a92101b036e802763",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129348,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bind VAPID-mismatch cleanup to the subscription owner (P1)** - The newly added mismatch branch calls push.web.unsubscribe with only the endpoint. That handler deletes by endpoint without receiving or checking th...; Review finding: [P1] Bind VAPID-mismatch cleanup to the subscription owner — ui/src/app/web-push.runtime.ts:142-143 - [medium] Endpoint-only unsubscribe bypasses binding checks —... (sha=0d35d004322bfc03468f165629b01cfa5604d628)",
+      "expected_head_sha": "0d35d004322bfc03468f165629b01cfa5604d628",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T23:12:50.360Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/push-notifications-for-permission-requests",
+        "head_sha": "0d35d004322bfc03468f165629b01cfa5604d628",
         "cluster_id": null,
         "job_path": null
       }
