@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T08:17:31.908Z",
+  "updated_at": "2026-08-29T08:19:43.140Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5337326679:2026-08-19T03:55:54Z:re_review",
-      "comment_id": "5337326679",
-      "comment_version_key": "5337326679:2026-08-19T03:55:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5337326679",
-      "comment_created_at": "2026-08-19T03:55:54Z",
-      "comment_updated_at": "2026-08-19T03:55:54Z",
-      "comment_body_sha256": "2008d7294f0590fdf890793610af29414894bb23efb5d16ab6697c2ea42244ea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T04:31:45.016Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5337570490:2026-08-19T04:34:01Z:re_review",
       "comment_id": "5337570490",
@@ -32520,6 +32493,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132385:5460568794:2026-08-29T08:18:34Z:clawsweeper_needs_human",
+      "comment_id": "5460568794",
+      "comment_version_key": "5460568794:2026-08-29T08:18:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132385#issuecomment-5460568794",
+      "comment_created_at": "2026-08-29T05:27:07Z",
+      "comment_updated_at": "2026-08-29T08:18:34Z",
+      "comment_body_sha256": "85c4844579142d1e8411322241a5e9d9779028a80aa33ea03cf4c89dd6b7ed4f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132385,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Immediate enforcement downgrades ACPX 0.13.2 and Crabline 0.1.19, temporarily losing accepted thinking-state synchronization and the newer macOS QA ACL/cancellation behavior. (sha=4f2d9836c15c9de4484638c887666d2a2525ac3b)",
+      "expected_head_sha": "4f2d9836c15c9de4484638c887666d2a2525ac3b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T08:19:43.140Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/dependency-age-compliance-cc4710",
+        "head_sha": "4f2d9836c15c9de4484638c887666d2a2525ac3b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
