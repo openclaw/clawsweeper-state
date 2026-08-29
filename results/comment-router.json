@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-29T04:38:26.820Z",
+  "updated_at": "2026-08-29T04:36:43.363Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110058:5004651694:2026-08-29T00:14:56Z:clawsweeper_needs_human",
+      "comment_id": "5004651694",
+      "comment_version_key": "5004651694:2026-08-29T00:14:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110058#issuecomment-5004651694",
+      "comment_created_at": "2026-07-17T15:08:44Z",
+      "comment_updated_at": "2026-08-29T00:14:56Z",
+      "comment_body_sha256": "f543d00dedade8df7c026f2dfab52f1d15d58948a6d574ba3e01153c67b2cfe2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110058,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The migration rewrites durable queue state and delivery identity, but its result against fetched current main has not been verified because the supplied test merge is stale and curren... (sha=1f229f2b1ebf38dece238f551c53ba1ab26b075a)",
+      "expected_head_sha": "1f229f2b1ebf38dece238f551c53ba1ab26b075a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T00:19:11.116Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-spool-legacy-payload-upgrade",
+        "head_sha": "1f229f2b1ebf38dece238f551c53ba1ab26b075a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110450:5010145071:2026-08-29T00:16:09Z:clawsweeper_needs_human",
       "comment_id": "5010145071",
@@ -32348,39 +32381,6 @@
       "status": "skipped",
       "processed_at": "2026-08-29T04:36:43.363Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132179:5458643595:2026-08-29T04:33:33Z:clawsweeper_needs_human",
-      "comment_id": "5458643595",
-      "comment_version_key": "5458643595:2026-08-29T04:33:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132179#issuecomment-5458643595",
-      "comment_created_at": "2026-08-28T23:00:55Z",
-      "comment_updated_at": "2026-08-29T04:33:33Z",
-      "comment_body_sha256": "b38f01b47696d022cb16b0817809aef84fc8bb4a2595ec35173b0f250be16a34",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132179,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix has a production net increase of 128 lines across metadata lifecycle, cache, and protocol-client code; regressions could apply a persisted auth profile to the wrong sessi... (sha=ad6ba5d3dcc76f7d8111970e8db7eac4c5f06d73)",
-      "expected_head_sha": "ad6ba5d3dcc76f7d8111970e8db7eac4c5f06d73",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T04:38:26.820Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/sad-lamport-afcef8",
-        "head_sha": "0cea7a1211ecff6da4d3c89200717839999322fe",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
