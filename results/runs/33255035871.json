@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-132597",
+  "mode": "autonomous",
+  "run_id": "33255035871",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33255035871",
+  "head_sha": "e1eefe217304f0f510acb3890db1155cef61682e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-132597.md",
+  "published_at": "2026-08-29T13:45:29.841Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/132597",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/132597",
+  "canonical_pr": null,
+  "summary": "Current local main structurally reproduces the reported ordering defect, but no executable repair can be produced: preflight main 149b15d8 is unavailable while local origin/main is 1ce4549d, GitHub recheck lacks GH_TOKEN, ../codex is absent despite the mandatory direct-source gate, and dependencies are absent (tsx module missing).",
+  "actions": [
+    {
+      "target": "#132597",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132597",
+      "candidate_fix": null,
+      "reason": "Refresh the preflight on current main and provide a writable checkout with sibling ../codex before opening the required new fix PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-132597",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132597",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a refreshed, Codex-gated executor, but cannot be validated or implemented in this read-only workspace."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable repair checkout with dependencies and the required sibling ../codex source, then refresh live GitHub state and recheck for an open matching PR before applying this artifact."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#132597",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
