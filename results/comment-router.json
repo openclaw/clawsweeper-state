@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T19:41:24.297Z",
+  "updated_at": "2026-08-29T19:43:23.117Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132582:5462988571:2026-08-29T14:33:19Z:re_review",
-      "comment_id": "5462988571",
-      "comment_version_key": "5462988571:2026-08-29T14:33:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132582#issuecomment-5462988571",
-      "comment_created_at": "2026-08-29T14:33:19Z",
-      "comment_updated_at": "2026-08-29T14:33:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132582,
-      "author": "TARSDrakon",
-      "author_id": 262872503,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T14:34:11.010Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "tars/fix-cli-timeout-hash-race",
-        "head_sha": "23649236ed1cea8c2cf9683ad016284434bfedbc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129504:5417088992:2026-08-29T14:33:42Z:clawsweeper_auto_repair",
       "comment_id": "5417088992",
@@ -33242,6 +33195,39 @@
         "kind": "pull_request",
         "branch": "fix/download-fail-closed-missing-blob",
         "head_sha": "669fe8c302b62abf8ecfa593f446ed3a82f6a916",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132453:5461072539:2026-08-29T19:42:26Z:clawsweeper_needs_human",
+      "comment_id": "5461072539",
+      "comment_version_key": "5461072539:2026-08-29T19:42:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132453#issuecomment-5461072539",
+      "comment_created_at": "2026-08-29T07:31:21Z",
+      "comment_updated_at": "2026-08-29T19:42:26Z",
+      "comment_body_sha256": "62b0e14086cd6b2f351606517214548104d4a39e9ef02e27638015c3cf34c29d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132453,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive provider-plugin usage context and gateway response fields need owner acceptance as a durable compatibility contract for external plugins and clients. (sha=8f0a84ccc2089d293b5e9bbf3d717ab3b9469c53)",
+      "expected_head_sha": "8f0a84ccc2089d293b5e9bbf3d717ab3b9469c53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T19:43:23.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/provider-profile-usage",
+        "head_sha": "8f0a84ccc2089d293b5e9bbf3d717ab3b9469c53",
         "cluster_id": null,
         "job_path": null
       }
