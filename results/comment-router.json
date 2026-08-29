@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T01:20:29.490Z",
+  "updated_at": "2026-08-29T01:21:00.617Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132122:5457940599:2026-08-28T21:27:16Z:clawsweeper_needs_human",
-      "comment_id": "5457940599",
-      "comment_version_key": "5457940599:2026-08-28T21:27:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132122#issuecomment-5457940599",
-      "comment_created_at": "2026-08-28T21:27:16Z",
-      "comment_updated_at": "2026-08-28T21:27:16Z",
-      "comment_body_sha256": "70f83006e142675f57bf0e236344a1c0dac69ea6f2aa9891834f6d6e069c7afa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132122,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve an omitted host policy on native replacements (P1)** - For a store-bound request with no proposed hosts, Android turns the absence into [] and serializes it. The Gateway persists that defined empty list...; Review finding: [P1] Preserve an omitted host policy on native replacements — apps/android/app/src/main/java/ai/openclaw/app/chat/ChatQuestion.kt:51-53 - [high] Native submission... (sha=63477765ee649f4d3aebad2a47792ab24722d2f9)",
-      "expected_head_sha": "63477765ee649f4d3aebad2a47792ab24722d2f9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T21:28:18.354Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/agent-secret-requests-4ae354",
-        "head_sha": "63477765ee649f4d3aebad2a47792ab24722d2f9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131788:5453261561:2026-08-28T21:27:39Z:clawsweeper_needs_human",
       "comment_id": "5453261561",
@@ -32815,6 +32782,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132032:5459450541:2026-08-29T01:20:15Z:re_review",
+      "comment_id": "5459450541",
+      "comment_version_key": "5459450541:2026-08-29T01:20:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132032#issuecomment-5459450541",
+      "comment_created_at": "2026-08-29T01:20:15Z",
+      "comment_updated_at": "2026-08-29T01:20:15Z",
+      "comment_body_sha256": "e4717bc3a0de524df6d442cabc9bf5bfc375f7ea13ae78d4da62786cabbf7448",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132032,
+      "author": "pengzh1",
+      "author_id": 24854675,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T01:20:58.704Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/requester-settle-wake-dedup",
+        "head_sha": "c9567ee1c7cf18bbdbdf092536c22c4b8e2e3873",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
