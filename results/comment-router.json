@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T14:06:10.375Z",
+  "updated_at": "2026-08-29T14:06:19.856Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113089:5303542485:2026-08-15T18:05:34Z:re_review",
-      "comment_id": "5303542485",
-      "comment_version_key": "5303542485:2026-08-15T18:05:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113089#issuecomment-5303542485",
-      "comment_created_at": "2026-08-15T18:05:34Z",
-      "comment_updated_at": "2026-08-15T18:05:34Z",
-      "comment_body_sha256": "60d85abe74b424e66f87f3e9a1e7588d03ff44887364b4b7e464a4c49606d6d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113089,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T08:45:14.053Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:94871:4765797070:2026-06-22T07:12:26Z:re_review",
       "comment_id": "4765797070",
@@ -32207,6 +32180,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132613:5462852104:2026-08-29T14:05:28Z:clawsweeper_needs_human",
+      "comment_id": "5462852104",
+      "comment_version_key": "5462852104:2026-08-29T14:05:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132613#issuecomment-5462852104",
+      "comment_created_at": "2026-08-29T14:05:28Z",
+      "comment_updated_at": "2026-08-29T14:05:28Z",
+      "comment_body_sha256": "e6be2cf7a4af2ae8e07d90be1c1888a1e1838746e6e36620511b6fc8bed44c6a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132613,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owners in extensions/msteams/src/messenger.ts and extensions/msteams/src/send.ts are exercised only through mocked media loading an... (sha=c0f226699fec5e97c8341577aa976df4a1348dab)",
+      "expected_head_sha": "c0f226699fec5e97c8341577aa976df4a1348dab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T14:06:19.856Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-native-voice-activity",
+        "head_sha": "c0f226699fec5e97c8341577aa976df4a1348dab",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
