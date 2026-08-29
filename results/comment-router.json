@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T21:43:40.596Z",
+  "updated_at": "2026-08-29T21:43:44.976Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5463487632:2026-08-29T16:16:41Z:re_review",
-      "comment_id": "5463487632",
-      "comment_version_key": "5463487632:2026-08-29T16:16:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5463487632",
-      "comment_created_at": "2026-08-29T16:16:41Z",
-      "comment_updated_at": "2026-08-29T16:16:41Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T16:22:25.812Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-usage-ui",
-        "head_sha": "c3cf2d75d0aece1f4f6f64be1a85002151e02b3c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132451:5461037497:2026-08-29T16:21:38Z:clawsweeper_auto_repair",
       "comment_id": "5461037497",
@@ -32886,6 +32839,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:194:5464079520:2026-08-29T21:14:14Z:clawsweeper_needs_human",
+      "comment_id": "5464079520",
+      "comment_version_key": "5464079520:2026-08-29T21:14:14Z",
+      "comment_url": "https://github.com/openclaw/clawpatch/pull/194#issuecomment-5464079520",
+      "comment_created_at": "2026-08-29T18:20:10Z",
+      "comment_updated_at": "2026-08-29T21:14:14Z",
+      "comment_body_sha256": "e98c7bb1193a18f31239e8d85dc7babd098e5e342b746c26f6017ce5517e0323",
+      "repo": "openclaw/clawpatch",
+      "issue_number": 194,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A healthy but unusually slow go list will now abandon authoritative package metadata after two minutes and use heuristic file mapping unless the operator raises CLAWPATCH_GO_LIST_TIME... (sha=a9f002b3b64a4a8c7823f68f2a4dba66f404c630)",
+      "expected_head_sha": "a9f002b3b64a4a8c7823f68f2a4dba66f404c630",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T21:43:44.976Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f002-go-list-timeout",
+        "head_sha": "a9f002b3b64a4a8c7823f68f2a4dba66f404c630",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
