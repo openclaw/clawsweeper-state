@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T06:26:24.200Z",
+  "updated_at": "2026-08-29T06:26:35.594Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132179:5458780433:2026-08-29T02:40:26Z:re_review",
-      "comment_id": "5458780433",
-      "comment_version_key": "5458780433:2026-08-29T02:40:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132179#issuecomment-5458780433",
-      "comment_created_at": "2026-08-28T23:22:14Z",
-      "comment_updated_at": "2026-08-29T02:40:26Z",
-      "comment_body_sha256": "69c718b35726bc573989ac38f5a46047ea51d540bd7ea74f397dac7b31627d3a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132179,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T02:41:07.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/sad-lamport-afcef8",
-        "head_sha": "2da9e79e812cdefd4ab81bf89eb44bb77980cac1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130958:5459837422:2026-08-29T02:40:28Z:re_review",
       "comment_id": "5459837422",
@@ -31743,6 +31696,39 @@
         "kind": "pull_request",
         "branch": "fix/pathname-hash-identity",
         "head_sha": "dcbf6c778f719922fe5bb350496aa1d0eca40f3e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131465:5448066094:2026-08-29T06:09:19Z:clawsweeper_needs_human",
+      "comment_id": "5448066094",
+      "comment_version_key": "5448066094:2026-08-29T06:09:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131465#issuecomment-5448066094",
+      "comment_created_at": "2026-08-28T03:33:36Z",
+      "comment_updated_at": "2026-08-29T06:09:19Z",
+      "comment_body_sha256": "7bdaccdd6ec92550240308b4b9a8e752193b498036727e08175370bb4abcd88d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131465,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This modifies a hosted automation lifecycle that downloads and operates an external gateway; the package version and SHA-256 are pinned, but the reviewer could not independently reope... (sha=b6c5f1ef8c22b7f20213dadb71f1c533c47197e3)",
+      "expected_head_sha": "b6c5f1ef8c22b7f20213dadb71f1c533c47197e3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T06:26:35.594Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/openshell-fixture-bootstrap",
+        "head_sha": "b6c5f1ef8c22b7f20213dadb71f1c533c47197e3",
         "cluster_id": null,
         "job_path": null
       }
