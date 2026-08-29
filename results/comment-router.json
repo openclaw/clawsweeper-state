@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T07:33:31.009Z",
+  "updated_at": "2026-08-29T07:33:31.141Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132076:5460111335:2026-08-29T03:41:39Z:re_review",
-      "comment_id": "5460111335",
-      "comment_version_key": "5460111335:2026-08-29T03:41:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132076#issuecomment-5460111335",
-      "comment_created_at": "2026-08-29T03:41:39Z",
-      "comment_updated_at": "2026-08-29T03:41:39Z",
-      "comment_body_sha256": "85d63a2e1530c6d5d68245c4ba1db38ecc2af627188979789c8b1436132accf3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132076,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T03:52:01.659Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/competent-matsumoto-0135de",
-        "head_sha": "cd1abd46dc2fe98d1d6f9e2d4327da22bcfa6055",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90033:4617178305:2026-08-29T03:41:52Z:clawsweeper_auto_repair",
       "comment_id": "4617178305",
@@ -32069,6 +32022,39 @@
         "kind": "pull_request",
         "branch": "codex/test-ci-linux-fetch-clock",
         "head_sha": "56421bb5d82ae351f8f37a6c842da4eceba86847",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132463:5461077594:2026-08-29T07:32:39Z:clawsweeper_needs_human",
+      "comment_id": "5461077594",
+      "comment_version_key": "5461077594:2026-08-29T07:32:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132463#issuecomment-5461077594",
+      "comment_created_at": "2026-08-29T07:32:39Z",
+      "comment_updated_at": "2026-08-29T07:32:39Z",
+      "comment_body_sha256": "b0277603abf430d4a863b065f83c249974fff75edebd1ca6ed02b564a747f87b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132463,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Redact stored outcomes before printing diagnostics (P1)** - A failed review stores raw String(error) text, but this new output serializes the entire outcome map directly to CI logs. That bypasses the event redac...; Review finding: [P1] Redact stored outcomes before printing diagnostics — src/skills/workshop/experience-review.live.test.ts:235 - [medium] Stored review errors bypass diagnostic... (sha=a4b1eb62af9ab7a29b94968b3fb0149f0c5ed4e9)",
+      "expected_head_sha": "a4b1eb62af9ab7a29b94968b3fb0149f0c5ed4e9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T07:33:31.141Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/frv-workshop-fixture",
+        "head_sha": "a4b1eb62af9ab7a29b94968b3fb0149f0c5ed4e9",
         "cluster_id": null,
         "job_path": null
       }
