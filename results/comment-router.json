@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T01:21:57.499Z",
+  "updated_at": "2026-08-29T01:22:01.904Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130902:5457829511:2026-08-28T21:14:36Z:re_review",
-      "comment_id": "5457829511",
-      "comment_version_key": "5457829511:2026-08-28T21:14:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130902#issuecomment-5457829511",
-      "comment_created_at": "2026-08-28T21:14:36Z",
-      "comment_updated_at": "2026-08-28T21:14:36Z",
-      "comment_body_sha256": "35d51c57251597a60a8cb491a7262ad346597ab0edd5ddd059cede85c8cc254b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130902,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T21:29:18.593Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/installer-dependency-policy",
-        "head_sha": "48c169514b1ee984cb089e45e8dff7bf462133ee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131991:5456016081:2026-08-28T21:28:30Z:clawsweeper_needs_human",
       "comment_id": "5456016081",
@@ -32843,6 +32796,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132254:5459455956:2026-08-29T01:21:12Z:clawsweeper_needs_human",
+      "comment_id": "5459455956",
+      "comment_version_key": "5459455956:2026-08-29T01:21:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132254#issuecomment-5459455956",
+      "comment_created_at": "2026-08-29T01:21:12Z",
+      "comment_updated_at": "2026-08-29T01:21:12Z",
+      "comment_body_sha256": "cb320f2f03bac8e493492a38f67d132449f0e583fd0e3fff6aaa4dadaf41d1a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132254,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the supplied Docker output covers Vitest and typechecks only. It does not show a real setup flow persisting a r...; Review finding: [P1] Clear the resolver-selected default account — src/channels/plugins/setup-helpers.ts:165 - [high] Account-scoped credential remains active — src/channels/plugi... (sha=5e55beda5fc005f6b64e53b13f4631ca6479d0ca)",
+      "expected_head_sha": "5e55beda5fc005f6b64e53b13f4631ca6479d0ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T01:22:01.904Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/channels-setup-credential-rotation",
+        "head_sha": "5e55beda5fc005f6b64e53b13f4631ca6479d0ca",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
