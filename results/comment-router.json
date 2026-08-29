@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T11:23:22.338Z",
+  "updated_at": "2026-08-29T11:24:07.342Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119516:5441553457:2026-08-27T15:41:29Z:re_review",
-      "comment_id": "5441553457",
-      "comment_version_key": "5441553457:2026-08-27T15:41:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119516#issuecomment-5441553457",
-      "comment_created_at": "2026-08-27T15:41:29Z",
-      "comment_updated_at": "2026-08-27T15:41:29Z",
-      "comment_body_sha256": "1dee154286dbb9705ff8a3c85b37316c0a104626816f9a2569ca89753dc8b054",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119516,
-      "author": "zyw02",
-      "author_id": 59604424,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T06:49:40.591Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119516:5454104835:2026-08-28T14:59:40Z:re_review",
       "comment_id": "5454104835",
@@ -32490,6 +32463,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132555:5461994990:2026-08-29T11:23:21Z:clawsweeper_needs_human",
+      "comment_id": "5461994990",
+      "comment_version_key": "5461994990:2026-08-29T11:23:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132555#issuecomment-5461994990",
+      "comment_created_at": "2026-08-29T11:09:21Z",
+      "comment_updated_at": "2026-08-29T11:23:21Z",
+      "comment_body_sha256": "9dec5f6ba685d24f4403667b27b51317a52b5763826a84e51798cf8f0ba053ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132555,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Three exact-head package and guard checks were still in progress in the supplied snapshot; merge after they complete green. (sha=d13f8286f96431e6963ae660c71f688bb2a71394)",
+      "expected_head_sha": "d13f8286f96431e6963ae660c71f688bb2a71394",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T11:24:07.342Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/postinstall-low-memory-oom",
+        "head_sha": "d13f8286f96431e6963ae660c71f688bb2a71394",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
