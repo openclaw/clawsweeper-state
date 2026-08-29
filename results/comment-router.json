@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T14:27:02.591Z",
+  "updated_at": "2026-08-29T14:28:02.183Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/summarize:391:5345161743:2026-08-29T08:54:55Z:clawsweeper_needs_human",
-      "comment_id": "5345161743",
-      "comment_version_key": "5345161743:2026-08-29T08:54:55Z",
-      "comment_url": "https://github.com/steipete/summarize/pull/391#issuecomment-5345161743",
-      "comment_created_at": "2026-08-19T16:40:38Z",
-      "comment_updated_at": "2026-08-29T08:54:55Z",
-      "comment_body_sha256": "41ec7d7ac8aa53e2322998559b6e48fdfacc86cb90f7e21ce3f350d158a554ae",
-      "repo": "steipete/summarize",
-      "issue_number": 391,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the contributor patch has no actionable review finding and awaits ordinary maintainer merge review. (sha=d88c576bfb657a671d8f07010ec6befe995746e9)",
-      "expected_head_sha": "d88c576bfb657a671d8f07010ec6befe995746e9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T08:55:42.577Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clip-lone-surrogate",
-        "head_sha": "d88c576bfb657a671d8f07010ec6befe995746e9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:77184:4369228990:2026-08-29T08:55:02Z:clawsweeper_auto_repair",
       "comment_id": "4369228990",
@@ -32231,6 +32198,39 @@
       "status": "skipped",
       "processed_at": "2026-08-29T14:27:02.591Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132627:5462959730:2026-08-29T14:27:19Z:clawsweeper_needs_human",
+      "comment_id": "5462959730",
+      "comment_version_key": "5462959730:2026-08-29T14:27:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132627#issuecomment-5462959730",
+      "comment_created_at": "2026-08-29T14:27:19Z",
+      "comment_updated_at": "2026-08-29T14:27:19Z",
+      "comment_body_sha256": "0e1f44036a116940317a8dcc4382bd3db7cd53c7a27c091879c84632b8b0cebb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132627,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds 17 production lines. The shared formatter avoids duplicating the exact notice across the two subprocess owners, but there is no evident net-neutral way to preserve t... (sha=a67c2b071726cbb1d3898aca75b78dbae84f41ec)",
+      "expected_head_sha": "a67c2b071726cbb1d3898aca75b78dbae84f41ec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T14:28:02.183Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-128967-search-stderr-loss",
+        "head_sha": "a67c2b071726cbb1d3898aca75b78dbae84f41ec",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
