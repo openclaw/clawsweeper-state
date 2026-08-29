@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T03:35:33.917Z",
+  "updated_at": "2026-08-29T03:35:35.103Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112623:5458718848:2026-08-28T23:12:12Z:re_review",
-      "comment_id": "5458718848",
-      "comment_version_key": "5458718848:2026-08-28T23:12:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112623#issuecomment-5458718848",
-      "comment_created_at": "2026-08-28T23:12:12Z",
-      "comment_updated_at": "2026-08-28T23:12:12Z",
-      "comment_body_sha256": "41a5bce15135b1c13196e2bfe5bdc2d4ff8eb6d68b7777f9ec1850c35101bb56",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112623,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T23:21:22.182Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "spike/recently-completed-subagents-prompt",
-        "head_sha": "cf0504c22a347e975d66663dff0656ce31a2e340",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112623:5080083550:2026-07-25T18:42:23Z:re_review",
       "comment_id": "5080083550",
@@ -32949,6 +32902,39 @@
         "kind": "pull_request",
         "branch": "automation/design-system-audit",
         "head_sha": "a11090d4bb105a0012c674895b32a92ff1c62391",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3164:5389652288:2026-08-29T03:31:46Z:clawsweeper_needs_human",
+      "comment_id": "5389652288",
+      "comment_version_key": "5389652288:2026-08-29T03:31:46Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3164#issuecomment-5389652288",
+      "comment_created_at": "2026-08-24T01:22:46Z",
+      "comment_updated_at": "2026-08-29T03:31:46Z",
+      "comment_body_sha256": "b0c8a77d1ecad034bbe15df2431976808a73295174df6391a20f952208d81d47",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3164,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Landing commits CodexBar to maintaining a new notch-specific hover surface, shortcut lifecycle, and ten persisted preferences across supported macOS display configurations; screenshot... (sha=08719ad78af3a5fb2703eb83742e3c44f8022da0)",
+      "expected_head_sha": "08719ad78af3a5fb2703eb83742e3c44f8022da0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T03:35:35.103Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "notch-usage-overlay",
+        "head_sha": "08719ad78af3a5fb2703eb83742e3c44f8022da0",
         "cluster_id": null,
         "job_path": null
       }
