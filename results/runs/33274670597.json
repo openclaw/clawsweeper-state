@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-132766",
+  "mode": "autonomous",
+  "run_id": "33274670597",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33274670597",
+  "head_sha": "8d11c21558ba90ac6812b80b95efd0dd9b0aa936",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-132766.md",
+  "published_at": "2026-08-29T21:13:09.987Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/132766",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/132766",
+  "canonical_pr": null,
+  "summary": "Current main d3c07b02 still has four zero-argument transcript-fence lookups. Removing those early ambient-fence propagations lets the canonical transcript owner resolve and apply a fence only for the destination scope. Implementation is blocked because this worker cannot write the required regression or branch in the read-only checkout; ../codex is also unavailable for the repository-required direct Codex-source check.",
+  "actions": [
+    {
+      "target": "#121003",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Already merged; no mutation is allowed or needed."
+    },
+    {
+      "target": "#122630",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Adjacent session-lifecycle history, not the same root cause."
+    },
+    {
+      "target": "#125885",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Closed predecessor of the active canonical issue."
+    },
+    {
+      "target": "#132766",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "The bug is narrowly repairable, but this worker cannot perform required writes or complete the repository's direct Codex-source gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-132766",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "A writable executor can create the one authorized narrow fix PR."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
