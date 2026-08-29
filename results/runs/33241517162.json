@@ -1,0 +1,112 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130144",
+  "mode": "autonomous",
+  "run_id": "33241517162",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33241517162",
+  "head_sha": "e1eefe217304f0f510acb3890db1155cef61682e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130144.md",
+  "published_at": "2026-08-29T08:04:11.430Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/130144",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/130144",
+  "canonical_pr": null,
+  "summary": "#130144 remains the canonical open repair request, but no implementation artifact is safe to execute: the required direct sibling ../codex source check cannot run because ../codex is absent and this read-only worker cannot create it. Current main source shows the shared maxLineChars setting reaches the Telegram compositor while Telegram’s preview renderer still calls a fixed 300-unit clipper.",
+  "actions": [
+    {
+      "target": "#87795",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#130144",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure action is valid."
+    },
+    {
+      "target": "#111944",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#130144",
+      "candidate_fix": null,
+      "reason": "Same Telegram progress area, distinct failure mode and repair owner."
+    },
+    {
+      "target": "#126477",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#130144",
+      "candidate_fix": null,
+      "reason": "Already closed and outside this Telegram repair."
+    },
+    {
+      "target": "#126480",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#130144",
+      "candidate_fix": null,
+      "reason": "Already merged; no action is valid."
+    },
+    {
+      "target": "#130144",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130144",
+      "candidate_fix": null,
+      "reason": "Repository policy prohibits a code-change verdict or executable fix plan without direct ../codex source inspection."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-130144",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130144",
+      "candidate_fix": null,
+      "reason": "Blocked pending direct inspection of the required ../codex source."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "planned": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Restore or provide read access to the required ../codex sibling source, then rerun the direct Codex protocol/runtime inspection before creating a fix PR."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#130144",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
