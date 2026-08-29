@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T01:09:16.132Z",
+  "updated_at": "2026-08-29T01:09:34.420Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131503:5457629035:2026-08-28T20:51:17Z:re_review",
-      "comment_id": "5457629035",
-      "comment_version_key": "5457629035:2026-08-28T20:51:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131503#issuecomment-5457629035",
-      "comment_created_at": "2026-08-28T20:51:17Z",
-      "comment_updated_at": "2026-08-28T20:51:17Z",
-      "comment_body_sha256": "debced7e16c953924d41672e9d1f21c6b67fbac3f4b72de21b3cf04a238d5c1a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131503,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T21:01:36.094Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cli-startup-preparation-a0c9da",
-        "head_sha": "aaeabd3ae38bfe71dd1babb59f1d81cba8821386",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131503:5448434448:2026-08-28T21:00:34Z:clawsweeper_needs_human",
       "comment_id": "5448434448",
@@ -32888,6 +32841,39 @@
         "kind": "pull_request",
         "branch": "steipete/frosty-mclean-5c961d",
         "head_sha": "9a4ba8366d7906cdcbc879f8163a2b3d6613b6e4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132215:5458962445:2026-08-29T01:06:32Z:clawsweeper_needs_human",
+      "comment_id": "5458962445",
+      "comment_version_key": "5458962445:2026-08-29T01:06:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132215#issuecomment-5458962445",
+      "comment_created_at": "2026-08-28T23:53:16Z",
+      "comment_updated_at": "2026-08-29T01:06:32Z",
+      "comment_body_sha256": "de6cc7442b9b353c57356fd243362ed62e21ace5cba3509f78b7ae5483a8d50f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132215,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes release-candidate assertions; exact-head candidate validation should still demonstrate beta selector and candidate-version metadata behavior before merge. (sha=1197ab29da2991ed91309a3389f66fe065a3e1f9)",
+      "expected_head_sha": "1197ab29da2991ed91309a3389f66fe065a3e1f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T01:09:34.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/beta-candidate-test-expectations",
+        "head_sha": "fce106e70853bce42c409643f512aee654162080",
         "cluster_id": null,
         "job_path": null
       }
