@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T07:48:45.167Z",
+  "updated_at": "2026-08-29T07:48:45.424Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132266:5460234876:2026-08-29T04:06:16Z:re_review",
-      "comment_id": "5460234876",
-      "comment_version_key": "5460234876:2026-08-29T04:06:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132266#issuecomment-5460234876",
-      "comment_created_at": "2026-08-29T04:06:16Z",
-      "comment_updated_at": "2026-08-29T04:06:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132266,
-      "author": "MonkeyLeeT",
-      "author_id": 6754057,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T04:07:00.404Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-codex-hidden-tool-progress",
-        "head_sha": "f7b1b0a96efd0e03eaba5ae5080f15bd78aba40e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131901:5455251380:2026-08-29T04:06:13Z:clawsweeper_auto_repair",
       "comment_id": "5455251380",
@@ -32139,6 +32092,39 @@
         "kind": "pull_request",
         "branch": "codex/frv-release-fixtures",
         "head_sha": "7782b888917ca564f088a637aa204f752d158c71",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132480:5461137343:2026-08-29T07:48:01Z:clawsweeper_needs_human",
+      "comment_id": "5461137343",
+      "comment_version_key": "5461137343:2026-08-29T07:48:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132480#issuecomment-5461137343",
+      "comment_created_at": "2026-08-29T07:48:01Z",
+      "comment_updated_at": "2026-08-29T07:48:01Z",
+      "comment_body_sha256": "ad844dd3d105d3f92c19d9d1f8b964fcce6131d7cd9a2811cc136902b22b6be2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132480,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - macOS BSD tar support is backed by the PR’s reported live evidence, but could not be independently re-run in this Linux-only review environment. (sha=946172eb2801112b5f7414857db8d5529729333b)",
+      "expected_head_sha": "946172eb2801112b5f7414857db8d5529729333b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T07:48:45.424Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/frv-portable-package-xattrs",
+        "head_sha": "946172eb2801112b5f7414857db8d5529729333b",
         "cluster_id": null,
         "job_path": null
       }
