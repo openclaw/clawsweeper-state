@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-130144",
+  "mode": "autonomous",
+  "run_id": "33244662422",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33244662422",
+  "head_sha": "e1eefe217304f0f510acb3890db1155cef61682e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-130144.md",
+  "published_at": "2026-08-29T09:20:01.840Z",
+  "canonical": "#130144",
+  "canonical_issue": "#130144",
+  "canonical_pr": null,
+  "summary": "#130144 is a confirmed narrow Telegram rendering defect: the shared, configured progress-line budget is bypassed by Telegram’s fixed 300-unit clipping. A new fix PR is appropriate, but this read-only checkout has neither dependencies nor build output, so required regression validation and Telegram Test Server proof cannot run or be published.",
+  "actions": [
+    {
+      "target": "#130144",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#130144",
+      "candidate_fix": null,
+      "reason": "Filesystem access is read-only, so no branch or patch can be created. The checkout is shallow, has no node_modules or dist/entry.js, and lacks the runtime prerequisites for mandatory Telegram Test Server proof; pnpm docs:list also fails because Corepack cannot create its cache on the read-only filesystem."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
