@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T22:23:41.299Z",
+  "updated_at": "2026-08-29T22:24:15.858Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132687:5463367739:2026-08-29T17:07:55Z:clawsweeper_needs_human",
-      "comment_id": "5463367739",
-      "comment_version_key": "5463367739:2026-08-29T17:07:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132687#issuecomment-5463367739",
-      "comment_created_at": "2026-08-29T15:52:08Z",
-      "comment_updated_at": "2026-08-29T17:07:55Z",
-      "comment_body_sha256": "fdc0ade2864bc2b3c322f191059c9d436969cd96097808caf090067ee6a4bbc7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132687,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Each Matrix QA fixture now performs two additional password-login requests before scenarios begin, so a regression in that fixture path would affect release-verification availability... (sha=7c92608184e3c3806c9b675a01bba1aac6487be5)",
-      "expected_head_sha": "7c92608184e3c3806c9b675a01bba1aac6487be5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T17:19:02.294Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/frv-matrix-sync-owner",
-        "head_sha": "7c92608184e3c3806c9b675a01bba1aac6487be5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132692:5463397419:2026-08-29T17:09:47Z:clawsweeper_needs_human",
       "comment_id": "5463397419",
@@ -32666,6 +32633,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127280:5465225991:2026-08-29T22:23:24Z:re_review",
+      "comment_id": "5465225991",
+      "comment_version_key": "5465225991:2026-08-29T22:23:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127280#issuecomment-5465225991",
+      "comment_created_at": "2026-08-29T22:23:24Z",
+      "comment_updated_at": "2026-08-29T22:23:24Z",
+      "comment_body_sha256": "15ac071680b5926321a5bbd23b692d8a2f02c94a8d11194004ec2b96af756b72",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127280,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T22:24:13.319Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/matrix-qa-29",
+        "head_sha": "0d6fc80a62b6822814dabf44fd73d8f6e2fed50d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
