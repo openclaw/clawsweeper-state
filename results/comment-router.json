@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T11:11:32.692Z",
+  "updated_at": "2026-08-29T11:13:24.688Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132338:5460808563:2026-08-29T06:26:31Z:re_review",
-      "comment_id": "5460808563",
-      "comment_version_key": "5460808563:2026-08-29T06:26:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132338#issuecomment-5460808563",
-      "comment_created_at": "2026-08-29T06:26:31Z",
-      "comment_updated_at": "2026-08-29T06:26:31Z",
-      "comment_body_sha256": "66f8ecf920406c524415743c4616bce7fb8904305bdf9eb4029aa1c48e3e7371",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132338,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T06:38:49.433Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-rerun-write-once",
-        "head_sha": "f76ab070c9a8cec865a28651c6214b681fea126c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132338:5460210825:2026-08-29T06:37:57Z:clawsweeper_needs_human",
       "comment_id": "5460210825",
@@ -32544,6 +32497,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132083:5457527689:2026-08-29T11:12:39Z:clawsweeper_needs_human",
+      "comment_id": "5457527689",
+      "comment_version_key": "5457527689:2026-08-29T11:12:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132083#issuecomment-5457527689",
+      "comment_created_at": "2026-08-28T20:39:32Z",
+      "comment_updated_at": "2026-08-29T11:12:39Z",
+      "comment_body_sha256": "42603b5c3db8d89cf9c683e376b1312f3213edafe554037b839bb04ec42e2cbc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132083,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The implementation adds 21 net production lines; keep this one shared reader rather than growing separate emoji conversions at each inbound consumer. (sha=4101ceca541be7f8593482c0b1ed06b4b25643c0)",
+      "expected_head_sha": "4101ceca541be7f8593482c0b1ed06b4b25643c0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T11:13:24.688Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-inbound-emoji-placeholder",
+        "head_sha": "4101ceca541be7f8593482c0b1ed06b4b25643c0",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
