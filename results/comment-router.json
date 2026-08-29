@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T09:24:29.277Z",
+  "updated_at": "2026-08-29T09:25:50.997Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:163:5460602497:2026-08-29T05:35:40Z:clawsweeper_needs_human",
-      "comment_id": "5460602497",
-      "comment_version_key": "5460602497:2026-08-29T05:35:40Z",
-      "comment_url": "https://github.com/openclaw/gitcrawl/pull/163#issuecomment-5460602497",
-      "comment_created_at": "2026-08-29T05:35:40Z",
-      "comment_updated_at": "2026-08-29T05:35:40Z",
-      "comment_body_sha256": "c1dee401b5b923437a24ee4773cb5c74bf0d40d10406ee2330155bfb5003bd76",
-      "repo": "openclaw/gitcrawl",
-      "issue_number": 163,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owners are portable refresh, portable Git execution, and runtime-mirror promotion, but the supplied body explicitly says...; Review finding: [P2] Reject credentials in portable remote URLs — internal/cli/portable_owner.go:203-210 - [medium] Portable refresh accepts command-line credentials — internal/cl... (sha=dbeee5bb37415d15302f1310d3238bface4d1a1e)",
-      "expected_head_sha": "dbeee5bb37415d15302f1310d3238bface4d1a1e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T05:36:23.417Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/portable-refresh-safety-20260829",
-        "head_sha": "dbeee5bb37415d15302f1310d3238bface4d1a1e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:92230:5177354801:2026-08-04T09:50:29Z:re_review",
       "comment_id": "5177354801",
@@ -32491,6 +32458,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132431:5461536383:2026-08-29T09:24:57Z:re_review",
+      "comment_id": "5461536383",
+      "comment_version_key": "5461536383:2026-08-29T09:24:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132431#issuecomment-5461536383",
+      "comment_created_at": "2026-08-29T09:24:57Z",
+      "comment_updated_at": "2026-08-29T09:24:57Z",
+      "comment_body_sha256": "4d505d38bc0d963b70f9df069ba188ba513c2553674d5d731f64e0adba65b3ac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132431,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T09:25:46.825Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/model-e2e-repairs-20260829",
+        "head_sha": "5914b71f8106473707d6b8112025804aaa774116",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
