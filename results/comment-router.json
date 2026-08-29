@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T02:39:54.348Z",
+  "updated_at": "2026-08-29T02:39:56.480Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123075:5365798661:2026-08-21T05:58:31Z:re_review",
-      "comment_id": "5365798661",
-      "comment_version_key": "5365798661:2026-08-21T05:58:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123075#issuecomment-5365798661",
-      "comment_created_at": "2026-08-21T05:58:31Z",
-      "comment_updated_at": "2026-08-21T05:58:31Z",
-      "comment_body_sha256": "71b7b821550399695d4258c4758bbb6c0c94361c2950441ca2bc7f41ad202a33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123075,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T22:37:58.529Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123075:5366362754:2026-08-21T07:05:13Z:re_review",
       "comment_id": "5366362754",
@@ -32990,6 +32963,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132286:5459831365:2026-08-29T02:39:12Z:clawsweeper_needs_human",
+      "comment_id": "5459831365",
+      "comment_version_key": "5459831365:2026-08-29T02:39:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132286#issuecomment-5459831365",
+      "comment_created_at": "2026-08-29T02:39:12Z",
+      "comment_updated_at": "2026-08-29T02:39:12Z",
+      "comment_body_sha256": "2fc86950bbe8cc4ec70a11807b0264028a7302ed339f1efa367cec97c993eec3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132286,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Disabling every RPM repository makes the setup depend on the exact NodeSource-generated repository id and on every Node.js RPM dependency already being installed or available there; t... (sha=4427f5c780f12750a8f9117aad5083e3b5fc4e16)",
+      "expected_head_sha": "4427f5c780f12750a8f9117aad5083e3b5fc4e16",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T02:39:56.480Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/installer-nodesource-rpm",
+        "head_sha": "4427f5c780f12750a8f9117aad5083e3b5fc4e16",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
