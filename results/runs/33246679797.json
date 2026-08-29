@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-70634",
+  "mode": "autonomous",
+  "run_id": "33246679797",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33246679797",
+  "head_sha": "e1eefe217304f0f510acb3890db1155cef61682e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-70634.md",
+  "published_at": "2026-08-29T10:13:22.142Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/70634",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/70634",
+  "canonical_pr": null,
+  "summary": "#70634 remains the canonical narrow bug: inter-session provenance reaches the embedded runner but is currently ignored by lane priority selection, so agent-loop work shares foreground priority with external user work. A two-file owner-boundary repair and regression are specified below. Local implementation and execution-order validation are blocked because this worker has a read-only checkout; the mandatory sibling ../codex source is also unavailable for the repository’s Codex gate.",
+  "actions": [
+    {
+      "target": "#70634",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Implementation is narrowly specified but cannot be performed or locally validated in this read-only worker."
+    },
+    {
+      "target": "#75299",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Related scheduling-policy work, not a replacement for the provenance-classification repair."
+    },
+    {
+      "target": "#79589",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Separate product-policy discussion remains open."
+    },
+    {
+      "target": "#80199",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#79589",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure action is valid."
+    },
+    {
+      "target": "#84575",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent session-admission defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-70634",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#70634",
+      "candidate_fix": null,
+      "reason": "Executor should implement the narrow artifact on clawsweeper/issue-openclaw-openclaw-70634."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 4,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

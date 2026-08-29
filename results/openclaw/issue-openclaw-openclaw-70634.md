@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-70634"
 mode: "autonomous"
-run_id: "33246150691"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33246150691"
+run_id: "33246679797"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33246679797"
 head_sha: "e1eefe217304f0f510acb3890db1155cef61682e"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-29T10:03:21.091Z"
+published_at: "2026-08-29T10:13:22.142Z"
 canonical: "https://github.com/openclaw/openclaw/issues/70634"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/70634"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33246150691](https://github.com/openclaw/clawsweeper/actions/runs/33246150691)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33246679797](https://github.com/openclaw/clawsweeper/actions/runs/33246679797)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/70634
 
 ## Summary
 
-#70634 remains the canonical, narrowly repairable provenance-classification defect on main bb2f3a5bf8868da1c43d104566412476cf8ad580. Implementation is blocked: the checkout is read-only, dependencies (tsx) are absent, and the required sibling ../codex source checkout is unavailable.
+#70634 remains the canonical narrow bug: inter-session provenance reaches the embedded runner but is currently ignored by lane priority selection, so agent-loop work shares foreground priority with external user work. A two-file owner-boundary repair and regression are specified below. Local implementation and execution-order validation are blocked because this worker has a read-only checkout; the mandatory sibling ../codex source is also unavailable for the repository’s Codex gate.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/70634
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #70634 | fix_needed | blocked | canonical | Provision a writable checkout with dependencies and the required sibling Codex source, then apply the narrow repair artifact. |
-| cluster:issue-openclaw-openclaw-70634 | build_fix_artifact | planned | canonical | Ready for a provisioned executor; implementation remains blocked in this read-only checkout. |
-| #75299 | keep_related | planned | related | Related scheduler policy work, not a fix for #70634's producer classification. |
-| #79589 | keep_related | planned | related | Distinct remaining work and maintainer policy decision. |
-| #80199 | keep_closed | skipped | superseded | Historical context only; no action on a closed PR. |
-| #84575 | keep_independent | planned | independent | Separate session-admission defect. |
+| #70634 | fix_needed | blocked | canonical | Implementation is narrowly specified but cannot be performed or locally validated in this read-only worker. |
+| #75299 | keep_related | planned | related | Related scheduling-policy work, not a replacement for the provenance-classification repair. |
+| #79589 | keep_related | planned | related | Separate product-policy discussion remains open. |
+| #80199 | keep_closed | skipped | superseded | Historical context only; no closure action is valid. |
+| #84575 | keep_independent | planned | independent | Independent session-admission defect. |
+| cluster:issue-openclaw-openclaw-70634 | build_fix_artifact | planned |  | Executor should implement the narrow artifact on clawsweeper/issue-openclaw-openclaw-70634. |
 
 ## Needs Human
 
