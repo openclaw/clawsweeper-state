@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T20:37:32.171Z",
+  "updated_at": "2026-08-29T20:38:07.015Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132664:5463257149:2026-08-29T15:29:09Z:clawsweeper_needs_human",
-      "comment_id": "5463257149",
-      "comment_version_key": "5463257149:2026-08-29T15:29:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132664#issuecomment-5463257149",
-      "comment_created_at": "2026-08-29T15:29:09Z",
-      "comment_updated_at": "2026-08-29T15:29:09Z",
-      "comment_body_sha256": "fdf3bcc91f6c09199263f86bc021e4e10ae1841d5362753a390b5d66971535db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132664,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep native Codex lifecycle events private (P1)** - Removing the marker makes normalized command, file, MCP, and web-search events reach the shared channel handler, which forwards every unhidden start/update to...; Review finding: [P1] Keep native Codex lifecycle events private — extensions/codex/src/app-server/event-projector-events.ts:122-124 - [P1] Keep dynamic tool lifecycle events priva... (sha=8cbedebf00bcb8333a25363391972c9b13430d85)",
-      "expected_head_sha": "8cbedebf00bcb8333a25363391972c9b13430d85",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T15:29:52.790Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/restore-codex-tool-progress",
-        "head_sha": "8cbedebf00bcb8333a25363391972c9b13430d85",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132567:5462297775:2026-08-29T15:29:17Z:clawsweeper_auto_repair",
       "comment_id": "5462297775",
@@ -32982,6 +32949,53 @@
         "kind": "pull_request",
         "branch": "fix/vitest-shutdown-profiler-routing",
         "head_sha": "e5fa6d1ee9c020bc2a4cb2896f828b5e6e80c328",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128905:5464753856:2026-08-29T20:37:23Z:re_review",
+      "comment_id": "5464753856",
+      "comment_version_key": "5464753856:2026-08-29T20:37:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128905#issuecomment-5464753856",
+      "comment_created_at": "2026-08-29T20:37:23Z",
+      "comment_updated_at": "2026-08-29T20:37:23Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128905,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T20:38:04.909Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/127583-sessions-cleanup-all-agents",
+        "head_sha": "c84baf4b2d480e1043238a0a0ee61590b4494e61",
         "cluster_id": null,
         "job_path": null
       },
