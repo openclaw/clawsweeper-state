@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T16:40:37.054Z",
+  "updated_at": "2026-08-29T16:40:47.884Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132542:5462161109:2026-08-29T11:36:31Z:re_review",
-      "comment_id": "5462161109",
-      "comment_version_key": "5462161109:2026-08-29T11:36:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132542#issuecomment-5462161109",
-      "comment_created_at": "2026-08-29T11:36:31Z",
-      "comment_updated_at": "2026-08-29T11:36:31Z",
-      "comment_body_sha256": "1db2a003c02c1248b7aeee38c176d25e68b88e1e673c79651072d179f67feb9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132542,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T11:37:10.243Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/live-cli-fixture-contracts",
-        "head_sha": "bb745d8935de486e5ed70435ff852164416898d6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-08-29T11:29:42Z:clawsweeper_needs_human",
       "comment_id": "5365906478",
@@ -32526,6 +32479,39 @@
         "kind": "pull_request",
         "branch": "automation/design-system-audit",
         "head_sha": "a11090d4bb105a0012c674895b32a92ff1c62391",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132682:5463356698:2026-08-29T16:40:01Z:clawsweeper_needs_human",
+      "comment_id": "5463356698",
+      "comment_version_key": "5463356698:2026-08-29T16:40:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132682#issuecomment-5463356698",
+      "comment_created_at": "2026-08-29T15:49:49Z",
+      "comment_updated_at": "2026-08-29T16:40:01Z",
+      "comment_body_sha256": "4757a5bb84c95894e957c286a558b9d7479f4094e83c006c7e430f3f3839000e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132682,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the linter used by CI; the supplied exact-head check snapshot still has in-progress jobs, so merge should wait for their completion. (sha=1af7b632e7a18217a6039a57224f52503a38614c)",
+      "expected_head_sha": "1af7b632e7a18217a6039a57224f52503a38614c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T16:40:47.884Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/determined-yonath-5ff336",
+        "head_sha": "1af7b632e7a18217a6039a57224f52503a38614c",
         "cluster_id": null,
         "job_path": null
       }
