@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T14:19:23.763Z",
+  "updated_at": "2026-08-29T14:20:02.029Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:77184:5461373482:2026-08-29T08:45:31Z:re_review",
-      "comment_id": "5461373482",
-      "comment_version_key": "5461373482:2026-08-29T08:45:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/77184#issuecomment-5461373482",
-      "comment_created_at": "2026-08-29T08:45:31Z",
-      "comment_updated_at": "2026-08-29T08:45:31Z",
-      "comment_body_sha256": "120b24c79f76c93a9aa3e0ad26ba9d725e0843cc0b317623ec850c834805a427",
-      "repo": "openclaw/openclaw",
-      "issue_number": 77184,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the p1 finding is addressed by redesign: the raw `statussummary`/`sessionstatus`/`heartbeatstatus` re-exports are gone; the entrypoint now defines bounded sdk-owned projections (`statussessionrow`, `statussessionsprojection`, `statusheartbeat`) with a compile-time host-assignability contract in the test (no `unknown` casts). head `e06332c90de` is a single squashed commit rebased on current main; pr body carries the built-dist external strict consumer proof",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T08:50:40.006Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/76759-export-status-types",
-        "head_sha": "e06332c90de0fb7096d95b3e96d8186aeb5689d9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94871:4749942672:2026-08-29T08:44:00Z:clawsweeper_auto_repair",
       "comment_id": "4749942672",
@@ -32250,6 +32203,39 @@
         "kind": "pull_request",
         "branch": "openclaw/vito-vacinc-issue-132423",
         "head_sha": "4526bd41be4d4f1dc16bc4eddd73394c1f904044",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131785:5453431592:2026-08-29T14:19:22Z:clawsweeper_auto_repair",
+      "comment_id": "5453431592",
+      "comment_version_key": "5453431592:2026-08-29T14:19:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131785#issuecomment-5453431592",
+      "comment_created_at": "2026-08-28T13:59:52Z",
+      "comment_updated_at": "2026-08-29T14:19:22Z",
+      "comment_body_sha256": "7da56a1d46f9b70700a6c07833b340817cba02ca0229b396229f7319aa86a4c6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131785,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=15c0bb49c0913ea6b98d0f0b5c288d3de512f287)",
+      "expected_head_sha": "15c0bb49c0913ea6b98d0f0b5c288d3de512f287",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T14:20:02.029Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-test-gateway-client-cleanup-20260828",
+        "head_sha": "15c0bb49c0913ea6b98d0f0b5c288d3de512f287",
         "cluster_id": null,
         "job_path": null
       }
