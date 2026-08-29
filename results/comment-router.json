@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T04:28:38.655Z",
+  "updated_at": "2026-08-29T04:29:20.051Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127005:5458951551:2026-08-28T23:51:14Z:re_review",
-      "comment_id": "5458951551",
-      "comment_version_key": "5458951551:2026-08-28T23:51:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127005#issuecomment-5458951551",
-      "comment_created_at": "2026-08-28T23:51:14Z",
-      "comment_updated_at": "2026-08-28T23:51:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127005,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T23:51:53.789Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-frozen-evidence-compat",
-        "head_sha": "30a906ede687815d8fd446493ff3e64d65072dab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127002:5458951458:2026-08-28T23:51:13Z:re_review",
       "comment_id": "5458951458",
@@ -32811,6 +32764,39 @@
         "kind": "pull_request",
         "branch": "fix/workshop-action-unconfirmed",
         "head_sha": "e99f9b51924c3d3e94eb39c2dbf2bde440d09235",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131973:5455795668:2026-08-29T04:28:14Z:clawsweeper_needs_human",
+      "comment_id": "5455795668",
+      "comment_version_key": "5455795668:2026-08-29T04:28:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131973#issuecomment-5455795668",
+      "comment_created_at": "2026-08-28T17:43:12Z",
+      "comment_updated_at": "2026-08-29T04:28:14Z",
+      "comment_body_sha256": "4410a7a5befe11ae42468528383ee4455bac7002463b498da54689358c1a7283",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131973,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds about 138 production lines to a path that deletes ephemeral session context; any future divergence between prompt classification and terminal consumption could silen... (sha=cf1bb6076d312334e6e3ca932ac1230043f217c5)",
+      "expected_head_sha": "cf1bb6076d312334e6e3ca932ac1230043f217c5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T04:29:20.051Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-131855",
+        "head_sha": "cf1bb6076d312334e6e3ca932ac1230043f217c5",
         "cluster_id": null,
         "job_path": null
       }
