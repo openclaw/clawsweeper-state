@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-29T00:05:48.036Z",
+  "updated_at": "2026-08-29T00:06:28.417Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132038:5457465085:2026-08-28T20:32:22Z:re_review",
-      "comment_id": "5457465085",
-      "comment_version_key": "5457465085:2026-08-28T20:32:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132038#issuecomment-5457465085",
-      "comment_created_at": "2026-08-28T20:32:22Z",
-      "comment_updated_at": "2026-08-28T20:32:22Z",
-      "comment_body_sha256": "360c705e350343299c98a12053488e1895f05866bdc285b3eee12dfe44946ed1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132038,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-28T20:33:09.418Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/quizzical-faraday-47eda7",
-        "head_sha": "5c21ea01e687e0111bb45b061265acd8ad35b533",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112214:5457340661:2026-08-28T20:18:24Z:re_review",
       "comment_id": "5457340661",
@@ -32688,6 +32641,39 @@
         "kind": "pull_request",
         "branch": "steipete/busy-satoshi-363ec0",
         "head_sha": "8f0087d59da3ad91492c46c8a76de19ee5b94562",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123052:5277867012:2026-08-29T00:05:30Z:clawsweeper_needs_human",
+      "comment_id": "5277867012",
+      "comment_version_key": "5277867012:2026-08-29T00:05:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123052#issuecomment-5277867012",
+      "comment_created_at": "2026-08-13T08:22:37Z",
+      "comment_updated_at": "2026-08-29T00:05:30Z",
+      "comment_body_sha256": "db5a0e7e918e551afd3d6fa3cd788390191188b064e6afab9b0eb634567a6285",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123052,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head CI gate is failed; supplied context attributes it to a base-wide UI-pages ratchet, but this review could not inspect the remote job logs. (sha=bc487f00f3cf749aebd01b932705e8dd8f3c082a)",
+      "expected_head_sha": "bc487f00f3cf749aebd01b932705e8dd8f3c082a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T00:06:28.417Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/provider-routing-aug13",
+        "head_sha": "bc487f00f3cf749aebd01b932705e8dd8f3c082a",
         "cluster_id": null,
         "job_path": null
       }
