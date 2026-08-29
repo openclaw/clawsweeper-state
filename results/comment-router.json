@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T07:34:01.684Z",
+  "updated_at": "2026-08-29T07:34:05.738Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109581:4998752669:2026-08-29T03:43:22Z:clawsweeper_needs_human",
-      "comment_id": "4998752669",
-      "comment_version_key": "4998752669:2026-08-29T03:43:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109581#issuecomment-4998752669",
-      "comment_created_at": "2026-07-17T03:41:26Z",
-      "comment_updated_at": "2026-08-29T03:43:22Z",
-      "comment_body_sha256": "a6e7a951bc23ff68d31529315cd44fbdebb785a17aea591c7976f672e6d674e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109581,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The copied controlled-server transcript is useful signal, but its untracked five-second override cannot prove the stale head preserves...; Review finding: [P1] Honor the caller retry budget — packages/ai/src/providers/openai-chatgpt-responses.ts:385 - [P1] Protect cached socket ownership — packages/ai/src/providers/o... (sha=2b86ebfadbbeec52063ce703fc0cea382b93cff6)",
-      "expected_head_sha": "2b86ebfadbbeec52063ce703fc0cea382b93cff6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T03:52:09.259Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-109566-bound-openai-chatgpt-responses-ws",
-        "head_sha": "2b86ebfadbbeec52063ce703fc0cea382b93cff6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111452:5016499867:2026-08-29T03:39:50Z:clawsweeper_auto_repair",
       "comment_id": "5016499867",
@@ -32072,6 +32039,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132447:5460931297:2026-08-29T07:33:18Z:clawsweeper_needs_human",
+      "comment_id": "5460931297",
+      "comment_version_key": "5460931297:2026-08-29T07:33:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132447#issuecomment-5460931297",
+      "comment_created_at": "2026-08-29T06:56:38Z",
+      "comment_updated_at": "2026-08-29T07:33:18Z",
+      "comment_body_sha256": "01fc87a19b0ee008ae3a8c814127b693c826e2b2a2ebf58e3ed0b2ef5d3117a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132447,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the physical-completion boundary that releases worker capacity; an unrepresented Node event ordering could still cause premature release or retention, although the IPC/ex... (sha=81fda09b70c24ea2905998e543766f2adcd65ac6)",
+      "expected_head_sha": "81fda09b70c24ea2905998e543766f2adcd65ac6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T07:34:05.738Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-owned-worker-ipc-completion",
+        "head_sha": "81fda09b70c24ea2905998e543766f2adcd65ac6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
