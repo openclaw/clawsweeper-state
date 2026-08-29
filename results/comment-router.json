@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T18:36:11.387Z",
+  "updated_at": "2026-08-29T18:36:12.416Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130420:5431467333:2026-08-29T13:22:14Z:clawsweeper_auto_repair",
-      "comment_id": "5431467333",
-      "comment_version_key": "5431467333:2026-08-29T13:22:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130420#issuecomment-5431467333",
-      "comment_created_at": "2026-08-26T21:43:06Z",
-      "comment_updated_at": "2026-08-29T13:22:14Z",
-      "comment_body_sha256": "8c677f5fe93669ad329bcf5a86ba3f042a8fc53bd04ecda4b26ec1352e917828",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130420,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=6dfd4dbbbbadf788abe2dd58a70a1c2c1fe18fe2)",
-      "expected_head_sha": "6dfd4dbbbbadf788abe2dd58a70a1c2c1fe18fe2",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-29T13:26:29.620Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/process-poll-nondestructive-drain",
-        "head_sha": "6dfd4dbbbbadf788abe2dd58a70a1c2c1fe18fe2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130551:5433168007:2026-08-29T13:22:12Z:clawsweeper_needs_human",
       "comment_id": "5433168007",
@@ -32843,6 +32810,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ask-molty:15:5464152387:2026-08-29T18:35:22Z:clawsweeper_needs_human",
+      "comment_id": "5464152387",
+      "comment_version_key": "5464152387:2026-08-29T18:35:22Z",
+      "comment_url": "https://github.com/openclaw/ask-molty/pull/15#issuecomment-5464152387",
+      "comment_created_at": "2026-08-29T18:35:22Z",
+      "comment_updated_at": "2026-08-29T18:35:22Z",
+      "comment_body_sha256": "d9452f1735a3d585e5497430aaeec8992a14c8e1e21d715ec57c20f2f90ae2a3",
+      "repo": "openclaw/ask-molty",
+      "issue_number": 15,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The timer is cleared once response headers arrive, so a response body that stalls afterward remains unbounded; this is an unchanged scope limit rather than an introduced regression. (sha=73f0f09e879502a1199321932841f7cf31e35f3f)",
+      "expected_head_sha": "73f0f09e879502a1199321932841f7cf31e35f3f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T18:36:12.416Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f005-retrieval-fetch-abort",
+        "head_sha": "73f0f09e879502a1199321932841f7cf31e35f3f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
