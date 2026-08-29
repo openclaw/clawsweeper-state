@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T18:36:22.754Z",
+  "updated_at": "2026-08-29T18:37:14.138Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130877:5437893744:2026-08-29T13:20:40Z:clawsweeper_auto_repair",
-      "comment_id": "5437893744",
-      "comment_version_key": "5437893744:2026-08-29T13:20:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130877#issuecomment-5437893744",
-      "comment_created_at": "2026-08-27T10:46:24Z",
-      "comment_updated_at": "2026-08-29T13:20:40Z",
-      "comment_body_sha256": "122cb2d5fdc77b835cc2909f5e83074b21235bfca058cbd041eeedfed9f520d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130877,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7af821ff60711a18544e29ae65d77b329ebead91)",
-      "expected_head_sha": "7af821ff60711a18544e29ae65d77b329ebead91",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T13:26:29.620Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/trajectory-sqlite-byte-budget-127433",
-        "head_sha": "7af821ff60711a18544e29ae65d77b329ebead91",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131023:5442973963:2026-08-29T13:24:21Z:clawsweeper_needs_human",
       "comment_id": "5442973963",
@@ -32843,6 +32810,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/imsg:239:5464157302:2026-08-29T18:36:25Z:re_review",
+      "comment_id": "5464157302",
+      "comment_version_key": "5464157302:2026-08-29T18:36:25Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/239#issuecomment-5464157302",
+      "comment_created_at": "2026-08-29T18:36:25Z",
+      "comment_updated_at": "2026-08-29T18:36:25Z",
+      "comment_body_sha256": "6fc7387f72b614c8c5c4621eacf699c874777f8c2c047e33a19d3e2763ce618a",
+      "repo": "openclaw/imsg",
+      "issue_number": 239,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T18:37:11.972Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/poll-caption-status",
+        "head_sha": "d2bb193a9f0d3db88b6b9c7548607a1677e2596f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
