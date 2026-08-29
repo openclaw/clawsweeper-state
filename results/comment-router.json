@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T23:23:53.837Z",
+  "updated_at": "2026-08-29T23:24:31.423Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132763:5464070511:2026-08-29T18:18:10Z:clawsweeper_needs_human",
-      "comment_id": "5464070511",
-      "comment_version_key": "5464070511:2026-08-29T18:18:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132763#issuecomment-5464070511",
-      "comment_created_at": "2026-08-29T18:18:10Z",
-      "comment_updated_at": "2026-08-29T18:18:10Z",
-      "comment_body_sha256": "28735bb93de56ab08f6378528850e37fc8a6d7960b9cfaaed23ca2225410b4d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132763,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the Review file view, but the supplied Chromium scenario mounts it with synthetic content and mocked save/fetch callbacks;...; Review finding: [P1] Do not load remote images from reviewed files — ui/src/pages/chat/components/chat-sidebar-file-view.ts:178-182 - [medium] Reviewed Markdown can trigger remote... (sha=e166102721d4f0682a29989f35eb5bcbfe228a16)",
-      "expected_head_sha": "e166102721d4f0682a29989f35eb5bcbfe228a16",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T18:18:58.569Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/feature-review-markdown-preview",
-        "head_sha": "e166102721d4f0682a29989f35eb5bcbfe228a16",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawgo:6:5464071468:2026-08-29T18:18:22Z:clawsweeper_needs_human",
       "comment_id": "5464071468",
@@ -32785,6 +32752,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112214:5465476248:2026-08-29T23:23:43Z:re_review",
+      "comment_id": "5465476248",
+      "comment_version_key": "5465476248:2026-08-29T23:23:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112214#issuecomment-5465476248",
+      "comment_created_at": "2026-08-29T23:23:43Z",
+      "comment_updated_at": "2026-08-29T23:23:43Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112214,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T23:24:29.334Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/memory-search-timeout-fallback",
+        "head_sha": "5363a6fdcdf506a17a099a080822b3511742c5ce",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
