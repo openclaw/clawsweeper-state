@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123815",
+  "mode": "autonomous",
+  "run_id": "33236041897",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33236041897",
+  "head_sha": "b1d6b8513271c3ac492237e863ba17784b12a897",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123815.md",
+  "published_at": "2026-08-29T05:41:09.213Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/123815",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123815",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before editing: current main sends a gateway-local staged path to external-native native JSON-RPC, but this environment has neither a supported signal-cli source/help nor a runnable separate-UID daemon to prove data-URI acceptance, filename semantics, or request limits. Focused tests also cannot start because dependencies are absent, and the required sibling ../codex source is unavailable in the read-only sandbox.",
+  "actions": [
+    {
+      "target": "#123815",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#123815",
+      "candidate_fix": null,
+      "reason": "A narrow repair is plausible, but the job requires direct supported signal-cli contract inspection and a real separate-UID daemon proof before editing; both are unavailable."
+    },
+    {
+      "target": "#124105",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#123815",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation is valid for this context PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-123815",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#123815",
+      "candidate_fix": null,
+      "reason": "Do not open a PR until the supported native signal-cli attachment contract and live separate-UID behavior are directly proven."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable, network-enabled environment with the supported signal-cli source/help and a real external-native daemon running under a different operating-system user, then rerun this job. The evidence must establish native data-URI syntax, filename handling, and request-size limits before a data-URI repair is authorized."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#123815",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
