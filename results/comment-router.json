@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T21:31:18.061Z",
+  "updated_at": "2026-08-29T21:31:22.661Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128738:5396130534:2026-08-29T15:59:20Z:clawsweeper_needs_human",
-      "comment_id": "5396130534",
-      "comment_version_key": "5396130534:2026-08-29T15:59:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128738#issuecomment-5396130534",
-      "comment_created_at": "2026-08-24T13:47:23Z",
-      "comment_updated_at": "2026-08-29T15:59:20Z",
-      "comment_body_sha256": "f249f17170dd6cb05e2c275aa6090fc2ae6fbbfc6d78ad36f01f146f08e3e671",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128738,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds production code (+52 net); the growth appears necessary to select, validate, and carry one workspace owner across existing discovery/status/note consumers, but no net... (sha=ede0637c3ee9d3c11792ce05849d89b4e329e46d)",
-      "expected_head_sha": "ede0637c3ee9d3c11792ce05849d89b4e329e46d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T16:11:11.104Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/channel-setup-explicit-owner-20260824",
-        "head_sha": "ede0637c3ee9d3c11792ce05849d89b4e329e46d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132450:5461028552:2026-08-29T15:59:58Z:clawsweeper_auto_repair",
       "comment_id": "5461028552",
@@ -32846,6 +32813,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132854:5464995229:2026-08-29T21:30:37Z:clawsweeper_needs_human",
+      "comment_id": "5464995229",
+      "comment_version_key": "5464995229:2026-08-29T21:30:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132854#issuecomment-5464995229",
+      "comment_created_at": "2026-08-29T21:30:37Z",
+      "comment_updated_at": "2026-08-29T21:30:37Z",
+      "comment_body_sha256": "749768eaa5351443878951833ac3900b7321d17d12791f1cc28a018a178c9a2c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132854,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the runtime identity resolver in src/version.ts, consumed by Gateway status, restart-sentinel finalization, and SQLite dia... (sha=58c5242c97f4130ba2ae1693380af9dc93798a36)",
+      "expected_head_sha": "58c5242c97f4130ba2ae1693380af9dc93798a36",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T21:31:22.661Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/runtime-loaded-build-identity-20260829",
+        "head_sha": "58c5242c97f4130ba2ae1693380af9dc93798a36",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
