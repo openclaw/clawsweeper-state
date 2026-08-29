@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-119737",
+  "mode": "autonomous",
+  "run_id": "33263540122",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33263540122",
+  "head_sha": "db14db010bf3044be85f25fe40a587a5ca77523a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119737.md",
+  "published_at": "2026-08-29T16:56:05.485Z",
+  "canonical": "#119737",
+  "canonical_issue": "#96692",
+  "canonical_pr": "#119737",
+  "summary": "#119737 remains the canonical repair path for #96692. It needs a contributor-branch repair artifact: current main still falls back from confirmed Slack placement to the requested thread for media receipts, while the latest hydrated ClawSweeper review identifies the remaining private file-share confirmation gap. No close or merge is authorized.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/96692",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119737",
+      "candidate_fix": "#119737",
+      "reason": "The issue is not closable until a repaired candidate has current validation and lands; it stays associated with the canonical repair."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/119737",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119737",
+      "candidate_fix": null,
+      "reason": "Repair the same-repository writable branch, preserving the existing PR and issue linkage."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/119737",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119737",
+      "candidate_fix": null,
+      "reason": "The job explicitly requires a repair_contributor_branch artifact for this adopted PR."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
