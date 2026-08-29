@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T22:53:46.828Z",
+  "updated_at": "2026-08-29T22:54:41.816Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128249:5406907355:2026-08-25T07:20:00Z:re_review",
-      "comment_id": "5406907355",
-      "comment_version_key": "5406907355:2026-08-25T07:20:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128249#issuecomment-5406907355",
-      "comment_created_at": "2026-08-25T07:20:00Z",
-      "comment_updated_at": "2026-08-25T07:20:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128249,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T17:59:04.448Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128249:5409587797:2026-08-25T11:17:28Z:re_review",
       "comment_id": "5409587797",
@@ -32753,6 +32726,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:117:5465353592:2026-08-29T22:53:52Z:clawsweeper_needs_human",
+      "comment_id": "5465353592",
+      "comment_version_key": "5465353592:2026-08-29T22:53:52Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/117#issuecomment-5465353592",
+      "comment_created_at": "2026-08-29T22:53:52Z",
+      "comment_updated_at": "2026-08-29T22:53:52Z",
+      "comment_body_sha256": "b965917b1565cf6a6f66b2e739f823ddeaf6ad3137daeed4f884bb623204ea87",
+      "repo": "openclaw/ocm",
+      "issue_number": 117,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing custom --manifest-url or alternate registry inputs whose decoded JSON exceeds 64 MiB will change from parsing successfully to failing at runtime; maintainers should explicitl... (sha=dfb553d829d8be1427be09a222d76fbf9d57c389)",
+      "expected_head_sha": "dfb553d829d8be1427be09a222d76fbf9d57c389",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T22:54:41.816Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f003-fetch-json-byte-cap",
+        "head_sha": "dfb553d829d8be1427be09a222d76fbf9d57c389",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
