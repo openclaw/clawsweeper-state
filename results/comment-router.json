@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-29T17:02:41.348Z",
+  "updated_at": "2026-08-29T17:02:50.483Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118359:5161475717:2026-08-29T11:47:45Z:clawsweeper_needs_human",
-      "comment_id": "5161475717",
-      "comment_version_key": "5161475717:2026-08-29T11:47:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118359#issuecomment-5161475717",
-      "comment_created_at": "2026-08-03T01:47:38Z",
-      "comment_updated_at": "2026-08-29T11:47:45Z",
-      "comment_body_sha256": "bb7b4adf14350ff7f044e52a7e49f0090c2bcb9fa6772c8cb239723facf47894",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118359,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the head as dirty, and current main changed the same queue and execution owners after this branch; a rebase must preserve current-main metadata and retry behavior befor... (sha=b1e7de889d5ecdb1cf56c7de6cf45813c4f43b22)",
-      "expected_head_sha": "b1e7de889d5ecdb1cf56c7de6cf45813c4f43b22",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T11:48:52.196Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reply-retire-queued-cancellation-on-freeze-118028",
-        "head_sha": "b1e7de889d5ecdb1cf56c7de6cf45813c4f43b22",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118359:5161842386:2026-08-03T03:00:17Z:re_review",
       "comment_id": "5161842386",
@@ -32531,6 +32498,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132450:5463704554:2026-08-29T17:02:00Z:re_review",
+      "comment_id": "5463704554",
+      "comment_version_key": "5463704554:2026-08-29T17:02:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132450#issuecomment-5463704554",
+      "comment_created_at": "2026-08-29T17:02:00Z",
+      "comment_updated_at": "2026-08-29T17:02:00Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132450,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-29T17:02:48.134Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/provider-profile-controls",
+        "head_sha": "c4aea813659b789aa41e9c0b0983d332a67be40f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
