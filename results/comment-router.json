@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-29T02:19:33.032Z",
+  "updated_at": "2026-08-29T02:19:49.966Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112754:5122772729:2026-07-29T19:50:04Z:re_review",
-      "comment_id": "5122772729",
-      "comment_version_key": "5122772729:2026-07-29T19:50:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112754#issuecomment-5122772729",
-      "comment_created_at": "2026-07-29T19:50:04Z",
-      "comment_updated_at": "2026-07-29T19:50:04Z",
-      "comment_body_sha256": "4e3b83e9bff6a97478c7895939d2e3733e8b2daa2733c4a85f139521bd39d7f1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112754,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-28T22:18:26.244Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112754:5238676372:2026-08-10T09:59:10Z:re_review",
       "comment_id": "5238676372",
@@ -33001,6 +32974,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3545:5459743231:2026-08-29T02:19:03Z:clawsweeper_needs_human",
+      "comment_id": "5459743231",
+      "comment_version_key": "5459743231:2026-08-29T02:19:03Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3545#issuecomment-5459743231",
+      "comment_created_at": "2026-08-29T02:19:03Z",
+      "comment_updated_at": "2026-08-29T02:19:03Z",
+      "comment_body_sha256": "60eaab4c4b79a1985b574aac766fd609c25eaf0f569a5648d943c47db4a7f50d",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3545,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is runProofBackend, which drives the real backend, CLI source push, preview, and cleanup. The PR body describes a... (sha=af9b09b9bb1440dc66425c898007e825378ea3ec)",
+      "expected_head_sha": "af9b09b9bb1440dc66425c898007e825378ea3ec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-29T02:19:49.966Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/clever-nightingale-ea97e1",
+        "head_sha": "af9b09b9bb1440dc66425c898007e825378ea3ec",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
