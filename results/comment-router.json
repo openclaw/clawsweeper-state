@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T10:29:50.453Z",
+  "updated_at": "2026-08-30T10:30:00.318Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133125:5467233237:2026-08-30T06:49:15Z:clawsweeper_needs_human",
-      "comment_id": "5467233237",
-      "comment_version_key": "5467233237:2026-08-30T06:49:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133125#issuecomment-5467233237",
-      "comment_created_at": "2026-08-30T06:49:15Z",
-      "comment_updated_at": "2026-08-30T06:49:15Z",
-      "comment_body_sha256": "0cbb7347ac086cfe3f6f212992d3f879f8475ffca364810da5f31aaf7cf7006a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133125,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Using a Telegram picker button will now discard an existing explicit session runtime choice, including a compatible one, and silently switch future replies to configured policy; that... (sha=a02b8ab9974d39b56c30ee232f573d5aa6ec19d2)",
-      "expected_head_sha": "a02b8ab9974d39b56c30ee232f573d5aa6ec19d2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T06:50:07.449Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-telegram-model-runtime",
-        "head_sha": "a02b8ab9974d39b56c30ee232f573d5aa6ec19d2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133123:5467234357:2026-08-30T06:49:33Z:clawsweeper_needs_human",
       "comment_id": "5467234357",
@@ -32000,6 +31967,53 @@
       "status": "skipped",
       "processed_at": "2026-08-30T10:29:50.453Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:171:5467934703:2026-08-30T10:29:17Z:clawsweeper_needs_human",
+      "comment_id": "5467934703",
+      "comment_version_key": "5467934703:2026-08-30T10:29:17Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5467934703",
+      "comment_created_at": "2026-08-30T09:39:29Z",
+      "comment_updated_at": "2026-08-30T10:29:17Z",
+      "comment_body_sha256": "28390be15d925b659a3f4555a2827ac42b4fe5364174f189cc764105da70a453",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 171,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied packed-consumer terminal output and hosted Windows proof show admission, rename, and sele...; Review finding: [P1] Eliminate the final quarantine-to-removal swap window — src/temp-workspace-owner.ts:148 - [P1] Preserve the documented native-off workspace contract — src/pri... (sha=0548a4ea55fce3e6034e6347c3c7bf352fd81c9c)",
+      "expected_head_sha": "0548a4ea55fce3e6034e6347c3c7bf352fd81c9c",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T10:30:00.318Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/temp-workspace-cleanup-ownership",
+        "head_sha": "0548a4ea55fce3e6034e6347c3c7bf352fd81c9c",
+        "cluster_id": "automerge-openclaw-fs-safe-171",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-171.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
