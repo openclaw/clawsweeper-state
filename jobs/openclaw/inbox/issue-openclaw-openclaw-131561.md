@@ -67,24 +67,25 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven Gateway terminal-persistence gap described by https://github.com/openclaw/openclaw/issues/131561. A terminal lifecycle event can be stamped in `src/gateway/server-runtime-subscriptions.ts` while asynchronous agent-event dispatch fails; current maintenance in `src/gateway/server-maintenance.ts` only evicts the controller and leaves the durable session row `running`. Preserve exact run, session, lifecycle-generation, and stale-event guards. Recover terminal persistence through the canonical `persistGatewaySessionLifecycleEvent` / session-lifecycle owner rather than adding a consumer-side sessions-list override or merely removing the controller. Add a focused regression that forces lost async dispatch with a future controller expiry, advances the grace/sweep, and proves the persisted row becomes `done`; also prove a newer run cannot be overwritten by the recovered older terminal event. Inspect the partial prior work at https://github.com/openclaw/openclaw/pull/123192. Do not add config, alter Telegram-specific behavior, weaken stale-event guards, or change SQLite schema. Run the focused Gateway tests and record user-visible release context in the PR body rather than editing CHANGELOG.md.
+Repair the Gateway terminal-session projection gap described by https://github.com/openclaw/openclaw/issues/131561. Preserve lifecycle-generation, session identity, and stale-event fencing, but ensure a terminal outcome can reach the canonical persisted session projection when the asynchronous chat lifecycle handler or lazy load fails after the synchronous terminal stamp. Do not add configuration, SQLite schema changes, Telegram-specific behavior, or an expiry-only workaround. Add a regression that injects the handler/load failure with a future run deadline and proves prompt persisted status=done with endedAt and runtimeMs; retain abort-reservation, stale-generation, and genuine persistence-failure coverage. Do not edit CHANGELOG.md; include release-note context in the PR body.
 
 Likely files:
 
 - src/gateway/server-runtime-subscriptions.ts
-- src/gateway/server-maintenance.ts
 - src/gateway/server-chat.ts
 - src/gateway/session-lifecycle-state.ts
+- src/gateway/server-maintenance.ts
 - src/gateway/server-runtime-subscriptions.test.ts
-- src/gateway/server-maintenance.test.ts
+- src/gateway/server-chat.agent-events.test.ts
 - src/gateway/session-lifecycle-state.test.ts
+- src/gateway/server-maintenance.test.ts
 
 Validation:
 
 - pnpm test src/gateway/server-runtime-subscriptions.test.ts
-- pnpm test src/gateway/server-maintenance.test.ts
-- pnpm test src/gateway/session-lifecycle-state.test.ts
 - pnpm test src/gateway/server-chat.agent-events.test.ts
+- pnpm test src/gateway/session-lifecycle-state.test.ts
+- pnpm test src/gateway/server-maintenance.test.ts
 
 ## Operator Prompt
 
