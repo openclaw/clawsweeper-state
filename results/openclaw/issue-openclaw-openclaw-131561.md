@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-131561"
 mode: "autonomous"
-run_id: "33293306063"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33293306063"
+run_id: "33293578229"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33293578229"
 head_sha: "fa535d54a032862b022147a7cba4eaa3bdeb4a7b"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-30T05:10:47.540Z"
+published_at: "2026-08-30T05:43:36.969Z"
 canonical: "https://github.com/openclaw/openclaw/issues/131561"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/131561"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33293306063](https://github.com/openclaw/clawsweeper/actions/runs/33293306063)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33293578229](https://github.com/openclaw/clawsweeper/actions/runs/33293578229)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/131561
 
 ## Summary
 
-Current main source appears to have already moved successful terminal persistence to the lifecycle producer before lazy chat dispatch, so the requested lost-dispatch path is not reproducible by source inspection. No code or GitHub mutation was made. Final no-PR certification is blocked because ../codex is absent (the required direct Codex check cannot be performed) and the focused test cannot start: tsx is missing and this read-only checkout cannot run pnpm install.
+No implementation PR planned. Current main contains an apparent pre-dispatch canonical terminal-persistence owner, but the required sibling ../codex source is absent and this read-only, network-restricted worker cannot clone or inspect it. Root policy therefore blocks an implementation or already-fixed verdict. No source or GitHub state was changed; no tests were run.
 
 ## Impact
 
@@ -66,13 +66,13 @@ Current main source appears to have already moved successful terminal persistenc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119714 | keep_closed | skipped | related | Closed context reference; no close action is valid. |
-| #120315 | keep_related | planned | related | Distinct cancellation/restart-recovery root cause. |
-| #121756 | keep_closed | skipped | related | Closed related context reference; no mutation. |
-| #123192 | keep_closed | skipped | related | Historical partial predecessor, already closed. |
-| #126850 | keep_related | planned | related | Related terminal-state symptom on a distinct UI reconciliation owner. |
-| #131561 | keep_canonical | blocked | canonical | Do not open a duplicate fix PR while current main already appears to contain the requested producer-owned repair; final no-PR certification requires the missing direct Codex inspection and runnable focused validation. |
+| #119714 | keep_closed | skipped | related | Closed context evidence only; closure is not permitted or needed. |
+| #120315 | keep_related | planned | related | Distinct cancellation/recovery invariant; retain independently. |
+| #121756 | keep_closed | skipped | related | Closed context evidence only; separate UI recovery behavior. |
+| #123192 | keep_closed | skipped | related | Merged context PR; no action permitted or needed. |
+| #126850 | keep_related | planned | related | Distinct UI consumer-side reconciliation invariant; retain independently. |
+| #131561 | needs_human | blocked | needs_human | Root AGENTS.md prohibits a Codex-related verdict, proof-sufficiency claim, or code change without direct sibling ../codex source inspection. The missing source cannot be remedied in this worker environment. |
 
 ## Needs Human
 
-- Provide a writable verification environment with the required ../codex checkout and dependencies, then run a real persisted-session regression that forces lazy chat-handler failure, retains a future controller expiry, advances the sweep/grace, proves status=done, and confirms an older terminal cannot overwrite a newer run.
+- Provide a readable sibling ../codex checkout (or an environment authorized to clone it) so the required Codex runtime/protocol inspection can be completed before deciding whether current main already fixes #131561 or a narrow regression-only PR is warranted.
