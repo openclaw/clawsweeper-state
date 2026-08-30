@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T19:38:38.563Z",
+  "updated_at": "2026-08-30T19:39:51.748Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1624:5462001752:2026-08-30T14:19:14Z:clawsweeper_needs_human",
-      "comment_id": "5462001752",
-      "comment_version_key": "5462001752:2026-08-30T14:19:14Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1624#issuecomment-5462001752",
-      "comment_created_at": "2026-08-29T11:10:41Z",
-      "comment_updated_at": "2026-08-30T14:19:14Z",
-      "comment_body_sha256": "d786c28a0473c18dfe2407d49d1935c2ed769e15cba0e0f19694076cfd8197a2",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1624,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This draft is stacked on open https://github.com/openclaw/crabbox/pull/1623, so the current test merge and pending checks validate that stack rather than the current default branch. (sha=1aab79eaefbe72aded8aa81bb2389b47ffa01e49)",
-      "expected_head_sha": "1aab79eaefbe72aded8aa81bb2389b47ffa01e49",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T14:20:01.719Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sync-transactional-overlay",
-        "head_sha": "1aab79eaefbe72aded8aa81bb2389b47ffa01e49",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabbox:1624:5462149291:2026-08-29T11:35:08Z:re_review",
       "comment_id": "5462149291",
@@ -33059,6 +33026,53 @@
         {
           "action": "comment",
           "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:180:5470834555:2026-08-30T19:39:07Z:clawsweeper_auto_merge",
+      "comment_id": "5470834555",
+      "comment_version_key": "5470834555:2026-08-30T19:39:07Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/180#issuecomment-5470834555",
+      "comment_created_at": "2026-08-30T19:39:07Z",
+      "comment_updated_at": "2026-08-30T19:39:07Z",
+      "comment_body_sha256": "180d317415ea47c3b4d085df97dc69633bac954e643f1fe63ba213a6ce0a4efb",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=a6af14a11bb755623b43e0c3ef201dc5c9bd03ba)",
+      "expected_head_sha": "a6af14a11bb755623b43e0c3ef201dc5c9bd03ba",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-30T19:39:51.748Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/archive-filter-canonical-paths",
+        "head_sha": "a6af14a11bb755623b43e0c3ef201dc5c9bd03ba",
+        "cluster_id": "automerge-openclaw-fs-safe-180",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-180.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "waiting",
           "label": null,
           "job_path": null
         }
