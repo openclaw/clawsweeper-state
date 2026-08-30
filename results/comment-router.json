@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T13:32:09.669Z",
+  "updated_at": "2026-08-30T13:32:14.470Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133163:5467429923:2026-08-30T09:11:07Z:clawsweeper_auto_repair",
-      "comment_id": "5467429923",
-      "comment_version_key": "5467429923:2026-08-30T09:11:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133163#issuecomment-5467429923",
-      "comment_created_at": "2026-08-30T07:38:16Z",
-      "comment_updated_at": "2026-08-30T09:11:07Z",
-      "comment_body_sha256": "2184c3d60dc39914f094c7e2dcd168dd4ecd2bf87b451f8ce2027d8a80174331",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133163,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fa5379205b90a0cf61e6235b30c6c371db50769c)",
-      "expected_head_sha": "fa5379205b90a0cf61e6235b30c6c371db50769c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T09:15:57.599Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/agent-safe-start-dreaming",
-        "head_sha": "fa5379205b90a0cf61e6235b30c6c371db50769c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133208:5467806665:2026-08-30T09:09:16Z:clawsweeper_needs_human",
       "comment_id": "5467806665",
@@ -31942,6 +31909,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120472:5468985850:2026-08-30T13:31:28Z:re_review",
+      "comment_id": "5468985850",
+      "comment_version_key": "5468985850:2026-08-30T13:31:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120472#issuecomment-5468985850",
+      "comment_created_at": "2026-08-30T13:31:28Z",
+      "comment_updated_at": "2026-08-30T13:31:28Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120472,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T13:32:12.269Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/verify-pr-hosted-gates-decimal-pr",
+        "head_sha": "67bc43f248b06d7634e7a96ddefd17632648ea81",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
