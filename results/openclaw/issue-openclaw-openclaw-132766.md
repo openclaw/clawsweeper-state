@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-132766"
 mode: "autonomous"
-run_id: "33315380587"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33315380587"
+run_id: "33318451956"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33318451956"
 head_sha: "c179a466606f782ae73404357a0c94e6bead5807"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-30T15:15:18.191Z"
-canonical: "https://github.com/openclaw/openclaw/issues/132766"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/132766"
+published_at: "2026-08-30T15:25:20.732Z"
+canonical: "#132766"
+canonical_issue: "#132766"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-132766
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33315380587](https://github.com/openclaw/clawsweeper/actions/runs/33315380587)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33318451956](https://github.com/openclaw/clawsweeper/actions/runs/33318451956)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/132766
+Canonical: #132766
 
 ## Summary
 
-Confirmed on current main (1505218b3e42d42c0bcc99930ef6d4c36b545ae9): three outbound mirror writers request the ambient transcript fence with no destination scope, so a foreign run fence reaches a target-session append and is refused after the channel send succeeds. The supplied checkout is read-only, so this worker cannot add the required failing regression, patch, or validate a branch; a narrow executable fix artifact is provided.
+The issue remains source-reproducible on checked-out main: three outbound mirror writers call the fence accessor without a destination scope, and private WebChat persistence has the same unscoped call shape. This read-only environment cannot create/run the required regression or repair branch, and the mandatory sibling ../codex checkout is absent.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,12 +66,11 @@ Confirmed on current main (1505218b3e42d42c0bcc99930ef6d4c36b545ae9): three outb
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #121003 | keep_closed | skipped | related | Historical context only; no mutation is valid for a closed PR. |
-| #122630 | keep_closed | skipped | related | Adjacent but distinct closed context. |
-| #125885 | keep_closed | skipped | superseded | Closed historical predecessor; do not mutate. |
-| #132766 | fix_needed | blocked | canonical | Implementation is blocked only by the worker sandbox; the source-level reproduction remains valid on current main. |
-| cluster:issue-openclaw-openclaw-132766 | build_fix_artifact | planned | canonical | A new focused fix PR is required; no viable open candidate PR exists. |
+| #132766 | fix_needed | blocked | canonical | Blocked before the required failing regression and direct Codex runtime inspection: filesystem access is read-only and ../codex is absent. |
+| #121003 | keep_closed | skipped | superseded | Historical context only; do not mutate a closed PR. |
+| #122630 | keep_closed | skipped | related | Adjacent lifecycle history, not the same remaining root cause. |
+| #125885 | keep_closed | skipped | superseded | Closed predecessor; retain as attribution and diagnostic history. |
 
 ## Needs Human
 
-- none
+- Provide a writable repair checkout with the required sibling ../codex source, or explicitly waive that repository-local hard gate, so the failing regression can be added, run, and repaired before a PR is created.

@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-132766",
+  "mode": "autonomous",
+  "run_id": "33318451956",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33318451956",
+  "head_sha": "c179a466606f782ae73404357a0c94e6bead5807",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-132766.md",
+  "published_at": "2026-08-30T15:25:20.732Z",
+  "canonical": "#132766",
+  "canonical_issue": "#132766",
+  "canonical_pr": null,
+  "summary": "The issue remains source-reproducible on checked-out main: three outbound mirror writers call the fence accessor without a destination scope, and private WebChat persistence has the same unscoped call shape. This read-only environment cannot create/run the required regression or repair branch, and the mandatory sibling ../codex checkout is absent.",
+  "actions": [
+    {
+      "target": "#132766",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Blocked before the required failing regression and direct Codex runtime inspection: filesystem access is read-only and ../codex is absent."
+    },
+    {
+      "target": "#121003",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Historical context only; do not mutate a closed PR."
+    },
+    {
+      "target": "#122630",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Adjacent lifecycle history, not the same remaining root cause."
+    },
+    {
+      "target": "#125885",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Closed predecessor; retain as attribution and diagnostic history."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair checkout with the required sibling ../codex source, or explicitly waive that repository-local hard gate, so the failing regression can be added, run, and repaired before a PR is created."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
