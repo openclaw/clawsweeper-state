@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-132766"
 mode: "autonomous"
-run_id: "33317642949"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33317642949"
+run_id: "33315380587"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33315380587"
 head_sha: "c179a466606f782ae73404357a0c94e6bead5807"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-30T15:04:25.623Z"
+published_at: "2026-08-30T15:15:18.191Z"
 canonical: "https://github.com/openclaw/openclaw/issues/132766"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/132766"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33317642949](https://github.com/openclaw/clawsweeper/actions/runs/33317642949)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33315380587](https://github.com/openclaw/clawsweeper/actions/runs/33315380587)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/132766
 
 ## Summary
 
-No code or GitHub mutations were made. The source defect remains reproducible in this checkout, but implementation is blocked because the preflight main SHA is absent locally, node_modules is absent in a read-only checkout, and the mandatory sibling ../codex inspection cannot be performed or cloned on the read-only filesystem.
+Confirmed on current main (1505218b3e42d42c0bcc99930ef6d4c36b545ae9): three outbound mirror writers request the ambient transcript fence with no destination scope, so a foreign run fence reaches a target-session append and is refused after the channel send succeeds. The supplied checkout is read-only, so this worker cannot add the required failing regression, patch, or validate a branch; a narrow executable fix artifact is provided.
 
 ## Impact
 
@@ -66,11 +66,11 @@ No code or GitHub mutations were made. The source defect remains reproducible in
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #121003 | keep_closed | skipped | related | Already closed. |
-| #122630 | keep_closed | skipped | related | Already closed and adjacent, not this canonical bug. |
-| #125885 | keep_closed | skipped | superseded | Already closed; active canonical report is #132766. |
-| #132766 | fix_needed | blocked | canonical | A fresh writable checkout at preflight main or newer is required. The supplied main SHA 7cd04f982867d8efc3517d901937c25e69e00a5e is absent from this shallow checkout; ../codex is absent and git clone failed with a read-only filesystem; node_modules is absent, so the required failing regression and validation cannot be run. |
-| cluster:issue-openclaw-openclaw-132766 | build_fix_artifact | planned | canonical | Narrow new-fix-PR path is available once the environment blockers are removed. |
+| #121003 | keep_closed | skipped | related | Historical context only; no mutation is valid for a closed PR. |
+| #122630 | keep_closed | skipped | related | Adjacent but distinct closed context. |
+| #125885 | keep_closed | skipped | superseded | Closed historical predecessor; do not mutate. |
+| #132766 | fix_needed | blocked | canonical | Implementation is blocked only by the worker sandbox; the source-level reproduction remains valid on current main. |
+| cluster:issue-openclaw-openclaw-132766 | build_fix_artifact | planned | canonical | A new focused fix PR is required; no viable open candidate PR exists. |
 
 ## Needs Human
 

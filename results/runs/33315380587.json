@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-132766",
+  "mode": "autonomous",
+  "run_id": "33315380587",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33315380587",
+  "head_sha": "c179a466606f782ae73404357a0c94e6bead5807",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-132766.md",
+  "published_at": "2026-08-30T15:15:18.191Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/132766",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/132766",
+  "canonical_pr": null,
+  "summary": "Confirmed on current main (1505218b3e42d42c0bcc99930ef6d4c36b545ae9): three outbound mirror writers request the ambient transcript fence with no destination scope, so a foreign run fence reaches a target-session append and is refused after the channel send succeeds. The supplied checkout is read-only, so this worker cannot add the required failing regression, patch, or validate a branch; a narrow executable fix artifact is provided.",
+  "actions": [
+    {
+      "target": "#121003",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation is valid for a closed PR."
+    },
+    {
+      "target": "#122630",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Adjacent but distinct closed context."
+    },
+    {
+      "target": "#125885",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Closed historical predecessor; do not mutate."
+    },
+    {
+      "target": "#132766",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the worker sandbox; the source-level reproduction remains valid on current main."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-132766",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#132766",
+      "candidate_fix": null,
+      "reason": "A new focused fix PR is required; no viable open candidate PR exists."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
