@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T01:30:50.163Z",
+  "updated_at": "2026-08-30T01:30:59.516Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120129:5212971308:2026-08-07T05:49:21Z:re_review",
-      "comment_id": "5212971308",
-      "comment_version_key": "5212971308:2026-08-07T05:49:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120129#issuecomment-5212971308",
-      "comment_created_at": "2026-08-07T05:49:21Z",
-      "comment_updated_at": "2026-08-07T05:49:21Z",
-      "comment_body_sha256": "d1609b173eaaaa3c8940c89df9078329013e216a1f31df2f59694936bbd5b394",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120129,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T22:13:27.659Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120129:5213544429:2026-08-07T06:49:00Z:re_review",
       "comment_id": "5213544429",
@@ -31191,6 +31164,39 @@
       "status": "skipped",
       "processed_at": "2026-08-30T01:30:50.163Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132972:5466002133:2026-08-30T01:30:07Z:clawsweeper_needs_human",
+      "comment_id": "5466002133",
+      "comment_version_key": "5466002133:2026-08-30T01:30:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132972#issuecomment-5466002133",
+      "comment_created_at": "2026-08-30T01:30:07Z",
+      "comment_updated_at": "2026-08-30T01:30:07Z",
+      "comment_body_sha256": "a891ecd088ae7e0f3adb01c91b3030a59168d0d7a380fdcede0b26bd8ce3787e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132972,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +1 line for this bug fix; the added provider-only scan is justified because cost extraction stops at the latest user turn and cannot supply plan provenance when... (sha=6c7fcf14aa86b2382c042f8bd7f3ad9720320740)",
+      "expected_head_sha": "6c7fcf14aa86b2382c042f8bd7f3ad9720320740",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T01:30:59.516Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/context-wheel-provider-usage",
+        "head_sha": "6c7fcf14aa86b2382c042f8bd7f3ad9720320740",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
