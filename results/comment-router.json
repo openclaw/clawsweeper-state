@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T01:05:27.550Z",
+  "updated_at": "2026-08-30T01:06:54.151Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132451:5465050097:2026-08-29T21:42:51Z:re_review",
-      "comment_id": "5465050097",
-      "comment_version_key": "5465050097:2026-08-29T21:42:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132451#issuecomment-5465050097",
-      "comment_created_at": "2026-08-29T21:42:51Z",
-      "comment_updated_at": "2026-08-29T21:42:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132451,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T21:43:33.853Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-roster",
-        "head_sha": "a32d6546d026a011c3c288d580199dd4174d504f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132453:5465050175:2026-08-29T21:42:53Z:re_review",
       "comment_id": "5465050175",
@@ -31041,6 +30994,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132962:5465904741:2026-08-30T01:06:06Z:clawsweeper_needs_human",
+      "comment_id": "5465904741",
+      "comment_version_key": "5465904741:2026-08-30T01:06:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132962#issuecomment-5465904741",
+      "comment_created_at": "2026-08-30T01:06:06Z",
+      "comment_updated_at": "2026-08-30T01:06:06Z",
+      "comment_body_sha256": "7c4cd2ce01182d51c3b3c15e832f7f491a2e019c8f8e3e221ada716003235119",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132962,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Several exact-head checks were still in progress in the captured state; merge readiness depends on their completion, not on a code defect in this patch. (sha=c0a3819ce599ca486646c8d5e507872556e318c1)",
+      "expected_head_sha": "c0a3819ce599ca486646c8d5e507872556e318c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T01:06:54.151Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-matrix-proxy-cleanup",
+        "head_sha": "c0a3819ce599ca486646c8d5e507872556e318c1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
