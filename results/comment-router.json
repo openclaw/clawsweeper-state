@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-30T12:32:29.950Z",
+  "updated_at": "2026-08-30T12:31:36.274Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132437:5460887716:2026-08-30T08:07:24Z:clawsweeper_needs_human",
+      "comment_id": "5460887716",
+      "comment_version_key": "5460887716:2026-08-30T08:07:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132437#issuecomment-5460887716",
+      "comment_created_at": "2026-08-29T06:45:39Z",
+      "comment_updated_at": "2026-08-30T08:07:24Z",
+      "comment_body_sha256": "6309864e33d2b648c2411695a1149b7b202d66d2330a006bc9460674d87ed246",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132437,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the state-reconciliation decision for many tool sources; an inaccurate trusted classifier could incorrectly avoid reconciliation for a mutation. (sha=faa17432a5245abcdddbe3d4adc3fafa1d3fa507)",
+      "expected_head_sha": "faa17432a5245abcdddbe3d4adc3fafa1d3fa507",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T08:30:57.550Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/fix-code-mode-phase1-gaps-131340",
+        "head_sha": "faa17432a5245abcdddbe3d4adc3fafa1d3fa507",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132668:5463275621:2026-08-30T08:24:40Z:clawsweeper_needs_human",
       "comment_id": "5463275621",
@@ -31885,53 +31918,6 @@
         "kind": "pull_request",
         "branch": "codex/cloud-stop-admission-terminal",
         "head_sha": "8e0f7ec852f4ea157c409a4aa9757bdfa4b0bd89",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5468702003:2026-08-30T12:31:45Z:re_review",
-      "comment_id": "5468702003",
-      "comment_version_key": "5468702003:2026-08-30T12:31:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5468702003",
-      "comment_created_at": "2026-08-30T12:31:45Z",
-      "comment_updated_at": "2026-08-30T12:31:45Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T12:32:27.452Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-usage-ui",
-        "head_sha": "4ced22e040ec8e558a19a78ebe245af0cf186cb0",
         "cluster_id": null,
         "job_path": null
       },
