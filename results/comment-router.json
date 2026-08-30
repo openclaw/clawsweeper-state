@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T07:12:30.493Z",
+  "updated_at": "2026-08-30T07:13:41.814Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133027:5466338163:2026-08-30T02:53:52Z:clawsweeper_needs_human",
-      "comment_id": "5466338163",
-      "comment_version_key": "5466338163:2026-08-30T02:53:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133027#issuecomment-5466338163",
-      "comment_created_at": "2026-08-30T02:53:52Z",
-      "comment_updated_at": "2026-08-30T02:53:52Z",
-      "comment_body_sha256": "4c29fec3d140578bb41c91692ce7bf71da93f1d260e167e134ae2004b27a9727",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133027,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - This bug fix adds 42 net production lines; the logic is localized to the one pre-dispatch point that covers both durable and direct sends, but current-main comparison was unavailable... (sha=27d9d32a99b906a9272f09528b1bb09d61c609b2)",
-      "expected_head_sha": "27d9d32a99b906a9272f09528b1bb09d61c609b2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T02:54:36.838Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/googlechat-inbound-thread-replies",
-        "head_sha": "27d9d32a99b906a9272f09528b1bb09d61c609b2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124305:5466287411:2026-08-30T02:40:47Z:re_review",
       "comment_id": "5466287411",
@@ -31178,6 +31145,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:168:5467326939:2026-08-30T07:13:03Z:automerge",
+      "comment_id": "5467326939",
+      "comment_version_key": "5467326939:2026-08-30T07:13:03Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/168#issuecomment-5467326939",
+      "comment_created_at": "2026-08-30T07:13:03Z",
+      "comment_updated_at": "2026-08-30T07:13:03Z",
+      "comment_body_sha256": "3f17b5ad44666989d9b8d76576f310fd9c48399acbd1f86ad3ae0533ab09b998",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 168,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-30T07:13:36.741Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/archive-filter-policy",
+        "head_sha": "67a43be544a99ce30b2311839114236762846aff",
+        "cluster_id": "automerge-openclaw-fs-safe-168",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-168.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-168.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
