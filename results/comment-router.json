@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T22:03:50.885Z",
+  "updated_at": "2026-08-30T22:03:51.686Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119248:5469971156:2026-08-30T16:44:51Z:re_review",
-      "comment_id": "5469971156",
-      "comment_version_key": "5469971156:2026-08-30T16:44:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119248#issuecomment-5469971156",
-      "comment_created_at": "2026-08-30T16:44:51Z",
-      "comment_updated_at": "2026-08-30T16:44:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119248,
-      "author": "mushuiyu886",
-      "author_id": 266724580,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T16:45:32.354Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-usage-cost-port",
-        "head_sha": "53c7af47f67c2cf6dcdcf4c6523a0cf6d85ce07d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:94344:5469971568:2026-08-30T16:44:56Z:re_review",
       "comment_id": "5469971568",
@@ -33977,6 +33930,39 @@
         "kind": "pull_request",
         "branch": "jesse/stage-signal-indexes",
         "head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133579:5471529719:2026-08-30T22:03:11Z:clawsweeper_needs_human",
+      "comment_id": "5471529719",
+      "comment_version_key": "5471529719:2026-08-30T22:03:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133579#issuecomment-5471529719",
+      "comment_created_at": "2026-08-30T22:03:11Z",
+      "comment_updated_at": "2026-08-30T22:03:11Z",
+      "comment_body_sha256": "54e8b6d1b312691aa8ad0193f596a10755eefc146634c37fee88af4cfc0918a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133579,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured check rollup was incomplete, so merge should wait for required checks on the exact reviewed head. (sha=3b80c2f38c5fd32f389176ff190370bb6e43274f)",
+      "expected_head_sha": "3b80c2f38c5fd32f389176ff190370bb6e43274f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T22:03:51.686Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/130706-lightweight-catalog",
+        "head_sha": "3b80c2f38c5fd32f389176ff190370bb6e43274f",
         "cluster_id": null,
         "job_path": null
       }
