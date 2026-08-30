@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133442",
+  "mode": "autonomous",
+  "run_id": "33328063840",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33328063840",
+  "head_sha": "74b0f8552fde46842a933ca360ed272f0212193e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133442.md",
+  "published_at": "2026-08-30T18:44:05.834Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133442",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133442",
+  "canonical_pr": null,
+  "summary": "#133442 is a confirmed narrow cron-maintenance bug on current main b73faf7328488a8c31a8cce39dc705376605e492. A fix PR is warranted, but this worker cannot modify or validate the branch: the checkout is read-only, pnpm cannot initialize Corepack (EROFS), and the mandatory sibling ../codex source is absent and cannot be cloned under the sandbox policy.",
+  "actions": [
+    {
+      "target": "#133442",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133442",
+      "candidate_fix": null,
+      "reason": "A narrow owner-boundary repair exists; see the cluster fix artifact."
+    },
+    {
+      "target": "#127258",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#133442",
+      "candidate_fix": null,
+      "reason": "Keep as a separate recovery-batching follow-up."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133442",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133442",
+      "candidate_fix": null,
+      "reason": "Executor should implement and validate this artifact in a writable checkout with the required Codex sibling available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
