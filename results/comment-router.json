@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T22:04:26.508Z",
+  "updated_at": "2026-08-30T22:04:34.471Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111237:5469971302:2026-08-30T16:44:52Z:re_review",
-      "comment_id": "5469971302",
-      "comment_version_key": "5469971302:2026-08-30T16:44:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111237#issuecomment-5469971302",
-      "comment_created_at": "2026-08-30T16:44:52Z",
-      "comment_updated_at": "2026-08-30T16:44:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111237,
-      "author": "mushuiyu886",
-      "author_id": 266724580,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T16:45:38.727Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/venice-live-model-metadata-20260719",
-        "head_sha": "ab43b93a17792a3be8485a91ff40be66210b29a5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133384:5469971861:2026-08-30T16:44:59Z:clawsweeper_needs_human",
       "comment_id": "5469971861",
@@ -33949,6 +33902,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/production-minor-and-patch-d4c9adcfe4",
         "head_sha": "5619fcaed96a82b220c4c1f7c2f9a9517e1784ec",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabfleet:123:5465653641:2026-08-30T21:57:19Z:clawsweeper_auto_repair",
+      "comment_id": "5465653641",
+      "comment_version_key": "5465653641:2026-08-30T21:57:19Z",
+      "comment_url": "https://github.com/openclaw/crabfleet/pull/123#issuecomment-5465653641",
+      "comment_created_at": "2026-08-30T00:06:21Z",
+      "comment_updated_at": "2026-08-30T21:57:19Z",
+      "comment_body_sha256": "c1cf5c70045be2c6f7f4c4e04c9718b50e9306441347df95ff3a1f44f30c0dc7",
+      "repo": "openclaw/crabfleet",
+      "issue_number": 123,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=76a93be044600dd566bc9e97944d4518e6703f93)",
+      "expected_head_sha": "76a93be044600dd566bc9e97944d4518e6703f93",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T22:04:34.471Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f004-session-logs-cleanup",
+        "head_sha": "76a93be044600dd566bc9e97944d4518e6703f93",
         "cluster_id": null,
         "job_path": null
       }
