@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T02:01:32.482Z",
+  "updated_at": "2026-08-30T02:01:52.790Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113115:5465333060:2026-08-29T22:48:58Z:re_review",
-      "comment_id": "5465333060",
-      "comment_version_key": "5465333060:2026-08-29T22:48:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113115#issuecomment-5465333060",
-      "comment_created_at": "2026-08-29T22:48:58Z",
-      "comment_updated_at": "2026-08-29T22:48:58Z",
-      "comment_body_sha256": "ece9278a26c5d78f793dfb01c2c6c1d3d3535d3cd1fb24636ae3c9e2fd525ada",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113115,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T22:49:43.411Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/matrix-pr73455-port-20260723",
-        "head_sha": "9d7b12df2a39ec8498c2cabbf60110bfcaec8433",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3512:5381521199:2026-08-29T22:50:06Z:clawsweeper_needs_human",
       "comment_id": "5381521199",
@@ -31145,6 +31098,39 @@
         "kind": "pull_request",
         "branch": "fix/f002-transcript-walk-cap",
         "head_sha": "2d3b9d4ea755dc919f44c55ce9aa80e244dad31e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132975:5465989418:2026-08-30T02:01:04Z:clawsweeper_needs_human",
+      "comment_id": "5465989418",
+      "comment_version_key": "5465989418:2026-08-30T02:01:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132975#issuecomment-5465989418",
+      "comment_created_at": "2026-08-30T01:26:45Z",
+      "comment_updated_at": "2026-08-30T02:01:04Z",
+      "comment_body_sha256": "30c4aab06c58124c67efdc2bdf4983271511a32f6ec5e92b07f01bdc3be604d4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132975,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes release-test automation and expands the sqlite-volume path; merge should wait for the active exact-head checks to complete successfully. (sha=c1338e31ca7a0331992280f8b31397655e50043f)",
+      "expected_head_sha": "c1338e31ca7a0331992280f8b31397655e50043f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T02:01:52.790Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/docker-stable-main-migration",
+        "head_sha": "c1338e31ca7a0331992280f8b31397655e50043f",
         "cluster_id": null,
         "job_path": null
       }
