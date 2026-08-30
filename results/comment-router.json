@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T22:36:18.727Z",
+  "updated_at": "2026-08-30T22:36:25.844Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116375:5130009277:2026-08-30T16:18:05Z:clawsweeper_needs_human",
-      "comment_id": "5130009277",
-      "comment_version_key": "5130009277:2026-08-30T16:18:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116375#issuecomment-5130009277",
-      "comment_created_at": "2026-07-30T11:05:05Z",
-      "comment_updated_at": "2026-08-30T16:18:05Z",
-      "comment_body_sha256": "2025baf87b9dd2e09672ef764a1ea5cdba345e8dd9bd7eeea899cf61cccdf76a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116375,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied SQLite trace exercises real persistence but invokes the final subagent boundary through a mock; add a redacted isolated Gateway di...; Review finding: [P1] Move default adoption into the guarded claim transition — extensions/workboard/src/dispatcher.ts:351-357 - [medium] Avoid overwriting reassigned agent authori... (sha=323439982bd4aa652e3057f0d43f46989557c289)",
-      "expected_head_sha": "323439982bd4aa652e3057f0d43f46989557c289",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T17:12:25.421Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workboard-dispatch-default-assignee",
-        "head_sha": "323439982bd4aa652e3057f0d43f46989557c289",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116376:5130013045:2026-08-30T16:20:18Z:clawsweeper_auto_repair",
       "comment_id": "5130013045",
@@ -34008,6 +33975,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132129:5471682313:2026-08-30T22:35:42Z:re_review",
+      "comment_id": "5471682313",
+      "comment_version_key": "5471682313:2026-08-30T22:35:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132129#issuecomment-5471682313",
+      "comment_created_at": "2026-08-30T22:35:42Z",
+      "comment_updated_at": "2026-08-30T22:35:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132129,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T22:36:23.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-current-run-authority",
+        "head_sha": "8c498eef62c20c41c06761c035abd0ce9bf6bf74",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
