@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T19:16:29.090Z",
+  "updated_at": "2026-08-30T19:17:01.632Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/ocm:119:5469073953:2026-08-30T13:49:58Z:re_review",
-      "comment_id": "5469073953",
-      "comment_version_key": "5469073953:2026-08-30T13:49:58Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/119#issuecomment-5469073953",
-      "comment_created_at": "2026-08-30T13:49:58Z",
-      "comment_updated_at": "2026-08-30T13:49:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/ocm",
-      "issue_number": 119,
-      "author": "TheAngryPit",
-      "author_id": 7040636,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T13:55:16.685Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/simulation-owned-worktree-cleanup",
-        "head_sha": "dbee8182660fefb73f73966af9274f94c9a9ce64",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:119:5468607265:2026-08-30T13:54:29Z:clawsweeper_needs_human",
       "comment_id": "5468607265",
@@ -33128,6 +33081,39 @@
         "kind": "pull_request",
         "branch": "fix/f002-import-rpc-errors",
         "head_sha": "77a9aadb9dfab0c75165211e4c7b658a9c79b833",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/telemetry:3:5464194259:2026-08-30T19:15:58Z:clawsweeper_needs_human",
+      "comment_id": "5464194259",
+      "comment_version_key": "5464194259:2026-08-30T19:15:58Z",
+      "comment_url": "https://github.com/openclaw/telemetry/pull/3#issuecomment-5464194259",
+      "comment_created_at": "2026-08-29T18:44:38Z",
+      "comment_updated_at": "2026-08-30T19:15:58Z",
+      "comment_body_sha256": "d8fde768c98c93499ffc21eec9ad63afc228b9fc6347a44d0407383c6af3b02b",
+      "repo": "openclaw/telemetry",
+      "issue_number": 3,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=6f637d044c41334f5ddad91904b0db5eb03e0328)",
+      "expected_head_sha": "6f637d044c41334f5ddad91904b0db5eb03e0328",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T19:17:01.632Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f001-body-cap-before-read",
+        "head_sha": "6f637d044c41334f5ddad91904b0db5eb03e0328",
         "cluster_id": null,
         "job_path": null
       }
