@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T06:13:13.107Z",
+  "updated_at": "2026-08-30T06:13:42.236Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/carapace:78:5450390898:2026-08-30T02:06:25Z:clawsweeper_needs_human",
-      "comment_id": "5450390898",
-      "comment_version_key": "5450390898:2026-08-30T02:06:25Z",
-      "comment_url": "https://github.com/openclaw/carapace/pull/78#issuecomment-5450390898",
-      "comment_created_at": "2026-08-28T08:43:36Z",
-      "comment_updated_at": "2026-08-30T02:06:25Z",
-      "comment_body_sha256": "a48c1f2830ce781eacbf6e2d303977b3263d488616e707aa16ff31fa16745013",
-      "repo": "openclaw/carapace",
-      "issue_number": 78,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair is needed; this clean dependency update awaits normal maintainer merge. (sha=be1e668166dc8ba6ef0b584eb409c5ce67387581)",
-      "expected_head_sha": "be1e668166dc8ba6ef0b584eb409c5ce67387581",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T02:07:52.624Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-f1ba23a83b",
-        "head_sha": "be1e668166dc8ba6ef0b584eb409c5ce67387581",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/fs-safe:166:5466155147:2026-08-30T02:07:34Z:automerge",
       "comment_id": "5466155147",
@@ -30929,6 +30896,39 @@
       "status": "skipped",
       "processed_at": "2026-08-30T06:13:13.107Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1305:5467092496:2026-08-30T06:12:57Z:clawsweeper_needs_human",
+      "comment_id": "5467092496",
+      "comment_version_key": "5467092496:2026-08-30T06:12:57Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1305#issuecomment-5467092496",
+      "comment_created_at": "2026-08-30T06:12:57Z",
+      "comment_updated_at": "2026-08-30T06:12:57Z",
+      "comment_body_sha256": "87c2f7edb4d75e7e90903ae860794d5071268b579266ad089064139573646b66",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1305,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the production runner now gives ORCAROUTER_API_KEY to a full-exec child, but supplied evidence only sh...; Review finding: [P1] Scope the OrcaRouter key to OrcaRouter runs — src/openclaw-process.ts:419 - [P1] Wire the OrcaRouter secret into OpenClaw workflows — src/openclaw-process.ts:... (sha=49f8450fcd1ba44b75f801c856649987afeb9959)",
+      "expected_head_sha": "49f8450fcd1ba44b75f801c856649987afeb9959",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T06:13:42.236Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/orcarouter-builtin-provider",
+        "head_sha": "49f8450fcd1ba44b75f801c856649987afeb9959",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
