@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T04:55:43.967Z",
+  "updated_at": "2026-08-30T04:56:25.056Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122135:5256881030:2026-08-30T01:16:04Z:clawsweeper_needs_human",
-      "comment_id": "5256881030",
-      "comment_version_key": "5256881030:2026-08-30T01:16:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122135#issuecomment-5256881030",
-      "comment_created_at": "2026-08-11T17:55:36Z",
-      "comment_updated_at": "2026-08-30T01:16:04Z",
-      "comment_body_sha256": "c07688738685fbb5469beb2fbe1bd72c3b9345b313a4809b8eeb721787b3e8b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122135,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The source contains a strong real-SDK boundary test, but the PR supplies no inspectable after-fix terminal trace, log, recording, or artifact;... (sha=f3c00613f95db87ecdc856673487a053a82ca7ed)",
-      "expected_head_sha": "f3c00613f95db87ecdc856673487a053a82ca7ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T01:39:40.252Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-120275",
-        "head_sha": "f3c00613f95db87ecdc856673487a053a82ca7ed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123730:5295667121:2026-08-30T01:12:49Z:clawsweeper_needs_human",
       "comment_id": "5295667121",
@@ -30506,6 +30473,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132459:5461029348:2026-08-30T04:55:23Z:clawsweeper_needs_human",
+      "comment_id": "5461029348",
+      "comment_version_key": "5461029348:2026-08-30T04:55:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132459#issuecomment-5461029348",
+      "comment_created_at": "2026-08-29T07:20:43Z",
+      "comment_updated_at": "2026-08-30T04:55:23Z",
+      "comment_body_sha256": "3656e0d36fecef4eadf99549921e748b87ceca571ddbc29f4decf6db2bf4ce99",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132459,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The production liveness path adds a net 236 lines and can defer a genuinely wedged session to the existing 15-minute floor if a terminal lifecycle boundary is missed; the implementati... (sha=8d42041fbe627f72269afcd6e83b7cb5e0121fa5)",
+      "expected_head_sha": "8d42041fbe627f72269afcd6e83b7cb5e0121fa5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T04:56:25.056Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-118386-stuck-session-recovery-still-aborts",
+        "head_sha": "8d42041fbe627f72269afcd6e83b7cb5e0121fa5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
