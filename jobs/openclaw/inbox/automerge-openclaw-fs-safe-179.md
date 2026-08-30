@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-179
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/179#issuecomment-5470198831"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/179#issuecomment-5470451099"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/179#issuecomment-
 Maintainer opted #179 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/179#issuecomment-5470198831
+Request comment: https://github.com/openclaw/fs-safe/pull/179#issuecomment-5470451099
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/179
@@ -59,5 +59,5 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-Verify the exact head enforces one raw TAR contract before JavaScript/native parsing for plain, gzip, zstd, and bzip2: directory/hardlink/symlink raw sizes are zero; EOF is two zero blocks followed only by bounded zero padding; hidden headers, malformed/truncated framing, unsafe numeric sizes, and nonzero trailers reject with JS/native error parity. Check every native inspect/extract/read pass drains its retained meter through physical EOF, all decoded bytes count toward the derived ceiling, member/metadata budgets reject before bodies, and `readArchiveEntry.maxBytes` remains selected-output-only. Confirm PAX/GNU payload compatibility, destination non-publication on late errors, built-binding execution in Linux/macOS/Windows/musl CI, and the non-Windows four-worker CI cap does not alter workloads, timeouts, assertions, or coverage.
+Review exact head `dd07ec96aa3631a66cb1575a2dec152d419bf773`. Verify the prior filter/strip P1 is fixed by removing `maxEntryBytes` and `maxExtractedBytes` from the raw TypeScript/Rust meter interfaces and retaining those public payload budgets exclusively after strip/filter acceptance in JavaScript's checker and the native accepted-plan builder. Confirm skipped and fully stripped 700-byte members succeed under three-byte payload budgets in off/auto/require, gzip, zstd, and bzip2 paths; `maxEntries`, metadata limits, canonical framing, physical-EOF draining, and the absolute decoded ceiling still cover the complete stream; large finite settings and the byte-matched candidate native proof remain valid. Require fresh exact-head Linux/macOS/Windows/musl CI and no branch repair unless a new concrete defect is found.
 
