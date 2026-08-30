@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-30T11:14:14.157Z",
+  "updated_at": "2026-08-30T11:14:51.440Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/fs-safe:169:5467404963:2026-08-30T07:32:07Z:automerge",
-      "comment_id": "5467404963",
-      "comment_version_key": "5467404963:2026-08-30T07:32:07Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/169#issuecomment-5467404963",
-      "comment_created_at": "2026-08-30T07:32:07Z",
-      "comment_updated_at": "2026-08-30T07:32:07Z",
-      "comment_body_sha256": "54f06b510dbf62ad2f06f34c2305c96db6623707cde4bb333c53aa5bec0b8dc6",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 169,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T07:32:45.573Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/file-store-sync-durability",
-        "head_sha": "4558610013caa28e977e59441fc08987a37eba77",
-        "cluster_id": "automerge-openclaw-fs-safe-169",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-169.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-169.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3529:5412904154:2026-08-30T07:32:58Z:clawsweeper_auto_repair",
       "comment_id": "5412904154",
@@ -31959,6 +31900,39 @@
         "kind": "pull_request",
         "branch": "fix/sanitize-text-placeholder-restore",
         "head_sha": "a9a3510c33a175e934c09d3fd17bbd9284cf14ab",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128512:5391097174:2026-08-30T11:14:08Z:clawsweeper_needs_human",
+      "comment_id": "5391097174",
+      "comment_version_key": "5391097174:2026-08-30T11:14:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128512#issuecomment-5391097174",
+      "comment_created_at": "2026-08-24T05:26:46Z",
+      "comment_updated_at": "2026-08-30T11:14:08Z",
+      "comment_body_sha256": "6180e0e88643c62486e93358ee2e1841754a20a38345a93418d8fad44d86226c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128512,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally adds a new direct outbound message after failed requester synthesis; merge should wait for the exact-head delivery checks to complete so the changed channel path is... (sha=6f66d4e7061d58384abc8478f0108fc1893ceb5e)",
+      "expected_head_sha": "6f66d4e7061d58384abc8478f0108fc1893ceb5e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T11:14:51.440Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/subagent-failure-notice-20260824",
+        "head_sha": "6f66d4e7061d58384abc8478f0108fc1893ceb5e",
         "cluster_id": null,
         "job_path": null
       }
