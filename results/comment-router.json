@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T14:16:14.800Z",
+  "updated_at": "2026-08-30T14:16:18.476Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110569:5010615328:2026-08-30T09:39:00Z:clawsweeper_needs_human",
-      "comment_id": "5010615328",
-      "comment_version_key": "5010615328:2026-08-30T09:39:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110569#issuecomment-5010615328",
-      "comment_created_at": "2026-07-18T08:39:07Z",
-      "comment_updated_at": "2026-08-30T09:39:00Z",
-      "comment_body_sha256": "54888333fd463d9390039fa9a71dd247047ace4b256227541723a25f1cd224b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110569,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - A valid but unusually slow Git lookup will now fail the docs check after the fixed per-command timeout; the supplied normal run does not characterize large or overloaded checkouts. (sha=8c74ec7c3ac8a91453fa72b3130f2594c0955d6c)",
-      "expected_head_sha": "8c74ec7c3ac8a91453fa72b3130f2594c0955d6c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T09:39:56.768Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jjy/fix/docs-i18n-glossary-git-timeouts",
-        "head_sha": "8c74ec7c3ac8a91453fa72b3130f2594c0955d6c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110569:5023594280:2026-07-20T14:49:09Z:re_review",
       "comment_id": "5023594280",
@@ -32076,6 +32043,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/kova:103:5464068107:2026-08-30T14:10:38Z:clawsweeper_auto_repair",
+      "comment_id": "5464068107",
+      "comment_version_key": "5464068107:2026-08-30T14:10:38Z",
+      "comment_url": "https://github.com/openclaw/Kova/pull/103#issuecomment-5464068107",
+      "comment_created_at": "2026-08-29T18:17:38Z",
+      "comment_updated_at": "2026-08-30T14:10:38Z",
+      "comment_body_sha256": "737073f10ef59f72d24be64daf5d4f37a1cf9bf1acb220c29c40fe0b7a7ad45b",
+      "repo": "openclaw/kova",
+      "issue_number": 103,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=2908bea5cc94675916ac8031a7299273e64aea7c)",
+      "expected_head_sha": "2908bea5cc94675916ac8031a7299273e64aea7c",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-30T14:16:18.476Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f002-ps-timeout",
+        "head_sha": "2908bea5cc94675916ac8031a7299273e64aea7c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
