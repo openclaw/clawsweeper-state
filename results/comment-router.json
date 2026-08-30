@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T10:13:05.847Z",
+  "updated_at": "2026-08-30T10:13:14.527Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133103:5466981085:2026-08-30T05:44:03Z:clawsweeper_needs_human",
-      "comment_id": "5466981085",
-      "comment_version_key": "5466981085:2026-08-30T05:44:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133103#issuecomment-5466981085",
-      "comment_created_at": "2026-08-30T05:44:03Z",
-      "comment_updated_at": "2026-08-30T05:44:03Z",
-      "comment_body_sha256": "6d45b0d32d952a73d465acf8e74e2abcd1b1264e4d4b26c006936a2a338c8054",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133103,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The production sanitizer is changed at src/infra/outbound/sanitize-text.ts:30-65 and feeds delivery normalization, but the supplied po... (sha=e7f8bffe7cd14c8e28f6a8c6c3196094263e695e)",
-      "expected_head_sha": "e7f8bffe7cd14c8e28f6a8c6c3196094263e695e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T05:44:45.411Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/empty-html-formatting-markers-133077",
-        "head_sha": "e7f8bffe7cd14c8e28f6a8c6c3196094263e695e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109932:5002385752:2026-08-30T05:44:14Z:clawsweeper_needs_human",
       "comment_id": "5002385752",
@@ -32646,6 +32613,39 @@
       "status": "skipped",
       "processed_at": "2026-08-30T10:13:05.847Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:99:5464184379:2026-08-30T10:07:38Z:clawsweeper_auto_repair",
+      "comment_id": "5464184379",
+      "comment_version_key": "5464184379:2026-08-30T10:07:38Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/99#issuecomment-5464184379",
+      "comment_created_at": "2026-08-29T18:42:26Z",
+      "comment_updated_at": "2026-08-30T10:07:38Z",
+      "comment_body_sha256": "72ab692b260b377488e51ebac31fe59f107e7c1a21765506fc6a70cf14a313aa",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 99,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b62f2b15dbebf991333d9a9da2a7839a99dd43c6)",
+      "expected_head_sha": "b62f2b15dbebf991333d9a9da2a7839a99dd43c6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T10:13:14.527Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f001-atomic-run-history",
+        "head_sha": "b62f2b15dbebf991333d9a9da2a7839a99dd43c6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
