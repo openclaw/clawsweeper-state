@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T15:14:08.680Z",
+  "updated_at": "2026-08-30T15:15:23.759Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133204:5468098349:2026-08-30T10:18:36Z:re_review",
-      "comment_id": "5468098349",
-      "comment_version_key": "5468098349:2026-08-30T10:18:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133204#issuecomment-5468098349",
-      "comment_created_at": "2026-08-30T10:18:36Z",
-      "comment_updated_at": "2026-08-30T10:18:36Z",
-      "comment_body_sha256": "f845174f773fe973fd0ab2f711711419171b91b8b900a1f82b70768387dff1bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133204,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T10:19:21.859Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-133051-telegram-terminal-receipt",
-        "head_sha": "d94c0be56aa8433e044e4ae5575c38d230c5208d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133255:5468107788:2026-08-30T10:20:46Z:clawsweeper_needs_human",
       "comment_id": "5468107788",
@@ -32078,6 +32031,39 @@
         "kind": "pull_request",
         "branch": "codex/issue-83636-tts-delivery",
         "head_sha": "0699e8e9bea658acf0c430fb6011f5a7d6bbeeb5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132773:5464218609:2026-08-30T15:09:42Z:clawsweeper_auto_repair",
+      "comment_id": "5464218609",
+      "comment_version_key": "5464218609:2026-08-30T15:09:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132773#issuecomment-5464218609",
+      "comment_created_at": "2026-08-29T18:50:04Z",
+      "comment_updated_at": "2026-08-30T15:09:42Z",
+      "comment_body_sha256": "85d69dd5b4e5c9ace1be7e455fdc325a2cd4c59756e80e18e6f82e32fd7a71d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132773,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=cd0334c38b9bc2563bfbcffa6f4bf29e9655b185)",
+      "expected_head_sha": "cd0334c38b9bc2563bfbcffa6f4bf29e9655b185",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-30T15:15:23.759Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/new-session-type-focus",
+        "head_sha": "cd0334c38b9bc2563bfbcffa6f4bf29e9655b185",
         "cluster_id": null,
         "job_path": null
       }
