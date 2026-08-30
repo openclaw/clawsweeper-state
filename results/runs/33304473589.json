@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123335",
+  "mode": "autonomous",
+  "run_id": "33304473589",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33304473589",
+  "head_sha": "fa535d54a032862b022147a7cba4eaa3bdeb4a7b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123335.md",
+  "published_at": "2026-08-30T09:48:39.716Z",
+  "canonical": "#123335",
+  "canonical_issue": "#123335",
+  "canonical_pr": null,
+  "summary": "#123335 remains the canonical, non-security bug. Current main gives `plugins init`, `plugins build`, and `plugins validate` the default config guard and default proxy policy; the proxy path can still read operator config. A narrow catalog-policy repair is appropriate, but this runner is read-only, has no node_modules/writable Corepack cache, and lacks the mandatory sibling ../codex source, so no branch, patch, or validated PR could be produced.",
+  "actions": [
+    {
+      "target": "#123335",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#123335",
+      "candidate_fix": null,
+      "reason": "A writable, dependency-ready runner with ../codex is required before modifying or validating the fix branch."
+    },
+    {
+      "target": "#123335",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123335",
+      "candidate_fix": null,
+      "reason": "Create the one permitted narrow fix PR once execution prerequisites are available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
