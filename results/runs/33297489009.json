@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133117",
+  "mode": "autonomous",
+  "run_id": "33297489009",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33297489009",
+  "head_sha": "fa535d54a032862b022147a7cba4eaa3bdeb4a7b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133117.md",
+  "published_at": "2026-08-30T06:55:36.242Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133117",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133117",
+  "canonical_pr": null,
+  "summary": "#133117 remains the canonical, reproducible browser microphone-lifecycle bug. Implementation is blocked in this worker because the checkout is read-only and the required direct sibling ../codex source checkout is absent; a narrow, fix-first PR artifact is supplied for a writable rerun.",
+  "actions": [
+    {
+      "target": "#133117",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133117",
+      "candidate_fix": null,
+      "reason": "A writable worker with the required sibling Codex source checkout must perform the narrow repair and regression proof before opening the PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133117",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133117",
+      "candidate_fix": null,
+      "reason": "Prepared for a writable autonomous executor; no GitHub mutation is performed by this worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
