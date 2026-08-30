@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-133442"
 mode: "autonomous"
-run_id: "33328063840"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33328063840"
+run_id: "33329793842"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33329793842"
 head_sha: "74b0f8552fde46842a933ca360ed272f0212193e"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-30T18:44:05.834Z"
-canonical: "https://github.com/openclaw/openclaw/issues/133442"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/133442"
+published_at: "2026-08-30T19:18:24.442Z"
+canonical: "#133442"
+canonical_issue: "#133442"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-133442
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33328063840](https://github.com/openclaw/clawsweeper/actions/runs/33328063840)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33329793842](https://github.com/openclaw/clawsweeper/actions/runs/33329793842)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/133442
+Canonical: #133442
 
 ## Summary
 
-#133442 is a confirmed narrow cron-maintenance bug on current main b73faf7328488a8c31a8cce39dc705376605e492. A fix PR is warranted, but this worker cannot modify or validate the branch: the checkout is read-only, pnpm cannot initialize Corepack (EROFS), and the mandatory sibling ../codex source is absent and cannot be cloned under the sandbox policy.
+Prepared a narrow repair artifact for canonical issue #133442. Local implementation and validation are blocked: this checkout is read-only, node_modules is absent, and required sibling ../codex source is unavailable for the repository’s Codex gate.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/133442
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/133442
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #133442 | fix_needed | planned | canonical | A narrow owner-boundary repair exists; see the cluster fix artifact. |
-| #127258 | keep_related | planned | related | Keep as a separate recovery-batching follow-up. |
-| cluster:issue-openclaw-openclaw-133442 | build_fix_artifact | planned | canonical | Executor should implement and validate this artifact in a writable checkout with the required Codex sibling available. |
+| #127258 | keep_related | planned | related | Related cron ownership work, but it has a distinct root cause and protected maintainer scope. |
+| #133442 | fix_needed | planned | canonical | The source establishes the requested repair surface, but the worker cannot modify files or run the required regression suite in this environment. |
+| fix-artifact:issue-openclaw-openclaw-133442 | build_fix_artifact | planned | canonical | A permitted new fix PR remains the canonical path once a write-enabled worker can satisfy repository gates. |
 
 ## Needs Human
 
-- none
+- Provide a write-enabled checkout with installed dependencies and sibling ../codex source available; then create or update clawsweeper/issue-openclaw-openclaw-133442 and run the listed regressions before opening the allowed PR.

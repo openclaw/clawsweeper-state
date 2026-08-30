@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133442",
+  "mode": "autonomous",
+  "run_id": "33329793842",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33329793842",
+  "head_sha": "74b0f8552fde46842a933ca360ed272f0212193e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133442.md",
+  "published_at": "2026-08-30T19:18:24.442Z",
+  "canonical": "#133442",
+  "canonical_issue": "#133442",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow repair artifact for canonical issue #133442. Local implementation and validation are blocked: this checkout is read-only, node_modules is absent, and required sibling ../codex source is unavailable for the repository’s Codex gate.",
+  "actions": [
+    {
+      "target": "#127258",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#133442",
+      "candidate_fix": null,
+      "reason": "Related cron ownership work, but it has a distinct root cause and protected maintainer scope."
+    },
+    {
+      "target": "#133442",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133442",
+      "candidate_fix": null,
+      "reason": "The source establishes the requested repair surface, but the worker cannot modify files or run the required regression suite in this environment."
+    },
+    {
+      "target": "fix-artifact:issue-openclaw-openclaw-133442",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133442",
+      "candidate_fix": null,
+      "reason": "A permitted new fix PR remains the canonical path once a write-enabled worker can satisfy repository gates."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a write-enabled checkout with installed dependencies and sibling ../codex source available; then create or update clawsweeper/issue-openclaw-openclaw-133442 and run the listed regressions before opening the allowed PR."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
