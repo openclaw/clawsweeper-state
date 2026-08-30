@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T01:55:41.267Z",
+  "updated_at": "2026-08-30T01:57:55.487Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132882:5465305183:2026-08-29T22:42:13Z:clawsweeper_needs_human",
-      "comment_id": "5465305183",
-      "comment_version_key": "5465305183:2026-08-29T22:42:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132882#issuecomment-5465305183",
-      "comment_created_at": "2026-08-29T22:42:13Z",
-      "comment_updated_at": "2026-08-29T22:42:13Z",
-      "comment_body_sha256": "ff2340bf3f1ca6a5cbe5dc2eb4423773674c07cb3613ef6f0a654aa19d6c0cd2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132882,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied snapshot omits the latest ClawSweeper comment and GitHub was unreachable during review; check its Rank-up moves before landing. Exact-head CI was still running. (sha=2581a5833c3ced4a4bac48d1744bff0e36a76424)",
-      "expected_head_sha": "2581a5833c3ced4a4bac48d1744bff0e36a76424",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T22:42:56.925Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/task-status-cell",
-        "head_sha": "2581a5833c3ced4a4bac48d1744bff0e36a76424",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rfcs:17:4759967424:2026-08-29T22:42:24Z:clawsweeper_needs_human",
       "comment_id": "4759967424",
@@ -31137,6 +31104,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132583:5466113841:2026-08-30T01:57:16Z:re_review",
+      "comment_id": "5466113841",
+      "comment_version_key": "5466113841:2026-08-30T01:57:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132583#issuecomment-5466113841",
+      "comment_created_at": "2026-08-30T01:57:16Z",
+      "comment_updated_at": "2026-08-30T01:57:16Z",
+      "comment_body_sha256": "a090ac66300f9a1813cac87c3537f058db8c61ff7a6402c1309c82b66c150efc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132583,
+      "author": "Marvinthebored",
+      "author_id": 262704729,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T01:57:53.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-mode-resume-after-reconciliation-v2",
+        "head_sha": "3ebf836560de71aebbb150219e98faa927a92b94",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
