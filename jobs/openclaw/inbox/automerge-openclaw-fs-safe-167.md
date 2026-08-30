@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-167
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/167#issuecomment-5466418314"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/167#issuecomment-5467186905"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/167#issuecomment-
 Maintainer opted #167 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/167#issuecomment-5466418314
+Request comment: https://github.com/openclaw/fs-safe/pull/167#issuecomment-5467186905
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/167
@@ -55,4 +55,8 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 - Never add forbidden changelog credit lines for `@codex`, `@openclaw`, or `@steipete`; preserve contributor credit through source links, PR body, and commit/PR history.
 - Do not merge, close, or bypass review gates from the worker. The comment router owns final merge only after a passing ClawSweeper verdict for the exact current head.
 - Keep repair scope limited to actionable ClawSweeper findings, failing relevant checks, and required review feedback on this PR.
+
+Maintainer special instructions:
+
+The exact-head repair replaces the check-then-unlink path with a fail-closed per-ID lock, an atomic no-replace hardlink claim, and crash-recoverable source retirement. The PR body now includes the packed-consumer replacement-boundary proof and final local validation.
 
