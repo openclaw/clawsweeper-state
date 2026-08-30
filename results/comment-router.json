@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T17:18:53.684Z",
+  "updated_at": "2026-08-30T17:20:04.773Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5468563595:2026-08-30T12:03:03Z:re_review",
-      "comment_id": "5468563595",
-      "comment_version_key": "5468563595:2026-08-30T12:03:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5468563595",
-      "comment_created_at": "2026-08-30T12:03:03Z",
-      "comment_updated_at": "2026-08-30T12:03:03Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T12:03:46.153Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-usage-ui",
-        "head_sha": "4ced22e040ec8e558a19a78ebe245af0cf186cb0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132454:5461020893:2026-08-30T12:02:38Z:clawsweeper_needs_human",
       "comment_id": "5461020893",
@@ -32566,6 +32519,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132794:5464352485:2026-08-30T17:19:19Z:clawsweeper_needs_human",
+      "comment_id": "5464352485",
+      "comment_version_key": "5464352485:2026-08-30T17:19:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132794#issuecomment-5464352485",
+      "comment_created_at": "2026-08-29T19:18:38Z",
+      "comment_updated_at": "2026-08-30T17:19:19Z",
+      "comment_body_sha256": "4ca820dbfcc0efdaf31a72430b00046452e25e234610a6307118d5b4ecbf8541",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132794,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head Control UI E2E checks are skipped while this PR remains draft, so the new geometry assertions have not yet run in CI. (sha=49f6cc5aab7580ab0d61139f21d30cbd439914fd)",
+      "expected_head_sha": "49f6cc5aab7580ab0d61139f21d30cbd439914fd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T17:20:04.773Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sidebar-alignment",
+        "head_sha": "49f6cc5aab7580ab0d61139f21d30cbd439914fd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
