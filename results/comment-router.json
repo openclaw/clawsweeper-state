@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T01:03:25.412Z",
+  "updated_at": "2026-08-30T01:04:27.924Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132513:5465036285:2026-08-29T21:39:44Z:re_review",
-      "comment_id": "5465036285",
-      "comment_version_key": "5465036285:2026-08-29T21:39:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132513#issuecomment-5465036285",
-      "comment_created_at": "2026-08-29T21:39:44Z",
-      "comment_updated_at": "2026-08-29T21:39:44Z",
-      "comment_body_sha256": "4e82478c4cc01fff886e410da2f520981d07ca0b1e7c65ebfeed27c3cf5a5f61",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132513,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T21:40:19.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-frozen-plugin-security-inventory",
-        "head_sha": "85dc42481e7458338a56775466633a5126f48fa0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131959:5465043022:2026-08-29T21:41:15Z:re_review",
       "comment_id": "5465043022",
@@ -31054,6 +31007,39 @@
         "kind": "pull_request",
         "branch": "codex/pr-metadata-relay",
         "head_sha": "189e5b3f288a7f166926c3be392ca521db110ccf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132958:5465894687:2026-08-30T01:03:43Z:clawsweeper_needs_human",
+      "comment_id": "5465894687",
+      "comment_version_key": "5465894687:2026-08-30T01:03:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132958#issuecomment-5465894687",
+      "comment_created_at": "2026-08-30T01:03:43Z",
+      "comment_updated_at": "2026-08-30T01:03:43Z",
+      "comment_body_sha256": "094196073e27b381683741c184c48a59cfe35d529ebff887d291f04c3834e584",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132958,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 16 net lines to add the scoped disposal boundary; this is justified by the required ordering across three store owners, but should remain limited to this QA-o... (sha=3db9487e268d02b79699421c4fca5d3f23ebc74b)",
+      "expected_head_sha": "3db9487e268d02b79699421c4fca5d3f23ebc74b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T01:04:27.924Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/sharp-hodgkin-e8ad2e",
+        "head_sha": "3db9487e268d02b79699421c4fca5d3f23ebc74b",
         "cluster_id": null,
         "job_path": null
       }
