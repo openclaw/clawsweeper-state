@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-107487"
 mode: "autonomous"
-run_id: "33322385054"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33322385054"
+run_id: "33322785531"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33322785531"
 head_sha: "c179a466606f782ae73404357a0c94e6bead5807"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-30T16:39:59.572Z"
+published_at: "2026-08-30T16:51:47.972Z"
 canonical: "https://github.com/openclaw/openclaw/issues/107487"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/107487"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33322385054](https://github.com/openclaw/clawsweeper/actions/runs/33322385054)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33322785531](https://github.com/openclaw/clawsweeper/actions/runs/33322785531)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/107487
 
 ## Summary
 
-Current main retains the reported defect: `/acp close` omits `discardPersistentState`, while ACPX fresh preparation only masks the persisted record in memory and loses that state after restart. A narrow credited fix PR remains appropriate, but this read-only checkout lacks both the pinned `acpx@0.13.1` source required to confirm its durable record contract and the required sibling `../codex` checkout; dependencies and validation cannot run.
+#107487 remains a reproducible current-main bug. A narrow fix artifact is ready, but this read-only checkout cannot install the pinned ACPX source, run the restart proof, create the branch, or satisfy the mandated direct ../codex inspection because that sibling source is absent.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current main retains the reported defect: `/acp close` omits `discardPersistentS
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #107487 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Current main retains the reported defect: `/acp close` omits `discardPersistentS
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #107487 | fix_needed | blocked | canonical | Implementation is blocked pending a writable checkout with installed `acpx@0.13.1` source for direct contract inspection, the required sibling Codex checkout, and runnable validation. |
-| #109270 | keep_closed | skipped | related | Historical adjacent context only; no mutation is valid. |
-| #111628 | keep_closed | skipped | superseded | Already closed; retain as credited historical evidence only. |
-| cluster:issue-openclaw-openclaw-107487 | build_fix_artifact | blocked | canonical | Artifact is ready, but exact durable-record mutation and validation remain blocked on unavailable upstream source and read-only dependencies. |
+| #107487 | fix_needed | blocked | canonical | Run the artifact in a writable checkout with installed acpx@0.13.1 and sibling ../codex source, then reproduce, validate, and open/update clawsweeper/issue-openclaw-openclaw-107487. |
+| #109270 | keep_closed | skipped | related | Historical context only; no close action is valid for an already-closed issue. |
+| #111628 | keep_closed | skipped | superseded | Already closed contributor PR; preserve @yetval attribution in the replacement PR rather than attempting a closure or merge. |
+| cluster:issue-openclaw-openclaw-107487 | build_fix_artifact | planned | canonical | Executor can create the new credited fix PR after completing the blocked dependency/Codex inspections and before/after restart proof. |
 
 ## Needs Human
 
