@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T14:42:01.338Z",
+  "updated_at": "2026-08-30T14:42:32.178Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133237:5468002928:2026-08-30T10:02:56Z:clawsweeper_auto_repair",
-      "comment_id": "5468002928",
-      "comment_version_key": "5468002928:2026-08-30T10:02:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133237#issuecomment-5468002928",
-      "comment_created_at": "2026-08-30T09:56:10Z",
-      "comment_updated_at": "2026-08-30T10:02:56Z",
-      "comment_body_sha256": "d3c36ccfd256285f5281f667048ddfde29855503297e2e4c6e6835938d0a074e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133237,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=77edc5ae1fbcb2a1978083dba3ed4d94f0c6a233)",
-      "expected_head_sha": "77edc5ae1fbcb2a1978083dba3ed4d94f0c6a233",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T10:10:33.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/frv-managed-media-custody",
-        "head_sha": "77edc5ae1fbcb2a1978083dba3ed4d94f0c6a233",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133241:5468032286:2026-08-30T10:03:10Z:clawsweeper_needs_human",
       "comment_id": "5468032286",
@@ -31878,6 +31845,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1619:5469337993:2026-08-30T14:41:49Z:re_review",
+      "comment_id": "5469337993",
+      "comment_version_key": "5469337993:2026-08-30T14:41:49Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1619#issuecomment-5469337993",
+      "comment_created_at": "2026-08-30T14:41:49Z",
+      "comment_updated_at": "2026-08-30T14:41:49Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1619,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T14:42:29.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pool-provider-bound-capacity",
+        "head_sha": "8e76cd5394b633b508df2fcf44a4b11c5a94cfd9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
