@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T09:15:57.600Z",
+  "updated_at": "2026-08-30T09:16:03.925Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122256:5260240229:2026-08-30T04:37:51Z:clawsweeper_auto_repair",
-      "comment_id": "5260240229",
-      "comment_version_key": "5260240229:2026-08-30T04:37:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122256#issuecomment-5260240229",
-      "comment_created_at": "2026-08-11T23:54:18Z",
-      "comment_updated_at": "2026-08-30T04:37:51Z",
-      "comment_body_sha256": "28fa31f3daf289a3f069c8ca4df27582554d784edc65e08f6165356424d73774",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122256,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1f6359949a08aecd418c38dbaaa723b22c424515)",
-      "expected_head_sha": "1f6359949a08aecd418c38dbaaa723b22c424515",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T04:42:12.396Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/repeat-model-provider-auth",
-        "head_sha": "1f6359949a08aecd418c38dbaaa723b22c424515",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122439:5262957437:2026-08-30T04:35:00Z:clawsweeper_auto_repair",
       "comment_id": "5262957437",
@@ -32296,6 +32263,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116248:5467831668:2026-08-30T09:15:06Z:re_review",
+      "comment_id": "5467831668",
+      "comment_version_key": "5467831668:2026-08-30T09:15:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116248#issuecomment-5467831668",
+      "comment_created_at": "2026-08-30T09:15:06Z",
+      "comment_updated_at": "2026-08-30T09:15:06Z",
+      "comment_body_sha256": "c779298f092137e71388de5c9b2743725e619281b2bd64e832ca5cef5e24b6ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116248,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T09:16:01.929Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auth-paste-subagent-breaks-main-env",
+        "head_sha": "8223a982d6aa931a5af2ab6edf3c85beb2e5fa67",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
