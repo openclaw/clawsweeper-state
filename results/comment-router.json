@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T12:52:29.921Z",
+  "updated_at": "2026-08-30T12:52:48.580Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133089:5466892296:2026-08-30T08:34:45Z:clawsweeper_needs_human",
-      "comment_id": "5466892296",
-      "comment_version_key": "5466892296:2026-08-30T08:34:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133089#issuecomment-5466892296",
-      "comment_created_at": "2026-08-30T05:20:57Z",
-      "comment_updated_at": "2026-08-30T08:34:45Z",
-      "comment_body_sha256": "656c57ad6cae7116a524d0d132400e2143a244026ef416855debc5782c8f8f82",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133089,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the Codex tool-filter contract** - The Codex app-server projection now relies on enabled_tools and disabled_tools; the required sibling Codex source is absent, so this review can...; Review finding: [medium] Verify the Codex tool-filter contract — src/agents/cli-runner/bundle-mcp-codex.ts:149 (sha=ef4dbc3f53043b78899bca8338656d6c120a5087)",
-      "expected_head_sha": "ef4dbc3f53043b78899bca8338656d6c120a5087",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T08:44:09.082Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-119310",
-        "head_sha": "ef4dbc3f53043b78899bca8338656d6c120a5087",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133133:5467274084:2026-08-30T08:36:55Z:clawsweeper_needs_human",
       "comment_id": "5467274084",
@@ -32003,6 +31970,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1665:5468795483:2026-08-30T12:51:59Z:re_review",
+      "comment_id": "5468795483",
+      "comment_version_key": "5468795483:2026-08-30T12:51:59Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1665#issuecomment-5468795483",
+      "comment_created_at": "2026-08-30T12:51:59Z",
+      "comment_updated_at": "2026-08-30T12:51:59Z",
+      "comment_body_sha256": "f11ba83b6a32921aecd3fb8f18998153cbc977a9c4175e12ea5684ada0e1bd55",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1665,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T12:52:45.633Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ascii-box-exact-ownership",
+        "head_sha": "1d4cc84c2d8b9d54dd19075aefe8e13826173617",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
