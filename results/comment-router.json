@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T17:40:06.116Z",
+  "updated_at": "2026-08-30T17:40:11.283Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133089:5466892296:2026-08-30T12:20:47Z:clawsweeper_needs_human",
-      "comment_id": "5466892296",
-      "comment_version_key": "5466892296:2026-08-30T12:20:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133089#issuecomment-5466892296",
-      "comment_created_at": "2026-08-30T05:20:57Z",
-      "comment_updated_at": "2026-08-30T12:20:47Z",
-      "comment_body_sha256": "eb9127f8094f74511e62c6b03bbf0b12eed20e4195c79c3eed65f728dff0b48b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133089,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The security-sensitive Codex projection cannot be independently validated against the required pinned Codex source until that sibling checkout or an equivalent direct source path is a... (sha=360cfffc0bb3c2633ef4f40fe68a814897c8e24c)",
-      "expected_head_sha": "360cfffc0bb3c2633ef4f40fe68a814897c8e24c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T12:25:08.982Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-119310",
-        "head_sha": "360cfffc0bb3c2633ef4f40fe68a814897c8e24c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133136:5467295597:2026-08-30T12:20:27Z:clawsweeper_auto_repair",
       "comment_id": "5467295597",
@@ -32783,6 +32750,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:179:5470220210:2026-08-30T17:39:16Z:clawsweeper_auto_repair",
+      "comment_id": "5470220210",
+      "comment_version_key": "5470220210:2026-08-30T17:39:16Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/179#issuecomment-5470220210",
+      "comment_created_at": "2026-08-30T17:34:33Z",
+      "comment_updated_at": "2026-08-30T17:39:16Z",
+      "comment_body_sha256": "b1e1113bdaa2208438eea208931ff11b47ed9ff2e353f726cd3c3e3179154b21",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 179,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=07d8a2c3a271239f6e2b70e38b62d62e7b9bab30)",
+      "expected_head_sha": "07d8a2c3a271239f6e2b70e38b62d62e7b9bab30",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-30T17:40:08.340Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tar-raw-framing",
+        "head_sha": "07d8a2c3a271239f6e2b70e38b62d62e7b9bab30",
+        "cluster_id": "automerge-openclaw-fs-safe-179",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-179.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-179.md"
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-179.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
