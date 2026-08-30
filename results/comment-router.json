@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T01:12:39.316Z",
+  "updated_at": "2026-08-30T01:12:47.016Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112214:5465117986:2026-08-29T21:58:21Z:re_review",
-      "comment_id": "5465117986",
-      "comment_version_key": "5465117986:2026-08-29T21:58:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112214#issuecomment-5465117986",
-      "comment_created_at": "2026-08-29T21:58:21Z",
-      "comment_updated_at": "2026-08-29T21:58:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112214,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T21:59:19.435Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/memory-search-timeout-fallback",
-        "head_sha": "f56bdfef9394f6ad06c671c13453d2b0f1357fa7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129120:5407334534:2026-08-29T21:56:29Z:clawsweeper_needs_human",
       "comment_id": "5407334534",
@@ -31032,6 +30985,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3530:5413278014:2026-08-30T01:11:52Z:clawsweeper_needs_human",
+      "comment_id": "5413278014",
+      "comment_version_key": "5413278014:2026-08-30T01:11:52Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3530#issuecomment-5413278014",
+      "comment_created_at": "2026-08-25T16:11:02Z",
+      "comment_updated_at": "2026-08-30T01:11:52Z",
+      "comment_body_sha256": "fab0a51a57df89e09c4f0d029b72c0f227f4ad74cf6731940202f0b63a353cbf",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3530,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Vercel OIDC and jose upgrades affect token acquisition and verification on archive and skills.sh operator paths; the supplied evidence does not exercise those paths after the upda... (sha=5619fcaed96a82b220c4c1f7c2f9a9517e1784ec)",
+      "expected_head_sha": "5619fcaed96a82b220c4c1f7c2f9a9517e1784ec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T01:12:47.016Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/production-minor-and-patch-d4c9adcfe4",
+        "head_sha": "5619fcaed96a82b220c4c1f7c2f9a9517e1784ec",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
