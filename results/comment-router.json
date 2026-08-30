@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T00:34:01.187Z",
+  "updated_at": "2026-08-30T00:34:12.338Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132835:5464709053:2026-08-29T21:04:20Z:clawsweeper_auto_repair",
-      "comment_id": "5464709053",
-      "comment_version_key": "5464709053:2026-08-29T21:04:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132835#issuecomment-5464709053",
-      "comment_created_at": "2026-08-29T20:27:24Z",
-      "comment_updated_at": "2026-08-29T21:04:20Z",
-      "comment_body_sha256": "c098eacd51bd9e6a6a78061b3a5d4e8ddd384bb39b2630d8e1aa726a26d3e523",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132835,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=008b72d3ddfd8f4697e9e7bb8597e17dda8a7ee6)",
-      "expected_head_sha": "008b72d3ddfd8f4697e9e7bb8597e17dda8a7ee6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T21:08:36.689Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/vito-vacinc-issue-132387",
-        "head_sha": "008b72d3ddfd8f4697e9e7bb8597e17dda8a7ee6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rfcs:33:4933186023:2026-08-29T21:07:27Z:clawsweeper_auto_repair",
       "comment_id": "4933186023",
@@ -31026,6 +30993,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132569:5462323616:2026-08-30T00:33:28Z:clawsweeper_needs_human",
+      "comment_id": "5462323616",
+      "comment_version_key": "5462323616:2026-08-30T00:33:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132569#issuecomment-5462323616",
+      "comment_created_at": "2026-08-29T12:06:27Z",
+      "comment_updated_at": "2026-08-30T00:33:28Z",
+      "comment_body_sha256": "e8eda354768c8f33325a8cfa13faf3b153aa82fc149ea0cd0d1d8654c5e4d6f9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132569,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Runtime production code grows by net 67 lines; the added revision and queued-reload state are necessary because the prior owner retained no per-draft temporal fact, but this concurren... (sha=fed3b68858ad8383a26b817cf43af6fe065f9567)",
+      "expected_head_sha": "fed3b68858ad8383a26b817cf43af6fe065f9567",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T00:34:12.338Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/channels-config-save-draft-revision",
+        "head_sha": "fed3b68858ad8383a26b817cf43af6fe065f9567",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
