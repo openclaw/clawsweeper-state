@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-30T16:46:05.135Z",
+  "updated_at": "2026-08-30T16:46:14.598Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119525:5213849492:2026-08-07T07:23:20Z:automerge",
-      "comment_id": "5213849492",
-      "comment_version_key": "5213849492:2026-08-07T07:23:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119525#issuecomment-5213849492",
-      "comment_created_at": "2026-08-07T07:23:20Z",
-      "comment_updated_at": "2026-08-07T07:23:20Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119525,
-      "author": "momothemage",
-      "author_id": 35096042,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T11:00:06.796Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/memory-search-timeout-classification",
-        "head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-        "cluster_id": "automerge-openclaw-openclaw-119525",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119525:5189131617:2026-08-05T07:55:31Z:re_review",
       "comment_id": "5189131617",
@@ -32673,6 +32620,39 @@
         "kind": "pull_request",
         "branch": "codex/coordinator-stop-cleanup-budget",
         "head_sha": "b9f53788d55c37e99bf8a94d63fd1e4ac8fcecb5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130202:5428762635:2026-08-30T16:40:04Z:clawsweeper_needs_human",
+      "comment_id": "5428762635",
+      "comment_version_key": "5428762635:2026-08-30T16:40:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130202#issuecomment-5428762635",
+      "comment_created_at": "2026-08-26T17:30:30Z",
+      "comment_updated_at": "2026-08-30T16:40:04Z",
+      "comment_body_sha256": "905ca426343d333ca7f533e54a0a0bfef5ef2ac9bd84937b7c64715a41211341",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130202,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed owner is channelsLogsCommand; its supplied fixture result supports the severity predicate, but the claimed exact-head Comm... (sha=37d16155f1f4244920da78e2b844bd0fb042f755)",
+      "expected_head_sha": "37d16155f1f4244920da78e2b844bd0fb042f755",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T16:46:14.598Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "issue-130187-channels-logs-level",
+        "head_sha": "37d16155f1f4244920da78e2b844bd0fb042f755",
         "cluster_id": null,
         "job_path": null
       }
