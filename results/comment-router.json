@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T09:56:03.837Z",
+  "updated_at": "2026-08-30T09:56:23.123Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99556:4876928065:2026-08-30T05:28:14Z:clawsweeper_needs_human",
-      "comment_id": "4876928065",
-      "comment_version_key": "4876928065:2026-08-30T05:28:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-4876928065",
-      "comment_created_at": "2026-07-03T13:44:49Z",
-      "comment_updated_at": "2026-08-30T05:28:14Z",
-      "comment_body_sha256": "67b3b313cc33e7735fb714090e3f18cd15fac024a36b7fee0336e3a63eacf38b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99556,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing non-UI consumers of stored chat history may expect a renderable data URL and will receive an omission marker after upgrade. (sha=97bb40177d96e78751827286a17012c20a387326)",
-      "expected_head_sha": "97bb40177d96e78751827286a17012c20a387326",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T05:32:11.764Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-history-sanitize-input-image",
-        "head_sha": "97bb40177d96e78751827286a17012c20a387326",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109932:5002385752:2026-08-30T05:22:50Z:clawsweeper_needs_human",
       "comment_id": "5002385752",
@@ -32458,6 +32425,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133234:5468001259:2026-08-30T09:55:43Z:re_review",
+      "comment_id": "5468001259",
+      "comment_version_key": "5468001259:2026-08-30T09:55:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133234#issuecomment-5468001259",
+      "comment_created_at": "2026-08-30T09:55:43Z",
+      "comment_updated_at": "2026-08-30T09:55:43Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133234,
+      "author": "PollyBot13",
+      "author_id": 261872620,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T09:56:21.559Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-wiki-registry-lifetime",
+        "head_sha": "8aad0f8f5ceb9f990e09c416ae4d10698a0e33bf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
