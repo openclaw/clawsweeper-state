@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133306",
+  "mode": "autonomous",
+  "run_id": "33315132328",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33315132328",
+  "head_sha": "c179a466606f782ae73404357a0c94e6bead5807",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133306.md",
+  "published_at": "2026-08-30T14:19:13.878Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133306",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133306",
+  "canonical_pr": null,
+  "summary": "#133306 is a narrow canonical plugin-loader bug on main, but this read-only checkout lacks tsx and the required sibling ../codex source is unavailable, so no locally validated branch or PR can be produced. A bounded new-PR artifact is ready for a writable executor.",
+  "actions": [
+    {
+      "target": "#133306",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133306",
+      "candidate_fix": null,
+      "reason": "Implementation and validation are blocked only by the worker environment. The deterministic executor should apply the artifact on a writable checkout with dependencies and the required sibling Codex source."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133306",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#133306",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement this as one narrow fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
