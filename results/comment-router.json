@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T00:18:02.611Z",
+  "updated_at": "2026-08-30T00:19:15.932Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132450:5464322151:2026-08-29T19:12:12Z:re_review",
-      "comment_id": "5464322151",
-      "comment_version_key": "5464322151:2026-08-29T19:12:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132450#issuecomment-5464322151",
-      "comment_created_at": "2026-08-29T19:12:12Z",
-      "comment_updated_at": "2026-08-29T19:12:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132450,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T19:12:54.540Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-controls",
-        "head_sha": "60fc9647abe35975848731ee5de770705250bdb7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104158:4942400393:2026-08-29T19:11:06Z:clawsweeper_auto_repair",
       "comment_id": "4942400393",
@@ -32806,6 +32759,39 @@
         "kind": "pull_request",
         "branch": "refactor/reuse-cli-errno-check",
         "head_sha": "15d6890f070059c2de2046b38f0793bec0adaecf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1300:5465606240:2026-08-30T00:18:28Z:clawsweeper_needs_human",
+      "comment_id": "5465606240",
+      "comment_version_key": "5465606240:2026-08-30T00:18:28Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1300#issuecomment-5465606240",
+      "comment_created_at": "2026-08-29T23:54:54Z",
+      "comment_updated_at": "2026-08-30T00:18:28Z",
+      "comment_body_sha256": "9ed4f1e76eb175ea8ebbe278038d83025a76e4974a15e44f4ef00cf4543740ca",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1300,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production path is trustedScanner invoking the managed bootstrap before scanAgentInput; the body describes successful rest...; Review finding: [P1] Reject in-checkout cache roots before bootstrapping — src/agent-input-scan.ts:110-118 - [medium] Cache-root rejection happens after checkout writes — src/agen... (sha=c309d9956488c8683a53ff0cfbd03d119bc4581a)",
+      "expected_head_sha": "c309d9956488c8683a53ff0cfbd03d119bc4581a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T00:19:15.932Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-145-trusted-input-scanner",
+        "head_sha": "c309d9956488c8683a53ff0cfbd03d119bc4581a",
         "cluster_id": null,
         "job_path": null
       }
