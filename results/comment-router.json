@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T04:54:48.112Z",
+  "updated_at": "2026-08-30T04:55:43.967Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119983:5209715304:2026-08-29T21:53:33Z:clawsweeper_auto_repair",
-      "comment_id": "5209715304",
-      "comment_version_key": "5209715304:2026-08-29T21:53:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119983#issuecomment-5209715304",
-      "comment_created_at": "2026-08-06T22:56:08Z",
-      "comment_updated_at": "2026-08-29T21:53:33Z",
-      "comment_body_sha256": "3126d44b0bf6c8b2965cfbe5661be37311aefa8bfda0f8ac09f2ac880b74071c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119983,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=36d8fda796274bea9bef55a88a9b9d1d1ec43e57)",
-      "expected_head_sha": "36d8fda796274bea9bef55a88a9b9d1d1ec43e57",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T01:39:40.252Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119962",
-        "head_sha": "36d8fda796274bea9bef55a88a9b9d1d1ec43e57",
-        "cluster_id": "automerge-openclaw-openclaw-119983",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119983.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122135:5256881030:2026-08-30T01:16:04Z:clawsweeper_needs_human",
       "comment_id": "5256881030",
@@ -30492,6 +30459,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131604:5466795460:2026-08-30T04:54:58Z:re_review",
+      "comment_id": "5466795460",
+      "comment_version_key": "5466795460:2026-08-30T04:54:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131604#issuecomment-5466795460",
+      "comment_created_at": "2026-08-30T04:54:58Z",
+      "comment_updated_at": "2026-08-30T04:54:58Z",
+      "comment_body_sha256": "30902bcab5289acd17f58343376fbfbfd08d843695e8ab80c9bfa36a83ac55be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131604,
+      "author": "michielhdoteth",
+      "author_id": 97935846,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review requested after force-push to 606ccca. all code-caused ci failures (ts2722 typecheck + python o_rdwr pread) are resolved. remaining failures are pre-existing (config-8, compact-small-49 flaky, pr context metadata, ci-gate cascading)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T04:55:41.829Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-117741-atomic-append",
+        "head_sha": "606ccca075107fcf9213ce595f78409202d4a8ce",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
