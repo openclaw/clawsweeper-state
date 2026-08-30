@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-08-30T05:11:11.265Z",
+  "updated_at": "2026-08-30T05:11:37.551Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129694:5466044265:2026-08-30T01:40:13Z:re_review",
-      "comment_id": "5466044265",
-      "comment_version_key": "5466044265:2026-08-30T01:40:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129694#issuecomment-5466044265",
-      "comment_created_at": "2026-08-30T01:40:13Z",
-      "comment_updated_at": "2026-08-30T01:40:13Z",
-      "comment_body_sha256": "0b06056b6e81216d956ca2335de7aa835ce04e45c873edf1a67133f7379b1f1c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129694,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T01:40:53.477Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-venice-authoritative-model-pricing-20260825",
-        "head_sha": "1adf37728b82b32d7597ca092aa81b3aa9ab8e43",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:207:5466045864:2026-08-30T01:40:35Z:clawsweeper_needs_human",
-      "comment_id": "5466045864",
-      "comment_version_key": "5466045864:2026-08-30T01:40:35Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/207#issuecomment-5466045864",
-      "comment_created_at": "2026-08-30T01:40:35Z",
-      "comment_updated_at": "2026-08-30T01:40:35Z",
-      "comment_body_sha256": "bc2de960e44d44d4e6c1ac3a922677c8df59a3db6692ecdb495ca5986449259e",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 207,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the Codex fallback loop; supplied tests mock both scanner and provider processes, so they check ordering and re... (sha=739849b503b378cdc5ec3a81b5df9f01f7e70f1d)",
-      "expected_head_sha": "739849b503b378cdc5ec3a81b5df9f01f7e70f1d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T01:41:20.303Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/autoreview-retry-presend-scan",
-        "head_sha": "739849b503b378cdc5ec3a81b5df9f01f7e70f1d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132959:5465896125:2026-08-30T01:40:55Z:clawsweeper_auto_repair",
       "comment_id": "5465896125",
@@ -30474,6 +30394,86 @@
         "kind": "pull_request",
         "branch": "fix/f002-ps-timeout",
         "head_sha": "2908bea5cc94675916ac8031a7299273e64aea7c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133052:5466825822:2026-08-30T05:03:19Z:re_review",
+      "comment_id": "5466825822",
+      "comment_version_key": "5466825822:2026-08-30T05:03:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133052#issuecomment-5466825822",
+      "comment_created_at": "2026-08-30T05:03:19Z",
+      "comment_updated_at": "2026-08-30T05:03:19Z",
+      "comment_body_sha256": "929c335c60ebbe3ae3d469149c7d7456362c679f304e17281a1309a0ebcd6ff1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133052,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the canonical retry repair is an additional behavior change beyond the original cleanup finding",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T05:11:35.347Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/sweet-poincare-a26147",
+        "head_sha": "9761cb13b29b31bfb57bdf477391e186174c8265",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133052:5466526304:2026-08-30T05:10:45Z:clawsweeper_needs_human",
+      "comment_id": "5466526304",
+      "comment_version_key": "5466526304:2026-08-30T05:10:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133052#issuecomment-5466526304",
+      "comment_created_at": "2026-08-30T03:42:24Z",
+      "comment_updated_at": "2026-08-30T05:10:45Z",
+      "comment_body_sha256": "42bfc145175dc5ec741b0f1a0cf1c58d1d59b1db6166e5f4b5f9ee133a54a844",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133052,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted browser queue data from session-storage v2 to v3 and upgrades the shared IndexedDB schema to version 2; landing before the pending exact-head CI completes could... (sha=9761cb13b29b31bfb57bdf477391e186174c8265)",
+      "expected_head_sha": "9761cb13b29b31bfb57bdf477391e186174c8265",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T05:11:37.551Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/sweet-poincare-a26147",
+        "head_sha": "9761cb13b29b31bfb57bdf477391e186174c8265",
         "cluster_id": null,
         "job_path": null
       }
