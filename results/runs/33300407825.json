@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123335",
+  "mode": "autonomous",
+  "run_id": "33300407825",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33300407825",
+  "head_sha": "fa535d54a032862b022147a7cba4eaa3bdeb4a7b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123335.md",
+  "published_at": "2026-08-30T09:11:15.219Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/123335",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123335",
+  "canonical_pr": null,
+  "summary": "#123335 remains the open canonical bug. Current main has no exact startup-policy entries for `plugins init`, `plugins build`, or `plugins validate`; each inherits `configGuard: \"run\"`, which invokes config readiness before the authoring action. A narrow two-file repair is ready, but this worker cannot modify or validate the branch: the checkout is read-only, dependencies are absent and both required `pnpm install` attempts fail creating the Corepack cache, and the required sibling `../codex` source cannot be cloned on the read-only filesystem.",
+  "actions": [
+    {
+      "target": "#123335",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#123335",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this read-only worker environment. The deterministic executor should apply the narrow artifact in a writable checkout, first demonstrate the new policy test fails on this base, then validate it."
+    },
+    {
+      "target": "#98484",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation."
+    },
+    {
+      "target": "#98583",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation."
+    },
+    {
+      "target": "#107021",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation."
+    },
+    {
+      "target": "#114482",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-123335",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123335",
+      "candidate_fix": null,
+      "reason": "Narrow new-fix-PR plan for the canonical issue."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 4,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
