@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-30T13:57:10.690Z",
+  "generated_at": "2026-08-30T14:08:20.688Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/33314334467.json",
+  "run_record": "results/runs/33314980854.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "33314334467",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "33314980854",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/fs-safe:#175:merge_canonical:blocked:job does not allow merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/fs-safe",
+      "target": "#175",
+      "title": "fix(read): reject FIFO swaps without blocking",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "33314980854",
+      "cluster_id": "automerge-openclaw-fs-safe-175",
+      "hook_run_id": "0371cde7-1759-4ace-8155-a159a8efe27b",
+      "url": "https://github.com/openclaw/fs-safe/pull/175"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/fs-safe:#175:repair_contributor_branch:pushed:92f219b8b196283bc3b8269ef7f32e6f703210ac",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/fs-safe",
+      "target": "#175",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "33314980854",
+      "cluster_id": "automerge-openclaw-fs-safe-175",
+      "hook_run_id": "0dcf8482-a6ae-424b-8fe2-8fdc17af5559",
+      "url": "https://github.com/openclaw/fs-safe/pull/175"
+    }
+  ]
 }
