@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T22:06:04.092Z",
+  "updated_at": "2026-08-30T22:06:18.099Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132787:5469840877:2026-08-30T16:44:11Z:clawsweeper_needs_human",
-      "comment_id": "5469840877",
-      "comment_version_key": "5469840877:2026-08-30T16:44:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132787#issuecomment-5469840877",
-      "comment_created_at": "2026-08-30T16:20:03Z",
-      "comment_updated_at": "2026-08-30T16:44:11Z",
-      "comment_body_sha256": "0eaa5d2a7a69616fe210da995c78a0902ab80a465ccce414e9dcfd657536b138",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132787,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The review environment could not fetch current-main objects, the two filtered PR comments, or the attached screenshots because GitHub DNS resolution failed; a maintainer should rechec... (sha=d7e7469663c0f3b4c4543348a77ac76f90be0b06)",
-      "expected_head_sha": "d7e7469663c0f3b4c4543348a77ac76f90be0b06",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T16:46:38.471Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "goal-fit",
-        "head_sha": "d7e7469663c0f3b4c4543348a77ac76f90be0b06",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133165:5467450524:2026-08-30T16:45:23Z:clawsweeper_auto_repair",
       "comment_id": "5467450524",
@@ -33924,6 +33891,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133556:5471540276:2026-08-30T22:05:20Z:re_review",
+      "comment_id": "5471540276",
+      "comment_version_key": "5471540276:2026-08-30T22:05:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133556#issuecomment-5471540276",
+      "comment_created_at": "2026-08-30T22:05:20Z",
+      "comment_updated_at": "2026-08-30T22:05:20Z",
+      "comment_body_sha256": "80449a4077e840c8bfe066381d61607b1850ca0ba1b228fab6b6899f61cbd0d8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133556,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T22:06:08.308Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/menu-tooltip-button-anchors",
+        "head_sha": "227058844bd83daf229eb20fcd1993fcaedb13e5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
