@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T23:54:51.751Z",
+  "updated_at": "2026-08-30T23:57:28.982Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132809:5464558690:2026-08-30T18:33:24Z:clawsweeper_needs_human",
-      "comment_id": "5464558690",
-      "comment_version_key": "5464558690:2026-08-30T18:33:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132809#issuecomment-5464558690",
-      "comment_created_at": "2026-08-29T19:56:18Z",
-      "comment_updated_at": "2026-08-30T18:33:24Z",
-      "comment_body_sha256": "1ea579d9f18176057bf74094f31876c455ba4cf3bd3ad01a5a1e548a589af8e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132809,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve the claim through durable interaction delivery (P1)** - This newly admitted path calls the existing Bolt handlers, but ordinary agent-directed handlers return after enqueueRoutedSystemEvent, which is in...; Review finding: [P1] Preserve the claim through durable interaction delivery — extensions/slack/src/monitor/ingress.ts:504-510 - [P1] Persist a replay-safe interaction envelope —... (sha=e572563d2f08110ed03da1fa987e4aab2cc86230)",
-      "expected_head_sha": "e572563d2f08110ed03da1fa987e4aab2cc86230",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T18:43:12.444Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-interaction-durable-ingress",
-        "head_sha": "e572563d2f08110ed03da1fa987e4aab2cc86230",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133327:5469369407:2026-08-30T18:35:34Z:clawsweeper_needs_human",
       "comment_id": "5469369407",
@@ -33933,6 +33900,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133563:5472059187:2026-08-30T23:56:45Z:re_review",
+      "comment_id": "5472059187",
+      "comment_version_key": "5472059187:2026-08-30T23:56:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133563#issuecomment-5472059187",
+      "comment_created_at": "2026-08-30T23:56:45Z",
+      "comment_updated_at": "2026-08-30T23:56:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133563,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T23:57:26.941Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/imessage-proof-db-migration",
+        "head_sha": "753d9f11045063d699e46058dd742cc44341d694",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
