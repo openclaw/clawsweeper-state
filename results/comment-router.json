@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T22:25:54.339Z",
+  "updated_at": "2026-08-30T22:26:40.427Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116337:5470028299:2026-08-30T16:56:33Z:re_review",
-      "comment_id": "5470028299",
-      "comment_version_key": "5470028299:2026-08-30T16:56:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116337#issuecomment-5470028299",
-      "comment_created_at": "2026-08-30T16:56:33Z",
-      "comment_updated_at": "2026-08-30T16:56:33Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116337,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T16:57:19.056Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/problem-g3-openai-media-abort",
-        "head_sha": "14e24b40baac7e94e494e89b5b4d2df0a03be7f9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110455:5470032962:2026-08-30T16:57:26Z:re_review",
       "comment_id": "5470032962",
@@ -34167,6 +34120,39 @@
         "kind": "pull_request",
         "branch": "steipete/laughing-diffie-81e880",
         "head_sha": "3921fa304fcacfddb2bfa78f0b470bfae2272fa1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133588:5471637687:2026-08-30T22:25:55Z:clawsweeper_needs_human",
+      "comment_id": "5471637687",
+      "comment_version_key": "5471637687:2026-08-30T22:25:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133588#issuecomment-5471637687",
+      "comment_created_at": "2026-08-30T22:25:55Z",
+      "comment_updated_at": "2026-08-30T22:25:55Z",
+      "comment_body_sha256": "46b5f50a495b4da407c091626c3a65a1a6e6e56578fdbceab12530d5c105d0ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133588,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI was still in progress in the captured review state; merge should wait for the required checks to complete successfully. (sha=b13020db76dd45032b5ca104f0cc8426546d4163)",
+      "expected_head_sha": "b13020db76dd45032b5ca104f0cc8426546d4163",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T22:26:40.427Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-perf-sanity-drain",
+        "head_sha": "b13020db76dd45032b5ca104f0cc8426546d4163",
         "cluster_id": null,
         "job_path": null
       }
