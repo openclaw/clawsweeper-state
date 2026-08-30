@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T16:21:21.554Z",
+  "updated_at": "2026-08-30T16:22:13.085Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120491:5224970607:2026-08-30T10:33:29Z:clawsweeper_needs_human",
-      "comment_id": "5224970607",
-      "comment_version_key": "5224970607:2026-08-30T10:33:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5224970607",
-      "comment_created_at": "2026-08-08T06:42:09Z",
-      "comment_updated_at": "2026-08-30T10:33:29Z",
-      "comment_body_sha256": "7d80cbce6fd4b607b5c36f2bd7c872428b193cb1d48c6f0f760329791f517656",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the visible PR evidence describes a real ephemeral Gateway and QA-channel run, but the checked exact-h...; Review finding: [P2] Replace fixed-delay no-delivery sampling — test/e2e/qa-lab/runtime/per-turn-send-budget.e2e.test.ts:938-942 - [medium] Authority proof samples a fixed delay —... (sha=757b3d042b8417ed98af7be607a2ae120ee1e82c)",
-      "expected_head_sha": "757b3d042b8417ed98af7be607a2ae120ee1e82c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T10:37:03.317Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119992-per-turn-send-budget",
-        "head_sha": "757b3d042b8417ed98af7be607a2ae120ee1e82c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126611:5353876596:2026-08-30T10:31:20Z:clawsweeper_auto_repair",
       "comment_id": "5353876596",
@@ -32697,6 +32664,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133355:5469847559:2026-08-30T16:21:23Z:re_review",
+      "comment_id": "5469847559",
+      "comment_version_key": "5469847559:2026-08-30T16:21:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133355#issuecomment-5469847559",
+      "comment_created_at": "2026-08-30T16:21:23Z",
+      "comment_updated_at": "2026-08-30T16:21:23Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133355,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T16:22:10.697Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-missing-auth-profile-copy",
+        "head_sha": "dc3117ff7f907dad877156a9e269254ec85b8445",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
