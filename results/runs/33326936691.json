@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-107487",
+  "mode": "autonomous",
+  "run_id": "33326936691",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33326936691",
+  "head_sha": "74b0f8552fde46842a933ca360ed272f0212193e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-107487.md",
+  "published_at": "2026-08-30T18:20:16.768Z",
+  "canonical": "#107487",
+  "canonical_issue": "#107487",
+  "canonical_pr": null,
+  "summary": "#107487 remains a confirmed canonical bug: `/acp close` clears manager metadata but does not request persistent-state discard, and ACPX fresh-session recovery is process-memory-only. A narrow fix PR is appropriate, but this read-only checkout cannot inspect pinned `acpx@0.13.1`, run the required regressions, or create the branch/PR.",
+  "actions": [
+    {
+      "target": "#107487",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#107487",
+      "candidate_fix": null,
+      "reason": "The implementation shape is clear, but direct upstream-contract inspection and pre-/post-fix executable proof are mandatory and unavailable in this sandbox."
+    },
+    {
+      "target": "#109270",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#107487",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or mutation is permitted for an already-closed item."
+    },
+    {
+      "target": "#111628",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#107487",
+      "candidate_fix": null,
+      "reason": "Already closed; do not mutate or close again."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable, dependency-hydrated repair environment containing pinned `acpx@0.13.1` and sibling `../codex` source, then replay this artifact to inspect the upstream record contract, run the required restart harness, and open the authorized PR."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-107487"
 mode: "autonomous"
-run_id: "33322785531"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33322785531"
-head_sha: "c179a466606f782ae73404357a0c94e6bead5807"
-workflow_conclusion: "failure"
+run_id: "33326936691"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33326936691"
+head_sha: "74b0f8552fde46842a933ca360ed272f0212193e"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-30T16:51:47.972Z"
-canonical: "https://github.com/openclaw/openclaw/issues/107487"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/107487"
+published_at: "2026-08-30T18:20:16.768Z"
+canonical: "#107487"
+canonical_issue: "#107487"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-107487
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33322785531](https://github.com/openclaw/clawsweeper/actions/runs/33322785531)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33326936691](https://github.com/openclaw/clawsweeper/actions/runs/33326936691)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/107487
+Canonical: #107487
 
 ## Summary
 
-#107487 remains a reproducible current-main bug. A narrow fix artifact is ready, but this read-only checkout cannot install the pinned ACPX source, run the restart proof, create the branch, or satisfy the mandated direct ../codex inspection because that sibling source is absent.
+#107487 remains a confirmed canonical bug: `/acp close` clears manager metadata but does not request persistent-state discard, and ACPX fresh-session recovery is process-memory-only. A narrow fix PR is appropriate, but this read-only checkout cannot inspect pinned `acpx@0.13.1`, run the required regressions, or create the branch/PR.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/107487
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #107487 | fix_needed | blocked | canonical | Run the artifact in a writable checkout with installed acpx@0.13.1 and sibling ../codex source, then reproduce, validate, and open/update clawsweeper/issue-openclaw-openclaw-107487. |
-| #109270 | keep_closed | skipped | related | Historical context only; no close action is valid for an already-closed issue. |
-| #111628 | keep_closed | skipped | superseded | Already closed contributor PR; preserve @yetval attribution in the replacement PR rather than attempting a closure or merge. |
-| cluster:issue-openclaw-openclaw-107487 | build_fix_artifact | planned | canonical | Executor can create the new credited fix PR after completing the blocked dependency/Codex inspections and before/after restart proof. |
+| #107487 | build_fix_artifact | blocked | canonical | The implementation shape is clear, but direct upstream-contract inspection and pre-/post-fix executable proof are mandatory and unavailable in this sandbox. |
+| #109270 | keep_closed | skipped | related | Historical context only; no closure or mutation is permitted for an already-closed item. |
+| #111628 | keep_closed | skipped | superseded | Already closed; do not mutate or close again. |
 
 ## Needs Human
 
-- none
+- Provide a writable, dependency-hydrated repair environment containing pinned `acpx@0.13.1` and sibling `../codex` source, then replay this artifact to inspect the upstream record contract, run the required restart harness, and open the authorized PR.
