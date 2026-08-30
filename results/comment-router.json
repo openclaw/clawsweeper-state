@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T11:33:44.917Z",
+  "updated_at": "2026-08-30T11:34:03.305Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124305:5389416082:2026-08-24T00:36:21Z:re_review",
-      "comment_id": "5389416082",
-      "comment_version_key": "5389416082:2026-08-24T00:36:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124305#issuecomment-5389416082",
-      "comment_created_at": "2026-08-24T00:36:21Z",
-      "comment_updated_at": "2026-08-24T00:36:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124305,
-      "author": "srikarkrishna",
-      "author_id": 17678386,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T07:49:54.557Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124305:5389460652:2026-08-24T00:45:25Z:re_review",
       "comment_id": "5389460652",
@@ -31864,6 +31837,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129345:5411343629:2026-08-30T11:33:08Z:clawsweeper_needs_human",
+      "comment_id": "5411343629",
+      "comment_version_key": "5411343629:2026-08-30T11:33:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129345#issuecomment-5411343629",
+      "comment_created_at": "2026-08-25T13:48:00Z",
+      "comment_updated_at": "2026-08-30T11:33:08Z",
+      "comment_body_sha256": "669758074810334826b660f27dee369500c2d33c0df85cdbaee1cb17c641e25a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129345,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the thread-context resolver, reached from the inbound Teams handler. The supplied direct handler test observes... (sha=b4518acd56559befd617f1d8e6f636c25998ef88)",
+      "expected_head_sha": "b4518acd56559befd617f1d8e6f636c25998ef88",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T11:34:03.305Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-channel-thread-parent-fallback",
+        "head_sha": "b4518acd56559befd617f1d8e6f636c25998ef88",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
