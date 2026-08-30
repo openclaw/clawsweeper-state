@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-115354",
+  "mode": "autonomous",
+  "run_id": "33285196965",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33285196965",
+  "head_sha": "fa535d54a032862b022147a7cba4eaa3bdeb4a7b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-115354.md",
+  "published_at": "2026-08-30T01:33:56.650Z",
+  "canonical": "#115354",
+  "canonical_issue": "#115354",
+  "canonical_pr": null,
+  "summary": "#115354 remains the canonical reproducible lifecycle bug. Direct plugin-SDK deletion commits SQLite removal without unbinding conversation bindings; Gateway deletion already unbinds. A narrow SDK-owner repair is defined, but this worker cannot modify or validate it: the sandbox is read-only, `tsx` is absent, and mandatory sibling `../codex` source is unavailable for the repository’s Codex gate.",
+  "actions": [
+    {
+      "target": "#115354",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115354",
+      "candidate_fix": null,
+      "reason": "Repair at the public SDK deletion owner after a successful commit; do not add a route-time liveness check or alter the raw SQLite primitive."
+    },
+    {
+      "target": "#115354",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115354",
+      "candidate_fix": null,
+      "reason": "A new fix PR is allowed, but this read-only worker cannot create the required branch changes or install the missing dependency."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

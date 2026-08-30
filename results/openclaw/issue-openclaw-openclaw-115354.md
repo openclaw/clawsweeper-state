@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-115354"
 mode: "autonomous"
-run_id: "33282395117"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33282395117"
-head_sha: "9f4da9302aea1e41525039417ad128b0522391a0"
-workflow_conclusion: "failure"
+run_id: "33285196965"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33285196965"
+head_sha: "fa535d54a032862b022147a7cba4eaa3bdeb4a7b"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-30T00:20:21.880Z"
-canonical: "https://github.com/openclaw/openclaw/issues/115354"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/115354"
+published_at: "2026-08-30T01:33:56.650Z"
+canonical: "#115354"
+canonical_issue: "#115354"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33282395117](https://github.com/openclaw/clawsweeper/actions/runs/33282395117)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33285196965](https://github.com/openclaw/clawsweeper/actions/runs/33285196965)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/115354
+Canonical: #115354
 
 ## Summary
 
-#115354 remains a reproducible lifecycle bug on main: direct Plugin SDK deletion commits the session removal but does not unbind runtime conversation bindings, while Gateway deletion already awaits the shared unbind lifecycle. Implementation is blocked in this read-only checkout: dependencies are absent, Corepack cannot create its cache, and the mandated sibling ../codex source is absent and cannot be cloned.
+#115354 remains the canonical reproducible lifecycle bug. Direct plugin-SDK deletion commits SQLite removal without unbinding conversation bindings; Gateway deletion already unbinds. A narrow SDK-owner repair is defined, but this worker cannot modify or validate it: the sandbox is read-only, `tsx` is absent, and mandatory sibling `../codex` source is unavailable for the repository’s Codex gate.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/115354
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #115354 | fix_needed | blocked | canonical | The source-level failure is clear, but this worker cannot create the mandatory Codex sibling checkout, write a regression, or run the required validation. |
-| #115391 | keep_closed | skipped | related | Historical partial-overlap evidence only; no mutation is valid for an already-closed PR. |
-| cluster:issue-openclaw-openclaw-115354 | build_fix_artifact | planned | canonical | A narrow credited fix PR remains appropriate once the executor has a writable checkout and can satisfy the Codex-source and validation gates. |
+| #115354 | fix_needed | planned | canonical | Repair at the public SDK deletion owner after a successful commit; do not add a route-time liveness check or alter the raw SQLite primitive. |
+| #115354 | build_fix_artifact | planned | canonical | A new fix PR is allowed, but this read-only worker cannot create the required branch changes or install the missing dependency. |
 
 ## Needs Human
 
