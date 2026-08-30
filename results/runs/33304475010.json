@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133170",
+  "mode": "autonomous",
+  "run_id": "33304475010",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33304475010",
+  "head_sha": "fa535d54a032862b022147a7cba4eaa3bdeb4a7b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133170.md",
+  "published_at": "2026-08-30T09:59:42.873Z",
+  "canonical": "#133170",
+  "canonical_issue": "#133170",
+  "canonical_pr": null,
+  "summary": "#133170 remains a source-proven, narrow Gateway bug, but no implementation artifact is safe to execute: the mandatory direct ../codex inspection is unavailable and dependencies are absent in a read-only checkout.",
+  "actions": [
+    {
+      "target": "#133170",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133170",
+      "candidate_fix": null,
+      "reason": "The repository hard gate prohibits a Codex verdict or code change without direct ../codex source inspection. The required regression also cannot be run in this checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable environment with the required ../codex checkout (or permit its clone) and dependencies so the focused regression can be made to fail on current main and validated after the repair."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
