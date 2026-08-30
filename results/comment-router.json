@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T21:55:34.223Z",
+  "updated_at": "2026-08-30T21:56:30.100Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133163:5469905052:2026-08-30T16:32:47Z:re_review",
-      "comment_id": "5469905052",
-      "comment_version_key": "5469905052:2026-08-30T16:32:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133163#issuecomment-5469905052",
-      "comment_created_at": "2026-08-30T16:32:47Z",
-      "comment_updated_at": "2026-08-30T16:32:47Z",
-      "comment_body_sha256": "ee9cc1d63f507707e88dde30192171edabffd9396279f8c588148087ece73f99",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133163,
-      "author": "openclaw-vm-hampbot",
-      "author_id": 311728453,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — served control ui interaction/rendering proof added at the review's reviewed head `1cbd25ca3232b65417fa0861a7eda068d9730646` (see the comment above; no new commits, exact head unchanged)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T16:33:28.637Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/agent-safe-start-dreaming",
-        "head_sha": "1cbd25ca3232b65417fa0861a7eda068d9730646",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133380:5469912245:2026-08-30T16:34:16Z:clawsweeper_auto_repair",
       "comment_id": "5469912245",
@@ -33926,6 +33879,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133447:5470491000:2026-08-30T21:52:37Z:clawsweeper_needs_human",
+      "comment_id": "5470491000",
+      "comment_version_key": "5470491000:2026-08-30T21:52:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133447#issuecomment-5470491000",
+      "comment_created_at": "2026-08-30T18:29:20Z",
+      "comment_updated_at": "2026-08-30T21:52:37Z",
+      "comment_body_sha256": "d2252a8f1ab9784003bc36483bcba6c7c861d0ec209010848d2c6d610b817030",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133447,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Crabbox warm-image state is converted to a version-two envelope; representative legacy-state reopen and recovery behavior still need exact-head upgrade proof. (sha=c74612f4292e0c01be1010b85d5170863770bfc7)",
+      "expected_head_sha": "c74612f4292e0c01be1010b85d5170863770bfc7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T21:56:30.100Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/smart-snapshot-reuse",
+        "head_sha": "c74612f4292e0c01be1010b85d5170863770bfc7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
