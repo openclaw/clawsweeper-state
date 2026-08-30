@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T20:03:24.167Z",
+  "updated_at": "2026-08-30T20:04:03.553Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1618:5469324897:2026-08-30T14:39:53Z:re_review",
-      "comment_id": "5469324897",
-      "comment_version_key": "5469324897:2026-08-30T14:39:53Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1618#issuecomment-5469324897",
-      "comment_created_at": "2026-08-30T14:39:53Z",
-      "comment_updated_at": "2026-08-30T14:39:53Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1618,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T14:40:31.498Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "improve/runner-phase-telemetry",
-        "head_sha": "2f476de6bfe3cea1785aa4000841f023ab6c87ce",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/summarize:391:5345161743:2026-08-30T14:40:14Z:clawsweeper_needs_human",
       "comment_id": "5345161743",
@@ -33270,6 +33223,39 @@
         "kind": "pull_request",
         "branch": "fix/service-hosted-discovery-fallback",
         "head_sha": "45049ab0efc1b2ce526d50d0cf80abdf2fa5d771",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/swabble:9:5465884976:2026-08-30T20:03:08Z:clawsweeper_needs_human",
+      "comment_id": "5465884976",
+      "comment_version_key": "5465884976:2026-08-30T20:03:08Z",
+      "comment_url": "https://github.com/openclaw/Swabble/pull/9#issuecomment-5465884976",
+      "comment_created_at": "2026-08-30T01:01:40Z",
+      "comment_updated_at": "2026-08-30T20:03:08Z",
+      "comment_body_sha256": "fdddc7f62d0ce0c43f5772cf8576f5845c036c10245b3f78cd477777bf90e5a4",
+      "repo": "openclaw/swabble",
+      "issue_number": 9,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing automation that relied on exit 0 despite an undeleted plist will now receive an error and must handle the nonzero exit status. (sha=8bd901893156b326a13094c66e64094259d7ee18)",
+      "expected_head_sha": "8bd901893156b326a13094c66e64094259d7ee18",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T20:04:03.553Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f005-uninstall-plist-error",
+        "head_sha": "8bd901893156b326a13094c66e64094259d7ee18",
         "cluster_id": null,
         "job_path": null
       }
