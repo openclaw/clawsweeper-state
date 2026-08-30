@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-30T11:47:02.155Z",
+  "generated_at": "2026-08-30T12:47:46.476Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/33309153174.json",
+  "run_record": "results/runs/33311524605.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "33309153174",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "33311524605",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/fs-safe:#174:merge_canonical:blocked:job does not allow merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/fs-safe",
+      "target": "#174",
+      "title": "fix(atomic): retain staged file ownership",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "33311524605",
+      "cluster_id": "automerge-openclaw-fs-safe-174",
+      "hook_run_id": "5ecd6068-c1e3-4e99-9827-dd599b8b1fc0",
+      "url": "https://github.com/openclaw/fs-safe/pull/174"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/fs-safe:#174:repair_contributor_branch:pushed:4baa21e50e2992906052f0d4a3c1c820bebad5f8",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/fs-safe",
+      "target": "#174",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "33311524605",
+      "cluster_id": "automerge-openclaw-fs-safe-174",
+      "hook_run_id": "4ef9798a-34ad-444f-be51-9bd9a317d682",
+      "url": "https://github.com/openclaw/fs-safe/pull/174"
+    }
+  ]
 }

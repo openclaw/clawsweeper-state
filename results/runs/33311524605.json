@@ -1,0 +1,78 @@
+{
+  "repo": "openclaw/fs-safe",
+  "cluster_id": "automerge-openclaw-fs-safe-174",
+  "mode": "autonomous",
+  "run_id": "33311524605",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33311524605",
+  "head_sha": "c179a466606f782ae73404357a0c94e6bead5807",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-174.md",
+  "published_at": "2026-08-30T12:47:34.691Z",
+  "canonical": "#174",
+  "canonical_issue": null,
+  "canonical_pr": "#174",
+  "summary": "Make PR #174 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.",
+  "actions": [
+    {
+      "target": "#174",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#174",
+      "candidate_fix": "#174",
+      "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "pushed": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "repair_contributor_branch",
+      "status": "pushed",
+      "target": "https://github.com/openclaw/fs-safe/pull/174",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": "4baa21e50e2992906052f0d4a3c1c820bebad5f8",
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#174",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(atomic): retain staged file ownership",
+      "idempotency_key": null,
+      "reason": "job does not allow merge",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
