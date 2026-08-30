@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T19:13:14.644Z",
+  "updated_at": "2026-08-30T19:13:40.542Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:68236:4701884915:2026-08-30T13:46:47Z:clawsweeper_auto_repair",
-      "comment_id": "4701884915",
-      "comment_version_key": "4701884915:2026-08-30T13:46:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/68236#issuecomment-4701884915",
-      "comment_created_at": "2026-06-14T13:24:34Z",
-      "comment_updated_at": "2026-08-30T13:46:47Z",
-      "comment_body_sha256": "06a1ad0f95455f34d2624458209a96dc45d04b4453dee0e92dfcf5b9fb44842e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 68236,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8848650728422166c69fda1f33178221c693a52a)",
-      "expected_head_sha": "8848650728422166c69fda1f33178221c693a52a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T13:47:45.413Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/oauth-e2e-regressions",
-        "head_sha": "8848650728422166c69fda1f33178221c693a52a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3548:5466178577:2026-08-30T13:50:14Z:clawsweeper_auto_repair",
       "comment_id": "5466178577",
@@ -33117,6 +33084,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131619:5470705056:2026-08-30T19:12:49Z:re_review",
+      "comment_id": "5470705056",
+      "comment_version_key": "5470705056:2026-08-30T19:12:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131619#issuecomment-5470705056",
+      "comment_created_at": "2026-08-30T19:12:49Z",
+      "comment_updated_at": "2026-08-30T19:12:49Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131619,
+      "author": "MertBasar0",
+      "author_id": 100199793,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T19:13:36.463Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-barnacle-skill-routing",
+        "head_sha": "3eb3ae4d879bdca46ee82bd7aae90023556fda3e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
