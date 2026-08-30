@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T23:04:41.826Z",
+  "updated_at": "2026-08-30T23:04:50.221Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132477:5470282012:2026-08-30T17:47:16Z:re_review",
-      "comment_id": "5470282012",
-      "comment_version_key": "5470282012:2026-08-30T17:47:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132477#issuecomment-5470282012",
-      "comment_created_at": "2026-08-30T17:47:16Z",
-      "comment_updated_at": "2026-08-30T17:47:16Z",
-      "comment_body_sha256": "bc006dab02c714290cc4160a3a98a67f169d22b041e9bbe8dec83372fe1dfcd1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132477,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T17:48:06.501Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/setup-verification-runtime-roster-04b48b",
-        "head_sha": "3f09ba0f9c21c9f41236197c62fa9544c5a2b9d6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3291:5470284412:2026-08-30T17:47:46Z:clawsweeper_needs_human",
       "comment_id": "5470284412",
@@ -33826,6 +33779,39 @@
       "status": "skipped",
       "processed_at": "2026-08-30T23:04:41.826Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133381:5469915704:2026-08-30T23:04:00Z:clawsweeper_auto_repair",
+      "comment_id": "5469915704",
+      "comment_version_key": "5469915704:2026-08-30T23:04:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133381#issuecomment-5469915704",
+      "comment_created_at": "2026-08-30T16:34:57Z",
+      "comment_updated_at": "2026-08-30T23:04:00Z",
+      "comment_body_sha256": "8a7d57b135a5d7bfacd0a6a921197ca68985203d22b28f5d07eb8f88c7c55a2d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0c84a093f1ec4498e690a422436d04a38f19494d)",
+      "expected_head_sha": "0c84a093f1ec4498e690a422436d04a38f19494d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T23:04:50.221Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/classify-socat-port-listener",
+        "head_sha": "0c84a093f1ec4498e690a422436d04a38f19494d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
