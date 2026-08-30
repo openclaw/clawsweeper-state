@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T19:34:44.947Z",
+  "updated_at": "2026-08-30T19:34:49.869Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1624:5469199358:2026-08-30T14:15:27Z:re_review",
-      "comment_id": "5469199358",
-      "comment_version_key": "5469199358:2026-08-30T14:15:27Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1624#issuecomment-5469199358",
-      "comment_created_at": "2026-08-30T14:15:27Z",
-      "comment_updated_at": "2026-08-30T14:15:27Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1624,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T14:16:02.382Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sync-transactional-overlay",
-        "head_sha": "1aab79eaefbe72aded8aa81bb2389b47ffa01e49",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabbox:1622:5469199035:2026-08-30T14:15:24Z:re_review",
       "comment_id": "5469199035",
@@ -33076,6 +33029,65 @@
         "job_path": null
       },
       "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:180:5470809491:2026-08-30T19:34:05Z:automerge",
+      "comment_id": "5470809491",
+      "comment_version_key": "5470809491:2026-08-30T19:34:05Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/180#issuecomment-5470809491",
+      "comment_created_at": "2026-08-30T19:34:05Z",
+      "comment_updated_at": "2026-08-30T19:34:05Z",
+      "comment_body_sha256": "670f89b25c294d4c159bd7452a78e3df9e3940b65d6260ca5653214e773d60e0",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 180,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T19:34:43.990Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/archive-filter-canonical-paths",
+        "head_sha": "a6af14a11bb755623b43e0c3ef201dc5c9bd03ba",
+        "cluster_id": "automerge-openclaw-fs-safe-180",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-180.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-180.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
         {
           "action": "dispatch_clawsweeper",
           "status": "executed",
