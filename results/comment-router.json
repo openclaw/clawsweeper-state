@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-30T16:24:38.160Z",
+  "updated_at": "2026-08-30T16:23:38.524Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133102:5466977092:2026-08-30T10:36:04Z:clawsweeper_auto_repair",
+      "comment_id": "5466977092",
+      "comment_version_key": "5466977092:2026-08-30T10:36:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133102#issuecomment-5466977092",
+      "comment_created_at": "2026-08-30T05:43:16Z",
+      "comment_updated_at": "2026-08-30T10:36:04Z",
+      "comment_body_sha256": "2d595d7bb17ec9bda04d53ed84218c21a8107cf464f1d41e5bf6afff676e6221",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133102,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2004b1bc0f70d39f5bd988eab6a6bf1b7c41a14f)",
+      "expected_head_sha": "2004b1bc0f70d39f5bd988eab6a6bf1b7c41a14f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T10:37:54.964Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "add-gandr",
+        "head_sha": "2004b1bc0f70d39f5bd988eab6a6bf1b7c41a14f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3547:5462457993:2026-08-30T10:43:43Z:clawsweeper_auto_repair",
       "comment_id": "5462457993",
@@ -32602,39 +32635,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133376:5469860800:2026-08-30T16:23:58Z:clawsweeper_needs_human",
-      "comment_id": "5469860800",
-      "comment_version_key": "5469860800:2026-08-30T16:23:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133376#issuecomment-5469860800",
-      "comment_created_at": "2026-08-30T16:23:58Z",
-      "comment_updated_at": "2026-08-30T16:23:58Z",
-      "comment_body_sha256": "3f6a4accf8861f03ee0cbe87f3ae5aa1834936f242785a5e569a2bf77d25f0e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133376,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The production owner is the Code Mode skill reader, but the supplied PR body only reports a focused Vitest result; it contains no observed afte...; Review finding: [P1] Enforce physical skill-root containment — src/agents/code-mode-skills.ts:99-105 - [P1] Handle node-hosted skill locators — src/agents/code-mode-skills.ts:99-1... (sha=35b7afe0598c1b671de9312b78da9022350c9756)",
-      "expected_head_sha": "35b7afe0598c1b671de9312b78da9022350c9756",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T16:24:38.160Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-skill-relative-read",
-        "head_sha": "35b7afe0598c1b671de9312b78da9022350c9756",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
