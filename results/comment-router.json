@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T08:17:28.341Z",
+  "updated_at": "2026-08-30T08:17:32.116Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5318373695:2026-08-17T17:55:15Z:re_review",
-      "comment_id": "5318373695",
-      "comment_version_key": "5318373695:2026-08-17T17:55:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5318373695",
-      "comment_created_at": "2026-08-17T17:55:15Z",
-      "comment_updated_at": "2026-08-17T17:55:15Z",
-      "comment_body_sha256": "93dd7816771b7d98b4357f890c167c3060f80ee58f97328ef4240f82fc85e168",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T04:12:13.160Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5318768731:2026-08-17T18:44:31Z:re_review",
       "comment_id": "5318768731",
@@ -31507,6 +31480,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133188:5467587621:2026-08-30T08:16:39Z:clawsweeper_needs_human",
+      "comment_id": "5467587621",
+      "comment_version_key": "5467587621:2026-08-30T08:16:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133188#issuecomment-5467587621",
+      "comment_created_at": "2026-08-30T08:16:39Z",
+      "comment_updated_at": "2026-08-30T08:16:39Z",
+      "comment_body_sha256": "0c1175629eda0753c3904eece54e548a56a1916745b2b5cdb02e0998a9a57a76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133188,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 13 net lines, but the growth replaces two stale action sets with one shared predicate and the parameter-sensitive dialog distinction; the common computer-tool... (sha=6c4550290bbb638b906411ee5ea1194b09903804)",
+      "expected_head_sha": "6c4550290bbb638b906411ee5ea1194b09903804",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T08:17:32.115Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/computer-observation-recovery",
+        "head_sha": "6c4550290bbb638b906411ee5ea1194b09903804",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
