@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T21:50:24.155Z",
+  "updated_at": "2026-08-30T21:51:15.179Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132635:5469854433:2026-08-30T16:22:47Z:re_review",
-      "comment_id": "5469854433",
-      "comment_version_key": "5469854433:2026-08-30T16:22:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132635#issuecomment-5469854433",
-      "comment_created_at": "2026-08-30T16:22:47Z",
-      "comment_updated_at": "2026-08-30T16:22:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132635,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T16:23:36.314Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-agents-aborted-terminal-merge",
-        "head_sha": "c165125d04fc2b185ea9315b9e7ea2ae195fa8da",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133373:5469868752:2026-08-30T16:25:29Z:clawsweeper_auto_repair",
       "comment_id": "5469868752",
@@ -33947,6 +33900,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133457:5470875647:2026-08-30T21:50:20Z:clawsweeper_needs_human",
+      "comment_id": "5470875647",
+      "comment_version_key": "5470875647:2026-08-30T21:50:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133457#issuecomment-5470875647",
+      "comment_created_at": "2026-08-30T19:47:48Z",
+      "comment_updated_at": "2026-08-30T21:50:20Z",
+      "comment_body_sha256": "d35c90bb3bb511f6757383aec019a1fbbf1e1525008bad7430663b2eb653903b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Schema version 19 gains a same-version nullable column that an intermediate pending-input-aware build may reject; maintainers must explicitly accept the documented Doctor/upcoming-rel... (sha=d85396bb08b942110f615ea0979019389e8e7956)",
+      "expected_head_sha": "d85396bb08b942110f615ea0979019389e8e7956",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T21:51:15.179Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/browser-collect-custody",
+        "head_sha": "d85396bb08b942110f615ea0979019389e8e7956",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
